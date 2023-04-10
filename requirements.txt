@@ -1,0 +1,170 @@
+# generated from manifests external_dependencies
+freezegun
+python-dateutil
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+Avalara
+# generated from manifests external_dependencies
+python-stdnum>=1.16
+# generated from manifests external_dependencies
+lxml
+python-stdnum
+unidecode
+# generated from manifests external_dependencies
+chardet
+ofxparse
+xlrd
+# generated from manifests external_dependencies
+num2words
+# generated from manifests external_dependencies
+cachetools
+# generated from manifests external_dependencies
+requests
+# generated from manifests external_dependencies
+email-validator
+# generated from manifests external_dependencies
+factur-x
+PyYAML
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+# generated from manifests external_dependencies
+zeep
+# generated from manifests external_dependencies
+email_validator
+erpbrasil.base
+num2words
+phonenumbers
+pycep_correios
+# generated from manifests external_dependencies
+cryptography==36.0.0
+xades==0.2.4
+xmlsig==0.1.9
+zeep
+# generated from manifests external_dependencies
+python-stdnum>=1.18
+requests_oauthlib
+unidecode
+# generated from manifests external_dependencies
+python-stdnum
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+chardet
+cryptography
+pycountry
+pycryptodome
+qrcode
+requests
+requests_pkcs12
+suds-py3
+unidecode
+xmlsig
+xmltodict
+zeep
+# generated from manifests external_dependencies
+num2words
+promptpay
+# generated from manifests external_dependencies
+email_validator
+lxml
+zeep
+# generated from manifests external_dependencies
+python-barcode
+# generated from manifests external_dependencies
+pandas>=0.25.3
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+openupgradelib
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+cryptography
+jira
+oauthlib
+PyJWT
+requests
+requests-oauthlib
+requests-toolbelt
+# generated from manifests external_dependencies
+odoo_test_helper
+# generated from manifests external_dependencies
+boto3<=1.15.18
+cryptography<37
+paramiko
+pyftpdlib
+python-magic
+python_slugify
+validators
+# generated from manifests external_dependencies
+lxml
+openpyxl
+PyPDF2
+xlrd
+xlsxwriter
+# generated from manifests external_dependencies
+pycups
+# generated from manifests external_dependencies
+acme<2.0.0
+astor
+cryptography
+cryptography==2.6.1
+dataclasses
+dnspython
+josepy
+lxml
+mako
+odoorpc
+openpyxl
+openupgradelib
+pygount
+pysftp
+sentry_sdk>=1.17.0
+# generated from manifests external_dependencies
+cryptography<37
+email_validator
+lxml
+pysaml2
+python-jose
+python-ldap
+zxcvbn
+# generated from manifests external_dependencies
+mysqlclient
+pymssql<=2.2.5
+sqlalchemy
+# generated from manifests external_dependencies
+pdf2image
+pyzbar
+# generated from manifests external_dependencies
+pycountry
+# generated from manifests external_dependencies
+GitPython
+pathspec
+PyGithub
+pygount
+# generated from manifests external_dependencies
+pika
+# generated from manifests external_dependencies
+apispec>=4.0.0
+cerberus
+contextvars;python_version<"3.7"
+extendable
+extendable-pydantic
+graphene
+graphql_server
+jsondiff
+marshmallow
+marshmallow-objects>=2.0.0
+parse-accept-language
+pydantic
+pyquerystring
+typing-extensions
+# generated from manifests external_dependencies
+python-dateutil
+# generated from manifests external_dependencies
+beautifulsoup4
+bokeh==2.4.2
+mpld3==0.5.7

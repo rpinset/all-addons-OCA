@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- pylint:disable=duplicate-xml-record-id -->
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="chart_template" model="account.chart.template">
+        <field name="property_account_receivable_id" ref="trade_receivables" />
+        <field name="property_account_payable_id" ref="trade_payables" />
+        <field name="property_account_expense_categ_id" ref="expenses" />
+        <field name="property_account_income_categ_id" ref="trade_income" />
+        <field
+            name="income_currency_exchange_account_id"
+            ref="bills_and_invoices_exchange_gain"
+        />
+        <field
+            name="expense_currency_exchange_account_id"
+            ref="bills_and_invoices_exchange_loss"
+        />
+        <field
+            name="default_cash_difference_income_account_id"
+            ref="cash_differrence_gain"
+        />
+        <field
+            name="default_cash_difference_expense_account_id"
+            ref="cash_differrence_loss"
+        />
+        <field name="default_pos_receivable_account_id" ref="trade_receivable_pos" />
+        <field name="property_tax_payable_account_id" ref="vat_payable" />
+        <field name="property_tax_receivable_account_id" ref="vat_receivable" />
+        <field name="property_advance_tax_payment_account_id" ref="mta_prepayment" />
+        <field name="account_journal_suspense_account_id" ref="bank_suspense" />
+        <field name="account_journal_payment_debit_account_id" ref="payment_debit" />
+        <field name="account_journal_payment_credit_account_id" ref="payment_credit" />
+    </record>
+    <function model="account.chart.template" name="try_loading">
+        <value eval="[ref('l10n_ee_accounting.chart_template')]" />
+    </function>
+</odoo>

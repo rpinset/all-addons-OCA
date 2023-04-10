@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_event_ticket_published
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-11-14 17:44+0000\n"
+"Last-Translator: Grégory Moka Tourisme <gregory@mokatourisme.fr>\n"
+"Language-Team: none\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: website_event_ticket_published
+#: model:ir.model,name:website_event_ticket_published.model_event_type_ticket
+msgid "Event Template Ticket"
+msgstr "Modèle de billet"
+
+#. module: website_event_ticket_published
+#: model:ir.model,name:website_event_ticket_published.model_event_event_ticket
+msgid "Event Ticket"
+msgstr "Billet"
+
+#. module: website_event_ticket_published
+#: model:ir.model.fields,field_description:website_event_ticket_published.field_event_event_ticket__show_in_website
+#: model:ir.model.fields,field_description:website_event_ticket_published.field_event_type_ticket__show_in_website
+msgid "Show In Website"
+msgstr "Affiché sur le site web"
