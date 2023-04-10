@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <!-- Reference: https://www.emta.ee/sites/default/files/business-client/income-expenses-supply-profits/vat/kmd2017_eng.pdf -->
+    <record id="kmd2017_1" model="account.tax.report.line">
+        <field
+            name="name"
+        >1. Acts and transactions subject to tax at a rate of 20%</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">100</field>
+        <field name="code">kmd2017_1</field>
+    </record>
+    <record id="kmd2017_2" model="account.tax.report.line">
+        <field
+            name="name"
+        >2. Acts and transactions subject to tax at a rate of 9%</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 2</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">200</field>
+        <field name="code">kmd2017_2</field>
+    </record>
+    <record id="kmd2017_3" model="account.tax.report.line">
+        <field
+            name="name"
+        >3. Acts and transactions subject to tax at a rate of 0%, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 3</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">300</field>
+        <field name="code">kmd2017_3</field>
+    </record>
+    <record id="kmd2017_3_1" model="account.tax.report.line">
+        <field
+            name="name"
+        >3.1. Intra-Community supply of goods and services provided to a taxable person or taxable person with limited liability of another Member State, total, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 3.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">310</field>
+        <field name="code">kmd2017_3_1</field>
+        <field name="parent_id" ref="kmd2017_3" />
+    </record>
+    <record id="kmd2017_3_1_1" model="account.tax.report.line">
+        <field name="name">3.1.1. Intra-Community supply of goods</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 3.1.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">311</field>
+        <field name="code">kmd2017_3_1_1</field>
+        <field name="parent_id" ref="kmd2017_3_1" />
+    </record>
+    <record id="kmd2017_3_2" model="account.tax.report.line">
+        <field name="name">3.2. Exportation of goods, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 3.2</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">320</field>
+        <field name="code">kmd2017_3_2</field>
+        <field name="parent_id" ref="kmd2017_3" />
+    </record>
+    <record id="kmd2017_3_2_1" model="account.tax.report.line">
+        <field
+            name="name"
+        >3.2.1. Sale to passengers with return of value added tax</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 3.2.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">321</field>
+        <field name="code">kmd2017_3_2_1</field>
+        <field name="parent_id" ref="kmd2017_3_2" />
+    </record>
+    <record id="kmd2017_4" model="account.tax.report.line">
+        <field
+            name="name"
+        >4. Total amount of value-added tax (20% of line 1 + 9% of line 2)</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 4</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">400</field>
+        <field name="code">kmd2017_4</field>
+    </record>
+    <record id="kmd2017_4_1" model="account.tax.report.line">
+        <field
+            name="name"
+        >4¹. Value added tax payable upon the import of the goods</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 4¹</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">410</field>
+        <field name="code">kmd2017_4_1</field>
+        <field name="parent_id" ref="kmd2017_4" />
+    </record>
+    <record id="kmd2017_5" model="account.tax.report.line">
+        <field
+            name="name"
+        >5. Total amount of input VAT subject to deduction pursuant to law, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 5</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">500</field>
+        <field name="code">kmd2017_5</field>
+    </record>
+    <record id="kmd2017_5_1" model="account.tax.report.line">
+        <field name="name">5.1. VAT paid or payable on import</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 5.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">510</field>
+        <field name="code">kmd2017_5_1</field>
+        <field name="parent_id" ref="kmd2017_5" />
+    </record>
+    <record id="kmd2017_5_2" model="account.tax.report.line">
+        <field
+            name="name"
+        >5.2. VAT paid or payable on acquisition of fixed assets</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 5.2</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">520</field>
+        <field name="code">kmd2017_5_2</field>
+        <field name="parent_id" ref="kmd2017_5" />
+    </record>
+    <record id="kmd2017_5_3" model="account.tax.report.line">
+        <field
+            name="name"
+        >5.3. VAT paid or payable on acquisition of a car used for business purposes (100%), and on acquisition of goods and receipt of services for such car</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 5.3</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">530</field>
+        <field name="code">kmd2017_5_3</field>
+        <field name="parent_id" ref="kmd2017_5" />
+    </record>
+    <record id="kmd2017_5_4" model="account.tax.report.line">
+        <field
+            name="name"
+        >5.4. VAT paid or payable on acquisition of a car used partially for business purposes, and on acquisition of goods and receipt of services for such car</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 5.4</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">540</field>
+        <field name="code">kmd2017_5_4</field>
+        <field name="parent_id" ref="kmd2017_5" />
+    </record>
+    <record id="kmd2017_6" model="account.tax.report.line">
+        <field
+            name="name"
+        >6. Intra-Community acquisitions of goods and services received from a taxable person of another Member State, total, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 6</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">600</field>
+        <field name="code">kmd2017_6</field>
+    </record>
+    <record id="kmd2017_6_1" model="account.tax.report.line">
+        <field name="name">6.1. Intra-Community acquisitions of goods</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 6.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">610</field>
+        <field name="code">kmd2017_6_1</field>
+        <field name="parent_id" ref="kmd2017_6" />
+    </record>
+    <record id="kmd2017_7" model="account.tax.report.line">
+        <field
+            name="name"
+        >7. Acquisition of other goods and services subject to VAT, incl.</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 7</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">700</field>
+        <field name="code">kmd2017_7</field>
+    </record>
+    <record id="kmd2017_7_1" model="account.tax.report.line">
+        <field
+            name="name"
+        >7.1. Acquisition of immovables, scrap metal, precious metal and metal products subject to value added tax under the special arrangements (VAT Act § 41¹)</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 7.1</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">710</field>
+        <field name="code">kmd2017_7_1</field>
+        <field name="parent_id" ref="kmd2017_7" />
+    </record>
+    <record id="kmd2017_8" model="account.tax.report.line">
+        <field name="name">8. Supply exempt from tax</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 8</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">800</field>
+        <field name="code">kmd2017_8</field>
+    </record>
+    <record id="kmd2017_9" model="account.tax.report.line">
+        <field
+            name="name"
+        >9. Supply of immovables, scrap metal, precious metal and metal products subject to value added tax under the special arrangements (VAT Act § 41¹) and taxable value of goods to be installed or assembled in another Member State</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 9</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">900</field>
+        <field name="code">kmd2017_9</field>
+    </record>
+    <record id="kmd2017_10" model="account.tax.report.line">
+        <field name="name">10. Adjustments</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 10</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">1000</field>
+        <field name="code">kmd2017_10</field>
+    </record>
+    <record id="kmd2017_11" model="account.tax.report.line">
+        <field name="name">11. Adjustments</field>
+        <field name="tag_name">(EE) VAT Return Form (KMD-2017): field 11</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">1100</field>
+        <field name="code">kmd2017_11</field>
+    </record>
+    <record id="kmd2017_12" model="account.tax.report.line">
+        <field
+            name="name"
+        >12. Value-added tax payable (line 4 + line 4¹ - line 5 + line 10 - line 11)</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">1200</field>
+        <field name="code">kmd2017_12</field>
+        <field
+            name="formula"
+        >max(kmd2017_4 + kmd2017_4_1 - kmd2017_5 + kmd2017_10 - kmd2017_11, 0) or None</field>
+    </record>
+    <record id="kmd2017_13" model="account.tax.report.line">
+        <field
+            name="name"
+        >13. Overpaid value-added tax (line 4 + line 4¹ - line 5 + line 10 - line 11)</field>
+        <field name="country_id" ref="base.ee" />
+        <field name="sequence">1300</field>
+        <field name="code">kmd2017_13</field>
+        <field
+            name="formula"
+        >-min(kmd2017_4 + kmd2017_4_1 - kmd2017_5 + kmd2017_10 - kmd2017_11, 0) or None</field>
+    </record>
+</odoo>

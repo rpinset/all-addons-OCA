@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_price_rule_volumetric_weight
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-29 12:42+0000\n"
+"PO-Revision-Date: 2022-11-11 18:44+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model,name:delivery_price_rule_volumetric_weight.model_delivery_price_rule
+msgid "Delivery Price Rules"
+msgstr "Reglas Entrega Precio"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model.fields.selection,name:delivery_price_rule_volumetric_weight.selection__delivery_price_rule__variable__highest_weight
+#: model:ir.model.fields.selection,name:delivery_price_rule_volumetric_weight.selection__delivery_price_rule__variable_factor__highest_weight
+msgid "Highest weight"
+msgstr "Peso mas alto"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model,name:delivery_price_rule_volumetric_weight.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model.fields,field_description:delivery_price_rule_volumetric_weight.field_delivery_price_rule__variable
+msgid "Variable"
+msgstr "Variable"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model.fields,field_description:delivery_price_rule_volumetric_weight.field_delivery_price_rule__variable_factor
+msgid "Variable Factor"
+msgstr "Factor variable"
+
+#. module: delivery_price_rule_volumetric_weight
+#: model:ir.model.fields.selection,name:delivery_price_rule_volumetric_weight.selection__delivery_price_rule__variable__volumetric_weight
+#: model:ir.model.fields.selection,name:delivery_price_rule_volumetric_weight.selection__delivery_price_rule__variable_factor__volumetric_weight
+msgid "Volumetric weight"
+msgstr "Peso volumétrico"
+
+#, python-format
+#~ msgid "No price rule matching this order; delivery cost cannot be computed."
+#~ msgstr ""
+#~ "Ninguna regla concordante con este pedido; los costes de envío no pueden "
+#~ "ser calculados."

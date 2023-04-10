@@ -1,0 +1,201 @@
+# Copyright 2016 Serpent Consulting Services Pvt. Ltd. (support@serpentcs.com)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
+from lxml import etree
+
+from odoo import _, api, fields, models
+
+
+class MassEditingWizard(models.TransientModel):
+    _name = "mass.editing.wizard"
+    _inherit = "mass.operation.wizard.mixin"
+    _description = "Wizard for mass edition"
+
+    use_active_domain = fields.Boolean(
+        string="Search results",
+        help="Thick if you want to use the custom domain (+ domain of the "
+        "mass edition) instead of select all items manually.",
+    )
+
+    @api.model
+    def _prepare_fields(self, line, field, field_info):
+        result = {}
+
+        # Add "selection field (set / add / remove / remove_m2m)
+        if field.ttype == "many2many":
+            selection = [
+                ("set", _("Set")),
+                ("remove_m2m", _("Remove")),
+                ("add", _("Add")),
+            ]
+        else:
+            selection = [("set", _("Set")), ("remove", _("Remove"))]
+        result["selection__" + field.name] = {
+            "type": "selection",
+            "string": field_info["string"],
+            "selection": selection,
+        }
+
+        # Add field info
+        result[field.name] = field_info
+
+        # Patch fields with required extra data
+        for item in result.values():
+            item.setdefault("views", {})
+        return result
+
+    @api.model
+    def _insert_field_in_arch(self, line, field, main_xml_group):
+        etree.SubElement(
+            main_xml_group,
+            "field",
+            {"name": "selection__" + field.name, "colspan": "2"},
+        )
+        field_vals = {"name": field.name, "nolabel": "1", "colspan": "4"}
+        if line.widget_option:
+            field_vals["widget"] = line.widget_option
+        etree.SubElement(main_xml_group, "field", field_vals)
+
+    @api.model
+    def fields_view_get(
+        self, view_id=None, view_type="form", toolbar=False, submenu=False
+    ):
+        result = super().fields_view_get(
+            view_id=view_id, view_type=view_type, toolbar=toolbar, submenu=submenu
+        )
+        mass_editing = self._get_mass_operation()
+        if not mass_editing:
+            return result
+
+        all_fields = {}
+        TargetModel = self.env[mass_editing.model_id.model]
+        fields_info = TargetModel.fields_get()
+
+        arch = etree.fromstring(result["arch"])
+
+        main_xml_group = arch.find('.//group[@name="group_field_list"]')
+
+        for line in mass_editing.mapped("line_ids"):
+            # Field part
+            field = line.field_id
+            field_info = self._clean_check_company_field_domain(
+                TargetModel, field, fields_info[field.name]
+            )
+            if not line.apply_domain and "domain" in field_info:
+                field_info["domain"] = "[]"
+            all_fields.update(self._prepare_fields(line, field, field_info))
+
+            # XML Part
+            self._insert_field_in_arch(line, field, main_xml_group)
+
+        result["arch"] = etree.tostring(arch, encoding="unicode")
+        result["fields"] = all_fields
+        return result
+
+    @api.model
+    def _clean_check_company_field_domain(self, TargetModel, field, field_info):
+        """
+        This method remove the field view domain added by Odoo for relational
+        fields with check_company attribute to avoid error for non exists
+        company_id or company_ids fields in wizard view.
+        See _description_domain method in _Relational Class
+        """
+        field_class = TargetModel._fields[field.name]
+        if not field_class.relational or not field_class.check_company or field.domain:
+            return field_info
+        field_info["domain"] = "[]"
+        return field_info
+
+    @api.model_create_multi
+    def create(self, list_vals):
+        wizards = self.browse()
+        for vals in list_vals:
+            # Split values to extract values from the current wizard and
+            # values used to update target records.
+            wizard_vals = {k: vals.get(k) for k in vals.keys() if k in self._fields}
+            edition_vals = {k: vals.get(k) for k in vals.keys() if k not in wizard_vals}
+            wizard = super().create(wizard_vals)
+            wizards |= wizard
+            if not edition_vals:
+                continue
+            wizard._update_items(edition_vals)
+        return wizards
+
+    def _update_items(self, vals):
+        """
+
+        :param vals: dict
+        :return: None
+        """
+        self.ensure_one()
+        mass_editing = self._get_mass_operation()
+        items = self._get_remaining_items(force_active_domain=self.use_active_domain)
+        if items:
+            IrModelFields = self.env["ir.model.fields"]
+            IrTranslation = self.env["ir.translation"]
+            active_ids = items.ids
+
+            values = {}
+            for key, val in vals.items():
+                if key.startswith("selection_"):
+                    split_key = key.split("__", 1)[1]
+                    if val == "set":
+                        values.update({split_key: vals.get(split_key, False)})
+
+                    elif val == "remove":
+                        values.update({split_key: False})
+
+                        # If field to remove is translatable,
+                        # its translations have to be removed
+                        model_field = IrModelFields.search(
+                            [("model", "=", items._name), ("name", "=", split_key)]
+                        )
+                        if model_field and model_field.translate:
+                            translations = IrTranslation.search(
+                                [
+                                    ("res_id", "in", active_ids),
+                                    ("type", "=", "model"),
+                                    (
+                                        "name",
+                                        "=",
+                                        u"{},{}".format(
+                                            mass_editing.model_id.model, split_key
+                                        ),
+                                    ),
+                                ]
+                            )
+                            translations.unlink()
+
+                    elif val == "remove_m2m":
+                        m2m_list = []
+                        if vals.get(split_key):
+                            for m2m_id in vals.get(split_key)[0][2]:
+                                m2m_list.append((3, m2m_id))
+                        if m2m_list:
+                            values.update({split_key: m2m_list})
+                        else:
+                            values.update({split_key: [(5, 0, [])]})
+
+                    elif val == "add":
+                        m2m_list = []
+                        for m2m_id in vals.get(split_key, False)[0][2]:
+                            m2m_list.append((4, m2m_id))
+                        values.update({split_key: m2m_list})
+            if values:
+                items.write(values)
+
+    def read(self, fields, load="_classic_read"):
+        """ Without this call, dynamic fields build by fields_view_get()
+            generate a log warning, i.e.:
+            odoo.models:mass.editing.wizard.read() with unknown field 'myfield'
+            odoo.models:mass.editing.wizard.read()
+                with unknown field 'selection__myfield'
+        """
+        real_fields = fields
+        if fields:
+            # We remove fields which are not in _fields
+            real_fields = [x for x in fields if x in self._fields]
+        result = super().read(real_fields, load=load)
+        # adding fields to result
+        [result[0].update({x: False}) for x in fields if x not in real_fields]
+        return result

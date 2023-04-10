@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <menuitem
+        id="reporting_menu"
+        name="Estonia"
+        parent="account.menu_finance_reports"
+    />
+
+</odoo>

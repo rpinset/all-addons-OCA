@@ -1,0 +1,83 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* purchase_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2021-02-28 10:45+0000\n"
+"Last-Translator: Dong <dong@freshoo.cn>\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "<i class=\"fa fa-info-circle\"/>This PO needs to be\n"
+"                        validated."
+msgstr "<i class=\"fa fa-info-circle\"/>采购订单需要审批。"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "<i class=\"fa fa-thumbs-down\"/> Operation has been <b>rejected</b>."
+msgstr "<i class=\"fa fa-thumbs-down\"/> 单据操作审批已 <b>拒绝</b>。"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "<i class=\"fa fa-thumbs-up\"/> Operation has been <b>validated</b>!"
+msgstr "<i class=\"fa fa-thumbs-up\"/> 单据操作审批已 <b>通过</b>！"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.view_purchase_order_filter
+msgid "My Purchases to review"
+msgstr "我的采购订单审批待办"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.view_purchase_order_filter
+msgid "Needs my Review"
+msgstr "需要我审批"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.view_purchase_order_filter
+msgid "POs validated and ready to be confirmed"
+msgstr "采购订单审批已通过并等待确认"
+
+#. module: purchase_tier_validation
+#: model:ir.model,name:purchase_tier_validation.model_purchase_order
+msgid "Purchase Order"
+msgstr "采购订单"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "Reject"
+msgstr "拒绝"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "Request Validation"
+msgstr "提交审批"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "Restart Validation"
+msgstr "撤回审批"
+
+#. module: purchase_tier_validation
+#: model:ir.model,name:purchase_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr "节点定义"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.purchase_order_form
+msgid "Validate"
+msgstr "通过"
+
+#. module: purchase_tier_validation
+#: model_terms:ir.ui.view,arch_db:purchase_tier_validation.view_purchase_order_filter
+msgid "Validated"
+msgstr "已通过"

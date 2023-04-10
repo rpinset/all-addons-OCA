@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!-- Reference: https://www.emta.ee/sites/default/files/business-client/income-expenses-supply-profits/vat/kmd2017_eng.pdf -->
+
+    <record id="kmd2017_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017)</field>
+        <field name="dp_inherit" eval="0" />
+        <field name="dp">2</field>
+    </record>
+
+    <record id="kmd2017" model="mis.report">
+        <field name="name">(EE) VAT Return (KMD-2017)</field>
+        <field name="description">In force since 01 Jan 2017</field>
+        <field name="style_id" ref="kmd2017_style" />
+    </record>
+
+    <record id="kmd2017_field_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 1</field>
+    </record>
+
+    <record id="kmd2017_field_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">10</field>
+        <field name="name">field_1</field>
+        <field
+            name="description"
+        >1. Acts and transactions subject to tax at a rate of 20%</field>
+        <field name="style_id" ref="kmd2017_field_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_2_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 2</field>
+    </record>
+
+    <record id="kmd2017_field_2" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">20</field>
+        <field name="name">field_2</field>
+        <field
+            name="description"
+        >2. Acts and transactions subject to tax at a rate of 9%</field>
+        <field name="style_id" ref="kmd2017_field_2_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_2').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_2').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_3_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 3</field>
+    </record>
+
+    <record id="kmd2017_field_3" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">30</field>
+        <field name="name">field_3</field>
+        <field
+            name="description"
+        >3. Acts and transactions subject to tax at a rate of 0%, incl.</field>
+        <field name="style_id" ref="kmd2017_field_3_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_3_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 3.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_3_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">31</field>
+        <field name="name">field_3_1</field>
+        <field
+            name="description"
+        >3.1. Intra-Community supply of goods and services provided to a taxable person or taxable person with limited liability of another Member State, total, incl.</field>
+        <field name="style_id" ref="kmd2017_field_3_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_3_1_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 3.1.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="kmd2017_field_3_1_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">32</field>
+        <field name="name">field_3_1_1</field>
+        <field name="description">3.1.1. Intra-Community supply of goods</field>
+        <field name="style_id" ref="kmd2017_field_3_1_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_1_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_1_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_3_2_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 3.2</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_3_2" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">33</field>
+        <field name="name">field_3_2</field>
+        <field name="description">3.2. Exportation of goods, incl.</field>
+        <field name="style_id" ref="kmd2017_field_3_2_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_2').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_2').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_3_2_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 3.2.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="kmd2017_field_3_2_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">34</field>
+        <field name="name">field_3_2_1</field>
+        <field
+            name="description"
+        >3.2.1. Sale to passengers with return of value added tax</field>
+        <field name="style_id" ref="kmd2017_field_3_2_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_2_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_3_2_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_4_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 4</field>
+    </record>
+
+    <record id="kmd2017_field_4" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">40</field>
+        <field name="name">field_4</field>
+        <field
+            name="description"
+        >4. Total amount of value-added tax (20% of line 1 + 9% of line 2)</field>
+        <field name="style_id" ref="kmd2017_field_4_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_4').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_4_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 4¹</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_4_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">41</field>
+        <field name="name">field_4_1</field>
+        <field
+            name="description"
+        >4¹. Value added tax payable upon the import of the goods</field>
+        <field name="style_id" ref="kmd2017_field_4_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_4_1').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_5_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 5</field>
+    </record>
+
+    <record id="kmd2017_field_5" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">50</field>
+        <field name="name">field_5</field>
+        <field
+            name="description"
+        >5. Total amount of input VAT subject to deduction pursuant to law, incl.</field>
+        <field name="style_id" ref="kmd2017_field_5_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_5').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_5_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 5.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_5_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">51</field>
+        <field name="name">field_5_1</field>
+        <field name="description">5.1. VAT paid or payable on import</field>
+        <field name="style_id" ref="kmd2017_field_5_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_5_1').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_5_2_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 5.2</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_5_2" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">52</field>
+        <field name="name">field_5_2</field>
+        <field
+            name="description"
+        >5.2. VAT paid or payable on acquisition of fixed assets</field>
+        <field name="style_id" ref="kmd2017_field_5_2_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_5_2').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_5_3_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 5.3</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_5_3" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">53</field>
+        <field name="name">field_5_3</field>
+        <field
+            name="description"
+        >5.3. VAT paid or payable on acquisition of a car used for business purposes (100%), and on acquisition of goods and receipt of services for such car</field>
+        <field name="style_id" ref="kmd2017_field_5_3_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_5_3').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_5_4_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 5.4</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_5_4" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">54</field>
+        <field name="name">field_5_4</field>
+        <field
+            name="description"
+        >5.4. VAT paid or payable on acquisition of a car used partially for business purposes, and on acquisition of goods and receipt of services for such car</field>
+        <field name="style_id" ref="kmd2017_field_5_4_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_line_id.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_5_4').id)]</field>
+    </record>
+
+    <record id="kmd2017_field_6_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 6</field>
+    </record>
+
+    <record id="kmd2017_field_6" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">60</field>
+        <field name="name">field_6</field>
+        <field
+            name="description"
+        >6. Intra-Community acquisitions of goods and services received from a taxable person of another Member State, total, incl.</field>
+        <field name="style_id" ref="kmd2017_field_6_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_6').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_6').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_6_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 6.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_6_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">61</field>
+        <field name="name">field_6_1</field>
+        <field name="description">6.1. Intra-Community acquisitions of goods</field>
+        <field name="style_id" ref="kmd2017_field_6_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_6_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_6_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_7_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 7</field>
+    </record>
+
+    <record id="kmd2017_field_7" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">70</field>
+        <field name="name">field_7</field>
+        <field
+            name="description"
+        >7. Acquisition of other goods and services subject to VAT, incl.</field>
+        <field name="style_id" ref="kmd2017_field_7_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_7').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_7').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_7_1_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 7.1</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+    </record>
+
+    <record id="kmd2017_field_7_1" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">71</field>
+        <field name="name">field_7_1</field>
+        <field
+            name="description"
+        >7.1. Acquisition of immovables, scrap metal, precious metal and metal products subject to value added tax under the special arrangements (VAT Act § 41¹)</field>
+        <field name="style_id" ref="kmd2017_field_7_1_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_7_1').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_7_1').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_8_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 8</field>
+    </record>
+
+    <record id="kmd2017_field_8" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">80</field>
+        <field name="name">field_8</field>
+        <field name="description">8. Supply exempt from tax</field>
+        <field name="style_id" ref="kmd2017_field_8_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_8').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_8').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_9_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 9</field>
+    </record>
+
+    <record id="kmd2017_field_9" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">90</field>
+        <field name="name">field_9</field>
+        <field
+            name="description"
+        >9. Supply of immovables, scrap metal, precious metal and metal products subject to value added tax under the special arrangements (VAT Act § 41¹) and taxable value of goods to be installed or assembled in another Member State</field>
+        <field name="style_id" ref="kmd2017_field_9_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_9').id), ('tax_ids.type_tax_use', '=', 'purchase')] - balp[][('tax_ids.tag_ids.id', '=', ref('l10n_ee_accounting.kmd2017_9').id), ('tax_ids.type_tax_use', '=', 'sale')]</field>
+    </record>
+
+    <record id="kmd2017_field_10_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 10</field>
+    </record>
+
+    <record id="kmd2017_field_10" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">100</field>
+        <field name="name">field_10</field>
+        <field name="description">10. Adjustments</field>
+        <field name="style_id" ref="kmd2017_field_10_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >max(0, AccountingNone) or AccountingNone</field><!-- TODO: Field 10: +Adjustments, via nbal? or deb -->
+    </record>
+
+    <record id="kmd2017_field_11_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 11</field>
+    </record>
+
+    <record id="kmd2017_field_11" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">110</field>
+        <field name="name">field_11</field>
+        <field name="description">11. Adjustments</field>
+        <field name="style_id" ref="kmd2017_field_11_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-min(0, AccountingNone) or AccountingNone</field><!-- TODO: Field 11: -Adjustments, via pbal? or crd -->
+    </record>
+
+    <record id="kmd2017_field_12_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 12</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="kmd2017_field_12" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">120</field>
+        <field name="name">field_12</field>
+        <field
+            name="description"
+        >12. Value-added tax payable (line 4 + line 4¹ - line 5 + line 10 - line 11)</field>
+        <field name="style_id" ref="kmd2017_field_12_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >max(field_4 + field_4_1 - field_5 + field_10 - field_11, AccountingNone) or AccountingNone</field>
+    </record>
+
+    <record id="kmd2017_field_13_style" model="mis.report.style">
+        <field name="name">(EE) VAT Return (KMD-2017): Field 13</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="kmd2017_field_13" model="mis.report.kpi">
+        <field name="report_id" ref="kmd2017" />
+        <field name="sequence">130</field>
+        <field name="name">field_13</field>
+        <field
+            name="description"
+        >13. Overpaid value-added tax (line 4 + line 4¹ - line 5 + line 10 - line 11)</field>
+        <field name="style_id" ref="kmd2017_field_13_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-min(field_4 + field_4_1 - field_5 + field_10 - field_11, AccountingNone) or AccountingNone</field>
+    </record>
+
+</odoo>

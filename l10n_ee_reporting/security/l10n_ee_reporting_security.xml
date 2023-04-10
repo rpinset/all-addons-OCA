@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo noupdate="1">
+    <record id="l10n_ee_reporting_vies_declaration_company_rule" model="ir.rule">
+        <field name="name">l10n EE Reporting VIES declaration</field>
+        <field name="model_id" ref="model_l10n_ee_reporting_vies_declaration" />
+        <field name="global" eval="True" />
+        <field name="domain_force">
+            ['|',('company_id','=',False),('company_id','in',company_ids)]
+        </field>
+    </record>
+    <record id="l10n_ee_reporting_kmd_inf_company_rule" model="ir.rule">
+        <field name="name">l10n EE Reporting VIES declaration</field>
+        <field name="model_id" ref="model_l10n_ee_reporting_kmd_inf" />
+        <field name="global" eval="True" />
+        <field name="domain_force">
+            ['|',('company_id','=',False),('company_id','in',company_ids)]
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="assets_frontend"
+        name="website_cookie_notice assets"
+        inherit_id="web.assets_frontend"
+    >
+        <xpath expr="." position="inside">
+            <script
+                type="text/javascript"
+                src="/website_cookie_notice/static/src/js/accept_cookies.js"
+            />
+        </xpath>
+    </template>
+</odoo>

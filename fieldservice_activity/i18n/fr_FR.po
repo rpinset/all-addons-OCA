@@ -1,0 +1,162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2021-05-20 10:48+0000\n"
+"Last-Translator: Sandrine (ACSONE) <sandrine.ravet@acsone.eu>\n"
+"Language-Team: none\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_order__order_activity_ids
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_template__temp_activity_ids
+msgid "Activites"
+msgstr "Activités"
+
+#. module: fieldservice_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_order_form_add_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_template_form_add_activity
+msgid "Activities"
+msgstr "Activités"
+
+#. module: fieldservice_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_order_form_add_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_template_form_add_activity
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields.selection,name:fieldservice_activity.selection__fsm_activity__state__cancel
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: fieldservice_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_order_form_add_activity
+#: model_terms:ir.ui.view,arch_db:fieldservice_activity.view_fsm_template_form_add_activity
+msgid "Complete"
+msgstr "Fait"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed
+#: model:ir.model.fields.selection,name:fieldservice_activity.selection__fsm_activity__state__done
+msgid "Completed"
+msgstr "Fait"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed_by
+msgid "Completed By"
+msgstr "Fait par"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__completed_on
+msgid "Completed On"
+msgstr "Fait le"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__display_name
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__fsm_order_id
+msgid "FSM Order"
+msgstr "FSM order"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__fsm_template_id
+msgid "FSM Template"
+msgstr "FSM Modèle"
+
+#. module: fieldservice_activity
+#: model:ir.model,name:fieldservice_activity.model_fsm_activity
+msgid "Field Service Activity"
+msgstr "Activité Service sur site"
+
+#. module: fieldservice_activity
+#: model:ir.model,name:fieldservice_activity.model_fsm_order
+msgid "Field Service Order"
+msgstr "Service sur site"
+
+#. module: fieldservice_activity
+#: model:ir.model,name:fieldservice_activity.model_fsm_template
+msgid "Field Service Order Template"
+msgstr "Modèle de service sur site"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__id
+msgid "ID"
+msgstr "ID"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__ref
+msgid "Reference"
+msgstr "Référence"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__required
+msgid "Requireid"
+msgstr "Obligatoire"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields,field_description:fieldservice_activity.field_fsm_activity__state
+msgid "State"
+msgstr "Statut"
+
+#. module: fieldservice_activity
+#: model:ir.model.fields.selection,name:fieldservice_activity.selection__fsm_activity__state__todo
+msgid "To Do"
+msgstr "A faire"
+
+#. module: fieldservice_activity
+#: code:addons/fieldservice_activity/models/fsm_order.py:0
+#, python-format
+msgid ""
+"You must complete activity '%s' before                     completing this "
+"order."
+msgstr ""
+"Vous devez compléter cette activité '%s' avant de valider ce service sur "
+"site."

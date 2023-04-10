@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2016 Jairo Llopis <jairo.llopis@tecnativa.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="purchase_order_tree" model="ir.ui.view">
+        <field name="name">Show invoice status in PO tree</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_status']" position="attributes">
+                <attribute name="invisible">0</attribute>
+                <attribute name="optional">hide</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="purchase_batch_invoicing_tree_view" model="ir.ui.view">
+        <field name="name">purchase.order.tree (purchase_batch_invoicing)</field>
+        <field name="model">purchase.order</field>
+        <field eval="999" name="priority" />
+        <field name="arch" type="xml">
+            <tree>
+                <field name="state" invisible="1" />
+                <field name="currency_id" invisible="1" />
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="partner_ref" />
+                <field name="date_order" />
+                <field
+                    name="amount_total"
+                    widget="monetary"
+                    options="{'currency_field': 'currency_id'}"
+                />
+            </tree>
+        </field>
+    </record>
+</odoo>

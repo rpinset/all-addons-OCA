@@ -1,0 +1,69 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        content-type:
+          - application/json
+        user-agent:
+          - elasticsearch-py/7.10.0 (Python 3.6.7)
+      method: HEAD
+      uri: http://elastic:9200/
+    response:
+      body:
+        string: ""
+      headers:
+        content-length:
+          - "508"
+        content-type:
+          - application/json; charset=UTF-8
+      status:
+        code: 200
+        message: OK
+  - request:
+      body: null
+      headers:
+        content-type:
+          - application/json
+        user-agent:
+          - elasticsearch-py/7.10.0 (Python 3.6.7)
+      method: HEAD
+      uri: http://elastic:9200/demo_elasticsearch_backend_res_partner_binding_fake_en_us
+    response:
+      body:
+        string: ""
+      headers:
+        content-length:
+          - "433"
+        content-type:
+          - application/json; charset=UTF-8
+      status:
+        code: 200
+        message: OK
+  - request:
+      body:
+        '{"index":{"_id":"foo","_index":"demo_elasticsearch_backend_res_partner_binding_fake_en_us"}}
+
+        {"objectID":"foo"}
+
+        '
+      headers:
+        Content-Length:
+          - "112"
+        content-type:
+          - application/json
+        user-agent:
+          - elasticsearch-py/7.10.0 (Python 3.6.7)
+      method: POST
+      uri: http://elastic:9200/_bulk
+    response:
+      body:
+        string: '{"took":7,"errors":false,"items":[{"index":{"_index":"demo_elasticsearch_backend_res_partner_binding_fake_en_us","_type":"_doc","_id":"foo","_version":2,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1,"status":200}}]}'
+      headers:
+        content-length:
+          - "266"
+        content-type:
+          - application/json; charset=UTF-8
+      status:
+        code: 200
+        message: OK
+version: 1

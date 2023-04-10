@@ -1,0 +1,164 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_widget_one2many_product_picker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-04-13 11:05+0000\n"
+"Last-Translator: Noel estudillo <noelestudilloviera@gmail.com>\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
+msgid "Add"
+msgstr "Afegir"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/js/widgets/field_one2many_product_picker.js:0
+#, python-format
+msgid "All"
+msgstr "Tot"
+
+#. module: web_widget_one2many_product_picker
+#: model:ir.model,name:web_widget_one2many_product_picker.model_base
+msgid "Base"
+msgstr "Base"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/js/widgets/field_one2many_product_picker.js:0
+#, python-format
+msgid "By Name"
+msgstr "Per Nom"
+
+#. module: web_widget_one2many_product_picker
+#: code:addons/web_widget_one2many_product_picker/models/base.py:0
+#, python-format
+msgid "Can't create the %s: Duplicated product (%s)! (Already in database)"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
+#: code:addons/web_widget_one2many_product_picker/models/base.py:0
+#, python-format
+msgid "Can't create the %s: Duplicated product! (Inside query)"
+msgstr "No es pot crear el %s: producte duplicat! (Consulta interna)"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
+msgid "Discard"
+msgstr "Descartar"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "Groups"
+msgstr "Grups"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "LOADING..."
+msgstr "CARREGANT..."
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "Lines"
+msgstr "Línias"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "Load More"
+msgstr "Carrega més"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_modif_price.xml:0
+#, python-format
+msgid "Price"
+msgstr "Preu"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
+msgid "Remove"
+msgstr "Eliminar"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "Search..."
+msgstr "Cerca..."
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "Subtotal:"
+msgstr "Subtotal:"
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/js/views/One2ManyProductPicker/record.js:0
+#, python-format
+msgid "[No widget %s]"
+msgstr "[Sense widget %s]"
+
+#~ msgid "Can't create the %s: Duplicated product! (Already in database)"
+#~ msgstr "No es pot crear el %s: producte duplicat! (Ja a la base de dades)"
+
+#~ msgid "Price:"
+#~ msgstr "Preu:"
+
+#~ msgid "Product"
+#~ msgstr "Producte"
+
+#~ msgid ""
+#~ "This field holds the image used as image for the product variantor "
+#~ "product image medium, limited to 512x512px."
+#~ msgstr ""
+#~ "Aquest camp conté la imatge que s'utilitza com a imatge per al mitjà "
+#~ "d'imatge del producte que varia el producte, limitada a 512x512px."
+
+#~ msgid ""
+#~ "This field holds the image used as image for the product variantor "
+#~ "product image, limited to 1024x1024px."
+#~ msgstr ""
+#~ "Aquest camp conté la imatge que s'utilitza com a imatge per al mitjà "
+#~ "d'imatge del producte que varia el producte, limitada a 1024x1024px."
+
+#~ msgid "Variant Image Big (Computed)"
+#~ msgstr "Imatge variant gran (calculada)"
+
+#~ msgid "Variant Image Medium (Computed)"
+#~ msgstr "Imatge variant mitjana ( calculada)"
+
+#~ msgid "Add 1"
+#~ msgstr "Afegir 1"

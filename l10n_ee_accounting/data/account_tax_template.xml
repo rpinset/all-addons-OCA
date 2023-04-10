@@ -1,0 +1,4324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <!--
+        Acquisition of services
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_in_1A" model="account.tax.template">
+        <field name="sequence">10</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+    </record>
+    <record id="vat_in_1A1" model="account.tax.template">
+        <field name="sequence">11</field>
+        <field name="description">9% VAT</field>
+        <field name="name">EE 9% VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">9</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_9" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <record id="vat_in_1B" model="account.tax.template">
+        <field name="sequence">20</field>
+        <field name="description">Without VAT</field>
+        <field name="name">EE Without VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_absent" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_in_1C" model="account.tax.template">
+        <field name="sequence">30</field>
+        <field name="description">0% VAT</field>
+        <field name="name">EU Reverse-Charge VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_6')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_6')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Non-taxable person of the other MS -->
+    <record id="vat_in_1D" model="account.tax.template">
+        <field name="sequence">40</field>
+        <field name="description">0% VAT</field>
+        <field name="name">EU 0% VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_in_1E" model="account.tax.template">
+        <field name="sequence">50</field>
+        <field name="description">0% VAT</field>
+        <field name="name">Non-EU 0% VAT (Services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_7')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_7')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Acquisition of goods (20%)
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_in_2A" model="account.tax.template">
+        <field name="sequence">60</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (Goods)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+    </record>
+    <record id="vat_in_2A1" model="account.tax.template">
+        <field name="sequence">61</field>
+        <field name="description">9% VAT</field>
+        <field name="name">EE 9% VAT (Goods)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">9</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_9" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+            ]"
+        />
+    </record>
+    <record id="vat_in_2A2" model="account.tax.template">
+        <field name="sequence">62</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (Fixed Assets)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_2')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_2')],
+                }),
+            ]"
+        />
+    </record>
+    <record id="vat_in_2A3" model="account.tax.template">
+        <field name="sequence">63</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (car 100% business)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_3')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_3')],
+                }),
+            ]"
+        />
+    </record>
+    <record id="vat_in_2A4" model="account.tax.template">
+        <field name="sequence">64</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (car partially business)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <record id="vat_in_2B" model="account.tax.template">
+        <field name="sequence">70</field>
+        <field name="description">Without VAT</field>
+        <field name="name">EE Without VAT (Goods)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_absent" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_in_2C" model="account.tax.template">
+        <field name="sequence">80</field>
+        <field name="description">0% VAT</field>
+        <field name="name">EU Reverse-Charge VAT (Goods)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_6'), ref('kmd2017_6_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1'), ref('kmd2017_6'), ref('kmd2017_6_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5')],
+                }),
+                (0,0,{
+                    'factor_percent': -100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Non-taxable person of the other MS -->
+    <!--
+        NOTE: N/A
+    -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_in_2E" model="account.tax.template">
+        <field name="sequence">100</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT (Goods): Import</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_7')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'plus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_1')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_7')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_receivable'),
+                    'minus_report_line_ids': [ref('kmd2017_5'), ref('kmd2017_5_1')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/taxation-services -->
+    <!--
+        Services where the place of supply is determined according to so-called basic rule:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_1A" model="account.tax.template">
+        <field name="sequence">110</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Basic-rule services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_1B" model="account.tax.template">
+        <field name="sequence">120</field>
+        <field name="description">0% VAT</field>
+        <field name="name">VAT Reverse-Charge: Basic rule services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_1C" model="account.tax.template">
+        <field name="sequence">130</field>
+        <field name="description">0% VAT</field>
+        <field name="name">Non-EU 0% VAT: Basic rule services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Service connected with an immovable located in Estonia (construction,
+        building and assembly works, incl. repair and maintenance works etc.):
+          - Clause 10 (2) 1) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_2" model="account.tax.template">
+        <field name="sequence">200</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Immovable-related services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Accommodation in Estonia: clause 15 (2) 4) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_3" model="account.tax.template">
+        <field name="sequence">300</field>
+        <field name="description">9% VAT</field>
+        <field name="name">EE 9% VAT: Accommodation in EE</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">9</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_9" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Rent, lease in Estonia: Clause 16 (2) 2) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_4" model="account.tax.template">
+        <field name="sequence">400</field>
+        <field name="description">VAT Exempt</field>
+        <field name="name">EE VAT Exempt: Rent, lease in EE</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_exempt" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Service connected with an immovable located in a foreign country
+        (accommodation; construction, building and assembly works, incl. repair
+        and maintenance works etc.):
+          - Clause 10 (4) 1) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE:
+        Country where the immovable is located (clause 10 (4) 1) of VATA)
+        Registration obligation, VAT rate of the country where the immovable is
+        located.
+
+        The declaration of the supply with 0% VAT rate in Estonia is possible
+        only if there is no registration obligation in the foreign country
+        where the immovable is located or if the services is provided to a
+        taxable person of the country where the immovable is located and the
+        Reverse-Charge system can be used.
+    -->
+    <!--
+        Cultural, artistic, sporting, scientific or entertainment services or
+        services connected with trade fairs or exhibitions are provided in
+        Estonia; the organisation of the related events and provision of
+        ancillary services
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_5A" model="account.tax.template">
+        <field name="sequence">510</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Cultural/Exhibition services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_5B" model="account.tax.template">
+        <field name="sequence">520</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Cultural/Exhibition services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_5C" model="account.tax.template">
+        <field name="sequence">530</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >Non-EU 0% VAT: Cultural/Exhibition services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Educational services provided in Estonia: clause 16 (1) 6) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_6" model="account.tax.template">
+        <field name="sequence">610</field>
+        <field name="description">VAT Exempt</field>
+        <field name="name">EE VAT Exempt: Educational services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_exempt" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Entrance services provided in Estonia and ancillary services related to
+        entrance services
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_7" model="account.tax.template">
+        <field name="sequence">710</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Entrance services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Cultural, artistic, sporting, scientific or entertainment services or
+        services connected with trade fairs or exhibitions are provided in a
+        foreign country; the organisation of the related events and provision
+        of ancillary services
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_out_8A" model="account.tax.template">
+        <field name="sequence">810</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >EE 20% VAT: Cultural/Exhibition services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_8B" model="account.tax.template">
+        <field name="sequence">820</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Cultural/Exhibition services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_8C" model="account.tax.template">
+        <field name="sequence">830</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Cultural/Exhibition services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Passenger transport in Estonia: Clause 10 (2) 3) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_9" model="account.tax.template">
+        <field name="sequence">900</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Passenger transport in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- International route which passes through Estonia: clause 15 (4) 13) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_10" model="account.tax.template">
+        <field name="sequence">1000</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Passenger transport via Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- International route outside Estonia: Clause 10 (4) 4) of VATA -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_11" model="account.tax.template">
+        <field name="sequence">1100</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Passenger transport outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Restaurant and catering services provided in Estonia (except on board
+        of vessel or aircraft or in train during international route):
+          - Clause 10 (2) 4) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_12" model="account.tax.template">
+        <field name="sequence">1200</field>
+        <field name="description">20% VAT</field>
+        <field name="name">EE 20% VAT: Restaurant/catering services in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Restaurant and catering services provided outside Estonia (except on
+        board of vessel or aircraft or in train during international route):
+          - Clause 10 (4) 5¹ of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: Country where the services are provided, the VAT rate of this
+        country
+    -->
+    <!--
+        Restaurant and catering services in the territory of EU on board of
+        vessel or aircraft departing on an international route from Estonia:
+          - clause 10 (2) 5) of VATA
+          - clause 15 (4) 2) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_13" model="account.tax.template">
+        <field name="sequence">1300</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Restaurant/catering services on international route from Estonia (vessel, aircraft)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Restaurant and catering services in the territory of EU on board of
+        train departing on an international route from Estonia:
+          - Clause 10 (2) 5) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_14" model="account.tax.template">
+        <field name="sequence">1400</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Restaurant/catering services on international route from Estonia (train)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Restaurant and catering services in the territory of EU on board of
+        vessel or aircraft departing on an international route from another MS:
+          - Clause 10 (4) 5 of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_15" model="account.tax.template">
+        <field name="sequence">1500</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Restaurant/catering services on international route via Estonia (vessel, aircraft)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Restaurant and catering services in the territory of EU on board of
+        train departing on an international route from another MS.
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: VAT rate of country of departure
+    -->
+    <!--
+        Work with a movable located in Estonia or the valuation of it:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (2) 7) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_16A" model="account.tax.template">
+        <field name="sequence">1610</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Work with a movable located in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_16B" model="account.tax.template">
+        <field name="sequence">1620</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Work with a movable located in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_16C" model="account.tax.template">
+        <field name="sequence">1630</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Work with a movable located in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Work with a movable located in a foreign country or the valuation of it:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 3) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_out_17A" model="account.tax.template">
+        <field name="sequence">1710</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Work with a movable located in a foreign country</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_17B" model="account.tax.template">
+        <field name="sequence">1720</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Work with a movable located in a foreign country</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_17C" model="account.tax.template">
+        <field name="sequence">1730</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Work with a movable located in a foreign country</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Other Estonian taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: Country of the location of the movable (clause 10 (4) 3) of VATA)
+        VAT rate of the country of the location of the movable
+    -->
+    <!--
+        Rent of a means of transport on a short-term basis (not longer than
+        30 days, vessels not longer than 90 days) in Estonia:
+          - Clause 10 (2) 6) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_18" model="account.tax.template">
+        <field name="sequence">1800</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Rent of a means of transport in Estonia (up to 30 days)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Rent of a means of transport on a short-term basis (not longer than
+        30 days, vessels not longer than 90 days) in a foreign country:
+          - Clause 10 (4) 4¹ of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: VAT rate of the country where the means of transport are rented
+    -->
+    <!--
+        Rent of a means of transport on a long-term basis (except pleasure or recreational craft):
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 9) of VATA
+          - Clause 10 (2) 6¹) of VATA
+          - Clause 10 (4) 4²) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <record id="vat_out_19A" model="account.tax.template">
+        <field name="sequence">1910</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Long-term rent of a means of transport (except pleasure/recreational craft)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_19B" model="account.tax.template">
+        <field name="sequence">1920</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Long-term rent of a means of transport (except pleasure/recreational craft)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_19C" model="account.tax.template">
+        <field name="sequence">1930</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Long-term rent of a means of transport (except pleasure/recreational craft)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: Country of the seat of the recipient of the service
+          - clause 10 (4) 4²) of VATA)
+    -->
+    <!--
+        Intermediation service, if a transaction the place of supply of which
+        is Estonia is mediated:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (2) 11) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_20A" model="account.tax.template">
+        <field name="sequence">2010</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Intermediation services for transaction in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_20B" model="account.tax.template">
+        <field name="sequence">2020</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Intermediation services for transaction in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_20C" model="account.tax.template">
+        <field name="sequence">2030</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intermediation services for transaction in Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Intermediation service, if a transaction the place of supply of which
+        is Estonia is mediated:
+          - Clause 15 (4) 7) of VATA
+            – if the goods specified in clauses 15 (3) 1), 3)-6) and 10)
+            - if the services specified in clauses 15 (4) 2)-4), 6), 9), 10), 12) and 14)
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_21" model="account.tax.template">
+        <field name="sequence">2100</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intermediation services for transaction in Estonia (specific goods/services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Intermediation service, if a transaction the place of supply of which
+        is any other MS (except Estonia) is mediated:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 8) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_out_22A" model="account.tax.template">
+        <field name="sequence">2210</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Intermediation services for transaction in EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_22B" model="account.tax.template">
+        <field name="sequence">2220</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Intermediation services for transaction in EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_22C" model="account.tax.template">
+        <field name="sequence">2230</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intermediation services for transaction in EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Intermediation services, if a transaction the place of supply of which
+        is any other MS (except Estonia) is mediated:
+          - Clause 15 (4) 7) of VATA
+            – if the goods specified in clauses 15 (3) 1), 3)-6) and 10)
+            - if the services specified in clauses 15 (4) 2)-4), 6), 9), 10), 12) and 14)
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_23" model="account.tax.template">
+        <field name="sequence">2300</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intermediation services for transaction in EU (specific goods/services)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Intermediation services, if a transaction the place of supply of which
+        is a third country is mediated:
+          - Clause 15 (4) 7) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_24" model="account.tax.template">
+        <field name="sequence">2400</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intermediation services for transaction outside EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Services listed in subsection 10 (5) of VATA (so-called immaterial
+        services), except digital services:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 9) of VATA
+          - Subsection 10 (5) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <record id="vat_out_25A" model="account.tax.template">
+        <field name="sequence">2510</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Immaterial (except digital) services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_25B" model="account.tax.template">
+        <field name="sequence">2520</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Immaterial (except digital) services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_25C" model="account.tax.template">
+        <field name="sequence">2530</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Immaterial (except digital) services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Digital services:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 9) of VATA
+          - Clause 10 (5) of VATA
+          - Subsection 10¹ of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <record id="vat_out_26A" model="account.tax.template">
+        <field name="sequence">2610</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Digital services (non-MOSS)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_26B" model="account.tax.template">
+        <field name="sequence">2620</field>
+        <field name="description">0% VAT</field>
+        <field name="name">VAT Reverse-Charge: Digital services (non-MOSS)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_26C" model="account.tax.template">
+        <field name="sequence">2630</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Digital services (non-MOSS)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Financial services, exempt from VAT:
+          - Subsection 16 (2¹) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_27" model="account.tax.template">
+        <field name="sequence">2710</field>
+        <field name="description">VAT Exempt</field>
+        <field name="name">EE VAT Exempt: Financial services except from VAT</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_exempt" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Financial services, pption for taxation with 20% VAT rate (only
+        domestic supplies):
+          - Clause 16 (3) 3) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <record id="vat_out_28A" model="account.tax.template">
+        <field name="sequence">2810</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Financial services opted for VAT (domestic supplies)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_28B" model="account.tax.template">
+        <field name="sequence">2820</field>
+        <field name="description">VAT Exempt</field>
+        <field
+            name="name"
+        >EE VAT Exempt: Financial services opted for VAT (domestic supplies)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_exempt" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_28C" model="account.tax.template">
+        <field name="sequence">2830</field>
+        <field name="description">VAT Exempt</field>
+        <field
+            name="name"
+        >EE VAT Exempt (w/ deduction): Financial services opted for VAT (domestic supplies)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">fixed</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_exempt" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_8')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Taxable financial services – services which are not listed in
+        subsection 16 (2¹) of VATA:
+          - Subsection 10 (1) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <record id="vat_out_29A" model="account.tax.template">
+        <field name="sequence">2910</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Taxable financial services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_29B" model="account.tax.template">
+        <field name="sequence">2920</field>
+        <field name="description">0% VAT</field>
+        <field name="name">VAT Reverse-Charge: Taxable financial services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_29C" model="account.tax.template">
+        <field name="sequence">2930</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Taxable financial services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Estonian domestic transport services for goods (incl. after the
+        completion of customs formalities of imported goods):
+          - Subsection 10 (1) of VATA
+          - Clause 10 (2) 8) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_30A" model="account.tax.template">
+        <field name="sequence">3010</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Domestic goods transportation services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_30B" model="account.tax.template">
+        <field name="sequence">3020</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Domestic goods transportation services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_30C" model="account.tax.template">
+        <field name="sequence">3030</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Domestic goods transportation services</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Transport services for goods from Estonia to another MS:
+          - Clause 10 (2) 8) of VATA
+          - Clause 10 (2) 9) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_31A" model="account.tax.template">
+        <field name="sequence">3110</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Intra-EU goods transportation services from Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_31B" model="account.tax.template">
+        <field name="sequence">3120</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Intra-EU goods transportation services from Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_31C" model="account.tax.template">
+        <field name="sequence">3130</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Intra-EU goods transportation services from Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        Transport services for goods from another MS to Estonia or outside
+        Estonia, incl. domestic carriage in a third country and carriage
+        between third countries:
+          - Clause 10 (4) 6) of VATA
+          - Clause 10 (4) 9) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <record id="vat_out_32A" model="account.tax.template">
+        <field name="sequence">3210</field>
+        <field name="description">20% VAT</field>
+        <field
+            name="name"
+        >20% EE VAT: Goods transportation services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_32B" model="account.tax.template">
+        <field name="sequence">3220</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >VAT Reverse-Charge: Goods transportation services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_32C" model="account.tax.template">
+        <field name="sequence">3230</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Goods transportation services outside Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: VAT rate of the country where the carriage begins
+    -->
+    <!--
+        Ancillary services related to transport of goods, listed in subsection
+        10 (8) of VATA
+    -->
+    <!-- Other Estonian taxable person -->
+    <!--
+        NOTE: Estonia – country of the seat of the recipient of the ancillary service
+    -->
+    <!-- Taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!--
+        NOTE: Country of the seat of the recipient of the ancillary service
+    -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person not engaged in business -->
+    <!--
+        NOTE: VAT rate of the country where the ancillary services were provided
+    -->
+    <!-- https://www.emta.ee/en/business-client/taxes-and-payment/value-added-tax/taxation-goods -->
+    <!--
+        The goods are located at the moment of the transfer in Estonia and stay
+        in Estonia (if the goods are transferred by an Estonian taxable person)
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_33" model="account.tax.template">
+        <field name="sequence">3300</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Goods within Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_34" model="account.tax.template">
+        <field name="sequence">3400</field>
+        <field name="description">9% VAT</field>
+        <field name="name">9% EE VAT: Goods within Estonia</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">9</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_9" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        The goods are located at the moment of the transfer in Estonia and are
+        transported by the transferor to other MS (if the goods are transferred
+        by an Estonian taxable person)
+        @ 20%
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_35A" model="account.tax.template">
+        <field name="sequence">3510</field>
+        <field name="description">20% VAT</field>
+        <field name="name">20% EE VAT: Goods from Estonia to EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_20" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_35B" model="account.tax.template">
+        <field name="sequence">3520</field>
+        <field name="description">0% VAT</field>
+        <field name="name">VAT Reverse-Charge: Goods from Estonia to EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1'), ref('kmd2017_3_1_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1'), ref('kmd2017_3_1_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        The goods are located at the moment of the transfer in Estonia and are
+        transported by the transferor to other MS (if the goods are transferred
+        by an Estonian taxable person)
+        @ 9%
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_36A" model="account.tax.template">
+        <field name="sequence">3610</field>
+        <field name="description">9% VAT</field>
+        <field name="name">9% EE VAT: Goods from Estonia to EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">9</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_9" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'minus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                    'plus_report_line_ids': [ref('kmd2017_4')],
+                }),
+            ]"
+        />
+    </record>
+    <!-- Taxable person of the other MS -->
+    <record id="vat_out_36B" model="account.tax.template">
+        <field name="sequence">3520</field>
+        <field name="description">0% VAT</field>
+        <field name="name">VAT Reverse-Charge: 9% Goods from Estonia to EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_reverse_charge" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1'), ref('kmd2017_3_1_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_1'), ref('kmd2017_3_1_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!--
+        The goods are located at the moment of the transfer in Estonia and are
+        transported by the transferor or foreign acquirer of the goods to a
+        third country (if the goods are transferred by an Estonian taxable
+        person)
+    -->
+    <!-- Other Estonian taxable person -->
+    <!-- Estonian non-taxable person -->
+    <!-- Taxable person of the other MS -->
+    <!-- Non-taxable person of the other MS -->
+    <!-- Third country person engaged in business -->
+    <record id="vat_out_37A" model="account.tax.template">
+        <field name="sequence">3710</field>
+        <field name="description">0% VAT</field>
+        <field name="name">0% EE VAT: Goods from Estonia outside EU</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_2')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- Third country person not engaged in business -->
+    <record id="vat_out_37B" model="account.tax.template">
+        <field name="sequence">3720</field>
+        <field name="description">0% VAT</field>
+        <field
+            name="name"
+        >0% EE VAT: Goods from Estonia outside EU (to natural person)</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="tax_group_id" ref="vat_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'minus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_2'), ref('kmd2017_3_2_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[
+                (5,0,0),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                    'plus_report_line_ids': [ref('kmd2017_3'), ref('kmd2017_3_2'), ref('kmd2017_3_2_1')],
+                }),
+                (0,0,{
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                    'account_id': ref('vat_payable'),
+                }),
+            ]"
+        />
+    </record>
+    <!-- No use-case: if the goods are transferred by an Estonian taxable person in other MS -->
+    <!-- No use-case: if the goods are transferred by a taxable person of other MS -->
+    <!-- No use-case: if the goods are transferred by a third country person engaged in business -->
+</odoo>
