@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!--
+        References:
+          - https://www.riigiteataja.ee/en/eli/516052019008/consolide Annex 2
+          - https://www.riigiteataja.ee/tolkelisa/5301/1202/1001/Lisa2.pdf#
+    -->
+
+    <record id="is_pl_subsidiaries" model="account.account.tag">
+        <field name="name">(EE) Income statement: Profit (loss) from subsidiaries</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_pl_affiliated_undertakings" model="account.account.tag">
+        <field name="name">(EE) Income statement: Profit (loss) from affiliated undertakings</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_pl_financial_investments" model="account.account.tag">
+        <field name="name">(EE) Income statement: Profit (loss) from financial investments</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_interest_income" model="account.account.tag">
+        <field name="name">(EE) Income statement: Interest income</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_interest_expenses" model="account.account.tag">
+        <field name="name">(EE) Income statement: Interest expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_other_financial_income" model="account.account.tag">
+        <field name="name">(EE) Income statement: Other financial income</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_other_financial_expenses" model="account.account.tag">
+        <field name="name">(EE) Income statement: Other financial expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_income_tax_expense" model="account.account.tag">
+        <field name="name">(EE) Income statement: Income tax expense</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_trade_income" model="account.account.tag">
+        <field name="name">(EE) Income statement: Trade income</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_other_revenue" model="account.account.tag">
+        <field name="name">(EE) Income statement: Other operating revenue</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_trade_cost" model="account.account.tag">
+        <field name="name">(EE) Income statement: Trade cost</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_other_expenses" model="account.account.tag">
+        <field name="name">(EE) Income statement: Other operating expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+    <record id="is_pl_biological_assets" model="account.account.tag">
+        <field name="name">(EE) Income statement: Profit (loss) on biological assets</field>
+        <field name="applicability">accounts</field>
+    </record>
+    <record id="is_l2_marketing_expenses" model="account.account.tag">
+        <field name="name">(EE) Income statement (Layout 2): Marketing expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+    <record id="is_l2_administrative_and_general_expenses" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 2): Administrative and general expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+    <record id="is_l2_other_revenue" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 2): Other operating revenue</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="is_l2_other_expenses" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 2): Other operating expenses</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+<!-- TODO: Layout 1: Change in stocks of agricultural produce -->
+    <record id="is_l1_changes_in_inventories" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 1): Changes in inventories of finished goods and work in progress</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="is_l1_capital_expenditure" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 1): Capitalised expenditure when manufacturing fixed assets for own purposes</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="is_l1_misc_expenses" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 1): Miscellaneous operating expenses</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="is_l1_depreciation_and_impairment" model="account.account.tag">
+        <field
+            name="name"
+        >(EE) Income statement (Layout 1): Depreciation and impairment of fixed assets</field>
+        <field name="applicability">accounts</field>
+    </record>
+<!-- TODO: Layout 1: Significant rebates of current assets -->
+    <record id="is_l1_employee_expenses" model="account.account.tag">
+        <field name="name">(EE) Income statement (Layout 1): Employee expenses</field>
+        <field name="applicability">accounts</field>
+    </record>
+
+</odoo>

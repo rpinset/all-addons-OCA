@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_etd_certificate_manager,access_etd_certificate,model_etd_certificate,base.group_erp_manager,1,1,1,1
+access_etd_certificate_user,access_etd_certificate,model_etd_certificate,base.group_user,1,0,1,0
+access_etd_signature_user,access_etd_signature,model_etd_signature,base.group_user,1,0,1,0
+access_backend_acp_user,access_backend_acp,model_backend_acp,base.group_user,1,0,0,0
+access_backend_acp_manager,access_backend_acp,model_backend_acp,connector.group_connector_manager,1,1,1,1
+access_etd_document_user,access_etd_document,model_etd_document,base.group_user,1,0,0,0
+access_etd_document_manager,access_etd_document,model_etd_document,base.group_erp_manager,1,1,1,1
+access_etd_document_file_user,access_etd_document_file,model_etd_document_file,base.group_user,1,0,0,0
+access_etd_document_file_manager,access_etd_document_file,model_etd_document_file,base.group_erp_manager,1,1,1,1

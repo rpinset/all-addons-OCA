@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_it_website_portal_fatturapa_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-23 10:40+0000\n"
+"PO-Revision-Date: 2020-01-07 11:13+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10\n"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model_terms:ir.ui.view,arch_db:l10n_it_website_portal_fatturapa_sale.res_config_settings_view_form_fatturapa_sale
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
+"specifici per azienda.\" groups=\"base.group_multi_company\"/>"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model:ir.model,name:l10n_it_website_portal_fatturapa_sale.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model:ir.model,name:l10n_it_website_portal_fatturapa_sale.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni di configurazione"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model_terms:ir.ui.view,arch_db:l10n_it_website_portal_fatturapa_sale.res_config_settings_view_form_fatturapa_sale
+msgid "E-invoicing is always enabled for online quotations"
+msgstr "La fatturazione elettronica è sempre abilitata per i preventivi online"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model_terms:ir.ui.view,arch_db:l10n_it_website_portal_fatturapa_sale.payment_tokens_list
+#: model_terms:ir.ui.view,arch_db:l10n_it_website_portal_fatturapa_sale.sale_order_portal_template_fatturapa
+msgid "I request to receive electronic invoice"
+msgstr "Richiedo invio fattura elettronica"
+
+#. module: l10n_it_website_portal_fatturapa_sale
+#: model:ir.model.fields,field_description:l10n_it_website_portal_fatturapa_sale.field_res_company__portal_mandatory_e_invoicing
+#: model:ir.model.fields,field_description:l10n_it_website_portal_fatturapa_sale.field_res_config_settings__portal_mandatory_e_invoicing
+msgid "Mandatory e-invoicing for portal customers"
+msgstr "Fatturazione elettronica obbligatoria per i clienti portale"
+
+#~ msgid "Contact"
+#~ msgstr "Contatto"

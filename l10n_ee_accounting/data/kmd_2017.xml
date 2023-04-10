@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!-- Reference: https://www.emta.ee/sites/default/files/business-client/income-expenses-supply-profits/vat/kmd2017_eng.pdf -->
+
+    <record id="kmd2017_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_2" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 2</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_3" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 3</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_3_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 3.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_3_1_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 3.1.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_3_2" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 3.2</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_3_2_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 3.2.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_4" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 4</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_4_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 4¹</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_5" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 5</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_5_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 5.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_5_2" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 5.2</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_5_3" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 5.3</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_5_4" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 5.4</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_6" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 6</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_6_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 6.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_7" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 7</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_7_1" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 7.1</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_8" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 8</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <record id="kmd2017_9" model="account.account.tag">
+        <field name="name">(EE) VAT Return Form (KMD-2017): field 9</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+</odoo>

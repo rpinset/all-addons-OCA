@@ -1,0 +1,803 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* account_banking_make_deposit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-17 00:47+0000\n"
+"PO-Revision-Date: 2021-08-09 10:49+0000\n"
+"Last-Translator: Pascal GOUHIER <pascal.gouhier@copagex.fr>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "<strong>Bank Account:</strong>"
+msgstr "<strong>Compte bancaire:</strong>"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "<strong>Bank:</strong>"
+msgstr "<strong>Banque:</strong>"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "<strong>Count: </strong>"
+msgstr "<strong>Nombre : </strong>"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Date :</strong>"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "<strong>Total Amount: </strong>"
+msgstr "<strong>Montant total : </strong>"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_atm
+msgid "ATM"
+msgstr "Distributeur de billets"
+
+#. module: account_banking_make_deposit
+#: model:ir.actions.act_window,name:account_banking_make_deposit.action_view_add_deposit_items
+#: model:ir.model,name:account_banking_make_deposit.model_add_deposit_items
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Add Deposit Items"
+msgstr "Ajouter des lignes de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__amount
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__amount
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__amount
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "Amount"
+msgstr "Montant"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_armored_vehicle
+msgid "Armored Vehicle"
+msgstr "Véhicule blindé"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__amount
+msgid ""
+"Calculates the Total of All Deposit Lines - This is the Total Amount of "
+"Deposit."
+msgstr ""
+"Calcule le total de toutes les lignes de dépôt - Il s’agit du montant total "
+"du dépôt."
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:291
+#: selection:deposit.ticket,state:0
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+#, python-format
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "Check Number"
+msgstr "Numéro de vérification"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__company_id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__company_id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__company_id
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+msgid "Company"
+msgstr "Société"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__count_total
+msgid "Counts the total # of line items in the deposit ticket."
+msgstr "Compte le nombre total d’éléments dans le bordereau de dépôt."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__create_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__create_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__create_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__create_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__create_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__create_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__create_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__create_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__date
+msgid "Date"
+msgstr "Date"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__verified_date
+msgid "Date in which Deposit Ticket was verified."
+msgstr "Date à laquelle le bordereau de dépôt a été vérifié."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__date
+msgid "Date of Deposit"
+msgstr "Date de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__deposit_bag_no
+msgid "Deposit Bag #"
+msgstr "Sac de dépôt #"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__deposit_bag_no
+msgid "Deposit Bag number for courier transit."
+msgstr "Enveloppe de dépôt pour courrier transit."
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Deposit From Account"
+msgstr "Dépôt à partir du compte"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__deposit_from_account_id
+msgid "Deposit From Acct"
+msgstr "Compte de provenance"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__deposit_items_id
+msgid "Deposit Items ID"
+msgstr "ID de la ligne de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model,name:account_banking_make_deposit.model_deposit_items_line
+msgid "Deposit Items Line"
+msgstr "Lignes de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.actions.act_window,name:account_banking_make_deposit.action_deposit_method
+#: model:ir.model,name:account_banking_make_deposit.model_deposit_method
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__deposit_method_id
+msgid "Deposit Method"
+msgstr "Méthode de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.ui.menu,name:account_banking_make_deposit.menu_deposit_methods
+msgid "Deposit Methods"
+msgstr "Méthodes de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.actions.act_window,name:account_banking_make_deposit.action_deposit_ticket
+#: model:ir.actions.report,name:account_banking_make_deposit.report_deposit_ticket
+#: model:ir.model,name:account_banking_make_deposit.model_deposit_ticket
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_account_move_line__deposit_id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__deposit_id
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.deposit_ticket_report
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Deposit Ticket"
+msgstr "Bordereau de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__name
+msgid "Deposit Ticket #"
+msgstr "Numéro de bordereau de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model,name:account_banking_make_deposit.model_deposit_ticket_line
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__ticket_line_ids
+msgid "Deposit Ticket Line"
+msgstr "Ligne de bordereau de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Deposit Ticket Lines"
+msgstr "Lignes de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_tree
+msgid "Deposit Tickets"
+msgstr "Bordereau de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Deposit To Account"
+msgstr "Dépôt dans le compte"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__deposit_to_account_id
+msgid "Deposit To Acct"
+msgstr "Compte de destination"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__bank_tracking_no
+msgid "Deposit Tracking #"
+msgstr "Suivi des dépôts #"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:324
+#, python-format
+msgid "Deposit_Ticket"
+msgstr "Bordereau_De_Remise"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:325
+#, python-format
+msgid "Deposit_Ticket_%s"
+msgstr "Bordereau_De_Remise_%s"
+
+#. module: account_banking_make_deposit
+#: model:ir.ui.menu,name:account_banking_make_deposit.menu_make_deposit_tickets
+msgid "Deposits"
+msgstr "Dépôts"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__amount
+msgid "Derived from the 'debit' amount from related Journal Item."
+msgstr "Dérivé du montant de débit de l'écriture comptable."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__date
+msgid "Derived from the related Journal Item"
+msgstr "Dérivé de l’élément de journal associé"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__name
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__partner_id
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__ref
+msgid "Derived from the related Journal Item."
+msgstr "Écriture comptable associée."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__display_name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__display_name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__display_name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__display_name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__display_name
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:290
+#: selection:deposit.ticket,state:0
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+#, python-format
+msgid "Done"
+msgstr "Terminé"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:288
+#: selection:deposit.ticket,state:0
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+#, python-format
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_account_move_line__draft_assigned
+msgid "Draft Assigned"
+msgstr "Assigné"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:323
+#, python-format
+msgid "Draft_Deposit_Ticket"
+msgstr "Bordereau_De_Remise_Brouillon"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__name
+msgid "Each deposit will have a unique sequence ID. System generated."
+msgstr "Chaque dépôt a un identifiant séquentiel unique généré par le système."
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter Account Name (from)"
+msgstr "Entrez le nom du compte (source)"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter Account Name (to)"
+msgstr "Entrez le nom du compte"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter date of verification"
+msgstr "Entrez la date de validation"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter deposit bag number"
+msgstr "Entrez le numéro du sac de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter deposit method"
+msgstr "Entrez la méthode de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter deposit tracking number"
+msgstr "Entrez le numéro de suivi des dépôts"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter deposite date"
+msgstr "Entrez la date de dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter journal name"
+msgstr "Entrez le nom du journal"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter memo"
+msgstr "Entrez le mémo"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter user name who prepared"
+msgstr "Entrez l'usager qui a préparé la dépôt"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Enter user name who varified"
+msgstr "Usager ayant validé le dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__prepared_by_user_id
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__verified_by_user_id
+msgid ""
+"Entered automatically by the 'last user' who saved it. System generated."
+msgstr ""
+"Entré automatiquement par le « dernier utilisateur » qui l’a enregistré. "
+"Généré par le Système."
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Group By..."
+msgstr "Grouper par.."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__id
+msgid "ID"
+msgstr "Identifiant"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__journal_id
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__move_id
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: account_banking_make_deposit
+#: model:ir.model,name:account_banking_make_deposit.model_account_move_line
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__move_line_id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__move_line_id
+msgid "Journal Item"
+msgstr "Écriture Comptable"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items____last_update
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line____last_update
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method____last_update
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket____last_update
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__write_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__write_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__write_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__write_uid
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__write_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__write_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__write_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__write_date
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière Mise à Jour le"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__deposit_items_line_ids
+msgid "Lines"
+msgstr "Lignes"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__move_id
+msgid "Link to the automatically generated Journal Items."
+msgstr "Lier automatiquement les écritures comptables générées."
+
+#. module: account_banking_make_deposit
+#: model:res.groups,name:account_banking_make_deposit.group_make_deposits_preparer
+msgid "Make Deposits Preparer"
+msgstr "Préparateur de dépôts"
+
+#. module: account_banking_make_deposit
+#: model:res.groups,name:account_banking_make_deposit.group_make_deposits_verifier
+msgid "Make Deposits Verifier"
+msgstr "Vérificateur de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__memo
+msgid "Memo"
+msgstr "Mémo"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__memo
+msgid "Memo for the deposit ticket"
+msgstr "Mémo pour le bordereau de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_add_deposit_items__name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_method__name
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_method__name
+msgid "Name of the method used to deposit"
+msgstr "Méthode utilisée pour le dépôt"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_night_drop
+msgid "Night Drop"
+msgstr "Dépôt de nuit"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_online_deposit_capture
+msgid "Online Deposit Capture"
+msgstr "Capture de dépôt en ligne"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:34
+#, python-format
+msgid ""
+"Only a member of Deposits Verifier group may delete/edit deposit tickets "
+"when not in draft state!"
+msgstr ""
+"Seulement un membre du groupe Vérificateur de Dépôts peut supprimer un dépôt "
+"qui n'est pas à l'état brouillon !"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Order date"
+msgstr "Date de préparation"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Other Information"
+msgstr "Autres informations"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__partner_id
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:83
+#, python-format
+msgid "Please define sequence on deposit journal"
+msgstr "Veuillez définir une séquence sur le journal de dépôt"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__prepared_by_user_id
+msgid "Prepared By"
+msgstr "Préparé par"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Prepared by me"
+msgstr "Préparés par moi"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Process"
+msgstr "Effectuer le dépôt"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:289
+#: selection:deposit.ticket,state:0
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+#, python-format
+msgid "Ready for Review"
+msgstr "Prêt pour la révision"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__ref
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket_line__ref
+msgid "Reference"
+msgstr "Référence"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__move_line_id
+msgid "Related Journal Item"
+msgstr "Écritures comptables associées"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_remote_deposit_capture
+msgid "Remote Deposit Capture"
+msgstr "Capture de remise à distance"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Search Deposit Tickets"
+msgstr "Chercher des bordereaux de paiement"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_items_line__draft_assigned
+msgid "Select"
+msgstr "Sélectionner"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket.py:303
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+#, python-format
+msgid "Select Payments for Deposit"
+msgstr "Sélectionner les paiements"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+msgid "Select Payments to Deposit"
+msgstr "Sélectionner les paiements"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Set to Draft"
+msgstr "Mettre à brouillon"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__state
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "State"
+msgstr "État"
+
+#. module: account_banking_make_deposit
+#: model:deposit.method,name:account_banking_make_deposit.deposit_method_teller
+msgid "Teller"
+msgstr "Caissier"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__deposit_from_account_id
+msgid "The Bank/GL Account the Payments are currently found in."
+msgstr "Le compte de provenance du dépôt."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__deposit_to_account_id
+msgid "The Bank/Gl Account the Deposit is being made to."
+msgstr "Le compte de destination."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__company_id
+msgid "The Company for which the deposit ticket is made"
+msgstr "La société pour laquelle le dépôt est fait"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket_line__company_id
+msgid "The Company for which the deposit ticket is made to"
+msgstr "La société pour laquelle le dépôt est fait"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__date
+msgid "The Date of the Deposit Ticket."
+msgstr "Date du dépôt."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__journal_id
+msgid "The Journal to hold accounting entries."
+msgstr "Le journal dans lequel sera comptabilisé le dépôt."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_account_move_line__draft_assigned
+msgid ""
+"This field is checked when the move line is assigned to a draft deposit "
+"ticket. The deposit ticket is not still completely processed"
+msgstr ""
+"Ce champ est coché lorsque la ligne est affectée à un bordereau de dépôt en "
+"Brouillon. Le bordereau de dépôt n’est pas encore complètement traité"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__bank_tracking_no
+msgid ""
+"This field is used to hold a tracking number provided by the bank/financial "
+"institution often used in Remote Deposit Capture on a deposit receipt. "
+"Entered after deposit occurs."
+msgstr "Numéro de repérage fourni par la banque ou l'institution financière."
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,help:account_banking_make_deposit.field_deposit_ticket__deposit_method_id
+msgid ""
+"This is how the deposit was made:\n"
+"Examples:\n"
+"* Teller \n"
+"* ATM \n"
+"* Remote Deposit Capture \n"
+"* Online Deposit Capture \n"
+"* Night Drop \n"
+"* Armored Vehicle"
+msgstr ""
+"C’est la façon dont le dépôt a été effectué :\n"
+"Exemples :\n"
+"* Caissière \n"
+"* Guichet automatique \n"
+"* Capture de dépôt à distance \n"
+"* Capture de dépôt en ligne \n"
+"* Dépôt de nuit \n"
+"* Véhicule blindé"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "To be Reviewed"
+msgstr "À réviser"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__count_total
+msgid "Total Items"
+msgstr "Total général"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_form
+msgid "Tracking Information"
+msgstr "Information de repérage"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__verified_by_user_id
+msgid "Verified By"
+msgstr "Validé par"
+
+#. module: account_banking_make_deposit
+#: model:ir.model.fields,field_description:account_banking_make_deposit.field_deposit_ticket__verified_date
+msgid "Verified Date"
+msgstr "Date de validation"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_deposit_ticket_filter
+msgid "Verified by me"
+msgstr "Vérifiés par moi"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.actions.act_window,help:account_banking_make_deposit.action_deposit_ticket
+msgid ""
+"With Deposit Tickets you can create new deposit\n"
+"            tickets, by selecting and grouping customer payments, supplier\n"
+"            refunds, or other payments into a Deposit Ticket. OpenERP\n"
+"            automatically posts accounting entries for “Done” deposit "
+"tickets.\n"
+"            The GL entry for the deposit is posted into the Current Period\n"
+"            based on the date range selected."
+msgstr ""
+"Avec les bordereaux de dépôt, vous pouvez créer un nouveau dépôt\n"
+"            Bordereau, en sélectionnant et en regroupant les paiements des "
+"clients, fournisseur\n"
+"            les remboursements ou autres paiements dans un Bordereau de "
+"dépôt.\n"
+"            Les écritures comptables sont enregistrées automatiquement pour "
+"les Bordereaux de dépôt « Terminés ».\n"
+"            L’entrée grand livre pour le dépôt est validée dans la période "
+"en cours\n"
+"            en fonction de la plage de dates sélectionnée."
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/wizard/add_deposit_items.py:114
+#, python-format
+msgid "You cannot add any new deposit line item manually as of this revision!"
+msgstr ""
+"Vous ne pouvez pas ajouter de nouvel élément de ligne de dépôt manuellement "
+"dans cette version !"
+
+#. module: account_banking_make_deposit
+#: code:addons/account_banking_make_deposit/models/deposit_ticket_line.py:50
+#, python-format
+msgid ""
+"You cannot add any new deposit ticket line manually as of this revision! "
+"Please use the button 'Add Deposit Items' to add deposit ticket line!"
+msgstr ""
+"Vous ne pouvez pas ajouter de ligne manuellement dans la version courante ! "
+"Veuillez utiliser le bouton \"Ajouter des lignes de dépôt\" !"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+msgid "_Cancel"
+msgstr "_Annuler"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+msgid "_OK"
+msgstr "_OK"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+msgid "_Select All"
+msgstr "_Sélectionner Tout"
+
+#. module: account_banking_make_deposit
+#: model_terms:ir.ui.view,arch_db:account_banking_make_deposit.view_add_deposit_items
+msgid "_Unselect All"
+msgstr "_Désélectionner Tout"
+
+#~ msgid "Enter company Name"
+#~ msgstr "Entrer le nom de la société"
+
+#~ msgid "Force Period"
+#~ msgstr "Forcer la période"
+
+#~ msgid "Keep empty to use the period of the validation date."
+#~ msgstr "Conserver vide si la période est celle de la date de validation."
+
+#~ msgid "Open Periods"
+#~ msgstr "Périodes Ouvertes"
+
+#~ msgid "User Error"
+#~ msgstr "Erreur de validation"
+
+#~ msgid "Deposit Tickets that have been processed"
+#~ msgstr "Dépôts terminés"
+
+#~ msgid "Internal Deposit Ticket"
+#~ msgstr "Bordereau de paiement"
+
+#~ msgid "Enter period"
+#~ msgstr "Entrez la période"
+
+#~ msgid "Deposit Tickets that haven't yet been confirmed"
+#~ msgstr "Dépôts non validés"
+
+#~ msgid "Journal Items"
+#~ msgstr "Écritures comptables"
+
+#~ msgid "Error"
+#~ msgstr "Erreur"
+
+#~ msgid "Period"
+#~ msgstr "Période"
+
+#~ msgid "Derived from related Journal Item."
+#~ msgstr "Dérivé de l'écriture de journal"
+
+#~ msgid "Processing Error"
+#~ msgstr "Erreur de validation"
+
+#~ msgid "Deposit Tickets that are ready for review"
+#~ msgstr "Bordereaux de dépôt prêts pour la révision"
+
+#~ msgid "Cannot create move on centralised journal"
+#~ msgstr ""
+#~ "Vous ne pouvez pas créer d'écriture comptable dans un journal centralisé."
+
+#~ msgid "Ref"
+#~ msgstr "Référence"
+
+#~ msgid "Customer"
+#~ msgstr "Client"

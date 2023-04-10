@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--Email template -->
+        <record id="email_template_edi_ddt" model="mail.template">
+            <field name="name">TD- Send by Email</field>
+            <field name="email_from">
+                ${(object.company_id.email and '%s &lt;%s&gt;' % (object.company_id.name, object.company_id.email) or '')|safe}
+            </field>
+            <field name="subject">${object.company_id.name} (${object.ddt_number})
+            </field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="email_to">
+                ${(object.partner_id.email and '%s &lt;%s&gt;' % (object.partner_id.name, object.partner_id.email) or '')|safe}
+            </field>
+            <field name="report_template" ref="action_report_ddt"/>
+            <field name="report_name">${(object.ddt_number)}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="model_id" ref="model_stock_picking_package_preparation"/>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+<p>Dear ${object.partner_id.name},</p>
+<p>Here is your document
+%if object.date:
+ of <strong>${object.date},</strong>
+% endif
+%if object.date_done:
+with shipping date
+<strong>${object.date_done}</strong>
+%endif
+from ${object.company_id.name}.
+</p>
+<p>You can reply to this email if you have any questions.</p>
+<p>Thank you.</p>
+]]></field>
+        </record>
+    </data>
+</odoo>

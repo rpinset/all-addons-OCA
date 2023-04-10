@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="PaymentScreen-Paymentlines">
+        <t t-jquery="col[class='controls']" t-operation="before">
+            <t t-if="order.has_payments_with_tickets()">
+                <col class='tickets_number' />
+            </t>
+        </t>
+        <t t-jquery="tr[class='label'] th:nth-child(4)" t-operation="after">
+            <t t-if="order.has_payments_with_tickets()">
+                <th>Tickets N.</th>
+            </t>
+        </t>
+        <t t-jquery="td[class='col-name']" t-operation="after">
+            <t t-if="order.has_payments_with_tickets()">
+                <td >
+                    <div t-if="line.cashregister.journal.fiscalprinter_payment_type == '4'" style="font-size:18px;">
+                        <i value="-" class="fa fa-minus tickets_number_minus" data-field="tickets_number" t-att-data-cid='line.cid'/>
+                        <span name="tickets_number"
+                              style="width:25px;padding-left:5px;padding-right:5px" ><t t-esc='line.tickets_number' /></span>
+                        <i value="+" class="fa fa-plus tickets_number_plus" data-field="tickets_number" t-att-data-cid='line.cid'/>
+                    </div>
+                </td>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="PaymentScreen-Paymentmethods">
+        <t t-jquery="table.meal-voucher-summary" t-operation="after">
+            <div id="meal-voucher-issue-credit"
+                 style="border-top-width: 1px; border-top-left-radius: 3px; border-top-right-radius: 3px; line-height: 74px;
+                 font-size: 16px; border: solid 1px rgb(202, 202, 202); text-align: center; margin: 16px; background: #e2e2e2; cursor: pointer;"
+                 class="js_issue_ticket_credit">Issue ticket credit</div>
+        </t>
+    </t>
+
+</templates>

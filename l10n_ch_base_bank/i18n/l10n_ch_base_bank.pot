@@ -1,0 +1,165 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_ch_base_bank
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ch_base_bank
+#: model:ir.model,name:l10n_ch_base_bank.model_res_bank
+msgid "Bank"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model,name:l10n_ch_base_bank.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/invoice.py:76
+#, python-format
+msgid "Bank account must contain a subscription number for ISR reference type."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/invoice.py:66
+#, python-format
+msgid "Bank account shouldn't be empty, for ISR reference type, you can set it manually or set appropriate payment mode."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model_terms:ir.ui.view,arch_db:l10n_ch_base_bank.view_bank_search
+msgid "Banks"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_isr_subscription_chf
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_isr_subscription_chf
+msgid "CHF ISR subscription number"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_bank__city
+msgid "City"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_bank__city
+msgid "City of the bank"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_bank__clearing
+msgid "Clearing number"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_bank__code
+msgid "Code"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_bank__country_code
+msgid "Country code"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_isr_subscription_eur
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_isr_subscription_eur
+msgid "EUR ISR subscription number"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_postal
+#: model:ir.model.fields,field_description:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_postal
+msgid "ISR reference"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_bank__code
+msgid "Internal reference"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model,name:l10n_ch_base_bank.model_account_invoice
+msgid "Invoice"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model_terms:ir.ui.view,arch_db:l10n_ch_base_bank.view_bank_search
+msgid "PostFinance"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:153
+#, python-format
+msgid "Postal"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:308
+#, python-format
+msgid "Postal number {}"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_bank__clearing
+msgid "Swiss unique bank identifier also used in IBAN number"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_bank__country_code
+msgid "The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_postal
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_postal
+msgid "The ISR number of the company within the bank"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:33
+#, python-format
+msgid "The postal account number is not valid."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:28
+#, python-format
+msgid "The postal does not match 9 digits position."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_isr_subscription_chf
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_isr_subscription_chf
+msgid "The subscription number provided by the bank or Postfinance, used to generate ISR in CHF. eg. 01-162-8"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_account_setup_bank_manual_config__l10n_ch_isr_subscription_eur
+#: model:ir.model.fields,help:l10n_ch_base_bank.field_res_partner_bank__l10n_ch_isr_subscription_eur
+msgid "The subscription number provided by the bank or Postfinance, used to generate ISR in EUR. eg. 03-162-5"
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:20
+#, python-format
+msgid "There is no postal account number."
+msgstr ""
+
+#. module: l10n_ch_base_bank
+#: code:addons/l10n_ch_base_bank/models/bank.py:303
+#, python-format
+msgid "{}/Postal number {}"
+msgstr ""
+

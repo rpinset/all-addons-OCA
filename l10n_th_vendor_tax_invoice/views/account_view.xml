@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_move_line_tax_audit_tree" model="ir.ui.view">
+        <field name="name">account.move.line.tax.audit.tree</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tax_audit_tree"/>
+        <field name="arch" type="xml">
+            <field name="tax_line_id" position="after">
+                <field name="tax_invoice"/>
+                <field name="tax_date"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_move_line_form" model="ir.ui.view">
+        <field name="name">view.move.line.form</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_form"/>
+        <field name="arch" type="xml">
+            <field name="tax_ids" position="after">
+                <field name="tax_invoice"/>
+                <field name="tax_date"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_tax_form" model="ir.ui.view">
+        <field name="name">account.tax.form.inherit</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name="arch" type="xml">
+            <field name="cash_basis_base_account_id" position="attributes">
+                <attribute name="attrs">{'invisible': True}</attribute>
+            </field>
+        </field>
+    </record>
+
+    <!-- Tax Sequence -->
+    <record id="view_tax_form_inherited" model="ir.ui.view">
+        <field name="name">account.tax.form.inherited</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form" />
+        <field name="arch" type="xml">
+            <field name="type_tax_use" position="after">
+                <field name="taxinv_sequence_id" attrs="{'invisible': [('type_tax_use', '!=', 'sale')]}"
+                    context="{'default_implementation': 'no_gap', 'default_name': name, 'default_padding': 4, 'default_use_date_range': True}"/>
+                <field name="sequence_number_next" attrs="{'invisible': ['|', ('type_tax_use', '!=', 'sale'), ('taxinv_sequence_id', '=', False)]}"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

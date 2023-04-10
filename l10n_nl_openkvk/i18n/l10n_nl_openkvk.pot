@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_nl_openkvk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_nl_openkvk
+#: model_terms:ir.ui.view,arch_db:l10n_nl_openkvk.res_config_settings_view_form_openkvk
+msgid "<i class=\"fa fa-arrow-right\"/> Register to get the API Key"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model,name:l10n_nl_openkvk.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model.fields,field_description:l10n_nl_openkvk.field_l10n_nl_kvk_preview_wizard_line__extra
+msgid "Extra"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model,name:l10n_nl_openkvk.model_l10n_nl_kvk_api_handler
+msgid "Handler for KvK API services"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: selection:res.config.settings,l10n_nl_kvk_service:0
+msgid "Kamer van Koophandel (KvK API)"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: selection:res.config.settings,l10n_nl_kvk_service:0
+msgid "Kamer van Koophandel (TEST)"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model.fields,field_description:l10n_nl_openkvk.field_res_config_settings__l10n_nl_kvk_service
+msgid "KvK API Service"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model,name:l10n_nl_openkvk.model_l10n_nl_kvk_preview_wizard_line
+msgid "KvK Preview Line Wizard"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model,name:l10n_nl_openkvk.model_l10n_nl_kvk_preview_wizard
+msgid "KvK Preview Wizard"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model.fields,field_description:l10n_nl_openkvk.field_res_config_settings__l10n_nl_openkvk_api_value
+msgid "L10N Nl Openkvk Api Value"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model.fields,field_description:l10n_nl_openkvk.field_l10n_nl_kvk_preview_wizard_line__line_id_str
+msgid "Line Id Str"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model:ir.model.fields,field_description:l10n_nl_openkvk.field_l10n_nl_kvk_preview_wizard_line__link
+msgid "Link"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model_terms:ir.ui.view,arch_db:l10n_nl_openkvk.res_config_settings_view_form_openkvk
+msgid "OPENKVKXXXXXXXXY"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: selection:res.config.settings,l10n_nl_kvk_service:0
+msgid "OpenKvK (gebruikt de Overheid.io API)"
+msgstr ""
+
+#. module: l10n_nl_openkvk
+#: model_terms:ir.ui.view,arch_db:l10n_nl_openkvk.res_config_settings_view_form_openkvk
+msgid "OpenKvK Key Value"
+msgstr ""
+

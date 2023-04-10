@@ -1,0 +1,156 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_order_variant_mgmt
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+# Peter Hageman <hageman.p@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-01 21:08+0000\n"
+"PO-Revision-Date: 2019-12-29 12:13+0000\n"
+"Last-Translator: Thomas Pot <t.pot@open2bizz.nl>\n"
+"Language-Team: Dutch (Netherlands) (https://www.transifex.com/oca/teams/"
+"23907/nl_NL/)\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10\n"
+
+#. module: sale_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:sale_order_variant_mgmt.view_order_form
+msgid "Add or Modify Variants"
+msgstr "Toevoegen of Verwijderen Varianten"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model,name:sale_order_variant_mgmt.model_sale_manage_variant
+msgid "Add or modify variants on sale order lines"
+msgstr "Toevoegen of wijzigen varianten"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_order_line__product_attribute_value_ids
+msgid "Attribute Values"
+msgstr "Kenmerk waarden"
+
+#. module: sale_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:sale_order_variant_mgmt.sale_manage_variant_form
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__create_uid
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__create_date
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model,name:sale_order_variant_mgmt.model_sale_manage_variant_line
+msgid "Define variants quantities on sale order lines"
+msgstr "Definieer varianten aantallen op Verkooporderregels"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__display_name
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__display_name
+msgid "Display Name"
+msgstr "Weergavenaam"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__id
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant____last_update
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__write_uid
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__write_date
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: sale_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:sale_order_variant_mgmt.sale_manage_variant_form
+msgid "Manage Product Variants"
+msgstr "Beheer Product Varianten"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.actions.act_window,name:sale_order_variant_mgmt.action_sale_manage_variant
+msgid "Manage variants"
+msgstr "Beheer Varianten"
+
+#. module: sale_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:sale_order_variant_mgmt.view_order_form
+msgid "Modify Variants"
+msgstr "Wijzig Varianten"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_order_line__product_tmpl_id_sale_order_variant_mgmt
+msgid "Product Template"
+msgstr "Productsjabloon"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__product_uom_qty
+msgid "Quantity"
+msgstr "Aantal"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model,name:sale_order_variant_mgmt.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkooporderregel"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__product_tmpl_id
+msgid "Template"
+msgstr "Sjabloon"
+
+#. module: sale_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:sale_order_variant_mgmt.sale_manage_variant_form
+msgid "Transfer to order"
+msgstr "Omzetten naar order"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__value_x
+msgid "Value X"
+msgstr "Waarde X"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant_line__value_y
+msgid "Value Y"
+msgstr "Waarde Y"
+
+#. module: sale_order_variant_mgmt
+#: model:ir.model.fields,field_description:sale_order_variant_mgmt.field_sale_manage_variant__variant_line_ids
+msgid "Variant Lines"
+msgstr "Variant regels"
+
+#~ msgid "sale.manage.variant"
+#~ msgstr "sale.manage.variant"
+
+#~ msgid "sale.manage.variant.line"
+#~ msgstr "sale.manage.variant.line"
+
+#~ msgid "Value y"
+#~ msgstr "Waarde y"
+
+#~ msgid "Variant"
+#~ msgstr "Variant"

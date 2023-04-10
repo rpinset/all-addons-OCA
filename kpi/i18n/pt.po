@@ -1,0 +1,502 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * kpi
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-23 18:00+0000\n"
+"PO-Revision-Date: 2020-12-17 14:19+0000\n"
+"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
+"Language-Team: Portuguese (https://www.transifex.com/oca/teams/23907/pt/)\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__active
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_filter
+msgid "Active"
+msgstr "Ativo"
+
+#. module: kpi
+#: model:ir.actions.act_window,name:kpi.open_category_list
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi_category
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_category_tree
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__category_id
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_category_form
+msgid "Category"
+msgstr "Categoria"
+
+#. module: kpi
+#: model:ir.model.fields,help:kpi.field_kpi_threshold_range__color
+msgid "Choose your color"
+msgstr "Escolha a sua cor"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__color
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__color
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__color
+msgid "Color"
+msgstr "Cor"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__company_id
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__company_id
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__company_id
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "Computation"
+msgstr "Cálculo"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "Compute KPI Now"
+msgstr "Calcular KPI Agora"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__create_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__create_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__create_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__create_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__create_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__create_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__create_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__create_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: kpi
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi_dbsource
+msgid "Data Sources"
+msgstr "Fontes de Dados"
+
+#. module: kpi
+#: selection:kpi,periodicity_uom:0
+msgid "Day"
+msgstr "Dia"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__description
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__description
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "Description"
+msgstr "Descrição"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__display_name
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__display_name
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__display_name
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__display_name
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_form
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_form
+msgid "Errors"
+msgstr "Erros"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__date
+msgid "Execution Date"
+msgstr "Data de Execução"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__dbsource_id
+msgid "External DB Source"
+msgstr "Fonte de BD Externa"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_dbsource_id
+msgid "External DB Source Maximum"
+msgstr "Máximo de Fonte de BD Externa"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_dbsource_id
+msgid "External DB Source Minimum"
+msgstr "Mínimo de Fonte de BD Externa"
+
+#. module: kpi
+#: selection:kpi.threshold.range,max_type:0
+#: selection:kpi.threshold.range,min_type:0
+msgid "Fixed value"
+msgstr "Valor fixo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__history_ids
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "History"
+msgstr "Histórico"
+
+#. module: kpi
+#: model:ir.model,name:kpi.model_kpi_history
+msgid "History of the KPI"
+msgstr "Histórico do KPI"
+
+#. module: kpi
+#: selection:kpi,periodicity_uom:0
+msgid "Hour"
+msgstr "Hora"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__id
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__id
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__id
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__id
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__id
+msgid "ID"
+msgstr "ID"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__kpi_id
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_filter
+msgid "KPI"
+msgstr ""
+
+#. module: kpi
+#: model:ir.model,name:kpi.model_kpi_category
+msgid "KPI Category"
+msgstr "Categoria de KPI"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__kpi_code
+msgid "KPI Code"
+msgstr "Código de KPI"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "KPI Computation"
+msgstr "Cálculo de KPI"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__kpi_type
+msgid "KPI Computation Type"
+msgstr "Tipo de Cálculo de KPI"
+
+#. module: kpi
+#: model:ir.actions.act_window,name:kpi.open_kpi_dashboard
+msgid "KPI Dashboard"
+msgstr "Painel de KPI"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_history_form
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_history_tree
+msgid "KPI History"
+msgstr "Histórico de KPI"
+
+#. module: kpi
+#: model:ir.actions.act_window,name:kpi.open_kpi_list
+msgid "KPI Maintenance"
+msgstr "Manutenção de KPI"
+
+#. module: kpi
+#: model:ir.model,name:kpi.model_kpi_threshold
+msgid "KPI Threshold"
+msgstr "Limiar do KPI"
+
+#. module: kpi
+#: model:ir.model,name:kpi.model_kpi_threshold_range
+msgid "KPI Threshold Range"
+msgstr "Intervalo do Limiar do KPI"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__kpi_ids
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_form
+msgid "KPIs"
+msgstr ""
+
+#. module: kpi
+#: model:ir.model,name:kpi.model_kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_form
+msgid "Key Performance Indicator"
+msgstr "Indicador de Desempenho Chave"
+
+#. module: kpi
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi_kpi
+#: model:ir.ui.menu,name:kpi.menu_kpi_dasboard
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_tree
+msgid "Key Performance Indicators"
+msgstr "Indicadores de Desempenho Chave"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi____last_update
+#: model:ir.model.fields,field_description:kpi.field_kpi_category____last_update
+#: model:ir.model.fields,field_description:kpi.field_kpi_history____last_update
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold____last_update
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação Em"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__write_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__write_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__write_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__write_uid
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__write_uid
+msgid "Last Updated by"
+msgstr "Atualizado pela última vez por"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__write_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__write_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__write_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__write_date
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__write_date
+msgid "Last Updated on"
+msgstr "Atualizado pela última vez em"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__last_execution
+msgid "Last execution"
+msgstr "Última execução"
+
+#. module: kpi
+#: code:addons/kpi/models/kpi_threshold.py:68
+#, python-format
+msgid "Make sure your ranges do not overlap!"
+msgstr "Certifique-se de que os seus intervalos não se sobrepõem!"
+
+#. module: kpi
+#: model:res.groups,name:kpi.group_kpi_manager
+msgid "Manage KPI's"
+msgstr "Gerir KPIs"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_type
+msgid "Max Type"
+msgstr ""
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_form
+msgid "Maximum"
+msgstr "Máximo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_code
+msgid "Maximum Computation Code"
+msgstr "Código de Cálculo do Máximo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_error
+msgid "Maximum Error"
+msgstr "Erro Máximo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_fixed_value
+msgid "Maximum Fixed Value"
+msgstr "Valor Fixo do Máximo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__max_value
+msgid "Maximum Value"
+msgstr "Valor Máximo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__invalid_message
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__invalid_message
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_type
+msgid "Min Type"
+msgstr ""
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_form
+msgid "Minimum"
+msgstr "Mínimo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_code
+msgid "Minimum Computation Code"
+msgstr "Código de Cálculo do Mínimo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_error
+msgid "Minimum Error"
+msgstr "Erro do Mínimo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_fixed_value
+msgid "Minimum Fixed Value"
+msgstr "Valor Fixo do Mínimo"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__min_value
+msgid "Minimum Value"
+msgstr "Valor Mínimo"
+
+#. module: kpi
+#: selection:kpi,periodicity_uom:0
+msgid "Minute"
+msgstr "Minuto"
+
+#. module: kpi
+#: selection:kpi,periodicity_uom:0
+msgid "Month"
+msgstr "Mês"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__name
+#: model:ir.model.fields,field_description:kpi.field_kpi_category__name
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__name
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__name
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__next_execution_date
+msgid "Next execution date"
+msgstr "Próxima data de execução"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_filter
+msgid ""
+"Only active KPIs are computed by the scheduler based on the periodicity "
+"configuration."
+msgstr ""
+"Apenas os KPIs ativos são calculados pelo agendador tendo em conta a "
+"configuração da periodicidade."
+
+#. module: kpi
+#: model:ir.model.fields,help:kpi.field_kpi__active
+msgid ""
+"Only active KPIs will be updated by the scheduler based on the periodicity "
+"configuration."
+msgstr ""
+"Apenas os KPIs ativos são atualizados pelo agendador tendo em conta a "
+"configuração da periodicidade."
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__periodicity
+msgid "Periodicity"
+msgstr "Periodicidade"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__periodicity_uom
+msgid "Periodicity UoM"
+msgstr "UdM da Periodicidade"
+
+#. module: kpi
+#: selection:kpi,kpi_type:0
+msgid "Python"
+msgstr ""
+
+#. module: kpi
+#: selection:kpi.threshold.range,max_type:0
+#: selection:kpi.threshold.range,min_type:0
+msgid "Python Code"
+msgstr "Código Python"
+
+#. module: kpi
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_form
+msgid "Range"
+msgstr "Intervalo"
+
+#. module: kpi
+#: model:ir.actions.act_window,name:kpi.open_threshold_range_list
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__range_ids
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi_range
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_form
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_tree
+msgid "Ranges"
+msgstr "Intervalos"
+
+#. module: kpi
+#: selection:kpi.threshold.range,min_type:0
+msgid "SQL - Externa DB"
+msgstr "SQL - BD Externa"
+
+#. module: kpi
+#: selection:kpi,kpi_type:0 selection:kpi.threshold.range,max_type:0
+msgid "SQL - External DB"
+msgstr "SQL - BD Externa"
+
+#. module: kpi
+#: selection:kpi,kpi_type:0 selection:kpi.threshold.range,max_type:0
+#: selection:kpi.threshold.range,min_type:0
+msgid "SQL - Local DB"
+msgstr "SQL - BD Local"
+
+#. module: kpi
+#: model:ir.model.fields,help:kpi.field_kpi__kpi_code
+msgid "SQL code must return the result as 'value' (i.e. 'SELECT 5 AS value')."
+msgstr ""
+"O código SQL tem que retornar o resultado como 'value' (i.e. 'SELECT 5 AS "
+"value')."
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__threshold_id
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_form
+msgid "Threshold"
+msgstr "Limiar"
+
+#. module: kpi
+#: model:ir.actions.act_window,name:kpi.open_threshold_list
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__threshold_ids
+#: model:ir.ui.menu,name:kpi.menu_configuration_kpi_threshold
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_range_form
+#: model_terms:ir.ui.view,arch_db:kpi.view_kpi_threshold_tree
+msgid "Thresholds"
+msgstr "Limiares"
+
+#. module: kpi
+#: code:addons/kpi/models/kpi_threshold.py:67
+#, python-format
+msgid "Two of your ranges are overlapping."
+msgstr "Dois dos seus intervalos estão-se a sobrepor."
+
+#. module: kpi
+#: model:ir.actions.server,name:kpi.ir_cron_kpi_action_ir_actions_server
+#: model:ir.cron,cron_name:kpi.ir_cron_kpi_action
+#: model:ir.cron,name:kpi.ir_cron_kpi_action
+msgid "Update KPI values"
+msgstr ""
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold__valid
+#: model:ir.model.fields,field_description:kpi.field_kpi_threshold_range__valid
+msgid "Valid"
+msgstr "Válido"
+
+#. module: kpi
+#: model:ir.model.fields,field_description:kpi.field_kpi__value
+#: model:ir.model.fields,field_description:kpi.field_kpi_history__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: kpi
+#: selection:kpi,periodicity_uom:0
+msgid "Week"
+msgstr "Semana"
+
+#~ msgid "Group By..."
+#~ msgstr "Agrupar por..."
+
+#~ msgid "Type"
+#~ msgstr "Tipo"

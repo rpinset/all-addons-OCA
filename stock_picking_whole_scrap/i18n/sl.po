@@ -1,0 +1,174 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_picking_whole_scrap
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2022-01-11 19:39+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: stock_picking_whole_scrap
+#: model_terms:ir.ui.view,arch_db:stock_picking_whole_scrap.view_stock_picking_scrap_form
+msgid "Cancel"
+msgstr "Preklic"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__create_uid
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__create_date
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: stock_picking_whole_scrap
+#: model_terms:ir.ui.view,arch_db:stock_picking_whole_scrap.view_stock_picking_scrap_form
+msgid "Detailed Operations"
+msgstr "Detajlne operacije"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__display_name
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__display_name
+msgid "Display Name"
+msgstr "Prikazni naziv"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__id
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap____last_update
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line____last_update
+msgid "Last Modified on"
+msgstr "Zadnjič spremenjeno"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__write_uid
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__write_date
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__lot_id
+msgid "Lot"
+msgstr "Lot"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__move_line_id
+msgid "Move Line"
+msgstr "Postavka premika"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__line_ids
+msgid "Moves"
+msgstr "Premiki"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__owner_id
+msgid "Owner"
+msgstr "Lastnik"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__package_id
+msgid "Package"
+msgstr "Pakiranje"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__picking_id
+msgid "Picking"
+msgstr "Dobavnica"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model,name:stock_picking_whole_scrap.model_wiz_stock_picking_scrap
+msgid "Picking Whole Scrap"
+msgstr "Odpis cele dobavnice"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__product_id
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__quantity
+msgid "Quantity"
+msgstr "Količina"
+
+#. module: stock_picking_whole_scrap
+#: model_terms:ir.ui.view,arch_db:stock_picking_whole_scrap.view_stock_picking_scrap_form
+msgid "Scrap"
+msgstr "Odpis"
+
+#. module: stock_picking_whole_scrap
+#: model_terms:ir.ui.view,arch_db:stock_picking_whole_scrap.view_picking_form
+msgid "Scrap All"
+msgstr "Odpiši vse"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap__scrap_location_id
+msgid "Scrap Location"
+msgstr "Lokacija odpisa"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model,name:stock_picking_whole_scrap.model_stock_picking
+msgid "Transfer"
+msgstr "Premestitev"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__uom_id
+msgid "Unit of Measure"
+msgstr "Enota mere"
+
+#. module: stock_picking_whole_scrap
+#: code:addons/stock_picking_whole_scrap/models/stock_picking.py:12
+#, python-format
+msgid "Whole Scrap"
+msgstr "Odpiši vse"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model.fields,field_description:stock_picking_whole_scrap.field_wiz_stock_picking_scrap_line__wizard_id
+msgid "Wizard"
+msgstr "Čarovnik"
+
+#. module: stock_picking_whole_scrap
+#: model:ir.model,name:stock_picking_whole_scrap.model_wiz_stock_picking_scrap_line
+msgid "Wizard lines for picking whole scrap"
+msgstr "Vrstice čarovnika za odpis dobavnice"
+
+#. module: stock_picking_whole_scrap
+#: code:addons/stock_picking_whole_scrap/wizards/stock_picking_whole_scrap.py:129
+#, python-format
+msgid "You can't scrap more quantity that done it"
+msgstr "Ne morete odpisati večje količine od opravljene"
+
+#. module: stock_picking_whole_scrap
+#: code:addons/stock_picking_whole_scrap/wizards/stock_picking_whole_scrap.py:72
+#, python-format
+msgid "You may only scrap one picking at a time!"
+msgstr "Odpišete lahko le po eno dobavnico hkrati!"
+
+#. module: stock_picking_whole_scrap
+#: code:addons/stock_picking_whole_scrap/wizards/stock_picking_whole_scrap.py:81
+#, python-format
+msgid "You may only scrap pickings in done state"
+msgstr "Odpišete lahko le dobavnice v stanju opravljeno"

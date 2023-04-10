@@ -1,0 +1,263 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* intrastat_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2020-08-19 07:59+0000\n"
+"Last-Translator: Matjaz Mozetic <matjaz@matmoz.si>\n"
+"Language-Team: none\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.10\n"
+
+#. module: intrastat_base
+#: model:ir.model.fields,help:intrastat_base.field_product_product__is_accessory_cost
+#: model:ir.model.fields,help:intrastat_base.field_product_template__is_accessory_cost
+msgid "Activate this option for shipping costs, packaging costs and all services related to the sale of products. This option is used for Intrastat reports."
+msgstr ""
+"Aktivirajte to opcijo za stroške odpreme, stroške pakiranja in vse storitve "
+"vezane na prodajo proizvodov. Ta opcija se uporablja za Intrastat poročila."
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/intrastat_common.py:143
+#, python-format
+msgid "Cannot delete the declaration %s because it is in Done state"
+msgstr "Deklaracije %s ne morete izbrisati, ker je v stanju Opravljeno"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_intrastat_common
+msgid "Common functions for intrastat reports for products "
+msgstr "Običajne funkcije za intrastat poročila o proizvodih "
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_res_company
+msgid "Companies"
+msgstr "Družbe"
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/intrastat_common.py:38
+#, python-format
+msgid "Company not yet set on intrastat report."
+msgstr "Na intrastat poročilu družba še ni nastavljena."
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_res_config_settings
+msgid "Config Settings"
+msgstr "Nastavitve"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_res_country
+msgid "Country"
+msgstr "Država"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__create_uid
+msgid "Created by"
+msgstr "Ustvaril"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__create_date
+msgid "Created on"
+msgstr "Ustvarjeno"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.res_country_view_search
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_common__display_name
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__display_name
+msgid "Display Name"
+msgstr "Prikazani naziv"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_res_country__intrastat
+#: model_terms:ir.ui.view,arch_db:intrastat_base.res_country_view_search
+msgid "EU Country"
+msgstr "EU država"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_account_tax__exclude_from_intrastat_if_present
+#: model:ir.model.fields,field_description:intrastat_base.field_account_tax_template__exclude_from_intrastat_if_present
+msgid "Exclude invoice line from intrastat if this tax is present"
+msgstr "Izloči postavke računa, kjer je prisoten ta davek, iz intrastat"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.res_country_view_search
+msgid "Group By"
+msgstr "Združi po"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_common__id
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__id
+msgid "ID"
+msgstr "ID"
+
+#. module: intrastat_base
+#: model:ir.model.fields,help:intrastat_base.field_account_tax__exclude_from_intrastat_if_present
+#: model:ir.model.fields,help:intrastat_base.field_account_tax_template__exclude_from_intrastat_if_present
+msgid "If this tax is present on an invoice line, this invoice line will be skipped when generating Intrastat Product or Service lines from invoices."
+msgstr ""
+"Če je na postavki računa prisoten ta davek, bo postavka izločena iz "
+"Intrastat poročila o proizvodih ali storitvah."
+
+#. module: intrastat_base
+#: model:ir.ui.menu,name:intrastat_base.menu_intrastat_base_root
+#: model:ir.ui.menu,name:intrastat_base.menu_intrastat_config_root
+#: model_terms:ir.ui.view,arch_db:intrastat_base.view_intrastat_res_config_settings
+msgid "Intrastat"
+msgstr "Intrastat"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.product_template_form_view
+msgid "Intrastat Properties"
+msgstr "Intrastat lastnosti"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.intrastat_result_view_form
+msgid "Intrastat Result View"
+msgstr "Intrastat prikaz rezultatov"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_product_product__is_accessory_cost
+#: model:ir.model.fields,field_description:intrastat_base.field_product_template__is_accessory_cost
+msgid "Is accessory cost"
+msgstr "Je strošek dodatka"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_common____last_update
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view____last_update
+msgid "Last Modified on"
+msgstr "Zadnjič spremenjeno"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__write_uid
+msgid "Last Updated by"
+msgstr "Zadnji posodobil"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__write_date
+msgid "Last Updated on"
+msgstr "Zadnjič posodobljeno"
+
+#. module: intrastat_base
+#: model:ir.model.fields,help:intrastat_base.field_res_company__intrastat_remind_user_ids
+#: model:ir.model.fields,help:intrastat_base.field_res_config_settings__intrastat_remind_user_ids
+msgid "List of Odoo users who will receive a notification to remind them about the Intrastat declaration."
+msgstr ""
+"Seznam Odoo uporabnikov, ki bodo prejeli obvestilo kot opomnik glede "
+"Intrastat deklaracije."
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_res_company__intrastat_email_list
+msgid "List of emails of Users Receiving the Intrastat Reminder"
+msgstr "Seznam e-poštnih naslovov uporabnikov, ki prejemajo opomnik o Intrastat"
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/res_company.py:39
+#, python-format
+msgid "Missing e-mail address on user '%s'."
+msgstr "Pri uporabniku '%s' manjka e-poštni naslov."
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.res_country_view_search
+msgid "Name or Code"
+msgstr "Naziv ali koda"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_intrastat_result_view__note
+msgid "Notes"
+msgstr "Opombe"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.intrastat_result_view_form
+msgid "Ok"
+msgstr "V redu"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_intrastat_result_view
+msgid "Pop-up to show errors on intrastat report generation"
+msgstr "Pojavno okno za prikaz napak ob izdaji intrastat poročila"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_product_template
+msgid "Product Template"
+msgstr "Predloga proizvoda"
+
+#. module: intrastat_base
+#: model_terms:ir.ui.view,arch_db:intrastat_base.res_country_view_search
+msgid "Search Countries"
+msgstr "Iskanje držav"
+
+#. module: intrastat_base
+#: model:ir.model.fields,help:intrastat_base.field_res_country__intrastat
+msgid "Set to True for all European Union countries."
+msgstr "Nastavi za pravilno pri vseh državah evropske unije."
+
+#. module: intrastat_base
+#: model:product.product,name:intrastat_base.shipping_costs_exclude
+#: model:product.template,name:intrastat_base.shipping_costs_exclude_product_template
+msgid "Shipping costs"
+msgstr "Stroški odpreme"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_account_tax
+msgid "Tax"
+msgstr "Davek"
+
+#. module: intrastat_base
+#: model:ir.model,name:intrastat_base.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Predloge za davke"
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/intrastat_common.py:50
+#, python-format
+msgid "The VAT number is not set for the partner '%s'."
+msgstr "Pri partnerju '%s' ni nastavljen ID za DDV."
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/intrastat_common.py:42
+#, python-format
+msgid "The country is not set on the company '%s'."
+msgstr "Pri družbi '%s' ni nastavljena država."
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/product_template.py:22
+#, python-format
+msgid "The option 'Is accessory cost?' should only be activated on 'Service' products. You have activated this option for the product '%s' which is of type '%s'"
+msgstr ""
+"Opcija 'Je strošek dodatka?' bi se morala aktivirati le na proizvodih tipa "
+"'Storitev'. Vi ste to opcijo aktivirali za proizvod '%s', ki je tipa '%s'"
+
+#. module: intrastat_base
+#: model:product.product,uom_name:intrastat_base.shipping_costs_exclude
+#: model:product.template,uom_name:intrastat_base.shipping_costs_exclude_product_template
+msgid "Unit(s)"
+msgstr "Kos"
+
+#. module: intrastat_base
+#: code:addons/intrastat_base/models/intrastat_common.py:71
+#, python-format
+msgid "Unknown Error"
+msgstr "Neznana napaka"
+
+#. module: intrastat_base
+#: model:ir.model.fields,field_description:intrastat_base.field_res_company__intrastat_remind_user_ids
+#: model:ir.model.fields,field_description:intrastat_base.field_res_config_settings__intrastat_remind_user_ids
+msgid "Users Receiving the Intrastat Reminder"
+msgstr "Uporabniki prejemniki opomnika Intrastat"
+
+#. module: intrastat_base
+#: model:product.product,weight_uom_name:intrastat_base.shipping_costs_exclude
+#: model:product.template,weight_uom_name:intrastat_base.shipping_costs_exclude_product_template
+msgid "kg"
+msgstr "kg"

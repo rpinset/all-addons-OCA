@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* partner_multi_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_multi_name
+#: model:ir.model,name:partner_multi_name.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: partner_multi_name
+#: model:ir.model,name:partner_multi_name.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: partner_multi_name
+#: model:ir.model.fields,field_description:partner_multi_name.field_res_partner__othernames
+#: model:ir.model.fields,field_description:partner_multi_name.field_res_users__othernames
+msgid "Other Names"
+msgstr ""
+
+#. module: partner_multi_name
+#: model:ir.model,name:partner_multi_name.model_res_users
+msgid "Users"
+msgstr ""
+

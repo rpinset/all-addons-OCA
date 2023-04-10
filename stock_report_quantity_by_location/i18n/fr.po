@@ -1,0 +1,161 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_report_quantity_by_location
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2021-01-22 15:46+0000\n"
+"Last-Translator: Yann Papouin <y.papouin@dec-industrie.com>\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_prepare_form_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__create_uid
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__create_date
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__display_name
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_search_view
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_search_view
+msgid "Group by Location"
+msgstr "Regrouper par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__id
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__default_code
+msgid "Internal Reference"
+msgstr "Référence interne"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.actions.act_window,name:stock_report_quantity_by_location.action_stock_report_quantity_by_location_prepare
+msgid "Inventory By Location"
+msgstr "Inventaire par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.ui.menu,name:stock_report_quantity_by_location.menu_quantity_by_location
+msgid "Inventory by Location"
+msgstr "Inventaire par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location____last_update
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__write_uid
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__write_date
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__location_id
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_search_view
+msgid "Location"
+msgstr "Emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location_prepare__location_ids
+msgid "Locations"
+msgstr "Localisations"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__product_id
+msgid "Product"
+msgstr "Article"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__product_category_id
+msgid "Product Category"
+msgstr "Catégorie d'article"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__uom_id
+msgid "Product UoM"
+msgstr "UdM du produit"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_search_view
+msgid "Quantity > 0"
+msgstr "Quantité > 0"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_prepare_form_view
+msgid "Retrieve the Inventory Quantities"
+msgstr "Retrouver les quantités"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_search_view
+msgid "Search Stock Report Quantity by Location"
+msgstr "Recherche de rapport de stock par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model,name:stock_report_quantity_by_location.model_stock_report_quantity_by_location
+msgid "Stock Report By Location"
+msgstr "Rapport de stock par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model,name:stock_report_quantity_by_location.model_stock_report_quantity_by_location_prepare
+msgid "Stock Report Quantity By Location Prepare"
+msgstr "Préparation de rapport de quantité de stock par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: code:addons/stock_report_quantity_by_location/wizards/stock_report_quantity_by_location.py:20
+#, python-format
+msgid "Stock Report by Location"
+msgstr "Rapport de stock par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model_terms:ir.ui.view,arch_db:stock_report_quantity_by_location.stock_report_quantity_by_location_pivot_view
+msgid "Stock by Location"
+msgstr "Stock par emplacement"
+
+#. module: stock_report_quantity_by_location
+#: model:ir.model.fields,field_description:stock_report_quantity_by_location.field_stock_report_quantity_by_location__wiz_id
+msgid "Wiz"
+msgstr "Wiz"

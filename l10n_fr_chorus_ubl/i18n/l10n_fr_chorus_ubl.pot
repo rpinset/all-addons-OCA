@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_fr_chorus_ubl
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_fr_chorus_ubl
+#: selection:chorus.flow,syntax:0
+#: selection:res.company,fr_chorus_invoice_format:0
+msgid "CII 16B XML"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model,name:l10n_fr_chorus_ubl.model_chorus_flow
+msgid "Chorus Flow"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model.fields,field_description:l10n_fr_chorus_ubl.field_res_company__fr_chorus_invoice_format
+msgid "Chorus Invoice Format"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model,name:l10n_fr_chorus_ubl.model_base_ubl
+msgid "Common methods to generate and parse UBL XML files"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model,name:l10n_fr_chorus_ubl.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: selection:chorus.flow,syntax:0
+#: selection:res.company,fr_chorus_invoice_format:0
+msgid "Factur-X PDF"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model.fields,field_description:l10n_fr_chorus_ubl.field_chorus_flow__syntax
+msgid "Flow Syntax"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: model:ir.model,name:l10n_fr_chorus_ubl.model_account_invoice
+msgid "Invoice"
+msgstr ""
+
+#. module: l10n_fr_chorus_ubl
+#: selection:chorus.flow,syntax:0
+#: selection:res.company,fr_chorus_invoice_format:0
+msgid "UBL XML"
+msgstr ""
+

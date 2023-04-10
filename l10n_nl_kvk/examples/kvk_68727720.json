@@ -1,0 +1,36 @@
+{
+  "pagina": 1,
+  "aantal": 10,
+  "totaal": 2,
+  "resultaten": [
+    {
+      "kvkNummer": "68727720",
+      "vestigingsnummer": "000037143557",
+      "handelsnaam": "Test NV Katrien",
+      "straatnaam": "Rietdekkershof",
+      "plaats": "Veendam",
+      "type": "rechtspersoon",
+      "links": [
+        {
+          "rel": "basisprofiel",
+          "href": "https://api.kvk.nl/test/api/v1/basisprofielen/68727720"
+        },
+        {
+          "rel": "vestigingsprofiel",
+          "href": "https://api.kvk.nl/test/api/v1/vestigingsprofielen/000037143557"
+        }
+      ]
+    },
+    {
+      "kvkNummer": "68727720",
+      "handelsnaam": "Test NV Katrien",
+      "type": "rechtspersoon",
+      "links": [
+        {
+          "rel": "basisprofiel",
+          "href": "https://api.kvk.nl/test/api/v1/basisprofielen/68727720"
+        }
+      ]
+    }
+  ]
+}

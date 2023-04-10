@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Form: Invoice Customer -->
+        <record id="invoice_form_stamp" model="ir.ui.view">
+            <field name="name">account.invoice.form.stamp</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='sequence']" position="after">
+                    <field name="is_stamp_line" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree" position="attributes">
+                    <attribute name="colors">CadetBlue:is_stamp_line==True;</attribute>
+                </xpath>
+
+                <field name="date_due" position="after">
+                    <field name="auto_compute_stamp" invisible="1"/>
+                    <field name="tax_stamp" string="Tax stamp" invisible="1"/>
+                    <field name="manually_apply_tax_stamp"  attrs="{'invisible': [('auto_compute_stamp', '=', True)]}"/>
+                    <field name="tax_stamp_line_present" invisible="1"/>
+                </field>
+
+                <field name="invoice_line_ids" position="after">
+                    <div name="stamp_applicability" attrs="{'invisible': [('tax_stamp', '=', False)]}">
+                        <img src="/l10n_it_account_stamp/static/description/icon.png" alt="Tax stamp"/>
+                        <span attrs="{'invisible': [('tax_stamp_line_present', '=', True)]}">
+                            <span attrs="{'invisible': [('state', 'not in', 'draft')]}">
+                                <button type="object" string="Charge stamp to customer"
+                                        name="add_tax_stamp_line"/>
+                            </span>
+                            <span attrs="{'invisible': [('state', '=', 'draft')]}">
+                                Stamp can only be charged to customer when invoice is in draft state
+                            </span>
+                        </span>
+                        <span attrs="{'invisible': [('tax_stamp_line_present', '=', False)]}">
+                            Stamp charged to customer
+                        </span>
+                    </div>
+                </field>
+
+            </field>
+        </record>
+
+        <record id="view_invoice_line_form_stamp" model="ir.ui.view">
+            <field name="name">view_invoice_line_form_stamp</field>
+            <field name="model">account.invoice.line</field>
+            <field name="inherit_id" ref="account.view_invoice_line_form"/>
+            <field name="arch" type="xml">
+                <field name="product_id" position="after">
+                    <field name="is_stamp_line" invisible="1"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>

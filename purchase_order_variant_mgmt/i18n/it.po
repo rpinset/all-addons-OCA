@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * purchase_order_variant_mgmt
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+# Paolo Valier <paolo.valier@hotmail.it>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-30 08:37+0000\n"
+"PO-Revision-Date: 2023-01-02 12:49+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: purchase_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:purchase_order_variant_mgmt.purchase_order_form
+msgid "Add or Modify Variants"
+msgstr "Aggiungi o Modifica Varianti"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model,name:purchase_order_variant_mgmt.model_purchase_manage_variant
+msgid "Add or modify variants on purchase order lines"
+msgstr "Aggiungi o modifica varianti sulle righe ordine d'acquisto"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_order_line__product_attribute_value_ids
+msgid "Attribute Values"
+msgstr "Valori Attributo"
+
+#. module: purchase_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:purchase_order_variant_mgmt.purchase_manage_variant_form
+msgid "Cancel"
+msgstr "Cancella"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__create_uid
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__create_date
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model,name:purchase_order_variant_mgmt.model_purchase_manage_variant_line
+msgid "Define variants quantities on purchase order lines"
+msgstr "Definisci quantità delle varianti sulle righe ordine d'acquisto"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__display_name
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__display_name
+msgid "Display Name"
+msgstr "Nome Visualizzato"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__id
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant____last_update
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__write_uid
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__write_date
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: purchase_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:purchase_order_variant_mgmt.purchase_manage_variant_form
+msgid "Manage Product Variants"
+msgstr "Gestisci le Varianti Prodotto"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.actions.act_window,name:purchase_order_variant_mgmt.action_purchase_manage_variant
+msgid "Manage variants"
+msgstr "Gestisci varianti"
+
+#. module: purchase_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:purchase_order_variant_mgmt.purchase_order_form
+msgid "Modify Variants"
+msgstr "Modifica Varianti"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_order_line__state_purchase_order_variant_mgmt
+msgid "Order status"
+msgstr "Stato Ordine"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_order_line__product_tmpl_id_purchase_order_variant_mgmt
+msgid "Product Template"
+msgstr "Template Prodotto"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model,name:purchase_order_variant_mgmt.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Riga ordine di acquisto"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__product_uom_qty
+msgid "Quantity"
+msgstr "Quantità"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__product_tmpl_id
+msgid "Template"
+msgstr "Modello"
+
+#. module: purchase_order_variant_mgmt
+#: model_terms:ir.ui.view,arch_db:purchase_order_variant_mgmt.purchase_manage_variant_form
+msgid "Transfer to order"
+msgstr "Trasferisci a ordine"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__value_x
+msgid "Value X"
+msgstr "Valore X"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant_line__value_y
+msgid "Value Y"
+msgstr "Valore Y"
+
+#. module: purchase_order_variant_mgmt
+#: model:ir.model.fields,field_description:purchase_order_variant_mgmt.field_purchase_manage_variant__variant_line_ids
+msgid "Variant Lines"
+msgstr "Righe della Variante"
+
+#~ msgid "Disabled"
+#~ msgstr "Disabilitato"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#~ msgid "Value y"
+#~ msgstr "Valore y"
+
+#~ msgid "Variant"
+#~ msgstr "Variante"
+
+#~ msgid "purchase.manage.variant"
+#~ msgstr "purchase.manage.variant"
+
+#~ msgid "purchase.manage.variant.line"
+#~ msgstr "purchase.manage.variant.line"

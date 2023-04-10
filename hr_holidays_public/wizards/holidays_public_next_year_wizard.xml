@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2016 Trobz
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <record id="holidays_public_next_year_wizard_view" model="ir.ui.view">
+        <field name="name">Create Next Year Public Holidays</field>
+        <field name="model">public.holidays.next.year.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Next Year Public Holidays">
+                <field name="warning_existing" invisible="1"/>
+                <div class="alert alert-warning"
+                     aria-label="Warning"
+                     title="Warning"
+                     role="alert"
+                     attrs="{'invisible': [('warning_existing', '=', False)]}"
+                     style="margin-bottom:0px;">
+                    <p>
+                        <i class="fa fa-info-circle"/>
+                        <span>Warning: A public holidays calendar for this country and year already exists!</span>
+                    </p>
+                </div>
+                <sheet>
+                    <div>
+                        Use this wizard to create public holidays based on existing ones.
+                        If this is the first time you are creating a calendar,
+                        you should create it manually since this wizard takes
+                        previous years' calendars as templates.<br/>
+                    </div>
+                    <group>
+                        <group><field name="template_id" required="1" options="{'no_create': True}"/></group>
+                        <group>
+                            <field name="country_id"/>
+                            <field name="year"/>
+                        </group>
+                    </group>
+                    <div>
+                        Days to review are those that were marked with variable date
+                        in template's calendar. Here you can modify the date in case
+                        it is not the same than in the template.
+                    </div>
+                    <notebook>
+                        <page name="pending" string="Days to Review">
+                            <field name="pending_lines">
+                                <tree editable="bottom" create="0">
+                                    <field name="date"/>
+                                    <field name="name"/>
+                                    <field name="state_ids" widget="many2many_tags"/>
+                                    <field name="line_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button name="create_public_holidays" string="Create" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_create_next_year_public_holidays" model="ir.actions.act_window">
+        <field name="name">Create Next Year Public Holidays</field>
+        <field name="res_model">public.holidays.next.year.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem action="action_create_next_year_public_holidays"
+              id="menu_create_next_year_public_holidays"
+              parent="menu_hr_public_holidays"
+              groups="hr_holidays.group_hr_holidays_manager"
+              sequence="30"/>
+
+</odoo>

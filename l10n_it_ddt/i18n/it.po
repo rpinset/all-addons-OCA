@@ -1,0 +1,1198 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_it_ddt
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+# Paolo Valier, 2017
+# Alessandro Camilli <alessandrocamilli@openforce.it>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-25 05:17+0000\n"
+"PO-Revision-Date: 2022-12-30 11:48+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: l10n_it_ddt
+#: model:mail.template,body_html:l10n_it_ddt.email_template_edi_ddt
+msgid ""
+"\n"
+"<p>Dear ${object.partner_id.name},</p>\n"
+"<p>Here is your document\n"
+"%if object.date:\n"
+" of <strong>${object.date},</strong>\n"
+"% endif\n"
+"%if object.date_done:\n"
+"with shipping date\n"
+"<strong>${object.date_done}</strong>\n"
+"%endif\n"
+"from ${object.company_id.name}.\n"
+"</p>\n"
+"<p>You can reply to this email if you have any questions.</p>\n"
+"<p>Thank you.</p>\n"
+msgstr ""
+"\n"
+"<p>Gentile ${object.partner_id.name},</p>\n"
+"<p>ecco il documento\n"
+"%if object.date:\n"
+" del <strong>${object.date},</strong>\n"
+"% endif\n"
+"%if object.date_done:\n"
+"con data di spedizione\n"
+"<strong>${object.date_done}</strong>\n"
+"%endif\n"
+"da ${object.company_id.name}.\n"
+"</p>\n"
+"<p>È possibile rispondere a questa email in caso di domande.</p>\n"
+"<p>Grazie.</p>\n"
+
+#. module: l10n_it_ddt
+#: model:mail.template,report_name:l10n_it_ddt.email_template_edi_ddt
+msgid "${(object.ddt_number)}"
+msgstr "${(object.ddt_number)}"
+
+#. module: l10n_it_ddt
+#: model:mail.template,subject:l10n_it_ddt.email_template_edi_ddt
+msgid ""
+"${object.company_id.name} (${object.ddt_number})\n"
+"            "
+msgstr ""
+"${object.company_id.name} (${object.ddt_number})\n"
+"            "
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>Description</strong>"
+msgstr "<strong>Descrizione</strong>"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>Discount</strong>"
+msgstr "<strong>Sconto</strong>"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>Lots/Serial Numbers</strong>"
+msgstr "<strong>Lotti/Numeri seriali</strong>"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>Price</strong>"
+msgstr "<strong>Prezzo</strong>"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Quantità</strong>"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "<strong>UoM</strong>"
+msgstr "<strong>UdM</strong>"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_pickings_to_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_add_pickings_to_ddt
+msgid "Add Pickings to TD"
+msgstr "Aggiunta prelievi al DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_form
+msgid "Add an internal note..."
+msgstr "Aggiungi una nota interna..."
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_add_pickings_to_ddt
+msgid "Add picking to TD"
+msgstr "Aggiunta prelievo al DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_add_pickings_to_ddt
+msgid "Add to TD"
+msgstr "Aggiungi al DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "Assignee"
+msgstr "Cessionario"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__create_ddt
+msgid "Automatically create the TD"
+msgstr "Creare DDT in modo automatico"
+
+#. module: l10n_it_ddt
+#: selection:stock.picking.package.preparation,show_deadline_date:0
+msgid "Best before Date"
+msgstr "Data di scadenza"
+
+#. module: l10n_it_ddt
+#: selection:res.partner,ddt_invoicing_group:0
+#: selection:sale.order,ddt_invoicing_group:0
+msgid "Billing Partner"
+msgstr "Partner di fatturazione"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_add_pickings_to_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_create_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_carriage_condition
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__carriage_condition_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__carriage_condition_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__carriage_condition_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__carriage_condition_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__carriage_condition_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_carriage_condition_form
+msgid "Carriage Condition"
+msgstr "Condizione di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_carriage_condition_tree
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_action_carriage_condition_tree
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_carriage_condition_tree
+msgid "Carriage Conditions"
+msgstr "Condizioni di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__carrier_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__ddt_carrier_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__carrier_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Carrier"
+msgstr "Vettore"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Carrier's Signature"
+msgstr "Firma del vettore"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__check_if_picking_done
+msgid "Check If Picking Done"
+msgstr "Controlla se il prelievo è completato"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__ddt_code_group
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__ddt_code_group
+#: selection:res.partner,ddt_invoicing_group:0
+#: selection:sale.order,ddt_invoicing_group:0
+msgid "Code group"
+msgstr "Codice raggruppamento"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "Consignee"
+msgstr "Destinatario"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+msgid "Create"
+msgstr "Crea"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_create_invoice
+msgid "Create Invoice"
+msgstr "Crea fattura"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_ddt_create_invoice
+msgid "Create invoice from TD"
+msgstr "Creare fattura dal DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__create_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__create_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__ddt_invoice_exclude
+msgid "DDT do not invoice services"
+msgstr "Non fatturare servizi da DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_stock_ddt_data
+msgid "DdT Data"
+msgstr "Dati DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__ddt_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__ddt_ids
+msgid "Ddt"
+msgstr "DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__default_carriage_condition_id
+msgid "Default Carriage Condition"
+msgstr "Condizioni di trasporto predefinite"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__default_goods_description_id
+msgid "Default Description of Goods"
+msgstr "Descrizione dei beni predefinita"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__default_transportation_method_id
+msgid "Default Method of Transportation"
+msgstr "Metodo di trasporto predefinito"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__default_note
+msgid "Default Note"
+msgstr ""
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__default_transportation_reason_id
+msgid "Default Reason for Transportation"
+msgstr "Causale di trasporto predefinita"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_goods_description
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__goods_description_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__goods_description_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__goods_description_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__goods_description_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__goods_description_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.stock_goods_description_form
+msgid "Description of Goods"
+msgstr "Descrizione dei beni"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_goods_description_tree
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_action_good_description_tree
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_goods_description_tree
+msgid "Descriptions of Goods"
+msgstr "Descrizioni dei beni"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__dimension
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__dimension
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Dimension"
+msgstr "Dimensioni"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation_line__discount
+msgid "Discount (%)"
+msgstr "Sconto (%)"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__display_name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__ddt_invoice_exclude
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__ddt_invoice_exclude
+msgid "Do not invoice services from DDT"
+msgstr "Non fatturare servizi da DDT"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:557
+#, python-format
+msgid "Document {d} has invoice linked"
+msgstr "Il documento {d} ha una fattura collegata"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Driver's Signature"
+msgstr "Firma del conducente"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__date_to
+msgid "End Date"
+msgstr "Data di fine"
+
+#. module: l10n_it_ddt
+#: selection:stock.picking.package.preparation,show_deadline_date:0
+msgid "End of Life Date"
+msgstr "Data di fine vita"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_product_product__ddt_invoice_exclude
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_product_template__ddt_invoice_exclude
+msgid "Exclude from DDT invoicing"
+msgstr "Escludere dalla fatturazione DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_stock_picking_package_preparation__weight_manual
+msgid ""
+"Fill this field with the value you want to be used as weight. Leave empty to "
+"let the system to compute it"
+msgstr ""
+"Compilare questo campo con il valore da usare come peso. Lasciare vuoto per "
+"far sì che il sistema lo calcoli"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__weight_manual
+msgid "Force Net Weight"
+msgstr "Forza peso netto"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Goods Description"
+msgstr "Descrizione dei beni"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__gross_weight
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__gross_weight
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__gross_weight
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Gross Weight"
+msgstr "Peso lordo"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__gross_weight_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__gross_weight_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__gross_weight_uom_id
+msgid "Gross Weight UoM"
+msgstr "UdM peso lordo"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "Group By"
+msgstr "Raggruppa per"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_sale_order__ddt_invoice_exclude
+msgid ""
+"If flagged services from this SO will not be automatically invoiced from "
+"DDT. This parameter can be set on partners and automatically applied to Sale "
+"Orders."
+msgstr ""
+"Se selezionato, i servizi di questo ordine non saranno automaticamente "
+"fatturati dal DDT. Questo parametro può essere impostato sui partner e "
+"automaticamente applicato agli ordini di vendita."
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_res_partner__ddt_invoice_exclude
+#: model:ir.model.fields,help:l10n_it_ddt.field_res_users__ddt_invoice_exclude
+msgid ""
+"If flagged services will not be automatically invoiced from DDT. If set on "
+"the partner, this parameter willbe automatically applied to Sale Orders."
+msgstr ""
+"Se selezionato, i servizi non saranno automaticamente fatturati dal DDT. Se "
+"impostato sul partner, questo parametro sarà automaticamente applicato agli "
+"ordini di vendita."
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_product_product__ddt_invoice_exclude
+#: model:ir.model.fields,help:l10n_it_ddt.field_product_template__ddt_invoice_exclude
+msgid "If flagged this service will not be automatically invoiced from DDT."
+msgstr ""
+"Se selezionato, questo servizio non sarà automaticamente fatturato dal DDT."
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:213
+#, python-format
+msgid "Impossible to put in pack a package without details"
+msgstr "Impossibile creare un collo senza dettagli"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:206
+#, python-format
+msgid "Impossible to put in pack a picking whose state is 'done'"
+msgstr "Impossibile creare un collo da un prelievo con stato \"Completato\""
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicazioni di inventario"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_account_invoice
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__invoice_id
+msgid "Invoice"
+msgstr "Fattura"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__date_invoice
+msgid "Invoice Date"
+msgstr "Data fattura"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Riga fattura"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "Invoiced"
+msgstr "Fatturato"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_create_invoice.py:37
+#, python-format
+msgid "Invoices from TD"
+msgstr "Fatture da DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_ddt_invoicing
+msgid "Invoicing TD"
+msgstr "Fatturazione DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__journal_id
+msgid "Journal"
+msgstr "Registro"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method____last_update
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__write_uid
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_add_pickings_to_ddt__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_create_invoice__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__write_date
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_transportation_method
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__transportation_method_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__transportation_method_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__transportation_method_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__transportation_method_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__transportation_method_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__name
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_transportation_method_form
+msgid "Method of Transportation"
+msgstr "Metodo di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_transportation_method_tree
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_action_transportation_method_tree
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_transportation_method_tree
+msgid "Methods of Transportation"
+msgstr "Metodi di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__name
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__display_name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Net Weight"
+msgstr "Peso netto"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__weight_manual_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__weight_manual_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__weight_manual_uom_id
+msgid "Net Weight UoM"
+msgstr "UdM peso netto"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:226
+#, python-format
+msgid "Not every picking is in done status"
+msgstr "Non tutti i prelievi si trovano nello stato «Completato»"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__note
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_carriage_condition__note
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_goods_description__note
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_method__note
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Notes"
+msgstr "Note"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_invoicing.py:40
+#, python-format
+msgid "Nothing to invoice"
+msgstr "Nulla da fatturare"
+
+#. module: l10n_it_ddt
+#: selection:res.partner,ddt_invoicing_group:0
+#: selection:sale.order,ddt_invoicing_group:0
+msgid "One TD - One Invoice"
+msgstr "Un DDT - Una fattura"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_form
+msgid "Open full-screen"
+msgstr "Apri a schermo intero"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_package_preparation
+msgid "Package Preparation"
+msgstr "Preparazione collo"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_package_preparation_line
+msgid "Package Preparation Line"
+msgstr "Riga preparazione collo"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__parcels
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Packages"
+msgstr "Colli"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__parcels
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__parcels
+msgid "Parcels"
+msgstr "Colli"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "Partner"
+msgstr "Partner"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Pick up time"
+msgstr "Ora ritiro"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_from_pickings__picking_ids
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+msgid "Picking"
+msgstr "Prelievo"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:32
+#, python-format
+msgid "Picking %s already in TD"
+msgstr "Prelievo %s già presente nel DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+msgid "Pickings"
+msgstr "Prelievi"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:346
+#, python-format
+msgid "Please define an accounting sale journal for this company."
+msgstr "Definire un registro contabile di vendita per questa azienda."
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:690
+#, python-format
+msgid ""
+"Please define income account for this product: \"%s\" (id:%d) - or for its "
+"category: \"%s\"."
+msgstr ""
+"Definire un conto di ricavo per questo prodotto: \"%s\" (id:%d) - o per "
+"questa categoria: \"%s\"."
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__name
+msgid "Reason For Transportation"
+msgstr "Causale di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking_transportation_reason
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__transportation_reason_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__transportation_reason_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__transportation_reason_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__transportation_reason_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__transportation_reason_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_transportation_reason_form
+msgid "Reason for Transportation"
+msgstr "Causale di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_transportation_reason_tree
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_action_transportation_reason_tree
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_transportation_reason_tree
+msgid "Reasons for Transportation"
+msgstr "Causali di trasporto"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Recipient's Signature"
+msgstr "Firma del destinatario"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__ddt_ids
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.sale_order_form_view_ddt
+msgid "Related TDs"
+msgstr "DDT collegati"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:311
+#, python-format
+msgid "Relevant period:"
+msgstr "Periodo di competenza:"
+
+#. module: l10n_it_ddt
+#: selection:stock.picking.package.preparation,show_deadline_date:0
+msgid "Removal Date"
+msgstr "Data di rimozione"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_sale_order
+msgid "Sale Order"
+msgstr "Ordine di vendita"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:46
+#, python-format
+msgid "Sale order %s and DDT %s have different carriage condition"
+msgstr ""
+"L'ordine di vendita %s e il DDT %s hanno condizioni di trasporto diverse"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:57
+#, python-format
+msgid "Sale order %s and DDT %s have different goods description"
+msgstr "L'ordine di vendita %s e il DDT %s hanno descrizioni dei beni diverse"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:79
+#, python-format
+msgid "Sale order %s and DDT %s have different transportation method"
+msgstr "L'ordine di vendita %s e il DDT %s hanno metodi di trasporto diversi"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:68
+#, python-format
+msgid "Sale order %s and DDT %s have different transportation reason"
+msgstr "L'ordine di vendita %s e il DDT %s hanno causali di trasporto diverse"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation_line__sale_line_id
+msgid "Sale order line"
+msgstr "Riga ordine di vendita"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "Search TD"
+msgstr "Ricerca DDT"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:37
+#, python-format
+msgid "Selected Picking %s have different Partner"
+msgstr "Il prelievo %s selezionato ha un partner diverso"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:197
+#, python-format
+msgid "Selected Picking is already linked to TD: %s"
+msgstr "Il prelievo selezionato è già collegato al DDT: %s"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:51
+#, python-format
+msgid "Selected Pickings have different Partner"
+msgstr "I prelievi selezionati hanno partner diversi"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:92
+#, python-format
+msgid "Selected Pickings have different carriage condition"
+msgstr "I prelievi selezionati hanno una condizione di trasporto diversa"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:194
+#, python-format
+msgid "Selected Pickings have different carrier"
+msgstr "I prelievi selezionati hanno trasportatori diversi"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:117
+#, python-format
+msgid "Selected Pickings have different goods description"
+msgstr "I prelievi selezionati hanno una descrizione dei beni diversa"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:82
+#, python-format
+msgid "Selected Pickings have different parcels"
+msgstr "I prelievi selezionati contengono colli diversi"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:168
+#, python-format
+msgid "Selected Pickings have different transportation method"
+msgstr "I prelievi selezionati hanno un metodo di trasporto diverso"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:142
+#, python-format
+msgid "Selected Pickings have different transportation reason"
+msgstr "I prelievi selezionati hanno una causale di trasporto diversa"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:70
+#, python-format
+msgid "Selected pickings have different destinations"
+msgstr "I prelievi selezionati hanno destinazioni diverse"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_form
+msgid "Send by Mail"
+msgstr "Invia con email"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_ddt_type__sequence_id
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_form
+msgid "Set done"
+msgstr "Imposta a completato"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+msgid "Setting"
+msgstr "Impostazioni"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__partner_shipping_id
+msgid "Shipping Address"
+msgstr "Indirizzo di spedizione"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_form
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.invoice_form_view_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.sale_order_form_view_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_partner_form_ddt
+msgid "Shipping Informations"
+msgstr "Informazioni di spedizione"
+
+#. module: l10n_it_ddt
+#: selection:res.partner,ddt_invoicing_group:0
+#: selection:sale.order,ddt_invoicing_group:0
+msgid "Shipping Partner"
+msgstr "Partner di spedizione"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Shipping date"
+msgstr "Data di spedizione"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__show_deadline_date
+msgid "Show lot deadline on report"
+msgstr "Mostrare scadenza lotto sulla stampa"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_res_partner__ddt_show_price
+#: model:ir.model.fields,help:l10n_it_ddt.field_res_users__ddt_show_price
+#: model:ir.model.fields,help:l10n_it_ddt.field_sale_order__ddt_show_price
+msgid "Show prices and discounts in TD report"
+msgstr "Mostrare prezzi e sconti nel DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__ddt_show_price
+msgid "Show prices on report"
+msgstr "Mostrare prezzi sul documento"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Size"
+msgstr "Volume"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_ddt_invoicing__date_from
+msgid "Start Date"
+msgstr "Data di inizio"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "State"
+msgstr "Stato"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_ddt_type
+msgid "Stock TD Type"
+msgstr "Tipo DDT di magazzino"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking__ddt_supplier_date
+msgid "Supplier TD Date"
+msgstr "Data DDT fornitore"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking__ddt_supplier_number
+msgid "Supplier TD Number"
+msgstr "Numero DDT fornitore"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/add_picking_to_ddt.py:95
+#: code:addons/l10n_it_ddt/wizard/ddt_from_picking.py:223
+#: model:ir.actions.report,name:l10n_it_ddt.action_report_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__ddt_ids
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice_line__ddt_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking__ddt_ids
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.invoice_form_view_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.stock_location_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.stock_picking_tree_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_add_pickings_to_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_create_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+#, python-format
+msgid "TD"
+msgstr "DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_ddt_create_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_create_invoice
+msgid "TD Create Invoice"
+msgstr "DDT Crea fattura"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "TD Date"
+msgstr "Data DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_picking_form
+msgid "TD Info"
+msgstr "Informazioni DDT"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/wizard/ddt_invoicing.py:52
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_ddt_invoicing
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_ddt_invoicing
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+#, python-format
+msgid "TD Invoicing"
+msgstr "Fatturazione DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__ddt_number
+msgid "TD Number"
+msgstr "Numero DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__ddt_type_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "TD Type"
+msgstr "Tipo DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_ddt_from_pickings
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+msgid "TD from Pickings"
+msgstr "DDT da consegne"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_ddt_from_pickings
+msgid "TD from pickings"
+msgstr "DDT da consegne"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_partner_form_ddt
+msgid "TD info"
+msgstr "Info DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__ddt_invoicing_group
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__ddt_invoicing_group
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__ddt_invoicing_group
+msgid "TD invoicing group"
+msgstr "Gruppo fatturazione DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice_line__ddt_line_id
+msgid "TD line"
+msgstr "Riga DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "TD number:"
+msgstr "Numero DDT:"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice_line__ddt_sequence
+msgid "TD sequence"
+msgstr "Sequenza DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_partner__ddt_show_price
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_res_users__ddt_show_price
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__ddt_show_price
+msgid "TD show prices"
+msgstr "Mostrare prezzi DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_location__type_ddt_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking__ddt_type
+msgid "TD type"
+msgstr "Tipo DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation_line__tax_ids
+msgid "Taxes"
+msgstr "Imposte"
+
+#. module: l10n_it_ddt
+#: code:addons/l10n_it_ddt/models/stock_picking_package_preparation.py:427
+#, python-format
+msgid "There is no invoiceable line."
+msgstr "Non ci sono righe fatturabili."
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,help:l10n_it_ddt.field_stock_picking_package_preparation__to_be_invoiced
+msgid ""
+"This depends on 'To be Invoiced' field of the Reason for Transportation of "
+"this TD"
+msgstr ""
+"Questo dipende dal campo \"Da fatturare\" nella \"Causale di trasporto\" del "
+"DDT"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.ddt_stock_picking_package_preparation_search
+msgid "To Be Invoiced"
+msgstr "Da fatturare"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__to_be_invoiced
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_transportation_reason__to_be_invoiced
+msgid "To be Invoiced"
+msgstr "Da fatturare"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__carrier_tracking_ref
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__carrier_tracking_ref
+msgid "Tracking Reference"
+msgstr "Riferimento Spedizione"
+
+#. module: l10n_it_ddt
+#: model:ir.model,name:l10n_it_ddt.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"
+
+#. module: l10n_it_ddt
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_ddt_preparation
+msgid "Transport Document"
+msgstr "Documento di trasporto"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Transportation Method"
+msgstr "Metodo di trasporto"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.delivery_data
+msgid "Transportation Reason"
+msgstr "Causale di trasporto"
+
+#. module: l10n_it_ddt
+#: model:ir.actions.act_window,name:l10n_it_ddt.action_ddt_type_tree
+#: model:ir.ui.menu,name:l10n_it_ddt.menu_action_ddt_type_tree
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_type_form
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_type_tree
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation_line__price_unit
+msgid "Unit Price"
+msgstr "Prezzo unitario"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.report_ddt
+msgid "VAT number:"
+msgstr "Partita IVA:"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_order_form_view_ddt
+msgid "View TD"
+msgstr "Visualizza DDT"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__volume
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__volume
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__volume
+msgid "Volume"
+msgstr "Volume"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__volume_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__volume_uom_id
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_stock_picking_package_preparation__volume_uom_id
+msgid "Volume UoM"
+msgstr "UdM volume"
+
+#. module: l10n_it_ddt
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_account_invoice__weight
+#: model:ir.model.fields,field_description:l10n_it_ddt.field_sale_order__weight
+msgid "Weight"
+msgstr "Peso"
+
+#. module: l10n_it_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_add_pickings_to_ddt
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_create_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_from_pickings
+#: model_terms:ir.ui.view,arch_db:l10n_it_ddt.view_ddt_invoicing
+msgid "or"
+msgstr "oppure"
+
+#~ msgid "Show prices and         discounts in TD report"
+#~ msgstr "Mostrare prezzi e         sconti nel DDT"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "${object.subject}"
+#~ msgstr "${object.subject}"
+
+#~ msgid "Cessionario"
+#~ msgstr "Cessionario"
+
+#~ msgid "Competenza:"
+#~ msgstr "Competenza:"
+
+#~ msgid "DDT"
+#~ msgstr "DDT"
+
+#~ msgid "DdT"
+#~ msgstr "DdT"
+
+#~ msgid "DdT Type"
+#~ msgstr "Tipo DDT"
+
+#~ msgid "Destinatario"
+#~ msgstr "Destinatario"
+
+#~ msgid "Related DdTs"
+#~ msgstr "DDT correlati"
+
+#~ msgid "Shipping Partners"
+#~ msgstr "Partner di consegna"
+
+#~ msgid "Type DDT"
+#~ msgstr "Tipo DDT"
+
+#~ msgid "add.pickings.to.ddt"
+#~ msgstr "add.pickings.to.ddt"
+
+#~ msgid "ddt.create.invoice"
+#~ msgstr "ddt.create.invoice"
+
+#~ msgid "ddt.from.pickings"
+#~ msgstr "ddt.from.pickings"
+
+#~ msgid "ddt.invoicing"
+#~ msgstr "ddt.invoicing"
+
+#~ msgid "Ddt id"
+#~ msgstr "Ddt id"
+
+#~ msgid "Ddt ids"
+#~ msgstr "Ddt ids"
+
+#~ msgid "Picking ids"
+#~ msgstr "ID Picking"

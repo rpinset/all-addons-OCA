@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="online_bank_statement_provider_form">
+        <field name="name">online.bank.statement.provider.form</field>
+        <field name="model">online.bank.statement.provider</field>
+        <field name="inherit_id" ref="account_bank_statement_import_online.online_bank_statement_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='configuration']" position="inside">
+                <group
+                    name="ponto_configuration"
+                    attrs="{'invisible':[('service','!=','ponto')]}"
+                    colspan="6"
+                    col="3"
+                >
+                    <group colspan="2" col="2" name="ponto_login">
+                        <field name="username" string="Login"/>
+                        <field name="password" string="Secret Key"/>
+                        <field name="ponto_buffer_retain_days"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

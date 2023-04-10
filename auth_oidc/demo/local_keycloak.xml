@@ -1,0 +1,25 @@
+<odoo>
+    <record id="local_keycloak" model="auth.oauth.provider">
+        <field name="name">keycloak:8080 on localhost</field>
+        <field name="flow">id_token_code</field>
+        <field name="client_id">auth_oidc-test</field>
+        <field name="token_map">preferred_username:user_id</field>
+        <field name="body">keycloak:8080 on localhost</field>
+        <field name="enabled" eval="True" />
+        <field name="scope">openid email</field>
+        <field
+            name="auth_endpoint"
+        >http://localhost:8080/auth/realms/master/protocol/openid-connect/auth</field>
+        <field
+            name="token_endpoint"
+        >http://localhost:8080/auth/realms/master/protocol/openid-connect/token</field>
+        <field
+            name="jwks_uri"
+        >http://localhost:8080/auth/realms/master/protocol/openid-connect/certs</field>
+    </record>
+    <record id="local_keycloak_group_line" model="auth.oauth.provider.group_line">
+        <field name="provider_id" ref="local_keycloak" />
+        <field name="group_id" ref="base.group_no_one" />
+        <field name="expression">token['name'] == 'test'</field>
+    </record>
+</odoo>

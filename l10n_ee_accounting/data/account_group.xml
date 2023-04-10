@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <!--
+        Chart of Accounts layout:
+          - 1xxxxx Current Assets
+              - 101xxx Cash & Bank Assets
+                  - 101000 Liquidity Transfer
+                  - 1011xx Cash Accounts
+                  - 1012xx Bank Accounts
+              - 102xxx Receivables and Prepayments
+                  - 1021xx Trade Receivables
+                    - 102100 Trade Receivables
+                  - 1022xx Receivables from connected parties
+                    - 102200 Receivables from connected parties
+                  - 1023xx Prepaid and deferred taxes
+                    - 102300 Tax and Customs Board Prepayment Account
+                  - 1024xx Prepayments to Vendors
+                    - 102400 Prepayments to Vendors
+              - 103xxx Inventory
+                - 103000 Inventory
+              - 104xxx Financial Investments
+          - 2xxxxx Non-Current Assets
+              - 201xxx Investments in Subsidiaries and affiliated undertakings
+                  - 2011xx Shares of Subsidiaries
+                    - 201100 Shares of Subsidiaries
+              - 202xxx Financial Investments
+              - 203xxx Receivables and Prepayments
+              - 204xxx Investment Properties
+                - 204000 Investment Properties
+                - 204001 Depreciation of Investment Properties
+              - 205xxx Tangible Assets
+                - 205000 Tangible Assets
+                - 205001 Depreciation of Tangible Assets
+              - 206xxx Intangible Fixed Assets
+                - 206000 Intangible Fixed Assets
+                - 206001 Depreciation of Intangible Fixed Assets
+          - 3xxxxx Current Liabilities
+              - 301xxx Payables and Prepayments
+                  - 3011xx Trade Payables
+                    - 301100 Trade Payables
+                  - 3012xx Payables to connected parties
+                    - 301200 Payables to connected parties
+                  - 3013xx Taxes payable
+                      - 301310 Input VAT Receivable
+                      - 301320 Output VAT Payable
+                      - 301330 VAT Closing
+                  - 3014xx Employee-related Liabilities
+                      - 301410 Social Security Accrued
+                      - 301420 Employee Tax Accrued
+                  - 3015xx Prepayments from Customers
+                    - 301500 Prepayments from Customers
+              - 302xxx Funds from Shareholders
+                - 302000 Funds from Shareholders
+              - 303xxx Loan Liabilities
+          - 4xxxxx Non-Current Liabilities
+          - 5xxxxx Owners' Equity
+              - 501xxx Share Capital
+                  - 5011xx Issued Share Capital
+                    - 501100 Issued Share Capital
+                  - 5012xx Unpaid Share Capital
+                    - 501200 Unpaid Share Capital
+              - 503xxx Legal Reserves
+                - 503000 Legal Reserve
+              - 504xxx Other Reserves
+              - 5999xx Undistributed Profit/Loss
+                - 599900 Undistributed Profit/Loss
+          - 6xxxxx Income
+              - 601xxx Trade Income
+                - 601000 Trade Income
+              - 602xxx Financial Income
+                - 6020xx Foreign Exchange Gains
+                  - 602010 Foreign Exchange Gain (bills & invoices)
+                  - 602020 Foreign Exchange Gain (bank accounts & loans)
+              - 603xxx Capital Expenditure
+                - 603000 Capital Expenditure
+              - 604xxx Changes in Inventories
+                - 604000 Changes in Inventories
+          - 7xxxxx Expenses
+              - 701xxx Cost of Trade Income
+                - 701000 Cost of Trade Income
+              - 702xxx Expenses on Trade Income
+                - 702000 Expenses on Trade Income
+              - 703xxx Employee expenses
+                  - 7031xx Salary Expenses
+                    - 703100 Salary Expenses
+                  - 7032xx Social Security Expenses
+                    - 703200 Social Security Expenses
+                  - 7033xx Employee Tax Expenses
+                    - 703300 Employee Tax Expenses
+              - 704xxx Expenses
+                - 704000 Expenses
+                - 704010 Depreciation expenses
+              - 705xxx Financial Expenses
+                - 7050xx Foreign Exchange Losses
+                  - 705010 Foreign Exchange Loss (bills & invoices)
+                  - 705020 Foreign Exchange Loss (bank accounts & loans)
+    -->
+    <record id="current_assets_section" model="account.group">
+        <field name="name">Current Assets</field>
+        <field name="code_prefix">1</field>
+    </record>
+    <record id="cash_and_bank_account_group" model="account.group">
+        <field name="parent_id" ref="current_assets_section"/>
+        <field name="name">Cash &amp; Bank Assets</field>
+        <field name="code_prefix">101</field>
+    </record>
+    <record id="cash_account_group" model="account.group">
+        <field name="parent_id" ref="cash_and_bank_account_group"/>
+        <field name="name">Cash Accounts</field>
+        <field name="code_prefix">1011</field>
+    </record>
+    <record id="bank_account_group" model="account.group">
+        <field name="parent_id" ref="cash_and_bank_account_group"/>
+        <field name="name">Bank Accounts</field>
+        <field name="code_prefix">1012</field>
+    </record>
+    <record id="c_receivables_and_prepayments_account_group" model="account.group">
+        <field name="parent_id" ref="current_assets_section"/>
+        <field name="name">Receivables and Prepayments</field>
+        <field name="code_prefix">102</field>
+    </record>
+    <record id="trade_receivables_account_group" model="account.group">
+        <field name="parent_id" ref="c_receivables_and_prepayments_account_group"/>
+        <field name="name">Trade Receivables</field>
+        <field name="code_prefix">1021</field>
+    </record>
+    <record id="receivables_from_connected_parties_account_group" model="account.group">
+        <field name="parent_id" ref="c_receivables_and_prepayments_account_group"/>
+        <field name="name">Receivables from connected parties</field>
+        <field name="code_prefix">1022</field>
+    </record>
+    <record id="prepaid_and_deferred_account_group" model="account.group">
+        <field name="parent_id" ref="c_receivables_and_prepayments_account_group"/>
+        <field name="name">Prepaid and deferred taxes</field>
+        <field name="code_prefix">1023</field>
+    </record>
+    <record id="prepayments_to_vendors_account_group" model="account.group">
+        <field name="parent_id" ref="c_receivables_and_prepayments_account_group"/>
+        <field name="name">Prepayments to Vendors</field>
+        <field name="code_prefix">1024</field>
+    </record>
+    <record id="inventory_account_group" model="account.group">
+        <field name="parent_id" ref="current_assets_section"/>
+        <field name="name">Inventory</field>
+        <field name="code_prefix">103</field>
+    </record>
+    <record id="non_current_assets_section" model="account.group">
+        <field name="name">Non-Current Assets</field>
+        <field name="code_prefix">2</field>
+    </record>
+    <record id="subsidiaries_investments_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Investments in Subsidiaries and affiliated undertakings</field>
+        <field name="code_prefix">201</field>
+    </record>
+    <record id="subsidiaries_shares_account_group" model="account.group">
+        <field name="parent_id" ref="subsidiaries_investments_account_group"/>
+        <field name="name">Shares of Subsidiaries</field>
+        <field name="code_prefix">2011</field>
+    </record>
+    <record id="financial_investments_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Financial Investments</field>
+        <field name="code_prefix">202</field>
+    </record>
+    <record id="nc_receivables_and_prepayments_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Receivables and Prepayments</field>
+        <field name="code_prefix">203</field>
+    </record>
+    <record id="investment_properties_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Investment Properties</field>
+        <field name="code_prefix">204</field>
+    </record>
+    <record id="tangible_assets_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Tangible Assets</field>
+        <field name="code_prefix">205</field>
+    </record>
+    <record id="intangible_fixed_assets_account_group" model="account.group">
+        <field name="parent_id" ref="non_current_assets_section"/>
+        <field name="name">Intangible Fixed Assets</field>
+        <field name="code_prefix">206</field>
+    </record>
+    <record id="current_liabilities_section" model="account.group">
+        <field name="name">Current Liabilities</field>
+        <field name="code_prefix">3</field>
+    </record>
+    <record id="c_payables_and_prepayments_account_group" model="account.group">
+        <field name="parent_id" ref="current_liabilities_section"/>
+        <field name="name">Payables and Prepayments</field>
+        <field name="code_prefix">301</field>
+    </record>
+    <record id="c_trade_payables_account_group" model="account.group">
+        <field name="parent_id" ref="c_payables_and_prepayments_account_group"/>
+        <field name="name">Trade Payables</field>
+        <field name="code_prefix">3011</field>
+    </record>
+    <record id="c_payables_to_connected_parties_account_group" model="account.group">
+        <field name="parent_id" ref="c_payables_and_prepayments_account_group"/>
+        <field name="name">Payables to connected parties</field>
+        <field name="code_prefix">3012</field>
+    </record>
+    <record id="c_taxes_payable_account_group" model="account.group">
+        <field name="parent_id" ref="c_payables_and_prepayments_account_group"/>
+        <field name="name">Taxes payable</field>
+        <field name="code_prefix">3013</field>
+    </record>
+    <record id="c_employee_related_liabilities_account_group" model="account.group">
+        <field name="parent_id" ref="c_payables_and_prepayments_account_group"/>
+        <field name="name">Employee-related Liabilities</field>
+        <field name="code_prefix">3014</field>
+    </record>
+    <record id="customer_prepayments_account_group" model="account.group">
+        <field name="parent_id" ref="c_payables_and_prepayments_account_group"/>
+        <field name="name">Prepayments from Customers</field>
+        <field name="code_prefix">3015</field>
+    </record>
+    <record id="funds_from_shareholders_account_group" model="account.group">
+        <field name="parent_id" ref="current_liabilities_section"/>
+        <field name="name">Funds from Shareholders</field>
+        <field name="code_prefix">302</field>
+    </record>
+    <record id="c_loan_liabilities_account_group" model="account.group">
+        <field name="parent_id" ref="current_liabilities_section"/>
+        <field name="name">Loan Liabilities</field>
+        <field name="code_prefix">303</field>
+    </record>
+    <record id="non_current_liabilities_section" model="account.group">
+        <field name="name">Non-Current Liabilities</field>
+        <field name="code_prefix">4</field>
+    </record>
+    <record id="owners_equity_section" model="account.group">
+        <field name="name">Owners' Equity</field>
+        <field name="code_prefix">5</field>
+    </record>
+    <record id="share_capital_account_group" model="account.group">
+        <field name="parent_id" ref="owners_equity_section"/>
+        <field name="name">Share Capital</field>
+        <field name="code_prefix">501</field>
+    </record>
+    <record id="issued_share_capital_account_group" model="account.group">
+        <field name="parent_id" ref="share_capital_account_group"/>
+        <field name="name">Issued Share Capital</field>
+        <field name="code_prefix">5011</field>
+    </record>
+    <record id="unpaid_share_capital_account_group" model="account.group">
+        <field name="parent_id" ref="share_capital_account_group"/>
+        <field name="name">Unpaid Share Capital</field>
+        <field name="code_prefix">5012</field>
+    </record>
+    <record id="legal_reserves_account_group" model="account.group">
+        <field name="parent_id" ref="owners_equity_section"/>
+        <field name="name">Legal Reserves</field>
+        <field name="code_prefix">503</field>
+    </record>
+    <record id="other_reserves_account_group" model="account.group">
+        <field name="parent_id" ref="owners_equity_section"/>
+        <field name="name">Other Reserves</field>
+        <field name="code_prefix">504</field>
+    </record>
+    <record id="undistributed_profit_loss_account_group" model="account.group">
+        <field name="parent_id" ref="owners_equity_section"/>
+        <field name="name">Undistributed Profit/Loss</field>
+        <field name="code_prefix">5999</field>
+    </record>
+    <record id="income_section" model="account.group">
+        <field name="name">Income</field>
+        <field name="code_prefix">6</field>
+    </record>
+    <record id="trade_income_account_group" model="account.group">
+        <field name="parent_id" ref="income_section"/>
+        <field name="name">Trade Income</field>
+        <field name="code_prefix">601</field>
+    </record>
+    <record id="financial_income_account_group" model="account.group">
+        <field name="parent_id" ref="income_section"/>
+        <field name="name">Financial Income</field>
+        <field name="code_prefix">602</field>
+    </record>
+    <record id="fx_gains_account_group" model="account.group">
+        <field name="parent_id" ref="financial_income_account_group"/>
+        <field name="name">Foreign Exchange Gains</field>
+        <field name="code_prefix">6020</field>
+    </record>
+    <record id="capital_expenditure_account_group" model="account.group">
+        <field name="parent_id" ref="income_section" />
+        <field name="name">Capital Expenditure</field>
+        <field name="code_prefix">603</field>
+    </record>
+    <record id="changes_in_inventories_account_group" model="account.group">
+        <field name="parent_id" ref="income_section" />
+        <field name="name">Changes in Inventories</field>
+        <field name="code_prefix">604</field>
+    </record>
+    <record id="expenses_section" model="account.group">
+        <field name="name">Expenses</field>
+        <field name="code_prefix">7</field>
+    </record>
+    <record id="cost_of_trade_income_account_group" model="account.group">
+        <field name="parent_id" ref="expenses_section"/>
+        <field name="name">Cost of Trade Income</field>
+        <field name="code_prefix">701</field>
+    </record>
+    <record id="expenses_on_trade_income_account_group" model="account.group">
+        <field name="parent_id" ref="expenses_section"/>
+        <field name="name">Expenses on Trade Income</field>
+        <field name="code_prefix">702</field>
+    </record>
+    <record id="employee_expenses_account_group" model="account.group">
+        <field name="parent_id" ref="expenses_section"/>
+        <field name="name">Employee Expenses</field>
+        <field name="code_prefix">703</field>
+    </record>
+    <record id="salary_expenses_account_group" model="account.group">
+        <field name="parent_id" ref="employee_expenses_account_group"/>
+        <field name="name">Salary Expenses</field>
+        <field name="code_prefix">7031</field>
+    </record>
+    <record id="social_security_expenses_account_group" model="account.group">
+        <field name="parent_id" ref="employee_expenses_account_group"/>
+        <field name="name">Social Security Expenses</field>
+        <field name="code_prefix">7032</field>
+    </record>
+    <record id="employee_tax_expenses_account_group" model="account.group">
+        <field name="parent_id" ref="employee_expenses_account_group"/>
+        <field name="name">Employee Tax Expenses</field>
+        <field name="code_prefix">7033</field>
+    </record>
+    <record id="expenses_account_group" model="account.group">
+        <field name="parent_id" ref="expenses_section"/>
+        <field name="name">Expenses</field>
+        <field name="code_prefix">704</field>
+    </record>
+    <record id="financial_expenses_account_group" model="account.group">
+        <field name="parent_id" ref="expenses_section"/>
+        <field name="name">Financial Expenses</field>
+        <field name="code_prefix">705</field>
+    </record>
+    <record id="fx_losses_account_group" model="account.group">
+        <field name="parent_id" ref="financial_expenses_account_group"/>
+        <field name="name">Foreign Exchange Losses</field>
+        <field name="code_prefix">7050</field>
+    </record>
+</odoo>

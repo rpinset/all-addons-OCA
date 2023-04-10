@@ -1,0 +1,10 @@
+td.o_many2one_cell {
+    .many2one_clickable {
+        margin-left: 0.5em;
+        visibility: hidden;
+    }
+
+    &:hover a.many2one_clickable {
+        visibility: visible;
+    }
+}

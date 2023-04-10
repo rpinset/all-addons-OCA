@@ -1,0 +1,357 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sql_export
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-06 02:51+0000\n"
+"PO-Revision-Date: 2021-07-13 10:07+0000\n"
+"Last-Translator: Hans Henrik Gabelgaard <hhg@gabelgaard.org>\n"
+"Language-Team: Danish (https://www.transifex.com/oca/teams/23907/da/)\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: sql_export
+#: model:ir.model,name:sql_export.model_sql_file_wizard
+msgid "Allow the user to save the file with sql request's data"
+msgstr "Tillad brugeren at gemme filen med SQL-anmodningens data"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__group_ids
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Allowed Groups"
+msgstr "Tilladte grupper"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__user_ids
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Allowed Users"
+msgstr "Tilladte brugere"
+
+#. module: sql_export
+#: selection:sql.export,file_format:0
+msgid "CSV"
+msgstr "CSV"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "Cancel"
+msgstr "Annuller"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__changeset_change_ids
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__changeset_change_ids
+msgid "Changeset Changes"
+msgstr ""
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__changeset_ids
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__changeset_ids
+msgid "Changesets"
+msgstr ""
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__copy_options
+msgid "Copy Options"
+msgstr "Kopierings muligheder"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr ""
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__count_pending_changesets
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr ""
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__create_uid
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__create_uid
+msgid "Created by"
+msgstr "Oprettet af"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__create_date
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__create_date
+msgid "Created on"
+msgstr "Oprettet den"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "Csv File"
+msgstr "CSV fil"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.date_field_variable_sql
+msgid "Date"
+msgstr "Dato"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__display_name
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__display_name
+msgid "Display Name"
+msgstr "Vist navn"
+
+#. module: sql_export
+#: selection:sql.export,state:0
+msgid "Draft"
+msgstr "Udkast"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__encoding
+msgid "Encoding"
+msgstr "Encoding"
+
+#. module: sql_export
+#: selection:sql.export,file_format:0
+msgid "Excel"
+msgstr "Excel"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_tree
+msgid "Execute Query"
+msgstr "Udfør forespørgsel"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "Export"
+msgstr "Eksport"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "Export file"
+msgstr "Eksport fil"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__binary_file
+msgid "File"
+msgstr "Fil"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__file_format
+msgid "File Format"
+msgstr "Fil format"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__file_name
+msgid "File Name"
+msgstr "Filnavn"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__id
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__id
+msgid "ID"
+msgstr "Id"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export____last_update
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard____last_update
+msgid "Last Modified on"
+msgstr "Sidst ændret den"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__write_uid
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Sidst opdateret af"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__write_date
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__write_date
+msgid "Last Updated on"
+msgstr "Sidst opdateret den"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__name
+msgid "Name"
+msgstr "Navn"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__field_ids
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Parameters"
+msgstr "Parametre"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.m2m_field_variable_sql
+msgid "Partner Categories"
+msgstr "Partner kategorier"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Preview Results"
+msgstr "Forhåndsvisning"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__query
+msgid "Query"
+msgstr "Forespørgsel"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Request Name"
+msgstr "Forespørgselsnavn"
+
+#. module: sql_export
+#: model:ir.actions.act_window,name:sql_export.sql_export_tree_action
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_tree
+msgid "SQL Export"
+msgstr "SQL Eksport"
+
+#. module: sql_export
+#: model:ir.actions.act_window,name:sql_export.sql_parameter_action
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_parameter_view_tree
+msgid "SQL Parameter"
+msgstr "SQL Parameter"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "SQL Request"
+msgstr "SQL Forespørgsel"
+
+#. module: sql_export
+#: selection:sql.export,state:0
+msgid "SQL Valid"
+msgstr "SQL Gyldig"
+
+#. module: sql_export
+#: model:ir.model,name:sql_export.model_sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_parameter_view_form
+msgid "SQL export"
+msgstr "SQL eksport"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Set to Draft"
+msgstr "Sæt til kladde"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__sql_export_id
+#: model:ir.ui.menu,name:sql_export.sql_export_menu
+#: model:ir.ui.menu,name:sql_export.sql_export_menu_view
+msgid "Sql Export"
+msgstr "Sql Eksport"
+
+#. module: sql_export
+#: model:ir.ui.menu,name:sql_export.sql_parameter_menu_view
+msgid "Sql Export Variables"
+msgstr "Sql Eksport variable"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__state
+msgid "State"
+msgstr "Delstat"
+
+#. module: sql_export
+#: model:ir.model.fields,help:sql_export.field_sql_export__state
+msgid ""
+"State of the Request:\n"
+" * 'Draft': Not tested\n"
+" * 'SQL Valid': SQL Request has been checked and is valid"
+msgstr ""
+"Forespørgslens tilstand:\n"
+" * 'Kladde': Ikke testet\n"
+"  * 'SQL Gyldig': SQL forespørgsel er kontrolleret og er gyldig"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__user_can_see_changeset
+#: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr ""
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "Validate SQL Expression"
+msgstr "Validér SQL udtryk"
+
+#. module: sql_export
+#: model:ir.model.fields,help:sql_export.field_sql_export__query
+msgid ""
+"You can't use the following words: DELETE, DROP, CREATE, INSERT, ALTER, "
+"TRUNCATE, EXECUTE, UPDATE."
+msgstr ""
+"Du kan ikke anvende følgende ord:: DELETE, DROP, CREATE, INSERT, ALTER, "
+"TRUNCATE, EXECUTE, UPDATE."
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "big5"
+msgstr "big5"
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "gb18030"
+msgstr "gb18030"
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "koir8_r"
+msgstr "koir8_r"
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "latin1"
+msgstr "latin1"
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "latin2"
+msgstr "latin2"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "or"
+msgstr "eller"
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_export_view_form
+msgid "select * from res_partner"
+msgstr ""
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "shift_jis"
+msgstr ""
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "utf-16"
+msgstr ""
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "utf-8"
+msgstr ""
+
+#. module: sql_export
+#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
+msgid "variables_placeholder"
+msgstr ""
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "windows-1251"
+msgstr ""
+
+#. module: sql_export
+#: selection:sql.export,encoding:0
+msgid "windows-1252"
+msgstr ""
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.integer_field_variable_sql
+msgid "x_ID"
+msgstr ""

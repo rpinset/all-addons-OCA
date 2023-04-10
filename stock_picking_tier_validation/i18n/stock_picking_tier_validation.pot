@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_picking_tier_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "<i class=\"fa fa-info-circle\"/>This Record needs to be validated."
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "<i class=\"fa fa-thumbs-down\"/> Operation has been <b>rejected</b> ."
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "<i class=\"fa fa-thumbs-up\"/> Operation has been <b>validated</b> !"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: code:addons/stock_picking_tier_validation/models/stock_picking.py:31
+#, python-format
+msgid "A validation process is still open for at least one record."
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_internal_search
+msgid "Needs my Review"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "Reject"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "Request Validation"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "Restart Validation"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: code:addons/stock_picking_tier_validation/models/stock_picking.py:24
+#, python-format
+msgid "This action needs to be validated for at least one record. \n"
+"Please request a validation."
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model:ir.model,name:stock_picking_tier_validation.model_tier_definition
+msgid "Tier Definition"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model:ir.model,name:stock_picking_tier_validation.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_internal_search
+msgid "Transfers to review"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_internal_search
+msgid "Transfers validated and ready to be done"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_form
+msgid "Validate"
+msgstr ""
+
+#. module: stock_picking_tier_validation
+#: model_terms:ir.ui.view,arch_db:stock_picking_tier_validation.view_picking_internal_search
+msgid "Validated"
+msgstr ""
+
