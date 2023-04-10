@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<odoo noupdate="1">
+    <record id="currency_rate_update_hr_hnb_rate_type" model="ir.config_parameter">
+        <field name="key">currency_rate_update_hr_hnb.rate_type</field>
+        <field name="value">srednji</field>
+    </record>
+
+</odoo>

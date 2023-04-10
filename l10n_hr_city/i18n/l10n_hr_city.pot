@@ -1,0 +1,4288 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_hr_city
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31205
+msgid "Aljmaš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31216
+msgid "Antunovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21246
+msgid "Aržano"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32276
+msgid "Babina Greda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20225
+msgid "Babino Polje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52445
+msgid "Baderna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34552
+msgid "Badljevina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51222
+msgid "Bakar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51261
+msgid "Bakarac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52211
+msgid "Bale (Valle)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44321
+msgid "Banova Jaruga"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32247
+msgid "Banovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32235
+msgid "Bapska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31322
+msgid "Baranjsko Petrovo Selo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52207
+msgid "Barban"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47252
+msgid "Barilović"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31306
+msgid "Batina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51523
+msgid "Baška"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21320
+msgid "Baška Voda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35254
+msgid "Bebrina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49221
+msgid "Bedekovčina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10381
+msgid "Bedenica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42253
+msgid "Bednja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34343
+msgid "Bektež"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51555
+msgid "Belej"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51559
+msgid "Beli"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31300
+msgid "Beli Manastir"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40319
+msgid "Belica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31551
+msgid "Belišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10363
+msgid "Belovar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23420
+msgid "Benkovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43232
+msgid "Berek"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10437
+msgid "Bestovje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23205
+msgid "Bibinje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31204
+msgid "Bijelo Brdo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31327
+msgid "Bilje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23210
+msgid "Biograd na moru"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31222
+msgid "Bizovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43000
+msgid "Bjelovar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20357
+msgid "Blace"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20271
+msgid "Blato"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21254
+msgid "Blato na Cetini"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44211
+msgid "Blinjski Kut"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21228
+msgid "Blizna Donja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32225
+msgid "Bobota"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21420
+msgid "Bol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52434
+msgid "Boljun"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31323
+msgid "Bolman"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32227
+msgid "Borovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47251
+msgid "Bosiljevo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32275
+msgid "Bošnjaci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23286
+msgid "Božava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31301
+msgid "Branjin Vrh"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31423
+msgid "Bračevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23285
+msgid "Brbinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10432
+msgid "Bregana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21322
+msgid "Brela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34322
+msgid "Brestovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31225
+msgid "Breznica Našička"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42225
+msgid "Breznički Hum"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10257
+msgid "Brezovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51253
+msgid "Bribir"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53260
+msgid "Brinje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51312
+msgid "Brod Moravice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51301
+msgid "Brod na Kupi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35253
+msgid "Brodski Stupnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31223
+msgid "Brođanci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51418
+msgid "Brseč"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52474
+msgid "Brtonigla (Verteneglio)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21454
+msgid "Brusje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32222
+msgid "Bršadin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31432
+msgid "Budimci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49284
+msgid "Budinšćina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52460
+msgid "Buje (Buie)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35209
+msgid "Bukovlje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43273
+msgid "Bulinac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52420
+msgid "Buzet"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10417
+msgid "Buševec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33412
+msgid "Cabuna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20210
+msgid "Cavtat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32272
+msgid "Cerna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35404
+msgid "Cernik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47241
+msgid "Cerovac Vukmanički"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52402
+msgid "Cerovlje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42208
+msgid "Cestica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47222
+msgid "Cetingrad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21256
+msgid "Cista Provo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21244
+msgid "Cista Velika"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51557
+msgid "Cres"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51260
+msgid "Crikvenica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21229
+msgid "Crivac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33507
+msgid "Crnac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51317
+msgid "Crni Lug"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31226
+msgid "Dalj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31326
+msgid "Darda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43500
+msgid "Daruvar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35425
+msgid "Davor"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40318
+msgid "Dekanovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51300
+msgid "Delnice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49216
+msgid "Desinić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43506
+msgid "Dežanovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21232
+msgid "Dicmo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20231
+msgid "Doli"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10298
+msgid "Donja Bistra"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40328
+msgid "Donja Dubrava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10412
+msgid "Donja Lomnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31513
+msgid "Donja Motičina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10294
+msgid "Donja Pušća"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49240
+msgid "Donja Stubica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42255
+msgid "Donja Višnjica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42245
+msgid "Donja Voća"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10382
+msgid "Donja Zelina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21206
+msgid "Donje Ogorje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53213
+msgid "Donje Pazarište"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35214
+msgid "Donji Andrijevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21205
+msgid "Donji Dolac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10253
+msgid "Donji Dragonožec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40320
+msgid "Donji Kraljevec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53250
+msgid "Donji Lapac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42232
+msgid "Donji Martijanec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31540
+msgid "Donji Miholjac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21203
+msgid "Donji Muć"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21264
+msgid "Donji Proložac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51522
+msgid "Draga Bašćanska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35428
+msgid "Dragalić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47201
+msgid "Draganići"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21275
+msgid "Dragljane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21328
+msgid "Drašnice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31305
+msgid "Draž"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51218
+msgid "Dražice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31418
+msgid "Drenje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32257
+msgid "Drenovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47313
+msgid "Drežnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47246
+msgid "Drežnik Grad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22324
+msgid "Drinovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51242
+msgid "Drivenik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22320
+msgid "Drniš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48322
+msgid "Drnje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21333
+msgid "Drvenik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21225
+msgid "Drvenik Veliki"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31304
+msgid "Duboševica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10418
+msgid "Dubranec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10342
+msgid "Dubrava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10293
+msgid "Dubravica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20216
+msgid "Dubravka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20000
+msgid "Dubrovnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47250
+msgid "Duga Resa"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21315
+msgid "Dugi Rat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10370
+msgid "Dugo Selo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21204
+msgid "Dugopolje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44440
+msgid "Dvor"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31206
+msgid "Erdut"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31215
+msgid "Ernestinovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10344
+msgid "Farkaševac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52212
+msgid "Fažana (Fasana)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48356
+msgid "Ferdinandovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31512
+msgid "Feričanci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52452
+msgid "Funtana (Fontane)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51322
+msgid "Fužine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32212
+msgid "Gaboš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52216
+msgid "Galižana (Gallesano)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43280
+msgid "Garešnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35212
+msgid "Garčin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31554
+msgid "Gat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21253
+msgid "Gata"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21467
+msgid "Gdinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47262
+msgid "Generalski Stol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51304
+msgid "Gerovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44400
+msgid "Glina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48331
+msgid "Gola"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22301
+msgid "Golubić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51327
+msgid "Gomirje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10453
+msgid "Gorica Svetojanska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40324
+msgid "Goričan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31422
+msgid "Gorjani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48268
+msgid "Gornja Rijeka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49245
+msgid "Gornja Stubica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35207
+msgid "Gornja Vrba"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33407
+msgid "Gornje Bazje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49233
+msgid "Gornje Jesenje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35429
+msgid "Gornji Bogićevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10255
+msgid "Gornji Stupnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53000
+msgid "Gospić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20226
+msgid "Goveđari"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21242
+msgid "Grab"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21271
+msgid "Grabovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21330
+msgid "Gradac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10345
+msgid "Gradec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33411
+msgid "Gradina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32273
+msgid "Gradište"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23440
+msgid "Gračac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52403
+msgid "Gračišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51244
+msgid "Grižane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21430
+msgid "Grohote"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52429
+msgid "Grožnjan (Grisignana)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43290
+msgid "Grubišno Polje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20215
+msgid "Gruda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43251
+msgid "Gudovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35222
+msgid "Gundinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32260
+msgid "Gunja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44203
+msgid "Gušće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44410
+msgid "Gvozd"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43284
+msgid "Hercegovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49283
+msgid "Hraščina-Trgovišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51226
+msgid "Hreljin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21233
+msgid "Hrvace"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44450
+msgid "Hrvatska Dubica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44430
+msgid "Hrvatska Kostajnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10251
+msgid "Hrvatski Leskovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49231
+msgid "Hum na Sutli"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21450
+msgid "Hvar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21329
+msgid "Igrane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32248
+msgid "Ilača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32236
+msgid "Ilok"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51552
+msgid "Ilovik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21260
+msgid "Imotski"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23293
+msgid "Ist"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42240
+msgid "Ivanec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10310
+msgid "Ivanić-Grad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10373
+msgid "Ivanja Reka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32281
+msgid "Ivankovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43231
+msgid "Ivanska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51414
+msgid "Ičići"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53287
+msgid "Jablanac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44204
+msgid "Jabukovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51264
+msgid "Jadranovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31324
+msgid "Jagodnjak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10297
+msgid "Jakovlje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34308
+msgid "Jakšić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42203
+msgid "Jalžabet"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20246
+msgid "Janjina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32280
+msgid "Jarmina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23243
+msgid "Jasenice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44324
+msgid "Jasenovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10450
+msgid "Jastrebarsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21465
+msgid "Jelsa"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21314
+msgid "Jesenice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22242
+msgid "Jezera"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53262
+msgid "Jezerane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47303
+msgid "Josipdol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31221
+msgid "Josipovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51213
+msgid "Jurdani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23272
+msgid "Kali"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48361
+msgid "Kalinovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48269
+msgid "Kalnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21262
+msgid "Kamenmost"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52352
+msgid "Kanfanar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43283
+msgid "Kaniška Iva"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43203
+msgid "Kapela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22235
+msgid "Kaprije"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34334
+msgid "Kaptol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31315
+msgid "Karanac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23452
+msgid "Karin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53288
+msgid "Karlobag"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47000
+msgid "Karlovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52423
+msgid "Karojba"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51215
+msgid "Kastav"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10362
+msgid "Kašina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21213
+msgid "Kaštel Gomilica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21214
+msgid "Kaštel Kambelovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21215
+msgid "Kaštel Lukšić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21216
+msgid "Kaštel Stari"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21212
+msgid "Kaštel Sućurac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21217
+msgid "Kaštel Štafilić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52464
+msgid "Kaštelir (Castelliere)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22310
+msgid "Kijevo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22305
+msgid "Kistanje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51217
+msgid "Klana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53212
+msgid "Klanac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49290
+msgid "Klanjec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20356
+msgid "Klek"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51252
+msgid "Klenovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42244
+msgid "Klenovnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21231
+msgid "Klis"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10312
+msgid "Kloštar Ivanić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48264
+msgid "Kloštar Vojakovački"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31309
+msgid "Kneževi Vinogradi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31302
+msgid "Kneževo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22300
+msgid "Knin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23251
+msgid "Kolan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20221
+msgid "Koločep"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10383
+msgid "Komin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20344
+msgid "Komin (Dalma)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21485
+msgid "Komiža"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32253
+msgid "Komletinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49282
+msgid "Konjščina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43505
+msgid "Končanica (Končenice)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48000
+msgid "Koprivnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53230
+msgid "Korenica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51517
+msgid "Kornić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52222
+msgid "Koromačno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20260
+msgid "Korčula"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53203
+msgid "Kosinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21207
+msgid "Kostanje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10455
+msgid "Kostanjevac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51221
+msgid "Kostrena"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40329
+msgid "Kotoriba"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31224
+msgid "Koška"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49294
+msgid "Kraljevec na Sutli"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51262
+msgid "Kraljevica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49000
+msgid "Krapina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49217
+msgid "Krapinske Toplice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44325
+msgid "Krapje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51224
+msgid "Krasica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53274
+msgid "Krasno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44213
+msgid "Kratečko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10413
+msgid "Kravarsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10454
+msgid "Krašić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53271
+msgid "Krivi Put"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21263
+msgid "Krivodol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10314
+msgid "Križ"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48260
+msgid "Križevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51241
+msgid "Križišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53261
+msgid "Križpolje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51500
+msgid "Krk"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52208
+msgid "Krnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47242
+msgid "Krnjak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52232
+msgid "Kršan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23271
+msgid "Kukljica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51227
+msgid "Kukuljanovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20341
+msgid "Kula Norinska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49295
+msgid "Kumrovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20243
+msgid "Kuna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51313
+msgid "Kupjak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10295
+msgid "Kupljenovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44320
+msgid "Kutina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34340
+msgid "Kutjevo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34311
+msgid "Kuzmica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20267
+msgid "Kućište"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21208
+msgid "Kučiće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51302
+msgid "Kuželj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52220
+msgid "Labin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52422
+msgid "Lanišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47206
+msgid "Lasinja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31214
+msgid "Laslovo (Szentlászló)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20290
+msgid "Lastovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51251
+msgid "Ledenice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48317
+msgid "Legrad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44272
+msgid "Lekenik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49224
+msgid "Lepajci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42250
+msgid "Lepoglava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31416
+msgid "Levanjska Varoš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21202
+msgid "Lećevica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34551
+msgid "Lipik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32246
+msgid "Lipovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44322
+msgid "Lipovljani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52427
+msgid "Livade (Levade)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51323
+msgid "Lič"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53201
+msgid "Lički Osik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53224
+msgid "Ličko Lešće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53233
+msgid "Ličko Petrovo Selo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52204
+msgid "Ližnjan (Lisignano)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42222
+msgid "Ljubeščica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49253
+msgid "Lobor"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21317
+msgid "Lokva Rogoznica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51316
+msgid "Lokve"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10341
+msgid "Lonjica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51281
+msgid "Lopar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40311
+msgid "Lopatinec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20222
+msgid "Lopud"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32237
+msgid "Lovas"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53244
+msgid "Lovinac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20269
+msgid "Lovište"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51415
+msgid "Lovran"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21257
+msgid "Lovreć"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22221
+msgid "Lozovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21404
+msgid "Ložišća"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42230
+msgid "Ludbreg"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31328
+msgid "Lug (Laskó)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10296
+msgid "Luka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33406
+msgid "Lukač"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23274
+msgid "Lukoran"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51328
+msgid "Lukovdol"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53289
+msgid "Lukovo Šugarje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20263
+msgid "Lumbarda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53294
+msgid "Lun"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52426
+msgid "Lupoglav"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10250
+msgid "Lučko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35257
+msgid "Lužani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40306
+msgid "Macinec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31542
+msgid "Magadenovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47286
+msgid "Mahično"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21300
+msgid "Makarska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40321
+msgid "Mala Subotica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42231
+msgid "Mali Bukovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51550
+msgid "Mali Lošinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51511
+msgid "Malinska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20224
+msgid "Maranovići"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49246
+msgid "Marija Bistrica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10299
+msgid "Marija Gorica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31555
+msgid "Marijanci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21222
+msgid "Marina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32213
+msgid "Markušica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44201
+msgid "Martinska Ves"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51556
+msgid "Martinšćica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42243
+msgid "Maruševec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52206
+msgid "Marčana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51211
+msgid "Matulji"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49251
+msgid "Mače"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52203
+msgid "Medulin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20350
+msgid "Metković"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31543
+msgid "Miholjački Poreč"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49252
+msgid "Mihovljan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33517
+msgid "Mikleuš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21405
+msgid "Milna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21318
+msgid "Mimice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20207
+msgid "Mlini"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20353
+msgid "Mlinište"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20236
+msgid "Mokošica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23292
+msgid "Molat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48327
+msgid "Molve"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52462
+msgid "Momjan (Momiano)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51325
+msgid "Moravice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52424
+msgid "Motovun (Montana)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44253
+msgid "Mošćenica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51417
+msgid "Mošćenička Draga"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21209
+msgid "Mravince"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51315
+msgid "Mrkopalj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40315
+msgid "Mursko Središče"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22243
+msgid "Murter"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43247
+msgid "Narta"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31500
+msgid "Našice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40305
+msgid "Nedelišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52231
+msgid "Nedešćina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32239
+msgid "Negoslavci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21247
+msgid "Neorić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51554
+msgid "Nerezine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21423
+msgid "Nerežišća"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47271
+msgid "Netretić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23264
+msgid "Neviđane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32245
+msgid "Nijemci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23232
+msgid "Nin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33518
+msgid "Nova Bukovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35400
+msgid "Nova Gradiška"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10343
+#: model:res.city,name:l10n_hr_city.city_hr_35410
+msgid "Nova Kapela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43272
+msgid "Nova Rača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20278
+msgid "Nova Sela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52446
+msgid "Nova Vas"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53291
+msgid "Novalja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42220
+msgid "Novi Marof"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51250
+msgid "Novi Vinodolski"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52466
+msgid "Novigrad (Cittanova)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23312
+msgid "Novigrad (Dalmacija)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10415
+msgid "Novo Čiče"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10315
+msgid "Novoselec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44330
+msgid "Novska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32221
+msgid "Nuštar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10372
+msgid "Oborovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23450
+msgid "Obrovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21241
+msgid "Obrovac Sinjski"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47300
+msgid "Ogulin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22303
+msgid "Oklaj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21223
+msgid "Okrug Gornji"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35430
+msgid "Okučani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23296
+msgid "Olib"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21310
+msgid "Omiš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51513
+msgid "Omišalj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51410
+msgid "Opatija"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32233
+msgid "Opatovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35213
+msgid "Oprisavci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52428
+msgid "Oprtalj (Portole)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20355
+msgid "Opuzen"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33515
+msgid "Orahovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20234
+msgid "Orašac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20250
+msgid "Orebić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48267
+msgid "Orehovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40322
+msgid "Orehovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35250
+msgid "Oriovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10411
+msgid "Orle"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32243
+msgid "Orolik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49243
+msgid "Oroslavje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35424
+msgid "Orubica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31000
+msgid "Osijek"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20242
+msgid "Oskorušno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32211
+msgid "Ostrovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32252
+msgid "Otok"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21238
+msgid "Otok (Dalmacija)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53220
+msgid "Otočac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20342
+msgid "Otrić Seoci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47280
+msgid "Ozalj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23250
+msgid "Pag"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23211
+msgid "Pakoštane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34550
+msgid "Pakrac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52000
+msgid "Pazin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23262
+msgid "Pašman"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22205
+msgid "Perković"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53202
+msgid "Perušić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48321
+msgid "Peteranec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31321
+msgid "Petlovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42206
+msgid "Petrijanec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31208
+msgid "Petrijevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44250
+msgid "Petrinja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32229
+msgid "Petrovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49234
+msgid "Petrovsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23231
+msgid "Petrčane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22213
+msgid "Pirovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10451
+msgid "Pisarovina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33405
+msgid "Pitomača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33533
+msgid "Pivnica Slavonska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52332
+msgid "Pićan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31417
+msgid "Piškorevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47304
+msgid "Plaški"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34310
+msgid "Pleternica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51303
+msgid "Plešce"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53231
+msgid "Plitvička Jezera"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52234
+msgid "Plomin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20340
+msgid "Ploče"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20218
+msgid "Pločice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21335
+msgid "Podaca"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35201
+msgid "Podcrkavlje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31552
+msgid "Podgajci Podravski"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21327
+msgid "Podgora"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31433
+msgid "Podgorač"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53236
+msgid "Podlapača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52333
+msgid "Podpićan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31530
+msgid "Podravska Moslavina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48363
+msgid "Podravske Sesvete"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21312
+msgid "Podstrana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40317
+msgid "Podturen"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35107
+msgid "Podvinje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21483
+msgid "Podšpilje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10414
+msgid "Pokupsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23423
+msgid "Polača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23241
+msgid "Poličnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34543
+msgid "Poljana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31303
+msgid "Popovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44317
+msgid "Popovača"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52440
+msgid "Poreč (Parenzo)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32258
+msgid "Posavski Podgajci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23242
+msgid "Posedarje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21410
+msgid "Postira"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20244
+msgid "Potomje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21413
+msgid "Povlja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23249
+msgid "Povljana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34000
+msgid "Požega"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51225
+msgid "Praputnjak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21424
+msgid "Pražnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43211
+msgid "Predavac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49218
+msgid "Pregrada"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23273
+msgid "Preko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40323
+msgid "Prelog"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23294
+msgid "Premuda"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10346
+msgid "Preseka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51307
+msgid "Prezid"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43252
+msgid "Prgomelje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21201
+msgid "Prgomet"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23226
+msgid "Pridraga"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20217
+msgid "Pridvorje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10291
+msgid "Prigorje Brdovečko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22202
+msgid "Primošten"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32251
+msgid "Privlaka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23233
+msgid "Privlaka (Dalmacija)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35216
+msgid "Prnjavor"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21323
+msgid "Promajna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22233
+msgid "Prvić Luka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22234
+msgid "Prvić Šepurine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52100
+msgid "Pula (Pola)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51521
+msgid "Punat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31424
+msgid "Punitovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20274
+msgid "Pupnat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20248
+msgid "Putniković"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21412
+msgid "Pučišća"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51280
+msgid "Rab"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52221
+msgid "Rabac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49232
+msgid "Radoboj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42242
+msgid "Radovan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32261
+msgid "Rajevo Selo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44323
+msgid "Rajić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10436
+msgid "Rakov Potok"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10347
+msgid "Rakovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47245
+msgid "Rakovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48312
+msgid "Rasinja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34315
+msgid "Ratkovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23283
+msgid "Rava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51314
+msgid "Ravna Gora"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32262
+msgid "Račinovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20264
+msgid "Račišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52223
+msgid "Raša"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23248
+msgid "Ražanac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32282
+msgid "Retkovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35403
+msgid "Rešetari"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51000
+msgid "Rijeka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21267
+msgid "Ričice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20343
+msgid "Rogotin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22203
+msgid "Rogoznica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32271
+msgid "Rokovci Andrijaševci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52210
+msgid "Rovinj (Rovigno)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43212
+msgid "Rovišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52425
+msgid "Roč"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21261
+msgid "Runović"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35208
+msgid "Ruščica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22322
+msgid "Ružić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47306
+msgid "Saborsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23281
+msgid "Sali"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10430
+msgid "Samobor"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31421
+msgid "Satnica Đakovačka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52475
+msgid "Savudrija (Salvore)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44273
+msgid "Sela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21425
+msgid "Selca"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31415
+msgid "Selci Đakovački"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40314
+msgid "Selnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31402
+msgid "Semeljci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53270
+msgid "Senj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23291
+msgid "Sestrunj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10360
+msgid "Sesvete"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34312
+msgid "Sesvete (kod Požege)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10361
+msgid "Sesvete-Kraljevec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43274
+msgid "Severin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51329
+msgid "Severin na Kupi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35252
+msgid "Sibinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35224
+msgid "Sikirevci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23295
+msgid "Silba"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21230
+msgid "Sinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43541
+msgid "Sirač"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44000
+msgid "Sisak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44010
+msgid "Sisak-Caprag"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22321
+msgid "Siverić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47212
+msgid "Skakavac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51311
+msgid "Skrad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22222
+msgid "Skradin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32242
+msgid "Slakovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20232
+msgid "Slano"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33520
+msgid "Slatina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21224
+msgid "Slatine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35000
+#: model:res.city,name:l10n_hr_city.city_hr_35105
+#: model:res.city,name:l10n_hr_city.city_hr_35106
+msgid "Slavonski Brod"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35255
+msgid "Slavonski Kobaš"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35220
+msgid "Slavonski Šamac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21272
+msgid "Slivno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47240
+msgid "Slunj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20272
+msgid "Smokvica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48306
+msgid "Sokolovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21210
+msgid "Solin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32255
+msgid "Soljani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33525
+msgid "Sopje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32232
+msgid "Sotin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21000
+msgid "Split"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42209
+msgid "Sračinec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23445
+msgid "Srb"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21292
+msgid "Srinjine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23422
+msgid "Stankovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35435
+msgid "Stara Gradiška"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21460
+msgid "Stari Grad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32241
+msgid "Stari Jankovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32284
+msgid "Stari Mikanovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23244
+msgid "Starigrad Paklenica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35420
+msgid "Staro Petrovo Selo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20345
+msgid "Staševica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21311
+msgid "Stobreč"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21432
+msgid "Stomorska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20230
+msgid "Ston"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31410
+msgid "Strizivojna"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10434
+msgid "Strmec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32256
+msgid "Strošinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21265
+msgid "Studenci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33410
+msgid "Suhopolje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23206
+msgid "Sukošan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44210
+msgid "Sunja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21400
+msgid "Supetar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51561
+msgid "Susak"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21403
+msgid "Sutivan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31308
+msgid "Suza (Csúza)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21469
+msgid "Sućuraj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40326
+msgid "Sveta Marija"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10431
+msgid "Sveta Nedelja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23207
+msgid "Sveti Filip i Jakov"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10380
+msgid "Sveti Ivan Zelina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48214
+msgid "Sveti Ivan Žabno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53284
+msgid "Sveti Juraj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49223
+msgid "Sveti Križ Začretje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52448
+msgid "Sveti Lovreč"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40313
+msgid "Sveti Martin na Muri"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10435
+msgid "Sveti Martin pod Okićem"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52404
+msgid "Sveti Petar u šumi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42233
+msgid "Sveti Đurđ"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52342
+msgid "Svetvinčenat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52465
+msgid "Tar (Torre)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31207
+msgid "Tenja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21245
+msgid "Tijarica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52444
+msgid "Tinjan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22240
+msgid "Tisno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23212
+msgid "Tkon"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20205
+msgid "Topolo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44202
+msgid "Topolovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44415
+msgid "Topusko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32214
+msgid "Tordinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47264
+msgid "Tounj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32249
+msgid "Tovarnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42254
+msgid "Trakošćan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52224
+msgid "Trget"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51243
+msgid "Tribalj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23245
+msgid "Tribanj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22212
+msgid "Tribunj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21240
+msgid "Trilj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31411
+msgid "Trnava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35211
+msgid "Trnjani"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42202
+msgid "Trnovec Bartolovečki"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43233
+msgid "Trnovitički Popovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21220
+msgid "Trogir"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20240
+msgid "Trpanj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32224
+msgid "Trpinja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20245
+msgid "Trstenik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20233
+msgid "Trsteno"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51305
+msgid "Tršće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21252
+msgid "Tugare"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49215
+msgid "Tuhelj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42204
+msgid "Turčin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21325
+msgid "Tučepi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53234
+msgid "Udbina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23275
+msgid "Ugljan"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21243
+msgid "Ugljane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43507
+msgid "Uljanik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52470
+msgid "Umag (Umago)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22323
+msgid "Unešić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51562
+msgid "Unije"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31550
+msgid "Valpovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42000
+msgid "Varaždin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42223
+msgid "Varaždinske Toplice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20270
+msgid "Vela Luka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51212
+msgid "Vele Mune"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23284
+msgid "Veli Iž"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51551
+msgid "Veli Lošinj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23287
+msgid "Veli Rat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34330
+msgid "Velika"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10410
+msgid "Velika Gorica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35221
+msgid "Velika Kopanica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44316
+msgid "Velika Ludina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10408
+msgid "Velika Mlaka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43531
+msgid "Veliki Bastaji"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43270
+msgid "Veliki Grđevac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21277
+msgid "Veliki Prolog"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43293
+msgid "Veliki Zdenci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49214
+msgid "Veliko Trgovišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43226
+msgid "Veliko Trojstvo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43282
+msgid "Veliko Vukovje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34335
+msgid "Vetovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20352
+msgid "Vid"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42205
+msgid "Vidovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31531
+msgid "Viljevo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_42207
+msgid "Vinica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21226
+msgid "Vinišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32100
+msgid "Vinkovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23234
+msgid "Vir"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48326
+msgid "Virje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33000
+msgid "Virovitica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21480
+msgid "Vis"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31401
+msgid "Viškovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51216
+msgid "Viškovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52463
+msgid "Višnjan (Visignano)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31220
+msgid "Višnjevac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52447
+msgid "Vižinada (Visinada)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31404
+msgid "Vladislavci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22211
+msgid "Vodice"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52215
+msgid "Vodnjan (Dignano)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47220
+msgid "Vojnić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_44318
+msgid "Voloder"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33522
+msgid "Voćin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32283
+msgid "Vođinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53273
+msgid "Vratnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21462
+msgid "Vrbanj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32254
+msgid "Vrbanja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35423
+msgid "Vrbje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51516
+msgid "Vrbnik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21463
+msgid "Vrboska"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35414
+msgid "Vrbova"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10340
+msgid "Vrbovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51326
+msgid "Vrbovsko"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21276
+msgid "Vrgorac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53223
+msgid "Vrhovine"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21236
+msgid "Vrlika"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35210
+msgid "Vrpolje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52450
+msgid "Vrsar (Orsera)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23235
+msgid "Vrsi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31403
+msgid "Vuka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32000
+#: model:res.city,name:l10n_hr_city.city_hr_32010
+msgid "Vukovar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10419
+msgid "Vukovina"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49210
+msgid "Zabok"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23000
+msgid "Zadar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21255
+msgid "Zadvarje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49296
+msgid "Zagorska Sela"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10000
+msgid "Zagreb"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10040
+msgid "Zagreb-Dubrava"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10020
+msgid "Zagreb-Novi Zagreb"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10010
+msgid "Zagreb-Sloboština"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10090
+msgid "Zagreb-Susedgrad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10110
+msgid "Zagreb-Trešnjevka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21270
+msgid "Zagvozd"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21334
+msgid "Zaostrog"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_35422
+msgid "Zapolje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10290
+msgid "Zaprešić"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21466
+msgid "Zastražišće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22215
+msgid "Zaton"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20235
+msgid "Zaton Veliki"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33513
+msgid "Zdenci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31227
+msgid "Zelčin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23222
+msgid "Zemunik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22232
+msgid "Zlarin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49250
+msgid "Zlatar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49247
+msgid "Zlatar Bistrica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51324
+msgid "Zlobin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31307
+msgid "Zmajevac (Vörösmart)"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21266
+msgid "Zmijavci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43202
+msgid "Zrinski Topolovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_53296
+msgid "Zubovići"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47261
+msgid "Zvečaj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51564
+msgid "Ćunski"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51306
+msgid "Čabar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_34350
+msgid "Čaglin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32238
+msgid "Čakovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40000
+msgid "Čakovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20273
+msgid "Čara"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43240
+msgid "Čazma"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33514
+msgid "Čačinci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33523
+msgid "Čađavica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31325
+msgid "Čeminac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31431
+msgid "Čepin"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52449
+msgid "Červar Porat"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20213
+msgid "Čilipi"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22214
+msgid "Čista Velika"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31553
+msgid "Črnkovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31400
+msgid "Đakovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48316
+msgid "Đelekovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32244
+msgid "Đeletovci"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43532
+msgid "Đulovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32263
+msgid "Đurići"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_49225
+msgid "Đurmanec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_31511
+msgid "Đurđenovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_48350
+msgid "Đurđevac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43227
+msgid "Šandrovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51214
+msgid "Šapjane"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32234
+msgid "Šarengrad"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_10292
+msgid "Šenkovec"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21250
+msgid "Šestanovac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22000
+msgid "Šibenik"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22030
+msgid "Šibenik-Zablaće"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51515
+msgid "Šilo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20223
+msgid "Šipanjska Luka"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22204
+msgid "Široke"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23223
+msgid "Škabrnja"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51223
+msgid "Škrljevo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_51263
+msgid "Šmrika"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_33404
+msgid "Špišić Bukovica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_43246
+msgid "Štefanje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32274
+msgid "Štitar"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_40312
+msgid "Štrigova"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_47276
+msgid "Žakanje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23263
+msgid "Ždrelac"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_22236
+msgid "Žirje"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_23282
+msgid "Žman"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_52341
+msgid "Žminj"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21251
+msgid "Žrnovnica"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20275
+msgid "Žrnovo"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_20247
+msgid "Žuljana"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_21273
+msgid "Župa"
+msgstr ""
+
+#. module: l10n_hr_city
+#: model:res.city,name:l10n_hr_city.city_hr_32270
+msgid "Županja"
+msgstr ""

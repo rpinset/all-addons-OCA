@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"l10n_hr_base_nkd_full_access","l10n_hr_base_nkd_full_access","model_l10n_hr_nkd","base.group_system","1","1","1","1"
+"l10n_hr_base_nkd_user_access","l10n_hr_base_nkd_user_access","model_l10n_hr_nkd","base.group_user","1","0","0","0"
