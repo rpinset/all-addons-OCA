@@ -1,0 +1,1 @@
+from . import report_intrastat_product_product_declaration_xls

@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * stock_split_picking
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-01 02:08+0000\n"
+"PO-Revision-Date: 2022-04-20 17:05+0000\n"
+"Last-Translator: Yves Le Doeuff <yld@alliasys.fr>\n"
+"Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.3.2\n"
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: stock_split_picking
+#: code:addons/stock_split_picking/models/stock_picking.py:0
+#, python-format
+msgid "Cannot split off all moves from picking %s"
+msgstr "Impossible de séparer tous les mouvements du BL %s"
+
+#. module: stock_split_picking
+#: code:addons/stock_split_picking/models/stock_picking.py:0
+#, python-format
+msgid "Cannot split picking %s in state %s"
+msgstr "Impossible de diviser le BL %s dans l'état %s"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Date"
+msgstr ""
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Date Expected"
+msgstr "Date demandée"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: stock_split_picking
+#: model:ir.model.fields.selection,name:stock_split_picking.selection__stock_split_picking__mode__done
+msgid "Done quantities"
+msgstr "Quantités livrées"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__id
+msgid "ID"
+msgstr ""
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking____last_update
+msgid "Last Modified on"
+msgstr "Modifié le"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__write_uid
+msgid "Last Updated by"
+msgstr "Mis à jour par"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__write_date
+msgid "Last Updated on"
+msgstr "Mis à jour le"
+
+#. module: stock_split_picking
+#: code:addons/stock_split_picking/models/stock_picking.py:0
+#, python-format
+msgid "Mark as todo this picking please."
+msgstr "Marquer ce BL à faire SVP."
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__mode
+msgid "Mode"
+msgstr ""
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__move_ids
+msgid "Move"
+msgstr "Mouvement"
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Moves"
+msgstr "Mouvements"
+
+#. module: stock_split_picking
+#: model:ir.model.fields.selection,name:stock_split_picking.selection__stock_split_picking__mode__move
+msgid "One picking per move"
+msgstr "Un BL par mouvement"
+
+#. module: stock_split_picking
+#: model:ir.model.fields,field_description:stock_split_picking.field_stock_split_picking__picking_ids
+msgid "Picking"
+msgstr "BL"
+
+#. module: stock_split_picking
+#: model:ir.model.fields.selection,name:stock_split_picking.selection__stock_split_picking__mode__selection
+msgid "Select move lines to split off"
+msgstr "Sélectionner les mouvements à extraire du BL"
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_picking_form
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Split"
+msgstr "Diviser"
+
+#. module: stock_split_picking
+#: model:ir.model,name:stock_split_picking.model_stock_split_picking
+msgid "Split a picking"
+msgstr "Diviser un BL"
+
+#. module: stock_split_picking
+#: model:ir.actions.act_window,name:stock_split_picking.action_stock_split_picking
+msgid "Split pickings"
+msgstr "Diviser des BLs"
+
+#. module: stock_split_picking
+#: code:addons/stock_split_picking/models/stock_picking.py:0
+#, python-format
+msgid ""
+"The backorder <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d"
+"\">%s</a> has been created."
+msgstr ""
+"Le reliquat <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%d\""
+">%s</a> a été créé."
+
+#. module: stock_split_picking
+#: model:ir.model,name:stock_split_picking.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "Unit of Measure"
+msgstr "Unité de mesure"
+
+#. module: stock_split_picking
+#: code:addons/stock_split_picking/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You must enter done quantity in order to split your picking in several ones."
+msgstr ""
+"Vous devez saisir la quantité livrée pour effectuer la division de votre BL "
+"en plusieurs."
+
+#. module: stock_split_picking
+#: model_terms:ir.ui.view,arch_db:stock_split_picking.view_stock_split_picking
+msgid "or"
+msgstr "ou"

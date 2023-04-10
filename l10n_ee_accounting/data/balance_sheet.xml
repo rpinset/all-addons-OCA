@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <!--
+        References:
+          - https://www.riigiteataja.ee/en/eli/516052019008/consolide Annex 1
+          - https://www.riigiteataja.ee/tolkelisa/5301/1202/1001/Lisa1.pdf#
+    -->
+    <record id="bs_bank_and_cash" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Bank and Cash</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_financial_investments" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Financial investments</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_receivables_and_prepayments" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Receivables and prepayments</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_inventories" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Inventories</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_biological" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Biological assets</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_shares" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Shares</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_investment_properties" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Investment properties</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_tangible_assets" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Tangible assets</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_intangible_assets" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Intangible assets</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_loan_liabilities" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Loan liabilities</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_payables_and_prepayments" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Payables and prepayments</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_provisions" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Provisions</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_targeted_financing" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Targeted financing</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <!--
+    <record id="bs_e_minority" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Minority holding</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+-->
+    <record id="bs_share_capital" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Share capital</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <!--
+    <record id="bs_e_share_capital_unregistered" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Unregistered share capital</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+-->
+    <record id="bs_share_premium" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Share premium</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_own_shares" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Own shares</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_legal_reserve" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Legal reserve</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="bs_other_reserves" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Other reserves</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <!--
+    <record id="bs_e_other" model="account.account.tag">
+        <field name="name">(EE) Balance sheet: Other owners' equity</field>
+        <field name="applicability">accounts</field>
+        <field name="country_id" ref="base.ee" />
+    </record>
+ -->
+</odoo>

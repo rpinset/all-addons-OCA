@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!--
+        References:
+          - https://www.riigiteataja.ee/en/eli/516052019008/consolide Annex 2
+          - https://www.riigiteataja.ee/tolkelisa/5301/1202/1001/Lisa2.pdf#
+    -->
+
+    <!-- Layout 1 -->
+
+    <record id="is_l1_style" model="mis.report.style">
+        <field name="name">(EE) Income Statement (P&amp;L) Layout 1</field>
+        <field name="dp_inherit" eval="0" />
+        <field name="dp">2</field>
+    </record>
+
+    <record id="is_l1" model="mis.report">
+        <field name="name">(EE) Income Statement (P&amp;L) Layout 1</field>
+        <field name="style_id" ref="is_l1_style" />
+    </record>
+
+    <record id="is_l1_account_style" model="mis.report.style">
+      <field name="name">(EE) Income Statement (P&amp;L) Layout 1: Account</field>
+      <field name="indent_level_inherit" eval="0" />
+      <field name="indent_level">1</field>
+      <field name="font_style_inherit" eval="0" />
+      <field name="font_style">italic</field>
+      <field name="font_size_inherit" eval="0" />
+      <field name="font_size">small</field>
+    </record>
+
+    <record id="is_l1_sales_revenue_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Sales revenue</field>
+    </record>
+
+    <record id="is_l1_sales_revenue_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">10</field>
+        <field name="name">sales_revenue</field>
+        <field name="description">Sales revenue</field>
+        <field name="style_id" ref="is_l1_sales_revenue_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_trade_income').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_other_revenue_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Other operating revenue</field>
+    </record>
+
+    <record id="is_l1_other_revenue_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">20</field>
+        <field name="name">other_revenue</field>
+        <field name="description">Other operating revenue</field>
+        <field name="style_id" ref="is_l1_other_revenue_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_revenue').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <!--
+    TODO: Change in stocks of agricultural produce 30
+    -->
+
+    <record id="is_l1_profit_loss_on_biological_assets_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Profit (loss) on biological assets</field>
+    </record>
+
+    <record id="is_l1_profit_loss_on_biological_assets_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">40</field>
+        <field name="name">pl_biological_assets</field>
+        <field name="description">Profit (loss) on biological assets</field>
+        <field name="style_id" ref="is_l1_profit_loss_on_biological_assets_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_biological_assets').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_changes_in_inventories_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Changes in inventories of finished goods and work in progress</field>
+    </record>
+
+    <record id="is_l1_changes_in_inventories_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">50</field>
+        <field name="name">changes_in_inventories</field>
+        <field
+            name="description"
+        >Changes in inventories of finished goods and work in progress</field>
+        <field name="style_id" ref="is_l1_changes_in_inventories_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l1_changes_in_inventories').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_capital_expenditure_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Capitalised expenditure when manufacturing fixed assets for own purposes</field>
+    </record>
+
+    <record id="is_l1_capital_expenditure_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">60</field>
+        <field name="name">capital_expenditure</field>
+        <field
+            name="description"
+        >Capitalised expenditure when manufacturing fixed assets for own purposes</field>
+        <field name="style_id" ref="is_l1_capital_expenditure_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l1_capital_expenditure').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_goods_raw_materials_services_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Goods, raw materials and services</field>
+    </record>
+
+    <record id="is_l1_goods_raw_materials_services_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">70</field>
+        <field name="name">goods_raw_materials_services</field>
+        <field name="description">Goods, raw materials and services</field>
+        <field name="style_id" ref="is_l1_goods_raw_materials_services_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_trade_cost').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_misc_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Miscellaneous operating expenses</field>
+    </record>
+
+    <record id="is_l1_misc_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">80</field>
+        <field name="name">misc_expenses</field>
+        <field name="description">Miscellaneous operating expenses</field>
+        <field name="style_id" ref="is_l1_misc_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l1_misc_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_employee_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Employee expenses</field>
+    </record>
+
+    <record id="is_l1_employee_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">90</field>
+        <field name="name">employee_expenses</field>
+        <field name="description">Employee expenses</field>
+        <field name="style_id" ref="is_l1_employee_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l1_employee_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_depreciation_and_impairment_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Depreciation and impairment of fixed assets</field>
+    </record>
+
+    <record id="is_l1_depreciation_and_impairment_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">100</field>
+        <field name="name">depreciation_and_impairment</field>
+        <field name="description">Depreciation and impairment of fixed assets</field>
+        <field name="style_id" ref="is_l1_depreciation_and_impairment_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp['|', ('user_type_id', '=', ref('account.data_account_type_depreciation').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.is_l1_depreciation_and_impairment').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <!--
+    TODO: Significant rebates of current assets 110
+     -->
+
+    <record id="is_l1_other_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Other operating charges</field>
+    </record>
+
+    <record id="is_l1_other_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">120</field>
+        <field name="name">other_expenses</field>
+        <field name="description">Other operating charges</field>
+        <field name="style_id" ref="is_l1_other_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_total_operating_profit_loss_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Total operating profit (loss)</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l1_total_operating_profit_loss_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">130</field>
+        <field name="name">pl_operating</field>
+        <field name="description">Total operating profit (loss)</field>
+        <field name="style_id" ref="is_l1_total_operating_profit_loss_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >sales_revenue + other_revenue + pl_biological_assets + changes_in_inventories + capital_expenditure + goods_raw_materials_services + misc_expenses + employee_expenses + depreciation_and_impairment + other_expenses</field>
+    </record>
+
+    <record id="is_l1_profit_loss_from_subsidiaries_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Profit (loss) from subsidiaries</field>
+    </record>
+
+    <record id="is_l1_profit_loss_from_subsidiaries_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">140</field>
+        <field name="name">pl_subsidiaries</field>
+        <field name="description">Profit (loss) from subsidiaries</field>
+        <field name="style_id" ref="is_l1_profit_loss_from_subsidiaries_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_subsidiaries').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record
+        id="is_l1_profit_loss_from_affiliated_undertakings_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Profit (loss) from affiliated undertakings</field>
+    </record>
+
+    <record
+        id="is_l1_profit_loss_from_affiliated_undertakings_field"
+        model="mis.report.kpi"
+    >
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">150</field>
+        <field name="name">pl_affiliated_undertakings</field>
+        <field name="description">Profit (loss) from affiliated undertakings</field>
+        <field
+            name="style_id"
+            ref="is_l1_profit_loss_from_affiliated_undertakings_style"
+        />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_affiliated_undertakings').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record
+        id="is_l1_profit_loss_from_financial_investments_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Profit (loss) from financial investments</field>
+    </record>
+
+    <record
+        id="is_l1_profit_loss_from_financial_investments_field"
+        model="mis.report.kpi"
+    >
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">160</field>
+        <field name="name">pl_financial_investments</field>
+        <field name="description">Profit (loss) from financial investments</field>
+        <field
+            name="style_id"
+            ref="is_l1_profit_loss_from_financial_investments_style"
+        />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_financial_investments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_interest_income_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Interest income</field>
+    </record>
+
+    <record id="is_l1_interest_income_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">170</field>
+        <field name="name">interest_income</field>
+        <field name="description">Interest income</field>
+        <field name="style_id" ref="is_l1_interest_income_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_interest_income').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_interest_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Interest expenses</field>
+    </record>
+
+    <record id="is_l1_interest_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">180</field>
+        <field name="name">interest_expenses</field>
+        <field name="description">Interest expenses</field>
+        <field name="style_id" ref="is_l1_interest_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_interest_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record
+        id="is_l1_other_financial_income_and_expenses_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Other financial income and expenses</field>
+    </record>
+
+    <record id="is_l1_other_financial_income_and_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">190</field>
+        <field name="name">other_financial_operations</field>
+        <field name="description">Other financial income and expenses</field>
+        <field name="style_id" ref="is_l1_other_financial_income_and_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp['|', ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_financial_income').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_financial_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_profit_loss_before_income_tax_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Profit (loss) before income tax</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l1_profit_loss_before_income_tax_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">200</field>
+        <field name="name">pl_before_income_tax</field>
+        <field name="description">Profit (loss) before income tax</field>
+        <field name="style_id" ref="is_l1_profit_loss_before_income_tax_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >pl_operating + pl_subsidiaries + pl_affiliated_undertakings + pl_financial_investments + interest_income + interest_expenses + other_financial_operations</field>
+    </record>
+
+    <record id="is_l1_income_tax_expense_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Income tax expense</field>
+    </record>
+
+    <record id="is_l1_income_tax_expense_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">210</field>
+        <field name="name">income_tax_expense</field>
+        <field name="description">Income tax expense</field>
+        <field name="style_id" ref="is_l1_income_tax_expense_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_income_tax_expense').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l1_account_style" />
+    </record>
+
+    <record id="is_l1_net_profit_loss_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 1: Net profit (loss)</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l1_net_profit_loss_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l1" />
+        <field name="sequence">220</field>
+        <field name="name">pl_net</field>
+        <field name="description">Net profit (loss)</field>
+        <field name="style_id" ref="is_l1_net_profit_loss_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">pl_before_income_tax + income_tax_expense</field>
+    </record>
+
+    <!-- Layout 2 -->
+
+    <record id="is_l2_style" model="mis.report.style">
+        <field name="name">(EE) Income Statement (P&amp;L) Layout 2</field>
+        <field name="dp_inherit" eval="0" />
+        <field name="dp">2</field>
+    </record>
+
+    <record id="is_l2" model="mis.report">
+        <field name="name">(EE) Income Statement (P&amp;L) Layout 2</field>
+        <field name="style_id" ref="is_l2_style" />
+    </record>
+
+    <record id="is_l2_account_style" model="mis.report.style">
+      <field name="name">(EE) Income Statement (P&amp;L) Layout 2: Account</field>
+      <field name="indent_level_inherit" eval="0" />
+      <field name="indent_level">1</field>
+      <field name="font_style_inherit" eval="0" />
+      <field name="font_style">italic</field>
+      <field name="font_size_inherit" eval="0" />
+      <field name="font_size">small</field>
+    </record>
+
+    <record id="is_l2_sales_revenue_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Sales revenue</field>
+    </record>
+
+    <record id="is_l2_sales_revenue_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">10</field>
+        <field name="name">sales_revenue</field>
+        <field name="description">Sales revenue</field>
+        <field name="style_id" ref="is_l2_sales_revenue_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_trade_income').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_cost_of_sales_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Cost of sales</field>
+    </record>
+
+    <record id="is_l2_cost_of_sales_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">20</field>
+        <field name="name">cost_of_sales</field>
+        <field name="description">Cost of sales</field>
+        <field name="style_id" ref="is_l2_cost_of_sales_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_trade_cost').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_gross_profit_loss_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Gross profit (loss)</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l2_gross_profit_loss_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">30</field>
+        <field name="name">pl_gross</field>
+        <field name="description">Gross profit (loss)</field>
+        <field name="style_id" ref="is_l2_gross_profit_loss_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">sales_revenue + cost_of_sales</field>
+    </record>
+
+    <record id="is_l2_profit_loss_on_biological_assets_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Profit (loss) on biological assets</field>
+    </record>
+
+    <record id="is_l2_profit_loss_on_biological_assets_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">40</field>
+        <field name="name">pl_biological_assets</field>
+        <field name="description">Profit (loss) on biological assets</field>
+        <field name="style_id" ref="is_l2_profit_loss_on_biological_assets_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_biological_assets').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_marketing_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Marketing expenses</field>
+    </record>
+
+    <record id="is_l2_marketing_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">50</field>
+        <field name="name">marketing_expenses</field>
+        <field name="description">Marketing expenses</field>
+        <field name="style_id" ref="is_l2_marketing_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l2_marketing_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record
+        id="is_l2_administrative_and_general_expenses_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Administrative and general expenses</field>
+    </record>
+
+    <record id="is_l2_administrative_and_general_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">60</field>
+        <field name="name">administrative_and_general_expenses</field>
+        <field name="description">Administrative and general expenses</field>
+        <field name="style_id" ref="is_l2_administrative_and_general_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_l2_administrative_and_general_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_other_revenue_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Other operating revenue</field>
+    </record>
+
+    <record id="is_l2_other_revenue_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">70</field>
+        <field name="name">other_revenue</field>
+        <field name="description">Other operating revenue</field>
+        <field name="style_id" ref="is_l2_other_revenue_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp['|', ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_revenue').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.is_l2_other_revenue').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_other_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Other operating charges</field>
+    </record>
+
+    <record id="is_l2_other_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">80</field>
+        <field name="name">other_expenses</field>
+        <field name="description">Other operating charges</field>
+        <field name="style_id" ref="is_l2_other_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp['|', ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_expenses').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.is_l2_other_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_total_operating_profit_loss_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Total operating profit (loss)</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l2_total_operating_profit_loss_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">90</field>
+        <field name="name">pl_operating</field>
+        <field name="description">Total operating profit (loss)</field>
+        <field name="style_id" ref="is_l2_total_operating_profit_loss_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >pl_gross + pl_biological_assets + marketing_expenses + administrative_and_general_expenses + other_revenue + other_expenses</field>
+    </record>
+
+    <record id="is_l2_profit_loss_from_subsidiaries_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Profit (loss) from subsidiaries</field>
+    </record>
+
+    <record id="is_l2_profit_loss_from_subsidiaries_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">100</field>
+        <field name="name">pl_subsidiaries</field>
+        <field name="description">Profit (loss) from subsidiaries</field>
+        <field name="style_id" ref="is_l2_profit_loss_from_subsidiaries_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_subsidiaries').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record
+        id="is_l2_profit_loss_from_affiliated_undertakings_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Profit (loss) from affiliated undertakings</field>
+    </record>
+
+    <record
+        id="is_l2_profit_loss_from_affiliated_undertakings_field"
+        model="mis.report.kpi"
+    >
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">110</field>
+        <field name="name">pl_affiliated_undertakings</field>
+        <field name="description">Profit (loss) from affiliated undertakings</field>
+        <field
+            name="style_id"
+            ref="is_l2_profit_loss_from_affiliated_undertakings_style"
+        />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_affiliated_undertakings').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record
+        id="is_l2_profit_loss_from_financial_investments_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Profit (loss) from financial investments</field>
+    </record>
+
+    <record
+        id="is_l2_profit_loss_from_financial_investments_field"
+        model="mis.report.kpi"
+    >
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">120</field>
+        <field name="name">pl_financial_investments</field>
+        <field name="description">Profit (loss) from financial investments</field>
+        <field
+            name="style_id"
+            ref="is_l2_profit_loss_from_financial_investments_style"
+        />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_pl_financial_investments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_interest_income_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Interest income</field>
+    </record>
+
+    <record id="is_l2_interest_income_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">130</field>
+        <field name="name">interest_income</field>
+        <field name="description">Interest income</field>
+        <field name="style_id" ref="is_l2_interest_income_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_interest_income').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_interest_expenses_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Interest expenses</field>
+    </record>
+
+    <record id="is_l2_interest_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">140</field>
+        <field name="name">interest_expenses</field>
+        <field name="description">Interest expenses</field>
+        <field name="style_id" ref="is_l2_interest_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_interest_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record
+        id="is_l2_other_financial_income_and_expenses_style"
+        model="mis.report.style"
+    >
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Other financial income and expenses</field>
+    </record>
+
+    <record id="is_l2_other_financial_income_and_expenses_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">150</field>
+        <field name="name">other_financial_operations</field>
+        <field name="description">Other financial income and expenses</field>
+        <field name="style_id" ref="is_l2_other_financial_income_and_expenses_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp['|', ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_financial_income').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.is_other_financial_expenses').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_profit_loss_before_income_tax_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Profit (loss) before income tax</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l2_profit_loss_before_income_tax_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">160</field>
+        <field name="name">pl_before_income_tax</field>
+        <field name="description">Profit (loss) before income tax</field>
+        <field name="style_id" ref="is_l2_profit_loss_before_income_tax_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >pl_operating + pl_subsidiaries + pl_affiliated_undertakings + pl_financial_investments + interest_income + interest_expenses + other_financial_operations</field>
+    </record>
+
+    <record id="is_l2_income_tax_expense_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Income tax expense</field>
+    </record>
+
+    <record id="is_l2_income_tax_expense_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">170</field>
+        <field name="name">income_tax_expense</field>
+        <field name="description">Income tax expense</field>
+        <field name="style_id" ref="is_l2_income_tax_expense_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('tag_ids.id', '=', ref('l10n_ee_accounting.is_income_tax_expense').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="is_l2_account_style" />
+    </record>
+
+    <record id="is_l2_net_profit_loss_style" model="mis.report.style">
+        <field
+            name="name"
+        >(EE) Income Statement (P&amp;L) Layout 2: Net profit (loss)</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="is_l2_net_profit_loss_field" model="mis.report.kpi">
+        <field name="report_id" ref="is_l2" />
+        <field name="sequence">180</field>
+        <field name="name">pl_net</field>
+        <field name="description">Net profit (loss)</field>
+        <field name="style_id" ref="is_l2_net_profit_loss_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">pl_before_income_tax + income_tax_expense</field>
+    </record>
+
+</odoo>

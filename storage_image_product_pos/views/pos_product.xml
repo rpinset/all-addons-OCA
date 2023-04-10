@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2014-Today Akretion (https://www.akretion.com)
+     @author Pierrick Brun
+     @author Sebastien Beau
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <!-- Add: JS Files -->
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script
+                type="text/javascript"
+                src="/storage_image_product_pos/static/src/js/models.js"
+            />
+            <script
+                type="text/javascript"
+                src="/storage_image_product_pos/static/src/js/ProductItem.js"
+            />
+            <script
+                type="text/javascript"
+                src="/storage_image_product_pos/static/src/js/Chrome.js"
+            />
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,195 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mass_mailing_list_dynamic
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-26 01:46+0000\n"
+"PO-Revision-Date: 2022-11-25 11:44+0000\n"
+"Last-Translator: Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>\n"
+"Language-Team: Finnish (https://www.transifex.com/oca/teams/23907/fi/)\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+#. module: mass_mailing_list_dynamic
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.mailing_list_view_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/> If you want to remove contacts from a "
+"dynamic list, just <b>set them as <i>Opt Out</i></b>."
+msgstr ""
+"<i class=\"fa fa-info-circle\"/> Jos haluat poistaa kontakteja dynaamisesta "
+"listasta, <b>merkkaa heille <i>Opt Out</i></b>."
+
+#. module: mass_mailing_list_dynamic
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.mailing_list_view_form
+msgid ""
+"<i class=\"fa fa-info-circle\"/> You cannot make manual editions of contacts "
+"in fully synchronized lists."
+msgstr ""
+"<i class=\"fa fa-info-circle\"/> Et voi muokata synkronoitua dynaamista "
+"listaa käsin."
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields.selection,name:mass_mailing_list_dynamic.selection__mailing_list__sync_method__full
+msgid "Add and remove records as needed"
+msgstr "Lisää ja poista tietueita tarvittaessa"
+
+#. module: mass_mailing_list_dynamic
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.view_mailing_load_filter_form
+msgid "Cancel"
+msgstr "Peru"
+
+#. module: mass_mailing_list_dynamic
+#: code:addons/mass_mailing_list_dynamic/models/mailing_contact.py:0
+#, python-format
+msgid ""
+"Cannot edit manually contacts in a fully synchronized list. Change its sync "
+"method or execute a manual sync instead."
+msgstr ""
+"Et voi muokata synkronoidun listan kontakteja käsin. Muuta synkronointitapaa "
+"tai tee synkronointi käsin."
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,help:mass_mailing_list_dynamic.field_mailing_list__sync_method
+msgid ""
+"Choose the syncronization method for this list if you want to make it dynamic"
+msgstr "Jos haluat tästä listasta dynaamisen, valitse sille synkronointitapa"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_res_partner
+msgid "Contact"
+msgstr "Kontakti"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__create_uid
+msgid "Created by"
+msgstr "Luonut"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__create_date
+msgid "Created on"
+msgstr "Luotu"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_list__dynamic
+msgid "Dynamic"
+msgstr "Dynaaminen"
+
+#. module: mass_mailing_list_dynamic
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.mailing_list_view_form
+msgid "Dynamic list"
+msgstr "Dynaaminen lista"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,help:mass_mailing_list_dynamic.field_mailing_list__sync_domain
+msgid "Filter partners to sync in this list"
+msgstr "Suodata kumppaneita tähän listaan"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__filter_id
+msgid "Filter to load"
+msgstr "Ladattava suodin"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,help:mass_mailing_list_dynamic.field_mailing_list__is_synced
+msgid "Helper field to make the user aware of unsynced changes"
+msgstr "Apukenttä, joka helpottaa synkronoimattomien muutosten tunnistamisessa"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_list__is_synced
+msgid "Is Synced"
+msgstr "On synkronoitu"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter____last_update
+msgid "Last Modified on"
+msgstr "Viimeksi muokattu"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__write_uid
+msgid "Last Updated by"
+msgstr "Viimeksi päivittänyt"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_load_filter__write_date
+msgid "Last Updated on"
+msgstr "Viimeksi päivitetty"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.actions.act_window,name:mass_mailing_list_dynamic.action_mailing_load_filter
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.mailing_list_view_form
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.view_mailing_load_filter_form
+msgid "Load filter"
+msgstr "Lataa suodin"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_mailing_contact
+msgid "Mailing Contact"
+msgstr "Postituksen kumppani"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_mailing_list
+msgid "Mailing List"
+msgstr "Postituslista"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_mailing_mailing
+msgid "Mass Mailing"
+msgstr "Massapostitus"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_mailing_load_filter
+msgid "Mass Mailing Load Filter"
+msgstr "Lataa massapostituksen suodin"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model,name:mass_mailing_list_dynamic.model_base_partner_merge_automatic_wizard
+msgid "Merge Partner Wizard"
+msgstr "Ohjattu kumppanien yhdistäminen"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields.selection,name:mass_mailing_list_dynamic.selection__mailing_list__sync_method__add
+msgid "Only add new records"
+msgstr "Lisää vain uudet tietueet"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,help:mass_mailing_list_dynamic.field_mailing_list__dynamic
+msgid ""
+"Set this list as dynamic, to make it autosynchronized with partners from a "
+"given criteria."
+msgstr ""
+"Aseta postituslista dynaamiseksi synkronoidaksesi kumppaneita "
+"automaattisesti listaan."
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_list__sync_method
+msgid "Sync Method"
+msgstr "Synkronointitapa"
+
+#. module: mass_mailing_list_dynamic
+#: model_terms:ir.ui.view,arch_db:mass_mailing_list_dynamic.mailing_list_view_form
+msgid "Sync now"
+msgstr "Synkronoi nyt"
+
+#. module: mass_mailing_list_dynamic
+#: model:ir.model.fields,field_description:mass_mailing_list_dynamic.field_mailing_list__sync_domain
+msgid "Synchronization critera"
+msgstr "Synkronointikriteerit"

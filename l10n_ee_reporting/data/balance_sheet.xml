@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <!--
+        References:
+          - https://www.riigiteataja.ee/en/eli/516052019008/consolide Annex 1
+          - https://www.riigiteataja.ee/tolkelisa/5301/1202/1001/Lisa1.pdf#
+    -->
+
+    <record id="bs_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet</field>
+        <field name="dp_inherit" eval="0" />
+        <field name="dp">2</field>
+    </record>
+
+    <record id="bs" model="mis.report">
+        <field name="name">(EE) Balance Sheet</field>
+        <field name="style_id" ref="bs_style" />
+    </record>
+
+    <record id="bs_account_i3_style" model="mis.report.style">
+      <field name="name">(EE) Balance Sheet: Account (indent 3)</field>
+      <field name="indent_level_inherit" eval="0" />
+      <field name="indent_level">3</field>
+      <field name="font_style_inherit" eval="0" />
+      <field name="font_style">italic</field>
+      <field name="font_size_inherit" eval="0" />
+      <field name="font_size">small</field>
+    </record>
+
+    <record id="bs_account_i4_style" model="mis.report.style">
+      <field name="name">(EE) Balance Sheet: Account (indent 4)</field>
+      <field name="indent_level_inherit" eval="0" />
+      <field name="indent_level">4</field>
+      <field name="font_style_inherit" eval="0" />
+      <field name="font_style">italic</field>
+      <field name="font_size_inherit" eval="0" />
+      <field name="font_size">small</field>
+    </record>
+
+    <record id="bs_ca_bank_and_cash_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Bank and Cash</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_ca_bank_and_cash_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1110</field>
+        <field name="name">ca_bank_and_cash</field>
+        <field name="description">Bank and Cash</field>
+        <field name="style_id" ref="bs_ca_bank_and_cash_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_liquidity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_bank_and_cash').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_ca_financial_investments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CA) Financial investments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_ca_financial_investments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1120</field>
+        <field name="name">ca_financial_investments</field>
+        <field name="description">Financial investments</field>
+        <field name="style_id" ref="bs_ca_financial_investments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['user_type_id', '=', ref('account.data_account_type_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_financial_investments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_ca_receivables_and_prepayments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CA) Receivables and prepayments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_ca_receivables_and_prepayments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1130</field>
+        <field name="name">ca_receivables_and_prepayments</field>
+        <field name="description">Receivables and prepayments</field>
+        <field name="style_id" ref="bs_ca_receivables_and_prepayments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_receivable').id), '&amp;', '|', ('user_type_id', '=', ref('account.data_account_type_current_assets').id), ('user_type_id', '=', ref('account.data_account_type_prepayments').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_receivables_and_prepayments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_ca_inventories_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CA) Inventories</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_ca_inventories_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1140</field>
+        <field name="name">ca_inventories</field>
+        <field name="description">Inventories</field>
+        <field name="style_id" ref="bs_ca_inventories_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale[('user_type_id', '=', ref('account.data_account_type_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_inventories').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_ca_biological_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CA) Biological assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_ca_biological_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1150</field>
+        <field name="name">ca_biological</field>
+        <field name="description">Biological assets</field>
+        <field name="style_id" ref="bs_ca_biological_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale[('user_type_id', '=', ref('account.data_account_type_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_biological').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_current_assets_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Current Assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_current_assets_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1100</field>
+        <field name="name">current_assets</field>
+        <field name="description">Current Assets</field>
+        <field name="style_id" ref="bs_current_assets_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >ca_bank_and_cash + ca_financial_investments + ca_receivables_and_prepayments + ca_inventories + ca_biological</field>
+    </record>
+
+    <record id="bs_fa_shares_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Shares</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_shares_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1210</field>
+        <field name="name">fa_shares</field>
+        <field
+            name="description"
+        >Investments in subsidiaries and affiliated undertakings</field>
+        <field name="style_id" ref="bs_fa_shares_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_shares').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_financial_investments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Financial investments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_financial_investments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1220</field>
+        <field name="name">fa_financial_investments</field>
+        <field name="description">Financial investments</field>
+        <field name="style_id" ref="bs_fa_financial_investments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_financial_investments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_receivables_and_prepayments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Receivables and prepayments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_receivables_and_prepayments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1230</field>
+        <field name="name">fa_receivables_and_prepayments</field>
+        <field name="description">Receivables and prepayments</field>
+        <field name="style_id" ref="bs_fa_receivables_and_prepayments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_receivables_and_prepayments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_investment_properties_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Investment properties</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_investment_properties_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1240</field>
+        <field name="name">fa_investment_properties</field>
+        <field name="description">Investment properties</field>
+        <field name="style_id" ref="bs_fa_investment_properties_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_investment_properties').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_tangible_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Tangible assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_tangible_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1250</field>
+        <field name="name">fa_tangible</field>
+        <field name="description">Tangible assets</field>
+        <field name="style_id" ref="bs_fa_tangible_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_tangible_assets').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_biological_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Biological assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_biological_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1260</field>
+        <field name="name">fa_biological</field>
+        <field name="description">Biological assets</field>
+        <field name="style_id" ref="bs_fa_biological_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_biological').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fa_intangible_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (FA) Intangible assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_fa_intangible_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1270</field>
+        <field name="name">fa_intangible</field>
+        <field name="description">Intangible assets</field>
+        <field name="style_id" ref="bs_fa_intangible_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >bale['|', ('user_type_id', '=', ref('account.data_account_type_fixed_assets').id), ('user_type_id', '=', ref('account.data_account_type_non_current_assets').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_intangible_assets').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_fixed_assets_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Fixed Assets</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_fixed_assets_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1200</field>
+        <field name="name">fixed_assets</field>
+        <field name="description">Fixed Assets</field>
+        <field name="style_id" ref="bs_fixed_assets_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >fa_shares + fa_financial_investments + fa_receivables_and_prepayments + fa_investment_properties + fa_tangible + fa_biological + fa_intangible</field>
+    </record>
+
+    <record id="bs_assets_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Assets</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_assets_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">1000</field>
+        <field name="name">assets</field>
+        <field name="description">Assets</field>
+        <field name="style_id" ref="bs_assets_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">current_assets + fixed_assets</field>
+    </record>
+
+    <record id="bs_cl_loan_liabilities_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CL) Loan liabilities</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_cl_loan_liabilities_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2111</field>
+        <field name="name">cl_loan_liabilities</field>
+        <field name="description">Loan liabilities</field>
+        <field name="style_id" ref="bs_cl_loan_liabilities_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_loan_liabilities').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_cl_payables_and_prepayments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CL) Payables and prepayments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_cl_payables_and_prepayments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2112</field>
+        <field name="name">cl_pnp</field>
+        <field name="description">Payables and prepayments</field>
+        <field name="style_id" ref="bs_cl_payables_and_prepayments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale['|', ('user_type_id', '=', ref('account.data_account_type_payable').id), '&amp;', ('user_type_id', '=', ref('account.data_account_type_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_payables_and_prepayments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_cl_provisions_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CL) Provisions</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_cl_provisions_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2113</field>
+        <field name="name">cl_provisions</field>
+        <field name="description">Provisions</field>
+        <field name="style_id" ref="bs_cl_provisions_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_provisions').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_cl_targeted_financing_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (CL) Targeted financing</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_cl_targeted_financing_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2114</field>
+        <field name="name">cl_targeted_financing</field>
+        <field name="description">Targeted financing</field>
+        <field name="style_id" ref="bs_cl_targeted_financing_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_targeted_financing').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_current_liabilities_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Current Liabilities</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_current_liabilities_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2110</field>
+        <field name="name">current_liabilities</field>
+        <field name="description">Current Liabilities</field>
+        <field name="style_id" ref="bs_current_liabilities_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >cl_loan_liabilities + cl_pnp + cl_provisions + cl_targeted_financing</field>
+    </record>
+
+    <record id="bs_ncl_loan_liabilities_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (NCL) Loan liabilities</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_ncl_loan_liabilities_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2121</field>
+        <field name="name">ncl_loan_liabilities</field>
+        <field name="description">Loan liabilities</field>
+        <field name="style_id" ref="bs_ncl_loan_liabilities_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_non_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_loan_liabilities').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_ncl_payables_and_prepayments_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (NCL) Payables and prepayments</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_ncl_payables_and_prepayments_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2122</field>
+        <field name="name">ncl_pnp</field>
+        <field name="description">Payables and prepayments</field>
+        <field name="style_id" ref="bs_ncl_payables_and_prepayments_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_non_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_payables_and_prepayments').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_ncl_provisions_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (NCL) Provisions</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_ncl_provisions_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2123</field>
+        <field name="name">ncl_provisions</field>
+        <field name="description">Provisions</field>
+        <field name="style_id" ref="bs_ncl_provisions_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_non_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_provisions').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_ncl_targeted_financing_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: (NCL) Targeted financing</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">3</field>
+    </record>
+
+    <record id="bs_ncl_targeted_financing_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2124</field>
+        <field name="name">ncl_targeted_financing</field>
+        <field name="description">Targeted financing</field>
+        <field name="style_id" ref="bs_ncl_targeted_financing_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_non_current_liabilities').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_targeted_financing').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i4_style" />
+    </record>
+
+    <record id="bs_non_current_liabilities_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Non-Current Liabilities</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_non_current_liabilities_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2120</field>
+        <field name="name">non_current_liabilities</field>
+        <field name="description">Non-Current Liabilities</field>
+        <field name="style_id" ref="bs_non_current_liabilities_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >ncl_loan_liabilities + ncl_pnp + ncl_provisions + ncl_targeted_financing</field>
+    </record>
+
+    <record id="bs_liabilities_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Liabilities</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_liabilities_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2100</field>
+        <field name="name">liabilities</field>
+        <field name="description">Liabilities</field>
+        <field name="style_id" ref="bs_liabilities_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">current_liabilities + non_current_liabilities</field>
+    </record>
+
+    <record id="bs_share_capital_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Issued share capital</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_share_capital_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2211</field>
+        <field name="name">share_capital</field>
+        <field name="description">Share capital</field>
+        <field name="style_id" ref="bs_share_capital_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_equity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_share_capital').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <record id="bs_share_premium_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Share premium</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_share_premium_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2212</field>
+        <field name="name">share_premium</field>
+        <field name="description">Share premium</field>
+        <field name="style_id" ref="bs_share_premium_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_equity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_share_premium').id)]</field>
+    </record>
+
+    <record id="bs_own_shares_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Own shares</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_own_shares_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2213</field>
+        <field name="name">own_shares</field>
+        <field name="description">Own shares</field>
+        <field name="style_id" ref="bs_own_shares_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_equity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_own_shares').id)]</field>
+    </record>
+
+    <record id="bs_legal_reserve_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Legal reserve</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_legal_reserve_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2214</field>
+        <field name="name">legal_reserve</field>
+        <field name="description">Legal reserve</field>
+        <field name="style_id" ref="bs_legal_reserve_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_equity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_legal_reserve').id)]</field>
+    </record>
+
+    <record id="bs_other_reserves_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Other reserves</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_other_reserves_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2215</field>
+        <field name="name">other_reserves</field>
+        <field name="description">Other reserves</field>
+        <field name="style_id" ref="bs_other_reserves_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-bale[('user_type_id', '=', ref('account.data_account_type_equity').id), ('tag_ids.id', '=', ref('l10n_ee_accounting.bs_other_reserves').id)]</field>
+        <field name="auto_expand_accounts" eval="True" />
+        <field name="auto_expand_accounts_style_id" ref="bs_account_i3_style" />
+    </record>
+
+    <!-- TODO: 2216 Other owners equity -->
+
+    <record id="bs_retained_pnl_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Retained Profit (Loss)</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_retained_pnl_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2217</field>
+        <field name="name">retained_pnl</field>
+        <field name="description">Retained Profit (Loss)</field>
+        <field name="style_id" ref="bs_retained_pnl_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">-balu[]</field>
+    </record>
+
+    <record id="bs_current_pnl_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Current Profit (Loss)</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">2</field>
+    </record>
+
+    <record id="bs_current_pnl_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2218</field>
+        <field name="name">current_pnl</field>
+        <field name="description">Current Profit (Loss)</field>
+        <field name="style_id" ref="bs_current_pnl_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >-balp[('user_type_id.include_initial_balance', '=', False)]</field>
+    </record>
+
+    <record id="bs_owners_equity_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Owners' Equity</field>
+        <field name="indent_level_inherit" eval="0" />
+        <field name="indent_level">1</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_owners_equity_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2200</field>
+        <field name="name">owners_equity</field>
+        <field name="description">Owners' Equity</field>
+        <field name="style_id" ref="bs_owners_equity_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field
+            name="expression"
+        >share_capital + share_premium + legal_reserve + other_reserves + retained_pnl + current_pnl</field>
+    </record>
+
+    <record id="bs_liabilities_and_owners_equity_style" model="mis.report.style">
+        <field name="name">(EE) Balance Sheet: Liabilities and Owners' Equity</field>
+        <field name="font_weight_inherit" eval="0" />
+        <field name="font_weight">bold</field>
+    </record>
+
+    <record id="bs_liabilities_and_owners_equity_field" model="mis.report.kpi">
+        <field name="report_id" ref="bs" />
+        <field name="sequence">2000</field>
+        <field name="name">liabilities_and_owners_equity</field>
+        <field name="description">Liabilities and Owners' Equity</field>
+        <field name="style_id" ref="bs_liabilities_and_owners_equity_style" />
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="expression">liabilities + owners_equity</field>
+    </record>
+
+</odoo>

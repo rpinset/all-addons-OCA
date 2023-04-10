@@ -1,0 +1,21 @@
+{
+  "projectId": "shopfloor",
+  "baseUrl": "http://localhost:8069/shopfloor/app/demo_api_key/#/",
+  "baseUrlDemo": "http://localhost:8069/shopfloor/app/demo_api_key/demo/#/",
+  "baseUrlUserAuth": "http://localhost:8069/shopfloor/app/demo_user/#/",
+  "baseUrlDemoUserAuth": "http://localhost:8069/shopfloor/app/demo_user/demo/#/",
+  "baseUrlExample": "http://localhost:8069/shopfloor/app/example_api_key/#/",
+  "baseUrlExampleDemo": "http://localhost:8069/shopfloor/app/example_api_key/demo/#/",
+  "baseUrlExampleUserAuth": "http://localhost:8069/shopfloor/app/example_user/#/",
+  "baseUrlExampleDemoUserAuth": "http://localhost:8069/shopfloor/app/example_user/demo/#/",
+  "viewportHeight": 700,
+  "viewportWidth": 360,
+  "env": {
+    "auth_type": "api_key",
+    "credentials": "",
+    "test_appconfig": {},
+    "test_menu_data": {},
+    "test_partners": {},
+    "test_current_partner": {}
+  }
+}

@@ -1,0 +1,2496 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2020-2022 CorporateHub (https://corporatehub.eu)
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <!-- Estonian taxable person -->
+    <record id="fp_ee_taxable" model="account.fiscal.position.template">
+        <field name="sequence">10</field>
+        <field name="name">Estonian taxable person</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="auto_apply" eval="True" />
+        <field name="country_id" ref="base.ee" />
+        <field name="vat_required" eval="True" />
+    </record>
+    <record id="fp_ee_taxable_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1A" />
+    </record>
+    <record id="fp_ee_taxable_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1A" />
+    </record>
+    <record id="fp_ee_taxable_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1A" />
+    </record>
+    <record id="fp_ee_taxable_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1A" />
+    </record>
+    <record id="fp_ee_taxable_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1A" />
+    </record>
+    <record id="fp_ee_taxable_out_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_taxable_out_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_taxable_out_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_taxable_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_ee_taxable_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_ee_taxable_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record id="fp_ee_taxable_out_5A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_taxable_out_5B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_taxable_out_5C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_taxable_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_ee_taxable_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record id="fp_ee_taxable_out_8A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8A" />
+    </record>
+    <record id="fp_ee_taxable_out_8B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8A" />
+    </record>
+    <record id="fp_ee_taxable_out_8C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8A" />
+    </record>
+    <record id="fp_ee_taxable_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record id="fp_ee_taxable_out_10" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record id="fp_ee_taxable_out_11" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record id="fp_ee_taxable_out_12" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record id="fp_ee_taxable_out_13" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record id="fp_ee_taxable_out_14" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record id="fp_ee_taxable_out_15" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record id="fp_ee_taxable_out_16A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_taxable_out_16B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_taxable_out_16C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_taxable_out_17A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_taxable_out_17B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_taxable_out_17C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_taxable_out_18" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record id="fp_ee_taxable_out_19A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_taxable_out_19B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_taxable_out_19C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_taxable_out_20A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_taxable_out_20B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_taxable_out_20C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_taxable_out_21" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record id="fp_ee_taxable_out_22A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22A" />
+    </record>
+    <record id="fp_ee_taxable_out_22B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22A" />
+    </record>
+    <record id="fp_ee_taxable_out_22C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22A" />
+    </record>
+    <record id="fp_ee_taxable_out_23" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record id="fp_ee_taxable_out_24" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record id="fp_ee_taxable_out_25A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_taxable_out_25B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_taxable_out_25C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_taxable_out_26A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_taxable_out_26B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_taxable_out_26C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_taxable_out_27" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record id="fp_ee_taxable_out_28A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_taxable_out_28B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_taxable_out_28C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_taxable_out_29A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_taxable_out_29B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_taxable_out_29C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_taxable_out_30A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_taxable_out_30B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_taxable_out_30C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_taxable_out_31A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_taxable_out_31B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_taxable_out_31C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_taxable_out_32A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" ref="vat_out_32A" />
+    </record>
+    <record id="fp_ee_taxable_out_32B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" ref="vat_out_32A" />
+    </record>
+    <record id="fp_ee_taxable_out_32C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" ref="vat_out_32A" />
+    </record>
+    <record id="fp_ee_taxable_out_33" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record id="fp_ee_taxable_out_34" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record id="fp_ee_taxable_out_35A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_ee_taxable_out_35B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_ee_taxable_out_36A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_ee_taxable_out_36B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_ee_taxable_out_37A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <record id="fp_ee_taxable_out_37B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_taxable" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <!-- Estonian non-taxable person -->
+    <record id="fp_ee_nontaxable" model="account.fiscal.position.template">
+        <field name="sequence">15</field>
+        <field name="name">Estonian non-taxable person</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="auto_apply" eval="True" />
+        <field name="country_id" ref="base.ee" />
+    </record>
+    <record id="fp_ee_nontaxable_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1B" />
+    </record>
+    <record id="fp_ee_nontaxable_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1B" />
+    </record>
+    <record id="fp_ee_nontaxable_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1B" />
+    </record>
+    <record id="fp_ee_nontaxable_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1B" />
+    </record>
+    <record id="fp_ee_nontaxable_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1B" />
+    </record>
+    <record id="fp_ee_nontaxable_out_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_ee_nontaxable_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_ee_nontaxable_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record id="fp_ee_nontaxable_out_5A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_5B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_5C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_ee_nontaxable_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record id="fp_ee_nontaxable_out_8A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_ee_nontaxable_out_8B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_ee_nontaxable_out_8C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_ee_nontaxable_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record id="fp_ee_nontaxable_out_10" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record id="fp_ee_nontaxable_out_11" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record id="fp_ee_nontaxable_out_12" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record id="fp_ee_nontaxable_out_13" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record id="fp_ee_nontaxable_out_14" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record id="fp_ee_nontaxable_out_15" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record id="fp_ee_nontaxable_out_16A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_16B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_16C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_17A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_17B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_17C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" ref="vat_out_17A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_18" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record id="fp_ee_nontaxable_out_19A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_19B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_19C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" ref="vat_out_19A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_20A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_20B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_20C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_21" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record id="fp_ee_nontaxable_out_22A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_ee_nontaxable_out_22B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_ee_nontaxable_out_22C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_ee_nontaxable_out_23" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record id="fp_ee_nontaxable_out_24" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record id="fp_ee_nontaxable_out_25A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_25B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_25C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_26A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_26B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_26C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_27" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record id="fp_ee_nontaxable_out_28A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_28B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_28C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_29A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_29B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_29C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_30A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_30B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_30C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_31A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_31B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_31C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_32A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_ee_nontaxable_out_32B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_ee_nontaxable_out_32C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_ee_nontaxable_out_33" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record id="fp_ee_nontaxable_out_34" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record id="fp_ee_nontaxable_out_35A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_35B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_36A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_36B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_37A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <record id="fp_ee_nontaxable_out_37B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_ee_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <!-- EU taxable person -->
+    <record id="fp_eu_taxable" model="account.fiscal.position.template">
+        <field name="sequence">20</field>
+        <field name="name">EU taxable person</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="auto_apply" eval="True" />
+        <field name="country_group_id" ref="base.europe" />
+        <field name="vat_required" eval="True" />
+    </record>
+    <record id="fp_eu_taxable_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1C" />
+    </record>
+    <record id="fp_eu_taxable_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1C" />
+    </record>
+    <record id="fp_eu_taxable_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1C" />
+    </record>
+    <record id="fp_eu_taxable_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1C" />
+    </record>
+    <record id="fp_eu_taxable_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1C" />
+    </record>
+    <record id="fp_eu_taxable_out_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1B" />
+    </record>
+    <record id="fp_eu_taxable_out_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1B" />
+    </record>
+    <record id="fp_eu_taxable_out_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1B" />
+    </record>
+    <record id="fp_eu_taxable_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_eu_taxable_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_eu_taxable_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record id="fp_eu_taxable_out_5A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5B" />
+    </record>
+    <record id="fp_eu_taxable_out_5B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5B" />
+    </record>
+    <record id="fp_eu_taxable_out_5C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5B" />
+    </record>
+    <record id="fp_eu_taxable_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_eu_taxable_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record id="fp_eu_taxable_out_8A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8C" />
+    </record>
+    <record id="fp_eu_taxable_out_8B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8C" />
+    </record>
+    <record id="fp_eu_taxable_out_8C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8C" />
+    </record>
+    <record id="fp_eu_taxable_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record id="fp_eu_taxable_out_10" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record id="fp_eu_taxable_out_11" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record id="fp_eu_taxable_out_12" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record id="fp_eu_taxable_out_13" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record id="fp_eu_taxable_out_14" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record id="fp_eu_taxable_out_15" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record id="fp_eu_taxable_out_16A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16B" />
+    </record>
+    <record id="fp_eu_taxable_out_16B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16B" />
+    </record>
+    <record id="fp_eu_taxable_out_16C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16B" />
+    </record>
+    <record id="fp_eu_taxable_out_17A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" ref="vat_out_17B" />
+    </record>
+    <record id="fp_eu_taxable_out_17B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" ref="vat_out_17B" />
+    </record>
+    <record id="fp_eu_taxable_out_17C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" ref="vat_out_17B" />
+    </record>
+    <record id="fp_eu_taxable_out_18" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record id="fp_eu_taxable_out_19A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" ref="vat_out_19B" />
+    </record>
+    <record id="fp_eu_taxable_out_19B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" ref="vat_out_19B" />
+    </record>
+    <record id="fp_eu_taxable_out_19C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" ref="vat_out_19B" />
+    </record>
+    <record id="fp_eu_taxable_out_20A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20B" />
+    </record>
+    <record id="fp_eu_taxable_out_20B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20B" />
+    </record>
+    <record id="fp_eu_taxable_out_20C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20B" />
+    </record>
+    <record id="fp_eu_taxable_out_21" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record id="fp_eu_taxable_out_22A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22B" />
+    </record>
+    <record id="fp_eu_taxable_out_22B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22B" />
+    </record>
+    <record id="fp_eu_taxable_out_22C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22B" />
+    </record>
+    <record id="fp_eu_taxable_out_23" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record id="fp_eu_taxable_out_24" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record id="fp_eu_taxable_out_25A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25B" />
+    </record>
+    <record id="fp_eu_taxable_out_25B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25B" />
+    </record>
+    <record id="fp_eu_taxable_out_25C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25B" />
+    </record>
+    <record id="fp_eu_taxable_out_26A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26B" />
+    </record>
+    <record id="fp_eu_taxable_out_26B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26B" />
+    </record>
+    <record id="fp_eu_taxable_out_26C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26B" />
+    </record>
+    <record id="fp_eu_taxable_out_27" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record id="fp_eu_taxable_out_28A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28B" />
+    </record>
+    <record id="fp_eu_taxable_out_28B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28B" />
+    </record>
+    <record id="fp_eu_taxable_out_28C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28B" />
+    </record>
+    <record id="fp_eu_taxable_out_29A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29B" />
+    </record>
+    <record id="fp_eu_taxable_out_29B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29B" />
+    </record>
+    <record id="fp_eu_taxable_out_29C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29B" />
+    </record>
+    <record id="fp_eu_taxable_out_30A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30B" />
+    </record>
+    <record id="fp_eu_taxable_out_30B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30B" />
+    </record>
+    <record id="fp_eu_taxable_out_30C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30B" />
+    </record>
+    <record id="fp_eu_taxable_out_31A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31B" />
+    </record>
+    <record id="fp_eu_taxable_out_31B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31B" />
+    </record>
+    <record id="fp_eu_taxable_out_31C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31B" />
+    </record>
+    <record id="fp_eu_taxable_out_32A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" ref="vat_out_32B" />
+    </record>
+    <record id="fp_eu_taxable_out_32B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" ref="vat_out_32B" />
+    </record>
+    <record id="fp_eu_taxable_out_32C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" ref="vat_out_32B" />
+    </record>
+    <record id="fp_eu_taxable_out_33" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record id="fp_eu_taxable_out_34" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record id="fp_eu_taxable_out_35A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35B" />
+    </record>
+    <record id="fp_eu_taxable_out_35B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35B" />
+    </record>
+    <record id="fp_eu_taxable_out_36A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36B" />
+    </record>
+    <record id="fp_eu_taxable_out_36B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36B" />
+    </record>
+    <record id="fp_eu_taxable_out_37A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <record id="fp_eu_taxable_out_37B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_taxable" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <!-- EU non-taxable person -->
+    <record id="fp_eu_nontaxable" model="account.fiscal.position.template">
+        <field name="sequence">25</field>
+        <field name="name">EU non-taxable person</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="auto_apply" eval="True" />
+        <field name="country_group_id" ref="base.europe" />
+    </record>
+    <record id="fp_eu_nontaxable_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1D" />
+    </record>
+    <record id="fp_eu_nontaxable_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1D" />
+    </record>
+    <record id="fp_eu_nontaxable_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1D" />
+    </record>
+    <record id="fp_eu_nontaxable_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1D" />
+    </record>
+    <record id="fp_eu_nontaxable_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1D" />
+    </record>
+    <record id="fp_eu_nontaxable_out_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_eu_nontaxable_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_eu_nontaxable_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record id="fp_eu_nontaxable_out_5A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_5B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_5C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_eu_nontaxable_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record id="fp_eu_nontaxable_out_8A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_eu_nontaxable_out_8B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_eu_nontaxable_out_8C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_eu_nontaxable_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record id="fp_eu_nontaxable_out_10" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record id="fp_eu_nontaxable_out_11" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record id="fp_eu_nontaxable_out_12" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record id="fp_eu_nontaxable_out_13" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record id="fp_eu_nontaxable_out_14" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record id="fp_eu_nontaxable_out_15" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record id="fp_eu_nontaxable_out_16A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_16B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_16C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_17A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_17B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_17C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_18" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record id="fp_eu_nontaxable_out_19A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_19B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_19C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_20A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_20B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_20C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_21" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record id="fp_eu_nontaxable_out_22A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_eu_nontaxable_out_22B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_eu_nontaxable_out_22C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_eu_nontaxable_out_23" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record id="fp_eu_nontaxable_out_24" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record id="fp_eu_nontaxable_out_25A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_25B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_25C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_26A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_26B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_26C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_27" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record id="fp_eu_nontaxable_out_28A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_28B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_28C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_29A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_29B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_29C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_30A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_30B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_30C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_31A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_31B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_31C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_32A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_32B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_32C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record id="fp_eu_nontaxable_out_33" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record id="fp_eu_nontaxable_out_34" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record id="fp_eu_nontaxable_out_35A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_35B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_36A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_36B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_37A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <record id="fp_eu_nontaxable_out_37B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_eu_nontaxable" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <!-- Non-EU person engaged in business -->
+    <record id="fp_noneu_engaged" model="account.fiscal.position.template">
+        <field name="sequence">30</field>
+        <field name="name">Non-EU person engaged in business</field>
+        <field name="chart_template_id" ref="chart_template" />
+        <field name="auto_apply" eval="True" />
+    </record>
+    <record id="fp_noneu_engaged_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_engaged_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_engaged_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_engaged_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_engaged_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_engaged_out_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1C" />
+    </record>
+    <record id="fp_noneu_engaged_out_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_noneu_engaged_out_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_noneu_engaged_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_noneu_engaged_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_noneu_engaged_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record id="fp_noneu_engaged_out_5A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5C" />
+    </record>
+    <record id="fp_noneu_engaged_out_5B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5C" />
+    </record>
+    <record id="fp_noneu_engaged_out_5C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5C" />
+    </record>
+    <record id="fp_noneu_engaged_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_noneu_engaged_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record id="fp_noneu_engaged_out_8A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_noneu_engaged_out_8B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_noneu_engaged_out_8C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_noneu_engaged_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record id="fp_noneu_engaged_out_10" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record id="fp_noneu_engaged_out_11" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record id="fp_noneu_engaged_out_12" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record id="fp_noneu_engaged_out_13" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record id="fp_noneu_engaged_out_14" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record id="fp_noneu_engaged_out_15" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record id="fp_noneu_engaged_out_16A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16C" />
+    </record>
+    <record id="fp_noneu_engaged_out_16B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16C" />
+    </record>
+    <record id="fp_noneu_engaged_out_16C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16C" />
+    </record>
+    <record id="fp_noneu_engaged_out_17A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" ref="vat_out_17C" />
+    </record>
+    <record id="fp_noneu_engaged_out_17B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" ref="vat_out_17C" />
+    </record>
+    <record id="fp_noneu_engaged_out_17C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" ref="vat_out_17C" />
+    </record>
+    <record id="fp_noneu_engaged_out_18" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record id="fp_noneu_engaged_out_19A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" ref="vat_out_19C" />
+    </record>
+    <record id="fp_noneu_engaged_out_19B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" ref="vat_out_19C" />
+    </record>
+    <record id="fp_noneu_engaged_out_19C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" ref="vat_out_19C" />
+    </record>
+    <record id="fp_noneu_engaged_out_20A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20C" />
+    </record>
+    <record id="fp_noneu_engaged_out_20B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20C" />
+    </record>
+    <record id="fp_noneu_engaged_out_20C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20C" />
+    </record>
+    <record id="fp_noneu_engaged_out_21" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record id="fp_noneu_engaged_out_22A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_noneu_engaged_out_22B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_noneu_engaged_out_22C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record id="fp_noneu_engaged_out_23" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record id="fp_noneu_engaged_out_24" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record id="fp_noneu_engaged_out_25A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record id="fp_noneu_engaged_out_25B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record id="fp_noneu_engaged_out_25C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record id="fp_noneu_engaged_out_26A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record id="fp_noneu_engaged_out_26B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record id="fp_noneu_engaged_out_26C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record id="fp_noneu_engaged_out_27" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record id="fp_noneu_engaged_out_28A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record id="fp_noneu_engaged_out_28B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record id="fp_noneu_engaged_out_28C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record id="fp_noneu_engaged_out_29A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record id="fp_noneu_engaged_out_29B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record id="fp_noneu_engaged_out_29C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record id="fp_noneu_engaged_out_30A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30C" />
+    </record>
+    <record id="fp_noneu_engaged_out_30B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30C" />
+    </record>
+    <record id="fp_noneu_engaged_out_30C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30C" />
+    </record>
+    <record id="fp_noneu_engaged_out_31A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31C" />
+    </record>
+    <record id="fp_noneu_engaged_out_31B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31C" />
+    </record>
+    <record id="fp_noneu_engaged_out_31C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31C" />
+    </record>
+    <record id="fp_noneu_engaged_out_32A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" ref="vat_out_32C" />
+    </record>
+    <record id="fp_noneu_engaged_out_32B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" ref="vat_out_32C" />
+    </record>
+    <record id="fp_noneu_engaged_out_32C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" ref="vat_out_32C" />
+    </record>
+    <record id="fp_noneu_engaged_out_33" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record id="fp_noneu_engaged_out_34" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record id="fp_noneu_engaged_out_35A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_noneu_engaged_out_35B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record id="fp_noneu_engaged_out_36A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_noneu_engaged_out_36B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record id="fp_noneu_engaged_out_37A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <record id="fp_noneu_engaged_out_37B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_engaged" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37A" />
+    </record>
+    <!-- Non-EU person not engaged in business -->
+    <record id="fp_noneu_notengaged" model="account.fiscal.position.template">
+        <field name="sequence">35</field>
+        <field name="name">Non-EU person not engaged in business</field>
+        <field name="chart_template_id" ref="chart_template" />
+    </record>
+    <record id="fp_noneu_notengaged_in_1A" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_in_1A" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_notengaged_in_1B" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_in_1B" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_notengaged_in_1C" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_in_1C" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_notengaged_in_1D" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_in_1D" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record id="fp_noneu_notengaged_in_1E" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_in_1E" />
+        <field name="tax_dest_id" ref="vat_in_1E" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_1A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_1A" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_1B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_1B" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_1C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_1C" />
+        <field name="tax_dest_id" ref="vat_out_1A" />
+    </record>
+    <record id="fp_noneu_notengaged_out_2" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_2" />
+        <field name="tax_dest_id" ref="vat_out_2" />
+    </record>
+    <record id="fp_noneu_notengaged_out_3" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_3" />
+        <field name="tax_dest_id" ref="vat_out_3" />
+    </record>
+    <record id="fp_noneu_notengaged_out_4" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_4" />
+        <field name="tax_dest_id" ref="vat_out_4" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_5A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_5A" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_5B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_5B" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_5C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_5C" />
+        <field name="tax_dest_id" ref="vat_out_5A" />
+    </record>
+    <record id="fp_noneu_notengaged_out_6" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_6" />
+        <field name="tax_dest_id" ref="vat_out_6" />
+    </record>
+    <record id="fp_noneu_notengaged_out_7" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_7" />
+        <field name="tax_dest_id" ref="vat_out_7" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_8A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_8A" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_8B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_8B" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_8C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_8C" />
+        <field name="tax_dest_id" ref="vat_out_8B" />
+    </record>
+    <record id="fp_noneu_notengaged_out_9" model="account.fiscal.position.tax.template">
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_9" />
+        <field name="tax_dest_id" ref="vat_out_9" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_10"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_10" />
+        <field name="tax_dest_id" ref="vat_out_10" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_11"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_11" />
+        <field name="tax_dest_id" ref="vat_out_11" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_12"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_12" />
+        <field name="tax_dest_id" ref="vat_out_12" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_13"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_13" />
+        <field name="tax_dest_id" ref="vat_out_13" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_14"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_14" />
+        <field name="tax_dest_id" ref="vat_out_14" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_15"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_15" />
+        <field name="tax_dest_id" ref="vat_out_15" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_16A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_16A" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_16B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_16B" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_16C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_16C" />
+        <field name="tax_dest_id" ref="vat_out_16A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_17A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_17A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_17B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_17B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_17C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_17C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_18"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_18" />
+        <field name="tax_dest_id" ref="vat_out_18" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_19A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_19A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_19B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_19B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_19C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_19C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_20A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_20A" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_20B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_20B" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_20C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_20C" />
+        <field name="tax_dest_id" ref="vat_out_20A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_21"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_21" />
+        <field name="tax_dest_id" ref="vat_out_21" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_22A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_22A" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_22B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_22B" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_22C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_22C" />
+        <field name="tax_dest_id" ref="vat_out_22C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_23"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_23" />
+        <field name="tax_dest_id" ref="vat_out_23" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_24"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_24" />
+        <field name="tax_dest_id" ref="vat_out_24" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_25A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_25A" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_25B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_25B" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_25C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_25C" />
+        <field name="tax_dest_id" ref="vat_out_25C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_26A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_26A" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_26B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_26B" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_26C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_26C" />
+        <field name="tax_dest_id" ref="vat_out_26C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_27"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_27" />
+        <field name="tax_dest_id" ref="vat_out_27" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_28A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_28A" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_28B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_28B" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_28C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_28C" />
+        <field name="tax_dest_id" ref="vat_out_28C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_29A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_29A" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_29B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_29B" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_29C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_29C" />
+        <field name="tax_dest_id" ref="vat_out_29C" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_30A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_30A" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_30B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_30B" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_30C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_30C" />
+        <field name="tax_dest_id" ref="vat_out_30A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_31A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_31A" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_31B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_31B" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_31C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_31C" />
+        <field name="tax_dest_id" ref="vat_out_31A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_32A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_32A" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_32B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_32B" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_32C"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_32C" />
+        <field name="tax_dest_id" eval="False" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_33"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_33" />
+        <field name="tax_dest_id" ref="vat_out_33" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_34"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_34" />
+        <field name="tax_dest_id" ref="vat_out_34" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_35A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_35A" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_35B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_35B" />
+        <field name="tax_dest_id" ref="vat_out_35A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_36A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_36A" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_36B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_36B" />
+        <field name="tax_dest_id" ref="vat_out_36A" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_37A"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_37A" />
+        <field name="tax_dest_id" ref="vat_out_37B" />
+    </record>
+    <record
+        id="fp_noneu_notengaged_out_37B"
+        model="account.fiscal.position.tax.template"
+    >
+        <field name="position_id" ref="fp_noneu_notengaged" />
+        <field name="tax_src_id" ref="vat_out_37B" />
+        <field name="tax_dest_id" ref="vat_out_37B" />
+    </record>
+</odoo>
