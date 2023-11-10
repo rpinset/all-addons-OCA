@@ -6,27 +6,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-03-16 12:45+0000\n"
-"Last-Translator: Ana Suárez <ana.suarez@qubiq.es>\n"
+"PO-Revision-Date: 2023-10-28 16:01+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
-msgid "%s - Canceled Invoice: %s"
-msgstr "%s - Factura cancelada: %s"
+msgid "%(company_name)s - Canceled Invoice: %(invoice_name)s"
+msgstr "%(company_name)s - Factura cancelada: %(invoice_name)s"
 
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
-msgid "%s - Invoice: %s"
-msgstr "%s - Factura: %s"
+msgid "%(company_name)s - Invoice: %(invoice_name)s"
+msgstr "%(company_name)s - Factura: %(invoice_name)s"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_bank_statement_line__auto_generated
@@ -51,22 +51,6 @@ msgid "Config Settings"
 msgstr "Ajustes Configuración"
 
 #. module: account_invoice_inter_company
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move__display_name
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move_line__display_name
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__display_name
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__display_name
-msgid "Display Name"
-msgstr "Nombre mostrado"
-
-#. module: account_invoice_inter_company
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move__id
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move_line__id
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__id
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__id
-msgid "ID"
-msgstr "ID"
-
-#. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company__intercompany_invoice_user_id
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__intercompany_invoice_user_id
 msgid "Inter Company Invoice User"
@@ -74,14 +58,13 @@ msgstr "Usuario Factura Inter-compañía"
 
 #. module: account_invoice_inter_company
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
-#, fuzzy
 msgid ""
 "Inter Company OCA features\n"
 "                    <span class=\"fa fa-lg fa-building-o\" title=\"Values "
 "set here are company-specific.\" aria-label=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
-"Características Inter-compañía OCA\n"
+"Características de OCA entre compañías\n"
 "                    <span class=\"fa fa-lg fa-building-o\" title=\"Values "
 "set here are company-specific.\" aria-label=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
@@ -118,14 +101,6 @@ msgid "Journal Item"
 msgstr "Apunte contable"
 
 #. module: account_invoice_inter_company
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move____last_update
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move_line____last_update
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_company____last_update
-#: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings____last_update
-msgid "Last Modified on"
-msgstr "Última modificación el"
-
-#. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/tests/test_inter_company_invoice.py:0
 #, python-format
 msgid "No Chart of Account Template has been defined !"
@@ -134,8 +109,12 @@ msgstr "¡No se ha definido una plantilla de plan contable!"
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
-msgid "Please define %s journal for this company: \"%s\" (id:%d)."
-msgstr "Por favor defina %s diario para esta compañía: \"%s\" (id:%d)."
+msgid ""
+"Please define %(dest_journal_type)s journal for this company: "
+"\"%(dest_company_name)s\" (id:%(dest_company_id)d)."
+msgstr ""
+"Defina el diario %(dest_journal_type)s para esta empresa: \""
+"%(dest_company_name)s\" (id:%(dest_company_id)d)."
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__intercompany_invoice_user_id
@@ -194,11 +173,11 @@ msgstr "Línea de factura origen"
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
 msgid ""
-"The invoice line '%s' doesn't have a product. All invoice lines should have "
-"a product for inter-company invoices."
+"The invoice line '%(line_name)s' doesn't have a product. All invoice lines "
+"should have a product for inter-company invoices."
 msgstr ""
-"La línea de factura '%s' no tiene producto. Todas las líenas de factura "
-"deben tener un producto para facturas intercompañía."
+"La línea de factura '%(line_name)s' no tiene ningún producto. Todas las "
+"líneas de factura deben tener un producto para facturas entre compañías."
 
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
@@ -207,18 +186,22 @@ msgid ""
 "This is an autogenerated multi company invoice and you're trying to modify "
 "the amount, which will differ from the source one (%s)"
 msgstr ""
+"Se trata de una factura multi compañía autogenerada y está intentando "
+"modificar el importe, el cual diferirá del de origen (%s)"
 
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
 msgid ""
 "WARNING!!!!! Failure in the inter-company invoice creation process: the "
-"total amount of this invoice is %s but the total amount of the invoice %s in "
-"the company %s is %s"
+"total amount of this invoice is %(dest_amount_total)s but the total amount "
+"of the invoice %(invoice_name)s in the company %(company_name)s is "
+"%(amount_total)s"
 msgstr ""
-"AVISO!!!!!! Fallo en el proceso de creación de factura intercompañía: el "
-"total de esta factura es %s pero el total de la factura %s en la compañía %s "
-"es %s"
+"¡¡¡¡¡ADVERTENCIA!!!!! Fallo en el proceso de creación de factura inter-"
+"compañía: el importe total de esta factura es %(dest_amount_total)s pero el "
+"importe total de la factura %(invoice_name)s en la empresa %(company_name)s "
+"es %(amount_total)s"
 
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,help:account_invoice_inter_company.field_res_company__invoice_auto_validation
@@ -244,15 +227,65 @@ msgstr ""
 msgid ""
 "You can't modify this invoice as it has an inter company invoice that's in "
 "posted state.\n"
-"Invoice %s to %s"
+"Invoice %(invoice_name)s to %(partner_name)s"
 msgstr ""
+"No puede modificar esta factura porque tiene una factura entre compañías que "
+"está en estado registrado.\n"
+"Factura de %(invoice_name)s a %(partner_name)s"
 
 #. module: account_invoice_inter_company
 #: code:addons/account_invoice_inter_company/models/account_move.py:0
 #, python-format
 msgid ""
-"You cannot create invoice in company '%s' with product '%s' because it is "
-"not multicompany"
+"You cannot create invoice in company '%(dest_company_name)s' with product "
+"'%(product_name)s' because it is not multicompany"
 msgstr ""
-"No puede crear una factura en la compañía '%s' con el producto '%s' porque "
-"no es multicompañía"
+"No se puede crear factura en la compañía '%(dest_company_name)s' con el "
+"producto '%(product_name)s' porque no es multicompañía"
+
+#, python-format
+#~ msgid "%s - Canceled Invoice: %s"
+#~ msgstr "%s - Factura cancelada: %s"
+
+#, python-format
+#~ msgid "%s - Invoice: %s"
+#~ msgstr "%s - Factura: %s"
+
+#~ msgid "Display Name"
+#~ msgstr "Nombre mostrado"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última modificación el"
+
+#, python-format
+#~ msgid "Please define %s journal for this company: \"%s\" (id:%d)."
+#~ msgstr "Por favor defina %s diario para esta compañía: \"%s\" (id:%d)."
+
+#, python-format
+#~ msgid ""
+#~ "The invoice line '%s' doesn't have a product. All invoice lines should "
+#~ "have a product for inter-company invoices."
+#~ msgstr ""
+#~ "La línea de factura '%s' no tiene producto. Todas las líenas de factura "
+#~ "deben tener un producto para facturas intercompañía."
+
+#, python-format
+#~ msgid ""
+#~ "WARNING!!!!! Failure in the inter-company invoice creation process: the "
+#~ "total amount of this invoice is %s but the total amount of the invoice %s "
+#~ "in the company %s is %s"
+#~ msgstr ""
+#~ "AVISO!!!!!! Fallo en el proceso de creación de factura intercompañía: el "
+#~ "total de esta factura es %s pero el total de la factura %s en la compañía "
+#~ "%s es %s"
+
+#, python-format
+#~ msgid ""
+#~ "You cannot create invoice in company '%s' with product '%s' because it is "
+#~ "not multicompany"
+#~ msgstr ""
+#~ "No puede crear una factura en la compañía '%s' con el producto '%s' "
+#~ "porque no es multicompañía"

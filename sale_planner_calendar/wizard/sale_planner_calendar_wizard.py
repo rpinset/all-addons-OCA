@@ -12,6 +12,7 @@ class SalePlannerCalendarWizard(models.TransientModel):
         comodel_name="res.users",
         string="Salesperson",
         default=lambda self: self.env.user,
+        domain="[('share','=',False)]",
     )
     event_type_id = fields.Many2one(
         comodel_name="calendar.event.type", string="Event type"
@@ -40,6 +41,7 @@ class SalePlannerCalendarWizard(models.TransientModel):
             domain = [
                 ("recurrency", "=", True),
                 ("recurrence_id.until", ">", fields.Date.today()),
+                ("is_base_recurrent_event", "=", True),
             ]
             if rec.user_id:
                 domain.append(("user_id", "=", rec.user_id.id))
@@ -48,10 +50,7 @@ class SalePlannerCalendarWizard(models.TransientModel):
             if rec.week_list:
                 domain.append(("recurrence_id." + rec.week_list.lower(), "=", True))
             rec.calendar_event_ids = (
-                self.env["calendar.event"]
-                .with_context(calendar_event_primary_only=True)
-                .search(domain)
-                .sorted("hour")
+                self.env["calendar.event"].search(domain).sorted("hour")
             )
 
     # TODO: Remove when control_panel_hidden works

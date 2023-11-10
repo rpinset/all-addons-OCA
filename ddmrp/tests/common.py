@@ -39,14 +39,26 @@ class TestDdmrpCommon(common.TransactionCase):
         cls.partner_model = cls.env["res.partner"]
         cls.supinfo_model = cls.env["product.supplierinfo"]
         cls.pol_model = cls.env["purchase.order.line"]
+        cls.wh_model = cls.env["stock.warehouse"]
 
         # Refs
         cls.main_company = cls.env.ref("base.main_company")
+        cls.second_company = cls.env.ref("stock.res_company_1")
         cls.warehouse = cls.env.ref("stock.warehouse0")
+        cls.warehouse2 = cls.wh_model.create(
+            {
+                "partner_id": cls.env.ref("base.main_partner").id,
+                "name": "Warehouse 2",
+                "code": "WH2",
+            }
+        )
+        cls.warehouse_sc = cls.env.ref("stock.stock_warehouse_shop0")
         cls.stock_location = cls.env.ref("stock.stock_location_stock")
+        cls.stock_location_sc = cls.warehouse_sc.lot_stock_id
         cls.location_shelf1 = cls.env.ref("stock.stock_location_components")
         cls.supplier_location = cls.env.ref("stock.stock_location_suppliers")
         cls.customer_location = cls.env.ref("stock.stock_location_customers")
+        cls.inter_wh = cls.env.ref("stock.stock_location_inter_wh")
         cls.inventory_location = cls.env["stock.location"].search(
             [("usage", "=", "inventory"), ("company_id", "=", cls.main_company.id)],
             limit=1,
@@ -65,6 +77,7 @@ class TestDdmrpCommon(common.TransactionCase):
             }
         )
         cls.uom_unit = cls.env.ref("uom.product_uom_unit")
+        cls.dozen_unit = cls.env.ref("uom.product_uom_dozen")
         cls.buffer_profile_pur = cls.env.ref(
             "ddmrp.stock_buffer_profile_replenish_purchased_medium_medium"
         )
@@ -83,13 +96,19 @@ class TestDdmrpCommon(common.TransactionCase):
         cls.group_change_procure_qty = cls.env.ref(
             "ddmrp.group_change_buffer_procure_qty"
         )
+        cls.group_buffer_manager = cls.env.ref("ddmrp.group_stock_buffer_maintainer")
         cls.calendar = cls.env.ref("resource.resource_calendar_std")
         cls.warehouse.calendar_id = cls.calendar
 
         # Create users
         cls.user = cls._create_user(
             "user_1",
-            [cls.group_stock_manager, cls.group_mrp_user, cls.group_change_procure_qty],
+            [
+                cls.group_stock_manager,
+                cls.group_mrp_user,
+                cls.group_change_procure_qty,
+                cls.group_buffer_manager,
+            ],
         )
         # Create Partners:
         vendor = cls.partner_model.create({"name": "Test Vendor 1"})
@@ -303,7 +322,9 @@ class TestDdmrpCommon(common.TransactionCase):
         )
         return user
 
-    def create_pickingoutA(self, date_move, qty):
+    def create_pickingoutA(self, date_move, qty, uom=False):
+        if not uom:
+            uom = self.productA.uom_id
         picking = self.pickingModel.with_user(self.user).create(
             {
                 "picking_type_id": self.picking_type_out.id,
@@ -318,7 +339,7 @@ class TestDdmrpCommon(common.TransactionCase):
                             "name": "Test move",
                             "product_id": self.productA.id,
                             "date": date_move,
-                            "product_uom": self.productA.uom_id.id,
+                            "product_uom": uom.id,
                             "product_uom_qty": qty,
                             "location_id": self.binA.id,
                             "location_dest_id": self.customer_location.id,

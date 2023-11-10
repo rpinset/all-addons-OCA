@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-02 11:47+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-29 08:29+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mrp_planned_order_matrix
 #: model_terms:ir.ui.view,arch_db:mrp_planned_order_matrix.mrp_planned_order_wizard_view_form
@@ -46,7 +46,7 @@ msgstr "Creato il"
 #: model:ir.model.fields,field_description:mrp_planned_order_matrix.field_mrp_planned_order_sheet__date_start
 #: model:ir.model.fields,field_description:mrp_planned_order_matrix.field_mrp_planned_order_wizard__date_start
 msgid "Date From"
-msgstr "Data dal"
+msgstr "Dalla data"
 
 #. module: mrp_planned_order_matrix
 #: model:ir.model.fields,field_description:mrp_planned_order_matrix.field_mrp_planned_order_sheet_line__date_range_id
@@ -62,7 +62,7 @@ msgstr "Tipo intervallo data"
 #. module: mrp_planned_order_matrix
 #: model:ir.model.fields,field_description:mrp_planned_order_matrix.field_mrp_planned_order_wizard__date_end
 msgid "Date To"
-msgstr "Data al"
+msgstr "Alla data"
 
 #. module: mrp_planned_order_matrix
 #: model:ir.model.fields,field_description:mrp_planned_order_matrix.field_mrp_planned_order_sheet__date_end
@@ -185,7 +185,7 @@ msgstr "DOS test"
 #: code:addons/mrp_planned_order_matrix/wizards/mrp_planned_order_wizard.py:0
 #, python-format
 msgid "The start date cannot be later than the end date."
-msgstr "La data iniziale non può essere dopo la data finale."
+msgstr "La data di inizio non può essere successiva alla data di fine."
 
 #. module: mrp_planned_order_matrix
 #: code:addons/mrp_planned_order_matrix/wizards/mrp_planned_order_wizard.py:0

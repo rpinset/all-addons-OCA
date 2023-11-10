@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-03-08 21:23+0000\n"
+"PO-Revision-Date: 2023-10-29 17:38+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mrp_multi_level
 #: model:product.product,name:mrp_multi_level.product_product_av_11
@@ -61,7 +61,7 @@ msgstr "Approvato"
 #: model_terms:ir.ui.view,arch_db:mrp_multi_level.product_mrp_area_form
 #: model_terms:ir.ui.view,arch_db:mrp_multi_level.product_mrp_area_search
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_move__state__assigned
@@ -236,7 +236,7 @@ msgstr "FP-4"
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_planned_order__fixed
 #: model_terms:ir.ui.view,arch_db:mrp_multi_level.mrp_planned_order_view_search
 msgid "Fixed"
-msgstr "Fissato"
+msgstr "Fisso"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_move__mrp_origin__fc
@@ -335,7 +335,7 @@ msgstr "Ultima modifica il"
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_planned_order__write_uid
 #: model:ir.model.fields,field_description:mrp_multi_level.field_product_mrp_area__write_uid
 msgid "Last Updated by"
-msgstr "Ultima modifica di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_area__write_date
@@ -449,6 +449,7 @@ msgid "MRP Move DOWN"
 msgstr "Sposta giù MRP"
 
 #. module: mrp_multi_level
+#: model:ir.actions.act_window,name:mrp_multi_level.mrp_move_action
 #: model_terms:ir.ui.view,arch_db:mrp_multi_level.product_mrp_area_form
 msgid "MRP Moves"
 msgstr "Movimenti MRP"
@@ -672,7 +673,7 @@ msgstr "Muovi in su ordini pianificati"
 #: model:ir.actions.act_window,name:mrp_multi_level.act_mrp_inventory_procure
 #: model:ir.actions.act_window,name:mrp_multi_level.act_mrp_inventory_procure_planned_order
 msgid "Procure"
-msgstr "Approvvigionamento"
+msgstr "Approvvigiona"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_product_mrp_area__location_proc_id
@@ -740,7 +741,7 @@ msgstr "UdM prodotto"
 #. module: mrp_multi_level
 #: model:ir.model,name:mrp_multi_level.model_mrp_production
 msgid "Production Order"
-msgstr "Ordine produzione"
+msgstr "Ordine di produzione"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_inventory_procure_item__supply_method__pull_push
@@ -783,12 +784,12 @@ msgstr "Invia a"
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_product_mrp_area__mrp_qty_multiple
 msgid "Qty Multiple"
-msgstr "Qta. multipla"
+msgstr "Multiplo q.tà"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_planned_order__qty_released
 msgid "Qty Released"
-msgstr "Qta. rilasciata"
+msgstr "Q.tà rilasciata"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_inventory_procure_item__qty
@@ -805,7 +806,7 @@ msgstr "Quantità disponibile"
 #: code:addons/mrp_multi_level/wizards/mrp_inventory_procure.py:0
 #, python-format
 msgid "Quantity must be positive."
-msgstr "Quantità deve essere positiva."
+msgstr "La quantità deve essere positiva."
 
 #. module: mrp_multi_level
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_move__state__ready
@@ -911,7 +912,7 @@ msgstr "Movimento di magazzino"
 #. module: mrp_multi_level
 #: model:ir.model,name:mrp_multi_level.model_stock_rule
 msgid "Stock Rule"
-msgstr "Regola di magazzino"
+msgstr "Regola di giacenza"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_product_mrp_area__main_supplierinfo_id
@@ -944,7 +945,7 @@ msgstr "Tecnico: utilizzato per calcolare le quantità."
 #: model:ir.model.fields,help:mrp_multi_level.field_mrp_planned_order__company_id
 #: model:ir.model.fields,help:mrp_multi_level.field_product_mrp_area__company_id
 msgid "The company is automatically set from your user preferences."
-msgstr "L'azienda è impostata automaticamente dalle impostazioni utente."
+msgstr "L'azienda è impostata automaticamente in base alle preferenze utente."
 
 #. module: mrp_multi_level
 #: model:ir.model.constraint,message:mrp_multi_level.constraint_product_mrp_area_product_mrp_area_uniq
@@ -1052,7 +1053,7 @@ msgstr "Verificato per MRP"
 #. module: mrp_multi_level
 #: model:ir.model.fields.selection,name:mrp_multi_level.selection__mrp_move__state__waiting
 msgid "Waiting"
-msgstr "Attesa"
+msgstr "In attesa"
 
 #. module: mrp_multi_level
 #: model:ir.model.fields,field_description:mrp_multi_level.field_mrp_area__warehouse_id

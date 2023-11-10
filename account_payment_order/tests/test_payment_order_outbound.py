@@ -17,6 +17,16 @@ class TestPaymentOrderOutboundBase(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls, chart_template_ref=None):
         super().setUpClass(chart_template_ref=chart_template_ref)
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
         cls.company = cls.company_data["company"]
         cls.env.user.company_id = cls.company.id
         cls.partner = cls.env["res.partner"].create(
@@ -209,6 +219,14 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         self.assertEqual(order.move_ids[0].date, order.payment_ids[0].date)
         self.assertEqual(order.state, "uploaded")
 
+    def test_account_payment_line_creation_without_payment_mode(self):
+        self.invoice.payment_mode_id = False
+        self.invoice.action_post()
+        with self.assertRaises(UserError):
+            self.env["account.invoice.payment.line.multi"].with_context(
+                active_model="account.move", active_ids=self.invoice.ids
+            ).create({}).run()
+
     def test_cancel_payment_order(self):
         # Open invoice
         self.invoice.action_post()
@@ -252,6 +270,21 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         )
         with self.assertRaises(ValidationError):
             outbound_order.date_scheduled = date.today() - timedelta(days=2)
+
+    def test_invoice_communication_01(self):
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
+        self.invoice.ref = "F1243"
+        self.assertEqual(
+            "F1243", self.invoice._get_payment_order_communication_direct()
+        )
+
+    def test_invoice_communication_02(self):
+        self.invoice.payment_reference = "R1234"
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
 
     def test_manual_line_and_manual_date(self):
         # Create payment order
@@ -308,6 +341,68 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
             fields.Date.context_today(outbound_order),
         )
 
+    def test_partial_reconciliation(self):
+        """
+        Confirm both supplier invoices
+        Add invoices to payment order
+        Reduce payment amount of first invoice from 100 to 80
+        Take payment order all the way to uploaded
+        Confirm 80 reconciled with first, not second invoice
+
+        generated2uploaded() does partial reconciliation of non-matching
+        line amounts before running .reconcile() against the remaining
+        matching line amounts.
+        """
+        # Open both invoices
+        self.invoice.action_post()
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
+        self.invoice_02.action_post()
+        self.assertEqual(
+            "F1243", self.invoice_02._get_payment_order_communication_direct()
+        )
+
+        # Add to payment order using the wizard
+        self.env["account.invoice.payment.line.multi"].with_context(
+            active_model="account.move",
+            active_ids=self.invoice.ids + self.invoice_02.ids,
+        ).create({}).run()
+
+        payment_order = self.env["account.payment.order"].search(self.domain)
+        self.assertEqual(len(payment_order), 1)
+
+        payment_order.write({"journal_id": self.bank_journal.id})
+
+        self.assertEqual(len(payment_order.payment_line_ids), 2)
+        self.assertFalse(payment_order.payment_ids)
+
+        # Reduce payment of first invoice from 100 to 80
+        first_payment_line, second_payment_line = payment_order.payment_line_ids
+        first_payment_line.write({"amount_currency": 80.0})
+
+        # Open payment order
+        payment_order.draft2open()
+
+        # Confirm single payment (grouped - two invoices one partner)
+        self.assertEqual(payment_order.payment_count, 1)
+
+        # Generate and upload
+        payment_order.open2generated()
+        payment_order.generated2uploaded()
+
+        self.assertEqual(payment_order.state, "uploaded")
+        with self.assertRaises(UserError):
+            payment_order.unlink()
+
+        # Confirm payments were reconciled against correct invoices
+        self.assertEqual(first_payment_line.amount_currency, 80.0)
+        self.assertEqual(
+            first_payment_line.move_line_id.amount_residual_currency, -20.0
+        )
+        self.assertEqual(second_payment_line.amount_currency, 100.0)
+        self.assertEqual(second_payment_line.move_line_id.amount_residual_currency, 0.0)
+
     def test_supplier_refund(self):
         """
         Confirm the supplier invoice
@@ -318,6 +413,9 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         and the credit note one
         """
         self.invoice.action_post()
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
         self.refund = self._create_supplier_refund(self.invoice)
         with Form(self.refund) as refund_form:
             refund_form.ref = "R1234"
@@ -325,6 +423,7 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
                 line_form.price_unit = 75.0
 
         self.refund.action_post()
+        self.assertEqual("R1234", self.refund._get_payment_order_communication_direct())
 
         self.env["account.invoice.payment.line.multi"].with_context(
             active_model="account.move", active_ids=self.invoice.ids
@@ -351,13 +450,18 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         """
         self.invoice.payment_reference = "F/1234"
         self.invoice.action_post()
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
         self.refund = self._create_supplier_refund(self.invoice)
         with Form(self.refund) as refund_form:
             refund_form.ref = "R1234"
+            refund_form.payment_reference = "FR/1234"
             with refund_form.invoice_line_ids.edit(0) as line_form:
                 line_form.price_unit = 75.0
 
         self.refund.action_post()
+        self.assertEqual("R1234", self.refund._get_payment_order_communication_direct())
 
         # The user add the outstanding payment to the invoice
         invoice_line = self.invoice.line_ids.filtered(
@@ -379,7 +483,8 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
 
         self.assertEqual(len(payment_order.payment_line_ids), 1)
 
-        self.assertEqual("F/1234 R1234", payment_order.payment_line_ids.communication)
+        self.assertEqual("F1242 R1234", payment_order.payment_line_ids.communication)
+        self.assertNotIn("FR/1234", payment_order.payment_line_ids.communication)
 
     def test_supplier_manual_refund(self):
         """
@@ -392,11 +497,15 @@ class TestPaymentOrderOutbound(TestPaymentOrderOutboundBase):
         and the credit note one
         """
         self.invoice.action_post()
+        self.assertEqual(
+            "F1242", self.invoice._get_payment_order_communication_direct()
+        )
         self.refund = self._create_supplier_refund(self.invoice, manual=True)
         with Form(self.refund) as refund_form:
             refund_form.ref = "R1234"
 
         self.refund.action_post()
+        self.assertEqual("R1234", self.refund._get_payment_order_communication_direct())
 
         (self.invoice.line_ids + self.refund.line_ids).filtered(
             lambda line: line.account_internal_type == "payable"

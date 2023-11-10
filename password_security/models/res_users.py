@@ -55,6 +55,8 @@ class ResUsers(models.Model):
     def get_password_policy(self):
         data = super(ResUsers, self).get_password_policy()
         company_id = self.env.user.company_id
+        if not company_id.password_policy_enabled:
+            return data
         data.update(
             {
                 "password_lower": company_id.password_lower,
@@ -69,7 +71,8 @@ class ResUsers(models.Model):
 
     def _check_password_policy(self, passwords):
         result = super(ResUsers, self)._check_password_policy(passwords)
-
+        if not self.env.user.company_id.password_policy_enabled:
+            return result
         for password in passwords:
             if not password:
                 continue
@@ -115,6 +118,8 @@ class ResUsers(models.Model):
         return "\r".join(message)
 
     def _check_password(self, password):
+        if not self.env.user.company_id.password_policy_enabled:
+            return True
         self._check_password_rules(password)
         self._check_password_history(password)
         return True
@@ -143,6 +148,8 @@ class ResUsers(models.Model):
 
     def _password_has_expired(self):
         self.ensure_one()
+        if not self.company_id.password_policy_enabled:
+            return False
         if not self.password_write_date:
             return True
 
@@ -164,11 +171,13 @@ class ResUsers(models.Model):
         :raises: UserError on invalidated pass reset attempt
         :return: True on allowed reset
         """
-        for rec_id in self:
-            pass_min = rec_id.company_id.password_minimum
+        for user in self:
+            if not user.company_id.password_policy_enabled:
+                continue
+            pass_min = user.company_id.password_minimum
             if pass_min <= 0:
-                pass
-            write_date = rec_id.password_write_date
+                continue
+            write_date = user.password_write_date
             delta = timedelta(hours=pass_min)
             if write_date + delta > datetime.now():
                 raise UserError(
@@ -185,23 +194,36 @@ class ResUsers(models.Model):
         :raises: UserError on reused password
         """
         crypt = self._crypt_context()
-        for rec_id in self:
-            recent_passes = rec_id.company_id.password_history
-            if recent_passes < 0:
-                recent_passes = rec_id.password_history_ids
+        for user in self:
+            password_history = user.company_id.password_history
+            if not password_history:  # disabled
+                recent_passes = self.env["res.users.pass.history"].browse()
+            elif password_history < 0:  # unlimited
+                recent_passes = user.password_history_ids
             else:
-                recent_passes = rec_id.password_history_ids[0 : recent_passes - 1]
+                recent_passes = user.password_history_ids[:password_history]
             if recent_passes.filtered(
                 lambda r: crypt.verify(password, r.password_crypt)
             ):
                 raise UserError(
                     _("Cannot use the most recent %d passwords")
-                    % rec_id.company_id.password_history
+                    % user.company_id.password_history
                 )
 
     def _set_encrypted_password(self, uid, pw):
         """It saves password crypt history for history rules"""
         res = super(ResUsers, self)._set_encrypted_password(uid, pw)
-
+        if not self.env.user.company_id.password_policy_enabled:
+            return res
         self.write({"password_history_ids": [(0, 0, {"password_crypt": pw})]})
         return res
+
+    def action_reset_password(self):
+        """Disallow password resets inside of Minimum Hours"""
+        if not self.env.context.get("install_mode") and not self.env.context.get(
+            "create_user"
+        ):
+            if not self.env.user._is_admin():
+                users = self.filtered(lambda user: user.active)
+                users._validate_pass_reset()
+        return super().action_reset_password()

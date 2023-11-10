@@ -3,7 +3,7 @@
 from datetime import timedelta
 
 from odoo import _, fields, models
-from odoo.exceptions import RedirectWarning
+from odoo.exceptions import ValidationError
 from odoo.tools.date_utils import relativedelta
 
 
@@ -23,7 +23,6 @@ class ResPartner(models.Model):
             "no_mail_to_attendees": False
             if self.env.company.sale_planner_mail_to_attendees
             else True,
-            "calendar_event_primary_only": True,
             "default_target_partner_id": self.id,
             "default_categ_ids": [(4, categ.id)],
             "default_location": self._display_address(),
@@ -57,6 +56,7 @@ class ResPartner(models.Model):
             ("target_partner_id", "=", self.id),
             ("recurrency", "=", True),
             ("recurrence_id.until", ">", fields.Date.today()),
+            ("is_base_recurrent_event", "=", True),
         ]
         return action
 
@@ -66,25 +66,18 @@ class ResPartner(models.Model):
             and vals.get("user_id")
             and not self.env.context.get("skip_sale_planner_check", False)
         ):
-            calendar_events = (
-                self.env["calendar.event"]
-                .with_context(calendar_event_primary_only=True)
-                .search(
-                    [
-                        ("target_partner_id", "in", self.ids),
-                        ("recurrency", "!=", False),
-                        ("user_id", "!=", vals["user_id"]),
-                    ]
-                )
+            calendar_events = self.env["calendar.event"].search(
+                [
+                    ("target_partner_id", "in", self.ids),
+                    ("recurrency", "!=", False),
+                    ("user_id", "!=", vals["user_id"]),
+                    ("is_base_recurrent_event", "=", True),
+                ]
             )
             if calendar_events:
-                action = self.env["ir.actions.act_window"]._for_xml_id(
-                    "sale_planner_calendar.action_sale_planner_calendar_reassign_wiz"
-                )
-                action["target"] = "new"
                 msg = _(
                     "This partner has sale planned events\n"
                     "You must change salesperson from the planner wizard"
                 )
-                raise RedirectWarning(msg, action, _("Go to the planner wizard"))
-        return super(ResPartner, self).write(vals)
+                raise ValidationError(msg)
+        return super().write(vals)

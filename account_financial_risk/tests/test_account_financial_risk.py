@@ -12,14 +12,30 @@ class TestPartnerFinancialRisk(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super(TestPartnerFinancialRisk, cls).setUpClass()
-        cls.env.user.groups_id |= cls.env.ref("account.group_account_manager")
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
+        cls.env.user.groups_id |= cls.env.ref(
+            "account_financial_risk.group_account_financial_risk_manager"
+        )
         type_revenue = cls.env.ref("account.data_account_type_revenue")
         type_receivable = cls.env.ref("account.data_account_type_receivable")
         tax_group_taxes = cls.env.ref("account.tax_group_taxes")
-        main_company = cls.env.ref("base.main_company")
-        cls.cr.execute(
+        cls.currency_usd = cls.env.ref("base.USD")
+        cls.currency_usd.active = True
+        # Make sure the currency of the company is USD, as this not always happens
+        # To be removed in V17: https://github.com/odoo/odoo/pull/107113
+        cls.company = cls.env.company
+        cls.env.cr.execute(
             "UPDATE res_company SET currency_id = %s WHERE id = %s",
-            [cls.env.ref("base.USD").id, main_company.id],
+            (cls.currency_usd.id, cls.company.id),
         )
         cls.account_sale = cls.env["account.account"].create(
             {

@@ -321,7 +321,6 @@ msgstr ""
 
 #. module: l10n_es_vat_book
 #: model:ir.model.fields,help:l10n_es_vat_book.field_l10n_es_vat_book__message_has_error
-#: model:ir.model.fields,help:l10n_es_vat_book.field_l10n_es_vat_book__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si està marcat, hi ha missatges que tenen error de lliurament."
 
@@ -462,11 +461,6 @@ msgstr "Missatge d'error de l'enviament"
 #: model:ir.model.fields,field_description:l10n_es_vat_book.field_l10n_es_vat_book__message_ids
 msgid "Messages"
 msgstr "Missatges"
-
-#. module: l10n_es_vat_book
-#: model:ir.model.fields,field_description:l10n_es_vat_book.field_l10n_es_vat_book__model_id
-msgid "Model"
-msgstr "Model"
 
 #. module: l10n_es_vat_book
 #: model:ir.model.fields,field_description:l10n_es_vat_book.field_l10n_es_vat_book__number
@@ -635,11 +629,6 @@ msgstr "Identificador de l'informe"
 #: model:ir.model.fields,field_description:l10n_es_vat_book.field_l10n_es_vat_book__activity_user_id
 msgid "Responsible User"
 msgstr "Usuari responsable"
-
-#. module: l10n_es_vat_book
-#: model:ir.model.fields,field_description:l10n_es_vat_book.field_l10n_es_vat_book__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Missatge d'error de l'enviament"
 
 #. module: l10n_es_vat_book
 #: model:ir.model,name:l10n_es_vat_book.model_l10n_es_vat_book_line
@@ -942,6 +931,12 @@ msgstr "Any"
 #: model:ir.actions.report,print_report_name:l10n_es_vat_book.l10n_es_vat_book_xlsx
 msgid "object.get_report_file_name()"
 msgstr "object.get_report_file_name()"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Missatge d'error de l'enviament"
+
+#~ msgid "Model"
+#~ msgstr "Model"
 
 #~ msgid "You have"
 #~ msgstr "Teniu"

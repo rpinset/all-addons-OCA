@@ -4,7 +4,7 @@
 
 {
     "name": "Plausible analytics",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.1.1",
     "author": "Odoo S.A., ForgeFlow, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/website",
     "maintainers": ["LoisRForgeFlow"],
@@ -16,5 +16,13 @@
         "views/website_config_settings.xml",
         "views/templates.xml",
     ],
+    "assets": {
+        "web.assets_backend": [
+            "website_plausible/static/src/scss/website.backend.scss",
+        ],
+        "web.assets_qweb": [
+            "website_plausible/static/src/xml/website.backend.xml",
+        ],
+    },
     "installable": True,
 }

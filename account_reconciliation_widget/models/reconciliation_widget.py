@@ -794,6 +794,8 @@ class AccountReconciliation(models.AbstractModel):
             "&",
             "&",
             "&",
+            "&",
+            ("id", "not in", st_line.move_id.line_ids.ids),
             ("reconciled", "=", False),
             ("account_id.reconcile", "=", True),
             ("balance", "!=", 0.0),
@@ -1020,11 +1022,14 @@ class AccountReconciliation(models.AbstractModel):
         statement_currency = (
             st_line.journal_id.currency_id or st_line.journal_id.company_id.currency_id
         )
-        if st_line.amount_currency and st_line.currency_id:
-            amount = st_line.amount_currency
-            amount_currency = st_line.amount
+        st_line_currency = (
+            st_line.foreign_currency_id or st_line.currency_id or statement_currency
+        )
+        if st_line.amount_currency and (st_line_currency != statement_currency):
+            amount = st_line.amount
+            amount_currency = st_line.amount_currency
             amount_currency_str = formatLang(
-                self.env, abs(amount_currency), currency_obj=statement_currency
+                self.env, abs(amount_currency), currency_obj=st_line_currency
             )
         else:
             amount = st_line.amount
@@ -1045,7 +1050,7 @@ class AccountReconciliation(models.AbstractModel):
             "date": format_date(self.env, st_line.date),
             "amount": amount,
             "amount_str": amount_str,  # Amount in the statement line currency
-            "currency_id": st_line.currency_id.id or statement_currency.id,
+            "currency_id": (st_line.currency_id or statement_currency).id,
             "partner_id": st_line.partner_id.id,
             "journal_id": st_line.journal_id.id,
             "statement_id": st_line.statement_id.id,
@@ -1147,10 +1152,11 @@ class AccountReconciliation(models.AbstractModel):
         """
         if len(move_line_ids) < 1 or len(move_line_ids) + len(new_mv_line_dicts) < 2:
             raise UserError(_("A reconciliation must involve at least 2 move lines."))
-
-        account_move_line = self.env["account.move.line"].browse(move_line_ids)
-        writeoff_lines = self.env["account.move.line"]
-
+        AccountMoveLine = self.env["account.move.line"].with_context(
+            skip_account_move_synchronization=True
+        )
+        account_move_line = AccountMoveLine.browse(move_line_ids)
+        writeoff_lines = AccountMoveLine
         # Create writeoff move lines
         if len(new_mv_line_dicts) > 0:
             company_currency = account_move_line[0].account_id.company_id.currency_id

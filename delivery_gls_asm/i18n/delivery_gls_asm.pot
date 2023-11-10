@@ -423,6 +423,13 @@ msgid "GLASS"
 msgstr ""
 
 #. module: delivery_gls_asm
+#: model_terms:ir.ui.view,arch_db:delivery_gls_asm.delivery_manifest_wizard_form
+msgid ""
+"GLS API does no longer support the manifest creation, so keep in mind that the\n"
+"                    data will be retrieved from Odoo."
+msgstr ""
+
+#. module: delivery_gls_asm
 #: model:ir.model.fields.selection,name:delivery_gls_asm.selection__delivery_carrier__delivery_type__gls_asm
 msgid "GLS ASM"
 msgstr ""
@@ -515,9 +522,9 @@ msgstr ""
 #: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
 #, python-format
 msgid ""
-"GLS returned an error trying to record the shipping for %(ref).\n"
+"GLS returned an error trying to record the shipping for %(ref)s.\n"
 "Error:\n"
-"%(error)"
+"%(error)s"
 msgstr ""
 
 #. module: delivery_gls_asm
@@ -540,18 +547,18 @@ msgstr ""
 #: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
 #, python-format
 msgid ""
-"GLS: No response from server getting state from ref %(ref).\n"
+"GLS: No response from server getting state from ref %(ref)s.\n"
 "Traceback:\n"
-"%(error)"
+"%(error)s"
 msgstr ""
 
 #. module: delivery_gls_asm
 #: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
 #, python-format
 msgid ""
-"GLS: No response from server printing label with ref %(ref).\n"
+"GLS: No response from server printing label with ref %(ref)s.\n"
 "Traceback:\n"
-"%(error)"
+"%(error)s"
 msgstr ""
 
 #. module: delivery_gls_asm
@@ -672,21 +679,22 @@ msgstr ""
 
 #. module: delivery_gls_asm
 #: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
+#: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
 #, python-format
 msgid ""
-"No response from server getting manifisto for GLS.\n"
+"No response from server recording GLS delivery %(ref)s.\n"
 "Traceback:\n"
-"%(error)"
+"%(error)s"
 msgstr ""
 
 #. module: delivery_gls_asm
-#: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
-#: code:addons/delivery_gls_asm/models/gls_asm_request.py:0
-#, python-format
-msgid ""
-"No response from server recording GLS delivery %(ref).\n"
-"Traceback:\n"
-"%(error)"
+#: model:ir.model.fields,field_description:delivery_gls_asm.field_stock_picking__gls_shipping_notes
+msgid "Notas de envío GLS"
+msgstr ""
+
+#. module: delivery_gls_asm
+#: model_terms:ir.ui.view,arch_db:delivery_gls_asm.view_picking_gls_form
+msgid "Notas para GLS"
 msgstr ""
 
 #. module: delivery_gls_asm
@@ -989,7 +997,7 @@ msgstr ""
 #: code:addons/delivery_gls_asm/models/delivery_carrier.py:0
 #, python-format
 msgid ""
-"Unable to cancel GLS Expedition with reference {} as it is in state {}.\n"
+"Unable to cancel GLS Expedition with reference %(ref)s as it is in state %(state)s.\n"
 "Please manage the cancellation of this shipment/pickup with GLS via email."
 msgstr ""
 

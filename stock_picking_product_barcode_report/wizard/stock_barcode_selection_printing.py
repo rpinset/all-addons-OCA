@@ -24,6 +24,10 @@ class ProductPrintingQty(models.TransientModel):
         readonly=False,
     )
     lot_id = fields.Many2one("stock.production.lot", string="Lot/Serial Number")
+    result_package_id = fields.Many2one(
+        comodel_name="stock.quant.package", string="Dest. package"
+    )
+
     wizard_id = fields.Many2one("stock.picking.print", string="Wizard")
     move_line_id = fields.Many2one("stock.move.line", "Move")
 
@@ -64,6 +68,9 @@ class WizStockBarcodeSelectionPrinting(models.TransientModel):
         default=_default_barcode_report,
         required=True,
     )
+    is_custom_label = fields.Boolean(compute="_compute_is_custom_label")
+    html_content = fields.Html()
+    label_qty = fields.Integer(default=1)
 
     @api.onchange("picking_ids", "barcode_report")
     def _onchange_picking_ids(self):
@@ -86,13 +93,21 @@ class WizStockBarcodeSelectionPrinting(models.TransientModel):
 
     @api.model
     def _get_move_lines(self, picking):
+        stock_move_line_to_print_id = self.env.context.get(
+            "stock_move_line_to_print", False
+        )
+        if stock_move_line_to_print_id:
+            return self.env["stock.move.line"].browse(stock_move_line_to_print_id)
+
         if self.barcode_report == self.env.ref(
-            "stock_picking_product_barcode_report."
-            "action_label_barcode_report_quant_package"
+            "stock_picking_product_barcode_report.action_label_barcode_report_quant_package"
         ):
             return picking.move_line_ids.filtered("result_package_id")
-        else:
+        elif self.barcode_report == self.env.ref(
+            "stock_picking_product_barcode_report.action_label_barcode_report"
+        ):
             return picking.move_line_ids.filtered("product_id.barcode")
+        return picking.move_line_ids
 
     @api.model
     def _prepare_data_from_move_line(self, move_line):
@@ -102,10 +117,18 @@ class WizStockBarcodeSelectionPrinting(models.TransientModel):
             "label_qty": 1,
             "move_line_id": move_line.id,
             "uom_id": move_line.product_uom_id.id,
-            "lot_id": move_line.lot_id,
+            "lot_id": move_line.lot_id.id,
+            "result_package_id": move_line.result_package_id.id,
         }
 
     def print_labels(self):
+        if self.is_custom_label:
+            return self.barcode_report.report_action(self)
         print_move = self.product_print_moves.filtered(lambda p: p.label_qty > 0)
         if print_move:
             return self.barcode_report.report_action(self.product_print_moves)
+
+    @api.onchange("barcode_report")
+    def _compute_is_custom_label(self):
+        for record in self:
+            record.is_custom_label = record.barcode_report.is_custom_label

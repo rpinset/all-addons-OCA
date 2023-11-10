@@ -69,7 +69,11 @@ def get_sentry_logging(level=DEFAULT_LOG_LEVEL):
     if level not in LOG_LEVEL_MAP:
         level = DEFAULT_LOG_LEVEL
 
-    return LoggingIntegration(level=LOG_LEVEL_MAP[level], event_level=logging.WARNING)
+    return LoggingIntegration(
+        # Gather warnings into breadcrumbs regardless of actual logging level
+        level=logging.WARNING,
+        event_level=LOG_LEVEL_MAP[level],
+    )
 
 
 def get_sentry_options():
@@ -77,9 +81,7 @@ def get_sentry_options():
         SentryOption("dsn", "", str.strip),
         SentryOption("transport", DEFAULT_OPTIONS["transport"], select_transport),
         SentryOption("logging_level", DEFAULT_LOG_LEVEL, get_sentry_logging),
-        SentryOption(
-            "include_local_variables", DEFAULT_OPTIONS["include_local_variables"], None
-        ),
+        SentryOption("with_locals", DEFAULT_OPTIONS["with_locals"], None),
         SentryOption(
             "max_breadcrumbs", DEFAULT_OPTIONS["max_breadcrumbs"], to_int_if_defined
         ),

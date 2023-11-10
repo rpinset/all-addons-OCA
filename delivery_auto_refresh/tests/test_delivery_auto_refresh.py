@@ -1,4 +1,4 @@
-# Copyright 2018 Tecnativa - Pedro M. Baeza
+# Copyright 2018-2023 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo.tests import Form, common, tagged
@@ -140,6 +140,37 @@ class TestDeliveryAutoRefresh(common.TransactionCase):
         line_delivery = self.order.order_line.filtered("is_delivery")
         self.assertEqual(line_delivery.price_unit, 50)
 
+    def test_auto_refresh_picking_fixed_price(self):
+        self.settings.refresh_after_picking = True
+        self.settings.execute()
+        product_fixed_price = self.env["product.product"].create(
+            {
+                "name": "Test carrier fixed price auto refresh",
+                "type": "service",
+            }
+        )
+        carrier_form = Form(self.env["delivery.carrier"])
+        carrier_form.name = product_fixed_price.name
+        carrier_form.product_id = product_fixed_price
+        carrier_form.delivery_type = "fixed"
+        carrier_form.fixed_price = 2
+        carrier_fixed_price = carrier_form.save()
+        wiz = Form(
+            self.env["choose.delivery.carrier"].with_context(
+                default_order_id=self.order.id,
+                default_carrier_id=carrier_fixed_price.id,
+            )
+        ).save()
+        wiz.button_confirm()
+        self.order.action_confirm()
+        self.order.action_done()  # Lock order to check writing protection disabling
+        picking = self.order.picking_ids
+        picking.action_assign()
+        picking.move_line_ids[0].qty_done = 2
+        picking._action_done()
+        line_delivery = self.order.order_line.filtered("is_delivery")
+        self.assertEqual(line_delivery.price_unit, 2)
+
     def test_no_auto_refresh_picking(self):
         self.settings.refresh_after_picking = False
         self.settings.execute()
@@ -269,4 +300,21 @@ class TestDeliveryAutoRefresh(common.TransactionCase):
         sale_form = Form(self.order)
         sale_form.order_line.remove(0)
         sale_form.save()
+        self.assertFalse(delivery_line.exists())
+
+    def test_auto_add_delivery_line_add_service(self):
+        """Delivery line should not be created because
+        there are only service products in SO"""
+        service = self.env["product.product"].create(
+            {"name": "Service Test", "type": "service"}
+        )
+        order_form = Form(self.env["sale.order"])
+        order_form.partner_id = self.partner
+        order_form.partner_invoice_id = self.partner
+        order_form.partner_shipping_id = self.partner
+        with order_form.order_line.new() as ol_form:
+            ol_form.product_id = service
+            ol_form.product_uom_qty = 2
+        order = order_form.save()
+        delivery_line = order.order_line.filtered("is_delivery")
         self.assertFalse(delivery_line.exists())

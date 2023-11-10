@@ -126,6 +126,7 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
         data = {
             "origin": origin,
             "partner_id": self.supplier_id.id,
+            "payment_term_id": self.supplier_id.property_supplier_payment_term_id.id,
             "fiscal_position_id": supplier.property_account_position_id
             and supplier.property_account_position_id.id
             or False,
@@ -176,7 +177,8 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
         # Suggest the supplier min qty as it's done in Odoo core
         min_qty = item.line_id._get_supplier_min_qty(product, po.partner_id)
         qty = max(qty, min_qty)
-        date_required = item.line_id.date_required
+        date_required = fields.Datetime.to_datetime(item.line_id.date_required)
+        context_date = fields.Datetime.context_timestamp(self, date_required)
         vals = {
             "name": product.name,
             "order_id": po.id,
@@ -186,9 +188,7 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
             "product_qty": qty,
             "account_analytic_id": item.line_id.analytic_account_id.id,
             "purchase_request_lines": [(4, item.line_id.id)],
-            "date_planned": datetime(
-                date_required.year, date_required.month, date_required.day
-            ),
+            "date_planned": date_required - context_date.utcoffset(),
             "move_dest_ids": [(4, x.id) for x in item.line_id.move_dest_ids],
         }
         if item.line_id.analytic_tag_ids:
@@ -303,10 +303,9 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
             po_line._onchange_quantity()
             # The onchange quantity is altering the scheduled date of the PO
             # lines. We do not want that:
-            date_required = item.line_id.date_required
-            po_line.date_planned = datetime(
-                date_required.year, date_required.month, date_required.day
-            )
+            date_required = fields.Datetime.to_datetime(item.line_id.date_required)
+            context_date = fields.Datetime.context_timestamp(self, date_required)
+            po_line.date_planned = date_required - context_date.utcoffset()
             res.append(purchase.id)
 
         return {

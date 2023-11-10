@@ -110,6 +110,7 @@ class TestHrExpenseAdvanceClearing(common.TransactionCase):
                 "name": description,
                 "employee_id": expense.employee_id.id,
                 "expense_line_ids": [(6, 0, [expense.id])],
+                "advance": advance,
             }
         )
         return expense_sheet
@@ -211,10 +212,8 @@ class TestHrExpenseAdvanceClearing(common.TransactionCase):
         self.assertEqual(self.clearing_equal.advance_sheet_residual, 0.0)
         # Clear this with previous advance is done
         self.clearing_more.advance_sheet_id = self.advance
-        self.clearing_more.action_submit_sheet()
-        self.clearing_more.approve_expense_sheets()
         with self.assertRaises(ValidationError):
-            self.clearing_more.action_sheet_move_create()
+            self.clearing_more.action_submit_sheet()
         # There are 2 clearing in advance
         self.assertEqual(self.advance.clearing_count, 2)
         # Check link clearing in advance must be equal clearing count

@@ -304,9 +304,7 @@ msgstr ""
 
 #. module: hr_course
 #: model:ir.model.fields,help:hr_course.field_hr_course__message_has_error
-#: model:ir.model.fields,help:hr_course.field_hr_course__message_has_sms_error
 #: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_has_error
-#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -323,6 +321,11 @@ msgstr ""
 #. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__instructor_ids
 msgid "Instructor"
+msgstr ""
+
+#. module: hr_course
+#: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
+msgid "Internal notes"
 msgstr ""
 
 #. module: hr_course
@@ -378,6 +381,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__name
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__name
 msgid "Name"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__note
+msgid "Note"
 msgstr ""
 
 #. module: hr_course
@@ -454,12 +462,6 @@ msgstr ""
 #. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__result
 msgid "Result"
-msgstr ""
-
-#. module: hr_course
-#: model:ir.model.fields,field_description:hr_course.field_hr_course__message_has_sms_error
-#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__message_has_sms_error
-msgid "SMS Delivery error"
 msgstr ""
 
 #. module: hr_course

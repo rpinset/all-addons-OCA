@@ -1064,6 +1064,7 @@ msgstr ""
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_event__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_mail__use_sessions
+#: model:ir.model.fields,field_description:event_session.field_event_mail_scheduler_template__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_mail_session__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_registration__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_session__use_sessions
@@ -1169,6 +1170,14 @@ msgid ""
 msgstr ""
 
 #. module: event_session
+#: model:ir.model.fields,help:event_session.field_event_session__seats_min
+msgid ""
+"For each event you can define a minimum reserved seats (number of "
+"attendees). If it does not reach the mentioned registrations, the event is "
+"highlighted in the list."
+msgstr ""
+
+#. module: event_session
 #: model:ir.model.fields.selection,name:event_session.selection__wizard_event_session__byday__4
 msgid "Fourth"
 msgstr ""
@@ -1197,6 +1206,11 @@ msgstr ""
 #. module: event_session
 #: model_terms:ir.ui.view,arch_db:event_session.view_event_session_search
 msgid "Future Activities"
+msgstr ""
+
+#. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__general_question_ids
+msgid "General Questions"
 msgstr ""
 
 #. module: event_session
@@ -1240,7 +1254,6 @@ msgstr ""
 
 #. module: event_session
 #: model:ir.model.fields,help:event_session.field_event_session__message_has_error
-#: model:ir.model.fields,help:event_session.field_event_session__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -1415,6 +1428,11 @@ msgid "Mail Schedule"
 msgstr "Mail planner"
 
 #. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__event_mail_template_id
+msgid "Mail Template Scheduler"
+msgstr ""
+
+#. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_session__message_main_attachment_id
 msgid "Main Attachment"
 msgstr ""
@@ -1422,6 +1440,7 @@ msgstr ""
 #. module: event_session
 #: model:ir.model.fields,help:event_session.field_event_event__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_mail__use_sessions
+#: model:ir.model.fields,help:event_session.field_event_mail_scheduler_template__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_mail_session__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_registration__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_session__use_sessions
@@ -1452,6 +1471,11 @@ msgstr ""
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_session__message_ids
 msgid "Messages"
+msgstr ""
+
+#. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__seats_min
+msgid "Minimum Seats"
 msgstr ""
 
 #. module: event_session
@@ -1607,6 +1631,11 @@ msgid "Proposals on Website"
 msgstr ""
 
 #. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__question_ids
+msgid "Questions"
+msgstr ""
+
+#. module: event_session
 #: model:event.event,legend_done:event_session.event_event_007
 #: model:event.session,legend_done:event_session.event_session_007_1_16_00
 #: model:event.session,legend_done:event_session.event_session_007_1_18_00
@@ -1690,11 +1719,6 @@ msgid "SEO optimized"
 msgstr ""
 
 #. module: event_session
-#: model:ir.model.fields,field_description:event_session.field_event_session__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_session__sale_price_subtotal
 msgid "Sales (Tax Excluded)"
 msgstr ""
@@ -1753,6 +1777,7 @@ msgstr ""
 
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_mail__session_scheduler_ids
+#: model:ir.model.fields,field_description:event_session.field_event_mail_scheduler_template__session_scheduler_ids
 #: model:ir.model.fields,field_description:event_session.field_event_mail_session__session_scheduler_ids
 msgid "Session Mails"
 msgstr ""
@@ -1812,6 +1837,11 @@ msgstr ""
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_session__event_registrations_sold_out
 msgid "Sold Out"
+msgstr ""
+
+#. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__specific_question_ids
+msgid "Specific Questions"
 msgstr ""
 
 #. module: event_session

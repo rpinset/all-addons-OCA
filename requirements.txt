@@ -26,6 +26,7 @@ requests
 email-validator
 # generated from manifests external_dependencies
 factur-x
+PyPDF2
 PyYAML
 # generated from manifests external_dependencies
 python-dateutil
@@ -38,6 +39,7 @@ erpbrasil.base
 num2words
 phonenumbers
 pycep_correios
+workalendar
 # generated from manifests external_dependencies
 cryptography==36.0.0
 xades==0.2.4
@@ -54,6 +56,7 @@ python-dateutil
 # generated from manifests external_dependencies
 chardet
 cryptography
+deepdiff
 pycountry
 pycryptodome
 qrcode
@@ -68,11 +71,16 @@ zeep
 num2words
 promptpay
 # generated from manifests external_dependencies
+carta-ach
+python-stdnum
+# generated from manifests external_dependencies
 email_validator
 lxml
 zeep
 # generated from manifests external_dependencies
 python-barcode
+# generated from manifests external_dependencies
+xlrd
 # generated from manifests external_dependencies
 pandas>=0.25.3
 # generated from manifests external_dependencies
@@ -80,7 +88,6 @@ openupgradelib
 # generated from manifests external_dependencies
 openupgradelib
 # generated from manifests external_dependencies
-python-dateutil
 # generated from manifests external_dependencies
 cryptography
 jira
@@ -100,8 +107,14 @@ python-magic
 python_slugify
 validators
 # generated from manifests external_dependencies
+elasticsearch>=7.0.0,<=7.13.4
+requests
+unidecode
+# generated from manifests external_dependencies
 lxml
 openpyxl
+py3o.formats
+py3o.template
 PyPDF2
 xlrd
 xlsxwriter
@@ -110,19 +123,18 @@ pycups
 # generated from manifests external_dependencies
 acme<2.0.0
 astor
-cryptography
 cryptography==2.6.1
 dataclasses
 dnspython
 josepy
-lxml
 mako
+odoo_test_helper
 odoorpc
 openpyxl
 openupgradelib
 pygount
 pysftp
-sentry_sdk>=1.17.0
+sentry_sdk<=1.9.0
 # generated from manifests external_dependencies
 cryptography<37
 email_validator
@@ -132,9 +144,11 @@ python-jose
 python-ldap
 zxcvbn
 # generated from manifests external_dependencies
+hdbcli
 mysqlclient
 pymssql<=2.2.5
 sqlalchemy
+sqlalchemy-hana
 # generated from manifests external_dependencies
 pdf2image
 pyzbar
@@ -159,7 +173,7 @@ jsondiff
 marshmallow
 marshmallow-objects>=2.0.0
 parse-accept-language
-pydantic
+pydantic<2
 pyquerystring
 typing-extensions
 # generated from manifests external_dependencies

@@ -16,6 +16,16 @@ class TestSCT(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
         cls.account_model = cls.env["account.account"]
         cls.move_model = cls.env["account.move"]
         cls.journal_model = cls.env["account.journal"]
@@ -29,7 +39,9 @@ class TestSCT(TransactionCase):
         cls.partner_asus = cls.env.ref("base.res_partner_1")
         cls.partner_c2c = cls.env.ref("base.res_partner_12")
         cls.eur_currency = cls.env.ref("base.EUR")
+        cls.eur_currency.active = True
         cls.usd_currency = cls.env.ref("base.USD")
+        cls.usd_currency.active = True
         cls.main_company = cls.env["res.company"].create(
             {"name": "Test EUR company", "currency_id": cls.eur_currency.id}
         )
@@ -215,7 +227,7 @@ class TestSCT(TransactionCase):
             ),
             0,
         )
-        self.assertEqual(agrolait_bank_line.payment_reference, "F1341-F1342-A1301")
+        self.assertEqual(agrolait_bank_line.payment_reference, "F1341 - F1342 - A1301")
         self.assertEqual(agrolait_bank_line.partner_bank_id, invoice1.partner_bank_id)
 
         action = self.payment_order.open2generated()
@@ -301,7 +313,7 @@ class TestSCT(TransactionCase):
             asus_bank_line.currency_id.compare_amounts(asus_bank_line.amount, 3054.0),
             0,
         )
-        self.assertEqual(asus_bank_line.payment_reference, "Inv9032-Inv9033")
+        self.assertEqual(asus_bank_line.payment_reference, "Inv9032 - Inv9033")
         self.assertEqual(asus_bank_line.partner_bank_id, invoice1.partner_bank_id)
 
         action = self.payment_order.open2generated()

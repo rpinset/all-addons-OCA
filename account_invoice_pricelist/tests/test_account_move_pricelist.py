@@ -6,16 +6,16 @@ import inspect
 from odoo.exceptions import UserError
 from odoo.tests import common
 
-from odoo.addons.sale.models.sale import SaleOrderLine as upstream
+from odoo.addons.sale.models.sale_order_line import SaleOrderLine as upstream
 
 # if this hash fails then the original function it was copied from
 # needs to be checked to see if there are any major changes that
 # need to be updated in this module's _get_real_price_currency
 
-VALID_HASHES = ["7c0bb27c20598327008f81aee58cdfb4"]
+VALID_HASHES = ["ae1579f90ae87798e0d86f6b7427d4aa"]
 
 
-class TestAccountMovePricelist(common.SavepointCase):
+class TestAccountMovePricelist(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -28,12 +28,14 @@ class TestAccountMovePricelist(common.SavepointCase):
         cls.journal_sale = cls.env["account.journal"].create(
             {"name": "Test sale journal", "type": "sale", "code": "TEST_SJ"}
         )
+        cls.currency_usd = cls.env.ref("base.USD")
+        cls.currency_usd.active = True
         # Make sure the currency of the company is USD, as this not always happens
         # To be removed in V17: https://github.com/odoo/odoo/pull/107113
         cls.company = cls.env.company
         cls.env.cr.execute(
             "UPDATE res_company SET currency_id = %s WHERE id = %s",
-            (cls.env.ref("base.USD").id, cls.company.id),
+            (cls.currency_usd.id, cls.company.id),
         )
         cls.at_receivable = cls.env["account.account.type"].create(
             {

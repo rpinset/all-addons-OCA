@@ -23,7 +23,10 @@ class SalePlannerCalendarEvent(models.Model):
     )
     calendar_event_date = fields.Datetime(index=True)
     user_id = fields.Many2one(
-        comodel_name="res.users", default=lambda self: self.env.user.id, index=True
+        comodel_name="res.users",
+        default=lambda self: self.env.user.id,
+        index=True,
+        domain="[('share','=',False)]",
     )
     partner_id = fields.Many2one(comodel_name="res.partner", index=True)
     sale_ids = fields.One2many(
@@ -127,13 +130,23 @@ class SalePlannerCalendarEvent(models.Model):
             )
             rec.partner_contact_name = contact.name
 
-    def action_open_sale_order(self):
+    def action_open_sale_order(self, new_order=False):
         """
         Search or Create an event planner  linked to sale order
         """
-        action = self.env["ir.actions.act_window"]._for_xml_id(
-            "sale.action_quotations_with_onboarding"
+        action_xml_id = (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param(
+                "sale_planner_calendar.action_open_sale_order",
+                "sale.action_quotations_with_onboarding",
+            )
         )
+        action = self.env["ir.actions.act_window"]._for_xml_id(action_xml_id)
+        if new_order:
+            action["name"] = "New Quotation"
+            action["context"] = self.env.context
+            return action
         action["context"] = {
             "default_sale_planner_calendar_event_id": self.id,
             "default_partner_id": self.partner_id.id,
@@ -142,7 +155,7 @@ class SalePlannerCalendarEvent(models.Model):
         if len(self.sale_ids) > 1:
             action["domain"] = [("sale_planner_calendar_event_id", "=", self.id)]
         else:
-            action["views"] = [(self.env.ref("sale.view_order_form").id, "form")]
+            action["views"] = list(filter(lambda v: v[1] == "form", action["views"]))
             action["res_id"] = self.sale_ids.id
         return action
 
@@ -179,7 +192,7 @@ class SalePlannerCalendarEvent(models.Model):
         ctx = safe_eval(action["context"])
         ctx.update(
             {
-                "default_invoice_ids": [(6, 0, unpaid_invoices.ids)],
+                "invoice_ids": unpaid_invoices.ids,
                 "default_sale_planner_calendar_event_id": self.id,
                 "default_partner_id": self.partner_id.id,
             }

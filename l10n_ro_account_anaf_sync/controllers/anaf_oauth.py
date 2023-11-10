@@ -19,7 +19,7 @@ class AccountANAFSyncWeb(http.Controller):
         ["/l10n_ro_account_anaf_sync/redirect_anaf/<int:anaf_config_id>"],
         type="http",
         auth="user",
-        website=False,
+        website=True,
         sitemap=False,
     )
     def redirect_anaf(self, anaf_config_id, **kw):
@@ -56,11 +56,10 @@ class AccountANAFSyncWeb(http.Controller):
                 "last_request_datetime": now,
             }
         )
-        anaf_oauth_url = anaf_config.anaf_oauth_url
         client_id = anaf_config.client_id
         odoo_oauth_url = user.get_base_url() + "/l10n_ro_account_anaf_sync/anaf_oauth"
         redirect_url = "%s?response_type=code&client_id=%s&redirect_uri=%s" % (
-            anaf_oauth_url,
+            anaf_config.anaf_oauth_url + "/authorize",
             client_id,
             odoo_oauth_url,
         )
@@ -83,7 +82,7 @@ class AccountANAFSyncWeb(http.Controller):
         ["/l10n_ro_account_anaf_sync/anaf_oauth"],
         type="http",
         auth="public",
-        website=False,
+        website=True,
         sitemap=False,
     )
     def get_anaf_oauth_code(self, **kw):
@@ -101,7 +100,7 @@ class AccountANAFSyncWeb(http.Controller):
         message = ""
         if len(anaf_config) > 1:
             message = _(
-                "More than one ANAF config requested authentification in the last minutes."
+                "More than one ANAF config requested authentication in the last minutes."
                 "Please request them in order, waiting for 2 minutes between requests."
             )
         elif not anaf_config:
@@ -122,22 +121,17 @@ class AccountANAFSyncWeb(http.Controller):
             redirect_uri = user.get_base_url() + "/l10n_ro_account_anaf_sync/anaf_oauth"
             data = {
                 "grant_type": "authorization_code",
-                "client_id": "%s",
-                "client_secret": "%s",
-                "code": "%s",
-                "access_key": "%s",
-                "redirect_uri": "%s",
-            } % (
-                anaf_config.client_id,
-                anaf_config.client_secret,
-                code,
-                code,
-                redirect_uri,
-            )
+                "client_id": "{}".format(anaf_config.client_id),
+                "client_secret": "{}".format(anaf_config.client_secret),
+                "code": "{}".format(code),
+                "access_key": "{}".format(code),
+                "redirect_uri": "{}".format(redirect_uri),
+            }
             response = requests.post(
                 anaf_config.anaf_oauth_url + "/token",
                 data=data,
                 headers=headers,
+                timeout=1.5,
             )
             response_json = response.json()
 

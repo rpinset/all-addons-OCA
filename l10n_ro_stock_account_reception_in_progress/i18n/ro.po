@@ -23,6 +23,13 @@ msgstr "Cont"
 
 #. module: l10n_ro_stock_account_reception_in_progress
 #: model_terms:ir.ui.view,arch_db:l10n_ro_stock_account_reception_in_progress.purchase_order_form
+msgid ""
+"Are you sure you want to create reception in progress from the purchase "
+"order?"
+msgstr ""
+
+#. module: l10n_ro_stock_account_reception_in_progress
+#: model_terms:ir.ui.view,arch_db:l10n_ro_stock_account_reception_in_progress.purchase_order_form
 msgid "Create Reception in Progress Bill"
 msgstr "Creare factură pentru recepție în curs"
 
@@ -33,6 +40,7 @@ msgstr "Creare factură pentru recepție în curs"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_purchase_order__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_move__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_picking__is_l10n_ro_record
+#: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_valuation_layer__is_l10n_ro_record
 msgid "Is Romanian Record"
 msgstr "Inregistrare Romania"
 
@@ -70,6 +78,11 @@ msgstr "Recepție în curs"
 #: model:ir.model,name:l10n_ro_stock_account_reception_in_progress.model_stock_move
 msgid "Stock Move"
 msgstr "Mișcare stoc"
+
+#. module: l10n_ro_stock_account_reception_in_progress
+#: model:ir.model,name:l10n_ro_stock_account_reception_in_progress.model_stock_valuation_layer
+msgid "Stock Valuation Layer"
+msgstr ""
 
 #. module: l10n_ro_stock_account_reception_in_progress
 #: code:addons/l10n_ro_stock_account_reception_in_progress/models/purchase_order.py:0

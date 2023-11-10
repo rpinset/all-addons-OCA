@@ -418,7 +418,6 @@ msgstr "Si està marcat, els missatges nous requereixen la vostra atenció."
 
 #. module: crm_claim
 #: model:ir.model.fields,help:crm_claim.field_crm_claim__message_has_error
-#: model:ir.model.fields,help:crm_claim.field_crm_claim__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si està marcat, alguns missatges tenen un error d'entrega."
 
@@ -635,8 +634,10 @@ msgstr "Prioritat"
 msgid ""
 "Record and track your customers' claims.\n"
 "                Claims may be linked to a sales order or a lot.\n"
-"                You can send emails with attachments and keep the full history for a claim (emails sent, intervention type and so on).\n"
-"                Claims may automatically be linked to an email address using the mail gateway module."
+"                You can send emails with attachments and keep the full "
+"history for a claim (emails sent, intervention type and so on).\n"
+"                Claims may automatically be linked to an email address using "
+"the mail gateway module."
 msgstr ""
 "Enregistreu i feu el seguiment de les reclamacions dels vostres clients.\n"
 "                 Les reclamacions poden estar relacionades amb una comanda "
@@ -697,11 +698,6 @@ msgstr "Causa principal"
 #: model_terms:ir.ui.view,arch_db:crm_claim.crm_case_claims_form_view
 msgid "Root Causes"
 msgstr "Causes principals"
-
-#. module: crm_claim
-#: model:ir.model.fields,field_description:crm_claim.field_crm_claim__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error d'entrega de SMS"
 
 #. module: crm_claim
 #: model:ir.model.fields,field_description:crm_claim.field_crm_claim__team_id
@@ -868,3 +864,6 @@ msgstr ""
 "Podeu crear etapes de reclamació per categoritzar-ne l'estat\n"
 "             al sistema. Les etapes defineixen tots els passos\n"
 "             necessaris per a la resolució d'una reclamació."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error d'entrega de SMS"

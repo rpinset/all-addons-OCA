@@ -1,12 +1,22 @@
 # Copyright 2018 Tecnativa - Sergio Teruel
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
-from odoo.tests import SavepointCase
+from odoo.tests import TransactionCase
 
 
-class TestProductFaoFishing(SavepointCase):
+class TestProductFaoFishing(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
         cls.product_attribute = cls.env.ref("product_fao_fishing.fao_fishing_area")
         cls.fao_technique_attribute = cls.env.ref(
             "product_fao_fishing.fao_fishing_technique"

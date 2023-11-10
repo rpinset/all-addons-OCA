@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: account-payment (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-01 00:05+0000\n"
-"PO-Revision-Date: 2021-02-01 01:08+0100\n"
-"Last-Translator: Carlos Dauden <carlos.dauden@tecnativa.com>\n"
+"PO-Revision-Date: 2023-09-21 16:38+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: Spanish (http://www.transifex.com/oca/OCA-account-payment-8-0/"
 "language/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_due_list
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
@@ -56,6 +56,11 @@ msgstr "Agrupar por"
 
 #. module: account_due_list
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
+msgid "Incoming"
+msgstr "A recibir"
+
+#. module: account_due_list
+#: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_tree
 msgid "Invoice"
 msgstr "Factura"
@@ -79,6 +84,11 @@ msgstr "Apunte contable"
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
 msgid "Not Full Reconciled"
 msgstr "No conciliado completamente"
+
+#. module: account_due_list
+#: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
+msgid "Outgoing"
+msgstr "A dar salida"
 
 #. module: account_due_list
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
@@ -109,11 +119,6 @@ msgstr "Pagos"
 #: model:ir.model.fields,field_description:account_due_list.field_account_move_line__payment_term_id
 msgid "Payment Terms"
 msgstr "Plazos de pago"
-
-#. module: account_due_list
-#: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_tree
-msgid "Payments"
-msgstr "Pagos"
 
 #. module: account_due_list
 #: model:ir.actions.act_window,name:account_due_list.action_invoice_payments
@@ -161,7 +166,7 @@ msgstr "Referencia del documento que ha creado esta factura."
 #. module: account_due_list
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_tree
 msgid "Total Balance"
-msgstr ""
+msgstr "Saldo total"
 
 #. module: account_due_list
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_tree
@@ -197,3 +202,6 @@ msgstr "Sin asentar"
 #: model_terms:ir.ui.view,arch_db:account_due_list.view_payments_filter
 msgid "Unreconciled"
 msgstr "No conciliado"
+
+#~ msgid "Payments"
+#~ msgstr "Pagos"

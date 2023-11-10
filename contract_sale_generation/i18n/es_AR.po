@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-02-23 00:17+0000\n"
+"PO-Revision-Date: 2023-10-29 07:11+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es_AR\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: contract_sale_generation
 #: model:ir.model,name:contract_sale_generation.model_contract_abstract_contract
@@ -46,20 +46,11 @@ msgstr "Línea de Contrato"
 #: code:addons/contract_sale_generation/models/contract.py:0
 #, python-format
 msgid ""
-"Contract manually sale order: <a href=\"#\" data-oe-model=\"%s\" data-oe-"
-"id=\"%s\">Sale Order</a>"
+"Contract manually sale order: <a href=\"#\" data-oe-model=\"%(model)s\" data-"
+"oe-id=\"%(id)s\">Sale Order</a>"
 msgstr ""
-"Pedido de ventas manual del contrato: <a href=\"#\" data-oe-model=\"%s\" "
-"data-oe-id=\"%s\">Pedido de Ventas</a>"
-
-#. module: contract_sale_generation
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_abstract_contract__display_name
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_contract__display_name
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_line__display_name
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order__display_name
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order_line__display_name
-msgid "Display Name"
-msgstr "Mostrar Nombre"
+"Pedido de Venta de contrato manual: <a href=\"#\" data-oe-model=\"%(model)s\""
+" data-oe-id=\"%(id)s\">Pedido de Venta</a>"
 
 #. module: contract_sale_generation
 #: model:ir.actions.server,name:contract_sale_generation.contract_cron_for_sale_ir_actions_server
@@ -67,24 +58,6 @@ msgstr "Mostrar Nombre"
 #: model:ir.cron,name:contract_sale_generation.contract_cron_for_sale
 msgid "Generate Recurring sales from Contracts"
 msgstr "Generar ventas Recurrentes desde Contratos"
-
-#. module: contract_sale_generation
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_abstract_contract__id
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_contract__id
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_line__id
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order__id
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order_line__id
-msgid "ID"
-msgstr "ID"
-
-#. module: contract_sale_generation
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_abstract_contract____last_update
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_contract____last_update
-#: model:ir.model.fields,field_description:contract_sale_generation.field_contract_line____last_update
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order____last_update
-#: model:ir.model.fields,field_description:contract_sale_generation.field_sale_order_line____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
 
 #. module: contract_sale_generation
 #: model:ir.model.fields,field_description:contract_sale_generation.field_contract_abstract_contract__sale_autoconfirm
@@ -117,3 +90,20 @@ msgid ""
 msgstr ""
 "Este es un campo técnico para saber si el pedido debe confirmarse "
 "automáticamente si se genera por contrato."
+
+#, python-format
+#~ msgid ""
+#~ "Contract manually sale order: <a href=\"#\" data-oe-model=\"%s\" data-oe-"
+#~ "id=\"%s\">Sale Order</a>"
+#~ msgstr ""
+#~ "Pedido de ventas manual del contrato: <a href=\"#\" data-oe-model=\"%s\" "
+#~ "data-oe-id=\"%s\">Pedido de Ventas</a>"
+
+#~ msgid "Display Name"
+#~ msgstr "Mostrar Nombre"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"

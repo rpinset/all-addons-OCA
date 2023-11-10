@@ -71,6 +71,7 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             {
                 "name": "Bec P21/5W",
                 "default_code": "00000623",
+                "type": "product",
                 "uom_id": uom_id,
                 "uom_po_id": uom_id,
             }
@@ -79,6 +80,7 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             {
                 "name": "Bec P21/10W",
                 "default_code": "00000624",
+                "type": "product",
                 "uom_id": uom_id,
                 "uom_po_id": uom_id,
             }
@@ -136,7 +138,6 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
             xmlns:cac=
             "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-                <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
                 <cbc:CustomizationID>
                     urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1
                 </cbc:CustomizationID>
@@ -298,3 +299,5 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             self.expected_invoice_factur_values
         )
         self.assertXmlTreeEqual(current_etree, expected_etree)
+
+    # TODO-add test for credit note

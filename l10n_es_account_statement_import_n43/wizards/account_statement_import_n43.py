@@ -285,7 +285,7 @@ class AccountStatementImport(models.TransientModel):
             # Try to match from partner name
             if conceptos.get("01"):
                 name = conceptos["01"][0][4:] + conceptos["01"][1]
-                if name:
+                if name and len(name) > 7:
                     partner = partner_obj.search([("name", "ilike", name)], limit=1)
         return partner
 
@@ -302,7 +302,7 @@ class AccountStatementImport(models.TransientModel):
             # Try to match from partner name
             if conceptos.get("01"):
                 name = conceptos["01"][0]
-                if name:
+                if name and len(name) > 7:
                     partner = partner_obj.search([("name", "ilike", name)], limit=1)
         return partner
 
@@ -322,7 +322,7 @@ class AccountStatementImport(models.TransientModel):
         # Try to match from partner name
         if conceptos.get("01"):
             name = conceptos["01"][1]
-            if name and len(name) > 5:
+            if name and len(name) > 7:
                 partner = partner_obj.search([("name", "ilike", name)], limit=1)
         return partner
 
@@ -379,6 +379,7 @@ class AccountStatementImport(models.TransientModel):
                     "payment_ref": " ".join(conceptos)
                     or self._get_n43_ref(line)
                     or "/",
+                    "ref": self._get_n43_ref(line),
                     "amount": line["importe"],
                     # inject raw parsed N43 dict for later use, that will be
                     # removed before passing final values to create the record

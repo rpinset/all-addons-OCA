@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: partner-contact (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-24 01:41+0000\n"
-"PO-Revision-Date: 2023-03-30 15:27+0000\n"
+"PO-Revision-Date: 2023-09-20 20:02+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-partner-contact-9-0/"
 "language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
@@ -77,14 +77,14 @@ msgid ""
 msgstr ""
 
 #. module: account_financial_risk
-#: model:res.groups,comment:account_financial_risk.group_overpass_partner_risk_exception
-msgid "Can Overpass Partner Risk Exceptions"
+#: model:res.groups,comment:account_financial_risk.group_account_financial_risk_manager
+msgid "Can edit risk limit and overpass partner risk exceptions"
 msgstr ""
 
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.partner_risk_exceeded_wizard
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: account_financial_risk
 #: code:addons/account_financial_risk/models/res_partner.py:0
@@ -105,7 +105,7 @@ msgstr ""
 #. module: account_financial_risk
 #: model:ir.model,name:account_financial_risk.model_res_config_settings
 msgid "Config Settings"
-msgstr "Configurazione"
+msgstr "Impostazioni configurazione"
 
 #. module: account_financial_risk
 #: model:ir.model,name:account_financial_risk.model_res_partner
@@ -187,10 +187,11 @@ msgid "Exception Msg"
 msgstr "Msg di eccezione"
 
 #. module: account_financial_risk
+#: model:ir.module.category,name:account_financial_risk.category_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
 msgid "Financial Risk"
-msgstr "Rischio Finanziario"
+msgstr "Rischio finanziario"
 
 #. module: account_financial_risk
 #: code:addons/account_financial_risk/models/account_invoice.py:0
@@ -359,6 +360,11 @@ msgid "Limit Other Account Unpaid Amount"
 msgstr "Fido Altri Importi Contabili Scaduti"
 
 #. module: account_financial_risk
+#: model:res.groups,name:account_financial_risk.group_account_financial_risk_manager
+msgid "Manager"
+msgstr ""
+
+#. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__manual_credit_currency_id
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_users__manual_credit_currency_id
 #: model:ir.model.fields.selection,name:account_financial_risk.selection__res_partner__credit_currency__manual
@@ -382,11 +388,6 @@ msgid "Partner Risk Exceeded Wizard"
 msgstr "Wizard Superamento Fido Partner"
 
 #. module: account_financial_risk
-#: model:res.groups,name:account_financial_risk.group_overpass_partner_risk_exception
-msgid "Partner Risk Manager"
-msgstr ""
-
-#. module: account_financial_risk
 #: code:addons/account_financial_risk/wizards/parner_risk_exceeded.py:0
 #, python-format
 msgid "Partner risk exceeded"
@@ -395,6 +396,11 @@ msgstr "Fido Partner Superato"
 #. module: account_financial_risk
 #: model:ir.model.fields.selection,name:account_financial_risk.selection__res_partner__credit_currency__pricelist
 msgid "Pricelist Currency"
+msgstr ""
+
+#. module: account_financial_risk
+#: model:res.groups,comment:account_financial_risk.group_account_financial_risk_user
+msgid "Read only access to financial risk info"
 msgstr ""
 
 #. module: account_financial_risk
@@ -585,6 +591,11 @@ msgstr "Totale Fatture Scadute/Saldo Principale"
 #: model:ir.model.fields,help:account_financial_risk.field_res_users__risk_invoice_draft
 msgid "Total amount of invoices in Draft or Pro-forma state"
 msgstr "Totale Importo Fatture in Bozza o Pro-forma"
+
+#. module: account_financial_risk
+#: model:res.groups,name:account_financial_risk.group_account_financial_risk_user
+msgid "User"
+msgstr ""
 
 #. module: account_financial_risk
 #: model:ir.model,name:account_financial_risk.model_validate_account_move

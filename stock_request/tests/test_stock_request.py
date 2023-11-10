@@ -1,4 +1,5 @@
 # Copyright 2017 ForgeFlow S.L.
+# Copyright 2022-2023 Tecnativa - Víctor Martínez
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl-3.0).
 
 from collections import Counter
@@ -11,11 +12,19 @@ from odoo.tests import common, new_test_user
 class TestStockRequest(common.TransactionCase):
     def setUp(self):
         super().setUp()
-
+        self.env = self.env(
+            context=dict(
+                self.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
         # common models
         self.stock_request = self.env["stock.request"]
         self.request_order = self.env["stock.request.order"]
-
         # refs
         self.stock_request_user_group = self.env.ref(
             "stock_request.group_stock_request_user"
@@ -24,7 +33,6 @@ class TestStockRequest(common.TransactionCase):
         self.warehouse = self.env.ref("stock.warehouse0")
         self.categ_unit = self.env.ref("uom.product_uom_categ_unit")
         self.virtual_loc = self.env.ref("stock.stock_location_customers")
-
         # common data
         self.company_2 = self.env["res.company"].create(
             {"name": "Comp2", "parent_id": self.main_company.id}
@@ -37,69 +45,38 @@ class TestStockRequest(common.TransactionCase):
         self.wh2 = self.env["stock.warehouse"].search(
             [("company_id", "=", self.company_2.id)], limit=1
         )
-        ctx = {
-            "mail_create_nolog": True,
-            "mail_create_nosubscribe": True,
-            "mail_notrack": True,
-            "no_reset_password": True,
-        }
         self.stock_request_user = new_test_user(
             self.env,
             login="stock_request_user",
             groups="stock_request.group_stock_request_user",
             company_ids=[(6, 0, [self.main_company.id, self.company_2.id])],
-            context=ctx,
         )
         self.stock_request_manager = new_test_user(
             self.env,
             login="stock_request_manager",
             groups="stock_request.group_stock_request_manager",
             company_ids=[(6, 0, [self.main_company.id, self.company_2.id])],
-            context=ctx,
         )
         self.product = self._create_product("SH", "Shoes", False)
         self.product_company_2 = self._create_product(
             "SH_2", "Shoes", self.company_2.id
         )
-
-        self.ressuply_loc = self.env["stock.location"].create(
-            {
-                "name": "Ressuply",
-                "location_id": self.warehouse.view_location_id.id,
-                "usage": "internal",
-                "company_id": self.main_company.id,
-            }
+        self.ressuply_loc = self._create_location(
+            name="Ressuply",
+            location_id=self.warehouse.view_location_id.id,
+            company_id=self.main_company.id,
         )
-
-        self.ressuply_loc_2 = self.env["stock.location"].create(
-            {
-                "name": "Ressuply",
-                "location_id": self.wh2.view_location_id.id,
-                "usage": "internal",
-                "company_id": self.company_2.id,
-            }
+        self.ressuply_loc_2 = self._create_location(
+            name="Ressuply",
+            location_id=self.wh2.view_location_id.id,
+            company_id=self.company_2.id,
         )
-
-        self.route = self.env["stock.location.route"].create(
-            {
-                "name": "Transfer",
-                "product_categ_selectable": False,
-                "product_selectable": True,
-                "company_id": self.main_company.id,
-                "sequence": 10,
-            }
+        self.route = self._create_location_route(
+            name="Transfer", company_id=self.main_company.id
         )
-
-        self.route_2 = self.env["stock.location.route"].create(
-            {
-                "name": "Transfer",
-                "product_categ_selectable": False,
-                "product_selectable": True,
-                "company_id": self.company_2.id,
-                "sequence": 10,
-            }
+        self.route_2 = self._create_location_route(
+            name="Transfer", company_id=self.company_2.id
         )
-
         self.uom_dozen = self.env["uom.uom"].create(
             {
                 "name": "Test-DozenA",
@@ -109,7 +86,6 @@ class TestStockRequest(common.TransactionCase):
                 "rounding": 0.001,
             }
         )
-
         self.env["stock.rule"].create(
             {
                 "name": "Transfer",
@@ -123,7 +99,6 @@ class TestStockRequest(common.TransactionCase):
                 "company_id": self.main_company.id,
             }
         )
-
         self.env["stock.rule"].create(
             {
                 "name": "Transfer",
@@ -137,7 +112,6 @@ class TestStockRequest(common.TransactionCase):
                 "company_id": self.company_2.id,
             }
         )
-
         self.env["ir.config_parameter"].sudo().set_param(
             "stock.no_auto_scheduler", "True"
         )
@@ -172,6 +146,19 @@ class TestStockRequest(common.TransactionCase):
 
     def _create_product_attribute(self, name):
         return self.env["product.attribute"].create({"name": name})
+
+    def _create_location(self, **vals):
+        return self.env["stock.location"].create(dict(usage="internal", **vals))
+
+    def _create_location_route(self, **vals):
+        return self.env["stock.location.route"].create(
+            dict(
+                product_categ_selectable=False,
+                product_selectable=True,
+                sequence=10,
+                **vals
+            )
+        )
 
 
 class TestStockRequestBase(TestStockRequest):
@@ -714,7 +701,7 @@ class TestStockRequestBase(TestStockRequest):
         self.assertEqual(stock_request_2.qty_in_progress, 0)
         self.assertEqual(stock_request_2.qty_done, 0)
         self.assertEqual(stock_request_2.qty_cancelled, 6)
-        self.assertEqual(stock_request_2.state, "done")
+        self.assertEqual(stock_request_2.state, "cancel")
 
     def test_cancel_request(self):
         expected_date = fields.Datetime.now()
@@ -1120,8 +1107,108 @@ class TestStockRequestBase(TestStockRequest):
         sr2.refresh()
         sr3.refresh()
         self.assertEqual(sr1.state, "done")
+        self.assertEqual(sr1.qty_done, 5)
         self.assertEqual(sr1.qty_cancelled, 0)
-        self.assertEqual(sr2.state, "done")
+        self.assertEqual(sr2.state, "cancel")
+        self.assertEqual(sr2.qty_done, 1)
         self.assertEqual(sr2.qty_cancelled, 4)
-        self.assertEqual(sr3.state, "done")
+        self.assertEqual(sr3.state, "cancel")
+        self.assertEqual(sr3.qty_done, 0)
         self.assertEqual(sr3.qty_cancelled, 5)
+        # Set the request order to done if there are any delivered lines
+        self.assertEqual(order.state, "done")
+
+
+class TestStockRequestOrderState(TestStockRequest):
+    def setUp(self):
+        super().setUp()
+        self.product_a = self._create_product(
+            "CODEA",
+            "Product A",
+            self.main_company.id,
+        )
+        self.product_a.route_ids = [(6, 0, self.route.ids)]
+        self.product_b = self._create_product(
+            "CODEB",
+            "Product B",
+            self.main_company.id,
+        )
+        self.product_b.route_ids = [(6, 0, self.route.ids)]
+        expected_date = fields.Datetime.now()
+        vals = {
+            "company_id": self.main_company.id,
+            "warehouse_id": self.warehouse.id,
+            "location_id": self.warehouse.lot_stock_id.id,
+            "expected_date": expected_date,
+            "stock_request_ids": [
+                (
+                    0,
+                    0,
+                    {
+                        "product_id": self.product_a.id,
+                        "product_uom_id": self.product_a.uom_id.id,
+                        "product_uom_qty": 1.0,
+                        "company_id": self.main_company.id,
+                        "warehouse_id": self.warehouse.id,
+                        "location_id": self.warehouse.lot_stock_id.id,
+                        "expected_date": expected_date,
+                    },
+                ),
+                (
+                    0,
+                    0,
+                    {
+                        "product_id": self.product_b.id,
+                        "product_uom_id": self.product_b.uom_id.id,
+                        "product_uom_qty": 1.0,
+                        "company_id": self.main_company.id,
+                        "warehouse_id": self.warehouse.id,
+                        "location_id": self.warehouse.lot_stock_id.id,
+                        "expected_date": expected_date,
+                    },
+                ),
+            ],
+        }
+        self.order = self.request_order.new(vals)
+        self.request_a = self.order.stock_request_ids.filtered(
+            lambda x: x.product_id == self.product_a
+        )
+        self.request_b = self.order.stock_request_ids.filtered(
+            lambda x: x.product_id == self.product_b
+        )
+
+    def test_stock_request_order_state_01(self):
+        """Request A: Done + Request B: Done = Done."""
+        self.order.action_confirm()
+        self.request_a.action_done()
+        self.request_b.action_done()
+        self.assertEqual(self.request_a.state, "done")
+        self.assertEqual(self.request_b.state, "done")
+        self.assertEqual(self.order.state, "done")
+
+    def test_stock_request_order_state_02(self):
+        """Request A: Cancel + Request B: Cancel = Cancel."""
+        self.order.action_confirm()
+        self.request_a.action_cancel()
+        self.request_b.action_cancel()
+        self.assertEqual(self.request_a.state, "cancel")
+        self.assertEqual(self.request_b.state, "cancel")
+        self.assertEqual(self.order.state, "cancel")
+
+    def test_stock_request_order_state_03(self):
+        """Request A: Done + Request B: Cancel = Done."""
+        self.order.action_confirm()
+        self.request_a.action_done()
+        self.request_b.action_cancel()
+        self.assertEqual(self.request_a.state, "done")
+        self.assertEqual(self.request_b.state, "cancel")
+        self.assertEqual(self.order.state, "done")
+
+    def test_stock_request_order_state_04(self):
+        """Request A: Cancel + Request B: Done = DOne."""
+        self.order.action_confirm()
+        self.request_a.action_cancel()
+        self.request_b.action_done()
+        self.assertEqual(self.request_a.state, "cancel")
+        self.assertEqual(self.request_b.state, "done")
+        self.assertEqual(self.order.state, "done")

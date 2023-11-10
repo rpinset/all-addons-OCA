@@ -235,8 +235,12 @@ class StockRequest(models.Model):
 
     def action_done(self):
         self.write({"state": "done"})
-        self.mapped("order_id").check_done()
         return True
+
+    def check_cancel(self):
+        for request in self:
+            if request._check_cancel_allocation():
+                request.write({"state": "cancel"})
 
     def check_done(self):
         precision = self.env["decimal.precision"].precision_get(
@@ -254,11 +258,12 @@ class StockRequest(models.Model):
                 >= 0
             ):
                 request.action_done()
-            elif request._check_done_allocation():
-                request.action_done()
+            elif request._check_cancel_allocation():
+                # If qty_done=0 and qty_cancelled>0 it's cancelled
+                request.write({"state": "cancel"})
         return True
 
-    def _check_done_allocation(self):
+    def _check_cancel_allocation(self):
         precision = self.env["decimal.precision"].precision_get(
             "Product Unit of Measure"
         )

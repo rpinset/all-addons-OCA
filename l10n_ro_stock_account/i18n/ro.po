@@ -38,6 +38,11 @@ msgid "Accounting Information"
 msgstr ""
 
 #. module: l10n_ro_stock_account
+#: model:res.groups,name:l10n_ro_stock_account.group_archive_svl
+msgid "Can archive SVL"
+msgstr ""
+
+#. module: l10n_ro_stock_account
 #: model:ir.model,name:l10n_ro_stock_account.model_res_company
 msgid "Companies"
 msgstr "Companii"
@@ -147,6 +152,11 @@ msgstr ""
 #. module: l10n_ro_stock_account
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_return_picking_line__l10n_ro_origin_ret_move_qty_warn
 msgid "L10N Ro Origin Ret Move Qty Warn"
+msgstr ""
+
+#. module: l10n_ro_stock_account
+#: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_valuation_layer__l10n_ro_qty_returned
+msgid "L10N Ro Qty Returned"
 msgstr ""
 
 #. module: l10n_ro_stock_account
@@ -422,6 +432,13 @@ msgstr ""
 #. module: l10n_ro_stock_account
 #: model:ir.model,name:l10n_ro_stock_account.model_stock_valuation_layer_revaluation
 msgid "Wizard model to reavaluate a stock inventory for a product"
+msgstr ""
+
+#. module: l10n_ro_stock_account
+#: code:addons/l10n_ro_stock_account/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"You cannot decrease the quantity of a move line. Please create a return."
 msgstr ""
 
 #, python-format

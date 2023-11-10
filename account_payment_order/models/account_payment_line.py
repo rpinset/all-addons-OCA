@@ -190,13 +190,26 @@ class AccountPaymentLine(models.Model):
             "date": self[:1].date,
             "currency_id": self.currency_id.id,
             "ref": self.order_id.name,
-            "payment_reference": "-".join([line.communication for line in self]),
+            "payment_reference": " - ".join([line.communication for line in self]),
             "journal_id": journal.id,
             "partner_bank_id": self.partner_bank_id.id,
             "payment_order_id": self.order_id.id,
-            "payment_method_id": self.order_id.payment_mode_id.payment_method_id.id,
             "payment_line_ids": [(6, 0, self.ids)],
         }
+        # Determine payment method line according payment method and journal
+        line = self.env["account.payment.method.line"].search(
+            [
+                (
+                    "payment_method_id",
+                    "=",
+                    self.order_id.payment_mode_id.payment_method_id.id,
+                ),
+                ("journal_id", "=", journal.id),
+            ],
+            limit=1,
+        )
+        if line:
+            vals["payment_method_line_id"] = line.id
         # Determine partner_type
         move_type = self[:1].move_line_id.move_id.move_type
         if move_type in {"out_invoice", "out_refund"}:

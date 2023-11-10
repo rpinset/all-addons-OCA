@@ -46,6 +46,17 @@ class AccountMove(models.Model):
             dest_company = src_invoice._find_company_from_invoice_partner()
             if not dest_company or src_invoice.auto_generated:
                 continue
+            # We want to avoid creating a new invoice if the destination one was already
+            # posted
+            inter_invoice = self.search(
+                [
+                    ("auto_invoice_id", "=", src_invoice.id),
+                    ("company_id", "=", dest_company.id),
+                    ("state", "=", "posted"),
+                ]
+            )
+            if inter_invoice:
+                continue
             intercompany_user = dest_company.intercompany_invoice_user_id
             if intercompany_user:
                 src_invoice = src_invoice.with_user(intercompany_user).sudo()

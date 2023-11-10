@@ -91,6 +91,13 @@ class GithubRepository(models.Model):
     github_url = fields.Char(
         string="Github URL", store=True, compute="_compute_github_url"
     )
+    inhibit_inherited_rules = fields.Boolean(
+        string="Inhibit inherited rules",
+        default=False,
+        help="If checked, the analysis rules to be used will be only those set here."
+        "\n If unchecked, the analysis rules to be used will be those set in the"
+        " organization, repository and those set here.",
+    )
     analysis_rule_ids = fields.Many2many(
         string="Analysis Rules", comodel_name="github.analysis.rule"
     )
@@ -109,11 +116,13 @@ class GithubRepository(models.Model):
             except Exception as e:
                 _logger.error(
                     _(
-                        "Error when trying to create the main folder{0}\n"
-                        " Please check Odoo Access Rights.\n {1}"
-                    ),
-                    source_path,
-                    e,
+                        "Error when trying to create the main folder %(path)s\n"
+                        " Please check Odoo Access Rights.\n %(error)s"
+                    )
+                    % {
+                        "path": source_path,
+                        "error": e,
+                    }
                 )
         if source_path and source_path not in addons.__path__:
             addons.__path__.append(source_path)
@@ -185,25 +194,22 @@ class GithubRepository(models.Model):
                     res = check_output(
                         ["git", "pull", "origin", branch.name], cwd=branch.local_path
                     )
-                    if branch.state == "to_download" or b"up-to-date" not in res:
-                        branch.write(
-                            {
-                                "last_download_date": datetime.today(),
-                                "state": "to_analyze",
-                            }
-                        )
-                    else:
-                        branch.write({"last_download_date": datetime.today()})
+                    vals = {"last_download_date": datetime.today()}
+                    if b"up to date" not in res:
+                        vals["state"] = "to_analyze"
+                    branch.write(vals)
                 except Exception:
                     # Trying to clean the local folder
                     _logger.warning(
                         _(
-                            "Error when updating the branch {0} in the local folder"
-                            " {1}.\n Deleting the local folder and trying"
+                            "Error when updating the branch %(branch)s in the local "
+                            "folder %(path)s.\nDeleting the local folder and trying"
                             " again."
-                        ),
-                        branch.name,
-                        branch.local_path,
+                        )
+                        % {
+                            "branch": branch.name,
+                            "path": branch.local_path,
+                        }
                     )
                     try:
                         shutil.rmtree(branch.local_path)
@@ -226,16 +232,25 @@ class GithubRepository(models.Model):
                         res.append(os.path.join(root, fic))
         return res
 
+    def _get_analysis_rules(self):
+        if self.inhibit_inherited_rules:
+            return self.analysis_rule_ids
+        return self.repository_id._get_analysis_rules() + self.analysis_rule_ids
+
     def set_analysis_rule_info(self):
-        rule_ids = (
-            self.repository_id.organization_id.analysis_rule_ids
-            + self.repository_id.analysis_rule_ids
-            + self.analysis_rule_ids
+        for rule_id in self._get_analysis_rules():
+            self._process_analysis_rule_info(rule_id)
+
+    def _process_analysis_rule_info(self, rule_id):
+        """Process to specific rule (Create or update info record)."""
+        analysis_rule_item = self.analysis_rule_info_ids.filtered(
+            lambda x: x.analysis_rule_id == rule_id
         )
-        for rule_id in rule_ids:
-            self._delete_analysis_rule_model_info(rule_id)
-            for vals in self._prepare_analysis_rule_info_vals(rule_id):
-                self.env[self._prepare_analysis_rule_model_info(rule_id)].create(vals)
+        vals = self._prepare_analysis_rule_info_vals(rule_id)
+        if analysis_rule_item:
+            self.analysis_rule_info_ids = [(1, analysis_rule_item.id, vals)]
+        else:
+            self.analysis_rule_info_ids = [(0, 0, vals)]
 
     def analyze_code_one(self):
         """Overload Me in custom Module that manage Source Code analysis."""
@@ -287,38 +302,18 @@ class GithubRepository(models.Model):
                     )
         return True
 
-    def _prepare_analysis_rule_model_info(self, analysis_rule_id):
-        """Define model data info that override with other addons"""
-        return "github.repository.branch.rule.info"
-
-    def _delete_analysis_rule_model_info(self, analysis_rule_id):
-        """Remove existing info data to create new records"""
-        return (
-            self.env[self._prepare_analysis_rule_model_info(analysis_rule_id)]
-            .search(
-                [
-                    ("analysis_rule_id", "=", analysis_rule_id.id),
-                    ("repository_branch_id", "=", self.id),
-                ]
-            )
-            .sudo()
-            .unlink()
-        )
-
     def _prepare_analysis_rule_info_vals(self, analysis_rule_id):
         """Prepare info vals"""
         res = self._operation_analysis_rule_id(analysis_rule_id)
-        return [
-            {
-                "analysis_rule_id": analysis_rule_id.id,
-                "repository_branch_id": self.id,
-                "code_count": res["code"],
-                "documentation_count": res["documentation"],
-                "empty_count": res["empty"],
-                "string_count": res["string"],
-                "scanned_files": len(res["paths"]),
-            }
-        ]
+        return {
+            "analysis_rule_id": analysis_rule_id.id,
+            "repository_branch_id": self.id,
+            "code_count": res["code"],
+            "documentation_count": res["documentation"],
+            "empty_count": res["empty"],
+            "string_count": res["string"],
+            "scanned_files": len(res["paths"]),
+        }
 
     def _operation_analysis_rule_id(self, analysis_rule_id):
         """This function allow to override with other addons that need

@@ -6,7 +6,6 @@ from datetime import timedelta
 import pytz
 
 from odoo import api, fields, models
-from odoo.osv import expression
 from odoo.tools.date_utils import relativedelta
 
 # from odoo.addons.calendar.models.calendar import calendar_id2real_id
@@ -58,11 +57,11 @@ class CalendarEvent(models.Model):
         )
         return to_update._apply_recurrence()
 
-    @api.depends("recurrence_id", "recurrence_id.base_event_id")
+    @api.depends("recurrence_id", "recurrence_id.calendar_event_ids")
     def _compute_is_base_recurrent_event(self):
         for record in self:
             record.is_base_recurrent_event = (
-                record == record.recurrence_id.base_event_id
+                record == record.recurrence_id.calendar_event_ids.sorted("start")[:1]
             )
 
     @api.depends("start")
@@ -112,13 +111,6 @@ class CalendarEvent(models.Model):
                     "stop": new_time + timedelta(minutes=round((duration or 0.5) * 60)),
                 }
             )
-
-    def search(self, args, offset=0, limit=None, order=None, count=False):
-        if self.env.context.get("calendar_event_primary_only", False):
-            args = expression.AND([args, [("is_base_recurrent_event", "=", True)]])
-        return super().search(
-            args, offset=offset, limit=limit, order=order, count=count
-        )
 
     def _create_event_planner(self):
         return self.env["sale.planner.calendar.event"].create(
@@ -171,8 +163,8 @@ class CalendarEvent(models.Model):
 
     @api.model
     def cron_update_dynamic_final_date(self):
-        events_to_update = self.with_context(calendar_event_primary_only=True).search(
-            [("is_dynamic_end_date", "=", True)]
+        events_to_update = self.search(
+            [("is_dynamic_end_date", "=", True), ("is_base_recurrent_event", "=", True)]
         )
         new_date = fields.Date.today() + relativedelta(
             months=self.env.company.sale_planner_forward_months, day=31

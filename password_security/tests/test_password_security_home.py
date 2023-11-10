@@ -33,6 +33,8 @@ class MockPassError(UserError):
 class TestPasswordSecurityHome(TransactionCase):
     def setUp(self):
         super(TestPasswordSecurityHome, self).setUp()
+        self.main_comp = self.env.ref("base.main_company")
+        self.main_comp.password_policy_enabled = True
         self.PasswordSecurityHome = main.PasswordSecurityHome
         self.password_security_home = self.PasswordSecurityHome()
         self.passwd = "I am a password!"
@@ -172,53 +174,14 @@ class TestPasswordSecurityHome(TransactionCase):
                     res,
                 )
 
-    def test_web_auth_reset_password_fail_login(self):
-        """It should raise from failed _validate_pass_reset by login"""
-        with self.mock_assets() as assets:
-            with mock.patch.object(
-                main.AuthSignupHome, "get_auth_signup_qcontext", spec=dict
-            ) as qcontext:
-                qcontext["login"] = "login"
-                search = assets["request"].env.sudo().search
-                assets["request"].httprequest.method = "POST"
-                user = mock.MagicMock()
-                user._validate_pass_reset.side_effect = MockPassError
-                search.return_value = user
-                with self.assertRaises(MockPassError):
-                    self.password_security_home.web_auth_reset_password()
-
-    def test_web_auth_reset_password_fail_email(self):
-        """It should raise from failed _validate_pass_reset by email"""
-        with self.mock_assets() as assets:
-            with mock.patch.object(
-                main.AuthSignupHome, "get_auth_signup_qcontext", spec=dict
-            ) as qcontext:
-                qcontext["login"] = "login"
-                search = assets["request"].env.sudo().search
-                assets["request"].httprequest.method = "POST"
-                user = mock.MagicMock()
-                user._validate_pass_reset.side_effect = MockPassError
-                search.side_effect = [[], user]
-                with self.assertRaises(MockPassError):
-                    self.password_security_home.web_auth_reset_password()
-
-    def test_web_auth_reset_password_success(self):
-        """It should return parent response on no validate errors"""
-        with self.mock_assets() as assets:
-            with mock.patch.object(
-                main.AuthSignupHome, "get_auth_signup_qcontext", spec=dict
-            ) as qcontext:
-                qcontext["login"] = "login"
-                assets["request"].httprequest.method = "POST"
-                res = self.password_security_home.web_auth_reset_password()
-                self.assertEqual(
-                    assets["web_auth_reset_password"](),
-                    res,
-                )
-
 
 @mock.patch("odoo.http.WebRequest.validate_csrf", return_value=True)
 class LoginCase(HttpCase):
+    def setUp(self):
+        super(LoginCase, self).setUp()
+        self.main_comp = self.env.ref("base.main_company")
+        self.main_comp.password_policy_enabled = True
+
     def test_web_login_authenticate(self, *args):
         """It should allow authenticating by login"""
         response = self.url_open(

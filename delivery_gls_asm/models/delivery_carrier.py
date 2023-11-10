@@ -177,7 +177,7 @@ class DeliveryCarrier(models.Model):
             "destinatario_email": escape(
                 consignee.email or consignee_entity.email or ""
             ),
-            "destinatario_observaciones": "",
+            "destinatario_observaciones": picking.gls_shipping_notes or "",
             "destinatario_att": "",
             "destinatario_departamento": "",
             "destinatario_nif": "",
@@ -438,10 +438,14 @@ class DeliveryCarrier(models.Model):
             if picking.delivery_state != "shipping_recorded_in_carrier":
                 raise UserError(
                     _(
-                        "Unable to cancel GLS Expedition with reference {} "
-                        + "as it is in state {}.\nPlease manage the cancellation "
+                        "Unable to cancel GLS Expedition with reference %(ref)s "
+                        + "as it is in state %(state)s.\nPlease manage the cancellation "
                         + "of this shipment/pickup with GLS via email."
-                    ).format(picking.carrier_tracking_ref, picking.tracking_state)
+                    )
+                    % {
+                        "ref": picking.carrier_tracking_ref,
+                        "state": picking.tracking_state,
+                    }
                 )
             if picking.carrier_id.gls_is_pickup_service:
                 response = gls_request._cancel_pickup(picking.carrier_tracking_ref)

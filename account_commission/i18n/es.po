@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-05 17:23+0000\n"
+"PO-Revision-Date: 2023-10-23 16:37+0000\n"
 "Last-Translator: luis-ron <luis.ron@sygel.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -14,17 +14,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__quantity
 msgid "# of Qty"
-msgstr ""
+msgstr "# de Cantd"
 
 #. module: account_commission
 #: model_terms:ir.ui.view,arch_db:account_commission.commission_make_invoice_form
 msgid "(keep empty for invoicing all the pending settlements)"
 msgstr "(dejar vacío para facturar todas las liquidaciones pendientes)"
+
+#. module: account_commission
+#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement_document
+msgid "<strong>Settlement invoice:</strong>"
+msgstr "<strong>Factura de liquidación:</strong>"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent__agent_id
@@ -63,7 +68,7 @@ msgstr "Importe"
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_move_line__any_settled
 msgid "Any Settled"
-msgstr ""
+msgstr "Cualquiera Liquidada"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__balance
@@ -192,7 +197,7 @@ msgstr "Filtros avanzados"
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__from_settlement
 msgid "From Settlement"
-msgstr "De liquidación"
+msgstr "De Liquidación"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_settlement__invoice_id
@@ -223,7 +228,6 @@ msgstr "ID"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent__invoice_id
-#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement
 msgid "Invoice"
 msgstr "Factura"
 
@@ -265,7 +269,6 @@ msgstr "Estado de la factura"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent__invoice_date
-#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement
 msgid "Invoice date"
 msgstr "Fecha de factura"
 
@@ -275,7 +278,7 @@ msgid "Invoice exception"
 msgstr "Excepción de factura"
 
 #. module: account_commission
-#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement
+#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement_document
 msgid "Invoice line"
 msgstr "Línea de factura"
 
@@ -299,12 +302,12 @@ msgstr "Diario"
 #. module: account_commission
 #: model:ir.model,name:account_commission.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Entrada Diaria"
 
 #. module: account_commission
 #: model:ir.model,name:account_commission.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Artículo Diario"
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_account_invoice_line_agent____last_update
@@ -394,6 +397,11 @@ msgstr "Producto"
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__product_id
 msgid "Product for invoicing"
 msgstr "Producto a facturar"
+
+#. module: account_commission
+#: model_terms:ir.ui.view,arch_db:account_commission.report_settlement_document
+msgid "Quantity"
+msgstr "Cantidad"
 
 #. module: account_commission
 #: model_terms:ir.ui.view,arch_db:account_commission.view_move_form
@@ -486,8 +494,8 @@ msgstr "El movimiento de esta línea de entrada."
 #. module: account_commission
 #: model:ir.model.fields,help:account_commission.field_commission_settlement__settlement_type
 msgid ""
-"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase"
-" order'..."
+"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase "
+"order'..."
 msgstr ""
 "El origen de esta liquidación, por ej. 'Factura de venta','Pedido de "
 "venta','Pedido de compra'..."

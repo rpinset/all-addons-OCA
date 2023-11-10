@@ -44,7 +44,7 @@ class AccountPaymentOrder(models.Model):
         """Generate grouped moves if configured that way."""
         res = super().generated2uploaded()
         for order in self:
-            if order.payment_mode_id.generate_move:
+            if order.payment_mode_id.generate_move and len(order.payment_ids) > 1:
                 order.generate_move()
         return res
 
@@ -83,7 +83,7 @@ class AccountPaymentOrder(models.Model):
                 lambda x: x.account_id
                 in (
                     journal._get_journal_inbound_outstanding_payment_accounts()
-                    + journal._get_journal_inbound_outstanding_payment_accounts()
+                    + journal._get_journal_outbound_outstanding_payment_accounts()
                 )
             )
         lines_to_rec.reconcile()

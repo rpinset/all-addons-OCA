@@ -17,6 +17,16 @@ class TestPaymentOrderInboundBase(AccountTestInvoicingCommon):
     @classmethod
     def setUpClass(cls, chart_template_ref=None):
         super().setUpClass(chart_template_ref=chart_template_ref)
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
         cls.company = cls.company_data["company"]
         cls.env.user.company_id = cls.company.id
         cls.partner = cls.env["res.partner"].create(
@@ -92,6 +102,21 @@ class TestPaymentOrderInbound(TestPaymentOrderInboundBase):
         with self.assertRaises(ValidationError):
             self.inbound_order.date_scheduled = date.today() - timedelta(days=1)
 
+    def test_invoice_communication_01(self):
+        self.assertEqual(
+            self.invoice.name, self.invoice._get_payment_order_communication_direct()
+        )
+        self.invoice.ref = "R1234"
+        self.assertEqual(
+            self.invoice.name, self.invoice._get_payment_order_communication_direct()
+        )
+
+    def test_invoice_communication_02(self):
+        self.invoice.payment_reference = "R1234"
+        self.assertEqual(
+            "R1234", self.invoice._get_payment_order_communication_direct()
+        )
+
     def test_creation(self):
         payment_order = self.inbound_order
         self.assertEqual(len(payment_order.ids), 1)
@@ -113,6 +138,10 @@ class TestPaymentOrderInbound(TestPaymentOrderInboundBase):
         self.assertEqual(payment_order.state, "uploaded")
         with self.assertRaises(UserError):
             payment_order.unlink()
+        matching_number = (
+            payment_order.payment_ids.payment_line_ids.move_line_id.matching_number
+        )
+        self.assertTrue(matching_number and matching_number != "P")
 
         payment_order.action_uploaded_cancel()
         self.assertEqual(payment_order.state, "cancel")

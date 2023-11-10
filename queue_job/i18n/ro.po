@@ -388,7 +388,6 @@ msgstr ""
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_has_error
-#: model:ir.model.fields,help:queue_job.field_queue_job__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -634,7 +633,10 @@ msgstr ""
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job_function__edit_retry_pattern
 msgid ""
-"Pattern expressing from the count of retries on retryable errors, the number of of seconds to postpone the next execution. Setting the number of seconds to a 2-element tuple or list will randomize the retry interval between the 2 values.\n"
+"Pattern expressing from the count of retries on retryable errors, the number "
+"of of seconds to postpone the next execution. Setting the number of seconds "
+"to a 2-element tuple or list will randomize the retry interval between the 2 "
+"values.\n"
 "Example: {1: 10, 5: 20, 10: 30, 15: 300}.\n"
 "Example: {1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}.\n"
 "See the module description for details."
@@ -757,11 +759,6 @@ msgid "Retry Pattern (serialized)"
 msgstr ""
 
 #. module: queue_job
-#: model:ir.model.fields,field_description:queue_job.field_queue_job__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_jobs_to_done
 msgid "Set all selected jobs to done"
 msgstr ""
@@ -833,7 +830,9 @@ msgstr ""
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job_function__edit_related_action
 msgid ""
-"The action when the button *Related Action* is used on a job. The default action is to open the view of the record related to the job. Configured as a dictionary with optional keys: enable, func_name, kwargs.\n"
+"The action when the button *Related Action* is used on a job. The default "
+"action is to open the view of the record related to the job. Configured as a "
+"dictionary with optional keys: enable, func_name, kwargs.\n"
 "See the module description for details."
 msgstr ""
 
@@ -885,7 +884,8 @@ msgstr ""
 msgid ""
 "Unexpected format of Related Action for {}.\n"
 "Example of valid format:\n"
-"{{\"enable\": True, \"func_name\": \"related_action_foo\", \"kwargs\" {{\"limit\": 10}}}}"
+"{{\"enable\": True, \"func_name\": \"related_action_foo\", \"kwargs"
+"\" {{\"limit\": 10}}}}"
 msgstr ""
 
 #. module: queue_job

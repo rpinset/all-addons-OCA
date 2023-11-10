@@ -15,7 +15,7 @@ class AccountMoveLine(models.Model):
     _inherit = ["account.move.line", "l10n.ro.mixin"]
 
     def l10n_ro_get_stock_valuation_difference(self):
-        """Se obtine diferenta dintre evaloarea stocului si valoarea din factura"""
+        """Se obtine diferenta dintre valoarea stocului si valoarea din factura"""
         line = self
         diff, qty_diff = 0.0, 0.0
         # Retrieve stock valuation moves.
@@ -71,10 +71,11 @@ class AccountMoveLine(models.Model):
         diff = abs(accc_balance) - valuation_total
         currency = line.currency_id or self.env.company.currency_id
         diff = currency.round(diff)
+
         qty_diff = inv_qty - valuation_total_qty
         return diff, qty_diff
 
-    def l10n_ro_modify_stock_valuation(self, price_val_dif):
+    def l10n_ro_modify_stock_valuation(self, val_dif, invoice_line=None):
         # se adauga la evaluarea miscarii de stoc
         if not self.purchase_line_id:
             return 0.0
@@ -87,9 +88,9 @@ class AccountMoveLine(models.Model):
             order="id desc",
             limit=1,
         )
-        value = price_val_dif
+        value = val_dif
         # trebuie cantitate din factura in unitatea produsului si apoi
-        value = self.product_uom_id._compute_price(value, self.product_id.uom_id)
+        # value = self.product_uom_id._compute_price(value, self.product_id.uom_id)
 
         lc = self._l10n_ro_create_price_difference_landed_cost(value)
         lc.compute_landed_cost()
@@ -99,13 +100,17 @@ class AccountMoveLine(models.Model):
 
         lc.stock_valuation_layer_ids.mapped("account_move_id")
 
-        lc.stock_valuation_layer_ids.filtered(
+        svl = lc.stock_valuation_layer_ids.filtered(
             lambda svl: svl.value == lc.amount_total
-        ).write(
+        )
+
+        svl.write(
             {
                 "quantity": 0,
                 "remaining_qty": 0,
                 "description": "Price Difference",
+                "l10n_ro_invoice_line_id": invoice_line and invoice_line.id or False,
+                "l10n_ro_invoice_id": invoice_line and invoice_line.move_id.id or False,
             }
         )
 

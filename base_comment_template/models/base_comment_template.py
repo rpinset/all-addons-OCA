@@ -113,13 +113,15 @@ class BaseCommentTemplate(models.Model):
                 item.name, dict(self._fields["position"].selection).get(item.position)
             )
             if self.env.context.get("comment_template_model_display"):
-                name += " (%s)" % ", ".join(item.model_ids.mapped("name"))
+                name += " (%s)" % ", ".join(item.sudo().model_ids.mapped("name"))
             res.append((item.id, name))
         return res
 
     def _search_model_ids(self, operator, value):
         # We cannot use model_ids.model in search() method to avoid recursion.
         allowed_items = (
-            self.sudo().search([]).filtered(lambda x: x.model_ids.model == value)
+            self.sudo()
+            .search([])
+            .filtered(lambda x: value in x.model_ids.mapped("model"))
         )
         return [("id", "in", allowed_items.ids)]

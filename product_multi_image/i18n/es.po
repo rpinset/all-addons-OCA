@@ -7,18 +7,20 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-21 10:58+0000\n"
-"PO-Revision-Date: 2021-05-21 10:58+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-28 20:20+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: product_multi_image
 #: model:ir.model,name:product_multi_image.model_base_multi_image_image
 msgid " image model for multiple image functionality "
-msgstr ""
+msgstr " modelo de imagen para la funcionalidad de imágenes múltiples "
 
 #. module: product_multi_image
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_form_view
@@ -29,20 +31,6 @@ msgstr "(dejar vacío para hacerlo visible para todas las variantes)"
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_kanban_view
 msgid "<i>Visible in all variants</i>"
 msgstr "<i>Visible en todas las variantes</i>"
-
-#. module: product_multi_image
-#: model:ir.model.fields,field_description:product_multi_image.field_base_multi_image_image__display_name
-#: model:ir.model.fields,field_description:product_multi_image.field_product_product__display_name
-#: model:ir.model.fields,field_description:product_multi_image.field_product_template__display_name
-msgid "Display Name"
-msgstr ""
-
-#. module: product_multi_image
-#: model:ir.model.fields,field_description:product_multi_image.field_base_multi_image_image__id
-#: model:ir.model.fields,field_description:product_multi_image.field_product_product__id
-#: model:ir.model.fields,field_description:product_multi_image.field_product_template__id
-msgid "ID"
-msgstr ""
 
 #. module: product_multi_image
 #: model:ir.model.fields,help:product_multi_image.field_base_multi_image_image__product_variant_ids
@@ -58,16 +46,10 @@ msgstr ""
 #. module: product_multi_image
 #: model:ir.model.fields,field_description:product_multi_image.field_product_product__image_ids
 #: model:ir.model.fields,field_description:product_multi_image.field_product_template__image_ids
+#: model_terms:ir.ui.view,arch_db:product_multi_image.product_variant_easy_edit_view
 #: model_terms:ir.ui.view,arch_db:product_multi_image.view_product_template_form_img_inh
 msgid "Images"
 msgstr "Imágenes"
-
-#. module: product_multi_image
-#: model:ir.model.fields,field_description:product_multi_image.field_base_multi_image_image____last_update
-#: model:ir.model.fields,field_description:product_multi_image.field_product_product____last_update
-#: model:ir.model.fields,field_description:product_multi_image.field_product_template____last_update
-msgid "Last Modified on"
-msgstr ""
 
 #. module: product_multi_image
 #: model:ir.model.fields,field_description:product_multi_image.field_product_product__image_main

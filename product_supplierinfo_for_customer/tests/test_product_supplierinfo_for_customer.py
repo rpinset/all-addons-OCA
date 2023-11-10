@@ -10,6 +10,16 @@ class TestProductSupplierinfoForCustomer(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        # Remove this variable in v16 and put instead:
+        # from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+        DISABLED_MAIL_CONTEXT = {
+            "tracking_disable": True,
+            "mail_create_nolog": True,
+            "mail_create_nosubscribe": True,
+            "mail_notrack": True,
+            "no_reset_password": True,
+        }
+        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
         cls.supplierinfo_model = cls.env["product.supplierinfo"]
         cls.customerinfo_model = cls.env["product.customerinfo"]
         cls.pricelist_item_model = cls.env["product.pricelist.item"]
@@ -96,6 +106,16 @@ class TestProductSupplierinfoForCustomer(TransactionCase):
         )
         self.assertEqual(
             res[self.product.id], 750.0, "Error: price does not match list price"
+        )
+
+    def test_product_supplierinfo_price_parent(self):
+        child = self._create_customer("child")
+        child.parent_id = self.customer
+        price = self.product._get_price_from_customerinfo(partner_id=child.id)
+        self.assertEqual(
+            price,
+            100.0,
+            "Error: Price not found for product and customer (set on parent)",
         )
 
     def test_variant_supplierinfo_price(self):

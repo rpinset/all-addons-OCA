@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-17 00:50+0000\n"
-"PO-Revision-Date: 2023-04-10 20:22+0000\n"
+"PO-Revision-Date: 2023-06-23 13:10+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: document_page
 #: code:addons/document_page/models/document_page.py:0
@@ -71,7 +71,7 @@ msgstr "Autore"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__backend_url
 msgid "Backend URL"
-msgstr "URL Backend"
+msgstr "URL backend"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_create_menu
@@ -156,7 +156,7 @@ msgstr "Creato il"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__draft_summary
 msgid "Describe the changes made"
-msgstr "Descrizione modifiche eseguite"
+msgstr "Descrive le modifiche fatte"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__diff
@@ -168,7 +168,7 @@ msgstr "Differenza"
 #: model:ir.actions.act_window,name:document_page.action_view_wiki_show_diff_values
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_show_diff
 msgid "Difference"
-msgstr "Differenze"
+msgstr "Differenza"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__display_name
@@ -239,7 +239,7 @@ msgstr "Raggruppa per..."
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__history_head
 msgid "HEAD"
-msgstr "HEAD"
+msgstr "Intestazione"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__has_message
@@ -278,7 +278,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_has_error
-#: model:ir.model.fields,help:document_page.field_document_page__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -286,7 +285,7 @@ msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 #: model:ir.model.fields,help:document_page.field_document_page__company_id
 #: model:ir.model.fields,help:document_page.field_document_page_history__company_id
 msgid "If set, page is accessible only from this company"
-msgstr "Se impostato, la pagina è accessibile solo da questa azienda"
+msgstr "Se impostata, la pagina è accessibile solo da questa azienda"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
@@ -324,7 +323,7 @@ msgstr "Ultima modifica il"
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__write_uid
 #: model:ir.model.fields,field_description:document_page.field_wizard_document_page_history_show_diff__write_uid
 msgid "Last Updated by"
-msgstr "Ultima modifica di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__write_date
@@ -332,7 +331,7 @@ msgstr "Ultima modifica di"
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__write_date
 #: model:ir.model.fields,field_description:document_page.field_wizard_document_page_history_show_diff__write_date
 msgid "Last Updated on"
-msgstr "Ultima modifica il"
+msgstr "Ultimo aggiornamento il"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_main_attachment_id
@@ -362,7 +361,7 @@ msgstr "Nome Menu"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_ids
@@ -386,22 +385,22 @@ msgstr "Nome"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__draft_name
 msgid "Name for the changes made"
-msgstr "Nome delle modifiche eseguite"
+msgstr "Nome per i cambiamenti effettuati"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_summary
 msgid "Next Activity Summary"
-msgstr "Riepilogo attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_needaction_counter
@@ -421,7 +420,7 @@ msgstr "Numero di messaggi che richiedono un'azione"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con errori di consegna"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_unread_counter
@@ -482,11 +481,6 @@ msgid "Revision"
 msgstr "Revisione"
 
 #. module: document_page
-#: model:ir.model.fields,field_description:document_page.field_document_page__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: document_page
 #: code:addons/document_page/wizard/document_page_show_diff.py:0
 #, python-format
 msgid "Select one or maximum two history revisions!"
@@ -502,10 +496,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__draft_summary
@@ -544,7 +538,7 @@ msgstr "Titolo"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__type
 msgid "Type"
-msgstr "Type"
+msgstr "Tipo"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__activity_exception_decoration
@@ -610,6 +604,9 @@ msgstr "o"
 #, python-format
 msgid "summary"
 msgstr "sommario"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Document History"
 #~ msgstr "Cronologia del documento"

@@ -7,21 +7,34 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-06 06:57+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-10-31 20:36+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: vault
 #: code:addons/vault/models/vault_entry.py:0
 #, python-format
 msgid "%(action)s entry %(name)s by %(user)s"
-msgstr ""
+msgstr "%(action)s entrada %(name)s por %(user)s"
+
+#. module: vault
+#. openerp-web
+#: code:addons/vault/static/src/legacy/vault_controller.js:0
+#, python-format
+msgid "%s '%s' of entry '%s'"
+msgstr "%s '%s' del registro '%s'"
+
+#. module: vault
+#: code:addons/vault/models/vault_entry.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (copia)"
 
 #. module: vault
 #. openerp-web
@@ -62,6 +75,16 @@ msgstr "Todos los registros"
 
 #. module: vault
 #: model_terms:ir.ui.view,arch_db:vault.res_config_settings_view_form
+msgid "Allow all users to export vaults accessible to them"
+msgstr "Permitir que todos los usuarios exporten bóvedas accesibles para ellos"
+
+#. module: vault
+#: model_terms:ir.ui.view,arch_db:vault.res_config_settings_view_form
+msgid "Allow all users to import vaults accessible to them"
+msgstr "Permitir que todos los usuarios importen bóvedas accesibles para ellos"
+
+#. module: vault
+#: model_terms:ir.ui.view,arch_db:vault.res_config_settings_view_form
 msgid "Allow the usage to share secrets with external users"
 msgstr "Permitir el uso para compartir secretos con usuarios externos"
 
@@ -74,6 +97,16 @@ msgstr "Permitir crear en el vault"
 #: model:ir.model.fields,help:vault.field_vault_right__perm_delete
 msgid "Allow to delete a vault"
 msgstr "Permitir borrar un vault"
+
+#. module: vault
+#: model:res.groups,name:vault.group_vault_export
+msgid "Allow to export vaults"
+msgstr "Permitir exportar bóvedas"
+
+#. module: vault
+#: model:res.groups,name:vault.group_vault_import
+msgid "Allow to import vaults"
+msgstr "Permitir importar bóvedas"
 
 #. module: vault
 #: model:ir.model.fields,help:vault.field_vault_right__perm_share
@@ -194,7 +227,10 @@ msgid "Close"
 msgstr "Cerrar"
 
 #. module: vault
+#: model:ir.model.fields,field_description:vault.field_vault_abstract_field__entry_name
 #: model:ir.model.fields,field_description:vault.field_vault_entry__complete_name
+#: model:ir.model.fields,field_description:vault.field_vault_field__entry_name
+#: model:ir.model.fields,field_description:vault.field_vault_file__entry_name
 msgid "Complete Name"
 msgstr "Nombre completo"
 
@@ -225,7 +261,7 @@ msgstr "Copiar al portapapeles"
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_vault_right__perm_create
 msgid "Create"
-msgstr "Creat"
+msgstr "Crear"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users_key__create_uid
@@ -250,7 +286,7 @@ msgstr "Creado por"
 #: code:addons/vault/models/vault_inbox.py:0
 #, python-format
 msgid "Created by %(name)s via %(ip)s"
-msgstr ""
+msgstr "Creado por %(name)s a través de %(ip)s"
 
 #. module: vault
 #: code:addons/vault/wizards/vault_send_wizard.py:0
@@ -326,7 +362,7 @@ msgstr "Nombre a mostrar"
 #: code:addons/vault/static/src/legacy/vault_controller.js:0
 #, python-format
 msgid "Do you really want to create a new key pair and set it active?"
-msgstr "¿Realmente quieres crear un nuevo par de claves y activarlo?"
+msgstr "¿Realmente quiere crear un nuevo par de claves y activarlo?"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_vault_export_wizard__content
@@ -345,7 +381,7 @@ msgstr "Ingrese a"
 #: code:addons/vault/static/src/backend/templates.xml:0
 #, python-format
 msgid "Enter your password:"
-msgstr "Ingresa tu contraseña:"
+msgstr "Ingrese su contraseña:"
 
 #. module: vault
 #: model:ir.actions.act_window,name:vault.action_open_entries
@@ -393,6 +429,11 @@ msgstr "Expirado"
 #: model:ir.model.fields,field_description:vault.field_vault_entry__expire_date
 msgid "Expires on"
 msgstr "Expira en"
+
+#. module: vault
+#: model:ir.model.fields,field_description:vault.field_res_config_settings__group_vault_export
+msgid "Export Vaults"
+msgstr "Exportar bóvedas"
 
 #. module: vault
 #: code:addons/vault/models/vault.py:0
@@ -537,6 +578,11 @@ msgid "Import"
 msgstr "Importar"
 
 #. module: vault
+#: model:ir.model.fields,field_description:vault.field_res_config_settings__group_vault_import
+msgid "Import Vaults"
+msgstr "Importar bóvedas"
+
+#. module: vault
 #: code:addons/vault/models/vault.py:0
 #: code:addons/vault/models/vault_entry.py:0
 #: model_terms:ir.ui.view,arch_db:vault.view_vault_entry_form
@@ -615,12 +661,12 @@ msgstr "Token inválido"
 #. module: vault
 #: model_terms:ir.ui.view,arch_db:vault.view_users_form_keys_modif
 msgid "Invalidate private key"
-msgstr ""
+msgstr "Invalidar clave privada"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users_key__iterations
 msgid "Iterations"
-msgstr "Iterations"
+msgstr "Iteraciones"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users_key__iv
@@ -945,6 +991,16 @@ msgid "Public Key"
 msgstr "Clave pública"
 
 #. module: vault
+#: model_terms:ir.ui.view,arch_db:vault.view_vault_form
+msgid "Re-encrypt"
+msgstr "Reencriptar"
+
+#. module: vault
+#: model:ir.model.fields,field_description:vault.field_vault__reencrypt_required
+msgid "Reencrypt Required"
+msgstr "Necesita reencriptarse"
+
+#. module: vault
 #: model:ir.actions.act_window,name:vault.action_vault_right
 #: model:ir.model.fields,field_description:vault.field_vault__right_ids
 #: model:ir.ui.menu,name:vault.menu_vault_right
@@ -955,7 +1011,7 @@ msgstr "Derechos"
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users_key__salt
 msgid "Salt"
-msgstr ""
+msgstr "Sal"
 
 #. module: vault
 #. openerp-web
@@ -1095,6 +1151,13 @@ msgstr "Los archivos deben terminar en uno de los tipos de archivo admitidos:"
 
 #. module: vault
 #. openerp-web
+#: code:addons/vault/static/src/legacy/vault_controller.js:0
+#, python-format
+msgid "The following entries are broken:"
+msgstr "Los siguientes registros están rotos:"
+
+#. module: vault
+#. openerp-web
 #: code:addons/vault/static/src/common/utils.esm.js:0
 #, python-format
 msgid "The passwords aren't matching"
@@ -1122,13 +1185,6 @@ msgstr "¡La etiqueta debe ser única!"
 #, python-format
 msgid "The user must be unique"
 msgstr "El usuario debe ser único"
-
-#. module: vault
-#. openerp-web
-#: code:addons/vault/static/src/legacy/vault_controller.js:0
-#, python-format
-msgid "This will re-encrypt everything in the vault. Do you want to proceed?"
-msgstr "Esto volverá a encriptar todo en el vault. ¿Quieres proceder?"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_vault_inbox__token
@@ -1212,7 +1268,7 @@ msgstr "Valor"
 #: model_terms:ir.ui.view,arch_db:vault.view_vault_entry_search
 #, python-format
 msgid "Vault"
-msgstr "Vault"
+msgstr "Bóveda"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users__vault_right_ids
@@ -1255,12 +1311,17 @@ msgstr "Etiqueta de vault"
 #. module: vault
 #: model_terms:ir.ui.view,arch_db:vault.view_vault_entry_search
 msgid "Vaults"
-msgstr ""
+msgstr "Bóvedas"
+
+#. module: vault
+#: model_terms:ir.ui.view,arch_db:vault.view_vault_form
+msgid "Verify"
+msgstr "Verificar"
 
 #. module: vault
 #: model:ir.model.fields,field_description:vault.field_res_users_key__version
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #. module: vault
 #: code:addons/vault/models/vault_log.py:0
@@ -1291,7 +1352,7 @@ msgstr "Escribir"
 #: code:addons/vault/models/vault_inbox.py:0
 #, python-format
 msgid "Written by %(name)s via %(ip)s"
-msgstr ""
+msgstr "Escrito por %(name)s vía %(ip)s"
 
 #. module: vault
 #: code:addons/vault/models/vault_entry.py:0
@@ -1316,6 +1377,8 @@ msgstr ""
 msgid ""
 "You will loose access to all vaults and your inbox. Do you want to continue?"
 msgstr ""
+"Perderá el acceso a todos sus vaults y a su bandeja de entrada. ¿Desea "
+"continuar?"
 
 #. module: vault
 #. openerp-web
@@ -1330,6 +1393,11 @@ msgstr "a-z"
 #: model_terms:ir.ui.view,arch_db:vault.view_vault_store_wizard
 msgid "or"
 msgstr "o"
+
+#, python-format
+#~ msgid ""
+#~ "This will re-encrypt everything in the vault. Do you want to proceed?"
+#~ msgstr "Esto volverá a encriptar todo en el vault. ¿Quieres proceder?"
 
 #, python-format
 #~ msgid "%s entry %s by %s"

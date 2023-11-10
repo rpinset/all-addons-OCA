@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-15 18:21+0000\n"
-"PO-Revision-Date: 2023-03-30 15:25+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2023-11-02 17:36+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__access_token
@@ -182,14 +182,10 @@ msgstr ""
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_carrier_account__display_name
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier__display_name
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__display_name
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__display_name
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__display_name
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__display_name
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_move_line__display_name
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking__display_name
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_quant_package__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -230,7 +226,7 @@ msgstr ""
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__file_type
-msgid "File type"
+msgid "File Type"
 msgstr ""
 
 #. module: base_delivery_carrier_label
@@ -245,14 +241,10 @@ msgstr ""
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_carrier_account__id
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier__id
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__id
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__id
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__id
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__id
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_move_line__id
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking__id
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_quant_package__id
 msgid "ID"
 msgstr "ID"
 
@@ -295,16 +287,12 @@ msgstr ""
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_carrier_account____last_update
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier____last_update
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option____last_update
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option____last_update
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard____last_update
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label____last_update
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_move_line____last_update
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking____last_update
-#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_quant_package____last_update
 msgid "Last Modified on"
-msgstr "Ultima Modifica il"
+msgstr "Ultima modifica il"
 
 #. module: base_delivery_carrier_label
 #: model:ir.model.fields,field_description:base_delivery_carrier_label.field_carrier_account__write_uid
@@ -565,8 +553,6 @@ msgstr ""
 
 #. module: base_delivery_carrier_label
 #: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_option_view_form
-#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_option_view_tree
 #: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_template_option_view_form
-#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_template_option_view_tree
 msgid "delivery_carrier_option"
 msgstr ""

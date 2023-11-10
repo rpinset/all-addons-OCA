@@ -438,9 +438,13 @@ class ContractContract(models.Model):
         move_form = Form(
             self.env["account.move"]
             .with_company(self.company_id)
-            .with_context(default_move_type=invoice_type)
+            .with_context(default_move_type=invoice_type, default_name="/"),
+            view="contract.view_account_move_contract_helper_form",
         )
         move_form.partner_id = self.invoice_partner_id
+        move_form.journal_id = journal
+        move_form.currency_id = self.currency_id
+        move_form.invoice_date = date_invoice
         if self.payment_term_id:
             move_form.invoice_payment_term_id = self.payment_term_id
         if self.fiscal_position_id:
@@ -451,10 +455,6 @@ class ContractContract(models.Model):
         invoice_vals.update(
             {
                 "ref": self.code,
-                "company_id": self.company_id.id,
-                "currency_id": self.currency_id.id,
-                "invoice_date": date_invoice,
-                "journal_id": journal.id,
                 "invoice_origin": self.name,
             }
         )
@@ -575,8 +575,8 @@ class ContractContract(models.Model):
         This method triggers the creation of the next invoices of the contracts
         even if their next invoicing date is in the future.
         """
-        invoice = self._recurring_create_invoice()
-        if invoice:
+        invoices = self._recurring_create_invoice()
+        for invoice in invoices:
             self.message_post(
                 body=_(
                     "Contract manually invoiced: "
@@ -591,7 +591,7 @@ class ContractContract(models.Model):
                     "rec_id": invoice.id,
                 }
             )
-        return invoice
+        return invoices
 
     @api.model
     def _invoice_followers(self, invoices):

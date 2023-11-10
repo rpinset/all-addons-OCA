@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: purchase-workflow (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-16 12:06+0000\n"
-"PO-Revision-Date: 2023-04-05 11:24+0000\n"
+"PO-Revision-Date: 2023-11-06 16:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/"
 "OCA-purchase-workflow-8-0/language/it/)\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__active
@@ -41,7 +41,7 @@ msgstr "Attivo"
 #. module: purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_form
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: purchase_order_type
 #: model_terms:ir.actions.act_window,help:purchase_order_type.action_purchase_order_type_view
@@ -75,9 +75,7 @@ msgid "Description"
 msgstr "Descrizione"
 
 #. module: purchase_order_type
-#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__display_name
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__display_name
-#: model:ir.model.fields,field_description:purchase_order_type.field_res_partner__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -91,7 +89,7 @@ msgstr "L'azienda del documento e quella del tipo non corrispondono"
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__sequence_id
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Entry Sequence"
-msgstr "Sequenza Registrazione"
+msgstr "Sequenza registrazione"
 
 #. module: purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
@@ -99,9 +97,7 @@ msgid "Group By"
 msgstr "Raggruppa per"
 
 #. module: purchase_order_type
-#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__id
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__id
-#: model:ir.model.fields,field_description:purchase_order_type.field_res_partner__id
 msgid "ID"
 msgstr "ID"
 
@@ -109,12 +105,10 @@ msgstr "ID"
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__incoterm_id
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Incoterm"
-msgstr ""
+msgstr "Incoterm"
 
 #. module: purchase_order_type
-#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order____last_update
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type____last_update
-#: model:ir.model.fields,field_description:purchase_order_type.field_res_partner____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
@@ -159,7 +153,6 @@ msgstr "Tipo Ordine Acquisto"
 #: model:ir.actions.act_window,name:purchase_order_type.action_purchase_order_type_view
 #: model:ir.ui.menu,name:purchase_order_type.menu_purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
-#: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_tree
 msgid "Purchase Order Types"
 msgstr "Tipo Ordine Acquisto"
 

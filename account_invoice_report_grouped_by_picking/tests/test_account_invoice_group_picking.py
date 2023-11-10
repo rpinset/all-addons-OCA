@@ -13,6 +13,25 @@ class TestAccountInvoiceGroupPicking(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super(TestAccountInvoiceGroupPicking, cls).setUpClass()
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+            )
+        )
+        cls.currency_usd = cls.env.ref("base.USD")
+        cls.currency_usd.active = True
+        # Make sure the currency of the company is USD, as this not always happens
+        # To be removed in V17: https://github.com/odoo/odoo/pull/107113
+        cls.company = cls.env.company
+        cls.env.cr.execute(
+            "UPDATE res_company SET currency_id = %s WHERE id = %s",
+            [cls.env.ref("base.USD").id, cls.company.id],
+        )
         cls.product = cls.env["product.product"].create(
             {
                 "name": "Product for test",
@@ -23,6 +42,13 @@ class TestAccountInvoiceGroupPicking(TransactionCase):
         cls.service = cls.env["product.product"].create(
             {
                 "name": "Test service product",
+                "type": "service",
+                "invoice_policy": "order",
+            }
+        )
+        cls.service2 = cls.env["product.product"].create(
+            {
+                "name": "Test service product 2",
                 "type": "service",
                 "invoice_policy": "order",
             }
@@ -40,6 +66,35 @@ class TestAccountInvoiceGroupPicking(TransactionCase):
                             "product_id": cls.product.id,
                             "product_uom_qty": 2,
                             "product_uom": cls.product.uom_id.id,
+                            "price_unit": 100.0,
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "name": cls.service.name,
+                            "product_id": cls.service.id,
+                            "product_uom_qty": 3,
+                            "product_uom": cls.service.uom_id.id,
+                            "price_unit": 50.0,
+                        },
+                    ),
+                ],
+            }
+        )
+        cls.sale2 = cls.env["sale.order"].create(
+            {
+                "partner_id": cls.partner.id,
+                "order_line": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": cls.service2.name,
+                            "product_id": cls.service2.id,
+                            "product_uom_qty": 2,
+                            "product_uom": cls.service2.uom_id.id,
                             "price_unit": 100.0,
                         },
                     ),
@@ -286,3 +341,49 @@ class TestAccountInvoiceGroupPicking(TransactionCase):
         self.assertEqual(tbody.count(self.sale.name), 1)
         # information about pickings is printed
         self.assertTrue(picking.name in tbody)
+
+    def test_account_invoice_group_picking_service_sale_reports_check(self):
+        self.sale2.action_confirm()
+        # invoice sales
+        invoice = self.sale2._create_invoices()
+        invoice._post()
+        # Test report
+        content = html.document_fromstring(
+            self.env.ref("account.account_invoices")._render_qweb_html(invoice.id)[0]
+        )
+        tbody = content.xpath("//tbody[@class='invoice_tbody']")
+        tbody = [html.tostring(line, encoding="utf-8").strip() for line in tbody][
+            0
+        ].decode()
+        # check if service line is in report
+        self.assertTrue(self.sale2.order_line[0].name in tbody)
+        self.assertTrue(self.sale2.order_line[1].name in tbody)
+        # Refund invoice
+        wiz_invoice_refund = (
+            self.env["account.move.reversal"]
+            .with_context(active_model="account.move", active_ids=invoice.ids)
+            .create(
+                {
+                    "refund_method": "cancel",
+                    "reason": "test",
+                    "journal_id": invoice.journal_id.id,
+                }
+            )
+        )
+        wiz_invoice_refund.reverse_moves()
+        new_invoice = self.sale2.invoice_ids.filtered(
+            lambda i: i.move_type == "out_refund"
+        )
+        # Test report
+        content = html.document_fromstring(
+            self.env.ref("account.account_invoices")._render_qweb_html(new_invoice.id)[
+                0
+            ]
+        )
+        tbody = content.xpath("//tbody[@class='invoice_tbody']")
+        tbody = [html.tostring(line, encoding="utf-8").strip() for line in tbody][
+            0
+        ].decode()
+        # check if service line is in report
+        self.assertTrue(self.sale2.order_line[0].name in tbody)
+        self.assertTrue(self.sale2.order_line[1].name in tbody)

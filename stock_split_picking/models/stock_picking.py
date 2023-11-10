@@ -12,20 +12,22 @@ class StockPicking(models.Model):
 
     _inherit = "stock.picking"
 
+    def _check_split_process(self):
+        # Check the picking state and condition before split
+        if self.state == "draft":
+            raise UserError(_("Mark as todo this picking please."))
+        if all([x.qty_done == 0.0 for x in self.move_line_ids]):
+            raise UserError(
+                _(
+                    "You must enter done quantity in order to split your "
+                    "picking in several ones."
+                )
+            )
+
     def split_process(self):
         """Use to trigger the wizard from button with correct context"""
         for picking in self:
-
-            # Check the picking state and condition before split
-            if picking.state == "draft":
-                raise UserError(_("Mark as todo this picking please."))
-            if all([x.qty_done == 0.0 for x in picking.move_line_ids]):
-                raise UserError(
-                    _(
-                        "You must enter done quantity in order to split your "
-                        "picking in several ones."
-                    )
-                )
+            picking._check_split_process()
 
             # Split moves considering the qty_done on moves
             new_moves = self.env["stock.move"]
@@ -41,16 +43,23 @@ class StockPicking(models.Model):
                     qty_uom_split = move.product_uom._compute_quantity(
                         qty_split, move.product_id.uom_id, rounding_method="HALF-UP"
                     )
+                    # Empty list is returned for moves with zero qty_done.
                     new_move_vals = move._split(qty_uom_split)
-                    for move_line in move.move_line_ids:
-                        if move_line.product_qty and move_line.qty_done:
-                            # To avoid an error
-                            # when picking is partially available
-                            try:
-                                move_line.write({"product_uom_qty": move_line.qty_done})
-                            except UserError:
-                                continue
-                    new_move = self.env["stock.move"].create(new_move_vals)
+                    if new_move_vals:
+                        for move_line in move.move_line_ids:
+                            if move_line.product_qty and move_line.qty_done:
+                                # To avoid an error
+                                # when picking is partially available
+                                try:
+                                    move_line.write(
+                                        {"product_uom_qty": move_line.qty_done}
+                                    )
+                                except UserError:
+                                    continue
+                        new_move = self.env["stock.move"].create(new_move_vals)
+                    # Moves with no qty_done should be moved to the new picking.
+                    else:
+                        new_move = move
                     new_move._action_confirm(merge=False)
                     new_moves |= new_move
 

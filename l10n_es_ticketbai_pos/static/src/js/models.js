@@ -23,9 +23,11 @@ odoo.define("l10n_es_ticketbai_pos.models", function (require) {
         "tbai_license_key",
         "tbai_developer_id",
         "tbai_software_name",
+        "tbai_software_version",
         "tbai_tax_agency_id",
         "tbai_protected_data",
         "tbai_protected_data_txt",
+        "tbai_vat_regime_simplified",
     ]);
 
     models.load_fields("res.country", ["code"]);
@@ -193,7 +195,7 @@ odoo.define("l10n_es_ticketbai_pos.models", function (require) {
             var tbai_vat_regime_key = this.get_tbai_vat_regime_key_by_id(id);
             return (tbai_vat_regime_key && tbai_vat_regime_key.code) || null;
         },
-        push_order: function (order, opts) {
+        push_single_order: function (order, opts) {
             var self = this;
             if (this.company.tbai_enabled && order) {
                 return order.tbai_current_invoice.then(function (tbai_inv) {
@@ -208,10 +210,10 @@ odoo.define("l10n_es_ticketbai_pos.models", function (require) {
                         expedition_date: tbai_inv.expedition_date,
                     };
                     self.set_tbai_last_invoice_data(tbai_last_invoice_data);
-                    return pos_super.push_order.call(self, order, opts);
+                    return pos_super.push_single_order.call(self, order, opts);
                 });
             }
-            return pos_super.push_order.call(self, order, opts);
+            return pos_super.push_single_order.call(self, order, opts);
         },
         get_tbai_last_invoice_data: function () {
             var db_json_last_invoice_data = this.db.get_tbai_json_last_invoice_data();
@@ -255,23 +257,19 @@ odoo.define("l10n_es_ticketbai_pos.models", function (require) {
         export_as_JSON: function () {
             var json = orderLine_super.export_as_JSON.apply(this, arguments);
             if (this.pos.company.tbai_enabled) {
-                var mapped_included_taxes = [];
                 var product = this.get_product();
                 var price_unit = null;
                 var tax = this.get_taxes()[0];
+                var fp_taxes = this._map_tax_fiscal_position(tax);
                 json.tbai_description = product.display_name || "";
-                if (tax) {
+                if (fp_taxes) {
                     json.tbai_vat_amount = tax.amount;
                     json.tbai_price_without_tax = this.get_price_without_tax();
                     json.tbai_price_with_tax = this.get_price_with_tax();
-                    var fp_taxes = this._map_tax_fiscal_position(tax);
-                    if (tax.price_include && _.contains(fp_taxes, tax)) {
-                        mapped_included_taxes.push(tax);
-                    }
                 }
-                if (mapped_included_taxes.length > 0) {
+                if (fp_taxes.length > 0) {
                     price_unit = this.compute_all(
-                        mapped_included_taxes,
+                        fp_taxes,
                         json.price_unit,
                         1,
                         this.pos.currency.rounding,

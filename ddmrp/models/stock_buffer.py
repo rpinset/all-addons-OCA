@@ -182,14 +182,38 @@ class StockBuffer(models.Model):
         action = self.env["ir.actions.actions"]._for_xml_id(
             "ddmrp.stock_move_year_consumption_action"
         )
-        locations = self.env["stock.location"].search(
-            [("id", "child_of", [self.location_id.id])]
+        locations = (
+            self.env["stock.location"]
+            .with_context(active_test=False)
+            .search([("id", "child_of", self.location_id.ids)])
         )
         date_to = fields.Date.today()
         # We take last five years, even though they will be initially
         # filtered in the action to show only last year.
         date_from = date_to - timedelta(days=5 * 365)
         action["domain"] = self._past_moves_domain(date_from, date_to, locations)
+        return action
+
+    def action_view_stock_demand_estimates(self):
+        result = self.env["ir.actions.actions"]._for_xml_id(
+            "stock_demand_estimate.stock_demand_estimate_action"
+        )
+        locations = self.env["stock.location"].search(
+            [("id", "child_of", [self.location_id.id])]
+        )
+        recs = self.env["stock.demand.estimate"].search(
+            [
+                ("product_id", "=", self.product_id.id),
+                ("location_id", "in", locations.ids),
+            ]
+        )
+        result["domain"] = [("id", "in", recs.ids)]
+        return result
+
+    def action_view_bom(self):
+        action = self.product_id.action_view_bom()
+        boms = self._get_manufactured_bom(limit=100)
+        action["domain"] = [("id", "in", boms.ids)]
         return action
 
     @api.constrains("product_id")
@@ -290,6 +314,9 @@ class StockBuffer(models.Model):
     procure_uom_id = fields.Many2one(
         comodel_name="uom.uom",
         string="Procurement UoM",
+        compute="_compute_procure_uom_id",
+        readonly=False,
+        store=True,
     )
 
     @api.constrains("product_id", "procure_uom_id")
@@ -533,6 +560,11 @@ class StockBuffer(models.Model):
                 adjusted_qty = rec._adjust_procure_qty(procure_recommended_qty)
             rec.procure_recommended_qty = adjusted_qty
 
+    @api.depends("product_uom")
+    def _compute_procure_uom_id(self):
+        for rec in self:
+            rec.procure_uom_id = rec.product_uom.id
+
     def _adjust_procure_qty(self, qty):
         self.ensure_one()
         # If there is a procure UoM we apply it before anything.
@@ -580,31 +612,43 @@ class StockBuffer(models.Model):
                 }
             )
             rec.ddmrp_chart = json_data
+            div, script = rec.get_ddmrp_chart_execution()
+            json_data = json.dumps(
+                {
+                    "div": div,
+                    "script": script,
+                }
+            )
+            rec.ddmrp_chart_execution = json_data
+
+    def _get_colors_hex_map(self, pallete="planning"):
+        return DDMRP_COLOR
 
     def get_ddmrp_chart(self):
         p = figure(plot_width=300, plot_height=400, y_axis_label="Quantity")
         p.xaxis.visible = False
         p.toolbar.logo = None
+        hex_colors = self._get_colors_hex_map(pallete="planning")
         red = p.vbar(
             x=1,
             bottom=0,
             top=self.top_of_red,
             width=1,
-            color="red",
+            color=hex_colors.get("1_red", "red"),
         )
         yellow = p.vbar(
             x=1,
             bottom=self.top_of_red,
             top=self.top_of_yellow,
             width=1,
-            color="yellow",
+            color=hex_colors.get("2_yellow", "yellow"),
         )
         green = p.vbar(
             x=1,
             bottom=self.top_of_yellow,
             top=self.top_of_green,
             width=1,
-            color="green",
+            color=hex_colors.get("3_green", "green"),
         )
         net_flow = p.line(
             [0, 2], [self.net_flow_position, self.net_flow_position], line_width=2
@@ -661,6 +705,108 @@ class StockBuffer(models.Model):
         script, div = components(p, wrap_script=False)
         return div, script
 
+    def get_ddmrp_chart_execution(self):
+        p = figure(plot_width=300, plot_height=400, y_axis_label="Quantity")
+        p.xaxis.visible = False
+        p.toolbar.logo = None
+        tor_exec = float_round(
+            self.top_of_red / 2,
+            precision_rounding=self.product_uom.rounding,
+        )
+        toy_exec = self.top_of_red
+        tog_exec = float_round(
+            self.top_of_red + self.green_zone_qty,
+            precision_rounding=self.product_uom.rounding,
+        )
+        toy2_exec = self.top_of_yellow
+        tor2_exec = self.top_of_green
+        hex_colors = self._get_colors_hex_map(pallete="execution")
+        red = p.vbar(
+            x=1,
+            bottom=0,
+            top=tor_exec,
+            width=1,
+            color=hex_colors.get("1_red", "red"),
+        )
+        yellow = p.vbar(
+            x=1,
+            bottom=tor_exec,
+            top=toy_exec,
+            width=1,
+            color=hex_colors.get("2_yellow", "yellow"),
+        )
+        green = p.vbar(
+            x=1,
+            bottom=toy_exec,
+            top=tog_exec,
+            width=1,
+            color=hex_colors.get("3_green", "green"),
+        )
+        yellow_2 = p.vbar(
+            x=1,
+            bottom=tog_exec,
+            top=toy2_exec,
+            width=1,
+            color=hex_colors.get("2_yellow", "yellow"),
+        )
+        red_2 = p.vbar(
+            x=1,
+            bottom=toy2_exec,
+            top=tor2_exec,
+            width=1,
+            color=hex_colors.get("1_red", "red"),
+        )
+        on_hand = p.line(
+            [0, 2],
+            [
+                self.product_location_qty_available_not_res,
+                self.product_location_qty_available_not_res,
+            ],
+            line_width=2,
+            line_dash="dotted",
+        )
+        legend = Legend(
+            items=[
+                ("Red zone (Execution)", [red, red_2]),
+                ("Yellow zone (Execution)", [yellow, yellow_2]),
+                ("Green zone (Execution)", [green]),
+                ("On-Hand Position (Unreserved)", [on_hand]),
+            ]
+        )
+        labels_source_data = {
+            "height": [
+                self.product_location_qty_available_not_res,
+                tor_exec,
+                toy_exec,
+                tog_exec,
+                toy2_exec,
+            ],
+            "weight": [0.25, 1, 1, 1, 1],
+            "names": [
+                str(self.product_location_qty_available_not_res),
+                str(tor_exec),
+                str(toy_exec),
+                str(tog_exec),
+                str(toy2_exec),
+            ],
+        }
+        source = ColumnDataSource(data=labels_source_data)
+        labels = LabelSet(
+            x="weight",
+            y="height",
+            text="names",
+            y_offset=1,
+            render_mode="canvas",
+            text_font_size="8pt",
+            source=source,
+            text_align="center",
+        )
+        p.add_layout(labels)
+        p.add_layout(legend, "below")
+
+        script, div = components(p, wrap_script=False)
+        return div, script
+
     def _compute_ddmrp_demand_supply_chart(self):
         for rec in self:
             if not rec.buffer_profile_id:
@@ -670,8 +816,8 @@ class StockBuffer(models.Model):
                 continue
 
             # Prepare data:
-            demand_data = rec._get_demand_by_days()
-            mrp_data = rec._get_qualified_mrp_moves()
+            demand_data = rec._get_demand_by_days(rec.qualified_demand_stock_move_ids)
+            mrp_data = rec._get_qualified_mrp_moves(rec.qualified_demand_mrp_move_ids)
             supply_data = rec._get_incoming_by_days()
             width = timedelta(days=0.4)
             date_format = (
@@ -761,7 +907,6 @@ class StockBuffer(models.Model):
                     years=date_format,
                 )
                 p.xaxis.major_label_orientation = pi / 4
-                p.x_range.flipped = True
 
                 # White line to have similar proportion to demand chart.
                 p.line(
@@ -799,17 +944,23 @@ class StockBuffer(models.Model):
         for rec in self:
             rec.order_spike_threshold = 0.5 * rec.red_zone_qty
 
-    def _get_manufactured_bom(self):
+    def _get_manufactured_bom(self, limit=1):
+        locations = self.env["stock.location"].search(
+            [("id", "child_of", [self.location_id.id])]
+        )
         return self.env["mrp.bom"].search(
             [
                 "|",
                 ("product_id", "=", self.product_id.id),
                 ("product_tmpl_id", "=", self.product_id.product_tmpl_id.id),
                 "|",
-                ("location_id", "=", self.location_id.id),
+                ("location_id", "in", locations.ids),
                 ("location_id", "=", False),
+                "|",
+                ("company_id", "=", self.company_id.id),
+                ("company_id", "=", False),
             ],
-            limit=1,
+            limit=limit,
         )
 
     @api.depends("lead_days", "product_id.seller_ids.delay")
@@ -1012,6 +1163,12 @@ class StockBuffer(models.Model):
         digits="Product Unit of Measure",
         readonly=True,
     )
+    qualified_demand_stock_move_ids = fields.Many2many(
+        comodel_name="stock.move",
+    )
+    qualified_demand_mrp_move_ids = fields.Many2many(
+        comodel_name="mrp.move",
+    )
     incoming_dlt_qty = fields.Float(
         string="Incoming (Within DLT)",
         readonly=True,
@@ -1049,6 +1206,22 @@ class StockBuffer(models.Model):
         store=True,
         readonly=True,
     )
+    on_hand_target_position = fields.Float(
+        string="Avg On Hand Target Position",
+        help="It denotes what the target stock on hand is. The "
+        "computation is: OH Target = TOR + Green Zone / 2 ",
+        compute="_compute_on_hand_target_position",
+    )
+    on_hand_target_max = fields.Float(
+        string="Target On Hand (Max)",
+        help="It denotes how far you are on average from the target",
+        compute="_compute_on_hand_target_max",
+    )
+    on_hand_target_min = fields.Float(
+        related="top_of_red",
+        string="On Hand Target Range",
+        help="It denotes what the target stock on hand range is.",
+    )
     mrp_production_ids = fields.One2many(
         string="Manufacturing Orders",
         comodel_name="mrp.production",
@@ -1058,6 +1231,10 @@ class StockBuffer(models.Model):
         string="DDMRP Chart",
         compute=_compute_ddmrp_chart,
     )
+    ddmrp_chart_execution = fields.Text(
+        string="DDMRP Execution Chart", compute=_compute_ddmrp_chart
+    )
+    show_execution_chart = fields.Boolean()
     ddmrp_demand_chart = fields.Text(
         string="DDMRP Demand Chart",
         compute="_compute_ddmrp_demand_supply_chart",
@@ -1110,6 +1287,26 @@ class StockBuffer(models.Model):
         "When a procurement is requested, if the option is active on the profile,"
         " it will be limited to this quantity.",
     )
+
+    @api.depends(
+        "top_of_green",
+        "top_of_yellow",
+        "top_of_red",
+    )
+    def _compute_on_hand_target_position(self):
+        for rec in self:
+            green_zone_size = rec.top_of_green - rec.top_of_yellow
+            rec.on_hand_target_position = rec.top_of_red + green_zone_size / 2
+
+    @api.depends(
+        "top_of_green",
+        "top_of_yellow",
+        "top_of_red",
+    )
+    def _compute_on_hand_target_max(self):
+        for rec in self:
+            green_zone_size = rec.top_of_green - rec.top_of_yellow
+            rec.on_hand_target_max = rec.top_of_red + green_zone_size
 
     @api.depends(
         "distributed_source_location_id",
@@ -1182,6 +1379,18 @@ class StockBuffer(models.Model):
         records = self.env["stock.move"].search(domain)
         return self._stock_move_tree_view(records)
 
+    def _get_horizon_adu_past_demand(self):
+        return self.adu_calculation_method.horizon_past or 0
+
+    def _get_dates_adu_past_demand(self, horizon):
+        date_from = fields.Date.to_string(
+            self.warehouse_id.wh_plan_days(datetime.now(), -1 * horizon)
+        )
+        date_to = fields.Date.to_string(
+            self.warehouse_id.wh_plan_days(datetime.now(), -1)
+        )
+        return date_from, date_to
+
     def _past_demand_estimate_domain(self, date_from, date_to, locations):
         self.ensure_one()
         return [
@@ -1208,17 +1417,14 @@ class StockBuffer(models.Model):
 
     def _calc_adu_past_demand(self):
         self.ensure_one()
-        horizon = self.adu_calculation_method.horizon_past or 0
+        horizon = self._get_horizon_adu_past_demand()
         # today is excluded to be sure that is a past day and all moves
         # for that day are done (or at least the expected date is in the past).
-        date_from = fields.Date.to_string(
-            self.warehouse_id.wh_plan_days(datetime.now(), -1 * horizon)
-        )
-        date_to = fields.Date.to_string(
-            self.warehouse_id.wh_plan_days(datetime.now(), -1)
-        )
-        locations = self.env["stock.location"].search(
-            [("id", "child_of", [self.location_id.id])]
+        date_from, date_to = self._get_dates_adu_past_demand(horizon)
+        locations = (
+            self.env["stock.location"]
+            .with_context(active_test=False)
+            .search([("id", "child_of", self.location_id.ids)])
         )
         if self.adu_calculation_method.source_past == "estimates":
             qty = 0.0
@@ -1238,6 +1444,19 @@ class StockBuffer(models.Model):
             return qty / horizon
         else:
             return 0.0
+
+    def _get_horizon_adu_future_demand(self):
+        return self.adu_calculation_method.horizon_future or 1
+
+    def _get_dates_adu_future_demand(self, horizon):
+        date_from = fields.Datetime.now()
+        date_to = self.warehouse_id.wh_plan_days(date_from, horizon)
+        date_to = date_to.replace(
+            hour=date_from.hour,
+            minute=date_from.minute,
+            second=date_from.second,
+        )
+        return date_from, date_to
 
     def _future_demand_estimate_domain(self, date_from, date_to, locations):
         self.ensure_one()
@@ -1265,14 +1484,8 @@ class StockBuffer(models.Model):
 
     def _calc_adu_future_demand(self):
         self.ensure_one()
-        horizon = self.adu_calculation_method.horizon_future or 1
-        date_from = fields.Datetime.now()
-        date_to = self.warehouse_id.wh_plan_days(date_from, horizon)
-        date_to = date_to.replace(
-            hour=date_from.hour,
-            minute=date_from.minute,
-            second=date_from.second,
-        )
+        horizon = self._get_horizon_adu_future_demand()
+        date_from, date_to = self._get_dates_adu_future_demand(horizon)
         locations = self.env["stock.location"].search(
             [("id", "child_of", [self.location_id.id])]
         )
@@ -1378,16 +1591,19 @@ class StockBuffer(models.Model):
             incoming_by_days[date] += move.product_qty
         return incoming_by_days
 
-    def _get_demand_by_days(self):
+    def _get_demand_by_days(self, moves):
         self.ensure_one()
-        moves = self._search_stock_moves_qualified_demand()
         demand_by_days = {}
         move_dates = [dt.date() for dt in moves.mapped("date")]
         for move_date in move_dates:
             demand_by_days[move_date] = 0.0
         for move in moves:
             date = move.date.date()
-            demand_by_days[date] += move.product_qty - move.reserved_availability
+            demand_by_days[
+                date
+            ] += move.product_qty - move.product_uom._compute_quantity(
+                move.reserved_availability, move.product_id.uom_id
+            )
         return demand_by_days
 
     def _search_mrp_moves_qualified_demand_domain(self):
@@ -1410,9 +1626,8 @@ class StockBuffer(models.Model):
         )
         return moves
 
-    def _get_qualified_mrp_moves(self):
+    def _get_qualified_mrp_moves(self, moves):
         self.ensure_one()
-        moves = self._search_mrp_moves_qualified_demand()
         mrp_moves_by_days = {}
         move_dates = [dt for dt in moves.mapped("mrp_date")]
         for move_date in move_dates:
@@ -1425,21 +1640,30 @@ class StockBuffer(models.Model):
     def _calc_qualified_demand(self, current_date=False):
         today = current_date or fields.date.today()
         for rec in self:
-            rec.qualified_demand = 0.0
-            demand_by_days = rec._get_demand_by_days()
-            mrp_moves_by_days = rec._get_qualified_mrp_moves()
+            qualified_demand = 0.0
+            moves = rec._search_stock_moves_qualified_demand()
+            mrp_moves = rec._search_mrp_moves_qualified_demand()
+            demand_by_days = rec._get_demand_by_days(moves)
+            mrp_moves_by_days = rec._get_qualified_mrp_moves(mrp_moves)
             dates = list(set(demand_by_days.keys()) | set(mrp_moves_by_days.keys()))
             for date in dates:
                 if (
                     demand_by_days.get(date, 0.0) >= rec.order_spike_threshold
                     or date <= today
                 ):
-                    rec.qualified_demand += demand_by_days.get(date, 0.0)
+                    qualified_demand += demand_by_days.get(date, 0.0)
+                else:
+                    moves = moves.filtered(lambda x: x.date != date)
                 if (
                     mrp_moves_by_days.get(date, 0.0) >= rec.order_spike_threshold
                     or date <= today
                 ):
-                    rec.qualified_demand += mrp_moves_by_days.get(date, 0.0)
+                    qualified_demand += mrp_moves_by_days.get(date, 0.0)
+                else:
+                    mrp_moves = mrp_moves.filtered(lambda x: x.mrp_date != date)
+            rec.qualified_demand = qualified_demand
+            rec.qualified_demand_stock_move_ids = moves
+            rec.qualified_demand_mrp_move_ids = mrp_moves
         return True
 
     def _calc_incoming_dlt_qty(self):
@@ -1585,21 +1809,33 @@ class StockBuffer(models.Model):
             wizard.make_procurement()
         return True
 
-    def action_view_supply_outside_dlt_window(self):
+    def _search_purchase_order_lines_incoming(self, outside_dlt=False):
         cut_date = self._get_incoming_supply_date_limit()
-        if self.item_type == "purchased":
+        if not outside_dlt:
+            pols = self.purchase_line_ids.filtered(
+                lambda l: l.date_planned <= fields.Datetime.to_datetime(cut_date)
+                and l.order_id.state in ("draft", "sent")
+            )
+        else:
             pols = self.purchase_line_ids.filtered(
                 lambda l: l.date_planned > fields.Datetime.to_datetime(cut_date)
                 and l.order_id.state in ("draft", "sent")
             )
-            moves = self._search_stock_moves_incoming(outside_dlt=True)
+        return pols
+
+    def action_view_supply(self, outside_dlt=False):
+        if self.item_type == "purchased":
+            pols = self._search_purchase_order_lines_incoming(outside_dlt)
+            moves = self._search_stock_moves_incoming(outside_dlt)
+            while moves.mapped("move_orig_ids"):
+                moves = moves.mapped("move_orig_ids")
             pos = pols.mapped("order_id") + moves.mapped("purchase_line_id.order_id")
             result = self.env["ir.actions.actions"]._for_xml_id("purchase.purchase_rfq")
             # Remove the context since the action display RFQ and not PO.
             result["context"] = {}
             result["domain"] = [("id", "in", pos.ids)]
         elif self.item_type == "manufactured":
-            moves = self._search_stock_moves_incoming(outside_dlt=True)
+            moves = self._search_stock_moves_incoming(outside_dlt)
             mos = moves.mapped("production_id")
             result = self.env["ir.actions.actions"]._for_xml_id(
                 "mrp.mrp_production_action"
@@ -1607,7 +1843,7 @@ class StockBuffer(models.Model):
             result["context"] = {}
             result["domain"] = [("id", "in", mos.ids)]
         else:
-            moves = self._search_stock_moves_incoming(outside_dlt=True)
+            moves = self._search_stock_moves_incoming(outside_dlt)
             picks = moves.mapped("picking_id")
             result = self.env["ir.actions.actions"]._for_xml_id(
                 "stock.action_picking_tree_all"
@@ -1616,10 +1852,83 @@ class StockBuffer(models.Model):
             result["domain"] = [("id", "in", picks.ids)]
         return result
 
+    def action_view_supply_inside_dlt_window(self):
+        return self.action_view_supply()
+
+    def action_view_supply_outside_dlt_window(self):
+        return self.action_view_supply(outside_dlt=True)
+
+    def action_view_qualified_demand_pickings(self):
+        moves = self.qualified_demand_stock_move_ids
+        picks = moves.mapped("picking_id")
+        result = self.env["ir.actions.actions"]._for_xml_id(
+            "stock.action_picking_tree_all"
+        )
+        result["context"] = {}
+        result["domain"] = [("id", "in", picks.ids)]
+        return result
+
+    def action_view_qualified_demand_mrp(self):
+        mrp_moves = self.qualified_demand_mrp_move_ids
+        result = self.env["ir.actions.actions"]._for_xml_id(
+            "mrp_multi_level.mrp_move_action"
+        )
+        result["context"] = {}
+        result["domain"] = [("id", "in", mrp_moves.ids)]
+        return result
+
+    def action_view_past_adu(self):
+        horizon = self._get_horizon_adu_past_demand()
+        date_from, date_to = self._get_dates_adu_past_demand(horizon)
+        locations = self.env["stock.location"].search(
+            [("id", "child_of", [self.location_id.id])]
+        )
+        if self.adu_calculation_method.source_past == "actual":
+            domain = self._past_moves_domain(date_from, date_to, locations)
+            moves = self.env["stock.move"].search(domain)
+            result = self.env["ir.actions.actions"]._for_xml_id(
+                "stock.stock_move_action"
+            )
+            result["context"] = {}
+            result["domain"] = [("id", "in", moves.ids)]
+        else:
+            domain = self._past_demand_estimate_domain(date_from, date_to, locations)
+            estimates = self.env["stock.demand.estimate"].search(domain)
+            result = self.env["ir.actions.actions"]._for_xml_id(
+                "stock_demand_estimate.stock_demand_estimate_action"
+            )
+            result["context"] = {}
+            result["domain"] = [("id", "in", estimates.ids)]
+        return result
+
+    def action_view_future_adu(self):
+        horizon = self._get_horizon_adu_future_demand()
+        date_from, date_to = self._get_dates_adu_future_demand(horizon)
+        locations = self.env["stock.location"].search(
+            [("id", "child_of", [self.location_id.id])]
+        )
+        if self.adu_calculation_method.source_future == "actual":
+            domain = self._future_moves_domain(date_from, date_to, locations)
+            moves = self.env["stock.move"].search(domain)
+            result = self.env["ir.actions.actions"]._for_xml_id(
+                "stock.stock_move_action"
+            )
+            result["context"] = {}
+            result["domain"] = [("id", "in", moves.ids)]
+        else:
+            domain = self._future_demand_estimate_domain(date_from, date_to, locations)
+            estimates = self.env["stock.demand.estimate"].search(domain)
+            result = self.env["ir.actions.actions"]._for_xml_id(
+                "stock_demand_estimate.stock_demand_estimate_action"
+            )
+            result["context"] = {}
+            result["domain"] = [("id", "in", estimates.ids)]
+        return result
+
     @api.model
     def cron_ddmrp_adu(self, automatic=False):
         """calculate ADU for each DDMRP buffer. Called by cronjob."""
-        auto_commit = not getattr(threading.currentThread(), "testing", False)
+        auto_commit = not getattr(threading.current_thread(), "testing", False)
         _logger.info("Start cron_ddmrp_adu.")
         buffer_ids = self.search([]).ids
         i = 0
@@ -1685,7 +1994,7 @@ class StockBuffer(models.Model):
     def cron_ddmrp(self, automatic=False):
         """Calculate key DDMRP parameters for each buffer.
         Called by cronjob."""
-        auto_commit = not getattr(threading.currentThread(), "testing", False)
+        auto_commit = not getattr(threading.current_thread(), "testing", False)
         _logger.info("Start cron_ddmrp.")
         buffer_ids = self.search([]).ids
         i = 0
@@ -1712,15 +2021,9 @@ class StockBuffer(models.Model):
     def _values_source_location_from_route(self):
         return {"warehouse_id": self.warehouse_id}
 
-    def _source_location_from_route(self, route=None):
-        """Return the replenishment source location for distributed buffers
-
-        If no route is passed, it follows the source location of the rules of
-        all the routes it finds until it can no longer find a path.
-        If a route is passed, it stops at the final source location of the
-        rules of this route only.
-        """
-        current_location = self.location_id
+    def _source_location_from_route(self, procure_location=None):
+        """Return the replenishment source location for distributed buffers"""
+        current_location = procure_location or self.location_id
         rule_values = self._values_source_location_from_route()
         while current_location:
             rule = self.env["procurement.group"]._get_rule(
@@ -1728,6 +2031,27 @@ class StockBuffer(models.Model):
             )
             if rule.procure_method == "make_to_stock":
                 return rule.location_src_id
+            elif rule.procure_method == "make_to_order":
+                # If resupply from another warehouse, this rule can't be retrieved by
+                # method _get_rule, because that we try to get this rule bases on previous rule
+                pull_rule = self.env["stock.rule"].search(
+                    [
+                        ("action", "in", ("pull", "pull_push")),
+                        ("route_id", "=", rule.route_id.id),
+                        ("location_id", "=", rule.location_src_id.id),
+                    ]
+                )
+                if pull_rule:
+                    if pull_rule.procure_method in ("make_to_stock", "mts_else_mto"):
+                        return pull_rule.location_src_id
+                    elif pull_rule.procure_method == "make_to_order":
+                        current_location = pull_rule.location_src_id
+                        rule_values.update(
+                            {
+                                "warehouse_id": pull_rule.location_src_id.get_warehouse(),
+                            }
+                        )
+                        continue
             current_location = rule.location_src_id
 
     def action_dummy(self):

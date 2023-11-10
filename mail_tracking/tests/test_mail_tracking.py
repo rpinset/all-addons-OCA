@@ -590,3 +590,66 @@ class TestMailTracking(TransactionCase):
             self.assertEqual(b"NONE", none.response[0])
             none = controller.mail_tracking_event(db, "open")
             self.assertEqual(b"NONE", none.response[0])
+
+    def test_bounce_tracking_event_created(self):
+        mail, tracking = self.mail_send(self.recipient.email)
+        message = self.env.ref("mail.mail_message_channel_1_1")
+        message.mail_tracking_ids = [(4, tracking.id, False)]
+        mail.mail_message_id = message
+        message_dict = {
+            "bounced_email": "test@test.net",
+            "bounced_message": message,
+            "bounced_msg_id": [message.message_id],
+            "bounced_partner": self.recipient,
+            "cc": "",
+            "date": "2023-02-07 12:35:53",
+            "email_from": "MAILER-DAEMON@eu-west-1.amazonses.com",
+            "from": "MAILER-DAEMON@eu-west-1.amazonses.com",
+            "in_reply_to": "<010201864d109aa7-west-1.amazonses.com>",
+            "is_internal": False,
+            "message_id": "<010201862be01f29-west-1.amazonses.com>",
+            "message_type": "email",
+            "parent_id": 15894917,
+            "partner_ids": [],
+            "recipients": "bounce+694942@recipient.net",
+            "references": "<010201862bdfa5e9-west-1.amazonses.com>",
+            "subject": "bounce notification",
+            "to": "bounce+694942-mailing.contact-836@test.net",
+        }
+        self.env["mail.thread"]._routing_handle_bounce(message, message_dict)
+        self.assertTrue(
+            "soft_bounce"
+            in message.mail_tracking_ids.tracking_event_ids.mapped("event_type")
+        )
+
+    def test_tracking_img_tag(self):
+        # As the img tag is not in the body of the returned mail.mail record,
+        # we have to intercept the IrMailServer.send_email method here to get
+        # the real outgoing mail body and check for the img tag with a
+        # side_effect function:
+        def assert_tracking_tag_side_effect(*args, **kwargs):
+            mail = args[0]
+            msg = "data-odoo-tracking-email not found"
+            if "data-odoo-tracking-email=" in mail.as_string():
+                msg = "data-odoo-tracking-email found"
+            raise AssertionError(msg)
+
+        with mock.patch(mock_send_email) as mock_func:
+            mock_func.side_effect = assert_tracking_tag_side_effect
+            self.env["ir.config_parameter"].set_param(
+                "mail_tracking.tracking_img_disabled", False
+            )
+            mail, tracking = self.mail_send(self.recipient.email)
+            self.assertEqual(
+                "data-odoo-tracking-email found", tracking.error_description
+            )
+
+            # now we change the system parameter "mail_tracking.img.disable"
+            # to True and check that the img tag is not in the outgoing mail
+            self.env["ir.config_parameter"].set_param(
+                "mail_tracking.tracking_img_disabled", True
+            )
+            mail, tracking = self.mail_send(self.recipient.email)
+            self.assertEqual(
+                "data-odoo-tracking-email not found", tracking.error_description
+            )

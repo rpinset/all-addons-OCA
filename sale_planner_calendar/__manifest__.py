@@ -3,7 +3,7 @@
 {
     "name": "Sale planner calendar",
     "summary": "Sale planner calendar",
-    "version": "15.0.1.1.0",
+    "version": "15.0.1.4.0",
     "development_status": "Beta",
     "category": "Sale",
     "website": "https://github.com/OCA/sale-workflow",
@@ -23,6 +23,7 @@
         "views/res_config_settings_views.xml",
         "views/res_partner_view.xml",
         "views/sale_planner_calendar_event_view.xml",
+        "views/sale_planner_calendar_issue_type_view.xml",
         "views/sale_planner_calendar_summary_view.xml",
         "wizard/sale_planner_calendar_reassign.xml",
         "wizard/sale_planner_calendar_wizard.xml",
@@ -31,7 +32,11 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "sale_planner_calendar/static/src/scss/sale_planner_calendar.scss"
-        ]
+            "sale_planner_calendar/static/src/scss/sale_planner_calendar.scss",
+            "sale_planner_calendar/static/src/js/sale_planner_calendar_event_sales.js",
+        ],
+        "web.assets_qweb": [
+            "sale_planner_calendar/static/src/xml/sale_planner_calendar_event_sales.xml",
+        ],
     },
 }

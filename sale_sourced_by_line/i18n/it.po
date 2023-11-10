@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: sale-workflow (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-02 17:59+0000\n"
-"PO-Revision-Date: 2023-01-18 11:46+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-09 07:54+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-sale-workflow-8-0/"
 "language/it/)\n"
 "Language: it\n"
@@ -17,13 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: sale_sourced_by_line
-#: model:ir.model.fields,help:sale_sourced_by_line.field_sale_order_line_warehouse_id
+#: model:ir.model.fields,field_description:sale_sourced_by_line.field_sale_order__warehouse_id
+msgid "Default Warehouse"
+msgstr ""
+
+#. module: sale_sourced_by_line
+#: model:ir.model.fields,help:sale_sourced_by_line.field_sale_order_line__warehouse_id
 msgid ""
 "If a source warehouse is selected, it will be used to define the route. "
 "Otherwise, it will get the warehouse of the sale order"
+msgstr ""
+"Se è selezionata una origine magazzino, verrà utilizzata per definire la "
+"rotta. Altrimenti, verrà preso il magazzino dell'ordine di vendita"
+
+#. module: sale_sourced_by_line
+#: model:ir.model.fields,help:sale_sourced_by_line.field_sale_order__warehouse_id
+msgid ""
+"If no source warehouse is selected on line, this warehouse is used as "
+"default. "
 msgstr ""
 
 #. module: sale_sourced_by_line
@@ -34,9 +48,9 @@ msgstr "Ordine di vendita"
 #. module: sale_sourced_by_line
 #: model:ir.model,name:sale_sourced_by_line.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Linea d'ordine di vendita"
+msgstr "Riga ordine di vendita"
 
 #. module: sale_sourced_by_line
-#: model:ir.model.fields,field_description:sale_sourced_by_line.field_sale_order_line_warehouse_id
+#: model:ir.model.fields,field_description:sale_sourced_by_line.field_sale_order_line__warehouse_id
 msgid "Source Warehouse"
-msgstr ""
+msgstr "MagazzIno origine"

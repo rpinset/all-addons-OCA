@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 16:33+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-29 08:30+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_sale
 #: model_terms:ir.ui.view,arch_db:fieldservice_sale.view_fsm_order_form_inherit_sale
@@ -138,11 +138,11 @@ msgid ""
 "Create a task and track hours: Create a task on the sales order validation "
 "and track the work hours."
 msgstr ""
-"Imposta manualmente le quantità dell'ordine: fattura basata sulle quantità "
-"inserite manualmente, senza creare un conto analitico.\n"
-"Foglio ore a contratto: fattura basata sulle ore tracciate nel relativo "
+"Imposta manualmente la quantità nell'ordine: la fattura si basa sulle "
+"quantità inserite manualmente, senza la creazione di un conto analitico.\n"
+"Fogli ore a contratto: la fattura si basa sulle ore registrate del relativo "
 "foglio ore.\n"
-"Crea una attività e traccia le ore: crea una attività sulla validazione "
+"Crea una attività e traccia le ore: crea una attività alla validazione "
 "dell'ordine di vendita e traccia le ore lavorate."
 
 #. module: fieldservice_sale
@@ -173,7 +173,7 @@ msgstr "Vendita"
 #. module: fieldservice_sale
 #: model:ir.model.fields,field_description:fieldservice_sale.field_fsm_order__sale_line_id
 msgid "Sale Line"
-msgstr "Riga vendita"
+msgstr "Riga di vendita"
 
 #. module: fieldservice_sale
 #: model_terms:ir.ui.view,arch_db:fieldservice_sale.fsm_location_form_view

@@ -1,7 +1,9 @@
 # Copyright (C) 2020 Terrabit
 # Copyright (C) 2022 NextERP Romania
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-from odoo.tests import tagged
+
+from odoo import fields
+from odoo.tests import Form, tagged
 
 from .common import TestStockCommonPriceDiff
 
@@ -26,11 +28,40 @@ class TestStockPurchase(TestStockCommonPriceDiff):
         self.check_account_valuation(0, 0)
 
         self.create_invoice(self.diff_p1, self.diff_p2)
-        # in stocul  are valoarea cu diferenta de pret inregistrata
+        # in stoc e valoarea cu diferenta de pret inregistrata
         self.check_stock_valuation(self.val_p1_f, self.val_p2_f)
 
         # in contabilitate stocul are acceasi valoare
         self.check_account_valuation(self.val_p1_f, self.val_p2_f)
+
+        # verificare inregistrare diferenta de pret
+        self.check_account_diff(0, 0)
+
+    def test_purchase_in_eur_with_invoice_and_diff_in_eur(self):
+        self.create_po_default(
+            {
+                "currency": self.currency_eur,
+            }
+        )
+
+        ron_value1 = self.qty_po_p1 * self.price_p1 * self.rate
+        ron_value2 = self.qty_po_p2 * self.price_p2 * self.rate
+
+        ron_value_f1 = self.qty_po_p1 * (self.price_p1 + self.diff_p1) * self.rate
+        ron_value_f2 = self.qty_po_p2 * (self.price_p2 + self.diff_p2) * self.rate
+
+        self.check_stock_valuation(ron_value1, ron_value2)
+        # in contabilitate trebuie sa fie zero pentru ca la receptie nu
+        # trebuie generata nota cantabila
+        self.check_account_valuation(0, 0)
+
+        self.create_invoice(self.diff_p1, self.diff_p2)
+        # in stocul  are valoarea cu diferenta de pret inregistrata
+
+        self.check_stock_valuation(ron_value_f1, ron_value_f2)
+
+        # in contabilitate stocul este inregistrat cu diferentele de pret
+        self.check_account_valuation(ron_value_f1, ron_value_f2)
 
         # verificare inregistrare diferenta de pret
         self.check_account_diff(0, 0)
@@ -210,3 +241,71 @@ class TestStockPurchase(TestStockCommonPriceDiff):
 
         # in contabilitate stocul are valoarea din factura
         self.check_account_valuation(self.val_p1_f, self.val_p2_f)
+
+    def test_2_nir_and_1_invoice_with_price_diff(self):
+        "Doua receptii de pe doua comenzi de achzitie cu o singura factura cu diferenta de pret"
+        self.create_po_default(
+            {
+                "lines": [
+                    {
+                        "product": self.product_1,
+                        "qty": 2,
+                        "price": 5,
+                    },
+                    {
+                        "product": self.product_2,
+                        "qty": 2,
+                        "price": 5,
+                    },
+                ]
+            }
+        )
+        po1 = self.po
+        self.create_po_default(
+            {
+                "lines": [
+                    {
+                        "product": self.product_1,
+                        "qty": 2,
+                        "price": 5,
+                    },
+                    {
+                        "product": self.product_2,
+                        "qty": 2,
+                        "price": 5,
+                    },
+                ]
+            }
+        )
+        po2 = self.po
+
+        self.check_stock_valuation(20, 20)
+        self.check_account_valuation(0, 0)
+
+        invoice_form = Form(
+            self.env["account.move"].with_context(
+                default_move_type="in_invoice",
+                default_invoice_date=fields.Date.today(),
+                active_model="account.move",
+            )
+        )
+        invoice_form.partner_id = self.vendor
+        invoice_form.purchase_id = po1
+
+        invoice = invoice_form.save()
+
+        invoice_form = Form(invoice)
+        invoice_form.purchase_id = po2
+        invoice = invoice_form.save()
+
+        invoice_form = Form(invoice)
+        for line in range(0, 4):
+            with invoice_form.invoice_line_ids.edit(line) as line_form:
+                line_form.price_unit += 1
+
+        invoice = invoice_form.save()
+
+        invoice.with_context(l10n_ro_approved_price_difference=True).action_post()
+
+        self.check_stock_valuation(24, 24)
+        self.check_account_valuation(24, 24)

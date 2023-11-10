@@ -26,7 +26,10 @@ class SalePlannerCalendarSummary(models.Model):
         inverse_name="calendar_summary_id",
     )
     user_id = fields.Many2one(
-        comodel_name="res.users", default=lambda self: self.env.user.id, index=True
+        comodel_name="res.users",
+        default=lambda self: self.env.user.id,
+        index=True,
+        domain="[('share','=',False)]",
     )
     sale_ids = fields.One2many(
         comodel_name="sale.order",
@@ -255,7 +258,7 @@ class SalePlannerCalendarSummary(models.Model):
                 ("sale_planner_calendar_event_id", "=", False),
             ]
         )
-        sales.action_set_planner_calendar_event()
+        sales.action_set_planner_calendar_event(self)
 
     @api.model
     def _get_datetime_from_date_tz_hour(self, date, hour_float):

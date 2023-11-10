@@ -2,7 +2,7 @@ import logging
 import re
 
 from odoo import _, api, fields, models
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError, ValidationError
 from odoo.tools import float_compare
 
 _logger = logging.getLogger(__name__)
@@ -50,6 +50,10 @@ class AccountMove(models.Model):
         string="External Authorization Number", size=49
     )
     l10n_ec_reason = fields.Char(string="Refund Reason", size=300)
+
+    l10n_ec_additional_information_move_ids = fields.One2many(
+        "l10n.ec.additional.information", "move_id", string="Additional Information"
+    )
 
     @api.depends("invoice_date", "invoice_date_due")
     def _compute_l10n_ec_credit_days(self):
@@ -306,3 +310,69 @@ class AccountMove(models.Model):
             l10n_ec_legacy_document_authorization=self.l10n_ec_xml_access_key,
         )
         return move_vals
+
+    def _compute_show_reset_to_draft_button(self):
+        """
+        Hide button reset to draft when receipt is cancelled
+        """
+        response = super()._compute_show_reset_to_draft_button()
+
+        for move in self:
+            for doc in move.edi_document_ids:
+                if (
+                    doc.edi_format_id._needs_web_services()
+                    and doc.state == "cancelled"
+                    and doc.l10n_ec_authorization_date
+                    and move.is_invoice(include_receipts=True)
+                    and doc.edi_format_id._is_required_for_invoice(move)
+                ):
+                    move.show_reset_to_draft_button = False
+                    break
+
+        return response
+
+    def l10n_ec_send_email(self):
+        WizardInvoiceSent = self.env["account.invoice.send"]
+        self.ensure_one()
+        res = self.with_context(discard_logo_check=True).action_invoice_sent()
+        context = res["context"]
+        send_mail = WizardInvoiceSent.with_context(**context).create({})
+        # enviar factura automaticamente por correo
+        # simular onchange y accion
+        send_mail.onchange_template_id()
+        send_mail.send_and_print_action()
+
+    def button_cancel_posted_moves(self):
+        """
+        Restrict the cancel process when receipt is authorized or
+        connection to the SRI is not possible
+        """
+        for receipt in self:
+            company = receipt.env.user.company_id
+            client_ws = receipt.edi_document_ids.edi_format_id
+
+            authorization_client = client_ws._l10n_ec_get_edi_ws_client(
+                company.l10n_ec_type_environment, "authorization"
+            )
+
+            response = receipt.edi_document_ids._l10n_ec_edi_send_xml_auth(
+                authorization_client
+            )
+
+            if response is False:
+                raise ValidationError(
+                    _(
+                        "The connection to the SRI service is not possible. Please check later."
+                    )
+                )
+
+            is_authorized = receipt.edi_document_ids._l10n_ec_edi_process_response_auth(
+                response
+            )[0]
+
+            if is_authorized:
+                raise ValidationError(
+                    _("The receipt is authorized. It cannot be cancelled.")
+                )
+
+        return super().button_cancel_posted_moves()
