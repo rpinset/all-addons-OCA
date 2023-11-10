@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-24 07:53+0000\n"
-"PO-Revision-Date: 2023-02-17 12:23+0000\n"
+"PO-Revision-Date: 2023-05-15 19:35+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,6 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14.1\n"
+
+#. module: purchase_triple_discount
+#: model_terms:ir.ui.view,arch_db:purchase_triple_discount.report_purchaseorder_document
+msgid "<strong>Disc. 2 (%)</strong>"
+msgstr ""
+
+#. module: purchase_triple_discount
+#: model_terms:ir.ui.view,arch_db:purchase_triple_discount.report_purchaseorder_document
+msgid "<strong>Disc. 3 (%)</strong>"
+msgstr ""
 
 #. module: purchase_triple_discount
 #: model:ir.model,name:purchase_triple_discount.model_res_partner
@@ -53,7 +63,7 @@ msgid "Discount 2 (%)"
 msgstr "Sconto 2 (%)"
 
 #. module: purchase_triple_discount
-#: sql_constraint:purchase.order.line:0
+#: model:ir.model.constraint,message:purchase_triple_discount.constraint_purchase_order_line_discount2_limit
 msgid "Discount 2 must be lower than 100%."
 msgstr "Sconto 2 deve essere inferiore di 100%."
 
@@ -64,14 +74,9 @@ msgid "Discount 3 (%)"
 msgstr "Sconto 3 (%)"
 
 #. module: purchase_triple_discount
-#: sql_constraint:purchase.order.line:0
+#: model:ir.model.constraint,message:purchase_triple_discount.constraint_purchase_order_line_discount3_limit
 msgid "Discount 3 must be lower than 100%."
 msgstr "Sconto 3 deve essere inferiore di 100%."
-
-#. module: purchase_triple_discount
-#: model:ir.model,name:purchase_triple_discount.model_account_invoice
-msgid "Invoice"
-msgstr "Fattura"
 
 #. module: purchase_triple_discount
 #: model:ir.model,name:purchase_triple_discount.model_purchase_order_line
@@ -86,7 +91,7 @@ msgstr "Resoconto di acquisto"
 #. module: purchase_triple_discount
 #: model:ir.model,name:purchase_triple_discount.model_stock_rule
 msgid "Stock Rule"
-msgstr "Regola Stock"
+msgstr "Regola di giacenza"
 
 #. module: purchase_triple_discount
 #: model:ir.model,name:purchase_triple_discount.model_product_supplierinfo
@@ -104,3 +109,6 @@ msgid ""
 msgstr ""
 "Questo valore verrà usato come predefinito per ogni nuova riga d'ordine di "
 "acquisto che dipende da questo fornitore."
+
+#~ msgid "Invoice"
+#~ msgstr "Fattura"

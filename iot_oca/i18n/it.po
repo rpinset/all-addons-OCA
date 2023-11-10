@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-10 16:31+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2023-10-13 11:39+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device__action_ids
@@ -42,7 +42,7 @@ msgstr "Azioni"
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device__active
 #: model_terms:ir.ui.view,arch_db:iot_oca.iot_device_search
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device__color
@@ -82,7 +82,7 @@ msgstr "Creato il"
 #. module: iot_oca
 #: model_terms:ir.ui.view,arch_db:iot_oca.iot_device_kanban
 msgid "Delete"
-msgstr "Cancella"
+msgstr "Elimina"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device_action__device_id
@@ -347,7 +347,7 @@ msgstr "Passphrase"
 #. module: iot_oca
 #: model:ir.model.fields.selection,name:iot_oca.selection__iot_device_action__status__pending
 msgid "Pending"
-msgstr "In sospeso"
+msgstr "In attesa"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device_action__result
@@ -367,13 +367,13 @@ msgstr "Stato"
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device_action__status
 msgid "Status"
-msgstr "Stati"
+msgstr "Stato"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device__system_id
 #: model:ir.model.fields,field_description:iot_oca.field_iot_system_action__system_id
 msgid "System"
-msgstr "Suystema"
+msgstr "Sistema"
 
 #. module: iot_oca
 #: model:ir.model.fields,field_description:iot_oca.field_iot_device_action__system_action_id

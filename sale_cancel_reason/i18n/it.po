@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 01:51+0000\n"
-"PO-Revision-Date: 2023-03-30 14:30+0000\n"
+"PO-Revision-Date: 2023-04-15 12:34+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -27,7 +27,7 @@ msgstr ""
 #. module: sale_cancel_reason
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_sale_order_cancel
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: sale_cancel_reason
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_order_form
@@ -121,13 +121,6 @@ msgid "Reason for the cancellation"
 msgstr ""
 
 #. module: sale_cancel_reason
-#: model:ir.model,name:sale_cancel_reason.model_sale_order
-#, fuzzy
-#| msgid "Sales Order"
-msgid "Sale Order"
-msgstr "Ordini vendita"
-
-#. module: sale_cancel_reason
 #: model:ir.actions.act_window,name:sale_cancel_reason.action_sale_order_cancel_reason
 #: model:ir.model,name:sale_cancel_reason.model_sale_order_cancel_reason
 msgid "Sale Order Cancel Reason"
@@ -141,6 +134,11 @@ msgid "Sale Order Cancel Reasons"
 msgstr ""
 
 #. module: sale_cancel_reason
+#: model:ir.model,name:sale_cancel_reason.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: sale_cancel_reason
 #: model:sale.order.cancel.reason,name:sale_cancel_reason.cancel_reason_no_service_needed
 msgid "Service no longer needed"
 msgstr ""
@@ -149,3 +147,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_sale_order_cancel
 msgid "or"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Sales Order"
+#~ msgid "Sale Order"
+#~ msgstr "Ordini vendita"

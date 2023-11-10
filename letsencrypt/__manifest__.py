@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
     "name": "Let's Encrypt",
-    "version": "13.0.1.0.1",
+    "version": "13.0.1.1.0",
     "author": "Therp BV," "Tecnativa," "Acysos S.L," "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Hidden/Dependency",
@@ -18,6 +18,6 @@
     "post_init_hook": "post_init_hook",
     "installable": True,
     "external_dependencies": {
-        "python": ["acme", "cryptography", "dnspython", "josepy"]
+        "python": ["acme", "cryptography", "dnspython", "josepy", "pyOpenSSL<23"]
     },
 }

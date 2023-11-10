@@ -48,6 +48,16 @@ class HrEmployee(models.Model):
         copy=True,
     )
 
+    @api.model
+    def default_get(self, fields):
+        """Set calendar_ids default value to cover all use cases."""
+        vals = super().default_get(fields)
+        if "calendar_ids" in fields and not vals.get("calendar_ids"):
+            vals["calendar_ids"] = [
+                (0, 0, {"calendar_id": self.env.company.resource_calendar_id.id}),
+            ]
+        return vals
+
     def _regenerate_calendar(self):
         self.ensure_one()
         vals_list = []
@@ -125,12 +135,14 @@ class HrEmployee(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         res = super().create(vals_list)
+        # Avoid creating an employee without calendars
         if (
             not self.env.context.get("skip_employee_calendars_required")
             and not config["test_enable"]
             and res.filtered(lambda x: not x.calendar_ids)
         ):
             raise UserError(_("You can not create employees without any calendars."))
+        # Regenerate calendar
         res.filtered("calendar_ids").regenerate_calendar()
         return res
 
@@ -143,7 +155,7 @@ class HrEmployeeCalendar(models.Model):
     date_start = fields.Date(string="Start Date",)
     date_end = fields.Date(string="End Date",)
     employee_id = fields.Many2one(
-        comodel_name="hr.employee", string="Employee", required=True,
+        comodel_name="hr.employee", string="Employee", required=True, ondelete="cascade"
     )
     company_id = fields.Many2one(related="employee_id.company_id")
     calendar_id = fields.Many2one(
@@ -151,6 +163,7 @@ class HrEmployeeCalendar(models.Model):
         string="Working Time",
         required=True,
         check_company=True,
+        ondelete="restrict",
     )
 
     _sql_constraints = [

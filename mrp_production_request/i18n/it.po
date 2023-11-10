@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-12 03:48+0000\n"
-"PO-Revision-Date: 2023-04-07 18:26+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-29 17:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mrp_production_request
 #: model_terms:ir.actions.act_window,help:mrp_production_request.mrp_production_request_action
@@ -178,7 +178,7 @@ msgstr "Descrizione"
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo__display_name
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo_line__display_name
 msgid "Display Name"
-msgstr "Nome Visualizzato"
+msgstr "Nome visualizzato"
 
 #. module: mrp_production_request
 #: model:ir.model.fields.selection,name:mrp_production_request.selection__mrp_production_request__state__done
@@ -265,14 +265,14 @@ msgstr "Ultima modifica il"
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo__write_uid
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo_line__write_uid
 msgid "Last Updated by"
-msgstr "Ultima modifica di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__write_date
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo__write_date
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo_line__write_date
 msgid "Last Updated on"
-msgstr "Ultima modifica il"
+msgstr "Ultimo aggiornamento il"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo_line__location_id
@@ -297,7 +297,7 @@ msgstr "Allegato principale"
 #. module: mrp_production_request
 #: model:res.groups,name:mrp_production_request.group_mrp_production_request_manager
 msgid "Manager"
-msgstr "Manager"
+msgstr "Responsabile"
 
 #. module: mrp_production_request
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.mrp_production_request_create_mo_view
@@ -314,7 +314,7 @@ msgstr "Ordine produzione:"
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.view_mrp_production_request_form
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.view_mrp_production_request_search
 msgid "Manufacturing Orders"
-msgstr "Ordini produzione"
+msgstr "Ordini di produzione"
 
 #. module: mrp_production_request
 #: model:ir.model,name:mrp_production_request.model_mrp_production_request
@@ -325,7 +325,7 @@ msgstr "Ordini produzione"
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.view_mrp_production_request_form
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.view_mrp_production_request_search
 msgid "Manufacturing Request"
-msgstr "Richiesta produzione"
+msgstr "Richiesta di produzione"
 
 #. module: mrp_production_request
 #: model:ir.actions.act_window,name:mrp_production_request.mrp_production_request_action
@@ -342,7 +342,7 @@ msgstr "Richieste di produzione non eseguite o annullate."
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__message_ids
@@ -407,7 +407,7 @@ msgstr "Punto ordine"
 #. module: mrp_production_request
 #: model_terms:ir.ui.view,arch_db:mrp_production_request.view_mrp_production_request_search
 msgid "Pending Qty"
-msgstr "Qta. in attesa"
+msgstr "Q.tà in attesa"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__pending_qty
@@ -418,12 +418,12 @@ msgstr "Quantità in attesa"
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__picking_type_id
 msgid "Picking Type"
-msgstr "Tipo prelievo"
+msgstr "Tipologia prelievo"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__procurement_group_id
 msgid "Procurement Group"
-msgstr "Gruppo approvvigionamento"
+msgstr "Gruppo di approvvigionamento"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__product_id
@@ -435,12 +435,12 @@ msgstr "Prodotto"
 #: model:ir.model,name:mrp_production_request.model_product_template
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request__product_tmpl_id
 msgid "Product Template"
-msgstr "Template prodotto"
+msgstr "Modello prodotto"
 
 #. module: mrp_production_request
 #: model:ir.model,name:mrp_production_request.model_mrp_production
 msgid "Production Order"
-msgstr "Ordine produzione"
+msgstr "Ordine di produzione"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,field_description:mrp_production_request.field_mrp_production_request_create_mo__product_line_ids
@@ -615,7 +615,7 @@ msgstr "Movimenti di magazzino di beni prodotti"
 #. module: mrp_production_request
 #: model:ir.model,name:mrp_production_request.model_stock_rule
 msgid "Stock Rule"
-msgstr "Regola di magazzino"
+msgstr "Regola di giacenza"
 
 #. module: mrp_production_request
 #: model:ir.model.fields,help:mrp_production_request.field_mrp_production_request__manufactured_qty

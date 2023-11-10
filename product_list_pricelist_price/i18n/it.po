@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_list_pricelist_price
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-11-06 14:37+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: product_list_pricelist_price
+#: model:ir.model.fields,field_description:product_list_pricelist_price.field_product_pricelist__display_pricelist_price
+msgid "Display in Pricelist Prices"
+msgstr "Visualizza nei prezzi listino"
+
+#. module: product_list_pricelist_price
+#: model:ir.model.fields,help:product_list_pricelist_price.field_product_pricelist__display_pricelist_price
+msgid ""
+"If marked, this pricelist will be displayed in the product pricelist prices "
+"views."
+msgstr ""
+"Se selezionata, questo listino verrà visualizzato nella vista prezzi listino "
+"del prodotto."
+
+#. module: product_list_pricelist_price
+#: model:ir.model,name:product_list_pricelist_price.model_product_pricelist
+msgid "Pricelist"
+msgstr "Listino prezzi"
+
+#. module: product_list_pricelist_price
+#: model:ir.ui.menu,name:product_list_pricelist_price.menu_product_pricelist_price
+msgid "Pricelist Prices"
+msgstr "Prezzi listino"
+
+#. module: product_list_pricelist_price
+#: model:ir.model,name:product_list_pricelist_price.model_product_product
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: product_list_pricelist_price
+#: model_terms:ir.ui.view,arch_db:product_list_pricelist_price.product_template_pricelist_price
+msgid "Product Pricelist Prices"
+msgstr "Prezzi listino prodotto"
+
+#. module: product_list_pricelist_price
+#: model:ir.actions.act_window,name:product_list_pricelist_price.product_template_pricelist_price_action
+#: model:ir.ui.menu,name:product_list_pricelist_price.menu_product_template_pricelist_price
+msgid "Product Prices"
+msgstr "Prezzi prodotto"
+
+#. module: product_list_pricelist_price
+#: model:ir.model,name:product_list_pricelist_price.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: product_list_pricelist_price
+#: model_terms:ir.ui.view,arch_db:product_list_pricelist_price.product_product_pricelist_price
+msgid "Product Variant Pricelist Prices"
+msgstr "Prezzi listino variante prodotto"
+
+#. module: product_list_pricelist_price
+#: model:ir.actions.act_window,name:product_list_pricelist_price.product_product_pricelist_price_action
+#: model:ir.ui.menu,name:product_list_pricelist_price.menu_product_variant_pricelist_price
+msgid "Product Variant Prices"
+msgstr "Prezzi variante prodotto"

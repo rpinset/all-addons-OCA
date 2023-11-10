@@ -5,9 +5,9 @@
 {
     "name": "Website Snippet Country Code Dropdown",
     "summary": "Allow to select country in a dropdown",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "category": "Website",
-    "website": "http://www.tecnativa.com",
+    "website": "https://github.com/OCA/website",
     "author": "Tecnativa, " "Odoo Community Association (OCA)",
     "license": "LGPL-3",
     "application": False,

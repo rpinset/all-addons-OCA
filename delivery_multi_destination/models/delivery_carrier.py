@@ -23,6 +23,12 @@ class DeliveryCarrier(models.Model):
         required=True,
     )
 
+    @api.onchange("destination_type", "child_ids")
+    def _onchange_destination_type(self):
+        """Define the corresponding value to avoid creation error with UX."""
+        if self.destination_type == "multi" and self.child_ids and not self.product_id:
+            self.product_id = fields.first(self.child_ids.product_id)
+
     def search(self, args, offset=0, limit=None, order=None, count=False):
         """Don't show by default children carriers."""
         if not self.env.context.get("show_children_carriers"):
@@ -80,7 +86,9 @@ class DeliveryCarrier(models.Model):
             res = []
             for p in pickings:
                 picking_res = False
-                for subcarrier in carrier.child_ids:
+                for subcarrier in carrier.child_ids.filtered(
+                    lambda x: not x.company_id or x.company_id == p.company_id
+                ):
                     if subcarrier.delivery_type == "fixed":
                         if subcarrier._match_address(p.partner_id):
                             picking_res = [
@@ -92,12 +100,19 @@ class DeliveryCarrier(models.Model):
                             break
                     else:
                         try:
+                            # on base_on_rule_send_shipping, the method
+                            # _get_price_available is called using p.carrier_id,
+                            # ignoring the self arg, so we need to temporarily replace
+                            # it with the subcarrier
+                            p.carrier_id = subcarrier.id
                             picking_res = super(
                                 DeliveryCarrier, subcarrier,
-                            ).send_shipping(pickings)
+                            ).send_shipping(p)
                             break
                         except Exception:
                             pass
+                        finally:
+                            p.carrier_id = carrier
                 if not picking_res:
                     raise ValidationError(_("There is no matching delivery rule."))
                 res += picking_res

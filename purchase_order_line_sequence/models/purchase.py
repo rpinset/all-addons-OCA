@@ -27,6 +27,10 @@ class PurchaseOrder(models.Model):
 
     def _create_picking(self):
         res = super(PurchaseOrder, self)._create_picking()
+        self._update_moves_sequence()
+        return res
+
+    def _update_moves_sequence(self):
         for order in self:
             if any(
                 [
@@ -39,22 +43,27 @@ class PurchaseOrder(models.Model):
                 )
                 if pickings:
                     picking = pickings[0]
+                    order_lines = order.order_line.filtered(
+                        lambda l: l.product_id.type in ["product", "consu"]
+                    )
                     for move, line in zip(
-                        sorted(picking.move_lines, key=lambda m: m.id), order.order_line
+                        sorted(picking.move_lines, key=lambda m: m.id), order_lines
                     ):
                         move.write({"sequence": line.sequence})
-        return res
 
     def _reset_sequence(self):
         for rec in self:
             current_sequence = 1
-            for line in rec.order_line:
+            order_lines = sorted(rec.order_line, key=lambda l: l.sequence)
+            for line in order_lines:
                 line.sequence = current_sequence
                 current_sequence += 1
 
     def write(self, line_values):
         res = super(PurchaseOrder, self).write(line_values)
         self._reset_sequence()
+        if "order_line" in line_values:
+            self._update_moves_sequence()
         return res
 
     def copy(self, default=None):

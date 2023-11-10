@@ -28,6 +28,8 @@ email-validator==1.1.1
 python-stdnum
 # generated from manifests external_dependencies
 # generated from manifests external_dependencies
+python-magic
+# generated from manifests external_dependencies
 # generated from manifests external_dependencies
 # generated from manifests external_dependencies
 factur-x
@@ -116,11 +118,9 @@ vcrpy-unittest
 # generated from manifests external_dependencies
 cryptography
 endesive
-lxml
+openpyxl
 py3o.formats
 py3o.template
-PyPDF2
-xlrd
 xlsxwriter
 # generated from manifests external_dependencies
 pycups
@@ -133,6 +133,7 @@ josepy
 lxml
 openpyxl
 pygount
+pyOpenSSL<23
 pysftp
 raven
 xlrd
@@ -153,6 +154,7 @@ pymssql<=2.2.5
 pdf2image
 python-stdnum
 pyzbar
+rfc6266_parser
 # generated from manifests external_dependencies
 pycountry
 GitPython
