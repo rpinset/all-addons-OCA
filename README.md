@@ -213,16 +213,16 @@ Date:   Sun Oct 29 07:16:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 2f3def4c0306dc4dd1c0808383451dc344e4d94e
-Author: Thijs van Oers <thijsvanoers@yahoo.com>
-Date:   Tue Nov 7 10:23:20 2023 +0000
+commit 6308233da6249cc3fe92d9c7b0fccc58f0e71a57
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 10 07:46:52 2023 +0000
 
-    Translated using Weblate (Dutch)
+    Update translation files
     
-    Currently translated at 92.2% (95 of 103 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-payment-16.0/bank-payment-16.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_banking_mandate/nl/
+    Translation: bank-payment-16.0/bank-payment-16.0-account_payment_order
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_payment_order/
 
 
 ## account-reconcile
@@ -1047,11 +1047,16 @@ Date:   Fri Oct 27 23:29:36 2023 +0200
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3ab06645df555f7ebc0f8e392768e5c4961f3731
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 8 16:13:29 2023 +0000
+commit a9f31f4008b9a56f504194b20f9d4f985ff29900
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Nov 10 09:14:56 2023 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-16.0/l10n-spain-16.0-l10n_es_intrastat_report
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_intrastat_report/
 
 
 ## l10n-switzerland
