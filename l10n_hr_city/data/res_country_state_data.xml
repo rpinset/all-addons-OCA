@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!--
+    Croatian counties (without HR- prefix in code)
+    https://en.wikipedia.org/wiki/ISO_3166-2:HR
+    -->
+    <record id="state_hr_01" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Zagrebačka županija</field>
+        <field name="code">01</field>
+    </record>
+    <record id="state_hr_02" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Krapinsko-zagorska županija</field>
+        <field name="code">02</field>
+    </record>
+    <record id="state_hr_03" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Sisačko-moslavačka županija</field>
+        <field name="code">03</field>
+    </record>
+    <record id="state_hr_04" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Karlovačka županija</field>
+        <field name="code">04</field>
+    </record>
+    <record id="state_hr_05" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Varaždinska županija</field>
+        <field name="code">05</field>
+    </record>
+    <record id="state_hr_06" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Koprivničko-križevačka županija</field>
+        <field name="code">06</field>
+    </record>
+    <record id="state_hr_07" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Bjelovarsko-bilogorska županija</field>
+        <field name="code">07</field>
+    </record>
+    <record id="state_hr_08" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Primorsko-goranska županija</field>
+        <field name="code">08</field>
+    </record>
+    <record id="state_hr_09" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Ličko-senjska županija</field>
+        <field name="code">09</field>
+    </record>
+    <record id="state_hr_10" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Virovitičko-podravska županija</field>
+        <field name="code">10</field>
+    </record>
+    <record id="state_hr_11" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Požeško-slavonska županija</field>
+        <field name="code">11</field>
+    </record>
+    <record id="state_hr_12" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Brodsko-posavska županija</field>
+        <field name="code">12</field>
+    </record>
+    <record id="state_hr_13" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Zadarska županija</field>
+        <field name="code">13</field>
+    </record>
+    <record id="state_hr_14" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Osječko-baranjska županija</field>
+        <field name="code">14</field>
+    </record>
+    <record id="state_hr_15" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Šibensko-kninska županija</field>
+        <field name="code">15</field>
+    </record>
+    <record id="state_hr_16" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Vukovarsko-srijemska županija</field>
+        <field name="code">16</field>
+    </record>
+    <record id="state_hr_17" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Splitsko-dalmatinska županija</field>
+        <field name="code">17</field>
+    </record>
+    <record id="state_hr_18" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Istarska županija</field>
+        <field name="code">18</field>
+    </record>
+    <record id="state_hr_19" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Dubrovačko-neretvanska županija</field>
+        <field name="code">19</field>
+    </record>
+    <record id="state_hr_20" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Međimurska županija</field>
+        <field name="code">20</field>
+    </record>
+    <record id="state_hr_21" model="res.country.state">
+        <field name="country_id" ref="base.hr" />
+        <field name="name">Grad Zagreb</field>
+        <field name="code">21</field>
+    </record>
+    <!-- Enforce city usage for Croatia ne radi zbog noupdate u base??-->
+    <record id="base.hr" model="res.country">
+        <field name="enforce_cities" eval="True" />
+    </record>
+</odoo>
