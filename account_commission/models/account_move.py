@@ -114,6 +114,13 @@ class AccountMove(models.Model):
                 res["arch"] = etree.tostring(invoice_xml)
         return res
 
+    def unlink(self):
+        """Put 'invoiced' settlements associated to the invoices back in settled state."""
+        self.invoice_line_ids.settlement_id.filtered(
+            lambda s: s.state == "invoiced"
+        ).write({"state": "settled"})
+        return super().unlink()
+
 
 class AccountMoveLine(models.Model):
     _inherit = [
@@ -206,7 +213,7 @@ class AccountInvoiceLineAgent(models.Model):
 
     @api.depends(
         "object_id.price_subtotal",
-        "object_id.product_id.commission_free",
+        "object_id.commission_free",
         "commission_id",
     )
     def _compute_amount(self):
@@ -257,5 +264,5 @@ class AccountInvoiceLineAgent(models.Model):
         self.ensure_one()
         return (
             self.commission_id.invoice_state == "paid"
-            and self.invoice_id.payment_state not in ["in_payment", "paid"]
+            and self.invoice_id.payment_state not in ["in_payment", "paid", "reversed"]
         ) or self.invoice_id.state != "posted"

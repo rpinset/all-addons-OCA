@@ -38,3 +38,22 @@ class ProductTemplate(models.Model):
             }
         )
         return combination_info
+
+    def _search_render_results(self, fetch_fields, mapping, icon, limit):
+        """Hide price on the search bar results"""
+        results_data = super()._search_render_results(
+            fetch_fields, mapping, icon, limit
+        )
+        website_show_price = (
+            self.env["website"].get_current_website().website_show_price
+        )
+        for product, data in zip(self, results_data):
+            if product.website_hide_price or not website_show_price:
+                data.update(
+                    {
+                        "price": "<span>%s</span>"
+                        % (product.website_hide_price_message or ""),
+                        "list_price": "",
+                    }
+                )
+        return results_data

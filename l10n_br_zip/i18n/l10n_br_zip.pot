@@ -101,7 +101,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_br_zip/models/l10n_br_zip.py:0
 #, python-format
-msgid "Error in PyCEP-Correios: "
+msgid "Error in BrazilCEP: "
 msgstr ""
 
 #. module: l10n_br_zip
@@ -170,6 +170,7 @@ msgstr ""
 
 #. module: l10n_br_zip
 #: model:ir.actions.act_window,name:l10n_br_zip.l10n_br_zip_search_action
+#: model_terms:ir.ui.view,arch_db:l10n_br_zip.l10n_br_zip_res_company_form
 #: model_terms:ir.ui.view,arch_db:l10n_br_zip.l10n_br_zip_res_partner_form
 #: model_terms:ir.ui.view,arch_db:l10n_br_zip.l10n_br_zip_search_form
 msgid "Pesquisar CEP"
@@ -192,6 +193,11 @@ msgid "State"
 msgstr ""
 
 #. module: l10n_br_zip
+#: model:ir.model.fields,field_description:l10n_br_zip.field_l10n_br_zip__street_number
+msgid "Street Number"
+msgstr ""
+
+#. module: l10n_br_zip
 #: model:ir.model.fields,field_description:l10n_br_zip.field_l10n_br_zip__street_type
 msgid "Street Type"
 msgstr ""
@@ -199,6 +205,11 @@ msgstr ""
 #. module: l10n_br_zip
 #: model:ir.model.fields.selection,name:l10n_br_zip.selection__res_config_settings__cep_ws_provider__viacep
 msgid "VIA CEP"
+msgstr ""
+
+#. module: l10n_br_zip
+#: model_terms:ir.ui.view,arch_db:l10n_br_zip.l10n_br_zip_res_company_form
+msgid "ZIP"
 msgstr ""
 
 #. module: l10n_br_zip

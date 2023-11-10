@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Health and Safety Management System",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Savoir-faire Linux,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/management-system",
     "license": "AGPL-3",
@@ -16,5 +16,5 @@
     ],
     "data": ["data/health_safety.xml"],
     "installable": True,
-    "application": True,
+    "application": False,
 }

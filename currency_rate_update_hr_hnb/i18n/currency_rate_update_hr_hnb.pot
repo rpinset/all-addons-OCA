@@ -25,5 +25,5 @@ msgstr ""
 
 #. module: currency_rate_update_hr_hnb
 #: model:ir.model.fields,field_description:currency_rate_update_hr_hnb.field_res_currency_rate_provider__service
-msgid "Source Service"
+msgid "Provider"
 msgstr ""

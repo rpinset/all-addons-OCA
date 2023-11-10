@@ -1,12 +1,12 @@
 # Copyright 2016 ACSONE SA/NV (<http://acsone.eu>)
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl)
 
 from dateutil.relativedelta import relativedelta
 from dateutil.rrule import MONTHLY, YEARLY
 from psycopg2 import IntegrityError
 
 from odoo import fields
-from odoo.exceptions import ValidationError
+from odoo.exceptions import UserError
 from odoo.tests.common import TransactionCase
 from odoo.tools import mute_logger
 
@@ -59,7 +59,7 @@ class DateRangeTypeTest(TransactionCase):
             }
         )
         drt.company_id = self.company.id
-        with self.assertRaises(ValidationError):
+        with self.assertRaises(UserError):
             dr.company_id = self.company_2
 
     def test_autogeneration(self):

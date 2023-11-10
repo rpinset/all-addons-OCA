@@ -282,6 +282,10 @@ export default AbstractController.extend({
                 .utc()
                 .format("YYYY-MM-DD HH:mm:ss");
         }
+        if (this.date_delay && this.date_start && this.date_stop && item.end) {
+            default_context["default_".concat(this.date_delay)] =
+                (moment(item.end) - moment(item.start)) / 3600000;
+        }
         if (item.group > 0) {
             default_context["default_".concat(this.renderer.last_group_bys[0])] =
                 item.group;
@@ -290,7 +294,7 @@ export default AbstractController.extend({
         this.Dialog = Component.env.services.dialog.add(
             FormViewDialog,
             {
-                resId: null,
+                resId: false,
                 context: _.extend(default_context, this.context),
                 onRecordSaved: (record) => this.create_completed([record.res_id]),
                 resModel: this.model.modelName,

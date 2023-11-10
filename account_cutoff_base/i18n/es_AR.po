@@ -137,24 +137,20 @@ msgid "Amount"
 msgstr "Monto"
 
 #. module: account_cutoff_base
-#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__currency_id
-msgid "Amount Currency"
-msgstr "Monto de Dinero"
-
-#. module: account_cutoff_base
 #: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_line__amount
-msgid ""
-"Amount that is used as base to compute the Cut-off Amount. This Amount is in "
-"the 'Amount Currency', which may be different from the 'Company Currency'."
+msgid "Amount that is used as base to compute the Cut-off Amount."
 msgstr ""
-"Monto que se utiliza como base para calcular el Monto de Corte. Este monto "
-"está en el 'Monto de Dinero', que puede ser diferente de la 'Moneda de la "
-"Empresa'."
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__analytic_distribution
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_tax_line__analytic_distribution
 msgid "Analytic"
+msgstr ""
+
+#. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__analytic_distribution_search
+#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_tax_line__analytic_distribution_search
+msgid "Analytic Distribution Search"
 msgstr ""
 
 #. module: account_cutoff_base
@@ -182,11 +178,6 @@ msgstr "Volver a Borrador"
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_tax_line__base
 msgid "Base"
 msgstr "Base"
-
-#. module: account_cutoff_base
-#: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_tax_line__base
-msgid "Base Amount in the currency of the PO."
-msgstr "Monto Base en la moneda del Pedido de Compras."
 
 #. module: account_cutoff_base
 #: model_terms:ir.actions.act_window,help:account_cutoff_base.account_cutoff_mapping_action
@@ -240,15 +231,10 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__currency_id
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_tax_line__currency_id
 msgid "Currency"
 msgstr "Moneda"
-
-#. module: account_cutoff_base
-#: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_line__currency_id
-#: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_tax_line__currency_id
-msgid "Currency of the 'Amount' field."
-msgstr "Moneda del campo ‘Monto’."
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__parent_id
@@ -396,6 +382,18 @@ msgid "Default Cut-off Journal"
 msgstr "Diario de Corte Predeterminado"
 
 #. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_accrued_expense_tax_account_id
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_accrued_expense_tax_account_id
+msgid "Default Tax Account for Accrued Expense"
+msgstr ""
+
+#. module: account_cutoff_base
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_accrued_revenue_tax_account_id
+#: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_accrued_revenue_tax_account_id
+msgid "Default Tax Account for Accrued Revenue"
+msgstr ""
+
+#. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__name
 msgid "Description"
 msgstr "Descripción"
@@ -475,7 +473,6 @@ msgstr "Si está marcada, los nuevos mensajes requieren su atención."
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff__message_has_error
-#: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcada, algunos mensajes tienen un error de envío."
 
@@ -539,7 +536,10 @@ msgstr "Mensajes"
 #. odoo-python
 #: code:addons/account_cutoff_base/models/account_cutoff.py:0
 #, python-format
-msgid "Missing '%(tax_account_field_label)s' on tax '%(tax_display_name)s'."
+msgid ""
+"Missing '%(tax_account_field_label)s'. You must configure it on the tax "
+"'%(tax_display_name)s' or on the accounting configuration page of the "
+"company '%(company)s'."
 msgstr ""
 
 #. module: account_cutoff_base
@@ -580,8 +580,8 @@ msgstr "Número de errores"
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr "Número de mensajes que requieren una acción"
+msgid "Number of messages requiring action"
+msgstr ""
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff__message_has_error_counter
@@ -611,14 +611,14 @@ msgstr "Socio"
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff__move_partner
-msgid "Partner on Move Line"
-msgstr "Socio en Movimiento de Línea"
+msgid "Partner on Journal Items"
+msgstr ""
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__default_cutoff_move_partner
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_config_settings__dft_cutoff_move_partner
-msgid "Partner on Move Line by Default"
-msgstr "Socio en Movimiento de Línea Predeterminado"
+msgid "Partner on Journal Items by Default"
+msgstr ""
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_res_company__post_cutoff_move
@@ -691,11 +691,6 @@ msgid "Responsible User"
 msgstr "Usuario Responsable"
 
 #. module: account_cutoff_base
-#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de entrega de SMS"
-
-#. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_tax_line__sequence
 msgid "Sequence"
 msgstr "Secuencia"
@@ -751,11 +746,6 @@ msgid "Tax Amount"
 msgstr "Monto del Impuesto"
 
 #. module: account_cutoff_base
-#: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_tax_line__amount
-msgid "Tax Amount in the currency of the PO."
-msgstr "Monto del Impuesto en la moneda del Pedido de Compras."
-
-#. module: account_cutoff_base
 #: model:ir.model.fields,help:account_cutoff_base.field_account_cutoff_tax_line__cutoff_amount
 msgid "Tax Cut-off Amount in the company currency."
 msgstr "Impuesto del Monto de Corte en la moneda de la compañía."
@@ -798,6 +788,7 @@ msgstr "Total del Monto de Corte"
 
 #. module: account_cutoff_base
 #: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff__cutoff_type
+#: model:ir.model.fields,field_description:account_cutoff_base.field_account_cutoff_line__cutoff_type
 msgid "Type"
 msgstr "Tipo"
 
@@ -827,6 +818,39 @@ msgstr "Historial de comunicación por Sitio Web"
 #, python-format
 msgid "You cannot delete cutoff records that are in done state."
 msgstr ""
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de entrega de SMS"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Número de mensajes que requieren una acción"
+
+#~ msgid "Amount Currency"
+#~ msgstr "Monto de Dinero"
+
+#~ msgid ""
+#~ "Amount that is used as base to compute the Cut-off Amount. This Amount is "
+#~ "in the 'Amount Currency', which may be different from the 'Company "
+#~ "Currency'."
+#~ msgstr ""
+#~ "Monto que se utiliza como base para calcular el Monto de Corte. Este "
+#~ "monto está en el 'Monto de Dinero', que puede ser diferente de la 'Moneda "
+#~ "de la Empresa'."
+
+#~ msgid "Base Amount in the currency of the PO."
+#~ msgstr "Monto Base en la moneda del Pedido de Compras."
+
+#~ msgid "Currency of the 'Amount' field."
+#~ msgstr "Moneda del campo ‘Monto’."
+
+#~ msgid "Partner on Move Line"
+#~ msgstr "Socio en Movimiento de Línea"
+
+#~ msgid "Partner on Move Line by Default"
+#~ msgstr "Socio en Movimiento de Línea Predeterminado"
+
+#~ msgid "Tax Amount in the currency of the PO."
+#~ msgstr "Monto del Impuesto en la moneda del Pedido de Compras."
 
 #~ msgid "Analytic Account"
 #~ msgstr "Cuenta Analítica"

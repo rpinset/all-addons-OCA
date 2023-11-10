@@ -4,7 +4,7 @@
 
 {
     "name": "Account Move Line Reconcile Manual",
-    "version": "16.0.1.0.0",
+    "version": "16.0.2.0.0",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Manually reconcile Journal Items",
@@ -15,6 +15,7 @@
     "data": [
         "security/ir.model.access.csv",
         "wizards/account_move_line_reconcile_manual_view.xml",
+        "views/account_reconcile_manual_model.xml",
         "views/account_move_line.xml",
     ],
     "installable": True,

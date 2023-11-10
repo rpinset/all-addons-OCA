@@ -1,0 +1,724 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_storage_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-10-18 13:38+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_storage_location_sequence.py:0
+#, python-format
+msgid ""
+" * <span style=\"color: orange;\">{location} (WARNING: restrictions are "
+"active on location storage types matching this package storage type)</span>"
+msgstr ""
+" * <span style=\"color: orange;\">{location} (ATTENZIONE: ci sono "
+"restrizioni attive nei tipi stoccaggio ubicazione corrispondenti a questo "
+"tipo stoccaggio collo)</span>"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_storage_location_sequence.py:0
+#, python-format
+msgid ""
+" * <span style=\"color: red;\">{location} (WARNING: no suitable location "
+"matching storage type)</span>"
+msgstr ""
+" * <span style=\"color: red;\">{location} (ATTENZIONE: nessuna ubicazione "
+"disponibile corrispondente al tipo stoccaggio)</span>"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_package_type.py:0
+#, python-format
+msgid ""
+"<span style=\"color: red;\">The \"Put-Away sequence\" must be defined in "
+"order to put away packages using this package storage type ({storage}).</"
+"span>"
+msgstr ""
+"<span style=\"color: red;\">La \"Sequenza deposito\" deve essere definita "
+"per depositare i colli utilizzando questo tipo stoccaggio collo "
+"({storage}).</span>"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__active
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__active
+msgid "Active"
+msgstr "Attiva"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__allow_new_product
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category_capacity__allow_new_product
+msgid "Allow New Product"
+msgstr "Consente nuovo prodotto"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_storage_category_capacity.py:0
+#, python-format
+msgid "Allow New Product: "
+msgstr "Consente nuovo prodotto: "
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_category_capacity__allow_new_product__mixed
+msgid "Allow mixed products"
+msgstr "Consente prodotti misti"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__package_type_putaway_sequence
+msgid ""
+"Allow to sort the valid locations by sequence for the storage strategy based "
+"on package type"
+msgstr ""
+"Consente di ordinare le ubicazioni valide per sequenza per la strategia di "
+"stoccaggio basata sul tipo collo"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_level__allowed_location_dest_ids
+msgid "Allowed Destinations"
+msgstr "Destinazioni consentite"
+
+#. module: stock_storage_type
+#: model_terms:ir.ui.view,arch_db:stock_storage_type.stock_storage_location_sequence_cond_form_view
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__barcode
+msgid "Barcode"
+msgstr "Codice a barre"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__computed_storage_capacity_ids
+msgid "Capacity"
+msgstr "Capacità"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__code_snippet
+msgid "Code Snippet"
+msgstr "Esempio codice"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__code_snippet_docs
+msgid "Code Snippet Docs"
+msgstr "Documenti esempio codice"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__computed_location_ids
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category_capacity__computed_location_ids
+msgid "Computed Location"
+msgstr "Calcola ubicazione"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__computed_storage_category_id
+msgid "Computed Storage Category"
+msgstr "Calcola categoria stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__condition_type
+msgid "Condition Type"
+msgstr "Tipo condizione"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_storage_location_sequence_cond.py:0
+#, python-format
+msgid "Condition type is set to `Code`: you must provide a piece of code"
+msgstr "Il tipo condizione è impostato a `Codice`: fornire parte del codice"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__location_sequence_cond_ids
+msgid "Conditions"
+msgstr "Condizioni"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__create_uid
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__create_date
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_product_product__package_type_id
+#: model:ir.model.fields,help:stock_storage_type.field_product_template__package_type_id
+msgid ""
+"Defines a 'default' package type for this product to be applied on packages "
+"without product packagings and on put-away computation based on package type "
+"for product not in a package"
+msgstr ""
+"Definisce un tipo collo 'predefinito' per questo prodotto da utilizzare nei "
+"colli senza imballaggio prdotto e nel calcolo del deposito in base al tipo "
+"collo per prodotto non in un collo"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__length_uom_id
+msgid "Dimensions Units of Measure"
+msgstr "Unità di misura per le dimensioni"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__display_name
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__do_not_mix_lots
+msgid "Do Not Mix Lots"
+msgstr "Non mescolare lotti"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__do_not_mix_products
+msgid "Do Not Mix Products"
+msgstr "Non mescolare prodotti"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_location_sequence_cond__condition_type__code
+msgid "Execute code"
+msgstr "Esegui codice"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category_capacity__has_restrictions
+msgid "Has Restrictions"
+msgstr "Ha restrizioni"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_quant_package__height_in_m
+msgid "Height In M"
+msgstr "Altezza in metri"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_package_type__height_required
+msgid "Height is mandatory for packages configured with this storage type."
+msgstr ""
+"L'altezza è obbligatoria per colli configurati con questo tipo stoccaggio."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__height_required
+msgid "Height required for packages"
+msgstr "Altezza richiesta per i colli"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__id
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_category_capacity__allow_new_product__same_lot
+msgid "If all lots are the same"
+msgstr "Se tutti i lotti sono lo stesso"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_category_capacity__allow_new_product__same
+msgid "If all products are same"
+msgstr "Se tutti i prodotti sono lo stesso"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_category__allow_new_product__same_lot
+msgid "If lots are all the same"
+msgstr "Se i lotti sono uguali"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_storage_category_capacity__allow_new_product__empty
+msgid "If the location is empty"
+msgstr "Se l'ubicazione è vuota"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__in_move_ids
+msgid "In Move"
+msgstr "Nel movimento"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__in_move_line_ids
+msgid "In Move Line"
+msgstr "Nella riga movimento"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicazioni di inventario"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence____last_update
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__write_uid
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__write_date
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__leaf_child_location_ids
+msgid "Leaf Child Location"
+msgstr "Ubicazione figlia terminale"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__leaf_location_ids
+msgid "Leaf Location"
+msgstr "Ubicazione terminale"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__location_id
+msgid "Location"
+msgstr "Ubicazione"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__location_is_empty
+msgid "Location Is Empty"
+msgstr "Ubicazione vuota"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__location_will_contain_lot_ids
+msgid "Location Will Contain Lot"
+msgstr "L'ubicazione conterrà lotto"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__location_will_contain_product_ids
+msgid "Location Will Contain Product"
+msgstr "L'ubicazione conterrà prodotto"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__max_height_in_m
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__max_height_in_m
+msgid "Max Height In M"
+msgstr "Altezza massima in metri"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__max_weight_in_kg
+msgid "Max Weight In Kg"
+msgstr "Peso massimo in Kg"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__max_height
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__max_height
+msgid "Max height (mm)"
+msgstr "Altezza massima (mm)"
+
+#. module: stock_storage_type
+#: model:ir.model.constraint,message:stock_storage_type.constraint_stock_storage_category_positive_max_height
+msgid "Max height should be a positive number."
+msgstr "L'altezza massima deve essere un numero positivo."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence_cond__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_location__pack_putaway_strategy__none
+msgid "None"
+msgstr "Nessuna"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__only_empty
+msgid "Only Empty"
+msgstr "Solo vuote"
+
+#. module: stock_storage_type
+#: model:ir.model.fields.selection,name:stock_storage_type.selection__stock_location__pack_putaway_strategy__ordered_locations
+msgid "Ordered Children Locations"
+msgstr "Ubicazioni figlie ordinate"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__out_move_line_ids
+msgid "Out Move Line"
+msgstr "Riga movimento uscita"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_quant_package__pack_weight_in_kg
+msgid "Pack Weight In Kg"
+msgstr "Peso pacco in Kg"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__package_type_id
+msgid "Package Type"
+msgstr "Tipo collo"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_product_product__package_type_id
+#: model:ir.model.fields,field_description:stock_storage_type.field_product_template__package_type_id
+msgid "Package type"
+msgstr "Tipo collo"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid "Package type {storage} is not allowed into Location {location}"
+msgstr "Il tipo collo {storage} non è consentito nell'ubicazione {location}"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Package {package} is not allowed into location {location}, because there "
+"isn't any storage capacity that allows package type {type} into it:\n"
+"\n"
+"{fails}"
+msgstr ""
+"Il collo {package} non è accettatto dall'ubicazione {location}, perché non "
+"c'è capactà di stoccaggio che accetti il tipo collo {type}:\n"
+"\n"
+"{fails}"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_quant_package
+msgid "Packages"
+msgstr "Colli"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__product_packaging_ids
+msgid "Product Packaging"
+msgstr "Imballaggio prodotto"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__pack_putaway_strategy
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__location_putaway_strategy
+msgid "Put-Away Strategy"
+msgstr "Strategia di deposito"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__storage_location_sequence_ids
+#: model_terms:ir.ui.view,arch_db:stock_storage_type.stock_package_type_form
+msgid "Put-Away sequence"
+msgstr "Sequenza deposito"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_package_type.py:0
+#, python-format
+msgid "Put-away sequence"
+msgstr "Sequenza deposito"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__package_type_putaway_sequence
+msgid "Putaway Sequence"
+msgstr "Sequenza deposito"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_quant
+msgid "Quants"
+msgstr "Quanti"
+
+#. module: stock_storage_type
+#: model_terms:ir.ui.view,arch_db:stock_storage_type.package_level_tree_view_picking_inherit
+msgid "Recompute Putaway"
+msgstr "Ricalcola deposito"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_location_sequence__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_storage_location_sequence
+msgid "Sequence of locations to put-away the package storage type"
+msgstr "Sequenza ubicazioni per deposito del tipo stoccaggio collo"
+
+#. module: stock_storage_type
+#: model_terms:ir.ui.view,arch_db:stock_storage_type.package_storage_location_tree_view
+msgid "Show locations"
+msgstr "Visualizza ubicazioni"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_package_level
+msgid "Stock Package Level"
+msgstr "Livello collo magazzino"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_storage_location_sequence_cond
+msgid "Stock Storage Location Sequence Condition"
+msgstr "Sequenza condizione ubicazione stoccaggio magazzino"
+
+#. module: stock_storage_type
+#: model:ir.actions.act_window,name:stock_storage_type.stock_storage_location_sequence_cond_act_window
+msgid "Stock Storage Location Sequence Conditions"
+msgstr "Sequenza condizioni ubicazione stoccaggio magazzino"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_package_type
+msgid "Stock package type"
+msgstr "Tipo collo magazzino"
+
+#. module: stock_storage_type
+#: model:ir.model.constraint,message:stock_storage_type.constraint_stock_storage_location_sequence_cond_name
+msgid "Stock storage location sequence condition name must be unique"
+msgstr ""
+"Il nome della seqenza condizione ubicazione stoccaggio magazzino deve essere "
+"univoco"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Storage Capacity {storage_capacity} is flagged 'do not mix lots' but there "
+"are other lots in location."
+msgstr ""
+"La capacità stoccaggio {storage_capacity} è settata 'non mescolare lotti' ma "
+"ci sono lotti diversi nell'ubicazione."
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Storage Capacity {storage_capacity} is flagged 'do not mix products' but "
+"there are other products in location."
+msgstr ""
+"La capacità stoccaggio {storage_capacity} è settata 'non mescolare prdotti' "
+"ma ci sono prodotti diversi nell'ubicazione."
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Storage Capacity {storage_capacity} is flagged 'only empty' with other "
+"quants in location."
+msgstr ""
+"La capacità stoccaggio {storage_capacity} è settata 'solo vuoti' ma ci sono "
+"altre quantità nell'ubicazione."
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_storage_category
+msgid "Storage Category"
+msgstr "Categoria stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.model,name:stock_storage_type.model_stock_storage_category_capacity
+msgid "Storage Category Capacity"
+msgstr "Capacità categoria stoccaggio"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Storage Category {storage_category} defines max height of {max_h} but the "
+"package is bigger: {height}."
+msgstr ""
+"La categoria stoccaggio {storage_category} ha una altezza massima di {max_h} "
+"ma il collo è più grande: {height}."
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Storage Category {storage_category} defines max weight of {max_w} but the "
+"package is heavier: {weight_kg}."
+msgstr ""
+"La categoria stoccaggio {storage_category} ha un peso massimo di {max_w} ma "
+"il collo è più pesante: {weight_kg}."
+
+#. module: stock_storage_type
+#: model:ir.ui.menu,name:stock_storage_type.stock_storage_location_sequence_cond_menu
+msgid "Storage Location Sequence Conditions"
+msgstr "Sequenza condizioni ubicazione stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_package_type__storage_type_message
+msgid "Storage Type Message"
+msgstr "Messaggio tipo stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.ui.menu,name:stock_storage_type.storage_type_menu
+msgid "Storage Types"
+msgstr "Tipi stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_location__storage_location_sequence_ids
+msgid "Storage locations sequences"
+msgstr "Seqenze ubicazioni stoccaggio"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__max_height_in_m
+#: model:ir.model.fields,help:stock_storage_type.field_stock_quant_package__height_in_m
+#: model:ir.model.fields,help:stock_storage_type.field_stock_quant_package__pack_weight_in_kg
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category__max_height_in_m
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category__max_weight_in_kg
+msgid "Technical field, to speed up comparaisons"
+msgstr "Campo tecnico, per velocizzare i confronti"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category_capacity__has_restrictions
+msgid "Technical: This is used to check if we need to display warning message"
+msgstr ""
+"Tecnico: viene utilizzato per controllare se serve visualizzare il messaggio "
+"di attenzione"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_quant_package.py:0
+#, python-format
+msgid "The height is mandatory on package {}."
+msgstr "L'altezza è obbligatria per il collo {}."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__max_height
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category__max_height
+msgid "The max height supported for this storage category."
+msgstr "L'altezza massima accettata per questa categoria stoccaggio."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__pack_putaway_strategy
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_location_sequence__location_putaway_strategy
+msgid ""
+"This defines the storage strategy based on package type to use when a "
+"product or package is put away in this location.\n"
+"None: when moved to this location, it will not be put away any further.\n"
+"Ordered Children Locations: when moved to this location, a suitable location "
+"will be searched in its children locations according to the restrictions "
+"defined on their respective location storage types."
+msgstr ""
+"Questo definisce la strategia di stoccaggio in base al tipo di collo da "
+"utilizzare quanto un prodotto o un collo è depositato in questa ubicazione.\n"
+"Nessuna: quanto movimentato in questa ubicazione, non verrà movimentato "
+"ulteriormente.\n"
+"Ordinamento per ubicazioni figlie: quanto movimentato in questa ubicazione, "
+"verrà cercata una ubicazione idonea nelle ubicazioni figlie in accordo con "
+"le restrizioni definite nei rispettivi tipi stoccaggio ubicazione."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__computed_storage_category_id
+msgid ""
+"This represents the Storage Category that will be used. It depends either on "
+"the category set on the location or on one of its parent."
+msgstr ""
+"Questo rappresenta la categoria stoccaggio che verrà utilizzata. Dipende "
+"dalla categoria mpostata nell'ubicazione o in uno dei suoi padri."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category__length_uom_id
+msgid "UoM for height"
+msgstr "UdM per l'altezza"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_storage_category__weight_uom_id
+msgid "Weight Unit of Measure"
+msgstr "Unità di misura del peso"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__weight_uom_id
+msgid "Weight Units of Measure"
+msgstr "Unità di misura del peso"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,field_description:stock_storage_type.field_stock_storage_category__weight_uom_name
+msgid "Weight unit of measure label"
+msgstr "Etichetta unità di misura peso"
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_package_type.py:0
+#, python-format
+msgid ""
+"When a package with storage type {name} is put away, the strategy will look "
+"for an allowed location in the following locations: <br/><br/>{message} <br/"
+"><br/><b>Note</b>: this happens as long as these locations <u>are children "
+"of the stock move destination location</u> or as long as these locations are "
+"children of the destination location after the (product or category) put-"
+"away is applied."
+msgstr ""
+"Quando i colli con tipo stoccaggio {name} sono depositati, la strategia "
+"cerca una ubicazione disponibile nelle segenti ubicazoni: <br/><br/>{message}"
+" <br/><br/><b>Nota</b>: questo accade finché queste ubicazioni <u>sono "
+"figlie della ubicazione destinazione del movimento di magazzino</u> o finché "
+"queste ubicazioni sono figlie dell'ubicazione di destinazione dopo che è "
+"stato eseguito il deposito (prodotto o categoria)."
+
+#. module: stock_storage_type
+#. odoo-python
+#: code:addons/stock_storage_type/models/stock_storage_location_sequence_cond.py:0
+#, python-format
+msgid "code_snippet should return boolean value into `result` variable."
+msgstr "code_snippet deve restituire un buleano nella variabile `result`."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__location_is_empty
+msgid ""
+"technical field: True if the location is empty and there is no pending "
+"incoming products in the location.  Computed only if the location needs to "
+"check for emptiness (has an \"only empty\" location storage type)."
+msgstr ""
+"campo tecnico: vero se l'ubicazione è vuta e non ci sono in sospeso ingressi "
+"di prodotti nell'ubicazIone. Calcolato solo se l'ubicazione deve essere "
+"controllata per rienpimento (ha un tipo stoccaggio ubicazione \"solo vuota"
+"\")."
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__leaf_location_ids
+msgid "technical field: all the leaves locations"
+msgstr "campo tecnico: tutte le ubicazioni terminali"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__leaf_child_location_ids
+msgid "technical field: all the leaves sub-locations"
+msgstr "campo tecnico: tutte le sotto ubicazioni terminali"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__location_will_contain_product_ids
+msgid ""
+"technical field: list of products in the location, either now or in pending "
+"operations"
+msgstr ""
+"campo tecnico: elencodei prdotti nell'ubicazione, sia operazioni attuali che "
+"in attesa"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__location_will_contain_lot_ids
+msgid ""
+"technical field: list of stock.lots in the location, either now or in "
+"pending operations"
+msgstr ""
+"campo tecnico: elenco lotti magazzino nll'ubicazione, sia operazioni attuali "
+"che in attesa"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__in_move_line_ids
+msgid "technical field: the pending incoming stock.move.lines in the location"
+msgstr ""
+"campo tecnico: le stock.move.lines in attesa in ingresso nell'ubicazione"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__in_move_ids
+msgid "technical field: the pending incoming stock.moves in the location"
+msgstr "campo tecnico: i stock.moves in attesa nell'ubicazione"
+
+#. module: stock_storage_type
+#: model:ir.model.fields,help:stock_storage_type.field_stock_location__out_move_line_ids
+msgid "technical field: the pending outgoing stock.move.lines in the location"
+msgstr "campo tecnico: le stock.move.lines in uscita in atesa nell'ubicazione"

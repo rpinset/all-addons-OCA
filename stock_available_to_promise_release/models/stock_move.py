@@ -50,8 +50,6 @@ class StockMove(models.Model):
     )
     need_release = fields.Boolean(index=True, copy=False)
     unrelease_allowed = fields.Boolean(compute="_compute_unrelease_allowed")
-    zip_code = fields.Char(related="partner_id.zip", store=True)
-    city = fields.Char(related="partner_id.city", store=True)
 
     @api.depends("rule_id", "rule_id.available_to_promise_defer_pull")
     def _compute_unrelease_allowed(self):
@@ -114,12 +112,23 @@ class StockMove(models.Model):
     def _check_unrelease_allowed(self):
         for move in self:
             if not move.unrelease_allowed:
-                raise UserError(
-                    _(
-                        "You are not allowed to unrelease this move %(move_name)s.",
-                        move_name=move.display_name,
-                    )
+                message = _(
+                    "You are not allowed to unrelease this move %(move_name)s.",
+                    move_name=move.display_name,
                 )
+                if move.picking_id:
+                    message += _(
+                        "\n- Picking: %(picking_name)s.",
+                        picking_name=move.picking_id.name,
+                    )
+                if move.move_orig_ids and move.move_orig_ids.picking_id:
+                    message += _(
+                        "\n- Origin picking(s):\n\t -%(picking_names)s.",
+                        picking_names="\n\t- ".join(
+                            move.move_orig_ids.picking_id.mapped("name")
+                        ),
+                    )
+                raise UserError(message)
 
     def _previous_promised_qty_sql_main_query(self):
         return """
@@ -261,14 +270,7 @@ class StockMove(models.Model):
         # locations" of all the warehouses: we may release as soon as we have
         # the quantity somewhere. Do not use "qty_available" to get a faster
         # computation.
-        location_domain = []
-        for location in locations:
-            location_domain = expression.OR(
-                [
-                    location_domain,
-                    [("location_id.parent_path", "=like", location.parent_path + "%")],
-                ]
-            )
+        location_domain = locations._get_available_to_promise_domain()
         domain_quant = expression.AND(
             [[("product_id", "in", moves.product_id.ids)], location_domain]
         )
@@ -454,8 +456,11 @@ class StockMove(models.Model):
     def _after_release_assign_moves(self):
         move_ids = []
         for origin_moves in self._get_chained_moves_iterator("move_orig_ids"):
-            move_ids += origin_moves.ids
-        self.env["stock.move"].browse(move_ids)._action_assign()
+            move_ids += origin_moves.filtered(
+                lambda m: m.state not in ("cancel", "done")
+            ).ids
+        moves = self.browse(move_ids)
+        moves._action_assign()
 
     def _release_split(self, remaining_qty):
         """Split move and create a new picking for it.

@@ -128,6 +128,9 @@ class MassReconcileBase(models.AbstractModel):
         def last_date(mlines):
             return max(mlines, key=itemgetter("date"))
 
+        def oldest_date(mlines):
+            return min(mlines, key=itemgetter("date"))
+
         def credit(mlines):
             return [line for line in mlines if line["credit"] > 0]
 
@@ -136,6 +139,8 @@ class MassReconcileBase(models.AbstractModel):
 
         if based_on == "newest":
             return last_date(lines)["date"]
+        elif based_on == "oldest":
+            return oldest_date(lines)["date"]
         elif based_on == "newest_credit":
             return last_date(credit(lines))["date"]
         elif based_on == "newest_debit":
@@ -172,7 +177,7 @@ class MassReconcileBase(models.AbstractModel):
 
         move = self.env["account.move"].create(
             {
-                "date": lines.env.context.get("date_p"),
+                "date": lines.env.context.get("date_p") or fields.Date.today(),
                 "journal_id": journal.id,
                 "currency_id": currency.id,
                 "line_ids": [(0, 0, write_off_vals), (0, 0, counter_part)],

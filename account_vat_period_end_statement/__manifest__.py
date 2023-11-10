@@ -6,7 +6,7 @@
 
 {
     "name": "ITA - Liquidazione IVA",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "category": "Localization/Italy",
     "summary": "Allow to create the 'VAT Statement'.",
     "license": "AGPL-3",
@@ -30,5 +30,10 @@
         "views/config.xml",
         "views/account_view.xml",
     ],
+    "assets": {
+        "web.assets_backend": [
+            "account_vat_period_end_statement/static/src/css/l10n_it_vat_registries.css",
+        ],
+    },
     "installable": True,
 }

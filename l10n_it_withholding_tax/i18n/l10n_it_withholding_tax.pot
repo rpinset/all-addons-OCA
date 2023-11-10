@@ -270,6 +270,13 @@ msgid "Invoice reconciliation"
 msgstr ""
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
+#: code:addons/l10n_it_withholding_tax/models/account.py:0
+#, python-format
+msgid "Invoices must have the same currency"
+msgstr ""
+
+#. module: l10n_it_withholding_tax
 #: model:ir.model,name:l10n_it_withholding_tax.model_account_move
 msgid "Journal Entry"
 msgstr ""
@@ -374,7 +381,7 @@ msgstr ""
 
 #. module: l10n_it_withholding_tax
 #. odoo-javascript
-#: code:addons/l10n_it_withholding_tax/static/src/xml/account_payment.xml:0
+#: code:addons/l10n_it_withholding_tax/static/src/components/account_payment_field/account_payment.xml:0
 #, python-format
 msgid "Paid on"
 msgstr ""
@@ -531,7 +538,7 @@ msgstr ""
 
 #. module: l10n_it_withholding_tax
 #. odoo-javascript
-#: code:addons/l10n_it_withholding_tax/static/src/xml/account_payment.xml:0
+#: code:addons/l10n_it_withholding_tax/static/src/components/account_payment_field/account_payment.xml:0
 #, python-format
 msgid "W.T. Reg. on"
 msgstr ""

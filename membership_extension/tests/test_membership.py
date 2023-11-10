@@ -199,9 +199,7 @@ class TestMembership(common.TransactionCase):
             }
         )
         self.assertEqual(self.category_gold, self.partner.membership_category_ids)
-        self.assertEqual("Gold", self.partner.membership_categories)
         self.assertEqual(self.category_gold, self.child.membership_category_ids)
-        self.assertEqual("Gold", self.child.membership_categories)
         line_two = self.env["membership.membership_line"].create(
             {
                 "membership_id": self.silver_product.id,
@@ -217,24 +215,16 @@ class TestMembership(common.TransactionCase):
             self.category_gold + self.category_silver,
             self.partner.membership_category_ids,
         )
-        self.assertTrue("Silver" in self.partner.membership_categories)
-        self.assertTrue("Gold" in self.partner.membership_categories)
         self.assertEqual(
             self.category_gold + self.category_silver,
             self.child.membership_category_ids,
         )
-        self.assertTrue("Silver" in self.child.membership_categories)
-        self.assertTrue("Gold" in self.child.membership_categories)
         line_one.write({"state": "canceled"})
         self.assertEqual(self.category_silver, self.partner.membership_category_ids)
-        self.assertEqual("Silver", self.partner.membership_categories)
         self.assertEqual(self.category_silver, self.child.membership_category_ids)
-        self.assertEqual("Silver", self.child.membership_categories)
         line_two.write({"state": "waiting"})
         self.assertFalse(self.partner.membership_category_ids.ids)
-        self.assertFalse(self.partner.membership_categories)
         self.assertFalse(self.child.membership_category_ids.ids)
-        self.assertFalse(self.child.membership_categories)
 
     def test_remove_membership_line_with_invoice(self):
         invoice_form = common.Form(
@@ -467,3 +457,41 @@ class TestMembership(common.TransactionCase):
             self.assertTrue(template.membership_category_id)
             template.company_id = company_b
             self.assertFalse(template.membership_category_id)
+
+    def test_no_dates(self):
+        with self.assertRaises(ValidationError):
+            self.env["product.template"].create(
+                {
+                    "name": "Test Membership",
+                    "membership": True,
+                    "type": "service",
+                }
+            )
+        with self.assertRaises(ValidationError):
+            self.env["product.template"].create(
+                {
+                    "name": "Test Membership",
+                    "membership": True,
+                    "type": "service",
+                    "membership_date_from": "1970-01-01",
+                }
+            )
+        with self.assertRaises(ValidationError):
+            self.env["product.template"].create(
+                {
+                    "name": "Test Membership",
+                    "membership": True,
+                    "type": "service",
+                    "membership_date_to": "1970-01-01",
+                }
+            )
+        # No error
+        self.env["product.template"].create(
+            {
+                "name": "Test Membership",
+                "membership": True,
+                "type": "service",
+                "membership_date_from": "1970-01-01",
+                "membership_date_to": "1970-01-02",
+            }
+        )

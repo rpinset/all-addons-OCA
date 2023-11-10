@@ -1,7 +1,8 @@
 # © 2014-2016 Camptocamp SA (Damien Crier)
+# © 2023 FactorLibre - Aritz Olea <aritz.olea@factorlibre.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from datetime import timedelta
+from datetime import date, timedelta
 
 import odoo.tests
 from odoo import fields
@@ -66,6 +67,124 @@ class TestScenarioReconcile(TestAccountReconciliationCommon):
         # call the automatic reconciliation method
         mass_rec.run_reconcile()
         self.assertEqual("paid", invoice.payment_state)
+
+    def test_scenario_reconcile_newest(self):
+        invoice = self.create_invoice()
+        self.assertEqual("posted", invoice.state)
+
+        receivalble_account_id = invoice.partner_id.property_account_receivable_id.id
+        # create payments
+        payment_old = self.env["account.payment"].create(
+            {
+                "partner_type": "customer",
+                "payment_type": "inbound",
+                "partner_id": invoice.partner_id.id,
+                "destination_account_id": receivalble_account_id,
+                "amount": 50.0,
+                "journal_id": self.bank_journal.id,
+                "date": fields.Date.from_string("2023-10-01"),
+            }
+        )
+        payment_new = self.env["account.payment"].create(
+            {
+                "partner_type": "customer",
+                "payment_type": "inbound",
+                "partner_id": invoice.partner_id.id,
+                "destination_account_id": receivalble_account_id,
+                "amount": 50.0,
+                "journal_id": self.bank_journal.id,
+                "date": fields.Date.from_string("2023-10-20"),
+            }
+        )
+        payment_old.action_post()
+        payment_new.action_post()
+
+        # create the mass reconcile record
+        mass_rec = self.mass_rec_obj.create(
+            {
+                "name": "mass_reconcile_1",
+                "account": invoice.partner_id.property_account_receivable_id.id,
+                "reconcile_method": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "mass.reconcile.simple.partner",
+                            "date_base_on": "newest",
+                        },
+                    )
+                ],
+            }
+        )
+        # call the automatic reconciliation method
+        mass_rec.run_reconcile()
+        self.assertEqual("paid", invoice.payment_state)
+        self.assertTrue(mass_rec.last_history)
+        payment_new_line = payment_new.move_id.line_ids.filtered(lambda l: l.credit)
+        payment_old_line = payment_old.move_id.line_ids.filtered(lambda l: l.credit)
+        self.assertTrue(payment_new_line in mass_rec.last_history.reconcile_line_ids)
+        self.assertTrue(payment_new_line.reconciled)
+        self.assertFalse(payment_old_line in mass_rec.last_history.reconcile_line_ids)
+        self.assertFalse(payment_old_line.reconciled)
+
+    def test_scenario_reconcile_oldest(self):
+        invoice = self.create_invoice()
+        self.assertEqual("posted", invoice.state)
+
+        receivalble_account_id = invoice.partner_id.property_account_receivable_id.id
+        # create payments
+        payment_old = self.env["account.payment"].create(
+            {
+                "partner_type": "customer",
+                "payment_type": "inbound",
+                "partner_id": invoice.partner_id.id,
+                "destination_account_id": receivalble_account_id,
+                "amount": 50.0,
+                "journal_id": self.bank_journal.id,
+                "date": fields.Date.from_string("2023-10-01"),
+            }
+        )
+        payment_new = self.env["account.payment"].create(
+            {
+                "partner_type": "customer",
+                "payment_type": "inbound",
+                "partner_id": invoice.partner_id.id,
+                "destination_account_id": receivalble_account_id,
+                "amount": 50.0,
+                "journal_id": self.bank_journal.id,
+                "date": fields.Date.from_string("2023-10-20"),
+            }
+        )
+        payment_old.action_post()
+        payment_new.action_post()
+
+        # create the mass reconcile record
+        mass_rec = self.mass_rec_obj.create(
+            {
+                "name": "mass_reconcile_1",
+                "account": invoice.partner_id.property_account_receivable_id.id,
+                "reconcile_method": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "mass.reconcile.simple.partner",
+                            "date_base_on": "oldest",
+                        },
+                    )
+                ],
+            }
+        )
+        # call the automatic reconciliation method
+        mass_rec.run_reconcile()
+        self.assertEqual("paid", invoice.payment_state)
+        self.assertTrue(mass_rec.last_history)
+        payment_new_line = payment_new.move_id.line_ids.filtered(lambda l: l.credit)
+        payment_old_line = payment_old.move_id.line_ids.filtered(lambda l: l.credit)
+        self.assertFalse(payment_new_line in mass_rec.last_history.reconcile_line_ids)
+        self.assertFalse(payment_new_line.reconciled)
+        self.assertTrue(payment_old_line in mass_rec.last_history.reconcile_line_ids)
+        self.assertTrue(payment_old_line.reconciled)
 
     def test_scenario_reconcile_currency(self):
         currency_rate = (
@@ -243,3 +362,62 @@ class TestScenarioReconcile(TestAccountReconciliationCommon):
             writeoff_line.move_id.journal_id.id,
             self.company_data["default_journal_misc"].id,
         )
+
+    def test_reconcile_with_writeoff_today(self):
+        yesterday = date.today() - timedelta(days=1)
+        invoice = self._create_invoice(
+            move_type="out_invoice",
+            invoice_amount=50,
+            date_invoice=yesterday,
+            auto_validate=True,
+        )
+
+        receivable_account_id = invoice.partner_id.property_account_receivable_id.id
+        # create payment
+        payment = self.env["account.payment"].create(
+            {
+                "partner_type": "customer",
+                "payment_type": "inbound",
+                "partner_id": invoice.partner_id.id,
+                "destination_account_id": receivable_account_id,
+                "amount": 50.02,
+                "journal_id": self.bank_journal.id,
+                "date": yesterday,
+            }
+        )
+        payment.action_post()
+
+        # create the mass reconcile record
+        mass_rec = self.mass_rec_obj.create(
+            {
+                "name": "mass_reconcile_1",
+                "account": invoice.partner_id.property_account_receivable_id.id,
+                "reconcile_method": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "mass.reconcile.simple.partner",
+                            "account_lost_id": self.company_data[
+                                "default_account_expense"
+                            ].id,
+                            "account_profit_id": self.company_data[
+                                "default_account_revenue"
+                            ].id,
+                            "journal_id": self.company_data["default_journal_misc"].id,
+                            "write_off": 0.05,
+                            "date_base_on": "actual",
+                        },
+                    )
+                ],
+            }
+        )
+        # call the automatic reconciliation method
+        mass_rec.run_reconcile()
+        self.assertEqual("paid", invoice.payment_state)
+        full_reconcile = invoice.line_ids.mapped("full_reconcile_id")
+        writeoff_line = full_reconcile.reconciled_line_ids.filtered(
+            lambda l: l.debit == 0.02
+        )
+        self.assertEqual(len(writeoff_line), 1)
+        self.assertEqual(writeoff_line.date, fields.Date.today())

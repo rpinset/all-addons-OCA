@@ -17,6 +17,25 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. module: stock_available_to_promise_release
+#. odoo-python
+#: code:addons/stock_available_to_promise_release/models/stock_move.py:0
+#, python-format
+msgid ""
+"\n"
+"- Origin picking(s):\n"
+"\t -%(picking_names)s."
+msgstr ""
+
+#. module: stock_available_to_promise_release
+#. odoo-python
+#: code:addons/stock_available_to_promise_release/models/stock_move.py:0
+#, python-format
+msgid ""
+"\n"
+"- Picking: %(picking_name)s."
+msgstr ""
+
+#. module: stock_available_to_promise_release
 #: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_picking__release_ready_count
 msgid "# of moves ready"
 msgstr "# de movimientos listos"
@@ -65,12 +84,6 @@ msgstr "Cancelar"
 #: model_terms:ir.ui.view,arch_db:stock_available_to_promise_release.stock_picking_type_form
 msgid "Chained moves release process"
 msgstr ""
-
-#. module: stock_available_to_promise_release
-#: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_move__city
-#: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_picking__city
-msgid "City"
-msgstr "Ciudad"
 
 #. module: stock_available_to_promise_release
 #: model:ir.model,name:stock_available_to_promise_release.model_res_company
@@ -179,6 +192,11 @@ msgid ""
 msgstr ""
 
 #. module: stock_available_to_promise_release
+#: model:ir.model,name:stock_available_to_promise_release.model_stock_location
+msgid "Inventory Locations"
+msgstr ""
+
+#. module: stock_available_to_promise_release
 #: model:ir.model,name:stock_available_to_promise_release.model_stock_route
 msgid "Inventory Routes"
 msgstr "Rutas de Inventario"
@@ -252,11 +270,6 @@ msgid "Picking Type"
 msgstr "Tipo de Entrega"
 
 #. module: stock_available_to_promise_release
-#: model_terms:ir.ui.view,arch_db:stock_available_to_promise_release.view_move_release_tree
-msgid "Postcode"
-msgstr "Código Postal"
-
-#. module: stock_available_to_promise_release
 #: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_picking_type__prevent_new_move_after_release
 msgid "Prevent new move after release"
 msgstr ""
@@ -325,11 +338,6 @@ msgstr "Liberación basada en Disponibilidad a Prometer"
 #: model_terms:ir.ui.view,arch_db:stock_available_to_promise_release.view_move_release_form
 msgid "Shipment date"
 msgstr "Fecha de envío"
-
-#. module: stock_available_to_promise_release
-#: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_picking__state_id
-msgid "State"
-msgstr "Estado"
 
 #. module: stock_available_to_promise_release
 #: model:ir.model,name:stock_available_to_promise_release.model_stock_release
@@ -520,12 +528,6 @@ msgid "You are not allowed to unrelease this move %(move_name)s."
 msgstr ""
 
 #. module: stock_available_to_promise_release
-#: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_move__zip_code
-#: model:ir.model.fields,field_description:stock_available_to_promise_release.field_stock_picking__zip_code
-msgid "Zip"
-msgstr "Código Postal"
-
-#. module: stock_available_to_promise_release
 #: model_terms:ir.ui.view,arch_db:stock_available_to_promise_release.res_config_settings_view_form_stock
 msgid "days"
 msgstr "días"
@@ -534,6 +536,18 @@ msgstr "días"
 #: model_terms:ir.ui.view,arch_db:stock_available_to_promise_release.res_config_settings_view_form_stock
 msgid "minutes"
 msgstr "minutos"
+
+#~ msgid "City"
+#~ msgstr "Ciudad"
+
+#~ msgid "Postcode"
+#~ msgstr "Código Postal"
+
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#~ msgid "Zip"
+#~ msgstr "Código Postal"
 
 #~ msgid "Product"
 #~ msgstr "Producto"

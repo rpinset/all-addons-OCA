@@ -38,6 +38,13 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
                 "line_ids": [(0, 0, {"account_id": cls.current_assets_account.id})],
             }
         )
+        cls.tax_10 = cls.env["account.tax"].create(
+            {
+                "name": "tax_10",
+                "amount_type": "percent",
+                "amount": 10.0,
+            }
+        )
         # We need to make some fields visible in order to make the tests work
         cls.env["ir.ui.view"].create(
             {
@@ -252,11 +259,71 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
             f.manual_reference = "account.move.line;%s" % receivable2.id
             self.assertEqual(f.manual_amount, -30)
             self.assertTrue(f.can_reconcile)
-        self.assertEqual(inv1.amount_residual, 100)
-        self.assertEqual(inv2.amount_residual, 100)
+        self.assertEqual(inv1.amount_residual_signed, 100)
+        self.assertEqual(inv2.amount_residual_signed, 100)
         bank_stmt_line.reconcile_bank_line()
-        self.assertEqual(inv1.amount_residual, 30)
-        self.assertEqual(inv2.amount_residual, 70)
+        self.assertEqual(inv1.amount_residual_signed, 30)
+        self.assertEqual(inv2.amount_residual_signed, 70)
+
+    def test_reconcile_invoice_partial_supplier(self):
+        """
+        We want to partially reconcile two invoices from a single payment.
+        As a result, both invoices must be partially reconciled
+        """
+        inv1 = self.create_invoice(
+            currency_id=self.currency_euro_id,
+            invoice_amount=100,
+            move_type="in_invoice",
+        )
+        inv2 = self.create_invoice(
+            currency_id=self.currency_euro_id,
+            invoice_amount=100,
+            move_type="in_invoice",
+        )
+        bank_stmt = self.acc_bank_stmt_model.create(
+            {
+                "company_id": self.env.ref("base.main_company").id,
+                "journal_id": self.bank_journal_euro.id,
+                "date": time.strftime("%Y-07-15"),
+                "name": "test",
+            }
+        )
+        bank_stmt_line = self.acc_bank_stmt_line_model.create(
+            {
+                "name": "testLine",
+                "journal_id": self.bank_journal_euro.id,
+                "statement_id": bank_stmt.id,
+                "amount": -100,
+                "date": time.strftime("%Y-07-15"),
+            }
+        )
+        receivable1 = inv1.line_ids.filtered(
+            lambda l: l.account_id.account_type == "liability_payable"
+        )
+        receivable2 = inv2.line_ids.filtered(
+            lambda l: l.account_id.account_type == "liability_payable"
+        )
+        with Form(
+            bank_stmt_line,
+            view="account_reconcile_oca.bank_statement_line_form_reconcile_view",
+        ) as f:
+            self.assertFalse(f.can_reconcile)
+            f.add_account_move_line_id = receivable1
+            self.assertFalse(f.add_account_move_line_id)
+            self.assertTrue(f.can_reconcile)
+            f.manual_reference = "account.move.line;%s" % receivable1.id
+            self.assertEqual(f.manual_amount, 100)
+            f.manual_amount = 70
+            self.assertFalse(f.can_reconcile)
+            f.add_account_move_line_id = receivable2
+            f.manual_reference = "account.move.line;%s" % receivable2.id
+            self.assertEqual(f.manual_amount, 30)
+            self.assertTrue(f.can_reconcile)
+        self.assertEqual(inv1.amount_residual_signed, -100)
+        self.assertEqual(inv2.amount_residual_signed, -100)
+        bank_stmt_line.reconcile_bank_line()
+        self.assertEqual(inv1.amount_residual_signed, -30)
+        self.assertEqual(inv2.amount_residual_signed, -70)
 
     def test_reconcile_model(self):
         """
@@ -288,9 +355,56 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
             f.manual_model_id = self.rule
             self.assertTrue(f.can_reconcile)
         bank_stmt_line.reconcile_bank_line()
+        self.assertEqual(2, len(bank_stmt_line.move_id.line_ids))
         self.assertTrue(
             bank_stmt_line.move_id.line_ids.filtered(
                 lambda r: r.account_id == self.current_assets_account
+            )
+        )
+
+    def test_reconcile_model_tax_included(self):
+        """
+        We want to test what happens when we select an reconcile model to fill a
+        bank statement.
+        """
+        self.rule.line_ids.write(
+            {"tax_ids": [(4, self.tax_10.id)], "force_tax_included": True}
+        )
+        bank_stmt = self.acc_bank_stmt_model.create(
+            {
+                "company_id": self.env.ref("base.main_company").id,
+                "journal_id": self.bank_journal_euro.id,
+                "date": time.strftime("%Y-07-15"),
+                "name": "test",
+            }
+        )
+        bank_stmt_line = self.acc_bank_stmt_line_model.create(
+            {
+                "name": "testLine",
+                "journal_id": self.bank_journal_euro.id,
+                "statement_id": bank_stmt.id,
+                "amount": 100,
+                "date": time.strftime("%Y-07-15"),
+            }
+        )
+        with Form(
+            bank_stmt_line,
+            view="account_reconcile_oca.bank_statement_line_form_reconcile_view",
+        ) as f:
+            self.assertFalse(f.can_reconcile)
+            f.manual_model_id = self.rule
+            self.assertTrue(f.can_reconcile)
+        bank_stmt_line.reconcile_bank_line()
+        self.assertEqual(3, len(bank_stmt_line.move_id.line_ids))
+        self.assertTrue(
+            bank_stmt_line.move_id.line_ids.filtered(
+                lambda r: r.account_id == self.current_assets_account
+                and r.tax_ids == self.tax_10
+            )
+        )
+        self.assertTrue(
+            bank_stmt_line.move_id.line_ids.filtered(
+                lambda r: r.tax_line_id == self.tax_10
             )
         )
 
@@ -860,3 +974,36 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
             .partner_id,
             parent_partner,
         )
+
+    def test_journal_foreign_currency(self):
+        inv1 = self.create_invoice(currency_id=self.currency_usd_id, invoice_amount=100)
+        bank_stmt = self.acc_bank_stmt_model.create(
+            {
+                "company_id": self.env.ref("base.main_company").id,
+                "journal_id": self.bank_journal_usd.id,
+                "date": time.strftime("%Y-07-15"),
+                "name": "test",
+            }
+        )
+        bank_stmt_line = self.acc_bank_stmt_line_model.create(
+            {
+                "name": "testLine",
+                "journal_id": self.bank_journal_usd.id,
+                "statement_id": bank_stmt.id,
+                "amount": 100,
+                "date": time.strftime("%Y-07-15"),
+            }
+        )
+        with Form(
+            bank_stmt_line,
+            view="account_reconcile_oca.bank_statement_line_form_reconcile_view",
+        ) as f:
+            self.assertFalse(f.can_reconcile)
+            f.add_account_move_line_id = inv1.line_ids.filtered(
+                lambda l: l.account_id.account_type == "asset_receivable"
+            )
+            self.assertFalse(f.add_account_move_line_id)
+            self.assertTrue(f.can_reconcile)
+        self.assertTrue(bank_stmt_line.can_reconcile)
+        bank_stmt_line.reconcile_bank_line()
+        self.assertEqual(0, inv1.amount_residual)

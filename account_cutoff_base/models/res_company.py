@@ -16,7 +16,7 @@ class ResCompany(models.Model):
         check_company=True,
     )
     default_cutoff_move_partner = fields.Boolean(
-        string="Partner on Move Line by Default"
+        string="Partner on Journal Items by Default"
     )
     accrual_taxes = fields.Boolean(string="Accrual On Taxes", default=True)
     post_cutoff_move = fields.Boolean(string="Post Cut-off Journal Entry")
@@ -28,6 +28,16 @@ class ResCompany(models.Model):
     default_accrued_expense_account_id = fields.Many2one(
         comodel_name="account.account",
         string="Default Account for Accrued Expenses",
+        check_company=True,
+    )
+    default_accrued_revenue_tax_account_id = fields.Many2one(
+        comodel_name="account.account",
+        string="Default Tax Account for Accrued Revenue",
+        check_company=True,
+    )
+    default_accrued_expense_tax_account_id = fields.Many2one(
+        comodel_name="account.account",
+        string="Default Tax Account for Accrued Expense",
         check_company=True,
     )
     default_prepaid_revenue_account_id = fields.Many2one(

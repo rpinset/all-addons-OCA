@@ -9,7 +9,7 @@
 
 {
     "name": "Account Payment Order",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.4.1",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV, "
     "Therp BV, "
@@ -27,6 +27,7 @@
         "wizard/account_payment_line_create_view.xml",
         "wizard/account_invoice_payment_line_multi_view.xml",
         "views/account_payment_mode.xml",
+        "views/account_payment_views.xml",
         "views/account_payment_order.xml",
         "views/account_payment_line.xml",
         "views/account_move_line.xml",

@@ -662,6 +662,14 @@ class AccountMoveLine(models.Model):
             partner=self.move_id.partner_id,
         )
         price_total = taxes["total_included"] if taxes else self.price_subtotal
+        invoice_id = self.move_id
+        if invoice_id.currency_id.id != invoice_id.company_id.currency_id.id:
+            price_total = currency._convert(
+                price_total,
+                invoice_id.company_id.currency_id,
+                invoice_id.company_id,
+                invoice_id.date or invoice_id.invoice_date,
+            )
         if RefundType.differences.value == self.move_id.tbai_refund_type:
             sign = -1
         else:
@@ -674,13 +682,13 @@ class AccountMoveLine(models.Model):
             price_unit = price_unit - (
                 self.price_unit * tax.amount / (100 + tax.amount)
             )
+        currency = self.move_id and self.move_id.currency_id or None
+        invoice_id = self.move_id
+        if invoice_id.currency_id.id != invoice_id.company_id.currency_id.id:
+            price_unit = currency._convert(
+                price_unit,
+                invoice_id.company_id.currency_id,
+                invoice_id.company_id,
+                invoice_id.date or invoice_id.invoice_date,
+            )
         return price_unit
-
-
-class AccountMoveReversal(models.TransientModel):
-    _inherit = "account.move.reversal"
-
-    def _prepare_default_reversal(self, move):
-        res = super()._prepare_default_reversal(move)
-        res.update({"company_id": self.move_ids[0].company_id.id})
-        return res

@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_credit_control_dunning_fees
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2018
+# Frank Schellenberg <opensource@schellenberg.nl>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-01 03:44+0000\n"
+"PO-Revision-Date: 2023-08-30 07:41+0000\n"
+"Last-Translator: \"Jan Tapper [Onestein]\" <j.tapper@onestein.nl>\n"
+"Language-Team: Dutch (https://www.transifex.com/oca/teams/23907/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_line
+msgid "A credit control line"
+msgstr "Een aanmaningsregel"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_policy_level
+msgid "A credit control policy level"
+msgstr "Aanmaning beleidsniveau"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_line__balance_due_total
+msgid "Balance due with fees"
+msgstr "Saldo met kosten"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_run
+msgid "Credit control line generator"
+msgstr "Aanmaningsregels generator"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,help:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_currency_id
+msgid ""
+"Currency of the dunning fees. If empty, it takes the company's currency."
+msgstr ""
+"Valuta van de aanmaningskosten. Indien leeg, is de valuta van het bedrijf "
+"nodig."
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_line__dunning_fees_amount
+#: model_terms:ir.ui.view,arch_db:account_credit_control_dunning_fees.add_dunning_fees_on_policy
+#: model_terms:ir.ui.view,arch_db:account_credit_control_dunning_fees.report_credit_control_summary_document_fees
+msgid "Fees"
+msgstr "Kosten"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_fixed_amount
+msgid "Fees Fixed Amount"
+msgstr "Kosten Vast bedrag"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_product_id
+msgid "Fees Product"
+msgstr "Kosten Product"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_currency_id
+msgid "Fees currency"
+msgstr "Kosten valuta"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields.selection,name:account_credit_control_dunning_fees.selection__credit_control_policy_level__dunning_fees_type__fixed
+msgid "Fixed"
+msgstr "Vast"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_dunning_fees_computer
+msgid "Model that compute dunning fees"
+msgstr "Model dat aanmaningskosten berekent"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_fees_type
+msgid "Type"
+msgstr "Type"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_communication
+msgid "credit control communication"
+msgstr "aanmaningscommunicatie"
+
+#. module: account_credit_control_dunning_fees
+#. odoo-python
+#: code:addons/account_credit_control_dunning_fees/model/dunning.py:0
+#, python-format
+msgid "fees type %s is not supported"
+msgstr "kostentype %s wordt niet ondersteund"
+
+#~ msgid "Created by"
+#~ msgstr "Aangemaakt door"
+
+#~ msgid "Created on"
+#~ msgstr "Aangemaakt op"
+
+#~ msgid "Display Name"
+#~ msgstr "Te tonen naam"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Laatst bijgewerkt op"
+
+#~ msgid "Last Updated by"
+#~ msgstr "Laatst bijgewerkt door"
+
+#~ msgid "Last Updated on"
+#~ msgstr "Laatst bijgewerkt op"

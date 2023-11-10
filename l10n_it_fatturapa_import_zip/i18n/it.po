@@ -1,0 +1,521 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_it_fatturapa_import_zip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-19 16:10+0000\n"
+"PO-Revision-Date: 2023-10-28 15:47+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__access_token
+msgid "Access Token"
+msgstr "Token di accesso"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_ids
+msgid "Activities"
+msgstr "Attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione eccezione attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_state
+msgid "Activity State"
+msgstr "Stato attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona tipo attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__ir_attachment_id
+msgid "Attachment"
+msgstr "Allegato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteggio allegati"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__local_url
+msgid "Attachment URL"
+msgstr "URL allegato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__attachment_in_ids
+msgid "Attachments In"
+msgstr "Allegati ingresso"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__attachment_out_ids
+msgid "Attachments Out"
+msgstr "Allegati uscita"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__checksum
+msgid "Checksum/SHA1"
+msgstr "Checksum/SHA1"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_import_zip.selection__fatturapa_attachment_import_zip__state__done
+msgid "Completed"
+msgstr "Completato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__db_datas
+msgid "Database Data"
+msgstr "Dati database"
+
+#. module: l10n_it_fatturapa_import_zip
+#. odoo-python
+#: code:addons/l10n_it_fatturapa_import_zip/wizards/wizard_import_fatturapa.py:0
+#, python-format
+msgid ""
+"Define a sale journal for this company: '%(company)s' (id: %(company_id)d)."
+msgstr ""
+"Definire un registro vendita per questa azienda: '%(company)s' (id: "
+"%(company_id)d)."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__description
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_import_zip.selection__fatturapa_attachment_import_zip__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model,name:l10n_it_fatturapa_import_zip.model_fatturapa_attachment_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_in__attachment_import_zip_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_out__attachment_import_zip_id
+msgid "E-bill ZIP import"
+msgstr "Importazione file ZIP fattura elettronica"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model,name:l10n_it_fatturapa_import_zip.model_fatturapa_attachment_in
+msgid "E-bill import file"
+msgstr "File importato e-fattura"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_bank_statement_line__attachment_out_import_zip_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_move__attachment_out_import_zip_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_payment__attachment_out_import_zip_id
+msgid "E-bills ZIP import"
+msgstr "Importa file ZIP fatture elettorniche"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model,name:l10n_it_fatturapa_import_zip.model_fatturapa_attachment_out
+msgid "E-invoice Export File"
+msgstr "File esportato e-fattura"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_bank_statement_line__attachment_in_import_zip_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_move__attachment_in_import_zip_id
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_account_payment__attachment_in_import_zip_id
+msgid "E-invoices ZIP import"
+msgstr "Importa file ZIP fatture elettroniche"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__messages
+msgid "Error Messages"
+msgstr "Messaggi di errore"
+
+#. module: l10n_it_fatturapa_import_zip
+#. odoo-python
+#: code:addons/l10n_it_fatturapa_import_zip/wizards/wizard_import_fatturapa.py:0
+#, python-format
+msgid "File %s is linked to invoices yet."
+msgstr "Il file %s è già collegato ad una fattura."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__datas
+msgid "File Content (base64)"
+msgstr "Contenuto file (base64)"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__raw
+msgid "File Content (raw)"
+msgstr "Contenuto file (grezzo)"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__file_size
+msgid "File Size"
+msgstr "Dimensione file"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_follower_ids
+msgid "Followers"
+msgstr "Seguito da"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguito da (partner)"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome es. fa-tasks"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__has_message
+msgid "Has Message"
+msgstr "Ha un messaggio"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per indicare un'attività eccezione."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_error
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__image_height
+msgid "Image Height"
+msgstr "Altezza immagine"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__image_src
+msgid "Image Src"
+msgstr "Sorgente immagine"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__image_width
+msgid "Image Width"
+msgstr "Larghezza immagine"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model,name:l10n_it_fatturapa_import_zip.model_wizard_import_fatturapa
+msgid "Import E-bill"
+msgstr "Importa e-fattura"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.actions.act_window,name:l10n_it_fatturapa_import_zip.action_fatturapa_attachment_import_zip
+#: model:ir.ui.menu,name:l10n_it_fatturapa_import_zip.menu_action_fatturapa_attachment_import_zip
+msgid "Import E-bill ZIP Files"
+msgstr "Importa file ZIP e-fattura"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "Import e-bill ZIP"
+msgstr "Importa file ZIP e-fattura"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "Import invoices"
+msgstr "Importa fatture"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "In invoices"
+msgstr "Fatture ricevute"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__index_content
+msgid "Indexed Content"
+msgstr "Contenuto indicizzato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__invoice_in_ids
+msgid "Invoices In"
+msgstr "Fatture ricevute"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__invoices_in_count
+msgid "Invoices In Count"
+msgstr "Conteggio fatture ingresso"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__invoice_out_ids
+msgid "Invoices Out"
+msgstr "Fatture emesse"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__invoices_out_count
+msgid "Invoices Out Count"
+msgstr "Conteggio fatture uscita"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_is_follower
+msgid "Is Follower"
+msgstr "Segue"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__public
+msgid "Is public document"
+msgstr "È un documento pubblico"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model,name:l10n_it_fatturapa_import_zip.model_account_move
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Allegato principale"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di consegna messaggio"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_ids
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__mimetype
+msgid "Mime Type"
+msgstr "Tipo MIME"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Scadenza mia attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza prossima attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo prossima attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo prossima attività"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di consegna"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__original_id
+msgid "Original (unoptimized, unresized) attachment"
+msgstr "Allegato originale (non ottimizzato, non ridimensionato)"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "Out invoices"
+msgstr "Fatture emesse"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__ftpa_preview_link
+msgid "Preview link"
+msgstr "Collegamento di anteprima"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__res_field
+msgid "Resource Field"
+msgstr "Campo risorsa"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__res_id
+msgid "Resource ID"
+msgstr "ID risorsa"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__res_model
+msgid "Resource Model"
+msgstr "Modello risorsa"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__res_name
+msgid "Resource Name"
+msgstr "Nome risorsa"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore consegna SMS"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__state
+msgid "State"
+msgstr "Stato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
+"Oggi: la data attività è oggi\n"
+"Pianificato: attività future."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__store_fname
+msgid "Stored Filename"
+msgstr "Nome file memorizzato"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo di attività eccezione sul record."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__url
+msgid "Url"
+msgstr "URL"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia comunicazioni sito web"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "XML In"
+msgstr "XML ricevuto"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__xml_in_count
+msgid "XML In Count"
+msgstr "Conteggio XML ricevuti"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.fatturapa_attachment_import_zip_form
+msgid "XML Out"
+msgstr "XML emesso"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__xml_out_count
+msgid "XML Out Count"
+msgstr "Conteggio XML emesso"
+
+#. module: l10n_it_fatturapa_import_zip
+#: model:ir.model.fields,help:l10n_it_fatturapa_import_zip.field_fatturapa_attachment_import_zip__type
+msgid ""
+"You can either upload a file from your computer or copy/paste an internet "
+"link to your file."
+msgstr ""
+"È possibile caricare un file dal computer oppure fare copia/incolla di un "
+"collegamento Internet al file."
+
+#. module: l10n_it_fatturapa_import_zip
+#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_import_zip.view_fatturapa_in_attachment_form_zip_import
+msgid "ZIP import"
+msgstr "Importa file ZIP"

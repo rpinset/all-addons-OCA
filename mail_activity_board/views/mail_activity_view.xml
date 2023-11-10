@@ -226,7 +226,7 @@
                                     </div>
                                     <div class="oe_kanban_bottom_right">
                                         <img
-                                            t-att-src="kanban_image('res.users', 'image_small', record.user_id.raw_value)"
+                                            t-att-src="kanban_image('res.users', 'avatar_128', record.user_id.raw_value)"
                                             t-att-title="record.user_id.value"
                                             t-att-alt="record.user_id.value"
                                             width="24"
@@ -321,6 +321,7 @@ Menus
         name="Activities"
         parent="spreadsheet_dashboard.spreadsheet_dashboard_menu_root"
         action="open_boards_activities"
+        groups="group_show_mail_activity_board"
         sequence="1"
     />
 

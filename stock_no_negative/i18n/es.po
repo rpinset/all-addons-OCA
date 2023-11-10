@@ -7,20 +7,22 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-26 09:53+0000\n"
-"PO-Revision-Date: 2019-02-26 09:53+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2023-10-15 20:38+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: stock_no_negative
+#. odoo-python
 #: code:addons/stock_no_negative/models/stock_quant.py:0
 #, python-format
-msgid " lot '%s'"
-msgstr " lote '%s'"
+msgid " lot {}"
+msgstr " lote {}"
 
 #. module: stock_no_negative
 #: model:ir.model.fields,field_description:stock_no_negative.field_product_category__allow_negative_stock
@@ -70,28 +72,48 @@ msgid "Inventory Locations"
 msgstr "Ubicaciones de inventario"
 
 #. module: stock_no_negative
+#: model:ir.model,name:stock_no_negative.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_no_negative
 #: model:ir.model,name:stock_no_negative.model_product_category
 msgid "Product Category"
 msgstr "Categoría de producto"
 
 #. module: stock_no_negative
-#: model:ir.model,name:stock_no_negative.model_product_template
-msgid "Product Template"
-msgstr "Plantilla de producto"
-
-#. module: stock_no_negative
 #: model:ir.model,name:stock_no_negative.model_stock_quant
 msgid "Quants"
-msgstr "Quants"
+msgstr "Cants"
 
 #. module: stock_no_negative
+#. odoo-python
 #: code:addons/stock_no_negative/models/stock_quant.py:0
 #, python-format
 msgid ""
 "You cannot validate this stock operation because the stock level of the "
-"product '%s'%s would become negative (%s) on the stock location '%s' and "
-"negative stock is not allowed for this product and/or location."
+"product '{name}'{name_lot} would become negative ({q_quantity}) on the stock "
+"location '{complete_name}' and negative stock is not allowed for this "
+"product and/or location."
 msgstr ""
-"No se puede validar esta operación de stock porque el nivel de stock del "
-"producto '%s'%s se volvería negativo (%s) en la ubicación de stock '%s' y no "
-"se permite stock negativo para este producto y/o ubicación."
+"No puede validar esta operación de stock porque el nivel de stock del "
+"producto '{name}'{name_lot} sería negativo ({q_quantity}) en la ubicación de "
+"stock '{complete_name}' y el stock negativo no está permitido para este "
+"producto y/o ubicación."
+
+#, python-format
+#~ msgid " lot '%s'"
+#~ msgstr " lote '%s'"
+
+#~ msgid "Product Template"
+#~ msgstr "Plantilla de producto"
+
+#, python-format
+#~ msgid ""
+#~ "You cannot validate this stock operation because the stock level of the "
+#~ "product '%s'%s would become negative (%s) on the stock location '%s' and "
+#~ "negative stock is not allowed for this product and/or location."
+#~ msgstr ""
+#~ "No se puede validar esta operación de stock porque el nivel de stock del "
+#~ "producto '%s'%s se volvería negativo (%s) en la ubicación de stock '%s' y "
+#~ "no se permite stock negativo para este producto y/o ubicación."

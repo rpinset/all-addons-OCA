@@ -3,4 +3,5 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from . import models  # pragma: no cover
-from . import components  # pragma: no cover
+from . import tools
+from . import wizards

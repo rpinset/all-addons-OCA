@@ -10,14 +10,10 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     release_channel_id = fields.Many2one(
-        comodel_name="stock.release.channel", index=True, ondelete="restrict"
-    )
-    commercial_partner_id = fields.Many2one(
-        comodel_name="res.partner",
-        string="Commercial Entity",
-        related="partner_id.commercial_partner_id",
-        store=True,
-        readonly=True,
+        comodel_name="stock.release.channel",
+        index=True,
+        ondelete="restrict",
+        copy=False,
     )
 
     def _delay_assign_release_channel(self):
@@ -28,8 +24,12 @@ class StockPicking(models.Model):
             ).assign_release_channel()
 
     def assign_release_channel(self):
+        messages = ""
         for pick in self:
-            self.env["stock.release.channel"].assign_release_channel(pick)
+            result = self.env["stock.release.channel"].assign_release_channel(pick)
+            if result:
+                messages += result + "\n"
+        return messages
 
     def release_available_to_promise(self):
         for record in self:
@@ -55,12 +55,12 @@ class StockPicking(models.Model):
         )
         need_release._delay_assign_release_channel()
 
-    def _find_release_channel_candidate(self):
-        """Find a release channel candidate for the picking.
+    def _find_release_channel_possible_candidate(self):
+        """Find release channels possible candidate for the picking.
 
-        This method is meant to be overridden in other modules. It allows to
-        find a release channel candidate for the current picking based on the
-        picking information.
+        This method is meant to be inherited in other modules to add more criteria of
+        channel selection. It allows to find all possible channels for the current
+        picking(s) based on the picking information.
 
         For example, you could define release channels based on a geographic area.
         In this case, you would need to override this method to find the release
@@ -70,7 +70,26 @@ class StockPicking(models.Model):
         the destination as it's done into the method assign_release_channel of the
         stock.release.channel model.
 
-        :return: a release channel or None
+        :return: release channels
         """
         self.ensure_one()
-        return None
+        return (
+            self.env["stock.release.channel"]
+            .search(self._get_release_channel_possible_candidate_domain())
+            .sorted(key=lambda r: (not bool(r.partner_ids), r.sequence))
+        )
+
+    def _get_release_channel_possible_candidate_domain(self):
+        self.ensure_one()
+        return [
+            ("state", "!=", "asleep"),
+            "|",
+            ("picking_type_ids", "=", False),
+            ("picking_type_ids", "in", self.picking_type_id.ids),
+            "|",
+            ("warehouse_id", "=", False),
+            ("warehouse_id", "=", self.picking_type_id.warehouse_id.id),
+            "|",
+            ("partner_ids", "=", False),
+            ("partner_ids", "in", self.partner_id.ids),
+        ]

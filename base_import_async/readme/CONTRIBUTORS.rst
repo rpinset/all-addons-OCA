@@ -12,3 +12,6 @@ Other contributors include:
 * Laurent Mignon (ACSONE)
 * Dennis Sluijk (Onestein)
 * Guewen Baconnier (Camptocamp)
+* `Trobz <https://trobz.com>`_:
+    * Dzung Tran <dungtd@trobz.com>
+* Daniel Duque (FactorLibre)

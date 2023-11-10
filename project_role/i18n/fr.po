@@ -208,7 +208,6 @@ msgstr ""
 
 #. module: project_role
 #: model:ir.model.fields,help:project_role.field_project_assignment__message_has_error
-#: model:ir.model.fields,help:project_role.field_project_assignment__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -290,8 +289,8 @@ msgstr "Nombre d'erreurs"
 
 #. module: project_role
 #: model:ir.model.fields,help:project_role.field_project_assignment__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr "Nombre de messages qui nécessitent une action"
+msgid "Number of messages requiring action"
+msgstr ""
 
 #. module: project_role
 #: model:ir.model.fields,help:project_role.field_project_assignment__message_has_error_counter
@@ -380,11 +379,6 @@ msgid "Roles &amp; Assignments"
 msgstr "Rôles &amp; Affectations"
 
 #. module: project_role
-#: model:ir.model.fields,field_description:project_role.field_project_assignment__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: project_role
 #: model_terms:ir.ui.view,arch_db:project_role.res_config_settings_view_form
 msgid "Setup project roles"
 msgstr "Configurer les rôles du projet"
@@ -442,6 +436,9 @@ msgstr ""
 #: model:ir.model.fields,help:project_role.field_project_assignment__website_message_ids
 msgid "Website communication history"
 msgstr ""
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Nombre de messages qui nécessitent une action"
 
 #, python-format
 #~ msgid "Assignment %s conflicts with another assignment: %s"

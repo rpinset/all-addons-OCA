@@ -1,7 +1,9 @@
 # Copyright 2020 Camptocamp (https://www.camptocamp.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
-from odoo import fields
+import logging
+
+from odoo import _, fields
 from odoo.tests import common
 
 from odoo.addons.stock_available_to_promise_release.tests.common import (
@@ -20,6 +22,21 @@ class ReleaseChannelCase(common.TransactionCase):
         )
         cls._create_base_data()
 
+    def setUp(self):
+        super(ReleaseChannelCase, self).setUp()
+        loggers = ["odoo.addons.stock_release_channel.models.stock_release_channel"]
+        for logger in loggers:
+            logging.getLogger(logger).addFilter(self)
+
+        # pylint: disable=unused-variable
+        @self.addCleanup
+        def un_mute_logger():
+            for logger_ in loggers:
+                logging.getLogger(logger_).removeFilter(self)
+
+    def filter(self, record):
+        return 0
+
     @classmethod
     def _create_base_data(cls):
         cls.wh = cls.env["stock.warehouse"].create(
@@ -37,6 +54,8 @@ class ReleaseChannelCase(common.TransactionCase):
         cls.product2 = cls.env["product.product"].create(
             {"name": "Test Product 2", "barcode": "test2", "type": "product"}
         )
+        # Set product1 as default product
+        cls.product = cls.product1
 
     @classmethod
     def _update_qty_in_location(
@@ -82,6 +101,39 @@ class ReleaseChannelCase(common.TransactionCase):
     @classmethod
     def _create_channel(cls, **vals):
         return cls.env["stock.release.channel"].create(vals)
+
+    def _run_customer_procurement(self, date=None):
+        """
+        Call this in order to create a procurement on customer
+        location.
+
+        Before, set self.product as the product to be used
+        """
+        self.customer_procurement = self.env["procurement.group"].create(
+            {
+                "name": "Customer procurement",
+            }
+        )
+        values = {
+            "company_id": self.wh.company_id,
+            "group_id": self.customer_procurement,
+            "date_planned": date or fields.Datetime.now(),
+            "warehouse_id": self.wh,
+        }
+        self.env["procurement.group"].run(
+            [
+                self.env["procurement.group"].Procurement(
+                    self.product,
+                    10.0,
+                    self.product.uom_id,
+                    self.customer_location,
+                    "TEST",
+                    "TEST",
+                    self.wh.company_id,
+                    values,
+                )
+            ]
+        )
 
     @classmethod
     def _run_procurement(cls, move, date=None):
@@ -157,3 +209,16 @@ class ChannelReleaseCase(PromiseReleaseCommonCase):
         for line in picking.move_line_ids:
             line.qty_done = line.reserved_qty
         picking._action_done()
+
+    def _assert_action_nothing_in_the_queue(self, action):
+        self.assertEqual(
+            action,
+            {
+                "effect": {
+                    "fadeout": "fast",
+                    "message": _("Nothing in the queue!"),
+                    "img_url": "/web/static/src/img/smile.svg",
+                    "type": "rainbow_man",
+                }
+            },
+        )

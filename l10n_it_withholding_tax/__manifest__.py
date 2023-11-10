@@ -6,7 +6,7 @@
 
 {
     "name": "ITA - Ritenute d'acconto",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.2",
     "category": "Account",
     "author": "Openforce, Odoo Italia Network, " "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-italy",
@@ -21,9 +21,11 @@
         "security/ir.model.access.csv",
         "security/security.xml",
     ],
-    "qweb": [
-        "static/src/xml/account_payment.xml",
-    ],
+    "assets": {
+        "web.assets_backend": [
+            "l10n_it_withholding_tax/static/src/components/**/*",
+        ],
+    },
     "installable": True,
     "development_status": "Beta",
 }

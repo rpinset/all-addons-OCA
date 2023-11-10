@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-08 14:45+0000\n"
-"PO-Revision-Date: 2023-04-07 18:23+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-11-06 15:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_it_delivery_note
 #: model:ir.actions.report,print_report_name:l10n_it_delivery_note.delivery_note_report_action
@@ -43,8 +43,8 @@ msgid ""
 "                            Inconsistent DN info in sale orders!"
 msgstr ""
 "<strong>\n"
-"                                <span class=\"fa fa-exclamation-triangle\"/>"
-"\n"
+"                                <span class=\"fa fa-exclamation-triangle\"/"
+">\n"
 "                                Attenzione!\n"
 "                            </strong>\n"
 "                            Informazioni di consegna inconsistenti "
@@ -175,9 +175,10 @@ msgstr "Aspetti dei beni"
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
 msgid "Archived"
-msgstr "Archiviati"
+msgstr "In archivio"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid ""
@@ -187,6 +188,7 @@ msgstr ""
 "Almeno un prelievo tra quelli selezionati è già legato ad un altro DdT."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "At least one picking you've selected doesn't appear to be completed."
@@ -208,6 +210,7 @@ msgid "Can Change Number"
 msgstr "Può cambiare numero"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_location.py:0
 #, python-format
 msgid ""
@@ -289,6 +292,7 @@ msgid "Contact"
 msgstr "Contatto"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #: model:ir.actions.act_window,name:l10n_it_delivery_note.stock_delivery_note_create_action
 #, python-format
@@ -345,12 +349,12 @@ msgstr "Data Trasporto"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__picking_type_code
 msgid "DN Operation Type"
-msgstr "Tipo di Operazione DdT"
+msgstr "Tipo di operazione DdT"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__packages
 msgid "DN Packages"
-msgstr "Imballo DdT"
+msgstr "Imballaggi DdT"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__delivery_note_state
@@ -393,6 +397,7 @@ msgid "Delivery Note"
 msgstr "DdT"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/account_invoice.py:0
 #, python-format
 msgid "Delivery Note \"{}\" of {}"
@@ -435,7 +440,7 @@ msgstr "Riga DdT"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__delivery_note_readonly
 msgid "Delivery Note Readonly"
-msgstr "DdT in sola-lettura"
+msgstr "DdT in sola lettura"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model,name:l10n_it_delivery_note.model_stock_delivery_note_select_wizard
@@ -495,22 +500,10 @@ msgid "Discount"
 msgstr "Sconto"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move_line__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_config_settings__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_partner__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_advance_payment_inv__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order_line__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_shipping_information_updater_mixin__display_name
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_base_wizard__display_name
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_create_wizard__display_name
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__display_name
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_select_wizard__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_location__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__display_name
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking_checker_mixin__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -571,11 +564,6 @@ msgid "Followers"
 msgstr "Seguito da"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_channel_ids
-msgid "Followers (Channels)"
-msgstr "Seguito da (canali)"
-
-#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "Seguito da (partner)"
@@ -625,22 +613,15 @@ msgid "Gross weight UoM"
 msgstr "UdM del peso lordo"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move_line__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_config_settings__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_partner__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_advance_payment_inv__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order_line__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_shipping_information_updater_mixin__id
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__has_message
+msgid "Has Message"
+msgstr "Ha un messaggio"
+
+#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_base_wizard__id
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_create_wizard__id
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__id
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_select_wizard__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_location__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__id
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking_checker_mixin__id
 msgid "ID"
 msgstr "ID"
 
@@ -652,19 +633,18 @@ msgstr "Icona"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icona per indicare un'attività di eccezione."
+msgstr "Icona per indicare un'attività eccezione."
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_needaction
-#: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_has_error
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se selezionata, alcuni messaggi presentano un errore di consegna."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_wizard_error_message_template
@@ -672,9 +652,12 @@ msgid "If these problems persist, don't hesitate to contact the helpdesk."
 msgstr "Se questi problemi persistono, non esitate a contattare l'helpdesk."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/tests/test_stock_delivery_note_sequence.py:0
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_delivery_note__picking_type__incoming
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_delivery_note_create_wizard__picking_type__incoming
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
+#, python-format
 msgid "Incoming"
 msgstr "In entrata"
 
@@ -702,11 +685,19 @@ msgid "Internal notes"
 msgstr "Note interne"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model,name:l10n_it_delivery_note.model_stock_location
-msgid "Inventory Locations"
-msgstr "Posizione Inventario"
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/tests/test_stock_delivery_note_sequence.py:0
+#, python-format
+msgid "Internal transfer"
+msgstr "Trasferimento interno"
 
 #. module: l10n_it_delivery_note
+#: model:ir.model,name:l10n_it_delivery_note.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicazioni di inventario"
+
+#. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/wizard/sale_advance_payment_inv.py:0
 #, python-format
 msgid "Invoice Order"
@@ -737,6 +728,12 @@ msgid "Invoices"
 msgstr "Fatture"
 
 #. module: l10n_it_delivery_note
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_partner__is_carrier
+#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_users__is_carrier
+msgid "Is Carrier"
+msgstr "È trasportatore"
+
+#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_is_follower
 msgid "Is Follower"
 msgstr "Sta seguendo"
@@ -752,6 +749,7 @@ msgstr ""
 "                                    DdT introducendo funzionalità aggiuntive."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/cli/migrate_l10n_it_ddt.py:0
 #, python-format
 msgid ""
@@ -762,6 +760,7 @@ msgstr ""
 "se il database è già in uso."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/cli/migrate_l10n_it_ddt.py:0
 #, python-format
 msgid ""
@@ -782,22 +781,10 @@ msgid "Journal Item"
 msgstr "Movimento contabile"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_account_move_line____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_config_settings____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_res_partner____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_advance_payment_inv____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_sale_order_line____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_shipping_information_updater_mixin____last_update
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_base_wizard____last_update
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_create_wizard____last_update
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line____last_update
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_select_wizard____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_location____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking____last_update
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking_checker_mixin____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
@@ -864,6 +851,7 @@ msgid "Methods of transport"
 msgstr "Metodi di trasporto"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/cli/migrate_l10n_it_ddt.py:0
 #, python-format
 msgid ""
@@ -876,7 +864,7 @@ msgstr ""
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Scadenza della mia attività"
+msgstr "Scadenza mia attività"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__name
@@ -904,7 +892,7 @@ msgstr "UdM del peso netto"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__activity_summary
@@ -914,7 +902,7 @@ msgstr "Riepilogo prossima attività"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipologia prossima attività"
+msgstr "Tipo prossima attività"
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_picking_search_view
@@ -951,7 +939,7 @@ msgstr "Numero di errori"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_needaction_counter
-msgid "Number of messages which requires an action"
+msgid "Number of messages requiring action"
 msgstr "Numero di messaggi che richiedono un'azione"
 
 #. module: l10n_it_delivery_note
@@ -960,21 +948,26 @@ msgid "Number of messages with delivery error"
 msgstr "Numero di messaggi con errore di consegna"
 
 #. module: l10n_it_delivery_note
-#: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_unread_counter
-msgid "Number of unread messages"
-msgstr "Numero di messaggi non letti"
-
-#. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_form_view
 msgid "Open picking"
 msgstr "Apri consegna"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/tests/test_stock_delivery_note_sequence.py:0
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_delivery_note__picking_type__outgoing
 #: model:ir.model.fields.selection,name:l10n_it_delivery_note.selection__stock_delivery_note_create_wizard__picking_type__outgoing
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
+#, python-format
 msgid "Outgoing"
 msgstr "In uscita"
+
+#. module: l10n_it_delivery_note
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/tests/test_stock_delivery_note_sequence.py:0
+#, python-format
+msgid "Outgoing (with prices)"
+msgstr "In uscita (con prezzi)"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__packages
@@ -1007,7 +1000,7 @@ msgstr "Mescola Controllore del Prelievo"
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__picking_type
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_create_wizard__picking_type
 msgid "Picking type"
-msgstr "Tipo di consegna"
+msgstr "Tipologia prelievo"
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
@@ -1020,7 +1013,7 @@ msgstr "Tipi di consegna"
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_form_view
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_select_form_view
 msgid "Pickings"
-msgstr "Consegne"
+msgstr "Prelievi"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__pickings_picker
@@ -1122,7 +1115,7 @@ msgstr "Fattura di vendita con pagamento anticipato"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__product_description
 msgid "Sales Description"
-msgstr "Descrizione vendita"
+msgstr "Descrizione vendite"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model,name:l10n_it_delivery_note.model_sale_order
@@ -1155,6 +1148,7 @@ msgid "Section name (e.g. Products, Services)"
 msgstr "Nome sezione (es. Prodotti, Servizi)"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #: model:ir.actions.act_window,name:l10n_it_delivery_note.stock_delivery_note_select_action
 #, python-format
@@ -1263,16 +1257,16 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stato basato sulle attività\n"
-"In ritardo: data di scadenza già superata\n"
-"Oggi: attività in data odierna\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
+"Oggi: la data attività è oggi\n"
 "Pianificato: attività future."
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_create_form_view
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_select_form_view
 msgid "Summary"
-msgstr "Sommario"
+msgstr "Riepilogo"
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_form_view
@@ -1291,6 +1285,12 @@ msgid "Taxes"
 msgstr "Imposte"
 
 #. module: l10n_it_delivery_note
+#: model:ir.model.constraint,message:l10n_it_delivery_note.constraint_stock_delivery_note_name_uniq
+msgid "The Delivery note must have unique numbers."
+msgstr "Il DDT deve avere un numero univoco."
+
+#. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid ""
@@ -1299,6 +1299,7 @@ msgstr ""
 "I prelievi che hai selezionato non sembrano avere nessun luogo di partenza."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid ""
@@ -1308,6 +1309,7 @@ msgstr ""
 "destinazione."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid ""
@@ -1318,6 +1320,7 @@ msgstr ""
 "magazzino selezionato non ha un indirizzo valido."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "The pickings you've selected don't seem to have any type."
@@ -1393,7 +1396,7 @@ msgstr "Data di trasporto"
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_select_wizard__type_id
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__delivery_note_type_id
 msgid "Type"
-msgstr "Tipologia"
+msgstr "Tipo"
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
@@ -1409,7 +1412,7 @@ msgstr "Tipo di operazione"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Tipe di attività di eccezione registrata."
+msgstr "Tipo di attività eccezione sul record."
 
 #. module: l10n_it_delivery_note
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_search_view
@@ -1426,16 +1429,6 @@ msgstr "Ho capito, continua ugualmente"
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "Unit price"
 msgstr "Prezzo unitario"
-
-#. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_unread
-msgid "Unread Messages"
-msgstr "Messaggi non letti"
-
-#. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_unread_counter
-msgid "Unread Messages Counter"
-msgstr "Numero messaggi non letti"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_line__product_uom_id
@@ -1511,6 +1504,7 @@ msgid "Warehouse movement"
 msgstr "Movimento di magazzino"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #: code:addons/l10n_it_delivery_note/wizard/delivery_note_base.py:0
@@ -1537,6 +1531,7 @@ msgstr ""
 "trasporto diverse!"
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
 #, python-format
 msgid ""
@@ -1547,7 +1542,8 @@ msgstr ""
 "questo DdT."
 
 #. module: l10n_it_delivery_note
-#: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
+#. odoo-python
+#: code:addons/l10n_it_delivery_note/models/stock_delivery_note_line.py:0
 #, python-format
 msgid ""
 "You cannot change the type of a delivery note line. Instead you should "
@@ -1557,6 +1553,7 @@ msgstr ""
 "riga corrente e creare una riga nuova del tipo corretto."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #, python-format
@@ -1568,6 +1565,7 @@ msgstr ""
 "differente."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_delivery_note.py:0
 #, python-format
 msgid ""
@@ -1578,74 +1576,83 @@ msgstr ""
 "differente."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #, python-format
 msgid ""
 "You have just called this method on an heterogeneous set of pickings.\n"
 "All pickings should have the same 'location_dest_id' field value."
 msgstr ""
-"Hai appena chiamato questo metodo su un insieme eterogeneo di trasferimenti."
-"\n"
+"Hai appena chiamato questo metodo su un insieme eterogeneo di "
+"trasferimenti.\n"
 "Tutti i prelievi devono avere lo stesso valore del campo 'location_dest_id'."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #, python-format
 msgid ""
 "You have just called this method on an heterogeneous set of pickings.\n"
 "All pickings should have the same 'location_id' field value."
 msgstr ""
-"Hai appena chiamato questo metodo su un insieme eterogeneo di trasferimenti."
-"\n"
+"Hai appena chiamato questo metodo su un insieme eterogeneo di "
+"trasferimenti.\n"
 "Tutti i prelievi devono avere lo stesso valore del campo 'location_id'."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #, python-format
 msgid ""
 "You have just called this method on an heterogeneous set of pickings.\n"
 "All pickings should have the same 'partner_id' field value."
 msgstr ""
-"Hai appena chiamato questo metodo su un insieme eterogeneo di trasferimenti."
-"\n"
+"Hai appena chiamato questo metodo su un insieme eterogeneo di "
+"trasferimenti.\n"
 "Tutti i prelievi devono avere lo stesso valore del campo 'partner_id'."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/models/stock_picking.py:0
 #, python-format
 msgid ""
 "You have just called this method on an heterogeneous set of pickings.\n"
 "All pickings should have the same 'picking_type_code' field value."
 msgstr ""
-"Hai appena chiamato questo metodo su un insieme eterogeneo di trasferimenti."
-"\n"
+"Hai appena chiamato questo metodo su un insieme eterogeneo di "
+"trasferimenti.\n"
 "Tutti i prelievi devono avere lo stesso valore del campo 'picking_type_code'."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "You need to select pickings with all the same location of departure."
 msgstr "È necessario selezionare prelievi con lo stesso luogo di destinazione."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "You need to select pickings with all the same location of destination."
 msgstr "È necessario selezionare prelievi con lo stesso luogo di destinazione."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "You need to select pickings with all the same recipient."
 msgstr "È necessario selezionare prelievi con lo stesso destinatario."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid "You need to select pickings with all the same type."
 msgstr "È necessario selezionare prelievi con lo stesso tipo."
 
 #. module: l10n_it_delivery_note
+#. odoo-python
 #: code:addons/l10n_it_delivery_note/mixins/picking_checker.py:0
 #, python-format
 msgid ""
@@ -1673,6 +1680,21 @@ msgstr "di:"
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "qty"
 msgstr "q.tà"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Numero di messaggi che richiedono un'azione"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Seguito da (canali)"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Numero di messaggi non letti"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Messaggi non letti"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Numero messaggi non letti"
 
 #~ msgid "<span>Phone:</span>"
 #~ msgstr "<span>Telefono:</span>"

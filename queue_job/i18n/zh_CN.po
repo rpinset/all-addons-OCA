@@ -389,7 +389,6 @@ msgstr "确认后, 出现提示消息。"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_has_error
-#: model:ir.model.fields,help:queue_job.field_queue_job__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "如果勾选此项， 某些消息将会产生传递错误。"
 
@@ -616,8 +615,8 @@ msgstr "错误数量"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr "需要操作消息数量"
+msgid "Number of messages requiring action"
+msgstr ""
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_has_error_counter
@@ -768,11 +767,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_function__retry_pattern
 msgid "Retry Pattern (serialized)"
 msgstr ""
-
-#. module: queue_job
-#: model:ir.model.fields,field_description:queue_job.field_queue_job__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "短信传递错误"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_jobs_to_done
@@ -943,6 +937,12 @@ msgstr "重新排队向导所选的作业"
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__worker_pid
 msgid "Worker Pid"
 msgstr ""
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "短信传递错误"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "需要操作消息数量"
 
 #~ msgid ""
 #~ "<span class=\"oe_grey oe_inline\"> If the max. retries is 0, the number "

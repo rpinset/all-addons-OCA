@@ -25,8 +25,7 @@ class L10nEsAeatReportTaxMapping(models.AbstractModel):
         res = super().calculate()
         for report in self:
             report.tax_line_ids.unlink()
-            report.flush()
-            report.invalidate_cache()
+            report.env.invalidate_all()
             # Buscar configuración de mapeo de impuestos
             tax_code_map = (
                 self.env["l10n.es.aeat.map.tax"]
@@ -91,7 +90,11 @@ class L10nEsAeatReportTaxMapping(models.AbstractModel):
         ]
         if map_line.move_type == "regular":
             move_line_domain.append(
-                ("move_id.financial_type", "in", ("receivable", "payable", "liquidity"))
+                (
+                    "move_id.financial_type",
+                    "in",
+                    ("receivable", "payable", "liquidity", "other"),
+                )
             )
         elif map_line.move_type == "refund":
             move_line_domain.append(

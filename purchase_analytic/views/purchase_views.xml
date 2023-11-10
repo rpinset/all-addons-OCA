@@ -41,6 +41,14 @@
                     widget="analytic_distribution"
                     groups="analytic.group_analytic_accounting"
                 />
+                <field name="analytic_distribution" invisible="1" />
+            </field>
+            <field name="order_line" position="attributes">
+                <attribute name="context" operation="update">
+                    {
+                        "default_analytic_distribution": analytic_distribution,
+                    }
+                </attribute>
             </field>
         </field>
     </record>

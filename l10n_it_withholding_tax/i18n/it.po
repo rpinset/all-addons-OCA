@@ -7,29 +7,30 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-11 07:51+0000\n"
-"PO-Revision-Date: 2022-06-21 13:05+0000\n"
-"Last-Translator: Riccardo Bellanova <bellanova@webmonks.it>\n"
+"PO-Revision-Date: 2023-07-31 09:10+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (copia)"
 
 #. module: l10n_it_withholding_tax
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.print_withholding_tax
+#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.document_tax_totals_wt
 msgid "<span>Withholding Tax</span>"
 msgstr "<span>Ritenuta d'acconto</span>"
 
 #. module: l10n_it_withholding_tax
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.print_withholding_tax
+#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.document_tax_totals_wt
 msgid "<strong>Net To Pay</strong>"
 msgstr "<strong>Netto da pagare</strong>"
 
@@ -61,7 +62,7 @@ msgstr "Movimento contabile"
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__active
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move__amount
@@ -176,16 +177,10 @@ msgstr "Esportazione DatiCassa"
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__daticassprev_tax_id
 msgid "Daticassprev Tax"
-msgstr ""
+msgstr "Aliquota DatiCassaPrev"
 
 #. module: l10n_it_withholding_tax
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_fiscal_position__display_name
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_full_reconcile__display_name
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_invoice_withholding_tax__display_name
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move__display_name
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move_line__display_name
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_partial_reconcile__display_name
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_payment__display_name
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__display_name
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move__display_name
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_rate__display_name
@@ -210,16 +205,18 @@ msgid "Enpam Tax"
 msgstr "Contributo Enpam"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
 msgid "Error! Rates are required"
 msgstr "Errore! Le aliquote sono obbligatorie"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
 msgid "Error! You cannot have 2 rates that overlap!"
-msgstr "Errore, due aliquote non possono sovrapporsi."
+msgstr "Errore, due aliquote non possono sovrapporsi!"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model,name:l10n_it_withholding_tax.model_account_fiscal_position
@@ -238,13 +235,7 @@ msgid "Group By..."
 msgstr "Raggruppa per..."
 
 #. module: l10n_it_withholding_tax
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_fiscal_position__id
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_full_reconcile__id
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_invoice_withholding_tax__id
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move__id
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move_line__id
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_partial_reconcile__id
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_payment__id
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__id
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move__id
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_rate__id
@@ -255,13 +246,13 @@ msgstr "ID"
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields.selection,name:l10n_it_withholding_tax.selection__withholding_tax_statement__wt_type__in
 msgid "In"
-msgstr ""
+msgstr "Ritenuta attiva"
 
 #. module: l10n_it_withholding_tax
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_search
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_statement_search
 msgid "In type"
-msgstr ""
+msgstr "Tipo ritenuta attiva"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields.selection,name:l10n_it_withholding_tax.selection__withholding_tax__wt_types__inps
@@ -285,6 +276,13 @@ msgid "Invoice reconciliation"
 msgstr "Riconciliazione fattura"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
+#: code:addons/l10n_it_withholding_tax/models/account.py:0
+#, python-format
+msgid "Invoices must have the same currency"
+msgstr "La fattura deve avere la stessa valuta"
+
+#. module: l10n_it_withholding_tax
 #: model:ir.model,name:l10n_it_withholding_tax.model_account_move
 msgid "Journal Entry"
 msgstr "Registrazione contabile"
@@ -302,13 +300,7 @@ msgstr ""
 "fattura"
 
 #. module: l10n_it_withholding_tax
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_fiscal_position____last_update
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_full_reconcile____last_update
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_invoice_withholding_tax____last_update
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move____last_update
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move_line____last_update
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_partial_reconcile____last_update
-#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_payment____last_update
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax____last_update
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move____last_update
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_rate____last_update
@@ -335,18 +327,22 @@ msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
 msgid "MISC"
 msgstr "VARIE"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
-msgid "Move %s is reconciled (%s). You must unreconcile it first"
+msgid ""
+"Move {0.display_name} is reconciled ({0.full_reconcile_id.display_name}). "
+"You must unreconcile it first"
 msgstr ""
-"Il movimento %s è riconciliato (%s). Prima è necessario annullare la "
-"riconciliazione"
+"Il movimento {0.display_name} è riconciliato ({0.full_reconcile_id."
+"display_name}). Bisogna prima renderlo non riconciliato"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_statement__move_ids
@@ -378,13 +374,13 @@ msgstr "Altro"
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields.selection,name:l10n_it_withholding_tax.selection__withholding_tax_statement__wt_type__out
 msgid "Out"
-msgstr ""
+msgstr "Ritenuta passiva"
 
 #. module: l10n_it_withholding_tax
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_search
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_statement_search
 msgid "Out type"
-msgstr ""
+msgstr "Tipo ritenuta passiva"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields.selection,name:l10n_it_withholding_tax.selection__withholding_tax_move__state__paid
@@ -394,8 +390,8 @@ msgid "Paid"
 msgstr "Pagata"
 
 #. module: l10n_it_withholding_tax
-#. openerp-web
-#: code:addons/l10n_it_withholding_tax/static/src/xml/account_payment.xml:0
+#. odoo-javascript
+#: code:addons/l10n_it_withholding_tax/static/src/components/account_payment_field/account_payment.xml:0
 #, python-format
 msgid "Paid on"
 msgstr "Pagata il"
@@ -467,6 +463,8 @@ msgid ""
 "Setting this, while exporting e-invoice XML, data will be also added to "
 "DatiCassaPrevidenziale"
 msgstr ""
+"Impostando questo, nell'esportazione dell'XML della fattura elettronica i "
+"dati verranno aggiunti anche a DatiCassaPrevidenziale"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_bank_statement_line__withholding_tax_in_print
@@ -538,7 +536,7 @@ msgstr "Totale imponibile"
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move__wt_type
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_statement__wt_type
 msgid "Type"
-msgstr "Tipologia"
+msgstr "Tipo"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,help:l10n_it_withholding_tax.field_withholding_tax_move__move_line_id
@@ -551,23 +549,11 @@ msgid "W.T."
 msgstr "RdA"
 
 #. module: l10n_it_withholding_tax
-#. openerp-web
-#: code:addons/l10n_it_withholding_tax/static/src/xml/account_payment.xml:0
+#. odoo-javascript
+#: code:addons/l10n_it_withholding_tax/static/src/components/account_payment_field/account_payment.xml:0
 #, python-format
 msgid "W.T. Reg. on"
 msgstr "RdA registrata il"
-
-#. module: l10n_it_withholding_tax
-#: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
-#, python-format
-msgid "WT %s - %s"
-msgstr "RdA %s - %s"
-
-#. module: l10n_it_withholding_tax
-#: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
-#, python-format
-msgid "WT %s - %s - %s"
-msgstr "RdA %s - %s - %s"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax_move__wt_account_move_id
@@ -605,6 +591,21 @@ msgid "WT reconciliation"
 msgstr "Riconciliazione RdA"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
+#: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
+#, python-format
+msgid "WT {0} - {1}"
+msgstr "RA {0} - {1}"
+
+#. module: l10n_it_withholding_tax
+#. odoo-python
+#: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
+#, python-format
+msgid "WT {0} - {1} - {2}"
+msgstr "RA {0} - {1} - {2}"
+
+#. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/account.py:0
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
@@ -616,10 +617,20 @@ msgstr ""
 "pagare»"
 
 #. module: l10n_it_withholding_tax
+#. odoo-python
 #: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
 #, python-format
 msgid "Warning! Wt account move already exists: %s"
 msgstr "Attenzione, movimento contabile RdA già esistente: %s"
+
+#. module: l10n_it_withholding_tax
+#. odoo-python
+#: code:addons/l10n_it_withholding_tax/models/withholding_tax.py:0
+#, python-format
+msgid "Warning! You can not delete withholding tax move in state: {}"
+msgstr ""
+"Attenzione! Non si può cancellare il movimento della ritenuta d'acconto in "
+"stato: {}"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.actions.act_window,name:l10n_it_withholding_tax.action_withholding_tax
@@ -638,7 +649,6 @@ msgstr "Attenzione, movimento contabile RdA già esistente: %s"
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_fiscal_position_form
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_form
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_statement_search
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_tax_tree
 msgid "Withholding Tax"
 msgstr "Ritenuta d'acconto"
 
@@ -664,7 +674,6 @@ msgstr "Righe ritenuta d'acconto"
 #: model:ir.model,name:l10n_it_withholding_tax.model_withholding_tax_move
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_form
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_search
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_tree
 msgid "Withholding Tax Move"
 msgstr "Movimento ritenuta di acconto"
 
@@ -687,14 +696,8 @@ msgstr "Ritenuta d'acconto generata da"
 
 #. module: l10n_it_withholding_tax
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_statement_form
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_statement_tree
 msgid "Withholding Tax statement"
 msgstr "Dichiarazione ritenuta d'acconto"
-
-#. module: l10n_it_withholding_tax
-#: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_invoice_form
-msgid "Withholding Taxes"
-msgstr "Ritenute d'acconto"
 
 #. module: l10n_it_withholding_tax
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_invoice_withholding_tax__withholding_tax_id
@@ -719,6 +722,23 @@ msgstr "Registro ritenuta d'acconto"
 #: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_withholding_tax__wt_types
 msgid "Withholding tax type"
 msgstr "Tipologia ritenuta d'acconto"
+
+#, python-format
+#~ msgid "Move %s is reconciled (%s). You must unreconcile it first"
+#~ msgstr ""
+#~ "Il movimento %s è riconciliato (%s). Prima è necessario annullare la "
+#~ "riconciliazione"
+
+#, python-format
+#~ msgid "WT %s - %s"
+#~ msgstr "RdA %s - %s"
+
+#, python-format
+#~ msgid "WT %s - %s - %s"
+#~ msgstr "RdA %s - %s - %s"
+
+#~ msgid "Withholding Taxes"
+#~ msgstr "Ritenute d'acconto"
 
 #~ msgid " (Residual Net to pay: %s)"
 #~ msgstr " (Netto a pagare residuo: %s)"

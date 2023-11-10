@@ -10,7 +10,7 @@
     "maintainers": ["renatonlima", "rvalyi"],
     "website": "https://github.com/OCA/l10n-brazil",
     "depends": ["base", "base_setup", "base_address_extended"],
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.2.0",
     "data": [
         "security/ir.model.access.csv",
         "data/res.city.csv",
@@ -28,7 +28,7 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "l10n_br_base/static/src/less/form_view.less",
+            "l10n_br_base/static/src/scss/form.scss",
         ],
     },
     "demo": [

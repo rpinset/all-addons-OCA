@@ -75,9 +75,7 @@ class AbstractReportXslx(models.AbstractModel):
                 {"bold": True, "border": True, "bg_color": "#FFFFCC"}
             ),
             "format_amount": workbook.add_format(),
-            "format_amount_bold": workbook.add_format({"bold": True}).set_num_format(
-                "#,##0." + "0" * currency_id.decimal_places
-            ),
+            "format_amount_bold": workbook.add_format({"bold": True}),
             "format_percent_bold_italic": workbook.add_format(
                 {"bold": True, "italic": True}
             ),
@@ -89,6 +87,9 @@ class AbstractReportXslx(models.AbstractModel):
             "#,##0." + "0" * currency_id.decimal_places
         )
         report_data["formats"]["format_percent_bold_italic"].set_num_format("#,##0.00%")
+        report_data["formats"]["format_amount_bold"].set_num_format(
+            "#,##0." + "0" * currency_id.decimal_places
+        )
 
     def _set_column_width(self, report_data):
         """Set width for all defined columns.
@@ -531,7 +532,10 @@ class AbstractReportXslx(models.AbstractModel):
             format_amt = report_data["formats"]["format_amount"]
             field_prefix = "format_amount"
         if "currency_id" in line_object and line_object.get("currency_id", False):
-            currency = line_object["currency_id"]
+            if isinstance(line_object["currency_id"], int):
+                currency = self.env["res.currency"].browse(line_object["currency_id"])
+            else:
+                currency = line_object["currency_id"]
             field_name = "{}_{}".format(field_prefix, currency.name)
             if hasattr(self, field_name):
                 format_amt = getattr(self, field_name)
