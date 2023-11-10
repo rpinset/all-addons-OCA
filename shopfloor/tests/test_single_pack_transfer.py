@@ -77,10 +77,13 @@ class TestSinglePackTransfer(SinglePackTransferCommonBase):
         return {
             "id": package_level.id,
             "name": package_level.package_id.name,
+            "weight_uom": package_level.package_id.weight_uom_id.name,
+            "weight": package_level.package_id.pack_weight,
+            "estimated_weight_kg": package_level.package_id.estimated_pack_weight_kg,
             "location_src": self.data.location(package_level.location_id),
             "location_dest": self.data.location(package_level.location_dest_id),
             "picking": self.data.picking(self.picking),
-            "product": self.data.product(self.product_a),
+            "products": self.data.products(self.product_a),
         }
 
     def test_start(self):
@@ -187,12 +190,15 @@ class TestSinglePackTransfer(SinglePackTransferCommonBase):
         expected_data = {
             "id": package_level.id,
             "name": package_level.package_id.name,
+            "weight_uom": package_level.package_id.weight_uom_id.name,
+            "weight": package_level.package_id.pack_weight,
+            "estimated_weight_kg": package_level.package_id.estimated_pack_weight_kg,
             "location_src": self.data.location(self.shelf1),
             "location_dest": self.data.location(
                 self.picking_type.default_location_dest_id
             ),
             "picking": self.data.picking(package_level.picking_id),
-            "product": self.data.product(self.product_a),
+            "products": self.data.products(self.product_a),
             "confirmation_required": False,
         }
 

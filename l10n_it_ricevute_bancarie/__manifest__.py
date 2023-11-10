@@ -9,7 +9,7 @@
 
 {
     "name": "ITA - Ricevute bancarie",
-    "version": "14.0.1.2.3",
+    "version": "14.0.1.5.0",
     "development_status": "Beta",
     "author": "Odoo Community Association (OCA)",
     "category": "Localization/Italy",
@@ -18,6 +18,7 @@
     "license": "AGPL-3",
     "depends": [
         "account",
+        "account_due_list",
         "l10n_it_fatturapa_out",
         "l10n_it_fiscalcode",
         "base_iban",
@@ -39,6 +40,7 @@
         "views/account_config_view.xml",
         "views/distinta_report.xml",
         "views/riba_detail_view.xml",
+        "views/wizard_presentation.xml",
     ],
     "demo": ["demo/riba_demo.xml"],
     "installable": True,

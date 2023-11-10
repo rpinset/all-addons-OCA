@@ -21,7 +21,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"                You cannot have two open Stock Return Requests with the same\n"
+"                You cannot have two open Stock Return Requests with the "
+"same\n"
 "                product (%s), locations (%s, %s) partner (%s) and lot.\n"
 "\n"
 "                Please first validate the first return request with this\n"
@@ -215,7 +216,6 @@ msgstr ""
 
 #. module: stock_return_request
 #: model:ir.model.fields,help:stock_return_request.field_stock_return_request__message_has_error
-#: model:ir.model.fields,help:stock_return_request.field_stock_return_request__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -297,8 +297,6 @@ msgstr ""
 
 #. module: stock_return_request
 #: code:addons/stock_return_request/models/stock_return_request.py:0
-#: code:addons/stock_return_request/models/stock_return_request.py:0
-#: code:addons/stock_return_request/models/stock_return_request.py:0
 #, python-format
 msgid "New"
 msgstr ""
@@ -328,7 +326,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Not enough moves to return this product.\n"
-"It wasn't possible to find enough moves to return %f %sof %s. A maximum of %f can be returned."
+"It wasn't possible to find enough moves to return %f %sof %s. A maximum of "
+"%f can be returned."
 msgstr ""
 
 #. module: stock_return_request
@@ -519,11 +518,6 @@ msgid "Returns"
 msgstr ""
 
 #. module: stock_return_request
-#: model:ir.model.fields,field_description:stock_return_request.field_stock_return_request__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: stock_return_request
 #: model:ir.model.fields,field_description:stock_return_request.field_stock_return_request__from_date
 msgid "Search moves up to this date"
 msgstr ""
@@ -571,11 +565,6 @@ msgstr ""
 #. module: stock_return_request
 #: model:ir.actions.report,name:stock_return_request.action_report_stock_return_request
 msgid "Stock Return Request Report"
-msgstr ""
-
-#. module: stock_return_request
-#: model_terms:ir.ui.view,arch_db:stock_return_request.view_stock_return_request_tree
-msgid "Stock Return Requests"
 msgstr ""
 
 #. module: stock_return_request

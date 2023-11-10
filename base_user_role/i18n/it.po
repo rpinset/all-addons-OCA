@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-17 02:07+0000\n"
-"PO-Revision-Date: 2023-03-30 14:25+0000\n"
+"PO-Revision-Date: 2023-10-12 09:41+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -20,12 +20,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_groups__role_count
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__role_count
 msgid "# Roles"
+msgstr ""
+
+#. module: base_user_role
+#: code:addons/base_user_role/models/role.py:0
+#, python-format
+msgid "%s (copy)"
 msgstr ""
 
 #. module: base_user_role
@@ -117,7 +123,7 @@ msgstr "Da"
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__full_name
 msgid "Group Name"
-msgstr "Nome del gruppo"
+msgstr "Nome gruppo"
 
 #. module: base_user_role
 #: model:ir.model.fields,help:base_user_role.field_res_users_role__share
@@ -169,7 +175,7 @@ msgstr "Ultima modifica il"
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__write_uid
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__write_uid
 msgid "Last Updated by"
-msgstr "Ultimo aggiornamento da"
+msgstr "Ultimo aggiornamento di"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__write_date
@@ -216,7 +222,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__role_id
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__role_id
 msgid "Role"
-msgstr "Ruolo"
+msgstr "Compito"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users__role_line_ids

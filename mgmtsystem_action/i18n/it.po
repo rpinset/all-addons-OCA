@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-17 02:42+0000\n"
-"PO-Revision-Date: 2023-04-04 15:24+0000\n"
+"PO-Revision-Date: 2023-06-16 17:08+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mgmtsystem_action
 #: model:mail.template,body_html:mgmtsystem_action.action_email_template_reminder_action
@@ -153,7 +153,6 @@ msgstr "${object.name}"
 #: model:ir.model,name:mgmtsystem_action.model_mgmtsystem_action
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_filter
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_form
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_tree
 msgid "Action"
 msgstr "Azione"
 
@@ -225,12 +224,12 @@ msgstr "Età"
 #. module: mgmtsystem_action
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_filter
 msgid "Archived"
-msgstr "Archiviata"
+msgstr "In archivio"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__message_attachment_count
 msgid "Attachment Count"
-msgstr "Conteggio allegati"
+msgstr "Numero allegati"
 
 #. module: mgmtsystem_action
 #: model:mgmtsystem.action.stage,name:mgmtsystem_action.stage_cancel
@@ -354,7 +353,7 @@ msgstr "Informazione aggiuntiva"
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action_stage__fold
 msgid "Folded in Kanban"
-msgstr "Chiuso nel kanban"
+msgstr "Minimizzato nel Kanban"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__message_follower_ids
@@ -426,7 +425,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,help:mgmtsystem_action.field_mgmtsystem_action__message_has_error
-#: model:ir.model.fields,help:mgmtsystem_action.field_mgmtsystem_action__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -477,7 +475,7 @@ msgstr "Ultimo aggiornamento il"
 #. module: mgmtsystem_action
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_filter
 msgid "Late Activities"
-msgstr "Ultime attività"
+msgstr "Attività in ritardo"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields.selection,name:mgmtsystem_action.selection__mgmtsystem_action__priority__0
@@ -502,7 +500,7 @@ msgstr "Analisi del sistema di gestione"
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__message_ids
@@ -543,17 +541,17 @@ msgstr "Nuova"
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__activity_summary
 msgid "Next Activity Summary"
-msgstr "Riepilogo attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields.selection,name:mgmtsystem_action.selection__mgmtsystem_action__priority__1
@@ -578,7 +576,7 @@ msgstr "Numero di messaggi che richiedono un'azione"
 #. module: mgmtsystem_action
 #: model:ir.model.fields,help:mgmtsystem_action.field_mgmtsystem_action__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con un errore di consegna"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,help:mgmtsystem_action.field_mgmtsystem_action__message_unread_counter
@@ -634,11 +632,6 @@ msgid "Responsible User"
 msgstr "Utente responsabile"
 
 #. module: mgmtsystem_action
-#: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__sequence
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action_stage__sequence
 msgid "Sequence"
@@ -664,7 +657,6 @@ msgstr "Nome fase"
 #. module: mgmtsystem_action
 #: model:ir.actions.act_window,name:mgmtsystem_action.mgmtsystem_action_stage_action
 #: model:ir.ui.menu,name:mgmtsystem_action.menu_mgmtsystem_action_stages
-#: model_terms:ir.ui.view,arch_db:mgmtsystem_action.mgmtsystem_action_stage_tree_view
 msgid "Stages"
 msgstr "Fasi"
 
@@ -681,10 +673,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,field_description:mgmtsystem_action.field_mgmtsystem_action__name
@@ -700,7 +692,7 @@ msgstr "Sistema"
 #. module: mgmtsystem_action
 #: model:ir.model.constraint,message:mgmtsystem_action.constraint_mgmtsystem_action_tag_name_uniq
 msgid "Tag name already exists !"
-msgstr "Il nome etichetta esiste già !"
+msgstr "Il nome etichetta esiste già!"
 
 #. module: mgmtsystem_action
 #: model:ir.actions.act_window,name:mgmtsystem_action.mgmtsystem_action_tag_action
@@ -714,7 +706,7 @@ msgstr "Etichette"
 #. module: mgmtsystem_action
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_stage_form
 msgid "Task Stage"
-msgstr "Fase attività"
+msgstr "Fase lavoro"
 
 #. module: mgmtsystem_action
 #: model:ir.model.fields,help:mgmtsystem_action.field_mgmtsystem_action_stage__fold
@@ -778,3 +770,6 @@ msgstr "Storico comunicazioni sito web"
 #: model_terms:ir.ui.view,arch_db:mgmtsystem_action.view_mgmtsystem_action_kanban
 msgid "oe_kanban_text_red"
 msgstr "oe_kanban_text_red"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"

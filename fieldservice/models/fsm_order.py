@@ -74,6 +74,10 @@ class FSMOrder(models.Model):
         group_expand="_read_group_stage_ids",
         default=lambda self: self._default_stage_id(),
     )
+    is_closed = fields.Boolean(
+        "Is closed",
+        related="stage_id.is_closed",
+    )
     priority = fields.Selection(
         fsm_stage.AVAILABLE_PRIORITIES,
         string="Priority",
@@ -132,13 +136,21 @@ class FSMOrder(models.Model):
             early = datetime.now()
 
         if vals.get("priority") == "0":
-            vals["request_late"] = early + timedelta(days=3)
+            vals["request_late"] = early + timedelta(
+                hours=self.env.company.fsm_order_request_late_lowest
+            )
         elif vals.get("priority") == "1":
-            vals["request_late"] = early + timedelta(days=2)
+            vals["request_late"] = early + timedelta(
+                hours=self.env.company.fsm_order_request_late_low
+            )
         elif vals.get("priority") == "2":
-            vals["request_late"] = early + timedelta(days=1)
+            vals["request_late"] = early + timedelta(
+                hours=self.env.company.fsm_order_request_late_medium
+            )
         elif vals.get("priority") == "3":
-            vals["request_late"] = early + timedelta(hours=8)
+            vals["request_late"] = early + timedelta(
+                hours=self.env.company.fsm_order_request_late_high
+            )
         return vals
 
     request_late = fields.Datetime(string="Latest Request Date")
@@ -275,7 +287,6 @@ class FSMOrder(models.Model):
             or vals.get("scheduled_date_start")
             or vals.get("scheduled_date_end")
         ):
-
             if vals.get("scheduled_date_start") and vals.get("scheduled_date_end"):
                 new_date_start = fields.Datetime.from_string(
                     vals.get("scheduled_date_start", False)

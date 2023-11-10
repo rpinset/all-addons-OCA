@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-12 09:44+0000\n"
+"PO-Revision-Date: 2023-10-10 16:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,23 +14,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: hr_timesheet_purchase_order
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_purchase_order.res_config_settings_view_form
 msgid ""
 "<span class=\"fa fa-lg fa-building\" title=\"Values set here are company-"
-"specific.\" aria-label=\"Values set here are company-specific.\" "
-"groups=\"base.group_multi_company\" role=\"img\"/>"
+"specific.\" aria-label=\"Values set here are company-specific.\" groups="
+"\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
 "<span class=\"fa fa-lg fa-building\" title=\"I valori impostati qui sono "
-"specifici per azienda.\" aria-label=\"Values set here are company-specific.\""
-" groups=\"base.group_multi_company\" role=\"img\"/>"
+"specifici per azienda.\" aria-label=\"I valori impostati qui sono specifici "
+"per azienda.\" groups=\"base.group_multi_company\" role=\"img\"/>"
 
 #. module: hr_timesheet_purchase_order
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_purchase_order.purchase_order_form
 msgid "<span class=\"o_stat_text\">Timesheet Sheets</span>"
-msgstr "<span class=\"o_stat_text\">Schede foglio ore</span>"
+msgstr "<span class=\"o_stat_text\">Prospetti foglio ore</span>"
 
 #. module: hr_timesheet_purchase_order
 #: model:ir.model,name:hr_timesheet_purchase_order.model_hr_employee_base
@@ -128,8 +128,8 @@ msgstr "Non è specificato un contatto di fatturazione per il dipendente {}."
 #: code:addons/hr_timesheet_purchase_order/models/hr_timesheet_sheet.py:0
 #, python-format
 msgid ""
-"One of the Timesheet Sheets selected for employee {} is already related to a"
-" PO."
+"One of the Timesheet Sheets selected for employee {} is already related to a "
+"PO."
 msgstr ""
 "Uno dei prospetti fogli ore selezionati per il dipendente {} è già "
 "relazionato ad un PO."

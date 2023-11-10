@@ -15,7 +15,6 @@ from odoo.tools.safe_eval import safe_eval, time
 
 
 class CNABField(models.Model):
-
     _name = "l10n_br_cnab.line.field"
     _description = "Fields in CNAB lines."
     _order = "cnab_line_id, start_pos"
@@ -249,10 +248,10 @@ class CNABField(models.Model):
             f.size = f.end_pos - f.start_pos + 1
 
     def unlink(self):
-        lines = self.filtered(lambda l: l.state != "draft")
+        lines = self.filtered(lambda line: line.state != "draft")
         if lines:
             raise UserError(_("You cannot delete an CNAB Field which is not draft !"))
-        return super(CNABField, self).unlink()
+        return super().unlink()
 
     def action_review(self):
         self.write({"state": "review"})

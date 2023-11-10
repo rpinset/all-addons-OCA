@@ -1,22 +1,16 @@
 # Copyright 2020 KMEE
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-import logging
+
+from erpbrasil.base.fiscal import cnpj_cpf
 
 from odoo import http
 from odoo.http import request
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
-_logger = logging.getLogger(__name__)
-try:
-    from erpbrasil.base.fiscal import cnpj_cpf
-except ImportError:
-    _logger.error("Biblioteca erpbrasil.base não instalada")
-
 
 class L10nBrWebsiteSale(WebsiteSale):
-
     # overwrite confirm_order
     @http.route(
         ["/shop/confirm_order"], type="http", auth="public", website=True, sitemap=False
@@ -32,7 +26,7 @@ class L10nBrWebsiteSale(WebsiteSale):
             line._onchange_fiscal_operation_line_id()
             line._onchange_fiscal_taxes()
 
-        return super(L10nBrWebsiteSale, self).confirm_order(**post)
+        return super().confirm_order(**post)
 
     def _get_mandatory_fields_billing(self, country_id=False):
         req = super()._get_mandatory_fields_billing(country_id)
@@ -89,7 +83,7 @@ class L10nBrWebsiteSale(WebsiteSale):
             city_id = request.env["res.city"].sudo().browse(int(kw.get("city_id")))
             if city_id:
                 kw["city"] = city_id.name
-        res = super(L10nBrWebsiteSale, self).address(**kw)
+        res = super().address(**kw)
         if "submitted" not in kw:
             country_id = request.env["res.country"].search([("code", "=", "BR")])
             res.qcontext["country"] = country_id
@@ -100,7 +94,7 @@ class L10nBrWebsiteSale(WebsiteSale):
             and res.qcontext["checkout"]["city_id"]
         ):
             state_id = res.qcontext["checkout"]["state_id"]
-            if type(state_id) != str:
+            if type(state_id) is not str:
                 state_id = state_id.id
             elif state_id:
                 state_id = int(state_id)
@@ -111,9 +105,9 @@ class L10nBrWebsiteSale(WebsiteSale):
         return res
 
     def values_postprocess(self, order, mode, values, errors, error_msg):
-        new_values, errors, error_msg = super(
-            L10nBrWebsiteSale, self
-        ).values_postprocess(order, mode, values, errors, error_msg)
+        new_values, errors, error_msg = super().values_postprocess(
+            order, mode, values, errors, error_msg
+        )
         if "country_id" in new_values and new_values["country_id"] != "31":
             if "state_id" in errors:
                 errors.pop("state_id", None)
@@ -137,7 +131,7 @@ class L10nBrWebsiteSale(WebsiteSale):
         return new_values, errors, error_msg
 
     def checkout_form_validate(self, mode, all_form_values, data):
-        error, error_message = super(L10nBrWebsiteSale, self).checkout_form_validate(
+        error, error_message = super().checkout_form_validate(
             mode, all_form_values, data
         )
 

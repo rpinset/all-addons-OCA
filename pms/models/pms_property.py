@@ -35,7 +35,14 @@ class PmsProperty(models.Model):
         help="Current property",
         comodel_name="res.partner",
         required=True,
-        ondelete="cascade",
+        index=True,
+        ondelete="restrict",
+    )
+    parent_id = fields.Many2one(
+        comodel_name="pms.property", string="Parent Property", index=True
+    )
+    child_ids = fields.One2many(
+        comodel_name="pms.property", inverse_name="parent_id", string="Child Properties"
     )
     pms_property_code = fields.Char(
         string="Property Code",
@@ -45,6 +52,7 @@ class PmsProperty(models.Model):
         string="Company",
         help="The company that owns or operates this property.",
         comodel_name="res.company",
+        index=True,
         required=True,
     )
     user_ids = fields.Many2many(
@@ -66,6 +74,7 @@ class PmsProperty(models.Model):
         help="The default pricelist used in this property.",
         comodel_name="product.pricelist",
         required=True,
+        index=True,
         domain="[('is_pms_available', '=', True)]",
         default=lambda self: self.env.ref("product.list0").id,
     )
@@ -80,6 +89,7 @@ class PmsProperty(models.Model):
         help="The sequence that formed the name of the folio.",
         check_company=True,
         copy=False,
+        index=True,
         comodel_name="ir.sequence",
     )
     checkin_sequence_id = fields.Many2one(
@@ -87,6 +97,7 @@ class PmsProperty(models.Model):
         help="Field used to create the name of the checkin partner",
         check_company=True,
         copy=False,
+        index=True,
         comodel_name="ir.sequence",
     )
 

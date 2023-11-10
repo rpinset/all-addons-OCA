@@ -5,7 +5,7 @@
 {
     "name": "base_generate_code",
     "summary": "Code Generator",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.1.1",
     "category": "Tools",
     "website": "https://github.com/OCA/server-tools",
     "author": "Akretion, Odoo Community Association (OCA)",
@@ -13,7 +13,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["sale"],
+    "depends": ["sale", "mail"],
     "data": [
         "security/ir.model.access.csv",
     ],

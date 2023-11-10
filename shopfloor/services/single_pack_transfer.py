@@ -23,16 +23,19 @@ class SinglePackTransfer(Component):
     _description = __doc__
 
     def _data_after_package_scanned(self, package_level):
-        move_line = package_level.move_line_ids[0]
+        move_lines = package_level.move_line_ids
         package = package_level.package_id
         # TODO use data.package_level (but the "name" moves in "package.name")
         return {
             "id": package_level.id,
             "name": package.name,
-            "location_src": self.data.location(move_line.location_id),
+            "weight_uom": package.weight_uom_id.name,
+            "weight": package.pack_weight,
+            "estimated_weight_kg": package.estimated_pack_weight_kg,
+            "location_src": self.data.location(package.location_id),
             "location_dest": self.data.location(package_level.location_dest_id),
-            "product": self.data.product(move_line.product_id),
-            "picking": self.data.picking(move_line.picking_id),
+            "products": self.data.products(move_lines.product_id),
+            "picking": self.data.picking(move_lines.picking_id),
         }
 
     def _response_for_start(self, message=None, popup=None):
@@ -347,9 +350,19 @@ class SinglePackTransferValidatorResponse(Component):
         return {
             "id": {"required": required, "type": "integer"},
             "name": {"type": "string", "nullable": False, "required": required},
+            "weight_uom": {"type": "string", "nullable": False, "required": required},
+            "weight": {"type": "float", "nullable": False, "required": required},
+            "estimated_weight_kg": {
+                "type": "float",
+                "nullable": False,
+                "required": required,
+            },
             "location_src": {"type": "dict", "schema": self.schemas.location()},
             "location_dest": {"type": "dict", "schema": self.schemas.location()},
-            "product": {"type": "dict", "schema": self.schemas.product()},
+            "products": {
+                "type": "list",
+                "schema": {"type": "dict", "schema": self.schemas.product()},
+            },
             "picking": {"type": "dict", "schema": self.schemas.picking()},
         }
 

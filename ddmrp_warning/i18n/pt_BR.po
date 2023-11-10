@@ -37,6 +37,11 @@ msgid "Buffer Applicable Domain"
 msgstr ""
 
 #. module: ddmrp_warning
+#: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_item__company_id
+msgid "Company"
+msgstr ""
+
+#. module: ddmrp_warning
 #: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_definition__create_uid
 #: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_item__create_uid
 msgid "Created by"
@@ -83,6 +88,11 @@ msgstr ""
 #. module: ddmrp_warning
 #: model:ir.model.fields,field_description:ddmrp_warning.field_stock_buffer__ddmrp_warning_item_ids
 msgid "Ddmrp Warning Item"
+msgstr ""
+
+#. module: ddmrp_warning
+#: model_terms:ir.ui.view,arch_db:ddmrp_warning.view_ddmrp_warning_item_search
+msgid "Definition"
 msgstr ""
 
 #. module: ddmrp_warning
@@ -148,6 +158,11 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: ddmrp_warning
+#: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_item__location_id
+msgid "Location"
+msgstr ""
+
+#. module: ddmrp_warning
 #: model:ir.model.fields.selection,name:ddmrp_warning.selection__ddmrp_warning_definition__severity__1_low
 msgid "Low"
 msgstr ""
@@ -160,6 +175,11 @@ msgstr ""
 #. module: ddmrp_warning
 #: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_item__name
 msgid "Name"
+msgstr ""
+
+#. module: ddmrp_warning
+#: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_item__product_id
+msgid "Product"
 msgstr ""
 
 #. module: ddmrp_warning
@@ -207,6 +227,6 @@ msgstr ""
 #. module: ddmrp_warning
 #: model:ir.model.fields,help:ddmrp_warning.field_ddmrp_warning_definition__python_code
 msgid ""
-"Write Python code that defines when this warning should raise. The result of"
-" executing the expression must be a boolean."
+"Write Python code that defines when this warning should raise. The result of "
+"executing the expression must be a boolean."
 msgstr ""

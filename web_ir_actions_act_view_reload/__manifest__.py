@@ -7,11 +7,14 @@
     "name": "Web Actions View Reload",
     "summary": "Enables reload of the current view via ActionManager",
     "category": "Web",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "license": "LGPL-3",
     "author": "Modoolar, CorporateHub, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/web",
     "depends": ["web"],
-    "data": ["views/web_ir_actions_act_view_reload.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/web_ir_actions_act_view_reload.xml",
+    ],
     "installable": True,
 }

@@ -42,6 +42,8 @@ class ContractLine(models.Model):
         string="Comments",
     )
 
+    line_recurrence = fields.Boolean(related="contract_id.line_recurrence")
+
     def _prepare_invoice_line(self, move_form):
         self.ensure_one()
 
@@ -61,14 +63,10 @@ class ContractLine(models.Model):
         self._onchange_fiscal_tax_ids()
         quantity = invoice_line_vals.get("quantity")
 
-        tax_ids = self.fiscal_tax_ids.account_taxes(user_type=contract.contract_type)
-        if (
-            contract.fiscal_operation_id
-            and contract.fiscal_operation_id.deductible_taxes
-        ):
-            tax_ids |= self.fiscal_tax_ids.account_taxes(
-                user_type=contract.contract_type, deductible=True
-            )
+        tax_ids = self.fiscal_tax_ids.account_taxes(
+            user_type=contract.contract_type,
+            fiscal_operation=contract.fiscal_operation_id,
+        )
 
         if invoice_line_vals:
             invoice_line_vals.update(self._prepare_br_fiscal_dict())

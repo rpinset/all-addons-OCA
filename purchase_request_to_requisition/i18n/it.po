@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 01:39+0000\n"
-"PO-Revision-Date: 2023-03-23 13:24+0000\n"
+"PO-Revision-Date: 2023-06-10 12:10+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: purchase_request_to_requisition
 #: code:addons/purchase_request_to_requisition/models/purchase_requisition.py:0
@@ -90,11 +90,6 @@ msgstr "Creato il"
 #: model:ir.model.fields,field_description:purchase_request_to_requisition.field_purchase_request_line_make_purchase_requisition_item__name
 msgid "Description"
 msgstr "Descrizione"
-
-#. module: purchase_request_to_requisition
-#: model_terms:ir.ui.view,arch_db:purchase_request_to_requisition.view_purchase_request_line_make_purchase_requisition
-msgid "Details"
-msgstr "Dettagli"
 
 #. module: purchase_request_to_requisition
 #: model:ir.model.fields,field_description:purchase_request_to_requisition.field_product_template__display_name
@@ -321,7 +316,7 @@ msgstr "UdM"
 #. module: purchase_request_to_requisition
 #: model:ir.model.fields,field_description:purchase_request_to_requisition.field_purchase_request_line_make_purchase_requisition_item__wiz_id
 msgid "Wizard"
-msgstr "Wizard"
+msgstr "Procedura guidata"
 
 #. module: purchase_request_to_requisition
 #: code:addons/purchase_request_to_requisition/models/purchase_request.py:0
@@ -340,3 +335,6 @@ msgstr ""
 #, python-format
 msgid "You have to select lines from the same picking type."
 msgstr ""
+
+#~ msgid "Details"
+#~ msgstr "Dettagli"

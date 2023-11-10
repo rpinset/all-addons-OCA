@@ -40,14 +40,8 @@ class AccountMove(models.Model):
         result["vat_prorate"] = tax_line.vat_prorate
         return result
 
-    @api.onchange(
-        "line_ids",
-        "invoice_payment_term_id",
-        "invoice_date_due",
-        "invoice_cash_rounding_id",
-        "invoice_vendor_bill_id",
-    )
-    def _onchange_recompute_dynamic_lines(self):
+    @api.onchange("invoice_line_ids")
+    def _onchange_invoice_line_ids(self):
         """If we change any analytic information, we should drop all the taxes lines
         for forcing a recreation of them, as only on creation, the analytic information
         is transferred.
@@ -67,7 +61,22 @@ class AccountMove(models.Model):
             self.line_ids -= self.line_ids.filtered(
                 lambda x: x.tax_repartition_line_id in tax_repartition_lines
             )
-        return super()._onchange_recompute_dynamic_lines()
+        return super()._onchange_invoice_line_ids()
+
+    def _reverse_move_vals(self, default_values, cancel=True):
+        """Reassign again the proper field name on prorate lines after avoiding the
+        account reassignation in super (in combination with `copy_data` method in
+        account.move.line).
+        """
+        self = self.with_context(prorrate_refund=True)
+        vals = super()._reverse_move_vals(default_values, cancel=cancel)
+        for command in vals["line_ids"]:
+            line_vals = command[2]
+            if line_vals.get("prorate_tax_repartition_line_id"):
+                line_vals["tax_repartition_line_id"] = line_vals.pop(
+                    "prorate_tax_repartition_line_id"
+                )
+        return vals
 
 
 class AccountMoveLine(models.Model):
@@ -79,3 +88,16 @@ class AccountMoveLine(models.Model):
         super()._process_aeat_tax_fee_info(res, tax, sign)
         if self.vat_prorate:
             res[tax]["deductible_amount"] -= self.balance * sign
+
+    def copy_data(self, default=None):
+        """Move `tax_repartition_line_id` value to other field name for avoiding the
+        `account_id` reassignation due to the code inside `_reverse_move_vals`, which
+        calls this one. We will put it again after, overwriting the other method.
+        """
+        res = super().copy_data(default=default)
+        if self.env.context.get("prorrate_refund"):
+            for vals in res:
+                if vals.get("vat_prorate") and vals.get("tax_repartition_line_id"):
+                    repartition_line_id = vals.pop("tax_repartition_line_id")
+                    vals["prorate_tax_repartition_line_id"] = repartition_line_id
+        return res

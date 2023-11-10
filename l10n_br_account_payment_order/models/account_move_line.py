@@ -21,15 +21,17 @@ class AccountMoveLine(models.Model):
     # Data de Vencimentos/date_maturity senão ficam fora de ordem:
     #  ex.: own_number 201 31/12/2020, own_number 202 18/11/2020
     #  Isso causa confusão pois a primeira parcela fica como sendo a segunda.
-    _order = "date desc, date_maturity ASC, id desc"
+    _order = "date desc, date_maturity asc, move_name desc, id"
 
     cnab_state = fields.Selection(
         selection=ESTADOS_CNAB,
         string="Estados CNAB",
+        copy=False,
     )
 
     own_number = fields.Char(
         string="Nosso Numero",
+        copy=False,
     )
 
     # No arquivo de retorno do CNAB o campo pode ter um tamanho diferente,
@@ -58,16 +60,19 @@ class AccountMoveLine(models.Model):
 
     document_number = fields.Char(
         string="Número documento",
+        copy=False,
     )
 
     company_title_identification = fields.Char(
         string="Identificação Titulo Empresa",
+        copy=False,
     )
 
     payment_situation = fields.Selection(
         selection=SITUACAO_PAGAMENTO,
         string="Situação do Pagamento",
         default="inicial",
+        copy=False,
     )
 
     boleto_discount_perc = fields.Float(
@@ -80,6 +85,7 @@ class AccountMoveLine(models.Model):
     instructions = fields.Text(
         string="Instruções de cobrança",
         readonly=True,
+        copy=False,
     )
 
     journal_entry_ref = fields.Char(
@@ -94,12 +100,14 @@ class AccountMoveLine(models.Model):
     last_change_reason = fields.Text(
         readonly=True,
         string="Justificativa",
+        copy=False,
     )
 
     mov_instruction_code_id = fields.Many2one(
         comodel_name="l10n_br_cnab.mov.instruction.code",
         string="Código da Instrução para Movimento",
         help="Campo G061 do CNAB",
+        copy=False,
     )
 
     # Usados para deixar invisiveis/somente leitura
@@ -147,7 +155,6 @@ class AccountMoveLine(models.Model):
             vals["partner_pix_id"] = self.partner_id.pix_key_ids[0].id
         # Preenchendo apenas nos casos CNAB
         if self.payment_mode_id.payment_method_code in BR_CODES_PAYMENT_ORDER:
-            digits = self.env["decimal.precision"].precision_get("Account")
             vals.update(
                 {
                     "own_number": self.own_number,
@@ -164,8 +171,8 @@ class AccountMoveLine(models.Model):
                     "ml_maturity_date": self.date_maturity,
                     "move_id": self.move_id.id,
                     "service_type": self._get_default_service_type(),
-                    "discount_value": round(
-                        self.amount_currency * (self.boleto_discount_perc / 100), digits
+                    "discount_value": self.currency_id.round(
+                        self.amount_currency * (self.boleto_discount_perc / 100)
                     ),
                 }
             )
@@ -193,7 +200,6 @@ class AccountMoveLine(models.Model):
         :return:
         """
         for record in self:
-
             cnab_state = "added"
             if record.reconciled:
                 cnab_state = "added_paid"
@@ -280,7 +286,6 @@ class AccountMoveLine(models.Model):
                     )
 
     def reconcile(self):
-
         res = super().reconcile()
         for record in self:
             # Verificar Casos de CNAB

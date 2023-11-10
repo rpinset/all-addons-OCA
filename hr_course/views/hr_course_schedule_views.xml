@@ -130,14 +130,18 @@
                             </div>
                             <field name="course_attendee_ids" widget="one2many_list" />
                         </page>
+                        <page
+                            name="note"
+                            string="Internal notes"
+                            groups="hr.group_hr_manager"
+                        >
+                            <field name="note" />
+                        </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">
-                    <field
-                        name="message_follower_ids"
-                        widget="mail_followers"
-                        groups="base.group_user"
-                    />
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
                     <field name="message_ids" widget="mail_thread" />
                 </div>
             </form>

@@ -44,7 +44,8 @@ msgstr ""
 #. module: l10n_ro_dvi
 #: model:ir.model.fields,help:l10n_ro_dvi.field_stock_landed_cost__l10n_ro_base_tax_value
 msgid ""
-"Base VAT amount, calculated from invoice base amount, customs and commision."
+"Base VAT amount, calculated from invoice base amount, customs and "
+"commission."
 msgstr ""
 
 #. module: l10n_ro_dvi
@@ -88,15 +89,15 @@ msgid "Custom Duty"
 msgstr ""
 
 #. module: l10n_ro_dvi
-#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__customs_commision_product_id
-msgid "Customs Commision Product"
-msgstr ""
-
-#. module: l10n_ro_dvi
 #: code:addons/l10n_ro_dvi/models/res_company.py:0
 #: model_terms:ir.ui.view,arch_db:l10n_ro_dvi.view_account_dvi_form
 #, python-format
 msgid "Customs Commission"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__customs_commission_product_id
+msgid "Customs Commission Product"
 msgstr ""
 
 #. module: l10n_ro_dvi
@@ -127,7 +128,6 @@ msgstr ""
 #. module: l10n_ro_dvi
 #: model:ir.actions.act_window,name:l10n_ro_dvi.action_account_dvi
 #: model:ir.model.fields.selection,name:l10n_ro_dvi.selection__stock_landed_cost__l10n_ro_cost_type__dvi
-#: model_terms:ir.ui.view,arch_db:l10n_ro_dvi.view_account_dvi_tree
 #: model_terms:ir.ui.view,arch_db:l10n_ro_dvi.view_move_form
 msgid "DVI"
 msgstr ""
@@ -214,7 +214,6 @@ msgstr ""
 
 #. module: l10n_ro_dvi
 #: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__message_has_error
-#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -334,6 +333,11 @@ msgid "Messages"
 msgstr ""
 
 #. module: l10n_ro_dvi
+#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference_move_id
+msgid "Move for vat price difference"
+msgstr ""
+
+#. module: l10n_ro_dvi
 #: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__name
 msgid "Name"
 msgstr ""
@@ -385,10 +389,15 @@ msgid "Product"
 msgstr ""
 
 #. module: l10n_ro_dvi
-#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__customs_commision_product_id
+#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference_product_id
+msgid "Product for vat price difference"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__customs_commission_product_id
 msgid ""
-"Product type service with l10n_ro_custom_commision checed (in purchase tab)."
-" Journal entry for commision will be with this product"
+"Product type service with l10n_ro_custom_commission checed (in purchase "
+"tab). Journal entry for commission will be with this product"
 msgstr ""
 
 #. module: l10n_ro_dvi
@@ -446,11 +455,6 @@ msgstr ""
 #. module: l10n_ro_dvi
 #: model:ir.ui.menu,name:l10n_ro_dvi.menu_action_account_dvi
 msgid "Romanian DVI"
-msgstr ""
-
-#. module: l10n_ro_dvi
-#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__message_has_sms_error
-msgid "SMS Delivery error"
 msgstr ""
 
 #. module: l10n_ro_dvi
@@ -536,11 +540,6 @@ msgid "Utility field to express amount currency"
 msgstr ""
 
 #. module: l10n_ro_dvi
-#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi_line__vat_amount
-msgid "VAT Amount"
-msgstr ""
-
-#. module: l10n_ro_dvi
 #: model:ir.model.fields,help:l10n_ro_dvi.field_stock_landed_cost__l10n_ro_tax_value
 msgid "VAT amount, calculated from invoice base amount and customs."
 msgstr ""
@@ -558,6 +557,11 @@ msgid "VAT paid at customs expense"
 msgstr ""
 
 #. module: l10n_ro_dvi
+#: model:ir.model.fields,help:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference
+msgid "VAT price difference"
+msgstr ""
+
+#. module: l10n_ro_dvi
 #: model:ir.model.fields,help:l10n_ro_dvi.field_stock_landed_cost__l10n_ro_tax_id
 msgid "VAT tax for products and customs cost"
 msgstr ""
@@ -565,6 +569,26 @@ msgstr ""
 #. module: l10n_ro_dvi
 #: model:ir.model,name:l10n_ro_dvi.model_stock_valuation_adjustment_lines
 msgid "Valuation Adjustment Lines"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi_line__vat_amount
+msgid "Vat Amount"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference
+msgid "Vat Price Difference"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference_move_id
+msgid "Vat Price Difference Move"
+msgstr ""
+
+#. module: l10n_ro_dvi
+#: model:ir.model.fields,field_description:l10n_ro_dvi.field_l10n_ro_account_dvi__vat_price_difference_product_id
+msgid "Vat Price Difference Product"
 msgstr ""
 
 #. module: l10n_ro_dvi

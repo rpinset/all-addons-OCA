@@ -883,9 +883,7 @@ msgstr "Si se activa, los mensajes nuevos requieren de tu atención."
 
 #. module: account_credit_control
 #: model:ir.model.fields,help:account_credit_control.field_credit_control_communication__message_has_error
-#: model:ir.model.fields,help:account_credit_control.field_credit_control_communication__message_has_sms_error
 #: model:ir.model.fields,help:account_credit_control.field_credit_control_line__message_has_error
-#: model:ir.model.fields,help:account_credit_control.field_credit_control_line__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si se activa, algunos mensajes tienen un error de envío."
 
@@ -1536,6 +1534,12 @@ msgid "Payment Note"
 msgstr "Nota de pago"
 
 #. module: account_credit_control
+#: code:addons/account_credit_control/models/credit_control_communication.py:0
+#, python-format
+msgid "Payment Reference"
+msgstr ""
+
+#. module: account_credit_control
 #: model:ir.model.fields.selection,name:account_credit_control.selection__credit_control_line__channel__phone
 #: model:ir.model.fields.selection,name:account_credit_control.selection__credit_control_policy_level__channel__phone
 msgid "Phone"
@@ -1672,12 +1676,6 @@ msgstr "Fecha de generación"
 #: model:ir.ui.menu,name:account_credit_control.credit_control_run_menu
 msgid "Runs"
 msgstr "Generaciones"
-
-#. module: account_credit_control
-#: model:ir.model.fields,field_description:account_credit_control.field_credit_control_communication__message_has_sms_error
-#: model:ir.model.fields,field_description:account_credit_control.field_credit_control_line__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de envio SMS"
 
 #. module: account_credit_control
 #: model:ir.model.fields,field_description:account_credit_control.field_credit_control_line__partner_user_id
@@ -1949,3 +1947,6 @@ msgstr ""
 #: model:ir.model,name:account_credit_control.model_credit_control_communication
 msgid "credit control communication"
 msgstr "comunicación de control de crédito"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de envio SMS"

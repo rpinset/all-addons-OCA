@@ -56,11 +56,13 @@ const template_mobile = `
         </div>
 
         <div v-if="state_is('select_line')">
-            <manual-select
+            <item-detail-card
                 v-if="device_mode == 'mobile'"
-                :records="state.data.move_lines"
+                v-for="line in select_line_detail_card_items()"
+                :key="make_state_component_key(['line', line.id])"
+                :record="line"
                 :options="select_line_move_line_detail_options()"
-                :key="make_state_component_key(['manual-select'])"
+                :card_color="utils.colors.color_for('screen_step_todo')"
                 />
 
             <v-data-table
@@ -116,12 +118,23 @@ const template_mobile = `
             :card_color="utils.colors.color_for('screen_step_done')"
             />
         <item-detail-card
-            v-if="state_in(['set_line_destination', 'stock_issue', 'change_pack_lot'])"
+            v-if="state_in(['set_line_destination', 'stock_issue', 'change_pack_lot']) && !hide_qty_picker()"
             :key="make_state_component_key(['detail-move-line-product', state.data.move_line.id])"
             :record="state.data.move_line"
             :options="utils.wms.move_line_product_detail_options(state.data.move_line, {fields_blacklist: ['quantity']})"
             :card_color="utils.colors.color_for(state_in(['set_line_destination']) ? 'screen_step_done': 'screen_step_todo')"
             />
+
+
+        <item-detail-card
+            v-if="hide_qty_picker()"
+            :key="make_state_component_key(['detail-move-line-dest-pack', state.data.move_line.id])"
+            :record="state.data.move_line"
+            :options="{main: true, key_title: 'package_src.name', title_action_field: {action_val_path: 'package_src.name'}}"
+            :card_color="utils.colors.color_for(state_in(['set_line_destination']) ? 'screen_step_done': 'screen_step_todo')"
+            />
+
+
         <item-detail-card
             v-if="state_in(['set_line_destination'])"
             :key="make_state_component_key(['detail-move-line-loc-dest', state.data.move_line.id])"
@@ -129,7 +142,7 @@ const template_mobile = `
             :options="{main: true, key_title: 'location_dest.name', title_action_field: {action_val_path: 'location_dest.barcode'}}"
             :card_color="utils.colors.color_for('screen_step_todo')"
             />
-        <v-card v-if="state_in(['set_line_destination', 'change_pack_lot'])"
+        <v-card v-if="state_in(['set_line_destination', 'change_pack_lot']) && !hide_qty_picker()"
                 class="pa-2" :color="utils.colors.color_for('screen_step_todo')">
             <packaging-qty-picker
                 :key="make_state_component_key(['packaging-qty-picker', state.data.move_line.id])"
@@ -382,43 +395,138 @@ const ZonePicking = {
         },
         select_line_table_items: function () {
             const self = this;
+            // For line with a complete mix package only show one line per package
+            // with the name of the package
+            var full_package_handeled = [];
             // Convert to v-data-table keys
             const items = _.map(this.state.data.move_lines, function (record) {
                 const item_data = {};
-                _.forEach(self.move_line_list_fields(true), function (field) {
-                    item_data[field.path] = _.result(record, field.path);
-                    if (field.renderer) {
-                        item_data[field.path] = field.renderer(record, field);
+                if (record.handle_complete_mix_pack) {
+                    if (full_package_handeled.includes(record.package_src.name)) {
+                        return {};
                     }
-                });
-                item_data._origin = record;
+                    full_package_handeled.push(record.package_src.name);
+                    _.forEach(self.package_list_fields(true), function (field) {
+                        item_data[field.path] = _.result(record, field.path);
+                        if (field.renderer) {
+                            item_data[field.path] = field.renderer(record, field);
+                        }
+                    });
+                    item_data._origin = record;
+                } else {
+                    _.forEach(self.move_line_list_fields(true), function (field) {
+                        item_data[field.path] = _.result(record, field.path);
+                        if (field.renderer) {
+                            item_data[field.path] = field.renderer(record, field);
+                        }
+                    });
+                    item_data._origin = record;
+                }
                 return item_data;
             });
+            return items.filter((value) => JSON.stringify(value) !== "{}");
+        },
+        select_line_detail_card_items: function () {
+            var items = [];
+            var full_package_handeled = [];
+
+            for (const line of this.state.data.move_lines) {
+                if (line.handle_complete_mix_pack) {
+                    if (full_package_handeled.includes(line.package_src.name)) {
+                        continue;
+                    }
+                    full_package_handeled.push(line.package_src.name);
+                }
+                items.push(line);
+            }
             return items;
         },
         select_line_move_line_detail_options: function () {
             const options = {
                 key_title: "location_src.name",
-                group_color: this.utils.colors.color_for("screen_step_todo"),
-                card_klass: "loud-labels",
-                title_action_field: {action_val_path: "product.barcode"},
-                showActions: false,
-                list_item_options: {
-                    loud_title: true,
-                    fields: this.move_line_list_fields(),
-                    list_item_klass_maker: function (rec) {
-                        return rec.location_will_be_empty
-                            ? "location-will-be-empty"
-                            : "";
+                loud_labels: true,
+                title_action_field: {
+                    action_val_path: function (record, field) {
+                        return record.handle_complete_mix_pack
+                            ? "package_src.name"
+                            : "product.barcode";
                     },
                 },
+                fields: this.move_line_list_fields(),
             };
             return options;
         },
+
+        package_list_fields: function (table_mode = false) {
+            const self = this;
+            const fields = [
+                {
+                    path: "product.display_name",
+                    label: table_mode ? "Product" : null,
+                    renderer: function (rec, field) {
+                        return "";
+                    },
+                },
+                {
+                    path: "package_src.name",
+                    label: "Pack / Lot",
+                    renderer: function (rec, field) {
+                        const pkg = _.result(rec, "package_src.name", "");
+                        const lot = _.result(rec, "lot.name", "");
+                        return lot ? pkg + "\n" + lot : pkg;
+                    },
+                },
+                {
+                    path: "quantity",
+                    label: "Qty",
+                    renderer: function (rec, field) {
+                        return rec.handle_complete_mix_pack
+                            ? rec.package_src.total_quantity
+                            : rec.quantity;
+                    },
+                },
+                {path: "package_src.weight", label: "Weight"},
+                {
+                    path: "picking.scheduled_date",
+                    label: "Date",
+                    renderer: function (rec, field) {
+                        return self.utils.display.render_field_date(rec, field);
+                    },
+                },
+                {
+                    path: "priority",
+                    label: table_mode ? "Priority" : null,
+                    render_component: "priority-widget",
+                    render_options: function (record) {
+                        return {priority: parseInt(record.priority || "0", 10)};
+                    },
+                },
+                {
+                    path: "location_will_be_empty",
+                    render_component: "empty-location-icon",
+                    display_no_value: true,
+                },
+            ];
+            if (table_mode) {
+                fields.unshift({path: "location_src.name", label: "Location"});
+            }
+            return fields;
+        },
+
         move_line_list_fields: function (table_mode = false) {
             const self = this;
             const fields = [
-                {path: "product.display_name", label: table_mode ? "Product" : null},
+                {
+                    path: "product.display_name",
+                    label: table_mode ? "Product" : null,
+                    renderer: function (rec, field) {
+                        if (rec.handle_complete_mix_pack) {
+                            return "";
+                        } else {
+                            return rec.product.display_name;
+                        }
+                    },
+                },
                 {
                     path: "package_src.name",
                     label: "Pack / Lot",
@@ -434,7 +542,9 @@ const ZonePicking = {
                     render_component: "packaging-qty-picker-display",
                     render_props: function (record) {
                         return self.utils.wms.move_line_qty_picker_props(record, {
-                            qtyInit: record.quantity,
+                            qtyInit: record.handle_complete_mix_pack
+                                ? record.package_src.total_quantity
+                                : record.quantity,
                         });
                     },
                 },
@@ -491,6 +601,9 @@ const ZonePicking = {
             if (this.state_is("select_line") && this.state.data.sublocation) {
                 data.sublocation_id = this.state.data.sublocation.id;
             }
+            if (this.state_is("select_line") && this.state.data.package) {
+                data.package_id = this.state.data.package.id;
+            }
             return this.wait_call(this.odoo.call("scan_source", data));
         },
         picking_summary_records_grouped(move_lines) {
@@ -520,6 +633,36 @@ const ZonePicking = {
         },
         picking_summary_move_line_detail_fields: function () {
             return [{path: "package_src.name", klass: "loud"}];
+        },
+        hide_qty_picker: function () {
+            if ("handle_complete_mix_pack" in this.state.data) {
+                return this.state.data.handle_complete_mix_pack;
+            }
+            return false;
+        },
+        all_lines_with_package: function () {
+            const move_lines = this.state.data.move_lines;
+            if (!move_lines) {
+                return false;
+            }
+            for (let line_id = 0; line_id < move_lines.length; line_id++) {
+                if (!move_lines[line_id].package_src) {
+                    return false;
+                }
+            }
+            return true;
+        },
+        any_line_with_lot: function () {
+            const move_lines = this.state.data.move_lines;
+            if (!move_lines) {
+                return false;
+            }
+            for (let line_id = 0; line_id < move_lines.length; line_id++) {
+                if (move_lines[line_id].lot) {
+                    return true;
+                }
+            }
+            return false;
         },
     },
     computed: {
@@ -601,23 +744,53 @@ const ZonePicking = {
                     },
                     on_select: (selected) => {
                         this.list_move_lines(selected.id);
+                        this.force_lines_refresh = true;
                     },
                 },
                 select_line: {
+                    enter: () => {
+                        if (!this.force_lines_refresh) {
+                            // Ensure that the list of lines is always refreshed
+                            // when landing on this screen.
+                            // We don't need to call this method on enter
+                            // if we come from select_picking_type, as it takes care of that already.
+                            this.list_move_lines(this.state.data.picking_type.id);
+                        }
+                    },
                     display_info: {
                         title: "Select move",
                         scan_placeholder: () => {
                             const sublocation = this.state.data.sublocation;
-                            if (
-                                this.state.data.scan_location_or_pack_first &&
-                                !sublocation
-                            ) {
-                                return "Scan location / pack";
+                            const pack = this.state.data.package;
+                            if (this.state.data.scan_location_or_pack_first) {
+                                if (!pack && this.all_lines_with_package()) {
+                                    return "Scan pack";
+                                }
+                                if (!sublocation && !pack) {
+                                    return "Scan location / pack";
+                                }
+                                if (this.any_line_with_lot()) {
+                                    return "Scan product / lot";
+                                }
+                                return "Scan product";
                             }
                             if (sublocation) {
-                                return "Scan product / lot / package";
+                                if (pack) {
+                                    if (this.any_line_with_lot()) {
+                                        return "Scan product / lot";
+                                    }
+                                    return "Scan product";
+                                } else {
+                                    if (this.any_line_with_lot()) {
+                                        return "Scan pack / product / lot";
+                                    }
+                                    return "Scan pack / product";
+                                }
                             }
-                            return "Scan location / pack / product / lot";
+                            if (this.any_line_with_lot()) {
+                                return "Scan location / pack / product / lot";
+                            }
+                            return "Scan location / pack / product";
                         },
                     },
                     events: {
@@ -653,31 +826,68 @@ const ZonePicking = {
                     },
                 },
                 set_line_destination: {
+                    enter: () => {
+                        // When entering this screen, we show a different message if:
+                        // - We only allow scanning locations.
+                        // - We allow scanning locations and packages.
+                        const is_scan_package_allowed = this.state.data
+                            .allow_alternative_destination_package;
+                        const placeholder = is_scan_package_allowed
+                            ? this.state.display_info.scan_placeholder_full
+                            : this.state.display_info.scan_placeholder_location;
+                        this.state.display_info.scan_placeholder = placeholder;
+                    },
                     display_info: {
                         title: "Set destination",
                         scan_placeholder: "Scan location or package",
                         scan_placeholder_full: "Scan location or package",
-                        scan_placeholder_partial: "Scan package",
+                        scan_placeholder_package: "Scan package",
+                        scan_placeholder_location: "Scan location",
                     },
                     events: {
                         qty_edit: "on_qty_update",
                     },
                     on_qty_update: (qty) => {
                         this.scan_destination_qty = parseInt(qty, 10);
-                        if (this.state.data.move_line.quantity != qty) {
-                            this.state.display_info.scan_placeholder = this.state.display_info.scan_placeholder_partial;
+
+                        // Display different placeholder messages (package / location / both).
+                        const is_scan_package_allowed = this.state.data
+                            .allow_alternative_destination_package;
+                        const full_qty = this.state.data.move_line.quantity === qty;
+
+                        const display_info = this.state.display_info;
+                        if (!is_scan_package_allowed) {
+                            // Only locations are allowed.
+                            display_info.scan_placeholder =
+                                display_info.scan_placeholder_location;
                         } else {
-                            this.state.display_info.scan_placeholder = this.state.display_info.scan_placeholder_full;
+                            if (!full_qty) {
+                                // Only packages are allowed.
+                                display_info.scan_placeholder =
+                                    display_info.scan_placeholder_package;
+                            } else {
+                                // Both are allowed.
+                                display_info.scan_placeholder =
+                                    display_info.scan_placeholder_full;
+                            }
                         }
                     },
                     on_scan: (scanned) => {
                         const data = this.state.data;
+                        // When handling a complete pack the quantity picker is hidden
+                        // because all move line of the package will be handled.
+                        // So for that case we pass a positive quantity
+                        const quantity = data.handle_complete_mix_pack
+                            ? data.move_line.quantity
+                            : this.scan_destination_qty;
                         this.wait_call(
                             this.odoo.call("set_destination", {
                                 move_line_id: data.move_line.id,
                                 barcode: scanned.text,
-                                quantity: this.scan_destination_qty,
+                                quantity: quantity,
                                 confirmation: data.confirmation_required,
+                                // package_id: data.is_complete_mix_pack ? data.move_line.package_src.id : null,
+                                handle_complete_mix_pack: data.handle_complete_mix_pack,
                             })
                         );
                     },
@@ -796,6 +1006,7 @@ const ZonePicking = {
                     },
                 },
             },
+            force_lines_refresh: false,
         };
     },
     // TODO: move this lovely feature to a mixin or provide it to all components.

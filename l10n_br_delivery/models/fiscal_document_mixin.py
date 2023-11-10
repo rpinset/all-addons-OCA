@@ -6,7 +6,7 @@ from odoo import fields, models
 
 
 class FiscalDocumentMixin(models.AbstractModel):
-    _inherit = "l10n_br_fiscal.document.mixin"
+    _inherit = "l10n_br_fiscal.document.mixin.fields"
 
     def _get_default_incoterm(self):
         return self.env.user.company_id.incoterm_id
@@ -20,8 +20,10 @@ class FiscalDocumentMixin(models.AbstractModel):
         " transactions.",
     )
 
+    fiscal_incoterm_id = fields.Many2one(related="incoterm_id")
+
     carrier_id = fields.Many2one(
         comodel_name="delivery.carrier",
         string="Carrier",
-        ondelete="cascade",
+        ondelete="restrict",
     )

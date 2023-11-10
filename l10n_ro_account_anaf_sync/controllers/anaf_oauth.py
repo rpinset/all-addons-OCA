@@ -5,6 +5,9 @@ import secrets
 from datetime import datetime, timedelta
 
 import requests
+import werkzeug
+import werkzeug.urls as urls
+from werkzeug.wrappers import Response
 
 from odoo import _, http
 from odoo.http import request
@@ -14,12 +17,25 @@ from odoo.http import request
 # Token Revocation Endpoint https://logincert.anaf.ro/anaf-oauth2/v1/revoke
 
 
+def redirect(location, code=303, local=True):
+    # compatibility, Werkzeug support URL as location
+    if isinstance(location, urls.URL):
+        location = location.to_url()
+    if local:
+        location = "/" + urls.url_parse(location).replace(
+            scheme="", netloc=""
+        ).to_url().lstrip("/")
+    if request and request.db:
+        return request.registry["ir.http"]._redirect(location, code)
+    return werkzeug.utils.redirect(location, code, Response=Response)
+
+
 class AccountANAFSyncWeb(http.Controller):
     @http.route(
         ["/l10n_ro_account_anaf_sync/redirect_anaf/<int:anaf_config_id>"],
         type="http",
         auth="user",
-        website=False,
+        website=True,
         sitemap=False,
     )
     def redirect_anaf(self, anaf_config_id, **kw):
@@ -56,17 +72,14 @@ class AccountANAFSyncWeb(http.Controller):
                 "last_request_datetime": now,
             }
         )
-        anaf_oauth_url = anaf_config.anaf_oauth_url
         client_id = anaf_config.client_id
         odoo_oauth_url = user.get_base_url() + "/l10n_ro_account_anaf_sync/anaf_oauth"
         redirect_url = "%s?response_type=code&client_id=%s&redirect_uri=%s" % (
-            anaf_oauth_url,
+            anaf_config.anaf_oauth_url + "/authorize",
             client_id,
             odoo_oauth_url,
         )
-        anaf_request_from_redirect = request.redirect(
-            redirect_url, code=302, local=False
-        )
+        anaf_request_from_redirect = redirect(redirect_url, code=302, local=False)
 
         # This is the default for Authorization Code grant.
         # A successful response is 302 Found which triggers a redirect to the redirect_uri.
@@ -83,7 +96,7 @@ class AccountANAFSyncWeb(http.Controller):
         ["/l10n_ro_account_anaf_sync/anaf_oauth"],
         type="http",
         auth="public",
-        website=False,
+        website=True,
         sitemap=False,
     )
     def get_anaf_oauth_code(self, **kw):
@@ -101,11 +114,11 @@ class AccountANAFSyncWeb(http.Controller):
         message = ""
         if len(anaf_config) > 1:
             message = _(
-                "More than one ANAF config requested authentification in the last minutes."
+                "More than one ANAF config requested authentication in the last minutes."
                 "Please request them in order, waiting for 2 minutes between requests."
             )
         elif not anaf_config:
-            message = _("The response was done too late.\nResponse was: kw=%s" % kw)
+            message = _("The response was done too late.\nResponse was: kw=%s") % kw
 
         if message:
             anaf_config.message_post(body=message)
@@ -122,26 +135,21 @@ class AccountANAFSyncWeb(http.Controller):
             redirect_uri = user.get_base_url() + "/l10n_ro_account_anaf_sync/anaf_oauth"
             data = {
                 "grant_type": "authorization_code",
-                "client_id": "%s",
-                "client_secret": "%s",
-                "code": "%s",
-                "access_key": "%s",
-                "redirect_uri": "%s",
-            } % (
-                anaf_config.client_id,
-                anaf_config.client_secret,
-                code,
-                code,
-                redirect_uri,
-            )
+                "client_id": "{}".format(anaf_config.client_id),
+                "client_secret": "{}".format(anaf_config.client_secret),
+                "code": "{}".format(code),
+                "access_key": "{}".format(code),
+                "redirect_uri": "{}".format(redirect_uri),
+            }
             response = requests.post(
                 anaf_config.anaf_oauth_url + "/token",
                 data=data,
                 headers=headers,
+                timeout=1.5,
             )
             response_json = response.json()
 
-            message = _("The response was finished.\nResponse was: %s" % response_json)
+            message = _("The response was finished.\nResponse was: %s") % response_json
             anaf_config.write(
                 {
                     "code": code,
@@ -151,7 +159,7 @@ class AccountANAFSyncWeb(http.Controller):
                 }
             )
         else:
-            message = _("No code was found in the response.\nResponse was: %s" % kw)
+            message = _("No code was found in the response.\nResponse was: %s") % kw
 
         anaf_config.message_post(body=message)
         values = {"message": message}

@@ -40,16 +40,16 @@ class PurchaseOrder(spec_models.StackedModel):
     """
 
     _name = "fake.purchase.order"
-    _inherit = ["fake.purchase.order", "poxsd.10.purchaseorder"]
+    _inherit = ["fake.purchase.order", "poxsd.10.purchaseordertype"]
     _spec_module = "odoo.addons.spec_driven_model.tests.spec_poxsd"
-    _stacked = "poxsd.10.purchaseorder"
+    _stacked = "poxsd.10.purchaseordertype"
     _stacking_points = {}
     _poxsd10_spec_module_classes = None
 
     poxsd10_orderDate = fields.Date(compute="_compute_date")
     poxsd10_confirmDate = fields.Date(related="date_approve")
-    poxsd10_shipTo = fields.Many2one(related="dest_address_id")
-    poxsd10_billTo = fields.Many2one(related="partner_id")
+    poxsd10_shipTo = fields.Many2one(related="dest_address_id", readonly=False)
+    poxsd10_billTo = fields.Many2one(related="partner_id", readonly=False)
     poxsd10_item = fields.One2many(related="order_line", relation_field="order_id")
 
     def _compute_date(self):

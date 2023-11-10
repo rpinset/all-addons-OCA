@@ -9,7 +9,7 @@
     "author": "Akretion, " "Odoo Community Association (OCA)",
     "maintainers": ["renatonlima"],
     "website": "https://github.com/OCA/l10n-brazil",
-    "version": "14.0.1.0.3",
+    "version": "14.0.2.1.2",
     "depends": ["l10n_br_base"],
     "data": [
         "views/l10n_br_zip_view.xml",
@@ -20,5 +20,10 @@
     ],
     "installable": True,
     "development_status": "Mature",
-    "external_dependencies": {"python": ["pycep_correios"]},
+    "external_dependencies": {
+        "python": [
+            "brazilcep",
+            "erpbrasil.base>=2.3.0",
+        ]
+    },
 }

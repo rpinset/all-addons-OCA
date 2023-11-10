@@ -5,3 +5,4 @@
 * `CorporateHub <https://corporatehub.eu/>`__
 
   * Alexey Pelykh <alexey.pelykh@corphub.eu>
+* Murtaza Mithaiwala <https://twitter.com/MurtazaMithaiw4>

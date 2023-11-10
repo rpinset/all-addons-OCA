@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2017-05-11 00:39+0000\n"
 "PO-Revision-Date: 2023-01-16 02:40+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
-"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/teams/"
-"23907/es_AR/)\n"
+"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/"
+"teams/23907/es_AR/)\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -272,9 +272,7 @@ msgstr "Si está marcado, los nuevos mensajes requieren su atención."
 
 #. module: currency_rate_update
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__message_has_error
-#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__message_has_sms_error
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_provider__message_has_error
-#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_provider__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
@@ -398,6 +396,7 @@ msgstr "Número de mensajes sin leer"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__provider_id
+#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_monthly__provider_id
 msgid "Provider"
 msgstr "Proveedor"
 
@@ -408,14 +407,9 @@ msgstr "Proveedores"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__rate
+#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_monthly__rate
 msgid "Rate"
 msgstr "Tasa"
-
-#. module: currency_rate_update
-#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__message_has_sms_error
-#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de entrega de SMS"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__interval_number
@@ -444,6 +438,7 @@ msgstr "Fecha de Inicio"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__rate
+#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_monthly__rate
 msgid "The rate of the currency to the currency of rate 1"
 msgstr "La tasa de la moneda a la moneda de la tasa 1"
 
@@ -506,6 +501,9 @@ msgstr "Historia de comunicación del sitio web"
 #: model:ir.model.fields.selection,name:currency_rate_update.selection__res_currency_rate_provider__interval_type__weeks
 msgid "Week(s)"
 msgstr "Semana(s)"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de entrega de SMS"
 
 #~ msgid ""
 #~ "<strong>! </strong>You are using European Central Bank exchange rate "

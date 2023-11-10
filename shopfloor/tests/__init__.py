@@ -4,12 +4,14 @@ from . import test_actions_change_package_lot
 from . import test_actions_data
 from . import test_actions_data_detail
 from . import test_actions_search
+from . import test_actions_stock
 from . import test_single_pack_transfer
 from . import test_single_pack_transfer_putaway
 from . import test_cluster_picking_base
 from . import test_cluster_picking_batch
 from . import test_cluster_picking_select
 from . import test_cluster_picking_scan_line
+from . import test_cluster_picking_scan_line_location_or_pack_first
 from . import test_cluster_picking_scan_line_no_prefill_qty
 from . import test_cluster_picking_scan_destination
 from . import test_cluster_picking_scan_destination_no_prefill_qty
@@ -24,6 +26,7 @@ from . import test_checkout_select
 from . import test_checkout_scan_line
 from . import test_checkout_scan_line_no_prefill_qty
 from . import test_checkout_scan_line_base
+from . import test_checkout_scan_dest_location
 from . import test_checkout_select_line
 from . import test_checkout_select_package_base
 from . import test_checkout_set_qty
@@ -31,6 +34,7 @@ from . import test_checkout_scan_package_action
 from . import test_checkout_scan_package_action_no_prefill_qty
 from . import test_checkout_new_package
 from . import test_checkout_no_package
+from . import test_checkout_auto_post
 from . import test_checkout_list_delivery_packaging
 from . import test_checkout_list_package
 from . import test_checkout_summary
@@ -57,6 +61,7 @@ from . import test_location_content_transfer_set_destination_package_or_line
 from . import test_location_content_transfer_putaway
 from . import test_location_content_transfer_mix
 from . import test_zone_picking_base
+from . import test_zone_picking_complete_mix_pack_flux
 from . import test_zone_picking_start
 from . import test_zone_picking_select_picking_type
 from . import test_zone_picking_select_line

@@ -4,11 +4,11 @@
     "author": "ForgeFlow, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/product-attribute",
     "category": "Product",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.1",
     "depends": ["product"],
     "data": ["views/product_variant_attribute_name_manager_view.xml"],
     "license": "AGPL-3",
     "auto_install": False,
     "installable": True,
-    "maintainers": ["oriolvforgeflow"],
+    "maintainers": ["JordiMForgeFlow"],
 }

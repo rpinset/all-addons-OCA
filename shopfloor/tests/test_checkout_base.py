@@ -23,8 +23,15 @@ class CheckoutCommonCase(CommonCase):
             "checkout", menu=self.menu, profile=self.profile
         )
 
-    def _stock_picking_data(self, picking, **kw):
-        return self.service._data_for_stock_picking(picking, **kw)
+    def _stock_picking_data(
+        self, picking, done=False, with_lines=True, with_location=False, **kw
+    ):
+        return self.service._data_for_stock_picking(
+            picking, done, with_lines, with_location, **kw
+        )
+
+    def _stock_locations_data(self, locations, **kw):
+        return self.service._data_for_locations(locations, **kw)
 
     # we test the methods that structure data in test_actions_data.py
     def _picking_summary_data(self, picking):
@@ -33,8 +40,10 @@ class CheckoutCommonCase(CommonCase):
     def _move_line_data(self, move_line):
         return self.data.move_line(move_line)
 
-    def _package_data(self, package, picking):
-        return self.data.package(package, picking=picking, with_packaging=True)
+    def _package_data(self, package, picking, **kwargs):
+        return self.data.package(
+            package, picking=picking, with_packaging=True, **kwargs
+        )
 
     def _packaging_data(self, packaging):
         return self.data.packaging(packaging)
@@ -48,3 +57,22 @@ class CheckoutCommonCase(CommonCase):
         }
         data.update(kw)
         return data
+
+    def _assert_select_package_qty_above(self, response, picking):
+        self.assert_response(
+            response,
+            next_state="select_package",
+            data={
+                "selected_move_lines": [
+                    self._move_line_data(ml) for ml in picking.move_line_ids.sorted()
+                ],
+                "picking": self._picking_summary_data(picking),
+                "packing_info": "",
+                "no_package_enabled": True,
+            },
+            message={
+                "message_type": "warning",
+                "body": "The quantity scanned for one or more lines cannot be "
+                "higher than the maximum allowed.",
+            },
+        )

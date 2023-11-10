@@ -13,6 +13,7 @@ class ResPartner(models.Model):
         store=True,
         readonly=False,
         string="Is a Customer",
+        default=lambda self: self._default_is_customer(),
     )
     is_supplier = fields.Boolean(
         compute="_compute_is_supplier",
@@ -20,17 +21,20 @@ class ResPartner(models.Model):
         store=True,
         readonly=False,
         string="Is a Supplier",
+        default=lambda self: self._default_is_supplier(),
     )
 
     @api.depends("customer_rank")
     def _compute_is_customer(self):
         for partner in self:
-            partner.is_customer = bool(partner.customer_rank)
+            if not partner.is_customer:
+                partner.is_customer = bool(partner.customer_rank)
 
     @api.depends("supplier_rank")
     def _compute_is_supplier(self):
         for partner in self:
-            partner.is_supplier = bool(partner.supplier_rank)
+            if not partner.is_supplier:
+                partner.is_supplier = bool(partner.supplier_rank)
 
     def _inverse_is_customer(self):
         for partner in self:
@@ -47,3 +51,9 @@ class ResPartner(models.Model):
                 partners._increase_rank("supplier_rank")
             else:
                 partners.supplier_rank = 0
+
+    def _default_is_customer(self):
+        return self.env.context.get("res_partner_search_mode") == "customer"
+
+    def _default_is_supplier(self):
+        return self.env.context.get("res_partner_search_mode") == "supplier"

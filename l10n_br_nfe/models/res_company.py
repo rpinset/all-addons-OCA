@@ -39,9 +39,11 @@ class ResCompany(spec_models.SpecModel):
     nfe40_enderEmit = fields.Many2one(
         comodel_name="res.partner",
         related="partner_id",
+        readonly=False,
     )
 
     nfe40_choice6 = fields.Selection(
+        [("nfe40_CNPJ", "CNPJ"), ("nfe40_CPF", "CPF")],
         string="CNPJ ou CPF?",
         compute="_compute_nfe_data",
     )
@@ -111,6 +113,24 @@ class ResCompany(spec_models.SpecModel):
         default=False,
     )
 
+    nfce_qrcode_version = fields.Selection(
+        selection=[("1", "1.00"), ("2", "2.00")],
+        string="QRCode Version",
+        default="2",
+    )
+
+    nfce_csc_token = fields.Char(
+        string="CSC Token",
+        help="Token CSC (Código de Segurança do Contribuinte) "
+        "fornecido pela SEFAZ para a NFC-e",
+    )
+
+    nfce_csc_code = fields.Char(
+        string="CSC Code",
+        help="Código CSC (Código de Segurança do Contribuinte) "
+        "fornecido pela SEFAZ para a NFC-e",
+    )
+
     def _compute_nfe_data(self):
         # compute because a simple related field makes the match_record fail
         for rec in self:
@@ -120,7 +140,7 @@ class ResCompany(spec_models.SpecModel):
                 rec.nfe40_choice6 = "nfe40_CPF"
 
     def _build_attr(self, node, fields, vals, path, attr):
-        if attr.get_name() == "enderEmit" and self.env.context.get("edoc_type") == "in":
+        if attr[0] == "enderEmit" and self.env.context.get("edoc_type") == "in":
             # we don't want to try build a related partner_id for enderEmit
             # when importing an NFe
             # instead later the emit tag will be imported as the

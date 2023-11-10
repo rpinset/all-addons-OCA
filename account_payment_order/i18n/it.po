@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 03:38+0000\n"
-"PO-Revision-Date: 2023-04-07 18:26+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-11-03 13:39+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_payment_order
 #: code:addons/account_payment_order/models/account_move.py:0
@@ -166,6 +166,11 @@ msgid "Allow Litigation Move Lines"
 msgstr "Consenti righe di movimento contenzioso"
 
 #. module: account_payment_order
+#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__allow_past_date
+msgid "Allow date in the past"
+msgstr ""
+
+#. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__allowed_journal_ids
 msgid "Allowed journals"
 msgstr "Registri Consentiti"
@@ -201,7 +206,7 @@ msgstr "Allegati"
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_form
 msgid "Back to Draft"
-msgstr "Torna in Bozza"
+msgstr "Ritorna a bozza"
 
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_res_bank
@@ -211,7 +216,7 @@ msgstr "Banca"
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.print_account_payment_order_document
 msgid "Bank Account"
-msgstr "Conto Bancario"
+msgstr "Conto bancario"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line__bank_account_required
@@ -415,7 +420,7 @@ msgstr "Scadenza"
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_mode__default_date_prefered__due
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_order__date_prefered__due
 msgid "Due Date"
-msgstr "Data Scadenza"
+msgstr "Data scadenza"
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_order__state__generated
@@ -561,7 +566,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_order__message_has_error
-#: model:ir.model.fields,help:account_payment_order.field_account_payment_order__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -625,7 +629,7 @@ msgstr "Rif. Fattura"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_is_follower
 msgid "Is Follower"
-msgstr "Sta seguendo"
+msgstr "Segue"
 
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_account_journal
@@ -684,7 +688,7 @@ msgstr "Etichetta del pagamento che sarà vista dal destinatario"
 #: model:ir.model.fields,field_description:account_payment_order.field_report_account_payment_order_print_account_payment_order_main____last_update
 #: model:ir.model.fields,field_description:account_payment_order.field_res_bank____last_update
 msgid "Last Modified on"
-msgstr "Ultima Modifica il"
+msgstr "Ultima modifica il"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_invoice_payment_line_multi__write_uid
@@ -692,7 +696,7 @@ msgstr "Ultima Modifica il"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__write_uid
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__write_uid
 msgid "Last Updated by"
-msgstr "Ultimo Aggiornamento di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_invoice_payment_line_multi__write_date
@@ -700,7 +704,7 @@ msgstr "Ultimo Aggiornamento di"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__write_date
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__write_date
 msgid "Last Updated on"
-msgstr "Ultimo Aggiornamento il"
+msgstr "Ultimo aggiornamento il"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__bank_account_link
@@ -721,7 +725,7 @@ msgstr "Allegato principale"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_ids
@@ -821,7 +825,7 @@ msgstr "Numero"
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Numero di Azioni"
+msgstr "Numero di azioni"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__move_count
@@ -841,7 +845,7 @@ msgstr "Numero di errori"
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_order__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr "Numero di messaggi che richiedono un azione"
+msgstr "Numero di messaggi che richiedono un'azione"
 
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_order__message_has_error_counter
@@ -933,19 +937,18 @@ msgstr "Riga di pagamento"
 #: model:ir.actions.act_window,name:account_payment_order.account_payment_line_action
 #: model:ir.model,name:account_payment_order.model_account_payment_line
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_line_form
-#: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_line_tree
 msgid "Payment Lines"
 msgstr "Righe di Pagamento"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__payment_method_id
 msgid "Payment Method"
-msgstr "Metodo di Pagamento"
+msgstr "Metodo di pagamento"
 
 #. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_account_payment_method
 msgid "Payment Methods"
-msgstr "Metodi di Pagamento"
+msgstr "Metodi di pagamento"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__payment_mode
@@ -989,7 +992,6 @@ msgstr "Ordine di Pagamento OK"
 #: model:ir.ui.menu,name:account_payment_order.account_payment_order_outbound_menu
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_graph
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_pivot
-#: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_tree
 msgid "Payment Orders"
 msgstr "Ordini di Pagamento"
 
@@ -1037,11 +1039,6 @@ msgstr "Tipo Riferimento"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__activity_user_id
 msgid "Responsible User"
 msgstr "Utente responsabile"
-
-#. module: account_payment_order
-#: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_payment_line_create__payment_mode__same
@@ -1114,10 +1111,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: account_payment_order
 #: model:ir.model.fields.selection,name:account_payment_order.selection__account_move__reference_type__structured
@@ -1174,6 +1171,12 @@ msgstr ""
 #, python-format
 msgid "There are no transactions on payment order %s."
 msgstr "Non ci sono transazioni nell'ordine di pagamento %s."
+
+#. module: account_payment_order
+#: code:addons/account_payment_order/models/account_payment_order.py:0
+#, python-format
+msgid "There's at least one validation error:\n"
+msgstr "C'è almeno un errore di validazione:\n"
 
 #. module: account_payment_order
 #: model:ir.model.fields,help:account_payment_order.field_account_payment_line__ml_maturity_date
@@ -1264,6 +1267,13 @@ msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
 
 #. module: account_payment_order
+#: model:ir.model.fields,help:account_payment_order.field_account_payment_order__allow_past_date
+msgid ""
+"When checked, the Payment Date won't fast-forward to today and will instead "
+"remain the scheduled date"
+msgstr ""
+
+#. module: account_payment_order
 #: model:ir.model,name:account_payment_order.model_account_payment_line_create
 msgid "Wizard to create payment lines"
 msgstr "Procedura guidata su come creare righe di pagamento"
@@ -1298,6 +1308,9 @@ msgid "otherwise, new payment orders will be created (one per payment mode)."
 msgstr ""
 "altrimenti, nuovi ordini di pagamento verranno creati (uno per modalità di "
 "pagamento)."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Accounting Entries Options"
 #~ msgstr "Opzioni Registrazioni Contabili"

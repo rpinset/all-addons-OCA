@@ -1,11 +1,20 @@
 from odoo.tests.common import TransactionCase
 
+from odoo.addons.mail.tests.common import mail_new_test_user
+
 DOWNPAYMENT_METHODS = ["fixed", "percentage"]
 
 
 class StockDeliveryNoteCommon(TransactionCase):
-    def create_partner(self, name, **kwargs):
-        return self.env["res.partner"].create({"name": name, **kwargs})
+    def create_commercial_partner(self, name, **kwargs):
+        return self.env["res.partner"].create(
+            {"name": name, "is_company": True, **kwargs}
+        )
+
+    def create_partner(self, name, company, **kwargs):
+        return self.env["res.partner"].create(
+            {"name": name, "parent_id": company.id, **kwargs}
+        )
 
     def create_sales_order(self, lines, **kwargs):
         vals = {"partner_id": self.recipient.id}
@@ -65,8 +74,19 @@ class StockDeliveryNoteCommon(TransactionCase):
             }
         )
 
+        self.account_manager = mail_new_test_user(
+            self.env,
+            name="Adviser",
+            login="fm",
+            email="accountmanager@yourcompany.com",
+            groups="account.group_account_manager,base.group_partner_manager,"
+            "base.group_system,sales_team.group_sale_manager,stock.group_stock_manager",
+            company_ids=[(6, 0, [c.id for c in self.env["res.company"].search([])])],
+        )
+
         self.sender = self.env.ref("base.main_partner")
-        self.recipient = self.create_partner("Mario Rossi")
+        company = self.create_commercial_partner("Azienda Rossi")
+        self.recipient = self.create_partner("Mario Rossi", company)
 
         try:
             self.desk_combination_line = self.prepare_sales_order_line(

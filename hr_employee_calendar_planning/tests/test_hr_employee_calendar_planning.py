@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import exceptions, fields
-from odoo.tests import common
+from odoo.tests import common, new_test_user
 
 from ..hooks import post_init_hook
 
@@ -12,6 +12,17 @@ class TestHrEmployeeCalendarPlanning(common.SavepointCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(
+            context=dict(
+                cls.env.context,
+                mail_create_nolog=True,
+                mail_create_nosubscribe=True,
+                mail_notrack=True,
+                no_reset_password=True,
+                tracking_disable=True,
+                test_hr_employee_calendar_planning=True,
+            )
+        )
         resource_calendar = cls.env["resource.calendar"]
         cls.calendar1 = resource_calendar.create(
             {"name": "Test calendar 1", "attendance_ids": []}
@@ -89,6 +100,8 @@ class TestHrEmployeeCalendarPlanning(common.SavepointCase):
             (6, 0, [cls.global_leave1.id, cls.global_leave2.id])
         ]
         cls.calendar2.global_leave_ids = [(6, 0, [cls.global_leave3.id])]
+        # By default a calendar_ids is set, we remove it to better clarify the tests.
+        cls.employee.write({"calendar_ids": [(2, cls.employee.calendar_ids.id)]})
 
     def test_calendar_planning(self):
         self.employee.calendar_ids = [
@@ -430,4 +443,12 @@ class TestHrEmployeeCalendarPlanning(common.SavepointCase):
         self.assertTrue(employee2.resource_calendar_id.auto_generate)
         self.assertNotEqual(
             self.employee.resource_calendar_id, employee2.resource_calendar_id
+        )
+
+    def test_user_action_create_employee(self):
+        user = new_test_user(self.env, login="test-user")
+        user.action_create_employee()
+        self.assertIn(
+            user.company_id.resource_calendar_id,
+            user.employee_id.mapped("calendar_ids.calendar_id"),
         )

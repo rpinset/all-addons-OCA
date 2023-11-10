@@ -4,10 +4,10 @@
 {
     "name": "Base Sequence Option",
     "summary": "Alternative sequence options for specific models",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "maintainers": ["kittiu"],
-    "development_status": "Alpha",
+    "development_status": "Beta",
     "website": "https://github.com/OCA/server-tools",
     "category": "Tools",
     "depends": ["base"],

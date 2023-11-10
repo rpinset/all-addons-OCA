@@ -414,6 +414,23 @@ class TestDdmrp(TestDdmrpCommon):
             self.buffer_a.product_location_qty_available_not_res, expected_on_hand
         )
 
+    def test_19_qualified_demand_6_uom(self):
+        """Delivery spike in a secondary UoM and partially reserved, only
+        unreserved part should be considered."""
+        date_move = datetime.today() + timedelta(days=10)
+        picking = self.create_pickingoutA(date_move, 20, uom=self.dozen_unit)
+        available_qty = self.buffer_a.product_location_qty_available_not_res
+        picking.action_assign()
+        self.assertEqual(picking.move_lines.state, "partially_available")
+        self.bufferModel.cron_ddmrp()
+        # 20 dozens minus de available qty that has been reserved in this
+        # picking.
+        expected_result = (20 * 12) - available_qty
+        self.assertTrue(expected_result > self.buffer_a.order_spike_threshold)
+        self.assertAlmostEqual(
+            self.buffer_a.qualified_demand, expected_result, places=0
+        )
+
     # TEST GROUP 2: Buffer zones and procurement
 
     def _check_red_zone(
@@ -934,6 +951,41 @@ class TestDdmrp(TestDdmrpCommon):
         new_green = (dlt + extra) * adu * 0.5
         self.assertEqual(self.buffer_c_blue.green_zone_qty, new_green)
 
+    def test_37_bom_buffer_fields_multi_company(self):
+        self.assertEqual(self.bom_a.company_id, self.main_company)
+        self.assertTrue(self.bom_a.is_buffered)
+        self.assertEqual(self.bom_a.buffer_id, self.buffer_a)
+        bom_buffer_a = self.buffer_a._get_manufactured_bom()
+        self.assertEqual(bom_buffer_a, self.bom_a)
+        bom_line = self.bom_a.bom_line_ids.filtered(
+            lambda l: l.product_id == self.component_a1
+        )
+        self.assertTrue(bom_line)
+        self.assertFalse(bom_line.is_buffered)
+        # Add a buffer for a component but in a different company
+        component_buffer = self.bufferModel.create(
+            {
+                "buffer_profile_id": self.buffer_profile_pur.id,
+                "product_id": self.component_a1.id,
+                "company_id": self.second_company.id,
+                "warehouse_id": self.warehouse_sc.id,
+                "location_id": self.stock_location_sc.id,
+                "adu_calculation_method": self.adu_fixed.id,
+            }
+        )
+        bom_line.invalidate_cache()
+        self.assertFalse(bom_line.is_buffered)
+        # Change company of the BoM
+        self.bom_a.company_id = self.second_company
+        self.bom_a.invalidate_cache()
+        self.assertFalse(self.bom_a.is_buffered)
+        self.assertFalse(self.bom_a.buffer_id)
+        bom_buffer_a = self.buffer_a._get_manufactured_bom()
+        self.assertFalse(bom_buffer_a)
+        bom_line.invalidate_cache()
+        self.assertTrue(bom_line.is_buffered)
+        self.assertEqual(bom_line.buffer_id, component_buffer)
+
     def test_40_bokeh_charts(self):
         """Check bokeh chart computation."""
         date_move = datetime.today()
@@ -998,3 +1050,57 @@ class TestDdmrp(TestDdmrpCommon):
         seller2.date_end = today
         seller.date_end = seller3.date_end = yesterday
         self.assertEqual(self.buffer_purchase._get_product_sellers(), seller2)
+
+    def test_44_resupply_from_another_warehouse(self):
+        route = self.env["stock.location.route"].create(
+            {
+                "name": "Warehouse 2: Supply from Warehouse",
+                "product_categ_selectable": True,
+                "product_selectable": True,
+                "warehouse_selectable": True,
+                "rule_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "Warehouse: Stock → Inter-warehouse transit",
+                            "action": "pull",
+                            "picking_type_id": self.ref("stock.picking_type_internal"),
+                            "location_src_id": self.warehouse.lot_stock_id.id,
+                            "location_id": self.inter_wh.id,
+                            "procure_method": "make_to_stock",
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "name": "Warehouse2: Inter-warehouse transit → Stock",
+                            "action": "pull",
+                            "picking_type_id": self.ref("stock.picking_type_internal"),
+                            "location_src_id": self.inter_wh.id,
+                            "location_id": self.warehouse2.lot_stock_id.id,
+                            "procure_method": "make_to_order",
+                        },
+                    ),
+                ],
+            }
+        )
+        self.product_purchased.route_ids |= route
+        buffer_distributed = self.bufferModel.create(
+            {
+                "buffer_profile_id": self.buffer_profile_distr.id,
+                "product_id": self.product_purchased.id,
+                "location_id": self.warehouse2.lot_stock_id.id,
+                "warehouse_id": self.warehouse2.id,
+                "qty_multiple": 1.0,
+                "adu_calculation_method": self.adu_fixed.id,
+                "adu_fixed": 4.0,
+                "lead_days": 10.0,
+                "order_spike_horizon": 10.0,
+            }
+        )
+        self.assertEqual(
+            buffer_distributed.distributed_source_location_id,
+            self.warehouse.lot_stock_id,
+        )

@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-12-03 18:36+0000\n"
-"Last-Translator: Samuele Mariani <samuele@ooops404.com>\n"
+"PO-Revision-Date: 2023-05-24 19:10+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mis_builder
 #: code:addons/mis_builder/models/mis_report.py:0
@@ -182,6 +182,7 @@ msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report__move_lines_source
+#: model:ir.model.fields,help:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid ""
 "A 'move line like' model, ie having at least debit, credit, date, account_id "
 "and company_id fields. This model is the data source for column Actuals."
@@ -193,6 +194,20 @@ msgstr ""
 msgid "A date filter is mandatory for this source in column %s."
 msgstr ""
 "Un filtro data è obbligatorio per questa sorgente dati nella colonna %s."
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__analytic_domain
+msgid "A domain to additionally filter move lines considered in this column."
+msgstr ""
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_instance__analytic_domain
+msgid ""
+"A domain to additionally filter move lines considered in this report. "
+"Caution: when using different move line sources in different columns, such "
+"as budgets by account, make sure to use only fields that are available in "
+"all move line sources."
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__account_model
@@ -331,6 +346,12 @@ msgstr "Gruppo conto analitico: %s"
 #, python-format
 msgid "Analytic Account: %s"
 msgstr "Conto analitico: %s"
+
+#. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__analytic_domain
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__analytic_domain
+msgid "Analytic Domain"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__analytic_tag_ids
@@ -1173,6 +1194,7 @@ msgid "Mode"
 msgstr "Modalità"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__source_aml_model_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_query__model_id
 msgid "Model"
 msgstr "Modello"
@@ -1186,6 +1208,7 @@ msgstr "Mese"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__move_lines_source
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid "Move Lines Source"
 msgstr ""
 
@@ -1315,6 +1338,13 @@ msgid "Please provide both columns to compare in %s."
 msgstr "Si prega di fornire entrambe le colonne da confrontare %s."
 
 #. module: mis_builder
+#: code:addons/mis_builder/models/mis_report_instance.py:0
+#, python-format
+msgid ""
+"Please select a report template and/or save the report before adding columns."
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__prefix
 msgid "Prefix"
 msgstr "Prefisso"
@@ -1378,7 +1408,7 @@ msgstr "Report"
 #. module: mis_builder
 #: model:ir.model,name:mis_builder.model_ir_actions_report
 msgid "Report Action"
-msgstr "Report Azione"
+msgstr "Azione resoconto"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__report_instance_id

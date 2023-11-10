@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-10-06 16:36+0000\n"
+"PO-Revision-Date: 2023-09-04 04:41+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es_AR\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice
 #: code:addons/fieldservice/models/fsm_equipment.py:0
@@ -68,6 +68,22 @@ msgstr "'Orden de Servicio - %s' % (object.name)"
 #: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
 msgid "<i class=\"fa fa-ellipsis-v\" title=\"Manager\"/>"
 msgstr "<i class=\"fa fa-ellipsis-v\" title=\"Gestor\"/>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "<span class=\"ml-2\">hours</span>"
+msgstr "<span class=\"ml-2\">horas</span>"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">\n"
+"                                    Priority-based rules\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_form_label\">\n"
+"                                    Reglas basadas en prioridad\n"
+"                                </span>"
 
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
@@ -241,12 +257,6 @@ msgid "Add a description..."
 msgstr "Añadir una descripción..."
 
 #. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__additional_info
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__additional_info
-msgid "Additional info"
-msgstr "Información adicional"
-
-#. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
 msgid "Address"
@@ -391,6 +401,15 @@ msgstr ""
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
 msgid ""
+"Automatically calculate the \"Latest Request Date\" based on an order's "
+"priority"
+msgstr ""
+"Calcula automáticamente la \"Fecha de la última solicitud\" en función de la "
+"prioridad de un pedido"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid ""
 "Automatically creates a day route when an order is assigned and scheduled"
 msgstr ""
 "Crea automáticamente una ruta de día cuando se asigna y programa un pedido"
@@ -429,18 +448,6 @@ msgstr "Código de Barras"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__is_blacklisted
 msgid "Blacklist"
 msgstr "Lista Negra"
-
-#. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__mobile_blacklisted
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__mobile_blacklisted
-msgid "Blacklisted Phone Is Mobile"
-msgstr "El Teléfono de la Lista Negra es Celular"
-
-#. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_blacklisted
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_blacklisted
-msgid "Blacklisted Phone is Phone"
-msgstr "El Teléfono de la Lista Negra es Fijo"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_bounce
@@ -499,7 +506,6 @@ msgstr "No se puede mover a completado desde Kanban"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__category_ids
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_template__category_ids
 #: model:ir.ui.menu,name:fieldservice.menu_hr_skill
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_category_tree_view
 msgid "Categories"
 msgstr "Categorías"
 
@@ -659,12 +665,6 @@ msgstr "Nombre de la Empresa Entidad"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__company_type
 msgid "Company Type"
 msgstr "Tipo de Compañía"
-
-#. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__partner_gid
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__partner_gid
-msgid "Company database ID"
-msgstr "ID de la base de datos de la Empresa"
 
 #. module: fieldservice
 #: model:ir.model.fields,help:fieldservice.field_fsm_category__company_id
@@ -1101,7 +1101,6 @@ msgstr "Empleado"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_order__equipment_id
 #: model:ir.model.fields.selection,name:fieldservice.selection__fsm_stage__stage_type__equipment
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_form_view
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_equipment_tree_view
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
 msgid "Equipment"
 msgstr "Equipo"
@@ -1270,20 +1269,9 @@ msgstr "Categoría de Trabajador de Servicio de Campo"
 #: model:ir.actions.act_window,name:fieldservice.action_fsm_person
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_order__person_ids
 #: model:ir.model.fields,field_description:fieldservice.field_res_territory__person_ids
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_tree
 #: model_terms:ir.ui.view,arch_db:fieldservice.res_territory_form_view_inherit
 msgid "Field Service Workers"
 msgstr "Trabajadores de Servicio de Campo"
-
-#. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_sanitized
-#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_sanitized
-msgid ""
-"Field used to store sanitized phone number. Helps speeding up searches and "
-"comparisons."
-msgstr ""
-"Campo utilizado para almacenar el número de teléfono. Ayuda a acelerar las "
-"búsquedas y las comparaciones."
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__property_account_position_id
@@ -1438,6 +1426,30 @@ msgid "High"
 msgstr "Alto"
 
 #. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_high
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_high
+msgid "Hours of Buffer for High Priority FS Orders"
+msgstr "Horas de Búfer para Pedidos FS de Alta Prioridad"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_low
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_low
+msgid "Hours of Buffer for Low Priority FS Orders"
+msgstr "Horas de Búfer para Pedidos FS de Baja Prioridad"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_lowest
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_lowest
+msgid "Hours of Buffer for Lowest Priority FS Orders"
+msgstr "Horas de Búfer para los Pedidos FS de Prioridad más Baja"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_res_company__fsm_order_request_late_medium
+#: model:ir.model.fields,field_description:fieldservice.field_res_config_settings__fsm_order_request_late_medium
+msgid "Hours of Buffer for Medium Priority FS Orders"
+msgstr "Horas de Búfer para Pedidos FS de Prioridad Media"
+
+#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_category__id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__id
@@ -1498,15 +1510,10 @@ msgstr "Si está marcado, los nuevos mensajes requieren su atención."
 
 #. module: fieldservice
 #: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_has_error
-#: model:ir.model.fields,help:fieldservice.field_fsm_equipment__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice.field_fsm_location__message_has_error
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice.field_fsm_order__message_has_error
-#: model:ir.model.fields,help:fieldservice.field_fsm_order__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice.field_fsm_person__message_has_error
-#: model:ir.model.fields,help:fieldservice.field_fsm_person__message_has_sms_error
 #: model:ir.model.fields,help:fieldservice.field_fsm_team__message_has_error
-#: model:ir.model.fields,help:fieldservice.field_fsm_team__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
@@ -1529,16 +1536,6 @@ msgid ""
 msgstr ""
 "Si la dirección de correo electrónico está en la lista negra, el contacto ya "
 "no recibirá correos masivos, de ninguna lista"
-
-#. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_sanitized_blacklisted
-#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_sanitized_blacklisted
-msgid ""
-"If the sanitized phone number is on the blacklist, the contact won't receive "
-"mass mailing sms anymore, from any list"
-msgstr ""
-"Si el número de teléfonosanitizado está en la lista negra, el contacto ya no "
-"recibirá sms de correo masivo, de ninguna lista"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__image_1920
@@ -1569,30 +1566,6 @@ msgstr "Image 256"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__image_512
 msgid "Image 512"
 msgstr "Imagen 512"
-
-#. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__mobile_blacklisted
-#: model:ir.model.fields,help:fieldservice.field_fsm_person__mobile_blacklisted
-msgid ""
-"Indicates if a blacklisted sanitized phone number is a mobile number. Helps "
-"distinguish which number is blacklisted             when there is both a "
-"mobile and phone field in a model."
-msgstr ""
-"Indica si un número de teléfono sanitizado en la lista negra es un número de "
-"celular. Ayuda a distinguir qué número está en la lista negra             "
-"cuando hay un campo de teléfono móvil y de teléfono en un modelo."
-
-#. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__phone_blacklisted
-#: model:ir.model.fields,help:fieldservice.field_fsm_person__phone_blacklisted
-msgid ""
-"Indicates if a blacklisted sanitized phone number is a phone number. Helps "
-"distinguish which number is blacklisted             when there is both a "
-"mobile and phone field in a model."
-msgstr ""
-"Indica si un número de teléfono sanitizado en la lista negra es un número de "
-"celular. Ayuda a distinguir qué número está en la lista negra             "
-"cuando hay un campo de teléfono móvil y de teléfono en un modelo."
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__industry_id
@@ -1694,6 +1667,11 @@ msgstr "Es una etapa cerrada"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__is_default
 msgid "Is a default stage"
 msgstr "Es una etapa predeterminada"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__is_closed
+msgid "Is closed"
+msgstr "Está cerrado"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__function
@@ -1889,7 +1867,6 @@ msgstr "Trabajador de Ubicación"
 
 #. module: fieldservice
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_location_person
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_person_tree_view
 msgid "Location Workers"
 msgstr "Trabajadores de Ubicación"
 
@@ -1898,7 +1875,6 @@ msgstr "Trabajadores de Ubicación"
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_config_location
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_fsm_location
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_report_location
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_tree_view
 #: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
 msgid "Locations"
 msgstr "Ubicaciones"
@@ -2449,7 +2425,6 @@ msgstr "Pedido Iniciado"
 
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.view_team_form
-#: model_terms:ir.ui.view,arch_db:fieldservice.view_team_tree
 msgid "Order Team"
 msgstr "Equipo del Pedido"
 
@@ -2461,7 +2436,6 @@ msgstr "Plantillas del Pedido"
 #. module: fieldservice
 #: model:ir.actions.act_window,name:fieldservice.action_fsm_order_type
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_order_type
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_type_tree_view
 msgid "Order Types"
 msgstr "Tipos de Pedido"
 
@@ -2515,7 +2489,6 @@ msgstr "Pedido iniciado"
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_dash_order
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_report_order
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_search_view
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_tree_view
 #: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:fieldservice.view_team_kanban
 msgid "Orders"
@@ -2550,11 +2523,13 @@ msgstr "Otros"
 #: model:ir.model.fields,help:fieldservice.field_fsm_location__on_time_rate
 #: model:ir.model.fields,help:fieldservice.field_fsm_person__on_time_rate
 msgid ""
-"Over the past 12 months; the number of products received on time divided by "
-"the number of ordered products."
+"Over the past x days; the number of products received on time divided by the "
+"number of ordered products.x is either the System Parameter purchase_stock."
+"on_time_delivery_days or the default 365"
 msgstr ""
-"Durante los últimos 12 meses; el número de productos recibidos a tiempo "
-"dividido por el número de productos pedidos."
+"Durante los últimos x días; la cantidad de productos recibidos a tiempo "
+"dividido por la cantidad de productos pedidos. x es el parámetro del sistema "
+"buy_stock.on_time_delivery_days o los 365 predeterminado"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__owned_by_id
@@ -2633,12 +2608,6 @@ msgid "Phone"
 msgstr "Teléfono"
 
 #. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_sanitized_blacklisted
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_sanitized_blacklisted
-msgid "Phone Blacklisted"
-msgstr "Teléfono en Lista Negra"
-
-#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__plan_to_change_car
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__plan_to_change_car
 msgid "Plan To Change Car"
@@ -2703,6 +2672,26 @@ msgstr "Lugar de Servicio Primario"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_order__priority
 msgid "Priority"
 msgstr "Prioridad"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Priority 0"
+msgstr "Prioridad 0"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Priority 1"
+msgstr "Prioridad 1"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Priority 2"
+msgstr "Prioridad 2"
+
+#. module: fieldservice
+#: model_terms:ir.ui.view,arch_db:fieldservice.res_config_settings_view_form
+msgid "Priority 3"
+msgstr "Prioridad 3"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_stage__legend_priority
@@ -2846,15 +2835,6 @@ msgid "Routes"
 msgstr "Rutas"
 
 #. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__message_has_sms_error
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__message_has_sms_error
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_order__message_has_sms_error
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__message_has_sms_error
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_team__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de entrega de SMS"
-
-#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__sale_order_count
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__sale_order_count
 msgid "Sale Order Count"
@@ -2883,12 +2863,6 @@ msgstr "Advertencias de Ventas"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__user_id
 msgid "Salesperson"
 msgstr "Vendedor"
-
-#. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__phone_sanitized
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__phone_sanitized
-msgid "Sanitized Number"
-msgstr "Número Sanitizado"
 
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
@@ -3017,6 +2991,7 @@ msgid "Service Orders"
 msgstr "Órdenes de Servicio"
 
 #. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_order__is_closed
 #: model:ir.model.fields,help:fieldservice.field_fsm_stage__is_closed
 msgid "Services in this stage are considered as closed."
 msgstr "Los servicios en esta etapa se consideran cerrados."
@@ -3092,7 +3067,6 @@ msgstr "Nombre de la Etapa"
 #: model:ir.actions.act_window,name:fieldservice.action_fsm_stage
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_team__stage_ids
 #: model:ir.ui.menu,name:fieldservice.menu_fsm_stage
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_stage_tree_view
 msgid "Stages"
 msgstr "Etapas"
 
@@ -3742,19 +3716,77 @@ msgid "tag"
 msgstr "etiqueta"
 
 #. module: fieldservice
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_tag_tree_view
-msgid "tags"
-msgstr "etiquetas"
-
-#. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_template_form_view
 msgid "template"
 msgstr "plantilla"
 
-#. module: fieldservice
-#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_template_tree_view
-msgid "templates"
-msgstr "plantillas"
+#~ msgid "Additional info"
+#~ msgstr "Información adicional"
+
+#~ msgid "Blacklisted Phone Is Mobile"
+#~ msgstr "El Teléfono de la Lista Negra es Celular"
+
+#~ msgid "Blacklisted Phone is Phone"
+#~ msgstr "El Teléfono de la Lista Negra es Fijo"
+
+#~ msgid "Company database ID"
+#~ msgstr "ID de la base de datos de la Empresa"
+
+#~ msgid ""
+#~ "Field used to store sanitized phone number. Helps speeding up searches "
+#~ "and comparisons."
+#~ msgstr ""
+#~ "Campo utilizado para almacenar el número de teléfono. Ayuda a acelerar "
+#~ "las búsquedas y las comparaciones."
+
+#~ msgid ""
+#~ "If the sanitized phone number is on the blacklist, the contact won't "
+#~ "receive mass mailing sms anymore, from any list"
+#~ msgstr ""
+#~ "Si el número de teléfonosanitizado está en la lista negra, el contacto ya "
+#~ "no recibirá sms de correo masivo, de ninguna lista"
+
+#~ msgid ""
+#~ "Indicates if a blacklisted sanitized phone number is a mobile number. "
+#~ "Helps distinguish which number is blacklisted             when there is "
+#~ "both a mobile and phone field in a model."
+#~ msgstr ""
+#~ "Indica si un número de teléfono sanitizado en la lista negra es un número "
+#~ "de celular. Ayuda a distinguir qué número está en la lista "
+#~ "negra             cuando hay un campo de teléfono móvil y de teléfono en "
+#~ "un modelo."
+
+#~ msgid ""
+#~ "Indicates if a blacklisted sanitized phone number is a phone number. "
+#~ "Helps distinguish which number is blacklisted             when there is "
+#~ "both a mobile and phone field in a model."
+#~ msgstr ""
+#~ "Indica si un número de teléfono sanitizado en la lista negra es un número "
+#~ "de celular. Ayuda a distinguir qué número está en la lista "
+#~ "negra             cuando hay un campo de teléfono móvil y de teléfono en "
+#~ "un modelo."
+
+#~ msgid "Phone Blacklisted"
+#~ msgstr "Teléfono en Lista Negra"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de entrega de SMS"
+
+#~ msgid "Sanitized Number"
+#~ msgstr "Número Sanitizado"
+
+#~ msgid "tags"
+#~ msgstr "etiquetas"
+
+#~ msgid "templates"
+#~ msgstr "plantillas"
+
+#~ msgid ""
+#~ "Over the past 12 months; the number of products received on time divided "
+#~ "by the number of ordered products."
+#~ msgstr ""
+#~ "Durante los últimos 12 meses; el número de productos recibidos a tiempo "
+#~ "dividido por el número de productos pedidos."
 
 #~ msgid "Fax"
 #~ msgstr "Fax"

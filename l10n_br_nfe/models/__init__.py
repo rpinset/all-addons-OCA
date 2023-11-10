@@ -5,6 +5,7 @@ from . import res_country_state
 from . import res_partner
 from . import res_company
 from . import product_product
+from . import product_supplierinfo
 from . import ncm
 from . import nbm
 from . import cest
@@ -13,7 +14,10 @@ from . import document_type
 from . import document_related
 from . import document
 from . import document_line
+from . import document_supplement
 from . import res_city
 from . import res_config_settings
 from . import cfop
 from . import invalidate_number
+from . import dfe
+from . import mde

@@ -35,7 +35,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:edi_account_oca.field_account_bank_statement_line__disable_edi_auto
 #: model:ir.model.fields,field_description:edi_account_oca.field_account_move__disable_edi_auto
 #: model:ir.model.fields,field_description:edi_account_oca.field_account_payment__disable_edi_auto
-msgid "Disable Edi Auto"
+msgid "Disable auto"
 msgstr ""
 
 #. module: edi_account_oca
@@ -47,6 +47,11 @@ msgstr "Nom affiché"
 #: model_terms:ir.ui.view,arch_db:edi_account_oca.view_account_journal_form
 #: model_terms:ir.ui.view,arch_db:edi_account_oca.view_partner_form
 msgid "EDI Configuration"
+msgstr ""
+
+#. module: edi_account_oca
+#: model:ir.model.fields,field_description:edi_account_oca.field_account_move__origin_edi_endpoint_id
+msgid "EDI origin endpoint"
 msgstr ""
 
 #. module: edi_account_oca
@@ -112,6 +117,11 @@ msgstr ""
 #. module: edi_account_oca
 #: model:ir.ui.menu,name:edi_account_oca.menu_account_edi_exchange_record
 msgid "Moves"
+msgstr ""
+
+#. module: edi_account_oca
+#: model:ir.model.fields,help:edi_account_oca.field_account_move__origin_edi_endpoint_id
+msgid "Record generated via this endpoint"
 msgstr ""
 
 #. module: edi_account_oca

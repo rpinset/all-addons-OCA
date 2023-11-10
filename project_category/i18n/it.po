@@ -6,20 +6,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-06-22 13:05+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-04-17 22:58+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: project_category
 #: model_terms:ir.ui.view,arch_db:project_category.project_type_form
 msgid "Add a description..."
-msgstr "Aggiungi una descrizione..."
+msgstr "Aggiungere una descrizione..."
 
 #. module: project_category
 #: model:ir.model.fields,field_description:project_category.field_project_type__project_ok
@@ -93,19 +93,19 @@ msgstr "Nome"
 #. module: project_category
 #: model:ir.model.fields,field_description:project_category.field_project_type__parent_id
 msgid "Parent Type"
-msgstr "Tipo Genitore"
+msgstr "Tipo padre"
 
 #. module: project_category
 #: model:ir.model,name:project_category.model_project_type
 #: model_terms:ir.ui.view,arch_db:project_category.project_type_form
 msgid "Project Type"
-msgstr "Tipo Progetto"
+msgstr "Tipo progetto"
 
 #. module: project_category
 #: model:ir.actions.act_window,name:project_category.action_project_type
 #: model:ir.ui.menu,name:project_category.project_category
 msgid "Project Types"
-msgstr "Tipi Progetto"
+msgstr "Tipi progetto"
 
 #. module: project_category
 #: model:ir.model.fields,field_description:project_category.field_project_type__child_ids
@@ -130,13 +130,13 @@ msgstr "Tipo"
 #. module: project_category
 #: model:ir.model,name:project_category.model_project_project
 msgid "WBS element"
-msgstr ""
+msgstr "Elemento WBS"
 
 #. module: project_category
 #: code:addons/project_category/models/project_type.py:0
 #, python-format
 msgid "You cannot create recursive project types."
-msgstr "Non puoi creare tipi progetto ricorsivi."
+msgstr "Impossibile creare tipologie di progetto ricorsive."
 
 #~ msgid "Project"
 #~ msgstr "Progetto"

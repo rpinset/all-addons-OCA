@@ -56,21 +56,24 @@ msgstr "Erstellt am"
 
 #. module: l10n_es_aeat_vat_prorrate
 #: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_compute_vat_prorrate__display_name
+#: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_mod303_report__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
-#: selection:l10n.es.aeat.mod303.report,vat_prorrate_type:0
+#: model:ir.model.fields.selection,name:l10n_es_aeat_vat_prorrate.selection__l10n_es_aeat_mod303_report__vat_prorrate_type__general
 msgid "General prorrate"
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
 #: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_compute_vat_prorrate__id
+#: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_mod303_report__id
 msgid "ID"
 msgstr "ID"
 
 #. module: l10n_es_aeat_vat_prorrate
 #: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_compute_vat_prorrate____last_update
+#: model:ir.model.fields,field_description:l10n_es_aeat_vat_prorrate.field_l10n_es_aeat_mod303_report____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -85,7 +88,7 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
-#: selection:l10n.es.aeat.mod303.report,vat_prorrate_type:0
+#: model:ir.model.fields.selection,name:l10n_es_aeat_vat_prorrate.selection__l10n_es_aeat_mod303_report__vat_prorrate_type__none
 msgid "None"
 msgstr ""
 
@@ -93,7 +96,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_es_aeat_vat_prorrate.view_compute_vat_prorrate_form
 msgid ""
 "Please introduce the year for which you want to compute\n"
-"                        the prorrate percentage."
+"                    the prorrate percentage."
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
@@ -112,13 +115,13 @@ msgid "Regularización por aplicación del porcentaje definitivo de prorrata."
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
-#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:222
+#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:0
 #, python-format
 msgid "Regularización prorrata IVA"
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
-#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:67
+#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:0
 #, python-format
 msgid ""
 "There's at least one previous report in draft state. Please confirm it "
@@ -143,16 +146,15 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_es_aeat_vat_prorrate.view_compute_vat_prorrate_form
 msgid ""
 "This wizard will compute the VAT prorrate for a year.\n"
-"                        You have to use the prorrate of the previous year "
-"as\n"
-"                        provisional value for all the AEAT reports of the\n"
-"                        following year up to last period, in which the\n"
-"                        definitive prorrate percentage has to be calculated\n"
-"                        for that year and the difference must be compensated."
+"                    You have to use the prorrate of the previous year as\n"
+"                    provisional value for all the AEAT reports of the\n"
+"                    following year up to last period, in which the\n"
+"                    definitive prorrate percentage has to be calculated\n"
+"                    for that year and the difference must be compensated."
 msgstr ""
 
 #. module: l10n_es_aeat_vat_prorrate
-#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:58
+#: code:addons/l10n_es_aeat_vat_prorrate/models/mod303.py:0
 #, python-format
 msgid "VAT prorrate percent must be between 0.01 and 100"
 msgstr ""

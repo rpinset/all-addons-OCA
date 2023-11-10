@@ -50,6 +50,7 @@ msgid "Date of Birth"
 msgstr "Datum rođenja"
 
 #. module: hr_employee_relative
+#: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee__display_name
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative__display_name
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative_relation__display_name
 msgid "Display Name"
@@ -60,11 +61,6 @@ msgstr "Naziv"
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative__employee_id
 msgid "Employee"
 msgstr "Djelatnik"
-
-#. module: hr_employee_relative
-#: model_terms:ir.ui.view,arch_db:hr_employee_relative.hr_employee_relative_view_tree
-msgid "Employee Relatives"
-msgstr "Rodbina djelatnika"
 
 #. module: hr_employee_relative
 #: model:ir.model.fields.selection,name:hr_employee_relative.selection__hr_employee_relative__gender__female
@@ -97,6 +93,7 @@ msgid "HR Employee Relative Relation"
 msgstr ""
 
 #. module: hr_employee_relative
+#: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee__id
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative__id
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative_relation__id
 msgid "ID"
@@ -108,6 +105,7 @@ msgid "Job"
 msgstr ""
 
 #. module: hr_employee_relative
+#: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee____last_update
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative____last_update
 #: model:ir.model.fields,field_description:hr_employee_relative.field_hr_employee_relative_relation____last_update
 msgid "Last Modified on"
@@ -186,3 +184,6 @@ msgstr ""
 #: model:hr.employee.relative.relation,name:hr_employee_relative.relation_spouse
 msgid "Spouse"
 msgstr ""
+
+#~ msgid "Employee Relatives"
+#~ msgstr "Rodbina djelatnika"

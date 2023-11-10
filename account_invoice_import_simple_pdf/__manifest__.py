@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import Simple PDF",
-    "version": "14.0.3.1.0",
+    "version": "14.0.3.3.0",
     "category": "Accounting/Accounting",
     "license": "AGPL-3",
     "summary": "Import simple PDF vendor bills",
@@ -12,9 +12,13 @@
     "maintainers": ["alexis-via"],
     "website": "https://github.com/OCA/edi",
     "depends": ["account_invoice_import"],
-    # "excludes": ["account_invoice_import_invoice2data"],
     "external_dependencies": {
-        "python": ["pdfplumber", "regex", "dateparser==1.1.1"],
+        "python": [
+            "pdfplumber",
+            "regex",
+            "dateparser",
+            "pypdf>=3.1.0",
+        ],
         "deb": ["libmupdf-dev", "mupdf", "mupdf-tools", "poppler-utils"],
     },
     "data": [

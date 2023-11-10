@@ -257,9 +257,7 @@ msgstr "Si activado, los nuevos mensajes requieren su atención."
 
 #. module: currency_rate_update
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__message_has_error
-#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__message_has_sms_error
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_provider__message_has_error
-#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_provider__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si activado, algunos mensajes tienen un error de entrega."
 
@@ -384,6 +382,7 @@ msgstr "Número de mensajes no leídos"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__provider_id
+#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_monthly__provider_id
 msgid "Provider"
 msgstr "Proveedor"
 
@@ -394,15 +393,9 @@ msgstr "Proveedores"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__rate
+#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_monthly__rate
 msgid "Rate"
 msgstr "Ratio"
-
-#. module: currency_rate_update
-#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__message_has_sms_error
-#: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__message_has_sms_error
-#, fuzzy
-msgid "SMS Delivery error"
-msgstr "Error de Entrega de Mensaje"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__interval_number
@@ -431,6 +424,7 @@ msgstr "Fecha Inicio"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate__rate
+#: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_monthly__rate
 msgid "The rate of the currency to the currency of rate 1"
 msgstr "El tipo de cambio al cambio de tipo 1"
 
@@ -493,6 +487,10 @@ msgstr "Histórico de comunicación web"
 #: model:ir.model.fields.selection,name:currency_rate_update.selection__res_currency_rate_provider__interval_type__weeks
 msgid "Week(s)"
 msgstr "Semana(s)"
+
+#, fuzzy
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de Entrega de Mensaje"
 
 #~ msgid "If checked new messages require your attention."
 #~ msgstr "Si activado los nuevos mensajes requieren su atención."

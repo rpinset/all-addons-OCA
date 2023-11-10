@@ -10,9 +10,8 @@
     "maintainers": ["renatonlima"],
     "website": "https://github.com/OCA/l10n-brazil",
     "development_status": "Production/Stable",
-    "version": "14.0.10.9.1",
+    "version": "14.0.20.6.0",
     "depends": [
-        "uom",
         "product",
         "l10n_br_base",
     ],
@@ -25,6 +24,7 @@
         "data/l10n_br_fiscal_email_template.xml",
         "data/l10n_br_fiscal_data.xml",
         "data/uom_data.xml",
+        "data/uom_alternative_data.xml",
         "data/product_data.xml",
         "data/partner_profile_data.xml",
         "data/res_partner_data.xml",
@@ -63,7 +63,6 @@
         "views/document_type_view.xml",
         "views/document_serie_view.xml",
         "views/document_email_view.xml",
-        "views/certificate_view.xml",
         "views/simplified_tax_view.xml",
         "views/simplified_tax_range_view.xml",
         "views/operation_view.xml",
@@ -84,8 +83,6 @@
         "views/uom_uom.xml",
         "views/invalidate_number_view.xml",
         "views/city_taxation_code.xml",
-        #        "views/mdfe/mdfe_views.xml",
-        #        "views/dfe/dfe_views.xml",
         "views/operation_dashboard_view.xml",
         "views/document_event_view.xml",
         # Reports
@@ -96,6 +93,7 @@
         "wizards/document_correction_wizard.xml",
         "wizards/document_status_wizard.xml",
         "wizards/invalidate_number_wizard.xml",
+        "wizards/document_import_wizard_mixin.xml",
         # Actions
         "views/l10n_br_fiscal_action.xml",
         # Menus
@@ -110,8 +108,7 @@
     "auto_install": False,
     "external_dependencies": {
         "python": [
-            "erpbrasil.base",
-            "erpbrasil.assinatura",
+            "erpbrasil.base>=2.3.0",
         ]
     },
 }

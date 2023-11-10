@@ -7,19 +7,19 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-23 01:40+0000\n"
-"PO-Revision-Date: 2023-01-11 17:44+0000\n"
-"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
+"PO-Revision-Date: 2023-10-10 21:37+0000\n"
+"Last-Translator: Antônio Neto <netosjb@yahoo.com.br>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_br_base
 #: code:addons/l10n_br_base/models/res_partner_bank.py:0
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "A Checking Account or Saving Account transactional account must contain the "
 "branch number and the account verification digit."
@@ -735,12 +735,6 @@ msgstr "Altônia"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3501152
-#: model:res.partner,nfe40_xMun:l10n_br_base.partner_demo_presumido
-#: model:res.partner,nfe40_xMun:l10n_br_base.partner_demo_simples
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_address_ak3
-#: model:res.partner,nfe40_xMun:l10n_br_base.simples_nacional_partner
-#: model:res.users,nfe40_xMun:l10n_br_base.user_demo_presumido
-#: model:res.users,nfe40_xMun:l10n_br_base.user_demo_simples
 msgid "Alumínio"
 msgstr "Alumínio"
 
@@ -3563,39 +3557,6 @@ msgid "Brazabrantes"
 msgstr "Brazabrantes"
 
 #. module: l10n_br_base
-#: model:res.partner,nfe40_xPais:l10n_br_base.lucro_presumido_partner
-#: model:res.partner,nfe40_xPais:l10n_br_base.partner_demo_presumido
-#: model:res.partner,nfe40_xPais:l10n_br_base.partner_demo_simples
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_address_ak2
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_address_ak3
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_akretion
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_amd
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente10_mg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente11_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente1_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente2_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente3_am
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente4_am
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente5_pe
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente6_pe
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente7_rs
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente8_rs
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente9_mg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_dell
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_infobahia
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_infomanaus
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_intel
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_kmee
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_lg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_positivo
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_samsungpe
-#: model:res.partner,nfe40_xPais:l10n_br_base.simples_nacional_partner
-#: model:res.users,nfe40_xPais:l10n_br_base.user_demo_presumido
-#: model:res.users,nfe40_xPais:l10n_br_base.user_demo_simples
-msgid "Brazil"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_bank__code_bc
 msgid "Brazilian Bank Code"
 msgstr "Código Bancário Brasileiro"
@@ -3609,7 +3570,7 @@ msgstr ""
 #. module: l10n_br_base
 #: model_terms:ir.ui.view,arch_db:l10n_br_base.view_l10n_br_base_partner_bank_form
 msgid "Brazilian Instant Payment Keys (PIX)"
-msgstr ""
+msgstr "Chaves PIX"
 
 #. module: l10n_br_base
 #: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_res_config_settings_form
@@ -3619,17 +3580,17 @@ msgstr "Localização Brasileira"
 #. module: l10n_br_base
 #: model:ir.model,name:l10n_br_base.model_res_partner_pix
 msgid "Brazilian instant payment ecosystem (Pix)"
-msgstr ""
+msgstr "Sistema Brasileiro de Pagamento Instantâneo (PIX)"
 
 #. module: l10n_br_base
 #: model:ir.model,name:l10n_br_base.model_l10n_br_base_party_mixin
 msgid "Brazilian partner and company data mixin"
-msgstr ""
+msgstr "Brazilian partner and company data mixin"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3108909
 msgid "Brazópolis"
-msgstr ""
+msgstr "Brazópolis"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4202800
@@ -3962,7 +3923,7 @@ msgstr "CPF"
 #: model:ir.model.fields.selection,name:l10n_br_base.selection__res_partner_pix__key_type__cnpj_cpf
 #, python-format
 msgid "CPF or CNPJ"
-msgstr ""
+msgstr "CPF ou CNPJ"
 
 #. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner__crc_code
@@ -6049,7 +6010,7 @@ msgstr "Chaves"
 #: model:ir.model.fields.selection,name:l10n_br_base.selection__res_partner_bank__transactional_acc_type__checking
 #, python-format
 msgid "Checking Account (Conta Corrente)"
-msgstr ""
+msgstr "Conta Corrente"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3116209
@@ -6398,10 +6359,15 @@ msgid "Companies"
 msgstr "Empresas"
 
 #. module: l10n_br_base
+#: model:ir.model.fields,field_description:l10n_br_base.field_state_tax_numbers__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_account_setup_bank_manual_config__company_country_id
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner_bank__company_country_id
 msgid "Company Country"
-msgstr ""
+msgstr "País da Empresa"
 
 #. module: l10n_br_base
 #: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_res_partner_address
@@ -7025,7 +6991,7 @@ msgstr "País..."
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1706001
 msgid "Couto Magalhães"
-msgstr ""
+msgstr "Couto Magalhães"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3120102
@@ -7373,7 +7339,6 @@ msgstr "Curionópolis"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4106902
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_positivo
 msgid "Curitiba"
 msgstr "Curitiba"
 
@@ -8150,7 +8115,7 @@ msgstr "Dário Meira"
 #: model:ir.model.fields.selection,name:l10n_br_base.selection__res_partner_pix__key_type__email
 #, python-format
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3514700
@@ -8186,7 +8151,7 @@ msgstr "Eldorado"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1502954
 msgid "Eldorado do Carajás"
-msgstr ""
+msgstr "Eldorado do Carajás"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4306767
@@ -8236,7 +8201,7 @@ msgstr "Embaúba"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3515004
 msgid "Embu das Artes"
-msgstr ""
+msgstr "Embu das Artes"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3515103
@@ -8486,10 +8451,10 @@ msgid "Espírito Santo do Turvo"
 msgstr "Espírito Santo do Turvo"
 
 #. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
+#: code:addons/l10n_br_base/tools.py:0
 #, python-format
-msgid "Estadual Inscription Invalid !"
-msgstr "Inscrição Estadual Inválida !"
+msgid "Estadual Inscription {} Invalid for State {}!"
+msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4307559
@@ -10302,6 +10267,11 @@ msgid "ID"
 msgstr "ID"
 
 #. module: l10n_br_base
+#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
+msgid "IE"
+msgstr "IE"
+
+#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_bank__ispb_number
 msgid "ISPB Number"
 msgstr "Número ISPB"
@@ -10719,7 +10689,7 @@ msgstr "Iguape"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2606903
 msgid "Iguaracy"
-msgstr ""
+msgstr "Iguaracy"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4110003
@@ -10929,7 +10899,7 @@ msgstr "Indiavaí"
 #: model:ir.model.fields,help:l10n_br_base.field_res_partner__show_l10n_br
 #: model:ir.model.fields,help:l10n_br_base.field_res_users__show_l10n_br
 msgid "Indicates if Brazilian localization fields should be displayed."
-msgstr ""
+msgstr "Indica se os campos de localização brasileira devem ser exibidos."
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2607109
@@ -10995,12 +10965,6 @@ msgstr "Inimutaba"
 #: model:res.city,name:l10n_br_base.city_5004403
 msgid "Inocência"
 msgstr "Inocência"
-
-#. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
-#, python-format
-msgid "Invalid State Tax Number!"
-msgstr "Número da Inscrição Estadual Inválido!"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4110201
@@ -11554,9 +11518,6 @@ msgstr "Itaju do Colônia"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3132404
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente10_mg
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente9_mg
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_kmee
 msgid "Itajubá"
 msgstr "Itajubá"
 
@@ -11686,7 +11647,7 @@ msgstr "Itapagipe"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2306306
 msgid "Itapajé"
-msgstr ""
+msgstr "Itapajé"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2916104
@@ -12841,7 +12802,7 @@ msgstr "Joaíma"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2513653
 msgid "Joca Claudino"
-msgstr ""
+msgstr "Joca Claudino"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2205458
@@ -13205,13 +13166,13 @@ msgstr "Kaloré"
 #. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner_pix__key
 msgid "Key"
-msgstr ""
+msgstr "Chave"
 
 #. module: l10n_br_base
 #: model:ir.model.fields,help:l10n_br_base.field_res_partner__pix_key_ids
 #: model:ir.model.fields,help:l10n_br_base.field_res_users__pix_key_ids
 msgid "Keys for Brazilian instant payment (pix)"
-msgstr ""
+msgstr "Chaves para Pagamentos Instantâneos Brasileiro (PIX)"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4209201
@@ -13362,8 +13323,9 @@ msgstr "Lagoa de Dentro"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2608503
+#, fuzzy
 msgid "Lagoa de Itaenga"
-msgstr ""
+msgstr "Lagoa de Itaenga"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2406304
@@ -13917,8 +13879,9 @@ msgstr "Lucianópolis"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_5105309
+#, fuzzy
 msgid "Luciara"
-msgstr ""
+msgstr "Luciara"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2406908
@@ -14312,10 +14275,6 @@ msgstr "Manari"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1302603
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente3_am
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente4_am
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_infomanaus
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_lg
 msgid "Manaus"
 msgstr "Manaus"
 
@@ -15054,7 +15013,7 @@ msgstr "Mazagão"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4311718
 msgid "Maçambará"
-msgstr ""
+msgstr "Maçambará"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3141306
@@ -15421,8 +15380,9 @@ msgstr "Mogi Guaçu"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3530805
+#, fuzzy
 msgid "Mogi Mirim"
-msgstr ""
+msgstr "Mogi Mirim"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3530607
@@ -15447,7 +15407,7 @@ msgstr "Moju"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1504752
 msgid "Mojuí dos Campos"
-msgstr ""
+msgstr "Mojuí dos Campos"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2308500
@@ -17035,7 +16995,7 @@ msgstr "Olho-d'Água do Borges"
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3145455
 msgid "Olhos d'Água"
-msgstr ""
+msgstr "Olhos d'Água"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2609600
@@ -17621,11 +17581,6 @@ msgstr "Papanduva"
 #: model:res.city,name:l10n_br_base.city_2207553
 msgid "Paquetá"
 msgstr "Paquetá"
-
-#. module: l10n_br_base
-#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
-msgid "Para ISENTO deixe vazio ou escreva 'ISENTO'"
-msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3303609
@@ -19412,9 +19367,6 @@ msgstr "Porto Acre"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4314902
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente7_rs
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente8_rs
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_dell
 msgid "Porto Alegre"
 msgstr "Porto Alegre"
 
@@ -20313,9 +20265,6 @@ msgstr "Rebouças"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2611606
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente5_pe
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente6_pe
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_samsungpe
 msgid "Recife"
 msgstr "Recife"
 
@@ -20919,7 +20868,6 @@ msgstr "Rio de Contas"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3304557
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_address_ak2
 msgid "Rio de Janeiro"
 msgstr "Rio de Janeiro"
 
@@ -21388,7 +21336,6 @@ msgstr "Salto do Lontra"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2927408
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_infobahia
 msgid "Salvador"
 msgstr "Salvador"
 
@@ -23366,7 +23313,6 @@ msgstr "Estado"
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner__inscr_est
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_users__inscr_est
 #: model:ir.model.fields,field_description:l10n_br_base.field_state_tax_numbers__inscr_est
-#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
 msgid "State Tax Number"
 msgstr "Número da Inscrição Estadual"
 
@@ -24775,13 +24721,6 @@ msgstr "São Patrício"
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3550308
-#: model:res.partner,nfe40_xMun:l10n_br_base.lucro_presumido_partner
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_akretion
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_amd
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente11_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente1_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente2_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_intel
 msgid "São Paulo"
 msgstr "São Paulo"
 
@@ -26516,11 +26455,6 @@ msgid "Unistalda"
 msgstr "Unistalda"
 
 #. module: l10n_br_base
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_exterior
-msgid "United States"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2211100
 msgid "União"
 msgstr "União"
@@ -27465,10 +27399,10 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
+#: code:addons/l10n_br_base/tools.py:0
 #, python-format
-msgid "{} Invalid!"
-msgstr "{} Inválido!"
+msgid "{} {} Invalid!"
+msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1500347
@@ -27642,6 +27576,18 @@ msgstr "Óbidos"
 #: model:res.city,name:l10n_br_base.city_3533809
 msgid "Óleo"
 msgstr "Óleo"
+
+#, python-format
+#~ msgid "Estadual Inscription Invalid !"
+#~ msgstr "Inscrição Estadual Inválida !"
+
+#, python-format
+#~ msgid "Invalid State Tax Number!"
+#~ msgstr "Número da Inscrição Estadual Inválido!"
+
+#, python-format
+#~ msgid "{} Invalid!"
+#~ msgstr "{} Inválido!"
 
 #, python-format
 #~ msgid "State Tax Number already used %s"

@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-11-23 10:45+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
+"PO-Revision-Date: 2023-10-09 09:10+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: survey_conditional_question
 #: model:ir.model.fields,field_description:survey_conditional_question.field_survey_question__conditional_maximum_value
@@ -37,7 +37,7 @@ msgstr "Nome visualizzato"
 #. module: survey_conditional_question
 #: model:ir.model.fields,field_description:survey_conditional_question.field_survey_user_input_line__hidden
 msgid "Hidden"
-msgstr ""
+msgstr "Nascosto"
 
 #. module: survey_conditional_question
 #: model:ir.model.fields,field_description:survey_conditional_question.field_survey_question__id
@@ -63,6 +63,8 @@ msgid ""
 "Indicate whether this input's question was hidden on condition of earlier "
 "questions in the survey."
 msgstr ""
+"Indica se la domanda di questa risposta era nascosta in funzione a domande "
+"precedenti nel sondaggio."
 
 #. module: survey_conditional_question
 #: model:ir.model.fields,field_description:survey_conditional_question.field_survey_question____last_update
@@ -93,12 +95,12 @@ msgstr "Domanda sondaggio"
 #. module: survey_conditional_question
 #: model:ir.model,name:survey_conditional_question.model_survey_user_input
 msgid "Survey User Input"
-msgstr "Inserimento utente nel sondaggio"
+msgstr "Risposta utente al sondaggio"
 
 #. module: survey_conditional_question
 #: model:ir.model,name:survey_conditional_question.model_survey_user_input_line
 msgid "Survey User Input Line"
-msgstr "Riga inserimento utente per sondaggio"
+msgstr "Riga risposta utente al sondaggio"
 
 #. module: survey_conditional_question
 #: model:ir.model.fields,field_description:survey_conditional_question.field_survey_question__triggering_question_id

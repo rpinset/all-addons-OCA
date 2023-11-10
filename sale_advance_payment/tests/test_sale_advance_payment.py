@@ -76,12 +76,22 @@ class TestSaleAdvancePayment(common.SavepointCase):
 
         cls.currency_euro = cls.env["res.currency"].search([("name", "=", "EUR")])
         cls.currency_usd = cls.env["res.currency"].search([("name", "=", "USD")])
-        cls.currency_rate = cls.env["res.currency.rate"].create(
-            {
-                "rate": 1.20,
-                "currency_id": cls.currency_usd.id,
-            }
+        cls.currency_rate = cls.env["res.currency.rate"].search(
+            [
+                ("currency_id", "=", cls.currency_usd.id),
+                ("name", "=", fields.Date.today()),
+            ]
         )
+        if cls.currency_rate:
+            cls.currency_rate.write({"rate": 1.20})
+        else:
+            cls.currency_rate = cls.env["res.currency.rate"].create(
+                {
+                    "rate": 1.20,
+                    "currency_id": cls.currency_usd.id,
+                    "name": fields.Date.today(),
+                }
+            )
 
         cls.journal_eur_bank = cls.env["account.journal"].create(
             {
@@ -219,6 +229,23 @@ class TestSaleAdvancePayment(common.SavepointCase):
         )
         advance_payment_4.make_advance_payment()
         self.assertEqual(self.sale_order_1.amount_residual, 2580)
+
+        # Check that the outbound amount is not greated than the
+        # amount paid in advanced (in EUR)
+        with self.assertRaises(ValidationError):
+            advance_payment_5 = (
+                self.env["account.voucher.wizard"]
+                .with_context(context_payment)
+                .create(
+                    {
+                        "journal_id": self.journal_eur_bank.id,
+                        "payment_type": "outbound",
+                        "amount_advance": 850.01,
+                        "order_id": self.sale_order_1.id,
+                    }
+                )
+            )
+            advance_payment_5.make_advance_payment()
 
         # Confirm Sale Order
         self.sale_order_1.action_confirm()
@@ -381,3 +408,52 @@ class TestSaleAdvancePayment(common.SavepointCase):
         self.sale_order_1.invalidate_cache()
         self.assertEqual(self.sale_order_1.amount_residual, 1300)
         self.assertEqual(invoice.amount_residual, 0)
+
+    def test_04_residual_amount_with_credit_note(self):
+        PaymentRegister = self.env["account.payment.register"]
+        payment_register_vals = {
+            "amount": 3600.0,
+            "group_payment": True,
+            "payment_difference_handling": "open",
+        }
+
+        self.assertEqual(
+            self.sale_order_1.amount_residual,
+            3600,
+        )
+        # Confirm Sale Order
+        self.sale_order_1.action_confirm()
+
+        # Create Invoice
+        invoice = self.sale_order_1._create_invoices()
+        invoice.action_post()
+        self.assertEqual(invoice.amount_residual, 3600)
+
+        # Pay invoice in full
+        PaymentRegister.with_context(
+            active_model="account.move", active_ids=invoice.ids
+        ).create(payment_register_vals)._create_payments()
+        self.assertEqual(self.sale_order_1.amount_residual, 0)
+
+        # Reverse paid invoice
+        move_reversal = (
+            self.env["account.move.reversal"]
+            .with_context(active_model="account.move", active_ids=invoice.ids)
+            .create(
+                {
+                    "date": fields.Date.today(),
+                    "reason": "client wanted refund",
+                    "refund_method": "refund",
+                }
+            )
+        )
+        reversal = move_reversal.reverse_moves()
+        reverse_move = self.env["account.move"].browse(reversal["res_id"])
+        reverse_move.action_post()
+
+        # Pay reverse invoice in full
+        PaymentRegister.with_context(
+            active_model="account.move", active_ids=reverse_move.ids
+        ).create(payment_register_vals)._create_payments()
+        self.assertEqual(reverse_move.amount_residual, 0)
+        self.assertEqual(self.sale_order_1.amount_residual, 0)

@@ -9,25 +9,25 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-05 00:45+0000\n"
-"PO-Revision-Date: 2023-02-01 16:49+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-29 17:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model,name:stock_quant_manual_assign.model_assign_manual_quants
 msgid "Assign Manual Quants"
-msgstr "Assegna quanto manuale"
+msgstr "Assegna quanti manuali"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model,name:stock_quant_manual_assign.model_assign_manual_quants_lines
 msgid "Assign Manual Quants Lines"
-msgstr "Righe assegnazione quanti manuale"
+msgstr "Assegna righe quanti manuali"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_stock_picking_type__auto_fill_qty_done
@@ -100,6 +100,7 @@ msgid "Lot"
 msgstr "Lotto"
 
 #. module: stock_quant_manual_assign
+#: model_terms:ir.ui.view,arch_db:stock_quant_manual_assign.stock_move_manual_quants_form_view
 #: model_terms:ir.ui.view,arch_db:stock_quant_manual_assign.stock_picking_manual_quants_form_view
 msgid "Manual Quants"
 msgstr "Quanti manuali"
@@ -133,17 +134,17 @@ msgstr "Proprietario"
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__package_id
 msgid "Package"
-msgstr "Imballaggio"
+msgstr "Collo"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model,name:stock_quant_manual_assign.model_stock_picking_type
 msgid "Picking Type"
-msgstr "Tipo prelievo"
+msgstr "Tipologia prelievo"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__qty
 msgid "QTY"
-msgstr "Qta"
+msgstr "Q.tà"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__quant_id
@@ -164,12 +165,12 @@ msgstr "Quanti"
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants__move_qty
 msgid "Remaining qty"
-msgstr "Qta rimanente"
+msgstr "Q.tà rimanente"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants__lines_qty
 msgid "Reserved qty"
-msgstr "Qta riservata"
+msgstr "Q.tà riservata"
 
 #. module: stock_quant_manual_assign
 #: model:ir.model.fields,field_description:stock_quant_manual_assign.field_assign_manual_quants_lines__selected
@@ -210,7 +211,7 @@ msgstr "Questo è il proprietario del quanto"
 #. module: stock_quant_manual_assign
 #: model_terms:ir.ui.view,arch_db:stock_quant_manual_assign.assign_manual_quants_form_view
 msgid "qty"
-msgstr "qta"
+msgstr "q.tà"
 
 #~ msgid "Name"
 #~ msgstr "Nome"

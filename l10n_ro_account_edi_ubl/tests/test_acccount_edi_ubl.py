@@ -21,18 +21,35 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
         cls.country_state = cls.env["res.country.state"].search(
             [("name", "=", "Timiș")]
         )
-        cls.env.company.write(
-            {
-                "vat": "RO30834857",
-                "name": "FOREST AND BIOMASS ROMANIA S.A.",
-                "country_id": cls.env.ref("base.ro").id,
-                "currency_id": cls.currency.id,
-                "street": "Ferma 5-6",
-                "city": "Giulvaz",
-                "state_id": cls.country_state.id,
-                "zip": "300011",
-            }
+        l10n_ro_address_extend = cls.env["ir.module.module"].search(
+            [("name", "=", "l10n_ro_address_extended")]
         )
+        if l10n_ro_address_extend.state != "installed":
+            cls.env.company.write(
+                {
+                    "vat": "RO30834857",
+                    "name": "FOREST AND BIOMASS ROMANIA S.A.",
+                    "country_id": cls.env.ref("base.ro").id,
+                    "currency_id": cls.currency.id,
+                    "street": "Ferma 5-6",
+                    "city": "Giulvaz",
+                    "state_id": cls.country_state.id,
+                    "zip": "300011",
+                }
+            )
+        else:
+            cls.env.company.write(
+                {
+                    "vat": "RO30834857",
+                    "name": "FOREST AND BIOMASS ROMANIA S.A.",
+                    "country_id": cls.env.ref("base.ro").id,
+                    "currency_id": cls.currency.id,
+                    "street_name": "Ferma 5-6",
+                    "city": "Giulvaz",
+                    "state_id": cls.country_state.id,
+                    "zip": "300011",
+                }
+            )
 
         cls.partner = cls.env["res.partner"].create(
             {
@@ -121,7 +138,6 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
             xmlns:cac=
             "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
-                <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
                 <cbc:CustomizationID>
                     urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1
                 </cbc:CustomizationID>
@@ -283,3 +299,5 @@ class TestAccountEdiUbl(AccountEdiTestCommon):
             self.expected_invoice_factur_values
         )
         self.assertXmlTreeEqual(current_etree, expected_etree)
+
+    # TODO-add test for credit note

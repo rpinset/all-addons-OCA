@@ -1,6 +1,6 @@
 /* Copyright 2016 ACSONE SA/NV (<https://acsone.eu>)
  * Copyright 2021 Studio73 - Pablo Fuentes (https://www.studio73.es)
- * License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). */
+ * License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). */
 
 odoo.define("date_range.CustomFilterItem", function (require) {
     "use strict";
@@ -70,9 +70,9 @@ odoo.define("date_range.CustomFilterItem", function (require) {
                         condition.operator
                     ];
                     if (operator.date_range) {
-                        const eid = parseInt(ev.target.value);
+                        const eid = parseInt(ev.target.value, 10);
                         const ranges = this.date_ranges[operator.date_range_type];
-                        const range = ranges.find((x) => x.id == eid);
+                        const range = ranges.find((x) => x.id === eid);
                         const d_start = moment(`${range.date_start} 00:00:00Z`);
                         const d_end = moment(`${range.date_end} 23:59:59Z`);
                         condition.value = [d_start, d_end];

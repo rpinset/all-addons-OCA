@@ -10,7 +10,6 @@ from ..cnab.cnab import CnabBatch, CnabDetailRecord, RecordType
 
 
 class CNABBatch(models.Model):
-
     _name = "l10n_br_cnab.batch"
     _description = "A batch of lines in a CNAB structure."
 
@@ -51,15 +50,15 @@ class CNABBatch(models.Model):
 
     def get_header(self):
         "Returns the batch header record"
-        return self.line_ids.filtered(lambda l: l.type == "header")
+        return self.line_ids.filtered(lambda line: line.type == "header")
 
     def get_trailer(self):
         "Returns the batch trailer record"
-        return self.line_ids.filtered(lambda l: l.type == "trailer")
+        return self.line_ids.filtered(lambda line: line.type == "trailer")
 
     def get_segments(self):
         "Returns the batch segments records"
-        return self.line_ids.filtered(lambda l: l.type == "segment")
+        return self.line_ids.filtered(lambda line: line.type == "segment")
 
     def output(self, bank_lines, seq_batch):
         """
@@ -104,13 +103,12 @@ class CNABBatch(models.Model):
         return batch
 
     def unlink(self):
-        lines = self.filtered(lambda l: l.state != "draft")
+        lines = self.filtered(lambda line: line.state != "draft")
         if lines:
             raise UserError(_("You cannot delete an CNAB Batch which is not draft !"))
-        return super(CNABBatch, self).unlink()
+        return super().unlink()
 
     def check_batch(self):
-
         if self.cnab_structure_id.cnab_format != "240":
             raise UserError(
                 _(f"{self.name}: A batch must belong to a CNAB 240 structure!")

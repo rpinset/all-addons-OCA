@@ -2,6 +2,9 @@
 #  Luis Felipe Miléo - mileo@kmee.com.br
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+
+from erpbrasil.base import misc
+
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
@@ -212,13 +215,13 @@ class AccountPaymentLine(models.Model):
         """
         Override to add brazilian validations
         """
-        res = super(AccountPaymentLine, self).draft2open_payment_line_check()
+        res = super().draft2open_payment_line_check()
         self._check_pix_transfer_type()
         return res
 
     @api.onchange("partner_id")
     def partner_id_change(self):
-        res = super(AccountPaymentLine, self).partner_id_change()
+        res = super().partner_id_change()
         partner_pix = False
         if self.partner_id.pix_key_ids:
             partner_pix = self.partner_id.pix_key_ids[0]
@@ -250,3 +253,78 @@ class AccountPaymentLine(models.Model):
                         f"Payment Line: {rec.name}"
                     )
                 )
+
+    # TODO: Implementar métodos para outros tipos cnab.
+    #   _prepare_pagamento_line_vals
+    #   _prepare_debito_automatico_line_vals
+    #   _prepare_[...]_line_vals
+
+    def _prepare_boleto_line_vals(self):
+        return {
+            "valor": self.amount_currency,
+            "data_vencimento": self.date.strftime("%Y/%m/%d"),
+            "nosso_numero": self.own_number,
+            "documento_sacado": misc.punctuation_rm(self.partner_id.cnpj_cpf),
+            "nome_sacado": self.partner_id.legal_name.strip()[:40],
+            "numero": self.document_number,
+            "endereco_sacado": str(
+                self.partner_id.street_name + ", " + str(self.partner_id.street_number)
+            )[:40],
+            "bairro_sacado": self.partner_id.district.strip(),
+            "cep_sacado": misc.punctuation_rm(self.partner_id.zip),
+            "cidade_sacado": self.partner_id.city_id.name,
+            "uf_sacado": self.partner_id.state_id.code,
+            # Codigo da Ocorrencia usado pode variar por Banco, CNAB e operação
+            # ex.: UNICRED 240/400 é 01 - Remessa*, 02 - Pedido de Baixa e
+            # 06 - Alteração de vencimento . Veja que está sendo informado
+            # o campo Code do objeto.
+            "identificacao_ocorrencia": self.mov_instruction_code_id.code,
+        }
+
+
+class BankPaymentLine(models.Model):
+    _name = "bank.payment.line"
+    _description = "Bank Payment Lines"
+    # TODO: Sem isso acontece o erro abaixo, por isso é preciso incluir o objeto
+    #  bank.payment.line vazio e rodar um update,
+    #  Em outro PR o objeto será removido e assim em um terceiro update vai
+    #  limpar o Warning. Para evitar problemas o melhor será remover o objeto
+    #  na migração de versão v15 ou v16.
+    #  LOG com erro.
+    #  Referencia https://github.com/odoo/odoo/issues/44767
+    #
+    # 2023-03-10 21:15:22,323 72 INFO db odoo.addons.base.models.ir_model:
+    # Deleting 1622@ir.model.fields.selection (
+    # l10n_br_account_payment_order.
+    # selection__bank_payment_line__last_cnab_state__done)
+    # 2023-03-10 21:15:22,326 72 WARNING db odoo.modules.loading:
+    # Transient module states were reset
+    # 2023-03-10 21:15:22,328 72 ERROR db odoo.modules.registry:
+    # Failed to load registry
+    # 2023-03-10 21:15:22,328 72 CRITICAL db odoo.service.server:
+    # Failed to initialize database `db`.
+    # Traceback (most recent call last):
+    #   File "/odoo/src/odoo/service/server.py", line 1201, in preload_registries
+    #     registry = Registry.new(dbname, update_module=update_module)
+    #   File "/odoo/src/odoo/modules/registry.py", line 89, in new
+    #     odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+    #   File "/odoo/src/odoo/modules/loading.py", line 505, in load_modules
+    #     env['ir.model.data']._process_end(processed_modules)
+    #   File "/odoo/src/odoo/addons/base/models/ir_model.py",
+    #   line 2310, in _process_end
+    #     self._process_end_unlink_record(record)
+    #   File "/odoo/src/odoo/addons/base/models/ir_model.py",
+    #   line 2233, in _process_end_unlink_record
+    #     record.unlink()
+    #   File "/odoo/src/odoo/addons/base/models/ir_model.py",
+    #   line 1380, in unlink
+    #     self._process_ondelete()
+    #   File "/odoo/src/odoo/addons/base/models/ir_model.py",
+    #   line 1418, in _process_ondelete
+    #     Model = self.env[selection.field_id.model]
+    #   File "/odoo/src/odoo/api.py", line 476, in __getitem__
+    #     return self.registry[model_name]._browse(self, (), ())
+    #   File "/odoo/src/odoo/modules/registry.py",
+    #   line 177, in __getitem__
+    #     return self.models[model_name]
+    # KeyError: 'bank.payment.line'

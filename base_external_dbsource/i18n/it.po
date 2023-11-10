@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-06 02:24+0000\n"
-"PO-Revision-Date: 2023-04-10 16:32+0000\n"
+"PO-Revision-Date: 2023-04-17 16:38+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -59,6 +59,11 @@ msgstr ""
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__client_key
 msgid "Client Key"
+msgstr ""
+
+#. module: base_external_dbsource
+#: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__company_id
+msgid "Company"
 msgstr ""
 
 #. module: base_external_dbsource
@@ -120,16 +125,6 @@ msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_form
-msgid "External DB Source"
-msgstr ""
-
-#. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_tree
-msgid "External DB Sources"
-msgstr ""
-
-#. module: base_external_dbsource
 #: model:ir.actions.act_window,name:base_external_dbsource.action_dbsource
 #: model:ir.model,name:base_external_dbsource.model_base_external_dbsource
 msgid "External Database Sources"
@@ -160,7 +155,7 @@ msgstr "Ultimo aggiornamento di"
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__write_date
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "Ultimo aggiornamento il"
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__password

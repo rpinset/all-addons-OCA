@@ -1,12 +1,12 @@
 # Copyright (C) 2020  KMEE - www.kmee.com.br
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-import logging
 from datetime import datetime
 
 from erpbrasil.assinatura import certificado as cert
-from erpbrasil.edoc.nfe import NFe as edoc_nfe
+from erpbrasil.base.misc import punctuation_rm
 from erpbrasil.transmissao import TransmissaoSOAP
+from nfelib.nfe.ws.edoc_legacy import NFCeAdapter as edoc_nfce, NFeAdapter as edoc_nfe
 from requests import Session
 
 from odoo import _, fields, models
@@ -14,34 +14,35 @@ from odoo.exceptions import UserError
 
 from odoo.addons.l10n_br_fiscal.constants.fiscal import EVENT_ENV_HML, EVENT_ENV_PROD
 
-_logger = logging.getLogger(__name__)
-
-try:
-    from erpbrasil.base.misc import punctuation_rm
-except ImportError:
-    _logger.error("Biblioteca erpbrasil.base não instalada")
-
 
 class InvalidateNumber(models.Model):
     _inherit = "l10n_br_fiscal.invalidate.number"
 
     def _processador(self):
-        if not self.company_id.certificate_nfe_id:
+        if not self.company_id.sudo().certificate_nfe_id:
             raise UserError(_("Certificado não encontrado"))
 
         certificado = cert.Certificado(
-            arquivo=self.company_id.certificate_nfe_id.file,
-            senha=self.company_id.certificate_nfe_id.password,
+            arquivo=self.company_id.sudo().certificate_nfe_id.file,
+            senha=self.company_id.sudo().certificate_nfe_id.password,
         )
         session = Session()
         session.verify = False
-        transmissao = TransmissaoSOAP(certificado, session)
-        return edoc_nfe(
-            transmissao,
-            self.company_id.state_id.ibge_code,
-            versao="4.00",
-            ambiente=self.company_id.nfe_environment,
-        )
+        params = {
+            "transmissao": TransmissaoSOAP(certificado, session),
+            "uf": self.company_id.state_id.ibge_code,
+            "versao": "4.00",
+            "ambiente": self.company_id.nfe_environment,
+        }
+
+        if self.document_type_id.code == "65":
+            params.update(
+                csc_token=self.company_id.nfce_csc_token,
+                csc_code=self.company_id.nfce_csc_code,
+            )
+            return edoc_nfce(**params)
+
+        return edoc_nfe(**params)
 
     def _invalidate(self, document_id=False):
         processador = self._processador()
@@ -89,4 +90,4 @@ class InvalidateNumber(models.Model):
         )
 
         if processo.resposta.infInut.cStat == "102":
-            return super(InvalidateNumber, self)._invalidate(document_id)
+            return super()._invalidate(document_id)

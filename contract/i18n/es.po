@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-31 14:54+0000\n"
-"PO-Revision-Date: 2022-11-09 10:45+0000\n"
+"PO-Revision-Date: 2023-05-17 14:00-0400\n"
 "Last-Translator: JHernandezConinpe <jhernandez@coninpe.es>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. module: contract
 #: model:mail.template,body_html:contract.mail_template_contract_modification
@@ -227,6 +227,39 @@ msgstr "<strong>#END#</strong>: Fecha fin del periodo facturado"
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Invoice month name\n"
+"                                    of\n"
+"                                    the\n"
+"                                    invoiced period"
+msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Nombre del mes\n"
+"                                    del\n"
+"                                    periodo facturado"
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
+"period"
+msgstr ""
+"<strong>#INVOICEMONTHNAME#</strong>: Nombre del mes del periodo facturado"
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
+"<strong>#INVOICEMONTHNUMBER#</strong>: Invoice month number of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid "<strong>#INVOICEYEAR#</strong>: Invoice year of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
 "<strong>#START#</strong>\n"
 "                                    : Start\n"
 "                                    date\n"
@@ -428,6 +461,12 @@ msgid "Analytic account"
 msgstr "Cuenta analítica"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "April"
+msgstr "Abril"
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
 msgstr "Archivado"
@@ -457,6 +496,12 @@ msgstr "Socio asociado"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr "Nº de archivos adjuntos"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "August"
+msgstr "Agosto"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -1061,6 +1106,12 @@ msgid "Day(s)"
 msgstr "Día(s)"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "December"
+msgstr "Diciembre"
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
@@ -1149,6 +1200,12 @@ msgid ""
 "Failed to process the contract %(name)s [id: %(id)s]:\n"
 "%(ue)s"
 msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "February"
+msgstr "Febrero"
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
@@ -1259,7 +1316,6 @@ msgstr "Si está marcado los nuevos mensajes requieren su atención."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error
-#: model:ir.model.fields,help:contract.field_contract_contract__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado algunos mensajes tienen un error de entrega."
 
@@ -1387,6 +1443,12 @@ msgid "Is suspension without end date"
 msgstr "Es suspensión sin fecha de finalización"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "January"
+msgstr "Enero"
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
@@ -1403,6 +1465,18 @@ msgstr "Entrada de diario"
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
 msgstr "Apunte contable"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "July"
+msgstr "Julio"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "June"
+msgstr "Junio"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__last_date_invoiced
@@ -1500,6 +1574,12 @@ msgid "Manually Invoice Sale Contracts"
 msgstr "Facturar manualmente contratos de venta"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "March"
+msgstr "Marzo"
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
@@ -1509,6 +1589,12 @@ msgid ""
 msgstr ""
 "Marque esta casilla si desea controlar la recurrencia a nivel de línea en "
 "lugar de todos juntos para todo el contrato."
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "May"
+msgstr "Mayo"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
@@ -1633,6 +1719,12 @@ msgid "Notes"
 msgstr "Notas"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "November"
+msgstr "Noviembre"
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Número de Acciones"
@@ -1672,6 +1764,12 @@ msgstr "Número de mensajes con error de entrega"
 #: model:ir.model.fields,help:contract.field_contract_contract__message_unread_counter
 msgid "Number of unread messages"
 msgstr "Número de mensajes no leídos"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "October"
+msgstr "Octubre"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
@@ -1904,11 +2002,6 @@ msgid "Responsible User"
 msgstr "Usuario Responsable"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de entrega de SMS"
-
-#. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__sale_contract_count
 #: model:ir.model.fields,field_description:contract.field_res_users__sale_contract_count
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
@@ -1949,6 +2042,12 @@ msgstr "Enviar por correo electrónico"
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
 msgstr "Enviado"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "September"
+msgstr "Septiembre"
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__sequence
@@ -2414,6 +2513,9 @@ msgstr "ejemplo Contrato XYZ"
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "on"
 msgstr "en"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de entrega de SMS"
 
 #~ msgid ""
 #~ "<span attrs=\"{'invisible': [('contract_to_invoice_count', '&gt;', "

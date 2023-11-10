@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-03-23 13:24+0000\n"
+"PO-Revision-Date: 2023-10-31 09:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: purchase_vendor_bill_breakdown
 #: model_terms:ir.ui.view,arch_db:purchase_vendor_bill_breakdown.purchase_order_line_components_form_view
@@ -29,7 +29,7 @@ msgstr "Fatturato"
 #. module: purchase_vendor_bill_breakdown
 #: model:ir.model.fields,field_description:purchase_vendor_bill_breakdown.field_purchase_order_line__last_qty_invoiced
 msgid "Billed Qty"
-msgstr "Qtà fatturata"
+msgstr "Q.tà fatturata"
 
 #. module: purchase_vendor_bill_breakdown
 #: model_terms:ir.ui.view,arch_db:purchase_vendor_bill_breakdown.purchase_order_line_components_form_view
@@ -56,12 +56,7 @@ msgstr "Componente"
 #. module: purchase_vendor_bill_breakdown
 #: model:ir.model.fields,field_description:purchase_vendor_bill_breakdown.field_account_move_line__component_qty
 msgid "Component Qty"
-msgstr "Qtà componente"
-
-#. module: purchase_vendor_bill_breakdown
-#: model_terms:ir.ui.view,arch_db:purchase_vendor_bill_breakdown.purchase_order_line_components_form_view
-msgid "Components"
-msgstr "Componenti"
+msgstr "Q.tà componente"
 
 #. module: purchase_vendor_bill_breakdown
 #: code:addons/purchase_vendor_bill_breakdown/models/purchase_order_line.py:0
@@ -247,7 +242,7 @@ msgstr "Componente listino prezzi fornitore"
 #. module: purchase_vendor_bill_breakdown
 #: model:ir.model.fields,help:purchase_vendor_bill_breakdown.field_product_supplierinfo__price
 msgid "The price to purchase a product"
-msgstr "Il prezzo di acquisto di un prodotto"
+msgstr "Prezzo di acquisto di un prodotto"
 
 #. module: purchase_vendor_bill_breakdown
 #: model:ir.model.fields,field_description:purchase_vendor_bill_breakdown.field_purchase_order_line_component__qty_to_invoice
@@ -330,3 +325,6 @@ msgstr ""
 msgid "You need to activate 'Use Product Component' to use it."
 msgstr ""
 "Devi attivare \"Usa componenti prodotto\" per utilizzare le sue funzioni."
+
+#~ msgid "Components"
+#~ msgstr "Componenti"

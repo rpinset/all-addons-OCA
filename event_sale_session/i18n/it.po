@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-10-26 10:44+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
+"PO-Revision-Date: 2023-07-31 12:10+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: event_sale_session
 #: model:ir.model.fields,field_description:event_sale_session.field_sale_order__registration_ids
@@ -108,10 +108,11 @@ msgstr "Ultima modifica il"
 
 #. module: event_sale_session
 #: code:addons/event_sale_session/models/sale_order.py:0
-#: code:addons/event_sale_session/models/sale_order.py:0
 #, python-format
-msgid "Not enough seats. Change quantity or session"
-msgstr "Posti non sufficienti. Cambiare quantità o sessione"
+msgid "Not enough seats in session %(session)s. Change quantity or session"
+msgstr ""
+"Non ci sono posti sufficienti nella sessione %(session)s. Modificare la "
+"quantità della sessione"
 
 #. module: event_sale_session
 #: model:ir.model.fields,field_description:event_sale_session.field_sale_report__event_session_count
@@ -121,7 +122,7 @@ msgstr "Numero di sessioni per l'evento"
 #. module: event_sale_session
 #: model:ir.model,name:event_sale_session.model_sale_report
 msgid "Sales Analysis Report"
-msgstr "Resoconto di analisi vendite"
+msgstr "Resoconto analisi vendite"
 
 #. module: event_sale_session
 #: model:ir.model,name:event_sale_session.model_sale_order
@@ -166,7 +167,7 @@ msgstr "Sessioni evento totali"
 #. module: event_sale_session
 #: model_terms:ir.ui.view,arch_db:event_sale_session.view_event_session_tree
 msgid "Total unconfirmed seats in orders"
-msgstr ""
+msgstr "Totale posti non confermati negli ordini"
 
 #. module: event_sale_session
 #: model:ir.model.fields,field_description:event_sale_session.field_event_event__unconfirmed_qty
@@ -177,9 +178,13 @@ msgstr "Q.tà non confermata"
 #. module: event_sale_session
 #: model_terms:ir.ui.view,arch_db:event_sale_session.view_event_form
 msgid "Unconfirmed order seats"
-msgstr ""
+msgstr "Posti ordine non confermato"
 
 #. module: event_sale_session
 #: model_terms:ir.ui.view,arch_db:event_sale_session.view_event_form
 msgid "Unconfirmed orders seats"
-msgstr ""
+msgstr "Posti ordini non confermati"
+
+#, python-format
+#~ msgid "Not enough seats. Change quantity or session"
+#~ msgstr "Posti non sufficienti. Cambiare quantità o sessione"

@@ -18,7 +18,7 @@
         <field name="name">l10n.ro.res.country.commune.tree</field>
         <field name="model">l10n.ro.res.country.commune</field>
         <field name="arch" type="xml">
-            <tree string="Communes">
+            <tree>
                 <field name="name" />
                 <field name="siruta" />
                 <field name="state_id" />
@@ -81,7 +81,10 @@
         <field name="parent_id" ref="contacts.menu_localisation" />
         <field
             name="groups_id"
-            eval="[(4, ref('base.group_user')),(4, ref('base.group_partner_manager'))]"
+            eval="[
+                    (4, ref('base.group_user')),
+                    (4, ref('base.group_partner_manager')),
+                ]"
         />
         <field name="is_l10n_ro_record" eval="True" />
     </record>

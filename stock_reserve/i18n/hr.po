@@ -815,7 +815,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock_reserve.product_template_form_view_reservation_button
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_search
-#: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_tree
 msgid "Stock Reservations"
 msgstr ""
 
@@ -956,6 +955,16 @@ msgstr ""
 #. module: stock_reserve
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 msgid "View Reservation Move"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume
+msgid "Volume"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume_uom_name
+msgid "Volume unit of measure label"
 msgstr ""
 
 #. module: stock_reserve

@@ -61,6 +61,11 @@ msgid "Client Key"
 msgstr ""
 
 #. module: base_external_dbsource
+#: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__company_id
+msgid "Company"
+msgstr ""
+
+#. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__conn_string_full
 msgid "Conn String Full"
 msgstr ""
@@ -117,16 +122,6 @@ msgstr "Databron-naam"
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__display_name
 msgid "Display Name"
 msgstr "weergavenaam"
-
-#. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_form
-msgid "External DB Source"
-msgstr "Externe DB bron"
-
-#. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_tree
-msgid "External DB Sources"
-msgstr "Externe DB bronnen"
 
 #. module: base_external_dbsource
 #: model:ir.actions.act_window,name:base_external_dbsource.action_dbsource
@@ -191,6 +186,12 @@ msgstr "Test Verbinding"
 #, python-format
 msgid "query is a required argument"
 msgstr ""
+
+#~ msgid "External DB Source"
+#~ msgstr "Externe DB bron"
+
+#~ msgid "External DB Sources"
+#~ msgstr "Externe DB bronnen"
 
 #~ msgid "Microsoft SQL Server"
 #~ msgstr "Microsoft SQL Server"

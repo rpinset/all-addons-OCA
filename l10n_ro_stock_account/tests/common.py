@@ -79,6 +79,25 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         cls.env.company.l10n_ro_stock_acc_price_diff = True
 
         cls.setUpAccounts()
+        # activare momenda RON si EUR
+        cls.currency_eur = cls.env.ref("base.EUR")
+        cls.currency_ron = cls.env.ref("base.RON")
+        cls.currency_eur.active = True
+
+        cls.currency_eur.rate_ids.create(
+            {
+                "name": "2021-01-01",
+                "rate": 4.5,
+                "company_id": cls.env.company.id,
+                "currency_id": cls.currency_ron.id,
+            }
+        )
+
+        # convertesc 1 EUR in RON
+        cls.rate = cls.currency_eur._convert(
+            1, cls.currency_ron, cls.env.company, fields.Date.today()
+        )
+        _logger.info("Rate of EUR: %s", cls.rate)
 
         stock_journal = cls.env["account.journal"].search(
             [("code", "=", "STJ"), ("company_id", "=", cls.env.company.id)],
@@ -105,15 +124,32 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             "l10n_ro_stock_account_change": True,
         }
 
-        cls.category = cls.env["product.category"].search(
+        cls.category_fifo = cls.env["product.category"].search(
             [("name", "=", "TEST Marfa")], limit=1
         )
-        if not cls.category:
-            cls.category = cls.env["product.category"].create(category_value)
+        if not cls.category_fifo:
+            cls.category_fifo = cls.env["product.category"].create(category_value)
         else:
-            cls.category.write(category_value)
+            cls.category_fifo.write(category_value)
 
-        cls.category_mp = cls.category.copy(
+        cls.category = cls.category_fifo
+
+        category_value.update(
+            {
+                "name": "TEST Marfa ",
+                "property_cost_method": "average",
+            }
+        )
+
+        cls.category_average = cls.env["product.category"].search(
+            [("name", "=", "TEST Marfa Average")], limit=1
+        )
+        if not cls.category_average:
+            cls.category_average = cls.env["product.category"].create(category_value)
+        else:
+            cls.category_average.write(category_value)
+
+        cls.category_mp = cls.category_fifo.copy(
             {
                 "property_account_expense_categ_id": cls.account_expense_mp.id,
                 "property_stock_account_input_categ_id": cls.account_valuation_mp.id,
@@ -131,11 +167,12 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             {
                 "name": "Product A",
                 "type": "product",
-                "categ_id": cls.category.id,
+                "categ_id": cls.category_fifo.id,
                 "invoice_policy": "delivery",
                 "purchase_method": "receive",
                 "list_price": cls.list_price_p1,
                 "standard_price": cls.price_p1,
+                "uom_id": cls.env.ref("uom.product_uom_unit").id,
             }
         )
         cls.product_2 = cls.env["product.product"].create(
@@ -143,10 +180,24 @@ class TestStockCommon(ValuationReconciliationTestCommon):
                 "name": "Product B",
                 "type": "product",
                 "purchase_method": "receive",
-                "categ_id": cls.category.id,
+                "categ_id": cls.category_average.id,
                 "invoice_policy": "delivery",
                 "list_price": cls.list_price_p2,
                 "standard_price": cls.price_p2,
+                "uom_id": cls.env.ref("uom.product_uom_unit").id,
+            }
+        )
+        cls.product_kg = cls.env["product.product"].create(
+            {
+                "name": "Product A",
+                "type": "product",
+                "categ_id": cls.category_fifo.id,
+                "invoice_policy": "delivery",
+                "purchase_method": "receive",
+                "list_price": cls.list_price_p1,
+                "standard_price": cls.price_p1,
+                "uom_id": cls.env.ref("uom.product_uom_kgm").id,  # kg
+                "uom_po_id": cls.env.ref("uom.product_uom_ton").id,  # tone
             }
         )
 
@@ -288,6 +339,54 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             vals = {}
         self.picking.write(vals)
 
+    def create_purchase_order(self, vals):
+        po = Form(self.env["purchase.order"])
+        po.partner_id = vals.get("partner", self.vendor)
+        po.currency_id = vals.get("currency", self.currency_ron)
+        po.picking_type_id = vals.get("picking_type", self.picking_type_in_warehouse)
+
+        for line in vals.get("lines", []):
+            with po.order_line.new() as po_line:
+                po_line.product_id = line.get("product", False)
+                po_line.product_qty = line.get("qty", False)
+                po_line.price_unit = line.get("price", False)
+
+        po = po.save()
+        po.button_confirm()
+        self.po = po
+        self.validate_picking(po.picking_ids)
+        return po
+
+    def validate_picking(self, pickings):
+        for picking in pickings:
+            for move_line in picking.move_line_ids:
+                move_line.write({"qty_done": move_line.product_uom_qty})
+            picking.button_validate()
+            picking._action_done()
+
+    def create_po_default(self, values=None):
+        value = {
+            "partner": self.vendor,
+            "currency": self.currency_ron,
+            "picking_type": self.picking_type_in_warehouse,
+            "lines": [
+                {
+                    "product": self.product_1,
+                    "qty": self.qty_po_p1,
+                    "price": self.price_p1,
+                },
+                {
+                    "product": self.product_2,
+                    "qty": self.qty_po_p2,
+                    "price": self.price_p2,
+                },
+            ],
+        }
+        if not values:
+            values = {}
+        value.update(values)
+        return self.create_purchase_order(value)
+
     def create_po(
         self, picking_type_in=None, partial=None, vals=False, validate_picking=True
     ):
@@ -327,7 +426,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
 
             self.picking.button_validate()
             self.picking._action_done()
-            _logger.info("Receptie facuta")
+            _logger.debug("Receptie facuta")
 
         self.po = po
         return po
@@ -339,7 +438,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             self.env["account.move"].with_context(
                 default_move_type="in_invoice",
                 default_invoice_date=fields.Date.today(),
-                active_model="accoun.move",
+                active_model="account.move",
             )
         )
         invoice.partner_id = self.vendor
@@ -380,6 +479,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         return_pick = self.env["stock.picking"].browse(res["res_id"])
 
         # Validate picking
+        return_pick.button_validate()
         return_pick.action_confirm()
         return_pick.action_assign()
         for move_line in return_pick.move_lines:
@@ -472,10 +572,16 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             picking._action_done()
         self.picking = picking
 
-    def check_stock_valuation(self, val_p1, val_p2):
+    def check_stock_valuation(self, val_p1, val_p2, account=None):
         val_p1 = round(val_p1, 2)
         val_p2 = round(val_p2, 2)
-        domain = [("product_id", "in", [self.product_1.id, self.product_2.id])]
+        if not account:
+            account = self.account_valuation
+
+        domain = [
+            ("product_id", "in", [self.product_1.id, self.product_2.id]),
+            ("l10n_ro_account_id", "=", account.id),
+        ]
         valuations = self.env["stock.valuation.layer"].read_group(
             domain,
             ["value:sum", "quantity:sum", "remaining_value:sum", "remaining_qty:sum"],

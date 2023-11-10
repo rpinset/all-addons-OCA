@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-02-01 19:46+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-09-03 13:43+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: agreement
 #: code:addons/agreement/models/agreement.py:0
@@ -75,7 +75,6 @@ msgstr ""
 #: model:ir.actions.act_window,name:agreement.agreement_type_action
 #: model:ir.model,name:agreement.model_agreement_type
 #: model:ir.ui.menu,name:agreement.agreement_type_menu
-#: model_terms:ir.ui.view,arch_db:agreement.agreement_type_list_view
 msgid "Agreement Types"
 msgstr ""
 
@@ -83,7 +82,6 @@ msgstr ""
 #: model:ir.actions.act_window,name:agreement.agreement_action
 #: model:ir.ui.menu,name:agreement.agreement_menu
 #: model:ir.ui.menu,name:agreement.agreement_menu_root
-#: model_terms:ir.ui.view,arch_db:agreement.agreement_tree
 msgid "Agreements"
 msgstr ""
 
@@ -93,7 +91,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:agreement.agreement_type_form_view
 #: model_terms:ir.ui.view,arch_db:agreement.agreement_type_search
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: agreement
 #: model:ir.model.fields,field_description:agreement.field_agreement__message_attachment_count
@@ -190,7 +188,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: agreement
 #: model:ir.model.fields,help:agreement.field_agreement__message_has_error
-#: model:ir.model.fields,help:agreement.field_agreement__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -236,7 +233,7 @@ msgstr "Allegato principale"
 #. module: agreement
 #: model:ir.model.fields,field_description:agreement.field_agreement__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: agreement
 #: model:ir.model.fields,field_description:agreement.field_agreement__message_ids
@@ -323,11 +320,6 @@ msgid "Responsible User"
 msgstr "Utente responsabile"
 
 #. module: agreement
-#: model:ir.model.fields,field_description:agreement.field_agreement__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: agreement
 #: code:addons/agreement/models/agreement.py:0
 #: model_terms:ir.ui.view,arch_db:agreement.agreement_search
 #: model_terms:ir.ui.view,arch_db:agreement.agreement_type_search
@@ -361,7 +353,7 @@ msgstr ""
 #. module: agreement
 #: model:ir.model.fields,field_description:agreement.field_agreement__start_date
 msgid "Start Date"
-msgstr "Data di inizio"
+msgstr "Data inizio"
 
 #. module: agreement
 #: model:ir.model.fields,help:agreement.field_agreement__activity_state
@@ -436,3 +428,6 @@ msgstr ""
 #: model:ir.model.fields,help:agreement.field_agreement__start_date
 msgid "When the agreement starts."
 msgstr ""
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"

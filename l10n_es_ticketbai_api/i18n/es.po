@@ -875,6 +875,12 @@ msgid "Software Name must be unique!"
 msgstr "¡El nombre de Software TicketBAI debe ser único!"
 
 #. module: l10n_es_ticketbai_api
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_api.field_res_company__tbai_software_version
+#: model:ir.model.fields,field_description:l10n_es_ticketbai_api.field_tbai_installation__version
+msgid "Software Version"
+msgstr ""
+
+#. module: l10n_es_ticketbai_api
 #: model:ir.model.fields,help:l10n_es_ticketbai_api.field_tbai_invoice_customer__nif
 msgid "Spanish Fiscal Identification Number"
 msgstr "Número de identificación fiscal español"
@@ -1100,7 +1106,6 @@ msgstr "Certificado TicketBAI para la firma de los ficheros XML"
 #: model:ir.ui.menu,name:l10n_es_ticketbai_api.menu_tbai_certificate
 #: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_certificate_form_view
 #: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_certificate_search_view
-#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_certificate_tree_view
 msgid "TicketBAI Certificates"
 msgstr "TicketBAI Certificados"
 
@@ -1131,7 +1136,6 @@ msgstr "TicketBAI Tipo de identificación"
 #: model:ir.ui.menu,name:l10n_es_ticketbai_api.menu_tbai_installation
 #: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_installation_form_view
 #: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_installation_search_view
-#: model_terms:ir.ui.view,arch_db:l10n_es_ticketbai_api.tbai_installation_tree_view
 msgid "TicketBAI Installations"
 msgstr "TicketBAI Instalaciones"
 
@@ -1800,6 +1804,12 @@ msgstr "Clave de regímenes de IVA"
 #: model:ir.model.fields.selection,name:l10n_es_ticketbai_api.selection__tbai_invoice_customer__idtype__02
 msgid "VAT identification number"
 msgstr "NIF"
+
+#. module: l10n_es_ticketbai_api
+#: model:ir.model.fields,help:l10n_es_ticketbai_api.field_res_company__tbai_software_version
+#: model:ir.model.fields,help:l10n_es_ticketbai_api.field_tbai_installation__version
+msgid "Version of the software."
+msgstr ""
 
 #. module: l10n_es_ticketbai_api
 #: model:ir.model.fields,field_description:l10n_es_ticketbai_api.field_tbai_response__xml

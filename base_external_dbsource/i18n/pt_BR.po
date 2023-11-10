@@ -77,6 +77,11 @@ msgid "Client Key"
 msgstr ""
 
 #. module: base_external_dbsource
+#: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__company_id
+msgid "Company"
+msgstr ""
+
+#. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__conn_string_full
 #, fuzzy
 msgid "Conn String Full"
@@ -139,16 +144,6 @@ msgstr "Nome Origem-de-dados"
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource__display_name
 msgid "Display Name"
 msgstr "Nome para Mostrar"
-
-#. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_form
-msgid "External DB Source"
-msgstr "Fonte BD externo"
-
-#. module: base_external_dbsource
-#: model_terms:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_tree
-msgid "External DB Sources"
-msgstr "Fontes BD externo"
 
 #. module: base_external_dbsource
 #: model:ir.actions.act_window,name:base_external_dbsource.action_dbsource
@@ -216,3 +211,9 @@ msgstr "Conexão Teste"
 #, python-format
 msgid "query is a required argument"
 msgstr "Consulta é um argumento requerido"
+
+#~ msgid "External DB Source"
+#~ msgstr "Fonte BD externo"
+
+#~ msgid "External DB Sources"
+#~ msgstr "Fontes BD externo"

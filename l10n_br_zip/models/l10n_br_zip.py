@@ -1,24 +1,12 @@
 # Copyright (C) 2012  Renato Lima (Akretion)
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-import logging
+
+from brazilcep import WebService, get_address_from_cep
+from erpbrasil.base import misc
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
-
-_logger = logging.getLogger(__name__)
-
-try:
-    from erpbrasil.base import misc
-except ImportError:
-    _logger.error("Library erpbrasil.base not installed!")
-
-_logger = logging.getLogger(__name__)
-
-try:
-    from pycep_correios import WebService, get_address_from_cep
-except ImportError:
-    _logger.warning("Library PyCEP-Correios not installed !")
 
 
 class L10nBrZip(models.Model):
@@ -135,7 +123,7 @@ class L10nBrZip(models.Model):
                 zip_str, webservice=cep_ws_providers.get(cep_ws_provide)
             )
         except Exception as e:
-            raise UserError(_("Error in PyCEP-Correios: ") + str(e)) from e
+            raise UserError(_("Error in BrazilCEP: ") + str(e)) from e
 
         values = {}
         if cep and any(cep.values()):
@@ -149,15 +137,15 @@ class L10nBrZip(models.Model):
 
             # search city with name and state
             city = self.env["res.city"].search(
-                [("name", "ilike", cep.get("cidade")), ("state_id.id", "=", state.id)],
+                [("name", "ilike", cep.get("city")), ("state_id.id", "=", state.id)],
                 limit=1,
             )
 
             values = {
                 "zip_code": zip_str,
-                "street_name": cep.get("logradouro"),
-                "zip_complement": cep.get("complemento"),
-                "district": cep.get("bairro"),
+                "street_name": cep.get("street"),
+                "zip_complement": cep.get("complement"),
+                "district": cep.get("district"),
                 "city_id": city.id or False,
                 "state_id": state.id or False,
                 "country_id": country.id or False,
@@ -166,7 +154,6 @@ class L10nBrZip(models.Model):
 
     @api.model
     def zip_search(self, obj):
-
         try:
             domain = self._set_domain(
                 country_id=obj.country_id.id,
@@ -188,12 +175,10 @@ class L10nBrZip(models.Model):
 
         # More than one ZIP was found
         elif len(zips) > 1:
-
             return self.create_wizard(obj, zips)
 
         # Address not found in local DB, search by PyCEP-Correios
         elif not zips and obj.zip:
-
             cep_values = self._consultar_cep(obj.zip)
 
             if cep_values:
@@ -203,7 +188,6 @@ class L10nBrZip(models.Model):
                 return True
 
     def create_wizard(self, obj, zips):
-
         context = dict(self.env.context)
         context.update({"address_id": obj.id, "object_name": obj._name})
 

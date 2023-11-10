@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 16:32+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-12 09:38+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_fsm_location__change_log_count
@@ -29,7 +29,7 @@ msgstr "Azione richiesta"
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__active
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__activity_ids
@@ -54,7 +54,7 @@ msgstr "Icona tipo attività"
 #. module: fieldservice_change_management
 #: model_terms:ir.ui.view,arch_db:fieldservice_change_management.change_log_view_search
 msgid "Archived"
-msgstr "Archiviata"
+msgstr "In archivio"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__message_attachment_count
@@ -271,7 +271,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,help:fieldservice_change_management.field_change_log__message_has_error
-#: model:ir.model.fields,help:fieldservice_change_management.field_change_log__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -353,7 +352,7 @@ msgstr "Responsabile"
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__message_ids
@@ -383,17 +382,17 @@ msgstr "Nome"
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__activity_summary
 msgid "Next Activity Summary"
-msgstr "Riepilogo attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__message_needaction_counter
@@ -426,11 +425,6 @@ msgid "Responsible User"
 msgstr "Utente responsabile"
 
 #. module: fieldservice_change_management
-#: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: fieldservice_change_management
 #: model:ir.model.fields,help:fieldservice_change_management.field_change_log__stage_id
 msgid "Select the current stage of the Bandwidth Change."
 msgstr "Selezionare la fase attuale della modifica di banda."
@@ -461,15 +455,15 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: fieldservice_change_management
 #: model:ir.model.constraint,message:fieldservice_change_management.constraint_change_log_tag_name_uniq
 msgid "Tag name already exists!"
-msgstr "Nome etichetta già esistente!"
+msgstr "Il nome dell'etichetta esiste già!"
 
 #. module: fieldservice_change_management
 #: model:ir.model.fields,field_description:fieldservice_change_management.field_change_log__tag_ids
@@ -542,3 +536,6 @@ msgstr "Cronologia comunicazioni sito web"
 #: model:ir.actions.act_window,name:fieldservice_change_management.change_log_tag_action
 msgid "tags"
 msgstr "etichette"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"

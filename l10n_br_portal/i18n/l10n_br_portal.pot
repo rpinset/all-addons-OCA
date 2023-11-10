@@ -15,12 +15,17 @@ msgstr ""
 
 #. module: l10n_br_portal
 #: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
-msgid "Bairro"
+msgid "<option value=\"\">Country...</option>"
 msgstr ""
 
 #. module: l10n_br_portal
-#: model:res.users,nfe40_xPais:l10n_br_portal.demo_user_kmee
-msgid "Brazil"
+#: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
+msgid "<option value=\"\">select...</option>"
+msgstr ""
+
+#. module: l10n_br_portal
+#: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
+msgid "Bairro"
 msgstr ""
 
 #. module: l10n_br_portal
@@ -57,11 +62,6 @@ msgstr ""
 
 #. module: l10n_br_portal
 #: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
-msgid "Country..."
-msgstr ""
-
-#. module: l10n_br_portal
-#: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
 msgid "Email"
 msgstr ""
 
@@ -73,11 +73,6 @@ msgstr ""
 #. module: l10n_br_portal
 #: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
 msgid "Inscrição Municipal"
-msgstr ""
-
-#. module: l10n_br_portal
-#: model:res.users,nfe40_xMun:l10n_br_portal.demo_user_kmee
-msgid "Itajubá"
 msgstr ""
 
 #. module: l10n_br_portal
@@ -118,9 +113,4 @@ msgstr ""
 #. module: l10n_br_portal
 #: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
 msgid "Zip / Postal Code"
-msgstr ""
-
-#. module: l10n_br_portal
-#: model_terms:ir.ui.view,arch_db:l10n_br_portal.portal_my_details
-msgid "select..."
 msgstr ""

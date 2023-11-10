@@ -222,7 +222,7 @@
                                     />
                                     <field name="quantity" />
                                     <field name="allowed_uom_categ_id" invisible="1" />
-                                    <field name="uom_id" />
+                                    <field name="uom_id" groups="uom.group_uom" />
                                     <field
                                         name="automatic_price"
                                         attrs="{'column_invisible': [('parent.contract_type', '=', 'purchase')]}"
@@ -232,7 +232,11 @@
                                         attrs="{'readonly': [('automatic_price', '=', True)]}"
                                     />
                                     <field name="specific_price" invisible="1" />
-                                    <field name="discount" groups="base.group_no_one" />
+                                    <field
+                                        name="discount"
+                                        groups="product.group_discount_per_so_line"
+                                        optional="show"
+                                    />
                                     <field name="price_subtotal" />
                                     <field name="recurring_interval" invisible="1" />
                                     <field name="recurring_rule_type" invisible="1" />
@@ -256,6 +260,7 @@
                                     <field name="is_cancel_allowed" invisible="1" />
                                     <field name="is_un_cancel_allowed" invisible="1" />
                                     <field name="is_canceled" invisible="1" />
+                                    <field name="company_id" invisible="1" />
                                     <button
                                         name="action_plan_successor"
                                         string="Plan Start"
@@ -322,7 +327,7 @@
                                         groups="analytic.group_analytic_tags"
                                     />
                                     <field name="quantity" />
-                                    <field name="uom_id" />
+                                    <field name="uom_id" groups="uom.group_uom" />
                                     <field
                                         name="automatic_price"
                                         attrs="{'column_invisible': [('parent.contract_type', '=', 'purchase')]}"
@@ -332,7 +337,11 @@
                                         attrs="{'readonly': [('automatic_price', '=', True)]}"
                                     />
                                     <field name="specific_price" invisible="1" />
-                                    <field name="discount" groups="base.group_no_one" />
+                                    <field
+                                        name="discount"
+                                        groups="product.group_discount_per_so_line"
+                                        optional="show"
+                                    />
                                     <field name="price_subtotal" />
                                     <field name="recurring_interval" invisible="1" />
                                     <field name="recurring_rule_type" invisible="1" />
@@ -361,6 +370,7 @@
                                     <field name="is_un_cancel_allowed" invisible="1" />
                                     <field name="is_auto_renew" invisible="1" />
                                     <field name="is_canceled" invisible="1" />
+                                    <field name="company_id" invisible="1" />
                                     <button
                                         name="action_plan_successor"
                                         string="Plan Start"
@@ -465,6 +475,21 @@
                                     of
                                     the
                                     invoiced period
+                                </p>
+                                <p colspan="2">
+                                    <strong>#INVOICEMONTHNAME#</strong>
+                                    : Invoice month name
+                                    of
+                                    the
+                                    invoiced period
+                                </p>
+                                <p colspan="2">
+                                    <strong
+                                    >#INVOICEMONTHNUMBER#</strong>: Invoice month number of the period
+                                </p>
+                                <p colspan="2">
+                                    <strong
+                                    >#INVOICEYEAR#</strong>: Invoice year of the period
                                 </p>
                             </group>
                         </page>

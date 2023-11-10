@@ -56,12 +56,8 @@ msgstr ""
 
 #. module: storage_image
 #: model:ir.model.fields,field_description:storage_image.field_storage_image__data
-msgid "Data"
-msgstr ""
-
-#. module: storage_image
 #: model:ir.model.fields,help:storage_image.field_storage_image__data
-msgid "Datas"
+msgid "Data"
 msgstr ""
 
 #. module: storage_image
@@ -132,7 +128,6 @@ msgstr ""
 #: model:ir.ui.menu,name:storage_image.menu_storage_image
 #: model_terms:ir.ui.view,arch_db:storage_image.storage_image_view_form
 #: model_terms:ir.ui.view,arch_db:storage_image.storage_image_view_search
-#: model_terms:ir.ui.view,arch_db:storage_image.storage_image_view_tree
 msgid "Image"
 msgstr ""
 

@@ -11,8 +11,8 @@ class NfeSpecMixin(models.AbstractModel):
     _schema_name = "nfe"
     _schema_version = "4.0.0"
     _odoo_module = "l10n_br_nfe"
-    _spec_module = "odoo.addons.l10n_br_nfe_spec.models.v4_00.leiauteNFe"
-    _binding_module = "nfelib.v4_00.retEnviNFe"
+    _spec_module = "odoo.addons.l10n_br_nfe_spec.models.v4_0.leiaute_nfe_v4_00"
+    _binding_module = "nfelib.nfe.bindings.v4_0.leiaute_nfe_v4_00"
     _spec_tab_name = "NFe"
 
     brl_currency_id = fields.Many2one(
@@ -23,7 +23,13 @@ class NfeSpecMixin(models.AbstractModel):
     )
 
     def _valid_field_parameter(self, field, name):
-        if name in ("xsd_type", "xsd_required", "choice"):
+        if name in (
+            "xsd_type",
+            "xsd_required",
+            "choice",
+            "xsd_implicit",
+            "xsd_choice_required",
+        ):
             return True
         else:
             return super()._valid_field_parameter(field, name)

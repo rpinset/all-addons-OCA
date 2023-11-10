@@ -234,6 +234,21 @@ const Checkout = {
                     </v-row>
                 </div>
             </div>
+            <div v-if="state_is('select_child_location')">
+                <item-detail-card
+                    :key="make_state_component_key(['picking'])"
+                    :record="state.data.picking"
+                    :options="{key_title: 'location_dest.name'}"
+                    :card_color="utils.colors.color_for('screen_step_todo')"
+                />
+                <div class="button-list button-vertical-list full">
+                    <v-row align="center">
+                        <v-col class="text-center" cols="12">
+                            <btn-back />
+                        </v-col>
+                    </v-row>
+                </div>
+            </div>
         </Screen>
         `,
     computed: {
@@ -283,8 +298,10 @@ const Checkout = {
             };
         },
         handle_manual_select_highlight_on_scan: function (res) {
-            const new_selected_package_data = res.data.select_package;
-            new_selected_package_data.selected_move_lines.forEach((line) => {
+            // We need to ensure that the highlights of the detail-picking-select
+            // are updated correctly on scan.
+            const move_lines_data = this.get_move_lines_data(res);
+            move_lines_data.forEach((line) => {
                 let checked = false;
                 if (line.qty_done > 0) {
                     checked = true;
@@ -294,6 +311,23 @@ const Checkout = {
                     checked,
                 });
             });
+        },
+        get_move_lines_data: function (res) {
+            // We need to access the data object to find the move lines,
+            // and this path will vary depending on the current screen.
+            const data = res.data;
+            const state_key = res.next_state;
+            const path = this.get_move_lines_path(state_key);
+            return _.result(data, path, []);
+        },
+        get_move_lines_path: function (key) {
+            const possible_paths = {
+                summary: "picking.move_lines",
+                select_line: "picking.move_lines",
+                select_package: "selected_move_lines",
+                select_dest_package: "selected_move_lines",
+            };
+            return key + "." + possible_paths[key];
         },
         select_delivery_packaging_manual_select_options: function () {
             return {

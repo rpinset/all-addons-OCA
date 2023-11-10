@@ -21,6 +21,7 @@ class ContractContract(models.Model):
     _name = "contract.contract"
     _description = "Contract"
     _order = "code, name asc"
+    _check_company_auto = True
     _inherit = [
         "mail.thread",
         "mail.activity.mixin",
@@ -39,6 +40,8 @@ class ContractContract(models.Model):
         string="Group",
         comodel_name="account.analytic.account",
         ondelete="restrict",
+        check_company=True,
+        domain="[('company_id', '=', company_id)]",
     )
     currency_id = fields.Many2one(
         compute="_compute_currency_id",
@@ -81,13 +84,19 @@ class ContractContract(models.Model):
     )
     date_end = fields.Date(compute="_compute_date_end", store=True, readonly=False)
     payment_term_id = fields.Many2one(
-        comodel_name="account.payment.term", string="Payment Terms", index=True
+        comodel_name="account.payment.term",
+        string="Payment Terms",
+        index=True,
+        check_company=True,
+        domain="[('company_id', '=', company_id)]",
     )
     invoice_count = fields.Integer(compute="_compute_invoice_count")
     fiscal_position_id = fields.Many2one(
         comodel_name="account.fiscal.position",
         string="Fiscal Position",
         ondelete="restrict",
+        check_company=True,
+        domain="[('company_id', '=', company_id)]",
     )
     invoice_partner_id = fields.Many2one(
         string="Invoicing contact",
@@ -427,9 +436,13 @@ class ContractContract(models.Model):
         move_form = Form(
             self.env["account.move"]
             .with_company(self.company_id)
-            .with_context(default_move_type=invoice_type, default_name="/")
+            .with_context(default_move_type=invoice_type, default_name="/"),
+            view="contract.view_account_move_contract_helper_form",
         )
         move_form.partner_id = self.invoice_partner_id
+        move_form.journal_id = journal
+        move_form.currency_id = self.currency_id
+        move_form.invoice_date = date_invoice
         if self.payment_term_id:
             move_form.invoice_payment_term_id = self.payment_term_id
         if self.fiscal_position_id:
@@ -440,11 +453,7 @@ class ContractContract(models.Model):
         invoice_vals.update(
             {
                 "ref": self.code,
-                "company_id": self.company_id.id,
-                "currency_id": self.currency_id.id,
-                "invoice_date": date_invoice,
                 "date": date_invoice,
-                "journal_id": journal.id,
                 "invoice_origin": self.name,
             }
         )

@@ -23,6 +23,13 @@ msgstr "Cont"
 
 #. module: l10n_ro_stock_account_reception_in_progress
 #: model_terms:ir.ui.view,arch_db:l10n_ro_stock_account_reception_in_progress.purchase_order_form
+msgid ""
+"Are you sure you want to create reception in progress from the purchase "
+"order?"
+msgstr ""
+
+#. module: l10n_ro_stock_account_reception_in_progress
+#: model_terms:ir.ui.view,arch_db:l10n_ro_stock_account_reception_in_progress.purchase_order_form
 msgid "Create Reception in Progress Bill"
 msgstr "Creare factură pentru recepție în curs"
 
@@ -33,6 +40,7 @@ msgstr "Creare factură pentru recepție în curs"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_purchase_order__display_name
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_move__display_name
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_valuation_layer__display_name
 msgid "Display Name"
 msgstr "Nume afișat"
 
@@ -43,6 +51,7 @@ msgstr "Nume afișat"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_purchase_order__id
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_move__id
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_picking__id
+#: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_valuation_layer__id
 msgid "ID"
 msgstr "ID"
 
@@ -53,6 +62,7 @@ msgstr "ID"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_purchase_order__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_move__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_picking__is_l10n_ro_record
+#: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_valuation_layer__is_l10n_ro_record
 msgid "Is Romanian Record"
 msgstr "Inregistrare Romania"
 
@@ -68,6 +78,7 @@ msgstr "Element jurnal"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_purchase_order____last_update
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_move____last_update
 #: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:l10n_ro_stock_account_reception_in_progress.field_stock_valuation_layer____last_update
 msgid "Last Modified on"
 msgstr "Ultima modificare la"
 
@@ -102,15 +113,17 @@ msgid "Stock Move"
 msgstr "Mișcare stoc"
 
 #. module: l10n_ro_stock_account_reception_in_progress
+#: model:ir.model,name:l10n_ro_stock_account_reception_in_progress.model_stock_valuation_layer
+msgid "Stock Valuation Layer"
+msgstr ""
+
+#. module: l10n_ro_stock_account_reception_in_progress
 #: code:addons/l10n_ro_stock_account_reception_in_progress/models/purchase_order.py:0
 #, python-format
 msgid ""
 "There is no invoiceable line. If a product has a control policy based on "
 "received quantity, please make sure that a quantity has been received."
 msgstr ""
-"Nu există nici o linie facturabilă. Dacă un produs are o politică de control "
-"bazată pecantitate primită, vă rugăm să vă asigurați că a fost primită o "
-"cantitate."
 
 #. module: l10n_ro_stock_account_reception_in_progress
 #: model:ir.model,name:l10n_ro_stock_account_reception_in_progress.model_stock_picking
@@ -124,8 +137,8 @@ msgid ""
 "You cannot change the quantity on invoice line linked with a purchase order "
 "marked as Reception in Progress."
 msgstr ""
-"Nu puteți modifica cantitatea de pe linia de factură asociată cu o comandăde "
-"achiziție marcată ca Recepție în curs."
+"Nu puteți modifica cantitatea de pe linia de factură asociată cu o comandă "
+"de achiziție marcată ca Recepție în curs."
 
 #. module: l10n_ro_stock_account_reception_in_progress
 #: code:addons/l10n_ro_stock_account_reception_in_progress/models/stock_picking.py:0
@@ -136,3 +149,12 @@ msgid ""
 msgstr ""
 "Nu puteți avea 2 facturi pe o comandă de achiziție marcată cu Recepție în "
 "curs."
+
+#, python-format
+#~ msgid ""
+#~ "There is no billable line. If a product has a control policy based on "
+#~ "received quantity, please make sure that a quantity has been received."
+#~ msgstr ""
+#~ "Nu există nici o linie facturabilă. Dacă un produs are o politică de "
+#~ "control bazată pecantitate primită, vă rugăm să vă asigurați că a fost "
+#~ "primită o cantitate."

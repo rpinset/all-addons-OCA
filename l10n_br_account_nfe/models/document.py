@@ -19,7 +19,6 @@ NFE_OUT = "1"
 
 
 class DocumentNfe(models.Model):
-
     _inherit = "l10n_br_fiscal.document"
 
     ##########################
@@ -30,6 +29,7 @@ class DocumentNfe(models.Model):
         comodel_name="nfe.40.dup",
         compute="_compute_nfe40_dup",
         store=True,
+        copy=False,
         readonly=False,
     )
 
@@ -94,8 +94,14 @@ class DocumentNfe(models.Model):
                     or "",
                     "nfe40_vPag": rec.amount_financial_total,
                 }
-            rec.nfe40_detPag = [(2, detpag, 0) for detpag in rec.nfe40_detPag.ids]
-            rec.nfe40_detPag = [(0, 0, det_pag_vals)]
+            detpag_current = {
+                field: getattr(detpag, field, None)
+                for detpag in rec.nfe40_detPag
+                for field in det_pag_vals
+            }
+            if det_pag_vals != detpag_current:
+                rec.nfe40_detPag = [(2, detpag, 0) for detpag in rec.nfe40_detPag.ids]
+                rec.nfe40_detPag = [(0, 0, det_pag_vals)]
 
     ################################
     # Business Model Methods
@@ -134,7 +140,6 @@ class DocumentNfe(models.Model):
     @api.constrains("nfe40_detPag", "state_edoc")
     def _check_fiscal_payment_mode(self):
         for rec in self:
-
             if (
                 rec.state_edoc == "em_digitacao"
                 or not rec._need_compute_nfe_tags()
@@ -151,3 +156,10 @@ class DocumentNfe(models.Model):
                         "has Fiscal Payment Mode filled to be used in Fiscal Document!"
                     )
                 )
+
+    def _process_document_in_contingency(self):
+        super()._process_document_in_contingency()
+
+        if self.move_ids:
+            copy_invoice = self.move_ids[0].copy()
+            copy_invoice.action_post()

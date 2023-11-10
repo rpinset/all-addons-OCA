@@ -2,22 +2,23 @@
 #   Clément Mombereau <clement.mombereau@akretion.com.br>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tests.common import TransactionCase
+from odoo.tests import SavepointCase
 
 
-class CrmLeadTest(TransactionCase):
+class CrmLeadTest(SavepointCase):
     """Test basic operations on Lead"""
 
-    def setUp(self):
-        super(CrmLeadTest, self).setUp()
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
 
         # Create lead with simple details
-        self.crm_lead_company = self.env["crm.lead"].create(
+        cls.crm_lead_company = cls.env["crm.lead"].create(
             {
                 "name": "Test Company Lead",
                 "legal_name": "Teste Empresa",
                 "cnpj": "56.647.352/0001-98",
-                "stage_id": self.env.ref("crm.stage_lead1").id,
+                "stage_id": cls.env.ref("crm.stage_lead1").id,
                 "partner_name": "Test Partner",
                 "inscr_est": "079.798.013.363",
                 "inscr_mun": "99999999",
@@ -25,33 +26,33 @@ class CrmLeadTest(TransactionCase):
         )
 
         # Create lead for a person/contact
-        self.crm_lead_contact = self.env["crm.lead"].create(
+        cls.crm_lead_contact = cls.env["crm.lead"].create(
             {
                 "name": "Test Contact",
                 "cpf": "70531160505",
                 "rg": "99.888.777-1",
-                "stage_id": self.env.ref("crm.stage_lead1").id,
+                "stage_id": cls.env.ref("crm.stage_lead1").id,
                 "contact_name": "Test Contact",
             }
         )
 
         # Create lead with a valid Inscr. Estadual
-        self.crm_lead_company_1 = self.env["crm.lead"].create(
+        cls.crm_lead_company_1 = cls.env["crm.lead"].create(
             {
                 "name": "Test Company Lead IE",
                 "legal_name": "Teste Empresa 1",
                 "cnpj": "57.240.310/0001-09",
-                "stage_id": self.env.ref("crm.stage_lead1").id,
+                "stage_id": cls.env.ref("crm.stage_lead1").id,
                 "partner_name": "Test Partner 1",
                 "inscr_est": "041.092.540.590",
                 "inscr_mun": "99999999",
-                "country_id": self.env.ref("base.br").id,
-                "state_id": self.env.ref("base.state_br_sp").id,
+                "country_id": cls.env.ref("base.br").id,
+                "state_id": cls.env.ref("base.state_br_sp").id,
             }
         )
 
         # Create a Partner
-        self.partner_id_01 = self.env["res.partner"].create(
+        cls.partner_id_01 = cls.env["res.partner"].create(
             {
                 "name": "Test Lead Partner",
                 "legal_name": "Test Lead Partner",
@@ -61,7 +62,7 @@ class CrmLeadTest(TransactionCase):
                 "suframa": "99999999",
                 "street_number": "1225",
                 "district": "centro",
-                "city_id": self.env.ref("l10n_br_base.city_4205407").id,
+                "city_id": cls.env.ref("l10n_br_base.city_4205407").id,
                 "is_company": True,
             }
         )
@@ -264,4 +265,34 @@ class CrmLeadTest(TransactionCase):
             self.env.ref("l10n_br_base.city_4205407").id,
             "In the change of the partner the field \
                          city_id was not automatically filled.",
+        )
+
+    def test_brazilian_fields_in_lead_view(self):
+        """
+        Test when show Brazilian Fields in the Lead View.
+        """
+        # Brazilian Lead with Partner informed
+        self.assertTrue(
+            self.crm_lead_company_1.show_l10n_br,
+            "Field show_l10n_br should be True for Brazilian case.",
+        )
+
+        # Brazilian Lead without Partner
+        lead_without_partner = self.env["crm.lead"].create(
+            {
+                "name": "Test BR without Partner",
+                "stage_id": self.env.ref("crm.stage_lead1").id,
+                "country_id": self.env.ref("base.br").id,
+            }
+        )
+        self.assertTrue(
+            lead_without_partner.show_l10n_br,
+            "Field show_l10n_br should be True for Brazilian case.",
+        )
+
+        # International Lead
+        inter_lead = self.env.ref("crm.crm_case_31")
+        self.assertFalse(
+            inter_lead.show_l10n_br,
+            "Field show_l10n_br should be False in International case.",
         )

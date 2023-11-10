@@ -267,6 +267,11 @@ class SaleOrderImport(models.TransientModel):
                 product, uom, so_vals, line, price_source
             )
             so_vals["order_line"].append((0, 0, line_vals))
+
+        defaults = self.env.context.get("sale_order_import__default_vals", {}).get(
+            "order", {}
+        )
+        so_vals.update(defaults)
         return so_vals
 
     def _validate_currency(self, partner, currency):
@@ -470,6 +475,18 @@ class SaleOrderImport(models.TransientModel):
             vals["order_id"] = order
             vals = solo.play_onchanges(vals, ["product_id"])
             vals.pop("order_id")
+
+        # Handle additional fields dynamically if available.
+        # This way, if you add a field to a record and it's value is injected by a parser
+        # you won't have to override `_prepare_create_order_line` to let it propagate.
+        for k, v in import_line.items():
+            if k not in vals and k in solo._fields:
+                vals[k] = v
+
+        defaults = self.env.context.get("sale_order_import__default_vals", {}).get(
+            "lines", {}
+        )
+        vals.update(defaults)
         return vals
 
     def _prepare_order_line_get_company_id(self, order):

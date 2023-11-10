@@ -197,16 +197,6 @@ msgid "Bounce"
 msgstr ""
 
 #. module: l10n_br_hr
-#: model:hr.employee.dependent,nfe40_xPais:l10n_br_hr.hr_employee_dependent_1
-#: model:hr.employee.dependent,nfe40_xPais:l10n_br_hr.hr_employee_dependent_2
-#: model:hr.employee.dependent,nfe40_xPais:l10n_br_hr.hr_employee_dependent_3
-#: model:res.partner,nfe40_xPais:l10n_br_hr.hr_employee_dependent_1_res_partner
-#: model:res.partner,nfe40_xPais:l10n_br_hr.hr_employee_dependent_2_res_partner
-#: model:res.partner,nfe40_xPais:l10n_br_hr.hr_employee_dependent_3_res_partner
-msgid "Brazil"
-msgstr ""
-
-#. module: l10n_br_hr
 #: model:ir.model,name:l10n_br_hr.model_l10n_br_hr_cbo
 msgid "Brazilian Classification of Occupation"
 msgstr ""
@@ -237,12 +227,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_hr.field_hr_employee__cpf
 #: model_terms:ir.ui.view,arch_db:l10n_br_hr.view_l10n_br_hr_employee_dependent_form
 msgid "CPF"
-msgstr ""
-
-#. module: l10n_br_hr
-#: code:addons/l10n_br_hr/models/hr_employee.py:0
-#, python-format
-msgid "CPF Invalido!"
 msgstr ""
 
 #. module: l10n_br_hr
@@ -1013,6 +997,15 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_hr
+#: model:ir.model.fields,help:l10n_br_hr.field_hr_employee_dependent__is_public_entity
+msgid ""
+"Indicates whether the entity in question is a public organization or "
+"government-related entity. It encompasses a range of entities such as "
+"municipal governments, state-owned enterprises (where the government is the "
+"largest shareholder), and other government-controlled organizations."
+msgstr ""
+
+#. module: l10n_br_hr
 #: model:ir.model.fields,field_description:l10n_br_hr.field_hr_employee_dependent__industry_id
 msgid "Industry"
 msgstr ""
@@ -1378,8 +1371,9 @@ msgstr ""
 #. module: l10n_br_hr
 #: model:ir.model.fields,help:l10n_br_hr.field_hr_employee_dependent__on_time_rate
 msgid ""
-"Over the past 12 months; the number of products received on time divided by "
-"the number of ordered products."
+"Over the past x days; the number of products received on time divided by the"
+" number of ordered products.x is either the System Parameter "
+"purchase_stock.on_time_delivery_days or the default 365"
 msgstr ""
 
 #. module: l10n_br_hr
@@ -1464,6 +1458,11 @@ msgstr ""
 #. module: l10n_br_hr
 #: model:ir.model.fields,field_description:l10n_br_hr.field_hr_employee_dependent__property_product_pricelist
 msgid "Pricelist"
+msgstr ""
+
+#. module: l10n_br_hr
+#: model:ir.model.fields,field_description:l10n_br_hr.field_hr_employee_dependent__is_public_entity
+msgid "Public Entity"
 msgstr ""
 
 #. module: l10n_br_hr

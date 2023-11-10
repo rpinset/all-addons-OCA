@@ -1,9 +1,11 @@
 # Copyright 2021 Tecnativa - David Vidal
+# Copyright 2023 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from lxml import etree
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
+from odoo.tools import float_compare, float_round
 
 from .schenker_request import SchenkerRequest
 
@@ -165,6 +167,18 @@ class DeliveryCarrier(models.Model):
         help="If not delivery package or the package doesn't have defined the packaging"
         "it will default to this type",
     )
+    schenker_address_number = fields.Char(
+        "Address ID",
+        help="ID assigned by Schenker to you.\nWill be part of the sender or "
+        "if set, the invoice address.",
+    )
+    schenker_partner_invoice_id = fields.Many2one(
+        "res.partner",
+        "Invoice Address",
+        ondelete="restrict",
+        help="If set, this contact will be sent as invoice address to Schenker."
+        "\nIf Address ID is set, it will be part of it instead of the sender",
+    )
 
     def _get_schenker_credentials(self):
         """Access key is mandatory for every request while group and user are
@@ -219,6 +233,16 @@ class DeliveryCarrier(models.Model):
         )
         return vals
 
+    def _schenker_address_optional_fields(self):
+        return [
+            ("email", "email"),
+            ("mobilePhone", "mobile"),
+            ("phone", "phone"),
+            ("street2", "street2"),
+            ("stateCode", "state_id.code"),
+            ("stateName", "state_id.name"),
+        ]
+
     def _prepare_schenker_address(
         self,
         partner,
@@ -241,20 +265,17 @@ class DeliveryCarrier(models.Model):
             "street": partner.street,
             "postalCode": partner.zip,
             "city": partner.city,
-            "stateCode": partner.state_id.code,
-            "stateName": partner.state_id.name,
             "countryCode": partner.country_id.code,
             "preferredLanguage": self.env["res.lang"]._lang_get(partner.lang).iso_code,
         }
         # Optional stuff. The API doesn't like falsy or empty request fields
-        if partner.email:
-            vals["email"] = partner.email
-        if partner.mobile:
-            vals["mobilePhone"] = partner.mobile
-        if partner.phone:
-            vals["phone"] = partner.phone
-        if partner.street2:
-            vals["street2"] = partner.street2
+        for schenker_key, expression in self._schenker_address_optional_fields():
+            value = partner
+            for field in expression.split("."):
+                value = getattr(value, field)
+            if not value:
+                continue
+            vals[schenker_key] = value
         return vals
 
     def _schenker_shipping_address(self, picking):
@@ -269,10 +290,23 @@ class DeliveryCarrier(models.Model):
             or picking.company_id.partner_id
         )
         consignee_address = picking.partner_id
-        return [
-            self._prepare_schenker_address(shipper_address, "SHIPPER"),
-            self._prepare_schenker_address(consignee_address),
+        shipper_address = self._prepare_schenker_address(shipper_address, "SHIPPER")
+        consignee_address = self._prepare_schenker_address(consignee_address)
+        result = [
+            shipper_address,
+            consignee_address,
         ]
+        invoice_address = False
+        if self.schenker_partner_invoice_id:
+            invoice_address = self._prepare_schenker_address(
+                self.schenker_partner_invoice_id, "INVOICE"
+            )
+            result.append(invoice_address)
+        if self.schenker_address_number:
+            (invoice_address or shipper_address)[
+                "schenkerAddressId"
+            ] = self.schenker_address_number
+        return result
 
     def _schenker_shipping_product(self):
         """Gets the proper shipping product according to the shipping type
@@ -308,20 +342,39 @@ class DeliveryCarrier(models.Model):
         ).isoformat()
         return {"pickUpDateFrom": date_from, "pickUpDateTo": date_to}
 
-    def _schenker_shipping_information_package(self, picking, package):
-        weight = package.shipping_weight or package.weight
+    def _schenker_shipping_information_product_volume(self, product, qty):
+        return product.volume * qty
+
+    def _schenker_shipping_information_package_volume(self, picking, package):
         # Volume calculations can be unfolded with stock_quant_package_dimension
         if hasattr(package, "volume"):
-            volume = round(package.volume, 2)
-        else:
-            volume = sum([q.quantity * q.product_id.volume for q in package.quant_ids])
+            return package.volume
+        return sum(
+            [
+                self._schenker_shipping_information_product_volume(
+                    q.product_id, q.quantity
+                )
+                for q in package.quant_ids
+            ]
+        )
+
+    def _schenker_shipping_information_round_weight(self, weight, precision_digits=2):
+        return float_round(weight, precision_digits=precision_digits)
+
+    def _schenker_shipping_information_round_volume(self, volume, precision_digits=2):
+        """The schenker api requires 2 decimal points"""
+        return float_round(volume, precision_digits=precision_digits)
+
+    def _schenker_shipping_information_package(self, picking, package):
+        weight = package.shipping_weight or package.weight
         return {
             # Dangerous goods is not supported
             "dgr": False,
             "cargoDesc": picking.name + " / " + package.name,
-            "grossWeight": round(weight, 2),
-            # Default to 1 if no volume informed
-            "volume": volume or 0.01,
+            "grossWeight": self._schenker_shipping_information_round_weight(weight),
+            "volume": self._schenker_shipping_information_round_volume(
+                self._schenker_shipping_information_package_volume(picking, package)
+            ),
             "packageType": (
                 package.packaging_id.shipper_package_code
                 or self.schenker_default_packaging_id.shipper_package_code
@@ -339,35 +392,53 @@ class DeliveryCarrier(models.Model):
         :param picking record with picking to deliver
         :returns list of dicts with delivery packages shipping info
         """
-        if picking.package_level_ids and picking.package_ids:
-            return [
-                self._schenker_shipping_information_package(picking, package)
-                for package in picking.package_ids
-            ]
-        weight = picking.shipping_weight or picking.weight
+        schenker_packages = self._schenker_shipping_information_with_packages(picking)
+        return schenker_packages + self._schenker_shipping_information_without_packages(
+            picking
+        )
+
+    def _schenker_shipping_information_with_packages(self, picking):
+        return [
+            self._schenker_shipping_information_package(picking, package)
+            for package in picking.package_ids
+        ]
+
+    def _schenker_shipping_information_without_packages_volume(self, picking):
         # Obviously products should be well configured. This parameter is mandatory.
-        volume = sum(
+        return sum(
             [
-                ml.product_uom_id._compute_quantity(ml.qty_done, ml.product_id.uom_id)
-                * ml.product_id.volume
+                self._schenker_shipping_information_product_volume(
+                    ml.product_id,
+                    ml.product_uom_id._compute_quantity(
+                        ml.qty_done, ml.product_id.uom_id
+                    ),
+                )
                 for ml in picking.move_line_ids
+                if not ml.result_package_id
             ]
         )
+
+    def _schenker_shipping_information_without_packages(self, picking):
+        weight = picking.shipping_weight or picking.weight
         return [
             {
                 # Dangerous goods is not supported
                 "dgr": False,
                 "cargoDesc": picking.name,
                 # For a more complex solution use packaging properly
-                "grossWeight": round(weight / picking.number_of_packages, 2),
-                "volume": round(volume, 2) or 0.01,
+                "grossWeight": self._schenker_shipping_information_round_weight(
+                    weight / picking.number_of_packages
+                ),
+                "volume": self._schenker_shipping_information_round_volume(
+                    self._schenker_shipping_information_without_packages_volume(picking)
+                ),
                 "packageType": self.schenker_default_packaging_id.shipper_package_code,
                 "stackable": self.schenker_default_packaging_id.schenker_stackable,
                 "pieces": picking.number_of_packages,
             }
         ]
 
-    def _schenker_measures(self, picking):
+    def _schenker_measures(self, picking, vals):
         """Only volume is supported as a pallet calculations structure should be
         provided to use the other API options. This hook can be used to communicate
         with the API in the future
@@ -375,8 +446,20 @@ class DeliveryCarrier(models.Model):
         :returns dict values for the proper unit key and value
         """
         if self.schenker_measure_unit == "VOLUME":
-            return {"measureUnitVolume": round(picking.volume, 2) or 0.01}
+            return {
+                "measureUnitVolume": self._schenker_shipping_information_round_volume(
+                    vals["shippingInformation"]["volume"]
+                )
+            }
         return {}
+
+    def _schenker_get_total_shipping_volume(self, shipping_information):
+        volume = sum(info["volume"] for info in shipping_information)
+        if float_compare(volume, 0, 3) <= 0:
+            raise UserError(
+                _("There is no volume set on the shipping package information")
+            )
+        return volume
 
     def _prepare_schenker_shipping(self, picking):
         """Convert picking values for schenker api
@@ -384,11 +467,13 @@ class DeliveryCarrier(models.Model):
         :returns dict values for the connector
         """
         self.ensure_one()
+        picking.ensure_one()
         # We'll compose the request via some diferenced parts, like label settings,
         # address options, incoterms and so. There are lots of thing to take into
         # account to acomplish a properly formed request.
         vals = {}
         vals.update(self._prepare_schenker_barcode())
+        shipping_information = self._schenker_shipping_information(picking)
         vals.update(
             {
                 "address": self._schenker_shipping_address(picking),
@@ -399,11 +484,17 @@ class DeliveryCarrier(models.Model):
                 "incotermLocation": picking.partner_id.display_name[:35],
                 "productCode": self._schenker_shipping_product(),
                 "measurementType": self._schenker_metric_system(),
-                "grossWeight": round(picking.shipping_weight, 2),
+                "grossWeight": self._schenker_shipping_information_round_weight(
+                    picking.shipping_weight
+                ),
                 "shippingInformation": {
-                    "shipmentPosition": self._schenker_shipping_information(picking),
-                    "grossWeight": round(picking.shipping_weight, 2),
-                    "volume": round(picking.volume, 2) or 0.01,
+                    "shipmentPosition": shipping_information,
+                    "grossWeight": self._schenker_shipping_information_round_weight(
+                        picking.shipping_weight
+                    ),
+                    "volume": self._schenker_get_total_shipping_volume(
+                        shipping_information
+                    ),
                 },
                 "measureUnit": self.schenker_measure_unit,
                 # Customs Clearance not supported for now as it needs a full customs
@@ -426,7 +517,7 @@ class DeliveryCarrier(models.Model):
                 "pharmaceuticals": self.schenker_pharmaceuticals,
             }
         )
-        vals.update(self._schenker_measures(picking))
+        vals.update(self._schenker_measures(picking, vals))
         return vals
 
     def schenker_send_shipping(self, pickings):

@@ -4,7 +4,7 @@
 
 {
     "name": "Iran - Accounting",
-    "version": "14.0.3.0.0",
+    "version": "14.0.3.0.1",
     "category": "Accounting/Localizations/Account Charts",
     "summary": """
 Iran Accounting Module
@@ -27,6 +27,7 @@ Also:
         "data/account_tax_group_data.xml",
         "data/account_tax_report_data.xml",
         "data/account_tax_template_data.xml",
+        "data/l10n_ir_chart_post_data.xml",
         "data/account_fiscal_position_data.xml",
         "data/account_chart_template_data.xml",
         "data/res_currency_data.xml",

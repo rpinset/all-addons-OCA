@@ -277,8 +277,8 @@ class BookingEngine(models.TransientModel):
                 folio.reservation_ids.reservation_line_ids.discount = (
                     record.discount * 100
                 )
-            action = self.env.ref("pms.open_pms_folio1_form_tree_all").read()[0]
-            action["views"] = [(self.env.ref("pms.pms_folio_view_form").id, "form")]
+            action = self.sudo().env.ref("pms.open_pms_folio1_form_tree_all").read()[0]
+            action["views"] = [(self.sudo().env.ref("pms.pms_folio_view_form").id, "form")]
             action["res_id"] = folio.id
             return action
 
@@ -292,7 +292,7 @@ class NumRoomsSelectionModel(models.TransientModel):
     room_type_id = fields.Char()
     booking_engine_id = fields.One2many(
         comodel_name="pms.folio.availability.wizard",
-        inverse_name="id",
+        inverse_name="num_rooms_selected",
     )
 
 

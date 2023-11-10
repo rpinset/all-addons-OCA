@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 18:22+0000\n"
+"PO-Revision-Date: 2023-07-12 12:11+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_needaction
@@ -24,7 +24,7 @@ msgstr "Azione richiesta"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__active
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_ids
@@ -34,7 +34,7 @@ msgstr "Attività"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Decorazione attività eccezione"
+msgstr "Decorazione eccezione attività"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_state
@@ -50,7 +50,7 @@ msgstr "Icona tipo attività"
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_log_fuel_view_form
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_vehicle_log_fuel_view_search
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_attachment_count
@@ -69,8 +69,7 @@ msgstr "Categoria"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_service_type__category
-msgid ""
-"Choose whether the service refer to contracts, vehicle services or both"
+msgid "Choose whether the service refer to contracts, vehicle services or both"
 msgstr ""
 "Sceglirw se il servizio si riferisce a contratti, servizi per veicoli o "
 "entrambi"
@@ -172,7 +171,7 @@ msgstr "Seguito da (partner)"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr "Icona font awesome es. fa-tasks"
+msgstr "Icona Font Awesome es. fa-tasks"
 
 #. module: fleet_vehicle_log_fuel
 #: model_terms:ir.ui.view,arch_db:fleet_vehicle_log_fuel.fleet_costs_report_view_search
@@ -231,7 +230,7 @@ msgstr "Icona"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Icona per indicare una attività eccezione."
+msgstr "Icona per indicare un'attività eccezione."
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_needaction
@@ -282,7 +281,7 @@ msgstr "Allegato principale"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_ids
@@ -297,17 +296,17 @@ msgstr "Scadenza mia attività"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_summary
 msgid "Next Activity Summary"
-msgstr "Sommario attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__notes
@@ -328,12 +327,12 @@ msgstr "Numero di errori"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr "Numero di messaggi che richiedono una azione"
+msgstr "Numero di messaggi che richiedono un'azione"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con un errore di consegna"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,help:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__message_unread_counter
@@ -395,9 +394,9 @@ msgid ""
 "Planned: Future activities."
 msgstr ""
 "Stato in base alle attività\n"
-"Scaduta: la data richiesta è trascorsa\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificata: attività future."
+"Pianificato: attività future."
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields.selection,name:fleet_vehicle_log_fuel.selection__fleet_vehicle_log_fuel__state__todo
@@ -448,7 +447,7 @@ msgstr "Veicolo interessato da questo registro"
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__vendor_id
 msgid "Vendor"
-msgstr "Venditore"
+msgstr "Fornitore"
 
 #. module: fleet_vehicle_log_fuel
 #: model:ir.model.fields,field_description:fleet_vehicle_log_fuel.field_fleet_vehicle_log_fuel__inv_ref

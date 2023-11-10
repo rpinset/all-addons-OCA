@@ -417,6 +417,8 @@ msgstr ""
 #. module: excel_import_export
 #: model:ir.model.fields.selection,name:excel_import_export.selection__export_xlsx_wizard__state__choose
 #: model:ir.model.fields.selection,name:excel_import_export.selection__import_xlsx_wizard__state__choose
+#: model:ir.model.fields.selection,name:excel_import_export.selection__report_crm_lead__state__choose
+#: model:ir.model.fields.selection,name:excel_import_export.selection__report_sale_order__state__choose
 #: model:ir.model.fields.selection,name:excel_import_export.selection__xlsx_report__state__choose
 msgid "Choose"
 msgstr "选择"
@@ -763,6 +765,8 @@ msgstr ""
 #. module: excel_import_export
 #: model:ir.model.fields.selection,name:excel_import_export.selection__export_xlsx_wizard__state__get
 #: model:ir.model.fields.selection,name:excel_import_export.selection__import_xlsx_wizard__state__get
+#: model:ir.model.fields.selection,name:excel_import_export.selection__report_crm_lead__state__get
+#: model:ir.model.fields.selection,name:excel_import_export.selection__report_sale_order__state__get
 #: model:ir.model.fields.selection,name:excel_import_export.selection__xlsx_report__state__get
 msgid "Get"
 msgstr "获取"
@@ -1420,7 +1424,6 @@ msgstr "导入excel的向导"
 #: model:ir.model.fields,field_description:excel_import_export.field_xlsx_template_export__template_id
 #: model:ir.model.fields,field_description:excel_import_export.field_xlsx_template_import__template_id
 #: model_terms:ir.ui.view,arch_db:excel_import_export.view_xlsx_template_form
-#: model_terms:ir.ui.view,arch_db:excel_import_export.view_xlsx_template_tree
 msgid "XLSX Template"
 msgstr "XLSX模板"
 

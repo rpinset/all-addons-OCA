@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-03-07 19:35+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-07-17 08:10+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mrp_component_operation
 #: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operate_form
@@ -86,6 +86,14 @@ msgid "Ensure the traceability of a storable product in your warehouse."
 msgstr "Assicura la tracciabilità di un prodotto stoccabile nel magazzino."
 
 #. module: mrp_component_operation
+#: model:ir.model.fields,help:mrp_component_operation.field_mrp_component_operation__sequence
+msgid ""
+"Gives the sequence order when displaying the list of component operations"
+msgstr ""
+"Fornisce l'ordinamento quando viene visualizzata la lista operazioni "
+"componente"
+
+#. module: mrp_component_operation
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operate__id
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operation__id
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_production__id
@@ -102,7 +110,7 @@ msgstr "Operazione di ingresso"
 #. module: mrp_component_operation
 #: model:ir.model,name:mrp_component_operation.model_stock_location_route
 msgid "Inventory Routes"
-msgstr "Percorsi di magazzino"
+msgstr "Percorsi di inventario"
 
 #. module: mrp_component_operation
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operate____last_update
@@ -188,6 +196,13 @@ msgid "Operation"
 msgstr "Operazione"
 
 #. module: mrp_component_operation
+#: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operate__picking_type_id
+#: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operation__picking_type_id
+#: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operation_form
+msgid "Operation Type"
+msgstr "Tipo di operazione"
+
+#. module: mrp_component_operation
 #: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operate_form
 #: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operation_form
 msgid "Operations"
@@ -226,6 +241,7 @@ msgstr "Quantità"
 
 #. module: mrp_component_operation
 #: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operation_form
+#: model_terms:ir.ui.view,arch_db:mrp_component_operation.view_mrp_component_operation_tree
 msgid "Reference"
 msgstr "Riferimento"
 
@@ -240,9 +256,14 @@ msgid "Selectable on MO Components"
 msgstr "Selezionabile nei componenti dell'OP"
 
 #. module: mrp_component_operation
+#: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operation__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: mrp_component_operation
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operation__source_location_id
 msgid "Source Location"
-msgstr "Ubicazione sorgente"
+msgstr "Ubicazione di origine"
 
 #. module: mrp_component_operation
 #: model:ir.model.fields,field_description:mrp_component_operation.field_mrp_component_operation__source_route_id

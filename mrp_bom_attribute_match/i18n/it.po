@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 17:50+0000\n"
-"PO-Revision-Date: 2023-03-20 12:12+0000\n"
+"PO-Revision-Date: 2023-10-29 23:53+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian <http://weblate.ops404.it/projects/ooops-mrp-14-0/"
 "mrp_bom_attribute_match/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model,name:mrp_bom_attribute_match.model_report_mrp_report_bom_structure
@@ -43,6 +43,16 @@ msgstr "Componente"
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom_line__component_template_id
 msgid "Component (product template)"
 msgstr "Componente (modello prodotto)"
+
+#. module: mrp_bom_attribute_match
+#: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
+#, python-format
+msgid ""
+"Component template must be different from BOM product template. Please check "
+"BOM: %s BOM Line: %s"
+msgstr ""
+"Il componente (modello prodotto) deve essere differente dal modello prodotto "
+"della DiBa. Verifica la DiBa: %s alla riga: %s"
 
 #. module: mrp_bom_attribute_match
 #: model:ir.model.fields,field_description:mrp_bom_attribute_match.field_mrp_bom__display_name
@@ -126,6 +136,21 @@ msgstr ""
 "prodotto da produrre."
 
 #. module: mrp_bom_attribute_match
+#: model:product.template,name:mrp_bom_attribute_match.bam_pp_sub_level
+msgid "Sub Level"
+msgstr "Sotto livello"
+
+#. module: mrp_bom_attribute_match
+#: model:product.template,name:mrp_bom_attribute_match.bam_pp_sub_sub
+msgid "Sub Sub"
+msgstr "Sotto sotto"
+
+#. module: mrp_bom_attribute_match
+#: model:product.template,name:mrp_bom_attribute_match.bam_pp_sub_sub_2
+msgid "Sub Sub 2"
+msgstr "Sotto sotto 2"
+
+#. module: mrp_bom_attribute_match
 #: model:ir.model.fields,help:mrp_bom_attribute_match.field_mrp_bom_line__product_backup_id
 msgid "Technical field to store previous value of product_id"
 msgstr "Campo tecnico per preservare i valori di product_id"
@@ -160,6 +185,19 @@ msgstr ""
 "ciò può corrompere il funzionamento della DiBa."
 
 #. module: mrp_bom_attribute_match
+#: model:product.template,name:mrp_bom_attribute_match.bam_pp_top
+msgid "Top Level"
+msgstr "Livello max"
+
+#. module: mrp_bom_attribute_match
+#: model:product.template,uom_name:mrp_bom_attribute_match.bam_pp_sub_level
+#: model:product.template,uom_name:mrp_bom_attribute_match.bam_pp_sub_sub
+#: model:product.template,uom_name:mrp_bom_attribute_match.bam_pp_sub_sub_2
+#: model:product.template,uom_name:mrp_bom_attribute_match.bam_pp_top
+msgid "Units"
+msgstr "Unità"
+
+#. module: mrp_bom_attribute_match
 #: code:addons/mrp_bom_attribute_match/models/mrp_bom.py:0
 #, python-format
 msgid ""
@@ -170,6 +208,42 @@ msgstr ""
 "Non puoi utilizzare un valore attributo degli attributi %(attributes)s nel "
 "campo “Applica alle varianti” dato che è lo stesso attributo utilizzato nel "
 "campo “Corrispondenza su attributo” relativo ai componenti %(component)s."
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute,name:mrp_bom_attribute_match.bam_attr_1
+msgid "attr1"
+msgstr "Attr1"
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute,name:mrp_bom_attribute_match.bam_attr_2
+msgid "attr2"
+msgstr "Attr2"
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute.value,name:mrp_bom_attribute_match.bam_attr_1_gaming
+msgid "gaming"
+msgstr "Gaming"
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute.value,name:mrp_bom_attribute_match.bam_attr_1_office
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_sub_level_ptav_2
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_sub_sub_ptav_1
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_top_ptav_1
+msgid "office"
+msgstr "Ufficio"
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute.value,name:mrp_bom_attribute_match.bam_attr_2_v1
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_sub_level_ptav_1
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_sub_sub_2_ptav_1
+#: model:product.template.attribute.value,name:mrp_bom_attribute_match.bam_pp_top_ptav_2
+msgid "v1"
+msgstr "v1"
+
+#. module: mrp_bom_attribute_match
+#: model:product.attribute.value,name:mrp_bom_attribute_match.bam_attr_2_v2
+msgid "v2"
+msgstr "v2"
 
 #~ msgid "Product Uom Id Domain"
 #~ msgstr "Dominio ID UdM prodotto"

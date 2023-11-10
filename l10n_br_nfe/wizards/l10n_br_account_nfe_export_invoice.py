@@ -153,7 +153,6 @@ class L10nBrAccountNfeExportInvoice(models.TransientModel):
         view_id = view_rec and view_rec.id or False
 
         return {
-            "view_type": "form",
             "view_id": [view_id],
             "view_mode": "form",
             "res_model": "l10n_br_account_product.nfe_export_invoice",
@@ -166,6 +165,7 @@ class L10nBrAccountNfeExportInvoice(models.TransientModel):
 
 class L10nBrAccountNfeExportInvoiceResult(models.TransientModel):
     _name = "l10n_br_account_product.nfe_export_invoice_result"
+    _description = "NFe Export Invoice Result"
 
     wizard_id = fields.Many2one(
         comodel_name="l10n_br_account_product.nfe_export_invoice",

@@ -113,6 +113,11 @@ msgid "All"
 msgstr "Alle"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__allow_write_for_reviewer
+msgid "Allow Write For Reviewers"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_definition__review_type__group
 msgid "Any user in a specific group"
 msgstr ""
@@ -305,6 +310,16 @@ msgstr ""
 "gebracht wanneer deze definitie wordt geactiveerd."
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__archive_uid
+msgid "Last Archived by"
+msgstr ""
+
+#. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_definition__archive_date
+msgid "Last Archived on"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard____last_update
 #: model:ir.model.fields,field_description:base_tier_validation.field_res_config_settings____last_update
 #: model:ir.model.fields,field_description:base_tier_validation.field_res_users____last_update
@@ -409,6 +424,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/base_tier_validation/static/src/xml/systray.xml:0
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__pending
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__pending
 #, python-format
 msgid "Pending"
 msgstr "In afwachting"
@@ -426,6 +442,7 @@ msgstr ""
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__rejected
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__rejected
 msgid "Rejected"
 msgstr "Afgekeurd"
 
@@ -577,7 +594,6 @@ msgstr ""
 #: model:ir.model,name:base_tier_validation.model_tier_definition
 #: model:ir.ui.menu,name:base_tier_validation.menu_tier_definition
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_tree
 msgid "Tier Definition"
 msgstr "Tier definitie"
 
@@ -598,7 +614,6 @@ msgstr ""
 
 #. module: base_tier_validation
 #: model:ir.model,name:base_tier_validation.model_tier_review
-#: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_review_view_tree
 msgid "Tier Review"
 msgstr "Tier beoordeling"
 
@@ -683,6 +698,7 @@ msgstr "Valideren weigeren"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__validated
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__validated
 msgid "Validated"
 msgstr "Gevalideerd"
 
@@ -706,9 +722,19 @@ msgid "Validation Date"
 msgstr "Validatie datum"
 
 #. module: base_tier_validation
+#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__validation_status
+msgid "Validation Status"
+msgstr ""
+
+#. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__review_ids
 msgid "Validations"
 msgstr "Validaties"
+
+#. module: base_tier_validation
+#: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__no
+msgid "Without validation"
+msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form

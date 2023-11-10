@@ -4,9 +4,10 @@
 
 {
     "name": "Brazilian Payment Order",
-    "version": "14.0.2.4.0",
+    "version": "14.0.3.3.3",
     "license": "AGPL-3",
     "author": "KMEE, Akretion, Odoo Community Association (OCA)",
+    "maintainers": ["mbcosta"],
     "website": "https://github.com/OCA/l10n-brazil",
     "category": "Banking addons",
     "depends": [
@@ -39,8 +40,6 @@
         "views/account_payment_order.xml",
         "views/account_payment_line.xml",
         "views/account_payment_mode.xml",
-        "views/res_company.xml",
-        "views/bank_payment_line.xml",
         "views/l10n_br_cnab_return_log_view.xml",
         "views/account_move_line.xml",
         "views/l10n_br_cnab_return_move_code_view.xml",
@@ -61,4 +60,9 @@
         "demo/account_payment_order.xml",
     ],
     "installable": True,
+    "external_dependencies": {
+        "python": [
+            "erpbrasil.base>=2.3.0",
+        ]
+    },
 }

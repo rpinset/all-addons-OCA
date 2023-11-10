@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 18:28+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-10-31 09:39+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: rma
 #: model:mail.template,report_name:rma.mail_template_rma_draft_notification
@@ -251,8 +251,8 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati sono "
-"specifici per Azienda.\" groups=\"base.group_multi_company\"/>"
+"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
+"specifici per azienda.\" groups=\"base.group_multi_company\"/>"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -387,7 +387,7 @@ msgstr ""
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
 msgid "Accept Emails From"
-msgstr "Accetta Email da"
+msgstr "Accetta email da"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__access_warning
@@ -398,7 +398,7 @@ msgstr "Avviso accesso"
 #: model:ir.model.fields,field_description:rma.field_rma__message_needaction
 #: model:ir.model.fields,field_description:rma.field_rma_team__message_needaction
 msgid "Action Needed"
-msgstr "Azione Necessaria"
+msgstr "Azione richiesta"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_finalization__active
@@ -438,12 +438,12 @@ msgstr "Alias"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_contact
 msgid "Alias Contact Security"
-msgstr "Contatto di Sicurezza Alias"
+msgstr "Alias contatto sicurezza"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_name
 msgid "Alias Name"
-msgstr "Nome Alias"
+msgstr "Nome alias"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_domain
@@ -470,7 +470,7 @@ msgstr "Permetti di chiudere un RMA senza restituire un prodotto o rimborso"
 #: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
 #: model_terms:ir.ui.view,arch_db:rma.view_rma_finalization_form
 msgid "Archived"
-msgstr "Archiviato"
+msgstr "In archivio"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -555,7 +555,7 @@ msgstr "Indice colore"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__commercial_partner_id
 msgid "Commercial Entity"
-msgstr "Entità Commerciale"
+msgstr "Entità commerciale"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
@@ -654,7 +654,7 @@ msgstr "Creato il"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_bounced_content
 msgid "Custom Bounced Message"
-msgstr "Messaggio rimbalzato personalizzato"
+msgstr "Messaggio personalizzato per il rifiuto"
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
@@ -666,7 +666,7 @@ msgstr "Cliente"
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__access_url
 msgid "Customer Portal URL"
-msgstr "URL Portale Cliente"
+msgstr "URL portale cliente"
 
 #. module: rma
 #: code:addons/rma/controllers/main.py:0
@@ -750,7 +750,7 @@ msgstr "Descrizione"
 #: model:ir.model.fields,field_description:rma.field_stock_rule__display_name
 #: model:ir.model.fields,field_description:rma.field_stock_warehouse__display_name
 msgid "Display Name"
-msgstr "Nome Visualizzato"
+msgstr "Nome visualizzato"
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__draft
@@ -767,17 +767,17 @@ msgstr "Bozza RMA"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
 msgid "Email Alias"
-msgstr "Alias Email"
+msgstr "Alias email"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
 msgid "Email Template"
-msgstr "Modello Email"
+msgstr "Modello e-mail"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_res_company__rma_mail_confirmation_template_id
@@ -959,9 +959,7 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__message_has_error
-#: model:ir.model.fields,help:rma.field_rma__message_has_sms_error
 #: model:ir.model.fields,help:rma.field_rma_team__message_has_error
-#: model:ir.model.fields,help:rma.field_rma_team__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -992,7 +990,7 @@ msgstr "Email in arrivo"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__partner_invoice_id
 msgid "Invoice Address"
-msgstr "Indirizzo di Fatturazione"
+msgstr "Indirizzo di fatturazione"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.report_rma_document
@@ -1124,7 +1122,7 @@ msgstr "Responsabile"
 #: model:ir.model.fields,field_description:rma.field_rma__message_has_error
 #: model:ir.model.fields,field_description:rma.field_rma_team__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_ids
@@ -1135,7 +1133,7 @@ msgstr "Messaggi"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Scadenza della mia attività"
+msgstr "Scadenza mia attività"
 
 #. module: rma
 #: code:addons/rma/controllers/main.py:0
@@ -1188,7 +1186,7 @@ msgstr "Normale"
 #: model:ir.model.fields,field_description:rma.field_rma__message_needaction_counter
 #: model:ir.model.fields,field_description:rma.field_rma_team__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Numero di Azioni"
+msgstr "Numero di azioni"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__message_has_error_counter
@@ -1200,13 +1198,13 @@ msgstr "Numero di errori"
 #: model:ir.model.fields,help:rma.field_rma__message_needaction_counter
 #: model:ir.model.fields,help:rma.field_rma_team__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr "Numero di messaggi che richiedono una azione"
+msgstr "Numero di messaggi che richiedono un'azione"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__message_has_error_counter
 #: model:ir.model.fields,help:rma.field_rma_team__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con errori di consegna"
+msgstr "Numero di messaggi con errore di consegna"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__message_unread_counter
@@ -1221,8 +1219,8 @@ msgid ""
 "attached, even if they did not reply to it. If set, this will disable the "
 "creation of new records completely."
 msgstr ""
-"ID facoltativo di un filo (record) a cui verranno allegati tutti i messaggi "
-"in arrivo, anche se non hanno risposto. Se impostato, disabiliterà "
+"ID facoltativo di un thread (record) a cui verranno allegati tutti i "
+"messaggi in arrivo, anche se non hanno risposto. Se impostato, disabiliterà "
 "completamente la creazione di nuovi record."
 
 #. module: rma
@@ -1258,7 +1256,7 @@ msgstr "Modello padre"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_parent_thread_id
 msgid "Parent Record Thread ID"
-msgstr "ID Filo Record Padre"
+msgstr "ID record thread padre"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_parent_model_id
@@ -1267,7 +1265,7 @@ msgid ""
 "necessarily the model given by alias_model_id (example: project "
 "(parent_model) and task (model))"
 msgstr ""
-"Modello genitore che detiene l'alias. Il modello che contiene il riferimento "
+"Modello padre che detiene l'alias. Il modello che contiene il riferimento "
 "alias non è necessariamente il modello fornito da alias_model_id (esempio: "
 "progetto (parent_model) e task (model))"
 
@@ -1288,13 +1286,13 @@ msgstr ""
 "Politica per inviare un messaggio sul documento utilizzando il mailgateway.\n"
 "- chiunque: chiunque può inviare\n"
 "- clienti: solo i clienti autenticati\n"
-"- followers: solo chi segue il documento collegato o i membri dei seguenti "
+"- chi segue: solo chi segue il documento collegato o i membri dei seguenti "
 "canali\n"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__access_url
 msgid "Portal Access URL"
-msgstr "URL Accesso Portale"
+msgstr "URL accesso portale"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
@@ -1320,7 +1318,7 @@ msgstr "Prodotto"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_uom_qty
 msgid "Product qty"
-msgstr "Quantità Prodotto"
+msgstr "Q.tà prodotto"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_tag__is_public
@@ -1425,7 +1423,6 @@ msgstr "Motivo Chiusura RMA"
 #: model:ir.actions.act_window,name:rma.action_rma_finalization
 #: model:ir.ui.menu,name:rma.rma_configuration_rma_finalization_menu
 #: model_terms:ir.ui.view,arch_db:rma.rma_finalization_view_search
-#: model_terms:ir.ui.view,arch_db:rma.view_rma_finalization_list
 msgid "RMA Finalization Reasons"
 msgstr "Motivi chiusura RMA"
 
@@ -1503,7 +1500,6 @@ msgstr "Etichetta RMA"
 #: model:ir.model,name:rma.model_rma_tag
 #: model:ir.ui.menu,name:rma.rma_configuration_rma_tag_menu
 #: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
-#: model_terms:ir.ui.view,arch_db:rma.view_rma_tag_list
 msgid "RMA Tags"
 msgstr "Etichette RMA"
 
@@ -1614,7 +1610,7 @@ msgstr "Trasferimento di ricezione"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_team__alias_force_thread_id
 msgid "Record Thread ID"
-msgstr "ID record filo"
+msgstr "ID thread record"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__origin
@@ -1706,12 +1702,12 @@ msgstr ""
 #. module: rma
 #: model:ir.ui.menu,name:rma.rma_reporting_menu
 msgid "Reporting"
-msgstr "Reporting"
+msgstr "Rendicontazione"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__operation_id
 msgid "Requested operation"
-msgstr "Operazione Richiesta"
+msgstr "Operazione richiesta"
 
 #. module: rma
 #: code:addons/rma/models/rma.py:0
@@ -1768,12 +1764,6 @@ msgid "Rma Count"
 msgstr "Conteggio Rma"
 
 #. module: rma
-#: model:ir.model.fields,field_description:rma.field_rma__message_has_sms_error
-#: model:ir.model.fields,field_description:rma.field_rma_team__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__scheduled_date
 msgid "Scheduled Date"
 msgstr "Data programmata"
@@ -1781,7 +1771,7 @@ msgstr "Data programmata"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__access_token
 msgid "Security Token"
-msgstr "Token di Sicurezza"
+msgstr "Token di sicurezza"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_res_company__send_rma_confirmation
@@ -1820,12 +1810,12 @@ msgstr "Invia una notifica automatica quando il cliente inserisce un RMA"
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
 msgid "Send by Email"
-msgstr "Invia per Email"
+msgstr "Invia per e-mail"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_form
 msgid "Send by Mail"
-msgstr "Invia per mail"
+msgstr "Invia per posta"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__sent
@@ -1862,17 +1852,17 @@ msgstr "Condividi"
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__partner_shipping_id
 msgid "Shipping Address"
-msgstr "Indirizzo di Spedizione"
+msgstr "Indirizzo di spedizione"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma__partner_shipping_id
 msgid "Shipping address for current RMA."
-msgstr "Indirizzo spedizione per questo RMA."
+msgstr "Indirizzo di spedizione per questo RMA."
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__origin
 msgid "Source Document"
-msgstr "Documento di Origine"
+msgstr "Documento di origine"
 
 #. module: rma
 #: model_terms:ir.ui.view,arch_db:rma.rma_split_wizard_view_form2
@@ -1916,10 +1906,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: rma
 #: model:ir.model,name:rma.model_stock_move
@@ -1929,17 +1919,17 @@ msgstr "Movimento di magazzino"
 #. module: rma
 #: model:ir.model,name:rma.model_stock_rule
 msgid "Stock Rule"
-msgstr "Regola di Magazzino"
+msgstr "Regola di giacenza"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma_tag__name
 msgid "Tag Name"
-msgstr "Nome Etichetta"
+msgstr "Nome etichetta"
 
 #. module: rma
 #: model:ir.model.constraint,message:rma.constraint_rma_tag_name_uniq
 msgid "Tag name already exists !"
-msgstr "Nome Etichetta già Esiste!"
+msgstr "Il nome etichetta esiste già!"
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__tag_ids
@@ -1989,8 +1979,8 @@ msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
-"Il nome dell'email alias, es. 'lavoro' se vuoi ricevere email per "
-"<jobs@example.odoo.com>"
+"Il nome dell'alias email, ad es. 'lavori' se vuoi ricevere email per "
+"<lavori@example.odoo.com>"
 
 #. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_user_id
@@ -2127,7 +2117,7 @@ msgstr "Urgente"
 #. module: rma
 #: model:res.groups,name:rma.rma_group_user_all
 msgid "User: All Documents"
-msgstr "Utente: Tutti i documenti"
+msgstr "Utente: tutti i documenti"
 
 #. module: rma
 #: model:res.groups,name:rma.rma_group_user_own
@@ -2256,6 +2246,9 @@ msgid ""
 "the user will have an access to the RMA configuration as well as statistic "
 "reports."
 msgstr "l'utente avrà accesso alla configurazione RMA e ai report statistici."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "<strong>Invoicing address:</strong>"
 #~ msgstr "<strong>Indirizzo di fatturazione:</strong>"

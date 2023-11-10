@@ -31,17 +31,14 @@ class NFeLine(spec_models.StackedModel):
     _schema_name = "nfe"
     _schema_version = "4.0.0"
     _odoo_module = "l10n_br_nfe"
-    _spec_module = "odoo.addons.l10n_br_nfe_spec.models.v4_00.leiauteNFe"
+    _spec_module = "odoo.addons.l10n_br_nfe_spec.models.v4_0.leiaute_nfe_v4_00"
     _spec_tab_name = "NFe"
     _stacking_points = {}
     # all m2o below this level will be stacked even if not required:
     _force_stack_paths = ("det.imposto.",)
     _stack_skip = ("nfe40_det_infNFe_id",)
 
-    # When dynamic stacking is applied, the NFe line has the following structure.
-    # NOTE GenerateDS actually has a bug here putting II before IPI
-    # we fixed nfelib for NFe with II here https://github.com/akretion/nfelib/pull/47
-    # fortunately xsdata doesn't have this bug.
+    # When dynamic stacking is applied, the NFe line has the following structure:
     DET_TREE = """
 > <det>
     > <prod>
@@ -58,10 +55,10 @@ class NFeLine(spec_models.StackedModel):
         > <ICMS>
             > <ICMSPart>
             > <ICMSST>
-        > <II>
         > <IPI>
             > <IPITrib>
             > <IPINT>
+        > <II>
         > <ISSQN>
         > <PIS>
             > <PISAliq>
@@ -76,7 +73,8 @@ class NFeLine(spec_models.StackedModel):
             > <COFINSOutr>
         > <COFINSST>
         > <ICMSUFDest>
-    - <impostoDevol>"""
+    - <impostoDevol>
+    - <obsItem>"""
 
     ##########################
     # NF-e spec related fields
@@ -103,7 +101,7 @@ class NFeLine(spec_models.StackedModel):
 
     # CNPJFab TODO
 
-    # cBenef TODO
+    nfe40_cBenef = fields.Char(related="icms_tax_benefit_code")
 
     # TODO em uma importação de XML deve considerar esse campo na busca do
     # ncm_id
@@ -169,7 +167,6 @@ class NFeLine(spec_models.StackedModel):
     ################################
 
     def _export_fields_nfe_40_prod(self, xsd_fields, class_obj, export_dict):
-
         nfe40_cProd = self.product_id.default_code or self.nfe40_cProd or ""
         export_dict["cProd"] = nfe40_cProd
 
@@ -283,7 +280,6 @@ class NFeLine(spec_models.StackedModel):
     nfe40_vTotTrib = fields.Monetary(related="estimate_tax")
 
     def _export_fields_nfe_40_imposto(self, xsd_fields, class_obj, export_dict):
-
         if self.nfe40_choice10 == "nfe40_ICMS":
             xsd_fields.remove("nfe40_ISSQN")
         else:
@@ -304,8 +300,11 @@ class NFeLine(spec_models.StackedModel):
         if not self.cofinsst_value:
             xsd_fields.remove("nfe40_COFINSST")
 
-        if not self.ii_value and "nfe40_II" in xsd_fields:
+        if not self.cfop_id.is_import and "nfe40_II" in xsd_fields:
             xsd_fields.remove("nfe40_II")
+
+        if self.document_id.document_type == "65":
+            xsd_fields.remove("nfe40_IPI")
 
     ##################################################
     # NF-e tag: ICMS
@@ -321,7 +320,30 @@ class NFeLine(spec_models.StackedModel):
     # Grupo N10. Grupo Tributação do ICMS= 90
     #################################################
 
-    nfe40_choice11 = fields.Selection(compute="_compute_choice11", store=True)
+    nfe40_choice11 = fields.Selection(
+        selection=[
+            ("nfe40_ICMS00", "ICMS00"),
+            ("nfe40_ICMS10", "ICMS10"),
+            ("nfe40_ICMS20", "ICMS20"),
+            ("nfe40_ICMS30", "ICMS30"),
+            ("nfe40_ICMS40", "ICMS40"),
+            ("nfe40_ICMS51", "ICMS51"),
+            ("nfe40_ICMS60", "ICMS60"),
+            ("nfe40_ICMS70", "ICMS70"),
+            ("nfe40_ICMS90", "ICMS90"),
+            ("nfe40_ICMSPart", "ICMSPart"),
+            ("nfe40_ICMSST", "ICMSST"),
+            ("nfe40_ICMSSN101", "ICMSSN101"),
+            ("nfe40_ICMSSN102", "ICMSSN102"),
+            ("nfe40_ICMSSN201", "ICMSSN201"),
+            ("nfe40_ICMSSN202", "ICMSSN202"),
+            ("nfe40_ICMSSN500", "ICMSSN500"),
+            ("nfe40_ICMSSN900", "ICMSSN900"),
+        ],
+        string="Tipo de ICMS",
+        compute="_compute_choice11",
+        store=True,
+    )
 
     nfe40_orig = fields.Selection(related="icms_origin")
 
@@ -426,7 +448,6 @@ class NFeLine(spec_models.StackedModel):
         return icms
 
     def _export_fields_nfe_40_icms(self, xsd_fields, class_obj, export_dict):
-
         # TODO Not Implemented
         if "nfe40_ICMSPart" in xsd_fields:
             xsd_fields.remove("nfe40_ICMSPart")
@@ -436,11 +457,27 @@ class NFeLine(spec_models.StackedModel):
             xsd_fields.remove("nfe40_ICMSST")
 
         xsd_fields = [self.nfe40_choice11]
-        icms_tag = self.nfe40_choice11.replace("nfe40_", "")  # FIXME
+        icms_tag = (
+            self.nfe40_choice11.replace("nfe40_", "")
+            .replace("ICMS", "Icms")
+            .replace("IcmsSN", "Icmssn")
+        )
         binding_module = sys.modules[self._binding_module]
-        icms_binding = getattr(binding_module, icms_tag + "Type")
+        # Tnfe.InfNfe.Det.Imposto.Icms.Icms00
+        # see https://stackoverflow.com/questions/31174295/getattr-and-setattr-on-nested-subobjects-chained-properties
+        tnfe = getattr(binding_module, "Tnfe")
+        infnfe = getattr(tnfe, "InfNfe")
+        det = getattr(infnfe, "Det")
+        imposto = getattr(det, "Imposto")
+        icms = getattr(imposto, "Icms")
+        icms_binding = getattr(icms, icms_tag)
         icms_dict = self._export_fields_icms()
-        export_dict[icms_tag] = icms_binding(**icms_dict)
+        sliced_icms_dict = {
+            key: icms_dict.get(key)
+            for key in icms_binding.__dataclass_fields__.keys()
+            if icms_dict.get(key)
+        }
+        export_dict[icms_tag.upper()] = icms_binding(**sliced_icms_dict)
 
     #######################################
     # NF-e tag: ICMSPart
@@ -470,12 +507,11 @@ class NFeLine(spec_models.StackedModel):
 
     def _compute_nfe40_ICMSUFDest(self):
         for record in self:
-            if not record.icms_origin_percent and not record.icms_percent:
-                record.nfe40_pICMSInter = False
+            if record.icms_origin_percent:
+                record.nfe40_pICMSInter = str("%.02f" % record.icms_origin_percent)
             else:
-                record.nfe40_pICMSInter = str(
-                    "%.02f" % record.icms_origin_percent or record.icms_percent
-                )
+                record.nfe40_pICMSInter = False
+
             record.nfe40_pFCPUFDest = record.icmsfcp_percent
             record.nfe40_pICMSUFDest = record.icms_destination_percent
             record.nfe40_pICMSInterPart = record.icms_sharing_percent
@@ -489,9 +525,21 @@ class NFeLine(spec_models.StackedModel):
     # Grupo O. Imposto sobre Produtos Industrializados
     ##################################################
 
-    nfe40_choice3 = fields.Selection(compute="_compute_choice3", store=True)
+    nfe40_choice3 = fields.Selection(
+        selection=[("nfe40_IPITrib", "IPITrib"), ("nfe40_IPINT", "IPINT")],
+        string="IPITrib ou IPINT",
+        compute="_compute_choice3",
+        store=True,
+    )
 
     nfe40_choice20 = fields.Selection(
+        selection=[
+            ("nfe40_vBC", "vBC"),
+            ("nfe40_pIPI", "pIPI"),
+            ("nfe40_qUnid", "qUnid"),
+            ("nfe40_vUnid", "vUnid"),
+        ],
+        string="Base vBC/pIPI/qUnid/vUnid",
         compute="_compute_nfe40_choice20",
         store=True,
     )
@@ -535,19 +583,16 @@ class NFeLine(spec_models.StackedModel):
     ##########################
 
     def _export_fields_nfe_40_tipi(self, xsd_fields, class_obj, export_dict):
-
         if not self.ipi_cst_id.code in ["00", "49", "50", "99"]:
             xsd_fields.remove("nfe40_IPITrib")
         else:
             xsd_fields.remove("nfe40_IPINT")
 
     def _export_fields_ipi(self, xsd_fields, class_obj, export_dict):
-
         export_dict["CST"] = self.ipi_cst_id.code
         export_dict["vBC"] = self.ipi_base
 
     def _export_fields_nfe_40_ipitrib(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_ipi(xsd_fields, class_obj, export_dict)
 
         if self.nfe40_choice20 == "nfe40_pIPI":
@@ -558,7 +603,6 @@ class NFeLine(spec_models.StackedModel):
             xsd_fields.remove("nfe40_pIPI")
 
     def _export_fields_nfe_40_ipint(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_ipi(xsd_fields, class_obj, export_dict)
 
     ################################
@@ -579,9 +623,25 @@ class NFeLine(spec_models.StackedModel):
     # Grupo Q. PIS
     ###############
 
-    nfe40_choice12 = fields.Selection(compute="_compute_choice12", store=True)
+    nfe40_choice12 = fields.Selection(
+        selection=[
+            ("nfe40_PISAliq", "PISAliq"),
+            ("nfe40_PISQtde", "PISQtde"),
+            ("nfe40_PISNT", "PISNT"),
+            ("nfe40_PISOutr", "PISOutr"),
+        ],
+        stringo="PISAliq/PISQtde/PISNT/PISOutr",
+        compute="_compute_choice12",
+        store=True,
+    )
 
     nfe40_choice13 = fields.Selection(
+        [
+            ("nfe40_vBC", "vBC"),
+            ("nfe40_pPIS", "pPIS"),
+            ("nfe40_qBCProd", "qBCProd"),
+            ("nfe40_vAliqProd", "vAliqProd"),
+        ],
         compute="_compute_nfe40_choice13",
         store=True,
         string="Tipo de Tributação do PIS",
@@ -635,7 +695,6 @@ class NFeLine(spec_models.StackedModel):
     nfe40_pPIS = fields.Float(related="pis_percent", string="nfe40_pPIS")
 
     def _export_fields_nfe_40_pis(self, xsd_fields, class_obj, export_dict):
-
         remove_tags = {
             "nfe40_PISAliq": ["nfe40_PISQtde", "nfe40_PISNT", "nfe40_PISOutr"],
             "nfe40_PISQtde": ["nfe40_PISAliq", "nfe40_PISNT", "nfe40_PISOutr"],
@@ -643,24 +702,21 @@ class NFeLine(spec_models.StackedModel):
             "nfe40_PISOutr": ["nfe40_PISAliq", "nfe40_PISQtde", "nfe40_PISNT"],
         }
 
-        for tag_to_remove in remove_tags.get(self.nfe40_choice12):
-            xsd_fields.remove(tag_to_remove)
+        for tag_to_remove in remove_tags.get(self.nfe40_choice12, []):
+            if tag_to_remove in xsd_fields:
+                xsd_fields.remove(tag_to_remove)
 
     def _export_fields_pis(self, xsd_fields, class_obj, export_dict):
-
         export_dict["CST"] = self.pis_cst_id.code
         export_dict["vBC"] = self.pis_base
 
     def _export_fields_nfe_40_pisaliq(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_pis(xsd_fields, class_obj, export_dict)
 
     def _export_fields_nfe_40_pisqtde(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_pis(xsd_fields, class_obj, export_dict)
 
     def _export_fields_nfe_40_pisoutr(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_pis(xsd_fields, class_obj, export_dict)
 
         if self.nfe40_choice13 == "nfe40_pPIS":
@@ -672,7 +728,6 @@ class NFeLine(spec_models.StackedModel):
             xsd_fields.remove("nfe40_pPIS")
 
     def _export_fields_nfe_40_pisnt(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_pis(xsd_fields, class_obj, export_dict)
 
     #################
@@ -687,9 +742,25 @@ class NFeLine(spec_models.StackedModel):
     # Grupo S. COFINS
     ##################
 
-    nfe40_choice15 = fields.Selection(compute="_compute_choice15", store=True)
+    nfe40_choice15 = fields.Selection(
+        selection=[
+            ("nfe40_COFINSAliq", "COFINSAliq"),
+            ("nfe40_COFINSQtde", "COFINSQtde"),
+            ("nfe40_COFINSNT", "COFINSNT"),
+            ("nfe40_COFINSOutr", "COFINSOutr"),
+        ],
+        string="COFINSAliq/COFINSQtde/COFINSNT/COFINSOutr",
+        compute="_compute_choice15",
+        store=True,
+    )
 
     nfe40_choice16 = fields.Selection(
+        selection=[
+            ("nfe40_vBC", "vBC"),
+            ("nfe40_pCOFINS", "pCOFINS"),
+            ("nfe40_qBCProd", "qBCProd"),
+            ("nfe40_vAliqProd", "vAliqProd"),
+        ],
         compute="_compute_nfe40_choice16",
         store=True,
         string="Tipo de Tributação do COFINS",
@@ -768,25 +839,22 @@ class NFeLine(spec_models.StackedModel):
             ],
         }
 
-        for tag_to_remove in remove_tags.get(self.nfe40_choice15):
-            xsd_fields.remove(tag_to_remove)
+        for tag_to_remove in remove_tags.get(self.nfe40_choice15, []):
+            if tag_to_remove in xsd_fields:
+                xsd_fields.remove(tag_to_remove)
 
     def _export_fields_cofins(self, xsd_fields, class_obj, export_dict):
-
         export_dict["CST"] = self.cofins_cst_id.code
         export_dict["vBC"] = self.cofins_base
         export_dict["vCOFINS"] = self.cofins_value
 
     def _export_fields_nfe_40_cofinsaliq(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_cofins(xsd_fields, class_obj, export_dict)
 
     def _export_fields_nfe_40_cofinsqtde(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_cofins(xsd_fields, class_obj, export_dict)
 
     def _export_fields_nfe_40_cofinsoutr(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_cofins(xsd_fields, class_obj, export_dict)
 
         if self.nfe40_choice16 == "nfe40_pCOFINS":
@@ -798,7 +866,6 @@ class NFeLine(spec_models.StackedModel):
             xsd_fields.remove("nfe40_pCOFINS")
 
     def _export_fields_nfe_40_cofinsnt(self, xsd_fields, class_obj, export_dict):
-
         self._export_fields_cofins(xsd_fields, class_obj, export_dict)
 
     ####################
@@ -854,6 +921,13 @@ class NFeLine(spec_models.StackedModel):
     ########################
 
     nfe40_choice10 = fields.Selection(
+        selection=[
+            ("nfe40_ICMS", "ICMS"),
+            #            ("nfe40_II", "II"),
+            #            ("nfe40_IPI", "IPI"),
+            ("nfe40_ISSQN", "ISSQN"),
+        ],
+        string="ICMS/II/IPI ou ISSQN",
         compute="_compute_nfe40_choice10",
         store=True,
     )
@@ -897,11 +971,6 @@ class NFeLine(spec_models.StackedModel):
             else:
                 record.nfe40_infAdProd = False
 
-    # Todo: Calcular
-    nfe40_vFCPUFDest = fields.Monetary(
-        string="Valor total do ICMS relativo ao Fundo de Combate à Pobreza",
-    )
-
     @api.model
     def _prepare_import_dict(
         self, values, model=None, parent_dict=None, defaults_model=None
@@ -918,8 +987,8 @@ class NFeLine(spec_models.StackedModel):
         return values
 
     def _build_attr(self, node, fields, vals, path, attr):
-        key = "nfe40_%s" % (attr.get_name(),)  # TODO schema wise
-        value = getattr(node, attr.get_name())
+        key = "nfe40_%s" % (attr[0])  # TODO schema wise
+        value = getattr(node, attr[0])
 
         if key.startswith("nfe40_ICMS") and key not in [
             "nfe40_ICMS",
@@ -969,25 +1038,25 @@ class NFeLine(spec_models.StackedModel):
             return super()._build_string_not_simple_type(key, vals, value, node)
             # TODO avoid collision with cls prefix
         elif key == "nfe40_CST":
-            if node.original_tagname_.startswith("ICMS"):
+            if str(type(node)).startswith("Tnfe.InfNfe.Det.Imposto.Icms"):
                 vals["icms_cst_id"] = (
                     self.env["l10n_br_fiscal.cst"]
                     .search([("code", "=", value), ("tax_domain", "=", "icms")])[0]
                     .id
                 )
-            if node.original_tagname_.startswith("IPI"):
+            elif str(type(node)).startswith("Tnfe.InfNfe.Det.Imposto.Ipi"):
                 vals["ipi_cst_id"] = (
                     self.env["l10n_br_fiscal.cst"]
                     .search([("code", "=", value), ("tax_domain", "=", "ipi")])[0]
                     .id
                 )
-            if node.original_tagname_.startswith("PIS"):
+            elif str(type(node)).startswith("Tnfe.InfNfe.Det.Imposto.Pis"):
                 vals["pis_cst_id"] = (
                     self.env["l10n_br_fiscal.cst"]
                     .search([("code", "=", value), ("tax_domain", "=", "pis")])[0]
                     .id
                 )
-            if node.original_tagname_.startswith("COFINS"):
+            elif str(type(node)).startswith("Tnfe.InfNfe.Det.Imposto.Cofins"):
                 vals["cofins_cst_id"] = (
                     self.env["l10n_br_fiscal.cst"]
                     .search([("code", "=", value), ("tax_domain", "=", "cofins")])[0]
@@ -1030,13 +1099,13 @@ class NFeLine(spec_models.StackedModel):
                     # TODO map icms_tax_id
                     if hasattr(icms, "CST") and icms.CST is not None:
                         icms_vals["icms_cst_id"] = self.env.ref(
-                            "l10n_br_fiscal.cst_icms_%s" % (icms.CST,)
+                            "l10n_br_fiscal.cst_icms_%s" % (icms.CST.value,)
                         ).id
                         # TODO search + log if not found
                     if hasattr(icms, "modBC") and icms.modBC is not None:
-                        icms_vals["icms_base_type"] = icms.modBC
+                        icms_vals["icms_base_type"] = icms.modBC.value
                     if hasattr(icms, "orig"):
-                        icms_vals["icms_origin"] = icms.orig
+                        icms_vals["icms_origin"] = icms.orig.value
                     if hasattr(icms, "vBC") and icms.vBC is not None:
                         icms_vals["icms_base"] = float(icms.vBC)
                     if hasattr(icms, "pICMS") and icms.pICMS is not None:
@@ -1047,7 +1116,7 @@ class NFeLine(spec_models.StackedModel):
                         icms_vals["icms_reduction"] = float(icms.pRedBC)
                     if hasattr(icms, "motDesICMS") and icms.motDesICMS is not None:
                         icms_vals["icms_relief_id"] = self.env.ref(
-                            "l10n_br_fiscal.icms_relief_%s" % (icms.motDesICMS,)
+                            "l10n_br_fiscal.icms_relief_%s" % (icms.motDesICMS.value,)
                         ).id
                     if hasattr(icms, "vICMSDeson") and icms.vICMSDeson is not None:
                         icms_vals["icms_relief_value"] = float(icms.vICMSDeson)
@@ -1060,7 +1129,7 @@ class NFeLine(spec_models.StackedModel):
                     # ICMS ST fields
                     # TODO map icmsst_tax_id
                     if hasattr(icms, "modBCST") and icms.modBCST is not None:
-                        icms_vals["icmsst_base_type"] = icms.modBCST
+                        icms_vals["icmsst_base_type"] = icms.modBCST.value
                     if hasattr(icms, "pMVAST") and icms.pMVAST is not None:
                         icms_vals["icmsst_mva_percent"] = float(icms.pMVAST)
                     if hasattr(icms, "pRedBCST") and icms.pRedBCST is not None:
@@ -1107,7 +1176,7 @@ class NFeLine(spec_models.StackedModel):
                     # TODO map icmssn_tax_id using CSOSN
                     if hasattr(icms, "CSOSN") and icms.CSOSN is not None:
                         icms_vals["icms_cst_id"] = self.env.ref(
-                            "l10n_br_fiscal.cst_icmssn_%s" % (icms.CSOSN,)
+                            "l10n_br_fiscal.cst_icmssn_%s" % (icms.CSOSN.value,)
                         ).id
                     if hasattr(icms, "pCredSN") and icms.pCredSN is not None:
                         icms_vals["icmssn_percent"] = float(icms.pCredSN)

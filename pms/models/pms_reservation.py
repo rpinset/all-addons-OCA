@@ -41,7 +41,6 @@ class PmsReservation(models.Model):
     priority = fields.Integer(
         string="Priority",
         help="Priority of a reservation",
-        index=True,
         store="True",
         compute="_compute_priority",
     )
@@ -52,6 +51,7 @@ class PmsReservation(models.Model):
         copy=False,
         comodel_name="pms.room",
         ondelete="restrict",
+        index=True,
         domain="["
         "('id', 'in', allowed_room_ids),"
         "('pms_property_id', '=', pms_property_id),"
@@ -69,6 +69,7 @@ class PmsReservation(models.Model):
         string="Folio",
         help="The folio where the reservations are included",
         copy=False,
+        index=True,
         comodel_name="pms.folio",
         ondelete="restrict",
         tracking=True,
@@ -87,6 +88,7 @@ class PmsReservation(models.Model):
         store=True,
         comodel_name="pms.board.service.room.type",
         compute="_compute_board_service_room_id",
+        index=True,
         tracking=True,
         check_pms_properties=True,
     )
@@ -98,6 +100,7 @@ class PmsReservation(models.Model):
         readonly=False,
         copy=False,
         store=True,
+        index=True,
         comodel_name="pms.room.type",
         ondelete="restrict",
         compute="_compute_room_type_id",
@@ -109,6 +112,7 @@ class PmsReservation(models.Model):
         help="Name of who made the reservation",
         readonly=False,
         store=True,
+        index=True,
         comodel_name="res.partner",
         ondelete="restrict",
         compute="_compute_partner_id",
@@ -120,6 +124,7 @@ class PmsReservation(models.Model):
         help="Agency that made the reservation",
         readonly=False,
         store=True,
+        index=True,
         related="folio_id.agency_id",
         depends=["folio_id.agency_id"],
         tracking=True,
@@ -136,6 +141,7 @@ class PmsReservation(models.Model):
         help="Sale Channel through which reservation was created, the original",
         default=lambda self: self._get_default_sale_channel_origin(),
         comodel_name="pms.sale.channel",
+        index=True,
     )
     force_update_origin = fields.Boolean(
         string="Update Sale Channel Origin",
@@ -171,6 +177,7 @@ class PmsReservation(models.Model):
         readonly=True,
         store=True,
         related="folio_id.company_id",
+        index=True,
     )
     pms_property_id = fields.Many2one(
         string="Pms Property",
@@ -180,6 +187,7 @@ class PmsReservation(models.Model):
         default=lambda self: self.env.user.get_active_property_ids()[0],
         related="folio_id.pms_property_id",
         comodel_name="pms.property",
+        index=True,
         check_pms_properties=True,
     )
     reservation_line_ids = fields.One2many(
@@ -215,6 +223,7 @@ class PmsReservation(models.Model):
         compute="_compute_pricelist_id",
         tracking=True,
         check_pms_properties=True,
+        index=True,
         domain="[('is_pms_available', '=', True)]",
     )
     user_id = fields.Many2one(
@@ -324,6 +333,7 @@ class PmsReservation(models.Model):
         help="The currency used in relation to the pricelist",
         readonly=True,
         store=True,
+        index=True,
         related="pricelist_id.currency_id",
         depends=["pricelist_id"],
     )
@@ -716,6 +726,14 @@ class PmsReservation(models.Model):
         default=False,
     )
 
+    is_reselling = fields.Boolean(
+        string="Reselling",
+        help="Indicate if exists reselling in any reservation line",
+        compute="_compute_is_reselling",
+        store=True,
+        readonly=False,
+    )
+
     @api.depends("folio_id", "folio_id.external_reference")
     def _compute_external_reference(self):
         for reservation in self:
@@ -964,7 +982,7 @@ class PmsReservation(models.Model):
 
     @api.depends("board_service_room_id")
     def _compute_service_ids(self):
-        if self.env.context.get('skip_compute_service_ids', False):
+        if self.env.context.get("skip_compute_service_ids", False):
             return
         for reservation in self:
             board_services = []
@@ -1000,22 +1018,26 @@ class PmsReservation(models.Model):
     @api.depends("partner_id", "agency_id")
     def _compute_pricelist_id(self):
         for reservation in self:
+            is_new = not reservation.pricelist_id or isinstance(
+                reservation.id, models.NewId
+            )
             if reservation.reservation_type in ("out", "staff"):
                 reservation.pricelist_id = False
-            elif reservation.agency_id and reservation.agency_id.apply_pricelist:
+            elif (
+                is_new
+                and reservation.agency_id
+                and reservation.agency_id.apply_pricelist
+            ):
                 reservation.pricelist_id = (
                     reservation.agency_id.property_product_pricelist
                 )
             # only change de pricelist if the reservation is not yet saved
             # and the partner has a pricelist default
             elif (
-                reservation.partner_id
+                is_new
+                and reservation.partner_id
                 and reservation.partner_id.property_product_pricelist
                 and reservation.partner_id.property_product_pricelist.is_pms_available
-                and (
-                    not reservation.pricelist_id
-                    or not isinstance(reservation.id, models.NewId)
-                )
             ):
                 reservation.pricelist_id = (
                     reservation.partner_id.property_product_pricelist
@@ -1169,7 +1191,12 @@ class PmsReservation(models.Model):
         # Reservations can be cancelled
         for record in self:
             record.allowed_cancel = (
-                True if (record.state not in ["cancel", "done"]) else False
+                True
+                if (
+                    record.state not in ["cancel", "done"]
+                    and fields.Date.today() <= record.checkout
+                )
+                else False
             )
 
     def _compute_ready_for_checkin(self):
@@ -1661,6 +1688,14 @@ class PmsReservation(models.Model):
     def _compute_force_update_origin(self):
         for record in self:
             record.force_update_origin = True
+
+    @api.depends("is_reselling")
+    def _compute_is_reselling(self):
+        for record in self:
+            if any(record.reservation_line_ids.mapped("is_reselling")):
+                record.is_reselling = True
+            else:
+                record.is_reselling = False
 
     def _search_allowed_checkin(self, operator, value):
         if operator not in ("=",):

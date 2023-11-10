@@ -118,6 +118,11 @@ msgstr ""
 "les demandes de stock."
 
 #. module: stock_request
+#: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
+msgid "By default, available stock is not used"
+msgstr ""
+
+#. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_form
 msgid "Cancel"
@@ -135,6 +140,13 @@ msgstr "Annulée"
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__allowed_uom_categ_id
 msgid "Category"
 msgstr "Catégorie"
+
+#. module: stock_request
+#: model:ir.model.fields,field_description:stock_request.field_res_company__stock_request_check_available_first
+#: model:ir.model.fields,field_description:stock_request.field_res_config_settings__stock_request_check_available_first
+#: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
+msgid "Check available stock first"
+msgstr ""
 
 #. module: stock_request
 #: model_terms:ir.actions.act_window,help:stock_request.action_stock_request_form
@@ -380,11 +392,8 @@ msgstr "Si coché, de nouveaux messages demandent votre attention."
 
 #. module: stock_request
 #: model:ir.model.fields,help:stock_request.field_stock_request__message_has_error
-#: model:ir.model.fields,help:stock_request.field_stock_request__message_has_sms_error
 #: model:ir.model.fields,help:stock_request.field_stock_request_abstract__message_has_error
-#: model:ir.model.fields,help:stock_request.field_stock_request_abstract__message_has_sms_error
 #: model:ir.model.fields,help:stock_request.field_stock_request_order__message_has_error
-#: model:ir.model.fields,help:stock_request.field_stock_request_order__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si actif, certains messages ont une erreur de livraison."
 
@@ -457,6 +466,11 @@ msgstr "Dernière mise à jour par"
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__write_date
 msgid "Last Updated on"
 msgstr "Dernière mise à jour le"
+
+#. module: stock_request
+#: model:ir.model.fields,field_description:stock_request.field_stock_request__lead_days_date
+msgid "Lead Days Date"
+msgstr ""
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__location_id
@@ -817,10 +831,8 @@ msgid "Routes"
 msgstr "Routes"
 
 #. module: stock_request
-#: model:ir.model.fields,field_description:stock_request.field_stock_request__message_has_sms_error
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__message_has_sms_error
-#: model:ir.model.fields,field_description:stock_request.field_stock_request_order__message_has_sms_error
-msgid "SMS Delivery error"
+#: model:ir.model.fields,field_description:stock_request.field_stock_request__rule_ids
+msgid "Rules used"
 msgstr ""
 
 #. module: stock_request
@@ -899,7 +911,6 @@ msgstr ""
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.view_move_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_allocation_form
-#: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_allocation_tree
 msgid "Stock Request Allocations"
 msgstr ""
 
@@ -958,7 +969,6 @@ msgstr "La quantité de la demande de stock doit être positive."
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_search
 #: model_terms:ir.ui.view,arch_db:stock_request.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_form
-#: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_tree
 msgid "Stock Requests"
 msgstr "Demandes de stock"
 

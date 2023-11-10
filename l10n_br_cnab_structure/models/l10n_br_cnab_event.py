@@ -8,7 +8,6 @@ from odoo.exceptions import UserError
 
 
 class CNABReturnEvent(models.Model):
-
     _inherit = "l10n_br_cnab.return.event"
 
     # BASE FIELDS #
@@ -129,7 +128,7 @@ class CNABReturnEvent(models.Model):
             self.occurrence_date = self.cnab_return_log_id.cnab_date_file
 
     def set_move_line_ids(self):
-        payment_lines = self.bank_payment_line_id.payment_line_ids
+        payment_lines = self.payment_line_ids
         for payment_line in payment_lines:
             self.move_line_ids = [(4, payment_line.move_line_id.id)]
 
@@ -161,13 +160,13 @@ class CNABReturnEvent(models.Model):
         """
         for event in self:
             if event.cnab_return_log_id.type == "outbound":
-                bank_payment_line_id = self.env["bank.payment.line"].search(
+                payment_lines = self.env["account.payment.line"].search(
                     [("name", "=", event.your_number)]
                 )
-                if not bank_payment_line_id:
+                if not payment_lines:
                     event.state = "error"
-                    event.occurrences = "BANK PAYMENT LINE NOT FOUND"
-                event.bank_payment_line_id = bank_payment_line_id
+                    event.occurrences = "PAYMENT LINES NOT FOUND"
+                event.payment_line_ids = payment_lines.ids
 
     def get_description_occurrence(self, event_code):
         """Get occurrence description by occurrence code"""
@@ -221,7 +220,7 @@ class CNABReturnEvent(models.Model):
         # If it is an outbound payment, the counterpart will be an debit.
         # If inbound will be a credit
         debit_or_credit = "debit" if self.move_line_ids[0].balance < 0 else "credit"
-        move_lines = self.move_line_ids.sorted(key=lambda l: l.date_maturity)
+        move_lines = self.move_line_ids.sorted(key=lambda line: line.date_maturity)
         for index, move_line in enumerate(move_lines):
             line_balance = abs(move_line.balance)
             # the total value of counterpart move lines must be equal to balance in return event

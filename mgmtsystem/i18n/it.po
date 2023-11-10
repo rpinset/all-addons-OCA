@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: management-system (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-07 06:43+0000\n"
-"PO-Revision-Date: 2022-11-11 11:45+0000\n"
+"PO-Revision-Date: 2023-10-09 09:13+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
-"Language-Team: Italian (http://www.transifex.com/oca/"
-"OCA-management-system-9-0/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/oca/OCA-management-"
+"system-9-0/language/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: mgmtsystem
 #: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings__module_mgmtsystem_action
@@ -76,6 +76,7 @@ msgstr "Creato il"
 
 #. module: mgmtsystem
 #: model:ir.model.fields,field_description:mgmtsystem.field_mgmtsystem_system__display_name
+#: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
@@ -106,6 +107,11 @@ msgid "Environmental Aspects"
 msgstr "Aspetti ambientali"
 
 #. module: mgmtsystem
+#: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings__module_mgmtsystem_evaluation
+msgid "Evaluation"
+msgstr "Valutazione"
+
+#. module: mgmtsystem
 #: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings__module_mgmtsystem_security_event
 msgid "Feared Events"
 msgstr "Eventi temuti"
@@ -127,6 +133,7 @@ msgstr "Igiene e sicurezza"
 
 #. module: mgmtsystem
 #: model:ir.model.fields,field_description:mgmtsystem.field_mgmtsystem_system__id
+#: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings__id
 msgid "ID"
 msgstr "ID"
 
@@ -142,6 +149,7 @@ msgstr "Modello del manuale sicurezza informazioni"
 
 #. module: mgmtsystem
 #: model:ir.model.fields,field_description:mgmtsystem.field_mgmtsystem_system____last_update
+#: model:ir.model.fields,field_description:mgmtsystem.field_res_config_settings____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
@@ -199,7 +207,6 @@ msgstr "Sistema di gestione"
 
 #. module: mgmtsystem
 #: model:ir.actions.act_window,name:mgmtsystem.system_action
-#: model_terms:ir.ui.view,arch_db:mgmtsystem.system_tree
 #: model_terms:ir.ui.view,arch_db:mgmtsystem.view_mgmtsystem_configuration
 msgid "Management Systems"
 msgstr "Sistemi di gestione"
@@ -364,6 +371,15 @@ msgid ""
 msgstr ""
 "Fornisce un modello del manuale qualità.\n"
 "- Verrà installato il modulo mgmtsystem_quality_manual."
+
+#. module: mgmtsystem
+#: model:ir.model.fields,help:mgmtsystem.field_res_config_settings__module_mgmtsystem_evaluation
+msgid ""
+"Provide a tool for evaluating different kind of resources.\n"
+"- This installs the module mgmtsystem_quality."
+msgstr ""
+"Frnisce uno srumento per valutare diversi tipi di risorse.\n"
+"- Questo installa il modulo mgmtsystem_quality."
 
 #. module: mgmtsystem
 #: model:ir.model.fields,help:mgmtsystem.field_res_config_settings__module_mgmtsystem_action

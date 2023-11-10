@@ -78,9 +78,12 @@ class Asset(models.Model):
 
     sale_date = fields.Date(string="Sale Date")
 
+    dismiss_date = fields.Date()
+
     sale_move_id = fields.Many2one("account.move", string="Sale Move")
 
     sold = fields.Boolean(string="Sold")
+    dismissed = fields.Boolean(string="Dismissed")
 
     state = fields.Selection(
         [
@@ -121,17 +124,7 @@ class Asset(models.Model):
         return super().write(vals)
 
     def unlink(self):
-        if self.mapped("asset_accounting_info_ids"):
-            assets = self.filtered("asset_accounting_info_ids")
-            name_list = "\n".join([a[-1] for a in assets.name_get()])
-            raise ValidationError(
-                _(
-                    "The assets you are trying to delete are currently linked"
-                    " to accounting info. Please remove them if necessary"
-                    " before removing these assets:\n"
-                )
-                + name_list
-            )
+        self.mapped("asset_accounting_info_ids").unlink()
         self.mapped("depreciation_ids").unlink()
         return super().unlink()
 

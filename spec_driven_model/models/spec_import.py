@@ -1,9 +1,13 @@
 # Copyright 2019-2020 Akretion - Raphael Valyi <raphael.valyi@akretion.com>
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
 
+import dataclasses
+import inspect
 import logging
 import re
 from datetime import datetime
+from enum import Enum
+from typing import ForwardRef
 
 from odoo import api, models
 
@@ -28,7 +32,7 @@ class AbstractSpecMixin(models.AbstractModel):
     @api.model
     def build_from_binding(self, node, dry_run=False):
         """
-        Builds an instance of an Odoo Model from a pre-populated
+        Build an instance of an Odoo Model from a pre-populated
         Python binding object. Binding object such as the ones generated using
         generateDS can indeed be automatically populated from an XML file.
         This build method bridges the gap to build the Odoo object.
@@ -52,36 +56,41 @@ class AbstractSpecMixin(models.AbstractModel):
     @api.model
     def build_attrs(self, node, path="", defaults_model=None):
         """
-        Builds a new odoo model instance from a Python binding element or
+        Build a new odoo model instance from a Python binding element or
         sub-element. Iterates over the binding fields to populate the Odoo fields.
         """
         vals = {}
-        for attr in node.member_data_items_:
-            self._build_attr(node, self._fields, vals, path, attr)
+        for fname, fspec in node.__dataclass_fields__.items():
+            self._build_attr(node, self._fields, vals, path, (fname, fspec))
         vals = self._prepare_import_dict(vals, defaults_model=defaults_model)
         return vals
 
     @api.model
     def _build_attr(self, node, fields, vals, path, attr):
         """
-        Builds an Odoo field from a binding attribute.
+        Build an Odoo field from a binding attribute.
         """
-        value = getattr(node, attr.get_name())
+        value = getattr(node, attr[0])
         if value is None or value == []:
             return False
         key = "%s%s" % (
             self._field_prefix,
-            attr.get_name(),
+            attr[1].metadata.get("name", attr[0]),
         )
         child_path = "%s.%s" % (path, key)
-        binding_type = attr.get_child_attrs().get("type")
-        if (
-            binding_type is None
-            or binding_type.startswith("xs:")
-            or binding_type.startswith("xsd:")
+
+        # Is attr a xsd SimpleType or a ComplexType?
+        # with xsdata a ComplexType can have a type like:
+        # typing.Union[nfelib.nfe.bindings.v4_0.leiaute_nfe_v4_00.TinfRespTec, NoneType]
+        # or typing.Union[ForwardRef('Tnfe.InfNfe.Det.Imposto'), NoneType]
+        # that's why we test if the 1st Union type is a dataclass or a ForwardRef
+        if attr[1].type == str or (
+            not isinstance(attr[1].type.__args__[0], ForwardRef)
+            and not dataclasses.is_dataclass(attr[1].type.__args__[0])
         ):
             # SimpleType
-
+            if isinstance(value, Enum):
+                value = value.value
             if fields.get(key) and fields[key].type == "datetime":
                 if "T" in value:
                     if tz_datetime.match(value):
@@ -93,33 +102,33 @@ class AbstractSpecMixin(models.AbstractModel):
             self._build_string_not_simple_type(key, vals, value, node)
 
         else:
+            if str(attr[1].type).startswith("typing.List") or "ForwardRef" in str(
+                attr[1].type
+            ):  # o2m
+                binding_type = attr[1].type.__args__[0].__forward_arg__
+            else:
+                binding_type = attr[1].type.__args__[0].__name__
+
             # ComplexType
             if fields.get(key) and fields[key].related:
+                if fields[key].readonly and fields[key].type == "many2one":
+                    return False  # ex: don't import NFe infRespTec
                 # example: company.nfe40_enderEmit related on partner_id
                 # then we need to set partner_id, not nfe40_enderEmit
                 key = fields[key].related[-1]  # -1 works with _inherits
                 comodel_name = fields[key].comodel_name
             else:
-                clean_type = attr.get_child_attrs()["type"].replace("Type", "").lower()
+                clean_type = binding_type.lower()
                 comodel_name = "%s.%s.%s" % (
                     self._schema_name,
                     self._schema_version.replace(".", "")[0:2],
-                    clean_type,
+                    clean_type.split(".")[-1],
                 )
 
             comodel = self.get_concrete_model(comodel_name)
             if comodel is None:  # example skip ICMS100 class
                 return
-
-            if attr.get_container() == 0:
-                # m2o
-                new_value = comodel.build_attrs(value, path=child_path)
-                child_defaults = self._extract_related_values(vals, key)
-
-                new_value.update(child_defaults)
-                # FIXME comodel._build_many2one
-                self._build_many2one(comodel, vals, new_value, key, value, child_path)
-            elif attr.get_container() == 1:
+            if str(attr[1].type).startswith("typing.List"):
                 # o2m
                 lines = []
                 for line in [li for li in value if li]:
@@ -128,6 +137,14 @@ class AbstractSpecMixin(models.AbstractModel):
                     )
                     lines.append((0, 0, line_vals))
                 vals[key] = lines
+            else:
+                # m2o
+                new_value = comodel.build_attrs(value, path=child_path)
+                child_defaults = self._extract_related_values(vals, key)
+
+                new_value.update(child_defaults)
+                # FIXME comodel._build_many2one
+                self._build_many2one(comodel, vals, new_value, key, value, child_path)
 
     @api.model
     def _build_string_not_simple_type(self, key, vals, value, node):
@@ -232,7 +249,6 @@ class AbstractSpecMixin(models.AbstractModel):
             )
             vals.update(defaults)
             # NOTE: also eventually load default values from the context?
-
         return vals
 
     @api.model
@@ -296,7 +312,21 @@ class AbstractSpecMixin(models.AbstractModel):
                 rec_dict, model=model, parent_dict=parent_dict, defaults_model=model
             )
             if self._context.get("dry_run"):
-                rec_id = model.new(vals).id
+                rec = model.new(vals)
+                rec_id = rec.id
+                # at this point for NewId records, some fields
+                # may need to be set calling the inverse field functions:
+                for fname in vals:
+                    field = model._fields.get(fname)
+                    if isinstance(field.inverse, str):
+                        getattr(rec, field.inverse)()
+                        rec.write(vals)  # ensure vals values aren't overriden
+                    elif (
+                        field.inverse
+                        and len(inspect.getfullargspec(field.inverse).args) < 2
+                    ):
+                        field.inverse()
+                        rec.write(vals)
             else:
                 rec_id = (
                     model.with_context(

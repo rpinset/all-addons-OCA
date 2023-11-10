@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-05-30 18:05+0000\n"
-"Last-Translator: Samuele Mariani <samuele@ooops404.com>\n"
+"PO-Revision-Date: 2023-11-03 13:40+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: barcodes_generator_product
 #: model:ir.model.fields,help:barcodes_generator_product.field_product_product__generate_type
@@ -38,14 +38,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_product__barcode_base
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_template__barcode_base
 msgid "Barcode Base"
-msgstr "Base Codice a Barre"
+msgstr "Base codice a barre"
 
 #. module: barcodes_generator_product
 #: model:ir.model,name:barcodes_generator_product.model_barcode_rule
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_product__barcode_rule_id
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_template__barcode_rule_id
 msgid "Barcode Rule"
-msgstr "Regola Codice a Barre"
+msgstr "Regola codice a barre"
 
 #. module: barcodes_generator_product
 #: model:product.template.attribute.value,name:barcodes_generator_product.product_variant_2
@@ -102,7 +102,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_product____last_update
 #: model:ir.model.fields,field_description:barcodes_generator_product.field_product_template____last_update
 msgid "Last Modified on"
-msgstr "Ultima Modifica il"
+msgstr "Ultima modifica il"
 
 #. module: barcodes_generator_product
 #: model:ir.model,name:barcodes_generator_product.model_product_product
@@ -112,7 +112,7 @@ msgstr "Prodotto"
 #. module: barcodes_generator_product
 #: model:ir.model,name:barcodes_generator_product.model_product_template
 msgid "Product Template"
-msgstr "Modello Prodotto"
+msgstr "Modello prodotto"
 
 #. module: barcodes_generator_product
 #: model:ir.model.fields.selection,name:barcodes_generator_product.selection__barcode_rule__generate_model__product_product

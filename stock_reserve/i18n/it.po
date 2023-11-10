@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-30 03:53+0000\n"
-"PO-Revision-Date: 2023-03-23 13:26+0000\n"
+"PO-Revision-Date: 2023-11-01 14:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_product_product__reservation_count
@@ -408,7 +408,7 @@ msgstr "Ultimo aggiornamento di"
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__write_date
 msgid "Last Updated on"
-msgstr "Data ultimo aggiornamento"
+msgstr "Ultimo aggiornamento il"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__orderpoint_ids
@@ -589,7 +589,7 @@ msgstr "Prodotto"
 #: model:ir.model,name:stock_reserve.model_product_template
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__product_tmpl_id
 msgid "Product Template"
-msgstr "Template Prodotto"
+msgstr "Modello prodotto"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__product_type
@@ -815,7 +815,6 @@ msgstr "Prenotazione Magazzino"
 #: model_terms:ir.ui.view,arch_db:stock_reserve.product_template_form_view_reservation_button
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_search
-#: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_tree
 msgid "Stock Reservations"
 msgstr "Magazzino Prenotazioni"
 
@@ -931,7 +930,7 @@ msgstr ""
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__price_unit
 msgid "Unit Price"
-msgstr "Prezzo Unitario"
+msgstr "Prezzo unitario"
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__product_uom
@@ -951,12 +950,22 @@ msgstr ""
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__date_validity
 msgid "Validity Date"
-msgstr "Data Validità"
+msgstr "Data validità"
 
 #. module: stock_reserve
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 msgid "View Reservation Move"
 msgstr "Visualizza Movimento Prenotazione"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume
+msgid "Volume"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume_uom_name
+msgid "Volume unit of measure label"
+msgstr ""
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__warehouse_id

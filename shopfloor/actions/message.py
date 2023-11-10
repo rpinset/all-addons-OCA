@@ -13,6 +13,12 @@ _logger = logging.getLogger(__name__)
 class MessageAction(Component):
     _inherit = "shopfloor.message.action"
 
+    def no_operation_found(self):
+        return {
+            "message_type": "error",
+            "body": _("No operation found for this menu and profile."),
+        }
+
     def no_picking_type(self):
         return {
             "message_type": "error",
@@ -47,6 +53,14 @@ class MessageAction(Component):
             % (
                 barcode,
                 ", ".join(picking_types.mapped("default_location_src_id.name")),
+            ),
+        }
+
+    def location_requires_package(self):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "This location requires packages. Please scan a destination package."
             ),
         }
 
@@ -110,6 +124,14 @@ class MessageAction(Component):
         return {
             "message_type": "warning",
             "body": _("Package {} is already used.").format(package.name),
+        }
+
+    def package_different_picking_type(self, package, picking_type):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "Package {} contains already lines from a different operation type {}"
+            ).format(package.name, picking_type.name),
         }
 
     def dest_package_required(self):
@@ -221,6 +243,7 @@ class MessageAction(Component):
             "stock.production.lot": _("Wrong lot."),
             "stock.location": _("Wrong location."),
             "stock.quant.package": _("Wrong pack."),
+            "product.packaging": _("Wrong packaging."),
         }.get(model_name, _("Wrong."))
 
     def wrong_record(self, record):
@@ -357,6 +380,18 @@ class MessageAction(Component):
             "body": _("This line has a package, please select the package instead."),
         }
 
+    def scan_the_location_first(self):
+        return {
+            "message_type": "warning",
+            "body": _("Please scan the location first."),
+        }
+
+    def scan_the_package(self):
+        return {
+            "message_type": "warning",
+            "body": _("Please scan the package."),
+        }
+
     def product_multiple_packages_scan_package(self):
         return {
             "message_type": "warning",
@@ -399,13 +434,17 @@ class MessageAction(Component):
     def product_not_found_in_pickings(self):
         return {
             "message_type": "warning",
-            "body": _("No product found among current transfers."),
+            "body": _("No transfer found for this product."),
         }
 
-    def product_not_found_in_picking(self):
+    def product_not_found_in_location_or_transfer(self, product, location, picking):
         return {
-            "message_type": "warning",
-            "body": _("Product not found in the current transfer."),
+            "message_type": "error",
+            "body": _(
+                "Product {} not found in location {} or transfer {}.".format(
+                    product.name, location.name, picking.name
+                )
+            ),
         }
 
     def x_not_found_or_already_in_dest_package(self, message_code):
@@ -422,6 +461,12 @@ class MessageAction(Component):
         return {
             "message_type": "warning",
             "body": _("Packaging not found in the current transfer."),
+        }
+
+    def packaging_dimension_updated(self, packaging):
+        return {
+            "message_type": "success",
+            "body": _("Packaging {} dimension updated.").format(packaging.name),
         }
 
     def expiration_date_missing(self):
@@ -481,16 +526,24 @@ class MessageAction(Component):
             "body": _("This lot is part of multiple packages, please scan a package."),
         }
 
-    def lot_not_found(self):
-        return {
-            "message_type": "error",
-            "body": _("This lot does not exist anymore."),
-        }
-
     def lot_not_found_in_pickings(self):
         return {
             "message_type": "warning",
-            "body": _("No lot found among current transfers."),
+            "body": _("No transfer found for this lot."),
+        }
+
+    def lot_not_found_in_location(self, lot, location):
+        return {
+            "message_type": "error",
+            "body": _("Lot {} not found in location {}").format(
+                lot.name, location.name
+            ),
+        }
+
+    def lot_not_found_in_picking(self, lot, picking):
+        return {
+            "message_type": "error",
+            "body": _("Lot {} not found in transfer {}").format(lot.name, picking.name),
         }
 
     def batch_transfer_complete(self):
@@ -550,6 +603,15 @@ class MessageAction(Component):
             ).format(lot=lot.name, product=lot.product_id.name),
         }
 
+    def no_default_location_on_picking_type(self):
+        return {
+            "message_type": "error",
+            "body": _(
+                "Operation types for this menu are missing "
+                "default source and destination locations."
+            ),
+        }
+
     def location_src_set_to_sublocation(self, location_src):
         return {
             "message_type": "success",
@@ -579,6 +641,18 @@ class MessageAction(Component):
             ),
         }
 
+    def move_already_returned(self):
+        return {
+            "message_type": "error",
+            "body": _("The product/packaging you selected has already been returned."),
+        }
+
+    def return_line_invalid_qty(self):
+        return {
+            "message_type": "error",
+            "body": _("You cannot return more quantity than what was initially sent."),
+        }
+
     def transfer_no_qty_done(self):
         return {
             "message_type": "warning",
@@ -591,6 +665,23 @@ class MessageAction(Component):
         return {
             "message_type": "error",
             "body": _("The picked quantity must be a value above zero."),
+        }
+
+    def selected_lines_qty_done_higher_than_allowed(self):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "The quantity scanned for one or more lines cannot be "
+                "higher than the maximum allowed."
+            ),
+        }
+
+    def line_scanned_qty_done_higher_than_allowed(self):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "Please note that the scanned quantity is higher than the maximum allowed."
+            ),
         }
 
     def recovered_previous_session(self):
@@ -611,6 +702,12 @@ class MessageAction(Component):
             "body": _("Location {} empty").format(location.name),
         }
 
+    def location_empty_scan_package(self, location):
+        return {
+            "message_type": "warning",
+            "body": _("Location empty. Try scanning a package"),
+        }
+
     def location_not_found(self):
         return {
             "message_type": "error",
@@ -621,6 +718,12 @@ class MessageAction(Component):
         return {
             "message_type": "error",
             "body": _("You must not pick more than {} units.").format(quantity),
+        }
+
+    def unable_to_pick_qty(self):
+        return {
+            "message_type": "error",
+            "body": _("You cannot process that much units."),
         }
 
     def lot_replaced_by_lot(self, old_lot, new_lot):
@@ -655,6 +758,22 @@ class MessageAction(Component):
         return {
             "message_type": "error",
             "body": _("Package {} cannot be used: {} ").format(package.name, error_msg),
+        }
+
+    def package_not_found_in_location(self, package, location):
+        return {
+            "message_type": "error",
+            "body": _("Package {} not found in location {}").format(
+                package.name, location.name
+            ),
+        }
+
+    def package_not_found_in_picking(self, package, picking):
+        return {
+            "message_type": "error",
+            "body": _("Package {} not found in transfer {}").format(
+                package.name, picking.name
+            ),
         }
 
     def cannot_change_lot_already_picked(self, lot):
@@ -756,4 +875,25 @@ class MessageAction(Component):
                 "Scan again to place all goods in the same package."
             )
             % dict(name=packaging_type.name),
+        }
+
+    def location_contains_only_packages_scan_one(self):
+        return {
+            "message_type": "warning",
+            "body": _("This location only contains packages, please scan one of them."),
+        }
+
+    def no_line_to_pack(self):
+        return {
+            "message_type": "warning",
+            "body": _("No line to pack found."),
+        }
+
+    def package_transfer_not_allowed_scan_location(self):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "Transferring to a different package is not allowed, "
+                "please scan a location instead."
+            ),
         }

@@ -24,7 +24,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
 msgid ""
 "<span class=\"o_form_label\">Transmitter</span>\n"
-"                            <span class=\"fa fa-lg fa-building-o\" title="
+"                        <span class=\"fa fa-lg fa-building-o\" title="
 "\"Values set here are company-specific.\" aria-label=\"Values set here are "
 "company-specific.\"/>"
 msgstr ""
@@ -277,7 +277,6 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.actions.act_window,name:l10n_it_fatturapa_out.action_wizard_export_fatturapa
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_fatturapa_out_attachment_form
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_fatturapa_out_attachment_tree
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.wizard_export_fatturapa_form_view
 msgid "Export Electronic Invoice"
 msgstr ""
@@ -355,7 +354,6 @@ msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,help:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_has_error
-#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -464,6 +462,11 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__res_company__xml_divisa_value__keep_orig
 msgid "Keep original"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__key
+msgid "Key"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
@@ -591,6 +594,12 @@ msgid "Preview link"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: code:addons/l10n_it_fatturapa_out/wizard/wizard_export_fatturapa.py:0
+#, python-format
+msgid "Print report not found"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.account_invoice_it_cedente_prestatore
 msgid "RF01"
 msgstr ""
@@ -669,11 +678,6 @@ msgid "SI"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
-#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__att_name
 msgid "SdI file name"
 msgstr ""
@@ -721,6 +725,13 @@ msgid "TZ"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,help:l10n_it_fatturapa_out.field_fatturapa_attachment_out__key
+msgid ""
+"Technical field used to resolve multiple attachments in a multi-website "
+"environment."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: code:addons/l10n_it_fatturapa_out/models/company.py:0
 #, python-format
 msgid ""
@@ -760,6 +771,11 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,help:l10n_it_fatturapa_out.field_fatturapa_attachment_out__res_id
 msgid "The record id this is attached to."
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__theme_template_id
+msgid "Theme Template"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
@@ -820,8 +836,18 @@ msgid "Valuta"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__website_id
+msgid "Website"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__website_message_ids
 msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__website_url
+msgid "Website URL"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out

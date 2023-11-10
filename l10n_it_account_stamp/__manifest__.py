@@ -8,7 +8,7 @@
 
 {
     "name": "ITA - Imposta di bollo",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.3",
     "category": "Localization/Italy",
     "summary": "Gestione automatica dell'imposta di bollo",
     "author": "Ermanno Gnan, Sergio Corato, Enrico Ganzaroli, "
@@ -24,6 +24,7 @@
         "views/account_move_view.xml",
         "views/product_view.xml",
         "views/company_view.xml",
+        "views/account_move_report.xml",
     ],
     "installable": True,
 }

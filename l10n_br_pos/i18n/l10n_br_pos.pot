@@ -138,6 +138,12 @@ msgid "Aguardando processamento"
 msgstr ""
 
 #. module: l10n_br_pos
+#: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__allow_csll_irpj
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__allow_csll_irpj
+msgid "Allow Csll Irpj"
+msgstr ""
+
+#. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_config__cfop_ids
 msgid "Allowed CFOPs"
 msgstr ""
@@ -437,6 +443,7 @@ msgstr ""
 
 #. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__cofinsst_base
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order__amount_cofinsst_base
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__cofinsst_base
 msgid "COFINS ST Base"
 msgstr ""
@@ -455,6 +462,7 @@ msgstr ""
 
 #. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__cofinsst_value
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order__amount_cofinsst_value
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__cofinsst_value
 msgid "COFINS ST Value"
 msgstr ""
@@ -1742,6 +1750,22 @@ msgid "If checked, some messages have a delivery error."
 msgstr ""
 
 #. module: l10n_br_pos
+#: model:ir.model.fields,help:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__allow_csll_irpj
+#: model:ir.model.fields,help:l10n_br_pos.field_pos_order_line__allow_csll_irpj
+msgid "Indicates potential 'CSLL' and 'IRPJ' tax charges."
+msgstr ""
+
+#. module: l10n_br_pos
+#: model:ir.model.fields,help:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__partner_is_public_entity
+#: model:ir.model.fields,help:l10n_br_pos.field_pos_order_line__partner_is_public_entity
+msgid ""
+"Indicates whether the entity in question is a public organization or "
+"government-related entity. It encompasses a range of entities such as "
+"municipal governments, state-owned enterprises (where the government is the "
+"largest shareholder), and other government-controlled organizations."
+msgstr ""
+
+#. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__insurance_value
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order__amount_insurance_value
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__insurance_value
@@ -2116,6 +2140,7 @@ msgstr ""
 
 #. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__pisst_base
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order__amount_pisst_base
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__pisst_base
 msgid "PIS ST Base"
 msgstr ""
@@ -2134,6 +2159,7 @@ msgstr ""
 
 #. module: l10n_br_pos
 #: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__pisst_value
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order__amount_pisst_value
 #: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__pisst_value
 msgid "PIS ST Value"
 msgstr ""
@@ -2282,6 +2308,12 @@ msgstr ""
 #. module: l10n_br_pos
 #: model:ir.model.fields.selection,name:l10n_br_pos.selection__res_company__environment_sat__production
 msgid "Production"
+msgstr ""
+
+#. module: l10n_br_pos
+#: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__partner_is_public_entity
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__partner_is_public_entity
+msgid "Public Entity"
 msgstr ""
 
 #. module: l10n_br_pos
@@ -2477,6 +2509,18 @@ msgstr ""
 #: code:addons/l10n_br_pos/static/src/js/models.js:0
 #, python-format
 msgid "Status documento fiscal"
+msgstr ""
+
+#. module: l10n_br_pos
+#: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__icms_tax_benefit_id
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__icms_tax_benefit_id
+msgid "Tax Benefit"
+msgstr ""
+
+#. module: l10n_br_pos
+#: model:ir.model.fields,field_description:l10n_br_pos.field_l10n_br_pos_product_fiscal_map__icms_tax_benefit_code
+#: model:ir.model.fields,field_description:l10n_br_pos.field_pos_order_line__icms_tax_benefit_code
+msgid "Tax Benefit Code"
 msgstr ""
 
 #. module: l10n_br_pos

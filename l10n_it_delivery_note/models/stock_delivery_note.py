@@ -41,6 +41,7 @@ DOMAIN_INVOICE_STATUSES = [s[0] for s in INVOICE_STATUSES]
 class StockDeliveryNote(models.Model):
     _name = "stock.delivery.note"
     _inherit = [
+        "portal.mixin",
         "mail.thread",
         "mail.activity.mixin",
         "stock.picking.checker.mixin",
@@ -155,6 +156,7 @@ class StockDeliveryNote(models.Model):
         readonly=True,
         required=True,
         index=True,
+        check_company=True,
     )
 
     sequence_id = fields.Many2one("ir.sequence", readonly=True, copy=False)
@@ -171,7 +173,13 @@ class StockDeliveryNote(models.Model):
         domain=_domain_volume_uom,
         states=DONE_READONLY_STATE,
     )
-    gross_weight = fields.Float(string="Gross weight", states=DONE_READONLY_STATE)
+    gross_weight = fields.Float(
+        string="Gross weight",
+        store=True,
+        readonly=False,
+        compute="_compute_weights",
+        states=DONE_READONLY_STATE,
+    )
     gross_weight_uom_id = fields.Many2one(
         "uom.uom",
         string="Gross weight UoM",
@@ -179,7 +187,13 @@ class StockDeliveryNote(models.Model):
         domain=_domain_weight_uom,
         states=DONE_READONLY_STATE,
     )
-    net_weight = fields.Float(string="Net weight", states=DONE_READONLY_STATE)
+    net_weight = fields.Float(
+        string="Net weight",
+        store=True,
+        readonly=False,
+        compute="_compute_weights",
+        states=DONE_READONLY_STATE,
+    )
     net_weight_uom_id = fields.Many2one(
         "uom.uom",
         string="Net weight UoM",
@@ -264,6 +278,14 @@ class StockDeliveryNote(models.Model):
     show_product_information = fields.Boolean(compute="_compute_boolean_flags")
     company_id = fields.Many2one("res.company", required=True, default=_default_company)
 
+    _sql_constraints = [
+        (
+            "name_uniq",
+            "unique(name, company_id)",
+            "The Delivery note must have unique numbers.",
+        )
+    ]
+
     @api.depends("name", "partner_id", "partner_ref", "partner_id.display_name")
     def name_get(self):
         result = []
@@ -302,6 +324,30 @@ class StockDeliveryNote(models.Model):
     def _compute_get_pickings(self):
         for note in self:
             note.pickings_picker = note.picking_ids
+
+    @api.depends("picking_ids")
+    def _compute_weights(self):
+        for note in self:
+            # fill gross & net weight from pickings
+            gross_weight = net_weight = 0.0
+            if note.picking_ids:
+                # this is the unit used for shipping_weight
+                weight_uom = self.env[
+                    "product.template"
+                ]._get_weight_uom_id_from_ir_config_parameter()
+                for pick in note.picking_ids:
+                    gross_weight += weight_uom._compute_quantity(
+                        pick.shipping_weight, note.gross_weight_uom_id
+                    )
+                    net_weight += weight_uom._compute_quantity(
+                        pick.shipping_weight, note.net_weight_uom_id
+                    )
+            note.gross_weight = gross_weight
+            note.net_weight = net_weight
+
+    @api.onchange("picking_ids")
+    def _onchange_picking_ids(self):
+        self._compute_weights()
 
     def _inverse_set_pickings(self):
         for note in self:
@@ -351,6 +397,11 @@ class StockDeliveryNote(models.Model):
         for note in self:
             note.can_change_number = note.state == "draft" and can_change_number
             note.show_product_information = show_product_information
+
+    def _compute_access_url(self):
+        super(StockDeliveryNote, self)._compute_access_url()
+        for dn in self:
+            dn.access_url = "/my/delivery-notes/%s" % (dn.id)
 
     @api.onchange("picking_type")
     def _onchange_picking_type(self):
@@ -605,6 +656,10 @@ class StockDeliveryNote(models.Model):
             "l10n_it_delivery_note.delivery_note_report_action"
         ).report_action(self)
 
+    def _get_report_base_filename(self):
+        self.ensure_one()
+        return f"Delivery Note - {self.name}"
+
     def update_transport_datetime(self):
         self.transport_datetime = datetime.datetime.now()
 
@@ -623,7 +678,7 @@ class StockDeliveryNote(models.Model):
 
     def goto_sales(self, **kwargs):
         sales = self.mapped("sale_ids")
-        action = self.env.ref("sale.action_orders").read()[0]
+        action = self.env["ir.actions.act_window"]._for_xml_id("sale.action_orders")
         action.update(kwargs)
 
         if len(sales) > 1:

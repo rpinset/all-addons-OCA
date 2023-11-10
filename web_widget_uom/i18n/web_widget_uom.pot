@@ -1,0 +1,69 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_widget_uom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: web_widget_uom
+#: model:ir.model.fields,field_description:web_widget_uom.field_uom_uom__decimal_places
+msgid "Decimal Places"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.constraint,message:web_widget_uom.constraint_uom_uom_uom_decimal_places_positive
+msgid "Decimal places must be strictly bigger or equal than zero"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.fields,field_description:web_widget_uom.field_uom_uom__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.fields,field_description:web_widget_uom.field_uom_uom__id
+msgid "ID"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.fields,help:web_widget_uom.field_uom_uom__show_only_inputed_decimals
+msgid "It shows only inputed decimals up to Decimal Places"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.fields,field_description:web_widget_uom.field_uom_uom____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model,name:web_widget_uom.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr ""
+
+#. module: web_widget_uom
+#: model:ir.model.fields,field_description:web_widget_uom.field_uom_uom__show_only_inputed_decimals
+msgid "Show only inputed decimals"
+msgstr ""
+
+#. module: web_widget_uom
+#: code:addons/web_widget_uom/models/uom_uom.py:0
+#, python-format
+msgid ""
+"The Decimal places is higher than the Decimal Accuracy (%s digits).\n"
+"This may cause inconsistencies in computations.\n"
+"Please set Decimal Places between 0 and %s."
+msgstr ""
+
+#. module: web_widget_uom
+#: code:addons/web_widget_uom/models/uom_uom.py:0
+#, python-format
+msgid "Warning!"
+msgstr ""

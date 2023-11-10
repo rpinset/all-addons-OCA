@@ -19,6 +19,7 @@ class DeliveryShipmentCommonCase(common.CommonCase):
         cls.picking_type.sudo().show_entire_packs = True
         cls.dock = cls.env.ref("shipment_advice.stock_dock_demo")
         cls.dock.sudo().barcode = "DOCK"
+        cls.dock2 = cls.dock.sudo().copy({"barcode": "DOCK2"})
 
     @classmethod
     def setUpClassBaseData(cls, *args, **kwargs):
@@ -93,7 +94,7 @@ class DeliveryShipmentCommonCase(common.CommonCase):
         return self.service._data_for_stock_picking(picking)
 
     def assert_response_scan_dock(
-        self, response, message=None, confirmation_required=False
+        self, response, message=None, confirmation_required=None
     ):
         data = {
             "confirmation_required": confirmation_required,
@@ -103,16 +104,31 @@ class DeliveryShipmentCommonCase(common.CommonCase):
         )
 
     def assert_response_scan_document(
-        self, response, shipment_advice, picking=None, message=None
+        self,
+        response,
+        shipment_advice,
+        picking=None,
+        lines_to_load=None,
+        location=None,
+        message=None,
     ):
+        content = self.service._data_for_content_to_load_from_pickings(shipment_advice)
         data = {
             "shipment_advice": self._data_for_shipment_advice(shipment_advice),
+            "content": content,
         }
-        if picking:
+        if location:
+            data["location"] = self.service.data.location(location)
+            data["content"] = self.service._data_for_content_to_load_from_picking(
+                shipment_advice, location=location
+            )
+        elif picking:
             data["picking"] = self.service.data.picking(picking)
-            data["content"] = self.service._data_for_content_to_load(
+            data["content"] = self.service._data_for_content_to_load_from_picking(
                 shipment_advice, picking
             )
+        if lines_to_load:
+            data["content"] = self.service._prepare_data_for_content(lines_to_load)
         self.assert_response(
             response,
             next_state="scan_document",

@@ -25,18 +25,13 @@ msgid "ANAF - VAT on Payment"
 msgstr ""
 
 #. module: l10n_ro_vat_on_payment
-#: model_terms:ir.ui.view,arch_db:l10n_ro_vat_on_payment.view_partner_anaf_form
-msgid "ANAF History"
-msgstr ""
-
-#. module: l10n_ro_vat_on_payment
 #: model:ir.model,name:l10n_ro_vat_on_payment.model_l10n_ro_res_partner_anaf
 msgid "ANAF History about VAT on Payment"
 msgstr ""
 
 #. module: l10n_ro_vat_on_payment
 #: model:ir.model.fields,field_description:l10n_ro_vat_on_payment.field_l10n_ro_res_partner_anaf__anaf_id
-msgid "ANAF ID"
+msgid "Anaf"
 msgstr ""
 
 #. module: l10n_ro_vat_on_payment
@@ -178,7 +173,7 @@ msgstr ""
 
 #. module: l10n_ro_vat_on_payment
 #: model:ir.model.fields,field_description:l10n_ro_vat_on_payment.field_l10n_ro_res_partner_anaf__vat
-msgid "VAT"
+msgid "Vat"
 msgstr ""
 
 #~ msgid "VAT on Payment"

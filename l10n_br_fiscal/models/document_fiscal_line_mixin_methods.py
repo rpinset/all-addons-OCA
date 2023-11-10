@@ -214,6 +214,18 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
             ind_final=self.ind_final,
         )
 
+    @api.depends("tax_icms_or_issqn", "partner_is_public_entity")
+    def _compute_allow_csll_irpj(self):
+        """Calculates the possibility of 'CSLL' and 'IRPJ' tax charges."""
+        for line in self:
+            # Determine if 'CSLL' and 'IRPJ' taxes may apply:
+            # 1. When providing services (tax_icms_or_issqn == "issqn")
+            # 2. When supplying products to public entities (partner_is_public_entity is True)
+            if line.tax_icms_or_issqn == "issqn" or line.partner_is_public_entity:
+                line.allow_csll_irpj = True  # Tax charges may apply
+            else:
+                line.allow_csll_irpj = False  # No tax charges expected
+
     def _prepare_br_fiscal_dict(self, default=False):
         self.ensure_one()
         fields = self.env["l10n_br_fiscal.document.line.mixin"]._fields.keys()
@@ -351,6 +363,7 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
 
             self.cfop_id = mapping_result["cfop"]
             self.ipi_guideline_id = mapping_result["ipi_guideline"]
+            self.icms_tax_benefit_id = mapping_result["icms_tax_benefit_id"]
             taxes = self.env["l10n_br_fiscal.tax"]
             for tax in mapping_result["taxes"].values():
                 taxes |= tax
@@ -549,9 +562,11 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
         "icms_destination_percent",
         "icms_sharing_percent",
         "icms_origin_value",
+        "icms_tax_benefit_id",
     )
     def _onchange_icms_fields(self):
-        pass
+        if self.icms_tax_benefit_id:
+            self.icms_tax_id = self.icms_tax_benefit_id.tax_id
 
     def _set_fields_icmssn(self, tax_dict):
         self.ensure_one()
@@ -802,6 +817,11 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
             )
         )
 
+    @api.onchange("ii_customhouse_charges")
+    def _onchange_ii_customhouse_charges(self):
+        if self.ii_customhouse_charges:
+            self._update_taxes()
+
     @api.onchange("ncm_id", "nbs_id", "cest_id")
     def _onchange_ncm_id(self):
         self._onchange_fiscal_operation_id()
@@ -826,6 +846,8 @@ class FiscalDocumentLineMixinMethods(models.AbstractModel):
             fields_to_amount.append("pis_value")
             fields_to_amount.append("cofins_value")
             fields_to_amount.append("icms_value")
+            fields_to_amount.append("ii_value")
+            fields_to_amount.append("ii_customhouse_charges")
         return fields_to_amount
 
     @api.model

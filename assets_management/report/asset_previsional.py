@@ -8,7 +8,6 @@ from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.tools.float_utils import float_is_zero
 from odoo.tools.misc import format_amount
-from odoo.tools.safe_eval import safe_eval
 
 
 def format_date(rec, field_name, fmt):
@@ -57,6 +56,8 @@ class Report(models.TransientModel):
     show_totals = fields.Boolean()
 
     show_category_totals = fields.Boolean()
+    show_sold_assets = fields.Boolean()
+    show_dismissed_assets = fields.Boolean()
 
     type_ids = fields.Many2many(
         "asset.depreciation.type",
@@ -100,10 +101,8 @@ class Report(models.TransientModel):
         """
         self.ensure_one()
         report_type = report_type or "qweb-pdf"
-        if report_type in ("qweb-pdf", "xlsx"):
+        if report_type in ("qweb-pdf", "xlsx", "qweb-html"):
             res = self.do_print(report_type)
-        elif report_type == "qweb-html":
-            res = self.view_report()
         elif report_type:
             raise ValidationError(
                 _("No report has been defined for type `{}`.").format(report_type)
@@ -118,24 +117,12 @@ class Report(models.TransientModel):
         self.ensure_one()
         if report_type == "qweb-pdf":
             xml_id = "assets_management.report_asset_previsional_pdf"
+        elif report_type == "qweb-html":
+            xml_id = "assets_management.report_asset_previsional_html"
         else:
             xml_id = "assets_management.report_asset_previsional_xlsx"
         report = self.env.ref(xml_id)
         return report.report_action(self)
-
-    def view_report(self):
-        """Launches view for HTML report"""
-        self.ensure_one()
-        xmlid = "assets_management.act_client_asset_previsional_report"
-        [act] = self.env.ref(xmlid).read()
-        ctx = act.get("context", {})
-        if isinstance(ctx, str):
-            ctx = safe_eval(ctx)
-        # Call update twice to force 'active_id(s)' values to be overridden
-        ctx.update(dict(self._context))
-        ctx.update(active_id=self.id, active_ids=self.ids)
-        act["context"] = ctx
-        return act
 
     @api.model
     def get_html(self, given_context=None):
@@ -286,8 +273,8 @@ class Report(models.TransientModel):
             total_curr = total.get_currency()
             total_type = total.type_id
             for fname in fnames:
-                totals_by_dep_type[total_type][fname] += total_curr.compute(
-                    total[fname], curr
+                totals_by_dep_type[total_type][fname] += total_curr._convert(
+                    total[fname], curr, self.company_id, self.date
                 )
         self.write(
             {
@@ -317,6 +304,18 @@ class Report(models.TransientModel):
             domain += [("company_id", "=", self.company_id.id)]
         if self.date:
             domain += [("purchase_date", "<=", self.date)]
+        if not self.show_sold_assets:
+            domain += [
+                "|",
+                ("sale_date", "=", False),
+                ("sale_date", ">=", self.date.replace(month=1, day=1)),
+            ]
+        if not self.show_dismissed_assets:
+            domain += [
+                "|",
+                ("dismiss_date", "=", False),
+                ("dismiss_date", ">=", self.date.replace(month=1, day=1)),
+            ]
         return self.env["asset.asset"].search(domain)
 
     def set_report_name(self):
@@ -388,8 +387,11 @@ class ReportCategory(models.TransientModel):
                 for fname in fnames:
                     if fname == "amount_depreciation_fund_prev_year":
                         if fy_start <= report_date <= fy_end:
-                            totals_by_dep_type[dep_type][fname] += line_curr.compute(
-                                last_line[fname], curr
+                            totals_by_dep_type[dep_type][fname] += line_curr._convert(
+                                last_line[fname],
+                                curr,
+                                categ.report_id.company_id,
+                                report_date,
                             )
                     elif fname in (
                         "amount_in_total",
@@ -397,19 +399,28 @@ class ReportCategory(models.TransientModel):
                         "gain_loss_total",
                     ):
                         if fy_start <= report_date <= fy_end:
-                            totals_by_dep_type[dep_type][fname] += line_curr.compute(
-                                last_line[fname], curr
+                            totals_by_dep_type[dep_type][fname] += line_curr._convert(
+                                last_line[fname],
+                                curr,
+                                categ.report_id.company_id,
+                                report_date,
                             )
                         elif report_date < fy_start:
                             totals_by_dep_type[dep_type][fname] = 0
                     elif fname == "amount_depreciated":
                         if fy_start <= report_date <= fy_end:
-                            totals_by_dep_type[dep_type][fname] += line_curr.compute(
-                                last_line[fname], curr
+                            totals_by_dep_type[dep_type][fname] += line_curr._convert(
+                                last_line[fname],
+                                curr,
+                                categ.report_id.company_id,
+                                report_date,
                             )
                     else:
-                        totals_by_dep_type[dep_type][fname] += line_curr.compute(
-                            last_line[fname], curr
+                        totals_by_dep_type[dep_type][fname] += line_curr._convert(
+                            last_line[fname],
+                            curr,
+                            categ.report_id.company_id,
+                            report_date,
                         )
             categ.write(
                 {
@@ -747,7 +758,9 @@ class ReportDepreciationLineByYear(models.TransientModel):
         self.ensure_one()
         dep = self.report_depreciation_id.depreciation_id
         to_date = min(self.fiscal_year_id.date_to, self.report_id.date)
-        previsional_lines = dep.generate_depreciation_lines(to_date)
+        previsional_lines = dep.with_context(
+            previsional=True
+        ).generate_depreciation_lines(to_date)
         self.dep_line_ids += previsional_lines
         self.report_id.previsional_line_ids += previsional_lines
 
@@ -792,7 +805,13 @@ class ReportDepreciationLineByYear(models.TransientModel):
         asset = self.report_depreciation_id.report_asset_id.asset_id
         fy_start = self.fiscal_year_id.date_from
         fy_end = self.fiscal_year_id.date_to
-        if asset.sold and asset.sale_date and fy_start <= asset.sale_date <= fy_end:
+        if (
+            asset.sold and asset.sale_date and fy_start <= asset.sale_date <= fy_end
+        ) or (
+            asset.dismissed
+            and asset.dismiss_date
+            and fy_start <= asset.dismiss_date <= fy_end
+        ):
             amount_depreciable_upd = 0.0
             depreciation_fund_curr_year = 0.0
             amount_residual = 0.0

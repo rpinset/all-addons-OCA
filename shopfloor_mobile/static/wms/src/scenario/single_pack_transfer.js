@@ -74,19 +74,27 @@ const SinglePackTransfer = {
                     :key="make_state_component_key(['package', state.data.id])"
                     :record="state.data"
                     :card_color="utils.colors.color_for('screen_step_done')"
-                    />
-                <item-detail-card
-                    :key="make_state_component_key(['product', state.data.id])"
-                    :record="state.data"
-                    :options="utils.wms.move_line_product_detail_options()"
-                    :card_color="utils.colors.color_for('screen_step_done')"
-                    />
+                >
+                    <template v-slot:after_details>
+                        <v-card-subtitle>
+                            <span class="font-weight-bold">Weight:</span>
+                            <span>
+                                {{ _get_pack_weight() }}
+                            </span>
+                        </v-card-subtitle>
+                        <v-card-text class="details pt-0">
+                            <div v-for="product in state.data.products" class="field-detail">
+                                {{ product.display_name}}
+                            </div>
+                        </v-card-text>
+                    </template>
+                </item-detail-card>
                 <item-detail-card
                     :key="make_state_component_key(['destination', state.data.id])"
                     :record="state.data"
                     :options="{main: true, key_title: 'location_dest.name', title_action_field:  {action_val_path: 'location_dest.barcode'}}"
                     :card_color="utils.colors.color_for('screen_step_todo')"
-                    />
+                />
             </div>
             <last-operation v-if="state_is('show_completion_info')" v-on:confirm="state.on_confirm"></last-operation>
             <cancel-button v-on:cancel="on_cancel" v-if="show_cancel_button"></cancel-button>
@@ -106,6 +114,17 @@ const SinglePackTransfer = {
                 },
             },
         };
+    },
+    methods: {
+        _get_pack_weight: function () {
+            let weight = this.state.data.weight;
+            let uom = this.state.data.weight_uom;
+            if (!weight) {
+                weight = this.state.data.estimated_weight_kg;
+                uom = "kg";
+            }
+            return weight.toFixed(3) + " " + uom;
+        },
     },
 };
 process_registry.add("single_pack_transfer", SinglePackTransfer);

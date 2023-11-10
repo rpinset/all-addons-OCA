@@ -10,24 +10,43 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-30 08:37+0000\n"
-"PO-Revision-Date: 2017-12-30 08:37+0000\n"
-"Last-Translator: Paolo Valier <paolo.valier@hotmail.it>, 2018\n"
+"PO-Revision-Date: 2023-05-12 13:00+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: sale_order_line_variant_description
-#: model:ir.model.fields,help:sale_order_line_variant_description.field_product_product_variant_description_sale
+#: model:ir.model.fields,help:sale_order_line_variant_description.field_product_product__variant_description_sale
 msgid ""
 "A description of the product variant that you want to communicate to your "
 "customers.This description will be copied to every Sale Order"
 msgstr ""
 
 #. module: sale_order_line_variant_description
-#: model:ir.ui.view,arch_db:sale_order_line_variant_description.product_variant_easy_edit_view
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_product_product__display_name
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sale_order_line_variant_description
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_product_product__id
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_order_line_variant_description
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_product_product____last_update
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sale_order_line_variant_description
+#: model_terms:ir.ui.view,arch_db:sale_order_line_variant_description.product_variant_easy_edit_view
 msgid "Notes"
 msgstr "Note"
 
@@ -37,21 +56,21 @@ msgid "Product"
 msgstr "Prodotto"
 
 #. module: sale_order_line_variant_description
-#: model:ir.ui.view,arch_db:sale_order_line_variant_description.product_variant_easy_edit_view
+#: model_terms:ir.ui.view,arch_db:sale_order_line_variant_description.product_variant_easy_edit_view
 msgid "Sale Description"
-msgstr "Descrizione Vendita"
+msgstr "Descrizione vendita"
 
 #. module: sale_order_line_variant_description
 #: model:ir.model,name:sale_order_line_variant_description.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Linea d'ordine di vendita"
+msgstr "Riga ordine di vendita"
 
 #. module: sale_order_line_variant_description
-#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_product_product_variant_description_sale
+#: model:ir.model.fields,field_description:sale_order_line_variant_description.field_product_product__variant_description_sale
 msgid "Variant Sale Description"
 msgstr ""
 
 #. module: sale_order_line_variant_description
-#: model:ir.ui.view,arch_db:sale_order_line_variant_description.product_normal_form_view
+#: model_terms:ir.ui.view,arch_db:sale_order_line_variant_description.product_normal_form_view
 msgid "Variant description for quotations"
 msgstr "Descrizione Variante per preventivi"

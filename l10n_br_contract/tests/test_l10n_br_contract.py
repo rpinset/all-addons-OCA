@@ -7,7 +7,7 @@ from odoo.tests.common import Form, SavepointCase
 class TestL10nBrContract(SavepointCase):
     @classmethod
     def setUpClass(cls):
-        super(TestL10nBrContract, cls).setUpClass()
+        super().setUpClass()
 
         # Create contract with 3 lines, two resale products and one service
         contract_form = Form(cls.env["contract.contract"])
@@ -86,7 +86,6 @@ class TestL10nBrContract(SavepointCase):
         according to the Fiscal Operation of their lines
         """
         for invoice in self.contract_id._get_related_invoices():
-
             if len(invoice.invoice_line_ids) == 1:
                 service_product_id = self.env.ref(
                     "l10n_br_fiscal.customized_development_sale"

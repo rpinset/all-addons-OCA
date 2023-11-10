@@ -42,6 +42,7 @@ msgid "Default Vehicle"
 msgstr "Veh??culo Predeterminado"
 
 #. module: fieldservice_vehicle
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_person__display_name
 #: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_vehicle__display_name
 msgid "Display Name"
 msgstr "Nombre Mostrado"
@@ -67,11 +68,15 @@ msgid "Field Service Worker"
 msgstr "Trabajador de Servicio de Campo"
 
 #. module: fieldservice_vehicle
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_order__id
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_person__id
 #: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_vehicle__id
 msgid "ID"
 msgstr ""
 
 #. module: fieldservice_vehicle
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_order____last_update
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_person____last_update
 #: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_vehicle____last_update
 msgid "Last Modified on"
 msgstr "??ltima Modificaci??n en"
@@ -97,6 +102,11 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: fieldservice_vehicle
+#: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_order__display_name
+msgid "Order"
+msgstr ""
+
+#. module: fieldservice_vehicle
 #: model:ir.model.fields,field_description:fieldservice_vehicle.field_fsm_order__vehicle_id
 #: model_terms:ir.ui.view,arch_db:fieldservice_vehicle.fsm_vehicle_form_view
 msgid "Vehicle"
@@ -113,7 +123,6 @@ msgstr "??El nombre del veh??culo ya existe!"
 #: model:ir.ui.menu,name:fieldservice_vehicle.menu_fsm_vehicle
 #: model_terms:ir.ui.view,arch_db:fieldservice_vehicle.fsm_vehicle_graph_view
 #: model_terms:ir.ui.view,arch_db:fieldservice_vehicle.fsm_vehicle_pivot_view
-#: model_terms:ir.ui.view,arch_db:fieldservice_vehicle.fsm_vehicle_tree_view
 msgid "Vehicles"
 msgstr "Veh??culos"
 

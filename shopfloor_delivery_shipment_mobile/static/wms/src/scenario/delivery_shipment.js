@@ -50,10 +50,18 @@ const DeliveryShipment = {
                 />
 
             <item-detail-card
+                v-if="state_is('scan_document') && !_.isEmpty(filter_location())"
+                :key="make_state_component_key(['delivery-shipment-location', filter_location().id])"
+                :record="state.data.location"
+                :options="{title_icon: 'mdi-filter-outline', main: true, key_title: 'name'}"
+                :card_color="utils.colors.color_for('screen_step_done')"
+                />
+
+            <item-detail-card
                 v-if="!_.isEmpty(picking())"
                 :key="make_state_component_key(['delivery-shipment-pick', picking().id])"
                 :record="picking()"
-                :options="{main: true, key_title: 'name', title_action_field: {path: 'name', action_val_path: 'name'}}"
+                :options="{main: true, title_icon: 'mdi-filter-outline', key_title: 'name', title_action_field: {path: 'name', action_val_path: 'name'}}"
                 :card_color="utils.colors.color_for('screen_step_done')"
                 />
 
@@ -61,6 +69,7 @@ const DeliveryShipment = {
             <div v-if="state_is('scan_document')" v-for="(value, name, index) in this.state.data.content">
                 <v-card color="blue lighten-1" class="detail v-card mt-5 main mb-2">
                     <v-card-title>{{ name }}</v-card-title>
+                    <v-card-subtitle> {{ package_level_process(value.package_levels) }}</v-card-subtitle>
                 </v-card>
                 <item-detail-card
                     v-for="packlevel in value.package_levels"
@@ -151,6 +160,18 @@ const DeliveryShipment = {
             }
             return data.picking;
         },
+        filter_location: function (from_state = "") {
+            var data = {};
+            if (from_state) {
+                data = this.state_get_data(from_state);
+            } else {
+                data = this.state.data;
+            }
+            if (_.isEmpty(data.location)) {
+                return {};
+            }
+            return data.location;
+        },
         pickings: function () {
             if (this.filter_state === "dock" && !_.isEmpty(this.state.data.on_dock)) {
                 return this.state.data.on_dock;
@@ -188,13 +209,27 @@ const DeliveryShipment = {
                 fields: [
                     {path: "carrier.name", label: "Carrier"},
                     {
-                        path: "package_level_count",
+                        path: this._picking_options_package_path(picking),
                         label: "Packages",
-                        display_no_value: true,
                     },
-                    {path: "move_line_count", label: "Lines", display_no_value: true},
+                    {
+                        path: this._picking_options_move_line_path(picking),
+                        label: "Lines",
+                    },
                 ],
             };
+        },
+        _picking_options_package_path: function (picking) {
+            return this.filter_state === "lading" &&
+                picking.loaded_packages_progress_f < 1
+                ? "loaded_packages_progress"
+                : "package_level_count";
+        },
+        _picking_options_move_line_path: function (picking) {
+            return this.filter_state === "lading" &&
+                picking.loaded_move_lines_progress_f < 1
+                ? "loaded_move_lines_progress"
+                : "move_line_count";
         },
         pack_options: function (pack) {
             const action = pack.is_done
@@ -211,6 +246,13 @@ const DeliveryShipment = {
         pack_color: function (pack) {
             const color = pack.is_done ? "screen_step_done" : "screen_step_todo";
             return this.utils.colors.color_for(color);
+        },
+        package_level_process(package_levels) {
+            const package_level_count = package_levels.length;
+            const done_package_level_count = package_levels.reduce((acc, next) => {
+                return next.is_done ? acc + 1 : acc;
+            }, 0);
+            return `Progress: ${done_package_level_count} / ${package_level_count}`;
         },
         line_options: function (line) {
             const action =
@@ -242,6 +284,7 @@ const DeliveryShipment = {
                 this.odoo.call("unload_move_line", {
                     shipment_advice_id: this.shipment().id,
                     move_line_id: line.id,
+                    location_id: this.filter_location().id,
                 })
             );
         },
@@ -250,6 +293,7 @@ const DeliveryShipment = {
                 this.odoo.call("unload_package_level", {
                     shipment_advice_id: this.shipment().id,
                     package_level_id: pack.id,
+                    location_id: this.filter_location().id,
                 })
             );
         },
@@ -383,37 +427,47 @@ const DeliveryShipment = {
                             this.odoo.call("scan_dock", {
                                 barcode: scanned.text,
                                 confirmation:
-                                    this.state.data.confirmation_required || false,
+                                    this.state.data.confirmation_required || "",
                             })
                         );
                     },
                 },
                 scan_document: {
                     display_info: {
-                        title: "Scan some shipment's content",
+                        title: "Scan some shipment's content or a location",
                         scan_placeholder: () => {
                             if (_.isEmpty(this.picking())) {
-                                return "Scan a lot, a pack or an operation";
+                                return "Scan a lot, a pack, an operation or a location";
                             } else {
-                                return "Scan a lot, a product, a pack or an operation";
+                                return "Scan a lot, a product, a pack, an operation or a location";
                             }
                         },
                     },
                     on_scan: (scanned) => {
-                        this.wait_call(
-                            this.odoo.call("scan_document", {
-                                barcode: scanned.text,
-                                shipment_advice_id: this.shipment().id,
-                                picking_id: this.picking().id,
-                            })
-                        );
+                        const data = {
+                            barcode: scanned.text,
+                            shipment_advice_id: this.shipment().id,
+                            picking_id: this.picking().id,
+                            location_id: this.filter_location().id,
+                        };
+                        this.wait_call(this.odoo.call("scan_document", data));
                     },
                     on_back: () => {
-                        this.wait_call(
-                            this.odoo.call("scan_dock", {
-                                barcode: "",
-                            })
-                        );
+                        if (
+                            _.isEmpty(this.filter_location()) &&
+                            _.isEmpty(this.picking())
+                        ) {
+                            // No filtering back to scan_dock
+                            this.wait_call(this.odoo.call("scan_dock", {barcode: ""}));
+                        } else {
+                            // Stay on scan_document but without filtering
+                            this.wait_call(
+                                this.odoo.call("scan_document", {
+                                    barcode: "",
+                                    shipment_advice_id: this.shipment().id,
+                                })
+                            );
+                        }
                     },
                     on_go2loading_list: () => {
                         this.wait_call(
@@ -432,13 +486,13 @@ const DeliveryShipment = {
                         this.state_set_data({filter_name: scanned.text});
                     },
                     on_back: () => {
-                        this.wait_call(
-                            this.odoo.call("scan_document", {
-                                barcode: "",
-                                shipment_advice_id: this.shipment().id,
-                                picking_id: this.picking("scan_document").id,
-                            })
-                        );
+                        const data = {
+                            barcode: "",
+                            shipment_advice_id: this.shipment().id,
+                            picking_id: this.picking("scan_document").id,
+                            location_id: this.filter_location("scan_document").id,
+                        };
+                        this.wait_call(this.odoo.call("scan_document", data));
                     },
                     on_back2picking: (picking) => {
                         this.wait_call(

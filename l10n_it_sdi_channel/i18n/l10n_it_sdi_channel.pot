@@ -161,7 +161,6 @@ msgstr ""
 #. module: l10n_it_sdi_channel
 #: model:ir.actions.act_window,name:l10n_it_sdi_channel.action_sdi_channel
 #: model_terms:ir.ui.view,arch_db:l10n_it_sdi_channel.view_sdi_channel_form
-#: model_terms:ir.ui.view,arch_db:l10n_it_sdi_channel.view_sdi_channel_tree
 msgid "ES Channel"
 msgstr ""
 
@@ -233,7 +232,6 @@ msgstr ""
 
 #. module: l10n_it_sdi_channel
 #: model:ir.model.fields,help:l10n_it_sdi_channel.field_sdi_channel__message_has_error
-#: model:ir.model.fields,help:l10n_it_sdi_channel.field_sdi_channel__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -345,11 +343,6 @@ msgstr ""
 #. module: l10n_it_sdi_channel
 #: model_terms:ir.ui.view,arch_db:l10n_it_sdi_channel.view_fatturapa_out_attachment_form
 msgid "Reset to ready"
-msgstr ""
-
-#. module: l10n_it_sdi_channel
-#: model:ir.model.fields,field_description:l10n_it_sdi_channel.field_sdi_channel__message_has_sms_error
-msgid "SMS Delivery error"
 msgstr ""
 
 #. module: l10n_it_sdi_channel

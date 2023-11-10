@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-12 09:44+0000\n"
+"PO-Revision-Date: 2023-10-10 16:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model,name:hr_timesheet_sheet_attendance.model_hr_attendance
 msgid "Attendance"
-msgstr "Presenze"
+msgstr "Presenza"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__attendance_count
@@ -31,17 +31,17 @@ msgstr "Conteggio presenze"
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__attendances_ids
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Attendances"
-msgstr "Presenti"
+msgstr "Presenze"
 
 #. module: hr_timesheet_sheet_attendance
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Check In"
-msgstr "Check in"
+msgstr "Check-in"
 
 #. module: hr_timesheet_sheet_attendance
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet_attendance.hr_timesheet_sheet_form
 msgid "Check Out"
-msgstr "Check out"
+msgstr "Check-out"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__attendance_state
@@ -74,7 +74,7 @@ msgstr "Ultima modifica il"
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_attendance__sheet_id
 msgid "Sheet"
-msgstr "Scheda"
+msgstr "Prospetto"
 
 #. module: hr_timesheet_sheet_attendance
 #: code:addons/hr_timesheet_sheet_attendance/models/hr_timesheet_sheet.py:0
@@ -99,7 +99,7 @@ msgstr "Attività fogli oore"
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model,name:hr_timesheet_sheet_attendance.model_hr_timesheet_sheet
 msgid "Timesheet Sheet"
-msgstr "Scheda foglio ore"
+msgstr "Prospetto foglio ore"
 
 #. module: hr_timesheet_sheet_attendance
 #: model:ir.model.fields,field_description:hr_timesheet_sheet_attendance.field_hr_timesheet_sheet__total_attendance

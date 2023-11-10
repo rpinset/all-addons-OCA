@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-18 11:45+0000\n"
+"PO-Revision-Date: 2023-05-15 19:34+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -25,6 +25,12 @@ msgid ""
 msgstr ""
 "Errore di Configurazione. l'Unità operativa del Magazzino e dell'ubicazione "
 "devono essere uguali. "
+
+#. module: stock_operating_unit
+#: code:addons/stock_operating_unit/model/stock_location.py:0
+#, python-format
+msgid "Configuration error. Internal locations should have an operating unit"
+msgstr ""
 
 #. module: stock_operating_unit
 #: code:addons/stock_operating_unit/model/stock_location.py:0
@@ -50,8 +56,8 @@ msgstr ""
 #: code:addons/stock_operating_unit/model/stock_warehouse.py:0
 #, python-format
 msgid ""
-"Configuration error. The Company in the Stock Warehouse and in the Operating"
-" Unit must be the same."
+"Configuration error. The Company in the Stock Warehouse and in the Operating "
+"Unit must be the same."
 msgstr ""
 "Errore di Configurazione. L'Azienda nel Magazzino di Stoccaggio e nell'Unità "
 "Operativa devono essere uguali."
@@ -88,7 +94,6 @@ msgstr ""
 "richiedente."
 
 #. module: stock_operating_unit
-#: code:addons/stock_operating_unit/model/stock_location.py:0
 #: code:addons/stock_operating_unit/model/stock_location.py:0
 #, python-format
 msgid ""
@@ -179,7 +184,7 @@ msgstr "Movimento di magazzino"
 #. module: stock_operating_unit
 #: model:ir.model,name:stock_operating_unit.model_stock_rule
 msgid "Stock Rule"
-msgstr "Regole Scorte"
+msgstr "Regola di giacenza"
 
 #. module: stock_operating_unit
 #: model:ir.model,name:stock_operating_unit.model_stock_picking

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-07 09:48+0000\n"
-"PO-Revision-Date: 2023-02-28 11:22+0000\n"
+"PO-Revision-Date: 2023-09-05 11:37+0000\n"
 "Last-Translator: Alexander Bigga <alexander@bigga.de>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_de_holidays
 #: code:addons/l10n_de_holidays/wizards/hr_holidays_public_generator_de.py:0
@@ -185,7 +185,9 @@ msgstr "Bundesland"
 msgid ""
 "There is no copy function defined for this county or\n"
 "                    the function name does not fit the requirement -\n"
-"                    action_copy_%s_holidays where %s id the county code."
+"                    action_copy_{country_code}_holidays where "
+"\"{country_code}\" id the\n"
+"                    county code."
 msgstr ""
 
 #. module: l10n_de_holidays
@@ -194,7 +196,8 @@ msgstr ""
 msgid ""
 "There is no generate function defined for this county\n"
 "                    or the function name does not fit the requirement -\n"
-"                    action_generate_%s_holidays where %s is\n"
+"                    action_generate_{country_code}_holidays where "
+"\"{country_code}\" is\n"
 "                    the county code."
 msgstr ""
 
@@ -209,6 +212,12 @@ msgstr "Heilige Drei Könige"
 #, python-format
 msgid "Whit Monday"
 msgstr "Pfingstmontag"
+
+#. module: l10n_de_holidays
+#: code:addons/l10n_de_holidays/wizards/hr_holidays_public_generator_de.py:0
+#, python-format
+msgid "World Children's Day"
+msgstr "Weltkindertag"
 
 #. module: l10n_de_holidays
 #: model:ir.model.fields,field_description:l10n_de_holidays.field_hr_holidays_public_generator__year

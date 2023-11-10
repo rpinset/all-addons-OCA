@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-27 08:07+0000\n"
-"PO-Revision-Date: 2023-04-05 09:18+0000\n"
+"PO-Revision-Date: 2023-10-28 15:51+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_account_config_settings_ftpa_in
@@ -175,6 +175,26 @@ msgstr "Totale fatture"
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.wizard_link_supplier_invoice
 msgid "Cancel"
 msgstr "Annulla"
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
+#, python-format
+msgid ""
+"Cannot import an attachment that could not be parsed.\n"
+"Please fix the parsing error first, then try again."
+msgstr ""
+"Non si può importare un allegato che non può essere elaborato.\n"
+"Correggere l'errore di elaborazione e riprovare."
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/link_to_existing_invoice.py:0
+#, python-format
+msgid ""
+"Cannot link an attachment that could not be parsed.\n"
+"Please fix the parsing error first, then try again."
+msgstr ""
+"Non si può collegare un allegato che non può essere elaborato.\n"
+"Correggere l'errore di elaborazione e riprovare."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__checksum
@@ -409,6 +429,11 @@ msgid "Document type %s not handled."
 msgstr "Tipo documento %s non gestito."
 
 #. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__e_invoice_parsing_error
+msgid "E Invoice Parsing Error"
+msgstr "Errore elaborazione e-fattura"
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_bank_statement_line__e_invoice_validation_error
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_move__e_invoice_validation_error
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_payment__e_invoice_validation_error
@@ -566,7 +591,7 @@ msgstr "Importazione fattura elettronica"
 #. module: l10n_it_fatturapa_in
 #: model:ir.model,name:l10n_it_fatturapa_in.model_fatturapa_attachment_in
 msgid "Electronic Invoice"
-msgstr ""
+msgstr "Fattura elettronica"
 
 #. module: l10n_it_fatturapa_in
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
@@ -653,7 +678,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_error
-#: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -675,7 +699,7 @@ msgstr "Altezza immagine"
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__image_src
 msgid "Image Src"
-msgstr "Immagine Src"
+msgstr "Sorgente immagine"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__image_width
@@ -704,6 +728,12 @@ msgstr "Importa fattura elettronica"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_payment__inconsistencies
 msgid "Import Inconsistencies"
 msgstr "Incongruenze nell'importazione"
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/models/attachment.py:0
+#, python-format
+msgid "Impossible to parse XML for {att_name}: {error_msg}"
+msgstr "Impossible elaborare XML per {att_name}: {error_msg}"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__in_invoice_ids
@@ -754,7 +784,7 @@ msgstr "Data fatture"
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_is_follower
 msgid "Is Follower"
-msgstr "È un follower"
+msgstr "Segue"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__public
@@ -770,6 +800,11 @@ msgstr "Registrazione contabile"
 #: model:ir.model,name:l10n_it_fatturapa_in.model_account_move_line
 msgid "Journal Item"
 msgstr "Movimento contabile"
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__key
+msgid "Key"
+msgstr "Chiave"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_move____last_update
@@ -857,7 +892,7 @@ msgstr "Collega a fatture fornitore esistenti"
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__linked_invoice_id_xml
 msgid "Linked Invoice Id Xml"
-msgstr ""
+msgstr "XML ID fattura collegata"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_main_attachment_id
@@ -932,6 +967,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line__tax_kind
 msgid "Nature"
 msgstr "Natura"
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/efattura.py:0
+#, python-format
+msgid "No available data to compute AliquotaIVA"
+msgstr "Data non disponibile per il calcolo dell'aliquota IVA"
 
 #. module: l10n_it_fatturapa_in
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
@@ -1215,11 +1256,6 @@ msgid "Rounding up"
 msgstr "Arrotondamento attivo"
 
 #. module: l10n_it_fatturapa_in
-#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line__service_type
 msgid "Sale Provision Type"
 msgstr "Tipo cessione prestazione"
@@ -1227,7 +1263,7 @@ msgstr "Tipo cessione prestazione"
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__att_name
 msgid "SdI file name"
-msgstr ""
+msgstr "Nome file SdI"
 
 #. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_account_config_settings_ftpa_in
@@ -1315,6 +1351,14 @@ msgstr ""
 "delle imposte della fattura elettronica ({e_bill_amount_tax})"
 
 #. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__key
+msgid ""
+"Technical field used to resolve multiple attachments in a multi-website "
+"environment."
+msgstr ""
+"Campo tecnico usato per gestire allegati multipli in un ambiente multisito."
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line_other_data__text_ref
 msgid "Text Reference"
 msgstr "Riferimento testo"
@@ -1349,6 +1393,11 @@ msgstr "Il nome del file della e-fattura deve essere unico!"
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__res_id
 msgid "The record id this is attached to."
 msgstr "L'ID del record a cui questo è collegato."
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__theme_template_id
+msgid "Theme Template"
+msgstr "Modello del tema"
 
 #. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_fatturapa_in_attachment_search
@@ -1404,6 +1453,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__type
 msgid "Type"
 msgstr "Tipo"
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/efattura.py:0
+#, python-format
+msgid "Unexpected root element: %s"
+msgstr "Elemento radice inatteso: %s"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line__unit_price
@@ -1473,9 +1528,19 @@ msgstr ""
 "riferimento fornitore della fattura elettronica ({e_bill_vendor_ref})"
 
 #. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_id
+msgid "Website"
+msgstr "Sito web"
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_message_ids
 msgid "Website Messages"
 msgstr "Messaggi sito web"
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_url
+msgid "Website URL"
+msgstr "URL sito web"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_message_ids
@@ -1498,11 +1563,6 @@ msgstr "Cassa previdenziale %s non presente nel sistema."
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_res_config_settings__cassa_previdenziale_product_id
 msgid "Welfare Fund Data Product"
 msgstr "Prodotto per dati cassa previdenziale"
-
-#. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
-msgid "Welfare Fund Details"
-msgstr "Dettagli cassa previdenziale"
 
 #. module: l10n_it_fatturapa_in
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
@@ -1532,11 +1592,6 @@ msgid "Withholding"
 msgstr "Ritenuta"
 
 #. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
-msgid "Withholding Details"
-msgstr "Dettagli ritenuta"
-
-#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_wizard_link_to_invoice_line__wizard_id
 msgid "Wizard"
 msgstr "Procedura guidata"
@@ -1559,11 +1614,6 @@ msgstr ""
 "sistema"
 
 #. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_fatturapa_in_attachment_tree
-msgid "Xml Attachment"
-msgstr "Allegato XML"
-
-#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__type
 msgid ""
 "You can either upload a file from your computer or copy/paste an internet "
@@ -1577,6 +1627,18 @@ msgstr ""
 #, python-format
 msgid "You can select only one XML file to link."
 msgstr "È possibile selezionare solo un file XML da collegare."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
+
+#~ msgid "Welfare Fund Details"
+#~ msgstr "Dettagli cassa previdenziale"
+
+#~ msgid "Withholding Details"
+#~ msgstr "Dettagli ritenuta"
+
+#~ msgid "Xml Attachment"
+#~ msgstr "Allegato XML"
 
 #~ msgid "Creation"
 #~ msgstr "Creazione"
@@ -1614,33 +1676,14 @@ msgstr "È possibile selezionare solo un file XML da collegare."
 #~ msgid "Invoice Line"
 #~ msgstr "Riga fattura"
 
-#~ msgid "Key"
-#~ msgstr "Chiave"
-
 #~ msgid "Number of error"
 #~ msgstr "Numero di errori"
 
 #~ msgid "Res Model Name"
 #~ msgstr "Nome modello risorsa"
 
-#~ msgid ""
-#~ "Technical field used to resolve multiple attachments in a multi-website "
-#~ "environment."
-#~ msgstr ""
-#~ "Campo tecnico usato per gestire allegati multipli in un ambiente "
-#~ "multisito."
-
-#~ msgid "Theme Template"
-#~ msgstr "Modello del tema"
-
 #~ msgid "Thumbnail"
 #~ msgstr "Anteprima"
-
-#~ msgid "Website"
-#~ msgstr "Sito web"
-
-#~ msgid "Website URL"
-#~ msgstr "URL sito web"
 
 #~ msgid "Do not block e-bill import in case of missing Enasarco configuration"
 #~ msgstr ""

@@ -29,6 +29,7 @@ class AccountMove(models.Model):
         compute="_compute_pms_property_id",
         store=True,
         readonly=False,
+        index=True,
         # check_pms_properties=True,
     )
     # journal_id = fields.Many2one(check_pms_properties=True)
@@ -44,6 +45,7 @@ class AccountMove(models.Model):
         domain="[('is_agency', '=', True)]",
         compute="_compute_origin_agency_id",
         store=True,
+        index=True,
         readonly=False,
     )
 
@@ -65,7 +67,7 @@ class AccountMove(models.Model):
         for move in self:
             if self.env.context.get("force_pms_property"):
                 move.pms_property_id = self.env.context["force_pms_property"]
-            elif move.folio_ids:
+            elif move.folio_ids and len(move.folio_ids.mapped("pms_property_id")) == 1:
                 move.pms_property_id = move.folio_ids.mapped("pms_property_id")
             elif len(
                 move.journal_id.mapped("pms_property_ids")

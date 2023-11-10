@@ -110,6 +110,7 @@ odoo.define("l10n_br_pos.models", function (require) {
     models.Order = models.Order.extend({
         initialize: function (attributes, options) {
             // CORE METHODS
+            /* eslint complexity: ["error", 30] */
             _super_order.initialize.apply(this, arguments, options);
             this.init_locked = true;
 
@@ -358,7 +359,8 @@ odoo.define("l10n_br_pos.models", function (require) {
             return taxes;
         },
         compute_message: function (templateString, taxes) {
-            /* Compute fiscal message */
+            // Compute fiscal message
+            // eslint-disable-next-line no-new-func
             return new Function(`return \`${templateString}\`;`).call(this, taxes);
         },
         _document_status_popup: function () {
@@ -383,7 +385,6 @@ odoo.define("l10n_br_pos.models", function (require) {
                 label: "Iniciando Processo de Transmissão",
             });
             this.state_edoc = SITUACAO_EDOC_A_ENVIAR;
-            this._document_status_popup();
             var result = false;
             var processor_result = null;
             // Check if fields of fiscal document are valid.
@@ -392,6 +393,7 @@ odoo.define("l10n_br_pos.models", function (require) {
                 // Get the person responsible for sending the fiscal document;
                 var processor = await this._document_get_processor();
                 if (processor) {
+                    this._document_status_popup();
                     // Send fiscal document
                     processor_result = await processor.send_order(this);
                     // Validate if it was issued correctly and saves the result data

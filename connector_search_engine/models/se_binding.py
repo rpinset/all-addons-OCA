@@ -153,7 +153,9 @@ class SeBinding(models.AbstractModel):
                     force_export=force_export,
                     batch_size=math.ceil(len(self) / 2),
                 )
-                return _("Job have been split because of failure.\nError: {}") % str(e)
+                return _(
+                    "Job have been split because of failure.\nError: {exception}"
+                ).format(exception=str(e))
             # We can't systematically reraise here, if we do the new jobs
             # will be discarded.
             raise
@@ -215,7 +217,7 @@ class SeBinding(models.AbstractModel):
     def _format_recompute_json_validation_errors(self, validation_errors):
         res = [_("Validation errors:")]
         for error, record_ids in validation_errors.items():
-            ids = ",".join([str(x) for x in record_ids])
+            ids = ", ".join([str(x) for x in record_ids])
             res.append(f"\n  {error} - IDs: {ids}")
             _logger.warning("%s: %s", error, ids)
         return "\n".join(res)

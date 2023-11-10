@@ -34,6 +34,11 @@ msgid "Additional data manually entered by user"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__allow_csll_irpj
+msgid "Allow Csll Irpj"
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_discount_value
 msgid "Amount Discount"
 msgstr ""
@@ -224,6 +229,7 @@ msgid "COFINS ST % Reduction"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_cofinsst_base
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__cofinsst_base
 msgid "COFINS ST Base"
 msgstr ""
@@ -239,6 +245,7 @@ msgid "COFINS ST CST Code"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_cofinsst_value
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__cofinsst_value
 msgid "COFINS ST Value"
 msgstr ""
@@ -409,6 +416,11 @@ msgid "Despesas Aduaneiras"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_br_purchase.report_purchaseorder_document_l10n_br_purchase
+msgid "Discount"
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__discount_value
 msgid "Discount Value"
 msgstr ""
@@ -536,6 +548,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__freight_value
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_report__freight_value
 msgid "Freight Value"
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model_terms:ir.ui.view,arch_db:l10n_br_purchase.report_purchaseorder_document_l10n_br_purchase
+msgid "Gross"
 msgstr ""
 
 #. module: l10n_br_purchase
@@ -1014,6 +1031,20 @@ msgid "Identifies the operation destination."
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,help:l10n_br_purchase.field_purchase_order_line__allow_csll_irpj
+msgid "Indicates potential 'CSLL' and 'IRPJ' tax charges."
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,help:l10n_br_purchase.field_purchase_order_line__partner_is_public_entity
+msgid ""
+"Indicates whether the entity in question is a public organization or "
+"government-related entity. It encompasses a range of entities such as "
+"municipal governments, state-owned enterprises (where the government is the "
+"largest shareholder), and other government-controlled organizations."
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model_terms:ir.ui.view,arch_db:l10n_br_purchase.l10n_br_purchase_order_filter
 msgid "Inscr. Estadual"
 msgstr ""
@@ -1233,6 +1264,7 @@ msgid "PIS ST % Reduction"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_pisst_base
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__pisst_base
 msgid "PIS ST Base"
 msgstr ""
@@ -1248,6 +1280,7 @@ msgid "PIS ST CST Code"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order__amount_pisst_value
 #: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__pisst_value
 msgid "PIS ST Value"
 msgstr ""
@@ -1305,6 +1338,11 @@ msgid "Produto em Processo"
 msgstr ""
 
 #. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__partner_is_public_entity
+msgid "Public Entity"
+msgstr ""
+
+#. module: l10n_br_purchase
 #: model:ir.model,name:l10n_br_purchase.model_purchase_order
 msgid "Purchase Order"
 msgstr ""
@@ -1352,6 +1390,16 @@ msgstr ""
 #. module: l10n_br_purchase
 #: model:ir.model.fields.selection,name:l10n_br_purchase.selection__purchase_report__fiscal_type__05
 msgid "Subproduto"
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__icms_tax_benefit_id
+msgid "Tax Benefit"
+msgstr ""
+
+#. module: l10n_br_purchase
+#: model:ir.model.fields,field_description:l10n_br_purchase.field_purchase_order_line__icms_tax_benefit_code
+msgid "Tax Benefit Code"
 msgstr ""
 
 #. module: l10n_br_purchase

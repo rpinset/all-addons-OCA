@@ -4,20 +4,18 @@
 
 {
     "name": "Account Invoice Import Invoice2data",
-    "version": "14.0.2.1.0",
+    "version": "14.0.2.2.0",
     "category": "Accounting/Accounting",
     "license": "AGPL-3",
     "summary": "Import supplier invoices using the invoice2data lib",
     "author": "Akretion,Odoo Community Association (OCA)",
-    "maintainers": ["alexis-via"],
+    "maintainers": ["alexis-via", "bosd"],
     "website": "https://github.com/OCA/edi",
     "depends": ["account_invoice_import"],
-    # "excludes": ["account_invoice_import_simple_pdf"],
     "external_dependencies": {
         "python": [
             "invoice2data",
-            # https://github.com/OCA/edi/issues/544
-            "dateparser==1.1.1",
+            "dateparser",
         ],
         "deb": ["poppler-utils"],
     },

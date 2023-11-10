@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-02-10 17:00+0000\n"
-"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>\n"
+"PO-Revision-Date: 2023-10-10 18:42+0000\n"
+"Last-Translator: Antônio Neto <netosjb@yahoo.com.br>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__amount_tax_withholding
@@ -30,6 +30,11 @@ msgstr "Dados Adicionais"
 #: model:ir.model.fields,help:l10n_br_contract.field_contract_line__manual_additional_data
 msgid "Additional data manually entered by user"
 msgstr "Dados adicionais inseridos manualmente pelo usuário"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__allow_csll_irpj
+msgid "Allow Csll Irpj"
+msgstr ""
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_discount_value
@@ -222,6 +227,7 @@ msgid "COFINS ST % Reduction"
 msgstr "% Redução ST COFINS"
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_cofinsst_base
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__cofinsst_base
 msgid "COFINS ST Base"
 msgstr "Base para ST COFINS"
@@ -237,6 +243,7 @@ msgid "COFINS ST CST Code"
 msgstr "Código CST ST COFINS"
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_cofinsst_value
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__cofinsst_value
 msgid "COFINS ST Value"
 msgstr "Valor de ST do COFINS"
@@ -860,7 +867,7 @@ msgstr "Código CST do IPI"
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__ipi_guideline_id
 msgid "IPI Guideline"
-msgstr "Diretriz do IPI"
+msgstr "Enquadramento do IPI"
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_ipi_value
@@ -1013,6 +1020,20 @@ msgid "Identifies the operation destination."
 msgstr "Identifica o destino da operação."
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,help:l10n_br_contract.field_contract_line__allow_csll_irpj
+msgid "Indicates potential 'CSLL' and 'IRPJ' tax charges."
+msgstr ""
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,help:l10n_br_contract.field_contract_line__partner_is_public_entity
+msgid ""
+"Indicates whether the entity in question is a public organization or "
+"government-related entity. It encompasses a range of entities such as "
+"municipal governments, state-owned enterprises (where the government is the "
+"largest shareholder), and other government-controlled organizations."
+msgstr ""
+
+#. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_insurance_value
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__insurance_value
 msgid "Insurance Value"
@@ -1044,6 +1065,13 @@ msgstr "Dado Adicional do Cliente Manual"
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__manual_fiscal_additional_data
 msgid "Manual Fiscal Additional Data"
 msgstr "Dado Adicional Fiscal Manual"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,help:l10n_br_contract.field_contract_line__line_recurrence
+msgid ""
+"Mark this check if you want to control recurrrence at line level instead of "
+"all together for the whole contract."
+msgstr ""
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__nbm_id
@@ -1172,6 +1200,7 @@ msgid "PIS ST % Reduction"
 msgstr "% de Redução do PIS ST"
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_pisst_base
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__pisst_base
 msgid "PIS ST Base"
 msgstr "Base do PIS ST"
@@ -1187,6 +1216,7 @@ msgid "PIS ST CST Code"
 msgstr "Código CST do PIS ST"
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__amount_pisst_value
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__pisst_value
 msgid "PIS ST Value"
 msgstr "Valor do PIS ST"
@@ -1224,6 +1254,11 @@ msgid "Product"
 msgstr "Produto"
 
 #. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__partner_is_public_entity
+msgid "Public Entity"
+msgstr ""
+
+#. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__quantity
 msgid "Quantity"
 msgstr "Quantidade"
@@ -1232,6 +1267,11 @@ msgstr "Quantidade"
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__contract_recalculate_taxes_before_invoice
 msgid "Recalculate taxes before invoicing"
 msgstr "Recalcular impostos antes do faturamento"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__line_recurrence
+msgid "Recurrence at line level?"
+msgstr ""
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__service_type_id
@@ -1247,6 +1287,16 @@ msgstr "Intervalo do Imposto Simplificado"
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_contract__ie
 msgid "State Tax Number/RG"
 msgstr "Número da Inscrição Estadual/RG"
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__icms_tax_benefit_id
+msgid "Tax Benefit"
+msgstr ""
+
+#. module: l10n_br_contract
+#: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__icms_tax_benefit_code
+msgid "Tax Benefit Code"
+msgstr ""
 
 #. module: l10n_br_contract
 #: model:ir.model.fields,field_description:l10n_br_contract.field_contract_line__cofins_tax_id

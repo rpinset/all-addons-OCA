@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-28 02:58+0000\n"
-"PO-Revision-Date: 2023-03-31 21:29+0000\n"
+"PO-Revision-Date: 2023-04-11 09:41+0000\n"
 "Last-Translator: Matjaz Mozetic <matjaz@luxim.si>\n"
 "Language-Team: Slovenian (https://www.transifex.com/oca/teams/23907/sl/)\n"
 "Language: sl\n"
@@ -538,7 +538,7 @@ msgstr ""
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__restrict_partner_id
 msgid "Owner "
-msgstr "Lastnik"
+msgstr "Lastnik "
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__package_level_id
@@ -819,7 +819,6 @@ msgstr "Rezervacija zaloge"
 #: model_terms:ir.ui.view,arch_db:stock_reserve.product_template_form_view_reservation_button
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_search
-#: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_tree
 msgid "Stock Reservations"
 msgstr "Rezervacije zaloge"
 
@@ -975,6 +974,16 @@ msgstr "Datum veljavnosti"
 #: model_terms:ir.ui.view,arch_db:stock_reserve.view_stock_reservation_form
 msgid "View Reservation Move"
 msgstr "Prikaz premika rezervacije"
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume
+msgid "Volume"
+msgstr ""
+
+#. module: stock_reserve
+#: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__volume_uom_name
+msgid "Volume unit of measure label"
+msgstr ""
 
 #. module: stock_reserve
 #: model:ir.model.fields,field_description:stock_reserve.field_stock_reservation__warehouse_id

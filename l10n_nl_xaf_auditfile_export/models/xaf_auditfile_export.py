@@ -26,6 +26,8 @@ SELECT SUM(l.balance)
  JOIN account_account_type t
    ON a.user_type_id = t.id
  WHERE l.parent_state = 'posted'
+   AND (l.display_type IS NULL OR
+        l.display_type NOT IN ('line_section', 'line_note'))
    AND l.date < %(date_start)s
    AND l.company_id = %(company_id)s
    AND (
@@ -120,7 +122,11 @@ class XafAuditfileExport(models.Model):
         "Auditfile filename", compute="_compute_auditfile_name", store=True
     )
     date_generated = fields.Datetime("Date generated", readonly=True, copy=False)
-    company_id = fields.Many2one("res.company", required=True)
+    company_id = fields.Many2one(
+        "res.company",
+        readonly=True,
+        default=lambda self: self.env.company,
+    )
 
     unit4 = fields.Boolean(
         help="The Unit4 system expects a value for "
@@ -137,7 +143,7 @@ class XafAuditfileExport(models.Model):
     @api.model
     def default_get(self, fields_list):
         defaults = super().default_get(fields_list)
-        company = self.env.user.company_id
+        company = self.env.company
         fy_dates = company.compute_fiscalyear_dates(datetime.now())
         defaults.setdefault("date_start", fy_dates["date_from"])
         defaults.setdefault("date_end", fy_dates["date_to"])
@@ -148,7 +154,6 @@ class XafAuditfileExport(models.Model):
                 "name",
                 _("Auditfile %s %s") % (company.name, datetime.now().strftime("%Y")),
             )
-
         return defaults
 
     @api.constrains("date_start", "date_end")
@@ -317,6 +322,8 @@ class XafAuditfileExport(models.Model):
             "where a.user_type_id = t.id "
             "and l.account_id = a.id "
             "and l.parent_state = 'posted' "
+            "and (l.display_type IS NULL OR"
+            "     l.display_type NOT IN ('line_section', 'line_note')) "
             "and l.date < %s "
             "and l.company_id = %s "
             "and t.include_initial_balance = true "
@@ -352,6 +359,8 @@ class XafAuditfileExport(models.Model):
             "and a.id = l.account_id and l.date < %s "
             "and l.company_id = %s "
             "and l.parent_state = 'posted' "
+            "and (l.display_type IS NULL OR"
+            "      l.display_type NOT IN ('line_section', 'line_note')) "
             "and t.include_initial_balance = true "
             "and t.id != %s "
             "group by a.id, a.code",
@@ -406,15 +415,14 @@ class XafAuditfileExport(models.Model):
 
     def get_move_line_count(self):
         """return amount of move lines"""
-        self.env.cr.execute(
-            "select count(*) from account_move_line "
-            "where date >= %s "
-            "and date <= %s "
-            "and parent_state = 'posted' "
-            "and company_id = %s",
-            (self.date_start, self.date_end, self.company_id.id),
-        )
-        return self.env.cr.fetchall()[0][0]
+        domain = [
+            ("date", ">=", self.date_start),
+            ("date", "<=", self.date_end),
+            ("parent_state", "=", "posted"),
+            ("display_type", "not in", ("line_section", "line_note")),
+            ("company_id", "=", self.company_id.id),
+        ]
+        return self.env["account.move.line"].search_count(domain)
 
     def get_move_line_total_debit(self):
         """return total debit of move lines"""
@@ -423,6 +431,8 @@ class XafAuditfileExport(models.Model):
             "where date >= %s "
             "and date <= %s "
             "and parent_state = 'posted' "
+            "and (display_type IS NULL OR"
+            "     display_type NOT IN ('line_section', 'line_note')) "
             "and company_id = %s",
             (self.date_start, self.date_end, self.company_id.id),
         )
@@ -435,6 +445,8 @@ class XafAuditfileExport(models.Model):
             "where date >= %s "
             "and date <= %s "
             "and parent_state = 'posted' "
+            "and (display_type IS NULL OR"
+            "     display_type NOT IN ('line_section', 'line_note')) "
             "and company_id = %s",
             (self.date_start, self.date_end, self.company_id.id),
         )

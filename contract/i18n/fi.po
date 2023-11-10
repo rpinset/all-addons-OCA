@@ -233,6 +233,34 @@ msgstr "<strong>#END#</strong>: Laskutusjakson päättymispäivä"
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Invoice month name\n"
+"                                    of\n"
+"                                    the\n"
+"                                    invoiced period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
+"period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
+"<strong>#INVOICEMONTHNUMBER#</strong>: Invoice month number of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid "<strong>#INVOICEYEAR#</strong>: Invoice year of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
 "<strong>#START#</strong>\n"
 "                                    : Start\n"
 "                                    date\n"
@@ -435,6 +463,12 @@ msgid "Analytic account"
 msgstr "Analyyttinen tili"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
 msgstr "Arkistoitu"
@@ -464,6 +498,12 @@ msgstr "Liittyvä kumppani"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr "Liitteiden määrä"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "August"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -1065,6 +1105,12 @@ msgid "Day(s)"
 msgstr "Päivä(ä)"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
@@ -1151,6 +1197,12 @@ msgstr "Näyttötyyppi"
 msgid ""
 "Failed to process the contract %(name)s [id: %(id)s]:\n"
 "%(ue)s"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "February"
 msgstr ""
 
 #. module: contract
@@ -1261,7 +1313,6 @@ msgstr "Jos valittu, uudet viestit vaativat toimenpiteitä."
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error
-#: model:ir.model.fields,help:contract.field_contract_contract__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Jos valittu, joissain viesteissä on ollut toimitusvirhe."
 
@@ -1389,6 +1440,12 @@ msgid "Is suspension without end date"
 msgstr "Keskeytyksellä ei ole päättymispäivää"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
@@ -1405,6 +1462,18 @@ msgstr "Päiväkirjamerkintä"
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
 msgstr "Päiväkirjan kirjaus"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "June"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__last_date_invoiced
@@ -1501,6 +1570,12 @@ msgid "Manually Invoice Sale Contracts"
 msgstr "Laskuta myyntisopimuksen manuaalisesti"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "March"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
@@ -1510,6 +1585,12 @@ msgid ""
 msgstr ""
 "Merkkaa tämä jos haluat hallinnoida toistuvuutta rivitasolla mielummin kuin "
 "koko sopimuksen tasolla."
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "May"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_error
@@ -1634,6 +1715,12 @@ msgid "Notes"
 msgstr "Viestit"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Toimenpiteiden määrä"
@@ -1673,6 +1760,12 @@ msgstr "Monenko viestin kohdalla on tapahtunut toimitusvirhe"
 #: model:ir.model.fields,help:contract.field_contract_contract__message_unread_counter
 msgid "Number of unread messages"
 msgstr "Lukemattomien viestien määrä"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "October"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_account_bank_statement_line__old_contract_id
@@ -1904,11 +1997,6 @@ msgid "Responsible User"
 msgstr "Vastuukäyttäjä"
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "SMS toimitusvirhe"
-
-#. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__sale_contract_count
 #: model:ir.model.fields,field_description:contract.field_res_users__sale_contract_count
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
@@ -1949,6 +2037,12 @@ msgstr "Lähetä sähköpostilla"
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
 msgstr "Lähetetty"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "September"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__sequence
@@ -2407,6 +2501,9 @@ msgstr "esim. Sopimus XYZ"
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "on"
 msgstr "päivänä"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "SMS toimitusvirhe"
 
 #~ msgid ""
 #~ "<span attrs=\"{'invisible': [('contract_to_invoice_count', '&gt;', "

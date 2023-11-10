@@ -44,6 +44,7 @@ class AccountMoveLine(models.Model):
         compute="_compute_pms_property_id",
         store=True,
         readonly=False,
+        index=True,
         check_pms_properties=True,
     )
     origin_agency_id = fields.Many2one(
@@ -53,11 +54,12 @@ class AccountMoveLine(models.Model):
         domain="[('is_agency', '=', True)]",
         compute="_compute_origin_agency_id",
         store=True,
+        index=True,
         readonly=False,
     )
     move_id = fields.Many2one(check_pms_properties=True)
 
-    @api.depends('move_id.payment_reference', "quantity")
+    @api.depends("move_id.payment_reference", "quantity")
     def _compute_name(self):
         res = super()._compute_name()
         for record in self:
@@ -124,7 +126,6 @@ class AccountMoveLine(models.Model):
             move = self.browse(move_line["move_id"])
             if move.pms_property_id or move.move_id.pms_property_id:
                 move_line["pms_property_id"] = (
-                    move.pms_property_id.id
-                    or move.move_id.pms_property_id.pms_property_id.id
+                    move.pms_property_id.id or move.move_id.pms_property_id.id
                 )
         return result

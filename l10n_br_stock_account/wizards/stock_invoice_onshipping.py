@@ -8,9 +8,25 @@ from odoo.exceptions import UserError
 class StockInvoiceOnshipping(models.TransientModel):
     _inherit = "stock.invoice.onshipping"
 
+    def _get_fiscal_operation_journal(self):
+        active_ids = self.env.context.get("active_ids", [])
+        if active_ids:
+            active_ids = active_ids[0]
+        pick_obj = self.env["stock.picking"]
+        picking = pick_obj.browse(active_ids)
+        if not picking or not picking.move_lines:
+            # Caso sem dados, apenas para evitar erro
+            return False
+        if not picking.fiscal_operation_id:
+            # Caso de Fatura Internacional, sem os dados Fiscais do Brasil
+            return False
+        else:
+            # Caso Brasileiro
+            return True
+
     fiscal_operation_journal = fields.Boolean(
         string="Account Jornal from Fiscal Operation",
-        default=True,
+        default=_get_fiscal_operation_journal,
     )
 
     group = fields.Selection(
@@ -43,6 +59,10 @@ class StockInvoiceOnshipping(models.TransientModel):
     def _build_invoice_values_from_pickings(self, pickings):
         invoice, values = super()._build_invoice_values_from_pickings(pickings)
         pick = fields.first(pickings)
+        if not pick.fiscal_operation_id:
+            # Caso de Fatura Internacional, sem os dados Fiscais do Brasil
+            return invoice, values
+
         fiscal_vals = pick._prepare_br_fiscal_dict()
 
         document_type = pick.company_id.document_type_id
@@ -110,17 +130,22 @@ class StockInvoiceOnshipping(models.TransientModel):
 
         values.update(fiscal_values)
 
-        values["tax_ids"] = [
-            (
-                6,
-                0,
-                self.env["l10n_br_fiscal.tax"]
-                .browse(fiscal_values["fiscal_tax_ids"])
-                .account_taxes()
-                .ids,
-            )
-        ]
+        # Chamar este método garante que os tax_ids sejam calculados corretamente
+        values = self._simulate_onchange_fiscal_tax_ids(values)
 
+        return values
+
+    def _simulate_onchange_fiscal_tax_ids(self, values):
+        """
+        Simulate onchange fiscal tax ids
+        :param values: dict
+        :return: dict
+        """
+        line = self.env["account.move.line"].new(values.copy())
+        line._onchange_fiscal_tax_ids()
+        new_values = line._convert_to_write(line._cache)
+        # Ensure basic values are not updated
+        values.update(new_values)
         return values
 
     def _get_move_key(self, move):

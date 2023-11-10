@@ -66,7 +66,6 @@ class CNABFileParser(FileParser):
             return parser_name == "cnab240"
 
     def parse(self, filebuffer):
-
         files = {"data": base64.b64decode(filebuffer)}
 
         data = self._get_brcobranca_retorno(files)
@@ -76,7 +75,6 @@ class CNABFileParser(FileParser):
         yield self.result_row_list
 
     def _get_brcobranca_retorno(self, files):
-
         bank_name_brcobranca = dict_brcobranca_bank[self.bank.code_bc]
         brcobranca_api_url = get_brcobranca_api_url(self.env)
         # Ex.: "http://boleto_cnab_api:9292/api/retorno"
@@ -118,7 +116,6 @@ class CNABFileParser(FileParser):
         return zeros_date, date_format
 
     def process_return_file(self, data):
-
         #          Forma de Lançamento do Retorno
         # Em caso de Pagamento/Liquidação é feita a criação de uma Entrada de
         # Diário para cada linha do arquivo CNAB com os valores de desconto,
@@ -199,7 +196,6 @@ class CNABFileParser(FileParser):
             registration_code_allowed = 1
 
         for linha_cnab in data:
-
             if int(linha_cnab["codigo_registro"]) != registration_code_allowed:
                 # Bradesco
                 # Existe o codigo de registro 9 que eh um totalizador
@@ -314,23 +310,11 @@ class CNABFileParser(FileParser):
                 )
                 continue
 
-            payment_line = self.env["account.payment.line"].search(
+            payment_lines = self.env["account.payment.line"].search(
                 [
                     ("move_line_id", "=", account_move_line.id),
                     ("state", "not in", ["cancel", "draft"]),
                 ],
-                limit=1,
-            )
-
-            # A Linha de Pagamento pode ter N bank.payment.line
-            # estamos referenciando apenas a referente a que iniciou
-            # o CNAB
-            # TODO: Deveria relacionar todas ?
-            # A partir da v13 vai relacionar não parece ter problema
-            # e é melhor para criar um vínculo
-            bank_line = payment_line.bank_line_id.filtered(
-                lambda b: b.mov_instruction_code_id.id
-                == payment_line.payment_mode_id.cnab_sending_code_id.id
             )
 
             # Codigos de Movimento de Retorno - Liquidação
@@ -344,12 +328,12 @@ class CNABFileParser(FileParser):
                 account_move_line.payment_mode_id.fixed_journal_id.bank_account_id
             )
 
+            due_date = False
             # as vezes o vencimento pode ser branco
             if (
                 linha_cnab.get("data_vencimento")
                 and linha_cnab.get("data_vencimento") != zeros_date
             ):
-
                 due_date = datetime.datetime.strptime(
                     str(linha_cnab.get("data_vencimento")), date_format
                 ).date()
@@ -360,7 +344,7 @@ class CNABFileParser(FileParser):
                 "own_number": account_move_line.own_number,
                 "your_number": account_move_line.document_number,
                 "title_value": valor_titulo,
-                "bank_payment_line_id": bank_line.id or False,
+                "payment_line_ids": payment_lines.ids,
                 "invoice_id": account_move_line.move_id.id,
                 "due_date": due_date,
                 "move_line_id": account_move_line.id,
@@ -378,9 +362,8 @@ class CNABFileParser(FileParser):
 
             # Caso de Pagamento deve criar os Lançamentos de Diário
             if cod_ocorrencia in cnab_liq_move_code:
-
                 row_list, log_event_payment = self._get_accounting_entries(
-                    linha_cnab, account_move_line, bank_line
+                    linha_cnab, account_move_line, payment_lines
                 )
                 result_row_list.append(row_list)
                 cnab_return_log_event.update(log_event_payment)
@@ -420,7 +403,7 @@ class CNABFileParser(FileParser):
 
         return descricao_ocorrencia
 
-    def _get_accounting_entries(self, linha_cnab, account_move_line, bank_line):
+    def _get_accounting_entries(self, linha_cnab, account_move_line, payment_lines):
         row_list = []
         bank_name_brcobranca = dict_brcobranca_bank[self.bank.code_bc]
         valor_recebido = (
@@ -460,7 +443,7 @@ class CNABFileParser(FileParser):
                             account_move_line.payment_mode_id.discount_account_id.id
                         ),
                         "type": "desconto",
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -474,7 +457,7 @@ class CNABFileParser(FileParser):
                         "type": "desconto",
                         "account_id": self.journal.default_account_id.id,
                         "partner_id": account_move_line.partner_id.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -484,7 +467,6 @@ class CNABFileParser(FileParser):
             valor_juros_mora = self.cnab_str_to_float(linha_cnab["juros_mora"])
 
             if valor_juros_mora > 0.0:
-
                 row_list.append(
                     {
                         "name": "Valor Juros Mora (boleto) "
@@ -496,7 +478,7 @@ class CNABFileParser(FileParser):
                             account_move_line.payment_mode_id.interest_fee_account_id.id
                         ),
                         "partner_id": account_move_line.partner_id.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -511,7 +493,7 @@ class CNABFileParser(FileParser):
                         "journal_id": account_move_line.journal_id.id,
                         "type": "juros_mora",
                         "partner_id": account_move_line.partner_id.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -531,7 +513,7 @@ class CNABFileParser(FileParser):
                         "account_id": self.journal.default_account_id.id,
                         "type": "tarifa",
                         "partner_id": account_move_line.company_id.partner_id.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -548,7 +530,7 @@ class CNABFileParser(FileParser):
                         "credit": 0.0,
                         "type": "tarifa",
                         "account_id": tariff_charge_account.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -568,7 +550,7 @@ class CNABFileParser(FileParser):
                             account_move_line.payment_mode_id.rebate_account_id.id
                         ),
                         "type": "abatimento",
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -582,7 +564,7 @@ class CNABFileParser(FileParser):
                         "type": "abatimento",
                         "account_id": self.journal.default_account_id.id,
                         "partner_id": account_move_line.partner_id.id,
-                        "bank_payment_line_id": bank_line.id or False,
+                        "payment_line_ids": payment_lines.ids,
                         "cnab_returned_ref": account_move_line.document_number,
                     }
                 )
@@ -606,7 +588,7 @@ class CNABFileParser(FileParser):
                 "credit": valor_recebido_calculado,
                 "move_line": account_move_line,
                 "type": "liquidado",
-                "bank_payment_line_id": bank_line.id or False,
+                "payment_line_ids": payment_lines.ids,
                 "account_id": account_move_line.account_id.id,
                 "partner_id": account_move_line.partner_id.id,
                 "date": data_credito,
@@ -677,7 +659,7 @@ class CNABFileParser(FileParser):
             "partner_id": None,
             "account_id": line["account_id"],
             "already_completed": True,
-            "bank_payment_line_id": line["bank_payment_line_id"],
+            "payment_line_ids": line["payment_line_ids"],
             "cnab_returned_ref": line["cnab_returned_ref"],
         }
         if (

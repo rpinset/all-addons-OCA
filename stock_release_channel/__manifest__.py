@@ -1,14 +1,15 @@
 # Copyright 2020 Camptocamp
+# Copyright 2023 Michael Tietz (MT Software) <mtietz@mt-software.de>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 {
     "name": "Stock Release Channels",
     "summary": "Manage workload in WMS with release channels",
-    "version": "14.0.1.2.0",
+    "version": "14.0.2.2.0",
     "development_status": "Beta",
     "license": "AGPL-3",
-    "author": "Camptocamp, Odoo Community Association (OCA)",
-    "maintainers": ["sebalix"],
+    "author": "Camptocamp, ACSONE SA/NV, Odoo Community Association (OCA)",
+    "maintainers": ["sebalix", "mt-software-de"],
     "website": "https://github.com/OCA/wms",
     "depends": [
         "sale_stock",

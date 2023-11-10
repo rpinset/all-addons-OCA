@@ -4,9 +4,12 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 import base64
+import logging
 from collections import defaultdict
 
 from odoo import _, api, exceptions, fields, models
+
+_logger = logging.getLogger(__name__)
 
 
 class EDIExchangeRecord(models.Model):
@@ -41,6 +44,7 @@ class EDIExchangeRecord(models.Model):
         model_field="model",
         copy=False,
     )
+    related_record_exists = fields.Boolean(compute="_compute_related_record_exists")
     related_name = fields.Char(compute="_compute_related_name", compute_sudo=True)
     exchange_file = fields.Binary(attachment=True, copy=False)
     exchange_filename = fields.Char(
@@ -163,6 +167,11 @@ class EDIExchangeRecord(models.Model):
         for rec in self:
             rec.ack_expected = bool(self.type_id.ack_type_id)
 
+    @api.depends("res_id", "model")
+    def _compute_related_record_exists(self):
+        for rec in self:
+            rec.related_record_exists = bool(rec.record)
+
     def needs_ack(self):
         return self.type_id.ack_type_id and not self.ack_exchange_id
 
@@ -198,13 +207,16 @@ class EDIExchangeRecord(models.Model):
             output_string = bytes(output_string, encoding)
         self[field_name] = base64.b64encode(output_string)
 
-    def _get_file_content(self, field_name="exchange_file", binary=True):
+    def _get_file_content(
+        self, field_name="exchange_file", binary=True, as_bytes=False
+    ):
         """Handy method to not have to convert b64 back and forth."""
         self.ensure_one()
         if not self[field_name]:
             return ""
         if binary:
-            return base64.b64decode(self[field_name]).decode()
+            res = base64.b64decode(self[field_name])
+            return res.decode() if not as_bytes else res
         return self[field_name]
 
     def name_get(self):
@@ -225,6 +237,7 @@ class EDIExchangeRecord(models.Model):
             rec._execute_next_action()
         return rec
 
+    @api.model
     def _get_identifier(self):
         return self.env["ir.sequence"].next_by_code("edi.exchange")
 
@@ -332,12 +345,12 @@ class EDIExchangeRecord(models.Model):
 
     def action_open_related_record(self):
         self.ensure_one()
-        if not self.model or not self.res_id:
+        if not self.related_record_exists:
             return {}
         return self.record.get_formview_action()
 
     def _set_related_record(self, odoo_record):
-        self.update({"model": odoo_record._name, "res_id": odoo_record.id})
+        self.sudo().update({"model": odoo_record._name, "res_id": odoo_record.id})
 
     def action_open_related_exchanges(self):
         self.ensure_one()
@@ -348,9 +361,29 @@ class EDIExchangeRecord(models.Model):
         action["domain"] = [("id", "in", self.related_exchange_ids.ids)]
         return action
 
+    def notify_action_complete(self, action, message=None):
+        """Notify current record that an edi action has been completed.
+
+        Implementers should take care of calling this method
+        if they work on records w/o calling edi_backend methods (eg: action_send).
+
+        Implementers can hook to this method to do something after any action ends.
+        """
+        if message:
+            self._notify_related_record(message)
+
+        # Trigger generic action complete event on exchange record
+        event_name = f"{action}_complete"
+        self._trigger_edi_event(event_name)
+        if self.related_record_exists:
+            # Trigger specific event on related record
+            self._trigger_edi_event(event_name, target=self.record)
+
     def _notify_related_record(self, message, level="info"):
         """Post notification on the original record."""
-        if not hasattr(self.record, "message_post_with_view"):
+        if not self.related_record_exists or not hasattr(
+            self.record, "message_post_with_view"
+        ):
             return
         self.record.message_post_with_view(
             "edi_oca.message_edi_exchange_link",
@@ -369,10 +402,11 @@ class EDIExchangeRecord(models.Model):
             suffix=("_" + suffix) if suffix else "",
         )
 
-    def _trigger_edi_event(self, name, suffix=None, **kw):
+    def _trigger_edi_event(self, name, suffix=None, target=None, **kw):
         """Trigger a component event linked to this backend and edi exchange."""
         name = self._trigger_edi_event_make_name(name, suffix=suffix)
-        self._event(name).notify(self, **kw)
+        target = target or self
+        target._event(name).notify(self, **kw)
 
     def _notify_done(self):
         self._notify_related_record(self._exchange_status_message("process_ok"))
@@ -420,9 +454,14 @@ class EDIExchangeRecord(models.Model):
             count=False,
             access_rights_uid=access_rights_uid,
         )
-        if self.env.is_superuser():
-            # rules do not apply for the superuser
+        if self.env.is_system():
+            # restrictions do not apply to group "Settings"
             return len(ids) if count else ids
+
+        # TODO highlight orphaned EDI records in UI:
+        #  - self.model + self.res_id are set
+        #  - self.record returns empty recordset
+        # Remark: self.record is @property, not field
 
         if not ids:
             return 0 if count else []
@@ -450,11 +489,21 @@ class EDIExchangeRecord(models.Model):
         for model, targets in model_data.items():
             if not self.env[model].check_access_rights("read", False):
                 continue
-            target_ids = list(targets)
+            recs = self.env[model].browse(list(targets))
+            missing = recs - recs.exists()
+            if missing:
+                for res_id in missing.ids:
+                    _logger.warning(
+                        "Deleted record %s,%s is referenced by edi.exchange.record %s",
+                        model,
+                        res_id,
+                        list(targets[res_id]),
+                    )
+                recs = recs - missing
             allowed = (
                 self.env[model]
                 .with_context(active_test=False)
-                ._search([("id", "in", target_ids)])
+                ._search([("id", "in", recs.ids)])
             )
             for target_id in allowed:
                 result += list(targets[target_id])
@@ -489,7 +538,7 @@ class EDIExchangeRecord(models.Model):
         by_model_rec_ids = defaultdict(set)
         by_model_checker = {}
         for exc_rec in self.sudo():
-            if not exc_rec.model or not exc_rec.res_id:
+            if not exc_rec.related_record_exists:
                 continue
             by_model_rec_ids[exc_rec.model].add(exc_rec.res_id)
             if exc_rec.model not in by_model_checker:

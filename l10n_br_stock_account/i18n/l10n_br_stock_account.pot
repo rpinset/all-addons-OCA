@@ -40,6 +40,11 @@ msgid "Additional data manually entered by user"
 msgstr ""
 
 #. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__allow_csll_irpj
+msgid "Allow Csll Irpj"
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_discount_value
 msgid "Amount Discount"
 msgstr ""
@@ -219,6 +224,7 @@ msgstr ""
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__cofinsst_base
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_cofinsst_base
 msgid "COFINS ST Base"
 msgstr ""
 
@@ -234,6 +240,7 @@ msgstr ""
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__cofinsst_value
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_cofinsst_value
 msgid "COFINS ST Value"
 msgstr ""
 
@@ -1035,6 +1042,20 @@ msgid "Identifies the operation destination."
 msgstr ""
 
 #. module: l10n_br_stock_account
+#: model:ir.model.fields,help:l10n_br_stock_account.field_stock_move__allow_csll_irpj
+msgid "Indicates potential 'CSLL' and 'IRPJ' tax charges."
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,help:l10n_br_stock_account.field_stock_move__partner_is_public_entity
+msgid ""
+"Indicates whether the entity in question is a public organization or "
+"government-related entity. It encompasses a range of entities such as "
+"municipal governments, state-owned enterprises (where the government is the "
+"largest shareholder), and other government-controlled organizations."
+msgstr ""
+
+#. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__insurance_value
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_insurance_value
 msgid "Insurance Value"
@@ -1242,6 +1263,7 @@ msgstr ""
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__pisst_base
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_pisst_base
 msgid "PIS ST Base"
 msgstr ""
 
@@ -1257,6 +1279,7 @@ msgstr ""
 
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__pisst_value
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_picking__amount_pisst_value
 msgid "PIS ST Value"
 msgstr ""
 
@@ -1294,6 +1317,11 @@ msgstr ""
 #. module: l10n_br_stock_account
 #: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__product_id
 msgid "Product"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__partner_is_public_entity
+msgid "Public Entity"
 msgstr ""
 
 #. module: l10n_br_stock_account
@@ -1339,6 +1367,16 @@ msgstr ""
 #. module: l10n_br_stock_account
 #: model:ir.model,name:l10n_br_stock_account.model_stock_rule
 msgid "Stock Rule"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__icms_tax_benefit_id
+msgid "Tax Benefit"
+msgstr ""
+
+#. module: l10n_br_stock_account
+#: model:ir.model.fields,field_description:l10n_br_stock_account.field_stock_move__icms_tax_benefit_code
+msgid "Tax Benefit Code"
 msgstr ""
 
 #. module: l10n_br_stock_account

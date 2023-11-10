@@ -153,6 +153,34 @@ msgstr "<strong>#END#</strong>: Slutdatum för den fakturerade perioden"
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>\n"
+"                                    : Invoice month name\n"
+"                                    of\n"
+"                                    the\n"
+"                                    invoiced period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_template_form_view
+msgid ""
+"<strong>#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced "
+"period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
+"<strong>#INVOICEMONTHNUMBER#</strong>: Invoice month number of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid "<strong>#INVOICEYEAR#</strong>: Invoice year of the period"
+msgstr ""
+
+#. module: contract
+#: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
+msgid ""
 "<strong>#START#</strong>\n"
 "                                    : Start\n"
 "                                    date\n"
@@ -353,6 +381,12 @@ msgid "Analytic account"
 msgstr ""
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
 msgid "Archived"
 msgstr "Arkiverad"
@@ -382,6 +416,12 @@ msgstr "Associerad Motpart"
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_attachment_count
 msgid "Attachment Count"
 msgstr "Antal Bilagor"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "August"
+msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract_line__is_auto_renew
@@ -962,6 +1002,12 @@ msgid "Day(s)"
 msgstr "Dag(ar)"
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_line__note_invoicing_mode
 #: model:ir.model.fields,help:contract.field_contract_template_line__note_invoicing_mode
@@ -1048,6 +1094,12 @@ msgid ""
 msgstr ""
 "Misslyckades att hantera kontraktet %(name)s [id: %(id)s]:\n"
 "%(ue)s"
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "February"
+msgstr ""
 
 #. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_search_view
@@ -1154,7 +1206,6 @@ msgstr ""
 
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_has_error
-#: model:ir.model.fields,help:contract.field_contract_contract__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -1278,6 +1329,12 @@ msgid "Is suspension without end date"
 msgstr ""
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_abstract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_contract__journal_id
 #: model:ir.model.fields,field_description:contract.field_contract_template__journal_id
@@ -1293,6 +1350,18 @@ msgstr "Journalpost"
 #. module: contract
 #: model:ir.model,name:contract.model_account_move_line
 msgid "Journal Item"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "June"
 msgstr ""
 
 #. module: contract
@@ -1390,12 +1459,24 @@ msgid "Manually Invoice Sale Contracts"
 msgstr ""
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "March"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,help:contract.field_contract_abstract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_contract__line_recurrence
 #: model:ir.model.fields,help:contract.field_contract_template__line_recurrence
 msgid ""
 "Mark this check if you want to control recurrrence at line level instead of "
 "all together for the whole contract."
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "May"
 msgstr ""
 
 #. module: contract
@@ -1521,6 +1602,12 @@ msgid "Notes"
 msgstr ""
 
 #. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_contract__message_needaction_counter
 msgid "Number of Actions"
 msgstr ""
@@ -1557,6 +1644,12 @@ msgstr ""
 #. module: contract
 #: model:ir.model.fields,help:contract.field_contract_contract__message_unread_counter
 msgid "Number of unread messages"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "October"
 msgstr ""
 
 #. module: contract
@@ -1789,11 +1882,6 @@ msgid "Responsible User"
 msgstr ""
 
 #. module: contract
-#: model:ir.model.fields,field_description:contract.field_contract_contract__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: contract
 #: model:ir.model.fields,field_description:contract.field_res_partner__sale_contract_count
 #: model:ir.model.fields,field_description:contract.field_res_users__sale_contract_count
 #: model_terms:ir.ui.view,arch_db:contract.view_partner_form
@@ -1833,6 +1921,12 @@ msgstr ""
 #. module: contract
 #: model:ir.model.fields,field_description:contract.field_contract_modification__sent
 msgid "Sent"
+msgstr ""
+
+#. module: contract
+#: code:addons/contract/models/contract_line.py:0
+#, python-format
+msgid "September"
 msgstr ""
 
 #. module: contract

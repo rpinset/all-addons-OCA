@@ -53,6 +53,7 @@ msgstr "Kortingsbereik"
 
 #. module: base_global_discount
 #: model:ir.model.fields,field_description:base_global_discount.field_global_discount__display_name
+#: model:ir.model.fields,field_description:base_global_discount.field_res_partner__display_name
 msgid "Display Name"
 msgstr "Schermnaam"
 
@@ -69,18 +70,18 @@ msgstr "Algemene korting"
 #. module: base_global_discount
 #: model:ir.actions.act_window,name:base_global_discount.action_global_discount_tree
 #: model:ir.ui.menu,name:base_global_discount.menu_global_discount
-#: model_terms:ir.ui.view,arch_db:base_global_discount.global_discount_view_form
-#: model_terms:ir.ui.view,arch_db:base_global_discount.global_discount_view_tree
 msgid "Global Discounts"
 msgstr "Algemene korting"
 
 #. module: base_global_discount
 #: model:ir.model.fields,field_description:base_global_discount.field_global_discount__id
+#: model:ir.model.fields,field_description:base_global_discount.field_res_partner__id
 msgid "ID"
 msgstr "ID"
 
 #. module: base_global_discount
 #: model:ir.model.fields,field_description:base_global_discount.field_global_discount____last_update
+#: model:ir.model.fields,field_description:base_global_discount.field_res_partner____last_update
 msgid "Last Modified on"
 msgstr "Laatst gewijzigd op"
 

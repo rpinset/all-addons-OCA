@@ -12,6 +12,10 @@ class L10nEsAccountStatementImportN43(common.SavepointCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.company_2 = cls.env["res.company"].create({"name": "New company"})
+        cls.partner_other_company = cls.env["res.partner"].create(
+            {"name": "Test partner N43", "company_id": cls.company_2.id}
+        )
         cls.partner = cls.env["res.partner"].create(
             {"name": "Test partner N43", "company_id": cls.env.company.id}
         )
@@ -93,6 +97,9 @@ class L10nEsAccountStatementImportN43(common.SavepointCase):
         self.assertAlmostEqual(statement.balance_start, 0, 2)
         self.assertAlmostEqual(statement.balance_end, 101.96, 2)
         self.assertEqual(statements[0].partner_id, self.partner)
+        self.assertEqual(statements[0].ref, "000975737917")
+        self.assertEqual(statements[1].ref, "/")
+        self.assertEqual(statements[2].ref, "5540014210128010")
 
     def test_import_n43_fecha_oper(self):
         self.journal.n43_date_type = "fecha_oper"

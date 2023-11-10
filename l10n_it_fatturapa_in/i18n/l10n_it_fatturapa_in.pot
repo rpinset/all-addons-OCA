@@ -156,6 +156,23 @@ msgid "Cancel"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
+#, python-format
+msgid ""
+"Cannot import an attachment that could not be parsed.\n"
+"Please fix the parsing error first, then try again."
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/link_to_existing_invoice.py:0
+#: code:addons/l10n_it_fatturapa_in/wizard/link_to_existing_invoice.py:0
+#, python-format
+msgid ""
+"Cannot link an attachment that could not be parsed.\n"
+"Please fix the parsing error first, then try again."
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__checksum
 msgid "Checksum/SHA1"
 msgstr ""
@@ -367,6 +384,11 @@ msgstr ""
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
 #, python-format
 msgid "Document type %s not handled."
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__e_invoice_parsing_error
+msgid "E Invoice Parsing Error"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -611,7 +633,6 @@ msgstr ""
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_error
-#: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -658,6 +679,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_move__inconsistencies
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_payment__inconsistencies
 msgid "Import Inconsistencies"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/models/attachment.py:0
+#, python-format
+msgid "Impossible to parse XML for {att_name}: {error_msg}"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -722,6 +749,11 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: model:ir.model,name:l10n_it_fatturapa_in.model_account_move_line
 msgid "Journal Item"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__key
+msgid "Key"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -874,6 +906,12 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line__tax_kind
 msgid "Nature"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/efattura.py:0
+#, python-format
+msgid "No available data to compute AliquotaIVA"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -1149,11 +1187,6 @@ msgid "Rounding up"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
-#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line__service_type
 msgid "Sale Provision Type"
 msgstr ""
@@ -1243,6 +1276,13 @@ msgid ""
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__key
+msgid ""
+"Technical field used to resolve multiple attachments in a multi-website "
+"environment."
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_einvoice_line_other_data__text_ref
 msgid "Text Reference"
 msgstr ""
@@ -1274,6 +1314,11 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__res_id
 msgid "The record id this is attached to."
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__theme_template_id
+msgid "Theme Template"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -1321,6 +1366,12 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__type
 msgid "Type"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: code:addons/l10n_it_fatturapa_in/wizard/efattura.py:0
+#, python-format
+msgid "Unexpected root element: %s"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -1385,8 +1436,18 @@ msgid ""
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_id
+msgid "Website"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_message_ids
 msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_it_fatturapa_in
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_fatturapa_attachment_in__website_url
+msgid "Website URL"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -1409,11 +1470,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_res_company__cassa_previdenziale_product_id
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_res_config_settings__cassa_previdenziale_product_id
 msgid "Welfare Fund Data Product"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
-msgid "Welfare Fund Details"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -1442,11 +1498,6 @@ msgid "Withholding"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
-msgid "Withholding Details"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_wizard_link_to_invoice_line__wizard_id
 msgid "Wizard"
 msgstr ""
@@ -1462,11 +1513,6 @@ msgstr ""
 #, python-format
 msgid ""
 "XML contains tax with percentage '%s' but it does not exist in your system"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
-#: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_fatturapa_in_attachment_tree
-msgid "Xml Attachment"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in

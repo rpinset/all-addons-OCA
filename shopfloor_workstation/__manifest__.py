@@ -4,7 +4,7 @@
 {
     "name": "Shopfloor Workstation",
     "summary": "Manage warehouse workstation with barcode scanners",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.3.1",
     "development_status": "Beta",
     "category": "Inventory",
     "website": "https://github.com/OCA/wms",
@@ -14,4 +14,6 @@
     "depends": ["shopfloor", "base_report_to_printer"],
     "demo": ["demo/shopfloor_workstation_demo.xml"],
     "data": ["security/ir.model.access.csv", "views/shopfloor_workstation.xml"],
+    "post_init_hook": "post_init_hook",
+    "uninstall_hook": "uninstall_hook",
 }

@@ -105,9 +105,8 @@ msgstr ""
 
 #. module: event_sale_session
 #: code:addons/event_sale_session/models/sale_order.py:0
-#: code:addons/event_sale_session/models/sale_order.py:0
 #, python-format
-msgid "Not enough seats. Change quantity or session"
+msgid "Not enough seats in session %(session)s. Change quantity or session"
 msgstr ""
 
 #. module: event_sale_session

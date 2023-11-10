@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 14:26+0000\n"
+"PO-Revision-Date: 2023-10-12 11:37+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model,name:purchase_sale_inter_company.model_stock_backorder_confirmation
+msgid "Backorder Confirmation"
+msgstr "Conferma ordine residuo"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_res_company
@@ -51,6 +56,30 @@ msgstr ""
 "sulla base degli ordini di acquisto fatti a questa azienda."
 
 #. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_account_move__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move_line__display_name
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation__force_no_backorder
+msgid "Force No backorder"
+msgstr "Forza nessun ordine residuo"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation__force_backorder
+msgid "Force backorder"
+msgstr "Forza ordine residuo"
+
+#. module: purchase_sale_inter_company
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_company__so_from_po
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__so_from_po
 msgid ""
@@ -61,6 +90,20 @@ msgstr ""
 "Generare un ordine di vendita quando un ordine d'acquisto viene creato con "
 "questa azienda come fornitore.\n"
 " L'utente interaziendale deve essere almeno un utente vendite."
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_account_move__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_purchase_order__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order_line__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move_line__id
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_picking__id
+msgid "ID"
+msgstr "ID"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_picking__intercompany_picking_id
@@ -75,8 +118,33 @@ msgstr "Utente vendite interaziendali"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_account_move
-msgid "Journal Entries"
-msgstr "Registrazioni contabili"
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_account_move____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_move_line____last_update
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: purchase_sale_inter_company
+#: code:addons/purchase_sale_inter_company/models/stock_picking.py:0
+#, python-format
+msgid "PO does not exist or has no receipts"
+msgstr "Il PO non esiste o non ha ricezioni"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model,name:purchase_sale_inter_company.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimenti prodotto (riga movimento di magazzino)"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_purchase_order
@@ -118,6 +186,36 @@ msgstr "Ordine d'acquisto di origine"
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_sale_order_line__auto_purchase_line_id
 msgid "Source Purchase Order Line"
 msgstr "Riga ordine d'acquisto di origine"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model,name:purchase_sale_inter_company.model_stock_move
+msgid "Stock Move"
+msgstr "Movimento di magazzino"
+
+#. module: purchase_sale_inter_company
+#: model_terms:ir.ui.view,arch_db:purchase_sale_inter_company.res_config_settings_view_form
+msgid "Sync picking"
+msgstr "Sincronizza picking"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__sync_picking
+msgid "Sync the receipt from the destination company with the delivery"
+msgstr "Sincronizza la ricezione dell'azienda di destinazione con la consegna"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,help:purchase_sale_inter_company.field_res_company__sync_picking
+#: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__sync_picking
+msgid ""
+"Sync the receipt from the destination company with the delivery from the "
+"source company"
+msgstr ""
+"Sincronizza la ricezione dell'azienda di destinazione con la consegna "
+"dell'azienda di origine"
+
+#. module: purchase_sale_inter_company
+#: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__sync_picking
+msgid "Sync the receipt with the delivery"
+msgstr "Sincronizza la ricezione con la spedizione"
 
 #. module: purchase_sale_inter_company
 #: code:addons/purchase_sale_inter_company/models/stock_picking.py:0
@@ -192,6 +290,9 @@ msgid ""
 msgstr ""
 "Impossibile creare l'ordine di vendita dall'ordine d'acquisto perchè la "
 "valuta del listino di vendita è diversa dalla valuta del listino d'acquisto."
+
+#~ msgid "Journal Entries"
+#~ msgstr "Registrazioni contabili"
 
 #~ msgid "Invoice"
 #~ msgstr "Fattura"

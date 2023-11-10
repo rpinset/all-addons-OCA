@@ -11,8 +11,7 @@
                     <field
                         name="fiscal_profile_id"
                         force_save="1"
-                        widget="radio"
-                        required="1"
+                        groups="l10n_br_fiscal.group_user"
                     />
                     <field
                         name="ind_ie_dest"
@@ -21,6 +20,11 @@
                     />
                     <field
                         name="tax_framework"
+                        force_save="1"
+                        attrs="{'readonly': [('fiscal_profile_id', '!=', False)]}"
+                    />
+                    <field
+                        name="is_public_entity"
                         force_save="1"
                         attrs="{'readonly': [('fiscal_profile_id', '!=', False)]}"
                     />

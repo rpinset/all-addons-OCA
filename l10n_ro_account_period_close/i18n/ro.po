@@ -22,7 +22,8 @@ msgstr ""
 msgid ""
 "<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" title="
 "\"Arrow\"/>"
-msgstr "<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" title="
+msgstr ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" title="
 "\"Arrow\"/>"
 
 #. module: l10n_ro_account_period_close
@@ -79,7 +80,6 @@ msgstr "Închide conturile de debit și credit"
 
 #. module: l10n_ro_account_period_close
 #: model_terms:ir.ui.view,arch_db:l10n_ro_account_period_close.view_l10n_ro_account_period_closing_form
-#: model_terms:ir.ui.view,arch_db:l10n_ro_account_period_close.view_l10n_ro_account_period_closing_tree
 msgid "Closing"
 msgstr "Închidere"
 

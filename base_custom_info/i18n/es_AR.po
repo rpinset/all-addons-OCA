@@ -20,7 +20,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_value_form
 msgid ""
 "<strong>Warning!</strong>\n"
-"                        You might see no changes in parent form until you save it."
+"                        You might see no changes in parent form until you "
+"save it."
 msgstr ""
 "<strong>¡Advertencia!</strong>\n"
 "                        Puede no ver cambios en el formulario principal "
@@ -252,21 +253,6 @@ msgid "Custom Info"
 msgstr "Inf. personalizada"
 
 #. module: base_custom_info
-#: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_category_tree
-msgid "Custom Info Categories"
-msgstr "Categorías de inf. personalizada"
-
-#. module: base_custom_info
-#: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_option_tree
-msgid "Custom Info Options"
-msgstr "Opciones de inf. personalizada"
-
-#. module: base_custom_info
-#: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_property_tree
-msgid "Custom Info Properties"
-msgstr "Propiedades de inf. personalizada"
-
-#. module: base_custom_info
 #: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_template_form
 msgid "Custom Info Template"
 msgstr "Plantilla de inf. personalizada"
@@ -277,11 +263,6 @@ msgstr "Plantilla de inf. personalizada"
 #: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_property_form
 msgid "Custom Info Template Properties"
 msgstr "Propiedades de la plantilla de inf. personalizada"
-
-#. module: base_custom_info
-#: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_template_tree
-msgid "Custom Info Templates"
-msgstr "Plantillas de inf. personalizada"
 
 #. module: base_custom_info
 #: model:ir.module.category,name:base_custom_info.category
@@ -306,7 +287,6 @@ msgstr "Propiedades personalizadas"
 
 #. module: base_custom_info
 #: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_value_editable
-#: model_terms:ir.ui.view,arch_db:base_custom_info.custom_info_value_tree
 msgid "Custom Property Values"
 msgstr "Valores de las propiedades personalizadas"
 
@@ -415,8 +395,8 @@ msgstr "Tipo de campo"
 #. module: base_custom_info
 #: model:ir.model.fields,help:base_custom_info.field_custom_info_property__maximum
 msgid ""
-"For numeric fields, it means the maximum possible value; for text fields, it"
-" means the maximum possible length. If it is smaller than the minimum, then "
+"For numeric fields, it means the maximum possible value; for text fields, it "
+"means the maximum possible length. If it is smaller than the minimum, then "
 "this check is skipped"
 msgstr ""
 "Para campos numéricos, significa el valor máximo permitido; para campos de "
@@ -426,8 +406,8 @@ msgstr ""
 #. module: base_custom_info
 #: model:ir.model.fields,help:base_custom_info.field_custom_info_property__minimum
 msgid ""
-"For numeric fields, it means the minimum possible value; for text fields, it"
-" means the minimum possible length. If it is bigger than the maximum, then "
+"For numeric fields, it means the minimum possible value; for text fields, it "
+"means the minimum possible length. If it is bigger than the maximum, then "
 "this check is skipped"
 msgstr ""
 "Para campos numéricos, significa el valor mínimo permitido; para campos de "
@@ -536,8 +516,7 @@ msgstr "Última actualización en"
 #: code:addons/base_custom_info/models/custom_info_value.py:0
 #, python-format
 msgid ""
-"Length for %(prop)s is %(val)s, but it should be between %(min)d and "
-"%(max)d."
+"Length for %(prop)s is %(val)s, but it should be between %(min)d and %(max)d."
 msgstr ""
 "La longitud de %(prop)s es %(val)s, pero debería estar entre %(min)d y "
 "%(max)d."
@@ -601,7 +580,6 @@ msgid "Needs videogames"
 msgstr "Necesita videojuegos"
 
 #. module: base_custom_info
-#: code:addons/base_custom_info/models/custom_info_value.py:0
 #: code:addons/base_custom_info/models/custom_info_value.py:0
 #, python-format
 msgid "No"
@@ -787,7 +765,8 @@ msgstr ""
 #. module: base_custom_info
 #: model:res.groups,comment:base_custom_info.group_basic
 msgid "The user will be able to manage basic custom information."
-msgstr "El usuario tendrá acceso a una gestión básica de la inf. personalizada."
+msgstr ""
+"El usuario tendrá acceso a una gestión básica de la inf. personalizada."
 
 #. module: base_custom_info
 #: model:ir.model.fields,help:base_custom_info.field_custom_info_property__widget
@@ -940,3 +919,15 @@ msgstr ""
 #, python-format
 msgid "You must set a existing model."
 msgstr "Debe configurar un modelo existente."
+
+#~ msgid "Custom Info Categories"
+#~ msgstr "Categorías de inf. personalizada"
+
+#~ msgid "Custom Info Options"
+#~ msgstr "Opciones de inf. personalizada"
+
+#~ msgid "Custom Info Properties"
+#~ msgstr "Propiedades de inf. personalizada"
+
+#~ msgid "Custom Info Templates"
+#~ msgstr "Plantillas de inf. personalizada"

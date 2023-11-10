@@ -16,6 +16,7 @@ from .contract_line_constraints import get_allowed
 class ContractLine(models.Model):
     _name = "contract.line"
     _description = "Contract Line"
+    _check_company_auto = True
     _inherit = [
         "contract.abstract.contract.line",
         "contract.recurrency.mixin",
@@ -36,10 +37,14 @@ class ContractLine(models.Model):
     analytic_account_id = fields.Many2one(
         string="Analytic account",
         comodel_name="account.analytic.account",
+        check_company=True,
+        domain="['|', ('company_id', '=', company_id), ('company_id', '=', False)]",
     )
     analytic_tag_ids = fields.Many2many(
         comodel_name="account.analytic.tag",
         string="Analytic Tags",
+        check_company=True,
+        domain="['|', ('company_id', '=', company_id), ('company_id', '=', False)]",
     )
     date_start = fields.Date(required=True)
     date_end = fields.Date(compute="_compute_date_end", store=True, readonly=False)
@@ -59,6 +64,7 @@ class ContractLine(models.Model):
         readonly=True,
         index=True,
         copy=False,
+        check_company=True,
         help="In case of restart after suspension, this field contain the new "
         "contract line created.",
     )
@@ -69,6 +75,7 @@ class ContractLine(models.Model):
         readonly=True,
         index=True,
         copy=False,
+        check_company=True,
         help="Contract Line origin of this one.",
     )
     manual_renew_needed = fields.Boolean(
@@ -111,6 +118,10 @@ class ContractLine(models.Model):
         readonly=True,
         default=True,
     )
+
+    def _compute_display_name(self):
+        for rec in self:
+            rec.display_name = "%s - %s" % (rec.date_start, rec.name)
 
     @api.depends(
         "last_date_invoiced", "date_start", "date_end", "contract_id.last_date_invoiced"
@@ -612,6 +623,23 @@ class ContractLine(models.Model):
         )
         return first_date_invoiced, last_date_invoiced, recurring_next_date
 
+    def _translate_marker_month_name(self, month_name):
+        months = {
+            "01": _("January"),
+            "02": _("February"),
+            "03": _("March"),
+            "04": _("April"),
+            "05": _("May"),
+            "06": _("June"),
+            "07": _("July"),
+            "08": _("August"),
+            "09": _("September"),
+            "10": _("October"),
+            "11": _("November"),
+            "12": _("December"),
+        }
+        return months[month_name]
+
     def _insert_markers(self, first_date_invoiced, last_date_invoiced):
         self.ensure_one()
         lang_obj = self.env["res.lang"]
@@ -620,6 +648,14 @@ class ContractLine(models.Model):
         name = self.name
         name = name.replace("#START#", first_date_invoiced.strftime(date_format))
         name = name.replace("#END#", last_date_invoiced.strftime(date_format))
+        name = name.replace("#INVOICEMONTHNUMBER#", first_date_invoiced.strftime("%m"))
+        name = name.replace("#INVOICEYEAR#", first_date_invoiced.strftime("%Y"))
+        name = name.replace(
+            "#INVOICEMONTHNAME#",
+            self.with_context(lang=lang.code)._translate_marker_month_name(
+                first_date_invoiced.strftime("%m")
+            ),
+        )
         return name
 
     def _update_recurring_next_date(self):

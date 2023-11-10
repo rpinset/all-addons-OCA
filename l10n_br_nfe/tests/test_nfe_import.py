@@ -2,7 +2,7 @@ import logging
 
 import nfelib
 import pkg_resources
-from nfelib.v4_00 import leiauteNFe_sub as nfe_sub
+from nfelib.nfe.bindings.v4_0.leiaute_nfe_v4_00 import TnfeProc
 
 from odoo.models import NewId
 from odoo.tests import SavepointCase
@@ -17,24 +17,24 @@ class NFeImportTest(SavepointCase):
         hooks.register_hook(
             self.env,
             "l10n_br_nfe",
-            "odoo.addons.l10n_br_nfe_spec.models.v4_00.leiauteNFe",
+            "odoo.addons.l10n_br_nfe_spec.models.v4_0.leiaute_nfe_v4_00",
         )
         res_items = (
-            "..",
-            "tests",
             "nfe",
-            "v4_00",
+            "samples",
+            "v4_0",
             "leiauteNFe",
             "35180834128745000152550010000474281920007498-nfe.xml",
         )
 
         resource_path = "/".join(res_items)
         nfe_stream = pkg_resources.resource_stream(nfelib.__name__, resource_path)
-        nfe_binding = nfe_sub.parse(nfe_stream, silence=True)
+        binding = TnfeProc.from_xml(nfe_stream.read().decode())
+
         nfe = (
             self.env["nfe.40.infnfe"]
-            .with_context(tracking_disable=True, edoc_type="in", lang="pt_BR")
-            .build_from_binding(nfe_binding.infNFe, dry_run=True)
+            .with_context(tracking_disable=True, edoc_type="in")
+            .build_from_binding(binding.NFe.infNFe, dry_run=True)
         )
         assert isinstance(nfe.id, NewId)
         self._check_nfe(nfe)
@@ -43,25 +43,24 @@ class NFeImportTest(SavepointCase):
         hooks.register_hook(
             self.env,
             "l10n_br_nfe",
-            "odoo.addons.l10n_br_nfe_spec.models.v4_00.leiauteNFe",
+            "odoo.addons.l10n_br_nfe_spec.models.v4_0.leiaute_nfe_v4_00",
         )
         res_items = (
-            "..",
-            "tests",
             "nfe",
-            "v4_00",
+            "samples",
+            "v4_0",
             "leiauteNFe",
             "35180834128745000152550010000474281920007498-nfe.xml",
         )
         resource_path = "/".join(res_items)
         nfe_stream = pkg_resources.resource_stream(nfelib.__name__, resource_path)
-
-        nfe_binding = nfe_sub.parse(nfe_stream, silence=True)
+        binding = TnfeProc.from_xml(nfe_stream.read().decode())
         nfe = (
             self.env["nfe.40.infnfe"]
-            .with_context(tracking_disable=True, edoc_type="in", lang="pt_BR")
-            .build_from_binding(nfe_binding.infNFe)
+            .with_context(tracking_disable=True, edoc_type="in")
+            .build_from_binding(binding.NFe.infNFe, dry_run=False)
         )
+
         assert isinstance(nfe.id, int)
         self._check_nfe(nfe)
 
@@ -79,13 +78,14 @@ class NFeImportTest(SavepointCase):
         self.assertEqual(nfe.partner_id.legal_name, "Alimentos Ltda.")
 
         # enderDest
+        nfe.partner_id._inverse_nfe40_CEP()
         self.assertEqual(nfe.partner_id.street_name, "Rua Fonseca")  # related xLgr
         self.assertEqual(nfe.partner_id.zip, "13877-123")
         self.assertEqual(nfe.partner_id.nfe40_CEP, "13877123")
         self.assertEqual(nfe.partner_id.city_id.name, "São João da Boa Vista")
 
         # now we check that company_id is unchanged
-        self.assertEqual(nfe.company_id.name, "Sua Empresa")
+        self.assertEqual(nfe.company_id, self.env.ref("base.main_company"))
 
         # this tests that value is not overrident by stacked default vals
         self.assertEqual(nfe.nfe40_modFrete, "0")  # (default is 9)
@@ -119,13 +119,6 @@ class NFeImportTest(SavepointCase):
         self.assertEqual(
             nfe.fiscal_line_ids[2].product_id.name, "QUINOA PICANTE 100G (2X50G)"
         )
-
-        # ds_object = nfe._build_generateds()
-        # ds_object.export(
-        #   sys.stdout,
-        #   0,
-        #   pretty_print=True,
-        # )
 
     def test_import_out_nfe(self):
         "(can be useful after an ERP migration)"

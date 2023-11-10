@@ -69,6 +69,9 @@ Vue.component("picking-select-line-content", {
             opts.loud_title = true;
             return opts;
         },
+        get_wrapper_klass(record) {
+            return "";
+        },
     },
     computed: {
         pack_list_item_options() {
@@ -99,6 +102,9 @@ Vue.component("picking-select-package-content", {
             return "";
         },
     },
+    // TODO: We should update the layout of this component so that it's in line
+    // with the refactor done to "picking-select-line-content":
+    // https://github.com/OCA/wms/pull/583
     template: `
     <div>
         <div :class="[record.package_dest ? 'has-pack' : 'no-pack', get_wrapper_klass(record)]">

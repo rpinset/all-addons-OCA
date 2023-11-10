@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-10 16:31+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2023-07-12 12:09+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: iot_rule
 #: code:addons/iot_rule/models/iot_rule.py:0
@@ -33,7 +33,7 @@ msgstr "Azione"
 #: model:ir.model.fields,field_description:iot_rule.field_iot_lock__active
 #: model:ir.model.fields,field_description:iot_rule.field_iot_rule__active
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: iot_rule
 #: model_terms:ir.ui.view,arch_db:iot_rule.iot_key_form_view
@@ -104,7 +104,7 @@ msgstr "Nome visualizzato"
 #. module: iot_rule
 #: model:ir.model.fields,field_description:iot_rule.field_iot_key__expiration_date
 msgid "Expiration Date"
-msgstr "Data scadenza"
+msgstr "Data di scadenza"
 
 #. module: iot_rule
 #: model_terms:ir.ui.view,arch_db:iot_rule.iot_key_search_view
@@ -201,7 +201,6 @@ msgid "Key must be unique"
 msgstr "La chiave deve essere univoca"
 
 #. module: iot_rule
-#: code:addons/iot_rule/wizards/iot_key_wizard.py:0
 #: code:addons/iot_rule/wizards/iot_key_wizard.py:0
 #, python-format
 msgid "Key of %s"
@@ -344,7 +343,7 @@ msgstr "Regole"
 #. module: iot_rule
 #: model:ir.model.fields,field_description:iot_rule.field_iot_key_action__timestamp
 msgid "Time"
-msgstr "Tempo"
+msgstr "Orario"
 
 #. module: iot_rule
 #: model:ir.model.fields,field_description:iot_rule.field_iot_key__unique_virtual_key

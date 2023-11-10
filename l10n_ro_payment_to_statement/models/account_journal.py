@@ -83,7 +83,7 @@ class AccountJournal(models.Model):
 
     @api.model
     def _fill_missing_values(self, vals):
-        super()._fill_missing_values(vals)
+        res = super()._fill_missing_values(vals)
         if not vals:
             vals = {}
         if (
@@ -116,11 +116,13 @@ class AccountJournal(models.Model):
                         "padding": 6,
                         "company_id": company,
                     }
-                    seq = self.env["ir.sequence"].create(vals_seq)
+                    seq = self.env["ir.sequence"].sudo().create(vals_seq)
                     vals[seq_field] = seq.id
+        return res
 
     def l10n_ro_update_cash_vals(self):
         self.ensure_one()
+        cash_in_sequence_id = self.l10n_ro_customer_cash_in_sequence_id.id
         new_vals = {
             "type": self.type,
             "name": self.name,
@@ -131,9 +133,7 @@ class AccountJournal(models.Model):
             "l10n_ro_statement_sequence_id": self.l10n_ro_statement_sequence_id.id,
             "l10n_ro_cash_in_sequence_id": self.l10n_ro_cash_in_sequence_id.id,
             "l10n_ro_cash_out_sequence_id": self.l10n_ro_cash_out_sequence_id.id,
+            "l10n_ro_customer_cash_in_sequence_id": cash_in_sequence_id,
         }
-        new_vals[
-            "l10n_ro_customer_cash_in_sequence_id"
-        ] = self.l10n_ro_customer_cash_in_sequence_id.id
         self._fill_missing_values(new_vals)
         self.write(new_vals)

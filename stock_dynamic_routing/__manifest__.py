@@ -2,10 +2,11 @@
 {
     "name": "Stock Dynamic Routing",
     "summary": "Dynamic routing of stock moves",
-    "author": "Camptocamp, Odoo Community Association (OCA)",
+    "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
+    "maintainers": ["jbaudoux"],
     "website": "https://github.com/OCA/wms",
     "category": "Warehouse Management",
-    "version": "14.0.1.0.2",
+    "version": "14.0.1.1.1",
     "license": "AGPL-3",
     "depends": ["stock", "stock_helper"],
     "demo": [

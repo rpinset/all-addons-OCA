@@ -12,7 +12,12 @@ export const checkout_states = function ($instance) {
         select_document: {
             display_info: {
                 title: "Choose an order to pack",
-                scan_placeholder: "Scan pack / product / picking / location",
+                scan_placeholder: () => {
+                    if ($instance.state.data.restrict_scan_first) {
+                        return "Scan pack / picking / location";
+                    }
+                    return "Scan pack / product / picking / location";
+                },
             },
             on_scan: (scanned) => {
                 $instance.wait_call(
@@ -363,6 +368,27 @@ export const checkout_states = function ($instance) {
                     $instance.odoo.call("done", {
                         picking_id: $instance.state.data.picking.id,
                         confirmation: true,
+                    })
+                );
+            },
+            on_back: () => {
+                $instance.state_to("summary");
+                $instance.reset_notification();
+            },
+        },
+        select_child_location: {
+            display_info: {
+                title: "Set destination location",
+                scan_placeholder: "Scan location",
+            },
+            events: {
+                go_back: "on_back",
+            },
+            on_scan: (scanned) => {
+                $instance.wait_call(
+                    $instance.odoo.call("scan_dest_location", {
+                        picking_id: $instance.state.data.picking.id,
+                        barcode: scanned.text,
                     })
                 );
             },

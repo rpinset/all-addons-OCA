@@ -42,6 +42,7 @@ class PmsFolio(models.Model):
         help="The property for folios",
         comodel_name="pms.property",
         required=True,
+        index=True,
         default=lambda self: self.env.user.get_active_property_ids()[0],
         check_pms_properties=True,
     )
@@ -51,6 +52,7 @@ class PmsFolio(models.Model):
         readonly=False,
         store=True,
         tracking=True,
+        index=True,
         compute="_compute_partner_id",
         comodel_name="res.partner",
         ondelete="restrict",
@@ -114,6 +116,7 @@ class PmsFolio(models.Model):
         string="Company",
         help="The company for folio",
         store=True,
+        index=True,
         comodel_name="res.company",
         compute="_compute_company_id",
     )
@@ -121,6 +124,7 @@ class PmsFolio(models.Model):
         string="Analytic Account",
         help="The analytic account related to a folio.",
         readonly=True,
+        index=True,
         states={"draft": [("readonly", False)], "sent": [("readonly", False)]},
         copy=False,
         comodel_name="account.analytic.account",
@@ -130,6 +134,7 @@ class PmsFolio(models.Model):
         help="The currency of the property location",
         readonly=True,
         required=True,
+        index=True,
         related="pricelist_id.currency_id",
         ondelete="restrict",
     )
@@ -138,6 +143,7 @@ class PmsFolio(models.Model):
         help="Pricelist for current folio.",
         readonly=False,
         store=True,
+        index=True,
         comodel_name="product.pricelist",
         ondelete="restrict",
         check_pms_properties=True,
@@ -199,6 +205,7 @@ class PmsFolio(models.Model):
         comodel_name="res.partner",
         domain=[("is_agency", "=", True)],
         ondelete="restrict",
+        index=True,
         check_pms_properties=True,
     )
     sale_channel_ids = fields.Many2many(
@@ -212,6 +219,7 @@ class PmsFolio(models.Model):
         string="Sale Channel Origin",
         help="Sale Channel through which folio was created, the original",
         comodel_name="pms.sale.channel",
+        index=True,
     )
 
     transaction_ids = fields.Many2many(
@@ -249,6 +257,7 @@ class PmsFolio(models.Model):
         help="Payment terms for current folio.",
         readonly=False,
         store=True,
+        index=True,
         comodel_name="account.payment.term",
         ondelete="restrict",
         compute="_compute_payment_term_id",
@@ -329,11 +338,13 @@ class PmsFolio(models.Model):
         string="Fiscal Position",
         help="The fiscal position depends on the location of the client",
         comodel_name="account.fiscal.position",
+        index=True,
     )
     closure_reason_id = fields.Many2one(
         string="Closure Reason",
         help="The closure reason for a closure room",
         comodel_name="room.closure.reason",
+        index=True,
         check_pms_properties=True,
     )
     out_service_description = fields.Text(
@@ -871,14 +882,16 @@ class PmsFolio(models.Model):
     )
     def _compute_pricelist_id(self):
         for folio in self:
+            is_new = not folio.pricelist_id or isinstance(folio.id, models.NewId)
             if folio.reservation_type in ("out", "staff"):
                 folio.pricelist_id = False
             elif len(folio.reservation_ids.pricelist_id) == 1:
                 folio.pricelist_id = folio.reservation_ids.pricelist_id
-            elif folio.agency_id and folio.agency_id.apply_pricelist:
+            elif is_new and folio.agency_id and folio.agency_id.apply_pricelist:
                 folio.pricelist_id = folio.agency_id.property_product_pricelist
             elif (
-                folio.partner_id
+                is_new
+                and folio.partner_id
                 and folio.partner_id.property_product_pricelist
                 and folio.partner_id.property_product_pricelist.is_pms_available
             ):
@@ -1208,7 +1221,9 @@ class PmsFolio(models.Model):
     def _compute_untaxed_amount_to_invoice(self):
         for folio in self:
             folio.untaxed_amount_to_invoice = sum(
-                folio.mapped("sale_line_ids.untaxed_amount_to_invoice")
+                folio.sale_line_ids.filtered(lambda l: not l.is_downpayment).mapped(
+                    "untaxed_amount_to_invoice"
+                )
             )
 
     # TODO: Add return_ids to depends
@@ -1312,9 +1327,9 @@ class PmsFolio(models.Model):
 
         # REVIEW: Must We ignored services in cancelled folios
         # pending amount?
-        for folio in folios:
-            if folio.state == "cancel":
-                total = total - sum(folio.service_ids.mapped("price_total"))
+        # for folio in folios:
+        #     if folio.state == "cancel":
+        #         total = total - sum(folio.service_ids.mapped("price_total"))
         payment_state = "not_paid"
         if (
             mls
@@ -1371,14 +1386,13 @@ class PmsFolio(models.Model):
     @api.depends("email", "mobile", "partner_name")
     def _compute_possible_existing_customer_ids(self):
         for record in self:
+            record.possible_existing_customer_ids = False
             if record.partner_name:
                 possible_customer = self._apply_possible_existing_customer_ids(
                     record.email, record.mobile, record.partner_id
                 )
                 if possible_customer:
                     record.possible_existing_customer_ids = possible_customer
-                else:
-                    record.possible_existing_customer_ids = False
 
     @api.depends("reservation_ids", "reservation_ids.checkin")
     def _compute_first_checkin(self):
@@ -2111,9 +2125,9 @@ class PmsFolio(models.Model):
             "invoice_line_ids": [],
             "company_id": self.company_id.id,
             "payment_reference": self.name,
-            "fiscal_position_id": self.env["res.partner"]
-            .browse(partner_invoice_id)
-            .property_account_position_id.id,
+            "fiscal_position_id": self.env["account.fiscal.position"]
+            .with_company(self.company_id.id)
+            .get_fiscal_position(partner_invoice_id),
         }
         return invoice_vals
 
@@ -2129,6 +2143,7 @@ class PmsFolio(models.Model):
         partner=False,
         date=False,
         pay_type=False,
+        ref=False,
     ):
         """
         create folio payment
@@ -2137,12 +2152,15 @@ class PmsFolio(models.Model):
         """
         if not pay_type:
             pay_type = journal.type
+
         reference = folio.name
         if folio.external_reference:
             reference += " - " + folio.external_reference
+        if ref and not ref in reference:
+            reference += ": " + ref
         vals = {
             "journal_id": journal.id,
-            "partner_id": partner.id,
+            "partner_id": partner.id if partner else False,
             "amount": amount,
             "date": date or fields.Date.today(),
             "ref": reference,
@@ -2231,11 +2249,11 @@ class PmsFolio(models.Model):
         reference = folio.name
         if folio.external_reference:
             reference += " - " + folio.external_reference
-        if ref:
+        if ref and not ref in reference:
             reference += ": " + ref
         vals = {
             "journal_id": journal.id,
-            "partner_id": partner.id,
+            "partner_id": partner.id if partner else False,
             "amount": amount if amount > 0 else -amount,
             "date": date or fields.Date.today(),
             "ref": reference,

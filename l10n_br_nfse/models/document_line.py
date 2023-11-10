@@ -22,7 +22,7 @@ class DocumentLine(models.Model):
 
     @api.onchange("product_id")
     def _onchange_product_id_fiscal(self):
-        result = super(DocumentLine, self)._onchange_product_id_fiscal()
+        result = super()._onchange_product_id_fiscal()
         if self.product_id and self.product_id.fiscal_deductions_value:
             self.fiscal_deductions_value = self.product_id.fiscal_deductions_value
         return result
@@ -30,7 +30,7 @@ class DocumentLine(models.Model):
     def _compute_taxes(self, taxes, cst=None):
         discount_value = self.discount_value
         self.discount_value += self.fiscal_deductions_value
-        res = super(DocumentLine, self)._compute_taxes(taxes, cst)
+        res = super()._compute_taxes(taxes, cst)
         self.discount_value = discount_value
         return res
 
@@ -38,9 +38,7 @@ class DocumentLine(models.Model):
     def fields_view_get(
         self, view_id=None, view_type="form", toolbar=False, submenu=False
     ):
-        model_view = super(DocumentLine, self).fields_view_get(
-            view_id, view_type, toolbar, submenu
-        )
+        model_view = super().fields_view_get(view_id, view_type, toolbar, submenu)
 
         if view_type == "form":
             try:
@@ -70,7 +68,7 @@ class DocumentLine(models.Model):
 
     def prepare_line_servico(self):
         return {
-            "valor_servicos": round(self.fiscal_price, 2),
+            "valor_servicos": round(self.amount_total, 2),
             "valor_deducoes": round(self.fiscal_deductions_value, 2),
             "valor_pis": round(self.pis_value, 2) or round(self.pis_wh_value, 2),
             "valor_pis_retido": round(self.pis_wh_value, 2),
@@ -83,7 +81,7 @@ class DocumentLine(models.Model):
             "valor_ir_retido": round(self.irpj_wh_value, 2),
             "valor_csll": round(self.csll_value, 2) or round(self.csll_wh_value, 2),
             "valor_csll_retido": round(self.csll_wh_value, 2),
-            "iss_retido": "1" if self.issqn_wh_value else "2",
+            "iss_retido": "1" if self.issqn_wh_percent else "2",
             "valor_iss": round(self.issqn_value, 2),
             "valor_iss_retido": round(self.issqn_wh_value, 2),
             "outras_retencoes": round(self.other_retentions_value, 2),

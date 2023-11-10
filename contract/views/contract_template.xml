@@ -44,7 +44,7 @@
                             <field name="product_id" />
                             <field name="name" widget="section_and_note_text" />
                             <field name="quantity" />
-                            <field name="uom_id" />
+                            <field name="uom_id" groups="uom.group_uom" />
                             <field
                                 name="automatic_price"
                                 attrs="{'column_invisible': [('parent.contract_type','=','purchase')]}"
@@ -54,7 +54,11 @@
                                 attrs="{'readonly': [('automatic_price', '=', True)]}"
                             />
                             <field name="specific_price" invisible="1" />
-                            <field name="discount" groups="base.group_no_one" />
+                            <field
+                                name="discount"
+                                groups="product.group_discount_per_so_line"
+                                optional="show"
+                            />
                             <field name="price_subtotal" />
                             <field name="recurring_rule_type" invisible="1" />
                             <field name="recurring_interval" invisible="1" />
@@ -68,6 +72,8 @@
                 >
                     <p> <strong>#START#</strong>: Start date of the invoiced period</p>
                     <p> <strong>#END#</strong>: End date of the invoiced period</p>
+                    <p> <strong
+                        >#INVOICEMONTHNAME#</strong>: Invoice month name of the invoiced period</p>
                 </group>
             </form>
         </field>

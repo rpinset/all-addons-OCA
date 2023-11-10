@@ -67,6 +67,7 @@ export const reception_states = function () {
             },
             events: {
                 cancel_picking_line: "on_cancel",
+                select: "on_select",
             },
             on_scan: (barcode) => {
                 this.wait_call(
@@ -80,6 +81,13 @@ export const reception_states = function () {
                 this.wait_call(
                     this.odoo.call("done_action", {
                         picking_id: this.state.data.picking.id,
+                    })
+                );
+            },
+            on_select: (selected) => {
+                this.wait_call(
+                    this.odoo.call("manual_select_move", {
+                        move_id: selected.id,
                     })
                 );
             },
@@ -175,7 +183,7 @@ export const reception_states = function () {
                         selected_line_id: this.line_being_handled.id,
                         quantity: this.scan_destination_qty,
                         barcode: barcode.text,
-                        confirmation: true,
+                        confirmation: this.state.data.confirmation_required,
                     })
                 );
             },
@@ -217,7 +225,7 @@ export const reception_states = function () {
                 );
             },
             on_back: () => {
-                this.state_to("set_lot");
+                this.state_to("select_move");
                 this.reset_notification();
             },
         },

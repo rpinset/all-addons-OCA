@@ -8,6 +8,7 @@ import base64
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools import float_compare
 
 
 class AccountPaymentOrder(models.Model):
@@ -144,6 +145,15 @@ class AccountPaymentOrder(models.Model):
         compute="_compute_move_count", string="Number of Journal Entries"
     )
     description = fields.Char()
+    allow_past_date = fields.Boolean(
+        string="Allow date in the past",
+        help=(
+            "When checked, the Payment Date won't fast-forward to today "
+            "and will instead remain the scheduled date"
+        ),
+        readonly=True,
+        states={"draft": [("readonly", False)]},
+    )
 
     @api.depends("payment_mode_id")
     def _compute_allowed_journal_ids(self):
@@ -186,7 +196,7 @@ class AccountPaymentOrder(models.Model):
         today = fields.Date.context_today(self)
         for order in self:
             if order.date_scheduled:
-                if order.date_scheduled < today:
+                if not order.allow_past_date and order.date_scheduled < today:
                     raise ValidationError(
                         _(
                             "On payment order %s, the Payment Execution Date "
@@ -289,9 +299,13 @@ class AccountPaymentOrder(models.Model):
             order.payment_ids.action_cancel()
             order.payment_ids.unlink()
             # Prepare account payments from the payment lines
+            payline_err_text = []
             group_paylines = {}  # key = hashcode
             for payline in order.payment_line_ids:
-                payline.draft2open_payment_line_check()
+                try:
+                    payline.draft2open_payment_line_check()
+                except UserError as e:
+                    payline_err_text.append(e.args[0])
                 # Compute requested payment date
                 if order.date_prefered == "due":
                     requested_date = payline.ml_maturity_date or payline.date or today
@@ -299,9 +313,9 @@ class AccountPaymentOrder(models.Model):
                     requested_date = order.date_scheduled or today
                 else:
                     requested_date = today
-                # No payment date in the past
-                if requested_date < today:
-                    requested_date = today
+                # No payment date in the past unless allowed
+                if not order.allow_past_date:
+                    requested_date = max(today, requested_date)
                 # inbound: check option no_debit_before_maturity
                 if (
                     order.payment_type == "inbound"
@@ -309,7 +323,7 @@ class AccountPaymentOrder(models.Model):
                     and payline.ml_maturity_date
                     and requested_date < payline.ml_maturity_date
                 ):
-                    raise UserError(
+                    payline_err_text.append(
                         _(
                             "The payment mode '%s' has the option "
                             "'Disallow Debit Before Maturity Date'. The "
@@ -331,11 +345,11 @@ class AccountPaymentOrder(models.Model):
                 with self.env.norecompute():
                     payline.date = requested_date
                 # Group options
-                if order.payment_mode_id.group_lines:
-                    hashcode = payline.payment_line_hashcode()
-                else:
-                    # Use line ID as hascode, which actually means no grouping
-                    hashcode = payline.id
+                hashcode = (
+                    payline.payment_line_hashcode()
+                    if order.payment_mode_id.group_lines
+                    else payline.id
+                )
                 if hashcode in group_paylines:
                     group_paylines[hashcode]["paylines"] += payline
                     group_paylines[hashcode]["total"] += payline.amount_currency
@@ -344,6 +358,13 @@ class AccountPaymentOrder(models.Model):
                         "paylines": payline,
                         "total": payline.amount_currency,
                     }
+            # Raise errors that happened on the validation process
+            if payline_err_text:
+                raise UserError(
+                    _("There's at least one validation error:\n")
+                    + "\n".join(payline_err_text)
+                )
+
             order.recompute()
             # Create account payments
             payment_vals = []
@@ -407,15 +428,50 @@ class AccountPaymentOrder(models.Model):
         return action
 
     def generated2uploaded(self):
+        """Post payments and reconcile against source journal items
+
+        Partially reconcile payments that don't match their source journal items,
+        then reconcile the rest in one go.
+        """
         self.payment_ids.action_post()
         # Perform the reconciliation of payments and source journal items
         for payment in self.payment_ids:
-            (
-                payment.payment_line_ids.move_line_id
-                + payment.move_id.line_ids.filtered(
-                    lambda x: x.account_id == payment.destination_account_id
-                )
-            ).reconcile()
+            payment_move_line_id = payment.move_id.line_ids.filtered(
+                lambda x: x.account_id == payment.destination_account_id
+            )
+            apr = self.env["account.partial.reconcile"]
+            excl_pay_lines = self.env["account.payment.line"]
+            for line in payment.payment_line_ids:
+                if not line.move_line_id:
+                    continue
+                sign = -1 if payment.payment_order_id.payment_type == "outbound" else 1
+                if (
+                    float_compare(
+                        line.amount_currency,
+                        (line.move_line_id.amount_residual_currency * sign),
+                        precision_rounding=line.move_line_id.currency_id.rounding,
+                    )
+                    != 0
+                ):
+                    if line.move_line_id.amount_residual_currency < 0:
+                        debit_move_id = payment_move_line_id.id
+                        credit_move_id = line.move_line_id.id
+                    else:
+                        debit_move_id = line.move_line_id.id
+                        credit_move_id = payment_move_line_id.id
+                    apr.create(
+                        {
+                            "debit_move_id": debit_move_id,
+                            "credit_move_id": credit_move_id,
+                            "amount": abs(line.amount_company_currency),
+                            "debit_amount_currency": abs(line.amount_currency),
+                            "credit_amount_currency": abs(line.amount_currency),
+                        }
+                    )
+                    excl_pay_lines |= line
+            pay_lines = payment.payment_line_ids - excl_pay_lines
+            if pay_lines:
+                (pay_lines.move_line_id + payment_move_line_id).reconcile()
         self.write(
             {"state": "uploaded", "date_uploaded": fields.Date.context_today(self)}
         )

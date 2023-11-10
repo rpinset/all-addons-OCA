@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-06 16:30+0000\n"
-"Last-Translator: Sebastiano Picchi <sebapicchi@yahoo.it>\n"
+"PO-Revision-Date: 2023-05-17 14:35+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Presenza"
 #. module: hr_attendance_modification_tracking
 #: model:ir.model,name:hr_attendance_modification_tracking.model_hr_employee_base
 msgid "Basic Employee"
-msgstr "Dipendende Base"
+msgstr "Dipendente base"
 
 #. module: hr_attendance_modification_tracking
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_attendance__check_in
@@ -42,7 +42,7 @@ msgstr "Dipendende Base"
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_employee_base__last_check_in
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_employee_public__last_check_in
 msgid "Check In"
-msgstr "Ingresso"
+msgstr "Check-in"
 
 #. module: hr_attendance_modification_tracking
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_attendance__check_out
@@ -50,7 +50,7 @@ msgstr "Ingresso"
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_employee_base__last_check_out
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_employee_public__last_check_out
 msgid "Check Out"
-msgstr "Uscita"
+msgstr "Check-out"
 
 #. module: hr_attendance_modification_tracking
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_attendance__display_name
@@ -92,7 +92,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: hr_attendance_modification_tracking
 #: model:ir.model.fields,help:hr_attendance_modification_tracking.field_hr_attendance__message_has_error
-#: model:ir.model.fields,help:hr_attendance_modification_tracking.field_hr_attendance__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -153,11 +152,6 @@ msgid "Open"
 msgstr "Apri"
 
 #. module: hr_attendance_modification_tracking
-#: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_attendance__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: hr_attendance_modification_tracking
 #: model:ir.model.fields,help:hr_attendance_modification_tracking.field_hr_attendance__time_changed_manually
 msgid ""
 "This attendance has been manually changed by user. If attendance is created "
@@ -185,3 +179,6 @@ msgstr "Messaggi non letti"
 #: model:ir.model.fields,field_description:hr_attendance_modification_tracking.field_hr_attendance__message_unread_counter
 msgid "Unread Messages Counter"
 msgstr "Numero messaggi non letti"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"

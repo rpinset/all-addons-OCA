@@ -8,61 +8,62 @@ from .common import TestPms
 
 
 class TestPmsBookingEngine(TestPms):
-    def setUp(self):
-        super().setUp()
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
         # CREATION OF ROOM TYPE (WITH ROOM TYPE CLASS)
-        self.test_room_type_double = self.env["pms.room.type"].create(
+        cls.test_room_type_double = cls.env["pms.room.type"].create(
             {
-                "pms_property_ids": [self.pms_property1.id],
+                "pms_property_ids": [cls.pms_property1.id],
                 "name": "Double Test",
                 "default_code": "DBL_Test",
-                "class_id": self.room_type_class1.id,
+                "class_id": cls.room_type_class1.id,
                 "list_price": 40.0,
             }
         )
 
         # pms.room
-        self.test_room1_double = self.env["pms.room"].create(
+        cls.test_room1_double = cls.env["pms.room"].create(
             {
-                "pms_property_id": self.pms_property1.id,
+                "pms_property_id": cls.pms_property1.id,
                 "name": "Double 201 test",
-                "room_type_id": self.test_room_type_double.id,
+                "room_type_id": cls.test_room_type_double.id,
                 "capacity": 2,
             }
         )
 
         # pms.room
-        self.test_room2_double = self.env["pms.room"].create(
+        cls.test_room2_double = cls.env["pms.room"].create(
             {
-                "pms_property_id": self.pms_property1.id,
+                "pms_property_id": cls.pms_property1.id,
                 "name": "Double 202 test",
-                "room_type_id": self.test_room_type_double.id,
+                "room_type_id": cls.test_room_type_double.id,
                 "capacity": 2,
             }
         )
 
         # pms.room
-        self.test_room3_double = self.env["pms.room"].create(
+        cls.test_room3_double = cls.env["pms.room"].create(
             {
-                "pms_property_id": self.pms_property1.id,
+                "pms_property_id": cls.pms_property1.id,
                 "name": "Double 203 test",
-                "room_type_id": self.test_room_type_double.id,
+                "room_type_id": cls.test_room_type_double.id,
                 "capacity": 2,
             }
         )
 
         # pms.room
-        self.test_room4_double = self.env["pms.room"].create(
+        cls.test_room4_double = cls.env["pms.room"].create(
             {
-                "pms_property_id": self.pms_property1.id,
+                "pms_property_id": cls.pms_property1.id,
                 "name": "Double 204 test",
-                "room_type_id": self.test_room_type_double.id,
+                "room_type_id": cls.test_room_type_double.id,
                 "capacity": 2,
             }
         )
 
         # res.partner
-        self.partner_id = self.env["res.partner"].create(
+        cls.partner_id = cls.env["res.partner"].create(
             {
                 "name": "Miguel",
                 "mobile": "654667733",
@@ -71,7 +72,7 @@ class TestPmsBookingEngine(TestPms):
         )
 
         # pms.sale.channel
-        self.sale_channel_direct1 = self.env["pms.sale.channel"].create(
+        cls.sale_channel_direct1 = cls.env["pms.sale.channel"].create(
             {
                 "name": "Door",
                 "channel_type": "direct",
@@ -736,7 +737,7 @@ class TestPmsBookingEngine(TestPms):
         self.assertEqual(room_type_plan_avail, 0, "Quota not applied in Wizard Folio")
 
     @freeze_time("2015-05-05")
-    def _test_price_total_with_board_service(self):
+    def test_price_total_with_board_service(self):
         """
         In booking engine when in availability results choose a room or several
         and also choose a board service, the total price is calculated from price of the room,
@@ -807,7 +808,7 @@ class TestPmsBookingEngine(TestPms):
         room_price = self.test_room_type_double.list_price
         days = (checkout - checkin).days
         board_service_price = self.board_service_test.amount
-        room_capacity = self.test_room_type_double.get_capacity()
+        room_capacity = self.test_room_type_double.get_room_type_capacity(self.pms_property1.id)
         expected_price = room_price * days + (
             board_service_price * room_capacity * days
         )
@@ -984,3 +985,23 @@ class TestPmsBookingEngine(TestPms):
             1,
             "Reservations of folio are incorrect",
         )
+
+    def test_adding_board_services_are_saved_on_lines(self):
+        checkin = fields.date.today()
+        checkout = fields.date.today() + datetime.timedelta(days=1)
+
+        booking_engine = self.env["pms.booking.engine"].create(
+            {
+                "start_date": checkin,
+                "end_date": checkout,
+                "partner_id": self.partner_id.id,
+                "pricelist_id": self.pricelist1.id,
+                "pms_property_id": self.pms_property1.id,
+                "channel_type_id": self.sale_channel_direct1.id,
+            }
+        )
+        lines_availability_test_double = booking_engine.availability_results.filtered(
+            lambda r: r.room_type_id.id == self.test_room_type_double.id
+        )
+        lines_availability_test_double
+        self.assertTrue(False)

@@ -26,7 +26,7 @@ const Reception = {
                 :handler_to_update_date="get_expiration_date_from_lot"
                 v-on:date_picker_selected="state.on_date_picker_selected"
             />
-            <template v-if="state_in(['select_move', 'set_lot', 'set_quantity', 'set_destination'])">
+            <template v-if="state_is('select_move')">
                 <item-detail-card
                     :record="state.data.picking"
                     :options="operation_options()"
@@ -71,13 +71,12 @@ const Reception = {
                 </div>
             </template>
             <template v-if="state_is('select_move')">
-                <item-detail-card
-                    v-for="record in ordered_moves"
-                    :card_color="move_card_color(record)"
-                    :record="record"
+                <manual-select
+                    :card_color="utils.colors.color_for('screen_step_done')"
+                    :records="ordered_moves"
                     :options="picking_detail_options_for_select_move()"
-                    :key="make_state_component_key(['reception-moves-select-move', record.id])"
-                />
+                    :key="make_state_component_key(['reception', 'manual-select-move'])"
+                 />
                 <div class="button-list button-vertical-list full">
                     <v-row align="center">
                         <v-col class="text-center" cols="12">
@@ -252,19 +251,32 @@ const Reception = {
                 identifier: data.picking.name,
             };
         },
+        picking_display_fields: function () {
+            return [
+                {path: "origin", label: "Source Document"},
+                {path: "partner.name", label: "Partner"},
+                {path: "carrier"},
+                {
+                    path: "scheduled_date",
+                    renderer: (rec, field) => {
+                        return (
+                            "Scheduled Date: " +
+                            this.utils.display.render_field_date(rec, field)
+                        );
+                    },
+                },
+            ];
+        },
         operation_options: function () {
             return {
                 title_action_field: {action_val_path: "name"},
-                fields: [
-                    {
-                        path: "origin",
-                        renderer: (rec, field) => {
-                            return rec.origin + " - " + rec.partner.name;
-                        },
-                    },
-                    {path: "carrier"},
-                ],
+                fields: this.picking_display_fields(),
             };
+        },
+        select_document_display_fields: function () {
+            var fields = this.picking_display_fields();
+            fields.push({path: "move_line_count", label: "Lines"});
+            return fields;
         },
         manual_select_options_for_select_document: function (today_only = false) {
             return {
@@ -277,17 +289,10 @@ const Reception = {
                 list_item_options: {
                     key_title: "name",
                     loud_title: true,
-                    fields: [
-                        {path: "origin", action_val_path: "name"},
-                        {path: "carrier"},
-                        {
-                            path: "scheduled_date",
-                            renderer: (rec, field) => {
-                                return this.utils.display.render_field_date(rec, field);
-                            },
-                        },
-                        {path: "move_line_count", label: "Lines"},
-                    ],
+                    title_action_field: {
+                        action_val_path: "name",
+                    },
+                    fields: this.select_document_display_fields(),
                 },
             };
         },
@@ -338,24 +343,33 @@ const Reception = {
                 ],
             };
         },
-        picking_detail_options_for_select_move: function () {
+        picking_detail_options_for_select_move: function (move) {
             return {
-                key_title: "product.display_name",
-                fields: [
-                    {
-                        path: "product.barcode",
-                        label: "Barcode",
+                show_title: true,
+                showActions: false,
+                list_item_options: {
+                    loud_title: true,
+                    title_action_field: {
+                        action_val_path: "name",
                     },
-                    {
-                        path: "product.supplier_code",
-                        label: "Vendor code",
-                    },
-                    {
-                        path: "quantity_done",
-                        label: "Qty done",
-                        display_no_value: true,
-                    },
-                ],
+                    list_item_klass_maker: this.move_card_color,
+                    key_title: "product.display_name",
+                    fields: [
+                        {
+                            path: "product.barcode",
+                            label: "Barcode",
+                        },
+                        {
+                            path: "product.supplier_code",
+                            label: "Vendor code",
+                        },
+                        {
+                            path: "quantity_done",
+                            label: "Qty done",
+                            display_no_value: true,
+                        },
+                    ],
+                },
             };
         },
         picking_detail_options_for_set_destination: function () {
@@ -390,13 +404,27 @@ const Reception = {
                 ],
             };
         },
+        select_dest_package_display_name_values: function (rec) {
+            var values = [];
+            if (rec.origin) {
+                values.push(rec.origin);
+            }
+            if (rec.partner.name) {
+                values.push(rec.partner.name);
+            }
+            return values;
+        },
+        select_dest_package_display_name: function (rec) {
+            var values = this.select_dest_package_display_name_values();
+            return values.join(" - ");
+        },
         picking_detail_options_for_select_dest_package: function () {
             return {
                 fields: [
                     {
                         path: "origin",
                         renderer: (rec, field) => {
-                            return rec.origin + " - " + rec.partner.name;
+                            return this.select_dest_package_display_name(rec);
                         },
                     },
                 ],

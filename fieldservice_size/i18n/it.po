@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* fieldservice_size
+# 	* fieldservice_size
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-03-06 16:17+0000\n"
+"PO-Revision-Date: 2023-10-13 10:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_size
 #: model_terms:ir.actions.act_window,help:fieldservice_size.action_fsm_size
@@ -34,6 +34,7 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: fieldservice_size
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location__display_name
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location_size__display_name
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_size__display_name
 msgid "Display Name"
@@ -60,7 +61,9 @@ msgid "Field Service Sizes"
 msgstr "Dimensioni assistenza sul campo"
 
 #. module: fieldservice_size
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location__id
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location_size__id
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_order__id
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_size__id
 msgid "ID"
 msgstr "ID"
@@ -71,7 +74,9 @@ msgid "Is the Order Size?"
 msgstr "È la dimensione dell'ordine?"
 
 #. module: fieldservice_size
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location____last_update
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_location_size____last_update
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_order____last_update
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_size____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
@@ -104,15 +109,20 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: fieldservice_size
-#: code:addons/fieldservice_size/models/fsm_size.py:30
+#: code:addons/fieldservice_size/models/fsm_size.py:0
 #, python-format
 msgid "Only one default order size per type is allowed."
 msgstr "È consentita una sola dimensione ordine predefinita per tipo."
 
 #. module: fieldservice_size
-#: sql_constraint:fsm.location.size:0
+#: model:ir.model.constraint,message:fieldservice_size.constraint_fsm_location_size_one_size_per_location
 msgid "Only one size of same type allowed per location"
 msgstr "È consentita una sola dimensione per tipo per località"
+
+#. module: fieldservice_size
+#: model:ir.model.fields,field_description:fieldservice_size.field_fsm_order__display_name
+msgid "Order"
+msgstr "Ordine"
 
 #. module: fieldservice_size
 #: model:ir.model.fields,field_description:fieldservice_size.field_fsm_order__size_value
@@ -148,14 +158,13 @@ msgid "Size for FSM Location"
 msgstr "Dimensione per località FSM"
 
 #. module: fieldservice_size
-#: sql_constraint:fsm.size:0
+#: model:ir.model.constraint,message:fieldservice_size.constraint_fsm_size_name_uniq
 msgid "Size name already exists!"
 msgstr "Il nome dimensione esiste già!"
 
 #. module: fieldservice_size
 #: model:ir.ui.menu,name:fieldservice_size.menu_fsm_size
 #: model_terms:ir.ui.view,arch_db:fieldservice_size.fsm_location_form_view_inherit_size
-#: model_terms:ir.ui.view,arch_db:fieldservice_size.fsm_size_tree_view
 msgid "Sizes"
 msgstr "Dimensioni"
 

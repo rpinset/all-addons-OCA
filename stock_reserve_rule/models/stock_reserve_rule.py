@@ -133,6 +133,7 @@ class StockReserveRuleRemoval(models.Model):
             ("default", "Default Removal Strategy"),
             ("empty_bin", "Empty Bins"),
             ("packaging", "Full Packaging"),
+            ("full_bin", "Full Bin"),
         ],
         required=True,
         default="default",
@@ -142,7 +143,8 @@ class StockReserveRuleRemoval(models.Model):
         "Empty Bins: take goods from a location only if the bin is"
         " empty afterwards.\n"
         "Full Packaging: take goods from a location only if the location "
-        "quantity matches a packaging quantity (do not open boxes).",
+        "quantity matches a packaging quantity (do not open boxes).\n"
+        "Full Bin: take goods from a location if it reserves all its content",
     )
 
     packaging_type_ids = fields.Many2many(
@@ -195,7 +197,7 @@ class StockReserveRuleRemoval(models.Model):
         each time the strategy decides to take quantities in a location,
         it has to yield and retrieve the remaining needed using:
 
-            need = yield location, location_quantity, quantity_to_take
+            need = yield location, location_quantity, quantity_to_take, lot, owner
 
         See '_apply_strategy_default' for a short example.
 
@@ -212,6 +214,8 @@ class StockReserveRuleRemoval(models.Model):
                 quant.location_id,
                 quant.quantity - quant.reserved_quantity,
                 need,
+                quant.lot_id,
+                quant.owner_id,
             )
 
     def _apply_strategy_empty_bin(self, quants):
@@ -247,7 +251,7 @@ class StockReserveRuleRemoval(models.Model):
                 continue
 
             if float_compare(need, location_quantity, rounding) != -1:
-                need = yield location, location_quantity, need
+                need = yield location, location_quantity, need, None, None
 
     def _apply_strategy_packaging(self, quants):
         need = yield
@@ -293,4 +297,39 @@ class StockReserveRuleRemoval(models.Model):
                 if enough_for_packaging and asked_at_least_packaging_qty:
                     # compute how much packaging we can get
                     take = (need // pack_quantity) * pack_quantity
-                    need = yield location, location_quantity, take
+                    need = yield location, location_quantity, take, None, None
+
+    def _apply_strategy_full_bin(self, quants):
+        need = yield
+        # Only location with nothing reserved can be fully emptied
+        quants = quants.filtered(lambda q: q.reserved_quantity == 0)
+        # Group by location (in this removal strategies, we want to consider
+        # the total quantity held in a location).
+        quants_per_bin = quants._group_by_location()
+        # We take goods only if we empty the bin.
+        # The original ordering (fefo, fifo, ...) must be kept.
+        product = fields.first(quants).product_id
+        rounding = product.uom_id.rounding
+        locations_with_other_quants = [
+            group["location_id"][0]
+            for group in quants.read_group(
+                [
+                    ("location_id", "in", quants.location_id.ids),
+                    ("product_id", "not in", quants.product_id.ids),
+                    ("quantity", ">", 0),
+                ],
+                ["location_id"],
+                "location_id",
+            )
+        ]
+        for location, location_quants in quants_per_bin:
+            if location.id in locations_with_other_quants:
+                continue
+
+            location_quantity = sum(location_quants.mapped("quantity"))
+
+            if location_quantity <= 0:
+                continue
+
+            if float_compare(need, location_quantity, rounding) != -1:
+                need = yield location, location_quantity, need, None, None

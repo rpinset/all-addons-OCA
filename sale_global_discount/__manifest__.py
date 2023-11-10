@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Sale Global Discount",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.1",
     "category": "Sales Management",
     "author": "Tecnativa," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-workflow",
@@ -12,4 +12,5 @@
     "data": ["views/sale_order_views.xml", "views/report_sale_order.xml"],
     "application": False,
     "installable": True,
+    "pre_init_hook": "_pre_init_global_discount_fields",
 }

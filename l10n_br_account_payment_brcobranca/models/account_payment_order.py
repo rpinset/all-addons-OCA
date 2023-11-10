@@ -9,6 +9,7 @@ import logging
 import tempfile
 
 import requests
+from erpbrasil.base import misc
 
 from odoo import _, fields, models
 from odoo.exceptions import Warning as ValidationError
@@ -20,11 +21,6 @@ from ..constants.br_cobranca import (
 )
 
 _logger = logging.getLogger(__name__)
-
-try:
-    from erpbrasil.base import misc
-except ImportError:
-    _logger.error("Biblioteca erpbrasil.base não instalada")
 
 
 class PaymentOrder(models.Model):
@@ -60,7 +56,6 @@ class PaymentOrder(models.Model):
         remessa_values["codigo_beneficiario"] = int(self.payment_mode_id.code_convetion)
 
     def _prepare_remessa_sicredi_240(self, remessa_values):
-
         bank_account_id = self.journal_id.bank_account_id
         remessa_values.update(
             {
@@ -135,7 +130,7 @@ class PaymentOrder(models.Model):
             )
 
         pagamentos = []
-        for line in self.bank_line_ids:
+        for line in self.payment_line_ids:
             pagamentos.append(line.prepare_bank_payment_line(bank_brcobranca))
 
         remessa_values = {
@@ -158,7 +153,7 @@ class PaymentOrder(models.Model):
             if bank_method:
                 bank_method(remessa_values)
         except Exception:
-            _logger.warning("can't generate paymeny file")
+            pass
 
         remessa = self._get_brcobranca_remessa(
             bank_brcobranca, remessa_values, cnab_type
@@ -167,7 +162,6 @@ class PaymentOrder(models.Model):
         return remessa, self.get_file_name(cnab_type)
 
     def _get_brcobranca_remessa(self, bank_brcobranca, remessa_values, cnab_type):
-
         content = json.dumps(remessa_values)
         f = open(tempfile.mktemp(), "w")
         f.write(content)

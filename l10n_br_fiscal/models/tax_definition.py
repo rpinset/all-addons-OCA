@@ -4,6 +4,7 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
+from .. import tools
 from ..constants.fiscal import (
     FINAL_CUSTOMER,
     FISCAL_IN_OUT,
@@ -11,7 +12,6 @@ from ..constants.fiscal import (
     OPERATION_STATE,
     OPERATION_STATE_DEFAULT,
 )
-from ..tools import misc
 
 
 class TaxDefinition(models.Model):
@@ -76,7 +76,7 @@ class TaxDefinition(models.Model):
         string="CST",
         readonly=True,
         domain="[('cst_type', 'in', (type_in_out, 'all')), "
-        "('tax_domain', '=', tax_domain)]",
+        "('tax_group_id', '=', tax_group_id)]",
     )
 
     cst_code = fields.Char(
@@ -235,8 +235,19 @@ class TaxDefinition(models.Model):
     ipi_guideline_id = fields.Many2one(
         comodel_name="l10n_br_fiscal.tax.ipi.guideline",
         string="IPI Guideline",
-        domain="['|', ('cst_in_id', '=', cst_id)," "('cst_out_id', '=', cst_id)]",
+        domain="['|', ('cst_in_id', '=', cst_id), ('cst_out_id', '=', cst_id)]",
     )
+
+    def _get_search_domain(self, tax_definition):
+        """Create domain to be used in contraints methods"""
+        domain = [
+            ("id", "!=", tax_definition.id),
+            ("state_from_id", "=", tax_definition.state_from_id.id),
+            ("state_to_ids", "in", tax_definition.state_to_ids.ids),
+            ("tax_group_id", "=", tax_definition.tax_group_id.id),
+            ("tax_id", "=", tax_definition.tax_id.id),
+        ]
+        return domain
 
     def action_review(self):
         self.write({"state": "review"})
@@ -248,7 +259,7 @@ class TaxDefinition(models.Model):
         self.write({"state": "draft"})
 
     def unlink(self):
-        operations = self.filtered(lambda l: l.state == "approved")
+        operations = self.filtered(lambda line: line.state == "approved")
         if operations:
             raise UserError(
                 _("You cannot delete an Tax Definition which is not draft !")
@@ -261,15 +272,15 @@ class TaxDefinition(models.Model):
             domain = []
 
             if r.ncms:
-                domain += misc.domain_field_codes(r.ncms)
+                domain += tools.domain_field_codes(r.ncms)
 
             if r.not_in_ncms:
-                domain += misc.domain_field_codes(
+                domain += tools.domain_field_codes(
                     field_codes=r.not_in_ncms, operator1="!=", operator2="not ilike"
                 )
 
             if r.ncm_exception:
-                domain += misc.domain_field_codes(
+                domain += tools.domain_field_codes(
                     field_codes=r.ncm_exception, field_name="exception", code_size=2
                 )
 
@@ -284,7 +295,7 @@ class TaxDefinition(models.Model):
             domain = []
 
             if r.cests:
-                domain += misc.domain_field_codes(r.cests, code_size=7)
+                domain += tools.domain_field_codes(r.cests, code_size=7)
 
             if domain:
                 r.cest_ids = cest.search(domain)
@@ -297,10 +308,10 @@ class TaxDefinition(models.Model):
             domain = []
 
             if r.nbms:
-                domain += misc.domain_field_codes(r.nbms, code_size=10)
+                domain += tools.domain_field_codes(r.nbms, code_size=10)
 
             if r.not_in_nbms:
-                domain += misc.domain_field_codes(
+                domain += tools.domain_field_codes(
                     field_codes=r.not_in_nbms,
                     operator1="!=",
                     operator2="not ilike",
@@ -350,7 +361,6 @@ class TaxDefinition(models.Model):
         cest=None,
         city_taxation_code=None,
     ):
-
         if not ncm:
             ncm = product.ncm_id
 

@@ -1,16 +1,10 @@
 # © 2016 KMEE INFORMATICA LTDA (https://kmee.com.br)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-import logging
+
+from erpbrasil.base.fiscal import cnpj_cpf
 
 from odoo import api, models
-
-_logger = logging.getLogger(__name__)
-
-try:
-    from erpbrasil.base.fiscal import cnpj_cpf
-except ImportError:
-    _logger.error("erpbrasil.base library not installed")
 
 
 class ResPartner(models.Model):
@@ -31,5 +25,5 @@ class ResPartner(models.Model):
         if partner.get("name"):
             partner["legal_name"] = partner["name"]
 
-        res = super(ResPartner, self).create_from_ui(partner)
+        res = super().create_from_ui(partner)
         return res

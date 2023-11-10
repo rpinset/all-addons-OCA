@@ -109,7 +109,7 @@
                     groups="analytic.group_analytic_tags"
                 />
                 <field name="quantity" />
-                <field name="uom_id" />
+                <field name="uom_id" groups="uom.group_uom" />
                 <field name="automatic_price" />
                 <field
                     name="price_unit"
@@ -133,6 +133,7 @@
                 <field name="is_un_cancel_allowed" invisible="1" />
                 <field name="is_auto_renew" invisible="1" />
                 <field name="is_canceled" invisible="1" />
+                <field name="company_id" invisible="1" />
                 <button
                     name="action_plan_successor"
                     title="Plan Start"
@@ -213,7 +214,7 @@
                     groups="analytic.group_analytic_tags"
                 />
                 <field name="quantity" />
-                <field name="uom_id" />
+                <field name="uom_id" groups="uom.group_uom" />
                 <field name="price_unit" />
                 <field name="discount" groups="base.group_no_one" />
                 <field name="price_subtotal" />

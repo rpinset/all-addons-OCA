@@ -102,22 +102,20 @@
                             <label for="name" string="Draft document" />
                         </div>
                         <div attrs="{'invisible': [('name', 'in', [False, ''])]}">
-                            <label for="name" string="Document" />
                             <h1>
+                                <label for="name" string="Document" />
                                 <field
                                     name="name"
                                     class="oe_inline"
                                     attrs="{'readonly': [('can_change_number', '=', False)]}"
                                 />
                             </h1>
-                            <div
-                                attrs="{'invisible': [('type_code', '!=', 'incoming')]}"
-                            >
-                                <label for="name" string="Partner document" />
-                                <h2>
-                                    <field name="partner_ref" class="oe_inline" />
-                                </h2>
-                            </div>
+                        </div>
+                        <div attrs="{'invisible': [('type_code', '!=', 'incoming')]}">
+                            <h2>
+                                <label for="partner_ref" />
+                                <field name="partner_ref" class="oe_inline" />
+                            </h2>
                         </div>
                     </div>
                     <div
@@ -159,7 +157,7 @@
                         <group>
                             <field
                                 name="carrier_id"
-                                domain="[('supplier_rank','>', 0)]"
+                                domain="[('is_carrier','=', True)]"
                             />
                             <field name="delivery_method_id" />
                         </group>
@@ -264,7 +262,6 @@
                                         name="price_unit"
                                         attrs="{'column_invisible': [('parent.show_product_information', '=', False)],
                                                    'readonly': [('sale_line_id', '!=', False)]}"
-                                        sum="Total"
                                     />
                                     <field
                                         name="discount"

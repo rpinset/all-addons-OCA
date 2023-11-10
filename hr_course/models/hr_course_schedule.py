@@ -12,7 +12,7 @@ _logger = logging.getLogger(__name__)
 class HrCourseSchedule(models.Model):
     _name = "hr.course.schedule"
     _description = "Course Schedule"
-    _inherit = "mail.thread"
+    _inherit = ["mail.thread", "mail.activity.mixin"]
 
     name = fields.Char(string="Name", required=True, tracking=True)
     course_id = fields.Many2one("hr.course", string="Course", required=True)
@@ -76,6 +76,7 @@ class HrCourseSchedule(models.Model):
     )
 
     course_expiration_alert_sent = fields.Boolean()
+    note = fields.Text()
 
     @api.model
     def send_course_expiration_notification_email(self):

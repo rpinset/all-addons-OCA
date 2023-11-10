@@ -727,12 +727,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3501152
-#: model:res.partner,nfe40_xMun:l10n_br_base.partner_demo_presumido
-#: model:res.partner,nfe40_xMun:l10n_br_base.partner_demo_simples
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_address_ak3
-#: model:res.partner,nfe40_xMun:l10n_br_base.simples_nacional_partner
-#: model:res.users,nfe40_xMun:l10n_br_base.user_demo_presumido
-#: model:res.users,nfe40_xMun:l10n_br_base.user_demo_simples
 msgid "Alumínio"
 msgstr ""
 
@@ -3555,39 +3549,6 @@ msgid "Brazabrantes"
 msgstr ""
 
 #. module: l10n_br_base
-#: model:res.partner,nfe40_xPais:l10n_br_base.lucro_presumido_partner
-#: model:res.partner,nfe40_xPais:l10n_br_base.partner_demo_presumido
-#: model:res.partner,nfe40_xPais:l10n_br_base.partner_demo_simples
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_address_ak2
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_address_ak3
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_akretion
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_amd
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente10_mg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente11_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente1_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente2_sp
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente3_am
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente4_am
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente5_pe
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente6_pe
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente7_rs
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente8_rs
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_cliente9_mg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_dell
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_infobahia
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_infomanaus
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_intel
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_kmee
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_lg
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_positivo
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_samsungpe
-#: model:res.partner,nfe40_xPais:l10n_br_base.simples_nacional_partner
-#: model:res.users,nfe40_xPais:l10n_br_base.user_demo_presumido
-#: model:res.users,nfe40_xPais:l10n_br_base.user_demo_simples
-msgid "Brazil"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_bank__code_bc
 msgid "Brazilian Bank Code"
 msgstr ""
@@ -6389,6 +6350,11 @@ msgid "Companies"
 msgstr ""
 
 #. module: l10n_br_base
+#: model:ir.model.fields,field_description:l10n_br_base.field_state_tax_numbers__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_account_setup_bank_manual_config__company_country_id
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner_bank__company_country_id
 msgid "Company Country"
@@ -7364,7 +7330,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4106902
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_positivo
 msgid "Curitiba"
 msgstr ""
 
@@ -8477,9 +8442,9 @@ msgid "Espírito Santo do Turvo"
 msgstr ""
 
 #. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
+#: code:addons/l10n_br_base/tools.py:0
 #, python-format
-msgid "Estadual Inscription Invalid !"
+msgid "Estadual Inscription {} Invalid for State {}!"
 msgstr ""
 
 #. module: l10n_br_base
@@ -10293,6 +10258,11 @@ msgid "ID"
 msgstr ""
 
 #. module: l10n_br_base
+#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
+msgid "IE"
+msgstr ""
+
+#. module: l10n_br_base
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_bank__ispb_number
 msgid "ISPB Number"
 msgstr ""
@@ -10988,12 +10958,6 @@ msgid "Inocência"
 msgstr ""
 
 #. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
-#, python-format
-msgid "Invalid State Tax Number!"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4110201
 msgid "Inácio Martins"
 msgstr ""
@@ -11545,9 +11509,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3132404
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente10_mg
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente9_mg
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_kmee
 msgid "Itajubá"
 msgstr ""
 
@@ -14303,10 +14264,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_1302603
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente3_am
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente4_am
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_infomanaus
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_lg
 msgid "Manaus"
 msgstr ""
 
@@ -17614,11 +17571,6 @@ msgid "Paquetá"
 msgstr ""
 
 #. module: l10n_br_base
-#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
-msgid "Para ISENTO deixe vazio ou escreva 'ISENTO'"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3303609
 msgid "Paracambi"
 msgstr ""
@@ -19403,9 +19355,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_4314902
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente7_rs
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente8_rs
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_dell
 msgid "Porto Alegre"
 msgstr ""
 
@@ -20304,9 +20253,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2611606
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente5_pe
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente6_pe
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_samsungpe
 msgid "Recife"
 msgstr ""
 
@@ -20910,7 +20856,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3304557
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_address_ak2
 msgid "Rio de Janeiro"
 msgstr ""
 
@@ -21379,7 +21324,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2927408
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_infobahia
 msgid "Salvador"
 msgstr ""
 
@@ -23357,7 +23301,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_partner__inscr_est
 #: model:ir.model.fields,field_description:l10n_br_base.field_res_users__inscr_est
 #: model:ir.model.fields,field_description:l10n_br_base.field_state_tax_numbers__inscr_est
-#: model_terms:ir.ui.view,arch_db:l10n_br_base.l10n_br_base_partner_form
 msgid "State Tax Number"
 msgstr ""
 
@@ -24766,13 +24709,6 @@ msgstr ""
 
 #. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_3550308
-#: model:res.partner,nfe40_xMun:l10n_br_base.lucro_presumido_partner
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_akretion
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_amd
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente11_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente1_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_cliente2_sp
-#: model:res.partner,nfe40_xMun:l10n_br_base.res_partner_intel
 msgid "São Paulo"
 msgstr ""
 
@@ -26502,11 +26438,6 @@ msgid "Unistalda"
 msgstr ""
 
 #. module: l10n_br_base
-#: model:res.partner,nfe40_xPais:l10n_br_base.res_partner_exterior
-msgid "United States"
-msgstr ""
-
-#. module: l10n_br_base
 #: model:res.city,name:l10n_br_base.city_2211100
 msgid "União"
 msgstr ""
@@ -27449,9 +27380,9 @@ msgid ""
 msgstr ""
 
 #. module: l10n_br_base
-#: code:addons/l10n_br_base/models/res_partner.py:0
+#: code:addons/l10n_br_base/tools.py:0
 #, python-format
-msgid "{} Invalid!"
+msgid "{} {} Invalid!"
 msgstr ""
 
 #. module: l10n_br_base
