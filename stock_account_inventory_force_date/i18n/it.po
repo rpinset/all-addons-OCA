@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* stock_account_inventory_force_date
+# 	* stock_account_inventory_force_date
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-18 12:02+0000\n"
+"PO-Revision-Date: 2023-05-18 13:36+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #. module: stock_account_inventory_force_date
 #: model:ir.model,name:stock_account_inventory_force_date.model_res_company
@@ -38,13 +38,16 @@ msgstr "Forza Data Blocco Inventario"
 
 #. module: stock_account_inventory_force_date
 #: model:ir.model.fields,help:stock_account_inventory_force_date.field_stock_inventory__force_inventory_date
-msgid "Force the inventory moves and accounting entries to a given datein the past."
+msgid ""
+"Force the inventory moves and accounting entries to a given datein the past."
 msgstr ""
 "Forza i movimenti inventario e i movimenti contabili ad una data nel passato."
 
 #. module: stock_account_inventory_force_date
 #: model:ir.model.fields,help:stock_account_inventory_force_date.field_res_company__force_inventory_lock_date
-msgid "If set, it won't be possible for any user to force an inventory,adjustment using a date earlier than this one."
+msgid ""
+"If set, it won't be possible for any user to force an inventory,adjustment "
+"using a date earlier than this one."
 msgstr ""
 "Se impostato, non sarà possibile per alcun utente forzare una rettifica di "
 "inventario con una data precedente a questa."
@@ -76,7 +79,9 @@ msgstr "L'opzione %s non è disponibile quando si forza una Data di Inventario."
 #. module: stock_account_inventory_force_date
 #: code:addons/stock_account_inventory_force_date/models/stock_move.py:35
 #, python-format
-msgid "Please define a Standard Cost Change Offsetting Account in the company settings."
+msgid ""
+"Please define a Standard Cost Change Offsetting Account in the company "
+"settings."
 msgstr ""
 "Si prega di definire un Conto Standard di Costo di differenza valutazione "
 "nelle configurazioni dell'azienda."
@@ -84,7 +89,7 @@ msgstr ""
 #. module: stock_account_inventory_force_date
 #: model:ir.model,name:stock_account_inventory_force_date.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
-msgstr "Movimenti Prodotto (Stock Move Line)"
+msgstr "Movimenti prodotto (riga movimento di magazzino)"
 
 #. module: stock_account_inventory_force_date
 #: model:ir.model.fields,field_description:stock_account_inventory_force_date.field_res_company__standard_cost_change_account_id

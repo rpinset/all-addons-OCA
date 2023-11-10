@@ -1,24 +1,25 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* quality_control_issue
+# 	* quality_control_issue
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 16:34+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-11-01 00:50+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: quality_control_issue
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_issue_kanban_view
-msgid "<br/>\n"
+msgid ""
+"<br/>\n"
 "                                        Location:"
 msgstr ""
 "<br/>\n"
@@ -101,7 +102,7 @@ msgstr "Creato il"
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_issue_kanban_view
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_problem_kanban_view
 msgid "Delete"
-msgstr "Cancella"
+msgstr "Elimina"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__description
@@ -137,7 +138,7 @@ msgstr "Modifica"
 #. module: quality_control_issue
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue__product_tracking
 msgid "Ensure the traceability of a storable product in your warehouse."
-msgstr "Consente la tracciabilità di un prodotto stoccabile nel magazzino."
+msgstr "Assicura la tracciabilità di un prodotto stoccabile nel magazzino."
 
 #. module: quality_control_issue
 #: code:addons/quality_control_issue/models/qc_issue.py:162
@@ -201,7 +202,7 @@ msgstr "ID"
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue__message_unread
 #: model:ir.model.fields,help:quality_control_issue.field_qc_problem__message_unread
 msgid "If checked new messages require your attention."
-msgstr "Se impostato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: quality_control_issue
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue__message_needaction
@@ -213,12 +214,12 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue__message_has_error
 #: model:ir.model.fields,help:quality_control_issue.field_qc_problem__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se selezionata, alcuni messaggi presentano un errore di consegna."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: quality_control_issue
 #: selection:qc.issue,state:0
 msgid "In Progress"
-msgstr "In lavoro"
+msgstr "In corso"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__inspector_id
@@ -229,7 +230,7 @@ msgstr "Ispettore"
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__message_is_follower
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_problem__message_is_follower
 msgid "Is Follower"
-msgstr "Sta seguendo"
+msgstr "Segue"
 
 #. module: quality_control_issue
 #: model:ir.ui.menu,name:quality_control_issue.qc_issue_stage_config_menu
@@ -291,7 +292,7 @@ msgstr "Ubicazione"
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__lot_id
 msgid "Lot/Serial Number"
-msgstr "lotto/numero di serie"
+msgstr "Lotto/numero di serie"
 
 #. module: quality_control_issue
 #: selection:qc.problem,priority:0
@@ -315,7 +316,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__message_has_error
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_problem__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore consegna messaggio"
+msgstr "Errore di consegna messaggio"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__message_ids
@@ -350,19 +351,19 @@ msgstr "Nuovo"
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__activity_date_deadline
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_problem__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Scadenza attività successiva"
+msgstr "Scadenza prossima attività"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__activity_summary
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_problem__activity_summary
 msgid "Next Activity Summary"
-msgstr "Riepilogo attività successiva"
+msgstr "Riepilogo prossima attività"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__activity_type_id
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_problem__activity_type_id
 msgid "Next Activity Type"
-msgstr "Tipo attività successiva"
+msgstr "Tipo prossima attività"
 
 #. module: quality_control_issue
 #: selection:qc.problem,priority:0
@@ -405,14 +406,12 @@ msgid "Number of unread messages"
 msgstr "Numero di messaggi non letti"
 
 #. module: quality_control_issue
-#: selection:qc.issue,activity_state:0
-#: selection:qc.problem,activity_state:0
+#: selection:qc.issue,activity_state:0 selection:qc.problem,activity_state:0
 msgid "Overdue"
 msgstr "Ritardo"
 
 #. module: quality_control_issue
-#: selection:qc.issue,activity_state:0
-#: selection:qc.problem,activity_state:0
+#: selection:qc.issue,activity_state:0 selection:qc.problem,activity_state:0
 msgid "Planned"
 msgstr "Pianificata"
 
@@ -477,7 +476,7 @@ msgstr "Quantità prodotto"
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__product_uom
 msgid "Product Unit of Measure"
-msgstr "Unità di misura prodotto"
+msgstr "Unità di misura del prodotto"
 
 #. module: quality_control_issue
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_issue_kanban_view
@@ -506,7 +505,7 @@ msgstr "Squadra CQ"
 #. module: quality_control_issue
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_issue_kanban_view
 msgid "Qty:"
-msgstr "Qta:"
+msgstr "Q.tà:"
 
 #. module: quality_control_issue
 #: model:ir.model,name:quality_control_issue.model_qc_issue
@@ -599,9 +598,7 @@ msgstr "Imposta a fatto"
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_issue_search
 #: model_terms:ir.ui.view,arch_db:quality_control_issue.qc_problem_search
 msgid "Show all records which has next action date is before today"
-msgstr ""
-"Visualizza tutte le righe che hanno una data azione successiva antecedente "
-"ad oggi"
+msgstr "Visualizza tutte le righe con l'azione successiva antecedente ad oggi"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__stage_id
@@ -625,32 +622,34 @@ msgstr "Stato"
 #. module: quality_control_issue
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue__activity_state
 #: model:ir.model.fields,help:quality_control_issue.field_qc_problem__activity_state
-msgid "Status based on activities\n"
+msgid ""
+"Status based on activities\n"
 "Overdue: Due date is already passed\n"
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stati in base alle attività\n"
-"Scaduti: la data richiesta è trascorsa\n"
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
 "Oggi: la data attività è oggi\n"
-"Pianificate: attività future."
+"Pianificato: attività future."
 
 #. module: quality_control_issue
 #: model:ir.model.fields,field_description:quality_control_issue.field_qc_issue__stock_scrap_qty
 msgid "Stock Scrap Qty"
-msgstr "Qta. scarto magazzino"
+msgstr "Q.tà scarto magazzino"
 
 #. module: quality_control_issue
 #: model:ir.model.fields,help:quality_control_issue.field_qc_issue_stage__fold
 #: model:ir.model.fields,help:quality_control_issue.field_qc_stage__fold
-msgid "This stage is folded in the kanban view when there are no records in that stage to display."
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
 msgstr ""
 "Questa fase è chiusa nella vista kanban quando non ci sono righe in questo "
 "stato da visualizzare."
 
 #. module: quality_control_issue
-#: selection:qc.issue,activity_state:0
-#: selection:qc.problem,activity_state:0
+#: selection:qc.issue,activity_state:0 selection:qc.problem,activity_state:0
 msgid "Today"
 msgstr "Oggi"
 

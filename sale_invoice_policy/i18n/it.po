@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* sale_invoice_policy
+# 	* sale_invoice_policy
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-07 16:31+0000\n"
+"PO-Revision-Date: 2023-10-09 07:45+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: sale_invoice_policy
 #: model:ir.model,name:sale_invoice_policy.model_res_config_settings
 msgid "Config Settings"
-msgstr "Configurazione"
+msgstr "Impostazioni configurazione"
 
 #. module: sale_invoice_policy
 #: model:ir.model.fields,field_description:sale_invoice_policy.field_product_product__default_invoice_policy
@@ -63,14 +63,16 @@ msgstr "Politica Fatturazione richiesta negli Ordini di Vendita"
 #: model:ir.model.fields,field_description:sale_invoice_policy.field_product_product__invoice_policy
 #: model:ir.model.fields,field_description:sale_invoice_policy.field_product_template__invoice_policy
 msgid "Invoicing Policy"
-msgstr "Politica Fatturabilità"
+msgstr "Politica fatturazione"
 
 #. module: sale_invoice_policy
 #: model:ir.model.fields,help:sale_invoice_policy.field_product_product__default_invoice_policy
 #: model:ir.model.fields,help:sale_invoice_policy.field_product_template__default_invoice_policy
 #: model:ir.model.fields,help:sale_invoice_policy.field_sale_order__invoice_policy
-msgid "Ordered Quantity: Invoice based on the quantity the customer ordered.\n"
-"Delivered Quantity: Invoiced based on the quantity the vendor delivered (time or deliveries)."
+msgid ""
+"Ordered Quantity: Invoice based on the quantity the customer ordered.\n"
+"Delivered Quantity: Invoiced based on the quantity the vendor delivered "
+"(time or deliveries)."
 msgstr ""
 "Quantità Ordinate: Fattura basata sulle quantità ordinate dal cliente.\n"
 "Quantità Consegnate: Fattura basata sulle quantità consegnate (tempi o "
@@ -79,7 +81,8 @@ msgstr ""
 #. module: sale_invoice_policy
 #: model:ir.model.fields,help:sale_invoice_policy.field_product_product__invoice_policy
 #: model:ir.model.fields,help:sale_invoice_policy.field_product_template__invoice_policy
-msgid "Ordered Quantity: Invoice quantities ordered by the customer.\n"
+msgid ""
+"Ordered Quantity: Invoice quantities ordered by the customer.\n"
 "Delivered Quantity: Invoice quantities delivered to the customer."
 msgstr ""
 "Quantità ordinata: fattura quantità ordinate dal cliente.\n"
@@ -95,7 +98,7 @@ msgstr "Quantità ordinate"
 #. module: sale_invoice_policy
 #: model:ir.model,name:sale_invoice_policy.model_product_template
 msgid "Product Template"
-msgstr "Modello Prodotto"
+msgstr "Modello prodotto"
 
 #. module: sale_invoice_policy
 #: model:ir.model.fields,field_description:sale_invoice_policy.field_res_config_settings__sale_invoice_policy_required

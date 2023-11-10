@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: stock-logistics-warehouse (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-31 02:38+0000\n"
-"PO-Revision-Date: 2023-03-30 14:31+0000\n"
+"PO-Revision-Date: 2023-10-29 17:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/"
 "OCA-stock-logistics-warehouse-9-0/language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,help:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__auto_product_ids
@@ -116,7 +116,7 @@ msgstr "Medio"
 #. module: stock_orderpoint_generator
 #: model_terms:ir.ui.view,arch_db:stock_orderpoint_generator.orderpoint_generator_view
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: stock_orderpoint_generator
 #: code:addons/stock_orderpoint_generator/wizard/orderpoint_generator.py:37
@@ -169,7 +169,7 @@ msgstr "Giorno(i) per acquistare"
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,help:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__product_uom
 msgid "Default unit of measure used for all stock operations."
-msgstr "Unita di misura predefinita usata per tutte le operazioni di magazzino."
+msgstr "Unità di misura predefinita per tutte le operazioni di magazzino."
 
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,field_description:stock_orderpoint_generator.field_stock_warehouse_orderpoint_generator__display_name
@@ -238,13 +238,13 @@ msgstr "Tempo di consegna"
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,field_description:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__lead_type
 msgid "Lead Type"
-msgstr ""
+msgstr "Tipo contatto"
 
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,field_description:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__location_id
 #: model_terms:ir.ui.view,arch_db:stock_orderpoint_generator.view_warehouse_orderpoint_template_search
 msgid "Location"
-msgstr "Locazione"
+msgstr "Ubicazione"
 
 #. module: stock_orderpoint_generator
 #: selection:stock.warehouse.orderpoint.template,auto_max_qty_criteria:0
@@ -288,7 +288,7 @@ msgid ""
 msgstr ""
 "I movimenti creati tramite questo orderpoint verranno inseriti in questo "
 "gruppo di approvvigionamento. Se non ne viene fornito nessuno, i movimenti "
-"generati dalle regole dello stock verranno raggruppate in un unico grande "
+"generati dalle regole di giacenza verranno raggruppate in un unico grande "
 "prelievo."
 
 #. module: stock_orderpoint_generator
@@ -335,7 +335,7 @@ msgstr "Prodotti"
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,field_description:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__qty_multiple
 msgid "Qty Multiple"
-msgstr "Qtà multiple"
+msgstr "Multiplo q.tà"
 
 #. module: stock_orderpoint_generator
 #: model_terms:ir.ui.view,arch_db:stock_orderpoint_generator.view_warehouse_orderpoint_template_form
@@ -393,12 +393,12 @@ msgstr "Regole"
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,help:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__auto_max_qty_criteria
 msgid "Select a criteria to auto compute the maximum"
-msgstr ""
+msgstr "Selezionare un criterio per calcolare in automatico il massimo"
 
 #. module: stock_orderpoint_generator
 #: model:ir.model.fields,help:stock_orderpoint_generator.field_stock_warehouse_orderpoint_template__auto_min_qty_criteria
 msgid "Select a criteria to auto compute the minimum"
-msgstr "Selezionare  un criterio per calcolare in automatico il minimo"
+msgstr "Selezionare un criterio per calcolare in automatico il minimo"
 
 #. module: stock_orderpoint_generator
 #: model_terms:ir.ui.view,arch_db:stock_orderpoint_generator.orderpoint_generator_view

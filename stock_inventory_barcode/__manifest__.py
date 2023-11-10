@@ -4,10 +4,11 @@
 
 {
     'name': "Barcode Input for Inventories",
-    'version': "12.0.1.0.0",
+    'version': "12.0.1.0.1",
     'category': "Inventory, Logistic, Storage",
     'author': 'Akretion,Odoo Community Association (OCA)',
     'summary': "Add simple barcode interface on inventories",
+    'website': 'https://github.com/OCA/stock-logistics-barcode',
     'license': 'AGPL-3',
     'depends': ['stock'],
     'data': [

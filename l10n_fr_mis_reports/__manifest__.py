@@ -3,12 +3,12 @@
 
 {
     'name': 'MIS reports for France',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'Accounting & Finance',
     'license': 'AGPL-3',
     'summary': 'MIS Report templates for the French P&L and Balance Sheets',
     'author': 'Akretion,Odoo Community Association (OCA)',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/OCA/l10n-france',
     'depends': ['mis_builder', 'l10n_fr'],
     'data': [
         'data/mis_report_styles.xml',

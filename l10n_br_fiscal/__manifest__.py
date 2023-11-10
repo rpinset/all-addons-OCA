@@ -9,7 +9,7 @@
     "author": "Akretion, Odoo Community Association (OCA)",
     "maintainers": ["renatonlima"],
     "website": "https://github.com/OCA/l10n-brazil",
-    "version": "12.0.31.3.0",
+    "version": "12.0.35.4.0",
     "development_status": "Production/Stable",
     "depends": [
         "uom",
@@ -26,6 +26,7 @@
         "data/l10n_br_fiscal_email_template.xml",
         "data/l10n_br_fiscal_data.xml",
         "data/uom_data.xml",
+        "data/uom_alternative_data.xml",
         "data/product_data.xml",
         "data/partner_profile_data.xml",
         "data/res_partner_data.xml",

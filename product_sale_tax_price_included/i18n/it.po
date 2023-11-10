@@ -1,0 +1,122 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_sale_tax_price_included
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-11-08 17:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: product_sale_tax_price_included
+#: selection:product.template,sale_tax_price_include:0
+msgid "All taxes are included in sale price"
+msgstr "Tutte le imposte sono incluse nel prezzo di vendita"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,name:product_sale_tax_price_included.product_template_incl
+msgid "Demo Product 01 - Taxes included in price"
+msgstr "Prodotto Demo 01 - imposte incluse nel prezzo"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,name:product_sale_tax_price_included.product_template_excl
+msgid "Demo Product 02 - Taxes excluded in price"
+msgstr "Prodotto Demo 02 - imposte escluse nel prezzo"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,name:product_sale_tax_price_included.product_template_mixed
+msgid "Demo Product 03 - Taxes included and excluded in price"
+msgstr "Prdotto demo 03 - imposte incluse ed escluse nel prezzo"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,name:product_sale_tax_price_included.product_template_no_tax
+msgid "Demo Product 04 - No Taxes"
+msgstr "Prdotto demo 04 - senza imposte"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_product__sale_tax_price_include
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_template__sale_tax_price_include
+msgid "Indicate if the Sale Price include Taxes or not"
+msgstr "Indica se il prezzo di vendita include o meno le imposte"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,volume_uom_name:product_sale_tax_price_included.product_template_excl
+#: model:product.template,volume_uom_name:product_sale_tax_price_included.product_template_incl
+#: model:product.template,volume_uom_name:product_sale_tax_price_included.product_template_mixed
+#: model:product.template,volume_uom_name:product_sale_tax_price_included.product_template_no_tax
+msgid "Liter(s)"
+msgstr "Litro(i)"
+
+#. module: product_sale_tax_price_included
+#: selection:product.template,sale_tax_price_include:0
+msgid "No sale tax"
+msgstr "Nessuna imposta di vendita"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model,name:product_sale_tax_price_included.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_product__price_vat_excl
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_template__price_vat_excl
+msgid "Sale Price, All Taxes Excluded"
+msgstr "Prezzo di vendita, tutte le imposte escluse"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_product__price_vat_incl
+#: model:ir.model.fields,help:product_sale_tax_price_included.field_product_template__price_vat_incl
+msgid "Sale Price, All Taxes Included"
+msgstr "Prezzo di vendita, tutte le imposte incluse"
+
+#. module: product_sale_tax_price_included
+#: selection:product.template,sale_tax_price_include:0
+msgid "Sale price may include taxes"
+msgstr "Il prezzo di vendita può includere le imposte"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_product__price_vat_excl
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_template__price_vat_excl
+msgid "Sales Price (Excl.)"
+msgstr "Prezzo di vendita (escluse)"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_product__price_vat_incl
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_template__price_vat_incl
+msgid "Sales Price (Incl.)"
+msgstr "Prezzo di vendita (incluse)"
+
+#. module: product_sale_tax_price_included
+#: selection:product.template,sale_tax_price_include:0
+msgid "Taxes are not included in sale price"
+msgstr "Le imposte non sono incluse nel prezzo di vendita"
+
+#. module: product_sale_tax_price_included
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_product__sale_tax_price_include
+#: model:ir.model.fields,field_description:product_sale_tax_price_included.field_product_template__sale_tax_price_include
+msgid "Taxes in Sale Price"
+msgstr "Imposte nel prezzo di vendita"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,uom_name:product_sale_tax_price_included.product_template_excl
+#: model:product.template,uom_name:product_sale_tax_price_included.product_template_incl
+#: model:product.template,uom_name:product_sale_tax_price_included.product_template_mixed
+#: model:product.template,uom_name:product_sale_tax_price_included.product_template_no_tax
+msgid "Unit(s)"
+msgstr "Unità"
+
+#. module: product_sale_tax_price_included
+#: model:product.template,weight_uom_name:product_sale_tax_price_included.product_template_excl
+#: model:product.template,weight_uom_name:product_sale_tax_price_included.product_template_incl
+#: model:product.template,weight_uom_name:product_sale_tax_price_included.product_template_mixed
+#: model:product.template,weight_uom_name:product_sale_tax_price_included.product_template_no_tax
+msgid "kg"
+msgstr "kg"

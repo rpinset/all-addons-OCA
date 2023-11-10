@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* fieldservice_stock_request
+# 	* fieldservice_stock_request
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-09-16 15:34+0000\n"
+"PO-Revision-Date: 2023-06-14 12:10+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: fieldservice_stock_request
 #: model_terms:ir.ui.view,arch_db:fieldservice_stock_request.view_fsm_order_form_inherit_stock_request
@@ -51,7 +51,7 @@ msgstr "Ordine assistenza sul campo"
 #. module: fieldservice_stock_request
 #: selection:fsm.order,request_stage:0
 msgid "In progress"
-msgstr "In lavoro"
+msgstr "In corso"
 
 #. module: fieldservice_stock_request
 #: model:ir.model.fields,field_description:fieldservice_stock_request.field_fsm_order__stock_request_ids
@@ -84,17 +84,17 @@ msgstr "Imposta a bozza"
 #. module: fieldservice_stock_request
 #: model:ir.model,name:fieldservice_stock_request.model_stock_request
 msgid "Stock Request"
-msgstr "Richiesta magazzino"
+msgstr "Richiesta di magazzino"
 
 #. module: fieldservice_stock_request
 #: model:ir.model,name:fieldservice_stock_request.model_stock_request_order
 msgid "Stock Request Order"
-msgstr "Ordine richiesta magazzino"
+msgstr "Ordine richiesta di magazzino"
 
 #. module: fieldservice_stock_request
 #: model:ir.ui.menu,name:fieldservice_stock_request.menu_fsm_stock_request
 msgid "Stock Requests"
-msgstr "Richieste magazzino"
+msgstr "Richieste di magazzino"
 
 #. module: fieldservice_stock_request
 #: model_terms:ir.ui.view,arch_db:fieldservice_stock_request.view_fsm_order_form_inherit_stock_request
@@ -109,7 +109,11 @@ msgstr "Inviata"
 #. module: fieldservice_stock_request
 #: code:addons/fieldservice_stock_request/models/stock_request.py:58
 #, python-format
-msgid "There is already a Stock Request Order                                   with the same Field Service Order and                                   Warehouse that is in Draft state. Please                                   add this Stock Request there.                                   (%s)"
+msgid ""
+"There is already a Stock Request Order                                   "
+"with the same Field Service Order and                                   "
+"Warehouse that is in Draft state. Please                                   "
+"add this Stock Request there.                                   (%s)"
 msgstr ""
 "Esiste già un ordine richiesta di "
 "magazzino                                   con lo stesso ordine assistenza "

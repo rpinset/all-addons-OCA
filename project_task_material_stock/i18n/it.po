@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-10 02:50+0000\n"
-"PO-Revision-Date: 2023-04-10 21:23+0000\n"
+"PO-Revision-Date: 2023-11-02 10:39+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: project_task_material_stock
 #: model:ir.model,name:project_task_material_stock.model_account_analytic_line
@@ -109,12 +109,12 @@ msgstr "Materiali usati"
 #. module: project_task_material_stock
 #: model:ir.model.fields,help:project_task_material_stock.field_project_task__analytic_account_id
 msgid "Move created will be assigned to this analytic account"
-msgstr "La movimentazione creata sarà assegnata a questo conto analitico"
+msgstr "Il movimento creato verrà assegnato a questo conto analitico"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__picking_type_id
 msgid "Operation Type"
-msgstr ""
+msgstr "Tipo di operazione"
 
 #. module: project_task_material_stock
 #: selection:project.task,stock_state:0
@@ -133,9 +133,8 @@ msgstr "Prodotti"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__analytic_account_id
-#, fuzzy
 msgid "Project Analytic Account"
-msgstr "Conto Analitico Movimentazione"
+msgstr "Conto analitico del progetto"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_account_analytic_line__task_material_id
@@ -151,13 +150,13 @@ msgstr "Operazioni Materiale Attività Progetto"
 #. module: project_task_material_stock
 #: model_terms:ir.ui.view,arch_db:project_task_material_stock.view_project_task_form_material_stock
 msgid "Register lots, packs, location"
-msgstr "Registra lotti, pacchetti, ubicazione"
+msgstr "Registra lotti, confezioni, ubicazioni"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_project__location_source_id
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__location_source_id
 msgid "Source Location"
-msgstr "Ubicazione originaria"
+msgstr "Ubicazione di origine"
 
 #. module: project_task_material_stock
 #: model:ir.model,name:project_task_material_stock.model_stock_move
@@ -169,17 +168,17 @@ msgstr "Movimento di magazzino"
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__stock_move_ids
 #: model_terms:ir.ui.view,arch_db:project_task_material_stock.view_project_task_form_material_stock
 msgid "Stock Moves"
-msgstr "Movimenti di Magazzino"
+msgstr "Movimenti di magazzino"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__stock_state
 msgid "Stock State"
-msgstr "Stato Magazzino"
+msgstr "Stato giacenza"
 
 #. module: project_task_material_stock
 #: model:ir.model,name:project_task_material_stock.model_project_task
 msgid "Task"
-msgstr "Attività"
+msgstr "Lavoro"
 
 #. module: project_task_material_stock
 #: model:ir.model,name:project_task_material_stock.model_project_task_material
@@ -189,12 +188,12 @@ msgstr "Materiale usato per l'attività"
 #. module: project_task_material_stock
 #: model:ir.model,name:project_task_material_stock.model_project_task_type
 msgid "Task Stage"
-msgstr "Fase Task"
+msgstr "Fase lavoro"
 
 #. module: project_task_material_stock
 #: model_terms:ir.ui.view,arch_db:project_task_material_stock.view_project_task_form_material_stock
 msgid "Transfer Materials"
-msgstr "Materiali Trasferimento"
+msgstr "Trasferimento materiali"
 
 #. module: project_task_material_stock
 #: model:ir.model.fields,field_description:project_task_material_stock.field_project_task__picking_id

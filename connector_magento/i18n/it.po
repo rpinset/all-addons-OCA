@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: connector-magento (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-22 09:38+0000\n"
-"PO-Revision-Date: 2023-04-10 16:31+0000\n"
+"PO-Revision-Date: 2023-10-29 08:33+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/"
 "OCA-connector-magento-8-0/language/it/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: connector_magento
 #: model:ir.model.fields,help:connector_magento.field_magento_stock_picking__state
@@ -1080,7 +1080,7 @@ msgstr "Fattura di default"
 #. module: connector_magento
 #: model:ir.model.fields,field_description:connector_magento.field_magento_backend__default_lang_id
 msgid "Default Language"
-msgstr "Lingua di default"
+msgstr "Lingua predefinita"
 
 #. module: connector_magento
 #: model:ir.model.fields,help:connector_magento.field_magento_stock_picking__owner_id
@@ -1313,7 +1313,7 @@ msgstr ""
 #. module: connector_magento
 #: model:ir.model.fields,field_description:connector_magento.field_magento_res_partner__emailid
 msgid "E-mail address"
-msgstr "Indirizzo email"
+msgstr "Indirizzo e-mail"
 
 #. module: connector_magento
 #: model:ir.model.fields,field_description:connector_magento.field_magento_sale_order__effective_date
@@ -2320,7 +2320,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:connector_magento.field_magento_backend__location
 #: model:ir.model.fields,field_description:connector_magento.field_magento_product_product__location_id
 msgid "Location"
-msgstr "Locazione"
+msgstr "Ubicazione"
 
 #. module: connector_magento
 #: model:ir.ui.menu,name:connector_magento.menu_magento_root
@@ -4753,7 +4753,7 @@ msgstr "Il totale delle tasse è diverso da quello di Magento"
 #. module: connector_magento
 #: model:ir.model.fields,field_description:connector_magento.field_magento_sale_order__total_amount
 msgid "Total amount"
-msgstr "Totale"
+msgstr "Importo totale"
 
 #. module: connector_magento
 #: model:ir.model.fields,help:connector_magento.field_magento_account_invoice__amount_total_company_signed

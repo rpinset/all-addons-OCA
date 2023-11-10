@@ -5,10 +5,10 @@
     'name': 'French Overseas Departments (DOM)',
     'summary': 'Populate Database with overseas French '
                "Departments (Départements d'outre-mer)",
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'French Localization',
     'author': 'Akretion,Odoo Community Association (OCA)',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/OCA/l10n-france',
     'license': 'AGPL-3',
     'depends': ['l10n_fr_department'],
     'data': [

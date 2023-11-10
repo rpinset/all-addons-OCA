@@ -786,11 +786,20 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         # reserving to make porting easier
         pass
 
+    def assert_self_invoice(self, wizard_result):
+        invoices_domain = wizard_result.get("domain")
+        invoices = self.invoice_model.search(invoices_domain)
+        self.assertTrue(
+            all(invoices.mapped('fatturapa_attachment_in_id.is_self_invoice')),
+        )
+
     def test_51_xml_import(self):
-        res = self.run_wizard("test51", "IT02780790107_11008.xml")
-        invoice_ids = res.get("domain")[0][2]
-        invoice = self.invoice_model.browse(invoice_ids)
-        self.assertTrue(invoice.fatturapa_attachment_in_id.is_self_invoice)
+        self.assert_self_invoice(
+            self.run_wizard("test51", "IT02780790107_11008.xml"))
+        self.assert_self_invoice(
+            self.run_wizard("test51_TD27", "IT02780790107_11009.xml"))
+        self.assert_self_invoice(
+            self.run_wizard("test51_TD28", "IT02780790107_11010.xml"))
 
     def test_52_xml_import(self):
         """
@@ -1052,6 +1061,24 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
             not_valid_vat,
             bill.inconsistencies,
         )
+
+    def test_55_xml_import_billing(self):
+        """
+        A user only having groups 'Billing' and 'Create contacts',
+        but not 'Billing Manager',
+        can import an Electronic Invoice.
+        """
+        user = self.billing_user
+        self.uid = user.id
+        user_model = self.env['res.users']
+        self.assertTrue(user_model.has_group('account.group_account_invoice'))
+        self.assertTrue(user_model.has_group('base.group_partner_manager'))
+        self.assertFalse(user_model.has_group('account.group_account_manager'))
+
+        res = self.run_wizard('import_billing', 'IT01234567890_FPR15.xml')
+        invoice_id = res.get('domain')[0][2][0]
+        invoice = self.invoice_model.browse(invoice_id)
+        self.assertTrue(invoice)
 
     def test_01_xml_link(self):
         """

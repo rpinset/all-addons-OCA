@@ -4,7 +4,7 @@
 
 {
     "name": "TicketBAI - API",
-    "version": "12.0.2.3.4",
+    "version": "12.0.2.3.6",
     "category": "Accounting & Finance",
     "website": "https://github.com/OCA/l10n-spain",
     "author": "Binovo,"
@@ -15,7 +15,7 @@
     "auto_install": False,
     "development_status": "Beta",
     "maintainers": [
-        "ao-landoo",
+        "oihane",
     ],
     "depends": ["base", "base_setup"],
     "external_dependencies": {

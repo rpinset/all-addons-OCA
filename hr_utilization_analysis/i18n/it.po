@@ -1,12 +1,12 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* hr_utilization_analysis
+# 	* hr_utilization_analysis
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-26 12:45+0000\n"
+"PO-Revision-Date: 2023-09-20 17:52+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: hr_utilization_analysis
 #: sql_constraint:hr.utilization.analysis.entry:0
 msgid "An analysis entry for employee/date pair has to be unique!"
-msgstr "Una voce di analisi per una coppia dipendente/data deve essere univoca!"
+msgstr ""
+"Una voce di analisi per una coppia dipendente/data deve essere univoca!"
 
 #. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_entry__analysis_id
@@ -64,7 +65,7 @@ msgstr "Data"
 #. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_wizard__date_range_id
 msgid "Date range"
-msgstr "Intervallo data"
+msgstr "Intervallo date"
 
 #. module: hr_utilization_analysis
 #: code:addons/hr_utilization_analysis/report/hr_utilization_analysis.py:52
@@ -112,7 +113,7 @@ msgstr "Etichette dipendente"
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis__employee_ids
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_wizard__employee_ids
 msgid "Employees"
-msgstr "Dipendente"
+msgstr "Dipendenti"
 
 #. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis__date_to
@@ -199,7 +200,7 @@ msgstr "Quantità"
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis__date_from
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_wizard__date_from
 msgid "Start Date"
-msgstr "Data partenza"
+msgstr "Data inizio"
 
 #. module: hr_utilization_analysis
 #: model:ir.model.fields,field_description:hr_utilization_analysis.field_hr_utilization_analysis_entry__line_ids
@@ -210,7 +211,7 @@ msgstr "Righe foglio ore"
 #. module: hr_utilization_analysis
 #: model_terms:ir.ui.view,arch_db:hr_utilization_analysis.hr_utilization_analysis_entry_tree
 msgid "Total Amount"
-msgstr "Valore totale"
+msgstr "Importo totale"
 
 #. module: hr_utilization_analysis
 #: model_terms:ir.ui.view,arch_db:hr_utilization_analysis.hr_utilization_analysis_entry_tree

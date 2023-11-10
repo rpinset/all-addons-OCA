@@ -1,20 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* hr_expense_cancel
+# 	* hr_expense_cancel
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-02 12:02+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-06-28 09:09+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: hr_expense_cancel
 #: model_terms:ir.ui.view,arch_db:hr_expense_cancel.view_hr_expense_sheet_form
@@ -24,17 +24,17 @@ msgstr "Annulla"
 #. module: hr_expense_cancel
 #: model:ir.model,name:hr_expense_cancel.model_hr_expense_sheet_register_payment_wizard
 msgid "Expense Register Payment Wizard"
-msgstr ""
+msgstr "Procedura guidata pagamento registro spese"
 
 #. module: hr_expense_cancel
 #: model:ir.model,name:hr_expense_cancel.model_hr_expense_sheet
 msgid "Expense Report"
-msgstr "Rendiconto spese"
+msgstr "Nota spese"
 
 #. module: hr_expense_cancel
 #: model:ir.model.fields,field_description:hr_expense_cancel.field_account_payment__expense_sheet_id
 msgid "Expense sheet"
-msgstr "Foglio spese"
+msgstr "Foglio spesa"
 
 #. module: hr_expense_cancel
 #: model:ir.model,name:hr_expense_cancel.model_account_payment

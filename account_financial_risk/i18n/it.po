@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: partner-contact (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-24 01:41+0000\n"
-"PO-Revision-Date: 2023-03-30 14:32+0000\n"
+"PO-Revision-Date: 2023-09-20 20:02+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-partner-contact-9-0/"
 "language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.account_invoice_confirm_view
@@ -93,7 +93,7 @@ msgstr "Può superare eccezioni del rischio del cliente"
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.partner_risk_exceeded_wizard
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: account_financial_risk
 #: code:addons/account_financial_risk/models/res_partner.py:173
@@ -110,12 +110,12 @@ msgstr "Aziende"
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_invoice__company_currency_id
 #: selection:res.partner,credit_currency:0
 msgid "Company Currency"
-msgstr "Valuta dell'azienda"
+msgstr "Valuta aziendale"
 
 #. module: account_financial_risk
 #: model:ir.model,name:account_financial_risk.model_res_config_settings
 msgid "Config Settings"
-msgstr "Configurazione"
+msgstr "Impostazioni configurazione"
 
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.account_invoice_confirm_view
@@ -210,7 +210,7 @@ msgstr "Msg di eccezione"
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
 msgid "Financial Risk"
-msgstr "Rischio Finanziario"
+msgstr "Rischio finanziario"
 
 #. module: account_financial_risk
 #: code:addons/account_financial_risk/models/account_invoice.py:41
@@ -329,7 +329,7 @@ msgstr "Include Fatture Non Pagate/Saldo Principale"
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
 msgid "Info"
-msgstr "Info"
+msgstr "Informazioni"
 
 #. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_invoice_confirm__info_risk

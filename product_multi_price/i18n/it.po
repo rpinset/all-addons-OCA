@@ -1,20 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* product_multi_price
+# 	* product_multi_price
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-03-20 11:22+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2023-11-09 17:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: product_multi_price
 #: sql_constraint:product.multi.price:0
@@ -25,17 +25,16 @@ msgstr ""
 
 #. module: product_multi_price
 #: model:ir.model.fields,help:product_multi_price.field_product_pricelist_item__base
-msgid "Base price for computation.\n"
+msgid ""
+"Base price for computation.\n"
 "Public Price: The base price will be the Sale/public Price.\n"
 "Cost Price : The base price will be the cost price.\n"
 "Other Pricelist : Computation of the base price based on another Pricelist."
 msgstr ""
-"Prezzo di base per il calcolo.\n"
-"Prezzo pubblico: il prezzo di base sarà il prezzo di vendita/prezzo pubblico."
-"\n"
-"Prezzo di costo : il prezzo di base sarà il prezzo di costo.\n"
-"Altro listino prezzi : calcolo del prezzo di base sulla base di un altro "
-"listino prezzi."
+"Prezzo base per il calcolo.\n"
+"Prezzo pubblico: il prezzo base sarà il prezzo di vendita / pubblico.\n"
+"Prezzo di costo: il prezzo base sarà il prezzo di costo.\n"
+"Altro listino: calcolo del prezzo base basato su un altro listino."
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_pricelist_item__base
@@ -62,13 +61,13 @@ msgstr "Prezzo di costo imposte incluse"
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__create_uid
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__create_date
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__display_name
@@ -80,30 +79,30 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__id
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price____last_update
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__write_uid
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__write_date
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price_name__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: product_multi_price
 #: model:ir.model,name:product_multi_price.model_product_multi_price_name
 msgid "Multi Price Record Options"
-msgstr ""
+msgstr "Opzioni record prezzo multiplo"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__name
@@ -118,7 +117,7 @@ msgstr "Altro prezzo"
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_pricelist_item__multi_price_name
 msgid "Other Price Name"
-msgstr "Nome altro prezzo"
+msgstr "Altro nome prezzo"
 
 #. module: product_multi_price
 #: selection:product.pricelist.item,base:0
@@ -134,7 +133,7 @@ msgstr "Altri prezzi"
 #. module: product_multi_price
 #: selection:product.pricelist.item,base:0
 msgid "Partner Prices on the product form"
-msgstr ""
+msgstr "Prezzi del partner nella scheda prodotto"
 
 #. module: product_multi_price
 #: model:ir.model.fields,field_description:product_multi_price.field_product_multi_price__price
@@ -170,7 +169,7 @@ msgstr "I nomi dei prezzi devono essere unici per azienda"
 #. module: product_multi_price
 #: selection:product.pricelist.item,base:0
 msgid "Prices based on supplier info"
-msgstr "Prezzi basati sulle informazioni del fornitore"
+msgstr "Prezzi basati su listino fornitore"
 
 #. module: product_multi_price
 #: model:ir.model,name:product_multi_price.model_product_product
@@ -187,7 +186,7 @@ msgstr "Prezzi multipli prodotto"
 #. module: product_multi_price
 #: model_terms:ir.ui.view,arch_db:product_multi_price.product_multi_price_name_tree_view
 msgid "Product Multi Price Field Name"
-msgstr ""
+msgstr "Nome campo prodotto multi prezzo"
 
 #. module: product_multi_price
 #: model:ir.model,name:product_multi_price.model_product_multi_price

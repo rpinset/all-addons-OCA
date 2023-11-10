@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-04-05 09:18+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2023-07-12 12:13+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: privacy
 #: model:ir.model.fields,field_description:privacy.field_privacy_activity__message_needaction
@@ -24,7 +24,7 @@ msgstr "Azione richiesta"
 #. module: privacy
 #: model:ir.model.fields,field_description:privacy.field_privacy_activity__active
 msgid "Active"
-msgstr "Attiva"
+msgstr "Attivo"
 
 #. module: privacy
 #: model:ir.actions.act_window,name:privacy.activity_action
@@ -42,7 +42,7 @@ msgstr "Attività"
 #. module: privacy
 #: model_terms:ir.ui.view,arch_db:privacy.activity_search
 msgid "Archived"
-msgstr "Archiviata"
+msgstr "In archivio"
 
 #. module: privacy
 #: model:ir.model.fields,help:privacy.field_privacy_activity__subject_find
@@ -164,7 +164,7 @@ msgstr "ID"
 #. module: privacy
 #: model:ir.model.fields,help:privacy.field_privacy_activity__message_unread
 msgid "If checked new messages require your attention."
-msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: privacy
 #: model:ir.model.fields,help:privacy.field_privacy_activity__message_needaction
@@ -179,7 +179,7 @@ msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 #. module: privacy
 #: model:ir.model.fields,field_description:privacy.field_privacy_activity__message_is_follower
 msgid "Is Follower"
-msgstr "È un follower"
+msgstr "Segue"
 
 #. module: privacy
 #: model:ir.model.fields,field_description:privacy.field_privacy_activity____last_update

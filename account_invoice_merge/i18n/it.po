@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-23 13:51+0000\n"
-"PO-Revision-Date: 2023-04-10 16:37+0000\n"
+"PO-Revision-Date: 2023-04-17 16:41+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -33,7 +33,7 @@ msgstr "Sei sicuro di voler unire queste fatture?"
 #. module: account_invoice_merge
 #: model_terms:ir.ui.view,arch_db:account_invoice_merge.view_invoice_merge
 msgid "Cancel"
-msgstr "Cancella"
+msgstr "Annulla"
 
 #. module: account_invoice_merge
 #: model:ir.model.fields,field_description:account_invoice_merge.field_invoice_merge__create_uid
@@ -89,7 +89,7 @@ msgstr "Ultimo aggiornamento di"
 #. module: account_invoice_merge
 #: model:ir.model.fields,field_description:account_invoice_merge.field_invoice_merge__write_date
 msgid "Last Updated on"
-msgstr "Last Updated on"
+msgstr "Ultimo aggiornamento il"
 
 #. module: account_invoice_merge
 #: code:addons/account_invoice_merge/wizard/invoice_merge.py:29
@@ -129,8 +129,8 @@ msgstr ""
 "                        * Le fatture appartengono allo stesso partner.<br/>\n"
 "                        * Le fattura hanno la stessa azienda, partner, "
 "indirizzo,\n"
-"                        valuta, registro, resposabile vendite, conto e tipo.<"
-"br/><br/>\n"
+"                        valuta, registro, resposabile vendite, conto e tipo."
+"<br/><br/>\n"
 "                        Le righe saranno unite se:<br/>\n"
 "                        * Le righe fattura sono esattamente le stesse ad "
 "eccezione di\n"
