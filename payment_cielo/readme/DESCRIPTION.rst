@@ -1,1 +1,0 @@
-Payment Acquirer: Cielo Implementation

@@ -35,22 +35,6 @@ simplejson
 # generated from manifests external_dependencies
 pycoda
 zeep
-# generated from manifests external_dependencies
-erpbrasil.assinatura
-erpbrasil.base
-erpbrasil.edoc
-erpbrasil.edoc.pdf
-erpbrasil.transmissao
-febraban
-nfelib
-nfselib.ginfes
-nfselib.issnet
-nfselib.paulistana
-num2words
-pycep_correios
-unidecode
-workalendar
-xmldiff
 cchardet
 dicttoxml
 Jinja2==2.10.1

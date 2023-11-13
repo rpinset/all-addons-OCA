@@ -544,9 +544,9 @@ Date:   Tue Oct 10 00:58:08 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit dfe83159a9e40bb35d8b3d22636400394a823158
+commit 3d313e92a5d82def5d1d350c475deab63648fe55
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 23 06:11:02 2023 +0000
+Date:   Sun Nov 12 14:48:53 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -646,16 +646,16 @@ Date:   Mon Sep 4 11:44:40 2023 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit dcda349f10f673d23a169aba1374f86822338039
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 09:32:57 2023 +0000
+commit 9869120a031b4952086a71db684cbb01afe37a17
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Nov 12 14:28:10 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (183 of 183 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: timesheet-12.0/timesheet-12.0-hr_timesheet_sheet
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-12-0/timesheet-12-0-hr_timesheet_sheet/it/
+    Translation: timesheet-12.0/timesheet-12.0-crm_phonecall_timesheet
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-12-0/timesheet-12-0-crm_phonecall_timesheet/it/
 
 
 ## hr
@@ -724,15 +724,6 @@ Author: OCA-git-bot <oca-git-bot@odoo-community.org>
 Date:   Sun Sep 3 13:22:07 2023 +0000
 
     [UPD] README.rst
-
-
-## l10n-brazil
-From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
-commit 73849ed347cc115a6949687a4c93a8f20591a6b6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Oct 14 14:25:21 2023 +0000
-
-    [BOT] post-merge updates
 
 
 ## l10n-canada
@@ -902,16 +893,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0c9c7b7c59a747c877adcd70373556b5e8b374d6
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Nov 2 14:44:46 2023 +0000
+commit 8937e1406eb42768a820539a0f0d9e5e8f305188
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Nov 10 09:38:35 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (262 of 262 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note/it/
 
 
 ## l10n-japan
@@ -998,15 +989,6 @@ Author: OCA-git-bot <oca-git-bot@odoo-community.org>
 Date:   Tue Nov 19 21:07:10 2019 +0100
 
     [ADD] .editorconfig [ci skip]
-
-
-## l10n-portugal
-From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
-commit 6e5bf9b45695ff7e1fd1eba83826ea1b6b280b39
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 13:51:57 2023 +0000
-
-    [UPD] README.rst
 
 
 ## l10n-romania
@@ -1226,16 +1208,11 @@ Date:   Mon Oct 23 15:42:59 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 6c6169c282248e860542b3439e51de96aa13a7dd
+commit c8ae191f2b6ff9231c1ef2c465f720ed74ca6494
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 2 14:11:02 2023 +0000
+Date:   Mon Nov 13 12:33:23 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (24 of 24 strings)
-    
-    Translation: manufacture-12.0/manufacture-12.0-quality_control_stock
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_stock/it/
+    Added translation using Weblate (Italian)
 
 
 ## manufacture-reporting
@@ -1296,16 +1273,16 @@ Date:   Mon Oct 9 20:48:09 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 88147d2f17bdad24e938c8a0a32ce2a887db71c2
+commit 010829a280a92637d8a7317d65928ada18806afa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 9 15:25:23 2023 +0000
+Date:   Fri Nov 10 13:59:23 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (60 of 60 strings)
+    Currently translated at 100.0% (34 of 34 strings)
     
-    Translation: product-attribute-12.0/product-attribute-12.0-product_supplierinfo_for_customer
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_supplierinfo_for_customer/it/
+    Translation: product-attribute-12.0/product-attribute-12.0-product_multi_price
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_multi_price/it/
 
 
 ## product-kitting
@@ -1319,25 +1296,30 @@ Date:   Tue Nov 19 21:11:15 2019 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit 17fc63c317be12856c45c8db74b715cb0b17806b
+commit e47b032ced13ff4ca374783e52178c987f913ed7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 6 13:47:43 2023 +0000
+Date:   Fri Nov 10 13:05:41 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: product-variant-12.0/product-variant-12.0-purchase_order_variant_mgmt
-    Translate-URL: https://translation.odoo-community.org/projects/product-variant-12-0/product-variant-12-0-purchase_order_variant_mgmt/it/
+    Translation: product-variant-12.0/product-variant-12.0-product_variant_configurator
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-12-0/product-variant-12-0-product_variant_configurator/it/
 
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 12a829ad9d67fb405ba67171c414535917374a29
+commit 3452eb0b754846bd9c4aabdffb128342ee50c6d6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 7 06:37:43 2023 +0000
+Date:   Fri Nov 10 09:19:39 2023 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: product-pack-12.0/product-pack-12.0-sale_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-12-0/product-pack-12-0-sale_product_pack/it/
 
 
 ## project-reporting
