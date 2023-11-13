@@ -1,1 +1,0 @@
-from . import l10n_br_p7_model_inventory_report_wizard
