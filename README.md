@@ -465,9 +465,9 @@ Date:   Wed Nov 8 11:21:17 2023 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 9ed3325f860f6da9097410c44d7ba93dd369553c
+commit 4fca900e21f9dfcfacfc1f29bb3fc917e302b543
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 2 08:01:21 2023 +0000
+Date:   Sun Nov 12 14:17:27 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -551,16 +551,16 @@ Date:   Wed Oct 11 15:07:23 2023 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 5cd489929aacf0e91d2b5372cfa4a217a0e96cd1
+commit 514066493541a04cd5c63e08553760d19fc132a0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Oct 29 10:30:57 2023 +0000
+Date:   Sun Nov 12 14:24:33 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: survey-13.0/survey-13.0-survey_crm_sale_generation
-    Translate-URL: https://translation.odoo-community.org/projects/survey-13-0/survey-13-0-survey_crm_sale_generation/it/
+    Translation: survey-13.0/survey-13.0-survey_crm_generation
+    Translate-URL: https://translation.odoo-community.org/projects/survey-13-0/survey-13-0-survey_crm_generation/it/
 
 
 ## knowledge
@@ -579,16 +579,16 @@ Date:   Mon Oct 23 13:43:23 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 7f8a79d7776de3c4ffa2323d1600cee6ea7b36ad
-Author: GoodERP Jeff Wang <jeff@osbzr.com>
-Date:   Wed Nov 8 03:33:56 2023 +0000
+commit cdb849a080f70fa35e2916ed40cd8576427998dd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Nov 12 14:45:38 2023 +0000
 
-    Translated using Weblate (Chinese (Simplified) (zh_CN))
+    Translated using Weblate (Italian)
     
-    Currently translated at 3.9% (13 of 333 strings)
+    Currently translated at 100.0% (333 of 333 strings)
     
     Translation: dms-13.0/dms-13.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/zh_CN/
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
 
 
 ## e-commerce
@@ -821,20 +821,6 @@ Date:   Mon Oct 9 19:20:46 2023 +0000
     
     Translation: l10n-belgium-13.0/l10n-belgium-13.0-account_bank_statement_import_coda
     Translate-URL: https://translation.odoo-community.org/projects/l10n-belgium-13-0/l10n-belgium-13-0-account_bank_statement_import_coda/
-
-
-## l10n-brazil
-From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
-commit cc3db84cc4d6d513b48de08ead00e115290c1be6
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 19:58:23 2023 +0000
-
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-brazil-13.0/l10n-brazil-13.0-l10n_br_currency_rate_update
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-brazil-13-0/l10n-brazil-13-0-l10n_br_currency_rate_update/
 
 
 ## l10n-canada
@@ -1142,18 +1128,6 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
     development status checks to work correctly.
 
 
-## l10n-portugal
-From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
-commit f7e12724ccaa6c3a3066ffad716dc564aff44ad5
-Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
-Date:   Sun Nov 1 23:32:07 2020 +0100
-
-    Upgrade pylint-odoo for 13.0 [ci skip]
-    
-    This is apprently necessary for the
-    development status checks to work correctly.
-
-
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 commit 04eb3bdb9e264f081868dee77e43a6d2f71502ea
@@ -1386,30 +1360,25 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 0cab90ec87025c90e5e941ce1f015fdb6514eb5d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 2 08:01:28 2023 +0000
+commit f043bdb6a75f3144706f0626ec28c830286d55c6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 13 14:44:03 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (322 of 322 strings)
-    
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
+    [BOT] post-merge updates
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 24566745533f7ae40eb2391268eddc6c3e4dcfa4
+commit d00d9a66063c94ddb2da6a19145f715360281696
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Oct 29 15:18:24 2023 +0000
+Date:   Mon Nov 13 12:35:49 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (63 of 63 strings)
+    Currently translated at 100.0% (47 of 47 strings)
     
-    Translation: wms-13.0/wms-13.0-stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_available_to_promise_release/it/
+    Translation: wms-13.0/wms-13.0-stock_dynamic_routing
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_dynamic_routing/it/
 
 
 ## manufacture
@@ -1500,20 +1469,30 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit bf04ecf0ce31c2ee3b7876bf5c0a07f40a0a3024
+commit 35c3282319630914f9e5528922568eca1602307c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 7 13:20:30 2023 +0000
+Date:   Fri Nov 10 14:03:37 2023 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: product-variant-13.0/product-variant-13.0-product_attribute_value_archive
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-13-0/product-variant-13-0-product_attribute_value_archive/it/
 
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 983194f0f23fdf59c2e91ac05c9fabaecb3b8215
+commit e6b6999f64961e41ac4aac969c75bbf1984abe9a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 6 15:33:22 2023 +0000
+Date:   Fri Nov 10 08:47:17 2023 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: product-pack-13.0/product-pack-13.0-stock_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-13-0/product-pack-13-0-stock_product_pack/it/
 
 
 ## project-reporting
@@ -1729,9 +1708,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 1cae43cd6e8745627a587cadd9c944d8691e5d78
+commit a548dc5fb96375b9ac40e6dbd162532bf67bc653
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 3 11:08:12 2023 +0000
+Date:   Sun Nov 12 14:59:05 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1942,15 +1921,15 @@ Date:   Tue Oct 10 00:03:21 2023 +0000
 
 ## website-cms
 From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
-commit fb1f10fb5f8caaf2654ec159c15c0da733c4ad4d
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 19:51:15 2023 +0000
+commit 034d6538e10bfe72650811ad114c2b7a609be628
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Nov 13 08:52:10 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: website-cms-13.0/website-cms-13.0-cms_form
-    Translate-URL: https://translation.odoo-community.org/projects/website-cms-13-0/website-cms-13-0-cms_form/
+    Translation: website-cms-13.0/website-cms-13.0-cms_delete_content
+    Translate-URL: https://translation.odoo-community.org/projects/website-cms-13-0/website-cms-13-0-cms_delete_content/it/
 
 

@@ -48,12 +48,6 @@ python-dateutil
 pycoda
 zeep
 # generated from manifests external_dependencies
-erpbrasil.assinatura
-erpbrasil.base
-nfelib
-num2words
-odoo_test_helper
-# generated from manifests external_dependencies
 python-stdnum
 # generated from manifests external_dependencies
 python-dateutil
