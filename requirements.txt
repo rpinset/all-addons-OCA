@@ -32,10 +32,12 @@ phonenumbers
 pydifact
 # generated from manifests external_dependencies
 geojson
+requests
 shapely
 simplejson
 # generated from manifests external_dependencies
 python-dateutil
+# generated from manifests external_dependencies
 # generated from manifests external_dependencies
 pycoda
 zeep
