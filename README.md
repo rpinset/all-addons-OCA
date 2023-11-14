@@ -1561,11 +1561,16 @@ Date:   Fri Oct 27 23:40:44 2023 +0200
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 134071d0e9b4bcf7b20db2f94f48b027bc82cf68
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Mon Nov 13 19:16:44 2023 +0000
+commit abf06d7e9365080987a2181205cbf017da736671
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Nov 13 21:44:29 2023 +0000
 
-    Added translation using Weblate (Spanish)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: server-ux-16.0/server-ux-16.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-16-0/server-ux-16-0-base_tier_validation/
 
 
 ## community-data-files
