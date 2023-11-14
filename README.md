@@ -530,16 +530,16 @@ Date:   Tue Nov 7 09:11:56 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 712a3af376a472e5048e250ddba9393a5dc14404
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 13 14:42:24 2023 +0000
+commit c7470e0cfb228d9a159b44258c3702f3476c8efc
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Mon Nov 13 19:19:37 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice/
+    Translation: field-service-15.0/field-service-15.0-fieldservice_sale_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_sale_recurring/es/
 
 
 ## margin-analysis
@@ -714,11 +714,11 @@ Date:   Sat Oct 28 00:03:05 2023 +0200
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit ce1460aa21ad333abc654f05d9fc8751aa270746
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 27 23:15:56 2023 +0200
+commit cce11150149038f83b393bc1787c94d2208e808f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 13 21:10:57 2023 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-cambodia
@@ -993,9 +993,9 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 86b1614984f04ff1a454d8c72b5a7a29237bc85c
+commit 9f5cc13bd76b3325cbf47c60c7ae58525f4426c5
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 13 09:39:14 2023 +0000
+Date:   Mon Nov 13 21:31:26 2023 +0000
 
     Update translation files
     
