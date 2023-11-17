@@ -122,11 +122,11 @@ Date:   Sun Nov 12 15:47:08 2023 +0100
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit e0973645ce5a62e2d07a258c5cfb39273e10e55a
+commit cf03aa9a706b9cb678ab4fd57f901852e4df007e
 Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
-Date:   Sun Nov 12 14:49:09 2023 +0100
+Date:   Wed Nov 15 20:01:27 2023 +0100
 
-    [MIG] remove setup.py files
+    Update dotfiles
 
 
 ## currency
@@ -491,11 +491,11 @@ Date:   Sun Nov 12 16:14:06 2023 +0100
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit dbbb490c560ed3a72ca683bf4304402cada84e8b
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:45:46 2023 +0100
+commit a0d3c678672dbc7e5f987e83b9996d0c57bdab2b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 16 22:20:59 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## hr-attendance
@@ -1463,11 +1463,11 @@ Date:   Sun Nov 12 16:17:36 2023 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 7b2779a97456f5385e74947255cd0046e08cbd9f
-Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
-Date:   Sun Nov 12 15:13:53 2023 +0100
+commit 1ccfa084f09d999c1599214c89a721200dbf9e26
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 15 18:04:29 2023 +0000
 
-    Update dotfiles
+    [BOT] post-merge updates
 
 
 ## website
