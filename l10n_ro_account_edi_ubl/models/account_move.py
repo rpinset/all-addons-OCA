@@ -2,6 +2,8 @@
 # Copyright (C) 2022 NextERP Romania
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+import io
+import zipfile
 
 from odoo import _, fields, models
 from odoo.exceptions import UserError
@@ -110,30 +112,75 @@ class AccountMove(models.Model):
                 continue
 
             params = {"id": invoice.l10n_ro_edi_download}
-            file_content, status_code = anaf_config._l10n_ro_einvoice_call(
+            response, status_code = anaf_config._l10n_ro_einvoice_call(
                 "/descarcare", params, method="GET"
             )
-
-            if status_code == 200:
-                name = invoice.name or invoice.ref
-                file_name = f"{name.replace('/', '_')}_cius_ro.zip"
-                domain = [
-                    ("name", "=", file_name),
-                    ("res_model", "=", "account.move"),
-                    ("res_id", "=", invoice.id),
-                ]
-                attachments = self.env["ir.attachment"].search(domain)
-                attachments.unlink()
-                self.env["ir.attachment"].create(
-                    {
-                        "name": file_name,
-                        "raw": file_content,
-                        "res_model": "account.move",
-                        "res_id": invoice.id,
-                        "mimetype": "application/xml",
-                    }
-                )
+            eroare = ""
+            if status_code == "400":
+                eroare = response.get("message")
+            elif status_code == 200 and type(response) == "dict":
+                eroare = response.get("eroare")
+            cius_ro = self.env.ref("l10n_ro_account_edi_ubl.edi_ubl_cius_ro")
+            edi_doc = invoice._get_edi_document(cius_ro)
+            if eroare:
+                edi_doc.write({"blocking_level": "warning", "error": eroare})
             else:
-                raise UserError(
-                    _("The download of the ZIP file failed. Please try again.")
-                )
+                edi_doc.write({"blocking_level": "info", "error": ""})
+                invoice.l10n_ro_process_anaf_zip_file(response)
+        return {
+            "type": "ir.actions.client",
+            "tag": "display_notification",
+            "params": {
+                "title": "Downloaded ZIP file from ANAF",
+                "message": "The file downloaded from ANAF has been attached to the invoice.",
+                "sticky": False,
+                "next": {"type": "ir.actions.act_window_close"},
+            },
+        }
+
+    def l10n_ro_process_anaf_zip_file(self, zip_content):
+        self.ensure_one()
+        attachment = self.l10n_ro_save_anaf_xml_file(zip_content)
+        cius_ro = self.env.ref("l10n_ro_account_edi_ubl.edi_ubl_cius_ro")
+        edi_doc = self._get_edi_document(cius_ro)
+        if edi_doc:
+            edi_doc.attachment_id = attachment
+        else:
+            edi_format_cius = self.env["account.edi.format"].search(
+                [("code", "=", "cius_ro")]
+            )
+            edi_format_cius._update_invoice_from_attachment(attachment, self)
+
+    def l10n_ro_save_anaf_xml_file(self, zip_content):
+        """Process a ZIP containing the sending and official XML signed
+        document. This will only be available for invoices that have
+        been successfully validated by ANAF and the government.
+        """
+        self.ensure_one()
+
+        zip_ref = zipfile.ZipFile(io.BytesIO(zip_content))
+        xml_file = [f for f in zip_ref.namelist() if "semnatura" in f]
+        if not xml_file:
+            return self.env["ir.attachment"]
+
+        file_name = xml_file[0]
+        xml_file = zip_ref.read(file_name)
+
+        domain = [
+            ("name", "=", file_name),
+            ("res_model", "=", "account.move"),
+            ("res_id", "=", self.id),
+        ]
+        attachments = self.env["ir.attachment"].search(domain)
+        if attachments:
+            attachments.unlink()
+        attachment = self.env["ir.attachment"].create(
+            {
+                "name": file_name,
+                "raw": xml_file,
+                "res_model": "account.move",
+                "res_id": self.id,
+                "mimetype": "application/xml",
+            }
+        )
+        return attachment
