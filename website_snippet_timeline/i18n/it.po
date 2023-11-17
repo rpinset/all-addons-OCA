@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_snippet_timeline
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-11-14 16:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid "...and switch the timeline contents to fit your needs."
+msgstr ""
+"...e scambiare i contenuti della linea temporale per soddisfare le proprie "
+"necessità."
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid ""
+"<span class=\"bg-white\">\n"
+"                            <b>2015</b>\n"
+"                        </span>"
+msgstr ""
+"<span class=\"bg-white\">\n"
+"                            <b>2015</b>\n"
+"                        </span>"
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid ""
+"<span class=\"bg-white\">\n"
+"                            <b>2018</b>\n"
+"                        </span>"
+msgstr ""
+"<span class=\"bg-white\">\n"
+"                            <b>2018</b>\n"
+"                        </span>"
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid ""
+"<span class=\"bg-white\">\n"
+"                            <b>2019</b>\n"
+"                        </span>"
+msgstr ""
+"<span class=\"bg-white\">\n"
+"                            <b>2019</b>\n"
+"                        </span>"
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.Timeline
+msgid "<span>Switch sides</span>"
+msgstr "<span>Scambia diapositive</span>"
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid ""
+"A timeline is a graphical representation on which important events are "
+"marked."
+msgstr ""
+"Una linea temporale è la rappresentazione grafica sulla quale vengono "
+"riportati eventi importanti."
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid ""
+"Use this timeline as a part of your resume, to show your visitors what "
+"you've done in the past."
+msgstr ""
+"Utilizzare questa linea temporale come parte del proprio curriculum, per "
+"mostrare ai visitatori cosa avete fatto nel passato."
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid "You can edit, duplicate..."
+msgstr "Potete modificare, duplicare..."
+
+#. module: website_snippet_timeline
+#: model_terms:ir.ui.view,arch_db:website_snippet_timeline.s_timeline
+msgid "Your title"
+msgstr "Il vostro titolo"
