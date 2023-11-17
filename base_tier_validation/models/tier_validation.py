@@ -223,7 +223,12 @@ class TierValidation(models.AbstractModel):
             if isinstance(rec.id, models.NewId):
                 rec.need_validation = False
                 continue
-            tiers = self.env["tier.definition"].search([("model", "=", self._name)])
+            tiers = self.env["tier.definition"].search(
+                [
+                    ("model", "=", self._name),
+                    ("company_id", "in", [False] + self.env.company.ids),
+                ]
+            )
             valid_tiers = any([rec.evaluate_tier(tier) for tier in tiers])
             rec.need_validation = (
                 not rec.review_ids and valid_tiers and rec._check_state_from_condition()
@@ -475,6 +480,14 @@ class TierValidation(models.AbstractModel):
                     body=rec._notify_requested_review_body(),
                 )
 
+    def _prepare_tier_review_vals(self, definition):
+        return {
+            "model": self._name,
+            "res_id": self.id,
+            "definition_id": definition.id,
+            "requested_by": self.env.uid,
+        }
+
     def request_validation(self):
         td_obj = self.env["tier.definition"]
         tr_obj = created_trs = self.env["tier.review"]
@@ -482,21 +495,19 @@ class TierValidation(models.AbstractModel):
             if rec._check_state_from_condition():
                 if rec.need_validation:
                     tier_definitions = td_obj.search(
-                        [("model", "=", self._name)], order="sequence desc"
+                        [
+                            ("model", "=", self._name),
+                            ("company_id", "in", [False] + self.env.company.ids),
+                        ],
+                        order="sequence desc",
                     )
                     sequence = 0
                     for td in tier_definitions:
                         if rec.evaluate_tier(td):
                             sequence += 1
-                            created_trs += tr_obj.create(
-                                {
-                                    "model": self._name,
-                                    "res_id": rec.id,
-                                    "definition_id": td.id,
-                                    "sequence": sequence,
-                                    "requested_by": self.env.uid,
-                                }
-                            )
+                            vals = rec._prepare_tier_review_vals(td)
+                            vals.update(sequence=sequence)
+                            created_trs += tr_obj.create(vals)
                     self._update_counter()
         self._notify_review_requested(created_trs)
         return created_trs

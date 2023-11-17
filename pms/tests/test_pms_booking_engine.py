@@ -808,7 +808,9 @@ class TestPmsBookingEngine(TestPms):
         room_price = self.test_room_type_double.list_price
         days = (checkout - checkin).days
         board_service_price = self.board_service_test.amount
-        room_capacity = self.test_room_type_double.get_room_type_capacity(self.pms_property1.id)
+        room_capacity = self.test_room_type_double.get_room_type_capacity(
+            self.pms_property1.id
+        )
         expected_price = room_price * days + (
             board_service_price * room_capacity * days
         )
@@ -1000,8 +1002,7 @@ class TestPmsBookingEngine(TestPms):
                 "channel_type_id": self.sale_channel_direct1.id,
             }
         )
-        lines_availability_test_double = booking_engine.availability_results.filtered(
+        booking_engine.availability_results.filtered(
             lambda r: r.room_type_id.id == self.test_room_type_double.id
         )
-        lines_availability_test_double
         self.assertTrue(False)
