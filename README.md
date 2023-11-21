@@ -1355,16 +1355,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 5855da2abbcf80604aedcef15efe18afb801eb94
+commit dbbbd1d845dbf2f93cfb23d217c864b8ad32c3ca
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 16 10:11:03 2023 +0000
+Date:   Tue Nov 21 11:35:54 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (55 of 55 strings)
+    Currently translated at 100.0% (318 of 318 strings)
     
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_adjustment
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_adjustment/it/
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
 
 
 ## wms
@@ -1383,16 +1383,16 @@ Date:   Mon Nov 13 12:35:49 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 207765e227bb318c2f57774646423e989a2249f3
+commit 17b409cb5e9bc8e7674804c9107453c62b69c4e2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 16 10:10:42 2023 +0000
+Date:   Tue Nov 21 16:33:58 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (34 of 34 strings)
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_planned_order_matrix
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_planned_order_matrix/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_workorder_update_component
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_workorder_update_component/it/
 
 
 ## manufacture-reporting
@@ -1491,9 +1491,9 @@ Date:   Fri Nov 10 14:03:37 2023 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit e6b6999f64961e41ac4aac969c75bbf1984abe9a
+commit e9cad1c8e7e385d4f9c7b1f742ba9186fdb60880
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 10 08:47:17 2023 +0000
+Date:   Tue Nov 21 11:36:07 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1665,16 +1665,11 @@ Date:   Mon Oct 23 14:36:43 2023 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit cc3977a3269db4997fe6b88d390e8d29a9f961a8
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 22:46:42 2023 +0000
+commit 0f950b7da6e77daf0aef331b5d11abb922021a4e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 20 15:37:56 2023 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-auth-13.0/server-auth-13.0-password_security
-    Translate-URL: https://translation.odoo-community.org/projects/server-auth-13-0/server-auth-13-0-password_security/
+    [BOT] post-merge updates
 
 
 ## server-env
@@ -1901,30 +1896,25 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit ab916ebf6d2ed07c00f1eb1849df201260b1e55b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 23 06:29:46 2023 +0000
+commit 851a619d1ec44a6701227b2be7fa67cbbcb87388
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 20 08:27:02 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: web-13.0/web-13.0-web_drop_target
-    Translate-URL: https://translation.odoo-community.org/projects/web-13-0/web-13-0-web_drop_target/it/
+    [BOT] post-merge updates
 
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 5104de7ffab37a4d2253fbedddfb25c61882d037
+commit 3d3510f0ce23dbfde3f436adcf4413da7aab8b55
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 15 12:47:06 2023 +0000
+Date:   Mon Nov 20 05:59:45 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (23 of 23 strings)
+    Currently translated at 83.3% (10 of 12 strings)
     
-    Translation: website-13.0/website-13.0-website_form_recaptcha
-    Translate-URL: https://translation.odoo-community.org/projects/website-13-0/website-13-0-website_form_recaptcha/it/
+    Translation: website-13.0/website-13.0-website_typed_text
+    Translate-URL: https://translation.odoo-community.org/projects/website-13-0/website-13-0-website_typed_text/it/
 
 
 ## website-cms
