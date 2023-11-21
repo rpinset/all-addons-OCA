@@ -49,16 +49,16 @@ Date:   Tue Oct 10 00:34:30 2023 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 4f3a9d6a23c4c4dc39cb7a29d1756bd97e11efd9
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:29:33 2023 +0000
+commit d298cc6ecee13d49754f948d41b788532f0f10f7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Nov 21 11:15:58 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (28 of 28 strings)
     
-    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_base
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_base/
+    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_prepaid
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_prepaid/it/
 
 
 ## account-consolidation
@@ -428,9 +428,9 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b48469b9c331f5d7f8d5b4d5f921ad4321a95f9f
+commit 7f78db5f6b75ff32390552ba0fc50de799c3c9dc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 14 16:28:20 2023 +0000
+Date:   Tue Nov 21 12:23:01 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1106,30 +1106,30 @@ Date:   Mon Oct 23 15:42:25 2023 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit edf4b87eb2d9aaae218b090172f42c0a3b84f6de
+commit bfe887aaf8c939ae7f48787b683d9677beb32cfc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Oct 29 15:26:35 2023 +0000
+Date:   Tue Nov 21 16:25:58 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (120 of 120 strings)
+    Currently translated at 94.1% (16 of 17 strings)
     
-    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-stock_barcodes
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-stock_barcodes/it/
+    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-barcodes_generator_product
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_product/it/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit c0c3e4ac071307d450eb7645f196938f1aa86181
+commit 26b06da2732b0914df8a094809925deee3127cb7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 11:38:05 2023 +0000
+Date:   Tue Nov 21 16:35:06 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_no_negative
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_no_negative/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_return_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_return_request/it/
 
 
 ## stock-logistics-tracking
@@ -1143,16 +1143,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 9842767039417a708c7adf5e4bcac4df2e793364
+commit 8262759130b65e9e2bf0249106edb13c3f555e99
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 11:41:15 2023 +0000
+Date:   Tue Nov 21 16:28:16 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 44.1% (15 of 34 strings)
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_quant_manual_assign
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_quant_manual_assign/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_move_location
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_move_location/it/
 
 
 ## stock-logistics-reporting
@@ -1208,16 +1208,16 @@ Date:   Mon Oct 23 15:42:59 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit ce0a292396d95624d7dfa392cfe1d640c7d58d34
+commit 3b081c2d53223579ce8aa2214f0a71aba677966e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 09:56:05 2023 +0000
+Date:   Tue Nov 21 16:34:03 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_bom_widget_section_and_note_one2many
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_bom_widget_section_and_note_one2many/it/
+    Translation: manufacture-12.0/manufacture-12.0-repair_quality_control_issue
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_quality_control_issue/it/
 
 
 ## manufacture-reporting
