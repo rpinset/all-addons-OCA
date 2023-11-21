@@ -39,7 +39,7 @@
                 />
                 <field name="incoming_dlt_qty" string="Incoming Within DLT" />
                 <field
-                    name="incoming_location_qty"
+                    name="incoming_total_qty"
                     string="Total Incoming"
                     optional="show"
                 />
@@ -99,7 +99,7 @@
         <field name="name">stock.buffer.form</field>
         <field name="model">stock.buffer</field>
         <field name="arch" type="xml">
-            <form>
+            <form duplicate="0">
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button

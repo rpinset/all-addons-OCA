@@ -257,6 +257,21 @@ msgid "Cancel"
 msgstr "取消"
 
 #. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__location
+msgid "Change Location"
+msgstr ""
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__product
+msgid "Change Product"
+msgstr ""
+
+#. module: ddmrp
+#: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__both
+msgid "Change both values"
+msgstr ""
+
+#. module: ddmrp
 #: model:res.groups,name:ddmrp.group_change_buffer_procure_qty
 msgid "Change quantity in manual procurements from Stock Buffers"
 msgstr ""
@@ -318,6 +333,11 @@ msgid "Consumption"
 msgstr ""
 
 #. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.ddmrp_duplicate_buffer_wizard
+msgid "Copy Ddmrp Stock Buffer"
+msgstr ""
+
+#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
 msgid "Create Procurement"
 msgstr "创建补货"
@@ -328,6 +348,7 @@ msgid "Created Purchase Order Line"
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__create_uid
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__create_uid
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__create_uid
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__create_uid
@@ -340,6 +361,7 @@ msgid "Created by"
 msgstr "创建人"
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__create_date
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__create_date
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__create_date
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__create_date
@@ -387,6 +409,11 @@ msgstr "DDMRP 图表"
 #, fuzzy
 msgid "DDMRP Demand Chart"
 msgstr "DDMRP 图表"
+
+#. module: ddmrp
+#: model:ir.model,name:ddmrp.model_ddmrp_duplicate_buffer
+msgid "DDMRP Duplicate Buffer"
+msgstr ""
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__ddmrp_chart_execution
@@ -448,6 +475,7 @@ msgid "Demand"
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__display_name
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__display_name
@@ -481,6 +509,27 @@ msgstr "显示名称"
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_search
 msgid "Distributed"
 msgstr "分布"
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.ddmrp_duplicate_buffer_wizard
+msgid "Duplicate"
+msgstr ""
+
+#. module: ddmrp
+#: model:ir.actions.act_window,name:ddmrp.action_server_ddmrp_duplicate_buffer
+msgid "Duplicate Buffer"
+msgstr ""
+
+#. module: ddmrp
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Duplicated Buffers"
+msgstr ""
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__type
+msgid "Duplication Type"
+msgstr ""
 
 #. module: ddmrp
 #: code:addons/ddmrp/models/stock_buffer.py:0
@@ -540,11 +589,6 @@ msgstr "固定ADU"
 #: model:ir.model.fields,field_description:ddmrp.field_purchase_order_line__ddmrp_comment
 msgid "Follow-up Notes"
 msgstr "关注备注"
-
-#. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__virtual_location_qty
-msgid "Forecast On Location"
-msgstr ""
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method__factor_future
@@ -656,6 +700,7 @@ msgid "Hides on-hand status from purchase order line."
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__id
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__id
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__id
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__id
@@ -714,12 +759,6 @@ msgid "Incoming (Within DLT)"
 msgstr "进入(在 DLT 内)"
 
 #. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__incoming_location_qty
-#, fuzzy
-msgid "Incoming On Location"
-msgstr "进入在 DLT 内"
-
-#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
 msgid "Incoming Outside DLT"
 msgstr ""
@@ -774,6 +813,7 @@ msgid "LT"
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer____last_update
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run____last_update
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer____last_update
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item____last_update
@@ -803,6 +843,7 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__write_uid
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__write_uid
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__write_uid
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__write_uid
@@ -815,6 +856,7 @@ msgid "Last Updated by"
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__write_date
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__write_date
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__write_date
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item__write_date
@@ -991,6 +1033,16 @@ msgid "Net flow position (% of TOG)"
 msgstr "净流位置 (% of TOG)"
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__location_id
+msgid "New Location"
+msgstr ""
+
+#. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__product_id
+msgid "New Product"
+msgstr ""
+
+#. module: ddmrp
 #: code:addons/ddmrp/models/stock_buffer.py:0
 #, python-format
 msgid "No demand detected."
@@ -1085,11 +1137,6 @@ msgid "Order Spike Threshold"
 msgstr "订单尖峰阈值"
 
 #. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__outgoing_location_qty
-msgid "Outgoing On Location"
-msgstr ""
-
-#. module: ddmrp
 #: model:ir.actions.act_window,name:ddmrp.po_line_execution_action
 #: model:ir.ui.menu,name:ddmrp.menu_pol_execution
 msgid "PO lines On-Hand Status"
@@ -1160,6 +1207,18 @@ msgstr ""
 #: code:addons/ddmrp/models/product_adu_calculation_method.py:0
 #, python-format
 msgid "Please indicate a Past Source."
+msgstr ""
+
+#. module: ddmrp
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Please select a New Location."
+msgstr ""
+
+#. module: ddmrp
+#: code:addons/ddmrp/wizards/ddmrp_duplicate_buffer.py:0
+#, python-format
+msgid "Please select a New Product."
 msgstr ""
 
 #. module: ddmrp
@@ -1322,11 +1381,6 @@ msgstr ""
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_location_qty_available_not_res
 msgid "Quantity On Hand (Unreserved)"
-msgstr ""
-
-#. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__product_location_qty
-msgid "Quantity On Location"
 msgstr ""
 
 #. module: ddmrp
@@ -1696,6 +1750,13 @@ msgid ""
 msgstr ""
 
 #. module: ddmrp
+#: model:ir.model.constraint,message:ddmrp.constraint_stock_buffer_stock_buffer_uniq
+msgid ""
+"The product/location combination must be unique.Remember that the buffer "
+"could be archived."
+msgstr ""
+
+#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
 msgid ""
 "The red zone is the embedded safety in the buffer. The larger the "
@@ -1725,6 +1786,7 @@ msgid "Top of Yellow"
 msgstr "黄顶"
 
 #. module: ddmrp
+#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__incoming_total_qty
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
 msgid "Total Incoming"
 msgstr "进入总和"
@@ -1998,6 +2060,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
 msgid "or"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Incoming On Location"
+#~ msgstr "进入在 DLT 内"
 
 #~ msgid "Buffer size factors"
 #~ msgstr "缓冲大小因子"

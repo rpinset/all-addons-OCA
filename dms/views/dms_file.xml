@@ -305,7 +305,6 @@
         <field name="model">dms.file</field>
         <field name="arch" type="xml">
             <tree
-                string="Files"
                 js_class="file_list"
                 decoration-warning="not active"
                 decoration-muted="(is_locked and not is_lock_editor)"
@@ -315,6 +314,12 @@
                 <field name="is_locked" invisible="1" />
                 <field name="is_lock_editor" invisible="1" />
                 <field name="name" />
+                <field
+                    name="content"
+                    filename="name"
+                    widget="binary"
+                    string="Download"
+                />
                 <field name="write_date" />
                 <field name="size" widget="integer" />
                 <field name="mimetype" />
@@ -581,7 +586,6 @@
         <field name="model">dms.file</field>
         <field name="arch" type="xml">
             <tree
-                string="Files"
                 decoration-muted="(is_locked and not is_lock_editor)"
                 create="0"
                 delete="0"
