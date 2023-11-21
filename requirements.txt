@@ -26,6 +26,7 @@ requests
 cmislib
 # generated from manifests external_dependencies
 email-validator
+phonenumbers
 # generated from manifests external_dependencies
 factur-x
 phonenumbers
