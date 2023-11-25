@@ -1,0 +1,306 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edi_endpoint_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-11-22 23:47+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_form_view
+msgid "<span class=\"o_stat_text\">Exchanges</span>"
+msgstr "<span class=\"o_stat_text\">Intercambios</span>"
+
+#. module: edi_endpoint_oca
+#: model:ir.model,name:edi_endpoint_oca.model_edi_exchange_consumer_mixin
+msgid "Abstract record where exchange records can be assigned"
+msgstr "Registro abstracto al que se pueden asignar registros de intercambio"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__auth_type
+msgid "Auth Type"
+msgstr "Tipo de Aut"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__backend_id
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_search_view
+msgid "Backend"
+msgstr "Servidor"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__backend_type_id
+msgid "Backend Type"
+msgstr "Tipo de Servidor"
+
+#. module: edi_endpoint_oca
+#: code:addons/edi_endpoint_oca/models/edi_endpoint.py:0
+#, python-format
+msgid "Backend and exchange type are mandatory"
+msgstr "El servidor y el tipo de cambio son obligatorios"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_search_view
+msgid "Backend type"
+msgstr "Tipo de servidor"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__code_snippet
+msgid "Code Snippet"
+msgstr "Fragmento de Código"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__code_snippet_docs
+msgid "Code Snippet Docs"
+msgstr "Docs de Fragmentos de Código"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__csrf
+msgid "Csrf"
+msgstr "Csrf"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin__display_name
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_form_view
+msgid "EDI"
+msgstr "EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model,name:edi_endpoint_oca.model_edi_backend
+msgid "EDI Backend"
+msgstr "Servidor EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model,name:edi_endpoint_oca.model_edi_backend_type
+msgid "EDI Backend Type"
+msgstr "Tipo de Servidor EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model,name:edi_endpoint_oca.model_edi_endpoint
+msgid "EDI Endpoint"
+msgstr "Punto final EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.actions.act_window,name:edi_endpoint_oca.edi_endpoint_act_window
+#: model:ir.ui.menu,name:edi_endpoint_oca.edi_endpoint_menu
+msgid "EDI Endpoints"
+msgstr "Puntos finales EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model,name:edi_endpoint_oca.model_edi_exchange_record
+msgid "EDI exchange Record"
+msgstr "Registro de Intercambio EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin__origin_edi_endpoint_id
+msgid "EDI origin endpoint"
+msgstr "Punto final de origen EDI"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record__edi_endpoint_id
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_exchange_record_view_search
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_exchange_record_view_tree
+msgid "Endpoint"
+msgstr "Punto final"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__endpoint_hash
+msgid "Endpoint Hash"
+msgstr "Hash de punto final"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__endpoint_ids
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type__endpoint_ids
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_backend_view_form
+msgid "Endpoints"
+msgstr "Puntos finales"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__endpoints_count
+msgid "Endpoints Count"
+msgstr "Recuento de puntos finales"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__exchange_type_id
+msgid "Exchange Type"
+msgstr "Tipo de Intercambio"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_search_view
+msgid "Exchange type"
+msgstr "Tipo de Intercambio"
+
+#. module: edi_endpoint_oca
+#: code:addons/edi_endpoint_oca/models/edi_endpoint.py:0
+#, python-format
+msgid "Exchange type not compatible with selected backend type."
+msgstr ""
+"El tipo de cambio no es compatible con el tipo de servidor seleccionado."
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__exec_as_user_id
+msgid "Exec As User"
+msgstr "Ejecutar como Usuario"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__exec_mode
+msgid "Exec Mode"
+msgstr "Modo Ejec"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_endpoint_search_view
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin__id
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record__id
+msgid "ID"
+msgstr "ID"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_endpoint__endpoint_hash
+msgid "Identify the route with its main params"
+msgstr "Identificar la ruta con sus parámetros principales"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend____last_update
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_backend_type____last_update
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint____last_update
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_consumer_mixin____last_update
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_exchange_record____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_backend_view_form
+msgid "Manage endpoints"
+msgstr "Gestionar puntos finales"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_endpoint__registry_sync
+msgid ""
+"ON: the record has been modified and registry was not notified.\n"
+"No change will be active until this flag is set to false via proper action.\n"
+"\n"
+"OFF: record in line with the registry, nothing to do."
+msgstr ""
+"ON: el registro ha sido modificado y el registro no ha sido notificado.\n"
+"Ningún cambio estará activo hasta que esta bandera se ponga a false mediante "
+"la acción adecuada.\n"
+"\n"
+"OFF: registro en línea con el registro, nada que hacer."
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_exchange_consumer_mixin__origin_edi_endpoint_id
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_exchange_record__edi_endpoint_id
+msgid "Record generated via this endpoint"
+msgstr "Registro generado a través de este punto final"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__registry_sync
+msgid "Registry Sync"
+msgstr "Sincronización de Registro"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__request_content_type
+msgid "Request Content Type"
+msgstr "Tipo de Contenido de la Solicitud"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__request_method
+msgid "Request Method"
+msgstr "Método de Solicitud"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__route
+msgid "Route"
+msgstr "Ruta"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__route_group
+msgid "Route Group"
+msgstr "Grupo de Ruta"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,field_description:edi_endpoint_oca.field_edi_endpoint__route_type
+msgid "Route Type"
+msgstr "Tipo de Ruta"
+
+#. module: edi_endpoint_oca
+#: model:ir.actions.server,name:edi_endpoint_oca.server_action_registry_sync
+msgid "Sync registry"
+msgstr "Sincronizar Registro"
+
+#. module: edi_endpoint_oca
+#: code:addons/edi_endpoint_oca/models/edi_backend.py:0
+#, python-format
+msgid ""
+"The following backend(s) have endpoints attached. Please archive them before:\n"
+"\n"
+"%s"
+msgstr ""
+"Los siguientes servidores tienen puntos finales adjuntos. Por favor, "
+"archívelos antes:\n"
+"\n"
+"%s"
+
+#. module: edi_endpoint_oca
+#: model:ir.model.fields,help:edi_endpoint_oca.field_edi_endpoint__route_group
+msgid "Use this to classify routes together"
+msgstr "Utilízalo para clasificar las rutas juntas"
+
+#. module: edi_endpoint_oca
+#: model_terms:ir.ui.view,arch_db:edi_endpoint_oca.edi_backend_view_form
+msgid "endpoints configured"
+msgstr "puntos finales configurados"

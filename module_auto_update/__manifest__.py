@@ -5,7 +5,7 @@
 {
     "name": "Module Auto Update",
     "summary": "Automatically update Odoo modules",
-    "version": "14.0.1.0.3",
+    "version": "14.0.1.1.0",
     "category": "Extra Tools",
     "website": "https://github.com/OCA/server-tools",
     "author": "LasLabs, "
@@ -17,6 +17,9 @@
     "installable": True,
     "uninstall_hook": "uninstall_hook",
     "depends": ["base"],
-    "data": ["views/ir_module_module.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "wizard/module_auto_update_views.xml",
+    ],
     "development_status": "Production/Stable",
 }
