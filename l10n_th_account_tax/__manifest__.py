@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html)
 {
     "name": "Thai Localization - VAT and Withholding Tax",
-    "version": "15.0.1.6.4",
+    "version": "15.0.1.7.0",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/l10n-thailand",
@@ -14,6 +14,7 @@
         "security/account_security.xml",
         "security/ir.model.access.csv",
         "wizard/account_payment_register_views.xml",
+        "wizard/account_move_reversal_view.xml",
         "views/res_config_settings_views.xml",
         "views/account_view.xml",
         "views/account_move_view.xml",
