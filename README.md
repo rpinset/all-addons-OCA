@@ -158,11 +158,11 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 578bad2057652a95d23c2b2a2c6f5d3ae6c6294d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:33:29 2023 +0100
+commit 35c4c673e3285638a205490f82f9e48a73c4851f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Nov 25 09:12:04 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -329,11 +329,11 @@ Date:   Sun Nov 12 16:08:58 2023 +0100
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 9da26acb5dcbe171e09a5a88b824772a9ff6ee79
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:40:50 2023 +0100
+commit 12b78349cc930c866db0d6dc8860f34a3099fd39
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 24 19:16:46 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## partner-contact
@@ -437,11 +437,11 @@ Date:   Sun Nov 12 15:43:40 2023 +0100
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 82c49838e493b34315a237ea37eb12c800f9b9d6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:44:32 2023 +0100
+commit 29392f320a3f2b5933503671907605fd89c8e334
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 24 18:51:39 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -491,9 +491,9 @@ Date:   Sun Nov 12 16:14:06 2023 +0100
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit a0d3c678672dbc7e5f987e83b9996d0c57bdab2b
+commit 03bd57d3c566c81cfb0efe78f475bad84ec4d500
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 16 22:20:59 2023 +0000
+Date:   Fri Nov 24 19:08:48 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1301,20 +1301,20 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 279924970db2ab365e20da7f644a1007b4ac7bdb
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:10:21 2023 +0100
+commit 84181dfc307942b07c343d22d4ef4c83285ef332
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 24 07:42:56 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 904910e371e227562d25d3b9403315c9a589a806
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:34:53 2023 +0100
+commit 608552ce627c6192d021d72a51940b6f7c670459
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Nov 24 19:32:47 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## webhook
@@ -1463,9 +1463,9 @@ Date:   Sun Nov 12 16:17:36 2023 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 1ccfa084f09d999c1599214c89a721200dbf9e26
+commit 0958651a9783c8db899db2b1767da90565bb74f8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 15 18:04:29 2023 +0000
+Date:   Fri Nov 24 19:40:30 2023 +0000
 
     [BOT] post-merge updates
 

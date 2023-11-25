@@ -1,1 +1,4 @@
 # generated from manifests external_dependencies
+pycountry
+schwifty
+# generated from manifests external_dependencies
