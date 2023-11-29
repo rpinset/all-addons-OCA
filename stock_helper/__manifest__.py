@@ -4,7 +4,7 @@
 {
     "name": "Stock Helpers",
     "summary": "Add methods shared between various stock modules",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.2.1",
     "author": "Camptocamp, Michael Tietz (MT Software), Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-warehouse",
     "category": "Hidden",
@@ -12,4 +12,5 @@
     "data": [],
     "installable": True,
     "license": "LGPL-3",
+    "development_status": "Production/Stable",
 }
