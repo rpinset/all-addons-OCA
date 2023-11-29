@@ -1,0 +1,2336 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ir
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_standard_rated_expense_base
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_standard_rated_expense_vat
+msgid "1. Standard rated expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,tag_name:l10n_ir.tax_report_line_standard_rated_expense_base
+msgid "1. Standard rated expenses (Base)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,tag_name:l10n_ir.tax_report_line_standard_rated_expense_vat
+msgid "1. Standard rated expenses (Tax)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_standard_rated_sales_base
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_standard_rated_sales_vat
+msgid "1. Standard rated sales"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,tag_name:l10n_ir.tax_report_line_standard_rated_sales_base
+msgid "1. Standard rated sales (Base)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,tag_name:l10n_ir.tax_report_line_standard_rated_sales_vat
+msgid "1. Standard rated sales (Tax)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_8110
+msgid "Absorbing the costs of conversion of production circuits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811002
+msgid "Absorption of overhead costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811001
+msgid "Absorption of wage costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121101
+msgid "Accumulated depreciation of buildings"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121102
+msgid "Accumulated depreciation of facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121106
+msgid "Accumulated depreciation of furniture and fixtures"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121107
+msgid "Accumulated depreciation of laboratory equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121103
+msgid "Accumulated depreciation of production machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121109
+msgid "Accumulated depreciation of property"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121110
+msgid "Accumulated depreciation of software"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121104
+msgid "Accumulated depreciation of tools and molds"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121105
+msgid "Accumulated depreciation of vehicles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311301
+#: model:account.group.template,name:l10n_ir.account_group_3113
+msgid "Accumulated profit (loss)."
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_61
+msgid "Activity costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_9111
+msgid "Administrative accounts are the responsibility of the company"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111905
+msgid "Advance payment for purchasing services"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111903
+msgid "Advance payment for the purchase of parts and spare parts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111902
+msgid "Advance payment for the purchase of property, machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111901
+msgid "Advance payment for the purchase of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111904
+msgid "Advance payment of current expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111912
+msgid "Advance payment of interest and loan fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111906
+msgid "Advance payment of letters of credit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111907
+msgid "Advance payment of property insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111910
+msgid "Advance payment of research and development costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111909
+msgid "Advance payment of value added tax"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111914
+msgid "Advance payment of value added taxes"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111913
+msgid "Advance payments to contractors"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621308
+msgid "Aid and subsidies"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311302
+msgid "Annual adjustments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211207
+msgid "Apprenticeship fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611012
+msgid "Apprenticeship fund share"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121011
+msgid "Asset control - Salary"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121012
+msgid "Asset control - warehouse"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311205
+msgid "Asset replacement fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621303
+msgid "Audit fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211215
+msgid "Audit fees payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311002
+msgid "Authorized capital – registered common stock"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111305
+msgid "Bad debt provision"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111008
+msgid "Balance of foreign exchange bills of deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111804
+msgid "Bank charges"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_1110052
+msgid "Bank deferment account"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911004
+msgid "Bank guarantees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621104
+msgid "Banking service fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611009
+msgid "Ben Kargari"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611008
+msgid "Bonuses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621305
+msgid "Books and publications"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111405
+msgid "Borrowed funds"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121305
+msgid "Building under completion (Sole)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121301
+msgid "Buildings under completion"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_81
+msgid "Calculations of absorption and deviations"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411010
+msgid "Calibrate income"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311201
+msgid "Capital stock"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1110
+msgid "Cash balance Bank"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_1110051
+msgid "Cash transfer"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111205
+msgid "Cashier's check"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111201
+msgid "Checks in progress"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111203
+msgid "Checks receivable at the fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111206
+msgid "Checks receivable at the non-commercial fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111808
+msgid "Clearance fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111303
+msgid "Commitment of shareholders"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211002
+msgid "Companies (accounts payable)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111302
+msgid "Companies (accounts receivable)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_99
+msgid "Company expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611213
+msgid "Consumable technical tools and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122001
+msgid "Copyright"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211201
+msgid "Corporate income tax"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111811
+msgid "Cost before opening credit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621006
+msgid "Cost of 3% of sales (municipal and property charges)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511003
+msgid "Cost of goods sold, waste"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621301
+msgid "Cost of legal fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511005
+msgid "Cost of materials and parts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511009
+msgid "Cost of production services"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621506
+msgid "Costs of Kashi Bastan cultural and sports club"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111006
+msgid "Currency bank balance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111002
+msgid "Currency fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_11
+msgid "Current assets"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111404
+msgid "Current employees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_21
+msgid "Current liabilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311401
+msgid "Current profit (loss)."
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621201
+msgid "Current share of research and development costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111103
+msgid "Customs deposits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111805
+msgid "Customs fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111406
+msgid "Damages recoverable from insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111105
+msgid "Deposit of bank guarantees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111102
+msgid "Deposit of participation in tenders and auctions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111104
+msgid "Deposits receivable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2113
+msgid "Deposits received"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211302
+msgid "Deposits received for good work"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211301
+msgid "Deposits received from auctions and tenders"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611302
+msgid "Depreciation cost of facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611306
+msgid "Depreciation cost of furniture and fixtures"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611307
+msgid "Depreciation cost of laboratory equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611303
+msgid "Depreciation cost of production machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611308
+msgid "Depreciation cost of property"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611309
+msgid "Depreciation cost of software"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611301
+msgid "Depreciation cost of the building"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611304
+msgid "Depreciation cost of tools and molds"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611305
+msgid "Depreciation cost of vehicles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1211
+msgid "Depreciation of money, machinery, machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111624
+msgid "Depreciation reserve for product inventory"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111625
+msgid "Depreciation reserve for raw material inventory"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111626
+msgid "Depreciation reserve for spare parts and supplies"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311202
+msgid "Development and completion fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_8113
+msgid "Deviation of conversion costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811201
+msgid "Deviation of drug consumption rate"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_8112
+msgid "Deviation of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111611
+msgid "Deviation of the purchase price of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411112
+msgid "Discounts on foreign products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111499
+#: model:account.account.template,name:l10n_ir.ir_account_122008
+msgid "Dividend paid"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2116
+msgid "Dividends offered and payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211602
+msgid "Dividends payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111416
+msgid "Dividends receivable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111202
+msgid "Documents in progress"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1112
+msgid "Documents receivable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111204
+msgid "Documents receivable from the fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211704
+msgid "Domestic letter of credit opening facility"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411111
+msgid "Domestic product discounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411001
+msgid "Domestic sales of products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611106
+msgid "Education"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211212
+msgid "Eid and reward to be paid"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6111
+msgid "Employee expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211211
+msgid "Employee holiday tax"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111403
+msgid "Employee housing loans"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211206
+msgid "Employee life and accident insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211202
+msgid "Employee salary tax"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111410
+msgid "Employees' loan fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611011
+msgid "Employer's share insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611019
+msgid "Employer's supplementary insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2213
+msgid "End of service benefits reserve for employees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_31
+msgid "Equity"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111402
+msgid "Essential employee loan"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121601
+msgid "Establishment and pre-operation costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611006
+msgid "Excellent housing and groceries"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621007
+msgid "Exhibition fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611207
+msgid "Factory fuel cost"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211220
+msgid "Fees payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2115
+msgid "Financial ammunition"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6211
+msgid "Financial expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611210
+msgid "Fixed asset insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1213
+msgid "Fixed assets in progress"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211102
+msgid "Foreign currency payable documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411002
+msgid "Foreign sales of products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_3110
+msgid "Fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111007
+msgid "Funds on the way"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121006
+msgid "Furnished and appointed"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621501
+msgid "Gains and losses from currency exchange"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111701
+msgid "Goods in process"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621507
+msgid "Green space costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911104
+msgid "Guarantee documents for customs guarantees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911103
+msgid "Guarantee documents for orders"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911105
+msgid "Guarantee documents for property acquisition"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911107
+msgid "Guarantee documents for received financial facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911006
+msgid "Guarantee documents received from Kashi representatives"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911009
+msgid "Guarantee documents received from Kashi representatives (new)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911003
+msgid "Guarantee documents received from employees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911001
+msgid "Guarantees for conducting tenders and auctions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911002
+#: model:account.account.template,name:l10n_ir.ir_account_911102
+msgid "Guarantees of good work"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911101
+msgid "Guarantees of participating in tenders and auctions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611105
+msgid "Healthcare"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621510
+msgid "Income from investment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621511
+msgid "Income from investment."
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2215
+msgid "Income transferred to the future period"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621701
+msgid "Inconsistency in absorbing the overhead of production circles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611214
+msgid "Indirect consumables of production"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111807
+msgid "Inspection fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621311
+msgid "Inspectors' fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111803
+msgid "Insurance costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621504
+msgid "Interest"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621101
+msgid "Interest and loan fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111616
+msgid "Intermediary of transportation of inventories"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1116
+msgid "Inventories"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111607
+msgid "Inventory freight"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611211
+msgid "Inventory insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111605
+msgid "Inventory intermediate account and cost price"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111603
+msgid "Inventory of construction materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111602
+msgid "Inventory of parts and spare parts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111601
+msgid "Inventory of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111622
+msgid "Inventory of scrap raw materials and spare parts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111614
+msgid "Inventory of semi-finished materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111916
+msgid "Inventory of stamps and promissory notes"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121402
+msgid "Investment in affiliated companies"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121403
+msgid "Investment in real estate"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121401
+msgid "Investment in subsidiaries"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.fiscal.position.template,name:l10n_ir.fiscal_position_template_1
+msgid "Iran"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.chart.template,name:l10n_ir.l10n_ir_chart_template
+msgid "Iran Chart Of Account"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621105
+msgid "Late loan penalty fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111401
+msgid "Law assistant"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111415
+msgid "Legal documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311101
+#: model:account.group.template,name:l10n_ir.account_group_3111
+msgid "Legal reserve"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.l10n_ir_chart_template_liquidity_transfer
+msgid "Liquidity Transfer"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211703
+msgid "Loans received from banks - Mudarabah"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211702
+msgid "Loans received from banks - advances"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211701
+msgid "Loans received from banks - installment sales"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211705
+msgid "Loans received from banks, civil partnership"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221101
+#: model:account.group.template,name:l10n_ir.account_group_2211
+msgid "Long-term accounts payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1215
+msgid "Long-term deposits and claims"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121502
+msgid "Long-term deposits with banks"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221002
+msgid "Long-term foreign currency payables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221205
+msgid "Long-term industrial loans"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1214
+msgid "Long-term investments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121501
+msgid "Long-term loans"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221203
+msgid "Long-term payable loans - Jaala"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221202
+msgid "Long-term payable loans - advances"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221204
+msgid "Long-term payable loans - civil partnership"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221201
+msgid "Long-term payable loans - installment sales"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2210
+msgid "Long-term payables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2212
+msgid "Long-term receivables financial facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121303
+msgid "Machine tools under completion"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611201
+msgid "Maintenance of buildings and facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611205
+msgid "Maintenance of furniture and fixtures"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611206
+msgid "Maintenance of laboratory equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611203
+msgid "Maintenance of tools and molds"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621008
+msgid "Marketing fee and commission"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6210
+msgid "Marketing, distribution and sales expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621306
+msgid "Membership fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621309
+msgid "Miscellaneous costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621010
+msgid "Miscellaneous distribution and sales costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621109
+msgid "Miscellaneous financial expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621505
+msgid "Miscellaneous income"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611018
+msgid "Miscellaneous rights and benefits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1210
+msgid "Money, machinery, machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111413
+msgid "Motor loan"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_net_vat_due
+msgid "Net VAT Due"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611003
+msgid "Night shift right"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611108
+msgid "Non-cash contributions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211103
+#: model:account.account.template,name:l10n_ir.ir_account_211104
+msgid "Non-commercial Riyal payable documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111407
+msgid "Non-commercial claims from other natural and legal persons"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_12
+msgid "Non-current assets"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_22
+msgid "Non-current liabilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211219
+msgid "One in a thousand physical education"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6112
+msgid "Operating expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111802
+msgid "Order registration fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1118
+msgid "Orders and items on the way"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111411
+msgid "Other accounts and receivables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2112
+msgid "Other accounts payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211005
+msgid "Other accounts payable (participation plan)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1114
+msgid "Other accounts receivable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621319
+msgid "Other administrative and organizational costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6113
+#: model:account.group.template,name:l10n_ir.account_group_6213
+msgid "Other administrative and organizational expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211409
+msgid "Other advances"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1220
+msgid "Other assets"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111106
+#: model:account.account.template,name:l10n_ir.ir_account_122007
+msgid "Other deposits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211303
+msgid "Other deposits received"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211213
+msgid "Other employee accounts payable (classification plan)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111408
+#: model:account.account.template,name:l10n_ir.ir_account_211210
+msgid "Other employee deductions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_62
+msgid "Other expenses and non-operational income"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121607
+msgid "Other expenses for future years"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911108
+msgid "Other guarantee documents are the responsibility of the company"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911005
+msgid "Other guarantee documents in favor of the company"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6215
+msgid "Other non-operational incomes and expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411209
+msgid "Other operating income and expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211221
+msgid "Other payments (Homa motorcycle"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211003
+msgid "Other people's trust goods with us"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2118
+msgid "Other reserves"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_4112
+msgid "Other revenues and operating expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_3112
+msgid "Other savings and shares"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611119
+msgid "Other staff costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211009
+msgid "Other trade accounts payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621704
+msgid "Other unexpected expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111609
+#: model:account.account.template,name:l10n_ir.ir_account_911012
+msgid "Our trust goods with others"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_1110054
+msgid "Overdue payment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811302
+msgid "Overhead cost deviation"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811101
+msgid "Overhead share from service departments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811102
+msgid "Overhead sharing of service circles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911008
+msgid "Payment guarantee documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_1110053
+msgid "Pending receivables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211001
+msgid "Persons (accounts payable)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111301
+msgid "Persons (accounts receivable)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122005
+msgid "Phone deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_91
+msgid "Police accounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_9110
+msgid "Police accounts for the benefit of the company"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_9112
+msgid "Police accounts side"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111806
+msgid "Port fees and charges"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621102
+msgid "Postage stamp fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611216
+msgid "Postal and telephone fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211401
+msgid "Pre-sale of products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111908
+msgid "Prepaid audit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111911
+msgid "Prepayment of rent"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2114
+msgid "Prepayments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411113
+msgid "Product discounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111604
+msgid "Product inventory"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111612
+msgid "Product inventory (2)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111615
+msgid "Product inventory 4"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111613
+msgid "Product inventory(3)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121003
+msgid "Production machinery and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611010
+msgid "Production productivity bonus"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621509
+msgid "Profit and loss from other items"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621502
+msgid "Profit and loss from the sale of assets"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411201
+msgid "Profit and loss of waste sale"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221501
+msgid "Profit from the exchange of long-term foreign currency debts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221502
+msgid "Profit from the long-term sale of items"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621503
+msgid "Profits and losses from property insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111606
+#: model:account.account.template,name:l10n_ir.ir_account_121008
+msgid "Property in stock"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211601
+msgid "Proposed dividend"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121202
+msgid "Real estates"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2117
+msgid "Received financial facilities and credits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621307
+msgid "Reception and celebrations"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611103
+msgid "Reception and water station"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611013
+msgid "Redemption of employees' years of service"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311001
+msgid "Registered capital – registered ordinary shares"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611218
+msgid "Registration and notary fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611202
+msgid "Repair and maintenance of production machines and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611204
+msgid "Repair and maintenance of vehicles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621018
+msgid "Request fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111306
+msgid "Requested documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121606
+#: model:account.group.template,name:l10n_ir.account_group_6212
+msgid "Research and development costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221301
+msgid "Reserve employee termination benefits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611109
+msgid "Restaurant"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411103
+msgid "Return from sale"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411104
+msgid "Return from the sale of waste"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411101
+msgid "Returns from domestic sales of products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411102
+msgid "Returns from foreign sales of products"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_4111
+msgid "Returns from sales and discounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111005
+msgid "Rial bank balance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221001
+msgid "Rial long-term payables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611005
+msgid "Right to attract"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611007
+msgid "Right to children"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211224
+msgid "Rights process"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211101
+msgid "Riyal payable documents"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611102
+msgid "Safety clothing and equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111004
+msgid "Salaries of foreign exchange traders"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111003
+msgid "Salaries of riyals"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6110
+msgid "Salary expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211208
+msgid "Salary payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411004
+msgid "Sale 3"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411009
+msgid "Sale of materials and parts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411011
+msgid "Sale of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_41
+msgid "Sales and revenue"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411008
+msgid "Sales revenue"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211217
+msgid "Sales tax 2%"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211805
+msgid "Save Ben Kargari"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211802
+msgid "Save other expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_221305
+msgid "Save the years"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211801
+msgid "Save unused vacation"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411006
+msgid "Selling granules"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411007
+msgid "Selling production services"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411005
+msgid "Selling waste"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111610
+msgid "Semi-finished warehouse intermediary account"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621304
+msgid "Service purchase fee"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111502
+#: model:account.account.template,name:l10n_ir.ir_account_121409
+msgid "Shares of other companies"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_8111
+msgid "Sharing the costs of service departments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621009
+msgid "Shipping and storage costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111009
+msgid "Short term bank deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111101
+msgid "Short term bank deposits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1111
+msgid "Short term deposits"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1115
+msgid "Short term investments"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111501
+msgid "Short-term deposits of Nasdbanks"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2111
+msgid "Short-term payables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211205
+msgid "Social Security Organization - third party insurance premiums"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211204
+msgid "Social security organization - employee insurance premium"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122011
+msgid "Softwares"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111623
+msgid "Storing the inventory of stagnant and non-existent items"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811202
+msgid "Substance abuse"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_3114
+msgid "Sud (Zyan) is my neighbor"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211223
+msgid "Supplementary insurance for employees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211216
+msgid "Tax"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211501
+msgid "Tax savings"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111414
+msgid "Temporary debtors"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121009
+msgid "Temporary property near the warehouse"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911201
+msgid "The company is responsible for the administrative accounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621001
+msgid "The cost of advertisements and promotions"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621019
+msgid "The cost of burned claims"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621302
+msgid "The cost of consultants' fees"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611217
+msgid "The cost of direct production consumables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621020
+msgid "The cost of doubtful claims"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1216
+msgid "The cost of future years (expenses transferred to future periods)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511001
+msgid "The cost of goods sold domestically"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121603
+msgid "The cost of interest and fees for long-term loans"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611212
+msgid "The cost of laboratory consumables"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621003
+msgid "The cost of participating in the tender"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511010
+msgid "The cost of raw materials"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611219
+msgid "The cost of renting a place"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621004
+msgid "The cost of sending samples"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611215
+msgid "The cost of supplies and stationery"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611110
+msgid "The cost of the employer's contribution fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611209
+msgid "The cost of water and electricity consumption"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621310
+msgid "The current share of the cost of establishment and before operation"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111702
+msgid "The deviation of the turnover rate at the beginning of the period"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121302
+msgid "The facility is being completed"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411210
+msgid "The income of the pallet seller"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111621
+msgid "The inventory of stagnant items"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111801
+msgid "The original price of the order"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511004
+msgid "The price of granules"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111409
+msgid "The right of workers and customs clearance workers"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_621312
+msgid "The right to attend board members"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611107
+msgid "The right to exercise"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611004
+msgid "The right to shift work"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611015
+msgid "The right to worship"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911202
+msgid "The side of administrative accounts for the benefit of the company"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_511002
+msgid "The total price of goods sold abroad"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_51
+#: model:account.group.template,name:l10n_ir.account_group_5110
+msgid "The total price of the sold goods"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211218
+msgid "Three per thousand sales of industries"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111412
+msgid "Tile loan"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121004
+msgid "Tools and molds"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121304
+msgid "Tools and molds are being completed"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_2110
+msgid "Trade Accounts Payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1113
+msgid "Trade accounts receivable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811402
+msgid "Transfer of overhead costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_8114
+msgid "Transfer of production conversion costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811401
+msgid "Transfer of wage costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611104
+msgid "Transportation"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111809
+msgid "Transportation costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611101
+msgid "Travel, accommodation and extraordinary mission"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611016
+msgid "Unemployment Insurance"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_6217
+msgid "Unexpected expenses"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611014
+msgid "Unused leave"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.group,name:l10n_ir.ir_tax_group_0
+msgid "VAT 0%"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.group,name:l10n_ir.ir_tax_group_9
+#: model:account.tax.template,description:l10n_ir.ir_purchase_tax_9
+#: model:account.tax.template,description:l10n_ir.ir_sale_tax_9
+#: model:account.tax.template,name:l10n_ir.ir_purchase_tax_9
+#: model:account.tax.template,name:l10n_ir.ir_sale_tax_9
+msgid "VAT 9%"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.group,name:l10n_ir.ir_tax_group_exempted
+msgid "VAT Exempted"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_base_all_expense
+msgid "VAT on Expenses and all other Inputs (Base)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_vat_all_expense
+msgid "VAT on Expenses and all other Inputs (Tax)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_base_all_sales
+msgid "VAT on Sales and all other Outputs (Base)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.tax.report.line,name:l10n_ir.tax_report_line_vat_all_sales
+msgid "VAT on Sales and all other Outputs (Tax)"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122009
+msgid "VAT paid"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211006
+#: model:account.account.template,name:l10n_ir.ir_account_211007
+msgid "VAT payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122010
+msgid "Value added tax paid"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611208
+msgid "Vehicle fuel cost"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_811301
+msgid "Wage cost deviation"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611017
+msgid "Wages of daily wage workers"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_911106
+msgid "Warranty documents for agency sales"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411114
+msgid "Waste discounts"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111608
+msgid "Waste inventory"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211203
+msgid "Withholding tax of third parties"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1117
+msgid "Work in progress"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211214
+msgid "Workers Welfare Fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611001
+msgid "basic salary"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211209
+msgid "contractors"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211010
+msgid "current partners"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122004
+msgid "electricity deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121002
+msgid "facilities"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122006
+msgid "gas deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211225
+msgid "interest payable"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121007
+msgid "lab equipment"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111810
+msgid "other costs"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611002
+msgid "overtime"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211004
+msgid "pending purchase"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1119
+msgid "pre paids"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311601
+#: model:account.group.template,name:l10n_ir.account_group_3116
+msgid "profit sharing"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611021
+msgid "rank salary"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.group.template,name:l10n_ir.account_group_1212
+msgid "real estate"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311203
+msgid "reserve fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_111001
+msgid "rial fund"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122002
+msgid "right of business"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_411003
+msgid "sale"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_211222
+msgid "sales tax 2%"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_311206
+msgid "spend on shares"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122012
+msgid "systems and methods"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611020
+msgid "technical right"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121001
+msgid "the buildings"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121605
+msgid "the cost of years"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121201
+msgid "the earth"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_121005
+msgid "vehicles"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_122003
+msgid "water deposit"
+msgstr ""
+
+#. module: l10n_ir
+#: model:account.account.template,name:l10n_ir.ir_account_611022
+msgid "work conditions"
+msgstr ""
