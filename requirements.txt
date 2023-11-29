@@ -140,6 +140,7 @@ pymssql<=2.2.5
 sqlalchemy
 # generated from manifests external_dependencies
 pyrfc6266
+responses
 # generated from manifests external_dependencies
 pycountry
 schwifty

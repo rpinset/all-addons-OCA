@@ -65,6 +65,11 @@ msgid "Backend"
 msgstr ""
 
 #. module: connector_search_engine
+#: model:ir.model.fields,field_description:connector_search_engine.field_se_backend__backend_type_env_is_editable
+msgid "Backend Type Env Is Editable"
+msgstr ""
+
+#. module: connector_search_engine
 #: model:ir.ui.menu,name:connector_search_engine.se_backend_menu
 msgid "Backends"
 msgstr ""
@@ -738,6 +743,11 @@ msgid "Type"
 msgstr ""
 
 #. module: connector_search_engine
+#: model:ir.model.fields,field_description:connector_search_engine.field_se_backend__backend_type_env_default
+msgid "Type Env Default"
+msgstr ""
+
+#. module: connector_search_engine
 #: model:ir.model.fields,help:connector_search_engine.field_se_backend__tech_name
 msgid "Unique name for technical purposes. Eg: server env keys."
 msgstr ""
@@ -749,5 +759,5 @@ msgstr ""
 
 #. module: connector_search_engine
 #: model:ir.model,name:connector_search_engine.model_se_binding_state_updater
-msgid "se.binding.state.updater"
+msgid "Update state of SE bindings"
 msgstr ""

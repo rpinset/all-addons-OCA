@@ -1,3 +1,30 @@
+16.0.0.1.4 (2023-11-29)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Fix error when calling the methods *export_record* or *delete_record* from
+  the *se.binding* model when called on a recordset with items from different
+  *se.backend*.
+
+  The *export* and *delete* methods involves the use of a *Backend Adapter* to
+  communicate with the target search engine. We then need to process the bindings
+  by backend to call the correct adapter and ensure at same time a batch process
+  of the requested operation for all the records linked to the same backend. (`#173 <https://github.com/OCA/search-engine/issues/173>`_)
+
+
+16.0.0.1.2 (2023-11-28)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Add missing description on the "se.binding.state.updater" model. As well as
+  ensuring consistency in the model definition, this change removes a
+  warning message from the server logs at registry load time.
+
+  Prevent warning message in server logs when running tests. (`#172 <https://github.com/OCA/search-engine/issues/172>`_)
+
+
 16.0.0.1.1 (2023-10-13)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
