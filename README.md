@@ -131,11 +131,11 @@ Date:   Wed Nov 15 20:01:27 2023 +0100
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit 8e32cc711326cec92f6576f4e301635cfc839220
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:41:07 2023 +0100
+commit f476c1a4244c6b44eeed84106142554b52a62097
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 27 19:31:27 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## credit-control
@@ -788,11 +788,11 @@ Date:   Sun Nov 12 15:54:10 2023 +0100
 
 ## l10n-mexico
 From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
-commit 2ff418bf484403fb5364eccf9a14fe074b2d8069
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:54:23 2023 +0100
+commit bc1df71cc61162b5323fc150b012b5ca38e8bd6a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Nov 29 18:49:26 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-morocco
@@ -869,11 +869,11 @@ Date:   Sun Nov 12 15:56:22 2023 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3e071ff6e06681087c256d8cee71359fd186ccd2
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:56:56 2023 +0100
+commit 29137bb05bf05d3c2806b5a9594ee8f85096bad0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Nov 26 14:31:56 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1058,11 +1058,11 @@ Date:   Sun Nov 12 16:00:04 2023 +0100
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 4f319cc0e84b327a66d3ceb1f51df54d3a6809ac
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:59:33 2023 +0100
+commit e2c681a9a15e449f512d92ee35fdd7f9b90889f8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Nov 27 11:32:28 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## pms
@@ -1265,11 +1265,11 @@ Date:   Sun Nov 12 14:06:00 2023 +0100
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit ad546e3d6e68089daa08e7c37a91c02e4313d991
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:09:24 2023 +0100
+commit 32b03504b6ece5929ec64a4faa7665f69c9ded0a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Nov 26 09:34:46 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## server-env
