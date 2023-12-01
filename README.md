@@ -305,16 +305,11 @@ Date:   Thu Jan 6 08:11:01 2022 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit ae2bf9eda277c46c671b45d7c72e89a23cb81a2a
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Nov 27 14:42:25 2023 +0000
+commit af1cca2ed581cff439a27d2c0163be94e692105f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Nov 30 12:02:27 2023 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: queue-12.0/queue-12.0-queue_job
-    Translate-URL: https://translation.odoo-community.org/projects/queue-12-0/queue-12-0-queue_job/
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -423,16 +418,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7f78db5f6b75ff32390552ba0fc50de799c3c9dc
+commit 4693c227a90d084ba36305c88afbf34741c3d529
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 21 12:23:01 2023 +0000
+Date:   Fri Dec 1 15:23:24 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (154 of 154 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_blanket_order/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_triple_discount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_triple_discount/it/
 
 
 ## crm
@@ -539,9 +534,9 @@ Date:   Tue Oct 10 00:58:08 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 1e0b02bf58d5e81b02455ff027ed08b7c1b3d1eb
+commit ab4a875ea41c144e6d6f1418f183e56efb0c9fcd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 15:19:27 2023 +0000
+Date:   Fri Dec 1 10:57:21 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1208,16 +1203,16 @@ Date:   Wed Nov 22 07:35:10 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 58cc42a300b08116815d603b8c37261fe48cc877
+commit e1906abc473c1e2e5626d30b27b7cc9b09ae45ea
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 15:33:18 2023 +0000
+Date:   Fri Dec 1 10:26:25 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (114 of 114 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
+    Translation: manufacture-12.0/manufacture-12.0-quality_control_issue
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_issue/it/
 
 
 ## manufacture-reporting
@@ -1412,16 +1407,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit a48005be019348c31130080b19982bc007994754
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:15:38 2023 +0000
+commit 5bb088ec5541a9068bd3fdc318408f38dbbadef2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Dec 1 10:25:31 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: social-12.0/social-12.0-email_template_qweb
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-email_template_qweb/
+    Translation: social-12.0/social-12.0-mail_activity_done
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_activity_done/it/
 
 
 ## storage
@@ -1481,16 +1476,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 417094391fd2c57e4e4d7b2f448d0f04029e99fe
+commit 003896ae2e9d326a7d2ce13a6c3441b6dcb0e8ca
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 28 12:09:43 2023 +0000
+Date:   Fri Dec 1 08:58:47 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 60.0% (51 of 85 strings)
+    Currently translated at 85.3% (151 of 177 strings)
     
-    Translation: server-tools-12.0/server-tools-12.0-auto_backup
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auto_backup/it/
+    Translation: server-tools-12.0/server-tools-12.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-excel_import_export/it/
 
 
 ## server-auth
