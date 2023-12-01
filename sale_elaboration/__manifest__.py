@@ -3,11 +3,12 @@
 {
     "name": "Sale Elaboration",
     "summary": "Set an elaboration for any sale line",
-    "version": "15.0.3.2.1",
+    "version": "15.0.3.3.0",
     "development_status": "Production/Stable",
     "category": "Sale",
     "website": "https://github.com/OCA/sale-workflow",
     "author": "Tecnativa, Odoo Community Association (OCA)",
+    "maintainers": ["CarlosRoca13", "sergio-teruel"],
     "license": "AGPL-3",
     "application": False,
     "installable": True,

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-24 20:27+0000\n"
-"PO-Revision-Date: 2023-04-24 22:27+0200\n"
+"POT-Creation-Date: 2023-12-01 09:40+0000\n"
+"PO-Revision-Date: 2023-12-01 10:42+0100\n"
 "Last-Translator: Sergio Teruel <sergio.teruel@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #. module: sale_elaboration
 #: model_terms:ir.ui.view,arch_db:sale_elaboration.report_delivery_document
@@ -91,6 +91,11 @@ msgstr "Mostrar elaboraciones en los albaranes"
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration_profile__display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
+
+#. module: sale_elaboration
+#: model:ir.model.fields,help:sale_elaboration.field_sale_order_line__is_prepared
+msgid "Dummy field to be able to find prepared lines"
+msgstr ""
 
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_sale_order_line__elaboration_price_unit
@@ -179,6 +184,17 @@ msgstr "Incluir notas de elaboración en los albaranes"
 #: model_terms:ir.ui.view,arch_db:sale_elaboration.view_sales_order_line_filter
 msgid "Is Elaboration"
 msgstr "Es elaboración"
+
+#. module: sale_elaboration
+#: model_terms:ir.ui.view,arch_db:sale_elaboration.view_sales_order_line_filter
+msgid "Is Not Prepared"
+msgstr ""
+
+#. module: sale_elaboration
+#: model:ir.model.fields,field_description:sale_elaboration.field_sale_order_line__is_prepared
+#: model_terms:ir.ui.view,arch_db:sale_elaboration.view_sales_order_line_filter
+msgid "Is Prepared"
+msgstr ""
 
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration____last_update
@@ -305,3 +321,9 @@ msgstr "Regla de Inventario"
 #: model:ir.model,name:sale_elaboration.model_stock_picking
 msgid "Transfer"
 msgstr "Albarán"
+
+#. module: sale_elaboration
+#: code:addons/sale_elaboration/models/sale_order.py:0
+#, python-format
+msgid "Unsupported operator %s for searching on is_prepared"
+msgstr "Operador no compatible %s para buscar en is_prepared"
