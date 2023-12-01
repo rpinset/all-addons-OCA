@@ -569,16 +569,16 @@ Date:   Mon Oct 23 13:43:23 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 5b4ec50aba6d29c777f60e547ac2ae144225dbed
+commit 4b9705d7ae721ced1245c12475b7287dc0c86902
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 15:19:24 2023 +0000
+Date:   Fri Dec 1 10:57:19 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (333 of 333 strings)
+    Currently translated at 100.0% (75 of 75 strings)
     
-    Translation: dms-13.0/dms-13.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
+    Translation: dms-13.0/dms-13.0-dms_field
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms_field/it/
 
 
 ## e-commerce
@@ -1574,11 +1574,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 466d907df18064ee3e1cd1cd50303d6d36443b10
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 27 18:52:28 2023 +0000
+commit b4fa1fe91130abf809f1ed29bca8f5d7ff104ea6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Dec 1 10:25:30 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 94.7% (18 of 19 strings)
+    
+    Translation: social-13.0/social-13.0-mail_activity_board
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_activity_board/it/
 
 
 ## storage
