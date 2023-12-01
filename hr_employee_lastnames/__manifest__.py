@@ -1,9 +1,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "HR Employee First Name and Two Last Names",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.0.2",
     "author": "Vauxoo, Odoo Community Association (OCA)",
-    "maintainer": "Vauxoo",
+    "maintainers": ["luisg123v"],
     "website": "https://github.com/OCA/hr",
     "license": "AGPL-3",
     "category": "Human Resources",
