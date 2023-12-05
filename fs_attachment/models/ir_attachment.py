@@ -112,9 +112,14 @@ class IrAttachment(models.Model):
     @api.depends("fs_filename")
     def _compute_fs_url(self) -> None:
         for rec in self:
-            rec.fs_url = None
+            new_url = None
+            actual_url = rec.fs_url or None
             if rec.fs_filename:
-                rec.fs_url = self.env["fs.storage"]._get_url_for_attachment(rec)
+                new_url = self.env["fs.storage"]._get_url_for_attachment(rec)
+            # ensure we compare value of same type and not None with False
+            new_url = new_url or None
+            if new_url != actual_url:
+                rec.fs_url = new_url
 
     @api.depends("fs_filename")
     def _compute_fs_url_path(self) -> None:
@@ -130,7 +135,7 @@ class IrAttachment(models.Model):
         for rec in self:
             if rec.store_fname:
                 code = rec.store_fname.partition("://")[0]
-                fs_storage = self.env["fs.storage"].get_by_code(code)
+                fs_storage = self.env["fs.storage"].sudo().get_by_code(code)
                 if fs_storage != rec.fs_storage_id:
                     rec.fs_storage_id = fs_storage
             elif rec.fs_storage_id:
