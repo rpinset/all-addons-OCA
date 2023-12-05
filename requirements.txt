@@ -1,4 +1,6 @@
 # generated from manifests external_dependencies
+requests
+# generated from manifests external_dependencies
 pdfminer.six==20220319
 # generated from manifests external_dependencies
 pycountry

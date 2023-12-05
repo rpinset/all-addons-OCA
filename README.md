@@ -212,11 +212,11 @@ Date:   Sun Nov 12 15:36:08 2023 +0100
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit c0652835967ebfd14def5c8547b9d03868990c9f
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:05:36 2023 +0100
+commit a70fda89c4583b2a4bbe272767a45dab4b18a369
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 5 08:37:22 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -338,11 +338,11 @@ Date:   Fri Nov 24 19:16:46 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit edf3c0a14102c259e263f38ae714abdb1f85cc61
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:02:01 2023 +0100
+commit 91354f05471284c176d00d6ae7fbc96b1ce5ee16
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Dec 5 15:07:51 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## sale-financial
