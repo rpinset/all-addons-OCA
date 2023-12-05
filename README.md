@@ -119,16 +119,16 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 01306fd6d22325f429b81dd85074870acb2ee983
+commit 52af89097b2efef95f1c8a35e542e053781b4165
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 9 15:34:24 2023 +0000
+Date:   Mon Dec 4 06:46:40 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (39 of 39 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_supplierinfo_update
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_supplierinfo_update/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_fixed_discount
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_fixed_discount/it/
 
 
 ## account-fiscal-rule
@@ -198,16 +198,16 @@ Date:   Mon Oct 9 23:05:12 2023 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit dabf6ad106e538e11f1be1d1510f6d9f68866383
+commit 5b5905bd3cf72f731fc367f52f5f400d5b0771f8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 23 13:13:19 2023 +0000
+Date:   Mon Dec 4 06:36:11 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 94.7% (179 of 189 strings)
+    Currently translated at 11.5% (32 of 277 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_credit_control
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_credit_control/it/
 
 
 ## data-protection
@@ -418,16 +418,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4693c227a90d084ba36305c88afbf34741c3d529
+commit e026a2c047122798451558c25a94b602ec3e93cc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 15:23:24 2023 +0000
+Date:   Mon Dec 4 06:46:43 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_triple_discount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_triple_discount/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_fixed_discount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_fixed_discount/it/
 
 
 ## crm
@@ -1115,16 +1115,16 @@ Date:   Fri Nov 24 14:59:38 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 6ff6eb677f0b58669310a56e3c1a7cf6dd855daf
+commit 60e905794e75628e262dd878d8e7c57624f753ed
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 14:07:32 2023 +0000
+Date:   Mon Dec 4 07:13:21 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_backorder_strategy
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_backorder_strategy/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_back2draft
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_back2draft/it/
 
 
 ## stock-logistics-tracking
