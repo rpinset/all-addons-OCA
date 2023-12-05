@@ -943,11 +943,11 @@ Date:   Sun Sep 3 13:33:05 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 7d81b766c12e5a6b28ec28e597767800ba7a1cf5
+commit a4ea29263dfe156d572f81917104a8fe5f70d229
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 13:36:18 2023 +0000
+Date:   Mon Dec 4 07:52:17 2023 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## l10n-greece
@@ -1280,16 +1280,16 @@ Date:   Fri Nov 24 14:59:45 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 4529910dcc14aafe41eab762a5d7ef7e64cc6937
+commit e9f89d504e640578038994b0f519c6b1a7421de8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 11:12:10 2023 +0000
+Date:   Mon Dec 4 07:12:43 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.7% (60 of 62 strings)
+    Currently translated at 100.0% (16 of 16 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_package_preparation
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_package_preparation/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_lock_lot
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_lock_lot/it/
 
 
 ## stock-logistics-tracking
