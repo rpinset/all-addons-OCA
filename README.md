@@ -280,16 +280,16 @@ Date:   Tue Oct 10 00:30:12 2023 +0000
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit 79b33d027dc6cc56d44e4aae710d0920dc1c5423
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:02:38 2023 +0000
+commit 3e1c6e87590a1a37e3d61ba814d1feca89b6a939
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 7 16:24:45 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 27.0% (20 of 74 strings)
     
-    Translation: connector-13.0/connector-13.0-component
-    Translate-URL: https://translation.odoo-community.org/projects/connector-13-0/connector-13-0-component/
+    Translation: connector-13.0/connector-13.0-connector
+    Translate-URL: https://translation.odoo-community.org/projects/connector-13-0/connector-13-0-connector/it/
 
 
 ## connector-ecommerce
@@ -308,11 +308,16 @@ Date:   Mon Oct 9 23:10:15 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 6b26044887f5cdcc83516394ce0477e7ff12769f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 28 12:19:36 2023 +0000
+commit b7db58df4a61d1320b3e464e0fe9fd2ef27ed73f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 7 16:24:45 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: queue-13.0/queue-13.0-queue_job_subscribe
+    Translate-URL: https://translation.odoo-community.org/projects/queue-13-0/queue-13-0-queue_job_subscribe/it/
 
 
 ## connector-accountedge
@@ -513,9 +518,9 @@ Date:   Mon Oct 9 21:34:04 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 351cf3c4f76e81ccbb35bc28f4d344f16c8346ae
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 11:00:42 2023 +0000
+commit 1fbe8866d205dbb67e7efb745b12b77b518ceea3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 6 15:50:09 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1359,16 +1364,16 @@ Date:   Thu Nov 23 16:23:51 2023 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit efe7807d442e24139687e2180514b440a7327132
+commit db41814028e34730562bfca30da52974925297c0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 16:05:55 2023 +0000
+Date:   Wed Dec 6 12:21:57 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (63 of 63 strings)
+    Currently translated at 100.0% (99 of 99 strings)
     
-    Translation: wms-13.0/wms-13.0-stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_available_to_promise_release/it/
+    Translation: wms-13.0/wms-13.0-stock_reception_screen
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_reception_screen/it/
 
 
 ## manufacture
@@ -1408,9 +1413,9 @@ Date:   Fri Nov 17 17:38:39 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e52f3e44d12b6bf0f86002d0051e69c96c2ab487
+commit 0c9831661b77ab9a59df5a5a61fa1091f9873758
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 15:33:07 2023 +0000
+Date:   Wed Dec 6 15:35:00 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1436,16 +1441,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 7af2d58c2259354ed9705941abc185e7626457b8
+commit 0f4b66a8881212e607f2988709fb70ca730135f6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 12:29:48 2023 +0000
+Date:   Wed Dec 6 09:56:56 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_variant_attribute_name_manager
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_variant_attribute_name_manager/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_exception
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/it/
 
 
 ## product-kitting
@@ -1574,9 +1579,9 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit b4fa1fe91130abf809f1ed29bca8f5d7ff104ea6
+commit 3666ccc2335cd6c03a3383aa4d12369e97488d90
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 10:25:30 2023 +0000
+Date:   Thu Dec 7 14:33:21 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1696,16 +1701,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 0b520d07619041cfb820a3d0b1e650c687702f42
+commit 06e75a5d837e5183f05991f4e62431b08a81bf44
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 09:08:49 2023 +0000
+Date:   Wed Dec 6 11:13:50 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (32 of 32 strings)
+    Currently translated at 100.0% (35 of 35 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-mass_operation_abstract
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_operation_abstract/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
 
 
 ## community-data-files
