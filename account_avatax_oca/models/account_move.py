@@ -385,7 +385,7 @@ class AccountMove(models.Model):
                     line._origin.price_unit != line.price_unit
                     or line._origin.discount != line.discount
                     or line._origin.quantity != line.quantity
-                ) and not line.display_type:
+                ) and line.display_type == "product":
                     self.calculate_tax_on_save = True
                     break
 
@@ -501,23 +501,3 @@ class AccountMoveLine(models.Model):
         for line in self:
             line.avatax_amt_line = 0.0
             line.move_id.avatax_amount = 0.0
-
-    def _get_price_total_and_subtotal(
-        self,
-        price_unit=None,
-        quantity=None,
-        discount=None,
-        currency=None,
-        product=None,
-        partner=None,
-        taxes=None,
-        move_type=None,
-    ):
-        """Override tax amount, if we have an Avatax calculated amount"""
-        self.ensure_one()
-        res = super()._get_price_total_and_subtotal(
-            price_unit, quantity, discount, currency, product, partner, taxes, move_type
-        )
-        if self.avatax_amt_line:
-            res["price_total"] = res["price_total"] + self.avatax_amt_line
-        return res
