@@ -282,16 +282,16 @@ Date:   Tue Oct 10 00:08:15 2023 +0000
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit 415b54add9c97eef624d51a5b6825328c59cc51b
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 01:27:19 2023 +0000
+commit 31e1cb4acf6f377c3d54fce486dad1a6d588db2e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 7 16:24:43 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 27.3% (20 of 73 strings)
     
-    Translation: connector-12.0/connector-12.0-component
-    Translate-URL: https://translation.odoo-community.org/projects/connector-12-0/connector-12-0-component/
+    Translation: connector-12.0/connector-12.0-connector
+    Translate-URL: https://translation.odoo-community.org/projects/connector-12-0/connector-12-0-connector/it/
 
 
 ## connector-ecommerce
@@ -305,11 +305,16 @@ Date:   Thu Jan 6 08:11:01 2022 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit af1cca2ed581cff439a27d2c0163be94e692105f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 30 12:02:27 2023 +0000
+commit 64489be015bda1f10f28d5c764a9b8024813c961
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Dec 7 16:24:44 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 60.0% (3 of 5 strings)
+    
+    Translation: queue-12.0/queue-12.0-queue_job_subscribe
+    Translate-URL: https://translation.odoo-community.org/projects/queue-12-0/queue-12-0-queue_job_subscribe/it/
 
 
 ## connector-accountedge
@@ -359,13 +364,13 @@ Date:   Tue Nov 19 20:53:58 2019 +0100
 
 ## connector-magento
 From [https://github.com/OCA/connector-magento.git](https://github.com/OCA/connector-magento.git)
-commit 4ad07077e2dcc431355a1dddf4dc7448bde2e9ef
+commit 041379124a2b3fd21c3b93c7f4ed037cc7059ba5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 10:14:27 2023 +0000
+Date:   Wed Dec 6 07:53:47 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 21.1% (173 of 818 strings)
+    Currently translated at 21.2% (174 of 818 strings)
     
     Translation: connector-magento-12.0/connector-magento-12.0-connector_magento
     Translate-URL: https://translation.odoo-community.org/projects/connector-magento-12-0/connector-magento-12-0-connector_magento/it/
@@ -418,16 +423,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit e026a2c047122798451558c25a94b602ec3e93cc
+commit 2adcedb4f0627f071448d801765feb3f3cca6756
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 4 06:46:43 2023 +0000
+Date:   Thu Dec 7 16:30:26 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_fixed_discount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_fixed_discount/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_delivery_state
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_delivery_state/it/
 
 
 ## crm
@@ -464,9 +469,9 @@ Date:   Tue Nov 19 21:13:10 2019 +0100
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit ca451ed3390970979c10de4b6e29068d6b3fb9f9
+commit d772feba2f54b48a5108e3dbe7189a82c5be6cfc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Oct 29 14:59:09 2023 +0000
+Date:   Wed Dec 6 15:34:57 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -478,9 +483,9 @@ Date:   Sun Oct 29 14:59:09 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 37b14f4073e4fdaa1a79d1952ed70eea9b0bf3b5
+commit fa6f959786a6bdf7c283690c1d13c0cd7c410f11
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 15:23:38 2023 +0000
+Date:   Wed Dec 6 15:50:11 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -492,16 +497,16 @@ Date:   Fri Nov 24 15:23:38 2023 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 7eaab6d0030df4cbcea84a3277a106f5201eaae5
+commit 9368da424a0bba0b20c7daee0dd2076d5693e871
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 23 12:52:14 2023 +0000
+Date:   Thu Dec 7 14:09:16 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: event-12.0/event-12.0-website_event_crm
-    Translate-URL: https://translation.odoo-community.org/projects/event-12-0/event-12-0-website_event_crm/it/
+    Translation: event-12.0/event-12.0-event_registration_mass_mailing
+    Translate-URL: https://translation.odoo-community.org/projects/event-12-0/event-12-0-event_registration_mass_mailing/it/
 
 
 ## survey
@@ -1115,16 +1120,16 @@ Date:   Fri Nov 24 14:59:38 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 60e905794e75628e262dd878d8e7c57624f753ed
+commit f481db4efa50573c6d724b919373c89b6da60d81
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 4 07:13:21 2023 +0000
+Date:   Wed Dec 6 12:38:12 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_back2draft
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_back2draft/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_return_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_return_request/it/
 
 
 ## stock-logistics-tracking
@@ -1245,16 +1250,16 @@ Date:   Mon Oct 9 22:37:04 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 5af45cf562d9c15e4e9777f70912fbbf6d04a0ac
+commit d54af4315e4f4f16f5aa5414727d57b14190e31a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 15:33:47 2023 +0000
+Date:   Wed Dec 6 15:34:55 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.3% (206 of 223 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_line_price_history/it/
 
 
 ## purchase-reporting
@@ -1407,16 +1412,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 5bb088ec5541a9068bd3fdc318408f38dbbadef2
+commit d59cf81bb2f21296db49e4ec853d6871d0f36b97
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 10:25:31 2023 +0000
+Date:   Thu Dec 7 14:33:24 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 86.3% (19 of 22 strings)
     
-    Translation: social-12.0/social-12.0-mail_activity_done
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_activity_done/it/
+    Translation: social-12.0/social-12.0-mail_activity_board
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_activity_board/it/
 
 
 ## storage
@@ -1476,9 +1481,9 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 003896ae2e9d326a7d2ce13a6c3441b6dcb0e8ca
+commit 8916ee2bacbf295d524982da2bc0a8656fb16623
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 08:58:47 2023 +0000
+Date:   Thu Dec 7 10:26:35 2023 +0000
 
     Translated using Weblate (Italian)
     
