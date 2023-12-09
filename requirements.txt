@@ -1,7 +1,14 @@
 # generated from manifests external_dependencies
+cachetools
+# generated from manifests external_dependencies
 requests
 # generated from manifests external_dependencies
+zeep
+# generated from manifests external_dependencies
 pdfminer.six==20220319
+# generated from manifests external_dependencies
+xlrd
+xlsxwriter
 # generated from manifests external_dependencies
 pycountry
 schwifty

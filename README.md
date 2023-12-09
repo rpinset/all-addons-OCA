@@ -41,11 +41,11 @@ Date:   Sun Nov 12 15:24:31 2023 +0100
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 20e946d10de8eddaf99f370ebe2ea3d084d79102
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:24:47 2023 +0100
+commit 7af79e18eab0c035a6732026e646125d45fbb33a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 9 07:45:08 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## account-consolidation
@@ -59,11 +59,11 @@ Date:   Sun Nov 12 15:25:00 2023 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 91df136869134295ba4c75faffc4aa3ce40d57ee
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:25:38 2023 +0100
+commit 39f37c52458368ce2ec1741980c20b8bb69dde6b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 7 04:39:23 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -77,11 +77,11 @@ Date:   Sun Nov 12 15:25:17 2023 +0100
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit c0686ce2978b263aec61b1ea742ba4ad4511764b
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:26:07 2023 +0100
+commit 40918ff3adb7aba0a1d46b460eff5d3dbf90d615
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 9 07:41:58 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## account-invoicing
@@ -194,11 +194,11 @@ Date:   Sun Nov 12 15:26:36 2023 +0100
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit 6f10c340db1e5e52211300b3d26d07ffbdfac909
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:35:27 2023 +0100
+commit 100e651a9ca513e2d311ae205a51a2a8710b3b5b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 9 07:41:57 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## connector-ecommerce
@@ -338,9 +338,9 @@ Date:   Fri Nov 24 19:16:46 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 91354f05471284c176d00d6ae7fbc96b1ce5ee16
+commit 3a5b300c473c3674ca00ec121f8023301d230398
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 5 15:07:51 2023 +0000
+Date:   Fri Dec 8 14:35:06 2023 +0000
 
     [BOT] post-merge updates
 
@@ -581,11 +581,11 @@ Date:   Sun Nov 12 15:48:15 2023 +0100
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit 8c8f34472b22733d67c8226e264fc59c80a50305
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:48:28 2023 +0100
+commit 7ef7270637dedc0aed728d8c356acd8851d1170a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 6 15:53:02 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-cambodia
@@ -977,11 +977,11 @@ Date:   Sun Nov 12 16:11:35 2023 +0100
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 4512d085b65aa35d3c8d51a20acc4ad97ac17395
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:13:23 2023 +0100
+commit 622c18a969811506d75b5dac6f8750eafa5453b6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 8 08:02:03 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1094,11 +1094,11 @@ Date:   Sun Nov 12 16:04:46 2023 +0100
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 6a88bca2ea49c970c72855a7a11f14adab084369
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:02:45 2023 +0100
+commit 594fe52e0ec92283303092770216800770196d89
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 7 19:42:08 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1229,11 +1229,11 @@ Date:   Sun Nov 12 16:09:11 2023 +0100
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit a1cde6a5dcf90922fd45ab44b9557f365f149730
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:06:48 2023 +0100
+commit 9c9a7e4413fa397a6b11c77e3acb78e6d8da2679
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 9 14:03:50 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## report-print-send
@@ -1256,11 +1256,11 @@ Date:   Sun Nov 12 16:18:29 2023 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 48aa1948598feff4cdca665399c705f1f957f9ac
-Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
-Date:   Sun Nov 12 14:06:00 2023 +0100
+commit fbc65ca03f1e5238459a5005b97d069881569da4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 9 15:28:11 2023 +0000
 
-    Update dotfiles
+    [BOT] post-merge updates
 
 
 ## server-auth
