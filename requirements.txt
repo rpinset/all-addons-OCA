@@ -108,6 +108,7 @@ xmlsig
 xmltodict
 zeep
 # generated from manifests external_dependencies
+ebilling_postfinance
 quickpac
 unidecode
 zeep
@@ -160,6 +161,7 @@ unidecode
 # generated from manifests external_dependencies
 cryptography
 endesive
+fdfgen
 py3o.formats
 py3o.template
 # generated from manifests external_dependencies
