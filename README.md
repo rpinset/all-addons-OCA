@@ -451,11 +451,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 357e3cfbcac7c93b4afe5cd99b91b6427f6f61cf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 26 21:17:35 2023 +0000
+commit 93d2999f3275fd6b4a5626ff5148bfee8878d4d0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 13 11:11:29 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 88.5% (31 of 35 strings)
+    
+    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_order_type/it/
 
 
 ## crm
@@ -574,16 +579,16 @@ Date:   Mon Oct 23 13:43:23 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 4b9705d7ae721ced1245c12475b7287dc0c86902
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 10:57:19 2023 +0000
+commit 3c24c1955a4b7a792fb895106f5ea1b466ffcd27
+Author: GoodERP Jeff Wang <jeff@osbzr.com>
+Date:   Mon Dec 11 07:58:58 2023 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Chinese (Simplified) (zh_CN))
     
-    Currently translated at 100.0% (75 of 75 strings)
+    Currently translated at 50.4% (168 of 333 strings)
     
-    Translation: dms-13.0/dms-13.0-dms_field
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms_field/it/
+    Translation: dms-13.0/dms-13.0-dms
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/zh_CN/
 
 
 ## e-commerce
