@@ -158,9 +158,9 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 35c4c673e3285638a205490f82f9e48a73c4851f
+commit 7c04134f85979313933659d13aaed18adf640b08
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Nov 25 09:12:04 2023 +0000
+Date:   Wed Dec 13 07:39:20 2023 +0000
 
     [BOT] post-merge updates
 
@@ -194,9 +194,9 @@ Date:   Sun Nov 12 15:26:36 2023 +0100
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit 100e651a9ca513e2d311ae205a51a2a8710b3b5b
+commit 386df96cfdc9cffabaea19f3ab2fb6426e3de0fd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 9 07:41:57 2023 +0000
+Date:   Mon Dec 11 16:16:57 2023 +0000
 
     [BOT] post-merge updates
 
@@ -212,9 +212,9 @@ Date:   Sun Nov 12 15:36:08 2023 +0100
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit a70fda89c4583b2a4bbe272767a45dab4b18a369
+commit 5b7a26f59d5798267ecc670757231da54346452f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 5 08:37:22 2023 +0000
+Date:   Wed Dec 13 10:41:08 2023 +0000
 
     [BOT] post-merge updates
 
@@ -338,9 +338,9 @@ Date:   Fri Nov 24 19:16:46 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 3a5b300c473c3674ca00ec121f8023301d230398
+commit 00153bda05b14d3249c2ed3c4b9128b33aa1ff72
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 8 14:35:06 2023 +0000
+Date:   Mon Dec 11 17:44:31 2023 +0000
 
     [BOT] post-merge updates
 
@@ -653,11 +653,11 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 3551e262fa8a631a0c12891723acfb255d73c0d1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:50:46 2023 +0100
+commit fa6f08a1c545718dbd94f4e5335bcac617095773
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 13 12:31:53 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-estonia
@@ -680,11 +680,11 @@ Date:   Sun Nov 12 15:51:13 2023 +0100
 
 ## l10n-finland
 From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
-commit a7b5cb253849fd3a263689f16462b253053b2acc
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:51:26 2023 +0100
+commit 40aa6f45c43d9d72aa32a311e2bdfebadc0797dd
+Author: oca-ci <oca-ci@odoo-community.org>
+Date:   Tue Dec 12 07:44:43 2023 +0000
 
-    Initialize 17.0 branch
+    [UPD] Update l10n_fi_edicode.pot
 
 
 ## l10n-france
@@ -734,11 +734,11 @@ Date:   Sun Nov 12 15:52:34 2023 +0100
 
 ## l10n-iran
 From [https://github.com/OCA/l10n-iran.git](https://github.com/OCA/l10n-iran.git)
-commit b88f56772a9f9537b24396a2f1668fe7cae0f865
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:52:47 2023 +0100
+commit e3d3e2f08f71e5c0b61838d9c4910f3f0195465d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 11 11:19:31 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-ireland
@@ -1256,9 +1256,9 @@ Date:   Sun Nov 12 16:18:29 2023 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit fbc65ca03f1e5238459a5005b97d069881569da4
+commit 235cf3e9273d989f6af0771a3d5ecd83a601f5ec
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 9 15:28:11 2023 +0000
+Date:   Wed Dec 13 19:40:11 2023 +0000
 
     [BOT] post-merge updates
 
