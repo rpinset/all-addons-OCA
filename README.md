@@ -94,11 +94,16 @@ Date:   Fri Oct 27 22:14:04 2023 +0200
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 6151c0ed784bf49ca1053885777e1a4410022553
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 28 08:24:19 2023 +0000
+commit 6d49eacd290147de320c18d1e9d8607d683267eb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 13 11:18:59 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-invoicing-15.0/account-invoicing-15.0-stock_picking_invoicing_incoterm
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-stock_picking_invoicing_incoterm/it/
 
 
 ## account-fiscal-rule
@@ -156,9 +161,9 @@ Date:   Fri Oct 27 23:59:16 2023 +0200
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 68ec95349caf226459ac864c6f198852178da3a4
+commit 4d19c3a9630fded39ea8ed74084c6d2996de5cbf
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 19:03:40 2023 +0000
+Date:   Mon Dec 11 09:51:47 2023 +0000
 
     [BOT] post-merge updates
 
@@ -351,30 +356,25 @@ Date:   Fri Oct 27 23:37:22 2023 +0200
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2be8ebc954f4d177aac0e5b36cbf1cf5810d1483
-Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
-Date:   Mon Dec 4 11:21:27 2023 +0000
+commit 9fe378becb3f2365e8dfad2ada16fd42211ea7b8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 13 19:55:17 2023 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 98.1% (52 of 53 strings)
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_elaboration
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_elaboration/es/
+    [BOT] post-merge updates
 
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 70c8139cdeb56b44f897ecaa088d3766d454c2e8
+commit 68e2518050d09bb7072ab0c79def19b883c1d9c9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Nov 12 14:28:11 2023 +0000
+Date:   Wed Dec 13 10:16:46 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (195 of 195 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: crm-15.0/crm-15.0-crm_salesperson_planner
-    Translate-URL: https://translation.odoo-community.org/projects/crm-15-0/crm-15-0-crm_salesperson_planner/it/
+    Translation: crm-15.0/crm-15.0-crm_multicompany_reporting_currency
+    Translate-URL: https://translation.odoo-community.org/projects/crm-15-0/crm-15-0-crm_multicompany_reporting_currency/it/
 
 
 ## partner-contact
@@ -471,16 +471,11 @@ Date:   Sun Oct 29 07:08:24 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 29e837362f8b704ee784280d154b774fde6cb82d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 1 10:57:19 2023 +0000
+commit 639272a09d5e4f01c1dd2fdfee88b32ae5b2118d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 13 13:10:22 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (75 of 75 strings)
-    
-    Translation: dms-15.0/dms-15.0-dms_field
-    Translate-URL: https://translation.odoo-community.org/projects/dms-15-0/dms-15-0-dms_field/it/
+    [BOT] post-merge updates
 
 
 ## e-commerce
@@ -503,16 +498,11 @@ Date:   Tue Nov 28 12:39:53 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit bfbb5ea2e9bd49f8cef7ccb097d253f6017f423c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 4 06:57:40 2023 +0000
+commit 2442d0db98e2db0109fe97f92ce36b1eee6a99b2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 13 15:15:22 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (27 of 27 strings)
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_skill
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_skill/it/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -600,16 +590,16 @@ Date:   Wed Nov 15 15:07:27 2023 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 8451c1fb049dc2b48947ee6c4a3c3db9d9e70d7e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 6 10:51:41 2023 +0000
+commit 6c7ed28e8a0e5c623cd6f1845a16b937fa44bef7
+Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
+Date:   Sun Dec 10 15:20:20 2023 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Danish)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 50.8% (29 of 57 strings)
     
-    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_tier_validation/it/
+    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_advance_clearing
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_advance_clearing/da/
 
 
 ## hr-holidays
@@ -956,16 +946,11 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit a2cacde3d72195a07e1b4bf7e9f03fb0cc6ef758
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Nov 23 09:08:46 2023 +0000
+commit 53c7eb1a223749ffb25c686ba98bc12fda0456bf
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 13 15:01:37 2023 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_account_anaf_sync
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_account_anaf_sync/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1134,11 +1119,16 @@ Date:   Fri Oct 27 22:32:08 2023 +0200
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 460a468edc2acea7b19b97e0e63cd59d7b63e6dd
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 4 18:34:57 2023 +0000
+commit 2fcb331290db84efa74e40774f0878e6671dbf90
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Dec 13 19:46:11 2023 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_secondary_unit/
 
 
 ## stock-logistics-reporting
@@ -1520,9 +1510,9 @@ Date:   Fri Oct 27 23:55:38 2023 +0200
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 93a519a923c36564c4735adf40cacc0eb2d50999
+commit d67f810aeb9f7585cf46cfea01e08035d56d51dc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 27 17:52:36 2023 +0000
+Date:   Mon Dec 11 08:27:42 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1612,9 +1602,9 @@ Date:   Fri Oct 27 16:13:23 2023 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit d6f705f41efd4e2387ae5929405dabfaf11c36dc
+commit 19ab4c46b7520e9767655ed761e09b11f47a25f9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 15:33:36 2023 +0000
+Date:   Wed Dec 13 10:16:44 2023 +0000
 
     Translated using Weblate (Italian)
     
