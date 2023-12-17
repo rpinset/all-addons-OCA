@@ -653,9 +653,9 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit fa6f08a1c545718dbd94f4e5335bcac617095773
+commit ec206d7a939a48bdc2d12e93bcc1975cdbd2916d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 13 12:31:53 2023 +0000
+Date:   Sat Dec 16 00:17:19 2023 +0000
 
     [BOT] post-merge updates
 
