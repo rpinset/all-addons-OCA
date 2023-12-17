@@ -423,16 +423,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 77bee58bce263fb295af2737fe064adcba409987
+commit 7cca3000852ae003107e31ec84095973b1507c44
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 13 10:25:59 2023 +0000
+Date:   Fri Dec 15 15:50:32 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_policy
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_policy/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
 
 
 ## crm
@@ -483,16 +483,16 @@ Date:   Wed Dec 6 15:34:57 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit fa6f959786a6bdf7c283690c1d13c0cd7c410f11
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 6 15:50:11 2023 +0000
+commit b98defbb16b8c63068d33e617dd30038a0313f51
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Dec 14 09:10:15 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 89.2% (150 of 168 strings)
+    Currently translated at 95.8% (23 of 24 strings)
     
-    Translation: commission-12.0/commission-12.0-sale_commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission/it/
+    Translation: commission-12.0/commission-12.0-sale_commission_product_based
+    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission_product_based/it/
 
 
 ## event
@@ -678,11 +678,16 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 9ac37e1d43fc3ace9831feba6bda086f0b9fe5a2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Oct 29 18:58:23 2023 +0000
+commit 4588185e841c8644313ffce22f143c97a1545672
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Dec 16 08:23:28 2023 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: multi-company-12.0/multi-company-12.0-mail_multicompany
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-12-0/multi-company-12-0-mail_multicompany/
 
 
 ## l10n-argentina
@@ -1250,16 +1255,16 @@ Date:   Mon Oct 9 22:37:04 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit be333ef4a6165861485f5b8da53ea883e04891b3
+commit 764c86a3aebcfaf99997e2f510fadd0a758242ed
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 13 12:00:19 2023 +0000
+Date:   Fri Dec 15 15:48:14 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 79.3% (23 of 29 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_approved
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_approved/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_line_price_history/it/
 
 
 ## purchase-reporting
@@ -1278,16 +1283,16 @@ Date:   Mon Oct 9 20:48:09 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 6e860759f55cfad60075addf5a3a12507e57b5f4
+commit defde07f29b9a34d5e214eead1c7f9bb38f94aa4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Nov 22 07:28:29 2023 +0000
+Date:   Fri Dec 15 15:50:29 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: product-attribute-12.0/product-attribute-12.0-product_net_weight
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_net_weight/it/
+    Translation: product-attribute-12.0/product-attribute-12.0-product_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_price_history/it/
 
 
 ## product-kitting
@@ -1366,16 +1371,16 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 811d5eb35eb8511bbd6eaacbb36e5963d9719a4b
+commit 3b22ba5499ef14bf0b32c9c2576fb6410ec12356
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 3 12:17:30 2023 +0000
+Date:   Fri Dec 15 15:33:23 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 2.8% (2 of 70 strings)
+    Currently translated at 95.0% (285 of 300 strings)
     
-    Translation: contract-12.0/contract-12.0-agreement
-    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-agreement/it/
+    Translation: contract-12.0/contract-12.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-contract/it/
 
 
 ## business-requirement
