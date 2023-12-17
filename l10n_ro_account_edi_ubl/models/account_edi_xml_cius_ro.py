@@ -24,8 +24,8 @@ class AccountEdiXmlCIUSRO(models.Model):
                 partner.state_id.country_id.code + "-" + partner.state_id.code
             )
         # CIUS-RO replace spaces in city -- for Sector 1 -> Sector1
-        if partner.state_id.code == "B" and "sector" in partner.city:
-            vals["city"] = partner.city.upper().replace(" ", "")
+        if partner.state_id.code == "B" and "sector" in (partner.city or "").lower():
+            vals["city_name"] = partner.city.upper().replace(" ", "")
         return vals
 
     def _get_partner_party_tax_scheme_vals_list(self, partner, role):
@@ -161,3 +161,14 @@ class AccountEdiXmlCIUSRO(models.Model):
                 )
 
         return constraints
+
+    def _import_fill_invoice_line_taxes(
+        self, journal, tax_nodes, invoice_line_form, inv_line_vals, logs
+    ):
+        if not invoice_line_form.account_id:
+            invoice_line_form.account_id = journal.default_account_id
+        if not inv_line_vals.get("account_id"):
+            inv_line_vals["account_id"] = journal.default_account_id.id
+        return super()._import_fill_invoice_line_taxes(
+            journal, tax_nodes, invoice_line_form, inv_line_vals, logs
+        )

@@ -110,6 +110,13 @@ msgid "Binding Count"
 msgstr ""
 
 #. module: connector_search_engine
+#. odoo-python
+#: code:addons/connector_search_engine/models/se_binding.py:0
+#, python-format
+msgid "Binding model must be equal to the index model"
+msgstr ""
+
+#. module: connector_search_engine
 #: model:ir.model.fields,field_description:connector_search_engine.field_se_index_config__body
 msgid "Body"
 msgstr ""
@@ -276,11 +283,6 @@ msgstr ""
 #. module: connector_search_engine
 #: model_terms:ir.ui.view,arch_db:connector_search_engine.se_index_kanban_view
 msgid "Dropdown menu"
-msgstr ""
-
-#. module: connector_search_engine
-#: model:ir.model,name:connector_search_engine.model_se_index_config
-msgid "Elasticsearch index configuration"
 msgstr ""
 
 #. module: connector_search_engine
@@ -660,6 +662,11 @@ msgstr ""
 #. module: connector_search_engine
 #: model:ir.model,name:connector_search_engine.model_se_binding
 msgid "Search Engine Record"
+msgstr ""
+
+#. module: connector_search_engine
+#: model:ir.model,name:connector_search_engine.model_se_index_config
+msgid "Search engine index configuration"
 msgstr ""
 
 #. module: connector_search_engine

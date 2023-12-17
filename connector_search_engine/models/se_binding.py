@@ -7,6 +7,7 @@ import logging
 from collections import defaultdict
 from typing import Any, Dict, Iterator
 
+from psycopg2.errors import Error
 from typing_extensions import Self
 
 from odoo import _, api, fields, models, tools
@@ -61,7 +62,7 @@ class SeBinding(models.Model):
     )
     date_recomputed = fields.Datetime(readonly=True)
     date_synchronized = fields.Datetime(readonly=True)
-    data = fields.Json(readonly=True)
+    data = fields.Json(readonly=True, prefetch=False)
     data_display = fields.Text(
         compute="_compute_data_display",
         help="Include this in debug mode to be able to inspect index data.",
@@ -84,6 +85,17 @@ class SeBinding(models.Model):
             _("A record can only be bind one time per index !"),
         ),
     ]
+
+    @api.constrains("res_model", "index_id")
+    def _check_model(self):
+        for binding in self:
+            if (
+                binding.res_model
+                and binding.res_model != binding.index_id.model_id.model
+            ):
+                raise ValidationError(
+                    _("Binding model must be equal to the index model")
+                )
 
     @tools.ormcache()
     @api.model
@@ -166,6 +178,9 @@ class SeBinding(models.Model):
                 with self.env.cr.savepoint():
                     record.data = index.model_serializer.serialize(record.record)
                     record.date_recomputed = fields.Datetime.now()
+            except Error as pg_error:
+                # PG error could make the cursor unusable
+                raise pg_error
             except Exception as e:
                 record.state = "recompute_error"
                 record.error = str(e)
