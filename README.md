@@ -252,16 +252,11 @@ Date:   Fri Oct 13 10:22:38 2023 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit f37fba0c3188d55c552da07bddff7e24af371689
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 21:10:10 2023 +0000
+commit 3ab841b2ee03f4a3559dd4452c0f3e9edb87c040
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 14 18:47:55 2023 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: bank-statement-import-13.0/bank-statement-import-13.0-account_bank_statement_import_qif
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-13-0/bank-statement-import-13-0-account_bank_statement_import_qif/
+    [BOT] post-merge updates
 
 
 ## account-payment
@@ -523,9 +518,9 @@ Date:   Mon Oct 9 21:34:04 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 1fbe8866d205dbb67e7efb745b12b77b518ceea3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 6 15:50:09 2023 +0000
+commit bc48850ec9b56488e38b3c006c7bb7ad279a3554
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Dec 14 09:23:09 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1383,9 +1378,9 @@ Date:   Wed Dec 6 12:21:57 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 0f2f8a638638ff519b032e30e225fe5985acb973
+commit db83401aa8979207aed8bc86c676a8d99770da49
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Nov 29 12:43:48 2023 +0000
+Date:   Thu Dec 14 09:22:43 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1446,16 +1441,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 0f4b66a8881212e607f2988709fb70ca730135f6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 6 09:56:56 2023 +0000
+commit 1edb24a976f5b8450af936aa55a67805aaa9f949
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Dec 14 09:46:23 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_exception
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_attribute_value_menu
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_attribute_value_menu/it/
 
 
 ## product-kitting
@@ -1660,9 +1655,9 @@ Date:   Tue Nov 28 12:09:42 2023 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 0f950b7da6e77daf0aef331b5d11abb922021a4e
+commit e2e046d9e607a46f7a8c860e7dbece53620f3729
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 20 15:37:56 2023 +0000
+Date:   Fri Dec 15 14:32:27 2023 +0000
 
     [BOT] post-merge updates
 
