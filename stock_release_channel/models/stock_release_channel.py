@@ -485,13 +485,14 @@ class StockReleaseChannel(models.Model):
         for channel in picking._find_release_channel_possible_candidate():
             current = picking
             domain = channel._prepare_domain()
-            if not domain and not channel.code:
+            code = channel.sudo().code
+            if not domain and not code:
                 current.release_channel_id = channel
             if domain:
                 current = picking.filtered_domain(domain)
             if not current:
                 continue
-            if channel.code:
+            if code:
                 current = channel._eval_code(current)
             if not current:
                 continue
@@ -502,12 +503,13 @@ class StockReleaseChannel(models.Model):
             break
 
         if not picking.release_channel_id:
-            message = (
-                f"Transfer {picking.name} could not be assigned to a "
+            # by this point, the picking should have been assigned
+            message_template = (
+                "Transfer %(picking_name)s could not be assigned to a "
                 "channel, you should add a final catch-all rule"
             )
-            # by this point, the picking should have been assigned
-            _logger.warning(message)
+            _logger.warning(message_template, {"picking_name": picking.name})
+            message = _(message_template, picking_name=picking.name)
         return message
 
     def _assign_release_channel_additional_filter(self, pickings):
@@ -535,7 +537,8 @@ class StockReleaseChannel(models.Model):
         return eval_context
 
     def _eval_code(self, pickings):
-        expr = self.code.strip()
+        code = self.sudo().code
+        expr = code.strip()
         eval_context = self._eval_context(pickings)
         try:
             safe_eval(expr, eval_context, mode="exec", nocopy=True)
