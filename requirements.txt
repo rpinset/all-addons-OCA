@@ -151,7 +151,6 @@ pycountry
 GitPython
 pathspec
 PyGithub
-pygount
 # generated from manifests external_dependencies
 pika
 # generated from manifests external_dependencies
