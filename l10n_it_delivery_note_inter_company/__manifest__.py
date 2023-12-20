@@ -3,13 +3,16 @@
 
 {
     "name": "Delivery Note Inter Company",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "depends": ["l10n_it_delivery_note", "purchase_sale_inter_company"],
     "author": "PyTech SRL, Ooops404, Odoo Community Association (OCA)",
     "maintainers": ["aleuffre", "renda-dev"],
     "website": "https://github.com/OCA/l10n-italy",
     "category": "Localization/Italy",
     "license": "AGPL-3",
+    "data": [
+        "wizards/delivery_note_select.xml",
+    ],
     "installable": True,
     "application": False,
 }
