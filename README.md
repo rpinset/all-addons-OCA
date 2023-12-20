@@ -437,9 +437,9 @@ Date:   Sun Nov 12 15:43:40 2023 +0100
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 29392f320a3f2b5933503671907605fd89c8e334
+commit ebdd49fc4f2adf0052a4c91d67a19cb36ce5cba4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 18:51:39 2023 +0000
+Date:   Mon Dec 18 17:18:31 2023 +0000
 
     [BOT] post-merge updates
 
@@ -653,9 +653,9 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit ec206d7a939a48bdc2d12e93bcc1975cdbd2916d
+commit 8dfd827bd006f5da4d9c0dce940b02c05f8fc72d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 16 00:17:19 2023 +0000
+Date:   Sun Dec 17 22:38:56 2023 +0000
 
     [BOT] post-merge updates
 
