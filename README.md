@@ -26,11 +26,16 @@ The merged README is [here](README-merged.md)
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit c7735b680df32cc76a816b34d241ce2b98f337d4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Oct 11 11:27:00 2023 +0000
+commit cdc392539525239100ffb90dd579006b99ef18ab
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 18 07:57:54 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: account-analytic-13.0/account-analytic-13.0-stock_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-stock_analytic/it/
 
 
 ## account-budgeting
@@ -224,16 +229,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 02ff6ed5ab77796c3740b87c59d719e25438affd
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 00:58:24 2023 +0000
+commit 37597204cf18083837e13b00e979234a61b57da5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 18 06:59:15 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 31.5% (54 of 171 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_payment_mode
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_payment_mode/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -574,16 +579,16 @@ Date:   Mon Oct 23 13:43:23 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 3c24c1955a4b7a792fb895106f5ea1b466ffcd27
-Author: GoodERP Jeff Wang <jeff@osbzr.com>
-Date:   Mon Dec 11 07:58:58 2023 +0000
+commit 350c3226f17b9e90c7380b93ee5db6796e008c6b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 19 13:34:08 2023 +0000
 
-    Translated using Weblate (Chinese (Simplified) (zh_CN))
+    Translated using Weblate (Italian)
     
-    Currently translated at 50.4% (168 of 333 strings)
+    Currently translated at 100.0% (333 of 333 strings)
     
     Translation: dms-13.0/dms-13.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/zh_CN/
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
 
 
 ## e-commerce
@@ -616,16 +621,16 @@ Date:   Tue Oct 10 01:29:56 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit f5fd49790a3a45485e5088a18573332c8117f093
+commit 411ba1730a4a07da853777c9b3a44425fc546698
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 10:02:29 2023 +0000
+Date:   Tue Dec 19 13:16:32 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_sale_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_sale_recurring/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -707,16 +712,16 @@ Date:   Fri Oct 13 07:49:44 2023 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit ab1acae719148de119e6e0ae325fc22876217ed1
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 20:27:19 2023 +0000
+commit 066edd97b257ba37ace019bc68d739c476469246
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 18 07:24:16 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: hr-attendance-13.0/hr-attendance-13.0-hr_attendance_report_theoretical_time
-    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-13-0/hr-attendance-13-0-hr_attendance_report_theoretical_time/
+    Translation: hr-attendance-13.0/hr-attendance-13.0-hr_attendance_user_list
+    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-13-0/hr-attendance-13-0-hr_attendance_user_list/it/
 
 
 ## hr-expense
@@ -1285,16 +1290,16 @@ Date:   Fri Nov 24 14:59:45 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit e9f89d504e640578038994b0f519c6b1a7421de8
+commit f51a45d709bea4dc1fae999334b4a5d600f7e1e3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 4 07:12:43 2023 +0000
+Date:   Wed Dec 20 11:12:13 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (16 of 16 strings)
+    Currently translated at 54.7% (29 of 53 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_lock_lot
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_lock_lot/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_group_by_partner_by_carrier
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_group_by_partner_by_carrier/it/
 
 
 ## stock-logistics-tracking
@@ -1308,16 +1313,16 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6ae03649921c75bc0739f70031141590d0242fc6
+commit e8adf33e1fda65e74386a3da71be3586bc86b5b0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 17 11:41:16 2023 +0000
+Date:   Mon Dec 18 07:35:02 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 44.1% (15 of 34 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_quant_manual_assign
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_quant_manual_assign/it/
+    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_warehouse_orderpoint_stock_info
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_warehouse_orderpoint_stock_info/it/
 
 
 ## stock-logistics-reporting
@@ -1350,39 +1355,39 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 07df739c121e5a87a24f976d5625f0a99f3430d7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 23 16:23:51 2023 +0000
+commit 469ced939846c1780f90dcd03ae64d45c10c9215
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 18 08:12:42 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: ddmrp-13.0/ddmrp-13.0-stock_buffer_capacity_limit
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-stock_buffer_capacity_limit/it/
+    [BOT] post-merge updates
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit db41814028e34730562bfca30da52974925297c0
+commit 8f6dd641ba268911a7396b08ff44f6217954e751
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 6 12:21:57 2023 +0000
+Date:   Wed Dec 20 12:44:24 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (99 of 99 strings)
+    Currently translated at 100.0% (204 of 204 strings)
     
-    Translation: wms-13.0/wms-13.0-stock_reception_screen
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_reception_screen/it/
+    Translation: wms-13.0/wms-13.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor/it/
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit db83401aa8979207aed8bc86c676a8d99770da49
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 14 09:22:43 2023 +0000
+commit d3f6d2241c220985e72f5b043d59074713c0ded1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Dec 18 07:18:18 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (168 of 168 strings)
+    
+    Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1579,16 +1584,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 3666ccc2335cd6c03a3383aa4d12369e97488d90
+commit 7bee4c84d8c105e8bf8933ce61aedce93d4a93d9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 7 14:33:21 2023 +0000
+Date:   Wed Dec 20 12:23:03 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 94.7% (18 of 19 strings)
+    Currently translated at 75.0% (24 of 32 strings)
     
-    Translation: social-13.0/social-13.0-mail_activity_board
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_activity_board/it/
+    Translation: social-13.0/social-13.0-mail_activity_team
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_activity_team/it/
 
 
 ## storage
