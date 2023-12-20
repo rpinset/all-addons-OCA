@@ -100,13 +100,10 @@ freezegun==0.3.11
 # generated from manifests external_dependencies
 extract_msg<0.30
 premailer
+# generated from manifests external_dependencies
+boto3
 paramiko
 python-slugify>=3.0.2
-vcrpy>=2.1.1
-cerberus
-vcrpy-unittest
-boto3
-requests-mock
 algoliasearch<2.0.0
 elasticsearch>=7.0.0,<8.0.0
 unidecode
