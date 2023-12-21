@@ -1313,16 +1313,11 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit e8adf33e1fda65e74386a3da71be3586bc86b5b0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 18 07:35:02 2023 +0000
+commit 2005c2a1b3763b5b662ea97f0ddbc763fd441367
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 21 15:24:17 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_warehouse_orderpoint_stock_info
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_warehouse_orderpoint_stock_info/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
