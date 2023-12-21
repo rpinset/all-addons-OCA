@@ -428,11 +428,11 @@ Date:   Sun Nov 12 15:43:22 2023 +0100
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 16b744d02ce8f12b170ff9cb5837a484db29b7da
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:43:40 2023 +0100
+commit e8ec56d859d43b5f01862443861c14be30bf956e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 21 14:51:09 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## field-service
