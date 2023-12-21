@@ -514,9 +514,9 @@ Date:   Thu Nov 30 15:05:16 2023 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 4658f12c529642452796eb11a97bcedd549c0476
+commit b79968a070c0ab8f3250ada0d405935b9579dc65
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Nov 28 12:39:53 2023 +0000
+Date:   Thu Dec 21 12:26:17 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1265,11 +1265,16 @@ Date:   Sat Oct 28 00:15:15 2023 +0200
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 64668fba89849b24b2e88d87b6ffdca147a95b41
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 19 10:58:46 2023 +0000
+commit 68d24fe33a8d08225d7885475993cf92db39e4dd
+Author: David Alonso (Solvos) <david.alonso@solvos.es>
+Date:   Thu Dec 21 15:18:27 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (30 of 30 strings)
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_order_approved
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_order_approved/es/
 
 
 ## purchase-reporting
@@ -1530,9 +1535,9 @@ Date:   Fri Oct 27 23:55:38 2023 +0200
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit fa09d2ebc46553352fd36926c665c91bab679a3a
+commit b1339687065e1ad035888074238d4305173940db
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 18 16:52:06 2023 +0000
+Date:   Thu Dec 21 15:42:02 2023 +0000
 
     [BOT] post-merge updates
 
