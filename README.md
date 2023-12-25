@@ -446,11 +446,11 @@ Date:   Mon Dec 18 17:18:31 2023 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 381712e83d086fff45555b3bab9a696d9fb457e6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:00:17 2023 +0100
+commit 36a2ae86b8e91b7d11c55cbd69ce2d7366b5bbd1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Dec 25 10:38:24 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## fleet
@@ -842,11 +842,11 @@ Date:   Sun Nov 12 15:55:28 2023 +0100
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit a7088b0963934b4296ad8c6cb2d32ccf8d7d684a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:55:56 2023 +0100
+commit 7492c576dafdbd2fb7ad33feff4bb3e8021ea5f8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 22 10:34:08 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-russia
