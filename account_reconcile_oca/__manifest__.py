@@ -1,13 +1,13 @@
-# Copyright 2022 CreuBlanca
+# Copyright 2023 Dixmit
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
     "name": "Account Reconcile Oca",
     "summary": """
         Reconcile addons for Odoo CE accounting""",
-    "version": "16.0.1.2.5",
+    "version": "16.0.1.2.6",
     "license": "AGPL-3",
-    "author": "CreuBlanca,Odoo Community Association (OCA)",
+    "author": "CreuBlanca,Dixmit,Odoo Community Association (OCA)",
     "maintainers": ["etobella"],
     "website": "https://github.com/OCA/account-reconcile",
     "depends": [

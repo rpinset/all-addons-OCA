@@ -95,6 +95,8 @@ openupgradelib
 freezegun
 openupgradelib
 # generated from manifests external_dependencies
+odoo_test_helper
+# generated from manifests external_dependencies
 fsspec
 python_slugify
 # generated from manifests external_dependencies
@@ -112,7 +114,9 @@ PyPDF2
 xlrd
 xlsxwriter
 # generated from manifests external_dependencies
+oauthlib
 pycups
+requests_oauthlib
 # generated from manifests external_dependencies
 astor
 cryptography
