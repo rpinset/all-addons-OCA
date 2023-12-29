@@ -2,7 +2,7 @@
 # Copyright 2018 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import _, fields, models
+from odoo import SUPERUSER_ID, _, api, fields, models
 from odoo.exceptions import UserError
 
 
@@ -10,6 +10,27 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     intercompany_picking_id = fields.Many2one(comodel_name="stock.picking", copy=False)
+
+    @api.depends("intercompany_picking_id.state")
+    def _compute_state(self):
+        """
+        If the picking is inter-company, it's an 'incoming'
+        type of picking, and it has not been validated nor canceled
+        we compute it's state based on the other picking state
+        """
+        res = super()._compute_state()
+        for picking in self:
+            if (
+                picking.intercompany_picking_id
+                and picking.picking_type_code == "incoming"
+                and picking.state not in ["done", "cancel"]
+            ):
+                if picking.intercompany_picking_id.state in ["confirmed", "assigned"]:
+                    picking.state = "waiting"
+                else:
+                    picking.state = picking.intercompany_picking_id.state
+
+        return res
 
     def _action_done(self):
         for pick in self.filtered(
@@ -30,13 +51,28 @@ class StockPicking(models.Model):
                     ).mapped("move_line_ids")
                 )
                 if not len(move_lines) == len(po_move_lines):
-                    raise UserError(
-                        _(
-                            "Mismatch between move lines with the "
-                            "corresponding  PO %s for assigning "
-                            "quantities and lots from %s for product %s"
-                        )
-                        % (purchase.name, pick.name, move.product_id.name)
+                    note = _(
+                        "Mismatch between move lines with the "
+                        "corresponding PO %s for assigning "
+                        "quantities and lots from %s for product %s"
+                    ) % (purchase.name, pick.name, move.product_id.name)
+                    # Configurable parameter so we don't lock the picking validation
+                    if (
+                        not self.env["ir.config_parameter"]
+                        .sudo()
+                        .get_param("purchase_sale_inter_company.soft_picking_mismatch")
+                    ):
+                        raise UserError(note)
+                    self.activity_schedule(
+                        "mail.mail_activity_data_warning",
+                        fields.Date.today(),
+                        note=note,
+                        # Try to notify someone relevant
+                        user_id=(
+                            pick.sale_id.user_id.id
+                            or pick.sale_id.team_id.user_id.id
+                            or SUPERUSER_ID,
+                        ),
                     )
                 # check and assign lots here
                 for ml, po_ml in zip(move_lines, po_move_lines):

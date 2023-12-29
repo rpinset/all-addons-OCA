@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-27 00:40+0000\n"
-"PO-Revision-Date: 2023-10-17 19:39+0000\n"
+"PO-Revision-Date: 2023-12-29 12:36+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -52,6 +52,16 @@ msgid ""
 "                                rates are recalculated and might differ from "
 "real rates."
 msgstr ""
+"<strong>!</strong>\n"
+"                                Si sta usando il servizio di tasso di cambio "
+"della Banca Centrale Europea\n"
+"                                con una valuta base diversa da EUR.\n"
+"                                <br/>\n"
+"                                Poiché la Banca Centrale Europea fornisce "
+"solo tassi di cambio\n"
+"                                basati su EUR, altre valute straniere\n"
+"                                sono ricalcolate e possono differire dai "
+"tassi reali."
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate__message_needaction
@@ -80,7 +90,7 @@ msgstr "Numero allegati"
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_company__currency_rates_autoupdate
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_config_settings__currency_rates_autoupdate
 msgid "Automatic Currency Rates (OCA)"
-msgstr "Tassi di Cambio automatici (OCA)"
+msgstr "Tassi di cambio automatici (OCA)"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__available_currency_ids
@@ -132,12 +142,12 @@ msgstr "Valute da aggiornare da questo fornitore"
 #. module: currency_rate_update
 #: model:ir.model.fields,help:currency_rate_update.field_res_currency_rate_provider__currency_name
 msgid "Currency Code (ISO 4217)"
-msgstr "Codice Valuta (ISO 4217)"
+msgstr "Codice valuta (ISO 4217)"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__currency_name
 msgid "Currency Name"
-msgstr "Nome Valuta"
+msgstr "Nome valuta"
 
 #. module: currency_rate_update
 #: model:ir.model,name:currency_rate_update.model_res_currency_rate
@@ -164,7 +174,7 @@ msgstr "Errore fornitore tassi di cambio"
 #. module: currency_rate_update
 #: model:ir.model,name:currency_rate_update.model_res_currency_rate_update_wizard
 msgid "Currency Rate Update Wizard"
-msgstr "Wizard Aggiornamento tassi di cambio"
+msgstr "Procedura guidata aggiornamento tassi di cambio"
 
 #. module: currency_rate_update
 #: model:ir.model,name:currency_rate_update.model_res_currency_rate_provider
@@ -460,7 +470,7 @@ msgstr "Aggiorna"
 #. module: currency_rate_update
 #: model:ir.actions.server,name:currency_rate_update.action_res_currency_rate_provider_update_wizard
 msgid "Update Rates Wizard"
-msgstr "Wizard aggiornamento tassi"
+msgstr "Procedura guidata aggiornamento tassi"
 
 #. module: currency_rate_update
 #: model:ir.model.fields,field_description:currency_rate_update.field_res_currency_rate_provider__update_schedule
