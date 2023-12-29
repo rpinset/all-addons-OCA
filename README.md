@@ -234,16 +234,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit d8377e31296f27c5e6aa73001d80d630912b136d
+commit a3ec3f30ffd8d883029d6b36649cf94bf4adfbd4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:17:30 2023 +0000
+Date:   Wed Dec 27 10:46:39 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 32.7% (56 of 171 strings)
+    Currently translated at 85.7% (96 of 112 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -262,9 +262,9 @@ Date:   Fri Oct 13 10:22:38 2023 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 3ab841b2ee03f4a3559dd4452c0f3e9edb87c040
+commit 51862e32c50e4df7ca91690495c37bcc662ab4f3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 14 18:47:55 2023 +0000
+Date:   Tue Dec 26 14:34:04 2023 +0000
 
     [BOT] post-merge updates
 
@@ -484,9 +484,9 @@ Date:   Sun Nov 12 14:17:27 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 26c34317dedb3be8d09c52cfe0faa8fc780a4327
+commit f58e600438b57ad27b2894520f04d738836f860b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:10:30 2023 +0000
+Date:   Wed Dec 27 09:03:22 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -589,9 +589,9 @@ Date:   Mon Oct 23 13:43:23 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 350c3226f17b9e90c7380b93ee5db6796e008c6b
+commit 11c6331e806515d4cb78b0ce14ac7b0dd257f9c8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:34:08 2023 +0000
+Date:   Wed Dec 27 13:51:25 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -631,9 +631,9 @@ Date:   Tue Oct 10 01:29:56 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 411ba1730a4a07da853777c9b3a44425fc546698
+commit 62f3e7c76a550725b8f5a6f40910bd960bdd555d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:16:32 2023 +0000
+Date:   Tue Dec 26 20:00:07 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1369,16 +1369,16 @@ Date:   Mon Dec 18 08:12:42 2023 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 8f6dd641ba268911a7396b08ff44f6217954e751
+commit df4fbcf383ef4e7e5e124b75e42988f933f7bf52
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 20 12:44:24 2023 +0000
+Date:   Thu Dec 28 12:50:42 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (204 of 204 strings)
+    Currently translated at 100.0% (38 of 38 strings)
     
-    Translation: wms-13.0/wms-13.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor/it/
+    Translation: wms-13.0/wms-13.0-shopfloor_base
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor_base/it/
 
 
 ## manufacture
@@ -1411,28 +1411,25 @@ Date:   Sun Oct 29 15:19:08 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 1508a9c4d25f8cd106501136a016a59e76db3d13
-Merge: 53f467be a843dbab
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 17 17:38:39 2023 +0000
+commit 1ac8bb3fd91e38100e0976e94dcc56edc9b89d6e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 27 08:39:23 2023 +0000
 
-    Merge PR #528 into 13.0
+    Translated using Weblate (Italian)
     
-    Signed-off-by dreispt
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: management-system-13.0/management-system-13.0-mgmtsystem_partner
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem_partner/it/
 
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit b87730b2ef40d01f03c3468713f061f164be4da9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 14:41:05 2023 +0000
+commit a447b3ee65655893abf9250e851353f992048e74
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Dec 27 07:46:45 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 82.7% (187 of 226 strings)
-    
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1477,16 +1474,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit b48c0de417080bc7443774e9442aea1287029ec1
+commit 1ee47dc0b4993ff2a6085964befad6af63cfeccd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 15:25:17 2023 +0000
+Date:   Tue Dec 26 15:38:00 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: product-variant-13.0/product-variant-13.0-product_variant_attribute_tax
-    Translate-URL: https://translation.odoo-community.org/projects/product-variant-13-0/product-variant-13-0-product_variant_attribute_tax/it/
+    Translation: product-variant-13.0/product-variant-13.0-product_variant_configurator_manual_creation
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-13-0/product-variant-13-0-product_variant_configurator_manual_creation/it/
 
 
 ## product-pack
@@ -1711,16 +1708,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit bd660b360256059491423e7a22f79c269c26c7d6
+commit e44481938d1a32ddf8ddc16d6c4bda8edec60462
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:13:15 2023 +0000
+Date:   Fri Dec 29 15:11:43 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 72.5% (74 of 102 strings)
+    Currently translated at 100.0% (35 of 35 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
 
 
 ## community-data-files
