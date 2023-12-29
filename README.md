@@ -59,9 +59,9 @@ Date:   Sun Nov 12 15:25:00 2023 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 39f37c52458368ce2ec1741980c20b8bb69dde6b
+commit 437e40b0f05117ded96e00455debf31ea9d95366
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 7 04:39:23 2023 +0000
+Date:   Fri Dec 29 15:29:22 2023 +0000
 
     [BOT] post-merge updates
 
@@ -437,9 +437,9 @@ Date:   Thu Dec 21 14:51:09 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit ebdd49fc4f2adf0052a4c91d67a19cb36ce5cba4
+commit a8493b5c1a67bbbdd0dd525965cf97d786a51c6e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 18 17:18:31 2023 +0000
+Date:   Thu Dec 28 21:58:10 2023 +0000
 
     [BOT] post-merge updates
 
@@ -491,9 +491,9 @@ Date:   Sun Nov 12 16:14:06 2023 +0100
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 03bd57d3c566c81cfb0efe78f475bad84ec4d500
+commit 7bfa76021b2c441b98a81f8ff49bff8f38a184cc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 19:08:48 2023 +0000
+Date:   Tue Dec 26 16:56:10 2023 +0000
 
     [BOT] post-merge updates
 
@@ -653,9 +653,9 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 8dfd827bd006f5da4d9c0dce940b02c05f8fc72d
+commit 443cb455dfd7e847f380f66eb80e1e7abe26dba1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Dec 17 22:38:56 2023 +0000
+Date:   Tue Dec 26 19:12:47 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1202,11 +1202,11 @@ Date:   Sun Nov 12 15:36:56 2023 +0100
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 30ce453141938ae77190403f362813b84a3a090a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:11:02 2023 +0100
+commit c638171c04c4678daadde996338a84ef5a893001
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 28 21:28:00 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## storage
