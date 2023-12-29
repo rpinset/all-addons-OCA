@@ -194,16 +194,16 @@ Date:   Sat Oct 28 13:24:15 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit d7afd425503158611abffca7b2286ca63ec121f4
+commit 6ab8361fc33077d19ebb0b9a952a9a7dc933c566
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:17:46 2023 +0000
+Date:   Wed Dec 27 10:46:42 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.7% (54 of 170 strings)
+    Currently translated at 78.3% (83 of 106 strings)
     
-    Translation: bank-payment-15.0/bank-payment-15.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_banking_pain_base/it/
+    Translation: bank-payment-15.0/bank-payment-15.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -217,16 +217,16 @@ Date:   Mon Dec 18 09:10:26 2023 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 74d7080a6ad808a905ef6db61ece6b7b0777c72b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:51:18 2023 +0000
+commit b50a37214777ff1f36d67db2975e246d8115b224
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Dec 26 14:33:53 2023 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 73.6% (28 of 38 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_statement_import
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_statement_import/it/
+    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_statement_import_online_paypal
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_statement_import_online_paypal/
 
 
 ## account-payment
@@ -376,16 +376,16 @@ Date:   Fri Oct 27 23:37:22 2023 +0200
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 866b7e177a1f88529acd647a2e85c6be24f33fb3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:02:43 2023 +0000
+commit 81e477c03c79ffa3c24f424214a507c4ab6d3513
+Author: DS-Landoo <ds@landoo.es>
+Date:   Thu Dec 28 10:52:47 2023 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 55.7% (58 of 104 strings)
+    Currently translated at 100.0% (2 of 2 strings)
     
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_rental
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_rental/it/
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_commercial_partner
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_commercial_partner/es/
 
 
 ## crm
@@ -404,16 +404,11 @@ Date:   Wed Dec 13 10:16:46 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit c082c5f7be51d0c35feec3a80923cfc5093d4aa9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:10:41 2023 +0000
+commit 8abf090bd4a1182ab3ba2fbaaca98dead9cd6930
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Dec 28 07:45:52 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 87.7% (43 of 49 strings)
-    
-    Translation: partner-contact-15.0/partner-contact-15.0-partner_identification
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_identification/it/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -464,16 +459,16 @@ Date:   Mon Dec 18 11:43:02 2023 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 95e183c686a9c393d4fe136c17090b09ab0d0c34
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 23 16:35:56 2023 +0000
+commit 7781b5346e7495ef6f30c54f7416caa7e9f7dfb4
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Dec 28 15:49:56 2023 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: event-15.0/event-15.0-event_registration_partner_unique
-    Translate-URL: https://translation.odoo-community.org/projects/event-15-0/event-15-0-event_registration_partner_unique/it/
+    Translation: event-15.0/event-15.0-partner_event
+    Translate-URL: https://translation.odoo-community.org/projects/event-15-0/event-15-0-partner_event/
 
 
 ## survey
@@ -501,9 +496,9 @@ Date:   Sun Oct 29 07:08:24 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit c2c113a950baba6ef93b606ebd99016af74530c2
+commit 5109c288bcdb7bf00dbcc8ff69c0ca1a544fb9cc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:34:42 2023 +0000
+Date:   Wed Dec 27 13:52:23 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -538,16 +533,16 @@ Date:   Thu Dec 21 12:26:17 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 34179adda891a9e1155f10392bdb6203234cbe1b
-Author: Ignacio Buioli <ibuioli@gmail.com>
-Date:   Mon Dec 25 17:42:25 2023 +0000
+commit 4c6a59c6b0fa3554ecf98d60a74ea33ba6f7bccc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Dec 26 20:00:06 2023 +0000
 
-    Translated using Weblate (Spanish (Argentina))
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (589 of 589 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice_account
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_account/es_AR/
+    Translation: field-service-15.0/field-service-15.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -996,16 +991,11 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 33e13799de2a54d4b28870325e7eef5e921aaf3f
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Dec 22 15:19:48 2023 +0000
+commit c322beeaaabecb5b72b083ee6303d59fa7a47261
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 29 13:37:52 2023 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_stock_account
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_stock_account/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1028,9 +1018,9 @@ Date:   Fri Oct 27 23:41:53 2023 +0200
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5520b7f5b35e257fdbec48c0b9d76c2e9da21c57
+commit 6732b4487c08908089f97811057207b1b02b7253
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 15 21:37:57 2023 +0000
+Date:   Thu Dec 28 10:36:04 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1146,16 +1136,16 @@ Date:   Wed Dec 6 07:53:50 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 26399f07541a266624babd390caa78b067712716
+commit 21bb136c864da7d8a0d57ace177e418d4d12d4ec
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 14:15:43 2023 +0000
+Date:   Fri Dec 29 14:49:15 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (70 of 70 strings)
+    Currently translated at 100.0% (29 of 29 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/it/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_import_serial_number
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_import_serial_number/it/
 
 
 ## stock-logistics-tracking
@@ -1197,16 +1187,16 @@ Date:   Fri Nov 3 16:22:34 2023 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit f24450d68786b6a03f600fbdf23d9a302fa6cf10
+commit 612f3443015a7973fa65251adfc75ac52397a413
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 20 12:25:49 2023 +0000
+Date:   Wed Dec 27 13:51:26 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.3% (79 of 82 strings)
+    Currently translated at 92.0% (325 of 353 strings)
     
-    Translation: rma-15.0/rma-15.0-rma_sale
-    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma_sale/it/
+    Translation: rma-15.0/rma-15.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
 
 
 ## ddmrp
@@ -1234,16 +1224,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 433931617f3c45ca857baa7a9d7f7c7d55ca7d10
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:34:50 2023 +0000
+commit 6161253e927fa7978a8035e761ad819082bbe40b
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Dec 29 00:57:17 2023 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: manufacture-15.0/manufacture-15.0-mrp_workcenter_category
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_workcenter_category/it/
+    Translation: manufacture-15.0/manufacture-15.0-mrp_workorder_lot_display
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_workorder_lot_display/
 
 
 ## manufacture-reporting
@@ -1280,16 +1270,11 @@ Date:   Sat Oct 28 00:15:15 2023 +0200
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 85de53d495d97771c1cf8e0cc071fc5d5869fc7e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 13:44:19 2023 +0000
+commit 8b87e37c9fe2fed079f42ac70a44da79285bc936
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Dec 29 10:40:19 2023 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_open_qty
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_open_qty/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1473,11 +1458,16 @@ Date:   Sat Oct 28 00:06:57 2023 +0200
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 43ed3e12509976882cfe6610423a76aaf48081a7
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Nov 18 12:26:13 2023 +0000
+commit c872f9ac6f1e47d0806de48e7c204f4d621c8514
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Dec 29 14:45:13 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 27.7% (15 of 54 strings)
+    
+    Translation: reporting-engine-15.0/reporting-engine-15.0-sql_export
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-15-0/reporting-engine-15-0-sql_export/it/
 
 
 ## report-print-send
@@ -1500,23 +1490,23 @@ Date:   Fri Oct 27 22:55:14 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit e2b63a2dacdb41a71ea2af10e340a5848c734cf4
+commit 217b1e3e3864d203eb15a4bbb9660521b4fabf61
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:12:58 2023 +0000
+Date:   Fri Dec 29 14:48:51 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 87.0% (74 of 85 strings)
+    Currently translated at 84.1% (117 of 139 strings)
     
-    Translation: server-tools-15.0/server-tools-15.0-auto_backup
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-auto_backup/it/
+    Translation: server-tools-15.0/server-tools-15.0-base_custom_info
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-base_custom_info/it/
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 2a28d7b51917346ef2dff7ec9737921cbadc4520
+commit 9d7f3eb15ed4572de52acf6c87405bab5d658ef5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 15 14:30:37 2023 +0000
+Date:   Wed Dec 27 09:29:34 2023 +0000
 
     [BOT] post-merge updates
 
@@ -1644,9 +1634,9 @@ Date:   Fri Oct 27 16:13:23 2023 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 9799b50ac38b97fa103b1b633ae5855ad10d061f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 20 10:53:11 2023 +0000
+commit 3025c7f593e64688d06d73b1735f07a80b1b332b
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Dec 29 18:03:49 2023 +0000
 
     Translated using Weblate (Italian)
     
