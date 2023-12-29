@@ -77,9 +77,9 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 0caa6db807841ddd27c5e72d8b8a8ab60ef19682
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:27:17 2023 +0000
+commit b276b7d0d6f958266e7f0b4692c35782e21b723a
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Dec 28 09:38:28 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -189,9 +189,9 @@ Date:   Mon Oct 9 19:34:59 2023 +0000
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit 8eea8da18e81b3b00f27eccc3db243b4cd28b540
+commit 88a0292d047b29e2b131a90c150ff7a7b7870c04
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 13 10:16:48 2023 +0000
+Date:   Wed Dec 27 17:31:29 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -203,16 +203,16 @@ Date:   Wed Dec 13 10:16:48 2023 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 5b5905bd3cf72f731fc367f52f5f400d5b0771f8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 4 06:36:11 2023 +0000
+commit 4253ff82455784958e03ec7a21823478920071aa
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Dec 28 21:46:51 2023 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 11.5% (32 of 277 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: credit-control-12.0/credit-control-12.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_credit_control/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/
 
 
 ## data-protection
@@ -231,16 +231,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit f9f81590a8d754ea71cf1fefc7e768be5997e834
+commit 7951d88956abebacae962e847585c6e0a25cf20a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:17:08 2023 +0000
+Date:   Wed Dec 27 10:46:15 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.3% (57 of 182 strings)
+    Currently translated at 96.1% (100 of 104 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_pain_base/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -456,16 +456,16 @@ Date:   Tue Oct 10 01:09:31 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 982a1489b87ef77f37fc574c0e15e58449666a73
+commit 55fee25755e03dab49a6d89cb562dfdd0db51629
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:10:32 2023 +0000
+Date:   Wed Dec 27 08:42:18 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 86.9% (20 of 23 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-base_location_geonames_import
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_location_geonames_import/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-partner_pricelist_search
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_pricelist_search/it/
 
 
 ## sale-financial
@@ -549,9 +549,9 @@ Date:   Tue Oct 10 00:58:08 2023 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 98bb6a54795f0353e47442c6a33a4e16d66c9c34
+commit bbb3f31e9f4eab5d84309747861a93ad49616706
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:34:43 2023 +0000
+Date:   Fri Dec 29 14:49:42 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -651,9 +651,9 @@ Date:   Mon Sep 4 11:44:40 2023 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 74111f6dcc19072c620ec65abae71e5d58728188
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 15:21:40 2023 +0000
+commit 207e67e9c23a577e084ee2d72b7f580c0a9431f0
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Dec 28 09:38:38 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -903,16 +903,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit ba772f95d1abeb93b3ec96fe360bbe7b4c5a7ad2
+commit 2e516df96ce6fbdc98a664063479e4d8dade7258
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:03:52 2023 +0000
+Date:   Fri Dec 29 14:46:44 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (46 of 46 strings)
+    Currently translated at 100.0% (65 of 65 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_withholding_tax_payment
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_withholding_tax_payment/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
 
 
 ## l10n-japan
@@ -1251,16 +1251,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 5e4d107d42fb5056368aa872cbf4133fc49ca516
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 22:37:04 2023 +0000
+commit 3dccf67322179df3819b724f5361f06088dd4fc5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Dec 27 08:39:26 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity_maintenance
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity_maintenance/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_partner
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_partner/it/
 
 
 ## purchase-workflow
@@ -1496,16 +1496,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d6b9453ab7d9c79a1d4b089a15d5b14c3c197ca3
+commit 99e424e0dc58dafac74a130d7f93ce1366b1605a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:14:15 2023 +0000
+Date:   Fri Dec 29 14:49:46 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 85.3% (151 of 177 strings)
+    Currently translated at 58.3% (28 of 48 strings)
     
-    Translation: server-tools-12.0/server-tools-12.0-excel_import_export
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-excel_import_export/it/
+    Translation: server-tools-12.0/server-tools-12.0-base_multi_image
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-base_multi_image/it/
 
 
 ## server-auth
@@ -1556,9 +1556,9 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 5d0864f02a1563db415ef39ddc2aff5d20beff4c
+commit e7eedd0680e0bbe051a3c30a764203b9224109f5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 09:08:52 2023 +0000
+Date:   Thu Dec 28 15:01:09 2023 +0000
 
     Translated using Weblate (Italian)
     
