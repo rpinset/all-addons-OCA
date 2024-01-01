@@ -428,16 +428,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3c811cb7d310910167d2773969bd826b6b268b9b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:11:44 2023 +0000
+commit 715cd53b2818d618f108d013133faf414a1c2798
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Dec 29 18:10:11 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 60.1% (62 of 103 strings)
+    Currently translated at 100.0% (154 of 154 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_rental
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_rental/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_blanket_order/it/
 
 
 ## crm
@@ -507,16 +507,16 @@ Date:   Sun Dec 24 15:50:10 2023 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 9368da424a0bba0b20c7daee0dd2076d5693e871
+commit d8d951d2f4fc3d9a27e2ffe8be32aa118b77ce37
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 7 14:09:16 2023 +0000
+Date:   Sun Dec 31 18:34:50 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: event-12.0/event-12.0-event_registration_mass_mailing
-    Translate-URL: https://translation.odoo-community.org/projects/event-12-0/event-12-0-event_registration_mass_mailing/it/
+    Translation: event-12.0/event-12.0-website_event_require_login
+    Translate-URL: https://translation.odoo-community.org/projects/event-12-0/event-12-0-website_event_require_login/it/
 
 
 ## survey
@@ -651,9 +651,9 @@ Date:   Mon Sep 4 11:44:40 2023 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 207e67e9c23a577e084ee2d72b7f580c0a9431f0
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Dec 28 09:38:38 2023 +0000
+commit b4124b5f233375dbebddc1ad89f45bceab1a89a5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 31 17:46:03 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1556,16 +1556,16 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit e7eedd0680e0bbe051a3c30a764203b9224109f5
+commit ab13244cbf7a7d9ffb8d93655ab3094dcd2f9190
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 28 15:01:09 2023 +0000
+Date:   Sun Dec 31 17:22:46 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 80.0% (28 of 35 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: server-ux-12.0/server-ux-12.0-mass_editing
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-mass_editing/it/
+    Translation: server-ux-12.0/server-ux-12.0-base_technical_features
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-base_technical_features/it/
 
 
 ## community-data-files
