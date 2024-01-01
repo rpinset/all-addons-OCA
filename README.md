@@ -459,16 +459,16 @@ Date:   Mon Dec 18 11:43:02 2023 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 7781b5346e7495ef6f30c54f7416caa7e9f7dfb4
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Dec 28 15:49:56 2023 +0000
+commit 8d03bfae288348c1540180bb2eed995307d37d5a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 31 18:34:37 2023 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: event-15.0/event-15.0-partner_event
-    Translate-URL: https://translation.odoo-community.org/projects/event-15-0/event-15-0-partner_event/
+    Translation: event-15.0/event-15.0-website_event_require_login
+    Translate-URL: https://translation.odoo-community.org/projects/event-15-0/event-15-0-website_event_require_login/it/
 
 
 ## survey
@@ -630,16 +630,16 @@ Date:   Wed Nov 15 15:07:27 2023 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 4b76a193f36a4bcb0aa9b51d24e8bcc17ce06efa
+commit 00dacee252ca0370d05637dfb6e6d6738d07b613
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 22 17:17:37 2023 +0000
+Date:   Sun Dec 31 17:51:30 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_tier_validation/it/
+    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_cancel_confirm
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_cancel_confirm/it/
 
 
 ## hr-holidays
@@ -991,11 +991,16 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit c322beeaaabecb5b72b083ee6303d59fa7a47261
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 29 13:37:52 2023 +0000
+commit a56565d71894f515ab49bf4d3c995c376236c756
+Author: Weblate <noreply@weblate.org>
+Date:   Sun Dec 31 08:55:01 2023 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_account_edi_ubl
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_account_edi_ubl/
 
 
 ## l10n-russia
@@ -1187,16 +1192,16 @@ Date:   Fri Nov 3 16:22:34 2023 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 612f3443015a7973fa65251adfc75ac52397a413
+commit e30a56f474e2d1148a080fddbe127a2a1b0e8c55
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 13:51:26 2023 +0000
+Date:   Sun Dec 31 18:34:42 2023 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.0% (325 of 353 strings)
+    Currently translated at 96.3% (79 of 82 strings)
     
-    Translation: rma-15.0/rma-15.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
+    Translation: rma-15.0/rma-15.0-rma_sale
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma_sale/it/
 
 
 ## ddmrp
