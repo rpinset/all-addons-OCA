@@ -320,11 +320,11 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 81c6a1519a6842a1420ad53d107f6734ab4747ae
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:08:58 2023 +0100
+commit f986599d580213b989809bc87234a60d9115341b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Dec 30 11:46:39 2023 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## crm
