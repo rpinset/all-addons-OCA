@@ -547,9 +547,9 @@ Date:   Sun Dec 24 15:50:23 2023 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 8b3fedaf68bc7b664bd783a8406550c4c38f4795
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Oct 11 15:07:23 2023 +0000
+commit 54e2eb17c7eea9b424f53eb64923d47fbc90bd7c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 31 18:34:48 2023 +0000
 
     Translated using Weblate (Italian)
     
@@ -1425,11 +1425,16 @@ Date:   Wed Dec 27 08:39:23 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit a447b3ee65655893abf9250e851353f992048e74
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 27 07:46:45 2023 +0000
+commit 740ec170d514d00f4b1c2680d2258d7396fff1d9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Dec 31 17:37:03 2023 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (18 of 18 strings)
+    
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
 
 
 ## purchase-reporting
@@ -1708,9 +1713,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit e44481938d1a32ddf8ddc16d6c4bda8edec60462
+commit f2d7282c822bb48c6dbdada4adfd117a37864025
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 29 15:11:43 2023 +0000
+Date:   Sun Dec 31 17:38:25 2023 +0000
 
     Translated using Weblate (Italian)
     
