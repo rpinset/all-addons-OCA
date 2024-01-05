@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-08 13:40+0000\n"
+"PO-Revision-Date: 2024-01-05 17:34+0000\n"
 "Last-Translator: Adriano Prado <adrianojprado@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt_BR\n"
@@ -282,8 +282,8 @@ msgid "A file with the same name already exists"
 msgstr "Já existe um arquivo com o mesmo nome"
 
 #. module: dms
-#. odoo-python
 #. odoo-javascript
+#. odoo-python
 #: code:addons/dms/models/dms_file.py:0
 #: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
 #, python-format
@@ -629,7 +629,6 @@ msgstr "Conteúdo"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_file__content_binary
-#, fuzzy
 msgid "Content Binary"
 msgstr "Conteúdo Binário"
 
@@ -1532,7 +1531,7 @@ msgstr "Modelo"
 #: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
 #: model_terms:ir.ui.view,arch_db:dms.search_dms_file
 msgid "Modification Date"
-msgstr "Data Modifica;áo"
+msgstr "Data Modificação"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__my_activity_date_deadline
