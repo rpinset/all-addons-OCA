@@ -158,9 +158,9 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 7c04134f85979313933659d13aaed18adf640b08
+commit edfefee0d9f09583d08adf74e054ba7d275aed22
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 13 07:39:20 2023 +0000
+Date:   Thu Jan 4 15:26:28 2024 +0000
 
     [BOT] post-merge updates
 
