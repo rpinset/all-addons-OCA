@@ -206,16 +206,16 @@ Date:   Mon Oct 9 19:03:52 2023 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 7fdd44db1a9874e1241b61f63c30fa86faeeded1
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 20:04:31 2023 +0000
+commit 1a40ac6f1fa62547fa4b0db10142073355fed848
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jan 3 08:29:48 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 60.2% (50 of 83 strings)
     
-    Translation: credit-control-13.0/credit-control-13.0-account_payment_return_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-13-0/credit-control-13-0-account_payment_return_financial_risk/
+    Translation: credit-control-13.0/credit-control-13.0-account_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-13-0/credit-control-13-0-account_financial_risk/it/
 
 
 ## data-protection
@@ -234,16 +234,11 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit a3ec3f30ffd8d883029d6b36649cf94bf4adfbd4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 10:46:39 2023 +0000
+commit 6b7ff0ce6cc537c26e6e2d535305be249ab745e2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 3 17:25:40 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 85.7% (96 of 112 strings)
-    
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -1360,11 +1355,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 469ced939846c1780f90dcd03ae64d45c10c9215
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 18 08:12:42 2023 +0000
+commit eb3af38c1c557e2cd37b540ecbb992f3fa88a3f9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 5 08:01:42 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_chatter
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_chatter/it/
 
 
 ## wms
@@ -1453,16 +1453,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 1edb24a976f5b8450af936aa55a67805aaa9f949
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Dec 14 09:46:23 2023 +0000
+commit cbb42362b04e4514fde2b2884b61db9e350f04b5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jan 5 08:08:52 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_attribute_value_menu
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_attribute_value_menu/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_exception
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/it/
 
 
 ## product-kitting
@@ -1591,16 +1591,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit f61c21bcc04784544d4733d79953d9292e67db6c
+commit c1b342e56739cf35cc00dcb54793d30ccd57f1f2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:07:56 2023 +0000
+Date:   Fri Jan 5 13:35:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.6% (37 of 117 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: social-13.0/social-13.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_tracking/it/
+    Translation: social-13.0/social-13.0-mail_optional_autofollow
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_optional_autofollow/it/
 
 
 ## storage
@@ -1653,9 +1653,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 534dfb24ba9023aa1f7da0472f25eaaf4e5ca93a
+commit 17233ff8f4b4a61b2186ec6f49e490a4518a83e1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:14:30 2023 +0000
+Date:   Wed Jan 3 13:04:19 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1667,11 +1667,16 @@ Date:   Sun Dec 24 16:14:30 2023 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit e2e046d9e607a46f7a8c860e7dbece53620f3729
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 15 14:32:27 2023 +0000
+commit 17404456256216661e26be84d39eaff8055e4a03
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jan 3 12:24:14 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: server-auth-13.0/server-auth-13.0-users_ldap_mail
+    Translate-URL: https://translation.odoo-community.org/projects/server-auth-13-0/server-auth-13-0-users_ldap_mail/it/
 
 
 ## server-env
@@ -1713,9 +1718,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit f2d7282c822bb48c6dbdada4adfd117a37864025
+commit 19a8b1de3f1353470d0b2752f38fb9335d04cc55
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 31 17:38:25 2023 +0000
+Date:   Tue Jan 2 12:39:27 2024 +0000
 
     Translated using Weblate (Italian)
     
