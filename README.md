@@ -1295,16 +1295,16 @@ Date:   Fri Nov 24 14:59:45 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit f51a45d709bea4dc1fae999334b4a5d600f7e1e3
+commit fccfb2354370b7a81042469fae489213dddcb205
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 20 11:12:13 2023 +0000
+Date:   Mon Jan 8 07:06:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 54.7% (29 of 53 strings)
+    Currently translated at 83.3% (5 of 6 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_group_by_partner_by_carrier
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_group_by_partner_by_carrier/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_send_by_mail
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_send_by_mail/it/
 
 
 ## stock-logistics-tracking
@@ -1623,11 +1623,16 @@ Date:   Sun Sep 3 16:31:23 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 72a029c7665a720ed4e870dffdccbc0c1e908f45
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 16 18:05:35 2023 +0000
+commit aa2849268da85f7dd7a6547f9bf16ecc388655c6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jan 9 07:40:52 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 65.0% (13 of 20 strings)
+    
+    Translation: reporting-engine-13.0/reporting-engine-13.0-report_csv
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-report_csv/it/
 
 
 ## report-print-send
