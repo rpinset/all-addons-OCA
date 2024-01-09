@@ -688,16 +688,11 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 4588185e841c8644313ffce22f143c97a1545672
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Dec 16 08:23:28 2023 +0000
+commit 45a6207f906eb4504cd5e9e3f23fad9ed34c0869
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 8 14:12:34 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: multi-company-12.0/multi-company-12.0-mail_multicompany
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-12-0/multi-company-12-0-mail_multicompany/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1135,16 +1130,16 @@ Date:   Fri Nov 24 14:59:38 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit aedd9e0aa2f35909259f56b7dc61ff39d87dfd9c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 2 08:56:23 2024 +0000
+commit 1022cb60736cc153ddd02b7d3721bb0adc7abf17
+Author: Yiğit <yibudak@gmail.com>
+Date:   Mon Jan 8 11:46:05 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_operation_quick_change
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_operation_quick_change/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_no_negative
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_no_negative/tr/
 
 
 ## stock-logistics-tracking
@@ -1265,16 +1260,11 @@ Date:   Wed Dec 27 08:39:26 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 8c4bbeb8209cd646c38d8bf60afa3dc88e172496
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:20:14 2023 +0000
+commit 67510d1afb8fec81c2a022fec1e6b23c7ba5ac6d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 8 14:04:19 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 92.8% (207 of 223 strings)
-    
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1496,16 +1486,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 8b63ce88b14f5dc2730f9fb54d3c56a0a8be3fc6
-Author: Ivy Liu (QRTL) <liuhehe@quartile.co>
-Date:   Fri Jan 5 07:38:44 2024 +0000
+commit d77e8ad5e5161cff98bb9d4206c5c0caa4a4deb4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jan 9 07:22:27 2024 +0000
 
-    Translated using Weblate (Japanese)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 85.3% (151 of 177 strings)
     
-    Translation: server-tools-12.0/server-tools-12.0-base_model_restrict_update
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-base_model_restrict_update/ja/
+    Translation: server-tools-12.0/server-tools-12.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-excel_import_export/it/
 
 
 ## server-auth
