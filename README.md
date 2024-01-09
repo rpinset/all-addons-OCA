@@ -212,9 +212,9 @@ Date:   Sun Nov 12 15:36:08 2023 +0100
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 5b7a26f59d5798267ecc670757231da54346452f
+commit b51243cc6a2b5cbcd0ce112f207c8727a317cba1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 13 10:41:08 2023 +0000
+Date:   Mon Jan 8 10:46:23 2024 +0000
 
     [BOT] post-merge updates
 
@@ -518,11 +518,11 @@ Date:   Sun Nov 12 15:46:12 2023 +0100
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 902c0f8c3307619ca27975ab92b0d19eb2cc3457
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:46:25 2023 +0100
+commit 96bd8af1b5a1d901fe77da228d532f9de550f350
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 8 10:43:52 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## department
@@ -842,9 +842,9 @@ Date:   Sun Nov 12 15:55:28 2023 +0100
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 7492c576dafdbd2fb7ad33feff4bb3e8021ea5f8
+commit e4f3b47157bb52c9807f65b42a223c53dca9b18a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 22 10:34:08 2023 +0000
+Date:   Tue Jan 9 16:12:56 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1049,11 +1049,11 @@ Date:   Sun Nov 12 15:59:51 2023 +0100
 
 ## manufacture-reporting
 From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
-commit 3e21e7d7e11704e75562436e868a85cfccb847fa
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:00:04 2023 +0100
+commit ca7cc3fcddd79dc213844937e7dff0f2750a3329
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 9 15:59:37 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## management-system
@@ -1229,9 +1229,9 @@ Date:   Sun Nov 12 16:09:11 2023 +0100
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 9c9a7e4413fa397a6b11c77e3acb78e6d8da2679
+commit 304c394aef0c408397247501932e4fd79b624390
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 9 14:03:50 2023 +0000
+Date:   Mon Jan 8 11:13:11 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1274,11 +1274,11 @@ Date:   Sun Nov 26 09:34:46 2023 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 4e5c50418f40b7fd5c23678e5ceb4a0ccbfce575
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:10:01 2023 +0100
+commit b37b684d6c4857dbb17bc0d1aaa2fc246a8c9b93
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 8 08:39:21 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## server-backend
@@ -1301,9 +1301,9 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 84181dfc307942b07c343d22d4ef4c83285ef332
+commit b4dbe0a342ade881418ae09d62070884d558c079
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 07:42:56 2023 +0000
+Date:   Mon Jan 8 11:16:03 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1472,11 +1472,11 @@ Date:   Fri Nov 24 19:40:30 2023 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 00c59a98dd06adf58202a1d0b1de3e3f32ebff81
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:18:44 2023 +0100
+commit 0d574f1d67bee2b9b6c18df87c586a76aa4bf449
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 9 07:59:20 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## website-cms
