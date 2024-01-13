@@ -122,16 +122,11 @@ Date:   Mon Oct 9 23:10:12 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 2cc11ea061eb27abf767a8e34bbfbd0c92646ee0
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 00:38:45 2023 +0000
+commit 5cbd07ac34280ccac934da07fd78016aa09f5152
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 10 09:04:47 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: account-invoicing-13.0/account-invoicing-13.0-sale_order_invoicing_queued
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-13-0/account-invoicing-13-0-sale_order_invoicing_queued/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -1144,9 +1139,9 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 7a278c3a59040c6baaef6d11bbf319ff7e5b2648
+commit dbe9cfbe4c400abe4e0d420e1a033be920096f99
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 23 08:38:20 2023 +0000
+Date:   Sat Jan 13 16:24:09 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1355,16 +1350,11 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit eb3af38c1c557e2cd37b540ecbb992f3fa88a3f9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 08:01:42 2024 +0000
+commit 207659e615afbd8f32583ccd6e92ba89b290713e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 10 07:57:42 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_chatter
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_chatter/it/
+    [BOT] post-merge updates
 
 
 ## wms

@@ -3,7 +3,7 @@
 
 {
     "name": "AEAT modelo 390",
-    "version": "13.0.3.2.0",
+    "version": "13.0.3.3.0",
     "category": "Localisation/Accounting",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
@@ -26,6 +26,9 @@
         # 2022
         "data/2022/aeat.model.export.config.csv",
         "data/2022/aeat.model.export.config.line.csv",
+        # 2023
+        "data/2023/aeat.model.export.config.csv",
+        "data/2023/aeat.model.export.config.line.csv",
         # rest of stuff
         "data/tax_code_map_mod390_data.xml",
         "views/mod390_view.xml",
