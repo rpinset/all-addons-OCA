@@ -28,9 +28,12 @@ cmislib
 email-validator
 phonenumbers
 # generated from manifests external_dependencies
+dotty-dict
 factur-x
 phonenumbers
 pydifact
+pytz
+xmltodict
 # generated from manifests external_dependencies
 geojson
 requests

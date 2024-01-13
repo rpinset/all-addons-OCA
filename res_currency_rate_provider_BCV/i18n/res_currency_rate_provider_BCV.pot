@@ -1,0 +1,34 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* res_currency_rate_provider_BCV
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: res_currency_rate_provider_BCV
+#: model:ir.model.fields.selection,name:res_currency_rate_provider_BCV.selection__res_currency_rate_provider__service__bcv
+msgid "BCV scrapping"
+msgstr ""
+
+#. module: res_currency_rate_provider_BCV
+#: model:ir.model,name:res_currency_rate_provider_BCV.model_res_currency_rate_provider
+msgid "Currency Rates Provider"
+msgstr ""
+
+#. module: res_currency_rate_provider_BCV
+#: model:ir.model.fields,field_description:res_currency_rate_provider_BCV.field_res_currency_rate_provider__service
+msgid "Provider"
+msgstr ""
+
+#. module: res_currency_rate_provider_BCV
+#: model_terms:ir.ui.view,arch_db:res_currency_rate_provider_BCV.res_currency_rate_update_wizard_form
+msgid "Se tomará la tasa de Hoy"
+msgstr ""
