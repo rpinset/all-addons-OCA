@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_margin_delivery_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-01-11 18:33+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields.selection,name:sale_margin_delivery_cost.selection__delivery_carrier__charge_policy__other
+msgid "As Other Cost"
+msgstr "Como Otros Costes"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields.selection,name:sale_margin_delivery_cost.selection__delivery_carrier__charge_policy__sale
+msgid "As SO Line"
+msgstr "Como Línea SO"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_delivery_carrier__charge_policy
+msgid "Charging Policy"
+msgstr "Política de Tarificación"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__company_id
+msgid "Company"
+msgstr "Companía"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__price_unit
+msgid "Cost"
+msgstr "Coste"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__recompute_delivery_price
+msgid "Delivery cost should be recomputed"
+msgstr "Los gastos de envío deben calcularse de nuevo"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__name
+msgid "Description"
+msgstr "Descripción"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_delivery_carrier__display_name
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,help:sale_margin_delivery_cost.field_delivery_carrier__charge_policy
+msgid ""
+"How shipping costs are added to the sales order: charged in a sales order "
+"line, estimated on an other costs line."
+msgstr ""
+"Cómo se añaden los gastos de envío al pedido de cliente: cargados en una "
+"línea de pedido de cliente, estimados en una línea de otros gastos."
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_delivery_carrier__id
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__is_delivery
+msgid "Is a Delivery"
+msgstr "Es un Envío"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_delivery_carrier____last_update
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order____last_update
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order__other_cost_ids
+#: model_terms:ir.ui.view,arch_db:sale_margin_delivery_cost.view_order_form_inherit
+msgid "Other Costs"
+msgstr "Otros Costes"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model,name:sale_margin_delivery_cost.model_sale_order
+#: model:ir.model.fields,field_description:sale_margin_delivery_cost.field_sale_order_other_cost__order_id
+msgid "Sales Order"
+msgstr "Orden de Venta"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model,name:sale_margin_delivery_cost.model_sale_order_other_cost
+msgid "Sales Order Other Cost"
+msgstr "Orden de Venta Otros Costes"
+
+#. module: sale_margin_delivery_cost
+#: model:ir.model,name:sale_margin_delivery_cost.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Métodos de Envío"

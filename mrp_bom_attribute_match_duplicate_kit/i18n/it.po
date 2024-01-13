@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-19 12:33+0000\n"
+"PO-Revision-Date: 2024-01-11 11:35+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
+
+#. module: mrp_bom_attribute_match_duplicate_kit
+#: model:res.groups,name:mrp_bom_attribute_match_duplicate_kit.group_mrp_bom_duplicate_access
+msgid "Can duplicate with kit"
+msgstr "Può duplicare prodotti con kit"
 
 #. module: mrp_bom_attribute_match_duplicate_kit
 #: model_terms:ir.ui.view,arch_db:mrp_bom_attribute_match_duplicate_kit.product_template_kit_wizard
@@ -100,4 +105,5 @@ msgstr ""
 #: code:addons/mrp_bom_attribute_match_duplicate_kit/models/product_template.py:0
 #, python-format
 msgid "This server action can be used only on products with variants"
-msgstr "Questa azione del server può essere usata solo su prodotti con varianti"
+msgstr ""
+"Questa azione del server può essere usata solo su prodotti con varianti"

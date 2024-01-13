@@ -243,21 +243,49 @@ class StockMove(models.Model):
         for move in self:
             move.previous_promised_qty = rows.get(move.id, 0)
 
+    def _is_release_needed(self):
+        self.ensure_one()
+        return self.need_release and self.state not in ["done", "cancel"]
+
+    def _is_release_ready(self):
+        """Checks if a move itself is ready for release
+        without considering the picking release_ready
+        """
+        self.ensure_one()
+        if not self._is_release_needed() or self.state == "draft":
+            return False
+        shipping_policy = self.picking_id._get_shipping_policy()
+        rounding = self.product_id.uom_id.rounding
+        ordered_available_to_promise_qty = self.ordered_available_to_promise_qty
+        if shipping_policy == "one":
+            return (
+                float_compare(
+                    ordered_available_to_promise_qty,
+                    self.product_qty,
+                    precision_rounding=rounding,
+                )
+                == 0
+            )
+        return (
+            float_compare(
+                ordered_available_to_promise_qty, 0, precision_rounding=rounding
+            )
+            > 0
+        )
+
     @api.depends(
         "ordered_available_to_promise_qty",
         "picking_id.move_type",
         "picking_id.move_lines",
         "need_release",
+        "state",
     )
     def _compute_release_ready(self):
         for move in self:
-            if not move.need_release:
-                move.release_ready = False
-                continue
-            if move.picking_id._get_shipping_policy() == "one":
-                move.release_ready = move.picking_id.release_ready
-            else:
-                move.release_ready = move.ordered_available_to_promise_uom_qty > 0
+            release_ready = move._is_release_ready()
+            if release_ready and move.picking_id._get_shipping_policy() == "one":
+                release_ready = move.picking_id.release_ready
+            move.release_ready = release_ready
 
     def _search_release_ready(self, operator, value):
         if operator != "=":
@@ -380,11 +408,15 @@ class StockMove(models.Model):
 
     def _prepare_move_split_vals(self, qty):
         vals = super()._prepare_move_split_vals(qty)
+
         # The method set procure_method as 'make_to_stock' by default on split,
-        # but we want to keep 'make_to_order' for chained moves when we split
-        # a partially available move in _run_stock_rule().
+        # but we want to keep 'make_to_order' for chained moves.
+        # Note this has been fixed in v15.0
+        # https://github.com/odoo/odoo/commit/4180afb95112dbb1119fd68b7bd3f2f5e1160422
+        vals.update({"procure_method": self.procure_method})
+
         if self.env.context.get("release_available_to_promise"):
-            vals.update({"procure_method": self.procure_method, "need_release": True})
+            vals.update({"need_release": True})
         return vals
 
     def _get_release_decimal_precision(self):
@@ -398,25 +430,6 @@ class StockMove(models.Model):
         if not float_compare(remaining, 0, precision_digits=precision) > 0:
             return
         return remaining
-
-    def _is_releasable(self):
-        self.ensure_one()
-        if not self.need_release:
-            return 0, 0
-        if self.state not in ("confirmed", "waiting", "done", "cancel"):
-            return 0, 0
-        precision = self._get_release_decimal_precision()
-        available_qty = self.ordered_available_to_promise_qty
-        if float_compare(available_qty, 0, precision_digits=precision) <= 0:
-            return 0, 0
-
-        remaining_qty = self._get_release_remaining_qty()
-        if remaining_qty:
-            if self.picking_id._get_shipping_policy() == "one":
-                # we don't want to deliver unless we can deliver all at
-                # once
-                return 0, 0
-        return available_qty, remaining_qty
 
     def _prepare_procurement_values(self):
         res = super()._prepare_procurement_values()
@@ -433,10 +446,12 @@ class StockMove(models.Model):
         """
         procurement_requests = []
         released_moves = self.env["stock.move"]
+        # Ensure the release_ready field is correctly computed
+        self.invalidate_cache(["release_ready"])
         for move in self:
-            available_qty, remaining_qty = move._is_releasable()
-            if not available_qty:
+            if not move.release_ready:
                 continue
+            remaining_qty = move._get_release_remaining_qty()
             if remaining_qty:
                 move._release_split(remaining_qty)
             released_moves |= move
@@ -556,6 +571,9 @@ class StockMove(models.Model):
         for move in moves_to_unrelease:
             iterator = move._get_chained_moves_iterator("move_orig_ids")
             moves_to_cancel = self.env["stock.move"]
+            # backup procure_method as when you don't propagate cancel, the
+            # destination move is forced to make_to_stock
+            procure_method = move.procure_method
             next(iterator)  # skip the current move
             for origin_moves in iterator:
                 origin_moves = origin_moves.filtered(
@@ -569,6 +587,8 @@ class StockMove(models.Model):
                     # origin_moves._action_cancel()
                     moves_to_cancel |= origin_moves
             moves_to_cancel._action_cancel()
+            # restore the procure_method overwritten by _action_cancel()
+            move.procure_method = procure_method
         moves_to_unrelease.write({"need_release": True})
         for picking, moves in itertools.groupby(
             moves_to_unrelease, lambda m: m.picking_id
