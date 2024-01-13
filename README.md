@@ -369,9 +369,9 @@ Date:   Tue Nov 19 20:53:58 2019 +0100
 
 ## connector-magento
 From [https://github.com/OCA/connector-magento.git](https://github.com/OCA/connector-magento.git)
-commit b1738c1a927186fbb79c237932bff2752144b955
+commit d9ffdb3edd2ac8d10918ed61b4365ee74b70b10b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 15:56:03 2023 +0000
+Date:   Wed Jan 10 12:45:42 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1218,16 +1218,16 @@ Date:   Fri Jan 5 08:01:42 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit fae40a5999a0ae5b1e12941ffc37c580eedbaa95
+commit 2388605109860cec3fa269daa3bd37efc6c85b04
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 14:54:20 2023 +0000
+Date:   Wed Jan 10 12:01:45 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (114 of 114 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
+    Translation: manufacture-12.0/manufacture-12.0-quality_control_issue
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_issue/it/
 
 
 ## manufacture-reporting
@@ -1417,16 +1417,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 22b110befa5a7d9f79909f9f65a4e79b4e46ca48
+commit e4efeea35602d77374ed05f6fb895215405a256f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 13:35:13 2024 +0000
+Date:   Tue Jan 9 19:59:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 83.3% (95 of 114 strings)
     
-    Translation: social-12.0/social-12.0-mail_optional_autofollow
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_optional_autofollow/it/
+    Translation: social-12.0/social-12.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_tracking/it/
 
 
 ## storage
