@@ -320,11 +320,14 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f986599d580213b989809bc87234a60d9115341b
+commit 7016227f90220af7681e62881debe75a14a126a4
+Merge: f986599d5 d68635f76
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Dec 30 11:46:39 2023 +0000
+Date:   Wed Jan 10 18:25:28 2024 +0000
 
-    [BOT] post-merge updates
+    Merge PR #2888 into 17.0
+    
+    Signed-off-by pedrobaeza
 
 
 ## crm
@@ -338,9 +341,9 @@ Date:   Fri Nov 24 19:16:46 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 00153bda05b14d3249c2ed3c4b9128b33aa1ff72
+commit 9c68fd3e32af62bfae56eacdcc5fca2af4b8b9f3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 11 17:44:31 2023 +0000
+Date:   Thu Jan 11 02:10:56 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1301,9 +1304,9 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit b4dbe0a342ade881418ae09d62070884d558c079
+commit 75d8eeab5905981f7cd61f851cbad056567ceb3e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 8 11:16:03 2024 +0000
+Date:   Wed Jan 10 12:13:36 2024 +0000
 
     [BOT] post-merge updates
 
