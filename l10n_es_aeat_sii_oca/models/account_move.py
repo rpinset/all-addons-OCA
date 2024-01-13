@@ -444,6 +444,8 @@ class AccountMove(models.Model):
 
     def _get_sii_invoice_dict_out(self, cancel=False):
         inv_dict = super()._get_sii_invoice_dict_out(cancel=cancel)
+        if cancel:
+            return inv_dict
         if self.thirdparty_invoice:
             inv_dict["FacturaExpedida"]["EmitidaPorTercerosODestinatario"] = "S"
         if self.sii_registration_key_additional1:
@@ -591,7 +593,7 @@ class AccountMove(models.Model):
             invoice._sii_check_exceptions()
             if (
                 invoice.sii_state in ["sent_modified", "sent"]
-                and self._sii_invoice_dict_not_modified()
+                and invoice._sii_invoice_dict_not_modified()
             ):
                 if invoice.sii_state == "sent_modified":
                     invoice.sii_state = "sent"

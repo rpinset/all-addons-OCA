@@ -24,6 +24,7 @@ cachetools
 requests
 # generated from manifests external_dependencies
 email-validator
+python-stdnum
 # generated from manifests external_dependencies
 factur-x
 PyPDF2
