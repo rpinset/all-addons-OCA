@@ -119,9 +119,9 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 6f0f7578747cfdd82e90bbd180f59ea4efab0f7e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 13:14:21 2024 +0000
+commit 614a76f873b3465255f0338ccd8f730961490ee4
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Tue Jan 16 00:09:14 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -898,16 +898,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 2e516df96ce6fbdc98a664063479e4d8dade7258
+commit 939346117a2ddd24dff0e9555b3d7c865ac5122d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 29 14:46:44 2023 +0000
+Date:   Wed Jan 17 07:21:50 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (62 of 62 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note_base/it/
 
 
 ## l10n-japan
@@ -1130,16 +1130,16 @@ Date:   Fri Nov 24 14:59:38 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 1022cb60736cc153ddd02b7d3721bb0adc7abf17
-Author: Yiğit <yibudak@gmail.com>
-Date:   Mon Jan 8 11:46:05 2024 +0000
+commit 0d6bb150a76338d25e71885c1c6db4c2917162ae
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 15 09:17:51 2024 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (22 of 22 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_no_negative
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_no_negative/tr/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_backdating
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_backdating/it/
 
 
 ## stock-logistics-tracking
@@ -1153,16 +1153,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 94b90290e2784a823a2aa939a07b66e31ecb4b40
+commit 3bf43da643e4dc03222b133f7b2b5e6c9544cbf1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:22:00 2023 +0000
+Date:   Mon Jan 15 09:17:49 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-sale_stock_info_popup
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-sale_stock_info_popup/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_account_inventory_force_date
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_account_inventory_force_date/it/
 
 
 ## stock-logistics-reporting
@@ -1417,9 +1417,9 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit e4efeea35602d77374ed05f6fb895215405a256f
+commit ca671c888e3bf2cf01442990768a4c74a53e7566
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 9 19:59:03 2024 +0000
+Date:   Wed Jan 17 07:48:49 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1463,16 +1463,16 @@ Date:   Wed Oct 11 06:43:56 2023 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 73db15bdc647f3fb8e3255abf3b496f5006c0786
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 19:00:57 2023 +0000
+commit 5035ec387a15eb8f323baa434ea7c76f6a14d001
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 15 18:53:03 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 22.3% (34 of 152 strings)
     
-    Translation: report-print-send-12.0/report-print-send-12.0-remote_report_to_printer
-    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-12-0/report-print-send-12-0-remote_report_to_printer/
+    Translation: report-print-send-12.0/report-print-send-12.0-base_report_to_printer
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-12-0/report-print-send-12-0-base_report_to_printer/it/
 
 
 ## webkit-tools
@@ -1518,13 +1518,13 @@ Date:   Mon Dec 18 19:48:16 2023 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 123c1c0dc735fa881eedb946b4f0be82db15abb0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 13:16:05 2024 +0000
+commit a364401285d306dea94c64790e34714585adbe2c
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Tue Jan 16 11:40:05 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 85.1% (23 of 27 strings)
+    Currently translated at 96.2% (26 of 27 strings)
     
     Translation: server-backend-12.0/server-backend-12.0-base_global_discount
     Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_global_discount/it/
@@ -1546,16 +1546,11 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit ab13244cbf7a7d9ffb8d93655ab3094dcd2f9190
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 31 17:22:46 2023 +0000
+commit 7a795235fddfd0cbb9c7757a76f8dbea8f17cb8a
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Tue Jan 16 19:46:07 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: server-ux-12.0/server-ux-12.0-base_technical_features
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-base_technical_features/it/
+    Added translation using Weblate (Portuguese (Brazil))
 
 
 ## community-data-files
