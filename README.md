@@ -446,16 +446,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 93d2999f3275fd6b4a5626ff5148bfee8878d4d0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 13 11:11:29 2023 +0000
+commit 7939d3cd2341314a2d27100db99562a18745f177
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jan 16 12:27:58 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 88.5% (31 of 35 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_order_type
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_order_type/it/
+    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_order_line_menu
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_order_line_menu/
 
 
 ## crm
@@ -1290,16 +1290,16 @@ Date:   Fri Nov 24 14:59:45 2023 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit fccfb2354370b7a81042469fae489213dddcb205
+commit cb644ac4ef95831359114b26a1b1af9fe00c899b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 8 07:06:03 2024 +0000
+Date:   Mon Jan 15 09:39:06 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 83.3% (5 of 6 strings)
+    Currently translated at 87.5% (7 of 8 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_send_by_mail
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_send_by_mail/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_auto_move
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_auto_move/it/
 
 
 ## stock-logistics-tracking
@@ -1313,11 +1313,16 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 2005c2a1b3763b5b662ea97f0ddbc763fd441367
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 21 15:24:17 2023 +0000
+commit 476bb8fdd326d629ca5004b83c15d16bc6f85c69
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 15 09:17:47 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 11.1% (3 of 27 strings)
+    
+    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_inventory_discrepancy
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_inventory_discrepancy/it/
 
 
 ## stock-logistics-reporting
@@ -1581,16 +1586,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit c1b342e56739cf35cc00dcb54793d30ccd57f1f2
+commit 4e49e63929a35c32d54f850a966bfc125ffd2c98
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 13:35:21 2024 +0000
+Date:   Wed Jan 17 07:48:52 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 31.6% (37 of 117 strings)
     
-    Translation: social-13.0/social-13.0-mail_optional_autofollow
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_optional_autofollow/it/
+    Translation: social-13.0/social-13.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_tracking/it/
 
 
 ## storage
@@ -1627,11 +1632,16 @@ Date:   Tue Jan 9 07:40:52 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit bcd57c9692eff8aa482d95a1f1cb58f695df2447
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 15:55:31 2023 +0000
+commit 27872bedcedb3825ee32bd6403601f40faddfacd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 15 18:53:00 2024 +0000
 
-    [UPD] README.rst
+    Translated using Weblate (Italian)
+    
+    Currently translated at 24.1% (34 of 141 strings)
+    
+    Translation: report-print-send-13.0/report-print-send-13.0-base_report_to_printer
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-13-0/report-print-send-13-0-base_report_to_printer/it/
 
 
 ## webkit-tools
@@ -1713,16 +1723,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 19a8b1de3f1353470d0b2752f38fb9335d04cc55
+commit dea7fa98ecefcf19523bd6301cf74751c9f25d88
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 2 12:39:27 2024 +0000
+Date:   Wed Jan 17 14:58:44 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (35 of 35 strings)
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
+    Translation: server-ux-13.0/server-ux-13.0-mass_operation_abstract
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_operation_abstract/it/
 
 
 ## community-data-files
