@@ -656,9 +656,9 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 443cb455dfd7e847f380f66eb80e1e7abe26dba1
+commit f0d16d5cb0c3e52960e13725d7d595549c87917e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 26 19:12:47 2023 +0000
+Date:   Tue Jan 16 21:10:14 2024 +0000
 
     [BOT] post-merge updates
 
@@ -998,11 +998,11 @@ Date:   Sun Nov 12 16:12:36 2023 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 10ee56f61a10024b788000e1710a272e445b7bf3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:13:05 2023 +0100
+commit 40f250411f07f19d225ce23542e96947f92f30e0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jan 17 06:51:48 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1259,9 +1259,9 @@ Date:   Sun Nov 12 16:18:29 2023 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 235cf3e9273d989f6af0771a3d5ecd83a601f5ec
+commit 91832b57566d5ee10642526c5937fdc929449e68
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 13 19:40:11 2023 +0000
+Date:   Wed Jan 17 07:24:22 2024 +0000
 
     [BOT] post-merge updates
 
