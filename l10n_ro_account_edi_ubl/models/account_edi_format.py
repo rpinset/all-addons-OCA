@@ -56,7 +56,8 @@ class AccountEdiXmlCIUSRO(models.Model):
         if self.code != "cius_ro":
             return super()._is_required_for_invoice(invoice)
         is_required = (
-            invoice.commercial_partner_id.country_id.code == "RO"
+            invoice.move_type in ("out_invoice", "out_refund")
+            and invoice.commercial_partner_id.country_id.code == "RO"
             and invoice.commercial_partner_id.is_company
         )
         return is_required
@@ -97,6 +98,7 @@ class AccountEdiXmlCIUSRO(models.Model):
                     else:
                         res[invoice] = {
                             "success": False,
+                            "blocking_level": "warning",
                             "error": _("The invoice is not older than %s days")
                             % residence,
                         }
@@ -107,20 +109,13 @@ class AccountEdiXmlCIUSRO(models.Model):
                     )
             if res[invoice].get("error", False):
                 invoice.message_post(body=res[invoice]["error"])
-                # Create activity if process is stoped with an error blocking level
+                # Create activity if process is stopped with an error blocking level
                 if res[invoice].get("blocking_level") == "error":
-                    body = (
-                        _(
-                            "The invoice was not send or validated by ANAF."
-                            "\n\nError:"
-                            "\n<p>%s</p>"
-                        )
-                        % res[invoice]["error"]
-                    )
-
+                    message = _("The invoice was not send or validated by ANAF.")
+                    body = message + _("\n\nError:\n<p>%s</p>") % res[invoice]["error"]
                     invoice.activity_schedule(
                         "mail.mail_activity_data_warning",
-                        summary=_("The invoice was not send or validated by ANAF"),
+                        summary=message,
                         note=body,
                         user_id=invoice.invoice_user_id.id,
                     )
@@ -242,15 +237,13 @@ class AccountEdiXmlCIUSRO(models.Model):
             "nok": {
                 "success": False,
                 "blocking_level": "warning",
-                "error": _("The invoice was not validated by ANAF.: %s")
-                % error_message,
+                "error": _("The invoice was not validated by ANAF."),
             },
             "ok": {"success": True, "id_descarcare": doc.get("id_descarcare") or ""},
             "XML cu erori nepreluat de sistem": {
                 "success": False,
                 "blocking_level": "error",
-                "error": _("XML with errors not taken over by the system %s")
-                % error_message,
+                "error": _("XML with errors not taken over by the system."),
             },
         }
         if stare:

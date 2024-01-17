@@ -15,6 +15,16 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: l10n_ro_account_edi_ubl
+#: code:addons/l10n_ro_account_edi_ubl/models/account_edi_format.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Error:\n"
+"<p>%s</p>"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">E-Invoice Settings</span>"
 msgstr ""
@@ -365,23 +375,13 @@ msgstr ""
 #. module: l10n_ro_account_edi_ubl
 #: code:addons/l10n_ro_account_edi_ubl/models/account_edi_format.py:0
 #, python-format
-msgid "The invoice was not send or validated by ANAF"
+msgid "The invoice was not send or validated by ANAF."
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
 #: code:addons/l10n_ro_account_edi_ubl/models/account_edi_format.py:0
 #, python-format
-msgid ""
-"The invoice was not send or validated by ANAF.\n"
-"\n"
-"Error:\n"
-"<p>%s</p>"
-msgstr ""
-
-#. module: l10n_ro_account_edi_ubl
-#: code:addons/l10n_ro_account_edi_ubl/models/account_edi_format.py:0
-#, python-format
-msgid "The invoice was not validated by ANAF.: %s"
+msgid "The invoice was not validated by ANAF."
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
@@ -419,7 +419,7 @@ msgstr "ID tranzacție (RO)"
 #. module: l10n_ro_account_edi_ubl
 #: code:addons/l10n_ro_account_edi_ubl/models/account_edi_format.py:0
 #, python-format
-msgid "XML with errors not taken over by the system %s"
+msgid "XML with errors not taken over by the system."
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
