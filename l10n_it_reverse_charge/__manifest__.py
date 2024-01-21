@@ -3,10 +3,11 @@
 # Copyright 2017 Lorenzo Battistini - Agile Business Group
 # Copyright 2017 Marco Calcagni - Dinamiche Aziendali srl
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+# Copyright 2023 Matteo Mircoli - Openforce srls
 
 {
     "name": "ITA - Inversione contabile",
-    "version": "14.0.1.2.4",
+    "version": "14.0.1.2.5",
     "category": "Localization/Italy",
     "summary": "Inversione contabile",
     "author": "Odoo Italia Network, Odoo Community Association (OCA)",
