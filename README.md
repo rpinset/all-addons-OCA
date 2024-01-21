@@ -122,11 +122,16 @@ Date:   Mon Oct 9 23:10:12 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 5cbd07ac34280ccac934da07fd78016aa09f5152
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 10 09:04:47 2024 +0000
+commit a3e7e0cb3ccb7676278c32f704793a565f047534
+Author: David Alonso (Solvos) <david.alonso@solvos.es>
+Date:   Fri Jan 19 08:40:06 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (12 of 12 strings)
+    
+    Translation: account-invoicing-13.0/account-invoicing-13.0-account_invoice_warn_message
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-13-0/account-invoicing-13-0-account_invoice_warn_message/es/
 
 
 ## account-fiscal-rule
@@ -565,30 +570,25 @@ Date:   Sun Nov 12 14:24:33 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit b9f41f86207a41578b4c2143d7146e597a150d8b
+commit 195ffd5604c50ad22eb3f63d6800489e126616ee
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 23 13:43:23 2023 +0000
+Date:   Thu Jan 18 07:56:00 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (97 of 97 strings)
     
-    Translation: knowledge-13.0/knowledge-13.0-attachment_preview
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-attachment_preview/it/
+    Translation: knowledge-13.0/knowledge-13.0-document_page
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-document_page/it/
 
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 11c6331e806515d4cb78b0ce14ac7b0dd257f9c8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 13:51:25 2023 +0000
+commit c40ad7c0c0799c8e6503f05515c73d4fd2876edb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jan 18 14:50:58 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (333 of 333 strings)
-    
-    Translation: dms-13.0/dms-13.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
+    [BOT] post-merge updates
 
 
 ## e-commerce
@@ -1618,9 +1618,9 @@ Date:   Sun Sep 3 16:31:23 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit aa2849268da85f7dd7a6547f9bf16ecc388655c6
+commit 44b7c36911c33935c27824a8607d6d6d01bb3660
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 9 07:40:52 2024 +0000
+Date:   Thu Jan 18 06:45:51 2024 +0000
 
     Translated using Weblate (Italian)
     
