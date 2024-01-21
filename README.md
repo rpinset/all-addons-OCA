@@ -113,11 +113,11 @@ Date:   Sun Nov 12 16:01:43 2023 +0100
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit ccece105fa120290a757e3838b25abe70871e144
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:47:08 2023 +0100
+commit 647a54ebc893c435f0a26f7c1059ec38768222c9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 19 14:41:55 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## mis-builder
@@ -440,11 +440,14 @@ Date:   Thu Dec 21 14:51:09 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a8493b5c1a67bbbdd0dd525965cf97d786a51c6e
+commit f4d0a8ef3dfcf6b282e0f297441a28a48ca06660
+Merge: a8493b5c b114731b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 28 21:58:10 2023 +0000
+Date:   Thu Jan 18 17:36:24 2024 +0000
 
-    [BOT] post-merge updates
+    Merge PR #1154 into 17.0
+    
+    Signed-off-by max3903
 
 
 ## margin-analysis
@@ -692,11 +695,11 @@ Date:   Tue Dec 12 07:44:43 2023 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit e2ff0bc816170fab17421d2fb23551e3f4500be3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:51:40 2023 +0100
+commit dff8fd82a3a065b1a69dd10d55da0e23d4a9aaef
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 19 14:42:57 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -1061,11 +1064,14 @@ Date:   Tue Jan 9 15:59:37 2024 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit e2c681a9a15e449f512d92ee35fdd7f9b90889f8
+commit c3a0a4e52a260314c29e1f292003a26a855b388a
+Merge: e2c681a9 5c3d2ebe
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 27 11:32:28 2023 +0000
+Date:   Thu Jan 18 17:43:33 2024 +0000
 
-    [BOT] post-merge updates
+    Merge PR #565 into 17.0
+    
+    Signed-off-by max3903
 
 
 ## pms
@@ -1313,9 +1319,9 @@ Date:   Wed Jan 10 12:13:36 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 608552ce627c6192d021d72a51940b6f7c670459
+commit 9a72fb0ccfea20f89796cd10ff2539f377ed7c60
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 19:32:47 2023 +0000
+Date:   Fri Jan 19 18:25:22 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1466,9 +1472,9 @@ Date:   Sun Nov 12 16:17:36 2023 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 0958651a9783c8db899db2b1767da90565bb74f8
+commit dc9d4574cc2cb5379f712479f698e858cf14cb9b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 24 19:40:30 2023 +0000
+Date:   Fri Jan 19 15:16:12 2024 +0000
 
     [BOT] post-merge updates
 
