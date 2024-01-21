@@ -77,16 +77,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit b276b7d0d6f958266e7f0b4692c35782e21b723a
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Dec 28 09:38:28 2023 +0000
+commit 6640568ca8ad5943f097c6b1d12a3180cda89552
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 18 09:05:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (23 of 23 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_voucher_print
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_voucher_print/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
 
 
 ## account-financial-reporting
@@ -119,16 +119,11 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 614a76f873b3465255f0338ccd8f730961490ee4
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Tue Jan 16 00:09:14 2024 +0000
+commit e3cb2c030647845a0d71a14cdc5cfc31e9d08460
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 19 02:10:20 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (34 of 34 strings)
-    
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_global_discount
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_global_discount/it/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -147,16 +142,16 @@ Date:   Sun Dec 24 16:27:53 2023 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 5b8ff040ee4931ed87a20c03cc7c6fac4ca07a06
+commit b373de36ac4c9ecc7cc19bdba31d3a82ccd2bd3b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 18 07:35:04 2023 +0000
+Date:   Fri Jan 19 07:35:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: operating-unit-12.0/operating-unit-12.0-stock_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-stock_operating_unit/it/
+    Translation: operating-unit-12.0/operating-unit-12.0-product_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-product_operating_unit/it/
 
 
 ## intrastat
@@ -189,9 +184,9 @@ Date:   Mon Oct 9 19:34:59 2023 +0000
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit 88a0292d047b29e2b131a90c150ff7a7b7870c04
+commit 7683c51815703d1573151ab2fb63879831fce271
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 17:31:29 2023 +0000
+Date:   Thu Jan 18 09:05:14 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -535,16 +530,16 @@ Date:   Sun Oct 29 09:56:21 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit da22c68420306139a73f24707bec79fa8ab625bc
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 00:58:08 2023 +0000
+commit 80c77dfe522201be8e3399e16da226b2ab588113
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 18 07:55:58 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (103 of 103 strings)
     
-    Translation: knowledge-12.0/knowledge-12.0-document_page_project
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page_project/
+    Translation: knowledge-12.0/knowledge-12.0-document_page
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page/it/
 
 
 ## dms
@@ -898,16 +893,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 939346117a2ddd24dff0e9555b3d7c865ac5122d
+commit d7f6f76ae36aebeefca04ef3b9e0657772d852c3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 17 07:21:50 2024 +0000
+Date:   Sat Jan 20 13:33:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (62 of 62 strings)
+    Currently translated at 19.9% (2191 of 10995 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note_base/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
 
 
 ## l10n-japan
@@ -1449,9 +1444,9 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 759b48a3bd012541e6ec57c019be53937e66df2f
+commit c8b434a9510e5ff2e0ffd83d962d9527185ec771
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 11 06:43:56 2023 +0000
+Date:   Thu Jan 18 07:19:56 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1486,9 +1481,9 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d77e8ad5e5161cff98bb9d4206c5c0caa4a4deb4
+commit ad7b978b1464bae017b4760ad815c23e84297743
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 9 07:22:27 2024 +0000
+Date:   Thu Jan 18 06:53:09 2024 +0000
 
     Translated using Weblate (Italian)
     
