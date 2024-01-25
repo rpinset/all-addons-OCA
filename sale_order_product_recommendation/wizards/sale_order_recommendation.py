@@ -40,7 +40,6 @@ class SaleOrderRecommendation(models.TransientModel):
         required=True,
         help="The less, the faster they will be found.",
     )
-    last_compute = fields.Char()
     # Get default value from config settings
     sale_recommendation_price_origin = fields.Selection(
         [("pricelist", "Pricelist"), ("last_sale_price", "Last sale price")],
@@ -48,6 +47,17 @@ class SaleOrderRecommendation(models.TransientModel):
         default="pricelist",
     )
     use_delivery_address = fields.Boolean(string="Use delivery address")
+    recommendations_order = fields.Selection(
+        [
+            ("times_delivered desc", "Times delivered"),
+            ("units_delivered desc", "Units delivered"),
+            ("product_categ_complete_name asc", "Product category"),
+            ("product_default_code asc", "Product code"),
+            ("product_name asc", "Product name"),
+        ],
+        required=True,
+        default="times_delivered desc",
+    )
 
     @api.model
     def _default_order_id(self):
@@ -111,21 +121,23 @@ class SaleOrderRecommendation(models.TransientModel):
             vals["sale_line_id"] = so_line.id
         return vals
 
-    @api.onchange("order_id", "months", "line_amount", "use_delivery_address")
-    def _remove_recommendations(self):
+    def _reopen_wizard(self):
+        """Tell the client to close the wizard and open it again."""
+        return {
+            "type": "ir.actions.act_window",
+            "res_model": self._name,
+            "res_id": self.id,
+            "view_mode": "form",
+            "target": "new",
+        }
+
+    def action_reset(self):
         """Empty the list of recommendations."""
         self.line_ids = False
+        return self._reopen_wizard()
 
     def generate_recommendations(self):
         """Generate lines according to context sale order."""
-        last_compute = "{}-{}-{}-{}".format(
-            self.id, self.months, self.line_amount, self.use_delivery_address
-        )
-        # Avoid execute onchange as times as fields in api.onchange
-        # ORM must control this?
-        if self.last_compute == last_compute:
-            return
-        self.last_compute = last_compute
         # Search delivered products in previous months
         # Search with sudo for get sale order from other commercials users
         found_lines = (
@@ -174,17 +186,20 @@ class SaleOrderRecommendation(models.TransientModel):
             i += 1
             if i >= self.line_amount:
                 break
+        # Sort recommendations by user choice
+        order_field, order_dir = map(str.lower, self.recommendations_order.split())
+        # Priority order (which can have an str value "0" or "1") must always
+        # default to DESC, no matter the order_dir; so we inverse it if it's ASC
+        priority_multiplier = 1 if order_dir == "desc" else -1
         self.line_ids = recommendation_lines.sorted(
-            key=lambda x: x.times_delivered, reverse=True
+            key=lambda line: (
+                "" if line[order_field] is False else line[order_field],
+                int(line.product_priority) * priority_multiplier,
+            ),
+            reverse=order_dir == "desc",
         )
         # Reopen wizard
-        return {
-            "type": "ir.actions.act_window",
-            "res_model": self._name,
-            "res_id": self.id,
-            "view_mode": "form",
-            "target": "new",
-        }
+        return self._reopen_wizard()
 
     def action_accept(self):
         """Propagate recommendations to sale order."""
@@ -225,8 +240,17 @@ class SaleOrderRecommendationLine(models.TransientModel):
     currency_id = fields.Many2one(related="product_id.currency_id")
     partner_id = fields.Many2one(related="wizard_id.order_id.partner_id")
     product_id = fields.Many2one("product.product", string="Product")
-    product_categ_id = fields.Many2one(
-        related="product_id.categ_id", readonly=True, store=True
+    product_name = fields.Char(
+        name="Product name", related="product_id.name", readonly=True, store=True
+    )
+    product_categ_complete_name = fields.Char(
+        name="Product category",
+        related="product_id.categ_id.complete_name",
+        readonly=True,
+        store=True,
+    )
+    product_default_code = fields.Char(
+        related="product_id.default_code", readonly=True, store=True
     )
     product_priority = fields.Selection(
         related="product_id.priority", store=True, readonly=False
