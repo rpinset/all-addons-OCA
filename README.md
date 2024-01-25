@@ -212,9 +212,9 @@ Date:   Sun Nov 12 15:36:08 2023 +0100
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit b51243cc6a2b5cbcd0ce112f207c8727a317cba1
+commit 78ad392f6bfc7ae8baebdb468ce40f101f1a5161
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 8 10:46:23 2024 +0000
+Date:   Thu Jan 25 16:41:48 2024 +0000
 
     [BOT] post-merge updates
 
@@ -320,14 +320,11 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7016227f90220af7681e62881debe75a14a126a4
-Merge: f986599d5 d68635f76
+commit d8d68be31afaa5feff4a87a24b114299071ab9a7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 10 18:25:28 2024 +0000
+Date:   Thu Jan 25 16:25:57 2024 +0000
 
-    Merge PR #2888 into 17.0
-    
-    Signed-off-by pedrobaeza
+    [BOT] post-merge updates
 
 
 ## crm
@@ -1085,11 +1082,11 @@ Date:   Sun Nov 12 16:02:21 2023 +0100
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 0e8b6c2b6b80f071f96dfcd3c1db57854be6cdb1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:05:04 2023 +0100
+commit 9a631848ed8eeeb04d8af78489dd277a57c3ec36
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jan 25 16:01:56 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1211,9 +1208,9 @@ Date:   Sun Nov 12 15:36:56 2023 +0100
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit c638171c04c4678daadde996338a84ef5a893001
+commit e219bd452fca360123c844422debe981f081e35d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Dec 28 21:28:00 2023 +0000
+Date:   Thu Jan 25 16:58:01 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1238,9 +1235,9 @@ Date:   Sun Nov 12 16:09:11 2023 +0100
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 304c394aef0c408397247501932e4fd79b624390
+commit b717e8cee8ad48ff17a025953f52aef3c7a3c0e2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 8 11:13:11 2024 +0000
+Date:   Tue Jan 23 21:35:43 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1283,9 +1280,9 @@ Date:   Sun Nov 26 09:34:46 2023 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit b37b684d6c4857dbb17bc0d1aaa2fc246a8c9b93
+commit 898a2eae7cc5bd07d3434d4fcf74fb5111d3942e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 8 08:39:21 2024 +0000
+Date:   Thu Jan 25 16:56:49 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1310,9 +1307,9 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 75d8eeab5905981f7cd61f851cbad056567ceb3e
+commit 782d79999eb8e5f8c1bbfd8ebf056231d917bf5f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 10 12:13:36 2024 +0000
+Date:   Thu Jan 25 16:21:14 2024 +0000
 
     [BOT] post-merge updates
 
