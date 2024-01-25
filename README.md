@@ -234,11 +234,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 6b7ff0ce6cc537c26e6e2d535305be249ab745e2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 3 17:25:40 2024 +0000
+commit 7822b2133eb4f6a76ecccfa581711a00b1331d5d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 22 08:13:16 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 85.7% (96 of 112 strings)
+    
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -451,16 +456,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7939d3cd2341314a2d27100db99562a18745f177
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jan 16 12:27:58 2024 +0000
+commit 7ac5f80e38ac974d6f53ea41e0f763c0e04fc5c0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jan 25 13:36:02 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 50.0% (12 of 24 strings)
     
-    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_order_line_menu
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_order_line_menu/
+    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_stock_picking_blocking
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_stock_picking_blocking/it/
 
 
 ## crm
@@ -621,16 +626,16 @@ Date:   Tue Oct 10 01:29:56 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 62f3e7c76a550725b8f5a6f40910bd960bdd555d
+commit cb698309e971c2a06b430ed7289bf39b51a163f5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 26 20:00:07 2023 +0000
+Date:   Mon Jan 22 08:12:41 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (544 of 544 strings)
+    Currently translated at 100.0% (139 of 139 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_recurring/it/
 
 
 ## margin-analysis
@@ -1378,9 +1383,9 @@ Date:   Thu Dec 28 12:50:42 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8ae14663b083d01ae4e3a5fae9a0e070158de48f
+commit d1b70357a653ea70bdfb5781c53f7d72348d0b44
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 14:46:24 2023 +0000
+Date:   Mon Jan 22 08:13:01 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1537,9 +1542,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit b1b8abf74f2940da77dc23b9ee8a192577f77193
+commit 71aff138910c14887b3097c05aaef444159c0e6e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:51:44 2023 +0000
+Date:   Thu Jan 25 13:09:05 2024 +0000
 
     Translated using Weblate (Italian)
     
