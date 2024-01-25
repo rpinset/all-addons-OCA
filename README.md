@@ -423,16 +423,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a300b5ca06d8a80909fda979f872bfbeed4d5508
+commit 11c1c3b9da884ae4806eef5e756aaa8b80104b36
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 13:18:38 2024 +0000
+Date:   Thu Jan 25 13:30:47 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_global_discount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_global_discount/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
 
 
 ## crm
@@ -586,16 +586,16 @@ Date:   Tue Oct 10 01:25:17 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit fa6e69b2f1e18d9e889b25fb40d003528e1b8618
+commit 5b1ac788bd145962d95552e1ba2c26ea784de355
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 19 13:16:33 2023 +0000
+Date:   Mon Jan 22 08:12:36 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (512 of 512 strings)
+    Currently translated at 100.0% (138 of 138 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
 
 
 ## margin-analysis
@@ -893,13 +893,13 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit d7f6f76ae36aebeefca04ef3b9e0657772d852c3
+commit de1b89c82b4439a47cf9d71799eb8aea104a8fab
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jan 20 13:33:21 2024 +0000
+Date:   Tue Jan 23 07:42:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 19.9% (2191 of 10995 strings)
+    Currently translated at 29.7% (3271 of 10995 strings)
     
     Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
     Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
@@ -1111,30 +1111,30 @@ Date:   Tue Dec 12 08:23:32 2023 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 893e8bb8a9c2e39b615bae060fdd3c21e310b72d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 14:59:38 2023 +0000
+commit db15b5111ebad98186c1f302e5eb3b15fc58870c
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jan 25 10:54:51 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 94.1% (16 of 17 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-barcodes_generator_product
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_product/it/
+    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-barcodes_generator_abstract
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_abstract/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 0d6bb150a76338d25e71885c1c6db4c2917162ae
+commit e67960fdc69c09eae683f209677a21dbb48c6fc6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 15 09:17:51 2024 +0000
+Date:   Mon Jan 22 08:02:59 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_backdating
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_backdating/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_return_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_return_request/it/
 
 
 ## stock-logistics-tracking
@@ -1148,16 +1148,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 3bf43da643e4dc03222b133f7b2b5e6c9544cbf1
+commit 611cbf940e1abdf35fdd63746aae18672a7190e9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 15 09:17:49 2024 +0000
+Date:   Thu Jan 25 13:38:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_account_inventory_force_date
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_account_inventory_force_date/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-sale_stock_info_popup
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-sale_stock_info_popup/it/
 
 
 ## stock-logistics-reporting
@@ -1176,9 +1176,9 @@ Date:   Sun Oct 29 14:48:32 2023 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 3b3899a9fde178a5aadcc9edad884ed11330c5f2
+commit be7c619544bb99e501186504c3f2ce3ea62f3aa6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 20 12:22:41 2023 +0000
+Date:   Thu Jan 25 13:21:33 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1213,16 +1213,16 @@ Date:   Fri Jan 5 08:01:42 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 2388605109860cec3fa269daa3bd37efc6c85b04
+commit 28ada44d7dc76175a000a463334b4fd6a3d7514d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 10 12:01:45 2024 +0000
+Date:   Mon Jan 22 08:13:13 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (114 of 114 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-quality_control_issue
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_issue/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
@@ -1366,9 +1366,9 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit f07c2d28ed060de425a50a8814ac4d46a1f02562
+commit 1133dc3588c4f9ac5eebc4d06b5b3f58399d67e0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 18 07:58:17 2023 +0000
+Date:   Thu Jan 25 13:14:52 2024 +0000
 
     Translated using Weblate (Italian)
     
