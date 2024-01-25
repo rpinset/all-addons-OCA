@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-02 13:34+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2024-01-25 16:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -189,8 +189,8 @@ msgstr ""
 msgid ""
 "Click to create a blanket order that can be converted into a sale order."
 msgstr ""
-"Clicca per creare un ordine aperto che può essere convertito in un ordine di "
-"vendita."
+"Cliccare per creare un ordine aperto che può essere convertito in un ordine "
+"di vendita."
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__company_id
@@ -249,11 +249,6 @@ msgid "Currency"
 msgstr "Valuta"
 
 #. module: sale_blanket_order
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__partner_id
-msgid "Customer"
-msgstr "Cliente"
-
-#. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__client_order_ref
 msgid "Customer Reference"
 msgstr "Riferimento cliente"
@@ -262,16 +257,17 @@ msgstr "Riferimento cliente"
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 #, python-format
 msgid "Date Scheduled"
-msgstr "Data programmata"
+msgstr "Data schedulata"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__delivered_uom_qty
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
 msgid "Delivered Qty"
 msgstr "Q.tà consegnata"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__delivered_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__delivered_uom_qty
 msgid "Delivered quantity"
 msgstr "Quantità consegnata"
 
@@ -283,13 +279,13 @@ msgstr "Descrizione"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_res_config_settings__group_blanket_disable_adding_lines
 msgid "Disable adding more lines to SOs"
-msgstr "Disabilita l'aggiunta di altre righe nei SO"
+msgstr "Disabilita l'aggiunta di altre righe negli OV"
 
 #. module: sale_blanket_order
 #: model:res.groups,name:sale_blanket_order.blanket_orders_disable_adding_lines
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_config_settings_form_view
 msgid "Disable adding more lines to SOs from Blanket Orders"
-msgstr "Disabilita l'aggiunta di altre righe nei SO da ordini aperti"
+msgstr "Disabilita l'aggiunta di altre righe negli OV da ordini aperti"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_res_config_settings__display_name
@@ -391,13 +387,14 @@ msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__invoiced_uom_qty
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
 msgid "Invoiced Qty"
 msgstr "Q.tà fatturata"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__invoiced_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__invoiced_uom_qty
 msgid "Invoiced quantity"
 msgstr "Quantità fatturata"
 
@@ -555,13 +552,13 @@ msgid "Order lines"
 msgstr "Righe ordine"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__ordered_uom_qty
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
 msgid "Ordered Qty"
 msgstr "Q.tà ordinata"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__ordered_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__ordered_uom_qty
 msgid "Ordered quantity"
 msgstr "Quantità ordinata"
 
@@ -571,16 +568,14 @@ msgid "Origin blanket order"
 msgstr "Origine ordine aperto"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__original_uom_qty
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
-#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_tree
-#: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
 msgid "Original Qty"
 msgstr "Q.tà originale"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__original_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__original_uom_qty
 msgid "Original quantity"
 msgstr "Quantità originale"
 
@@ -591,6 +586,7 @@ msgstr "Altre informazioni"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__partner_id
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__partner_id
 msgid "Partner"
 msgstr "Partner"
 
@@ -638,6 +634,11 @@ msgid "Purchase Order"
 msgstr "Ordine di acquisto"
 
 #. module: sale_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
+msgid "Qty"
+msgstr "Q.tà"
+
+#. module: sale_blanket_order
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 #, python-format
 msgid "Quantity must be greater than zero"
@@ -649,21 +650,21 @@ msgid "Quantity to Order"
 msgstr "Quantità da ordinare"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__remaining_uom_qty
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__remaining_uom_qty
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_search
 msgid "Remaining Qty"
 msgstr "Q.tà rimanente"
 
 #. module: sale_blanket_order
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__remaining_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__remaining_uom_qty
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__remaining_uom_qty
-msgid "Remaining quantity"
-msgstr "Quantità rimanente"
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__remaining_qty
+msgid "Remaining Qty in base UoM"
+msgstr "Q.tà rimanente in UdM base"
 
 #. module: sale_blanket_order
-#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__remaining_qty
-msgid "Remaining quantity in base UoM"
-msgstr "Quantità rimanente in UdM base"
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__remaining_uom_qty
+msgid "Remaining quantity"
+msgstr "Quantità rimanente"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__user_id
@@ -695,7 +696,7 @@ msgstr "Numero righe ordine di vendita aperto"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__sale_count
 msgid "Sale Count"
-msgstr "Numero vendite"
+msgstr "Conteggio vendite"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
@@ -749,7 +750,7 @@ msgstr "Addetto vendite"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__date_schedule
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "Scheduled Date"
-msgstr "Data programmata"
+msgstr "Data schedulata"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_search
@@ -840,11 +841,17 @@ msgstr "La vendita è stata già completata."
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.view_blanket_order_form
 msgid "To Draft"
-msgstr "In bozza"
+msgstr "A bozza"
+
+#. module: sale_blanket_order
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
+msgid "To Invoice Qty"
+msgstr "Q.tà da fatturare"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__amount_total
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_total
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
 msgid "Total"
 msgstr "Totale"
 
@@ -862,6 +869,7 @@ msgstr "Prezzo unitario"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__product_uom
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_wizard_line__product_uom
+#: model_terms:ir.ui.view,arch_db:sale_blanket_order.sale_blanket_order_line_form
 msgid "Unit of Measure"
 msgstr "Unità di misura"
 
@@ -886,11 +894,12 @@ msgstr "Imponibile"
 #: model_terms:ir.actions.act_window,help:sale_blanket_order.act_open_blanket_order_view
 msgid ""
 "Use this menu to search within your blanket orders. For each blanket order,\n"
-"                you can track the related discussion with the customer, control\n"
+"                you can track the related discussion with the customer, "
+"control\n"
 "                the products delivered and control the vendor bills."
 msgstr ""
-"Usa questo menu per ricercare nel tuo ordine aperto. Per ogni ordine aperto,"
-"\n"
+"Usa questo menu per ricercare nel tuo ordine aperto. Per ogni ordine "
+"aperto,\n"
 "                puoi tracciare le relative conversazioni con il cliente, "
 "controllare\n"
 "                i prodotti spediti e controllare le fatture del venditore."
@@ -953,8 +962,8 @@ msgstr ""
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
 #, python-format
 msgid ""
-"You can not delete an open blanket or with active sale orders! Try to cancel"
-" it before."
+"You can not delete an open blanket or with active sale orders! Try to cancel "
+"it before."
 msgstr ""
 "Non puoi eliminare un ordine aperto o con ordini di vendita attivi! Prova "
 "prima ad annullarlo."
@@ -982,3 +991,9 @@ msgstr "Devi selezionare le righe della stessa azienda."
 #, python-format
 msgid "remaining"
 msgstr "rimanenti"
+
+#~ msgid "Customer"
+#~ msgstr "Cliente"
+
+#~ msgid "Remaining quantity in base UoM"
+#~ msgstr "Quantità rimanente in UdM base"

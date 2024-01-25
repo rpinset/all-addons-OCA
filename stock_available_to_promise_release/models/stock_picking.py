@@ -30,6 +30,13 @@ class StockPicking(models.Model):
     state_id = fields.Many2one(related="partner_id.state_id", store=True)
     city = fields.Char(related="partner_id.city", store=True)
     last_release_date = fields.Datetime()
+    release_policy = fields.Selection(
+        [("direct", "As soon as possible"), ("one", "When all products are ready")],
+        "Release Policy",
+        default="direct",
+        required=True,
+        help="It specifies how to release a transfer partially or all at once",
+    )
 
     @api.depends("move_lines.need_release")
     def _compute_need_release(self):
@@ -65,13 +72,8 @@ class StockPicking(models.Model):
         picking_ids = [group["picking_id"][0] for group in groups]
         return [("id", in_operator, picking_ids)]
 
-    def _get_shipping_policy(self):
-        """Hook returning the related shipping policy."""
-        self.ensure_one()
-        return self.move_type
-
     @api.depends(
-        "move_type",
+        "release_policy",
         "move_lines.ordered_available_to_promise_qty",
         "move_lines.need_release",
         "move_lines.state",
@@ -85,10 +87,11 @@ class StockPicking(models.Model):
             release_ready_count = sum(
                 1 for move in move_lines if move._is_release_ready()
             )
-            if picking._get_shipping_policy() == "one":
-                release_ready = release_ready_count == len(move_lines)
-            else:
-                release_ready = bool(release_ready_count)
+            if move_lines:
+                if picking.release_policy == "one":
+                    release_ready = release_ready_count == len(move_lines)
+                else:
+                    release_ready = bool(release_ready_count)
             picking.release_ready_count = release_ready_count
             picking.release_ready = release_ready
 
