@@ -119,9 +119,9 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit e3cb2c030647845a0d71a14cdc5cfc31e9d08460
+commit 05141ac5991ae549b9343416392fb4be392adcdc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 19 02:10:20 2024 +0000
+Date:   Sat Jan 27 02:22:05 2024 +0000
 
     [BOT] post-merge updates
 
@@ -156,16 +156,16 @@ Date:   Fri Jan 19 07:35:14 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit e43687e04d24ee7a43631ee15f55c72b1d1ca8ef
+commit b756ec5d31b0749e8a0ad1a4d5e49f0c8c7f32a6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 17:21:20 2023 +0000
+Date:   Fri Jan 26 09:28:36 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 1.3% (3 of 219 strings)
+    Currently translated at 100.0% (36 of 36 strings)
     
-    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-intrastat_product
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-intrastat_product/it/
+    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-product_harmonized_system
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-product_harmonized_system/it/
 
 
 ## mis-builder
@@ -893,16 +893,11 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit de1b89c82b4439a47cf9d71799eb8aea104a8fab
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 23 07:42:33 2024 +0000
+commit bab727d491bd99369e9ab47ca3ef8c263ea287a0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 29 14:31:51 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.7% (3271 of 10995 strings)
-    
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1111,16 +1106,16 @@ Date:   Tue Dec 12 08:23:32 2023 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit db15b5111ebad98186c1f302e5eb3b15fc58870c
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jan 25 10:54:51 2024 +0000
+commit ed6bd562a8079da5d86d51168f202fc3bc9acfc0
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Jan 26 08:17:12 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 78.5% (22 of 28 strings)
     
     Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-barcodes_generator_abstract
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_abstract/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_abstract/it/
 
 
 ## stock-logistics-workflow
