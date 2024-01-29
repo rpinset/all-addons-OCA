@@ -656,9 +656,9 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit f0d16d5cb0c3e52960e13725d7d595549c87917e
+commit 0159fd63787659b7da4277109a3f2706da615f48
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 16 21:10:14 2024 +0000
+Date:   Sat Jan 27 18:28:29 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1271,9 +1271,9 @@ Date:   Wed Jan 17 07:24:22 2024 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 32b03504b6ece5929ec64a4faa7665f69c9ded0a
+commit cd9e49b1d4658da11800ca05c9a31ab7f4299747
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 26 09:34:46 2023 +0000
+Date:   Fri Jan 26 06:56:11 2024 +0000
 
     [BOT] post-merge updates
 
