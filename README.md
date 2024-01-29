@@ -1281,27 +1281,27 @@ Date:   Mon Oct 23 15:42:27 2023 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 73ad73f83cf745e445b13e5e8438261f81b2941c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 14:59:45 2023 +0000
+commit 1db8c9b873de4b9fcb7402fbcf53f8af3c63ecc5
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Jan 26 08:17:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 56.2% (9 of 16 strings)
+    Currently translated at 52.0% (13 of 25 strings)
     
-    Translation: stock-logistics-barcode-13.0/stock-logistics-barcode-13.0-barcodes_generator_product
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-13-0/stock-logistics-barcode-13-0-barcodes_generator_product/it/
+    Translation: stock-logistics-barcode-13.0/stock-logistics-barcode-13.0-barcodes_generator_abstract
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-13-0/stock-logistics-barcode-13-0-barcodes_generator_abstract/it/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit cb644ac4ef95831359114b26a1b1af9fe00c899b
+commit 7ac56f473f129483f42408704bf0498937da6073
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 15 09:39:06 2024 +0000
+Date:   Mon Jan 29 14:51:16 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 87.5% (7 of 8 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
     Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_auto_move
     Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_auto_move/it/
@@ -1728,9 +1728,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit dea7fa98ecefcf19523bd6301cf74751c9f25d88
+commit 0915625b26d019f4ae81f443d429487431ffae3a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 17 14:58:44 2024 +0000
+Date:   Mon Jan 29 15:08:34 2024 +0000
 
     Translated using Weblate (Italian)
     
