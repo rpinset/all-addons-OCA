@@ -84,10 +84,12 @@ unidecode
 xmlsig
 xmltodict
 zeep
+zeep>=4
 # generated from manifests external_dependencies
 num2words
 # generated from manifests external_dependencies
 roulier
+unidecode
 # generated from manifests external_dependencies
 python-barcode
 # generated from manifests external_dependencies
