@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-18 09:37+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2024-01-29 18:36+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -113,6 +113,8 @@ msgid ""
 "<i class=\"fa fa-recycle\" title=\"Reset inventory quantity\" style=\"font-"
 "size:1.5em\"/>"
 msgstr ""
+"<i class=\"fa fa-recycle\" title=\"Reset quantità di inventario\" style"
+"=\"font-size:1.5em\"/>"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_todo_kanban
@@ -132,7 +134,7 @@ msgstr "<i class=\"fa fa-trash\" title=\"Pulisci\"/>"
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
 msgid "<i class=\"fa fa-trash\" title=\"Remove\" style=\"font-size:1.5em\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-trash\" title=\"Rimuovi\" style=\"font-size:1.5em\"/>"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
@@ -165,7 +167,7 @@ msgstr "<span class=\"o_stat_text\">Scansionare i codici a barre</span>"
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_inventory_form
 msgid "<span>Apply inventory</span>"
-msgstr ""
+msgstr "<span>Applica inventario</span>"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
@@ -212,6 +214,9 @@ msgid ""
 "                    <span class=\"fa fa-inbox d-sm-none oe_span_small_icon\"/"
 ">"
 msgstr ""
+"<strong class=\"d-none d-sm-block\">Collo</strong>\n"
+"                    <span class=\"fa fa-inbox d-sm-none oe_span_small_icon\""
+"/>"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
@@ -281,7 +286,7 @@ msgstr "Permetti quantità negative"
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__create_lot
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__create_lot
 msgid "Allow create lot"
-msgstr ""
+msgstr "Permetti creazione lotto"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
@@ -770,6 +775,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock_barcodes.field_wiz_stock_barcodes_read_picking__show_detailed_operations
 msgid "If checked the picking detailed operations are displayed"
 msgstr ""
+"Se abilitato, vengono mostrate le operazioni dettagliate del trasferimento"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,help:stock_barcodes.field_stock_barcodes_option_group__fill_fields_from_lot
@@ -802,7 +808,7 @@ msgstr ""
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_form
 msgid "If locked keep result package"
-msgstr ""
+msgstr "Se bloccato mantieni il collo risultante"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__ignore_filled_fields
@@ -823,7 +829,7 @@ msgstr "Magazzino"
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__inventory_quant_ids
 msgid "Inventory Quant"
-msgstr ""
+msgstr "Quanti inventario"
 
 #. module: stock_barcodes
 #: code:addons/stock_barcodes/wizard/stock_barcodes_read_inventory.py:0
@@ -839,7 +845,7 @@ msgstr "Quantità di magazzino"
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_inventory_form
 msgid "Inventory quants"
-msgstr ""
+msgstr "Quanti inventario"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_option_group__is_manual_confirm
@@ -952,7 +958,7 @@ msgstr "Vista lista delle righe"
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_inventory_form
 msgid "Loc:"
-msgstr ""
+msgstr "Ubic.:"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_read_log__location_id
@@ -1008,13 +1014,13 @@ msgstr "Lotto scansionato"
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_inventory__lot_name
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read_picking__lot_name
 msgid "Lot/Serial Number Name"
-msgstr ""
+msgstr "Nome lotto/numero di serie"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_inventory_form
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
 msgid "Lot:"
-msgstr ""
+msgstr "Lotto:"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_stock_barcodes_read__manual_entry
@@ -1147,7 +1153,7 @@ msgstr "Nessuna quantità disponibile per questo lotto con i valori a schermo"
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_wiz_candidate_picking__note
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 #. module: stock_barcodes
 #: code:addons/stock_barcodes/wizard/stock_barcodes_read.py:0
@@ -1225,7 +1231,7 @@ msgstr "Q.tà collo"
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_inventory_form
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form
 msgid "Package:"
-msgstr ""
+msgstr "Collo:"
 
 #. module: stock_barcodes
 #: model:ir.model.fields,field_description:stock_barcodes.field_stock_barcodes_read_log__packaging_id
@@ -1383,7 +1389,7 @@ msgstr "Quantità scansionata"
 #. module: stock_barcodes
 #: model:ir.model,name:stock_barcodes.model_stock_quant
 msgid "Quants"
-msgstr ""
+msgstr "Quanti"
 
 #. module: stock_barcodes
 #: model_terms:ir.ui.view,arch_db:stock_barcodes.view_stock_barcodes_read_picking_form

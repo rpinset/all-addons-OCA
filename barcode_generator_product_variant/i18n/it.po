@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* barcode_generator_product_variant
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-01-26 10:34+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: barcode_generator_product_variant
+#: model_terms:ir.ui.view,arch_db:barcode_generator_product_variant.product_product_barcode_wizard
+msgid "Apply rule and generate Barcodes"
+msgstr "Applica regola e genera codici a barre"
+
+#. module: barcode_generator_product_variant
+#: code:addons/barcode_generator_product_variant/models/product_template.py:0
+#, python-format
+msgid "Barcode Generation"
+msgstr "Generazione codici a barre"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__barcode_rule_id
+msgid "Barcode Rule"
+msgstr "Regola codice a barre"
+
+#. module: barcode_generator_product_variant
+#: model_terms:ir.ui.view,arch_db:barcode_generator_product_variant.product_product_barcode_wizard
+msgid "Base"
+msgstr "Base"
+
+#. module: barcode_generator_product_variant
+#: model_terms:ir.ui.view,arch_db:barcode_generator_product_variant.product_product_barcode_wizard
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__display_name
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_template__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product__has_missing_barcodes
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_template__has_missing_barcodes
+msgid "Has Missing Barcodes"
+msgstr "Ha codici a barre mancanti"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__id
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_template__id
+msgid "ID"
+msgstr "ID"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard____last_update
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_template____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: barcode_generator_product_variant
+#: model_terms:ir.ui.view,arch_db:barcode_generator_product_variant.view_product_template_form
+msgid "Manage missing barcodes"
+msgstr "Gestisci codici a barre mancanti"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__product_tmpl_id
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model,name:barcode_generator_product_variant.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: barcode_generator_product_variant
+#: model_terms:ir.ui.view,arch_db:barcode_generator_product_variant.product_product_barcode_wizard
+msgid "Rule"
+msgstr "Regola"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model.fields,field_description:barcode_generator_product_variant.field_product_product_barcode_wizard__product_ids
+msgid "Variants"
+msgstr "Varianti"
+
+#. module: barcode_generator_product_variant
+#: model:ir.model,name:barcode_generator_product_variant.model_product_product_barcode_wizard
+msgid "Wizard to manage barcode generation "
+msgstr "Procedura guidata per gestire la generazione codici a barre "
