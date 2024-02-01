@@ -169,7 +169,10 @@ class ProductProduct(models.Model):
     def _select_customerinfo(
         self, partner=False, quantity=0.0, date=None, uom_id=False, params=False
     ):
-        """Customer version of the standard `_select_seller`."""
+        """
+        Customer version of the standard `_select_seller`.
+        If you want not to filter by quantity, explicitly pass quantity=None
+        """
         self.ensure_one()
         if not params:
             params = {}
@@ -177,20 +180,24 @@ class ProductProduct(models.Model):
         domain = self._prepare_domain_customerinfo(params)
         params["domain"] = domain
 
-        customers = self._prepare_customers(params)
+        customerinfos = self._prepare_customers(params)
         precision = self.env["decimal.precision"].precision_get(
             "Product Unit of Measure"
         )
-        res = self._customers_filter_by_quantity(
-            customers, quantity=quantity, uom_id=uom_id, precision=precision
-        )
-        if res:
-            customer_name = res[0].name
-            res = res.filtered(lambda x, name=customer_name: x.name == name)
+
+        if quantity is not None:
+            customerinfos = self._customers_filter_by_quantity(
+                customerinfos, quantity=quantity, uom_id=uom_id, precision=precision
+            )
+        if customerinfos:
+            customer = customerinfos[0].name
+            customerinfos = customerinfos.filtered(
+                lambda x, name=customer: x.name == name
+            )
 
         # Prefer matching specific variants over templates if possible
-        variant_res = res.filtered(lambda x: x.product_id)
+        variant_res = customerinfos.filtered(lambda x: x.product_id)
         if variant_res:
-            res = variant_res
+            customerinfos = variant_res
 
-        return res.sorted("price")[:1]
+        return customerinfos.sorted("price")[:1]
