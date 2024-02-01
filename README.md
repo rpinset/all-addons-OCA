@@ -437,14 +437,11 @@ Date:   Thu Dec 21 14:51:09 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit f4d0a8ef3dfcf6b282e0f297441a28a48ca06660
-Merge: a8493b5c b114731b
+commit f0b54755ad0e4fae0c9faee6cf03b8218c0dd82c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jan 18 17:36:24 2024 +0000
+Date:   Wed Jan 31 14:10:49 2024 +0000
 
-    Merge PR #1154 into 17.0
-    
-    Signed-off-by max3903
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1307,9 +1304,9 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 782d79999eb8e5f8c1bbfd8ebf056231d917bf5f
+commit 1a405d4a943b4b95a75c5dc1b7e56aadcdcda0c7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jan 25 16:21:14 2024 +0000
+Date:   Wed Jan 31 07:49:45 2024 +0000
 
     [BOT] post-merge updates
 
