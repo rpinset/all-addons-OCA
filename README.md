@@ -119,9 +119,9 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 05141ac5991ae549b9343416392fb4be392adcdc
+commit 15c0e39e9035efbd1d2f89ba967fb5a9a7b2dcfa
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 27 02:22:05 2024 +0000
+Date:   Tue Jan 30 18:56:15 2024 +0000
 
     [BOT] post-merge updates
 
@@ -305,16 +305,11 @@ Date:   Thu Jan 6 08:11:01 2022 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 64489be015bda1f10f28d5c764a9b8024813c961
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 7 16:24:44 2023 +0000
+commit ea68c4ed4b0cf2e07b4254948b04bd65d97f82db
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 30 07:23:22 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 60.0% (3 of 5 strings)
-    
-    Translation: queue-12.0/queue-12.0-queue_job_subscribe
-    Translate-URL: https://translation.odoo-community.org/projects/queue-12-0/queue-12-0-queue_job_subscribe/it/
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -600,16 +595,16 @@ Date:   Mon Jan 22 08:12:36 2024 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 5280ff3b9dacfa3e24216d238e3784f8316ba661
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 22:09:48 2023 +0000
+commit f456cb059a8f1af074ee15be51891b4d63b93588
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 1 11:04:13 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: margin-analysis-12.0/margin-analysis-12.0-product_replenishment_cost
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-12-0/margin-analysis-12-0-product_replenishment_cost/
+    Translation: margin-analysis-12.0/margin-analysis-12.0-account_invoice_margin
+    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-12-0/margin-analysis-12-0-account_invoice_margin/it/
 
 
 ## fleet
@@ -893,11 +888,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit bab727d491bd99369e9ab47ca3ef8c263ea287a0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 29 14:31:51 2024 +0000
+commit 478e284add1af4d45d7aca482b3eaad62462c9e6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 1 06:51:31 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 35.3% (3892 of 10995 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
 
 
 ## l10n-japan
@@ -997,16 +997,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit a9157ca0fa12475c6b61e2c8b46e3e203679dc24
+commit 888ecd3d79e2767686306ad10a0e78c1f1cd2ae3
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Dec 11 16:46:10 2023 +0000
+Date:   Thu Feb 1 07:29:22 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_ticketbai
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_ticketbai/
+    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_mod303/
 
 
 ## l10n-switzerland
@@ -1668,16 +1668,11 @@ Date:   Tue Nov 19 21:17:15 2019 +0100
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 05ea29415027e0c5b6169aa6154ae81bcdf0e96d
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 19:56:33 2023 +0000
+commit 28869fd53cfb6a3005017f0d367a8eb8d860e375
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 1 07:26:29 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: vertical-rental-12.0/vertical-rental-12.0-rental_product_pack
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-12-0/vertical-rental-12-0-rental_product_pack/
+    [BOT] post-merge updates
 
 
 ## vertical-travel
