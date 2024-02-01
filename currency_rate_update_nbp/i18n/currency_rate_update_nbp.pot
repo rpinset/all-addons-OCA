@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* currency_rate_update_nbp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: currency_rate_update_nbp
+#: model:ir.model,name:currency_rate_update_nbp.model_res_currency_rate_provider
+msgid "Currency Rates Provider"
+msgstr ""
+
+#. module: currency_rate_update_nbp
+#: model:ir.model.fields.selection,name:currency_rate_update_nbp.selection__res_currency_rate_provider__service__nbp
+msgid "National Bank of Poland"
+msgstr ""
+
+#. module: currency_rate_update_nbp
+#: model:ir.model.fields,field_description:currency_rate_update_nbp.field_res_currency_rate_provider__service
+msgid "Provider"
+msgstr ""
+
+#. module: currency_rate_update_nbp
+#: model_terms:ir.ui.view,arch_db:currency_rate_update_nbp.res_currency_rate_update_wizard_form
+msgid ""
+"When using the <strong>National Bank of Poland</strong> only the last rate will be fetched,\n"
+"                    the system will not take into account any date provided"
+msgstr ""

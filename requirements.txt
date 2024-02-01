@@ -73,7 +73,7 @@ num2words>=0.5.8
 python-dateutil
 # generated from manifests external_dependencies
 chardet
-cryptography
+cryptography==3.4.8
 deepdiff
 pycountry
 pycryptodome
@@ -84,7 +84,6 @@ unidecode
 xmlsig
 xmltodict
 zeep
-zeep>=4
 # generated from manifests external_dependencies
 num2words
 # generated from manifests external_dependencies

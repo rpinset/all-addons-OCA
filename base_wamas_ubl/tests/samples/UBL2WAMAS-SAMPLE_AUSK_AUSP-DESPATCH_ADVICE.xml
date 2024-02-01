@@ -37,10 +37,12 @@
 	<cac:DeliveryCustomerParty>
 		<cac:Party>
 			<cac:PartyName>
-				<cbc:Name>YourCompany</cbc:Name>
+				<cbc:Name>Name</cbc:Name>
 			</cac:PartyName>
 			<cac:PostalAddress>
-				<cbc:StreetName>250 Executive Park Blvd, Suite 3400</cbc:StreetName>
+				<cbc:StreetName>StreetName</cbc:StreetName>
+				<cbc:Department>Department</cbc:Department>
+				<cbc:AdditionalStreetName>AdditionalStreetName</cbc:AdditionalStreetName>
 				<cbc:CityName>San Francisco</cbc:CityName>
 				<cbc:PostalZone>94134</cbc:PostalZone>
 				<cbc:CountrySubentity>California</cbc:CountrySubentity>
@@ -56,7 +58,7 @@
 				</cac:TaxScheme>
 			</cac:PartyTaxScheme>
 			<cac:Contact>
-				<cbc:Name>Chester Reed</cbc:Name>
+				<cbc:Name></cbc:Name>
 				<cbc:Telephone>(979)-904-8902</cbc:Telephone>
 				<cbc:Telefax></cbc:Telefax>
 				<cbc:ElectronicMail>chester.reed79@example.com</cbc:ElectronicMail>

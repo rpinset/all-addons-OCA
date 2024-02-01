@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-19 03:38+0000\n"
-"PO-Revision-Date: 2024-01-17 09:35+0000\n"
+"PO-Revision-Date: 2024-02-01 12:36+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -159,6 +159,11 @@ msgid "Completed with some warnings"
 msgstr "Completata con alcuni avvisi"
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
+msgid "Completion Date"
+msgstr "Data di completamento"
+
+#. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state_reason__unsupported-compression
 msgid "Compressed using an unknown algorithm"
 msgstr "Compressa con un algoritmo sconosciuto"
@@ -172,7 +177,7 @@ msgstr "Copie"
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
 #, python-format
-msgid "Could not sent to printer!"
+msgid "Could not send to printer!"
 msgstr "Imossibile inviare alla stmpante!"
 
 #. module: base_report_to_printer
@@ -200,6 +205,11 @@ msgstr "Creato da"
 #: model:ir.model.fields,field_description:base_report_to_printer.field_wizard_print_attachment_line__create_date
 msgid "Created on"
 msgstr "Creato il"
+
+#. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
+msgid "Creation Date"
+msgstr "Data creazione"
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__job_state
@@ -233,7 +243,7 @@ msgstr "Data e ora di completamento di questo lavoro."
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Date and time of creation for this job."
+msgid "Date and time of creation of this job."
 msgstr "Data e ora di creazione di questo lavoro."
 
 #. module: base_report_to_printer
@@ -700,6 +710,11 @@ msgid "Processing"
 msgstr "Elaborazione"
 
 #. module: base_report_to_printer
+#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
+msgid "Processing Date"
+msgstr "Data elaborazione"
+
+#. module: base_report_to_printer
 #: model:ir.model.fields.selection,name:base_report_to_printer.selection__printing_job__job_state__processing_stopped
 msgid "Processing Stopped"
 msgstr "Elaborazione fermata"
@@ -858,21 +873,6 @@ msgid "This report type (%s) is not supported by direct printing!"
 msgstr "Questo tipo di server (%s) non è supportato dalla stampa diretta!"
 
 #. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_completed
-msgid "Time At Completed"
-msgstr "Tempo al completamento"
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_creation
-msgid "Time At Creation"
-msgstr "Tempo alla creazione"
-
-#. module: base_report_to_printer
-#: model:ir.model.fields,field_description:base_report_to_printer.field_printing_job__time_at_processing
-msgid "Time At Processing"
-msgstr "Tempo all'elaborazione"
-
-#. module: base_report_to_printer
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.printing_printer_view_form
 msgid "Trays"
 msgstr "Cassetti"
@@ -894,7 +894,7 @@ msgstr "Non disponibile"
 
 #. module: base_report_to_printer
 #: model:ir.model.fields,help:base_report_to_printer.field_printing_job__active
-msgid "Unchecked if the job is purged from cups."
+msgid "Unchecked if the job is purged from CUPS."
 msgstr "Deselezionato se il lavoro è ripulito da CUPS."
 
 #. module: base_report_to_printer
@@ -959,6 +959,25 @@ msgstr "Procedura guidata"
 #, python-format
 msgid "{name} ({copies} copies)"
 msgstr "{name} ({copies} copie)"
+
+#, python-format
+#~ msgid "Could not sent to printer!"
+#~ msgstr "Imossibile inviare alla stmpante!"
+
+#~ msgid "Date and time of creation for this job."
+#~ msgstr "Data e ora di creazione di questo lavoro."
+
+#~ msgid "Time At Completed"
+#~ msgstr "Tempo al completamento"
+
+#~ msgid "Time At Creation"
+#~ msgstr "Tempo alla creazione"
+
+#~ msgid "Time At Processing"
+#~ msgstr "Tempo all'elaborazione"
+
+#~ msgid "Unchecked if the job is purged from cups."
+#~ msgstr "Deselezionato se il lavoro è ripulito da CUPS."
 
 #~ msgid ""
 #~ "This process will create all missing printers from the current CUPS "
