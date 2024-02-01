@@ -122,16 +122,11 @@ Date:   Mon Oct 9 23:10:12 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit a3e7e0cb3ccb7676278c32f704793a565f047534
-Author: David Alonso (Solvos) <david.alonso@solvos.es>
-Date:   Fri Jan 19 08:40:06 2024 +0000
+commit f9bd9aa6e7891bff4c63f486a163ceced89a7797
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 1 15:21:08 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (12 of 12 strings)
-    
-    Translation: account-invoicing-13.0/account-invoicing-13.0-account_invoice_warn_message
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-13-0/account-invoicing-13-0-account_invoice_warn_message/es/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -456,16 +451,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7ac5f80e38ac974d6f53ea41e0f763c0e04fc5c0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 25 13:36:02 2024 +0000
+commit dbaf763e1ce80c2dc76ba6d5c34e26ea6eb738cc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jan 30 13:19:54 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 50.0% (12 of 24 strings)
-    
-    Translation: sale-workflow-13.0/sale-workflow-13.0-sale_stock_picking_blocking
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-sale_stock_picking_blocking/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -612,16 +602,11 @@ Date:   Sun Dec 24 17:14:14 2023 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit d8396e8d9e4949f998887769b80e2f97858d5138
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 01:29:56 2023 +0000
+commit 73fc803d1830e9570222fde20c6261df4d478605
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 1 14:38:23 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-13.0/edi-13.0-account_e-invoice_generate
-    Translate-URL: https://translation.odoo-community.org/projects/edi-13-0/edi-13-0-account_e-invoice_generate/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1144,9 +1129,9 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit dbe9cfbe4c400abe4e0d420e1a033be920096f99
+commit 65a52bc7e6dc6be5bf34844423a78ad5146280c2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jan 13 16:24:09 2024 +0000
+Date:   Wed Jan 31 08:56:16 2024 +0000
 
     [BOT] post-merge updates
 
