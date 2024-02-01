@@ -3,12 +3,12 @@
 {
     "name": "Return Merchandise Authorization Management",
     "summary": "Return Merchandise Authorization (RMA)",
-    "version": "15.0.1.1.4",
+    "version": "15.0.1.2.0",
     "development_status": "Production/Stable",
     "category": "RMA",
     "website": "https://github.com/OCA/rma",
     "author": "Tecnativa, Odoo Community Association (OCA)",
-    "maintainers": ["ernestotejeda"],
+    "maintainers": ["chiendandalu"],
     "license": "AGPL-3",
     "depends": ["stock_account"],
     "data": [

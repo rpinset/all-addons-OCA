@@ -4,7 +4,7 @@
 
 {
     "name": "User roles",
-    "version": "15.0.0.3.5",
+    "version": "15.0.0.4.0",
     "category": "Tools",
     "author": "ABF OSIELL, Odoo Community Association (OCA)",
     "license": "LGPL-3",
@@ -19,6 +19,7 @@
         "views/role.xml",
         "views/user.xml",
         "views/group.xml",
+        "wizards/wizard_groups_into_role.xml",
     ],
     "installable": True,
 }
