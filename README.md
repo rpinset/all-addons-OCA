@@ -26,11 +26,16 @@ The merged README is [here](README-merged.md)
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit e882ca515757a16a561a7157559ada23f04ad072
-Author: Tatsuki Kanda <kanda@quartile.co>
-Date:   Thu Oct 26 07:15:01 2023 +0000
+commit c0f267a7e639dc035ef03108c009fa458979a8c9
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Feb 2 13:14:26 2024 +0000
 
-    Added translation using Weblate (Japanese (ja_JP))
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_distribution_required
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_distribution_required/
 
 
 ## account-budgeting
@@ -119,9 +124,9 @@ Date:   Fri Nov 3 11:08:14 2023 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 15c0e39e9035efbd1d2f89ba967fb5a9a7b2dcfa
+commit 02c6cecf5b1435bc5b8114d92f287db2ff9dc2a4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 30 18:56:15 2024 +0000
+Date:   Mon Feb 5 11:14:01 2024 +0000
 
     [BOT] post-merge updates
 
@@ -226,16 +231,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 7951d88956abebacae962e847585c6e0a25cf20a
+commit 5d44d9462871e0980b33ed14bc1127110fca1772
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 10:46:15 2023 +0000
+Date:   Sun Feb 4 18:11:06 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.1% (100 of 104 strings)
+    Currently translated at 64.2% (36 of 56 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_mandate/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_mode
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_mode/it/
 
 
 ## account-reconcile
@@ -268,16 +273,16 @@ Date:   Tue Oct 10 01:56:03 2023 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit c39b3aa4ad7c2a49ee37d04563b6c8a26d4c25da
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 00:08:15 2023 +0000
+commit 297035c064fd5bd5fe11f48057d0d02ec801fdf6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun Feb 4 20:54:52 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 85.7% (24 of 28 strings)
     
-    Translation: account-payment-12.0/account-payment-12.0-account_payment_term_partner_holiday
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-12-0/account-payment-12-0-account_payment_term_partner_holiday/
+    Translation: account-payment-12.0/account-payment-12.0-account_due_list
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-12-0/account-payment-12-0-account_due_list/it/
 
 
 ## connector
@@ -359,13 +364,13 @@ Date:   Tue Nov 19 20:53:58 2019 +0100
 
 ## connector-magento
 From [https://github.com/OCA/connector-magento.git](https://github.com/OCA/connector-magento.git)
-commit d9ffdb3edd2ac8d10918ed61b4365ee74b70b10b
+commit 12e9498bd5997e751c39b2d19d357246c2dca712
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 10 12:45:42 2024 +0000
+Date:   Sun Feb 4 20:52:50 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 21.5% (176 of 818 strings)
+    Currently translated at 22.0% (180 of 818 strings)
     
     Translation: connector-magento-12.0/connector-magento-12.0-connector_magento
     Translate-URL: https://translation.odoo-community.org/projects/connector-magento-12-0/connector-magento-12-0-connector_magento/it/
@@ -418,16 +423,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 11c1c3b9da884ae4806eef5e756aaa8b80104b36
+commit 34f1667ef92febd9bbab90fa9a554b7ab0557243
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 25 13:30:47 2024 +0000
+Date:   Mon Feb 5 07:15:00 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 97.6% (41 of 42 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_advance_payment
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_advance_payment/it/
 
 
 ## crm
@@ -446,16 +451,16 @@ Date:   Tue Oct 10 01:09:31 2023 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 55fee25755e03dab49a6d89cb562dfdd0db51629
+commit 3901a53f92b708ebabeb592b94ded2d806c454e4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 08:42:18 2023 +0000
+Date:   Mon Feb 5 07:19:40 2024 +0000
 
     Translated using Weblate (Italian)
     
     Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-partner_pricelist_search
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_pricelist_search/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-partner_vat_unique
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_vat_unique/it/
 
 
 ## sale-financial
@@ -581,16 +586,16 @@ Date:   Tue Oct 10 01:25:17 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 5b1ac788bd145962d95552e1ba2c26ea784de355
+commit dd5dde8a45359aeb0d88af3853e5d5195268f8e9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 22 08:12:36 2024 +0000
+Date:   Mon Feb 5 07:19:44 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (138 of 138 strings)
+    Currently translated at 100.0% (512 of 512 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1407,16 +1412,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ca671c888e3bf2cf01442990768a4c74a53e7566
+commit b5a0f50a110efaf331280f587e132db7703797e2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 17 07:48:49 2024 +0000
+Date:   Mon Feb 5 07:08:07 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 83.3% (95 of 114 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: social-12.0/social-12.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_tracking/it/
+    Translation: social-12.0/social-12.0-mail_optional_autofollow
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_optional_autofollow/it/
 
 
 ## storage
@@ -1476,9 +1481,9 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit ad7b978b1464bae017b4760ad815c23e84297743
+commit 03752bfbeedbb958a58956437c41108cd1868146
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 18 06:53:09 2024 +0000
+Date:   Mon Feb 5 06:36:30 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1686,16 +1691,11 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit bc052f33ac81a3ff7e4352169c388e031b54fe03
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 09:26:40 2023 +0000
+commit 0eb845c4aa59f8614bed6a13b9b0f13504b59e64
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 5 09:39:11 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 57.1% (12 of 21 strings)
-    
-    Translation: web-12.0/web-12.0-web_responsive
-    Translate-URL: https://translation.odoo-community.org/projects/web-12-0/web-12-0-web_responsive/it/
+    [BOT] post-merge updates
 
 
 ## website
