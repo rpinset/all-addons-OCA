@@ -611,16 +611,16 @@ Date:   Thu Feb 1 14:38:23 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit cb698309e971c2a06b430ed7289bf39b51a163f5
+commit 163cfaef2616f969cdc924f69cddb428140b8c4a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 22 08:12:41 2024 +0000
+Date:   Mon Feb 5 07:19:43 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (139 of 139 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_recurring/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1280,16 +1280,16 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 7ac56f473f129483f42408704bf0498937da6073
+commit 561481e36ec50718f80f97e914af5209cdfbf5ef
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 29 14:51:16 2024 +0000
+Date:   Mon Feb 5 07:03:28 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 100.0% (21 of 21 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_auto_move
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_auto_move/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_mass_action
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_mass_action/it/
 
 
 ## stock-logistics-tracking
@@ -1345,9 +1345,9 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 207659e615afbd8f32583ccd6e92ba89b290713e
+commit 69a8bc831a2e404c750a30379630f3e9162a3535
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 10 07:57:42 2024 +0000
+Date:   Mon Feb 5 14:28:26 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1576,16 +1576,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 4e49e63929a35c32d54f850a966bfc125ffd2c98
+commit 7bbb1ce038bf299d257c3d4ffb2265ff578a77f6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 17 07:48:52 2024 +0000
+Date:   Mon Feb 5 07:08:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.6% (37 of 117 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: social-13.0/social-13.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_tracking/it/
+    Translation: social-13.0/social-13.0-mail_optional_autofollow
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_optional_autofollow/it/
 
 
 ## storage
@@ -1898,16 +1898,14 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit a403b7b552935523ad350257e65479c9313874e9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 27 09:03:34 2023 +0000
+commit 94f61e2a6f44eb9ea40b6744bc4af2f78b8baff0
+Merge: a403b7b55 2608b0671
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Feb 2 07:47:08 2024 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #2736 from ilyasProgrammer/13.0-copier-update-1-2
     
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: web-13.0/web-13.0-web_dialog_size
-    Translate-URL: https://translation.odoo-community.org/projects/web-13-0/web-13-0-web_dialog_size/it/
+    [13.0][IMP] copier update 1.2
 
 
 ## website
