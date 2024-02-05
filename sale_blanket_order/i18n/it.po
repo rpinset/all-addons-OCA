@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-25 16:36+0000\n"
+"PO-Revision-Date: 2024-02-05 09:40+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -991,6 +991,18 @@ msgstr "Devi selezionare le righe della stessa azienda."
 #, python-format
 msgid "remaining"
 msgstr "rimanenti"
+
+#~ msgid "Assign BO number to draft BO"
+#~ msgstr "Assegna numero OA a bozza OA"
+
+#~ msgid "Cancelled"
+#~ msgstr "Annullato"
+
+#~ msgid "Companies"
+#~ msgstr "Aziende"
+
+#~ msgid "Enable numbered BO"
+#~ msgstr "Abilita OA numerati"
 
 #~ msgid "Customer"
 #~ msgstr "Cliente"
