@@ -16,7 +16,15 @@ msgstr ""
 #. module: account_invoice_tax_required
 #: code:addons/account_invoice_tax_required/models/account_move.py:0
 #, python-format
-msgid "Invoice %(invoice)s has a line with product %(product)s with no taxes"
+msgid ""
+"Invoice %(invoice)s for customer %(customer)s has a line with product "
+"%(product)s with no taxes"
+msgstr ""
+
+#. module: account_invoice_tax_required
+#: code:addons/account_invoice_tax_required/models/account_move.py:0
+#, python-format
+msgid "Invoices with Missing Taxes"
 msgstr ""
 
 #. module: account_invoice_tax_required
@@ -28,4 +36,10 @@ msgstr ""
 #: code:addons/account_invoice_tax_required/models/account_move.py:0
 #, python-format
 msgid "No Taxes Defined!"
+msgstr ""
+
+#. module: account_invoice_tax_required
+#: code:addons/account_invoice_tax_required/models/account_move.py:0
+#, python-format
+msgid "Show invoices with lines without taxes"
 msgstr ""
