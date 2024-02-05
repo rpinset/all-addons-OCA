@@ -1,0 +1,121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * base_search_mail_content
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-18 03:39+0000\n"
+"PO-Revision-Date: 2024-02-04 16:37+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_mail__body
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_message__body
+msgid "Contents"
+msgstr "Contenuti"
+
+#. module: base_search_mail_content
+#: model:ir.model,name:base_search_mail_content.model_mail_thread
+msgid "Email Thread"
+msgstr "Discussione e-mail"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_mail__email_from
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_message__email_from
+msgid ""
+"Email address of the sender. This field is set when no matching partner is "
+"found and replaces the author_id field in the chatter."
+msgstr ""
+"Indirizzo email del mittente. Questo campo è impostato quando non viene "
+"trovato un partner corrispondente e sostituisce il campo author_id "
+"nell'elenco comunicazioni."
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_mail__email_from
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_message__email_from
+msgid "From"
+msgstr "Da"
+
+#. module: base_search_mail_content
+#: model:ir.model,name:base_search_mail_content.model_mail_message
+msgid "Message"
+msgstr "Messaggio"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_discuss_channel__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_blacklist__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_thread__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_thread_blacklist__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_thread_cc__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_thread_main_attachment__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_thread_phone__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_phone_blacklist__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_res_partner__message_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_res_users__message_content
+msgid "Message Content"
+msgstr "Contenuto messaggio"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_mail__record_name
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_message__record_name
+msgid "Message Record Name"
+msgstr "Nome record messaggio"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,help:base_search_mail_content.field_discuss_channel__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_blacklist__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_thread__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_thread_blacklist__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_thread_cc__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_thread_main_attachment__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_thread_phone__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_phone_blacklist__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_res_partner__message_content
+#: model:ir.model.fields,help:base_search_mail_content.field_res_users__message_content
+msgid "Message content, to be used only in searches"
+msgstr "Contenuto messaggio, da utilizzare solo nelle ricerche"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_mail__reply_to
+#: model:ir.model.fields,help:base_search_mail_content.field_mail_message__reply_to
+msgid ""
+"Reply email address. Setting the reply_to bypasses the automatic thread "
+"creation."
+msgstr ""
+"Indirizzo e-mail risposta. Impostando replay_to evitando la creazione "
+"automatica dell'argomento."
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_mail__reply_to
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_message__reply_to
+msgid "Reply-To"
+msgstr "Rispondi a"
+
+#. module: base_search_mail_content
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_mail__subject
+#: model:ir.model.fields,field_description:base_search_mail_content.field_mail_message__subject
+msgid "Subject"
+msgstr "Soggetto"
+
+#~ msgid "Field"
+#~ msgstr "Campo"
+
+#~ msgid "Trigram Index"
+#~ msgstr "Indice trigramma"
+
+#~ msgid "You can either select a field of type 'text', 'char' or 'html'."
+#~ msgstr "Si può selezionare un campo di tipo 'testo', 'carattere' o 'html'."
+
+#~ msgid "Partner"
+#~ msgstr "Partner"

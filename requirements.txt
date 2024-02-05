@@ -14,8 +14,11 @@ python-stdnum
 # generated from manifests external_dependencies
 pdfminer.six==20220319
 # generated from manifests external_dependencies
+lxml
 xlrd
 xlsxwriter
+# generated from manifests external_dependencies
+astor
 # generated from manifests external_dependencies
 pycountry
 schwifty
