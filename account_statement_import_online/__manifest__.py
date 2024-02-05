@@ -5,7 +5,7 @@
 
 {
     "name": "Online Bank Statements",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.2.0",
     "author": "CorporateHub, Odoo Community Association (OCA)",
     "maintainers": ["alexey-pelykh"],
     "website": "https://github.com/OCA/bank-statement-import",
@@ -19,6 +19,7 @@
         "data/account_statement_import_online.xml",
         "security/ir.model.access.csv",
         "security/online_bank_statement_provider.xml",
+        "wizards/online_bank_statement_pull_debug.xml",
         "wizards/online_bank_statement_pull_wizard.xml",
         "views/actions.xml",
         "views/account_journal.xml",
