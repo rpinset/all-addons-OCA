@@ -4,11 +4,11 @@
 
 {
     "name": "Account Cut-off Base",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.1.0",
     "category": "Accounting & Finance",
     "summary": "Base module for Account Cut-offs",
     "author": "Akretion,Odoo Community Association (OCA)",
-    "maintainer": "alexis-via",
+    "maintainers": ["alexis-via"],
     "website": "https://github.com/OCA/account-closing",
     "depends": ["account"],
     "data": [
