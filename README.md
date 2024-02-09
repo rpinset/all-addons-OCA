@@ -108,16 +108,16 @@ Date:   Sun Dec 24 15:54:06 2023 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 411f4cd9a4e50de5f4b20c6a6c7a988ad4cc5ba6
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:10:12 2023 +0000
+commit 0f6269157905cec790d69f1c1e9bb1dc474338af
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 8 08:12:29 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 40.0% (2 of 5 strings)
     
-    Translation: account-invoice-reporting-13.0/account-invoice-reporting-13.0-account_reporting_weight
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-13-0/account-invoice-reporting-13-0-account_reporting_weight/
+    Translation: account-invoice-reporting-13.0/account-invoice-reporting-13.0-account_invoice_line_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-13-0/account-invoice-reporting-13-0-account_invoice_line_report/it/
 
 
 ## account-invoicing
@@ -1129,9 +1129,9 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 65a52bc7e6dc6be5bf34844423a78ad5146280c2
+commit 0ef7d0832ede55ec85998d2f27739715d2fc44cf
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 31 08:56:16 2024 +0000
+Date:   Thu Feb 8 09:07:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1280,16 +1280,16 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 561481e36ec50718f80f97e914af5209cdfbf5ef
+commit e96b0bf02a5415aa7d9a69fe172ea9b25b9fdeb3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 5 07:03:28 2024 +0000
+Date:   Thu Feb 8 08:12:29 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (21 of 21 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_mass_action
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_mass_action/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_invoice_link
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_invoice_link/it/
 
 
 ## stock-logistics-tracking
@@ -1410,16 +1410,11 @@ Date:   Wed Dec 27 08:39:23 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 740ec170d514d00f4b1c2680d2258d7396fff1d9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 31 17:37:03 2023 +0000
+commit e7aad3718c2b49fa10b5a4cae31a534e029cf25c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 7 07:17:34 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (18 of 18 strings)
-    
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
