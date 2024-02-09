@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Let's Encrypt",
-    "version": "12.0.2.0.0",
+    "version": "12.0.2.0.1",
     "author": "Therp BV,"
               "Tecnativa,"
               "Acysos S.L,"
@@ -10,6 +10,7 @@
     "license": "AGPL-3",
     "category": "Hidden/Dependency",
     "summary": "Request SSL certificates from letsencrypt.org",
+    "website": "https://github.com/OCA/server-tools",
     "depends": [
         "base_setup",
     ],
