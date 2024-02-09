@@ -46,6 +46,8 @@ python-stdnum>=1.18
 requests_oauthlib
 unidecode
 # generated from manifests external_dependencies
+jaconv
+# generated from manifests external_dependencies
 python-stdnum
 # generated from manifests external_dependencies
 python-dateutil
