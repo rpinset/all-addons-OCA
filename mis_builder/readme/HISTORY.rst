@@ -1,3 +1,19 @@
+16.0.5.1.9 (2024-02-09)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Restore compatibility with python 3.9 (`#590 <https://github.com/OCA/mis-builder/issues/590>`_)
+
+
+16.0.5.1.8 (2024-02-08)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bugfixes**
+
+- Resolve a permission issue when creating report periods with a user without admin rights. (`#596 <https://github.com/OCA/mis-builder/issues/596>`_)
+
+
 16.0.5.1.0 (2023-04-04)
 ~~~~~~~~~~~~~~~~~~~~~~~
 

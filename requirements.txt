@@ -102,6 +102,7 @@ openupgradelib
 odoo_test_helper
 # generated from manifests external_dependencies
 fsspec
+paramiko
 python_slugify
 # generated from manifests external_dependencies
 elasticsearch>=7.0.0,<=7.13.4
