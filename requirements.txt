@@ -42,6 +42,9 @@ simplejson
 # generated from manifests external_dependencies
 python-dateutil
 # generated from manifests external_dependencies
+future
+pyOpenSSL
+pysimplesoap
 # generated from manifests external_dependencies
 pycoda
 zeep

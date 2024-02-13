@@ -1,0 +1,627 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ar_afipws_fe
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid " \"%(ret)s\" \"%(exeptions)s\""
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.actions.server,name:l10n_ar_afipws_fe.l10n_ar_afipws_fe_cron_ir_actions_server
+#: model:ir.cron,cron_name:l10n_ar_afipws_fe.l10n_ar_afipws_fe_cron
+msgid "(l10n_ar) Invoice: Post draft entries asynchronous"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__res_config_settings__l10n_ar_afip_fce_transmission__adc
+msgid "ADC - AGENTE DE DEPOSITO COLECTIVO"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_move_form
+msgid "AFIP"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.account_move_search_inherit_l10n_ar_afipws_fe
+msgid "AFIP - Autorizadas"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.account_move_search_inherit_l10n_ar_afipws_fe
+msgid "AFIP - Sin autorizar"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move.py:0
+#, python-format
+msgid "AFIP Auth Error. %s"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_message
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_message
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_message
+msgid "AFIP Message"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_qr_code
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_qr_code
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_qr_code
+msgid "AFIP QR Code"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_afipws_connection__afip_ws
+msgid "AFIP WS"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/afipws_connection.py:0
+#, python-format
+msgid "AFIP WS %s Not implemented yet"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/l10n_latam_document_type.py:0
+#, python-format
+msgid "AFIP WS %s not implemented"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_afipws_connection
+msgid "AFIP WS Connection"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_xml_request
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_xml_request
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_xml_request
+msgid "AFIP XML Request"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_xml_response
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_xml_response
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_xml_response
+msgid "AFIP XML Response"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_auth_mode
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_auth_mode
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_auth_mode
+msgid "AFIP authorization mode"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_res_company__afip_auth_verify_type
+msgid "AFIP authorization verification"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_result
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_move__afip_result
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_payment__afip_result
+msgid "AFIP request result"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "AFIP service %s\n"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_result__a
+msgid "Aceptado"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__asynchronous_post
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__asynchronous_post
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__asynchronous_post
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_validate_account_move__async_post
+msgid "Asynchronous Post"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid ""
+"Authorized Document Clases on AFIP\"\n"
+"%(ret)s\"\n"
+" \n"
+"Observations: \"%(exeptions)s\""
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_move_form
+msgid "Autorizacion"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move.py:0
+#, python-format
+msgid ""
+"Autorizacion AFIP: ERROR. El webservice                     seleccionado %s "
+"no esta emplementado"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__res_company__afip_auth_verify_type__available
+msgid "Available"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__afipws_connection__afip_ws__wsbfe
+msgid "Bono Fiscal -con detalle- RG2557 (WSBFE)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_auth_mode__cae
+msgid "CAE"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_auth_code
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_auth_code
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_auth_code
+msgid "CAE/CAI/CAEA Code"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_move_form
+msgid "CAE/CAI/CAEA Vencimiento"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_auth_code_due
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_auth_code_due
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_auth_code_due
+msgid "CAE/CAI/CAEA due Date"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_auth_mode__caea
+msgid "CAEA"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_auth_mode__cai
+msgid "CAI"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_move_form
+msgid "Code"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__afipws_connection__afip_ws__wscdc
+msgid "Constatación de Comprobantes (WSCDC)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Domestic market -without detail- RG2485 (WSFEv1)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Dummy Test"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Dummy test to check connection to selected webservice"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Electronic Fiscal Bond - Web Service"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Electronic Invoice - Web Service"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Enabled Point Of Sales on AFIP\n"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move.py:0
+#, python-format
+msgid "Error al autorizar comprobante. Webservice %s no implementado!"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_res_config_settings__l10n_ar_afip_fce_transmission
+msgid ""
+"Este campo sera necesario cuando informes comprobantes del tipo FCE MiPyME"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Export -with detail- RG2758 (WSFEXv1)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Export Voucher - Web Service"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__afipws_connection__afip_ws__wsfex
+msgid "Exportación -con detalle- RG2758 (WSFEXv1)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_fce_es_anulacion
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_fce_es_anulacion
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_fce_es_anulacion
+msgid "FCE: Es anulacion?"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_res_config_settings__l10n_ar_afip_fce_transmission
+msgid "FCE: Opción de Transmisión"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move.py:0
+#, python-format
+msgid "Facturas de exportacion (wsfex) deben tener incoterm asignado."
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Fiscal Bond -with detail- RG2557 (WSBFE)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move_wsfex.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_move_wsfex.py:0
+#, python-format
+msgid "For WS \"%(afipws)s\" country code is mandatoryCountry: \"%(country)s\"afipws"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move_wsfex.py:0
+#, python-format
+msgid ""
+"For WS \"%(afipws)s\" country is required on "
+"partnerafipwsself.journal_id.afip_ws"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Connection"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Connection For this webservice and create it if no valid"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Document Types"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Enable Point of Sales for this webservice"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get NCM"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Get NCM for ws %s is not implemented yet"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Points Of Sale"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get Zones"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Get document types for ws %s is not implemented yet"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get next Inv"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Get point of sale for ws %s is not implemented yet"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get valid document types for this webservice"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Get zonas for ws %s is not implemented yet"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Get zones for this webservice"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#, python-format
+msgid "Great, everything seems fine. The connection did not fail."
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid ""
+"Hubo un error al conectarse a AFIP, contacte a su proveedor de Odoo para mas"
+" información"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/l10n_latam_document_type.py:0
+#, python-format
+msgid "Invoice number %s\n"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_res_company__afip_auth_verify_type
+msgid ""
+"It adds an option on invoices to verify the afip authorization data (for documents with CAE, CAI or CAEA).\n"
+"If you choose required, then on supplier invoices, verification is mandatory before invoice validation"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_account_journal
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_l10n_latam_document_type__journal_id
+msgid "Journal"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_l10n_latam_document_type
+msgid "Latam Document Type"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__afipws_connection__afip_ws__wsmtxca
+msgid "Mercado interno -con detalle- RG2904 (WSMTXCA)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__afipws_connection__afip_ws__wsfe
+msgid "Mercado interno -sin detalle- RG2485 (WSFEv1)"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/wizard/account_validate_account_move.py:0
+#, python-format
+msgid "Missing 'active_model' in context."
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid ""
+"NCM on AFIP\n"
+"%(ret)s\"\n"
+" \n"
+"Observations: \"%(exeptions)s\""
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "No AFIP WS selected"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#: code:addons/l10n_ar_afipws_fe/models/l10n_latam_document_type.py:0
+#, python-format
+msgid "No AFIP WS selected on point of sale %s"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_move_wsfex.py:0
+#, python-format
+msgid "No vat defined for the partner and also no CUIT set on country"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__res_company__afip_auth_verify_type__not_available
+msgid "Not Available"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_result__o
+msgid "Observado"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Obtener códigos del Nomenclador Común del Mercosur"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model_terms:ir.ui.view,arch_db:l10n_ar_afipws_fe.view_account_journal_form
+msgid "Obtener numeros de factura"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_validate_account_move__async_post
+msgid "Post moves asynchronously."
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_result__r
+msgid "Rechazado"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__res_company__afip_auth_verify_type__required
+msgid "Required"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_result
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_move__afip_result
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_payment__afip_result
+msgid "Resultado"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__res_config_settings__l10n_ar_afip_fce_transmission__sca
+msgid "SCA - TRANSFERENCIA AL SISTEMA DE CIRCULACION ABIERTA"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid "Servicio AFIP Ocupado reintente en unos minutos"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_bank_statement_line__afip_fce_es_anulacion
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_move__afip_fce_es_anulacion
+#: model:ir.model.fields,help:l10n_ar_afipws_fe.field_account_payment__afip_fce_es_anulacion
+msgid ""
+"Solo utilizado en comprobantes MiPyMEs (FCE) del tipo débito o crédito.\n"
+"- SI: sí el comprobante asociado se encuentra rechazado por el comprador\n"
+"- NO: sí el comprobante asociado NO se encuentra rechazado por el comprador"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/wizard/account_validate_account_move.py:0
+#, python-format
+msgid "There are no journal items in the draft state to post."
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model,name:l10n_ar_afipws_fe.model_validate_account_move
+msgid "Validate Account Move"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_account_journal__afip_ws
+#: model:ir.model.fields,field_description:l10n_ar_afipws_fe.field_l10n_latam_document_type__afip_ws
+msgid "Webservice AFIP"
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#. odoo-python
+#: code:addons/l10n_ar_afipws_fe/models/account_journal_ws.py:0
+#, python-format
+msgid ""
+"Zonas on AFIP\n"
+"%(ret)s\"\n"
+" \n"
+"Observations: \"%(exeptions)s\""
+msgstr ""
+
+#. module: l10n_ar_afipws_fe
+#: model:ir.model.fields.selection,name:l10n_ar_afipws_fe.selection__account_move__afip_result__
+msgid "n/a"
+msgstr ""

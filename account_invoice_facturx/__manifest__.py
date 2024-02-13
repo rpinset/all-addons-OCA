@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Factur-X",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.2.0",
     "category": "Invoicing Management",
     "license": "AGPL-3",
     "summary": "Generate Factur-X/ZUGFeRD customer invoices",
@@ -20,6 +20,7 @@
     "external_dependencies": {"python": ["factur-x"]},
     "data": [
         "views/res_partner.xml",
+        "views/account_move.xml",
         "views/res_config_settings.xml",
     ],
     "post_init_hook": "set_xml_format_in_pdf_invoice_to_facturx",
