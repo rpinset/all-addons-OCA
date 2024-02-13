@@ -17,6 +17,7 @@ unidecode
 xlrd
 # generated from manifests external_dependencies
 chardet
+cryptography
 ofxparse
 xlrd
 # generated from manifests external_dependencies
