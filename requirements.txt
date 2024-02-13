@@ -11,6 +11,7 @@ xmlsig==0.1.9
 zeep
 # generated from manifests external_dependencies
 python-stdnum
+python-stdnum>=1.18
 # generated from manifests external_dependencies
 pdfminer.six==20220319
 # generated from manifests external_dependencies
