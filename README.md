@@ -227,16 +227,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 7822b2133eb4f6a76ecccfa581711a00b1331d5d
+commit 97edda1488277c5da2b4f9a7b385d0ab96edebcf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 22 08:13:16 2024 +0000
+Date:   Fri Feb 16 15:42:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 85.7% (96 of 112 strings)
+    Currently translated at 32.7% (56 of 171 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -577,9 +577,9 @@ Date:   Thu Jan 18 07:56:00 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 5b48836cb4ce2e3e0f8ff0f0588c9eac50d4783e
+commit 277f0664dbc746177f90bd7a6995e8c78a26d737
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:52 2024 +0000
+Date:   Fri Feb 16 14:47:20 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -717,16 +717,16 @@ Date:   Mon Dec 18 07:24:16 2023 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 064dd73dc0a4684650a274b0aabf5bccc597e221
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 10:14:55 2023 +0000
+commit 48b59f377cfc99ee83e7d9655549cd2b2e11f8a9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 14 13:43:45 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_invoice/it/
+    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_tier_validation/it/
 
 
 ## hr-holidays
@@ -1416,11 +1416,16 @@ Date:   Wed Dec 27 08:39:23 2023 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e7aad3718c2b49fa10b5a4cae31a534e029cf25c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 7 07:17:34 2024 +0000
+commit 2db2623145d9f2d209337f863b5e15b8d1ca38ee
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 14 13:43:13 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (18 of 18 strings)
+    
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
 
 
 ## purchase-reporting
@@ -1649,16 +1654,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 68c0fb1bd7eeac53b127f468957931a66041f186
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:18 2024 +0000
+commit 644febd04593b7f72da3274e9912fdd29b958e7e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 14 16:25:28 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (36 of 36 strings)
-    
-    Translation: server-tools-13.0/server-tools-13.0-module_analysis
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-module_analysis/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1714,16 +1714,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 12d870c2a101dacaa194e0e996f4b0d38be6f767
+commit 4a87f3e7b70245ff63733ee1c9d47965ab5a5a89
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:50 2024 +0000
+Date:   Wed Feb 14 13:45:41 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (35 of 35 strings)
+    Currently translated at 72.5% (74 of 102 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
 
 
 ## community-data-files
