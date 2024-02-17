@@ -3,7 +3,8 @@
 {
     "name": "Loyalty Initial Date Validity",
     "summary": "Set a start date for a promotion",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
+    "development_status": "Production/Stable",
     "category": "Sale",
     "website": "https://github.com/OCA/sale-promotion",
     "author": "Tecnativa, Odoo Community Association (OCA)",

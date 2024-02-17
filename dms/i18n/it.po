@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-11 10:36+0000\n"
+"PO-Revision-Date: 2024-02-16 17:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -283,8 +283,8 @@ msgid "A file with the same name already exists"
 msgstr "Esiste già un file con lo stesso nome"
 
 #. module: dms
-#. odoo-python
 #. odoo-javascript
+#. odoo-python
 #: code:addons/dms/models/dms_file.py:0
 #: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
 #, python-format
@@ -986,13 +986,6 @@ msgstr "Discussione e-mail"
 
 #. module: dms
 #. odoo-python
-#: code:addons/dms/tests/common.py:0
-#, python-format
-msgid "Error has not been raised"
-msgstr "L'errore non è stato segnalato"
-
-#. module: dms
-#. odoo-python
 #: code:addons/dms/models/category.py:0
 #, python-format
 msgid "Error! You cannot create recursive categories."
@@ -1691,7 +1684,7 @@ msgstr "Proprietario"
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_category__parent_id
 msgid "Parent Category"
-msgstr "Categoria madre"
+msgstr "Categoria padre"
 
 #. module: dms
 #: model:ir.model.fields,field_description:dms.field_dms_directory__parent_id
@@ -2285,3 +2278,7 @@ msgstr "o_onboarding_orange"
 #: model_terms:ir.ui.view,arch_db:dms.document_onboarding_file_panel
 msgid "res.company"
 msgstr "res.company"
+
+#, python-format
+#~ msgid "Error has not been raised"
+#~ msgstr "L'errore non è stato segnalato"
