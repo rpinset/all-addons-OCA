@@ -353,8 +353,8 @@ class TestDeclarationOfIntent(AccountTestInvoicingCommon):
 
     def test_all_invoice_types(self):
         """
-        Check that a declaration with all the invoice types
-        computes the totals correctly.
+        Check that declarations with both invoices and refunds compute
+        the totals correctly.
         """
         partner = self.partner1
 
@@ -382,20 +382,30 @@ class TestDeclarationOfIntent(AccountTestInvoicingCommon):
         in_refund_balance = in_refund.line_ids.filtered("tax_ids").balance
         self.assertEqual(in_refund_balance, -100)
 
-        invoices = out_invoice | in_invoice | out_refund | in_refund
+        declaration_out = self._create_declaration(partner, "out")
+        declaration_out.limit_amount = 2000
+        invoices_in = in_invoice | in_refund
+        invoices_in.declaration_of_intent_ids = declaration_out
 
-        declaration = self._create_declaration(partner, "out")
-        declaration.limit_amount = 2000
-        invoices.declaration_of_intent_ids = declaration
+        declaration_in = self._create_declaration(partner, "in")
+        declaration_in.limit_amount = 2000
+        invoices_out = out_invoice | out_refund
+        invoices_out.declaration_of_intent_ids = declaration_in
 
-        invoices.action_post()
-        used_amount = (
-            -out_invoice_balance
-            + in_invoice_balance
-            - out_refund_balance
-            + in_refund_balance
-        )
-        self.assertEqual(declaration.available_amount, 2000 - used_amount)
+        invoices_in.action_post()
+        invoices_out.action_post()
+
+        # balance is positive for in invoices
+        # add "in" invoice and refund and compare with "out" DI available_amount
+        used_amount_in = in_invoice_balance + in_refund_balance
+        self.assertEqual(used_amount_in, 800)
+        self.assertEqual(declaration_out.available_amount, 2000 - used_amount_in)
+
+        # balance is positive for out invoices
+        # add "out" invoice and refund and compare with "in" DI available_amount
+        used_amount_out = -out_invoice_balance - out_refund_balance
+        self.assertEqual(used_amount_out, 800)
+        self.assertEqual(declaration_in.available_amount, 2000 - used_amount_out)
 
     def test_invoice_repost(self):
         invoice = self._create_invoice(
@@ -476,3 +486,29 @@ class TestDeclarationOfIntent(AccountTestInvoicingCommon):
         )
         self.assertEqual(declaration_model.search([]), declaration)
         self.assertEqual(self.env.company, declaration.company_id)
+
+    def test_action_register_payment(self):
+        """
+        Check register payment from action in invoice.
+        """
+        partner = self.partner1
+        partner.property_account_position_id = self.fiscal_position.id
+
+        out_invoice = self._create_invoice(
+            "test_out_invoice_registr_payment", partner, tax=self.tax1, in_type=False
+        )
+        self.assertEqual(out_invoice.move_type, "out_invoice")
+        out_invoice.action_post()
+
+        result = out_invoice.action_register_payment()
+        wizard = Form(
+            self.env[(result.get("res_model"))].with_context(**result["context"])
+        ).save()
+        self.assertEqual(wizard._name, "account.payment.register")
+        action = wizard.action_create_payments()
+        if action.get("res_id", False):
+            payments = [action["res_id"]]
+            self.assertTrue(len(payments) == 1)
+        else:
+            payments = action["domain"][0][2]
+            self.assertTrue(len(payments) > 1)
