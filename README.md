@@ -124,11 +124,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit ee3650df46446dca7b5d311c59e46a5701d58ade
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 9 00:04:46 2024 +0000
+commit acc3c187dfdfc0289df0f6125d753ce60602d082
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 21 15:14:24 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_supplierinfo_update_discount
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_supplierinfo_update_discount/it/
 
 
 ## account-fiscal-rule
@@ -203,16 +208,16 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 3eec9eb4049ea4f2b0013853a2439a370efc180c
+commit 6641032e5934e804efbd3cb3206213675f8dbefc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 3 08:29:46 2024 +0000
+Date:   Tue Feb 20 13:29:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (87 of 87 strings)
+    Currently translated at 100.0% (27 of 27 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_financial_risk/it/
+    Translation: credit-control-12.0/credit-control-12.0-partner_risk_insurance
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-partner_risk_insurance/it/
 
 
 ## data-protection
@@ -586,9 +591,9 @@ Date:   Tue Oct 10 01:25:17 2023 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit dd5dde8a45359aeb0d88af3853e5d5195268f8e9
+commit 6edfe0e24e3d44699bd06c80b0600e19b0e2d56d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 5 07:19:44 2024 +0000
+Date:   Tue Feb 20 13:53:31 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -898,16 +903,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0f44e325afcdb21dc5ecb3a99bfe843ff36b4866
+commit fa292d03fd8d1d4b334f383ea9ea7b4e759f480a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:47:21 2024 +0000
+Date:   Mon Feb 19 07:59:13 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 100.0% (65 of 65 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ateco
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ateco/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
 
 
 ## l10n-japan
@@ -1376,16 +1381,16 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit b6fb53006ae3839cc41346e37005e18999d2921b
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Feb 9 14:26:55 2024 +0000
+commit f0285c7cb8e5a73233d29726e9f3158be8d1fbe1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 20 13:42:53 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: contract-12.0/contract-12.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-contract/
+    Translation: contract-12.0/contract-12.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-product_contract/it/
 
 
 ## business-requirement
@@ -1491,11 +1496,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 823f2409d301a7cf1231eb72cb523ea760a167be
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 14 15:16:53 2024 +0000
+commit 102b1282fa1467532150cabb9e6c4c28afd5f374
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Feb 21 07:37:39 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: server-tools-12.0/server-tools-12.0-scheduler_error_mailer
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-scheduler_error_mailer/
 
 
 ## server-auth
