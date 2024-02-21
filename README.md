@@ -262,13 +262,13 @@ Date:   Sun Nov 12 15:36:08 2023 +0100
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 20d1fafb9c9bd2bef9e25ea24ff66fd3980310f7
+commit 7fbd87a5ba62506748a9ed7965bf507ab947c549
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 16:20:04 2024 +0000
+Date:   Mon Feb 19 12:26:48 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 68.1% (105 of 154 strings)
+    Currently translated at 100.0% (154 of 154 strings)
     
     Translation: queue-17.0/queue-17.0-queue_job
     Translate-URL: https://translation.odoo-community.org/projects/queue-17-0/queue-17-0-queue_job/it/
@@ -375,16 +375,16 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b5ed7558fb79fff075b94bf216d299515c2d68a5
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Fri Feb 16 19:27:33 2024 +0000
+commit 0ad838f2af46ae0cd0853a4e621a237b95af220d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 19 07:45:08 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (22 of 22 strings)
     
     Translation: sale-workflow-17.0/sale-workflow-17.0-sale_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_tier_validation/es/
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_tier_validation/it/
 
 
 ## crm
@@ -512,9 +512,9 @@ Date:   Sun Feb 4 20:59:27 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit fd5119e61d72f0631eb5f7e857dd267824857302
+commit e8bd43e4573bb7cc94ad20069ba5c41c9aedf396
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 15:43:16 2024 +0000
+Date:   Tue Feb 20 13:48:32 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -952,16 +952,11 @@ Date:   Sun Nov 12 15:55:28 2023 +0100
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 716d20403b26b1d3e5e45a201044f2d31ea353cc
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Feb 3 19:11:57 2024 +0000
+commit 02a9ac521da512e85362696d3c5f7ac01c947d0d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 19 15:18:29 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_config
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_config/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1179,9 +1174,9 @@ Date:   Sun Nov 12 15:59:51 2023 +0100
 
 ## manufacture-reporting
 From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
-commit ca7cc3fcddd79dc213844937e7dff0f2750a3329
+commit e11168e3f7fd878442f2018fbd89eb5879d43092
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 9 15:59:37 2024 +0000
+Date:   Wed Feb 21 10:54:05 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1374,16 +1369,16 @@ Date:   Sun Nov 12 16:09:11 2023 +0100
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 418ce3a72585697df6557060a18faabd9b19efd7
+commit 9ffb65b7eaf0a4886d5e651754deb5b8037794bf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 15 13:19:28 2024 +0000
+Date:   Mon Feb 19 12:39:43 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (44 of 44 strings)
+    Currently translated at 100.0% (140 of 140 strings)
     
-    Translation: reporting-engine-17.0/reporting-engine-17.0-sql_request_abstract
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-sql_request_abstract/it/
+    Translation: reporting-engine-17.0/reporting-engine-17.0-bi_sql_editor
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-bi_sql_editor/it/
 
 
 ## report-print-send
@@ -1471,11 +1466,16 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 8fd83f6eacdfc267d6547154ac035b3b2b2e4f34
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 15 13:57:53 2024 +0000
+commit 54c9221aecf0a9191b13c53ff44314342e330b61
+Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
+Date:   Sun Feb 18 10:04:33 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Dutch (nl_NL))
+    
+    Currently translated at 94.9% (112 of 118 strings)
+    
+    Translation: server-ux-17.0/server-ux-17.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-base_tier_validation/nl_NL/
 
 
 ## community-data-files
