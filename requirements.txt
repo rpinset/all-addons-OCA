@@ -7,6 +7,7 @@ python-dateutil
 openupgradelib
 # generated from manifests external_dependencies
 Avalara
+mock
 # generated from manifests external_dependencies
 python-stdnum>=1.16
 # generated from manifests external_dependencies

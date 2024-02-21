@@ -272,9 +272,7 @@ class FSStorage(models.Model):
     def _check_connection(self, fs):
         marker_file_name = self._get_marker_file_name()
         try:
-            marker_file = fs.ls(marker_file_name, detail=False)
-            if not marker_file:
-                fs.touch(marker_file_name)
+            fs.info(marker_file_name)
         except FileNotFoundError:
             fs.touch(marker_file_name)
         return True
@@ -292,6 +290,7 @@ class FSStorage(models.Model):
                 self._check_connection(self.__fs)
             except Exception as e:
                 self.__fs.clear_instance_cache()
+                self.__fs = None
                 raise e
         return self.__fs
 
@@ -429,7 +428,8 @@ class FSStorage(models.Model):
             return []
         regex = re.compile(pattern)
         for file_path in self.fs.ls(relative_path, detail=False):
-            if regex.match(file_path):
+            # fs.ls returns a relative path
+            if regex.match(os.path.basename(file_path)):
                 result.append(file_path)
         return result
 
@@ -454,7 +454,9 @@ class FSStorage(models.Model):
 
     def action_test_config(self) -> None:
         try:
-            self._check_connection(self.__fs)
+            # Accessing the property will check the connection
+            # pylint: disable=W0104
+            self.fs
             title = _("Connection Test Succeeded!")
             message = _("Everything seems properly set up!")
             msg_type = "success"
