@@ -4,7 +4,7 @@
 
 {
     "name": "Account - Missing Menus",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Adds missing menu entries for Account module",
@@ -22,6 +22,7 @@
         "views/view_account_tax_group.xml",
         "views/view_account_tax_template.xml",
         "views/view_account_type.xml",
+        "views/view_account_move_line.xml",
     ],
     "demo": ["demo/res_groups.xml"],
     "installable": True,

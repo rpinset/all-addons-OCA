@@ -78,16 +78,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 96a174d40bf7a07310952ca14960031269b2f56d
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 10:26:56 2023 +0000
+commit 53fdbb91973ce6c2a225eae29dddec835d2c5c12
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 20 21:56:12 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 9.0% (15 of 165 strings)
-    
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_loan
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_loan/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -614,9 +609,9 @@ Date:   Thu Feb 1 14:38:23 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 163cfaef2616f969cdc924f69cddb428140b8c4a
+commit be3d764e8aa80e23face7b1c4ad191d01dc65906
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 5 07:19:43 2024 +0000
+Date:   Tue Feb 20 13:29:24 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1286,16 +1281,11 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit dcf3d83829d0a598b900c6cf12443ea8bf9fe7b2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:09 2024 +0000
+commit 883cf8f029095cc9e27788438abfae6f6e388665
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 19 07:22:38 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (25 of 25 strings)
-    
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_operation_quick_change
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_operation_quick_change/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1374,16 +1364,16 @@ Date:   Thu Dec 28 12:50:42 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit d1b70357a653ea70bdfb5781c53f7d72348d0b44
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 22 08:13:01 2024 +0000
+commit ae9bcb8929032c625956e66dcb2b0d1468900c7f
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Feb 20 11:16:57 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/
 
 
 ## manufacture-reporting
@@ -1533,16 +1523,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 71aff138910c14887b3097c05aaef444159c0e6e
+commit 2d863a096265f676acb45c884378266680c7ba45
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 25 13:09:05 2024 +0000
+Date:   Tue Feb 20 13:42:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 67.4% (207 of 307 strings)
+    Currently translated at 81.6% (40 of 49 strings)
     
-    Translation: contract-13.0/contract-13.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-13-0/contract-13-0-contract/it/
+    Translation: contract-13.0/contract-13.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-13-0/contract-13-0-product_contract/it/
 
 
 ## business-requirement
