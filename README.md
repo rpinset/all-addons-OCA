@@ -222,9 +222,9 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 97edda1488277c5da2b4f9a7b385d0ab96edebcf
+commit abbfee6366cf9f97970c23a27564db6ab5ac046d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 15:42:20 2024 +0000
+Date:   Fri Feb 23 12:13:53 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -467,16 +467,11 @@ Date:   Mon Feb 12 08:26:35 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit f58e600438b57ad27b2894520f04d738836f860b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 09:03:22 2023 +0000
+commit 6e3ddfcdea6f39a47a508bfa24fdd9006b227f51
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 22 13:35:47 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 93.6% (44 of 47 strings)
-    
-    Translation: partner-contact-13.0/partner-contact-13.0-partner_identification
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-13-0/partner-contact-13-0-partner_identification/it/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -712,16 +707,16 @@ Date:   Mon Dec 18 07:24:16 2023 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 48b59f377cfc99ee83e7d9655549cd2b2e11f8a9
+commit 9433313373023f1e0c247d7e9716c7166df6bc14
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:43:45 2024 +0000
+Date:   Fri Feb 23 09:06:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_tier_validation/it/
+    Translation: hr-expense-13.0/hr-expense-13.0-hr_expense_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-13-0/hr-expense-13-0-hr_expense_invoice/it/
 
 
 ## hr-holidays
@@ -1644,11 +1639,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 644febd04593b7f72da3274e9912fdd29b958e7e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 14 16:25:28 2024 +0000
+commit 41834e9a2f3e753bd9097a63b04891f58922dd4b
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Feb 24 15:31:41 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: server-tools-13.0/server-tools-13.0-module_analysis
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-module_analysis/
 
 
 ## server-auth
