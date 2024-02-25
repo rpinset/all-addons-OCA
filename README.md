@@ -26,16 +26,16 @@ The merged README is [here](README-merged.md)
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit c0f267a7e639dc035ef03108c009fa458979a8c9
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Feb 2 13:14:26 2024 +0000
+commit 9e54407ea23adee530db47f848eaaf32289e0f3e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 23 08:31:27 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_distribution_required
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_distribution_required/
+    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_parent
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_parent/it/
 
 
 ## account-budgeting
@@ -54,16 +54,16 @@ Date:   Sun Dec 24 16:34:20 2023 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 33c58e8f5a0def99e3ce2b407c15710739cd57d3
+commit 5f7f7310943ce27e2ea7d71265d9ec076d45512a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:50:27 2024 +0000
+Date:   Thu Feb 22 08:24:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (114 of 114 strings)
+    Currently translated at 82.3% (84 of 102 strings)
     
-    Translation: account-closing-12.0/account-closing-12.0-account_fiscal_year_closing
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_fiscal_year_closing/it/
+    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_base/it/
 
 
 ## account-consolidation
@@ -82,30 +82,30 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 3777213044d721053ff849411500c2d492a80584
+commit b964802aab884382c90966c50bef4c7ad361dd41
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 09:31:18 2024 +0000
+Date:   Fri Feb 23 11:57:41 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (28 of 28 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_menu
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_menu/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_to_date
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_to_date/it/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 1cbcfd474cb09b8e191e7fa6e5c3a808528e7731
+commit 2a3074e504bc8ce8d76e3d012a6940e856d87eaa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 14:11:39 2024 +0000
+Date:   Thu Feb 22 11:41:31 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 88.6% (47 of 53 strings)
+    Currently translated at 84.9% (283 of 333 strings)
     
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_tax_balance/it/
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -124,16 +124,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit acc3c187dfdfc0289df0f6125d753ce60602d082
+commit 21c02526c098d146e497ec690682c6a8c68ebd44
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 21 15:14:24 2024 +0000
+Date:   Fri Feb 23 09:07:10 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (6 of 6 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_supplierinfo_update_discount
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_supplierinfo_update_discount/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_menu_invoice_refund
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_menu_invoice_refund/it/
 
 
 ## account-fiscal-rule
@@ -208,16 +208,16 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 6641032e5934e804efbd3cb3206213675f8dbefc
+commit e499b3b272d9411f2d244bda030ce868925667c2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:29:20 2024 +0000
+Date:   Thu Feb 22 11:41:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (27 of 27 strings)
+    Currently translated at 11.5% (32 of 277 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-partner_risk_insurance
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-partner_risk_insurance/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_credit_control
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_credit_control/it/
 
 
 ## data-protection
@@ -236,9 +236,9 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 161a40715596dcad3bea9f7bbc242498c8385106
+commit 0e2e2255c2d03e6e7957dfd8acb01b6f9b4d80db
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 15:42:27 2024 +0000
+Date:   Fri Feb 23 12:13:53 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -665,16 +665,16 @@ Date:   Sun Dec 31 17:46:03 2023 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 6b98ebfed1b630e9c3078afaa27e2cb8c03ba323
+commit 9790fece011a15a84dafb171fa0a4164326bf589
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 18 07:18:46 2023 +0000
+Date:   Fri Feb 23 09:06:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (172 of 172 strings)
+    Currently translated at 100.0% (16 of 16 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_attendance_sheet
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_attendance_sheet/it/
+    Translation: hr-12.0/hr-12.0-hr_expense_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_expense_invoice/it/
 
 
 ## connector-odoo2odoo
@@ -903,16 +903,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit fa292d03fd8d1d4b334f383ea9ea7b4e759f480a
+commit e603afdd1e0da8bf7c2fd199ae2d4acf0985b9dd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 19 07:59:13 2024 +0000
+Date:   Fri Feb 23 12:11:38 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (117 of 117 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_withholding_tax
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_withholding_tax/it/
 
 
 ## l10n-japan
@@ -1012,25 +1012,25 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 888ecd3d79e2767686306ad10a0e78c1f1cd2ae3
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 1 07:29:22 2024 +0000
+commit 1b9f1114355c893e7cc7d7c64243cb80c3560ce7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 22 22:01:47 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_mod303
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_mod303/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 1ca74d14c4b718a778113ea2a4e86ec6d27ad26e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 14:09:22 2023 +0000
+commit cbdd277218226e46ef989bba7e4b3c316c08d6e6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 23 12:13:44 2024 +0000
 
-    [UPD] README.rst
+    Translated using Weblate (Italian)
+    
+    Currently translated at 7.6% (1 of 13 strings)
+    
+    Translation: l10n-switzerland-12.0/l10n-switzerland-12.0-l10n_ch_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-12-0/l10n-switzerland-12-0-l10n_ch_pain_base/it/
 
 
 ## l10n-taiwan
@@ -1496,16 +1496,11 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 102b1282fa1467532150cabb9e6c4c28afd5f374
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Feb 21 07:37:39 2024 +0000
+commit d66f2c3fe8e5387b87983521a6be3d34f89a5ae1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 23 22:19:11 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-tools-12.0/server-tools-12.0-scheduler_error_mailer
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-scheduler_error_mailer/
+    [BOT] post-merge updates
 
 
 ## server-auth
