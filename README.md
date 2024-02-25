@@ -64,16 +64,16 @@ Date:   Sun Nov 12 15:25:00 2023 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 5ea265ce2754e768b0c61d8349ccef1b4ea1ba0a
+commit 4a5d93d3661007b3fde361a79cacdea9a077603b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 09:23:17 2024 +0000
+Date:   Thu Feb 22 11:32:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (79 of 79 strings)
     
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_move_print
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_move_print/it/
+    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_move_template
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_move_template/it/
 
 
 ## account-financial-reporting
@@ -375,16 +375,11 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 0ad838f2af46ae0cd0853a4e621a237b95af220d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 19 07:45:08 2024 +0000
+commit ec103eba104b1410750a500ec715b71533a07829
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 24 15:45:39 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (22 of 22 strings)
-    
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -403,16 +398,16 @@ Date:   Thu Feb 8 18:05:09 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit c750bf7af3bd74715ddf7638b599f3132030650a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Feb 4 08:48:09 2024 +0000
+commit b05e9367c790e45c911e333f99c947ade51ca70b
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 22 16:24:58 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (16 of 16 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_firstname
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_firstname/it/
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_company_type
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_company_type/
 
 
 ## sale-financial
@@ -753,16 +748,16 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
 
 ## l10n-ecuador
 From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit d3806d92a89c6ef057035509ca5e537aab2ce970
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Feb 3 19:53:59 2024 +0000
+commit a8681140392fbc91aef00f0305ee46a263725585
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sun Feb 25 18:28:28 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (26 of 26 strings)
     
-    Translation: l10n-ecuador-17.0/l10n-ecuador-17.0-l10n_ec_account_edi
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-ecuador-17-0/l10n-ecuador-17-0-l10n_ec_account_edi/
+    Translation: l10n-ecuador-17.0/l10n-ecuador-17.0-l10n_ec_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-ecuador-17-0/l10n-ecuador-17-0-l10n_ec_base/es/
 
 
 ## l10n-estonia
@@ -1206,16 +1201,11 @@ Date:   Sun Nov 12 16:02:21 2023 +0100
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 626d8e8b004a4177a1d9a03481c0796ad6818e0a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:40:27 2024 +0000
+commit 6d1ad9abc2409eddc315c73a592679a48911cb42
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 23 14:19:14 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_requisition_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_requisition_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
