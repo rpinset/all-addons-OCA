@@ -72,16 +72,11 @@ Date:   Fri Oct 27 22:11:29 2023 +0200
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 867774603f5e6055bf02ac0855b52fe98c09baaf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:49:11 2024 +0000
+commit 56244113dcb7a63d56224597278ee7ed1bfae00b
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sun Feb 25 19:42:56 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 93.9% (156 of 166 strings)
-    
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
+    Added translation using Weblate (Spanish)
 
 
 ## account-financial-reporting
@@ -176,9 +171,9 @@ Date:   Fri Oct 27 23:59:16 2023 +0200
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit f2fc15fb53ae677fcbecf9ceb4bf4fa32cb0ce15
+commit 83c4ae54698e97d4ea311265e2d7978186e14242
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 14 08:20:26 2024 +0000
+Date:   Thu Feb 22 20:30:50 2024 +0000
 
     [BOT] post-merge updates
 
@@ -199,9 +194,9 @@ Date:   Sat Oct 28 13:24:15 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 1448a679ac79f0f275113abb2e8ef765d1f52eea
+commit 08dfba4d43674ef656d58ab4cf75309fc511fa23
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 15:42:10 2024 +0000
+Date:   Fri Feb 23 12:13:56 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -213,16 +208,11 @@ Date:   Fri Feb 16 15:42:10 2024 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 105310c7d0fcdb38f5897459b5ff753b34ae680c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 7 07:43:48 2024 +0000
+commit 9d96d0daac3c30405f2891e762710551305d565a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 24 12:00:33 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (99 of 99 strings)
-    
-    Translation: account-reconcile-15.0/account-reconcile-15.0-account_reconciliation_widget
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-15-0/account-reconcile-15-0-account_reconciliation_widget/it/
+    [BOT] post-merge updates
 
 
 ## bank-statement-import
@@ -499,16 +489,11 @@ Date:   Mon Feb 5 06:28:50 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit b999f297f872122d9311ba01388f5a7f627eb2ac
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:47:28 2024 +0000
+commit 4bff4006dea77a51fffebe594358ba0c9f6a119b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 24 12:29:52 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (338 of 338 strings)
-    
-    Translation: dms-15.0/dms-15.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-15-0/dms-15-0-dms/it/
+    [BOT] post-merge updates
 
 
 ## e-commerce
@@ -624,30 +609,30 @@ Date:   Thu Feb 15 10:19:43 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 1feaecbbae7ed5719e8f926d0e5adce1ff9aef07
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 29 15:03:54 2024 +0000
+commit 4834f14eba68a08259d03040bb9ed534e09ade56
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sun Feb 25 17:23:53 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (29 of 29 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: hr-attendance-15.0/hr-attendance-15.0-hr_attendance_modification_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-15-0/hr-attendance-15-0-hr_attendance_modification_tracking/it/
+    Translation: hr-attendance-15.0/hr-attendance-15.0-hr_attendance_calendar_view
+    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-15-0/hr-attendance-15-0-hr_attendance_calendar_view/es/
 
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 7f0a30bd4c15504c9ffeda365d8ffd5d0cedd468
+commit 120f2417004dc94d93a4c2989c63395a8ed569d2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 15:32:09 2024 +0000
+Date:   Fri Feb 23 09:06:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_tax_adjust
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_tax_adjust/it/
+    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_invoice/it/
 
 
 ## hr-holidays
@@ -850,14 +835,11 @@ Date:   Sun Oct 29 07:13:31 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 0e768bd71c821bccc3380d261172460940b2b0aa
-Merge: 5df0d0e 108cfc2
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Tue Jan 30 08:06:49 2024 +0100
+commit 0fb52d5156d76bf5000a407435f8647a5efd1c5b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 22 13:44:57 2024 +0000
 
-    Merge pull request #140 from Nitrokey/issue-flake8-crash
-    
-    [UPD] Ran copier template update to fix workflow crash
+    [BOT] post-merge updates
 
 
 ## l10n-greece
@@ -1002,9 +984,9 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit ee9268c58e282be377756ebb21a9cab9a754416b
+commit 6528402a08f8f04e8bf749eb4aa21c13d9a9ebe2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 20 10:25:27 2024 +0000
+Date:   Fri Feb 23 14:13:54 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1119,16 +1101,11 @@ Date:   Fri Oct 27 23:49:46 2023 +0200
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 4d360c47dfca2ade3db2ba2690a56b43009d0582
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jan 17 07:32:31 2024 +0000
+commit f81fff0fc577b6ddae4cc3e9f61d9d3e33fda621
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sun Feb 25 19:37:27 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: delivery-carrier-15.0/delivery-carrier-15.0-delivery_package_number
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-15-0/delivery-carrier-15-0-delivery_package_number/
+    Added translation using Weblate (Spanish)
 
 
 ## stock-logistics-barcode
@@ -1142,16 +1119,11 @@ Date:   Mon Feb 12 18:50:54 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 8ac6a3dfa801ee95717f76fe8d79ff54ea7f3e93
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:18:30 2024 +0000
+commit 957917aea32430c2c030aef2bbb7fc3dd19aeb1a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 22 17:57:15 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 98.5% (70 of 71 strings)
-    
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1165,9 +1137,9 @@ Date:   Fri Oct 27 22:32:08 2023 +0200
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 66767b9716a8f9866aa70d0fe594189a58782bef
+commit 02bcd2f11cdf964ec01f25e54458499f7b902cf5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 14 08:26:06 2024 +0000
+Date:   Thu Feb 22 16:56:41 2024 +0000
 
     [BOT] post-merge updates
 
