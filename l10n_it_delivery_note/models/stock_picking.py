@@ -99,6 +99,8 @@ class StockPicking(models.Model):
     delivery_note_readonly = fields.Boolean(compute="_compute_boolean_flags")
     delivery_note_visible = fields.Boolean(compute="_compute_boolean_flags")
     can_be_invoiced = fields.Boolean(compute="_compute_boolean_flags")
+    dn_supplier_number = fields.Char(string="Supplier DN Number", copy=False)
+    dn_supplier_date = fields.Date(string="Supplier DN Date", copy=False)
 
     @property
     def _delivery_note_fields(self):
@@ -387,6 +389,7 @@ class StockPicking(models.Model):
         partner_id = self.mapped("partner_id")
         src_location_id = self.mapped("location_id")
         dest_location_id = self.mapped("location_dest_id")
+        picking_type_code = self.mapped("picking_type_code")
 
         src_warehouse_id = src_location_id.get_warehouse()
         dest_warehouse_id = dest_location_id.get_warehouse()
@@ -395,16 +398,18 @@ class StockPicking(models.Model):
         dest_partner_id = dest_warehouse_id.partner_id
 
         if not src_partner_id:
-            src_partner_id = partner_id
+            src_partner_id = (
+                self.company_id.partner_id
+                if picking_type_code == ["outgoing"]
+                else partner_id
+            )
 
-            if not dest_partner_id:
-                raise ValueError(
-                    "Fields 'src_partner_id' and 'dest_partner_id' "
-                    "cannot be both unset."
-                )
-
-        elif not dest_partner_id:
-            dest_partner_id = partner_id
+        if not dest_partner_id:
+            dest_partner_id = (
+                self.company_id.partner_id
+                if picking_type_code == ["incoming"]
+                else partner_id
+            )
 
         return (src_partner_id, dest_partner_id)
 
