@@ -1,7 +1,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Partner Risk Insurance",
-    "version": "16.0.4.0.0",
+    "version": "16.0.5.0.0",
     "development_status": "Production/Stable",
     "summary": "Risk insurance partner information",
     "author": "AvanzOSC,"
@@ -24,6 +24,13 @@
         "templates/invoice_risk_insurance_template.xml",
     ],
     "installable": True,
-    "maintainers": ["Daniel-CA", "sergio-teruel", "omar7r", "Tardo", "Shide"],
-    "pre_init_hook": "pre_init_hook",
+    "maintainers": [
+        "Daniel-CA",
+        "sergio-teruel",
+        "omar7r",
+        "Tardo",
+        "Shide",
+        "rafaelbn",
+        "yajo",
+    ],
 }
