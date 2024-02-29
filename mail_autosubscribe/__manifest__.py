@@ -5,14 +5,11 @@
 {
     "name": "Mail Autosubscribe",
     "summary": "Automatically subscribe partners to its company's business documents",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Camptocamp SA, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Marketing",
     "depends": ["mail"],
-    "external_dependencies": {
-        "python": ["odoo_test_helper"],
-    },
     "website": "https://github.com/OCA/social",
     "data": [
         "security/ir.model.access.csv",

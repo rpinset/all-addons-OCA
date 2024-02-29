@@ -847,8 +847,8 @@ msgstr ""
 msgid ""
 "Journal entry '%(move)s' dated %(date)s is inside or before the VAT period "
 "%(vat_period)s and has an unreconciled journal item with an %(autoliq_type)s"
-" autoliquidation due VAT account '%(account)s', but it is not a supplier "
-"invoice/refund. That journal item should be reconciled."
+" autoliquidation due VAT account '%(account)s' in journal '%(journal)s' "
+"which is not a purchase journal. That journal item should be reconciled."
 msgstr ""
 
 #. module: l10n_fr_account_vat_return
@@ -1119,6 +1119,11 @@ msgid "Period Balance"
 msgstr ""
 
 #. module: l10n_fr_account_vat_return
+#: model:ir.model.fields.selection,name:l10n_fr_account_vat_return.selection__l10n_fr_account_vat_return_line_log__compute_type__period_balance_sale
+msgid "Period Balance in Sale Journal"
+msgstr ""
+
+#. module: l10n_fr_account_vat_return
 #: model_terms:ir.ui.view,arch_db:l10n_fr_account_vat_return.l10n_fr_account_vat_return_form
 msgid "Post"
 msgstr ""
@@ -1364,6 +1369,17 @@ msgstr ""
 #: code:addons/l10n_fr_account_vat_return/models/l10n_fr_account_vat_return.py:0
 #, python-format
 msgid ""
+"The autoliquidation tax '%(tax)s' is set on the tax mapping of fiscal "
+"position '%(fp)s' which is configured with type '%(fp_fr_vat_type)s'. "
+"Autoliquidation taxes should only be configured on fiscal positions with "
+"type '%(fp_fr_vat_type_intracom_b2b)s' or '%(fp_fr_vat_type_extracom)s'."
+msgstr ""
+
+#. module: l10n_fr_account_vat_return
+#. odoo-python
+#: code:addons/l10n_fr_account_vat_return/models/l10n_fr_account_vat_return.py:0
+#, python-format
+msgid ""
 "The balance of account '%(account)s' is %(balance)s. In France, it should be"
 " a integer amount."
 msgstr ""
@@ -1528,6 +1544,15 @@ msgstr ""
 msgid ""
 "There are %(count)d accounts %(account_code)s %(account_name)s in the chart "
 "of account of company '%(company)s'. This scenario is not supported."
+msgstr ""
+
+#. module: l10n_fr_account_vat_return
+#. odoo-python
+#: code:addons/l10n_fr_account_vat_return/models/l10n_fr_account_vat_return.py:0
+#, python-format
+msgid ""
+"There are no regular sale taxes with UNECE Tax Type set to 'VAT' in company "
+"'%s'."
 msgstr ""
 
 #. module: l10n_fr_account_vat_return

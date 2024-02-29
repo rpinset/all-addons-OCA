@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-08 14:45+0000\n"
-"PO-Revision-Date: 2024-01-22 10:38+0000\n"
+"PO-Revision-Date: 2024-02-26 12:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -367,11 +367,6 @@ msgid "DN Volume"
 msgstr "Volume DdT"
 
 #. module: l10n_it_delivery_note
-#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
-msgid "DN date"
-msgstr "Data Traporto"
-
-#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__date
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_base_wizard__date
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note_create_wizard__date
@@ -400,8 +395,8 @@ msgstr "DdT"
 #. odoo-python
 #: code:addons/l10n_it_delivery_note/models/account_invoice.py:0
 #, python-format
-msgid "Delivery Note \"{}\" of {}"
-msgstr "DdT \"{}\" del {}"
+msgid "Delivery Note \"%(name)s\" of %(date)s"
+msgstr "DDT \"%(name)s\" del %(date)s"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model,name:l10n_it_delivery_note.model_stock_delivery_note_base_wizard
@@ -642,7 +637,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_has_error
-#: model:ir.model.fields,help:l10n_it_delivery_note.field_stock_delivery_note__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -976,11 +970,6 @@ msgid "Packages"
 msgstr "Colli"
 
 #. module: l10n_it_delivery_note
-#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.stock_delivery_note_form_view
-msgid "Partner document"
-msgstr "Contatto del documento"
-
-#. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__partner_ref
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__delivery_note_partner_ref
 msgid "Partner reference"
@@ -1086,11 +1075,6 @@ msgstr "Reimposta a bozza"
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__activity_user_id
 msgid "Responsible User"
 msgstr "Utente responsabile"
-
-#. module: l10n_it_delivery_note
-#: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
 
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__sale_ids
@@ -1386,6 +1370,7 @@ msgstr "Trasferimento"
 #. module: l10n_it_delivery_note
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_delivery_note__transport_datetime
 #: model:ir.model.fields,field_description:l10n_it_delivery_note.field_stock_picking__transport_datetime
+#: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "Transport date"
 msgstr "Data di trasporto"
 
@@ -1680,6 +1665,19 @@ msgstr "di:"
 #: model_terms:ir.ui.view,arch_db:l10n_it_delivery_note.delivery_note_report_template
 msgid "qty"
 msgstr "q.tà"
+
+#~ msgid "DN date"
+#~ msgstr "Data Traporto"
+
+#~ msgid "Partner document"
+#~ msgstr "Contatto del documento"
+
+#, python-format
+#~ msgid "Delivery Note \"{}\" of {}"
+#~ msgstr "DdT \"{}\" del {}"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Number of messages which requires an action"
 #~ msgstr "Numero di messaggi che richiedono un'azione"

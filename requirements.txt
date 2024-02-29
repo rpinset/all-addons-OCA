@@ -58,7 +58,6 @@ python-stdnum
 python-stdnum>=1.18
 requests
 requests_oauthlib
-unicodecsv
 unidecode
 # generated from manifests external_dependencies
 chardet
@@ -98,6 +97,8 @@ unidecode
 # generated from manifests external_dependencies
 python-barcode
 # generated from manifests external_dependencies
+xlrd
+# generated from manifests external_dependencies
 pandas>=0.25.3
 # generated from manifests external_dependencies
 openupgradelib
@@ -107,7 +108,6 @@ openupgradelib
 # generated from manifests external_dependencies
 cryptography<37
 extract_msg
-odoo_test_helper
 # generated from manifests external_dependencies
 fsspec
 paramiko

@@ -36,6 +36,7 @@ class ReportRegistroIva(models.AbstractModel):
             "compute_totals_tax": self._compute_totals_tax,
             "l10n_it_count_fiscal_page_base": data["form"]["fiscal_page_base"],
             "only_totals": data["form"]["only_totals"],
+            "entry_order": data["form"].get("entry_order"),
             "date_format": date_format,
             "year_footer": data["form"]["year_footer"],
         }
@@ -123,7 +124,6 @@ class ReportRegistroIva(models.AbstractModel):
         return res
 
     def _get_tax_lines(self, move, data):
-
         """
 
         Args:
@@ -180,7 +180,6 @@ class ReportRegistroIva(models.AbstractModel):
         return inv_taxes, used_taxes
 
     def _get_move_total(self, move):
-
         total = 0.0
         receivable_payable_found = False
         for move_line in move.line_ids:
