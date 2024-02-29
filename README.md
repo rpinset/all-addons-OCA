@@ -78,18 +78,23 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 53fdbb91973ce6c2a225eae29dddec835d2c5c12
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 20 21:56:12 2024 +0000
+commit d98fe814719f685d0a0b9c605fed301506e4466e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 29 11:12:18 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 27.4% (73 of 266 strings)
+    
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit d22b70ca3899186123ba1acf79f0a35ea8e445bd
+commit 6a975bb76ba00a50949f08ea39725006b50d997f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 15:54:06 2023 +0000
+Date:   Thu Feb 29 14:53:56 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -222,9 +227,9 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit abbfee6366cf9f97970c23a27564db6ab5ac046d
+commit 0783ccd096de413d646f5397dc041a8e396ff6f9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 12:13:53 2024 +0000
+Date:   Thu Feb 29 13:25:51 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -693,16 +698,11 @@ Date:   Tue Feb 13 01:18:09 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 066edd97b257ba37ace019bc68d739c476469246
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 18 07:24:16 2023 +0000
+commit ffc212a2adeed663324132a59cbbb35ee8c3e7e1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 26 08:59:04 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: hr-attendance-13.0/hr-attendance-13.0-hr_attendance_user_list
-    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-13-0/hr-attendance-13-0-hr_attendance_user_list/it/
+    [BOT] post-merge updates
 
 
 ## hr-expense
@@ -1336,11 +1336,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 2f4db58117cbdd4e12c44ae6d62b580ff8099f02
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 12 12:21:05 2024 +0000
+commit 2a65ab097cfb0a171b0b3490dca3c50787cf8bb7
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 29 12:14:03 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_exclude_moves_adu_calc
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_exclude_moves_adu_calc/
 
 
 ## wms
@@ -1359,16 +1364,16 @@ Date:   Thu Dec 28 12:50:42 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit ae9bcb8929032c625956e66dcb2b0d1468900c7f
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Feb 20 11:16:57 2024 +0000
+commit 96e18fb3a66ce6c18cd383bf3d0a8928ac3378b3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 29 14:53:39 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (168 of 168 strings)
     
     Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1639,30 +1644,25 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 41834e9a2f3e753bd9097a63b04891f58922dd4b
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Feb 24 15:31:41 2024 +0000
+commit 0948d4001fce5713076de7032f4587fdcb92fd51
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 26 06:53:30 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 83.3% (5 of 6 strings)
     
-    Translation: server-tools-13.0/server-tools-13.0-module_analysis
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-module_analysis/
+    Translation: server-tools-13.0/server-tools-13.0-configuration_helper
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-configuration_helper/it/
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 17404456256216661e26be84d39eaff8055e4a03
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 3 12:24:14 2024 +0000
+commit 8c072f8eb35fe009086aefc33dff99dd79241829
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 28 17:14:43 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: server-auth-13.0/server-auth-13.0-users_ldap_mail
-    Translate-URL: https://translation.odoo-community.org/projects/server-auth-13-0/server-auth-13-0-users_ldap_mail/it/
+    [BOT] post-merge updates
 
 
 ## server-env
