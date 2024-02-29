@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-06 07:32+0000\n"
-"PO-Revision-Date: 2023-07-06 09:32+0200\n"
+"POT-Creation-Date: 2024-02-23 08:52+0000\n"
+"PO-Revision-Date: 2024-02-23 09:53+0100\n"
 "Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
@@ -420,6 +420,16 @@ msgstr "Rutas de inventarios"
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__message_is_follower
 msgid "Is Follower"
 msgstr "Es Seguidor"
+
+#. module: stock_request
+#: code:addons/stock_request/models/stock_request_order.py:0
+#, fuzzy, python-format
+msgid ""
+"It is not possible to set empty stock request orders (maybe you should "
+"cancel it)."
+msgstr ""
+"No es posible dejar vacío un pedido de existencias (quizás deberías "
+"cancelarlo)."
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
@@ -1223,6 +1233,3 @@ msgid ""
 msgstr ""
 "Debe seleccionada una unidad de medida de producto de la misma categoría que "
 "la unidad de medida por defecto del producto"
-
-#~ msgid "SMS Delivery error"
-#~ msgstr "Error de entrega de SMS"
