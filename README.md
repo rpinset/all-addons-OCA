@@ -82,30 +82,30 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit b964802aab884382c90966c50bef4c7ad361dd41
+commit 2451f2eb4477fad50632bdd89b3fa664a4f9eba5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 11:57:41 2024 +0000
+Date:   Thu Feb 29 11:22:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (28 of 28 strings)
+    Currently translated at 29.9% (82 of 274 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_to_date
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_to_date/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 2a3074e504bc8ce8d76e3d012a6940e856d87eaa
+commit 0da40f4a22db8329f4ab17cd0c655438d2d6d59a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 22 11:41:31 2024 +0000
+Date:   Thu Feb 29 14:54:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 84.9% (283 of 333 strings)
+    Currently translated at 91.1% (72 of 79 strings)
     
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -152,16 +152,16 @@ Date:   Sun Dec 24 16:27:53 2023 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit b373de36ac4c9ecc7cc19bdba31d3a82ccd2bd3b
+commit 5eb70d201b4e14608b018380a34fd0935e8ac810
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 19 07:35:14 2024 +0000
+Date:   Mon Feb 26 12:39:11 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (25 of 25 strings)
     
-    Translation: operating-unit-12.0/operating-unit-12.0-product_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-product_operating_unit/it/
+    Translation: operating-unit-12.0/operating-unit-12.0-operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-operating_unit/it/
 
 
 ## intrastat
@@ -208,16 +208,16 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit e499b3b272d9411f2d244bda030ce868925667c2
+commit 7898015b3f518bcd4f5a7c1ed62d5b995b1d1a59
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 22 11:41:21 2024 +0000
+Date:   Thu Feb 29 14:53:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 11.5% (32 of 277 strings)
+    Currently translated at 94.7% (179 of 189 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_credit_control/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
 
 
 ## data-protection
@@ -236,16 +236,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 0e2e2255c2d03e6e7957dfd8acb01b6f9b4d80db
+commit e1489821a6da400183560a6d0a42d5fec2e09f83
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 12:13:53 2024 +0000
+Date:   Thu Feb 29 12:45:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.3% (57 of 182 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_pain_base/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_partner
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_partner/it/
 
 
 ## account-reconcile
@@ -442,16 +442,16 @@ Date:   Fri Feb 16 14:15:41 2024 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 73be40030aecfe73325ceaf0aa5eca3f4d0bf6c5
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 01:09:31 2023 +0000
+commit f3f6a17ed6bab247a65acf316f3c895bd3e73d00
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 26 12:42:59 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (161 of 161 strings)
     
-    Translation: crm-12.0/crm-12.0-crm_claim
-    Translate-URL: https://translation.odoo-community.org/projects/crm-12-0/crm-12-0-crm_claim/
+    Translation: crm-12.0/crm-12.0-crm_phonecall
+    Translate-URL: https://translation.odoo-community.org/projects/crm-12-0/crm-12-0-crm_phonecall/it/
 
 
 ## partner-contact
@@ -642,11 +642,11 @@ Date:   Tue Nov 19 21:01:02 2019 +0100
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit fc624e545feede33a63c9a859ec915862bed88ea
+commit e8e6b94aa42b82770e816f15dc1b6ae98060b9fa
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 4 11:44:40 2023 +0000
+Date:   Thu Feb 29 16:36:18 2024 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## timesheet
@@ -833,9 +833,9 @@ Date:   Sun Oct 17 03:25:12 2021 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit b37ecde4a439d8b2d30515ea10131786dca0ebab
+commit 8995b640e82969dab67f6997536572ae48ec4413
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Oct 15 17:18:03 2023 +0000
+Date:   Tue Feb 27 08:57:56 2024 +0000
 
     [BOT] post-merge updates
 
@@ -903,16 +903,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e603afdd1e0da8bf7c2fd199ae2d4acf0985b9dd
+commit 3d7f34839e1d8c9555611829cf30bc11db04546c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 12:11:38 2024 +0000
+Date:   Thu Feb 29 11:12:08 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (117 of 117 strings)
+    Currently translated at 100.0% (476 of 476 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_withholding_tax
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_withholding_tax/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
 
 
 ## l10n-japan
@@ -1223,16 +1223,16 @@ Date:   Fri Jan 5 08:01:42 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit b0f0e46cba21b7dd2ed0289fde4c1a46a0835ab9
+commit f4dc5b4609a55c2fc430ca9737eb5ec3ce114d48
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:58:27 2024 +0000
+Date:   Thu Feb 29 14:53:39 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (34 of 34 strings)
+    Currently translated at 100.0% (163 of 163 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_planned_order_matrix
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_planned_order_matrix/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1496,11 +1496,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d66f2c3fe8e5387b87983521a6be3d34f89a5ae1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 23 22:19:11 2024 +0000
+commit 07f7831f12d280027d40403302ba6e3593e2864f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 26 06:53:29 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: server-tools-12.0/server-tools-12.0-configuration_helper
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-configuration_helper/it/
 
 
 ## server-auth
