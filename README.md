@@ -92,16 +92,16 @@ Date:   Thu Feb 29 11:12:18 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 6a975bb76ba00a50949f08ea39725006b50d997f
+commit 11f3657ef01756c539aec4c922207fe3c64fcbc6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 14:53:56 2024 +0000
+Date:   Fri Mar 1 08:51:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 71.7% (66 of 92 strings)
+    Currently translated at 63.3% (164 of 259 strings)
     
-    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-partner_statement/it/
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -227,9 +227,9 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 0783ccd096de413d646f5397dc041a8e396ff6f9
+commit 9a01e05625cf8fd6e80308a4a2071cafa0a3dfca
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 13:25:51 2024 +0000
+Date:   Fri Mar 1 08:04:41 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1644,16 +1644,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 0948d4001fce5713076de7032f4587fdcb92fd51
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 26 06:53:30 2024 +0000
+commit 2189acc7ac985efbe776fc5dd491dc22be711b84
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 01:00:21 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 83.3% (5 of 6 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-tools-13.0/server-tools-13.0-configuration_helper
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-configuration_helper/it/
+    Translation: server-tools-13.0/server-tools-13.0-base_import_odoo
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/
 
 
 ## server-auth
