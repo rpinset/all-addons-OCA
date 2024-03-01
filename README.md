@@ -115,11 +115,16 @@ Date:   Sun Nov 12 15:26:22 2023 +0100
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 21aa42416b2a69c60479a96552db2f22cdcd9931
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 29 15:12:57 2024 +0000
+commit 5921035ed7e516dfa5ecb1b0f9277ac39a8f3a88
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 1 09:34:47 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-fiscal-rule-17.0/account-fiscal-rule-17.0-account_fiscal_position_autodetect_optional_vies
+    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-17-0/account-fiscal-rule-17-0-account_fiscal_position_autodetect_optional_vies/it/
 
 
 ## operating-unit
@@ -188,13 +193,13 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 99b240fe3c1b17b37e9781d1bdb65315c8ef4e37
+commit 4b4f8842a3a8dea30c54076c0bfa08de1a5b4959
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 12:39:47 2024 +0000
+Date:   Fri Mar 1 09:22:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 35.0% (73 of 208 strings)
+    Currently translated at 99.0% (206 of 208 strings)
     
     Translation: bank-payment-17.0/bank-payment-17.0-account_payment_order
     Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_payment_order/it/
@@ -398,9 +403,9 @@ Date:   Thu Feb 8 18:05:09 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit c2e7ded7fbce340c6e22d7bd1282c60a2d7cf372
+commit af694d92272be08e2bcf0943c3fa1637db61fee5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 29 13:18:40 2024 +0000
+Date:   Fri Mar 1 09:19:48 2024 +0000
 
     [BOT] post-merge updates
 
@@ -787,16 +792,16 @@ Date:   Tue Feb 6 10:33:44 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 8b595966322c2920ad232437ca4cae010574d190
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Fri Feb 16 19:28:50 2024 +0000
+commit 594cc31dd6edffaaa43e10f92f5519b3c00cfe93
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 12:19:09 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-france-17.0/l10n-france-17.0-l10n_fr_hr_check_ssnid
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_hr_check_ssnid/es/
+    Translation: l10n-france-17.0/l10n-france-17.0-account_banking_fr_lcr
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-account_banking_fr_lcr/
 
 
 ## l10n-germany
@@ -972,11 +977,16 @@ Date:   Sun Nov 12 15:56:22 2023 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3c5a0d69ed03e9f96167887dcdad2941557d6cb0
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Thu Feb 29 17:33:32 2024 +0100
+commit eb8a4332d4f7f029ad0e6c002e85e204843e43d3
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 12:19:37 2024 +0000
 
-    [FIX] l10n_es_partner: ruff linter
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_toponyms
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_toponyms/
 
 
 ## l10n-switzerland
@@ -1389,16 +1399,11 @@ Date:   Sun Nov 12 16:18:29 2023 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 82754f91cf2fa5c0d5168eb5916d5acbacd80045
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Feb 14 17:09:48 2024 +0000
+commit 30281d34df0f199fbd9136cdb06f79bb6ea2bd77
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 1 10:05:33 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (51 of 51 strings)
-    
-    Translation: server-tools-17.0/server-tools-17.0-base_exception
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-base_exception/es/
+    [BOT] post-merge updates
 
 
 ## server-auth
