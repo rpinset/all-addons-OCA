@@ -86,16 +86,16 @@ Date:   Thu Feb 29 11:21:02 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 0cfe98035ae844251dfb33a1799fb02b2d97d9b7
+commit e912e0719b0b70e2824c559d3d34dc75dc511c4a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 14:54:10 2024 +0000
+Date:   Fri Mar 1 08:51:31 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 58.8% (63 of 107 strings)
+    Currently translated at 62.5% (160 of 256 strings)
     
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-partner_statement/it/
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -158,11 +158,16 @@ Date:   Mon Jan 29 18:32:52 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 7a2b51f53eef84051e416bc2a49efe56cc13d53b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 8 11:51:39 2024 +0000
+commit 15ec9e8886a7bc9ef96f813ca1c0850d88d6d16a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 1 08:52:06 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 72.8% (204 of 280 strings)
+    
+    Translation: mis-builder-15.0/mis-builder-15.0-mis_builder
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-15-0/mis-builder-15-0-mis_builder/it/
 
 
 ## currency
@@ -199,16 +204,16 @@ Date:   Sat Oct 28 13:24:15 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 79856d0b226eaeb014add3ae897b48aae66c9735
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 13:25:53 2024 +0000
+commit 768956f11c185221d910f5fc045faad8fd47fc14
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 10:55:31 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 31.7% (54 of 170 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-payment-15.0/bank-payment-15.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_banking_pain_base/it/
+    Translation: bank-payment-15.0/bank-payment-15.0-account_payment_order
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_payment_order/
 
 
 ## account-reconcile
@@ -227,16 +232,16 @@ Date:   Thu Feb 29 14:53:46 2024 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 4c66127b9d4b85b58db5706f8921d2eed83d819a
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Feb 28 19:13:54 2024 +0000
+commit 3c922e692bbcafe250e35e5f08a4233cf03228d8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 1 08:28:02 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (23 of 23 strings)
+    Currently translated at 73.7% (73 of 99 strings)
     
-    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_statement_import_online_gocardless
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_statement_import_online_gocardless/es/
+    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_statement_import_txt_xlsx
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_statement_import_txt_xlsx/it/
 
 
 ## account-payment
@@ -386,9 +391,9 @@ Date:   Fri Oct 27 23:37:22 2023 +0200
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 18b0e5f87e74bd625cb48a559940c2f8f6a55961
+commit dd593de920955ae128b5f8524495802bc13144df
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 26 15:25:17 2024 +0000
+Date:   Fri Mar 1 10:17:17 2024 +0000
 
     [BOT] post-merge updates
 
@@ -557,11 +562,16 @@ Date:   Tue Nov 21 21:31:48 2023 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit cb13d365253e3d9412994fac914d48ad0d176165
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 28 16:18:52 2024 +0000
+commit b2bcf62fef530ccfa1292acbf8bd8be325fb217e
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 11:53:09 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_log_fuel
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_log_fuel/
 
 
 ## infrastructure-dns
@@ -584,11 +594,16 @@ Date:   Fri Oct 27 22:38:49 2023 +0200
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit b78ab9551c18e377bf234882b1105f51410fe271
-Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Mon Jan 22 11:06:46 2024 +0000
+commit 2f9fc7d44770b09cf1361d7b1c097beafc1ef02c
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 1 12:17:33 2024 +0000
 
-    [UPD] Update hr_timesheet_task_stage.pot
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet_autodraft
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet_autodraft/
 
 
 ## hr
