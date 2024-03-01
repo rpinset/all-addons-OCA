@@ -236,16 +236,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit e1489821a6da400183560a6d0a42d5fec2e09f83
+commit 2167d92c5720485d768454a874c3be25cfc992c7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 12:45:33 2024 +0000
+Date:   Fri Mar 1 08:41:57 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 64.2% (36 of 56 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_partner
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_partner/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_mode
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_mode/it/
 
 
 ## account-reconcile
@@ -903,16 +903,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 3d7f34839e1d8c9555611829cf30bc11db04546c
+commit 71c0e62f931e076aec0dd27ba8a67ff9ea6a4d1e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 11:12:08 2024 +0000
+Date:   Fri Mar 1 08:36:56 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (476 of 476 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-fiscal_epos_print
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-fiscal_epos_print/it/
 
 
 ## l10n-japan
