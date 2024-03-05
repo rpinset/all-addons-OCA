@@ -26,16 +26,11 @@ The merged README is [here](README-merged.md)
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 8ea4833ff50e291edcf9117bbd4955dc1271219b
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Thu Jan 11 15:31:22 2024 +0000
+commit bc911b25c279666b41a77cca658f52ab72aa1fc0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 4 07:31:06 2024 +0000
 
-    Translated using Weblate (Danish)
-    
-    Currently translated at 90.9% (20 of 22 strings)
-    
-    Translation: account-analytic-15.0/account-analytic-15.0-account_move_update_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-account_move_update_analytic/da/
+    [BOT] post-merge updates
 
 
 ## account-budgeting
@@ -72,16 +67,11 @@ Date:   Fri Oct 27 22:11:29 2023 +0200
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 947c97471d3245539908b9152ea7b6218bc1eddc
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 11:21:02 2024 +0000
+commit 815bb0f74dc5a0b5c7b16da318da50d7cc7174ce
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Mar 3 07:58:34 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 26.7% (71 of 265 strings)
-    
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -246,9 +236,9 @@ Date:   Fri Mar 1 08:28:02 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 3000c48078873544c15c16018396dd336ef1dea8
+commit e6d053fd237c61a3920b3f261665c60dbf130d8f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 19 09:42:07 2024 +0000
+Date:   Tue Mar 5 09:03:29 2024 +0000
 
     [BOT] post-merge updates
 
@@ -414,9 +404,9 @@ Date:   Mon Feb 12 08:28:23 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit a823c54885363e73e7a1e24224131a619961e967
+commit cb81b4bf6e6d95cd2192ccace2363f67be6bca03
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 30 12:23:58 2024 +0000
+Date:   Mon Mar 4 12:49:02 2024 +0000
 
     [BOT] post-merge updates
 
@@ -562,16 +552,16 @@ Date:   Tue Nov 21 21:31:48 2023 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit b2bcf62fef530ccfa1292acbf8bd8be325fb217e
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 1 11:53:09 2024 +0000
+commit 76b8ba8eea4af5a9709933a5950a6d12767b8acb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Mar 5 12:30:25 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (128 of 128 strings)
     
-    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_log_fuel
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_log_fuel/
+    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_inspection
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_inspection/it/
 
 
 ## infrastructure-dns
@@ -594,16 +584,11 @@ Date:   Fri Oct 27 22:38:49 2023 +0200
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 2f9fc7d44770b09cf1361d7b1c097beafc1ef02c
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 1 12:17:33 2024 +0000
+commit 8be009668cdc59752f13d1a2eea46f696406edda
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 2 16:19:37 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet_autodraft
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet_autodraft/
+    [BOT] post-merge updates
 
 
 ## hr
@@ -622,11 +607,16 @@ Date:   Mon Feb 26 06:59:51 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 08169f2c315b4e6b1a14a2ac3a0d7d1c1976dddb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 27 17:01:07 2024 +0000
+commit e870010c5f175684ee8e189db8fb0c8d14261b14
+Author: Alexander Bigga <alexander@bigga.de>
+Date:   Mon Mar 4 09:59:43 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 100.0% (15 of 15 strings)
+    
+    Translation: hr-attendance-15.0/hr-attendance-15.0-hr_attendance_autoclose
+    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-15-0/hr-attendance-15-0-hr_attendance_autoclose/de/
 
 
 ## hr-expense
@@ -987,9 +977,9 @@ Date:   Sat Oct 28 00:02:46 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 190a3d7e3d638a8f5f45903b7527d02ee7bbfc18
+commit d5f04148d71534814db11c9edb5b7bfdc737c3a1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 28 17:29:45 2024 +0000
+Date:   Tue Mar 5 15:30:26 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1014,9 +1004,9 @@ Date:   Fri Oct 27 23:41:53 2023 +0200
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 9d8cfa43876e011ee5a5999aa774a9344e536544
+commit 319215af3bdddb5e95bacd116fdc6264a42b77f2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 29 10:09:49 2024 +0000
+Date:   Tue Mar 5 20:23:04 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1118,25 +1108,25 @@ Date:   Sun Feb 25 19:37:43 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 3d4b0e79c6912081bf8a57bafef4b2fbfff315fd
+commit 1b8a23f172608a4afc2e803e7e312a1901c96ca8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 12 18:50:54 2024 +0000
+Date:   Tue Mar 5 09:18:58 2024 +0000
 
     [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 7702c9f36476160bed929e15e9dc914a6d8d5ef4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 26 06:48:26 2024 +0000
+commit c28c3a6fd99f61e7678268e3b7fe8060a3391cf5
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Tue Mar 5 06:50:23 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (73 of 73 strings)
+    Currently translated at 40.0% (2 of 5 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/it/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_force_assign_by_type
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_force_assign_by_type/es/
 
 
 ## stock-logistics-tracking
@@ -1182,16 +1172,16 @@ Date:   Tue Jan 30 12:38:56 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 955ee123a66890099e3dd00798ef39cf1512fd88
+commit f885b7322a47c905cb174a066e1a59ae5194c499
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 29 12:14:55 2024 +0000
+Date:   Tue Mar 5 12:28:04 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp_exclude_moves_adu_calc
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp_exclude_moves_adu_calc/
+    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp_adjustment
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp_adjustment/
 
 
 ## wms
@@ -1238,11 +1228,16 @@ Date:   Sun Oct 29 15:19:11 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 2bdc009033be137b3e059d735db533a55c618cbf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Nov 27 11:33:10 2023 +0000
+commit ac11810593deeaeab4e22310e12ad05fbc5bce3b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 4 08:14:44 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (159 of 159 strings)
+    
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/it/
 
 
 ## pms
@@ -1581,16 +1576,16 @@ Date:   Sun Mar 12 20:51:48 2023 +0100
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit ecbd5cd00530cd3320407b06e51ba58dc1a381b5
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Fri Oct 27 16:13:23 2023 +0000
+commit aa3c4befda2cdb850103973c97165dfc8d379c1b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 4 08:14:35 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (16 of 16 strings)
+    Currently translated at 100.0% (65 of 65 strings)
     
-    Translation: vertical-association-15.0/vertical-association-15.0-website_membership_gamification
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-15-0/vertical-association-15-0-website_membership_gamification/es/
+    Translation: vertical-association-15.0/vertical-association-15.0-membership_extension
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-15-0/vertical-association-15-0-membership_extension/it/
 
 
 ## vertical-hotel
