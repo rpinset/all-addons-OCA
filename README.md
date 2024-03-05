@@ -64,16 +64,11 @@ Date:   Sun Nov 12 15:25:00 2023 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 4a5d93d3661007b3fde361a79cacdea9a077603b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 22 11:32:55 2024 +0000
+commit 481e2e845f926b93a20bbec55a1858c99f4d7109
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 4 10:58:30 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (79 of 79 strings)
-    
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_move_template
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_move_template/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -193,13 +188,13 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 4b4f8842a3a8dea30c54076c0bfa08de1a5b4959
+commit 24d7c4e1b9f3c09e17afcd323fa16fc787246e99
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 1 09:22:14 2024 +0000
+Date:   Mon Mar 4 07:28:42 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 99.0% (206 of 208 strings)
+    Currently translated at 100.0% (208 of 208 strings)
     
     Translation: bank-payment-17.0/bank-payment-17.0-account_payment_order
     Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_payment_order/it/
@@ -562,14 +557,16 @@ Date:   Sun Nov 12 15:45:12 2023 +0100
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 0f0a957e3e2baf678a6197771585433f4cc76ae5
-Merge: 880dd2f8 8d5ff966
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Tue Feb 27 08:38:58 2024 +0100
+commit d80bbc75b045903174dd8ad51ae8874977ee4981
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Mar 2 20:05:09 2024 +0000
 
-    Merge pull request #641 from c4a8-odoo/17.0-imp-copier
+    Update translation files
     
-    [17.0][UPD] Copier version 1.20
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: timesheet-17.0/timesheet-17.0-hr_timesheet_task_required
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-17-0/timesheet-17-0-hr_timesheet_task_required/
 
 
 ## hr
@@ -1090,16 +1087,16 @@ Date:   Sun Nov 12 16:11:35 2023 +0100
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit be2e5428c2c63b49cafbf045a3d0c8bb1b533bb3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 12:37:54 2024 +0000
+commit 810d8cc4189c779d7bebaf0a5c91931e2d490484
+Author: Nils Coenen <nils.coenen@nico-solutions.de>
+Date:   Tue Mar 5 13:48:16 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (German)
     
-    Currently translated at 100.0% (25 of 25 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: stock-logistics-workflow-17.0/stock-logistics-workflow-17.0-stock_split_picking
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-17-0/stock-logistics-workflow-17-0-stock_split_picking/it/
+    Translation: stock-logistics-workflow-17.0/stock-logistics-workflow-17.0-stock_picking_invoice_link
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-17-0/stock-logistics-workflow-17-0-stock_picking_invoice_link/de/
 
 
 ## stock-logistics-tracking
@@ -1186,16 +1183,16 @@ Date:   Wed Feb 21 10:54:05 2024 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 5699c062918e9bc7a13ff10d425839fe1e5ef443
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Feb 3 19:19:16 2024 +0000
+commit 70bd024638e78db0417d811d18ee377c6396a79a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 4 08:14:35 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (85 of 85 strings)
     
     Translation: management-system-17.0/management-system-17.0-mgmtsystem
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-17-0/management-system-17-0-mgmtsystem/
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-17-0/management-system-17-0-mgmtsystem/it/
 
 
 ## pms
@@ -1272,16 +1269,14 @@ Date:   Sun Nov 12 16:04:34 2023 +0100
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 228163a7f6315bf4b6929c5a934cd6c021110dd8
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 29 15:46:33 2024 +0000
+commit d1798d2d09ffe74217f1cd15a00be9c2fc2281c6
+Merge: 228163a7 643ffa5f
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Tue Mar 5 18:48:59 2024 +0100
 
-    Update translation files
+    Merge pull request #1244 from c4a8-odoo/17.0-imp-update-copier
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: project-17.0/project-17.0-project_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_sequence/
+    [UPD] Copier version 1.20
 
 
 ## project-agile
@@ -1468,16 +1463,16 @@ Date:   Sun Feb 18 10:04:33 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit c3ba4b906adde40104f07cf594073d2a25cc8fac
+commit aba30d5a0b57b435921c27c5d9e2925ff2ce8b3e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Feb 4 20:39:50 2024 +0000
+Date:   Tue Mar 5 11:07:07 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: community-data-files-17.0/community-data-files-17.0-uom_unece
-    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-17-0/community-data-files-17-0-uom_unece/it/
+    Translation: community-data-files-17.0/community-data-files-17.0-base_unece
+    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-17-0/community-data-files-17-0-base_unece/it/
 
 
 ## webhook
