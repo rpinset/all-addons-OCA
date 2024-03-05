@@ -236,9 +236,9 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 2167d92c5720485d768454a874c3be25cfc992c7
+commit 9b8f78b04ac4cc17b19eafaeeb9a8ef23bd7cebf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 1 08:41:57 2024 +0000
+Date:   Tue Mar 5 11:08:44 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1251,30 +1251,30 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 3dccf67322179df3819b724f5361f06088dd4fc5
+commit 100365a3f6f69a957fe17af4b22d10881a78d8bb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 08:39:26 2023 +0000
+Date:   Mon Mar 4 08:14:23 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 100.0% (172 of 172 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_partner
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_partner/it/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity/it/
 
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit d4c535250e50dfba7562ca58bc71c158ae653129
+commit f4f3fb0339bb45fdadbe7013b2bb2d7c2c8723ff
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:57:48 2024 +0000
+Date:   Tue Mar 5 13:57:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.8% (207 of 223 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-procurement_purchase_no_grouping
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-procurement_purchase_no_grouping/it/
 
 
 ## purchase-reporting
@@ -1353,16 +1353,16 @@ Date:   Sun Sep 3 15:37:10 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit d2612dd7c6246f685979c3af966968b7140ff2ba
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 6 13:40:50 2023 +0000
+commit 5f29c4c2117e667df85deebf6a5f9f8eec862866
+Author: Angel Moya - PESOL <amoyapardo@gmail.com>
+Date:   Mon Mar 4 09:48:57 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 82.2% (65 of 79 strings)
     
-    Translation: project-12.0/project-12.0-project_custom_info
-    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_custom_info/it/
+    Translation: project-12.0/project-12.0-project_role
+    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_role/es/
 
 
 ## project-agile
@@ -1620,16 +1620,16 @@ Date:   Sun Sep 3 16:01:44 2023 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit 7fe0d13f6240773da226bb454d147c8d3860c566
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 20:55:02 2023 +0000
+commit f9a3ed79601fcc3caefb4f4e2244edab03ae7913
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 4 08:14:22 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (66 of 66 strings)
     
     Translation: vertical-association-12.0/vertical-association-12.0-membership_extension
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-12-0/vertical-association-12-0-membership_extension/
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-12-0/vertical-association-12-0-membership_extension/it/
 
 
 ## vertical-hotel
