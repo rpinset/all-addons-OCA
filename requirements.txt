@@ -109,6 +109,7 @@ openupgradelib
 # generated from manifests external_dependencies
 cryptography<37
 extract_msg
+premailer
 # generated from manifests external_dependencies
 fsspec
 paramiko

@@ -1,4 +1,5 @@
 # Copyright 2023 ACSONE SA/NV
+# Copyright 2024 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from odoo import api, fields, models
 
@@ -44,8 +45,12 @@ class StockReleaseChannel(models.Model):
     def _compute_process_end_date(self):
         now = fields.Datetime.now()
         for channel in self:
-            # We check if a date is not already set (manually)
-            if channel.state != "asleep" and not channel.process_end_date:
+            if channel.state == "asleep":
+                channel.process_end_date = False
+            # otherwise we check if a date is not already set (manually)
+            elif channel.process_end_date:
+                continue
+            elif channel.process_end_time:
                 end = next_datetime(
                     now,
                     float_to_time(
@@ -54,7 +59,7 @@ class StockReleaseChannel(models.Model):
                     ),
                 )
                 channel.process_end_date = end
-            elif channel.state == "asleep":
+            else:
                 channel.process_end_date = False
 
     @api.depends("warehouse_id.partner_id.tz")
