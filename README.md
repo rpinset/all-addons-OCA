@@ -1125,11 +1125,16 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 0ef7d0832ede55ec85998d2f27739715d2fc44cf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 8 09:07:27 2024 +0000
+commit ebc879edac5ccc9779f7443d1f718cddd4987eb2
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Mar 4 08:45:32 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-13.0/l10n-spain-13.0-l10n_es_aeat_mod347
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-13-0/l10n-spain-13-0-l10n_es_aeat_mod347/
 
 
 ## l10n-switzerland
@@ -1336,16 +1341,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 2a65ab097cfb0a171b0b3490dca3c50787cf8bb7
+commit 46c494fa031ac544d115633b1311135f55e72d3f
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 29 12:14:03 2024 +0000
+Date:   Tue Mar 5 16:06:34 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_exclude_moves_adu_calc
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_exclude_moves_adu_calc/
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_adjustment
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_adjustment/
 
 
 ## wms
@@ -1364,16 +1369,16 @@ Date:   Thu Dec 28 12:50:42 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 96e18fb3a66ce6c18cd383bf3d0a8928ac3378b3
+commit 7f1f49828daf9871c1245f2b6a8f2591a1f67413
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 14:53:39 2024 +0000
+Date:   Mon Mar 4 07:38:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (168 of 168 strings)
+    Currently translated at 100.0% (54 of 54 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/it/
+    Translation: manufacture-13.0/manufacture-13.0-quality_control_team_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_team_oca/it/
 
 
 ## manufacture-reporting
@@ -1392,16 +1397,16 @@ Date:   Sun Oct 29 15:19:08 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 1ac8bb3fd91e38100e0976e94dcc56edc9b89d6e
+commit d601261c95c749e3ba93c6d78f699272fb8ae9c0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 27 08:39:23 2023 +0000
+Date:   Mon Mar 4 08:14:27 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (156 of 156 strings)
     
-    Translation: management-system-13.0/management-system-13.0-mgmtsystem_partner
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem_partner/it/
+    Translation: management-system-13.0/management-system-13.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem_nonconformity/it/
 
 
 ## purchase-workflow
@@ -1889,14 +1894,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 94f61e2a6f44eb9ea40b6744bc4af2f78b8baff0
-Merge: a403b7b55 2608b0671
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Feb 2 07:47:08 2024 +0100
+commit 739c5975567beb72223aae9754c112c184fa481d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 2 16:21:37 2024 +0000
 
-    Merge pull request #2736 from ilyasProgrammer/13.0-copier-update-1-2
-    
-    [13.0][IMP] copier update 1.2
+    [BOT] post-merge updates
 
 
 ## website
