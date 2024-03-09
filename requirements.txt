@@ -166,6 +166,10 @@ responses
 pycountry
 schwifty
 # generated from manifests external_dependencies
+GitPython
+pathspec
+PyGithub
+# generated from manifests external_dependencies
 # generated from manifests external_dependencies
 a2wsgi
 apispec
