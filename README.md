@@ -227,16 +227,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 9a01e05625cf8fd6e80308a4a2071cafa0a3dfca
+commit a889022dae94d651af6f62a05bdfa3d5afe1f682
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 1 08:04:41 2024 +0000
+Date:   Thu Mar 7 20:42:48 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 32.7% (56 of 171 strings)
+    Currently translated at 23.9% (17 of 71 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_sepa_direct_debit
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_sepa_direct_debit/it/
 
 
 ## account-reconcile
@@ -1439,16 +1439,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit cbb42362b04e4514fde2b2884b61db9e350f04b5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 08:08:52 2024 +0000
+commit 86902f96f6e7c29180484283fed69d93ac7d16cf
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 8 12:37:26 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: product-attribute-13.0/product-attribute-13.0-product_exception
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/it/
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/
 
 
 ## product-kitting
@@ -1894,9 +1894,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 739c5975567beb72223aae9754c112c184fa481d
+commit 0322c81efc29a7ad083cdf855f041d40abe72e0a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 2 16:21:37 2024 +0000
+Date:   Sat Mar 9 15:32:49 2024 +0000
 
     [BOT] post-merge updates
 
