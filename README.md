@@ -236,16 +236,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 9b8f78b04ac4cc17b19eafaeeb9a8ef23bd7cebf
+commit 758d5b39556b74608eef05d2db904eae130450b9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 5 11:08:44 2024 +0000
+Date:   Thu Mar 7 20:42:47 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 64.2% (36 of 56 strings)
+    Currently translated at 21.7% (17 of 78 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_mode
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_mode/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_sepa_direct_debit
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_sepa_direct_debit/it/
 
 
 ## account-reconcile
@@ -1265,16 +1265,16 @@ Date:   Mon Mar 4 08:14:23 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit f4f3fb0339bb45fdadbe7013b2bb2d7c2c8723ff
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 5 13:57:20 2024 +0000
+commit e9951f04680e7e3e1c92d4a6230f310c3a89023f
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Mar 9 15:07:47 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-procurement_purchase_no_grouping
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-procurement_purchase_no_grouping/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_open_qty
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_open_qty/
 
 
 ## purchase-reporting
@@ -1496,16 +1496,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 07f7831f12d280027d40403302ba6e3593e2864f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 26 06:53:29 2024 +0000
+commit 95061c4a031e464896664c0fca3d6317c569a036
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Mar 6 13:12:38 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-tools-12.0/server-tools-12.0-configuration_helper
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-configuration_helper/it/
+    Translation: server-tools-12.0/server-tools-12.0-auto_backup
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auto_backup/
 
 
 ## server-auth
@@ -1706,16 +1706,14 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit e65ab235c86cb5cb00ccb29b0fbf1279bc23c4a6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 09:17:16 2024 +0000
+commit 1a252ee941e6c311bc1606ec416c92112f478328
+Merge: 8fb7e7d03 dc579fc6c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 9 15:27:08 2024 +0000
 
-    Translated using Weblate (Italian)
+    Merge PR #2445 into 12.0
     
-    Currently translated at 57.1% (12 of 21 strings)
-    
-    Translation: web-12.0/web-12.0-web_responsive
-    Translate-URL: https://translation.odoo-community.org/projects/web-12-0/web-12-0-web_responsive/it/
+    Signed-off-by dreispt
 
 
 ## website
