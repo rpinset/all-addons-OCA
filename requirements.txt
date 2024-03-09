@@ -20,6 +20,8 @@ lxml
 xlrd
 xlsxwriter
 # generated from manifests external_dependencies
+pycups
+# generated from manifests external_dependencies
 astor
 # generated from manifests external_dependencies
 pycountry

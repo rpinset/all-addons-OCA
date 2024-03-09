@@ -101,11 +101,11 @@ Date:   Thu Feb 8 17:33:20 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 68c17b5e447a92b7754f4b17d7f3ebeec32b6285
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:26:22 2023 +0100
+commit 5ce288a80ca3f30b4a05e3185e43d5fd594c0bcd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 8 20:52:22 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -188,16 +188,16 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 24d7c4e1b9f3c09e17afcd323fa16fc787246e99
+commit 04b7f95d847f37bc5bd7b54fa9b904eb146b49ad
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 4 07:28:42 2024 +0000
+Date:   Thu Mar 7 20:39:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (208 of 208 strings)
+    Currently translated at 100.0% (103 of 103 strings)
     
-    Translation: bank-payment-17.0/bank-payment-17.0-account_payment_order
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_payment_order/it/
+    Translation: bank-payment-17.0/bank-payment-17.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -375,11 +375,16 @@ Date:   Sun Nov 12 15:39:43 2023 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ec103eba104b1410750a500ec715b71533a07829
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 24 15:45:39 2024 +0000
+commit 1a790311b362c2ea2d442eeb2992b5b5ec36bfaf
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Mar 9 01:08:24 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_fixed_discount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_fixed_discount/
 
 
 ## crm
@@ -557,9 +562,9 @@ Date:   Sun Nov 12 15:45:12 2023 +0100
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit d80bbc75b045903174dd8ad51ae8874977ee4981
+commit 2c66d9a44dacaa3f27319d438fd46e6097684512
 Author: Weblate <noreply@weblate.org>
-Date:   Sat Mar 2 20:05:09 2024 +0000
+Date:   Wed Mar 6 13:54:57 2024 +0000
 
     Update translation files
     
@@ -789,16 +794,11 @@ Date:   Tue Feb 6 10:33:44 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 594cc31dd6edffaaa43e10f92f5519b3c00cfe93
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 1 12:19:09 2024 +0000
+commit ef3299dae58fdf5867d42605a07b558c5b3be02b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 6 10:51:14 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-france-17.0/l10n-france-17.0-account_banking_fr_lcr
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-account_banking_fr_lcr/
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -1376,11 +1376,16 @@ Date:   Mon Feb 19 12:39:43 2024 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit b93ee818061e2be8e3f4445dcbb047637456ccf8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 16:06:27 2023 +0100
+commit fe2bcdc4728a4d3d50e4b388253e03b118c50612
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 8 15:48:53 2024 +0000
 
-    Initialize 17.0 branch
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: report-print-send-17.0/report-print-send-17.0-base_report_to_printer
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-17-0/report-print-send-17-0-base_report_to_printer/
 
 
 ## webkit-tools
@@ -1426,16 +1431,11 @@ Date:   Wed Feb 14 11:09:44 2024 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 2efc7ea4e9c3aa80c41496deee0da5559b82cd1a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 15 11:37:59 2024 +0000
+commit 5fe5154d549b793a0adfa5ef85f3e93b7df9006f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 9 14:28:04 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (62 of 62 strings)
-    
-    Translation: server-backend-17.0/server-backend-17.0-base_user_role
-    Translate-URL: https://translation.odoo-community.org/projects/server-backend-17-0/server-backend-17-0-base_user_role/it/
+    [BOT] post-merge updates
 
 
 ## server-brand
@@ -1463,16 +1463,16 @@ Date:   Sun Feb 18 10:04:33 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit aba30d5a0b57b435921c27c5d9e2925ff2ce8b3e
+commit 18fdb5af093405f5294e6900e902fa4a691a0fc3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 5 11:07:07 2024 +0000
+Date:   Wed Mar 6 07:27:49 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: community-data-files-17.0/community-data-files-17.0-base_unece
-    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-17-0/community-data-files-17-0-base_unece/it/
+    Translation: community-data-files-17.0/community-data-files-17.0-account_tax_unece
+    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-17-0/community-data-files-17-0-account_tax_unece/it/
 
 
 ## webhook
