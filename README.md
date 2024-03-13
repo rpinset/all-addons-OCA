@@ -13,9 +13,10 @@ However, each module can have a totally different license, as long as they adher
 OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose mission is to support the collaborative development of Odoo features and promote its widespread use.
 
 ----
-# Merged README
+# Merged Files
 
 The [merged README](README-merged.md) contains the concatenation of READMEs from all processed repo.
+The [merged requirements.txt](requirements-merged.txt) contains the concatenation of requirements.txt from all processed repo.
 
 ----
 
