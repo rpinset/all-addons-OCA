@@ -3,6 +3,8 @@ cachetools
 # generated from manifests external_dependencies
 requests
 # generated from manifests external_dependencies
+factur-x
+# generated from manifests external_dependencies
 zeep
 # generated from manifests external_dependencies
 cryptography==36.0.0
@@ -15,6 +17,8 @@ python-stdnum>=1.18
 unidecode
 # generated from manifests external_dependencies
 pdfminer.six==20220319
+# generated from manifests external_dependencies
+fsspec
 # generated from manifests external_dependencies
 lxml
 xlrd
