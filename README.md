@@ -901,16 +901,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 52099a50f5ec73882b26b29cf87b575cc0cc917b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 12 08:33:07 2024 +0000
+commit e0f87d63468263460fa6ab0da1178b5f0758fc3a
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Mar 13 15:40:08 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_corrispettivi_sale
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_corrispettivi_sale/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fiscalcode
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fiscalcode/
 
 
 ## l10n-japan
