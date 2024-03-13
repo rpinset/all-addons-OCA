@@ -1,28 +1,26 @@
 # all-addons-OCA
 
 It's a merge of many repo OCA.
+Based on almost the entire list in [this file](https://github.com/OCA/maintainer-tools/blob/master/tools/oca_projects.py)
 
 ## Licenses
 
 This repository is licensed under [AGPL-3.0](LICENSE).
 
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA) policy. Consult each module's `__manifest__.py` file, which contains a `license` key that explains its license.
 
 ----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose mission is to support the collaborative development of Odoo features and promote its widespread use.
 
 ----
-# Merged README
+# Merged Files
 
-The merged README is [here](README-merged.md) 
+The [merged README](README-merged.md) contains the concatenation of READMEs from all processed repo.
+The [merged requirements.txt](requirements-merged.txt) contains the concatenation of requirements.txt from all processed repo.
 
 ----
 
-# REPOSITORY ARE :
+# REPOSITORY and last commit are :
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
@@ -82,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 2451f2eb4477fad50632bdd89b3fa664a4f9eba5
+commit fd03fb3ddb175a42e05bd8f4fc5ad95c2fdd093f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 11:22:09 2024 +0000
+Date:   Tue Mar 12 10:45:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 29.9% (82 of 274 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
 
 
 ## account-financial-reporting
@@ -903,16 +901,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 71c0e62f931e076aec0dd27ba8a67ff9ea6a4d1e
+commit 52099a50f5ec73882b26b29cf87b575cc0cc917b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 1 08:36:56 2024 +0000
+Date:   Tue Mar 12 08:33:07 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (119 of 119 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-fiscal_epos_print
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-fiscal_epos_print/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_corrispettivi_sale
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_corrispettivi_sale/it/
 
 
 ## l10n-japan
