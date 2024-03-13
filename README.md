@@ -682,16 +682,11 @@ Date:   Sun Nov 12 15:48:15 2023 +0100
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit b0a4ba87382001c1730dcf6733a0ae05f26bbeaa
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Fri Feb 16 19:37:36 2024 +0000
+commit 9b616289f20164b54eac0916c8a17aafeadfa147
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 16:54:58 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (105 of 105 strings)
-    
-    Translation: l10n-belgium-17.0/l10n-belgium-17.0-companyweb_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-belgium-17-0/l10n-belgium-17-0-companyweb_base/es/
+    [BOT] post-merge updates
 
 
 ## l10n-cambodia
