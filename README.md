@@ -131,16 +131,11 @@ Date:   Tue Mar 5 21:17:26 2024 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit f08564c2ad1f8d952c6fe79ed6ad16de36e883a2
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Tue Feb 20 18:02:50 2024 +0000
+commit e5ad83861210243e9228ac1b7ea61f890acb4f70
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 16:58:32 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (190 of 190 strings)
-    
-    Translation: account-fiscal-rule-14.0/account-fiscal-rule-14.0-account_avatax_oca
-    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-14-0/account-fiscal-rule-14-0-account_avatax_oca/es/
+    [BOT] post-merge updates
 
 
 ## operating-unit
@@ -261,16 +256,11 @@ Date:   Wed Mar 13 14:42:16 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 2fa6b886306f96d7ca1abf1a8a4a042bd756960f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 12:29:51 2024 +0000
+commit e3807202a1374ba488dc1c8e37b73b03a4b51f1c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 19:13:06 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: account-payment-14.0/account-payment-14.0-account_due_list_payment
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_due_list_payment/it/
+    [BOT] post-merge updates
 
 
 ## connector
@@ -941,16 +931,16 @@ Date:   Fri Oct 27 22:01:44 2023 +0200
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit b47232dba4bb062add4aa8fa62e3897a51371709
+commit 851b5010130a67f402748f9cc9ca0760a2e64a73
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Mar 7 15:35:23 2024 +0000
+Date:   Wed Mar 13 16:24:39 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-assets_management
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-assets_management/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note/
 
 
 ## l10n-japan
@@ -1036,14 +1026,11 @@ Date:   Fri Oct 27 22:45:57 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit b1299926300824aedc3c9adb5df9513658c94ebd
-Merge: bad4dc26 b9bd07b9
-Author: Fekete Mihai <feketemihai@nexterp.ro>
-Date:   Tue Mar 5 17:11:33 2024 +0200
+commit 006b0271f958f5efc8df1bef56971daf0618cc08
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 16:57:00 2024 +0000
 
-    Merge pull request #875 from NextERP-Romania/14.0-FIX-anglo_saxon_move_lines
-    
-    FIX anglo_saxon_move_lines
+    [UPD] README.rst
 
 
 ## l10n-russia

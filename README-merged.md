@@ -574,7 +574,7 @@ addon | version | maintainers | summary
 [account_multi_vat](account_multi_vat/) | 14.0.1.0.1 | [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | Allows setting multiple VAT numbers on any partner and select the right one depending on the fiscal position and delivery address of the invoice.
 [account_product_fiscal_classification](account_product_fiscal_classification/) | 14.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simplify taxes management for products
 [account_product_fiscal_classification_test](account_product_fiscal_classification_test/) | 14.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | tests account_product_fiscal_classification module
-[l10n_eu_oss](l10n_eu_oss/) | 14.0.1.1.0 |  | L10n EU OSS
+[l10n_eu_oss](l10n_eu_oss/) | 14.0.1.2.0 |  | L10n EU OSS
 
 [//]: # (end addons)
 
@@ -1189,14 +1189,14 @@ addon | version | maintainers | summary
 [account_check_date](account_check_date/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Add check date on payment for check printing
 [account_check_payee](account_check_payee/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Add payee on payment for check printing
 [account_check_printing_report_base](account_check_printing_report_base/) | 14.0.1.0.0 |  | Account Check Printing Report Base
-[account_check_printing_report_sslm102](account_check_printing_report_sslm102/) | 14.0.1.0.0 |  | Allows you to print SSLM102 lined checks.
+[account_check_printing_report_sslm102](account_check_printing_report_sslm102/) | 14.0.1.0.1 |  | Allows you to print SSLM102 lined checks.
 [account_due_list](account_due_list/) | 14.0.1.2.0 |  | List of open credits and debits, with due date
 [account_due_list_aging_comment](account_due_list_aging_comment/) | 14.0.1.0.0 |  | Account Due List Aging Comment
 [account_due_list_days_overdue](account_due_list_days_overdue/) | 14.0.1.0.0 |  | Payments Due list days overdue
 [account_due_list_edit_inline](account_due_list_edit_inline/) | 14.0.1.0.0 |  | Account List Inline Edit
 [account_due_list_payment](account_due_list_payment/) | 14.0.1.0.0 |  | Allows you to make payments directly from the due list view
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 14.0.1.0.0 |  | Payment Due List Payment Mode
-[account_financial_discount](account_financial_discount/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Handle financial discounts for early payments
+[account_financial_discount](account_financial_discount/) | 14.0.1.0.1 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Handle financial discounts for early payments
 [account_payment_batch_process](account_payment_batch_process/) | 14.0.1.0.0 |  | Account Batch Payments Processing for Customers Invoices and Supplier Invoices
 [account_payment_batch_process_discount](account_payment_batch_process_discount/) | 14.0.1.0.1 | [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Discount on batch payments
 [account_payment_credit_card](account_payment_credit_card/) | 14.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add support for credit card payments
@@ -1205,7 +1205,7 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 14.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Payment Register with Multiple Deduction
 [account_payment_paired_internal_transfer](account_payment_paired_internal_transfer/) | 14.0.1.0.1 |  | Crete internal transfers in one move.
 [account_payment_register_keep_amount](account_payment_register_keep_amount/) | 14.0.1.0.0 |  | Keep set amount during Payment registration.
-[account_payment_return](account_payment_return/) | 14.0.1.0.6 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 14.0.1.0.7 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 14.0.1.0.2 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 14.0.2.0.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 14.0.1.1.7 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
@@ -4702,7 +4702,7 @@ addon | version | maintainers | summary
 [l10n_it_central_journal](l10n_it_central_journal/) | 14.0.1.0.1 |  | ITA - Libro giornale
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.1.15 |  | Gestione dichiarazioni di intento
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.2.1 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.3.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 14.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_customer_code](l10n_it_delivery_note_customer_code/) | 14.0.1.2.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Product Customer code and name for delivery note
@@ -5208,7 +5208,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.31.1 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.31.2 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
