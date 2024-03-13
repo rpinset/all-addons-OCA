@@ -3,7 +3,7 @@
 
 {
     "name": "Sequential Code for Tasks",
-    "version": "15.0.1.0.4",
+    "version": "15.0.1.0.5",
     "category": "Project Management",
     "author": "OdooMRP team, "
     "AvanzOSC, "
@@ -11,6 +11,7 @@
     "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/project",
     "license": "AGPL-3",
+    "maintainers": ["luisg123v"],
     "depends": [
         "project",
     ],
