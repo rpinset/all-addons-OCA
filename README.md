@@ -1,28 +1,26 @@
 # all-addons-OCA
 
 It's a merge of many repo OCA.
+Based on almost the entire list in [this file](https://github.com/OCA/maintainer-tools/blob/master/tools/oca_projects.py)
 
 ## Licenses
 
 This repository is licensed under [AGPL-3.0](LICENSE).
 
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA) policy. Consult each module's `__manifest__.py` file, which contains a `license` key that explains its license.
 
 ----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose mission is to support the collaborative development of Odoo features and promote its widespread use.
 
 ----
-# Merged README
+# Merged Files
 
-The merged README is [here](README-merged.md) 
+The [merged README](README-merged.md) contains the concatenation of READMEs from all processed repo.
+The [merged requirements.txt](requirements-merged.txt) contains the concatenation of requirements.txt from all processed repo.
 
 ----
 
-# REPOSITORY ARE :
+# REPOSITORY and last commit are :
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
@@ -92,16 +90,16 @@ Date:   Thu Feb 29 11:12:18 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 11f3657ef01756c539aec4c922207fe3c64fcbc6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 1 08:51:22 2024 +0000
+commit 2edd3cd3256771d5d089fd731451b450065af865
+Author: Vincent Hatakeyama <vincent+github@hatakeyama.fr>
+Date:   Mon Mar 11 16:12:26 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 63.3% (164 of 259 strings)
+    Currently translated at 100.0% (259 of 259 strings)
     
     Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/fr/
 
 
 ## account-invoice-reporting
