@@ -78,7 +78,7 @@ msgstr "Controlla la quantità di vendita multipla per questi prodotti: * \n"
 msgid ""
 "Define if user can force sale max qty 'If not set', Odoo will use the value "
 "defined in the parent object.Hierarchy is in this order :Product/product "
-"Template/product category/parent categoroies "
+"Template/product category/parent categories "
 msgstr ""
 "Definisci se l'utente può forzare la quantità massima di vendita 'Se non "
 "impostato', Odoo utilizzerà il valore definito nell'oggetto padre. La "
@@ -93,7 +93,7 @@ msgstr ""
 msgid ""
 "Define if user can force sale min qty 'If not set', Odoo will use the value "
 "defined in the parent object.Hierarchy is in this order :Product/product "
-"Template/product category/parent categoroies "
+"Template/product category/parent categories "
 msgstr ""
 "Definisci se l'utente può forzare la quantità minima di vendita 'Se non "
 "impostato', Odoo utilizzerà il valore definito nell'oggetto padre. La "
@@ -108,7 +108,7 @@ msgstr ""
 msgid ""
 "Define sale max qty 'If not set, Odoo will use the value defined in the "
 "parent object.Hierarchy is in this order :Product/product Template/product "
-"category/parent categoroies "
+"category/parent categories "
 msgstr ""
 "Definisci la q.tà massima di vendita 'Se non impostato', Odoo utilizzerà il "
 "valore definito nell'oggetto padre. La gerarchia è in questo ordine: "
@@ -122,7 +122,7 @@ msgstr ""
 msgid ""
 "Define sale min qty 'If not set, Odoo will use the value defined in the "
 "parent object.Hierarchy is in this order :Product/product Template/product "
-"category/parent categoroies "
+"category/parent categories "
 msgstr ""
 "Definisci la q.tà minima di vendita 'Se non impostato', Odoo utilizzerà il "
 "valore definito nell'oggetto padre. La gerarchia è in questo ordine: "
@@ -136,7 +136,7 @@ msgstr ""
 msgid ""
 "Define sale multiple qty 'If not set', Odoo will use the value defined in "
 "the parent object.Hierarchy is in this order :Product/product Template/"
-"product category/parent categoroies "
+"product category/parent categories "
 msgstr ""
 "Definisci la q.tà multipla di vendita 'Se non impostato', Odoo utilizzerà il "
 "valore definito nell'oggetto padre. La gerarchia è in questo ordine: "
@@ -373,18 +373,10 @@ msgid "Sale Max Qty"
 msgstr "Q.tà massima di vendita"
 
 #. module: sale_restricted_qty
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.min_order_qty_product_product_form_view
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_category_form
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_template_form
 msgid "Sale Max qty"
 msgstr "Q.tà massima di vendita"
-
-#. module: sale_restricted_qty
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.min_order_qty_product_product_form_view
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_category_form
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_template_form
-msgid "Sale Miltiple qty"
-msgstr "Q.tà multipla di vendita"
 
 #. module: sale_restricted_qty
 #: model:ir.model.fields,field_description:sale_restricted_qty.field_product_category__sale_min_qty
@@ -395,7 +387,6 @@ msgid "Sale Min Qty"
 msgstr "Q.tà minima di vendita"
 
 #. module: sale_restricted_qty
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.min_order_qty_product_product_form_view
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_category_form
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_template_form
 msgid "Sale Min qty"
@@ -410,7 +401,12 @@ msgid "Sale Multiple Qty"
 msgstr "Q.tà multipla di vendita"
 
 #. module: sale_restricted_qty
-#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.min_order_qty_product_product_form_view
+#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_category_form
+#: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_template_form
+msgid "Sale Multiple qty"
+msgstr "Q.tà multipla di vendita"
+
+#. module: sale_restricted_qty
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_category_form
 #: model_terms:ir.ui.view,arch_db:sale_restricted_qty.view_product_template_form
 msgid "Sale restricted qty"

@@ -5,7 +5,7 @@
     "name": "Odoo FastAPI",
     "summary": """
         Odoo FastAPI endpoint""",
-    "version": "14.0.0.0.3",
+    "version": "14.0.1.0.0",
     "license": "LGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "maintainers": ["lmignon"],
@@ -23,6 +23,7 @@
     "external_dependencies": {
         "python": [
             "fastapi",
+            "pydantic<2",
             "python-multipart",
             "ujson",
             "a2wsgi",
