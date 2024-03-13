@@ -556,16 +556,11 @@ Date:   Mon Mar 11 18:34:04 2024 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit ee6bbbcfb5b0c1d6a31975b223b89b0af1ae78d0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 12 08:24:35 2024 +0000
+commit 38f95fc6da96141a6a898aefe08308edfe06cd58
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 17:21:59 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (85 of 85 strings)
-    
-    Translation: fleet-16.0/fleet-16.0-fleet_vehicle_log_fuel
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-16-0/fleet-16-0-fleet_vehicle_log_fuel/it/
+    [BOT] post-merge updates
 
 
 ## infrastructure-dns
@@ -906,16 +901,11 @@ Date:   Fri Oct 27 23:23:27 2023 +0200
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit f3a353060683ccfaee4fd807564b826b5b148b3d
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 13 09:33:51 2024 +0000
+commit 68de3625fe691404e3dca083282e39b4a35a3bd6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 16:34:25 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-italy-16.0/l10n-italy-16.0-l10n_it_vat_registries
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-16-0/l10n-italy-16-0-l10n_it_vat_registries/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
