@@ -414,6 +414,23 @@ class TestDdmrp(TestDdmrpCommon):
             self.buffer_a.product_location_qty_available_not_res, expected_on_hand
         )
 
+    def test_19_qualified_demand_6_uom(self):
+        """Delivery spike in a secondary UoM and partially reserved, only
+        unreserved part should be considered."""
+        date_move = datetime.today() + timedelta(days=10)
+        picking = self.create_pickingoutA(date_move, 20, uom=self.dozen_unit)
+        available_qty = self.buffer_a.product_location_qty_available_not_res
+        picking.action_assign()
+        self.assertEqual(picking.move_ids.state, "partially_available")
+        self.bufferModel.cron_ddmrp()
+        # 20 dozens minus de available qty that has been reserved in this
+        # picking.
+        expected_result = (20 * 12) - available_qty
+        self.assertTrue(expected_result > self.buffer_a.order_spike_threshold)
+        self.assertAlmostEqual(
+            self.buffer_a.qualified_demand, expected_result, places=0
+        )
+
     # TEST GROUP 2: Buffer zones and procurement
 
     def _check_red_zone(
@@ -1238,3 +1255,51 @@ class TestDdmrp(TestDdmrpCommon):
         self.bufferModel.cron_ddmrp_adu()
         to_assert_value = 2 * 0.5 + 2 * 0.5
         self.assertEqual(self.buffer_a.adu, to_assert_value)
+
+    def test_46_disable_auto_create_orderpoint(self):
+        """If a product has a buffer, do not create a new orderpoint for same location"""
+        op_a = self.orderpoint_model.search(
+            [
+                ("product_id", "=", self.productA.id),
+                ("location_id", "=", self.stock_location.id),
+            ]
+        )
+        self.assertFalse(op_a)
+        nbp = self.productModel.create(
+            {
+                "name": "Non Buffered Product",
+                "standard_price": 1,
+                "type": "product",
+                "uom_id": self.uom_unit.id,
+                "default_code": "NBP",
+            }
+        )
+        op_nbp = self.orderpoint_model.search(
+            [
+                ("product_id", "=", nbp.id),
+                ("location_id", "=", self.stock_location.id),
+            ]
+        )
+        self.assertFalse(op_nbp)
+        # Create a negative projection for both products:
+        date_move = datetime.today()
+        self.create_pickingoutA(date_move, 500, source_location=self.stock_location)
+        self.create_picking_out(
+            nbp, date_move, 500, source_location=self.stock_location
+        )
+        # Access "Replenishment" menu
+        self.orderpoint_model.action_open_orderpoints()
+        op_a = self.orderpoint_model.search(
+            [
+                ("product_id", "=", self.productA.id),
+                ("location_id", "=", self.stock_location.id),
+            ]
+        )
+        self.assertFalse(op_a)
+        op_nbp = self.orderpoint_model.search(
+            [
+                ("product_id", "=", nbp.id),
+                ("location_id", "=", self.stock_location.id),
+            ]
+        )
+        self.assertTrue(op_nbp)

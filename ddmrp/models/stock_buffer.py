@@ -1118,6 +1118,7 @@ class StockBuffer(models.Model):
         store=True,
     )
     top_of_red = fields.Float(
+        string="Top Of Red",
         related="red_zone_qty",
         store=True,
     )
@@ -1614,7 +1615,11 @@ class StockBuffer(models.Model):
             demand_by_days[move_date] = 0.0
         for move in moves:
             date = move.date.date()
-            demand_by_days[date] += move.product_qty - move.reserved_availability
+            demand_by_days[
+                date
+            ] += move.product_qty - move.product_uom._compute_quantity(
+                move.reserved_availability, move.product_id.uom_id
+            )
         return demand_by_days
 
     def _search_mrp_moves_qualified_demand_domain(self):

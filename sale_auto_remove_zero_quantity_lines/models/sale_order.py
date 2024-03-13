@@ -7,11 +7,15 @@ from odoo import _, models
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
+    def _should_auto_remove_zero_quantity_lines(self):
+        self.ensure_one()
+        return self.company_id.sale_auto_remove_zero_quantity_lines
+
     def action_confirm(self):
         for order in self:
-            if order.company_id.sale_auto_remove_zero_quantity_lines:
+            if order._should_auto_remove_zero_quantity_lines():
                 zero_lines = order.order_line.filtered(
-                    lambda line: line.product_uom_qty == 0
+                    lambda line: line.product_id and line.product_uom_qty == 0
                 )
                 if zero_lines:
                     body = _(
