@@ -395,16 +395,11 @@ Date:   Mon Mar 11 08:31:48 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit c0db7e8d180e0fddb21d339a3592b5581a1c6513
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 13 12:08:24 2024 +0000
+commit 4a69cb5cd1588dc3bd5f261fc03649ed6b2a0d17
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 13 18:10:37 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: partner-contact-15.0/partner-contact-15.0-partner_coc
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_coc/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -1427,11 +1422,16 @@ Date:   Sat Oct 28 00:06:57 2023 +0200
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit c95ad8978c051bb4d4b76a9bee2c3110b22b0822
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 13 14:35:41 2024 +0000
+commit 844d62d2630aec2e4c07c9369d6c239382b74a26
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Mar 13 16:05:15 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: reporting-engine-15.0/reporting-engine-15.0-sql_export_mail
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-15-0/reporting-engine-15-0-sql_export_mail/
 
 
 ## report-print-send
