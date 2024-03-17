@@ -307,7 +307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.9.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.9.2 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -1858,7 +1858,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.2.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.1.5.1 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.1.6.0 |  | Sale planner calendar
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
 [sale_product_multi_add](sale_product_multi_add/) | 15.0.1.0.0 |  | Sale Product Multi Add
@@ -2407,7 +2407,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_survey](partner_survey/) | 15.0.1.0.0 |  | Link partners with their survey results
-[survey_contact_generation](survey_contact_generation/) | 15.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate new contacts from surveys
+[survey_contact_generation](survey_contact_generation/) | 15.0.1.1.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate new contacts from surveys
 [survey_crm_generation](survey_crm_generation/) | 15.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Link CRM leads to sale orders generated from surveys
 [survey_legal](survey_legal/) | 15.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Require legal terms before survey submit
@@ -2520,7 +2520,7 @@ addon | version | maintainers | summary
 [dms](dms/) | 15.0.1.11.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
-[dms_field](dms_field/) | 15.0.1.1.2 |  | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 15.0.1.2.0 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
 [hr_dms_field](hr_dms_field/) | 15.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add dms field for employees
 
@@ -3247,7 +3247,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_holidays_calendar_event_privacy](hr_holidays_calendar_event_privacy/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Define privacy level of calendar events from Time off requests
+[hr_holidays_calendar_event_privacy](hr_holidays_calendar_event_privacy/) | 15.0.1.0.1 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Define privacy level of calendar events from Time off requests
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_public](hr_holidays_public/) | 15.0.1.1.4 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
@@ -4157,6 +4157,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[datev_export](datev_export/) | 15.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
+[datev_export_xml](datev_export_xml/) | 15.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [l10n_de_holidays](l10n_de_holidays/) | 15.0.1.0.1 |  | Holidays for Germany
 [l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 15.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
 
@@ -4857,7 +4859,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 15.0.1.2.0 | [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -4865,14 +4867,15 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.51.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.54.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
 [l10n_ro_address_extended](l10n_ro_address_extended/) | 15.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Extended Addresses
 [l10n_ro_city](l10n_ro_city/) | 15.0.3.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
-[l10n_ro_config](l10n_ro_config/) | 15.0.2.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
+[l10n_ro_config](l10n_ro_config/) | 15.0.2.13.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
+[l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
@@ -4889,7 +4892,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 15.0.4.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 15.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Reception In progress
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
-[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 15.0.4.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
+[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 15.0.4.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 15.0.5.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 15.0.6.15.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fisa Magazie)
 [l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 15.0.2.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
@@ -5817,6 +5820,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 15.0.1.0.1 |  | Displays the product in the journal entries and items
 [account_move_line_stock_info](account_move_line_stock_info/) | 15.0.1.1.0 |  | Account Move Line Stock Info
+[base_product_merge](base_product_merge/) | 15.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Merge duplicate products
 [procurement_auto_create_group](procurement_auto_create_group/) | 15.0.1.0.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [sale_stock_available_info_popup](sale_stock_available_info_popup/) | 15.0.1.0.0 |  | Adds an 'Available to promise' quantity to the popover shown in sale order line that display stock info of the product
 [scrap_reason_code](scrap_reason_code/) | 15.0.1.1.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
@@ -5860,6 +5864,7 @@ addon | version | maintainers | summary
 [stock_reserve](stock_reserve/) | 15.0.1.2.0 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 15.0.1.0.1 |  | Configure reservation rules by location
 [stock_secondary_unit](stock_secondary_unit/) | 15.0.2.1.0 |  | Get product quantities in a secondary unit
+[stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 15.0.1.0.0 |  | Stock Valuation Layer Accounting Date
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 15.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
@@ -6693,7 +6698,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_configurator](product_variant_configurator/) | 15.0.1.0.0 |  | Provides an abstract model for product variant configuration.
 [product_variant_configurator_manual_creation](product_variant_configurator_manual_creation/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Provides a wizards to make variants on demand
-[product_variant_default_code](product_variant_default_code/) | 15.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Product Variant Default Code
+[product_variant_default_code](product_variant_default_code/) | 15.0.1.0.1 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Product Variant Default Code
 [product_variant_sale_price](product_variant_sale_price/) | 15.0.1.0.0 |  | Allows to write fixed prices in product variants
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 15.0.2.0.0 |  | Sale order line variant description
 
@@ -6957,7 +6962,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 15.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 15.0.1.9.0 |  | Recurring - Contracts Management
+[contract](contract/) | 15.0.1.10.0 |  | Recurring - Contracts Management
 [contract_payment_mode](contract_payment_mode/) | 15.0.1.1.1 |  | Payment mode in contracts and their invoices
 [contract_price_revision](contract_price_revision/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
 [contract_sale](contract_sale/) | 15.0.1.1.0 |  | Contract from Sale
@@ -8024,7 +8029,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [github_connector](github_connector/) | 15.0.2.0.1 |  | Synchronize information from Github repositories
-[github_connector_odoo](github_connector_odoo/) | 15.0.2.0.1 |  | Analyze Odoo modules information from Github repositories
+[github_connector_odoo](github_connector_odoo/) | 15.0.2.1.0 |  | Analyze Odoo modules information from Github repositories
 
 [//]: # (end addons)
 

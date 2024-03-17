@@ -62,9 +62,18 @@ class AccountMove(models.Model):
 
     def get_l10n_ro_edi_invoice_needed(self):
         self.ensure_one()
-        if self.move_type in ("out_invoice", "out_refund"):
-            return True
-        return False
+        is_needed = (
+            self.move_type in ("out_invoice", "out_refund")
+            and self.commercial_partner_id.country_id.code == "RO"
+            and self.commercial_partner_id.is_company
+        )
+        if not is_needed:
+            is_needed = (
+                self.move_type in ("in_invoice", "in_refund")
+                and self.journal_id.l10n_ro_sequence_type == "autoinv2"
+                and self.journal_id.l10n_ro_partner_id
+            )
+        return is_needed
 
     def button_draft(self):
         # OVERRIDE
@@ -85,6 +94,10 @@ class AccountMove(models.Model):
                         move.display_name,
                     )
                 )
+            if move.l10n_ro_edi_transaction:
+                move.l10n_ro_edi_transaction = None
+            if move.l10n_ro_edi_download:
+                move.l10n_ro_edi_download = None
         return super().button_draft()
 
     def button_cancel_posted_moves(self):
@@ -170,7 +183,9 @@ class AccountMove(models.Model):
 
     def l10n_ro_download_zip_anaf(self, anaf_config=False):
         if not anaf_config:
-            anaf_config = self.env.company.l10n_ro_account_anaf_sync_id.sudo()
+            anaf_config = self.env.company.sudo()._l10n_ro_get_anaf_sync(
+                scope="e-factura"
+            )
         if not anaf_config:
             raise UserError(
                 _("The ANAF configuration is not set. Please set it and try again.")

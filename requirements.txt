@@ -143,6 +143,7 @@ python-stdnum
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 # generated from manifests external_dependencies
+PyJWT
 python-dateutil
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
@@ -189,6 +190,8 @@ python-barcode
 xlrd
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
