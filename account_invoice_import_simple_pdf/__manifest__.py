@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import Simple PDF",
-    "version": "14.0.3.3.0",
+    "version": "14.0.4.0.0",
     "category": "Accounting/Accounting",
     "license": "AGPL-3",
     "summary": "Import simple PDF vendor bills",
@@ -14,7 +14,6 @@
     "depends": ["account_invoice_import"],
     "external_dependencies": {
         "python": [
-            "pdfplumber",
             "regex",
             "dateparser",
             "pypdf>=3.1.0",
