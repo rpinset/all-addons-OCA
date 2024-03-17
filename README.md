@@ -88,16 +88,11 @@ Date:   Thu Feb 29 13:09:54 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 4e337d90c55c8a1016ff22396c9de6aa8e9d9fe5
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Thu Feb 8 17:33:20 2024 +0000
+commit 85056b4a288e9748ca106e35e28ccfd8a67169d3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 14 21:17:30 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: account-invoice-reporting-17.0/account-invoice-reporting-17.0-account_invoice_report_grouped_by_picking
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-17-0/account-invoice-reporting-17-0-account_invoice_report_grouped_by_picking/es/
+    [BOT] post-merge updates
 
 
 ## account-invoicing
@@ -139,16 +134,11 @@ Date:   Sun Nov 12 16:01:43 2023 +0100
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 98bc42fca8ebe0085b2837a70d264ab207908ace
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 13 11:12:06 2024 +0000
+commit 5069a2ea07fbc4f46bc4e30320f3e7b001f758fd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 15 23:07:23 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (22 of 22 strings)
-    
-    Translation: intrastat-extrastat-17.0/intrastat-extrastat-17.0-intrastat_base
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-intrastat_base/it/
+    [BOT] post-merge updates
 
 
 ## mis-builder
@@ -236,11 +226,11 @@ Date:   Wed Feb 7 07:42:38 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit cdc2a16d410cfe0c493233613cc45747e9dda88d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Nov 12 15:26:36 2023 +0100
+commit 041a8ec8dc97b37ad055d077afded2a85360f854
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 14 09:02:49 2024 +0000
 
-    Initialize 17.0 branch
+    [BOT] post-merge updates
 
 
 ## connector
@@ -795,11 +785,16 @@ Date:   Tue Feb 6 10:33:44 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit b72d3fc4e00b1dcbea64e36784b381fda4ac5fff
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 12 20:44:10 2024 +0000
+commit c2e6ce7cb785003d01888e89abecf92ef387d928
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Mar 15 01:06:41 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-france-17.0/l10n-france-17.0-l10n_fr_das2
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-17-0/l10n-france-17-0-l10n_fr_das2/
 
 
 ## l10n-germany
@@ -1207,16 +1202,16 @@ Date:   Sun Nov 12 16:02:21 2023 +0100
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e5e4ce89c508467ebd04503118596d1a5f3e4bdb
+commit 3e126465431de6e62d027a298aac02baf962cfc5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 12 07:13:19 2024 +0000
+Date:   Fri Mar 15 13:20:48 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 100.0% (229 of 229 strings)
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_exception
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_exception/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_request/it/
 
 
 ## purchase-reporting
