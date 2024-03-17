@@ -3,12 +3,12 @@
 
 {
     'name': 'Base UBL',
-    'version': '12.0.1.1.1',
+    'version': '12.0.1.1.2',
     'category': 'Hidden',
     'license': 'AGPL-3',
     'summary': 'Base module for Universal Business Language (UBL)',
     'author': 'Akretion,Odoo Community Association (OCA)',
-    'website': 'https://github.com/oca/edi/',
+    'website': 'https://github.com/OCA/edi',
     'depends': [
         'uom_unece',
         'account_tax_unece',

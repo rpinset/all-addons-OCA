@@ -3,12 +3,12 @@
 
 {
     'name': 'Sale Order Import',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'Sales Management',
     'license': 'AGPL-3',
     'summary': 'Import RFQ or sale orders from files',
     'author': 'Akretion,Odoo Community Association (OCA)',
-    'website': 'https://github.com/oca/edi',
+    'website': 'https://github.com/OCA/edi',
     'depends': [
         'sale_commercial_partner',
         'base_business_document_import',

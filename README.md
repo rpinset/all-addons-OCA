@@ -178,16 +178,16 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 784d29691d8b4381ad8d50cb65c2b3d2f84815f1
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 19:34:59 2023 +0000
+commit 70c766f50a663cce4959086fa12986e175da12fb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 14 08:14:54 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 57.3% (160 of 279 strings)
     
-    Translation: mis-builder-12.0/mis-builder-12.0-mis_builder_demo
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-12-0/mis-builder-12-0-mis_builder_demo/
+    Translation: mis-builder-12.0/mis-builder-12.0-mis_builder
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-12-0/mis-builder-12-0-mis_builder/it/
 
 
 ## currency
@@ -426,16 +426,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 0023104eb7934e6442388144101903e027c4c9f2
+commit b99bbae28482b24f854f3197e4ddf1f409950504
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:15:41 2024 +0000
+Date:   Fri Mar 15 13:40:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (154 of 154 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_stock_picking_note
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_stock_picking_note/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_blanket_order/it/
 
 
 ## crm
@@ -575,30 +575,25 @@ Date:   Tue Oct 31 11:56:03 2023 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit d1b78c754c06e53bfbc093f64c2c7ff443fa686a
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 01:25:17 2023 +0000
+commit 9144e59952ef828e84116d687624fa856c7ce848
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 15 14:48:24 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-12.0/edi-12.0-account_e-invoice_generate
-    Translate-URL: https://translation.odoo-community.org/projects/edi-12-0/edi-12-0-account_e-invoice_generate/
+    [BOT] post-merge updates
 
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 6edfe0e24e3d44699bd06c80b0600e19b0e2d56d
+commit d8f2ec34496eb508ce326c72c0ffb77f89724915
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:53:31 2024 +0000
+Date:   Fri Mar 15 13:13:11 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (512 of 512 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_account_payment
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_account_payment/it/
 
 
 ## margin-analysis
@@ -1221,16 +1216,16 @@ Date:   Fri Jan 5 08:01:42 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit f4dc5b4609a55c2fc430ca9737eb5ec3ce114d48
+commit cd5e6cda164e1d2f285a6651833bc8f26251427d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 14:53:39 2024 +0000
+Date:   Fri Mar 15 13:16:30 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (163 of 163 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_multi_level/it/
+    Translation: manufacture-12.0/manufacture-12.0-repair_payment_term
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_payment_term/it/
 
 
 ## manufacture-reporting
@@ -1263,16 +1258,16 @@ Date:   Mon Mar 4 08:14:23 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit e9951f04680e7e3e1c92d4a6230f310c3a89023f
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Mar 9 15:07:47 2024 +0000
+commit 12f87496e17461cf3fc086c66016949ca5f47a1b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 15 13:42:55 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 92.8% (207 of 223 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_open_qty
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_open_qty/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
 
 
 ## purchase-reporting
@@ -1457,16 +1452,16 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit c8b434a9510e5ff2e0ffd83d962d9527185ec771
+commit 0433d608b86404cba04a09c65e94d84bf88ff6a1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 18 07:19:56 2024 +0000
+Date:   Fri Mar 15 13:26:06 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.2% (51 of 53 strings)
+    Currently translated at 92.5% (87 of 94 strings)
     
-    Translation: reporting-engine-12.0/reporting-engine-12.0-report_async
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-report_async/it/
+    Translation: reporting-engine-12.0/reporting-engine-12.0-bi_view_editor
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-bi_view_editor/it/
 
 
 ## report-print-send
