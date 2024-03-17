@@ -90,13 +90,13 @@ Date:   Thu Feb 29 11:12:18 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 2edd3cd3256771d5d089fd731451b450065af865
+commit 7685a85c4208b0a913f3c9cd5dd85ecfce3a8ef1
 Author: Vincent Hatakeyama <vincent+github@hatakeyama.fr>
-Date:   Mon Mar 11 16:12:26 2024 +0000
+Date:   Fri Mar 15 08:36:02 2024 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (259 of 259 strings)
+    Currently translated at 100.0% (260 of 260 strings)
     
     Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
     Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/fr/
@@ -1409,16 +1409,16 @@ Date:   Mon Mar 4 08:14:27 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 2db2623145d9f2d209337f863b5e15b8d1ca38ee
+commit 1227e2a92dd0d34ce015843181159e0a81b9b39d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:43:13 2024 +0000
+Date:   Fri Mar 15 13:20:53 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 82.7% (187 of 226 strings)
     
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request/it/
 
 
 ## purchase-reporting
@@ -1647,16 +1647,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 2189acc7ac985efbe776fc5dd491dc22be711b84
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 1 01:00:21 2024 +0000
+commit 0b7e2b7f82b506f227c0d6f4663d9ed0b3c7247c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 15 13:25:27 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 24.3% (18 of 74 strings)
     
     Translation: server-tools-13.0/server-tools-13.0-base_import_odoo
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/it/
 
 
 ## server-auth
