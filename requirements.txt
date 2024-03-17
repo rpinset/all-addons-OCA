@@ -128,7 +128,7 @@ tzlocal
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
-pgpy
+pyfrdas2
 pypdf>=3.1.0
 python-stdnum
 python-stdnum>=1.18

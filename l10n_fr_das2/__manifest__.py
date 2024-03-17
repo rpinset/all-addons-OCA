@@ -4,7 +4,7 @@
 
 {
     "name": "DAS2",
-    "version": "16.0.1.4.0",
+    "version": "16.0.2.0.0",
     "category": "Invoicing Management",
     "license": "AGPL-3",
     "summary": "DAS2 (France)",
@@ -16,7 +16,7 @@
         "l10n_fr_cog",
     ],
     "external_dependencies": {
-        "python": ["unidecode", "stdnum", "pgpy"],
+        "python": ["stdnum", "pyfrdas2"],
     },
     "data": [
         "security/das2_security.xml",
