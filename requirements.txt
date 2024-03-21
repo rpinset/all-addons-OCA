@@ -91,6 +91,7 @@ zeep
 pyfrdas2
 python-stdnum
 python-stdnum>=1.18
+requests_oauthlib
 unidecode
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
 # From [https://github.com/OCA/l10n-greece.git](https://github.com/OCA/l10n-greece.git)
