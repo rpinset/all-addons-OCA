@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mail_activity_plan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-03-21 13:08+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__active
+msgid "Active"
+msgstr "Attiva"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__plan_activity_type_ids
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.view_mail_activity_plan_form
+msgid "Activities"
+msgstr "Attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__activity_plan_id
+msgid "Activity Plan"
+msgstr "Piano attività"
+
+#. module: mail_activity_plan
+#: model:ir.actions.act_window,name:mail_activity_plan.action_mail_activity_plan
+#: model:ir.ui.menu,name:mail_activity_plan.menu_mail_activity_plan
+msgid "Activity Plans"
+msgstr "Piani attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__activity_type_id
+msgid "Activity Type"
+msgstr "Tipo attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__activity_type_id
+msgid "Activity type"
+msgstr "Tipo attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__allowed_activity_plans
+msgid "Allowed Activity Plans"
+msgstr "Piani attività consentiti"
+
+#. module: mail_activity_plan
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.view_mail_activity_plan_form
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.view_mail_activity_plan_search
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__user_id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__user_id
+msgid "Assigned to"
+msgstr "Assegnato a"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__user_expression
+msgid "Assigned to expression"
+msgstr "Assegnata ad espressione"
+
+#. module: mail_activity_plan
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.wizard_mail_activity_plan_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__company_id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: mail_activity_plan
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.wizard_mail_activity_plan_form
+msgid "Create activities"
+msgstr "Crea attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__create_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__create_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__create_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__create_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__create_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__create_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__detail_ids
+#: model_terms:ir.ui.view,arch_db:mail_activity_plan.wizard_mail_activity_plan_form
+msgid "Details"
+msgstr "Dettagli"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__display_name
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__display_name
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__display_name
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__date_deadline
+msgid "Due Date"
+msgstr "Scadenza"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__group_ids
+msgid "Groups"
+msgstr "Gruppi"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan____last_update
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type____last_update
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan____last_update
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__write_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__write_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__write_uid
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__write_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__write_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__write_date
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: mail_activity_plan
+#. odoo-javascript
+#: code:addons/mail_activity_plan/static/src/js/mail_activity_plan.esm.js:0
+#: code:addons/mail_activity_plan/static/src/js/mail_activity_plan.esm.js:0
+#, python-format
+msgid "Launch Activity Plan"
+msgstr "Lancia piano attività"
+
+#. module: mail_activity_plan
+#: model:ir.model,name:mail_activity_plan.model_mail_activity_plan
+msgid "Mail Activity Plan"
+msgstr "Piano attività e-mail"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__model
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__model_id
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__model
+msgid "Model"
+msgstr "Modello"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: mail_activity_plan
+#. odoo-python
+#: code:addons/mail_activity_plan/models/mail_activity_plan.py:0
+#, python-format
+msgid "No user with the expression %(expression)s for %(record_name)s"
+msgstr "Nessun utente con l'espression %(expression)s per %(record_name)s"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__parent_id
+msgid "Parent"
+msgstr "Padre"
+
+#. module: mail_activity_plan
+#: model:ir.model,name:mail_activity_plan.model_mail_activity_plan_activity_type
+msgid "Plan activity type"
+msgstr "Tipo attività piano"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__record_ref
+msgid "Record"
+msgstr "Record"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan__res_model
+msgid "Res Model"
+msgstr "Modello res"
+
+#. module: mail_activity_plan
+#: model:ir.actions.act_window,name:mail_activity_plan.action_wizard_mail_activity_plan
+msgid "Schedule Activity Plan"
+msgstr "Schedula piano attività"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: mail_activity_plan
+#: model:ir.model.fields,field_description:mail_activity_plan.field_mail_activity_plan_activity_type__summary
+#: model:ir.model.fields,field_description:mail_activity_plan.field_wizard_mail_activity_plan_detail__summary
+msgid "Summary"
+msgstr "Riepilogo"
+
+#. module: mail_activity_plan
+#: model:ir.model,name:mail_activity_plan.model_wizard_mail_activity_plan
+msgid "Wizard Mail Activity Plan"
+msgstr "Procedura guidata piano attività e-mail"
+
+#. module: mail_activity_plan
+#: model:ir.model,name:mail_activity_plan.model_wizard_mail_activity_plan_detail
+msgid "Wizard Mail Activity Plan Detail"
+msgstr "Procedura guidata dettaglio piano attività e-mail"

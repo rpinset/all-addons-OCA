@@ -20,7 +20,7 @@ msgstr ""
 
 #. module: stock_move_packaging_qty
 #: model:ir.model.fields,field_description:stock_move_packaging_qty.field_stock_move__product_packaging_qty
-msgid "Package quantity"
+msgid "Pkg. Qty."
 msgstr ""
 
 #. module: stock_move_packaging_qty

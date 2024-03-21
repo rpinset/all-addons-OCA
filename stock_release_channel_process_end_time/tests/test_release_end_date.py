@@ -121,27 +121,54 @@ class ReleaseChannelEndDateCase(ChannelReleaseCase):
         self.channel.action_wake_up()
         # Execute the picking channel assignations
         jobs_after = self.env["queue.job"].search([])
+        # Check the scheduled date is not corresponding to the one on channel
         for job in jobs_after:
             job = Job.load(job.env, job.uuid)
             job.perform()
-        pickings = self.channel.picking_ids
+        for picking in self.channel.picking_ids:
+            self.assertNotEqual(
+                "2023-01-27 23:00:00", fields.Datetime.to_string(picking.scheduled_date)
+            )
+        for move in self.channel.picking_ids.move_ids:
+            self.assertNotEqual(
+                "2023-01-27 23:00:00", fields.Datetime.to_string(move.date)
+            )
+        self._update_qty_in_location(self.loc_bin1, self.product1, 100.0)
+        self._update_qty_in_location(self.loc_bin1, self.product2, 100.0)
+        self.channel.picking_ids.release_available_to_promise()
+        moves = self.channel.picking_ids.move_ids
+        moves |= moves.move_orig_ids
         # Check the scheduled date is corresponding to the one on channel
-        for picking in pickings:
+        for picking in moves.picking_id:
             self.assertEqual(
                 "2023-01-27 23:00:00", fields.Datetime.to_string(picking.scheduled_date)
             )
-        # at this stage, the pickings are not ready to be released as the
-        # qty available is not enough
-        self.assertFalse(self.channel._get_pickings_to_release())
-        self._update_qty_in_location(self.loc_bin1, self.product1, 100.0)
-        self._update_qty_in_location(self.loc_bin1, self.product2, 100.0)
-        pickings.env.invalidate_all()
-        # the pickings are now ready to be released
-        self.assertEqual(pickings, self.channel._get_pickings_to_release())
-        # if the scheduled date of one picking is changed to be after the
-        # process end date, it should not be releasable anymore
-        pickings[0].scheduled_date = fields.Datetime.from_string("2023-01-28 00:00:00")
-        self.assertEqual(pickings[1:], self.channel._get_pickings_to_release())
+        for move in moves:
+            self.assertEqual(
+                "2023-01-27 23:00:00", fields.Datetime.to_string(move.date)
+            )
+
+        # Assign picking to a new channel
+        channel = self.env["stock.release.channel"].create(
+            {
+                "name": "Test Date",
+                "process_end_time": 15,
+            }
+        )
+        channel.action_sleep()
+        channel.invalidate_recordset()
+        channel.action_wake_up()
+        self.picking.release_channel_id = channel.id
+        moves = self.picking.move_ids
+        moves |= moves.move_orig_ids
+        for picking in moves.picking_id:
+            self.assertEqual(
+                "2023-01-27 15:00:00", fields.Datetime.to_string(picking.scheduled_date)
+            )
+        for move in moves:
+            self.assertEqual(
+                "2023-01-27 15:00:00", fields.Datetime.to_string(move.date)
+            )
 
     def test_can_edit_time(self):
         user = self.env.ref("base.user_demo")
@@ -153,19 +180,81 @@ class ReleaseChannelEndDateCase(ChannelReleaseCase):
         self.assertTrue(self.channel.with_user(user).process_end_time_can_edit)
 
     @freeze_time("2023-01-27")
-    def test_channel_end_date_warehouse_timezone(self):
+    def test_channel_end_date_warehouse_timezone_asia(self):
+        # Today is 2023-01-27 06:00 in Asia
+        # Set a warehouse with an adress and a timezone on channel
+        self.channel.warehouse_id = self.env.ref("stock.warehouse0")
+        self.channel.warehouse_id.partner_id.tz = "Etc/GMT-6"
+        # Set the end time - In UTC == 15:00
+        self.channel.process_end_time = 21.0
+        # Asleep the release channel to void the process end date
+        self.channel.action_sleep()
+        self.channel.invalidate_recordset()
+        # Wake up the channel to set the process end date
+        self.channel.action_wake_up()
+        # Local time is 2023-01-27 21:00
+        self.assertEqual(
+            "2023-01-27 15:00:00",
+            fields.Datetime.to_string(self.channel.process_end_date),
+        )
+        # Set the end time - In UTC == 21:00
+        self.channel.process_end_time = 3.0
+        # Asleep the release channel to void the process end date
+        self.channel.action_sleep()
+        self.channel.invalidate_recordset()
+        # Wake up the channel to set the process end date
+        self.channel.action_wake_up()
+        # Local time is 2023-01-28 03:00
+        self.assertEqual(
+            "2023-01-27 21:00:00",
+            fields.Datetime.to_string(self.channel.process_end_date),
+        )
+
+    @freeze_time("2023-01-27")
+    def test_channel_end_date_warehouse_timezone_america(self):
+        # Now is 2023-01-26 18:00 in America
+        # Set a warehouse with an adress and a timezone on channel
+        self.channel.warehouse_id = self.env.ref("stock.warehouse0")
+        self.channel.warehouse_id.partner_id.tz = "Etc/GMT+6"
+        # Set the end time - In UTC == 3:00 +1d
+        self.channel.process_end_time = 21.0
+        # Asleep the release channel to void the process end date
+        self.channel.action_sleep()
+        self.channel.invalidate_recordset()
+        # Wake up the channel to set the process end date
+        self.channel.action_wake_up()
+        # Local time is 2023-01-26 21:00
+        self.assertEqual(
+            "2023-01-27 03:00:00",
+            fields.Datetime.to_string(self.channel.process_end_date),
+        )
+        # Set the end time - In UTC == 9:00
+        self.channel.process_end_time = 3.0
+        # Asleep the release channel to void the process end date
+        self.channel.action_sleep()
+        self.channel.invalidate_recordset()
+        # Wake up the channel to set the process end date
+        self.channel.action_wake_up()
+        # Local time is 2023-01-27 03:00
+        self.assertEqual(
+            "2023-01-27 09:00:00",
+            fields.Datetime.to_string(self.channel.process_end_date),
+        )
+
+    @freeze_time("2023-01-27 11:00:00")
+    def test_channel_end_date_warehouse_timezone_tomorrow(self):
         # Set a warehouse with an adress and a timezone on channel
         self.channel.warehouse_id = self.env.ref("stock.warehouse0")
         self.channel.warehouse_id.partner_id.tz = "Europe/Brussels"
         # Set the end time - In UTC == 22:00
-        self.channel.process_end_time = 23.0
+        self.channel.process_end_time = 10.0
         # Asleep the release channel to void the process end date
         self.channel.action_sleep()
         self.channel.invalidate_recordset()
         # Wake up the channel to set the process end date
         self.channel.action_wake_up()
         self.assertEqual(
-            "2023-01-27 22:00:00",
+            "2023-01-28 09:00:00",
             fields.Datetime.to_string(self.channel.process_end_date),
         )
 
