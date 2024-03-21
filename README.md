@@ -454,16 +454,16 @@ Date:   Mon Feb 26 12:42:59 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 3901a53f92b708ebabeb592b94ded2d806c454e4
+commit 598912a76154759aa767ce0536ebaef62f893629
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 5 07:19:40 2024 +0000
+Date:   Tue Mar 19 12:50:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 50.0% (6 of 12 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-partner_vat_unique
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_vat_unique/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-partner_contact_address_default
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_contact_address_default/it/
 
 
 ## sale-financial
@@ -896,16 +896,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e0f87d63468263460fa6ab0da1178b5f0758fc3a
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 13 15:40:08 2024 +0000
+commit 2afd44b6f1be5a65ba71fe4bd78364752ba8de36
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 18 07:11:35 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (42 of 42 strings)
     
     Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fiscalcode
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fiscalcode/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fiscalcode/it/
 
 
 ## l10n-japan
@@ -955,16 +955,11 @@ Date:   Tue Nov 19 21:06:31 2019 +0100
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit 3cbcdcf826d14bb8aedc310d91e7fb1fa1c7b8d3
-Author: Weblate <noreply@weblate.org>
-Date:   Sat Oct 28 21:37:15 2023 +0000
+commit 7848b0c2e189d25d2bd8f25c0e9b094e5e45aae9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 19 21:24:09 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-netherlands-12.0/l10n-netherlands-12.0-l10n_nl_postcodeapi
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-netherlands-12-0/l10n-netherlands-12-0-l10n_nl_postcodeapi/
+    [BOT] post-merge updates
 
 
 ## l10n-norway
@@ -1005,9 +1000,9 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 1b9f1114355c893e7cc7d7c64243cb80c3560ce7
+commit 4c65a6e2ab904c866edaff76cb6e6bc3ee8cc299
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 22 22:01:47 2024 +0000
+Date:   Sun Mar 17 22:29:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1165,9 +1160,9 @@ Date:   Thu Jan 25 13:38:32 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit b43fb2c7bcddd2da8578f37c38fab5cf835287a6
+commit a87a1475af6321e2667f6e1da1ff45a7af3895f2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Oct 29 14:48:32 2023 +0000
+Date:   Tue Mar 19 12:59:49 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1216,16 +1211,16 @@ Date:   Fri Jan 5 08:01:42 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit cd5e6cda164e1d2f285a6651833bc8f26251427d
+commit 8a05ebee0ed80f9e3b51991c248dd26d3979335b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 15 13:16:30 2024 +0000
+Date:   Tue Mar 19 15:45:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-repair_payment_term
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_payment_term/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
@@ -1258,16 +1253,16 @@ Date:   Mon Mar 4 08:14:23 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 12f87496e17461cf3fc086c66016949ca5f47a1b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 15 13:42:55 2024 +0000
+commit 3cad611fa9218bd435ae71bd613b9d702c597184
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Mar 20 07:14:50 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 92.8% (207 of 223 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/
 
 
 ## purchase-reporting
