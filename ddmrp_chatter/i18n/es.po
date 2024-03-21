@@ -1,0 +1,314 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ddmrp_chatter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-03-18 19:34+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__adu_calculation_method
+msgid "ADU calculation method"
+msgstr "Método de cálculo de ADU"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_needaction
+msgid "Action Needed"
+msgstr "Necesaria Acción"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de actividades de excepción"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_state
+msgid "Activity State"
+msgstr "Estado de la Actividad"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de Tipo de Actividad"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_attachment_count
+msgid "Attachment Count"
+msgstr "Recuento de Anexos"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__auto_procure
+msgid "Auto Procure"
+msgstr "Aprovisionamiento Automático"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__auto_procure_option
+msgid "Auto Procure Option"
+msgstr "Opción de Aprovisionamiento Automático"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__buffer_profile_id
+msgid "Buffer Profile"
+msgstr "Perfil del Búfer"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores/as (Canales)"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Clientes)"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de fuente impresionante, por ejemplo fa-tasks"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar la excepción de la actividad."
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_needaction
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, nuevos mensajes requieren su atención."
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor/a"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__location_id
+msgid "Location"
+msgstr "Localización"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto Principal"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__procure_max_qty
+msgid "Maximum Procure Batch"
+msgstr "Lote Máximo de Abastecimiento"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__procure_max_qty
+msgid "Maximum qty for a single procurement"
+msgstr "Cantidad máxima para un solo abastecimiento"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Entrega de Mensaje"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__order_cycle
+msgid "Minimum Order Cycle (days)"
+msgstr "Ciclo de Cantidad Mínima (días)"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__minimum_order_quantity
+msgid "Minimum Order Quantity"
+msgstr "Cantidad Mínima de Pedido"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__procure_min_qty
+msgid "Minimum Procure Batch"
+msgstr "Lote Mínimo para Abastecimiento"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__procure_min_qty
+msgid "Minimum qty for a single procurement"
+msgstr "Ctd. mínima para un solo abastecimiento"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Fecha Límite de mi Actividad"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Fecha Límite de la Siguiente Actividad"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de Próxima Actividad"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo Actividad Siguiente"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Acciones"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_has_error_counter
+msgid "Number of errors"
+msgstr "Cantidad de errores"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensaje con error de entrega"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes sin leer"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__order_spike_horizon
+msgid "Order Spike Horizon"
+msgstr "Horizonte de Pico de Pedido"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__procure_uom_id
+msgid "Procurement UoM"
+msgstr "UdM de Abastecimiento"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__qty_multiple
+msgid "Qty Multiple"
+msgstr "Ctd Múltiple"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en actividades\n"
+"Vencido: la fecha de vencimiento ya ha pasado\n"
+"Hoy: la fecha de la actividad es hoy\n"
+"Planificado: Actividades futuras."
+
+#. module: ddmrp_chatter
+#: model:ir.model,name:ddmrp_chatter.model_stock_buffer
+msgid "Stock Buffer"
+msgstr "Amortiguador de Inventario"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__qty_multiple
+msgid ""
+"The procurement quantity will be rounded up to this multiple. If it is 0, "
+"the exact quantity will be used."
+msgstr ""
+"La cantidad de abastecimiento se redondeará hasta este múltiple. Si es 0, se "
+"usará la cantidad exacta."
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de excepción de actividad registrada."
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes No Leídos"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de Mensajes no Leídos"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__warehouse_id
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,field_description:ddmrp_chatter.field_stock_buffer__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes de Sitio Web"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de la comunicación en el sitio web"
+
+#. module: ddmrp_chatter
+#: model:ir.model.fields,help:ddmrp_chatter.field_stock_buffer__auto_procure
+msgid ""
+"Whenever the buffer is recomputed, if this option is set, it will procure "
+"automatically if needed."
+msgstr ""
+"Siempre que se vuelva a calcular el búfer, si esta opción está activada, se "
+"procurará automáticamente si es necesario."

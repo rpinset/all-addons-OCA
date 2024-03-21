@@ -1905,7 +1905,7 @@ addon | version | maintainers | summary
 [sale_default_uom](sale_default_uom/) | 14.0.1.1.1 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | Set default Unit of Measure value of a product in sales order lines.
 [sale_delivery_date](sale_delivery_date/) | 14.0.1.1.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Postpones delivery dates based on customer preferences, and/or warehouse configuration.
 [sale_delivery_split_date](sale_delivery_split_date/) | 14.0.1.0.1 |  | Sale Deliveries split by date
-[sale_delivery_state](sale_delivery_state/) | 14.0.2.0.0 |  | Show the delivery state on the sale order
+[sale_delivery_state](sale_delivery_state/) | 14.0.2.1.0 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 14.0.2.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_elaboration](sale_elaboration/) | 14.0.1.0.1 |  | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 14.0.1.1.1 |  | Custom exceptions on sale order
@@ -1924,6 +1924,7 @@ addon | version | maintainers | summary
 [sale_mail_autosubscribe](sale_mail_autosubscribe/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's sale orders
 [sale_manual_delivery](sale_manual_delivery/) | 14.0.1.0.0 |  | Create manually your deliveries
 [sale_mrp_bom](sale_mrp_bom/) | 14.0.1.0.1 |  | Allows define a BOM in the sales lines.
+[sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 14.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
 [sale_order_archive](sale_order_archive/) | 14.0.1.0.0 |  | Archive Sale Orders
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 14.0.1.0.1 |  | Auto assign delivery carrier on sale order confirmation
 [sale_order_change_analytic_account](sale_order_change_analytic_account/) | 14.0.1.0.0 |  | This addon allow user to update analytic account on sale orders and related journal entries.
@@ -3206,7 +3207,7 @@ addon | version | maintainers | summary
 [hr_timesheet_activity_begin_end](hr_timesheet_activity_begin_end/) | 14.0.1.0.2 |  | Timesheet Activities - Begin/End Hours
 [hr_timesheet_analysis](hr_timesheet_analysis/) | 14.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Analyze tracked time in Graph views
 [hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Employee Analytic Tag
-[hr_timesheet_purchase_order](hr_timesheet_purchase_order/) | 14.0.1.0.0 |  | HR Timesheet Purchase Order
+[hr_timesheet_purchase_order](hr_timesheet_purchase_order/) | 14.0.1.1.0 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | HR Timesheet Purchase Order
 [hr_timesheet_report](hr_timesheet_report/) | 14.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Generate Timesheet Report from Task Logs
 [hr_timesheet_report_milestone](hr_timesheet_report_milestone/) | 14.0.1.0.0 |  | Extend Timesheet by adding Milestone
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 14.0.1.4.1 |  | Timesheet Sheets, Activities
@@ -3227,7 +3228,7 @@ addon | version | maintainers | summary
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 14.0.1.0.0 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 14.0.1.0.1 |  | Exclude Timesheet Line from Sale Order
-[sale_timesheet_order_line_no_update](sale_timesheet_order_line_no_update/) | 14.0.1.1.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Timesheet Order Line no Update
+[sale_timesheet_order_line_no_update](sale_timesheet_order_line_no_update/) | 14.0.1.1.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Timesheet Order Line no Update
 [sale_timesheet_order_line_sync](sale_timesheet_order_line_sync/) | 14.0.1.0.0 |  | Propagate task order line in not invoiced timesheet lines
 [sale_timesheet_rounded](sale_timesheet_rounded/) | 14.0.1.0.1 |  | Round timesheet entries amount based on project settings.
 
@@ -4418,7 +4419,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [datev_export](datev_export/) | 14.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
-[datev_export_xml](datev_export_xml/) | 14.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
+[datev_export_xml](datev_export_xml/) | 14.0.1.0.1 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [l10n_de_country_states](l10n_de_country_states/) | 14.0.1.0.0 |  | German Country States
 [l10n_de_holidays](l10n_de_holidays/) | 14.0.1.0.2 |  | Holidays for Germany
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 14.0.1.0.0 |  | NUTS specific options for German
@@ -4427,7 +4428,7 @@ addon | version | maintainers | summary
 [l10n_de_steuernummer](l10n_de_steuernummer/) | 14.0.1.0.0 |  | German SteuerNummer validation
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 14.0.1.0.0 |  | German VAT Statement
 [l10n_de_tax_statement_zm](l10n_de_tax_statement_zm/) | 14.0.1.0.0 |  | German VAT Statement Extension
-[l10n_de_toponyms](l10n_de_toponyms/) | 14.0.1.0.0 |  | German Toponyms
+[l10n_de_toponyms](l10n_de_toponyms/) | 14.0.1.0.1 |  | German Toponyms
 
 [//]: # (end addons)
 
@@ -4732,7 +4733,7 @@ addon | version | maintainers | summary
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 14.0.1.1.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 14.0.1.0.2 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Mostra il codice fiscale del cliente nella stampa del preventivo
-[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.4.1 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
+[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.4.2 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 14.0.1.3.6 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_invoices_data_communication](l10n_it_invoices_data_communication/) | 14.0.1.0.2 |  | Comunicazione dati fatture (c.d. "nuovo spesometro" o "esterometro")
 [l10n_it_invoices_data_communication_fatturapa](l10n_it_invoices_data_communication_fatturapa/) | 14.0.1.0.0 |  | Integrazione fatturazione elettronica e comunicazione dati fatture (c.d. "nuovo spesometro")
@@ -5200,7 +5201,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 14.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.17.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.18.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -5208,7 +5209,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.31.2 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.32.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5928,7 +5929,7 @@ addon | version | maintainers | summary
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
-[delivery_schenker](delivery_schenker/) | 14.0.1.2.1 |  | Delivery Carrier implementation for DB Schenker API
+[delivery_schenker](delivery_schenker/) | 14.0.1.3.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.2 |  | Send delivery notice to the shipper from any operation.
 [delivery_state](delivery_state/) | 14.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
@@ -6654,9 +6655,9 @@ addon | version | maintainers | summary
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 14.0.1.1.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Glue module between `mrp_account` and `mrp_bom_attribute_match`
 [mrp_analytic_cost](mrp_analytic_cost/) | 14.0.1.1.0 |  | Track manufacturing costs in real time, using Analytic Items
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 14.0.1.3.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp Attachment Mgmt
-[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
+[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
 [mrp_bom_attribute_match_duplicate_kit](mrp_bom_attribute_match_duplicate_kit/) | 14.0.1.1.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | BOM Attribute Match Duplicate Kit
-[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.0 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | BOM Attribute Match Semifinished Products
+[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | BOM Attribute Match Semifinished Products
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 14.0.1.1.1 |  | MRP BOM Component Menu
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 14.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_line_sequence](mrp_bom_line_sequence/) | 14.0.1.0.0 |  | Manages the order of BOM lines by displaying its sequence
@@ -6684,7 +6685,7 @@ addon | version | maintainers | summary
 [mrp_repair_reuse_component](mrp_repair_reuse_component/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allow to reuse component in manufacturing after removal in repair
 [mrp_restrict_lot](mrp_restrict_lot/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | MRP Restrict Lot
 [mrp_routing](mrp_routing/) | 14.0.1.0.1 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | MRP Routing
-[mrp_sale_info](mrp_sale_info/) | 14.0.2.2.0 |  | Adds sale information to Manufacturing models
+[mrp_sale_info](mrp_sale_info/) | 14.0.2.2.1 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 14.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp subcontracting bom dual use
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 14.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Inhibit subcontracting flow on demand
 [mrp_subcontracting_partner_management](mrp_subcontracting_partner_management/) | 14.0.2.0.0 |  | Subcontracting Partner Management
@@ -7605,7 +7606,7 @@ addon | version | maintainers | summary
 [contract_variable_qty_prorated](contract_variable_qty_prorated/) | 14.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module adds a formula to compute prorated quantity to invoice as extension of the module contract_variable_quantity
 [contract_variable_quantity](contract_variable_quantity/) | 14.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 14.0.1.2.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
-[subscription_oca](subscription_oca/) | 14.0.1.3.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Generate recurring invoices.
+[subscription_oca](subscription_oca/) | 14.0.2.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -8329,11 +8330,12 @@ addon | version | maintainers | summary
 [auth_api_key_group](auth_api_key_group/) | 14.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
 [auth_api_key_server_env](auth_api_key_server_env/) | 14.0.1.1.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
 [auth_dynamic_groups](auth_dynamic_groups/) | 14.0.1.0.0 |  | Have membership conditions for certain groups
-[auth_jwt](auth_jwt/) | 14.0.2.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication.
+[auth_jwt](auth_jwt/) | 14.0.2.1.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication.
 [auth_jwt_demo](auth_jwt_demo/) | 14.0.1.3.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for auth_jwt.
 [auth_ldaps](auth_ldaps/) | 14.0.1.0.1 |  | Allows to use LDAP over SSL authentication
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 14.0.1.0.0 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 14.0.1.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
+[auth_oidc_environment](auth_oidc_environment/) | 14.0.1.0.1 |  | This module allows to use server env for OIDC configuration
 [auth_saml](auth_saml/) | 14.0.1.1.2 |  | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 14.0.1.0.2 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 14.0.1.0.1 |  | Force uninvited users to use a good email for signup
@@ -9509,7 +9511,7 @@ addon | version | maintainers | summary
 [website_no_crawler](website_no_crawler/) | 14.0.1.2.0 |  | Disables robots.txt for indexing by webcrawlers like Google
 [website_odoo_debranding](website_odoo_debranding/) | 14.0.1.1.0 |  | Remove Odoo Branding from Website
 [website_plausible](website_plausible/) | 14.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Track website users using plausible
-[website_require_login](website_require_login/) | 14.0.1.0.0 |  | Website Login Required
+[website_require_login](website_require_login/) | 14.0.1.0.1 |  | Website Login Required
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 14.0.1.0.0 |  | Allow to select country in a dropdown
 
 [//]: # (end addons)
