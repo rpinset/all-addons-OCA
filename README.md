@@ -1367,16 +1367,16 @@ Date:   Thu Dec 28 12:50:42 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 7f1f49828daf9871c1245f2b6a8f2591a1f67413
+commit b5af052429c126a3ca01c7789247b59f1f7cc6db
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 4 07:38:34 2024 +0000
+Date:   Tue Mar 19 15:45:12 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (54 of 54 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-quality_control_team_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_team_oca/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
@@ -1409,9 +1409,9 @@ Date:   Mon Mar 4 08:14:27 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 1227e2a92dd0d34ce015843181159e0a81b9b39d
+commit 5a8ff2917b2b66b0d047ca32add45417130917f9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 15 13:20:53 2024 +0000
+Date:   Tue Mar 19 15:40:46 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1575,9 +1575,9 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 15eed3108a50ea8fa0a3c65d8dbe746ed748f2f3
+commit c52e9dc62f79ea7fc1e8d96fb70c53e39ad7a291
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:24:48 2024 +0000
+Date:   Thu Mar 21 13:05:23 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1661,9 +1661,9 @@ Date:   Fri Mar 15 13:25:27 2024 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 8c072f8eb35fe009086aefc33dff99dd79241829
+commit 0b4a0ec4cfdbe790824ca42fe8f772a8bb0e641d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 28 17:14:43 2024 +0000
+Date:   Tue Mar 19 14:47:24 2024 +0000
 
     [BOT] post-merge updates
 
