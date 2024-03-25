@@ -258,7 +258,7 @@ addon | version | maintainers | summary
 [account_move_template](account_move_template/) | 16.0.1.0.0 |  | Templates for recurring Journal Entries
 [account_netting](account_netting/) | 16.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
 [account_partner_required](account_partner_required/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds an option 'partner policy' on accounts
-[account_spread_cost_revenue](account_spread_cost_revenue/) | 16.0.1.0.0 |  | Spread costs and revenues over a custom period
+[account_spread_cost_revenue](account_spread_cost_revenue/) | 16.0.1.0.1 |  | Spread costs and revenues over a custom period
 [account_template_active](account_template_active/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Allow to disable / enable account template items (tax, fiscal position, account)
 [account_usability](account_usability/) | 16.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [base_vat_optional_vies](base_vat_optional_vies/) | 16.0.1.1.0 |  | Optional validation of VAT via VIES
@@ -308,7 +308,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 16.0.1.5.4 |  | OCA Financial Reports
-[account_tax_balance](account_tax_balance/) | 16.0.1.1.1 |  | Compute tax balances based on date range
+[account_tax_balance](account_tax_balance/) | 16.0.1.1.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 16.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [partner_statement](partner_statement/) | 16.0.1.0.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
@@ -510,7 +510,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_avatax_exemption_base](account_avatax_exemption_base/) | 16.0.1.0.0 |  | This application allows you to add exemptions base to Avatax
-[account_avatax_oca](account_avatax_oca/) | 16.0.1.1.7 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
+[account_avatax_oca](account_avatax_oca/) | 16.0.1.2.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
 [account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.1.2 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
@@ -799,7 +799,7 @@ addon | version | maintainers | summary
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 16.0.1.0.1 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 16.0.5.0.0 | [![Daniel-CA](https://github.com/Daniel-CA.png?size=30px)](https://github.com/Daniel-CA) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![omar7r](https://github.com/omar7r.png?size=30px)](https://github.com/omar7r) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Risk insurance partner information
-[sale_financial_risk](sale_financial_risk/) | 16.0.1.1.1 |  | Manage partner risk in sales orders
+[sale_financial_risk](sale_financial_risk/) | 16.0.1.1.2 |  | Manage partner risk in sales orders
 [sale_financial_risk_info](sale_financial_risk_info/) | 16.0.1.0.1 |  | Adds risk consumption info in sales orders.
 [sale_payment_sheet_financial_risk](sale_payment_sheet_financial_risk/) | 16.0.1.0.0 |  | Manage partner risk in sale payment sheet
 [stock_financial_risk](stock_financial_risk/) | 16.0.1.0.0 |  | Manage partner risk in stock moves
@@ -960,7 +960,7 @@ addon | version | maintainers | summary
 [account_move_base_import](account_move_base_import/) | 16.0.1.0.1 |  | Journal Entry base import
 [account_move_line_reconcile_manual](account_move_line_reconcile_manual/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manually reconcile Journal Items
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.1.2.10 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.1.2.11 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
@@ -1760,10 +1760,10 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 16.0.1.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 16.0.1.0.1 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 16.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
-[sale_elaboration](sale_elaboration/) | 16.0.1.2.0 |  | Set an elaboration for any sale line
+[sale_elaboration](sale_elaboration/) | 16.0.1.2.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 16.0.1.3.0 |  | Custom exceptions on sale order
 [sale_exception_holidays_public](sale_exception_holidays_public/) | 16.0.1.0.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Raise a sale exception if there is a commitment_date on the SO and this date is a public holidays for the shipping partner address
-[sale_fixed_discount](sale_fixed_discount/) | 16.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
+[sale_fixed_discount](sale_fixed_discount/) | 16.0.1.0.1 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 16.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_invoice_frequency](sale_invoice_frequency/) | 16.0.1.2.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Define the invoice frequency for customers
 [sale_last_price_info](sale_last_price_info/) | 16.0.1.0.0 |  | Product Last Price Info - Sale
@@ -1896,7 +1896,7 @@ addon | version | maintainers | summary
 [crm_partner_assign](crm_partner_assign/) | 16.0.0.1.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Assign a Partner to an Opportunity/Lead/Partner to indicate Partnership
 [crm_phonecall](crm_phonecall/) | 16.0.1.1.0 |  | CRM Phone Calls
 [crm_project_task](crm_project_task/) | 16.0.1.0.2 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Create tasks from lead or opportunity
-[crm_salesperson_planner](crm_salesperson_planner/) | 16.0.1.0.0 |  | Crm Salesperson Planner
+[crm_salesperson_planner](crm_salesperson_planner/) | 16.0.2.0.0 |  | Crm Salesperson Planner
 [crm_salesperson_planner_sale](crm_salesperson_planner_sale/) | 16.0.1.0.0 |  | Crm Salesperson Planner Sale
 [crm_security_group](crm_security_group/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add new group in Sales to show only CRM
 [crm_stage_probability](crm_stage_probability/) | 16.0.1.0.0 |  | Define fixed probability on the stages
@@ -2163,8 +2163,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_sold_by_delivery_week](product_sold_by_delivery_week/) | 16.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a field that graphically hints the weekly product sales
 [sale_comment_template](sale_comment_template/) | 16.0.1.0.1 |  | Comments texts templates on Sale documents
-[sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 16.0.1.0.0 |  | Hide details for sections in sale orders and invoices for reports and customer portal
-[sale_order_line_position](sale_order_line_position/) | 16.0.1.1.0 |  | Adds position number on sale order line.
+[sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 16.0.1.1.0 |  | Hide details for sections in sale orders and invoices for reports and customer portal
+[sale_order_line_position](sale_order_line_position/) | 16.0.1.2.0 |  | Adds position number on sale order line.
 [sale_order_product_recommendation_product_sold_by_delivery_week](sale_order_product_recommendation_product_sold_by_delivery_week/) | 16.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds the weekly sales field to the recommendation wizard
 [sale_order_report_product_image](sale_order_report_product_image/) | 16.0.1.0.0 |  | Show product images on Sale documents
 [sale_packaging_report](sale_packaging_report/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Packaging data in sale reports
@@ -2940,7 +2940,7 @@ addon | version | maintainers | summary
 [hr_employee_age](hr_employee_age/) | 16.0.1.0.1 |  | Age field for employee
 [hr_employee_birth_name](hr_employee_birth_name/) | 16.0.1.0.0 |  | Employee Birth Name
 [hr_employee_birthday_mail](hr_employee_birthday_mail/) | 16.0.1.0.0 |  | Automating birthday mail messages and fostering for a positive work environment.
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 16.0.1.1.6 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
+[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 16.0.1.1.7 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
 [hr_employee_digitized_signature](hr_employee_digitized_signature/) | 16.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Employee Digitized Signature
 [hr_employee_document](hr_employee_document/) | 16.0.1.0.0 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 16.0.1.0.2 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
@@ -4301,11 +4301,11 @@ addon | version | maintainers | summary
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.0 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.3 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.6 |  | Gestione dichiarazioni di intento
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.4.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.4.1 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 16.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 16.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 16.0.1.0.0 | [![andreampiovesana](https://github.com/andreampiovesana.png?size=30px)](https://github.com/andreampiovesana) | Crea collegamento tra i DDT e ordine di vendita/acquisto
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 16.0.1.0.5 |  | Fatture elettroniche
+[l10n_it_fatturapa](l10n_it_fatturapa/) | 16.0.1.0.6 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 16.0.1.0.2 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.0.6 |  | Ricezione fatture elettroniche
@@ -4811,12 +4811,12 @@ addon | version | maintainers | summary
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 16.0.1.1.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 16.0.3.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
-[l10n_ro_city](l10n_ro_city/) | 16.0.3.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
+[l10n_ro_city](l10n_ro_city/) | 16.0.3.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 16.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 16.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
-[l10n_ro_etransport](l10n_ro_etransport/) | 16.0.0.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
+[l10n_ro_etransport](l10n_ro_etransport/) | 16.0.0.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
+[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 16.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 16.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 16.0.2.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
@@ -4970,7 +4970,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.1.2.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.3.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.0.1 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.7.0 |  | AEAT modelo 347
@@ -4979,6 +4979,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.0.1 |  | AEAT - Comprobación de Calidad de datos identificativos
+[l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.1.0.0 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.1.0.1 | [![Abranes](https://github.com/Abranes.png?size=30px)](https://github.com/Abranes) [![Reyes4711-S73](https://github.com/Reyes4711-S73.png?size=30px)](https://github.com/Reyes4711-S73) | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.1.7.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
@@ -4998,6 +4999,7 @@ addon | version | maintainers | summary
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.0.3 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.2 |  | Punto de venta adaptado a la legislación española
+[l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 16.0.1.0.2 |  | Envío de pedidos del TPV al SII
 [l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.0 |  | Sistema de gestión de aceites industriales usados en España - Facturación
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.0 |  | Sistema de gestión de aceites industriales usados en España - Compras
@@ -5534,6 +5536,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 16.0.3.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Any Models
+[barcodes_generator_location](barcodes_generator_location/) | 16.0.1.0.0 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_package](barcodes_generator_package/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Product Packaging
 [barcodes_generator_product](barcodes_generator_product/) | 16.0.2.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Products (Templates and Variants)
 [product_barcode_constraint_per_company](product_barcode_constraint_per_company/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Change the product barcode constraint, allowing the same barcode for differents companies
@@ -5651,6 +5654,7 @@ addon | version | maintainers | summary
 [stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 16.0.1.0.1 |  | Use product packagings on packages
 [stock_receipt_lot_info](stock_receipt_lot_info/) | 16.0.1.1.0 |  | Be able to introduce more info on lot/serial number while processing a receipt.
 [stock_restrict_lot](stock_restrict_lot/) | 16.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
+[stock_rule_reserve_max_quantity](stock_rule_reserve_max_quantity/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allows to reserve max available quantity when a move comes from an stock rule
 [stock_split_picking](stock_split_picking/) | 16.0.1.0.4 |  | Split a picking in two not transferred pickings
 [stock_valuation_layer_usage](stock_valuation_layer_usage/) | 16.0.1.0.0 |  | Trace where has the stock valuation been used in, including the quantities taken.
 
@@ -5764,7 +5768,7 @@ addon | version | maintainers | summary
 [stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.1 |  | Try to reserve moves when goods enter in a location
 [stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.1 |  | Auto release moves after auto assign
 [stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.1 |  | Adds field for common destination moves
-[stock_move_location](stock_move_location/) | 16.0.1.2.2 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_location](stock_move_location/) | 16.0.1.2.3 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.1.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add packaging fields in the stock moves
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.1 |  | Add a MTS+MTO route
 [stock_packaging_calculator](stock_packaging_calculator/) | 16.0.1.0.1 |  | Compute product quantity to pick by packaging
@@ -5942,7 +5946,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 16.0.1.7.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
@@ -6010,10 +6014,10 @@ addon | version | maintainers | summary
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.0.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add the cutoff time to the release channel
 [stock_release_channel_partner_delivery_window](stock_release_channel_partner_delivery_window/) | 16.0.1.0.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_partner_public_holidays](stock_release_channel_partner_public_holidays/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add an option to exclude the public holidays when assigning th release channel
-[stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.3.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
+[stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.4.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_propagate_channel_picking](stock_release_channel_propagate_channel_picking/) | 16.0.1.0.0 |  | Allows to propagate the channel to every picking that is created from the original one.
 [stock_release_channel_shipment_advice](stock_release_channel_shipment_advice/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Plan shipment advices for ready and released pickings
-[stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Release channel with shipment lead time
+[stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Release channel with shipment lead time
 [stock_release_channel_show_volume](stock_release_channel_show_volume/) | 16.0.1.1.0 |  | Display volumes of stock release channels
 [stock_release_channel_show_weight](stock_release_channel_show_weight/) | 16.0.1.1.0 |  | Display weights of stock release channels
 [stock_storage_type](stock_storage_type/) | 16.0.1.0.6 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Manage packages and locations storage types
@@ -7115,9 +7119,10 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 16.0.2.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 16.0.2.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
-[mail_drop_target](mail_drop_target/) | 16.0.1.0.0 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_drop_target](mail_drop_target/) | 16.0.1.1.0 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 16.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_inline_css](mail_inline_css/) | 16.0.0.1.0 |  | Convert style tags in inline style in your mails
+[mail_layout_force](mail_layout_force/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 16.0.1.0.0 |  | Preview email templates in the browser
 [mail_optional_autofollow](mail_optional_autofollow/) | 16.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 16.0.1.0.1 |  | Choose to notify followers on mail.compose.message
@@ -7551,6 +7556,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [auth_admin_passkey](auth_admin_passkey/) | 16.0.1.0.0 |  | Allows system administrator to authenticate with any account
 [auth_api_key](auth_api_key/) | 16.0.1.0.0 |  | Authenticate http requests from an API key
+[auth_api_key_group](auth_api_key_group/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
 [auth_api_key_server_env](auth_api_key_server_env/) | 16.0.1.0.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
 [auth_jwt](auth_jwt/) | 16.0.1.1.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication.
 [auth_jwt_demo](auth_jwt_demo/) | 16.0.1.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for auth_jwt.
@@ -7786,7 +7792,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 16.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.0 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 16.0.1.5.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 16.0.1.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
 [base_tier_validation_formula](base_tier_validation_formula/) | 16.0.1.0.2 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 16.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
@@ -8638,6 +8644,7 @@ addon | version | maintainers | summary
 [web_field_numeric_formatting](web_field_numeric_formatting/) | 16.0.1.0.0 |  | Allow to render float and integer fields without thousands separator
 [web_group_expand](web_group_expand/) | 16.0.1.0.0 |  | Group Expand Buttons
 [web_help](web_help/) | 16.0.2.0.0 |  | Help Framework
+[web_hide_field_with_key](web_hide_field_with_key/) | 16.0.1.0.1 | [![franzpoize](https://github.com/franzpoize.png?size=30px)](https://github.com/franzpoize) | Hide fields for models
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 16.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 16.0.1.0.1 |  | Show a message box to users
 [web_ir_actions_act_window_page](web_ir_actions_act_window_page/) | 16.0.1.0.0 |  | Allows a developer to trigger a pager to show the previous or next next record in the form view
