@@ -944,7 +944,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 15.0.2.0.2 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.1.1 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.2.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 15.0.2.3.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
@@ -1838,7 +1838,8 @@ addon | version | maintainers | summary
 [sale_order_line_description](sale_order_line_description/) | 15.0.1.0.0 |  | Sale order line description
 [sale_order_line_input](sale_order_line_input/) | 15.0.1.0.2 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 15.0.1.2.0 |  | Adds a Sale Order Lines Menu
-[sale_order_line_price_history](sale_order_line_price_history/) | 15.0.2.0.1 |  | Sale order line price history
+[sale_order_line_note](sale_order_line_note/) | 15.0.1.0.0 |  | Note on sale order line
+[sale_order_line_price_history](sale_order_line_price_history/) | 15.0.2.0.2 |  | Sale order line price history
 [sale_order_line_remove](sale_order_line_remove/) | 15.0.1.0.0 |  | Allows removal of sale order lines from confirmed orders if not invoiced or received
 [sale_order_line_sequence](sale_order_line_sequence/) | 15.0.2.0.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_partner_restrict](sale_order_partner_restrict/) | 15.0.1.0.0 | [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Apply restrictions when selecting from the list of customers on SO.
@@ -1858,7 +1859,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.2.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.1.6.0 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.1.7.0 |  | Sale planner calendar
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
 [sale_product_multi_add](sale_product_multi_add/) | 15.0.1.0.0 |  | Sale Product Multi Add
@@ -2227,7 +2228,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_multicompany_reporting_currency](base_multicompany_reporting_currency/) | 15.0.1.0.1 |  | Adds the possibility to specify Multicompany Reporting Currency
-[product_sold_by_delivery_week](product_sold_by_delivery_week/) | 15.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a field that graphically hints the weekly product sales
+[product_sold_by_delivery_week](product_sold_by_delivery_week/) | 15.0.1.0.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a field that graphically hints the weekly product sales
 [sale_comment_template](sale_comment_template/) | 15.0.1.0.1 |  | Comments texts templates on Sale documents
 [sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 15.0.1.0.0 |  | Hide details for sections in sale orders and invoices for reports and customer portal
 [sale_multicompany_reporting_currency](sale_multicompany_reporting_currency/) | 15.0.1.0.2 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Adds Amount in multicompany reporting currency to Sale Order
@@ -2669,6 +2670,7 @@ addon | version | maintainers | summary
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.1 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 15.0.1.0.0 |  | Base module for connecting with Voxel
 [edi_voxel_sale_order_import_oca](edi_voxel_sale_order_import_oca/) | 15.0.1.0.0 |  | Import sale order from Voxel.
+[edi_voxel_sale_secondary_unit_oca](edi_voxel_sale_secondary_unit_oca/) | 15.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Map Voxel UoM to Sale Secondary UoM and Use Them
 [edi_voxel_secondary_unit_oca](edi_voxel_secondary_unit_oca/) | 15.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Add Voxel UoM code to Secondary UoM model
 [edi_voxel_stock_picking_oca](edi_voxel_stock_picking_oca/) | 15.0.1.0.2 |  | Sends stock picking report to Voxel.
 [edi_voxel_stock_picking_secondary_unit_oca](edi_voxel_stock_picking_secondary_unit_oca/) | 15.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Export Secondary UoMs Voxel Code in picking Voxel documents
@@ -4872,13 +4874,13 @@ addon | version | maintainers | summary
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
 [l10n_ro_address_extended](l10n_ro_address_extended/) | 15.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Extended Addresses
-[l10n_ro_city](l10n_ro_city/) | 15.0.3.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
+[l10n_ro_city](l10n_ro_city/) | 15.0.3.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 15.0.2.13.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
-[l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
+[l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
-[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
+[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 15.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 15.0.2.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
@@ -5041,7 +5043,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.1.2.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.3.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.9.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
@@ -5553,7 +5555,7 @@ addon | version | maintainers | summary
 [delivery_cttexpress](delivery_cttexpress/) | 15.0.1.1.0 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 15.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.2 |  | Multiple destinations for the same delivery method
-[delivery_package_number](delivery_package_number/) | 15.0.2.1.0 |  | Set or compute number of packages for a picking
+[delivery_package_number](delivery_package_number/) | 15.0.2.2.0 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 15.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_purchase](delivery_purchase/) | 15.0.1.1.0 |  | Delivery costs in purchases
 [delivery_state](delivery_state/) | 15.0.1.1.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
@@ -5682,6 +5684,7 @@ addon | version | maintainers | summary
 [stock_move_consu_location_from_putaway](stock_move_consu_location_from_putaway/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Use putaway location as source of move lines for consumables
 [stock_move_line_auto_fill](stock_move_line_auto_fill/) | 15.0.1.0.1 |  | Stock Move Line auto fill
 [stock_move_name_from_sale_line](stock_move_name_from_sale_line/) | 15.0.1.0.0 |  | Set stock move name from sale line name
+[stock_move_propagate_first_move](stock_move_propagate_first_move/) | 15.0.1.0.0 |  | This addon propagate the picking type of the original move to all next moves created from procurement
 [stock_move_quick_lot](stock_move_quick_lot/) | 15.0.1.0.0 |  | Set lot name and end date directly on picking operations
 [stock_no_negative](stock_no_negative/) | 15.0.1.0.0 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.2 |  | Do not reserve quantity with assigned owner
@@ -5840,7 +5843,7 @@ addon | version | maintainers | summary
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
-[stock_move_location](stock_move_location/) | 15.0.1.3.3 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_location](stock_move_location/) | 15.0.1.3.4 |  | This module allows to move all stock in a stock location to an other one.
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 15.0.1.0.1 |  | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.0 |  | Link Reordering rules to stock moves
@@ -6023,7 +6026,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 15.0.1.14.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 15.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 15.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6565,7 +6568,7 @@ addon | version | maintainers | summary
 [nutritional_info_stock_lot](nutritional_info_stock_lot/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Nutritional information for lots.
 [product_abc_classification](product_abc_classification/) | 15.0.1.0.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Includes ABC classification for inventory management
 [product_abc_classification_sale](product_abc_classification_sale/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Includes ABC classification for inventory management
-[product_assortment](product_assortment/) | 15.0.2.0.0 |  | Adds the ability to manage products assortment
+[product_assortment](product_assortment/) | 15.0.2.0.1 |  | Adds the ability to manage products assortment
 [product_attribute_archive](product_attribute_archive/) | 15.0.1.0.1 |  | Add an active field on product attributes
 [product_attribute_value_menu](product_attribute_value_menu/) | 15.0.1.1.1 |  | Product attributes values tree and form. Import attribute values.
 [product_category_active](product_category_active/) | 15.0.1.0.1 |  | Add option to archive product categories
