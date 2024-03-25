@@ -709,7 +709,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_credit_control](account_credit_control/) | 12.0.3.0.4 |  | Account Credit Control
+[account_credit_control](account_credit_control/) | 12.0.3.0.5 |  | Account Credit Control
 [account_credit_control_queue_job](account_credit_control_queue_job/) | 12.0.2.0.0 |  | This addon adds the opportunity to run some credit control tasks in jobs
 [account_financial_risk](account_financial_risk/) | 12.0.3.1.0 |  | Manage customer risk
 [account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 12.0.2.2.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
@@ -3441,7 +3441,7 @@ addon | version | maintainers | summary
 [l10n_nl_tax_invoice_basis](l10n_nl_tax_invoice_basis/) | 12.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Enable invoice basis on tax according to the Dutch law
 [l10n_nl_tax_statement](l10n_nl_tax_statement/) | 12.0.2.0.3 |  | Netherlands BTW Statement
 [l10n_nl_tax_statement_icp](l10n_nl_tax_statement_icp/) | 12.0.1.1.0 |  | Netherlands ICP Statement
-[l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 12.0.1.1.0 |  | Export XAF auditfiles for Dutch tax authorities
+[l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 12.0.1.1.1 |  | Export XAF auditfiles for Dutch tax authorities
 
 [//]: # (end addons)
 

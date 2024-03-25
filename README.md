@@ -178,9 +178,9 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 70c766f50a663cce4959086fa12986e175da12fb
+commit 57a9eff338a69e74819ef845a032773a1a9b8d8f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 14 08:14:54 2024 +0000
+Date:   Fri Mar 22 07:37:08 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -206,16 +206,11 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 7898015b3f518bcd4f5a7c1ed62d5b995b1d1a59
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 14:53:55 2024 +0000
+commit 99d34d9ef054b48dbc1335b5ab42abbb12506f57
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 23 15:14:36 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 94.7% (179 of 189 strings)
-    
-    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -955,11 +950,16 @@ Date:   Tue Nov 19 21:06:31 2019 +0100
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit 7848b0c2e189d25d2bd8f25c0e9b094e5e45aae9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 19 21:24:09 2024 +0000
+commit 6ab5da60eeaeb3025b8ae8f5aec50bce6874a52b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Mar 25 07:50:16 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-netherlands-12.0/l10n-netherlands-12.0-l10n_nl_xaf_auditfile_export
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-netherlands-12-0/l10n-netherlands-12-0-l10n_nl_xaf_auditfile_export/
 
 
 ## l10n-norway
