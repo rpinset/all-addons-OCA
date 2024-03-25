@@ -8,6 +8,8 @@
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
+# generated from manifests external_dependencies
+Avalara
 # From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 # From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
@@ -15,6 +17,9 @@
 # From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
 # From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
 # From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
+# generated from manifests external_dependencies
+lxml
+unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
@@ -115,6 +120,9 @@ pdfminer.six==20220319
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
+# generated from manifests external_dependencies
+cryptography
+unidecode
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
@@ -155,6 +163,7 @@ pdfminer.six==20220319
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec
+python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies

@@ -394,6 +394,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_avatax_oca](account_avatax_oca/) | 17.0.1.1.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
+[account_avatax_sale_oca](account_avatax_sale_oca/) | 17.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
+[account_avatax_website_sale](account_avatax_website_sale/) | 17.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 17.0.1.0.0 |  | Account Fiscal Position Partner Type
 [l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.0.0 |  | L10n EU OSS OCA
@@ -738,6 +741,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_banking_mandate](account_banking_mandate/) | 17.0.1.0.0 |  | Banking mandates
+[account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.0 |  | Create SEPA XML files for Credit Transfers
 [account_payment_mode](account_payment_mode/) | 17.0.1.0.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 17.0.1.0.0 |  | Account Payment Order
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.0 |  | Adds payment mode on partners and invoices
@@ -4219,6 +4224,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_es_aeat](l10n_es_aeat/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.0 |  | AEAT modelo 111
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
@@ -5038,7 +5046,12 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
+[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
 
@@ -5319,6 +5332,7 @@ addon | version | maintainers | summary
 [product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
 [product_sequence](product_sequence/) | 17.0.1.0.0 |  | Product Sequence
 [product_state](product_state/) | 17.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
+[product_supplierinfo_archive](product_supplierinfo_archive/) | 17.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 
 [//]: # (end addons)
 
@@ -5533,6 +5547,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
+[project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
+[project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_type](project_type/) | 17.0.1.0.0 |  | Project Types
 
 [//]: # (end addons)
 
@@ -5831,9 +5848,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 17.0.1.0.0 |  | Base Search Mail Content
-[mail_activity_board](mail_activity_board/) | 17.0.1.0.0 |  | Add Activity Boards
-[mail_outbound_static](mail_outbound_static/) | 17.0.1.0.0 |  | Allows you to configure the from header for a mail server.
-[mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.0 |  | Forwarding notifications for partners
+[mail_activity_board](mail_activity_board/) | 17.0.1.0.1 |  | Add Activity Boards
+[mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
+[mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
 
 [//]: # (end addons)
@@ -5880,7 +5897,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[fs_attachment](fs_attachment/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
 [fs_storage](fs_storage/) | 17.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
+[image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model
 
 [//]: # (end addons)
 
@@ -6355,7 +6374,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_technical_features](base_technical_features/) | 17.0.1.0.0 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.1.5.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
 [date_range](date_range/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
@@ -7201,6 +7220,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [website_google_tag_manager](website_google_tag_manager/) | 17.0.1.0.0 |  | Add support for Google Tag Manager
+[website_odoo_debranding](website_odoo_debranding/) | 17.0.1.0.0 |  | Remove Odoo Branding from Website
 
 [//]: # (end addons)
 
