@@ -80,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit fd03fb3ddb175a42e05bd8f4fc5ad95c2fdd093f
+commit ee85a8c29f5dda4cd028ecda2dc4af1b8a16073d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 12 10:45:26 2024 +0000
+Date:   Thu Mar 28 20:39:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 29.9% (82 of 274 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -136,9 +136,9 @@ Date:   Fri Feb 23 09:07:10 2024 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit b1252a04a1ffa1945bc7db66018bedb095d81c18
+commit 2119a28a7a66cff3a4c22fa40307a30b2c2be917
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:27:53 2023 +0000
+Date:   Tue Mar 26 12:16:05 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -421,16 +421,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b99bbae28482b24f854f3197e4ddf1f409950504
+commit 220bc445cd273a94320e9ea689b0b59622db2c91
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 15 13:40:22 2024 +0000
+Date:   Thu Mar 28 20:39:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (154 of 154 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_blanket_order/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
 
 
 ## crm
@@ -950,16 +950,16 @@ Date:   Tue Nov 19 21:06:31 2019 +0100
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit 6ab5da60eeaeb3025b8ae8f5aec50bce6874a52b
+commit 21bf97b7cf78f68f8e5459c98b8a01dda09346fd
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Mar 25 07:50:16 2024 +0000
+Date:   Tue Mar 26 14:20:57 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-netherlands-12.0/l10n-netherlands-12.0-l10n_nl_xaf_auditfile_export
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-netherlands-12-0/l10n-netherlands-12-0-l10n_nl_xaf_auditfile_export/
+    Translation: l10n-netherlands-12.0/l10n-netherlands-12.0-l10n_nl_tax_statement
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-netherlands-12-0/l10n-netherlands-12-0-l10n_nl_tax_statement/
 
 
 ## l10n-norway
@@ -1000,9 +1000,9 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 4c65a6e2ab904c866edaff76cb6e6bc3ee8cc299
+commit 0af9a85d8eff4be7cd02e082cc05baad23006304
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Mar 17 22:29:27 2024 +0000
+Date:   Wed Mar 27 16:21:32 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1253,16 +1253,16 @@ Date:   Mon Mar 4 08:14:23 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3cad611fa9218bd435ae71bd613b9d702c597184
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 20 07:14:50 2024 +0000
+commit 91333608df0f1ac7025862c79c7695ec2c50f41c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Mar 28 20:39:44 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (32 of 32 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_line_price_history/it/
 
 
 ## purchase-reporting
@@ -1447,16 +1447,16 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 0433d608b86404cba04a09c65e94d84bf88ff6a1
+commit 9a0f99f080f0b42429ba0bf4d62d57d3c6156765
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 15 13:26:06 2024 +0000
+Date:   Thu Mar 28 20:39:47 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.5% (87 of 94 strings)
+    Currently translated at 29.1% (23 of 79 strings)
     
-    Translation: reporting-engine-12.0/reporting-engine-12.0-bi_view_editor
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-bi_view_editor/it/
+    Translation: reporting-engine-12.0/reporting-engine-12.0-kpi
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-kpi/it/
 
 
 ## report-print-send

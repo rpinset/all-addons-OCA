@@ -3439,7 +3439,7 @@ addon | version | maintainers | summary
 [l10n_nl_postcode](l10n_nl_postcode/) | 12.0.1.0.0 |  | Dutch postcode validation for Partners
 [l10n_nl_postcodeapi](l10n_nl_postcodeapi/) | 12.0.2.0.0 | [![NL66278](https://github.com/NL66278.png?size=30px)](https://github.com/NL66278) | Autocomplete Dutch addresses using PostcodeApi.nu
 [l10n_nl_tax_invoice_basis](l10n_nl_tax_invoice_basis/) | 12.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Enable invoice basis on tax according to the Dutch law
-[l10n_nl_tax_statement](l10n_nl_tax_statement/) | 12.0.2.0.3 |  | Netherlands BTW Statement
+[l10n_nl_tax_statement](l10n_nl_tax_statement/) | 12.0.2.0.4 |  | Netherlands BTW Statement
 [l10n_nl_tax_statement_icp](l10n_nl_tax_statement_icp/) | 12.0.1.1.0 |  | Netherlands ICP Statement
 [l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 12.0.1.1.1 |  | Export XAF auditfiles for Dutch tax authorities
 
@@ -3638,6 +3638,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 12.0.1.3.4 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_batuz_extra_data](l10n_es_ticketbai_batuz_extra_data/) | 12.0.1.0.1 | [![xAdrianC-Kernet](https://github.com/xAdrianC-Kernet.png?size=30px)](https://github.com/xAdrianC-Kernet) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - Extra data
 [l10n_es_ticketbai_extra_data](l10n_es_ticketbai_extra_data/) | 12.0.1.0.1 | [![xAdrianC-Kernet](https://github.com/xAdrianC-Kernet.png?size=30px)](https://github.com/xAdrianC-Kernet) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Extra data
+[l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 12.0.1.0.0 | [![Binovo](https://github.com/Binovo.png?size=30px)](https://github.com/Binovo) | TicketBAI - OSS Support
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 12.0.1.0.6 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 12.0.1.0.0 |  | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 12.0.1.7.0 |  | Libro de IVA
