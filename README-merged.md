@@ -1360,7 +1360,7 @@ addon | version | maintainers | summary
 [base_export_async](base_export_async/) | 14.0.1.0.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 14.0.1.0.2 |  | Import CSV files in the background
 [export_async_schedule](export_async_schedule/) | 14.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Generate and send exports by emails on a schedule
-[queue_job](queue_job/) | 14.0.3.5.3 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 14.0.3.5.4 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 14.0.1.0.1 |  | Job Queue Batch
 [queue_job_context](queue_job_context/) | 14.0.1.0.1 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Queue Job, prepare context before enqueue keys
 [queue_job_cron](queue_job_cron/) | 14.0.2.0.0 |  | Scheduled Actions as Queue Jobs
@@ -1980,7 +1980,7 @@ addon | version | maintainers | summary
 [sale_product_brand_exception](sale_product_brand_exception/) | 14.0.1.0.0 |  | Define rules for sale order and brands
 [sale_product_category_menu](sale_product_category_menu/) | 14.0.1.0.1 |  | Shows 'Product Categories' menu item in Sales
 [sale_product_multi_add](sale_product_multi_add/) | 14.0.1.0.2 |  | Sale Product Multi Add
-[sale_product_rating_verified](sale_product_rating_verified/) | 14.0.1.0.1 |  | Verify if a user has previously bought a product
+[sale_product_rating_verified](sale_product_rating_verified/) | 14.0.1.0.2 |  | Verify if a user has previously bought a product
 [sale_product_seasonality](sale_product_seasonality/) | 14.0.1.2.0 |  | Integrates rules for products' seasonal availability with sales
 [sale_product_set](sale_product_set/) | 14.0.1.5.5 |  | Sale product set
 [sale_product_set_packaging_qty](sale_product_set_packaging_qty/) | 14.0.1.1.0 |  | Manage packaging and quantities on product set lines
@@ -1996,7 +1996,7 @@ addon | version | maintainers | summary
 [sale_quotation_number](sale_quotation_number/) | 14.0.2.0.1 |  | Different sequence for sale quotations
 [sale_quotation_template_product_multi_add](sale_quotation_template_product_multi_add/) | 14.0.1.0.1 |  | Feature to add multiple products to quotation template
 [sale_rental](sale_rental/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manage Rental of Products
-[sale_restricted_qty](sale_restricted_qty/) | 14.0.1.1.2 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | Sale order min quantity
+[sale_restricted_qty](sale_restricted_qty/) | 14.0.1.1.3 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Sale order min quantity
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 14.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_start_end_dates](sale_start_end_dates/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_delivery_address](sale_stock_delivery_address/) | 14.0.1.0.3 |  | Sale Stock Delivery Address
@@ -2010,7 +2010,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 14.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 14.0.1.1.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_transaction_form_link](sale_transaction_form_link/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to display a link to payment transactions on Sale Order form view.
-[sale_triple_discount](sale_triple_discount/) | 14.0.1.0.0 |  | Manage triple discount on sale order lines
+[sale_triple_discount](sale_triple_discount/) | 14.0.2.0.0 |  | Manage triple discount on sale order lines
 [sale_validity](sale_validity/) | 14.0.1.0.2 |  | Set a default validity delay on quotations
 [sale_wishlist](sale_wishlist/) | 14.0.1.0.2 |  | Handle sale wishlist for partners
 [sales_team_security](sales_team_security/) | 14.0.2.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
@@ -2700,7 +2700,7 @@ addon | version | maintainers | summary
 [website_sale_filter_product_brand](website_sale_filter_product_brand/) | 14.0.1.0.2 |  | Website Sale Filter Product Brand
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 14.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 14.0.1.1.0 |  | Hide product prices on the shop
-[website_sale_infinite_scroll](website_sale_infinite_scroll/) | 14.0.1.0.1 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | eCommerce Infinite Scroll
+[website_sale_infinite_scroll](website_sale_infinite_scroll/) | 14.0.1.0.2 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | eCommerce Infinite Scroll
 [website_sale_invoice_address](website_sale_invoice_address/) | 14.0.1.0.1 |  | Set e-Commerce sale orders invoice address as in backend
 [website_sale_order_type](website_sale_order_type/) | 14.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | This module allows sale_order_type to work with website_sale.
 [website_sale_payment_term_acquirer](website_sale_payment_term_acquirer/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | eCommerce Payment Term Acquirer
@@ -3210,7 +3210,7 @@ addon | version | maintainers | summary
 [hr_timesheet_purchase_order](hr_timesheet_purchase_order/) | 14.0.1.1.0 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | HR Timesheet Purchase Order
 [hr_timesheet_report](hr_timesheet_report/) | 14.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Generate Timesheet Report from Task Logs
 [hr_timesheet_report_milestone](hr_timesheet_report_milestone/) | 14.0.1.0.0 |  | Extend Timesheet by adding Milestone
-[hr_timesheet_sheet](hr_timesheet_sheet/) | 14.0.1.4.2 |  | Timesheet Sheets, Activities
+[hr_timesheet_sheet](hr_timesheet_sheet/) | 14.0.1.4.3 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_activity](hr_timesheet_sheet_activity/) | 14.0.1.0.0 |  | Automatic activities related to submission and review of timesheet sheets
 [hr_timesheet_sheet_attendance](hr_timesheet_sheet_attendance/) | 14.0.1.0.0 |  | HR Timesheet Sheet Attendance
 [hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 14.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
@@ -3305,7 +3305,7 @@ addon | version | maintainers | summary
 [hr_employee_service](hr_employee_service/) | 14.0.1.2.0 |  | Employee service information & duration
 [hr_employee_service_contract](hr_employee_service_contract/) | 14.0.1.0.0 |  | Employee service information & duration based on employee's contracts
 [hr_employee_ssn](hr_employee_ssn/) | 14.0.1.0.0 |  | View/edit employee's SSN & SIN fields
-[hr_job_category](hr_job_category/) | 14.0.1.0.0 |  | Adds tags to employee through contract and job position
+[hr_job_category](hr_job_category/) | 14.0.1.0.1 |  | Adds tags to employee through contract and job position
 [hr_maintenance_workspace](hr_maintenance_workspace/) | 14.0.1.0.0 | [![valentincastravete](https://github.com/valentincastravete.png?size=30px)](https://github.com/valentincastravete) [![JorgeQuinteros](https://github.com/JorgeQuinteros.png?size=30px)](https://github.com/JorgeQuinteros) | Allows to assign equipments and employees to workspaces.
 [hr_org_chart_overview](hr_org_chart_overview/) | 14.0.1.0.1 |  | Organizational Chart Overview
 [hr_period](hr_period/) | 14.0.1.0.0 |  | Add payroll periods
@@ -3627,6 +3627,7 @@ addon | version | maintainers | summary
 [account_payment_other_company](account_payment_other_company/) | 14.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Create Payments for Other Companies
 [base_multi_company](base_multi_company/) | 14.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
 [company_dependent_attribute](company_dependent_attribute/) | 14.0.1.0.0 |  | Display company dependent attribute on fields
+[company_dependent_flag](company_dependent_flag/) | 14.0.1.0.0 |  | Apply css style to company dependent fields
 [intercompany_shared_contact](intercompany_shared_contact/) | 14.0.1.1.2 |  | User of each company are contact of a company partner. All child address of a company are automatically shared
 [ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 14.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [login_all_company](login_all_company/) | 14.0.1.0.1 |  | Access all your companies when you log in
@@ -4419,7 +4420,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [datev_export](datev_export/) | 14.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
-[datev_export_xml](datev_export_xml/) | 14.0.1.0.1 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
+[datev_export_xml](datev_export_xml/) | 14.0.1.0.2 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [l10n_de_country_states](l10n_de_country_states/) | 14.0.1.0.0 |  | German Country States
 [l10n_de_holidays](l10n_de_holidays/) | 14.0.1.0.2 |  | Holidays for Germany
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 14.0.1.0.0 |  | NUTS specific options for German
@@ -4703,7 +4704,7 @@ addon | version | maintainers | summary
 [l10n_it_central_journal](l10n_it_central_journal/) | 14.0.1.0.1 |  | ITA - Libro giornale
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.1.15 |  | Gestione dichiarazioni di intento
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.3.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.3.3 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 14.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_customer_code](l10n_it_delivery_note_customer_code/) | 14.0.1.2.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Product Customer code and name for delivery note
@@ -5022,7 +5023,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_nl_account_tax_unece](l10n_nl_account_tax_unece/) | 14.0.1.0.0 |  | Auto-configure UNECE params on Dutch taxes
+[l10n_nl_account_tax_unece](l10n_nl_account_tax_unece/) | 14.0.1.1.1 |  | Auto-configure UNECE params on Dutch taxes
 [l10n_nl_bank](l10n_nl_bank/) | 14.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_bsn](l10n_nl_bsn/) | 14.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Burgerservicenummer (BSN) for Partners
 [l10n_nl_business_document_import](l10n_nl_business_document_import/) | 14.0.1.0.0 | [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Adapt the module base_business_document_import for the Netherlands
@@ -5896,7 +5897,7 @@ addon | version | maintainers | summary
 [base_delivery_carrier_files](base_delivery_carrier_files/) | 14.0.1.0.2 |  | Base module for creation of delivery carrier files
 [base_delivery_carrier_label](base_delivery_carrier_label/) | 14.0.1.3.1 |  | Base module for carrier labels
 [carrier_account_environment](carrier_account_environment/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Configure carriers with server_environment_files
-[delivery_auto_refresh](delivery_auto_refresh/) | 14.0.1.1.2 |  | Auto-refresh delivery price in sales orders
+[delivery_auto_refresh](delivery_auto_refresh/) | 14.0.1.1.3 |  | Auto-refresh delivery price in sales orders
 [delivery_carrier_agency](delivery_carrier_agency/) | 14.0.1.0.1 |  | Add a model for Carrier Agencies
 [delivery_carrier_category](delivery_carrier_category/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Adds a category to delivery carriers in order to help users classifying them
 [delivery_carrier_city](delivery_carrier_city/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates delivery with base_address_city
@@ -6320,13 +6321,13 @@ addon | version | maintainers | summary
 [stock_reserve_rule](stock_reserve_rule/) | 14.0.1.3.0 |  | Configure reservation rules by location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 14.0.1.0.0 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 14.0.1.0.1 |  | Get product quantities in a secondary unit
-[stock_vertical_lift](stock_vertical_lift/) | 14.0.1.2.0 |  | Provides the core for integration with Vertical Lifts
+[stock_vertical_lift](stock_vertical_lift/) | 14.0.1.3.0 |  | Provides the core for integration with Vertical Lifts
 [stock_vertical_lift_empty_tray_check](stock_vertical_lift_empty_tray_check/) | 14.0.1.0.2 |  | Checks if the tray is actually empty.
 [stock_vertical_lift_kardex](stock_vertical_lift_kardex/) | 14.0.1.1.0 |  | Integrate with Kardex Remstar Vertical Lifts
 [stock_vertical_lift_packaging_type](stock_vertical_lift_packaging_type/) | 14.0.1.0.0 |  | Provides integration with Vertical Lifts and packaging types
 [stock_vertical_lift_qty_by_packaging](stock_vertical_lift_qty_by_packaging/) | 14.0.1.0.1 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
 [stock_vertical_lift_server_env](stock_vertical_lift_server_env/) | 14.0.1.0.0 |  | Server Environment layer for Vertical Lift
-[stock_vertical_lift_storage_type](stock_vertical_lift_storage_type/) | 14.0.1.0.0 |  | Compatibility layer for storage types on vertical lifts
+[stock_vertical_lift_storage_type](stock_vertical_lift_storage_type/) | 14.0.1.1.0 |  | Compatibility layer for storage types on vertical lifts
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 14.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
@@ -6482,7 +6483,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 14.0.1.23.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 14.0.1.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 14.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 14.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 14.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 14.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6543,7 +6544,7 @@ addon | version | maintainers | summary
 [delivery_carrier_preference](delivery_carrier_preference/) | 14.0.1.1.2 |  | Advanced selection of preferred shipping methods
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 14.0.1.2.0 |  | Get delivery method used in sales orders from warehouse
 [delivery_preference_glue_stock_picking_group](delivery_preference_glue_stock_picking_group/) | 14.0.1.0.0 |  | Fix Delivery preferences module on grouping picking
-[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.1.1 |  | Integration between Sales and Available to Promise Release
+[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
 [shopfloor](shopfloor/) | 14.0.4.11.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
@@ -6593,7 +6594,7 @@ addon | version | maintainers | summary
 [stock_picking_consolidation_priority](stock_picking_consolidation_priority/) | 14.0.1.1.0 |  | Raise priority of all transfers for a chain when started
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 14.0.1.1.0 |  | Define different shipping policies according to picking type
 [stock_picking_type_shipping_policy_group_by](stock_picking_type_shipping_policy_group_by/) | 14.0.1.0.0 |  | Glue module for Picking Type Shipping Policy and Group Transfers by Partner and Carrier
-[stock_reception_screen](stock_reception_screen/) | 14.0.1.0.1 |  | Dedicated screen to receive/scan goods.
+[stock_reception_screen](stock_reception_screen/) | 14.0.1.0.2 |  | Dedicated screen to receive/scan goods.
 [stock_reception_screen_measuring_device](stock_reception_screen_measuring_device/) | 14.0.1.0.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Allow to use a measuring device from a reception screen.for packaging measurement
 [stock_reception_screen_qty_by_packaging](stock_reception_screen_qty_by_packaging/) | 14.0.1.1.0 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
 [stock_release_channel](stock_release_channel/) | 14.0.2.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
