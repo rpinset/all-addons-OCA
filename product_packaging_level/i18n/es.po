@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-10-12 15:36+0000\n"
+"PO-Revision-Date: 2024-03-27 15:35+0000\n"
 "Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -41,6 +41,11 @@ msgstr "Creado por"
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__create_date
 msgid "Created on"
 msgstr "Creado el"
+
+#. module: product_packaging_level
+#: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__default_lang_id
+msgid "Default Language"
+msgstr "Idioma por Defecto"
 
 #. module: product_packaging_level
 #: model:product.packaging.level,name:product_packaging_level.product_packaging_level_default
@@ -79,6 +84,15 @@ msgstr ""
 "determinado ({})."
 
 #. module: product_packaging_level
+#: model_terms:ir.ui.view,arch_db:product_packaging_level.view_product_packaging_level_form
+msgid ""
+"Language option for packaging names used in case policy names is packaging "
+"by levels"
+msgstr ""
+"Opción de idioma para los nombres de embalaje utilizados en caso de que los "
+"nombres de política sea el embalaje por niveles"
+
+#. module: product_packaging_level
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level____last_update
 msgid "Last Modified on"
 msgstr "Última modificación el"
@@ -92,11 +106,6 @@ msgstr "Última actualización por"
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
-
-#. module: product_packaging_level
-#: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__level_sequence
-msgid "Level Sequence"
-msgstr "Secuencia de niveles"
 
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_product_packaging_level
@@ -135,6 +144,7 @@ msgstr "Tipo de paquete Nombre"
 
 #. module: product_packaging_level
 #: model_terms:ir.ui.view,arch_db:product_packaging_level.product_packaging_tree_view
+#: model_terms:ir.ui.view,arch_db:product_packaging_level.view_product_packaging_add_type_form
 msgid "Packaging"
 msgstr "Empaquetado"
 
@@ -158,6 +168,7 @@ msgstr ""
 
 #. module: product_packaging_level
 #: model:ir.model,name:product_packaging_level.model_product_packaging
+#: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__name
 msgid "Product Packaging"
 msgstr "Empaquetado de producto"
 
@@ -175,6 +186,7 @@ msgid "Qty per package level"
 msgstr "Cantidad por tipo de paquete"
 
 #. module: product_packaging_level
+#: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging__sequence
 #: model:ir.model.fields,field_description:product_packaging_level.field_product_packaging_level__sequence
 msgid "Sequence"
 msgstr "Secuencia"
@@ -183,6 +195,11 @@ msgstr "Secuencia"
 #: model:ir.model,name:product_packaging_level.model_stock_package_type
 msgid "Stock package type"
 msgstr "Tipo de empaquetado de existencias"
+
+#. module: product_packaging_level
+#: model:ir.model.fields,help:product_packaging_level.field_product_packaging__sequence
+msgid "The first in the sequence is the default one."
+msgstr "El primero de la secuencia es el predeterminado."
 
 #. module: product_packaging_level
 #. odoo-python
@@ -207,9 +224,12 @@ msgid ""
 "group_tracking_lot')- user defined: free text value defined"
 msgstr ""
 "config para establecer el nombre del embalaje del producto. Tres opciones:- "
-"El nombre de nivel de paquete (por defecto)- El nombre de tipo de paquete ("
-"si groups='stock.group_tracking_lot')- definido por el usuario: valor de "
+"El nombre de nivel de paquete (por defecto)- El nombre de tipo de paquete "
+"(si groups='stock.group_tracking_lot')- definido por el usuario: valor de "
 "texto libre definido"
+
+#~ msgid "Level Sequence"
+#~ msgstr "Secuencia de niveles"
 
 #~ msgid "Level sequence"
 #~ msgstr "Tipo de secuencia"

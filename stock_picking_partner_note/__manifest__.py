@@ -3,7 +3,7 @@
 
 {
     "name": "Stock Picking Partner Note",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "development_status": "Beta",
     "category": "Product",
     "summary": "Add partner notes on picking",
@@ -18,6 +18,7 @@
         "views/stock_picking_type.xml",
         "views/stock_picking_note.xml",
         "views/stock_picking_partner_note_menus.xml",
+        "views/res_config_settings.xml",
     ],
     "installable": True,
     "auto_install": False,
