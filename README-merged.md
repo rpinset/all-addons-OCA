@@ -260,7 +260,7 @@ addon | version | maintainers | summary
 [account_spread_cost_revenue](account_spread_cost_revenue/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Spread costs and revenues over a custom period
 [account_usability](account_usability/) | 15.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [base_vat_optional_vies](base_vat_optional_vies/) | 15.0.1.1.0 |  | Optional validation of VAT via VIES
-[product_category_tax](product_category_tax/) | 15.0.1.1.1 |  | Configure taxes in the product category
+[product_category_tax](product_category_tax/) | 15.0.1.1.2 |  | Configure taxes in the product category
 [stock_account_no_auto_reconcile](stock_account_no_auto_reconcile/) | 15.0.1.0.0 |  | Do not try to reconcile stock interim related JE
 
 [//]: # (end addons)
@@ -1274,7 +1274,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 15.0.1.0.1 |  | Asynchronous export with job queue
-[queue_job](queue_job/) | 15.0.2.3.5 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 15.0.2.3.7 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 15.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 15.0.2.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 15.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -2351,6 +2351,7 @@ addon | version | maintainers | summary
 [event_sale_reservation](event_sale_reservation/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow selling event registrations before the event exists
 [event_sale_session](event_sale_session/) | 15.0.1.0.0 |  | Sell Event Sessions
 [event_session](event_session/) | 15.0.1.1.0 |  | Sessions in events
+[event_stage_cancelled](event_stage_cancelled/) | 15.0.1.0.0 |  | Event cancellation workflows
 [event_track_location_overlap](event_track_location_overlap/) | 15.0.1.0.0 |  | Restrict event track location overlapping
 [partner_event](partner_event/) | 15.0.1.0.5 |  | Link partner to events
 [sale_crm_event_reservation](sale_crm_event_reservation/) | 15.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Combine event reservations, opportunities and quotations
@@ -2466,6 +2467,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_preview](attachment_preview/) | 15.0.1.0.0 |  | Preview attachments supported by Viewer.js
 [document_page](document_page/) | 15.0.1.5.0 |  | Document Page
+[document_page_access_group](document_page_access_group/) | 15.0.1.0.0 |  | Choose groups to access document pages
 [document_page_approval](document_page_approval/) | 15.0.1.1.0 |  | Document Page Approval
 [document_page_group](document_page_group/) | 15.0.1.0.1 |  | Define access groups on documents
 [document_page_project](document_page_project/) | 15.0.1.0.0 |  | This module links document pages to projects
@@ -2518,11 +2520,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 15.0.1.11.0 |  | Document Management System for Odoo
+[dms](dms/) | 15.0.1.12.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
-[dms_field](dms_field/) | 15.0.1.2.0 |  | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 15.0.1.2.2 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
+[dms_user_role](dms_user_role/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
 [hr_dms_field](hr_dms_field/) | 15.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add dms field for employees
 
 [//]: # (end addons)
@@ -5031,7 +5034,7 @@ addon | version | maintainers | summary
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Impresión de pagaré de Cajamar en A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 15.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
-[delivery_seur](delivery_seur/) | 15.0.1.0.0 |  | Integrate SEUR webservice
+[delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 15.0.1.0.6 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -5617,7 +5620,8 @@ addon | version | maintainers | summary
 [stock_barcodes](stock_barcodes/) | 15.0.2.0.0 |  | It provides read barcode on stock operations.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.2.0.0 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.0 |  | It provides read barcodes on stock operations from batch pickings.
-[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.3.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
+[stock_barcodes_picking_batch_revision](stock_barcodes_picking_batch_revision/) | 15.0.1.0.0 |  | It provides batch pickings revision from other users.
+[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.4.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
 [stock_picking_product_barcode_report_secondary_unit](stock_picking_product_barcode_report_secondary_unit/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Set by default the maximum quantity of labels to print.
 
 [//]: # (end addons)
@@ -8738,7 +8742,7 @@ addon | version | maintainers | summary
 [web_m2x_options_manager](web_m2x_options_manager/) | 15.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 15.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 15.0.1.1.0 |  | Send notification messages to user
-[web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.3 |  | Web Pivot Computed Measure
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.4 |  | Web Pivot Computed Measure
 [web_pwa_oca](web_pwa_oca/) | 15.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
 [web_refresher](web_refresher/) | 15.0.2.0.1 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 15.0.1.0.1 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Remember the tree columns' widths across sessions.

@@ -108,6 +108,8 @@ odoo.define("dms.DmsTreeController", function (require) {
                         .find(".o_dms_add_directory")
                         .removeClass("o_hidden");
                 }
+                // Launch _update_overlay to show the drag and drop
+                self._update_overlay();
             });
         },
         _buildDMSArgs: function (args) {
