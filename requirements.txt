@@ -178,6 +178,8 @@ pycups
 # generated from manifests external_dependencies
 astor
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
+# generated from manifests external_dependencies
+python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)

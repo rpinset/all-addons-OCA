@@ -205,6 +205,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
+[account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
 [account_move_print](account_move_print/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds the option to print Journal Entries
 [account_move_template](account_move_template/) | 17.0.1.0.0 |  | Templates for recurring Journal Entries
 [account_tax_repartition_line_tax_group_account](account_tax_repartition_line_tax_group_account/) | 17.0.1.0.0 |  | Set a default account from tax group to tax repartition lines
@@ -793,6 +794,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.0 |  | Account Mass Reconcile
 [account_statement_base](account_statement_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1536,7 +1538,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_fixed_discount](sale_fixed_discount/) | 17.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
+[sale_force_invoiced](sale_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
+[sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.0.0 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_tier_validation](sale_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
@@ -1946,6 +1950,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [document_knowledge](document_knowledge/) | 17.0.1.0.0 |  | Documents Knowledge
 [document_page](document_page/) | 17.0.1.0.0 |  | Document Page
+[document_page_tag](document_page_tag/) | 17.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 
 [//]: # (end addons)
 
@@ -4093,8 +4098,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
-[l10n_ro_config](l10n_ro_config/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
+[currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
+[l10n_ro_account](l10n_ro_account/) | 17.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
+[l10n_ro_city](l10n_ro_city/) | 17.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
+[l10n_ro_config](l10n_ro_config/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
+[l10n_ro_stock](l10n_ro_stock/) | 17.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
 
 [//]: # (end addons)
 
@@ -4227,6 +4235,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat](l10n_es_aeat/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.0.0 |  | AEAT modelo 347
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
@@ -5051,6 +5060,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
+[mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
@@ -5331,6 +5341,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
 [product_sequence](product_sequence/) | 17.0.1.0.0 |  | Product Sequence
+[product_set](product_set/) | 17.0.1.0.0 |  | Product set
 [product_state](product_state/) | 17.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 17.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 
@@ -5852,6 +5863,7 @@ addon | version | maintainers | summary
 [mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
+[mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
 
 [//]: # (end addons)
 
@@ -6190,6 +6202,7 @@ addon | version | maintainers | summary
 [auth_admin_passkey](auth_admin_passkey/) | 17.0.1.0.0 |  | Allows system administrator to authenticate with any account
 [auth_api_key](auth_api_key/) | 17.0.1.0.0 |  | Authenticate http requests from an API key
 [auth_api_key_server_env](auth_api_key_server_env/) | 17.0.1.0.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
+[auth_oidc](auth_oidc/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
 [user_log_view](user_log_view/) | 17.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 
 [//]: # (end addons)
@@ -6237,6 +6250,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_environment](mail_environment/) | 17.0.1.0.0 |  | Configure mail servers with server_environment_files
+[mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
 [server_environment](server_environment/) | 17.0.1.0.0 |  | move some configurations out of the database
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
 
