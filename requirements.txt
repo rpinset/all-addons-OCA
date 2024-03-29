@@ -314,6 +314,9 @@ extendable-pydantic
 pydantic
 typing-extensions
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
+# generated from manifests external_dependencies
+lxml
+xlrd
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)

@@ -76,9 +76,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d98fe814719f685d0a0b9c605fed301506e4466e
+commit bee59efd4c64fa8e12b82b13d925ccc51112e6b2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 29 11:12:18 2024 +0000
+Date:   Thu Mar 28 20:39:20 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1123,16 +1123,14 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit ebc879edac5ccc9779f7443d1f718cddd4987eb2
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Mar 4 08:45:32 2024 +0000
+commit 9d8297e35f3878d54e6fbc23ff01165bafaead1c
+Merge: 2aabe552c 08a0b11ce
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Tue Mar 26 14:26:49 2024 +0100
 
-    Update translation files
+    Merge pull request #2975 from Bilbonet/13.0-ou-script-l10n_es_ticketbai
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-13.0/l10n-spain-13.0-l10n_es_aeat_mod347
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-13-0/l10n-spain-13-0-l10n_es_aeat_mod347/
+    [13.0][OU-ADD]l10n_es_ticketbai-migration-script
 
 
 ## l10n-switzerland
@@ -1607,16 +1605,16 @@ Date:   Sun Sep 3 16:31:23 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 322440b91b66448045a6120069b4f8ab28274923
+commit bea29801369c488dd72a52a100cc716064bb36a6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:50 2024 +0000
+Date:   Thu Mar 28 20:38:56 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 22.2% (8 of 36 strings)
+    Currently translated at 28.9% (22 of 76 strings)
     
-    Translation: reporting-engine-13.0/reporting-engine-13.0-base_comment_template
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-base_comment_template/it/
+    Translation: reporting-engine-13.0/reporting-engine-13.0-kpi
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-kpi/it/
 
 
 ## report-print-send
@@ -1779,11 +1777,11 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit ea5ac60008278b389d6f1864e8e1b44f73c2ae1d
+commit f5c542ed340c9410af8731dabc1c955f91aa48fa
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 16:06:05 2023 +0000
+Date:   Wed Mar 27 21:31:55 2024 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## vertical-association
