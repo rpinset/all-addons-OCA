@@ -1,27 +1,3 @@
-# all-addons-OCA
-
-It's a merge of many repo OCA.
-Based on almost the entire list in [this file](https://github.com/OCA/maintainer-tools/blob/master/tools/oca_projects.py)
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA) policy. Consult each module's `__manifest__.py` file, which contains a `license` key that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose mission is to support the collaborative development of Odoo features and promote its widespread use.
-
-----
-# Merged Files
-
-The [merged README](README-merged.md) contains the concatenation of READMEs from all processed repo.
-The [merged requirements.txt](requirements-merged.txt) contains the concatenation of requirements.txt from all processed repo.
-
-----
-
-# REPOSITORY and last commit are :
-
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
 commit 506d1c89cdb2ac00fe6f1034c258673104a2a170
@@ -747,20 +723,6 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
     Initialize 17.0 branch
 
 
-## l10n-ecuador
-From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit a8681140392fbc91aef00f0305ee46a263725585
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Sun Feb 25 18:28:28 2024 +0000
-
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (26 of 26 strings)
-    
-    Translation: l10n-ecuador-17.0/l10n-ecuador-17.0-l10n_ec_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-ecuador-17-0/l10n-ecuador-17-0-l10n_ec_base/es/
-
-
 ## l10n-estonia
 From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 commit 5658399997c451a6c0a422318e7aa354c44ec0f7
@@ -951,9 +913,9 @@ Date:   Sun Nov 12 15:55:28 2023 +0100
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit dc142ec5645856f407a7487fd431c2d966170cbe
+commit e2a6ccb2278866b3fc91edb7cf6e75eca3a1f4de
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 29 20:14:08 2024 +0000
+Date:   Sat Mar 30 14:03:04 2024 +0000
 
     [BOT] post-merge updates
 

@@ -82,12 +82,6 @@ zeep
 # From [https://github.com/OCA/l10n-colombia.git](https://github.com/OCA/l10n-colombia.git)
 # From [https://github.com/OCA/l10n-costa-rica.git](https://github.com/OCA/l10n-costa-rica.git)
 # From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croatia.git)
-# From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-# generated from manifests external_dependencies
-cryptography==36.0.0
-xades==0.2.4
-xmlsig==0.1.9
-zeep
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 # From [https://github.com/OCA/l10n-ethiopia.git](https://github.com/OCA/l10n-ethiopia.git)
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
@@ -117,6 +111,8 @@ pdfminer.six==20220319
 # From [https://github.com/OCA/l10n-peru.git](https://github.com/OCA/l10n-peru.git)
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
+# generated from manifests external_dependencies
+PyJWT
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
