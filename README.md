@@ -218,20 +218,30 @@ Date:   Wed Mar 27 12:58:21 2024 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 15b9eb736f0c62970ac215ed9fb8b2eb5c4f6ce1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 00:24:52 2024 +0000
+commit e543a7aafc83aa1092a800748480bc83d0c0bffc
+Author: Alessandro Fiorino <alessandro.fiorino@digitaldomus.it>
+Date:   Sat Mar 30 09:28:43 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 91.0% (92 of 101 strings)
+    
+    Translation: account-reconcile-16.0/account-reconcile-16.0-account_reconcile_oca
+    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-16-0/account-reconcile-16-0-account_reconcile_oca/it/
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 8218245c544df2edf145d116d3795db695c8243a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 08:57:44 2024 +0000
+commit 10558c2499a9f3d6640051fe97238ccf4a40207f
+Author: Alessandro Fiorino <alessandro.fiorino@digitaldomus.it>
+Date:   Sat Mar 30 09:58:48 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 98.9% (98 of 99 strings)
+    
+    Translation: bank-statement-import-16.0/bank-statement-import-16.0-account_statement_import_sheet_file
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-16-0/bank-statement-import-16-0-account_statement_import_sheet_file/it/
 
 
 ## account-payment
@@ -802,15 +812,6 @@ Date:   Fri Oct 27 23:45:05 2023 +0200
     [IMP] update dotfiles
 
 
-## l10n-ecuador
-From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-commit 9d3940c840c6120d0ae21ab84b940711e025f472
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 27 23:27:55 2023 +0200
-
-    [IMP] update dotfiles
-
-
 ## l10n-estonia
 From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 commit 46ff44a4b9c4e1dbd264bc163f75d86fb30a3b47
@@ -1028,16 +1029,16 @@ Date:   Fri Oct 27 23:29:36 2023 +0200
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5545faf75a9dd8a184859a26edd4cee9445f18d7
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 27 16:43:23 2024 +0000
+commit c953ea1a41eee3726afb766c4d900cf2510a73f1
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sat Mar 30 21:36:46 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (169 of 169 strings)
     
     Translation: l10n-spain-16.0/l10n-spain-16.0-l10n_es_facturae
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_facturae/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-16-0/l10n-spain-16-0-l10n_es_facturae/es/
 
 
 ## l10n-switzerland
