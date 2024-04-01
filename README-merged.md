@@ -264,7 +264,7 @@ addon | version | maintainers | summary
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 14.0.1.0.0 |  | Account Invoice Constraint Chronology
 [account_journal_general_sequence](account_journal_general_sequence/) | 14.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 14.0.2.0.1 |  | Lock each journal independently
-[account_loan](account_loan/) | 14.0.1.1.4 |  | Account Loan management
+[account_loan](account_loan/) | 14.0.1.1.5 |  | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 14.0.2.0.0 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_lock_to_date](account_lock_to_date/) | 14.0.1.0.0 |  | Allows to set an account lock date in the future.
 [account_menu](account_menu/) | 14.0.1.2.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module
@@ -449,7 +449,7 @@ addon | version | maintainers | summary
 [account_billing](account_billing/) | 14.0.1.0.3 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 14.0.1.1.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 14.0.1.0.1 |  | Set a alternate payor/payee in invoices
-[account_invoice_base_invoicing_mode](account_invoice_base_invoicing_mode/) | 14.0.1.2.1 |  | Base module for handling multiple invoicing mode
+[account_invoice_base_invoicing_mode](account_invoice_base_invoicing_mode/) | 14.0.1.2.2 |  | Base module for handling multiple invoicing mode
 [account_invoice_blocking](account_invoice_blocking/) | 14.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
 [account_invoice_change_currency](account_invoice_change_currency/) | 14.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to change currency of Invoice by wizard
 [account_invoice_check_picking_date](account_invoice_check_picking_date/) | 14.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Check if date of pickings match with invoice date
@@ -7850,6 +7850,7 @@ addon | version | maintainers | summary
 [mail_inline_css](mail_inline_css/) | 14.0.1.0.0 |  | Convert style tags in inline style in your mails
 [mail_layout_force](mail_layout_force/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 14.0.1.0.1 |  | Preview email templates in the browser
+[mail_notification_clean_status_error](mail_notification_clean_status_error/) | 14.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Extend Odoo scheduled action to also delete notifications in error.
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 14.0.1.0.1 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Apply a custom subject to mail notifications
 [mail_notification_with_history](mail_notification_with_history/) | 14.0.1.0.1 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add the previous chatter discussion into new email notifications.
 [mail_optional_autofollow](mail_optional_autofollow/) | 14.0.1.0.1 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message

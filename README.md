@@ -80,16 +80,11 @@ Date:   Wed Feb 28 19:00:51 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ab5b472664866059106a4007ab0016aee03d5aa6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 28 20:38:48 2024 +0000
+commit 8a81a14f96976939d1fbf96293751efb0b6435cb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 18:25:52 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 28.7% (75 of 261 strings)
-    
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_asset_management/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -122,16 +117,11 @@ Date:   Thu Feb 8 08:08:05 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 3817502eb0a83d7669f4cece2b2b6ae439512432
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Thu Mar 21 19:18:54 2024 +0000
+commit af7f00fbf1276f2ae928cebba40e20e533402d93
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 08:09:39 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: account-invoicing-14.0/account-invoicing-14.0-account_move_line_accounting_description_purchase
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_move_line_accounting_description_purchase/es/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -1311,11 +1301,16 @@ Date:   Sun Mar 17 19:54:47 2024 +0100
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 86100b2e141c3bf75b9b8b31f667fc6b06352d30
+commit 409fb18e6b6d88bdba7b26280cffbb966b8d05af
 Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Fri Mar 29 20:15:43 2024 +0000
+Date:   Sat Mar 30 23:10:29 2024 +0000
 
-    Added translation using Weblate (Spanish)
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (55 of 55 strings)
+    
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_request_to_requisition
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_request_to_requisition/es/
 
 
 ## purchase-reporting
@@ -1457,16 +1452,11 @@ Date:   Fri Oct 27 22:20:52 2023 +0200
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 18a41b55047e9d9e71db6ffae5a828feaf629151
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 21 13:05:31 2024 +0000
+commit d252eb95673e842ca3f106de2ce5d363d8d837f3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 08:06:07 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 75.0% (24 of 32 strings)
-    
-    Translation: social-14.0/social-14.0-mail_activity_team
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_activity_team/it/
+    [BOT] post-merge updates
 
 
 ## storage
@@ -1489,16 +1479,16 @@ Date:   Thu Feb 29 11:25:27 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit edde96ee0fb7690202ac48bed3c40386cfa6212e
+commit bb97a682e7419413460383c0be197181ae273aa7
 Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Mar 27 20:37:41 2024 +0000
+Date:   Sat Mar 30 22:35:56 2024 +0000
 
     Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (119 of 119 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: reporting-engine-14.0/reporting-engine-14.0-report_py3o_fusion_server
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-14-0/reporting-engine-14-0-report_py3o_fusion_server/es/
+    Translation: reporting-engine-14.0/reporting-engine-14.0-report_fillpdf
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-14-0/reporting-engine-14-0-report_fillpdf/es/
 
 
 ## report-print-send
