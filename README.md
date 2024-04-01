@@ -1110,11 +1110,16 @@ Date:   Mon Mar 25 15:43:50 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 3200802b624bf200af02ce94e9a89d440362b8dc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 16:43:31 2024 +0000
+commit 1932f5f0fc5ba3347bf5ad24c94c311d4b468016
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Apr 1 10:29:12 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/
 
 
 ## stock-logistics-workflow
@@ -1697,11 +1702,16 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 4d4113cbe5e7ec5d9133052d9304269340f7a124
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 09:22:29 2024 +0000
+commit 16838233fb062880c8089cef8a214dc19f4d82c0
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Apr 1 11:16:54 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: web-15.0/web-15.0-web_notify
+    Translate-URL: https://translation.odoo-community.org/projects/web-15-0/web-15-0-web_notify/
 
 
 ## website
