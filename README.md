@@ -723,6 +723,20 @@ Date:   Sun Nov 12 15:50:33 2023 +0100
     Initialize 17.0 branch
 
 
+## l10n-ecuador
+From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
+commit a8681140392fbc91aef00f0305ee46a263725585
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sun Feb 25 18:28:28 2024 +0000
+
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (26 of 26 strings)
+    
+    Translation: l10n-ecuador-17.0/l10n-ecuador-17.0-l10n_ec_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-ecuador-17-0/l10n-ecuador-17-0-l10n_ec_base/es/
+
+
 ## l10n-estonia
 From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 commit 5658399997c451a6c0a422318e7aa354c44ec0f7
@@ -1250,16 +1264,11 @@ Date:   Sun Nov 12 16:04:34 2023 +0100
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit e11bcf4121b113425abbd89b0a5c2877370aeffd
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 22 20:02:47 2024 +0000
+commit da16d484a1030a64f830f22575e5e437e38b0c75
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 09:14:26 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: project-17.0/project-17.0-project_type
-    Translate-URL: https://translation.odoo-community.org/projects/project-17-0/project-17-0-project_type/
+    [BOT] post-merge updates
 
 
 ## project-agile
