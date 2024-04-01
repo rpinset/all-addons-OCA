@@ -204,16 +204,16 @@ Date:   Mon Jan 22 10:34:46 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 3bf5c869b037f92b54b5613950c05639fa0b31d8
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Mar 27 12:58:21 2024 +0000
+commit 5eb3775efc47cb2fee54dc38e01de277de7d5542
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Apr 1 07:00:34 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 100.0% (211 of 211 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: bank-payment-16.0/bank-payment-16.0-account_payment_order
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_payment_order/es/
+    Translation: bank-payment-16.0/bank-payment-16.0-account_banking_sepa_direct_debit
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-16-0/bank-payment-16-0-account_banking_sepa_direct_debit/
 
 
 ## account-reconcile
@@ -627,11 +627,16 @@ Date:   Thu Mar 14 13:30:06 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit dd35c801817486adf8d2ac3fd875bf57b632d821
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 25 10:58:26 2024 +0000
+commit 1a27417ea1ac49e77233af24d76206a0b4cae013
+Author: Ivorra78 <informatica@totmaterial.es>
+Date:   Sat Mar 30 21:48:13 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (77 of 77 strings)
+    
+    Translation: hr-16.0/hr-16.0-hr_employee_medical_examination
+    Translate-URL: https://translation.odoo-community.org/projects/hr-16-0/hr-16-0-hr_employee_medical_examination/es/
 
 
 ## hr-attendance
@@ -808,6 +813,15 @@ From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croat
 commit 093bc7c689c564f73df1203721326e213fdf0d79
 Author: oca-git-bot <oca-git-bot@odoo-community.org>
 Date:   Fri Oct 27 23:45:05 2023 +0200
+
+    [IMP] update dotfiles
+
+
+## l10n-ecuador
+From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
+commit 9d3940c840c6120d0ae21ab84b940711e025f472
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Oct 27 23:27:55 2023 +0200
 
     [IMP] update dotfiles
 
@@ -1002,9 +1016,9 @@ Date:   Wed Jan 31 14:30:26 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit f5cba10a880f9257ce60af7e2b80dfc317516eba
+commit 80084dfddb08c75520a85f71e1b446c1bf3975ea
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 23 07:33:00 2024 +0000
+Date:   Mon Apr 1 11:40:18 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1124,16 +1138,11 @@ Date:   Fri Oct 27 23:36:01 2023 +0200
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 907f94db653b2e852fc59b342c5aed520fcc7ac9
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Tue Mar 26 18:22:26 2024 +0000
+commit 3ca77a86de3ef6225c8f397f5b921c57b3d6fea3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 18:14:46 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: delivery-carrier-16.0/delivery-carrier-16.0-delivery_driver
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-16-0/delivery-carrier-16-0-delivery_driver/es/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1295,11 +1304,11 @@ Date:   Tue Mar 19 15:43:04 2024 +0000
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit 8d29aa9d8438740df4f0111cdaad4e701516e551
-Author: Adriano Prado <adrianojprado@gmail.com>
-Date:   Wed Dec 27 12:52:01 2023 +0000
+commit 423e036ca320f95581786485cf27835c4e8f33da
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 1 19:09:17 2024 +0000
 
-    Added translation using Weblate (Portuguese (Brazil))
+    [BOT] post-merge updates
 
 
 ## product-attribute
@@ -1437,9 +1446,9 @@ Date:   Fri Oct 27 23:34:58 2023 +0200
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit b8f59284f316aa724bb5c1d56073b327467e1164
+commit 1d22b04d4adc7d2dbf14e42d2eebb230675ad678
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Mar 25 12:38:37 2024 +0000
+Date:   Mon Apr 1 08:14:43 2024 +0000
 
     Update translation files
     
@@ -1743,11 +1752,16 @@ Date:   Fri Oct 27 22:49:35 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit baf589950a8650ab557fbbb5231350d9f73e5d66
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 22 17:14:07 2024 +0000
+commit 06aa46d1bc429a146d530f61d435bb7bea6e8e4b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Apr 1 06:37:10 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: web-16.0/web-16.0-web_notify
+    Translate-URL: https://translation.odoo-community.org/projects/web-16-0/web-16-0-web_notify/
 
 
 ## website
