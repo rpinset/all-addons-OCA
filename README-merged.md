@@ -348,6 +348,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_invoice_crm_tag](account_invoice_crm_tag/) | 17.0.1.0.0 |  | Account Invoice CRM Tag
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 17.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 
@@ -1025,7 +1026,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queue_job](queue_job/) | 17.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 17.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 17.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 17.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -1537,8 +1538,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
 [sale_fixed_discount](sale_fixed_discount/) | 17.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
+[sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
+[sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
@@ -1949,7 +1953,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [document_knowledge](document_knowledge/) | 17.0.1.0.0 |  | Documents Knowledge
-[document_page](document_page/) | 17.0.1.0.0 |  | Document Page
+[document_page](document_page/) | 17.0.1.1.0 |  | Document Page
+[document_page_access_group](document_page_access_group/) | 17.0.1.0.0 |  | Choose groups to access document pages
 [document_page_tag](document_page_tag/) | 17.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 
 [//]: # (end addons)
@@ -2411,6 +2416,7 @@ addon | version | maintainers | summary
 [hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.0 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.0 |  | Enables Settings Form for HR Holidays.
+[hr_personal_equipment_request](hr_personal_equipment_request/) | 17.0.1.0.0 |  | This addon allows to manage employee personal equipment
 
 [//]: # (end addons)
 
@@ -3926,7 +3932,11 @@ Odoo Dutch Localization
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 17.0.1.0.0 |  | Export XAF auditfiles for Dutch tax authorities
 
 [//]: # (end addons)
 
@@ -4842,7 +4852,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [scrap_reason_code](scrap_reason_code/) | 17.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
-[stock_demand_estimate](stock_demand_estimate/) | 17.0.1.0.0 |  | Allows to create demand estimates.
+[stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.0 |  | Allows to create demand estimates.
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 17.0.1.0.0 |  | Add a MTS+MTO route
 [stock_reserve](stock_reserve/) | 17.0.1.0.0 |  | Stock reservations on products
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
@@ -5065,6 +5075,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
+[mrp_multi_level](mrp_multi_level/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
@@ -5865,6 +5876,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 17.0.1.0.0 |  | Base Search Mail Content
 [mail_activity_board](mail_activity_board/) | 17.0.1.0.1 |  | Add Activity Boards
+[mail_activity_team](mail_activity_team/) | 17.0.1.0.0 |  | Add Teams to Activities
 [mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
@@ -7189,10 +7201,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[web_calendar_slot_duration](web_calendar_slot_duration/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
 [web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.0 |  | Web Environment Ribbon
 [web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_refresher](web_refresher/) | 17.0.1.0.0 |  | Web Refresher
 [web_responsive](web_responsive/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
+[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 17.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 
 [//]: # (end addons)
 
