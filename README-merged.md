@@ -846,6 +846,7 @@ addon | version | maintainers | summary
 [currency_rate_update](currency_rate_update/) | 14.0.1.3.2 |  | Update exchange rates using OCA modules
 [currency_rate_update_cmc](currency_rate_update_cmc/) | 14.0.1.0.0 |  | Allows to download crypto currency exchange rates from Coin Market Cap
 [currency_rate_update_transferwise](currency_rate_update_transferwise/) | 14.0.1.0.0 |  | Update exchange rates using TransferWise.com
+[currency_rate_update_xe](currency_rate_update_xe/) | 14.0.1.0.0 |  | Update exchange rates using XE.com
 
 [//]: # (end addons)
 
@@ -1210,6 +1211,7 @@ addon | version | maintainers | summary
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 14.0.2.0.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 14.0.1.1.7 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
 [account_payment_term_extension](account_payment_term_extension/) | 14.0.1.0.3 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
+[account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Term Partner Holiday
 [account_payment_terminal](account_payment_terminal/) | 14.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This addon allows to pay invoices using payment terminal
 [account_payment_view_check_number](account_payment_view_check_number/) | 14.0.1.0.0 |  | Account Payment View Check Number
 [account_payment_widget_amount](account_payment_widget_amount/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
@@ -1364,7 +1366,7 @@ addon | version | maintainers | summary
 [queue_job_batch](queue_job_batch/) | 14.0.1.0.1 |  | Job Queue Batch
 [queue_job_context](queue_job_context/) | 14.0.1.0.1 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Queue Job, prepare context before enqueue keys
 [queue_job_cron](queue_job_cron/) | 14.0.2.0.0 |  | Scheduled Actions as Queue Jobs
-[queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 14.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
+[queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 14.0.1.0.2 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 14.0.1.0.0 |  | Control which users are subscribed to queue job notifications
 [test_base_import_async](test_base_import_async/) | 14.0.1.0.1 |  | Test suite for base_import_async. Normally you don't need to install this.
 [test_queue_job](test_queue_job/) | 14.0.3.2.0 |  | Queue Job Tests
@@ -2345,7 +2347,7 @@ addon | version | maintainers | summary
 [sale_backorder](sale_backorder/) | 14.0.1.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Report of Un-Invoice Goods Delivered and Backorders
 [sale_comment_template](sale_comment_template/) | 14.0.2.1.2 |  | Comments texts templates on Sale documents
 [sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 14.0.1.0.3 |  | Hide details for sections in sale orders and invoices for reports and customer portal
-[sale_order_invoice_date](sale_order_invoice_date/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display the invoice date on Sales Order analysis reports
+[sale_order_invoice_date](sale_order_invoice_date/) | 14.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display the invoice date on Sales Order analysis reports
 [sale_order_line_position](sale_order_line_position/) | 14.0.1.2.0 |  | Adds position number on sale order line.
 [sale_order_report_product_image](sale_order_report_product_image/) | 14.0.1.0.0 |  | Show product images on Sale documents
 [sale_order_weight](sale_order_weight/) | 14.0.1.0.0 |  | Add products weight in report for sale order
@@ -2580,7 +2582,7 @@ addon | version | maintainers | summary
 [attachment_category](attachment_category/) | 14.0.1.0.1 |  | Adds a document category to help classification
 [attachment_preview](attachment_preview/) | 14.0.1.0.1 |  | Preview attachments supported by Viewer.js
 [attachment_zipped_download](attachment_zipped_download/) | 14.0.2.0.0 |  | Attachment Zipped Download
-[document_page](document_page/) | 14.0.1.2.4 |  | Document Page
+[document_page](document_page/) | 14.0.1.3.0 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 14.0.1.0.0 |  | Choose groups to access document pages
 [document_page_approval](document_page_approval/) | 14.0.1.0.2 |  | Document Page Approval
 [document_page_group](document_page_group/) | 14.0.1.0.0 |  | Define access groups on documents
@@ -2895,7 +2897,7 @@ addon | version | maintainers | summary
 [fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage relations between contacts, companies and locations
 [fieldservice_project](fieldservice_project/) | 14.0.1.0.1 |  | Create field service orders from a project or project task
 [fieldservice_purchase](fieldservice_purchase/) | 14.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage FSM Purchases
-[fieldservice_recurring](fieldservice_recurring/) | 14.0.3.3.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
+[fieldservice_recurring](fieldservice_recurring/) | 14.0.3.4.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_repair](fieldservice_repair/) | 14.0.1.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
 [fieldservice_route](fieldservice_route/) | 14.0.1.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
 [fieldservice_sale](fieldservice_sale/) | 14.0.2.2.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
@@ -3228,7 +3230,7 @@ addon | version | maintainers | summary
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 14.0.1.0.0 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 14.0.1.0.1 |  | Exclude Timesheet Line from Sale Order
-[sale_timesheet_order_line_no_update](sale_timesheet_order_line_no_update/) | 14.0.1.1.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Timesheet Order Line no Update
+[sale_timesheet_order_line_no_update](sale_timesheet_order_line_no_update/) | 14.0.1.1.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Timesheet Order Line no Update
 [sale_timesheet_order_line_sync](sale_timesheet_order_line_sync/) | 14.0.1.0.0 |  | Propagate task order line in not invoiced timesheet lines
 [sale_timesheet_rounded](sale_timesheet_rounded/) | 14.0.1.0.1 |  | Round timesheet entries amount based on project settings.
 
@@ -4420,7 +4422,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [datev_export](datev_export/) | 14.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
-[datev_export_xml](datev_export_xml/) | 14.0.1.0.2 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
+[datev_export_xml](datev_export_xml/) | 14.0.1.0.3 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [l10n_de_country_states](l10n_de_country_states/) | 14.0.1.0.0 |  | German Country States
 [l10n_de_holidays](l10n_de_holidays/) | 14.0.1.0.2 |  | Holidays for Germany
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 14.0.1.0.0 |  | NUTS specific options for German
@@ -5202,7 +5204,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 14.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.18.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.18.1 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -5999,7 +6001,8 @@ addon | version | maintainers | summary
 [product_multi_barcode_stock_menu](product_multi_barcode_stock_menu/) | 14.0.1.1.0 |  | Multiple barcodes menu
 [product_multi_barcode_supplierinfo](product_multi_barcode_supplierinfo/) | 14.0.1.0.1 |  | Adds supplier pricelist barcode in product barcode
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 14.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[sale_input_barcode](sale_input_barcode/) | 14.0.1.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode
+[sale_input_barcode](sale_input_barcode/) | 14.0.2.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode
+[sale_input_barcode_gs1](sale_input_barcode_gs1/) | 14.0.2.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode using GS1 barcodes
 [stock_barcodes](stock_barcodes/) | 14.0.4.0.0 |  | It provides read barcode on stock operations.
 [stock_barcodes_automatic_entry](stock_barcodes_automatic_entry/) | 14.0.1.0.0 | [![AdriaGForgeFlow](https://github.com/AdriaGForgeFlow.png?size=30px)](https://github.com/AdriaGForgeFlow) | This module will automatically trigger the click event on a button with the class 'barcode-automatic-entry' after a barcode scanned has been processed.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 14.0.2.0.1 |  | It provides read GS1 barcode on stock operations.
@@ -6080,6 +6083,7 @@ addon | version | maintainers | summary
 [stock_lot_scrap](stock_lot_scrap/) | 14.0.1.0.2 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
 [stock_mass_scrap](stock_mass_scrap/) | 14.0.1.0.1 |  | Add wizard to mass scrap expired products
 [stock_move_assign_picking_hook](stock_move_assign_picking_hook/) | 14.0.1.1.2 |  | Stock Move picking assignment hook
+[stock_move_backdating](stock_move_backdating/) | 14.0.1.0.1 |  | Stock Move Backdating
 [stock_move_change_source_location](stock_move_change_source_location/) | 14.0.1.0.1 |  | This module allows you to change the source location of a stock move from the picking
 [stock_move_forced_lot](stock_move_forced_lot/) | 14.0.1.0.0 |  | This module allows you to set a lot_id in a procurement to force the stock move generated to only reserve the selected lot.
 [stock_move_free_reservation_reassign](stock_move_free_reservation_reassign/) | 14.0.1.0.0 |  | Try to reassign a move when its reservation is removed due to the related quant becoming unavailable
@@ -6243,7 +6247,7 @@ addon | version | maintainers | summary
 [stock_available_unreserved](stock_available_unreserved/) | 14.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 14.0.1.0.2 |  | Stock Quantity Change Reason
 [stock_cycle_count](stock_cycle_count/) | 14.0.1.4.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
-[stock_demand_estimate](stock_demand_estimate/) | 14.0.1.2.0 |  | Allows to create demand estimates.
+[stock_demand_estimate](stock_demand_estimate/) | 14.0.1.3.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 14.0.1.2.0 |  | Allows to create demand estimates.
 [stock_exception](stock_exception/) | 14.0.1.0.2 |  | Custom exceptions on stock picking
 [stock_free_quantity](stock_free_quantity/) | 14.0.1.2.0 |  | Stock Free Quantity
@@ -6670,7 +6674,7 @@ addon | version | maintainers | summary
 [mrp_component_operation_scrap_reason](mrp_component_operation_scrap_reason/) | 14.0.1.1.0 |  | Allows to pass a reason to scrap with MRP component operation
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [mrp_lot_production_date](mrp_lot_production_date/) | 14.0.1.0.0 |  | MRP Lot Production Date
-[mrp_multi_level](mrp_multi_level/) | 14.0.1.14.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 14.0.1.15.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 14.0.1.1.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_package_propagation](mrp_package_propagation/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
@@ -7476,6 +7480,7 @@ addon | version | maintainers | summary
 [project_task_code](project_task_code/) | 14.0.1.0.2 |  | Sequential Code for Tasks
 [project_task_default_stage](project_task_default_stage/) | 14.0.1.1.0 |  | Recovery default task stages for projects from v8
 [project_task_dependency](project_task_dependency/) | 14.0.1.1.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Enables to define dependencies (other tasks) of a task
+[project_task_description_template](project_task_description_template/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Module for Task Templates
 [project_task_digitized_signature](project_task_digitized_signature/) | 14.0.1.0.0 |  | Project Task Digitized Signature
 [project_task_material](project_task_material/) | 14.0.1.0.1 |  | Record products spent in a Task
 [project_task_project_required](project_task_project_required/) | 14.0.1.0.0 |  | Set project on task as a mandatory field
@@ -8245,6 +8250,7 @@ addon | version | maintainers | summary
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 14.0.1.1.2 |  | Adds more operators for view inheritance
 [bus_alt_connection](bus_alt_connection/) | 14.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [configuration_helper](configuration_helper/) | 14.0.1.0.1 |  | Configuration Helper
+[cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 14.0.1.0.0 |  | Run cron on fixed hours
 [database_cleanup](database_cleanup/) | 14.0.1.0.3 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 14.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 14.0.1.0.1 |  | Filter databases with HTTP headers
