@@ -1061,6 +1061,7 @@ addon | version | maintainers | summary
 [account_statement_import_camt](account_statement_import_camt/) | 15.0.1.0.1 |  | CAMT Format Bank Statements Import
 [account_statement_import_camt54](account_statement_import_camt54/) | 15.0.1.0.0 |  | Bank Account Camt54 Import
 [account_statement_import_file_reconciliation_widget](account_statement_import_file_reconciliation_widget/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files and Go Direct to Reconciliation
+[account_statement_import_move_line](account_statement_import_move_line/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 15.0.1.0.0 |  | Import OFX Bank Statement
 [account_statement_import_online](account_statement_import_online/) | 15.0.3.2.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 15.0.1.0.5 |  | Online Bank Statements: GoCardless
@@ -2288,11 +2289,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_commission](account_commission/) | 15.0.3.2.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
+[account_commission](account_commission/) | 15.0.3.2.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
 [commission](commission/) | 15.0.3.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 15.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 15.0.1.0.1 |  | HR commissions
-[sale_commission](sale_commission/) | 15.0.2.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
+[sale_commission](sale_commission/) | 15.0.2.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_salesman](sale_commission_salesman/) | 15.0.1.0.1 |  | Sales commissions from salesman
 
 [//]: # (end addons)
@@ -2466,6 +2467,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_preview](attachment_preview/) | 15.0.1.0.0 |  | Preview attachments supported by Viewer.js
+[attachment_zipped_download](attachment_zipped_download/) | 15.0.1.0.0 |  | Attachment Zipped Download
 [document_page](document_page/) | 15.0.1.5.0 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 15.0.1.0.0 |  | Choose groups to access document pages
 [document_page_approval](document_page_approval/) | 15.0.1.1.0 |  | Document Page Approval
@@ -2577,7 +2579,7 @@ addon | version | maintainers | summary
 [website_sale_address_format](website_sale_address_format/) | 15.0.1.0.0 |  | Website Sale Address Format
 [website_sale_attribute_filter_form_submit](website_sale_attribute_filter_form_submit/) | 15.0.1.0.0 |  | Allow to apply manually the filters on the e-commerce
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 15.0.1.1.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
-[website_sale_cart_expire](website_sale_cart_expire/) | 15.0.1.1.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
+[website_sale_cart_expire](website_sale_cart_expire/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
 [website_sale_checkout_country_vat](website_sale_checkout_country_vat/) | 15.0.1.0.0 |  | Autocomplete VAT in checkout process
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 15.0.1.3.0 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 15.0.1.0.0 |  | Hide product prices on the shop
@@ -4864,7 +4866,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 15.0.1.2.0 | [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.13.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -4872,7 +4874,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.55.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.57.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -4880,7 +4882,7 @@ addon | version | maintainers | summary
 [l10n_ro_city](l10n_ro_city/) | 15.0.3.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 15.0.2.13.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
-[l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
+[l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
@@ -4890,13 +4892,13 @@ addon | version | maintainers | summary
 [l10n_ro_pos](l10n_ro_pos/) | 15.0.2.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_siruta](l10n_ro_siruta/) | 15.0.2.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Siruta
 [l10n_ro_stock](l10n_ro_stock/) | 15.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 15.0.3.39.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 15.0.3.40.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 15.0.2.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 15.0.3.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 15.0.1.1.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 15.0.4.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 15.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Reception In progress
-[l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
+[l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 15.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 15.0.4.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 15.0.5.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 15.0.6.15.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fisa Magazie)
@@ -5059,7 +5061,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 15.0.1.1.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 15.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
+[l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 15.0.1.1.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
 [l10n_es_facturae](l10n_es_facturae/) | 15.0.1.10.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 15.0.2.4.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 15.0.2.1.0 |  | Spanish Intrastat Product Declaration
@@ -5072,10 +5074,10 @@ addon | version | maintainers | summary
 [l10n_es_pos](l10n_es_pos/) | 15.0.2.0.3 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 15.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Punto de venta adaptado a la legislación española por dispositivo
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 15.0.1.0.2 |  | Envío de pedidos del TPV al SII
-[l10n_es_ticketbai](l10n_es_ticketbai/) | 15.0.1.4.10 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai](l10n_es_ticketbai/) | 15.0.1.5.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 15.0.1.1.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 15.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
-[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 15.0.1.1.4 | [![Binovo](https://github.com/Binovo.png?size=30px)](https://github.com/Binovo) [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
+[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 15.0.1.2.0 | [![Binovo](https://github.com/Binovo.png?size=30px)](https://github.com/Binovo) [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 15.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 15.0.1.0.6 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 15.0.1.0.1 |  | Topónimos españoles
@@ -5617,10 +5619,10 @@ addon | version | maintainers | summary
 [base_gs1_barcode](base_gs1_barcode/) | 15.0.1.0.0 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[stock_barcodes](stock_barcodes/) | 15.0.3.0.0 |  | It provides read barcode on stock operations.
+[stock_barcodes](stock_barcodes/) | 15.0.3.0.1 |  | It provides read barcode on stock operations.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.0 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.0 |  | It provides read barcodes on stock operations from batch pickings.
-[stock_barcodes_picking_batch_revision](stock_barcodes_picking_batch_revision/) | 15.0.1.0.0 |  | It provides batch pickings revision from other users.
+[stock_barcodes_picking_batch_revision](stock_barcodes_picking_batch_revision/) | 15.0.1.0.1 |  | It provides batch pickings revision from other users.
 [stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.4.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
 [stock_picking_product_barcode_report_secondary_unit](stock_picking_product_barcode_report_secondary_unit/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Set by default the maximum quantity of labels to print.
 
@@ -5691,7 +5693,7 @@ addon | version | maintainers | summary
 [stock_move_propagate_first_move](stock_move_propagate_first_move/) | 15.0.1.0.0 |  | This addon propagate the picking type of the original move to all next moves created from procurement
 [stock_move_quick_lot](stock_move_quick_lot/) | 15.0.1.0.0 |  | Set lot name and end date directly on picking operations
 [stock_no_negative](stock_no_negative/) | 15.0.1.0.0 |  | Disallow negative stock levels by default
-[stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.2 |  | Do not reserve quantity with assigned owner
+[stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.3 |  | Do not reserve quantity with assigned owner
 [stock_picking_assign_serial_final](stock_picking_assign_serial_final/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Generate serial numbers until to a final serial number
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 15.0.1.0.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 15.0.1.0.1 |  | Reopen cancelled pickings
@@ -5837,7 +5839,7 @@ addon | version | maintainers | summary
 [stock_available_mrp](stock_available_mrp/) | 15.0.1.0.2 |  | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 15.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_demand_estimate](stock_demand_estimate/) | 15.0.1.1.0 |  | Allows to create demand estimates.
+[stock_demand_estimate](stock_demand_estimate/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
@@ -6030,7 +6032,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 15.0.1.14.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 15.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 15.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -7567,7 +7569,7 @@ addon | version | maintainers | summary
 [base_time_parameter](base_time_parameter/) | 15.0.1.0.0 | [![appstogrow](https://github.com/appstogrow.png?size=30px)](https://github.com/appstogrow) [![nimarosa](https://github.com/nimarosa.png?size=30px)](https://github.com/nimarosa) | Time dependent parameters Adds the feature to define parameters with time based versions.
 [base_time_window](base_time_window/) | 15.0.1.0.0 |  | Base model to handle time windows
 [base_translation_field_label](base_translation_field_label/) | 15.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) | Shows the field label and optionally hides the Translated field value.
-[base_view_inheritance_extension](base_view_inheritance_extension/) | 15.0.2.0.2 |  | Adds more operators for view inheritance
+[base_view_inheritance_extension](base_view_inheritance_extension/) | 15.0.2.1.0 |  | Adds more operators for view inheritance
 [database_cleanup](database_cleanup/) | 15.0.1.1.0 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 15.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 15.0.1.0.0 |  | Filter databases with HTTP headers
@@ -7588,6 +7590,7 @@ addon | version | maintainers | summary
 [scheduler_error_mailer](scheduler_error_mailer/) | 15.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 15.0.3.0.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 15.0.1.0.0 |  | Calculate a sequence number from a Python expression
+[session_db](session_db/) | 15.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [tracking_manager](tracking_manager/) | 15.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 15.0.3.0.1 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
@@ -8732,6 +8735,7 @@ addon | version | maintainers | summary
 [web_domain_field](web_domain_field/) | 15.0.1.0.1 |  | Use computed field as domain
 [web_drop_target](web_drop_target/) | 15.0.1.0.2 |  | Allows to drag files into Odoo
 [web_environment_ribbon](web_environment_ribbon/) | 15.0.1.0.0 |  | Web Environment Ribbon
+[web_filter_header_button](web_filter_header_button/) | 15.0.1.0.0 |  | Show selected filters as buttons in the control panel
 [web_group_expand](web_group_expand/) | 15.0.1.0.0 |  | Group Expand Buttons
 [web_hide_user_menu_item](web_hide_user_menu_item/) | 15.0.1.0.0 |  | Web Hide User Menu Item
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 15.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
