@@ -418,7 +418,7 @@ addon | version | maintainers | summary
 [account_invoice_currency_taxes](account_invoice_currency_taxes/) | 16.0.1.0.1 |  | Taxes in company currency in invoice report
 [account_invoice_default_code_column](account_invoice_default_code_column/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display Default code product in a dedicated column on invoice reports
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Changing the fiscal position of an invoice will auto-update invoice lines
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.1.0.2 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.1.0.3 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 16.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_mass_sending](account_invoice_mass_sending/) | 16.0.1.1.1 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
 [account_invoice_merge](account_invoice_merge/) | 16.0.1.0.1 |  | Merge invoices in draft
@@ -910,7 +910,7 @@ addon | version | maintainers | summary
 [account_payment_partner](account_payment_partner/) | 16.0.1.2.2 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 16.0.2.0.1 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 16.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 16.0.1.0.0 |  | Adds payment mode on sale orders
+[account_payment_sale](account_payment_sale/) | 16.0.1.0.1 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
 
@@ -960,6 +960,7 @@ addon | version | maintainers | summary
 [account_move_base_import](account_move_base_import/) | 16.0.1.0.1 |  | Journal Entry base import
 [account_move_line_reconcile_manual](account_move_line_reconcile_manual/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manually reconcile Journal Items
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
+[account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_reconcile_oca](account_reconcile_oca/) | 16.0.1.2.12 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -1217,12 +1218,13 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.0.0 |  | Asynchronous export with job queue
-[base_import_async](base_import_async/) | 16.0.1.1.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 16.0.2.6.2 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
-[queue_job_batch](queue_job_batch/) | 16.0.1.0.0 |  | Job Queue Batch
+[base_import_async](base_import_async/) | 16.0.1.1.1 |  | Import CSV files in the background
+[queue_job](queue_job/) | 16.0.2.6.3 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 16.0.1.0.0 |  | Control which users are subscribed to queue job notifications
+[queue_job_web_notify](queue_job_web_notify/) | 16.0.1.0.0 |  | This module allows to display a notification to the related user of a failed job. It uses the web_notify notification feature.
 [test_queue_job](test_queue_job/) | 16.0.2.2.1 |  | Queue Job Tests
 [test_queue_job_batch](test_queue_job_batch/) | 16.0.1.0.0 |  | Test Job Queue Batch
 
@@ -2216,11 +2218,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_commission](account_commission/) | 16.0.2.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
+[account_commission](account_commission/) | 16.0.2.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
 [commission](commission/) | 16.0.2.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 16.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
-[sale_commission](sale_commission/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
+[sale_commission](sale_commission/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 16.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_salesman](sale_commission_salesman/) | 16.0.1.0.0 |  | Sales commissions from salesman
 
@@ -2326,6 +2328,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [survey_question_type_five_star](survey_question_type_five_star/) | 16.0.1.0.0 |  | This module adds five stars rating as question type for survey page
+[survey_xlsx](survey_xlsx/) | 16.0.1.0.0 |  | XLSX Report to show the survey results
 
 [//]: # (end addons)
 
@@ -2374,6 +2377,7 @@ addon | version | maintainers | summary
 [attachment_zipped_download](attachment_zipped_download/) | 16.0.2.0.2 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 16.0.1.1.0 |  | Documents Knowledge
 [document_page](document_page/) | 16.0.1.4.0 |  | Document Page
+[document_page_access_group](document_page_access_group/) | 16.0.1.0.0 |  | Choose groups to access document pages
 [document_page_approval](document_page_approval/) | 16.0.1.1.0 |  | Document Page Approval
 [document_page_group](document_page_group/) | 16.0.1.0.1 |  | Define access groups on documents
 [document_page_partner](document_page_partner/) | 16.0.1.0.0 |  | Allows to link doucment pages to a partner
@@ -2428,6 +2432,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 16.0.1.4.0 |  | Document Management System for Odoo
+[dms_auto_classification](dms_auto_classification/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
+[dms_user_role](dms_user_role/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
 
 [//]: # (end addons)
 
@@ -2476,7 +2482,7 @@ addon | version | maintainers | summary
 [product_template_multi_link](product_template_multi_link/) | 16.0.1.0.0 |  | Product Multi Links (Template)
 [website_sale_attribute_filter_form_submit](website_sale_attribute_filter_form_submit/) | 16.0.1.0.0 |  | Allow to apply manually the filters on the e-commerce
 [website_sale_attribute_filter_multiselect](website_sale_attribute_filter_multiselect/) | 16.0.1.0.0 |  | Add multiselect display type for product and new filter for it
-[website_sale_cart_expire](website_sale_cart_expire/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
+[website_sale_cart_expire](website_sale_cart_expire/) | 16.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 16.0.1.1.0 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 16.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_hide_price](website_sale_hide_price/) | 16.0.2.0.0 |  | Hide product prices on the shop
@@ -2609,13 +2615,14 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 16.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 16.0.1.4.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 16.0.1.6.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 16.0.2.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 16.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_activity](fieldservice_activity/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_calendar](fieldservice_calendar/) | 16.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 16.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_isp_account](fieldservice_isp_account/) | 16.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Invoice Field Service orders based on employee time or contractor costs
+[fieldservice_isp_flow](fieldservice_isp_flow/) | 16.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
 [fieldservice_project](fieldservice_project/) | 16.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_recurring](fieldservice_recurring/) | 16.0.2.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_route](fieldservice_route/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
@@ -4315,7 +4322,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.0.6 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.0.18 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.0.19 |  | Emissione fatture elettroniche
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.0 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 16.0.1.0.1 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
@@ -4324,7 +4331,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 16.0.1.0.0 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
 [l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.0.1 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
-[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.0 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
+[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.1 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 16.0.1.0.0 |  | ITA - Tipi di documento fiscale per dichiarativi
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 16.0.1.0.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 16.0.1.0.2 |  | ITA - Codice fiscale
@@ -4348,6 +4355,7 @@ addon | version | maintainers | summary
 [l10n_it_website_portal_fatturapa](l10n_it_website_portal_fatturapa/) | 16.0.1.0.0 |  | Add fatturapa fields and checks in frontend user's details
 [l10n_it_website_portal_fiscalcode](l10n_it_website_portal_fiscalcode/) | 16.0.1.0.0 |  | Add fiscal code to details of frontend user
 [l10n_it_website_portal_ipa](l10n_it_website_portal_ipa/) | 16.0.1.0.1 |  | Aggiunge l'indice PA (IPA) tra i dettagli dell'utente nel portale.
+[l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 16.0.1.0.0 |  | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 16.0.1.1.3 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 16.0.1.0.3 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 16.0.1.0.0 |  | ITA - Causali pagamento per ritenute d'acconto
@@ -4803,7 +4811,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 16.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 16.0.1.13.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 16.0.1.14.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -4815,25 +4823,29 @@ addon | version | maintainers | summary
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 16.0.1.1.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 16.0.3.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
-[l10n_ro_city](l10n_ro_city/) | 16.0.3.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
-[l10n_ro_config](l10n_ro_config/) | 16.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
+[l10n_ro_city](l10n_ro_city/) | 16.0.3.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
+[l10n_ro_config](l10n_ro_config/) | 16.0.1.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 16.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
-[l10n_ro_etransport](l10n_ro_etransport/) | 16.0.0.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
+[l10n_ro_etransport](l10n_ro_etransport/) | 16.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
+[l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 16.0.0.3.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 16.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 16.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 16.0.2.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 16.0.2.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 16.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 16.0.1.21.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
-[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 16.0.1.23.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
+[l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 16.0.0.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 16.0.4.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 16.0.0.1.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
+[l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 16.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
+[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 16.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 16.0.5.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 16.0.6.13.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fisa Magazie)
-[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 16.0.1.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
+[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 16.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
 
 [//]: # (end addons)
 
@@ -5009,10 +5021,10 @@ addon | version | maintainers | summary
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.1 |  | Sistema de gestión de aceites industriales usados en España - Compras
 [l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.1 |  | Sist. gestión aceites industriales usados en España - Ventas
 [l10n_es_sigaus_stock_picking_report_valued](l10n_es_sigaus_stock_picking_report_valued/) | 16.0.1.0.0 |  | Show SIGAUS amount in valued stock pickings.
-[l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.0.8 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.0.9 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.0.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 16.0.1.0.3 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
-[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 16.0.1.0.0 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
+[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 16.0.1.0.1 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.4.0 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 16.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | Libro de IGIC
@@ -5154,7 +5166,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_th_account_tax](l10n_th_account_tax/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
-[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
+[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 16.0.1.2.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 16.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
 [l10n_th_base_location](l10n_th_base_location/) | 16.0.1.0.0 |  | Thai Localization - Base Location
@@ -5762,7 +5774,7 @@ addon | version | maintainers | summary
 [procurement_auto_create_group](procurement_auto_create_group/) | 16.0.1.0.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [product_packaging_usability](product_packaging_usability/) | 16.0.1.0.1 |  | Add sugar to Product Packaging
 [scrap_reason_code](scrap_reason_code/) | 16.0.1.1.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
-[stock_demand_estimate](stock_demand_estimate/) | 16.0.1.1.0 |  | Allows to create demand estimates.
+[stock_demand_estimate](stock_demand_estimate/) | 16.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 16.0.1.0.0 |  | Allows to create demand estimates.
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 16.0.1.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
@@ -5955,7 +5967,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 16.0.1.7.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
@@ -6014,11 +6026,11 @@ addon | version | maintainers | summary
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 16.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 16.0.1.0.0 |  | Integration between Sales and Available to Promise Release
 [shopfloor_base](shopfloor_base/) | 16.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
-[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.0.0 |  | Release Operations based on available to promise
+[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.1.0 |  | Release Operations based on available to promise
 [stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.2 |  | Dynamic routing of stock moves
 [stock_picking_completion_info](stock_picking_completion_info/) | 16.0.1.0.1 |  | Display on current document completion information according to next operations
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 16.0.1.0.0 |  | Define different shipping policies according to picking type
-[stock_release_channel](stock_release_channel/) | 16.0.2.11.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
+[stock_release_channel](stock_release_channel/) | 16.0.2.12.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
 [stock_release_channel_auto_release](stock_release_channel_auto_release/) | 16.0.1.0.2 |  | Add an automatic release mode to the release channel
 [stock_release_channel_batch_mode_commercial_partner](stock_release_channel_batch_mode_commercial_partner/) | 16.0.1.0.2 |  | Release pickings into channels by batch of same commercial entity
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.0.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add the cutoff time to the release channel
@@ -6026,14 +6038,16 @@ addon | version | maintainers | summary
 [stock_release_channel_geoengine](stock_release_channel_geoengine/) | 16.0.1.0.0 |  | Release channel based on geo-localization
 [stock_release_channel_partner_delivery_window](stock_release_channel_partner_delivery_window/) | 16.0.1.0.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_partner_public_holidays](stock_release_channel_partner_public_holidays/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add an option to exclude the public holidays when assigning th release channel
-[stock_release_channel_plan](stock_release_channel_plan/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Manage release channel preparation plan
-[stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.5.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
+[stock_release_channel_plan](stock_release_channel_plan/) | 16.0.1.3.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Manage release channel preparation plan
+[stock_release_channel_plan_process_end_time](stock_release_channel_plan_process_end_time/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module between release channel plan and process end time
+[stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.7.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_propagate_channel_picking](stock_release_channel_propagate_channel_picking/) | 16.0.1.2.0 |  | Allows to propagate the channel to every picking that is created from the original one.
 [stock_release_channel_shipment_advice](stock_release_channel_shipment_advice/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Plan shipment advices for ready and released pickings
+[stock_release_channel_shipment_advice_process_end_time](stock_release_channel_shipment_advice_process_end_time/) | 16.0.1.0.0 |  | This module allows to set a delay time (in minutes) between the release channel process end time and the shipment advice arrival to the dock time.
 [stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.1.2.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Release channel with shipment lead time
 [stock_release_channel_show_volume](stock_release_channel_show_volume/) | 16.0.1.1.0 |  | Display volumes of stock release channels
 [stock_release_channel_show_weight](stock_release_channel_show_weight/) | 16.0.1.1.0 |  | Display weights of stock release channels
-[stock_storage_type](stock_storage_type/) | 16.0.1.0.6 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Manage packages and locations storage types
+[stock_storage_type](stock_storage_type/) | 16.0.1.0.7 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Manage packages and locations storage types
 [stock_storage_type_putaway_abc](stock_storage_type_putaway_abc/) | 16.0.1.0.0 |  | Advanced storage strategy ABC for WMS
 [stock_warehouse_flow](stock_warehouse_flow/) | 16.0.1.0.2 |  | Configure routing flow for stock moves
 
@@ -6333,12 +6347,12 @@ addon | version | maintainers | summary
 [purchase_allowed_product](purchase_allowed_product/) | 16.0.2.1.0 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_blanket_order](purchase_blanket_order/) | 16.0.2.0.1 |  | Purchase Blanket Orders
 [purchase_commercial_partner](purchase_commercial_partner/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Supplier' on POs
-[purchase_default_terms_conditions](purchase_default_terms_conditions/) | 16.0.1.0.2 |  | This module allows purchase default terms & conditions
+[purchase_default_terms_conditions](purchase_default_terms_conditions/) | 16.0.1.0.3 |  | This module allows purchase default terms & conditions
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 16.0.1.0.1 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 16.0.1.0.1 |  | Option to create deposit from purchase order
 [purchase_discount](purchase_discount/) | 16.0.1.2.0 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 16.0.1.0.1 |  | Custom exceptions on purchase order
-[purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.0 |  | Purchase Free-Of-Payment shipping
+[purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.1 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.1 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_method](purchase_invoice_method/) | 16.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_invoice_plan](purchase_invoice_plan/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
@@ -6639,7 +6653,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_attribute_tax](product_variant_attribute_tax/) | 16.0.1.0.0 |  | Set taxes on the product attribute values
-[product_variant_configurator](product_variant_configurator/) | 16.0.1.0.2 |  | Provides an abstract model for product variant configuration.
+[product_variant_configurator](product_variant_configurator/) | 16.0.1.0.3 |  | Provides an abstract model for product variant configuration.
 [product_variant_default_code](product_variant_default_code/) | 16.0.1.1.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Product Variant Default Code
 [product_variant_name](product_variant_name/) | 16.0.1.0.0 |  | Product Variant Name
 [product_variant_sale_price](product_variant_sale_price/) | 16.0.1.0.0 |  | Allows to write fixed prices in product variants
@@ -6808,7 +6822,7 @@ addon | version | maintainers | summary
 [project_task_stage_mgmt](project_task_stage_mgmt/) | 16.0.1.0.0 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Allows to assign and create task stages on project creation wizard
 [project_task_stage_state](project_task_stage_state/) | 16.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
 [project_template](project_template/) | 16.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Templates
-[project_timeline](project_timeline/) | 16.0.1.3.0 |  | Timeline view for projects
+[project_timeline](project_timeline/) | 16.0.1.4.1 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 16.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 16.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 16.0.1.0.0 |  | Project Types
@@ -6902,12 +6916,12 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 16.0.1.0.0 |  | Rebate agreements applied to all company group members
-[contract](contract/) | 16.0.2.7.0 |  | Recurring - Contracts Management
+[contract](contract/) | 16.0.2.8.0 |  | Recurring - Contracts Management
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Contract Invoice Start End Dates
 [contract_payment_mode](contract_payment_mode/) | 16.0.1.0.0 |  | Payment mode in contracts and their invoices
 [contract_sale](contract_sale/) | 16.0.1.2.0 |  | Contract from Sale
 [contract_sale_generation](contract_sale_generation/) | 16.0.1.1.0 |  | Contracts Management - Recurring Sales
-[contract_variable_quantity](contract_variable_quantity/) | 16.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
+[contract_variable_quantity](contract_variable_quantity/) | 16.0.1.1.0 |  | Variable quantity in contract recurrent invoicing
 [subscription_oca](subscription_oca/) | 16.0.1.0.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
@@ -7160,7 +7174,7 @@ addon | version | maintainers | summary
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 16.0.1.0.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 16.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_contact_active](mass_mailing_contact_active/) | 16.0.1.0.0 |  | Adds active feature on mailing list contact and subscriptions
-[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 16.0.1.0.0 |  | Know and track (un)subscription reasons, GDPR compliant
+[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 16.0.1.0.1 |  | Know and track (un)subscription reasons, GDPR compliant
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 16.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 16.0.1.0.0 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 16.0.1.0.0 |  | Link partners with mass-mailing
@@ -7337,7 +7351,7 @@ addon | version | maintainers | summary
 [report_context](report_context/) | 16.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 16.0.2.0.0 |  | Base module to create csv report
 [report_label](report_label/) | 16.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Print configurable self-adhesive labels reports
-[report_py3o](report_py3o/) | 16.0.1.0.1 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
+[report_py3o](report_py3o/) | 16.0.1.0.2 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
 [report_py3o_fusion_server](report_py3o_fusion_server/) | 16.0.1.0.0 |  | Let the fusion server handle format conversion.
 [report_qr](report_qr/) | 16.0.1.0.0 |  | Web QR Manager
 [report_qweb_decimal_place](report_qweb_decimal_place/) | 16.0.1.0.0 |  | Report Qweb Decimal Place
@@ -7347,9 +7361,9 @@ addon | version | maintainers | summary
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 16.0.1.0.0 |  | Add watermarks to your QWEB PDF reports
 [report_substitute](report_substitute/) | 16.0.1.0.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module allows to create substitution rules for report actions.
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 16.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
-[report_xlsx](report_xlsx/) | 16.0.2.0.0 |  | Base module to create xlsx report
+[report_xlsx](report_xlsx/) | 16.0.2.0.1 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 16.0.1.0.0 |  | Report xlsx helpers
-[report_xml](report_xml/) | 16.0.1.1.1 |  | Allow to generate XML reports
+[report_xml](report_xml/) | 16.0.1.1.2 |  | Allow to generate XML reports
 [sql_export](sql_export/) | 16.0.2.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Export data in csv file with SQL requests
 [sql_export_excel](sql_export_excel/) | 16.0.1.0.1 |  | Allow to export a sql query to an excel file.
 [sql_export_mail](sql_export_mail/) | 16.0.2.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Send csv file generated by sql query by mail.
@@ -7511,7 +7525,7 @@ addon | version | maintainers | summary
 [base_technical_user](base_technical_user/) | 16.0.1.0.0 |  | Add a technical user parameter on the company
 [base_time_window](base_time_window/) | 16.0.1.0.0 |  | Base model to handle time windows
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 16.0.1.2.0 |  | Adds more operators for view inheritance
-[cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Run cron on fixed hours
+[cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 16.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Run cron on fixed hours
 [database_cleanup](database_cleanup/) | 16.0.1.0.2 |  | Database cleanup
 [dbfilter_from_header](dbfilter_from_header/) | 16.0.1.0.1 |  | Filter databases with HTTP headers
 [excel_import_export](excel_import_export/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
@@ -7590,7 +7604,7 @@ addon | version | maintainers | summary
 [auth_oidc_environment](auth_oidc_environment/) | 16.0.1.0.0 |  | This module allows to use server env for OIDC configuration
 [auth_saml](auth_saml/) | 16.0.1.0.4 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 16.0.1.0.0 |  | This module disable all inactive sessions since a given delay
-[auth_signup_verify_email](auth_signup_verify_email/) | 16.0.1.0.0 |  | Force uninvited users to use a good email for signup
+[auth_signup_verify_email](auth_signup_verify_email/) | 16.0.1.0.1 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 16.0.1.0.0 |  | Makes the user login field case insensitive
 [base_user_show_email](base_user_show_email/) | 16.0.1.0.0 |  | Untangle user login and email
 [password_security](password_security/) | 16.0.1.0.0 |  | Allow admin to set password security requirements.
@@ -8076,7 +8090,7 @@ addon | version | maintainers | summary
 [extendable](extendable/) | 16.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 16.0.2.1.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Allows the use of extendable into fastapi apps
 [fastapi](fastapi/) | 16.0.1.2.7 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
-[fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.3 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication for FastAPI.
+[fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.4 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication for FastAPI.
 [fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for fastapi_auth_jwt.
 [graphql_base](graphql_base/) | 16.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Base GraphQL/GraphiQL controller
 [graphql_demo](graphql_demo/) | 16.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | GraphQL Demo
@@ -8679,16 +8693,16 @@ addon | version | maintainers | summary
 [web_pwa_oca](web_pwa_oca/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
 [web_refresher](web_refresher/) | 16.0.2.0.1 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 16.0.1.0.1 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 16.0.1.2.6 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 16.0.1.2.7 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
 [web_save_discard_button](web_save_discard_button/) | 16.0.1.0.2 | [![synconics](https://github.com/synconics.png?size=30px)](https://github.com/synconics) | Save & Discard Buttons
 [web_search_with_and](web_search_with_and/) | 16.0.1.0.0 |  | Use AND conditions on omnibar search
 [web_select_all_companies](web_select_all_companies/) | 16.0.1.0.1 |  | Allows you to select all companies in one click.
 [web_send_message_popup](web_send_message_popup/) | 16.0.1.0.0 |  | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 16.0.1.0.0 |  | Use the whole available screen width when displaying sheets
 [web_theme_classic](web_theme_classic/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Contrasted style on fields to improve the UI.
-[web_timeline](web_timeline/) | 16.0.1.0.3 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 16.0.1.1.0 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
 [web_touchscreen](web_touchscreen/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | UX improvements for touch screens
-[web_tree_duplicate](web_tree_duplicate/) | 16.0.1.0.0 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Duplicate records directly from the tree view.
+[web_tree_duplicate](web_tree_duplicate/) | 16.0.1.0.1 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Duplicate records directly from the tree view.
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 16.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 16.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_datepicker_fulloptions](web_widget_datepicker_fulloptions/) | 16.0.1.0.0 |  | Web Widget DatePicker Full Options
