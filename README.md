@@ -1365,16 +1365,11 @@ Date:   Thu Apr 4 09:17:44 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8755716fd102d5247a3f934f198f5102f7fe1a42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:01:09 2024 +0000
+commit 1273407656f3d4e5c494069a83e204fa7db63508
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 8 15:26:36 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: manufacture-13.0/manufacture-13.0-repair_refurbish
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-repair_refurbish/it/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
