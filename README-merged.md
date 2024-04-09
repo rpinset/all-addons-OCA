@@ -307,7 +307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.9.2 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.10.0 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -2674,7 +2674,7 @@ addon | version | maintainers | summary
 [edi_storage_oca](edi_storage_oca/) | 15.0.1.3.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.1 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 15.0.1.0.0 |  | Base module for connecting with Voxel
-[edi_voxel_sale_order_import_oca](edi_voxel_sale_order_import_oca/) | 15.0.1.0.0 |  | Import sale order from Voxel.
+[edi_voxel_sale_order_import_oca](edi_voxel_sale_order_import_oca/) | 15.0.1.0.1 |  | Import sale order from Voxel.
 [edi_voxel_sale_secondary_unit_oca](edi_voxel_sale_secondary_unit_oca/) | 15.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Map Voxel UoM to Sale Secondary UoM and Use Them
 [edi_voxel_secondary_unit_oca](edi_voxel_secondary_unit_oca/) | 15.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Add Voxel UoM code to Secondary UoM model
 [edi_voxel_stock_picking_oca](edi_voxel_stock_picking_oca/) | 15.0.1.0.2 |  | Sends stock picking report to Voxel.
@@ -3003,7 +3003,7 @@ addon | version | maintainers | summary
 [crm_timesheet](crm_timesheet/) | 15.0.1.0.0 |  | CRM Timesheet
 [hr_employee_product](hr_employee_product/) | 15.0.1.0.0 |  | Product is an employee
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 15.0.1.0.0 |  | Timesheet - Begin/End Hours
-[hr_timesheet_sheet](hr_timesheet_sheet/) | 15.0.1.2.0 |  | Timesheet Sheets, Activities
+[hr_timesheet_sheet](hr_timesheet_sheet/) | 15.0.1.3.0 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 15.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
 [hr_timesheet_sheet_begin_end](hr_timesheet_sheet_begin_end/) | 15.0.1.0.0 |  | Timesheet Sheet - Begin/End Hours
 [hr_timesheet_sheet_no_create](hr_timesheet_sheet_no_create/) | 15.0.1.0.0 |  | Avoid creation of projects and tasks in timesheet sheet lines
@@ -4685,7 +4685,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_nl_account_tax_unece](l10n_nl_account_tax_unece/) | 15.0.1.0.0 |  | Auto-configure UNECE params on Dutch taxes
+[l10n_nl_account_tax_unece](l10n_nl_account_tax_unece/) | 15.0.1.2.0 |  | Auto-configure UNECE params on Dutch taxes
 [l10n_nl_bank](l10n_nl_bank/) | 15.0.1.0.1 |  | Import all Dutch banks with BIC code
 [l10n_nl_bsn](l10n_nl_bsn/) | 15.0.1.0.1 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Burgerservicenummer (BSN) for Partners
 [l10n_nl_oin](l10n_nl_oin/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds Dutch OIN field
@@ -5620,10 +5620,12 @@ addon | version | maintainers | summary
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
 [stock_barcodes](stock_barcodes/) | 15.0.3.0.1 |  | It provides read barcode on stock operations.
-[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.0 |  | It provides read GS1 barcode on stock operations.
+[stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.0.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
+[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.1 |  | It provides read GS1 barcode on stock operations.
+[stock_barcodes_gs1_secondary_unit](stock_barcodes_gs1_secondary_unit/) | 15.0.1.0.0 |  | It provides read package from GS1 barcode stored into secondary unit data.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.0 |  | It provides read barcodes on stock operations from batch pickings.
 [stock_barcodes_picking_batch_revision](stock_barcodes_picking_batch_revision/) | 15.0.1.0.1 |  | It provides batch pickings revision from other users.
-[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.4.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
+[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.5.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
 [stock_picking_product_barcode_report_secondary_unit](stock_picking_product_barcode_report_secondary_unit/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Set by default the maximum quantity of labels to print.
 
 [//]: # (end addons)
@@ -5850,6 +5852,7 @@ addon | version | maintainers | summary
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
 [stock_move_location](stock_move_location/) | 15.0.1.3.4 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_purchase_uom](stock_move_purchase_uom/) | 15.0.1.0.1 |  | Allow to use the purchase UoM in a stock move
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 15.0.1.0.1 |  | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.0 |  | Link Reordering rules to stock moves
@@ -6148,7 +6151,7 @@ addon | version | maintainers | summary
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 15.0.0.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [mrp_multi_level](mrp_multi_level/) | 15.0.1.11.5 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
-[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 15.0.1.1.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
+[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 15.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 15.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter manufacturing orders by their components availability state
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Allows to plan production from the desired finish date
@@ -7220,6 +7223,7 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.0 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_improved_tracking_value](mail_improved_tracking_value/) | 15.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 15.0.0.1.0 |  | Preview email templates in the browser
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 15.0.1.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
@@ -7586,6 +7590,7 @@ addon | version | maintainers | summary
 [module_analysis](module_analysis/) | 15.0.1.1.1 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 15.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 15.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
+[monitoring](monitoring/) | 15.0.1.0.0 |  | Generic monitoring of Odoo instances
 [onchange_helper](onchange_helper/) | 15.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
 [scheduler_error_mailer](scheduler_error_mailer/) | 15.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 15.0.3.0.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
@@ -8832,6 +8837,7 @@ addon | version | maintainers | summary
 [website_local_font](website_local_font/) | 15.0.1.0.0 |  | Allows to add local fonts on Odoo website
 [website_odoo_debranding](website_odoo_debranding/) | 15.0.1.0.1 |  | Remove Odoo Branding from Website
 [website_plausible](website_plausible/) | 15.0.1.1.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Track website users using plausible
+[website_require_login](website_require_login/) | 15.0.1.0.0 |  | Website Login Required
 [website_snippet_big_button](website_snippet_big_button/) | 15.0.1.1.0 |  | A snippet that adds two big buttons
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 15.0.1.0.0 |  | Allow to select country in a dropdown
 [website_snippet_dynamic_link](website_snippet_dynamic_link/) | 15.0.1.0.0 |  | Website Snippet Dynamic Link
