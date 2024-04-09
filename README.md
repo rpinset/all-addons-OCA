@@ -103,25 +103,30 @@ Date:   Fri Apr 5 10:24:37 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 1de89be54291fbd66ba9fd02494eab80994c015f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 8 08:08:05 2024 +0000
+commit 84f107d4f0f34752f097222e81d3e117bd76deb1
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Apr 8 13:36:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 40.0% (2 of 5 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_line_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_line_report/it/
+    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_report_due_list
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_report_due_list/it/
 
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit af7f00fbf1276f2ae928cebba40e20e533402d93
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 1 08:09:39 2024 +0000
+commit 1626e4b1b15dbbb43a628dd75aed5f4180d5d504
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Apr 8 10:45:43 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (10 of 10 strings)
+    
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_validation_queued
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_validation_queued/it/
 
 
 ## account-fiscal-rule
@@ -219,16 +224,11 @@ Date:   Thu Dec 21 09:35:30 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit a98223584aa991f54c3d6ca915ed4dd85d79dadc
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Mar 27 16:24:04 2024 +0000
+commit 7239895443d01d704460c411fb339862629b89ad
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 15:32:01 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (21 of 21 strings)
-    
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order_tier_validation/es/
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -293,9 +293,9 @@ Date:   Tue Dec 19 14:38:47 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 478014371ec3e1c4abb868f8ec232b3a347e6e57
+commit 5277e9cef460898aac71a2358f3892c94a2ef1f2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 14:34:16 2024 +0000
+Date:   Mon Apr 8 13:59:52 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1259,16 +1259,11 @@ Date:   Thu Apr 4 09:18:19 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 75cc6eea672932819ba34bc21f9578137315112f
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Apr 3 14:05:05 2024 +0000
+commit f45deb03b7c606b03587ba745dd3f210370c4dd9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 16:25:29 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: manufacture-14.0/manufacture-14.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_multi_level/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting

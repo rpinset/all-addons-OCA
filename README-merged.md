@@ -1002,7 +1002,7 @@ addon | version | maintainers | summary
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.0.0 |  | Account Invoice Select for Payment
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
-[account_payment_order](account_payment_order/) | 14.0.2.5.1 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 14.0.2.5.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 14.0.1.0.2 |  | Account Payment Order Return
@@ -6675,7 +6675,7 @@ addon | version | maintainers | summary
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [mrp_lot_production_date](mrp_lot_production_date/) | 14.0.1.0.0 |  | MRP Lot Production Date
 [mrp_multi_level](mrp_multi_level/) | 14.0.1.15.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
-[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 14.0.1.1.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
+[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 14.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_package_propagation](mrp_package_propagation/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manufacturing Order Auto-Validation when components are picked
@@ -6708,7 +6708,7 @@ addon | version | maintainers | summary
 [product_mrp_info](product_mrp_info/) | 14.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds smart button in product form view linking to manufacturing order list.
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 14.0.1.0.0 |  | MRP extension for quality control (OCA)
 [quality_control_oca](quality_control_oca/) | 14.0.1.4.2 |  | Generic infrastructure for quality tests.
-[quality_control_stock_oca](quality_control_stock_oca/) | 14.0.1.0.1 |  | Quality control - Stock (OCA)
+[quality_control_stock_oca](quality_control_stock_oca/) | 14.0.1.0.2 |  | Quality control - Stock (OCA)
 [quality_control_team_oca](quality_control_team_oca/) | 14.0.1.0.0 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds quality control teams to handle different quality control workflows
 [repair_discount](repair_discount/) | 14.0.1.0.0 |  | Repair Discount
 [repair_picking_after_done](repair_picking_after_done/) | 14.0.1.0.1 |  | Transfer repaired move to another location directly from repaire order
