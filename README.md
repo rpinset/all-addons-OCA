@@ -120,16 +120,16 @@ Date:   Sun Nov 12 16:01:43 2023 +0100
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit d175bd328c12c73d0a266de1b6bc526ad0204545
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:12:34 2024 +0000
+commit 2e97141d4ad0b532b0d4cda198b9c11820ab2541
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Apr 9 19:03:19 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: intrastat-extrastat-17.0/intrastat-extrastat-17.0-intrastat_base
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-intrastat_base/it/
+    Translation: intrastat-extrastat-17.0/intrastat-extrastat-17.0-product_harmonized_system_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-product_harmonized_system_delivery/
 
 
 ## mis-builder
@@ -175,16 +175,11 @@ Date:   Sun Nov 12 15:41:21 2023 +0100
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 8e00a53a17c4729e3affa8cc82ac92e4463d9eb8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 2 08:30:00 2024 +0000
+commit d06335032828b43110f6db3f5c9f6275f4ef135b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 15:33:23 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 99.4% (174 of 175 strings)
-    
-    Translation: bank-payment-17.0/bank-payment-17.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_banking_pain_base/it/
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -485,16 +480,11 @@ Date:   Sun Nov 12 15:43:22 2023 +0100
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit df265aab307c0a4d12c734730327fbbed5b29a38
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Mar 27 12:55:18 2024 +0000
+commit 47898df6bf6e55c07f8fbe0bea1cd9f5fd3a4af9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 16:20:31 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (34 of 34 strings)
-    
-    Translation: edi-17.0/edi-17.0-account_invoice_facturx
-    Translate-URL: https://translation.odoo-community.org/projects/edi-17-0/edi-17-0-account_invoice_facturx/es/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -513,16 +503,11 @@ Date:   Tue Feb 20 13:48:32 2024 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 12fc9a1696373190ea0f8c832723231c2c6eddcb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 6 07:19:38 2024 +0000
+commit 7f906fcff4899b3df16b6612121a5b33ab369c76
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Apr 6 14:00:49 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: margin-analysis-17.0/margin-analysis-17.0-account_invoice_margin
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-17-0/margin-analysis-17-0-account_invoice_margin/it/
+    [BOT] post-merge updates
 
 
 ## fleet
@@ -1201,16 +1186,11 @@ Date:   Sun Nov 12 16:02:21 2023 +0100
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit faeea98de0d7b164da8831797563bd8ace8a2827
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 19 15:30:27 2024 +0000
+commit dec0b4a6ff712e1930e1c6dfa1030c4bd56ae2d2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 16:19:53 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (229 of 229 strings)
-    
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_request/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1446,9 +1426,9 @@ Date:   Wed Mar 27 13:23:13 2024 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 5fe5154d549b793a0adfa5ef85f3e93b7df9006f
+commit 7a821c5348f0abed4ba94e9c3221338e7476c7a1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 9 14:28:04 2024 +0000
+Date:   Tue Apr 9 10:30:52 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1464,16 +1444,11 @@ Date:   Sun Nov 12 16:09:49 2023 +0100
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit d206382dc3052573c354fab139779f2d5f4c3a8f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 25 07:50:45 2024 +0000
+commit eb445db55b5846644333190e97f211d345dae5ca
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 16:08:10 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (125 of 125 strings)
-    
-    Translation: server-ux-17.0/server-ux-17.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-base_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files
