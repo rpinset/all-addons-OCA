@@ -80,16 +80,11 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit be24cd74415c9e710be074e9e53feeeac2a14343
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 08:59:51 2024 +0000
+commit 185e142814c75831effb70dfc6954daab5508ff9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 9 10:38:37 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.9% (82 of 274 strings)
-    
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -472,9 +467,9 @@ Date:   Tue Nov 19 21:13:10 2019 +0100
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit 622a85fffb0461c8aa9f9906b683e5386f529771
+commit 1bfc26a39c738915b9c2c1998ca1278c6b780f3f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:12 2024 +0000
+Date:   Mon Apr 8 11:54:19 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1267,16 +1262,11 @@ Date:   Thu Mar 28 20:39:44 2024 +0000
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit ec04bce7c9594bf33d48d4a10d5da6a85a56d329
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 20:48:09 2023 +0000
+commit 23d7914f0f571ed8b110b78094db99808fe3bba0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Apr 6 13:00:08 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: purchase-reporting-12.0/purchase-reporting-12.0-purchase_comment_template
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-reporting-12-0/purchase-reporting-12-0-purchase_comment_template/
+    [UPD] addons table in README.md
 
 
 ## product-attribute
