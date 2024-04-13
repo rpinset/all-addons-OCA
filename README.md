@@ -1365,9 +1365,9 @@ Date:   Thu Apr 4 09:17:44 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 1273407656f3d4e5c494069a83e204fa7db63508
+commit f86b04fd4819154663e4ab403cb354c2c7f7d031
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 8 15:26:36 2024 +0000
+Date:   Wed Apr 10 09:48:41 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1514,9 +1514,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 2d863a096265f676acb45c884378266680c7ba45
+commit 8785f77465c8809feec3ccb70f2bb3c1f6801dc0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:42:55 2024 +0000
+Date:   Thu Apr 11 09:05:52 2024 +0000
 
     Translated using Weblate (Italian)
     
