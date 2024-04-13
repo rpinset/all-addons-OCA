@@ -255,6 +255,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_financial_report](account_financial_report/) | 17.0.1.0.0 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 
 [//]: # (end addons)
@@ -396,8 +397,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_avatax_oca](account_avatax_oca/) | 17.0.1.1.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
-[account_avatax_sale_oca](account_avatax_sale_oca/) | 17.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
+[account_avatax_oca](account_avatax_oca/) | 17.0.1.2.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
+[account_avatax_sale_oca](account_avatax_sale_oca/) | 17.0.1.1.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 17.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 17.0.1.0.0 |  | Account Fiscal Position Partner Type
@@ -748,9 +749,10 @@ addon | version | maintainers | summary
 [account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.0 |  | Create SEPA XML files for Credit Transfers
 [account_payment_mode](account_payment_mode/) | 17.0.1.0.0 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 17.0.1.0.1 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 17.0.1.1.0 |  | Account Payment Order
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.0 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 17.0.1.1.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase_stock](account_payment_purchase_stock/) | 17.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 17.0.1.0.0 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
@@ -1546,6 +1548,7 @@ addon | version | maintainers | summary
 [sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
+[sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.0.0 |  | Allow you to block the creation of deliveries from a sale order.
@@ -1653,6 +1656,7 @@ addon | version | maintainers | summary
 [partner_firstname](partner_firstname/) | 17.0.1.0.0 |  | Split first name and last name for non company partners
 [partner_identification](partner_identification/) | 17.0.1.0.0 |  | Partner Identification Numbers
 [partner_manual_rank](partner_manual_rank/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) | Be able to manually flag partners as customer or supplier.
+[partner_pricelist_search](partner_pricelist_search/) | 17.0.1.0.0 |  | Partner pricelist search
 [partner_ref_unique](partner_ref_unique/) | 17.0.1.0.0 |  | Add an unique constraint to partner ref field
 [partner_second_lastname](partner_second_lastname/) | 17.0.1.0.0 |  | Have split first and second lastnames
 [partner_stage](partner_stage/) | 17.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
@@ -3189,8 +3193,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_ec_account_edi](l10n_ec_account_edi/) | 17.0.1.0.5 |  | Electronic data interchange adapted Ecuadorian localization
-[l10n_ec_base](l10n_ec_base/) | 17.0.1.0.0 |  | Ecuadorian Localization
+[l10n_ec_account_edi](l10n_ec_account_edi/) | 17.0.1.0.6 |  | Electronic data interchange adapted Ecuadorian localization
+[l10n_ec_base](l10n_ec_base/) | 17.0.1.0.1 |  | Ecuadorian Localization
 
 [//]: # (end addons)
 
@@ -5447,7 +5451,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.0.0 |  | Allows to write fixed prices in product variants
 
 [//]: # (end addons)
 
@@ -5665,7 +5673,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[contract](contract/) | 17.0.1.0.0 |  | Recurring - Contracts Management
 
 [//]: # (end addons)
 
@@ -5882,6 +5894,7 @@ addon | version | maintainers | summary
 [base_search_mail_content](base_search_mail_content/) | 17.0.1.0.0 |  | Base Search Mail Content
 [mail_activity_board](mail_activity_board/) | 17.0.1.0.1 |  | Add Activity Boards
 [mail_activity_team](mail_activity_team/) | 17.0.1.0.0 |  | Add Teams to Activities
+[mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
@@ -6160,6 +6173,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[auditlog](auditlog/) | 17.0.1.0.0 |  | Audit Log
 [base_exception](base_exception/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_technical_user](base_technical_user/) | 17.0.1.0.0 |  | Add a technical user parameter on the company
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 17.0.1.0.0 |  | Adds more operators for view inheritance
