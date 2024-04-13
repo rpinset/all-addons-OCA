@@ -84,6 +84,8 @@ PyYAML
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
+# generated from manifests external_dependencies
+freezegun
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 # generated from manifests external_dependencies
 python-dateutil

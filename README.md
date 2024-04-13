@@ -65,16 +65,16 @@ Date:   Fri Oct 27 22:11:29 2023 +0200
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 5d9c7a289d3aba6078a622553a478344fdea5e67
-Author: Ignacio Buioli <ibuioli@gmail.com>
-Date:   Sun Apr 7 22:51:41 2024 +0000
+commit 8b5d922250bfd4576de0d16578b585c012d59d44
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Apr 11 08:53:13 2024 +0000
 
-    Translated using Weblate (Spanish (Argentina))
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (265 of 265 strings)
+    Currently translated at 93.9% (156 of 166 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/es_AR/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -581,9 +581,9 @@ Date:   Fri Oct 27 22:38:49 2023 +0200
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 2a2426cde285ce00487d9a52aa13aff9f2083d7a
+commit b9195e75ade32f18815dc646b929f6b404569d31
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 9 06:39:44 2024 +0000
+Date:   Fri Apr 12 10:14:57 2024 +0000
 
     [BOT] post-merge updates
 
@@ -820,9 +820,9 @@ Date:   Sun Oct 29 07:13:31 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 059d610ea9b6b4c47dae5250df36cf1fac3edf13
+commit 1849feb12b7dbb64ce5ec0991a2f76346831aebc
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Mar 14 16:09:49 2024 +0000
+Date:   Wed Apr 10 09:50:02 2024 +0000
 
     Update translation files
     
@@ -996,11 +996,16 @@ Date:   Fri Oct 27 23:41:53 2023 +0200
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 79980b6f6a1d151a13ebde3c6c0c9399cdc0cc93
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 2 16:43:42 2024 +0000
+commit 577dc582f64689d0e5962fd57c2f85d5260f2cfa
+Author: mtbochaca <mtbochaca@gmail.com>
+Date:   Thu Apr 11 08:44:19 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (162 of 162 strings)
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_vat_book
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_vat_book/ca/
 
 
 ## l10n-switzerland
@@ -1100,11 +1105,16 @@ Date:   Mon Mar 25 15:43:50 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 8af4d7be96c47b1632e67e813f07f8ea704577d2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 9 06:46:37 2024 +0000
+commit dde76b8152cfc1bffad5f617ec48887eaf7a0b61
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Apr 12 09:30:00 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/
 
 
 ## stock-logistics-workflow
@@ -1132,9 +1142,9 @@ Date:   Fri Oct 27 22:32:08 2023 +0200
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 3f5e9c74dee4f65b9cf01af53e091b748c469f22
+commit c135d9bd083e2fc75b658c71b84bbff6f5dbddb5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 9 09:46:03 2024 +0000
+Date:   Thu Apr 11 08:33:54 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1334,16 +1344,16 @@ Date:   Fri Oct 27 23:57:40 2023 +0200
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit a97ecc416d628be474b0007cfb85400bf2939bbe
-Author: Grégory Moka Tourisme <gregory@mokatourisme.fr>
-Date:   Thu Mar 21 15:40:33 2024 +0000
+commit 4d6ae77b039a223a37624b332fef8a01ebffa933
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Apr 11 08:54:17 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (171 of 171 strings)
+    Currently translated at 62.6% (198 of 316 strings)
     
-    Translation: contract-15.0/contract-15.0-subscription_oca
-    Translate-URL: https://translation.odoo-community.org/projects/contract-15-0/contract-15-0-subscription_oca/fr/
+    Translation: contract-15.0/contract-15.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-15-0/contract-15-0-contract/it/
 
 
 ## program
