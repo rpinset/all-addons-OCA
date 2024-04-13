@@ -103,16 +103,11 @@ Date:   Fri Apr 5 10:24:37 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 84f107d4f0f34752f097222e81d3e117bd76deb1
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Apr 8 13:36:26 2024 +0000
+commit 0b9b7759b2cabfd759390a297f45a1d601b7b336
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 11 16:47:43 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_report_due_list
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_report_due_list/it/
+    [BOT] post-merge updates
 
 
 ## account-invoicing
@@ -293,9 +288,9 @@ Date:   Tue Dec 19 14:38:47 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 5277e9cef460898aac71a2358f3892c94a2ef1f2
+commit 74cc04a9a5796af01726fd2012e5b6c2980102d7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 8 13:59:52 2024 +0000
+Date:   Thu Apr 11 08:46:36 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -575,30 +570,20 @@ Date:   Wed Apr 3 15:08:24 2024 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit e730bb2bcec8a00e06a2f55253543bf9e3e1f5ae
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 26 07:17:04 2024 +0000
+commit 0a9155163600218f4ad3d40877d1af20f7c165a9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 12 10:44:44 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: margin-analysis-14.0/margin-analysis-14.0-sale_report_margin
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-14-0/margin-analysis-14-0-sale_report_margin/it/
+    [BOT] post-merge updates
 
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 5e3a7ac734d5c3e550e3b97f4445026cdbb7133d
-Author: Ivorra78 <informatica@totmaterial.es>
-Date:   Wed Mar 20 18:09:17 2024 +0000
+commit a0a12623767e5319ad3ace5cfefa429c277c373a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 11 15:34:18 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: fleet-14.0/fleet-14.0-fleet_vehicle_history_date_end
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-14-0/fleet-14-0-fleet_vehicle_history_date_end/es/
+    [BOT] post-merge updates
 
 
 ## infrastructure-dns
@@ -1006,9 +991,9 @@ Date:   Fri Oct 27 22:45:57 2023 +0200
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 8a007eec4646252949be62a975c7c5a04af9c575
+commit a232d15676aa1ebe43dd811f80f2d6a15d8183a0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 4 12:38:32 2024 +0000
+Date:   Wed Apr 10 12:04:22 2024 +0000
 
     [UPD] addons table in README.md
 
@@ -1138,16 +1123,11 @@ Date:   Fri Oct 27 22:22:13 2023 +0200
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit d2bc786a3827a16280956573637a8aea7b20fd98
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:26:04 2024 +0000
+commit 240655295d22ea0ad70db9d8a5fb76794569e145
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 10 09:26:33 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 17.3% (9 of 52 strings)
-    
-    Translation: delivery-carrier-14.0/delivery-carrier-14.0-delivery_carrier_deposit
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-delivery_carrier_deposit/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1245,16 +1225,11 @@ Date:   Wed Mar 27 16:32:51 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit f841a6abeb5423cfb7690fc25d24e801a3504ed4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:18:19 2024 +0000
+commit 42ad77c6b5ebbcf07546010b618215758ec7eab6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 11 12:03:35 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (308 of 308 strings)
-    
-    Translation: wms-14.0/wms-14.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/it/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1406,11 +1381,16 @@ Date:   Mon Jan 22 08:13:03 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 15cf8c6ef3565f74660702e2f3744cb4050fdbdc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 19 13:16:38 2024 +0000
+commit 617ac0ecb171e62a77efbcd35c9cdd9afd3d8d84
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Apr 11 09:05:51 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 92.1% (47 of 51 strings)
+    
+    Translation: contract-14.0/contract-14.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-product_contract/it/
 
 
 ## program
