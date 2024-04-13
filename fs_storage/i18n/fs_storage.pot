@@ -24,6 +24,17 @@ msgid "Available properties"
 msgstr ""
 
 #. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__check_connection_method
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__check_connection_method
+msgid "Check Connection Method"
+msgstr ""
+
+#. module: fs_storage
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
+msgid "Close"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__code
 msgid "Code"
 msgstr ""
@@ -43,12 +54,21 @@ msgid "Connection Test Succeeded!"
 msgstr ""
 
 #. module: fs_storage
+#. odoo-python
+#: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
+msgid "Create Marker file"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__create_uid
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__create_uid
 msgid "Created by"
 msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__create_date
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__create_date
 msgid "Created on"
 msgstr ""
 
@@ -74,6 +94,7 @@ msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__display_name
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -100,7 +121,18 @@ msgid "FS Storage"
 msgstr ""
 
 #. module: fs_storage
+#: model:ir.actions.act_window,name:fs_storage.act_open_fs_test_connection_view
+msgid "FS Test Connection"
+msgstr ""
+
+#. module: fs_storage
+#: model:ir.model,name:fs_storage.model_fs_test_connection
+msgid "FS Test Connection Wizard"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__id
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__id
 msgid "ID"
 msgstr ""
 
@@ -111,17 +143,27 @@ msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage____last_update
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection____last_update
 msgid "Last Modified on"
 msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__write_uid
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__write_uid
 msgid "Last Updated by"
 msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__write_date
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__write_date
 msgid "Last Updated on"
+msgstr ""
+
+#. module: fs_storage
+#. odoo-python
+#: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
+msgid "List File"
 msgstr ""
 
 #. module: fs_storage
@@ -192,6 +234,19 @@ msgid "Server Env Defaults"
 msgstr ""
 
 #. module: fs_storage
+#: model:ir.model.fields,help:fs_storage.field_fs_storage__check_connection_method
+msgid ""
+"Set a method if you want the connection to remote to be checked every time the storage is used, in order to remove the obsolete connection from the cache.\n"
+"* Create Marker file : Create a file on remote and check it exists\n"
+"* List File : List all files from root directory"
+msgstr ""
+
+#. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__storage_id
+msgid "Storage"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__code
 msgid ""
 "Technical code used to identify the storage backend into the code.This code "
@@ -202,7 +257,13 @@ msgid ""
 msgstr ""
 
 #. module: fs_storage
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
+msgid "Test Connection"
+msgstr ""
+
+#. module: fs_storage
 #: model_terms:ir.ui.view,arch_db:fs_storage.fs_storage_form_view
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
 msgid "Test connection"
 msgstr ""
 

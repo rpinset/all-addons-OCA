@@ -147,6 +147,15 @@ class FSStorage(models.Model):
         compute="_compute_options_properties",
         store=False,
     )
+    check_connection_method = fields.Selection(
+        selection="_get_check_connection_method_selection",
+        default="marker_file",
+        help="Set a method if you want the connection to remote to be checked every "
+        "time the storage is used, in order to remove the obsolete connection from"
+        " the cache.\n"
+        "* Create Marker file : Create a file on remote and check it exists\n"
+        "* List File : List all files from root directory",
+    )
 
     _sql_constraints = [
         (
@@ -157,6 +166,13 @@ class FSStorage(models.Model):
     ]
 
     _server_env_section_name_field = "code"
+
+    @api.model
+    def _get_check_connection_method_selection(self):
+        return [
+            ("marker_file", _("Create Marker file")),
+            ("ls", _("List File")),
+        ]
 
     @property
     def _server_env_fields(self):
@@ -268,12 +284,21 @@ class FSStorage(models.Model):
     def _get_marker_file_name(self):
         return ".odoo_fs_storage_%s.marker" % self.id
 
-    def _check_connection(self, fs):
+    def _marker_file_check_connection(self, fs):
         marker_file_name = self._get_marker_file_name()
         try:
             fs.info(marker_file_name)
         except FileNotFoundError:
             fs.touch(marker_file_name)
+
+    def _ls_check_connection(self, fs):
+        fs.ls("", detail=False)
+
+    def _check_connection(self, fs, check_connection_method):
+        if check_connection_method == "marker_file":
+            self._marker_file_check_connection(fs)
+        elif check_connection_method == "ls":
+            self._ls_check_connection(fs)
         return True
 
     @property
@@ -286,7 +311,7 @@ class FSStorage(models.Model):
             # Check whether we need to invalidate FS cache or not.
             # Use a marker file to limit the scope of the LS command for performance.
             try:
-                self._check_connection(self.__fs)
+                self._check_connection(self.__fs, self.check_connection_method)
             except Exception as e:
                 self.__fs.clear_instance_cache()
                 self.__fs = None
@@ -451,11 +476,20 @@ class FSStorage(models.Model):
     def delete(self, relative_path) -> None:
         self.fs.rm_file(relative_path)
 
-    def action_test_config(self) -> None:
+    def action_test_config(self):
+        self.ensure_one()
+        if self.check_connection_method:
+            return self._test_config(self.check_connection_method)
+        else:
+            action = self.env["ir.actions.actions"]._for_xml_id(
+                "fs_storage.act_open_fs_test_connection_view"
+            )
+            action["context"] = {"active_model": "fs.storage", "active_id": self.id}
+            return action
+
+    def _test_config(self, connection_method):
         try:
-            # Accessing the property will check the connection
-            # pylint: disable=W0104
-            self.fs
+            self._check_connection(self.fs, connection_method)
             title = _("Connection Test Succeeded!")
             message = _("Everything seems properly set up!")
             msg_type = "success"

@@ -93,6 +93,8 @@ requests
 shapely
 simplejson
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
+# generated from manifests external_dependencies
+freezegun
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 # generated from manifests external_dependencies
 python-dateutil
@@ -150,6 +152,7 @@ asn1crypto
 codicefiscale
 elementpath
 mock
+openupgradelib
 unidecode
 xmlschema
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)

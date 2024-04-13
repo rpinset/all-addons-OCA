@@ -17,6 +17,14 @@ When you create a new backend, you must specify the following:
   on the protocol used and are described in the fsspec documentation.
 * Resolve env vars. This options resolves the protocol options values starting
   with $ from environment variables
+* Check Connection Method. If set, Odoo will always check the connection before using
+  a storage and it will remove the fs connection from the cache if the check fails.
+
+  * ``Create Marker file`` : create a hidden file on remote and then check it exists with
+    Use it if you have write access to the remote and if it is not an issue to leave
+    the marker file in the root directory.
+  * ``List file`` : list all files from the root directory. You can use it if the directory
+    path does not contain a big list of files (for performance reasons)
 
 Some protocols defined in the fsspec package are wrappers around other
 protocols. For example, the SimpleCacheFileSystem protocol is a wrapper
