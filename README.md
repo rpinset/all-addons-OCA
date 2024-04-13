@@ -574,16 +574,16 @@ Date:   Fri Mar 15 14:48:24 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 3f63b68d5bb90d400fc8828900b2105147247c4b
+commit ad32add2f70ed1215cfdde0ac7db78bb234e50cb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:07:15 2024 +0000
+Date:   Wed Apr 10 06:23:06 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_vehicle_stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_vehicle_stock_request/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_agreement_helpdesk_mgmt
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_agreement_helpdesk_mgmt/it/
 
 
 ## margin-analysis
@@ -1359,9 +1359,9 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit f0285c7cb8e5a73233d29726e9f3158be8d1fbe1
+commit 94601718d7087de5814369c7d6b9ff65267b12fa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:42:53 2024 +0000
+Date:   Thu Apr 11 09:05:50 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1474,16 +1474,11 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 95061c4a031e464896664c0fca3d6317c569a036
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Mar 6 13:12:38 2024 +0000
+commit d189d4bba90d27810b5a5b5c18839ec05127fd5b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 12 12:47:49 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-tools-12.0/server-tools-12.0-auto_backup
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auto_backup/
+    [BOT] post-merge updates
 
 
 ## server-auth
