@@ -80,11 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 185e142814c75831effb70dfc6954daab5508ff9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 9 10:38:37 2024 +0000
+commit c26f360390844c4e29cf85b95ec7bc9eb6b65783
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 15 06:51:00 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 29.9% (82 of 274 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -886,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit c3eb030d4f2e0a462398d770b4568244303a117c
+commit 1e449a1cd13f93f53a8b00813a442e63a375532e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 5 09:54:34 2024 +0000
+Date:   Wed Apr 17 11:30:46 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (129 of 129 strings)
+    Currently translated at 100.0% (476 of 476 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_account_balance_report
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_account_balance_report/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
 
 
 ## l10n-japan
@@ -1141,16 +1146,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 611cbf940e1abdf35fdd63746aae18672a7190e9
+commit 7653391d1798f64c05cea2fa5404d8e400d23441
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 25 13:38:32 2024 +0000
+Date:   Mon Apr 15 14:44:52 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 64.4% (107 of 166 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-sale_stock_info_popup
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-sale_stock_info_popup/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/it/
 
 
 ## stock-logistics-reporting
@@ -1248,16 +1253,16 @@ Date:   Tue Apr 2 09:31:28 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 91333608df0f1ac7025862c79c7695ec2c50f41c
+commit 46b8659b0e1985be238f9307670094f904bf5412
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 28 20:39:44 2024 +0000
+Date:   Mon Apr 15 14:40:50 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (32 of 32 strings)
+    Currently translated at 92.0% (207 of 225 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_line_price_history
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_line_price_history/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
 
 
 ## purchase-reporting
@@ -1474,11 +1479,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d189d4bba90d27810b5a5b5c18839ec05127fd5b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Apr 12 12:47:49 2024 +0000
+commit 6eecc980708c9c3a1fa6cf0e1ab3a8f3e202e9fd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Apr 17 12:04:00 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 44.4% (32 of 72 strings)
+    
+    Translation: server-tools-12.0/server-tools-12.0-auditlog
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auditlog/it/
 
 
 ## server-auth

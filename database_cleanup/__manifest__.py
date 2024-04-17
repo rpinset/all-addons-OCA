@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     'name': 'Database cleanup',
-    'version': '12.0.1.2.2',
+    'version': '12.0.1.2.3',
     'author': "Therp BV,Odoo Community Association (OCA)",
     'depends': ['base'],
     'website': "https://github.com/OCA/server-tools",
@@ -13,6 +13,7 @@
         'views/purge_menus.xml',
         'views/purge_modules.xml',
         'views/purge_models.xml',
+        'views/purge_fields.xml',
         'views/purge_columns.xml',
         'views/purge_tables.xml',
         'views/purge_data.xml',
