@@ -205,7 +205,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
-[account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
+[account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
 [account_move_print](account_move_print/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds the option to print Journal Entries
 [account_move_template](account_move_template/) | 17.0.1.0.0 |  | Templates for recurring Journal Entries
 [account_tax_repartition_line_tax_group_account](account_tax_repartition_line_tax_group_account/) | 17.0.1.0.0 |  | Set a default account from tax group to tax repartition lines
@@ -616,6 +616,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update](currency_rate_update/) | 17.0.1.0.0 |  | Update exchange rates using OCA modules
+[currency_rate_update_xe](currency_rate_update_xe/) | 17.0.1.0.0 |  | Update exchange rates using XE.com
 
 [//]: # (end addons)
 
@@ -748,6 +749,7 @@ addon | version | maintainers | summary
 [account_banking_mandate](account_banking_mandate/) | 17.0.1.0.0 |  | Banking mandates
 [account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.0 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.0.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 17.0.1.0.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 17.0.1.1.0 |  | Account Payment Order
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.0 |  | Adds payment mode on partners and invoices
@@ -893,6 +895,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
+[account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.0 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 
 [//]: # (end addons)
 
@@ -1542,6 +1545,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[partner_sale_pivot](partner_sale_pivot/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Sales analysis from customer form view
+[product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
+[sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
+[sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
 [sale_fixed_discount](sale_fixed_discount/) | 17.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
@@ -1550,6 +1557,7 @@ addon | version | maintainers | summary
 [sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
+[sale_shipping_info_helper](sale_shipping_info_helper/) | 17.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.0.0 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_tier_validation](sale_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
@@ -2045,7 +2053,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[website_sale_hide_price](website_sale_hide_price/) | 17.0.1.0.0 |  | Hide product prices on the shop
 
 [//]: # (end addons)
 
@@ -2154,7 +2166,9 @@ addon | version | maintainers | summary
 [base_territory](base_territory/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
 [fieldservice](fieldservice/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
+[fieldservice_crm](fieldservice_crm/) | 17.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
+[fieldservice_stock](fieldservice_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
 
 [//]: # (end addons)
 
@@ -4254,7 +4268,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_es_aeat](l10n_es_aeat/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.0.0 |  | AEAT modelo 347
@@ -5272,7 +5286,7 @@ addon | version | maintainers | summary
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_open_qty](purchase_open_qty/) | 17.0.1.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_type](purchase_order_type/) | 17.0.1.0.0 |  | Purchase Order Type
-[purchase_request](purchase_request/) | 17.0.1.1.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 17.0.1.1.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_tag](purchase_tag/) | 17.0.1.1.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
@@ -5677,7 +5691,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[contract](contract/) | 17.0.1.0.0 |  | Recurring - Contracts Management
+[contract](contract/) | 17.0.1.0.1 |  | Recurring - Contracts Management
 
 [//]: # (end addons)
 
@@ -5899,6 +5913,7 @@ addon | version | maintainers | summary
 [mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
 [mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
+[mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 
 [//]: # (end addons)
 
@@ -6335,7 +6350,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_user_role](base_user_role/) | 17.0.1.0.3 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
-[base_user_role_company](base_user_role_company/) | 17.0.1.0.0 |  | User roles by company
+[base_user_role_company](base_user_role_company/) | 17.0.1.1.0 |  | User roles by company
 
 [//]: # (end addons)
 
