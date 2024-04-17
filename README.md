@@ -76,9 +76,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 49229ae13e3f4b5c6b6898e9906fc109ff7b455a
+commit 2645ee865a61d6640a8733c7b5172de1868f85b7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 08:59:51 2024 +0000
+Date:   Mon Apr 15 06:51:01 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1635,16 +1635,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 58bc9d2e85a4a402d6b4ac45c9fff20e74521ed1
+commit c2a0e293ad22f8d029b71781f50147cb75757f84
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:25:59 2024 +0000
+Date:   Wed Apr 17 12:04:02 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 24.3% (18 of 74 strings)
+    Currently translated at 44.4% (32 of 72 strings)
     
-    Translation: server-tools-13.0/server-tools-13.0-base_import_odoo
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/it/
+    Translation: server-tools-13.0/server-tools-13.0-auditlog
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-auditlog/it/
 
 
 ## server-auth
