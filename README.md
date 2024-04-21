@@ -229,9 +229,9 @@ Date:   Fri Apr 5 16:38:48 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit c973f845648db397e94e542b842d84ae7ca93717
+commit 7bc7f429eb726aeba9d3f25c9c10349bfbc0b0eb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 7 07:41:30 2024 +0000
+Date:   Fri Apr 19 15:09:13 2024 +0000
 
     [BOT] post-merge updates
 
@@ -374,11 +374,16 @@ Date:   Fri Oct 27 23:37:22 2023 +0200
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ef0fefbdf469ca76680a09f79bcbd72fa69e38ab
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 17 10:02:42 2024 +0000
+commit 99d897b7f4f03cd90d33ddf3d19e4aeb099f4f0e
+Author: jabelchi <jabelchi@gmail.com>
+Date:   Thu Apr 18 09:33:43 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_force_invoiced
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_force_invoiced/ca/
 
 
 ## crm
@@ -1033,9 +1038,9 @@ Date:   Fri Oct 27 23:31:55 2023 +0200
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 70d64e37c8a3b87df28b5aa1dd2b1bf2a69f845b
+commit 6a066f78ab19b315cd8b9c7e953a62deeab010da
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jan 29 07:34:30 2024 +0000
+Date:   Thu Apr 18 11:23:00 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1142,11 +1147,16 @@ Date:   Fri Oct 27 22:32:08 2023 +0200
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 64347c05dc6421130b6bd13ad7c2391fd757ab40
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 16 15:35:03 2024 +0000
+commit d294dfdbb57278d27e0e1aeda574f87b6e5b7108
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 19 07:34:20 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_packaging_calculator
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_packaging_calculator/it/
 
 
 ## stock-logistics-reporting
@@ -1179,9 +1189,9 @@ Date:   Wed Apr 3 12:36:07 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 11ef98233e3dc3448b3758387415673bcc0cff5c
+commit cbe551fd0348007785f191c5ea08ae9814d108ac
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 2 08:36:52 2024 +0000
+Date:   Thu Apr 18 09:34:34 2024 +0000
 
     [BOT] post-merge updates
 
