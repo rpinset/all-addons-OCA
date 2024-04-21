@@ -19,6 +19,7 @@ msgstr ""
 #. module: fs_image
 #. odoo-javascript
 #: code:addons/fs_image/static/src/views/fields/fsimage_field.esm.js:0
+#: code:addons/fs_image/static/src/views/fields/fsimage_field.xml:0
 #, python-format
 msgid "Alt Text"
 msgstr "Texto Alt"
@@ -60,8 +61,8 @@ msgstr "Cancelar"
 #, python-format
 msgid "Cannot set alt_text on empty image (record %(record)s.%(field_name)s)"
 msgstr ""
-"No se puede establecer alt_text en una imagen vacía (record "
-"%(record)s.%(field_name)s)"
+"No se puede establecer alt_text en una imagen vacía (record %(record)s."
+"%(field_name)s)"
 
 #. module: fs_image
 #. odoo-javascript

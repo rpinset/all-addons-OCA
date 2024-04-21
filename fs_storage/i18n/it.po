@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-24 17:36+0000\n"
+"PO-Revision-Date: 2024-04-19 14:35+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -30,12 +30,12 @@ msgstr "Proprietà disponibili"
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__check_connection_method
 #: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__check_connection_method
 msgid "Check Connection Method"
-msgstr ""
+msgstr "Controlla metodo di connessione"
 
 #. module: fs_storage
 #: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
 msgid "Close"
-msgstr ""
+msgstr "Chiudi"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__code
@@ -61,7 +61,7 @@ msgstr "Test connessione avvenuto con successo!"
 #: code:addons/fs_storage/models/fs_storage.py:0
 #, python-format
 msgid "Create Marker file"
-msgstr ""
+msgstr "Crea file marcatore"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__create_uid
@@ -126,12 +126,12 @@ msgstr "Deposito FS"
 #. module: fs_storage
 #: model:ir.actions.act_window,name:fs_storage.act_open_fs_test_connection_view
 msgid "FS Test Connection"
-msgstr ""
+msgstr "Test connessione FS"
 
 #. module: fs_storage
 #: model:ir.model,name:fs_storage.model_fs_test_connection
 msgid "FS Test Connection Wizard"
-msgstr ""
+msgstr "Procedura guidata test connessione FS"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__id
@@ -167,7 +167,7 @@ msgstr "Ultimo aggiornamento il"
 #: code:addons/fs_storage/models/fs_storage.py:0
 #, python-format
 msgid "List File"
-msgstr ""
+msgstr "Elenco file"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__name
@@ -250,11 +250,16 @@ msgid ""
 "* Create Marker file : Create a file on remote and check it exists\n"
 "* List File : List all files from root directory"
 msgstr ""
+"Impostare un metodo se si vuole verificare la connessione remota ogni volta "
+"che il deposito è utilizzato, per eliminare la connessione obsoleta dalla "
+"cache.\n"
+"* Crea file marcatore : crea un file in remoto e controlla se esiste\n"
+"* Elenco file : elenca tutti i file dalla cartella radice"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__storage_id
 msgid "Storage"
-msgstr ""
+msgstr "Deposito"
 
 #. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__code
@@ -273,7 +278,7 @@ msgstr ""
 #. module: fs_storage
 #: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
 msgid "Test Connection"
-msgstr ""
+msgstr "Test connessione"
 
 #. module: fs_storage
 #: model_terms:ir.ui.view,arch_db:fs_storage.fs_storage_form_view
