@@ -24,7 +24,6 @@
             "num2words>=0.5.8",
         ],
     },
-    "uninstall_hook": "uninstall_hook",
     "development_status": "Mature",
     "maintainers": ["dhongu", "feketemihai"],
 }

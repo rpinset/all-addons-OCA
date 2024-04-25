@@ -263,6 +263,8 @@ requests
 unidecode
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
+cryptography
+endesive
 mock
 openpyxl
 py3o.formats
