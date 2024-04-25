@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="0">
+    <!-- account.tax.template -->
+    <record id="purchase_nds_0" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 0%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="tax_group_id" ref="tax_group_vat_0" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="sale_nds_0" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 0%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="tax_group_vat_0" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="purchase_nds_10" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 10%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">10</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="tax_group_id" ref="tax_group_vat_10" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="sale_nds_10" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 10%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">10</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="tax_group_vat_10" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="purchase_nds_20" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 20%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="tax_group_id" ref="tax_group_vat_20" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="sale_nds_20" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">НДС 20%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">20</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="tax_group_vat_20" />
+        <field name="active" eval="False" />
+    </record>
+
+    <record id="sale_usn_6" model="account.tax.template">
+        <field name="chart_template_id" ref="l10n_ru_account_chart_template" />
+        <field name="name">УСН 6%</field>
+        <field name="price_include" eval="1" />
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="tax_group_id" ref="tax_group_usn_6" />
+    </record>
+
+</odoo>

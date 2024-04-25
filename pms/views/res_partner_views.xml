@@ -187,7 +187,6 @@
                             <field name="nationality_id" />
                             <field name="email" />
                             <field name="mobile" />
-
                         </group>
                     </group>
                     </group>
