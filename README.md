@@ -118,11 +118,11 @@ Date:   Thu Feb 8 08:12:29 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit f9bd9aa6e7891bff4c63f486a163ceced89a7797
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 1 15:21:08 2024 +0000
+commit 7b84c0bf11265bc2b3bfc02f22d4d6287599759f
+Author: Julie LeBrun <julie.lebrun@numigi.com>
+Date:   Tue Apr 23 20:55:57 2024 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (French (France) (fr_FR))
 
 
 ## account-fiscal-rule
@@ -514,9 +514,9 @@ Date:   Mon Oct 9 21:34:04 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 498283e8fc8ca2d79c1db6d9268b3a91c835b051
+commit 61a429d5349bc0d713a1ffb3efaa664b5084f846
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 15:50:23 2023 +0000
+Date:   Mon Apr 22 13:58:25 2024 +0000
 
     Translated using Weblate (Italian)
     
