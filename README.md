@@ -122,16 +122,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 21c02526c098d146e497ec690682c6a8c68ebd44
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 09:07:10 2024 +0000
+commit 3d6d842e6349fb225567de1e3e27ad293e39b475
+Author: Simon Maillard <simon@ogesta.fr>
+Date:   Thu Apr 25 10:41:59 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_menu_invoice_refund
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_menu_invoice_refund/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_tier_validation/fr/
 
 
 ## account-fiscal-rule
@@ -486,16 +486,16 @@ Date:   Mon Apr 8 11:54:19 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 16103119e22c0dbe0f8f26c27dc02ebb3a7a4b68
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jan 4 12:40:18 2024 +0000
+commit d35eba74e8b3b2b6eb633f4f3516bca7dfc5f9ea
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 22 14:43:28 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: commission-12.0/commission-12.0-sale_commission
-    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission/
+    Translation: commission-12.0/commission-12.0-sale_commission_settlement_partial_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission_settlement_partial_invoice/it/
 
 
 ## event
@@ -630,9 +630,9 @@ Date:   Tue Nov 19 21:01:02 2019 +0100
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit e8e6b94aa42b82770e816f15dc1b6ae98060b9fa
+commit cc2c06ed174dfcc0ba46d651cef946fda3af8b02
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 29 16:36:18 2024 +0000
+Date:   Wed Apr 24 10:01:32 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1539,11 +1539,16 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 7a795235fddfd0cbb9c7757a76f8dbea8f17cb8a
-Author: Douglas Custódio <douglascstd@yahoo.com>
-Date:   Tue Jan 16 19:46:07 2024 +0000
+commit 36cdc2eab11850c15235186f9c623493798845a5
+Author: Simon Maillard <simon@ogesta.fr>
+Date:   Thu Apr 25 11:46:56 2024 +0000
 
-    Added translation using Weblate (Portuguese (Brazil))
+    Translated using Weblate (French)
+    
+    Currently translated at 98.8% (86 of 87 strings)
+    
+    Translation: server-ux-12.0/server-ux-12.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-base_tier_validation/fr/
 
 
 ## community-data-files
