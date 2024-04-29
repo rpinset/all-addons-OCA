@@ -178,9 +178,9 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 57a9eff338a69e74819ef845a032773a1a9b8d8f
+commit 25e42a0ec6479e8931c35eed4c1a65afde6719c3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 22 07:37:08 2024 +0000
+Date:   Mon Apr 29 06:29:51 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -579,16 +579,16 @@ Date:   Fri Mar 15 14:48:24 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit ad32add2f70ed1215cfdde0ac7db78bb234e50cb
+commit f3dd653e88807fedd2fdf1ff906767108ca0b1fa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 10 06:23:06 2024 +0000
+Date:   Mon Apr 29 12:30:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_agreement_helpdesk_mgmt
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_agreement_helpdesk_mgmt/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_stage_validation
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_stage_validation/it/
 
 
 ## margin-analysis
@@ -891,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 1e449a1cd13f93f53a8b00813a442e63a375532e
+commit a9082056383564c5ca9f46cf3d56054eb04c2bb0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 17 11:30:46 2024 +0000
+Date:   Mon Apr 29 11:42:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (476 of 476 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa_out_fd
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa_out_fd/it/
 
 
 ## l10n-japan
@@ -1299,9 +1299,9 @@ Date:   Tue Nov 19 21:11:15 2019 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit e47b032ced13ff4ca374783e52178c987f913ed7
+commit 4f96e4bde3d1583b872bcf56564e22a79b643724
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 10 13:05:41 2023 +0000
+Date:   Mon Apr 29 14:44:51 2024 +0000
 
     Translated using Weblate (Italian)
     
