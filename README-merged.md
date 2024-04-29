@@ -1755,7 +1755,7 @@ addon | version | maintainers | summary
 [product_form_sale_link](product_form_sale_link/) | 16.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 16.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 16.0.1.0.0 |  | Allow to add advance payments on sales and then use them on invoices
-[sale_auto_remove_zero_quantity_lines](sale_auto_remove_zero_quantity_lines/) | 16.0.1.0.2 |  | On sale confirmation remove lines with zero quantities
+[sale_auto_remove_zero_quantity_lines](sale_auto_remove_zero_quantity_lines/) | 16.0.1.1.0 |  | On sale confirmation remove lines with zero quantities
 [sale_automatic_workflow](sale_automatic_workflow/) | 16.0.1.0.2 |  | Sale Automatic Workflow
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 16.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
 [sale_automatic_workflow_payment_mode](sale_automatic_workflow_payment_mode/) | 16.0.1.0.0 |  | Sale Automatic Workflow - Payment Mode
@@ -2223,8 +2223,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_commission](account_commission/) | 16.0.2.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 16.0.2.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
+[account_commission](account_commission/) | 16.0.2.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
+[commission](commission/) | 16.0.2.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 16.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
 [sale_commission](sale_commission/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
@@ -4836,7 +4836,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
 [l10n_ro_city](l10n_ro_city/) | 16.0.3.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 16.0.1.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
-[l10n_ro_dvi](l10n_ro_dvi/) | 16.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
+[l10n_ro_dvi](l10n_ro_dvi/) | 16.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 16.0.0.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 16.0.0.3.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
@@ -4846,15 +4846,17 @@ addon | version | maintainers | summary
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 16.0.2.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 16.0.2.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 16.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 16.0.1.23.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 16.0.1.24.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 16.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
+[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 16.0.1.24.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 16.0.0.3.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
-[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 16.0.4.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
+[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 16.0.4.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 16.0.0.2.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
+[l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 16.0.1.24.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 16.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
-[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 16.0.0.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
-[l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 16.0.5.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
+[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 16.0.0.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
+[l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 16.0.5.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
 [l10n_ro_stock_report](l10n_ro_stock_report/) | 16.0.6.13.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fisa Magazie)
 [l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 16.0.1.9.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
 
@@ -5000,7 +5002,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.0.1 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.7.0 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.7.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 16.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.0.0 |  | AEAT modelo 369
@@ -5026,7 +5028,7 @@ addon | version | maintainers | summary
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.0.3 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.2 |  | Punto de venta adaptado a la legislación española
-[l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
+[l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 16.0.1.0.2 |  | Envío de pedidos del TPV al SII
 [l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.0 |  | Sistema de gestión de aceites industriales usados en España - Facturación
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.1 |  | Sistema de gestión de aceites industriales usados en España - Compras
@@ -5807,7 +5809,7 @@ addon | version | maintainers | summary
 [stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.1 |  | Auto release moves after auto assign
 [stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.1 |  | Adds field for common destination moves
 [stock_move_location](stock_move_location/) | 16.0.1.3.1 |  | This module allows to move all stock in a stock location to an other one.
-[stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.3.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add packaging fields in the stock moves
+[stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.4.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add packaging fields in the stock moves
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.1 |  | Add a MTS+MTO route
 [stock_packaging_calculator](stock_packaging_calculator/) | 16.0.1.0.1 |  | Compute product quantity to pick by packaging
 [stock_packaging_calculator_packaging_level](stock_packaging_calculator_packaging_level/) | 16.0.1.0.0 |  | Glue module for packaging level
@@ -5993,7 +5995,7 @@ addon | version | maintainers | summary
 [ddmrp_exclude_moves_adu_calc_sales](ddmrp_exclude_moves_adu_calc_sales/) | 16.0.1.0.1 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | DDMRP Exclude Moves ADU Calc integration with Sales app.
 [ddmrp_history](ddmrp_history/) | 16.0.1.1.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_product_replace](ddmrp_product_replace/) | 16.0.1.1.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
-[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
+[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 16.0.1.1.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
 [ddmrp_sale](ddmrp_sale/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | DDMRP integration with Sales app.
 [ddmrp_warning](ddmrp_warning/) | 16.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_route](stock_buffer_route/) | 16.0.1.2.0 |  | Allows to force a route to be used when procuring from Stock Buffers
@@ -6430,7 +6432,7 @@ addon | version | maintainers | summary
 [purchase_warn_message](purchase_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [purchase_work_acceptance](purchase_work_acceptance/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Purchase Work Acceptance
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
-[supplier_calendar](supplier_calendar/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
+[supplier_calendar](supplier_calendar/) | 16.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
 
 [//]: # (end addons)
 
@@ -7043,8 +7045,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[business_requirement](business_requirement/) | 16.0.1.0.0 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
-[business_requirement_crm](business_requirement_crm/) | 16.0.1.0.0 |  | Convert Leads to Business Requirement
+[business_requirement](business_requirement/) | 16.0.1.0.1 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
+[business_requirement_crm](business_requirement_crm/) | 16.0.1.0.1 |  | Convert Leads to Business Requirement
 
 [//]: # (end addons)
 
