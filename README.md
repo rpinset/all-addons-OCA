@@ -88,9 +88,9 @@ Date:   Tue Apr 23 10:20:55 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit f500a784acaf7f95b360c8846a72ff4cf3a75f8b
+commit 72d0a4004167163e243a99194d34ce392ecd40c1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 15 08:13:30 2024 +0000
+Date:   Fri Apr 26 15:00:25 2024 +0000
 
     [BOT] post-merge updates
 
@@ -146,9 +146,9 @@ Date:   Mon Jan 29 18:32:52 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit d006873839c6ade878aa00cb6bb4b0e03a2aa85e
+commit d7b61d45f94908ed85f675750cbf7003bbe035cc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 22 07:37:10 2024 +0000
+Date:   Mon Apr 29 06:29:52 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -508,11 +508,16 @@ Date:   Mon Apr 22 14:13:48 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 3e6e1b0ab0aca5f3ea05d9817669a38f3848a9ba
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 3 12:35:13 2024 +0000
+commit 92aa51e1e72aefb2fdcbf06bbca5bcff0591e936
+Author: Ignacio Buioli <ibuioli@gmail.com>
+Date:   Sun Apr 28 22:04:07 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish (Argentina))
+    
+    Currently translated at 100.0% (12 of 12 strings)
+    
+    Translation: e-commerce-15.0/e-commerce-15.0-website_sale_hide_price
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_hide_price/es_AR/
 
 
 ## edi
@@ -526,16 +531,16 @@ Date:   Thu Apr 25 07:28:15 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 1b3d7120fbd4202111b3050c62aee5c8c3be1ef8
+commit 1fbe79116f2daa51b2cbc5d005ab96872667e888
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 09:58:41 2024 +0000
+Date:   Mon Apr 29 12:30:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice_repair
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_repair/it/
+    Translation: field-service-15.0/field-service-15.0-fieldservice_stage_validation
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_stage_validation/it/
 
 
 ## margin-analysis
@@ -1142,16 +1147,11 @@ Date:   Fri Oct 27 22:32:08 2023 +0200
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 3349bcba07434b3558a3110355ce187f2767f643
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Apr 25 00:05:43 2024 +0000
+commit 128a10e9eb7dcfd443a801427a5ebb95a968180f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 26 09:34:17 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1207,11 +1207,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 01c6c896264f7e1c0ca349f408b2accc54d096b5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 9 07:28:20 2024 +0000
+commit 7172d0db5f99d3591b4e998c0da6f6000209d77a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 29 12:14:36 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (170 of 170 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1230,16 +1235,16 @@ Date:   Sun Oct 29 15:19:11 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 0efc7ac986f565b609f90db8ea8c4e92c8aac466
+commit ba2684a0b6faab9d9eef68b550c31a6f635da348
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 09:57:05 2024 +0000
+Date:   Mon Apr 29 12:12:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (159 of 159 strings)
     
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity_repair
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity_repair/it/
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/it/
 
 
 ## pms
@@ -1299,11 +1304,16 @@ Date:   Fri Oct 27 22:50:58 2023 +0200
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit b632eb2ced0e788ad01f546c9043ec7c32d537df
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 15 15:18:11 2024 +0000
+commit 4b7237ba06280c9cd16254b4b8d96ad18ccda7c3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 29 14:44:54 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (106 of 106 strings)
+    
+    Translation: product-variant-15.0/product-variant-15.0-product_variant_configurator
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-15-0/product-variant-15-0-product_variant_configurator/it/
 
 
 ## product-pack
@@ -1331,9 +1341,9 @@ Date:   Fri Oct 27 22:52:05 2023 +0200
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 0efb5bffbd6a988414d5de8cf8e1a6e358fd025f
+commit a216895a06e7074a1bcbd920ffbca3a183c78056
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 13 13:53:29 2024 +0000
+Date:   Sat Apr 27 18:19:32 2024 +0000
 
     [BOT] post-merge updates
 

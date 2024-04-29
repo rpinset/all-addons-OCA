@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-16 01:57+0000\n"
-"PO-Revision-Date: 2023-11-02 02:39+0000\n"
+"PO-Revision-Date: 2024-04-29 02:52+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
 "Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/teams/"
 "23907/es_AR/)\n"
@@ -85,3 +85,10 @@ msgid ""
 msgstr ""
 "Cuando el precio está oculto en el sitio web, podemos dar a los clientes "
 "algunos consejos sobre como encontrarlos."
+
+#. module: website_sale_hide_price
+#. openerp-web
+#: code:addons/website_sale_hide_price/static/src/xml/website_sale_templates.xml:0
+#, python-format
+msgid "widget.displayPrice & !product.website_hide_price"
+msgstr "widget.displayPrice & !product.website_hide_price"

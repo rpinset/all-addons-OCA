@@ -365,7 +365,7 @@ addon | version | maintainers | summary
 [account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 15.0.1.0.0 |  | Adds the related sale line position on invoice line.
 [account_invoice_production_lot](account_invoice_production_lot/) | 15.0.1.0.0 |  | Display delivered serial numbers in invoice
 [account_invoice_report_due_list](account_invoice_report_due_list/) | 15.0.2.0.1 |  | Show multiple due data in invoice
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 15.0.1.2.5 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 15.0.1.2.6 |  | Print invoice lines grouped by picking
 [account_invoice_report_grouped_by_picking_sale_mrp](account_invoice_report_grouped_by_picking_sale_mrp/) | 15.0.1.0.1 |  | Take into account BoM kits in invoice report grouped by picking
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 15.0.1.0.0 |  | Show payment extended info in invoice
 [account_reporting_volume](account_reporting_volume/) | 15.0.1.0.0 |  | Volume in the invoices analysis view
@@ -5853,7 +5853,7 @@ addon | version | maintainers | summary
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 15.0.2.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 15.0.2.0.1 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.0.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
@@ -6893,7 +6893,7 @@ addon | version | maintainers | summary
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 15.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 15.0.1.1.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 15.0.1.0.1 |  | Project Types
-[project_wbs](project_wbs/) | 15.0.1.1.1 |  | Apply Work Breakdown Structure
+[project_wbs](project_wbs/) | 15.0.1.1.2 |  | Apply Work Breakdown Structure
 [sale_project_copy_tasks](sale_project_copy_tasks/) | 15.0.1.0.1 | [![shide](https://github.com/shide.png?size=30px)](https://github.com/shide) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Copy tasks into sale order's project
 
 [//]: # (end addons)
