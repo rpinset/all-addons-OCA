@@ -570,9 +570,9 @@ Date:   Thu Apr 4 09:34:33 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 277f0664dbc746177f90bd7a6995e8c78a26d737
+commit e2100b7150b4d4726b3a498db0a545dad5035766
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:47:20 2024 +0000
+Date:   Mon Apr 29 12:12:53 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -607,16 +607,16 @@ Date:   Thu Feb 1 14:38:23 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit be3d764e8aa80e23face7b1c4ad191d01dc65906
+commit 9c27bcc1d5812267ec68529eeed8ff49eeb04582
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 20 13:29:24 2024 +0000
+Date:   Mon Apr 29 12:30:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (544 of 544 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice_stage_validation
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_stage_validation/it/
 
 
 ## margin-analysis
@@ -1425,16 +1425,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 86902f96f6e7c29180484283fed69d93ac7d16cf
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Mar 8 12:37:26 2024 +0000
+commit 68eb6eb7374dcbefa1135dc53820b4b56f439404
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Apr 29 14:47:22 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_exception
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_exception/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_variant_attribute_name_manager
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_variant_attribute_name_manager/it/
 
 
 ## product-kitting
@@ -1451,16 +1451,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit 1ee47dc0b4993ff2a6085964befad6af63cfeccd
+commit 61dba08bea6b4c4e0721e595a93ec3084aefec74
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 26 15:38:00 2023 +0000
+Date:   Mon Apr 29 14:46:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Currently translated at 100.0% (48 of 48 strings)
     
-    Translation: product-variant-13.0/product-variant-13.0-product_variant_configurator_manual_creation
-    Translate-URL: https://translation.odoo-community.org/projects/product-variant-13-0/product-variant-13-0-product_variant_configurator_manual_creation/it/
+    Translation: product-variant-13.0/product-variant-13.0-product_variant_configurator
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-13-0/product-variant-13-0-product_variant_configurator/it/
 
 
 ## product-pack
