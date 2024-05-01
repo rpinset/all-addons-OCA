@@ -303,7 +303,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_line_report](account_invoice_line_report/) | 17.0.1.0.0 |  | New view to manage invoice lines information
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.0 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.1 |  | Print invoice lines grouped by picking
 
 [//]: # (end addons)
 
@@ -350,7 +350,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 17.0.1.0.0 |  | Account Invoice CRM Tag
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 17.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 17.0.1.0.1 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 
 [//]: # (end addons)
@@ -801,9 +801,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.0 |  | Account Mass Reconcile
-[account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.0 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
+[account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -897,7 +897,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
-[account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.0 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
+[account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.1 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 
 [//]: # (end addons)
 
@@ -945,7 +945,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [component](component/) | 17.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
 [component_event](component_event/) | 17.0.1.0.0 |  | Components Events
-[connector](connector/) | 17.0.1.0.0 |  | Connector
+[connector](connector/) | 17.0.1.0.1 |  | Connector
 [test_component](test_component/) | 17.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
 [test_connector](test_connector/) | 17.0.1.0.0 |  | Automated tests for Connector, do not install.
 
@@ -2883,7 +2883,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [companyweb_base](companyweb_base/) | 17.0.1.0.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
-[companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
+[companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
 
 [//]: # (end addons)
 
@@ -6134,7 +6134,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 17.0.1.0.0 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 17.0.1.0.1 |  | Report to printer
 
 [//]: # (end addons)
 
