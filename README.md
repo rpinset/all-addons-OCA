@@ -52,9 +52,9 @@ Date:   Sun Dec 24 16:34:20 2023 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit aeb00b4c1cd751ed58144b7b958ecc993b2eaab1
+commit 3dca9d81c7bd1748629746a707b588017e83f020
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:00:01 2024 +0000
+Date:   Tue Apr 30 15:52:43 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -891,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit a9082056383564c5ca9f46cf3d56054eb04c2bb0
+commit 492e3b13a3d943f543e0dbc0492575cdc12ffa5c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 11:42:33 2024 +0000
+Date:   Tue Apr 30 15:56:54 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 100.0% (173 of 173 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa_out_fd
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa_out_fd/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
 
 
 ## l10n-japan
