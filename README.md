@@ -80,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit c26f360390844c4e29cf85b95ec7bc9eb6b65783
+commit ed3382bc3502cd8db8a1bb5e54cbfd311d6ebe77
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 15 06:51:00 2024 +0000
+Date:   Fri May 3 06:58:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 29.9% (82 of 274 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
 
 
 ## account-financial-reporting
@@ -122,16 +122,11 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 3d6d842e6349fb225567de1e3e27ad293e39b475
-Author: Simon Maillard <simon@ogesta.fr>
-Date:   Thu Apr 25 10:41:59 2024 +0000
+commit 1063e455875347b96c72535d03a85107835029f6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 3 09:21:42 2024 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (18 of 18 strings)
-    
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_tier_validation/fr/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -229,16 +224,16 @@ Date:   Mon Oct 9 20:43:29 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 758d5b39556b74608eef05d2db904eae130450b9
+commit ccde51b6b858c47b992dd975bf67cc20429203c6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 7 20:42:47 2024 +0000
+Date:   Fri May 3 14:36:37 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 21.7% (17 of 78 strings)
+    Currently translated at 96.1% (100 of 104 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_sepa_direct_debit
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_sepa_direct_debit/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -542,9 +537,9 @@ Date:   Thu Apr 4 09:34:31 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 199da0de240ae7a93d45a75629b8716fd31a3867
+commit f0d42d5dbb61c55a55353caed35106d2ee901e8d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:47:15 2024 +0000
+Date:   Fri May 3 14:43:29 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1146,9 +1141,9 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7653391d1798f64c05cea2fa5404d8e400d23441
+commit 0d8517f615794137a738f0a2d8397c33b30684a9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 15 14:44:52 2024 +0000
+Date:   Thu May 2 10:38:45 2024 +0000
 
     Translated using Weblate (Italian)
     
