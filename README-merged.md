@@ -248,7 +248,7 @@ addon | version | maintainers | summary
 [account_asset_compute_batch](account_asset_compute_batch/) | 14.0.1.0.1 |  | Assets - Compute Depre. in Batch
 [account_asset_from_expense](account_asset_from_expense/) | 14.0.1.0.0 |  | Assets from Expenses
 [account_asset_low_value](account_asset_low_value/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Low Value Asset
-[account_asset_management](account_asset_management/) | 14.0.3.1.2 |  | Assets Management
+[account_asset_management](account_asset_management/) | 14.0.3.1.3 |  | Assets Management
 [account_asset_management_menu](account_asset_management_menu/) | 14.0.1.0.0 |  | Assets Management Menu
 [account_asset_number](account_asset_number/) | 14.0.1.0.0 |  | Assets Number
 [account_asset_stock_move](account_asset_stock_move/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Create asset during stock move
@@ -269,6 +269,7 @@ addon | version | maintainers | summary
 [account_lock_to_date](account_lock_to_date/) | 14.0.1.0.0 |  | Allows to set an account lock date in the future.
 [account_menu](account_menu/) | 14.0.1.2.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module
 [account_move_budget](account_move_budget/) | 14.0.1.0.1 |  | Create Accounting Budgets
+[account_move_default_journal](account_move_default_journal/) | 14.0.1.0.0 |  | Configure a default journal for new account moves
 [account_move_fiscal_month](account_move_fiscal_month/) | 14.0.1.0.0 |  | Display the fiscal month on journal entries/item
 [account_move_fiscal_year](account_move_fiscal_year/) | 14.0.1.0.1 |  | Display the fiscal year on journal entries/item
 [account_move_force_removal](account_move_force_removal/) | 14.0.1.0.1 |  | Allow force removal account moves
@@ -1195,7 +1196,7 @@ addon | version | maintainers | summary
 [account_due_list_aging_comment](account_due_list_aging_comment/) | 14.0.1.0.0 |  | Account Due List Aging Comment
 [account_due_list_days_overdue](account_due_list_days_overdue/) | 14.0.1.0.0 |  | Payments Due list days overdue
 [account_due_list_edit_inline](account_due_list_edit_inline/) | 14.0.1.0.0 |  | Account List Inline Edit
-[account_due_list_payment](account_due_list_payment/) | 14.0.1.0.0 |  | Allows you to make payments directly from the due list view
+[account_due_list_payment](account_due_list_payment/) | 14.0.1.0.1 |  | Allows you to make payments directly from the due list view
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 14.0.1.0.0 |  | Payment Due List Payment Mode
 [account_financial_discount](account_financial_discount/) | 14.0.1.0.1 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Handle financial discounts for early payments
 [account_payment_batch_process](account_payment_batch_process/) | 14.0.1.0.0 |  | Account Batch Payments Processing for Customers Invoices and Supplier Invoices
@@ -1214,7 +1215,7 @@ addon | version | maintainers | summary
 [account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Term Partner Holiday
 [account_payment_terminal](account_payment_terminal/) | 14.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This addon allows to pay invoices using payment terminal
 [account_payment_view_check_number](account_payment_view_check_number/) | 14.0.1.0.0 |  | Account Payment View Check Number
-[account_payment_widget_amount](account_payment_widget_amount/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
+[account_payment_widget_amount](account_payment_widget_amount/) | 14.0.1.0.1 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
 [partner_aging](partner_aging/) | 14.0.1.0.4 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Aging as a view - invoices and credits
 [partner_restrict_payment_acquirer](partner_restrict_payment_acquirer/) | 14.0.1.0.0 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Partner Restrict Payment Acquirer
 [product_restrict_payment_acquirer](product_restrict_payment_acquirer/) | 14.0.1.0.0 | [![bearnard21](https://github.com/bearnard21.png?size=30px)](https://github.com/bearnard21) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Product Restrict Payment Acquirer
@@ -1916,7 +1917,7 @@ addon | version | maintainers | summary
 [sale_force_invoiced](sale_force_invoiced/) | 14.0.1.1.2 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_global_discount](sale_global_discount/) | 14.0.1.1.1 |  | Sale Global Discount
 [sale_invoice_auto_deliver](sale_invoice_auto_deliver/) | 14.0.1.0.1 |  | Sale Invoice Automatic Deliver
-[sale_invoice_blocking](sale_invoice_blocking/) | 14.0.1.0.0 |  | Allow you to block the creation of invoices from a sale order.
+[sale_invoice_blocking](sale_invoice_blocking/) | 14.0.1.0.1 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_delivery_state](sale_invoice_delivery_state/) | 14.0.1.0.1 |  | Sale Invoice Delivery State
 [sale_invoice_no_mail](sale_invoice_no_mail/) | 14.0.1.0.1 |  | Sale Invoice No Mail
 [sale_invoice_plan](sale_invoice_plan/) | 14.0.1.0.5 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to sales order, ability to manage future invoice plan
@@ -1948,7 +1949,7 @@ addon | version | maintainers | summary
 [sale_order_line_input](sale_order_line_input/) | 14.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 14.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 14.0.1.0.0 |  | Note on sale order line
-[sale_order_line_packaging_qty](sale_order_line_packaging_qty/) | 14.0.1.1.0 |  | Define quantities according to product packaging on sale order lines
+[sale_order_line_packaging_qty](sale_order_line_packaging_qty/) | 14.0.1.1.1 |  | Define quantities according to product packaging on sale order lines
 [sale_order_line_price_history](sale_order_line_price_history/) | 14.0.1.0.0 |  | Sale order line price history
 [sale_order_line_sequence](sale_order_line_sequence/) | 14.0.2.0.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_lot_generator](sale_order_lot_generator/) | 14.0.1.0.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Sale Order Lot Generator
@@ -3633,7 +3634,7 @@ addon | version | maintainers | summary
 [base_multi_company](base_multi_company/) | 14.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
 [company_dependent_attribute](company_dependent_attribute/) | 14.0.1.0.0 |  | Display company dependent attribute on fields
 [company_dependent_flag](company_dependent_flag/) | 14.0.1.0.0 |  | Apply css style to company dependent fields
-[intercompany_shared_contact](intercompany_shared_contact/) | 14.0.1.1.2 |  | User of each company are contact of a company partner. All child address of a company are automatically shared
+[intercompany_shared_contact](intercompany_shared_contact/) | 14.0.1.1.3 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | User of each company are contact of a company partner. All child address of a company are automatically shared
 [ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 14.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [login_all_company](login_all_company/) | 14.0.1.0.1 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 14.0.0.1.0 |  | Email Gateway Multi company
@@ -4693,7 +4694,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.0 |  | Allow to create the 'VAT Statement'.
-[assets_management](assets_management/) | 14.0.1.4.4 |  | Gestione Cespiti
+[assets_management](assets_management/) | 14.0.1.5.0 |  | Gestione Cespiti
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 14.0.1.0.2 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
@@ -5376,7 +5377,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 14.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.7.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.7.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_mrw](delivery_mrw/) | 14.0.1.1.3 |  | Delivery Carrier implementation for MRW with SAGEC API
 [delivery_seur](delivery_seur/) | 14.0.1.0.0 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
@@ -6494,13 +6495,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 14.0.1.23.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 14.0.1.23.4 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 14.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 14.0.1.0.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 14.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 14.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 14.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
-[ddmrp_history](ddmrp_history/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
+[ddmrp_history](ddmrp_history/) | 14.0.1.2.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_packaging](ddmrp_packaging/) | 14.0.1.1.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_purchase_hide_onhand_status](ddmrp_purchase_hide_onhand_status/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Replace purchase onhand status with smart button.
@@ -7503,7 +7504,7 @@ addon | version | maintainers | summary
 [project_timeline_task_dependency](project_timeline_task_dependency/) | 14.0.1.0.0 |  | Render arrows between dependencies.
 [project_timesheet_time_control](project_timesheet_time_control/) | 14.0.1.1.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_timesheet_time_control_sale](project_timesheet_time_control_sale/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Make 'Project timesheet time control' and 'Sales Timesheet' work together
-[project_wbs](project_wbs/) | 14.0.1.0.2 |  | Apply Work Breakdown Structure
+[project_wbs](project_wbs/) | 14.0.1.0.3 |  | Apply Work Breakdown Structure
 [sale_project_service_tracking_copy_tasks](sale_project_service_tracking_copy_tasks/) | 14.0.1.0.1 | [![shide](https://github.com/shide.png?size=30px)](https://github.com/shide) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Copy tasks into sale order's project
 
 [//]: # (end addons)
@@ -7708,9 +7709,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[business_requirement](business_requirement/) | 14.0.1.2.0 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
+[business_requirement](business_requirement/) | 14.0.1.2.1 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
 [business_requirement_crm](business_requirement_crm/) | 14.0.1.0.0 |  | Convert Leads to Business Requirement
-[business_requirement_deliverable](business_requirement_deliverable/) | 14.0.1.1.0 |  | Manage the Business Requirement Deliverables for your customers
+[business_requirement_deliverable](business_requirement_deliverable/) | 14.0.1.1.1 |  | Manage the Business Requirement Deliverables for your customers
 [business_requirement_sale](business_requirement_sale/) | 14.0.1.0.0 |  | Convert Business Requirement into Sales Orders
 [business_requirement_sale_timesheet](business_requirement_sale_timesheet/) | 14.0.1.0.0 |  | Business Requirement Sale Timesheet
 
@@ -8604,6 +8605,7 @@ addon | version | maintainers | summary
 [server_action_domain](server_action_domain/) | 14.0.1.0.0 |  | Apply a domain filter before executing server actions on records
 [test_base_tier_validation](test_base_tier_validation/) | 14.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Tier Validation
 [web_archive_date](web_archive_date/) | 14.0.1.0.1 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) | Reflects the Latest Archived Date and Latest Archived by on the record metadata.
+[web_tree_customized_field_list](web_tree_customized_field_list/) | 14.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Add fields into list view
 
 [//]: # (end addons)
 

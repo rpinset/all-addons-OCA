@@ -1,0 +1,217 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* web_tree_customized_field_list
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-05-03 19:36+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: web_tree_customized_field_list
+#: model_terms:ir.ui.view,arch_db:web_tree_customized_field_list.view_custom_list_view_form
+msgid "Apply"
+msgstr "Applica"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__create_uid
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__create_date
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model,name:web_tree_customized_field_list.model_custom_list_view
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__custom_list_view_id
+msgid "Custom List View"
+msgstr "Vista lista personalizzata"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model,name:web_tree_customized_field_list.model_custom_list_view_line
+msgid "Custom List View Line"
+msgstr "Riga lista vista personalizzata"
+
+#. module: web_tree_customized_field_list
+#: model_terms:ir.ui.view,arch_db:web_tree_customized_field_list.view_custom_list_view_form
+msgid "Customized List View"
+msgstr "Vista lista personalizzata"
+
+#. module: web_tree_customized_field_list
+#: model:ir.actions.act_window,name:web_tree_customized_field_list.action_custom_list_view_tree
+#: model:ir.ui.menu,name:web_tree_customized_field_list.menu_custom_list_view_tree
+msgid "Customized List Views"
+msgstr "Viste lista personalizzate"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__display_name
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__display_name
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_ui_view__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__fields_domain
+msgid "Fields Domain"
+msgstr "Dominio campi"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__id
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__id
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_module_module__id
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_ui_view__id
+msgid "ID"
+msgstr "ID"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__label
+msgid "Label"
+msgstr "Etichetta"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__archive_uid
+msgid "Last Archived by"
+msgstr "Ultima archiviazione di"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__archive_date
+msgid "Last Archived on"
+msgstr "Ultima archiviazione il"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view____last_update
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line____last_update
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_module_module____last_update
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_ir_ui_view____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__write_uid
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__write_date
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__line_ids
+msgid "Line"
+msgstr "Riga"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__list_view_id
+msgid "List View"
+msgstr "Vista lista"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__model_id
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__model_name
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__model_id
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__model_name
+msgid "Model"
+msgstr "Modello"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model,name:web_tree_customized_field_list.model_ir_module_module
+msgid "Module"
+msgstr "Modulo"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__field_id
+msgid "New Field"
+msgstr "Nuovo campo"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.constraint,message:web_tree_customized_field_list.constraint_custom_list_view_unique_model_list_view_rec
+msgid ""
+"Only one record per view is allowed. Please modify existing record instead."
+msgstr ""
+"Solo un record per vista è permesso. Modifica invece il record esistente."
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__optional
+msgid "Optional"
+msgstr "Opzionale"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view__original_arch
+msgid "Original Arch"
+msgstr "Arch originale"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__after
+msgid "Place After"
+msgstr "Inserisci dopo di"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__before
+msgid "Place Before"
+msgstr "Inserisci prima di"
+
+#. module: web_tree_customized_field_list
+#: model_terms:ir.ui.view,arch_db:web_tree_customized_field_list.view_custom_list_view_form
+msgid "Restore Original"
+msgstr "Ripristina originale"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model,name:web_tree_customized_field_list.model_ir_ui_view
+msgid "View"
+msgstr "Vista"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields,field_description:web_tree_customized_field_list.field_custom_list_view_line__use_widget
+msgid "Widget"
+msgstr "Widget"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields.selection,name:web_tree_customized_field_list.selection__custom_list_view_line__use_widget__color
+msgid "color"
+msgstr "color"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields.selection,name:web_tree_customized_field_list.selection__custom_list_view_line__optional__hide
+msgid "hide"
+msgstr "hide"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields.selection,name:web_tree_customized_field_list.selection__custom_list_view_line__use_widget__many2many_tags
+msgid "many2many_tags"
+msgstr "many2many_tags"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields.selection,name:web_tree_customized_field_list.selection__custom_list_view_line__use_widget__monetary
+msgid "monetary"
+msgstr "monetary"
+
+#. module: web_tree_customized_field_list
+#: model:ir.model.fields.selection,name:web_tree_customized_field_list.selection__custom_list_view_line__optional__show
+msgid "show"
+msgstr "show"
