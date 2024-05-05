@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-09 20:46+0000\n"
+"PO-Revision-Date: 2024-05-01 22:17+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es_AR\n"
@@ -268,12 +268,12 @@ msgstr "Cancelar"
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_change_location_wizard
 msgid "Change"
-msgstr ""
+msgstr "Cambiar"
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.mrp_bom_change_location_wizard
 msgid "Change Bom Location"
-msgstr ""
+msgstr "Cambiar Ubicación de la Bom"
 
 #. module: ddmrp
 #: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__location
@@ -285,7 +285,7 @@ msgstr "Cambiar Ubicación"
 #: code:addons/ddmrp/models/mrp_bom.py:0
 #, python-format
 msgid "Change MRP BoM Location"
-msgstr ""
+msgstr "Cambiar Ubicación de MRP BoM"
 
 #. module: ddmrp
 #: model:ir.model.fields.selection,name:ddmrp.selection__ddmrp_duplicate_buffer__type__product
@@ -313,6 +313,12 @@ msgid ""
 "                    This change is only informative and won't affect any "
 "process or buffer size or recommendations."
 msgstr ""
+"Cambia la ubicación de inventario que se considera calcular cuando un "
+"producto está almacenado en búfer o no.\n"
+"                     Potencialmente, esto puede cambiar el valor del tiempo "
+"de entrega desacoplado (DLT).\n"
+"                     Este cambio es solo informativo y no afectará ningún "
+"proceso, tamaño de búfer ni recomendaciones."
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_res_config_settings__module_ddmrp_chatter
@@ -908,7 +914,7 @@ msgstr "Ubicación"
 #. module: ddmrp
 #: model:ir.model,name:ddmrp.model_mrp_bom_change_location
 msgid "MRP Bom Change Location"
-msgstr ""
+msgstr "Cambiar Ubicación de MRP Bom"
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
@@ -965,7 +971,7 @@ msgstr "Min-max"
 #. module: ddmrp
 #: model:ir.model,name:ddmrp.model_stock_warehouse_orderpoint
 msgid "Minimum Inventory Rule"
-msgstr ""
+msgstr "Regla de Inventario Mínimo"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__order_cycle
@@ -1673,7 +1679,7 @@ msgstr "Búferes de Stock y Empaquetados"
 #: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__context_location_id
 #: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__location_id
 msgid "Stock Location"
-msgstr ""
+msgstr "Ubicación de Inventario"
 
 #. module: ddmrp
 #: model:ir.model,name:ddmrp.model_stock_move
@@ -1791,7 +1797,7 @@ msgstr "Tope De Verde"
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__top_of_red
 msgid "Top Of Red"
-msgstr ""
+msgstr "Arriba del Rojo"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__top_of_yellow

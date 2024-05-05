@@ -307,7 +307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.10.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.10.2 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -417,6 +417,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_global_discount](account_global_discount/) | 15.0.1.0.2 |  | Account Global Discount
+[account_invoice_alternate_payer](account_invoice_alternate_payer/) | 15.0.1.0.0 |  | Set a alternate payor/payee in invoices
 [account_invoice_analytic_search](account_invoice_analytic_search/) | 15.0.1.0.0 |  | Search invoices by analytic account or by project manager
 [account_invoice_anglo_saxon_no_cogs_deferral](account_invoice_anglo_saxon_no_cogs_deferral/) | 15.0.1.0.0 |  | Invalidates the COGS deferral introduced by the anglo saxon module
 [account_invoice_block_payment](account_invoice_block_payment/) | 15.0.1.0.0 |  | Module to block payment of invoices
@@ -434,6 +435,7 @@ addon | version | maintainers | summary
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 15.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 15.0.1.0.0 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_line_description](account_invoice_line_description/) | 15.0.1.0.1 |  | Account invoice line description
+[account_invoice_line_sequence](account_invoice_line_sequence/) | 15.0.1.0.0 |  | Adds sequence field on invoice lines to manage its order.
 [account_invoice_mass_sending](account_invoice_mass_sending/) | 15.0.1.0.1 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
 [account_invoice_merge](account_invoice_merge/) | 15.0.1.0.0 |  | Merge invoices in draft
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 15.0.1.0.0 |  | Account Invoice Payment Retention
@@ -443,6 +445,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 15.0.1.0.1 |  | This module allows the user to refund specific lines in a invoice
 [account_invoice_refund_link](account_invoice_refund_link/) | 15.0.1.0.3 |  | Show links between refunds and their originator invoices.
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 15.0.1.0.3 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
+[account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Account Invoice Refund Reason.
 [account_invoice_restrict_linked_so](account_invoice_restrict_linked_so/) | 15.0.1.0.1 |  | Restricts editing the Product, Quantity and Unit Price columns for invoice lines that originated in Sales Orders.
 [account_invoice_search_by_reference](account_invoice_search_by_reference/) | 15.0.1.0.0 |  | Account invoice search by reference
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 15.0.1.0.2 |  | For invoices targetting multiple sale order addsections with sale order name.
@@ -454,7 +457,7 @@ addon | version | maintainers | summary
 [account_invoice_tree_currency](account_invoice_tree_currency/) | 15.0.1.0.0 |  | Show currencies in the invoice tree view
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 15.0.1.0.2 |  | Manage triple discount on invoice lines
 [account_invoice_validation_queued](account_invoice_validation_queued/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Enqueue account invoice validation
-[account_invoice_view_payment](account_invoice_view_payment/) | 15.0.1.0.0 |  | Access to the payment from an invoice
+[account_invoice_view_payment](account_invoice_view_payment/) | 15.0.1.1.0 |  | Access to the payment from an invoice
 [account_invoice_warn_message](account_invoice_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_manual_currency](account_manual_currency/) | 15.0.1.0.0 |  | Allows to manual currency of Accounting
 [account_move_exception](account_move_exception/) | 15.0.1.0.0 |  | Custom exceptions on account move
@@ -475,6 +478,7 @@ addon | version | maintainers | summary
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 15.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 15.0.1.0.1 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
+[sale_line_refund_to_invoice_qty_skip_anglo_saxon](sale_line_refund_to_invoice_qty_skip_anglo_saxon/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Sale Line Refund To Invoice Qty skip anglo saxon.
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 15.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 15.0.1.0.2 |  | Add timesheet details in invoice line
@@ -593,7 +597,7 @@ addon | version | maintainers | summary
 [hr_expense_operating_unit_access_all](hr_expense_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Expenses
 [hr_operating_unit](hr_operating_unit/) | 15.0.1.0.0 |  | HR Operating Unit
 [hr_operating_unit_access_all](hr_operating_unit_access_all/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Access all OUs' Employees
-[hr_payroll_account_operating_unit](hr_payroll_account_operating_unit/) | 15.0.1.0.0 |  | HR Payroll Account Operating Unit
+[hr_payroll_account_operating_unit](hr_payroll_account_operating_unit/) | 15.0.1.0.1 |  | HR Payroll Account Operating Unit
 [mis_builder_operating_unit](mis_builder_operating_unit/) | 15.0.1.0.0 |  | MIS Builder with Operating Unit
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 15.0.1.0.0 |  | Operating Unit in MRP
@@ -1063,7 +1067,7 @@ addon | version | maintainers | summary
 [account_statement_import_file_reconciliation_widget](account_statement_import_file_reconciliation_widget/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_move_line](account_statement_import_move_line/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 15.0.1.0.0 |  | Import OFX Bank Statement
-[account_statement_import_online](account_statement_import_online/) | 15.0.3.2.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 15.0.3.2.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 15.0.1.1.0 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 15.0.1.1.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 15.0.1.0.1 |  | Online Bank Statements: MyPonto.com
@@ -1814,12 +1818,13 @@ addon | version | maintainers | summary
 [sale_custom_rounding](sale_custom_rounding/) | 15.0.1.0.1 |  | Custom taxes rounding method in sale orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 15.0.1.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 15.0.2.0.0 |  | Show the delivery state on the sale order
-[sale_discount_display_amount](sale_discount_display_amount/) | 15.0.1.0.2 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
+[sale_discount_display_amount](sale_discount_display_amount/) | 15.0.1.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_elaboration](sale_elaboration/) | 15.0.3.3.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 15.0.1.0.1 |  | Custom exceptions on sale order
 [sale_fixed_discount](sale_fixed_discount/) | 15.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 15.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 15.0.1.0.0 |  | Sale Force Whole Invoiceability
+[sale_fully_invoiced](sale_fully_invoiced/) | 15.0.1.0.0 |  | Useful filters in Sales to know the actual status of invoices.
 [sale_global_discount](sale_global_discount/) | 15.0.1.0.0 |  | Sale Global Discount
 [sale_invoice_blocking](sale_invoice_blocking/) | 15.0.1.0.0 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 15.0.1.1.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Define the invoice frequency for customers
@@ -2045,6 +2050,7 @@ addon | version | maintainers | summary
 [partner_identification](partner_identification/) | 15.0.1.0.0 |  | Partner Identification Numbers
 [partner_industry_parent](partner_industry_parent/) | 15.0.1.0.0 |  | This module add a parent relation to the partner industry
 [partner_industry_secondary](partner_industry_secondary/) | 15.0.1.0.0 |  | Add secondary partner industries
+[partner_label](partner_label/) | 15.0.1.0.0 |  | Print partner labels
 [partner_manual_rank](partner_manual_rank/) | 15.0.1.1.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) | Be able to manually flag partners as customer or supplier.
 [partner_multi_relation](partner_multi_relation/) | 15.0.1.0.1 |  | Partner Relations
 [partner_name_hide_parent](partner_name_hide_parent/) | 15.0.1.0.0 |  | Partner Name Hide Parent
@@ -3203,11 +3209,12 @@ addon | version | maintainers | summary
 [hr_expense_journal](hr_expense_journal/) | 15.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Set the Journal for the payment type used to pay the expense
 [hr_expense_pay_to_vendor](hr_expense_pay_to_vendor/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense - Pay To Vendor
 [hr_expense_payment](hr_expense_payment/) | 15.0.1.0.1 |  | HR Expense Payment
-[hr_expense_payment_widget_amount](hr_expense_payment_widget_amount/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | HR Expense Payment Widget Amount
+[hr_expense_payment_widget_amount](hr_expense_payment_widget_amount/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | HR Expense Payment Widget Amount
 [hr_expense_petty_cash](hr_expense_petty_cash/) | 15.0.1.2.0 |  | Petty Cash
 [hr_expense_portal](hr_expense_portal/) | 15.0.1.0.0 |  | Show current expense in a website.
 [hr_expense_sequence](hr_expense_sequence/) | 15.0.1.0.0 |  | HR expense sequence
-[hr_expense_tax_adjust](hr_expense_tax_adjust/) | 15.0.1.1.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Allow to edit tax amount on expenses
+[hr_expense_sequence_option](hr_expense_sequence_option/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage sequence options for hr.expense.sheet
+[hr_expense_tax_adjust](hr_expense_tax_adjust/) | 15.0.1.1.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Allow to edit tax amount on expenses
 [hr_expense_tier_validation](hr_expense_tier_validation/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Expense Tier Validation
 [hr_expense_widget_o2m](hr_expense_widget_o2m/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense one2many widget
 [sale_expense_cost_reinvoice](sale_expense_cost_reinvoice/) | 15.0.1.0.0 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Provide cost on order line when Auto Re-invoice at cost
@@ -3258,6 +3265,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_calendar_event_privacy](hr_holidays_calendar_event_privacy/) | 15.0.1.0.1 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Define privacy level of calendar events from Time off requests
+[hr_holidays_leave_self_approve](hr_holidays_leave_self_approve/) | 15.0.1.0.0 |  | Allow employees to approve their own leaves when allowed
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_public](hr_holidays_public/) | 15.0.1.1.4 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
@@ -4890,7 +4898,7 @@ addon | version | maintainers | summary
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
-[l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 15.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
+[l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 15.0.2.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 15.0.2.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_siruta](l10n_ro_siruta/) | 15.0.2.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Siruta
@@ -5225,10 +5233,10 @@ addon | version | maintainers | summary
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
 [l10n_th_account_tax](l10n_th_account_tax/) | 15.0.1.8.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
-[l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.1.1.4 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
+[l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.1.2.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
-[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 15.0.1.3.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
+[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 15.0.1.4.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 15.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
 [l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 15.0.2.0.2 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Base export payment text file to bank
@@ -5241,7 +5249,7 @@ addon | version | maintainers | summary
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Thai Localization - Government Purchase Agreement
 [l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.1 |  | Thai Localization - Government Purchase Guarantee
 [l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
-[l10n_th_gov_purchase_request](l10n_th_gov_purchase_request/) | 15.0.1.1.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Purchase Request
+[l10n_th_gov_purchase_request](l10n_th_gov_purchase_request/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Purchase Request
 [l10n_th_gov_work_acceptance](l10n_th_gov_work_acceptance/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Work Acceptance
 [l10n_th_mis_report](l10n_th_mis_report/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
 [l10n_th_multicurrency_revaluation](l10n_th_multicurrency_revaluation/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage revaluation for multicurrency environment for Thai
@@ -5622,7 +5630,7 @@ addon | version | maintainers | summary
 [base_gs1_barcode](base_gs1_barcode/) | 15.0.1.0.0 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[stock_barcodes](stock_barcodes/) | 15.0.3.1.0 |  | It provides read barcode on stock operations.
+[stock_barcodes](stock_barcodes/) | 15.0.3.1.2 |  | It provides read barcode on stock operations.
 [stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.0.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
@@ -5860,6 +5868,7 @@ addon | version | maintainers | summary
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
 [stock_move_location](stock_move_location/) | 15.0.1.5.1 |  | This module allows to move all stock in a stock location to an other one.
+[stock_move_location_purchase_uom](stock_move_location_purchase_uom/) | 15.0.1.0.0 |  | This module 'glues' the modules stock_move_location and stock_move_purchase_uom.
 [stock_move_purchase_uom](stock_move_purchase_uom/) | 15.0.1.0.1 |  | Allow to use the purchase UoM in a stock move
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 15.0.1.0.1 |  | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
@@ -6042,13 +6051,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 15.0.1.14.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 15.0.1.14.4 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 15.0.1.0.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 15.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 15.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
-[ddmrp_history](ddmrp_history/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
+[ddmrp_history](ddmrp_history/) | 15.0.1.2.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_packaging](ddmrp_packaging/) | 15.0.1.0.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_warning](ddmrp_warning/) | 15.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
@@ -6284,7 +6293,7 @@ addon | version | maintainers | summary
 [document_page_quality_manual](document_page_quality_manual/) | 15.0.1.0.0 |  | Quality Manual
 [document_page_work_instruction](document_page_work_instruction/) | 15.0.1.0.0 |  | Document Management - Wiki - Work Instructions
 [mgmtsystem](mgmtsystem/) | 15.0.1.0.1 |  | Management System
-[mgmtsystem_action](mgmtsystem_action/) | 15.0.1.0.0 |  | Management System - Action
+[mgmtsystem_action](mgmtsystem_action/) | 15.0.1.0.1 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 15.0.1.0.0 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 15.0.1.1.0 |  | Add Template management for Actions.
 [mgmtsystem_audit](mgmtsystem_audit/) | 15.0.1.0.0 |  | Management System - Audit
@@ -6608,7 +6617,7 @@ addon | version | maintainers | summary
 [product_order_noname](product_order_noname/) | 15.0.1.0.0 | [![WR-96](https://github.com/WR-96.png?size=30px)](https://github.com/WR-96) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Speedup product retrieve
 [product_packaging_type](product_packaging_type/) | 15.0.1.0.0 |  | Product Packaging Type
 [product_pricelist_by_contact](product_pricelist_by_contact/) | 15.0.1.0.0 |  | Product Pricelist Per Contact
-[product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.3.0 |  | Print price list from menu option, product templates, products variants or price lists
+[product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.4.0 |  | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 15.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Extend Product Pricelist Direct Print for filter by public categories
 [product_pricelist_revision](product_pricelist_revision/) | 15.0.1.0.1 |  | Product Pricelist Revision
@@ -7079,7 +7088,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[business_requirement](business_requirement/) | 15.0.1.0.2 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
+[business_requirement](business_requirement/) | 15.0.1.0.3 |  | Manage the Business Requirements (stories, scenarios, gaps and test cases) for your customers
 
 [//]: # (end addons)
 
