@@ -225,16 +225,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit a889022dae94d651af6f62a05bdfa3d5afe1f682
+commit a480bbc4a0ca5e762f236354995827e615718e47
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 7 20:42:48 2024 +0000
+Date:   Fri May 3 14:36:39 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 23.9% (17 of 71 strings)
+    Currently translated at 85.7% (96 of 112 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_sepa_direct_debit
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_sepa_direct_debit/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -570,9 +570,9 @@ Date:   Thu Apr 4 09:34:33 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit e2100b7150b4d4726b3a498db0a545dad5035766
+commit ec08bbefbd4611f44219623ac00c7128225897e1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 12:12:53 2024 +0000
+Date:   Fri May 3 14:43:23 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -745,16 +745,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit d56e534c372e25d0e09ad37bb76a9280c7ea4c22
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 13 08:53:05 2024 +0000
+commit 473aa18b9286dcd8650d7e51dcdb07295e972aac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 4 06:53:36 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 58.6% (17 of 29 strings)
-    
-    Translation: multi-company-13.0/multi-company-13.0-account_invoice_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-13-0/multi-company-13-0-account_invoice_inter_company/it/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1314,16 +1309,11 @@ Date:   Mon Jan 15 09:17:47 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit fda3a219811b76e78526470811f069cdab0551c7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 24 15:20:11 2023 +0000
+commit 1239603ab94d78fee83504d4251bae91150e250f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 3 00:22:45 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: stock-logistics-reporting-13.0/stock-logistics-reporting-13.0-stock_quantity_history_location
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-13-0/stock-logistics-reporting-13-0-stock_quantity_history_location/it/
+    [BOT] post-merge updates
 
 
 ## rma
@@ -1695,9 +1685,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 4a87f3e7b70245ff63733ee1c9d47965ab5a5a89
+commit 3c5f74f379a66663bcb6018c88bc77afa8100c26
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 14 13:45:41 2024 +0000
+Date:   Thu May 2 10:51:38 2024 +0000
 
     Translated using Weblate (Italian)
     
