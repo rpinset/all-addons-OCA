@@ -189,7 +189,7 @@ python-jose
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
 pycountry
-schwifty
+schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
@@ -208,5 +208,7 @@ schwifty
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
+# generated from manifests external_dependencies
+plotly==5.22.0
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
