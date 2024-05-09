@@ -543,7 +543,7 @@ addon | version | maintainers | summary
 [hr_contract_operating_unit](hr_contract_operating_unit/) | 13.0.1.0.1 |  | HR Contract Operating Unit
 [hr_expense_operating_unit](hr_expense_operating_unit/) | 13.0.1.0.3 |  | HR Expense Operating Unit
 [mis_builder_budget_operating_unit](mis_builder_budget_operating_unit/) | 13.0.1.0.1 |  | MIS Builder Budget with Operating Unit
-[mis_builder_operating_unit](mis_builder_operating_unit/) | 13.0.1.0.1 |  | MIS Builder with Operating Unit
+[mis_builder_operating_unit](mis_builder_operating_unit/) | 13.0.1.1.0 |  | MIS Builder with Operating Unit
 [mrp_operating_unit](mrp_operating_unit/) | 13.0.1.0.1 |  | Operating Unit in MRP
 [operating_unit](operating_unit/) | 13.0.2.1.1 |  | An operating unit (OU) is an organizational entity part of a company
 [purchase_operating_unit](purchase_operating_unit/) | 13.0.1.0.1 |  | Adds the concecpt of operating unit (OU) in purchase order management
@@ -4255,7 +4255,7 @@ addon | version | maintainers | summary
 [delivery_carrier_partner](delivery_carrier_partner/) | 13.0.1.0.1 |  | Add a partner in the delivery carrier
 [delivery_carrier_pricelist](delivery_carrier_pricelist/) | 13.0.1.0.0 |  | Compute method method fees based on the product's pricelist.
 [delivery_carrier_service_level](delivery_carrier_service_level/) | 13.0.1.0.2 |  | Add service levels to carrier
-[delivery_cttexpress](delivery_cttexpress/) | 13.0.1.0.0 |  | Delivery Carrier implementation for CTT Express API
+[delivery_cttexpress](delivery_cttexpress/) | 13.0.1.0.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 13.0.1.0.3 |  | Hide free fee lines on sales orders
 [delivery_local_pickup](delivery_local_pickup/) | 13.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Delivery Local pickup
 [delivery_multi_destination](delivery_multi_destination/) | 13.0.1.1.3 |  | Multiple destinations for the same delivery method

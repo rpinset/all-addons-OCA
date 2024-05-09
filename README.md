@@ -141,9 +141,9 @@ Date:   Mon Oct 9 20:12:48 2023 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit ff5316b02f3f7fef55feaa08daa397f1253f15fd
+commit b0bee934bf680655d7f274d050b943c49dc6b94d
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 21:08:51 2023 +0000
+Date:   Mon May 6 07:06:02 2024 +0000
 
     Update translation files
     
@@ -1130,16 +1130,16 @@ Date:   Tue Mar 26 14:26:49 2024 +0100
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 0bd78856cc81ee04fb719818e928387d05536d99
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 21:08:54 2023 +0000
+commit f6c31b59a56bb8984c758f433857821e222c638c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon May 6 11:46:43 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 41.1% (7 of 17 strings)
     
-    Translation: l10n-switzerland-13.0/l10n-switzerland-13.0-l10n_ch_invoice_reports
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-13-0/l10n-switzerland-13-0-l10n_ch_invoice_reports/
+    Translation: l10n-switzerland-13.0/l10n-switzerland-13.0-l10n_ch_base_bank
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-13-0/l10n-switzerland-13-0-l10n_ch_base_bank/it/
 
 
 ## l10n-taiwan
@@ -1244,16 +1244,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 5499f4529984c846805e498094161286695a9242
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:20 2024 +0000
+commit 1408b3e09b14cc3da286fea635dbf800a7665156
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue May 7 09:34:55 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 7.9% (8 of 101 strings)
-    
-    Translation: delivery-carrier-13.0/delivery-carrier-13.0-base_delivery_carrier_label
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-13-0/delivery-carrier-13-0-base_delivery_carrier_label/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1757,9 +1752,9 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit f5c542ed340c9410af8731dabc1c955f91aa48fa
+commit 0255182393863a10e5a3c48e36be13ec74589ca9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 21:31:55 2024 +0000
+Date:   Wed May 8 14:44:23 2024 +0000
 
     [BOT] post-merge updates
 
