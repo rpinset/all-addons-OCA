@@ -307,14 +307,14 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.10.2 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.10.3 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
 [account_tax_balance](account_tax_balance/) | 15.0.1.1.1 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 15.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 15.0.1.0.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 15.0.1.1.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
+[partner_statement](partner_statement/) | 15.0.1.1.2 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -365,7 +365,7 @@ addon | version | maintainers | summary
 [account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 15.0.1.0.0 |  | Adds the related sale line position on invoice line.
 [account_invoice_production_lot](account_invoice_production_lot/) | 15.0.1.0.0 |  | Display delivered serial numbers in invoice
 [account_invoice_report_due_list](account_invoice_report_due_list/) | 15.0.2.0.1 |  | Show multiple due data in invoice
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 15.0.1.2.6 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 15.0.1.3.0 |  | Print invoice lines grouped by picking
 [account_invoice_report_grouped_by_picking_sale_mrp](account_invoice_report_grouped_by_picking_sale_mrp/) | 15.0.1.0.1 |  | Take into account BoM kits in invoice report grouped by picking
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 15.0.1.0.0 |  | Show payment extended info in invoice
 [account_reporting_volume](account_reporting_volume/) | 15.0.1.0.0 |  | Volume in the invoices analysis view
@@ -470,6 +470,7 @@ addon | version | maintainers | summary
 [account_receipt_journal](account_receipt_journal/) | 15.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Define and use journals dedicated to receipts
 [account_receipt_send](account_receipt_send/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Send receipts
 [account_tax_group_widget_base_amount](account_tax_group_widget_base_amount/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds base to tax group widget as it's put in the report
+[account_warn_option](account_warn_option/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Add Options to Account Warn Messages
 [partner_invoicing_mode](partner_invoicing_mode/) | 15.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
 [partner_invoicing_mode_at_shipping](partner_invoicing_mode_at_shipping/) | 15.0.1.0.0 |  | Create invoices automatically when goods are shipped.
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 15.0.1.0.0 |  | Portal Accounting Personal Data Only
@@ -948,7 +949,7 @@ addon | version | maintainers | summary
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 15.0.2.0.2 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.2.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 15.0.2.3.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
@@ -1072,7 +1073,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 15.0.1.1.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 15.0.1.0.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_paypal](account_statement_import_paypal/) | 15.0.1.0.1 |  | Import PayPal CSV files as Bank Statements in Odoo
-[account_statement_import_txt_xlsx](account_statement_import_txt_xlsx/) | 15.0.2.0.3 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_statement_import_txt_xlsx](account_statement_import_txt_xlsx/) | 15.0.2.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
 [//]: # (end addons)
 
@@ -1280,7 +1281,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 15.0.1.0.1 |  | Asynchronous export with job queue
-[queue_job](queue_job/) | 15.0.2.3.7 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 15.0.2.3.8 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 15.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 15.0.2.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 15.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -1849,6 +1850,7 @@ addon | version | maintainers | summary
 [sale_order_line_price_history](sale_order_line_price_history/) | 15.0.2.0.2 |  | Sale order line price history
 [sale_order_line_remove](sale_order_line_remove/) | 15.0.1.0.0 |  | Allows removal of sale order lines from confirmed orders if not invoiced or received
 [sale_order_line_sequence](sale_order_line_sequence/) | 15.0.2.0.0 |  | Propagates SO line sequence to invoices and stock picking.
+[sale_order_lot_selection](sale_order_lot_selection/) | 15.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
 [sale_order_partner_restrict](sale_order_partner_restrict/) | 15.0.1.0.0 | [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Apply restrictions when selecting from the list of customers on SO.
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 15.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 15.0.1.0.1 |  | Define priority on sale orders
@@ -1891,6 +1893,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 15.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 15.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_triple_discount](sale_triple_discount/) | 15.0.1.0.1 |  | Manage triple discount on sale order lines
+[sale_warn_option](sale_warn_option/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Add Options to Sale Warn Messages
 [sale_wishlist](sale_wishlist/) | 15.0.1.0.0 |  | Handle sale wishlist for partners
 [sales_team_security](sales_team_security/) | 15.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
 [sales_team_security_crm](sales_team_security_crm/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates sales_team_security with crm
@@ -2531,7 +2534,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 15.0.1.13.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
-[dms_auto_classification](dms_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
+[dms_auto_classification](dms_auto_classification/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
 [dms_field](dms_field/) | 15.0.1.3.0 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
 [dms_user_role](dms_user_role/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
@@ -3095,7 +3098,7 @@ addon | version | maintainers | summary
 [hr_employee_service_contract](hr_employee_service_contract/) | 15.0.1.0.0 |  | Employee service information & duration based on employee's contracts
 [hr_employee_ssn](hr_employee_ssn/) | 15.0.1.0.0 |  | View/edit employee's SSN & SIN fields
 [hr_holidays_settings](hr_holidays_settings/) | 15.0.1.0.0 |  | Enables Settings Form for HR Holidays.
-[hr_job_category](hr_job_category/) | 15.0.1.0.0 |  | Adds tags to employee through contract and job position
+[hr_job_category](hr_job_category/) | 15.0.1.0.1 |  | Adds tags to employee through contract and job position
 [hr_org_chart_overview](hr_org_chart_overview/) | 15.0.1.0.0 |  | Organizational Chart Overview
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 15.0.1.0.0 |  | This addon allows to manage employee personal equipment
 [hr_study](hr_study/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Structured study field for employees
@@ -4608,7 +4611,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_mx_catalogs](l10n_mx_catalogs/) | 15.0.1.0.0 |  | Catálogos del Servicio de Administración Tributaria de México
 
 [//]: # (end addons)
 
@@ -4903,7 +4910,7 @@ addon | version | maintainers | summary
 [l10n_ro_pos](l10n_ro_pos/) | 15.0.2.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_siruta](l10n_ro_siruta/) | 15.0.2.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Siruta
 [l10n_ro_stock](l10n_ro_stock/) | 15.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 15.0.3.40.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 15.0.3.41.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 15.0.2.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 15.0.3.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 15.0.1.1.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
@@ -5046,7 +5053,7 @@ addon | version | maintainers | summary
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 15.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Impresión de pagaré de Cajamar en A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
@@ -5245,9 +5252,9 @@ addon | version | maintainers | summary
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
 [l10n_th_fonts](l10n_th_fonts/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all fonts thai
 [l10n_th_gov_account_asset_management](l10n_th_gov_account_asset_management/) | 15.0.3.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Assets Management
-[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
+[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.1.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Thai Localization - Government Purchase Agreement
-[l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.1 |  | Thai Localization - Government Purchase Guarantee
+[l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.2 |  | Thai Localization - Government Purchase Guarantee
 [l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
 [l10n_th_gov_purchase_request](l10n_th_gov_purchase_request/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Purchase Request
 [l10n_th_gov_work_acceptance](l10n_th_gov_work_acceptance/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Work Acceptance
@@ -5568,7 +5575,7 @@ addon | version | maintainers | summary
 [delivery_auto_refresh](delivery_auto_refresh/) | 15.0.1.0.2 |  | Auto-refresh delivery price in sales orders
 [delivery_carrier_info](delivery_carrier_info/) | 15.0.1.0.1 |  | Add code and description on carrier
 [delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 15.0.1.0.0 |  | Multiple ZIP intervals for the same delivery method
-[delivery_cttexpress](delivery_cttexpress/) | 15.0.1.1.0 |  | Delivery Carrier implementation for CTT Express API
+[delivery_cttexpress](delivery_cttexpress/) | 15.0.1.1.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 15.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.2 |  | Multiple destinations for the same delivery method
 [delivery_package_number](delivery_package_number/) | 15.0.2.2.0 |  | Set or compute number of packages for a picking
@@ -5685,13 +5692,13 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 15.0.1.0.0 |  | Delivery Procurement Group Carrier
-[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 15.0.1.0.2 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
+[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 15.0.1.0.3 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
 [product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 15.0.1.0.0 |  | This module makes the product customer code visible in the stock moves of a picking.
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 15.0.1.0.0 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 15.0.1.0.0 |  | Track returned quantity of sale order lines.
 [sale_line_returned_qty_mrp](sale_line_returned_qty_mrp/) | 15.0.1.0.1 |  | Track returned quantity of sale order lines for BoM products.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 15.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
-[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 15.0.1.0.0 |  | Add more flexibility in the run fifo method.
+[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 15.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_auto_move](stock_auto_move/) | 15.0.1.0.0 |  | Automatic Move Processing
 [stock_delivery_note](stock_delivery_note/) | 15.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_force_assign_by_type](stock_force_assign_by_type/) | 15.0.1.0.0 |  | Force stock allocation based on the picking operation type in Odoo
@@ -5869,7 +5876,7 @@ addon | version | maintainers | summary
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
 [stock_move_location](stock_move_location/) | 15.0.1.5.1 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_location_purchase_uom](stock_move_location_purchase_uom/) | 15.0.1.0.0 |  | This module 'glues' the modules stock_move_location and stock_move_purchase_uom.
-[stock_move_purchase_uom](stock_move_purchase_uom/) | 15.0.1.0.1 |  | Allow to use the purchase UoM in a stock move
+[stock_move_purchase_uom](stock_move_purchase_uom/) | 15.0.1.0.2 |  | Allow to use the purchase UoM in a stock move
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 15.0.1.0.1 |  | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.0 |  | Link Reordering rules to stock moves
@@ -6057,7 +6064,7 @@ addon | version | maintainers | summary
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 15.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 15.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
-[ddmrp_history](ddmrp_history/) | 15.0.1.2.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
+[ddmrp_history](ddmrp_history/) | 15.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_packaging](ddmrp_packaging/) | 15.0.1.0.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_warning](ddmrp_warning/) | 15.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
@@ -6871,6 +6878,7 @@ addon | version | maintainers | summary
 [project_duplicate_subtask](project_duplicate_subtask/) | 15.0.1.0.0 |  | The module adds an action to duplicate tasks with the child subtasks
 [project_forecast_line](project_forecast_line/) | 15.0.1.3.3 |  | Project Forecast Lines
 [project_forecast_line_bokeh_chart](project_forecast_line_bokeh_chart/) | 15.0.1.0.2 |  | Project Forecast Lines Bokeh Chart
+[project_forecast_line_deadline](project_forecast_line_deadline/) | 15.0.1.0.0 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast end date based on deadline of task.
 [project_forecast_line_holidays_public](project_forecast_line_holidays_public/) | 15.0.1.1.0 |  | Project Forecast Lines taking public holidays into account
 [project_hr](project_hr/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Link HR with project
 [project_list](project_list/) | 15.0.2.0.0 |  | Projects list view
@@ -6902,7 +6910,7 @@ addon | version | maintainers | summary
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 15.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 15.0.1.1.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 15.0.1.0.1 |  | Project Types
-[project_wbs](project_wbs/) | 15.0.1.1.2 |  | Apply Work Breakdown Structure
+[project_wbs](project_wbs/) | 15.0.1.1.3 |  | Apply Work Breakdown Structure
 [sale_project_copy_tasks](sale_project_copy_tasks/) | 15.0.1.0.1 | [![shide](https://github.com/shide.png?size=30px)](https://github.com/shide) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Copy tasks into sale order's project
 
 [//]: # (end addons)
@@ -7267,6 +7275,7 @@ addon | version | maintainers | summary
 [mass_mailing_partner](mass_mailing_partner/) | 15.0.1.0.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 [microsoft_outlook_single_tenant](microsoft_outlook_single_tenant/) | 15.0.2.0.0 |  | Microsoft Outlook Single Tenant (DEPRECATED)
+[outgoing_email_by_model](outgoing_email_by_model/) | 15.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Outgoing Email by Model
 
 [//]: # (end addons)
 
@@ -7673,7 +7682,7 @@ addon | version | maintainers | summary
 [auth_signup_partner_company](auth_signup_partner_company/) | 15.0.1.0.0 |  | Auth Signup Partner Company
 [auth_signup_verify_email](auth_signup_verify_email/) | 15.0.1.0.0 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 15.0.1.0.0 |  | Makes the user login field case insensitive
-[password_security](password_security/) | 15.0.1.3.0 |  | Allow admin to set password security requirements.
+[password_security](password_security/) | 15.0.1.4.0 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 15.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 [users_ldap_groups](users_ldap_groups/) | 15.0.1.0.0 |  | Adds user accounts to groups based on rules defined by the administrator.
 [vault](vault/) | 15.0.2.1.0 |  | Password vault integration in Odoo
@@ -7790,6 +7799,7 @@ addon | version | maintainers | summary
 [base_external_dbsource_sqlite](base_external_dbsource_sqlite/) | 15.0.1.0.0 |  | External Database Source - SQLite
 [base_external_system](base_external_system/) | 15.0.1.0.0 |  | Data models allowing for connection to external systems.
 [base_global_discount](base_global_discount/) | 15.0.1.0.0 |  | Base Global Discount
+[base_ical](base_ical/) | 15.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Provide (readonly) .ics URLs to calendar-like models
 [base_import_match](base_import_match/) | 15.0.1.0.1 |  | Try to avoid duplicates before importing
 [base_user_role](base_user_role/) | 15.0.0.4.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
 
