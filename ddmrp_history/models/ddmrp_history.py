@@ -50,3 +50,6 @@ class DdmrpHistory(models.Model):
         group_operator="avg",
         help="Average Daily Usage",
     )
+    company_id = fields.Many2one(
+        related="buffer_id.company_id",
+    )
