@@ -444,16 +444,16 @@ Date:   Mon Feb 26 12:42:59 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 598912a76154759aa767ce0536ebaef62f893629
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 19 12:50:20 2024 +0000
+commit e574628c460da556aeb0aca7f8fdb6095d9a707c
+Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
+Date:   Wed May 8 16:23:23 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 50.0% (6 of 12 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-partner_contact_address_default
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-partner_contact_address_default/it/
+    Translation: partner-contact-12.0/partner-contact-12.0-base_country_state_translatable
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_country_state_translatable/es/
 
 
 ## sale-financial
@@ -551,16 +551,16 @@ Date:   Fri May 3 14:43:29 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 8a81b2abbbbf952a0b4669aa5f44cec11166fc7f
+commit 6cb468b5fdff94771004539063bd2d2c3c707012
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Oct 31 11:56:03 2023 +0000
+Date:   Wed May 8 14:05:43 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: e-commerce-12.0/e-commerce-12.0-website_sale_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-12-0/e-commerce-12-0-website_sale_secondary_unit/it/
+    Translation: e-commerce-12.0/e-commerce-12.0-website_sale_product_attachment
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-12-0/e-commerce-12-0-website_sale_product_attachment/it/
 
 
 ## edi
@@ -1004,16 +1004,16 @@ Date:   Wed Mar 27 16:21:32 2024 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit cbdd277218226e46ef989bba7e4b3c316c08d6e6
+commit 3e6a3b6978a06658f4cc973e99d93c97f8099b13
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 12:13:44 2024 +0000
+Date:   Mon May 6 11:46:40 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 7.6% (1 of 13 strings)
+    Currently translated at 29.6% (8 of 27 strings)
     
-    Translation: l10n-switzerland-12.0/l10n-switzerland-12.0-l10n_ch_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-12-0/l10n-switzerland-12-0-l10n_ch_pain_base/it/
+    Translation: l10n-switzerland-12.0/l10n-switzerland-12.0-l10n_ch_base_bank
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-12-0/l10n-switzerland-12-0-l10n_ch_base_bank/it/
 
 
 ## l10n-taiwan
@@ -1294,16 +1294,16 @@ Date:   Tue Nov 19 21:11:15 2019 +0100
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit 4f96e4bde3d1583b872bcf56564e22a79b643724
+commit e8dc02065712f4d2f60177dc7179d4b2d0044645
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 14:44:51 2024 +0000
+Date:   Wed May 8 10:13:05 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (49 of 49 strings)
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: product-variant-12.0/product-variant-12.0-product_variant_configurator
-    Translate-URL: https://translation.odoo-community.org/projects/product-variant-12-0/product-variant-12-0-product_variant_configurator/it/
+    Translation: product-variant-12.0/product-variant-12.0-purchase_order_variant_mgmt
+    Translate-URL: https://translation.odoo-community.org/projects/product-variant-12-0/product-variant-12-0-purchase_order_variant_mgmt/it/
 
 
 ## product-pack
@@ -1359,16 +1359,16 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 94601718d7087de5814369c7d6b9ff65267b12fa
+commit 517de8795022aa53a8957baa76e64dde56bc8aaa
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 11 09:05:50 2024 +0000
+Date:   Mon May 6 12:37:21 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (49 of 49 strings)
+    Currently translated at 95.0% (285 of 300 strings)
     
-    Translation: contract-12.0/contract-12.0-product_contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-product_contract/it/
+    Translation: contract-12.0/contract-12.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-contract/it/
 
 
 ## business-requirement
@@ -1548,16 +1548,16 @@ Date:   Thu Apr 25 11:46:56 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 4bdb803181f1d56d313f619b33ac50403a0c6538
+commit 7fdb3777c1e46995464b8a36d625faada61e4707
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:17:21 2023 +0000
+Date:   Mon May 6 11:41:59 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 1.8% (16 of 868 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: community-data-files-12.0/community-data-files-12.0-l10n_eu_nace
-    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-12-0/community-data-files-12-0-l10n_eu_nace/it/
+    Translation: community-data-files-12.0/community-data-files-12.0-uom_unece
+    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-12-0/community-data-files-12-0-uom_unece/it/
 
 
 ## webhook
