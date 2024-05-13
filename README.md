@@ -344,9 +344,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 72ce6f60848827060be4f03a2839627dc8e3a1ea
+commit 59d2c22e54a35a5913106f58aeff354c95ae7405
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 8 21:50:17 2024 +0000
+Date:   Mon May 13 07:13:52 2024 +0000
 
     [BOT] post-merge updates
 
@@ -516,16 +516,16 @@ Date:   Wed May 1 18:13:03 2024 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 79ff19b79b8b5956012fd0878b4ad75b044014d9
+commit 30a933325c8263325ca93660835a13ec7537fea9
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Apr 15 11:04:58 2024 +0000
+Date:   Fri May 10 17:14:01 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet_attendance
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet_attendance/
+    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet/
 
 
 ## hr
@@ -1071,16 +1071,11 @@ Date:   Wed May 1 19:00:17 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 2a8ed8fb0a72a901a4016ae93546c12cca8602ba
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 7 10:51:54 2024 +0000
+commit 89237c5bde1ae660c219a29271d72b079fdaed2b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon May 13 09:01:38 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp_history
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp_history/
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1153,16 +1148,11 @@ Date:   Wed May 1 18:55:17 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit cf91637dfa14b1c450ca41f148409ccb604b1ce5
-Author: Weblate <noreply@weblate.org>
-Date:   Sat May 4 06:52:25 2024 +0000
+commit 51f0d5bf7bdfdf1fcc38906560482b72f30ca6a6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 11 17:08:43 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_direct_print
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_direct_print/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1203,16 +1193,16 @@ Date:   Wed May 1 18:54:54 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 894a744fe54f80e68ce1b30aba395a9a66c0e1aa
-Author: Weblate <noreply@weblate.org>
-Date:   Wed May 8 11:12:11 2024 +0000
+commit f2e387177660f25465175093358e132137f0bf41
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun May 12 10:16:13 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: project-15.0/project-15.0-project_forecast_line_deadline
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_forecast_line_deadline/
+    Translation: project-15.0/project-15.0-project_task_milestone
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_task_milestone/it/
 
 
 ## project-agile
@@ -1303,16 +1293,11 @@ Date:   Wed May 1 19:03:51 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit ffaf7a12bae8f3e41375148d0b2e3fdca32b3d75
-Author: Ignacio Buioli <ibuioli@gmail.com>
-Date:   Wed May 1 22:07:19 2024 +0000
+commit 65d4b153cf3c6a474a0b7897a47e4f36b423eb96
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 10 17:11:41 2024 +0000
 
-    Translated using Weblate (Spanish (Argentina))
-    
-    Currently translated at 100.0% (96 of 96 strings)
-    
-    Translation: reporting-engine-15.0/reporting-engine-15.0-bi_view_editor
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-15-0/reporting-engine-15-0-bi_view_editor/es_AR/
+    [BOT] post-merge updates
 
 
 ## report-print-send
