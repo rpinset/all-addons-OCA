@@ -504,6 +504,7 @@ class TestPmsWizardMassiveChanges(TestPms):
                         "end_date": fields.date.today() + datetime.timedelta(days=days),
                         "room_type_ids": [(6, 0, [room_type_double.id])],
                         "pms_property_ids": [self.pms_property1.id],
+                        "price": 20,
                     }
                 ).apply_massive_changes()
                 # ASSERT
@@ -539,6 +540,7 @@ class TestPmsWizardMassiveChanges(TestPms):
                 "start_date": date_from,
                 "end_date": date_to,
                 "pms_property_ids": [self.pms_property1.id],
+                "price": 20,
             }
         ).apply_massive_changes()
         # ASSERT
@@ -635,6 +637,7 @@ class TestPmsWizardMassiveChanges(TestPms):
                 "start_date": date_from,
                 "end_date": date_to,
                 "pms_property_ids": [self.pms_property1.id],
+                "price": 20,
             }
         )
         for index, test_case in enumerate(test_case_week_days):
@@ -696,6 +699,7 @@ class TestPmsWizardMassiveChanges(TestPms):
             "pms_property_ids": [self.pms_property1.id],
             "start_date": date_from,
             "end_date": date_to,
+            "price": 20,
         }
         # ACT
         self.env["pms.massive.changes.wizard"].create(
@@ -754,6 +758,7 @@ class TestPmsWizardMassiveChanges(TestPms):
             "pms_property_ids": [self.pms_property1.id],
             "start_date": date_from,
             "end_date": date_to,
+            "price": 20,
         }
         # ACT
         self.env["pms.massive.changes.wizard"].create(
@@ -791,6 +796,7 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "name": "Test Only Breakfast",
                 "default_code": "CB1",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         service_breakfast = self.env["product.product"].create(
@@ -800,12 +806,14 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "pms_room_type_id": room_type_single.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         board_service_line_single_1 = self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "adults": True,
             }
         )
         date_from = fields.date.today()
@@ -866,6 +874,7 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "name": "Test Only Breakfast",
                 "default_code": "CB1",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         service_breakfast = self.env["product.product"].create(
@@ -875,12 +884,14 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "pms_room_type_id": room_type_single.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         board_service_line_single_1 = self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "adults": True,
             }
         )
         date_from = fields.date.today()
@@ -950,12 +961,14 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "name": "Test Only Breakfast",
                 "default_code": "CB1",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         board_service_half_board = self.env["pms.board.service"].create(
             {
                 "name": "Test Half Board",
                 "default_code": "CB2",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         service_breakfast = self.env["product.product"].create(
@@ -966,30 +979,35 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "pms_room_type_id": room_type_single.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         board_service_double = self.env["pms.board.service.room.type"].create(
             {
                 "pms_room_type_id": room_type_double.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "adults": True,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "adults": True,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_dinner.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "adults": True,
             }
         )
         date_from = fields.date.today()
@@ -1069,12 +1087,14 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "name": "Test Only Breakfast",
                 "default_code": "CB1",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         board_service_half_board = self.env["pms.board.service"].create(
             {
                 "name": "Test Half Board",
                 "default_code": "CB2",
+                "pms_property_ids": [self.pms_property1.id],
             }
         )
         service_breakfast = self.env["product.product"].create(
@@ -1085,30 +1105,35 @@ class TestPmsWizardMassiveChanges(TestPms):
             {
                 "pms_room_type_id": room_type_single.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         board_service_double = self.env["pms.board.service.room.type"].create(
             {
                 "pms_room_type_id": room_type_double.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "pms_property_id": self.pms_property1.id,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_only_breakfast.id,
+                "adults": True,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_breakfast.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "adults": True,
             }
         )
         self.env["pms.board.service.line"].create(
             {
                 "product_id": service_dinner.id,
                 "pms_board_service_id": board_service_half_board.id,
+                "adults": True,
             }
         )
         date_from = fields.date.today()

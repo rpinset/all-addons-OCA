@@ -78,11 +78,16 @@ Date:   Tue May 7 09:43:45 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 17eb45a66911af34966c9e0bb2f574adee681b59
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 17:46:24 2024 +0000
+commit ccb519821651d39ce85b8fd51aef1bf791e105a2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat May 11 14:06:54 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_report_due_list
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_report_due_list/it/
 
 
 ## account-invoicing
@@ -172,9 +177,9 @@ Date:   Wed May 1 18:05:31 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 519bfe970d03ccf463147aa26c9aac87c6838dfb
+commit e461a56447b1e96a3e78ffd779dc5d1767f5c045
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 6 14:32:30 2024 +0000
+Date:   Fri May 10 08:59:35 2024 +0000
 
     [BOT] post-merge updates
 
@@ -359,11 +364,16 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 1231f1b0de3c63e5129b727aa4ee8c5f3b56571d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 2 17:50:42 2024 +0000
+commit b0fa06af0096a7f21d805a4e0707cd335cf547f1
+Author: Weblate <noreply@weblate.org>
+Date:   Sat May 11 17:41:15 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_by_packaging
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_by_packaging/
 
 
 ## crm
@@ -377,16 +387,16 @@ Date:   Wed May 1 18:04:30 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit d14db5c159a90560914e4b0647ade7f464bfc861
-Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
-Date:   Wed May 8 16:06:54 2024 +0000
+commit 503f09a5d20e5883ddb4a8604590d037d3929ec4
+Author: Weblate <noreply@weblate.org>
+Date:   Sat May 11 19:04:34 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: partner-contact-14.0/partner-contact-14.0-partner_sequence_address_type
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_sequence_address_type/es/
+    Translation: partner-contact-14.0/partner-contact-14.0-partner_country_lang
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_country_lang/
 
 
 ## sale-financial
@@ -418,9 +428,9 @@ Date:   Wed May 1 19:01:51 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 341f396743d8999f11a9fb9731d54e1ab288eaf2
+commit 0a4c66d16419627e4c5a424631c7722ea2b7320a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 7 11:48:41 2024 +0000
+Date:   Mon May 13 11:03:02 2024 +0000
 
     [BOT] post-merge updates
 
@@ -501,11 +511,11 @@ Date:   Wed May 1 18:10:01 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a716b0ae44061e25dcd03b69e37edba1de42182b
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:11:43 2024 +0000
+commit b46b0e859e0842092b153a69400a3c1c11040dc4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 10 17:23:17 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1053,16 +1063,11 @@ Date:   Wed May 1 18:41:29 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit bac33496354aa254d3e53021d600c6d1d7612070
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 7 09:48:27 2024 +0000
+commit 9d259b95ab42cf78ed671f2af2135bba7e50a9b9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 11 16:58:15 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: delivery-carrier-14.0/delivery-carrier-14.0-stock_picking_delivery_link
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-stock_picking_delivery_link/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1126,16 +1131,11 @@ Date:   Wed May 1 18:59:59 2024 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit a14bf81f735fb1ae00c7e24208f4e9764b0e68ac
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 7 10:52:21 2024 +0000
+commit c3e5cfb8341372aa89d13e2aa4da464e5652e8e7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon May 13 15:17:39 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp_history
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp_history/
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1181,11 +1181,11 @@ Date:   Wed May 1 18:43:01 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 184e441d9ecb1f76123e8d0cd86f1c60cb5c2a5c
-Author: FrankC013 <fcespedes@nuobit.com>
-Date:   Wed May 8 12:41:32 2024 +0200
+commit a9c47e678815103b1b97a32ce735df6ed9645e7a
+Author: Darío Lodeiros <dario@commitsun.com>
+Date:   Mon May 13 19:45:06 2024 +0200
 
-    [FIX] pms: fix confirm reservation in data demo
+    [IMP]pms: improvemente compute overbooking
 
 
 ## purchase-workflow
@@ -1428,16 +1428,11 @@ Date:   Wed May 1 19:05:18 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 2d848b98155bbaf5b9dcc81dd0999238eef53fbc
-Author: Anna Martínez <anna080678@gmail.com>
-Date:   Tue May 7 15:09:23 2024 +0000
+commit 6e43bb4513e79bf6838c18a3579c265f1a25a7ea
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 11 16:52:17 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 97.6% (41 of 42 strings)
-    
-    Translation: server-ux-14.0/server-ux-14.0-mass_editing
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-mass_editing/es/
+    [BOT] post-merge updates
 
 
 ## community-data-files

@@ -1005,6 +1005,7 @@ addon | version | maintainers | summary
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
 [account_payment_order](account_payment_order/) | 14.0.2.5.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
+[account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 14.0.1.0.2 |  | Account Payment Order Return
 [account_payment_order_sequence_payment_mode](account_payment_order_sequence_payment_mode/) | 14.0.1.0.0 |  | Account Payment Order Sequence Payment Mode
@@ -1897,7 +1898,7 @@ addon | version | maintainers | summary
 [sale_automatic_workflow_periodicity](sale_automatic_workflow_periodicity/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Adds a period for the execution of a workflow.
 [sale_blanket_order](sale_blanket_order/) | 14.0.2.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Blanket Orders
 [sale_blanket_order_revision](sale_blanket_order_revision/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Revision feture for Blanket Orders
-[sale_by_packaging](sale_by_packaging/) | 14.0.2.0.0 |  | Manage sale of packaging
+[sale_by_packaging](sale_by_packaging/) | 14.0.2.1.0 |  | Manage sale of packaging
 [sale_cancel_confirm](sale_cancel_confirm/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Sales Cancel Confirm
 [sale_cancel_reason](sale_cancel_reason/) | 14.0.1.1.1 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 14.0.1.0.1 |  | Add stored related field 'Commercial Entity' on sale orders
@@ -2157,6 +2158,7 @@ addon | version | maintainers | summary
 [partner_contact_lang](partner_contact_lang/) | 14.0.1.0.0 |  | Manage language in contacts
 [partner_contact_nationality](partner_contact_nationality/) | 14.0.1.0.1 |  | Add nationality field to contacts
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 14.0.1.0.0 |  | Add a page to contacts form to put personal information
+[partner_country_lang](partner_country_lang/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner language according country
 [partner_create_format_phone](partner_create_format_phone/) | 14.0.1.0.0 |  | Auto mobile number format for Partner
 [partner_data_vies_populator](partner_data_vies_populator/) | 14.0.1.0.3 |  | Using VIES webservice, name and address information will be fetched and added to the partner.
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 14.0.1.0.0 |  | Contact deduplication with fine-grained permission control
@@ -2411,7 +2413,7 @@ addon | version | maintainers | summary
 [sale_commission_check_deposit](sale_commission_check_deposit/) | 14.0.1.0.0 |  | Sales commission check deposit
 [sale_commission_delegated_partner](sale_commission_delegated_partner/) | 14.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
-[sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Assign agents to partners according to their location
+[sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Assign agents to partners according to their location
 [sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.2.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
 [sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.0 |  | Sales commissions based on paid amount
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
@@ -2889,6 +2891,7 @@ addon | version | maintainers | summary
 [fieldservice_delivery](fieldservice_delivery/) | 14.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Select delivery methods and carriers on Field Service orders
 [fieldservice_distribution](fieldservice_distribution/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your distribution structure
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 14.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
+[fieldservice_equipment_type](fieldservice_equipment_type/) | 14.0.1.0.0 |  | Field Service Equipment Type
 [fieldservice_fleet](fieldservice_fleet/) | 14.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Link Field Service vehicles with Odoo Fleet
 [fieldservice_geoengine](fieldservice_geoengine/) | 14.0.1.2.2 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
 [fieldservice_google_map](fieldservice_google_map/) | 14.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module displays map views on the order and location using Google Map View module.
@@ -5921,7 +5924,7 @@ addon | version | maintainers | summary
 [delivery_carrier_package_measure_required](delivery_carrier_package_measure_required/) | 14.0.1.0.2 |  | Allow the configuration of which package measurements are required on a delivery carrier basis.
 [delivery_carrier_partner](delivery_carrier_partner/) | 14.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_carrier_pricelist](delivery_carrier_pricelist/) | 14.0.1.0.2 |  | Compute method method fees based on the product's pricelist.
-[delivery_carrier_return_barcode_pattern](delivery_carrier_return_barcode_pattern/) | 14.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Allow to define a return barcode pattern on delivery methods
+[delivery_carrier_return_barcode_pattern](delivery_carrier_return_barcode_pattern/) | 14.0.1.0.1 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Allow to define a return barcode pattern on delivery methods
 [delivery_correos_express](delivery_correos_express/) | 14.0.1.0.1 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 14.0.1.0.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 14.0.1.0.0 |  | Hide free fee lines on sales orders
@@ -6505,6 +6508,7 @@ addon | version | maintainers | summary
 [ddmrp_packaging](ddmrp_packaging/) | 14.0.1.1.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_purchase_hide_onhand_status](ddmrp_purchase_hide_onhand_status/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Replace purchase onhand status with smart button.
+[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
 [ddmrp_warning](ddmrp_warning/) | 14.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 14.0.1.3.0 |  | Allows to force a route to be used when procuring from Stock Buffers
@@ -8592,7 +8596,7 @@ addon | version | maintainers | summary
 [base_tier_validation_waiting](base_tier_validation_waiting/) | 14.0.1.0.0 |  | Base Tier Validation Extension to add waiting status
 [base_user_locale](base_user_locale/) | 14.0.1.2.0 |  | User Locale Settings
 [chained_swapper](chained_swapper/) | 14.0.1.0.2 |  | Chained Swapper
-[date_range](date_range/) | 14.0.2.1.3 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
+[date_range](date_range/) | 14.0.2.2.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [date_range_account](date_range_account/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [default_multi_user](default_multi_user/) | 14.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined defaults among several users.
 [document_quick_access](document_quick_access/) | 14.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Document quick access

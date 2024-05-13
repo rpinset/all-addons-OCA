@@ -58,6 +58,7 @@ class TestProductTemplate(TestPms):
             {
                 "product_id": product.id,
                 "pms_board_service_id": self.board_service.id,
+                "adults": True,
             }
         )
         board_service_room_type = self.env["pms.board.service.room.type"].create(
@@ -78,6 +79,7 @@ class TestProductTemplate(TestPms):
                 "partner_id": self.partner.id,
                 "board_service_room_id": board_service_room_type.id,
                 "sale_channel_origin_id": self.sale_channel_direct1.id,
+                "adults": 2,
             }
         )
         # ASSERT
@@ -105,6 +107,7 @@ class TestProductTemplate(TestPms):
             {
                 "product_id": product.id,
                 "pms_board_service_id": self.board_service.id,
+                "adults": True,
             }
         )
         board_service_room_type = self.env["pms.board.service.room.type"].create(
@@ -125,6 +128,7 @@ class TestProductTemplate(TestPms):
                 "partner_id": self.partner.id,
                 "board_service_room_id": board_service_room_type.id,
                 "sale_channel_origin_id": self.sale_channel_direct1.id,
+                "adults": 2,
             }
         )
         # ASSERT
@@ -153,6 +157,7 @@ class TestProductTemplate(TestPms):
             {
                 "product_id": product.id,
                 "pms_board_service_id": self.board_service.id,
+                "adults": True,
             }
         )
         board_service_room_type = self.env["pms.board.service.room.type"].create(
@@ -203,6 +208,7 @@ class TestProductTemplate(TestPms):
             {
                 "product_id": product.id,
                 "pms_board_service_id": self.board_service.id,
+                "adults": True,
             }
         )
         board_service_room_type = self.env["pms.board.service.room.type"].create(
@@ -256,6 +262,7 @@ class TestProductTemplate(TestPms):
             {
                 "product_id": product.id,
                 "pms_board_service_id": self.board_service.id,
+                "adults": True,
             }
         )
         board_service_room_type = self.env["pms.board.service.room.type"].create(

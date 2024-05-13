@@ -402,7 +402,7 @@ class PmsReservationLine(models.Model):
                 )
                 # TODO: Out of service 0 amount
 
-    @api.depends("reservation_id.state", "reservation_id.overbooking", "is_reselling")
+    @api.depends("reservation_id.state", "is_reselling")
     def _compute_occupies_availability(self):
         for line in self:
             if (
@@ -481,6 +481,7 @@ class PmsReservationLine(models.Model):
     @api.depends("room_id", "state", "is_reselling")
     def _compute_overbooking(self):
         for record in self.filtered("room_id"):
+            overbooking = False
             if record.state != "cancel" and not record.is_reselling:
                 record_id = (
                     record.id
@@ -495,11 +496,11 @@ class PmsReservationLine(models.Model):
                         ("room_id", "=", record.room_id.id),
                         ("id", "!=", record_id),
                         ("occupies_availability", "=", True),
+                        ("overbooking", "=", False),
                     ]
                 ):
-                    record.overbooking = True
-                else:
-                    record.overbooking = False
+                    overbooking = True
+            record.overbooking = overbooking
 
     @api.model_create_multi
     def create(self, vals_list):
