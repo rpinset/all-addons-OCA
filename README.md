@@ -76,16 +76,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 2645ee865a61d6640a8733c7b5172de1868f85b7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 15 06:51:01 2024 +0000
+commit 116dd617ac342013c6f961803315ba2c68224f97
+Author: Vincent Hatakeyama <vincent+github@hatakeyama.fr>
+Date:   Mon May 13 15:03:55 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 27.4% (73 of 266 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_batch_compute
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_batch_compute/fr/
 
 
 ## account-financial-reporting
@@ -932,9 +932,9 @@ Date:   Sun Sep 3 13:33:05 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit a4ea29263dfe156d572f81917104a8fe5f70d229
+commit 341f9a575c91bed65505a0e20a674083b839965f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 4 07:52:17 2023 +0000
+Date:   Mon May 13 16:33:51 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1473,16 +1473,16 @@ Date:   Sun Sep 3 15:37:11 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit e2236701fee9ce193d9bd493ae62b5184c04bfa0
+commit c7462fb9adc821094fc07629fd1349bbe9b7c363
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Nov 6 13:40:33 2023 +0000
+Date:   Sun May 12 10:18:15 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (27 of 27 strings)
     
-    Translation: project-13.0/project-13.0-project_custom_info
-    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_custom_info/it/
+    Translation: project-13.0/project-13.0-project_milestone
+    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_milestone/it/
 
 
 ## project-agile
