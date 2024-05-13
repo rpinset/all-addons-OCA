@@ -416,16 +416,11 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 220bc445cd273a94320e9ea689b0b59622db2c91
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 28 20:39:21 2024 +0000
+commit 1cf207d9397b862a7940edb0de02f7b14ef211f6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 10 17:15:09 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (30 of 30 strings)
-    
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -1331,16 +1326,16 @@ Date:   Sun Sep 3 15:37:10 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 4ddf7a99f3ca8ccb08a485f6d93224dc342fcdad
+commit 9e398bacbfaa4fce29b164ffa9e0ace9d8e87118
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:07:06 2024 +0000
+Date:   Sun May 12 10:18:12 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (38 of 38 strings)
+    Currently translated at 100.0% (28 of 28 strings)
     
-    Translation: project-12.0/project-12.0-project_task_material_stock
-    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_task_material_stock/it/
+    Translation: project-12.0/project-12.0-project_milestone
+    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_milestone/it/
 
 
 ## project-agile
@@ -1689,14 +1684,11 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 1a252ee941e6c311bc1606ec416c92112f478328
-Merge: 8fb7e7d03 dc579fc6c
+commit 0c2be8f16629c70cd10a4a3e0a4d44d5d3468e0f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 9 15:27:08 2024 +0000
+Date:   Sat May 11 17:10:01 2024 +0000
 
-    Merge PR #2445 into 12.0
-    
-    Signed-off-by dreispt
+    [BOT] post-merge updates
 
 
 ## website
