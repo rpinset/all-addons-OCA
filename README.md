@@ -94,9 +94,9 @@ Date:   Fri May 3 06:58:03 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 8f16ddde2a6dc14bfb77834aa3c6da48516294bf
+commit 0df88fccb9485a2c94a02534a0ea37b2514cf3d1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 19 10:27:03 2024 +0000
+Date:   Fri May 17 08:10:16 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -201,11 +201,16 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 99d34d9ef054b48dbc1335b5ab42abbb12506f57
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Mar 23 15:14:36 2024 +0000
+commit 002498919d3aa06fcf6e8c48ffb51d291485feeb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed May 15 10:44:50 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 94.7% (179 of 189 strings)
+    
+    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
 
 
 ## data-protection
@@ -476,16 +481,16 @@ Date:   Mon Apr 8 11:54:19 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit d35eba74e8b3b2b6eb633f4f3516bca7dfc5f9ea
+commit b26d270e5046f4ff67f7c4eb9b832552aa5b7650
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 22 14:43:28 2024 +0000
+Date:   Fri May 17 08:06:50 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 89.2% (150 of 168 strings)
     
-    Translation: commission-12.0/commission-12.0-sale_commission_settlement_partial_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission_settlement_partial_invoice/it/
+    Translation: commission-12.0/commission-12.0-sale_commission
+    Translate-URL: https://translation.odoo-community.org/projects/commission-12-0/commission-12-0-sale_commission/it/
 
 
 ## event
@@ -881,16 +886,11 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 492e3b13a3d943f543e0dbc0492575cdc12ffa5c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 30 15:56:54 2024 +0000
+commit 61245e4ccffe081b5180d053d1857c5926e6b74c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 15 12:04:24 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (173 of 173 strings)
-    
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1400,16 +1400,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit b5a0f50a110efaf331280f587e132db7703797e2
+commit 9b3f20d148c3c6b04cd281b4b0327c20801a72c2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 5 07:08:07 2024 +0000
+Date:   Wed May 15 10:45:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 83.3% (95 of 114 strings)
     
-    Translation: social-12.0/social-12.0-mail_optional_autofollow
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_optional_autofollow/it/
+    Translation: social-12.0/social-12.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_tracking/it/
 
 
 ## storage
