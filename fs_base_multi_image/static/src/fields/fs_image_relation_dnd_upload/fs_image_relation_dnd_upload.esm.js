@@ -6,11 +6,20 @@ import {onWillRender, useRef, useState} from "@odoo/owl";
 import {X2ManyField} from "@web/views/fields/x2many/x2many_field";
 import {registry} from "@web/core/registry";
 
+import {useX2ManyCrud} from "@web/views/fields/relational_utils";
+
 export class FsImageRelationDndUploadField extends X2ManyField {
+    /**
+     * When using this widget, displayed image relation views must contains
+     * following fields:
+     * - sequence
+     * - image_id
+     * - specific_image
+     * - link_existing
+     */
     setup() {
         super.setup();
         this.options = this.activeField.options;
-        this.relationField = this.field.relation_field;
         this.defaultTarget = this.options.target || "specific";
         this.state = useState({
             dragging: false,
@@ -19,6 +28,8 @@ export class FsImageRelationDndUploadField extends X2ManyField {
         this.fileInput = useRef("fileInput");
         this.defaultSequence = 0;
 
+        this.operations = useX2ManyCrud(() => this.list, this.isMany2Many);
+
         onWillRender(() => {
             this.initDefaultSequence();
         });
@@ -26,6 +37,10 @@ export class FsImageRelationDndUploadField extends X2ManyField {
 
     get targetImage() {
         return this.state.target;
+    }
+
+    get relationRecordId() {
+        return this.props.record.data.id;
     }
 
     get displayDndZone() {
@@ -92,18 +107,15 @@ export class FsImageRelationDndUploadField extends X2ManyField {
 
     async uploadFsImage(imagesDesc) {
         const self = this;
-        const createValues = [];
         self.env.model.orm
             .call("fs.image", "create", [imagesDesc])
             .then((fsImageIds) => {
                 let values = {};
                 _.each(fsImageIds, (fsImageId) => {
                     values = self.getFsImageRelationValues(fsImageId);
-                    createValues.push(values);
+                    self.createFieldRelationRecords(values);
                 });
-            })
-            .then(() => {
-                self.createFieldRelationRecords(createValues);
+                unblockUI();
             })
             .catch(() => {
                 self.displayUploadError();
@@ -123,8 +135,8 @@ export class FsImageRelationDndUploadField extends X2ManyField {
 
     getFsImageRelationValues(fsImageId) {
         let values = {
-            image_id: fsImageId,
-            link_existing: true,
+            default_image_id: fsImageId,
+            default_link_existing: true,
         };
         values = {...values, ...this.getRelationCommonValues()};
         return values;
@@ -132,40 +144,34 @@ export class FsImageRelationDndUploadField extends X2ManyField {
 
     async uploadSpecificImage(imagesDesc) {
         const self = this;
-        const createValues = [];
         _.each(imagesDesc, (imageDesc) => {
-            createValues.push(self.getSpecificImageRelationValues(imageDesc));
+            self.createFieldRelationRecords(
+                self.getSpecificImageRelationValues(imageDesc)
+            );
         });
-        self.createFieldRelationRecords(createValues);
+        unblockUI();
     }
 
     getSpecificImageRelationValues(imageDesc) {
-        return {...imageDesc, ...this.getRelationCommonValues()};
+        return {
+            ...this.getRelationCommonValues(),
+            default_specific_image: imageDesc.image,
+        };
     }
 
     getRelationCommonValues() {
-        const values = {
-            sequence: this.getNewSequence(),
+        return {
+            default_sequence: this.getNewSequence(),
         };
-        values[this.relationField] = this.props.record.data.id;
-        return values;
     }
 
     async createFieldRelationRecords(createValues) {
-        const self = this;
-        const model = self.env.model;
-        model.orm
-            .call(self.activeField.relation, "create", [createValues])
-            .then(() => {
-                model.root.load();
-                model.root.save();
-            })
-            .then(() => {
-                unblockUI();
-            })
-            .catch(() => {
-                self.displayUploadError();
-            });
+        await this.list.addNew({
+            position: "bottom",
+            context: createValues,
+            mode: "readonly",
+            allowWarning: true,
+        });
     }
 
     async uploadImages(files) {

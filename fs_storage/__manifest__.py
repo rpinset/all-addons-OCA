@@ -5,7 +5,7 @@
 {
     "name": "Filesystem Storage Backend",
     "summary": "Implement the concept of Storage with amazon S3, sftp...",
-    "version": "16.0.1.3.0",
+    "version": "16.0.1.3.1",
     "category": "FS Storage",
     "website": "https://github.com/OCA/storage",
     "author": " ACSONE SA/NV, Odoo Community Association (OCA)",
@@ -19,5 +19,5 @@
         "wizards/fs_test_connection.xml",
     ],
     "demo": ["demo/fs_storage.xml"],
-    "external_dependencies": {"python": ["fsspec"]},
+    "external_dependencies": {"python": ["fsspec>=2024.5.0"]},
 }

@@ -252,7 +252,7 @@ extract_msg
 premailer
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
-fsspec
+fsspec>=2024.5.0
 paramiko
 python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
