@@ -621,6 +621,11 @@ msgid "Get configuration warnings for stock buffers."
 msgstr ""
 
 #. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.view_move_tree
+msgid "Go to Source"
+msgstr ""
+
+#. module: ddmrp
 #: model:ir.model.fields.selection,name:ddmrp.selection__mrp_production__execution_priority_level__3_green
 #: model:ir.model.fields.selection,name:ddmrp.selection__purchase_order_line__execution_priority_level__3_green
 #: model:ir.model.fields.selection,name:ddmrp.selection__stock_buffer__execution_priority_level__3_green
@@ -1016,7 +1021,7 @@ msgstr ""
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
-msgid "No stock available on source location for distributed buffer"
+msgid "No stock available in source location for distributed buffer"
 msgstr ""
 
 #. module: ddmrp
@@ -1079,11 +1084,6 @@ msgstr ""
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.view_purchase_order_filter
 msgid "On-Hand Alert: Yellow"
-msgstr ""
-
-#. module: ddmrp
-#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
-msgid "Open Non-completed Moves"
 msgstr ""
 
 #. module: ddmrp
@@ -1353,11 +1353,6 @@ msgid "RFQ Qty (Outside DLT)"
 msgstr ""
 
 #. module: ddmrp
-#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
-msgid "RFQ Qty Outside DLT"
-msgstr ""
-
-#. module: ddmrp
 #: model:product.product,name:ddmrp.product_product_rm01
 #: model:product.template,name:ddmrp.product_product_rm01_product_template
 msgid "RM-01"
@@ -1535,10 +1530,26 @@ msgid "Shows the current on-hand for stock buffers expressed as coverage days."
 msgstr ""
 
 #. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_tree
+msgid ""
+"Some RFQ quantities are outside of the DLT Horizon and may require "
+"rescheduling.                     Press this button to display the involved "
+"RFQs"
+msgstr ""
+
+#. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
 msgid ""
-"Some incoming quantities are outside of the DLT Horizon and may require "
-"rescheduling.                                             Press this button "
+"Some incoming RFQs are outside of the DLT Horizon and may require "
+"rescheduling.                                              Press this button "
+"to display the involved supply orders"
+msgstr ""
+
+#. module: ddmrp
+#: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
+msgid ""
+"Some incoming qty is outside of the DLT Horizon and may require "
+"rescheduling.                                              Press this button "
 "to display the involved supply orders"
 msgstr ""
 
@@ -1627,6 +1638,12 @@ msgstr ""
 #. module: ddmrp
 #: model:ir.actions.act_window,name:ddmrp.stock_move_year_consumption_action
 msgid "Stock Move Last Year Consumption"
+msgstr ""
+
+#. module: ddmrp
+#: code:addons/ddmrp/models/stock_move.py:0
+#, python-format
+msgid "Stock Move Source"
 msgstr ""
 
 #. module: ddmrp
@@ -1856,7 +1873,7 @@ msgstr ""
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.stock_buffer_view_form
-msgid "View Incoming (Within DLT)"
+msgid "View Incoming Moves (Within DLT)"
 msgstr ""
 
 #. module: ddmrp
