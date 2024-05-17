@@ -3,12 +3,12 @@
 
 {
     "name": "Role Policy HR Expenses",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.1.0",
     "license": "AGPL-3",
     "author": "Noviat, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/role-policy",
     "category": "Tools",
-    "depends": ["hr_expense", "role_policy"],
+    "depends": ["hr_expense", "role_policy_hr"],
     "data": ["views/menu.xml"],
     "maintainers": ["luc-demeyer"],
     "installable": True,

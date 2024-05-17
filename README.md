@@ -90,9 +90,9 @@ Date:   Mon May 13 15:03:55 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 695fd921941849b35b68f935dd88156051b6d8c9
+commit d558e2a5ecd0fbf644162a1200e52ce7015a071e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 5 10:24:34 2024 +0000
+Date:   Fri May 17 08:10:25 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -514,13 +514,13 @@ Date:   Mon Oct 9 21:34:04 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 61a429d5349bc0d713a1ffb3efaa664b5084f846
+commit 7e9fbd08da246aa61d55f946d20ea7a483f9b1a8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 22 13:58:25 2024 +0000
+Date:   Fri May 17 08:09:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 69.6% (110 of 158 strings)
+    Currently translated at 70.2% (111 of 158 strings)
     
     Translation: commission-13.0/commission-13.0-sale_commission
     Translate-URL: https://translation.odoo-community.org/projects/commission-13-0/commission-13-0-sale_commission/it/
@@ -1244,11 +1244,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 1408b3e09b14cc3da286fea635dbf800a7665156
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 7 09:34:55 2024 +0000
+commit 9d67a362269bdd6fa82bb19bf4cabaa918c0058c
+Author: Weblate <noreply@weblate.org>
+Date:   Tue May 14 07:27:51 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: delivery-carrier-13.0/delivery-carrier-13.0-delivery_cttexpress
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-13-0/delivery-carrier-13-0-delivery_cttexpress/
 
 
 ## stock-logistics-barcode
@@ -1336,16 +1341,16 @@ Date:   Tue Apr 2 08:42:03 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 0c960b970cb42e151483be71f57ff71b55ce720b
+commit d8874a0f166c3fd6de5d215413218fe7c4421b31
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:17:44 2024 +0000
+Date:   Tue May 14 15:53:35 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (204 of 204 strings)
+    Currently translated at 100.0% (1 of 1 strings)
     
-    Translation: wms-13.0/wms-13.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor/it/
+    Translation: wms-13.0/wms-13.0-shopfloor_rest_log
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor_rest_log/it/
 
 
 ## manufacture
@@ -1752,9 +1757,9 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit 0255182393863a10e5a3c48e36be13ec74589ca9
+commit 5c6905fd3622483de34a43bbdb84632552aff2ee
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 8 14:44:23 2024 +0000
+Date:   Wed May 15 11:27:05 2024 +0000
 
     [BOT] post-merge updates
 
