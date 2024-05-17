@@ -123,6 +123,7 @@ PyJWT
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
 # generated from manifests external_dependencies
+chardet
 cryptography
 unidecode
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
@@ -179,6 +180,7 @@ pycups
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 # generated from manifests external_dependencies
 astor
+sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
 python-jose
