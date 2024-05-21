@@ -28,6 +28,7 @@ addon | version | maintainers | summary
 [account_analytic_line_name_text](account_analytic_line_name_text/) | 12.0.1.0.0 |  | Changes account analytic line name field to Text.
 [account_analytic_parent](account_analytic_parent/) | 12.0.2.3.1 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 12.0.3.0.0 |  | Account Analytic Required
+[account_analytic_root](account_analytic_root/) | 12.0.1.0.1 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Compute the Root Analytic Account
 [account_analytic_sequence](account_analytic_sequence/) | 12.0.1.1.0 |  | Restore the analytic account sequence
 [account_move_analytic_recreate](account_move_analytic_recreate/) | 12.0.1.0.0 |  | Recreate analytic lines when modifying account moves.
 [analytic_base_department](analytic_base_department/) | 12.0.1.0.0 |  | Base Analytic Department Categorization
@@ -173,7 +174,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_asset_batch_compute](account_asset_batch_compute/) | 12.0.1.0.0 |  | Add the possibility to compute assets in batch
-[account_asset_management](account_asset_management/) | 12.0.3.2.0 |  | Assets Management
+[account_asset_management](account_asset_management/) | 12.0.3.3.0 |  | Assets Management
 [account_balance_line](account_balance_line/) | 12.0.1.0.0 |  | Display balance totals in move line view
 [account_bank_statement_chatter](account_bank_statement_chatter/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Chatter on bank statements
 [account_cash_basis_group_base_line](account_cash_basis_group_base_line/) | 12.0.0.0.1 |  | Tax Cash Basis Group Base Lines
@@ -4030,7 +4031,7 @@ addon | version | maintainers | summary
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 12.0.1.0.4 |  | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 12.0.1.0.1 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_partner](barcodes_generator_partner/) | 12.0.1.0.1 |  | Generate Barcodes for Partners
-[barcodes_generator_product](barcodes_generator_product/) | 12.0.1.0.2 |  | Generate Barcodes for Products (Templates and Variants)
+[barcodes_generator_product](barcodes_generator_product/) | 12.0.1.1.0 |  | Generate Barcodes for Products (Templates and Variants)
 [base_gs1_barcode](base_gs1_barcode/) | 12.0.1.1.1 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_barcode_constraint_per_company](product_barcode_constraint_per_company/) | 12.0.1.0.1 |  | Change the product barcode constraint, allowing the same barcode for differents companies
 [product_multi_ean](product_multi_ean/) | 12.0.1.0.3 |  | Multiple EAN13 on products
@@ -6280,7 +6281,7 @@ addon | version | maintainers | summary
 [web_group_by_percentage](web_group_by_percentage/) | 12.0.1.0.0 |  | Show the percentage of the total sum in group by rows
 [web_group_expand](web_group_expand/) | 12.0.1.0.1 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 12.0.1.0.2 |  | Enables triggering of more than one action on ActionManager
-[web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 12.0.1.0.1 |  | Enables reload of the current view via ActionManager
+[web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 12.0.1.0.2 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 12.0.1.0.1 |  | Show a message box to users
 [web_ir_actions_close_wizard_refresh_view](web_ir_actions_close_wizard_refresh_view/) | 12.0.1.0.1 |  | Allow to refresh view data without reload the page.
 [web_listview_range_select](web_listview_range_select/) | 12.0.1.0.1 |  | Enables selecting a range of records using the shift key
@@ -6327,7 +6328,7 @@ addon | version | maintainers | summary
 [web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Easily display interactive 3D models on the web & in AR
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 12.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 12.0.1.2.0 |  | Web Widget Numeric Step
-[web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.0 |  | Widget to select products on one2many fields
+[web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.1 |  | Widget to select products on one2many fields
 [web_widget_one2many_product_picker_sale_stock](web_widget_one2many_product_picker_sale_stock/) | 12.0.2.0.1 |  | Adds support for stock in the one2many product picker widget
 [web_widget_one2many_product_picker_sale_stock_available_info_popup](web_widget_one2many_product_picker_sale_stock_available_info_popup/) | 12.0.1.0.1 |  | Adds support for stock in the one2many product picker widget
 [web_widget_open_tab](web_widget_open_tab/) | 12.0.1.0.1 |  | Allow to open record from trees on new tab from tree views

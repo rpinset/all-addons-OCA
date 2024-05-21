@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 9e54407ea23adee530db47f848eaaf32289e0f3e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 23 08:31:27 2024 +0000
+commit 73f59bf041f7d70986a2fbd7d28eb51a4690dd03
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 18 18:15:21 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (11 of 11 strings)
-    
-    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_parent/it/
+    [BOT] post-merge updates
 
 
 ## account-budgeting
@@ -80,16 +75,11 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ed3382bc3502cd8db8a1bb5e54cbfd311d6ebe77
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 3 06:58:03 2024 +0000
+commit d93181b95ae1acbef0efe6122b7e96f139af5d0a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 18 16:50:27 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (17 of 17 strings)
-    
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -1099,16 +1089,11 @@ Date:   Wed Apr 3 10:12:10 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit ed6bd562a8079da5d86d51168f202fc3bc9acfc0
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Jan 26 08:17:12 2024 +0000
+commit adc0415049c120dc4a04598712846e6300d0adeb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 18 15:22:20 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 78.5% (22 of 28 strings)
-    
-    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-barcodes_generator_abstract
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-barcodes_generator_abstract/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
@@ -1684,9 +1669,9 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 0c2be8f16629c70cd10a4a3e0a4d44d5d3468e0f
+commit 8025ea938dfd84f5d2da6712b55438207c1e9255
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 11 17:10:01 2024 +0000
+Date:   Sat May 18 18:00:44 2024 +0000
 
     [BOT] post-merge updates
 
