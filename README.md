@@ -253,9 +253,9 @@ Date:   Fri Oct 13 10:22:38 2023 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 51862e32c50e4df7ca91690495c37bcc662ab4f3
+commit 42180c6afddca156a0ccda60d2ff2d297324d9f6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Dec 26 14:34:04 2023 +0000
+Date:   Sat May 18 18:32:05 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1392,9 +1392,9 @@ Date:   Tue Apr 2 09:29:24 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit b4398ffec5d16006de9fcc6c3a44a2a66b28c5f9
+commit abfec11377c90b2f718d6b74909164ea31d67620
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 2 14:55:55 2024 +0000
+Date:   Sat May 18 15:19:44 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1625,16 +1625,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit c2a0e293ad22f8d029b71781f50147cb75757f84
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 17 12:04:02 2024 +0000
+commit 5ad6d4a51689430c7ea3ff3c03afc2b84103d51e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 18 15:00:14 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 44.4% (32 of 72 strings)
-    
-    Translation: server-tools-13.0/server-tools-13.0-auditlog
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-auditlog/it/
+    [BOT] post-merge updates
 
 
 ## server-auth

@@ -994,7 +994,7 @@ addon | version | maintainers | summary
 [account_bank_statement_import_ofx](account_bank_statement_import_ofx/) | 13.0.1.0.0 |  | Import OFX Bank Statement
 [account_bank_statement_import_online](account_bank_statement_import_online/) | 13.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 [account_bank_statement_import_online_adyen](account_bank_statement_import_online_adyen/) | 13.0.1.0.0 |  | Online Bank Statements: Adyen payment report
-[account_bank_statement_import_online_paypal](account_bank_statement_import_online_paypal/) | 13.0.1.0.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
+[account_bank_statement_import_online_paypal](account_bank_statement_import_online_paypal/) | 13.0.1.0.3 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
 [account_bank_statement_import_online_ponto](account_bank_statement_import_online_ponto/) | 13.0.1.0.1 |  | Online Bank Statements: MyPonto.com
 [account_bank_statement_import_online_qonto](account_bank_statement_import_online_qonto/) | 13.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_bank_statement_import_online_transferwise](account_bank_statement_import_online_transferwise/) | 13.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for Wise.com (TransferWise.com)
@@ -5311,6 +5311,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_fiscal_position_allowed_journal_purchase](account_fiscal_position_allowed_journal_purchase/) | 13.0.1.0.0 | [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | Use an allowed journal when creating an invoice from a purchase order.
+[account_fiscal_position_allowed_journal_sale_purchase](account_fiscal_position_allowed_journal_sale_purchase/) | 13.0.1.0.0 |  | Glue module between Sale + purchase + account fiscal position allowed journal purchase
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 13.0.3.0.1 |  | Procurement Purchase No Grouping
 [procurement_purchase_sale_no_grouping](procurement_purchase_sale_no_grouping/) | 13.0.1.0.0 |  | Procurement Purchase Service No Grouping
 [product_form_purchase_link](product_form_purchase_link/) | 13.0.1.1.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Add an option to display the purchases lines from product
@@ -6281,6 +6283,7 @@ addon | version | maintainers | summary
 [base_name_search_multi_lang](base_name_search_multi_lang/) | 13.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Name search by multiple active language
 [base_remote](base_remote/) | 13.0.1.0.2 |  | Remote Base
 [base_search_fuzzy](base_search_fuzzy/) | 13.0.1.0.2 |  | Fuzzy search with the PostgreSQL trigram extension
+[base_search_multi](base_search_multi/) | 13.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Search multi value at once on tree view
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 13.0.1.0.2 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 13.0.1.0.1 |  | Add a technical user parameter on the company
 [base_time_window](base_time_window/) | 13.0.1.0.1 |  | Base model to handle time windows
