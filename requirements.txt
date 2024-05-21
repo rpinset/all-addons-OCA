@@ -22,6 +22,9 @@ lxml
 unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
+# generated from manifests external_dependencies
+chardet
+xlrd
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
 # generated from manifests external_dependencies
@@ -44,6 +47,8 @@ requests
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 # From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
+# generated from manifests external_dependencies
+email-validator
 # From [https://github.com/OCA/sale-financial.git](https://github.com/OCA/sale-financial.git)
 # From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
 # From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
