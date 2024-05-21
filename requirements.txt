@@ -60,6 +60,7 @@ cmislib
 # From [https://github.com/OCA/connector-spscommerce.git](https://github.com/OCA/connector-spscommerce.git)
 # From [https://github.com/OCA/connector-woocommerce.git](https://github.com/OCA/connector-woocommerce.git)
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
+# generated from manifests external_dependencies
 # From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
 # generated from manifests external_dependencies
