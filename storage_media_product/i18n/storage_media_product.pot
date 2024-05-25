@@ -19,6 +19,11 @@ msgid "Accessible path, no base URL"
 msgstr ""
 
 #. module: storage_media_product
+#: model:ir.model.fields,field_description:storage_media_product.field_product_media_relation__is_media_active
+msgid "Active"
+msgstr ""
+
+#. module: storage_media_product
 #: model_terms:ir.ui.view,arch_db:storage_media_product.product_media_relation_form
 msgid "Association"
 msgstr ""

@@ -648,7 +648,7 @@ addon | version | maintainers | summary
 [pos_operating_unit](pos_operating_unit/) | 14.0.1.0.0 |  | POS Operating Unit Access
 [product_operating_unit](product_operating_unit/) | 14.0.1.0.3 |  | Adds the concept of operating unit (OU) in products
 [project_operating_unit](project_operating_unit/) | 14.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module adds operating unit information to projects and tasks.
-[purchase_operating_unit](purchase_operating_unit/) | 14.0.1.1.1 |  | Adds the concecpt of operating unit (OU) in purchase order management
+[purchase_operating_unit](purchase_operating_unit/) | 14.0.1.2.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
 [purchase_operating_unit_access_all](purchase_operating_unit_access_all/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Purchase Orders
 [purchase_request_operating_unit](purchase_request_operating_unit/) | 14.0.1.0.0 |  | Operating Unit in Purchase Requests
 [purchase_request_operating_unit_access_all](purchase_request_operating_unit_access_all/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Purchase Requests
@@ -2821,7 +2821,7 @@ addon | version | maintainers | summary
 [edi_webservice_oca](edi_webservice_oca/) | 14.0.1.4.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Defines webservice integration from EDI Exchange records
 [edi_xml_oca](edi_xml_oca/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module for EDI exchange using XML files.
 [partner_identification_import](partner_identification_import/) | 14.0.1.0.1 |  | Provides partner matching on extra ID
-[pdf_helper](pdf_helper/) | 14.0.1.2.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
+[pdf_helper](pdf_helper/) | 14.0.2.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
 [product_import](product_import/) | 14.0.1.2.0 |  | Import product catalogues
 [product_import_ubl](product_import_ubl/) | 14.0.1.1.1 |  | Import UBL XML catalogue files
 [purchase_order_ubl](purchase_order_ubl/) | 14.0.1.1.1 |  | Embed UBL XML file inside the PDF purchase order
@@ -3646,6 +3646,7 @@ addon | version | maintainers | summary
 [multicompany_configuration](multicompany_configuration/) | 14.0.1.0.0 |  | Simplify the configuration on multicompany environments
 [partner_contact_company_propagation](partner_contact_company_propagation/) | 14.0.1.0.0 |  | Propagate company info to children contacts
 [partner_multi_company](partner_multi_company/) | 14.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Select individually the partner visibility on each company
+[partner_multi_company_pos](partner_multi_company_pos/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Partner Multi Company POS
 [product_category_inter_company](product_category_inter_company/) | 14.0.1.1.0 |  | Product categories as company dependent
 [product_multi_company](product_multi_company/) | 14.0.1.1.1 |  | Select individually the product template visibility on each company
 [product_supplierinfo_group_intercompany](product_supplierinfo_group_intercompany/) | 14.0.1.1.3 |  | Add sequence field on grouped pricelist items
@@ -4724,7 +4725,7 @@ addon | version | maintainers | summary
 [l10n_it_delivery_note_rma](l10n_it_delivery_note_rma/) | 14.0.1.1.0 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Add Oportunity to create RMA from DN with wizard and smart button to DN view
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.2.1 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.0.2 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
+[l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.0.3 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.2.2 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
@@ -5404,6 +5405,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 14.0.3.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 14.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 14.0.1.2.1 |  | AEAT - Comprobación de Calidad de datos identificativos
+[l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 14.0.1.1.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 14.0.2.10.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 14.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_vat_prorrate](l10n_es_aeat_vat_prorrate/) | 14.0.1.0.0 |  | AEAT - Prorrata de IVA
@@ -6247,7 +6249,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 14.0.1.0.0 |  | Displays the product in the journal entries and items
 [account_move_line_stock_info](account_move_line_stock_info/) | 14.0.2.3.1 |  | Account Move Line Stock Info
-[procurement_auto_create_group](procurement_auto_create_group/) | 14.0.1.2.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
+[procurement_auto_create_group](procurement_auto_create_group/) | 14.0.1.3.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
+[procurement_auto_create_group_by_product](procurement_auto_create_group_by_product/) | 14.0.1.1.0 |  | Generate one picking per product on the procurement run.
 [product_quantity_update_force_inventory](product_quantity_update_force_inventory/) | 14.0.1.0.1 |  | Product Quantity Update Force Inventory
 [product_route_profile](product_route_profile/) | 14.0.1.0.3 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Add Route profile concept on product
 [sale_stock_on_hand_popup](sale_stock_on_hand_popup/) | 14.0.2.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Stock On Hand Popup
@@ -6693,7 +6696,7 @@ addon | version | maintainers | summary
 [mrp_lot_production_date](mrp_lot_production_date/) | 14.0.1.0.0 |  | MRP Lot Production Date
 [mrp_multi_level](mrp_multi_level/) | 14.0.1.15.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 14.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
-[mrp_package_propagation](mrp_package_propagation/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
+[mrp_package_propagation](mrp_package_propagation/) | 14.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manufacturing Order Auto-Validation when components are picked
 [mrp_production_byproduct_cost_share](mrp_production_byproduct_cost_share/) | 14.0.1.0.0 |  | Production By-Product Cost Share
@@ -7967,7 +7970,7 @@ addon | version | maintainers | summary
 [storage_image_product_pos](storage_image_product_pos/) | 14.0.1.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![pierrickbrun](https://github.com/pierrickbrun.png?size=30px)](https://github.com/pierrickbrun) | Link images to products and categories inside POS
 [storage_import_image_advanced](storage_import_image_advanced/) | 14.0.1.0.4 |  | Import product images using CSV
 [storage_media](storage_media/) | 14.0.2.1.1 |  | Give the posibility to store media data in Odoo
-[storage_media_product](storage_media_product/) | 14.0.2.2.1 |  | Link media to products and categories
+[storage_media_product](storage_media_product/) | 14.0.2.3.0 |  | Link media to products and categories
 [storage_thumbnail](storage_thumbnail/) | 14.0.2.4.1 |  | Abstract module that add the possibility to have thumbnail
 
 
@@ -8272,7 +8275,7 @@ addon | version | maintainers | summary
 [bus_alt_connection](bus_alt_connection/) | 14.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [configuration_helper](configuration_helper/) | 14.0.1.0.1 |  | Configuration Helper
 [cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 14.0.1.0.0 |  | Run cron on fixed hours
-[database_cleanup](database_cleanup/) | 14.0.1.0.3 |  | Database cleanup
+[database_cleanup](database_cleanup/) | 14.0.1.1.0 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 14.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 14.0.1.0.1 |  | Filter databases with HTTP headers
 [excel_import_export](excel_import_export/) | 14.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report

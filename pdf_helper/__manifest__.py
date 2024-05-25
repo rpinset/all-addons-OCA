@@ -5,7 +5,7 @@
 # TODO: move it to a simple python package under OCA umbrella?
 {
     "name": "PDF Helper",
-    "version": "14.0.1.2.0",
+    "version": "14.0.2.0.0",
     "category": "Tools",
     "license": "LGPL-3",
     "summary": "Provides helpers to work w/ PDFs",
@@ -15,4 +15,5 @@
     "depends": [
         "base",
     ],
+    "external_dependencies": {"python": ["pypdf"]},
 }
