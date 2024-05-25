@@ -4,7 +4,7 @@
 
 {
     "name": "Connector Search Engine",
-    "version": "16.0.0.1.10",
+    "version": "16.0.0.1.11",
     "author": "Akretion,"
     "ACSONE SA/NV,"
     "Camptocamp,"
@@ -13,7 +13,7 @@
     "license": "AGPL-3",
     "category": "Generic Modules",
     "depends": ["queue_job", "mail", "server_environment", "base_partition"],
-    "external_dependencies": {"python": ["unidecode"]},
+    "external_dependencies": {"python": ["unidecode", "typing-extensions"]},
     "data": [
         "wizards/se_binding_state_updater.xml",
         "security/connector_search_engine_security.xml",

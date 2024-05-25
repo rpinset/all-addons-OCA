@@ -248,9 +248,13 @@ openupgradelib
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 # generated from manifests external_dependencies
+cairosvg
 cryptography<37
 extract_msg
+lottie
 premailer
+python-telegram-bot
+requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec>=2024.5.0
@@ -261,6 +265,7 @@ python_slugify
 elasticsearch>=7.0.0,<=7.13.4
 pydantic
 requests
+typing-extensions
 unidecode
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies

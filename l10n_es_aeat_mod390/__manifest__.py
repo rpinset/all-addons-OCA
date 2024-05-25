@@ -3,7 +3,7 @@
 
 {
     "name": "AEAT modelo 390",
-    "version": "16.0.2.5.0",
+    "version": "16.0.2.6.0",
     "category": "Localisation/Accounting",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-spain",
@@ -31,6 +31,7 @@
         # rest of stuff
         "data/tax_code_map_mod390_data.xml",
         "views/mod390_view.xml",
+        "views/account_move_view.xml",
         "security/ir.model.access.csv",
         "security/l10n_es_aeat_mod390_security.xml",
     ],
