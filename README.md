@@ -1625,11 +1625,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 5ad6d4a51689430c7ea3ff3c03afc2b84103d51e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 15:00:14 2024 +0000
+commit 3b80a42d41b20d2796c331dcb1fb772aa54e1bac
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri May 24 10:05:42 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 97.1% (34 of 35 strings)
+    
+    Translation: server-tools-13.0/server-tools-13.0-module_analysis
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-module_analysis/it/
 
 
 ## server-auth
@@ -1680,9 +1685,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 3c5f74f379a66663bcb6018c88bc77afa8100c26
+commit 8fa17656a08350d8dffef7d436b377db4669adc1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 2 10:51:38 2024 +0000
+Date:   Thu May 23 06:55:45 2024 +0000
 
     Translated using Weblate (Italian)
     
