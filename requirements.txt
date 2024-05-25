@@ -170,7 +170,7 @@ unidecode
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
-fsspec
+fsspec>=2024.5.0
 python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
@@ -185,6 +185,10 @@ pycups
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 # generated from manifests external_dependencies
 astor
+dataclasses
+mako
+odoorpc
+openupgradelib
 sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
