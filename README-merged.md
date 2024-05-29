@@ -466,7 +466,7 @@ addon | version | maintainers | summary
 [account_move_tier_validation](account_move_tier_validation/) | 15.0.1.1.1 |  | Extends the functionality of Account Moves to support a tier validation process.
 [account_move_tier_validation_forward](account_move_tier_validation_forward/) | 15.0.1.0.0 |  | Account Move Tier Validation - Forward Option
 [account_portal_hide_invoice](account_portal_hide_invoice/) | 15.0.1.0.0 | [![Khalid-SerpentCS](https://github.com/Khalid-SerpentCS.png?size=30px)](https://github.com/Khalid-SerpentCS) | Hide invoices on customer portal.
-[account_portal_invoice_search](account_portal_invoice_search/) | 15.0.1.0.0 |  | Account Portal Invoice Search
+[account_portal_invoice_search](account_portal_invoice_search/) | 15.0.1.0.1 |  | Account Portal Invoice Search
 [account_portal_invoice_search_by_lot](account_portal_invoice_search_by_lot/) | 15.0.1.0.0 |  | Account Portal Invoice Search By Lot
 [account_receipt_journal](account_receipt_journal/) | 15.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Define and use journals dedicated to receipts
 [account_receipt_send](account_receipt_send/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Send receipts
@@ -956,7 +956,7 @@ addon | version | maintainers | summary
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
-[account_payment_purchase](account_payment_purchase/) | 15.0.1.0.1 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase](account_payment_purchase/) | 15.0.1.0.2 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 15.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 15.0.1.0.1 |  | Adds payment mode on sale orders
 
@@ -1132,11 +1132,11 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Payment Register with Multiple Deduction
 [account_payment_notification](account_payment_notification/) | 15.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Notifiy upcoming payments
 [account_payment_promissory_note](account_payment_promissory_note/) | 15.0.1.0.2 |  | Account Payment Promissory Note
-[account_payment_return](account_payment_return/) | 15.0.1.0.2 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 15.0.1.0.3 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 15.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 15.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 15.0.1.0.1 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
-[account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Term Partner Holiday
+[account_payment_term_partner_holiday](account_payment_term_partner_holiday/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Term Partner Holiday
 [account_payment_term_restriction](account_payment_term_restriction/) | 15.0.1.0.0 |  | Restricts the usage of Payment Terms Journal Entries
 [account_payment_term_security](account_payment_term_security/) | 15.0.1.0.0 |  | Payment Term Security
 [account_payment_widget_amount](account_payment_widget_amount/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
@@ -1808,7 +1808,7 @@ addon | version | maintainers | summary
 [pricelist_cache](pricelist_cache/) | 15.0.1.4.1 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [product_form_sale_link](product_form_sale_link/) | 15.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 15.0.2.0.2 |  | Allows to define default elaborations and elaboration notes on product customerinfos
-[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.1 |  | Loads in every sale order line the customer code defined in the product
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.2 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 15.0.1.0.3 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 15.0.1.0.1 |  | Sale Automatic Workflow
@@ -4899,7 +4899,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.61.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.62.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5073,7 +5073,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.10.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
@@ -5589,6 +5589,7 @@ addon | version | maintainers | summary
 [delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.2 |  | Multiple destinations for the same delivery method
 [delivery_package_number](delivery_package_number/) | 15.0.2.2.0 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 15.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
+[delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 15.0.1.0.0 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
 [delivery_purchase](delivery_purchase/) | 15.0.1.1.0 |  | Delivery costs in purchases
 [delivery_state](delivery_state/) | 15.0.1.1.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_translatable](delivery_translatable/) | 15.0.1.0.0 |  | name and website_description field of delivery carrier setup translatable.
@@ -5646,7 +5647,7 @@ addon | version | maintainers | summary
 [base_gs1_barcode](base_gs1_barcode/) | 15.0.1.0.0 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[stock_barcodes](stock_barcodes/) | 15.0.3.1.4 |  | It provides read barcode on stock operations.
+[stock_barcodes](stock_barcodes/) | 15.0.3.1.5 |  | It provides read barcode on stock operations.
 [stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.0.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
@@ -5725,7 +5726,7 @@ addon | version | maintainers | summary
 [stock_no_negative](stock_no_negative/) | 15.0.1.0.0 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.3 |  | Do not reserve quantity with assigned owner
 [stock_picking_assign_serial_final](stock_picking_assign_serial_final/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Generate serial numbers until to a final serial number
-[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 15.0.1.0.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
+[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 15.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 15.0.1.0.1 |  | Reopen cancelled pickings
 [stock_picking_backorder_strategy](stock_picking_backorder_strategy/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
 [stock_picking_batch_extended](stock_picking_batch_extended/) | 15.0.2.5.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![i-vyshnevska](https://github.com/i-vyshnevska.png?size=30px)](https://github.com/i-vyshnevska) | Allows manage a lot of pickings in batch
@@ -5748,7 +5749,7 @@ addon | version | maintainers | summary
 [stock_picking_product_assortment_availability_inline](stock_picking_product_assortment_availability_inline/) | 15.0.1.0.0 | [![Sergio-teruel](https://github.com/Sergio-teruel.png?size=30px)](https://github.com/Sergio-teruel) | Glue module to display stock available when an assortment is defined for a partner
 [stock_picking_product_availability_inline](stock_picking_product_availability_inline/) | 15.0.1.0.1 |  | Show product availability in product drop-down in stock picking form view.
 [stock_picking_product_availability_search](stock_picking_product_availability_search/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter pickings by their products availability state
-[stock_picking_propagate_scheduled_date](stock_picking_propagate_scheduled_date/) | 15.0.1.0.0 |  | Propagate Stock Picking Scheduled Date
+[stock_picking_propagate_scheduled_date](stock_picking_propagate_scheduled_date/) | 15.0.1.0.1 |  | Propagate Stock Picking Scheduled Date
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 15.0.1.0.1 |  | Link between picking and purchase order
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 15.0.1.0.1 |  | Restrict the return to delivered quantity
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 15.0.1.0.3 |  | Link between picking and sale order
@@ -6077,7 +6078,7 @@ addon | version | maintainers | summary
 [ddmrp_history](ddmrp_history/) | 15.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_packaging](ddmrp_packaging/) | 15.0.1.0.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
-[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
+[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 15.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
 [ddmrp_warning](ddmrp_warning/) | 15.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 15.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 15.0.1.2.0 |  | Allows to force a route to be used when procuring from Stock Buffers
