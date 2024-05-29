@@ -7,13 +7,13 @@
     "name": "Operating Unit in Purchase Orders",
     "summary": "Adds the concecpt of operating unit (OU) in purchase order "
     "management",
-    "version": "14.0.1.2.0",
+    "version": "14.0.2.0.0",
     "author": "ForgeFlow, "
     "Serpent Consulting Services Pvt. Ltd.,"
     "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/operating-unit",
     "category": "Purchase Management",
-    "depends": ["stock_operating_unit", "purchase_stock"],
+    "depends": ["stock_operating_unit", "purchase_stock", "account_operating_unit"],
     "license": "LGPL-3",
     "data": [
         "security/purchase_security.xml",

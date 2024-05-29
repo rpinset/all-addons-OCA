@@ -648,7 +648,7 @@ addon | version | maintainers | summary
 [pos_operating_unit](pos_operating_unit/) | 14.0.1.0.0 |  | POS Operating Unit Access
 [product_operating_unit](product_operating_unit/) | 14.0.1.0.3 |  | Adds the concept of operating unit (OU) in products
 [project_operating_unit](project_operating_unit/) | 14.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module adds operating unit information to projects and tasks.
-[purchase_operating_unit](purchase_operating_unit/) | 14.0.1.2.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
+[purchase_operating_unit](purchase_operating_unit/) | 14.0.2.0.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
 [purchase_operating_unit_access_all](purchase_operating_unit_access_all/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Purchase Orders
 [purchase_request_operating_unit](purchase_request_operating_unit/) | 14.0.1.0.0 |  | Operating Unit in Purchase Requests
 [purchase_request_operating_unit_access_all](purchase_request_operating_unit_access_all/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Purchase Requests
@@ -1123,7 +1123,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_statement_import](account_statement_import/) | 14.0.3.3.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
+[account_statement_import](account_statement_import/) | 14.0.3.3.3 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
 [account_statement_import_base](account_statement_import_base/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statement Import
 [account_statement_import_camt](account_statement_import_camt/) | 14.0.1.2.1 |  | CAMT Format Bank Statements Import
 [account_statement_import_camt54](account_statement_import_camt54/) | 14.0.1.1.0 |  | Bank Account Camt54 Import
@@ -5221,7 +5221,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.1 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.2 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5405,7 +5405,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 14.0.3.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 14.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 14.0.1.2.1 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 14.0.1.1.0 |  | Envio de factura simplificada resumen TPV a SII
+[l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 14.0.1.3.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 14.0.2.10.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 14.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_vat_prorrate](l10n_es_aeat_vat_prorrate/) | 14.0.1.0.0 |  | AEAT - Prorrata de IVA
@@ -5435,6 +5435,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 14.0.1.1.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 14.0.1.0.0 |  | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 14.0.2.8.1 |  | Libro de IVA
+[l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 14.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 14.0.2.0.2 |  | Prorrata de IVA para la localización española
 [payment_redsys](payment_redsys/) | 14.0.2.0.4 |  | Payment Acquirer: Redsys Implementation
@@ -5952,6 +5953,7 @@ addon | version | maintainers | summary
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.2 |  | Send delivery notice to the shipper from any operation.
 [delivery_state](delivery_state/) | 14.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_tnt_oca](delivery_tnt_oca/) | 14.0.1.2.5 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Integrate TNT webservice
+[delivery_ups_oca](delivery_ups_oca/) | 14.0.1.0.0 |  | Integrate UPS webservice
 [partner_default_delivery_carrier](partner_default_delivery_carrier/) | 14.0.1.0.0 | [![SilvioC2C](https://github.com/SilvioC2C.png?size=30px)](https://github.com/SilvioC2C) | Allows defining default delivery methods for partners
 [partner_delivery_zone](partner_delivery_zone/) | 14.0.1.1.1 |  | Set on partners a zone for delivery goods
 [server_environment_delivery](server_environment_delivery/) | 14.0.1.0.0 |  | Configure prod environment for delivery carriers
@@ -6514,7 +6516,7 @@ addon | version | maintainers | summary
 [ddmrp_packaging](ddmrp_packaging/) | 14.0.1.1.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_purchase_hide_onhand_status](ddmrp_purchase_hide_onhand_status/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Replace purchase onhand status with smart button.
-[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
+[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 14.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
 [ddmrp_warning](ddmrp_warning/) | 14.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 14.0.1.3.0 |  | Allows to force a route to be used when procuring from Stock Buffers
@@ -6788,7 +6790,7 @@ addon | version | maintainers | summary
 [mrp_bom_structure_xlsx](mrp_bom_structure_xlsx/) | 14.0.1.1.0 |  | Export BoM Structure to Excel .XLSX
 [mrp_bom_structure_xlsx_level_1](mrp_bom_structure_xlsx_level_1/) | 14.0.1.0.0 |  | Export BOM Structure (Level 1) to Excel .XLSX
 [mrp_flattened_bom_xlsx](mrp_flattened_bom_xlsx/) | 14.0.1.0.1 |  | Export Flattened BOM to Excel
-[mrp_flattened_bom_xlsx_direct_materials_cost](mrp_flattened_bom_xlsx_direct_materials_cost/) | 14.0.1.0.0 |  | Export Flattened BOM to Excel with direct materials cost
+[mrp_flattened_bom_xlsx_direct_materials_cost](mrp_flattened_bom_xlsx_direct_materials_cost/) | 14.0.1.0.1 |  | Export Flattened BOM to Excel with direct materials cost
 [mrp_flattened_bom_xlsx_labour_cost](mrp_flattened_bom_xlsx_labour_cost/) | 14.0.1.0.0 |  | Export Flattened BOM to Excel with labour cost
 [mrp_flattened_bom_xlsx_subcontracting_cost](mrp_flattened_bom_xlsx_subcontracting_cost/) | 14.0.1.0.0 |  | Export Flattened BOM to Excel with subcontracting cost
 
@@ -6915,12 +6917,12 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.36.4 |  | A property management system
+[pms](pms/) | 14.0.2.37.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.6.7 |  | PMS Spanish Adaptation
-[pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.0.2 |  | PMS AEAT SII Integration
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.7.0 |  | PMS Spanish Adaptation
+[pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
 

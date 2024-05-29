@@ -19,6 +19,11 @@ msgid "Display Name"
 msgstr ""
 
 #. module: l10n_es_aeat_sii_invoice_summary
+#: model_terms:ir.ui.view,arch_db:l10n_es_aeat_sii_invoice_summary.invoice_sii_move_summary_form_view
+msgid "First Invoice"
+msgstr ""
+
+#. module: l10n_es_aeat_sii_invoice_summary
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_move__id
 msgid "ID"
 msgstr ""
@@ -36,21 +41,30 @@ msgid "Journal Entry"
 msgstr ""
 
 #. module: l10n_es_aeat_sii_invoice_summary
+#: model_terms:ir.ui.view,arch_db:l10n_es_aeat_sii_invoice_summary.invoice_sii_move_summary_form_view
+msgid "Last Invoice"
+msgstr ""
+
+#. module: l10n_es_aeat_sii_invoice_summary
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_move____last_update
 msgid "Last Modified on"
 msgstr ""
 
 #. module: l10n_es_aeat_sii_invoice_summary
+#: code:addons/l10n_es_aeat_sii_invoice_summary/models/account_move.py:0
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_bank_statement_line__sii_invoice_summary_start
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_move__sii_invoice_summary_start
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_payment__sii_invoice_summary_start
+#, python-format
 msgid "SII Invoice Summary: First Invoice"
 msgstr ""
 
 #. module: l10n_es_aeat_sii_invoice_summary
+#: code:addons/l10n_es_aeat_sii_invoice_summary/models/account_move.py:0
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_bank_statement_line__sii_invoice_summary_end
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_move__sii_invoice_summary_end
 #: model:ir.model.fields,field_description:l10n_es_aeat_sii_invoice_summary.field_account_payment__sii_invoice_summary_end
+#, python-format
 msgid "SII Invoice Summary: Last Invoice"
 msgstr ""
 
