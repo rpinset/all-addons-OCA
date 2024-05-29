@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 73f59bf041f7d70986a2fbd7d28eb51a4690dd03
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 18:15:21 2024 +0000
+commit ec821e5512da4c29b2fa1b6a4ed09282f08f9be7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon May 27 12:48:03 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: account-analytic-12.0/account-analytic-12.0-analytic_base_department
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-analytic_base_department/it/
 
 
 ## account-budgeting
@@ -191,16 +196,16 @@ Date:   Thu Jan 18 09:05:14 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 002498919d3aa06fcf6e8c48ffb51d291485feeb
+commit 2c68d05aa2b764f4b0ef5cd5a38df707353fc2d5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 15 10:44:50 2024 +0000
+Date:   Wed May 29 07:42:59 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 94.7% (179 of 189 strings)
+    Currently translated at 100.0% (87 of 87 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_financial_risk/it/
 
 
 ## data-protection
