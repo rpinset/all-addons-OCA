@@ -7,7 +7,7 @@
 {
     "name": "Generate Barcodes (Abstract)",
     "summary": "Generate Barcodes for Any Models",
-    "version": "16.0.3.0.3",
+    "version": "16.0.3.0.4",
     "category": "Tools",
     "author": "GRAP, La Louve, LasLabs, Odoo Community Association (OCA)",
     "maintainers": ["legalsylvain"],
@@ -21,5 +21,5 @@
         "views/menu.xml",
     ],
     "demo": ["demo/res_users.xml"],
-    "external_dependencies": {"python": ["barcode"]},
+    "external_dependencies": {"python": ["python-barcode"]},
 }

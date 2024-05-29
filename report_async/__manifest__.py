@@ -3,12 +3,12 @@
 {
     "name": "Report Async",
     "summary": "Central place to run reports live or async",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/reporting-engine",
     "category": "Generic Modules",
-    "depends": ["queue_job"],
+    "depends": ["queue_job", "spreadsheet_dashboard"],
     "data": [
         "security/ir.model.access.csv",
         "security/ir_rule.xml",
