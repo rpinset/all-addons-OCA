@@ -1757,9 +1757,9 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit 5c6905fd3622483de34a43bbdb84632552aff2ee
+commit 8bfe1c23579535abaf4821870cf5cc6748673a8e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 15 11:27:05 2024 +0000
+Date:   Wed May 29 09:26:25 2024 +0000
 
     [BOT] post-merge updates
 
