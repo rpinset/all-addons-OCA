@@ -79,9 +79,9 @@ Date:   Fri May 17 18:13:21 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit b4e3823c91a60bedd04bd045a0c7dce98ecb353b
+commit 026a63d2b682552764c9534d2ba098c99155ec17
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 20 10:23:41 2024 +0000
+Date:   Fri May 31 16:29:47 2024 +0000
 
     [BOT] post-merge updates
 
@@ -191,11 +191,16 @@ Date:   Mon May 27 17:32:09 2024 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit b068e7a91cd17ba3dd7db502c2345f814e073b36
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 17 16:06:36 2024 +0000
+commit b2e5dff07b480e6fae3c579dc1fbec3cfa936b38
+Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
+Date:   Fri May 31 11:02:02 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Danish)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-reconcile-15.0/account-reconcile-15.0-account_partner_reconcile
+    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-15-0/account-reconcile-15-0-account_partner_reconcile/da/
 
 
 ## bank-statement-import
@@ -367,16 +372,11 @@ Date:   Wed May 1 18:04:49 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 147e854de993ec3e5d49fb4a3de4ede147d573fb
-Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
-Date:   Wed May 8 16:20:13 2024 +0000
+commit 870521946c9b44c253d3a3261c125175b6f97322
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu May 30 15:53:39 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: partner-contact-15.0/partner-contact-15.0-partner_name_hide_parent
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_name_hide_parent/es/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -540,11 +540,16 @@ Date:   Fri May 10 17:14:01 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit e6f8b42c1850671b7a9d71f4c02d2ec53cba62a6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 24 10:15:17 2024 +0000
+commit 4fa403fc841a45bf4984a598afb6bc4114b4c4d0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu May 30 11:33:26 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (16 of 16 strings)
+    
+    Translation: hr-15.0/hr-15.0-hr_employee_service
+    Translate-URL: https://translation.odoo-community.org/projects/hr-15-0/hr-15-0-hr_employee_service/it/
 
 
 ## hr-attendance
@@ -1155,11 +1160,11 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit d1c308e29c01728c4067b3b483b708fc32c3a53e
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:56:30 2024 +0000
+commit c66e848d1e0c883d7661d8ea778a92448c12113d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu May 30 16:12:29 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1582,9 +1587,9 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 05a016d30b67036cbd16d2e7d527b09c0f6ac22f
+commit ad9e5f2b5c5a34d3f01b3162e1bb9b51ea82f445
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 14:43:15 2024 +0000
+Date:   Fri May 31 13:37:22 2024 +0000
 
     [BOT] post-merge updates
 
