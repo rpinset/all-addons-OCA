@@ -100,7 +100,10 @@ class AccountEdiXmlCIUSRO(models.Model):
         shipping_address = False
         if "partner_shipping_id" in invoice._fields and invoice.partner_shipping_id:
             shipping_address = invoice.partner_shipping_id
-            if shipping_address == invoice.partner_id:
+            if (
+                shipping_address.type != "delivery"
+                or shipping_address == invoice.partner_id
+            ):
                 shipping_address = False
         if shipping_address:
             res = [
@@ -341,6 +344,7 @@ class AccountEdiXmlCIUSRO(models.Model):
         )
         if not invoice.partner_id.is_company and name and vat:
             invoice.partner_id.is_company = True
+            invoice.partner_id.ro_vat_change()
         return res
 
     def _import_fill_invoice_form(self, journal, tree, invoice_form, qty_factor):
