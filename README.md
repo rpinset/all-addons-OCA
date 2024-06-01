@@ -643,16 +643,16 @@ Date:   Sun Dec 31 17:46:03 2023 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit f2eedb4da4d3d10e83dc71840853eeaef7b3ee6c
+commit 10ba00e632fcd114f2bd8c6d84a1f78c3a8d97fb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Apr 19 10:25:50 2024 +0000
+Date:   Thu May 30 11:32:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (16 of 16 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_employee_social_media
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_employee_social_media/it/
+    Translation: hr-12.0/hr-12.0-hr_employee_service
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_employee_service/it/
 
 
 ## connector-odoo2odoo
