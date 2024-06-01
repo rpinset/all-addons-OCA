@@ -84,9 +84,9 @@ Date:   Mon May 20 16:49:27 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit e0c57f5d2338ba6239398402e02caf6c1783ec81
+commit 353f2880465305d117b332900f01bc07ea15c091
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 18:33:27 2024 +0000
+Date:   Fri May 31 16:46:55 2024 +0000
 
     [BOT] post-merge updates
 
@@ -397,16 +397,16 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit cbd0598718b503644570e8ac37d0190c640aaf24
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Mon May 20 17:19:17 2024 +0000
+commit c8161864de0e16a85a6915699097410b0f81da28
+Author: ahmedtrigui <trigui43@gmail.com>
+Date:   Fri May 31 15:54:24 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 57.1% (8 of 14 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_partner_incoterm
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_partner_incoterm/pt_BR/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_revision
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_revision/fr/
 
 
 ## crm
@@ -545,9 +545,9 @@ Date:   Wed May 8 14:05:23 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 8975c095ea1e48a0a905c8626210d20355e70e8b
+commit 5c39f74c5b8e717c546aaece5818f86d1b44f357
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 23 10:49:48 2024 +0000
+Date:   Fri May 31 12:51:12 2024 +0000
 
     [BOT] post-merge updates
 
@@ -623,16 +623,16 @@ Date:   Tue May 21 13:43:20 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 6e1d875ffdf299f3be2028c04a15b05c0fb83b2b
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Mon May 20 21:24:40 2024 +0000
+commit 2d56bfd956764ddfc9871ff66ba685787976f880
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu May 30 11:33:31 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: hr-14.0/hr-14.0-hr_employee_id
-    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_employee_id/pt_BR/
+    Translation: hr-14.0/hr-14.0-hr_employee_service
+    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_employee_service/it/
 
 
 ## hr-attendance
@@ -682,16 +682,11 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 5597be7e0c66818547802e596b26faedd1b7203f
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue May 28 08:14:25 2024 +0000
+commit f124464740a3a52b3c2fcc9909d389ade31ff0c9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu May 30 07:05:33 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 75.0% (3 of 4 strings)
-    
-    Translation: multi-company-14.0/multi-company-14.0-partner_multi_company_pos
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-partner_multi_company_pos/it/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -899,16 +894,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit c9718837aef8f2ad522d2f993fe702eb87560708
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 28 07:35:04 2024 +0000
+commit 65dc34a0bcab272203e23c1e77d0c3ef42fbe957
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Fri May 31 10:11:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (250 of 250 strings)
+    Currently translated at 100.0% (67 of 67 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa_in
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa_in/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_base/it/
 
 
 ## l10n-japan
@@ -1040,16 +1035,11 @@ Date:   Wed May 29 09:12:01 2024 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 550f0d02c3c5b756c04b34fec75fc5bdef8debc3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 6 11:46:46 2024 +0000
+commit 1f26cfa91895bd96a963bf1ef1a088c3e7cf4184
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 31 12:26:44 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 35.0% (7 of 20 strings)
-    
-    Translation: l10n-switzerland-14.0/l10n-switzerland-14.0-l10n_ch_base_bank
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-14-0/l10n-switzerland-14-0-l10n_ch_base_bank/it/
+    [ADD] setup.py
 
 
 ## l10n-taiwan
