@@ -167,6 +167,8 @@ python-barcode
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
 # From [https://github.com/OCA/project-agile.git](https://github.com/OCA/project-agile.git)
 # From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/program.git](https://github.com/OCA/program.git)
 # From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)

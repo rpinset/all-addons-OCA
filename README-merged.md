@@ -820,7 +820,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.2.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.2.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1578,7 +1578,9 @@ addon | version | maintainers | summary
 [sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
 [sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
+[sale_order_price_recalculation](sale_order_price_recalculation/) | 17.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
+[sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
@@ -1693,6 +1695,7 @@ addon | version | maintainers | summary
 [partner_company_type](partner_company_type/) | 17.0.1.0.0 |  | Adds a company type to partner that are companies
 [partner_contact_access_link](partner_contact_access_link/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
 [partner_contact_birthdate](partner_contact_birthdate/) | 17.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Contact's birthdate
+[partner_contact_department](partner_contact_department/) | 17.0.1.0.0 |  | Assign contacts to departments
 [partner_contact_gender](partner_contact_gender/) | 17.0.1.0.0 |  | Add gender field to contacts
 [partner_contact_job_position](partner_contact_job_position/) | 17.0.1.0.0 |  | Categorize job positions for contacts
 [partner_contact_nationality](partner_contact_nationality/) | 17.0.1.0.0 |  | Add nationality field to contacts
@@ -1890,6 +1893,7 @@ addon | version | maintainers | summary
 [account_commission](account_commission/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
 [commission](commission/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 17.0.1.0.0 |  | Commissions computed by formulas
+[hr_commission](hr_commission/) | 17.0.1.0.0 |  | HR commissions
 [sale_commission](sale_commission/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 
 [//]: # (end addons)
@@ -1974,7 +1978,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[partner_survey](partner_survey/) | 17.0.1.0.0 |  | Link partners with their survey results
 
 [//]: # (end addons)
 
@@ -3467,6 +3475,7 @@ addon | version | maintainers | summary
 [l10n_fr_das2](l10n_fr_das2/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
+[l10n_fr_ecotaxe](l10n_fr_ecotaxe/) | 17.0.1.0.0 |  | Use Ecotaxe in French localisation contexte
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
@@ -4347,13 +4356,14 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_aeat](l10n_es_aeat/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
-[l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.0.0 |  | AEAT modelo 123
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.0 |  | AEAT modelo 123
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.0.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
@@ -5074,6 +5084,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[product_warranty](product_warranty/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 [rma](rma/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
@@ -5733,6 +5744,7 @@ addon | version | maintainers | summary
 [project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
 [project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
 [project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_description_template](project_task_description_template/) | 17.0.1.0.0 |  | Add a description template to project tasks
 [project_task_stage_mgmt](project_task_stage_mgmt/) | 17.0.1.0.0 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Allows to assign and create task stages on project creation wizard
 [project_task_tag](project_task_tag/) | 17.0.1.0.0 |  | Limit tags available on task
 [project_type](project_type/) | 17.0.1.0.0 |  | Project Types
@@ -5825,6 +5837,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract](contract/) | 17.0.1.0.1 |  | Recurring - Contracts Management
 [contract_sale](contract_sale/) | 17.0.1.0.0 |  | Contract from Sale
+[product_contract](product_contract/) | 17.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
 
 [//]: # (end addons)
 
@@ -6097,7 +6110,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
+[fs_attachment](fs_attachment/) | 17.0.1.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
 [fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store files into filesystem storages
@@ -6600,7 +6613,7 @@ addon | version | maintainers | summary
 [base_technical_features](base_technical_features/) | 17.0.1.0.0 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 17.0.1.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
-[date_range](date_range/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
+[date_range](date_range/) | 17.0.1.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [date_range_account](date_range_account/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
 [server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.0 |  | Mass Editing
