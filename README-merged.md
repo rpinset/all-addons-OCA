@@ -270,7 +270,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 13.0.1.0.3 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 13.0.1.1.1 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 13.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 13.0.1.3.0 |  | OCA Financial Reports
+[partner_statement](partner_statement/) | 13.0.1.4.0 |  | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -1080,6 +1080,7 @@ addon | version | maintainers | summary
 [account_payment_term_restriction_sale](account_payment_term_restriction_sale/) | 13.0.1.0.0 |  | Restricts the usage of Payment Terms on SOs
 [account_payment_term_security](account_payment_term_security/) | 13.0.1.0.0 |  | Payment Term Security
 [partner_aging](partner_aging/) | 13.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Aging as a view - invoices and credits
+[partner_restrict_payment_acquirer](partner_restrict_payment_acquirer/) | 13.0.1.0.0 |  | Partner Restrict Payment Acquirer
 [sale_payment_mgmt](sale_payment_mgmt/) | 13.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | List and create customer payments for salesmen
 [sale_payment_term_security](sale_payment_term_security/) | 13.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Payment Term Security
 
@@ -2933,7 +2934,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_holidays_credit](hr_holidays_credit/) | 13.0.1.0.0 |  | Enable negative leave balance for employees
+[hr_holidays_credit](hr_holidays_credit/) | 13.0.1.1.0 |  | Enable negative leave balance for employees
 [hr_holidays_leave_auto_approve](hr_holidays_leave_auto_approve/) | 13.0.1.0.0 |  | Leave type for auto-validation of Leaves
 [hr_holidays_leave_repeated](hr_holidays_leave_repeated/) | 13.0.1.0.0 |  | Define periodical leaves
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 13.0.1.0.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
@@ -6132,7 +6133,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_comment_template](base_comment_template/) | 13.0.3.0.3 |  | Add conditional mako template to any report on models that inherits comment.template.
-[bi_sql_editor](bi_sql_editor/) | 13.0.1.0.1 |  | BI Views builder, based on Materialized or Normal SQL Views
+[bi_sql_editor](bi_sql_editor/) | 13.0.1.1.0 |  | BI Views builder, based on Materialized or Normal SQL Views
 [bi_sql_editor_server_actions](bi_sql_editor_server_actions/) | 13.0.1.0.1 | [![vnahaulogy](https://github.com/vnahaulogy.png?size=30px)](https://github.com/vnahaulogy) | Add server actions on BI Views builder module
 [kpi](kpi/) | 13.0.1.0.1 |  | Key Performance Indicator
 [kpi_dashboard](kpi_dashboard/) | 13.0.1.1.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Create Dashboards using kpis

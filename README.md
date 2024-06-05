@@ -90,16 +90,16 @@ Date:   Mon May 13 15:03:55 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit d558e2a5ecd0fbf644162a1200e52ce7015a071e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 17 08:10:25 2024 +0000
+commit 70f6e6f76b012a81694f571a7fef13c402ca4775
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jun 3 11:39:00 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 63.0% (164 of 260 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-partner_statement/
 
 
 ## account-invoice-reporting
@@ -262,16 +262,11 @@ Date:   Sat May 18 18:32:05 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 6043c06d130015f90c7894a1eff02c786041f23a
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Oct 10 00:30:12 2023 +0000
+commit eafca90b64d3b9337e0232fb1fb55269a4ab6120
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 5 10:55:15 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: account-payment-13.0/account-payment-13.0-account_payment_return_import
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_payment_return_import/
+    [BOT] post-merge updates
 
 
 ## connector
@@ -719,16 +714,16 @@ Date:   Fri Feb 23 09:06:17 2024 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit f07e023cbffc7fa232608c66e7109346db715151
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:35:39 2023 +0000
+commit 0aca9e9e809c95475cf91b55c4ea13d7b5d5d70d
+Author: Simon Maillard <simon@ogesta.fr>
+Date:   Wed Jun 5 12:18:26 2024 +0000
 
-    Update translation files
+    Translated using Weblate (French)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (23 of 23 strings)
     
-    Translation: hr-holidays-13.0/hr-holidays-13.0-hr_holidays_validity_date
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-13-0/hr-holidays-13-0-hr_holidays_validity_date/
+    Translation: hr-holidays-13.0/hr-holidays-13.0-hr_holidays_credit
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-13-0/hr-holidays-13-0-hr_holidays_credit/fr/
 
 
 ## connector-odoo2odoo
@@ -1272,16 +1267,16 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 724e2d953a246f39cbcbe446f1c93f3d83f2b1e3
+commit 2fac7770b78cb28a87ca762fe3743c60c8a797f5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:07:09 2024 +0000
+Date:   Tue Jun 4 12:45:10 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (21 of 21 strings)
+    Currently translated at 56.6% (30 of 53 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_mass_action
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_mass_action/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_group_by_partner_by_carrier
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_group_by_partner_by_carrier/it/
 
 
 ## stock-logistics-tracking
@@ -1585,16 +1580,16 @@ Date:   Sun Sep 3 16:31:23 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit bea29801369c488dd72a52a100cc716064bb36a6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 28 20:38:56 2024 +0000
+commit c3f636d57b5ed490c942269cd5300219c74b2107
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jun 4 12:13:49 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 28.9% (22 of 76 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: reporting-engine-13.0/reporting-engine-13.0-kpi
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-kpi/it/
+    Translation: reporting-engine-13.0/reporting-engine-13.0-bi_sql_editor
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-bi_sql_editor/
 
 
 ## report-print-send
