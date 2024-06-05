@@ -5,7 +5,7 @@
     "name": "Account Reconcile Oca",
     "summary": """
         Reconcile addons for Odoo CE accounting""",
-    "version": "16.0.1.2.13",
+    "version": "16.0.1.2.14",
     "license": "AGPL-3",
     "author": "CreuBlanca,Dixmit,Odoo Community Association (OCA)",
     "maintainers": ["etobella"],
@@ -15,6 +15,7 @@
         "base_sparse_field",
     ],
     "data": [
+        "views/res_config_settings.xml",
         "security/ir.model.access.csv",
         "views/account_account_reconcile.xml",
         "views/account_bank_statement_line.xml",
@@ -22,6 +23,7 @@
         "views/account_journal.xml",
         "views/account_move.xml",
         "views/account_account.xml",
+        "views/account_bank_statement.xml",
     ],
     "demo": ["demo/demo.xml"],
     "post_init_hook": "post_init_hook",
