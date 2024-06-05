@@ -89,16 +89,11 @@ Date:   Sat May 18 16:50:27 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 0df88fccb9485a2c94a02534a0ea37b2514cf3d1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 17 08:10:16 2024 +0000
+commit bf8fbe9a8d8ffd618faff0c39eecf6dfe9b98130
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jun 3 11:34:27 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 84.9% (283 of 333 strings)
-    
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -416,11 +411,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 1cf207d9397b862a7940edb0de02f7b14ef211f6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 10 17:15:09 2024 +0000
+commit 6db7f4344510042d9a8ab850949cc39bcb104dbe
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jun 5 09:46:19 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (48 of 48 strings)
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
 
 
 ## crm
@@ -439,16 +439,16 @@ Date:   Mon Feb 26 12:42:59 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit e574628c460da556aeb0aca7f8fdb6095d9a707c
-Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
-Date:   Wed May 8 16:23:23 2024 +0000
+commit 9f0e23a4743e9279eaaad613b63bb629836d7b68
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 4 12:52:50 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 85.0% (34 of 40 strings)
     
-    Translation: partner-contact-12.0/partner-contact-12.0-base_country_state_translatable
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_country_state_translatable/es/
+    Translation: partner-contact-12.0/partner-contact-12.0-base_location_nuts
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-12-0/partner-contact-12-0-base_location_nuts/it/
 
 
 ## sale-financial
@@ -1103,16 +1103,16 @@ Date:   Sat May 18 15:22:20 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2e26d66a30165adfbea60cd7f4f6f1e25f1f7853
+commit 1e6c89026203b140c435eb8eee68c3df1f0085ff
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:07:07 2024 +0000
+Date:   Tue Jun 4 12:46:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (21 of 21 strings)
+    Currently translated at 22.0% (22 of 100 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_mass_action
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_mass_action/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_batch_extended/it/
 
 
 ## stock-logistics-tracking
@@ -1422,16 +1422,11 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 9a0f99f080f0b42429ba0bf4d62d57d3c6156765
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 28 20:39:47 2024 +0000
+commit 0992caaef2da6066243df713d7a000816f6e65b0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 5 13:26:26 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.1% (23 of 79 strings)
-    
-    Translation: reporting-engine-12.0/reporting-engine-12.0-kpi
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-kpi/it/
+    [BOT] post-merge updates
 
 
 ## report-print-send

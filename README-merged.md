@@ -267,7 +267,7 @@ addon | version | maintainers | summary
 [account_financial_report](account_financial_report/) | 12.0.1.5.4 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 12.0.1.2.1 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 12.0.1.3.1 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
-[partner_statement](partner_statement/) | 12.0.1.0.5 |  | OCA Financial Reports
+[partner_statement](partner_statement/) | 12.0.1.1.0 |  | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -5348,7 +5348,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[bi_sql_editor](bi_sql_editor/) | 12.0.1.3.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[bi_sql_editor](bi_sql_editor/) | 12.0.1.3.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [bi_sql_editor_aggregate](bi_sql_editor_aggregate/) | 12.0.1.1.0 |  | BI SQL Editor Aggregation
 [bi_view_editor](bi_view_editor/) | 12.0.1.1.1 |  | Graphical BI views builder for Odoo
 [kpi](kpi/) | 12.0.1.0.1 |  | Key Performance Indicator
