@@ -84,11 +84,16 @@ Date:   Mon May 20 16:49:27 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 353f2880465305d117b332900f01bc07ea15c091
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 31 16:46:55 2024 +0000
+commit 5046194e8b0c56ff3061bee753fa099a45b38f6a
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jun 3 17:02:41 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/
 
 
 ## account-invoice-reporting
@@ -397,16 +402,16 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c8161864de0e16a85a6915699097410b0f81da28
-Author: ahmedtrigui <trigui43@gmail.com>
-Date:   Fri May 31 15:54:24 2024 +0000
+commit 1671f6d32cbca7afe02ec56ba12156b274db0250
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 4 12:43:08 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 57.1% (8 of 14 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_revision
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_revision/fr/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_stock_picking_note
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_stock_picking_note/it/
 
 
 ## crm
@@ -894,16 +899,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 65dc34a0bcab272203e23c1e77d0c3ef42fbe957
-Author: Sergio Corato <sergiocorato@gmail.com>
-Date:   Fri May 31 10:11:01 2024 +0000
+commit 95e0086938eab19bba2951c6488664b1c7372b39
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jun 3 11:33:57 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (67 of 67 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note_base/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_ricevute_bancarie
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_ricevute_bancarie/
 
 
 ## l10n-japan
@@ -1139,16 +1144,16 @@ Date:   Wed May 1 19:10:26 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit fc165f16d40ae50c278b3682f5039315c8a8e65e
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed May 22 08:58:09 2024 +0000
+commit 66a22d5d62b0d56df0d32d13eab5e540ab508811
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 4 12:46:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 19.2% (26 of 135 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_auto_create_lot_qty
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_auto_create_lot_qty/it/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_batch_extended/it/
 
 
 ## stock-logistics-tracking
@@ -1208,16 +1213,16 @@ Date:   Mon May 27 07:59:46 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 1662d6d3c77622551b8491c05b13deedaa9ac4c5
+commit 327fba265b1f61794433341727a5c2b682433c44
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 14 15:53:40 2024 +0000
+Date:   Wed Jun 5 09:46:15 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: wms-14.0/wms-14.0-shopfloor_rest_log
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor_rest_log/it/
+    Translation: wms-14.0/wms-14.0-stock_release_channel
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_release_channel/it/
 
 
 ## manufacture

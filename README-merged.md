@@ -342,7 +342,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 14.0.3.11.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 14.0.3.12.0 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 14.0.1.0.1 |  | Journal Items Excel export
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.7 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.3 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
@@ -1961,7 +1961,7 @@ addon | version | maintainers | summary
 [sale_order_partner_restrict](sale_order_partner_restrict/) | 14.0.1.1.0 | [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Apply restrictions when selecting from the list of customers on SO.
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 14.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 14.0.1.0.0 |  | Define priority on sale orders
-[sale_order_product_assortment](sale_order_product_assortment/) | 14.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Module that allows to use the assortments on sale orders
+[sale_order_product_assortment](sale_order_product_assortment/) | 14.0.2.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Module that allows to use the assortments on sale orders
 [sale_order_product_assortment_quick](sale_order_product_assortment_quick/) | 14.0.1.0.0 | [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Bridge module between sale_order_product_assortment and sale_quick
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 14.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_report_without_price](sale_order_report_without_price/) | 14.0.1.0.1 |  | Allow you to generate quotation and order reports without price.
@@ -4759,7 +4759,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.6 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.1 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) | Modulo ponte tra provvigioni agenti e RiBa
-[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.9.1 |  | Ricevute bancarie
+[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.9.2 |  | Ricevute bancarie
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 14.0.1.0.7 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 14.0.1.0.2 |  | ITA - Esigibilità IVA
@@ -6573,7 +6573,7 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
 [sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.12.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 14.0.4.13.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 14.0.2.11.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
 [shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
 [shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking
@@ -6588,7 +6588,7 @@ addon | version | maintainers | summary
 [shopfloor_example](shopfloor_example/) | 14.0.1.2.0 |  | Show how to customize the Shopfloor app frontend.
 [shopfloor_manual_product_transfer](shopfloor_manual_product_transfer/) | 14.0.1.5.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manage manual product transfers
 [shopfloor_manual_product_transfer_mobile](shopfloor_manual_product_transfer_mobile/) | 14.0.1.3.1 |  | Frontend for manual product transfer scenario for Shopfloor
-[shopfloor_mobile](shopfloor_mobile/) | 14.0.1.37.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
+[shopfloor_mobile](shopfloor_mobile/) | 14.0.1.38.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 14.0.3.20.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 14.0.2.1.0 |  | Provides authentication via API key to Shopfloor base mobile app
 [shopfloor_mobile_base_auth_user](shopfloor_mobile_base_auth_user/) | 14.0.2.0.1 |  | Provides authentication via standard user login
