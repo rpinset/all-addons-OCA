@@ -354,9 +354,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7aadeb89f83d68f7b45a269d0b940c6db6da91df
+commit f271f82fea34c0874d4a51221c49880b3b4ffca7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 28 15:10:47 2024 +0000
+Date:   Mon Jun 3 09:43:36 2024 +0000
 
     [BOT] post-merge updates
 
@@ -554,11 +554,11 @@ Date:   Thu May 30 11:33:26 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 83a82e1293e719afa039a3caa23b4581227bf4b4
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:14:40 2024 +0000
+commit 93bc5193e57032f30c83c63fe5b51889f490b727
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jun 3 10:34:17 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## hr-expense
@@ -928,11 +928,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 017cafa3c144dbfa258ab13bcbaad77d662407c8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 28 14:10:42 2024 +0000
+commit 4f6b9ba021bc76a87c255a38106dd2edf529442b
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jun 5 18:10:37 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod303/
 
 
 ## l10n-switzerland
@@ -1041,16 +1046,16 @@ Date:   Tue May 28 19:08:56 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 1ba40d6d415670c5745133e3fcdbb99ed2573c29
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 28 15:05:28 2024 +0000
+commit 7139623e6b5303eca493eaf669c83149eea2ba87
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 4 12:44:24 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (75 of 75 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_auto_create_lot
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_auto_create_lot/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_batch_extended
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_batch_extended/it/
 
 
 ## stock-logistics-tracking
@@ -1160,9 +1165,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit c66e848d1e0c883d7661d8ea778a92448c12113d
+commit 24750dccbfd7d935838173bf9791704af9fe3446
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 30 16:12:29 2024 +0000
+Date:   Tue Jun 4 13:31:23 2024 +0000
 
     [BOT] post-merge updates
 

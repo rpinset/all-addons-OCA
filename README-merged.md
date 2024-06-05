@@ -1841,7 +1841,7 @@ addon | version | maintainers | summary
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 15.0.1.0.1 |  | Auto assign delivery carrier on sale order confirmation
 [sale_order_discount_invoicing](sale_order_discount_invoicing/) | 15.0.1.0.0 |  | Sale Discount Invoicing
 [sale_order_general_discount](sale_order_general_discount/) | 15.0.1.0.1 |  | General discount per sale order
-[sale_order_invoice_amount](sale_order_invoice_amount/) | 15.0.1.0.0 |  | Display the invoiced and uninvoiced total in the sale order
+[sale_order_invoice_amount](sale_order_invoice_amount/) | 15.0.1.0.1 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 15.0.1.0.1 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_chained_move](sale_order_line_chained_move/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module adds a field on sale order line to get all related move lines
 [sale_order_line_date](sale_order_line_date/) | 15.0.1.1.0 |  | Adds a commitment date to each sale order line.
@@ -3157,7 +3157,9 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 15.0.1.0.0 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 15.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
+[hr_attendance_contract_missing_days](hr_attendance_contract_missing_days/) | 15.0.1.0.0 |  | This modules combines the generation of attendances for working days without attendance with HR contracts
 [hr_attendance_geolocation](hr_attendance_geolocation/) | 15.0.1.0.3 |  | With this module the geolocation of the user is tracked at the check-in/check-out step
+[hr_attendance_missing_days](hr_attendance_missing_days/) | 15.0.1.0.0 |  | This modules generates attendances for working days without attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 15.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_reason](hr_attendance_reason/) | 15.0.1.2.0 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 15.0.1.2.0 |  | Theoretical vs Attended Time Analysis
@@ -5074,7 +5076,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.6.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.10.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
@@ -5741,7 +5743,7 @@ addon | version | maintainers | summary
 [stock_picking_info_lot](stock_picking_info_lot/) | 15.0.1.0.0 |  | Add lot information on Stock Transfer lines
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.1.1 |  | Adds link between pickings and invoices
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 15.0.1.0.2 |  | Manages the order of stock moves by displaying its sequence
-[stock_picking_mass_action](stock_picking_mass_action/) | 15.0.1.0.2 |  | Stock Picking Mass Action
+[stock_picking_mass_action](stock_picking_mass_action/) | 15.0.1.0.3 |  | Stock Picking Mass Action
 [stock_picking_operation_quick_change](stock_picking_operation_quick_change/) | 15.0.1.1.1 |  | Change location of all picking operations
 [stock_picking_origin_reference](stock_picking_origin_reference/) | 15.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
 [stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 15.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
@@ -6518,7 +6520,7 @@ addon | version | maintainers | summary
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 15.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
 [sale_purchase_secondary_unit](sale_purchase_secondary_unit/) | 15.0.1.0.1 |  | Propagate sale secondary uom to purchase orders
 [subcontracted_service](subcontracted_service/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Subcontracted service
-[supplier_calendar](supplier_calendar/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
+[supplier_calendar](supplier_calendar/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
 
 [//]: # (end addons)
 
