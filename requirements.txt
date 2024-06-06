@@ -82,6 +82,7 @@ factur-x
 # From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
 # generated from manifests external_dependencies
 zeep
+# From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)
 # From [https://github.com/OCA/l10n-chile.git](https://github.com/OCA/l10n-chile.git)
@@ -123,6 +124,7 @@ pdfminer.six==20220319
 # From [https://github.com/OCA/l10n-norway.git](https://github.com/OCA/l10n-norway.git)
 # From [https://github.com/OCA/l10n-peru.git](https://github.com/OCA/l10n-peru.git)
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
+# From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 # generated from manifests external_dependencies
 PyJWT
@@ -212,6 +214,11 @@ schwifty==2024.4.0
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 # generated from manifests external_dependencies
+a2wsgi
+fastapi
+parse-accept-language
+python-multipart
+ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)

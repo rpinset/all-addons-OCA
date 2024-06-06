@@ -46,16 +46,16 @@ Date:   Wed May 1 15:47:03 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 589640818933db09c4905d3ab28d9b7bb5dcc601
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 5 14:56:21 2024 +0000
+commit 900d4a513c3b8fe4d37e143ce587b4de46256970
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 6 11:16:24 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 42.0% (108 of 257 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_asset_management/it/
+    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_partner_required
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_partner_required/
 
 
 ## account-financial-reporting
@@ -444,16 +444,16 @@ Date:   Wed May 1 16:29:00 2024 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 0685b9d5f25453185bce3d086c5559e0e62d6d47
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 5 10:54:36 2024 +0000
+commit 96d2f4d55e49aa2c928a2101f839c455e5a6950a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jun 6 07:53:30 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (10 of 10 strings)
     
     Translation: survey-17.0/survey-17.0-partner_survey
-    Translate-URL: https://translation.odoo-community.org/projects/survey-17-0/survey-17-0-partner_survey/
+    Translate-URL: https://translation.odoo-community.org/projects/survey-17-0/survey-17-0-partner_survey/it/
 
 
 ## knowledge
@@ -658,6 +658,15 @@ Author: OCA-git-bot <oca-git-bot@odoo-community.org>
 Date:   Wed May 1 18:15:23 2024 +0000
 
     [BOT] post-merge updates
+
+
+## l10n-brazil
+From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
+commit 4fb0058106743569f9e49173fac9c7eb17b5e72b
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 1 16:37:42 2024 +0000
+
+    [IMP] update dotfiles
 
 
 ## l10n-cambodia
@@ -917,6 +926,15 @@ Date:   Wed May 1 16:49:58 2024 +0000
     [IMP] update dotfiles
 
 
+## l10n-portugal
+From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
+commit f1675ac17ed9d4cdbda4735e1d3f424027967716
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 1 16:50:22 2024 +0000
+
+    [IMP] update dotfiles
+
+
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 commit 019e8a2e9bfc9cb6a672ea1a0ba30e845e66e777
@@ -1147,16 +1165,11 @@ Date:   Wed May 1 17:40:36 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 84ad313ddc6479f353c9f5fad680b5ec69cba569
-Author: jakobkrabbe <jakob@syscare.se>
-Date:   Wed Jun 5 13:04:49 2024 +0000
+commit 3f76345ad75c7af0b684112f043baad9bed1d61f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 6 11:31:34 2024 +0000
 
-    Translated using Weblate (Swedish)
-    
-    Currently translated at 100.0% (162 of 162 strings)
-    
-    Translation: manufacture-17.0/manufacture-17.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-17-0/manufacture-17-0-quality_control_oca/sv/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
@@ -1206,9 +1219,9 @@ Date:   Wed May 1 17:08:45 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 71b6723580b837e9afb4e1ffc6f572d569fca22c
+commit c748ca3b00a12f5851b0c866c0461e0e51cd6fa2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 23 09:57:55 2024 +0000
+Date:   Wed Jun 5 22:26:27 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1354,16 +1367,16 @@ Date:   Wed May 1 17:18:12 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 9923917e6478f34debcc0cdc99d141119465e5c5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 24 12:20:03 2024 +0000
+commit 40a5ba57cd059060436c8394729ac246b6496333
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 6 10:44:42 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: reporting-engine-17.0/reporting-engine-17.0-report_substitute
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-report_substitute/it/
+    Translation: reporting-engine-17.0/reporting-engine-17.0-bi_sql_editor
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-17-0/reporting-engine-17-0-bi_sql_editor/
 
 
 ## report-print-send
@@ -1496,14 +1509,16 @@ Date:   Wed May 1 16:34:11 2024 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit b49c2fac97a02aff528b481bbc9309f2dad136e5
-Merge: 5a809dc c4f7a1b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 5 13:55:11 2024 +0000
+commit 05113488899045f7e27defc817aa8c61e9d6381f
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 6 10:49:01 2024 +0000
 
-    Merge PR #432 into 17.0
+    Update translation files
     
-    Signed-off-by lmignon
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: rest-framework-17.0/rest-framework-17.0-fastapi
+    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-17-0/rest-framework-17-0-fastapi/
 
 
 ## role-policy
