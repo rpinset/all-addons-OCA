@@ -354,9 +354,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f271f82fea34c0874d4a51221c49880b3b4ffca7
+commit 9b899e7ce7c3e7258dfbed951c794eb014afff12
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 3 09:43:36 2024 +0000
+Date:   Thu Jun 6 08:40:35 2024 +0000
 
     [BOT] post-merge updates
 
@@ -467,9 +467,9 @@ Date:   Wed May 1 18:09:27 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 4465c6e6138f69c16545d68308fe21d659866ce7
+commit 0dd7bfeea6f5fc7945d9fa823111a4c2fcacad11
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 14 08:41:10 2024 +0000
+Date:   Thu Jun 6 08:37:04 2024 +0000
 
     [BOT] post-merge updates
 
@@ -640,6 +640,20 @@ Author: oca-git-bot <oca-git-bot@odoo-community.org>
 Date:   Wed May 1 18:19:36 2024 +0000
 
     [IMP] update dotfiles
+
+
+## l10n-brazil
+From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
+commit c4258bac6cb4018591065369b7d43d1d82415510
+Author: Weblate <noreply@weblate.org>
+Date:   Sat May 25 15:04:49 2024 +0000
+
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-brazil-15.0/l10n-brazil-15.0-l10n_br_account
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-brazil-15-0/l10n-brazil-15-0-l10n_br_account/
 
 
 ## l10n-cambodia
@@ -895,6 +909,15 @@ From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland
 commit f8247973a5a57a1962240e93fb5f1ffba3474c5c
 Author: oca-git-bot <oca-git-bot@odoo-community.org>
 Date:   Wed May 1 18:31:59 2024 +0000
+
+    [IMP] update dotfiles
+
+
+## l10n-portugal
+From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
+commit 57feddfbaf99f87d7870b2bdc6d1c0066f5678e4
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 1 18:32:26 2024 +0000
 
     [IMP] update dotfiles
 
@@ -1165,9 +1188,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 24750dccbfd7d935838173bf9791704af9fe3446
+commit 7279c1ba1bbcf42e824c188aebbd7afa6523142c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 4 13:31:23 2024 +0000
+Date:   Thu Jun 6 15:16:52 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1333,11 +1356,16 @@ Date:   Wed May 1 19:03:51 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 65d4b153cf3c6a474a0b7897a47e4f36b423eb96
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 10 17:11:41 2024 +0000
+commit 008a97505233e35f00b35c4b1c0bb6e003f09479
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 6 10:47:34 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: reporting-engine-15.0/reporting-engine-15.0-bi_sql_editor
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-15-0/reporting-engine-15-0-bi_sql_editor/
 
 
 ## report-print-send
