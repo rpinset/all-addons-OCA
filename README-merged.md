@@ -248,7 +248,7 @@ addon | version | maintainers | summary
 [account_asset_compute_batch](account_asset_compute_batch/) | 14.0.1.0.1 |  | Assets - Compute Depre. in Batch
 [account_asset_from_expense](account_asset_from_expense/) | 14.0.1.0.0 |  | Assets from Expenses
 [account_asset_low_value](account_asset_low_value/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Low Value Asset
-[account_asset_management](account_asset_management/) | 14.0.3.1.3 |  | Assets Management
+[account_asset_management](account_asset_management/) | 14.0.3.1.4 |  | Assets Management
 [account_asset_management_menu](account_asset_management_menu/) | 14.0.1.0.0 |  | Assets Management Menu
 [account_asset_number](account_asset_number/) | 14.0.1.0.0 |  | Assets Number
 [account_asset_stock_move](account_asset_stock_move/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Create asset during stock move
@@ -1003,7 +1003,7 @@ addon | version | maintainers | summary
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.0.0 |  | Account Invoice Select for Payment
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
-[account_payment_order](account_payment_order/) | 14.0.2.5.2 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 14.0.2.5.3 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
@@ -3865,6 +3865,131 @@ and promote its widespread use.
 ----
 ----
 
+# From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&target_branch=14.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-brazil/actions/workflows/pre-commit.yml?query=branch%3A14.0)
+[![Build Status](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-brazil/actions/workflows/test.yml?query=branch%3A14.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-brazil/branch/14.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-brazil)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-brazil-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-brazil-14-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# Odoo Brazilian Localization / Localização Brasileira do Odoo
+
+A localização brasileira do Odoo, criada pela comunidade Open Source da Odoo Community Association (OCA), inclui um conjunto de módulos detalhados para atender às normas fiscais e legais do Brasil. Esta localização aprimora o Odoo com funcionalidades para:
+
+- **Documentos fiscais:** Suporte abrangente a documentações conforme legislação nacional.
+- **Tributos específicos:** Gestão de ICMS, IPI, ISS, PIS, COFINS, CSLL, IRPJ, e outros, incluindo substituição tributária e retenção de impostos.
+- **Emissão de notas fiscais eletrônicas:** Compatível com NF-e, NFS-e e mais.
+- **Integrações bancárias:** Ferramentas para importação de extratos OFX e geração de CNAB 240 e 400.
+
+## Começando com a Localização
+
+Instale o módulo `l10n_br_base` para configurar as bases da localização brasileira no Odoo. Adicione o `l10n_br_fiscal` para expandir a emissão e gestão de documentos fiscais eletrônicos.
+
+## :arrow_forward: **Teste a Localização Agora!**
+
+Não perca a chance de ver a localização em ação:
+
+1. Clique no botão abaixo para iniciar um container no ambiente Runboat:
+
+   [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-brazil&target_branch=14.0)
+
+2. Aguarde até o container ficar disponível (indicador verde).
+3. Clique em **Live** para acessar o Odoo.
+4. Entre com `admin/admin`.
+5. Escolha a empresa demo com o regime tributário de seu interesse, seja Simples Nacional ou Lucro Presumido, e explore um ambiente rico em detalhes e funcionalidades.
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_br_account](l10n_br_account/) | 14.0.11.5.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | Brazilian Localization Account
+[l10n_br_account_due_list](l10n_br_account_due_list/) | 14.0.2.0.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | Brazilian Account Due List
+[l10n_br_account_nfe](l10n_br_account_nfe/) | 14.0.3.2.0 | [![antoniospneto](https://github.com/antoniospneto.png?size=30px)](https://github.com/antoniospneto) [![felipemotter](https://github.com/felipemotter.png?size=30px)](https://github.com/felipemotter) [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Integration between l10n_br_account and l10n_br_nfe
+[l10n_br_account_payment_brcobranca](l10n_br_account_payment_brcobranca/) | 14.0.5.2.0 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | L10n Br Account Payment BRCobranca
+[l10n_br_account_payment_order](l10n_br_account_payment_order/) | 14.0.5.3.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Brazilian Payment Order
+[l10n_br_account_withholding](l10n_br_account_withholding/) | 14.0.1.1.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Brazilian Withholding Invoice Generator
+[l10n_br_base](l10n_br_base/) | 14.0.3.14.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | Customization of base module for implementations in Brazil.
+[l10n_br_cnab_structure](l10n_br_cnab_structure/) | 14.0.1.2.0 | [![antoniospneto](https://github.com/antoniospneto.png?size=30px)](https://github.com/antoniospneto) [![felipemotter](https://github.com/felipemotter.png?size=30px)](https://github.com/felipemotter) | This module allows defining the structure for generating the CNAB file. Used to exchange information with Brazilian banks.
+[l10n_br_cnpj_search](l10n_br_cnpj_search/) | 14.0.1.5.2 |  | Integração com os Webservices da ReceitaWS e SerPro
+[l10n_br_coa](l10n_br_coa/) | 14.0.4.1.1 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) | Base do Planos de Contas brasileiros
+[l10n_br_coa_generic](l10n_br_coa_generic/) | 14.0.4.0.0 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) | Plano de Contas para empresas do Regime normal (Micro e pequenas empresas)
+[l10n_br_coa_simple](l10n_br_coa_simple/) | 14.0.3.1.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Plano de Contas ITG 1000 para Microempresas e Empresa de Pequeno Porte
+[l10n_br_contract](l10n_br_contract/) | 14.0.2.3.4 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Customization of Contract module for implementations in Brazil.
+[l10n_br_crm](l10n_br_crm/) | 14.0.1.3.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Brazilian Localization CRM
+[l10n_br_cte_spec](l10n_br_cte_spec/) | 14.0.1.0.0 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | CT-e spec
+[l10n_br_currency_rate_update](l10n_br_currency_rate_update/) | 14.0.1.0.2 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Update exchange rates using OCA modules for Brazil
+[l10n_br_delivery](l10n_br_delivery/) | 14.0.2.0.2 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | delivery module Brazilian Localization
+[l10n_br_delivery_nfe](l10n_br_delivery_nfe/) | 14.0.1.1.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Brazilian Localization Delivery NFe
+[l10n_br_fiscal](l10n_br_fiscal/) | 14.0.21.18.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Brazilian fiscal core module.
+[l10n_br_fiscal_certificate](l10n_br_fiscal_certificate/) | 14.0.1.3.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | A1 fiscal certificate management for Brazil
+[l10n_br_fiscal_closing](l10n_br_fiscal_closing/) | 14.0.1.3.0 |  | Fechamento fiscal do periodo
+[l10n_br_fiscal_dfe](l10n_br_fiscal_dfe/) | 14.0.2.3.0 |  | Distribuição de documentos fiscais
+[l10n_br_hr](l10n_br_hr/) | 14.0.1.5.0 |  | Brazilian Localization HR
+[l10n_br_ie_search](l10n_br_ie_search/) | 14.0.1.2.0 |  | Integração com a API SintegraWS e SEFAZ
+[l10n_br_mdfe_spec](l10n_br_mdfe_spec/) | 14.0.1.0.0 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | CT-e spec
+[l10n_br_mis_report](l10n_br_mis_report/) | 14.0.1.0.1 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) | Templates de relatórios contábeis brasileiros: Balanço Patrimonial e DRE
+[l10n_br_nfe](l10n_br_nfe/) | 14.0.14.5.0 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Brazilian Eletronic Invoice NF-e
+[l10n_br_nfe_spec](l10n_br_nfe_spec/) | 14.0.6.1.0 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | nfe spec
+[l10n_br_nfse](l10n_br_nfse/) | 14.0.1.17.0 | [![gabrielcardoso21](https://github.com/gabrielcardoso21.png?size=30px)](https://github.com/gabrielcardoso21) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | NFS-e
+[l10n_br_nfse_barueri](l10n_br_nfse_barueri/) | 14.0.1.0.1 | [![AndreMarcos](https://github.com/AndreMarcos.png?size=30px)](https://github.com/AndreMarcos) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![ygcarvalh](https://github.com/ygcarvalh.png?size=30px)](https://github.com/ygcarvalh) | NFS-e (Barueri)
+[l10n_br_nfse_focus](l10n_br_nfse_focus/) | 14.0.1.0.4 | [![AndreMarcos](https://github.com/AndreMarcos.png?size=30px)](https://github.com/AndreMarcos) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![ygcarvalh](https://github.com/ygcarvalh.png?size=30px)](https://github.com/ygcarvalh) [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | NFS-e (FocusNFE)
+[l10n_br_nfse_ginfes](l10n_br_nfse_ginfes/) | 14.0.1.1.0 | [![gabrielcardoso21](https://github.com/gabrielcardoso21.png?size=30px)](https://github.com/gabrielcardoso21) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) | NFS-e (Ginfes)
+[l10n_br_nfse_paulistana](l10n_br_nfse_paulistana/) | 14.0.1.1.6 | [![gabrielcardoso21](https://github.com/gabrielcardoso21.png?size=30px)](https://github.com/gabrielcardoso21) [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) | NFS-e (Nota Paulistana)
+[l10n_br_portal](l10n_br_portal/) | 14.0.2.0.1 |  | Campos Brasileiros no Portal
+[l10n_br_pos](l10n_br_pos/) | 14.0.1.5.2 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![lfdivino](https://github.com/lfdivino.png?size=30px)](https://github.com/lfdivino) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) [![ygcarvalh](https://github.com/ygcarvalh.png?size=30px)](https://github.com/ygcarvalh) | Ponto de venda adaptado a legislação Brasileira
+[l10n_br_pos_cfe](l10n_br_pos_cfe/) | 14.0.1.4.0 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![lfdivino](https://github.com/lfdivino.png?size=30px)](https://github.com/lfdivino) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) [![ygcarvalh](https://github.com/ygcarvalh.png?size=30px)](https://github.com/ygcarvalh) | CF-e
+[l10n_br_pos_nfce](l10n_br_pos_nfce/) | 14.0.1.2.0 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![lfdivino](https://github.com/lfdivino.png?size=30px)](https://github.com/lfdivino) [![luismalta](https://github.com/luismalta.png?size=30px)](https://github.com/luismalta) [![ygcarvalh](https://github.com/ygcarvalh.png?size=30px)](https://github.com/ygcarvalh) [![felipezago](https://github.com/felipezago.png?size=30px)](https://github.com/felipezago) | NFC-E no Ponto de Venda
+[l10n_br_product_contract](l10n_br_product_contract/) | 14.0.1.1.1 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Criação de contratos através dos Pedidos de Vendas
+[l10n_br_purchase](l10n_br_purchase/) | 14.0.3.8.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | Brazilian Localization Purchase
+[l10n_br_purchase_request](l10n_br_purchase_request/) | 14.0.1.0.4 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Purchase Request Brazilian Localization Purchase Request
+[l10n_br_purchase_stock](l10n_br_purchase_stock/) | 14.0.1.3.1 |  | Brazilian Localization Purchase Stock
+[l10n_br_repair](l10n_br_repair/) | 14.0.1.1.6 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Brazilian Localization Repair
+[l10n_br_resource](l10n_br_resource/) | 14.0.1.0.4 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) [![hendixcosta](https://github.com/hendixcosta.png?size=30px)](https://github.com/hendixcosta) [![lfdivino](https://github.com/lfdivino.png?size=30px)](https://github.com/lfdivino) | This module extend core resource to create important brazilian informations. Define a Brazilian calendar and some tools to compute dates used in financial and payroll modules
+[l10n_br_sale](l10n_br_sale/) | 14.0.3.9.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Brazilian Localization Sale
+[l10n_br_sale_blanket_order](l10n_br_sale_blanket_order/) | 14.0.1.1.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Brazilian Localization Sale Blanket Order
+[l10n_br_sale_commission](l10n_br_sale_commission/) | 14.0.1.0.1 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Customization of Sales commissions module for implementations in Brazil.
+[l10n_br_sale_invoice_plan](l10n_br_sale_invoice_plan/) | 14.0.1.0.3 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Brazilian Localization Sale Invoice Plan
+[l10n_br_sale_stock](l10n_br_sale_stock/) | 14.0.1.2.1 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Brazilian Localization Sales and Warehouse
+[l10n_br_setup_tests](l10n_br_setup_tests/) | 14.0.1.0.1 | [![antoniospneto](https://github.com/antoniospneto.png?size=30px)](https://github.com/antoniospneto) | Modules for Odoo's Brazil-focused usability with integration tests.
+[l10n_br_stock](l10n_br_stock/) | 14.0.2.1.1 |  | Brazilian Localization Warehouse
+[l10n_br_stock_account](l10n_br_stock_account/) | 14.0.3.7.0 |  | Brazilian Localization WMS Accounting
+[l10n_br_stock_account_report](l10n_br_stock_account_report/) | 14.0.1.1.3 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | P7 Stock Valuation Report
+[l10n_br_website_sale](l10n_br_website_sale/) | 14.0.2.0.1 |  | Website sale localização brasileira.
+[l10n_br_website_sale_delivery](l10n_br_website_sale_delivery/) | 14.0.1.0.1 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![DiegoParadeda](https://github.com/DiegoParadeda.png?size=30px)](https://github.com/DiegoParadeda) | Implements Brazilian freight values for delivery.
+[l10n_br_zip](l10n_br_zip/) | 14.0.2.1.2 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Brazilian Localisation ZIP Codes
+[payment_bacen_pix](payment_bacen_pix/) | 14.0.1.1.0 |  | Payment PIX with bacen
+[payment_pagseguro](payment_pagseguro/) | 14.0.1.0.9 |  | Payment Acquirer: PagSeguro Implementation
+[spec_driven_model](spec_driven_model/) | 14.0.5.2.2 | [![rvalyi](https://github.com/rvalyi.png?size=30px)](https://github.com/rvalyi) | Tools for specifications driven mixins (from xsd for instance)
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+----
+----
+
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-cambodia&target_branch=14.0)
@@ -5187,6 +5312,56 @@ and promote its widespread use.
 ----
 ----
 
+# From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-portugal&target_branch=14.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-portugal/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-portugal/actions/workflows/pre-commit.yml?query=branch%3A14.0)
+[![Build Status](https://github.com/OCA/l10n-portugal/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-portugal/actions/workflows/test.yml?query=branch%3A14.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-portugal/branch/14.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-portugal)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-portugal-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-portugal-14-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# l10n-portugal
+
+TODO: add repo description.
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_pt_account_invoicexpress](l10n_pt_account_invoicexpress/) | 14.0.4.2.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Portuguese certified invoices using InvoiceXpress
+[l10n_pt_stock_invoicexpress](l10n_pt_stock_invoicexpress/) | 14.0.3.0.2 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Portuguese legal transport and shipping documents (Guias de Transporte e Guias de Remessa) generated with InvoiceXpress
+[l10n_pt_vat](l10n_pt_vat/) | 14.0.1.0.5 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Portuguese VAT requirements extensions
+[partner_permanent_certificate](partner_permanent_certificate/) | 14.0.1.1.0 | [![pedrocasi](https://github.com/pedrocasi.png?size=30px)](https://github.com/pedrocasi) | Adds field 'Permanent Certificate'
+[sms_global_digital](sms_global_digital/) | 14.0.1.0.0 | [![tiagorangel](https://github.com/tiagorangel.png?size=30px)](https://github.com/tiagorangel) | Send SMS messages using the Global Digital API
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+----
+----
+
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-romania&target_branch=14.0)
@@ -5463,15 +5638,16 @@ and promote its widespread use.
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-switzerland&target_branch=14.0)
-[![Build Status](https://travis-ci.com/OCA/l10n-switzerland.svg?branch=14.0)](https://travis-ci.com/OCA/l10n-switzerland)
+[![Pre-commit Status](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml?query=branch%3A14.0)
+[![Build Status](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml?query=branch%3A14.0)
 [![codecov](https://codecov.io/gh/OCA/l10n-switzerland/branch/14.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-switzerland)
 [![Translation Status](https://translation.odoo-community.org/widgets/l10n-switzerland-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-switzerland-14-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# l10n-switzerland
+# Swiss Localization
 
-TODO: add repo description.
+Swiss Localization Modules
 
 <!-- /!\ do not modify below this line -->
 
@@ -6522,115 +6698,6 @@ addon | version | maintainers | summary
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 14.0.1.3.0 |  | Allows to force a route to be used when procuring from Stock Buffers
 [stock_buffer_sales_analysis](stock_buffer_sales_analysis/) | 14.0.1.0.0 |  | Allows to access the Sales Analysis from Stock Buffers
-
-[//]: # (end addons)
-
-<!-- prettier-ignore-end -->
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
-
-----
-----
-
-# From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/wms&target_branch=14.0)
-[![Pre-commit Status](https://github.com/OCA/wms/actions/workflows/pre-commit.yml/badge.svg?branch=14.0)](https://github.com/OCA/wms/actions/workflows/pre-commit.yml?query=branch%3A14.0)
-[![Build Status](https://github.com/OCA/wms/actions/workflows/test.yml/badge.svg?branch=14.0)](https://github.com/OCA/wms/actions/workflows/test.yml?query=branch%3A14.0)
-[![codecov](https://codecov.io/gh/OCA/wms/branch/14.0/graph/badge.svg)](https://codecov.io/gh/OCA/wms)
-[![Translation Status](https://translation.odoo-community.org/widgets/wms-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/wms-14-0/?utm_source=widget)
-
-<!-- /!\ do not modify above this line -->
-
-# Warehouse Management System (WMS)
-
-WMS modules for Odoo
-
-<!-- /!\ do not modify below this line -->
-
-<!-- prettier-ignore-start -->
-
-[//]: # (addons)
-
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[delivery_carrier_preference](delivery_carrier_preference/) | 14.0.1.1.2 |  | Advanced selection of preferred shipping methods
-[delivery_carrier_warehouse](delivery_carrier_warehouse/) | 14.0.1.2.0 |  | Get delivery method used in sales orders from warehouse
-[delivery_preference_glue_stock_picking_group](delivery_preference_glue_stock_picking_group/) | 14.0.1.0.0 |  | Fix Delivery preferences module on grouping picking
-[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 14.0.1.2.0 |  | Integration between Sales and Available to Promise Release
-[sale_stock_available_to_promise_release_cutoff](sale_stock_available_to_promise_release_cutoff/) | 14.0.1.1.1 |  | Cutoff management with respect to stock availability
-[sale_stock_available_to_promise_release_dropshipping](sale_stock_available_to_promise_release_dropshipping/) | 14.0.1.0.0 |  | Glue module between sale_stock_available_to_promise_release and stock_dropshipping
-[shopfloor](shopfloor/) | 14.0.4.13.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
-[shopfloor_base](shopfloor_base/) | 14.0.2.11.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
-[shopfloor_base_multicompany](shopfloor_base_multicompany/) | 14.0.1.0.0 |  | Provide multi-company support and validation to Shopfloor applications.
-[shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 14.0.1.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking
-[shopfloor_checkout_package_measurement](shopfloor_checkout_package_measurement/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add a screen on checkout scenario for required package measurements.
-[shopfloor_checkout_package_measurement_mobile](shopfloor_checkout_package_measurement_mobile/) | 14.0.1.0.3 |  | Frontend for package measurement on the checkout shopfloor scenario
-[shopfloor_checkout_putinpack_restriction](shopfloor_checkout_putinpack_restriction/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Shopfloor Checkout Put In Pack Restriction
-[shopfloor_checkout_sync](shopfloor_checkout_sync/) | 14.0.1.1.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Glue module
-[shopfloor_dangerous_goods](shopfloor_dangerous_goods/) | 14.0.1.1.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Glue Module Between Shopfloor and Stock Dangerous Goods
-[shopfloor_dangerous_goods_mobile](shopfloor_dangerous_goods_mobile/) | 14.0.1.1.1 |  | Glue module between Shopfloor Mobile and Shopfloor Dangerous Goods
-[shopfloor_delivery_shipment](shopfloor_delivery_shipment/) | 14.0.1.4.2 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Manage delivery process with shipment advices
-[shopfloor_delivery_shipment_mobile](shopfloor_delivery_shipment_mobile/) | 14.0.1.4.0 |  | Frontend for delivery shipment scenario for shopfloor
-[shopfloor_example](shopfloor_example/) | 14.0.1.2.0 |  | Show how to customize the Shopfloor app frontend.
-[shopfloor_manual_product_transfer](shopfloor_manual_product_transfer/) | 14.0.1.5.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manage manual product transfers
-[shopfloor_manual_product_transfer_mobile](shopfloor_manual_product_transfer_mobile/) | 14.0.1.3.1 |  | Frontend for manual product transfer scenario for Shopfloor
-[shopfloor_mobile](shopfloor_mobile/) | 14.0.1.38.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
-[shopfloor_mobile_base](shopfloor_mobile_base/) | 14.0.3.20.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
-[shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 14.0.2.1.0 |  | Provides authentication via API key to Shopfloor base mobile app
-[shopfloor_mobile_base_auth_user](shopfloor_mobile_base_auth_user/) | 14.0.2.0.1 |  | Provides authentication via standard user login
-[shopfloor_packing_info](shopfloor_packing_info/) | 14.0.1.1.0 |  | Allows to predefine packing information messages per partner.
-[shopfloor_purchase_base](shopfloor_purchase_base/) | 14.0.1.1.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Module for Shopfloor Purchase Data connection
-[shopfloor_reception](shopfloor_reception/) | 14.0.2.9.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Reception scenario for shopfloor
-[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 14.0.0.9.0 | [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Scenario for receiving products
-[shopfloor_reception_packaging_dimension](shopfloor_reception_packaging_dimension/) | 14.0.1.2.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Collect Packaging Dimension from the Reception scenario
-[shopfloor_reception_packaging_dimension_mobile](shopfloor_reception_packaging_dimension_mobile/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Frontend for the packaging dimension on reception scenario
-[shopfloor_reception_purchase_partner_ref](shopfloor_reception_purchase_partner_ref/) | 14.0.1.1.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Adds the purchase partner ref field to shopfloor reception scenario
-[shopfloor_reception_purchase_partner_ref_mobile](shopfloor_reception_purchase_partner_ref_mobile/) | 14.0.1.1.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Adds the purchase partner ref field to shopfloor reception scenario
-[shopfloor_rest_log](shopfloor_rest_log/) | 14.0.1.2.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Integrate rest_log into Shopfloor app
-[shopfloor_single_product_transfer](shopfloor_single_product_transfer/) | 14.0.2.3.2 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Move an item from one location to another.
-[shopfloor_single_product_transfer_force_package](shopfloor_single_product_transfer_force_package/) | 14.0.1.2.0 | [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Force to select package if location already contains packages.
-[shopfloor_single_product_transfer_mobile](shopfloor_single_product_transfer_mobile/) | 14.0.1.2.0 | [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Mobile frontend for single product transfer scenario
-[shopfloor_single_product_transfer_unique_order_at_location](shopfloor_single_product_transfer_unique_order_at_location/) | 14.0.1.2.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Prevent to mix sales order on same consolidation location.
-[shopfloor_workstation](shopfloor_workstation/) | 14.0.1.3.1 |  | Manage warehouse workstation with barcode scanners
-[shopfloor_workstation_label_printer](shopfloor_workstation_label_printer/) | 14.0.1.1.0 |  | Adds a label printer configuration to the user and shopfloor workstation.
-[shopfloor_workstation_mobile](shopfloor_workstation_mobile/) | 14.0.1.0.1 |  | Shopfloor mobile app integration for workstation
-[stock_available_to_promise_release](stock_available_to_promise_release/) | 14.0.3.1.0 |  | Release Operations based on available to promise
-[stock_available_to_promise_release_dynamic_routing](stock_available_to_promise_release_dynamic_routing/) | 14.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue between moves release and dynamic routing
-[stock_checkout_sync](stock_checkout_sync/) | 14.0.1.1.0 |  | Sync location for Checkout operations
-[stock_dynamic_routing](stock_dynamic_routing/) | 14.0.1.1.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Dynamic routing of stock moves
-[stock_dynamic_routing_checkout_sync](stock_dynamic_routing_checkout_sync/) | 14.0.1.0.0 |  | Glue module for tests when dynamic routing and checkout sync are used
-[stock_dynamic_routing_reserve_rule](stock_dynamic_routing_reserve_rule/) | 14.0.1.0.1 |  | Glue module between dynamic routing and reservation rules
-[stock_move_source_relocate](stock_move_source_relocate/) | 14.0.1.3.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Change source location of unavailable moves
-[stock_move_source_relocate_dynamic_routing](stock_move_source_relocate_dynamic_routing/) | 14.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module
-[stock_picking_completion_info](stock_picking_completion_info/) | 14.0.1.1.0 |  | Display on current document completion information according to next operations
-[stock_picking_consolidation_priority](stock_picking_consolidation_priority/) | 14.0.1.1.0 |  | Raise priority of all transfers for a chain when started
-[stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 14.0.1.1.0 |  | Define different shipping policies according to picking type
-[stock_picking_type_shipping_policy_group_by](stock_picking_type_shipping_policy_group_by/) | 14.0.1.0.0 |  | Glue module for Picking Type Shipping Policy and Group Transfers by Partner and Carrier
-[stock_reception_screen](stock_reception_screen/) | 14.0.1.0.2 |  | Dedicated screen to receive/scan goods.
-[stock_reception_screen_measuring_device](stock_reception_screen_measuring_device/) | 14.0.1.0.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Allow to use a measuring device from a reception screen.for packaging measurement
-[stock_reception_screen_qty_by_packaging](stock_reception_screen_qty_by_packaging/) | 14.0.1.1.0 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
-[stock_release_channel](stock_release_channel/) | 14.0.2.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
-[stock_storage_type](stock_storage_type/) | 14.0.1.12.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Manage packages and locations storage types
-[stock_storage_type_buffer](stock_storage_type_buffer/) | 14.0.1.3.0 |  | Exclude storage locations from put-away if their buffer is full
-[stock_storage_type_putaway_abc](stock_storage_type_putaway_abc/) | 14.0.1.0.0 |  | Advanced storage strategy ABC for WMS
-[stock_unique_order_per_location](stock_unique_order_per_location/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Prevent to mix sales order on same consolidation location.
-[stock_warehouse_flow](stock_warehouse_flow/) | 14.0.2.0.2 |  | Configure routing flow for stock moves
-[stock_warehouse_flow_product_packaging](stock_warehouse_flow_product_packaging/) | 14.0.2.0.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Configure packaging types on routing flows for stock moves
-[stock_warehouse_flow_release](stock_warehouse_flow_release/) | 14.0.2.0.1 |  | Warehouse flows integrated with Operation Release
 
 [//]: # (end addons)
 
@@ -8076,7 +8143,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_comment_template](base_comment_template/) | 14.0.4.0.2 |  | Add conditional mako template to any reporton models that inherits comment.template.
-[bi_sql_editor](bi_sql_editor/) | 14.0.1.0.5 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[bi_sql_editor](bi_sql_editor/) | 14.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [bi_view_editor](bi_view_editor/) | 14.0.1.0.0 |  | Graphical BI views builder for Odoo
 [kpi_dashboard](kpi_dashboard/) | 14.0.1.2.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Create Dashboards using kpis
 [kpi_dashboard_bokeh](kpi_dashboard_bokeh/) | 14.0.1.0.0 |  | Create dashboards using bokeh
@@ -8371,7 +8438,7 @@ addon | version | maintainers | summary
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 14.0.1.0.0 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 14.0.1.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
 [auth_oidc_environment](auth_oidc_environment/) | 14.0.1.0.1 |  | This module allows to use server env for OIDC configuration
-[auth_saml](auth_saml/) | 14.0.1.2.0 |  | SAML2 Authentication
+[auth_saml](auth_saml/) | 14.0.1.2.1 |  | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 14.0.1.0.2 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 14.0.1.0.1 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 14.0.1.0.1 |  | Makes the user login field case insensitive
@@ -8379,7 +8446,7 @@ addon | version | maintainers | summary
 [base_user_show_email](base_user_show_email/) | 14.0.1.0.0 |  | Untangle user login and email
 [password_security](password_security/) | 14.0.1.1.0 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 14.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
-[users_ldap_groups](users_ldap_groups/) | 14.0.1.0.0 |  | Adds user accounts to groups based on rules defined by the administrator.
+[users_ldap_groups](users_ldap_groups/) | 14.0.1.0.1 |  | Adds user accounts to groups based on rules defined by the administrator.
 [users_ldap_mail](users_ldap_mail/) | 14.0.1.0.1 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | LDAP mapping for user name and e-mail
 [users_ldap_populate](users_ldap_populate/) | 14.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | LDAP Populate
 [vault](vault/) | 14.0.1.9.0 |  | Password vault integration in Odoo

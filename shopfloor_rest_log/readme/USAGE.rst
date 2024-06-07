@@ -1,1 +1,0 @@
-Go to "Shopfloor / Logs".
