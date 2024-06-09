@@ -134,25 +134,6 @@ pysimplesoap
 # generated from manifests external_dependencies
 pycoda
 zeep
-# From [https://github.com/OCA/l10n-brazil.git](https://github.com/OCA/l10n-brazil.git)
-# generated from manifests external_dependencies
-brazilcep
-email-validator
-erpbrasil.assinatura>=1.7.0
-erpbrasil.base>=2.3.0
-erpbrasil.edoc.pdf
-erpbrasil.edoc>=2.5.2
-erpbrasil.transmissao>=1.1.0
-nfelib>=2.0.0
-nfselib.barueri
-nfselib.ginfes
-nfselib.paulistana
-num2words
-phonenumbers
-pyyaml
-satcomum
-unidecode
-workalendar
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)
 # From [https://github.com/OCA/l10n-chile.git](https://github.com/OCA/l10n-chile.git)
@@ -202,7 +183,6 @@ python-stdnum
 # From [https://github.com/OCA/l10n-norway.git](https://github.com/OCA/l10n-norway.git)
 # From [https://github.com/OCA/l10n-peru.git](https://github.com/OCA/l10n-peru.git)
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
-# From [https://github.com/OCA/l10n-portugal.git](https://github.com/OCA/l10n-portugal.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 # generated from manifests external_dependencies
 PyJWT
@@ -268,6 +248,8 @@ xlrd
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
 # generated from manifests external_dependencies
 pandas>=0.25.3
+# From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
+# generated from manifests external_dependencies
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
 # From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
