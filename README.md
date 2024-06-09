@@ -80,11 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d93181b95ae1acbef0efe6122b7e96f139af5d0a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 16:50:27 2024 +0000
+commit d3cf890092fe2cb50660e1aa3594b3bbd6a98fce
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jun 6 13:09:49 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 29.9% (82 of 274 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -881,11 +886,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 61245e4ccffe081b5180d053d1857c5926e6b74c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 15 12:04:24 2024 +0000
+commit f6bc167f54988473953b44098f1730617e5a2b0f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jun 6 14:39:36 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (65 of 65 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
 
 
 ## l10n-japan
@@ -1177,9 +1187,9 @@ Date:   Tue Nov 19 20:57:48 2019 +0100
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit bceb55f5f3694855e3a46d5cf28ad7084f9b1537
+commit 909a9d8d16119de94fb26ed5d79edc3f063a5cc5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 5 08:01:42 2024 +0000
+Date:   Fri Jun 7 10:49:03 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1256,16 +1266,16 @@ Date:   Sat Apr 6 13:00:08 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 3af41ec8dd2e084fbd481d7973e82e8b181c2ce3
+commit cf111e30918f31c5a384188b7556fc5bc02a807f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 16 14:47:29 2024 +0000
+Date:   Fri Jun 7 11:33:20 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: product-attribute-12.0/product-attribute-12.0-product_category_type
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_category_type/it/
+    Translation: product-attribute-12.0/product-attribute-12.0-product_logistics_uom
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_logistics_uom/it/
 
 
 ## product-kitting
