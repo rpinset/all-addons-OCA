@@ -76,16 +76,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 116dd617ac342013c6f961803315ba2c68224f97
-Author: Vincent Hatakeyama <vincent+github@hatakeyama.fr>
-Date:   Mon May 13 15:03:55 2024 +0000
+commit ba0cc109d54ed9304be180809bf2ef8ab6c2b610
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jun 6 13:09:51 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 27.4% (73 of 266 strings)
     
-    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_batch_compute
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_batch_compute/fr/
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -537,16 +537,16 @@ Date:   Thu Apr 4 09:17:12 2024 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 514066493541a04cd5c63e08553760d19fc132a0
+commit 7865a990c1abc173e2777f401ca9971f40db3c06
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Nov 12 14:24:33 2023 +0000
+Date:   Thu Jun 6 07:55:56 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (22 of 22 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: survey-13.0/survey-13.0-survey_crm_generation
-    Translate-URL: https://translation.odoo-community.org/projects/survey-13-0/survey-13-0-survey_crm_generation/it/
+    Translation: survey-13.0/survey-13.0-partner_survey
+    Translate-URL: https://translation.odoo-community.org/projects/survey-13-0/survey-13-0-partner_survey/it/
 
 
 ## knowledge
@@ -1634,9 +1634,9 @@ Date:   Fri May 24 10:05:42 2024 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 0b4a0ec4cfdbe790824ca42fe8f772a8bb0e641d
+commit 41c95fb7e3ee9c25e32c70042c740e9b5f194ac5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 19 14:47:24 2024 +0000
+Date:   Thu Jun 6 19:12:32 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1680,16 +1680,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 8fa17656a08350d8dffef7d436b377db4669adc1
+commit c2b2078d434feea8ba664478e14a0a3da1ff999e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 23 06:55:45 2024 +0000
+Date:   Thu Jun 6 12:58:18 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 72.5% (74 of 102 strings)
+    Currently translated at 100.0% (37 of 37 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
+    Translation: server-ux-13.0/server-ux-13.0-mass_editing
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_editing/it/
 
 
 ## community-data-files
