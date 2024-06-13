@@ -90,16 +90,16 @@ Date:   Thu Jun 6 13:09:51 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 70f6e6f76b012a81694f571a7fef13c402ca4775
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jun 3 11:39:00 2024 +0000
+commit 31919c438574a064ea9bf08e3019eb752f49002f
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Jun 10 10:46:19 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 63.0% (164 of 260 strings)
     
-    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-partner_statement/
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -1387,11 +1387,16 @@ Date:   Tue Apr 2 09:29:24 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit abfec11377c90b2f718d6b74909164ea31d67620
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 15:19:44 2024 +0000
+commit a3688780dad9488857f4764a1c3dd48c812112d1
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Thu Jun 13 16:30:19 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_open_qty
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_open_qty/it/
 
 
 ## purchase-reporting
@@ -1473,16 +1478,16 @@ Date:   Sun Sep 3 15:37:11 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit c7462fb9adc821094fc07629fd1349bbe9b7c363
+commit 9ac48bea5d99a12b40326adc4c5abc7e4661a1da
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun May 12 10:18:15 2024 +0000
+Date:   Wed Jun 12 19:21:23 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (27 of 27 strings)
+    Currently translated at 100.0% (72 of 72 strings)
     
-    Translation: project-13.0/project-13.0-project_milestone
-    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_milestone/it/
+    Translation: project-13.0/project-13.0-project_timesheet_time_control
+    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_timesheet_time_control/it/
 
 
 ## project-agile
@@ -1548,16 +1553,16 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 589bbe5561e19da1b6ed018dab147440e87413b8
+commit f08f207a67de91068d40fc1229a5d4c180f3f412
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 12:36:01 2024 +0000
+Date:   Thu Jun 13 13:21:27 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 75.0% (24 of 32 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: social-13.0/social-13.0-mail_activity_team
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_activity_team/it/
+    Translation: social-13.0/social-13.0-mail_restrict_follower_selection
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_restrict_follower_selection/it/
 
 
 ## storage
