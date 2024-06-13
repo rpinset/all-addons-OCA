@@ -3,11 +3,11 @@
 
 {
     "name": "Sale Order Packaging Import",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.1",
     "category": "Sales Management",
     "license": "AGPL-3",
     "summary": "Import the packaging on the sale order line",
-    "author": "Camptocamp SA,Odoo Community Association (OCA)",
+    "author": "Camptocamp,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/edi",
     "depends": [
         "sale_stock",
