@@ -53,6 +53,11 @@ msgid "Attach PDF invoice to the e-Invoice."
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
+#: model_terms:ir.ui.view,arch_db:l10n_ro_account_edi_ubl.res_config_settings_view_form
+msgid "Automatic generation of PDF for invoices received from SPV."
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.model,name:l10n_ro_account_edi_ubl.model_account_edi_xml_cius_ro
 msgid "CIUS RO"
 msgstr ""
@@ -185,6 +190,12 @@ msgid "Error %s"
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
+#: code:addons/l10n_ro_account_edi_ubl/models/res_company.py:0
+#, python-format
+msgid "Error downloading e-invoice: %s"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_edi_xml_cius_ro__id
 msgid "ID"
 msgstr ""
@@ -276,6 +287,12 @@ msgstr ""
 #. module: l10n_ro_account_edi_ubl
 #: model:ir.model,name:l10n_ro_account_edi_ubl.model_product_template
 msgid "Product Template"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_render_anaf_pdf
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_render_anaf_pdf
+msgid "Render Anaf PDF"
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl
@@ -449,6 +466,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_move__l10n_ro_edi_transaction
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_payment__l10n_ro_edi_transaction
 msgid "Transaction ID (RO)"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
+#: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_account_move_line__l10n_ro_vendor_code
+msgid "Vendor Code"
 msgstr ""
 
 #. module: l10n_ro_account_edi_ubl

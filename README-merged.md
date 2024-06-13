@@ -1822,7 +1822,7 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 15.0.1.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 15.0.2.0.0 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 15.0.1.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
-[sale_elaboration](sale_elaboration/) | 15.0.3.3.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set an elaboration for any sale line
+[sale_elaboration](sale_elaboration/) | 15.0.3.4.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 15.0.1.0.1 |  | Custom exceptions on sale order
 [sale_fixed_discount](sale_fixed_discount/) | 15.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 15.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
@@ -3161,6 +3161,7 @@ addon | version | maintainers | summary
 [hr_attendance_geolocation](hr_attendance_geolocation/) | 15.0.1.0.3 |  | With this module the geolocation of the user is tracked at the check-in/check-out step
 [hr_attendance_missing_days](hr_attendance_missing_days/) | 15.0.1.0.0 |  | This modules generates attendances for working days without attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 15.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
+[hr_attendance_overtime_manual](hr_attendance_overtime_manual/) | 15.0.1.0.0 |  | Allows adding manual overtime records
 [hr_attendance_reason](hr_attendance_reason/) | 15.0.1.2.0 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 15.0.1.2.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 15.0.1.0.3 |  | HR Attendance RFID
@@ -4894,7 +4895,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 15.0.1.2.0 | [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.14.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.15.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -4902,7 +4903,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.62.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.65.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -4925,7 +4926,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 15.0.3.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 15.0.1.1.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 15.0.4.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
-[l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 15.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Reception In progress
+[l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 15.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Reception In progress
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 15.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 15.0.4.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 15.0.5.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
@@ -5250,7 +5251,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.1.8.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.1.8.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.1.2.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
@@ -5266,7 +5267,7 @@ addon | version | maintainers | summary
 [l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.1.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Thai Localization - Government Purchase Agreement
 [l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.2 |  | Thai Localization - Government Purchase Guarantee
-[l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
+[l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
 [l10n_th_gov_purchase_request](l10n_th_gov_purchase_request/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Purchase Request
 [l10n_th_gov_work_acceptance](l10n_th_gov_work_acceptance/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Government Work Acceptance
 [l10n_th_mis_report](l10n_th_mis_report/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
@@ -5655,7 +5656,7 @@ addon | version | maintainers | summary
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
 [stock_barcodes_gs1_secondary_unit](stock_barcodes_gs1_secondary_unit/) | 15.0.1.0.1 |  | It provides read package from GS1 barcode stored into secondary unit data.
-[stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.0 |  | It provides read barcodes on stock operations from batch pickings.
+[stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.1 |  | It provides read barcodes on stock operations from batch pickings.
 [stock_barcodes_picking_batch_revision](stock_barcodes_picking_batch_revision/) | 15.0.1.0.1 |  | It provides batch pickings revision from other users.
 [stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 15.0.3.5.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | It provides a wizard to select how many barcodes print.
 [stock_picking_product_barcode_report_secondary_unit](stock_picking_product_barcode_report_secondary_unit/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Set by default the maximum quantity of labels to print.
@@ -5741,7 +5742,7 @@ addon | version | maintainers | summary
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.1 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_import_serial_number](stock_picking_import_serial_number/) | 15.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Import S/N from excel file for incoming pickings
 [stock_picking_info_lot](stock_picking_info_lot/) | 15.0.1.0.0 |  | Add lot information on Stock Transfer lines
-[stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.1.1 |  | Adds link between pickings and invoices
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.2.0 |  | Adds link between pickings and invoices
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 15.0.1.0.2 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 15.0.1.0.3 |  | Stock Picking Mass Action
 [stock_picking_operation_quick_change](stock_picking_operation_quick_change/) | 15.0.1.1.1 |  | Change location of all picking operations
@@ -5772,7 +5773,7 @@ addon | version | maintainers | summary
 [stock_reception_discrepancy_distribution](stock_reception_discrepancy_distribution/) | 15.0.1.0.1 |  | Change demand in stock moves linked to reception one
 [stock_remote_measure](stock_remote_measure/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to connect to remote devices to record measures in stock fields
 [stock_restrict_lot](stock_restrict_lot/) | 15.0.0.0.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
-[stock_return_request](stock_return_request/) | 15.0.1.0.1 |  | Stock Return Request
+[stock_return_request](stock_return_request/) | 15.0.1.0.2 |  | Stock Return Request
 [stock_scrap_tier_validation](stock_scrap_tier_validation/) | 15.0.1.0.0 |  | Stock Scrap Tier Validation
 [stock_split_picking](stock_split_picking/) | 15.0.1.1.2 |  | Split a picking in two not transferred pickings
 [stock_valuation_fifo_lot](stock_valuation_fifo_lot/) | 15.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Stock Valuation Fifo Lot
@@ -5882,7 +5883,7 @@ addon | version | maintainers | summary
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 15.0.2.0.2 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 15.0.2.0.3 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.0.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations

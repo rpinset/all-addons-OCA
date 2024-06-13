@@ -372,11 +372,30 @@ class AccountEdiXmlCIUSRO(models.Model):
         return res
 
     def _import_fill_invoice_line_form(
-        self, journal, tree, invoice, invoice_line, qty_factor
+        self, journal, tree, invoice_form, invoice_line_form, qty_factor
     ):
-        res = super(AccountEdiXmlCIUSRO, self)._import_fill_invoice_line_form(
-            journal, tree, invoice, invoice_line, qty_factor
+        res = super()._import_fill_invoice_line_form(
+            journal, tree, invoice_form, invoice_line_form, qty_factor
         )
+
+        vendor_code = self._find_value(
+            "./cac:Item/cac:SellersItemIdentification/cbc:ID", tree
+        )
+        if not vendor_code:
+            vendor_code = self._find_value(
+                "./cac:Item/cac:StandardItemIdentification/cbc:ID", tree
+            )
+
+        if vendor_code:
+            invoice_line_form.l10n_ro_vendor_code = vendor_code
+            domain = [
+                ("seller_ids.product_code", "=", vendor_code),
+                ("seller_ids.name", "=", invoice_form.partner_id.id),
+            ]
+            product = self.env["product.product"].search(domain, limit=1)
+            if product:
+                invoice_line_form.product_id = product
+
         tax_nodes = tree.findall(".//{*}Item/{*}ClassifiedTaxCategory/{*}ID")
         if len(tax_nodes) == 1:
             if tax_nodes[0].text in ["O", "E", "Z"]:
@@ -388,12 +407,12 @@ class AccountEdiXmlCIUSRO(models.Model):
                         ("amount", "=", "0"),
                         ("type_tax_use", "=", journal.type),
                         ("amount_type", "=", "percent"),
-                        ("company_id", "=", invoice.company_id.id),
+                        ("company_id", "=", invoice_form.company_id.id),
                     ],
                     limit=1,
                 )
                 if tax:
-                    invoice_line.tax_ids.add(tax)
+                    invoice_line_form.tax_ids.add(tax)
         return res
 
     def _import_fill_invoice_line_taxes(
@@ -483,14 +502,16 @@ class AccountEdiXmlCIUSRO(models.Model):
         if invoice:
             additional_docs = tree.findall("./{*}AdditionalDocumentReference")
             if len(additional_docs) == 0:
-                res = self.l10n_ro_renderAnafPdf(invoice)
-                if not res:
-                    report = self.env.ref(
-                        "account.account_invoices_without_payment"
-                    ).sudo()
-                    pdf = report._render_qweb_pdf(invoice.id)
-                    b64_pdf = b64encode(pdf[0])
-                    self.l10n_ro_addPDF_from_att(invoice, b64_pdf)
+                if invoice.company_id.l10n_ro_render_anaf_pdf:
+                    self.l10n_ro_renderAnafPdf(invoice)
+                    # res = self.l10n_ro_renderAnafPdf(invoice)
+                    # if not res:
+                    #     report = self.env.ref(
+                    #         "account.account_invoices_without_payment"
+                    #     ).sudo()
+                    #     pdf = report._render_qweb_pdf(invoice.id)
+                    #     b64_pdf = b64encode(pdf[0])
+                    #     self.l10n_ro_addPDF_from_att(invoice, b64_pdf)
         return invoice
 
     def l10n_ro_renderAnafPdf(self, invoice):
