@@ -132,6 +132,7 @@ PyJWT
 # generated from manifests external_dependencies
 chardet
 cryptography
+pycryptodome
 unidecode
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
