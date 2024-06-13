@@ -4,7 +4,7 @@
 import logging
 from datetime import timedelta as td
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 
 from ..models.ddmrp_adjustment import DAF_string, LTAF_string
 
@@ -21,8 +21,28 @@ class StockBuffer(models.Model):
         help="Demand associated to Demand Adjustment Factors applied to "
         "parent buffers.",
     )
+    daf_text = fields.Char(compute="_compute_daf_text")
+    parent_daf_text = fields.Char(compute="_compute_daf_text")
     pre_daf_adu = fields.Float(readonly=True)
     daf_applied = fields.Float(default=-1, readonly=True)
+    parent_daf_applied = fields.Float(default=-1, readonly=True)
+    count_ddmrp_adjustment_demand = fields.Integer(
+        compute="_compute_count_ddmrp_adjustment_demand"
+    )
+
+    def _compute_count_ddmrp_adjustment_demand(self):
+        for rec in self:
+            rec.count_ddmrp_adjustment_demand = len(
+                self.env["ddmrp.adjustment.demand"].search(
+                    [("buffer_origin_id", "=", rec.id)]
+                )
+            )
+
+    @api.depends("daf_applied", "parent_daf_applied")
+    def _compute_daf_text(self):
+        for rec in self:
+            rec.daf_text = "DAF: *" + str(round(rec.daf_applied, 2))
+            rec.parent_daf_text = "P. DAF: +" + str(round(rec.parent_daf_applied, 2))
 
     def _daf_to_apply_domain(self, current=True):
         self.ensure_one()
@@ -40,6 +60,9 @@ class StockBuffer(models.Model):
         # Apply DAFs if existing for the buffer.
         res = super()._calc_adu()
         for rec in self:
+            self.env["ddmrp.adjustment.demand"].search(
+                [("buffer_origin_id", "=", rec.id)]
+            ).unlink()
             dafs_to_apply = self.env["ddmrp.adjustment"].search(
                 rec._daf_to_apply_domain()
             )
@@ -118,20 +141,21 @@ class StockBuffer(models.Model):
     def cron_ddmrp_adu(self, automatic=False):
         """Apply extra demand originated by Demand Adjustment Factors to
         components after the cron update of all the buffers."""
-        self.env["ddmrp.adjustment.demand"].search([]).unlink()
         res = super().cron_ddmrp_adu(automatic)
         today = fields.Date.today()
         for op in self.search([]).filtered("extra_demand_ids"):
-            to_add = sum(
+            op.parent_daf_applied = -1
+            daf_parent = sum(
                 op.extra_demand_ids.filtered(
                     lambda r: r.date_start <= today <= r.date_end
                 ).mapped("extra_demand")
             )
-            if to_add:
-                op.adu += to_add
+            if daf_parent:
+                op.parent_daf_applied = daf_parent
+                op.adu += op.parent_daf_applied
                 _logger.debug(
                     "DAFs-originated demand applied. {}: ADU += {}".format(
-                        op.name, to_add
+                        op.name, op.parent_daf_applied
                     )
                 )
         return res
@@ -166,19 +190,23 @@ class StockBuffer(models.Model):
                 )
         return res
 
+    def action_archive(self):
+        self.env["ddmrp.adjustment.demand"].search(
+            [("buffer_origin_id", "in", self.ids)]
+        ).unlink()
+        return super().action_archive()
+
     def action_view_demand_to_components(self):
         demand_ids = (
             self.env["ddmrp.adjustment.demand"]
             .search([("buffer_origin_id", "=", self.id)])
             .ids
         )
-        return {
-            "name": _("Demand Allocated to Components"),
-            "type": "ir.actions.act_window",
-            "res_model": "ddmrp.adjustment.demand",
-            "view_mode": "tree",
-            "domain": [("id", "in", demand_ids)],
-        }
+        action = self.env["ir.actions.act_window"]._for_xml_id(
+            "ddmrp_adjustment.ddmrp_adjustment_demand_action"
+        )
+        action["domain"] = [("id", "in", demand_ids)]
+        return action
 
     def action_view_affecting_adu(self):
         demand_ids = (
@@ -191,4 +219,12 @@ class StockBuffer(models.Model):
         )
         action["domain"] = [("id", "in", demand_ids)]
         action["context"] = {"search_default_current": 1}
+        return action
+
+    def action_view_parent_affecting_adu(self):
+        demand_ids = self.extra_demand_ids.ids
+        action = self.env["ir.actions.act_window"]._for_xml_id(
+            "ddmrp_adjustment.ddmrp_adjustment_demand_action"
+        )
+        action["domain"] = [("id", "in", demand_ids)]
         return action
