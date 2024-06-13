@@ -117,11 +117,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 1063e455875347b96c72535d03a85107835029f6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 3 09:21:42 2024 +0000
+commit 85d7869219479b96e69ba794aee3de1c33f72d72
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Thu Jun 13 16:23:01 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (10 of 10 strings)
+    
+    Translation: account-invoicing-12.0/account-invoicing-12.0-purchase_stock_picking_return_invoicing
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-purchase_stock_picking_return_invoicing/it/
 
 
 ## account-fiscal-rule
@@ -1136,16 +1141,11 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 0d8517f615794137a738f0a2d8397c33b30684a9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 2 10:38:45 2024 +0000
+commit 5181a22ba4b72e0f43d3ccda594c642e217af4f9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 13 16:12:43 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 64.4% (107 of 166 strings)
-    
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/it/
+    [UPD] README.rst
 
 
 ## stock-logistics-reporting
@@ -1243,16 +1243,16 @@ Date:   Tue Apr 2 09:31:28 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 46b8659b0e1985be238f9307670094f904bf5412
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 15 14:40:50 2024 +0000
+commit de56f7f2d623f0646a2e5aa299688c39615443e3
+Author: Sergio Corato <sergiocorato@gmail.com>
+Date:   Thu Jun 13 16:29:13 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.0% (207 of 225 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_open_qty
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_open_qty/it/
 
 
 ## purchase-reporting
@@ -1326,16 +1326,16 @@ Date:   Sun Sep 3 15:37:10 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 9e398bacbfaa4fce29b164ffa9e0ace9d8e87118
+commit 6cc3df4b72e2675f844f5a26c9922626fbab650b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun May 12 10:18:12 2024 +0000
+Date:   Wed Jun 12 19:21:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (28 of 28 strings)
+    Currently translated at 100.0% (73 of 73 strings)
     
-    Translation: project-12.0/project-12.0-project_milestone
-    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_milestone/it/
+    Translation: project-12.0/project-12.0-project_timesheet_time_control
+    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_timesheet_time_control/it/
 
 
 ## project-agile
@@ -1400,16 +1400,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 9b3f20d148c3c6b04cd281b4b0327c20801a72c2
+commit f55c9eb2a8e3b839ef3e6bd080e64d734e61662c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 15 10:45:32 2024 +0000
+Date:   Thu Jun 13 13:21:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 83.3% (95 of 114 strings)
+    Currently translated at 50.0% (2 of 4 strings)
     
-    Translation: social-12.0/social-12.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_tracking/it/
+    Translation: social-12.0/social-12.0-mail_restrict_follower_selection
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_restrict_follower_selection/it/
 
 
 ## storage
