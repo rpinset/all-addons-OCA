@@ -80,25 +80,25 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d3cf890092fe2cb50660e1aa3594b3bbd6a98fce
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 6 13:09:49 2024 +0000
+commit dd02923bb13d2eeaebc1bda6a42e4f5fa8e7affc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 14 08:25:38 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.9% (82 of 274 strings)
-    
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
+    [UPD] README.rst
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit bf8fbe9a8d8ffd618faff0c39eecf6dfe9b98130
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 3 11:34:27 2024 +0000
+commit 8b26717dfbf5144ceaea35d370a21bd905361da4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 15 16:59:17 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 91.1% (72 of 79 strings)
+    
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -579,16 +579,16 @@ Date:   Fri Mar 15 14:48:24 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit f3dd653e88807fedd2fdf1ff906767108ca0b1fa
+commit 075b9fe24c820f4f0848bb3450d1c18206cd103b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 12:30:33 2024 +0000
+Date:   Fri Jun 14 14:56:33 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (512 of 512 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_stage_validation
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_stage_validation/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1009,16 +1009,11 @@ Date:   Wed Mar 27 16:21:32 2024 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 3e6a3b6978a06658f4cc973e99d93c97f8099b13
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 6 11:46:40 2024 +0000
+commit 3d0bdd8f199bf930566136085378949685d35fd3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 14 08:27:21 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 29.6% (8 of 27 strings)
-    
-    Translation: l10n-switzerland-12.0/l10n-switzerland-12.0-l10n_ch_base_bank
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-12-0/l10n-switzerland-12-0-l10n_ch_base_bank/it/
+    [UPD] README.rst
 
 
 ## l10n-taiwan
@@ -1201,16 +1196,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit d501e48172eb0646c34499df9d64ac1eee40027b
+commit 6cb8a6b56067cc91ee8ed69b1095f6cde349cc41
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 09:58:34 2024 +0000
+Date:   Fri Jun 14 14:53:39 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 100.0% (114 of 114 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-repair_quality_control_issue
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_quality_control_issue/it/
+    Translation: manufacture-12.0/manufacture-12.0-quality_control_issue
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_issue/it/
 
 
 ## manufacture-reporting
@@ -1229,16 +1224,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit da816cbb62cbcb7d35dba38de8d6b0012ed524a4
+commit 2bf8ed5608bc1ce4655afd0cdc4adbcbf95521d0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 2 09:31:28 2024 +0000
+Date:   Fri Jun 14 14:57:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (172 of 172 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity_mrp
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity_mrp/it/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_nonconformity/it/
 
 
 ## purchase-workflow
