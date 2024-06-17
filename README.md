@@ -24,14 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 15318ab08cc5f77b166f669e929b7571f53f4911
-Merge: cdc39253 4d9f0847
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Mon Feb 12 17:35:53 2024 +0100
+commit 022e9933cb6e2bd19919c164ba4a0c016321aea9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Jun 15 02:31:55 2024 +0000
 
-    Merge pull request #625 from Escodoo/13.0-imp-account_analytic_required
-    
-    [13.0][IMP] account_analytic_required: post-migrate column_exists
+    [UPD] README.rst
 
 
 ## account-budgeting
@@ -90,16 +87,16 @@ Date:   Thu Jun 6 13:09:51 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 31919c438574a064ea9bf08e3019eb752f49002f
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Jun 10 10:46:19 2024 +0000
+commit 1aaf43aceb7b0d297ee5463ff332557e882ef0a0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 15 16:59:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 63.0% (164 of 260 strings)
+    Currently translated at 70.9% (66 of 93 strings)
     
-    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -602,16 +599,16 @@ Date:   Thu Feb 1 14:38:23 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 9c27bcc1d5812267ec68529eeed8ff49eeb04582
+commit 10b430f0e2466a57610bfab1ae6456f1f9f1a201
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 12:30:34 2024 +0000
+Date:   Fri Jun 14 14:56:36 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_stage_validation
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_stage_validation/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1125,16 +1122,11 @@ Date:   Tue Mar 26 14:26:49 2024 +0100
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit f6c31b59a56bb8984c758f433857821e222c638c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 6 11:46:43 2024 +0000
+commit b7ce6413034727b4b1a0ab0d9aa9643b87a8bccc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 14 08:27:46 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 41.1% (7 of 17 strings)
-    
-    Translation: l10n-switzerland-13.0/l10n-switzerland-13.0-l10n_ch_base_bank
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-13-0/l10n-switzerland-13-0-l10n_ch_base_bank/it/
+    [UPD] README.rst
 
 
 ## l10n-taiwan
@@ -1327,11 +1319,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 78db3bc3f33535d3a9aaaae7f5e7887a7b49343a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 2 08:42:03 2024 +0000
+commit fba74cedfd6732489502aad2432574709c0c78e7
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jun 14 10:12:16 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_adjustment
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_adjustment/
 
 
 ## wms
@@ -1373,16 +1370,16 @@ Date:   Sun Oct 29 15:19:08 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit ad7f4ff1c3a374e6d369539527d12394f2233539
+commit 0cf2ec21184f7d2574168f58373b8aa752c39c6e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 2 09:29:24 2024 +0000
+Date:   Fri Jun 14 14:57:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (40 of 40 strings)
+    Currently translated at 100.0% (156 of 156 strings)
     
-    Translation: management-system-13.0/management-system-13.0-mgmtsystem_hazard_risk
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem_hazard_risk/it/
+    Translation: management-system-13.0/management-system-13.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem_nonconformity/it/
 
 
 ## purchase-workflow
