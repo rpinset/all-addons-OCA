@@ -57,11 +57,6 @@ msgid "Has sub BoM"
 msgstr "Tiene sub LdM"
 
 #. module: mrp_bom_hierarchy
-#: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__product_default_code
-msgid "Internal Reference"
-msgstr "Referencias Internas"
-
-#. module: mrp_bom_hierarchy
 #: model:ir.model.fields,field_description:mrp_bom_hierarchy.field_mrp_bom__has_parent
 msgid "Is component"
 msgstr "Es componente"
@@ -84,14 +79,12 @@ msgstr "El producto tiene otras LdMs"
 #. module: mrp_bom_hierarchy
 #. odoo-python
 #: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
-#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
 #, python-format
 msgid "This operator is not supported"
 msgstr "Este operador no es compatible"
 
 #. module: mrp_bom_hierarchy
 #. odoo-python
-#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
 #: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
 #, python-format
 msgid "Value should be True or False (not %s)"
@@ -109,7 +102,7 @@ msgstr "Ver otras listas de materiales del producto"
 
 #. module: mrp_bom_hierarchy
 #. odoo-python
-#: code:addons/mrp_bom_hierarchy/model/mrp_bom.py:0
+#: code:addons/mrp_bom_hierarchy/model/mrp_bom_line.py:0
 #, python-format
 msgid ""
 "You should provide either a product or a product template to search a BoM "
@@ -117,3 +110,6 @@ msgid ""
 msgstr ""
 "Debe proporcionar un producto o una plantilla de producto para buscar una "
 "línea de la lista de materiales"
+
+#~ msgid "Internal Reference"
+#~ msgstr "Referencias Internas"

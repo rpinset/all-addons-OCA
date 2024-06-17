@@ -6,10 +6,10 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Account Financial Reports",
-    "version": "16.0.1.7.0",
+    "version": "16.0.1.7.1",
     "category": "Reporting",
     "summary": "OCA Financial Reports",
-    "author": "Camptocamp SA,"
+    "author": "Camptocamp,"
     "initOS GmbH,"
     "redCOR AG,"
     "ForgeFlow,"
