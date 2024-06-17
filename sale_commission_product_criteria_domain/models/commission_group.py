@@ -1,4 +1,4 @@
-# © 2023 ooops404
+# Copyright 2023 ooops404
 # License AGPL-3 - See https://www.gnu.org/licenses/agpl-3.0.html
 from odoo import _, api, exceptions, fields, models
 
@@ -46,7 +46,7 @@ class CommissionItemsGroup(models.Model):
     def _compute_agents_count(self):
         res_partner_obj = self.env["res.partner"]
         for rec in self:
-            self.agents_count = res_partner_obj.search_count(
+            rec.agents_count = res_partner_obj.search_count(
                 [
                     ("agent", "=", True),
                     ("allowed_commission_group_ids", "in", rec.ids),
