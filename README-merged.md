@@ -307,7 +307,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.10.4 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.10.5 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -952,7 +952,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 15.0.2.3.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 15.0.2.4.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
@@ -3421,6 +3421,7 @@ addon | version | maintainers | summary
 [mail_template_multi_company](mail_template_multi_company/) | 15.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [multicompany_configuration](multicompany_configuration/) | 15.0.1.0.0 |  | Simplify the configuration on multicompany environments
 [partner_multi_company](partner_multi_company/) | 15.0.1.0.0 |  | Select individually the partner visibility on each company
+[product_category_inter_company](product_category_inter_company/) | 15.0.1.1.0 |  | Product categories as company dependent
 [product_multi_company](product_multi_company/) | 15.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 15.0.1.1.0 |  | Intercompany PO/SO rules
@@ -4903,7 +4904,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.65.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.66.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -4913,6 +4914,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5742,7 +5744,7 @@ addon | version | maintainers | summary
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.1 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_import_serial_number](stock_picking_import_serial_number/) | 15.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Import S/N from excel file for incoming pickings
 [stock_picking_info_lot](stock_picking_info_lot/) | 15.0.1.0.0 |  | Add lot information on Stock Transfer lines
-[stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.2.0 |  | Adds link between pickings and invoices
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.3.0 |  | Adds link between pickings and invoices
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 15.0.1.0.2 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 15.0.1.0.3 |  | Stock Picking Mass Action
 [stock_picking_operation_quick_change](stock_picking_operation_quick_change/) | 15.0.1.1.1 |  | Change location of all picking operations
@@ -6074,7 +6076,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ddmrp](ddmrp/) | 15.0.1.15.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
+[ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.5.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 15.0.1.0.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 15.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6519,7 +6521,7 @@ addon | version | maintainers | summary
 [purchase_work_acceptance_invoice_plan](purchase_work_acceptance_invoice_plan/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Purchase Work Acceptance Invoice Plan
 [purchase_work_acceptance_late_fines](purchase_work_acceptance_late_fines/) | 15.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Purchase Work Acceptance - Late Delivery Fines
 [purchase_work_acceptance_tier_validation](purchase_work_acceptance_tier_validation/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Extends the functionality of Work Acceptance to support a tier validation process.
-[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 15.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
+[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 15.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
 [sale_purchase_secondary_unit](sale_purchase_secondary_unit/) | 15.0.1.0.1 |  | Propagate sale secondary uom to purchase orders
 [subcontracted_service](subcontracted_service/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Subcontracted service
 [supplier_calendar](supplier_calendar/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
