@@ -100,7 +100,7 @@ zeep
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
-pyfrdas2
+pyfrdas2>=0.4
 python-stdnum
 python-stdnum>=1.18
 requests_oauthlib
@@ -232,6 +232,7 @@ ujson
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
 # generated from manifests external_dependencies
+bokeh==3.4.1
 plotly==5.22.0
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)

@@ -264,7 +264,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.2.0 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.2.1 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 
 [//]: # (end addons)
@@ -1569,6 +1569,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_sale_pivot](partner_sale_pivot/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Sales analysis from customer form view
 [product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
@@ -3474,7 +3475,7 @@ addon | version | maintainers | summary
 [l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add checks on sale orders for Chorus Pro
 [l10n_fr_cog](l10n_fr_cog/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Code Officiel Géographique (COG) on countries
-[l10n_fr_das2](l10n_fr_das2/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
+[l10n_fr_das2](l10n_fr_das2/) | 17.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
@@ -4365,11 +4366,12 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.0.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.0 |  | Modulo 'glue' de la AEAT para el menú de la ATC
-[l10n_es_cnae](l10n_es_cnae/) | 17.0.1.0.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
+[l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
@@ -4803,6 +4805,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_delivery_carrier_label](base_delivery_carrier_label/) | 17.0.1.0.0 |  | Base module for carrier labels
+[delivery_carrier_account](delivery_carrier_account/) | 17.0.1.0.0 |  | Delivery Carrier Account
 [delivery_carrier_info](delivery_carrier_info/) | 17.0.1.0.0 |  | Add code on carrier
 
 [//]: # (end addons)
@@ -4850,6 +4854,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Any Models
+[barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Products (Templates and Variants)
 
 [//]: # (end addons)
 
@@ -4898,7 +4903,7 @@ addon | version | maintainers | summary
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 17.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
 [stock_move_line_reference_link](stock_move_line_reference_link/) | 17.0.1.0.0 |  | Add link in stock move line references.
 [stock_no_negative](stock_no_negative/) | 17.0.1.0.0 |  | Disallow negative stock levels by default
-[stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.1.0 |  | Adds link between pickings and invoices
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.2.0 |  | Adds link between pickings and invoices
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 17.0.1.0.0 |  | Link between picking and purchase order
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 17.0.1.0.0 |  | Link between picking and sale order
 [stock_picking_show_return](stock_picking_show_return/) | 17.0.1.0.1 |  | Show returns on stock pickings
@@ -5425,6 +5430,7 @@ addon | version | maintainers | summary
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.0 |  | Purchase Reception Notify
 [purchase_request](purchase_request/) | 17.0.1.2.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
 [purchase_security](purchase_security/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
@@ -6218,6 +6224,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [bi_sql_editor](bi_sql_editor/) | 17.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[report_layout_config](report_layout_config/) | 17.0.1.0.0 |  | Add possibility to easily modify the global report layout
 [report_qweb_parameter](report_qweb_parameter/) | 17.0.1.0.0 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_substitute](report_substitute/) | 17.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module allows to create substitution rules for report actions.
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 17.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
@@ -7434,6 +7441,7 @@ addon | version | maintainers | summary
 [web_theme_classic](web_theme_classic/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Contrasted style on fields to improve the UI.
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 17.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 17.0.1.0.0 |  | Open the linked resource when clicking on their name
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_open_tab](web_widget_open_tab/) | 17.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Allow to draw plotly charts.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix
