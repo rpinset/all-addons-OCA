@@ -1622,16 +1622,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 3b80a42d41b20d2796c331dcb1fb772aa54e1bac
+commit 5d3cbb73f5cf5f471352c76143fc1cf7874577ce
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 24 10:05:42 2024 +0000
+Date:   Tue Jun 18 16:12:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 97.1% (34 of 35 strings)
+    Currently translated at 24.3% (18 of 74 strings)
     
-    Translation: server-tools-13.0/server-tools-13.0-module_analysis
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-module_analysis/it/
+    Translation: server-tools-13.0/server-tools-13.0-base_import_odoo
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/it/
 
 
 ## server-auth
