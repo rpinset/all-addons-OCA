@@ -226,16 +226,16 @@ Date:   Wed May 29 15:42:33 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit ba8cdf0e4a343e66bc0ca67787db183d5f7aa495
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jun 17 11:01:51 2024 +0000
+commit 1e890359c86f134a94dc0177e8a1902a0d807315
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Jun 18 10:51:50 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (52 of 52 strings)
     
     Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/it/
 
 
 ## connector
@@ -432,16 +432,16 @@ Date:   Wed May 1 19:00:55 2024 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit c64a00c64990b66aec07f93ab5ccba60064ef8cd
+commit 26d90193fe263bc4465cd25fb231a0bfd59259c6
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jun 11 08:32:32 2024 +0000
+Date:   Wed Jun 19 08:47:30 2024 +0000
 
     Translated using Weblate (Italian)
     
     Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_coupon_reward_fixed_price_order_line_link
-    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_coupon_reward_fixed_price_order_line_link/it/
+    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_promotion_discount_in_field_order_line_link
+    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_promotion_discount_in_field_order_line_link/it/
 
 
 ## sale-reporting
@@ -1123,16 +1123,11 @@ Date:   Wed May 1 19:10:26 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 99db8b09cdb90b45a9b79104806042dc9428738c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 7 11:33:09 2024 +0000
+commit a783e0b48e36a60f8045b4a51c4a721b0ba55006
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 21 10:11:38 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (27 of 27 strings)
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_quant_package_dimension
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_quant_package_dimension/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1206,11 +1201,16 @@ Date:   Wed Jun 12 09:43:53 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 1ee992a8e46d4dcb9fa5efa63f1aa05a1f1dc2cd
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 10 14:18:51 2024 +0000
+commit 584fa50d5d1d214ab74c69f690a7b66c40b7709f
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Jun 21 10:59:56 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (34 of 34 strings)
+    
+    Translation: manufacture-14.0/manufacture-14.0-mrp_bom_attribute_match
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_bom_attribute_match/it/
 
 
 ## manufacture-reporting
@@ -1252,9 +1252,9 @@ Date:   Tue May 28 15:46:30 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit bc84a214ff4240032a9a83e2ef9883fcb0b8b472
+commit 0ee53dfec685c3ed5c8a9e388c74b3f85757abab
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 17 09:07:12 2024 +0000
+Date:   Fri Jun 21 13:16:14 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1470,16 +1470,16 @@ Date:   Fri Oct 27 21:08:37 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 149000f9e278ec92563ae97cd7f0a0a37bf608a6
+commit 31faccdb83199852d62fe5f878da19759df99777
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 24 10:05:50 2024 +0000
+Date:   Tue Jun 18 16:12:29 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (37 of 37 strings)
+    Currently translated at 27.6% (18 of 65 strings)
     
-    Translation: server-tools-14.0/server-tools-14.0-module_analysis
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-module_analysis/it/
+    Translation: server-tools-14.0/server-tools-14.0-base_import_odoo
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-base_import_odoo/it/
 
 
 ## server-auth

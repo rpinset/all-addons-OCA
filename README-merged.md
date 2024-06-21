@@ -2295,7 +2295,7 @@ addon | version | maintainers | summary
 [sale_coupon_criteria_order_based](sale_coupon_criteria_order_based/) | 14.0.1.0.0 |  | Allows to set a sales order related domain for coupon
 [sale_coupon_delivery_auto_refresh](sale_coupon_delivery_auto_refresh/) | 14.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Allows to auto-apply the coupons after adding delivery line
 [sale_coupon_domain_product_discount](sale_coupon_domain_product_discount/) | 14.0.1.1.0 |  | Apply discount only to the domain matching products
-[sale_coupon_domain_product_discount_in_field](sale_coupon_domain_product_discount_in_field/) | 14.0.1.0.0 | [![isserver1](https://github.com/isserver1.png?size=30px)](https://github.com/isserver1) [![GabbasovDinar](https://github.com/GabbasovDinar.png?size=30px)](https://github.com/GabbasovDinar) | Apply discount only to the domain matching products to discount field
+[sale_coupon_domain_product_discount_in_field](sale_coupon_domain_product_discount_in_field/) | 14.0.1.0.1 | [![isserver1](https://github.com/isserver1.png?size=30px)](https://github.com/isserver1) [![GabbasovDinar](https://github.com/GabbasovDinar.png?size=30px)](https://github.com/GabbasovDinar) | Apply discount only to the domain matching products to discount field
 [sale_coupon_domain_product_reward_fixed_price](sale_coupon_domain_product_reward_fixed_price/) | 14.0.1.0.0 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) | Sale Coupon Domain Product Reward Fixed Price
 [sale_coupon_limit](sale_coupon_limit/) | 14.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Restrict number of promotions per customer or salesman
 [sale_coupon_multi_gift](sale_coupon_multi_gift/) | 14.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to configure multiple gift rewards per promotion
@@ -2305,7 +2305,8 @@ addon | version | maintainers | summary
 [sale_coupon_reward_add_product](sale_coupon_reward_add_product/) | 14.0.1.0.0 | [![jcoux](https://github.com/jcoux.png?size=30px)](https://github.com/jcoux) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Sale Coupon Automatic free product as normal
 [sale_coupon_reward_fixed_price](sale_coupon_reward_fixed_price/) | 14.0.1.1.0 |  | Apply fixed price for domain matching products
 [sale_coupon_reward_fixed_price_order_line_link](sale_coupon_reward_fixed_price_order_line_link/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Bridge module to track promotions on SOL with the discount in field
-[sale_promotion_discount_in_field](sale_promotion_discount_in_field/) | 14.0.1.1.0 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![Volodiay622](https://github.com/Volodiay622.png?size=30px)](https://github.com/Volodiay622) | Put promotion discount into discount field
+[sale_promotion_discount_in_field](sale_promotion_discount_in_field/) | 14.0.1.1.1 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![Volodiay622](https://github.com/Volodiay622.png?size=30px)](https://github.com/Volodiay622) | Put promotion discount into discount field
+[sale_promotion_discount_in_field_order_line_link](sale_promotion_discount_in_field_order_line_link/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Bridge module to track promotions on SOL with the discount in field
 
 [//]: # (end addons)
 
@@ -6080,7 +6081,7 @@ addon | version | maintainers | summary
 [delivery_package_default_shipping_weight](delivery_package_default_shipping_weight/) | 14.0.1.0.1 |  | Set default package shipping weight according to packaging
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.1.2 |  | Delivery Procurement Group Carrier
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 14.0.1.0.1 |  | Include packaging weight on move, transfer and package.
-[procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 14.0.1.1.0 |  | Procurement Auto Create Group Carrier
+[procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 14.0.1.1.1 |  | Procurement Auto Create Group Carrier
 [product_cost_price_avco_sync](product_cost_price_avco_sync/) | 14.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
 [product_expiry_simple](product_expiry_simple/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simpler and better alternative to the official product_expiry module
 [product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 14.0.1.4.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | This module makes the product customer code visible in the stock moves of a picking.
@@ -6131,7 +6132,7 @@ addon | version | maintainers | summary
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 14.0.1.2.2 |  | Adds link between pickings and invoices
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 14.0.1.0.0 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 14.0.1.0.2 |  | Stock Picking Mass Action
-[stock_picking_partner_note](stock_picking_partner_note/) | 14.0.1.0.0 |  | Add partner notes on picking
+[stock_picking_partner_note](stock_picking_partner_note/) | 14.0.1.0.1 |  | Add partner notes on picking
 [stock_picking_product_link](stock_picking_product_link/) | 14.0.1.0.0 | [![robinkeunen](https://github.com/robinkeunen.png?size=30px)](https://github.com/robinkeunen) | Adds a "Product" smart button on stock pickings.
 [stock_picking_progress](stock_picking_progress/) | 14.0.1.2.1 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Compute the stock.picking progression
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 14.0.1.0.1 |  | Link between picking and purchase order
@@ -6140,6 +6141,7 @@ addon | version | maintainers | summary
 [stock_picking_reallocation](stock_picking_reallocation/) | 14.0.1.0.0 |  | Allow to reallocate moves from a picking to several pickings.
 [stock_picking_restrict_cancel_printed](stock_picking_restrict_cancel_printed/) | 14.0.1.0.1 |  | Prevent canceling a stock transfer if printed.
 [stock_picking_restrict_cancel_with_orig_move](stock_picking_restrict_cancel_with_orig_move/) | 14.0.1.0.1 |  | Restrict cancellation of dest moves according to origin.
+[stock_picking_return_lot](stock_picking_return_lot/) | 14.0.1.0.1 |  | Propagate SN/lots from origin picking to return picking.
 [stock_picking_return_show_lot](stock_picking_return_show_lot/) | 14.0.1.0.1 |  | This module allows to show lots in the picking return wizard before " "return picking creation.
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 14.0.1.0.1 |  | Link between picking and sale order
 [stock_picking_send_by_mail](stock_picking_send_by_mail/) | 14.0.1.0.0 |  | Send stock picking by email
@@ -6688,7 +6690,7 @@ addon | version | maintainers | summary
 [mrp_analytic_cost](mrp_analytic_cost/) | 14.0.1.1.0 |  | Track manufacturing costs in real time, using Analytic Items
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 14.0.1.3.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp Attachment Mgmt
 [mrp_auto_assign](mrp_auto_assign/) | 14.0.1.0.0 |  | Make MO automatically reserve raw material moves at creation
-[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
+[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
 [mrp_bom_attribute_match_duplicate_kit](mrp_bom_attribute_match_duplicate_kit/) | 14.0.1.1.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | BOM Attribute Match Duplicate Kit
 [mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | BOM Attribute Match Semifinished Products
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 14.0.1.1.1 |  | MRP BOM Component Menu
@@ -6739,6 +6741,7 @@ addon | version | maintainers | summary
 [quality_control_stock_oca](quality_control_stock_oca/) | 14.0.1.0.2 |  | Quality control - Stock (OCA)
 [quality_control_team_oca](quality_control_team_oca/) | 14.0.1.0.0 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds quality control teams to handle different quality control workflows
 [repair_discount](repair_discount/) | 14.0.1.0.0 |  | Repair Discount
+[repair_picking](repair_picking/) | 14.0.1.0.0 |  | Enhanced repair order management with pickings for adding and removing components
 [repair_picking_after_done](repair_picking_after_done/) | 14.0.1.0.1 |  | Transfer repaired move to another location directly from repaire order
 [repair_refurbish](repair_refurbish/) | 14.0.1.0.1 |  | Create refurbished products during repair
 [repair_refurbish_repair_stock_move](repair_refurbish_repair_stock_move/) | 14.0.1.0.0 |  | Use refurbish and repair stock moves together
@@ -7031,7 +7034,7 @@ addon | version | maintainers | summary
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 14.0.2.0.1 |  | Purchase product in a secondary unit
 [purchase_order_shipping_date](purchase_order_shipping_date/) | 14.0.1.0.1 |  | Add field Shipping Date in PO and Report
-[purchase_order_type](purchase_order_type/) | 14.0.1.0.4 |  | Purchase Order Type
+[purchase_order_type](purchase_order_type/) | 14.0.1.0.5 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 14.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 14.0.1.2.1 |  | Show uninvoiced amount on purchase order tree.
 [purchase_order_vendor_product](purchase_order_vendor_product/) | 14.0.1.1.0 |  | Show only products from the selected vendor in PO line
