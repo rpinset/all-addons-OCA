@@ -570,9 +570,9 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 9144e59952ef828e84116d687624fa856c7ce848
+commit 0fc05edb7eda94b91b98d7fa0c88e7dc8792fb8c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 15 14:48:24 2024 +0000
+Date:   Wed Jun 19 10:36:16 2024 +0000
 
     [BOT] post-merge updates
 
