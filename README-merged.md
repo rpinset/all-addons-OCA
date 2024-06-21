@@ -223,7 +223,7 @@ addon | version | maintainers | summary
 [account_asset_batch_compute](account_asset_batch_compute/) | 15.0.1.0.0 |  | Add the possibility to compute assets in batch
 [account_asset_compute_batch](account_asset_compute_batch/) | 15.0.1.0.0 |  | Assets - Compute Depre. in Batch
 [account_asset_low_value](account_asset_low_value/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Low Value Asset
-[account_asset_management](account_asset_management/) | 15.0.1.2.0 |  | Assets Management
+[account_asset_management](account_asset_management/) | 15.0.1.2.1 |  | Assets Management
 [account_asset_management_menu](account_asset_management_menu/) | 15.0.1.0.0 |  | Assets Management Menu
 [account_asset_number](account_asset_number/) | 15.0.1.0.0 |  | Assets Number
 [account_asset_transfer](account_asset_transfer/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Asset Transfer from AUC to Asset
@@ -952,7 +952,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 15.0.2.4.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 15.0.2.6.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
@@ -1860,12 +1860,12 @@ addon | version | maintainers | summary
 [sale_order_product_assortment](sale_order_product_assortment/) | 15.0.2.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 15.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 15.0.1.2.2 |  | Recommend products to sell to customer based on history
-[sale_order_product_recommendation_secondary_unit](sale_order_product_recommendation_secondary_unit/) | 15.0.1.0.0 |  | Add secondary unit to recommend products wizard
+[sale_order_product_recommendation_secondary_unit](sale_order_product_recommendation_secondary_unit/) | 15.0.1.1.0 |  | Add secondary unit to recommend products wizard
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 15.0.2.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_report_without_price](sale_order_report_without_price/) | 15.0.1.0.0 |  | Allow you to generate quotation and order reports without price.
 [sale_order_restrict_cancel_existing_invoice](sale_order_restrict_cancel_existing_invoice/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to restrict sale order cancelling if an invoice exists
 [sale_order_revision](sale_order_revision/) | 15.0.1.0.1 |  | Keep track of revised quotations
-[sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.1.0 |  | Sale product in a secondary unit
+[sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.2.0 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 15.0.2.1.2 |  | Sale Order Type
 [sale_order_type_quotation_number](sale_order_type_quotation_number/) | 15.0.1.1.0 |  | Use quotation sequence depending on sale type
 [sale_order_warn_message](sale_order_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
@@ -2538,13 +2538,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 15.0.1.13.0 |  | Document Management System for Odoo
+[dms](dms/) | 15.0.1.14.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
-[dms_field](dms_field/) | 15.0.1.3.1 |  | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 15.0.1.4.0 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
 [dms_user_role](dms_user_role/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
-[hr_dms_field](hr_dms_field/) | 15.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add dms field for employees
+[hr_dms_field](hr_dms_field/) | 15.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add dms field for employees
 
 [//]: # (end addons)
 
@@ -4904,7 +4904,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 15.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.66.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 15.0.1.67.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 15.0.2.0.1 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 15.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -4914,7 +4914,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5880,7 +5880,7 @@ addon | version | maintainers | summary
 [stock_available_mrp](stock_available_mrp/) | 15.0.1.0.3 |  | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 15.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_cycle_count](stock_cycle_count/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
+[stock_cycle_count](stock_cycle_count/) | 15.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
 [stock_demand_estimate](stock_demand_estimate/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
@@ -6475,7 +6475,7 @@ addon | version | maintainers | summary
 [purchase_order_product_recommendation_xlsx](purchase_order_product_recommendation_xlsx/) | 15.0.1.0.1 |  | Add a way to print recommended products for supplier
 [purchase_order_qty_by_product_category](purchase_order_qty_by_product_category/) | 15.0.1.0.0 |  | Purchase - Order Qty By Product Category
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
-[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 15.0.1.3.0 |  | Purchase product in a secondary unit
+[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 15.0.1.4.0 |  | Purchase product in a secondary unit
 [purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 15.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 15.0.1.0.1 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 15.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
@@ -8794,7 +8794,7 @@ addon | version | maintainers | summary
 [web_domain_field](web_domain_field/) | 15.0.1.0.1 |  | Use computed field as domain
 [web_drop_target](web_drop_target/) | 15.0.1.0.2 |  | Allows to drag files into Odoo
 [web_environment_ribbon](web_environment_ribbon/) | 15.0.1.0.0 |  | Web Environment Ribbon
-[web_filter_header_button](web_filter_header_button/) | 15.0.1.1.0 |  | Show selected filters as buttons in the control panel
+[web_filter_header_button](web_filter_header_button/) | 15.0.1.1.1 |  | Show selected filters as buttons in the control panel
 [web_group_expand](web_group_expand/) | 15.0.1.0.0 |  | Group Expand Buttons
 [web_hide_user_menu_item](web_hide_user_menu_item/) | 15.0.1.0.0 |  | Web Hide User Menu Item
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 15.0.1.0.0 |  | Enables triggering of more than one action on ActionManager

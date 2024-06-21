@@ -4,7 +4,7 @@
 {
     "name": "Document Management System",
     "summary": """Document Management System for Odoo""",
-    "version": "15.0.1.13.0",
+    "version": "15.0.1.14.0",
     "category": "Document Management",
     "license": "LGPL-3",
     "website": "https://github.com/OCA/dms",
@@ -31,6 +31,7 @@
         "views/res_config_settings.xml",
         "views/dms_portal_templates.xml",
         "wizards/wizard_dms_file_move_views.xml",
+        "wizards/wizard_dms_share_views.xml",
     ],
     "assets": {
         "web.assets_backend": [
