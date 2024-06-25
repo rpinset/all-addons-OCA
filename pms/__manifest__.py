@@ -4,7 +4,7 @@
 {
     "name": "PMS (Property Management System)",
     "summary": "A property management system",
-    "version": "14.0.2.37.0",
+    "version": "14.0.2.38.0",
     "development_status": "Beta",
     "category": "Generic Modules/Property Management System",
     "website": "https://github.com/OCA/pms",
@@ -94,6 +94,7 @@
         "views/precheckin_portal_templates.xml",
         "wizards/wizard_massive_changes.xml",
         "wizards/wizard_advanced_filters.xml",
+        "wizards/folio_payment_link_views.xml",
         "views/payment_transaction_views.xml",
         "views/account_move_line_views.xml",
         "report/proforma_report_templates.xml",
