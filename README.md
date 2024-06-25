@@ -80,11 +80,11 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit dd02923bb13d2eeaebc1bda6a42e4f5fa8e7affc
+commit 8385f0d9067f0569691259ee63b84a7fdf401ee6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 14 08:25:38 2024 +0000
+Date:   Sun Jun 23 21:21:50 2024 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -1136,11 +1136,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 5181a22ba4b72e0f43d3ccda594c642e217af4f9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 13 16:12:43 2024 +0000
+commit 7fbff0578e0579472b68269ece26cd9e5bbcf8bc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 24 11:49:13 2024 +0000
 
-    [UPD] README.rst
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (15 of 15 strings)
+    
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_account_inventory_force_date
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_account_inventory_force_date/it/
 
 
 ## stock-logistics-reporting
