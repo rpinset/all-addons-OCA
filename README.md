@@ -434,9 +434,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit dbaf763e1ce80c2dc76ba6d5c34e26ea6eb738cc
+commit 4227c9f2b9e4fbde8b2e3f2867cf0756cf248394
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 30 13:19:54 2024 +0000
+Date:   Tue Jun 25 15:03:52 2024 +0000
 
     [BOT] post-merge updates
 
@@ -676,14 +676,16 @@ Date:   Fri Oct 13 09:33:03 2023 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit e75583299dee20c26e048b963aad03f009c7328a
-Merge: 68055e288 54410c2e2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 13 01:18:09 2024 +0000
+commit 3ac6ec36c06bf529379ea237664c41c828dac184
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jun 25 18:06:42 2024 +0000
 
-    Merge PR #1328 into 13.0
+    Update translation files
     
-    Signed-off-by nimarosa
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: hr-13.0/hr-13.0-hr_employee_document
+    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_employee_document/
 
 
 ## hr-attendance
@@ -1110,14 +1112,11 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 9d8297e35f3878d54e6fbc23ff01165bafaead1c
-Merge: 2aabe552c 08a0b11ce
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Tue Mar 26 14:26:49 2024 +0100
+commit 86fe256fc13e00d0fc4d4434c9540eddbae873bb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jun 24 18:24:03 2024 +0000
 
-    Merge pull request #2975 from Bilbonet/13.0-ou-script-l10n_es_ticketbai
-    
-    [13.0][OU-ADD]l10n_es_ticketbai-migration-script
+    [UPD] README.rst
 
 
 ## l10n-switzerland

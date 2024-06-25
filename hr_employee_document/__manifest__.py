@@ -5,7 +5,7 @@
 
 {
     "name": "HR Employee Document",
-    "version": "13.0.3.0.0",
+    "version": "13.0.4.0.0",
     "category": "Human Resources",
     "website": "https://github.com/OCA/hr",
     "author": "CorporateHub, Odoo Community Association (OCA)",
@@ -14,9 +14,5 @@
     "application": False,
     "summary": "Documents attached to the employee profile",
     "depends": ["hr"],
-    "data": [
-        "security/security.xml",
-        "views/hr_employee.xml",
-        "views/hr_employee_public.xml",
-    ],
+    "data": ["views/hr_employee.xml", "views/hr_employee_public.xml"],
 }
