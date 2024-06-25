@@ -76,6 +76,7 @@ python-stdnum
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 # generated from manifests external_dependencies
 factur-x
+pypdf
 PyPDF2
 PyYAML
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)

@@ -354,9 +354,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 902484993988032a207ce491943065a4d33bdf60
+commit ac90d4d1d2404f1492464b9fdf8e02820011864d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 20 18:08:34 2024 +0000
+Date:   Tue Jun 25 15:00:38 2024 +0000
 
     [BOT] post-merge updates
 
@@ -462,9 +462,9 @@ Date:   Wed May 1 18:09:27 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 0dd7bfeea6f5fc7945d9fa823111a4c2fcacad11
+commit 30604c8a18f640c64f8a53cea2125cf310cb3a91
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 6 08:37:04 2024 +0000
+Date:   Mon Jun 24 14:34:28 2024 +0000
 
     [BOT] post-merge updates
 
@@ -928,16 +928,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 4f6b9ba021bc76a87c255a38106dd2edf529442b
+commit d2ae95226a5df326cabb279239a32524f05ca18a
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 5 18:10:37 2024 +0000
+Date:   Mon Jun 24 10:59:50 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod303
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod303/
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_payment_order_confirming_aef
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_payment_order_confirming_aef/
 
 
 ## l10n-switzerland
@@ -1064,16 +1064,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit da888badd1333f4746d9510b7e4856446b5a5ae6
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jun 20 18:57:12 2024 +0000
+commit 61aac6d5efa6b495ee47393b702439f4ef54acbc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 24 11:49:41 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 86.1% (124 of 144 strings)
     
     Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
 
 
 ## stock-logistics-reporting
@@ -1170,9 +1170,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit c96f87d033c6d8700923b393a30e6466685d2c6a
+commit f6734fe2f9f5c72cc26aadadb47bebc54530242c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 20 16:32:08 2024 +0000
+Date:   Mon Jun 24 09:30:38 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1408,11 +1408,11 @@ Date:   Thu Jun 6 19:13:43 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 2697275ca00d8f893b3e2c0c4332e9ac87cbeccf
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 19:05:59 2024 +0000
+commit 14700b21ac3d50870731e45481b5a50d5f941bf3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jun 25 14:54:13 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## server-backend
@@ -1435,11 +1435,11 @@ Date:   Wed May 1 19:05:30 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 016e2345836485b8454c70210bb878991a9b4569
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 19:08:34 2024 +0000
+commit f7fac25aa8b58a3cc7ed3d5bb7e195e215639423
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jun 25 15:02:16 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## community-data-files
@@ -1612,9 +1612,9 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit a6196b89af73810b2eed38e8f9652b623e5b743d
+commit e603b5139912611255212501b52b4ba1f835cfda
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 18 15:19:42 2024 +0000
+Date:   Tue Jun 25 15:24:16 2024 +0000
 
     [BOT] post-merge updates
 
