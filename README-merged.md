@@ -452,7 +452,7 @@ addon | version | maintainers | summary
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 16.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_tree_currency](account_invoice_tree_currency/) | 16.0.1.0.0 |  | Show currencies in the invoice tree view
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.1.0.3 |  | Manage triple discount on invoice lines
-[account_mail_autosubscribe](account_mail_autosubscribe/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's invoices
+[account_mail_autosubscribe](account_mail_autosubscribe/) | 16.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's invoices
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | New invoice menu that combine invoices and refunds
 [account_move_auto_post_ref](account_move_auto_post_ref/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Propagate customer ref when auto-generating next recurring invoice
 [account_move_substate](account_move_substate/) | 16.0.1.0.1 |  | Account Move Sub State
@@ -1799,7 +1799,7 @@ addon | version | maintainers | summary
 [sale_numeric_step](sale_numeric_step/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Improve mobile/tablet sale process by adding numeric step widgets
 [sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 16.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
 [sale_order_archive](sale_order_archive/) | 16.0.1.0.0 |  | Archive Sale Orders
-[sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 16.0.1.1.0 |  | Auto assign delivery carrier on sale order confirmation
+[sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 16.0.1.2.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Auto assign delivery carrier on sale order confirmation
 [sale_order_currency_rate](sale_order_currency_rate/) | 16.0.1.0.0 |  | Currency Rate in Sale Order
 [sale_order_general_discount](sale_order_general_discount/) | 16.0.1.1.0 |  | General discount per sale order
 [sale_order_general_discount_triple](sale_order_general_discount_triple/) | 16.0.2.0.1 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | General discount per sale order with triple
@@ -1826,7 +1826,7 @@ addon | version | maintainers | summary
 [sale_order_product_recommendation_quick_add](sale_order_product_recommendation_quick_add/) | 16.0.1.0.0 |  | Add recommended products to sale order in a single click
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_report_without_price](sale_order_report_without_price/) | 16.0.1.0.0 |  | Allow you to generate quotation and order reports without price.
-[sale_order_revision](sale_order_revision/) | 16.0.1.0.1 |  | Keep track of revised quotations
+[sale_order_revision](sale_order_revision/) | 16.0.1.0.2 |  | Keep track of revised quotations
 [sale_order_type](sale_order_type/) | 16.0.1.1.0 |  | Sale Order Type
 [sale_order_warn_message](sale_order_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_packaging_default](sale_packaging_default/) | 16.0.2.2.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Simplify using products default packaging for sales
@@ -2191,7 +2191,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_sold_by_delivery_week](product_sold_by_delivery_week/) | 16.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a field that graphically hints the weekly product sales
 [sale_comment_template](sale_comment_template/) | 16.0.1.0.1 |  | Comments texts templates on Sale documents
-[sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 16.0.1.1.0 |  | Hide details for sections in sale orders and invoices for reports and customer portal
+[sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 16.0.1.1.1 |  | Hide details for sections in sale orders and invoices for reports and customer portal
 [sale_order_line_position](sale_order_line_position/) | 16.0.1.2.0 |  | Adds position number on sale order line.
 [sale_order_product_recommendation_product_sold_by_delivery_week](sale_order_product_recommendation_product_sold_by_delivery_week/) | 16.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds the weekly sales field to the recommendation wizard
 [sale_order_report_product_image](sale_order_report_product_image/) | 16.0.1.0.0 |  | Show product images on Sale documents
@@ -2252,7 +2252,7 @@ addon | version | maintainers | summary
 [sale_commission](sale_commission/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 16.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 16.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules with discount
-[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 16.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Commission Product Criteria Domain
+[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 16.0.1.0.1 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Commission Product Criteria Domain
 [sale_commission_salesman](sale_commission_salesman/) | 16.0.1.0.0 |  | Sales commissions from salesman
 
 [//]: # (end addons)
@@ -2725,7 +2725,7 @@ addon | version | maintainers | summary
 [product_margin_classification](product_margin_classification/) | 16.0.1.1.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product Margin Classification
 [product_replenishment_cost](product_replenishment_cost/) | 16.0.1.0.0 |  | Provides an overridable method on product which computethe Replenishment cost of a product
 [product_standard_margin](product_standard_margin/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product Margin and Margin Rate
-[sale_margin_delivered](sale_margin_delivered/) | 16.0.1.0.5 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale Margin Delivered
+[sale_margin_delivered](sale_margin_delivered/) | 16.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale Margin Delivered
 [sale_margin_delivered_dropshipping](sale_margin_delivered_dropshipping/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale Margin Delivered Dropshipping
 [sale_margin_delivered_security](sale_margin_delivered_security/) | 16.0.1.2.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Glue module between sale margin delivered and sale margin security modules
 [sale_margin_security](sale_margin_security/) | 16.0.3.1.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Sale Margin Security
@@ -2783,7 +2783,7 @@ addon | version | maintainers | summary
 [fleet_vehicle_inspection](fleet_vehicle_inspection/) | 16.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
 [fleet_vehicle_log_fuel](fleet_vehicle_log_fuel/) | 16.0.1.0.0 |  | Add Log Fuels for your vehicles.
 [fleet_vehicle_service_activity](fleet_vehicle_service_activity/) | 16.0.1.0.0 |  | Activity alerts for fleet services
-[fleet_vehicle_service_calendar](fleet_vehicle_service_calendar/) | 16.0.1.0.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add a smart button in services to schedule meetings.
+[fleet_vehicle_service_calendar](fleet_vehicle_service_calendar/) | 16.0.1.0.1 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add a smart button in services to schedule meetings.
 [fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 16.0.1.1.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add features of kanban to logs of vehicle services.
 [fleet_vehicle_service_services](fleet_vehicle_service_services/) | 16.0.1.0.0 |  | Add subservices in Services.
 [fleet_vehicle_stock](fleet_vehicle_stock/) | 16.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module is an add-on for the Fleet application in Odoo. It allows you to track your Fleet Vehicles in stock moves.
@@ -2928,7 +2928,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_timesheet](crm_timesheet/) | 16.0.1.0.0 |  | CRM Timesheet
-[hr_employee_cost_history](hr_employee_cost_history/) | 16.0.1.0.0 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Adds an history to employee's costs.
+[hr_employee_cost_history](hr_employee_cost_history/) | 16.0.1.0.1 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Adds an history to employee's costs.
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 16.0.1.0.1 |  | Timesheet - Begin/End Hours
 [hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Employee Analytic Tag
 [hr_timesheet_name_customer](hr_timesheet_name_customer/) | 16.0.1.0.0 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Add ‘Description Customer’ field for timesheets
@@ -4375,7 +4375,7 @@ addon | version | maintainers | summary
 [l10n_it_ateco](l10n_it_ateco/) | 16.0.1.1.1 |  | ITA - Codici Ateco
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.4 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
-[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.7 |  | Gestione dichiarazioni di intento
+[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.8 |  | Gestione dichiarazioni di intento
 [l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.4.4 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 16.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 16.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
@@ -5085,7 +5085,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 16.0.1.1.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 16.0.2.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 16.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.0.3 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.1.0 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.2 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
@@ -5248,7 +5248,7 @@ addon | version | maintainers | summary
 [l10n_th_base_location](l10n_th_base_location/) | 16.0.1.0.0 |  | Thai Localization - Base Location
 [l10n_th_fonts](l10n_th_fonts/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all Thai fonts
 [l10n_th_mis_report](l10n_th_mis_report/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
-[l10n_th_partner](l10n_th_partner/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Partner
+[l10n_th_partner](l10n_th_partner/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Partner
 [l10n_th_tier_department](l10n_th_tier_department/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level
 [l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level Demo
 
@@ -5422,6 +5422,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_us_account_routing](l10n_us_account_routing/) | 16.0.1.0.0 |  | Add the routing numbers to the banks
 [l10n_us_form_1099](l10n_us_form_1099/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage 1099 Types and Suppliers
 [l10n_us_gaap](l10n_us_gaap/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | United States Sample GAAP Chart of Accounts
 [l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | MIS Builder Templates for US Chart of Accounts
@@ -5570,6 +5571,7 @@ addon | version | maintainers | summary
 [delivery_carrier_max_weight_constraint](delivery_carrier_max_weight_constraint/) | 16.0.1.0.1 |  | Constrain package maximum weight
 [delivery_carrier_package_measure_required](delivery_carrier_package_measure_required/) | 16.0.1.0.0 |  | Allow the configuration of which package measurements are required on a delivery carrier basis.
 [delivery_carrier_partner](delivery_carrier_partner/) | 16.0.1.0.0 |  | Add a partner in the delivery carrier
+[delivery_correos_express](delivery_correos_express/) | 16.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 16.0.1.1.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_deliverea](delivery_deliverea/) | 16.0.1.0.1 |  | Delivery Carrier implementation for Deliverea using their API
 [delivery_driver](delivery_driver/) | 16.0.1.3.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow choose driver in delivery methods
@@ -5710,7 +5712,7 @@ addon | version | maintainers | summary
 [stock_lot_scrap](stock_lot_scrap/) | 16.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
 [stock_move_free_reservation_reassign](stock_move_free_reservation_reassign/) | 16.0.1.0.1 |  | Try to reassign a move when its reservation is removed due to the related quant becoming unavailable
 [stock_move_line_auto_fill](stock_move_line_auto_fill/) | 16.0.1.1.0 |  | Stock Move Line auto fill
-[stock_move_line_change_lot](stock_move_line_change_lot/) | 16.0.1.0.0 |  | Stock Move Line Change Lot
+[stock_move_line_change_lot](stock_move_line_change_lot/) | 16.0.1.0.1 |  | Stock Move Line Change Lot
 [stock_move_line_expiration_date_required](stock_move_line_expiration_date_required/) | 16.0.1.0.2 |  | Stock Move Line Expiration Date Required
 [stock_move_line_reserved_quant](stock_move_line_reserved_quant/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module allows to get the link from a stock move line to the reserved quant
 [stock_move_line_serial_unique](stock_move_line_serial_unique/) | 16.0.1.0.0 |  | Stock Move Line Serial Unique
@@ -5721,7 +5723,7 @@ addon | version | maintainers | summary
 [stock_override_procurement](stock_override_procurement/) | 16.0.1.0.0 |  | This technical module allow to override procurement values
 [stock_owner_restriction](stock_owner_restriction/) | 16.0.1.1.0 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 16.0.1.0.1 |  | Define preferred delivery time windows for partners
-[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 16.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
+[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 16.0.3.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 16.0.1.0.0 |  | Reopen cancelled pickings
 [stock_picking_batch_extended](stock_picking_batch_extended/) | 16.0.1.1.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![i-vyshnevska](https://github.com/i-vyshnevska.png?size=30px)](https://github.com/i-vyshnevska) | Allows manage a lot of pickings in batch
 [stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 16.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
@@ -6799,6 +6801,7 @@ addon | version | maintainers | summary
 [product_variant_specific_description](product_variant_specific_description/) | 16.0.1.0.1 |  | Product Variant Specific Description
 [purchase_variant_configurator](purchase_variant_configurator/) | 16.0.1.0.0 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
+[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.0 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -7823,7 +7826,7 @@ addon | version | maintainers | summary
 [data_encryption](data_encryption/) | 16.0.1.0.1 |  | Store accounts and credentials encrypted by environment
 [mail_environment](mail_environment/) | 16.0.1.0.1 |  | Configure mail servers with server_environment_files
 [pos_environment](pos_environment/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Custom messages on the bill depending on the environment
-[server_environment](server_environment/) | 16.0.1.0.3 |  | move some configurations out of the database
+[server_environment](server_environment/) | 16.0.1.0.4 |  | move some configurations out of the database
 [server_environment_data_encryption](server_environment_data_encryption/) | 16.0.1.0.0 |  | Server Environment Data Encryption
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 16.0.1.1.0 |  | Override System Parameters from server environment file
 
@@ -7996,6 +7999,7 @@ addon | version | maintainers | summary
 [base_substate](base_substate/) | 16.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.0 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 16.0.1.6.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Add Tier Review Boards
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
 [base_tier_validation_formula](base_tier_validation_formula/) | 16.0.1.0.2 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 16.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
