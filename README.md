@@ -83,16 +83,16 @@ Date:   Thu May 2 09:02:21 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 0186fa7af0dbca368d22e8b12dd2e910feccefe5
-Author: jakobkrabbe <jakob@syscare.se>
-Date:   Wed Jun 5 08:36:53 2024 +0000
+commit eb0b163fc1a098b06684dfacfa50b116504cc5bd
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Jun 25 15:15:42 2024 +0000
 
-    Translated using Weblate (Swedish)
+    Translated using Weblate (Italian)
     
     Currently translated at 100.0% (12 of 12 strings)
     
     Translation: account-invoicing-17.0/account-invoicing-17.0-account_invoice_refund_link
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-17-0/account-invoicing-17-0-account_invoice_refund_link/sv/
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-17-0/account-invoicing-17-0-account_invoice_refund_link/it/
 
 
 ## account-fiscal-rule
@@ -332,16 +332,16 @@ Date:   Wed May 1 16:21:12 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f776b126cbc2b85d37babb7dd3b7f13645e2caa6
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jun 21 15:14:58 2024 +0000
+commit 0526e3db35ce8cd8f66c1432813372132a713c39
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 24 11:18:26 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_discount_display_amount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_discount_display_amount/
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_product_multi_add
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_product_multi_add/it/
 
 
 ## crm
@@ -355,11 +355,16 @@ Date:   Sat Jun 8 10:26:03 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit d8d3129d4c82a0cdc5f2eff671a9fce1b0e467af
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 20 14:33:36 2024 +0000
+commit b90146e21c19f6a6b004da3b101dbb7d98e24e60
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 24 11:22:29 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_address_split
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_address_split/it/
 
 
 ## sale-financial
@@ -456,11 +461,11 @@ Date:   Wed May 1 16:26:13 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit fdedf389e844610834e32b3a1f1e3257e43c7834
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 20 11:46:46 2024 +0000
+commit e9fb65d12e79d3a4e832065d6dff49838f2bb993
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Jun 24 12:41:03 2024 +0200
 
-    [BOT] post-merge updates
+    [IMP] Update copier template
 
 
 ## edi
@@ -528,9 +533,9 @@ Date:   Wed May 15 10:42:29 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 5e65f358601fba884b93c1405ff05d6cd54a8e6a
+commit 100da442e819f6f697984901c43ecf0c464a9e5f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 28 08:24:24 2024 +0000
+Date:   Tue Jun 25 15:11:15 2024 +0000
 
     [BOT] post-merge updates
 
@@ -889,9 +894,9 @@ Date:   Wed May 1 16:49:58 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit fe95d553d7ae2a674c90c40516112291d468cfc1
+commit d2f31c0c217d0d7fd6ca55d911423385f433d184
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Jun 20 19:41:54 2024 +0000
+Date:   Mon Jun 24 08:59:30 2024 +0000
 
     Update translation files
     
@@ -1153,9 +1158,9 @@ Date:   Wed May 1 17:04:04 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 5b6966914ab2863a95902d1bde393ec7bc016cb4
+commit 25505d92b285c6a40bf4c71236cf566fc9c69af1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 19 15:14:46 2024 +0000
+Date:   Tue Jun 25 14:59:16 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1389,16 +1394,11 @@ Date:   Wed May 1 17:18:57 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 40c12a6cd0371949aa323856e92314cafce7bfba
-Author: jakobkrabbe <jakob@syscare.se>
-Date:   Wed Jun 12 09:29:32 2024 +0000
+commit 4821f4f48ef79095dbdb2041b64fed6ac8737047
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jun 25 14:53:35 2024 +0000
 
-    Translated using Weblate (Swedish)
-    
-    Currently translated at 100.0% (106 of 106 strings)
-    
-    Translation: server-env-17.0/server-env-17.0-server_environment
-    Translate-URL: https://translation.odoo-community.org/projects/server-env-17-0/server-env-17-0-server_environment/sv/
+    [BOT] post-merge updates
 
 
 ## server-backend
@@ -1426,16 +1426,11 @@ Date:   Wed May 1 17:19:56 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 89c26da9778b38aeeebb6c16f064753783497a8f
-Author: jakobkrabbe <jakob@syscare.se>
-Date:   Wed Jun 12 10:00:59 2024 +0000
+commit c4d602e3adfc40d06eeae8b6fe41618e166e4f4f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jun 24 09:56:06 2024 +0000
 
-    Translated using Weblate (Swedish)
-    
-    Currently translated at 100.0% (71 of 71 strings)
-    
-    Translation: server-ux-17.0/server-ux-17.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-date_range/sv/
+    [BOT] post-merge updates
 
 
 ## community-data-files
