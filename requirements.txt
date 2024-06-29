@@ -319,7 +319,9 @@ sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # generated from manifests external_dependencies
+pdf2image
 pyrfc6266
+pyzbar
 responses
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
