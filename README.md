@@ -138,16 +138,11 @@ Date:   Mon Oct 9 20:12:48 2023 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit b0bee934bf680655d7f274d050b943c49dc6b94d
-Author: Weblate <noreply@weblate.org>
-Date:   Mon May 6 07:06:02 2024 +0000
+commit a382b0482605355763594995da1109745356cdc9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 28 11:05:10 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: operating-unit-13.0/operating-unit-13.0-mis_builder_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-13-0/operating-unit-13-0-mis_builder_operating_unit/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -1383,16 +1378,16 @@ Date:   Fri Jun 14 14:57:17 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit a3688780dad9488857f4764a1c3dd48c812112d1
-Author: Sergio Corato <sergiocorato@gmail.com>
-Date:   Thu Jun 13 16:30:19 2024 +0000
+commit 76d33c77ac3daf612cd623e88c6bd2a80e8b3c8b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jun 26 10:11:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (18 of 18 strings)
     
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_open_qty
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_open_qty/it/
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
 
 
 ## purchase-reporting
@@ -1681,16 +1676,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c2b2078d434feea8ba664478e14a0a3da1ff999e
+commit 0443273425f4a6c739dec084a778a74fbf7a53cd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 6 12:58:18 2024 +0000
+Date:   Wed Jun 26 10:12:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (37 of 37 strings)
+    Currently translated at 100.0% (35 of 35 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-mass_editing
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_editing/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
 
 
 ## community-data-files
