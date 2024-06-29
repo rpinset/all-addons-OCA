@@ -102,13 +102,13 @@ Date:   Tue May 14 10:00:36 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 7ed80ad562534da67ae412e72bd6a02f3c9d24eb
+commit c19d639845037937b32b0462a5c7bbb59a367915
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jun 25 15:39:00 2024 +0000
+Date:   Wed Jun 26 07:53:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 84.6% (11 of 13 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
     Translation: account-invoicing-14.0/account-invoicing-14.0-sale_line_refund_to_invoice_qty
     Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_line_refund_to_invoice_qty/it/
@@ -125,9 +125,9 @@ Date:   Thu Jun 13 10:48:24 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit b7fc53da77bfb55ba6f5e77a85dda66320777ed3
+commit 0acb0352e323109349f4912760c46234ecb1a8f6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 27 15:08:05 2024 +0000
+Date:   Fri Jun 28 11:06:26 2024 +0000
 
     [BOT] post-merge updates
 
@@ -455,9 +455,9 @@ Date:   Fri May 17 08:15:21 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 113e6639df84af7f950df136f2fda70ed3d7e570
+commit 9c6a00fa441af2689d99af179d34c48fb1ec3724
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 14 10:23:51 2024 +0000
+Date:   Wed Jun 26 05:31:20 2024 +0000
 
     [BOT] post-merge updates
 
@@ -666,11 +666,16 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit f275a450a687e99e643ec06721f7e5e3ad520ee6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 25 15:03:09 2024 +0000
+commit 418405fb5c4548cf5ac10e0e0f23d57aac6800c5
+Author: ChristianRBinhex <c.ramos@binhex.cloud>
+Date:   Fri Jun 28 12:27:15 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 93.7% (45 of 48 strings)
+    
+    Translation: multi-company-14.0/multi-company-14.0-purchase_sale_inter_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-purchase_sale_inter_company/es/
 
 
 ## l10n-argentina
@@ -824,11 +829,11 @@ Date:   Sat May 18 16:45:43 2024 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit a369427c3eb561eb4d8d3e17a8933ab8559e3f11
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:25:46 2024 +0000
+commit b5676373d7e7243cfa094c13b74f74d4c345f6e1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 28 14:13:26 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-greece
@@ -878,11 +883,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit afb49d5a66e284bb51f0dd10a5d94a7dedd56e4e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 25 14:58:30 2024 +0000
+commit b57b94a9698003386b862900de0afdd7d05d9335
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 27 14:27:12 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa/
 
 
 ## l10n-japan
@@ -968,16 +978,11 @@ Date:   Wed May 1 18:31:50 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit c6af7fbd887a0f94f4dd77ae5e11a6cddc014552
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 28 08:48:04 2024 +0000
+commit 3db9038df9b92b4c25b516b2b6b2013135a1e36c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 26 05:27:22 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-14.0/l10n-romania-14.0-l10n_ro_account_edi_ubl
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-14-0/l10n-romania-14-0-l10n_ro_account_edi_ubl/
+    [ADD] setup.py
 
 
 ## l10n-russia
@@ -1228,16 +1233,11 @@ Date:   Fri Jun 14 14:57:37 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 4fd9abc0bed30d1148ae377064b6a7dc77e8ece2
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jun 24 08:00:07 2024 +0000
+commit 4814c75217cf54c98327a22cd7d1f94a6351766a
+Author: Darío Lodeiros <dario@commitsun.com>
+Date:   Wed Jun 26 11:43:29 2024 +0200
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: pms-14.0/pms-14.0-pms
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/
+    [FIX]pms: payment link without partner
 
 
 ## purchase-workflow
@@ -1483,11 +1483,16 @@ Date:   Wed Jun 12 14:00:01 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 338be0253420f5471dc5d51dade1a60e6d442527
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 25 14:54:02 2024 +0000
+commit 9db53ad92a87f23666377465879f472ad4b34df0
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jun 28 06:27:59 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: server-env-14.0/server-env-14.0-auth_saml_environment
+    Translate-URL: https://translation.odoo-community.org/projects/server-env-14-0/server-env-14-0-auth_saml_environment/
 
 
 ## server-backend
@@ -1515,16 +1520,16 @@ Date:   Wed May 1 19:05:18 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 6cbd7150fcde9f32e55df13364b8046eabd1a43a
+commit 676d679485b783092aa640f4e8196af3f67ee99d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 23 06:55:46 2024 +0000
+Date:   Wed Jun 26 10:12:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (122 of 122 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation/it/
+    Translation: server-ux-14.0/server-ux-14.0-base_tier_validation_server_action
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_tier_validation_server_action/it/
 
 
 ## community-data-files
