@@ -3,7 +3,7 @@
 
 {
     "name": "Thai Localization - Base Bank Payment Export",
-    "version": "15.0.2.0.2",
+    "version": "15.0.3.0.0",
     "summary": "Base export payment text file to bank",
     "author": "Ecosoft, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-thailand",
@@ -12,6 +12,7 @@
     "depends": ["account", "partner_bank_code", "report_xlsx_helper"],
     "data": [
         "security/ir.model.access.csv",
+        "security/bank_payment_export_security.xml",
         "data/bank_payment_export_sequence.xml",
         "data/report_action.xml",
         "data/server_action.xml",

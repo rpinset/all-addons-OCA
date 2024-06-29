@@ -588,7 +588,7 @@ addon | version | maintainers | summary
 [account_asset_operating_unit](account_asset_operating_unit/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | This module adds operating unit information to assets.
 [account_asset_transfer_operating_unit](account_asset_transfer_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add operating unit to asset transfer
 [account_financial_report_operating_unit](account_financial_report_operating_unit/) | 15.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 15.0.1.2.2 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 15.0.1.2.3 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Accounting
 [analytic_operating_unit](analytic_operating_unit/) | 15.0.1.0.1 |  | Analytic Operating Unit
 [analytic_operating_unit_access_all](analytic_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Analytics
@@ -952,7 +952,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 15.0.2.6.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 15.0.2.7.0 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
@@ -1881,6 +1881,7 @@ addon | version | maintainers | summary
 [sale_product_set_layout](sale_product_set_layout/) | 15.0.1.0.1 |  | This module allows to add sections with product sets
 [sale_purchase_procurement_group_by_line](sale_purchase_procurement_group_by_line/) | 15.0.1.0.0 |  | Glue module between 'MTO Sale <-> Purchase' and 'Sale Procurement Group by Line'
 [sale_quotation_number](sale_quotation_number/) | 15.0.2.1.0 |  | Different sequence for sale quotations
+[sale_readonly_security](sale_readonly_security/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Readonly Security
 [sale_rental](sale_rental/) | 15.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manage Rental of Products
 [sale_resource_booking](sale_resource_booking/) | 15.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Link resource bookings with sales
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 15.0.1.0.0 |  | Add shipping amounts on sale order
@@ -5262,7 +5263,7 @@ addon | version | maintainers | summary
 [l10n_th_account_tax_report](l10n_th_account_tax_report/) | 15.0.1.4.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 15.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
-[l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 15.0.2.0.2 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Base export payment text file to bank
+[l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 15.0.3.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Base export payment text file to bank
 [l10n_th_bank_payment_export_ktb](l10n_th_bank_payment_export_ktb/) | 15.0.2.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Bank Payment Export File KTB
 [l10n_th_base_location](l10n_th_base_location/) | 15.0.1.0.1 |  | Thai Localization - Base Location
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
@@ -5602,7 +5603,7 @@ addon | version | maintainers | summary
 [delivery_state](delivery_state/) | 15.0.1.1.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_translatable](delivery_translatable/) | 15.0.1.0.0 |  | name and website_description field of delivery carrier setup translatable.
 [partner_delivery_schedule](partner_delivery_schedule/) | 15.0.1.0.2 |  | Set on partners a schedule for delivery goods
-[partner_delivery_zone](partner_delivery_zone/) | 15.0.1.1.1 |  | This module allows to create partner delivery zones for physical products
+[partner_delivery_zone](partner_delivery_zone/) | 15.0.1.2.0 |  | This module allows to create partner delivery zones for physical products
 [stock_picking_delivery_link](stock_picking_delivery_link/) | 15.0.1.0.1 |  | Adds link to the delivery on all intermediate operations.
 [stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 15.0.1.0.0 |  | Show delivery cost in delivery slip and picking operations reports
 
@@ -5882,12 +5883,12 @@ addon | version | maintainers | summary
 [stock_available_mrp](stock_available_mrp/) | 15.0.1.0.3 |  | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 15.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 15.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_cycle_count](stock_cycle_count/) | 15.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
+[stock_cycle_count](stock_cycle_count/) | 15.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
 [stock_demand_estimate](stock_demand_estimate/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 15.0.2.0.3 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 15.0.2.3.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.0.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
@@ -6026,7 +6027,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 15.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 15.0.1.3.0 | [![chiendandalu](https://github.com/chiendandalu.png?size=30px)](https://github.com/chiendandalu) | Return Merchandise Authorization (RMA)
+[rma](rma/) | 15.0.1.3.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_delivery](rma_delivery/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow to choose a default delivery carrier for returns
 [rma_sale](rma_sale/) | 15.0.1.3.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 [rma_sale_mrp](rma_sale_mrp/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow doing RMAs from MRP kits
@@ -7768,10 +7769,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [auth_saml_environment](auth_saml_environment/) | 15.0.1.0.0 |  | Allows system administrator to authenticate with any account
-[mail_environment](mail_environment/) | 15.0.1.1.0 |  | Configure mail servers with server_environment_files
+[mail_environment](mail_environment/) | 15.0.1.1.1 |  | Configure mail servers with server_environment_files
 [mail_environment_google_gmail](mail_environment_google_gmail/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Configure Gmail mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 15.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 15.0.1.1.5 |  | move some configurations out of the database
+[server_environment](server_environment/) | 15.0.1.1.6 |  | move some configurations out of the database
 [server_environment_files_sample](server_environment_files_sample/) | 15.0.1.0.0 |  | sample config file for server_environment
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 15.0.1.1.0 |  | Override System Parameters from server environment file
 
