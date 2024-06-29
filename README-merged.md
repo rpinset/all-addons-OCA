@@ -266,6 +266,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 17.0.1.2.1 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
+[partner_statement](partner_statement/) | 17.0.1.0.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -1572,6 +1573,8 @@ addon | version | maintainers | summary
 [partner_sale_pivot](partner_sale_pivot/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Sales analysis from customer form view
 [product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
+[sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.0.0 |  | Sale Automatic Workflow
+[sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
@@ -1589,7 +1592,7 @@ addon | version | maintainers | summary
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 17.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
-[sale_order_type](sale_order_type/) | 17.0.1.0.0 |  | Sale Order Type
+[sale_order_type](sale_order_type/) | 17.0.1.0.1 |  | Sale Order Type
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_multi_add](sale_product_multi_add/) | 17.0.1.0.0 |  | Sale Product Multi Add
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
@@ -2474,6 +2477,7 @@ addon | version | maintainers | summary
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 17.0.1.0.0 |  | Timesheet - Begin/End Hours
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 17.0.1.0.1 |  | Set task on timesheet as a mandatory field
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 17.0.1.1.0 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_rounded](sale_timesheet_rounded/) | 17.0.1.0.0 |  | Round timesheet entries amount based on project settings.
 
 [//]: # (end addons)
 
@@ -4232,7 +4236,7 @@ addon | version | maintainers | summary
 [l10n_ro_city](l10n_ro_city/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
@@ -4433,7 +4437,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_ch_qr_no_amount](l10n_ch_qr_no_amount/) | 17.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allow to print QR bill without amount
 
 [//]: # (end addons)
 
@@ -5110,7 +5118,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma](rma/) | 17.0.1.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
 
@@ -5152,7 +5160,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[ddmrp](ddmrp/) | 17.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
 
 [//]: # (end addons)
 
@@ -5545,6 +5557,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
+[product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to create priceslists based on supplier info
 [product_sequence](product_sequence/) | 17.0.1.0.0 |  | Product Sequence
 [product_set](product_set/) | 17.0.1.0.1 |  | Product set
 [product_state](product_state/) | 17.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
@@ -6397,7 +6410,7 @@ addon | version | maintainers | summary
 [iap_alternative_provider](iap_alternative_provider/) | 17.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
 [jsonifier](jsonifier/) | 17.0.1.0.0 |  | JSON-ify data for all models
 [module_auto_update](module_auto_update/) | 17.0.1.0.0 |  | Automatically update Odoo modules
-[module_change_auto_install](module_change_auto_install/) | 17.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
+[module_change_auto_install](module_change_auto_install/) | 17.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [onchange_helper](onchange_helper/) | 17.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
 [scheduler_error_mailer](scheduler_error_mailer/) | 17.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 17.0.1.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
@@ -6508,7 +6521,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_environment](mail_environment/) | 17.0.1.0.0 |  | Configure mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 17.0.1.0.1 |  | move some configurations out of the database
+[server_environment](server_environment/) | 17.0.1.0.2 |  | move some configurations out of the database
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
 
 [//]: # (end addons)

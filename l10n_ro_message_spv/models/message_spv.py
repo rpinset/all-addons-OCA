@@ -9,7 +9,7 @@ from base64 import b64encode
 import requests
 from lxml import etree
 
-from odoo import _, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
@@ -63,6 +63,7 @@ class MessageSPV(models.Model):
     attachment_anaf_pdf_id = fields.Many2one("ir.attachment", string="ANAF PDF")
     attachment_embedded_pdf_id = fields.Many2one("ir.attachment", string="Embedded PDF")
     amount = fields.Monetary()
+    invoice_amount = fields.Monetary()
 
     company_id = fields.Many2one(
         "res.company", "Company", default=lambda self: self.env.company
@@ -70,6 +71,18 @@ class MessageSPV(models.Model):
     currency_id = fields.Many2one(
         "res.currency", default=lambda self: self.env.company.currency_id
     )
+
+    @api.onchange("invoice_id")
+    def _onchange_invoice_id(self):
+        for message in self:
+            if message.invoice_id:
+                if message.invoice_id.move_type in ("in_refund", "out_refund"):
+                    message.invoice_amount = -1 * message.invoice_id.amount_total
+                else:
+                    message.invoice_amount = message.invoice_id.amount_total
+                message.partner_id = message.invoice_id.commercial_partner_id
+                if message.invoice_id.state == "posted":
+                    message.state = "done"
 
     def download_from_spv(self):
         """Rutina de descarcare a fisierelor de la SPV"""
@@ -243,24 +256,43 @@ class MessageSPV(models.Model):
                 or i.name == m.ref
             )
             if not invoice:
+                if message.message_type == "in_invoice":
+                    move_type = ("in_invoice", "in_refund")
+                else:
+                    move_type = ("out_invoice", "out_refund")
+
                 domain = [
                     ("partner_id", "=", message.partner_id.id),
                     ("ref", "=", message.ref),
-                    ("move_type", "=", message.message_type),
+                    ("move_type", "in", move_type),
                 ]
                 invoice = self.env["account.move"].search(domain, limit=1)
 
             if invoice:
-                state = "invoice"
-                if invoice.edi_state == "sent":
-                    state = "done"
-                message.write(
-                    {
-                        "invoice_id": invoice.id,
-                        "partner_id": invoice.commercial_partner_id.id,
-                        "state": state,
-                    }
-                )
+                message.write({"invoice_id": invoice[0].id})
+
+        self.get_data_from_invoice()
+
+    def get_data_from_invoice(self):
+        for message in self:
+            if not message.invoice_id:
+                continue
+            state = "invoice"
+            if message.invoice_id.state == "posted":
+                state = "done"
+
+            if message.invoice_id.move_type in ("in_refund", "out_refund"):
+                invoice_amount = -1 * message.invoice_id.amount_total
+            else:
+                invoice_amount = message.invoice_id.amount_total
+
+            message.write(
+                {
+                    "partner_id": message.invoice_id.commercial_partner_id.id,
+                    "invoice_amount": invoice_amount,
+                    "state": state,
+                }
+            )
         for message in self:
             if message.invoice_id:
                 attachments = self.env["ir.attachment"]
@@ -287,10 +319,11 @@ class MessageSPV(models.Model):
                     "l10n_ro_edi_transaction": message.request_id,
                 }
             )
-            zip_content = message.attachment_id.raw
-            attachment = new_invoice.l10n_ro_save_anaf_xml_file(zip_content)
+            new_invoice = new_invoice.with_context(
+                disable_onchange_name_predictive=True
+            )
             try:
-                new_invoice.l10n_ro_process_anaf_xml_file(attachment)
+                new_invoice._extend_with_attachments(message.attachment_xml_id)
             except Exception as e:
                 message.write({"state": "error", "error": str(e)})
                 continue
@@ -347,16 +380,7 @@ class MessageSPV(models.Model):
                 timeout=25,
             )
             if "The requested URL was rejected" in res.text:
-                xml = xml.replace(
-                    b'xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 ../../UBL-2.1(1)/xsd/maindoc/UBLInvoice-2.1.xsd"',  # noqa
-                    "",
-                )
-                res = requests.post(
-                    f"https://webservicesp.anaf.ro/prod/FCTEL/rest/transformare/{val1}/{val2}",
-                    data=xml,
-                    headers=headers,
-                    timeout=25,
-                )
+                raise UserError(_("ANAF service unable to generate PDF from this XML."))
 
             if res.status_code == 200:
                 pdf = b64encode(res.content)
@@ -414,3 +438,26 @@ class MessageSPV(models.Model):
                     if message.attachment_embedded_pdf_id:
                         message.attachment_embedded_pdf_id.unlink()
                     message.write({"attachment_embedded_pdf_id": attachment.id})
+
+    def action_download_attachment(self):
+        self.ensure_one()
+        return self._action_download(self.attachment_id.id)
+
+    def action_download_xml(self):
+        self.ensure_one()
+        return self._action_download(self.attachment_xml_id.id)
+
+    def action_download_anaf_pdf(self):
+        self.ensure_one()
+        return self._action_download(self.attachment_anaf_pdf_id.id)
+
+    def action_download_embedded_pdf(self):
+        self.ensure_one()
+        return self._action_download(self.attachment_embedded_pdf_id.id)
+
+    def _action_download(self, attachment_field_id):
+        return {
+            "type": "ir.actions.act_url",
+            "url": f"/web/content/{attachment_field_id}?download=true",
+            "target": "self",
+        }

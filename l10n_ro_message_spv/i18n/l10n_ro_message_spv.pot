@@ -26,6 +26,13 @@ msgid "ANAF configuration is missing."
 msgstr ""
 
 #. module: l10n_ro_message_spv
+#. odoo-python
+#: code:addons/l10n_ro_message_spv/models/message_spv.py:0
+#, python-format
+msgid "ANAF service unable to generate PDF from this XML."
+msgstr ""
+
+#. module: l10n_ro_message_spv
 #: model:ir.model,name:l10n_ro_message_spv.model_l10n_ro_account_anaf_sync_scope
 msgid "Account ANAF Sync Scope"
 msgstr ""
@@ -198,6 +205,11 @@ msgid "Invoice"
 msgstr ""
 
 #. module: l10n_ro_message_spv
+#: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__invoice_amount
+msgid "Invoice Amount"
+msgstr ""
+
+#. module: l10n_ro_message_spv
 #: model:ir.model,name:l10n_ro_message_spv.model_account_move
 msgid "Journal Entry"
 msgstr ""
@@ -252,6 +264,7 @@ msgstr ""
 
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__partner_id
+#: model_terms:ir.ui.view,arch_db:l10n_ro_message_spv.view_l10n_ro_message_spv_search
 msgid "Partner"
 msgstr ""
 
@@ -284,12 +297,18 @@ msgid "Romania e-Invoicing: Download SPV Message"
 msgstr ""
 
 #. module: l10n_ro_message_spv
+#: model:ir.ui.menu,name:l10n_ro_message_spv.menu_l10n_ro_spv
+msgid "SPV"
+msgstr ""
+
+#. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_account_anaf_sync_scope__scope
 msgid "Scope"
 msgstr ""
 
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__state
+#: model_terms:ir.ui.view,arch_db:l10n_ro_message_spv.view_l10n_ro_message_spv_search
 msgid "State"
 msgstr ""
 
@@ -309,6 +328,7 @@ msgstr ""
 
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__message_type
+#: model_terms:ir.ui.view,arch_db:l10n_ro_message_spv.view_l10n_ro_message_spv_search
 msgid "Type"
 msgstr ""
 

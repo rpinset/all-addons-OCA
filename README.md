@@ -60,16 +60,11 @@ Date:   Thu Jun 6 12:52:09 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 38712748453342d2645b7b74d2189acb5c0617d6
-Author: Pedro Castro Silva <pedrocs@exo.pt>
-Date:   Sun Jun 16 16:07:16 2024 +0000
+commit c47222ff580086246a6d22d958b0015dc03f0b67
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 26 09:24:06 2024 +0000
 
-    Translated using Weblate (Portuguese)
-    
-    Currently translated at 100.0% (267 of 267 strings)
-    
-    Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-account_financial_report/pt/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -332,16 +327,11 @@ Date:   Wed May 1 16:21:12 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 0526e3db35ce8cd8f66c1432813372132a713c39
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 24 11:18:26 2024 +0000
+commit 834b8366f540300375a9ee0824ad55a85e32cc9d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 28 09:29:04 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_product_multi_add
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_product_multi_add/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -524,9 +514,9 @@ Date:   Wed May 1 16:30:21 2024 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit d33e4b2ceeaa1eeae244b141ed7bedd7ea07331f
+commit 71385e1373030486ed05088d500a32a8fb57b31a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 15 10:42:29 2024 +0000
+Date:   Wed Jun 26 07:09:53 2024 +0000
 
     [BOT] post-merge updates
 
@@ -894,9 +884,9 @@ Date:   Wed May 1 16:49:58 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit d2f31c0c217d0d7fd6ca55d911423385f433d184
+commit 33f9df66552426b1076886da6eda5d7129aecf0c
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Jun 24 08:59:30 2024 +0000
+Date:   Fri Jun 28 05:31:40 2024 +0000
 
     Update translation files
     
@@ -926,25 +916,20 @@ Date:   Wed May 1 16:52:16 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 7ca1be814360fcdd37132254eb1cb9b1ac2b9f67
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 19 21:42:18 2024 +0000
+commit 4696814042b358ea4f58f34ac778db705bfa1944
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 27 07:07:11 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat_mod303_vat_prorate
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat_mod303_vat_prorate/
+    [UPD] README.rst
 
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 2faba6ea5087a1f6d5a84077d89b67392ddaf023
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 16:54:13 2024 +0000
+commit c12a1be14a352571a5429766280262891ad52be1
+Author: oca-ci <oca-ci@odoo-community.org>
+Date:   Fri Jun 28 09:41:04 2024 +0000
 
-    [IMP] update dotfiles
+    [UPD] Update l10n_ch_qr_no_amount.pot
 
 
 ## l10n-taiwan
@@ -1085,25 +1070,20 @@ Date:   Wed May 1 17:26:01 2024 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit a0a459d59defa0c778f303ea90353cd5c99b314c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 5 15:13:55 2024 +0000
+commit a7ec34ad6e514350ea38ff49779a5f2492012c4c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 28 10:33:55 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: rma-17.0/rma-17.0-product_warranty
-    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-product_warranty/
+    [BOT] post-merge updates
 
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 5e780db6cc451adbf9ec9a1753a14140fca1fac8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 16:24:43 2024 +0000
+commit 4413673861053b450e2af1f409313f3c0d766e6d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 27 09:29:15 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1176,16 +1156,16 @@ Date:   Wed May 1 17:08:45 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 606d3bc2a743a9c8a55f5d018575b87a0a269ef2
-Author: jakobkrabbe <jakob@syscare.se>
-Date:   Tue Jun 11 11:31:35 2024 +0000
+commit 2dfbe91077d37467afb23e118e94358e27d1faeb
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jun 26 16:34:58 2024 +0000
 
-    Translated using Weblate (Swedish)
+    Update translation files
     
-    Currently translated at 100.0% (33 of 33 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: product-attribute-17.0/product-attribute-17.0-product_set
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_set/sv/
+    Translation: product-attribute-17.0/product-attribute-17.0-product_supplierinfo_for_customer
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_supplierinfo_for_customer/
 
 
 ## product-kitting
@@ -1371,16 +1351,11 @@ Date:   Wed May 1 17:38:46 2024 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 575b4afaf7629ba57390ba5bd422ecd48f43c8eb
-Author: xtanuiha <feihu.zhang@live.com>
-Date:   Sun Jun 16 15:09:23 2024 +0000
+commit 27458e8d4a8414241b7623f177c65ac0d0bd05e2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 28 12:28:15 2024 +0000
 
-    Translated using Weblate (Chinese (Simplified) (zh_CN))
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: server-tools-17.0/server-tools-17.0-base_partition
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-base_partition/zh_CN/
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1394,9 +1369,9 @@ Date:   Wed May 1 17:18:57 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 4821f4f48ef79095dbdb2041b64fed6ac8737047
+commit 9706de49878a535eef31332a76236e8477a78684
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 25 14:53:35 2024 +0000
+Date:   Fri Jun 28 06:23:53 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1426,11 +1401,16 @@ Date:   Wed May 1 17:19:56 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c4d602e3adfc40d06eeae8b6fe41618e166e4f4f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 24 09:56:06 2024 +0000
+commit db9559dd70c8d9b872bef5a7c6595eee43664c12
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jun 26 10:12:21 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (125 of 125 strings)
+    
+    Translation: server-ux-17.0/server-ux-17.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-base_tier_validation/it/
 
 
 ## community-data-files
