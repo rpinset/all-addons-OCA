@@ -89,16 +89,16 @@ Date:   Sun Jun 23 21:21:50 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 8b26717dfbf5144ceaea35d370a21bd905361da4
+commit 288cd24a8fe1fdbbe9b4bb0a696ce92c6a4f9342
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 15 16:59:17 2024 +0000
+Date:   Mon Jul 1 09:01:55 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 91.1% (72 of 79 strings)
+    Currently translated at 84.9% (283 of 333 strings)
     
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-partner_statement/it/
+    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
