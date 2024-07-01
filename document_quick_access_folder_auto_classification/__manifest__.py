@@ -5,11 +5,11 @@
     "name": "Document Quick Access Folder Auto Classification",
     "summary": """
         Auto classification of Documents after reading a QR""",
-    "version": "14.0.2.1.2",
+    "version": "14.0.2.1.3",
     "license": "AGPL-3",
     "author": "Creu Blanca,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/server-ux",
-    "depends": ["document_quick_access", "edi_storage_oca"],
+    "depends": ["document_quick_access", "edi_oca"],
     "external_dependencies": {
         "deb": ["libzbar0", "poppler-utils"],
         "python": ["pyzbar", "pdf2image"],

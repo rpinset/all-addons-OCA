@@ -2423,7 +2423,7 @@ addon | version | maintainers | summary
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 14.0.1.0.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules with discount
-[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 14.0.1.0.9 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Commission Product Criteria Domain
+[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 14.0.1.0.10 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Commission Product Criteria Domain
 [sale_commission_queued](sale_commission_queued/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions queued
 [sale_commission_salesman](sale_commission_salesman/) | 14.0.1.0.1 |  | Sales commissions from salesman
 [sale_quick_commission](sale_quick_commission/) | 14.0.1.0.0 |  | Makes modules compatible
@@ -3306,7 +3306,7 @@ addon | version | maintainers | summary
 [hr_employee_birthday_mail](hr_employee_birthday_mail/) | 14.0.1.0.0 |  | Automating birthday mail messages and fostering for a positive work environment.
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 14.0.1.6.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
 [hr_employee_digitized_signature](hr_employee_digitized_signature/) | 14.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Employee Digitized Signature
-[hr_employee_document](hr_employee_document/) | 14.0.2.0.1 |  | Documents attached to the employee profile
+[hr_employee_document](hr_employee_document/) | 14.0.2.0.2 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 14.0.3.0.0 |  | Adds First Name to Employee
 [hr_employee_id](hr_employee_id/) | 14.0.1.0.1 |  | Employee ID
 [hr_employee_lastnames](hr_employee_lastnames/) | 14.0.3.0.0 |  | Split Name in First Name, Father's Last Name and Mother's Last Name
@@ -6527,7 +6527,7 @@ addon | version | maintainers | summary
 [ddmrp_product_replace](ddmrp_product_replace/) | 14.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_purchase_hide_onhand_status](ddmrp_purchase_hide_onhand_status/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Replace purchase onhand status with smart button.
 [ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 14.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
-[ddmrp_warning](ddmrp_warning/) | 14.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
+[ddmrp_warning](ddmrp_warning/) | 14.0.1.4.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 14.0.1.3.0 |  | Allows to force a route to be used when procuring from Stock Buffers
 [stock_buffer_sales_analysis](stock_buffer_sales_analysis/) | 14.0.1.0.0 |  | Allows to access the Sales Analysis from Stock Buffers
@@ -8272,7 +8272,7 @@ addon | version | maintainers | summary
 [base_m2m_custom_field](base_m2m_custom_field/) | 14.0.1.1.0 |  | Customizations of Many2many
 [base_model_restrict_update](base_model_restrict_update/) | 14.0.1.1.0 |  | Update Restrict Model
 [base_multi_image](base_multi_image/) | 14.0.1.0.1 |  | Allow multiple images for database objects
-[base_name_search_improved](base_name_search_improved/) | 14.0.1.1.1 |  | Friendlier search when typing in relation fields
+[base_name_search_improved](base_name_search_improved/) | 14.0.1.1.2 |  | Friendlier search when typing in relation fields
 [base_name_search_multi_lang](base_name_search_multi_lang/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Name search by multiple active language
 [base_order_by_related](base_order_by_related/) | 14.0.1.0.0 | [![thomaspaulb](https://github.com/thomaspaulb.png?size=30px)](https://github.com/thomaspaulb) | Order by non-stored related fields
 [base_remote](base_remote/) | 14.0.1.0.1 |  | Remote Base
@@ -8624,7 +8624,7 @@ addon | version | maintainers | summary
 [date_range_account](date_range_account/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [default_multi_user](default_multi_user/) | 14.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined defaults among several users.
 [document_quick_access](document_quick_access/) | 14.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Document quick access
-[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 14.0.2.1.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Auto classification of Documents after reading a QR
+[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 14.0.2.1.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Auto classification of Documents after reading a QR
 [filter_multi_user](filter_multi_user/) | 14.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined filters filters among several users.
 [mass_editing](mass_editing/) | 14.0.1.1.4 |  | Mass Editing
 [mass_operation_abstract](mass_operation_abstract/) | 14.0.1.0.2 |  | Abstract Tools used for modules that realize operation on many items
