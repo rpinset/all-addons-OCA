@@ -1,6 +1,11 @@
 # Copyright 2021 ForgeFlow S.L. (https://www.forgeflow.com)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 
+import datetime
+import time
+
+import dateutil
+
 from odoo import _, fields, models
 from odoo.exceptions import UserError
 from odoo.osv import expression
@@ -48,7 +53,15 @@ class DdmrpWarningDefinition(models.Model):
     def evaluate_definition(self, buffer):
         self.ensure_one()
         try:
-            res = safe_eval(self.python_code, globals_dict={"buffer": buffer})
+            res = safe_eval(
+                self.python_code,
+                globals_dict={
+                    "buffer": buffer,
+                    "time": time,
+                    "datetime": datetime,
+                    "dateutil": dateutil,
+                },
+            )
         except Exception as error:
             raise UserError(_("Error evaluating %s.\n %s") % (self._name, error))
         return res

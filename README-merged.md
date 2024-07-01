@@ -2757,7 +2757,7 @@ addon | version | maintainers | summary
 [hr_course_survey](hr_course_survey/) | 13.0.1.0.0 |  | Evaluate a course using a Schedule
 [hr_employee_age](hr_employee_age/) | 13.0.1.0.0 |  | Age field for employee
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 13.0.1.5.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
-[hr_employee_document](hr_employee_document/) | 13.0.4.0.0 |  | Documents attached to the employee profile
+[hr_employee_document](hr_employee_document/) | 13.0.4.0.1 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 13.0.2.1.0 |  | Adds First Name to Employee
 [hr_employee_identification](hr_employee_identification/) | 13.0.1.0.0 |  | Record more data about employee's identity documents
 [hr_employee_language](hr_employee_language/) | 13.0.1.0.0 |  | HR Employee Language
@@ -4886,7 +4886,7 @@ addon | version | maintainers | summary
 [ddmrp_packaging](ddmrp_packaging/) | 13.0.1.7.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 13.0.2.4.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_sale](ddmrp_sale/) | 13.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | DDMRP integration with Sales app.
-[ddmrp_warning](ddmrp_warning/) | 13.0.1.5.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
+[ddmrp_warning](ddmrp_warning/) | 13.0.1.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 13.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 13.0.1.3.1 |  | Allows to force a route to be used when procuring from Stock Buffers
 [stock_buffer_sales_analysis](stock_buffer_sales_analysis/) | 13.0.1.0.0 |  | Allows to access the Sales Analysis from Stock Buffers
@@ -6521,7 +6521,7 @@ addon | version | maintainers | summary
 [document_quick_access](document_quick_access/) | 13.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Document quick access
 [document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 13.0.2.1.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Auto classification of Documents after reading a QR
 [filter_multi_user](filter_multi_user/) | 13.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined filters filters among several users.
-[mass_editing](mass_editing/) | 13.0.1.2.0 |  | Mass Editing
+[mass_editing](mass_editing/) | 13.0.1.2.1 |  | Mass Editing
 [mass_operation_abstract](mass_operation_abstract/) | 13.0.1.1.2 |  | Abstract Tools used for modules that realize operation onmany items
 [multi_step_wizard](multi_step_wizard/) | 13.0.1.1.2 |  | Multi-Steps Wizards
 [sequence_check_digit](sequence_check_digit/) | 13.0.1.0.0 |  | Adds a check digit on sequences

@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 022e9933cb6e2bd19919c164ba4a0c016321aea9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Jun 15 02:31:55 2024 +0000
+commit 4a4579ca3892349debc0d22d67c3db73cfeeeeed
+Author: Stéphane Bidoul (ACSONE) <stephane.bidoul@acsone.eu>
+Date:   Sun Jun 30 16:36:28 2024 +0000
 
-    [UPD] README.rst
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (11 of 11 strings)
+    
+    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_parent
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_parent/fr/
 
 
 ## account-budgeting
@@ -87,16 +92,16 @@ Date:   Thu Jun 6 13:09:51 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 1aaf43aceb7b0d297ee5463ff332557e882ef0a0
+commit 23c41d7f7d927619c925f379b777ea8d03248c97
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 15 16:59:26 2024 +0000
+Date:   Mon Jul 1 09:02:51 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 70.9% (66 of 93 strings)
+    Currently translated at 63.0% (164 of 260 strings)
     
-    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-partner_statement/it/
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -671,16 +676,11 @@ Date:   Fri Oct 13 09:33:03 2023 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 3ac6ec36c06bf529379ea237664c41c828dac184
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jun 25 18:06:42 2024 +0000
+commit 9baeb12b09d527e0bc8689763b897b4a7c7af3d6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 1 13:23:22 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: hr-13.0/hr-13.0-hr_employee_document
-    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_employee_document/
+    [BOT] post-merge updates
 
 
 ## hr-attendance
@@ -1313,16 +1313,11 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit fba74cedfd6732489502aad2432574709c0c78e7
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jun 14 10:12:16 2024 +0000
+commit f5b9277f0d0d637d784a3aad69d22159d8c64871
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 1 09:22:02 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_adjustment
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_adjustment/
+    [BOT] post-merge updates
 
 
 ## wms
@@ -1676,16 +1671,11 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 0443273425f4a6c739dec084a778a74fbf7a53cd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 26 10:12:01 2024 +0000
+commit 1bc705702f51cfa539ccc4bdbd4551b3c6a68a36
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jun 30 12:24:35 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (35 of 35 strings)
-    
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation_forward
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation_forward/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files
