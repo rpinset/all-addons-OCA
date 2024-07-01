@@ -153,6 +153,8 @@ python-barcode
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
+# generated from manifests external_dependencies
+pandas>=0.25.3
 # From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
