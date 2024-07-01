@@ -52,6 +52,18 @@ msgid "Display Name"
 msgstr ""
 
 #. module: fs_product_multi_image
+#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_product__image_medium
+#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_template__image_medium
+msgid "FS Image Medium"
+msgstr ""
+
+#. module: fs_product_multi_image
+#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_product__image
+#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_template__image
+msgid "FS Main Image"
+msgstr ""
+
+#. module: fs_product_multi_image
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_category_image__id
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_image__id
 msgid "ID"
@@ -72,8 +84,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_category_image__image_medium
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_image__image_medium
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_product_category__image_medium
-#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_product__image_medium
-#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_template__image_medium
 msgid "Image (128)"
 msgstr ""
 
@@ -81,8 +91,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_category_image__image
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_fs_product_image__image
 #: model:ir.model.fields,field_description:fs_product_multi_image.field_product_category__image
-#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_product__image
-#: model:ir.model.fields,field_description:fs_product_multi_image.field_product_template__image
 msgid "Image (original)"
 msgstr ""
 

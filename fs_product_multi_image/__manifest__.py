@@ -5,7 +5,7 @@
     "name": "Fs Product Multi Image",
     "summary": """
         Manage multi images from extenal file system on product""",
-    "version": "16.0.1.1.2",
+    "version": "16.0.1.1.3",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/storage",
