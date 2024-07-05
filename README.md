@@ -145,9 +145,9 @@ Date:   Tue Mar 26 12:16:05 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 5eb70d201b4e14608b018380a34fd0935e8ac810
+commit b75c9abc195e51fee202b922abda95adc060145b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 26 12:39:11 2024 +0000
+Date:   Thu Jul 4 14:41:24 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1303,16 +1303,16 @@ Date:   Wed May 8 10:13:05 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 3452eb0b754846bd9c4aabdffb128342ee50c6d6
+commit 9c52f086a82c7d2c67efc216e98cb18200a8e2e3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Nov 10 09:19:39 2023 +0000
+Date:   Thu Jul 4 14:31:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (45 of 45 strings)
     
-    Translation: product-pack-12.0/product-pack-12.0-sale_product_pack
-    Translate-URL: https://translation.odoo-community.org/projects/product-pack-12-0/product-pack-12-0-sale_product_pack/it/
+    Translation: product-pack-12.0/product-pack-12.0-product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-12-0/product-pack-12-0-product_pack/it/
 
 
 ## project-reporting
