@@ -72,7 +72,9 @@ class MessageSPV(models.Model):
         "res.currency", default=lambda self: self.env.company.currency_id
     )
 
-    @api.onchange("invoice_id")
+    _sql_constraints = [("unique_name", "unique(name)", "Message ID must be unique.")]
+
+    @api.onchange("invoice_id", "invoice_id.state")
     def _onchange_invoice_id(self):
         for message in self:
             if message.invoice_id:
@@ -238,24 +240,29 @@ class MessageSPV(models.Model):
         messages_without_invoice = self.filtered(lambda m: not m.invoice_id)
         message_ids = messages_without_invoice.mapped("name")
         request_ids = messages_without_invoice.mapped("request_id")
-        invoices = self.env["account.move"].search(
-            [
+        inv_domain = [
+            "|",
+            ("l10n_ro_edi_download", "in", message_ids),
+            ("l10n_ro_edi_transaction", "in", request_ids),
+        ]
+        # For error messages try to find invoices based on old transactions
+        for msg in message_ids + request_ids:
+            inv_domain = [
                 "|",
-                ("l10n_ro_edi_download", "in", message_ids),
-                ("l10n_ro_edi_transaction", "in", request_ids),
-            ]
-        )
+                ("l10n_ro_edi_previous_transaction", "ilike", msg),
+            ] + inv_domain
+        invoices = self.env["account.move"].search(inv_domain)
         domain = [("name", "in", messages_without_invoice.mapped("ref"))]
         invoices |= self.env["account.move"].search(domain)
-        invoices = invoices.filtered(lambda i: i.state == "posted")
         for message in messages_without_invoice:
             invoice = invoices.filtered(
                 lambda i, m=message: i.l10n_ro_edi_download == m.name
                 or i.l10n_ro_edi_transaction == m.request_id
-                or i.ref == m.ref
-                or i.name == m.ref
+                or (i.ref == m.ref and m.ref)
+                or (i.name == m.ref and m.ref)
             )
-            if not invoice:
+
+            if not invoice and message.ref:
                 if message.message_type == "in_invoice":
                     move_type = ("in_invoice", "in_refund")
                 else:
@@ -268,9 +275,27 @@ class MessageSPV(models.Model):
                 ]
                 invoice = self.env["account.move"].search(domain, limit=1)
 
-            if invoice:
-                message.write({"invoice_id": invoice[0].id})
-
+            if not invoice:
+                invoice = invoices.filtered(
+                    lambda i: message.name in i.l10n_ro_edi_previous_transaction
+                    or message.request_id in i.l10n_ro_edi_previous_transaction
+                )
+            if len(invoice) > 1:
+                _logger.warning(
+                    "Multiple invoices found for message %s: %s",
+                    message.name,
+                    invoice.ids,
+                )
+            if len(invoice) == 1:
+                message.write({"invoice_id": invoice.id})
+                if message.message_type == "message":
+                    msg = _("You received a message from ANAF for invoice %s") % (
+                        invoice.name
+                    )
+                    msg += f"\n{message.message}"
+                    self.env["account.edi.format"].l10n_ro_edi_post_message(
+                        invoice, msg, {}
+                    )
         self.get_data_from_invoice()
 
     def get_data_from_invoice(self):
@@ -308,6 +333,9 @@ class MessageSPV(models.Model):
         for message in self.filtered(lambda m: not m.invoice_id):
             if not message.message_type == "in_invoice":
                 continue
+            message.get_invoice_from_move()
+            if message.invoice_id:
+                continue
 
             move_obj = self.env["account.move"].with_company(message.company_id)
             new_invoice = move_obj.with_context(default_move_type="in_invoice").create(
@@ -326,35 +354,7 @@ class MessageSPV(models.Model):
             except Exception as e:
                 message.write({"state": "error", "error": str(e)})
                 continue
-
-            exist_invoice = move_obj.search(
-                [
-                    ("ref", "=", new_invoice.ref),
-                    ("move_type", "=", "in_invoice"),
-                    ("state", "=", "posted"),
-                    ("partner_id", "=", new_invoice.partner_id.id),
-                    ("id", "!=", new_invoice.id),
-                ],
-                limit=1,
-            )
-            if exist_invoice:
-                domain = [
-                    ("res_model", "=", "account.move"),
-                    ("res_id", "=", new_invoice.id),
-                ]
-                attachments = self.env["ir.attachment"].sudo().search(domain)
-                attachments.write({"res_id": exist_invoice.id})
-                new_invoice.unlink()
-                exist_invoice.write(
-                    {
-                        "l10n_ro_edi_download": message.name,
-                        "l10n_ro_edi_transaction": message.request_id,
-                    }
-                )
-                new_invoice = exist_invoice
-
             state = "invoice"
-
             message.write({"invoice_id": new_invoice.id, "state": state})
 
     def render_anaf_pdf(self):
