@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit ec6ec1729012b035aa9fe86481194e63728e4f0c
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Fri May 17 18:07:22 2024 +0000
+commit d6fe93f00bf22ce2677d3d54ec2824bbba2bce5c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jul 4 18:17:32 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: account-analytic-15.0/account-analytic-15.0-mrp_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-mrp_analytic/pt_BR/
+    [BOT] post-merge updates
 
 
 ## account-budgeting
@@ -97,16 +92,16 @@ Date:   Tue May 7 13:23:06 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit e762c8506f357b4902a98c6dce2c7cffbe62c64c
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Mon Jul 1 12:34:23 2024 +0000
+commit 925444fdf90f3d27a93343718e85a41cc08098fe
+Author: Rachid Al Assir <rachidalassir@gmail.com>
+Date:   Tue Jul 2 18:28:57 2024 +0000
 
-    Translated using Weblate (Danish)
+    Translated using Weblate (Arabic)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_supplier_ref_unique
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_supplier_ref_unique/da/
+    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_line_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_line_sequence/ar/
 
 
 ## account-fiscal-rule
@@ -481,14 +476,11 @@ Date:   Mon Jun 24 14:34:28 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit e2e49ec2eb9b243ae02c463a3cd5500beb37fb69
-Merge: 8d9a6250 91cf8847
+commit 894c2ec08c45bc1ab6f76ae529a0b4092bf5784c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 14:20:59 2024 +0000
+Date:   Tue Jul 2 13:57:44 2024 +0000
 
-    Merge PR #1198 into 15.0
-    
-    Signed-off-by max3903
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -570,9 +562,9 @@ Date:   Fri May 3 08:22:36 2024 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 2297e048aaf712890f3bcd6090a35a0eeaee652d
+commit 6da361bd1a890e427f32db07490b3c821d7eb292
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 11:19:18 2024 +0000
+Date:   Tue Jul 2 19:09:41 2024 +0000
 
     [BOT] post-merge updates
 
@@ -963,9 +955,9 @@ Date:   Wed May 1 18:38:24 2024 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 2bc25a6d14d00d6d47ec49daa7cc8e50cc415efd
+commit e57d64f40c3b6c0dde39a0e60a3e6ab452305683
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 28 10:08:38 2024 +0000
+Date:   Tue Jul 2 08:59:55 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1067,16 +1059,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 059284b09d40c609fc821507fba1c4fdd0309462
+commit 9dcd2ed82b61267f72c68160493eacdda2619561
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 1 08:35:43 2024 +0000
+Date:   Thu Jul 4 14:34:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 86.1% (124 of 144 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_mts_mto_rule
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_mts_mto_rule/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
 
 
 ## stock-logistics-reporting
@@ -1168,9 +1160,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 2cb8bbb2bbd392f3755c6351294db520c94da575
+commit 6df9fc08de9081ae3bb0090db5b5710c4bbbd858
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 16:47:04 2024 +0000
+Date:   Thu Jul 4 11:20:19 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1223,11 +1215,16 @@ Date:   Sat Jun 15 17:03:49 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit cb7f050698794d8eae7ea38d221215fcac443ed8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:52:39 2024 +0000
+commit aeedf0e45e7b67f73382198531bd69108be8b48e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jul 4 14:31:25 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (46 of 46 strings)
+    
+    Translation: product-pack-15.0/product-pack-15.0-product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-15-0/product-pack-15-0-product_pack/it/
 
 
 ## project-reporting

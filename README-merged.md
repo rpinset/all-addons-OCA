@@ -37,7 +37,7 @@ addon | version | maintainers | summary
 [procurement_mto_analytic](procurement_mto_analytic/) | 15.0.1.0.0 |  | This module sets analytic account in purchase order line from sale order analytic account
 [product_analytic](product_analytic/) | 15.0.1.0.1 |  | Add analytic account on products and product categories
 [purchase_analytic](purchase_analytic/) | 15.0.3.0.0 |  | Purchase Analytic
-[purchase_request_analytic](purchase_request_analytic/) | 15.0.1.0.0 |  | Purchase Request Analytic
+[purchase_request_analytic](purchase_request_analytic/) | 15.0.1.0.1 |  | Purchase Request Analytic
 [purchase_stock_analytic](purchase_stock_analytic/) | 15.0.1.0.0 |  | Copies the analytic account of the purchase order item to the stock move
 [stock_analytic](stock_analytic/) | 15.0.1.1.0 |  | Adds an analytic account and analytic tags in stock move
 
@@ -2761,6 +2761,7 @@ addon | version | maintainers | summary
 [fieldservice_isp_account](fieldservice_isp_account/) | 15.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Invoice Field Service orders based on employee time or contractor costs
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 15.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
 [fieldservice_location_builder](fieldservice_location_builder/) | 15.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds a tool to help build out Location Hierarchies
+[fieldservice_logbook](fieldservice_logbook/) | 15.0.1.0.0 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Manage Field Service equipment logbooks
 [fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 15.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage relations between contacts, companies and locations
 [fieldservice_project](fieldservice_project/) | 15.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_purchase](fieldservice_purchase/) | 15.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage FSM Purchases
@@ -3283,8 +3284,8 @@ addon | version | maintainers | summary
 [hr_holidays_calendar_event_privacy](hr_holidays_calendar_event_privacy/) | 15.0.1.0.1 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Define privacy level of calendar events from Time off requests
 [hr_holidays_leave_self_approve](hr_holidays_leave_self_approve/) | 15.0.1.0.0 |  | Allow employees to approve their own leaves when allowed
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 15.0.1.1.5 |  | Manage Public Holidays
-[hr_holidays_public_city](hr_holidays_public_city/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
+[hr_holidays_public](hr_holidays_public/) | 15.0.1.1.6 |  | Manage Public Holidays
+[hr_holidays_public_city](hr_holidays_public_city/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 [hr_holidays_public_overtime](hr_holidays_public_overtime/) | 15.0.1.0.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Support public holidays in overtime calculations
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 15.0.1.0.0 |  | Edit start and end of leaves using time intervals
 
@@ -5258,7 +5259,7 @@ addon | version | maintainers | summary
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
 [l10n_th_account_tax](l10n_th_account_tax/) | 15.0.1.8.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
-[l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.1.2.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
+[l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
 [l10n_th_account_tax_report](l10n_th_account_tax_report/) | 15.0.1.4.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
@@ -5911,6 +5912,7 @@ addon | version | maintainers | summary
 [stock_quant_cost_info](stock_quant_cost_info/) | 15.0.1.1.1 |  | Shows the cost of the quants
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.0 |  | Allows to see the reserved info of Products
+[stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_request](stock_request/) | 15.0.1.8.0 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
 [stock_request_kanban](stock_request_kanban/) | 15.0.1.1.2 |  | Adds a stock request order, and takes stock requests as lines
@@ -6443,7 +6445,7 @@ addon | version | maintainers | summary
 [purchase_blanket_order](purchase_blanket_order/) | 15.0.2.0.1 |  | Purchase Blanket Orders
 [purchase_cancel_confirm](purchase_cancel_confirm/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Purchase Cancel Confirm
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 15.0.1.0.3 |  | This module allows purchase default terms & conditions
-[purchase_delivery_split_date](purchase_delivery_split_date/) | 15.0.1.0.1 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
+[purchase_delivery_split_date](purchase_delivery_split_date/) | 15.0.1.0.2 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 15.0.1.1.0 |  | Option to create deposit from purchase order
 [purchase_deposit_analytic](purchase_deposit_analytic/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add analytic on wizard register deposit
 [purchase_discount](purchase_discount/) | 15.0.2.0.1 |  | Purchase order lines with discounts
@@ -6459,7 +6461,7 @@ addon | version | maintainers | summary
 [purchase_location_by_line](purchase_location_by_line/) | 15.0.1.0.0 |  | Allows to define a specific destination location on each PO line
 [purchase_manual_currency](purchase_manual_currency/) | 15.0.1.0.0 |  | Allows to manual currency of Purchase
 [purchase_merge](purchase_merge/) | 15.0.1.0.1 |  | Wizard to merge purchase with required conditions
-[purchase_open_qty](purchase_open_qty/) | 15.0.2.0.1 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
+[purchase_open_qty](purchase_open_qty/) | 15.0.3.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_analytic_search](purchase_order_analytic_search/) | 15.0.1.0.0 |  | Search purchase orders by analytic account. New menu entry in Purchasing to list purchase order lines.
 [purchase_order_approval_block](purchase_order_approval_block/) | 15.0.1.0.3 |  | Purchase Order Approval Block
 [purchase_order_approved](purchase_order_approved/) | 15.0.1.1.0 |  | Add a new state 'Approved' in purchase orders.
