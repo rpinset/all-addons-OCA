@@ -206,11 +206,12 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 17.0.1.0.0 |  | Add a code field to the accounts tags
-[account_asset_management](account_asset_management/) | 17.0.1.0.0 |  | Assets Management
+[account_asset_management](account_asset_management/) | 17.0.1.0.1 |  | Assets Management
 [account_journal_lock_date](account_journal_lock_date/) | 17.0.1.0.0 |  | Lock each journal independently
 [account_lock_date_update](account_lock_date_update/) | 17.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
+[account_move_line_tax_editable](account_move_line_tax_editable/) | 17.0.1.0.0 |  | Allows to edit taxes on non-posted account move lines
 [account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.5 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
 [account_move_post_date_user](account_move_post_date_user/) | 17.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
 [account_move_print](account_move_print/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds the option to print Journal Entries
@@ -456,7 +457,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[operating_unit](operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 
 [//]: # (end addons)
 
@@ -771,7 +776,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.1 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.2.0 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 17.0.1.0.0 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 17.0.1.3.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 17.0.1.4.0 |  | Account Payment Order
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.1 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 17.0.1.1.1 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 17.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
@@ -2047,6 +2052,7 @@ addon | version | maintainers | summary
 [document_knowledge](document_knowledge/) | 17.0.1.0.0 |  | Documents Knowledge
 [document_page](document_page/) | 17.0.1.1.0 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 17.0.1.0.0 |  | Choose groups to access document pages
+[document_page_group](document_page_group/) | 17.0.1.0.0 |  | Define access groups on documents
 [document_page_tag](document_page_tag/) | 17.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
 [document_url](document_url/) | 17.0.1.0.0 |  | URL attachment
 
@@ -2524,7 +2530,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_department_code](hr_department_code/) | 17.0.1.0.0 |  | HR department code
-[hr_employee_document](hr_employee_document/) | 17.0.1.0.0 |  | Documents attached to the employee profile
+[hr_employee_document](hr_employee_document/) | 17.0.1.0.1 |  | Documents attached to the employee profile
 [hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.0 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.0 |  | Enables Settings Form for HR Holidays.
@@ -4236,7 +4242,7 @@ addon | version | maintainers | summary
 [l10n_ro_city](l10n_ro_city/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
@@ -4375,7 +4381,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.0.0 |  | Genera la traducción al catalán de todos los códigos Nace
+[l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -5021,8 +5027,10 @@ addon | version | maintainers | summary
 [scrap_reason_code](scrap_reason_code/) | 17.0.1.0.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
 [stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.0 |  | Allows to create demand estimates.
 [stock_helper](stock_helper/) | 17.0.1.1.0 |  | Add methods shared between various stock modules
+[stock_inventory](stock_inventory/) | 17.0.1.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.0.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 17.0.1.0.0 |  | Add a MTS+MTO route
+[stock_picking_volume](stock_picking_volume/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 17.0.1.0.0 |  | Establish a removal priority on stock locations.
 [stock_reserve](stock_reserve/) | 17.0.1.0.0 |  | Stock reservations on products
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
@@ -5119,7 +5127,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 17.0.1.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma](rma/) | 17.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
 
@@ -5165,7 +5173,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.0.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_history](ddmrp_history/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_warning](ddmrp_warning/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 
@@ -5454,7 +5463,7 @@ addon | version | maintainers | summary
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
 [purchase_advance_payment](purchase_advance_payment/) | 17.0.1.0.0 |  | Allow to add advance payments on purchase orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 17.0.1.0.0 |  | Purchase Cancel Reason
-[purchase_delivery_split_date](purchase_delivery_split_date/) | 17.0.1.0.0 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
+[purchase_delivery_split_date](purchase_delivery_split_date/) | 17.0.1.0.1 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_exception](purchase_exception/) | 17.0.1.0.0 |  | Custom exceptions on purchase order
 [purchase_force_invoiced](purchase_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
@@ -6114,6 +6123,7 @@ addon | version | maintainers | summary
 [mail_partner_opt_out](mail_partner_opt_out/) | 17.0.1.0.0 |  | Add the partner's email to the blackmailed list
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
 [mail_template_substitute](mail_template_substitute/) | 17.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
+[mail_tracking](mail_tracking/) | 17.0.1.0.0 |  | Email tracking system for all mails sent
 [mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 
@@ -6417,6 +6427,7 @@ addon | version | maintainers | summary
 [onchange_helper](onchange_helper/) | 17.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
 [scheduler_error_mailer](scheduler_error_mailer/) | 17.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 17.0.1.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
+[server_action_logging](server_action_logging/) | 17.0.1.0.0 |  | Module that provides a logging mechanism for server actions
 [tracking_manager](tracking_manager/) | 17.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 17.0.1.0.0 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
@@ -6665,7 +6676,7 @@ addon | version | maintainers | summary
 [base_technical_features](base_technical_features/) | 17.0.1.0.0 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 17.0.1.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
-[date_range](date_range/) | 17.0.1.1.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
+[date_range](date_range/) | 17.0.1.2.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [date_range_account](date_range_account/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
 [server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.0 |  | Mass Editing
@@ -7471,6 +7482,7 @@ addon | version | maintainers | summary
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
 [web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.1 |  | Web Environment Ribbon
 [web_favicon](web_favicon/) | 17.0.1.0.1 |  | Allows to set a custom shortcut icon (aka favicon)
+[web_group_expand](web_group_expand/) | 17.0.1.0.0 |  | Group Expand Buttons
 [web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_refresher](web_refresher/) | 17.0.1.1.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 17.0.1.0.0 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Remember the tree columns' widths across sessions.
