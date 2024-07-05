@@ -512,7 +512,7 @@ addon | version | maintainers | summary
 [accounting_partner_category](accounting_partner_category/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Add tags on partner to helps accountant to select journal entries easley based on dedicated partner category
 [product_supplierinfo_for_customer_invoice](product_supplierinfo_for_customer_invoice/) | 14.0.1.0.0 |  | Based on product_customer_code, this module loads in every account invoice the customer code defined in the product
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 14.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
-[sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 14.0.2.0.1 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
+[sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 14.0.2.1.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
 [sale_line_refund_to_invoice_qty_skip_anglo_saxon](sale_line_refund_to_invoice_qty_skip_anglo_saxon/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Sale Line Refund To Invoice Qty skip anglo saxon.
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 14.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
@@ -1004,7 +1004,7 @@ addon | version | maintainers | summary
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.0.0 |  | Account Invoice Select for Payment
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
-[account_payment_order](account_payment_order/) | 14.0.2.5.3 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 14.0.2.5.4 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
@@ -2418,12 +2418,12 @@ addon | version | maintainers | summary
 [sale_commission_delegated_partner](sale_commission_delegated_partner/) | 14.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
 [sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.2 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
-[sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
+[sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
 [sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.0 |  | Sales commissions based on paid amount
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 14.0.1.0.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules with discount
-[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 14.0.1.0.10 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Commission Product Criteria Domain
+[sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 14.0.1.0.11 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Commission Product Criteria Domain
 [sale_commission_queued](sale_commission_queued/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions queued
 [sale_commission_salesman](sale_commission_salesman/) | 14.0.1.0.1 |  | Sales commissions from salesman
 [sale_quick_commission](sale_quick_commission/) | 14.0.1.0.0 |  | Makes modules compatible
@@ -4715,7 +4715,7 @@ addon | version | maintainers | summary
 [l10n_it_asset_history_import](l10n_it_asset_history_import/) | 14.0.1.0.0 |  | Cespiti: importazione storico dati
 [l10n_it_asset_history_import_queue](l10n_it_asset_history_import_queue/) | 14.0.1.0.0 | [![GSLabit](https://github.com/GSLabit.png?size=30px)](https://github.com/GSLabit) | Cespiti: importazione storico dati in background
 [l10n_it_ateco](l10n_it_ateco/) | 14.0.1.1.0 |  | ITA - Codici Ateco
-[l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 14.0.1.0.1 |  | ITA - Bolle doganali
+[l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 14.0.1.0.2 |  | ITA - Bolle doganali
 [l10n_it_central_journal](l10n_it_central_journal/) | 14.0.1.0.1 |  | ITA - Libro giornale
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.1.15 |  | Gestione dichiarazioni di intento
@@ -5225,7 +5225,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.2 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.3 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5233,6 +5233,7 @@ addon | version | maintainers | summary
 [l10n_ro_city](l10n_ro_city/) | 14.0.3.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 14.0.2.17.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 14.0.1.16.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
+[l10n_ro_etransport](l10n_ro_etransport/) | 14.0.0.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_message_spv](l10n_ro_message_spv/) | 14.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 14.0.6.4.1 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
@@ -5242,7 +5243,7 @@ addon | version | maintainers | summary
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 14.0.2.13.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
 [l10n_ro_pos](l10n_ro_pos/) | 14.0.2.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_siruta](l10n_ro_siruta/) | 14.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Siruta
-[l10n_ro_stock](l10n_ro_stock/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
+[l10n_ro_stock](l10n_ro_stock/) | 14.0.2.3.1 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
 [l10n_ro_stock_account](l10n_ro_stock_account/) | 14.0.8.40.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 14.0.2.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 14.0.3.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
@@ -5960,7 +5961,7 @@ addon | version | maintainers | summary
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
 [delivery_schenker_quant_package_dimension](delivery_schenker_quant_package_dimension/) | 14.0.2.0.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Glue module between delivery_schenker and stock_quant_package_dimensionWith this module the transmitted package volume is changed,it uses the computed volume from stock_quant_package_dimension.Also the dimensions length, width and height of a package getting added to the request
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.2 |  | Send delivery notice to the shipper from any operation.
-[delivery_state](delivery_state/) | 14.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
+[delivery_state](delivery_state/) | 14.0.1.1.1 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_tnt_oca](delivery_tnt_oca/) | 14.0.1.2.5 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Integrate TNT webservice
 [delivery_ups_oca](delivery_ups_oca/) | 14.0.1.0.1 |  | Integrate UPS webservice
 [partner_default_delivery_carrier](partner_default_delivery_carrier/) | 14.0.1.0.0 | [![SilvioC2C](https://github.com/SilvioC2C.png?size=30px)](https://github.com/SilvioC2C) | Allows defining default delivery methods for partners
@@ -6711,6 +6712,7 @@ addon | version | maintainers | summary
 [mrp_package_propagation](mrp_package_propagation/) | 14.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manufacturing Order Auto-Validation when components are picked
+[mrp_production_back_to_draft](mrp_production_back_to_draft/) | 14.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_byproduct_cost_share](mrp_production_byproduct_cost_share/) | 14.0.1.0.0 |  | Production By-Product Cost Share
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 14.0.1.0.2 |  | Production Grouped By Product
 [mrp_production_note](mrp_production_note/) | 14.0.1.0.0 |  | Notes in production orders
@@ -6928,11 +6930,11 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.38.0 |  | A property management system
+[pms](pms/) | 14.0.2.39.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.7.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.8.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
@@ -8611,7 +8613,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 14.0.1.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 14.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 14.0.1.1.1 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 14.0.4.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 14.0.4.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_correction](base_tier_validation_correction/) | 14.0.1.0.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Correct tier.review data after it has been created.
 [base_tier_validation_formula](base_tier_validation_formula/) | 14.0.2.0.1 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 14.0.1.0.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
@@ -9468,6 +9470,7 @@ addon | version | maintainers | summary
 [web_no_bubble](web_no_bubble/) | 14.0.1.1.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 14.0.1.1.0 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 14.0.1.0.0 |  | Send an instant notification to channel users when a new message is posted
+[web_notify_upgrade](web_notify_upgrade/) | 14.0.1.0.1 |  | Notify active users when a module is installed or updated
 [web_pivot_hide_total](web_pivot_hide_total/) | 14.0.1.0.1 |  | This addon adds a new inherited version of pivot view. It intends to hide the last total column when required.
 [web_pwa_oca](web_pwa_oca/) | 14.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
 [web_refresher](web_refresher/) | 14.0.2.0.0 |  | Web Refresher

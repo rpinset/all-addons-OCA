@@ -3,7 +3,7 @@
 
 {
     "name": "PMS Spanish Adaptation",
-    "version": "14.0.2.7.0",
+    "version": "14.0.2.8.0",
     "author": "Commit [Sun], Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": True,
@@ -39,9 +39,11 @@
         "views/pms_property_views.xml",
         "views/pms_room_views.xml",
         "views/pms_log_institution_traveller_report_views.xml",
+        "views/pms_ses_communication_views.xml",
         "views/pms_ine_tourism_type_category.xml",
         "views/res_partner_id_number_view.xml",
         "views/pms_checkin_partner_views.xml",
+        "views/pms_reservation_views.xml",
         "wizards/traveller_report.xml",
         "wizards/wizard_ine.xml",
         "reports/invoice.xml",
