@@ -1441,16 +1441,16 @@ Date:   Mon Apr 29 14:46:32 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit e9cad1c8e7e385d4f9c7b1f742ba9186fdb60880
+commit 0045b6b7eff6f5fb8f357f69392f0581a7b6051a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 21 11:36:07 2023 +0000
+Date:   Thu Jul 4 14:31:27 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (45 of 45 strings)
     
-    Translation: product-pack-13.0/product-pack-13.0-stock_product_pack
-    Translate-URL: https://translation.odoo-community.org/projects/product-pack-13-0/product-pack-13-0-stock_product_pack/it/
+    Translation: product-pack-13.0/product-pack-13.0-product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-13-0/product-pack-13-0-product_pack/it/
 
 
 ## project-reporting
