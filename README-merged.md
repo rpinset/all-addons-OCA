@@ -511,7 +511,7 @@ addon | version | maintainers | summary
 [account_refund_payment_term](account_refund_payment_term/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Dedicated payment terms used for refunds
 [accounting_partner_category](accounting_partner_category/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Add tags on partner to helps accountant to select journal entries easley based on dedicated partner category
 [product_supplierinfo_for_customer_invoice](product_supplierinfo_for_customer_invoice/) | 14.0.1.0.0 |  | Based on product_customer_code, this module loads in every account invoice the customer code defined in the product
-[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 14.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
+[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 14.0.1.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 14.0.2.1.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
 [sale_line_refund_to_invoice_qty_skip_anglo_saxon](sale_line_refund_to_invoice_qty_skip_anglo_saxon/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Sale Line Refund To Invoice Qty skip anglo saxon.
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 14.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
@@ -2588,7 +2588,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_category](attachment_category/) | 14.0.1.0.1 |  | Adds a document category to help classification
-[attachment_preview](attachment_preview/) | 14.0.1.0.1 |  | Preview attachments supported by Viewer.js
+[attachment_preview](attachment_preview/) | 14.0.1.0.2 |  | Preview attachments supported by Viewer.js
 [attachment_zipped_download](attachment_zipped_download/) | 14.0.2.0.0 |  | Attachment Zipped Download
 [document_page](document_page/) | 14.0.1.3.1 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 14.0.1.0.0 |  | Choose groups to access document pages
@@ -3494,6 +3494,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_holidays_auto_extend](hr_holidays_auto_extend/) | 14.0.1.0.0 |  | Allow to extend some kind of holidays
 [hr_holidays_calendar_name](hr_holidays_calendar_name/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Control leave employee calendar meeting name
 [hr_holidays_credit](hr_holidays_credit/) | 14.0.1.0.0 |  | Enable negative leave balance for employees
 [hr_holidays_leave_auto_approve](hr_holidays_leave_auto_approve/) | 14.0.1.0.1 |  | Leave type for auto-validation of Leaves
@@ -4702,7 +4703,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.0 |  | Allow to create the 'VAT Statement'.
-[assets_management](assets_management/) | 14.0.1.5.0 |  | Gestione Cespiti
+[assets_management](assets_management/) | 14.0.1.5.1 |  | Gestione Cespiti
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 14.0.1.0.2 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
@@ -5952,8 +5953,8 @@ addon | version | maintainers | summary
 [delivery_price_method](delivery_price_method/) | 14.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_product_domain](delivery_price_product_domain/) | 14.0.1.0.3 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Apply domain to product in shipping charges rules
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 14.0.1.0.3 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
-[delivery_purchase](delivery_purchase/) | 14.0.1.1.1 |  | Delivery costs in purchases
-[delivery_roulier](delivery_roulier/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
+[delivery_purchase](delivery_purchase/) | 14.0.1.2.0 |  | Delivery costs in purchases
+[delivery_roulier](delivery_roulier/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
@@ -5961,7 +5962,7 @@ addon | version | maintainers | summary
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
 [delivery_schenker_quant_package_dimension](delivery_schenker_quant_package_dimension/) | 14.0.2.0.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Glue module between delivery_schenker and stock_quant_package_dimensionWith this module the transmitted package volume is changed,it uses the computed volume from stock_quant_package_dimension.Also the dimensions length, width and height of a package getting added to the request
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.2 |  | Send delivery notice to the shipper from any operation.
-[delivery_state](delivery_state/) | 14.0.1.1.1 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
+[delivery_state](delivery_state/) | 14.0.1.1.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_tnt_oca](delivery_tnt_oca/) | 14.0.1.2.5 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Integrate TNT webservice
 [delivery_ups_oca](delivery_ups_oca/) | 14.0.1.0.1 |  | Integrate UPS webservice
 [partner_default_delivery_carrier](partner_default_delivery_carrier/) | 14.0.1.0.0 | [![SilvioC2C](https://github.com/SilvioC2C.png?size=30px)](https://github.com/SilvioC2C) | Allows defining default delivery methods for partners
@@ -8292,7 +8293,7 @@ addon | version | maintainers | summary
 [bus_alt_connection](bus_alt_connection/) | 14.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [configuration_helper](configuration_helper/) | 14.0.1.0.1 |  | Configuration Helper
 [cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 14.0.1.0.0 |  | Run cron on fixed hours
-[database_cleanup](database_cleanup/) | 14.0.1.1.0 |  | Database cleanup
+[database_cleanup](database_cleanup/) | 14.0.1.1.1 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 14.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 14.0.1.0.1 |  | Filter databases with HTTP headers
 [excel_import_export](excel_import_export/) | 14.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
@@ -9480,7 +9481,7 @@ addon | version | maintainers | summary
 [web_send_message_popup](web_send_message_popup/) | 14.0.1.0.0 |  | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 14.0.1.0.1 |  | Use the whole available screen width when displaying sheets
 [web_switch_context_warning](web_switch_context_warning/) | 14.0.1.1.0 |  | Show a warning if current user, company or database have been switched in another tab or window.
-[web_timeline](web_timeline/) | 14.0.2.0.2 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 14.0.2.0.3 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
 [web_tooltip_field](web_tooltip_field/) | 14.0.1.0.0 | [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Showing a Field ToolTip in Odoo
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 14.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 14.0.1.0.0 |  | Show images in tree views via tooltip

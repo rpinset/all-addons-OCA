@@ -13,11 +13,12 @@
     "website": "https://github.com/OCA/delivery-carrier",
     "license": "AGPL-3",
     "category": "Delivery",
-    "version": "14.0.1.1.1",
+    "version": "14.0.1.1.2",
     "depends": ["delivery"],
     "data": [
         "data/ir_cron_data.xml",
         "data/mail_template.xml",
         "views/stock_picking_views.xml",
+        "views/delivery_carrier_views.xml",
     ],
 }
