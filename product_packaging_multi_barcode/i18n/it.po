@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-24 17:34+0000\n"
+"PO-Revision-Date: 2024-07-09 12:58+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: product_packaging_multi_barcode
+#. odoo-python
+#: code:addons/product_packaging_multi_barcode/models/product_barcode.py:0
+#, python-format
+msgid ""
+"A packaging already uses the barcode or the barcode is already assigned to "
+"product(s)"
+msgstr ""
+"Un imballaggio utilizza già questo codice a barre o il codice a barre è già "
+"assegnato ad un prodotto(i)"
 
 #. module: product_packaging_multi_barcode
 #: model:ir.model.fields,help:product_packaging_multi_barcode.field_product_packaging__barcode
@@ -30,6 +41,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:product_packaging_multi_barcode.field_product_packaging__barcode_ids
 msgid "Barcodes"
 msgstr "Codici a barre"
+
+#. module: product_packaging_multi_barcode
+#: model:ir.model.fields,field_description:product_packaging_multi_barcode.field_product_barcode__display_product_id
+msgid "Display Product"
+msgstr "Visualizza prodotto"
 
 #. module: product_packaging_multi_barcode
 #: model:ir.model,name:product_packaging_multi_barcode.model_product_barcode
@@ -70,5 +86,10 @@ msgid ""
 "The Barcode \"%(barcode_name)s\" already exists for product "
 "\"%(product_name)s\" in the company %(company_name)s"
 msgstr ""
-"Il codice a barre \"%(barcode_name)s\" esiste già per il prodotto \""
-"%(product_name)s\" nell'azienda %(company_name)s"
+"Il codice a barre \"%(barcode_name)s\" esiste già per il prodotto "
+"\"%(product_name)s\" nell'azienda %(company_name)s"
+
+#. module: product_packaging_multi_barcode
+#: model_terms:ir.ui.view,arch_db:product_packaging_multi_barcode.product_barcode_view_search
+msgid "display product"
+msgstr "visualizza prodotto"
