@@ -52,16 +52,16 @@ Date:   Sun Dec 24 16:34:27 2023 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 0b60a58c4a07a2c28c897bb114463d48fb2b45e2
+commit 7a924bba5bf2ed964dda0db18c9b6a26b03061c7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:57:00 2023 +0000
+Date:   Mon Jul 8 06:34:15 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 41.9% (13 of 31 strings)
+    Currently translated at 57.1% (12 of 21 strings)
     
-    Translation: account-closing-13.0/account-closing-13.0-account_cutoff_prepaid
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_cutoff_prepaid/it/
+    Translation: account-closing-13.0/account-closing-13.0-account_cutoff_accrual_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_cutoff_accrual_base/it/
 
 
 ## account-consolidation
@@ -92,9 +92,9 @@ Date:   Thu Jun 6 13:09:51 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 23c41d7f7d927619c925f379b777ea8d03248c97
+commit 4c3f44c58a66bd9cd1464cf21d666c9f18e8d2db
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 1 09:02:51 2024 +0000
+Date:   Mon Jul 8 09:07:36 2024 +0000
 
     Translated using Weblate (Italian)
     
