@@ -1026,21 +1026,6 @@ msgid "Landscape PDF"
 msgstr "PDF paysage"
 
 #. module: mis_builder
-#: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_query____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_style____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi____last_update
-#: model:ir.model.fields,field_description:mis_builder.field_mis_report_subreport____last_update
-msgid "Last Modified on"
-msgstr "Dernière modification le"
-
-#. module: mis_builder
 #: model:ir.actions.act_window,name:mis_builder.last_mis_report_instance_view_action
 #: model:ir.ui.menu,name:mis_builder.last_wizard_mis_report_instance_view_menu
 msgid "Last Reports Generated"
@@ -1795,7 +1780,6 @@ msgstr "Opérateur non supporté %s pour les recherches sur la date"
 
 #. module: mis_builder
 #: model:ir.actions.server,name:mis_builder.ir_cron_vacuum_temp_reports_ir_actions_server
-#: model:ir.cron,cron_name:mis_builder.ir_cron_vacuum_temp_reports
 msgid "Vacuum temporary reports"
 msgstr "Vider les rapports temporaires"
 
@@ -1917,15 +1901,15 @@ msgstr "xx-grand"
 msgid "xx-small"
 msgstr "xx-petit"
 
-#, python-format
+#~ msgid "Last Modified on"
+#~ msgstr "Dernière modification le"
+
 #~ msgid "Columns {} and {} are not comparable"
 #~ msgstr "Les colonnes {} et {} ne sont pas comparables"
 
-#, python-format
 #~ msgid "Generated on {} at {}"
 #~ msgstr "Généré le {} à {}"
 
-#, python-format
 #~ msgid ""
 #~ "KPI \"{}\" has type {} while a tuple was expected.\n"
 #~ "\n"
@@ -1943,7 +1927,6 @@ msgstr "xx-petit"
 #~ "\t- Changer le KPI en mode 'multi' et donner une valeur pour chaque sous-"
 #~ "KPI."
 
-#, python-format
 #~ msgid ""
 #~ "KPI \"{}\" is valued as a tuple of length {} while a tuple of length {} "
 #~ "is expected."
@@ -1951,7 +1934,6 @@ msgstr "xx-petit"
 #~ "Le KPI \"{}\" est une liste de valeurs de longueur {} alors qu'une liste "
 #~ "de valeurs de longueur {} est attendue."
 
-#, python-format
 #~ msgid "Can not update a multi kpi from the kpi line"
 #~ msgstr ""
 #~ "Vous ne pouvez pas mettre à  jour un kpi multi depuis la ligne de kpi"
@@ -1977,11 +1959,9 @@ msgstr "xx-petit"
 #~ msgid "Style expression"
 #~ msgstr "Expression du style"
 
-#, python-format
 #~ msgid "Unexpected accumulation method %s for %s."
 #~ msgstr "Méthode d'accumulation inattendue %s pour %s."
 
-#, python-format
 #~ msgid "from %s to %s"
 #~ msgstr "de %s à  %s"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-15 09:37+0000\n"
+"PO-Revision-Date: 2024-07-08 08:59+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_stock_buffer__used_in_bom_count
@@ -24,24 +24,21 @@ msgstr "N° DiBa dove utilizzata"
 #. module: ddmrp
 #: model:ir.model.fields,help:ddmrp.field_stock_move_line__state
 msgid ""
-"* New: When the stock move is created and not yet confirmed.\n"
-"* Waiting Another Move: This state can be seen when a move is waiting for "
-"another one, for example in a chained flow.\n"
-"* Waiting Availability: This state is reached when the procurement "
-"resolution is not straight forward. It may need the scheduler to run, a "
-"component to be manufactured...\n"
-"* Available: When products are reserved, it is set to 'Available'.\n"
-"* Done: When the shipment is processed, the state is 'Done'."
+"* New: The stock move is created but not confirmed.\n"
+"* Waiting Another Move: A linked stock move should be done before this one.\n"
+"* Waiting Availability: The stock move is confirmed but the product can't be "
+"reserved.\n"
+"* Available: The product of the stock move is reserved.\n"
+"* Done: The product has been transferred and the transfer has been confirmed."
 msgstr ""
-"* Nuova: quando il mvimento di magazzino è creato ma non ancora confermato.\n"
-"* Attesa altro movimento: questo stato si attiva quando un movimento è in "
-"attesa dI un altro, per esempio in un flusso concatenato.\n"
-"* Attesa disponibilità: questo stato viene raggiunto quando il completamento "
-"dell'approvvigionamento non è semplice. Richiede l'esecuzione della "
-"schedulazione, la lavorazione di un componente...\n"
-"* Disponibile: qando i prodotti sono prenotati, è impostato a "
-"'Disponibile'.\n"
-"* Eseguito: quando la spedizione viene elaborata, lo stato è 'Eseguito'."
+"* Nuovo: il nuovo movimento di magazzino è creato ma non confermato.\n"
+"* In attesa di altro movimento: un movimento di magazzino collegato deve "
+"essere completato prima di questo.\n"
+"* In attesa disponibilità: il movimento di magazzino è confermato ma il "
+"prodotto non può essere prenotato.\n"
+"* Disponibile: il prodotto del movimento di magazzino è prenotato.\n"
+"* Eseguito: il prodotto è stato trasferito e il trasferimento è stato "
+"confermato."
 
 #. module: ddmrp
 #: model_terms:ir.ui.view,arch_db:ddmrp.res_config_settings_view_form
@@ -382,11 +379,6 @@ msgid "Create Procurement"
 msgstr "Crea approvvigionamento"
 
 #. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_stock_move__created_purchase_line_id
-msgid "Created Purchase Order Line"
-msgstr "Riga ordine approvvigionamento creata"
-
-#. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__create_uid
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run__create_uid
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__create_uid
@@ -428,13 +420,11 @@ msgstr "Messe a punto DDMRP"
 
 #. module: ddmrp
 #: model:ir.actions.server,name:ddmrp.ir_cron_ddmrp_adu_calculation_scheduler_action_ir_actions_server
-#: model:ir.cron,cron_name:ddmrp.ir_cron_ddmrp_adu_calculation_scheduler_action
 msgid "DDMRP Buffer ADU calculation"
 msgstr "Calcolo ADU buffer DDMRP"
 
 #. module: ddmrp
 #: model:ir.actions.server,name:ddmrp.ir_cron_ddmrp_calculation_scheduler_action_ir_actions_server
-#: model:ir.cron,cron_name:ddmrp.ir_cron_ddmrp_calculation_scheduler_action
 msgid "DDMRP Buffer calculation"
 msgstr "Calcolo buffer DDMRP"
 
@@ -837,20 +827,6 @@ msgstr "Tipo articolo"
 #: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer__item_ids
 msgid "Items"
 msgstr "Articoli"
-
-#. module: ddmrp
-#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_ddmrp_run____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_make_procurement_buffer_item____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_change_location____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_product_adu_calculation_method____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_lead_time____last_update
-#: model:ir.model.fields,field_description:ddmrp.field_stock_buffer_profile_variability____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_ddmrp_duplicate_buffer__write_uid
@@ -1705,9 +1681,7 @@ msgstr "Buffer di materiale & imballi"
 
 #. module: ddmrp
 #: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__context_location_id
-#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom__location_id
 #: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__context_location_id
-#: model:ir.model.fields,field_description:ddmrp.field_mrp_bom_line__location_id
 msgid "Stock Location"
 msgstr "Ubicazione di magazzino"
 
@@ -2134,6 +2108,33 @@ msgstr "giorni"
 #: model_terms:ir.ui.view,arch_db:ddmrp.view_run_ddmrp_wizard
 msgid "or"
 msgstr "o"
+
+#~ msgid ""
+#~ "* New: When the stock move is created and not yet confirmed.\n"
+#~ "* Waiting Another Move: This state can be seen when a move is waiting for "
+#~ "another one, for example in a chained flow.\n"
+#~ "* Waiting Availability: This state is reached when the procurement "
+#~ "resolution is not straight forward. It may need the scheduler to run, a "
+#~ "component to be manufactured...\n"
+#~ "* Available: When products are reserved, it is set to 'Available'.\n"
+#~ "* Done: When the shipment is processed, the state is 'Done'."
+#~ msgstr ""
+#~ "* Nuova: quando il mvimento di magazzino è creato ma non ancora "
+#~ "confermato.\n"
+#~ "* Attesa altro movimento: questo stato si attiva quando un movimento è in "
+#~ "attesa dI un altro, per esempio in un flusso concatenato.\n"
+#~ "* Attesa disponibilità: questo stato viene raggiunto quando il "
+#~ "completamento dell'approvvigionamento non è semplice. Richiede "
+#~ "l'esecuzione della schedulazione, la lavorazione di un componente...\n"
+#~ "* Disponibile: qando i prodotti sono prenotati, è impostato a "
+#~ "'Disponibile'.\n"
+#~ "* Eseguito: quando la spedizione viene elaborata, lo stato è 'Eseguito'."
+
+#~ msgid "Created Purchase Order Line"
+#~ msgstr "Riga ordine approvvigionamento creata"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
 
 #~ msgid "Quantity"
 #~ msgstr "Quantità"

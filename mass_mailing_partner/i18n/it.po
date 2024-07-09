@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:19+0000\n"
-"PO-Revision-Date: 2023-12-07 16:33+0000\n"
+"PO-Revision-Date: 2024-07-08 08:59+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mass_mailing_partner
 #. odoo-python
-#: code:addons/mass_mailing_partner/models/mailing_contact_subscription.py:0
 #: code:addons/mass_mailing_partner/models/mailing_list.py:0
+#: code:addons/mass_mailing_partner/models/mailing_subscription.py:0
 #, python-format
 msgid "A partner cannot be multiple times in the same list"
 msgstr "Un partner non può essere presente più volte nello stesso elenco"
@@ -74,11 +74,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: mass_mailing_partner
-#: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_partner_mail_list_wizard__write_uid
 msgid "Last Updated by"
 msgstr "Ultimo aggiornamento di"
@@ -99,6 +94,11 @@ msgstr "Contatto spedizione"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_partner.view_res_partner_filter
 msgid "Mailing List"
 msgstr "Mailing list"
+
+#. module: mass_mailing_partner
+#: model:ir.model,name:mass_mailing_partner.model_mailing_subscription
+msgid "Mailing List Subscription"
+msgstr "Iscrizione alla lista di distribuzione"
 
 #. module: mass_mailing_partner
 #: model:ir.model,name:mass_mailing_partner.model_mailing_trace
@@ -122,11 +122,6 @@ msgstr "Numero contatti spedizione"
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_list__partner_mandatory
 msgid "Mandatory Partner"
 msgstr "Partner obbligatorio"
-
-#. module: mass_mailing_partner
-#: model:ir.model,name:mass_mailing_partner.model_mailing_contact_subscription
-msgid "Mass Mailing Subscription Information"
-msgstr "Informazione iscrizione spedzioni di massa"
 
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_res_partner__mass_mailing_stats_ids
@@ -177,7 +172,7 @@ msgstr "Il partner è già presente in una di queste mailing list"
 #. module: mass_mailing_partner
 #: model:ir.model.fields,field_description:mass_mailing_partner.field_mailing_contact__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Etichette"
 
 #. module: mass_mailing_partner
 #. odoo-python
@@ -189,6 +184,12 @@ msgid ""
 msgstr ""
 "Questo partner '%s' è collegato a uno o più contatti spadzioni di massa. "
 "Deve essere assegnata l'e-mail."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "Mass Mailing Subscription Information"
+#~ msgstr "Informazione iscrizione spedzioni di massa"
 
 #~ msgid "Mass Mailing Contact"
 #~ msgstr "Contatto Mass Mailing"
