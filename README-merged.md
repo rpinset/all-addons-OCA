@@ -23,7 +23,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_analytic_parent](account_analytic_parent/) | 15.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
+[account_analytic_parent](account_analytic_parent/) | 15.0.1.0.1 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 15.0.1.0.2 |  | Account Analytic Required
 [account_analytic_sequence](account_analytic_sequence/) | 15.0.1.0.1 |  | Restore the analytic account sequence
 [account_analytic_tag_default](account_analytic_tag_default/) | 15.0.1.0.0 |  | Set default tags on analytic accounts.
@@ -257,6 +257,7 @@ addon | version | maintainers | summary
 [account_move_template](account_move_template/) | 15.0.1.0.1 |  | Templates for recurring Journal Entries
 [account_move_total_by_account_internal_group](account_move_total_by_account_internal_group/) | 15.0.1.0.0 |  | Adds Totals by Account Internal Group in Journal Entries
 [account_netting](account_netting/) | 15.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
+[account_sequence_option](account_sequence_option/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Manage sequence options for account.move, i.e., invoice, bill, entry
 [account_spread_cost_revenue](account_spread_cost_revenue/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Spread costs and revenues over a custom period
 [account_usability](account_usability/) | 15.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [base_vat_optional_vies](base_vat_optional_vies/) | 15.0.1.1.0 |  | Optional validation of VAT via VIES
@@ -446,6 +447,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_link](account_invoice_refund_link/) | 15.0.1.0.3 |  | Show links between refunds and their originator invoices.
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 15.0.1.0.3 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Account Invoice Refund Reason.
+[account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 15.0.1.0.0 |  | Allow to Reinvoice a Refund
 [account_invoice_restrict_linked_so](account_invoice_restrict_linked_so/) | 15.0.1.0.1 |  | Restricts editing the Product, Quantity and Unit Price columns for invoice lines that originated in Sales Orders.
 [account_invoice_search_by_reference](account_invoice_search_by_reference/) | 15.0.1.0.0 |  | Account invoice search by reference
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 15.0.1.0.2 |  | For invoices targetting multiple sale order addsections with sale order name.
@@ -477,6 +479,7 @@ addon | version | maintainers | summary
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 15.0.1.0.0 |  | Portal Accounting Personal Data Only
 [product_form_account_move_line_link](product_form_account_move_line_link/) | 15.0.1.0.0 |  | Adds a button on product forms to access Journal Items
 [product_supplierinfo_for_customer_invoice](product_supplierinfo_for_customer_invoice/) | 15.0.1.0.0 |  | Based on product_customer_code, this module loads in every account invoice the customer code defined in the product
+[purchase_order_invoicing_grouping_criteria](purchase_order_invoicing_grouping_criteria/) | 15.0.1.0.0 |  | Purchases order invoicing grouping criteria
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 15.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 15.0.1.0.1 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
@@ -949,10 +952,10 @@ addon | version | maintainers | summary
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 15.0.1.0.2 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 15.0.2.0.2 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.3 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 15.0.2.0.4 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.1 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 15.0.2.7.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 15.0.2.7.1 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
@@ -1872,7 +1875,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.3.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.0.0 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.0.1 |  | Sale planner calendar
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 15.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
@@ -1950,6 +1953,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_claim](crm_claim/) | 15.0.1.1.0 |  | Track your customers/vendors claims and grievances.
+[crm_claim_code](crm_claim_code/) | 15.0.1.0.0 |  | Sequential Code for Claims
 [crm_claim_type](crm_claim_type/) | 15.0.1.0.0 |  | Claim types for CRM
 [crm_industry](crm_industry/) | 15.0.1.1.1 |  | Link leads/opportunities to industries
 [crm_lead_code](crm_lead_code/) | 15.0.1.0.0 |  | Sequential Code for Leads / Opportunities
@@ -4919,7 +4923,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5070,7 +5074,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 15.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Impresión de pagaré de Cajamar en A4
-[delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
+[delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
@@ -5258,7 +5262,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.1.8.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
@@ -5271,7 +5275,7 @@ addon | version | maintainers | summary
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
 [l10n_th_fonts](l10n_th_fonts/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all fonts thai
 [l10n_th_gov_account_asset_management](l10n_th_gov_account_asset_management/) | 15.0.3.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Assets Management
-[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.1.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
+[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Thai Localization - Government Purchase Agreement
 [l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.2 |  | Thai Localization - Government Purchase Guarantee
 [l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
@@ -7276,7 +7280,7 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 15.0.2.1.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.0 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 15.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
@@ -7633,7 +7637,7 @@ addon | version | maintainers | summary
 [base_time_window](base_time_window/) | 15.0.1.0.0 |  | Base model to handle time windows
 [base_translation_field_label](base_translation_field_label/) | 15.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) | Shows the field label and optionally hides the Translated field value.
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 15.0.2.1.1 |  | Adds more operators for view inheritance
-[database_cleanup](database_cleanup/) | 15.0.1.2.0 |  | Database cleanup
+[database_cleanup](database_cleanup/) | 15.0.1.2.1 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 15.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 15.0.1.0.0 |  | Filter databases with HTTP headers
 [excel_import_export](excel_import_export/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
@@ -8840,6 +8844,7 @@ addon | version | maintainers | summary
 [web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 15.0.1.0.0 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_open_tab](web_widget_open_tab/) | 15.0.1.1.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_remote_measure](web_widget_remote_measure/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to connect to remote devices to record measures
+[web_widget_text_markdown](web_widget_text_markdown/) | 15.0.1.0.0 |  | Widget to text fields that adds markdown support
 [web_widget_url_advanced](web_widget_url_advanced/) | 15.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 15.0.1.0.3 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix
 
