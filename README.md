@@ -145,9 +145,9 @@ Date:   Tue Mar 26 12:16:05 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit b75c9abc195e51fee202b922abda95adc060145b
+commit 373aa8460efcbeb3008936b9cbd6508f163116f9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 4 14:41:24 2024 +0000
+Date:   Tue Jul 9 07:34:19 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -173,9 +173,9 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 25e42a0ec6479e8931c35eed4c1a65afde6719c3
+commit 2bd97999e3a3c6152b30cb706c6a6f367aea4c99
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 06:29:51 2024 +0000
+Date:   Mon Jul 8 09:02:23 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -421,16 +421,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 6db7f4344510042d9a8ab850949cc39bcb104dbe
+commit b85d14ff24c7570fecf8d00d121485382e748ef0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 5 09:46:19 2024 +0000
+Date:   Tue Jul 9 07:26:26 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (48 of 48 strings)
+    Currently translated at 100.0% (55 of 55 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_automatic_workflow
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_automatic_workflow/it/
 
 
 ## crm
@@ -1150,16 +1150,16 @@ Date:   Mon Jun 24 11:49:13 2024 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit a87a1475af6321e2667f6e1da1ff45a7af3895f2
+commit 987407c64c922f7dc3077216464e7e94e048020e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 19 12:59:49 2024 +0000
+Date:   Mon Jul 8 09:05:46 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (39 of 39 strings)
+    Currently translated at 100.0% (21 of 21 strings)
     
-    Translation: stock-logistics-reporting-12.0/stock-logistics-reporting-12.0-stock_inventory_valuation_report
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-12-0/stock-logistics-reporting-12-0-stock_inventory_valuation_report/it/
+    Translation: stock-logistics-reporting-12.0/stock-logistics-reporting-12.0-stock_forecast_report
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-12-0/stock-logistics-reporting-12-0-stock_forecast_report/it/
 
 
 ## rma
@@ -1432,11 +1432,16 @@ Date:   Sun Sep 3 16:31:08 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 0992caaef2da6066243df713d7a000816f6e65b0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 5 13:26:26 2024 +0000
+commit e685488476fa6248b43d6151b8df29bce9875b64
+Author: Weblate <noreply@weblate.org>
+Date:   Sun Jul 7 08:57:16 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: reporting-engine-12.0/reporting-engine-12.0-report_async
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-12-0/reporting-engine-12-0-report_async/
 
 
 ## report-print-send
