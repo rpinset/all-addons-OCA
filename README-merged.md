@@ -437,6 +437,7 @@ addon | version | maintainers | summary
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display invoices date due when using payment terms
 [account_invoice_pricelist](account_invoice_pricelist/) | 16.0.1.0.2 |  | Add partner pricelist on invoices
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 16.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
+[account_invoice_recipient_bank_currency](account_invoice_recipient_bank_currency/) | 16.0.1.0.0 |  | Module to fill recipient bank from invoices by using the invoice's currency.
 [account_invoice_refund_code](account_invoice_refund_code/) | 16.0.1.0.0 |  | This module allows to have specific refund codes.
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 16.0.1.0.0 |  | This module allows the user to refund specific lines in a invoice
 [account_invoice_refund_link](account_invoice_refund_link/) | 16.0.1.0.4 |  | Show links between refunds and their originator invoices.
@@ -471,7 +472,7 @@ addon | version | maintainers | summary
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 16.0.1.0.0 |  | Portal Accounting Personal Data Only
 [product_form_account_move_line_link](product_form_account_move_line_link/) | 16.0.1.0.0 |  | Adds a button on product forms to access Journal Items
 [purchase_invoicing_no_zero_line](purchase_invoicing_no_zero_line/) | 16.0.1.0.0 |  | Avoid creation of zero quantity invoice lines from purchase
-[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
+[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 16.0.1.0.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
@@ -1242,7 +1243,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.0.0 |  | Asynchronous export with job queue
-[base_import_async](base_import_async/) | 16.0.1.1.1 |  | Import CSV files in the background
+[base_import_async](base_import_async/) | 16.0.1.1.2 |  | Import CSV files in the background
 [queue_job](queue_job/) | 16.0.2.6.7 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.0.0 |  | Scheduled Actions as Queue Jobs
@@ -1822,6 +1823,7 @@ addon | version | maintainers | summary
 [sale_order_lot_generator](sale_order_lot_generator/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 16.0.1.0.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 16.0.1.1.0 |  | Recalculate prices / Reset descriptions on sale order lines
+[sale_order_product_assortment](sale_order_product_assortment/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 16.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
 [sale_order_product_picker](sale_order_product_picker/) | 16.0.1.1.1 |  | Sale Order Product Picker
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 16.0.3.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Recommend products to sell to customer based on history
@@ -2139,10 +2141,13 @@ addon | version | maintainers | summary
 [loyalty_initial_date_validity](loyalty_initial_date_validity/) | 16.0.1.0.1 |  | Set a start date for a promotion
 [loyalty_limit](loyalty_limit/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Restrict number of promotions per customer or salesman
 [loyalty_mass_mailing](loyalty_mass_mailing/) | 16.0.1.0.0 |  | Loyalty Mass Mailing
+[loyalty_multi_gift](loyalty_multi_gift/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to configure multiple gift rewards per promotion
 [loyalty_partner_applicability](loyalty_partner_applicability/) | 16.0.2.0.2 |  | Enables the definition of a customer filter for promotion rules that will only be applied to customers who meet the specified conditions in the filter.
+[sale_loyalty_criteria_multi_product](sale_loyalty_criteria_multi_product/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to set as promotion criteria multi-product conditions
 [sale_loyalty_incompatibility](sale_loyalty_incompatibility/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to set incompatibility rules between promotions in sale orders
 [sale_loyalty_initial_date_validity](sale_loyalty_initial_date_validity/) | 16.0.1.0.1 |  | Sale Loyalty Initial Date Validity
 [sale_loyalty_limit](sale_loyalty_limit/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Restrict number of promotions per customer or salesman
+[sale_loyalty_multi_gift](sale_loyalty_multi_gift/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to configure multiple gift rewards per promotion in sales
 [sale_loyalty_order_info](sale_loyalty_order_info/) | 16.0.1.0.0 |  | Add info on sale order about applied loyalties
 [sale_loyalty_order_line_link](sale_loyalty_order_line_link/) | 16.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a link between loyalty programs and their generated order linesfor easing tracking
 [sale_loyalty_order_suggestion](sale_loyalty_order_suggestion/) | 16.0.1.0.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Suggest promotions in the sale order line
@@ -2530,7 +2535,7 @@ addon | version | maintainers | summary
 [website_sale_cart_expire](website_sale_cart_expire/) | 16.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 16.0.1.1.0 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 16.0.1.0.0 |  | Hide product prices on the shop
-[website_sale_hide_price](website_sale_hide_price/) | 16.0.2.0.0 |  | Hide product prices on the shop
+[website_sale_hide_price](website_sale_hide_price/) | 16.0.2.1.0 |  | Hide product prices on the shop
 [website_sale_invoice_address](website_sale_invoice_address/) | 16.0.1.0.0 |  | Set e-Commerce sale orders invoice address as in backend
 [website_sale_order_type](website_sale_order_type/) | 16.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
 [website_sale_product_assortment](website_sale_product_assortment/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Use product assortments to display products available on e-commerce.
@@ -2600,12 +2605,14 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_einvoice_generate](account_einvoice_generate/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Technical module to generate PDF invoices with embedded XML file
 [account_invoice_edifact](account_invoice_edifact/) | 16.0.1.0.0 |  | Generate customer invoices with EDIFACT/D96A format
+[account_invoice_export](account_invoice_export/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Account Invoice Export
+[account_invoice_export_job](account_invoice_export_job/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Account Invoice Export Job
 [account_invoice_facturx](account_invoice_facturx/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X invoices with Py3o reporting engine
 [base_business_document_import](base_business_document_import/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Use phone numbers to match partners upon import of business documents
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 16.0.1.0.1 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Base for managing e-billing contracts
-[base_edi](base_edi/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
+[base_edi](base_edi/) | 16.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_edifact](base_edifact/) | 16.0.1.5.1 | [![rmorant](https://github.com/rmorant.png?size=30px)](https://github.com/rmorant) | UN/EDIFACT/D96A utilities using pydifact parser
 [base_facturx](base_facturx/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
 [base_ubl](base_ubl/) | 16.0.1.1.0 |  | Base module for Universal Business Language (UBL)
@@ -2836,7 +2843,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[base_dns_infrastructure](base_dns_infrastructure/) | 16.0.1.0.1 |  | Base module for DNS infrastructure
 
 [//]: # (end addons)
 
@@ -3121,7 +3132,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Employee Advance and Clearing
+[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Employee Advance and Clearing
 [hr_expense_cancel](hr_expense_cancel/) | 16.0.1.0.2 |  | Hr expense cancel
 [hr_expense_invoice](hr_expense_invoice/) | 16.0.2.0.0 |  | Supplier invoices on HR expenses
 [hr_expense_pay_to_vendor](hr_expense_pay_to_vendor/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense - Pay To Vendor
@@ -4377,27 +4388,28 @@ addon | version | maintainers | summary
 [currency_rate_update_boi](currency_rate_update_boi/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [l10n_it_abicab](l10n_it_abicab/) | 16.0.1.0.1 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
 [l10n_it_account](l10n_it_account/) | 16.0.1.1.0 |  | Modulo base usato come dipendenza di altri moduli contabili
-[l10n_it_account_stamp](l10n_it_account_stamp/) | 16.0.1.0.4 |  | Gestione automatica dell'imposta di bollo
+[l10n_it_account_stamp](l10n_it_account_stamp/) | 16.0.1.1.0 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 16.0.1.0.1 |  | Gestione natura delle aliquote IVA
 [l10n_it_appointment_code](l10n_it_appointment_code/) | 16.0.1.0.0 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
 [l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.0.1 |  | Gestione Cespiti
 [l10n_it_ateco](l10n_it_ateco/) | 16.0.1.1.1 |  | ITA - Codici Ateco
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.4 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
-[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.9 |  | Gestione dichiarazioni di intento
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.4.4 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.10 |  | Gestione dichiarazioni di intento
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.4.5 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 16.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 16.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 16.0.1.0.0 | [![andreampiovesana](https://github.com/andreampiovesana.png?size=30px)](https://github.com/andreampiovesana) | Crea collegamento tra i DDT e ordine di vendita/acquisto
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 16.0.1.1.0 |  | Fatture elettroniche
+[l10n_it_fatturapa_auto_sale_order](l10n_it_fatturapa_auto_sale_order/) | 16.0.1.0.0 |  | Automatically set sale orders as related documents
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 16.0.1.1.1 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip_in_rc](l10n_it_fatturapa_import_zip_in_rc/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Importare fatture elettroniche con inversione contabile da un file ZIP.
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.1.0 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.1.1 |  | Emissione fatture elettroniche
-[l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.1 |  | Dichiarazioni d'intento in fatturapa
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.2.0 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.2 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 16.0.1.0.2 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
 [l10n_it_fatturapa_out_sp](l10n_it_fatturapa_out_sp/) | 16.0.1.0.0 |  | Scissione pagamenti in fatturapa
@@ -4405,7 +4417,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 16.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
 [l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.0.1 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
-[l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 16.0.1.0.0 | [![mktsrl](https://github.com/mktsrl.png?size=30px)](https://github.com/mktsrl) | ITA - Bilancio UE con XBRL
+[l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 16.0.1.0.1 | [![mktsrl](https://github.com/mktsrl.png?size=30px)](https://github.com/mktsrl) | ITA - Bilancio UE con XBRL
 [l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.2 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 16.0.1.0.0 |  | ITA - Tipi di documento fiscale per dichiarativi
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 16.0.1.0.0 |  | Condizioni di pagamento delle fatture elettroniche
@@ -4434,7 +4446,7 @@ addon | version | maintainers | summary
 [l10n_it_website_portal_fiscalcode](l10n_it_website_portal_fiscalcode/) | 16.0.1.0.0 |  | Add fiscal code to details of frontend user
 [l10n_it_website_portal_ipa](l10n_it_website_portal_ipa/) | 16.0.1.0.1 |  | Aggiunge l'indice PA (IPA) tra i dettagli dell'utente nel portale.
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 16.0.1.0.0 |  | Website Sale FiscalCode
-[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 16.0.1.1.4 |  | ITA - Ritenute d'acconto
+[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 16.0.1.1.5 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_financial_report](l10n_it_withholding_tax_financial_report/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione Ritenute d'acconto e Rendiconti contabili
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 16.0.1.1.0 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 16.0.1.0.0 |  | ITA - Causali pagamento per ritenute d'acconto
@@ -5078,7 +5090,8 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.6.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.0.1 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.1.0.0 |  | Force SII communication type on invoices
+[l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.1.0.1 |  | Force SII communication type on invoices
+[l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.1.0.1 | [![Abranes](https://github.com/Abranes.png?size=30px)](https://github.com/Abranes) [![Reyes4711-S73](https://github.com/Reyes4711-S73.png?size=30px)](https://github.com/Reyes4711-S73) | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.1.8.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
@@ -5098,7 +5111,7 @@ addon | version | maintainers | summary
 [l10n_es_partner](l10n_es_partner/) | 16.0.2.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 16.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.1.0 |  | Exportación de fichero bancario Confirming estándar AEF
-[l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
+[l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.1 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.2 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 16.0.1.0.2 |  | Envío de pedidos del TPV al SII
@@ -5161,6 +5174,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[ebill_postfinance](ebill_postfinance/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Postfinance eBill integration
+[ebill_postfinance_server_env](ebill_postfinance_server_env/) | 16.0.1.0.0 |  | Server environment for eBill Postfinance
+[ebill_postfinance_stock](ebill_postfinance_stock/) | 16.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add stock integration to Postfinance eBill
 [l10n_ch_account_tags](l10n_ch_account_tags/) | 16.0.1.0.0 |  | Switzerland Account Tags
 [l10n_ch_mis_reports](l10n_ch_mis_reports/) | 16.0.1.0.0 |  | Specific MIS reports for switzerland localization
 [l10n_ch_partner_address_street3](l10n_ch_partner_address_street3/) | 16.0.1.0.0 |  | Take into account street3 in QR-bills
@@ -5262,6 +5278,7 @@ addon | version | maintainers | summary
 [l10n_th_fonts](l10n_th_fonts/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all Thai fonts
 [l10n_th_mis_report](l10n_th_mis_report/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
 [l10n_th_partner](l10n_th_partner/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Partner
+[l10n_th_promptpay](l10n_th_promptpay/) | 16.0.1.0.0 |  | Use PromptPay QR code with transfer acquirer.
 [l10n_th_tier_department](l10n_th_tier_department/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level
 [l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level Demo
 
@@ -5603,11 +5620,11 @@ addon | version | maintainers | summary
 [delivery_roulier](delivery_roulier/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_option](delivery_roulier_option/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
 [delivery_state](delivery_state/) | 16.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
-[partner_delivery_schedule](partner_delivery_schedule/) | 16.0.1.0.0 |  | Set on partners a schedule for delivery goods
-[partner_delivery_zone](partner_delivery_zone/) | 16.0.1.1.0 |  | This module allows to create partner delivery zones for physical products
+[partner_delivery_schedule](partner_delivery_schedule/) | 16.0.1.1.0 |  | Set on partners a schedule for delivery goods
+[partner_delivery_zone](partner_delivery_zone/) | 16.0.1.2.0 |  | This module allows to create partner delivery zones for physical products
 [server_environment_delivery](server_environment_delivery/) | 16.0.1.0.0 |  | Configure prod environment for delivery carriers
 [stock_picking_delivery_link](stock_picking_delivery_link/) | 16.0.1.1.4 |  | Adds link to the delivery on all intermediate operations.
-[stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 16.0.1.0.0 |  | Show delivery cost in delivery slip and picking operations reports
+[stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 16.0.1.1.0 |  | Show delivery cost in delivery slip and picking operations reports
 
 [//]: # (end addons)
 
@@ -5661,7 +5678,7 @@ addon | version | maintainers | summary
 [product_multi_barcode](product_multi_barcode/) | 16.0.1.0.1 |  | Multiple barcodes on products
 [product_multi_barcode_constraint_per_company](product_multi_barcode_constraint_per_company/) | 16.0.1.0.1 |  | Glue module for product_multi_barcode andproduct_barcode_constraint_per_company
 [product_multi_barcode_stock_menu](product_multi_barcode_stock_menu/) | 16.0.1.0.0 |  | Multiple barcodes menu
-[product_packaging_multi_barcode](product_packaging_multi_barcode/) | 16.0.1.2.0 |  | Multiple barcodes on product packagings
+[product_packaging_multi_barcode](product_packaging_multi_barcode/) | 16.0.1.3.0 |  | Multiple barcodes on product packagings
 
 [//]: # (end addons)
 
@@ -5754,7 +5771,7 @@ addon | version | maintainers | summary
 [stock_picking_grn_mandatory](stock_picking_grn_mandatory/) | 16.0.1.0.0 |  | This module allows to require a GRN (Goods Receive Note) when doing a Stock Picking
 [stock_picking_group_by_base](stock_picking_group_by_base/) | 16.0.1.0.0 |  | Allows to define a way to create index on extensible domain
 [stock_picking_group_by_max_weight](stock_picking_group_by_max_weight/) | 16.0.1.0.0 |  | Allows to filter available pickings for which a maximum weight is not exceeded.
-[stock_picking_group_by_partner_by_carrier](stock_picking_group_by_partner_by_carrier/) | 16.0.1.1.1 |  | Stock Picking: group by partner and carrier
+[stock_picking_group_by_partner_by_carrier](stock_picking_group_by_partner_by_carrier/) | 16.0.1.2.0 |  | Stock Picking: group by partner and carrier
 [stock_picking_group_by_partner_by_carrier_by_date](stock_picking_group_by_partner_by_carrier_by_date/) | 16.0.1.0.0 |  | Stock Picking: group by partner and carrier and scheduled date
 [stock_picking_import_serial_number](stock_picking_import_serial_number/) | 16.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Import S/N from excel file for incoming pickings
 [stock_picking_info_lot](stock_picking_info_lot/) | 16.0.1.0.0 |  | Add lot information on Stock Transfer lines
@@ -5925,7 +5942,9 @@ addon | version | maintainers | summary
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 16.0.1.0.1 |  | Allows to search for picking from supplierinfo code
 [stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.0 |  | Allows to have a better display name for Stock Storage Category Capacity model
 [stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.0 |  | Stock Valuation Layer Accounting Date
+[stock_valuation_layer_inventory_filter](stock_valuation_layer_inventory_filter/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Allows to filter Inventory Adjustments on Stock Valuation Layers
 [stock_valuation_layer_total_value](stock_valuation_layer_total_value/) | 16.0.1.0.0 |  | Show total value on tree and form view
+[stock_vlm_mgmt](stock_vlm_mgmt/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Light self contained alternative for VLM integrations
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
 
@@ -5983,13 +6002,13 @@ addon | version | maintainers | summary
 [stock_average_daily_sale](stock_average_daily_sale/) | 16.0.1.0.0 |  | Allows to gather delivered products average on daily basis
 [stock_card_report](stock_card_report/) | 16.0.1.0.0 |  | Add stock card report on Inventory Reporting.
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 16.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
-[stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 16.0.1.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Delivery Driver info in Stock Picking reports
+[stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 16.0.1.1.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Delivery Driver info in Stock Picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Adds a note in Stock Picking shown on external reports like Delivery Slip
 [stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Stock Picking Report Header Repeater
 [stock_picking_report_incoming_delivery_address](stock_picking_report_incoming_delivery_address/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow show delivery address in report when picking type is incoming
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 16.0.1.0.0 |  | Show delivery address when picking type is internal
 [stock_picking_report_qty_undelivered](stock_picking_report_qty_undelivered/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Print a summary of the undelivered quantity
-[stock_picking_report_salesperson](stock_picking_report_salesperson/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Stock Picking reports
+[stock_picking_report_salesperson](stock_picking_report_salesperson/) | 16.0.1.1.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Stock Picking reports
 [stock_picking_report_valued](stock_picking_report_valued/) | 16.0.1.1.2 |  | Adding Valued Picking on Delivery Slip report
 [stock_quantity_history_location](stock_quantity_history_location/) | 16.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![rolandojduartem](https://github.com/rolandojduartem.png?size=30px)](https://github.com/rolandojduartem) | Provides stock quantity by location on past date
 [stock_report_quantity_by_location](stock_report_quantity_by_location/) | 16.0.1.0.0 |  | Stock Report Quantity By Location
@@ -6087,7 +6106,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 16.0.1.8.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 16.0.1.8.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.5.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6157,7 +6176,7 @@ addon | version | maintainers | summary
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
 [shopfloor_workstation_mobile](shopfloor_workstation_mobile/) | 16.0.1.0.0 |  | Shopfloor mobile app integration for workstation
-[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.2.3 |  | Release Operations based on available to promise
+[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.2.4 |  | Release Operations based on available to promise
 [stock_available_to_promise_release_block](stock_available_to_promise_release_block/) | 16.0.1.1.1 |  | Block Release of Operations
 [stock_available_to_promise_release_exclude_location](stock_available_to_promise_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from available stock
 [stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.2 |  | Dynamic routing of stock moves
@@ -6234,6 +6253,7 @@ addon | version | maintainers | summary
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp Attachment Mgmt
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 16.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 16.0.1.2.0 |  | Make it easy to navigate through BoM hierarchy.
+[mrp_bom_image](mrp_bom_image/) | 16.0.1.0.0 |  | Add product Images to BoM
 [mrp_bom_line_formula_quantity](mrp_bom_line_formula_quantity/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Compute the quantity of a Production Line using a formula in the BoM Line.
 [mrp_bom_location](mrp_bom_location/) | 16.0.1.1.1 |  | Adds location field to Bill of Materials and its components.
 [mrp_bom_note](mrp_bom_note/) | 16.0.1.0.0 |  | Notes in Bill of Materials
@@ -6657,7 +6677,7 @@ addon | version | maintainers | summary
 [pos_product_cost_security](pos_product_cost_security/) | 16.0.1.0.0 |  | Compatibility between Point of Sale and Product Cost Security
 [product_abc_classification](product_abc_classification/) | 16.0.1.0.1 |  | ABC classification for sales and warehouse management
 [product_abc_classification_sale_stock](product_abc_classification_sale_stock/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![lmarion-source](https://github.com/lmarion-source.png?size=30px)](https://github.com/lmarion-source) | Compute ABC classification from the number of delivered sale order line by product
-[product_assortment](product_assortment/) | 16.0.1.0.2 |  | Adds the ability to manage products assortment
+[product_assortment](product_assortment/) | 16.0.2.0.0 |  | Adds the ability to manage products assortment
 [product_attribute_archive](product_attribute_archive/) | 16.0.1.0.0 |  | Add an active field on product attributes
 [product_attribute_company_favorite](product_attribute_company_favorite/) | 16.0.1.0.0 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Possibility to set favorite product attributes per company
 [product_attribute_model_link](product_attribute_model_link/) | 16.0.1.0.1 |  | Use any model records as product attribute values
@@ -7341,11 +7361,11 @@ addon | version | maintainers | summary
 [mail_quoted_reply](mail_quoted_reply/) | 16.0.1.0.2 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 16.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_send_confirmation](mail_send_confirmation/) | 16.0.1.0.0 |  | Mail Send Confirmation
-[mail_show_follower](mail_show_follower/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
+[mail_show_follower](mail_show_follower/) | 16.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_template_multi_attachment](mail_template_multi_attachment/) | 16.0.1.0.0 |  | Module who allows to generate multi attachments on an email template.
 [mail_template_substitute](mail_template_substitute/) | 16.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
 [mail_tracking](mail_tracking/) | 16.0.1.0.5 |  | Email tracking system for all mails sent
-[mail_tracking_mailgun](mail_tracking_mailgun/) | 16.0.1.0.0 |  | Mail tracking and Mailgun webhooks integration
+[mail_tracking_mailgun](mail_tracking_mailgun/) | 16.0.1.0.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 16.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_contact_active](mass_mailing_contact_active/) | 16.0.1.0.0 |  | Adds active feature on mailing list contact and subscriptions
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 16.0.1.0.1 |  | Know and track (un)subscription reasons, GDPR compliant
@@ -8010,9 +8030,9 @@ addon | version | maintainers | summary
 [barcode_action](barcode_action/) | 16.0.1.0.0 |  | Allows to use barcodes as a launcher
 [base_archive_security](base_archive_security/) | 16.0.1.0.1 | [![imlopes](https://github.com/imlopes.png?size=30px)](https://github.com/imlopes) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Controls who can archive or unarchive records
 [base_binary_url_import](base_binary_url_import/) | 16.0.1.0.0 |  | Wizard to import binary files from URL on existing records
-[base_cancel_confirm](base_cancel_confirm/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
+[base_cancel_confirm](base_cancel_confirm/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
 [base_custom_filter](base_custom_filter/) | 16.0.1.1.0 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) [![ForgeFlow](https://github.com/ForgeFlow.png?size=30px)](https://github.com/ForgeFlow) | Add custom filters in standard filters and group by dropdowns
-[base_export_manager](base_export_manager/) | 16.0.1.0.0 |  | Manage model export profiles
+[base_export_manager](base_export_manager/) | 16.0.1.0.1 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 16.0.1.0.0 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 16.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
@@ -8021,7 +8041,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 16.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.0 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 16.0.2.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 16.0.2.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Add Tier Review Boards
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
 [base_tier_validation_formula](base_tier_validation_formula/) | 16.0.1.0.2 |  | Formulas for Base tier validation

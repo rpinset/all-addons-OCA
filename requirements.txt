@@ -90,6 +90,8 @@ xmltodict
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
+# generated from manifests external_dependencies
+validator-collection
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 # generated from manifests external_dependencies
 geojson
@@ -195,10 +197,14 @@ xmlsig
 xmltodict
 zeep
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
+# generated from manifests external_dependencies
+ebilling_postfinance
+zeep
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
 # generated from manifests external_dependencies
 num2words
+promptpay
 # From [https://github.com/OCA/l10n-turkey.git](https://github.com/OCA/l10n-turkey.git)
 # From [https://github.com/OCA/l10n-united-kingdom.git](https://github.com/OCA/l10n-united-kingdom.git)
 # From [https://github.com/OCA/l10n-uruguay.git](https://github.com/OCA/l10n-uruguay.git)

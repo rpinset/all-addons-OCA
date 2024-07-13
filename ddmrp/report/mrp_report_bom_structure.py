@@ -86,10 +86,13 @@ class BomStructureReport(models.AbstractModel):
             data, level, unfolded_ids, unfolded, parent_unfolded
         )
         for component in data.get("components", []):
-            if not component["bom_id"]:
-                continue
             bom_line = next(
-                filter(lambda l: l.get("bom_id", None) == component["bom_id"], lines)
+                filter(
+                    lambda line: line.get("bom_id", False) == component["bom_id"]
+                    and line.get("name", False) == component["name"]
+                    and line.get("level", False) == component["level"],
+                    lines,
+                )
             )
             if bom_line:
                 bom_line["is_buffered"] = component["is_buffered"]

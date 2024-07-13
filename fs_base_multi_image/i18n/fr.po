@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-02-19 10:34+0000\n"
+"PO-Revision-Date: 2024-07-12 10:58+0000\n"
 "Last-Translator: \"Benjamin Willig (ACSONE)\" <benjamin.willig@acsone.eu>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: fs_base_multi_image
 #. odoo-javascript
@@ -177,7 +177,7 @@ msgstr "Image spécifique (128)"
 msgid "You can drag and drop images to create new records or"
 msgstr ""
 "Vous pouvez glisser/déposer des images pour créer des nouveaux "
-"enregistrements où"
+"enregistrements ou"
 
 #. module: fs_base_multi_image
 #. odoo-python
