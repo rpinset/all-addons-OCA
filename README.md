@@ -93,16 +93,11 @@ Date:   Mon Jul 8 09:06:52 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 43b87a590272cafde1175a508730a26c6cae8cf6
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue May 14 10:00:36 2024 +0000
+commit 59a515403a4e7c4dd9a27e539e7c4b73c27326b0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jul 10 11:02:30 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_line_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_line_report/it/
+    [BOT] post-merge updates
 
 
 ## account-invoicing
@@ -199,11 +194,16 @@ Date:   Wed May 1 18:05:31 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit e4d72407eea8d54270ad709f451c34a23042e5a3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 20:45:50 2024 +0000
+commit 81c677899f260c432e18503511925180835ca2a0
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jul 10 16:04:17 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order/
 
 
 ## account-reconcile
@@ -465,9 +465,9 @@ Date:   Fri May 17 08:15:21 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 42e8037bc7ef7db89d4a7b5603f82e20822c541f
+commit 284bdb2948c031cb725357a2b589e9e3d46e95fc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 2 09:08:57 2024 +0000
+Date:   Wed Jul 10 08:03:02 2024 +0000
 
     [BOT] post-merge updates
 
@@ -539,11 +539,16 @@ Date:   Wed May 8 14:05:23 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 1de9d2b962ff075dc2cf88b9e725dcc9fd6948bc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 13 13:10:56 2024 +0000
+commit 4d263dd7a005aa486e7700be798c565b810e7b09
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jul 10 09:28:14 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-14.0/edi-14.0-base_edi
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-base_edi/
 
 
 ## field-service
@@ -888,16 +893,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit d2bffbf6a8d1f7e3ed38741d1c315d39aa6396e7
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Mon Jul 8 10:08:36 2024 +0000
+commit 912bf655f7de87f4445e82d7598ed352bd8366c8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 12 15:20:00 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (76 of 76 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_declaration_of_intent
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_declaration_of_intent/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1328,16 +1328,16 @@ Date:   Wed May 1 18:54:44 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit a15aafa9052025f89bc2a4e012c766750508a58b
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Mon May 20 14:15:31 2024 +0000
+commit 1705efb5870d42450c5bd5f340dca803a51b60b2
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jul 10 10:41:45 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Update translation files
     
-    Currently translated at 100.0% (39 of 39 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: project-14.0/project-14.0-project_recalculate
-    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_recalculate/pt_BR/
+    Translation: project-14.0/project-14.0-project_task_note
+    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_task_note/
 
 
 ## project-agile
@@ -1420,9 +1420,9 @@ Date:   Tue Jul 9 07:45:41 2024 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 7b3cda3b9fd805aaada4c0c8d767d2f14bb713e3
+commit 1692a17ea51b6d58f508949338867bfa39e8ede9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 24 08:34:27 2024 +0000
+Date:   Wed Jul 10 08:05:22 2024 +0000
 
     [BOT] post-merge updates
 

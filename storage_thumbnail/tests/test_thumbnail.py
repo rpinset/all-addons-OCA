@@ -51,6 +51,18 @@ class TestStorageThumbnail(SavepointComponentCase):
         thumb.unlink()
         self.assertTrue(file_id.to_delete)
 
+    def test_image_get_or_create_thumbnail_no_duplicate(self):
+        # Ensure no duplicate is generated thanks to unique url_key
+        image = self._create_image()
+        self.assertTrue(image.url)
+        self.assertEqual(len(image.thumbnail_ids), 2)
+        thumb = image.thumb_small_id
+        thumb.url_key = "test"
+        existing_thumb = image.get_or_create_thumbnail(
+            thumb.size_x, thumb.size_y, url_key="TEST"
+        )
+        self.assertEqual(thumb, existing_thumb)
+
     def test_model(self):
         image = self._create_image()
         self.assertTrue(image.url)

@@ -398,7 +398,7 @@ addon | version | maintainers | summary
 [account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 14.0.1.0.0 |  | Adds the related sale line position on invoice line.
 [account_invoice_production_lot](account_invoice_production_lot/) | 14.0.1.0.1 |  | Display delivered serial numbers in invoice
 [account_invoice_report_due_list](account_invoice_report_due_list/) | 14.0.2.0.0 |  | Show multiple due data in invoice
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 14.0.1.1.7 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 14.0.1.2.0 |  | Print invoice lines grouped by picking
 [account_invoice_report_grouped_by_picking_sale_mrp](account_invoice_report_grouped_by_picking_sale_mrp/) | 14.0.1.0.1 |  | Take into account BoM kits in invoice report grouped by picking
 [account_invoice_report_hide_line](account_invoice_report_hide_line/) | 14.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Hide invoice lines from the PDF report if the unit price is 0
 [partner_time_to_pay](partner_time_to_pay/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add receivables and payables statistics to partners
@@ -999,12 +999,12 @@ addon | version | maintainers | summary
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 14.0.1.0.0 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 14.0.1.0.0 |  | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 14.0.2.1.1 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 14.0.2.0.1 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 14.0.2.1.0 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 14.0.2.0.2 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 14.0.2.1.1 |  | Create SEPA files for Direct Debit
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.0.0 |  | Account Invoice Select for Payment
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
-[account_payment_order](account_payment_order/) | 14.0.2.5.4 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 14.0.2.5.5 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
@@ -2417,8 +2417,8 @@ addon | version | maintainers | summary
 [sale_commission_check_deposit](sale_commission_check_deposit/) | 14.0.1.0.0 |  | Sales commission check deposit
 [sale_commission_delegated_partner](sale_commission_delegated_partner/) | 14.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
-[sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.2 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
-[sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
+[sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.3 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
+[sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
 [sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.0 |  | Sales commissions based on paid amount
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
@@ -2800,7 +2800,7 @@ addon | version | maintainers | summary
 [base_business_document_import](base_business_document_import/) | 14.0.3.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Use phone numbers to match partners upon import of business documents
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 14.0.1.1.2 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Base for managing e-billing contracts
-[base_edi](base_edi/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
+[base_edi](base_edi/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
 [base_ubl](base_ubl/) | 14.0.1.8.2 |  | Base module for Universal Business Language (UBL)
 [base_ubl_payment](base_ubl_payment/) | 14.0.1.0.0 |  | Payment-related code for Universal Business Language (UBL)
@@ -4719,7 +4719,7 @@ addon | version | maintainers | summary
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 14.0.1.0.2 |  | ITA - Bolle doganali
 [l10n_it_central_journal](l10n_it_central_journal/) | 14.0.1.0.1 |  | ITA - Libro giornale
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
-[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.1.15 |  | Gestione dichiarazioni di intento
+[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.1.16 |  | Gestione dichiarazioni di intento
 [l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.4.3 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 14.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 14.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
@@ -4734,7 +4734,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.3.0 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.6.0 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.7.0 |  | Emissione fatture elettroniche
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 14.0.1.0.5 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 14.0.1.0.0 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 14.0.1.3.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
@@ -4770,14 +4770,14 @@ addon | version | maintainers | summary
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 14.0.1.0.2 |  | ITA - Esigibilità IVA
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 14.0.1.1.0 |  | ITA - Registri IVA
 [l10n_it_vat_registries_split_payment](l10n_it_vat_registries_split_payment/) | 14.0.1.1.1 |  | Modulo di congiunzione tra registri IVA e scissione dei pagamenti
-[l10n_it_vat_statement_communication](l10n_it_vat_statement_communication/) | 14.0.1.0.0 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
+[l10n_it_vat_statement_communication](l10n_it_vat_statement_communication/) | 14.0.1.0.1 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
 [l10n_it_vat_statement_split_payment](l10n_it_vat_statement_split_payment/) | 14.0.1.0.2 |  | Migliora la liquidazione dell'IVA tenendo in considerazione la scissione dei pagamenti
 [l10n_it_website_portal_fatturapa](l10n_it_website_portal_fatturapa/) | 14.0.1.0.0 |  | Add fatturapa fields and checks in frontend user's details
 [l10n_it_website_portal_fiscalcode](l10n_it_website_portal_fiscalcode/) | 14.0.1.0.1 |  | Add fiscal code to details of frontend user
 [l10n_it_website_portal_ipa](l10n_it_website_portal_ipa/) | 14.0.1.0.0 |  | Aggiunge l'indice PA (IPA) tra i dettagli dell'utente nel portale.
 [l10n_it_website_sale_fatturapa](l10n_it_website_sale_fatturapa/) | 14.0.1.0.0 |  | Aggiunge i campi necessari alla fatturazione elettronica nel form del checkout
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 14.0.1.1.0 |  | Website Sale FiscalCode
-[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.1.11 |  | ITA - Ritenute d'acconto
+[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.1.12 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 14.0.1.0.2 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 14.0.1.0.2 |  | ITA - Causali pagamento per ritenute d'acconto
 
@@ -7524,6 +7524,7 @@ addon | version | maintainers | summary
 [project_task_description_template](project_task_description_template/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Module for Task Templates
 [project_task_digitized_signature](project_task_digitized_signature/) | 14.0.1.0.0 |  | Project Task Digitized Signature
 [project_task_material](project_task_material/) | 14.0.1.0.1 |  | Record products spent in a Task
+[project_task_note](project_task_note/) | 14.0.1.0.0 | [![carolina-fernandez](https://github.com/carolina-fernandez.png?size=30px)](https://github.com/carolina-fernandez) | Add notes in project tasks
 [project_task_project_required](project_task_project_required/) | 14.0.1.0.0 |  | Set project on task as a mandatory field
 [project_task_pull_request](project_task_pull_request/) | 14.0.1.1.0 |  | Adds a field for a PR URI to project tasks
 [project_task_recurring_activity](project_task_recurring_activity/) | 14.0.1.0.0 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Project Task Recurring Activity
@@ -7989,7 +7990,7 @@ addon | version | maintainers | summary
 [storage_import_image_advanced](storage_import_image_advanced/) | 14.0.1.0.4 |  | Import product images using CSV
 [storage_media](storage_media/) | 14.0.2.1.1 |  | Give the posibility to store media data in Odoo
 [storage_media_product](storage_media_product/) | 14.0.2.3.0 |  | Link media to products and categories
-[storage_thumbnail](storage_thumbnail/) | 14.0.2.4.1 |  | Abstract module that add the possibility to have thumbnail
+[storage_thumbnail](storage_thumbnail/) | 14.0.2.4.2 |  | Abstract module that add the possibility to have thumbnail
 
 
 Unported addons

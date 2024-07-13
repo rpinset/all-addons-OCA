@@ -101,6 +101,7 @@ class ThumbnailMixing(models.AbstractModel):
         return thumbnail
 
     def get_or_create_thumbnail(self, size_x, size_y, url_key=None):
+        url_key = self._get_url_key(url_key)
         thumbnail = self.get_existing_thumbnail(size_x, size_y, url_key=url_key)
         if not thumbnail and self.data:
             vals = self.env["storage.thumbnail"]._prepare_thumbnail(
