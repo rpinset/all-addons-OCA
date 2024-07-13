@@ -132,8 +132,11 @@ PyJWT
 # generated from manifests external_dependencies
 chardet
 cryptography
+cryptography==3.4.8
+pycountry
 pycryptodome
 unidecode
+xmlsig
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
@@ -144,6 +147,8 @@ unidecode
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
+# generated from manifests external_dependencies
+roulier
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 # generated from manifests external_dependencies
 python-barcode

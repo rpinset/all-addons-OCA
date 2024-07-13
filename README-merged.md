@@ -690,6 +690,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_risk](account_financial_risk/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
+[account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
 [sale_financial_risk](sale_financial_risk/) | 17.0.1.0.0 |  | Manage partner risk in sales orders
 
 [//]: # (end addons)
@@ -1595,7 +1596,7 @@ addon | version | maintainers | summary
 [sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 17.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_exception](sale_exception/) | 17.0.1.0.0 |  | Custom exceptions on sale order
-[sale_fixed_discount](sale_fixed_discount/) | 17.0.2.0.0 |  | Allows to apply fixed amount discounts in sales orders.
+[sale_fixed_discount](sale_fixed_discount/) | 17.0.2.1.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 17.0.1.1.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_invoice_policy](sale_invoice_policy/) | 17.0.1.0.0 |  | Sales Management: let the user choose the invoice policy on the order
 [sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
@@ -1666,6 +1667,8 @@ addon | version | maintainers | summary
 [crm_lead_code](crm_lead_code/) | 17.0.1.0.1 |  | Sequential Code for Leads / Opportunities
 [crm_lead_product](crm_lead_product/) | 17.0.1.0.0 |  | Adds a lead line in the lead/opportunity model in odoo
 [crm_lead_vat](crm_lead_vat/) | 17.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add VAT field to leads
+[crm_phonecall](crm_phonecall/) | 17.0.1.0.0 |  | CRM Phone Calls
+[crm_phonecall_summary_predefined](crm_phonecall_summary_predefined/) | 17.0.1.0.0 |  | Allows to choose from a defined summary list
 [crm_stage_probability](crm_stage_probability/) | 17.0.1.0.0 |  | Define fixed probability on the stages
 
 [//]: # (end addons)
@@ -1730,6 +1733,9 @@ addon | version | maintainers | summary
 [partner_contact_job_position](partner_contact_job_position/) | 17.0.1.0.0 |  | Categorize job positions for contacts
 [partner_contact_nationality](partner_contact_nationality/) | 17.0.1.0.0 |  | Add nationality field to contacts
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 17.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Add a page to contacts form to put personal information
+[partner_deduplicate_acl](partner_deduplicate_acl/) | 17.0.1.0.0 |  | Contact deduplication with fine-grained permission control
+[partner_deduplicate_by_website](partner_deduplicate_by_website/) | 17.0.1.0.0 |  | Deduplicate Contacts by Website
+[partner_deduplicate_filter](partner_deduplicate_filter/) | 17.0.1.0.0 |  | Exclude records from the deduplication
 [partner_display_name_line_break](partner_display_name_line_break/) | 17.0.1.0.0 |  | Split the company and the partner name on two different lines
 [partner_email_check](partner_email_check/) | 17.0.1.0.0 |  | Validate email address field
 [partner_email_duplicate_warn](partner_email_duplicate_warn/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Warning banner on partner form if another partner has the same email
@@ -1926,6 +1932,7 @@ addon | version | maintainers | summary
 [commission_formula](commission_formula/) | 17.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 17.0.1.0.0 |  | HR commissions
 [sale_commission](sale_commission/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
+[sale_commission_salesman](sale_commission_salesman/) | 17.0.1.0.0 |  | Sales commissions from salesman
 
 [//]: # (end addons)
 
@@ -4411,6 +4418,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.0 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
+[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
@@ -4852,6 +4860,7 @@ addon | version | maintainers | summary
 [base_delivery_carrier_label](base_delivery_carrier_label/) | 17.0.1.0.1 |  | Base module for carrier labels
 [delivery_carrier_account](delivery_carrier_account/) | 17.0.1.0.0 |  | Delivery Carrier Account
 [delivery_carrier_info](delivery_carrier_info/) | 17.0.1.0.0 |  | Add code on carrier
+[delivery_roulier](delivery_roulier/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 
 [//]: # (end addons)
 
@@ -5190,7 +5199,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.0.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.0.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_history](ddmrp_history/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
 [ddmrp_warning](ddmrp_warning/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
@@ -5681,7 +5690,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_configurator](product_variant_configurator/) | 17.0.1.0.0 |  | Provides an abstract model for product variant configuration.
-[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.0.0 |  | Allows to write fixed prices in product variants
+[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.1.0 |  | Allows to write fixed prices in product variants
 
 [//]: # (end addons)
 
@@ -5915,6 +5924,7 @@ addon | version | maintainers | summary
 [contract](contract/) | 17.0.1.0.1 |  | Recurring - Contracts Management
 [contract_sale](contract_sale/) | 17.0.1.0.0 |  | Contract from Sale
 [product_contract](product_contract/) | 17.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
+[subscription_oca](subscription_oca/) | 17.0.1.0.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -6141,6 +6151,7 @@ addon | version | maintainers | summary
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
 [mail_template_substitute](mail_template_substitute/) | 17.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
 [mail_tracking](mail_tracking/) | 17.0.1.0.0 |  | Email tracking system for all mails sent
+[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 17.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 
@@ -6552,7 +6563,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_environment](mail_environment/) | 17.0.1.0.0 |  | Configure mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 17.0.1.0.2 |  | move some configurations out of the database
+[server_environment](server_environment/) | 17.0.1.1.0 |  | move some configurations out of the database
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
 
 [//]: # (end addons)
@@ -6599,7 +6610,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_user_role](base_user_role/) | 17.0.1.0.3 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
+[base_user_role](base_user_role/) | 17.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
 [base_user_role_company](base_user_role_company/) | 17.0.1.1.1 |  | User roles by company
 
 [//]: # (end addons)
@@ -7498,12 +7509,12 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
 [web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.1 |  | Web Environment Ribbon
-[web_favicon](web_favicon/) | 17.0.1.0.1 |  | Allows to set a custom shortcut icon (aka favicon)
+[web_favicon](web_favicon/) | 17.0.1.0.2 |  | Allows to set a custom shortcut icon (aka favicon)
 [web_group_expand](web_group_expand/) | 17.0.1.0.0 |  | Group Expand Buttons
 [web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_refresher](web_refresher/) | 17.0.1.1.0 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 17.0.1.0.0 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 17.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 17.0.1.0.1 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
 [web_theme_classic](web_theme_classic/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Contrasted style on fields to improve the UI.
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 17.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 17.0.1.0.0 |  | Open the linked resource when clicking on their name
