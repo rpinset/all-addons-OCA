@@ -570,9 +570,9 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 0fc05edb7eda94b91b98d7fa0c88e7dc8792fb8c
+commit 4c875277fd1b603bb2fe813b8da6fef7744eed6e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 19 10:36:16 2024 +0000
+Date:   Wed Jul 17 17:01:00 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1136,16 +1136,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7fbff0578e0579472b68269ece26cd9e5bbcf8bc
+commit 81a697cd3120f101a19aef5eb902f22ce7a285b0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 24 11:49:13 2024 +0000
+Date:   Tue Jul 16 11:00:38 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 44.1% (15 of 34 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_account_inventory_force_date
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_account_inventory_force_date/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_quant_manual_assign
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_quant_manual_assign/it/
 
 
 ## stock-logistics-reporting
