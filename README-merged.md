@@ -474,7 +474,7 @@ addon | version | maintainers | summary
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 14.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 14.0.1.0.3 |  | This module allows the user to refund specific lines in a invoice
 [account_invoice_refund_link](account_invoice_refund_link/) | 14.0.1.0.5 |  | Show links between refunds and their originator invoices
-[account_invoice_refund_reason](account_invoice_refund_reason/) | 14.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
+[account_invoice_refund_reason](account_invoice_refund_reason/) | 14.0.1.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Account Invoice Refund Reason.
 [account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 14.0.1.0.0 |  | Allow to Reinvoice a Refund
 [account_invoice_restrict_linked_so](account_invoice_restrict_linked_so/) | 14.0.1.0.1 |  | Restricts editing the Product, Quantity and Unit Price columns for invoice lines that originated in Sales Orders.
@@ -1001,10 +1001,10 @@ addon | version | maintainers | summary
 [account_banking_pain_base](account_banking_pain_base/) | 14.0.2.1.1 |  | Base module for PAIN file generation
 [account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 14.0.2.0.2 |  | Create SEPA XML files for Credit Transfers
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 14.0.2.1.1 |  | Create SEPA files for Direct Debit
-[account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.0.0 |  | Account Invoice Select for Payment
+[account_invoice_select_for_payment](account_invoice_select_for_payment/) | 14.0.1.1.0 |  | Account Invoice Select for Payment
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
-[account_payment_order](account_payment_order/) | 14.0.2.5.5 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 14.0.2.5.6 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
@@ -2069,6 +2069,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_claim](crm_claim/) | 14.0.1.1.0 |  | Track your customers/vendors claims and grievances.
 [crm_claim_code](crm_claim_code/) | 14.0.1.0.0 |  | Sequential Code for Claims
+[crm_claim_type](crm_claim_type/) | 14.0.1.0.0 |  | Claim types for CRM
 [crm_industry](crm_industry/) | 14.0.1.0.0 |  | Link leads/opportunities to industries
 [crm_l10n_eu_nace](crm_l10n_eu_nace/) | 14.0.1.0.0 |  | European NACE categories in CRM
 [crm_lead_code](crm_lead_code/) | 14.0.1.0.0 |  | Sequential Code for Leads / Opportunities
@@ -2414,7 +2415,7 @@ addon | version | maintainers | summary
 [sale_commission](sale_commission/) | 14.0.1.8.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_advance](sale_commission_advance/) | 14.0.1.0.0 | [![ilyasprogrammer](https://github.com/ilyasprogrammer.png?size=30px)](https://github.com/ilyasprogrammer) | Down payment invoice commission
 [sale_commission_agent_restrict](sale_commission_agent_restrict/) | 14.0.2.0.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales Commissions Agent Restrict
-[sale_commission_check_deposit](sale_commission_check_deposit/) | 14.0.1.0.0 |  | Sales commission check deposit
+[sale_commission_check_deposit](sale_commission_check_deposit/) | 14.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sales commission check deposit
 [sale_commission_delegated_partner](sale_commission_delegated_partner/) | 14.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
 [sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.3 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
@@ -2810,7 +2811,7 @@ addon | version | maintainers | summary
 [edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 14.0.1.5.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allows definition of exchanges via templates.
 [edi_exchange_template_party_data](edi_exchange_template_party_data/) | 14.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Glue module betweeb edi_exchange_template and edi_party_data
-[edi_oca](edi_oca/) | 14.0.1.22.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 14.0.1.22.3 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_party_data_oca](edi_party_data_oca/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow to configure and retrieve party information for EDI exchanges.
 [edi_pdf2data_oca](edi_pdf2data_oca/) | 14.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Module that allows to import data from a pdf
 [edi_purchase_oca](edi_purchase_oca/) | 14.0.1.0.0 |  | Define EDI Configuration for Purchase Orders
@@ -4731,7 +4732,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.1 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.3.0 |  | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.3.1 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.7.0 |  | Emissione fatture elettroniche
@@ -5953,7 +5954,7 @@ addon | version | maintainers | summary
 [delivery_price_method](delivery_price_method/) | 14.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_product_domain](delivery_price_product_domain/) | 14.0.1.0.3 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Apply domain to product in shipping charges rules
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 14.0.1.0.3 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
-[delivery_purchase](delivery_purchase/) | 14.0.1.2.0 |  | Delivery costs in purchases
+[delivery_purchase](delivery_purchase/) | 14.0.1.3.0 |  | Delivery costs in purchases
 [delivery_roulier](delivery_roulier/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
@@ -7978,8 +7979,8 @@ addon | version | maintainers | summary
 [storage_backend_ftp](storage_backend_ftp/) | 14.0.1.1.0 |  | Implement FTP Storage
 [storage_backend_s3](storage_backend_s3/) | 14.0.2.1.0 |  | Implement amazon S3 Storage
 [storage_backend_sftp](storage_backend_sftp/) | 14.0.2.0.3 |  | Implement SFTP Storage
-[storage_file](storage_file/) | 14.0.2.3.1 |  | Storage file in storage backend
-[storage_image](storage_image/) | 14.0.2.2.1 |  | Store image and resized image in a storage backend
+[storage_file](storage_file/) | 14.0.2.4.0 |  | Storage file in storage backend
+[storage_image](storage_image/) | 14.0.2.3.0 |  | Store image and resized image in a storage backend
 [storage_image_backend_migration](storage_image_backend_migration/) | 14.0.1.0.0 |  | Migrate src backend to destination backend
 [storage_image_import](storage_image_import/) | 14.0.1.2.0 |  | Add the possibility to import image for csv base on url
 [storage_image_product](storage_image_product/) | 14.0.3.5.2 |  | Link images to products and categories
@@ -7988,7 +7989,7 @@ addon | version | maintainers | summary
 [storage_image_product_import](storage_image_product_import/) | 14.0.1.0.0 |  | Helper for importing image for csv base on url
 [storage_image_product_pos](storage_image_product_pos/) | 14.0.1.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![pierrickbrun](https://github.com/pierrickbrun.png?size=30px)](https://github.com/pierrickbrun) | Link images to products and categories inside POS
 [storage_import_image_advanced](storage_import_image_advanced/) | 14.0.1.0.4 |  | Import product images using CSV
-[storage_media](storage_media/) | 14.0.2.1.1 |  | Give the posibility to store media data in Odoo
+[storage_media](storage_media/) | 14.0.2.2.0 |  | Give the posibility to store media data in Odoo
 [storage_media_product](storage_media_product/) | 14.0.2.3.0 |  | Link media to products and categories
 [storage_thumbnail](storage_thumbnail/) | 14.0.2.4.2 |  | Abstract module that add the possibility to have thumbnail
 
@@ -8887,12 +8888,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 14.0.4.8.3 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 14.0.4.8.4 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 14.0.1.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [base_rest_auth_jwt](base_rest_auth_jwt/) | 14.0.1.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_jwt security policy into the openapi documentation
 [base_rest_auth_user_service](base_rest_auth_user_service/) | 14.0.1.1.0 |  | Login/logout from session using a REST call
 [base_rest_datamodel](base_rest_datamodel/) | 14.0.4.3.0 |  | Datamodel binding for base_rest
-[base_rest_demo](base_rest_demo/) | 14.0.4.2.4 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
+[base_rest_demo](base_rest_demo/) | 14.0.4.2.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
 [base_rest_pydantic](base_rest_pydantic/) | 14.0.4.3.3 |  | Pydantic binding for base_rest
 [datamodel](datamodel/) | 14.0.3.0.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 14.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo

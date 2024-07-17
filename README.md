@@ -102,9 +102,9 @@ Date:   Wed Jul 10 11:02:30 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 50cb7946de052f9cf3bfe80d0eb042ceb5b6f3c9
+commit d29f7ab523735525ea16886717a2b24affdcc9cc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 9 13:58:24 2024 +0000
+Date:   Wed Jul 17 09:17:03 2024 +0000
 
     [BOT] post-merge updates
 
@@ -194,16 +194,11 @@ Date:   Wed May 1 18:05:31 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 81c677899f260c432e18503511925180835ca2a0
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jul 10 16:04:17 2024 +0000
+commit 449b533c47ab74fffcb6dd2ef3bad46c86364aa4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jul 16 17:12:28 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order/
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -231,16 +226,16 @@ Date:   Wed May 29 15:42:33 2024 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 1e890359c86f134a94dc0177e8a1902a0d807315
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jun 18 10:51:50 2024 +0000
+commit 58c2be7d5d12ff6a3a869aea4a468e8b44c711eb
+Author: Julie LeBrun <julie.lebrun@numigi.com>
+Date:   Tue Jul 16 15:52:06 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (52 of 52 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process/it/
+    Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process_discount
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process_discount/fr/
 
 
 ## connector
@@ -273,16 +268,16 @@ Date:   Tue Dec 19 14:38:47 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 08ecff448d2d6692f4cb54de97bff8798940f45f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 4 11:50:55 2024 +0000
+commit b0e3b0de0b8f5ae56ec7cc0396295aeb3966473d
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Jul 15 10:39:08 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 58.7% (94 of 160 strings)
+    Currently translated at 76.1% (16 of 21 strings)
     
-    Translation: queue-14.0/queue-14.0-queue_job
-    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-queue_job/it/
+    Translation: queue-14.0/queue-14.0-base_export_async
+    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-base_export_async/it/
 
 
 ## connector-accountedge
@@ -405,16 +400,16 @@ Date:   Tue Jul 9 07:24:43 2024 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit bb7d1133abab5a56127c548f6e888535e561774e
-Author: Marcel Savegnago <marcel.savegnago@gmail.com>
-Date:   Thu May 23 17:12:09 2024 +0000
+commit 3827ee0e83071e0183cec65fca667705e1fe651e
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jul 16 14:42:10 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Update translation files
     
-    Currently translated at 100.0% (145 of 145 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: crm-14.0/crm-14.0-crm_claim
-    Translate-URL: https://translation.odoo-community.org/projects/crm-14-0/crm-14-0-crm_claim/pt_BR/
+    Translation: crm-14.0/crm-14.0-crm_claim_type
+    Translate-URL: https://translation.odoo-community.org/projects/crm-14-0/crm-14-0-crm_claim_type/
 
 
 ## partner-contact
@@ -465,11 +460,16 @@ Date:   Fri May 17 08:15:21 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 284bdb2948c031cb725357a2b589e9e3d46e95fc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 10 08:03:02 2024 +0000
+commit 0207d7f3731cdf44a587478acfdf1c293b5e9340
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jul 17 15:18:54 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: commission-14.0/commission-14.0-sale_commission_check_deposit
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_check_deposit/
 
 
 ## event
@@ -539,16 +539,11 @@ Date:   Wed May 8 14:05:23 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 4d263dd7a005aa486e7700be798c565b810e7b09
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jul 10 09:28:14 2024 +0000
+commit 94a72d01298aaa6870fe4e4f44614a4404a1dde1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jul 17 16:31:34 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-14.0/edi-14.0-base_edi
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-base_edi/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -608,16 +603,16 @@ Date:   Wed May 1 18:12:53 2024 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 879f6f422d7b23cb5ae4219cdd4175a844dc0901
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 21 13:43:20 2024 +0000
+commit 74c03ce52cd065c0e2cc83abcb460951a2510947
+Author: QuiJoQuim <quim.rebull@gmail.com>
+Date:   Tue Jul 16 07:22:56 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Catalan)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 46.4% (85 of 183 strings)
     
-    Translation: timesheet-14.0/timesheet-14.0-hr_utilization_report
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-14-0/timesheet-14-0-hr_utilization_report/
+    Translation: timesheet-14.0/timesheet-14.0-hr_timesheet_sheet
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-14-0/timesheet-14-0-hr_timesheet_sheet/ca/
 
 
 ## hr
@@ -893,9 +888,9 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 912bf655f7de87f4445e82d7598ed352bd8366c8
+commit 06235d7cf2162e4e562d1ddf801d260f2cc19c4f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 12 15:20:00 2024 +0000
+Date:   Mon Jul 15 08:35:05 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1110,9 +1105,9 @@ Date:   Wed May 1 18:41:29 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit f39f8ad17eaa26ccacbbde6b20bc0cab4d17edaa
+commit 650875d360692b113e6931eef61c37d332ff80af
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 9 09:35:12 2024 +0000
+Date:   Wed Jul 17 07:21:34 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1420,9 +1415,9 @@ Date:   Tue Jul 9 07:45:41 2024 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 1692a17ea51b6d58f508949338867bfa39e8ede9
+commit 5b6492cf89bf9d9950a921adaa311e454d208f9c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 10 08:05:22 2024 +0000
+Date:   Mon Jul 15 08:31:36 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1590,11 +1585,11 @@ Date:   Wed May 1 18:17:14 2024 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 231118bd97511c633b67b9d8375d6cf980650f52
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:59:21 2024 +0000
+commit 30cfd88816d9d18b27a7e8162082d966c75323fd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 15 08:37:14 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## vertical-association

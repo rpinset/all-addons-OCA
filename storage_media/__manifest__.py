@@ -5,7 +5,7 @@
 {
     "name": "Storage Media",
     "summary": "Give the posibility to store media data in Odoo",
-    "version": "14.0.2.1.1",
+    "version": "14.0.2.2.0",
     "category": "Uncategorized",
     "website": "https://github.com/OCA/storage",
     "author": " Akretion, Odoo Community Association (OCA)",
@@ -15,6 +15,7 @@
     "external_dependencies": {"python": [], "bin": []},
     "depends": ["storage_file", "storage_thumbnail"],
     "data": [
+        "wizards/replace_file.xml",
         "views/storage_media_view.xml",
         "data/ir_parameter.xml",
         "security/res_group.xml",
