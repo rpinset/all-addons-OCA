@@ -120,11 +120,11 @@ Date:   Thu Feb 8 08:12:29 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 7b84c0bf11265bc2b3bfc02f22d4d6287599759f
-Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Tue Apr 23 20:55:57 2024 +0000
+commit f95278f876b6304a9ed25cebf600c9e747a541ae
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jul 14 15:34:22 2024 +0000
 
-    Added translation using Weblate (French (France) (fr_FR))
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -434,11 +434,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4227c9f2b9e4fbde8b2e3f2867cf0756cf248394
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 25 15:03:52 2024 +0000
+commit a6f87e1b982d81df6b0298787f5cbdbec49a107b
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jul 16 08:44:55 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-13.0/sale-workflow-13.0-product_form_sale_link
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-product_form_sale_link/
 
 
 ## crm
@@ -1276,16 +1281,16 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 476bb8fdd326d629ca5004b83c15d16bc6f85c69
+commit c99729a76f375c949cc1920113bedd76622af4a5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 15 09:17:47 2024 +0000
+Date:   Tue Jul 16 11:00:40 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 11.1% (3 of 27 strings)
+    Currently translated at 44.1% (15 of 34 strings)
     
-    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_inventory_discrepancy
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_inventory_discrepancy/it/
+    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_quant_manual_assign
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_quant_manual_assign/it/
 
 
 ## stock-logistics-reporting
