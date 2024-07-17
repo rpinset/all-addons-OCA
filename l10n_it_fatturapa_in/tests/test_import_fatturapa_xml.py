@@ -440,6 +440,7 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         self.assertTrue(len(invoices) == 2)
         for invoice in invoices:
             self.assertTrue(len(invoice.invoice_line_ids) == 0)
+            self.assertTrue(invoice.move_type == "in_invoice")
         # allow following tests to reuse the same XML file
         invoices[0].ref = invoices[0].payment_reference = "14165"
         invoices[1].ref = invoices[1].payment_reference = "14166"
@@ -583,10 +584,17 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         res = self.run_wizard("test25", "IT05979361218_013.xml")
         invoice_id = res.get("domain")[0][2][0]
         invoice = self.invoice_model.browse(invoice_id)
-        self.assertAlmostEqual(invoice.e_invoice_amount_untaxed, 34.67)
+        e_bill_total = 34.32
+        e_bill_rounding = -0.35
+        self.assertAlmostEqual(
+            invoice.e_invoice_amount_untaxed, e_bill_total - e_bill_rounding
+        )
         self.assertEqual(invoice.e_invoice_amount_tax, 0.0)
-        self.assertEqual(invoice.e_invoice_amount_total, 34.32)
-        self.assertEqual(invoice.efatt_rounding, -0.35)
+        self.assertEqual(invoice.e_invoice_amount_total, e_bill_total)
+        self.assertEqual(invoice.efatt_rounding, e_bill_rounding)
+        self.assertEqual(invoice.amount_total, e_bill_total)
+        self.assertEqual(invoice.amount_total_signed, -e_bill_total)
+        self.assertEqual(invoice.amount_net_pay, e_bill_total)
         invoice.action_post()
         move_line = False
         for line in invoice.line_ids:

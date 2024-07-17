@@ -105,6 +105,7 @@ freezegun
 # generated from manifests external_dependencies
 python-dateutil
 # From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
+# generated from manifests external_dependencies
 # From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
 # From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
 # From [https://github.com/OCA/department.git](https://github.com/OCA/department.git)

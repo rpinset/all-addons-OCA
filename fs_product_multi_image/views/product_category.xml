@@ -7,6 +7,7 @@
         <field name="name">product.category.form</field>
         <field name="model">product.category</field>
         <field name="inherit_id" ref="product.product_category_form_view" />
+        <field name="priority" eval="99" />
         <field name="arch" type="xml">
             <div name="button_box" position="after">
                 <field
@@ -15,16 +16,18 @@
                     options="{'preview_image': 'image_medium', 'zoom': true}"
                 />
             </div>
-            <xpath expr="//group[last()]" position="after">
+            <xpath expr="//sheet" position="inside">
                 <group name="images" string="Images">
-                    <field name="image_ids">
+                    <field
+                        name="image_ids"
+                        mode="kanban"
+                        widget="fs_image_relation_dnd_upload"
+                    >
                         <tree>
                             <field name="sequence" widget="handle" />
                             <field name="name" />
                         </tree>
                     </field>
-                    <!-- mode="kanban"
-                        widget="storage_image_handle" -->
                 </group>
             </xpath>
         </field>
