@@ -308,7 +308,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.11.0 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.12.0 |  | OCA Financial Reports
+[account_financial_report_sale](account_financial_report_sale/) | 15.0.1.0.0 |  | OCA Financial Reports Sale
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -2691,7 +2692,7 @@ addon | version | maintainers | summary
 [edi_account_oca](edi_account_oca/) | 15.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define EDI Configuration for Account Moves
 [edi_backend_partner_oca](edi_backend_partner_oca/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Add the a partner field to EDI backend
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 15.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allows definition of exchanges via templates.
-[edi_oca](edi_oca/) | 15.0.1.6.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 15.0.1.6.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_stock_oca](edi_stock_oca/) | 15.0.1.0.0 |  | Define EDI Configuration for Stock
 [edi_storage_oca](edi_storage_oca/) | 15.0.1.3.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.2 |  | Sends account invoices to Voxel.
@@ -3033,7 +3034,7 @@ addon | version | maintainers | summary
 [hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 15.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
 [hr_timesheet_sheet_begin_end](hr_timesheet_sheet_begin_end/) | 15.0.1.0.0 |  | Timesheet Sheet - Begin/End Hours
 [hr_timesheet_sheet_no_create](hr_timesheet_sheet_no_create/) | 15.0.1.0.0 |  | Avoid creation of projects and tasks in timesheet sheet lines
-[hr_timesheet_sheet_period](hr_timesheet_sheet_period/) | 15.0.1.0.0 |  | HR Timesheet Sheet based on Payroll Period
+[hr_timesheet_sheet_period](hr_timesheet_sheet_period/) | 15.0.1.1.0 |  | HR Timesheet Sheet based on Payroll Period
 [hr_timesheet_sheet_policy_project_manager](hr_timesheet_sheet_policy_project_manager/) | 15.0.1.0.0 |  | Allows setting Project Manager as Reviewer
 [hr_timesheet_task_domain](hr_timesheet_task_domain/) | 15.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 15.0.1.0.0 |  | Set task on timesheet as a mandatory field
@@ -4923,7 +4924,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5905,7 +5906,7 @@ addon | version | maintainers | summary
 [stock_move_purchase_uom](stock_move_purchase_uom/) | 15.0.1.0.2 |  | Allow to use the purchase UoM in a stock move
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 15.0.1.0.1 |  | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
-[stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.0 |  | Link Reordering rules to stock moves
+[stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.1 |  | Link Reordering rules to stock moves
 [stock_orderpoint_purchase_link](stock_orderpoint_purchase_link/) | 15.0.1.0.0 |  | Link Reordering rules to purchase orders
 [stock_orderpoint_uom](stock_orderpoint_uom/) | 15.0.1.0.0 |  | Allows to create procurement orders in the UoM indicated in the orderpoint
 [stock_packaging_calculator](stock_packaging_calculator/) | 15.0.1.0.0 |  | Compute product quantity to pick by packaging
@@ -5917,7 +5918,7 @@ addon | version | maintainers | summary
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.0 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
-[stock_request](stock_request/) | 15.0.1.8.0 |  | Internal request for stock
+[stock_request](stock_request/) | 15.0.1.8.1 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
 [stock_request_kanban](stock_request_kanban/) | 15.0.1.1.2 |  | Adds a stock request order, and takes stock requests as lines
 [stock_request_mrp](stock_request_mrp/) | 15.0.1.3.0 |  | Manufacturing request for stock
@@ -6472,6 +6473,7 @@ addon | version | maintainers | summary
 [purchase_order_general_discount](purchase_order_general_discount/) | 15.0.1.0.2 |  | General discount per purchase order
 [purchase_order_line_deep_sort](purchase_order_line_deep_sort/) | 15.0.1.0.0 |  | Purchase Order Line Sort
 [purchase_order_line_menu](purchase_order_line_menu/) | 15.0.1.2.0 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_original_date](purchase_order_line_original_date/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds the Original Delivery Date to PO lines.
 [purchase_order_line_price_history](purchase_order_line_price_history/) | 15.0.1.0.1 |  | Purchase order line price history
 [purchase_order_line_price_history_discount](purchase_order_line_price_history_discount/) | 15.0.1.0.1 |  | Purchase order line price history discount
 [purchase_order_line_qty_to_receive](purchase_order_line_qty_to_receive/) | 15.0.1.0.0 |  | Purchase Line - Qty To Receive
@@ -8840,7 +8842,7 @@ addon | version | maintainers | summary
 [web_widget_json_graph](web_widget_json_graph/) | 15.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) | Draw json fields with graphs.
 [web_widget_many2one_simple](web_widget_many2one_simple/) | 15.0.1.1.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Simple many2one widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 15.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using MPLD3 library.
-[web_widget_numeric_step](web_widget_numeric_step/) | 15.0.1.0.0 |  | Web Widget Numeric Step
+[web_widget_numeric_step](web_widget_numeric_step/) | 15.0.1.1.0 |  | Web Widget Numeric Step
 [web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 15.0.1.0.0 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_open_tab](web_widget_open_tab/) | 15.0.1.1.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_remote_measure](web_widget_remote_measure/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to connect to remote devices to record measures
