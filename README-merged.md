@@ -4779,6 +4779,7 @@ addon | version | maintainers | summary
 [l10n_it_website_sale_fatturapa](l10n_it_website_sale_fatturapa/) | 14.0.1.0.0 |  | Aggiunge i campi necessari alla fatturazione elettronica nel form del checkout
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 14.0.1.1.0 |  | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.1.12 |  | ITA - Ritenute d'acconto
+[l10n_it_withholding_tax_financial_report](l10n_it_withholding_tax_financial_report/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione Ritenute d'acconto e Rendiconti contabili
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 14.0.1.0.2 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 14.0.1.0.2 |  | ITA - Causali pagamento per ritenute d'acconto
 
@@ -8295,7 +8296,7 @@ addon | version | maintainers | summary
 [bus_alt_connection](bus_alt_connection/) | 14.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
 [configuration_helper](configuration_helper/) | 14.0.1.0.1 |  | Configuration Helper
 [cron_daylight_saving_time_resistant](cron_daylight_saving_time_resistant/) | 14.0.1.0.0 |  | Run cron on fixed hours
-[database_cleanup](database_cleanup/) | 14.0.1.1.1 |  | Database cleanup
+[database_cleanup](database_cleanup/) | 14.0.1.1.2 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 14.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 14.0.1.0.1 |  | Filter databases with HTTP headers
 [excel_import_export](excel_import_export/) | 14.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report

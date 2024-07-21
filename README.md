@@ -437,16 +437,16 @@ Date:   Wed May 1 19:00:55 2024 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit 26d90193fe263bc4465cd25fb231a0bfd59259c6
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Jun 19 08:47:30 2024 +0000
+commit 8ed8a5c321ab0de653c979460d1105704a4e9b12
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jul 18 06:54:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_promotion_discount_in_field_order_line_link
-    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_promotion_discount_in_field_order_line_link/it/
+    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_coupon_order_line_link
+    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_coupon_order_line_link/it/
 
 
 ## sale-reporting
@@ -888,9 +888,9 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 06235d7cf2162e4e562d1ddf801d260f2cc19c4f
+commit 846bc2cddc0a0a32b3d28b9effb30b7a3e29b51f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 15 08:35:05 2024 +0000
+Date:   Fri Jul 19 15:45:33 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1201,11 +1201,16 @@ Date:   Wed Jun 12 09:43:53 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit cc4aadc66340cd8bb3b74cf1e03b3dd9b401bc4a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 3 13:29:37 2024 +0000
+commit 4a36914dcb658316245aa139b5a09033829874e9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jul 18 07:29:40 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (10 of 10 strings)
+    
+    Translation: manufacture-14.0/manufacture-14.0-base_repair
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-base_repair/it/
 
 
 ## manufacture-reporting
@@ -1470,16 +1475,11 @@ Date:   Fri Oct 27 21:08:37 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 98f31298d521842aa774ca767be127cf58e2abd8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 9 07:42:28 2024 +0000
+commit 002bdfc13da1d4b9066e9deeecabbc94308c4409
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 19 23:34:29 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 82.5% (165 of 200 strings)
-    
-    Translation: server-tools-14.0/server-tools-14.0-excel_import_export
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-excel_import_export/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
