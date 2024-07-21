@@ -434,16 +434,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a6f87e1b982d81df6b0298787f5cbdbec49a107b
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 16 08:44:55 2024 +0000
+commit 7b9f061278e8b2e09dbce7ba0a6a8b9b8910f478
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jul 18 14:36:43 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: sale-workflow-13.0/sale-workflow-13.0-product_form_sale_link
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-13-0/sale-workflow-13-0-product_form_sale_link/
+    [BOT] post-merge updates
 
 
 ## crm
