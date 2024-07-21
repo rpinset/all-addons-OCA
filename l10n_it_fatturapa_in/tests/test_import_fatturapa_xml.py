@@ -1070,6 +1070,15 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         # allow following tests to reuse the same XML file
         orig_invoice.ref = orig_invoice.payment_reference = "14021"
 
+    def test_01_xml_preview(self):
+        res = self.run_wizard("test_preview", "IT05979361218_001.xml")
+        invoice_id = res.get("domain")[0][2][0]
+        invoice = self.invoice_model.browse(invoice_id)
+        preview_action = invoice.fatturapa_attachment_in_id.ftpa_preview()
+        self.assertEqual(
+            preview_action["url"], invoice.fatturapa_attachment_in_id.ftpa_preview_link
+        )
+
     def test_01_xml_zero_quantity_line(self):
         res = self.run_wizard("test_zeroq_01", "IT05979361218_q0.xml")
         invoice_id = res.get("domain")[0][2][0]
@@ -1133,6 +1142,28 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         invoices = self.env[import_action["res_model"]].search(import_action["domain"])
         e_invoice = invoices.fatturapa_attachment_in_id
         self.assertTrue(e_invoice.ir_attachment_id.read())
+
+    def test_access_other_user_e_invoice_attachments(self):
+        """A user can see the e-invoice attachments created by other users."""
+        # Arrange
+        access_right_group_xmlid = "base.group_erp_manager"
+        user = self.env.user
+        user.groups_id -= self.env.ref("base.group_system")
+        user.groups_id -= self.env.ref(access_right_group_xmlid)
+        other_user = user.copy(default={"login": "attachment_user"})
+        # pre-condition
+        self.assertFalse(user.has_group(access_right_group_xmlid))
+        self.assertNotEqual(user, other_user)
+        import_action = self.run_wizard(
+            "access_other_user_e_invoice_attachments", "IT02780790107_11004.xml"
+        )
+        # Assert
+        with self.with_user(other_user.login):
+            invoices = self.env[import_action["res_model"]].search(
+                import_action["domain"]
+            )
+            e_invoice = invoices.fatturapa_doc_attachments
+            self.assertTrue(e_invoice.ir_attachment_id.read())
 
 
 class TestFatturaPAEnasarco(FatturapaCommon):
