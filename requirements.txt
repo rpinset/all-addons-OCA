@@ -138,6 +138,7 @@ jaconv
 # From [https://github.com/OCA/l10n-macedonia.git](https://github.com/OCA/l10n-macedonia.git)
 # From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
 # generated from manifests external_dependencies
+facturama
 # From [https://github.com/OCA/l10n-morocco.git](https://github.com/OCA/l10n-morocco.git)
 # From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
 # generated from manifests external_dependencies
