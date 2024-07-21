@@ -421,16 +421,11 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b85d14ff24c7570fecf8d00d121485382e748ef0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 9 07:26:26 2024 +0000
+commit 4c78850ef82205bb7751884adedf7d1277970fc7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 19 06:22:16 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (55 of 55 strings)
-    
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_automatic_workflow
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_automatic_workflow/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -1201,16 +1196,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 6cb8a6b56067cc91ee8ed69b1095f6cde349cc41
+commit 8b2bef60763db2a483dca743323d898eb88d1ca0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 14 14:53:39 2024 +0000
+Date:   Thu Jul 18 07:31:07 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (114 of 114 strings)
+    Currently translated at 100.0% (8 of 8 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-quality_control_issue
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_issue/it/
+    Translation: manufacture-12.0/manufacture-12.0-repair_calendar_view
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_calendar_view/it/
 
 
 ## manufacture-reporting
