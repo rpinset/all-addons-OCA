@@ -565,11 +565,16 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 4c875277fd1b603bb2fe813b8da6fef7744eed6e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 17 17:01:00 2024 +0000
+commit bc5de0784f8c7079cc1c53815a53e80eb094a131
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jul 25 08:25:34 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-12.0/edi-12.0-edi_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-12-0/edi-12-0-edi_oca/
 
 
 ## field-service
