@@ -850,7 +850,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 15.0.1.3.2 |  | Account Credit Control
-[account_financial_risk](account_financial_risk/) | 15.0.1.7.2 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
+[account_financial_risk](account_financial_risk/) | 15.0.1.7.3 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
 [account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 15.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 15.0.1.0.2 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 15.0.3.0.1 | [![Daniel-CA](https://github.com/Daniel-CA.png?size=30px)](https://github.com/Daniel-CA) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![omar7r](https://github.com/omar7r.png?size=30px)](https://github.com/omar7r) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Risk insurance partner information
@@ -949,7 +949,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 15.0.2.1.3 |  | Banking mandates
+[account_banking_mandate](account_banking_mandate/) | 15.0.2.1.4 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 15.0.1.0.2 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 15.0.2.0.2 |  | Base module for PAIN file generation
@@ -1966,7 +1966,7 @@ addon | version | maintainers | summary
 [crm_phonecall](crm_phonecall/) | 15.0.1.1.2 |  | CRM Phone Calls
 [crm_phonecall_planner](crm_phonecall_planner/) | 15.0.1.0.2 |  | Schedule phone calls according to some criteria
 [crm_phonecall_summary_predefined](crm_phonecall_summary_predefined/) | 15.0.1.0.0 |  | Allows to choose from a defined summary list
-[crm_project](crm_project/) | 15.0.1.0.3 |  | Create Tasks from Leads/Opportunities
+[crm_project](crm_project/) | 15.0.1.0.4 |  | Create Tasks from Leads/Opportunities
 [crm_project_task](crm_project_task/) | 15.0.1.1.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Create tasks from lead or opportunity
 [crm_salesperson_planner](crm_salesperson_planner/) | 15.0.3.0.0 |  | Crm Salesperson Planner
 [crm_salesperson_planner_sale](crm_salesperson_planner_sale/) | 15.0.1.0.0 |  | Crm Salesperson Planner Sale
@@ -3430,7 +3430,7 @@ addon | version | maintainers | summary
 [mail_multicompany](mail_multicompany/) | 15.0.0.1.0 |  | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 15.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [multicompany_configuration](multicompany_configuration/) | 15.0.1.0.0 |  | Simplify the configuration on multicompany environments
-[partner_multi_company](partner_multi_company/) | 15.0.1.0.0 |  | Select individually the partner visibility on each company
+[partner_multi_company](partner_multi_company/) | 15.0.1.1.0 |  | Select individually the partner visibility on each company
 [product_category_inter_company](product_category_inter_company/) | 15.0.1.1.0 |  | Product categories as company dependent
 [product_multi_company](product_multi_company/) | 15.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Product Tax Multi Company Default
@@ -4925,7 +4925,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5758,6 +5758,7 @@ addon | version | maintainers | summary
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 15.0.1.3.0 |  | Adds link between pickings and invoices
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 15.0.1.0.2 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 15.0.1.0.3 |  | Stock Picking Mass Action
+[stock_picking_operation_manual_lot_selection](stock_picking_operation_manual_lot_selection/) | 15.0.1.0.0 |  | Stock Picking Operation Manual Lot Selection
 [stock_picking_operation_quick_change](stock_picking_operation_quick_change/) | 15.0.1.1.1 |  | Change location of all picking operations
 [stock_picking_origin_reference](stock_picking_origin_reference/) | 15.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
 [stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 15.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
@@ -5988,7 +5989,7 @@ addon | version | maintainers | summary
 [stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 15.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Stock Picking Report - Product Sticker
 [stock_picking_report_undelivered_product](stock_picking_report_undelivered_product/) | 15.0.1.0.0 |  | Display on picking report delivery slip undelivered products
 [stock_picking_report_valued](stock_picking_report_valued/) | 15.0.1.7.1 |  | Adding Valued Picking on Delivery Slip report
-[stock_picking_report_valued_sale_mrp](stock_picking_report_valued_sale_mrp/) | 15.0.1.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow to summarize the picking related with the selled kits
+[stock_picking_report_valued_sale_mrp](stock_picking_report_valued_sale_mrp/) | 15.0.1.1.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow to summarize the picking related with the selled kits
 [stock_quantity_history_location](stock_quantity_history_location/) | 15.0.1.0.0 |  | Provides stock quantity by location on past date
 [stock_report_quantity_by_location](stock_report_quantity_by_location/) | 15.0.1.0.0 |  | Stock Report Quantity By Location
 
@@ -6039,7 +6040,7 @@ addon | version | maintainers | summary
 [product_warranty](product_warranty/) | 15.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 [rma](rma/) | 15.0.1.3.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_delivery](rma_delivery/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow to choose a default delivery carrier for returns
-[rma_sale](rma_sale/) | 15.0.1.3.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
+[rma_sale](rma_sale/) | 15.0.1.3.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 [rma_sale_mrp](rma_sale_mrp/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow doing RMAs from MRP kits
 [stock_production_lot_warranty](stock_production_lot_warranty/) | 15.0.1.1.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add warranty date to stock production lot
 [website_rma](website_rma/) | 15.0.1.1.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
@@ -7661,7 +7662,7 @@ addon | version | maintainers | summary
 [scheduler_error_mailer](scheduler_error_mailer/) | 15.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 15.0.3.0.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 15.0.1.0.0 |  | Calculate a sequence number from a Python expression
-[session_db](session_db/) | 15.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
+[session_db](session_db/) | 15.0.1.0.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [tracking_manager](tracking_manager/) | 15.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 15.0.3.0.1 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
@@ -7952,7 +7953,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 15.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 15.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 15.0.1.1.0 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 15.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 15.0.1.5.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 15.0.1.0.1 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
 [base_tier_validation_report](base_tier_validation_report/) | 15.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Reports related to tier validation
