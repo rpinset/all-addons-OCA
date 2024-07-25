@@ -3,11 +3,11 @@
 
 {
     "name": "Account Invoice Export",
-    "version": "13.0.1.2.2",
+    "version": "13.0.1.2.3",
     "category": "Invoicing Management",
     "license": "AGPL-3",
     "summary": "",
-    "author": "Camptocamp SA, Odoo Community Association (OCA)",
+    "author": "Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/edi",
     "depends": ["account_invoice_transmit_method", "queue_job"],
     "data": [

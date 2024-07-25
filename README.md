@@ -52,16 +52,16 @@ Date:   Sun Dec 24 16:34:27 2023 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 7a924bba5bf2ed964dda0db18c9b6a26b03061c7
+commit b4f11dec9689897eb95f996e725cc967093534d1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 06:34:15 2024 +0000
+Date:   Mon Jul 22 06:25:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 57.1% (12 of 21 strings)
+    Currently translated at 4.4% (5 of 112 strings)
     
-    Translation: account-closing-13.0/account-closing-13.0-account_cutoff_accrual_base
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_cutoff_accrual_base/it/
+    Translation: account-closing-13.0/account-closing-13.0-account_multicurrency_revaluation
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_multicurrency_revaluation/it/
 
 
 ## account-consolidation
@@ -590,9 +590,9 @@ Date:   Sun Dec 24 17:14:14 2023 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 73fc803d1830e9570222fde20c6261df4d478605
+commit f9213c15dff4eae315cae55e742ece8a81dde577
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 1 14:38:23 2024 +0000
+Date:   Thu Jul 25 06:37:34 2024 +0000
 
     [BOT] post-merge updates
 
@@ -734,9 +734,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 473aa18b9286dcd8650d7e51dcdb07295e972aac
+commit 5728022c736a1285b4cdfd5f35343a975986027b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 4 06:53:36 2024 +0000
+Date:   Tue Jul 23 21:00:20 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1539,16 +1539,11 @@ Date:   Sun Sep 3 12:06:55 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit f08f207a67de91068d40fc1229a5d4c180f3f412
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 13 13:21:27 2024 +0000
+commit ee419d82824344de39a7f4b8655c8582a08bf8fe
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 22 05:03:14 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: social-13.0/social-13.0-mail_restrict_follower_selection
-    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_restrict_follower_selection/it/
+    [BOT] post-merge updates
 
 
 ## storage
