@@ -9,12 +9,16 @@ from .tier_validation import BASE_EXCEPTION_FIELDS
 class TierValidationException(models.Model):
     _name = "tier.validation.exception"
     _description = "Tier Validation Exceptions"
-    _rec_name = "model_name"
+    _rec_name = "name"
 
     @api.model
     def _get_tier_validation_model_names(self):
         return self.env["tier.definition"]._get_tier_validation_model_names()
 
+    name = fields.Char(
+        required=True,
+        default="New Tier Validation Exception",
+    )
     model_id = fields.Many2one(
         comodel_name="ir.model",
         string="Model",
@@ -24,7 +28,7 @@ class TierValidationException(models.Model):
     )
     model_name = fields.Char(
         related="model_id.model",
-        string="Model",
+        string="Model Name",
         store=True,
         readonly=True,
         index=True,
@@ -51,6 +55,11 @@ class TierValidationException(models.Model):
     allowed_to_write_after_validation = fields.Boolean(
         string="Write after Validation",
         default=True,
+    )
+    group_ids = fields.Many2many(
+        comodel_name="res.groups",
+        string="Groups",
+        help="Allowed groups to use this Tier Validation Exception",
     )
 
     @api.depends("model_id")
@@ -81,15 +90,3 @@ class TierValidationException(models.Model):
                     "Write under Validation, Write after Validation"
                 )
             )
-
-    _sql_constraints = [
-        (
-            "model_company_under_after_unique",
-            "unique(model_id, company_id, "
-            "allowed_to_write_under_validation, allowed_to_write_after_validation)",
-            _(
-                "The model already exists for this company with this "
-                "Write Validation configuration!"
-            ),
-        )
-    ]

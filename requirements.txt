@@ -209,6 +209,8 @@ sentry_sdk<=1.9.0
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
+# generated from manifests external_dependencies
+sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
