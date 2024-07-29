@@ -354,16 +354,11 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 8b09d752ce0c2b2041244a2d72c448ff00e2544e
-Author: Ricardoalso <ricardo.almeidasoares@camptocamp.com>
-Date:   Tue Jul 23 14:29:20 2024 +0000
+commit ecc0acc33191dd9a75b842fb06701ded6350e300
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 26 06:51:00 2024 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_delivery_state
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_delivery_state/fr/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -459,11 +454,16 @@ Date:   Wed May 1 18:18:04 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 17665d0d5e1a6cdf835d90567cbc3380c7e70dda
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 19 09:41:57 2024 +0000
+commit 3bdb538d9d256296dad8b4ef77b74db5b5b1f682
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jul 29 11:03:17 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: dms-15.0/dms-15.0-dms_field
+    Translate-URL: https://translation.odoo-community.org/projects/dms-15-0/dms-15-0-dms_field/
 
 
 ## e-commerce
@@ -938,9 +938,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 6e8edae5fff2dcd54b0aa915041ea642327f8219
+commit aa23d531a4666d74ae8c8644d2026446ec26642f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 8 15:53:07 2024 +0000
+Date:   Fri Jul 26 17:52:10 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1042,18 +1042,18 @@ Date:   Fri Jul 19 12:18:41 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit e3f472f7fde7f74f7ed4a1e019fd3b03a136a76e
+commit 90373b77b75944e6a8fdb00d2a7847c889365e0f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 10 08:16:19 2024 +0000
+Date:   Fri Jul 26 12:43:48 2024 +0000
 
     [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit d49a6218d2d6c955c53db7bfd7a5ae81c80b8011
+commit 3968c77f2dd60fe2389155b8376afc4d021aac8d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 25 13:46:18 2024 +0000
+Date:   Mon Jul 29 11:42:41 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1069,16 +1069,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit dc83f516443c6cdc543fc90b789c9fcd20d9b7d3
+commit 955d09300fd729cbaeedce814f221f21c5cca876
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 16 11:00:49 2024 +0000
+Date:   Mon Jul 29 08:22:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (34 of 34 strings)
+    Currently translated at 80.0% (4 of 5 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_quant_manual_assign
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_quant_manual_assign/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_quant_reservation_info
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_quant_reservation_info/it/
 
 
 ## stock-logistics-reporting
