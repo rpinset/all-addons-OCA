@@ -1943,7 +1943,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 14.0.1.1.1 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_chained_move](sale_order_line_chained_move/) | 14.0.1.1.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module adds a field on sale order line to get all related move lines
 [sale_order_line_date](sale_order_line_date/) | 14.0.1.2.0 |  | Adds a commitment date to each sale order line.
-[sale_order_line_delivery_state](sale_order_line_delivery_state/) | 14.0.1.0.0 |  | Show the delivery state on the sale order line
+[sale_order_line_delivery_state](sale_order_line_delivery_state/) | 14.0.1.1.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 14.0.1.0.0 |  | Sale order line description
 [sale_order_line_description_single_attribute](sale_order_line_description_single_attribute/) | 14.0.1.0.0 |  | Shows single value attributes name in the sale order line description
 [sale_order_line_discount_validation](sale_order_line_discount_validation/) | 14.0.2.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Review discounts before sales order are printed, sent or confirmed
@@ -2420,7 +2420,7 @@ addon | version | maintainers | summary
 [sale_commission_formula](sale_commission_formula/) | 14.0.1.0.0 |  | Sale commissions computed by formulas
 [sale_commission_geo_assign](sale_commission_geo_assign/) | 14.0.1.1.3 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Assign agents to partners according to their location
 [sale_commission_geo_assign_product_domain](sale_commission_geo_assign_product_domain/) | 14.0.1.3.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between sale_commission_product_criteria_domain and sale_commission_geo_assign
-[sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.0 |  | Sales commissions based on paid amount
+[sale_commission_partial_settlement](sale_commission_partial_settlement/) | 14.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sales commissions based on paid amount
 [sale_commission_pricelist](sale_commission_pricelist/) | 14.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.4 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 14.0.1.0.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules with discount
@@ -2809,7 +2809,7 @@ addon | version | maintainers | summary
 [edi_account_invoice_import](edi_account_invoice_import/) | 14.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Plug account_invoice_import into EDI machinery.
 [edi_account_oca](edi_account_oca/) | 14.0.1.1.1 |  | Define EDI Configuration for Account Moves
 [edi_backend_partner_oca](edi_backend_partner_oca/) | 14.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | add the a partner field in EDI backend
-[edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.0 |  | Base module allowing configuration of custom endpoints for EDI framework.
+[edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.1 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 14.0.1.5.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allows definition of exchanges via templates.
 [edi_exchange_template_party_data](edi_exchange_template_party_data/) | 14.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Glue module betweeb edi_exchange_template and edi_party_data
 [edi_oca](edi_oca/) | 14.0.1.22.4 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
@@ -6708,7 +6708,7 @@ addon | version | maintainers | summary
 [mrp_bom_note](mrp_bom_note/) | 14.0.1.0.0 |  | Notes in Bill of Materials
 [mrp_bom_responsible](mrp_bom_responsible/) | 14.0.1.0.0 |  | Adds a responsible to the Bill of Materials which then will be forwarded to the Manufacturing Order
 [mrp_bom_tracking](mrp_bom_tracking/) | 14.0.1.1.0 |  | Logs any change to a BoM in the chatter
-[mrp_component_operation](mrp_component_operation/) | 14.0.1.1.0 |  | Allows to operate the components from a MO
+[mrp_component_operation](mrp_component_operation/) | 14.0.1.2.0 |  | Allows to operate the components from a MO
 [mrp_component_operation_scrap_reason](mrp_component_operation_scrap_reason/) | 14.0.1.1.0 |  | Allows to pass a reason to scrap with MRP component operation
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 14.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [mrp_lot_production_date](mrp_lot_production_date/) | 14.0.1.0.0 |  | MRP Lot Production Date
@@ -7905,7 +7905,7 @@ addon | version | maintainers | summary
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 14.0.1.0.1 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Apply a custom subject to mail notifications
 [mail_notification_with_history](mail_notification_with_history/) | 14.0.1.0.1 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add the previous chatter discussion into new email notifications.
 [mail_optional_autofollow](mail_optional_autofollow/) | 14.0.1.0.1 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
-[mail_optional_follower_notification](mail_optional_follower_notification/) | 14.0.1.0.0 |  | Choose to notify followers on mail.compose.message
+[mail_optional_follower_notification](mail_optional_follower_notification/) | 14.0.1.1.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 14.0.2.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_opt_out](mail_partner_opt_out/) | 14.0.1.0.0 |  | Add the partner's email to the blackmailed list
 [mail_preview_audio](mail_preview_audio/) | 14.0.1.0.0 |  | Allow to preview audio files
