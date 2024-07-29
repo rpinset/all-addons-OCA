@@ -562,9 +562,9 @@ Date:   Thu Apr 4 09:34:33 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit ec08bbefbd4611f44219623ac00c7128225897e1
+commit 6f2c6e9adf7f4e26904fa6bbcb3b8818fbd024a8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 3 14:43:23 2024 +0000
+Date:   Mon Jul 29 08:11:58 2024 +0000
 
     Translated using Weblate (Italian)
     
