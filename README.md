@@ -537,9 +537,9 @@ Date:   Thu Apr 4 09:34:31 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit f0d42d5dbb61c55a55353caed35106d2ee901e8d
+commit af2ab354e354cf403340e929772ba2d3d5a721c0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 3 14:43:29 2024 +0000
+Date:   Mon Jul 29 08:13:04 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1501,16 +1501,16 @@ Date:   Mon Dec 18 19:48:16 2023 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit a364401285d306dea94c64790e34714585adbe2c
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Tue Jan 16 11:40:05 2024 +0000
+commit 683a75cdfdd98aacad60c96ed0c5b5d955d90715
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jul 29 13:58:48 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.2% (26 of 27 strings)
+    Currently translated at 69.6% (23 of 33 strings)
     
-    Translation: server-backend-12.0/server-backend-12.0-base_global_discount
-    Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_global_discount/it/
+    Translation: server-backend-12.0/server-backend-12.0-base_external_dbsource
+    Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_external_dbsource/it/
 
 
 ## server-brand
