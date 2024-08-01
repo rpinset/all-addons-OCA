@@ -5666,7 +5666,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
 [stock_barcodes](stock_barcodes/) | 15.0.3.1.5 |  | It provides read barcode on stock operations.
 [stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.0.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
-[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.0.1 |  | It provides read GS1 barcode on stock operations.
+[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.1.0 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
 [stock_barcodes_gs1_secondary_unit](stock_barcodes_gs1_secondary_unit/) | 15.0.1.0.2 |  | It provides read package from GS1 barcode stored into secondary unit data.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.1 |  | It provides read barcodes on stock operations from batch pickings.
@@ -6207,7 +6207,7 @@ addon | version | maintainers | summary
 [mrp_finished_backorder_product](mrp_finished_backorder_product/) | 15.0.1.0.0 |  | Be able to see the summary of the finished manufactured orders
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 15.0.0.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
-[mrp_multi_level](mrp_multi_level/) | 15.0.1.11.6 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 15.0.1.11.8 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 15.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 15.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter manufacturing orders by their components availability state
@@ -7842,7 +7842,7 @@ addon | version | maintainers | summary
 [base_global_discount](base_global_discount/) | 15.0.1.0.0 |  | Base Global Discount
 [base_ical](base_ical/) | 15.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Provide (readonly) .ics URLs to calendar-like models
 [base_import_match](base_import_match/) | 15.0.1.0.1 |  | Try to avoid duplicates before importing
-[base_user_role](base_user_role/) | 15.0.0.4.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
+[base_user_role](base_user_role/) | 15.0.0.4.2 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
 
 [//]: # (end addons)
 
@@ -8817,7 +8817,7 @@ addon | version | maintainers | summary
 [web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 15.0.1.0.1 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 15.0.1.0.0 |  | Show a message box to users
 [web_listview_range_select](web_listview_range_select/) | 15.0.1.0.0 |  | Enables selecting a range of records using the shift key
-[web_m2x_options](web_m2x_options/) | 15.0.1.1.0 |  | web_m2x_options
+[web_m2x_options](web_m2x_options/) | 15.0.1.1.1 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 15.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 15.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 15.0.2.0.0 |  | Send notification messages to user

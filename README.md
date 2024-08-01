@@ -65,16 +65,16 @@ Date:   Wed May 1 17:43:19 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 1f101cf02fae23a6b34d51785e5dd6714136b5bd
+commit 76b31c097c93435e0956933009b3057413d34bc9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 18 07:33:53 2024 +0000
+Date:   Thu Aug 1 13:27:52 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 93.9% (156 of 166 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_sequence_option
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_sequence_option/it/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -136,16 +136,16 @@ Date:   Sat May 25 14:46:02 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit a996295f72b89ce5647a68ae2bf1d960a2760934
-Author: PaoloYam <pyammoun@student.42lausanne.ch>
-Date:   Sun Jul 21 16:44:21 2024 +0000
+commit 8a19a30b6afc3da50fac83143fbed0dcf100a3d5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 30 06:24:31 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 69.2% (194 of 280 strings)
+    Currently translated at 72.8% (204 of 280 strings)
     
     Translation: mis-builder-15.0/mis-builder-15.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-15-0/mis-builder-15-0-mis_builder/fr/
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-15-0/mis-builder-15-0-mis_builder/it/
 
 
 ## currency
@@ -1042,11 +1042,16 @@ Date:   Fri Jul 19 12:18:41 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 90373b77b75944e6a8fdb00d2a7847c889365e0f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 26 12:43:48 2024 +0000
+commit 10e79af8011c955927baec1669afab37fc785867
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Aug 1 08:45:51 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes_gs1
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes_gs1/
 
 
 ## stock-logistics-workflow
@@ -1069,16 +1074,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 955d09300fd729cbaeedce814f221f21c5cca876
+commit 99d6e4b6a84e08588fedc5f179c1ece52f4885de
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 29 08:22:19 2024 +0000
+Date:   Thu Aug 1 13:21:45 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 80.0% (4 of 5 strings)
+    Currently translated at 86.1% (124 of 144 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_quant_reservation_info
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_quant_reservation_info/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
 
 
 ## stock-logistics-reporting
@@ -1124,9 +1129,9 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8e918caa3358954d1c62e4ccbb3462aa4df5e9dc
+commit 1791091f338fd32db56eb0502e727d314103a6bc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 18 12:07:34 2024 +0000
+Date:   Wed Jul 31 07:03:20 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1271,11 +1276,16 @@ Date:   Wed May 1 18:54:33 2024 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit cabbda162e571787e20f6d48a6f93402a9fe215a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 12 14:45:40 2024 +0000
+commit 0a35c3c6b70fbbc61391c675294cd61ce494ebc1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 1 13:30:35 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 92.1% (47 of 51 strings)
+    
+    Translation: contract-15.0/contract-15.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-15-0/contract-15-0-product_contract/it/
 
 
 ## program
@@ -1417,9 +1427,9 @@ Date:   Thu Jun 27 13:32:06 2024 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit ad01df913d38b996eb138aa2c346719d7d45904d
+commit 165946f5a3f312240a6fd493618f716e07ea26af
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 6 15:18:30 2024 +0000
+Date:   Tue Jul 30 12:24:18 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1617,9 +1627,9 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 677727b708469e31e003caf179072d8852c9a475
+commit 54e31089066f4c5657f18bcd27e84b69453b577c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 16 07:23:02 2024 +0000
+Date:   Wed Jul 31 10:27:52 2024 +0000
 
     [BOT] post-merge updates
 
