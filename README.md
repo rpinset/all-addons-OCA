@@ -173,9 +173,9 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 2bd97999e3a3c6152b30cb706c6a6f367aea4c99
+commit ef3b928a88ede85871236454566c1edcd1cf7dc4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 09:02:23 2024 +0000
+Date:   Tue Jul 30 06:24:29 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -187,9 +187,9 @@ Date:   Mon Jul 8 09:02:23 2024 +0000
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit 7683c51815703d1573151ab2fb63879831fce271
+commit 76b01f3be1f8647cd03cb34172b78c1f8e22afc4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 18 09:05:14 2024 +0000
+Date:   Thu Aug 1 10:18:58 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -421,11 +421,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4c78850ef82205bb7751884adedf7d1277970fc7
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 19 06:22:16 2024 +0000
+commit 9530d7a856b3121450d6d78d6b666de8052f90df
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 1 10:01:19 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (66 of 66 strings)
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_plan
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_plan/it/
 
 
 ## crm
@@ -579,16 +584,16 @@ Date:   Thu Jul 25 08:25:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 075b9fe24c820f4f0848bb3450d1c18206cd103b
+commit 36fce8a3e98da664c09818fa703d38d5ddbcf1d4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 14 14:56:33 2024 +0000
+Date:   Thu Aug 1 10:01:15 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (512 of 512 strings)
+    Currently translated at 100.0% (138 of 138 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
 
 
 ## margin-analysis
@@ -1000,11 +1005,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 0af9a85d8eff4be7cd02e082cc05baad23006304
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 27 16:21:32 2024 +0000
+commit 260551614ae6036d95094c8882d2160b76c40841
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Thu Aug 1 06:54:51 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 14.1% (30 of 212 strings)
+    
+    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_sii
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_sii/ca/
 
 
 ## l10n-switzerland
