@@ -4,7 +4,7 @@
 
 {
     "name": "Account Cut-off Picking",
-    "version": "17.0.1.1.0",
+    "version": "17.0.1.1.1",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Accrued and prepaid expense/revenue from pickings",
@@ -19,5 +19,5 @@
         "images/accrued_expense_done.jpg",
     ],
     "installable": True,
-    "application": True,
+    "application": False,
 }
