@@ -75,11 +75,16 @@ Date:   Wed May 1 17:43:10 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 2b44e6cfd3bd2f78951f63f3f28eeb6b9db87779
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 11 13:48:17 2024 +0000
+commit f96a8a51d49291d02670cad3816143de36ea4c7f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 1 13:27:54 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (169 of 169 strings)
+    
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -125,16 +130,16 @@ Date:   Thu Jun 13 10:48:24 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit bf8db11a45b6a9aa9eb465ef0abeaeb1d9c3a9b5
+commit 50236d267d7199a2dddeef76b63cfe29725d8fb3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 9 07:34:15 2024 +0000
+Date:   Wed Jul 31 13:45:10 2024 +0000
 
     Translated using Weblate (Italian)
     
     Currently translated at 100.0% (25 of 25 strings)
     
-    Translation: operating-unit-14.0/operating-unit-14.0-operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-operating_unit/it/
+    Translation: operating-unit-14.0/operating-unit-14.0-account_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-account_operating_unit/it/
 
 
 ## intrastat
@@ -153,9 +158,9 @@ Date:   Wed May 1 19:29:16 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit b0d9a94d6059c47b9fdb183a9fd277fe86faa38b
+commit 5b14f1c6e889d54a86992cf857ce1468b455f0da
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 09:02:44 2024 +0000
+Date:   Tue Jul 30 06:24:31 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -167,11 +172,16 @@ Date:   Mon Jul 8 09:02:44 2024 +0000
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit b070974c27a3f5df7c5d916c313fbd13fd373660
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:05:05 2024 +0000
+commit 14707cfad5e72e31423e8a1eccfd2b3b18135612
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 1 10:21:34 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (78 of 78 strings)
+    
+    Translation: currency-14.0/currency-14.0-currency_rate_update
+    Translate-URL: https://translation.odoo-community.org/projects/currency-14-0/currency-14-0-currency_rate_update/it/
 
 
 ## credit-control
@@ -631,11 +641,16 @@ Date:   Fri Jul 26 12:05:45 2024 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 3548f9d0a5a0dc1443656ac064ea857d435dea3d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:14:25 2024 +0000
+commit 160f17e59a89f44c70fa9a97d06067f97099f641
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Tue Jul 30 15:40:45 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (52 of 52 strings)
+    
+    Translation: hr-attendance-14.0/hr-attendance-14.0-hr_attendance_report_theoretical_time
+    Translate-URL: https://translation.odoo-community.org/projects/hr-attendance-14-0/hr-attendance-14-0-hr_attendance_report_theoretical_time/es/
 
 
 ## hr-expense
@@ -1020,11 +1035,16 @@ Date:   Wed May 1 18:35:54 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 28478df56531f93a85ff1b5357ae873bb0d09910
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 24 09:54:37 2024 +0000
+commit 5df57334ae0b90bd69c40527cc838493fdb2e85c
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Thu Aug 1 06:52:11 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: l10n-spain-14.0/l10n-spain-14.0-l10n_es_account_banking_sepa_fsdd
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-14-0/l10n-spain-14-0-l10n_es_account_banking_sepa_fsdd/ca/
 
 
 ## l10n-switzerland
@@ -1253,16 +1273,11 @@ Date:   Fri Jun 14 14:57:37 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 86e9f9f69b9b8fe23cf69650b5b5424ba4d0e487
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 2 17:19:39 2024 +0000
+commit 7e13e6b8480f44f528a029d3d1bc5e1d0a40076f
+Author: Darío Lodeiros <dario@commitsun.com>
+Date:   Wed Jul 31 23:39:52 2024 +0200
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: pms-14.0/pms-14.0-pms
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/
+    [IMP]pms: user view properties position inside
 
 
 ## purchase-workflow
@@ -1609,16 +1624,16 @@ Date:   Mon Jul 15 08:37:14 2024 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit abf59dc7e6cb0922dba5a0b9348fbf32fbf61b19
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 4 08:14:30 2024 +0000
+commit da90c0ed90a1406134ff79686b5c3c3e17777da2
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Wed Jul 31 08:57:17 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Catalan)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 66.6% (6 of 9 strings)
     
-    Translation: vertical-association-14.0/vertical-association-14.0-membership_extension
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-14-0/vertical-association-14-0-membership_extension/it/
+    Translation: vertical-association-14.0/vertical-association-14.0-membership_delegated_partner
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-14-0/vertical-association-14-0-membership_delegated_partner/ca/
 
 
 ## vertical-hotel
