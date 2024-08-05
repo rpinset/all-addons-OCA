@@ -2433,8 +2433,8 @@ addon | version | maintainers | summary
 [attachment_zipped_download](attachment_zipped_download/) | 16.0.2.0.2 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 16.0.1.1.0 |  | Documents Knowledge
 [document_page](document_page/) | 16.0.1.4.0 |  | Document Page
-[document_page_access_group](document_page_access_group/) | 16.0.1.0.0 |  | Choose groups to access document pages
-[document_page_access_group_user_role](document_page_access_group_user_role/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Document Page Access Group User Role
+[document_page_access_group](document_page_access_group/) | 16.0.1.1.0 |  | Choose groups to access document pages
+[document_page_access_group_user_role](document_page_access_group_user_role/) | 16.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Document Page Access Group User Role
 [document_page_approval](document_page_approval/) | 16.0.1.1.1 |  | Document Page Approval
 [document_page_group](document_page_group/) | 16.0.1.0.1 |  | Define access groups on documents
 [document_page_partner](document_page_partner/) | 16.0.1.0.0 |  | Allows to link doucment pages to a partner
@@ -2490,7 +2490,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 16.0.1.8.0 |  | Document Management System for Odoo
 [dms_auto_classification](dms_auto_classification/) | 16.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
-[dms_field](dms_field/) | 16.0.1.0.2 |  | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 16.0.1.1.0 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
 [dms_storage](dms_storage/) | 16.0.1.0.0 |  | Integrate DMS with external Storages
 [dms_user_role](dms_user_role/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
@@ -5623,7 +5623,7 @@ addon | version | maintainers | summary
 [delivery_carrier_partner](delivery_carrier_partner/) | 16.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_correos_express](delivery_correos_express/) | 16.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 16.0.1.1.1 |  | Delivery Carrier implementation for CTT Express API
-[delivery_deliverea](delivery_deliverea/) | 16.0.1.0.1 |  | Delivery Carrier implementation for Deliverea using their API
+[delivery_deliverea](delivery_deliverea/) | 16.0.1.0.2 |  | Delivery Carrier implementation for Deliverea using their API
 [delivery_driver](delivery_driver/) | 16.0.1.3.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow choose driver in delivery methods
 [delivery_driver_stock_picking_batch](delivery_driver_stock_picking_batch/) | 16.0.1.1.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add drivers from delivery in stock picking batch
 [delivery_dropoff_site](delivery_dropoff_site/) | 16.0.1.0.0 |  | Send goods to sites in which customers come pick up package
@@ -6311,6 +6311,7 @@ addon | version | maintainers | summary
 [mrp_workcenter_hierarchical](mrp_workcenter_hierarchical/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Organise Workcenters by section
 [mrp_workorder_lot_display](mrp_workorder_lot_display/) | 16.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Display lot number on workorders kanban
 [mrp_workorder_sequence](mrp_workorder_sequence/) | 16.0.0.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds sequence to production work orders.
+[product_mrp_info](product_mrp_info/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds smart button in product form view linking to manufacturing order list.
 [quality_control_mrp_oca](quality_control_mrp_oca/) | 16.0.1.0.0 |  | MRP extension for quality control (OCA)
 [quality_control_oca](quality_control_oca/) | 16.0.1.2.0 |  | Generic infrastructure for quality tests.
 [quality_control_stock_oca](quality_control_stock_oca/) | 16.0.1.0.0 |  | Quality control - Stock (OCA)
@@ -6719,6 +6720,7 @@ addon | version | maintainers | summary
 [product_category_level](product_category_level/) | 16.0.1.0.0 | [![PierrickBrun](https://github.com/PierrickBrun.png?size=30px)](https://github.com/PierrickBrun) | Add Level field on Product Categories to show the recursion level on the category
 [product_category_product_qty](product_category_product_qty/) | 16.0.1.0.0 |  | Product Category - Product Quantity
 [product_category_type](product_category_type/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Type field on Product Categories to distinguish between parent and final categories
+[product_code_mandatory](product_code_mandatory/) | 16.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_mixin](product_code_mixin/) | 16.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Make product code available for any inherited model
 [product_code_unique](product_code_unique/) | 16.0.1.0.1 |  | Set Product Internal Reference as Unique
 [product_company_default](product_company_default/) | 16.0.1.0.0 |  | Product Company Default
@@ -6867,13 +6869,14 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_attribute_tax](product_variant_attribute_tax/) | 16.0.1.0.1 |  | Set taxes on the product attribute values
-[product_variant_configurator](product_variant_configurator/) | 16.0.1.0.5 |  | Provides an abstract model for product variant configuration.
+[product_variant_configurator](product_variant_configurator/) | 16.0.1.0.7 |  | Provides an abstract model for product variant configuration.
 [product_variant_default_code](product_variant_default_code/) | 16.0.1.1.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Product Variant Default Code
 [product_variant_name](product_variant_name/) | 16.0.1.0.0 |  | Product Variant Name
-[product_variant_sale_price](product_variant_sale_price/) | 16.0.1.0.0 |  | Allows to write fixed prices in product variants
+[product_variant_sale_price](product_variant_sale_price/) | 16.0.1.0.2 |  | Allows to write fixed prices in product variants
 [product_variant_specific_description](product_variant_specific_description/) | 16.0.1.0.1 |  | Product Variant Specific Description
 [purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.0 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
+[sale_product_variant_attribute_tax](sale_product_variant_attribute_tax/) | 16.0.1.0.0 |  | Bring the taxes associated to product values
 [sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.0 |  | Product variants in sale management
 
 [//]: # (end addons)
@@ -8082,7 +8085,7 @@ addon | version | maintainers | summary
 [base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Add Tier Review Boards
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
 [base_tier_validation_formula](base_tier_validation_formula/) | 16.0.1.0.2 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 16.0.1.1.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
+[base_tier_validation_forward](base_tier_validation_forward/) | 16.0.1.1.3 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
 [base_tier_validation_report](base_tier_validation_report/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Reports related to tier validation
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add option to call server action when a tier is validated
 [base_tier_validation_waiting](base_tier_validation_waiting/) | 16.0.1.0.0 |  | Base Tier Validation Extension to add waiting status
@@ -8929,7 +8932,7 @@ addon | version | maintainers | summary
 [web_apply_field_style](web_apply_field_style/) | 16.0.1.0.1 |  | Apply css class style to fields from a dict parameters
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 16.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
 [web_chatter_position](web_chatter_position/) | 16.0.1.0.2 |  | Add an option to change the chatter position
-[web_company_color](web_company_color/) | 16.0.1.2.0 |  | Web Company Color
+[web_company_color](web_company_color/) | 16.0.1.2.2 |  | Web Company Color
 [web_copy_confirm](web_copy_confirm/) | 16.0.1.0.0 |  | Show confirmation dialogue before copying records
 [web_dark_mode](web_dark_mode/) | 16.0.1.0.2 |  | Enabled Dark Mode for the Odoo Backend
 [web_dashboard_tile](web_dashboard_tile/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Overview Dashboards with Tiles
