@@ -908,16 +908,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e86cae72893e16b7925de7f7b16f562e39cdfb41
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jul 23 09:10:58 2024 +0000
+commit 1526b3150c240552ca0404710dc3afddd058a832
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 5 15:42:30 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_riba_sale_commission
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_riba_sale_commission/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
