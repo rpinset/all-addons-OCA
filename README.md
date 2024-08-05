@@ -970,9 +970,9 @@ Date:   Wed May 1 18:38:24 2024 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 37a4a072c77b029bd87069c5d78c0c4ee7bb36eb
+commit 4bd59a6e354920fa87171af992572765b609ea4e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 8 11:10:43 2024 +0000
+Date:   Fri Aug 2 01:44:24 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1033,11 +1033,16 @@ Date:   Wed May 1 18:41:38 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ecd53995d9c3458776a12b6888e0eb2a1f627143
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 19 12:18:41 2024 +0000
+commit 70654838255a2c6bac4471a5e537f2d1555cfbc0
+Author: Nikolaus Weingartmair <nikolaus.weingartmair@grueneerde.com>
+Date:   Mon Aug 5 10:17:07 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: delivery-carrier-15.0/delivery-carrier-15.0-delivery_carrier_info
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-15-0/delivery-carrier-15-0-delivery_carrier_info/de/
 
 
 ## stock-logistics-barcode
