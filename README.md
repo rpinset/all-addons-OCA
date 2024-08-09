@@ -89,9 +89,9 @@ Date:   Thu Aug 1 13:27:54 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit c92712df93acc44f5c9154c3264af2a31c32fd7a
+commit 23f87cf67fb8356d00b07f8f1955a7d64c98d3d9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 09:06:52 2024 +0000
+Date:   Wed Aug 7 09:14:17 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -283,16 +283,11 @@ Date:   Tue Dec 19 14:38:47 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit b0e3b0de0b8f5ae56ec7cc0396295aeb3966473d
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Jul 15 10:39:08 2024 +0000
+commit c5552d5b5cb8834fe5d8176072203740cc0c02d6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 6 12:00:23 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 76.1% (16 of 21 strings)
-    
-    Translation: queue-14.0/queue-14.0-base_export_async
-    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-base_export_async/it/
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -521,16 +516,11 @@ Date:   Mon Jul 8 08:21:45 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit e217143e257d064fed502fc0d714b85f5adef934
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 29 08:13:01 2024 +0000
+commit 2cbee4cf08a33d1d83b9fdf91860d8728e326479
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 6 18:47:04 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (337 of 337 strings)
-    
-    Translation: dms-14.0/dms-14.0-dms
-    Translate-URL: https://translation.odoo-community.org/projects/dms-14-0/dms-14-0-dms/it/
+    [BOT] post-merge updates
 
 
 ## e-commerce
@@ -908,9 +898,9 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 1526b3150c240552ca0404710dc3afddd058a832
+commit 9544c789f8adf23520dd24815f0e6e05ec269556
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 5 15:42:30 2024 +0000
+Date:   Wed Aug 7 21:15:22 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1171,16 +1161,16 @@ Date:   Wed May 1 19:11:30 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 18c4152e1818ab8d3ef607aa3a91489e5c43acb1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 06:29:19 2024 +0000
+commit c6320d410b5947424b45c073958ad6d5a6d7e2a2
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Aug 7 13:04:56 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (52 of 52 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_pull_list
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_pull_list/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_move_auto_assign_auto_release
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_move_auto_assign_auto_release/
 
 
 ## stock-logistics-reporting
@@ -1277,9 +1267,9 @@ Date:   Wed Jul 31 23:39:52 2024 +0200
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 0ee53dfec685c3ed5c8a9e388c74b3f85757abab
+commit 60d4d1a5bd4520cce806ad57df82db6ab19b7d21
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 21 13:16:14 2024 +0000
+Date:   Thu Aug 8 07:45:46 2024 +0000
 
     [BOT] post-merge updates
 
