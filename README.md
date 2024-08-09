@@ -89,9 +89,9 @@ Date:   Sun Jun 23 21:21:50 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 288cd24a8fe1fdbbe9b4bb0a696ce92c6a4f9342
+commit 625fb903b8dc7d6e73efcc4057d097a7960c29c5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 1 09:01:55 2024 +0000
+Date:   Wed Aug 7 09:14:58 2024 +0000
 
     Translated using Weblate (Italian)
     
