@@ -227,6 +227,8 @@ openupgradelib
 xlrd
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # generated from manifests external_dependencies
 freezegun

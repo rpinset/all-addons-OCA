@@ -87,6 +87,7 @@ msgid "DDMRP Warnings"
 msgstr "Avvisi DDMRP"
 
 #. module: ddmrp_warning
+#: model:ir.model.fields,field_description:ddmrp_warning.field_ddmrp_warning_definition__ddmrp_warning_item_ids
 #: model:ir.model.fields,field_description:ddmrp_warning.field_stock_buffer__ddmrp_warning_item_ids
 msgid "Ddmrp Warning Item"
 msgstr "Elemento avviso DDRMP"
@@ -230,8 +231,8 @@ msgstr "Con avvisi"
 #. module: ddmrp_warning
 #: model:ir.model.fields,help:ddmrp_warning.field_ddmrp_warning_definition__python_code
 msgid ""
-"Write Python code that defines when this warning should raise. The result of"
-" executing the expression must be a boolean."
+"Write Python code that defines when this warning should raise. The result of "
+"executing the expression must be a boolean."
 msgstr ""
 "Scrivere codice Python che definisce quando questo avviso dovrebbe "
 "comparire. Il risultato dell'espressione deve essere un booleano."
