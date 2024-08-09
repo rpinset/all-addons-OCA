@@ -66,6 +66,11 @@ msgid ""
 msgstr ""
 
 #. module: account_sale_stock_report_non_billed
+#: model:ir.model.fields,field_description:account_sale_stock_report_non_billed.field_stock_move__picking_partner_id
+msgid "Destination Address"
+msgstr ""
+
+#. module: account_sale_stock_report_non_billed
 #: model:ir.model.fields,field_description:account_sale_stock_report_non_billed.field_account_sale_stock_report_non_billed_wiz__display_name
 msgid "Display Name"
 msgstr ""

@@ -312,7 +312,7 @@ addon | version | maintainers | summary
 [account_financial_report_sale](account_financial_report_sale/) | 15.0.1.0.0 |  | OCA Financial Reports Sale
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
-[account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.3 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
+[account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.4 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
 [account_tax_balance](account_tax_balance/) | 15.0.1.1.1 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 15.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 15.0.1.0.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
@@ -1136,7 +1136,7 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Payment Register with Multiple Deduction
 [account_payment_notification](account_payment_notification/) | 15.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Notifiy upcoming payments
 [account_payment_promissory_note](account_payment_promissory_note/) | 15.0.1.0.2 |  | Account Payment Promissory Note
-[account_payment_return](account_payment_return/) | 15.0.1.0.3 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 15.0.1.0.4 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 15.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 15.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 15.0.1.0.1 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
@@ -2311,8 +2311,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_commission](account_commission/) | 15.0.3.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 15.0.3.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
+[account_commission](account_commission/) | 15.0.3.3.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
+[commission](commission/) | 15.0.3.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_formula](commission_formula/) | 15.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 15.0.1.0.1 |  | HR commissions
 [sale_commission](sale_commission/) | 15.0.2.1.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
@@ -2547,7 +2547,7 @@ addon | version | maintainers | summary
 [dms](dms/) | 15.0.1.14.0 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
-[dms_field](dms_field/) | 15.0.1.4.0 |  | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 15.0.1.4.1 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
 [dms_user_role](dms_user_role/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
 [hr_dms_field](hr_dms_field/) | 15.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add dms field for employees
@@ -5079,6 +5079,7 @@ addon | version | maintainers | summary
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
+[delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 15.0.1.0.6 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -5719,7 +5720,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 15.0.1.0.0 |  | Delivery Procurement Group Carrier
-[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 15.0.1.0.3 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
+[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 15.0.1.0.4 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
 [product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 15.0.1.0.0 |  | This module makes the product customer code visible in the stock moves of a picking.
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 15.0.1.0.0 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 15.0.1.0.0 |  | Track returned quantity of sale order lines.
@@ -5898,7 +5899,7 @@ addon | version | maintainers | summary
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 15.0.2.4.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 15.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.0.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
@@ -5923,6 +5924,7 @@ addon | version | maintainers | summary
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_request](stock_request/) | 15.0.1.8.1 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
+[stock_request_bom](stock_request_bom/) | 15.0.1.0.0 |  | Stock Request with BOM Integration
 [stock_request_kanban](stock_request_kanban/) | 15.0.1.1.2 |  | Adds a stock request order, and takes stock requests as lines
 [stock_request_mrp](stock_request_mrp/) | 15.0.1.3.0 |  | Manufacturing request for stock
 [stock_request_purchase](stock_request_purchase/) | 15.0.1.2.0 |  | Internal request for stock
@@ -6100,7 +6102,7 @@ addon | version | maintainers | summary
 [ddmrp_packaging](ddmrp_packaging/) | 15.0.1.0.0 |  | DDMRP integration with packaging
 [ddmrp_product_replace](ddmrp_product_replace/) | 15.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides a assisting tool for product replacement.
 [ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 15.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
-[ddmrp_warning](ddmrp_warning/) | 15.0.1.4.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
+[ddmrp_warning](ddmrp_warning/) | 15.0.1.5.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
 [stock_buffer_capacity_limit](stock_buffer_capacity_limit/) | 15.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Ensures that the limits of storage are never surpassed
 [stock_buffer_route](stock_buffer_route/) | 15.0.1.2.0 |  | Allows to force a route to be used when procuring from Stock Buffers
 [stock_buffer_sales_analysis](stock_buffer_sales_analysis/) | 15.0.1.0.0 |  | Allows to access the Sales Analysis from Stock Buffers
@@ -6215,6 +6217,7 @@ addon | version | maintainers | summary
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 15.0.1.0.1 |  | Production Grouped By Product
 [mrp_production_note](mrp_production_note/) | 15.0.1.0.0 |  | Notes in production orders
 [mrp_production_operation_injection](mrp_production_operation_injection/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Adds an existing operation from the Bill of Material
+[mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 15.0.1.0.0 |  | Updates the operation type creating MO based on the product
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 15.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_production_quant_manual_assign](mrp_production_quant_manual_assign/) | 15.0.1.0.0 |  | Production - Manual Quant Assignment
 [mrp_production_serial_matrix](mrp_production_serial_matrix/) | 15.0.0.1.0 |  | MRP Production Serial Matrix
@@ -6223,6 +6226,7 @@ addon | version | maintainers | summary
 [mrp_sale_info](mrp_sale_info/) | 15.0.1.0.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_lot_number_propagation](mrp_subcontracting_lot_number_propagation/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product (subcontracting integration)
 [mrp_subcontracting_no_negative](mrp_subcontracting_no_negative/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Disallow negative stock levels in subcontractor locations.
+[mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 15.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
 [mrp_tag](mrp_tag/) | 15.0.1.1.0 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 15.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 [mrp_workcenter_category](mrp_workcenter_category/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Adds a category to workcenters
@@ -6456,7 +6460,7 @@ addon | version | maintainers | summary
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 15.0.1.0.2 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 15.0.1.1.0 |  | Option to create deposit from purchase order
 [purchase_deposit_analytic](purchase_deposit_analytic/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add analytic on wizard register deposit
-[purchase_discount](purchase_discount/) | 15.0.2.0.1 |  | Purchase order lines with discounts
+[purchase_discount](purchase_discount/) | 15.0.2.0.2 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 15.0.1.0.0 |  | Custom exceptions on purchase order
 [purchase_fop_shipping](purchase_fop_shipping/) | 15.0.1.0.0 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 15.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
@@ -6586,7 +6590,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_comment_template](purchase_comment_template/) | 15.0.1.0.0 |  | Comments texts templates on Purchase documents
+[purchase_comment_template](purchase_comment_template/) | 15.0.1.1.0 |  | Comments texts templates on Purchase documents
 [purchase_order_report_grouped_by_vendor](purchase_order_report_grouped_by_vendor/) | 15.0.1.0.0 |  | Purchase order report grouping orders by vendor
 
 [//]: # (end addons)
@@ -7464,7 +7468,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_comment_template](base_comment_template/) | 15.0.3.0.2 |  | Add conditional mako template to any reporton models that inherits comment.template.
+[base_comment_template](base_comment_template/) | 15.0.3.0.3 |  | Add conditional mako template to any reporton models that inherits comment.template.
 [bi_sql_editor](bi_sql_editor/) | 15.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [bi_view_editor](bi_view_editor/) | 15.0.1.1.0 |  | Graphical BI views builder for Odoo
 [board_eval_context](board_eval_context/) | 15.0.1.0.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Add some keys to board.board eval context
@@ -8906,7 +8910,7 @@ addon | version | maintainers | summary
 [website_crm_quick_answer](website_crm_quick_answer/) | 15.0.1.0.1 |  | Add an automatic answer for contacts asking for info
 [website_form_require_legal](website_form_require_legal/) | 15.0.1.1.0 |  | Add possibility to require confirm legal terms.
 [website_forum_subscription](website_forum_subscription/) | 15.0.1.0.0 |  | Adds a button to allow subscription from the website
-[website_google_tag_manager](website_google_tag_manager/) | 15.0.2.0.0 |  | Add support for Google Tag Manager
+[website_google_tag_manager](website_google_tag_manager/) | 15.0.2.0.1 |  | Add support for Google Tag Manager
 [website_legal_page](website_legal_page/) | 15.0.2.0.0 |  | Website Legal Page
 [website_local_font](website_local_font/) | 15.0.1.0.0 |  | Allows to add local fonts on Odoo website
 [website_odoo_debranding](website_odoo_debranding/) | 15.0.1.0.1 |  | Remove Odoo Branding from Website
