@@ -1,6 +1,6 @@
 {
     "name": "Web Refresher",
-    "version": "16.0.3.1.2",
+    "version": "16.0.3.1.3",
     "author": "Compassion Switzerland, Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/web",
@@ -10,11 +10,15 @@
     "assets": {
         "web.assets_backend": [
             "web_refresher/static/src/**/*.scss",
-            "web_refresher/static/src/**/*.esm.js",
             "web_refresher/static/src/xml/refresher.xml",
             # Load the modification of the master template just after it,
             # for having the modification in all the primary extensions.
             # Example: the project primary view.
+            (
+                "after",
+                "web/static/src/search/control_panel/control_panel.js",
+                "web_refresher/static/src/**/*.esm.js",
+            ),
             (
                 "after",
                 "web/static/src/search/control_panel/control_panel.xml",
