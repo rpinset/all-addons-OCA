@@ -3385,7 +3385,7 @@ addon | version | maintainers | summary
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 14.0.1.0.5 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 14.0.1.1.3 |  | HR Attendance RFID
 [hr_attendance_sheet](hr_attendance_sheet/) | 14.0.1.0.4 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Group attendances into attendance sheets.
-[hr_attendance_validation](hr_attendance_validation/) | 14.0.1.0.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Employee attendance validation.
+[hr_attendance_validation](hr_attendance_validation/) | 14.0.1.1.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Employee attendance validation.
 [hr_birthday_welcome_message](hr_birthday_welcome_message/) | 14.0.1.0.0 |  | This addon adds a birthday message as welcome message when it is the employee's birthday
 
 [//]: # (end addons)
@@ -5229,7 +5229,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.3 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.4 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -5239,7 +5239,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 14.0.1.16.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 14.0.0.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 14.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 14.0.1.1.1 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 14.0.6.4.1 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 14.0.4.9.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 14.0.2.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -6164,7 +6164,7 @@ addon | version | maintainers | summary
 [stock_quant_package_dimension](stock_quant_package_dimension/) | 14.0.2.2.0 |  | Use dimensions on packages
 [stock_quant_package_dimension_total_weight_from_packaging](stock_quant_package_dimension_total_weight_from_packaging/) | 14.0.1.1.0 |  | Estimated weight of a package
 [stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 14.0.1.1.0 |  | Use product packagings on packages
-[stock_restrict_lot](stock_restrict_lot/) | 14.0.1.2.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
+[stock_restrict_lot](stock_restrict_lot/) | 14.0.1.3.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_restrict_lot_update](stock_restrict_lot_update/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Only apply lot restriction on products in a domain
 [stock_return_request](stock_return_request/) | 14.0.1.0.3 |  | Stock Return Request
 [stock_scheduler_assignation_horizon](stock_scheduler_assignation_horizon/) | 14.0.1.1.0 |  | Set a timeframe limit to the delivery scheduler
@@ -6635,7 +6635,7 @@ addon | version | maintainers | summary
 [stock_picking_consolidation_priority](stock_picking_consolidation_priority/) | 14.0.1.1.0 |  | Raise priority of all transfers for a chain when started
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 14.0.1.1.0 |  | Define different shipping policies according to picking type
 [stock_picking_type_shipping_policy_group_by](stock_picking_type_shipping_policy_group_by/) | 14.0.1.0.0 |  | Glue module for Picking Type Shipping Policy and Group Transfers by Partner and Carrier
-[stock_reception_screen](stock_reception_screen/) | 14.0.1.0.2 |  | Dedicated screen to receive/scan goods.
+[stock_reception_screen](stock_reception_screen/) | 14.0.1.1.0 |  | Dedicated screen to receive/scan goods.
 [stock_reception_screen_measuring_device](stock_reception_screen_measuring_device/) | 14.0.1.0.0 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Allow to use a measuring device from a reception screen.for packaging measurement
 [stock_reception_screen_qty_by_packaging](stock_reception_screen_qty_by_packaging/) | 14.0.1.1.0 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
 [stock_release_channel](stock_release_channel/) | 14.0.2.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
@@ -7502,7 +7502,7 @@ addon | version | maintainers | summary
 [project_forecast_line_bokeh_chart](project_forecast_line_bokeh_chart/) | 14.0.1.0.1 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast Lines Bokeh Chart
 [project_forecast_line_deadline](project_forecast_line_deadline/) | 14.0.1.0.0 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast end date based on deadline of task.
 [project_forecast_line_milestone](project_forecast_line_milestone/) | 14.0.1.0.0 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast Line dates according to Milestone target date
-[project_forecast_line_priority](project_forecast_line_priority/) | 14.0.1.0.0 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast Line dates according to task priority
+[project_forecast_line_priority](project_forecast_line_priority/) | 14.0.1.0.1 | [![ntsirintanis](https://github.com/ntsirintanis.png?size=30px)](https://github.com/ntsirintanis) | Project Forecast Line dates according to task priority
 [project_gtd](project_gtd/) | 14.0.1.0.1 |  | Personal Tasks, Contexts, Timeboxes
 [project_hr](project_hr/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Link HR with project
 [project_key](project_key/) | 14.0.1.0.2 |  | Module decorates projects and tasks with Project Key
@@ -7912,7 +7912,7 @@ addon | version | maintainers | summary
 [mail_preview_audio](mail_preview_audio/) | 14.0.1.0.0 |  | Allow to preview audio files
 [mail_preview_base](mail_preview_base/) | 14.0.1.0.0 |  | Base to add more previewing options
 [mail_quoted_reply](mail_quoted_reply/) | 14.0.1.0.1 |  | Make a reply using a message
-[mail_restrict_follower_selection](mail_restrict_follower_selection/) | 14.0.1.0.0 |  | Define a domain from which followers can be selected
+[mail_restrict_follower_selection](mail_restrict_follower_selection/) | 14.0.1.1.0 |  | Define a domain from which followers can be selected
 [mail_restrict_send_button](mail_restrict_send_button/) | 14.0.1.1.1 |  | Security for Send Message Button on Chatter Area
 [mail_send_copy](mail_send_copy/) | 14.0.1.0.1 |  | Send to you a copy of each mail sent by Odoo
 [mail_server_by_user](mail_server_by_user/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Email Server By User
@@ -8389,6 +8389,7 @@ addon | version | maintainers | summary
 [auth_jwt](auth_jwt/) | 14.0.2.1.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication.
 [auth_jwt_demo](auth_jwt_demo/) | 14.0.1.3.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for auth_jwt.
 [auth_ldaps](auth_ldaps/) | 14.0.1.0.1 |  | Allows to use LDAP over SSL authentication
+[auth_oauth_autologin](auth_oauth_autologin/) | 14.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Automatically redirect to the OAuth provider for login
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 14.0.1.0.0 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 14.0.1.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
 [auth_oidc_environment](auth_oidc_environment/) | 14.0.1.0.1 |  | This module allows to use server env for OIDC configuration
