@@ -1858,6 +1858,7 @@ addon | version | maintainers | summary
 [sale_order_line_remove](sale_order_line_remove/) | 15.0.1.0.0 |  | Allows removal of sale order lines from confirmed orders if not invoiced or received
 [sale_order_line_sequence](sale_order_line_sequence/) | 15.0.2.0.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_lot_selection](sale_order_lot_selection/) | 15.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
+[sale_order_partner_no_autofollow](sale_order_partner_no_autofollow/) | 15.0.1.0.0 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Do not add customer as follower in Sales Orders
 [sale_order_partner_restrict](sale_order_partner_restrict/) | 15.0.1.0.0 | [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Apply restrictions when selecting from the list of customers on SO.
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 15.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 15.0.1.0.1 |  | Define priority on sale orders
@@ -2386,6 +2387,7 @@ addon | version | maintainers | summary
 [website_event_sale_cart_quantity_readonly](website_event_sale_cart_quantity_readonly/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Prevent the user to change the quantity of an event in the cart
 [website_event_snippet_calendar](website_event_snippet_calendar/) | 15.0.1.0.0 |  | Browsable calendar with events list for your website
 [website_event_ticket_published](website_event_ticket_published/) | 15.0.1.0.0 |  | Allow to unpublish event ticket from the website
+[website_event_track_stage_cancelled](website_event_track_stage_cancelled/) | 15.0.1.0.0 |  | Event session cancellation workflows
 
 [//]: # (end addons)
 
@@ -2544,7 +2546,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 15.0.1.14.0 |  | Document Management System for Odoo
+[dms](dms/) | 15.0.1.14.1 |  | Document Management System for Odoo
 [dms_attachment_link](dms_attachment_link/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
 [dms_field](dms_field/) | 15.0.1.4.1 |  | Create DMS View and allow to use them inside a record
@@ -4925,7 +4927,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -7291,7 +7293,7 @@ addon | version | maintainers | summary
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
-[mail_drop_target](mail_drop_target/) | 15.0.1.0.0 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_drop_target](mail_drop_target/) | 15.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 15.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 15.0.0.1.0 |  | Preview email templates in the browser

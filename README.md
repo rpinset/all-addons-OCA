@@ -359,9 +359,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ecc0acc33191dd9a75b842fb06701ded6350e300
+commit 9c631e8e5351f44c68608bce7689802b0f24e7bd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 26 06:51:00 2024 +0000
+Date:   Tue Aug 13 08:58:43 2024 +0000
 
     [BOT] post-merge updates
 
@@ -432,11 +432,11 @@ Date:   Thu Aug 8 10:10:25 2024 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit b1ac1a694f07ed34ce6dff927a952de3de170338
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:11:20 2024 +0000
+commit bf2561a06fe25d07b0e8c143cadf1af2473990e7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 13 14:33:14 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## survey
@@ -459,9 +459,9 @@ Date:   Wed May 1 18:18:04 2024 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 18e60eb3ec19210647f555fcbcfbf79b9adbbef3
+commit 49e5742bd451ec4b502981dd1e5040ce987bd2e6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 6 06:19:01 2024 +0000
+Date:   Mon Aug 12 07:34:18 2024 +0000
 
     [BOT] post-merge updates
 
@@ -906,16 +906,11 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit f9786f82c23f1bfd1be48a9aed9250af2929f48f
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jul 25 13:07:23 2024 +0000
+commit c8b20e388ec3d829ca2c0f21fefaa4e51be24142
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 13 13:37:34 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_message_spv
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_message_spv/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1341,9 +1336,9 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 7626fc9a601bca621b4dd3733c866f91214e28ce
+commit 1355ecfe2b22d4fa425144a1f46a5299adf3ed8a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 22 05:02:46 2024 +0000
+Date:   Mon Aug 12 10:10:45 2024 +0000
 
     [BOT] post-merge updates
 
