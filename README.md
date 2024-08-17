@@ -283,9 +283,9 @@ Date:   Tue Dec 19 14:38:47 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit c5552d5b5cb8834fe5d8176072203740cc0c02d6
+commit 30e57e6e8c6aa519cca160f196b347b8b4e22455
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 6 12:00:23 2024 +0000
+Date:   Wed Aug 14 11:54:06 2024 +0000
 
     [BOT] post-merge updates
 
@@ -530,16 +530,16 @@ Date:   Tue Aug 6 18:47:04 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit b0ac4991e6809f2504f684da8763fb131edffd63
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 8 14:05:23 2024 +0000
+commit ec0a28103429736e6fbc39b915f56ebbd28d5177
+Author: jappi00 <jappi2000@ewetel.net>
+Date:   Fri Aug 16 00:50:43 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (German)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 25.0% (5 of 20 strings)
     
-    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_attachment
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_attachment/it/
+    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_checkout_skip_payment
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_checkout_skip_payment/de/
 
 
 ## edi
@@ -650,11 +650,11 @@ Date:   Tue Aug 13 15:35:48 2024 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit ef75d4c00f9b039c420bc3bcc583fdf37b0d6f7b
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:14:56 2024 +0000
+commit bf0a5e148545ff91ff0393bc1ff52f255bb0ae71
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Aug 14 07:30:20 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## hr-holidays
@@ -993,11 +993,14 @@ Date:   Wed May 1 18:31:50 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit c13ffad86a9f517cd148f3a66d5ab509460d993f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 13 15:55:29 2024 +0000
+commit c9bcecca9e9669183e64a53b8a42abad4b828612
+Merge: e1a24fe9 81cda5b0
+Author: Dorin Hongu <dhongu@gmail.com>
+Date:   Wed Aug 14 12:33:04 2024 +0300
 
-    [UPD] README.rst
+    Merge pull request #1034 from terrabit-ro/14.0-message-spv
+    
+    [14.0][FIX] account ed ubl: fix parametru filter mesaje spv
 
 
 ## l10n-russia
@@ -1138,11 +1141,16 @@ Date:   Wed May 1 19:10:26 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit e10236bbc4a02bd8db3832f0d37470bd56d0cc6e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 13 12:06:29 2024 +0000
+commit 46089f1fc5cd025cd4a2ec654d272bbae3694b0c
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Aug 14 13:25:43 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_partner_note
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_partner_note/
 
 
 ## stock-logistics-tracking
@@ -1207,9 +1215,9 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 5dff6b52015df09cf8d2ee275867a4e70eb011f4
+commit 7ffc95ba64541b0a7f93fba60ad9fa2f724bddbc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 13 12:14:34 2024 +0000
+Date:   Wed Aug 14 06:11:19 2024 +0000
 
     [BOT] post-merge updates
 
