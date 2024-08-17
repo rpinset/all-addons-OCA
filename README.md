@@ -1336,11 +1336,16 @@ Date:   Tue May 14 15:53:35 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit f86b04fd4819154663e4ab403cb354c2c7f7d031
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 10 09:48:41 2024 +0000
+commit d3d74b2f4deeba1c249d1d17db0bbfcd1f888590
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 17 08:29:54 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (127 of 127 strings)
+    
+    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
