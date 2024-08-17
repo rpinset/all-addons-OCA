@@ -24,9 +24,9 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit ec821e5512da4c29b2fa1b6a4ed09282f08f9be7
+commit 1ab44bbb8c48b6d554ff63251096c5c336b9ca66
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 27 12:48:03 2024 +0000
+Date:   Wed Aug 14 15:34:19 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1211,16 +1211,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 8b2bef60763db2a483dca743323d898eb88d1ca0
+commit 000210536cdfb8f8879a8e5650f7b09147178d24
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 18 07:31:07 2024 +0000
+Date:   Sat Aug 17 08:29:58 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-repair_calendar_view
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_calendar_view/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
