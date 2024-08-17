@@ -563,9 +563,9 @@ Date:   Mon Jun 10 13:39:36 2024 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 408d487bd86d01b4c613c0e9f80e625680a12a8e
+commit d2642cb399dd5f2bb05e520827c2e10934068d75
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 3 08:22:36 2024 +0000
+Date:   Thu Aug 15 07:55:03 2024 +0000
 
     [BOT] post-merge updates
 
@@ -942,9 +942,9 @@ Date:   Thu Aug 8 17:44:57 2024 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 2d43c1f75c15139e87e0fd99e9b44b22fa539b19
+commit 34b5f9c71307e691c75352bd694c1e554bee2d24
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 8 09:26:44 2024 +0000
+Date:   Wed Aug 14 15:00:57 2024 +0000
 
     Translated using Weblate (Italian)
     
