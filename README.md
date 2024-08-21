@@ -102,9 +102,9 @@ Date:   Tue May 7 13:23:06 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 045fb0613f4cdc8a808f17ce2071289621fe2047
+commit 24d8262872d229d224aab46728283c40020a6970
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 10 14:22:45 2024 +0000
+Date:   Wed Aug 21 15:21:15 2024 +0000
 
     [BOT] post-merge updates
 
@@ -477,11 +477,16 @@ Date:   Wed May 1 18:09:27 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 1cdd977de6583aabf125c93c93d9d3097aa09a3b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 17 16:28:44 2024 +0000
+commit dde1dd8c6027163b6a64c047ab2b1182603ae939
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Aug 20 12:49:45 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-15.0/edi-15.0-edi_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-edi_oca/
 
 
 ## field-service
@@ -504,11 +509,16 @@ Date:   Wed May 1 18:44:57 2024 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 1553e847ebec2b30bbb9849081fd73ec78fb2e19
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:12:40 2024 +0000
+commit d55992ae0b7a4c8b4bcc98da1e318429746e7dcf
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Aug 20 08:28:23 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (86 of 86 strings)
+    
+    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_log_fuel
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_log_fuel/it/
 
 
 ## infrastructure-dns
@@ -933,11 +943,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 90d194b002c27191ca2cb7f69bca7fed64e7f571
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 17:44:57 2024 +0000
+commit 9cdde3c4693dbff40273c38a80214155ecfce5a4
+Author: David Vidal <david.vidal@tecnativa.com>
+Date:   Tue Aug 20 09:26:15 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (63 of 63 strings)
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-delivery_seur_atlas
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-delivery_seur_atlas/es/
 
 
 ## l10n-switzerland
@@ -1092,11 +1107,16 @@ Date:   Wed Jul 24 06:28:39 2024 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 867b1f56a96a554a69e69dd6d4c5df17c115509e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 22 15:59:03 2024 +0000
+commit e858fb7441019b7d7e90989c208d9db3bec4650f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Aug 20 07:38:59 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 92.0% (325 of 353 strings)
+    
+    Translation: rma-15.0/rma-15.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
 
 
 ## ddmrp
@@ -1180,11 +1200,16 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit c60a1d7919923b7f5a3f17dbc033ce4a5865be24
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 07:18:18 2024 +0000
+commit 7afc22c3dea92a7e2ab4dd1043ed0d62cf73058a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Aug 20 08:24:43 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 65.9% (151 of 229 strings)
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_request/it/
 
 
 ## purchase-reporting
@@ -1258,16 +1283,11 @@ Date:   Wed May 1 18:54:54 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit b4da9a53e051cd129864ffce8f9d46f3a47c07fe
-Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Wed Jul 10 07:38:35 2024 +0000
+commit 4e80a204719d31242b6cd3cd2af9af0c423e8f6f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Aug 21 14:46:18 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: project-15.0/project-15.0-project_administrator_restricted_visibility
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_administrator_restricted_visibility/es/
+    [ADD] setup.py
 
 
 ## project-agile
@@ -1363,9 +1383,9 @@ Date:   Wed May 1 19:03:51 2024 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 53229431e5566830081068bba5ed2e8830349fe6
+commit a6a09992ae75c9f1d7b6cb5746212d37bb3b8aca
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 12:23:53 2024 +0000
+Date:   Mon Aug 19 12:20:23 2024 +0000
 
     [BOT] post-merge updates
 

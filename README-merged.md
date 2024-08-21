@@ -466,6 +466,7 @@ addon | version | maintainers | summary
 [account_move_exception](account_move_exception/) | 15.0.1.0.0 |  | Custom exceptions on account move
 [account_move_post_block](account_move_post_block/) | 15.0.1.1.0 |  | Account Move Post Block
 [account_move_search_line](account_move_search_line/) | 15.0.1.0.0 |  | Account Move Search Line
+[account_move_sent_usability](account_move_sent_usability/) | 15.0.1.0.1 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
 [account_move_tier_validation](account_move_tier_validation/) | 15.0.1.1.1 |  | Extends the functionality of Account Moves to support a tier validation process.
 [account_move_tier_validation_forward](account_move_tier_validation_forward/) | 15.0.1.0.0 |  | Account Move Tier Validation - Forward Option
 [account_portal_hide_invoice](account_portal_hide_invoice/) | 15.0.1.0.0 | [![Khalid-SerpentCS](https://github.com/Khalid-SerpentCS.png?size=30px)](https://github.com/Khalid-SerpentCS) | Hide invoices on customer portal.
@@ -2694,7 +2695,7 @@ addon | version | maintainers | summary
 [edi_account_oca](edi_account_oca/) | 15.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define EDI Configuration for Account Moves
 [edi_backend_partner_oca](edi_backend_partner_oca/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Add the a partner field to EDI backend
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 15.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allows definition of exchanges via templates.
-[edi_oca](edi_oca/) | 15.0.1.6.2 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 15.0.1.7.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_stock_oca](edi_stock_oca/) | 15.0.1.0.0 |  | Define EDI Configuration for Stock
 [edi_storage_oca](edi_storage_oca/) | 15.0.1.3.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.2 |  | Sends account invoices to Voxel.
@@ -6926,7 +6927,6 @@ addon | version | maintainers | summary
 [project_forecast_line_holidays_public](project_forecast_line_holidays_public/) | 15.0.1.1.0 |  | Project Forecast Lines taking public holidays into account
 [project_hr](project_hr/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Link HR with project
 [project_list](project_list/) | 15.0.2.0.0 |  | Projects list view
-[project_milestone](project_milestone/) | 15.0.1.0.1 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Milestones
 [project_parent_task_filter](project_parent_task_filter/) | 15.0.1.1.0 |  | Add a filter to show the parent tasks
 [project_purchase_analytic_global](project_purchase_analytic_global/) | 15.0.1.0.1 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Project - Create Purchase Orders with Analytic Account
 [project_role](project_role/) | 15.0.1.0.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Project role-based roster
@@ -7485,7 +7485,7 @@ addon | version | maintainers | summary
 [report_qweb_parameter](report_qweb_parameter/) | 15.0.1.0.0 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 15.0.1.0.0 |  | Add watermarks to your QWEB PDF reports
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 15.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
-[report_xlsx](report_xlsx/) | 15.0.1.1.4 |  | Base module to create xlsx report
+[report_xlsx](report_xlsx/) | 15.0.1.1.5 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 15.0.1.0.2 |  | Report xlsx helpers
 [report_xml](report_xml/) | 15.0.1.0.2 |  | Allow to generate XML reports
 [sql_export](sql_export/) | 15.0.1.0.0 |  | Export data in csv file with SQL requests
