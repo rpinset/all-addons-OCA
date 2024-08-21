@@ -1063,7 +1063,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_bank_statement_reopen_skip_undo_reconciliation](account_bank_statement_reopen_skip_undo_reconciliation/) | 14.0.1.0.0 |  | When reopening a bank statement it will respect the reconciled entries.
 [account_mass_reconcile](account_mass_reconcile/) | 14.0.1.1.2 |  | Account Mass Reconcile
-[account_mass_reconcile_as_job](account_mass_reconcile_as_job/) | 14.0.1.1.1 |  | Account Mass Reconcile as Jobs
+[account_mass_reconcile_as_job](account_mass_reconcile_as_job/) | 14.0.1.1.2 |  | Account Mass Reconcile as Jobs
 [account_mass_reconcile_by_mrp_production](account_mass_reconcile_by_mrp_production/) | 14.0.1.0.0 |  | Allows to reconcile based on the MO line
 [account_mass_reconcile_by_purchase_line](account_mass_reconcile_by_purchase_line/) | 14.0.1.0.0 |  | Allows to reconcile based on the PO line
 [account_mass_reconcile_by_sale_line](account_mass_reconcile_by_sale_line/) | 14.0.1.0.0 |  | Allows to reconcile based on the SO line
@@ -1076,7 +1076,7 @@ addon | version | maintainers | summary
 [account_reconcile_payment_order](account_reconcile_payment_order/) | 14.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Automatically propose all lines generated from payment orders
 [account_reconcile_reconciliation_date](account_reconcile_reconciliation_date/) | 14.0.1.0.1 |  | Track Reconciliation Date of Payments and Invoices
 [account_reconcile_restrict_partner_mismatch](account_reconcile_restrict_partner_mismatch/) | 14.0.1.0.0 |  | Restrict reconciliation on receivable and payable accounts to the same partner
-[account_reconciliation_widget](account_reconciliation_widget/) | 14.0.2.0.7 |  | Account reconciliation widget
+[account_reconciliation_widget](account_reconciliation_widget/) | 14.0.2.0.8 |  | Account reconciliation widget
 [account_reconciliation_widget_limit_aml](account_reconciliation_widget_limit_aml/) | 14.0.1.0.0 |  | Filter all account move lines in reconciliation view
 [bank_statement_check_number](bank_statement_check_number/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Add the check number in the bank statements
 
@@ -2136,7 +2136,7 @@ addon | version | maintainers | summary
 [base_country_state_translatable](base_country_state_translatable/) | 14.0.1.0.1 |  | Translate Country States
 [base_location](base_location/) | 14.0.1.2.5 |  | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 14.0.1.0.2 |  | Import zip entries from Geonames
-[base_location_nuts](base_location_nuts/) | 14.0.1.0.3 |  | NUTS Regions
+[base_location_nuts](base_location_nuts/) | 14.0.1.1.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS Regions
 [base_partner_sequence](base_partner_sequence/) | 14.0.1.0.2 |  | Sets customer's code from a sequence
 [partner_address_street3](partner_address_street3/) | 14.0.1.0.0 |  | Add a third address line on partners
 [partner_address_version](partner_address_version/) | 14.0.1.0.0 |  | Partner Address Version
@@ -2147,7 +2147,7 @@ addon | version | maintainers | summary
 [partner_category_security](partner_category_security/) | 14.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner category security
 [partner_category_security_crm](partner_category_security_crm/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner category security (crm extension)
 [partner_coc](partner_coc/) | 14.0.1.0.1 | [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Adds field 'Chamber Of Commerce Registration Number'
-[partner_company_group](partner_company_group/) | 14.0.1.1.1 |  | Adds the possibility to add a company group to a company
+[partner_company_group](partner_company_group/) | 14.0.1.2.0 |  | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 14.0.1.0.1 |  | Adds a company type to partner that are companies
 [partner_contact_access_link](partner_contact_access_link/) | 14.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
 [partner_contact_address_default](partner_contact_address_default/) | 14.0.1.1.0 |  | Set a default delivery and invoice address for contacts
@@ -3438,7 +3438,7 @@ addon | version | maintainers | summary
 [hr_expense_analytic_distribution](hr_expense_analytic_distribution/) | 14.0.1.0.1 |  | HR Expense Analytic Distribution
 [hr_expense_cancel](hr_expense_cancel/) | 14.0.2.0.1 |  | Hr expense cancel
 [hr_expense_exception](hr_expense_exception/) | 14.0.1.0.1 |  | Custom exceptions on expense report
-[hr_expense_invoice](hr_expense_invoice/) | 14.0.1.1.3 |  | Supplier invoices on HR expenses
+[hr_expense_invoice](hr_expense_invoice/) | 14.0.1.1.4 |  | Supplier invoices on HR expenses
 [hr_expense_journal](hr_expense_journal/) | 14.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Set the Journal for the payment type used to pay the expense
 [hr_expense_pay_to_vendor](hr_expense_pay_to_vendor/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | HR Expense - Pay To Vendor
 [hr_expense_payment](hr_expense_payment/) | 14.0.1.0.1 |  | HR Expense Payment
@@ -3660,7 +3660,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_intercompany_multi_company](product_supplierinfo_intercompany_multi_company/) | 14.0.1.1.0 |  | Compatibility of product_multi_company and product_supplierinfo_intercompany
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 14.0.1.2.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Product Tax Multi Company Default
 [purchase_quick_intercompany](purchase_quick_intercompany/) | 14.0.0.1.1 |  | Purchase Quick Intercompany
-[purchase_sale_inter_company](purchase_sale_inter_company/) | 14.0.2.2.2 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Intercompany PO/SO rules
+[purchase_sale_inter_company](purchase_sale_inter_company/) | 14.0.2.3.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Intercompany PO/SO rules
 [res_company_code](res_company_code/) | 14.0.1.0.1 |  | Add 'code' field on company model
 [stock_intercompany](stock_intercompany/) | 14.0.1.1.1 |  | Stock Intercompany Delivery-Reception
 
@@ -4752,7 +4752,7 @@ addon | version | maintainers | summary
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 14.0.1.1.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 14.0.1.0.3 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Mostra il codice fiscale del cliente nella stampa del preventivo
-[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.4.2 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
+[l10n_it_intrastat](l10n_it_intrastat/) | 14.0.1.4.3 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 14.0.1.3.6 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_invoices_data_communication](l10n_it_invoices_data_communication/) | 14.0.1.0.2 |  | Comunicazione dati fatture (c.d. "nuovo spesometro" o "esterometro")
 [l10n_it_invoices_data_communication_fatturapa](l10n_it_invoices_data_communication_fatturapa/) | 14.0.1.0.0 |  | Integrazione fatturazione elettronica e comunicazione dati fatture (c.d. "nuovo spesometro")
@@ -8118,7 +8118,7 @@ addon | version | maintainers | summary
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 14.0.1.0.2 |  | Add watermarks to your QWEB PDF reports
 [report_qweb_signer](report_qweb_signer/) | 14.0.2.0.3 |  | Sign Qweb PDFs usign a PKCS#12 certificate
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 14.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
-[report_xlsx](report_xlsx/) | 14.0.1.0.10 |  | Base module to create xlsx report
+[report_xlsx](report_xlsx/) | 14.0.1.0.11 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 14.0.1.0.2 |  | Report xlsx helpers
 [report_xlsx_helper_demo](report_xlsx_helper_demo/) | 14.0.1.0.0 |  | Report xlsx helpers - demo
 [report_xml](report_xml/) | 14.0.1.0.3 |  | Allow to generate XML reports
