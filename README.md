@@ -38,9 +38,9 @@ Date:   Sun Jun 30 16:36:28 2024 +0000
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit 219781579ff1d079bab75eb297a1e107ef881bbc
+commit 2b453670e05b52bc350872b7a75844ef1733ca53
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:34:27 2023 +0000
+Date:   Tue Aug 20 08:24:41 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -457,16 +457,11 @@ Date:   Mon Feb 12 08:26:35 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit fa860ba5385ffd0f4c36229743c2dc452539f707
-Author: JHernandezConinpe <jhernandez@coninpe.es>
-Date:   Wed Apr 3 13:42:01 2024 +0000
+commit 36571d157b7007db76b04aa993054fe6940397bc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 19 10:32:36 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: partner-contact-13.0/partner-contact-13.0-partner_manual_rank
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-13-0/partner-contact-13-0-partner_manual_rank/es/
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -599,16 +594,16 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 10b430f0e2466a57610bfab1ae6456f1f9f1a201
+commit 7ddab9326d09a11bb141eb4a54791cbd928c114c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 14 14:56:36 2024 +0000
+Date:   Tue Aug 20 07:44:28 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (544 of 544 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_account/it/
 
 
 ## margin-analysis
@@ -1378,16 +1373,16 @@ Date:   Fri Jun 14 14:57:17 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 76d33c77ac3daf612cd623e88c6bd2a80e8b3c8b
+commit 3c740461ed6d36291128ccf82b5ea25291c050ed
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 26 10:11:55 2024 +0000
+Date:   Tue Aug 20 08:24:40 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 82.7% (187 of 226 strings)
     
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request_tier_validation/it/
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request/it/
 
 
 ## purchase-reporting
@@ -1406,16 +1401,11 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 68eb6eb7374dcbefa1135dc53820b4b56f439404
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 29 14:47:22 2024 +0000
+commit c8c060c02c3ee7c8f7a8ab39f422e117c66e936d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 19 18:06:25 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: product-attribute-13.0/product-attribute-13.0-product_variant_attribute_name_manager
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_variant_attribute_name_manager/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
