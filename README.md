@@ -38,9 +38,9 @@ Date:   Wed Aug 14 15:34:19 2024 +0000
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit 85ade7179e802444d949cf869e09212c683cb294
+commit 43c5aa2117ba0346836ee60783600168d9e7740c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Dec 24 16:34:20 2023 +0000
+Date:   Tue Aug 20 08:24:37 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -117,9 +117,9 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 85d7869219479b96e69ba794aee3de1c33f72d72
-Author: Sergio Corato <sergiocorato@gmail.com>
-Date:   Thu Jun 13 16:23:01 2024 +0000
+commit 234ab99e2941793cb8bd6db20dba2047097bf1eb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Aug 20 07:48:12 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1211,16 +1211,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 000210536cdfb8f8879a8e5650f7b09147178d24
+commit 0f529d039fcd0bd71971a5f80f4a0216a41a856e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 17 08:29:58 2024 +0000
+Date:   Tue Aug 20 07:42:31 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_bom_widget_section_and_note_one2many
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_bom_widget_section_and_note_one2many/it/
 
 
 ## manufacture-reporting
@@ -1253,16 +1253,16 @@ Date:   Fri Jun 14 14:57:09 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit de56f7f2d623f0646a2e5aa299688c39615443e3
-Author: Sergio Corato <sergiocorato@gmail.com>
-Date:   Thu Jun 13 16:29:13 2024 +0000
+commit 21b3f678c3b6fdaaf7196f27d8b9ffaf55fa98e5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Aug 20 08:24:46 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 79.3% (23 of 29 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_open_qty
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_open_qty/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_approved
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_approved/it/
 
 
 ## purchase-reporting
@@ -1364,9 +1364,9 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 517de8795022aa53a8957baa76e64dde56bc8aaa
+commit ab5d5476e91f25190d9a83efbb25fc4e059b1fcc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 6 12:37:21 2024 +0000
+Date:   Tue Aug 20 07:42:26 2024 +0000
 
     Translated using Weblate (Italian)
     
