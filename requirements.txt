@@ -208,6 +208,7 @@ openupgradelib
 sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
+pysaml2
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
