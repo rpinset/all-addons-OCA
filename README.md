@@ -491,11 +491,16 @@ Date:   Tue Aug 20 12:49:45 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 894c2ec08c45bc1ab6f76ae529a0b4092bf5784c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 2 13:57:44 2024 +0000
+commit fd619cb2a0c48ffd15146dc01e9c3e52584e1dbb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 07:42:11 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (13 of 13 strings)
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_equipment_stock
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_equipment_stock/it/
 
 
 ## margin-analysis
@@ -509,16 +514,16 @@ Date:   Wed May 1 18:44:57 2024 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit d55992ae0b7a4c8b4bcc98da1e318429746e7dcf
+commit 47a7f3d2fb1093e1d37c44bb7ea3389554cdc2a8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 08:28:23 2024 +0000
+Date:   Thu Aug 22 08:50:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (86 of 86 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_log_fuel
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_log_fuel/it/
+    Translation: fleet-15.0/fleet-15.0-fleet_vehicle_stock
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-15-0/fleet-15-0-fleet_vehicle_stock/it/
 
 
 ## infrastructure-dns
@@ -1057,25 +1062,30 @@ Date:   Mon Aug 5 10:17:07 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 10e79af8011c955927baec1669afab37fc785867
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Aug 1 08:45:51 2024 +0000
+commit ad7afc89887d71f15cd5d0c7b2ca60cd2dc1f551
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 08:53:50 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 83.5% (248 of 297 strings)
     
-    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes_gs1
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes_gs1/
+    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit e7e726e837d6794ae0bd9350e2d20ae10baae232
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 16:31:50 2024 +0000
+commit 9c79fffb0a57dbfe956acb1a4087e3441bdddc04
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 07:41:21 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_lot_on_hand_first
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_lot_on_hand_first/it/
 
 
 ## stock-logistics-tracking
@@ -1089,11 +1099,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit aa0a37e4fa14b01c1a85a8e4a5e77f36efce8619
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 8 08:40:07 2024 +0000
+commit 44a5a9c07c34c203bd46d1b7c1d59869ac85ac86
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 08:50:58 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (34 of 34 strings)
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_quant_manual_assign
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_quant_manual_assign/it/
 
 
 ## stock-logistics-reporting
@@ -1149,16 +1164,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit ced236fbdb143d86a9938b72264a6d85936d0da5
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Aug 8 10:42:11 2024 +0000
+commit 5da0f28cf8aeb919896c7fa057deab97b7c44328
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 07:41:11 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: manufacture-15.0/manufacture-15.0-mrp_production_picking_type_from_route
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_picking_type_from_route/
+    Translation: manufacture-15.0/manufacture-15.0-mrp_production_grouped_by_product
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_grouped_by_product/it/
 
 
 ## manufacture-reporting
@@ -1200,9 +1215,9 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 7afc22c3dea92a7e2ab4dd1043ed0d62cf73058a
+commit eaafe845af292b8546459633b7880aa2bcf65f36
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 08:24:43 2024 +0000
+Date:   Fri Aug 23 14:00:02 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1552,9 +1567,9 @@ Date:   Mon Mar 4 08:14:35 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 5e275bb0ce1157b6ccc7c234c9897843e8955930
+commit 7eae28c7f60453aa39c42a7e3b1ac1379c23e246
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 23 07:23:36 2024 +0000
+Date:   Fri Aug 23 09:10:53 2024 +0000
 
     Translated using Weblate (Italian)
     
