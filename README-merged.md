@@ -2974,7 +2974,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_margin](account_invoice_margin/) | 14.0.1.1.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Show margin in invoices
+[account_invoice_margin](account_invoice_margin/) | 14.0.1.1.2 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Show margin in invoices
 [account_invoice_margin_sale](account_invoice_margin_sale/) | 14.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Set margin in invoices from sale orders
 [product_standard_margin](product_standard_margin/) | 14.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product Margin and Margin Rate
 [sale_margin_delivery_cost](sale_margin_delivery_cost/) | 14.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | See sales margins after other expected costs, such as shipping and delivery
@@ -6937,7 +6937,7 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.39.0 |  | A property management system
+[pms](pms/) | 14.0.2.40.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
