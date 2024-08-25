@@ -570,9 +570,9 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit bc5de0784f8c7079cc1c53815a53e80eb094a131
+commit bd6ec01c84d83dc5a3d7149167332a27066269cf
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Jul 25 08:25:34 2024 +0000
+Date:   Fri Aug 23 09:27:07 2024 +0000
 
     Update translation files
     
@@ -584,16 +584,16 @@ Date:   Thu Jul 25 08:25:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 36fce8a3e98da664c09818fa703d38d5ddbcf1d4
+commit 79c8682d6403b8f53a7a6db6319f4bc4e5259454
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 1 10:01:15 2024 +0000
+Date:   Thu Aug 22 07:42:08 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (138 of 138 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_equipment_stock
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_equipment_stock/it/
 
 
 ## margin-analysis
@@ -612,16 +612,16 @@ Date:   Thu Feb 1 11:04:13 2024 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 1dc99dcf87e31deb3d1d6db159202c9b8ba0545f
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:42:22 2023 +0000
+commit 5e207c3f37059097c311640555f8e85f4417d3a4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 08:50:18 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: fleet-12.0/fleet-12.0-fleet_vehicle_service_kanban
-    Translate-URL: https://translation.odoo-community.org/projects/fleet-12-0/fleet-12-0-fleet_vehicle_service_kanban/
+    Translation: fleet-12.0/fleet-12.0-fleet_vehicle_stock
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-12-0/fleet-12-0-fleet_vehicle_stock/it/
 
 
 ## infrastructure-dns
@@ -896,16 +896,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit f6bc167f54988473953b44098f1730617e5a2b0f
+commit 87523fc15463c925a31a89cee5a972ec021d6e31
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 6 14:39:36 2024 +0000
+Date:   Thu Aug 22 08:53:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (262 of 262 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_asset_history_import
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_asset_history_import/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note/it/
 
 
 ## l10n-japan
@@ -1100,39 +1100,44 @@ Date:   Tue Nov 19 21:09:20 2019 +0100
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit a69701db1b41a52c0226daa63337355b45a3032f
+commit 6ddb6f454043765bfe71952450bea2252ead135f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 3 10:12:10 2024 +0000
+Date:   Thu Aug 22 07:26:23 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 100.0% (25 of 25 strings)
     
-    Translation: delivery-carrier-12.0/delivery-carrier-12.0-partner_delivery_zone
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-12-0/delivery-carrier-12-0-partner_delivery_zone/it/
+    Translation: delivery-carrier-12.0/delivery-carrier-12.0-partner_delivery_schedule
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-12-0/delivery-carrier-12-0-partner_delivery_schedule/it/
 
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit adc0415049c120dc4a04598712846e6300d0adeb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 15:22:20 2024 +0000
+commit c779d2071cb408a7b1677b5e1b64c118453065ee
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 22 08:52:32 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (120 of 120 strings)
+    
+    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 1e6c89026203b140c435eb8eee68c3df1f0085ff
+commit 6ba35a17d56f987d78bbc2ebd2307b55ba8c0ee3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 4 12:46:14 2024 +0000
+Date:   Thu Aug 22 07:42:07 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 22.0% (22 of 100 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_batch_extended
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_batch_extended/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_line_auto_fill
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_line_auto_fill/it/
 
 
 ## stock-logistics-tracking
@@ -1146,16 +1151,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 81a697cd3120f101a19aef5eb902f22ce7a285b0
+commit be2f65a4cd913d1346cbbafcab279870cc7fe28c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 16 11:00:38 2024 +0000
+Date:   Thu Aug 22 08:51:36 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 44.1% (15 of 34 strings)
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_quant_manual_assign
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_quant_manual_assign/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_move_location
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_move_location/it/
 
 
 ## stock-logistics-reporting
@@ -1211,16 +1216,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 0f529d039fcd0bd71971a5f80f4a0216a41a856e
+commit f7afa783f6ffa650f3e46b2305b1870e81fc999f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 07:42:31 2024 +0000
+Date:   Thu Aug 22 07:41:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_bom_widget_section_and_note_one2many
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_bom_widget_section_and_note_one2many/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_production_grouped_by_product
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_grouped_by_product/it/
 
 
 ## manufacture-reporting
@@ -1253,16 +1258,16 @@ Date:   Fri Jun 14 14:57:09 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 21b3f678c3b6fdaaf7196f27d8b9ffaf55fa98e5
+commit d4ee5bb04eb9f3cac6ab01d065f95252af9bbadc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 08:24:46 2024 +0000
+Date:   Fri Aug 23 13:59:38 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 79.3% (23 of 29 strings)
+    Currently translated at 92.0% (207 of 225 strings)
     
-    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_approved
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_approved/it/
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
 
 
 ## purchase-reporting
