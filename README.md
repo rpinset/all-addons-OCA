@@ -622,9 +622,9 @@ Date:   Mon Oct 9 20:17:34 2023 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit 4e3405ded70319a183ab83bbe6cae3a1aa74fb62
+commit 48335d2e92130d31763bfe30c08be26b9c47c5d4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Nov 2 14:12:26 2023 +0000
+Date:   Thu Aug 22 08:50:15 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1248,9 +1248,9 @@ Date:   Fri Jan 26 08:17:17 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2fac7770b78cb28a87ca762fe3743c60c8a797f5
+commit c4c364791f9e717cf1e765d1c03fd4af1a49b3ef
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 4 12:45:10 2024 +0000
+Date:   Thu Aug 22 08:51:33 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1317,30 +1317,30 @@ Date:   Mon Jul 1 09:22:02 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit d8874a0f166c3fd6de5d215413218fe7c4421b31
+commit ad98fe280fc170603d71047bb2322fcd96bfe822
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 14 15:53:35 2024 +0000
+Date:   Thu Aug 22 07:41:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: wms-13.0/wms-13.0-shopfloor_rest_log
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-shopfloor_rest_log/it/
+    Translation: wms-13.0/wms-13.0-stock_picking_type_shipping_policy
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_picking_type_shipping_policy/it/
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit d3d74b2f4deeba1c249d1d17db0bbfcd1f888590
+commit 2d8eb8d3008ac220dce03313ef9f2916a856d061
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 17 08:29:54 2024 +0000
+Date:   Thu Aug 22 07:42:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
+    Translation: manufacture-13.0/manufacture-13.0-quality_control_stock_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_stock_oca/it/
 
 
 ## manufacture-reporting
@@ -1373,9 +1373,9 @@ Date:   Fri Jun 14 14:57:17 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3c740461ed6d36291128ccf82b5ea25291c050ed
+commit 3fee0e77de73726e8d2000ab8cd1f106c43934b2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 08:24:40 2024 +0000
+Date:   Fri Aug 23 13:59:51 2024 +0000
 
     Translated using Weblate (Italian)
     
