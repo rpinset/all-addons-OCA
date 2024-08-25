@@ -126,6 +126,8 @@ pdfminer.six==20220319
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 # generated from manifests external_dependencies
 PyJWT
+num2words>=0.5.8
+python-dateutil
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
@@ -208,6 +210,8 @@ openupgradelib
 sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
+email_validator
+lxml
 pysaml2
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
