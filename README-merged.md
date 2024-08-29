@@ -641,7 +641,7 @@ addon | version | maintainers | summary
 [hr_payroll_account_operating_unit](hr_payroll_account_operating_unit/) | 14.0.1.0.0 |  | HR Payroll Account Operating Unit
 [mail_template_operating_unit](mail_template_operating_unit/) | 14.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Mail Template Operating Unit
 [mis_builder_budget_operating_unit](mis_builder_budget_operating_unit/) | 14.0.1.0.0 |  | MIS Builder Budget with Operating Unit
-[mis_builder_operating_unit](mis_builder_operating_unit/) | 14.0.1.0.0 |  | MIS Builder with Operating Unit
+[mis_builder_operating_unit](mis_builder_operating_unit/) | 14.0.1.1.0 |  | MIS Builder with Operating Unit
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 14.0.1.1.0 |  | Operating Unit in MRP
 [operating_unit](operating_unit/) | 14.0.1.1.1 |  | An operating unit (OU) is an organizational entity part of a company
@@ -1133,7 +1133,7 @@ addon | version | maintainers | summary
 [account_statement_import_ofx](account_statement_import_ofx/) | 14.0.1.0.0 |  | Import OFX Bank Statement
 [account_statement_import_ofx_by_acctid](account_statement_import_ofx_by_acctid/) | 14.0.1.0.0 |  | Import OFX Bank Statement by ACCTID
 [account_statement_import_online](account_statement_import_online/) | 14.0.4.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
-[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 14.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
+[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 14.0.1.0.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 14.0.2.0.0 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_ponto_ing](account_statement_import_online_ponto_ing/) | 14.0.1.0.0 |  | Online Bank Statements: MyPonto.com ING customization
 [account_statement_import_online_wise](account_statement_import_online_wise/) | 14.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for Wise.com (TransferWise.com)
@@ -4158,47 +4158,6 @@ and promote its widespread use.
 ----
 ----
 
-# From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
-
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ecuador&target_branch=14.0)
-[![Build Status](https://travis-ci.com/OCA/l10n-ecuador.svg?branch=14.0)](https://travis-ci.com/OCA/l10n-ecuador)
-[![codecov](https://codecov.io/gh/OCA/l10n-ecuador/branch/14.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ecuador)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ecuador-14-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ecuador-14-0/?utm_source=widget)
-
-<!-- /!\ do not modify above this line -->
-
-# l10n-ecuador
-
-TODO: add repo description.
-
-<!-- /!\ do not modify below this line -->
-
-<!-- prettier-ignore-start -->
-
-[//]: # (addons)
-
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
-
-[//]: # (end addons)
-
-<!-- prettier-ignore-end -->
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
-
-----
-----
-
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-estonia&target_branch=14.0)
@@ -5497,6 +5456,7 @@ addon | version | maintainers | summary
 [ebill_paynet](ebill_paynet/) | 14.0.1.1.4 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Paynet platform bridge implementation
 [ebill_paynet_customer_free_ref](ebill_paynet_customer_free_ref/) | 14.0.1.0.2 |  | Glue module: ebill_paynet and sale_order_customer_free_ref
 [ebill_postfinance](ebill_postfinance/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Postfinance eBill integration
+[ebill_postfinance_customer_free_ref](ebill_postfinance_customer_free_ref/) | 14.0.1.0.0 |  | Glue module: ebill_postfinance and sale_order_customer_free_ref
 [ebill_postfinance_server_env](ebill_postfinance_server_env/) | 14.0.1.0.0 |  | Server environment for eBill Postfinance
 [ebill_postfinance_stock](ebill_postfinance_stock/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add stock integration to Postfinance eBill
 [l10n_ch_account_tags](l10n_ch_account_tags/) | 14.0.1.0.0 |  | Switzerland Account Tags
@@ -6340,7 +6300,7 @@ addon | version | maintainers | summary
 [stock_putaway_method](stock_putaway_method/) | 14.0.1.0.0 | [![asaunier](https://github.com/asaunier.png?size=30px)](https://github.com/asaunier) | Add the putaway strategy method back, removed from the stock module in Odoo 12
 [stock_putaway_product_template](stock_putaway_product_template/) | 14.0.1.1.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 14.0.1.4.0 |  | Stock - Manual Quant Assignment
-[stock_quant_reservation_info](stock_quant_reservation_info/) | 14.0.1.0.6 |  | Allows to see the reserved info of Products
+[stock_quant_reservation_info](stock_quant_reservation_info/) | 14.0.1.0.7 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 14.0.1.1.1 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_quant_view_reservation](stock_quant_view_reservation/) | 14.0.1.0.1 |  | Allows to see details of reservations on a quant
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 14.0.1.0.0 |  | Establish a removal priority on stock locations.
@@ -6734,10 +6694,10 @@ addon | version | maintainers | summary
 [mrp_sale_info](mrp_sale_info/) | 14.0.2.2.1 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 14.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mrp subcontracting bom dual use
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 14.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Inhibit subcontracting flow on demand
-[mrp_subcontracting_partner_management](mrp_subcontracting_partner_management/) | 14.0.2.0.0 |  | Subcontracting Partner Management
+[mrp_subcontracting_partner_management](mrp_subcontracting_partner_management/) | 14.0.2.0.1 |  | Subcontracting Partner Management
 [mrp_subcontracting_purchase](mrp_subcontracting_purchase/) | 14.0.1.0.1 | [![dessanhemrayev](https://github.com/dessanhemrayev.png?size=30px)](https://github.com/dessanhemrayev) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![Volodiay622](https://github.com/Volodiay622.png?size=30px)](https://github.com/Volodiay622) [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) | This bridge module adds some smart buttons between Purchase and Subcontracting
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 14.0.2.1.0 |  | Link Purchase Order Line to Subcontract Productions
-[mrp_subcontracting_purchase_partner_management](mrp_subcontracting_purchase_partner_management/) | 14.0.1.0.0 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) | Subcontracting Purchase Partner Management
+[mrp_subcontracting_purchase_partner_management](mrp_subcontracting_purchase_partner_management/) | 14.0.1.0.1 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) | Subcontracting Purchase Partner Management
 [mrp_subcontracting_resupply_link](mrp_subcontracting_resupply_link/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Links between subcontracting PO and resupply picking
 [mrp_tag](mrp_tag/) | 14.0.1.0.1 |  | Allows to add multiple tags to Manufacturing Orders
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 14.0.1.0.0 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
@@ -6752,11 +6712,12 @@ addon | version | maintainers | summary
 [quality_control_stock_oca](quality_control_stock_oca/) | 14.0.1.0.2 |  | Quality control - Stock (OCA)
 [quality_control_team_oca](quality_control_team_oca/) | 14.0.1.0.0 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds quality control teams to handle different quality control workflows
 [repair_discount](repair_discount/) | 14.0.1.0.0 |  | Repair Discount
-[repair_picking](repair_picking/) | 14.0.1.0.0 |  | Enhanced repair order management with pickings for adding and removing components
-[repair_picking_after_done](repair_picking_after_done/) | 14.0.1.0.1 |  | Transfer repaired move to another location directly from repaire order
+[repair_picking](repair_picking/) | 14.0.1.0.1 |  | Enhanced repair order management with pickings for adding and removing components
+[repair_picking_after_done](repair_picking_after_done/) | 14.0.1.0.2 |  | Transfer repaired move to another location directly from repaire order
 [repair_refurbish](repair_refurbish/) | 14.0.1.0.1 |  | Create refurbished products during repair
 [repair_refurbish_repair_stock_move](repair_refurbish_repair_stock_move/) | 14.0.1.0.0 |  | Use refurbish and repair stock moves together
 [repair_sale_order](repair_sale_order/) | 14.0.1.0.2 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Repair To Sale Order
+[repair_stock](repair_stock/) | 14.0.1.0.0 |  | Repair Stock
 [repair_stock_move](repair_stock_move/) | 14.0.1.0.2 |  | Ongoing Repair Stock Moves Definition in odoo
 [repair_type](repair_type/) | 14.0.1.0.2 |  | Repair type
 [stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Set quanity in picking line based on product kit quantity
@@ -6941,7 +6902,7 @@ addon | version | maintainers | summary
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.8.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.9.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
@@ -7921,7 +7882,7 @@ addon | version | maintainers | summary
 [mail_show_follower](mail_show_follower/) | 14.0.1.1.0 |  | Show CC document followers in mails.
 [mail_template_multi_attachment](mail_template_multi_attachment/) | 14.0.1.0.0 |  | Module that allows to generate multi attachments on an email template.
 [mail_thread_create_nolog](mail_thread_create_nolog/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display a fake (non-stored) create log in the chatter.
-[mail_tracking](mail_tracking/) | 14.0.3.1.3 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 14.0.3.2.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 14.0.2.1.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 14.0.1.1.1 |  | Improve mass mailing email tracking
 [mass_mailing_company_newsletter](mass_mailing_company_newsletter/) | 14.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Easily manage partner's subscriptions to your main mailing list.
@@ -8172,7 +8133,7 @@ addon | version | maintainers | summary
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 14.0.1.0.0 |  | Report to printer - Mail extension
 [printer_zpl2](printer_zpl2/) | 14.0.2.1.0 |  | Add a ZPL II label printing feature
 [remote_report_to_printer](remote_report_to_printer/) | 14.0.1.1.0 |  | Report to printer on remotes
-[server_env_printing_server](server_env_printing_server/) | 14.0.1.0.0 |  | Server Environment for Printing Server
+[server_env_printing_server](server_env_printing_server/) | 14.0.1.0.1 |  | Server Environment for Printing Server
 
 [//]: # (end addons)
 
