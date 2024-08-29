@@ -1369,9 +1369,9 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit ab5d5476e91f25190d9a83efbb25fc4e059b1fcc
+commit bbad4b3a149fbb91893e1f39d1a799340a7a56dd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 07:42:26 2024 +0000
+Date:   Thu Aug 29 07:48:26 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1544,16 +1544,16 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 36cdc2eab11850c15235186f9c623493798845a5
-Author: Simon Maillard <simon@ogesta.fr>
-Date:   Thu Apr 25 11:46:56 2024 +0000
+commit efdac63e5f1c534aeff8762176858e91351175c2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Aug 29 07:49:56 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 98.8% (86 of 87 strings)
+    Currently translated at 93.8% (46 of 49 strings)
     
-    Translation: server-ux-12.0/server-ux-12.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-base_tier_validation/fr/
+    Translation: server-ux-12.0/server-ux-12.0-date_range
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-date_range/it/
 
 
 ## community-data-files
