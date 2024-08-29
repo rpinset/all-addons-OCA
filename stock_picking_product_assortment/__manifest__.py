@@ -3,13 +3,13 @@
 
 {
     "name": "Stock Picking Product Assortment",
-    "version": "15.0.1.0.0",
+    "version": "15.0.2.0.0",
     "category": "Warehouse Management",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "maintainers": ["CarlosRoca13"],
     "license": "AGPL-3",
     "installable": True,
-    "depends": ["stock", "product_assortment"],
+    "depends": ["base_view_inheritance_extension", "product_assortment", "stock"],
     "data": ["views/stock_picking_view.xml"],
 }

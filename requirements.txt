@@ -156,7 +156,7 @@ python-dateutil
 # generated from manifests external_dependencies
 chardet
 cryptography
-deepdiff
+deepdiff<8
 pycountry
 pycryptodome
 qrcode

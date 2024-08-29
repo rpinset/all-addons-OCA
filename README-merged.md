@@ -605,7 +605,7 @@ addon | version | maintainers | summary
 [hr_operating_unit](hr_operating_unit/) | 15.0.1.0.0 |  | HR Operating Unit
 [hr_operating_unit_access_all](hr_operating_unit_access_all/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Access all OUs' Employees
 [hr_payroll_account_operating_unit](hr_payroll_account_operating_unit/) | 15.0.1.0.1 |  | HR Payroll Account Operating Unit
-[mis_builder_operating_unit](mis_builder_operating_unit/) | 15.0.1.0.0 |  | MIS Builder with Operating Unit
+[mis_builder_operating_unit](mis_builder_operating_unit/) | 15.0.1.1.0 |  | MIS Builder with Operating Unit
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 15.0.1.0.0 |  | Operating Unit in MRP
 [mrp_operating_unit_access_all](mrp_operating_unit_access_all/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Access all OUs' MRP
@@ -2606,7 +2606,7 @@ addon | version | maintainers | summary
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 15.0.1.1.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_cart_expire](website_sale_cart_expire/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Cancel carts without activity after a configurable time
 [website_sale_checkout_country_vat](website_sale_checkout_country_vat/) | 15.0.1.0.0 |  | Autocomplete VAT in checkout process
-[website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 15.0.1.3.0 |  | Skip payment for logged users in checkout process
+[website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 15.0.1.3.1 |  | Skip payment for logged users in checkout process
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 15.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_google_tag_manager](website_sale_google_tag_manager/) | 15.0.1.0.0 |  | Add support for Google Tag Manager Enhanced Conversions
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 15.0.1.0.1 |  | Hide any Product Categories that are empty
@@ -5102,7 +5102,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.1.1 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.0 |  | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.18.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
@@ -5755,6 +5755,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 15.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
 [stock_picking_batch_extended_account_sale_type](stock_picking_batch_extended_account_sale_type/) | 15.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
 [stock_picking_batch_operation_quick_change](stock_picking_batch_operation_quick_change/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Change location of all picking batch operations
+[stock_picking_batch_outgoing](stock_picking_batch_outgoing/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allows set on pickings the batch picking from last picking (out)
 [stock_picking_batch_set_quantity](stock_picking_batch_set_quantity/) | 15.0.1.1.0 |  | Adds buttons to set all reserved quantity in quantity done fields
 [stock_picking_customer_ref](stock_picking_customer_ref/) | 15.0.1.0.0 |  | This module displays the sale reference/description in the pickings
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.1 |  | In picking out lots' selection, filter lots based on their location
@@ -5768,8 +5769,8 @@ addon | version | maintainers | summary
 [stock_picking_origin_reference](stock_picking_origin_reference/) | 15.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
 [stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 15.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
 [stock_picking_origin_reference_sale](stock_picking_origin_reference_sale/) | 15.0.1.0.0 |  | Transfer to Sales Order navigation from the Source Document.
-[stock_picking_product_assortment](stock_picking_product_assortment/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Stock Picking Product Assortment
-[stock_picking_product_assortment_availability_inline](stock_picking_product_assortment_availability_inline/) | 15.0.1.0.0 | [![Sergio-teruel](https://github.com/Sergio-teruel.png?size=30px)](https://github.com/Sergio-teruel) | Glue module to display stock available when an assortment is defined for a partner
+[stock_picking_product_assortment](stock_picking_product_assortment/) | 15.0.2.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Stock Picking Product Assortment
+[stock_picking_product_assortment_availability_inline](stock_picking_product_assortment_availability_inline/) | 15.0.2.0.0 | [![Sergio-teruel](https://github.com/Sergio-teruel.png?size=30px)](https://github.com/Sergio-teruel) | Glue module to display stock available when an assortment is defined for a partner
 [stock_picking_product_availability_inline](stock_picking_product_availability_inline/) | 15.0.1.0.1 |  | Show product availability in product drop-down in stock picking form view.
 [stock_picking_product_availability_search](stock_picking_product_availability_search/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter pickings by their products availability state
 [stock_picking_propagate_scheduled_date](stock_picking_propagate_scheduled_date/) | 15.0.1.0.1 |  | Propagate Stock Picking Scheduled Date
@@ -5904,7 +5905,7 @@ addon | version | maintainers | summary
 [stock_helper](stock_helper/) | 15.0.1.0.0 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 15.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
-[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.0.1 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
+[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
@@ -5923,7 +5924,7 @@ addon | version | maintainers | summary
 [stock_putaway_product_template](stock_putaway_product_template/) | 15.0.1.1.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 15.0.1.1.1 |  | Shows the cost of the quants
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
-[stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.0 |  | Allows to see the reserved info of Products
+[stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_request](stock_request/) | 15.0.1.8.1 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
@@ -6200,7 +6201,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_move_line_mrp_info](account_move_line_mrp_info/) | 15.0.1.0.0 |  | Account Move Line Mrp Info
+[account_move_line_mrp_info](account_move_line_mrp_info/) | 15.0.1.1.0 |  | Account Move Line Mrp Info
 [mrp_account_analytic](mrp_account_analytic/) | 15.0.1.0.2 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Consuming raw materials and operations generated Analytic Items
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Glue module between `mrp_account` and `mrp_bom_attribute_match`
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 15.0.1.1.1 |  | Dynamic BOM component based on product attribute
@@ -6212,7 +6213,7 @@ addon | version | maintainers | summary
 [mrp_finished_backorder_product](mrp_finished_backorder_product/) | 15.0.1.0.0 |  | Be able to see the summary of the finished manufactured orders
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 15.0.0.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product
 [mrp_lot_on_hand_first](mrp_lot_on_hand_first/) | 15.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
-[mrp_multi_level](mrp_multi_level/) | 15.0.1.11.8 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 15.0.1.11.9 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 15.0.1.1.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 15.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Filter manufacturing orders by their components availability state
@@ -7537,7 +7538,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 15.0.1.1.1 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 15.0.1.1.2 |  | Report to printer
 [printer_zpl2](printer_zpl2/) | 15.0.1.0.0 |  | Add a ZPL II label printing feature
 
 [//]: # (end addons)
