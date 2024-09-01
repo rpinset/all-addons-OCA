@@ -141,6 +141,7 @@ zeep
 # From [https://github.com/OCA/l10n-colombia.git](https://github.com/OCA/l10n-colombia.git)
 # From [https://github.com/OCA/l10n-costa-rica.git](https://github.com/OCA/l10n-costa-rica.git)
 # From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croatia.git)
+# From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 # From [https://github.com/OCA/l10n-ethiopia.git](https://github.com/OCA/l10n-ethiopia.git)
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
