@@ -24,23 +24,23 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 4a4579ca3892349debc0d22d67c3db73cfeeeeed
-Author: Stéphane Bidoul (ACSONE) <stephane.bidoul@acsone.eu>
-Date:   Sun Jun 30 16:36:28 2024 +0000
+commit 61eb5a5a0e3e362e7330a6c9d7b7cdf0257b9220
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 31 09:13:21 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_parent
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_parent/fr/
+    Translation: account-analytic-13.0/account-analytic-13.0-analytic_partner
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-analytic_partner/it/
 
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit 2b453670e05b52bc350872b7a75844ef1733ca53
+commit 11c9d6ed0d9c332f3c7a3103671a9937db79954b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 08:24:41 2024 +0000
+Date:   Fri Aug 30 07:31:29 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -92,9 +92,9 @@ Date:   Thu Jun 6 13:09:51 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit c1c04a74c7e0f7f2a41520d59a77da29bea51230
+commit 5039b1f83a8b7623b5b5879b2db5c7a4c66f799e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 7 09:16:56 2024 +0000
+Date:   Fri Aug 30 07:33:30 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -222,16 +222,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit a480bbc4a0ca5e762f236354995827e615718e47
+commit 4191f6983c661ffa1d9cc93de09d40199c2d1cb6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 3 14:36:39 2024 +0000
+Date:   Sat Aug 31 09:42:59 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 85.7% (96 of 112 strings)
+    Currently translated at 32.7% (56 of 171 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -443,16 +443,16 @@ Date:   Thu Jul 18 14:36:43 2024 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 36b0c64d509ff2b3b790bdff628ba25fd3af97eb
+commit 9a7c8f059f99aafd8f7125cb4ed66aee8d4b3e7e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:26:35 2024 +0000
+Date:   Fri Aug 30 07:32:08 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (172 of 172 strings)
+    Currently translated at 100.0% (187 of 187 strings)
     
-    Translation: crm-13.0/crm-13.0-crm_phonecall
-    Translate-URL: https://translation.odoo-community.org/projects/crm-13-0/crm-13-0-crm_phonecall/it/
+    Translation: crm-13.0/crm-13.0-crm_salesperson_planner
+    Translate-URL: https://translation.odoo-community.org/projects/crm-13-0/crm-13-0-crm_salesperson_planner/it/
 
 
 ## partner-contact
@@ -594,16 +594,16 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 7ddab9326d09a11bb141eb4a54791cbd928c114c
+commit b33591e3eab47e59d7570bf1c40ff227e1f57e2d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 07:44:28 2024 +0000
+Date:   Fri Aug 30 11:22:09 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_account
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_account/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -657,16 +657,16 @@ Date:   Sun Sep 3 12:59:31 2023 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 7bd8f393ec3b12e925dfdcfb8af3b53c1b26e577
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 09:33:03 2023 +0000
+commit caaf0cc093acf78df4be0a729c2f33e34d60f59f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 30 07:31:41 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (180 of 180 strings)
+    Currently translated at 100.0% (41 of 41 strings)
     
-    Translation: timesheet-13.0/timesheet-13.0-hr_timesheet_sheet
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-13-0/timesheet-13-0-hr_timesheet_sheet/it/
+    Translation: timesheet-13.0/timesheet-13.0-hr_utilization_analysis
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-13-0/timesheet-13-0-hr_utilization_analysis/it/
 
 
 ## hr
@@ -703,16 +703,16 @@ Date:   Fri Feb 23 09:06:17 2024 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 0aca9e9e809c95475cf91b55c4ea13d7b5d5d70d
-Author: Simon Maillard <simon@ogesta.fr>
-Date:   Wed Jun 5 12:18:26 2024 +0000
+commit 440b60909aa5d8c57b29ccf28704ebc5f16399a2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 30 07:32:11 2024 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (23 of 23 strings)
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: hr-holidays-13.0/hr-holidays-13.0-hr_holidays_credit
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-13-0/hr-holidays-13-0-hr_holidays_credit/fr/
+    Translation: hr-holidays-13.0/hr-holidays-13.0-hr_holidays_leave_repeated
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-13-0/hr-holidays-13-0-hr_holidays_leave_repeated/it/
 
 
 ## connector-odoo2odoo
@@ -1459,16 +1459,16 @@ Date:   Sun Sep 3 15:37:11 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 9ac48bea5d99a12b40326adc4c5abc7e4661a1da
+commit 32982294dac724258e48637354bf3db65c54825d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 12 19:21:23 2024 +0000
+Date:   Fri Aug 30 07:38:02 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (72 of 72 strings)
+    Currently translated at 100.0% (77 of 77 strings)
     
-    Translation: project-13.0/project-13.0-project_timesheet_time_control
-    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_timesheet_time_control/it/
+    Translation: project-13.0/project-13.0-project_role
+    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_role/it/
 
 
 ## project-agile
@@ -1661,9 +1661,9 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c338dbfb4bc16f3855fb5c6aca7964013f61d385
+commit 654de10be05eaba6e3036ebe65442509dd403fcf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 29 07:49:58 2024 +0000
+Date:   Fri Aug 30 07:33:24 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1710,16 +1710,16 @@ Date:   Sun Sep 3 13:14:50 2023 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit ea5a648a1794013728c23ddedc75eb94712764a2
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Oct 13 09:33:15 2023 +0000
+commit 0972e9c8dc8c23ae1ad953fdced52f5069146cd4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 30 07:38:53 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (71 of 71 strings)
+    Currently translated at 100.0% (46 of 46 strings)
     
-    Translation: iot-13.0/iot-13.0-iot_oca
-    Translate-URL: https://translation.odoo-community.org/projects/iot-13-0/iot-13-0-iot_oca/it/
+    Translation: iot-13.0/iot-13.0-iot_input_oca
+    Translate-URL: https://translation.odoo-community.org/projects/iot-13-0/iot-13-0-iot_input_oca/it/
 
 
 ## rest-framework
