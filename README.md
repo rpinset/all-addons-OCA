@@ -79,9 +79,9 @@ Date:   Thu Aug 1 13:27:52 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit b6fdadefe0744e9087b025225a704a454876ccfd
+commit 26b95e9bb89a6ec30bb27e83dfe44eef3055fb6d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 7 09:17:04 2024 +0000
+Date:   Fri Aug 30 07:33:39 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -197,11 +197,16 @@ Date:   Wed May 1 18:05:44 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit dda1dfa2ae1375c5a062a5ac98e3c674f9e00178
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 25 12:25:16 2024 +0000
+commit 323fde8c3e458330c22f218ab451e2e4463ce98b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 31 09:42:54 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 31.7% (54 of 170 strings)
+    
+    Translation: bank-payment-15.0/bank-payment-15.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -506,16 +511,16 @@ Date:   Tue Aug 20 12:49:45 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit fd619cb2a0c48ffd15146dc01e9c3e52584e1dbb
+commit 59f797d6e41d1711fe4d0441f1ae61a3f13b757d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:42:11 2024 +0000
+Date:   Fri Aug 30 11:08:19 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 100.0% (148 of 148 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice_equipment_stock
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_equipment_stock/it/
+    Translation: field-service-15.0/field-service-15.0-fieldservice_recurring
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_recurring/it/
 
 
 ## margin-analysis
@@ -1480,16 +1485,16 @@ Date:   Wed May 1 19:05:30 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit e4808116a729a9e1698184acf6ee91b4d03b0770
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jul 22 09:45:33 2024 +0000
+commit ae3531af932ac4db01a0f4a2fddd31c8dbfe78da
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 30 07:33:21 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 55.5% (40 of 72 strings)
     
-    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/
+    Translation: server-ux-15.0/server-ux-15.0-date_range
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-date_range/it/
 
 
 ## community-data-files
@@ -1521,16 +1526,16 @@ Date:   Wed May 1 18:16:34 2024 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit 6c305bd0344560b88aa3f9ab2fcca9c69ad5f79c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed May 1 19:29:48 2024 +0000
+commit 5895a78886624c849a219be64006d88e0404d47c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 30 07:37:50 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (40 of 40 strings)
     
-    Translation: iot-15.0/iot-15.0-iot_template_oca
-    Translate-URL: https://translation.odoo-community.org/projects/iot-15-0/iot-15-0-iot_template_oca/
+    Translation: iot-15.0/iot-15.0-iot_input_oca
+    Translate-URL: https://translation.odoo-community.org/projects/iot-15-0/iot-15-0-iot_input_oca/it/
 
 
 ## rest-framework
@@ -1567,16 +1572,16 @@ Date:   Mon Mar 4 08:14:35 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 7eae28c7f60453aa39c42a7e3b1ac1379c23e246
+commit cb33b21fcc40c96b6bc60fc0da7965818a58f23c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 23 09:10:53 2024 +0000
+Date:   Fri Aug 30 07:16:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (520 of 520 strings)
+    Currently translated at 100.0% (376 of 376 strings)
     
-    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel/it/
+    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel_restaurant
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel_restaurant/it/
 
 
 ## vertical-isp
