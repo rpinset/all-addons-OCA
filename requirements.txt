@@ -17,7 +17,6 @@ openupgradelib
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 # generated from manifests external_dependencies
 Avalara
-mock
 # From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 # generated from manifests external_dependencies

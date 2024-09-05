@@ -3,9 +3,8 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 import base64
+from unittest import mock
 from urllib import parse
-
-import mock
 
 from odoo.exceptions import AccessError, UserError
 
