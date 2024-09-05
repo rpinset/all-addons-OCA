@@ -451,6 +451,7 @@ addon | version | maintainers | summary
 [account_global_discount](account_global_discount/) | 14.0.1.1.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 14.0.1.0.1 |  | Set a alternate payor/payee in invoices
 [account_invoice_base_invoicing_mode](account_invoice_base_invoicing_mode/) | 14.0.1.2.2 |  | Base module for handling multiple invoicing mode
+[account_invoice_block_payment](account_invoice_block_payment/) | 14.0.1.0.0 |  | Module to block payment of invoices
 [account_invoice_blocking](account_invoice_blocking/) | 14.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
 [account_invoice_change_currency](account_invoice_change_currency/) | 14.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to change currency of Invoice by wizard
 [account_invoice_check_picking_date](account_invoice_check_picking_date/) | 14.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Check if date of pickings match with invoice date
@@ -1005,7 +1006,7 @@ addon | version | maintainers | summary
 [account_payment_mode](account_payment_mode/) | 14.0.1.1.0 |  | Account Payment Mode
 [account_payment_mode_default_account](account_payment_mode_default_account/) | 14.0.1.0.0 |  | Set Receivable or Payable account according to payment mode
 [account_payment_order](account_payment_order/) | 14.0.2.5.6 |  | Account Payment Order
-[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.1 |  | Account Payment Order - Generate grouped moves
+[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 14.0.1.0.2 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_lock_draft](account_payment_order_lock_draft/) | 14.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![kaynnan](https://github.com/kaynnan.png?size=30px)](https://github.com/kaynnan) | Account Payment Order Lock Draft
 [account_payment_order_notification](account_payment_order_notification/) | 14.0.1.6.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 14.0.1.0.2 |  | Account Payment Order Return
@@ -1062,6 +1063,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_bank_statement_reopen_skip_undo_reconciliation](account_bank_statement_reopen_skip_undo_reconciliation/) | 14.0.1.0.0 |  | When reopening a bank statement it will respect the reconciled entries.
+[account_in_payment](account_in_payment/) | 14.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_mass_reconcile](account_mass_reconcile/) | 14.0.1.1.2 |  | Account Mass Reconcile
 [account_mass_reconcile_as_job](account_mass_reconcile_as_job/) | 14.0.1.1.2 |  | Account Mass Reconcile as Jobs
 [account_mass_reconcile_by_mrp_production](account_mass_reconcile_by_mrp_production/) | 14.0.1.0.0 |  | Allows to reconcile based on the MO line
@@ -1266,8 +1268,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[component](component/) | 14.0.1.1.2 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
-[component_event](component_event/) | 14.0.1.0.3 |  | Components Events
+[component](component/) | 14.0.1.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
+[component_event](component_event/) | 14.0.1.0.4 |  | Components Events
 [connector](connector/) | 14.0.1.1.4 |  | Connector
 [connector_base_product](connector_base_product/) | 14.0.1.0.0 |  | Connector Base Product
 [test_component](test_component/) | 14.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
@@ -1365,14 +1367,14 @@ addon | version | maintainers | summary
 [base_export_async](base_export_async/) | 14.0.1.0.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 14.0.1.0.2 |  | Import CSV files in the background
 [export_async_schedule](export_async_schedule/) | 14.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Generate and send exports by emails on a schedule
-[queue_job](queue_job/) | 14.0.3.6.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 14.0.3.7.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 14.0.1.0.1 |  | Job Queue Batch
 [queue_job_context](queue_job_context/) | 14.0.1.0.1 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Queue Job, prepare context before enqueue keys
 [queue_job_cron](queue_job_cron/) | 14.0.2.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 14.0.1.0.2 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 14.0.1.0.0 |  | Control which users are subscribed to queue job notifications
 [test_base_import_async](test_base_import_async/) | 14.0.1.0.1 |  | Test suite for base_import_async. Normally you don't need to install this.
-[test_queue_job](test_queue_job/) | 14.0.3.3.0 |  | Queue Job Tests
+[test_queue_job](test_queue_job/) | 14.0.3.4.0 |  | Queue Job Tests
 [test_queue_job_batch](test_queue_job_batch/) | 14.0.1.0.0 |  | Test Job Queue Batch
 
 [//]: # (end addons)
@@ -3437,6 +3439,7 @@ addon | version | maintainers | summary
 [hr_expense_advance_clearing_sequence](hr_expense_advance_clearing_sequence/) | 14.0.1.0.0 |  | HR Expense Advance Clearing Sequence
 [hr_expense_analytic_distribution](hr_expense_analytic_distribution/) | 14.0.1.0.1 |  | HR Expense Analytic Distribution
 [hr_expense_cancel](hr_expense_cancel/) | 14.0.2.0.1 |  | Hr expense cancel
+[hr_expense_due_date](hr_expense_due_date/) | 14.0.1.0.0 |  | Dedicated due date used for HR Expense Sheet
 [hr_expense_exception](hr_expense_exception/) | 14.0.1.0.1 |  | Custom exceptions on expense report
 [hr_expense_invoice](hr_expense_invoice/) | 14.0.1.1.4 |  | Supplier invoices on HR expenses
 [hr_expense_journal](hr_expense_journal/) | 14.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Set the Journal for the payment type used to pay the expense
@@ -4764,7 +4767,7 @@ addon | version | maintainers | summary
 [l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 14.0.1.0.0 |  | Gestione dati fattura elettronica del cliente all'internodell'interfaccia del POS
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
-[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.6 |  | Inversione contabile
+[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.7 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.10.2 |  | Ricevute bancarie
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
@@ -6121,7 +6124,7 @@ addon | version | maintainers | summary
 [stock_move_free_reservation_reassign](stock_move_free_reservation_reassign/) | 14.0.1.0.0 |  | Try to reassign a move when its reservation is removed due to the related quant becoming unavailable
 [stock_move_line_auto_fill](stock_move_line_auto_fill/) | 14.0.1.0.0 |  | Stock Move Line auto fill
 [stock_move_quick_lot](stock_move_quick_lot/) | 14.0.1.0.0 |  | Set lot name and end date directly on picking operations
-[stock_no_negative](stock_no_negative/) | 14.0.1.0.1 |  | Disallow negative stock levels by default
+[stock_no_negative](stock_no_negative/) | 14.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 14.0.1.0.2 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 14.0.1.2.2 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 14.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
@@ -6278,6 +6281,7 @@ addon | version | maintainers | summary
 [stock_available](stock_available/) | 14.0.1.1.0 |  | Stock available to promise
 [stock_available_base_exclude_location](stock_available_base_exclude_location/) | 14.0.1.0.2 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Base module to exclude locations for product available quantities
 [stock_available_immediately](stock_available_immediately/) | 14.0.1.0.0 |  | Ignore planned receptions in quantity available to promise
+[stock_available_immediately_exclude_location](stock_available_immediately_exclude_location/) | 14.0.1.0.1 |  | Exclude locations from immediately usable quantity
 [stock_available_mrp](stock_available_mrp/) | 14.0.1.0.6 |  | Consider the production potential is available to promise
 [stock_available_portal](stock_available_portal/) | 14.0.1.0.0 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Show product quantity available to promise in portal
 [stock_available_unreserved](stock_available_unreserved/) | 14.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
@@ -7406,6 +7410,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[pos_product_pack](pos_product_pack/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to sell product packs on POS sessions
 [product_pack](product_pack/) | 14.0.1.1.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to set a product as a Pack
 [sale_product_pack](sale_product_pack/) | 14.0.1.1.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to sell product packs
 [stock_product_pack](stock_product_pack/) | 14.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to get the right available quantities of the packs
@@ -7512,7 +7517,7 @@ addon | version | maintainers | summary
 [project_key](project_key/) | 14.0.1.0.2 |  | Module decorates projects and tasks with Project Key
 [project_list](project_list/) | 14.0.1.0.0 |  | Projects list view
 [project_mail_chatter](project_mail_chatter/) | 14.0.1.1.0 |  | Add message chatter on the Project form.
-[project_milestone](project_milestone/) | 14.0.1.3.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Milestones
+[project_milestone](project_milestone/) | 14.0.1.4.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Milestones
 [project_parent_task_filter](project_parent_task_filter/) | 14.0.1.2.1 |  | Add filters to show the parent or non parent tasks
 [project_purchase_link](project_purchase_link/) | 14.0.1.0.0 | [![udesai](https://github.com/udesai.png?size=30px)](https://github.com/udesai) [![OCA](https://github.com/OCA.png?size=30px)](https://github.com/OCA) | Project Purchase Link
 [project_recalculate](project_recalculate/) | 14.0.1.0.0 |  | Project Recalculate
@@ -8386,7 +8391,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [auth_admin_passkey](auth_admin_passkey/) | 14.0.1.0.1 |  | Allows system administrator to authenticate with any account
-[auth_api_key](auth_api_key/) | 14.0.3.0.0 |  | Authenticate http requests from an API key
+[auth_api_key](auth_api_key/) | 14.0.3.0.1 |  | Authenticate http requests from an API key
 [auth_api_key_group](auth_api_key_group/) | 14.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
 [auth_api_key_server_env](auth_api_key_server_env/) | 14.0.1.1.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
 [auth_dynamic_groups](auth_dynamic_groups/) | 14.0.1.0.0 |  | Have membership conditions for certain groups
