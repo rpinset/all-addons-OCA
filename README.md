@@ -584,16 +584,16 @@ Date:   Fri Aug 23 09:27:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit e0aa3230f3b88f1bbe7062b919563e4594a92ff0
+commit a1f4ec0cf6c58130be9312842c7754befb73cb06
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 11:03:35 2024 +0000
+Date:   Mon Sep 2 06:44:18 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (512 of 512 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_geoengine
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_geoengine/it/
 
 
 ## margin-analysis
@@ -896,16 +896,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e29825c20f6fdfc1f6251366e873c7071e67ea59
+commit 8b149a0a24b638ddca399be332d2905d5cf8fcbe
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 31 09:57:29 2024 +0000
+Date:   Wed Sep 4 07:23:18 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (75 of 75 strings)
+    Currently translated at 100.0% (173 of 173 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_sdi_channel
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_sdi_channel/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
 
 
 ## l10n-japan
@@ -1341,16 +1341,16 @@ Date:   Sun Sep 3 15:37:10 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 06545ae8060f2c81d37358079c7285f0c80562e9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:38:10 2024 +0000
+commit fb11bb88e1c818ab4ab16f1d27c87f8a56239a94
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Sep 3 14:51:12 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (79 of 79 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: project-12.0/project-12.0-project_role
-    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_role/it/
+    Translation: project-12.0/project-12.0-project_milestone
+    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_milestone/
 
 
 ## project-agile
