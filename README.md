@@ -65,16 +65,16 @@ Date:   Wed May 1 17:43:19 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 76b31c097c93435e0956933009b3057413d34bc9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 1 13:27:52 2024 +0000
+commit 48153fbc856bde0d2d0cfa6c692f2a6f0250df99
+Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
+Date:   Wed Sep 4 13:13:47 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Danish)
     
-    Currently translated at 93.9% (156 of 166 strings)
+    Currently translated at 72.2% (13 of 18 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_move_name_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_move_name_sequence/da/
 
 
 ## account-financial-reporting
@@ -197,16 +197,11 @@ Date:   Wed May 1 18:05:44 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 323fde8c3e458330c22f218ab451e2e4463ce98b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 31 09:42:54 2024 +0000
+commit aa84fb24320986cdffdbaf2026a66088b39e4880
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 2 14:41:14 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 31.7% (54 of 170 strings)
-    
-    Translation: bank-payment-15.0/bank-payment-15.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_banking_pain_base/it/
+    [BOT] post-merge updates
 
 
 ## account-reconcile
@@ -374,9 +369,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 9c631e8e5351f44c68608bce7689802b0f24e7bd
+commit 98ef19cc40c04abe1f57766d5db7d0fa97eb1427
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 13 08:58:43 2024 +0000
+Date:   Thu Sep 5 17:05:47 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1174,11 +1169,16 @@ Date:   Wed Dec 6 16:10:13 2023 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 63868559729e1dd58eb436bbb53d5fb9dd33bb80
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 29 13:42:45 2024 +0000
+commit 0519696b5fa118450d3c342ade4bcf3dc2d9d940
+Author: jans23 <jan@suhr.org>
+Date:   Thu Sep 5 06:48:58 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 73.1% (120 of 164 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-quality_control_oca/de/
 
 
 ## manufacture-reporting
@@ -1220,16 +1220,16 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit eaafe845af292b8546459633b7880aa2bcf65f36
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 23 14:00:02 2024 +0000
+commit 8a98d52a3e2f192638ffc6bcc61b71a733e6323a
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Sep 5 18:43:17 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 65.9% (151 of 229 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_request/it/
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_order_price_recalculation
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_order_price_recalculation/
 
 
 ## purchase-reporting
@@ -1558,16 +1558,16 @@ Date:   Wed May 1 19:00:27 2024 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit aa3c4befda2cdb850103973c97165dfc8d379c1b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 4 08:14:35 2024 +0000
+commit d92845ddaef85c2629dbd080014ec0cae394dffb
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Sep 3 18:42:54 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: vertical-association-15.0/vertical-association-15.0-membership_extension
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-15-0/vertical-association-15-0-membership_extension/it/
+    Translation: vertical-association-15.0/vertical-association-15.0-membership_prorate
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-15-0/vertical-association-15-0-membership_prorate/
 
 
 ## vertical-hotel
@@ -1667,11 +1667,11 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 54e31089066f4c5657f18bcd27e84b69453b577c
+commit 800311aa983f256a1f80237aef931284c2eef7d7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 31 10:27:52 2024 +0000
+Date:   Wed Sep 4 09:50:40 2024 +0000
 
-    [BOT] post-merge updates
+    [ADD] setup.py
 
 
 ## website

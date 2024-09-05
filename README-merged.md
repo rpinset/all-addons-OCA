@@ -958,7 +958,7 @@ addon | version | maintainers | summary
 [account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 15.0.2.3.1 |  | Create SEPA files for Direct Debit
 [account_payment_mode](account_payment_mode/) | 15.0.1.0.3 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 15.0.2.7.1 |  | Account Payment Order
-[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.2 |  | Account Payment Order - Generate grouped moves
+[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.3 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 15.0.1.0.2 |  | Adds Bank Account and Payment Mode on Purchase Orders
@@ -1852,7 +1852,7 @@ addon | version | maintainers | summary
 [sale_order_line_date](sale_order_line_date/) | 15.0.1.1.0 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 15.0.1.0.1 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 15.0.1.0.0 |  | Sale order line description
-[sale_order_line_input](sale_order_line_input/) | 15.0.1.0.2 |  | Search, create or modify directly sale order lines
+[sale_order_line_input](sale_order_line_input/) | 15.0.1.1.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 15.0.1.2.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 15.0.1.0.0 |  | Note on sale order line
 [sale_order_line_price_history](sale_order_line_price_history/) | 15.0.2.0.2 |  | Sale order line price history
@@ -6491,6 +6491,7 @@ addon | version | maintainers | summary
 [purchase_order_line_sequence](purchase_order_line_sequence/) | 15.0.1.0.1 |  | Adds sequence to PO lines and propagates it toInvoice lines and Stock Moves
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 15.0.1.0.0 |  | Purchase order line stock available
 [purchase_order_no_zero_price](purchase_order_no_zero_price/) | 15.0.1.0.0 |  | Prevent zero price lines on Purchase Orders
+[purchase_order_price_recalculation](purchase_order_price_recalculation/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Price recalculation in purchases orders
 [purchase_order_product_recommendation](purchase_order_product_recommendation/) | 15.0.1.0.3 |  | Recommend products to buy to supplier based on history
 [purchase_order_product_recommendation_brand](purchase_order_product_recommendation_brand/) | 15.0.1.0.1 |  | Allow to filter recommendations by brand
 [purchase_order_product_recommendation_classification](purchase_order_product_recommendation_classification/) | 15.0.1.0.0 |  | Extends the purchase recomendator with classification filters
@@ -6528,6 +6529,7 @@ addon | version | maintainers | summary
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_rfq_number](purchase_rfq_number/) | 15.0.1.0.1 |  | Different sequence for purchase for quotations
 [purchase_security](purchase_security/) | 15.0.4.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
+[purchase_stock_manual_currency](purchase_stock_manual_currency/) | 15.0.1.0.0 |  | Extends manual currency from purchase to stock moves
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 15.0.1.0.4 |  | Update cost price in stock moves already done
 [purchase_stock_return_request](purchase_stock_return_request/) | 15.0.1.0.1 |  | Purchase Stock Return Request
 [purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 15.0.1.1.1 |  | Get product quantities in a secondary unit
@@ -8329,6 +8331,7 @@ addon | version | maintainers | summary
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 15.0.1.0.0 |  | Set delegate membership on the contract
 [membership_delegated_partner](membership_delegated_partner/) | 15.0.1.0.0 |  | Delegate membership on a specific partner
 [membership_extension](membership_extension/) | 15.0.1.1.0 |  | Improves user experience of membership addon
+[membership_prorate](membership_prorate/) | 15.0.1.0.1 |  | Prorate membership fee
 [membership_variable_period](membership_variable_period/) | 15.0.1.0.1 |  | Variable period for memberships
 [website_membership_gamification](website_membership_gamification/) | 15.0.1.0.1 |  | Show badges assigned to users on website
 [website_membership_random_order](website_membership_random_order/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Online Members Directory - Random order
@@ -8855,7 +8858,6 @@ addon | version | maintainers | summary
 [web_widget_numeric_step](web_widget_numeric_step/) | 15.0.1.1.0 |  | Web Widget Numeric Step
 [web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 15.0.1.0.0 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_open_tab](web_widget_open_tab/) | 15.0.1.1.0 |  | Allow to open record from trees on new tab from tree views
-[web_widget_remote_measure](web_widget_remote_measure/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allows to connect to remote devices to record measures
 [web_widget_text_markdown](web_widget_text_markdown/) | 15.0.1.0.0 |  | Widget to text fields that adds markdown support
 [web_widget_url_advanced](web_widget_url_advanced/) | 15.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 15.0.1.0.3 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix
