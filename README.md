@@ -594,16 +594,16 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit b33591e3eab47e59d7570bf1c40ff227e1f57e2d
+commit 9521b1de2823d28228125029e108842645ed0fd8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 11:22:09 2024 +0000
+Date:   Mon Sep 2 06:44:16 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (544 of 544 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice_geoengine
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_geoengine/it/
 
 
 ## margin-analysis
@@ -1561,16 +1561,11 @@ Date:   Sun Sep 3 16:31:23 2023 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit c3f636d57b5ed490c942269cd5300219c74b2107
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jun 4 12:13:49 2024 +0000
+commit 999049e8aa139ae15f2f3555dc7216bc74c68b51
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 2 11:34:28 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: reporting-engine-13.0/reporting-engine-13.0-bi_sql_editor
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-13-0/reporting-engine-13-0-bi_sql_editor/
+    [BOT] post-merge updates
 
 
 ## report-print-send
