@@ -256,7 +256,7 @@ addon | version | maintainers | summary
 [account_balance_line](account_balance_line/) | 14.0.1.1.0 |  | Display balance totals in move line view
 [account_cash_deposit](account_cash_deposit/) | 14.0.1.3.0 |  | Manage cash deposits and cash orders
 [account_chart_update](account_chart_update/) | 14.0.2.1.2 |  | Wizard to update a company's account chart from a template
-[account_check_deposit](account_check_deposit/) | 14.0.1.3.0 |  | Manage deposit of checks to the bank
+[account_check_deposit](account_check_deposit/) | 14.0.1.4.0 |  | Manage deposit of checks to the bank
 [account_cost_center](account_cost_center/) | 14.0.1.0.0 |  | Cost center information for invoice lines
 [account_fiscal_month](account_fiscal_month/) | 14.0.1.0.0 |  | Provide a fiscal month date range type
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 14.0.1.2.0 |  | Check VAT on invoice validation
@@ -1912,7 +1912,7 @@ addon | version | maintainers | summary
 [sale_default_uom](sale_default_uom/) | 14.0.1.1.1 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | Set default Unit of Measure value of a product in sales order lines.
 [sale_delivery_date](sale_delivery_date/) | 14.0.1.1.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Postpones delivery dates based on customer preferences, and/or warehouse configuration.
 [sale_delivery_split_date](sale_delivery_split_date/) | 14.0.1.0.1 |  | Sale Deliveries split by date
-[sale_delivery_state](sale_delivery_state/) | 14.0.2.1.0 |  | Show the delivery state on the sale order
+[sale_delivery_state](sale_delivery_state/) | 14.0.2.1.1 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 14.0.2.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_elaboration](sale_elaboration/) | 14.0.1.0.1 |  | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 14.0.1.1.1 |  | Custom exceptions on sale order
@@ -4371,7 +4371,7 @@ addon | version | maintainers | summary
 [l10n_fr_account_invoice_import_facturx](l10n_fr_account_invoice_import_facturx/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | France-specific module to import Factur-X invoices
 [l10n_fr_account_invoice_import_simple_pdf](l10n_fr_account_invoice_import_simple_pdf/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Invoice import simple PDF: match partners using SIREN
 [l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-configure UNECE params on French taxes
-[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.6.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
+[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.7.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
 [l10n_fr_account_vat_return_selenium](l10n_fr_account_vat_return_selenium/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Autofill CA3 on impots.gouv.fr via Selenium IDE
 [l10n_fr_account_vat_return_teledec](l10n_fr_account_vat_return_teledec/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Teletransmit CA3 via Teledec.fr (subscription required)
 [l10n_fr_business_document_import](l10n_fr_business_document_import/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adapt the module base_business_document_import for France
@@ -5396,7 +5396,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 14.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 14.0.1.7.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
-[delivery_mrw](delivery_mrw/) | 14.0.1.1.3 |  | Delivery Carrier implementation for MRW with SAGEC API
+[delivery_mrw](delivery_mrw/) | 14.0.1.1.4 |  | Delivery Carrier implementation for MRW with SAGEC API
 [delivery_seur](delivery_seur/) | 14.0.1.0.0 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 14.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
@@ -5438,7 +5438,7 @@ addon | version | maintainers | summary
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 14.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 14.0.1.0.5 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 14.0.1.0.4 |  | Exportación de fichero bancario Confirming para Banco Sabadell
-[l10n_es_pos](l10n_es_pos/) | 14.0.3.2.3 |  | Punto de venta adaptado a la legislación española
+[l10n_es_pos](l10n_es_pos/) | 14.0.3.3.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 14.0.1.1.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Punto de venta adaptado a la legislación española por dispositivo
 [l10n_es_reav](l10n_es_reav/) | 14.0.1.0.0 | [![Bilbonet](https://github.com/Bilbonet.png?size=30px)](https://github.com/Bilbonet) | REAV - Régimen Especial Agencias de Viajes
 [l10n_es_ticketbai](l10n_es_ticketbai/) | 14.0.2.9.3 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
@@ -5450,7 +5450,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book](l10n_es_vat_book/) | 14.0.2.8.1 |  | Libro de IVA
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 14.0.1.0.0 |  | Libro de IVA OSS
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 14.0.2.0.2 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 14.0.2.1.0 |  | Prorrata de IVA para la localización española
 [payment_redsys](payment_redsys/) | 14.0.2.0.4 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -6102,7 +6102,7 @@ addon | version | maintainers | summary
 [sale_line_returned_qty_mrp](sale_line_returned_qty_mrp/) | 14.0.1.0.1 |  | Track returned quantity of sale order lines for BoM products.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 14.0.1.0.1 |  | Add the possibility to choose one warehouse path for an order
 [sale_purchase_stock_line_note](sale_purchase_stock_line_note/) | 14.0.1.1.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Propagate sale line note to stock move and purchase
-[sale_stock_mto_as_mts_orderpoint](sale_stock_mto_as_mts_orderpoint/) | 14.0.1.0.2 |  | Materialize need from MTO route through orderpoint
+[sale_stock_mto_as_mts_orderpoint](sale_stock_mto_as_mts_orderpoint/) | 14.0.1.1.0 |  | Materialize need from MTO route through orderpoint
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 14.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_auto_move](stock_auto_move/) | 14.0.1.0.0 |  | Automatic Move Processing
 [stock_dangerous_goods](stock_dangerous_goods/) | 14.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Adds utility fields to manage dangerous goods
@@ -6134,6 +6134,7 @@ addon | version | maintainers | summary
 [stock_picking_backorder_strategy](stock_picking_backorder_strategy/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
 [stock_picking_batch_extended](stock_picking_batch_extended/) | 14.0.1.0.2 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![i-vyshnevska](https://github.com/i-vyshnevska.png?size=30px)](https://github.com/i-vyshnevska) | Allows manage a lot of pickings in batch
 [stock_picking_cancel_reason](stock_picking_cancel_reason/) | 14.0.1.0.1 |  | Stock Picking Cancel Reason
+[stock_picking_customer_ref](stock_picking_customer_ref/) | 14.0.1.0.0 |  | This module displays the sale reference/description in the pickings
 [stock_picking_default_planned_transfer](stock_picking_default_planned_transfer/) | 14.0.1.0.1 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Set Planned Transfer as Default from Inventory Views
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 14.0.2.0.2 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_group_by_partner_by_carrier](stock_picking_group_by_partner_by_carrier/) | 14.0.1.4.4 |  | Stock Picking: group by partner and carrier
@@ -7926,7 +7927,7 @@ addon | version | maintainers | summary
 [mail_send_copy](mail_send_copy/) | 14.0.1.0.1 |  | Send to you a copy of each mail sent by Odoo
 [mail_server_by_user](mail_server_by_user/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Email Server By User
 [mail_show_follower](mail_show_follower/) | 14.0.1.1.0 |  | Show CC document followers in mails.
-[mail_template_multi_attachment](mail_template_multi_attachment/) | 14.0.1.0.0 |  | Module that allows to generate multi attachments on an email template.
+[mail_template_multi_attachment](mail_template_multi_attachment/) | 14.0.1.1.0 |  | Module that allows to generate multi attachments on an email template.
 [mail_thread_create_nolog](mail_thread_create_nolog/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display a fake (non-stored) create log in the chatter.
 [mail_tracking](mail_tracking/) | 14.0.3.2.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 14.0.2.1.0 |  | Mail tracking and Mailgun webhooks integration

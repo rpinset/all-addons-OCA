@@ -27,8 +27,10 @@ class SaleOrderLine(models.Model):
             for delivery_move in delivery_moves:
                 if (
                     not delivery_move.is_from_mto_route
-                    or mto_route not in line.product_id.route_ids
+                    and mto_route not in line.product_id.route_ids
                 ):
+                    continue
+                if not delivery_move.warehouse_id.mto_as_mts:
                     continue
                 orderpoint = line._get_mto_orderpoint(delivery_move.product_id)
                 if orderpoint.procure_recommended_qty:
@@ -73,7 +75,7 @@ class SaleOrderLine(models.Model):
                 .sudo()
                 .create(
                     {
-                        "product_id": self.product_id.id,
+                        "product_id": product_id.id,
                         "warehouse_id": warehouse.id,
                         "location_id": (
                             warehouse._get_locations_for_mto_orderpoints().id

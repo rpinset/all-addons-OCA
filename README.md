@@ -24,16 +24,14 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 924b249954cd05f3c14be994bb5a14c824aedf6a
-Author: Rodrigo Macedo <sottomaiormacedotec@users.noreply.translation.odoo-community.org>
-Date:   Mon May 20 13:54:11 2024 +0000
+commit 89c66fed8eb2f4df028dcede96c12b202cd917f5
+Merge: 924b2499 473acc51
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 9 11:11:11 2024 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
+    Merge PR #648 into 14.0
     
-    Currently translated at 100.0% (12 of 12 strings)
-    
-    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_no_lines
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_no_lines/pt_BR/
+    Signed-off-by alexis-via
 
 
 ## account-budgeting
@@ -75,16 +73,16 @@ Date:   Wed May 1 17:43:10 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 74e41407079a1f819ff30c62ce77d7186aa85ee4
-Author: Eduardo Ruiz <eduardo@readylan.com>
-Date:   Wed Aug 21 10:54:29 2024 +0000
+commit 97f776a10da13418484e970b69adee5a2bdd710b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 9 00:02:53 2024 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 100.0% (21 of 21 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_move_name_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_move_name_sequence/es/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_check_deposit
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_check_deposit/
 
 
 ## account-financial-reporting
@@ -396,16 +394,11 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit da166f94ee36052be2886e214b3ff3ac4c3c1b39
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jul 26 08:19:29 2024 +0000
+commit 55a0da2bef47642cd83eaa37297cd0e75dfcf599
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 9 11:18:19 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_line_delivery_state
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_line_delivery_state/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -845,11 +838,16 @@ Date:   Wed May 1 18:24:37 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 7cd1cd1086c22da5b3761be7c8ec7c268c71474c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 16:45:43 2024 +0000
+commit ea7d97af1200f39bc3ab4df43de125aec44601f5
+Author: Weblate <noreply@weblate.org>
+Date:   Sun Sep 8 16:09:26 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-france-14.0/l10n-france-14.0-l10n_fr_account_vat_return
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-l10n_fr_account_vat_return/
 
 
 ## l10n-germany
@@ -1028,16 +1026,16 @@ Date:   Wed May 1 18:35:54 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 5df57334ae0b90bd69c40527cc838493fdb2e85c
-Author: Eugeni Chafer <eugeni@chafer.cat>
-Date:   Thu Aug 1 06:52:11 2024 +0000
+commit 1410517ce31e55ba334e096b86de3194e12e856e
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 9 08:27:54 2024 +0000
 
-    Translated using Weblate (Catalan)
+    Update translation files
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-14.0/l10n-spain-14.0-l10n_es_account_banking_sepa_fsdd
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-14-0/l10n-spain-14-0-l10n_es_account_banking_sepa_fsdd/ca/
+    Translation: l10n-spain-14.0/l10n-spain-14.0-l10n_es_vat_prorate
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-14-0/l10n-spain-14-0-l10n_es_vat_prorate/
 
 
 ## l10n-switzerland
@@ -1156,11 +1154,16 @@ Date:   Thu Aug 22 08:53:43 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 10020482a427be6d9cc86a1d1df65bce76cb5777
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 2 10:45:42 2024 +0000
+commit b3f31e10481517b63162b041121893f78314c6b3
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 9 14:53:14 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-sale_stock_mto_as_mts_orderpoint
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-sale_stock_mto_as_mts_orderpoint/
 
 
 ## stock-logistics-tracking
@@ -1429,16 +1432,11 @@ Date:   Wed May 1 17:57:53 2024 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit e929a5162dae24d0bf42049e6db01f2fb3e05cc6
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Aug 26 14:50:54 2024 +0000
+commit 238ba7139294419dd431c25b1e8081ec1ede1d61
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 9 11:35:11 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: social-14.0/social-14.0-mail_tracking
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_tracking/
+    [BOT] post-merge updates
 
 
 ## storage
