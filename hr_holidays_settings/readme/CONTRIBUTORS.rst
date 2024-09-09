@@ -5,4 +5,4 @@
 * `CorporateHub <https://corporatehub.eu/>`__
 
   * Alexey Pelykh <alexey.pelykh@corphub.eu>
-* Juany Davila <juany.davila@forgeflow.com>
+* Murtaza Mithaiwala <https://twitter.com/MurtazaMithaiw4>
