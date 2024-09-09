@@ -102,9 +102,9 @@ Date:   Tue May 7 13:23:06 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 24d8262872d229d224aab46728283c40020a6970
+commit 32c715478990bb7b725ae534593c03433e609470
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 21 15:21:15 2024 +0000
+Date:   Mon Sep 9 10:57:37 2024 +0000
 
     [BOT] post-merge updates
 
@@ -492,16 +492,11 @@ Date:   Mon Aug 26 06:57:59 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit dde1dd8c6027163b6a64c047ab2b1182603ae939
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Aug 20 12:49:45 2024 +0000
+commit d59e4bbe4d42dfa8b5f8dab27a7591862ef7a4e8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 9 06:35:07 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-15.0/edi-15.0-edi_oca
-    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-edi_oca/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -963,11 +958,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 72144d9cf2c700efd719b9ca9242b82dbab5e9f6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 28 07:11:12 2024 +0000
+commit e475c4392315b13b9223e3e03f802a0ac4e5c7a8
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 9 11:26:21 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_vat_prorate
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_vat_prorate/
 
 
 ## l10n-switzerland
@@ -1499,9 +1499,9 @@ Date:   Fri Aug 30 07:33:21 2024 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 6bed2071fbb3502b6b47388945f1db50fa90cda1
+commit 05a95184dcc85a6f11601f6716b07620f3380ddf
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 18:48:21 2024 +0000
+Date:   Mon Sep 9 11:07:07 2024 +0000
 
     [BOT] post-merge updates
 

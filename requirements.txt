@@ -309,6 +309,7 @@ pyzbar
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
 pycountry
+schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
 # generated from manifests external_dependencies
