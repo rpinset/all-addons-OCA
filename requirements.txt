@@ -70,6 +70,8 @@ factur-x
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
 # From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
 # From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
