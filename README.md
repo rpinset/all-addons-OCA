@@ -24,23 +24,23 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 61eb5a5a0e3e362e7330a6c9d7b7cdf0257b9220
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 31 09:13:21 2024 +0000
+commit 1e7655676d6b9b4922065d39d96ce0593f601b24
+Author: Jaume Planas <jaume.planas@minorisa.net>
+Date:   Tue Sep 10 15:36:20 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: account-analytic-13.0/account-analytic-13.0-analytic_partner
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-analytic_partner/it/
+    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_sequence/es/
 
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit 11c9d6ed0d9c332f3c7a3103671a9937db79954b
+commit b784eb173d561eb9e28e95bf809f6d2cefa75833
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:31:29 2024 +0000
+Date:   Wed Sep 11 06:37:36 2024 +0000
 
     Translated using Weblate (Italian)
     
