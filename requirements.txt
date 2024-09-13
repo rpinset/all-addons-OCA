@@ -14,6 +14,8 @@ python-dateutil
 Avalara
 # From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
+# generated from manifests external_dependencies
+python-stdnum>=1.16
 # From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
 # From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
 # From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
