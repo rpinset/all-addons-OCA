@@ -38,9 +38,9 @@ Date:   Wed Aug 14 15:34:19 2024 +0000
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit b61b43f9d58611d1b9fd4cd3f0e9f8da1283bdb6
+commit eff7e5bc08c8fd9cf4d420c636eecbdb6f6252b9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:30:58 2024 +0000
+Date:   Wed Sep 11 06:37:22 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -173,9 +173,9 @@ Date:   Thu Feb 8 07:58:15 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit ef3b928a88ede85871236454566c1edcd1cf7dc4
+commit 43e34d2386caa6e1560388d4f38081d7270716da
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 30 06:24:29 2024 +0000
+Date:   Wed Sep 11 06:31:03 2024 +0000
 
     Translated using Weblate (Italian)
     
