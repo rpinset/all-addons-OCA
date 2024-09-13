@@ -621,7 +621,7 @@ addon | version | maintainers | summary
 [purchase_requisition_operating_unit](purchase_requisition_operating_unit/) | 15.0.1.0.0 |  | Operating Unit in Purchase Requisitions
 [purchase_stock_operating_unit](purchase_stock_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Copies the operating unit of purchase picking to the stock picking
 [report_qweb_operating_unit](report_qweb_operating_unit/) | 15.0.1.0.0 |  | Qweb Report With Operating Unit
-[sale_operating_unit](sale_operating_unit/) | 15.0.1.0.1 |  | An operating unit (OU) is an organizational entity part of a company
+[sale_operating_unit](sale_operating_unit/) | 15.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sale_stock_operating_unit](sale_stock_operating_unit/) | 15.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 15.0.1.0.0 |  | Sales Team Operating Unit
 [stock_account_operating_unit](stock_account_operating_unit/) | 15.0.1.0.0 |  | Create journal entries in moves between internal locations with different operating units.
@@ -1814,7 +1814,7 @@ addon | version | maintainers | summary
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 15.0.1.0.0 |  | Portal Sale Personal Data Only
 [pricelist_cache](pricelist_cache/) | 15.0.1.4.1 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [product_form_sale_link](product_form_sale_link/) | 15.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
-[product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 15.0.2.0.2 |  | Allows to define default elaborations and elaboration notes on product customerinfos
+[product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 15.0.2.1.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.2 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 15.0.1.0.3 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Define products that will be added automatically when adding another in a sales order
@@ -1829,7 +1829,7 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 15.0.1.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 15.0.2.0.0 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 15.0.1.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
-[sale_elaboration](sale_elaboration/) | 15.0.3.4.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set an elaboration for any sale line
+[sale_elaboration](sale_elaboration/) | 15.0.3.5.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 15.0.1.0.1 |  | Custom exceptions on sale order
 [sale_fixed_discount](sale_fixed_discount/) | 15.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 15.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
@@ -1874,7 +1874,7 @@ addon | version | maintainers | summary
 [sale_order_restrict_cancel_existing_invoice](sale_order_restrict_cancel_existing_invoice/) | 15.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to restrict sale order cancelling if an invoice exists
 [sale_order_revision](sale_order_revision/) | 15.0.1.0.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.2.0 |  | Sale product in a secondary unit
-[sale_order_type](sale_order_type/) | 15.0.2.1.2 |  | Sale Order Type
+[sale_order_type](sale_order_type/) | 15.0.2.1.3 |  | Sale Order Type
 [sale_order_type_quotation_number](sale_order_type_quotation_number/) | 15.0.1.2.0 |  | Use quotation sequence depending on sale type
 [sale_order_warn_message](sale_order_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order

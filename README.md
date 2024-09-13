@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 7781e4f59380b115786d192d20f703c42b41e51e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 8 14:54:05 2024 +0000
+commit 4adaa9943d88596d63a8f7c4b48a1cca6abf4bc4
+Author: Jaume Planas <jaumeplan@gmail.com>
+Date:   Wed Sep 11 16:02:42 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: account-analytic-15.0/account-analytic-15.0-procurement_mto_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-procurement_mto_analytic/ca/
 
 
 ## account-budgeting
@@ -102,11 +107,16 @@ Date:   Tue May 7 13:23:06 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 32c715478990bb7b725ae534593c03433e609470
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 9 10:57:37 2024 +0000
+commit 83f96e5dd7f0ce31702eaeca000c934297f6def3
+Author: loida-vm <loida@moduon.team>
+Date:   Thu Sep 12 10:57:02 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (30 of 30 strings)
+    
+    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_transmit_method
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_transmit_method/es/
 
 
 ## account-fiscal-rule
@@ -120,16 +130,11 @@ Date:   Wed May 1 17:46:09 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 6cac36628c31f4967e5221fbfea39c4824ce177e
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Aug 26 09:18:53 2024 +0000
+commit 982339a267dfc7db3f0adcc628677674858384b4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 12 15:25:57 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: operating-unit-15.0/operating-unit-15.0-mis_builder_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-mis_builder_operating_unit/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -369,9 +374,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 98ef19cc40c04abe1f57766d5db7d0fa97eb1427
+commit 92ec2be4708c2bc0a5c69942d9929ec5c3f258d7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 5 17:05:47 2024 +0000
+Date:   Fri Sep 13 19:14:50 2024 +0000
 
     [BOT] post-merge updates
 
