@@ -19,8 +19,14 @@ class AccountMove(models.Model):
         "transfer journal entry",
     )
 
-    @api.constrains("amount_total")
-    def _check_expense_ids(self):
+    def write(self, vals):
+        # Check if the amount of the invoice linked to an invoice is different
+        # Done here in the write instead of a Python constraint as the computed field
+        # amount_total is not yet updated on that moment
+        res = super().write(vals)
+        # Only need to check expenses amount when the invoice amount changes
+        if not ("amount_total" in vals or "tax_totals" in vals):
+            return res
         DecimalPrecision = self.env["decimal.precision"]
         precision = DecimalPrecision.precision_get("Product Price")
         for move in self.filtered("expense_ids"):
@@ -32,6 +38,7 @@ class AccountMove(models.Model):
                         "linked to this invoice."
                     )
                 )
+        return res
 
     def action_view_expense(self):
         self.ensure_one()

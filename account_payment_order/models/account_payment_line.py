@@ -195,7 +195,7 @@ class AccountPaymentLine(models.Model):
             "destination_account_id": self.move_line_id.account_id.id,
             "company_id": self.order_id.company_id.id,
             "amount": sum(self.mapped("amount_currency")),
-            "date": fields.Date.today(),
+            "date": fields.Date.context_today(self),
             "currency_id": self.currency_id.id,
             "ref": self.order_id.name,
             # Put the name as the wildcard for forcing a unique name. If not, Odoo gets
@@ -244,3 +244,8 @@ class AccountPaymentLine(models.Model):
         if transfer_journal:
             vals["journal_id"] = transfer_journal.id
         return vals
+
+    def action_open_business_doc(self):
+        if not self.move_line_id:
+            return False
+        return self.move_line_id.action_open_business_doc()
