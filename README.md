@@ -584,16 +584,16 @@ Date:   Fri Aug 23 09:27:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a1f4ec0cf6c58130be9312842c7754befb73cb06
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 2 06:44:18 2024 +0000
+commit e68b7ec01152ee6d22e1aacbbd057afcc1c28d39
+Author: Julie LeBrun <julie.lebrun@numigi.com>
+Date:   Tue Sep 17 16:07:21 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 12.3% (63 of 512 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_geoengine
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_geoengine/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/fr/
 
 
 ## margin-analysis
@@ -1484,16 +1484,11 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 6eecc980708c9c3a1fa6cf0e1ab3a8f3e202e9fd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 17 12:04:00 2024 +0000
+commit 6ec42fe665574d2815a6afcf3e0031c64c3e34c5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 16 17:33:06 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 44.4% (32 of 72 strings)
-    
-    Translation: server-tools-12.0/server-tools-12.0-auditlog
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auditlog/it/
+    [BOT] post-merge updates
 
 
 ## server-auth

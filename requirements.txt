@@ -261,7 +261,7 @@ lxml
 openpyxl
 pygount
 pysftp
-sentry_sdk>=1.17.0
+sentry_sdk>=1.17.0,<2
 xlrd
 xlwt
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
