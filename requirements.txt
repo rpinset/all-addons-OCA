@@ -298,9 +298,12 @@ requests_oauthlib
 # From [https://github.com/OCA/webkit-tools.git](https://github.com/OCA/webkit-tools.git)
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 # generated from manifests external_dependencies
+acme
 astor
 cryptography
 dataclasses
+dnspython
+josepy
 mako
 odoo_test_helper
 odoorpc
