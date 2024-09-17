@@ -1815,7 +1815,7 @@ addon | version | maintainers | summary
 [pricelist_cache](pricelist_cache/) | 15.0.1.4.1 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [product_form_sale_link](product_form_sale_link/) | 15.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 15.0.2.1.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
-[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.2 |  | Loads in every sale order line the customer code defined in the product
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.3 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 15.0.1.0.3 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 15.0.1.0.1 |  | Sale Automatic Workflow
@@ -1834,7 +1834,7 @@ addon | version | maintainers | summary
 [sale_fixed_discount](sale_fixed_discount/) | 15.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 15.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 15.0.1.0.0 |  | Sale Force Whole Invoiceability
-[sale_fully_invoiced](sale_fully_invoiced/) | 15.0.1.0.0 |  | Useful filters in Sales to know the actual status of invoices.
+[sale_fully_invoiced](sale_fully_invoiced/) | 15.0.1.0.1 |  | Useful filters in Sales to know the actual status of invoices.
 [sale_global_discount](sale_global_discount/) | 15.0.1.0.0 |  | Sale Global Discount
 [sale_invoice_blocking](sale_invoice_blocking/) | 15.0.1.0.0 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 15.0.1.1.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Define the invoice frequency for customers
@@ -2756,7 +2756,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 15.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 15.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 15.0.1.5.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 15.0.2.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 15.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_account_payment](fieldservice_account_payment/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allow workers to collect payments from the order.
@@ -7730,7 +7730,7 @@ addon | version | maintainers | summary
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 15.0.1.0.1 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 15.0.1.1.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
 [auth_saml](auth_saml/) | 15.0.1.4.4 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
-[auth_session_timeout](auth_session_timeout/) | 15.0.1.0.0 |  | This module disable all inactive sessions since a given delay
+[auth_session_timeout](auth_session_timeout/) | 15.0.1.0.2 |  | This module disable all inactive sessions since a given delay
 [auth_signup_partner_company](auth_signup_partner_company/) | 15.0.1.0.0 |  | Auth Signup Partner Company
 [auth_signup_verify_email](auth_signup_verify_email/) | 15.0.1.0.0 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 15.0.1.0.0 |  | Makes the user login field case insensitive

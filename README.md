@@ -374,9 +374,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 92ec2be4708c2bc0a5c69942d9929ec5c3f258d7
+commit e03b9c8ca89313c188741adde1bf04120e26f420
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 13 19:14:50 2024 +0000
+Date:   Tue Sep 17 08:48:07 2024 +0000
 
     [BOT] post-merge updates
 
@@ -483,16 +483,16 @@ Date:   Mon Aug 12 07:34:18 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 367dd2786fd8dc1631bc65f7b26df57f657669cd
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Aug 26 06:57:59 2024 +0000
+commit 5b6783bb70e363d44f8b6ed5f8eef28b629e3e83
+Author: Ignacio Buioli <ibuioli@gmail.com>
+Date:   Mon Sep 16 23:33:10 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Spanish (Argentina))
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (18 of 18 strings)
     
     Translation: e-commerce-15.0/e-commerce-15.0-website_sale_checkout_skip_payment
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_checkout_skip_payment/
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_checkout_skip_payment/es_AR/
 
 
 ## edi
@@ -506,16 +506,11 @@ Date:   Mon Sep 9 06:35:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 59f797d6e41d1711fe4d0441f1ae61a3f13b757d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 11:08:19 2024 +0000
+commit e5a472d010d67035c81e9327d521e1496424b893
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Sep 14 18:26:24 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (148 of 148 strings)
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_recurring/it/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1454,9 +1449,9 @@ Date:   Tue Jul 23 23:26:00 2024 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit d34a8af411b8f9e15e0742cc8a5a269d24ed5b39
+commit a7f16f6779b9df66611dcc77fab04c355ff7f0d1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 6 19:13:43 2024 +0000
+Date:   Fri Sep 13 21:15:27 2024 +0000
 
     [BOT] post-merge updates
 
