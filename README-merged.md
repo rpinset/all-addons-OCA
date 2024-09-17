@@ -1986,7 +1986,7 @@ addon | version | maintainers | summary
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 14.0.1.0.2 |  | Base module for multiple procurement group by Sale order
 [sale_product_brand_exception](sale_product_brand_exception/) | 14.0.1.0.0 |  | Define rules for sale order and brands
 [sale_product_category_menu](sale_product_category_menu/) | 14.0.1.0.1 |  | Shows 'Product Categories' menu item in Sales
-[sale_product_multi_add](sale_product_multi_add/) | 14.0.1.0.2 |  | Sale Product Multi Add
+[sale_product_multi_add](sale_product_multi_add/) | 14.0.1.1.0 |  | Sale Product Multi Add
 [sale_product_rating_verified](sale_product_rating_verified/) | 14.0.1.0.2 |  | Verify if a user has previously bought a product
 [sale_product_seasonality](sale_product_seasonality/) | 14.0.1.2.0 |  | Integrates rules for products' seasonal availability with sales
 [sale_product_set](sale_product_set/) | 14.0.1.5.5 |  | Sale product set
@@ -2793,9 +2793,9 @@ addon | version | maintainers | summary
 [account_invoice_export_server_env](account_invoice_export_server_env/) | 14.0.1.0.0 |  | Server environment for Account Invoice Export
 [account_invoice_facturx](account_invoice_facturx/) | 14.0.1.1.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
 [account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X invoices with Py3o reporting engine
-[account_invoice_import](account_invoice_import/) | 14.0.3.3.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import supplier invoices/refunds as PDF or XML files
+[account_invoice_import](account_invoice_import/) | 14.0.3.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import supplier invoices/refunds as PDF or XML files
 [account_invoice_import_facturx](account_invoice_import_facturx/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Factur-X/ZUGFeRD supplier invoices/refunds
-[account_invoice_import_invoice2data](account_invoice_import_invoice2data/) | 14.0.2.3.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Import supplier invoices using the invoice2data lib
+[account_invoice_import_invoice2data](account_invoice_import_invoice2data/) | 14.0.2.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Import supplier invoices using the invoice2data lib
 [account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 14.0.4.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import simple PDF vendor bills
 [account_invoice_import_ubl](account_invoice_import_ubl/) | 14.0.1.0.1 |  | Import UBL XML supplier invoices/refunds
 [account_invoice_ubl](account_invoice_ubl/) | 14.0.1.0.3 |  | Generate UBL XML file for customer invoices/refunds
@@ -3639,7 +3639,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_consolidated](account_invoice_consolidated/) | 14.0.1.0.4 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![swapnesh-serpentcs](https://github.com/swapnesh-serpentcs.png?size=30px)](https://github.com/swapnesh-serpentcs) | Consolidate your invoices across companies
-[account_invoice_inter_company](account_invoice_inter_company/) | 14.0.1.4.2 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 14.0.1.6.0 |  | Intercompany invoice rules
 [account_invoice_inter_company_queued](account_invoice_inter_company_queued/) | 14.0.1.0.1 |  | Generate invoices using jobs
 [account_invoice_inter_company_sale](account_invoice_inter_company_sale/) | 14.0.1.0.0 |  | Show sale related fields
 [account_move_change_company](account_move_change_company/) | 14.0.1.0.2 |  | Allow to change company of account moves
@@ -4708,7 +4708,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.0 |  | Allow to create the 'VAT Statement'.
+[account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.1 |  | Allow to create the 'VAT Statement'.
 [assets_management](assets_management/) | 14.0.1.5.2 |  | Gestione Cespiti
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
@@ -4783,7 +4783,7 @@ addon | version | maintainers | summary
 [l10n_it_website_portal_ipa](l10n_it_website_portal_ipa/) | 14.0.1.0.0 |  | Aggiunge l'indice PA (IPA) tra i dettagli dell'utente nel portale.
 [l10n_it_website_sale_fatturapa](l10n_it_website_sale_fatturapa/) | 14.0.1.0.0 |  | Aggiunge i campi necessari alla fatturazione elettronica nel form del checkout
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 14.0.1.1.0 |  | Website Sale FiscalCode
-[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.1.12 |  | ITA - Ritenute d'acconto
+[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.1.13 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_financial_report](l10n_it_withholding_tax_financial_report/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione Ritenute d'acconto e Rendiconti contabili
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 14.0.1.0.2 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 14.0.1.0.2 |  | ITA - Causali pagamento per ritenute d'acconto
@@ -5958,7 +5958,7 @@ addon | version | maintainers | summary
 [delivery_postlogistics_server_env](delivery_postlogistics_server_env/) | 14.0.1.0.0 |  | Server Environment layer for Delivery Postlogistics
 [delivery_price_collection_cost](delivery_price_collection_cost/) | 14.0.1.0.0 |  | Add delivery collection costs as a separate line in the SO
 [delivery_price_collection_cost_product_domain](delivery_price_collection_cost_product_domain/) | 14.0.1.0.0 |  | Bridge module between Delivery Collection Cost and Product Domain
-[delivery_price_method](delivery_price_method/) | 14.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
+[delivery_price_method](delivery_price_method/) | 14.0.1.0.1 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_product_domain](delivery_price_product_domain/) | 14.0.1.0.3 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Apply domain to product in shipping charges rules
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 14.0.1.0.3 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
 [delivery_purchase](delivery_purchase/) | 14.0.1.3.0 |  | Delivery costs in purchases
@@ -6130,7 +6130,7 @@ addon | version | maintainers | summary
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 14.0.1.2.2 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 14.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_auto_create_lot_qty](stock_picking_auto_create_lot_qty/) | 14.0.1.0.0 |  | Auto batch generation by quantity
-[stock_picking_auto_create_package](stock_picking_auto_create_package/) | 14.0.1.0.0 |  | Put all move lines in packs on validation.
+[stock_picking_auto_create_package](stock_picking_auto_create_package/) | 14.0.1.1.0 |  | Put all move lines in packs on validation.
 [stock_picking_back2draft](stock_picking_back2draft/) | 14.0.1.0.0 |  | Reopen cancelled pickings
 [stock_picking_backorder_strategy](stock_picking_backorder_strategy/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
 [stock_picking_batch_extended](stock_picking_batch_extended/) | 14.0.1.0.2 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![i-vyshnevska](https://github.com/i-vyshnevska.png?size=30px)](https://github.com/i-vyshnevska) | Allows manage a lot of pickings in batch
@@ -6728,7 +6728,7 @@ addon | version | maintainers | summary
 [mrp_package_propagation](mrp_package_propagation/) | 14.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 14.0.1.1.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_auto_validate](mrp_production_auto_validate/) | 14.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manufacturing Order Auto-Validation when components are picked
-[mrp_production_back_to_draft](mrp_production_back_to_draft/) | 14.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
+[mrp_production_back_to_draft](mrp_production_back_to_draft/) | 14.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_byproduct_cost_share](mrp_production_byproduct_cost_share/) | 14.0.1.0.0 |  | Production By-Product Cost Share
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 14.0.1.0.2 |  | Production Grouped By Product
 [mrp_production_note](mrp_production_note/) | 14.0.1.0.0 |  | Notes in production orders
@@ -6947,11 +6947,11 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.41.0 |  | A property management system
+[pms](pms/) | 14.0.2.43.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.9.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.11.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
@@ -7904,6 +7904,7 @@ addon | version | maintainers | summary
 [mail_allow_portal_internal_note](mail_allow_portal_internal_note/) | 14.0.1.0.2 |  | Portal users can access internal messages related to own or other companies
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 14.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 14.0.1.0.1 |  | Module to use attach existing attachment for account module
+[mail_autogenerated_header](mail_autogenerated_header/) | 14.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
 [mail_autosubscribe](mail_autosubscribe/) | 14.0.1.0.0 |  | Automatically subscribe partners to its company's business documents
 [mail_chatter_thread_colour](mail_chatter_thread_colour/) | 14.0.1.0.1 |  | Allow to change the colour of threads
 [mail_contact_type](mail_contact_type/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Mail Contact Type

@@ -7,7 +7,7 @@
 
 {
     "name": "ITA - Liquidazione IVA",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.2.1",
     "category": "Localization/Italy",
     "summary": "Allow to create the 'VAT Statement'.",
     "license": "AGPL-3",
@@ -18,7 +18,6 @@
         "account_tax_balance",
         "date_range",
         "l10n_it_account",
-        "l10n_it_fiscalcode",
         "web",
     ],
     "data": [

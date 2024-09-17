@@ -396,9 +396,9 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 55a0da2bef47642cd83eaa37297cd0e75dfcf599
+commit 9b4e05c4abc13a501d640203b502995235830483
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 9 11:18:19 2024 +0000
+Date:   Tue Sep 17 08:15:51 2024 +0000
 
     [BOT] post-merge updates
 
@@ -539,9 +539,9 @@ Date:   Fri Aug 16 00:50:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit e9fe1a70f7db810dfd5da879b8f25a15f490951a
+commit fea6c93634ed4726a76fcbd7f3d619b88b896b0e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 26 05:57:36 2024 +0000
+Date:   Mon Sep 16 14:11:53 2024 +0000
 
     [BOT] post-merge updates
 
@@ -571,11 +571,16 @@ Date:   Fri Aug 23 06:58:04 2024 +0000
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit eb88d8e874b03d92a0052605ff33578e7c37b395
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 12 13:19:59 2024 +0000
+commit 9b58dbe999315c47821fe812c2a275e3017b5e4c
+Author: Marcel Savegnago <marcel.savegnago@gmail.com>
+Date:   Fri Sep 13 20:56:48 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: fleet-14.0/fleet-14.0-fleet_vehicle_fuel_type_ethanol
+    Translate-URL: https://translation.odoo-community.org/projects/fleet-14-0/fleet-14-0-fleet_vehicle_fuel_type_ethanol/pt_BR/
 
 
 ## infrastructure-dns
@@ -681,16 +686,16 @@ Date:   Wed May 1 17:59:33 2024 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 6b75626d3828fb54627dd114e0b3580791b2d694
+commit 2873c17491a9f401efc2d31692491a0d7a9e0856
 Author: Weblate <noreply@weblate.org>
-Date:   Wed Aug 21 12:22:58 2024 +0000
+Date:   Tue Sep 17 15:48:28 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: multi-company-14.0/multi-company-14.0-purchase_sale_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-purchase_sale_inter_company/
+    Translation: multi-company-14.0/multi-company-14.0-account_invoice_inter_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-account_invoice_inter_company/
 
 
 ## l10n-argentina
@@ -901,16 +906,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e9d5137b5952278c2360e7158884ba1d25f03909
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Sep 10 13:07:27 2024 +0000
+commit 15104892d944b0dc1df4a268efc75933ed1f1a22
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Sep 17 13:04:24 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1126,16 +1126,11 @@ Date:   Wed May 1 18:41:29 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 50073f21a99a04eda7a9d5e13da0e866ee69ec11
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:21:59 2024 +0000
+commit e07910c4f7410c72c79214999f0bfa965cff7517
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Sep 17 06:05:15 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 12.7% (12 of 94 strings)
-    
-    Translation: delivery-carrier-14.0/delivery-carrier-14.0-base_delivery_carrier_label
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-base_delivery_carrier_label/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1154,9 +1149,9 @@ Date:   Thu Aug 22 08:53:43 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 4167f31fc5760aa825be9385bde55ad5f96845f0
+commit 4aeadf62f1608a5b7fbf9326ab5c33d413731305
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 10 12:00:34 2024 +0000
+Date:   Mon Sep 16 08:17:08 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1218,23 +1213,23 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 2a2e27dbf4a3544d864832d7d6db0ff9d6651e03
+commit 6673c9d4a9616aa7f44e2ba67fb89b3ca25f0659
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 08:52:13 2024 +0000
+Date:   Tue Sep 17 08:14:11 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 94.1% (81 of 86 strings)
+    Currently translated at 100.0% (41 of 41 strings)
     
-    Translation: wms-14.0/wms-14.0-stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_available_to_promise_release/it/
+    Translation: wms-14.0/wms-14.0-delivery_carrier_preference
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-delivery_carrier_preference/it/
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit d945277580e8fe1350927163fc09a31273baebd3
+commit 46a64c5d1d3293a3be6412b6656feafc2d866e7e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 10 16:32:34 2024 +0000
+Date:   Mon Sep 16 09:50:45 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1259,11 +1254,16 @@ Date:   Wed Aug 28 10:45:38 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 77ddc557cac0a773f86b6aa9aa90bc30e219e90d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 10 10:57:22 2024 +0000
+commit 5207446b5f9a85af6ed75417d7bb61760ff31115
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Sep 14 18:39:41 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: pms-14.0/pms-14.0-pms
+    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/
 
 
 ## purchase-workflow
@@ -1422,9 +1422,9 @@ Date:   Wed May 1 17:57:53 2024 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 238ba7139294419dd431c25b1e8081ec1ede1d61
+commit 434f41e1c6b2423712be32f284e705cdbadb75e4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 9 11:35:11 2024 +0000
+Date:   Mon Sep 16 13:08:05 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1609,16 +1609,16 @@ Date:   Wed Jul 31 08:57:17 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 25f2461f695133ad80fcf3282f02967efb2d2629
+commit cd04b223a6bf721c2c5dba4d4604e9410420c620
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:32:50 2024 +0000
+Date:   Tue Sep 17 08:09:02 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (156 of 156 strings)
+    Currently translated at 100.0% (509 of 509 strings)
     
-    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel_reservation
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel_reservation/it/
+    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel/it/
 
 
 ## vertical-isp
@@ -1686,16 +1686,16 @@ Date:   Fri Oct 27 22:23:17 2023 +0200
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 35ed8b69638118f2cd46b999e2f4ded53c22cfff
+commit a2fa5a95b0a11c4bb3970cb262db8f335fa2f661
 Author: Weblate <noreply@weblate.org>
-Date:   Fri Feb 16 12:49:47 2024 +0000
+Date:   Tue Sep 17 08:23:44 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: vertical-rental-14.0/vertical-rental-14.0-rental_check_availability
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-14-0/vertical-rental-14-0-rental_check_availability/
+    Translation: vertical-rental-14.0/vertical-rental-14.0-rental_base
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-14-0/vertical-rental-14-0-rental_base/
 
 
 ## vertical-travel
