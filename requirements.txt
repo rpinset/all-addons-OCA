@@ -211,6 +211,7 @@ dataclasses
 mako
 odoorpc
 openupgradelib
+pygount
 sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
@@ -231,6 +232,8 @@ schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
+# generated from manifests external_dependencies
+pika
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 # generated from manifests external_dependencies
 a2wsgi

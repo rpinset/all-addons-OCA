@@ -6,7 +6,11 @@ import {
 } from "@web/views/fields/many2many_tags/many2many_tags_field";
 import {Many2OneField, many2OneField} from "@web/views/fields/many2one/many2one_field";
 import {FormController} from "@web/views/form/form_controller";
-import {Many2OneAvatarField} from "@web/views/fields/many2one_avatar/many2one_avatar_field";
+import {
+    KanbanMany2OneAvatarField,
+    Many2OneAvatarField,
+} from "@web/views/fields/many2one_avatar/many2one_avatar_field";
+
 import {Many2XAutocomplete} from "@web/views/fields/relational_utils";
 import {evaluateBooleanExpr} from "@web/core/py_js/py";
 import {isX2Many} from "@web/views/utils";
@@ -21,6 +25,12 @@ Many2OneField.props = {
 };
 Many2XAutocomplete.props = {
     ...Many2XAutocomplete.props,
+    fieldColor: {type: String, optional: true},
+    fieldColorOptions: {type: Object, optional: true},
+};
+
+KanbanMany2OneAvatarField.props = {
+    ...KanbanMany2OneAvatarField.props,
     fieldColor: {type: String, optional: true},
     fieldColorOptions: {type: Object, optional: true},
 };
@@ -355,7 +365,7 @@ patch(FormController.prototype, {
                 viewType = isSmall ? "kanban" : "list";
             }
             field.viewMode = viewType;
-            if (field.views[viewType] && limit) {
+            if (field.views && field.views[viewType] && limit) {
                 field.views[viewType].limit = limit;
             }
         }
