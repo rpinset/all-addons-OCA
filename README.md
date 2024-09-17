@@ -1317,16 +1317,16 @@ Date:   Mon Jul 1 09:22:02 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit ad98fe280fc170603d71047bb2322fcd96bfe822
+commit 0f91e0c084911de37eba6d6a72f2d94c7c83f938
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:41:03 2024 +0000
+Date:   Tue Sep 17 08:14:13 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (40 of 40 strings)
     
-    Translation: wms-13.0/wms-13.0-stock_picking_type_shipping_policy
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_picking_type_shipping_policy/it/
+    Translation: wms-13.0/wms-13.0-delivery_carrier_preference
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-delivery_carrier_preference/it/
 
 
 ## manufacture
@@ -1373,16 +1373,16 @@ Date:   Fri Jun 14 14:57:17 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3fee0e77de73726e8d2000ab8cd1f106c43934b2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 23 13:59:51 2024 +0000
+commit 3f7f394300f5b1097ccef6b25cb7c0ef7281d07a
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 16 14:42:58 2024 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 82.7% (187 of 226 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_request
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_request/it/
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_packaging
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_packaging/
 
 
 ## purchase-reporting
