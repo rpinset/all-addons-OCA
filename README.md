@@ -584,16 +584,16 @@ Date:   Fri Aug 23 09:27:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit e68b7ec01152ee6d22e1aacbbd057afcc1c28d39
+commit 4c8059720f2502e9886872e576600c135c61c60f
 Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Tue Sep 17 16:07:21 2024 +0000
+Date:   Fri Sep 20 21:19:26 2024 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 12.3% (63 of 512 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/fr/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_delivery/fr/
 
 
 ## margin-analysis
@@ -1114,9 +1114,9 @@ Date:   Thu Aug 22 07:26:23 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit c779d2071cb408a7b1677b5e1b64c118453065ee
+commit 86e8883ffe3fafae62ad72d65a34a3a919681eb7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 08:52:32 2024 +0000
+Date:   Wed Sep 18 07:26:59 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1484,11 +1484,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 6ec42fe665574d2815a6afcf3e0031c64c3e34c5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 16 17:33:06 2024 +0000
+commit a591b7aa653a48c87e30f022d784e06f2d05e299
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Sep 19 06:43:55 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 84.8% (151 of 178 strings)
+    
+    Translation: server-tools-12.0/server-tools-12.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-excel_import_export/it/
 
 
 ## server-auth
