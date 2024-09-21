@@ -3,10 +3,17 @@
 
 from odoo.tests import Form
 
+from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+
 from .common import CommonTestCase
 
 
 class TestSaleOrder(CommonTestCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
+
     def create_sale_order(self, payment_mode=None):
         with Form(self.env["sale.order"]) as sale_form:
             sale_form.partner_id = self.base_partner
@@ -94,3 +101,22 @@ class TestSaleOrder(CommonTestCase):
         self.assertEqual(len(invoice), 1)
         self.assertEqual(invoice.payment_mode_id, self.payment_mode_2)
         self.assertFalse(invoice.partner_bank_id)
+
+    def test_several_sale_to_invoice_payment_mode(self):
+        """
+        Data:
+            A partner with a specific payment_mode
+            A sale order created with the payment_mode of the partner
+            A sale order created with another payment mode
+        Test case:
+            Create the invoice from the sale orders
+        Expected result:
+            Two invoices should be generated
+        """
+        payment_mode_2 = self.env.ref("account_payment_mode.payment_mode_outbound_dd1")
+        order_1 = self.create_sale_order()
+        order_2 = self.create_sale_order(payment_mode_2)
+        orders = order_1 | order_2
+        orders.action_confirm()
+        invoices = orders._create_invoices()
+        self.assertEqual(2, len(invoices))
