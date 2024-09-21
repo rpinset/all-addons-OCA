@@ -1271,16 +1271,11 @@ Date:   Sun Sep 3 17:10:24 2023 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit c99729a76f375c949cc1920113bedd76622af4a5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 16 11:00:40 2024 +0000
+commit d71ebd417dccfe5708c7abad10c3ca03b28cf1c0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 20 06:56:56 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 44.1% (15 of 34 strings)
-    
-    Translation: stock-logistics-warehouse-13.0/stock-logistics-warehouse-13.0-stock_quant_manual_assign
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-13-0/stock-logistics-warehouse-13-0-stock_quant_manual_assign/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1317,16 +1312,16 @@ Date:   Mon Jul 1 09:22:02 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 0f91e0c084911de37eba6d6a72f2d94c7c83f938
+commit 22b4bed470ee7d90e71fa58372375bf71cd69b06
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 17 08:14:13 2024 +0000
+Date:   Wed Sep 18 07:08:29 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (40 of 40 strings)
+    Currently translated at 100.0% (99 of 99 strings)
     
-    Translation: wms-13.0/wms-13.0-delivery_carrier_preference
-    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-delivery_carrier_preference/it/
+    Translation: wms-13.0/wms-13.0-stock_reception_screen
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-stock_reception_screen/it/
 
 
 ## manufacture
