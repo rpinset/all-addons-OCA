@@ -595,7 +595,7 @@ addon | version | maintainers | summary
 [account_asset_operating_unit](account_asset_operating_unit/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | This module adds operating unit information to assets.
 [account_asset_transfer_operating_unit](account_asset_transfer_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add operating unit to asset transfer
 [account_financial_report_operating_unit](account_financial_report_operating_unit/) | 15.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 15.0.1.2.3 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 15.0.1.3.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Accounting
 [analytic_operating_unit](analytic_operating_unit/) | 15.0.1.0.1 |  | Analytic Operating Unit
 [analytic_operating_unit_access_all](analytic_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Analytics
@@ -963,7 +963,7 @@ addon | version | maintainers | summary
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 15.0.1.0.3 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_return](account_payment_order_return/) | 15.0.1.0.1 |  | Account Payment Order Return
 [account_payment_partner](account_payment_partner/) | 15.0.1.3.2 |  | Adds payment mode on partners and invoices
-[account_payment_purchase](account_payment_purchase/) | 15.0.1.0.2 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase](account_payment_purchase/) | 15.0.1.0.3 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 15.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
 [account_payment_sale](account_payment_sale/) | 15.0.1.0.1 |  | Adds payment mode on sale orders
 
@@ -1815,7 +1815,7 @@ addon | version | maintainers | summary
 [pricelist_cache](pricelist_cache/) | 15.0.1.4.1 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [product_form_sale_link](product_form_sale_link/) | 15.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 15.0.2.1.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
-[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.2.3 |  | Loads in every sale order line the customer code defined in the product
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 15.0.1.3.0 |  | Loads in every sale order line the customer code defined in the product
 [sale_advance_payment](sale_advance_payment/) | 15.0.1.0.3 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_attached_product](sale_attached_product/) | 15.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 15.0.1.0.1 |  | Sale Automatic Workflow
@@ -5084,7 +5084,7 @@ addon | version | maintainers | summary
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
-[delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.1 |  | Integrate SEUR Atlas API
+[delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.2 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 15.0.1.0.6 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -5099,7 +5099,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.6.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.10.0 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
@@ -5757,7 +5757,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 15.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
 [stock_picking_batch_extended_account_sale_type](stock_picking_batch_extended_account_sale_type/) | 15.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
 [stock_picking_batch_operation_quick_change](stock_picking_batch_operation_quick_change/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Change location of all picking batch operations
-[stock_picking_batch_outgoing](stock_picking_batch_outgoing/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allows set on pickings the batch picking from last picking (out)
+[stock_picking_batch_outgoing](stock_picking_batch_outgoing/) | 15.0.1.2.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allows set on pickings the batch picking from last picking (out)
 [stock_picking_batch_set_quantity](stock_picking_batch_set_quantity/) | 15.0.1.1.0 |  | Adds buttons to set all reserved quantity in quantity done fields
 [stock_picking_customer_ref](stock_picking_customer_ref/) | 15.0.1.0.0 |  | This module displays the sale reference/description in the pickings
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 15.0.1.0.1 |  | In picking out lots' selection, filter lots based on their location
@@ -6204,6 +6204,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 15.0.1.1.0 |  | Account Move Line Mrp Info
+[mrp_2_steps_consumed_qty_sync](mrp_2_steps_consumed_qty_sync/) | 15.0.0.1.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update consumed quantities when in 2 steps production scope the picking is validated
 [mrp_account_analytic](mrp_account_analytic/) | 15.0.1.0.2 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Consuming raw materials and operations generated Analytic Items
 [mrp_account_bom_attribute_match](mrp_account_bom_attribute_match/) | 15.0.1.1.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Glue module between `mrp_account` and `mrp_bom_attribute_match`
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 15.0.1.1.1 |  | Dynamic BOM component based on product attribute
@@ -6230,6 +6231,7 @@ addon | version | maintainers | summary
 [mrp_production_split](mrp_production_split/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Split Manufacturing Orders into smaller ones
 [mrp_progress_button](mrp_progress_button/) | 15.0.2.0.0 |  | Add a button on MO to make the MO state 'In Progress'
 [mrp_sale_info](mrp_sale_info/) | 15.0.1.0.1 |  | Adds sale information to Manufacturing models
+[mrp_set_quantity_to_reservation](mrp_set_quantity_to_reservation/) | 15.0.0.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | MRP Set Quantity To Reservation
 [mrp_subcontracting_lot_number_propagation](mrp_subcontracting_lot_number_propagation/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a serial number from a component to a finished product (subcontracting integration)
 [mrp_subcontracting_no_negative](mrp_subcontracting_no_negative/) | 15.0.0.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Disallow negative stock levels in subcontractor locations.
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 15.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
@@ -7729,7 +7731,7 @@ addon | version | maintainers | summary
 [auth_ldaps](auth_ldaps/) | 15.0.1.0.0 |  | Allows to use LDAP over SSL authentication
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 15.0.1.0.1 |  | Allow multiple connection with the same OAuth account
 [auth_oidc](auth_oidc/) | 15.0.1.1.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
-[auth_saml](auth_saml/) | 15.0.1.4.4 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
+[auth_saml](auth_saml/) | 15.0.1.4.5 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 15.0.1.0.2 |  | This module disable all inactive sessions since a given delay
 [auth_signup_partner_company](auth_signup_partner_company/) | 15.0.1.0.0 |  | Auth Signup Partner Company
 [auth_signup_verify_email](auth_signup_verify_email/) | 15.0.1.0.0 |  | Force uninvited users to use a good email for signup
@@ -8832,7 +8834,7 @@ addon | version | maintainers | summary
 [web_m2x_options](web_m2x_options/) | 15.0.1.1.1 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 15.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 15.0.1.0.0 |  | Remove the bubbles from the web interface
-[web_notify](web_notify/) | 15.0.2.0.0 |  | Send notification messages to user
+[web_notify](web_notify/) | 15.0.2.1.0 |  | Send notification messages to user
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.5 |  | Web Pivot Computed Measure
 [web_pwa_oca](web_pwa_oca/) | 15.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
 [web_refresher](web_refresher/) | 15.0.2.0.1 |  | Web Refresher
