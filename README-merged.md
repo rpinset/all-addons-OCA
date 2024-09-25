@@ -1885,7 +1885,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 14.0.1.0.0 |  | Portal Sale Personal Data Only
-[pricelist_cache](pricelist_cache/) | 14.0.1.4.1 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
+[pricelist_cache](pricelist_cache/) | 14.0.1.4.2 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
 [pricelist_cache_rest](pricelist_cache_rest/) | 14.0.1.0.0 |  | Provides an endpoint to get product prices for a given customer
 [product_form_sale_link](product_form_sale_link/) | 14.0.1.1.1 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_elaboration](product_supplierinfo_for_customer_elaboration/) | 14.0.1.0.0 |  | Allows to define default elaborations and elaboration notes on product customerinfos
@@ -2180,7 +2180,7 @@ addon | version | maintainers | summary
 [partner_external_map](partner_external_map/) | 14.0.1.0.0 |  | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
 [partner_fax](partner_fax/) | 14.0.1.0.0 |  | Add fax number on partner
 [partner_firstname](partner_firstname/) | 14.0.1.1.0 |  | Split first name and last name for non company partners
-[partner_helper](partner_helper/) | 14.0.1.0.0 |  | Add specific helper methods
+[partner_helper](partner_helper/) | 14.0.1.0.1 |  | Add specific helper methods
 [partner_identification](partner_identification/) | 14.0.1.4.0 |  | Partner Identification Numbers
 [partner_identification_gln](partner_identification_gln/) | 14.0.1.0.1 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
 [partner_identification_notification](partner_identification_notification/) | 14.0.1.0.0 |  | Partner Identification Notification
@@ -2797,7 +2797,7 @@ addon | version | maintainers | summary
 [account_invoice_import](account_invoice_import/) | 14.0.3.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import supplier invoices/refunds as PDF or XML files
 [account_invoice_import_facturx](account_invoice_import_facturx/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Factur-X/ZUGFeRD supplier invoices/refunds
 [account_invoice_import_invoice2data](account_invoice_import_invoice2data/) | 14.0.2.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![bosd](https://github.com/bosd.png?size=30px)](https://github.com/bosd) | Import supplier invoices using the invoice2data lib
-[account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 14.0.4.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import simple PDF vendor bills
+[account_invoice_import_simple_pdf](account_invoice_import_simple_pdf/) | 14.0.4.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import simple PDF vendor bills
 [account_invoice_import_ubl](account_invoice_import_ubl/) | 14.0.1.0.1 |  | Import UBL XML supplier invoices/refunds
 [account_invoice_ubl](account_invoice_ubl/) | 14.0.1.0.3 |  | Generate UBL XML file for customer invoices/refunds
 [account_invoice_ubl_email_attachment](account_invoice_ubl_email_attachment/) | 14.0.1.0.0 |  | Automatically adds the UBL file to the email.
@@ -2829,7 +2829,7 @@ addon | version | maintainers | summary
 [edi_webservice_oca](edi_webservice_oca/) | 14.0.1.4.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Defines webservice integration from EDI Exchange records
 [edi_xml_oca](edi_xml_oca/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module for EDI exchange using XML files.
 [partner_identification_import](partner_identification_import/) | 14.0.1.0.1 |  | Provides partner matching on extra ID
-[pdf_helper](pdf_helper/) | 14.0.2.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
+[pdf_helper](pdf_helper/) | 14.0.2.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
 [product_import](product_import/) | 14.0.1.2.0 |  | Import product catalogues
 [product_import_ubl](product_import_ubl/) | 14.0.1.1.1 |  | Import UBL XML catalogue files
 [purchase_order_ubl](purchase_order_ubl/) | 14.0.1.2.0 |  | Embed UBL XML file inside the PDF purchase order
@@ -5966,7 +5966,7 @@ addon | version | maintainers | summary
 [delivery_purchase](delivery_purchase/) | 14.0.1.3.0 |  | Delivery costs in purchases
 [delivery_roulier](delivery_roulier/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
-[delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
+[delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
 [delivery_schenker](delivery_schenker/) | 14.0.2.0.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
@@ -6353,7 +6353,7 @@ addon | version | maintainers | summary
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 14.0.1.1.1 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_quant_view_reservation](stock_quant_view_reservation/) | 14.0.1.0.1 |  | Allows to see details of reservations on a quant
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 14.0.1.0.0 |  | Establish a removal priority on stock locations.
-[stock_request](stock_request/) | 14.0.1.7.3 |  | Internal request for stock
+[stock_request](stock_request/) | 14.0.1.7.4 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 14.0.1.1.0 |  | Internal request for stock
 [stock_request_cancel_confirm](stock_request_cancel_confirm/) | 14.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Stock Request Cancel Confirm
 [stock_request_direction](stock_request_direction/) | 14.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | From or to your warehouse?
@@ -6361,7 +6361,7 @@ addon | version | maintainers | summary
 [stock_request_mrp](stock_request_mrp/) | 14.0.1.2.0 |  | Manufacturing request for stock
 [stock_request_partner](stock_request_partner/) | 14.0.1.0.1 |  | Allow to define partner in Stock Request
 [stock_request_picking_type](stock_request_picking_type/) | 14.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add Stock Requests to the Inventory App
-[stock_request_purchase](stock_request_purchase/) | 14.0.1.2.0 |  | Internal request for stock
+[stock_request_purchase](stock_request_purchase/) | 14.0.1.2.2 |  | Internal request for stock
 [stock_request_sequence_option](stock_request_sequence_option/) | 14.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Manage sequence options for stock request
 [stock_request_submit](stock_request_submit/) | 14.0.1.3.0 |  | Add submit state on Stock Requests
 [stock_request_tier_validation](stock_request_tier_validation/) | 14.0.1.0.1 |  | Extends the functionality of Stock Requests to support a tier validation process.
@@ -6952,11 +6952,11 @@ addon | version | maintainers | summary
 [account_asset_pms](account_asset_pms/) | 14.0.1.0.0 |  | Add property in assets configuration
 [mis_builder_pms](mis_builder_pms/) | 14.0.1.0.0 |  | Add property in mis builder
 [multi_pms_properties](multi_pms_properties/) | 14.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 14.0.2.43.0 |  | A property management system
+[pms](pms/) | 14.0.2.44.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 14.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_housekeeping](pms_housekeeping/) | 14.0.1.0.1 |  | Housekeeping
 [pms_hr_property](pms_hr_property/) | 14.0.1.0.0 |  | Adds to the employee the property on which he works.
-[pms_l10n_es](pms_l10n_es/) | 14.0.2.11.0 |  | PMS Spanish Adaptation
+[pms_l10n_es](pms_l10n_es/) | 14.0.2.12.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 14.0.1.1.0 |  | PMS AEAT SII Integration
 [pms_rooming_xls](pms_rooming_xls/) | 14.0.1.0.0 |  | Rooming xlsx Management
 [pos_pms_link](pos_pms_link/) | 14.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
@@ -7249,6 +7249,7 @@ addon | version | maintainers | summary
 [product_product_template_navigation](product_product_template_navigation/) | 14.0.1.0.1 |  | Adds a button in product to view the template
 [product_profile](product_profile/) | 14.0.1.0.1 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Allow to configure a product in 1 click
 [product_restricted_type](product_restricted_type/) | 14.0.1.0.1 |  | Product Restricted Type
+[product_route_mto](product_route_mto/) | 14.0.1.0.0 |  | This module allows to compute if a product is an 'MTO' one from its configured routes
 [product_sale_manufactured_for](product_sale_manufactured_for/) | 14.0.1.1.0 |  | Allows to indicate in products that they were made specifically for some customers.
 [product_search_by_display_name](product_search_by_display_name/) | 14.0.1.0.0 | [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Product Search By Display Name
 [product_seasonality](product_seasonality/) | 14.0.1.3.0 |  | Define rules for products' seasonal availability

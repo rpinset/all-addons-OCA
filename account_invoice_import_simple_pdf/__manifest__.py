@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Import Simple PDF",
-    "version": "14.0.4.0.0",
+    "version": "14.0.4.1.0",
     "category": "Accounting/Accounting",
     "license": "AGPL-3",
     "summary": "Import simple PDF vendor bills",
@@ -16,7 +16,7 @@
         "python": [
             "regex",
             "dateparser",
-            "pypdf>=3.1.0",
+            "pypdf>=3.1.0,<5.0",
         ],
         "deb": ["libmupdf-dev", "mupdf", "mupdf-tools", "poppler-utils"],
     },
