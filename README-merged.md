@@ -874,7 +874,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.2.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.2.6 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1649,6 +1649,7 @@ addon | version | maintainers | summary
 [sale_order_general_discount](sale_order_general_discount/) | 17.0.1.0.0 |  | General discount per sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 17.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_date](sale_order_line_date/) | 17.0.1.0.0 |  | Adds a commitment date to each sale order line.
+[sale_order_line_input](sale_order_line_input/) | 17.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_sequence](sale_order_line_sequence/) | 17.0.1.1.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_line_tag](sale_order_line_tag/) | 17.0.1.0.1 | [![smaciaosi](https://github.com/smaciaosi.png?size=30px)](https://github.com/smaciaosi) [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) [![ckolobow](https://github.com/ckolobow.png?size=30px)](https://github.com/ckolobow) | Add tags to classify sales order line reasons
@@ -2359,6 +2360,8 @@ addon | version | maintainers | summary
 [fieldservice_recurring](fieldservice_recurring/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
 [fieldservice_sale](fieldservice_sale/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
+[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
+[fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
@@ -5203,6 +5206,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_move_line_product](account_move_line_product/) | 17.0.1.0.0 |  | Displays the product in the journal entries and items
 [base_product_merge](base_product_merge/) | 17.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Merge duplicate products
 [scrap_reason_code](scrap_reason_code/) | 17.0.1.0.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
 [stock_archive_constraint](stock_archive_constraint/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
@@ -5564,8 +5568,18 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[document_page_environment_manual](document_page_environment_manual/) | 17.0.1.0.0 |  | Document Management - Wiki - Environment Manual
+[document_page_environmental_aspect](document_page_environmental_aspect/) | 17.0.1.0.0 |  | Environmental Aspects
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 17.0.1.0.0 |  | Health and Safety Manual
 [document_page_procedure](document_page_procedure/) | 17.0.1.0.0 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 17.0.1.0.0 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 17.0.1.0.0 |  | Document Management - Wiki - Work Instructions
 [mgmtsystem](mgmtsystem/) | 17.0.1.0.0 |  | Management System
+[mgmtsystem_action](mgmtsystem_action/) | 17.0.1.0.0 |  | Management System - Action
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 17.0.1.0.0 |  | Hazard
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 17.0.1.0.0 |  | Hazard Risk
+[mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.0 |  | Management System - Manual
+[mgmtsystem_survey](mgmtsystem_survey/) | 17.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)
 
@@ -5678,7 +5692,7 @@ addon | version | maintainers | summary
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
-[purchase_security](purchase_security/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
+[purchase_security](purchase_security/) | 17.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
 [purchase_tag](purchase_tag/) | 17.0.1.1.0 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
@@ -5770,6 +5784,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[product_category_code](product_category_code/) | 17.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
 [product_code_mandatory](product_code_mandatory/) | 17.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_unique](product_code_unique/) | 17.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
@@ -5784,7 +5799,7 @@ addon | version | maintainers | summary
 [product_state](product_state/) | 17.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
 [product_status](product_status/) | 17.0.1.0.0 |  | Product Status Computed From Fields
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 17.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
-[product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 17.0.1.1.0 |  | Allows to define prices for customers in the products
+[product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 17.0.1.1.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to define prices for customers in the products
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 17.0.1.0.0 |  | Product Supplierinfo Revision
 [sale_product_template_tags](sale_product_template_tags/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Sale app
 [uom_category_active](uom_category_active/) | 17.0.1.0.0 |  | Add option to archive UoM categories
