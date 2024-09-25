@@ -3124,6 +3124,7 @@ addon | version | maintainers | summary
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 15.0.1.0.0 |  | This addon allows to manage employee personal equipment
 [hr_study](hr_study/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Structured study field for employees
 [hr_worked_days_from_timesheet](hr_worked_days_from_timesheet/) | 15.0.1.0.0 |  | Adds a button to import worked days from timesheet.
+[passport_expiration](passport_expiration/) | 15.0.1.0.0 |  | Adds an expiration date for passports
 
 [//]: # (end addons)
 
@@ -5084,7 +5085,7 @@ addon | version | maintainers | summary
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
-[delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.2 |  | Integrate SEUR Atlas API
+[delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.3 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 15.0.1.0.6 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -5748,7 +5749,7 @@ addon | version | maintainers | summary
 [stock_move_propagate_first_move](stock_move_propagate_first_move/) | 15.0.1.0.0 |  | This addon propagate the picking type of the original move to all next moves created from procurement
 [stock_move_quick_lot](stock_move_quick_lot/) | 15.0.1.0.0 |  | Set lot name and end date directly on picking operations
 [stock_no_negative](stock_no_negative/) | 15.0.1.0.0 |  | Disallow negative stock levels by default
-[stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.3 |  | Do not reserve quantity with assigned owner
+[stock_owner_restriction](stock_owner_restriction/) | 15.0.1.1.4 |  | Do not reserve quantity with assigned owner
 [stock_picking_assign_serial_final](stock_picking_assign_serial_final/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Generate serial numbers until to a final serial number
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 15.0.2.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 15.0.1.0.1 |  | Reopen cancelled pickings
@@ -5908,6 +5909,7 @@ addon | version | maintainers | summary
 [stock_inventory](stock_inventory/) | 15.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
+[stock_inventory_lockdown](stock_inventory_lockdown/) | 15.0.1.0.0 |  | Lock down stock locations during inventories.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
@@ -6678,6 +6680,7 @@ addon | version | maintainers | summary
 [product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.4.0 |  | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 15.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Extend Product Pricelist Direct Print for filter by public categories
+[product_pricelist_item_list_view](product_pricelist_item_list_view/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 15.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_simulation](product_pricelist_simulation/) | 15.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simulate the product price for all pricelists
 [product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 15.0.1.0.2 |  | Allows to create priceslists based on supplier info
@@ -6694,7 +6697,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 15.0.1.0.4 |  | Allows to define prices for customers in the products
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 15.0.1.0.0 |  | Product Supplierinfo Revision
 [product_template_tags](product_template_tags/) | 15.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | This addon allow to add tags on products
-[product_variant_attribute_name_manager](product_variant_attribute_name_manager/) | 15.0.1.0.1 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Manage how to display the attributes on the product variant name.
+[product_variant_attribute_name_manager](product_variant_attribute_name_manager/) | 15.0.1.1.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Manage how to display the attributes on the product variant name.
 [purchase_product_template_tags](purchase_product_template_tags/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Purchase app
 [sale_product_template_tags](sale_product_template_tags/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Sale app
 [stock_product_template_tags](stock_product_template_tags/) | 15.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Inventory app

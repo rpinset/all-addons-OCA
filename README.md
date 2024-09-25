@@ -184,16 +184,16 @@ Date:   Wed May 1 19:37:21 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit f5f1aaeb4bab54591cec236a00b843f14129a6b0
-Author: jans23 <jan@suhr.org>
-Date:   Wed Aug 28 18:20:02 2024 +0000
+commit b2b813ef05a59fdb7b8f82a58e06e148e3ea4d29
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 24 14:44:40 2024 +0000
 
-    Translated using Weblate (German)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (186 of 186 strings)
+    Currently translated at 100.0% (27 of 27 strings)
     
-    Translation: credit-control-15.0/credit-control-15.0-account_invoice_overdue_reminder
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_invoice_overdue_reminder/de/
+    Translation: credit-control-15.0/credit-control-15.0-partner_risk_insurance
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-partner_risk_insurance/it/
 
 
 ## data-protection
@@ -514,11 +514,16 @@ Date:   Mon Sep 9 06:35:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit e5a472d010d67035c81e9327d521e1496424b893
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Sep 14 18:26:24 2024 +0000
+commit 5ac6e052d103d23d39e7d6f850da24a3a54920a1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 23 06:50:17 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (29 of 29 strings)
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_sale
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_sale/it/
 
 
 ## margin-analysis
@@ -578,11 +583,16 @@ Date:   Sun Jul 14 10:52:17 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 51ddfaa03edd455729ce03800f6d9e177991b828
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 1 16:00:29 2024 +0000
+commit efd83639af845eea979f89eaa5bf3dd24fb2e4d8
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 23 14:43:08 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: hr-15.0/hr-15.0-passport_expiration
+    Translate-URL: https://translation.odoo-community.org/projects/hr-15-0/hr-15-0-passport_expiration/
 
 
 ## hr-attendance
@@ -966,9 +976,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 6fd1600c164ac00b88e39530059ccc8456550bcb
+commit b33930c403cde1b51e583a369fe09f0ba45011ec
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 19 21:43:26 2024 +0000
+Date:   Tue Sep 24 16:43:54 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1087,9 +1097,9 @@ Date:   Wed Sep 18 07:08:27 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit b75f12d1b3d6e6fce63590505f0b0561dd3175a8
+commit a87e9867ee53810997711a1b45da7b21f3e9940b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 18 15:02:40 2024 +0000
+Date:   Mon Sep 23 13:46:31 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1105,11 +1115,16 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 0e7f7c5f71d6693eb43b4cac0581ef9802911fe4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 27 09:22:49 2024 +0000
+commit 99369c195adc17ca38a67f77964e184c0dc04c8d
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 23 10:43:22 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_inventory_lockdown
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_inventory_lockdown/
 
 
 ## stock-logistics-reporting
@@ -1123,9 +1138,9 @@ Date:   Wed Jul 24 06:28:39 2024 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit be57fcde6182ba48dede748e7e00b0c45c6a6d9e
+commit f0cdf47b8c82e61bf5754e65be1a421bd5b773d2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 18 07:14:14 2024 +0000
+Date:   Mon Sep 23 13:07:06 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1234,16 +1249,11 @@ Date:   Wed Aug 7 10:18:19 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 16284aff671fcba7e66191b44716c4afccdea60f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 7 11:33:19 2024 +0000
+commit 6dc0923e2f2fc633d455a76f14988f1cc9013e99
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 23 17:24:03 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (13 of 13 strings)
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_logistics_uom
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_logistics_uom/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1476,16 +1486,16 @@ Date:   Wed May 1 19:05:30 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit ae3531af932ac4db01a0f4a2fddd31c8dbfe78da
+commit 0eab298119b7daa4260e23d6f4b77666d79def6a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:33:21 2024 +0000
+Date:   Mon Sep 23 13:08:22 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 55.5% (40 of 72 strings)
+    Currently translated at 65.8% (83 of 126 strings)
     
-    Translation: server-ux-15.0/server-ux-15.0-date_range
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-date_range/it/
+    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
 
 
 ## community-data-files
