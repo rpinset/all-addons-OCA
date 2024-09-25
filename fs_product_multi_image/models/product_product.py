@@ -50,7 +50,7 @@ class ProductProduct(models.Model):
                 lambda i: i._match_variant(variant)
             )
             variant_image_ids = variant_image_ids.sorted(
-                key=lambda i: (i.sequence, i.name)
+                key=lambda i: (i.sequence, i.name or "")
             )
             variant.variant_image_ids = variant_image_ids
 
