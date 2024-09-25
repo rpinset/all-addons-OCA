@@ -117,16 +117,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 234ab99e2941793cb8bd6db20dba2047097bf1eb
+commit df56baf16a5083bb78fe21418cf385f166ca2950
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 20 07:48:12 2024 +0000
+Date:   Mon Sep 23 13:15:01 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (10 of 10 strings)
+    Currently translated at 100.0% (39 of 39 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-purchase_stock_picking_return_invoicing
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-purchase_stock_picking_return_invoicing/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_supplierinfo_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_supplierinfo_update/it/
 
 
 ## account-fiscal-rule
@@ -201,9 +201,9 @@ Date:   Thu Aug 1 10:18:58 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 2c68d05aa2b764f4b0ef5cd5a38df707353fc2d5
+commit 305d0a2c245dedae2499802e04f9834a50f0634f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 29 07:42:59 2024 +0000
+Date:   Tue Sep 24 14:50:42 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -584,16 +584,16 @@ Date:   Fri Aug 23 09:27:07 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 4c8059720f2502e9886872e576600c135c61c60f
+commit 5af1e651a396b3dfca91cdf89efd05217fa45c07
 Author: Julie LeBrun <julie.lebrun@numigi.com>
-Date:   Fri Sep 20 21:19:26 2024 +0000
+Date:   Tue Sep 24 12:17:13 2024 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (512 of 512 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_delivery/fr/
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/fr/
 
 
 ## margin-analysis
@@ -658,16 +658,11 @@ Date:   Fri Aug 30 07:31:47 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 10ba00e632fcd114f2bd8c6d84a1f78c3a8d97fb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 30 11:32:03 2024 +0000
+commit a392345e018d3a02d92d620cbe81d49e224ba0fa
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 23 11:16:55 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: hr-12.0/hr-12.0-hr_employee_service
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_employee_service/it/
+    [BOT] post-merge updates
 
 
 ## connector-odoo2odoo
@@ -1151,16 +1146,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit be2f65a4cd913d1346cbbafcab279870cc7fe28c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 08:51:36 2024 +0000
+commit 7c021f369a484fbef02551a679dd17446020b71c
+Author: Julie LeBrun <julie.lebrun@numigi.com>
+Date:   Mon Sep 23 21:31:46 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (49 of 49 strings)
+    Currently translated at 100.0% (166 of 166 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_move_location
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_move_location/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_request/fr/
 
 
 ## stock-logistics-reporting
