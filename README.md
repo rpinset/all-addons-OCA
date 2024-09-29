@@ -80,11 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 8385f0d9067f0569691259ee63b84a7fdf401ee6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jun 23 21:21:50 2024 +0000
+commit 2c2eafd89dc9e8fa05ed5971ab0165bc4e1ecce9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Sep 28 14:43:14 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 29.9% (82 of 274 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -891,16 +896,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 8b149a0a24b638ddca399be332d2905d5cf8fcbe
+commit 5611e9962887151619091c3f35361bf1258ce20c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 4 07:23:18 2024 +0000
+Date:   Sat Sep 28 14:40:17 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (173 of 173 strings)
+    Currently translated at 100.0% (476 of 476 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_ddt
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_ddt/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
 
 
 ## l10n-japan
