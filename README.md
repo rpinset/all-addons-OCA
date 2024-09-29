@@ -78,9 +78,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ba0cc109d54ed9304be180809bf2ef8ab6c2b610
+commit ab72db410dc44fb809c3c87e3363effe19c489ff
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 6 13:09:51 2024 +0000
+Date:   Sat Sep 28 14:40:19 2024 +0000
 
     Translated using Weblate (Italian)
     
