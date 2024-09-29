@@ -4931,7 +4931,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 15.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 15.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 15.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 15.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 15.0.4.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 15.0.3.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5106,7 +5106,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.1.1 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.18.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.21.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 15.0.1.1.0 |  | Suministro Inmediato de Información de importaciones con DUA
@@ -5671,9 +5671,9 @@ addon | version | maintainers | summary
 [base_gs1_barcode](base_gs1_barcode/) | 15.0.1.0.0 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[stock_barcodes](stock_barcodes/) | 15.0.3.1.5 |  | It provides read barcode on stock operations.
+[stock_barcodes](stock_barcodes/) | 15.0.3.1.6 |  | It provides read barcode on stock operations.
 [stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.0.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
-[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.1.0 |  | It provides read GS1 barcode on stock operations.
+[stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.1.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
 [stock_barcodes_gs1_secondary_unit](stock_barcodes_gs1_secondary_unit/) | 15.0.1.0.2 |  | It provides read package from GS1 barcode stored into secondary unit data.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 15.0.1.0.1 |  | It provides read barcodes on stock operations from batch pickings.
@@ -5930,12 +5930,12 @@ addon | version | maintainers | summary
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 15.0.1.2.1 |  | Stock - Manual Quant Assignment
 [stock_quant_reservation_info](stock_quant_reservation_info/) | 15.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 15.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
-[stock_request](stock_request/) | 15.0.1.8.1 |  | Internal request for stock
+[stock_request](stock_request/) | 15.0.1.8.2 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 15.0.1.1.0 |  | Internal request for stock
 [stock_request_bom](stock_request_bom/) | 15.0.1.0.0 |  | Stock Request with BOM Integration
 [stock_request_kanban](stock_request_kanban/) | 15.0.1.1.2 |  | Adds a stock request order, and takes stock requests as lines
 [stock_request_mrp](stock_request_mrp/) | 15.0.1.3.0 |  | Manufacturing request for stock
-[stock_request_purchase](stock_request_purchase/) | 15.0.1.2.0 |  | Internal request for stock
+[stock_request_purchase](stock_request_purchase/) | 15.0.1.2.2 |  | Internal request for stock
 [stock_request_separate_picking](stock_request_separate_picking/) | 15.0.1.0.0 |  | Separate one picking per one stock request
 [stock_request_submit](stock_request_submit/) | 15.0.1.0.0 |  | Add submit state on Stock Requests
 [stock_request_tier_validation](stock_request_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Stock Requests to support a tier validation process.

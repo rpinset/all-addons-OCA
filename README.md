@@ -70,16 +70,16 @@ Date:   Wed May 1 17:43:19 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 48153fbc856bde0d2d0cfa6c692f2a6f0250df99
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Wed Sep 4 13:13:47 2024 +0000
+commit da6e620d6ee4706f0b7918fc8e339946ddf14e95
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Sep 28 14:40:31 2024 +0000
 
-    Translated using Weblate (Danish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 72.2% (13 of 18 strings)
+    Currently translated at 26.7% (71 of 265 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_move_name_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_move_name_sequence/da/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -949,9 +949,9 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit c8b20e388ec3d829ca2c0f21fefaa4e51be24142
+commit 0230392edae554fa2151f9af422bc16decdcc4b6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 13 13:37:34 2024 +0000
+Date:   Sun Sep 29 05:31:04 2024 +0000
 
     [BOT] post-merge updates
 
@@ -976,9 +976,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit b33930c403cde1b51e583a369fe09f0ba45011ec
+commit 7ca538c961f8b3e13bd0272f0cbcd4682e149ef0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 24 16:43:54 2024 +0000
+Date:   Sat Sep 28 21:15:56 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1083,16 +1083,11 @@ Date:   Mon Aug 5 10:17:07 2024 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 66827936b7b29ac2c735d7119bc2eafcd25dc2b1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 18 07:08:27 2024 +0000
+commit 27bbfba7b5981c49ef6e2748927ff52494f1e2f9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 27 14:45:39 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 83.5% (248 of 297 strings)
-    
-    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
@@ -1115,16 +1110,11 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 99369c195adc17ca38a67f77964e184c0dc04c8d
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 23 10:43:22 2024 +0000
+commit f5570eb6cef36204a760397968341ebab90055a6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 27 13:39:46 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_inventory_lockdown
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_inventory_lockdown/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
