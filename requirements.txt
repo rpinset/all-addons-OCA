@@ -70,6 +70,9 @@ factur-x
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
+# generated from manifests external_dependencies
+geojson
+shapely
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 # generated from manifests external_dependencies
