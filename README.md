@@ -75,16 +75,16 @@ Date:   Wed May 1 17:43:10 2024 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit d0d8002beaf336a9e0da474e58486d903279802f
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Sep 11 11:17:55 2024 +0000
+commit 3965985dd74ccae0ae35801be0025b43bf83916d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Sep 28 14:40:48 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 28.7% (75 of 261 strings)
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_move_name_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_move_name_sequence/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -544,9 +544,9 @@ Date:   Fri Aug 16 00:50:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit f00132bb6254713ce5871c03f57a7db77bab8b0a
+commit 94addaf1df233ce418a6cb8c2001d705e341c558
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 24 09:13:56 2024 +0000
+Date:   Sun Sep 29 15:41:56 2024 +0000
 
     [BOT] post-merge updates
 
@@ -850,14 +850,11 @@ Date:   Wed May 1 18:24:37 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit b50587e34c9c9e25142f0e824c0a8ae9dc42df47
-Merge: ea7d97af ef2ea666
+commit 38f68dff25d9c81b944f0687f45366417416a58b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 13 06:16:27 2024 +0000
+Date:   Sun Sep 29 12:38:49 2024 +0000
 
-    Merge PR #566 into 14.0
-    
-    Signed-off-by alexis-via
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -916,11 +913,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 15104892d944b0dc1df4a268efc75933ed1f1a22
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 17 13:04:24 2024 +0000
+commit 6aa9848fccec36823ffc96f57043a7b20c82d347
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Sep 28 14:40:25 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (452 of 452 strings)
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-assets_management
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-assets_management/it/
 
 
 ## l10n-japan
@@ -1504,16 +1506,11 @@ Date:   Thu Sep 12 07:36:50 2024 +0000
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 9db53ad92a87f23666377465879f472ad4b34df0
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jun 28 06:27:59 2024 +0000
+commit e829db4243b211a5c15ca763d7ccfb5c71dfa64e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 26 13:18:11 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: server-env-14.0/server-env-14.0-auth_saml_environment
-    Translate-URL: https://translation.odoo-community.org/projects/server-env-14-0/server-env-14-0-auth_saml_environment/
+    [BOT] post-merge updates
 
 
 ## server-backend

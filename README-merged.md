@@ -2787,7 +2787,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_einvoice_generate](account_einvoice_generate/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Technical module to generate PDF invoices with embedded XML file
-[account_invoice_download](account_invoice_download/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-download supplier invoices and import them
+[account_invoice_download](account_invoice_download/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-download supplier invoices and import them
 [account_invoice_download_ovh](account_invoice_download_ovh/) | 14.0.1.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Get OVH Invoice via the API
 [account_invoice_download_scaleway](account_invoice_download_scaleway/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Get Scaleway Invoices via the API
 [account_invoice_export](account_invoice_export/) | 14.0.1.2.5 |  | Account Invoice Export
@@ -4378,8 +4378,8 @@ addon | version | maintainers | summary
 [l10n_fr_account_vat_return_selenium](l10n_fr_account_vat_return_selenium/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Autofill CA3 on impots.gouv.fr via Selenium IDE
 [l10n_fr_account_vat_return_teledec](l10n_fr_account_vat_return_teledec/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Teletransmit CA3 via Teledec.fr (subscription required)
 [l10n_fr_business_document_import](l10n_fr_business_document_import/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adapt the module base_business_document_import for France
-[l10n_fr_chorus_account](l10n_fr_chorus_account/) | 14.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
-[l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant Factur-X invoices
+[l10n_fr_chorus_account](l10n_fr_chorus_account/) | 14.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
+[l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 14.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant Factur-X invoices
 [l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Set public market on sale orders
 [l10n_fr_cog](l10n_fr_cog/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Code Officiel Géographique (COG) on countries
 [l10n_fr_das2](l10n_fr_das2/) | 14.0.3.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
@@ -8473,6 +8473,7 @@ addon | version | maintainers | summary
 [auth_saml_environment](auth_saml_environment/) | 14.0.1.0.1 |  | Allows system administrator to authenticate with any account
 [data_encryption](data_encryption/) | 14.0.1.0.0 |  | Store accounts and credentials encrypted by environment
 [mail_environment](mail_environment/) | 14.0.1.0.1 |  | Configure mail servers with server_environment_files
+[mail_environment_google_gmail](mail_environment_google_gmail/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Configure Gmail mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 14.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
 [payment_environment](payment_environment/) | 14.0.1.0.2 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Configure payment acquirers with server_environment
 [server_environment](server_environment/) | 14.0.2.2.3 |  | move some configurations out of the database
