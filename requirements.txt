@@ -374,6 +374,8 @@ ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)
 # From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
 # From [https://github.com/OCA/vertical-education.git](https://github.com/OCA/vertical-education.git)
