@@ -217,6 +217,7 @@ python-stdnum
 # generated from manifests external_dependencies
 roulier
 unidecode
+zeep
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 # generated from manifests external_dependencies
 python-barcode
