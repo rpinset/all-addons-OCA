@@ -52,16 +52,11 @@ Date:   Wed Sep 11 06:37:33 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 22b51011a754a923bdafed30ccd0ee68e2679f31
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 22 06:25:03 2024 +0000
+commit 7cb28fd48a24cead5b9fd0ecff00e3f537ae3dee
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Sep 29 22:08:24 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 4.5% (5 of 111 strings)
-    
-    Translation: account-closing-14.0/account-closing-14.0-account_multicurrency_revaluation
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_multicurrency_revaluation/it/
+    [BOT] post-merge updates
 
 
 ## account-consolidation
@@ -850,9 +845,9 @@ Date:   Wed May 1 18:24:37 2024 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 38f68dff25d9c81b944f0687f45366417416a58b
+commit c154195b42d38888e2bbe7c7c5589bb443cfe8a6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 29 12:38:49 2024 +0000
+Date:   Mon Sep 30 09:07:49 2024 +0000
 
     [BOT] post-merge updates
 
@@ -913,16 +908,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 6aa9848fccec36823ffc96f57043a7b20c82d347
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Sep 28 14:40:25 2024 +0000
+commit a1861824ae55fa5a5756ddb905570cb2b14afa70
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 30 15:13:53 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (452 of 452 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-assets_management
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-assets_management/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1008,14 +998,11 @@ Date:   Wed May 1 18:31:50 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit c9bcecca9e9669183e64a53b8a42abad4b828612
-Merge: e1a24fe9 81cda5b0
-Author: Dorin Hongu <dhongu@gmail.com>
-Date:   Wed Aug 14 12:33:04 2024 +0300
+commit 004fd9b4ab2411eae47cbb8f12079fbb8bd83cda
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Oct 1 15:07:10 2024 +0000
 
-    Merge pull request #1034 from terrabit-ro/14.0-message-spv
-    
-    [14.0][FIX] account ed ubl: fix parametru filter mesaje spv
+    [UPD] README.rst
 
 
 ## l10n-russia
@@ -1151,9 +1138,9 @@ Date:   Thu Sep 19 21:50:02 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 5cfaae6df74eced84323957c1da14ce68ba3f82b
+commit c8a1a769d69d252621cbdfd89bf693fdfdcc9447
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 18 16:15:41 2024 +0000
+Date:   Mon Sep 30 10:35:44 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1169,16 +1156,11 @@ Date:   Wed May 1 19:11:30 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7b0d6a2d8e837f1271d74c2aa6592013d36215b6
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Sep 25 12:03:52 2024 +0000
+commit 93c5fe2ed683705b1b5efae62bba3ff0053a255f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 30 14:42:06 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1220,16 +1202,11 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 93a80ede59c45b54d4641a92ef8a5cdd019e121c
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Sep 19 18:43:04 2024 +0000
+commit c406820dd1e605ba36058b630834624c2614fd39
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 30 14:15:52 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: wms-14.0/wms-14.0-stock_service_level
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_service_level/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1670,11 +1647,16 @@ Date:   Fri Oct 27 21:13:52 2023 +0200
 
 ## vertical-construction
 From [https://github.com/OCA/vertical-construction.git](https://github.com/OCA/vertical-construction.git)
-commit c5dfbd143bc12d2a3999d3825900953ec26e9a58
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 27 21:34:13 2023 +0200
+commit ac4c1f14518c608c9eb34adfcd67d6105a1b6465
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 30 14:39:07 2024 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: vertical-construction-14.0/vertical-construction-14.0-bc3_importer
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-construction-14-0/vertical-construction-14-0-bc3_importer/
 
 
 ## vertical-realestate

@@ -163,6 +163,20 @@ class AccountEdiXmlCIUSRO(models.Model):
             "customization_id"
         ] = "urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1"
         index = 1
+        vals_list["main_template"] = "account_edi_ubl_cii.ubl_20_Invoice"
+        vals_list["vals"]["invoice_type_code"] = 380
+        point_of_sale = (
+            self.env["ir.module.module"]
+            .sudo()
+            .search(
+                [("name", "=", "point_of_sale"), ("state", "=", "installed")], limit=1
+            )
+        )
+        if point_of_sale:
+            if invoice.pos_order_ids:
+                vals_list["vals"]["invoice_type_code"] = 751
+        if vals_list["vals"].get("credit_note_type_code"):
+            vals_list["vals"].pop("credit_note_type_code")
         for val in vals_list["vals"]["invoice_line_vals"]:
             val["id"] = index
             index += 1
@@ -187,7 +201,6 @@ class AccountEdiXmlCIUSRO(models.Model):
                 vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"] = (
                     -1
                 ) * vals_list["vals"]["legal_monetary_total_vals"]["payable_amount"]
-
         return vals_list
 
     def _export_invoice_constraints(self, invoice, vals):

@@ -150,7 +150,7 @@ addon | version | maintainers | summary
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 14.0.1.0.3 |  | Generic fiscal year closing wizard
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 [account_invoice_start_end_dates_move](account_invoice_start_end_dates_move/) | 14.0.1.0.0 |  | Add the possibility to choose start and end dates on account invoice.
-[account_move_cutoff](account_move_cutoff/) | 14.0.0.0.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Account move Cut-offs, manage Deferred Revenues/Expenses
+[account_move_cutoff](account_move_cutoff/) | 14.0.0.0.2 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Account move Cut-offs, manage Deferred Revenues/Expenses
 [account_multicurrency_revaluation](account_multicurrency_revaluation/) | 14.0.2.0.2 |  | Manage revaluation for multicurrency environment
 
 [//]: # (end addons)
@@ -4392,7 +4392,7 @@ addon | version | maintainers | summary
 [l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 14.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DEB (Déclaration d'Échange de Biens) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_mis_reports](l10n_fr_mis_reports/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | MIS Report templates for the French P&L and Balance Sheets
-[l10n_fr_oca](l10n_fr_oca/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Fork of l10n_fr: fewer taxes, ready for OCA VAT return for France
+[l10n_fr_oca](l10n_fr_oca/) | 14.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Fork of l10n_fr: fewer taxes, ready for OCA VAT return for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_pos_cert_allow_change_qty](l10n_fr_pos_cert_allow_change_qty/) | 14.0.1.0.1 |  | Remove restriction on change quantity
 [l10n_fr_siret](l10n_fr_siret/) | 14.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
@@ -4715,7 +4715,7 @@ addon | version | maintainers | summary
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 14.0.1.0.2 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
-[l10n_it_account](l10n_it_account/) | 14.0.1.4.1 |  | Modulo base usato come dipendenza di altri moduli contabili
+[l10n_it_account](l10n_it_account/) | 14.0.1.4.2 |  | Modulo base usato come dipendenza di altri moduli contabili
 [l10n_it_account_balance_eu](l10n_it_account_balance_eu/) | 14.0.1.0.1 | [![mktsrl](https://github.com/mktsrl.png?size=30px)](https://github.com/mktsrl) | ITA - Bilancio UE con XBRL
 [l10n_it_account_stamp](l10n_it_account_stamp/) | 14.0.1.1.4 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 14.0.1.1.1 |  | Gestione natura delle aliquote IVA
@@ -4778,6 +4778,7 @@ addon | version | maintainers | summary
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 14.0.1.0.2 |  | ITA - Esigibilità IVA
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 14.0.1.1.0 |  | ITA - Registri IVA
 [l10n_it_vat_registries_split_payment](l10n_it_vat_registries_split_payment/) | 14.0.1.1.1 |  | Modulo di congiunzione tra registri IVA e scissione dei pagamenti
+[l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 14.0.1.0.0 |  | Settlement date for VAT Statement
 [l10n_it_vat_statement_communication](l10n_it_vat_statement_communication/) | 14.0.1.0.2 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
 [l10n_it_vat_statement_split_payment](l10n_it_vat_statement_split_payment/) | 14.0.1.0.2 |  | Migliora la liquidazione dell'IVA tenendo in considerazione la scissione dei pagamenti
 [l10n_it_website_portal_fatturapa](l10n_it_website_portal_fatturapa/) | 14.0.1.0.0 |  | Add fatturapa fields and checks in frontend user's details
@@ -5227,7 +5228,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
 [l10n_ro_account](l10n_ro_account/) | 14.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.18.1 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 14.0.1.19.1 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 14.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
@@ -5235,7 +5236,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 14.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 14.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 14.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.33.4 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 14.0.1.34.4 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 14.0.3.3.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 14.0.3.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 14.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -6167,11 +6168,12 @@ addon | version | maintainers | summary
 [stock_picking_warn_message](stock_picking_warn_message/) | 14.0.2.0.0 |  | Add a popup warning on picking to ensure warning is populated
 [stock_production_lot_active](stock_production_lot_active/) | 14.0.1.0.1 | [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | Allow to archive/unarchive a lot.
 [stock_push_delay](stock_push_delay/) | 14.0.1.0.1 |  | Manual evaluation of Push rules
-[stock_putaway_by_route](stock_putaway_by_route/) | 14.0.1.0.0 |  | Add a match by route on putaway, after product and categories
+[stock_putaway_by_route](stock_putaway_by_route/) | 14.0.1.1.0 |  | Add a match by route on putaway, after product and categories
 [stock_putaway_hook](stock_putaway_hook/) | 14.0.1.0.0 |  | Add hooks allowing modules to add more putaway strategies
 [stock_quant_package_dimension](stock_quant_package_dimension/) | 14.0.2.2.0 |  | Use dimensions on packages
 [stock_quant_package_dimension_total_weight_from_packaging](stock_quant_package_dimension_total_weight_from_packaging/) | 14.0.1.1.0 |  | Estimated weight of a package
 [stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 14.0.1.1.0 |  | Use product packagings on packages
+[stock_restrict_expiration_date](stock_restrict_expiration_date/) | 14.0.1.3.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Add concept of restrict lot on stock move based on specific expiration date
 [stock_restrict_lot](stock_restrict_lot/) | 14.0.1.3.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_restrict_lot_update](stock_restrict_lot_update/) | 14.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Only apply lot restriction on products in a domain
 [stock_return_request](stock_return_request/) | 14.0.1.0.3 |  | Stock Return Request
@@ -6317,7 +6319,7 @@ addon | version | maintainers | summary
 [stock_location_position](stock_location_position/) | 14.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_route_description](stock_location_route_description/) | 14.0.1.0.0 |  | Add description field on stock routes.
 [stock_location_tray](stock_location_tray/) | 14.0.1.1.3 |  | Organize a location as a matrix of cells
-[stock_location_warehouse](stock_location_warehouse/) | 14.0.1.0.0 |  | Warehouse associated with a location
+[stock_location_warehouse](stock_location_warehouse/) | 14.0.1.1.0 |  | Warehouse associated with a location
 [stock_location_zone](stock_location_zone/) | 14.0.1.0.0 |  | Classify locations with zones.
 [stock_measuring_device](stock_measuring_device/) | 14.0.1.0.1 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Implement a common interface for measuring and weighing devices
 [stock_measuring_device_zippcube](stock_measuring_device_zippcube/) | 14.0.1.0.1 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) | Implement interface with Bosche Zippcube devicesfor packaging measurement
@@ -6341,7 +6343,7 @@ addon | version | maintainers | summary
 [stock_picking_cancel_confirm](stock_picking_cancel_confirm/) | 14.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Stock Picking Cancel Confirm
 [stock_picking_procure_method](stock_picking_procure_method/) | 14.0.1.0.0 |  | Allows to force the procurement method from the picking
 [stock_picking_show_linked](stock_picking_show_linked/) | 14.0.1.0.2 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
-[stock_picking_volume](stock_picking_volume/) | 14.0.1.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
+[stock_picking_volume](stock_picking_volume/) | 14.0.1.1.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 14.0.1.1.0 |  | Use volume information on potential product packaging to compute the volume of a stock.move
 [stock_procurement_group_hook](stock_procurement_group_hook/) | 14.0.1.0.0 |  | Adds Hook to Procurement Group run method.
 [stock_product_qty_by_packaging](stock_product_qty_by_packaging/) | 14.0.1.0.0 |  | Compute product quantity to pick by packaging
@@ -6653,6 +6655,7 @@ addon | version | maintainers | summary
 [stock_reception_screen_qty_by_packaging](stock_reception_screen_qty_by_packaging/) | 14.0.1.1.0 |  | Glue module for `stock_product_qty_by_packaging` and `stock_vertical_lift`.
 [stock_release_channel](stock_release_channel/) | 14.0.2.3.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
 [stock_service_level](stock_service_level/) | 14.0.1.0.1 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Manage stock route by service level
+[stock_service_level_route](stock_service_level_route/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Manage stock rules/routes by service level
 [stock_storage_type](stock_storage_type/) | 14.0.1.12.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Manage packages and locations storage types
 [stock_storage_type_buffer](stock_storage_type_buffer/) | 14.0.1.3.0 |  | Exclude storage locations from put-away if their buffer is full
 [stock_storage_type_putaway_abc](stock_storage_type_putaway_abc/) | 14.0.1.0.0 |  | Advanced storage strategy ABC for WMS
@@ -9280,7 +9283,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[bc3_importer](bc3_importer/) | 14.0.1.0.0 |  | BC3 files importer
 
 [//]: # (end addons)
 
