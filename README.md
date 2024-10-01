@@ -222,16 +222,16 @@ Date:   Mon Oct 9 23:08:50 2023 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 4191f6983c661ffa1d9cc93de09d40199c2d1cb6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 31 09:42:59 2024 +0000
+commit d481e02192b51a195497adecb0992c38f84c6c38
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Tue Oct 1 07:21:25 2024 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 32.7% (56 of 171 strings)
+    Currently translated at 11.1% (19 of 171 strings)
     
     Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/it/
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/fr/
 
 
 ## account-reconcile
