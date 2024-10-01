@@ -345,6 +345,9 @@ python-dateutil
 # From [https://github.com/OCA/vertical-medical.git](https://github.com/OCA/vertical-medical.git)
 # From [https://github.com/OCA/vertical-ngo.git](https://github.com/OCA/vertical-ngo.git)
 # From [https://github.com/OCA/vertical-construction.git](https://github.com/OCA/vertical-construction.git)
+# generated from manifests external_dependencies
+chardet
+iteration_utilities
 # From [https://github.com/OCA/vertical-realestate.git](https://github.com/OCA/vertical-realestate.git)
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)

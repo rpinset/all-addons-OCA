@@ -107,16 +107,11 @@ Date:   Tue May 7 13:23:06 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 83f96e5dd7f0ce31702eaeca000c934297f6def3
-Author: loida-vm <loida@moduon.team>
-Date:   Thu Sep 12 10:57:02 2024 +0000
+commit 9f52be992038eacce8d9129f879b555c7daae886
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 30 14:31:01 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (30 of 30 strings)
-    
-    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_transmit_method
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_transmit_method/es/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -271,9 +266,9 @@ Date:   Wed May 1 17:56:32 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 34a58bc00b09a9be036650036f9c01a7ab2fc65b
+commit 7c51fcb2e31279aa1887641f2d3d47fdd5d98387
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 25 08:46:21 2024 +0000
+Date:   Sun Sep 29 22:41:01 2024 +0000
 
     [BOT] post-merge updates
 
@@ -949,9 +944,9 @@ Date:   Wed May 1 18:31:59 2024 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 0230392edae554fa2151f9af422bc16decdcc4b6
+commit 572a546387c3554beb562351b2b93406ae8a63ad
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 29 05:31:04 2024 +0000
+Date:   Tue Oct 1 15:27:49 2024 +0000
 
     [BOT] post-merge updates
 
@@ -976,9 +971,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 7ca538c961f8b3e13bd0272f0cbcd4682e149ef0
+commit d9d5e500a58d3db1e9b3d70367416cfea8bebb7a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Sep 28 21:15:56 2024 +0000
+Date:   Mon Sep 30 10:27:26 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1622,11 +1617,16 @@ Date:   Fri Oct 27 22:57:27 2023 +0200
 
 ## vertical-construction
 From [https://github.com/OCA/vertical-construction.git](https://github.com/OCA/vertical-construction.git)
-commit 127e57cd60bf01198023a0237382049fd6e60a69
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Oct 27 23:14:47 2023 +0200
+commit 0cf04755e46a7a554d08169109de399516d5bdc7
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 30 18:39:01 2024 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: vertical-construction-15.0/vertical-construction-15.0-bc3_importer
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-construction-15-0/vertical-construction-15-0-bc3_importer/
 
 
 ## vertical-realestate
