@@ -24,7 +24,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_analytic_account_tag](account_analytic_account_tag/) | 16.0.1.0.0 |  | Restore the tag_ids in account.analytic.account
-[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 16.0.2.3.0 |  | Account analytic distribution manual
+[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 16.0.2.4.0 |  | Account analytic distribution manual
+[account_analytic_organization](account_analytic_organization/) | 16.0.1.0.0 |  | Adds organization field on the partner so you can use it on your analytic
 [account_analytic_parent](account_analytic_parent/) | 16.0.1.0.1 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 16.0.1.0.1 |  | Account Analytic Required
 [account_analytic_root](account_analytic_root/) | 16.0.1.0.0 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Compute the Root Analytic Account
@@ -713,6 +714,7 @@ It features the following key characteristics:
 
 Here are some presentations:
 
+- OCA Days 2020 ([video](https://www.youtube.com/watch?v=45FXd8XM5m8))
 - Odoo Experience 2017 ([slides](https://www.slideshare.net/acsone/budget-control-with-misbuilder-3-2017), [video](https://youtu.be/0PpxGAf2l-0))
 - Odoo Experience 2016 ([slides](https://www.slideshare.net/acsone/misbuilder-2016))
 - Odoo Experience 2015 ([slides](https://www.slideshare.net/acsone/misbuilder))
@@ -997,7 +999,7 @@ addon | version | maintainers | summary
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_reconcile_oca](account_reconcile_oca/) | 16.0.2.0.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
-[account_statement_base](account_statement_base/) | 16.0.1.10.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
+[account_statement_base](account_statement_base/) | 16.0.1.12.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
 [//]: # (end addons)
@@ -1887,6 +1889,7 @@ addon | version | maintainers | summary
 [sale_stock_product_recommendation](sale_stock_product_recommendation/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display stock info when recommending products to sell
 [sale_substate](sale_substate/) | 16.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
+[sale_transaction_form_link](sale_transaction_form_link/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to display a link to payment transactions on Sale Order form view.
 [sale_triple_discount](sale_triple_discount/) | 16.0.1.0.3 |  | Manage triple discount on sale order lines
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 16.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Automatically cancel quotations after validity period.
 [sale_wishlist](sale_wishlist/) | 16.0.1.0.0 |  | Handle sale wishlist for partners
@@ -4439,12 +4442,13 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 16.0.1.2.6 |  | Allow to create the 'VAT Statement'.
 [currency_rate_update_boi](currency_rate_update_boi/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
+[fiscal_epos_print](fiscal_epos_print/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 16.0.1.0.1 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
 [l10n_it_account](l10n_it_account/) | 16.0.1.1.1 |  | Modulo base usato come dipendenza di altri moduli contabili
 [l10n_it_account_stamp](l10n_it_account_stamp/) | 16.0.1.1.0 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 16.0.1.0.1 |  | Gestione natura delle aliquote IVA
 [l10n_it_appointment_code](l10n_it_appointment_code/) | 16.0.1.0.0 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
-[l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.0.1 |  | Gestione Cespiti
+[l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.2.0 |  | Gestione Cespiti
 [l10n_it_ateco](l10n_it_ateco/) | 16.0.1.1.1 |  | ITA - Codici Ateco
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.5 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
@@ -4458,10 +4462,10 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 16.0.1.2.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip_in_rc](l10n_it_fatturapa_import_zip_in_rc/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Importare fatture elettroniche con inversione contabile da un file ZIP.
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.3.0 |  | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.3.1 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.4.0 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.4.1 |  | Emissione fatture elettroniche
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.2 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 16.0.1.0.2 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
@@ -4478,14 +4482,14 @@ addon | version | maintainers | summary
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 16.0.1.0.3 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Mostra il codice fiscale del cliente nella stampa del preventivo
 [l10n_it_intrastat](l10n_it_intrastat/) | 16.0.1.1.3 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
-[l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 16.0.1.1.0 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
+[l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 16.0.1.2.0 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_ipa](l10n_it_ipa/) | 16.0.1.0.1 |  | ITA - Codice IPA
 [l10n_it_payment_reason](l10n_it_payment_reason/) | 16.0.1.0.0 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
 [l10n_it_pec](l10n_it_pec/) | 16.0.1.0.0 |  | Aggiunge il campo email PEC al partner
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 16.0.1.0.0 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 16.0.1.0.4 |  | Inversione contabile
-[l10n_it_riba](l10n_it_riba/) | 16.0.1.6.3 |  | Ricevute bancarie
+[l10n_it_riba](l10n_it_riba/) | 16.0.1.7.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 16.0.1.0.0 |  | Scissione pagamenti
@@ -4967,7 +4971,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 16.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
 [l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 16.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 16.0.1.69.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
+[l10n_ro_account_edi_ubl](l10n_ro_account_edi_ubl/) | 16.0.1.70.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - eFactura - Account EDI UBL
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 16.0.1.2.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
 [l10n_ro_account_period_close](l10n_ro_account_period_close/) | 16.0.3.7.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 16.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
@@ -6253,23 +6257,23 @@ addon | version | maintainers | summary
 [sale_stock_available_to_promise_release_block](sale_stock_available_to_promise_release_block/) | 16.0.1.0.0 |  | Block release of deliveries from sales orders.
 [sale_stock_release_channel_partner_by_date](sale_stock_release_channel_partner_by_date/) | 16.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Release channels integration with Sales
 [sale_stock_release_channel_partner_by_date_delivery](sale_stock_release_channel_partner_by_date_delivery/) | 16.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Filters channels on sales based on selected carrier.
-[shopfloor](shopfloor/) | 16.0.2.1.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
+[shopfloor](shopfloor/) | 16.0.2.2.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | manage warehouse operations with barcode scanners
 [shopfloor_base](shopfloor_base/) | 16.0.1.1.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Core module for creating mobile apps
-[shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 16.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking
+[shopfloor_batch_automatic_creation](shopfloor_batch_automatic_creation/) | 16.0.1.1.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Create batch transfers for Cluster Picking
 [shopfloor_mobile](shopfloor_mobile/) | 16.0.1.2.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
 [shopfloor_workstation_mobile](shopfloor_workstation_mobile/) | 16.0.1.0.0 |  | Shopfloor mobile app integration for workstation
-[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.2.4 |  | Release Operations based on available to promise
+[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.4.0 |  | Release Operations based on available to promise
 [stock_available_to_promise_release_block](stock_available_to_promise_release_block/) | 16.0.1.1.1 |  | Block Release of Operations
 [stock_available_to_promise_release_exclude_location](stock_available_to_promise_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from available stock
 [stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.2 |  | Dynamic routing of stock moves
 [stock_picking_batch_creation](stock_picking_batch_creation/) | 16.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Create a batch of pickings to be processed all together
 [stock_picking_completion_info](stock_picking_completion_info/) | 16.0.1.0.1 |  | Display on current document completion information according to next operations
 [stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 16.0.1.0.0 |  | Define different shipping policies according to picking type
-[stock_release_channel](stock_release_channel/) | 16.0.2.17.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
+[stock_release_channel](stock_release_channel/) | 16.0.2.18.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Manage workload in WMS with release channels
 [stock_release_channel_auto_release](stock_release_channel_auto_release/) | 16.0.1.1.0 |  | Add an automatic release mode to the release channel
 [stock_release_channel_batch_mode_commercial_partner](stock_release_channel_batch_mode_commercial_partner/) | 16.0.1.0.2 |  | Release pickings into channels by batch of same commercial entity
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.0.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add the cutoff time to the release channel
@@ -6283,6 +6287,7 @@ addon | version | maintainers | summary
 [stock_release_channel_process_end_time](stock_release_channel_process_end_time/) | 16.0.1.7.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
 [stock_release_channel_propagate_channel_picking](stock_release_channel_propagate_channel_picking/) | 16.0.1.2.0 |  | Allows to propagate the channel to every picking that is created from the original one.
 [stock_release_channel_shipment_advice](stock_release_channel_shipment_advice/) | 16.0.1.2.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Plan shipment advices for ready and released pickings
+[stock_release_channel_shipment_advice_deliver](stock_release_channel_shipment_advice_deliver/) | 16.0.1.1.0 |  | This module adds an action to the release channel to automate the delivery of its shippings.
 [stock_release_channel_shipment_advice_process_end_time](stock_release_channel_shipment_advice_process_end_time/) | 16.0.1.0.0 |  | This module allows to set a delay time (in minutes) between the release channel process end time and the shipment advice arrival to the dock time.
 [stock_release_channel_shipment_advice_toursolver](stock_release_channel_shipment_advice_toursolver/) | 16.0.1.0.1 |  | Use TourSolver to plan shipment advices for ready and released pickings
 [stock_release_channel_shipment_lead_time](stock_release_channel_shipment_lead_time/) | 16.0.1.3.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Release channel with shipment lead time
@@ -6787,7 +6792,7 @@ addon | version | maintainers | summary
 [product_code_regex_validation](product_code_regex_validation/) | 16.0.1.0.0 |  | Configure regEx validation for product codes.
 [product_code_unique](product_code_unique/) | 16.0.1.0.1 |  | Set Product Internal Reference as Unique
 [product_company_default](product_company_default/) | 16.0.1.0.0 |  | Product Company Default
-[product_cost_security](product_cost_security/) | 16.0.2.2.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Product cost security restriction view
+[product_cost_security](product_cost_security/) | 16.0.2.3.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Product cost security restriction view
 [product_country_restriction](product_country_restriction/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define product restrictions country based
 [product_dimension](product_dimension/) | 16.0.1.2.0 |  | Product Dimension
 [product_expiry_configurable](product_expiry_configurable/) | 16.0.1.0.0 |  | This model allows setting expiry times on category and to use the 'end_of_life' date for the computation of lot dates
@@ -6990,6 +6995,7 @@ addon | version | maintainers | summary
 [product_pack](product_pack/) | 16.0.1.1.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to set a product as a Pack
 [purchase_product_pack](purchase_product_pack/) | 16.0.1.0.0 |  | This module allows you to buy product packs
 [sale_product_pack](sale_product_pack/) | 16.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to sell product packs
+[sale_stock_product_pack](sale_stock_product_pack/) | 16.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Compatibility module for packs that are storable products
 [stock_product_pack](stock_product_pack/) | 16.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to get the right available quantities of the packs
 [website_sale_product_pack](website_sale_product_pack/) | 16.0.1.0.0 |  | Compatibility module of product pack with e-commerce
 
@@ -7116,7 +7122,7 @@ addon | version | maintainers | summary
 [project_task_stage_mgmt](project_task_stage_mgmt/) | 16.0.1.0.0 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Allows to assign and create task stages on project creation wizard
 [project_task_stage_state](project_task_stage_state/) | 16.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
 [project_template](project_template/) | 16.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Templates
-[project_timeline](project_timeline/) | 16.0.1.4.1 |  | Timeline view for projects
+[project_timeline](project_timeline/) | 16.0.2.0.0 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 16.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 16.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 16.0.1.0.1 |  | Project Types
@@ -8834,7 +8840,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[bc3_importer](bc3_importer/) | 16.0.1.0.0 |  | BC3 files importer
 
 [//]: # (end addons)
 
@@ -9011,7 +9021,7 @@ addon | version | maintainers | summary
 [web_apply_field_style](web_apply_field_style/) | 16.0.1.0.1 |  | Apply css class style to fields from a dict parameters
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 16.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
 [web_chatter_position](web_chatter_position/) | 16.0.1.0.2 |  | Add an option to change the chatter position
-[web_company_color](web_company_color/) | 16.0.1.2.2 |  | Web Company Color
+[web_company_color](web_company_color/) | 16.0.1.2.3 |  | Web Company Color
 [web_copy_confirm](web_copy_confirm/) | 16.0.1.0.0 |  | Show confirmation dialogue before copying records
 [web_dark_mode](web_dark_mode/) | 16.0.1.0.2 |  | Enabled Dark Mode for the Odoo Backend
 [web_dashboard_tile](web_dashboard_tile/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Overview Dashboards with Tiles

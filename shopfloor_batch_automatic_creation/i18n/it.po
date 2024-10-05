@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-14 18:34+0000\n"
+"PO-Revision-Date: 2024-10-05 17:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid ""
+"<code>line</code>: The stock move line Record for with the key must be "
+"computed."
+msgstr ""
+"<code>riga</code>: è necessario calcolare il record di riga di movimento di "
+"magazzino per la chiave."
+
+#. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid "<code>super</code>: The initial method to compute the key."
+msgstr "<code>super</code>: il metodo iniziale per calcolare la chiave."
 
 #. module: shopfloor_batch_automatic_creation
 #: model:ir.model.fields,field_description:shopfloor_batch_automatic_creation.field_shopfloor_menu__batch_create
@@ -27,9 +41,9 @@ msgid ""
 "Automatically create a batch when an operator uses the \"Get Work\" button "
 "and no existing batch has been found. The system will first look for "
 "priority transfers and fill up the batch till the defined constraints (max "
-"of transfers, volume, weight, ...). It never mixes priorities, so if you get"
-" 2 available priority transfers and a max quantity of 3, the batch will only"
-" contain the 2 priority transfers."
+"of transfers, volume, weight, ...). It never mixes priorities, so if you get "
+"2 available priority transfers and a max quantity of 3, the batch will only "
+"contain the 2 priority transfers."
 msgstr ""
 "Crea automaticamente un gruppo quando l'operatore utilizza il pulsante "
 "\"Inizia un lavoro\" e non sono stati trovati gruppi. Il sistema "
@@ -43,6 +57,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.shopfloor_menu_form_view
 msgid "Batch Creation"
 msgstr "Creazione gruppo"
+
+#. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid "Custom code to construct the key to sort move lines"
+msgstr ""
+"Codice personalizzato per costruire la chiave per ordinare le righe movimento"
 
 #. module: shopfloor_batch_automatic_creation
 #: model:ir.model.fields,field_description:shopfloor_batch_automatic_creation.field_shopfloor_menu__stock_device_type_ids
@@ -71,6 +91,16 @@ msgstr ""
 "Questo potrebbe mischiare le priorità e ignorare i vincoli da applicare."
 
 #. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid "Leave blank to use the default method."
+msgstr "Lasciare vuoto per usare il metodo predefinito."
+
+#. module: shopfloor_batch_automatic_creation
+#: model:ir.model.fields,field_description:shopfloor_batch_automatic_creation.field_stock_device_type__line_sort_key_code
+msgid "Line sort key method"
+msgstr "Metodo chiave di ordinamento della riga"
+
+#. module: shopfloor_batch_automatic_creation
 #: model:ir.model.fields,field_description:shopfloor_batch_automatic_creation.field_shopfloor_menu__batch_maximum_number_of_preparation_lines
 msgid "Maximum number of preparation lines for the batch"
 msgstr "Numero massim di righe di preparazione per il gruppo"
@@ -79,3 +109,41 @@ msgstr "Numero massim di righe di preparazione per il gruppo"
 #: model:ir.model,name:shopfloor_batch_automatic_creation.model_shopfloor_menu
 msgid "Menu displayed in the scanner application"
 msgstr "Menu visualizzato nell'applicazione di scansione"
+
+#. module: shopfloor_batch_automatic_creation
+#: model:ir.model.fields,help:shopfloor_batch_automatic_creation.field_stock_device_type__line_sort_key_code
+msgid ""
+"Python code to sort the lines in the batch.\n"
+"\n"
+"        The 'line' will be a recordset of stock.move.line.\n"
+"        and the method must assign a value to the variable 'key'\n"
+"        that will be used to sort the lines. You can also call\n"
+"        the super method to get the default behavior.\n"
+"        "
+msgstr ""
+"Codice Python per ordinare le righe nel lotto.\n"
+"\n"
+"        La \"riga\" sarà un recordset di stock.move.line.\n"
+"        e il metodo deve assegnare un valore alla variabile \"chiave\"\n"
+"        che sarà usato per ordinare le linee. Si può anche chiamare\n"
+"        il metodo super per ottenere il comportamento predefinito.\n"
+"        "
+
+#. module: shopfloor_batch_automatic_creation
+#: model:ir.model,name:shopfloor_batch_automatic_creation.model_stock_device_type
+msgid "Stock Device Type"
+msgstr "Tipo dispositivo magazzino"
+
+#. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid ""
+"To assign the key value: <code>key = (line.product_id.weight, ) + "
+"super(line)</code>"
+msgstr ""
+"Per assegnare il valore chiave: <code>key = (riga.product_id.weight, ) + "
+"super(line)</code>"
+
+#. module: shopfloor_batch_automatic_creation
+#: model_terms:ir.ui.view,arch_db:shopfloor_batch_automatic_creation.stock_device_type_form_view
+msgid "Two variables are available:"
+msgstr "Sono disponibili due variabili:"

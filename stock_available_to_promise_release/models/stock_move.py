@@ -11,6 +11,8 @@ from odoo.exceptions import UserError
 from odoo.osv import expression
 from odoo.tools import date_utils, float_compare, float_round, groupby
 
+from odoo.addons.stock.models.stock_move import StockMove as StockMoveBase
+
 _logger = logging.getLogger(__name__)
 
 
@@ -61,8 +63,9 @@ class StockMove(models.Model):
                 iterator = move._get_chained_moves_iterator("move_orig_ids")
                 next(iterator)  # skip the current move
                 for origin_moves in iterator:
-                    unrelease_allowed = move._is_unrelease_allowed_on_origin_moves(
-                        origin_moves
+                    unrelease_allowed = (
+                        not origin_moves._in_progress_for_unrelease()
+                        and move._is_unrelease_allowed_on_origin_moves(origin_moves)
                     )
                     if not unrelease_allowed:
                         break
@@ -85,6 +88,25 @@ class StockMove(models.Model):
             and self.rule_id.available_to_promise_defer_pull
         )
 
+    def _in_progress_for_unrelease(self) -> StockMoveBase:
+        """
+        This method will return the moves not done or canceled that :
+
+        - have their picking printed
+        - have a quantity done != 0
+
+        """
+        moves = self.filtered(lambda m: m.state not in ("done", "cancel"))
+        if not moves:
+            return moves
+        moves_printed = moves.filtered("picking_id.printed")
+        if moves_printed:
+            return moves_printed
+        moves_done = moves.filtered("quantity_done")
+        if moves_done:
+            return moves_done
+        return moves.browse()
+
     def _is_unrelease_allowed_on_origin_moves(self, origin_moves):
         """We check that the origin moves are in a state that allows the unrelease
         of the current move. At this stage, a move can't be unreleased if
@@ -94,17 +116,6 @@ class StockMove(models.Model):
           * the processed origin moves is not consumed by the dest moves.
         """
         self.ensure_one()
-        open_origin_moves = origin_moves.filtered(
-            lambda m: m.state not in ("done", "cancel")
-        )
-        pickings = open_origin_moves.mapped("picking_id")
-        if pickings.filtered("printed"):
-            # The picking is printed, we can't unrelease the move
-            # because the processing of the origin moves is started.
-            return False
-        if any(m.quantity_done for m in open_origin_moves):
-            # The origin move is being processed, we can't unrelease the move
-            return False
         origin_done_moves = origin_moves.filtered(lambda m: m.state == "done")
         origin_qty_done = sum(
             m.product_uom._compute_quantity(
@@ -132,14 +143,11 @@ class StockMove(models.Model):
             <= 0
         )
 
-    def _check_unrelease_allowed(self):
-        forbidden_moves = self.filtered(lambda m: not m.unrelease_allowed)
-        if not forbidden_moves:
-            return
+    def _unrelease_not_allowed_error(self):
         message = _("You are not allowed to unrelease those deliveries:\n")
 
         for picking, forbidden_moves_by_picking in groupby(
-            forbidden_moves, lambda m: m.picking_id
+            self, lambda m: m.picking_id
         ):
             forbidden_moves_by_picking = self.browse().concat(
                 *forbidden_moves_by_picking
@@ -659,12 +667,14 @@ class StockMove(models.Model):
         The loop into the iterator is the current moves.
         """
         moves = self
+        visited_moves = self.browse()
         while moves:
             yield moves
-            moves = moves.mapped(chain_field)
+            visited_moves += moves
+            moves = moves.mapped(chain_field) - visited_moves
 
     def unrelease(self, safe_unrelease=False):
-        """Unrelease unreleasavbe moves
+        """Unrelease unreleasable moves
 
         If safe_unrelease is True, the unreleasaable moves for which the
         processing has already started will be ignored
@@ -672,7 +682,9 @@ class StockMove(models.Model):
         moves_to_unrelease = self.filtered(lambda m: m._is_unreleaseable())
         if safe_unrelease:
             moves_to_unrelease = self.filtered("unrelease_allowed")
-        moves_to_unrelease._check_unrelease_allowed()
+        forbidden_moves = moves_to_unrelease.filtered(lambda m: not m.unrelease_allowed)
+        if forbidden_moves:
+            forbidden_moves._unrelease_not_allowed_error()
         moves_to_unrelease.write({"need_release": True})
         impacted_picking_ids = set()
 
