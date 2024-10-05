@@ -16,7 +16,10 @@ from fastapi import APIRouter, FastAPI
 from fastapi.testclient import TestClient
 
 from ..context import odoo_env_ctx
-from ..dependencies import authenticated_partner_impl
+from ..dependencies import (
+    authenticated_partner_impl,
+    optionally_authenticated_partner_impl,
+)
 
 
 @tagged("post_install", "-at_install")
@@ -69,6 +72,7 @@ class FastAPITransactionCase(TransactionCase):
         env: Environment = None,
         dependency_overrides: dict[Callable[..., Any], Callable[..., Any]] = None,
         raise_server_exceptions: bool = True,
+        testclient_kwargs=None,
     ):
         """
         Create a test client for the given app or router.
@@ -106,13 +110,28 @@ class FastAPITransactionCase(TransactionCase):
             )
         if partner or authenticated_partner_impl not in dependencies:
             dependencies[authenticated_partner_impl] = partial(lambda a: a, partner)
+        if partner and optionally_authenticated_partner_impl in dependencies:
+            raise ValueError(
+                "You cannot provide an override for the "
+                "optionally_authenticated_partner_impl "
+                "dependency when creating a test client with a partner."
+            )
+        if partner or optionally_authenticated_partner_impl not in dependencies:
+            dependencies[optionally_authenticated_partner_impl] = partial(
+                lambda a: a, partner
+            )
         app = app or self.default_fastapi_app or FastAPI()
         router = router or self.default_fastapi_router
         if router:
             app.include_router(router)
         app.dependency_overrides = dependencies
         ctx_token = odoo_env_ctx.set(env)
+        testclient_kwargs = testclient_kwargs or {}
         try:
-            yield TestClient(app, raise_server_exceptions=raise_server_exceptions)
+            yield TestClient(
+                app,
+                raise_server_exceptions=raise_server_exceptions,
+                **testclient_kwargs,
+            )
         finally:
             odoo_env_ctx.reset(ctx_token)

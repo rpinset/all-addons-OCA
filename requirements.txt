@@ -65,6 +65,7 @@ email-validator
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 # generated from manifests external_dependencies
 factur-x
+pypdf
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
@@ -240,10 +241,15 @@ schwifty==2024.4.0
 pika
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 # generated from manifests external_dependencies
-a2wsgi
-fastapi
+a2wsgi>=1.10.6
+contextvars
+fastapi>=0.110.0
+graphene
+graphql_server
 parse-accept-language
+pydantic
 python-multipart
+typing-extensions
 ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)

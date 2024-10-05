@@ -1,3 +1,64 @@
+## 17.0.3.0.0 (2024-10-03)
+
+### Features
+
+- * A new parameter is now available on the endpoint model to let you disable the creation and the store of session files used by Odoo for calls to your application endpoint. This is usefull to prevent disk space consumption and IO operations if your application doesn't need to use this sessions files which are mainly used by Odoo by to store the session info of logged in users. ([#442](https://github.com/OCA/rest-framework/issues/442))
+
+### Bugfixes
+
+- Fix issue with the retry of a POST request with a body content.
+
+  Prior to this fix the retry of a POST request with a body content would
+  stuck in a loop and never complete. This was due to the fact that the
+  request input stream was not reset after a failed attempt to process the
+  request. ([#440](https://github.com/OCA/rest-framework/issues/440))
+
+
+## 17.0.2.0.0 (2024-10-03)
+
+### Bugfixes
+
+- This change is a complete rewrite of the way the transactions are managed when
+  integrating a fastapi application into Odoo.
+
+  In the previous implementation, specifics error handlers were put in place to
+  catch exception occurring in the handling of requests made to a fastapi application
+  and to rollback the transaction in case of error. This was done by registering
+  specifics error handlers methods to the fastapi application using the 'add_exception_handler'
+  method of the fastapi application. In this implementation, the transaction was
+  rolled back in the error handler method.
+
+  This approach was not working as expected for several reasons:
+
+  - The handling of the error at the fastapi level prevented the retry mechanism
+    to be triggered in case of a DB concurrency error. This is because the error
+    was catch at the fastapi level and never bubbled up to the early stage of the
+    processing of the request where the retry mechanism is implemented.
+  - The cleanup of the environment and the registry was not properly done in case
+    of error. In the **'odoo.service.model.retrying'** method, you can see that
+    the cleanup process is different in case of error raised by the database
+    and in case of error raised by the application.
+
+  This change fix these issues by ensuring that errors are no more catch at the
+  fastapi level and bubble up the fastapi processing stack through the event loop
+  required to transform WSGI to ASGI. As result the transactional nature of the
+  requests to the fastapi applications is now properly managed by the Odoo framework.
+
+  ([#422](https://github.com/OCA/rest-framework/issues/422))
+
+
+## 17.0.1.0.1 (2024-10-02)
+
+### Bugfixes
+
+- Fix compatibility issues with the latest Odoo version
+
+  From https://github.com/odoo/odoo/commit/cb1d057dcab28cb0b0487244ba99231ee292502e
+  the original werkzeug HTTPRequest class has been wrapped in a new class to keep
+  under control the attributes developers use. This changes take care of this
+  new implementation but also keep compatibility with the old ones. ([#414](https://github.com/OCA/rest-framework/issues/414))
+
+
 ## 16.0.1.2.5 (2024-01-17)
 
 ### Bugfixes
