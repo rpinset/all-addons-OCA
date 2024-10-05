@@ -150,16 +150,16 @@ Date:   Tue Mar 26 12:16:05 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 373aa8460efcbeb3008936b9cbd6508f163116f9
+commit 63d82bca23071174f31049b60d738c14469f45a2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 9 07:34:19 2024 +0000
+Date:   Thu Oct 3 06:45:43 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (25 of 25 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: operating-unit-12.0/operating-unit-12.0-operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-operating_unit/it/
+    Translation: operating-unit-12.0/operating-unit-12.0-purchase_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-12-0/operating-unit-12-0-purchase_operating_unit/it/
 
 
 ## intrastat
@@ -220,16 +220,16 @@ Date:   Tue Sep 24 14:50:42 2024 +0000
 
 ## data-protection
 From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
-commit 49d689f152c73d237c21e5b40b9f9ae04b1e85d1
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 20:43:29 2023 +0000
+commit 9c7f288c6773578991faf93548b28d563950fae1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 08:18:16 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 86.3% (57 of 66 strings)
     
-    Translation: data-protection-12.0/data-protection-12.0-privacy_partner_report
-    Translate-URL: https://translation.odoo-community.org/projects/data-protection-12-0/data-protection-12-0-privacy_partner_report/
+    Translation: data-protection-12.0/data-protection-12.0-privacy
+    Translate-URL: https://translation.odoo-community.org/projects/data-protection-12-0/data-protection-12-0-privacy/it/
 
 
 ## bank-payment
@@ -663,11 +663,16 @@ Date:   Fri Aug 30 07:31:47 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit a392345e018d3a02d92d620cbe81d49e224ba0fa
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 23 11:16:55 2024 +0000
+commit e1b512aa5978a0a1d26a64ab2e2595325d8b3cca
+Author: uvid-gordana <gordana@uvid.hr>
+Date:   Wed Oct 2 08:38:01 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Croatian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: hr-12.0/hr-12.0-hr_holidays_leave_auto_approve
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_holidays_leave_auto_approve/hr/
 
 
 ## connector-odoo2odoo
@@ -896,16 +901,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 5611e9962887151619091c3f35361bf1258ce20c
+commit 42f3cd7d624fb3eff21236bdd044f23f4c31297b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Sep 28 14:40:17 2024 +0000
+Date:   Sat Oct 5 15:30:03 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (476 of 476 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-fiscal_epos_print
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-fiscal_epos_print/it/
 
 
 ## l10n-japan
@@ -1484,9 +1489,9 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit a591b7aa653a48c87e30f022d784e06f2d05e299
+commit 4c11359c056487996aec4a3b4e525e06ddde9dd4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Sep 19 06:43:55 2024 +0000
+Date:   Thu Oct 3 07:39:40 2024 +0000
 
     Translated using Weblate (Italian)
     
