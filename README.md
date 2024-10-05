@@ -208,30 +208,30 @@ Date:   Wed Jan 3 08:29:48 2024 +0000
 
 ## data-protection
 From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
-commit 3fe69b01f6f9231408d59fa3c215072f627a0d5d
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Oct 9 23:08:50 2023 +0000
+commit 329c239fd0da1846a622d9a6854864f768919c20
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 08:18:23 2024 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 82.0% (55 of 67 strings)
     
     Translation: data-protection-13.0/data-protection-13.0-privacy
-    Translate-URL: https://translation.odoo-community.org/projects/data-protection-13-0/data-protection-13-0-privacy/
+    Translate-URL: https://translation.odoo-community.org/projects/data-protection-13-0/data-protection-13-0-privacy/it/
 
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit d481e02192b51a195497adecb0992c38f84c6c38
+commit 99f4ec461690f68694ff2dd7311d4b31628f854c
 Author: EvaS595 <eva.saintier@horanet.com>
-Date:   Tue Oct 1 07:21:25 2024 +0000
+Date:   Wed Oct 2 12:37:40 2024 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 11.1% (19 of 171 strings)
+    Currently translated at 100.0% (112 of 112 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/fr/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/fr/
 
 
 ## account-reconcile
