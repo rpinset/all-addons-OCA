@@ -195,11 +195,16 @@ Date:   Tue Sep 24 14:50:40 2024 +0000
 
 ## data-protection
 From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
-commit 87d40d18e0f0de5c92c5c52aab905db9454bf920
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:05:31 2024 +0000
+commit 2556d25faadb8ca16251dce9ced9c8279ab0106a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 08:17:19 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 87.1% (61 of 70 strings)
+    
+    Translation: data-protection-14.0/data-protection-14.0-privacy
+    Translate-URL: https://translation.odoo-community.org/projects/data-protection-14-0/data-protection-14-0-privacy/it/
 
 
 ## bank-payment
@@ -617,16 +622,16 @@ Date:   Thu Sep 19 07:04:25 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit c91319973fa2bec1a0ac5d974dd56bccd351f53a
-Author: Eugeni Chafer <eugeni@chafer.cat>
-Date:   Fri Jul 26 12:05:45 2024 +0000
+commit 27eb488c5fdee8411937cb32f23f220acfa1fac6
+Author: Luis Felipe Miléo <mileo@kmee.com.br>
+Date:   Fri Oct 4 19:15:59 2024 +0000
 
-    Translated using Weblate (Catalan)
+    Translated using Weblate (Portuguese (Brazil))
     
-    Currently translated at 0.8% (1 of 115 strings)
+    Currently translated at 80.0% (4 of 5 strings)
     
-    Translation: hr-14.0/hr-14.0-hr_course
-    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_course/ca/
+    Translation: hr-14.0/hr-14.0-hr_employee_age
+    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_employee_age/pt_BR/
 
 
 ## hr-attendance
@@ -908,11 +913,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit a1861824ae55fa5a5756ddb905570cb2b14afa70
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 15:13:53 2024 +0000
+commit 72bb5468dd4b0f8b249e1d7b68ed5edb7f9eef4d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Oct 5 15:37:51 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (126 of 126 strings)
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-fiscal_epos_print
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-fiscal_epos_print/it/
 
 
 ## l10n-japan
@@ -962,11 +972,11 @@ Date:   Wed May 1 18:30:20 2024 +0000
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit 266500c5fb0e2393371c470263c23d6db6f66d25
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:30:46 2024 +0000
+commit f7cd44f6eb005f3cdda4768457e32c18280e59a5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Oct 1 22:17:20 2024 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-norway
@@ -1202,11 +1212,16 @@ Date:   Thu Jul 4 11:50:22 2024 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit c406820dd1e605ba36058b630834624c2614fd39
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 14:15:52 2024 +0000
+commit 0b48b752be935d3d1c5e95d297f342f043f3501f
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Oct 5 08:56:57 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: wms-14.0/wms-14.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/
 
 
 ## manufacture
@@ -1328,16 +1343,11 @@ Date:   Wed May 1 18:54:44 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit d2f518b05f0157e076a54c43a7aaa46367c78ef6
-Author: Víctor Martínez <victor.martinez@tecnativa.com>
-Date:   Fri Sep 13 11:35:10 2024 +0000
+commit 2f8a58badf72f680e0f6bfc3074e15533103348a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 2 07:33:50 2024 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 90.0% (9 of 10 strings)
-    
-    Translation: project-14.0/project-14.0-project_timeline
-    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_timeline/es/
+    [BOT] post-merge updates
 
 
 ## project-agile
@@ -1460,11 +1470,16 @@ Date:   Fri Oct 27 21:08:37 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit ad6719a0106644c3de986019a4f390f206971126
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 13 18:34:10 2024 +0000
+commit 70e199c619516bca8e44592052c1dfe79b9e86e5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 07:39:41 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 82.5% (165 of 200 strings)
+    
+    Translation: server-tools-14.0/server-tools-14.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-excel_import_export/it/
 
 
 ## server-auth
