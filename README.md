@@ -193,11 +193,16 @@ Date:   Tue Sep 24 14:44:40 2024 +0000
 
 ## data-protection
 From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
-commit d3d9792508248fa762b9368ed5ee5bc4625f31a7
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 18:05:44 2024 +0000
+commit 9e3c89b5a58f224dad84982bf2d0f261cf0d1eeb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 08:18:19 2024 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 78.2% (54 of 69 strings)
+    
+    Translation: data-protection-15.0/data-protection-15.0-privacy
+    Translate-URL: https://translation.odoo-community.org/projects/data-protection-15-0/data-protection-15-0-privacy/it/
 
 
 ## bank-payment
@@ -374,14 +379,11 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4c04819ba0174f869ddc35e52333a72f277271f0
-Merge: f9649aab3 f16dc364d
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Sep 20 12:35:15 2024 +0200
+commit 4efac0fb282d70698ad42acb4a17b104fdaa1c11
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Oct 3 13:51:39 2024 +0000
 
-    Merge pull request #3318 from sygel-technology/15.0-imp-sale_delivery_state
-    
-    [15.0][OU-ADD] sale_delivery_state: migration script
+    [BOT] post-merge updates
 
 
 ## crm
@@ -1289,11 +1291,16 @@ Date:   Wed May 1 18:54:54 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 4e80a204719d31242b6cd3cd2af9af0c423e8f6f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 21 14:46:18 2024 +0000
+commit cdec14d23651dd935a941a92eb2a2d90221837f8
+Author: Víctor Martínez <victor.martinez@tecnativa.com>
+Date:   Thu Oct 3 06:14:24 2024 +0000
 
-    [ADD] setup.py
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 85.7% (6 of 7 strings)
+    
+    Translation: project-15.0/project-15.0-project_timeline
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_timeline/es/
 
 
 ## project-agile
@@ -1362,9 +1369,9 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 1355ecfe2b22d4fa425144a1f46a5299adf3ed8a
+commit 89e0d296b53d96b6bf8b6534006e96f48ae2981d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 12 10:10:45 2024 +0000
+Date:   Fri Oct 4 14:34:12 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1421,16 +1428,16 @@ Date:   Fri Oct 27 22:55:14 2023 +0200
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit d5d1eb38f85237c11ecbb2b7d94788798bffeb72
-Author: Ignacio Buioli <ibuioli@gmail.com>
-Date:   Tue Jul 23 23:26:00 2024 +0000
+commit 8209276d2ccd405130234a2654ef29b0561c834a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 3 07:39:42 2024 +0000
 
-    Translated using Weblate (Spanish (Argentina))
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (85 of 85 strings)
+    Currently translated at 80.6% (158 of 196 strings)
     
-    Translation: server-tools-15.0/server-tools-15.0-database_cleanup
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-database_cleanup/es_AR/
+    Translation: server-tools-15.0/server-tools-15.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-excel_import_export/it/
 
 
 ## server-auth
@@ -1558,16 +1565,16 @@ Date:   Tue Sep 3 18:42:54 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit cb33b21fcc40c96b6bc60fc0da7965818a58f23c
+commit 98219b0d6272c32a9664fc0a7dbcee8113099c36
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:16:22 2024 +0000
+Date:   Thu Oct 3 15:08:51 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (376 of 376 strings)
+    Currently translated at 100.0% (520 of 520 strings)
     
-    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel_restaurant
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel_restaurant/it/
+    Translation: vertical-hotel-15.0/vertical-hotel-15.0-hotel
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-15-0/vertical-hotel-15-0-hotel/it/
 
 
 ## vertical-isp
