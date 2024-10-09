@@ -1102,11 +1102,11 @@ Date:   Mon Oct 9 20:14:19 2023 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 86fe256fc13e00d0fc4d4434c9540eddbae873bb
+commit 5c366f75e069df6e1ce52f1a0e8ebcc211b0ab50
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 24 18:24:03 2024 +0000
+Date:   Wed Oct 9 16:37:53 2024 +0000
 
-    [UPD] README.rst
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
