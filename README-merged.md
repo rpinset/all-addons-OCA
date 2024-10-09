@@ -240,6 +240,7 @@ addon | version | maintainers | summary
 [account_asset_management](account_asset_management/) | 16.0.1.2.5 |  | Assets Management
 [account_asset_number](account_asset_number/) | 16.0.1.1.0 |  | Assets Number
 [account_asset_transfer](account_asset_transfer/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Asset Transfer from AUC to Asset
+[account_bank_statement_chatter](account_bank_statement_chatter/) | 16.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Chatter on bank statements
 [account_cash_deposit](account_cash_deposit/) | 16.0.1.2.0 |  | Manage cash deposits and cash orders
 [account_chart_update](account_chart_update/) | 16.0.2.0.4 |  | Wizard to update a company's account chart from a template
 [account_chart_update_l10n_eu_oss_oca](account_chart_update_l10n_eu_oss_oca/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Account Chart update OSS OCA
@@ -250,7 +251,7 @@ addon | version | maintainers | summary
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.0 |  | Account Invoice Constraint Chronology
 [account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 16.0.1.0.0 |  | Lock each journal independently
-[account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.0.0 |  | Lock All Posted Entries of Journals.
+[account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.1.0 |  | Lock All Posted Entries of Journals.
 [account_loan](account_loan/) | 16.0.1.0.4 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 16.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_move_budget](account_move_budget/) | 16.0.1.0.0 |  | Create Accounting Budgets
@@ -320,6 +321,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 16.0.1.9.0 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 16.0.1.0.0 |  | OCA Financial Reports Sale
+[account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
 [account_tax_balance](account_tax_balance/) | 16.0.1.1.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 16.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
@@ -998,7 +1000,7 @@ addon | version | maintainers | summary
 [account_move_line_reconcile_manual](account_move_line_reconcile_manual/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manually reconcile Journal Items
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.0.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.0.6 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.12.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
@@ -1118,7 +1120,7 @@ addon | version | maintainers | summary
 [account_payment_promissory_note](account_payment_promissory_note/) | 16.0.1.0.1 |  | Account Payment Promissory Note
 [account_payment_return](account_payment_return/) | 16.0.1.1.1 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 16.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
-[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
+[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.2 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 16.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
 [account_payment_term_extension](account_payment_term_extension/) | 16.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_widget_amount](account_payment_widget_amount/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
@@ -1266,13 +1268,13 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.0.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 16.0.1.1.2 |  | Import CSV files in the background
-[queue_job](queue_job/) | 16.0.2.6.7 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 16.0.2.6.8 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
 [queue_job_subscribe](queue_job_subscribe/) | 16.0.1.0.0 |  | Control which users are subscribed to queue job notifications
 [queue_job_web_notify](queue_job_web_notify/) | 16.0.1.0.0 |  | This module allows to display a notification to the related user of a failed job. It uses the web_notify notification feature.
-[test_queue_job](test_queue_job/) | 16.0.2.2.1 |  | Queue Job Tests
+[test_queue_job](test_queue_job/) | 16.0.2.2.2 |  | Queue Job Tests
 [test_queue_job_batch](test_queue_job_batch/) | 16.0.1.0.0 |  | Test Job Queue Batch
 
 
@@ -2246,6 +2248,7 @@ addon | version | maintainers | summary
 [sale_order_report_product_image](sale_order_report_product_image/) | 16.0.1.0.0 |  | Show product images on Sale documents
 [sale_packaging_report](sale_packaging_report/) | 16.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Packaging data in sale reports
 [sale_report_commitment_date](sale_report_commitment_date/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display the commitment date on Sales Order analysis reports
+[sale_report_country_state](sale_report_country_state/) | 16.0.1.0.0 |  | Sale Report Filter by State
 [sale_report_delivered](sale_report_delivered/) | 16.0.1.0.2 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered
 [sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 16.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered subtotal
 [sale_report_delivered_volume](sale_report_delivered_volume/) | 16.0.1.0.0 |  | Sale Report Delivered Volume
@@ -2518,6 +2521,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 16.0.1.8.2 |  | Document Management System for Odoo
+[dms_attachment_link](dms_attachment_link/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
 [dms_auto_classification](dms_auto_classification/) | 16.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify documents into DMS
 [dms_field](dms_field/) | 16.0.1.1.1 |  | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Auto classify files into embedded DMS
@@ -3011,7 +3015,7 @@ addon | version | maintainers | summary
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.0 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_invoice_link](sale_timesheet_invoice_link/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Link invoices with timesheet lines
-[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.0.0 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.1.0 |  | Exclude Timesheet Line from Sale Order
 [sale_timesheet_rounded](sale_timesheet_rounded/) | 16.0.1.0.0 |  | Round timesheet entries amount based on project settings.
 [sale_timesheet_task_exclude](sale_timesheet_task_exclude/) | 16.0.1.0.0 |  | Exclude Task and related Timesheets from Sale Order
 
@@ -3068,6 +3072,7 @@ addon | version | maintainers | summary
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 16.0.1.1.8 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
 [hr_employee_digitized_signature](hr_employee_digitized_signature/) | 16.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Employee Digitized Signature
 [hr_employee_document](hr_employee_document/) | 16.0.1.0.1 |  | Documents attached to the employee profile
+[hr_employee_document_from_applicant](hr_employee_document_from_applicant/) | 16.0.1.0.0 | [![ursais](https://github.com/ursais.png?size=30px)](https://github.com/ursais) | HR Employee Document from Applicant
 [hr_employee_firstname](hr_employee_firstname/) | 16.0.1.0.2 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
 [hr_employee_group_overview_readonly](hr_employee_group_overview_readonly/) | 16.0.1.0.0 |  | HR Employee Group Overview Readonly
 [hr_employee_id](hr_employee_id/) | 16.0.1.0.0 |  | Employee ID
@@ -4490,7 +4495,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 16.0.1.0.0 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 16.0.1.0.4 |  | Inversione contabile
 [l10n_it_riba](l10n_it_riba/) | 16.0.1.7.0 |  | Ricevute bancarie
-[l10n_it_sct_cbi](l10n_it_sct_cbi/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
+[l10n_it_sct_cbi](l10n_it_sct_cbi/) | 16.0.1.0.1 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 16.0.1.0.0 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 16.0.1.0.0 |  | ITA - Esigibilità IVA
@@ -4781,6 +4786,7 @@ addon | version | maintainers | summary
 [l10n_nl_bank](l10n_nl_bank/) | 16.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_bsn](l10n_nl_bsn/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Burgerservicenummer (BSN) for Partners
 [l10n_nl_oin](l10n_nl_oin/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds Dutch OIN field
+[l10n_nl_partner_name](l10n_nl_partner_name/) | 16.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
 [l10n_nl_postcode](l10n_nl_postcode/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Dutch postcode validation for Partners
 [l10n_nl_tax_statement](l10n_nl_tax_statement/) | 16.0.1.0.2 |  | Netherlands BTW Statement
 [l10n_nl_tax_statement_date_range](l10n_nl_tax_statement_date_range/) | 16.0.1.0.0 |  | Netherlands BTW Statement - Date range
@@ -5142,7 +5148,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.6.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.7.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.0.1 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.7.3 |  | AEAT modelo 347
@@ -5154,7 +5160,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.0 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.2.0.0 | [![Abranes](https://github.com/Abranes.png?size=30px)](https://github.com/Abranes) [![Reyes4711-S73](https://github.com/Reyes4711-S73.png?size=30px)](https://github.com/Reyes4711-S73) | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_sii_taxfree](l10n_es_aeat_sii_taxfree/) | 16.0.2.0.0 |  | Régimen Especial de Viajeros - SII
 [l10n_es_atc](l10n_es_atc/) | 16.0.1.0.1 |  | Modulo 'glue' de la AEAT para el menú de la ATC
@@ -5676,7 +5682,7 @@ addon | version | maintainers | summary
 [delivery_estimated_package_quantity_by_weight](delivery_estimated_package_quantity_by_weight/) | 16.0.1.0.0 |  | Compute the amount of packages a picking out should have depending on the weight of the products and the limit fixed by the carrier
 [delivery_multi_destination](delivery_multi_destination/) | 16.0.1.0.0 |  | Multiple destinations for the same delivery method
 [delivery_package_fee](delivery_package_fee/) | 16.0.1.1.1 |  | Add fees on delivered packages on shipping methods
-[delivery_package_number](delivery_package_number/) | 16.0.2.0.0 |  | Set or compute number of packages for a picking
+[delivery_package_number](delivery_package_number/) | 16.0.2.1.0 |  | Set or compute number of packages for a picking
 [delivery_package_type_number_parcels](delivery_package_type_number_parcels/) | 16.0.1.0.2 |  | Number of parcels in a package type
 [delivery_postlogistics](delivery_postlogistics/) | 16.0.1.0.9 |  | Print PostLogistics shipping labels using the Barcode web service
 [delivery_postlogistics_server_env](delivery_postlogistics_server_env/) | 16.0.1.0.0 |  | Server Environment layer for Delivery Postlogistics
@@ -5812,6 +5818,7 @@ addon | version | maintainers | summary
 [stock_landed_costs_purchase_auto](stock_landed_costs_purchase_auto/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock landed costs purchase auto
 [stock_landed_costs_security](stock_landed_costs_security/) | 16.0.1.0.0 | [![cesar-tecnativa](https://github.com/cesar-tecnativa.png?size=30px)](https://github.com/cesar-tecnativa) | Stock landed costs security
 [stock_lock_lot](stock_lock_lot/) | 16.0.1.0.0 |  | Stock Lock Lot
+[stock_lot_on_hand_first](stock_lot_on_hand_first/) | 16.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
 [stock_lot_production_date](stock_lot_production_date/) | 16.0.1.0.0 |  | Stock Lot Production Date
 [stock_lot_scrap](stock_lot_scrap/) | 16.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
 [stock_move_free_reservation_reassign](stock_move_free_reservation_reassign/) | 16.0.1.0.1 |  | Try to reassign a move when its reservation is removed due to the related quant becoming unavailable
@@ -5825,7 +5832,7 @@ addon | version | maintainers | summary
 [stock_move_propagate_first_move](stock_move_propagate_first_move/) | 16.0.1.0.1 |  | This addon propagate the picking type of the original move to all next moves created from procurement
 [stock_no_negative](stock_no_negative/) | 16.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_override_procurement](stock_override_procurement/) | 16.0.1.0.0 |  | This technical module allow to override procurement values
-[stock_owner_restriction](stock_owner_restriction/) | 16.0.1.1.0 |  | Do not reserve quantity with assigned owner
+[stock_owner_restriction](stock_owner_restriction/) | 16.0.1.1.1 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 16.0.1.0.1 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 16.0.3.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_auto_create_lot_sequence](stock_picking_auto_create_lot_sequence/) | 16.0.1.0.0 |  | Stock Picking Auto Create Lot Sequence
@@ -5859,6 +5866,7 @@ addon | version | maintainers | summary
 [stock_picking_quick](stock_picking_quick/) | 16.0.1.0.0 | [![PierrickBrun](https://github.com/PierrickBrun.png?size=30px)](https://github.com/PierrickBrun) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Quick Stock Picking
 [stock_picking_restrict_cancel_printed](stock_picking_restrict_cancel_printed/) | 16.0.1.0.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Prevent canceling a stock transfer if printed.
 [stock_picking_return_lot](stock_picking_return_lot/) | 16.0.1.1.0 |  | Propagate SN/lots from origin picking to return picking.
+[stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 16.0.1.0.0 |  | Restrict the return to delivered quantity
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 16.0.1.0.0 |  | Link between picking and sale order
 [stock_picking_send_by_mail](stock_picking_send_by_mail/) | 16.0.1.0.0 |  | Send stock picking by email
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 16.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
@@ -5875,7 +5883,7 @@ addon | version | maintainers | summary
 [stock_quant_package_dimension_total_weight_from_packaging](stock_quant_package_dimension_total_weight_from_packaging/) | 16.0.1.0.0 |  | Estimated weight of a package
 [stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 16.0.1.0.1 |  | Use product packagings on packages
 [stock_receipt_lot_info](stock_receipt_lot_info/) | 16.0.1.1.0 |  | Be able to introduce more info on lot/serial number while processing a receipt.
-[stock_restrict_lot](stock_restrict_lot/) | 16.0.1.2.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
+[stock_restrict_lot](stock_restrict_lot/) | 16.0.2.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_rule_reserve_max_quantity](stock_rule_reserve_max_quantity/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allows to reserve max available quantity when a move comes from an stock rule
 [stock_split_picking](stock_split_picking/) | 16.0.1.0.4 |  | Split a picking in two not transferred pickings
 [stock_valuation_layer_usage](stock_valuation_layer_usage/) | 16.0.2.0.0 |  | Trace where has the stock valuation been used in, including the quantities taken.
@@ -5987,8 +5995,9 @@ addon | version | maintainers | summary
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to set justification on inventories
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.0 |  | More filters for inventory adjustments
 [stock_location_lockdown](stock_location_lockdown/) | 16.0.1.0.1 |  | Prevent to add stock on locked locations
+[stock_location_package_restriction](stock_location_package_restriction/) | 16.0.1.0.0 |  | Control if the location can contain products in a package
 [stock_location_position](stock_location_position/) | 16.0.1.0.0 |  | Add coordinate attributes on stock location.
-[stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Prevent to mix different products into the same stock location
+[stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Prevent to mix different products into the same stock location
 [stock_location_zone](stock_location_zone/) | 16.0.1.0.1 |  | Classify locations with zones.
 [stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.1 |  | Try to reserve moves when goods enter in a location
 [stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.2 |  | Auto release moves after auto assign
@@ -5996,6 +6005,7 @@ addon | version | maintainers | summary
 [stock_move_location](stock_move_location/) | 16.0.1.4.0 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.5.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add packaging fields in the stock moves
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 16.0.1.0.1 |  | Add a MTS+MTO route
+[stock_package_type_category](stock_package_type_category/) | 16.0.1.0.0 |  | This module allows to group package types in different categories
 [stock_package_type_volume](stock_package_type_volume/) | 16.0.1.0.0 |  | Compute volume of a package type
 [stock_packaging_calculator](stock_packaging_calculator/) | 16.0.1.0.1 |  | Compute product quantity to pick by packaging
 [stock_packaging_calculator_packaging_level](stock_packaging_calculator_packaging_level/) | 16.0.1.0.0 |  | Glue module for packaging level
@@ -6004,7 +6014,7 @@ addon | version | maintainers | summary
 [stock_picking_procure_method](stock_picking_procure_method/) | 16.0.1.0.0 |  | Allows to force the procurement method from the picking
 [stock_picking_product_interchangeable](stock_picking_product_interchangeable/) | 16.0.1.0.0 | [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Stock Picking Product Interchangeable
 [stock_picking_show_linked](stock_picking_show_linked/) | 16.0.1.0.0 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
-[stock_picking_volume](stock_picking_volume/) | 16.0.1.0.3 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
+[stock_picking_volume](stock_picking_volume/) | 16.0.1.0.4 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 16.0.1.0.1 |  | Use volume information on potential product packaging to compute the volume of a stock.move
 [stock_product_qty_by_packaging](stock_product_qty_by_packaging/) | 16.0.1.0.0 |  | Compute product quantity to pick by packaging
 [stock_production_lot_quantity_tree](stock_production_lot_quantity_tree/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to display product quantity field on production lot tree view
@@ -6019,14 +6029,18 @@ addon | version | maintainers | summary
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 16.0.1.0.0 |  | Establish a removal priority on stock locations.
 [stock_reservation_date_show](stock_reservation_date_show/) | 16.0.1.0.0 |  | Display reservation date of stock moves
 [stock_reserve](stock_reserve/) | 16.0.1.3.1 |  | Stock reservations on products
+[stock_reserve_rule](stock_reserve_rule/) | 16.0.1.0.0 |  | Configure reservation rules by location
 [stock_route_mto](stock_route_mto/) | 16.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
+[stock_scrap_location_default](stock_scrap_location_default/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a setting at company level that reference a default scrap location
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 16.0.1.0.1 |  | Allows to search for picking from supplierinfo code
+[stock_secondary_unit](stock_secondary_unit/) | 16.0.1.1.0 |  | Get product quantities in a secondary unit
 [stock_storage_category_capacity_name](stock_storage_category_capacity_name/) | 16.0.1.0.0 |  | Allows to have a better display name for Stock Storage Category Capacity model
 [stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 16.0.1.0.0 |  | Stock Valuation Layer Accounting Date
 [stock_valuation_layer_inventory_filter](stock_valuation_layer_inventory_filter/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Allows to filter Inventory Adjustments on Stock Valuation Layers
 [stock_valuation_layer_total_value](stock_valuation_layer_total_value/) | 16.0.1.0.0 |  | Show total value on tree and form view
 [stock_vlm_mgmt](stock_vlm_mgmt/) | 16.0.1.0.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Light self contained alternative for VLM integrations
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
+[stock_warehouse_relationship](stock_warehouse_relationship/) | 16.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Technical module to add warehouse_id field on various stock.* models
 
 
 Unported addons
@@ -6253,7 +6267,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 16.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
-[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 16.0.1.1.0 |  | Integration between Sales and Available to Promise Release
+[sale_stock_available_to_promise_release](sale_stock_available_to_promise_release/) | 16.0.1.1.1 |  | Integration between Sales and Available to Promise Release
 [sale_stock_available_to_promise_release_block](sale_stock_available_to_promise_release_block/) | 16.0.1.0.0 |  | Block release of deliveries from sales orders.
 [sale_stock_release_channel_partner_by_date](sale_stock_release_channel_partner_by_date/) | 16.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Release channels integration with Sales
 [sale_stock_release_channel_partner_by_date_delivery](sale_stock_release_channel_partner_by_date_delivery/) | 16.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Filters channels on sales based on selected carrier.
@@ -6266,7 +6280,7 @@ addon | version | maintainers | summary
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
 [shopfloor_workstation_mobile](shopfloor_workstation_mobile/) | 16.0.1.0.0 |  | Shopfloor mobile app integration for workstation
-[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.4.0 |  | Release Operations based on available to promise
+[stock_available_to_promise_release](stock_available_to_promise_release/) | 16.0.3.5.0 |  | Release Operations based on available to promise
 [stock_available_to_promise_release_block](stock_available_to_promise_release_block/) | 16.0.1.1.1 |  | Block Release of Operations
 [stock_available_to_promise_release_exclude_location](stock_available_to_promise_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from available stock
 [stock_dynamic_routing](stock_dynamic_routing/) | 16.0.1.0.2 |  | Dynamic routing of stock moves
@@ -7093,7 +7107,7 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 16.0.1.0.0 |  | Project Department Categorization
 [project_duplicate_subtask](project_duplicate_subtask/) | 16.0.1.0.0 |  | The module adds an action to duplicate tasks with the child subtasks
 [project_hr](project_hr/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Link HR with project
-[project_key](project_key/) | 16.0.1.0.1 |  | Module decorates projects and tasks with Project Key
+[project_key](project_key/) | 16.0.1.0.2 |  | Module decorates projects and tasks with Project Key
 [project_list](project_list/) | 16.0.1.0.1 |  | Projects list view
 [project_merge](project_merge/) | 16.0.1.0.0 |  | Wizard to merge project tasks
 [project_milestone_tree](project_milestone_tree/) | 16.0.1.0.0 |  | This module adds an access to the Milestone tree view.
@@ -7732,7 +7746,7 @@ addon | version | maintainers | summary
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 16.0.1.0.0 |  | Report to printer - Mail extension
 [pingen](pingen/) | 16.0.1.0.1 | [![ajaniszewska-dev](https://github.com/ajaniszewska-dev.png?size=30px)](https://github.com/ajaniszewska-dev) [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | pingen.com integration
 [pingen_env](pingen_env/) | 16.0.1.0.0 | [![ajaniszewska-dev](https://github.com/ajaniszewska-dev.png?size=30px)](https://github.com/ajaniszewska-dev) | pingen.com server environment
-[printer_zpl2](printer_zpl2/) | 16.0.1.0.0 |  | Add a ZPL II label printing feature
+[printer_zpl2](printer_zpl2/) | 16.0.1.1.0 |  | Add a ZPL II label printing feature
 [printing_simple_configuration](printing_simple_configuration/) | 16.0.1.0.1 |  | Allow to set printing configuration in company or in warehouse
 
 [//]: # (end addons)
@@ -7836,7 +7850,7 @@ addon | version | maintainers | summary
 [base_force_record_noupdate](base_force_record_noupdate/) | 16.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 16.0.1.0.0 |  | Customizations of Many2many
 [base_multi_image](base_multi_image/) | 16.0.1.0.0 |  | Allow multiple images for database objects
-[base_name_search_improved](base_name_search_improved/) | 16.0.1.0.1 |  | Friendlier search when typing in relation fields
+[base_name_search_improved](base_name_search_improved/) | 16.0.1.0.2 |  | Friendlier search when typing in relation fields
 [base_partition](base_partition/) | 16.0.1.0.0 |  | Base module that provide the partition method on all models
 [base_remote](base_remote/) | 16.0.1.0.0 |  | Remote Base
 [base_search_fuzzy](base_search_fuzzy/) | 16.0.1.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
@@ -7868,7 +7882,7 @@ addon | version | maintainers | summary
 [sentry](sentry/) | 16.0.3.0.2 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [server_action_logging](server_action_logging/) | 16.0.1.0.0 |  | Module that provides a logging mechanism for server actions
 [session_db](session_db/) | 16.0.1.0.6 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
-[tracking_manager](tracking_manager/) | 16.0.1.1.3 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
+[tracking_manager](tracking_manager/) | 16.0.1.1.6 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 16.0.1.0.2 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 [url_attachment_search_fuzzy](url_attachment_search_fuzzy/) | 16.0.1.0.0 | [![mariadforgelow](https://github.com/mariadforgelow.png?size=30px)](https://github.com/mariadforgelow) | Fuzzy Search of URL in Attachments
 
@@ -9043,7 +9057,7 @@ addon | version | maintainers | summary
 [web_listview_range_select](web_listview_range_select/) | 16.0.1.0.0 |  | Enables selecting a range of records using the shift key
 [web_m2x_options](web_m2x_options/) | 16.0.1.1.3 |  | web_m2x_options
 [web_no_bubble](web_no_bubble/) | 16.0.1.0.0 |  | Remove the bubbles from the web interface
-[web_notify](web_notify/) | 16.0.2.0.1 |  | Send notification messages to user
+[web_notify](web_notify/) | 16.0.2.0.2 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 16.0.1.0.0 |  | Send an instant notification to channel users when a new message is posted
 [web_notify_upgrade](web_notify_upgrade/) | 16.0.1.0.0 |  | Notify active users when a module is installed or updated
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure

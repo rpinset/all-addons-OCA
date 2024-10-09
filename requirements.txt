@@ -237,6 +237,8 @@ freezegun
 # generated from manifests external_dependencies
 pandas>=0.25.3
 # From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
 # From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)

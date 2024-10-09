@@ -6,6 +6,7 @@
 from collections import defaultdict
 
 from odoo import api, models, tools
+from odoo.exceptions import AccessError
 
 from ..tools import format_m2m
 
@@ -89,6 +90,9 @@ class Base(models.AbstractModel):
             if not getattr(self.env[model_name], "message_post_with_view", False):
                 continue
             for record_id, messages_by_field in model_data.items():
+                # Avoid error if no record is linked (example: child_ids of res.partner)
+                if not record_id:
+                    continue
                 record = self.env[model_name].browse(record_id)
                 messages = [
                     {
@@ -117,7 +121,11 @@ class Base(models.AbstractModel):
             values = initial_values.setdefault(record.id, {})
             if values is not None:
                 for fname in fnames:
-                    values.setdefault(fname, record[fname])
+                    try:
+                        values.setdefault(fname, record[fname])
+                    except AccessError:
+                        # User does not have access to the field (example with groups)
+                        continue
 
     def _tm_finalize_o2m_tracking(self):
         initial_values = self.env.cr.precommit.data.pop(
