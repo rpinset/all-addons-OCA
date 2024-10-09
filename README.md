@@ -379,9 +379,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4efac0fb282d70698ad42acb4a17b104fdaa1c11
+commit 74a4cb29ef25803b6d0ceaa9a3147a8d9806afe7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 3 13:51:39 2024 +0000
+Date:   Tue Oct 8 06:12:10 2024 +0000
 
     [BOT] post-merge updates
 
@@ -603,11 +603,16 @@ Date:   Mon Jun 10 13:39:36 2024 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit d2642cb399dd5f2bb05e520827c2e10934068d75
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 15 07:55:03 2024 +0000
+commit a3d459a8485974f5a16e4d512659597033e591b6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 9 08:40:23 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (101 of 101 strings)
+    
+    Translation: hr-expense-15.0/hr-expense-15.0-hr_expense_advance_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-15-0/hr-expense-15-0-hr_expense_advance_overdue_reminder/it/
 
 
 ## hr-holidays
@@ -973,9 +978,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit d9d5e500a58d3db1e9b3d70367416cfea8bebb7a
+commit de2eda5909703302a704546ee2811866a873262e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 10:27:26 2024 +0000
+Date:   Tue Oct 8 18:37:44 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1066,16 +1071,11 @@ Date:   Wed May 1 18:41:38 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 70654838255a2c6bac4471a5e537f2d1555cfbc0
-Author: Nikolaus Weingartmair <nikolaus.weingartmair@grueneerde.com>
-Date:   Mon Aug 5 10:17:07 2024 +0000
+commit 9a9021bfa66945876bc8691d4ad6296b7af470a3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Oct 7 11:46:02 2024 +0000
 
-    Translated using Weblate (German)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: delivery-carrier-15.0/delivery-carrier-15.0-delivery_carrier_info
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-15-0/delivery-carrier-15-0-delivery_carrier_info/de/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1107,9 +1107,9 @@ Date:   Wed May 1 19:11:39 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit f5570eb6cef36204a760397968341ebab90055a6
+commit c69ae09141f54b5b4e8ab0397dc540231771f631
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 27 13:39:46 2024 +0000
+Date:   Mon Oct 7 15:45:47 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1236,11 +1236,16 @@ Date:   Wed Aug 7 10:18:19 2024 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 6dc0923e2f2fc633d455a76f14988f1cc9013e99
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 23 17:24:03 2024 +0000
+commit 419d14572ca42ddf023bb80a38e25c3f16ab83c4
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Oct 7 09:30:08 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: product-attribute-15.0/product-attribute-15.0-product_assortment
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_assortment/
 
 
 ## product-kitting
@@ -1665,11 +1670,14 @@ Date:   Fri Oct 27 22:57:06 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit b7c5ae2320606624fd4684ff88eaf1ab58e7ed25
+commit f221909b7768dd0154831399566cf81158e4d23e
+Merge: 4873b640d 074f23f0a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 20 11:33:28 2024 +0000
+Date:   Wed Oct 9 10:27:32 2024 +0000
 
-    [BOT] post-merge updates
+    Merge PR #2950 into 15.0
+    
+    Signed-off-by pedrobaeza
 
 
 ## website

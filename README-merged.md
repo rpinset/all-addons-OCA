@@ -1881,7 +1881,7 @@ addon | version | maintainers | summary
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.3.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
-[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.1.0 |  | Sale planner calendar
+[sale_planner_calendar](sale_planner_calendar/) | 15.0.2.1.1 |  | Sale planner calendar
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 15.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 15.0.1.2.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 15.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
@@ -5098,7 +5098,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.6.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.7.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.10.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
@@ -5107,7 +5107,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.1.1 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.21.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.21.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 15.0.1.1.0 |  | Suministro Inmediato de Información de importaciones con DUA
@@ -5612,7 +5612,7 @@ addon | version | maintainers | summary
 [delivery_cttexpress](delivery_cttexpress/) | 15.0.1.1.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 15.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.2 |  | Multiple destinations for the same delivery method
-[delivery_package_number](delivery_package_number/) | 15.0.2.2.0 |  | Set or compute number of packages for a picking
+[delivery_package_number](delivery_package_number/) | 15.0.2.2.1 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 15.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 15.0.1.0.0 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
 [delivery_purchase](delivery_purchase/) | 15.0.1.2.0 |  | Delivery costs in purchases
@@ -5912,6 +5912,7 @@ addon | version | maintainers | summary
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 15.0.1.0.0 |  | Lock down stock locations during inventories.
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
+[stock_location_position](stock_location_position/) | 15.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
 [stock_lot_filter_available](stock_lot_filter_available/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allow to filter lots by available on stock
 [stock_move_location](stock_move_location/) | 15.0.1.5.1 |  | This module allows to move all stock in a stock location to an other one.
@@ -5942,6 +5943,7 @@ addon | version | maintainers | summary
 [stock_request_tier_validation](stock_request_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Stock Requests to support a tier validation process.
 [stock_reserve](stock_reserve/) | 15.0.1.2.1 |  | Stock reservations on products
 [stock_reserve_rule](stock_reserve_rule/) | 15.0.1.0.1 |  | Configure reservation rules by location
+[stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 15.0.1.0.0 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 15.0.2.2.0 |  | Get product quantities in a secondary unit
 [stock_valuation_layer_accounting_date](stock_valuation_layer_accounting_date/) | 15.0.1.0.0 |  | Stock Valuation Layer Accounting Date
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 15.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
@@ -6655,7 +6657,7 @@ addon | version | maintainers | summary
 [nutritional_info_stock_lot](nutritional_info_stock_lot/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Nutritional information for lots.
 [product_abc_classification](product_abc_classification/) | 15.0.1.0.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Includes ABC classification for inventory management
 [product_abc_classification_sale](product_abc_classification_sale/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Includes ABC classification for inventory management
-[product_assortment](product_assortment/) | 15.0.2.0.1 |  | Adds the ability to manage products assortment
+[product_assortment](product_assortment/) | 15.0.2.1.0 |  | Adds the ability to manage products assortment
 [product_attachment_zipped_download](product_attachment_zipped_download/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product Attachment Zipped Download
 [product_attribute_archive](product_attribute_archive/) | 15.0.1.0.1 |  | Add an active field on product attributes
 [product_attribute_value_menu](product_attribute_value_menu/) | 15.0.1.1.1 |  | Product attributes values tree and form. Import attribute values.
@@ -8844,7 +8846,7 @@ addon | version | maintainers | summary
 [web_m2x_options](web_m2x_options/) | 15.0.1.1.1 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 15.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 15.0.1.0.0 |  | Remove the bubbles from the web interface
-[web_notify](web_notify/) | 15.0.2.1.0 |  | Send notification messages to user
+[web_notify](web_notify/) | 15.0.2.1.1 |  | Send notification messages to user
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 15.0.1.0.5 |  | Web Pivot Computed Measure
 [web_pwa_oca](web_pwa_oca/) | 15.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
 [web_refresher](web_refresher/) | 15.0.2.0.1 |  | Web Refresher
