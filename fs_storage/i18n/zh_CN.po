@@ -27,6 +27,17 @@ msgid "Available properties"
 msgstr "可用属性"
 
 #. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_storage__check_connection_method
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__check_connection_method
+msgid "Check Connection Method"
+msgstr ""
+
+#. module: fs_storage
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
+msgid "Close"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__code
 msgid "Code"
 msgstr "代码"
@@ -46,12 +57,21 @@ msgid "Connection Test Succeeded!"
 msgstr "连接测试成功！"
 
 #. module: fs_storage
+#. odoo-python
+#: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
+msgid "Create Marker file"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__create_uid
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__create_uid
 msgid "Created by"
 msgstr "创建者"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__create_date
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__create_date
 msgid "Created on"
 msgstr "创建于"
 
@@ -72,6 +92,7 @@ msgstr "目录路径环境默认值"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__display_name
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__display_name
 msgid "Display Name"
 msgstr "目录路径环境默认值"
 
@@ -98,7 +119,18 @@ msgid "FS Storage"
 msgstr "文件系统存储"
 
 #. module: fs_storage
+#: model:ir.actions.act_window,name:fs_storage.act_open_fs_test_connection_view
+msgid "FS Test Connection"
+msgstr ""
+
+#. module: fs_storage
+#: model:ir.model,name:fs_storage.model_fs_test_connection
+msgid "FS Test Connection Wizard"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__id
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__id
 msgid "ID"
 msgstr "ID"
 
@@ -109,13 +141,22 @@ msgstr "JSON选项"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__write_uid
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__write_uid
 msgid "Last Updated by"
 msgstr "最后更新者"
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__write_date
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__write_date
 msgid "Last Updated on"
 msgstr "最后更新于"
+
+#. module: fs_storage
+#. odoo-python
+#: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
+msgid "List File"
+msgstr ""
 
 #. module: fs_storage
 #: model:ir.model.fields,field_description:fs_storage.field_fs_storage__name
@@ -180,20 +221,40 @@ msgid "Server Env Defaults"
 msgstr "服务器环境默认值"
 
 #. module: fs_storage
+#: model:ir.model.fields,help:fs_storage.field_fs_storage__check_connection_method
+msgid ""
+"Set a method if you want the connection to remote to be checked every time "
+"the storage is used, in order to remove the obsolete connection from the "
+"cache.\n"
+"* Create Marker file : Create a file on remote and check it exists\n"
+"* List File : List all files from root directory"
+msgstr ""
+
+#. module: fs_storage
+#: model:ir.model.fields,field_description:fs_storage.field_fs_test_connection__storage_id
+msgid "Storage"
+msgstr ""
+
+#. module: fs_storage
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__code
 msgid ""
 "Technical code used to identify the storage backend into the code.This code "
 "must be unique. This code is used for example to define the storage backend "
-"to store the attachments via the configuration parameter "
-"'ir_attachment.storage.force.database' when the module 'fs_attachment' is "
-"installed."
+"to store the attachments via the configuration parameter 'ir_attachment."
+"storage.force.database' when the module 'fs_attachment' is installed."
 msgstr ""
-"用于在代码中标识存储后端的技术代码。此代码必须是唯一的。例如，当安装'fs_attac"
-"hment'模块时，此代码用于通过配置参数'ir_attachment.storage.force."
+"用于在代码中标识存储后端的技术代码。此代码必须是唯一的。例如，当安"
+"装'fs_attachment'模块时，此代码用于通过配置参数'ir_attachment.storage.force."
 "database'定义存储附件的存储后端。"
 
 #. module: fs_storage
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
+msgid "Test Connection"
+msgstr ""
+
+#. module: fs_storage
 #: model_terms:ir.ui.view,arch_db:fs_storage.fs_storage_form_view
+#: model_terms:ir.ui.view,arch_db:fs_storage.fs_test_connection_form_view
 msgid "Test connection"
 msgstr "测试连接"
 
@@ -230,7 +291,8 @@ msgid ""
 "    }\n"
 "}\n"
 "For more information, please refer to the fsspec documentation:\n"
-"https://filesystem-spec.readthedocs.io/en/latest/api.html#built-in-implementations"
+"https://filesystem-spec.readthedocs.io/en/latest/api.html#built-in-"
+"implementations"
 msgstr ""
 "用于初始化文件系统的选项。\n"
 "这是一个依赖于所使用的协议的JSON字段。\n"
@@ -253,8 +315,11 @@ msgstr ""
 #: model:ir.model.fields,help:fs_storage.field_fs_storage__x_protocol_env_default
 msgid ""
 "The protocol used to access the content of filesystem.\n"
-"This list is the one supported by the fsspec library (see https://filesystem-spec.readthedocs.io/en/latest). A filesystem protocolis added by default and refers to the odoo local filesystem.\n"
-"Pay attention that according to the protocol, some options must beprovided through the options field."
+"This list is the one supported by the fsspec library (see https://filesystem-"
+"spec.readthedocs.io/en/latest). A filesystem protocolis added by default and "
+"refers to the odoo local filesystem.\n"
+"Pay attention that according to the protocol, some options must beprovided "
+"through the options field."
 msgstr ""
 "用于访问文件系统内容的协议。\n"
 "此列表是fsspec库支持的（见 https://filesystem-spec.readthedocs.io/en/"
