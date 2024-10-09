@@ -150,7 +150,7 @@ addon | version | maintainers | summary
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 14.0.1.0.3 |  | Generic fiscal year closing wizard
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 [account_invoice_start_end_dates_move](account_invoice_start_end_dates_move/) | 14.0.1.0.0 |  | Add the possibility to choose start and end dates on account invoice.
-[account_move_cutoff](account_move_cutoff/) | 14.0.0.0.2 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Account move Cut-offs, manage Deferred Revenues/Expenses
+[account_move_cutoff](account_move_cutoff/) | 14.0.0.1.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Account move Cut-offs, manage Deferred Revenues/Expenses
 [account_multicurrency_revaluation](account_multicurrency_revaluation/) | 14.0.2.0.2 |  | Manage revaluation for multicurrency environment
 
 [//]: # (end addons)
@@ -1951,7 +1951,7 @@ addon | version | maintainers | summary
 [sale_order_line_description_single_attribute](sale_order_line_description_single_attribute/) | 14.0.1.0.0 |  | Shows single value attributes name in the sale order line description
 [sale_order_line_discount_validation](sale_order_line_discount_validation/) | 14.0.2.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Review discounts before sales order are printed, sent or confirmed
 [sale_order_line_initial_quantity](sale_order_line_initial_quantity/) | 14.0.1.0.1 |  | Allows to display the initial quantity when the quantity has been modified on the command line.
-[sale_order_line_input](sale_order_line_input/) | 14.0.1.0.0 |  | Search, create or modify directly sale order lines
+[sale_order_line_input](sale_order_line_input/) | 14.0.1.0.1 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 14.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 14.0.1.0.0 |  | Note on sale order line
 [sale_order_line_packaging_qty](sale_order_line_packaging_qty/) | 14.0.1.1.1 |  | Define quantities according to product packaging on sale order lines
@@ -2018,7 +2018,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 14.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 14.0.1.1.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_transaction_form_link](sale_transaction_form_link/) | 14.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to display a link to payment transactions on Sale Order form view.
-[sale_triple_discount](sale_triple_discount/) | 14.0.2.0.0 |  | Manage triple discount on sale order lines
+[sale_triple_discount](sale_triple_discount/) | 14.0.2.0.1 |  | Manage triple discount on sale order lines
 [sale_validity](sale_validity/) | 14.0.1.0.2 |  | Set a default validity delay on quotations
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 14.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Automatically cancel quotations after validity period.
 [sale_wishlist](sale_wishlist/) | 14.0.1.0.2 |  | Handle sale wishlist for partners
@@ -5431,6 +5431,7 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 14.0.1.2.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 14.0.1.1.1 |  | Suministro Inmediato de Información de importaciones con DUA
 [l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 14.0.1.1.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
+[l10n_es_extra_data](l10n_es_extra_data/) | 14.0.1.0.0 | [![acysos](https://github.com/acysos.png?size=30px)](https://github.com/acysos) | Datos extra de la localización española
 [l10n_es_facturae](l10n_es_facturae/) | 14.0.2.7.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_efact](l10n_es_facturae_efact/) | 14.0.1.1.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a e.FACT
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 14.0.2.6.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
@@ -6280,7 +6281,7 @@ addon | version | maintainers | summary
 [procurement_auto_create_group](procurement_auto_create_group/) | 14.0.1.3.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [procurement_auto_create_group_by_product](procurement_auto_create_group_by_product/) | 14.0.1.1.0 |  | Generate one picking per product on the procurement run.
 [product_quantity_update_force_inventory](product_quantity_update_force_inventory/) | 14.0.1.0.1 |  | Product Quantity Update Force Inventory
-[product_route_profile](product_route_profile/) | 14.0.1.0.3 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Add Route profile concept on product
+[product_route_profile](product_route_profile/) | 14.0.1.0.4 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Add Route profile concept on product
 [sale_stock_on_hand_popup](sale_stock_on_hand_popup/) | 14.0.2.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Stock On Hand Popup
 [scrap_location_filter](scrap_location_filter/) | 14.0.1.0.0 | [![opensourceintegrators](https://github.com/opensourceintegrators.png?size=30px)](https://github.com/opensourceintegrators) | Filters scrap location
 [scrap_reason_code](scrap_reason_code/) | 14.0.1.1.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
@@ -6291,6 +6292,7 @@ addon | version | maintainers | summary
 [stock_available_immediately_exclude_location](stock_available_immediately_exclude_location/) | 14.0.1.0.1 |  | Exclude locations from immediately usable quantity
 [stock_available_mrp](stock_available_mrp/) | 14.0.1.0.6 |  | Consider the production potential is available to promise
 [stock_available_portal](stock_available_portal/) | 14.0.1.0.0 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Show product quantity available to promise in portal
+[stock_available_stock_mts_mto_rule](stock_available_stock_mts_mto_rule/) | 14.0.1.0.0 |  | Stock Avaiable Stock Mts Mto Rule
 [stock_available_unreserved](stock_available_unreserved/) | 14.0.1.2.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 14.0.1.0.2 |  | Stock Quantity Change Reason
 [stock_cycle_count](stock_cycle_count/) | 14.0.1.4.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
@@ -6299,7 +6301,7 @@ addon | version | maintainers | summary
 [stock_exception](stock_exception/) | 14.0.1.0.2 |  | Custom exceptions on stock picking
 [stock_free_quantity](stock_free_quantity/) | 14.0.1.2.0 |  | Stock Free Quantity
 [stock_generate_putaway_from_inventory](stock_generate_putaway_from_inventory/) | 14.0.1.0.0 | [![pierrickbrun](https://github.com/pierrickbrun.png?size=30px)](https://github.com/pierrickbrun) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Generate Putaway locations per Product deduced from Inventory
-[stock_helper](stock_helper/) | 14.0.1.2.1 |  | Add methods shared between various stock modules
+[stock_helper](stock_helper/) | 14.0.1.3.0 |  | Add methods shared between various stock modules
 [stock_inventory_cost_info](stock_inventory_cost_info/) | 14.0.1.0.0 |  | Shows the cost of the inventory adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 14.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_exclude_sublocation](stock_inventory_exclude_sublocation/) | 14.0.1.0.1 |  | Allow to perform inventories of a location without including its child locations.
@@ -6329,8 +6331,8 @@ addon | version | maintainers | summary
 [stock_move_common_dest](stock_move_common_dest/) | 14.0.1.0.1 |  | Adds field for common destination moves
 [stock_move_location](stock_move_location/) | 14.0.1.4.3 |  | This module allows to move all stock in a stock location to an other one.
 [stock_mts_mto_mrp_rule](stock_mts_mto_mrp_rule/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Stock MTS+MTO MRP Rule
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 14.0.1.2.0 |  | Add a MTS+MTO route
-[stock_orderpoint_generator](stock_orderpoint_generator/) | 14.0.1.0.0 |  | Mass configuration of stock order points
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 14.0.2.0.0 |  | Add a MTS+MTO route
+[stock_orderpoint_generator](stock_orderpoint_generator/) | 14.0.1.0.1 |  | Mass configuration of stock order points
 [stock_orderpoint_manual_procurement](stock_orderpoint_manual_procurement/) | 14.0.1.0.5 |  | Allows to create procurement orders from orderpoints instead of relying only on the scheduler.
 [stock_orderpoint_manual_procurement_uom](stock_orderpoint_manual_procurement_uom/) | 14.0.1.0.2 |  | Glue module for stock_orderpoint_uom and stock_orderpoint_manual_procurement
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 14.0.1.0.2 |  | Link Reordering rules to stock moves

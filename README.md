@@ -52,11 +52,16 @@ Date:   Wed Sep 11 06:37:33 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 7cb28fd48a24cead5b9fd0ecff00e3f537ae3dee
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 29 22:08:24 2024 +0000
+commit cb24fe70a75f0712f6f86cbae0c21e0d48c93f9d
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Oct 8 09:48:34 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-closing-14.0/account-closing-14.0-account_move_cutoff
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_move_cutoff/
 
 
 ## account-consolidation
@@ -181,16 +186,16 @@ Date:   Fri Aug 30 07:38:30 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 9aae1f7b5a9f2dcaad8b267b8d36182849ae156e
+commit 1a7390834e2bbcea705d61e7d16cde7e772fff69
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 24 14:50:40 2024 +0000
+Date:   Wed Oct 9 07:44:34 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (87 of 87 strings)
+    Currently translated at 98.3% (178 of 181 strings)
     
-    Translation: credit-control-14.0/credit-control-14.0-account_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_financial_risk/it/
+    Translation: credit-control-14.0/credit-control-14.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_invoice_overdue_reminder/it/
 
 
 ## data-protection
@@ -401,9 +406,9 @@ Date:   Wed May 1 18:02:11 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 25ead280aed8644cd84c814969d14e4077af39a7
+commit 5fbb6add9925a75506eb6c8d420f4119a8ed858b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 25 07:39:15 2024 +0000
+Date:   Wed Oct 9 15:46:29 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1035,11 +1040,11 @@ Date:   Wed May 1 18:35:54 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit b7a95e2b2cdc1593df6377ec0235580af654a78d
+commit a6587f7866ee677fab657b3cf53fe5d1bd014fce
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 19 21:58:45 2024 +0000
+Date:   Tue Oct 8 07:42:07 2024 +0000
 
-    [BOT] post-merge updates
+    [UPD] README.rst
 
 
 ## l10n-switzerland
@@ -1166,9 +1171,9 @@ Date:   Wed May 1 19:11:30 2024 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 93c5fe2ed683705b1b5efae62bba3ff0053a255f
+commit 451baecb9913b6ab40c2d5089439709dc7c985a1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 30 14:42:06 2024 +0000
+Date:   Wed Oct 9 14:57:02 2024 +0000
 
     [BOT] post-merge updates
 
