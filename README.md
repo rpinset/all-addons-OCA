@@ -206,16 +206,16 @@ Date:   Thu Aug 1 10:18:58 2024 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 305d0a2c245dedae2499802e04f9834a50f0634f
+commit 231ae9fff6863f6f5b20429e6c1e52ea2f6e54a4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 24 14:50:42 2024 +0000
+Date:   Wed Oct 9 08:57:02 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (87 of 87 strings)
+    Currently translated at 94.7% (179 of 189 strings)
     
-    Translation: credit-control-12.0/credit-control-12.0-account_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_financial_risk/it/
+    Translation: credit-control-12.0/credit-control-12.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-12-0/credit-control-12-0-account_invoice_overdue_reminder/it/
 
 
 ## data-protection
@@ -575,9 +575,9 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit bd6ec01c84d83dc5a3d7149167332a27066269cf
+commit e645f79330aa61f3840332896da3fd8c8b35c42f
 Author: Weblate <noreply@weblate.org>
-Date:   Fri Aug 23 09:27:07 2024 +0000
+Date:   Wed Oct 9 08:31:22 2024 +0000
 
     Update translation files
     
