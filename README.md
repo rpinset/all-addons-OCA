@@ -1454,16 +1454,16 @@ Date:   Sun Sep 3 15:37:11 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 32982294dac724258e48637354bf3db65c54825d
+commit cb4efc2ba5a6455979642953186300573ee7a15c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:38:02 2024 +0000
+Date:   Thu Oct 10 07:53:42 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (77 of 77 strings)
+    Currently translated at 100.0% (72 of 72 strings)
     
-    Translation: project-13.0/project-13.0-project_role
-    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_role/it/
+    Translation: project-13.0/project-13.0-project_timesheet_time_control
+    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_timesheet_time_control/it/
 
 
 ## project-agile
