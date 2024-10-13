@@ -1133,16 +1133,11 @@ Date:   Wed Sep 18 07:26:59 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 6ba35a17d56f987d78bbc2ebd2307b55ba8c0ee3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:42:07 2024 +0000
+commit 56a65221fc874c721727ae1f3fe1a654295578ce
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 9 23:16:12 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (12 of 12 strings)
-    
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_line_auto_fill
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_line_auto_fill/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
