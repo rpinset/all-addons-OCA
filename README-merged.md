@@ -95,7 +95,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_budget_oca](account_budget_oca/) | 16.0.1.0.1 |  | Budgets Management
+[account_budget_oca](account_budget_oca/) | 16.0.1.0.2 |  | Budgets Management
 
 [//]: # (end addons)
 
@@ -142,7 +142,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_cutoff_accrual_subscription](account_cutoff_accrual_subscription/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued expenses based on subscriptions
-[account_cutoff_base](account_cutoff_base/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Account Cut-offs
+[account_cutoff_base](account_cutoff_base/) | 16.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Base module for Account Cut-offs
 [account_cutoff_picking](account_cutoff_picking/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued and prepaid expense/revenue from pickings
 [account_cutoff_start_end_dates](account_cutoff_start_end_dates/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Cutoffs based on start/end dates
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
@@ -2662,7 +2662,7 @@ addon | version | maintainers | summary
 [base_edi](base_edi/) | 16.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_edifact](base_edifact/) | 16.0.1.5.1 | [![rmorant](https://github.com/rmorant.png?size=30px)](https://github.com/rmorant) | UN/EDIFACT/D96A utilities using pydifact parser
 [base_facturx](base_facturx/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_ubl](base_ubl/) | 16.0.1.1.0 |  | Base module for Universal Business Language (UBL)
+[base_ubl](base_ubl/) | 16.0.1.1.1 |  | Base module for Universal Business Language (UBL)
 [base_wamas_ubl](base_wamas_ubl/) | 16.0.1.13.0 |  | Base module to aggregate WAMAS - UBL features.
 [despatch_advice_import](despatch_advice_import/) | 16.0.1.2.0 |  | Despatch Advice import
 [despatch_advice_import_ubl](despatch_advice_import_ubl/) | 16.0.1.1.0 |  | Import Despatch Advice files
@@ -2715,11 +2715,11 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 16.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 16.0.1.8.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 16.0.1.8.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 16.0.2.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 16.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_activity](fieldservice_activity/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
-[fieldservice_calendar](fieldservice_calendar/) | 16.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
+[fieldservice_calendar](fieldservice_calendar/) | 16.0.1.0.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 16.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 16.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
 [fieldservice_geoengine](fieldservice_geoengine/) | 16.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
@@ -3015,9 +3015,10 @@ addon | version | maintainers | summary
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.0 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_invoice_link](sale_timesheet_invoice_link/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Link invoices with timesheet lines
-[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.1.0 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.1.1 |  | Exclude Timesheet Line from Sale Order
 [sale_timesheet_rounded](sale_timesheet_rounded/) | 16.0.1.0.0 |  | Round timesheet entries amount based on project settings.
 [sale_timesheet_task_exclude](sale_timesheet_task_exclude/) | 16.0.1.0.0 |  | Exclude Task and related Timesheets from Sale Order
+[sale_timesheet_timeline](sale_timesheet_timeline/) | 16.0.1.0.0 |  | Dates planning in sales order lines
 
 [//]: # (end addons)
 
@@ -4786,7 +4787,7 @@ addon | version | maintainers | summary
 [l10n_nl_bank](l10n_nl_bank/) | 16.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_bsn](l10n_nl_bsn/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Burgerservicenummer (BSN) for Partners
 [l10n_nl_oin](l10n_nl_oin/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds Dutch OIN field
-[l10n_nl_partner_name](l10n_nl_partner_name/) | 16.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
+[l10n_nl_partner_name](l10n_nl_partner_name/) | 16.0.1.0.1 |  | Adapt parter names to Dutch conventions (support infix)
 [l10n_nl_postcode](l10n_nl_postcode/) | 16.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Dutch postcode validation for Partners
 [l10n_nl_tax_statement](l10n_nl_tax_statement/) | 16.0.1.0.2 |  | Netherlands BTW Statement
 [l10n_nl_tax_statement_date_range](l10n_nl_tax_statement_date_range/) | 16.0.1.0.0 |  | Netherlands BTW Statement - Date range
@@ -5148,7 +5149,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.7.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.7.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.0.1 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.7.3 |  | AEAT modelo 347
@@ -5743,7 +5744,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[barcodes_generator_abstract](barcodes_generator_abstract/) | 16.0.3.0.4 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Any Models
+[barcodes_generator_abstract](barcodes_generator_abstract/) | 16.0.3.0.5 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 16.0.1.0.0 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_package](barcodes_generator_package/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Product Packaging
 [barcodes_generator_product](barcodes_generator_product/) | 16.0.2.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Products (Templates and Variants)
@@ -6160,6 +6161,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 16.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 [rma](rma/) | 16.0.3.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
 [rma_sale](rma_sale/) | 16.0.3.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 [rma_sale_mrp](rma_sale_mrp/) | 16.0.2.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow doing RMAs from MRP kits
 
@@ -6818,12 +6820,12 @@ addon | version | maintainers | summary
 [product_net_weight](product_net_weight/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
 [product_optional_product_quantity](product_optional_product_quantity/) | 16.0.1.1.0 |  | Specify optional products quantity for product
 [product_origin](product_origin/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds the origin of the product
-[product_packaging_container_deposit](product_packaging_container_deposit/) | 16.0.1.1.2 |  | Add container deposit fees in a order
+[product_packaging_container_deposit](product_packaging_container_deposit/) | 16.0.1.2.0 |  | Add container deposit fees in a order
 [product_packaging_dimension](product_packaging_dimension/) | 16.0.1.1.1 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 16.0.1.2.0 |  | This module binds a product packaging to a packaging level
 [product_packaging_level_purchasable](product_packaging_level_purchasable/) | 16.0.1.1.0 |  | Control purchase of products via packaging settings.
 [product_packaging_level_salable](product_packaging_level_salable/) | 16.0.1.0.0 |  | Product Packaging level salable
-[product_pricelist_alternative](product_pricelist_alternative/) | 16.0.1.1.0 |  | Calculate product price based on alternative pricelists
+[product_pricelist_alternative](product_pricelist_alternative/) | 16.0.1.2.0 |  | Calculate product price based on alternative pricelists
 [product_pricelist_direct_print](product_pricelist_direct_print/) | 16.0.1.2.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 16.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Extend Product Pricelist Direct Print for filter by public categories
@@ -7231,6 +7233,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [agreement_rebate_partner_company_group](agreement_rebate_partner_company_group/) | 16.0.1.0.0 |  | Rebate agreements applied to all company group members
 [contract](contract/) | 16.0.2.10.0 |  | Recurring - Contracts Management
+[contract_analytic_tag](contract_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Contract Analytic Tag
 [contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Contract Invoice Start End Dates
 [contract_mandate](contract_mandate/) | 16.0.1.0.0 |  | Mandate in contracts and their invoices
 [contract_payment_mode](contract_payment_mode/) | 16.0.1.0.0 |  | Payment mode in contracts and their invoices
@@ -7612,7 +7615,7 @@ addon | version | maintainers | summary
 [connector_elasticsearch](connector_elasticsearch/) | 16.0.0.1.1 |  | Connector For Elasticsearch Search Engine
 [connector_search_engine](connector_search_engine/) | 16.0.0.1.12 |  | Connector Search Engine
 [connector_search_engine_serializer_ir_export](connector_search_engine_serializer_ir_export/) | 16.0.1.0.2 |  | Use Exporter (ir.exports) as serializer for index
-[search_engine_image_thumbnail](search_engine_image_thumbnail/) | 16.0.1.0.6 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Generate thumbnails for binded record
+[search_engine_image_thumbnail](search_engine_image_thumbnail/) | 16.0.1.0.7 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Generate thumbnails for binded record
 [search_engine_serializer_pydantic](search_engine_serializer_pydantic/) | 16.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Defines base class for pydantic baser serializer
 
 
@@ -9143,6 +9146,7 @@ addon | version | maintainers | summary
 [website_forum_subscription](website_forum_subscription/) | 16.0.1.0.0 |  | Adds a button to allow subscription from the website
 [website_google_tag_manager](website_google_tag_manager/) | 16.0.1.0.1 |  | Add support for Google Tag Manager
 [website_legal_page](website_legal_page/) | 16.0.1.1.0 |  | Website Legal Page
+[website_menu_by_user_status](website_menu_by_user_status/) | 16.0.1.0.0 |  | Allow to manage the display of website.menus
 [website_odoo_debranding](website_odoo_debranding/) | 16.0.1.0.0 |  | Remove Odoo Branding from Website
 [website_require_login](website_require_login/) | 16.0.1.0.0 |  | Website Login Required
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 16.0.1.0.0 |  | Allow to select country in a dropdown
