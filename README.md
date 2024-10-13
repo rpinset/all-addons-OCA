@@ -1135,9 +1135,9 @@ Date:   Wed May 1 18:41:29 2024 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 20cc426e5749661d2c8a47cb827b3d766af3d86b
+commit 85abe2ce944dcebb7e14843e0540b18dbd627026
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 23 10:02:13 2024 +0000
+Date:   Fri Oct 11 08:38:10 2024 +0000
 
     [BOT] post-merge updates
 
@@ -1263,16 +1263,11 @@ Date:   Wed Sep 18 07:14:12 2024 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 864c409da0d5e8e103e4b3724d429db89f3ff350
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 23 15:20:13 2024 +0000
+commit e4d59277b96e1e76d4d9cd2364426a8b01f77785
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Oct 11 07:47:34 2024 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: pms-14.0/pms-14.0-pms_l10n_es
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms_l10n_es/
+    [BOT] post-merge updates
 
 
 ## purchase-workflow
