@@ -461,11 +461,16 @@ Date:   Tue Aug 13 14:33:14 2024 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 6b9d5c660fa892d6854db55ae1df27772b54da2a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 22 11:24:16 2024 +0000
+commit 4f51218957edf097279dc753c45b8ceb95abd18e
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Oct 11 18:28:32 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: survey-15.0/survey-15.0-survey_crm_generation
+    Translate-URL: https://translation.odoo-community.org/projects/survey-15-0/survey-15-0-survey_crm_generation/
 
 
 ## knowledge
@@ -978,11 +983,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit de2eda5909703302a704546ee2811866a873262e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 8 18:37:44 2024 +0000
+commit f6eee0ca440ade26fa7c8bf11a9a194a38fae826
+Author: Pedro M. Baeza <pedro.baeza@gmail.com>
+Date:   Sat Oct 12 11:29:08 2024 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 98.9% (183 of 185 strings)
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod303/es/
 
 
 ## l10n-switzerland
