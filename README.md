@@ -1326,16 +1326,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 2d8eb8d3008ac220dce03313ef9f2916a856d061
+commit c8a6428b87583e14b0df33713a866e135692252c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:42:34 2024 +0000
+Date:   Thu Oct 17 06:29:24 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (24 of 24 strings)
+    Currently translated at 100.0% (157 of 157 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-quality_control_stock_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_stock_oca/it/
+    Translation: manufacture-13.0/manufacture-13.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-quality_control_oca/it/
 
 
 ## manufacture-reporting
@@ -1591,16 +1591,11 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 5d3cbb73f5cf5f471352c76143fc1cf7874577ce
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 18 16:12:32 2024 +0000
+commit c627e4e0c15b578a59da813d9d685acb0f5a3ae7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 16 21:19:05 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 24.3% (18 of 74 strings)
-    
-    Translation: server-tools-13.0/server-tools-13.0-base_import_odoo
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-base_import_odoo/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
