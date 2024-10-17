@@ -1366,7 +1366,7 @@ addon | version | maintainers | summary
 [sale_order_tag](sale_order_tag/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds Tags to Sales Orders.
 [sale_order_transmit_method](sale_order_transmit_method/) | 12.0.1.0.0 |  | Set transmit method (email, post, portal, ...) in sale order and propagate it to invoices
 [sale_order_type](sale_order_type/) | 12.0.1.3.0 |  | Sale Order Type
-[sale_order_weight](sale_order_weight/) | 12.0.1.0.2 |  | Sale Order Weight
+[sale_order_weight](sale_order_weight/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Sale Order Weight
 [sale_partner_incoterm](sale_partner_incoterm/) | 12.0.1.0.1 |  | Set the customer preferred incoterm on each sales order
 [sale_pricelist_technical](sale_pricelist_technical/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Prevent some pricelists from being selected on order and customer forms
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 12.0.1.0.0 |  | Groups pickings based on commitment date of order line
@@ -3622,7 +3622,7 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 12.0.1.2.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 12.0.1.1.2 |  | Suministro Inmediato de Información de importaciones con DUA
 [l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 12.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
-[l10n_es_extra_data](l10n_es_extra_data/) | 12.0.3.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Datos extra de la localización española
+[l10n_es_extra_data](l10n_es_extra_data/) | 12.0.4.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Datos extra de la localización española
 [l10n_es_facturae](l10n_es_facturae/) | 12.0.3.2.0 |  | Creación de Factura-e
 [l10n_es_facturae_efact](l10n_es_facturae_efact/) | 12.0.1.0.3 |  | Envío de Factura-e a e.FACT
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 12.0.1.1.1 |  | Envío de Factura-e a FACe
@@ -5501,7 +5501,7 @@ addon | version | maintainers | summary
 [ir_sequence_standard_default](ir_sequence_standard_default/) | 12.0.1.0.0 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) | Use Standard implementation of ir.sequence instead of NoGap
 [letsencrypt](letsencrypt/) | 12.0.2.0.1 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 12.0.1.0.0 |  | Mark as read or delete mails after a set time
-[module_analysis](module_analysis/) | 12.0.1.0.5 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
+[module_analysis](module_analysis/) | 12.0.1.0.6 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 12.0.2.0.7 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [nsca_client](nsca_client/) | 12.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.

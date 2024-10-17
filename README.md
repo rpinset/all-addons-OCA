@@ -234,16 +234,16 @@ Date:   Thu Oct 3 08:18:16 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 0fad42c3192d43ae769360ecaf9b293c75a1d88c
+commit 04108d2dfa00a8d20bcc01a9ed5d103245168267
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 31 09:43:02 2024 +0000
+Date:   Thu Oct 17 12:24:04 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 31.3% (57 of 182 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_pain_base/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_partner
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_partner/it/
 
 
 ## account-reconcile
@@ -426,16 +426,11 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 9530d7a856b3121450d6d78d6b666de8052f90df
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 1 10:01:19 2024 +0000
+commit eec73a21aad9fd76a781a4aae8287c33f4f75d1a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 16 08:41:53 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (66 of 66 strings)
-    
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_plan
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_plan/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -505,9 +500,9 @@ Date:   Fri May 17 08:06:50 2024 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit e879bb63a693e8e4cbfb3c5cfa2a3833ada5d3f1
+commit af4f23b82ec0dcd1398ba650b46d4824ca099ade
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Apr 4 09:16:43 2024 +0000
+Date:   Tue Oct 15 07:41:12 2024 +0000
 
     Translated using Weblate (Italian)
     
@@ -1010,16 +1005,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 260551614ae6036d95094c8882d2160b76c40841
-Author: Eugeni Chafer <eugeni@chafer.cat>
-Date:   Thu Aug 1 06:54:51 2024 +0000
+commit d55b49c1a37ebc0eaddfde2f44ff96017cbe7572
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Oct 16 11:21:10 2024 +0000
 
-    Translated using Weblate (Catalan)
+    Update translation files
     
-    Currently translated at 14.1% (30 of 212 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_sii
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_sii/ca/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_sii/
 
 
 ## l10n-switzerland
@@ -1216,16 +1211,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit f7afa783f6ffa650f3e46b2305b1870e81fc999f
+commit f31ca82ccb7374410ecade735a87e719bf37cc8f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Aug 22 07:41:14 2024 +0000
+Date:   Thu Oct 17 06:29:13 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_grouped_by_product
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_grouped_by_product/it/
+    Translation: manufacture-12.0/manufacture-12.0-quality_control_stock
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-quality_control_stock/it/
 
 
 ## manufacture-reporting
@@ -1484,16 +1479,11 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 4c11359c056487996aec4a3b4e525e06ddde9dd4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 3 07:39:40 2024 +0000
+commit d65729743ae54a2e46d5b3953aa7f0cdc88aba23
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 16 21:20:06 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 84.8% (151 of 178 strings)
-    
-    Translation: server-tools-12.0/server-tools-12.0-excel_import_export
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-excel_import_export/it/
+    [BOT] post-merge updates
 
 
 ## server-auth
