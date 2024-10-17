@@ -212,6 +212,8 @@ pandas>=0.25.3
 openupgradelib
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/product-kitting.git](https://github.com/OCA/product-kitting.git)
 # From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
 # From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)

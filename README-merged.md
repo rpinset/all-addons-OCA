@@ -239,7 +239,7 @@ addon | version | maintainers | summary
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 15.0.1.0.1 |  | Account Invoice Constraint Chronology
 [account_journal_general_sequence](account_journal_general_sequence/) | 15.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 15.0.1.0.1 |  | Lock each journal independently
-[account_loan](account_loan/) | 15.0.1.0.1 |  | Account Loan management
+[account_loan](account_loan/) | 15.0.1.0.2 |  | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 15.0.1.0.2 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_lock_to_date](account_lock_to_date/) | 15.0.1.0.0 |  | Allows to set an account lock date in the future.
 [account_maturity_date_default](account_maturity_date_default/) | 15.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Maturity Date Default
@@ -308,7 +308,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.2.12.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 15.0.2.13.0 |  | OCA Financial Reports
 [account_financial_report_sale](account_financial_report_sale/) | 15.0.1.0.0 |  | OCA Financial Reports Sale
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
@@ -4942,7 +4942,7 @@ addon | version | maintainers | summary
 [l10n_ro_siruta](l10n_ro_siruta/) | 15.0.2.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Siruta
 [l10n_ro_stock](l10n_ro_stock/) | 15.0.2.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
 [l10n_ro_stock_account](l10n_ro_stock_account/) | 15.0.3.41.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
-[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 15.0.2.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
+[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 15.0.2.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 15.0.3.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 15.0.1.1.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 15.0.4.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
@@ -5120,7 +5120,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 15.0.1.1.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 15.0.2.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 15.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 15.0.1.1.0 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 15.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 15.0.1.0.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 15.0.2.0.3 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 15.0.1.0.0 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Punto de venta adaptado a la legislación española por dispositivo
@@ -6654,7 +6654,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_product_mass_addition](base_product_mass_addition/) | 15.0.1.0.1 |  | Base Product Mass Addition
 [nutritional_info](nutritional_info/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Nutritional information.
-[nutritional_info_stock_lot](nutritional_info_stock_lot/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Nutritional information for lots.
+[nutritional_info_stock_lot](nutritional_info_stock_lot/) | 15.0.1.1.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Nutritional information for lots.
 [product_abc_classification](product_abc_classification/) | 15.0.1.0.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Includes ABC classification for inventory management
 [product_abc_classification_sale](product_abc_classification_sale/) | 15.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Includes ABC classification for inventory management
 [product_assortment](product_assortment/) | 15.0.2.1.0 |  | Adds the ability to manage products assortment
@@ -6671,6 +6671,7 @@ addon | version | maintainers | summary
 [product_custom_info](product_custom_info/) | 15.0.1.0.1 |  | Add custom field in products
 [product_dimension](product_dimension/) | 15.0.1.0.1 |  | Product Dimension
 [product_drained_weight](product_drained_weight/) | 15.0.1.0.0 |  | Add 'Drained Weight' on product models
+[product_ingredient](product_ingredient/) | 15.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Product ingredients
 [product_logistics_uom](product_logistics_uom/) | 15.0.1.0.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
 [product_lot_sequence](product_lot_sequence/) | 15.0.1.1.2 |  | Adds ability to define a lot sequence from the product
 [product_manufacturer](product_manufacturer/) | 15.0.1.0.2 |  | Adds manufacturers and attributes on the product view.
@@ -7321,11 +7322,11 @@ addon | version | maintainers | summary
 [mail_post_defer](mail_post_defer/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_preview_audio](mail_preview_audio/) | 15.0.1.0.0 |  | Allow to preview audio files
 [mail_preview_base](mail_preview_base/) | 15.0.1.0.0 |  | Base to add more previewing options
-[mail_print](mail_print/) | 15.0.1.0.1 |  | Print messages from the chatter of any document.
+[mail_print](mail_print/) | 15.0.1.1.0 |  | Print messages from the chatter of any document.
 [mail_quoted_reply](mail_quoted_reply/) | 15.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_send_copy](mail_send_copy/) | 15.0.1.0.0 |  | Send to you a copy of each mail sent by Odoo
-[mail_show_follower](mail_show_follower/) | 15.0.1.2.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
+[mail_show_follower](mail_show_follower/) | 15.0.1.3.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_tracking](mail_tracking/) | 15.0.3.1.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
@@ -7676,7 +7677,7 @@ addon | version | maintainers | summary
 [iap_alternative_provider](iap_alternative_provider/) | 15.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
 [jsonifier](jsonifier/) | 15.0.1.0.0 |  | Base module that provide the jsonify method on all models
 [letsencrypt](letsencrypt/) | 15.0.1.0.3 |  | Request SSL certificates from letsencrypt.org
-[module_analysis](module_analysis/) | 15.0.1.1.1 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
+[module_analysis](module_analysis/) | 15.0.1.1.2 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 15.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 15.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [monitoring](monitoring/) | 15.0.1.0.0 |  | Generic monitoring of Odoo instances
@@ -8342,7 +8343,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 15.0.1.0.0 |  | Set delegate membership on the contract
 [membership_delegated_partner](membership_delegated_partner/) | 15.0.1.0.0 |  | Delegate membership on a specific partner
-[membership_extension](membership_extension/) | 15.0.1.1.0 |  | Improves user experience of membership addon
+[membership_extension](membership_extension/) | 15.0.1.1.2 |  | Improves user experience of membership addon
 [membership_prorate](membership_prorate/) | 15.0.1.0.1 |  | Prorate membership fee
 [membership_variable_period](membership_variable_period/) | 15.0.1.0.1 |  | Variable period for memberships
 [website_membership_gamification](website_membership_gamification/) | 15.0.1.0.1 |  | Show badges assigned to users on website
