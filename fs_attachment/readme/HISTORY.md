@@ -1,3 +1,16 @@
+## 17.0.1.0.3 (2024-10-15)
+
+### Bugfixes
+
+- No crash o missign file.
+
+  Prior to this change, Odoo was crashing as soon as access to a file stored into
+  an external filesytem was not possible. This can lead to a complete system block.
+  This change prevents this kind of blockage by ignoring access error to files
+  stored into external system on read operations. These kind of errors are logged
+  into the log files for traceability. ([#361](https://github.com/OCA/storage/issues/361))
+
+
 ## 16.0.1.0.8 (2023-12-20)
 
 **Bugfixes**
