@@ -3,7 +3,7 @@
 
 {
     "name": "Suministro Inmediato de Información de importaciones con IRNR",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "development_status": "Alpha",
     "category": "Accounting/Localizations",
     "website": "https://github.com/OCA/l10n-spain",
@@ -13,9 +13,6 @@
     "installable": True,
     "depends": [
         "l10n_es_aeat_sii_oca",
-        "l10n_es_irnr",
     ],
-    "data": [
-        "data/tax_code_map_irnr_sii_data.xml",
-    ],
+    "data": [],
 }
