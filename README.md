@@ -47,16 +47,16 @@ Date:   Wed May 1 17:42:20 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit c59f93c9394fc6254e49167f1a334534efa0bb2c
+commit 57a4018aa50d9913422e5a123dd9a35c7bde7d15
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 22 06:24:59 2024 +0000
+Date:   Mon Oct 21 10:29:02 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 4.5% (5 of 110 strings)
+    Currently translated at 98.4% (131 of 133 strings)
     
-    Translation: account-closing-15.0/account-closing-15.0-account_multicurrency_revaluation
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-15-0/account-closing-15-0-account_multicurrency_revaluation/it/
+    Translation: account-closing-15.0/account-closing-15.0-account_cutoff_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-15-0/account-closing-15-0-account_cutoff_base/it/
 
 
 ## account-consolidation
@@ -79,18 +79,23 @@ Date:   Tue Oct 15 11:54:24 2024 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 3b04d20a32e9e1aea5e3b0af8c9a68a0457dc5aa
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Oct 17 11:36:14 2024 +0000
+commit 51a04e38f3380d0998fc5b2318a8c76ac81eedef
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Oct 19 06:24:21 2024 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/
 
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit e02f3c4d24edfbc9e44d73abf517293fee6e9429
+commit 4d6a89c171f0ccf6e54de5ec6f476552516a9748
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 7 13:23:06 2024 +0000
+Date:   Fri Oct 18 08:15:55 2024 +0000
 
     [BOT] post-merge updates
 
@@ -369,9 +374,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 74a4cb29ef25803b6d0ceaa9a3147a8d9806afe7
+commit 5a00994cd4689fd89daf69b51c77dde786644be2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Oct 8 06:12:10 2024 +0000
+Date:   Mon Oct 21 10:40:24 2024 +0000
 
     [BOT] post-merge updates
 
@@ -978,16 +983,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 2449e5167eec8b590130b88cf07909dc8baabbb8
+commit be68563b65fb117996058cd72adc61c41fa163e5
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Oct 17 11:10:32 2024 +0000
+Date:   Mon Oct 21 18:50:46 2024 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_payment_order_confirming_aef
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_payment_order_confirming_aef/
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod592
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod592/
 
 
 ## l10n-switzerland
@@ -1565,9 +1570,9 @@ Date:   Thu Oct 17 18:51:50 2024 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 98219b0d6272c32a9664fc0a7dbcee8113099c36
+commit 39d9d3f840628bbb54256b0b9940327df59f5720
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 3 15:08:51 2024 +0000
+Date:   Mon Oct 21 10:32:35 2024 +0000
 
     Translated using Weblate (Italian)
     
