@@ -332,7 +332,7 @@ addon | version | maintainers | summary
 [account_comment_template](account_comment_template/) | 17.0.1.0.0 |  | Comments templates on invoice documents
 [account_invoice_bank_details](account_invoice_bank_details/) | 17.0.1.0.1 |  | Select bank account base on currency + print bank details on reportreports and customer portal
 [account_invoice_line_report](account_invoice_line_report/) | 17.0.1.0.0 |  | New view to manage invoice lines information
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.2 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.3 |  | Print invoice lines grouped by picking
 [partner_time_to_pay](partner_time_to_pay/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Add receivables and payables statistics to partners
 
 [//]: # (end addons)
@@ -2308,7 +2308,7 @@ addon | version | maintainers | summary
 [base_business_document_import](base_business_document_import/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
 [base_edi](base_edi/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
 [pdf_helper](pdf_helper/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
@@ -2616,6 +2616,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_timesheet](crm_timesheet/) | 17.0.1.0.0 |  | CRM Timesheet
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 17.0.1.0.0 |  | Timesheet - Begin/End Hours
+[hr_timesheet_sheet](hr_timesheet_sheet/) | 17.0.1.0.0 |  | Timesheet Sheets, Activities
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 17.0.1.0.1 |  | Set task on timesheet as a mandatory field
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 17.0.1.0.0 |  | Open/Close task from corresponding Task Log entry
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 17.0.1.1.0 |  | Exclude Timesheet Line from Sale Order
@@ -4415,7 +4416,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
 [l10n_ro_city](l10n_ro_city/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
-[l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
+[l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
 [l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.10.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
@@ -4432,7 +4433,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 17.0.0.2.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
-[l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 17.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
 [l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
 [l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
@@ -5134,7 +5135,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 17.0.1.0.0 |  | Delivery Procurement Group Carrier
+[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 17.0.1.1.1 |  | Delivery Procurement Group Carrier
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 17.0.1.0.0 |  | Adds link between purchases, pickings and invoices
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 17.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 17.0.1.0.0 |  | Add more flexibility in the run fifo method.
@@ -6079,6 +6080,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [project_department](project_department/) | 17.0.1.0.0 |  | Project Department Categorization
 [project_parent](project_parent/) | 17.0.1.0.0 |  | Project Parent
+[project_purchase_link](project_purchase_link/) | 17.0.1.0.0 |  | Project Purchase Link
 [project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
 [project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
 [project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
@@ -6407,6 +6409,7 @@ addon | version | maintainers | summary
 [mail_debrand](mail_debrand/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 17.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
+[mail_optional_follower_notification](mail_optional_follower_notification/) | 17.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
 [mail_partner_opt_out](mail_partner_opt_out/) | 17.0.1.0.0 |  | Add the partner's email to the blackmailed list
@@ -6788,7 +6791,7 @@ addon | version | maintainers | summary
 [auth_saml](auth_saml/) | 17.0.1.0.0 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
 [auth_signup_verify_email](auth_signup_verify_email/) | 17.0.1.0.0 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 17.0.1.0.0 |  | Makes the user login field case insensitive
-[impersonate_login](impersonate_login/) | 17.0.1.0.1 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
+[impersonate_login](impersonate_login/) | 17.0.1.0.2 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
 [user_log_view](user_log_view/) | 17.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 
 [//]: # (end addons)
@@ -7345,7 +7348,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[membership_extension](membership_extension/) | 17.0.1.0.1 |  | Improves user experience of membership addon
+[membership_extension](membership_extension/) | 17.0.1.0.3 |  | Improves user experience of membership addon
 [membership_initial_fee](membership_initial_fee/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | Initial fee for memberships
 [membership_variable_period](membership_variable_period/) | 17.0.1.0.1 |  | Variable period for memberships
 
@@ -7826,6 +7829,7 @@ addon | version | maintainers | summary
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 17.0.1.0.0 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Remember the tree columns' widths across sessions.
 [web_responsive](web_responsive/) | 17.0.1.1.1 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
 [web_theme_classic](web_theme_classic/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Contrasted style on fields to improve the UI.
+[web_timeline](web_timeline/) | 17.0.1.0.0 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 17.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 17.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using Bokeh library.
