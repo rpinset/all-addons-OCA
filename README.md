@@ -52,16 +52,16 @@ Date:   Wed Sep 11 06:37:36 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit b4f11dec9689897eb95f996e725cc967093534d1
+commit 9ff3def3748a054b62af6ed938a878cf8a2d6289
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jul 22 06:25:01 2024 +0000
+Date:   Mon Oct 21 10:12:32 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 4.4% (5 of 112 strings)
+    Currently translated at 41.9% (13 of 31 strings)
     
-    Translation: account-closing-13.0/account-closing-13.0-account_multicurrency_revaluation
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_multicurrency_revaluation/it/
+    Translation: account-closing-13.0/account-closing-13.0-account_cutoff_prepaid
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_cutoff_prepaid/it/
 
 
 ## account-consolidation
