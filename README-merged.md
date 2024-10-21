@@ -2522,6 +2522,7 @@ addon | version | maintainers | summary
 [product_intercompany_account](product_intercompany_account/) | 12.0.1.0.4 |  | Change the income and COGS accounts in intercompany transactions
 [product_multi_company](product_multi_company/) | 12.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 12.0.1.0.1 |  | Product Tax Multi Company Default
+[project_multi_company](project_multi_company/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on Project Module.
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 12.0.1.3.1 |  | Intercompany PO/SO rules
 [res_company_active](res_company_active/) | 12.0.1.0.0 |  | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 12.0.1.0.0 |  | Company Categories
@@ -6334,6 +6335,7 @@ addon | version | maintainers | summary
 [web_widget_one2many_product_picker_sale_stock_available_info_popup](web_widget_one2many_product_picker_sale_stock_available_info_popup/) | 12.0.1.0.1 |  | Adds support for stock in the one2many product picker widget
 [web_widget_open_tab](web_widget_open_tab/) | 12.0.1.0.1 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 12.0.1.0.1 |  | Allow to draw plotly charts.
+[web_widget_text_count](web_widget_text_count/) | 12.0.1.0.0 |  | Web Textarea with Counter
 [web_widget_timepicker](web_widget_timepicker/) | 12.0.1.0.1 |  | Web Timepicker Widget
 [web_widget_url_advanced](web_widget_url_advanced/) | 12.0.1.0.1 |  | This module extends URL widget for displaying anchors with custom labels.
 [web_widget_url_translatable](web_widget_url_translatable/) | 12.0.1.0.0 |  | Enable to set translation on fields using URL widget

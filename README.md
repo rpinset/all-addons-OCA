@@ -52,16 +52,16 @@ Date:   Wed Sep 11 06:37:22 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 3dca9d81c7bd1748629746a707b588017e83f020
+commit 9d8c22140729231f538c6670b6d8c61197ce042b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 30 15:52:43 2024 +0000
+Date:   Mon Oct 21 10:14:14 2024 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (114 of 114 strings)
+    Currently translated at 100.0% (28 of 28 strings)
     
-    Translation: account-closing-12.0/account-closing-12.0-account_fiscal_year_closing
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_fiscal_year_closing/it/
+    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_prepaid
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_prepaid/it/
 
 
 ## account-consolidation
@@ -681,16 +681,11 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 37ddb30a66abcac78f74bb8534010762121efc61
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 13 08:53:01 2024 +0000
+commit b1b391d08a4b430ed3eca8c3bc61f9a43a5a92bc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Oct 20 08:48:07 2024 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 95.4% (21 of 22 strings)
-    
-    Translation: multi-company-12.0/multi-company-12.0-account_invoice_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-12-0/multi-company-12-0-account_invoice_inter_company/it/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1689,9 +1684,9 @@ Date:   Tue Nov 19 21:18:22 2019 +0100
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 8025ea938dfd84f5d2da6712b55438207c1e9255
+commit a896df04a27269ab3880d71a7d63ad9668a40c3b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 18 18:00:44 2024 +0000
+Date:   Mon Oct 21 08:43:49 2024 +0000
 
     [BOT] post-merge updates
 
