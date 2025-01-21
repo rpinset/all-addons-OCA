@@ -191,7 +191,7 @@ class AccountSpread(models.Model):
             posted_amount = sum(spread_line.amount for spread_line in lines_posted)
             total_amount = spread.estimated_amount
             if spread.invoice_line_id:
-                total_amount = spread.invoice_line_id.currency_id._convert(
+                total_amount = spread.invoice_line_id.company_currency_id._convert(
                     spread.invoice_line_id.balance,
                     spread.currency_id,
                     spread.company_id,

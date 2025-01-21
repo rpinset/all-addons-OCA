@@ -4,14 +4,17 @@
 
 {
     "name": "Account Check Printing Report DLT103",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "license": "AGPL-3",
     "author": "ForgeFlow,"
     "Serpent Consulting Services Pvt. Ltd.,"
     "Odoo Community Association (OCA)",
     "category": "Generic Modules/Accounting",
     "website": "https://github.com/OCA/account-payment",
-    "depends": ["account_check_printing_report_base"],
+    "depends": [
+        "account_check_printing_report_base",
+        "report_wkhtmltopdf_param",
+    ],
     "data": [
         "data/report_paperformat.xml",
         "data/report_paperformat_parameter.xml",

@@ -1,4 +1,5 @@
 # Copyright 2018-2020 Onestein (<https://www.onestein.eu>)
+# Copyright 2025 Sygel (<https://www.sygel.es>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import datetime
@@ -9,7 +10,9 @@ from odoo.tests import Form, common
 
 
 class TestAccountInvoiceSpread(common.TransactionCase):
-    def create_account_invoice(self, invoice_type, quantity=1.0, price_unit=1000.0):
+    def create_account_invoice(
+        self, invoice_type, quantity=1.0, price_unit=1000.0, currency=False
+    ):
         """Create an invoice as in a view by triggering its onchange methods"""
 
         invoice_form = Form(
@@ -18,6 +21,8 @@ class TestAccountInvoiceSpread(common.TransactionCase):
         invoice_form.partner_id = self.env["res.partner"].create(
             {"name": "Partner Name"}
         )
+        if currency:
+            invoice_form.currency_id = currency
         with invoice_form.invoice_line_ids.new() as line:
             line.name = "product that costs " + str(price_unit)
             line.quantity = quantity
@@ -805,3 +810,32 @@ class TestAccountInvoiceSpread(common.TransactionCase):
         reversal = move_reversal.reverse_moves()
         refund = self.env["account.move"].browse(reversal["res_id"])
         self.assertFalse(refund.invoice_line_ids.mapped("spread_id"))
+
+    def test_16_wizard_different_currency(self):
+        company_currency = self.env.company.currency_id
+        other_currency = self.env["res.currency"].search(
+            [("name", "!=", company_currency.name)], limit=1
+        )
+        self.env["res.currency.rate"].create(
+            {
+                "name": fields.Date.today(),
+                "currency_id": other_currency.id,
+                "company_rate": 2,
+            }
+        )
+        vendor_bill = self.create_account_invoice("in_invoice", currency=other_currency)
+        bill_line = vendor_bill["invoice_line_ids"][0]
+
+        Wizard = self.env["account.spread.invoice.line.link.wizard"]
+        wizard1 = Wizard.with_context(
+            default_invoice_line_id=bill_line.id,
+            default_company_id=self.env.company.id,
+            allow_spread_planning=True,
+        ).create({})
+        self.assertEqual(wizard1.spread_action_type, "link")
+
+        wizard1.spread_account_id = self.account_receivable
+        wizard1.spread_journal_id = self.expenses_journal
+        wizard1.spread_id = self.spread
+        wizard1.confirm()
+        self.assertEqual(self.spread.total_amount, bill_line.balance)
