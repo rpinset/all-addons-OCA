@@ -119,7 +119,9 @@ class AccountPayment(models.Model):
                         }
                         for move in downpayment_invoices
                     ]
-                    downpayment_invoices._reverse_moves(
+                    downpayment_invoices.with_context(
+                        {"sii_refund_type": "I"}
+                    )._reverse_moves(
                         default_values_list, cancel=True
                     )
                 else:

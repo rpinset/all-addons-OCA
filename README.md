@@ -33,13 +33,13 @@ Date:   Wed Dec 11 08:27:16 2024 +0000
 
 ## account-budgeting
 From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
-commit 173b5bb1cf781b3cc5646c480d4f68553046cefa
+commit 7ad2c24bfbcd316e6832fbcedb35a36e089e2da1
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 11 06:37:33 2024 +0000
+Date:   Mon Jan 20 08:21:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 68.1% (45 of 66 strings)
+    Currently translated at 100.0% (66 of 66 strings)
     
     Translation: account-budgeting-14.0/account-budgeting-14.0-account_budget_oca
     Translate-URL: https://translation.odoo-community.org/projects/account-budgeting-14-0/account-budgeting-14-0-account_budget_oca/it/
@@ -93,11 +93,16 @@ Date:   Tue Dec 10 13:48:42 2024 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 31db7d19bc2b9c183d370995828abecb4d05f133
+commit 4d84c364cc236833987e268eb8420eeeb4fe2dc0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 24 17:48:03 2024 +0000
+Date:   Mon Jan 20 08:19:52 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: account-invoice-reporting-14.0/account-invoice-reporting-14.0-account_invoice_report_grouped_by_picking
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-14-0/account-invoice-reporting-14-0-account_invoice_report_grouped_by_picking/it/
 
 
 ## account-invoicing
@@ -248,16 +253,16 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 42a5497f6e7dc76f68f7dafd46430dbe37b7bf1d
+commit a77575ebcdbcff3742dbbefe095df019be5dd36b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 16 13:19:47 2025 +0000
+Date:   Mon Jan 20 08:23:16 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 57.3% (94 of 164 strings)
     
-    Translation: queue-14.0/queue-14.0-queue_job_cron_jobrunner
-    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-queue_job_cron_jobrunner/it/
+    Translation: queue-14.0/queue-14.0-queue_job
+    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-queue_job/it/
 
 
 ## connector-accountedge
@@ -430,11 +435,16 @@ Date:   Thu Dec 19 09:02:00 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 4ed5bc0b12e5edc3423aadbec415dff98e576408
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Dec 11 16:05:13 2024 +0000
+commit eaed62a9451ff8bbe8a796e078c928404b67b550
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 20 08:10:12 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: commission-14.0/commission-14.0-sale_commission_salesman
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_salesman/it/
 
 
 ## event
@@ -858,16 +868,16 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 4901073e5a493ad7b7859982f1402b789b486240
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jan 17 18:28:45 2025 +0000
+commit 4f34c64ae2a44cedfefa631c7a5d4dd50da7e5be
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 20 14:51:50 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (331 of 331 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_delivery_note
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_delivery_note/it/
 
 
 ## l10n-japan
@@ -980,9 +990,9 @@ Date:   Wed May 1 18:35:54 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 69debb10bd581c99df0d4a566c70091cc7a29093
+commit 215fcd714bb5add54bd94831af9c8bcf37d5131a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Nov 21 18:05:18 2024 +0000
+Date:   Mon Jan 20 09:30:07 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1098,16 +1108,11 @@ Date:   Fri Jan 10 12:18:32 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 85c9dcbb0d10c3596c0e3459f3dc4482317bed14
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jan 13 09:10:28 2025 +0000
+commit a0b4eebc28b08460c3a943a62a4a658bb0a9d64a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jan 20 09:32:30 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_restrict_cancel_printed
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_restrict_cancel_printed/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1233,11 +1238,16 @@ Date:   Wed Jan 15 08:18:17 2025 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit d93665a5e9fbf573c53dd5547fe6ca8ef2e54b97
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 15 18:02:59 2025 +0000
+commit d073ad54af3e4fb1de80c7b7baa928a258e8395d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jan 21 14:09:19 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: pms-14.0/pms-14.0-pms_account_move_budget
+    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms_account_move_budget/it/
 
 
 ## purchase-workflow
@@ -1402,11 +1412,16 @@ Date:   Thu Jan 16 13:02:23 2025 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 239c30b94fac764a6c499dbc933ea015a9c1911f
+commit ff5e1ca24e3f9cadc8b0ad5c8cbb8a7d4d8e6428
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 19 12:43:02 2024 +0000
+Date:   Mon Jan 20 08:34:30 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: storage-14.0/storage-14.0-storage_image_product_import
+    Translate-URL: https://translation.odoo-community.org/projects/storage-14-0/storage-14-0-storage_image_product_import/it/
 
 
 ## search-engine
@@ -1680,16 +1695,16 @@ Date:   Fri Oct 27 21:13:28 2023 +0200
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit cb8eda229ef7a804e63cc82f8ab442923c51afc1
+commit 880fb73cedfcd785e8da421f592a4ab0fd4e17fe
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 16 12:41:40 2025 +0000
+Date:   Mon Jan 20 08:27:06 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (33 of 33 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: web-14.0/web-14.0-web_m2x_options_manager
-    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_m2x_options_manager/it/
+    Translation: web-14.0/web-14.0-web_widget_ckeditor
+    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_widget_ckeditor/it/
 
 
 ## website

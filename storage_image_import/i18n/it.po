@@ -6,50 +6,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-01-20 11:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: storage_image_import
 #: model:ir.model.fields,field_description:storage_image_import.field_image_relation_abstract__display_name
 #: model:ir.model.fields,field_description:storage_image_import.field_storage_image__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: storage_image_import
 #: code:addons/storage_image_import/models/image_relation_abstract.py:0
 #, python-format
 msgid "Fail to import image {} check if the url is valid"
-msgstr ""
+msgstr "Importazione immagine fallita {} controllare se la regola è valida"
 
 #. module: storage_image_import
 #: model:ir.model.fields,field_description:storage_image_import.field_image_relation_abstract__id
 #: model:ir.model.fields,field_description:storage_image_import.field_storage_image__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: storage_image_import
 #: model:ir.model,name:storage_image_import.model_image_relation_abstract
 msgid "Image Relation Abstract"
-msgstr ""
+msgstr "Sintesi relazione immagine"
 
 #. module: storage_image_import
 #: model:ir.model.fields,field_description:storage_image_import.field_image_relation_abstract__import_from_url
 #: model:ir.model.fields,field_description:storage_image_import.field_storage_image__imported_from_url
 msgid "Imported From Url"
-msgstr ""
+msgstr "Importata da URL"
 
 #. module: storage_image_import
 #: model:ir.model.fields,field_description:storage_image_import.field_image_relation_abstract____last_update
 #: model:ir.model.fields,field_description:storage_image_import.field_storage_image____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: storage_image_import
 #: model:ir.model,name:storage_image_import.model_storage_image
 msgid "Storage Image"
-msgstr ""
+msgstr "Immagine deposito"

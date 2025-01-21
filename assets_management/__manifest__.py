@@ -5,7 +5,7 @@
 
 {
     "name": "ITA - Gestione Cespiti",
-    "version": "14.0.1.5.2",
+    "version": "14.0.1.5.3",
     "category": "Localization/Italy",
     "summary": "Gestione Cespiti",
     "author": "Openforce, Odoo Community Association (OCA)",

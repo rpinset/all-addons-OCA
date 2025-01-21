@@ -66,7 +66,6 @@ class RibaUnsolved(models.TransientModel):
     effects_account_id = fields.Many2one(
         "account.account",
         "Bills Account",
-        domain=[("internal_type", "=", "receivable")],
         default=_get_effects_account_id,
     )
     effects_amount = fields.Float("Bills Amount", default=_get_effects_amount)
@@ -77,7 +76,6 @@ class RibaUnsolved(models.TransientModel):
     overdue_effects_account_id = fields.Many2one(
         "account.account",
         "Past Due Bills Account",
-        domain=[("internal_type", "=", "receivable")],
         default=_get_overdue_effects_account_id,
     )
     overdue_effects_amount = fields.Float(
