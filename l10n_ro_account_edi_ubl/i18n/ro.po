@@ -215,6 +215,11 @@ msgid "EDI format"
 msgstr "Format EDI"
 
 #. module: l10n_ro_account_edi_ubl
+#: model:mail.activity.type,name:l10n_ro_account_edi_ubl.mail_activity_einvoice_data_warning
+msgid "EInvoice Exception"
+msgstr ""
+
+#. module: l10n_ro_account_edi_ubl
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_company__l10n_ro_edi_cius_embed_pdf
 #: model:ir.model.fields,field_description:l10n_ro_account_edi_ubl.field_res_config_settings__l10n_ro_edi_cius_embed_pdf
 msgid "Embed PDF in CIUS"

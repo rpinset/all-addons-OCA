@@ -30,6 +30,11 @@ msgid "%s partner incompatible with relation type."
 msgstr "Le partenaire %s est incompatible avec le type de relation."
 
 #. module: partner_multi_relation
+#: model_terms:ir.ui.view,arch_db:partner_multi_relation.search_res_partner_relation_all
+msgid "+Inactive"
+msgstr ""
+
+#. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_all__active
 msgid "Active"
 msgstr "Actif"
@@ -185,11 +190,6 @@ msgstr "A travaillé pour"
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type_selection__id
 msgid "ID"
 msgstr "ID"
-
-#. module: partner_multi_relation
-#: model_terms:ir.ui.view,arch_db:partner_multi_relation.search_res_partner_relation_all
-msgid "Include past records"
-msgstr "Inclure les enregistrement précédents"
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__handle_invalid_onchange
@@ -364,8 +364,10 @@ msgstr ""
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,help:partner_multi_relation.field_res_partner_relation_all__active
-msgid "Records with date_end in the past are inactive"
-msgstr "Les enregistrements avec la date de fin dans le passé sont inactifs"
+msgid ""
+"Records with date_end in the past are inactive,  as well as records for "
+"inactive partners."
+msgstr ""
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__allow_self
@@ -612,6 +614,12 @@ msgstr "de droite"
 #, python-format
 msgid "this"
 msgstr "de gauche"
+
+#~ msgid "Include past records"
+#~ msgstr "Inclure les enregistrement précédents"
+
+#~ msgid "Records with date_end in the past are inactive"
+#~ msgstr "Les enregistrements avec la date de fin dans le passé sont inactifs"
 
 #~ msgid "Partner Relations"
 #~ msgstr "Relations de partenaires"

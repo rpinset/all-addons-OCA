@@ -10,7 +10,10 @@
             ref="sale_project.view_order_form_inherit_sale_project"
         />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='project_id']" position="attributes">
+            <xpath
+                expr="//group[@name='sale_info']//field[@name='project_id']"
+                position="attributes"
+            >
                 <attribute name="options">{}</attribute>
                 <attribute
                     name="context"

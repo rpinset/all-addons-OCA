@@ -4,6 +4,8 @@
 from odoo.exceptions import UserError
 from odoo.tests import Form, common
 
+from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+
 
 @common.tagged("-at_install", "post_install")
 class TestStockPicking(common.TransactionCase):
@@ -11,7 +13,7 @@ class TestStockPicking(common.TransactionCase):
     def setUpClass(cls):
         super().setUpClass()
 
-        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
 
         # models
         cls.picking_model = cls.env["stock.picking"]
@@ -432,7 +434,6 @@ class TestStockPicking(common.TransactionCase):
                 active_model="stock.picking",
             )
         )
-
         stock_return_picking = return_form.save()
         stock_return_picking.product_return_moves.quantity = qty
         stock_return_picking_action = stock_return_picking.create_returns()

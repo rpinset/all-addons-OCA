@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-26 15:33+0000\n"
-"PO-Revision-Date: 2023-09-22 11:37+0000\n"
+"PO-Revision-Date: 2025-01-20 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_multi_relation
 #. odoo-python
@@ -26,6 +26,11 @@ msgstr ""
 #, python-format
 msgid "%s partner incompatible with relation type."
 msgstr "%s partner incompatibile con il tipo di relazione."
+
+#. module: partner_multi_relation
+#: model_terms:ir.ui.view,arch_db:partner_multi_relation.search_res_partner_relation_all
+msgid "+Inactive"
+msgstr "+Inattivo"
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_all__active
@@ -180,11 +185,6 @@ msgstr "Ha lavorato per"
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type_selection__id
 msgid "ID"
 msgstr "ID"
-
-#. module: partner_multi_relation
-#: model_terms:ir.ui.view,arch_db:partner_multi_relation.search_res_partner_relation_all
-msgid "Include past records"
-msgstr "Includi i record passati"
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__handle_invalid_onchange
@@ -361,8 +361,12 @@ msgstr ""
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,help:partner_multi_relation.field_res_partner_relation_all__active
-msgid "Records with date_end in the past are inactive"
-msgstr "Le righe con data_fine nel passato sono inattivi"
+msgid ""
+"Records with date_end in the past are inactive,  as well as records for "
+"inactive partners."
+msgstr ""
+"I record con date_end nel passato sono inattivi, così come i record dei "
+"partner inattivi."
 
 #. module: partner_multi_relation
 #: model:ir.model.fields,field_description:partner_multi_relation.field_res_partner_relation_type__allow_self
@@ -609,6 +613,12 @@ msgstr "altro"
 #, python-format
 msgid "this"
 msgstr "Questo"
+
+#~ msgid "Include past records"
+#~ msgstr "Includi i record passati"
+
+#~ msgid "Records with date_end in the past are inactive"
+#~ msgstr "Le righe con data_fine nel passato sono inattivi"
 
 #~ msgid "Partner Relations"
 #~ msgstr "Relazioni partner"

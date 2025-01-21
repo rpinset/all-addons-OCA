@@ -291,7 +291,10 @@ class AccountEdiXmlCIUSRO(models.Model):
                     # Use send city to check if it's a valid sector
                     # because when they come from ANAF, not all are
                     # formatted as SECTORX
-                    send_city = partner.city.upper().replace(" ", "")
+                    if partner.city:
+                        send_city = partner.city.upper().replace(" ", "")
+                    else:
+                        send_city = False
                     if send_city not in SECTOR_RO_CODES:
                         constraints[f"ciusro_{partner_type}_invalid_city_name"] = _(
                             "The following partner's city name is invalid: %s. "

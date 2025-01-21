@@ -149,7 +149,7 @@ class AccountEdiXmlCIUSRO(models.Model):
                 )
             else:
                 invoice.activity_schedule(
-                    "mail.mail_activity_data_warning",
+                    "l10n_ro_account_edi_ubl.mail_activity_einvoice_data_warning",
                     summary=message,
                     note=body,
                     user_id=user.id,
