@@ -123,6 +123,11 @@ msgid "ID"
 msgstr ""
 
 #. module: base_tier_validation_forward
+#: model:ir.model.fields,help:base_tier_validation_forward.field_tier_review__has_comment
+msgid "If set, Allow the reviewer to leave a comment on the review."
+msgstr ""
+
+#. module: base_tier_validation_forward
 #: model:ir.model.fields,field_description:base_tier_validation_forward.field_tier_validation_forward_wizard__write_uid
 msgid "Last Updated by"
 msgstr ""
