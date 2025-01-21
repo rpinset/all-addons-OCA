@@ -486,9 +486,9 @@ Date:   Mon Apr 8 11:54:19 2024 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit b26d270e5046f4ff67f7c4eb9b832552aa5b7650
+commit c4133e7f8d6437ee103a7179f266e39864c861d9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 17 08:06:50 2024 +0000
+Date:   Mon Jan 20 11:23:04 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -891,11 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 6e0d383dc9a2d08954453459f47f954e07569a8f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 20 08:58:57 2024 +0000
+commit b0fe76f24aa8652261840548d667ffc52f44d0b5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jan 20 14:52:32 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (262 of 262 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note/it/
 
 
 ## l10n-japan
