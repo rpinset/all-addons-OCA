@@ -501,9 +501,9 @@ Date:   Mon Oct 9 21:34:04 2023 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 7e9fbd08da246aa61d55f946d20ea7a483f9b1a8
+commit efc18168a55bb5d409d3d1e88bada6412e0a2671
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 17 08:09:01 2024 +0000
+Date:   Mon Jan 20 08:11:28 2025 +0000
 
     Translated using Weblate (Italian)
     
