@@ -135,7 +135,7 @@ class TestInvoiceGroupBySaleOrder(TransactionCase):
         """Check invoice is generated with a correct total amount"""
         orders = self.order1_p1 | self.order2_p1
         invoices = orders._create_invoices()
-        self.assertEqual(invoices.amount_total, 80)
+        self.assertEqual(invoices.amount_untaxed, 80)
 
     def test_create_invoice_with_default_journal(self):
         """Using a specific journal for the invoice should not be broken"""

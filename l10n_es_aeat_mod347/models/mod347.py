@@ -7,12 +7,14 @@
 # Copyright 2018 PESOL - Angel Moya <info@pesol.es>
 # Copyright 2019 Tecnativa - Carlos Dauden
 # Copyright 2014-2022 Tecnativa - Pedro M. Baeza
+# Copyright 2023 FactorLibre - Alejandro Ji Cheung
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import datetime
 from calendar import monthrange
 
 from odoo import _, api, exceptions, fields, models
+from odoo.tools import float_compare
 
 KEY_TAX_MAPPING = {
     "A": "l10n_es_aeat_mod347.aeat_mod347_map_a",
@@ -370,6 +372,7 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
             ("exception", "Exception"),
         ],
         default="pending",
+        tracking=True,
     )
     operation_key = fields.Selection(
         selection=[
@@ -579,7 +582,6 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
         self.write({"state": "confirmed"})
 
     def action_send(self):
-        self.write({"state": "sent"})
         self.ensure_one()
         template = self._get_partner_report_email_template()
         compose_form = self.env.ref("mail.email_compose_message_wizard_form")
@@ -609,19 +611,24 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
         self.ensure_one()
         if self.operation_key not in ("A", "B"):
             return
+        prev_amount = self.amount
         self.report_id._create_partner_records(
             self.operation_key,
             KEY_TAX_MAPPING[self.operation_key],
             partner_record=self,
         )
         self.calculate_quarter_totals()
-        self.action_pending()
+        if float_compare(self.amount, prev_amount, 2) != 0:
+            self.action_pending()
 
     def send_email_direct(self):
         template = self._get_partner_report_email_template()
-        for record in self:
-            template.send_mail(record.id)
-        self.write({"state": "sent"})
+        for rec in self:
+            address_id = rec.partner_id.address_get(["invoice"])["invoice"]
+            address = self.env["res.partner"].browse(address_id)
+            if address.email:
+                template.send_mail(rec.id)
+                rec.state = "sent"
 
     def action_pending(self):
         self.write({"state": "pending"})
