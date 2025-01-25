@@ -367,9 +367,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 8f777fc3bb937cbdf2e3edb1ff496ee6cc673048
+commit eaf1a5244f749e0327094420e04fd2835e86210b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Dec 9 16:20:55 2024 +0000
+Date:   Thu Jan 23 09:47:55 2025 +0000
 
     [BOT] post-merge updates
 
@@ -385,16 +385,16 @@ Date:   Mon Jul 22 12:23:32 2024 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 676502fb974aa77af58334a6bf800b4e27e6bf51
-Author: QuiJoQuim <quim.rebull@gmail.com>
-Date:   Sat Dec 7 08:24:43 2024 +0000
+commit 65f80fcc219ca89efdf987d55d34732c29a5be2b
+Author: yledoare <yann@linuxconsole.org>
+Date:   Fri Jan 24 08:21:33 2025 +0000
 
-    Translated using Weblate (Catalan)
+    Translated using Weblate (French)
     
-    Currently translated at 93.7% (15 of 16 strings)
+    Currently translated at 71.8% (74 of 103 strings)
     
-    Translation: partner-contact-15.0/partner-contact-15.0-partner_firstname
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-partner_firstname/ca/
+    Translation: partner-contact-15.0/partner-contact-15.0-animal
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-15-0/partner-contact-15-0-animal/fr/
 
 
 ## sale-financial
@@ -514,11 +514,16 @@ Date:   Sun Dec 22 13:19:31 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit cbcc3265ade48d0fc094edd7dd328037d0218ff8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 21 13:25:53 2025 +0000
+commit ec9d39a0d8424ebd6c857e059915633020c722d6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jan 25 14:05:22 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (13 of 13 strings)
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_account/it/
 
 
 ## margin-analysis
@@ -971,9 +976,9 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit cc4b1178c8f818d05844070ac80f3dcc73411a44
+commit 7c5bdb4d6983a31f98c31f424d9e97082b00a223
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jan 17 12:37:13 2025 +0000
+Date:   Fri Jan 24 21:23:53 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1087,16 +1092,11 @@ Date:   Fri Jan 10 12:18:34 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit e3df1bc1fdaa8402d170787fbffee3f013521e35
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jan 16 07:59:54 2025 +0000
+commit c93b66844bf366e33638e00882764833299c0566
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jan 23 12:51:35 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_assign_serial_final
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_assign_serial_final/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1299,9 +1299,9 @@ Date:   Wed May 1 18:54:54 2024 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 6fcc1e1d8e2b5ce1e6bb0138e0ce2d2adc3f9f98
+commit 650dc87aaa9235ab0caea7d3d38a457f683ab2c4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 6 09:55:44 2024 +0000
+Date:   Thu Jan 23 13:03:30 2025 +0000
 
     [BOT] post-merge updates
 
