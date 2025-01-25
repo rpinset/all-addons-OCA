@@ -9,90 +9,91 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 23:33+0000\n"
-"PO-Revision-Date: 2017-06-30 23:33+0000\n"
-"Last-Translator: Quentin THEURET <odoo@kerpeo.com>, 2017\n"
+"PO-Revision-Date: 2025-01-22 16:06+0000\n"
+"Last-Translator: Pierre-François Teyssier <pierre-francois@scalizer.fr>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2p_ly
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2p_ly
 msgid "AVG Days to Payable (LY)"
-msgstr ""
+msgstr "DMP jours (LY)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2p_ytd
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2p_ytd
-#, fuzzy
 msgid "AVG Days to Payable (YTD)"
-msgstr "Moy. Jours pour payer (YTD)"
+msgstr "DMP jours (YTD)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2p_life
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2p_life
-#, fuzzy
 msgid "AVG Days to Payable (lifetime)"
-msgstr "Moy. Jours pour payer (durée)"
+msgstr "DMP jours (global)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2r_ly
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2r_ly
 msgid "AVG Days to Receivable (LY)"
-msgstr ""
+msgstr "DMP jours (LY)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2r_ytd
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2r_ytd
-#, fuzzy
 msgid "AVG Days to Receivable (YTD)"
-msgstr "Moy. Jours pour payer (YTD)"
+msgstr "DMP jours (YTD)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_partner__d2r_life
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_res_users__d2r_life
-#, fuzzy
 msgid "AVG Days to Receivable (lifetime)"
-msgstr "Moy. Jours pour payer (durée)"
+msgstr "DMP jours (global)"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2p_ly
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2p_ly
 msgid "Average days of payment for incoming invoices last year."
 msgstr ""
+"Délai moyen de paiement en jours pour les factures fournisseurs l'année "
+"dernière."
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2p_ytd
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2p_ytd
 msgid "Average days of payment for incoming invoices this year."
 msgstr ""
+"Délai moyen de paiement en jours pour les factures fournisseurs cette année."
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2p_life
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2p_life
 msgid "Average days of payment for incoming invoices."
-msgstr ""
+msgstr "Délai moyen de paiement en jours pour les factures fournisseurs."
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2r_ly
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2r_ly
 msgid "Average days of payment for outgoing invoices last year."
 msgstr ""
+"Délai moyen de paiement en jours pour les factures clients l'année dernière."
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2r_ytd
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2r_ytd
 msgid "Average days of payment for outgoing invoices this year."
-msgstr ""
+msgstr "Délai moyen de paiement en jours pour les factures clients cette année."
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_partner__d2r_life
 #: model:ir.model.fields,help:partner_time_to_pay.field_res_users__d2r_life
 msgid "Average days of payment for outgoing invoices."
-msgstr ""
+msgstr "Délai moyen de paiement en jours pour les factures clients."
 
 #. module: partner_time_to_pay
 #: model:ir.model,name:partner_time_to_pay.model_res_partner
@@ -104,19 +105,19 @@ msgstr ""
 #: model:ir.model.fields,help:partner_time_to_pay.field_account_move__full_reconcile_payment_date
 #: model:ir.model.fields,help:partner_time_to_pay.field_account_payment__full_reconcile_payment_date
 msgid "Date when the complete reconciliation of this invoice occurred."
-msgstr ""
+msgstr "Date à laquelle le lettrage total de la facture a été effectuée."
 
 #. module: partner_time_to_pay
 #: model:ir.model,name:partner_time_to_pay.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Pièce comptable"
 
 #. module: partner_time_to_pay
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_account_bank_statement_line__full_reconcile_payment_date
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_account_move__full_reconcile_payment_date
 #: model:ir.model.fields,field_description:partner_time_to_pay.field_account_payment__full_reconcile_payment_date
 msgid "Payment Date"
-msgstr ""
+msgstr "Date de paiement"
 
 #~ msgid "Partner"
 #~ msgstr "Partenaire"

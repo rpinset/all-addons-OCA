@@ -3,35 +3,49 @@
 import {ActionDialog} from "@web/webclient/actions/action_dialog";
 import {patch} from "@web/core/utils/patch";
 import rpc from "web.rpc";
-import {Component, onMounted} from "@odoo/owl";
+import {Component, onWillRender} from "@odoo/owl";
 import {Dialog} from "@web/core/dialog/dialog";
 import {SelectCreateDialog} from "@web/views/view_dialogs/select_create_dialog";
 
 export class ExpandButton extends Component {
     setup() {
-        this.last_size = this.props.getsize();
+        this.lastSize = this.currentSize = this.props.getsize();
+        this.sizeRestored = false;
         this.config = rpc.query({
             model: "ir.config_parameter",
             method: "get_web_dialog_size_config",
         });
 
-        onMounted(() => {
+        onWillRender(() => {
             var self = this;
-            this.config.then(function (r) {
-                if (r.default_maximize && stop) {
-                    self.dialog_button_extend();
-                }
-            });
+            // If the form lost its current state, we need to set it again
+            if (this.props.getsize() !== this.currentSize) {
+                this.props.setsize(this.currentSize);
+            }
+            // Check if we already are in full screen or if the form was restored.
+            // If so we don't need to check the default maximize
+            if (this.props.getsize() !== "dialog_full_screen" && !this.sizeRestored) {
+                this.config.then(function (r) {
+                    if (r.default_maximize && stop) {
+                        self.dialog_button_extend();
+                    }
+                });
+            }
         });
     }
 
     dialog_button_extend() {
+        this.lastSize = this.props.getsize();
         this.props.setsize("dialog_full_screen");
+        this.currentSize = "dialog_full_screen";
+        this.sizeRestored = false;
         this.render();
     }
 
     dialog_button_restore() {
-        this.props.setsize(this.last_size);
+        this.props.setsize(this.lastSize);
+        this.currentSize = this.lastSize;
+        this.sizeRestored = true;
         this.render();
     }
 }

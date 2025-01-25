@@ -20,8 +20,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_central_journal_reportlab/wizard/print_giornale.py:0
 #, python-format
-msgid " Account Central Journal"
-msgstr " Libro giornale contabile"
+msgid " - Account Central Journal"
+msgstr ""
 
 #. module: l10n_it_central_journal_reportlab
 #. odoo-python
@@ -363,6 +363,10 @@ msgstr "Anno per il piè di pagina"
 #: model_terms:ir.ui.view,arch_db:l10n_it_central_journal_reportlab.wizard_giornale_reportlab
 msgid "or"
 msgstr "oppure"
+
+#, python-format
+#~ msgid " Account Central Journal"
+#~ msgstr " Libro giornale contabile"
 
 #, python-format
 #~ msgid "Account Move"

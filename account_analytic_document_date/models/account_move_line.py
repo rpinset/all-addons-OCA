@@ -11,6 +11,8 @@ class AccountMoveLine(models.Model):
         for val in vals:
             if self.move_id.analytic_document_date:
                 val.update({"document_date": self.move_id.analytic_document_date})
-            else:
+            elif self.move_id.invoice_date:
                 val.update({"document_date": self.move_id.invoice_date})
+            else:
+                val.update({"document_date": self.move_id.date})
         return vals

@@ -7,12 +7,14 @@
 # Copyright 2018 PESOL - Angel Moya <info@pesol.es>
 # Copyright 2019 Tecnativa - Carlos Dauden
 # Copyright 2014-2022 Tecnativa - Pedro M. Baeza
+# Copyright 2023 FactorLibre - Alejandro Ji Cheung
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import datetime
 from calendar import monthrange
 
 from odoo import _, api, exceptions, fields, models
+from odoo.tools import float_compare
 
 KEY_TAX_MAPPING = {
     "A": "l10n_es_aeat_mod347.aeat_mod347_map_a",
@@ -207,7 +209,7 @@ class L10nEsAeatMod347Report(models.Model):
     def _get_taxes(self, map_rec):
         """Obtain all the taxes to be considered for 347."""
         self.ensure_one()
-        tax_templates = map_rec.mapped("tax_ids")
+        tax_templates = map_rec.with_context(active_test=False).tax_ids
         if not tax_templates:
             raise exceptions.UserError(_("No Tax Mapping was found"))
         return self.get_taxes_from_templates(tax_templates)
@@ -380,6 +382,7 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
             ("exception", "Exception"),
         ],
         default="pending",
+        tracking=True,
     )
     operation_key = fields.Selection(
         selection=[
@@ -565,10 +568,14 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
         for record in self:
             year = record.report_id.year
             moves = record.move_record_ids
-            record.first_quarter = calc_amount_by_quarter(moves, year, 1)
-            record.second_quarter = calc_amount_by_quarter(moves, year, 4)
-            record.third_quarter = calc_amount_by_quarter(moves, year, 7)
-            record.fourth_quarter = calc_amount_by_quarter(moves, year, 10)
+            # Done this way for avoiding fake tracking changes messages when the amount
+            # is the same due to a ORM glitch with floats rounding
+            quarter_mapping = {1: "first", 4: "second", 7: "third", 10: "fourth"}
+            for i in range(1, 12, 3):
+                amount = calc_amount_by_quarter(moves, year, i)
+                field = f"{quarter_mapping[i]}_quarter"
+                if float_compare(record[field], amount, 2) != 0:
+                    record[field] = amount
 
     def action_exception(self):
         self.write({"state": "exception"})
@@ -589,7 +596,6 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
         self.write({"state": "confirmed"})
 
     def action_send(self):
-        self.write({"state": "sent"})
         self.ensure_one()
         template = self._get_partner_report_email_template()
         compose_form = self.env.ref("mail.email_compose_message_wizard_form")
@@ -619,19 +625,24 @@ class L10nEsAeatMod347PartnerRecord(models.Model):
         self.ensure_one()
         if self.operation_key not in ("A", "B"):
             return
+        prev_amount = self.amount
         self.report_id._create_partner_records(
             self.operation_key,
             KEY_TAX_MAPPING[self.operation_key],
             partner_record=self,
         )
         self.calculate_quarter_totals()
-        self.action_pending()
+        if float_compare(self.amount, prev_amount, 2) != 0:
+            self.action_pending()
 
     def send_email_direct(self):
         template = self._get_partner_report_email_template()
-        for record in self:
-            template.send_mail(record.id)
-        self.write({"state": "sent"})
+        for rec in self:
+            address_id = rec.partner_id.address_get(["invoice"])["invoice"]
+            address = self.env["res.partner"].browse(address_id)
+            if address.email:
+                template.send_mail(rec.id)
+                rec.state = "sent"
 
     def action_pending(self):
         self.write({"state": "pending"})
