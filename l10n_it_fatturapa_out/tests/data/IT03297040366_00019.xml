@@ -10,7 +10,7 @@
             <FormatoTrasmissione>FPA12</FormatoTrasmissione>
             <CodiceDestinatario>UFPQ1O</CodiceDestinatario>
             <ContattiTrasmittente>
-                <Telefono>123456789</Telefono>
+                <Telefono>063456789</Telefono>
                 <Email>info@mycompany.it</Email>
             </ContattiTrasmittente>
         </DatiTrasmissione>

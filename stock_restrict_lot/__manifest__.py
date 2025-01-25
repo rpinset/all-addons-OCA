@@ -1,14 +1,14 @@
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
     "name": "Stock Restrict Lot",
     "summary": "Base module that add back the concept of restrict lot on stock move",
-    "version": "14.0.1.3.0",
+    "version": "14.0.1.4.0",
     "category": "Warehouse Management",
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "author": "Akretion, Odoo Community Association (OCA)",
     "maintainers": ["florian-dacosta"],
-    "license": "AGPL-3",
+    "license": "LGPL-3",
     "installable": True,
     "depends": ["stock"],
 }

@@ -14,11 +14,13 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: stock_location_last_inventory_date
+#: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_inventory__display_name
 #: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_location__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: stock_location_last_inventory_date
+#: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_inventory__id
 #: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_location__id
 msgid "ID"
 msgstr ""
@@ -28,6 +30,11 @@ msgstr ""
 msgid ""
 "Indicates the last inventory date for the location, including inventory done"
 " on parents location."
+msgstr ""
+
+#. module: stock_location_last_inventory_date
+#: model:ir.model,name:stock_location_last_inventory_date.model_stock_inventory
+msgid "Inventory"
 msgstr ""
 
 #. module: stock_location_last_inventory_date
@@ -41,6 +48,7 @@ msgid "Last Inventory Date"
 msgstr ""
 
 #. module: stock_location_last_inventory_date
+#: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_inventory____last_update
 #: model:ir.model.fields,field_description:stock_location_last_inventory_date.field_stock_location____last_update
 msgid "Last Modified on"
 msgstr ""

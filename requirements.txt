@@ -169,6 +169,7 @@ codicefiscale
 elementpath
 num2words>=0.5.12
 openupgradelib
+phonenumbers
 unidecode
 xlrd
 xlsxwriter
@@ -259,14 +260,7 @@ pandas>=0.25.3
 # From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
 # generated from manifests external_dependencies
 bs4
-geopy
-jose
-jwt
-marshmallow
 pycountry
-regula.documentreader.webclient
-simplejson
-thefuzz
 xlrd
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)

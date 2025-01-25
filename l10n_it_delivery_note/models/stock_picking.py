@@ -335,7 +335,20 @@ class StockPicking(models.Model):
         if not self.delivery_note_id and delivery_note_to_create:
             self._check_delivery_note_consistency()
         res = super().button_validate()
-        if delivery_note_to_create and not self.delivery_note_id:
+        # Since this method can be called multiple times after the
+        # user clicks on the Validate button we must be sure to create
+        # the delivery note only after the stock_picking data is updated.
+        if (
+            delivery_note_to_create
+            and not self.delivery_note_id
+            and (
+                isinstance(res, bool)
+                or (
+                    isinstance(res, dict)
+                    and res["res_model"] == "stock.backorder.confirmation"
+                )
+            )
+        ):
             delivery_note = self._create_delivery_note()
             self.write({"delivery_note_id": delivery_note.id})
             if self.sale_id:
