@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 05:37+0000\n"
-"PO-Revision-Date: 2024-09-28 17:06+0000\n"
+"PO-Revision-Date: 2025-01-25 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -2484,7 +2484,7 @@ msgstr "Nome partner"
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_journal_accounting_doc__partner_ref
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_previsional_accounting_doc__partner_ref
 msgid "Partner Ref"
-msgstr "Rif. partner"
+msgstr "Riferimento partner"
 
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_journal_accounting_doc__partner_vat

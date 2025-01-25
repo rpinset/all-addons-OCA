@@ -579,16 +579,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 4a211bc0f1f55d84d1b4118f08657b8c1741de01
+commit 6d399415a55b6115f5d1921d79a6b690a8ce7363
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jan 11 10:48:47 2025 +0000
+Date:   Sat Jan 25 14:05:11 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (138 of 138 strings)
+    Currently translated at 100.0% (20 of 20 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_recurring/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice_route_account
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_route_account/it/
 
 
 ## margin-analysis
@@ -891,16 +891,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit b0fe76f24aa8652261840548d667ffc52f44d0b5
+commit 6b4fa64c68f129d944316fddfc20eee5afd8dca9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 20 14:52:32 2025 +0000
+Date:   Sat Jan 25 13:16:26 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (262 of 262 strings)
+    Currently translated at 100.0% (476 of 476 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-assets_management
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-assets_management/it/
 
 
 ## l10n-japan
