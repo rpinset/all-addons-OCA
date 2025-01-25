@@ -1346,16 +1346,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 702c19ef4b027334930d02509e6a814a206766d1
+commit 2f44e552f63d5d25958c11bc41f7cb7d515c3dc5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Dec 9 07:42:09 2024 +0000
+Date:   Sat Jan 25 13:45:06 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (168 of 168 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_multi_level/it/
+    Translation: manufacture-13.0/manufacture-13.0-account_move_line_manufacture_info
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-account_move_line_manufacture_info/it/
 
 
 ## manufacture-reporting
