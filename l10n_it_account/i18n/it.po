@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-21 10:38+0000\n"
-"PO-Revision-Date: 2023-11-06 15:41+0000\n"
+"PO-Revision-Date: 2025-01-28 18:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: l10n_it_account
 #: code:addons/l10n_it_account/models/account_group.py:0
@@ -24,6 +24,8 @@ msgid ""
 "\n"
 "Sign: %s, accounts: %s\n"
 msgstr ""
+"\n"
+"Segno: %s, conti: %s\n"
 
 #. module: l10n_it_account
 #: model_terms:ir.ui.view,arch_db:l10n_it_account.internal_layout
@@ -131,6 +133,8 @@ msgid ""
 "Incoherent balance signs for '{}' and its subgroups:\n"
 "{}"
 msgstr ""
+"Segni del saldo incoerenti per \"{}\" e i sottogruppi:\n"
+"{}"
 
 #. module: l10n_it_account
 #: model:ir.ui.menu,name:l10n_it_account.account_italian_localization

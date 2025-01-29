@@ -770,12 +770,24 @@ class PmsReservation(models.Model):
     def _compute_board_service_room_id(self):
         for reservation in self:
             if reservation.pricelist_id and reservation.room_type_id:
-                board_service_default = self.env["pms.board.service.room.type"].search(
+                board_services_candidates = self.env[
+                    "pms.board.service.room.type"
+                ].search(
                     [
                         ("pms_room_type_id", "=", reservation.room_type_id.id),
                         ("by_default", "=", True),
                         ("pms_property_id", "=", reservation.pms_property_id.id),
                     ]
+                )
+                board_service_default = (
+                    board_services_candidates.filtered(
+                        lambda service: reservation.pricelist_id
+                        in service.pricelist_ids
+                    )
+                    or board_services_candidates.filtered(
+                        lambda service: not service.pricelist_ids
+                    )
+                    or False
                 )
                 if (
                     not reservation.board_service_room_id
@@ -1490,16 +1502,22 @@ class PmsReservation(models.Model):
                 record.checkin_partner_count = 0
                 record.checkin_partner_pending_count = 0
 
-    @api.depends("room_type_id")
+    @api.depends("room_type_id", "partner_id")
     def _compute_tax_ids(self):
         for record in self:
             record = record.with_company(record.company_id)
-            product = self.env["product.product"].browse(
-                record.room_type_id.product_id.id
-            )
-            record.tax_ids = product.taxes_id.filtered(
-                lambda t: t.company_id == record.env.company
-            )
+            if (
+                record.partner_id == record.company_id.partner_id
+                and record.company_id.self_billed_tax_ids
+            ):
+                record.tax_ids = record.company_id.self_billed_tax_ids
+            else:
+                product = self.env["product.product"].browse(
+                    record.room_type_id.product_id.id
+                )
+                record.tax_ids = product.taxes_id.filtered(
+                    lambda t: t.company_id == record.env.company
+                )
 
     @api.depends("reservation_line_ids", "reservation_line_ids.room_id")
     def _compute_rooms(self):

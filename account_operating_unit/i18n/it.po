@@ -96,7 +96,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__display_name
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
@@ -107,7 +106,6 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__id
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__id
 msgid "ID"
 msgstr "ID"
@@ -143,7 +141,6 @@ msgstr "Movimento contabile"
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment____last_update
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
@@ -186,11 +183,6 @@ msgid "Payments"
 msgstr "Pagamenti"
 
 #. module: account_operating_unit
-#: model:ir.model,name:account_operating_unit.model_account_payment_register
-msgid "Register Payment"
-msgstr "Registra pagamento"
-
-#. module: account_operating_unit
 #: code:addons/account_operating_unit/models/account_move.py:0
 #, python-format
 msgid "The Company in the Move and in Operating Unit must be the same."
@@ -207,3 +199,6 @@ msgstr "L'unità operativa nel movimento e nel Registro deve essere la stessa."
 #: model:ir.model.fields,help:account_operating_unit.field_account_move__operating_unit_id
 msgid "This operating unit will be defaulted in the move lines."
 msgstr "Questa unità operativa sarà predefinita nelle righe di movimento."
+
+#~ msgid "Register Payment"
+#~ msgstr "Registra pagamento"

@@ -90,7 +90,7 @@ class TestJobsOnTestingMethod(JobCommonCase):
         self.assertEqual(test_job.retry, 1)
 
     def test_on_instance_method(self):
-        class A(object):
+        class A:
             def method(self):
                 pass
 
@@ -651,7 +651,7 @@ class TestJobStorageMultiCompany(common.TransactionCase):
     """Test storage of jobs"""
 
     def setUp(self):
-        super(TestJobStorageMultiCompany, self).setUp()
+        super().setUp()
         self.queue_job = self.env["queue.job"]
         grp_queue_job_manager = self.ref("queue_job.group_queue_job_manager")
         User = self.env["res.users"]

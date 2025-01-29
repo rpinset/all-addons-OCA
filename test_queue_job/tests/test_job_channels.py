@@ -9,7 +9,7 @@ from odoo.addons.queue_job.job import Job
 
 class TestJobChannels(common.TransactionCase):
     def setUp(self):
-        super(TestJobChannels, self).setUp()
+        super().setUp()
         self.function_model = self.env["queue.job.function"]
         self.channel_model = self.env["queue.job.channel"]
         self.test_model = self.env["test.queue.channel"]

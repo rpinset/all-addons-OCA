@@ -44,8 +44,7 @@ msgstr ""
 #: code:addons/account_operating_unit/models/res_company.py:0
 #, python-format
 msgid ""
-"Configuration error. Please provide an Inter-operating unit clearing "
-"account."
+"Configuration error. Please provide an Inter-operating unit clearing account."
 msgstr ""
 "Error de configuración. Por favor indique una cuenta de compensación entre "
 "unidades operacionales."
@@ -97,7 +96,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__display_name
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
@@ -108,7 +106,6 @@ msgstr "Mostrar Nombre"
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__id
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__id
 msgid "ID"
 msgstr "ID"
@@ -144,7 +141,6 @@ msgstr "Artículo Diario"
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment____last_update
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company____last_update
 msgid "Last Modified on"
 msgstr "Última Modificación el"
@@ -186,11 +182,6 @@ msgid "Payments"
 msgstr "Pagos"
 
 #. module: account_operating_unit
-#: model:ir.model,name:account_operating_unit.model_account_payment_register
-msgid "Register Payment"
-msgstr "Registro de Pago"
-
-#. module: account_operating_unit
 #: code:addons/account_operating_unit/models/account_move.py:0
 #, python-format
 msgid "The Company in the Move and in Operating Unit must be the same."
@@ -198,7 +189,6 @@ msgstr ""
 "La Compañía en el Movimiento y en la Unidad Operativa debe ser la misma."
 
 #. module: account_operating_unit
-#: code:addons/account_operating_unit/models/account_move.py:0
 #: code:addons/account_operating_unit/models/account_move.py:0
 #, python-format
 msgid "The OU in the Move and in Journal must be the same."
@@ -210,3 +200,6 @@ msgstr "La UO en el Movimiento y en el Diario debe ser la misma."
 msgid "This operating unit will be defaulted in the move lines."
 msgstr ""
 "Esta unidad operativa aparecerá por defecto en las líneas de movimiento."
+
+#~ msgid "Register Payment"
+#~ msgstr "Registro de Pago"

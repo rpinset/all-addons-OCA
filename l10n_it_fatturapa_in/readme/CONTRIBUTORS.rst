@@ -5,7 +5,7 @@
 * Giovanni Serra <giovanni@gslab.it>
 * Gianmarco Conte <gconte@dinamicheaziendali.it>
 * Marco Colombo <https://github.com/TheMule71>
-
+* Salvo Rapisarda <https://github.com/salvorapi>
 * `Aion Tech <https://aiontech.company/>`_:
 
   * Simone Rubino <simone.rubino@aion-tech.it>

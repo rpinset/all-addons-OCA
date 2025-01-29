@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-30 02:43+0000\n"
-"PO-Revision-Date: 2023-10-09 07:49+0000\n"
+"PO-Revision-Date: 2025-01-28 18:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: account_invoice_line_sequence
 #: model_terms:ir.ui.view,arch_db:account_invoice_line_sequence.report_invoice_sequence_qweb
@@ -28,29 +28,29 @@ msgstr "<strong>Sequenza</strong>"
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: account_invoice_line_sequence
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move__id
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_invoice_line_sequence
 #: model:ir.model,name:account_invoice_line_sequence.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: account_invoice_line_sequence
 #: model:ir.model,name:account_invoice_line_sequence.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: account_invoice_line_sequence
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move____last_update
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move_line____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_invoice_line_sequence
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_bank_statement_line__max_line_sequence
@@ -68,7 +68,7 @@ msgstr "Sequenza"
 #: model:ir.model.fields,help:account_invoice_line_sequence.field_account_move_line__sequence
 #: model:ir.model.fields,help:account_invoice_line_sequence.field_account_move_line__sequence2
 msgid "Shows the sequence of this line in the invoice."
-msgstr ""
+msgstr "Mostra la sequenza di questa righe nella fattura."
 
 #. module: account_invoice_line_sequence
 #: model:ir.model.fields,field_description:account_invoice_line_sequence.field_account_move_line__sequence

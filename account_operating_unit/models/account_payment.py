@@ -35,6 +35,8 @@ class AccountPayment(models.Model):
             ):
                 destination_account_id = self.destination_account_id.id
                 for line in res:
-                    if line["account_id"] == destination_account_id:
+                    if not line.get("operating_unit_id", False) or (
+                        line["account_id"] == destination_account_id
+                    ):
                         line["operating_unit_id"] = invoices_ou.id
         return res

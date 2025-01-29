@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e-20191007\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-16 15:53+0000\n"
-"PO-Revision-Date: 2024-12-05 18:06+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-01-28 18:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -12762,7 +12762,7 @@ msgstr "Aziende"
 #: model:ir.model.fields,field_description:l10n_it_intrastat.field_account_invoice_intrastat__company_id
 #: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_invoice_intrastat_search
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.692022
@@ -78576,12 +78576,12 @@ msgstr "Soggetta a Intrastat"
 #. module: l10n_it_intrastat
 #: model:ir.model.fields,field_description:l10n_it_intrastat.field_account_fiscal_position__intrastat_purchase
 msgid "Subject to Intrastat (purchases)"
-msgstr ""
+msgstr "Soggetto a Intrastat (acquisti)"
 
 #. module: l10n_it_intrastat
 #: model:ir.model.fields,field_description:l10n_it_intrastat.field_account_fiscal_position__intrastat_sale
 msgid "Subject to Intrastat (sales)"
-msgstr ""
+msgstr "Soggetto a Intrastat (vendite)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_84137029

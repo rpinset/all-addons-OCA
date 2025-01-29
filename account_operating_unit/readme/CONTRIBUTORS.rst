@@ -6,3 +6,4 @@
 * Michael Villamar <michael.villamar@willdooit.com>
 * Jarsa Sistemas <info@jarsa.com.mx>
 * Alan Ramos <alan.ramos@jarsa.com.mx>
+* Hieu, Vo Minh Bao <hieu.vmb@komit-consulting.com>

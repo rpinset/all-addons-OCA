@@ -79,7 +79,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__display_name
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__display_name
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__display_name
 msgid "Display Name"
 msgstr ""
@@ -90,7 +89,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment__id
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register__id
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company__id
 msgid "ID"
 msgstr ""
@@ -126,7 +124,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_account_payment____last_update
-#: model:ir.model.fields,field_description:account_operating_unit.field_account_payment_register____last_update
 #: model:ir.model.fields,field_description:account_operating_unit.field_res_company____last_update
 msgid "Last Modified on"
 msgstr ""
@@ -164,11 +161,6 @@ msgstr ""
 #. module: account_operating_unit
 #: model:ir.model,name:account_operating_unit.model_account_payment
 msgid "Payments"
-msgstr ""
-
-#. module: account_operating_unit
-#: model:ir.model,name:account_operating_unit.model_account_payment_register
-msgid "Register Payment"
 msgstr ""
 
 #. module: account_operating_unit

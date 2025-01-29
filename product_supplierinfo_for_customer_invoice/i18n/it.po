@@ -7,41 +7,41 @@ msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-15 14:23+0000\n"
-"PO-Revision-Date: 2023-05-09 16:33+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
+"PO-Revision-Date: 2025-01-28 18:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2014-06-22 05:58+0000\n"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_invoice.field_account_move_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_invoice.field_account_move_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model,name:product_supplierinfo_for_customer_invoice.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_invoice.field_account_move_line____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_invoice.field_account_move_line__partner_show_customer_code
 msgid "Partner Show Customer Code"
-msgstr ""
+msgstr "Visualizza codice cliente partner"
 
 #. module: product_supplierinfo_for_customer_invoice
 #: model:ir.model.fields,field_description:product_supplierinfo_for_customer_invoice.field_account_move_line__product_customer_code

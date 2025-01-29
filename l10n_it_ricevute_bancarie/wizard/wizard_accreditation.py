@@ -76,7 +76,9 @@ class RibaAccreditation(models.TransientModel):
         active_id = self.env.context.get("active_id") or False
         if not active_id:
             raise UserError(_("No active ID found."))
-        self.env["riba.distinta"].browse(active_id).state = "accredited"
+        riba_distinta = self.env["riba.distinta"].browse(active_id)
+        riba_distinta.state = "accredited"
+        riba_distinta.line_ids.state = "accredited"
         return {"type": "ir.actions.act_window_close"}
 
     def create_move(self):

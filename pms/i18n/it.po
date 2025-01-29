@@ -2001,6 +2001,11 @@ msgid "Apply Pricelist"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_account_journal__room_filter_ids
+msgid "Apply Rooms"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__change_to_date
 msgid "Apply To"
 msgstr ""
@@ -6383,6 +6388,11 @@ msgid "Journal Items"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_res_company__self_billed_journal_id
+msgid "Journal used to create self billing"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__journal_normal_invoice_id
 msgid "Journal used to create the normal invoice"
 msgstr ""
@@ -8491,6 +8501,7 @@ msgstr ""
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_availability_plan__pms_pricelist_ids
+#: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type__pricelist_ids
 #: model:ir.model.fields,field_description:pms.field_pms_sale_channel__product_pricelist_ids
 #: model:ir.ui.menu,name:pms.pricelist_menu
 msgid "Pricelists"
@@ -8509,6 +8520,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_availability_plan__pms_pricelist_ids
 msgid "Pricelists of the availability plan "
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_board_service_room_type__pricelist_ids
+msgid "Pricelists where this Board Service is available"
 msgstr ""
 
 #. module: pms
@@ -9592,6 +9608,7 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_massive_changes_wizard__apply_pricelists_on__room_types
 #: model:ir.ui.menu,name:pms.menu_open_pms_room_type_form_tree
+#: model_terms:ir.ui.view,arch_db:pms.account_journal_view_form
 msgid "Room Types"
 msgstr ""
 
@@ -9626,6 +9643,16 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__preferred_room_id
 msgid "Room reserved"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_account_journal__allowed_room_ids
+msgid "Room to filter the room in the reservation"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_account_journal__room_filter_ids
+msgid "Room to filter the room types in the reservation"
 msgstr ""
 
 #. module: pms
@@ -9700,6 +9727,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_property_views_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_bottom_tree
 msgid "Rooms"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_account_journal__allowed_room_ids
+msgid "Rooms Filter allowed"
 msgstr ""
 
 #. module: pms
@@ -10107,6 +10139,16 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__self
 msgid "Self"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_res_company__self_billed_journal_id
+msgid "Self billed journal"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_res_company__self_billed_tax_ids
+msgid "Self billed taxes"
 msgstr ""
 
 #. module: pms
@@ -10843,6 +10885,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_advance_payment_inv__deposit_taxes_id
 msgid "Taxes used for deposits"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_res_company__self_billed_tax_ids
+msgid "Taxes used to create self billing"
 msgstr ""
 
 #. module: pms
