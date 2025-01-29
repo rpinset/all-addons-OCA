@@ -2527,7 +2527,7 @@ addon | version | maintainers | summary
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 12.0.1.3.2 |  | Intercompany PO/SO rules
 [res_company_active](res_company_active/) | 12.0.1.0.0 |  | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 12.0.1.0.0 |  | Company Categories
-[res_company_code](res_company_code/) | 12.0.1.0.0 |  | Add 'code' field on company model
+[res_company_code](res_company_code/) | 12.0.1.0.1 |  | Add 'code' field on company model
 [res_partner_category_multi_company](res_partner_category_multi_company/) | 12.0.1.0.0 |  | This module add multi-company management to partner categories
 [res_partner_industry_multi_company](res_partner_industry_multi_company/) | 12.0.1.0.1 |  | This module add multi-company management to res partner industry
 [stock_move_line_multi_company_security](stock_move_line_multi_company_security/) | 12.0.1.0.1 |  | Adds security to Stock Move Lines across companies

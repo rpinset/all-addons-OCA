@@ -122,16 +122,16 @@ Date:   Thu Feb 8 08:07:54 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit df56baf16a5083bb78fe21418cf385f166ca2950
+commit 0c42d511663412b2ca0a6ad3d15c4d045c462a39
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 23 13:15:01 2024 +0000
+Date:   Tue Jan 28 15:36:52 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (39 of 39 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_supplierinfo_update
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_supplierinfo_update/it/
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_line_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_line_sequence/it/
 
 
 ## account-fiscal-rule
@@ -173,9 +173,9 @@ Date:   Thu Dec 5 08:41:33 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 43e34d2386caa6e1560388d4f38081d7270716da
+commit 51a64fa8df38acd0f0e001865106683f3a5aa811
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 11 06:31:03 2024 +0000
+Date:   Mon Jan 27 09:12:04 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -579,16 +579,16 @@ Date:   Wed Oct 9 08:31:22 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 6d399415a55b6115f5d1921d79a6b690a8ce7363
+commit 256ffbe3bf0e7159b422abe35948e55a131c15d8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jan 25 14:05:11 2025 +0000
+Date:   Tue Jan 28 08:22:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 100.0% (512 of 512 strings)
     
-    Translation: field-service-12.0/field-service-12.0-fieldservice_route_account
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice_route_account/it/
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -653,16 +653,16 @@ Date:   Fri Oct 25 17:48:11 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 59b65b53952184041577ef090b11e2ece67f2f4f
+commit 6803c5df704d8c4a66e27bc0f16ff8d3c2fc145c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 11:10:31 2024 +0000
+Date:   Mon Jan 27 09:29:43 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (97 of 97 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_expense_payment_difference
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_expense_payment_difference/it/
+    Translation: hr-12.0/hr-12.0-hr_period
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_period/it/
 
 
 ## connector-odoo2odoo
@@ -676,16 +676,11 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 15e111d2f7212d7966de6eca903c8247e66b19b4
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Nov 21 12:05:10 2024 +0000
+commit f52a440b22c1d36cfa28e372570cf99b3f667185
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jan 26 12:26:36 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: multi-company-12.0/multi-company-12.0-purchase_sale_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-12-0/multi-company-12-0-purchase_sale_inter_company/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1201,16 +1196,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 02f31c6a6cef06a5ccea3d1470efe250739c9175
+commit 3af9d04877d8c34cb7e03417ce4d6d521f9d3a67
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Oct 23 06:47:11 2024 +0000
+Date:   Mon Jan 27 09:12:05 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (46 of 46 strings)
+    Currently translated at 100.0% (34 of 34 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_subcontracting
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_subcontracting/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_planned_order_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_planned_order_matrix/it/
 
 
 ## manufacture-reporting
@@ -1519,9 +1514,9 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit cb90c74a1c00868e8a5301405eab00ab3446859b
+commit 01906791bf216127fcea30ee118a81bf43e0c317
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:33:22 2024 +0000
+Date:   Mon Jan 27 09:11:29 2025 +0000
 
     Translated using Weblate (Italian)
     
