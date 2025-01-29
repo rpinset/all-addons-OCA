@@ -18,6 +18,7 @@ class AccountMove(models.Model):
         "state",
         "date",
         "line_ids.amount_currency",
+        "line_ids.balance",
         "company_id",
         "currency_id",
         "show_currency_rate_amount",
@@ -30,12 +31,16 @@ class AccountMove(models.Model):
         """
         self.currency_rate_amount = 1
         for item in self.filtered("show_currency_rate_amount"):
-            lines = item.line_ids.filtered(lambda x: x.amount_currency > 0)
+            lines = item.line_ids.filtered(
+                lambda x: abs(x.amount_currency) > 0 and x.date
+            )
             if item.state == "posted" and lines:
-                amount_currency_positive = sum(lines.mapped("amount_currency"))
-                total_debit = sum(lines.mapped("debit"))
+                amount_currency_positive = sum(
+                    [abs(amc) for amc in lines.mapped("amount_currency")]
+                )
+                total_balance_positive = sum([abs(b) for b in lines.mapped("balance")])
                 item.currency_rate_amount = item.currency_id.round(
-                    amount_currency_positive / total_debit
+                    amount_currency_positive / total_balance_positive
                 )
             else:
                 rates = item.currency_id._get_rates(item.company_id, item.date)
@@ -47,3 +52,48 @@ class AccountMove(models.Model):
             item.show_currency_rate_amount = (
                 item.currency_id and item.currency_id != item.company_id.currency_id
             )
+
+
+class AccountMoveLine(models.Model):
+    _inherit = "account.move.line"
+
+    # TODO: This field should be removed in V16 as it is already
+    # added by Odoo in the account module
+    currency_rate_amount = fields.Float(
+        string="Rate amount", compute="_compute_currency_rate_amount", digits=0,
+    )
+
+    @api.depends(
+        "move_id.state",
+        "move_id.date",
+        "amount_currency",
+        "balance",
+        "move_id.company_id",
+        "currency_id",
+    )
+    def _compute_currency_rate_amount(self):
+        """ It's necessary to define value according to some cases:
+        - Case A: Currency is equal to company currency (Value = 1)
+        - Case B: Move exist previously (posted) and get real rate according to lines
+        - Case C: Get expected rate (according to date) to show some value in creation.
+        """
+        # TODO: This method should be removed in V16 as the logic is
+        # already added by Odoo in the account module
+        self.currency_rate_amount = 1
+        for item in self:
+            if (
+                not item.currency_id
+                or not item.move_id.date
+                or item.currency_id == item.move_id.company_id.currency_id
+            ):
+                continue
+            amount_currency = abs(item.amount_currency)
+            if item.move_id.state == "posted" and amount_currency > 0:
+                item.currency_rate_amount = item.currency_id.round(
+                    amount_currency / abs(item.balance)
+                )
+            else:
+                rates = item.currency_id._get_rates(
+                    item.move_id.company_id, item.move_id.date
+                )
+                item.currency_rate_amount = rates.get(item.currency_id.id)

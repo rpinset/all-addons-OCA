@@ -120,11 +120,16 @@ Date:   Thu Feb 8 08:12:29 2024 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit b7ad0cc13537a54f120063ef377ab8e0680200f4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Nov 8 12:04:49 2024 +0000
+commit d7a4558298add79d6dde733d1ceaf06442a6ca70
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jan 28 15:36:55 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 71.4% (5 of 7 strings)
+    
+    Translation: account-invoicing-13.0/account-invoicing-13.0-account_invoice_line_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-13-0/account-invoicing-13-0-account_invoice_line_sequence/it/
 
 
 ## account-fiscal-rule
@@ -594,9 +599,9 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a1d4fdbdc45f3e713d4bc448855685222627b074
+commit 0ef0691a10ddcb68611c04180ebf47ecf731b143
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 15 09:49:59 2025 +0000
+Date:   Tue Jan 28 08:22:40 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1318,16 +1323,16 @@ Date:   Mon Oct 9 20:13:38 2023 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit d81fc735cfa793e9cffb6653bace2f908060c4a6
+commit 15ebcfb0cddbc28107881fe13a039720d19df633
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 26 17:38:09 2024 +0000
+Date:   Mon Jan 27 09:11:45 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 98.2% (332 of 338 strings)
+    Currently translated at 83.0% (54 of 65 strings)
     
-    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_adjustment
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_adjustment/it/
 
 
 ## wms
@@ -1346,16 +1351,16 @@ Date:   Wed Sep 18 07:08:29 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 2f44e552f63d5d25958c11bc41f7cb7d515c3dc5
+commit e20c7664e8540f12994bb8661f53b607d1af6485
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jan 25 13:45:06 2025 +0000
+Date:   Mon Jan 27 09:11:42 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (34 of 34 strings)
     
-    Translation: manufacture-13.0/manufacture-13.0-account_move_line_manufacture_info
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-account_move_line_manufacture_info/it/
+    Translation: manufacture-13.0/manufacture-13.0-mrp_planned_order_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_planned_order_matrix/it/
 
 
 ## manufacture-reporting
@@ -1666,16 +1671,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit cd8486f2235a588fad685223dd4461c740b4c1f7
+commit f490a334a16d3cc6fe2c8b902eacd33ab3652098
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Nov 26 17:17:48 2024 +0000
+Date:   Mon Jan 27 09:11:31 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 72.5% (74 of 102 strings)
+    Currently translated at 100.0% (48 of 48 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
+    Translation: server-ux-13.0/server-ux-13.0-date_range
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-date_range/it/
 
 
 ## community-data-files
