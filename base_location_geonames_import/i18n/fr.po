@@ -98,8 +98,17 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
 #, python-format
-msgid "Got an error %d when trying to download the file %s."
-msgstr "Erreur %d reçue suite à la tentative de téléchargement du fichier %s."
+msgid "Got an error %(status_code)d when trying to download the file %(url)s."
+msgstr ""
+
+#. module: base_location_geonames_import
+#. odoo-python
+#: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
+#, python-format
+msgid ""
+"Got an error %(status_code)d when trying to download the file %(url)s. "
+"Searching for the file locally"
+msgstr ""
 
 #. module: base_location_geonames_import
 #: model:ir.model.fields,field_description:base_location_geonames_import.field_city_zip_geonames_import__id
@@ -162,6 +171,11 @@ msgstr "Toutes les lettres en majuscule"
 #: model_terms:ir.ui.view,arch_db:base_location_geonames_import.city_zip_geonames_import_form
 msgid "geonames.org"
 msgstr "geonames.org"
+
+#, python-format
+#~ msgid "Got an error %d when trying to download the file %s."
+#~ msgstr ""
+#~ "Erreur %d reçue suite à la tentative de téléchargement du fichier %s."
 
 #~ msgid ""
 #~ "The country code inside the file (%s) doesn't correspond to the selected "

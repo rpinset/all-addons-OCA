@@ -107,12 +107,6 @@ msgid "Current Membership Status"
 msgstr "Estat actual de la filiació"
 
 #. module: membership_extension
-#: model:ir.model.fields,help:membership_extension.field_res_partner__membership_start
-#: model:ir.model.fields,help:membership_extension.field_res_users__membership_start
-msgid "Date from which membership becomes active."
-msgstr "Data des de la qual s'ha activat la filiació."
-
-#. module: membership_extension
 #: model:ir.model.fields,help:membership_extension.field_res_partner__membership_start_adhered
 #: model:ir.model.fields,help:membership_extension.field_res_users__membership_start_adhered
 msgid "Date from which partner is adhered."
@@ -127,13 +121,25 @@ msgstr "Data des de la qual la filiació s'ha cancel·lat."
 #. module: membership_extension
 #: model:ir.model.fields,help:membership_extension.field_res_partner__membership_stop
 #: model:ir.model.fields,help:membership_extension.field_res_users__membership_stop
-msgid "Date until which membership remains active."
-msgstr "Data fins a la qual la filiació roman activa."
+msgid "Date when the latest partner's membership ends."
+msgstr ""
+
+#. module: membership_extension
+#: model:ir.model.fields,help:membership_extension.field_res_partner__membership_last_start
+#: model:ir.model.fields,help:membership_extension.field_res_users__membership_last_start
+msgid "Date when the partner became a member for the last time."
+msgstr ""
 
 #. module: membership_extension
 #: model:ir.model.fields,field_description:membership_extension.field_membership_membership_category__display_name
 msgid "Display Name"
 msgstr "Nom a mostrar"
+
+#. module: membership_extension
+#: model:ir.model.fields,help:membership_extension.field_res_partner__membership_start
+#: model:ir.model.fields,help:membership_extension.field_res_users__membership_start
+msgid "Earliest historical date this partner ever became a member."
+msgstr ""
 
 #. module: membership_extension
 #: model:ir.model.constraint,message:membership_extension.constraint_membership_membership_line_start_date_greater
@@ -397,12 +403,6 @@ msgid "Silver"
 msgstr "Plata"
 
 #. module: membership_extension
-#: model:ir.model.fields,help:membership_extension.field_res_partner__membership_last_start
-#: model:ir.model.fields,help:membership_extension.field_res_users__membership_last_start
-msgid "Start date of last membership period."
-msgstr "Data d'inici del darrer període d'afiliació."
-
-#. module: membership_extension
 #: model_terms:ir.ui.view,arch_db:membership_extension.view_res_partner_member_filter
 msgid "Starting month of last membership period"
 msgstr "Més d'inici del darrer període d'afiliació"
@@ -427,6 +427,15 @@ msgid ""
 msgstr ""
 "No es pot canviar l'empresa, ja que aquest tipus de soci és utilitzada per "
 "la plantilla de producte (%s), que té una empresa assignada incompatible."
+
+#~ msgid "Date from which membership becomes active."
+#~ msgstr "Data des de la qual s'ha activat la filiació."
+
+#~ msgid "Date until which membership remains active."
+#~ msgstr "Data fins a la qual la filiació roman activa."
+
+#~ msgid "Start date of last membership period."
+#~ msgstr "Data d'inici del darrer període d'afiliació."
 
 #~ msgid "Product Template"
 #~ msgstr "Plantilla del producte"

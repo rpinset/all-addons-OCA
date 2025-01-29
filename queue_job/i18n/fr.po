@@ -20,7 +20,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid ""
 "<br/>\n"
-"                            <span class=\"oe_grey oe_inline\"> If the max. retries is 0, the number of retries is infinite.</span>"
+"                            <span class=\"oe_grey oe_inline\"> If the max. "
+"retries is 0, the number of retries is infinite.</span>"
 msgstr ""
 "<br/>\n"
 "                            <span class=\"oe_grey oe_inline\"> Si le maximum "
@@ -178,6 +179,11 @@ msgstr "Date de création"
 #: model:ir.model.fields,field_description:queue_job.field_queue_requeue_job__create_uid
 msgid "Created by"
 msgstr "Créé par"
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Created date"
+msgstr ""
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_channel__create_date
@@ -384,8 +390,8 @@ msgstr "Clé d’identité"
 #, python-format
 msgid "If both parameters are 0, ALL jobs will be requeued!"
 msgstr ""
-"Si les deux paramètres sont à 0, toutes les tâches seront remises en file d’"
-"attente !"
+"Si les deux paramètres sont à 0, toutes les tâches seront remises en file "
+"d’attente !"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_needaction
@@ -488,6 +494,21 @@ msgstr "Tâches pour le graphe %s"
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__kwargs
 msgid "Kwargs"
 msgstr "Arguments par clé"
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Last 24 hours"
+msgstr ""
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Last 30 days"
+msgstr ""
+
+#. module: queue_job
+#: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
+msgid "Last 7 days"
+msgstr ""
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job____last_update
@@ -641,7 +662,10 @@ msgstr "Canal parent requis."
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job_function__edit_retry_pattern
 msgid ""
-"Pattern expressing from the count of retries on retryable errors, the number of of seconds to postpone the next execution. Setting the number of seconds to a 2-element tuple or list will randomize the retry interval between the 2 values.\n"
+"Pattern expressing from the count of retries on retryable errors, the number "
+"of of seconds to postpone the next execution. Setting the number of seconds "
+"to a 2-element tuple or list will randomize the retry interval between the 2 "
+"values.\n"
 "Example: {1: 10, 5: 20, 10: 30, 15: 300}.\n"
 "Example: {1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}.\n"
 "See the module description for details."
@@ -812,8 +836,8 @@ msgid ""
 "Something bad happened during the execution of job %s. More details in the "
 "'Exception Information' section."
 msgstr ""
-"Un problème a été rencontré lors de l’exécution de la tâche %s. La section « "
-"Information d’exception » contient plus de détails."
+"Un problème a été rencontré lors de l’exécution de la tâche %s. La section "
+"« Information d’exception » contient plus de détails."
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__date_started
@@ -853,7 +877,9 @@ msgstr "Tâche"
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job_function__edit_related_action
 msgid ""
-"The action when the button *Related Action* is used on a job. The default action is to open the view of the record related to the job. Configured as a dictionary with optional keys: enable, func_name, kwargs.\n"
+"The action when the button *Related Action* is used on a job. The default "
+"action is to open the view of the record related to the job. Configured as a "
+"dictionary with optional keys: enable, func_name, kwargs.\n"
 "See the module description for details."
 msgstr ""
 "L’action lorsque le bouton « Action rattachée » est utilisé dans une tâche. "
@@ -916,12 +942,13 @@ msgstr "UUID"
 msgid ""
 "Unexpected format of Related Action for {}.\n"
 "Example of valid format:\n"
-"{{\"enable\": True, \"func_name\": \"related_action_foo\", \"kwargs\" {{\"limit\": 10}}}}"
+"{{\"enable\": True, \"func_name\": \"related_action_foo\", "
+"\"kwargs\" {{\"limit\": 10}}}}"
 msgstr ""
 "Format inattendu pour l’action rattachée de {}.\n"
 "Exemple de format valide :\n"
-"{{\"enable\": True, \"func_name\": \"related_action_foo\", \"kwargs\" {{"
-"\"limit\": 10}}}}"
+"{{\"enable\": True, \"func_name\": \"related_action_foo\", "
+"\"kwargs\" {{\"limit\": 10}}}}"
 
 #. module: queue_job
 #. odoo-python
@@ -929,12 +956,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Unexpected format of Retry Pattern for {}.\n"
-"Example of valid format:\n"
-"{{1: 300, 5: 600, 10: 1200, 15: 3000}}"
+"Example of valid formats:\n"
+"{{1: 300, 5: 600, 10: 1200, 15: 3000}}\n"
+"{{1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}}"
 msgstr ""
-"Format inattendu pour le modèle des tentatives de {}.\n"
-"Exemple de format valide :\n"
-"{{1: 300, 5: 600, 10: 1200, 15: 3000}}"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__user_id
@@ -956,3 +981,13 @@ msgstr "Assistant de remise de tâches en file d’attente"
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__worker_pid
 msgid "Worker Pid"
 msgstr "Identifiant du processus de travail"
+
+#, python-format
+#~ msgid ""
+#~ "Unexpected format of Retry Pattern for {}.\n"
+#~ "Example of valid format:\n"
+#~ "{{1: 300, 5: 600, 10: 1200, 15: 3000}}"
+#~ msgstr ""
+#~ "Format inattendu pour le modèle des tentatives de {}.\n"
+#~ "Exemple de format valide :\n"
+#~ "{{1: 300, 5: 600, 10: 1200, 15: 3000}}"

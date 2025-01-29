@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner_industry__child_ids
@@ -33,6 +33,17 @@ msgstr ""
 #. module: partner_industry_secondary
 #: model:ir.model,name:partner_industry_secondary.model_res_partner
 msgid "Contact"
+msgstr ""
+
+#. module: partner_industry_secondary
+#: model:ir.model.fields,field_description:partner_industry_secondary.field_res_config_settings__display_last_child_first
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display Child Industries first"
+msgstr ""
+
+#. module: partner_industry_secondary
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display like: Child (Parent &lt; Grandparent)"
 msgstr ""
 
 #. module: partner_industry_secondary
@@ -93,6 +104,14 @@ msgstr ""
 #. module: partner_industry_secondary
 #: model:ir.model.fields,help:partner_industry_secondary.field_res_config_settings__group_use_partner_industry_for_person
 msgid "Set if you want to be able to use industries for individuals also."
+msgstr ""
+
+#. module: partner_industry_secondary
+#: model:ir.model.fields,help:partner_industry_secondary.field_res_config_settings__display_last_child_first
+msgid ""
+"Set if you want to show the last child industries first when displaying "
+"industries.\n"
+"Child (Parent < Grandparent)"
 msgstr ""
 
 #. module: partner_industry_secondary

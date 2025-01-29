@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-26 15:33+0000\n"
-"PO-Revision-Date: 2023-12-27 09:37+0000\n"
+"PO-Revision-Date: 2025-01-28 12:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner_industry__child_ids
@@ -33,6 +33,17 @@ msgstr "Impostazioni configurazione"
 #: model:ir.model,name:partner_industry_secondary.model_res_partner
 msgid "Contact"
 msgstr "Contatto"
+
+#. module: partner_industry_secondary
+#: model:ir.model.fields,field_description:partner_industry_secondary.field_res_config_settings__display_last_child_first
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display Child Industries first"
+msgstr "Visualizza prima i settori figli"
+
+#. module: partner_industry_secondary
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display like: Child (Parent &lt; Grandparent)"
+msgstr "Visualizza come: figlio (padre e nonno)"
 
 #. module: partner_industry_secondary
 #: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
@@ -94,6 +105,17 @@ msgstr "Settore"
 msgid "Set if you want to be able to use industries for individuals also."
 msgstr ""
 "Imposta se si vogliono utilizzare i settori anche per le imprese individuali."
+
+#. module: partner_industry_secondary
+#: model:ir.model.fields,help:partner_industry_secondary.field_res_config_settings__display_last_child_first
+msgid ""
+"Set if you want to show the last child industries first when displaying "
+"industries.\n"
+"Child (Parent < Grandparent)"
+msgstr ""
+"Imposta se si vuole visualizzare prima gli ultimi settori nella "
+"visualizzazione dei settori.\n"
+"Figlio (padre < nonno)"
 
 #. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner__show_partner_industry_for_person

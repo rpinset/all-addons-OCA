@@ -90,7 +90,16 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
 #, python-format
-msgid "Got an error %d when trying to download the file %s."
+msgid "Got an error %(status_code)d when trying to download the file %(url)s."
+msgstr ""
+
+#. module: base_location_geonames_import
+#. odoo-python
+#: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
+#, python-format
+msgid ""
+"Got an error %(status_code)d when trying to download the file %(url)s. "
+"Searching for the file locally"
 msgstr ""
 
 #. module: base_location_geonames_import

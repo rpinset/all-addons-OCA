@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-29 12:06+0000\n"
+"PO-Revision-Date: 2025-01-28 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -29,7 +29,7 @@ msgstr "URL autorizzazione"
 #. module: auth_oauth_ropc
 #: model:ir.model.fields,field_description:auth_oauth_ropc.field_oauth_ropc_provider__client_id
 msgid "Client ID"
-msgstr "ID cliente"
+msgstr "ID client"
 
 #. module: auth_oauth_ropc
 #: model:ir.model.fields,field_description:auth_oauth_ropc.field_oauth_ropc_provider__client_secret

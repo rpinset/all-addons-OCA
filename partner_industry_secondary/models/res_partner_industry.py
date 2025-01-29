@@ -3,6 +3,7 @@
 # Copyright 2016 Tecnativa S.L. - Pedro M. Baeza
 # Copyright 2018 Eficent Business and IT Consulting Services, S.L.
 # Copyright 2019 Tecnativa - Cristina Martin R.
+# Copyright 2025 Moduon - Eduardo de Miguel
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 from odoo import _, api, exceptions, fields, models
@@ -28,11 +29,25 @@ class ResPartnerIndustry(models.Model):
             """Return the list [cat.name, cat.parent_id.name, ...]"""
             res = []
             while cat:
-                res.insert(0, cat.name)
+                res.append(cat.name)
                 cat = cat.parent_id
             return res
 
-        return [(cat.id, " / ".join(get_names(cat))) for cat in self]
+        if (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param("partner_industry_secondary.display_last_child_first")
+        ):
+            # Display last child first
+            result = []
+            for cat in self:
+                cat_name, *parent_cats = get_names(cat)
+                if parent_cats:
+                    cat_name = f"{cat_name} ({' < '.join(parent_cats)})"
+                result.append((cat.id, cat_name))
+            return result
+        # Default display (Grandparent / Parent / Child)
+        return [(cat.id, " / ".join(get_names(cat)[::-1])) for cat in self]
 
     @api.constrains("name", "parent_id")
     def _check_uniq_name(self):

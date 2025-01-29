@@ -1,23 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * partner_sector
+# 	* partner_industry_secondary
 #
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-26 15:33+0000\n"
-"PO-Revision-Date: 2023-10-12 13:38+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
-"Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
+"POT-Creation-Date: 2025-01-15 09:17+0000\n"
+"PO-Revision-Date: 2025-01-15 10:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner_industry__child_ids
@@ -27,12 +25,23 @@ msgstr "Hijos"
 #. module: partner_industry_secondary
 #: model:ir.model,name:partner_industry_secondary.model_res_config_settings
 msgid "Config Settings"
-msgstr "Configura los ajustes"
+msgstr "Ajustes de configuración"
 
 #. module: partner_industry_secondary
 #: model:ir.model,name:partner_industry_secondary.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
+
+#. module: partner_industry_secondary
+#: model:ir.model.fields,field_description:partner_industry_secondary.field_res_config_settings__display_last_child_first
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display Child Industries first"
+msgstr "Mostrar Industrias Hijas primero"
+
+#. module: partner_industry_secondary
+#: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
+msgid "Display like: Child (Parent &lt; Grandparent)"
+msgstr "Mostrar como: Hijo (Padre &lt; Abuelo)"
 
 #. module: partner_industry_secondary
 #: model_terms:ir.ui.view,arch_db:partner_industry_secondary.res_config_settings_view_form
@@ -61,7 +70,7 @@ msgstr "Sector"
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner__industry_id
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_users__industry_id
 msgid "Main Industry"
-msgstr "Sector principal"
+msgstr "Sector"
 
 #. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner_industry__name
@@ -95,6 +104,17 @@ msgid "Set if you want to be able to use industries for individuals also."
 msgstr "Establezca si desea poder usar sectores para individuos también."
 
 #. module: partner_industry_secondary
+#: model:ir.model.fields,help:partner_industry_secondary.field_res_config_settings__display_last_child_first
+msgid ""
+"Set if you want to show the last child industries first when displaying "
+"industries.\n"
+"Child (Parent < Grandparent)"
+msgstr ""
+"Márcalo si quieres mostrar la última industria hija primero cuando busques "
+"por industrias.\n"
+"Hija (Padre < Abuelo < Ancestro)"
+
+#. module: partner_industry_secondary
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_partner__show_partner_industry_for_person
 #: model:ir.model.fields,field_description:partner_industry_secondary.field_res_users__show_partner_industry_for_person
 msgid "Show Partner Industry For Person"
@@ -113,46 +133,3 @@ msgstr ""
 #: model:res.groups,name:partner_industry_secondary.group_use_partner_industry_for_person
 msgid "Use industry for individuals"
 msgstr "Use el sector para individuos"
-
-#, python-format
-#~ msgid "Error! You cannot create recursive industries."
-#~ msgstr "Error!. No puede crear sectores recursivos."
-
-#~ msgid "Industry for individual"
-#~ msgstr "Sector para personas"
-
-#~ msgid "Partner Industries"
-#~ msgstr "Sectores de la empresa"
-
-#~ msgid "Parent Right"
-#~ msgstr "Padre derecha"
-
-#~ msgid "Created by"
-#~ msgstr "Creado por"
-
-#~ msgid "Created on"
-#~ msgstr "Creado en"
-
-#~ msgid "Display Name"
-#~ msgstr "Nombre mostrado"
-
-#~ msgid "ID"
-#~ msgstr "ID"
-
-#~ msgid "Last Modified on"
-#~ msgstr "Última modificación el"
-
-#~ msgid "Last Updated by"
-#~ msgstr "Última actualización por"
-
-#~ msgid "Last Updated on"
-#~ msgstr "Última actualización en"
-
-#~ msgid "Main Sector"
-#~ msgstr "Sector principal"
-
-#~ msgid "Partner"
-#~ msgstr "Empresa"
-
-#~ msgid "Sectors"
-#~ msgstr "Sectores"

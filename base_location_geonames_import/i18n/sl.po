@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 4.14.1\n"
 
 #. module: base_location_geonames_import
@@ -93,8 +93,17 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
 #, python-format
-msgid "Got an error %d when trying to download the file %s."
-msgstr "Prišlo je do napake %d pri poizkusu prenosa datoteke %s."
+msgid "Got an error %(status_code)d when trying to download the file %(url)s."
+msgstr ""
+
+#. module: base_location_geonames_import
+#. odoo-python
+#: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
+#, python-format
+msgid ""
+"Got an error %(status_code)d when trying to download the file %(url)s. "
+"Searching for the file locally"
+msgstr ""
 
 #. module: base_location_geonames_import
 #: model:ir.model.fields,field_description:base_location_geonames_import.field_city_zip_geonames_import__id
@@ -158,6 +167,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_location_geonames_import.city_zip_geonames_import_form
 msgid "geonames.org"
 msgstr ""
+
+#, python-format
+#~ msgid "Got an error %d when trying to download the file %s."
+#~ msgstr "Prišlo je do napake %d pri poizkusu prenosa datoteke %s."
 
 #~ msgid ""
 #~ "The country code inside the file (%s) doesn't correspond to the selected "

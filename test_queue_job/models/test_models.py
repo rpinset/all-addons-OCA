@@ -40,7 +40,7 @@ class ModelTestQueueJob(models.Model):
     # to test the context is serialized/deserialized properly
     @api.model
     def _job_prepare_context_before_enqueue_keys(self):
-        return ("tz", "lang")
+        return ("tz", "lang", "allowed_company_ids")
 
     def testing_method(self, *args, **kwargs):
         """Method used for tests
@@ -76,7 +76,7 @@ class ModelTestQueueJob(models.Model):
         return
 
     def mapped(self, func):
-        return super(ModelTestQueueJob, self).mapped(func)
+        return super().mapped(func)
 
     def job_alter_mutable(self, mutable_arg, mutable_kwarg=None):
         mutable_arg.append(2)
