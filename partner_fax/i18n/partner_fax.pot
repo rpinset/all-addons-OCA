@@ -19,8 +19,12 @@ msgid "Contact"
 msgstr ""
 
 #. module: partner_fax
+#. odoo-python
+#: code:addons/partner_fax/models/ir_qweb_fields.py:0
 #: model:ir.model.fields,field_description:partner_fax.field_res_partner__fax
 #: model:ir.model.fields,field_description:partner_fax.field_res_users__fax
+#: model_terms:ir.ui.view,arch_db:partner_fax.contact
+#, python-format
 msgid "Fax"
 msgstr ""
 

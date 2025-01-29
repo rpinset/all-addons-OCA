@@ -109,7 +109,7 @@ class TestSaleOrder(TransactionCase):
     def test_action_confirm(self):
         """It should create a contract for each contract template used in
         order_line"""
-        self.order_line1._compute_auto_renew()
+        self.order_line1.is_auto_renew = True
         self.sale.action_confirm()
         contracts = self.sale.order_line.mapped("contract_id")
         self.assertEqual(len(contracts), 2)
@@ -155,7 +155,7 @@ class TestSaleOrder(TransactionCase):
         """It should create a contract for each contract template used in
         order_line"""
         self.sale.company_id.create_contract_at_sale_order_confirmation = False
-        self.order_line1._compute_auto_renew()
+        self.order_line1.is_auto_renew = True
         self.sale.action_confirm()
         self.assertEqual(len(self.sale.order_line.mapped("contract_id")), 0)
         self.assertTrue(self.sale.need_contract_creation)
@@ -174,14 +174,14 @@ class TestSaleOrder(TransactionCase):
     def test_sale_contract_count(self):
         """It should count contracts as many different contract template used
         in order_line"""
-        self.order_line1._compute_auto_renew()
+        self.order_line1.is_auto_renew = True
         self.sale.action_confirm()
         self.assertEqual(self.sale.contract_count, 2)
 
     def test_onchange_product(self):
         """It should get recurrence invoicing info to the sale line from
         its product"""
-        self.order_line1._compute_auto_renew()
+        self.order_line1.is_auto_renew = True
         self.assertEqual(
             self.order_line1.recurring_rule_type,
             self.product1.recurring_rule_type,

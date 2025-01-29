@@ -62,19 +62,30 @@
                     invisible="not is_contract"
                 />
                 <group invisible="not is_contract">
-                    <field name="recurring_rule_type" />
+                    <label for="recurring_interval" />
+                    <div class="o_row">
+                        <field
+                            name="recurring_interval"
+                            readonly="product_uom_readonly"
+                        />
+                        <field name="recurring_rule_type" />
+                    </div>
                 </group>
                 <group invisible="not is_contract">
                     <field name="recurring_invoicing_type" />
                 </group>
                 <group invisible="not is_contract">
-                    <field name="date_start" required="is_contract" />
+                    <field
+                        name="date_start"
+                        required="is_contract"
+                        readonly="product_uom_readonly"
+                    />
                 </group>
                 <group invisible="not is_contract">
-                    <field name="date_end" />
+                    <field name="date_end" readonly="product_uom_readonly" />
                 </group>
                 <group invisible="not is_contract">
-                    <field name="is_auto_renew" />
+                    <field name="is_auto_renew" readonly="product_uom_readonly" />
                 </group>
                 <group invisible="not is_auto_renew">
                     <label for="auto_renew_interval" />
@@ -84,12 +95,14 @@
                             class="oe_inline"
                             nolabel="1"
                             required="is_auto_renew"
+                            readonly="product_uom_readonly"
                         />
                         <field
                             name="auto_renew_rule_type"
                             class="oe_inline"
                             nolabel="1"
                             required="is_auto_renew"
+                            readonly="product_uom_readonly"
                         />
                     </div>
                 </group>
@@ -100,6 +113,7 @@
             >
                 <field name="contract_template_id" column_invisible="1" />
                 <field name="is_contract" column_invisible="1" />
+                <field name="product_contract_description" column_invisible="1" />
                 <field
                     name="contract_id"
                     options='{"no_create": True}'
@@ -112,6 +126,11 @@
                     domain="[('contract_id','=',contract_id)]"
                     optional="hide"
                 />
+                <field
+                    name="recurring_interval"
+                    optional="hide"
+                    readonly="product_uom_readonly"
+                />
                 <field name="recurring_rule_type" optional="hide" />
                 <field name="recurring_invoicing_type" optional="hide" />
                 <field name="contract_start_date_method" column_invisible="1" />
@@ -119,15 +138,25 @@
                     name="date_start"
                     optional="hide"
                     required="is_contract and contract_start_date_method == 'manual'"
+                    readonly="product_uom_readonly"
                 />
-                <field name="date_end" optional="hide" />
-                <field name="is_auto_renew" optional="hide" />
+                <field
+                    name="date_end"
+                    optional="hide"
+                    readonly="product_uom_readonly"
+                />
+                <field
+                    name="is_auto_renew"
+                    optional="hide"
+                    readonly="product_uom_readonly"
+                />
                 <field
                     name="auto_renew_interval"
                     class="oe_inline"
                     nolabel="1"
                     required="is_auto_renew"
                     optional="hide"
+                    readonly="product_uom_readonly"
                 />
                 <field
                     name="auto_renew_rule_type"
@@ -135,6 +164,7 @@
                     nolabel="1"
                     required="is_auto_renew"
                     optional="hide"
+                    readonly="product_uom_readonly"
                 />
             </xpath>
         </field>

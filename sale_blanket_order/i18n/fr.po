@@ -524,6 +524,12 @@ msgid "Name"
 msgstr "Nom"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_calendar_event_id
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Prochaine Activité Calendrier"
+
+#. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__activity_date_deadline
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__activity_date_deadline
 msgid "Next Activity Deadline"
@@ -1053,9 +1059,6 @@ msgstr "restante"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Pièce jointe principale"
-
-#~ msgid "Next Activity Calendar Event"
-#~ msgstr "Prochaine Activité Calendrier"
 
 #~ msgid "Number of messages which requires an action"
 #~ msgstr "Nombre des messages requérants une action"

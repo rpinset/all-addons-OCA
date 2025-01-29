@@ -1,7 +1,6 @@
 # Copyright 2024 Tecnativa - Carlos Roca
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from dateutil.relativedelta import relativedelta
 
 from odoo import api, fields, models
 
@@ -20,12 +19,17 @@ class ProductContractConfigurator(models.TransientModel):
         string="Contract Template",
         compute="_compute_contract_template_id",
     )
+    recurring_interval = fields.Integer(
+        default=1,
+        string="Invoice Every",
+        help="Invoice every (Days/Week/Month/Year)",
+    )
     recurring_rule_type = fields.Selection(related="product_id.recurring_rule_type")
     recurring_invoicing_type = fields.Selection(
         related="product_id.recurring_invoicing_type"
     )
     date_start = fields.Date()
-    date_end = fields.Date()
+    date_end = fields.Date(compute="_compute_date_end", readonly=False, store=True)
     contract_line_id = fields.Many2one(
         comodel_name="contract.line",
         string="Contract Line to replace",
@@ -79,33 +83,15 @@ class ProductContractConfigurator(models.TransientModel):
                 contract_start_date_method = rec.product_id.contract_start_date_method
                 if contract_start_date_method == "manual":
                     rec.date_start = rec.date_start or fields.Date.today()
-                rec.date_end = rec._get_date_end()
                 rec.is_auto_renew = rec.product_id.is_auto_renew
                 if rec.is_auto_renew:
                     rec.auto_renew_interval = rec.product_id.auto_renew_interval
                     rec.auto_renew_rule_type = rec.product_id.auto_renew_rule_type
 
-    def _get_auto_renew_rule_type(self):
-        """monthly last day don't make sense for auto_renew_rule_type"""
-        self.ensure_one()
-        if self.recurring_rule_type == "monthlylastday":
-            return "monthly"
-        return self.recurring_rule_type
-
-    def _get_date_end(self):
-        self.ensure_one()
-        contract_line_model = self.env["contract.line"]
-        date_end = (
-            self.date_start
-            + contract_line_model.get_relative_delta(
-                self._get_auto_renew_rule_type(),
-                int(self.product_uom_qty),
+    @api.depends("date_start", "recurring_interval")
+    def _compute_date_end(self):
+        self.update({"date_end": False})
+        for rec in self.filtered(lambda ln: ln.is_auto_renew and ln.date_start):
+            rec.date_end = self.env["contract.line"]._get_first_date_end(
+                rec.date_start, rec.auto_renew_rule_type, rec.auto_renew_interval
             )
-            - relativedelta(days=1)
-        )
-        return date_end
-
-    @api.onchange("date_start", "product_uom_qty")
-    def _onchange_date_start(self):
-        for rec in self.filtered("product_id.is_contract"):
-            rec.date_end = rec._get_date_end() if rec.date_start else False

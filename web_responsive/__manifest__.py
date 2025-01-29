@@ -9,14 +9,14 @@
 {
     "name": "Web Responsive",
     "summary": "Responsive web client, community-supported",
-    "version": "17.0.1.1.3",
+    "version": "17.0.1.1.4",
     "category": "Website",
     "website": "https://github.com/OCA/web",
     "author": "LasLabs, Tecnativa, ITerra, Onestein, "
     "Odoo Community Association (OCA)",
     "license": "LGPL-3",
     "installable": True,
-    "depends": ["web", "mail"],
+    "depends": ["web_tour", "mail"],
     "development_status": "Production/Stable",
     "maintainers": ["Tardo", "SplashS"],
     "excludes": ["web_enterprise"],

@@ -16,3 +16,8 @@ class ResConfigSettings(models.TransientModel):
         readonly=False,
         required=True,
     )
+
+    always_create_invoice_section = fields.Boolean(
+        related="company_id.always_create_invoice_section",
+        readonly=False,
+    )

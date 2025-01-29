@@ -1,4 +1,4 @@
-# Copyright 2024 Tecnativa - Víctor Martínez
+# Copyright 2024-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from base64 import b64encode
@@ -220,7 +220,8 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
         res = wizard.action_process()
         self.assertEqual(res["res_model"], "account.move")
         record = self.env[res["res_model"]].browse(res["res_id"])
-        self.assertIn(attachment, record.attachment_ids)
+        self.assertEqual(len(record.attachment_ids), 1)
+        self.assertEqual(attachment, record.attachment_ids)
         self._test_account_invoice_tecnativa_data(record)
 
     def test_account_move_edi_decoder(self):
@@ -228,5 +229,6 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
         invoice = self.journal.with_context(
             default_journal_id=self.journal.id
         )._create_document_from_attachment(attachment.id)
-        self.assertIn(attachment, invoice.attachment_ids)
+        self.assertEqual(len(invoice.attachment_ids), 1)
+        self.assertEqual(attachment, invoice.attachment_ids)
         self._test_account_invoice_tecnativa_data(invoice)

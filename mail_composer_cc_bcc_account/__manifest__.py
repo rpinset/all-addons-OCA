@@ -3,7 +3,7 @@
 {
     "name": "Email CC and BCC when sending invoice",
     "summary": "This module enables sending mail to CC and BCC partners for invoices.",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "development_status": "Alpha",
     "category": "Social",
     "website": "https://github.com/OCA/social",

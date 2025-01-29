@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2024 Camptocamp SA (https://www.camptocamp.com).
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+    <template id="contact" inherit_id="base.contact">
+        <div t-if="mobile and 'mobile' in fields" position="after">
+            <div
+                class="d-flex align-items-center gap-1"
+                t-if="object.fax and 'fax' in fields"
+            >
+                <i
+                    t-if="not options.get('no_marker') or options.get('phone_icons')"
+                    class='fa fa-fax fa-fw'
+                    role="img"
+                    aria-label="Fax"
+                    title="Fax"
+                />
+                <span class="o_force_ltr" itemprop="faxNumber" t-esc="object.fax" />
+            </div>
+        </div>
+    </template>
+
+</odoo>

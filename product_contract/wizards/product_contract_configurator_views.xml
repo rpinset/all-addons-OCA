@@ -13,21 +13,21 @@
                     </group>
                     <separator colspan="4" string="Recurrence Invoicing" />
                     <group>
-                        <field name="recurring_rule_type" />
-                        <field name="contract_start_date_method" />
-                        <field
-                            name="date_start"
-                            required="contract_start_date_method == 'manual'"
-                            invisible="contract_start_date_method != 'manual'"
-                        />
-                        <field name="is_auto_renew" invisible="not date_end" />
+                        <label for="recurring_interval" />
+                        <div class="o_row">
+                            <field name="recurring_interval" />
+                            <field name="recurring_rule_type" />
+                        </div>
                     </group>
                     <group>
                         <field name="recurring_invoicing_type" />
-                        <field
-                            name="date_end"
-                            invisible="contract_start_date_method != 'manual'"
-                        />
+                    </group>
+                    <separator colspan="4" string="Contract renew" />
+                    <group>
+                        <field name="is_auto_renew" invisible="not date_end" />
+                        <field name="contract_start_date_method" />
+                    </group>
+                    <group>
                         <label
                             for="auto_renew_interval"
                             invisible="not is_auto_renew or contract_start_date_method != 'manual'"
@@ -48,6 +48,21 @@
                                 required="is_auto_renew"
                             />
                         </div>
+                    </group>
+                    <group>
+                        <field
+                            name="date_start"
+                            required="contract_start_date_method == 'manual'"
+                            invisible="contract_start_date_method != 'manual'"
+                            force_save="1"
+                        />
+                    </group>
+                    <group>
+                        <field
+                            name="date_end"
+                            invisible="contract_start_date_method != 'manual'"
+                            force_save="1"
+                        />
                     </group>
                     <separator colspan="4" string="Contract" />
                     <group colspan="2">

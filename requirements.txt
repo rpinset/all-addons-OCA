@@ -155,6 +155,9 @@ suds-py3
 unidecode
 xmlsig
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
+# generated from manifests external_dependencies
+ebilling_postfinance
+zeep
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
 # From [https://github.com/OCA/l10n-turkey.git](https://github.com/OCA/l10n-turkey.git)

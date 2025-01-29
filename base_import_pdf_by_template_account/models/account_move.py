@@ -1,7 +1,5 @@
-# Copyright 2024 Tecnativa - Víctor Martínez
+# Copyright 2024-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-from base64 import b64encode
-
 from odoo import models
 
 
@@ -17,23 +15,17 @@ class AccountMove(models.Model):
         total_templates = template_model.search_count([("model", "=", self._name)])
         if total_templates == 0:
             return False
-        # We need to create the attachment that we will use in the wizard because it
-        # has not been created yet.
-        attachment = self.env["ir.attachment"].create(
-            {"name": file_data["filename"], "datas": b64encode(file_data["content"])}
-        )
         self.move_type = (
             "in_invoice" if self.journal_id.type == "purchase" else "out_invoice"
         )
-        # return self._import_record_base_import_pdf_by_template(invoice, attachment)
         wizard = self.env["wizard.base.import.pdf.upload"].create(
             {
                 "model": self._name,
                 "record_ref": f"{self._name},{self.id}",
-                "attachment_ids": [(6, 0, attachment.ids)],
+                "attachment_ids": [(6, 0, file_data["attachment"].ids)],
             }
         )
-        wizard.action_process()
+        wizard.with_context(skip_template_not_found_error=True).action_process()
         return True
 
     def _get_edi_decoder(self, file_data, new=False):

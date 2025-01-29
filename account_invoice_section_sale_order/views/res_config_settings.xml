@@ -28,6 +28,14 @@
                         />
                         <field name="invoice_section_name_scheme" />
                     </div>
+                    <div class="row">
+                        <label
+                            for="always_create_invoice_section"
+                            class="col-lg-4 o_light_label"
+                            string="Create section even if an invoice is created from a single sale order"
+                        />
+                        <field name="always_create_invoice_section" />
+                    </div>
                 </setting>
             </xpath>
         </field>
