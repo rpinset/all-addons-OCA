@@ -613,9 +613,9 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/services/checkout.py:0
+#: code:addons/shopfloor/actions/message.py:0
 #, python-format
-msgid "Lot is not in the current transfer."
+msgid "Lot changed"
 msgstr ""
 
 #. module: shopfloor
@@ -1352,6 +1352,13 @@ msgstr ""
 
 #. module: shopfloor
 #. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid "Scanned lot differs from the previous scan: %(lot)s."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
 #: code:addons/shopfloor/models/shopfloor_menu.py:0
 #, python-format
 msgid ""
@@ -1784,6 +1791,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
+msgid "This lot does not exist anymore."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
 msgid ""
 "This lot is part of a package with other products, please scan a package."
 msgstr ""
@@ -1905,6 +1919,13 @@ msgstr ""
 msgid ""
 "Transferring to a different package is not allowed, please scan a location "
 "instead."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid "Unable to find a line with the same product but different lot."
 msgstr ""
 
 #. module: shopfloor
@@ -2098,6 +2119,16 @@ msgstr ""
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid "You must not pick more than {} units."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid ""
+"You scanned a different lot with the same product, do you want to change "
+"lot? Scan it again to confirm. The first line matching this product will be "
+"updated. "
 msgstr ""
 
 #. module: shopfloor

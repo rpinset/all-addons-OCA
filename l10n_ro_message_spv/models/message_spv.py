@@ -26,6 +26,8 @@ class MessageSPV(models.Model):
         [
             ("in_invoice", "In Invoice"),
             ("out_invoice", "Out Invoice"),
+            ("out_receipt", "Out Receipt"),
+            ("in_receipt", "In Receipt"),
             ("message", "Message"),
             ("error", "Error"),
         ],
@@ -124,7 +126,7 @@ class MessageSPV(models.Model):
             attachment = self.env["ir.attachment"].sudo().create(attachment_value)
 
             if message.attachment_id:
-                message.attachment_id.unlink()
+                message.attachment_id.sudo().unlink()
             message.write({"file_name": file_name, "attachment_id": attachment.id})
             if message.state == "draft":
                 message.state = "downloaded"
@@ -133,16 +135,27 @@ class MessageSPV(models.Model):
 
     def get_xml_fom_zip(self):
         for message in self:
-            if not message.attachment_id:
+            attachment = message.attachment_id.sudo()
+            if not attachment:
                 continue
-            zip_ref = zipfile.ZipFile(io.BytesIO(message.attachment_id.raw))
+            zip_ref = zipfile.ZipFile(io.BytesIO(attachment.raw))
             xml_file = [f for f in zip_ref.namelist() if "semnatura" not in f]
             file_name = f"{message.request_id}.xml"
             if xml_file:
                 file_name = xml_file[0]
-                xml_file = zip_ref.read(file_name)
-            if not xml_file:
+                xml_bytes = zip_ref.open(file_name)
+                # xml_file = zip_ref.read(file_name)
+            if not xml_bytes:
                 continue
+
+            # xml_bytes = zip_ref.open(xml_file)
+            recovering_parser = etree.XMLParser(recover=True)
+
+            root = etree.parse(xml_bytes, parser=recovering_parser)
+
+            xml_file = etree.tostring(
+                root, pretty_print=True, xml_declaration=True, encoding="UTF-8"
+            )
             attachment_value = {
                 "name": file_name,
                 "raw": xml_file,
@@ -152,11 +165,29 @@ class MessageSPV(models.Model):
             if message.attachment_xml_id:
                 message.attachment_xml_id.sudo().unlink()
 
-            xml_tree = etree.fromstring(xml_file)
+            xml_tree = etree.fromstring(xml_file, parser=recovering_parser)
+
+            type_code_node = xml_tree.find("./{*}InvoiceTypeCode")
+            if type_code_node is not None:
+                type_code = type_code_node.text
+                if type_code == "751":
+                    if message.message_type == "in_invoice":
+                        message.message_type = "in_receipt"
+                    elif message.message_type == "out_invoice":
+                        message.message_type = "out_receipt"
+
             ref_node = xml_tree.find("./{*}ID")
             ref = message.ref
             if ref_node is not None:
                 ref = ref_node.text
+
+            currency = message.currency_id
+            currency_node = xml_tree.find("./{*}DocumentCurrencyCode")
+            if currency_node is not None:
+                currency_code = currency_node.text
+                currency = self.env["res.currency"].search(
+                    [("name", "=", currency_code)]
+                )
 
             amount = False
             amount_note = xml_tree.find(
@@ -177,6 +208,7 @@ class MessageSPV(models.Model):
                     "attachment_xml_id": attachment_xml.id,
                     "ref": ref,
                     "amount": amount,
+                    "currency_id": currency.id or message.currency_id.id,
                 }
             )
 
@@ -270,7 +302,7 @@ class MessageSPV(models.Model):
                     move_type = ("out_invoice", "out_refund")
 
                 domain = [
-                    ("partner_id", "=", message.partner_id.id),
+                    ("commercial_partner_id", "=", message.partner_id.id),
                     ("ref", "=", message.ref),
                     ("move_type", "in", move_type),
                 ]
@@ -428,7 +460,7 @@ class MessageSPV(models.Model):
             if not message.attachment_xml_id:
                 message.get_xml_fom_zip()
 
-            xml_file = message.attachment_xml_id.raw
+            xml_file = message.attachment_xml_id.sudo().raw
             xml_tree = etree.fromstring(xml_file)
             additional_docs = xml_tree.findall(
                 "./{*}AdditionalDocumentReference"
@@ -458,7 +490,7 @@ class MessageSPV(models.Model):
                         }
                     )
                     if message.attachment_embedded_pdf_id:
-                        message.attachment_embedded_pdf_id.unlink()
+                        message.attachment_embedded_pdf_id.sudo().unlink()
                     message.write({"attachment_embedded_pdf_id": attachment.id})
 
     def action_download_attachment(self):
@@ -488,7 +520,6 @@ class MessageSPV(models.Model):
         }
 
     def get_partner(self):
-
         for message in self.filtered(lambda m: not m.partner_id):
             if message.cif:
                 domain = [("vat", "like", message.cif), ("is_company", "=", True)]
@@ -502,3 +533,15 @@ class MessageSPV(models.Model):
                         }
                     )
                 message.write({"partner_id": partner.id})
+
+    def show_invoice(self):
+        invoices = self.mapped("invoice_id")
+        action = {
+            "type": "ir.actions.act_window",
+            "res_model": "account.move",
+            "view_mode": "tree",
+            "views": [(False, "list"), (False, "form")],
+            "domain": [("id", "in", invoices.ids)],
+        }
+
+        return action

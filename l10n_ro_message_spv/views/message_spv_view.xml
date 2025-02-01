@@ -20,6 +20,7 @@
                         string="Create Invoice"
                         type="object"
                     />
+                    <button name="show_invoice" string="Show Invoice" type="object" />
 
                 </header>
 
@@ -211,6 +212,8 @@
                         name="errors"
                         domain="[('message_type', '=', 'error')]"
                     />
+                    <separator />
+                    <filter string="Date" name="date" date="date" />
                 </group>
                 <group>
                     <filter

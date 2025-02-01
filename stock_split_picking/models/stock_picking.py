@@ -6,6 +6,8 @@ from odoo import _, models
 from odoo.exceptions import UserError
 from odoo.tools.float_utils import float_compare
 
+from ..exceptions import NotPossibleToSplitPickError, SplitPickNotAllowedInStateError
+
 
 class StockPicking(models.Model):
     """Adds picking split without done state."""
@@ -61,7 +63,6 @@ class StockPicking(models.Model):
                         new_move = self.env["stock.move"].create(new_move_vals)
                     else:
                         new_move = move
-                    new_move._action_confirm(merge=False)
                     new_moves |= new_move
 
             # If we have new moves to move, create the backorder picking
@@ -71,7 +72,7 @@ class StockPicking(models.Model):
                 new_moves.mapped("move_line_ids").write(
                     {"picking_id": backorder_picking.id}
                 )
-                new_moves._action_assign()
+                new_moves._action_confirm(merge=False)
 
     def _create_split_backorder(self, default=None):
         """Copy current picking with defaults passed, post message about
@@ -100,16 +101,10 @@ class StockPicking(models.Model):
         new_picking = self.env["stock.picking"]
         for this in self:
             if this.state in ("done", "cancel"):
-                raise UserError(
-                    _("Cannot split picking {name} in state {state}").format(
-                        name=this.name, state=this.state
-                    )
-                )
+                raise SplitPickNotAllowedInStateError(self.env, this)
             new_picking = new_picking or this._create_split_backorder()
             if not this.move_ids - moves:
-                raise UserError(
-                    _("Cannot split off all moves from picking %s") % this.name
-                )
+                raise NotPossibleToSplitPickError(self.env, this)
         moves.write({"picking_id": new_picking.id})
         moves.mapped("move_line_ids").write({"picking_id": new_picking.id})
         return new_picking

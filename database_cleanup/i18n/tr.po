@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 10:08+0000\n"
-"PO-Revision-Date: 2018-03-03 10:08+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2018\n"
+"PO-Revision-Date: 2025-01-29 22:06+0000\n"
+"Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: database_cleanup
 #: model:ir.model,name:database_cleanup.model_cleanup_create_indexes_line
@@ -61,7 +62,7 @@ msgstr ""
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_column__purge_line_ids
 msgid "Columns to purge"
-msgstr ""
+msgstr "Temizlenecek sütunlar"
 
 #. module: database_cleanup
 #: model:ir.actions.server,name:database_cleanup.cleanup_create_indexes_line_action
@@ -72,28 +73,28 @@ msgstr "Oluştur"
 #. module: database_cleanup
 #: model_terms:ir.ui.view,arch_db:database_cleanup.cleanup_create_indexes_wizard_view_form
 msgid "Create all"
-msgstr ""
+msgstr "Hepsini oluştur"
 
 #. module: database_cleanup
 #: model:ir.model,name:database_cleanup.model_cleanup_create_indexes_wizard
 msgid "Create indexes"
-msgstr ""
+msgstr "İndeksleri oluştur"
 
 #. module: database_cleanup
 #: model:ir.actions.server,name:database_cleanup.cleanup_create_indexes_wizard_action
 #: model:ir.ui.menu,name:database_cleanup.menu_create_indexes
 msgid "Create missing indexes"
-msgstr ""
+msgstr "Eksik indeksleri oluştur"
 
 #. module: database_cleanup
 #: model_terms:ir.ui.view,arch_db:database_cleanup.cleanup_create_indexes_line_view_tree
 msgid "Create this index"
-msgstr ""
+msgstr "Bu indeksi oluştur"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__purged
 msgid "Created"
-msgstr ""
+msgstr "Oluşturuldu"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__create_uid
@@ -142,17 +143,17 @@ msgstr "Oluşturuldu"
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_data__data_id
 msgid "Data entry"
-msgstr ""
+msgstr "Veri kaydı"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_data__purge_line_ids
 msgid "Data to purge"
-msgstr ""
+msgstr "Temizlenecek veri"
 
 #. module: database_cleanup
 #: model:ir.ui.menu,name:database_cleanup.menu_database_cleanup
 msgid "Database cleanup"
-msgstr ""
+msgstr "Veritabanı temizleme"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__display_name
@@ -179,12 +180,12 @@ msgstr "Görünen İsim"
 #. module: database_cleanup
 #: model:ir.model.fields.selection,name:database_cleanup.selection__cleanup_purge_line_property__reason__reason_duplicate
 msgid "Duplicated property"
-msgstr ""
+msgstr "Yinelenmiş özellik"
 
 #. module: database_cleanup
 #: model:ir.model.fields.selection,name:database_cleanup.selection__cleanup_purge_line_property__reason__reason_default_false
 msgid "Empty default property"
-msgstr ""
+msgstr "Boş varsayılan özellik"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__field_id
@@ -200,7 +201,7 @@ msgstr "Alanlar"
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_field__purge_line_ids
 msgid "Fields to purge"
-msgstr ""
+msgstr "Temizlenecek alanlar"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__id
@@ -293,12 +294,12 @@ msgstr "Son güncellenme"
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_menu__menu_id
 msgid "Menu entry"
-msgstr ""
+msgstr "Menü kaydı"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_menu__purge_line_ids
 msgid "Menus to purge"
-msgstr ""
+msgstr "Temizlenecek menüler"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_column__model_id
@@ -315,7 +316,7 @@ msgstr "Alan"
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_field__model_name
 msgid "Model Technical Name"
-msgstr ""
+msgstr "Model Teknik Adı"
 
 #. module: database_cleanup
 #: model:ir.model,name:database_cleanup.model_ir_model
@@ -325,12 +326,12 @@ msgstr "Modeller"
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_model__purge_line_ids
 msgid "Models to purge"
-msgstr ""
+msgstr "Temizlenecek modeller"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_module__purge_line_ids
 msgid "Modules to purge"
-msgstr ""
+msgstr "Temizlenecek modüller"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__name
@@ -403,12 +404,12 @@ msgstr ""
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_wizard_property__purge_line_ids
 msgid "Properties to purge"
-msgstr ""
+msgstr "Temizlenecek özellikler"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_property__property_id
 msgid "Property"
-msgstr ""
+msgstr "Özellik"
 
 #. module: database_cleanup
 #: model:ir.actions.server,name:database_cleanup.action_purge_column_line
@@ -421,7 +422,7 @@ msgstr ""
 #: model:ir.actions.server,name:database_cleanup.action_purge_table_line
 #: model_terms:ir.ui.view,arch_db:database_cleanup.form_purge_wizard
 msgid "Purge"
-msgstr "Boşalt (sil)"
+msgstr "Temizle (sil)"
 
 #. module: database_cleanup
 #: model:ir.model,name:database_cleanup.model_cleanup_purge_line
@@ -477,30 +478,30 @@ msgstr ""
 #: model:ir.actions.server,name:database_cleanup.action_purge_menus
 #: model:ir.model,name:database_cleanup.model_cleanup_purge_wizard_menu
 msgid "Purge menus"
-msgstr ""
+msgstr "Menüleri temizle"
 
 #. module: database_cleanup
 #: model:ir.actions.server,name:database_cleanup.action_purge_fields
 #: model:ir.actions.server,name:database_cleanup.action_purge_models
 #: model:ir.model,name:database_cleanup.model_cleanup_purge_wizard_model
 msgid "Purge models"
-msgstr ""
+msgstr "Modelleri temizle"
 
 #. module: database_cleanup
 #: model:ir.actions.server,name:database_cleanup.action_purge_modules
 #: model:ir.model,name:database_cleanup.model_cleanup_purge_wizard_module
 msgid "Purge modules"
-msgstr ""
+msgstr "Modülleri temizle"
 
 #. module: database_cleanup
 #: model:ir.ui.menu,name:database_cleanup.menu_purge_columns
 msgid "Purge obsolete columns"
-msgstr "Eski kolonları sil"
+msgstr "Eski kolonları temizle"
 
 #. module: database_cleanup
 #: model:ir.ui.menu,name:database_cleanup.menu_purge_data
 msgid "Purge obsolete data entries"
-msgstr ""
+msgstr "Eski kayıtları temizle"
 
 #. module: database_cleanup
 #: model:ir.ui.menu,name:database_cleanup.menu_purge_fields
@@ -565,7 +566,7 @@ msgstr "Bu modülü sil"
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_property__purged
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_table__purged
 msgid "Purged"
-msgstr ""
+msgstr "Temizlendi"
 
 #. module: database_cleanup
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line_property__reason
@@ -623,4 +624,4 @@ msgstr ""
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_create_indexes_line__wizard_id
 #: model:ir.model.fields,field_description:database_cleanup.field_cleanup_purge_line__wizard_id
 msgid "Wizard"
-msgstr ""
+msgstr "Sihirbaz"

@@ -109,6 +109,16 @@ class MessageAction(Component):
             ),
         }
 
+    def lot_different_change(self):
+        return {
+            "message_type": "warning",
+            "body": _(
+                "You scanned a different lot with the same product, "
+                "do you want to change lot? Scan it again to confirm. "
+                "The first line matching this product will be updated. "
+            ),
+        }
+
     def package_not_available_in_picking(self, package, picking):
         return {
             "message_type": "warning",
@@ -537,6 +547,12 @@ class MessageAction(Component):
             "body": _("This lot is part of multiple packages, please scan a package."),
         }
 
+    def lot_not_found(self):
+        return {
+            "message_type": "error",
+            "body": _("This lot does not exist anymore."),
+        }
+
     def lot_not_found_in_pickings(self):
         return {
             "message_type": "warning",
@@ -944,4 +960,25 @@ class MessageAction(Component):
                 "Transferring to a different package is not allowed, "
                 "please scan a location instead."
             ),
+        }
+
+    def lot_changed(self):
+        return {
+            "message_type": "info",
+            "body": _("Lot changed"),
+        }
+
+    def lot_change_wrong_lot(self, lot_name):
+        return {
+            "message_type": "error",
+            "body": _("Scanned lot differs from the previous scan: %(lot)s.")
+            % {
+                "lot": lot_name,
+            },
+        }
+
+    def lot_change_no_line_found(self):
+        return {
+            "message_type": "error",
+            "body": _("Unable to find a line with the same product but different lot."),
         }

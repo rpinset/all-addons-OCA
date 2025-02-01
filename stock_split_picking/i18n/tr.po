@@ -26,16 +26,16 @@ msgstr ""
 
 #. module: stock_split_picking
 #. odoo-python
-#: code:addons/stock_split_picking/models/stock_picking.py:0
+#: code:addons/stock_split_picking/exceptions.py:0
 #, python-format
-msgid "Cannot split off all moves from picking %s"
+msgid "Cannot split off all moves from picking %(name)s"
 msgstr ""
 
 #. module: stock_split_picking
 #. odoo-python
-#: code:addons/stock_split_picking/models/stock_picking.py:0
+#: code:addons/stock_split_picking/exceptions.py:0
 #, python-format
-msgid "Cannot split picking {name} in state {state}"
+msgid "Cannot split picking %(name)s in state %(state)s"
 msgstr ""
 
 #. module: stock_split_picking

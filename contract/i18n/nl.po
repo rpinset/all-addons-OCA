@@ -2537,6 +2537,13 @@ msgid "You must supply a date of next invoice for contract line '%s'"
 msgstr "U moet een volgende factuurdatum opgeven voor contract '%s'"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract.py:0
+#, python-format
+msgid "by contract"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "e.g. Contract XYZ"
 msgstr "bijv. Contract ABC"

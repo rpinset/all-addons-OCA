@@ -2534,6 +2534,13 @@ msgstr ""
 "Você deve fornecer uma data da próxima fatura para a linha do contrato '%s'"
 
 #. module: contract
+#. odoo-python
+#: code:addons/contract/models/contract.py:0
+#, python-format
+msgid "by contract"
+msgstr ""
+
+#. module: contract
 #: model_terms:ir.ui.view,arch_db:contract.contract_contract_form_view
 msgid "e.g. Contract XYZ"
 msgstr "ex: Contrato XYZ"

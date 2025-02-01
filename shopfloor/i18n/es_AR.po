@@ -659,10 +659,10 @@ msgstr "Lote %(old_lot_name)s reemplazado por lote %(new_lot_name)s."
 
 #. module: shopfloor
 #. odoo-python
-#: code:addons/shopfloor/services/checkout.py:0
+#: code:addons/shopfloor/actions/message.py:0
 #, python-format
-msgid "Lot is not in the current transfer."
-msgstr "El Lote no está en la transferencia actual."
+msgid "Lot changed"
+msgstr ""
 
 #. module: shopfloor
 #. odoo-python
@@ -1422,6 +1422,13 @@ msgstr "Escanear el paquete"
 
 #. module: shopfloor
 #. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid "Scanned lot differs from the previous scan: %(lot)s."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
 #: code:addons/shopfloor/models/shopfloor_menu.py:0
 #, python-format
 msgid ""
@@ -1882,6 +1889,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
+msgid "This lot does not exist anymore."
+msgstr "Este lote ya no existe."
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
 msgid ""
 "This lot is part of a package with other products, please scan a package."
 msgstr ""
@@ -2007,6 +2021,13 @@ msgstr "Transferencia {} no está disponible."
 msgid ""
 "Transferring to a different package is not allowed, please scan a location "
 "instead."
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid "Unable to find a line with the same product but different lot."
 msgstr ""
 
 #. module: shopfloor
@@ -2213,6 +2234,16 @@ msgstr "No debe seleccionar más de {} unidades."
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
 msgid ""
+"You scanned a different lot with the same product, do you want to change "
+"lot? Scan it again to confirm. The first line matching this product will be "
+"updated. "
+msgstr ""
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid ""
 "You scanned a different package with the same product, do you want to change "
 "pack? Scan it again to confirm"
 msgstr ""
@@ -2240,6 +2271,10 @@ msgstr ""
 #, python-format
 msgid "{} is not a valid destination package."
 msgstr "{} no es un paquete de destino válido."
+
+#, python-format
+#~ msgid "Lot is not in the current transfer."
+#~ msgstr "El Lote no está en la transferencia actual."
 
 #, python-format
 #~ msgid "A draft inventory has been created for control."
@@ -2376,10 +2411,6 @@ msgstr "{} no es un paquete de destino válido."
 #, python-format
 #~ msgid "Product not found in the current transfer."
 #~ msgstr "Producto no encontrado en la transferencia actual."
-
-#, python-format
-#~ msgid "This lot does not exist anymore."
-#~ msgstr "Este lote ya no existe."
 
 #, python-format
 #~ msgid "Packaging not found in the current transfer or already in a package."

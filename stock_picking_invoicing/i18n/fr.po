@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-09 12:43+0000\n"
-"PO-Revision-Date: 2019-03-15 10:32+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2025-01-31 18:06+0000\n"
+"Last-Translator: Arnaud LAYEC <arnaudlayec@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: stock_picking_invoicing
 #. odoo-python
@@ -31,7 +32,7 @@ msgstr "Annuler"
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_picking_type__count_picking_2binvoiced
 msgid "Count Picking 2Binvoiced"
-msgstr ""
+msgstr "Nombre de transfert à facturer"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_stock_invoice_onshipping
@@ -146,7 +147,7 @@ msgstr "Facturation"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Entrée de journal"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__journal_type
@@ -179,7 +180,7 @@ msgstr "Pas de facture créée!"
 #. module: stock_picking_invoicing
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_return_picking__invoice_state__none
 msgid "No invoicing"
-msgstr ""
+msgstr "Pas de facture"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_invoice_state_mixin__invoice_state__none
@@ -205,15 +206,13 @@ msgstr "Picking"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_picking_type
-#, fuzzy
 msgid "Picking Type"
-msgstr "Picking"
+msgstr "Type de transfert"
 
 #. module: stock_picking_invoicing
 #: model:ir.actions.act_window,name:stock_picking_invoicing.2binvoiced_action_picking_dashboard
-#, fuzzy
 msgid "Picking to Invoice"
-msgstr "Marquer comme à facturer"
+msgstr "À facturer"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__purchase_journal
@@ -224,57 +223,52 @@ msgstr "Journal d'achat"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_return_picking
 msgid "Return Picking"
-msgstr ""
+msgstr "Transfert de retour"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__sale_journal
-#, fuzzy
 msgid "Sale Journal"
-msgstr "Journal d'achat"
+msgstr "Journal de vente"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_form
 msgid "Set to Not Billable"
-msgstr ""
+msgstr "Non-facturable"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_form
 msgid "Set to as invoiced"
-msgstr ""
+msgstr "Facturé"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_form
 msgid "Set to be invoiced"
-msgstr "Marquer comme à facturer"
+msgstr "À facturer"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_invoicing_internal_search
-#, fuzzy
 msgid "Shipments to Invoice"
-msgstr "Marquer comme à facturer"
+msgstr "À facturer"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__show_purchase_journal
-#, fuzzy
 msgid "Show Purchase Journal"
 msgstr "Journal d'achat"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__show_sale_journal
-#, fuzzy
 msgid "Show Sale Journal"
-msgstr "Journal d'achat"
+msgstr "Journal de vente"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_invoice_onshipping
 msgid "Stock Invoice Onshipping"
-msgstr "Facturation livraison"
+msgstr "Facture de livraison"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_invoice_state_mixin
-#, fuzzy
 msgid "Stock Invoice State Mixin"
-msgstr "Facturation livraison"
+msgstr "Mixin de facture de livraison"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_move
@@ -284,7 +278,7 @@ msgstr "Mouvement de stock"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "Règle de stock"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_invoice_state_mixin__invoice_state__2binvoiced
@@ -302,7 +296,7 @@ msgstr "À facturer"
 #. module: stock_picking_invoicing
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_return_picking__invoice_state__2binvoiced
 msgid "To be refunded/invoiced"
-msgstr ""
+msgstr "À facturer/rembourser"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_picking
@@ -312,7 +306,7 @@ msgstr "Transfert"
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_form
 msgid "True"
-msgstr ""
+msgstr "Vrai"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_stock_invoice_onshipping

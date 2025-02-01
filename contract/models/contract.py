@@ -619,17 +619,12 @@ class ContractContract(models.Model):
     def _add_contract_origin(self, invoices):
         for item in self:
             for move in invoices & item._get_related_invoices():
+                translation = _("by contract")
                 move.message_post(
                     body=(
-                        _(
-                            (
-                                "%(msg)s by contract <a href=# data-oe-model=contract.contract"
-                                " data-oe-id=%(contract_id)d>%(contract)s</a>."
-                            ),
-                            msg=move._creation_message(),
-                            contract_id=item.id,
-                            contract=item.display_name,
-                        )
+                        f"{move._creation_message()} {translation} "
+                        f"<a href=# data-oe-model=contract.contract"
+                        f" data-oe-id={item.id}>{item.display_name}</a>."
                     )
                 )
 

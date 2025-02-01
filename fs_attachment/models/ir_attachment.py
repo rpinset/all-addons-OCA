@@ -385,10 +385,12 @@ class IrAttachment(models.Model):
 
     def _storage_write_option(self, fs):
         _fs = fs
-        while _fs:
-            if hasattr(_fs, "s3"):
-                return {"ContentType": self._context["mimetype"]}
-            _fs = getattr(_fs, "fs", None)
+        mimetype = self.env.context.get("mimetype")
+        if mimetype:
+            while _fs:
+                if hasattr(_fs, "s3"):
+                    return {"ContentType": mimetype}
+                _fs = getattr(_fs, "fs", None)
         return {}
 
     @api.model
