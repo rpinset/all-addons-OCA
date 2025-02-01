@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 1e7655676d6b9b4922065d39d96ce0593f601b24
-Author: Jaume Planas <jaume.planas@minorisa.net>
-Date:   Tue Sep 10 15:36:20 2024 +0000
+commit 3719a7726c09077063758a18754e53adcb53eebc
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 20:14:53 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: account-analytic-13.0/account-analytic-13.0-account_analytic_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-account_analytic_sequence/es/
+    [IMP] update dotfiles
 
 
 ## account-budgeting
@@ -439,9 +434,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a787f709b192fa93d7d63e9d31c52394195b6517
+commit 8a9a8c9bc1c82b99f9bdb7c56a06ccea0f1a48a3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Dec 6 15:58:13 2024 +0000
+Date:   Fri Jan 31 15:48:43 2025 +0000
 
     [BOT] post-merge updates
 
@@ -599,9 +594,9 @@ Date:   Thu Jul 25 06:37:34 2024 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 0ef0691a10ddcb68611c04180ebf47ecf731b143
+commit aa3236ebd24e248b6917076d3c794d4a37892d5b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 28 08:22:40 2025 +0000
+Date:   Fri Jan 31 13:14:26 2025 +0000
 
     Translated using Weblate (Italian)
     
