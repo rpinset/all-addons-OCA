@@ -15,7 +15,7 @@ msgstr ""
 
 #. module: company_sanitary_registry
 #: model_terms:ir.ui.view,arch_db:company_sanitary_registry.sanitary_registry_template
-msgid "<span>CE</span>"
+msgid "<span>UE</span>"
 msgstr ""
 
 #. module: company_sanitary_registry

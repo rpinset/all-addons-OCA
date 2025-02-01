@@ -31,7 +31,7 @@
                         <span t-out="sanitary_registry" />
                     </div>
                     <div>
-                        <span>CE</span>
+                        <span>UE</span>
                     </div>
                 </div>
             </div>

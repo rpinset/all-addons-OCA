@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 6f5b49f077ef312fc69db06b8c42693f9689291d
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Tue Jan 28 11:56:38 2025 +0000
+commit 2cee368899f17fa2b094ff9f841468196d90f163
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 20:17:02 2025 +0000
 
-    Translated using Weblate (Danish)
-    
-    Currently translated at 4.3% (1 of 23 strings)
-    
-    Translation: account-analytic-15.0/account-analytic-15.0-analytic_tag_dimension
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-analytic_tag_dimension/da/
+    [IMP] update dotfiles
 
 
 ## account-budgeting
@@ -156,16 +151,11 @@ Date:   Sat May 25 14:46:02 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 8aa241802f150e1bdf83b7ad0f570b79e4a51919
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 27 09:12:25 2025 +0000
+commit 093fdb95a6fb06c35215bb8306c4a4554a5f6e64
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 16:48:09 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 72.8% (204 of 280 strings)
-    
-    Translation: mis-builder-15.0/mis-builder-15.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-15-0/mis-builder-15-0-mis_builder/it/
+    [IMP] update dotfiles
 
 
 ## currency
@@ -387,9 +377,9 @@ Date:   Wed May 1 18:02:20 2024 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit eaf1a5244f749e0327094420e04fd2835e86210b
+commit e0352c9cc247ca7b9484fa821fbcc8becfd38bca
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jan 23 09:47:55 2025 +0000
+Date:   Fri Jan 31 16:41:40 2025 +0000
 
     [BOT] post-merge updates
 
@@ -506,16 +496,11 @@ Date:   Mon Aug 12 07:34:18 2024 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit cf1fb2d94960310f980d9cae354cbc194275c0e1
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jan 17 19:50:04 2025 +0000
+commit 143c16f5e707bf2f2f9ecde84db7fb6a4823d4e6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jan 30 18:47:09 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: e-commerce-15.0/e-commerce-15.0-website_sale_menu_partner_top_selling
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_menu_partner_top_selling/
+    [BOT] post-merge updates
 
 
 ## edi
@@ -534,9 +519,9 @@ Date:   Wed Jan 29 10:53:58 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit d167fc5d0038c7729c816df9266c80d79ffe340d
+commit 1ade42eba2059a7dcf8ef4039b75158dbb8b8c32
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 28 08:22:43 2025 +0000
+Date:   Fri Jan 31 13:15:35 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -996,11 +981,16 @@ Date:   Wed May 1 18:36:03 2024 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 56c49fa2ebe46f2df00408e94b461c6f3f73adc3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 28 08:21:23 2025 +0000
+commit bd150770d3d1c9825f8b5de310800b453c3cec25
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jan 31 08:32:45 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod390
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod390/
 
 
 ## l10n-switzerland
@@ -1251,11 +1241,16 @@ Date:   Wed May 1 18:50:08 2024 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit b41a8f5fddc6ea6b66397345a5b98afe5629d38c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 21 14:20:51 2025 +0000
+commit 5f3ed0a718c117f84d8479c045db545b187b988a
+Author: Wang-TKurata <takahiko.kurata@axelspace.com>
+Date:   Fri Jan 31 00:38:37 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Japanese)
+    
+    Currently translated at 100.0% (11 of 11 strings)
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_order_revision
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_order_revision/ja/
 
 
 ## purchase-reporting
@@ -1406,11 +1401,11 @@ Date:   Sat Dec 21 05:33:21 2024 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 4d12cff1d10766a7f9bad4eea79591f0fa4eff9a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 19:15:08 2024 +0000
+commit e9d8223901f1a62edcc533f723346988461a47ee
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jan 30 10:44:37 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## search-engine
@@ -1515,9 +1510,9 @@ Date:   Mon Jan 27 09:11:49 2025 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit d7a6d6ca8f8126713d33bc8336db995a10e8f504
+commit f4ac59e1e88a36448286ce79be8f473980e7bcc2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jan 28 18:36:31 2025 +0000
+Date:   Thu Jan 30 18:18:11 2025 +0000
 
     [BOT] post-merge updates
 

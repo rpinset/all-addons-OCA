@@ -1911,6 +1911,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 15.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 15.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_triple_discount](sale_triple_discount/) | 15.0.1.0.1 |  | Manage triple discount on sale order lines
+[sale_validity_auto_cancel](sale_validity_auto_cancel/) | 15.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Automatically cancel quotations after validity period.
 [sale_warn_option](sale_warn_option/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Add Options to Sale Warn Messages
 [sale_wishlist](sale_wishlist/) | 15.0.1.0.1 |  | Handle sale wishlist for partners
 [sales_team_security](sales_team_security/) | 15.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
@@ -2642,6 +2643,7 @@ addon | version | maintainers | summary
 [website_sale_secondary_unit](website_sale_secondary_unit/) | 15.0.1.2.1 |  | Allow manage secondary units in website shop
 [website_sale_stock_available](website_sale_stock_available/) | 15.0.1.0.0 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
 [website_sale_stock_list_preview](website_sale_stock_list_preview/) | 15.0.1.0.0 |  | Show the stock of products on the product previews
+[website_sale_stock_order_cancel](website_sale_stock_order_cancel/) | 15.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Enhances website sale order cancellation by blocking it when related stock pickings are done.
 [website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 15.0.1.0.0 |  | Display provisioning date for a product in shop online
 [website_sale_suggest_create_account](website_sale_suggest_create_account/) | 15.0.1.0.2 |  | Suggest users to create an account when buying in the website
 [website_sale_tax_toggle](website_sale_tax_toggle/) | 15.0.1.0.1 |  | Allow display price in Shop with or without taxes
@@ -5098,7 +5100,7 @@ addon | version | maintainers | summary
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 15.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 15.0.1.0.6 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 15.0.3.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
+[l10n_es_aeat](l10n_es_aeat/) | 15.0.3.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 15.0.2.1.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 15.0.1.0.1 |  | AEAT modelo 123
@@ -5106,13 +5108,13 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.1.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.10.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.7.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.8.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.1.0.0 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.2.0 |  | AEAT - Comprobación de Calidad de datos identificativos
@@ -7414,7 +7416,9 @@ addon | version | maintainers | summary
 [storage_file](storage_file/) | 15.0.1.0.0 |  | Storage file in storage backend
 [storage_image](storage_image/) | 15.0.1.0.0 |  | Store image and resized image in a storage backend
 [storage_image_backend_migration](storage_image_backend_migration/) | 15.0.1.0.0 |  | Migrate src backend to destination backend
+[storage_image_import](storage_image_import/) | 15.0.1.0.0 |  | Add the possibility to import image for csv base on url
 [storage_image_product](storage_image_product/) | 15.0.1.1.1 |  | Link images to products and categories
+[storage_image_product_brand](storage_image_product_brand/) | 15.0.1.0.0 |  | Link images to product brands
 [storage_import_image_advanced](storage_import_image_advanced/) | 15.0.1.0.0 |  | Import product images using CSV
 [storage_media](storage_media/) | 15.0.1.0.0 |  | Give the posibility to store media data in Odoo
 [storage_thumbnail](storage_thumbnail/) | 15.0.1.0.0 |  | Abstract module that add the possibility to have thumbnail
@@ -8070,7 +8074,7 @@ addon | version | maintainers | summary
 [base_currency_iso_4217](base_currency_iso_4217/) | 15.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
 [base_iso3166](base_iso3166/) | 15.0.1.0.3 |  | ISO 3166
 [base_unece](base_unece/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for UNECE code lists
-[company_sanitary_registry](company_sanitary_registry/) | 15.0.1.0.0 |  | Sanitary Registry
+[company_sanitary_registry](company_sanitary_registry/) | 15.0.1.0.1 |  | Sanitary Registry
 [product_fao_fishing](product_fao_fishing/) | 15.0.1.0.2 |  | Set fishing areas and capture technology
 [uom_unece](uom_unece/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for the units of measure
 

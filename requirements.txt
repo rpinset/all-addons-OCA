@@ -253,6 +253,7 @@ paramiko
 pyftpdlib
 python-magic
 python_slugify
+unicodecsv
 validators
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # generated from manifests external_dependencies
