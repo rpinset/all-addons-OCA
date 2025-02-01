@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 1ab44bbb8c48b6d554ff63251096c5c336b9ca66
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 14 15:34:19 2024 +0000
+commit b1fc5db53449d99048605e2eb17c4e17c70e80e6
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 17:16:42 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (6 of 6 strings)
-    
-    Translation: account-analytic-12.0/account-analytic-12.0-analytic_base_department
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-analytic_base_department/it/
+    [IMP] update dotfiles
 
 
 ## account-budgeting
@@ -52,16 +47,11 @@ Date:   Wed Sep 11 06:37:22 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 9d8c22140729231f538c6670b6d8c61197ce042b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Oct 21 10:14:14 2024 +0000
+commit 7e8ecaa9457fbebee291aa28b5742eebcd521b43
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 17:19:45 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (28 of 28 strings)
-    
-    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_prepaid
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_prepaid/it/
+    [IMP] update dotfiles
 
 
 ## account-consolidation
@@ -94,16 +84,11 @@ Date:   Sun Jan 12 12:34:03 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 3753d37d3832d0174f4280f1b732fd65db59f70c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 11:30:20 2024 +0000
+commit 14e6dbff3a5687c300e1fd6593311cc1ec4b1c79
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 17:22:42 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 84.9% (283 of 333 strings)
-    
-    Translation: account-financial-reporting-12.0/account-financial-reporting-12.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-12-0/account-financial-reporting-12-0-account_financial_report/it/
+    [IMP] update dotfiles
 
 
 ## account-invoice-reporting
@@ -173,16 +158,14 @@ Date:   Thu Dec 5 08:41:33 2024 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit 51a64fa8df38acd0f0e001865106683f3a5aa811
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 27 09:12:04 2025 +0000
+commit 75eec604e5796487dae8ed4a3d090726c12d3fca
+Merge: 51a64fa8 99f0dd95
+Author: Stéphane Bidoul <stephane.bidoul@acsone.eu>
+Date:   Sat Feb 1 17:54:24 2025 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #671 from OCA/12.0-ocabot-update-dotfiles
     
-    Currently translated at 57.3% (160 of 279 strings)
-    
-    Translation: mis-builder-12.0/mis-builder-12.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-12-0/mis-builder-12-0-mis_builder/it/
+    [12.0] dotfiles update needs manual intervention
 
 
 ## currency
