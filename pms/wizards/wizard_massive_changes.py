@@ -13,7 +13,7 @@ class AvailabilityWizard(models.TransientModel):
         string="Property",
         comodel_name="pms.property",
         default=lambda self: self.env["pms.property"].browse(
-            self.env.user.get_active_property_ids()[0]
+            self.env.user.get_active_property_id.id
         ),
         check_pms_properties=True,
         required=True,

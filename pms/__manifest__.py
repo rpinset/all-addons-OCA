@@ -4,7 +4,7 @@
 {
     "name": "PMS (Property Management System)",
     "summary": "A property management system",
-    "version": "14.0.2.54.0",
+    "version": "14.0.3.50.0",
     "development_status": "Beta",
     "category": "Generic Modules/Property Management System",
     "website": "https://github.com/OCA/pms",
@@ -115,7 +115,6 @@
         "demo/pms_reservation.xml",
     ],
     "qweb": [
-        "static/src/xml/pms_base_templates.xml",
         "static/src/xml/reservation_group_button_views.xml",
         "static/src/xml/account_reconciliation.xml",
     ],

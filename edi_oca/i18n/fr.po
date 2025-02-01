@@ -1226,6 +1226,13 @@ msgid "Parent exchange"
 msgstr ""
 
 #. module: edi_oca
+#: code:addons/edi_oca/models/edi_configuration.py:0
+#: model_terms:ir.ui.view,arch_db:edi_oca.edi_configuration_view_form
+#, python-format
+msgid "Partners"
+msgstr ""
+
+#. module: edi_oca
 #: model:ir.ui.menu,name:edi_oca.menu_edi_exchange_record_failed
 #: model_terms:ir.ui.view,arch_db:edi_oca.edi_exchange_record_view_search
 msgid "Pending"

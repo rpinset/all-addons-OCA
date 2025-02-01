@@ -4419,6 +4419,18 @@ msgid "Customers"
 msgstr "Clientes"
 
 #. module: pms
+#: model_terms:ir.ui.view,arch_db:pms.product_template_view_form
+msgid "Daily Limit"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__property_daily_limits
+#: model:ir.model.fields,field_description:pms.field_product_product__property_daily_limits
+#: model:ir.model.fields,field_description:pms.field_product_template__property_daily_limits
+msgid "Daily Limits per Property"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__product_pricelist__pricelist_type__daily
 msgid "Daily Plan"
 msgstr "Plan Diario"
@@ -5079,13 +5091,6 @@ msgid "Driving License"
 msgstr "Carnét de conducir"
 
 #. module: pms
-#. openerp-web
-#: code:addons/pms/static/src/xml/pms_base_templates.xml:0
-#, python-format
-msgid "Dropdown menu"
-msgstr "Menú Desplegable"
-
-#. module: pms
 #: model:ir.model,name:pms.model_pms_booking_duplicate
 msgid "Duplicate Booking"
 msgstr "Reserva duplicada"
@@ -5310,6 +5315,11 @@ msgstr "Mujer"
 #: model:ir.model.fields,field_description:pms.field_ir_pms_property__field_id
 msgid "Field"
 msgstr "Campo"
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_ir_pms_property__field_name
+msgid "Field Name"
+msgstr ""
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__cancelled_reason
@@ -7812,6 +7822,11 @@ msgid "Model"
 msgstr "Modelo"
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_ir_pms_property__model_name
+msgid "Model Name"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__property_modified_template
 #: model_terms:ir.ui.view,arch_db:pms.pms_property_views_form
 msgid "Modification Email"
@@ -9152,8 +9167,6 @@ msgstr "Tarifa y Planes de Disponibilidad"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__list_price
-#: model:ir.model.fields,help:pms.field_product_product__list_price
-#: model:ir.model.fields,help:pms.field_product_template__list_price
 msgid "Price at which the product is sold to customers."
 msgstr "Precio cuando el producto es vendido a los clientes."
 
@@ -9595,6 +9608,7 @@ msgstr "Propiedad con acceso al elemento;"
 #: model:ir.model.fields,field_description:pms.field_pms_team_member__pms_property_id
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_search
+#: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_type_view_search
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_view_search
@@ -9659,6 +9673,12 @@ msgstr "Clase del Tipo del Hotel"
 #: model_terms:ir.ui.view,arch_db:pms.pms_ubication_view_form
 msgid "Property Ubication"
 msgstr "Ubicación del Hotel"
+
+#. module: pms
+#: code:addons/pms/models/pms_folio.py:0
+#, python-format
+msgid "Property is required"
+msgstr ""
 
 #. module: pms
 #: code:addons/pms/models/pms_ubication.py:0
@@ -10795,8 +10815,6 @@ msgstr "Línea de Pedido de Venta"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__list_price
-#: model:ir.model.fields,field_description:pms.field_product_product__list_price
-#: model:ir.model.fields,field_description:pms.field_product_template__list_price
 msgid "Sales Price"
 msgstr "Precio de Venta"
 
@@ -11647,13 +11665,6 @@ msgstr "Intercambiar habitaciones en reservas"
 #: model:ir.model.fields.selection,name:pms.selection__pms_reservation_split_join_swap_wizard__operation__swap
 msgid "Swap rooms"
 msgstr "Intercambiar habitaciones"
-
-#. module: pms
-#. openerp-web
-#: code:addons/pms/static/src/xml/pms_base_templates.xml:0
-#, python-format
-msgid "Switch to this property"
-msgstr "Cambiar a este Hotel"
 
 #. module: pms
 #: model:ir.model,name:pms.model_ir_config_parameter
@@ -13882,6 +13893,14 @@ msgstr ""
 "independiente,\n"
 "                                puede seleccionarlo en el asistente de "
 "facturación"
+
+#, python-format
+#~ msgid "Dropdown menu"
+#~ msgstr "Menú Desplegable"
+
+#, python-format
+#~ msgid "Switch to this property"
+#~ msgstr "Cambiar a este Hotel"
 
 #~ msgid "Max reservation priority on the entire folio"
 #~ msgstr "Máxima prioridad de reserva en toda la ficha"

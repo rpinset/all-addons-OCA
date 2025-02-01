@@ -24,11 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 9ed13d6163242a99df172b3a2378d077534b54c8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 11 08:27:16 2024 +0000
+commit 60fc297a88029feb8792f1c3a7c4ffe179993451
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 20:16:20 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [IMP] update dotfiles
 
 
 ## account-budgeting
@@ -153,16 +153,11 @@ Date:   Fri Jan 3 15:56:56 2025 +0000
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit b7fb73e3a876041b860f2c33b7d5bde8c1e355e4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 27 09:12:02 2025 +0000
+commit 966dc42856a9f83f1db9c3fb40c7ca8d613e59e5
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 16:47:19 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 73.4% (208 of 283 strings)
-    
-    Translation: mis-builder-14.0/mis-builder-14.0-mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder/it/
+    [IMP] update dotfiles
 
 
 ## currency
@@ -509,18 +504,23 @@ Date:   Wed Jan 8 11:56:13 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 6c61595b051da1ea68e95b63e5938e7b7fa8e66c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jan 23 11:22:44 2025 +0000
+commit 2c68f9aadc01da62ec27ab31b369a2d879a5d09b
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jan 30 09:17:54 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-14.0/edi-14.0-edi_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_oca/
 
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit daa89d477169812c971e23e4e63cc568ffd7d991
+commit 555efca313de1c6a90ddbe90a323fb865075abd2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 28 08:22:44 2025 +0000
+Date:   Fri Jan 31 13:15:42 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -873,16 +873,11 @@ Date:   Wed May 1 18:27:29 2024 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 77ab6bbd5da985cf01edd3bbf066a480b3725032
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jan 28 15:22:54 2025 +0000
+commit fb140585c01047dfe061d080ee6254c3ce320609
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jan 31 11:30:53 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (24 of 24 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_account
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_account/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1246,9 +1241,9 @@ Date:   Wed Jan 15 08:18:17 2025 +0000
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit 48a0d97318e0c3bdf33e406a6f76942a7eed4165
+commit ce9f3f78ff6eaa6fee215db3bfaae782ecd3b47e
 Author: Weblate <noreply@weblate.org>
-Date:   Sun Jan 26 16:31:12 2025 +0000
+Date:   Thu Jan 30 18:55:11 2025 +0000
 
     Update translation files
     

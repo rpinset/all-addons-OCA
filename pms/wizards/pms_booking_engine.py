@@ -122,7 +122,7 @@ class BookingEngine(models.TransientModel):
             folio = self.env["pms.folio"].browse(self._context.get("default_folio_id"))
             return folio.pms_property_id.id
         else:
-            return self.env.user.get_active_property_ids()[0]
+            return self.env.user.pms_property_id.id
 
     @api.depends("availability_results.value_num_rooms_selected")
     def _compute_can_create_folio(self):
