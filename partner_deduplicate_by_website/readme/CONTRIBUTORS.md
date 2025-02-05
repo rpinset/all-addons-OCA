@@ -1,7 +1,0 @@
-  - [Tecnativa](https://www.tecnativa.com):
-      - Pedro M. Baeza
-      - Vicent Cubells
-      - Cristina Martin
-      - Victor M.M. Torres
-      - Carolina Fernandez
-  - Kevin Khao \<<kevinkhao@gmail.com>\>

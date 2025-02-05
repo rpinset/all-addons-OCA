@@ -20,7 +20,15 @@ class AccountStatementImport(models.TransientModel):
 
     @api.model
     def _get_allow_cfonb_complementary_types(self):
-        return ("   ", "LIB", "LCC", "RCN")
+        """
+        LIB: Libellé Libre
+        LCC: Libellé de Client à Client ligne 1
+        LC2: Libellé de Client à Client ligne 2
+        RCN: Référence de Client à Client / Nature du paiement
+        Full list: http://journeeutilisateurs.free.fr/cariboost_files/SEPA_20PART2.pdf
+        on last page
+        """
+        return ("   ", "LIB", "LCC", "LC2", "RCN")
 
     def _parse_cfonb_amount(self, amount_str, nb_of_dec):
         """Taken from the cfonb lib"""
@@ -135,8 +143,9 @@ class AccountStatementImport(models.TransientModel):
                         "sequence": seq,
                         "date": date_dt,
                         "payment_ref": name,
-                        "unique_import_id": "{}-{}-{:.2f}-{}".format(
-                            fields.Date.to_string(date_dt), ref, amount, name
+                        "unique_import_id": (
+                            f"{fields.Date.to_string(date_dt)}-"
+                            f"{ref}-{round(amount, decimals)}-{name}"
                         ),
                         "amount": amount,
                     }
@@ -188,7 +197,7 @@ class AccountStatementImport(models.TransientModel):
             if unique_import_id in unique_import_ids:
                 unique_import_ids[unique_import_id] += 1
                 transaction["unique_import_id"] += (
-                    "-%s" % unique_import_ids[unique_import_id]
+                    f"-{unique_import_ids[unique_import_id]}"
                 )
             else:
                 unique_import_ids[unique_import_id] = 1

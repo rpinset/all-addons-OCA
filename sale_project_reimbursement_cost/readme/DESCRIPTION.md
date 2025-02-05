@@ -1,1 +1,0 @@
-This module allows the display of provisions and reimbursement costs in the `Project Updates` dashboard.

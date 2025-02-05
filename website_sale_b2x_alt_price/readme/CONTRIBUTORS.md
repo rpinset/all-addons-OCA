@@ -1,4 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com/):
-  - Jairo Llopis
-  - Carlos Roca
-  - Carlos López

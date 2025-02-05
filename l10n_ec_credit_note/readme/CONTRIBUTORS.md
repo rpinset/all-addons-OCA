@@ -1,2 +1,0 @@
-- Ricardo Jara \<<rvjaraj@gmail.com>\>
-- Carlos Lopez \<<celm1990@gmail.com>\>

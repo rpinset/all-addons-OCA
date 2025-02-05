@@ -1,8 +1,0 @@
-  - [Tecnativa](https://www.tecnativa.com):
-      - Rafael Blasco
-      - Pedro M. Baeza
-      - Vicent Cubells
-      - Cristina Martín
-      - Victor M.M. Torres
-      - Víctor Martínez
-      - Carolina Fernandez

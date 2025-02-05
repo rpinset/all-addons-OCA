@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="view_upgrade_generate_record_wizard_form" model="ir.ui.view">
         <field name="model">upgrade.generate.record.wizard</field>
         <field name="arch" type="xml">
             <form>
                 <header>
-                  <field name="state" widget="statusbar" />
+                    <field name="state" widget="statusbar" />
                 </header>
                 <group invisible="state != 'draft'">
                     <p
@@ -33,9 +32,8 @@
 
     <record id="action_upgrade_generate_record_wizard" model="ir.actions.act_window">
         <field name="name">Generate Records Wizard</field>
-        <field name="type">ir.actions.act_window</field>
         <field name="res_model">upgrade.generate.record.wizard</field>
-        <field name="view_mode">form,tree</field>
+        <field name="view_mode">form,list</field>
         <field name="target">new</field>
     </record>
 
@@ -46,5 +44,4 @@
         action="action_upgrade_generate_record_wizard"
         sequence="15"
     />
-
 </odoo>

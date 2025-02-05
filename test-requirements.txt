@@ -1,1 +1,1 @@
-httpx
+odoo-test-helper

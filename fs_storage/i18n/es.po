@@ -45,21 +45,18 @@ msgstr "Código"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "Connection Test Failed!"
 msgstr "¡Conexión de prueba fallida!"
 
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "Connection Test Succeeded!"
 msgstr "¡Conexión de prueba exitosa!"
 
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "Create Marker file"
 msgstr ""
 
@@ -104,7 +101,6 @@ msgstr "Introduzca aquí sus opciones fsspec."
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "Everything seems properly set up!"
 msgstr "¡Todo parece correctamente configurado!"
 
@@ -154,7 +150,6 @@ msgstr "Última Actualización el"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "List File"
 msgstr ""
 
@@ -275,7 +270,6 @@ msgstr "El código tiene que ser único"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
-#, python-format
 msgid "The options must be a valid JSON"
 msgstr "Las opciones tienen que estar definidas en un JSON válido"
 

@@ -1,3 +1,0 @@
-- [CorporateHub](https://corporatehub.eu/)
-  - Alexey Pelykh \<<alexey.pelykh@corphub.eu>\>
-  - Freni Patel \<<fpatel@opensourceintegrators.com>\>

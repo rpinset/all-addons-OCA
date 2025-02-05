@@ -1,4 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Ernesto Tejeda
-- [APSL](https://www.apsl.tech):
-  - Miquel Pascual \<<mpascual@apsl.net>\>

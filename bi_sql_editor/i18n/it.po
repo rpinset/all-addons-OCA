@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-12 02:51+0000\n"
-"PO-Revision-Date: 2024-11-25 11:05+0000\n"
+"PO-Revision-Date: 2024-12-05 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -23,21 +23,18 @@ msgstr ""
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid "%(model_name)s Access %(full_name)s"
 msgstr "%(model_name)s Accesso %(full_name)s"
 
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid "%s (Copy)"
 msgstr "%s (copia)"
 
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid "Access %s"
 msgstr "Accesso %s"
 
@@ -137,12 +134,9 @@ msgstr "Colonna"
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view__view_order
-msgid ""
-"Comma-separated text. Possible values: \"graph\", \"pivot\", \"tree\" or "
-"\"form\""
+msgid "Comma-separated text. Possible values: \"graph\", \"pivot\" or \"list\""
 msgstr ""
-"Testo separato da virgole. Valori possibili: \"graph\", \"pivot\", \"tree\" "
-"o \"form\""
+"Testo separato da virgole. Valori possibili: \"graph\", \"pivot\" or \"list\""
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__computed_action_context
@@ -343,13 +337,22 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view__message_has_error
+#: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: bi_sql_editor
+#: model:ir.model.fields,help:bi_sql_editor.field_bi_sql_view__use_external_database
+msgid ""
+"If filled, the query will be executed against an external database, "
+"configured in Odoo main configuration file. "
+msgstr ""
+"Se compilato, la query verrà eseguita su un database esterno, configurato "
+"nel file di configurazione principale di Odoo. "
+
+#. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view_field.py:0
-#, python-format
 msgid ""
 "Impossible to delete fields if the view is in the state 'Model Valid' or 'UI "
 "Valid'."
@@ -458,7 +461,6 @@ msgstr "Nome"
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid ""
 "No Column was found.\n"
 "Columns name should be prefixed by 'x_'."
@@ -502,14 +504,14 @@ msgid "Odoo Cron"
 msgstr "Cron Odoo"
 
 #. module: bi_sql_editor
-#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__form_view_id
-msgid "Odoo Form View"
-msgstr "Vista maschera Odoo"
-
-#. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__graph_view_id
 msgid "Odoo Graph View"
 msgstr "Vista grafico Odoo"
+
+#. module: bi_sql_editor
+#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__tree_view_id
+msgid "Odoo List View"
+msgstr "Vista elenco Odoo"
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__menu_id
@@ -537,16 +539,10 @@ msgid "Odoo Search View"
 msgstr "Vista ricerca Odoo"
 
 #. module: bi_sql_editor
-#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__tree_view_id
-msgid "Odoo Tree View"
-msgstr "Vista elenco Odoo"
-
-#. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
-msgid "Only graph, pivot, tree or form views are supported"
-msgstr "Sono supportate solo le viste graph, pivot, tree o form"
+msgid "Only graph, pivot or list views are supported"
+msgstr "Sono supportate solo viste graph, pivot or list"
 
 #. module: bi_sql_editor
 #: model_terms:ir.ui.view,arch_db:bi_sql_editor.view_bi_sql_view_form
@@ -571,7 +567,6 @@ msgstr "Menu Odoo padre"
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid "Please set related models on the following fields %s"
 msgstr "Impostare il modello related nei sequenti campi %s"
 
@@ -593,7 +588,6 @@ msgstr "Aggiorna vista realizzata"
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid "Refresh Materialized View %s"
 msgstr "Aggiorna vista realizzata %s"
 
@@ -608,9 +602,13 @@ msgid "Rule Definition"
 msgstr "Definizione regola"
 
 #. module: bi_sql_editor
+#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore consegna SMS"
+
+#. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid ""
 "SQL Error while creating %(materialized_text)s VIEW %(view_name)s :\n"
 " %(error)s"
@@ -796,6 +794,11 @@ msgstr ""
 "aver creato il modello"
 
 #. module: bi_sql_editor
+#: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__use_external_database
+msgid "Use External Database"
+msgstr "Usa database esterno"
+
+#. module: bi_sql_editor
 #: model_terms:ir.ui.view,arch_db:bi_sql_editor.view_bi_sql_view_form
 msgid "User Interface"
 msgstr "Interfaccia utente"
@@ -829,16 +832,14 @@ msgstr "Cronologia comunicazioni sito web"
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
 #: code:addons/bi_sql_editor/models/bi_sql_view_field.py:0
-#, python-format
 msgid "You can not create indexes on non materialized views"
 msgstr "Si possono non creare indici per le viste non realizzate"
 
 #. module: bi_sql_editor
 #. odoo-python
 #: code:addons/bi_sql_editor/models/bi_sql_view.py:0
-#, python-format
 msgid ""
-"You can only unlink draft views.If you want to delete them, first set them "
+"You can only unlink draft views. If you want to delete them, first set them "
 "to draft."
 msgstr ""
 "Si possono scollegare solo le viste in bozza. Se si vogliono cancellare, "
@@ -896,12 +897,20 @@ msgstr "sequence"
 #~ "Testo separato da virgole. Valori possibili: \"graph\", \"pivot\" o "
 #~ "\"tree\""
 
+#~ msgid "Odoo Tree View"
+#~ msgstr "Vista elenco Odoo"
+
 #, python-format
 #~ msgid "Only graph, pivot or tree views are supported"
 #~ msgstr "Solo le viste grafico, pivot ed elenco sono supportate"
 
-#~ msgid "SMS Delivery error"
-#~ msgstr "Errore consegna SMS"
+#, python-format
+#~ msgid ""
+#~ "You can only unlink draft views.If you want to delete them, first set "
+#~ "them to draft."
+#~ msgstr ""
+#~ "Si possono scollegare solo le viste in bozza. Se si vogliono cancellare, "
+#~ "impostarle prima a bozza."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

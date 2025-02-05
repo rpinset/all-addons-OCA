@@ -1,4 +1,0 @@
-- [Sygel](https://www.sygel.es):
-  - Valentin Vinagre
-  - Manuel Regidor
-- [Tecnativa](https://www.tecnativa.com)

@@ -5,14 +5,7 @@
 
 from ast import literal_eval
 
-from odoo import fields, models
-
-
-class StockPickingType(models.Model):
-    _name = "stock.picking.type"
-    _inherit = ["stock.picking.type", "l10n.ro.mixin"]
-
-    l10n_ro_fiscal_position_id = fields.Many2one("account.fiscal.position")
+from odoo import models
 
 
 class StockPicking(models.Model):

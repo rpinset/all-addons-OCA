@@ -1,2 +1,0 @@
-- Cancel CFDI Documents
-- Credit Notes

@@ -1,2 +1,0 @@
-- David Jiménez \<<david.jimenez@forgeflow.com>\>
-- Meritxell Abellan \<<meritxell.abellan@forgeflow.com>\>

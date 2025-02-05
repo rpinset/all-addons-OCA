@@ -11,10 +11,10 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook/page[@name='views']" position="after">
                 <page name="rpc_config" string="RPC config">
-                  <field
+                    <field
                         name="rpc_config_edit"
                         groups="base.group_no_one"
-                        widget="ace"
+                        widget="code"
                     />
                 </page>
             </xpath>

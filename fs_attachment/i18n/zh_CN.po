@@ -70,7 +70,6 @@ msgstr "字段"
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/fs_storage.py:0
-#, python-format
 msgid ""
 "Field %(field)s already stored in another FS storage ('%(other_storage)s')"
 msgstr "字段 %(field)s 已经在另一个文件系统存储中存储 ('%(other_storage)s')"
@@ -87,7 +86,6 @@ msgstr "字段"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__fs_filename
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__fs_filename
 msgid "File Name into the filesystem storage"
 msgstr "文件系统存储中的文件名"
 
@@ -98,25 +96,21 @@ msgstr "控制器的文件流辅助模型"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__fs_storage_id
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__fs_storage_id
 msgid "Filesystem Storage"
 msgstr "文件系统存储"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__fs_storage_code
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__fs_storage_code
 msgid "Filesystem Storage Code"
 msgstr "文件系统存储代码"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__fs_url
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__fs_url
 msgid "Filesystem URL"
 msgstr "文件系统URL"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__fs_url_path
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__fs_url_path
 msgid "Filesystem URL Path"
 msgstr "文件系统URL路径"
 
@@ -139,11 +133,10 @@ msgstr "ID"
 #: model:ir.model.fields,help:fs_attachment.field_fs_storage__use_x_sendfile_to_serve_internal_url
 msgid ""
 "If checked and odoo is behind a proxy that supports x-sendfile, the content "
-"served by the attachment's internal URL will be servedby the proxy using the"
-" fs_url if defined. If not, the file will be served by odoo that will stream"
-" the content read from the filesystem storage. This option is useful to "
-"avoid to serve files from odoo and therefore to avoid to load the odoo "
-"process. "
+"served by the attachment's internal URL will be servedby the proxy using the "
+"fs_url if defined. If not, the file will be served by odoo that will stream "
+"the content read from the filesystem storage. This option is useful to avoid "
+"to serve files from odoo and therefore to avoid to load the odoo process. "
 msgstr ""
 "如果选中并且Odoo位于支持x-sendfile的代理后面，附件的内部URL将由代理使用fs_url"
 "提供服务（如果已定义）。如果没有定义，文件将由Odoo提供服务，Odoo将从文件系统"
@@ -156,8 +149,8 @@ msgid ""
 "If checked, the autovacuum of the garbage collection will be automatically "
 "executed when the storage is used to store attachments. Sometime, the "
 "autovacuum is to avoid when files in the storage are referenced by other "
-"systems (like a website). In such case, records in the fs.file.gc table must"
-" be manually processed."
+"systems (like a website). In such case, records in the fs.file.gc table must "
+"be manually processed."
 msgstr ""
 "如果选中，当存储用于存储附件时，垃圾收集的自动清理将自动执行。有时，当存储中"
 "的文件被其他系统（如网站）引用时，需要避免自动清理。在这种情况下，必须手动处"
@@ -182,11 +175,11 @@ msgstr ""
 #: model:ir.model.fields,help:fs_attachment.field_fs_storage__use_filename_obfuscation
 msgid ""
 "If checked, the filename will be obfuscated. This option is useful to avoid "
-"to expose sensitive information trough the URL or in the remote storage. The"
-" obfuscation is done using a hash of the filename. The original filename is "
-"stored in the attachment metadata. The obfusation is to avoid if the storage"
-" is used to store files that are referenced by other systems (like a "
-"website) where the filename is important for SEO."
+"to expose sensitive information trough the URL or in the remote storage. The "
+"obfuscation is done using a hash of the filename. The original filename is "
+"stored in the attachment metadata. The obfusation is to avoid if the storage "
+"is used to store files that are referenced by other systems (like a website) "
+"where the filename is important for SEO."
 msgstr ""
 "如果选中，文件名将被混淆。此选项有助于防止通过URL或远程存储暴露敏感信息。混淆"
 "是通过使用文件名的哈希值来完成的。原始文件名会保存在附件的元数据中。如果存储"
@@ -214,7 +207,6 @@ msgstr "如果指定了存储，与该模型关联的所有附件都将存储在
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_ir_attachment__internal_url
-#: model:ir.model.fields,field_description:fs_attachment.field_product_document__internal_url
 msgid "Internal URL"
 msgstr "内部URL"
 
@@ -279,7 +271,6 @@ msgstr "模型"
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/fs_storage.py:0
-#, python-format
 msgid ""
 "Model %(model)s already stored in another FS storage ('%(other_storage)s')"
 msgstr "模型 %(model)s 已经存储在另一个文件系统存储中 ('%(other_storage)s')"
@@ -304,14 +295,12 @@ msgstr "通常目录路径是用于内部使用的。如果启用此标志，路
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/ir_attachment.py:0
-#, python-format
 msgid "Only administrators can execute this action."
 msgstr "只有管理员可以执行此操作。"
 
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/fs_storage.py:0
-#, python-format
 msgid "Only one storage can be used as default for attachments"
 msgstr "只有一个存储可以被用作附件的默认存储"
 
@@ -327,23 +316,9 @@ msgid "Storage"
 msgstr "存储"
 
 #. module: fs_attachment
-#. odoo-python
-#: code:addons/fs_attachment/models/ir_attachment.py:0
-#, python-format
-msgid "Storage '%s' is disabled (see environment configuration)."
-msgstr "存储 '%s' 已禁用（查看环境配置）。"
-
-#. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_fs_file_gc__fs_storage_code
 msgid "Storage Code"
 msgstr "存储代码"
-
-#. module: fs_attachment
-#. odoo-python
-#: code:addons/fs_attachment/models/ir_attachment.py:0
-#, python-format
-msgid "Storages are disabled (see environment configuration)."
-msgstr "存储已禁用（查看环境配置）。"
 
 #. module: fs_attachment
 #: model:ir.model.fields,field_description:fs_attachment.field_fs_file_gc__store_fname
@@ -352,13 +327,11 @@ msgstr "存储的文件名"
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__fs_storage_code
-#: model:ir.model.fields,help:fs_attachment.field_product_document__fs_storage_code
 msgid ""
 "Technical code used to identify the storage backend into the code.This code "
 "must be unique. This code is used for example to define the storage backend "
-"to store the attachments via the configuration parameter "
-"'ir_attachment.storage.force.database' when the module 'fs_attachment' is "
-"installed."
+"to store the attachments via the configuration parameter 'ir_attachment."
+"storage.force.database' when the module 'fs_attachment' is installed."
 msgstr ""
 "用于在代码中标识存储后端的技术代码。此代码必须唯一。\n"
 "例如，当安装模块'fs_attachment'时，此代码用于通过配置参数'ir_attachment."
@@ -366,52 +339,47 @@ msgstr ""
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__fs_url
-#: model:ir.model.fields,help:fs_attachment.field_product_document__fs_url
 msgid "The URL to access the file from the filesystem storage."
 msgstr "访问文件系统的存储中文件的URL。"
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__internal_url
-#: model:ir.model.fields,help:fs_attachment.field_product_document__internal_url
 msgid "The URL to access the file from the server."
 msgstr "从服务器访问文件的URL。"
 
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/fs_storage.py:0
-#, python-format
 msgid ""
 "The force_db_for_default_attachment_rules can only be set if the storage is "
 "used as default for attachments."
-msgstr "只有当存储被用作附件的默认存储时，才能设置force_db_for_default_attachment_rul"
-"es。"
+msgstr ""
+"只有当存储被用作附件的默认存储时，才能设置"
+"force_db_for_default_attachment_rules。"
 
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/fs_storage.py:0
-#, python-format
 msgid "The force_db_for_default_attachment_rules is not a valid python dict."
 msgstr "force_db_for_default_attachment_rules 不是一个有效的 Python 字典。"
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__fs_filename
-#: model:ir.model.fields,help:fs_attachment.field_product_document__fs_filename
 msgid ""
 "The name of the file in the filesystem storage.To preserve the mimetype and "
 "the meaning of the filenamethe filename is computed from the name and the "
 "extension"
-msgstr "文件系统存储中文件的名称。为了保留文件的MIME类型和文件名的意义，文件名是根据"
+msgstr ""
+"文件系统存储中文件的名称。为了保留文件的MIME类型和文件名的意义，文件名是根据"
 "名称和扩展名计算得出的"
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__fs_url_path
-#: model:ir.model.fields,help:fs_attachment.field_product_document__fs_url_path
 msgid "The path to access the file from the filesystem storage."
 msgstr "从文件系统存储访问文件的路径。"
 
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_ir_attachment__fs_storage_id
-#: model:ir.model.fields,help:fs_attachment.field_product_document__fs_storage_id
 msgid "The storage where the file is stored."
 msgstr "文件存储的位置。"
 
@@ -438,9 +406,17 @@ msgstr "使用X-Sendfile服务内部URL"
 #. module: fs_attachment
 #: model:ir.model.fields,help:fs_attachment.field_fs_storage__force_db_for_default_attachment_rules
 msgid ""
-"When storing attachments in an external storage, storage may be slow.If the storage is used to store odoo attachments by default, this could lead to a bad user experience since small images  (128, 256) are used in Odoo in list / kanban views. We want them to be fast to read.This field allows to force the store of some attachments in the odoo database. The value is a dict Where the key is the beginning of the mimetype to configure and the value is the limit in size below which attachments are kept in DB. 0 means no limit.\n"
+"When storing attachments in an external storage, storage may be slow.If the "
+"storage is used to store odoo attachments by default, this could lead to a "
+"bad user experience since small images  (128, 256) are used in Odoo in "
+"list / kanban views. We want them to be fast to read.This field allows to "
+"force the store of some attachments in the odoo database. The value is a "
+"dict Where the key is the beginning of the mimetype to configure and the "
+"value is the limit in size below which attachments are kept in DB. 0 means "
+"no limit.\n"
 "Default configuration means:\n"
-"* images mimetypes (image/png, image/jpeg, ...) below 50KB are stored in database\n"
+"* images mimetypes (image/png, image/jpeg, ...) below 50KB are stored in "
+"database\n"
 "* application/javascript are stored in database whatever their size \n"
 "* text/css are stored in database whatever their size"
 msgstr ""
@@ -457,8 +433,15 @@ msgstr ""
 #. module: fs_attachment
 #. odoo-python
 #: code:addons/fs_attachment/models/ir_attachment.py:0
-#, python-format
 msgid ""
-"You can't write on multiple attachments with different mimetypes at the same"
-" time."
+"You can't write on multiple attachments with different mimetypes at the same "
+"time."
 msgstr "你不能同时在具有不同mimetype的多个附件上进行写操作。"
+
+#, python-format
+#~ msgid "Storage '%s' is disabled (see environment configuration)."
+#~ msgstr "存储 '%s' 已禁用（查看环境配置）。"
+
+#, python-format
+#~ msgid "Storages are disabled (see environment configuration)."
+#~ msgstr "存储已禁用（查看环境配置）。"

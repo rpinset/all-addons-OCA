@@ -1,5 +1,5 @@
-# ?? 2016 Julien Coux (Camptocamp)
-# ?? 2018 Forest and Biomass Romania SA
+# © 2016 Julien Coux (Camptocamp)
+# © 2018 Forest and Biomass Romania SA
 # Copyright 2020 ForgeFlow S.L. (https://www.forgeflow.com)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
@@ -24,7 +24,7 @@ class TrialBalanceReport(models.AbstractModel):
         show_partner_details,
     ):
         accounts_domain = [
-            ("company_id", "=", company_id),
+            ("company_ids", "in", [company_id]),
             ("include_initial_balance", "=", True),
         ]
         if account_ids:
@@ -64,7 +64,7 @@ class TrialBalanceReport(models.AbstractModel):
         fy_start_date,
     ):
         accounts_domain = [
-            ("company_id", "=", company_id),
+            ("company_ids", "in", [company_id]),
             ("include_initial_balance", "=", False),
         ]
         if account_ids:
@@ -142,7 +142,7 @@ class TrialBalanceReport(models.AbstractModel):
         show_partner_details,
     ):
         accounts_domain = [
-            ("company_id", "=", company_id),
+            ("company_ids", "in", [company_id]),
             ("include_initial_balance", "=", False),
         ]
         if account_ids:
@@ -266,9 +266,9 @@ class TrialBalanceReport(models.AbstractModel):
                         tb2 = tb["group_by_data"][gb_key]
                         if "group_by_data" in total_amount[acc_id]:
                             if gb_key not in total_amount[acc_id]["group_by_data"]:
-                                total_amount[acc_id]["group_by_data"][
-                                    gb_key
-                                ] = self._prepare_total_amount(tb2, foreign_currency)
+                                total_amount[acc_id]["group_by_data"][gb_key] = (
+                                    self._prepare_total_amount(tb2, foreign_currency)
+                                )
                             else:
                                 total_amount[acc_id]["group_by_data"][gb_key][
                                     "initial_balance"
@@ -419,7 +419,7 @@ class TrialBalanceReport(models.AbstractModel):
         fy_start_date,
         grouped_by,
     ):
-        accounts_domain = [("company_id", "=", company_id)]
+        accounts_domain = [("company_ids", "in", [company_id])]
         if account_ids:
             accounts_domain += [("id", "in", account_ids)]
             # If explicit list of accounts is provided,
@@ -598,19 +598,19 @@ class TrialBalanceReport(models.AbstractModel):
             total_amount[unaffected_id]["ending_balance"] += pl_initial_balance
             total_amount[unaffected_id]["initial_balance"] += pl_initial_balance
             if foreign_currency:
-                total_amount[unaffected_id][
-                    "ending_currency_balance"
-                ] += pl_initial_currency_balance
-                total_amount[unaffected_id][
-                    "initial_currency_balance"
-                ] += pl_initial_currency_balance
+                total_amount[unaffected_id]["ending_currency_balance"] += (
+                    pl_initial_currency_balance
+                )
+                total_amount[unaffected_id]["initial_currency_balance"] += (
+                    pl_initial_currency_balance
+                )
             if grouped_by:
-                total_amount[unaffected_id]["group_by_data"][0][
-                    "ending_balance"
-                ] = total_amount[unaffected_id]["ending_balance"]
-                total_amount[unaffected_id]["group_by_data"][0][
-                    "initial_balance"
-                ] = total_amount[unaffected_id]["initial_balance"]
+                total_amount[unaffected_id]["group_by_data"][0]["ending_balance"] = (
+                    total_amount[unaffected_id]["ending_balance"]
+                )
+                total_amount[unaffected_id]["group_by_data"][0]["initial_balance"] = (
+                    total_amount[unaffected_id]["initial_balance"]
+                )
                 if foreign_currency:
                     total_amount[unaffected_id]["group_by_data"][0][
                         "ending_currency_balance"
@@ -697,7 +697,6 @@ class TrialBalanceReport(models.AbstractModel):
                         "code": group.code_prefix_start,
                         "name": group.name,
                         "parent_id": group.parent_id.id,
-                        "parent_path": group.parent_path,
                         "complete_code": group.complete_code,
                         "account_ids": group.compute_account_ids.ids,
                         "type": "group_type",
@@ -751,7 +750,6 @@ class TrialBalanceReport(models.AbstractModel):
                         "code": group.code_prefix_start,
                         "name": group.name,
                         "parent_id": group.parent_id.id,
-                        "parent_path": group.parent_path,
                         "type": "group_type",
                         "complete_code": group.complete_code,
                         "account_ids": group.compute_account_ids.ids,
@@ -804,7 +802,6 @@ class TrialBalanceReport(models.AbstractModel):
                         "code": group.code_prefix_start,
                         "name": group.name,
                         "parent_id": group.parent_id.id,
-                        "parent_path": group.parent_path,
                         "type": "group_type",
                         "complete_code": group.complete_code,
                         "account_ids": group.compute_account_ids.ids,
@@ -833,12 +830,12 @@ class TrialBalanceReport(models.AbstractModel):
                         "ending_balance"
                     ]
                     if foreign_currency:
-                        groups_data[group_id][
-                            "initial_currency_balance"
-                        ] += total_amount[acc_id]["initial_currency_balance"]
-                        groups_data[group_id][
-                            "ending_currency_balance"
-                        ] += total_amount[acc_id]["ending_currency_balance"]
+                        groups_data[group_id]["initial_currency_balance"] += (
+                            total_amount[acc_id]["initial_currency_balance"]
+                        )
+                        groups_data[group_id]["ending_currency_balance"] += (
+                            total_amount[acc_id]["ending_currency_balance"]
+                        )
         return groups_data
 
     def _get_report_values(self, docids, data):

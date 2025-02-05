@@ -16,7 +16,6 @@
                         string="Test connection"
                     />
                     <button string="Close" class="btn-secondary" special="cancel" />
-
                 </footer>
             </form>
         </field>

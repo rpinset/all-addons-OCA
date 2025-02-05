@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="view_upgrade_analysis_tree" model="ir.ui.view">
         <field name="model">upgrade.analysis</field>
         <field name="arch" type="xml">
-            <tree decoration-info="state == 'draft'">
+            <list decoration-info="state == 'draft'">
                 <field name="config_id" />
                 <field name="analysis_date" />
                 <field name="state" />
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -17,7 +16,7 @@
         <field name="arch" type="xml">
             <form create="false">
                 <header>
-                  <field name="state" widget="statusbar" />
+                    <field name="state" widget="statusbar" />
                     <button
                         name="analyze"
                         string="Perform Analysis"
@@ -42,7 +41,6 @@
                             colspan="2"
                         />
                     </group>
-
                 </sheet>
             </form>
         </field>
@@ -50,7 +48,6 @@
 
     <record id="action_upgrade_analysis_tree" model="ir.actions.act_window">
         <field name="name">Upgrade Analyses</field>
-        <field name="type">ir.actions.act_window</field>
         <field name="res_model">upgrade.analysis</field>
     </record>
 
@@ -60,5 +57,4 @@
         name="Upgrade Analyses"
         parent="menu_upgrade"
     />
-
 </odoo>

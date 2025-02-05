@@ -1,3 +1,0 @@
-- Carlos Serra-Toro
-- Sébastien Alix \<<sebastien.alix@camptocamp.com>\>
-- Khoi (Kien Kim) \<<khoikk@trobz.com>\>

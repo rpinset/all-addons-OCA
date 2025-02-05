@@ -1,3 +1,0 @@
-- [Camptocamp](https://www.camptocamp.com)
-  - Iván Todorovich \<<ivan.todorovich@gmail.com>\>
-- David Montull Guasch \<<david.montull@bt-group.com>\>

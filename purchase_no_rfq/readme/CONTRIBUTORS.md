@@ -1,3 +1,0 @@
-- Sylvain LE GAL \<<https://twitter.com/legalsylvain>\>
-- [Binhex](https://binhex.cloud/):
-    -   Deriman Alonso

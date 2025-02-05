@@ -1,2 +1,0 @@
-- [Sygel](https://www.sygel.es):
-  - Alberto Martínez \<<alberto.martinez@sygel.es>\>

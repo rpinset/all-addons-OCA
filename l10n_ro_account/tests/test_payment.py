@@ -5,8 +5,15 @@
 from odoo.exceptions import ValidationError
 from odoo.tests.common import TransactionCase
 
+from odoo.addons.account.tests.common import AccountTestInvoicingCommon
+
 
 class TestAccountPayment(TransactionCase):
+    @classmethod
+    @AccountTestInvoicingCommon.setup_country("ro")
+    def setUpClass(cls):
+        super().setUpClass()
+
     def setUp(self):
         super().setUp()
         self.env.company.l10n_ro_accounting = True

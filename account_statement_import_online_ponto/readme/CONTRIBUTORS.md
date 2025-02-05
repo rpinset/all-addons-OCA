@@ -1,8 +1,0 @@
-- Florent de Labarre
-- [Tecnativa](https://www.tecnativa.com):
-  - Pedro M. Baeza
-  - João Marques
-- [Therp BV](https://therp.nl):
-  - Ronald Portier \<<ronald@therp.nl>\>
-- [Tesseratech](https://tesseratech.es):
-  - Christian Doñate

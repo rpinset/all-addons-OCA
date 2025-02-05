@@ -40,17 +40,14 @@ class InMemoryTransport(HttpTransport):
         self.events = []
         self.envelopes = []
 
-    def capture_event(self, event, *args, **kwargs):
-        self.events.append(event)
-
     def capture_envelope(self, envelope, *args, **kwargs):
         self.envelopes.append(envelope)
 
     def has_event(self, event_level, event_msg):
-        for event in self.events:
+        for event in self.envelopes:
             if (
-                event.get("level") == event_level
-                and event.get("logentry", {}).get("message") == event_msg
+                event.get_event().get("level") == event_level
+                and event.get_event().get("logentry", {}).get("message") == event_msg
             ):
                 return True
         return False
@@ -116,13 +113,13 @@ class TestClientSetup(TransactionCase):
     def assertEventCaptured(self, client, event_level, event_msg):
         self.assertTrue(
             client.transport.has_event(event_level, event_msg),
-            msg='Event: "%s" was not captured' % event_msg,
+            msg=f"Event: {event_msg} was not captured",
         )
 
     def assertEventNotCaptured(self, client, event_level, event_msg):
         self.assertFalse(
             client.transport.has_event(event_level, event_msg),
-            msg='Event: "%s" was captured' % event_msg,
+            msg=f"Event: {event_msg} was captured",
         )
 
     def test_initialize_raven_sets_dsn(self):
@@ -203,7 +200,7 @@ class TestClientSetup(TransactionCase):
         )
         client = initialize_sentry(config)._client
         client.transport = InMemoryTransport({"dsn": self.dsn})
-        level, msg = logging.ERROR, "Test exclude logger %s" % __name__
+        level, msg = logging.ERROR, f"Test exclude logger {__name__}"
         self.log(level, msg)
         level = "error"
         # Revert ignored logger so it doesn't affect other tests

@@ -27,35 +27,33 @@ msgid ""
 "#  - self: browse_record of the current ID Category browse_record\n"
 "#  - id_number: browse_record of ID number to validate\n"
 "\n"
-"<b><i># Sample 1: ID number only contains digits</i></b>\n"
+"<b>\n"
+"                                    <i># Sample 1: ID number only contains "
+"digits</i>\n"
+"                                </b>\n"
 "if not id_number.name.isdigit():\n"
 "    failed = True\n"
 "else:\n"
 "    failed = False\n"
 "\n"
-"<b><i># Sample 2: Length of ID number cannot exceed 10 chars</i></b>\n"
+"<b>\n"
+"                                    <i># Sample 2: Length of ID number "
+"cannot exceed 10 chars</i>\n"
+"                                </b>\n"
 "failed = len(id_number.name) &gt; 10 and True or False\n"
 "\n"
-"<b><i># Sample 3: ID number must start with the category code</i></b>\n"
+"<b>\n"
+"                                    <i># Sample 3: ID number must start with "
+"the category code</i>\n"
+"                                </b>\n"
 "failed = not id_number.name.startswith(self.code) and True or False"
 msgstr ""
-"# Använd failed = True för att ange att id-numret inte är giltigt.\n"
-"# Du kan använda följande variabler :\n"
-"# - self: browse_record för den aktuella ID-kategorin browse_record\n"
-"# - id_number: browse_record för det ID-nummer som ska bekräftas\n"
-"\n"
-"<b><i># Exempel 1: ID-numret innehåller bara siffror</i></b>\n"
-"if not id_number.name.isdigit():\n"
-"    failed = Sann\n"
-"i annat fall\n"
-"    misslyckades = Falskt\n"
-"\n"
-"<b><i># Exempel 2: Längden på ID-numret får inte överstiga 10 tecken</i></"
-"b>\n"
-"failed = len(id_number.name) &gt; 10 och sant eller falskt\n"
-"\n"
-"<b><i># Exempel 3: ID-numret måste börja med kategorikoden</i></b>\n"
-"failed = not id_number.name.startswith(self.code) and True or False"
+
+#. module: partner_identification
+#. odoo-python
+#: code:addons/partner_identification/models/res_partner_id_category.py:0
+msgid "%(id_name)s is not a valid %(cat_name)s identifier"
+msgstr ""
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category__code
@@ -149,15 +147,11 @@ msgstr "Visa namn"
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner_id_category.py:0
-#, python-format
 msgid ""
 "Error when evaluating the id_category validation code: \n"
-" {name} \n"
-"({error})"
+" %(name)s \n"
+"(%(error)s)"
 msgstr ""
-"Fel vid utvärdering av valideringskoden för id_category:\n"
-" {name}\n"
-"({error})"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__valid_until
@@ -242,6 +236,7 @@ msgstr ""
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_error
+#: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -416,6 +411,11 @@ msgid "Running"
 msgstr "Löpning"
 
 #. module: partner_identification
+#: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__status
 msgid "Status"
 msgstr "Status"
@@ -446,15 +446,11 @@ msgstr ""
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner.py:0
-#, python-format
 msgid ""
-"This {record_name} has multiple IDs of this type ({category_code}), so a "
-"write via the {field_name} field is not possible. In order to fix this, "
+"This %(record_name)s has multiple IDs of this type (%(category_code)s), so a "
+"write via the %(field_name)s field is not possible. In order to fix this, "
 "please use the IDs tab."
 msgstr ""
-"Denna {record_name} har flera ID:n av den här typen ({category_code}), så "
-"det går inte att skriva via fältet {field_name}. För att åtgärda detta ska "
-"du använda fliken ID:n."
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__pending
@@ -491,12 +487,65 @@ msgstr ""
 msgid "Website communication history"
 msgstr ""
 
-#. module: partner_identification
-#. odoo-python
-#: code:addons/partner_identification/models/res_partner_id_category.py:0
+#~ msgid ""
+#~ "# Use failed = True to specify that the id number is not valid.\n"
+#~ "# You can use the following variables :\n"
+#~ "#  - self: browse_record of the current ID Category browse_record\n"
+#~ "#  - id_number: browse_record of ID number to validate\n"
+#~ "\n"
+#~ "<b><i># Sample 1: ID number only contains digits</i></b>\n"
+#~ "if not id_number.name.isdigit():\n"
+#~ "    failed = True\n"
+#~ "else:\n"
+#~ "    failed = False\n"
+#~ "\n"
+#~ "<b><i># Sample 2: Length of ID number cannot exceed 10 chars</i></b>\n"
+#~ "failed = len(id_number.name) &gt; 10 and True or False\n"
+#~ "\n"
+#~ "<b><i># Sample 3: ID number must start with the category code</i></b>\n"
+#~ "failed = not id_number.name.startswith(self.code) and True or False"
+#~ msgstr ""
+#~ "# Använd failed = True för att ange att id-numret inte är giltigt.\n"
+#~ "# Du kan använda följande variabler :\n"
+#~ "# - self: browse_record för den aktuella ID-kategorin browse_record\n"
+#~ "# - id_number: browse_record för det ID-nummer som ska bekräftas\n"
+#~ "\n"
+#~ "<b><i># Exempel 1: ID-numret innehåller bara siffror</i></b>\n"
+#~ "if not id_number.name.isdigit():\n"
+#~ "    failed = Sann\n"
+#~ "i annat fall\n"
+#~ "    misslyckades = Falskt\n"
+#~ "\n"
+#~ "<b><i># Exempel 2: Längden på ID-numret får inte överstiga 10 tecken</i></"
+#~ "b>\n"
+#~ "failed = len(id_number.name) &gt; 10 och sant eller falskt\n"
+#~ "\n"
+#~ "<b><i># Exempel 3: ID-numret måste börja med kategorikoden</i></b>\n"
+#~ "failed = not id_number.name.startswith(self.code) and True or False"
+
 #, python-format
-msgid "{id_name} is not a valid {cat_name} identifier"
-msgstr "{id_name} är inte en giltig identifierare för {cat_name}"
+#~ msgid ""
+#~ "Error when evaluating the id_category validation code: \n"
+#~ " {name} \n"
+#~ "({error})"
+#~ msgstr ""
+#~ "Fel vid utvärdering av valideringskoden för id_category:\n"
+#~ " {name}\n"
+#~ "({error})"
+
+#, python-format
+#~ msgid ""
+#~ "This {record_name} has multiple IDs of this type ({category_code}), so a "
+#~ "write via the {field_name} field is not possible. In order to fix this, "
+#~ "please use the IDs tab."
+#~ msgstr ""
+#~ "Denna {record_name} har flera ID:n av den här typen ({category_code}), så "
+#~ "det går inte att skriva via fältet {field_name}. För att åtgärda detta "
+#~ "ska du använda fliken ID:n."
+
+#, python-format
+#~ msgid "{id_name} is not a valid {cat_name} identifier"
+#~ msgstr "{id_name} är inte en giltig identifierare för {cat_name}"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Senast redigerad"

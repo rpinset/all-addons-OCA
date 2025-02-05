@@ -1,4 +1,3 @@
-/** @odoo-module */
 /* Copyright 2013 Therp BV (<http://therp.nl>).
  * Copyright 2015 Pedro M. Baeza <pedro.baeza@serviciosbaeza.com>
  * Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
@@ -8,8 +7,8 @@
  * Copyright 2024 Versada (https://versada.eu)
  * License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). */
 
-import {patch} from "@web/core/utils/patch";
 import {ListRenderer} from "@web/views/list/list_renderer";
+import {patch} from "@web/core/utils/patch";
 import {useService} from "@web/core/utils/hooks";
 
 patch(ListRenderer.prototype, {

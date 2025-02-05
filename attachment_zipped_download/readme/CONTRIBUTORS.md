@@ -1,5 +1,0 @@
-- César Fernández Domínguez \<<cesfernandez@outlook.com>\>
-- [Tecnativa](https://www.tecnativa.com):
-  - Víctor Martínez
-  - Pedro M. Baeza
-- Pierre Verkest \<<pierreverkest@gmail.com>\>

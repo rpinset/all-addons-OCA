@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="view_upgrade_record_search" model="ir.ui.view">
         <field name="model">upgrade.record</field>
         <field name="arch" type="xml">
@@ -28,14 +27,14 @@
     <record id="view_upgrade_record_tree" model="ir.ui.view">
         <field name="model">upgrade.record</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="module" />
                 <field name="model" />
                 <field name="field" />
                 <field name="name" />
                 <field name="type" />
                 <field name="mode" />
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -54,10 +53,10 @@
                     </group>
                     <group string="Attributes">
                         <field name="attribute_ids" nolabel="1" colspan="2">
-                            <tree>
+                            <list>
                                 <field name="name" />
                                 <field name="value" />
-                            </tree>
+                            </list>
                         </field>
                     </group>
                 </sheet>
@@ -66,9 +65,8 @@
     </record>
 
     <record id="action_upgrade_record_tree" model="ir.actions.act_window">
-            <field name="name">upgrade Records</field>
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">upgrade.record</field>
+        <field name="name">upgrade Records</field>
+        <field name="res_model">upgrade.record</field>
     </record>
 
     <menuitem
@@ -77,5 +75,4 @@
         name="Records"
         parent="menu_upgrade"
     />
-
 </odoo>

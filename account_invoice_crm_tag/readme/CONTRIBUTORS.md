@@ -1,5 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Stefan Ungureanu
-  - Pedro M. Baeza
-- [APSL](<https://apsl.tech>):
-  - Antoni Marroig \<<amarroig@apsl.net>\>

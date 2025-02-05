@@ -16,7 +16,7 @@ class AccountMoveLine(models.Model):
     def _compute_account_id(self):
         res = super()._compute_account_id()
         l10n_ro_lines = self.filtered(
-            lambda x: x.product_id.type == "product" and x.is_l10n_ro_record
+            lambda x: x.product_id.is_storable and x.is_l10n_ro_record
         )
 
         company = (

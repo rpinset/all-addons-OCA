@@ -127,7 +127,6 @@ class FastAPITransactionCase(TransactionCase):
             or self.default_fastapi_authenticated_partner
             or self.env["res.partner"]
         )
-        partner = partner.with_env(env)
         if partner and authenticated_partner_impl in dependencies:
             raise ValueError(
                 "You cannot provide an override for the authenticated_partner_impl "

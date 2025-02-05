@@ -16,10 +16,20 @@ from stdnum.fr.siret import is_valid
 
 from odoo import _, api, fields, models, tools
 from odoo.exceptions import UserError, ValidationError
+from odoo.osv import expression
 from odoo.tools.misc import format_amount, format_date
 
 logger = logging.getLogger(__name__)
 
+
+PCG_DAS2_WARN_ACCOUNTS = [
+    "6221",
+    "6222",
+    "6226",
+    "6228",
+    "653",
+    "6516",
+]
 
 FRANCE_CODES = (
     "FR",
@@ -165,7 +175,10 @@ class L10nFrDas2(models.Model):
     def _default_payment_journals(self):
         res = []
         pay_journals = self.env["account.journal"].search(
-            [("type", "in", ("bank", "cash")), ("company_id", "=", self.env.company.id)]
+            [
+                ("type", "in", ("bank", "cash", "credit")),
+                ("company_id", "=", self.env.company.id),
+            ]
         )
         if pay_journals:
             res = pay_journals.ids
@@ -296,16 +309,16 @@ class L10nFrDas2(models.Model):
                 amount=format_amount(self.env, mline.balance, self.currency_id),
                 move_name=mline.move_id.name,
             )
-            note += "<li>%s</li>" % note_text
+            note += f"<li>{note_text}</li>"
         res = False
         amount_int = int(round(amount))
         if note and amount_int > 0:
-            field_name = "%s_amount" % partner.fr_das2_type
+            field_name = f"{partner.fr_das2_type}_amount"
             res = {
                 field_name: amount_int,
                 "parent_id": self.id,
                 "partner_id": partner.id,
-                "note": "<ul>%s</ul>" % note,
+                "note": f"<ul>{note}</ul>",
             }
         return res
 
@@ -317,22 +330,13 @@ class L10nFrDas2(models.Model):
         purchase_journals = ajo.search(
             [("type", "=", "purchase"), ("company_id", "=", company.id)]
         )
-        das2_accounts = aao.search(
+        acc_domain = expression.OR(
             [
-                ("company_id", "=", company.id),
-                "|",
-                "|",
-                "|",
-                "|",
-                "|",
-                ("code", "=like", "6221%"),
-                ("code", "=like", "6222%"),
-                ("code", "=like", "6226%"),
-                ("code", "=like", "6228%"),
-                ("code", "=like", "653%"),
-                ("code", "=like", "6516%"),
+                ("code", "=like", f"{acc_code}%"),
             ]
+            for acc_code in PCG_DAS2_WARN_ACCOUNTS
         )
+        das2_accounts = aao.with_company(self.company_id.id).search(acc_domain)
         rg_res = amlo._read_group(
             [
                 ("company_id", "=", company.id),
@@ -364,7 +368,7 @@ class L10nFrDas2(models.Model):
                     '<li><a href="#" data-oe-model="res.partner" '
                     'data-oe-id="%d">%s</a></li>' % (partner.id, partner.display_name)
                 )
-                msg += "<li>%s</li>" % partner.display_name
+                msg += f"<li>{partner.display_name}</li>"
             msg_post += "</ul>"
             msg += "</ul>"
         self.message_post(body=Markup(msg_post))
@@ -623,10 +627,10 @@ class L10nFrDas2(models.Model):
             phone.replace(" ", "")
             .replace(".", "")
             .replace("-", "")
-            .replace("\u00A0", "")
+            .replace("\u00a0", "")
         )
         if phone.startswith("+33"):
-            phone = "0%s" % phone[3:]
+            phone = f"0{phone[3:]}"
         contact_phone = self._prepare_field(
             "Administrative contact phone", contact, phone, 10
         )
@@ -927,4 +931,10 @@ class L10nFrDas2Line(models.Model):
     def _check_siret(self):
         for line in self:
             if line.partner_siret and not is_valid(line.partner_siret):
-                raise ValidationError(_("SIRET '%s' is invalid.") % line.partner_siret)
+                raise ValidationError(
+                    _(
+                        "SIRET '%(siret)s' of supplier '%(partner)s' is invalid.",
+                        siret=line.partner_siret,
+                        partner=line.partner_id.display_name,
+                    )
+                )

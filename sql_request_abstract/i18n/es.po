@@ -75,8 +75,16 @@ msgstr "Si está marcado, nuevos mensajes necesitan su atención."
 
 #. module: sql_request_abstract
 #: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__message_has_error
+#: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes han tenido un error de entrega."
+
+#. module: sql_request_abstract
+#: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__use_external_database
+msgid ""
+"If filled, the query will be executed against an external database, "
+"configured in Odoo main configuration file. "
+msgstr ""
 
 #. module: sql_request_abstract
 #: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__message_is_follower
@@ -86,7 +94,6 @@ msgstr "es seguidor/a"
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-#, python-format
 msgid "It is not allowed to execute a not checked request."
 msgstr "No está permitido ejecutar una solicitud no verificada."
 
@@ -98,7 +105,6 @@ msgstr "Gerente"
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-#, python-format
 msgid ""
 "Materialized View requires PostgreSQL 9.3 or greater but PostgreSQL %s is "
 "currently installed."
@@ -156,6 +162,11 @@ msgstr "Vista previa de los resultados"
 #: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__query
 msgid "Query"
 msgstr "Consulta"
+
+#. module: sql_request_abstract
+#: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error en la entrega de SMS"
 
 #. module: sql_request_abstract
 #: model_terms:ir.ui.view,arch_db:sql_request_abstract.view_sql_request_mixin_form
@@ -222,7 +233,6 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-#, python-format
 msgid ""
 "The SQL query is not valid:\n"
 "\n"
@@ -235,7 +245,6 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-#, python-format
 msgid "The query is not allowed because it contains unsafe word '%s'"
 msgstr ""
 "La consulta no está permitida porque contiene la palabra no segura '%s'"
@@ -243,9 +252,13 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-#, python-format
 msgid "Unimplemented mode : '%s'"
 msgstr "Modo no implementado : '%s'"
+
+#. module: sql_request_abstract
+#: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__use_external_database
+msgid "Use External Database"
+msgstr ""
 
 #. module: sql_request_abstract
 #: model:res.groups,name:sql_request_abstract.group_sql_request_user
@@ -268,6 +281,14 @@ msgid "Website communication history"
 msgstr "Historial de la comunicación del sitio web"
 
 #. module: sql_request_abstract
+#. odoo-python
+#: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+msgid ""
+"You can't use an external database as there are no such configuration about "
+"this. Please contact your Odoo administrator to solve this issue."
+msgstr ""
+
+#. module: sql_request_abstract
 #: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__query
 msgid ""
 "You can't use the following words: DELETE, DROP, CREATE, INSERT, ALTER, "
@@ -275,9 +296,6 @@ msgid ""
 msgstr ""
 "No puedes usar las siguientes palabras BORRAR, ELIMINAR, CREAR, INSERTAR, "
 "ALTERAR, TRUNCAR, EJECUTAR, ACTUALIZAR."
-
-#~ msgid "SMS Delivery error"
-#~ msgstr "Error en la entrega de SMS"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Archivo adjunto principal"

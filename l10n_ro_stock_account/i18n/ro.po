@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-21 09:41+0000\n"
-"PO-Revision-Date: 2024-12-22 08:06+0000\n"
-"Last-Translator: Dorin Hongu <dhongu@gmail.com>\n"
+"PO-Revision-Date: 2024-06-12 08:56+0000\n"
+"Last-Translator: Larisa Cuciureanu <larisa.cuciureanu@nexterp.ro>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: l10n_ro_stock_account
 #: model:ir.model,name:l10n_ro_stock_account.model_account_account
@@ -82,7 +82,6 @@ msgstr "Cont cheltuieli"
 #. module: l10n_ro_stock_account
 #. odoo-python
 #: code:addons/l10n_ro_stock_account/models/product_category.py:0
-#, python-format
 msgid ""
 "For Romanian Stock Accounting the stock_input,\n"
 "                          stock_output and stock_valuation accounts must be\n"
@@ -166,11 +165,6 @@ msgid "Invoice"
 msgstr "Factură"
 
 #. module: l10n_ro_stock_account
-#: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_valuation_layer__l10n_ro_invoice_line_id
-msgid "Invoice Line"
-msgstr "Linie factură"
-
-#. module: l10n_ro_stock_account
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_account_account__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_account_move__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_account_move_line__is_l10n_ro_record
@@ -178,16 +172,10 @@ msgstr "Linie factură"
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_product_template__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_move__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_picking__is_l10n_ro_record
-#: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_picking_type__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_valuation_layer__is_l10n_ro_record
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_warehouse__is_l10n_ro_record
 msgid "Is Romanian Record"
 msgstr "Inregistrare românească"
-
-#. module: l10n_ro_stock_account
-#: model:ir.actions.act_window,name:l10n_ro_stock_account.l10n_ro_stock_account_move_action
-msgid "Journal Entries"
-msgstr "Înregistrări contabile"
 
 #. module: l10n_ro_stock_account
 #: model:ir.model,name:l10n_ro_stock_account.model_account_move
@@ -198,16 +186,6 @@ msgstr "Notă contabilă"
 #: model:ir.model,name:l10n_ro_stock_account.model_account_move_line
 msgid "Journal Item"
 msgstr "Element jurnal"
-
-#. module: l10n_ro_stock_account
-#: model_terms:ir.ui.view,arch_db:l10n_ro_stock_account.view_picking_add_price_unit_form
-msgid "Journal Items"
-msgstr "Elemente jurnal"
-
-#. module: l10n_ro_stock_account
-#: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_picking_type__l10n_ro_fiscal_position_id
-msgid "L10N Ro Fiscal Position"
-msgstr ""
 
 #. module: l10n_ro_stock_account
 #: model:ir.model.fields.selection,name:l10n_ro_stock_account.selection__stock_valuation_layer__l10n_ro_valued_type__minus_inventory
@@ -238,11 +216,6 @@ msgstr ""
 "deoarece sunt aceleași cu contul de evaluare a stocului"
 
 #. module: l10n_ro_stock_account
-#: model:ir.model,name:l10n_ro_stock_account.model_stock_picking_type
-msgid "Picking Type"
-msgstr ""
-
-#. module: l10n_ro_stock_account
 #: model:ir.model.fields.selection,name:l10n_ro_stock_account.selection__stock_valuation_layer__l10n_ro_valued_type__plus_inventory
 msgid "Plus inventory"
 msgstr "Plus inventar"
@@ -262,11 +235,6 @@ msgstr "Categorie produs"
 #: model:ir.model.fields.selection,name:l10n_ro_stock_account.selection__stock_valuation_layer__l10n_ro_valued_type__production
 msgid "Production"
 msgstr "Producție"
-
-#. module: l10n_ro_stock_account
-#: model:ir.actions.server,name:l10n_ro_stock_account.action_location_account_propagate
-msgid "Propagate Accounts"
-msgstr ""
 
 #. module: l10n_ro_stock_account
 #: model:ir.model.fields.selection,name:l10n_ro_stock_account.selection__stock_valuation_layer__l10n_ro_valued_type__reception
@@ -319,6 +287,11 @@ msgid "Romania - Stock Valuation Update"
 msgstr "Actualizare evaluare stoc"
 
 #. module: l10n_ro_stock_account
+#: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_valuation_layer__l10n_ro_invoice_line_id
+msgid "Romania Invoice Line"
+msgstr ""
+
+#. module: l10n_ro_stock_account
 #: model:ir.model.fields,field_description:l10n_ro_stock_account.field_stock_warehouse__l10n_ro_property_stock_journal_id
 msgid "Stock Journal"
 msgstr ""
@@ -357,12 +330,11 @@ msgstr ""
 #. module: l10n_ro_stock_account
 #: model:ir.model,name:l10n_ro_stock_account.model_stock_picking
 msgid "Transfer"
-msgstr "Transfer"
+msgstr ""
 
 #. module: l10n_ro_stock_account
 #. odoo-python
 #: code:addons/l10n_ro_stock_account/models/stock_move.py:0
-#, python-format
 msgid "Transfer between locations with different journals is not allowed!"
 msgstr ""
 
@@ -390,3 +362,12 @@ msgstr "Tip evaluat"
 #: model:ir.model,name:l10n_ro_stock_account.model_stock_warehouse
 msgid "Warehouse"
 msgstr ""
+
+#~ msgid "Invoice Line"
+#~ msgstr "Linie factură"
+
+#~ msgid "Journal Entries"
+#~ msgstr "Înregistrări contabile"
+
+#~ msgid "Journal Items"
+#~ msgstr "Elemente jurnal"

@@ -1,4 +1,0 @@
-- Jacques-Etienne Baudoux - BCIM <je@bcim.be>
-- Souheil Bejaoui - ACSONE SA/NV <souheil.bejaoui@acsone.eu>
-- [APSL-Nagarro](<https://apsl.tech>):
-  - Antoni Marroig <amarroig@apsl.net>

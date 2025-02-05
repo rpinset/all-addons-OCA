@@ -8,7 +8,6 @@
                 <header>
                     <field name="is_button" invisible="1" />
                     <field name="team_id" invisible="1" />
-                    <field name="is_closed" invisible="1" />
                     <button
                         id="action_complete"
                         name="action_complete"
@@ -29,7 +28,7 @@
                     <field
                         name="stage_id"
                         widget="statusbar"
-                        options="{'fold_field': 'fold'}"
+                        options="{'fold_field': 'fold', 'clickable': True}"
                         domain="[('stage_type', '=', 'order'), '|', ('team_ids', 'in', team_id), ('team_ids', '=', False)]"
                     />
                 </header>
@@ -86,11 +85,6 @@
                                 options="{'no_create': True}"
                                 groups="base.group_multi_company"
                             />
-                            <field
-                                name="company_id"
-                                invisible="1"
-                                groups="!base.group_multi_company"
-                            />
                         </group>
                     </group>
                     <group string="Description" name="description_grp">
@@ -136,7 +130,7 @@
                                     colspan="2"
                                     context="{'search_default_location_ids': location_id}"
                                 >
-                                    <tree>
+                                    <list>
                                         <field name="name" />
                                         <field name="phone" />
                                         <field name="email" />
@@ -147,7 +141,7 @@
                                             groups="fieldservice.group_fsm_category"
                                         />
                                         <field name="calendar_id" />
-                                    </tree>
+                                    </list>
                                 </field>
                             </group>
                         </page>
@@ -194,52 +188,39 @@
                                 options="{'no_create': True}"
                                 domain="[('current_location_id','=',location_id)]"
                             >
-                                <tree>
+                                <list>
                                     <field name="name" />
                                     <field name="person_id" />
                                     <field name="location_id" />
                                     <field name="current_location_id" />
                                     <field name="stage_id" />
-                                </tree>
+                                </list>
                             </field>
                         </page>
                     </notebook>
                 </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers" />
-                    <field name="activity_ids" widget="mail_activity" />
-                    <field
-                        name="message_ids"
-                        widget="mail_thread"
-                        options="{'post_refresh': 'recipients'}"
-                    />
-                </div>
+                <chatter />
             </form>
         </field>
     </record>
-    <record id="fsm_order_tree_view" model="ir.ui.view">
-        <field name="name">fsm.order.tree</field>
+    <record id="fsm_order_list_view" model="ir.ui.view">
+        <field name="name">fsm.order.list</field>
         <field name="model">fsm.order</field>
         <field name="arch" type="xml">
-            <tree name="orders" default_order="scheduled_date_start">
+            <list name="orders" default_order="scheduled_date_start">
                 <field name="scheduled_date_start" />
                 <field name="name" />
                 <field name="location_id" />
                 <field name="person_id" />
                 <field name="stage_id" string="Stage" />
                 <field name="company_id" groups="base.group_multi_company" />
-                <field
-                    name="company_id"
-                    column_invisible="1"
-                    groups="!base.group_multi_company"
-                />
-            </tree>
+            </list>
         </field>
     </record>
     <record id="action_fsm_operation_order" model="ir.actions.act_window">
         <field name="name">Orders</field>
         <field name="res_model">fsm.order</field>
-        <field name="view_mode">tree,form,calendar</field>
+        <field name="view_mode">list,form,calendar</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create an Order.
@@ -282,7 +263,7 @@
                             </div>
                         </div>
                     </t>
-                    <t t-name="kanban-box">
+                    <t t-name="card">
                         <div
                             t-attf-class="#{kanban_color(record.color.raw_value)} oe_kanban_global_click"
                             name="fsm_equipment"
@@ -341,7 +322,7 @@
                 <separator />
                 <field
                     name="name"
-                    filter_domain="[('name', 'ilike', self)]"
+                    filter_domain="['|', ('name', 'ilike', self), ('name', '=like', str(self) + '%')]"
                     string="FSM Order Name"
                 />
                 <field name="location_id" />
@@ -473,7 +454,7 @@
     <record id="action_fsm_dash_order" model="ir.actions.act_window">
         <field name="name">Orders</field>
         <field name="res_model">fsm.order</field>
-        <field name="view_mode">kanban,tree,form,calendar</field>
+        <field name="view_mode">kanban,list,form,calendar</field>
         <field name="search_view_id" ref="fsm_order_search_view" />
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">

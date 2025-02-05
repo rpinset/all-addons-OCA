@@ -1,17 +1,17 @@
 
 # From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-analytic&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-analytic/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-analytic/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-analytic/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-analytic)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-analytic-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-analytic-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-analytic&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-analytic/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-analytic/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-analytic/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-analytic/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-analytic)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-analytic-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-analytic-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-analytic
 
-TODO: add repo description.
+account-analytic
 
 <!-- /!\ do not modify below this line -->
 
@@ -23,19 +23,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_analytic_parent](account_analytic_parent/) | 17.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
-[account_analytic_required](account_analytic_required/) | 17.0.1.0.0 |  | Account Analytic Required
-[account_analytic_sequence](account_analytic_sequence/) | 17.0.1.0.0 |  | Restore the analytic account sequence
-[account_analytic_spread_by_tag](account_analytic_spread_by_tag/) | 17.0.1.0.1 |  | Account Analytic Spread by Tag
-[account_analytic_tag](account_analytic_tag/) | 17.0.1.1.1 |  | Account Analytic Tag
-[analytic_base_department](analytic_base_department/) | 17.0.1.0.0 |  | Add relationship between Analytic and Department
-[analytic_partner](analytic_partner/) | 17.0.1.0.0 |  | Search and group analytic entries by partner
-[hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
-[mrp_stock_analytic](mrp_stock_analytic/) | 17.0.1.0.0 |  | MRP Stock Analytic
-[pos_analytic_by_config](pos_analytic_by_config/) | 17.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
-[purchase_analytic](purchase_analytic/) | 17.0.1.0.0 |  | Purchase Analytic
-[stock_analytic](stock_analytic/) | 17.0.1.2.0 |  | Adds analytic distribution in stock move
-[stock_picking_analytic](stock_picking_analytic/) | 17.0.1.0.0 |  | Allows to define the analytic account on picking level
+[account_analytic_parent](account_analytic_parent/) | 18.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
+[account_analytic_tag](account_analytic_tag/) | 18.0.1.1.0 |  | Account Analytic Tag
+[analytic_base_department](analytic_base_department/) | 18.0.1.0.0 |  | Add relationship between Analytic and Department
+[hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
+[pos_analytic_by_config](pos_analytic_by_config/) | 18.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
+[purchase_analytic](purchase_analytic/) | 18.0.1.0.0 |  | Purchase Analytic
+[stock_analytic](stock_analytic/) | 18.0.1.0.0 |  | Adds analytic distribution in stock move
 
 [//]: # (end addons)
 
@@ -59,17 +53,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-budgeting.git](https://github.com/OCA/account-budgeting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-budgeting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-budgeting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-budgeting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-budgeting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-budgeting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-budgeting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-budgeting)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-budgeting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-budgeting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-budgeting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-budgeting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-budgeting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-budgeting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-budgeting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-budgeting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-budgeting)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-budgeting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-budgeting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-budgeting
 
-{'TODO': 'add repo description.'}
+account-budgeting
 
 <!-- /!\ do not modify below this line -->
 
@@ -101,17 +95,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-closing&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-closing/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-closing/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-closing/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-closing)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-closing-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-closing-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-closing&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-closing/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-closing/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-closing/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-closing/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-closing)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-closing-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-closing-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-closing
 
-Odoo Accountant closing tools
+account-closing
 
 <!-- /!\ do not modify below this line -->
 
@@ -123,11 +117,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_cutoff_accrual_subscription](account_cutoff_accrual_subscription/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued expenses based on subscriptions
-[account_cutoff_base](account_cutoff_base/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Account Cut-offs
-[account_cutoff_picking](account_cutoff_picking/) | 17.0.1.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued and prepaid expense/revenue from pickings
-[account_cutoff_start_end_dates](account_cutoff_start_end_dates/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Cutoffs based on start/end dates
-[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 17.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
+[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 
 [//]: # (end addons)
 
@@ -151,17 +141,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-consolidation.git](https://github.com/OCA/account-consolidation.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-consolidation&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-consolidation/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-consolidation/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-consolidation/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-consolidation/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-consolidation/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-consolidation)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-consolidation-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-consolidation-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-consolidation&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-consolidation/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-consolidation/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-consolidation/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-consolidation/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-consolidation/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-consolidation)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-consolidation-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-consolidation-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-consolidation
 
-TODO: add repo description.
+account-consolidation
 
 <!-- /!\ do not modify below this line -->
 
@@ -193,17 +183,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-tools&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-financial-tools/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-financial-tools)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-financial-tools-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-tools-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-tools&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-financial-tools/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-financial-tools/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-financial-tools/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-financial-tools)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-financial-tools-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-tools-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-financial-tools
 
-TODO: add repo description.
+account-financial-tools
 
 <!-- /!\ do not modify below this line -->
 
@@ -215,30 +205,14 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_account_tag_code](account_account_tag_code/) | 17.0.1.0.0 |  | Add a code field to the accounts tags
-[account_asset_force_account](account_asset_force_account/) | 17.0.1.0.0 | [![BernatObrador](https://github.com/BernatObrador.png?size=30px)](https://github.com/BernatObrador) | This module allows you to enforce specific accounts for assets, including depreciation and expense accounts, through asset profiles and forms.
-[account_asset_management](account_asset_management/) | 17.0.1.0.2 |  | Assets Management
-[account_check_deposit](account_check_deposit/) | 17.0.1.0.0 |  | Manage deposit of checks to the bank
-[account_fiscal_year](account_fiscal_year/) | 17.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create Account Fiscal Year
-[account_journal_lock_date](account_journal_lock_date/) | 17.0.1.0.0 |  | Lock each journal independently
-[account_journal_restrict_mode](account_journal_restrict_mode/) | 17.0.1.0.0 |  | Lock All Posted Entries of Journals.
-[account_loan](account_loan/) | 17.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Account Loan management
-[account_lock_date_update](account_lock_date_update/) | 17.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
-[account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
-[account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
-[account_move_line_sale_info](account_move_line_sale_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
-[account_move_line_tax_editable](account_move_line_tax_editable/) | 17.0.1.0.0 |  | Allows to edit taxes on non-posted account move lines
-[account_move_name_sequence](account_move_name_sequence/) | 17.0.1.0.5 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
-[account_move_post_date_user](account_move_post_date_user/) | 17.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
-[account_move_print](account_move_print/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds the option to print Journal Entries
-[account_move_template](account_move_template/) | 17.0.1.0.1 |  | Templates for recurring Journal Entries
-[account_netting](account_netting/) | 17.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
-[account_partner_required](account_partner_required/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds an option 'partner policy' on accounts
-[account_spread_cost_revenue](account_spread_cost_revenue/) | 17.0.1.0.0 |  | Spread costs and revenues over a custom period
-[account_tax_repartition_line_tax_group_account](account_tax_repartition_line_tax_group_account/) | 17.0.1.0.0 |  | Set a default account from tax group to tax repartition lines
-[account_usability](account_usability/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
-[mail_template_substitute_account_move](mail_template_substitute_account_move/) | 17.0.1.0.0 | [![SodexisTeam](https://github.com/SodexisTeam.png?size=30px)](https://github.com/SodexisTeam) | Module to support Mail Template Substitution for Account Move
-[purchase_unreconciled](purchase_unreconciled/) | 17.0.1.0.0 | [![AaronHForgeFlow](https://github.com/AaronHForgeFlow.png?size=30px)](https://github.com/AaronHForgeFlow) | Purchase Unreconciled
+[account_cash_deposit](account_cash_deposit/) | 18.0.1.0.0 |  | Manage cash deposits and cash orders
+[account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 18.0.1.0.0 |  | Check VAT on invoice validation
+[account_fiscal_year](account_fiscal_year/) | 18.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create Account Fiscal Year
+[account_journal_restrict_mode](account_journal_restrict_mode/) | 18.0.1.0.0 |  | Lock All Posted Entries of Journals.
+[account_lock_date_update](account_lock_date_update/) | 18.0.1.0.0 |  | Allow an Account adviser to update locking date without having access to all technical settings
+[account_move_name_sequence](account_move_name_sequence/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
+[account_move_post_date_user](account_move_post_date_user/) | 18.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
+[account_usability](account_usability/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 
 [//]: # (end addons)
 
@@ -262,17 +236,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-financial-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-financial-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-financial-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-financial-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-financial-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-financial-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-financial-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-financial-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-financial-reporting
 
-TODO: add repo description.
+account-financial-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -284,11 +258,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.6.2 |  | OCA Financial Reports
-[account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
-[mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
-[mis_template_financial_report](mis_template_financial_report/) | 17.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 17.0.1.0.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.0.2 |  | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -312,17 +282,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoice-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-invoice-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-invoice-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-invoice-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoice-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoice-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-invoice-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-invoice-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-invoice-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-invoice-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoice-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-invoice-reporting
 
-TODO: add repo description.
+account-invoice-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -330,15 +300,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_comment_template](account_comment_template/) | 17.0.1.0.0 |  | Comments templates on invoice documents
-[account_invoice_bank_details](account_invoice_bank_details/) | 17.0.1.0.1 |  | Select bank account base on currency + print bank details on reportreports and customer portal
-[account_invoice_line_report](account_invoice_line_report/) | 17.0.1.0.0 |  | New view to manage invoice lines information
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.3 |  | Print invoice lines grouped by picking
-[partner_time_to_pay](partner_time_to_pay/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Add receivables and payables statistics to partners
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -362,17 +324,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoicing&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-invoicing/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-invoicing/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-invoicing/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-invoicing)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-invoicing-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoicing-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-invoicing&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-invoicing/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-invoicing/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-invoicing/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-invoicing/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-invoicing)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-invoicing-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-invoicing-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-invoicing
 
-TODO: add repo description.
+account-invoicing
 
 <!-- /!\ do not modify below this line -->
 
@@ -384,23 +346,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_block_payment](account_invoice_block_payment/) | 17.0.1.0.0 |  | Module to block payment of invoices
-[account_invoice_blocking](account_invoice_blocking/) | 17.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
-[account_invoice_crm_tag](account_invoice_crm_tag/) | 17.0.1.0.0 |  | Account Invoice CRM Tag
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 17.0.1.1.0 |  | Allows to apply fixed amount discounts in invoices.
-[account_invoice_pricelist](account_invoice_pricelist/) | 17.0.1.0.1 |  | Add partner pricelist on invoices
-[account_invoice_refund_link](account_invoice_refund_link/) | 17.0.1.0.1 |  | Show links between refunds and their originator invoices.
-[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 17.0.2.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
-[account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
-[account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
-[account_manual_currency](account_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Accounting
-[account_move_tier_validation](account_move_tier_validation/) | 17.0.1.0.1 |  | Extends the functionality of Account Moves to support a tier validation process.
-[partner_invoicing_mode](partner_invoicing_mode/) | 17.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
-[portal_account_personal_data_only](portal_account_personal_data_only/) | 17.0.1.0.0 |  | Portal Accounting Personal Data Only
-[product_form_account_move_line_link](product_form_account_move_line_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Journal Items
-[sale_invoicing_date_selection](sale_invoicing_date_selection/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
-[sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
-[sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
+[account_invoice_refund_link](account_invoice_refund_link/) | 18.0.1.0.0 |  | Show links between refunds and their originator invoices.
 
 [//]: # (end addons)
 
@@ -424,17 +370,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-fiscal-rule/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-fiscal-rule)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-fiscal-rule&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-fiscal-rule/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-fiscal-rule/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-fiscal-rule)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-fiscal-rule-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-fiscal-rule-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-fiscal-rule
 
-Odoo Accounting Taxe and Fiscal Features
+account-fiscal-rule
 
 <!-- /!\ do not modify below this line -->
 
@@ -446,12 +392,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_avatax_oca](account_avatax_oca/) | 17.0.1.3.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
-[account_avatax_sale_oca](account_avatax_sale_oca/) | 17.0.1.1.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
-[account_avatax_website_sale](account_avatax_website_sale/) | 17.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
-[account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
-[account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 17.0.1.0.0 |  | Account Fiscal Position Partner Type
-[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.0.0 |  | L10n EU OSS OCA
+[account_avatax_oca](account_avatax_oca/) | 18.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
 
 [//]: # (end addons)
 
@@ -475,17 +416,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/operating-unit&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/operating-unit/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/operating-unit/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/operating-unit/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/operating-unit)
-[![Translation Status](https://translation.odoo-community.org/widgets/operating-unit-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/operating-unit-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/operating-unit&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/operating-unit/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/operating-unit/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/operating-unit/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/operating-unit)
+[![Translation Status](https://translation.odoo-community.org/widgets/operating-unit-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/operating-unit-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # operating-unit
 
-TODO: add repo description.
+operating-unit
 
 <!-- /!\ do not modify below this line -->
 
@@ -497,29 +438,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report_operating_unit](account_financial_report_operating_unit/) | 17.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 17.0.1.0.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
-[account_operating_unit_access_all](account_operating_unit_access_all/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Accounting
-[analytic_operating_unit](analytic_operating_unit/) | 17.0.1.0.0 |  | Analytic Operating Unit
-[analytic_operating_unit_access_all](analytic_operating_unit_access_all/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Analytics
-[contract_operating_unit](contract_operating_unit/) | 17.0.1.0.0 |  | Contract Operating Unit
-[contract_operating_unit_access_all](contract_operating_unit_access_all/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Contracts
-[crm_operating_unit](crm_operating_unit/) | 17.0.1.0.0 |  | Operating Unit in CRM
-[hr_operating_unit](hr_operating_unit/) | 17.0.1.0.0 |  | HR Operating Unit
-[mail_operating_unit](mail_operating_unit/) | 17.0.1.0.0 |  | Mail Operating Unit
-[operating_unit](operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
-[operating_unit_access_all](operating_unit_access_all/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all Operating Units
-[pos_operating_unit](pos_operating_unit/) | 17.0.1.0.0 |  | POS with Operating Units
-[product_operating_unit](product_operating_unit/) | 17.0.1.0.0 |  | Adds the concept of operating unit (OU) in products
-[project_operating_unit](project_operating_unit/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module adds operating unit information to projects and tasks.
-[purchase_operating_unit](purchase_operating_unit/) | 17.0.1.0.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
-[report_qweb_operating_unit](report_qweb_operating_unit/) | 17.0.1.0.0 |  | Qweb Report With Operating Unit
-[res_partner_operating_unit](res_partner_operating_unit/) | 17.0.1.1.0 |  | Introduces Operating Unit fields in Partner
-[sale_operating_unit](sale_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
-[sale_stock_operating_unit](sale_stock_operating_unit/) | 17.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
-[sales_team_operating_unit](sales_team_operating_unit/) | 17.0.1.0.0 |  | Sales Team Operating Unit
-[stock_operating_unit](stock_operating_unit/) | 17.0.1.0.0 |  | Adds the concept of operating unit (OU) in stock management
-[stock_operating_unit_access_all](stock_operating_unit_access_all/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Stock
+[operating_unit](operating_unit/) | 18.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 
 [//]: # (end addons)
 
@@ -543,17 +462,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/intrastat-extrastat&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/intrastat-extrastat/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/intrastat-extrastat)
-[![Translation Status](https://translation.odoo-community.org/widgets/intrastat-extrastat-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/intrastat-extrastat-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/intrastat-extrastat&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/intrastat-extrastat/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/intrastat-extrastat/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/intrastat-extrastat)
+[![Translation Status](https://translation.odoo-community.org/widgets/intrastat-extrastat-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/intrastat-extrastat-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # intrastat-extrastat
 
-TODO: add repo description.
+intrastat-extrastat
 
 <!-- /!\ do not modify below this line -->
 
@@ -565,13 +484,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[intrastat_base](intrastat_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.2.0 |  | Base module for Intrastat Product
-[intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
-[intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
-[product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
-[product_harmonized_system_delivery](product_harmonized_system_delivery/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Hide native hs_code field provided by the delivery module
-[product_harmonized_system_stock](product_harmonized_system_stock/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Adds a menu entry for H.S. codes
+[intrastat_base](intrastat_base/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
+[product_harmonized_system](product_harmonized_system/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
+[product_harmonized_system_delivery](product_harmonized_system_delivery/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Hide native hs_code field provided by the delivery module
+[product_harmonized_system_stock](product_harmonized_system_stock/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Adds a menu entry for H.S. codes
 
 [//]: # (end addons)
 
@@ -595,11 +511,11 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/mis-builder/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/mis-builder/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/mis-builder/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/mis-builder)
-[![Translation Status](https://translation.odoo-community.org/widgets/mis-builder-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mis-builder-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/mis-builder&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/mis-builder/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/mis-builder/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/mis-builder/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/mis-builder/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/mis-builder)
+[![Translation Status](https://translation.odoo-community.org/widgets/mis-builder-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/mis-builder-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
@@ -642,13 +558,13 @@ Here are some presentations:
 
 [//]: # (addons)
 
-Available addons
-----------------
+Unported addons
+---------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 17.0.1.2.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
-[mis_builder_budget](mis_builder_budget/) | 17.0.1.4.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
-[mis_builder_demo](mis_builder_demo/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
+[mis_builder](mis_builder/) | 17.0.1.0.1 (unported) | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
+[mis_builder_budget](mis_builder_budget/) | 17.0.1.2.0 (unported) | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
+[mis_builder_demo](mis_builder_demo/) | 17.0.1.0.0 (unported) | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
 
 [//]: # (end addons)
 
@@ -672,17 +588,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/currency&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/currency/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/currency/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/currency/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/currency/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/currency/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/currency)
-[![Translation Status](https://translation.odoo-community.org/widgets/currency-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/currency-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/currency&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/currency/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/currency/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/currency/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/currency/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/currency/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/currency)
+[![Translation Status](https://translation.odoo-community.org/widgets/currency-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/currency-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # currency
 
-TODO: add repo description.
+currency
 
 <!-- /!\ do not modify below this line -->
 
@@ -690,12 +606,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[currency_rate_update](currency_rate_update/) | 17.0.1.0.1 |  | Update exchange rates using OCA modules
-[currency_rate_update_xe](currency_rate_update_xe/) | 17.0.1.0.0 |  | Update exchange rates using XE.com
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -719,17 +630,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/credit-control&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/credit-control/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/credit-control/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/credit-control/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/credit-control)
-[![Translation Status](https://translation.odoo-community.org/widgets/credit-control-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/credit-control-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/credit-control&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/credit-control/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/credit-control/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/credit-control/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/credit-control/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/credit-control)
+[![Translation Status](https://translation.odoo-community.org/widgets/credit-control-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/credit-control-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # credit-control
 
-TODO: add repo description.
+credit-control
 
 <!-- /!\ do not modify below this line -->
 
@@ -737,17 +648,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_credit_control](account_credit_control/) | 17.0.1.0.0 |  | Account Credit Control
-[account_financial_risk](account_financial_risk/) | 17.0.1.1.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
-[account_invoice_overdue_warn](account_invoice_overdue_warn/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
-[account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
-[account_payment_return_financial_risk](account_payment_return_financial_risk/) | 17.0.1.0.0 |  | Partner Payment Return Risk
-[partner_risk_insurance](partner_risk_insurance/) | 17.0.1.0.0 | [![Daniel-CA](https://github.com/Daniel-CA.png?size=30px)](https://github.com/Daniel-CA) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![omar7r](https://github.com/omar7r.png?size=30px)](https://github.com/omar7r) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Risk insurance partner information
-[sale_financial_risk](sale_financial_risk/) | 17.0.1.0.0 |  | Manage partner risk in sales orders
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -771,17 +672,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/data-protection&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/data-protection/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/data-protection/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/data-protection/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/data-protection/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/data-protection/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/data-protection)
-[![Translation Status](https://translation.odoo-community.org/widgets/data-protection-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/data-protection-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/data-protection&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/data-protection/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/data-protection/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/data-protection/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/data-protection/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/data-protection/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/data-protection)
+[![Translation Status](https://translation.odoo-community.org/widgets/data-protection-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/data-protection-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # data-protection
 
-TODO: add repo description.
+data-protection
 
 <!-- /!\ do not modify below this line -->
 
@@ -813,17 +714,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-payment&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/bank-payment/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/bank-payment/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/bank-payment/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/bank-payment)
-[![Translation Status](https://translation.odoo-community.org/widgets/bank-payment-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-payment-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-payment&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/bank-payment/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/bank-payment/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/bank-payment/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/bank-payment/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/bank-payment)
+[![Translation Status](https://translation.odoo-community.org/widgets/bank-payment-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-payment-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # bank-payment
 
-TODO: add repo description.
+bank-payment
 
 <!-- /!\ do not modify below this line -->
 
@@ -831,27 +732,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 17.0.1.0.3 |  | Banking mandates
-[account_banking_mandate_contact](account_banking_mandate_contact/) | 17.0.1.0.2 |  | Assign specific banking mandates in contact level
-[account_banking_mandate_sale](account_banking_mandate_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
-[account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Add a specific contact mandate to sale orders
-[account_banking_pain_base](account_banking_pain_base/) | 17.0.1.0.0 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 17.0.1.0.3 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 17.0.1.3.0 |  | Create SEPA files for Direct Debit
-[account_payment_mode](account_payment_mode/) | 17.0.1.0.2 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 17.0.1.7.0 |  | Account Payment Order
-[account_payment_order_grouped_output](account_payment_order_grouped_output/) | 17.0.1.0.0 |  | Account Payment Order - Generate grouped moves
-[account_payment_order_notification](account_payment_order_notification/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
-[account_payment_partner](account_payment_partner/) | 17.0.1.0.6 |  | Adds payment mode on partners and invoices
-[account_payment_purchase](account_payment_purchase/) | 17.0.1.2.2 |  | Adds Bank Account and Payment Mode on Purchase Orders
-[account_payment_purchase_stock](account_payment_purchase_stock/) | 17.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 17.0.1.0.3 |  | Adds payment mode on sale orders
-[account_vendor_bank_account_default](account_vendor_bank_account_default/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Set a default bank account on partners for their vendor bills
-[account_vendor_bank_account_default_purchase](account_vendor_bank_account_default_purchase/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Set a default bank account purchase orders
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -875,17 +756,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-reconcile&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-reconcile/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-reconcile/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-reconcile/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-reconcile)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-reconcile-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-reconcile-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-reconcile&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-reconcile/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-reconcile/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-reconcile/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-reconcile/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-reconcile)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-reconcile-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-reconcile-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-reconcile
 
-TODO: add repo description.
+account-reconcile
 
 <!-- /!\ do not modify below this line -->
 
@@ -897,11 +778,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_in_payment](account_in_payment/) | 17.0.1.0.0 |  | This module enables in-payment mode for your accounting
-[account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
-[account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.2 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
-[account_statement_base](account_statement_base/) | 17.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
+[account_statement_base](account_statement_base/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
 
@@ -925,17 +802,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-statement-import&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/bank-statement-import/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/bank-statement-import)
-[![Translation Status](https://translation.odoo-community.org/widgets/bank-statement-import-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-statement-import-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/bank-statement-import&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/bank-statement-import/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/bank-statement-import/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/bank-statement-import/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/bank-statement-import)
+[![Translation Status](https://translation.odoo-community.org/widgets/bank-statement-import-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/bank-statement-import-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# OCA bank statement import modules for Odoo
+# bank-statement-import
 
-This repository hosts additionnal parsers and import features for bank statements.
+bank-statement-import
 
 <!-- /!\ do not modify below this line -->
 
@@ -947,16 +824,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_statement_import_base](account_statement_import_base/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statement Import
-[account_statement_import_camt](account_statement_import_camt/) | 17.0.1.0.0 |  | CAMT Format Bank Statements Import
-[account_statement_import_file](account_statement_import_file/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
-[account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files and Go Direct to Reconciliation
-[account_statement_import_move_line](account_statement_import_move_line/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
-[account_statement_import_ofx](account_statement_import_ofx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import OFX Bank Statement
-[account_statement_import_online](account_statement_import_online/) | 17.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
-[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.0 |  | Online Bank Statements: GoCardless
-[account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
-[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 17.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_statement_import_base](account_statement_import_base/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statement Import
+[account_statement_import_file](account_statement_import_file/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
+[account_statement_import_ofx](account_statement_import_ofx/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import OFX Bank Statement
 
 [//]: # (end addons)
 
@@ -980,17 +850,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-payment&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/account-payment/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/account-payment/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/account-payment/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-payment)
-[![Translation Status](https://translation.odoo-community.org/widgets/account-payment-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-payment-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/account-payment&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-payment/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/account-payment/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/account-payment/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/account-payment/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/account-payment)
+[![Translation Status](https://translation.odoo-community.org/widgets/account-payment-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/account-payment-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # account-payment
 
-TODO: add repo description.
+account-payment
 
 <!-- /!\ do not modify below this line -->
 
@@ -1002,13 +872,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
-[account_due_list_payment_mode](account_due_list_payment_mode/) | 17.0.1.0.0 |  | Payment Due List Payment Mode
-[account_payment_return](account_payment_return/) | 17.0.1.2.0 |  | Manage the return of your payments
-[account_payment_return_import](account_payment_return_import/) | 17.0.1.0.0 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
-[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 17.0.1.0.0 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
-[account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
-[partner_aging](partner_aging/) | 17.0.1.0.0 | [![Urvisha-OSI](https://github.com/Urvisha-OSI.png?size=30px)](https://github.com/Urvisha-OSI) | Aging as a view - invoices and credits
+[account_payment_promissory_note](account_payment_promissory_note/) | 18.0.1.0.0 |  | Account Payment Promissory Note
 
 [//]: # (end addons)
 
@@ -1032,17 +896,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector
 
-TODO: add repo description.
+connector
 
 <!-- /!\ do not modify below this line -->
 
@@ -1054,12 +918,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[component](component/) | 17.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
-[component_event](component_event/) | 17.0.1.0.0 |  | Components Events
-[connector](connector/) | 17.0.1.0.1 |  | Connector
-[connector_base_product](connector_base_product/) | 17.0.1.0.0 |  | Connector Base Product
-[test_component](test_component/) | 17.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
-[test_connector](test_connector/) | 17.0.1.0.0 |  | Automated tests for Connector, do not install.
+[component](component/) | 18.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
+[component_event](component_event/) | 18.0.1.0.0 |  | Components Events
+[connector](connector/) | 18.0.1.0.0 |  | Connector
+[connector_base_product](connector_base_product/) | 18.0.1.0.0 |  | Connector Base Product
+[test_component](test_component/) | 18.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
+[test_connector](test_connector/) | 18.0.1.0.0 |  | Automated tests for Connector, do not install.
 
 [//]: # (end addons)
 
@@ -1083,17 +947,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-ecommerce.git](https://github.com/OCA/connector-ecommerce.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-ecommerce&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-ecommerce/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-ecommerce/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-ecommerce/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-ecommerce/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-ecommerce/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-ecommerce)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-ecommerce-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-ecommerce-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-ecommerce&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-ecommerce/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-ecommerce/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-ecommerce/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-ecommerce/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-ecommerce/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-ecommerce)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-ecommerce-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-ecommerce-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-ecommerce
 
-TODO: add repo description.
+connector-ecommerce
 
 <!-- /!\ do not modify below this line -->
 
@@ -1125,17 +989,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/queue&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/queue/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/queue/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/queue/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/queue/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/queue/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/queue)
-[![Translation Status](https://translation.odoo-community.org/widgets/queue-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/queue-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/queue&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/queue/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/queue/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/queue/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/queue/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/queue/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/queue)
+[![Translation Status](https://translation.odoo-community.org/widgets/queue-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/queue-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Queue Job
+# queue
 
-Asynchronous Job Queue. Delay Model methods in asynchronous jobs, executed in the background as soon as possible or on a schedule. Support Channels to segregates jobs in different queues with different capacities. Unlike scheduled tasks, a job captures arguments for later processing.
+queue
 
 <!-- /!\ do not modify below this line -->
 
@@ -1147,11 +1011,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queue_job](queue_job/) | 17.0.1.1.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
-[queue_job_cron](queue_job_cron/) | 17.0.1.0.0 |  | Scheduled Actions as Queue Jobs
-[queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
-[queue_job_subscribe](queue_job_subscribe/) | 17.0.1.0.0 |  | Control which users are subscribed to queue job notifications
-[test_queue_job](test_queue_job/) | 17.0.1.0.1 |  | Queue Job Tests
+[queue_job](queue_job/) | 18.0.1.2.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job_cron](queue_job_cron/) | 18.0.1.1.0 |  | Scheduled Actions as Queue Jobs
+[queue_job_subscribe](queue_job_subscribe/) | 18.0.1.0.0 |  | Control which users are subscribed to queue job notifications
+[test_queue_job](test_queue_job/) | 18.0.1.0.0 |  | Queue Job Tests
 
 [//]: # (end addons)
 
@@ -1175,17 +1038,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-accountedge.git](https://github.com/OCA/connector-accountedge.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-accountedge&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-accountedge/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-accountedge/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-accountedge/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-accountedge/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-accountedge/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-accountedge)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-accountedge-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-accountedge-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-accountedge&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-accountedge/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-accountedge/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-accountedge/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-accountedge/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-accountedge/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-accountedge)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-accountedge-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-accountedge-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-accountedge
 
-TODO: add repo description.
+connector-accountedge
 
 <!-- /!\ do not modify below this line -->
 
@@ -1217,17 +1080,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-cmis.git](https://github.com/OCA/connector-cmis.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-cmis&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-cmis/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-cmis/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-cmis/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-cmis/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-cmis/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-cmis)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-cmis-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-cmis-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-cmis&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-cmis/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-cmis/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-cmis/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-cmis/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-cmis/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-cmis)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-cmis-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-cmis-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-cmis
 
-TODO: add repo description.
+connector-cmis
 
 <!-- /!\ do not modify below this line -->
 
@@ -1259,17 +1122,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-infor.git](https://github.com/OCA/connector-infor.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-infor&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-infor/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-infor/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-infor/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-infor/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-infor/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-infor)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-infor-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-infor-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-infor&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-infor/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-infor/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-infor/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-infor/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-infor/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-infor)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-infor-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-infor-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-infor
 
-TODO: add repo description.
+connector-infor
 
 <!-- /!\ do not modify below this line -->
 
@@ -1301,17 +1164,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-lengow.git](https://github.com/OCA/connector-lengow.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-lengow&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-lengow/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-lengow/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-lengow/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-lengow/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-lengow/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-lengow)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-lengow-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-lengow-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-lengow&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-lengow/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-lengow/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-lengow/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-lengow/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-lengow/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-lengow)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-lengow-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-lengow-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-lengow
 
-TODO: add repo description.
+connector-lengow
 
 <!-- /!\ do not modify below this line -->
 
@@ -1343,17 +1206,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-lims.git](https://github.com/OCA/connector-lims.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-lims&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-lims/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-lims/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-lims/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-lims/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-lims/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-lims)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-lims-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-lims-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-lims&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-lims/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-lims/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-lims/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-lims/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-lims/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-lims)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-lims-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-lims-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-lims
 
-TODO: add repo description.
+connector-lims
 
 <!-- /!\ do not modify below this line -->
 
@@ -1385,17 +1248,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-magento.git](https://github.com/OCA/connector-magento.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-magento&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-magento/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-magento/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-magento/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-magento/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-magento/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-magento)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-magento-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-magento-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-magento&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-magento/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-magento/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-magento/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-magento/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-magento/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-magento)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-magento-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-magento-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-magento
 
-TODO: add repo description.
+connector-magento
 
 <!-- /!\ do not modify below this line -->
 
@@ -1427,17 +1290,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-prestashop.git](https://github.com/OCA/connector-prestashop.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-prestashop&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-prestashop/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-prestashop/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-prestashop/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-prestashop/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-prestashop/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-prestashop)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-prestashop-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-prestashop-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-prestashop&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-prestashop/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-prestashop/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-prestashop/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-prestashop/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-prestashop/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-prestashop)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-prestashop-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-prestashop-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-prestashop
 
-TODO: add repo description.
+connector-prestashop
 
 <!-- /!\ do not modify below this line -->
 
@@ -1469,17 +1332,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-sage.git](https://github.com/OCA/connector-sage.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-sage&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-sage/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-sage/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-sage/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-sage/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-sage/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-sage)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-sage-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-sage-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-sage&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-sage/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-sage/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-sage/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-sage/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-sage/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-sage)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-sage-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-sage-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-sage
 
-TODO: add repo description.
+connector-sage
 
 <!-- /!\ do not modify below this line -->
 
@@ -1511,17 +1374,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-salesforce.git](https://github.com/OCA/connector-salesforce.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-salesforce&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-salesforce/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-salesforce/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-salesforce/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-salesforce/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-salesforce/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-salesforce)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-salesforce-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-salesforce-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-salesforce&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-salesforce/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-salesforce/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-salesforce/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-salesforce/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-salesforce/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-salesforce)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-salesforce-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-salesforce-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-salesforce
 
-TODO: add repo description.
+connector-salesforce
 
 <!-- /!\ do not modify below this line -->
 
@@ -1553,17 +1416,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-spscommerce.git](https://github.com/OCA/connector-spscommerce.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-spscommerce&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-spscommerce/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-spscommerce/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-spscommerce/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-spscommerce/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-spscommerce/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-spscommerce)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-spscommerce-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-spscommerce-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-spscommerce&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-spscommerce/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-spscommerce/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-spscommerce/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-spscommerce/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-spscommerce/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-spscommerce)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-spscommerce-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-spscommerce-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-spscommerce
 
-TODO: add repo description.
+connector-spscommerce
 
 <!-- /!\ do not modify below this line -->
 
@@ -1595,17 +1458,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-woocommerce.git](https://github.com/OCA/connector-woocommerce.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-woocommerce&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-woocommerce/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-woocommerce/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-woocommerce/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-woocommerce/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-woocommerce/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-woocommerce)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-woocommerce-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-woocommerce-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-woocommerce&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-woocommerce/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-woocommerce/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-woocommerce/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-woocommerce/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-woocommerce/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-woocommerce)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-woocommerce-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-woocommerce-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-woocommerce
 
-TODO: add repo description.
+connector-woocommerce
 
 <!-- /!\ do not modify below this line -->
 
@@ -1637,17 +1500,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-workflow&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/sale-workflow/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-workflow/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/sale-workflow/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-workflow)
-[![Translation Status](https://translation.odoo-community.org/widgets/sale-workflow-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-workflow-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-workflow&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-workflow/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/sale-workflow/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-workflow/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/sale-workflow/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-workflow)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-workflow-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-workflow-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # sale-workflow
 
-This project aim to deal with modules related to manage sale and their related workflow.
+sale-workflow
 
 <!-- /!\ do not modify below this line -->
 
@@ -1659,64 +1522,17 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[partner_sale_pivot](partner_sale_pivot/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Sales analysis from customer form view
-[portal_sale_personal_data_only](portal_sale_personal_data_only/) | 17.0.1.0.0 |  | Portal Sale Personal Data Only
-[product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
-[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
-[sale_advance_payment](sale_advance_payment/) | 17.0.1.0.1 |  | Allow to add advance payments on sales and then use them on invoices
-[sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.1.0 |  | Sale Automatic Workflow
-[sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.0 |  | Blanket Orders
-[sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
-[sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
-[sale_delivery_split_date](sale_delivery_split_date/) | 17.0.1.0.0 |  | Sale Deliveries split by date
-[sale_delivery_state](sale_delivery_state/) | 17.0.1.0.0 |  | Show the delivery state on the sale order
-[sale_discount_display_amount](sale_discount_display_amount/) | 17.0.1.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
-[sale_exception](sale_exception/) | 17.0.1.0.0 |  | Custom exceptions on sale order
-[sale_fixed_discount](sale_fixed_discount/) | 17.0.2.1.0 |  | Allows to apply fixed amount discounts in sales orders.
-[sale_force_invoiced](sale_force_invoiced/) | 17.0.1.1.1 |  | Allows to force the invoice status of the sales order to Invoiced
-[sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 17.0.1.0.0 |  | Sale Force Whole Invoiceability
-[sale_invoice_policy](sale_invoice_policy/) | 17.0.1.0.0 |  | Sales Management: let the user choose the invoice policy on the order
-[sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
-[sale_multi_template_application](sale_multi_template_application/) | 17.0.1.0.0 |  | Sale multi template application
-[sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
-[sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 17.0.1.0.0 |  | Auto assign delivery carrier on sale order confirmation
-[sale_order_general_discount](sale_order_general_discount/) | 17.0.1.0.0 |  | General discount per sale order
-[sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 17.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
-[sale_order_line_date](sale_order_line_date/) | 17.0.1.0.0 |  | Adds a commitment date to each sale order line.
-[sale_order_line_input](sale_order_line_input/) | 17.0.1.0.0 |  | Search, create or modify directly sale order lines
-[sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
-[sale_order_line_price_history](sale_order_line_price_history/) | 17.0.1.1.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale order line price history
-[sale_order_line_sequence](sale_order_line_sequence/) | 17.0.1.1.0 |  | Propagates SO line sequence to invoices and stock picking.
-[sale_order_line_tag](sale_order_line_tag/) | 17.0.1.0.1 | [![smaciaosi](https://github.com/smaciaosi.png?size=30px)](https://github.com/smaciaosi) [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) [![ckolobow](https://github.com/ckolobow.png?size=30px)](https://github.com/ckolobow) | Add tags to classify sales order line reasons
-[sale_order_lot_selection](sale_order_lot_selection/) | 17.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
-[sale_order_price_recalculation](sale_order_price_recalculation/) | 17.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
-[sale_order_priority](sale_order_priority/) | 17.0.1.0.1 |  | Define priority on sale orders
-[sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Recommend products to sell to customer based on history
-[sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
-[sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
-[sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.0 |  | Sale product in a secondary unit
-[sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
-[sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
-[sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
-[sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
-[sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.0 |  | Base module for multiple procurement group by Sale order
-[sale_product_multi_add](sale_product_multi_add/) | 17.0.1.0.0 |  | Sale Product Multi Add
-[sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
-[sale_quotation_number](sale_quotation_number/) | 17.0.1.1.2 |  | Different sequence for sale quotations
-[sale_shipping_info_helper](sale_shipping_info_helper/) | 17.0.1.0.0 |  | Add shipping amounts on sale order
-[sale_sourced_by_line](sale_sourced_by_line/) | 17.0.1.0.0 |  | Multiple warehouse source locations for Sale order
-[sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
-[sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 17.0.1.0.0 |  | Sale Stock Cancel Restriction
-[sale_stock_delivery_state](sale_stock_delivery_state/) | 17.0.1.0.0 |  | Change the way to compute the delivery state
-[sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.1.0 |  | Allow you to block the creation of deliveries from a sale order.
-[sale_stock_picking_note](sale_stock_picking_note/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add picking note in sale and purchase order
-[sale_substate](sale_substate/) | 17.0.1.0.0 |  | Sale Sub State
-[sale_tier_validation](sale_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
-[sale_validity_auto_cancel](sale_validity_auto_cancel/) | 17.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Automatically cancel quotations after validity period.
-[sales_team_security](sales_team_security/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
-[sales_team_security_crm](sales_team_security_crm/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates sales_team_security with crm
-[sales_team_security_sale](sales_team_security_sale/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates sales_team_security with sale
+[sale_automatic_workflow](sale_automatic_workflow/) | 18.0.1.0.0 |  | Sale Automatic Workflow
+[sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 18.0.1.0.0 |  | Sale Automatic Workflow Stock
+[sale_cancel_reason](sale_cancel_reason/) | 18.0.1.0.0 |  | Sale Cancel Reason
+[sale_commercial_partner](sale_commercial_partner/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
+[sale_exception](sale_exception/) | 18.0.1.0.0 |  | Custom exceptions on sale order
+[sale_force_invoiced](sale_force_invoiced/) | 18.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
+[sale_order_line_date](sale_order_line_date/) | 18.0.1.0.0 |  | Adds a commitment date to each sale order line.
+[sale_order_line_menu](sale_order_line_menu/) | 18.0.1.0.0 |  | Adds a Sale Order Lines Menu
+[sale_order_type](sale_order_type/) | 18.0.1.0.0 |  | Sale Order Type
+[sale_procurement_group_by_line](sale_procurement_group_by_line/) | 18.0.1.0.0 |  | Base module for multiple procurement group by Sale order
+[sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 
 [//]: # (end addons)
 
@@ -1740,17 +1556,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/crm&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/crm/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/crm/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/crm/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/crm/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/crm/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/crm)
-[![Translation Status](https://translation.odoo-community.org/widgets/crm-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/crm-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/crm&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/crm/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/crm/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/crm/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/crm/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/crm/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/crm)
+[![Translation Status](https://translation.odoo-community.org/widgets/crm-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/crm-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # crm
 
-TODO: add repo description.
+crm
 
 <!-- /!\ do not modify below this line -->
 
@@ -1762,20 +1578,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[crm_claim](crm_claim/) | 17.0.1.0.0 |  | Track your customers/vendors claims and grievances.
-[crm_industry](crm_industry/) | 17.0.1.0.0 |  | Link leads/opportunities to industries
-[crm_lead_code](crm_lead_code/) | 17.0.1.1.0 |  | Sequential Code for Leads / Opportunities
-[crm_lead_currency](crm_lead_currency/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | On leads/opportunities, add the amount in the customer's currency.
-[crm_lead_firstname](crm_lead_firstname/) | 17.0.1.0.0 |  | Specify split names for contacts in leads
-[crm_lead_product](crm_lead_product/) | 17.0.1.0.0 |  | Adds a lead line in the lead/opportunity model in odoo
-[crm_lead_to_task](crm_lead_to_task/) | 17.0.1.1.0 |  | Create Tasks from Leads/Opportunities
-[crm_lead_vat](crm_lead_vat/) | 17.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add VAT field to leads
-[crm_location](crm_location/) | 17.0.1.0.0 |  | CRM location
-[crm_phonecall](crm_phonecall/) | 17.0.1.0.0 |  | CRM Phone Calls
-[crm_phonecall_summary_predefined](crm_phonecall_summary_predefined/) | 17.0.1.0.0 |  | Allows to choose from a defined summary list
-[crm_salesperson_planner](crm_salesperson_planner/) | 17.0.1.0.0 |  | Crm Salesperson Planner
-[crm_stage_probability](crm_stage_probability/) | 17.0.1.0.0 |  | Define fixed probability on the stages
-[marketing_crm_partner](marketing_crm_partner/) | 17.0.1.0.0 |  | Copy tracking fields from leads to partners
+[crm_lead_firstname](crm_lead_firstname/) | 18.0.1.0.0 |  | Specify split names for contacts in leads
 
 [//]: # (end addons)
 
@@ -1799,17 +1602,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/partner-contact&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/partner-contact/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/partner-contact/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/partner-contact/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/partner-contact)
-[![Translation Status](https://translation.odoo-community.org/widgets/partner-contact-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/partner-contact-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/partner-contact&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/partner-contact/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/partner-contact/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/partner-contact/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/partner-contact/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/partner-contact)
+[![Translation Status](https://translation.odoo-community.org/widgets/partner-contact-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/partner-contact-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Partner Contact
+# partner-contact
 
-Contact-related odoo addons.
+partner-contact
 
 <!-- /!\ do not modify below this line -->
 
@@ -1821,57 +1624,30 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_partner_company_group](account_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
-[base_country_state_translatable](base_country_state_translatable/) | 17.0.1.0.0 |  | Translate Country States
-[base_location](base_location/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Enhanced zip/npa management system
-[base_location_geonames_import](base_location_geonames_import/) | 17.0.1.0.0 |  | Import zip entries from Geonames
-[base_location_nuts](base_location_nuts/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS Regions
-[base_partner_company_group](base_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
-[base_partner_sequence](base_partner_sequence/) | 17.0.1.0.0 |  | Sets customer's code from a sequence
-[crm_partner_company_group](crm_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
-[partner_address_split](partner_address_split/) | 17.0.1.0.0 |  | Add specific helper methods
-[partner_address_street3](partner_address_street3/) | 17.0.1.0.0 |  | Add a third address line on partners
-[partner_affiliate](partner_affiliate/) | 17.0.1.1.0 |  | Partner Affiliates
-[partner_category_security](partner_category_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner category security
-[partner_company_default](partner_company_default/) | 17.0.1.0.0 |  | Partner Company Default
-[partner_company_group](partner_company_group/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds the possibility to add a company group to a company
-[partner_company_type](partner_company_type/) | 17.0.1.0.0 |  | Adds a company type to partner that are companies
-[partner_contact_access_link](partner_contact_access_link/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
-[partner_contact_birthdate](partner_contact_birthdate/) | 17.0.1.1.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Contact's birthdate
-[partner_contact_birthplace](partner_contact_birthplace/) | 17.0.1.0.0 |  | This module allows to define a birthplace for partners.
-[partner_contact_department](partner_contact_department/) | 17.0.1.0.0 |  | Assign contacts to departments
-[partner_contact_gender](partner_contact_gender/) | 17.0.1.0.1 |  | Add gender field to contacts
-[partner_contact_job_position](partner_contact_job_position/) | 17.0.1.0.0 |  | Categorize job positions for contacts
-[partner_contact_nationality](partner_contact_nationality/) | 17.0.1.0.0 |  | Add nationality field to contacts
-[partner_contact_personal_information_page](partner_contact_personal_information_page/) | 17.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Add a page to contacts form to put personal information
-[partner_contact_role](partner_contact_role/) | 17.0.1.0.0 |  | Add roles to partners.
-[partner_deduplicate_acl](partner_deduplicate_acl/) | 17.0.1.0.0 |  | Contact deduplication with fine-grained permission control
-[partner_deduplicate_by_website](partner_deduplicate_by_website/) | 17.0.1.0.0 |  | Deduplicate Contacts by Website
-[partner_deduplicate_filter](partner_deduplicate_filter/) | 17.0.1.0.0 |  | Exclude records from the deduplication
-[partner_disable_gravatar](partner_disable_gravatar/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Disable automatic connection to gravatar.com
-[partner_display_name_line_break](partner_display_name_line_break/) | 17.0.1.0.1 |  | Split the company and the partner name on two different lines
-[partner_duns](partner_duns/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Set DUNS (Data Universal Numbering System) on partners
-[partner_email_check](partner_email_check/) | 17.0.1.0.0 |  | Validate email address field
-[partner_email_duplicate_warn](partner_email_duplicate_warn/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Warning banner on partner form if another partner has the same email
-[partner_external_map](partner_external_map/) | 17.0.1.0.0 |  | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
-[partner_fax](partner_fax/) | 17.0.1.1.0 |  | Add fax number on partner
-[partner_firstname](partner_firstname/) | 17.0.1.1.0 |  | Split first name and last name for non company partners
-[partner_identification](partner_identification/) | 17.0.1.2.0 |  | Partner Identification Numbers
-[partner_identification_gln](partner_identification_gln/) | 17.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
-[partner_industry_secondary](partner_industry_secondary/) | 17.0.1.1.1 |  | Add secondary partner industries
-[partner_manual_rank](partner_manual_rank/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) | Be able to manually flag partners as customer or supplier.
-[partner_multi_relation](partner_multi_relation/) | 17.0.1.0.0 |  | Partner Relations
-[partner_pricelist_search](partner_pricelist_search/) | 17.0.1.0.0 |  | Partner pricelist search
-[partner_property](partner_property/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner Property
-[partner_readonly_security](partner_readonly_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Partner Readonly Security
-[partner_ref_unique](partner_ref_unique/) | 17.0.1.0.0 |  | Add an unique constraint to partner ref field
-[partner_second_lastname](partner_second_lastname/) | 17.0.1.0.2 |  | Have split first and second lastnames
-[partner_stage](partner_stage/) | 17.0.1.1.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
-[partner_stage_only_confirmed](partner_stage_only_confirmed/) | 17.0.1.0.0 |  | Adds filters on form views to display only confirmed partners
-[partner_title_active](partner_title_active/) | 17.0.1.0.0 |  | Partner Title Active
-[partner_tz](partner_tz/) | 17.0.1.0.0 |  | Remove partner timezone default value and display on form
-[partner_vat_unique](partner_vat_unique/) | 17.0.1.0.0 |  | Module to make the VAT number unique for customers and suppliers.
-[sale_partner_company_group](sale_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
+[account_partner_company_group](account_partner_company_group/) | 18.0.1.0.0 |  | Adds the possibility to add a company group to a company
+[base_location](base_location/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Enhanced zip/npa management system
+[base_location_geonames_import](base_location_geonames_import/) | 18.0.1.0.0 |  | Import zip entries from Geonames
+[base_partner_company_group](base_partner_company_group/) | 18.0.1.1.0 |  | Adds the possibility to add a company group to a company
+[base_partner_sequence](base_partner_sequence/) | 18.0.1.0.0 |  | Sets customer's code from a sequence
+[crm_partner_company_group](crm_partner_company_group/) | 18.0.1.0.0 |  | Adds the possibility to add a company group to a company
+[partner_company_group](partner_company_group/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds the possibility to add a company group to a company
+[partner_contact_access_link](partner_contact_access_link/) | 18.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
+[partner_contact_birthdate](partner_contact_birthdate/) | 18.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Contact's birthdate
+[partner_contact_personal_information_page](partner_contact_personal_information_page/) | 18.0.1.0.0 | [![Daemo00](https://github.com/Daemo00.png?size=30px)](https://github.com/Daemo00) | Add a page to contacts form to put personal information
+[partner_fax](partner_fax/) | 18.0.1.0.0 |  | Add fax number on partner
+[partner_firstname](partner_firstname/) | 18.0.1.1.0 |  | Split first name and last name for non company partners
+[partner_identification](partner_identification/) | 18.0.1.0.0 |  | Partner Identification Numbers
+[partner_identification_gln](partner_identification_gln/) | 18.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
+[partner_identification_unique_by_category](partner_identification_unique_by_category/) | 18.0.1.0.0 |  | Partner Identification Numbers Unique By Category
+[partner_industry_secondary](partner_industry_secondary/) | 18.0.1.0.0 |  | Add secondary partner industries
+[partner_multi_relation](partner_multi_relation/) | 18.0.1.0.0 |  | Partner Relations
+[partner_pricelist_search](partner_pricelist_search/) | 18.0.1.0.0 |  | Partner pricelist search
+[partner_priority](partner_priority/) | 18.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds priority to partners.
+[partner_ref_unique](partner_ref_unique/) | 18.0.1.0.0 |  | Add an unique constraint to partner ref field
+[partner_stage](partner_stage/) | 18.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
+[partner_title_order](partner_title_order/) | 18.0.1.0.0 |  | Makes partner title sortable by sequence
+[partner_tz](partner_tz/) | 18.0.1.0.0 |  | Remove partner timezone default value and display on form
+[sale_partner_company_group](sale_partner_company_group/) | 18.0.1.0.0 |  | Adds the possibility to add a company group to a company
 
 [//]: # (end addons)
 
@@ -1895,17 +1671,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-financial.git](https://github.com/OCA/sale-financial.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-financial&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/sale-financial/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-financial/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/sale-financial/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-financial/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/sale-financial/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-financial)
-[![Translation Status](https://translation.odoo-community.org/widgets/sale-financial-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-financial-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-financial&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/sale-financial/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-financial/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/sale-financial/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-financial/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/sale-financial/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-financial)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-financial-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-financial-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # sale-financial
 
-TODO: add repo description.
+sale-financial
 
 <!-- /!\ do not modify below this line -->
 
@@ -1937,17 +1713,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-promotion&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/sale-promotion/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-promotion/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/sale-promotion/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-promotion/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/sale-promotion/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-promotion)
-[![Translation Status](https://translation.odoo-community.org/widgets/sale-promotion-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-promotion-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-promotion&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/sale-promotion/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-promotion/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/sale-promotion/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-promotion/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/sale-promotion/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-promotion)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-promotion-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-promotion-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Sales promotion management
+# sale-promotion
 
-Odoo addons for handling promotions on the sales funnel.
+sale-promotion
 
 <!-- /!\ do not modify below this line -->
 
@@ -1979,17 +1755,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/sale-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/sale-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/sale-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/sale-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/sale-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/sale-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/sale-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/sale-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/sale-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/sale-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/sale-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # sale-reporting
 
-TODO: add repo description.
+sale-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -2001,10 +1777,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[sale_comment_template](sale_comment_template/) | 17.0.1.0.0 |  | Comments texts templates on Sale documents
-[sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 17.0.1.0.1 |  | Hide details for sections in sale orders and invoices for reports and customer portal
-[sale_order_line_position](sale_order_line_position/) | 17.0.1.0.0 |  | Adds position number on sale order line.
-[sale_order_report_product_image](sale_order_report_product_image/) | 17.0.1.0.0 |  | Show product images on Sale documents
+[sale_order_line_position](sale_order_line_position/) | 18.0.1.0.0 |  | Adds position number on sale order line.
+[sale_report_delivered](sale_report_delivered/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered
+[sale_report_salesperson_from_partner](sale_report_salesperson_from_partner/) | 18.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Sale Report Salesperson From Partner
 
 [//]: # (end addons)
 
@@ -2028,17 +1803,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/commission&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/commission/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/commission/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/commission/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/commission/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/commission/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/commission)
-[![Translation Status](https://translation.odoo-community.org/widgets/commission-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/commission-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/commission&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/commission/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/commission/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/commission/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/commission/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/commission/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/commission)
+[![Translation Status](https://translation.odoo-community.org/widgets/commission-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/commission-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # commission
 
-TODO: add repo description.
+commission
 
 <!-- /!\ do not modify below this line -->
 
@@ -2046,16 +1821,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_commission](account_commission/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
-[commission_formula](commission_formula/) | 17.0.1.0.0 |  | Commissions computed by formulas
-[hr_commission](hr_commission/) | 17.0.1.0.0 |  | HR commissions
-[sale_commission](sale_commission/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
-[sale_commission_salesman](sale_commission_salesman/) | 17.0.1.0.1 |  | Sales commissions from salesman
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2079,17 +1845,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/event&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/event/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/event/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/event/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/event/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/event/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/event)
-[![Translation Status](https://translation.odoo-community.org/widgets/event-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/event-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/event&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/event/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/event/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/event/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/event/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/event/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/event)
+[![Translation Status](https://translation.odoo-community.org/widgets/event-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/event-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # event
 
-TODO: add repo description.
+event
 
 <!-- /!\ do not modify below this line -->
 
@@ -2097,25 +1863,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[crm_event](crm_event/) | 17.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Link opportunities to event categories
-[event_mail](event_mail/) | 17.0.1.0.0 |  | Mail settings in events
-[event_min_seat](event_min_seat/) | 17.0.1.0.0 |  | Minimum seats in events
-[event_registration_cancel_reason](event_registration_cancel_reason/) | 17.0.1.0.0 |  | Reasons for event registrations cancellations
-[event_registration_partner_unique](event_registration_partner_unique/) | 17.0.1.0.0 |  | Enforces 1 registration per partner and event
-[event_sale_reservation](event_sale_reservation/) | 17.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Allow selling event registrations before the event exists
-[event_stage_cancelled](event_stage_cancelled/) | 17.0.1.0.0 |  | Event cancellation workflows
-[partner_event](partner_event/) | 17.0.1.0.1 |  | Link partner to events
-[sale_crm_event_reservation](sale_crm_event_reservation/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Combine event reservations, opportunities and quotations
-[website_event_filter_city](website_event_filter_city/) | 17.0.1.1.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Add a customizable top area to filter events with city
-[website_event_membership_restriction](website_event_membership_restriction/) | 17.0.1.0.0 |  | Restrict event registration to members only
-[website_event_questions_by_ticket](website_event_questions_by_ticket/) | 17.0.1.0.0 |  | Events Questions conditional to the chosen ticket
-[website_event_require_login](website_event_require_login/) | 17.0.1.0.0 |  | Website Event Require Login
-[website_event_sale_b2x_alt_price](website_event_sale_b2x_alt_price/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display alt. price (B2B for B2C websites, and viceversa)
-[website_event_track_stage_cancelled](website_event_track_stage_cancelled/) | 17.0.1.0.0 |  | Event session cancellation workflows
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2139,17 +1887,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/survey&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/survey/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/survey/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/survey/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/survey/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/survey/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/survey)
-[![Translation Status](https://translation.odoo-community.org/widgets/survey-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/survey-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/survey&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/survey/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/survey/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/survey/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/survey/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/survey/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/survey)
+[![Translation Status](https://translation.odoo-community.org/widgets/survey-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/survey-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # survey
 
-TODO: add repo description.
+survey
 
 <!-- /!\ do not modify below this line -->
 
@@ -2157,12 +1905,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[partner_survey](partner_survey/) | 17.0.1.0.0 |  | Link partners with their survey results
-[survey_partner_representative](survey_partner_representative/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Fill the survey on behalf of others
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2186,17 +1929,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/knowledge&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/knowledge/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/knowledge/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/knowledge/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/knowledge)
-[![Translation Status](https://translation.odoo-community.org/widgets/knowledge-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/knowledge-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/knowledge&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/knowledge/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/knowledge/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/knowledge/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/knowledge/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/knowledge)
+[![Translation Status](https://translation.odoo-community.org/widgets/knowledge-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/knowledge-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # knowledge
 
-Knowlesge management addons. Also has some usefull tools to handle attachments
+knowledge
 
 <!-- /!\ do not modify below this line -->
 
@@ -2208,16 +1951,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[attachment_zipped_download](attachment_zipped_download/) | 17.0.1.0.0 |  | Attachment Zipped Download
-[document_knowledge](document_knowledge/) | 17.0.1.0.0 |  | Documents Knowledge
-[document_page](document_page/) | 17.0.1.1.0 |  | Document Page
-[document_page_access_group](document_page_access_group/) | 17.0.2.0.0 |  | Choose groups to access document pages
-[document_page_approval](document_page_approval/) | 17.0.1.0.0 |  | Document Page Approval
-[document_page_group](document_page_group/) | 17.0.1.0.0 |  | Define access groups on documents
-[document_page_partner](document_page_partner/) | 17.0.1.0.0 |  | Allows to link doucment pages to a partner
-[document_page_project](document_page_project/) | 17.0.1.0.0 |  | This module links document pages to projects
-[document_page_tag](document_page_tag/) | 17.0.1.0.0 |  | Allows you to assign tags or keywords to pages and search for them afterwards
-[document_url](document_url/) | 17.0.1.0.1 |  | URL attachment
+[document_knowledge](document_knowledge/) | 18.0.1.0.0 |  | Documents Knowledge
+[document_page](document_page/) | 18.0.1.0.0 |  | Document Page
 
 [//]: # (end addons)
 
@@ -2241,17 +1976,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/dms&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/dms/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/dms/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/dms/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/dms/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/dms/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/dms)
-[![Translation Status](https://translation.odoo-community.org/widgets/dms-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/dms-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/dms&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/dms/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/dms/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/dms/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/dms/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/dms/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/dms)
+[![Translation Status](https://translation.odoo-community.org/widgets/dms-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/dms-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # dms
 
-TODO: add repo description.
+dms
 
 <!-- /!\ do not modify below this line -->
 
@@ -2259,13 +1994,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[dms](dms/) | 17.0.1.2.1 |  | Document Management System for Odoo
-[dms_attachment_link](dms_attachment_link/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Dms Attachment Link
-[dms_storage](dms_storage/) | 17.0.1.0.0 |  | Integrate DMS with external Storages
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2289,17 +2018,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/e-commerce/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/e-commerce)
-[![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/e-commerce&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/e-commerce/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/e-commerce/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/e-commerce/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/e-commerce/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/e-commerce)
+[![Translation Status](https://translation.odoo-community.org/widgets/e-commerce-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/e-commerce-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # e-commerce
 
-TODO: add repo description.
+e-commerce
 
 <!-- /!\ do not modify below this line -->
 
@@ -2311,14 +2040,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
-[website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.0 |  | Skip payment for logged users in checkout process
-[website_sale_hide_price](website_sale_hide_price/) | 17.0.1.1.1 |  | Hide product prices on the shop
-[website_sale_product_description](website_sale_product_description/) | 17.0.1.0.0 |  | Shows custom e-Commerce description for products
-[website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 17.0.1.0.0 |  | Display product reference in e-commerce
-[website_sale_require_legal](website_sale_require_legal/) | 17.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
-[website_sale_secondary_unit](website_sale_secondary_unit/) | 17.0.1.0.0 |  | Allow manage secondary units in website shop
-[website_sale_suggest_create_account](website_sale_suggest_create_account/) | 17.0.1.0.0 |  | Suggest users to create an account when buying in the website
+[product_template_multi_link](product_template_multi_link/) | 18.0.1.0.0 |  | Product Multi Links (Template)
+[website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 18.0.1.0.0 |  | Skip payment for logged users in checkout process
+[website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 18.0.1.1.0 |  | Allow hide attributes values not used in variants
+[website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 18.0.1.0.0 |  | Display product reference in e-commerce
 
 [//]: # (end addons)
 
@@ -2342,17 +2067,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/edi&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/edi/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/edi/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/edi/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/edi/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/edi/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/edi)
-[![Translation Status](https://translation.odoo-community.org/widgets/edi-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/edi-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/edi&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/edi/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/edi/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/edi/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/edi/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/edi/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/edi)
+[![Translation Status](https://translation.odoo-community.org/widgets/edi-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/edi-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # edi
 
-TODO: add repo description.
+edi
 
 <!-- /!\ do not modify below this line -->
 
@@ -2364,19 +2089,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_einvoice_generate](account_einvoice_generate/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Technical module to generate PDF invoices with embedded XML file
-[account_invoice_export](account_invoice_export/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Account Invoice Export
-[account_invoice_facturx](account_invoice_facturx/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Factur-X/ZUGFeRD customer invoices
-[base_business_document_import](base_business_document_import/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides technical tools to import sale orders or supplier invoices
-[base_ebill_payment_contract](base_ebill_payment_contract/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Base for managing e-billing contracts
-[base_edi](base_edi/) | 17.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
-[base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
-[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 17.0.1.0.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template Account
-[edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
-[edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
-[pdf_helper](pdf_helper/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
-[test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
+[base_edi](base_edi/) | 18.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 
 [//]: # (end addons)
 
@@ -2400,26 +2113,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/field-service&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/field-service/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/field-service/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/field-service/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/field-service)
-[![Translation Status](https://translation.odoo-community.org/widgets/field-service-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/field-service-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/field-service&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/field-service/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/field-service/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/field-service/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/field-service)
+[![Translation Status](https://translation.odoo-community.org/widgets/field-service-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/field-service-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Field Service Management
+# field-service
 
-[Field Service Management](https://en.wikipedia.org/wiki/Field_service_management) (FSM) coordinates company resources employed at, or en route to, client sites, rather than on the company's premises. FSM most commonly refers to companies who need to manage installation, service or repairs of systems or equipment.
-
-Examples of field service use cases are:
-
-- In telecommunications and cable industry, technicians who install cable or run phone lines into residences or business establishments.
-- In healthcare, mobile nurses who provide in-home care for elderly or disabled.
-- In gas utilities, engineers who are dispatched to investigate and repair suspected leaks.
-- In heavy engineering, mining, industrial and manufacturing, technicians dispatched for preventative maintenance and repair.
-- In property maintenance, including landscaping, irrigation, and home and office cleaning.
-- In HVAC industry, technicians have the expertise and equipment to investigate units in residential, commercial and industrial environments.
+field-service
 
 <!-- /!\ do not modify below this line -->
 
@@ -2431,33 +2135,21 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_territory](base_territory/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 17.0.1.6.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
-[fieldservice_account](fieldservice_account/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
-[fieldservice_account_analytic](fieldservice_account_analytic/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
-[fieldservice_activity](fieldservice_activity/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
-[fieldservice_agreement](fieldservice_agreement/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Field Service agreements and contracts
-[fieldservice_calendar](fieldservice_calendar/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
-[fieldservice_crm](fieldservice_crm/) | 17.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
-[fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
-[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
-[fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
-[fieldservice_portal](fieldservice_portal/) | 17.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
-[fieldservice_project](fieldservice_project/) | 17.0.1.0.0 |  | Create field service orders from a project or project task
-[fieldservice_recurring](fieldservice_recurring/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
-[fieldservice_repair](fieldservice_repair/) | 17.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
-[fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
-[fieldservice_sale](fieldservice_sale/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
-[fieldservice_sale_agreement](fieldservice_sale_agreement/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements
-[fieldservice_sale_agreement_equipment_stock](fieldservice_sale_agreement_equipment_stock/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements and Stock Equipment
-[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
-[fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
-[fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
-[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
-[fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
-[fieldservice_stock](fieldservice_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
-[fieldservice_stock_request](fieldservice_stock_request/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate Stock Requests with Field Service Orders
-[fieldservice_vehicle](fieldservice_vehicle/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
+[base_territory](base_territory/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
+[fieldservice](fieldservice/) | 18.0.1.2.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
+[fieldservice_account](fieldservice_account/) | 18.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
+[fieldservice_activity](fieldservice_activity/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
+[fieldservice_calendar](fieldservice_calendar/) | 18.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
+[fieldservice_crm](fieldservice_crm/) | 18.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
+[fieldservice_project](fieldservice_project/) | 18.0.1.0.0 |  | Create field service orders from a project or project task
+[fieldservice_recurring](fieldservice_recurring/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
+[fieldservice_route](fieldservice_route/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
+[fieldservice_sale](fieldservice_sale/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
+[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
+[fieldservice_size](fieldservice_size/) | 18.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
+[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
+[fieldservice_stock](fieldservice_stock/) | 18.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
+[fieldservice_vehicle](fieldservice_vehicle/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
 
 [//]: # (end addons)
 
@@ -2481,17 +2173,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/margin-analysis&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/margin-analysis/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/margin-analysis/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/margin-analysis/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/margin-analysis/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/margin-analysis/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/margin-analysis)
-[![Translation Status](https://translation.odoo-community.org/widgets/margin-analysis-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/margin-analysis-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/margin-analysis&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/margin-analysis/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/margin-analysis/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/margin-analysis/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/margin-analysis/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/margin-analysis/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/margin-analysis)
+[![Translation Status](https://translation.odoo-community.org/widgets/margin-analysis-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/margin-analysis-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # margin-analysis
 
-TODO: add repo description.
+margin-analysis
 
 <!-- /!\ do not modify below this line -->
 
@@ -2499,13 +2191,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_invoice_margin](account_invoice_margin/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Show margin in invoices
-[account_invoice_margin_sale](account_invoice_margin_sale/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Set margin in invoices from sale orders
-[sale_report_margin](sale_report_margin/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Margin
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2529,17 +2215,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/fleet&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/fleet/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/fleet/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/fleet/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/fleet)
-[![Translation Status](https://translation.odoo-community.org/widgets/fleet-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/fleet-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/fleet&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/fleet/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/fleet/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/fleet/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/fleet/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/fleet)
+[![Translation Status](https://translation.odoo-community.org/widgets/fleet-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/fleet-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # fleet
 
-TODO: add repo description.
+fleet
 
 <!-- /!\ do not modify below this line -->
 
@@ -2547,11 +2233,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[fleet_vehicle_usage](fleet_vehicle_usage/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Fleet Vehicle Usage
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2575,17 +2257,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/infrastructure&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/infrastructure/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/infrastructure/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/infrastructure/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/infrastructure/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/infrastructure/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/infrastructure)
-[![Translation Status](https://translation.odoo-community.org/widgets/infrastructure-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/infrastructure-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/infrastructure&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/infrastructure/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/infrastructure/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/infrastructure/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/infrastructure/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/infrastructure/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/infrastructure)
+[![Translation Status](https://translation.odoo-community.org/widgets/infrastructure-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/infrastructure-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # infrastructure
 
-TODO: add repo description.
+infrastructure
 
 <!-- /!\ do not modify below this line -->
 
@@ -2617,17 +2299,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/geospatial&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/geospatial/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/geospatial/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/geospatial/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/geospatial)
-[![Translation Status](https://translation.odoo-community.org/widgets/geospatial-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/geospatial-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/geospatial&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/geospatial/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/geospatial/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/geospatial/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/geospatial/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/geospatial)
+[![Translation Status](https://translation.odoo-community.org/widgets/geospatial-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/geospatial-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # geospatial
 
-TODO: add repo description.
+geospatial
 
 <!-- /!\ do not modify below this line -->
 
@@ -2635,15 +2317,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[base_geoengine](base_geoengine/) | 17.0.1.0.1 |  | Geospatial support for Odoo
-[base_geoengine_demo](base_geoengine_demo/) | 17.0.1.0.0 |  | Geo spatial support Demo
-[geoengine_base_geolocalize](geoengine_base_geolocalize/) | 17.0.1.0.0 |  | Geospatial support for base_geolocalize
-[geoengine_partner](geoengine_partner/) | 17.0.1.0.0 |  | Geospatial support of partners
-[web_leaflet_lib](web_leaflet_lib/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Bring leaflet.js librairy in odoo.
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2667,17 +2341,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/timesheet&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/timesheet/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/timesheet/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/timesheet/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/timesheet)
-[![Translation Status](https://translation.odoo-community.org/widgets/timesheet-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/timesheet-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/timesheet&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/timesheet/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/timesheet/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/timesheet/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/timesheet/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/timesheet)
+[![Translation Status](https://translation.odoo-community.org/widgets/timesheet-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/timesheet-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # timesheet
 
-TODO: add repo description.
+timesheet
 
 <!-- /!\ do not modify below this line -->
 
@@ -2685,19 +2359,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[crm_timesheet](crm_timesheet/) | 17.0.1.0.0 |  | CRM Timesheet
-[hr_timesheet_begin_end](hr_timesheet_begin_end/) | 17.0.1.0.0 |  | Timesheet - Begin/End Hours
-[hr_timesheet_sheet](hr_timesheet_sheet/) | 17.0.1.0.0 |  | Timesheet Sheets, Activities
-[hr_timesheet_task_domain](hr_timesheet_task_domain/) | 17.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
-[hr_timesheet_task_required](hr_timesheet_task_required/) | 17.0.1.0.1 |  | Set task on timesheet as a mandatory field
-[hr_timesheet_task_stage](hr_timesheet_task_stage/) | 17.0.1.0.0 |  | Open/Close task from corresponding Task Log entry
-[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 17.0.1.1.0 |  | Exclude Timesheet Line from Sale Order
-[sale_timesheet_rounded](sale_timesheet_rounded/) | 17.0.1.0.0 |  | Round timesheet entries amount based on project settings.
-[sale_timesheet_timeline](sale_timesheet_timeline/) | 17.0.1.0.0 |  | Dates planning in sales order lines
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2721,17 +2383,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/hr/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/hr/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/hr/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr)
-[![Translation Status](https://translation.odoo-community.org/widgets/hr-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/hr/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/hr/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/hr/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr)
+[![Translation Status](https://translation.odoo-community.org/widgets/hr-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # hr
 
-TODO: add repo description.
+hr
 
 <!-- /!\ do not modify below this line -->
 
@@ -2743,23 +2405,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_announcement](hr_announcement/) | 17.0.1.0.0 |  | Announcement
-[hr_course](hr_course/) | 17.0.1.0.0 |  | This module allows your to manage employee's training courses
-[hr_department_code](hr_department_code/) | 17.0.1.0.0 |  | HR department code
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 17.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
-[hr_employee_document](hr_employee_document/) | 17.0.1.0.1 |  | Documents attached to the employee profile
-[hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.1 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
-[hr_employee_partner_external](hr_employee_partner_external/) | 17.0.1.0.0 |  | Associate an external Partner to Employee
-[hr_employee_ppe](hr_employee_ppe/) | 17.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![eduaparicio](https://github.com/eduaparicio.png?size=30px)](https://github.com/eduaparicio) | Personal Protective Equipment (PPE) Management
-[hr_employee_relative](hr_employee_relative/) | 17.0.1.0.0 |  | Allows storing information about employee's family
-[hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
-[hr_employee_ssn](hr_employee_ssn/) | 17.0.1.0.0 |  | View/edit employee's SIN field
-[hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.1 |  | Enables Settings Form for HR Holidays.
-[hr_job_category](hr_job_category/) | 17.0.1.0.1 |  | Adds tags to employee through contract and job position
-[hr_personal_equipment_request](hr_personal_equipment_request/) | 17.0.1.0.0 |  | This addon allows to manage employee personal equipment
-[hr_professional_category](hr_professional_category/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
-[hr_study](hr_study/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Structured study field for employees
-[hr_work_entry_profile](hr_work_entry_profile/) | 17.0.1.0.0 |  | User can access their work entries from the profile view.
+[hr_employee_firstname](hr_employee_firstname/) | 18.0.1.0.0 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
+[hr_employee_relative](hr_employee_relative/) | 18.0.1.0.0 |  | Allows storing information about employee's family
+[hr_employee_second_lastname](hr_employee_second_lastname/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 
 [//]: # (end addons)
 
@@ -2783,17 +2431,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-attendance&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/hr-attendance/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-attendance/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/hr-attendance/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-attendance/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/hr-attendance/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-attendance)
-[![Translation Status](https://translation.odoo-community.org/widgets/hr-attendance-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-attendance-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-attendance&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/hr-attendance/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-attendance/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/hr-attendance/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-attendance/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/hr-attendance/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-attendance)
+[![Translation Status](https://translation.odoo-community.org/widgets/hr-attendance-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-attendance-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # hr-attendance
 
-TODO: add repo description.
+hr-attendance
 
 <!-- /!\ do not modify below this line -->
 
@@ -2801,14 +2449,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[hr_attendance_autoclose](hr_attendance_autoclose/) | 17.0.1.0.0 |  | Close stale Attendances
-[hr_attendance_calendar_view](hr_attendance_calendar_view/) | 17.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
-[hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.0 |  | HR Attendance Reason
-[hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2832,17 +2473,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-expense&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/hr-expense/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-expense/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/hr-expense/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-expense)
-[![Translation Status](https://translation.odoo-community.org/widgets/hr-expense-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-expense-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-expense&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-expense/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/hr-expense/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-expense/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/hr-expense/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-expense)
+[![Translation Status](https://translation.odoo-community.org/widgets/hr-expense-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-expense-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # hr-expense
 
-TODO: add repo description.
+hr-expense
 
 <!-- /!\ do not modify below this line -->
 
@@ -2854,11 +2495,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_expense_cancel](hr_expense_cancel/) | 17.0.1.0.3 |  | Hr expense cancel
-[hr_expense_employee_analytic_default](hr_expense_employee_analytic_default/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Expense Employee Analytic Default
-[hr_expense_invoice](hr_expense_invoice/) | 17.0.1.0.2 |  | Supplier invoices on HR expenses
-[hr_expense_payment](hr_expense_payment/) | 17.0.1.0.1 |  | HR Expense Payment
-[hr_expense_sequence](hr_expense_sequence/) | 17.0.1.0.0 |  | HR expense sequence
+[hr_expense_payment](hr_expense_payment/) | 18.0.1.0.0 |  | HR Expense Payment
+[hr_expense_sequence](hr_expense_sequence/) | 18.0.1.0.0 |  | HR expense sequence
 
 [//]: # (end addons)
 
@@ -2882,17 +2520,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-holidays&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/hr-holidays/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-holidays/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/hr-holidays/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/hr-holidays/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/hr-holidays/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-holidays)
-[![Translation Status](https://translation.odoo-community.org/widgets/hr-holidays-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-holidays-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/hr-holidays&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/hr-holidays/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-holidays/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/hr-holidays/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/hr-holidays/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/hr-holidays/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/hr-holidays)
+[![Translation Status](https://translation.odoo-community.org/widgets/hr-holidays-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/hr-holidays-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # hr-holidays
 
-TODO: add repo description.
+hr-holidays
 
 <!-- /!\ do not modify below this line -->
 
@@ -2900,14 +2538,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.6 |  | Manage Public Holidays
-[hr_holidays_public_city](hr_holidays_public_city/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
-[hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 17.0.1.0.0 |  | Edit start and end of leaves using time intervals
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -2931,17 +2562,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/department.git](https://github.com/OCA/department.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/department&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/department/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/department/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/department/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/department/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/department/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/department)
-[![Translation Status](https://translation.odoo-community.org/widgets/department-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/department-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/department&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/department/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/department/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/department/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/department/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/department/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/department)
+[![Translation Status](https://translation.odoo-community.org/widgets/department-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/department-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # department
 
-TODO: add repo description.
+department
 
 <!-- /!\ do not modify below this line -->
 
@@ -2973,17 +2604,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-odoo2odoo.git](https://github.com/OCA/connector-odoo2odoo.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-odoo2odoo&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-odoo2odoo/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-odoo2odoo/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-odoo2odoo/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-odoo2odoo/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-odoo2odoo/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-odoo2odoo)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-odoo2odoo-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-odoo2odoo-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-odoo2odoo&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-odoo2odoo/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-odoo2odoo/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-odoo2odoo/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-odoo2odoo/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-odoo2odoo/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-odoo2odoo)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-odoo2odoo-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-odoo2odoo-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-odoo2odoo
 
-TODO: add repo description.
+connector-odoo2odoo
 
 <!-- /!\ do not modify below this line -->
 
@@ -3015,17 +2646,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/multi-company&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/multi-company/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/multi-company/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/multi-company/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/multi-company)
-[![Translation Status](https://translation.odoo-community.org/widgets/multi-company-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/multi-company-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/multi-company&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/multi-company/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/multi-company/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/multi-company/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/multi-company/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/multi-company)
+[![Translation Status](https://translation.odoo-community.org/widgets/multi-company-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/multi-company-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # multi-company
 
-TODO: add repo description.
+multi-company
 
 <!-- /!\ do not modify below this line -->
 
@@ -3033,16 +2664,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.0.1 |  | Intercompany invoice rules
-[base_multi_company](base_multi_company/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
-[mail_multicompany](mail_multicompany/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
-[partner_multi_company](partner_multi_company/) | 17.0.1.0.0 |  | Select individually the partner visibility on each company
-[product_multi_company](product_multi_company/) | 17.0.1.0.0 |  | Select individually the product template visibility on each company
-[product_tax_multicompany_default](product_tax_multicompany_default/) | 17.0.1.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Product Tax Multi Company Default
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -3066,17 +2688,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-argentina.git](https://github.com/OCA/l10n-argentina.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-argentina&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-argentina/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-argentina/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-argentina/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-argentina/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-argentina/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-argentina)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-argentina-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-argentina-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-argentina&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-argentina/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-argentina/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-argentina/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-argentina/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-argentina/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-argentina)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-argentina-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-argentina-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Odoo addons for Argentina
+# l10n-argentina
 
-Odoo addons for Argentina
+l10n-argentina
 
 <!-- /!\ do not modify below this line -->
 
@@ -3108,17 +2730,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-austria.git](https://github.com/OCA/l10n-austria.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-austria&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-austria/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-austria/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-austria/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-austria/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-austria/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-austria)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-austria-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-austria-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-austria&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-austria/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-austria/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-austria/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-austria/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-austria/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-austria)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-austria-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-austria-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-austria
 
-TODO: add repo description.
+l10n-austria
 
 <!-- /!\ do not modify below this line -->
 
@@ -3150,17 +2772,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-belarus.git](https://github.com/OCA/l10n-belarus.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-belarus&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-belarus/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-belarus/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-belarus/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-belarus/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-belarus/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-belarus)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-belarus-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-belarus-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-belarus&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-belarus/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-belarus/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-belarus/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-belarus/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-belarus/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-belarus)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-belarus-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-belarus-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-belarus
 
-TODO: add repo description.
+l10n-belarus
 
 <!-- /!\ do not modify below this line -->
 
@@ -3192,17 +2814,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-belgium&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-belgium/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-belgium/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-belgium/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-belgium/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-belgium/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-belgium)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-belgium-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-belgium-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-belgium&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-belgium/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-belgium/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-belgium/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-belgium/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-belgium/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-belgium)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-belgium-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-belgium-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-belgium
 
-TODO: add repo description.
+l10n-belgium
 
 <!-- /!\ do not modify below this line -->
 
@@ -3214,10 +2836,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_statement_import_coda](account_statement_import_coda/) | 17.0.1.0.0 |  | Import CODA Bank Statement
-[companyweb_base](companyweb_base/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
-[companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
-[l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 17.0.1.0.0 |  | Belgium - KBO/BCE numbers
+[companyweb_base](companyweb_base/) | 18.0.1.0.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
 
 [//]: # (end addons)
 
@@ -3241,17 +2860,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-cambodia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-cambodia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-cambodia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-cambodia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-cambodia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-cambodia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-cambodia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-cambodia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-cambodia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-cambodia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-cambodia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-cambodia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-cambodia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-cambodia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-cambodia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-cambodia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-cambodia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-cambodia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-cambodia
 
-TODO: add repo description.
+l10n-cambodia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3283,17 +2902,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-canada&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-canada/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-canada/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-canada/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-canada/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-canada/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-canada)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-canada-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-canada-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-canada&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-canada/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-canada/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-canada/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-canada/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-canada/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-canada)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-canada-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-canada-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-canada
 
-TODO: add repo description.
+l10n-canada
 
 <!-- /!\ do not modify below this line -->
 
@@ -3325,17 +2944,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-chile.git](https://github.com/OCA/l10n-chile.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-chile&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-chile/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-chile/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-chile/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-chile/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-chile/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-chile)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-chile-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-chile-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-chile&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-chile/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-chile/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-chile/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-chile/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-chile/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-chile)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-chile-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-chile-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-chile
 
-TODO: add repo description.
+l10n-chile
 
 <!-- /!\ do not modify below this line -->
 
@@ -3367,17 +2986,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-china.git](https://github.com/OCA/l10n-china.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-china&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-china/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-china/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-china/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-china/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-china/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-china)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-china-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-china-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-china&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-china/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-china/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-china/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-china/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-china/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-china)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-china-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-china-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-china
 
-TODO: add repo description.
+l10n-china
 
 <!-- /!\ do not modify below this line -->
 
@@ -3409,17 +3028,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-colombia.git](https://github.com/OCA/l10n-colombia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-colombia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-colombia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-colombia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-colombia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-colombia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-colombia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-colombia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-colombia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-colombia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-colombia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-colombia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-colombia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-colombia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-colombia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-colombia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-colombia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-colombia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-colombia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-colombia
 
-TODO: add repo description.
+l10n-colombia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3451,17 +3070,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-costa-rica.git](https://github.com/OCA/l10n-costa-rica.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-costa-rica&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-costa-rica/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-costa-rica/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-costa-rica/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-costa-rica/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-costa-rica/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-costa-rica)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-costa-rica-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-costa-rica-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-costa-rica&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-costa-rica/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-costa-rica/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-costa-rica/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-costa-rica/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-costa-rica/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-costa-rica)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-costa-rica-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-costa-rica-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-costa-rica
 
-TODO: add repo description.
+l10n-costa-rica
 
 <!-- /!\ do not modify below this line -->
 
@@ -3493,17 +3112,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croatia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-croatia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-croatia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-croatia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-croatia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-croatia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-croatia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-croatia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-croatia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-croatia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-croatia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-croatia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-croatia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-croatia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-croatia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-croatia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-croatia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-croatia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-croatia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-croatia
 
-TODO: add repo description.
+l10n-croatia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3535,17 +3154,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ecuador&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-ecuador/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ecuador/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-ecuador/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ecuador/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-ecuador/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ecuador)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ecuador-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ecuador-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ecuador&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-ecuador/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ecuador/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-ecuador/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ecuador/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-ecuador/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ecuador)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ecuador-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ecuador-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-ecuador
 
-TODO: add repo description.
+l10n-ecuador
 
 <!-- /!\ do not modify below this line -->
 
@@ -3553,14 +3172,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_ec_account_edi](l10n_ec_account_edi/) | 17.0.1.1.1 |  | Electronic data interchange adapted Ecuadorian localization
-[l10n_ec_base](l10n_ec_base/) | 17.0.1.0.2 |  | Ecuadorian Localization
-[l10n_ec_credit_note](l10n_ec_credit_note/) | 17.0.1.0.0 |  | Credit Notes extension for Ecuador
-[l10n_ec_withhold](l10n_ec_withhold/) | 17.0.1.0.1 |  | Electronic Withholding adapted Ecuadorian localization
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -3584,17 +3196,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-estonia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-estonia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-estonia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-estonia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-estonia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-estonia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-estonia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-estonia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-estonia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-estonia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-estonia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-estonia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-estonia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-estonia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-estonia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-estonia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-estonia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-estonia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-estonia
 
-TODO: add repo description.
+l10n-estonia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3626,17 +3238,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-ethiopia.git](https://github.com/OCA/l10n-ethiopia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ethiopia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-ethiopia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ethiopia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-ethiopia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ethiopia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-ethiopia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ethiopia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ethiopia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ethiopia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ethiopia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-ethiopia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ethiopia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-ethiopia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ethiopia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-ethiopia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ethiopia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ethiopia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ethiopia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-ethiopia
 
-TODO: add repo description.
+l10n-ethiopia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3668,17 +3280,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-finland&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-finland/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-finland/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-finland/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-finland/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-finland/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-finland)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-finland-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-finland-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-finland&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-finland/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-finland/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-finland/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-finland/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-finland/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-finland)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-finland-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-finland-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-finland
 
-TODO: add repo description.
+l10n-finland
 
 <!-- /!\ do not modify below this line -->
 
@@ -3690,9 +3302,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_fi_banks](l10n_fi_banks/) | 17.0.1.0.0 |  | Finnish banks and their addresses
-[l10n_fi_edicode](l10n_fi_edicode/) | 17.0.1.0.0 |  | Adds EDI code field and operators
-[l10n_fi_sale_refund_payment_reference](l10n_fi_sale_refund_payment_reference/) | 17.0.1.0.0 |  | Automatically generate payment references for sale refunds
+[l10n_fi_banks](l10n_fi_banks/) | 18.0.1.0.0 |  | Finnish banks and their addresses
+[l10n_fi_edicode](l10n_fi_edicode/) | 18.0.1.0.0 |  | Adds EDI code field and operators
 
 [//]: # (end addons)
 
@@ -3716,17 +3327,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-france&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-france/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-france/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-france/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-france)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-france-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-france-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-france&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-france/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-france/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-france/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-france/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-france)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-france-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-france-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# French Localization
+# l10n-france
 
-French Localization Modules
+l10n-france
 
 <!-- /!\ do not modify below this line -->
 
@@ -3738,23 +3349,17 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_fr_lcr](account_banking_fr_lcr/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Create French LCR CFONB files
-[account_statement_import_fr_cfonb](account_statement_import_fr_cfonb/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import CFONB bank statements files in Odoo
-[l10n_fr_account_invoice_facturx](l10n_fr_account_invoice_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | France-specific module to generate Factur-X invoices
-[l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-configure UNECE params on French taxes
-[l10n_fr_chorus_account](l10n_fr_chorus_account/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
-[l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant Factur-X invoices
-[l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add checks on sale orders for Chorus Pro
-[l10n_fr_cog](l10n_fr_cog/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Code Officiel Géographique (COG) on countries
-[l10n_fr_das2](l10n_fr_das2/) | 17.0.2.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
-[l10n_fr_department](l10n_fr_department/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
-[l10n_fr_department_oversea](l10n_fr_department_oversea/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
-[l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
-[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | EMEBI (ex-DEB) for France
-[l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
-[l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
-[l10n_fr_siret](l10n_fr_siret/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
-[l10n_fr_state](l10n_fr_state/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French States (Régions)
+[account_statement_import_fr_cfonb](account_statement_import_fr_cfonb/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import CFONB bank statements files in Odoo
+[l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-configure UNECE params on French taxes
+[l10n_fr_cog](l10n_fr_cog/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Code Officiel Géographique (COG) on countries
+[l10n_fr_das2](l10n_fr_das2/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DAS2 (France)
+[l10n_fr_department](l10n_fr_department/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
+[l10n_fr_department_oversea](l10n_fr_department_oversea/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
+[l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
+[l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
+[l10n_fr_siret](l10n_fr_siret/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Complete support for SIRET/SIREN/NIC with checksum validation
+[l10n_fr_siret_account](l10n_fr_siret_account/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Glue module between l10n_fr_siret and account
+[l10n_fr_state](l10n_fr_state/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French States (Régions)
 
 [//]: # (end addons)
 
@@ -3778,17 +3383,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-germany&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-germany/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-germany/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-germany/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-germany/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-germany/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-germany)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-germany-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-germany-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-germany&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-germany/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-germany/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-germany/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-germany/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-germany/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-germany)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-germany-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-germany-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-germany
 
-TODO: add repo description.
+l10n-germany
 
 <!-- /!\ do not modify below this line -->
 
@@ -3820,17 +3425,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-greece.git](https://github.com/OCA/l10n-greece.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-greece&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-greece/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-greece/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-greece/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-greece/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-greece/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-greece)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-greece-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-greece-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-greece&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-greece/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-greece/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-greece/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-greece/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-greece/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-greece)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-greece-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-greece-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-greece
 
-TODO: add repo description.
+l10n-greece
 
 <!-- /!\ do not modify below this line -->
 
@@ -3862,17 +3467,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-india.git](https://github.com/OCA/l10n-india.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-india&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-india/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-india/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-india/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-india/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-india/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-india)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-india-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-india-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-india&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-india/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-india/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-india/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-india/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-india/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-india)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-india-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-india-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-india
 
-TODO: add repo description.
+l10n-india
 
 <!-- /!\ do not modify below this line -->
 
@@ -3904,17 +3509,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-indonesia.git](https://github.com/OCA/l10n-indonesia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-indonesia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-indonesia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-indonesia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-indonesia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-indonesia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-indonesia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-indonesia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-indonesia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-indonesia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-indonesia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-indonesia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-indonesia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-indonesia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-indonesia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-indonesia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-indonesia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-indonesia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-indonesia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-indonesia
 
-TODO: add repo description.
+l10n-indonesia
 
 <!-- /!\ do not modify below this line -->
 
@@ -3946,17 +3551,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-iran.git](https://github.com/OCA/l10n-iran.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-iran&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-iran/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-iran/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-iran/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-iran)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-iran-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-iran-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-iran&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-iran/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-iran/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-iran/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-iran/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-iran)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-iran-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-iran-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-iran
 
-TODO: add repo description.
+l10n-iran
 
 <!-- /!\ do not modify below this line -->
 
@@ -3964,12 +3569,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_ir_account](l10n_ir_account/) | 17.0.1.0.1 |  | iran accounting chart and localization.
-[l10n_ir_states](l10n_ir_states/) | 17.0.1.0.0 |  | Add Iran States and Cities
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -3993,17 +3593,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-ireland.git](https://github.com/OCA/l10n-ireland.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ireland&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-ireland/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ireland/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-ireland/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-ireland/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-ireland/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ireland)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ireland-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ireland-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-ireland&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-ireland/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ireland/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-ireland/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-ireland/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-ireland/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-ireland)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-ireland-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-ireland-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-ireland
 
-TODO: add repo description.
+l10n-ireland
 
 <!-- /!\ do not modify below this line -->
 
@@ -4035,17 +3635,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-italy&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-italy/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-italy/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-italy/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-italy)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-italy-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-italy-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-italy&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-italy/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-italy/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-italy/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-italy/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-italy)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-italy-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-italy-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Odoo Italia Modules
+# l10n-italy
 
-Addons concerning Odoo Italian Localization.
+l10n-italy
 
 <!-- /!\ do not modify below this line -->
 
@@ -4053,7 +3653,11 @@ Addons concerning Odoo Italian Localization.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_it_account_stamp](l10n_it_account_stamp/) | 18.0.1.0.0 |  | Gestione automatica dell'imposta di bollo
 
 [//]: # (end addons)
 
@@ -4077,17 +3681,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-japan&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-japan/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-japan/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-japan/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-japan)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-japan-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-japan-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-japan&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-japan/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-japan/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-japan/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-japan/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-japan)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-japan-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-japan-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-japan
 
-TODO: add repo description.
+l10n-japan
 
 <!-- /!\ do not modify below this line -->
 
@@ -4119,17 +3723,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-luxemburg.git](https://github.com/OCA/l10n-luxemburg.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-luxemburg&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-luxemburg/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-luxemburg/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-luxemburg/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-luxemburg/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-luxemburg/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-luxemburg)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-luxemburg-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-luxemburg-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-luxemburg&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-luxemburg/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-luxemburg/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-luxemburg/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-luxemburg/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-luxemburg/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-luxemburg)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-luxemburg-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-luxemburg-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-luxemburg
 
-TODO: add repo description.
+l10n-luxemburg
 
 <!-- /!\ do not modify below this line -->
 
@@ -4161,17 +3765,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-macedonia.git](https://github.com/OCA/l10n-macedonia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-macedonia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-macedonia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-macedonia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-macedonia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-macedonia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-macedonia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-macedonia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-macedonia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-macedonia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-macedonia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-macedonia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-macedonia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-macedonia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-macedonia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-macedonia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-macedonia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-macedonia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-macedonia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-macedonia
 
-TODO: add repo description.
+l10n-macedonia
 
 <!-- /!\ do not modify below this line -->
 
@@ -4203,17 +3807,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-mexico&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-mexico/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-mexico/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-mexico/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-mexico/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-mexico/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-mexico)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-mexico-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-mexico-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-mexico&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-mexico/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-mexico/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-mexico/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-mexico/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-mexico/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-mexico)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-mexico-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-mexico-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Odoo modules for Mexico
+# l10n-mexico
 
-This repository contains modules specific to Mexico.
+l10n-mexico
 
 <!-- /!\ do not modify below this line -->
 
@@ -4221,14 +3825,7 @@ This repository contains modules specific to Mexico.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_mx_catalogs](l10n_mx_catalogs/) | 17.0.1.0.0 |  | Catálogos del Servicio de Administración Tributaria de México
-[l10n_mx_cfdi](l10n_mx_cfdi/) | 17.0.1.0.0 |  | Allow generating CFDI (Comprobante Fiscal Digital por Internet)
-[l10n_mx_cfdi_account](l10n_mx_cfdi_account/) | 17.0.1.0.1 |  | Mexico CFDI Account Integration
-[l10n_mx_res_partner_csf](l10n_mx_res_partner_csf/) | 17.0.1.1.0 |  | Scan and extract information from CSF
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -4252,17 +3849,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-morocco.git](https://github.com/OCA/l10n-morocco.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-morocco&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-morocco/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-morocco/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-morocco/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-morocco/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-morocco/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-morocco)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-morocco-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-morocco-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-morocco&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-morocco/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-morocco/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-morocco/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-morocco/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-morocco/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-morocco)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-morocco-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-morocco-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-morocco
 
-TODO: add repo description.
+l10n-morocco
 
 <!-- /!\ do not modify below this line -->
 
@@ -4294,17 +3891,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-netherlands&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-netherlands/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-netherlands/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-netherlands/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-netherlands/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-netherlands/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-netherlands)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-netherlands-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-netherlands-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-netherlands&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-netherlands/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-netherlands/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-netherlands/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-netherlands/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-netherlands/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-netherlands)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-netherlands-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-netherlands-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-netherlands
 
-Odoo Dutch Localization
+l10n-netherlands
 
 <!-- /!\ do not modify below this line -->
 
@@ -4312,12 +3909,7 @@ Odoo Dutch Localization
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_nl_partner_name](l10n_nl_partner_name/) | 17.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
-[l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 17.0.1.0.0 |  | Export XAF auditfiles for Dutch tax authorities
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -4341,17 +3933,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-norway.git](https://github.com/OCA/l10n-norway.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-norway&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-norway/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-norway/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-norway/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-norway/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-norway/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-norway)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-norway-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-norway-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-norway&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-norway/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-norway/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-norway/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-norway/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-norway/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-norway)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-norway-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-norway-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-norway
 
-TODO: add repo description.
+l10n-norway
 
 <!-- /!\ do not modify below this line -->
 
@@ -4383,17 +3975,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-peru.git](https://github.com/OCA/l10n-peru.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-peru&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-peru/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-peru/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-peru/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-peru/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-peru/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-peru)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-peru-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-peru-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-peru&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-peru/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-peru/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-peru/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-peru/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-peru/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-peru)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-peru-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-peru-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-peru
 
-TODO: add repo description.
+l10n-peru
 
 <!-- /!\ do not modify below this line -->
 
@@ -4425,17 +4017,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-poland&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-poland/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-poland/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-poland/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-poland/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-poland/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-poland)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-poland-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-poland-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-poland&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-poland/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-poland/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-poland/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-poland/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-poland/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-poland)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-poland-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-poland-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-poland
 
-TODO: add repo description.
+l10n-poland
 
 <!-- /!\ do not modify below this line -->
 
@@ -4467,17 +4059,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-romania&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-romania/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-romania/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-romania/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-romania/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-romania/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-romania)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-romania-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-romania-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-romania&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-romania/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-romania/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-romania/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-romania/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-romania/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-romania)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-romania-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-romania-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-romania
 
-TODO: add repo description.
+l10n-romania
 
 <!-- /!\ do not modify below this line -->
 
@@ -4489,44 +4081,20 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 17.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Currency Rate Update National Bank of Romania service
-[l10n_ro_account](l10n_ro_account/) | 17.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 17.0.1.6.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
-[l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
-[l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
-[l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import
-[l10n_ro_account_bank_statement_import_mt940_brd](l10n_ro_account_bank_statement_import_mt940_brd/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from BRD
-[l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 17.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
-[l10n_ro_account_bank_statement_import_mt940_rffsn](l10n_ro_account_bank_statement_import_mt940_rffsn/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Import bank statements from Raiffeisen
-[l10n_ro_account_bank_statement_report](l10n_ro_account_bank_statement_report/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Bank Statement Report
-[l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 17.0.0.2.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
-[l10n_ro_account_period_close](l10n_ro_account_period_close/) | 17.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
-[l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 17.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
-[l10n_ro_city](l10n_ro_city/) | 17.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
-[l10n_ro_config](l10n_ro_config/) | 17.0.1.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
-[l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
-[l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
-[l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.23.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
-[l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.5.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
-[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
-[l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
-[l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
-[l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
-[l10n_ro_pos](l10n_ro_pos/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
-[l10n_ro_stock](l10n_ro_stock/) | 17.0.0.9.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
-[l10n_ro_stock_account](l10n_ro_stock_account/) | 17.0.1.26.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
-[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 17.0.1.15.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
-[l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 17.0.1.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
-[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 17.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
-[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
-[l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 17.0.0.5.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
-[l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 17.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
-[l10n_ro_stock_picking_comment_template](l10n_ro_stock_picking_comment_template/) | 17.0.0.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | This model is going to add a a header and a footer at picking report depeding on the operation type.
-[l10n_ro_stock_picking_valued_report](l10n_ro_stock_picking_valued_report/) | 17.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Picking Valued Report
-[l10n_ro_stock_price_difference](l10n_ro_stock_price_difference/) | 17.0.0.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Price Difference
-[l10n_ro_stock_report](l10n_ro_stock_report/) | 17.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fișă Magazie)
-[l10n_ro_vat_on_payment](l10n_ro_vat_on_payment/) | 17.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - VAT on Payment
+[l10n_ro_account](l10n_ro_account/) | 18.0.0.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
+[l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
+[l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 18.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
+[l10n_ro_city](l10n_ro_city/) | 18.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
+[l10n_ro_config](l10n_ro_config/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
+[l10n_ro_pos](l10n_ro_pos/) | 18.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
+[l10n_ro_stock](l10n_ro_stock/) | 18.0.0.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
+[l10n_ro_stock_account](l10n_ro_stock_account/) | 18.0.1.14.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
+[l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 18.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
+[l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 18.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
+[l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 18.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
+[l10n_ro_stock_report](l10n_ro_stock_report/) | 18.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Report (Fișă Magazie)
 
 [//]: # (end addons)
 
@@ -4550,15 +4118,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-russia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-russia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-russia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-russia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-russia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-russia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-russia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-russia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-russia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-russia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-russia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-russia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-russia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-russia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-russia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-russia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-russia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-russia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Odoo Russian Localization / Российская локализация для Odoo
+# l10n-russia
+
+l10n-russia
 
 <!-- /!\ do not modify below this line -->
 
@@ -4566,11 +4136,7 @@ and promote its widespread use.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_ru](l10n_ru/) | 17.0.1.0.0 | [![Katulos](https://github.com/Katulos.png?size=30px)](https://github.com/Katulos) | Russia - Accounting
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -4594,17 +4160,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-slovenia&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-slovenia/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-slovenia/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-slovenia/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-slovenia/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-slovenia/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-slovenia)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-slovenia-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-slovenia-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-slovenia&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-slovenia/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-slovenia/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-slovenia/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-slovenia/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-slovenia/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-slovenia)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-slovenia-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-slovenia-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-slovenia
 
-TODO: add repo description.
+l10n-slovenia
 
 <!-- /!\ do not modify below this line -->
 
@@ -4636,17 +4202,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-spain&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-spain/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-spain/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-spain/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-spain)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-spain-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-spain-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-spain&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-spain/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-spain/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-spain/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-spain/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-spain)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-spain-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-spain-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-spain
 
-TODO: add repo description.
+l10n-spain
 
 <!-- /!\ do not modify below this line -->
 
@@ -4654,46 +4220,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
-[l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
-[l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
-[l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
-[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
-[l10n_es_aeat](l10n_es_aeat/) | 17.0.2.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
-[l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.0 |  | AEAT modelo 111
-[l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
-[l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 17.0.1.1.0 |  | AEAT modelo 123
-[l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 17.0.1.0.0 |  | AEAT modelo 130
-[l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.0.1 |  | AEAT modelo 190
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.9.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
-[l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.3.0 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
-[l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_atc](l10n_es_atc/) | 17.0.1.0.1 |  | Modulo 'glue' de la AEAT para el menú de la ATC
-[l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
-[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.1.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
-[l10n_es_igic](l10n_es_igic/) | 17.0.2.1.0 |  | IGIC (Impuesto General Indirecto Canario)
-[l10n_es_igic_reav](l10n_es_igic_reav/) | 17.0.1.0.0 |  | Aplicación REAV en la localización canaria
-[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.0.0 |  | Spanish Intrastat Product Declaration
-[l10n_es_location_nuts](l10n_es_location_nuts/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS specific options for Spain
-[l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
-[l10n_es_partner](l10n_es_partner/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
-[l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.1 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming estándar AEF
-[l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
-[l10n_es_pos_oca](l10n_es_pos_oca/) | 17.0.1.0.0 |  | Punto de venta adaptado a la legislación española
-[l10n_es_reav](l10n_es_reav/) | 17.0.1.0.0 | [![Bilbonet](https://github.com/Bilbonet.png?size=30px)](https://github.com/Bilbonet) | REAV - Régimen Especial Agencias de Viajes
-[l10n_es_toponyms](l10n_es_toponyms/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 17.0.1.2.0 |  | Libro de IVA
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.0.0 |  | Prorrata de IVA para la localización española
-[payment_redsys](payment_redsys/) | 17.0.1.0.0 |  | Payment Acquirer: Redsys Implementation
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -4717,17 +4244,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-switzerland&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-switzerland/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-switzerland)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-switzerland-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-switzerland-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-switzerland&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-switzerland/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-switzerland/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-switzerland)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-switzerland-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-switzerland-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-switzerland
 
-TODO: add repo description.
+l10n-switzerland
 
 <!-- /!\ do not modify below this line -->
 
@@ -4739,10 +4266,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ebill_postfinance](ebill_postfinance/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Postfinance eBill integration
-[ebill_postfinance_server_env](ebill_postfinance_server_env/) | 17.0.1.0.0 |  | Server environment for eBill Postfinance
-[ebill_postfinance_stock](ebill_postfinance_stock/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add stock integration to Postfinance eBill
-[l10n_ch_qr_no_amount](l10n_ch_qr_no_amount/) | 17.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allow to print QR bill without amount
+[l10n_ch_account_tags](l10n_ch_account_tags/) | 18.0.1.0.0 |  | Switzerland Account Tags
 
 [//]: # (end addons)
 
@@ -4766,17 +4290,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-taiwan&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-taiwan/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-taiwan/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-taiwan/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-taiwan/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-taiwan/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-taiwan)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-taiwan-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-taiwan-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-taiwan&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-taiwan/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-taiwan/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-taiwan/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-taiwan/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-taiwan/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-taiwan)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-taiwan-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-taiwan-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-taiwan
 
-TODO: add repo description.
+l10n-taiwan
 
 <!-- /!\ do not modify below this line -->
 
@@ -4808,17 +4332,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-thailand&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-thailand/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-thailand/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-thailand/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-thailand/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-thailand/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-thailand)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-thailand-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-thailand-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-thailand&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-thailand/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-thailand/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-thailand/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-thailand/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-thailand/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-thailand)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-thailand-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-thailand-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-thailand
 
-TODO: add repo description.
+l10n-thailand
 
 <!-- /!\ do not modify below this line -->
 
@@ -4826,12 +4350,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_th_amount_to_text](l10n_th_amount_to_text/) | 17.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
-[l10n_th_mis_report](l10n_th_mis_report/) | 17.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -4855,17 +4374,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-turkey.git](https://github.com/OCA/l10n-turkey.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-turkey&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-turkey/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-turkey/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-turkey/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-turkey/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-turkey/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-turkey)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-turkey-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-turkey-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-turkey&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-turkey/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-turkey/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-turkey/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-turkey/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-turkey/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-turkey)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-turkey-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-turkey-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-turkey
 
-TODO: add repo description.
+l10n-turkey
 
 <!-- /!\ do not modify below this line -->
 
@@ -4897,17 +4416,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-united-kingdom.git](https://github.com/OCA/l10n-united-kingdom.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-united-kingdom&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-united-kingdom/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-united-kingdom/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-united-kingdom/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-united-kingdom/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-united-kingdom/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-united-kingdom)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-united-kingdom-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-united-kingdom-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-united-kingdom&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-united-kingdom/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-united-kingdom/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-united-kingdom/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-united-kingdom/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-united-kingdom/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-united-kingdom)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-united-kingdom-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-united-kingdom-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-united-kingdom
 
-TODO: add repo description.
+l10n-united-kingdom
 
 <!-- /!\ do not modify below this line -->
 
@@ -4939,17 +4458,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-uruguay.git](https://github.com/OCA/l10n-uruguay.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-uruguay&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-uruguay/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-uruguay/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-uruguay/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-uruguay/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-uruguay/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-uruguay)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-uruguay-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-uruguay-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-uruguay&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-uruguay/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-uruguay/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-uruguay/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-uruguay/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-uruguay/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-uruguay)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-uruguay-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-uruguay-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-uruguay
 
-TODO: add repo description.
+l10n-uruguay
 
 <!-- /!\ do not modify below this line -->
 
@@ -4981,17 +4500,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-usa&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-usa/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-usa/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-usa/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-usa/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-usa/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-usa)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-usa-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-usa-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-usa&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-usa/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-usa/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-usa/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-usa/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-usa/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-usa)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-usa-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-usa-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-usa
 
-TODO: add repo description.
+l10n-usa
 
 <!-- /!\ do not modify below this line -->
 
@@ -4999,13 +4518,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[l10n_us_form_1099](l10n_us_form_1099/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage 1099 Types and Suppliers
-[l10n_us_mis_financial_report](l10n_us_mis_financial_report/) | 17.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Profit & Loss (US) / Balance sheet (US) MIS templates
-[l10n_us_partner_legal_number](l10n_us_partner_legal_number/) | 17.0.1.0.0 |  | Add Legal Number for North American Banking & Financials
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -5029,17 +4542,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-venezuela&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-venezuela/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-venezuela/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-venezuela/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-venezuela/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-venezuela/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-venezuela)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-venezuela-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-venezuela-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-venezuela&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-venezuela/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-venezuela/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-venezuela/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-venezuela/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-venezuela/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-venezuela)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-venezuela-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-venezuela-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-venezuela
 
-TODO: add repo description.
+l10n-venezuela
 
 <!-- /!\ do not modify below this line -->
 
@@ -5071,17 +4584,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-vietnam&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/l10n-vietnam/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-vietnam/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/l10n-vietnam/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/l10n-vietnam/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/l10n-vietnam/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-vietnam)
-[![Translation Status](https://translation.odoo-community.org/widgets/l10n-vietnam-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-vietnam-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/l10n-vietnam&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/l10n-vietnam/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-vietnam/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/l10n-vietnam/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/l10n-vietnam/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/l10n-vietnam/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-vietnam)
+[![Translation Status](https://translation.odoo-community.org/widgets/l10n-vietnam-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/l10n-vietnam-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # l10n-vietnam
 
-TODO: add repo description.
+l10n-vietnam
 
 <!-- /!\ do not modify below this line -->
 
@@ -5113,17 +4626,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/delivery-carrier&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/delivery-carrier/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/delivery-carrier)
-[![Translation Status](https://translation.odoo-community.org/widgets/delivery-carrier-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/delivery-carrier-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/delivery-carrier&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/delivery-carrier/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/delivery-carrier/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/delivery-carrier/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/delivery-carrier)
+[![Translation Status](https://translation.odoo-community.org/widgets/delivery-carrier-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/delivery-carrier-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # delivery-carrier
 
-TODO: add repo description.
+delivery-carrier
 
 <!-- /!\ do not modify below this line -->
 
@@ -5135,19 +4648,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_delivery_carrier_label](base_delivery_carrier_label/) | 17.0.1.0.3 |  | Base module for carrier labels
-[delivery_carrier_account](delivery_carrier_account/) | 17.0.1.0.0 |  | Delivery Carrier Account
-[delivery_carrier_info](delivery_carrier_info/) | 17.0.1.0.0 |  | Add code on carrier
-[delivery_carrier_manual_price](delivery_carrier_manual_price/) | 17.0.1.0.0 |  | Allow setting manual shipping cost in sale order.
-[delivery_carrier_manual_weight](delivery_carrier_manual_weight/) | 17.0.1.0.0 |  | Allow setting weight and shipping weight in stock transfers manually based on carrier.
-[delivery_carrier_partner](delivery_carrier_partner/) | 17.0.1.0.0 |  | Add a partner in the delivery carrier
-[delivery_free_fee_removal](delivery_free_fee_removal/) | 17.0.1.0.0 |  | Hide free fee lines on sales orders
-[delivery_package_number](delivery_package_number/) | 17.0.1.0.0 |  | Set or compute number of packages for a picking
-[delivery_roulier](delivery_roulier/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
-[delivery_roulier_option](delivery_roulier_option/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
-[delivery_state](delivery_state/) | 17.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
-[partner_delivery_info](partner_delivery_info/) | 17.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
-[sale_order_warehouse_from_delivery_carrier](sale_order_warehouse_from_delivery_carrier/) | 17.0.1.0.0 |  | Sale Order WH from Delivery Carrier
+[delivery_carrier_partner](delivery_carrier_partner/) | 18.0.1.0.0 |  | Add a partner in the delivery carrier
+[delivery_carrier_pricelist](delivery_carrier_pricelist/) | 18.0.1.0.0 |  | Compute delivery method price based on the product's pricelist.
+[delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
+[delivery_free_fee_removal](delivery_free_fee_removal/) | 18.0.1.0.0 |  | Hide free fee lines on sales orders
+[delivery_package_fee](delivery_package_fee/) | 18.0.1.0.0 |  | Add fees on sales order for delivered packages
+[partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.0 |  | Set on partners a schedule for delivery goods
 
 [//]: # (end addons)
 
@@ -5171,17 +4677,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-barcode&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/stock-logistics-barcode/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-barcode)
-[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-barcode-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-barcode-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-barcode&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-barcode/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-barcode/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-barcode)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-barcode-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-barcode-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # stock-logistics-barcode
 
-TODO: add repo description.
+stock-logistics-barcode
 
 <!-- /!\ do not modify below this line -->
 
@@ -5189,12 +4695,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Any Models
-[barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Generate Barcodes for Products (Templates and Variants)
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -5218,17 +4719,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-workflow&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/stock-logistics-workflow/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-workflow)
-[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-workflow-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-workflow-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-workflow&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-workflow/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-workflow/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-workflow)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-workflow-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-workflow-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # stock-logistics-workflow
 
-TODO: add repo description.
+stock-logistics-workflow
 
 <!-- /!\ do not modify below this line -->
 
@@ -5240,43 +4741,18 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 17.0.1.1.1 |  | Delivery Procurement Group Carrier
-[purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 17.0.1.0.0 |  | Adds link between purchases, pickings and invoices
-[sale_order_global_stock_route](sale_order_global_stock_route/) | 17.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
-[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 17.0.1.0.1 |  | Add more flexibility in the run fifo method.
-[stock_account_show_automatic_valuation](stock_account_show_automatic_valuation/) | 17.0.1.0.0 |  | Allow automatic valuation for stock moves in community edition
-[stock_lock_lot](stock_lock_lot/) | 17.0.1.0.0 |  | Stock Lock Lot
-[stock_lot_on_hand_first](stock_lot_on_hand_first/) | 17.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to display lots on hand first in M2o fields
-[stock_lot_production_date](stock_lot_production_date/) | 17.0.1.0.0 | [![atchuthan](https://github.com/atchuthan.png?size=30px)](https://github.com/atchuthan) | Stock Lot Production Date
-[stock_move_forced_lot](stock_move_forced_lot/) | 17.0.1.0.0 |  | This module allows you to set a lot_id in a procurement to force the stock move generated to only reserve the selected lot.
-[stock_move_line_reference_link](stock_move_line_reference_link/) | 17.0.1.0.0 |  | Add link in stock move line references.
-[stock_move_planned_consumed_date](stock_move_planned_consumed_date/) | 17.0.1.0.0 |  | Stock Move planned consumed date
-[stock_no_negative](stock_no_negative/) | 17.0.1.0.0 |  | Disallow negative stock levels by default
-[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
-[stock_picking_back2draft](stock_picking_back2draft/) | 17.0.1.0.0 |  | Reopen cancelled pickings
-[stock_picking_filter_lot](stock_picking_filter_lot/) | 17.0.1.0.0 |  | In picking out lots' selection, filter lots based on their location
-[stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.2.3 |  | Adds link between pickings and invoices
-[stock_picking_kind](stock_picking_kind/) | 17.0.1.0.0 |  | Computes the kind of picking based on locations
-[stock_picking_origin_reference](stock_picking_origin_reference/) | 17.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
-[stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 17.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
-[stock_picking_origin_reference_sale](stock_picking_origin_reference_sale/) | 17.0.1.0.0 |  | Transfer to Sales Order navigation from the Source Document.
-[stock_picking_partner_note](stock_picking_partner_note/) | 17.0.1.0.0 |  | Add partner notes on picking
-[stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 17.0.1.0.0 |  | Link between picking and purchase order
-[stock_picking_return_lot](stock_picking_return_lot/) | 17.0.1.0.0 |  | Propagate SN/lots from origin picking to return picking.
-[stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 17.0.1.0.0 |  | Restrict the return to delivered quantity
-[stock_picking_sale_order_link](stock_picking_sale_order_link/) | 17.0.1.0.0 |  | Link between picking and sale order
-[stock_picking_send_by_mail](stock_picking_send_by_mail/) | 17.0.1.0.0 |  | Send stock picking by email
-[stock_picking_show_backorder](stock_picking_show_backorder/) | 17.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
-[stock_picking_show_return](stock_picking_show_return/) | 17.0.1.0.1 |  | Show returns on stock pickings
-[stock_picking_supplier_ref](stock_picking_supplier_ref/) | 17.0.1.0.0 |  | Adds a supplier reference field inside supplier's pickings and allows search for this reference.
-[stock_picking_warn_message](stock_picking_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on picking to ensure warning is populated
-[stock_quant_package_dimension](stock_quant_package_dimension/) | 17.0.1.0.0 |  | Use dimensions on packages
-[stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 17.0.1.0.0 |  | Use product packagings on packages
-[stock_restrict_lot](stock_restrict_lot/) | 17.0.1.2.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
-[stock_scrap_tier_validation](stock_scrap_tier_validation/) | 17.0.1.0.0 |  | Stock Scrap Tier Validation
-[stock_scrap_tier_validation_mrp](stock_scrap_tier_validation_mrp/) | 17.0.1.0.0 |  | Stock Scrap Tier Validation: MRP compatibility
-[stock_split_picking](stock_split_picking/) | 17.0.1.0.0 |  | Split a picking in two not transferred pickings
-[stock_valuation_layer_usage](stock_valuation_layer_usage/) | 17.0.1.0.1 |  | Trace where has the stock valuation been used in, including the quantities taken.
+[sale_order_global_stock_route](sale_order_global_stock_route/) | 18.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
+[stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 18.0.1.0.1 |  | Add more flexibility in the run fifo method.
+[stock_dangerous_goods](stock_dangerous_goods/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Adds utility fields to manage dangerous goods
+[stock_no_negative](stock_no_negative/) | 18.0.1.0.0 |  | Disallow negative stock levels by default
+[stock_owner_restriction](stock_owner_restriction/) | 18.0.1.0.0 |  | Do not reserve quantity with assigned owner
+[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
+[stock_picking_group_by_base](stock_picking_group_by_base/) | 18.0.1.0.0 |  | Allows to define a way to create index on extensible domain
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 18.0.1.0.0 |  | Adds link between pickings and invoices
+[stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 18.0.1.0.0 |  | Restrict the return to delivered quantity
+[stock_picking_sale_order_link](stock_picking_sale_order_link/) | 18.0.1.0.0 |  | Link between picking and sale order
+[stock_picking_show_return](stock_picking_show_return/) | 18.0.1.0.0 |  | Show returns on stock pickings
+[stock_picking_whole_scrap](stock_picking_whole_scrap/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Create whole scrap from a picking for move lines
 
 [//]: # (end addons)
 
@@ -5300,17 +4776,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-tracking&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/stock-logistics-tracking/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-tracking/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/stock-logistics-tracking/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-tracking/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/stock-logistics-tracking/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-tracking)
-[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-tracking-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-tracking-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-tracking&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-tracking/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-tracking/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/stock-logistics-tracking/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-tracking/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-tracking/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-tracking)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-tracking-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-tracking-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # stock-logistics-tracking
 
-TODO: add repo description.
+stock-logistics-tracking
 
 <!-- /!\ do not modify below this line -->
 
@@ -5342,17 +4818,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-warehouse&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/stock-logistics-warehouse/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-warehouse)
-[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-warehouse-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-warehouse-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-warehouse&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-warehouse/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-warehouse/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-warehouse)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-warehouse-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-warehouse-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # stock-logistics-warehouse
 
-TODO: add repo description.
+stock-logistics-warehouse
 
 <!-- /!\ do not modify below this line -->
 
@@ -5364,33 +4840,15 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_move_line_product](account_move_line_product/) | 17.0.1.0.0 |  | Displays the product in the journal entries and items
-[account_move_line_stock_info](account_move_line_stock_info/) | 17.0.1.0.0 |  | Account Move Line Stock Info
-[base_product_merge](base_product_merge/) | 17.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Merge duplicate products
-[product_route_profile](product_route_profile/) | 17.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Add Route profile concept on product
-[scrap_reason_code](scrap_reason_code/) | 17.0.1.0.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
-[stock_archive_constraint](stock_archive_constraint/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
-[stock_change_qty_reason](stock_change_qty_reason/) | 17.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.0 |  | Allows to create demand estimates.
-[stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 17.0.1.0.0 |  | Allows to create demand estimates.
-[stock_helper](stock_helper/) | 17.0.1.1.1 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 17.0.1.2.1 |  | Allows to do an easier follow up of the Inventory Adjustments
-[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
-[stock_location_lockdown](stock_location_lockdown/) | 17.0.1.0.0 |  | Prevent to add stock on locked locations
-[stock_location_zone](stock_location_zone/) | 17.0.1.0.0 |  | Classify locations with zones.
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 17.0.1.0.1 |  | Add a MTS+MTO route
-[stock_packaging_calculator](stock_packaging_calculator/) | 17.0.1.1.0 |  | Compute product quantity to pick by packaging
-[stock_picking_volume](stock_picking_volume/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
-[stock_picking_volume_packaging](stock_picking_volume_packaging/) | 17.0.1.0.0 |  | Use volume information on potential product packaging to compute the volume of a stock.move
-[stock_quant_manual_assign](stock_quant_manual_assign/) | 17.0.1.0.0 |  | Stock - Manual Quant Assignment
-[stock_quant_reservation_info](stock_quant_reservation_info/) | 17.0.1.0.0 |  | Allows to see the reserved info of Products
-[stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 17.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
-[stock_removal_location_by_priority](stock_removal_location_by_priority/) | 17.0.1.0.0 |  | Establish a removal priority on stock locations.
-[stock_reserve](stock_reserve/) | 17.0.1.0.0 |  | Stock reservations on products
-[stock_route_mto](stock_route_mto/) | 17.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
-[stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 17.0.1.0.0 |  | Allows to search for picking from supplierinfo code
-[stock_secondary_unit](stock_secondary_unit/) | 17.0.1.0.0 |  | Get product quantities in a secondary unit
-[stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
+[account_move_line_stock_info](account_move_line_stock_info/) | 18.0.1.0.0 |  | Account Move Line Stock Info
+[stock_archive_constraint](stock_archive_constraint/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
+[stock_demand_estimate](stock_demand_estimate/) | 18.0.1.0.0 |  | Allows to create demand estimates.
+[stock_location_empty](stock_location_empty/) | 18.0.1.0.0 |  | Adds a filter for empty stock location
+[stock_location_zone](stock_location_zone/) | 18.0.1.0.0 |  | Classify locations with zones.
+[stock_move_common_dest](stock_move_common_dest/) | 18.0.1.0.0 |  | Adds field for common destination moves
+[stock_packaging_calculator](stock_packaging_calculator/) | 18.0.1.0.0 |  | Compute product quantity to pick by packaging
+[stock_quant_cost_info](stock_quant_cost_info/) | 18.0.1.0.0 |  | Shows the cost of the quants
+[stock_warehouse_calendar](stock_warehouse_calendar/) | 18.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
 
@@ -5414,17 +4872,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/stock-logistics-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/stock-logistics-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/stock-logistics-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/stock-logistics-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/stock-logistics-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/stock-logistics-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # stock-logistics-reporting
 
-TODO: add repo description.
+stock-logistics-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -5432,16 +4890,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[delivery_line_sale_line_position](delivery_line_sale_line_position/) | 17.0.1.0.0 |  | Adds the sale line position to the delivery report lines
-[stock_move_value_report](stock_move_value_report/) | 17.0.1.0.0 |  | Stock Move Cost Value Report
-[stock_picking_comment_template](stock_picking_comment_template/) | 17.0.1.0.0 |  | Comments texts templates on Picking documents
-[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
-[stock_picking_report_valued](stock_picking_report_valued/) | 17.0.1.0.0 |  | Adding Valued Picking on Delivery Slip report
-[stock_quantity_history_location](stock_quantity_history_location/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![rolandojduartem](https://github.com/rolandojduartem.png?size=30px)](https://github.com/rolandojduartem) | Provides stock quantity by location on past date
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -5465,17 +4914,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rma&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/rma/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/rma/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/rma/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/rma/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/rma/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/rma)
-[![Translation Status](https://translation.odoo-community.org/widgets/rma-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rma-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rma&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/rma/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/rma/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/rma/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/rma/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/rma/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/rma)
+[![Translation Status](https://translation.odoo-community.org/widgets/rma-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rma-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # rma
 
-TODO: add repo description.
+rma
 
 <!-- /!\ do not modify below this line -->
 
@@ -5487,9 +4936,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[product_warranty](product_warranty/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 17.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
-[rma_lot](rma_lot/) | 17.0.1.0.0 |  | Manage lot in RMA
+[product_warranty](product_warranty/) | 18.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 
 [//]: # (end addons)
 
@@ -5513,17 +4960,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/ddmrp&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/ddmrp/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/ddmrp/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/ddmrp/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/ddmrp)
-[![Translation Status](https://translation.odoo-community.org/widgets/ddmrp-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/ddmrp-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/ddmrp&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/ddmrp/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/ddmrp/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/ddmrp/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/ddmrp/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/ddmrp)
+[![Translation Status](https://translation.odoo-community.org/widgets/ddmrp-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/ddmrp-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # ddmrp
 
-TODO: add repo description.
+ddmrp
 
 <!-- /!\ do not modify below this line -->
 
@@ -5531,20 +4978,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.1.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
-[ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
-[ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
-[ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
-[ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Define additional rules to exclude certain moves from ADU calculation
-[ddmrp_exclude_moves_adu_calc_sales](ddmrp_exclude_moves_adu_calc_sales/) | 17.0.1.0.1 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | DDMRP Exclude Moves ADU Calc integration with Sales app.
-[ddmrp_history](ddmrp_history/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to store historical data of DDMRP buffers.
-[ddmrp_report_part_flow_index](ddmrp_report_part_flow_index/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Provides the DDMRP Parts Flow Index Report
-[ddmrp_warning](ddmrp_warning/) | 17.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds configuration warnings on stock buffers.
-[ddmrp_warning_as_job](ddmrp_warning_as_job/) | 17.0.1.0.0 |  | Run DDMRP Warning as jobs
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -5568,17 +5002,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/wms&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/wms/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/wms/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/wms/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/wms/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/wms/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/wms)
-[![Translation Status](https://translation.odoo-community.org/widgets/wms-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/wms-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/wms&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/wms/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/wms/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/wms/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/wms/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/wms/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/wms)
+[![Translation Status](https://translation.odoo-community.org/widgets/wms-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/wms-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # wms
 
-WMS modules for Odoo
+wms
 
 <!-- /!\ do not modify below this line -->
 
@@ -5590,8 +5024,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[stock_picking_type_shipping_policy](stock_picking_type_shipping_policy/) | 17.0.1.0.0 |  | Define different shipping policies according to picking type
-[stock_warehouse_flow](stock_warehouse_flow/) | 17.0.1.0.0 |  | Configure routing flow for stock moves
+[delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.0 |  | Get delivery method used in sales orders from warehouse
 
 [//]: # (end addons)
 
@@ -5615,17 +5048,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/manufacture/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/manufacture/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/manufacture/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/manufacture)
-[![Translation Status](https://translation.odoo-community.org/widgets/manufacture-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/manufacture/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/manufacture/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/manufacture/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/manufacture/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/manufacture)
+[![Translation Status](https://translation.odoo-community.org/widgets/manufacture-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # manufacture
 
-TODO: add repo description.
+manufacture
 
 <!-- /!\ do not modify below this line -->
 
@@ -5637,25 +5070,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_move_line_mrp_info](account_move_line_mrp_info/) | 17.0.1.0.0 |  | Account Move Line Mrp Info
-[mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
-[mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
-[mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.1 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
-[mrp_multi_level](mrp_multi_level/) | 17.0.1.2.7 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
-[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
-[mrp_planned_order_matrix](mrp_planned_order_matrix/) | 17.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
-[mrp_production_back_to_draft](mrp_production_back_to_draft/) | 17.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
-[mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
-[mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 17.0.1.0.0 |  | Updates the operation type creating MO based on the product
-[mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create repair order from manufacturing order
-[mrp_sale_info](mrp_sale_info/) | 17.0.1.1.0 |  | Adds sale information to Manufacturing models
-[mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 17.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
-[mrp_tag](mrp_tag/) | 17.0.1.0.0 |  | Allows to add multiple tags to Manufacturing Orders
-[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
-[mrp_workorder_sequence](mrp_workorder_sequence/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | adds sequence to production work orders.
-[quality_control_oca](quality_control_oca/) | 17.0.1.0.0 |  | Generic infrastructure for quality tests.
-[quality_control_oca_timesheet](quality_control_oca_timesheet/) | 17.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Quality Control - Timesheet (OCA)
-[quality_control_stock_oca](quality_control_stock_oca/) | 17.0.1.0.0 |  | Quality control - Stock (OCA)
+[mrp_multi_level](mrp_multi_level/) | 18.0.1.0.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
+[mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
+[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
 
@@ -5679,17 +5096,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/manufacture-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/manufacture-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/manufacture-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/manufacture-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/manufacture-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/manufacture-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/manufacture-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/manufacture-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/manufacture-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/manufacture-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/manufacture-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/manufacture-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/manufacture-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/manufacture-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/manufacture-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/manufacture-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # manufacture-reporting
 
-TODO: add repo description.
+manufacture-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -5701,10 +5118,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mrp_bom_structure_report_level_1](mrp_bom_structure_report_level_1/) | 17.0.1.0.0 |  | MRP BOM Structure Report Level 1
-[mrp_bom_structure_xlsx](mrp_bom_structure_xlsx/) | 17.0.1.0.1 |  | Export BoM Structure to Excel .XLSX
-[mrp_bom_structure_xlsx_level_1](mrp_bom_structure_xlsx_level_1/) | 17.0.1.0.0 |  | Export BOM Structure (Level 1) to Excel .XLSX
-[mrp_flattened_bom_xlsx](mrp_flattened_bom_xlsx/) | 17.0.1.0.0 |  | Export Flattened BOM to Excel
+[mrp_flattened_bom_xlsx](mrp_flattened_bom_xlsx/) | 18.0.1.0.0 |  | Export Flattened BOM to Excel
 
 [//]: # (end addons)
 
@@ -5728,17 +5142,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/management-system&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/management-system/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/management-system/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/management-system/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/management-system/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/management-system/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/management-system)
-[![Translation Status](https://translation.odoo-community.org/widgets/management-system-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/management-system-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/management-system&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/management-system/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/management-system/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/management-system/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/management-system/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/management-system/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/management-system)
+[![Translation Status](https://translation.odoo-community.org/widgets/management-system-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/management-system-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Management System
+# management-system
 
-Odoo modules to support management systems
+management-system
 
 <!-- /!\ do not modify below this line -->
 
@@ -5750,32 +5164,31 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[document_page_environment_manual](document_page_environment_manual/) | 17.0.1.0.0 |  | Document Management - Wiki - Environment Manual
-[document_page_environmental_aspect](document_page_environmental_aspect/) | 17.0.1.0.0 |  | Environmental Aspects
-[document_page_health_safety_manual](document_page_health_safety_manual/) | 17.0.1.0.0 |  | Health and Safety Manual
-[document_page_procedure](document_page_procedure/) | 17.0.1.0.0 |  | Document Management - Wiki - Procedures
-[document_page_quality_manual](document_page_quality_manual/) | 17.0.1.0.0 |  | Quality Manual
-[document_page_work_instruction](document_page_work_instruction/) | 17.0.1.0.0 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 17.0.1.1.0 |  | Management System
-[mgmtsystem_action](mgmtsystem_action/) | 17.0.1.0.0 |  | Management System - Action
-[mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 17.0.1.0.0 |  | Add information on the application of the Action.
-[mgmtsystem_action_template](mgmtsystem_action_template/) | 17.0.1.0.0 |  | Add Template management for Actions.
-[mgmtsystem_audit](mgmtsystem_audit/) | 17.0.1.0.0 |  | Management System - Audit
-[mgmtsystem_hazard](mgmtsystem_hazard/) | 17.0.1.0.0 |  | Hazard
-[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 17.0.1.0.0 |  | Hazard Risk
-[mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 17.0.1.0.0 |  | Information Security Management System Manual
-[mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.0 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.0.0 |  | Management System - Nonconformity
-[mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 17.0.1.0.0 |  | Management System - Nonconformity Hazard
-[mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 17.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
-[mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 17.0.1.0.0 |  | Bridge module between mrp and mgmsystem
-[mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 17.0.1.0.0 |  | Bridge module between Product and Management System.
-[mgmtsystem_nonconformity_quality_control_oca](mgmtsystem_nonconformity_quality_control_oca/) | 17.0.1.0.0 |  | Bridge module between Quality Control and Non Conformities
-[mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 17.0.1.0.0 |  | Bridge module between Repair and Non Conformities
-[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.0.0 |  | Add Nonconformity classification for the root context.
-[mgmtsystem_partner](mgmtsystem_partner/) | 17.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_review](mgmtsystem_review/) | 17.0.1.0.0 |  | Management System - Review
-[mgmtsystem_survey](mgmtsystem_survey/) | 17.0.1.0.0 |  | Management System - Survey
+[document_page_environment_manual](document_page_environment_manual/) | 18.0.1.0.0 |  | Document Management - Wiki - Environment Manual
+[document_page_environmental_aspect](document_page_environmental_aspect/) | 18.0.1.0.0 |  | Environmental Aspects
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 18.0.1.0.0 |  | Health and Safety Manual
+[document_page_procedure](document_page_procedure/) | 18.0.1.0.0 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 18.0.1.0.0 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 18.0.1.0.0 |  | Document Management - Wiki - Work Instructions
+[mgmtsystem](mgmtsystem/) | 18.0.1.0.0 |  | Management System
+[mgmtsystem_action](mgmtsystem_action/) | 18.0.1.0.0 |  | Management System - Action
+[mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 18.0.1.0.0 |  | Add information on the application of the Action.
+[mgmtsystem_action_template](mgmtsystem_action_template/) | 18.0.1.0.0 |  | Add Template management for Actions.
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 18.0.1.0.0 |  | Hazard
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 18.0.1.0.0 |  | Hazard Risk
+[mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 18.0.1.0.0 |  | Information Security Management System Manual
+[mgmtsystem_manual](mgmtsystem_manual/) | 18.0.1.0.0 |  | Management System - Manual
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 18.0.1.0.0 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 18.0.1.0.0 |  | Management System - Nonconformity Hazard
+[mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 18.0.1.0.0 |  | Bridge module between hr and mgmsystem and
+[mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 18.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
+[mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 18.0.1.0.0 |  | Bridge module between mrp and mgmsystem
+[mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 18.0.1.0.0 |  | Bridge module between Product and Management System.
+[mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 18.0.1.0.0 |  | Bridge module between Repair and Non Conformities
+[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 18.0.1.0.0 |  | Add Nonconformity classification for the root context.
+[mgmtsystem_partner](mgmtsystem_partner/) | 18.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
+[mgmtsystem_review](mgmtsystem_review/) | 18.0.1.0.0 |  | Management System - Review
+[mgmtsystem_survey](mgmtsystem_survey/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Management System - Survey
 
 [//]: # (end addons)
 
@@ -5799,17 +5212,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/pms&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/pms/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/pms/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/pms/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/pms/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/pms/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/pms)
-[![Translation Status](https://translation.odoo-community.org/widgets/pms-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/pms-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/pms&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/pms/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/pms/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/pms/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/pms/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/pms/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/pms)
+[![Translation Status](https://translation.odoo-community.org/widgets/pms-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/pms-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # pms
 
-TODO: add repo description.
+pms
 
 <!-- /!\ do not modify below this line -->
 
@@ -5841,17 +5254,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/purchase-workflow/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/purchase-workflow)
-[![Translation Status](https://translation.odoo-community.org/widgets/purchase-workflow-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-workflow-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-workflow&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/purchase-workflow/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/purchase-workflow/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/purchase-workflow/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/purchase-workflow)
+[![Translation Status](https://translation.odoo-community.org/widgets/purchase-workflow-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-workflow-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # purchase-workflow
 
-TODO: add repo description.
+purchase-workflow
 
 <!-- /!\ do not modify below this line -->
 
@@ -5863,45 +5276,20 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
-[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.3.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
-[purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
-[purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
-[purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.0 |  | Purchase Blanket Orders
-[purchase_cancel_reason](purchase_cancel_reason/) | 17.0.1.0.0 |  | Purchase Cancel Reason
-[purchase_commercial_partner](purchase_commercial_partner/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Supplier' on POs
-[purchase_default_terms_conditions](purchase_default_terms_conditions/) | 17.0.1.0.0 |  | This module allows purchase default terms & conditions
-[purchase_delivery_split_date](purchase_delivery_split_date/) | 17.0.1.0.2 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
-[purchase_deposit](purchase_deposit/) | 17.0.1.1.0 |  | Option to create deposit from purchase order
-[purchase_exception](purchase_exception/) | 17.0.1.0.0 |  | Custom exceptions on purchase order
-[purchase_fop_shipping](purchase_fop_shipping/) | 17.0.1.0.1 |  | Purchase Free-Of-Payment shipping
-[purchase_force_invoiced](purchase_force_invoiced/) | 17.0.1.0.0 |  | Allows to force the billing status of the purchase order to "Invoiced"
-[purchase_invoice_method](purchase_invoice_method/) | 17.0.1.0.0 |  | Allow to force the invoice method of a purchase
-[purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
-[purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
-[purchase_manual_delivery](purchase_manual_delivery/) | 17.0.1.0.0 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
-[purchase_no_rfq](purchase_no_rfq/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
-[purchase_open_qty](purchase_open_qty/) | 17.0.2.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
-[purchase_order_archive](purchase_order_archive/) | 17.0.1.0.0 |  | Archive Purchase Orders
-[purchase_order_line_deep_sort](purchase_order_line_deep_sort/) | 17.0.1.0.0 |  | Purchase Order Line Sort
-[purchase_order_line_menu](purchase_order_line_menu/) | 17.0.1.0.0 |  | Adds Purchase Order Lines Menu
-[purchase_order_line_stock_available](purchase_order_line_stock_available/) | 17.0.1.0.0 |  | Purchase order line stock available
-[purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
-[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 17.0.1.0.0 |  | Purchase product in a secondary unit
-[purchase_order_type](purchase_order_type/) | 17.0.1.0.2 |  | Purchase Order Type
-[purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
-[purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
-[purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.1 |  | Purchase Reception Notify
-[purchase_request](purchase_request/) | 17.0.1.3.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
-[purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
-[purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
-[purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
-[purchase_security](purchase_security/) | 17.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
-[purchase_tag](purchase_tag/) | 17.0.1.1.1 |  | Allows to add multiple tags to purchase orders
-[purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
-[purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
-[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
-[supplier_calendar](supplier_calendar/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
+[purchase_all_shipments](purchase_all_shipments/) | 18.0.1.0.0 |  | Purchase All Shipments
+[purchase_cancel_reason](purchase_cancel_reason/) | 18.0.1.0.0 |  | Purchase Cancel Reason
+[purchase_commercial_partner](purchase_commercial_partner/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Supplier' on POs
+[purchase_deposit](purchase_deposit/) | 18.0.1.0.0 |  | Option to create deposit from purchase order
+[purchase_exception](purchase_exception/) | 18.0.1.0.0 |  | Custom exceptions on purchase order
+[purchase_last_price_info](purchase_last_price_info/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
+[purchase_open_qty](purchase_open_qty/) | 18.0.1.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
+[purchase_order_archive](purchase_order_archive/) | 18.0.1.0.0 |  | Archive Purchase Orders
+[purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
+[purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
+[purchase_order_type](purchase_order_type/) | 18.0.1.0.0 |  | Purchase Order Type
+[purchase_request](purchase_request/) | 18.0.1.0.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request_department](purchase_request_department/) | 18.0.1.0.0 |  | Purchase Request Department
+[vendor_transport_lead_time](vendor_transport_lead_time/) | 18.0.1.0.0 |  | Purchase delay based on transport and supplier delays
 
 [//]: # (end addons)
 
@@ -5925,17 +5313,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/purchase-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/purchase-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/purchase-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/purchase-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/purchase-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/purchase-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/purchase-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/purchase-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/purchase-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/purchase-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/purchase-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/purchase-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/purchase-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/purchase-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/purchase-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/purchase-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # purchase-reporting
 
-TODO: add repo description.
+purchase-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -5943,7 +5331,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[purchase_comment_template](purchase_comment_template/) | 18.0.1.0.0 |  | Comments texts templates on Purchase documents
 
 [//]: # (end addons)
 
@@ -5967,17 +5359,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/product-attribute/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-attribute/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/product-attribute/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-attribute)
-[![Translation Status](https://translation.odoo-community.org/widgets/product-attribute-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-attribute-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-attribute/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/product-attribute/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-attribute/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/product-attribute/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-attribute)
+[![Translation Status](https://translation.odoo-community.org/widgets/product-attribute-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-attribute-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # product-attribute
 
-TODO: add repo description.
+product-attribute
 
 <!-- /!\ do not modify below this line -->
 
@@ -5989,38 +5381,28 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[product_category_active](product_category_active/) | 17.0.1.0.0 |  | Add option to archive product categories
-[product_category_code](product_category_code/) | 17.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
-[product_code_mandatory](product_code_mandatory/) | 17.0.1.0.0 |  | Set Product Internal Reference as a required field
-[product_code_unique](product_code_unique/) | 17.0.1.0.0 |  | Set Product Internal Reference as Unique
-[product_dimension](product_dimension/) | 17.0.1.0.0 |  | Product Dimension
-[product_document_domain](product_document_domain/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | More user friendly domain and new filters for product documents
-[product_logistics_uom](product_logistics_uom/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
-[product_main_supplierinfo](product_main_supplierinfo/) | 17.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display the main vendor of a product.
-[product_manufacturer](product_manufacturer/) | 17.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
-[product_net_weight](product_net_weight/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
-[product_packaging_dimension](product_packaging_dimension/) | 17.0.1.0.0 |  | Manage packaging dimensions and weight
-[product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![kobros-tech](https://github.com/kobros-tech.png?size=30px)](https://github.com/kobros-tech) | Set a fixed currency rate between pricelists
-[product_pricelist_item_list_view](product_pricelist_item_list_view/) | 17.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
-[product_pricelist_revision](product_pricelist_revision/) | 17.0.1.0.0 |  | Product Pricelist Revision
-[product_pricelist_simulation](product_pricelist_simulation/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simulate the product price for all pricelists
-[product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 17.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to create priceslists based on supplier info
-[product_print_category](product_print_category/) | 17.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Define print categories for products and automate products print, when data has changed
-[product_product_template_link](product_product_template_link/) | 17.0.1.0.0 |  | Adds a button in product to view the template
-[product_readonly_security](product_readonly_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product Readonly Security
-[product_secondary_unit](product_secondary_unit/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set a secondary unit per product
-[product_sequence](product_sequence/) | 17.0.1.0.0 |  | Product Sequence
-[product_set](product_set/) | 17.0.1.0.1 |  | Product set
-[product_state](product_state/) | 17.0.1.1.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
-[product_status](product_status/) | 17.0.1.1.0 |  | Product Status Computed From Fields
-[product_supplierinfo_archive](product_supplierinfo_archive/) | 17.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
-[product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 17.0.1.1.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to define prices for customers in the products
-[product_supplierinfo_revision](product_supplierinfo_revision/) | 17.0.1.0.0 |  | Product Supplierinfo Revision
-[product_uom_measure_type](product_uom_measure_type/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product - UoM Measure Type
-[product_usability](product_usability/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Product module and adds extra groups to fine-tune access rights
-[sale_product_template_tags](sale_product_template_tags/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Sale app
-[stock_production_lot_expired_date](stock_production_lot_expired_date/) | 17.0.1.0.1 |  | Stock production lot expired date
-[uom_category_active](uom_category_active/) | 17.0.1.0.1 |  | Add option to archive UoM categories
+[product_attribute_archive](product_attribute_archive/) | 18.0.1.0.0 |  | Add an active field on product attributes
+[product_category_active](product_category_active/) | 18.0.1.0.0 |  | Add option to archive product categories
+[product_dimension](product_dimension/) | 18.0.1.0.0 |  | Product Dimension
+[product_logistics_uom](product_logistics_uom/) | 18.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
+[product_main_supplierinfo](product_main_supplierinfo/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display the main vendor of a product.
+[product_manufacturer](product_manufacturer/) | 18.0.1.0.0 |  | Adds manufacturers and attributes on the product view.
+[product_medical](product_medical/) | 18.0.1.0.0 |  | Base structure to handle medical products
+[product_net_weight](product_net_weight/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
+[product_packaging_dimension](product_packaging_dimension/) | 18.0.1.0.0 |  | Manage packaging dimensions and weight
+[product_packaging_level](product_packaging_level/) | 18.0.1.0.0 |  | This module binds a product packaging to a packaging level
+[product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![kobros-tech](https://github.com/kobros-tech.png?size=30px)](https://github.com/kobros-tech) | Set a fixed currency rate between pricelists
+[product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to create priceslists based on supplier info
+[product_print_category](product_print_category/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Define print categories for products and automate products print, when data has changed
+[product_sale_manufactured_for](product_sale_manufactured_for/) | 18.0.1.0.0 |  | Allows to indicate in products that they were made specifically for some customers.
+[product_sequence](product_sequence/) | 18.0.1.0.0 |  | Product Sequence
+[product_set](product_set/) | 18.0.1.0.0 |  | Product set
+[product_state](product_state/) | 18.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
+[product_state_sale](product_state_sale/) | 18.0.1.0.0 |  | This module add the use of Product State in Sale
+[product_state_stock_base](product_state_stock_base/) | 18.0.1.0.0 |  | This module add the use of Product State in Stock
+[product_stock_state](product_stock_state/) | 18.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Compute the state of a product's stockthe stock level and sale_ok field
+[product_supplierinfo_archive](product_supplierinfo_archive/) | 18.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
+[product_supplierinfo_revision](product_supplierinfo_revision/) | 18.0.1.0.0 |  | Product Supplierinfo Revision
 
 [//]: # (end addons)
 
@@ -6044,17 +5426,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-kitting.git](https://github.com/OCA/product-kitting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-kitting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/product-kitting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-kitting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/product-kitting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-kitting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/product-kitting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-kitting)
-[![Translation Status](https://translation.odoo-community.org/widgets/product-kitting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-kitting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-kitting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/product-kitting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-kitting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/product-kitting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-kitting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/product-kitting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-kitting)
+[![Translation Status](https://translation.odoo-community.org/widgets/product-kitting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-kitting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # product-kitting
 
-TODO: add repo description.
+product-kitting
 
 <!-- /!\ do not modify below this line -->
 
@@ -6086,17 +5468,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-variant&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/product-variant/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-variant/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/product-variant/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-variant)
-[![Translation Status](https://translation.odoo-community.org/widgets/product-variant-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-variant-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-variant&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-variant/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/product-variant/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-variant/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/product-variant/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-variant)
+[![Translation Status](https://translation.odoo-community.org/widgets/product-variant-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-variant-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # product-variant
 
-TODO: add repo description.
+product-variant
 
 <!-- /!\ do not modify below this line -->
 
@@ -6104,12 +5486,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[product_variant_configurator](product_variant_configurator/) | 17.0.1.0.0 |  | Provides an abstract model for product variant configuration.
-[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.1.0 |  | Allows to write fixed prices in product variants
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -6133,17 +5510,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-pack&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/product-pack/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-pack/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/product-pack/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/product-pack/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/product-pack/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-pack)
-[![Translation Status](https://translation.odoo-community.org/widgets/product-pack-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-pack-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/product-pack&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/product-pack/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-pack/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/product-pack/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/product-pack/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/product-pack/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/product-pack)
+[![Translation Status](https://translation.odoo-community.org/widgets/product-pack-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/product-pack-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # product-pack
 
-TODO: add repo description.
+product-pack
 
 <!-- /!\ do not modify below this line -->
 
@@ -6155,11 +5532,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[product_pack](product_pack/) | 17.0.2.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to set a product as a Pack
-[sale_product_pack](sale_product_pack/) | 17.0.2.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | This module allows you to sell product packs
-[sale_stock_product_pack](sale_stock_product_pack/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Compatibility module for packs that are storable products
-[stock_product_pack](stock_product_pack/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to get the right available quantities of the packs
-[website_sale_product_pack](website_sale_product_pack/) | 17.0.2.0.1 |  | Compatibility module of product pack with e-commerce
+[product_pack](product_pack/) | 18.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | This module allows you to set a product as a Pack
+[sale_product_pack](sale_product_pack/) | 18.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | This module allows you to sell product packs
 
 [//]: # (end addons)
 
@@ -6183,17 +5557,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/project-reporting.git](https://github.com/OCA/project-reporting.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project-reporting&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/project-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/project-reporting/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/project-reporting/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/project-reporting/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/project-reporting/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/project-reporting)
-[![Translation Status](https://translation.odoo-community.org/widgets/project-reporting-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-reporting-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project-reporting&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/project-reporting/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/project-reporting/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/project-reporting/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/project-reporting/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/project-reporting/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/project-reporting)
+[![Translation Status](https://translation.odoo-community.org/widgets/project-reporting-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-reporting-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # project-reporting
 
-TODO: add repo description.
+project-reporting
 
 <!-- /!\ do not modify below this line -->
 
@@ -6225,17 +5599,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/project/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/project/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/project/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/project/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/project/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/project)
-[![Translation Status](https://translation.odoo-community.org/widgets/project-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/project/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/project/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/project/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/project/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/project/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/project)
+[![Translation Status](https://translation.odoo-community.org/widgets/project-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # project
 
-TODO: add repo description.
+project
 
 <!-- /!\ do not modify below this line -->
 
@@ -6247,25 +5621,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[project_administrator_restricted_visibility](project_administrator_restricted_visibility/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | Adds a 'Project Administrator' access group with restricted visibility to 'Projects'
-[project_department](project_department/) | 17.0.1.0.0 |  | Project Department Categorization
-[project_parent](project_parent/) | 17.0.1.0.0 |  | Project Parent
-[project_purchase_link](project_purchase_link/) | 17.0.1.0.0 |  | Project Purchase Link
-[project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
-[project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
-[project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
-[project_task_description_template](project_task_description_template/) | 17.0.1.0.0 |  | Add a description template to project tasks
-[project_task_note](project_task_note/) | 17.0.1.0.0 | [![pilar-vargas](https://github.com/pilar-vargas.png?size=30px)](https://github.com/pilar-vargas) | Add notes in project tasks
-[project_task_pull_request](project_task_pull_request/) | 17.0.1.0.0 |  | Adds a field for a PR URI to project tasks
-[project_task_stage_mgmt](project_task_stage_mgmt/) | 17.0.1.0.0 | [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Allows to assign and create task stages on project creation wizard
-[project_task_stage_state](project_task_stage_state/) | 17.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
-[project_task_tag](project_task_tag/) | 17.0.1.0.0 |  | Limit tags available on task
-[project_timeline](project_timeline/) | 17.0.1.1.1 |  | Timeline view for projects
-[project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 17.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
-[project_timesheet_time_control](project_timesheet_time_control/) | 17.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
-[project_type](project_type/) | 17.0.1.0.2 |  | Project Types
-[sale_project_reimbursement_cost](sale_project_reimbursement_cost/) | 17.0.1.0.0 |  | Display provisions and reimbursement costs in the Project Updates dashboard.
-[sale_project_task_recurrency](sale_project_task_recurrency/) | 17.0.1.2.0 |  | Configuring Task Recurrence from the Product Form.
+[project_sequence](project_sequence/) | 18.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
+[project_type](project_type/) | 18.0.1.0.0 |  | Project Types
 
 [//]: # (end addons)
 
@@ -6289,17 +5646,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/project-agile.git](https://github.com/OCA/project-agile.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project-agile&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/project-agile/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/project-agile/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/project-agile/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/project-agile/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/project-agile/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/project-agile)
-[![Translation Status](https://translation.odoo-community.org/widgets/project-agile-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-agile-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/project-agile&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/project-agile/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/project-agile/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/project-agile/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/project-agile/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/project-agile/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/project-agile)
+[![Translation Status](https://translation.odoo-community.org/widgets/project-agile-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/project-agile-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # project-agile
 
-TODO: add repo description.
+project-agile
 
 <!-- /!\ do not modify below this line -->
 
@@ -6331,17 +5688,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/contract&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/contract/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/contract/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/contract/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/contract/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/contract/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/contract)
-[![Translation Status](https://translation.odoo-community.org/widgets/contract-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/contract-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/contract&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/contract/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/contract/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/contract/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/contract/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/contract/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/contract)
+[![Translation Status](https://translation.odoo-community.org/widgets/contract-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/contract-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # contract
 
-TODO: add repo description.
+contract
 
 <!-- /!\ do not modify below this line -->
 
@@ -6349,19 +5706,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[contract](contract/) | 17.0.1.4.2 |  | Recurring - Contracts Management
-[contract_payment_mode](contract_payment_mode/) | 17.0.1.0.0 |  | Payment mode in contracts and their invoices
-[contract_price_revision](contract_price_revision/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
-[contract_sale](contract_sale/) | 17.0.1.0.0 |  | Contract from Sale
-[contract_sale_invoicing](contract_sale_invoicing/) | 17.0.1.0.0 |  | Include sales to invoice in contract invoice creation
-[contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
-[contract_variable_quantity](contract_variable_quantity/) | 17.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
-[product_contract](product_contract/) | 17.0.2.1.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
-[subscription_oca](subscription_oca/) | 17.0.1.0.0 |  | Generate recurring invoices.
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -6385,17 +5730,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/program.git](https://github.com/OCA/program.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/program&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/program/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/program/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/program/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/program/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/program/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/program)
-[![Translation Status](https://translation.odoo-community.org/widgets/program-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/program-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/program&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/program/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/program/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/program/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/program/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/program/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/program)
+[![Translation Status](https://translation.odoo-community.org/widgets/program-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/program-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # program
 
-TODO: add repo description.
+program
 
 <!-- /!\ do not modify below this line -->
 
@@ -6427,17 +5772,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/business-requirement&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/business-requirement/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/business-requirement/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/business-requirement/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/business-requirement/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/business-requirement/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/business-requirement)
-[![Translation Status](https://translation.odoo-community.org/widgets/business-requirement-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/business-requirement-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/business-requirement&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/business-requirement/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/business-requirement/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/business-requirement/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/business-requirement/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/business-requirement/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/business-requirement)
+[![Translation Status](https://translation.odoo-community.org/widgets/business-requirement-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/business-requirement-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # business-requirement
 
-TODO: add repo description.
+business-requirement
 
 <!-- /!\ do not modify below this line -->
 
@@ -6469,17 +5814,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-redmine&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-redmine/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-redmine/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-redmine/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-redmine/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-redmine/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-redmine)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-redmine-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-redmine-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-redmine&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-redmine/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-redmine/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-redmine/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-redmine/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-redmine/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-redmine)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-redmine-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-redmine-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-redmine
 
-TODO: add repo description.
+connector-redmine
 
 <!-- /!\ do not modify below this line -->
 
@@ -6511,17 +5856,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-jira&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/connector-jira/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-jira/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/connector-jira/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/connector-jira/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/connector-jira/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-jira)
-[![Translation Status](https://translation.odoo-community.org/widgets/connector-jira-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-jira-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector-jira&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector-jira/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-jira/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector-jira/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector-jira/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector-jira/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector-jira)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-jira-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-jira-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # connector-jira
 
-TODO: add repo description.
+connector-jira
 
 <!-- /!\ do not modify below this line -->
 
@@ -6553,17 +5898,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/social/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/social)
-[![Translation Status](https://translation.odoo-community.org/widgets/social-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/social-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/social/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/social)
+[![Translation Status](https://translation.odoo-community.org/widgets/social-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/social-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # social
 
-{'TODO': 'add repo description.'}
+social
 
 <!-- /!\ do not modify below this line -->
 
@@ -6575,34 +5920,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_search_mail_content](base_search_mail_content/) | 17.0.1.1.0 |  | Base Search Mail Content
-[mail_activity_board](mail_activity_board/) | 17.0.1.1.0 |  | Add Activity Boards
-[mail_activity_done](mail_activity_done/) | 17.0.1.0.0 |  | Mail Activity Done
-[mail_activity_reminder](mail_activity_reminder/) | 17.0.1.0.0 |  | Reminder notifications about planned activities
-[mail_activity_team](mail_activity_team/) | 17.0.2.0.0 |  | Add Teams to Activities
-[mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.0 |  | Adding attachment on the object by sending this one
-[mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
-[mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
-[mail_debrand](mail_debrand/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
-[mail_forward](mail_forward/) | 17.0.2.0.0 | [![carlos-lopez-tecnativa](https://github.com/carlos-lopez-tecnativa.png?size=30px)](https://github.com/carlos-lopez-tecnativa) | Forward messages from the chatter of any document to other users.
-[mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
-[mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
-[mail_optional_autofollow](mail_optional_autofollow/) | 17.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
-[mail_optional_follower_notification](mail_optional_follower_notification/) | 17.0.1.0.0 |  | Choose to notify followers on mail.compose.message
-[mail_outbound_static](mail_outbound_static/) | 17.0.1.0.1 |  | Allows you to configure the from header for a mail server.
-[mail_partner_forwarding](mail_partner_forwarding/) | 17.0.1.0.1 |  | Forwarding notifications for partners
-[mail_partner_opt_out](mail_partner_opt_out/) | 17.0.1.0.0 |  | Add the partner's email to the blackmailed list
-[mail_print](mail_print/) | 17.0.1.0.0 |  | Print messages from the chatter of any document.
-[mail_quoted_reply](mail_quoted_reply/) | 17.0.1.0.0 |  | Make a reply using a message
-[mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.0 |  | Mail Send Confirmation
-[mail_template_substitute](mail_template_substitute/) | 17.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
-[mail_tracking](mail_tracking/) | 17.0.1.0.2 |  | Email tracking system for all mails sent
-[mail_tracking_mailgun](mail_tracking_mailgun/) | 17.0.1.0.0 |  | Mail tracking and Mailgun webhooks integration
-[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 17.0.1.0.0 |  | Improve mass mailing email tracking
-[mass_mailing_partner](mass_mailing_partner/) | 17.0.1.0.0 |  | Link partners with mass-mailing
-[mass_mailing_resend](mass_mailing_resend/) | 17.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
-[mute_notification_user_autosubscribe](mute_notification_user_autosubscribe/) | 17.0.1.0.0 |  | Do not send notifications to users autosubcribed through user_id field
+[mail_notification_with_history](mail_notification_with_history/) | 18.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add the previous chatter discussion into new email notifications.
+[mail_thread_create_nolog](mail_thread_create_nolog/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display a fake (non-stored) create log in the chatter.
 
 [//]: # (end addons)
 
@@ -6626,17 +5945,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/storage&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/storage/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/storage/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/storage/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/storage/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/storage/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/storage)
-[![Translation Status](https://translation.odoo-community.org/widgets/storage-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/storage-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/storage&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/storage/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/storage/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/storage/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/storage/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/storage/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/storage)
+[![Translation Status](https://translation.odoo-community.org/widgets/storage-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/storage-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # storage
 
-TODO: add repo description.
+storage
 
 <!-- /!\ do not modify below this line -->
 
@@ -6648,18 +5967,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 17.0.1.4.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
-[fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Mulitple Images from External File System
-[fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Give the possibility to store media data in external filesystem from odoo
-[fs_file](fs_file/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store files into filesystem storages
-[fs_file_demo](fs_file_demo/) | 17.0.1.0.0 |  | Demo addon for fs_file and fs_image
-[fs_image](fs_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store images into filesystem storages
-[fs_image_thumbnail](fs_image_thumbnail/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Generate and store thumbnail for images
-[fs_product_brand_multi_image](fs_product_brand_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link images to product brands
-[fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage multi images from extenal file system on product
-[fs_product_multi_media](fs_product_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link media to products and categories
-[fs_storage](fs_storage/) | 17.0.2.0.1 |  | Implement the concept of Storage with amazon S3, sftp...
-[image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model
+[fs_attachment](fs_attachment/) | 18.0.1.2.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Store attachments on external object store
+[fs_storage](fs_storage/) | 18.0.1.0.1 |  | Implement the concept of Storage with amazon S3, sftp...
+[storage_backend](storage_backend/) | 18.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
+[storage_backend_sftp](storage_backend_sftp/) | 18.0.1.0.0 |  | Implement SFTP Storage
 
 [//]: # (end addons)
 
@@ -6683,17 +5994,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/search-engine&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/search-engine/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/search-engine/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/search-engine/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/search-engine/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/search-engine/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/search-engine)
-[![Translation Status](https://translation.odoo-community.org/widgets/search-engine-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/search-engine-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/search-engine&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/search-engine/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/search-engine/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/search-engine/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/search-engine/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/search-engine/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/search-engine)
+[![Translation Status](https://translation.odoo-community.org/widgets/search-engine-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/search-engine-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # search-engine
 
-TODO: add repo description.
+search-engine
 
 <!-- /!\ do not modify below this line -->
 
@@ -6725,17 +6036,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/reporting-engine&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/reporting-engine/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/reporting-engine/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/reporting-engine/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/reporting-engine)
-[![Translation Status](https://translation.odoo-community.org/widgets/reporting-engine-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/reporting-engine-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/reporting-engine&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/reporting-engine/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/reporting-engine/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/reporting-engine/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/reporting-engine/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/reporting-engine)
+[![Translation Status](https://translation.odoo-community.org/widgets/reporting-engine-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/reporting-engine-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # reporting-engine
 
-TODO: add repo description.
+reporting-engine
 
 <!-- /!\ do not modify below this line -->
 
@@ -6747,22 +6058,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_comment_template](base_comment_template/) | 17.0.1.0.0 |  | Add conditional mako template to any reporton models that inherits comment.template.
-[bi_sql_editor](bi_sql_editor/) | 17.0.2.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
-[kpi](kpi/) | 17.0.1.0.0 |  | Key Performance Indicator
-[report_async](report_async/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Central place to run reports live or async
-[report_layout_config](report_layout_config/) | 17.0.1.0.0 |  | Add possibility to easily modify the global report layout
-[report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 17.0.1.0.0 |  | Report Qweb Element Page Visibility
-[report_qweb_parameter](report_qweb_parameter/) | 17.0.1.0.2 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
-[report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 17.0.1.0.0 |  | Add watermarks to your QWEB PDF reports
-[report_substitute](report_substitute/) | 17.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module allows to create substitution rules for report actions.
-[report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 17.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
-[report_xlsx](report_xlsx/) | 17.0.1.0.1 |  | Base module to create xlsx report
-[report_xlsx_helper](report_xlsx_helper/) | 17.0.1.0.1 |  | Report xlsx helpers
-[report_xml](report_xml/) | 17.0.1.0.0 |  | Allow to generate XML reports
-[sql_export](sql_export/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Export data in csv file with SQL requests
-[sql_export_mail](sql_export_mail/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Send csv file generated by sql query by mail.
-[sql_request_abstract](sql_request_abstract/) | 17.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Abstract Model to manage SQL Requests
+[base_comment_template](base_comment_template/) | 18.0.1.0.0 |  | Add conditional mako template to any reporton models that inherits comment.template.
+[bi_sql_editor](bi_sql_editor/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 18.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
+[report_xlsx](report_xlsx/) | 18.0.1.0.0 |  | Base module to create xlsx report
+[sql_export](sql_export/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Export data in csv file with SQL requests
+[sql_request_abstract](sql_request_abstract/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Abstract Model to manage SQL Requests
 
 [//]: # (end addons)
 
@@ -6786,17 +6087,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/report-print-send&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/report-print-send/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/report-print-send/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/report-print-send/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/report-print-send)
-[![Translation Status](https://translation.odoo-community.org/widgets/report-print-send-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/report-print-send-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/report-print-send&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/report-print-send/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/report-print-send/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/report-print-send/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/report-print-send/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/report-print-send)
+[![Translation Status](https://translation.odoo-community.org/widgets/report-print-send-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/report-print-send-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # report-print-send
 
-TODO: add repo description.
+report-print-send
 
 <!-- /!\ do not modify below this line -->
 
@@ -6808,7 +6109,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_report_to_printer](base_report_to_printer/) | 17.0.1.1.1 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 18.0.1.0.0 |  | Report to printer
 
 [//]: # (end addons)
 
@@ -6832,17 +6133,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/webkit-tools.git](https://github.com/OCA/webkit-tools.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/webkit-tools&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/webkit-tools/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/webkit-tools/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/webkit-tools/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/webkit-tools/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/webkit-tools/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/webkit-tools)
-[![Translation Status](https://translation.odoo-community.org/widgets/webkit-tools-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/webkit-tools-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/webkit-tools&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/webkit-tools/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/webkit-tools/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/webkit-tools/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/webkit-tools/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/webkit-tools/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/webkit-tools)
+[![Translation Status](https://translation.odoo-community.org/widgets/webkit-tools-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/webkit-tools-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # webkit-tools
 
-TODO: add repo description.
+webkit-tools
 
 <!-- /!\ do not modify below this line -->
 
@@ -6874,17 +6175,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-tools&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-tools/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-tools/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-tools/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-tools)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-tools-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-tools-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-tools&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-tools/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-tools/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-tools/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-tools)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-tools-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-tools-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Server Tools
+# server-tools
 
-TODO: add repo description.
+server-tools
 
 <!-- /!\ do not modify below this line -->
 
@@ -6896,38 +6197,27 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[auditlog](auditlog/) | 17.0.1.0.4 |  | Audit Log
-[base_cron_exclusion](base_cron_exclusion/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Allow you to select scheduled actions that should not run simultaneously.
-[base_exception](base_exception/) | 17.0.1.0.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
-[base_m2m_custom_field](base_m2m_custom_field/) | 17.0.1.0.0 |  | Customizations of Many2many
-[base_partition](base_partition/) | 17.0.1.0.0 |  | Base module that provide the partition method on all models
-[base_sparse_field_list_support](base_sparse_field_list_support/) | 17.0.1.0.0 |  | add list support to convert_to_cache()
-[base_technical_user](base_technical_user/) | 17.0.1.0.0 |  | Add a technical user parameter on the company
-[base_view_inheritance_extension](base_view_inheritance_extension/) | 17.0.1.0.2 |  | Adds more operators for view inheritance
-[database_cleanup](database_cleanup/) | 17.0.1.2.2 |  | Database cleanup
-[dbfilter_from_header](dbfilter_from_header/) | 17.0.1.0.0 |  | Filter databases with HTTP headers
-[fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 17.0.1.0.0 |  | If fetching mails gives error, send an email to sender
-[fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 17.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
-[iap_alternative_provider](iap_alternative_provider/) | 17.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
-[jsonifier](jsonifier/) | 17.0.1.0.0 |  | JSON-ify data for all models
-[module_analysis](module_analysis/) | 17.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
-[module_auto_update](module_auto_update/) | 17.0.1.0.0 |  | Automatically update Odoo modules
-[module_change_auto_install](module_change_auto_install/) | 17.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
-[onchange_helper](onchange_helper/) | 17.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
-[rpc_helper](rpc_helper/) | 17.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
-[scheduler_error_mailer](scheduler_error_mailer/) | 17.0.1.0.0 |  | Scheduler Error Mailer
-[sentry](sentry/) | 17.0.1.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
-[server_action_logging](server_action_logging/) | 17.0.1.0.0 |  | Module that provides a logging mechanism for server actions
-[session_db](session_db/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
-[tracking_manager](tracking_manager/) | 17.0.1.0.7 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
-[upgrade_analysis](upgrade_analysis/) | 17.0.1.0.2 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
-
-
-Unported addons
----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[views_migration_17](views_migration_17/) | 17.0.1.0.0 (unported) |  | Views Migration to v17
+[attachment_unindex_content](attachment_unindex_content/) | 18.0.1.0.0 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Disable indexing of attachments
+[auditlog](auditlog/) | 18.0.1.0.0 |  | Audit Log
+[autovacuum_message_attachment](autovacuum_message_attachment/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Automatically delete old mail messages and attachments
+[base_cron_exclusion](base_cron_exclusion/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Allow you to select scheduled actions that should not run simultaneously.
+[base_exception](base_exception/) | 18.0.1.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
+[base_m2m_custom_field](base_m2m_custom_field/) | 18.0.1.0.0 |  | Customizations of Many2many
+[base_partition](base_partition/) | 18.0.1.0.0 |  | Base module that provide the partition method on all models
+[base_technical_user](base_technical_user/) | 18.0.1.0.0 |  | Add a technical user parameter on the company
+[base_time_window](base_time_window/) | 18.0.1.0.0 |  | Base model to handle time windows
+[base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.0 |  | Adds more operators for view inheritance
+[database_cleanup](database_cleanup/) | 18.0.1.0.0 |  | Database cleanup
+[dbfilter_from_header](dbfilter_from_header/) | 18.0.1.0.0 |  | Filter databases with HTTP headers
+[jsonifier](jsonifier/) | 18.0.1.0.0 |  | JSON-ify data for all models
+[mail_cleanup](mail_cleanup/) | 18.0.1.0.0 |  | Mark as read or delete mails after a set time
+[module_change_auto_install](module_change_auto_install/) | 18.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
+[onchange_helper](onchange_helper/) | 18.0.1.0.0 |  | Technical module that ease execution of onchange in Python code
+[rpc_helper](rpc_helper/) | 18.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
+[sentry](sentry/) | 18.0.1.0.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
+[session_db](session_db/) | 18.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
+[test_base_time_window](test_base_time_window/) | 18.0.1.0.0 |  | Test Base model to handle time windows
+[upgrade_analysis](upgrade_analysis/) | 18.0.1.3.0 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
 
@@ -6951,17 +6241,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-auth&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-auth/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-auth/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-auth/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-auth)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-auth-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-auth-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-auth&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-auth/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-auth/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-auth/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-auth/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-auth)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-auth-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-auth-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Server Authentication
+# server-auth
 
-Modules for handling various authentication schemes
+server-auth
 
 <!-- /!\ do not modify below this line -->
 
@@ -6973,20 +6263,15 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[auth_admin_passkey](auth_admin_passkey/) | 17.0.1.0.0 |  | Allows system administrator to authenticate with any account
-[auth_admin_passkey_totp_mail_enforce](auth_admin_passkey_totp_mail_enforce/) | 17.0.1.0.0 |  | Disable 2FA if Passkey is being used
-[auth_api_key](auth_api_key/) | 17.0.1.1.1 |  | Authenticate http requests from an API key
-[auth_api_key_group](auth_api_key_group/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
-[auth_api_key_server_env](auth_api_key_server_env/) | 17.0.1.0.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
-[auth_jwt](auth_jwt/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication.
-[auth_ldaps](auth_ldaps/) | 17.0.1.0.0 |  | Allows to use LDAP over SSL authentication
-[auth_oidc](auth_oidc/) | 17.0.1.1.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
-[auth_saml](auth_saml/) | 17.0.1.0.0 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
-[auth_session_timeout](auth_session_timeout/) | 17.0.1.0.0 |  | This module disable all inactive sessions since a given delay
-[auth_signup_verify_email](auth_signup_verify_email/) | 17.0.1.0.0 |  | Force uninvited users to use a good email for signup
-[auth_user_case_insensitive](auth_user_case_insensitive/) | 17.0.1.0.0 |  | Makes the user login field case insensitive
-[impersonate_login](impersonate_login/) | 17.0.1.0.2 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
-[user_log_view](user_log_view/) | 17.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
+[auth_admin_passkey](auth_admin_passkey/) | 18.0.1.0.0 |  | Allows system administrator to authenticate with any account
+[auth_api_key](auth_api_key/) | 18.0.1.0.0 |  | Authenticate http requests from an API key
+[auth_api_key_group](auth_api_key_group/) | 18.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
+[auth_api_key_server_env](auth_api_key_server_env/) | 18.0.1.0.0 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
+[auth_oidc](auth_oidc/) | 18.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
+[auth_oidc_environment](auth_oidc_environment/) | 18.0.1.0.0 |  | This module allows to use server env for OIDC configuration
+[auth_saml](auth_saml/) | 18.0.1.0.0 | [![vincent-hatakeyama](https://github.com/vincent-hatakeyama.png?size=30px)](https://github.com/vincent-hatakeyama) | SAML2 Authentication
+[base_user_empty_password](base_user_empty_password/) | 18.0.1.0.0 | [![grindtildeath](https://github.com/grindtildeath.png?size=30px)](https://github.com/grindtildeath) | Allows to empty password of users
+[base_user_show_email](base_user_show_email/) | 18.0.1.0.0 |  | Untangle user login and email
 
 [//]: # (end addons)
 
@@ -7010,17 +6295,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-env&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-env/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-env/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-env/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-env/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-env/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-env)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-env-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-env-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-env&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-env/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-env/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-env/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-env/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-env/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-env)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-env-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-env-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # server-env
 
-TODO: add repo description.
+server-env
 
 <!-- /!\ do not modify below this line -->
 
@@ -7032,11 +6317,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[data_encryption](data_encryption/) | 17.0.1.0.0 |  | Store accounts and credentials encrypted by environment
-[mail_environment](mail_environment/) | 17.0.1.0.0 |  | Configure mail servers with server_environment_files
-[mail_environment_office365](mail_environment_office365/) | 17.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
-[server_environment](server_environment/) | 17.0.1.1.1 |  | move some configurations out of the database
-[server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 17.0.1.0.0 |  | Override System Parameters from server environment file
+[mail_environment](mail_environment/) | 18.0.1.0.0 |  | Configure mail servers with server_environment_files
+[server_environment](server_environment/) | 18.0.1.0.1 |  | move some configurations out of the database
+[server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 18.0.1.0.0 |  | Override System Parameters from server environment file
 
 [//]: # (end addons)
 
@@ -7060,17 +6343,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-backend&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-backend/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-backend/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-backend/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-backend)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-backend-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-backend-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-backend&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-backend/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-backend/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-backend/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-backend/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-backend)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-backend-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-backend-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # server-backend
 
-Mainly base modules used by others
+server-backend
 
 <!-- /!\ do not modify below this line -->
 
@@ -7082,12 +6365,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_external_dbsource](base_external_dbsource/) | 17.0.1.0.0 |  | External Database Sources
-[base_external_dbsource_sqlite](base_external_dbsource_sqlite/) | 17.0.1.0.0 | [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | External Database Source - SQLite
-[base_global_discount](base_global_discount/) | 17.0.1.0.0 |  | Base Global Discount
-[base_user_role](base_user_role/) | 17.0.1.1.2 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
-[base_user_role_company](base_user_role_company/) | 17.0.1.1.1 |  | User roles by company
-[base_user_role_history](base_user_role_history/) | 17.0.1.0.0 | [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to track the changes on users roles.
+[base_user_role](base_user_role/) | 18.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
 
 [//]: # (end addons)
 
@@ -7111,17 +6389,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-brand&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-brand/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-brand/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-brand/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-brand)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-brand-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-brand-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-brand&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-brand/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-brand/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-brand/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-brand/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-brand)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-brand-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-brand-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Tools for removing Odoo branding
+# server-brand
 
-Modules to help remove Odoo branding and advertising.
+server-brand
 
 <!-- /!\ do not modify below this line -->
 
@@ -7133,9 +6411,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[disable_odoo_online](disable_odoo_online/) | 17.0.1.0.0 |  | Remove odoo.com Bindings
-[portal_odoo_debranding](portal_odoo_debranding/) | 17.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Remove Odoo Branding from Website
-[remove_odoo_enterprise](remove_odoo_enterprise/) | 17.0.1.0.1 |  | Remove enterprise modules and setting items
+[disable_odoo_online](disable_odoo_online/) | 18.0.1.0.0 |  | Remove odoo.com Bindings
+[portal_odoo_debranding](portal_odoo_debranding/) | 18.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Remove Odoo Branding from Website
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 18.0.1.0.0 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 
@@ -7159,17 +6437,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-ux&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/server-ux/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/server-ux/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/server-ux/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-ux)
-[![Translation Status](https://translation.odoo-community.org/widgets/server-ux-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-ux-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-ux&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-ux/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/server-ux/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-ux/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/server-ux/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/server-ux)
+[![Translation Status](https://translation.odoo-community.org/widgets/server-ux-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-ux-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # server-ux
 
-Server side features for usability and user experience related.
+server-ux
 
 <!-- /!\ do not modify below this line -->
 
@@ -7181,23 +6459,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[announcement](announcement/) | 17.0.1.0.0 |  | Notify internal users about relevant organization stuff
-[barcode_action](barcode_action/) | 17.0.1.0.1 |  | Allows to use barcodes as a launcher
-[base_export_manager](base_export_manager/) | 17.0.1.0.0 |  | Manage model export profiles
-[base_menu_visibility_restriction](base_menu_visibility_restriction/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
-[base_optional_quick_create](base_optional_quick_create/) | 17.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
-[base_revision](base_revision/) | 17.0.1.0.0 |  | Keep track of revised document
-[base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
-[base_substate](base_substate/) | 17.0.1.0.0 |  | Base Sub State
-[base_technical_features](base_technical_features/) | 17.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.2.3.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
-[base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
-[date_range](date_range/) | 17.0.1.2.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
-[date_range_account](date_range_account/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
-[multi_step_wizard](multi_step_wizard/) | 17.0.1.0.0 |  | Multi-Steps Wizards
-[sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
-[server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.1 |  | Mass Editing
+[base_technical_features](base_technical_features/) | 18.0.1.0.2 |  | Access to technical features without activating debug mode
+[base_tier_validation](base_tier_validation/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[date_range](date_range/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
+[developer_menu](developer_menu/) | 18.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Menu Shortcut for developer usage
+[sequence_check_digit](sequence_check_digit/) | 18.0.1.0.0 |  | Adds a check digit on sequences
 
 [//]: # (end addons)
 
@@ -7221,17 +6487,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/community-data-files&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/community-data-files/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/community-data-files/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/community-data-files/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/community-data-files)
-[![Translation Status](https://translation.odoo-community.org/widgets/community-data-files-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/community-data-files-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/community-data-files&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/community-data-files/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/community-data-files/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/community-data-files/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/community-data-files/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/community-data-files)
+[![Translation Status](https://translation.odoo-community.org/widgets/community-data-files-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/community-data-files-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # community-data-files
 
-TODO: add repo description.
+community-data-files
 
 <!-- /!\ do not modify below this line -->
 
@@ -7243,16 +6509,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_payment_unece](account_payment_unece/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for the payment methods
-[account_tax_unece](account_tax_unece/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for taxes
-[base_bank_from_iban](base_bank_from_iban/) | 17.0.1.0.3 |  | Bank from IBAN
-[base_currency_iso_4217](base_currency_iso_4217/) | 17.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
-[base_iso3166](base_iso3166/) | 17.0.1.0.1 |  | ISO 3166
-[base_unece](base_unece/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for UNECE code lists
-[company_sanitary_registry](company_sanitary_registry/) | 17.0.1.0.0 |  | Sanitary Registry
-[l10n_eu_nace](l10n_eu_nace/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | European NACE partner categories
-[product_fao_fishing](product_fao_fishing/) | 17.0.1.0.0 |  | Set fishing areas and capture technology
-[uom_unece](uom_unece/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for the units of measure
+[account_tax_unece](account_tax_unece/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for taxes
+[base_iso3166](base_iso3166/) | 18.0.1.0.0 |  | ISO 3166
+[base_unece](base_unece/) | 18.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for UNECE code lists
+[l10n_eu_product_adr](l10n_eu_product_adr/) | 18.0.1.0.1 |  | Allows to set appropriate danger class and components
+[l10n_eu_product_adr_dangerous_goods](l10n_eu_product_adr_dangerous_goods/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | l10n Eu Product Adr Dangerous Goods
+[uom_unece](uom_unece/) | 18.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for the units of measure
 
 [//]: # (end addons)
 
@@ -7276,17 +6538,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/webhook&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/webhook/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/webhook/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/webhook/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/webhook/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/webhook/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/webhook)
-[![Translation Status](https://translation.odoo-community.org/widgets/webhook-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/webhook-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/webhook&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/webhook/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/webhook/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/webhook/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/webhook/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/webhook/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/webhook)
+[![Translation Status](https://translation.odoo-community.org/widgets/webhook-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/webhook-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # webhook
 
-TODO: add repo description.
+webhook
 
 <!-- /!\ do not modify below this line -->
 
@@ -7318,17 +6580,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/interface-github&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/interface-github/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/interface-github/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/interface-github/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/interface-github/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/interface-github/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/interface-github)
-[![Translation Status](https://translation.odoo-community.org/widgets/interface-github-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/interface-github-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/interface-github&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/interface-github/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/interface-github/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/interface-github/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/interface-github/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/interface-github/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/interface-github)
+[![Translation Status](https://translation.odoo-community.org/widgets/interface-github-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/interface-github-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # interface-github
 
-TODO: add repo description.
+interface-github
 
 <!-- /!\ do not modify below this line -->
 
@@ -7336,12 +6598,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[github_connector](github_connector/) | 17.0.1.0.0 |  | Synchronize information from Github repositories
-[github_connector_odoo](github_connector_odoo/) | 17.0.1.0.0 |  | Analyze Odoo modules information from Github repositories
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -7365,17 +6622,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/iot&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/iot/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/iot/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/iot/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/iot/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/iot/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/iot)
-[![Translation Status](https://translation.odoo-community.org/widgets/iot-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/iot-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/iot&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/iot/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/iot/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/iot/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/iot/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/iot/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/iot)
+[![Translation Status](https://translation.odoo-community.org/widgets/iot-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/iot-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# OCA IOT modules
+# iot
 
-This project aims to deal with modules related to IOT
+iot
 
 <!-- /!\ do not modify below this line -->
 
@@ -7383,16 +6640,7 @@ This project aims to deal with modules related to IOT
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[iot_amqp_oca](iot_amqp_oca/) | 17.0.1.0.0 |  | Integrate Iot Outputs with AMQP
-[iot_input_oca](iot_input_oca/) | 17.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | IoT Input module
-[iot_oca](iot_oca/) | 17.0.1.0.0 |  | IoT base module
-[iot_output_oca](iot_output_oca/) | 17.0.1.0.0 |  | IoT allow multiple outputs
-[iot_rule](iot_rule/) | 17.0.1.0.0 |  | Define IoT Rules (Keys that control Inputs)
-[iot_template_oca](iot_template_oca/) | 17.0.1.0.0 |  | IoT module for managing templates
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -7416,17 +6664,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rest-framework&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/rest-framework/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/rest-framework/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/rest-framework/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/rest-framework)
-[![Translation Status](https://translation.odoo-community.org/widgets/rest-framework-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rest-framework-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/rest-framework&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/rest-framework/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/rest-framework/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/rest-framework/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/rest-framework/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/rest-framework)
+[![Translation Status](https://translation.odoo-community.org/widgets/rest-framework-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/rest-framework-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
-# Rest Frameworks
+# rest-framework
 
-This repository has nice modules to interact with Odoo using JSON and HTTP requests.
+rest-framework
 
 <!-- /!\ do not modify below this line -->
 
@@ -7438,30 +6686,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fastapi](fastapi/) | 17.0.3.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
-[graphql_base](graphql_base/) | 17.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Base GraphQL/GraphiQL controller
-[graphql_demo](graphql_demo/) | 17.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | GraphQL Demo
-[pydantic](pydantic/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Utility addon to ease mapping between Pydantic and Odoo models
-
-
-Unported addons
----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[base_rest](base_rest/) | 16.0.1.0.2 (unported) |  | Develop your own high level REST APIs for Odoo thanks to this addon.
-[base_rest_auth_api_key](base_rest_auth_api_key/) | 16.0.1.0.0 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
-[base_rest_auth_jwt](base_rest_auth_jwt/) | 15.0.1.1.0 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_jwt security policy into the openapi documentation
-[base_rest_auth_user_service](base_rest_auth_user_service/) | 15.0.1.0.1 (unported) |  | Login/logout from session using a REST call
-[base_rest_datamodel](base_rest_datamodel/) | 16.0.1.0.0 (unported) |  | Datamodel binding for base_rest
-[base_rest_demo](base_rest_demo/) | 16.0.2.0.2 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
-[base_rest_pydantic](base_rest_pydantic/) | 16.0.2.0.1 (unported) |  | Pydantic binding for base_rest
-[datamodel](datamodel/) | 16.0.1.0.1 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | This addon allows you to define simple data models supporting serialization/deserialization
-[extendable](extendable/) | 16.0.1.0.1 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo
-[extendable_fastapi](extendable_fastapi/) | 16.0.2.1.1 (unported) | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Allows the use of extendable into fastapi apps
-[fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.1 (unported) | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication for FastAPI.
-[fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.0 (unported) | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for fastapi_auth_jwt.
-[model_serializer](model_serializer/) | 15.0.1.2.0 (unported) | [![fdegrave](https://github.com/fdegrave.png?size=30px)](https://github.com/fdegrave) | Automatically translate Odoo models into Datamodels for (de)serialization
-[rest_log](rest_log/) | 15.0.1.0.0 (unported) | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Track REST API calls into DB
+[fastapi](fastapi/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
 
 [//]: # (end addons)
 
@@ -7485,17 +6710,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/role-policy&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/role-policy/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/role-policy/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/role-policy/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/role-policy/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/role-policy/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/role-policy)
-[![Translation Status](https://translation.odoo-community.org/widgets/role-policy-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/role-policy-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/role-policy&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/role-policy/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/role-policy/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/role-policy/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/role-policy/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/role-policy/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/role-policy)
+[![Translation Status](https://translation.odoo-community.org/widgets/role-policy-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/role-policy-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # role-policy
 
-TODO: add repo description.
+role-policy
 
 <!-- /!\ do not modify below this line -->
 
@@ -7527,17 +6752,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-association&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-association/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-association/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-association/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-association)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-association-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-association-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-association&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-association/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-association/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-association/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-association/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-association)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-association-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-association-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-association
 
-TODO: add repo description.
+vertical-association
 
 <!-- /!\ do not modify below this line -->
 
@@ -7545,17 +6770,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[contract_membership_delegated_partner](contract_membership_delegated_partner/) | 17.0.1.0.0 |  | Set delegate membership on the contract
-[membership_delegated_partner](membership_delegated_partner/) | 17.0.1.0.0 |  | Delegate membership on a specific partner
-[membership_extension](membership_extension/) | 17.0.1.0.3 |  | Improves user experience of membership addon
-[membership_initial_fee](membership_initial_fee/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | Initial fee for memberships
-[membership_variable_period](membership_variable_period/) | 17.0.1.0.1 |  | Variable period for memberships
-[website_membership_gamification](website_membership_gamification/) | 17.0.1.0.0 |  | Show badges assigned to users on website
-[website_membership_random_order](website_membership_random_order/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Online Members Directory - Random order
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -7579,17 +6794,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-hotel&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-hotel/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-hotel/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-hotel/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-hotel/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-hotel/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-hotel)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-hotel-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-hotel-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-hotel&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-hotel/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-hotel/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-hotel/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-hotel/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-hotel/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-hotel)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-hotel-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-hotel-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-hotel
 
-TODO: add repo description.
+vertical-hotel
 
 <!-- /!\ do not modify below this line -->
 
@@ -7597,16 +6812,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[hotel](hotel/) | 17.0.1.0.0 |  | Hotel Management to Manage Folio and Hotel Configuration
-[hotel_housekeeping](hotel_housekeeping/) | 17.0.1.0.0 |  | Manages Housekeeping Activities and its Process
-[hotel_reservation](hotel_reservation/) | 17.0.1.0.0 |  | Manages Guest Reservation & displays Reservation Summary
-[hotel_restaurant](hotel_restaurant/) | 17.0.1.0.0 |  | Table booking facilities and Managing customers orders
-[report_hotel_reservation](report_hotel_reservation/) | 17.0.1.0.0 |  | Hotel Reservation Management - Reporting
-[report_hotel_restaurant](report_hotel_restaurant/) | 17.0.1.0.0 |  | Restaurant Management - Reporting
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -7630,17 +6836,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-isp&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-isp/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-isp/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-isp/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-isp/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-isp/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-isp)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-isp-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-isp-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-isp&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-isp/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-isp/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-isp/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-isp/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-isp/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-isp)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-isp-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-isp-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-isp
 
-TODO: add repo description.
+vertical-isp
 
 <!-- /!\ do not modify below this line -->
 
@@ -7672,17 +6878,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-edition&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-edition/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-edition/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-edition/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-edition/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-edition/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-edition)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-edition-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-edition-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-edition&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-edition/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-edition/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-edition/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-edition/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-edition/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-edition)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-edition-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-edition-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-edition
 
-TODO: add repo description.
+vertical-edition
 
 <!-- /!\ do not modify below this line -->
 
@@ -7690,12 +6896,7 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[bookstore_mgmt](bookstore_mgmt/) | 17.0.1.1.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) [![miquelalzanillas](https://github.com/miquelalzanillas.png?size=30px)](https://github.com/miquelalzanillas) | Bookstore management system for Odoo
-[bookstore_mgmt_google_books_api](bookstore_mgmt_google_books_api/) | 17.0.1.2.0 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) [![miquelalzanillas](https://github.com/miquelalzanillas.png?size=30px)](https://github.com/miquelalzanillas) | Bookstore integration with Google Books API
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
 
 [//]: # (end addons)
 
@@ -7719,17 +6920,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-education.git](https://github.com/OCA/vertical-education.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-education&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-education/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-education/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-education/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-education/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-education/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-education)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-education-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-education-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-education&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-education/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-education/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-education/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-education/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-education/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-education)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-education-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-education-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-education
 
-TODO: add repo description.
+vertical-education
 
 <!-- /!\ do not modify below this line -->
 
@@ -7761,17 +6962,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-medical.git](https://github.com/OCA/vertical-medical.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-medical&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-medical/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-medical/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-medical/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-medical/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-medical/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-medical)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-medical-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-medical-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-medical&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-medical/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-medical/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-medical/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-medical/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-medical/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-medical)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-medical-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-medical-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-medical
 
-TODO: add repo description.
+vertical-medical
 
 <!-- /!\ do not modify below this line -->
 
@@ -7803,17 +7004,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-ngo.git](https://github.com/OCA/vertical-ngo.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-ngo&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-ngo/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-ngo/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-ngo/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-ngo/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-ngo/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-ngo)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-ngo-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-ngo-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-ngo&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-ngo/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-ngo/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-ngo/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-ngo/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-ngo/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-ngo)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-ngo-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-ngo-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-ngo
 
-TODO: add repo description.
+vertical-ngo
 
 <!-- /!\ do not modify below this line -->
 
@@ -7845,17 +7046,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-construction.git](https://github.com/OCA/vertical-construction.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-construction&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-construction/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-construction/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-construction/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-construction)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-construction-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-construction-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-construction&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-construction/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-construction/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-construction/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-construction/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-construction)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-construction-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-construction-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-construction
 
-TODO: add repo description.
+vertical-construction
 
 <!-- /!\ do not modify below this line -->
 
@@ -7887,17 +7088,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-realestate.git](https://github.com/OCA/vertical-realestate.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-realestate&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-realestate/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-realestate/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-realestate/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-realestate/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-realestate/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-realestate)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-realestate-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-realestate-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-realestate&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-realestate/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-realestate/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-realestate/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-realestate/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-realestate/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-realestate)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-realestate-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-realestate-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-realestate
 
-TODO: add repo description.
+vertical-realestate
 
 <!-- /!\ do not modify below this line -->
 
@@ -7929,17 +7130,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-rental&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-rental/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-rental/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-rental/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-rental)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-rental-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-rental-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-rental&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-rental/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-rental/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-rental/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-rental/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-rental)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-rental-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-rental-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-rental
 
-TODO: add repo description.
+vertical-rental
 
 <!-- /!\ do not modify below this line -->
 
@@ -7971,17 +7172,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-travel&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/vertical-travel/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-travel/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/vertical-travel/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/vertical-travel/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/vertical-travel/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-travel)
-[![Translation Status](https://translation.odoo-community.org/widgets/vertical-travel-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-travel-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/vertical-travel&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/vertical-travel/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-travel/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/vertical-travel/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/vertical-travel/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/vertical-travel/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/vertical-travel)
+[![Translation Status](https://translation.odoo-community.org/widgets/vertical-travel-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/vertical-travel-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # vertical-travel
 
-TODO: add repo description.
+vertical-travel
 
 <!-- /!\ do not modify below this line -->
 
@@ -8013,17 +7214,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/web&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/web/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/web/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/web/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/web/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/web/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/web)
-[![Translation Status](https://translation.odoo-community.org/widgets/web-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/web-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/web&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/web/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/web/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/web/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/web/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/web/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/web)
+[![Translation Status](https://translation.odoo-community.org/widgets/web-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/web-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # web
 
-TODO: add repo description.
+web
 
 <!-- /!\ do not modify below this line -->
 
@@ -8035,37 +7236,14 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[web_calendar_slot_duration](web_calendar_slot_duration/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
-[web_chatter_position](web_chatter_position/) | 17.0.1.0.1 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | Add an option to change the chatter position
-[web_company_color](web_company_color/) | 17.0.1.1.0 |  | Web Company Color
-[web_dialog_size](web_dialog_size/) | 17.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
-[web_editor_class_selector](web_editor_class_selector/) | 17.0.1.0.0 |  | Web editor class selector
-[web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.2 |  | Web Environment Ribbon
-[web_favicon](web_favicon/) | 17.0.1.0.2 |  | Allows to set a custom shortcut icon (aka favicon)
-[web_field_tooltip](web_field_tooltip/) | 17.0.1.0.0 |  | Displays customizable tooltips for fields
-[web_group_expand](web_group_expand/) | 17.0.1.0.0 |  | Group Expand Buttons
-[web_m2x_options](web_m2x_options/) | 17.0.1.0.5 |  | web_m2x_options
-[web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
-[web_notify](web_notify/) | 17.0.1.0.0 |  | Send notification messages to user
-[web_refresher](web_refresher/) | 17.0.1.1.2 |  | Web Refresher
-[web_remember_tree_column_width](web_remember_tree_column_width/) | 17.0.1.0.0 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 17.0.1.1.4 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![SplashS](https://github.com/SplashS.png?size=30px)](https://github.com/SplashS) | Responsive web client, community-supported
-[web_save_discard_button](web_save_discard_button/) | 17.0.1.0.1 | [![synconics](https://github.com/synconics.png?size=30px)](https://github.com/synconics) | Save & Discard Buttons
-[web_theme_classic](web_theme_classic/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Contrasted style on fields to improve the UI.
-[web_time_range_menu_custom](web_time_range_menu_custom/) | 17.0.1.0.0 |  | Web Time Range Menu Custom
-[web_timeline](web_timeline/) | 17.0.1.0.1 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
-[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 17.0.1.0.0 |  | Allows you to dynamically color fields on tree views
-[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 17.0.1.0.0 |  | Open the linked resource when clicking on their name
-[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using Bokeh library.
-[web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 17.0.1.0.0 |  | Recovers the Domain Editor Dialog functionality
-[web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 17.0.1.0.0 |  | This module adds support for dynamic dropdown widget
-[web_widget_image_download](web_widget_image_download/) | 17.0.1.0.0 |  | Allows to download any image from its widget
-[web_widget_mpld3_chart](web_widget_mpld3_chart/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using MPLD3 library.
-[web_widget_numeric_step](web_widget_numeric_step/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
-[web_widget_open_tab](web_widget_open_tab/) | 17.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
-[web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Allow to draw plotly charts.
-[web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
-[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix
+[web_environment_ribbon](web_environment_ribbon/) | 18.0.1.0.1 |  | Web Environment Ribbon
+[web_favicon](web_favicon/) | 18.0.1.0.0 |  | Allows to set a custom shortcut icon (aka favicon)
+[web_no_bubble](web_no_bubble/) | 18.0.1.0.0 |  | Remove the bubbles from the web interface
+[web_notify](web_notify/) | 18.0.1.0.1 |  | Send notification messages to user
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
+[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 18.0.1.0.1 |  | Allows you to dynamically color fields on tree views
+[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 18.0.1.0.1 |  | Open the linked resource when clicking on their name
+[web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
 
 [//]: # (end addons)
 
@@ -8089,17 +7267,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/website/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/website/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/website/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/website/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/website/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/website)
-[![Translation Status](https://translation.odoo-community.org/widgets/website-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/website/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/website/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/website/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/website/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/website/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/website)
+[![Translation Status](https://translation.odoo-community.org/widgets/website-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # website
 
-TODO: add repo description.
+website
 
 <!-- /!\ do not modify below this line -->
 
@@ -8111,17 +7289,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[website_conditional_visibility_user_group](website_conditional_visibility_user_group/) | 17.0.1.0.0 |  | Only internal users will see the blocks you add this condition to
-[website_cookiebot](website_cookiebot/) | 17.0.1.0.1 |  | Ask for cookies consent connecting with Cookiebot
-[website_cookiefirst](website_cookiefirst/) | 17.0.1.0.0 |  | Cookiefirst integration
-[website_crm_quick_answer](website_crm_quick_answer/) | 17.0.1.0.0 |  | Add an automatic answer for contacts asking for info
-[website_form_require_legal](website_form_require_legal/) | 17.0.1.0.0 |  | Add possibility to require confirm legal terms.
-[website_forum_subscription](website_forum_subscription/) | 17.0.1.0.0 |  | Adds a button to allow subscription from the website
-[website_google_tag_manager](website_google_tag_manager/) | 17.0.1.0.1 |  | Add support for Google Tag Manager
-[website_odoo_debranding](website_odoo_debranding/) | 17.0.1.0.0 |  | Remove Odoo Branding from Website
-[website_require_login](website_require_login/) | 17.0.1.0.0 |  | Website Login Required
-[website_snippet_big_button](website_snippet_big_button/) | 17.0.1.0.0 |  | A snippet that adds two big buttons
-[website_snippet_marginless_gallery](website_snippet_marginless_gallery/) | 17.0.1.0.0 |  | Add a snippet to have a marginless image gallery
+[website_odoo_debranding](website_odoo_debranding/) | 18.0.1.0.0 |  | Remove Odoo Branding from Website
 
 [//]: # (end addons)
 
@@ -8145,17 +7313,17 @@ and promote its widespread use.
 
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
 
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website-cms&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/website-cms/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/website-cms/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/website-cms/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/website-cms/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/website-cms/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/website-cms)
-[![Translation Status](https://translation.odoo-community.org/widgets/website-cms-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-cms-17-0/?utm_source=widget)
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/website-cms&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/website-cms/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/website-cms/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/website-cms/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/website-cms/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/website-cms/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/website-cms)
+[![Translation Status](https://translation.odoo-community.org/widgets/website-cms-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/website-cms-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
 
 # website-cms
 
-CMS features for Odoo portal and websites. Ease creation of forms, status message, actions and more.
+website-cms
 
 <!-- /!\ do not modify below this line -->
 

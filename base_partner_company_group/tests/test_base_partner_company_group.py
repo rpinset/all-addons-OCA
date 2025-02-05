@@ -1,10 +1,10 @@
 # Copyright 2020 Ecosoft Co., Ltd (http://ecosoft.co.th/)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tests.common import TransactionCase
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestBasePartnerCompanyGroup(TransactionCase):
+class TestBasePartnerCompanyGroup(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()

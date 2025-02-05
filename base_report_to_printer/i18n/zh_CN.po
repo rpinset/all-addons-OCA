@@ -177,7 +177,6 @@ msgstr "副本"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
-#, python-format
 msgid "Could not sent to printer!"
 msgstr "无法发送至打印机！"
 
@@ -324,7 +323,6 @@ msgstr "文档中的错误"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/printing_server.py:0
-#, python-format
 msgid ""
 "Failed to connect to the CUPS server on %(address)s:%(port)s. Check that the "
 "CUPS server is running and that you can reach it from the Odoo server."
@@ -345,7 +343,6 @@ msgstr "文件未完全接收"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/wizards/print_attachment_report.py:0
-#, python-format
 msgid ""
 "Following attachments could not be printed:\n"
 "\n"
@@ -406,7 +403,6 @@ msgstr "如果勾选，此服务器可用。"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
-#, python-format
 msgid "Issue on"
 msgstr ""
 
@@ -505,7 +501,6 @@ msgstr "没有接收到数据"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/ir_actions_report.py:0
-#, python-format
 msgid "No printer configured to print this report."
 msgstr "没有配置打印机来打印此报告。"
 
@@ -570,7 +565,6 @@ msgstr "服务器的端口。"
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.act_report_xml_view
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.wizard_print_attachment_form
-#, python-format
 msgid "Print"
 msgstr "打印"
 
@@ -814,7 +808,6 @@ msgstr "状态消息"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
-#, python-format
 msgid "Successfully sent to printer!"
 msgstr "成功发送至打印机！"
 
@@ -837,7 +830,6 @@ msgstr "每个服务器的作业 ID 必须是唯一的！"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
-#, python-format
 msgid "The report"
 msgstr ""
 
@@ -855,7 +847,6 @@ msgstr "此过程将从当前 CUPS 服务器创建所有缺失的打印机。"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/ir_actions_report.py:0
-#, python-format
 msgid "This report type (%s) is not supported by direct printing!"
 msgstr "直接打印不支持此报告类型 (%s)！"
 
@@ -942,14 +933,12 @@ msgstr "向导"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
-#, python-format
 msgid "couldn't be printed. Click on the button below to download it"
 msgstr ""
 
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/wizards/print_attachment_report.py:0
-#, python-format
 msgid "{name} ({copies} copies)"
 msgstr "{name} ({copies} 副本)"
 

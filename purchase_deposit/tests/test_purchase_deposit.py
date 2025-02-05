@@ -4,7 +4,7 @@
 
 from odoo import fields
 from odoo.exceptions import UserError
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests import Form, TransactionCase
 
 
 class TestPurchaseDeposit(TransactionCase):
@@ -99,7 +99,7 @@ class TestPurchaseDeposit(TransactionCase):
         )
         # On Purchase Order, there will be new deposit line create
         self.assertRecordValues(
-            self.po.order_line.filtered(lambda li: not li.display_type),
+            self.po.order_line,
             [
                 {
                     "product_id": self.product1.id,
@@ -113,7 +113,7 @@ class TestPurchaseDeposit(TransactionCase):
         res = self.po.with_context(create_bill=True).action_create_invoice()
         invoice = self.invoice_model.browse(res["res_id"])
         self.assertRecordValues(
-            invoice.invoice_line_ids.filtered(lambda li: li.display_type == "product"),
+            invoice.invoice_line_ids,
             [
                 {"product_id": self.product1.id, "price_unit": 100.0, "quantity": 42},
                 {"product_id": deposit.id, "price_unit": 420.0, "quantity": -1},
@@ -196,8 +196,6 @@ class TestPurchaseDeposit(TransactionCase):
             }
         )
         self.po.invoice_ids.action_post()
-        deposit_line = self.po.order_line.filtered(
-            lambda p: p.is_deposit and not p.display_type
-        )
+        deposit_line = self.po.order_line.filtered(lambda p: p.is_deposit)
         self.assertEqual(deposit_line.price_unit, 500.0)
         self.assertEqual(deposit_line.taxes_id.id, self.tax.id)

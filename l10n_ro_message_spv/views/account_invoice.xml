@@ -6,7 +6,6 @@
         <field name="type">form</field>
         <field name="inherit_id" ref="account.view_move_form" />
         <field name="arch" type="xml">
-
             <xpath expr="//page[@id='other_tab']" position="after">
                 <page
                     id="l10n_ro_message_spv_ids"
@@ -15,7 +14,7 @@
                     invisible="not l10n_ro_message_spv_ids"
                 >
                     <field name="l10n_ro_message_spv_ids">
-                        <tree
+                        <list
                             create="false"
                             delete="false"
                             edit="false"
@@ -28,12 +27,10 @@
                             <field name="request_id" />
                             <field name="error" />
                             <field name="message" />
-                        </tree>
+                        </list>
                     </field>
                 </page>
             </xpath>
-
-
         </field>
     </record>
 </odoo>

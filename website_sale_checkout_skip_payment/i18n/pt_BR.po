@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-18 10:04+0000\n"
-"PO-Revision-Date: 2024-05-29 19:35+0000\n"
-"Last-Translator: Rodrigo Macedo <sottomaiormacedotec@users.noreply."
-"translation.odoo-community.org>\n"
+"PO-Revision-Date: 2024-09-03 15:06+0000\n"
+"Last-Translator: Rodrigo Sottomaior Macedo "
+"<sottomaiormacedotec@sottomaiormacedo.tech>\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
 "teams/23907/pt_BR/)\n"
 "Language: pt_BR\n"
@@ -19,30 +19,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: website_sale_checkout_skip_payment
-#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.payment
-msgid ""
-"<i class=\"fa fa-chevron-left\"/>\n"
-"                        Return to Cart"
+#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.navigation_buttons
+msgid "<span class=\"px-3\">or</span>"
 msgstr ""
-"<i class=\"fa fa-chevron-left\"/>\n"
-"                        Voltar ao carrinho"
 
 #. module: website_sale_checkout_skip_payment
-#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
-msgid ""
-"<span class=\"fa fa-lg fa-globe\" title=\"Values set here are website-"
-"specific.\" groups=\"website.group_multi_website\"/>"
+#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.navigation_buttons
+msgid "<span>Confirm <span class=\"fa fa-angle-right ms-2 fw-light\"/></span>"
 msgstr ""
-"<span class=\"fa fa-lg fa-globe\" title=\"Os valores definidos aqui são "
-"específicos do site.\" groups=\"website.group_multi_website\"/>"
-
-#. module: website_sale_checkout_skip_payment
-#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.payment
-msgid "<span>Confirm <span class=\"fa fa-chevron-right\"/></span>"
-msgstr "<span>Confirmar <span class=\"fa fa-chevron-right\"/></span>"
 
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.confirmation_order_error
@@ -64,6 +51,11 @@ msgid "Config Settings"
 msgstr "Configurações"
 
 #. module: website_sale_checkout_skip_payment
+#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.navigation_buttons
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: website_sale_checkout_skip_payment
 #: model:ir.model,name:website_sale_checkout_skip_payment.model_res_partner
 msgid "Contact"
 msgstr "Contato"
@@ -72,6 +64,14 @@ msgstr "Contato"
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
 msgid "Message shown to the user when the purchase is finished"
 msgstr "Mensagem mostrada ao usuário quando a compra for finalizada"
+
+#. module: website_sale_checkout_skip_payment
+#. odoo-python
+#: code:addons/website_sale_checkout_skip_payment/models/website.py:0
+msgid "Our team will check your order and send you payment information soon."
+msgstr ""
+"Nossa equipe verificará seu pedido e enviará as informações de pagamento em "
+"breve."
 
 #. module: website_sale_checkout_skip_payment
 #: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.res_config_settings_view_form
@@ -104,10 +104,22 @@ msgstr "Mensagem de salto de finalização de compra de venda no site"
 msgid "Website Sale SKip Message"
 msgstr "Mensagem de ignorar venda do site"
 
-#. module: website_sale_checkout_skip_payment
-#: model_terms:ir.ui.view,arch_db:website_sale_checkout_skip_payment.order_state_message
-msgid "Your order is waiting manual confirmation."
-msgstr "Seu pedido está aguardando confirmação manual."
+#~ msgid ""
+#~ "<i class=\"fa fa-chevron-left\"/>\n"
+#~ "                        Return to Cart"
+#~ msgstr ""
+#~ "<i class=\"fa fa-chevron-left\"/>\n"
+#~ "                        Voltar ao carrinho"
 
-#~ msgid "Confirm"
-#~ msgstr "Confirmar"
+#~ msgid ""
+#~ "<span class=\"fa fa-lg fa-globe\" title=\"Values set here are website-"
+#~ "specific.\" groups=\"website.group_multi_website\"/>"
+#~ msgstr ""
+#~ "<span class=\"fa fa-lg fa-globe\" title=\"Os valores definidos aqui são "
+#~ "específicos do site.\" groups=\"website.group_multi_website\"/>"
+
+#~ msgid "<span>Confirm <span class=\"fa fa-chevron-right\"/></span>"
+#~ msgstr "<span>Confirmar <span class=\"fa fa-chevron-right\"/></span>"
+
+#~ msgid "Your order is waiting manual confirmation."
+#~ msgstr "Seu pedido está aguardando confirmação manual."

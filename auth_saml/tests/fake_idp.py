@@ -25,20 +25,18 @@ CONFIG = {
         "aa": {
             "endpoints": {
                 "attribute_service": [
-                    ("%s/aap" % BASE, BINDING_HTTP_POST),
+                    (f"{BASE}/aap", BINDING_HTTP_POST),
                 ]
             },
         },
         "aq": {
-            "endpoints": {
-                "authn_query_service": [("%s/aqs" % BASE, BINDING_HTTP_POST)]
-            },
+            "endpoints": {"authn_query_service": [(f"{BASE}/aqs", BINDING_HTTP_POST)]},
         },
         "idp": {
             "endpoints": {
                 "single_sign_on_service": [
-                    ("%s/sso/redirect" % BASE, BINDING_HTTP_REDIRECT),
-                    ("%s/sso/post" % BASE, BINDING_HTTP_POST),
+                    (f"{BASE}/sso/redirect", BINDING_HTTP_REDIRECT),
+                    (f"{BASE}/sso/post", BINDING_HTTP_POST),
                 ],
             },
             "policy": {
@@ -87,7 +85,7 @@ class DummyResponse:
         """
         _str = self.text
 
-        sr_str = 'name="%s" value="' % ver
+        sr_str = f'name="{ver}" value="'
         rs_str = 'name="RelayState" value="'
 
         i = _str.find(sr_str)
@@ -152,10 +150,7 @@ class FakeIDP(Server):
 
     def authn_request_endpoint(self, req, binding, relay_state):
         req = self.parse_authn_request(req, binding)
-        if req.message.protocol_binding == BINDING_HTTP_REDIRECT:
-            _binding = BINDING_HTTP_POST
-        else:
-            _binding = req.message.protocol_binding
+        _binding = req.message.protocol_binding
 
         resp_args = self.response_args(req.message, [_binding])
 

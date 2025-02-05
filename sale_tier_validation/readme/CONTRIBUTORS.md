@@ -1,4 +1,0 @@
-- Mayank Gosai \<<mgosai@opensourceintegrators.com>\>
-- [Tecnativa](https://www.tecnativa.com):
-  - Sergio Teruel
-- Tharathip Chaweewongphan \<<tharathipc@ecosoft.co.th>\>

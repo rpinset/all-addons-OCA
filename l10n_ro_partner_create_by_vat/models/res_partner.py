@@ -241,7 +241,9 @@ class ResPartner(models.Model):
                 ("state_id", "=", odoo_result["state_id"].id),
                 ("name", "=ilike", odoo_result["city"]),
             ]
-            odoo_result["city_id"] = self.env["res.city"].search(domain, limit=1).id
+            city = self.env["res.city"].search(domain, limit=1)
+            if city:
+                odoo_result["city_id"] = city.id
 
         if odoo_result["state_id"] == self.env.ref("base.RO_B"):
             if odoo_result.get("codPostal") and odoo_result["codPostal"][0] != "0":
@@ -257,10 +259,10 @@ class ResPartner(models.Model):
             if field[2] == "over_all_the_time":
                 res[field[0]] = anaf_value
             elif field[2] == "write_if_empty&add_date" and anaf_value:
-                if not getattr(
-                    self, field[0], None
-                ):  # we are only writing if is not already a value
-                    res[field[0]] = ("UTC %s:" % fields.datetime.now()) + anaf_value
+                # we are only writing if is not already a value
+                if not getattr(self, field[0], None):
+                    now = fields.datetime.now()
+                    res[field[0]] = (f"UTC {now}:") + anaf_value
             elif field[2] == "write_if_empty" and anaf_value:
                 if not getattr(self, field[0], None):
                     res[field[0]] = anaf_value
@@ -301,25 +303,31 @@ class ResPartner(models.Model):
             result["street2"] = result.get("ddetalii_Adresa", " ").strip().title()
             result["city"] = get_city(result.get("ddenumire_Localitate"))
             state_name = get_city(result.get("ddenumire_Judet"))
-            if state_name:
-                state = self.env["res.country.state"].search(
-                    [("name", "=", state_name)],
-                    limit=1,
-                )
+            state_code = result.get("dcod_JudetAuto")
+
+            if state_code:
+                domain = [
+                    ("code", "=", state_code),
+                    ("country_id", "=", self.env.ref("base.ro").id),
+                ]
+                state = self.env["res.country.state"].search(domain, limit=1)
+
+            if not state and state_name:
+                domain = [("name", "=", state_name)]
+                state = self.env["res.country.state"].search(domain, limit=1)
+
         result["state_id"] = state
         return result
 
     @api.onchange("vat", "country_id")
     def ro_vat_change(self):
         res = {}
-        if self.is_l10n_ro_record and not self.parent_id and self.is_company:
+        if self.is_l10n_ro_record and not self.parent_id:
             if not self.env.context.get("skip_ro_vat_change"):
                 if not self.vat:
                     return res
                 vat = self.vat.strip().upper()
-                original_vat_country, vat_number = self._split_vat_and_mapped_country(
-                    vat
-                )
+                original_vat_country, vat_number = self._split_vat(vat)
                 vat_country = original_vat_country.upper()
                 if not vat_country and self.country_id:
                     vat_country = self._l10n_ro_map_vat_country_code(

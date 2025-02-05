@@ -1,7 +1,0 @@
-- Sylvain LE GAL \<<https://twitter.com/legalsylvain>\>
-- [Tecnativa](https://www.tecnativa.com):
-- [FactorLibre](https://www.factorlibre.com)
-  - Sergio Teruel
-  - Ernesto Tejeda
-  - Pedro M. Baeza
-  - Hugo Córdoba

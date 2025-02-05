@@ -1,4 +1,0 @@
-- Go to *Sales \> Orders \> Quotations*.
-- Create a new sales order.
-- Select the first quotation template.
-- Select the second quotation template, and the order lines from the first template are retained.

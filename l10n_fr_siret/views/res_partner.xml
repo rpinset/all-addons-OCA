@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <!-- Add the SIREN and RC -->
     <record model="ir.ui.view" id="res_partner_form_l10n_fr">
         <field name="name">res.partner.form.siret</field>
@@ -11,17 +10,17 @@
                 <attribute name="readonly">parent_id != False</attribute>
                 <attribute
                     name="invisible"
-                >'FR' not in fiscal_country_codes or (not is_company and not parent_is_company)</attribute>
+                >not is_company and not parent_is_company</attribute>
             </field>
             <field name="siret" position="after">
                 <field
                     name="siren"
                     readonly="parent_id != False"
-                    invisible="'FR' not in fiscal_country_codes or (not is_company and not parent_is_company)"
+                    invisible="not is_company and not parent_is_company"
                 />
                 <field
                     name="nic"
-                    invisible="'FR' not in fiscal_country_codes or (not is_company and not parent_is_company)"
+                    invisible="not is_company and not parent_is_company"
                 />
                 <field name="parent_is_company" invisible="1" />
             </field>
@@ -34,16 +33,12 @@
                 expr="//field[@name='child_ids']/form//field[@name='comment']"
                 position="before"
             >
-                <field
-                    name="nic"
-                    invisible="'FR' not in fiscal_country_codes or type in ('contact', 'private')"
-                />
+                <field name="nic" invisible="type in ('contact', 'private')" />
                 <field
                     name="siret"
-                    invisible="'FR' not in fiscal_country_codes or type in ('contact', 'private')"
+                    invisible="type in ('contact', 'private')"
                     readonly="1"
                 />
-                <field name="fiscal_country_codes" invisible="1" />
             </xpath>
             <div name="warning_tax" position="after">
                 <div
@@ -53,11 +48,22 @@
                     invisible="not same_siren_partner_id"
                 >
                         Duplicate warning: partner <field
-                        name="same_siren_partner_id"
-                    /> has the same <b>SIREN</b>.
+                    name="same_siren_partner_id"
+                /> has the same <b>SIREN</b>.
                 </div>
             </div>
         </field>
     </record>
 
+    <record id="view_partner_tree" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree" />
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="siren" optional="hide" readonly="1" />
+                <field name="nic" optional="hide" readonly="1" />
+                <field name="siret" optional="hide" readonly="1" />
+            </field>
+        </field>
+    </record>
 </odoo>

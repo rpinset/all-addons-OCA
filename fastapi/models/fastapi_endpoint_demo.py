@@ -65,9 +65,9 @@ class FastapiEndpoint(models.Model):
                 authenticated_partner_impl_override = (
                     api_key_based_authenticated_partner_impl
                 )
-            app.dependency_overrides[
-                authenticated_partner_impl
-            ] = authenticated_partner_impl_override
+            app.dependency_overrides[authenticated_partner_impl] = (
+                authenticated_partner_impl_override
+            )
         return app
 
     def _prepare_fastapi_app_params(self) -> dict[str, Any]:

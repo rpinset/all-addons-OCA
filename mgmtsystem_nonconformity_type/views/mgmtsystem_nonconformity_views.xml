@@ -2,7 +2,6 @@
 <!-- Copyright 2019 Stefano Consolaro (Associazione PNLUG - Gruppo Odoo <http://odoo.pnlug.it>)
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl) -->
 <odoo>
-
     <!-- inherit NC form view
             adding button to email nonconformity form
             adding type and quantities -->
@@ -34,5 +33,4 @@
             </field>
         </field>
     </record>
-
 </odoo>

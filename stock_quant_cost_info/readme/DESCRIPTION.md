@@ -1,0 +1,1 @@
+This module enhances the Physical Inventory functionality by introducing a new column, Adjustment Cost, within the Quant Details list and its corresponding PDF report. The Adjustment Cost is dynamically calculated based on the following formula: (Real Quantity - Theoretical Quantity) multiplied by the Product Cost.

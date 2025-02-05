@@ -1,1 +1,0 @@
-- Add more formulas to spread amounts into analytic account spreading filters configuration.

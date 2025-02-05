@@ -149,9 +149,8 @@ class BiSQLViewField(models.Model):
     # Compute Section
     def _compute_index_name(self):
         for sql_field in self:
-            sql_field.index_name = "{}_{}".format(
-                sql_field.bi_sql_view_id.view_name,
-                sql_field.name,
+            sql_field.index_name = (
+                f"{sql_field.bi_sql_view_id.view_name}_{sql_field.name}"
             )
 
     # Overload Section
@@ -209,8 +208,8 @@ class BiSQLViewField(models.Model):
         field name. Sample :
         {'account_id': 'account.account'; 'product_id': 'product.product'}
         """
-        relation_fields = self.env["ir.model.fields"].search(
-            [("ttype", "=", "many2one")]
+        relation_fields = (
+            self.env["ir.model.fields"].sudo().search([("ttype", "=", "many2one")])
         )
         res = {}
         keys_to_pop = []
@@ -239,10 +238,6 @@ class BiSQLViewField(models.Model):
             or False,
         }
 
-    def _prepare_form_field(self):
-        self.ensure_one()
-        return f"""<field name="{self.name}" context="{self.field_context}"/>\n"""
-
     def _prepare_tree_field(self):
         self.ensure_one()
         if self.tree_visibility == "unavailable":
@@ -255,14 +250,8 @@ class BiSQLViewField(models.Model):
         elif self.tree_visibility == "optional_show":
             visibility_text = 'optional="show"'
 
-        operator_text = ""
-        if self.group_operator == "sum":
-            operator_text = f'sum="{_("Total")}"'
-        elif self.group_operator == "avg":
-            operator_text = f'avg="{_("Average")}"'
-
         return (
-            f"""<field name="{self.name}" {visibility_text} {operator_text}"""
+            f"""<field name="{self.name}" {visibility_text}"""
             f""" context="{self.field_context}"/>\n"""
         )
 

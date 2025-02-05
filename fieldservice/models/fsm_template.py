@@ -7,7 +7,6 @@ from odoo import fields, models
 class FSMTemplate(models.Model):
     _name = "fsm.template"
     _description = "Field Service Order Template"
-    _check_company_auto = True
 
     name = fields.Char(required=True)
     instructions = fields.Text()
@@ -24,5 +23,4 @@ class FSMTemplate(models.Model):
         "fsm.team",
         string="Team",
         help="Choose a team to be set on orders of this template",
-        check_company=True,
     )

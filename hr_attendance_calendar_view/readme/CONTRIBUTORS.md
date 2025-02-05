@@ -1,2 +1,0 @@
--  `APSL-Nagarro <https://apsl.tech>`__:
-   -  Lansana Barry <lbarry@apsl.net>

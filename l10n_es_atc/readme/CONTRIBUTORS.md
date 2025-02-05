@@ -1,3 +1,0 @@
-- Nicolás Ramos \<<n.ramos@binhex.es>\>
-- [APSL-Nagarro](https://apsl.tech):
-  - Miquel Pascual  \<<mpascual@apsl.net>\>

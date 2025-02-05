@@ -1,47 +1,54 @@
 /* @odoo-module */
 /* global vis */
 
-import {Component, onMounted, onWillStart, useRef, useState} from "@odoo/owl";
 import {loadCSS, loadJS} from "@web/core/assets";
-
-import {_t} from "@web/core/l10n/translation";
 import {registry} from "@web/core/registry";
 import {standardFieldProps} from "@web/views/fields/standard_field_props";
-import {useRecordObserver} from "@web/model/relational_model/utils";
 import {useService} from "@web/core/utils/hooks";
 
-export class JobDirectGraph extends Component {
+const {Component, onWillStart, useEffect, useRef} = owl;
+
+const {document} = globalThis;
+
+class JobDirectGraph extends Component {
+    static props = {...standardFieldProps};
+    static template = "queue.JobDirectGraph";
+
     setup() {
-        super.setup();
         this.orm = useService("orm");
         this.action = useService("action");
         this.rootRef = useRef("root_vis");
         this.network = null;
-        this.state = useState({});
-
+        this.forceRender = false;
         onWillStart(async () => {
             await loadJS("/queue_job/static/lib/vis/vis-network.min.js");
             loadCSS("/queue_job/static/lib/vis/vis-network.min.css");
         });
-        useRecordObserver((record) => {
-            this.state.value = record.data[this.props.name];
-        });
-        onMounted(() => {
-            this.renderNetwork();
-            this._fitNetwork();
-        });
+        useEffect(
+            () => {
+                this.renderNetwork();
+                this._fitNetwork();
+                return () => {
+                    if (this.network) {
+                        this.$el.innerHTML = "";
+                    }
+                    return this.rootRef.el;
+                };
+            },
+            () => []
+        );
     }
 
     get $el() {
-        return $(this.rootRef.el);
+        return this.rootRef.el;
     }
 
     get resId() {
-        return this.props.record.data.id;
+        return this.props.record.resId;
     }
 
     get context() {
-        return this.props.record.getFieldContext(this.props.name);
+        return this.props.record.context;
     }
 
     get model() {
@@ -56,24 +63,54 @@ export class JobDirectGraph extends Component {
 
     renderNetwork() {
         if (this.network) {
-            this.$el.empty();
+            this.$el.innerHTML = "";
         }
-
-        const nodes = (this.state.value.nodes || []).map((node) => {
+        const values = this.props.record.data[this.props.name];
+        let nodes = values?.nodes || [];
+        if (!nodes.length) {
+            return;
+        }
+        nodes = nodes.map((node) => {
             node.title = this.htmlTitle(node.title || "");
-            node.label = _t("Job %(id)s", {id: node.id});
             return node;
         });
 
-        const edges = (this.state.value.edges || []).map((edge) => {
+        const edges = [];
+
+        (values?.edges || []).forEach((edge) => {
             const edgeFrom = edge[0];
             const edgeTo = edge[1];
-            return {
+            edges.push({
                 from: edgeFrom,
                 to: edgeTo,
                 arrows: "to",
-            };
+            });
         });
+
+        if (nodes.length * edges.length > 5000 && !this.forceRender) {
+            const warningDiv = document.createElement("div");
+
+            warningDiv.className = "alert alert-warning h-100 d-flex";
+            warningDiv.className +=
+                " flex-column justify-content-center align-items-center";
+
+            warningDiv.innerText =
+                `This graph is big (${nodes.length} nodes, ` +
+                `${edges.length} edges), it may take a while to display.`;
+
+            const self = this;
+            const button = document.createElement("button");
+            button.innerText = "Display anyway";
+            button.className = "btn btn-secondary";
+            button.onclick = function () {
+                self.forceRender = true;
+                warningDiv.parentNode.removeChild(warningDiv);
+                self.renderNetwork();
+            };
+            warningDiv.appendChild(button);
+            this.$el.append(warningDiv);
+            return;
+        }
 
         const data = {
             nodes: new vis.DataSet(nodes),
@@ -90,24 +127,25 @@ export class JobDirectGraph extends Component {
         if (nodes.length > 100) {
             options.physics = {stabilization: false};
         }
-        const network = new vis.Network(this.$el[0], data, options);
+        const network = new vis.Network(this.$el, data, options);
         network.selectNodes([this.resId]);
-        network.on("dragging", () => {
+        var self = this;
+        network.on("dragging", function () {
             // By default, dragging changes the selected node
             // to the dragged one, we want to keep the current
             // job selected
-            network.selectNodes([this.resId]);
+            network.selectNodes([self.resId]);
         });
-        network.on("click", (params) => {
+        network.on("click", function (params) {
             if (params.nodes.length > 0) {
-                const resId = params.nodes[0];
-                if (resId !== this.resId) {
-                    this.openDependencyJob(resId);
+                var resId = params.nodes[0];
+                if (resId !== self.resId) {
+                    self.openDependencyJob(resId);
                 }
             } else {
                 // Clicked outside of the nodes, we want to
                 // keep the current job selected
-                network.selectNodes([this.resId]);
+                network.selectNodes([self.resId]);
             }
         });
         this.network = network;
@@ -131,12 +169,6 @@ export class JobDirectGraph extends Component {
         }
     }
 }
-
-JobDirectGraph.props = {
-    ...standardFieldProps,
-};
-
-JobDirectGraph.template = "queue.JobDirectGraph";
 
 export const jobDirectGraph = {
     component: JobDirectGraph,

@@ -1,42 +1,39 @@
 <?xml version="1.0" ?>
 <odoo>
-        <!-- Partner -->
+    <!-- Partner -->
 
-        <record id="view_partner_create_by_vat_einvoice" model="ir.ui.view">
-            <field name="name">res.partner.create.by.vat.einvoice</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="l10n_ro_config.view_partner_create_by_vat" />
-            <field name="arch" type="xml">
-                <field name="l10n_ro_vat_number" position="after">
-                    <field
+    <record id="view_partner_create_by_vat_einvoice" model="ir.ui.view">
+        <field name="name">res.partner.create.by.vat.einvoice</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="l10n_ro_config.view_partner_create_by_vat" />
+        <field name="arch" type="xml">
+            <field name="l10n_ro_vat_number" position="after">
+                <field
                     name="l10n_ro_old_name"
                     placeholder="Old Name"
                     invisible="not is_company"
                 />
-                </field>
             </field>
-        </record>
+        </field>
+    </record>
 
-        <record id="view_partner_anaf_status_form" model="ir.ui.view">
+    <!--        <record id="view_partner_anaf_status_form" model="ir.ui.view">
             <field name="name">res.partner.anaf.status.inherit</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="account.view_partner_property_form" />
             <field name="arch" type="xml">
                 <page name="accounting" position="inside">
-
-                    <group
-                    string="ANAF - Active State History"
-                    id="l10n_ro_anaf_active_stare_history"
-                >
-
+                    <field name="is_l10n_ro_record" invisible="1" />
+                    <group string="ANAF History">
+                        <separator string="ANAF - Active State History" />
                         <field
                         name="l10n_ro_active_anaf_line_ids"
                         readonly="1"
                         force_save="1"
                         nolabel="1"
-                        colspan="2"
+                        colspan="4"
                     >
-                            <tree>
+                            <list>
                                 <field name="partner_id" invisible="1" />
                                 <field name="date" />
                                 <field name="act" />
@@ -46,21 +43,17 @@
                                 <field name="publish_date" />
                                 <field name="delete_date" />
                                 <field name="active_status" />
-                            </tree>
+                            </list>
                         </field>
-                    </group>
-                    <group
-                    string="ANAF - VAT Subjected History"
-                    id="l10n_ro_anaf_active_vat_history"
-                >
+                        <separator string="ANAF - VAT Subjected History" />
                         <field
                         name="l10n_ro_vat_subjected_anaf_line_ids"
                         readonly="1"
                         force_save="1"
                         nolabel="1"
-                        colspan="2"
+                        colspan="4"
                     >
-                            <tree>
+                            <list>
                                 <field name="partner_id" invisible="1" />
                                 <field name="date" />
                                 <field name="start_date" />
@@ -68,10 +61,10 @@
                                 <field name="year_date" />
                                 <field name="message" />
                                 <field name="vat_subjected" />
-                            </tree>
+                            </list>
                         </field>
                     </group>
                 </page>
             </field>
-    </record>
+    </record>-->
 </odoo>

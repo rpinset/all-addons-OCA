@@ -1,9 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com)
-  - Pedro M. Baeza
-  - Víctor Martínez
-  - Carolina Fernandez
-- [Sygel](https://www.sygel.es)
-  - Harald Panten
-  - Manuel Regidor
-  - Valentín Vinagre
-  - Alberto Martínez

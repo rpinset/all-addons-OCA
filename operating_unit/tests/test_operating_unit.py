@@ -2,8 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html)
 
 from odoo.exceptions import AccessError
-from odoo.tests import tagged
-from odoo.tests.common import Form
+from odoo.tests import Form, tagged
 
 from .common import OperatingUnitCommon
 
@@ -57,7 +56,7 @@ class TestOperatingUnit(OperatingUnitCommon):
         self.assertEqual(
             operating_unit_list_2[0],
             "B2C",
-            "User 2 should have access to " "%s" % self.b2c.name,
+            f"User 2 should have access to {self.b2c.name}",
         )
 
     def test_02_operating_unit(self):

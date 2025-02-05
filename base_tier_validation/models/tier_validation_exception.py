@@ -1,7 +1,7 @@
 # Copyright 2024 Moduon Team (https://www.moduon.team)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import _, api, exceptions, fields, models
+from odoo import api, exceptions, fields, models
 
 from .tier_validation import BASE_EXCEPTION_FIELDS
 
@@ -9,7 +9,6 @@ from .tier_validation import BASE_EXCEPTION_FIELDS
 class TierValidationException(models.Model):
     _name = "tier.validation.exception"
     _description = "Tier Validation Exceptions"
-    _rec_name = "name"
 
     @api.model
     def _get_tier_validation_model_names(self):
@@ -30,7 +29,6 @@ class TierValidationException(models.Model):
         related="model_id.model",
         string="Model Name",
         store=True,
-        readonly=True,
         index=True,
     )
     field_ids = fields.Many2many(
@@ -64,17 +62,21 @@ class TierValidationException(models.Model):
 
     @api.depends("model_id")
     def _compute_valid_model_field_ids(self):
-        for record in self:
-            record.valid_model_field_ids = (
-                self.env["ir.model.fields"]
-                .sudo()
-                .search(
-                    [
-                        ("model", "=", record.model_name),
-                        ("name", "not in", BASE_EXCEPTION_FIELDS),
-                    ]
-                )
+        model_names = self.mapped("model_name")
+        valid_model_fields = dict(
+            self.env["ir.model.fields"]
+            .sudo()
+            ._read_group(
+                domain=[
+                    ("model", "in", model_names),
+                    ("name", "not in", BASE_EXCEPTION_FIELDS),
+                ],
+                groupby=["model"],
+                aggregates=["id:array_agg"],
             )
+        )
+        for record in self:
+            record.valid_model_field_ids = valid_model_fields.get(record.model_name, [])
 
     @api.constrains(
         "allowed_to_write_under_validation", "allowed_to_write_after_validation"
@@ -85,7 +87,7 @@ class TierValidationException(models.Model):
             and not self.allowed_to_write_after_validation
         ):
             raise exceptions.ValidationError(
-                _(
+                self.env._(
                     "At least one of these fields must be checked! "
                     "Write under Validation, Write after Validation"
                 )

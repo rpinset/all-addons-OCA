@@ -1,5 +1,0 @@
-- Rami Alwafaie \<<rami.alwafaie@initos.com>\>
-- Dhara Solanki \<<dhara.solanki@initos.com>\>
-- Numigi (tm) and all its contributors (<https://bit.ly/numigiens>)
-- Moaad Bourhim \<<moaad.bourhim@gmail.com>\>
-- Italo LOPES \<<italo.lopes@camptocamp.com>\>

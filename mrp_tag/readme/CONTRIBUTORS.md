@@ -1,2 +1,0 @@
-- Jasmin Solanki \<<jasmin.solanki@forgeflow.com>\>
-- Arturo Arribas \<<aarribas@alquemy.es>\>

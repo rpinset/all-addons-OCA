@@ -1,9 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Antonio Espinosa
-  - Carlos Dauden
-  - Pedro M. Baeza
-  - David Vidal
-  - Rafael Blasco
-  - Ernesto Tejeda
-  - Jairo Llopis
-  - Carlos Roca

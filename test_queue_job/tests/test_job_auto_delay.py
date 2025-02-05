@@ -32,11 +32,7 @@ class TestJobAutoDelay(JobCommonCase):
 
     def test_auto_delay_force_sync(self):
         """method forced to run synchronously"""
-        result = (
-            self.env["test.queue.job"]
-            .with_context(queue_job__no_delay=True)
-            .delay_me(1, kwarg=2)
-        )
+        result = self.env["test.queue.job"].delay_me(1, kwarg=2)
         self.assertTrue(result, (1, 2))
 
     def test_auto_delay_context_key_set(self):

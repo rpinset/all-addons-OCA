@@ -4,7 +4,6 @@
      Copyright 2020 Creu Blanca
      -->
 <odoo>
-
     <record model="ir.ui.view" id="mgmtsystem_action_template_form_view">
         <field
             name="name"
@@ -63,20 +62,20 @@
         >mgmtsystem.action.template.tree (in mgmtsystem_action_template)</field>
         <field name="model">mgmtsystem.action.template</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="name" />
                 <field name="description" />
                 <field name="type_action" />
                 <field name="user_id" />
                 <field name="tag_ids" widget="many2many_tags" />
-            </tree>
+            </list>
         </field>
     </record>
 
     <record model="ir.actions.act_window" id="mgmtsystem_action_template_act_window">
         <field name="name">Mgmtsystem Action Template</field>
         <field name="res_model">mgmtsystem.action.template</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
     </record>
@@ -87,5 +86,4 @@
         <field name="action" ref="mgmtsystem_action_template_act_window" />
         <field name="sequence" eval="5" />
     </record>
-
 </odoo>

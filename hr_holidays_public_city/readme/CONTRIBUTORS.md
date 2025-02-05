@@ -1,5 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com)
-  - Pedro M. Baeza
-  - Víctor Martínez
-- [APSL](https://apsl.tech):
-  - Antoni Marroig  \<<amarroig@apsl.net>\>

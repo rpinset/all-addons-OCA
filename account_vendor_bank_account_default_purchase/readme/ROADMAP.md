@@ -1,1 +1,0 @@
-- This module depends on account_payment_purchase. If the payment mode of the purchase has a payment method that does not require a bank account, the default bank account will be empty.

@@ -8,8 +8,9 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestStockWarehouseCreation(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls, chart_template_ref="ro"):
-        super().setUpClass(chart_template_ref=chart_template_ref)
+    @AccountTestInvoicingCommon.setup_country("ro")
+    def setUpClass(cls):
+        super().setUpClass()
         cls.env.company.anglo_saxon_accounting = True
         cls.env.company.l10n_ro_accounting = True
 
@@ -57,7 +58,7 @@ class TestStockWarehouseCreation(AccountTestInvoicingCommon):
         product = self.env["product.product"].create(
             {
                 "name": "Test Product",
-                "type": "product",
+                "is_storable": True,
                 "categ_id": self.env.ref("product.product_category_all").id,
                 "l10n_ro_net_weight": 1.0,
                 "company_id": self.env.company.id,

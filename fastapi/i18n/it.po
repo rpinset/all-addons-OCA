@@ -215,7 +215,6 @@ msgstr "Sincronizza registro"
 #. module: fastapi
 #. odoo-python
 #: code:addons/fastapi/models/fastapi_endpoint_demo.py:0
-#, python-format
 msgid "The authentication method is required for app %(app)s"
 msgstr "Il metodo di autenticazione è richiesto per l'app %(app)s"
 
@@ -256,7 +255,6 @@ msgstr ""
 #. module: fastapi
 #. odoo-python
 #: code:addons/fastapi/models/fastapi_endpoint.py:0
-#, python-format
 msgid "`%(name)s` uses a blacklisted root_path = `%(root_path)s`"
 msgstr "`%(name)s` utilizza un root_path bloccato = `%(root_path)s`"
 

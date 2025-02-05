@@ -1,4 +1,0 @@
-- [Camptocamp](https://www.camptocamp.com)
-  - Iván Todorovich \<<ivan.todorovich@camptocamp.com>\>
-- [Kencove](https://www.kencove.com)
-  - Mohamed Alkobrosli \<<malkobrosly@kencove.com>\>

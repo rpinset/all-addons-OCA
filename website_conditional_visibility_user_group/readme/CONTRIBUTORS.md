@@ -1,3 +1,0 @@
-- [Tecnativa](https://tecnativa.com)
-  - David Vidal
-  - Pilar Vargas

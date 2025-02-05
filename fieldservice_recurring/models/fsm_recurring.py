@@ -55,7 +55,7 @@ class FSMRecurringOrder(models.Model):
     start_date = fields.Datetime()
     end_date = fields.Datetime(help="Recurring orders will not be made after this date")
     max_orders = fields.Integer(
-        string="Maximum Orders", help="Maximium number of orders that will be created"
+        string="Maximum Orders", help="Maximum number of orders that will be created"
     )
     fsm_order_template_id = fields.Many2one(
         "fsm.template",
@@ -107,7 +107,7 @@ class FSMRecurringOrder(models.Model):
     def populate_from_template(self, template=False):
         if not template:
             template = self.fsm_recurring_template_id
-        vals = {
+        return {
             "fsm_frequency_set_id": template.fsm_frequency_set_id,
             "max_orders": template.max_orders,
             "description": template.description,
@@ -115,9 +115,6 @@ class FSMRecurringOrder(models.Model):
             "scheduled_duration": template.fsm_order_template_id.duration,
             "company_id": template.company_id,
         }
-        if template.fsm_order_template_id.team_id:
-            vals["team_id"] = template.fsm_order_template_id.team_id.id
-        return vals
 
     @api.model_create_multi
     def create(self, vals_list):

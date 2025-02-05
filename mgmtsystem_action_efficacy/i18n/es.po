@@ -50,6 +50,5 @@ msgstr "valoración"
 #. odoo-python
 #: code:addons/mgmtsystem_action_efficacy/models/mgmtsystem_action.py:0
 #: code:addons/mgmtsystem_action_efficacy/tests/test_efficacy.py:0
-#, python-format
 msgid "Rating must be between 0 and 100"
 msgstr "La puntuación debe estar comprendida entre 0 y 100"

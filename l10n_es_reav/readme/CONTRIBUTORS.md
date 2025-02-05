@@ -1,4 +1,0 @@
-- [Bilbonet](https://www.bilbonet.net):
-  - Jesus Ramiro \<<jesus@bilbonet.net>\>
-- [Dixmit](https://www.dixmit.com):
-  - Luis Rodríguez

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
-
     <record id="view_l10n_ro_message_spv_tree" model="ir.ui.view">
-        <field name="name">l10n.ro.message.spv.tree</field>
+        <field name="name">l10n.ro.message.spv.list</field>
         <field name="model">l10n.ro.message.spv</field>
-        <field name="type">tree</field>
+        <field name="type">list</field>
         <field name="arch" type="xml">
-            <tree sample="1" create="0">
+            <list sample="1" create="0">
                 <header>
                     <button
                         name="refresh"
@@ -28,15 +26,12 @@
                         type="object"
                     />
                     <button name="show_invoice" string="Show Invoice" type="object" />
-
                 </header>
 
                 <field name="name" />
                 <field name="ref" />
                 <field name="message_type" />
                 <field name="date" />
-                <field name="invoice_date" />
-
                 <field name="partner_id" />
                 <field name="request_id" />
                 <field name="company_id" invisible="1" />
@@ -56,7 +51,7 @@
                     decoration-info="state == 'downloaded'"
                     decoration-primary="state == 'invoice'"
                 />
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -101,7 +96,6 @@
                             <field name="company_id" invisible="1" />
                             <field name="partner_id" />
                             <field name="ref" />
-                            <field name="invoice_date" />
                             <field name="invoice_id" />
                             <field name="currency_id" invisible="1" />
                             <field
@@ -116,7 +110,6 @@
                                 decoration-info="state == 'downloaded'"
                                 decoration-primary="state == 'invoice'"
                             />
-
                         </group>
 
                         <group string="Files">
@@ -172,7 +165,6 @@
         </field>
     </record>
 
-
     <record id="view_l10n_ro_message_spv_search" model="ir.ui.view">
         <field name="name">l10n.ro.message.spv.search</field>
         <field name="model">l10n.ro.message.spv</field>
@@ -183,7 +175,6 @@
                 <field name="name" />
                 <field name="message_type" />
                 <field name="date" />
-                <field name="invoice_date" />
                 <field name="partner_id" />
                 <field name="request_id" />
                 <field name="company_id" />
@@ -218,11 +209,6 @@
                     />
                     <separator />
                     <filter string="Date" name="date" date="date" />
-                    <filter
-                        string="Invoice Date"
-                        name="invoice_date"
-                        date="invoice_date"
-                    />
                 </group>
                 <group>
                     <filter
@@ -245,11 +231,10 @@
         </field>
     </record>
 
-
     <record id="action_l10n_ro_message_spv" model="ir.actions.act_window">
         <field name="name">Messages SPV</field>
         <field name="res_model">l10n.ro.message.spv</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <menuitem
@@ -264,5 +249,4 @@
         parent="menu_l10n_ro_spv"
         action="action_l10n_ro_message_spv"
     />
-
 </odoo>

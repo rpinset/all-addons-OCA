@@ -100,7 +100,7 @@ def initialize_sentry(config):
         )
     options = {}
     for option in const.get_sentry_options():
-        value = config.get("sentry_%s" % option.key, option.default)
+        value = config.get(f"sentry_{option.key}", option.default)
         if isinstance(option.converter, abc.Callable):
             value = option.converter(value)
         options[option.key] = value
@@ -143,7 +143,7 @@ def initialize_sentry(config):
     # Patch the wsgi server in case of further registration
     odoo.http.Application = SentryWsgiMiddleware(odoo.http.Application)
 
-    with sentry_sdk.push_scope() as scope:
+    with sentry_sdk.new_scope() as scope:
         scope.set_extra("debug", False)
         sentry_sdk.capture_message("Starting Odoo Server", "info")
 

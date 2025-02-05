@@ -11,7 +11,7 @@ from lxml import etree
 
 from odoo import api, models
 
-from odoo.addons.l10n_ro_efactura.models import ciusro_document
+from odoo.addons.l10n_ro_edi.models import ciusro_document
 
 _logger = logging.getLogger(__name__)
 

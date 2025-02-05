@@ -36,14 +36,12 @@ msgstr "Modelos"
 #. module: rpc_helper
 #. odoo-python
 #: code:addons/rpc_helper/patch.py:0
-#, python-format
 msgid "Object %s doesn't exist"
 msgstr "El Objeto %s no existe"
 
 #. module: rpc_helper
 #. odoo-python
 #: code:addons/rpc_helper/patch.py:0
-#, python-format
 msgid "RPC call on %s is not allowed"
 msgstr "Las llamadas RPC en %s no están permitidas"
 

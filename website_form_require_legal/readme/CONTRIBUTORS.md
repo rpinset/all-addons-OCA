@@ -1,4 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Carlos Roca
-- [NICO SOLUTIONS](https://www.nico-solutions.de):
-  - Nils Coenen

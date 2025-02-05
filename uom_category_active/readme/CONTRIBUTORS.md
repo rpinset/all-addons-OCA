@@ -1,2 +1,0 @@
-- [PESOL](https://pesol.es):
-  - Angel Moya

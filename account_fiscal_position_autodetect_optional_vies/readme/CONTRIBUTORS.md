@@ -1,7 +1,0 @@
-- [Tecnativa](https://www.tecnativa.com):
-  - Pedro M. Baeza
-  - Víctor Martínez
-- [FactorLibre](https://factorlibre.com/):
-  - Alejandro Ji Cheung
-- [Sygel](https://www.sygel.es/):
-  - Alberto Martínez

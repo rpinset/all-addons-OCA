@@ -24,15 +24,15 @@ class ProjectType(models.Model):
 
     @api.constrains("parent_id")
     def check_parent_id(self):
-        if not self._check_recursion():
+        if self._has_cycle():
             raise ValidationError(_("You cannot create recursive project types."))
 
     @api.depends("name", "parent_id.complete_name")
     def _compute_complete_name(self):
         for project_type in self:
             if project_type.parent_id:
-                project_type.complete_name = "{} / {}".format(
-                    project_type.parent_id.complete_name, project_type.name
+                project_type.complete_name = (
+                    f"{project_type.parent_id.complete_name} / " f"{project_type.name}"
                 )
             else:
                 project_type.complete_name = project_type.name

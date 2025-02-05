@@ -1,3 +1,0 @@
-- Noviat \<www.noviat.com\>
-  - Jérémy Didderen
-  - Luc De Meyer
