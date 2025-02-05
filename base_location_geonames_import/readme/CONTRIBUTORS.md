@@ -6,4 +6,3 @@
 - Franco Tampieri \<<franco@tampieri.info>\>
 - Aitor Bouzas \<<aitor.bouzas@adaptivecity.com>\>
 - Manuel Regidor \<<manuel.regidor@sygel.es>\>
-- Khoi (Kien Kim) \<<khoikk@trobz.com>\>

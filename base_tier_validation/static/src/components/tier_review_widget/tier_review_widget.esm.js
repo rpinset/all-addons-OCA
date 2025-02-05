@@ -1,33 +1,33 @@
-import {Component, useState} from "@odoo/owl";
+/** @odoo-module **/
+
 import {registry} from "@web/core/registry";
+
 import {useService} from "@web/core/utils/hooks";
+
+const {Component} = owl;
 
 export class ReviewsTable extends Component {
     setup() {
-        super.setup();
+        this.collapse = false;
         this.orm = useService("orm");
-        this.state = useState({
-            collapse: false,
-        });
+        this.reviews = [];
     }
-
     _getReviewData() {
         const records = this.env.model.root.data.review_ids.records;
-        return records.map((record) => record.data);
-    }
-
-    onToggleCollapse(ev) {
-        const panelHeading = ev.currentTarget.closest(".panel-heading");
-        const collapseDiv = panelHeading.nextElementSibling.matches("div#collapse1")
-            ? panelHeading.nextElementSibling
-            : null;
-        if (!collapseDiv) return;
-        if (this.state.collapse) {
-            collapseDiv.style.display = "none";
-        } else {
-            collapseDiv.style.display = "block";
+        const reviews = [];
+        for (var i = 0; i < records.length; i++) {
+            reviews.push(records[i].data);
         }
-        this.state.collapse = !this.state.collapse;
+        return reviews;
+    }
+    onToggleCollapse(ev) {
+        var $panelHeading = $(ev.currentTarget).closest(".panel-heading");
+        if (this.collapse) {
+            $panelHeading.next("div#collapse1").hide();
+        } else {
+            $panelHeading.next("div#collapse1").show();
+        }
+        this.collapse = !this.collapse;
     }
 }
 

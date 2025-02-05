@@ -4,7 +4,7 @@
 
 {
     "name": "MRP Multi Level",
-    "version": "18.0.1.0.3",
+    "version": "17.0.1.2.8",
     "development_status": "Production/Stable",
     "license": "LGPL-3",
     "author": "Ucamco, ForgeFlow, Odoo Community Association (OCA)",

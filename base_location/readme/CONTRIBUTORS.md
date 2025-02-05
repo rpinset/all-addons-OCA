@@ -7,4 +7,3 @@
 - Francesco Apruzzese \<<f.apruzzese@apuliasoftware.it>\>
 - Dave Lasley \<<dave@laslabs.com>\>
 - Aitor Bouzas \<<aitor.bouzas@adaptivecity.com>\>
-- Khoi (Kien Kim) \<<khoikk@trobz.com>\>

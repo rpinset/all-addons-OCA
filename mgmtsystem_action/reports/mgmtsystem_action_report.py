@@ -37,9 +37,10 @@ class MgmtsystemtActionReport(models.Model):
     def _query(
         self, with_clause="", fields="", where_clause="", groupby="", from_clause=""
     ):
-        with_ = f"WITH {with_clause}" if with_clause else ""
+        with_ = ("WITH %s" % with_clause) if with_clause else ""
 
-        select_ = f"""
+        select_ = (
+            """
                 m.id,
                 m.date_closed as date_closed,
                 m.date_deadline as date_deadline,
@@ -55,20 +56,27 @@ class MgmtsystemtActionReport(models.Model):
                 )/(3600*24) as  age,
                 avg(extract('epoch' from (m.date_closed - m.date_deadline))
                 )/(3600*24) as  number_of_exceedings_days,
-                count(*) AS number_of_actions {fields}"""
+                count(*) AS number_of_actions %s
+            """
+            % fields
+        )
 
-        from_ = f"""
+        from_ = (
+            """
                 mgmtsystem_action m
-                {from_clause}"""
+                %s
+            """
+            % from_clause
+        )
 
-        where_ = f"WHERE {where_clause}" if where_clause else ""
+        where_ = ("WHERE %s" % where_clause) if where_clause else ""
 
-        groupby_ = f"""
+        groupby_ = """
                     m.user_id,m.system_id, m.stage_id, m.date_open,
                     m.create_date,m.type_action,m.date_deadline,
                     m.date_closed, m.id, m.number_of_days_to_open,
-                    m.number_of_days_to_close {groupby}
-                """
+                    m.number_of_days_to_close %s
+                """ % (groupby)
 
         return f"{with_} (SELECT {select_} FROM {from_} {where_} GROUP BY {groupby_})"
 

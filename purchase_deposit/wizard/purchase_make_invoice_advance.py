@@ -59,6 +59,7 @@ class PurchaseAdvancePaymentInv(models.TransientModel):
         self.deposit_taxes_id = product.supplier_taxes_id
 
     def _prepare_deposit_val(self, order, po_line, amount):
+        ir_property_obj = self.env["ir.property"]
         account_id = False
         product = self.purchase_deposit_product_id
         if product.id:
@@ -67,7 +68,9 @@ class PurchaseAdvancePaymentInv(models.TransientModel):
                 or product.categ_id.property_account_expense_categ_id.id
             )
         if not account_id:
-            inc_acc = product.categ_id.property_account_expense_categ_id
+            inc_acc = ir_property_obj._get(
+                "property_account_expense_categ_id", "product.category"
+            )
             account_id = (
                 order.fiscal_position_id.map_account(inc_acc).id if inc_acc else False
             )
@@ -151,7 +154,29 @@ class PurchaseAdvancePaymentInv(models.TransientModel):
             "taxes_id": [(6, 0, tax_ids)],
             "date_planned": datetime.today().strftime(DEFAULT_SERVER_DATETIME_FORMAT),
             "is_deposit": True,
+            "sequence": order.order_line
+            and order.order_line[-1].sequence + 1
+            or self.env["purchase.order.line"]
+            .default_get(["sequence"])
+            .get("sequence"),
         }
+
+    def _prepare_advance_purchase_section_values(self, order):
+        context = {"lang": order.partner_id.lang}
+        so_values = {
+            "name": _("Purchase Deposits"),
+            "product_qty": 0.0,
+            "order_id": order.id,
+            "display_type": "line_section",
+            "is_deposit": True,
+            "sequence": order.order_line
+            and order.order_line[-1].sequence + 1
+            or self.env["purchase.order.line"]
+            .default_get(["sequence"])
+            .get("sequence"),
+        }
+        del context
+        return so_values
 
     def create_invoices(self):
         Purchase = self.env["purchase.order"]
@@ -195,6 +220,12 @@ class PurchaseAdvancePaymentInv(models.TransientModel):
             else:
                 tax_ids = taxes.ids
             context = {"lang": order.partner_id.lang}
+            if not any(
+                line.display_type and line.is_deposit for line in order.order_line
+            ):
+                PurchaseLine.create(
+                    self._prepare_advance_purchase_section_values(order)
+                )
             adv_po_line_dict = self._prepare_advance_purchase_line(
                 order, product, tax_ids, amount
             )

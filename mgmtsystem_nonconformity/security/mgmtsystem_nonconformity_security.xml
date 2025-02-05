@@ -1,4 +1,5 @@
 <odoo noupdate="1">
+
     <!-- Rule -->
 
     <record model="ir.rule" id="mgmtsystem_nonconformity_rule">
@@ -9,4 +10,5 @@
             name="domain_force"
         >['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
     </record>
+
 </odoo>

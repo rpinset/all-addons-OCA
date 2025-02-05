@@ -44,19 +44,20 @@ class ResPartnerOperatorEinvoice(models.Model):
         return res
 
     @api.model
-    def _search_display_name(self, operator, value):
-        if not value:
-            return super()._search_display_name(operator, value)
-        if operator in expression.NEGATIVE_TERM_OPERATORS:
-            domain = [
-                "&",
-                ("identifier", "not ilike", value + "%"),
-                ("name", operator, value),
-            ]
-        else:
-            domain = [
-                "|",
-                ("identifier", "=ilike", value + "%"),
-                ("name", operator, value),
-            ]
-        return domain
+    def _name_search(self, name, domain=None, operator="ilike", limit=None, order=None):
+        domain = []
+        if name:
+            if operator in expression.NEGATIVE_TERM_OPERATORS:
+                domain = [
+                    "&",
+                    ("identifier", "not ilike", name + "%"),
+                    ("name", operator, name),
+                ]
+            else:
+                domain = [
+                    "|",
+                    ("identifier", "=ilike", name + "%"),
+                    ("name", operator, name),
+                ]
+
+        return self._search(domain, limit=limit, order=order)

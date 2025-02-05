@@ -197,7 +197,7 @@ def _connection_info_for(db_name):
 
     for p in ("host", "port", "user", "password"):
         cfg = os.environ.get(
-            f"ODOO_QUEUE_JOB_JOBRUNNER_DB_{p.upper()}"
+            "ODOO_QUEUE_JOB_JOBRUNNER_DB_%s" % p.upper()
         ) or queue_job_config.get("jobrunner_db_" + p)
 
         if cfg:
@@ -233,7 +233,9 @@ def _async_http_get(scheme, host, port, user, password, db_name, job_uuid):
     #       if this was python3 I would be doing this with
     #       asyncio, aiohttp and aiopg
     def urlopen():
-        url = f"{scheme}://{host}:{port}/queue_job/runjob?db={db_name}&job_uuid={job_uuid}"
+        url = "{}://{}:{}/queue_job/runjob?db={}&job_uuid={}".format(
+            scheme, host, port, db_name, job_uuid
+        )
         try:
             auth = None
             if user:

@@ -4,6 +4,10 @@
 # From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
 # From [https://github.com/OCA/account-consolidation.git](https://github.com/OCA/account-consolidation.git)
 # From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
+# generated from manifests external_dependencies
+numpy-financial<=1.0.0
+numpy>=1.15
+python-dateutil
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
@@ -12,15 +16,22 @@
 Avalara
 # From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
+# generated from manifests external_dependencies
+python-stdnum>=1.16
 # From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
 # From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
 # From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
 # From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
 # From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
+# generated from manifests external_dependencies
+lxml
+unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # generated from manifests external_dependencies
+chardet
 ofxparse
+xlrd
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
 # generated from manifests external_dependencies
@@ -43,6 +54,8 @@ requests
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 # From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
+# generated from manifests external_dependencies
+email-validator
 # From [https://github.com/OCA/sale-financial.git](https://github.com/OCA/sale-financial.git)
 # From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
 # From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
@@ -53,11 +66,18 @@ requests
 # From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
+# generated from manifests external_dependencies
+factur-x
+pypdf
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
 # From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
+# generated from manifests external_dependencies
+geojson
+requests
+shapely
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 # generated from manifests external_dependencies
@@ -73,6 +93,9 @@ python-dateutil
 # From [https://github.com/OCA/l10n-belarus.git](https://github.com/OCA/l10n-belarus.git)
 # From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
 # generated from manifests external_dependencies
+freezegun
+pycoda
+vcrpy-unittest
 zeep
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)
@@ -82,13 +105,21 @@ zeep
 # From [https://github.com/OCA/l10n-costa-rica.git](https://github.com/OCA/l10n-costa-rica.git)
 # From [https://github.com/OCA/l10n-croatia.git](https://github.com/OCA/l10n-croatia.git)
 # From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
+# generated from manifests external_dependencies
+cryptography==36.0.0
+xades==0.2.4
+xmlsig==0.1.9
+zeep
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 # From [https://github.com/OCA/l10n-ethiopia.git](https://github.com/OCA/l10n-ethiopia.git)
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
-pyfrdas2>=0.5
+pyfrdas2>=0.4
 python-stdnum
+python-stdnum>=1.18
+requests_oauthlib
+unidecode
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
 # From [https://github.com/OCA/l10n-greece.git](https://github.com/OCA/l10n-greece.git)
 # From [https://github.com/OCA/l10n-india.git](https://github.com/OCA/l10n-india.git)
@@ -100,32 +131,59 @@ python-stdnum
 # From [https://github.com/OCA/l10n-luxemburg.git](https://github.com/OCA/l10n-luxemburg.git)
 # From [https://github.com/OCA/l10n-macedonia.git](https://github.com/OCA/l10n-macedonia.git)
 # From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
+# generated from manifests external_dependencies
+facturama
+pdfminer.six==20220319
 # From [https://github.com/OCA/l10n-morocco.git](https://github.com/OCA/l10n-morocco.git)
 # From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
 # From [https://github.com/OCA/l10n-norway.git](https://github.com/OCA/l10n-norway.git)
 # From [https://github.com/OCA/l10n-peru.git](https://github.com/OCA/l10n-peru.git)
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
+# generated from manifests external_dependencies
+PyJWT
+num2words>=0.5.8
+python-dateutil
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
+# generated from manifests external_dependencies
+chardet
+pycountry
+pycryptodome
+suds-py3
+unidecode
+xmlsig
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
+# generated from manifests external_dependencies
+ebilling_postfinance
+zeep
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
 # From [https://github.com/OCA/l10n-turkey.git](https://github.com/OCA/l10n-turkey.git)
 # From [https://github.com/OCA/l10n-united-kingdom.git](https://github.com/OCA/l10n-united-kingdom.git)
 # From [https://github.com/OCA/l10n-uruguay.git](https://github.com/OCA/l10n-uruguay.git)
 # From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
+# generated from manifests external_dependencies
+python-stdnum
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
+# generated from manifests external_dependencies
+roulier
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
+# generated from manifests external_dependencies
+python-barcode
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
+# generated from manifests external_dependencies
+pandas>=0.25.3
 # From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
@@ -134,8 +192,6 @@ python-stdnum
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 # From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
 # From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-# generated from manifests external_dependencies
-openupgradelib
 # From [https://github.com/OCA/product-kitting.git](https://github.com/OCA/product-kitting.git)
 # From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
 # From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
@@ -143,6 +199,8 @@ openupgradelib
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
 # From [https://github.com/OCA/project-agile.git](https://github.com/OCA/project-agile.git)
 # From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/program.git](https://github.com/OCA/program.git)
 # From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
@@ -151,11 +209,11 @@ openupgradelib
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec>=2024.5.0
-paramiko
 python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
+lxml
 xlrd
 xlsxwriter
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
@@ -166,35 +224,63 @@ pycups
 # generated from manifests external_dependencies
 astor
 dataclasses
+mako
 odoorpc
 openupgradelib
-sentry_sdk>=2.0.0
+pygount
+sentry_sdk<=1.9.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
+cryptography
+email_validator
+lxml
+pyjwt
 pysaml2
 python-jose
+python-ldap
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
+# generated from manifests external_dependencies
+cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
+# generated from manifests external_dependencies
+sqlalchemy
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
 pycountry
+schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
+# generated from manifests external_dependencies
+GitPython
+PyGithub
+pathspec
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
+# generated from manifests external_dependencies
+pika
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 # generated from manifests external_dependencies
 a2wsgi>=1.10.6
+contextvars
 fastapi>=0.110.0
+graphene
+graphql_server
 parse-accept-language
+pydantic
 python-multipart
+typing-extensions
 ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
 # From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/vertical-isp.git](https://github.com/OCA/vertical-isp.git)
 # From [https://github.com/OCA/vertical-edition.git](https://github.com/OCA/vertical-edition.git)
+# generated from manifests external_dependencies
+Unidecode
+google-books-api-wrapper
 # From [https://github.com/OCA/vertical-education.git](https://github.com/OCA/vertical-education.git)
 # From [https://github.com/OCA/vertical-medical.git](https://github.com/OCA/vertical-medical.git)
 # From [https://github.com/OCA/vertical-ngo.git](https://github.com/OCA/vertical-ngo.git)
@@ -203,5 +289,10 @@ ujson
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
+# generated from manifests external_dependencies
+beautifulsoup4
+bokeh==3.4.1
+mpld3==0.5.10
+plotly==5.22.0
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)

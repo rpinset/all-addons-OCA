@@ -5,4 +5,3 @@
 - Stefan Rijnhart \<<stefan@opener.amsterdam>\>
 - David Ramia \<<@ramiadavid>\>
 - Son Ho \<<sonhd@trobz.com>\>
-- Bert Van Groenendael \<<bert.vangroenendael@dynapps.eu>\>

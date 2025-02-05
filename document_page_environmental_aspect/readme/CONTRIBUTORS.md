@@ -3,4 +3,5 @@
 - [Guadaltech](https://www.guadaltech.es):
   - Fernando La Chica \<<fernando.lachica@guadaltech.es>\>
 - Yvan Dotet \<<yvan.dotet@logicasoft.eu>\>
-- \[Heliconia Solutions Pvt. Ltd.\](<https://www.heliconia.io>)
+- [Binhex](https://binhex.cloud//com):
+  - David Luis Mora \<<d.luis@binhex.cloud>\>

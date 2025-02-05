@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,6 +26,7 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #. odoo-python
 #: code:addons/l10n_ro_message_spv/models/message_spv.py:0
+#, python-format
 msgid "ANAF service unable to generate PDF from this XML."
 msgstr ""
 
@@ -122,6 +123,7 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_message_spv_ids
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_move__l10n_ro_message_spv_ids
+#: model:ir.model.fields,help:l10n_ro_message_spv.field_account_payment__l10n_ro_message_spv_ids
 msgid "E-invoice messages related to this invoice."
 msgstr ""
 
@@ -176,12 +178,14 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_edi_download
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_move__l10n_ro_edi_download
+#: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_payment__l10n_ro_edi_download
 msgid "ID Download ANAF (RO)"
 msgstr ""
 
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_edi_download
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_move__l10n_ro_edi_download
+#: model:ir.model.fields,help:l10n_ro_message_spv.field_account_payment__l10n_ro_edi_download
 msgid "ID used to download the ZIP file from ANAF."
 msgstr ""
 
@@ -209,6 +213,12 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__invoice_amount
 msgid "Invoice Amount"
+msgstr ""
+
+#. module: l10n_ro_message_spv
+#: model:ir.model.fields,field_description:l10n_ro_message_spv.field_l10n_ro_message_spv__invoice_date
+#: model_terms:ir.ui.view,arch_db:l10n_ro_message_spv.view_l10n_ro_message_spv_search
+msgid "Invoice Date"
 msgstr ""
 
 #. module: l10n_ro_message_spv
@@ -304,6 +314,7 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_message_spv_ids
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_move__l10n_ro_message_spv_ids
+#: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_payment__l10n_ro_message_spv_ids
 msgid "Romania - E-invoice messages"
 msgstr ""
 
@@ -331,12 +342,14 @@ msgstr ""
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_edi_transaction
 #: model:ir.model.fields,help:l10n_ro_message_spv.field_account_move__l10n_ro_edi_transaction
+#: model:ir.model.fields,help:l10n_ro_message_spv.field_account_payment__l10n_ro_edi_transaction
 msgid "Technical field used to track the status of a submission."
 msgstr ""
 
 #. module: l10n_ro_message_spv
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_bank_statement_line__l10n_ro_edi_transaction
 #: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_move__l10n_ro_edi_transaction
+#: model:ir.model.fields,field_description:l10n_ro_message_spv.field_account_payment__l10n_ro_edi_transaction
 msgid "Transaction ID (RO)"
 msgstr ""
 

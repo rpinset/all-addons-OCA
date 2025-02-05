@@ -1,5 +1,5 @@
 # Copyright 2017 Onestein (<http://www.onestein.eu>)
-# License LGPL-3 or later (https://www.gnu.org/licenses/agpl).
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo.tests.common import TransactionCase
 

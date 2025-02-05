@@ -1,4 +1,5 @@
 <odoo>
+
     <record id="view_order_product_search" model="ir.ui.view">
         <field name="inherit_id" ref="sale.view_order_product_search" />
         <field name="model">sale.report</field>
@@ -12,4 +13,5 @@
             </filter>
         </field>
     </record>
+
 </odoo>

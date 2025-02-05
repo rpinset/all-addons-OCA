@@ -31,7 +31,7 @@ class TestStockDemandEstimate(TransactionCase):
         cls.product_1 = cls.product_model.create(
             {
                 "name": "Test Product 1",
-                "is_storable": True,
+                "type": "product",
                 "default_code": "PROD1",
                 "uom_id": cls.uom_unit.id,
             }
@@ -132,7 +132,7 @@ class TestStockDemandEstimate(TransactionCase):
         )
         self.assertEqual(res, 0)
 
-    def test_04_display_name(self):
+    def test_04_name_get(self):
         date_from = date.today() + td(days=10)
         estimate = self.estimate_model.create(
             {
@@ -143,12 +143,11 @@ class TestStockDemandEstimate(TransactionCase):
                 "product_uom_qty": 500.0,
             }
         )
-        estimate._compute_display_name()
-        self.assertEqual(
-            f"{date_from} - {date_from + td(days=1)}: "
-            f"{self.product_1.name} - {self.location.name}",
-            estimate.display_name,
-        )
+        res = estimate.name_get()
+        self.assertEqual(len(res), 1)
+        rec_id, name_get = res[0]
+        self.assertEqual(estimate.id, rec_id)
+        self.assertIn(self.product_1.name, name_get)
 
     def test_05_onchange_methods(self):
         date_from = date.today() + td(days=10)

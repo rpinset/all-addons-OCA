@@ -1,2 +1,0 @@
-- Matthieu Méquignon \<<matthieu.mequignon@camptocamp.com>\>
-- Do Anh Duy \<<duyda@trobz.com>\>

@@ -7,7 +7,7 @@ from typing import Set  # noqa
 
 import passlib
 
-from odoo import SUPERUSER_ID, _, api, fields, models, modules, tools
+from odoo import SUPERUSER_ID, _, api, fields, models, registry, tools
 from odoo.exceptions import AccessDenied, ValidationError
 
 from .ir_config_parameter import ALLOW_SAML_UID_AND_PASSWORD
@@ -48,7 +48,7 @@ class ResUser(models.Model):
         if len(user) != 1:
             raise AccessDenied()
 
-        with modules.registry.Registry(self.env.cr.dbname).cursor() as new_cr:
+        with registry(self.env.cr.dbname).cursor() as new_cr:
             new_env = api.Environment(new_cr, self.env.uid, self.env.context)
             # Update the token. Need to be committed, otherwise the token is not visible
             # to other envs, like the one used in login_and_redirect
@@ -76,7 +76,7 @@ class ResUser(models.Model):
         # return user credentials
         return self.env.cr.dbname, login, saml_response
 
-    def _check_credentials(self, credential, env):
+    def _check_credentials(self, password, env):
         """Override to handle SAML auths.
 
         The token can be a password if the user has used the normal form...
@@ -85,10 +85,9 @@ class ResUser(models.Model):
         """
         try:
             # Attempt a regular login (via other auth addons) first.
-            return super()._check_credentials(credential, env)
+            return super()._check_credentials(password, env)
+
         except (AccessDenied, passlib.exc.PasswordSizeError):
-            if not (credential["type"] == "saml_token" and credential["token"]):
-                raise
             passwd_allowed = (
                 env["interactive"] or not self.env.user._rpc_api_keys_only()
             )
@@ -101,16 +100,12 @@ class ResUser(models.Model):
                     .search(
                         [
                             ("user_id", "=", self.env.user.id),
-                            ("saml_access_token", "=", credential["token"]),
+                            ("saml_access_token", "=", password),
                         ]
                     )
                 )
                 if token:
-                    return {
-                        "uid": self.env.user.id,
-                        "auth_method": "saml",
-                        "mfa": "default",
-                    }
+                    return
             raise AccessDenied() from None
 
     @api.model

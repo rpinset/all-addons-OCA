@@ -10,4 +10,5 @@ from . import test_purge_fields
 from . import test_purge_menus
 from . import test_purge_models
 from . import test_purge_modules
+from . import test_purge_properties
 from . import test_purge_tables

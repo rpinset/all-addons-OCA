@@ -10,5 +10,3 @@
 - Pimolnat Suntian \<<pimolnats@ecosoft.co.th>\>
 - Saran Lim. \<<saranl@ecosoft.co.th>\>
 - Miku Laitinen \<<miku@avoin.systems>\>
-- [APSL-Nagarro ](https://apsl.tech):
-  - Antoni Marroig \<<amarroig@apsl.net>\>

@@ -3,7 +3,6 @@
 
 import contextlib
 import json
-import logging
 from urllib.parse import parse_qs, urlparse
 
 import responses
@@ -21,7 +20,7 @@ from odoo.addons.website.tools import MockRequest as _MockRequest
 
 from ..controllers.main import OpenIDLogin
 
-BASE_URL = f"http://localhost:{odoo.tools.config['http_port']}"
+BASE_URL = "http://localhost:%s" % odoo.tools.config["http_port"]
 
 
 @contextlib.contextmanager
@@ -72,7 +71,7 @@ class TestAuthOIDCAuthorizationCodeFlow(common.HttpCase):
         super().setUp()
         # search our test provider and bind the demo user to it
         self.provider_rec = self.env["auth.oauth.provider"].search(
-            [("client_id", "=", "auth_oidc-test")]
+            [("name", "=", "keycloak:8080 on localhost")]
         )
         self.assertEqual(len(self.provider_rec), 1)
 
@@ -84,8 +83,10 @@ class TestAuthOIDCAuthorizationCodeFlow(common.HttpCase):
         ).write(dict(enabled=False))
         with MockRequest(self.env):
             providers = OpenIDLogin().list_providers()
-            self.assertEqual(len(providers), 1)
-            auth_link = providers[0]["auth_link"]
+            self.assertEqual(len(providers), 2)
+            auth_link = list(
+                filter(lambda p: p["name"] == "keycloak:8080 on localhost", providers)
+            )[0]["auth_link"]
             assert auth_link.startswith(self.provider_rec.auth_endpoint)
             params = parse_qs(urlparse(auth_link).query)
             self.assertEqual(params["response_type"], ["code"])
@@ -96,6 +97,13 @@ class TestAuthOIDCAuthorizationCodeFlow(common.HttpCase):
             self.assertTrue(params["nonce"])
             self.assertTrue(params["state"])
             self.assertEqual(params["redirect_uri"], [BASE_URL + "/auth_oauth/signin"])
+            self.assertFalse("prompt" in params)
+
+            auth_link_ms = list(
+                filter(lambda p: p["name"] == "Azure AD Multitenant", providers)
+            )[0]["auth_link"]
+            params = parse_qs(urlparse(auth_link_ms).query)
+            self.assertEqual(params["prompt"], ["select_account"])
 
     def _prepare_login_test_user(self):
         user = self.env.ref("base.user_demo")
@@ -242,22 +250,12 @@ class TestAuthOIDCAuthorizationCodeFlow(common.HttpCase):
             keys=[],
         )
 
-        with (
-            self.assertRaises(AccessDenied),
-            MockRequest(self.env),
-            self.assertLogs(level=logging.ERROR) as logs,
-        ):
-            self.env["res.users"].auth_oauth(
-                self.provider_rec.id,
-                {"state": json.dumps({})},
-            )
-        self.assertEqual(len(logs.records), 1)
-        self.assertEqual(logs.records[0].levelno, logging.ERROR)
-        self.assertEqual(
-            "ERROR:odoo.addons.auth_oidc.models.res_users:user_id claim not found in"
-            " id_token (after mapping).",
-            logs.output[0],
-        )
+        with self.assertRaises(AccessDenied):
+            with MockRequest(self.env):
+                self.env["res.users"].auth_oauth(
+                    self.provider_rec.id,
+                    {"state": json.dumps({})},
+                )
 
     @responses.activate
     def test_login_with_multiple_keys_in_jwks(self):

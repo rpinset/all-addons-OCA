@@ -7,4 +7,3 @@
 - [Open Source Integrators](https://opensourceintegrators.com):
   - Daniel Reis \<<dreis@opensourceintegrators.com>\>
   - Murtaza Mithaiwala \<<mmithaiwala@opensourceintegrators.com>\>
-- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`_

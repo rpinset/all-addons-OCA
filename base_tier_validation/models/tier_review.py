@@ -5,7 +5,7 @@ import logging
 
 import pytz
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
@@ -15,7 +15,7 @@ class TierReview(models.Model):
     _name = "tier.review"
     _description = "Tier Review"
 
-    name = fields.Char(related="definition_id.name")
+    name = fields.Char(related="definition_id.name", readonly=True)
     status = fields.Selection(
         [
             ("waiting", "Waiting"),
@@ -32,10 +32,14 @@ class TierReview(models.Model):
         related="definition_id.company_id",
         store=True,
     )
-    review_type = fields.Selection(related="definition_id.review_type")
-    reviewer_id = fields.Many2one(related="definition_id.reviewer_id")
-    reviewer_group_id = fields.Many2one(related="definition_id.reviewer_group_id")
-    reviewer_field_id = fields.Many2one(related="definition_id.reviewer_field_id")
+    review_type = fields.Selection(related="definition_id.review_type", readonly=True)
+    reviewer_id = fields.Many2one(related="definition_id.reviewer_id", readonly=True)
+    reviewer_group_id = fields.Many2one(
+        related="definition_id.reviewer_group_id", readonly=True
+    )
+    reviewer_field_id = fields.Many2one(
+        related="definition_id.reviewer_field_id", readonly=True
+    )
     reviewer_ids = fields.Many2many(
         string="Reviewers",
         comodel_name="res.users",
@@ -51,7 +55,7 @@ class TierReview(models.Model):
     reviewed_formated_date = fields.Char(
         string="Validation Formated Date", compute="_compute_reviewed_formated_date"
     )
-    has_comment = fields.Boolean(related="definition_id.has_comment")
+    has_comment = fields.Boolean(related="definition_id.has_comment", readonly=True)
     comment = fields.Char(string="Comments")
     can_review = fields.Boolean(
         compute="_compute_can_review",
@@ -59,9 +63,11 @@ class TierReview(models.Model):
         help="""Can review will be marked if the review is pending and the
         approve sequence has been achieved""",
     )
-    approve_sequence = fields.Boolean(related="definition_id.approve_sequence")
+    approve_sequence = fields.Boolean(
+        related="definition_id.approve_sequence", readonly=True
+    )
     approve_sequence_bypass = fields.Boolean(
-        related="definition_id.approve_sequence_bypass"
+        related="definition_id.approve_sequence_bypass", readonly=True
     )
     last_reminder_date = fields.Datetime(readonly=True)
 
@@ -135,7 +141,7 @@ class TierReview(models.Model):
         for rec in self:
             todo_by = False
             if rec.reviewer_group_id:
-                todo_by = self.env._("Group %s", rec.reviewer_group_id.name)
+                todo_by = _("Group %s") % rec.reviewer_group_id.name
             else:
                 todo_by = ", ".join(rec.reviewer_ids[:num_show].mapped("display_name"))
                 num_users = len(rec.reviewer_ids)
@@ -151,9 +157,7 @@ class TierReview(models.Model):
             resource = self.env[self.model].browse(self.res_id)
             reviewer_field = getattr(resource, self.reviewer_field_id.name, False)
             if not reviewer_field or not reviewer_field._name == "res.users":
-                raise ValidationError(
-                    self.env._("There are no res.users in the selected field")
-                )
+                raise ValidationError(_("There are no res.users in the selected field"))
         return reviewer_field
 
     def _notify_pending_status(self, review_ids):
@@ -169,7 +173,7 @@ class TierReview(models.Model):
 
     def _notify_review_reminder_body(self):
         delay = (fields.Datetime.now() - self.create_date).days
-        return self.env._("A review has been requested %s days ago.", delay)
+        return _("A review has been requested %s days ago.") % (delay)
 
     def _send_review_reminder(self):
         record = self.env[self.model].browse(self.res_id)
@@ -179,7 +183,7 @@ class TierReview(models.Model):
         elif hasattr(record, "message_post"):
             self._notify_review_reminder(record)
         else:
-            msg = f"Could not send reminder for record {record}"
+            msg = "Could not send reminder for record %s" % record
             _logger.exception(msg)
         self.last_reminder_date = fields.Datetime.now()
 

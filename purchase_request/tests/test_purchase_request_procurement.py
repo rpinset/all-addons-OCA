@@ -17,7 +17,7 @@ class TestPurchaseRequestProcurement(common.TransactionCase):
         self.customer_location = self.env.ref("stock.stock_location_customers")
 
         # Get required Model data
-        self.product_1 = self.env.ref("product.product_product_16")
+        self.product_1 = self.env.ref("product.product_product_16").copy()
         self.product_1.purchase_request = True
         self.route_buy = self.env.ref("purchase_stock.route_warehouse0_buy")
         self.rule_buy = self.route_buy.rule_ids.filtered(
@@ -99,10 +99,12 @@ class TestPurchaseRequestProcurement(common.TransactionCase):
         self.assertEqual(pr.origin, "Test Purchase Request Procurement")
 
         # Now cancel the move. An activity is created on the request.
+        # Even if the activity type was deleted
         activity = self.env.ref("mail.mail_activity_data_todo")
         self.env["mail.activity"].search(
             [("activity_type_id", "=", activity.id)]
         ).unlink()
+        activity.unlink()
         self.assertFalse(move.created_purchase_request_line_id.request_id.activity_ids)
         move._action_cancel()
         self.assertTrue(move.created_purchase_request_line_id.request_id.activity_ids)

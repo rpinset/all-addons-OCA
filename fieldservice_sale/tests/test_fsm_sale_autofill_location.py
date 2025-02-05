@@ -1,7 +1,6 @@
 # Copyright (C) 2019 Clément Mombereau (Akretion)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html)
-from odoo.tests import Form
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import Form, TransactionCase
 
 
 class FSMSale(TransactionCase):
@@ -48,7 +47,6 @@ class FSMSale(TransactionCase):
         self.location1.partner_id = self.commercial_partner
         self.location2.partner_id = self.partner
         self.location3.partner_id = self.shipping_partner
-
         with Form(self.env["sale.order"]) as so_form:
             so_form.partner_id = self.partner
         so = so_form.save()

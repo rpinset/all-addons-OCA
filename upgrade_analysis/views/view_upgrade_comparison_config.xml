@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
     <record id="view_upgrade_comparison_config_tree" model="ir.ui.view">
         <field name="model">upgrade.comparison.config</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name" />
                 <field name="server" />
                 <field name="port" />
                 <field name="database" />
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -16,7 +17,8 @@
         <field name="model">upgrade.comparison.config</field>
         <field name="arch" type="xml">
             <form>
-                <header />
+                <header>
+                </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button
@@ -73,4 +75,5 @@
         name="Comparison Configurations"
         parent="menu_upgrade"
     />
+
 </odoo>

@@ -4,10 +4,10 @@
         <field name="name">res.territory.tree</field>
         <field name="model">res.territory</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name" />
                 <field name="branch_id" />
-            </list>
+            </tree>
         </field>
     </record>
     <!-- Territory Form View -->
@@ -49,6 +49,6 @@
         <field name="name">Territories</field>
         <field name="res_model">res.territory</field>
         <field name="view_id" ref="res_territory_tree_view" />
-        <field name="view_mode">list,form</field>
+        <field name="view_mode">tree,form</field>
     </record>
 </odoo>

@@ -8,7 +8,6 @@ import logging
 from odoo import fields
 from odoo.tests import Form, tagged
 
-from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.addons.stock_account.tests.test_anglo_saxon_valuation_reconciliation_common import (  # noqa E501
     ValuationReconciliationTestCommon,
 )
@@ -72,6 +71,10 @@ class TestStockCommon(ValuationReconciliationTestCommon):
                 cls.stock_usage_giving_account_id
             )
 
+        cls.env.user.company_id.l10n_ro_property_stock_transfer_account_id = (
+            get_account("482000")
+        )
+
     @classmethod
     def setup_company_data(cls, company_name, chart_template=None, **kwargs):
         company_data = super().setup_company_data(
@@ -86,20 +89,11 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         return company_data
 
     @classmethod
-    def collect_company_accounting_data(cls, company):
-        company_data = super().collect_company_accounting_data(company)
-        company_data["default_account_stock_in"] = company_data[
-            "default_account_stock_valuation"
-        ]
-        company_data["default_account_stock_out"] = company_data[
-            "default_account_stock_valuation"
-        ]
-        return company_data
+    def setUpClass(cls, chart_template_ref=None):
+        if not chart_template_ref:
+            chart_template_ref = "ro"
+        super().setUpClass(chart_template_ref=chart_template_ref)
 
-    @classmethod
-    @AccountTestInvoicingCommon.setup_country("ro")
-    def setUpClass(cls):
-        super().setUpClass()
         cls.env.company.anglo_saxon_accounting = True
         cls.env.company.l10n_ro_accounting = True
         cls.env.company.l10n_ro_stock_acc_price_diff = True
@@ -177,7 +171,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         cls.product_1 = cls.env["product.product"].create(
             {
                 "name": "Product A",
-                "is_storable": True,
+                "type": "product",
                 "categ_id": cls.category_fifo.id,
                 "invoice_policy": "delivery",
                 "purchase_method": "receive",
@@ -188,7 +182,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         cls.product_2 = cls.env["product.product"].create(
             {
                 "name": "Product B",
-                "is_storable": True,
+                "type": "product",
                 "purchase_method": "receive",
                 "categ_id": cls.category_average.id,
                 "invoice_policy": "delivery",
@@ -200,7 +194,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         cls.product_mp = cls.env["product.product"].create(
             {
                 "name": "Product MP",
-                "is_storable": True,
+                "type": "product",
                 "categ_id": cls.category_mp.id,
                 "invoice_policy": "delivery",
                 "purchase_method": "receive",
@@ -212,7 +206,6 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             {
                 "name": "Landed Cost",
                 "type": "service",
-                "is_storable": False,
                 "purchase_method": "purchase",
                 "invoice_policy": "order",
                 "property_account_expense_id": cls.account_expense.id,
@@ -291,6 +284,21 @@ class TestStockCommon(ValuationReconciliationTestCommon):
                 "location_id": location.id,
             }
         )
+        cls.location_warehouse_other = location.copy(
+            {
+                "l10n_ro_merchandise_type": "warehouse",
+                "name": "TEST warehouse other",
+                "location_id": location.id,
+            }
+        )
+
+        cls.location_transit = location.copy(
+            {
+                "usage": "transit",
+                "name": "TEST transit",
+            }
+        )
+
         cls.picking_type_in_warehouse = picking_type_in.copy(
             {
                 "default_location_dest_id": cls.location_warehouse.id,
@@ -386,7 +394,7 @@ class TestStockCommon(ValuationReconciliationTestCommon):
             self.env["account.move"].with_context(
                 default_move_type="in_invoice",
                 default_invoice_date=fields.Date.today(),
-                active_model="accoun.move",
+                active_model="account.move",
             )
         )
         bill_union = self.env["purchase.bill.union"].search(
@@ -425,7 +433,8 @@ class TestStockCommon(ValuationReconciliationTestCommon):
         )
         return_wiz = stock_return_picking_form.save()
         return_wiz.product_return_moves.write({"quantity": quantity, "to_refund": True})
-        return_pick = return_wiz._create_return()
+        res = return_wiz.create_returns()
+        return_pick = self.env["stock.picking"].browse(res["res_id"])
 
         # Validate picking
         return_pick.action_confirm()

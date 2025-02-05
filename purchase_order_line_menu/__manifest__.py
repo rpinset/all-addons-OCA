@@ -4,7 +4,7 @@
 
 {
     "name": "Purchase Order Line Menu",
-    "version": "18.0.1.0.0",
+    "version": "17.0.1.0.0",
     "author": "Open Source Integrators, Odoo Community Association (OCA)",
     "summary": "Adds Purchase Order Lines Menu",
     "website": "https://github.com/OCA/purchase-workflow",
@@ -16,5 +16,5 @@
     ],
     "installable": True,
     "maintainer": ["dreispt", "Shide", "EmilioPascual"],
-    "development_status": "Production/Stable",
+    "development_status": "Beta",
 }

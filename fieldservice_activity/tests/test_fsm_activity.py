@@ -3,8 +3,7 @@
 from datetime import datetime
 
 from odoo.exceptions import ValidationError
-from odoo.tests import Form
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import Form, TransactionCase
 
 
 class TestFSMActivity(TransactionCase):

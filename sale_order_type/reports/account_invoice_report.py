@@ -1,7 +1,6 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import fields, models
-from odoo.tools import SQL
 
 
 class AccountInvoiceReport(models.Model):
@@ -13,4 +12,8 @@ class AccountInvoiceReport(models.Model):
     )
 
     def _select(self):
-        return SQL("%s, move.sale_type_id as sale_type_id", super()._select())
+        select_str = super()._select()
+        select_str += """
+            , move.sale_type_id as sale_type_id
+            """
+        return select_str

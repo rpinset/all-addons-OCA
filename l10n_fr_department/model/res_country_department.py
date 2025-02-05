@@ -11,16 +11,19 @@ class ResCountryDepartment(models.Model):
     _description = "Department"
     _name = "res.country.department"
     _order = "country_id, code"
-    _rec_names_search = ["name", "code"]
 
     state_id = fields.Many2one(
         "res.country.state",
+        string="State",
         required=True,
+        help="State related to the current department",
     )
     country_id = fields.Many2one(
         "res.country",
         related="state_id.country_id",
+        string="Country",
         store=True,
+        help="Country of the related state",
     )
     name = fields.Char(string="Department Name", size=128, required=True)
     code = fields.Char(
@@ -32,13 +35,28 @@ class ResCountryDepartment(models.Model):
 
     _sql_constraints = [
         (
-            "code_country_uniq",
-            "unique (code, country_id)",
-            "You cannot have two departments with the same code in the same country!",
+            "code_uniq",
+            "unique (code)",
+            "You cannot have two departments with the same code!",
         )
     ]
 
     @api.depends("name", "code")
     def _compute_display_name(self):
         for rec in self:
-            rec.display_name = f"{rec.name} ({rec.code})"
+            dname = f"{rec.name} ({rec.code})"
+            rec.display_name = dname
+
+    @api.model
+    def _name_search(self, name, domain=None, operator="ilike", limit=None, order=None):
+        if domain is None:
+            domain = []
+        if name and operator == "ilike":
+            ids = list(
+                self._search([("code", "=", name)] + domain, limit=limit, order=order)
+            )
+            if ids:
+                return ids
+        return super()._name_search(
+            name, domain=domain, operator=operator, limit=limit, order=order
+        )

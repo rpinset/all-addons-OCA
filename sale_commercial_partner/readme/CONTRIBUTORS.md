@@ -4,7 +4,3 @@
 - Tharathip Chaweewongphan \<<tharathipc@ecosoft.co.th>\>
 - [APSL](https://apsl.tech):
   - Antoni Marroig  \<<amarroig@apsl.net>\>
-- [Dynapps](https://www.dynapps.eu):
-  - Bert Van Groenendael \<<bert.vangroenendael@dynapps.eu>\>
-- [Trobz](https://www.trobz.com):
-  - Nhan Tran \<<nhant@trobz.com>\>

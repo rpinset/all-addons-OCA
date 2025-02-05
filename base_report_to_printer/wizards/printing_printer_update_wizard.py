@@ -20,7 +20,7 @@ class PrintingPrinterUpdateWizard(models.TransientModel):
 
         return {
             "name": "Printers",
-            "view_mode": "list,form",
+            "view_mode": "tree,form",
             "res_model": "printing.printer",
             "type": "ir.actions.act_window",
             "target": "current",

@@ -93,9 +93,9 @@ class JournalLedgerReport(models.AbstractModel):
         return "move_id"
 
     def _get_move_lines_data(self, ml, wizard, ml_taxes, auto_sequence, exigible):
-        base_debit = base_credit = tax_debit = tax_credit = base_balance = (
-            tax_balance
-        ) = 0.0
+        base_debit = (
+            base_credit
+        ) = tax_debit = tax_credit = base_balance = tax_balance = 0.0
         if exigible:
             base_debit = ml_taxes and ml.debit or 0.0
             base_credit = ml_taxes and ml.credit or 0.0
@@ -264,9 +264,7 @@ class JournalLedgerReport(models.AbstractModel):
                 journal_id = ml_data["journal_id"]
                 if journal_id not in journals_taxes_data.keys():
                     journals_taxes_data[journal_id] = {}
-                taxes = self.env["account.tax"].search_fetch(
-                    [("id", "in", tax_ids)], ["name", "description"]
-                )
+                taxes = self.env["account.tax"].browse(tax_ids)
                 for tax in taxes:
                     if tax.id not in journals_taxes_data[journal_id]:
                         journals_taxes_data[journal_id][tax.id] = {
@@ -314,9 +312,11 @@ class JournalLedgerReport(models.AbstractModel):
             if key not in journal_moves_data.keys():
                 journal_moves_data[key] = []
             journal_moves_data[key] += list(items)
-        move_lines_data = account_ids_data = partner_ids_data = currency_ids_data = (
-            tax_line_ids_data
-        ) = move_line_ids_taxes_data = {}
+        move_lines_data = (
+            account_ids_data
+        ) = (
+            partner_ids_data
+        ) = currency_ids_data = tax_line_ids_data = move_line_ids_taxes_data = {}
         if move_ids:
             move_lines = self._get_move_lines(move_ids, wizard, journal_ids)
             move_lines_data = move_lines[1]

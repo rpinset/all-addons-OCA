@@ -2,4 +2,3 @@
 - Andrea Stirpe
 - Levent Karakaş \<<leventk@eskayazilim.com.tr>\>
 - Pedro M. Baeza
-- Nhan Tran \<<nhant@trobz.com>\>

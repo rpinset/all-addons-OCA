@@ -4,7 +4,6 @@
 
 from odoo.tests import tagged
 
-from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.addons.account_edi.tests.common import AccountEdiTestCommon
 from odoo.addons.base.tests.test_ir_cron import CronMixinCase
 
@@ -14,10 +13,8 @@ class TestMessageSPV(AccountEdiTestCommon, CronMixinCase):
     # test de creare mesaje preluate de la SPV
 
     @classmethod
-    @AccountTestInvoicingCommon.setup_country("ro")
     def setUpClass(cls):
-        super().setUpClass()
-
+        super().setUpClass(chart_template_ref="ro")
         cls.mainpartner = cls.env.ref("base.main_partner")
         cls.env.company.anglo_saxon_accounting = True
         cls.env.company.l10n_ro_accounting = True

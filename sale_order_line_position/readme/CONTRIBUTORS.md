@@ -1,5 +1,4 @@
 - Thierry Ducrest \<<thierry.ducrest@camptocamp.com>\>
 - [Trobz](https://trobz.com):
-  - Nguyen Hoang Hiep \<<hiepnh@trobz.com>\>
-  - Do Anh Duy \<<duyda@trobz.com>\>
-  - Kien Kim Khoi \<<khoikk@trobz.com>\>
+- Nguyen Hoang Hiep \<<hiepnh@trobz.com>\>
+- Do Anh Duy \<<duyda@trobz.com>\>

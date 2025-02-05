@@ -7,7 +7,7 @@
                     <h4 class="panel-title">
                         <a
                             class="o_info_btn"
-                            data-toggle="state.collapse"
+                            data-toggle="collapse"
                             href="#"
                             data-target="#collapse1"
                             t-on-click="onToggleCollapse"
@@ -27,20 +27,32 @@
                                     >Sequence</th>
                                     <th
                                         name="th_requested_by"
-                                        class="text-start"
+                                        class="text-left"
                                     >Requested by</th>
-                                    <th name="th_name" class="text-end">Description</th>
+                                    <th
+                                        name="th_name"
+                                        class="text-right"
+                                    >Description</th>
                                     <th
                                         name="th_display_status"
-                                        class="text-end"
+                                        class="text-right"
                                     >Status</th>
-                                    <th name="th_todo_by" class="text-end">Todo by</th>
-                                    <th name="th_done_by" class="text-end">Done by</th>
+                                    <th
+                                        name="th_todo_by"
+                                        class="text-right"
+                                    >Todo by</th>
+                                    <th
+                                        name="th_done_by"
+                                        class="text-right"
+                                    >Done by</th>
                                     <th
                                         name="th_reviewed_date"
-                                        class="text-end"
+                                        class="text-right"
                                     >Validation Date</th>
-                                    <th name="th_comment" class="text-end">Comment</th>
+                                    <th
+                                        name="th_comment"
+                                        class="text-right"
+                                    >Comment</th>
                                 </tr>
                             </thead>
                             <tbody class="sale_tbody">
@@ -62,42 +74,42 @@
                                     <t
                                         t-if="review.status == 'approved'"
                                         t-set="status_class"
-                                        t-value="'alert alert-success'"
+                                        t-value="'alert-success'"
                                     />
                                     <t
                                         t-if="review.status == 'rejected'"
                                         t-set="status_class"
-                                        t-value="'alert alert-danger'"
+                                        t-value="'alert-danger'"
                                     />
                                     <tr t-att-class="status_class">
                                         <td name="td_sequence" class="text-center">
-                                            <span t-out="review.sequence" />
+                                            <span t-esc="review.sequence" />
                                         </td>
-                                        <td name="td_requested_by" class="text-start">
-                                            <span t-out="review.requested_by[1]" />
+                                        <td name="td_requested_by" class="text-left">
+                                            <span t-esc="review.requested_by[1]" />
                                         </td>
-                                        <td name="td_name" class="text-end">
-                                            <span t-out="review.name" />
+                                        <td name="td_name" class="text-right">
+                                            <span t-esc="review.name" />
                                         </td>
-                                        <td name="td_display_status" class="text-end">
-                                            <span t-out="review.display_status" />
+                                        <td name="td_display_status" class="text-right">
+                                            <span t-esc="review.display_status" />
                                         </td>
-                                        <td name="td_todo_by" class="text-end">
-                                            <span t-out="review.todo_by" />
+                                        <td name="td_todo_by" class="text-right">
+                                            <span t-esc="review.todo_by" />
                                         </td>
-                                        <td name="td_done_by" class="text-end">
-                                            <span t-out="review.done_by[1]" />
+                                        <td name="td_done_by" class="text-right">
+                                            <span t-esc="review.done_by[1]" />
                                         </td>
-                                        <td name="td_reviewed_date" class="text-end">
+                                        <td name="td_reviewed_date" class="text-right">
                                             <t t-if="review.reviewed_formated_date">
                                                 <span
-                                                    t-out="review.reviewed_formated_date"
+                                                    t-esc="review.reviewed_formated_date"
                                                 />
                                             </t>
                                         </td>
-                                        <td name="td_comment" class="text-start">
+                                        <td name="td_comment" class="text-left">
                                             <t t-if="review.comment">
-                                                <span t-out="review.comment" />
+                                                <span t-esc="review.comment" />
                                             </t>
                                         </td>
                                     </tr>

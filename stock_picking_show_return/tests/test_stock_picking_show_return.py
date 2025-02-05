@@ -2,8 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import Command
-from odoo.tests import Form, tagged
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import Form, TransactionCase, tagged
 
 
 @tagged("post_install", "-at_install")
@@ -51,8 +50,7 @@ class TestStockPickingShowReturn(TransactionCase):
         self.picking.move_line_ids.picked = True
         self.picking._action_done()
         wizard = self.get_return_picking_wizard(self.picking)
-        wizard.product_return_moves.quantity = 1
-        wizard.action_create_returns()
+        wizard.create_returns()
         self.picking._compute_returned_ids()
         self.assertTrue(self.picking.returned_ids)
 
@@ -62,8 +60,7 @@ class TestStockPickingShowReturn(TransactionCase):
         self.picking.move_line_ids.picked = True
         self.picking._action_done()
         wizard = self.get_return_picking_wizard(self.picking)
-        wizard.product_return_moves.quantity = 1
-        wizard.action_create_returns()
+        wizard.create_returns()
         self.picking._compute_returned_ids()
         picking_returned = self.picking.returned_ids[0]
         # Get first picking returned to check if origin is self.picking

@@ -1,3 +1,4 @@
+// /** @odoo-module **/
 import {ReportAction} from "@web/webclient/actions/reports/report_action";
 import {patch} from "@web/core/utils/patch";
 import {useEnrichWithActionLinks} from "./report.esm";

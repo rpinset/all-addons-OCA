@@ -11,7 +11,6 @@ class Contact(models.Model):
         "res.partner",
         domain=[("is_company", "=", True)],
         recursive=True,
-        index=True,
     )
     company_group_member_ids = fields.One2many(
         comodel_name="res.partner",

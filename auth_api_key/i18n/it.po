@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-13 18:06+0000\n"
+"PO-Revision-Date: 2024-10-10 10:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -130,6 +130,13 @@ msgstr ""
 "        ambiente del server, inserire nel campo un valore fittizio."
 
 #. module: auth_api_key
+#. odoo-python
+#: code:addons/auth_api_key/models/auth_api_key.py:0
+#, python-format
+msgid "The key %s is not allowed"
+msgstr "Chiave %s non autorizzata"
+
+#. module: auth_api_key
 #: model:ir.model.fields,help:auth_api_key.field_auth_api_key__user_id
 msgid ""
 "The user used to process the requests authenticated by\n"
@@ -146,12 +153,9 @@ msgstr "Utente"
 #. module: auth_api_key
 #. odoo-python
 #: code:addons/auth_api_key/models/auth_api_key.py:0
+#, python-format
 msgid "User is not allowed"
 msgstr "Utente non autorizzato"
-
-#, python-format
-#~ msgid "The key %s is not allowed"
-#~ msgstr "Chiave %s non autorizzata"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

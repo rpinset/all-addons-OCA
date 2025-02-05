@@ -7,7 +7,8 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 from odoo.fields import Date
-from odoo.tests import Form, tagged
+from odoo.tests import tagged
+from odoo.tests.common import Form
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -15,8 +16,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestJournalReport(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
         cls.env = cls.env(
             context=dict(
                 cls.env.context,

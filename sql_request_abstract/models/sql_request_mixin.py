@@ -12,10 +12,8 @@ from io import BytesIO
 from psycopg2 import ProgrammingError
 from psycopg2.sql import SQL
 
-from odoo import _, api, fields, models, tools
-from odoo.exceptions import UserError, ValidationError
-
-from ..sql_db import get_external_cursor
+from odoo import _, api, fields, models
+from odoo.exceptions import UserError
 
 logger = logging.getLogger(__name__)
 
@@ -98,26 +96,6 @@ class SQLRequestMixin(models.AbstractModel):
         column2="user_id",
         default=_default_user_ids,
     )
-    use_external_database = fields.Boolean(
-        help=(
-            "If filled, the query will be executed against an external "
-            "database, configured in Odoo main configuration file. "
-        )
-    )
-
-    @api.constrains("use_external_database")
-    def check_external_config(self):
-        external_db_records = self.filtered(lambda rec: rec.use_external_database)
-        if external_db_records:
-            external_db_name = tools.config.get("external_db_name")
-            if not external_db_name:
-                raise ValidationError(
-                    _(
-                        "You can't use an external database as there are no such "
-                        "configuration about this. Please contact "
-                        "your Odoo administrator to solve this issue."
-                    )
-                )
 
     has_group_changed = fields.Boolean(
         copy=False,
@@ -224,54 +202,42 @@ class SQLRequestMixin(models.AbstractModel):
         else:
             raise UserError(_("Unimplemented mode : '%s'") % mode)
 
-        query_cr = self._get_cr_for_query()
-
         if rollback:
-            rollback_name = self._create_savepoint(query_cr)
+            rollback_name = self._create_savepoint()
         try:
             if mode == "stdout":
                 output = BytesIO()
-                query_cr.copy_expert(query, output)
+                self.env.cr.copy_expert(query, output)
                 res = base64.b64encode(output.getvalue())
                 output.close()
             else:
-                query_cr.execute(query)
+                self.env.cr.execute(query)
                 if mode == "fetchall":
-                    res = query_cr.fetchall()
+                    res = self.env.cr.fetchall()
                     if header:
                         colnames = [desc[0] for desc in self.env.cr.description]
                         res.insert(0, colnames)
                 elif mode == "fetchone":
-                    res = query_cr.fetchone()
+                    res = self.env.cr.fetchone()
         finally:
-            self._rollback_savepoint(rollback_name, query_cr)
+            self._rollback_savepoint(rollback_name)
 
         return res
 
     # Private Section
-    def _get_cr_for_query(self):
-        self.ensure_one()
-        if self.use_external_database:
-            return get_external_cursor()
-        else:
-            return self.env.cr
-
     @api.model
-    def _create_savepoint(self, cr):
+    def _create_savepoint(self):
         rollback_name = "{}_{}".format(self._name.replace(".", "_"), uuid.uuid1().hex)
         # pylint: disable=sql-injection
-        req = f"SAVEPOINT {rollback_name}"
-        cr.execute(req)
+        req = "SAVEPOINT %s" % (rollback_name)
+        self.env.cr.execute(req)
         return rollback_name
 
     @api.model
-    def _rollback_savepoint(self, rollback_name, cr):
+    def _rollback_savepoint(self, rollback_name):
         # pylint: disable=sql-injection
-        req = f"ROLLBACK TO SAVEPOINT {rollback_name}"
-        cr.execute(req)
-        # close external database cursor
-        if self.env.cr != cr:
-            cr.close()
+        req = "ROLLBACK TO SAVEPOINT %s" % (rollback_name)
+        self.env.cr.execute(req)
 
     @api.model
     def _check_materialized_view_available(self):
@@ -300,7 +266,7 @@ class SQLRequestMixin(models.AbstractModel):
         self.ensure_one()
         query = self.query.lower()
         for word in self.PROHIBITED_WORDS:
-            expr = rf"\b{word}\b"
+            expr = r"\b%s\b" % word
             is_not_safe = re.search(expr, query)
             if is_not_safe:
                 raise UserError(
@@ -316,17 +282,16 @@ class SQLRequestMixin(models.AbstractModel):
         is done after."""
         self.ensure_one()
         query = self._prepare_request_check_execution()
-        query_cr = self._get_cr_for_query()
-        rollback_name = self._create_savepoint(query_cr)
+        rollback_name = self._create_savepoint()
         res = False
         try:
-            query_cr.execute(query)
+            self.env.cr.execute(query)
             res = self._hook_executed_request()
         except ProgrammingError as e:
             logger.exception("Failed query: %s", query)
             raise UserError(_("The SQL query is not valid:\n\n %s") % e) from e
         finally:
-            self._rollback_savepoint(rollback_name, query_cr)
+            self._rollback_savepoint(rollback_name)
         return res
 
     def _prepare_request_check_execution(self):

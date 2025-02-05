@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <odoo>
-    <record id="view_exception_rule_list" model="ir.ui.view">
-        <field name="name">exception.rule.list</field>
+    <record id="view_exception_rule_tree" model="ir.ui.view">
+        <field name="name">exception.rule.tree</field>
         <field name="model">exception.rule</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="sequence" widget="handle" />
                 <field name="name" />
                 <field name="description" />
                 <field name="model" />
                 <field name="active" widget="boolean_toggle" />
-            </list>
+            </tree>
         </field>
     </record>
     <record id="view_exception_rule_form" model="ir.ui.view">
@@ -25,7 +25,8 @@
                         bg_color="bg-danger"
                         invisible="active"
                     />
-                    <div class="oe_button_box" name="button_box" />
+                    <div class="oe_button_box" name="button_box">
+                    </div>
                     <div class="oe_title">
                         <label for="name" class="oe_edit_only" />
                         <h1>
@@ -62,7 +63,7 @@
                         >
                             <field
                                 name="code"
-                                widget="code"
+                                widget="ace"
                                 options="{'mode': 'python'}"
                                 placeholder="Enter Python code here. Help about Python expression is available in the help tab of this document."
                             />
@@ -78,9 +79,9 @@
                                 >Various fields may use Python code or Python expressions. The following variables can be used:</p>
                                 <ul>
                                     <li><code
-                                    >self</code>: Record on which the rule is evaluated.</li>
+                                        >self</code>: Record on which the rule is evaluated.</li>
                                     <li>To block the exception use: <code
-                                    >failed = True</code></li>
+                                        >failed = True</code></li>
                                 </ul>
                                 <p
                                 >As well as all the libraries provided in safe_eval.</p>
@@ -91,15 +92,15 @@
             </form>
         </field>
     </record>
-    <record id="action_exception_rule_list" model="ir.actions.act_window">
+    <record id="action_exception_rule_tree" model="ir.actions.act_window">
         <field name="name">Exception Rules</field>
         <field name="res_model">exception.rule</field>
-        <field name="view_mode">list,form</field>
-        <field name="view_id" ref="view_exception_rule_list" />
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_exception_rule_tree" />
         <field name="context">{'active_test': False}</field>
     </record>
     <menuitem
-        action="action_exception_rule_list"
+        action="action_exception_rule_tree"
         id="menu_action_exception"
         parent="base.menu_custom"
         sequence="90"

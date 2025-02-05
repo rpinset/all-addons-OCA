@@ -11,4 +11,3 @@
 - Miquel Raïch \<<miquel.raich@forgeflow.com>\>
 - Moaad Bourhim \<<moaad.bourhim@gmail.com>\>
 - Bernat Puig \<<bernat.puig@forgeflow.com>\>
-- Nhan Tran \<<nhant@trobz.com>\>

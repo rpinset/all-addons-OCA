@@ -11,9 +11,7 @@
         <field name="inherit_id" ref="account.product_template_form_view" />
         <field name="arch" type="xml">
             <group name="accounting" position="inside">
-                <group name="invoice_start_end_dates" string="Cut-offs">
-                    <field name="must_have_dates" />
-                </group>
+                <field name="must_have_dates" />
             </group>
         </field>
     </record>

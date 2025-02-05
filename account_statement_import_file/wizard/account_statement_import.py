@@ -4,7 +4,7 @@
 import base64
 import logging
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
 from odoo.addons.base.models.res_bank import sanitize_account_number
@@ -34,7 +34,7 @@ class AccountStatementImport(models.TransientModel):
         logger.debug("result=%s", result)
         if not result["statement_ids"]:
             raise UserError(
-                self.env._(
+                _(
                     "You have already imported this file, or this file "
                     "only contains already imported transactions."
                 )
@@ -92,36 +92,32 @@ class AccountStatementImport(models.TransientModel):
             self.statement_filename,
             len(parsing_data),
         )
-        for idx, single_statement_data in enumerate(parsing_data, start=1):
+        i = 0
+        for single_statement_data in parsing_data:
+            i += 1
             logger.debug(
-                "account %d: single_statement_data=%s", idx, single_statement_data
+                "account %d: single_statement_data=%s", i, single_statement_data
             )
             self.import_single_statement(single_statement_data, result)
 
     def import_single_statement(self, single_statement_data, result):
         if not isinstance(single_statement_data, tuple):
             raise UserError(
-                self.env._(
-                    "The parsing of the statement file returned an invalid result."
-                )
+                _("The parsing of the statement file returned an invalid result.")
             )
         currency_code, account_number, stmts_vals = single_statement_data
         # Check raw data
         if not self._check_parsed_data(stmts_vals):
             return False
         if not currency_code:
-            raise UserError(
-                self.env._("Missing currency code in the bank statement file.")
-            )
+            raise UserError(_("Missing currency code in the bank statement file."))
         # account_number can be None (example : QIF)
         currency = self._match_currency(currency_code)
         journal = self._match_journal(account_number, currency)
         if not journal.default_account_id:
             raise UserError(
-                self.env._(
-                    "The Bank Accounting Account is not set on the journal '%s'.",
-                    journal.display_name,
-                )
+                _("The Bank Accounting Account is not set on the journal '%s'.")
+                % journal.display_name
             )
         # Prepare statement data to be used for bank statements creation
         stmts_vals = self._complete_stmts_vals(stmts_vals, journal, account_number)
@@ -165,7 +161,7 @@ class AccountStatementImport(models.TransientModel):
         a list of triplets.
         """
         raise UserError(
-            self.env._(
+            _(
                 "This bank statement file format is not supported.\n"
                 "Did you install the Odoo module to support this format?"
             )
@@ -197,11 +193,11 @@ class AccountStatementImport(models.TransientModel):
         )
         if not currency:
             raise UserError(
-                self.env._(
+                _(
                     "The bank statement file uses currency '%s' "
-                    "but there is no such currency in Odoo.",
-                    currency_code,
+                    "but there is no such currency in Odoo."
                 )
+                % currency_code
             )
         return currency
 
@@ -212,7 +208,7 @@ class AccountStatementImport(models.TransientModel):
         if not account_number:  # exemple : QIF
             if not self.env.context.get("journal_id"):
                 raise UserError(
-                    self.env._(
+                    _(
                         "The format of this bank statement file doesn't "
                         "contain the bank account number, so you must "
                         "start the wizard from the right bank journal "
@@ -238,7 +234,7 @@ class AccountStatementImport(models.TransientModel):
             if journal and ctx_journal_id and journal.id != ctx_journal_id:
                 ctx_journal = journal_obj.browse(ctx_journal_id)
                 raise UserError(
-                    self.env._(
+                    _(
                         "The journal found for the file (%(journal_match)s) is"
                         " different from the selected journal "
                         "(%(journal_selected)s).",
@@ -256,7 +252,7 @@ class AccountStatementImport(models.TransientModel):
                 )
                 if bank_accounts:
                     raise UserError(
-                        self.env._(
+                        _(
                             "The bank account with number '%(account_number)s'"
                             " exists in Odoo but it is not set on any bank "
                             "journal. You should set it on the related bank "
@@ -267,7 +263,7 @@ class AccountStatementImport(models.TransientModel):
                     )
                 else:
                     raise UserError(
-                        self.env._(
+                        _(
                             "Could not find any bank account with number "
                             "'%(account_number)s'  linked to partner '"
                             "%(partner_name)s'. You should create the bank "
@@ -285,7 +281,7 @@ class AccountStatementImport(models.TransientModel):
         journal_currency = journal.currency_id or company.currency_id
         if journal_currency != currency:
             raise UserError(
-                self.env._(
+                _(
                     "The currency of the bank statement (%(currency_name)s) "
                     "is not the same as the currency of the journal "
                     "'%(journal_name)s' (%(journal_currency_name)s).",
@@ -307,7 +303,7 @@ class AccountStatementImport(models.TransientModel):
                 )
                 journal._statement_line_import_update_hook(lvals, speeddict)
                 if not lvals.get("payment_ref"):
-                    raise UserError(self.env._("Missing payment_ref on a transaction."))
+                    raise UserError(_("Missing payment_ref on a transaction."))
         return stmts_vals
 
     def _create_bank_statements(self, stmts_vals, result):
@@ -358,12 +354,10 @@ class AccountStatementImport(models.TransientModel):
         num_ignored = len(existing_st_line_ids)
         if num_ignored > 0:
             if num_ignored == 1:
-                msg = self.env._(
-                    "1 transaction had already been imported and was ignored."
-                )
+                msg = _("1 transaction had already been imported and was ignored.")
             else:
-                msg = self.env._(
-                    "%d transactions had already been imported and were ignored.",
-                    num_ignored,
+                msg = (
+                    _("%d transactions had already been imported and were ignored.")
+                    % num_ignored
                 )
             result["notifications"].append(msg)

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-21 01:49+0000\n"
-"PO-Revision-Date: 2024-12-18 11:51+0000\n"
+"PO-Revision-Date: 2024-10-25 18:51+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -28,58 +28,35 @@ msgid ""
 "#  - self: browse_record of the current ID Category browse_record\n"
 "#  - id_number: browse_record of ID number to validate\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 1: ID number only contains "
-"digits</i>\n"
-"                                </b>\n"
+"<b><i># Sample 1: ID number only contains digits</i></b>\n"
 "if not id_number.name.isdigit():\n"
 "    failed = True\n"
 "else:\n"
 "    failed = False\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 2: Length of ID number "
-"cannot exceed 10 chars</i>\n"
-"                                </b>\n"
+"<b><i># Sample 2: Length of ID number cannot exceed 10 chars</i></b>\n"
 "failed = len(id_number.name) &gt; 10 and True or False\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 3: ID number must start with "
-"the category code</i>\n"
-"                                </b>\n"
+"<b><i># Sample 3: ID number must start with the category code</i></b>\n"
 "failed = not id_number.name.startswith(self.code) and True or False"
 msgstr ""
-"# Utilizzo fallito = True per indicare che il numero non è valido.\n"
-"# Si possono usare le seguenti variabili:\n"
+"# Utilizzare failed = True per indicare che il numero ID non è valido.\n"
+"# Si possono utilizzare le seguenti variabili:\n"
 "#  - self: browse_record dell'attuale categoria ID browse_record\n"
 "#  - id_number: browse_record del numero ID da validare\n"
 "\n"
-"<b>\n"
-"                                    <i># Esempio 1: numero ID contiene solo "
-"numeri</i>\n"
-"                                </b>\n"
+"<b><i># Esempio 1: numero ID che contiene solo numeri</i></b>\n"
 "if not id_number.name.isdigit():\n"
 "    failed = True\n"
 "else:\n"
 "    failed = False\n"
 "\n"
-"<b>\n"
-"                                    <i># Esempio 2: lunghezza del numero ID "
-"non può superare i 10 caratteri</i>\n"
-"                                </b>\n"
+"<b><i># Esempio 2: la lunghezza del numero ID non può superare i 10 "
+"caratteri</i></b>\n"
 "failed = len(id_number.name) &gt; 10 and True or False\n"
 "\n"
-"<b>\n"
-"                                    <i># Esempio 3: il numero ID deve "
-"iniziare con il codice categoria</i>\n"
-"                                </b>\n"
+"<b><i># Esempio 3:il numero ID deve iniziare con l codice categoria</i></b>\n"
 "failed = not id_number.name.startswith(self.code) and True or False"
-
-#. module: partner_identification
-#. odoo-python
-#: code:addons/partner_identification/models/res_partner_id_category.py:0
-msgid "%(id_name)s is not a valid %(cat_name)s identifier"
-msgstr "%(id_name)s non è un identificatore %(cat_name)s valido"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category__code
@@ -174,14 +151,15 @@ msgstr "Nome visualizzato"
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner_id_category.py:0
+#, python-format
 msgid ""
 "Error when evaluating the id_category validation code: \n"
-" %(name)s \n"
-"(%(error)s)"
+" {name} \n"
+"({error})"
 msgstr ""
-"Errore nella valutazione il codice validazione id_category: \n"
-" %(name)s \n"
-"(%(error)s)"
+"Errore nella valutazione del codice validazione id_category: \n"
+" {name} \n"
+"({error})"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__valid_until
@@ -268,7 +246,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_error
-#: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -443,11 +420,6 @@ msgid "Running"
 msgstr "Valido"
 
 #. module: partner_identification
-#: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__status
 msgid "Status"
 msgstr "Stato"
@@ -484,14 +456,15 @@ msgstr ""
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner.py:0
+#, python-format
 msgid ""
-"This %(record_name)s has multiple IDs of this type (%(category_code)s), so a "
-"write via the %(field_name)s field is not possible. In order to fix this, "
+"This {record_name} has multiple IDs of this type ({category_code}), so a "
+"write via the {field_name} field is not possible. In order to fix this, "
 "please use the IDs tab."
 msgstr ""
-"Questo %(record_name)s ha ID multipli di questo tipo (%(category_code)s), "
-"quindi una scrittura tramite il campo %(field_name)s non è possibile. Per "
-"risolvere il problema, usare la linguetta degli ID."
+"Questo {record_name} ha ID multipli di questo tipo ({category_code}), quindi "
+"una scrittura tramite il campo {field_name} non è possibile. Per risolvere "
+"il problema, usare la linguetta degli ID."
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__pending
@@ -528,69 +501,12 @@ msgstr "Messaggi sito web"
 msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
 
-#~ msgid "{%(id_name)s is not a valid %(cat_name)s identifier"
-#~ msgstr "{%(id_name)s non è un identificatore %(cat_name)s valido"
-
-#~ msgid ""
-#~ "# Use failed = True to specify that the id number is not valid.\n"
-#~ "# You can use the following variables :\n"
-#~ "#  - self: browse_record of the current ID Category browse_record\n"
-#~ "#  - id_number: browse_record of ID number to validate\n"
-#~ "\n"
-#~ "<b><i># Sample 1: ID number only contains digits</i></b>\n"
-#~ "if not id_number.name.isdigit():\n"
-#~ "    failed = True\n"
-#~ "else:\n"
-#~ "    failed = False\n"
-#~ "\n"
-#~ "<b><i># Sample 2: Length of ID number cannot exceed 10 chars</i></b>\n"
-#~ "failed = len(id_number.name) &gt; 10 and True or False\n"
-#~ "\n"
-#~ "<b><i># Sample 3: ID number must start with the category code</i></b>\n"
-#~ "failed = not id_number.name.startswith(self.code) and True or False"
-#~ msgstr ""
-#~ "# Utilizzare failed = True per indicare che il numero ID non è valido.\n"
-#~ "# Si possono utilizzare le seguenti variabili:\n"
-#~ "#  - self: browse_record dell'attuale categoria ID browse_record\n"
-#~ "#  - id_number: browse_record del numero ID da validare\n"
-#~ "\n"
-#~ "<b><i># Esempio 1: numero ID che contiene solo numeri</i></b>\n"
-#~ "if not id_number.name.isdigit():\n"
-#~ "    failed = True\n"
-#~ "else:\n"
-#~ "    failed = False\n"
-#~ "\n"
-#~ "<b><i># Esempio 2: la lunghezza del numero ID non può superare i 10 "
-#~ "caratteri</i></b>\n"
-#~ "failed = len(id_number.name) &gt; 10 and True or False\n"
-#~ "\n"
-#~ "<b><i># Esempio 3:il numero ID deve iniziare con l codice categoria</i></"
-#~ "b>\n"
-#~ "failed = not id_number.name.startswith(self.code) and True or False"
-
+#. module: partner_identification
+#. odoo-python
+#: code:addons/partner_identification/models/res_partner_id_category.py:0
 #, python-format
-#~ msgid ""
-#~ "Error when evaluating the id_category validation code: \n"
-#~ " {name} \n"
-#~ "({error})"
-#~ msgstr ""
-#~ "Errore nella valutazione del codice validazione id_category: \n"
-#~ " {name} \n"
-#~ "({error})"
-
-#, python-format
-#~ msgid ""
-#~ "This {record_name} has multiple IDs of this type ({category_code}), so a "
-#~ "write via the {field_name} field is not possible. In order to fix this, "
-#~ "please use the IDs tab."
-#~ msgstr ""
-#~ "Questo {record_name} ha ID multipli di questo tipo ({category_code}), "
-#~ "quindi una scrittura tramite il campo {field_name} non è possibile. Per "
-#~ "risolvere il problema, usare la linguetta degli ID."
-
-#, python-format
-#~ msgid "{id_name} is not a valid {cat_name} identifier"
-#~ msgstr "{id_name} non è un valido identificatore {cat_name}"
+msgid "{id_name} is not a valid {cat_name} identifier"
+msgstr "{id_name} non è un valido identificatore {cat_name}"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

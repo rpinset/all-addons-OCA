@@ -4,7 +4,7 @@
 
 {
     "name": "DAS2",
-    "version": "18.0.1.1.0",
+    "version": "17.0.2.2.0",
     "category": "Invoicing Management",
     "license": "AGPL-3",
     "summary": "DAS2 (France)",
@@ -12,11 +12,11 @@
     "maintainers": ["alexis-via"],
     "website": "https://github.com/OCA/l10n-france",
     "depends": [
-        "l10n_fr_siret_account",
+        "l10n_fr_siret",
         "l10n_fr_cog",
     ],
     "external_dependencies": {
-        "python": ["python-stdnum", "pyfrdas2>=0.5"],
+        "python": ["stdnum", "pyfrdas2>=0.4"],
     },
     "data": [
         "security/das2_security.xml",

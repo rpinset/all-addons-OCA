@@ -47,7 +47,6 @@ Contributors
 * Eficent Business and IT Consulting Services S.L. <contact@eficent.com>
 * Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>
 * Info A Tout Prix <huret.emmanuel@infoatoutprix.fr>
-* Ajay Javiya <ajaviya@odoogap.com>
 
 Do not contact contributors directly about support or help with technical issues.
 

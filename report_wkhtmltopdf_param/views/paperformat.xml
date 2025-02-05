@@ -8,10 +8,10 @@
         <field name="arch" type="xml">
             <field name="report_ids" position="after">
                 <field name="custom_params">
-                    <list editable="bottom">
+                    <tree editable="bottom">
                         <field name="name" />
                         <field name="value" />
-                    </list>
+                    </tree>
                 </field>
             </field>
         </field>

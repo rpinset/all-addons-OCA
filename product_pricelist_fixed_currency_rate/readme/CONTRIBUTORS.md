@@ -1,3 +1,2 @@
 - Lois Rilo \<<lois.rilo@forgeflow.com>\>
 - Mohamed Alkobrosli \<<mohamed@kobros-tech.com>\>
-- Heliconia Solutions Pvt. Ltd. \<<https://www.heliconia.io>\>

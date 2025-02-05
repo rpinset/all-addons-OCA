@@ -20,25 +20,25 @@ msgstr ""
 #: model:mail.template,body_html:mgmtsystem_nonconformity_type.email_template_nonconformity
 msgid ""
 "<div>\n"
-"                <p>\n"
-"                        Dear <t t-out=\"object.quality_contact_name or ''\"/"
-">,<br/><br/>\n"
+"                    <p>\n"
+"                        Dear <t t-out=\"object.quality_contact_name or "
+"''\"></t>,<br><br>\n"
 "                        In the attachment, you will find the Nonconformity "
-"report:<br/>\n"
+"report:<br>\n"
 "                        <strong>Nonconformity N°:</strong> <t t-out=\"object."
-"id or ''\"/><br/>\n"
+"id or ''\"></t><br>\n"
 "                        <strong>Name:</strong> <t t-out=\"object.name or "
-"''\"/><br/>\n"
+"''\"></t><br>\n"
 "                        <strong>Description:</strong> <t t-out=\"object."
-"description or ''\"/><br/>\n"
-"                        <br/>\n"
-"                        Best regards,<br/>\n"
+"description or ''\"></t><br>\n"
+"                        <br>\n"
+"                        Best regards,<br>\n"
 "                        <t t-if=\"user.signature\">\n"
-"                    <t t-out=\"user.signature or ''\"/>\n"
-"                </t>\n"
+"                            <t t-out=\"user.signature or ''\"></t>\n"
+"                        </t>\n"
 "                    </p>\n"
-"            </div>\n"
-"        "
+"                </div>\n"
+"            "
 msgstr ""
 
 #. module: mgmtsystem_nonconformity_type
@@ -101,6 +101,7 @@ msgstr "Proveedor"
 #. odoo-python
 #: code:addons/mgmtsystem_nonconformity_type/models/mgmtsystem_nonconformity.py:0
 #: code:addons/mgmtsystem_nonconformity_type/tests/test_nonconformity_type.py:0
+#, python-format
 msgid ""
 "The partner's contacts quality type isn't available.\n"
 " Check if module mgmtsystem_nonconformity_partner is installed."
@@ -112,6 +113,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/mgmtsystem_nonconformity_type/models/mgmtsystem_nonconformity.py:0
 #: code:addons/mgmtsystem_nonconformity_type/tests/test_nonconformity_type.py:0
+#, python-format
 msgid ""
 "The partner's quality contact email is required in order to send the message."
 msgstr ""

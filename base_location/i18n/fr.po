@@ -124,6 +124,11 @@ msgid "ID"
 msgstr "Identifiant"
 
 #. module: base_location
+#: model:ir.model.fields,field_description:base_location.field_res_city_zip____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: base_location
 #: model:ir.model.fields,field_description:base_location.field_res_city_zip__write_uid
 msgid "Last Updated by"
 msgstr "Mis à jour par"
@@ -158,6 +163,7 @@ msgstr "Etat"
 #. module: base_location
 #. odoo-python
 #: code:addons/base_location/models/res_partner.py:0
+#, python-format
 msgid ""
 "The city of the partner %(partner)s differs from that in location "
 "%(location)s"
@@ -168,6 +174,7 @@ msgstr ""
 #. module: base_location
 #. odoo-python
 #: code:addons/base_location/models/res_partner.py:0
+#, python-format
 msgid ""
 "The country of the partner %(partner)s differs from that in location "
 "%(location)s"
@@ -178,6 +185,7 @@ msgstr ""
 #. module: base_location
 #. odoo-python
 #: code:addons/base_location/models/res_partner.py:0
+#, python-format
 msgid ""
 "The state of the partner %(partner)s differs from that in location "
 "%(location)s"
@@ -188,6 +196,7 @@ msgstr ""
 #. module: base_location
 #. odoo-python
 #: code:addons/base_location/models/res_partner.py:0
+#, python-format
 msgid ""
 "The zip of the partner %(partner)s differs from that in location %(location)s"
 msgstr ""
@@ -247,9 +256,6 @@ msgstr "Code postaux"
 #: model:ir.model.fields,field_description:base_location.field_res_city__zip_ids
 msgid "Zips in this city"
 msgstr "Code postaux dans cette ville"
-
-#~ msgid "Last Modified on"
-#~ msgstr "Dernière modification le"
 
 #, fuzzy
 #~ msgid "City of Address"

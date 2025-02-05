@@ -41,6 +41,19 @@ RETRY_INTERVAL = 10 * 60  # seconds
 _logger = logging.getLogger(__name__)
 
 
+# TODO remove in 15.0 or 16.0, used to keep compatibility as the
+# class has been moved in 'delay'.
+def DelayableRecordset(*args, **kwargs):
+    # prevent circular import
+    from .delay import DelayableRecordset as dr
+
+    _logger.debug(
+        "DelayableRecordset moved from the queue_job.job"
+        " to the queue_job.delay python module"
+    )
+    return dr(*args, **kwargs)
+
+
 def identity_exact(job_):
     """Identity function using the model, method and all arguments as key
 
@@ -211,7 +224,9 @@ class Job:
         """
         stored = cls.db_records_from_uuids(env, [job_uuid])
         if not stored:
-            raise NoSuchJobError(f"Job {job_uuid} does no longer exist in the storage.")
+            raise NoSuchJobError(
+                "Job %s does no longer exist in the storage." % job_uuid
+            )
         return cls._load_from_db_record(stored)
 
     @classmethod
@@ -357,6 +372,12 @@ class Job:
         return self
 
     @staticmethod
+    def db_record_from_uuid(env, job_uuid):
+        # TODO remove in 15.0 or 16.0
+        _logger.debug("deprecated, use 'db_records_from_uuids")
+        return Job.db_records_from_uuids(env, [job_uuid])
+
+    @staticmethod
     def db_records_from_uuids(env, job_uuids):
         model = env["queue.job"].sudo()
         record = model.search([("uuid", "in", tuple(job_uuids))])
@@ -403,11 +424,11 @@ class Job:
             args = ()
         if isinstance(args, list):
             args = tuple(args)
-        assert isinstance(args, tuple), f"{args}: args are not a tuple"
+        assert isinstance(args, tuple), "%s: args are not a tuple" % args
         if kwargs is None:
             kwargs = {}
 
-        assert isinstance(kwargs, dict), f"{kwargs}: kwargs are not a dict"
+        assert isinstance(kwargs, dict), "%s: kwargs are not a dict" % kwargs
 
         if not _is_model_method(func):
             raise TypeError("Job accepts only methods of Models")
@@ -518,8 +539,8 @@ class Job:
 
         return self.result
 
-    def _get_common_dependent_jobs_query(self):
-        return """
+    def enqueue_waiting(self):
+        sql = """
             UPDATE queue_job
             SET state = %s
             FROM (
@@ -547,15 +568,7 @@ class Job:
             AND %s = ALL(jobs.parent_states)
             AND state = %s;
         """
-
-    def enqueue_waiting(self):
-        sql = self._get_common_dependent_jobs_query()
         self.env.cr.execute(sql, (PENDING, self.uuid, DONE, WAIT_DEPENDENCIES))
-        self.env["queue.job"].invalidate_model(["state"])
-
-    def cancel_dependent_jobs(self):
-        sql = self._get_common_dependent_jobs_query()
-        self.env.cr.execute(sql, (CANCELLED, self.uuid, CANCELLED, WAIT_DEPENDENCIES))
         self.env["queue.job"].invalidate_model(["state"])
 
     def store(self):

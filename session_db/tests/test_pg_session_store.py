@@ -1,4 +1,3 @@
-import logging
 from unittest import mock
 
 import psycopg2
@@ -12,11 +11,11 @@ from odoo.addons.session_db.pg_session_store import PGSessionStore
 
 
 def _make_postgres_uri(
-    login=None, password=None, host=None, port=None, database=None, **kwargs
+    user=None, password=None, host=None, port=None, database=None, **kwargs
 ):
     uri = ["postgres://"]
-    if login:
-        uri.append(login)
+    if user:
+        uri.append(user)
         if password:
             uri.append(f":{password}")
         uri.append("@")
@@ -49,10 +48,7 @@ class TestPGSessionStore(TransactionCase):
 
     def test_retry(self):
         """Test that session operations are retried before failing"""
-        with (
-            mock.patch("odoo.sql_db.Cursor.execute") as mock_execute,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
+        with mock.patch("odoo.sql_db.Cursor.execute") as mock_execute:
             mock_execute.side_effect = psycopg2.OperationalError()
             try:
                 self.session_store.get("abc")
@@ -63,17 +59,13 @@ class TestPGSessionStore(TransactionCase):
                 # in a way that interferes with the Cursor.execute mock
                 raise AssertionError("expected psycopg2.OperationalError")
             assert mock_execute.call_count == 5
-            self.assertEqual(len(logs.records), 1)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
-            self.assertIn("operation try 5/5 failed, aborting", logs.output[0])
         # when the error is resolved, it works again
         self.session_store.get("abc")
 
     def test_retry_connect_fail(self):
-        with (
-            mock.patch("odoo.sql_db.Cursor.execute") as mock_execute,
-            mock.patch("odoo.sql_db.db_connect") as mock_db_connect,
-        ):
+        with mock.patch("odoo.sql_db.Cursor.execute") as mock_execute, mock.patch(
+            "odoo.sql_db.db_connect"
+        ) as mock_db_connect:
             mock_execute.side_effect = psycopg2.OperationalError()
             mock_db_connect.side_effect = RuntimeError("connection failed")
             # get fails, and a RuntimeError is raised when trying to reconnect
@@ -88,3 +80,15 @@ class TestPGSessionStore(TransactionCase):
             assert mock_execute.call_count == 1
         # when the error is resolved, it works again
         self.session_store.get("abc")
+
+    def test_make_postgres_uri(self):
+        connection_info = {
+            "host": "localhost",
+            "port": 5432,
+            "database": "test",
+            "user": "test",
+            "password": "PASSWORD",
+        }
+        assert "postgres://test:PASSWORD@localhost:5432/test" == _make_postgres_uri(
+            **connection_info
+        )

@@ -45,18 +45,21 @@ msgstr "代码"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "Connection Test Failed!"
 msgstr "连接测试失败！"
 
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "Connection Test Succeeded!"
 msgstr "连接测试成功！"
 
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "Create Marker file"
 msgstr ""
 
@@ -101,6 +104,7 @@ msgstr "在这里输入你的fsspec选项。"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "Everything seems properly set up!"
 msgstr "一切看起来都设置得当！"
 
@@ -150,6 +154,7 @@ msgstr "最后更新于"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "List File"
 msgstr ""
 
@@ -267,6 +272,7 @@ msgstr "代码必须是唯一的"
 #. module: fs_storage
 #. odoo-python
 #: code:addons/fs_storage/models/fs_storage.py:0
+#, python-format
 msgid "The options must be a valid JSON"
 msgstr "选项必须是有效的JSON"
 

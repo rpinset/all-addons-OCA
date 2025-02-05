@@ -27,10 +27,7 @@ msgstr "Employé"
 #. module: l10n_fr_hr_check_ssnid
 #. odoo-python
 #: code:addons/l10n_fr_hr_check_ssnid/models/hr_employee.py:0
-msgid "The French Social Security Number '%(ssnid)s' is invalid. %(e)s"
-msgstr ""
-
 #, python-format
-#~ msgid "The French Social Security Number '%(ssnid)s' is invalid. (%(e)s)"
-#~ msgstr ""
-#~ "Le numéro de sécurité sociale français '%(ssnid)s' est invalide. (%(e)s)"
+msgid "The French Social Security Number '%(ssnid)s' is invalid. (%(e)s)"
+msgstr ""
+"Le numéro de sécurité sociale français '%(ssnid)s' est invalide. (%(e)s)"

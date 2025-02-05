@@ -58,6 +58,7 @@ msgstr "Sobrenome"
 #. module: hr_employee_firstname
 #. odoo-python
 #: code:addons/hr_employee_firstname/models/hr_employee.py:0
+#, python-format
 msgid "No name set."
 msgstr "Nenhum nome definido."
 

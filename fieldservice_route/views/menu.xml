@@ -1,4 +1,5 @@
 <odoo>
+
     <!-- Dashboard -->
     <menuitem
         id="menu_fsm_dash_dayroute"
@@ -42,4 +43,5 @@
         parent="fieldservice.config"
         sequence="30"
     />
+
 </odoo>

@@ -1,7 +1,6 @@
 # Copyright 2016 LasLabs Inc.
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-import logging
 from unittest import mock
 
 from odoo import fields
@@ -43,23 +42,17 @@ class TestPrintingJob(TransactionCase):
         values["printer_id"] = printer.id
         return self.env["printing.job"].create(values)
 
-    def test_cancel_job_error(self):
+    @mock.patch("%s.cups" % model)
+    def test_cancel_job_error(self, cups):
         """It should catch any exception from CUPS and update status"""
-        with (
-            mock.patch(f"{model}.cups") as cups,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
-            cups.Connection.side_effect = Exception
-            printer = self.new_printer()
-            job = self.new_job(printer, {"job_id_cups": 2})
-            job.action_cancel()
-            cups.Connection.side_effect = None
-            self.assertEqual(cups.Connection().cancelJob.call_count, 0)
+        cups.Connection.side_effect = Exception
+        printer = self.new_printer()
+        job = self.new_job(printer, {"job_id_cups": 2})
+        job.action_cancel()
+        cups.Connection.side_effect = None
+        self.assertEqual(cups.Connection().cancelJob.call_count, 0)
 
-            self.assertEqual(len(logs.records), 3)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
-
-    @mock.patch(f"{model}.cups")
+    @mock.patch("%s.cups" % model)
     def test_cancel_job(self, cups):
         """It should catch any exception from CUPS and update status"""
         printer = self.new_printer()

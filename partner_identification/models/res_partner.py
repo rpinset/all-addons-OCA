@@ -6,7 +6,7 @@
 #        Antonio Espinosa <antonioea@antiun.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 
@@ -124,11 +124,12 @@ class ResPartner(models.Model):
             # Guard against writing wrong records.
             else:
                 raise ValidationError(
-                    self.env._(
-                        "This %(record_name)s has multiple IDs of this "
-                        "type (%(category_code)s), so a write via the "
-                        "%(field_name)s field is not possible. "
-                        "In order to fix this, please use the IDs tab.",
+                    _(
+                        "This {record_name} has multiple IDs of this "
+                        "type ({category_code}), so a write via the "
+                        "{field_name} field is not possible. "
+                        "In order to fix this, please use the IDs tab."
+                    ).format(
                         record_name=record._name,
                         category_code=category_code,
                         field_name=field_name,

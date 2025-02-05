@@ -10,9 +10,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestPartnerVATSubjected(AccountTestInvoicingCommon):
     @classmethod
-    @AccountTestInvoicingCommon.setup_country("ro")
     def setUpClass(cls):
-        super().setUpClass()
+        super().setUpClass(chart_template_ref="ro")
         cls.mainpartner = cls.env.ref("base.main_partner")
         cls.env.company.anglo_saxon_accounting = True
         cls.env.company.l10n_ro_accounting = True
@@ -33,9 +32,10 @@ class TestPartnerVAT(TestPartnerVATSubjected):
         self.mainpartner.onchange_l10n_ro_vat_subjected()
         self.assertEqual(self.mainpartner.vat, "4264242")
         # Check split vat with no country code in vat
-        vat_country, l10n_ro_vat_number = self.mainpartner._split_vat(
-            self.mainpartner.vat
-        )
+        (
+            vat_country,
+            l10n_ro_vat_number,
+        ) = self.mainpartner._split_vat_and_mapped_country(self.mainpartner.vat)
         self.assertEqual(vat_country, "ro")
         self.assertEqual(l10n_ro_vat_number, "4264242")
 

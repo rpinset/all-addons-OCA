@@ -2,4 +2,3 @@
 - Christihan Laurel \<<laurel@vauxoo.com>\>
 - [Binhex](https://binhex.cloud/):
   - Mario Luis \<<m.luis@binhex.cloud>\>
-- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`_

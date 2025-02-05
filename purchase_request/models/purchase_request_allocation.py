@@ -1,8 +1,6 @@
 # Copyright 2019 ForgeFlow, S.L.
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl-3.0)
 
-from markupsafe import Markup
-
 from odoo import _, api, fields, models
 
 
@@ -130,6 +128,7 @@ class PurchaseRequestAllocation(models.Model):
             message_data = self._prepare_message_data(po_line, request, allocated_qty)
             message = self._purchase_request_confirm_done_message_content(message_data)
             request.message_post(
-                body=Markup(message),
+                body=message,
                 subtype_id=self.env.ref("mail.mt_comment").id,
+                body_is_html=True,
             )

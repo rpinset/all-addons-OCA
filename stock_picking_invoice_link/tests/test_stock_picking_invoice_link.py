@@ -73,8 +73,7 @@ class TestStockPickingInvoiceLink(TestSaleCommon):
 
     @classmethod
     def setUpClass(cls, chart_template_ref=None):
-        super().setUpClass()
-        cls.setup_chart_template(chart_template_ref)
+        super().setUpClass(chart_template_ref=chart_template_ref)
         for _, i in cls.company_data.items():
             if "type" in i and i.type == "product":
                 cls._update_product_qty(i)
@@ -184,7 +183,7 @@ class TestStockPickingInvoiceLink(TestSaleCommon):
         inv_3 = inv_1.copy()
         inv_3.picking_ids |= pick_1
         result = pick_1.action_view_invoice()
-        self.assertEqual(result["views"][0][1], "list")
+        self.assertEqual(result["views"][0][1], "tree")
 
         # Cancel invoice and invoice
         inv_1.button_cancel()
@@ -237,7 +236,7 @@ class TestStockPickingInvoiceLink(TestSaleCommon):
         ).unlink()
         return_wiz.product_return_moves.quantity = 1.0
         return_wiz.product_return_moves.to_refund = True
-        res = return_wiz.action_create_returns()
+        res = return_wiz.create_returns()
         return_pick = self.env["stock.picking"].browse(res["res_id"])
         # Validate picking
         return_pick.move_ids.quantity = 1.0
@@ -366,7 +365,7 @@ class TestStockPickingInvoiceLink(TestSaleCommon):
         ).unlink()
         return_wiz.product_return_moves.quantity = 1.0
         return_wiz.product_return_moves.to_refund = True
-        res = return_wiz.action_create_returns()
+        res = return_wiz.create_returns()
         return_pick = self.env["stock.picking"].browse(res["res_id"])
         # Validate picking
         return_pick.move_ids.quantity = 1.0
@@ -381,7 +380,7 @@ class TestStockPickingInvoiceLink(TestSaleCommon):
                 }
             )
         )
-        action = wiz_invoice_refund.refund_moves()
+        action = wiz_invoice_refund.reverse_moves()
         invoice_refund = self.env["account.move"].browse(action["res_id"])
         inv_line_prod_del_refund = invoice_refund.invoice_line_ids.filtered(
             lambda line: line.product_id == self.prod_del

@@ -10,9 +10,8 @@ from .common import Common, environment
 # Use post_install to get all models loaded more info: odoo/odoo#13458
 @tagged("post_install", "-at_install")
 class TestCleanupPurgeFields(Common):
-    @classmethod
-    def setUpClass(self):
-        super().setUpClass()
+    def setUp(self):
+        super().setUp()
         with environment() as env:
             # create a nonexistent model
             self.model_name = "x_database.cleanup.test.field.model"
@@ -55,11 +54,3 @@ class TestCleanupPurgeFields(Common):
                     ]
                 )
             )
-
-    @classmethod
-    def tearDownClass(self):
-        super().tearDownClass()
-        with environment() as env:
-            model = env["ir.model"].search([("model", "=", self.model_name)])
-            if model:
-                model.unlink()

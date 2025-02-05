@@ -80,6 +80,7 @@ msgstr "Non creare ordine FSM"
 #. module: fieldservice_sale
 #. odoo-python
 #: code:addons/fieldservice_sale/models/sale_order.py:0
+#, python-format
 msgid "FSM Location must be set"
 msgstr "La località FSM deve essere impostata"
 
@@ -109,6 +110,7 @@ msgstr "Ordine assistenza sul campo generato da un elemento ordine di vendita"
 #. module: fieldservice_sale
 #. odoo-python
 #: code:addons/fieldservice_sale/models/sale_order.py:0
+#, python-format
 msgid "Field Service Order(s) Created: %s"
 msgstr "Ordine(i) assistenza sul campo creato(i): %s"
 
@@ -194,6 +196,7 @@ msgstr "Riga ordine di vendita"
 #. module: fieldservice_sale
 #. odoo-python
 #: code:addons/fieldservice_sale/models/fsm_order.py:0
+#, python-format
 msgid "Sales Orders"
 msgstr "Ordini di vendita"
 

@@ -1,4 +1,5 @@
 <odoo noupdate="1">
+
     <record id="badly_defined_need" model="mgmtsystem.nonconformity.cause">
         <field name="name">Badly defined need</field>
     </record>
@@ -38,4 +39,6 @@
     <record id="procedure_not_defined" model="mgmtsystem.nonconformity.cause">
         <field name="name">Procedure not defined</field>
     </record>
+
+
 </odoo>

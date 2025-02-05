@@ -6,7 +6,6 @@ from functools import partial
 from requests import Response
 
 from odoo.exceptions import UserError
-from odoo.tools.misc import mute_logger
 
 from fastapi import status
 
@@ -75,7 +74,6 @@ class FastAPIDemoCase(FastAPITransactionCase):
                         "error_message": "User Error",
                     },
                 )
-
         with self.assertRaisesRegex(NotImplementedError, "Bare Exception"):
             with self._create_test_client() as test_client:
                 test_client.get(
@@ -86,7 +84,6 @@ class FastAPIDemoCase(FastAPITransactionCase):
                     },
                 )
 
-    @mute_logger("odoo.addons.fastapi.tests.common")
     def test_exception_not_raised(self) -> None:
         with self._create_test_client(raise_server_exceptions=False) as test_client:
             response: Response = test_client.get(

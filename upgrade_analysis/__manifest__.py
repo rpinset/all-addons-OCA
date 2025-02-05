@@ -5,13 +5,12 @@
     "name": "Upgrade Analysis",
     "summary": "Performs a difference analysis between modules"
     " installed on two different Odoo instances",
-    "version": "18.0.1.3.0",
+    "version": "17.0.1.0.2",
     "category": "Migration",
     "author": "Therp BV, Opener B.V., GRAP, Odoo Community Association (OCA)",
     "maintainers": ["StefanRijnhart", "legalsylvain"],
     "website": "https://github.com/OCA/server-tools",
     "data": [
-        "templates/module_coverage_template.xml",
         "security/ir.model.access.csv",
         "views/menu.xml",
         "views/view_upgrade_comparison_config.xml",
@@ -23,7 +22,7 @@
     "installable": True,
     "depends": ["base"],
     "external_dependencies": {
-        "python": ["dataclasses", "odoorpc", "openupgradelib"],
+        "python": ["mako", "dataclasses", "odoorpc", "openupgradelib"],
     },
     "license": "AGPL-3",
 }

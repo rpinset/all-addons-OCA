@@ -11,8 +11,8 @@ msgstr ""
 "POT-Creation-Date: 2017-06-06 02:51+0000\n"
 "PO-Revision-Date: 2024-09-17 02:06+0000\n"
 "Last-Translator: Ignacio Buioli <ibuioli@gmail.com>\n"
-"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/"
-"teams/23907/es_AR/)\n"
+"Language-Team: Spanish (Argentina) (https://www.transifex.com/oca/teams/"
+"23907/es_AR/)\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,16 +76,8 @@ msgstr "Si está marcado, los nuevos mensajes requieren su atención."
 
 #. module: sql_request_abstract
 #: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__message_has_error
-#: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
-
-#. module: sql_request_abstract
-#: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__use_external_database
-msgid ""
-"If filled, the query will be executed against an external database, "
-"configured in Odoo main configuration file. "
-msgstr ""
 
 #. module: sql_request_abstract
 #: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__message_is_follower
@@ -95,6 +87,7 @@ msgstr "Es Seguidor"
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+#, python-format
 msgid "It is not allowed to execute a not checked request."
 msgstr "No está permitido ejecutar una solicitud no verificada."
 
@@ -106,6 +99,7 @@ msgstr "Gestor"
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+#, python-format
 msgid ""
 "Materialized View requires PostgreSQL 9.3 or greater but PostgreSQL %s is "
 "currently installed."
@@ -163,11 +157,6 @@ msgstr "Vista Previa de Resultados"
 #: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__query
 msgid "Query"
 msgstr "Consulta"
-
-#. module: sql_request_abstract
-#: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Error de Entrega de SMS"
 
 #. module: sql_request_abstract
 #: model_terms:ir.ui.view,arch_db:sql_request_abstract.view_sql_request_mixin_form
@@ -234,6 +223,7 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+#, python-format
 msgid ""
 "The SQL query is not valid:\n"
 "\n"
@@ -246,6 +236,7 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+#, python-format
 msgid "The query is not allowed because it contains unsafe word '%s'"
 msgstr ""
 "La consulta no está permitida porque contiene una palabra insegura '%s'"
@@ -253,13 +244,9 @@ msgstr ""
 #. module: sql_request_abstract
 #. odoo-python
 #: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
+#, python-format
 msgid "Unimplemented mode : '%s'"
 msgstr "Modo no implementado: '%s'"
-
-#. module: sql_request_abstract
-#: model:ir.model.fields,field_description:sql_request_abstract.field_sql_request_mixin__use_external_database
-msgid "Use External Database"
-msgstr ""
 
 #. module: sql_request_abstract
 #: model:res.groups,name:sql_request_abstract.group_sql_request_user
@@ -282,14 +269,6 @@ msgid "Website communication history"
 msgstr "Historial de comunicación del sitio web"
 
 #. module: sql_request_abstract
-#. odoo-python
-#: code:addons/sql_request_abstract/models/sql_request_mixin.py:0
-msgid ""
-"You can't use an external database as there are no such configuration about "
-"this. Please contact your Odoo administrator to solve this issue."
-msgstr ""
-
-#. module: sql_request_abstract
 #: model:ir.model.fields,help:sql_request_abstract.field_sql_request_mixin__query
 msgid ""
 "You can't use the following words: DELETE, DROP, CREATE, INSERT, ALTER, "
@@ -297,6 +276,9 @@ msgid ""
 msgstr ""
 "No puede usar las siguientes palabras: DELETE, DROP, CREATE, INSERT, ALTER, "
 "TRUNCATE, EXECUTE, UPDATE."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Error de Entrega de SMS"
 
 #~ msgid "Main Attachment"
 #~ msgstr "Adjunto Principal"

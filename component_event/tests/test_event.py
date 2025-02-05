@@ -79,8 +79,6 @@ class TestEventWorkContext(TestCase, MetaCase("DummyCase", (), {})):
     def test_env_work_on(self):
         """WorkContext propagated through work_on"""
         env = mock.MagicMock(name="env")
-        env.context = mock.MagicMock()
-        env.context.get = mock.MagicMock(return_value=False)
         collection = mock.MagicMock(name="collection")
         collection.env = env
         work = EventWorkContext(
@@ -100,8 +98,6 @@ class TestEventWorkContext(TestCase, MetaCase("DummyCase", (), {})):
     def test_collection_work_on(self):
         """WorkContext propagated through work_on"""
         env = mock.MagicMock(name="env")
-        env.context = mock.MagicMock()
-        env.context.get = mock.MagicMock(return_value=False)
         collection = mock.MagicMock(name="collection")
         collection.env = env
         work = EventWorkContext(
@@ -119,8 +115,6 @@ class TestEventWorkContext(TestCase, MetaCase("DummyCase", (), {})):
     def test_collection_work_on_collection(self):
         """WorkContext collection changed with work_on"""
         env = mock.MagicMock(name="env")
-        env.context = mock.MagicMock()
-        env.context.get = mock.MagicMock(return_value=False)
         collection = mock.MagicMock(name="collection")
         collection.env = env
         work = EventWorkContext(

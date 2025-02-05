@@ -32,4 +32,5 @@
         <field name="target">new</field>
         <field name="binding_model_id" ref="model_mrp_multi_level" />
     </record>
+
 </odoo>

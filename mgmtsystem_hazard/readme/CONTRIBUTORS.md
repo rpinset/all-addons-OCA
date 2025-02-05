@@ -1,4 +1,6 @@
-- Maxime Chambreuil \<<maxime.chambreuil@savoirfairelinux.com>\>
+- [Open Source Integrators](https://opensourceintegrators.com):
+    - Maxime Chambreuil \<<mchambreuil@opensourceintegrators.com>\>
+    - Daniel Reis \<<dreis@opensourceintegrators.com>\>
 - Loïc Lacroix \<<loic.lacroix@savoirfairelinux.com>\>
 - Nadège Grandjean \<<nadege.grandjean@outlook.be>\>
 - [Tecnativa](https://www.tecnativa.com):
@@ -6,4 +8,3 @@
 - [Guadaltech](https://www.guadaltech.es):
   - Fernando La Chica \<<fernando.lachica@guadaltech.es>\>
 - Yvan Dotet \<<yvan.dotet@logicasoft.eu>\>
-- \[Heliconia Solutions Pvt. Ltd.\](<https://www.heliconia.io>)

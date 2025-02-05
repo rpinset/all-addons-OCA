@@ -4,6 +4,8 @@
 
 from odoo import api, fields, models
 
+from odoo.addons.http_routing.models.ir_http import slugify
+
 
 class ServerEnvTechNameMixin(models.AbstractModel):
     """Provides a tech_name field to be used in server env vars as unique key.
@@ -70,5 +72,6 @@ class ServerEnvTechNameMixin(models.AbstractModel):
         if not vals.get("tech_name") and vals.get("name"):
             vals["tech_name"] = self._normalize_tech_name(vals["name"])
 
-    def _normalize_tech_name(self, name):
-        return self.env["ir.http"]._slugify(name).replace("-", "_")
+    @staticmethod
+    def _normalize_tech_name(name):
+        return slugify(name).replace("-", "_")

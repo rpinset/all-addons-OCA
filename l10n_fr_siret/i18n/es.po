@@ -78,12 +78,14 @@ msgstr "SIRET"
 #. module: l10n_fr_siret
 #. odoo-python
 #: code:addons/l10n_fr_siret/models/res_partner.py:0
+#, python-format
 msgid "SIRET '%s' is invalid."
 msgstr "SIRET '%s' es inválido."
 
 #. module: l10n_fr_siret
 #. odoo-python
 #: code:addons/l10n_fr_siret/models/res_partner.py:0
+#, python-format
 msgid ""
 "The NIC '{nic}' of partner '{partner_name}' is incorrect: it must have "
 "exactly 5 digits."
@@ -105,6 +107,7 @@ msgstr ""
 #. module: l10n_fr_siret
 #. odoo-python
 #: code:addons/l10n_fr_siret/models/res_partner.py:0
+#, python-format
 msgid ""
 "The SIREN '{siren}' of partner '{partner_name}' is incorrect: it must have "
 "exactly 9 digits."
@@ -115,6 +118,7 @@ msgstr ""
 #. module: l10n_fr_siret
 #. odoo-python
 #: code:addons/l10n_fr_siret/models/res_partner.py:0
+#, python-format
 msgid ""
 "The SIREN '{siren}' of partner '{partner_name}' is invalid: the checksum is "
 "wrong."
@@ -136,6 +140,7 @@ msgstr ""
 #. module: l10n_fr_siret
 #. odoo-python
 #: code:addons/l10n_fr_siret/models/res_partner.py:0
+#, python-format
 msgid ""
 "The SIRET '{siret}' of partner '{partner_name}' is invalid: the checksum is "
 "wrong."

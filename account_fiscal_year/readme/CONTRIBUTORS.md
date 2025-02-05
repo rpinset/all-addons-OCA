@@ -5,4 +5,3 @@
 - Simone Rubino \<<simone.rubino@agilebg.com>\>
 - [Pesol](https://www.pesol.es):
   - Pedro Evaristo Gonzalez Sanchez \<<pedro.gonzalez@pesol.es>\>
-- Salvatore Davide Rapisarda \<<sdrapisarda@gmail.com>\>

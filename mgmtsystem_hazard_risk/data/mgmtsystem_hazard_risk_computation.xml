@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
+
     <!-- risk_computation -->
 
     <record
@@ -51,4 +52,5 @@
             name="description"
         >Risk = Probability (A) + Severity (B) + Usage (C)</field>
     </record>
+
 </odoo>

@@ -20,4 +20,5 @@
             eval="[(4, ref('auditlog.group_auditlog_manager'))]"
         />
     </record>
+
 </odoo>

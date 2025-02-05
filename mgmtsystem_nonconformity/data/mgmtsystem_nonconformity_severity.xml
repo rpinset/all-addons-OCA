@@ -1,4 +1,5 @@
 <odoo noupdate="1">
+
     <record id="nonconformity_severity_maj" model="mgmtsystem.nonconformity.severity">
         <field name="name">Major</field>
         <field name="active" eval="True" />
@@ -13,4 +14,5 @@
         <field name="name">Unfounded</field>
         <field name="active" eval="True" />
     </record>
+
 </odoo>

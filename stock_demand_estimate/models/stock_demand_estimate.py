@@ -93,14 +93,14 @@ class StockDemandEstimate(models.Model):
             )
         )
 
-    @api.depends("date_from", "date_to", "product_id.name", "location_id.name")
-    def _compute_display_name(self):
+    def name_get(self):
+        res = []
         for rec in self:
-            name = (
-                f"{rec.date_from} - {rec.date_to}: {rec.product_id.name}"
-                f" - {rec.location_id.name}"
+            name = "{} - {}: {} - {}".format(
+                rec.date_from, rec.date_to, rec.product_id.name, rec.location_id.name
             )
-            rec.display_name = name
+            res.append((rec.id, name))
+        return res
 
     @api.onchange("manual_date_to")
     def _onchange_manual_date_to(self):

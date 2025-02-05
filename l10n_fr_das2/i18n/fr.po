@@ -29,6 +29,7 @@ msgstr "Une DAS2 existe déjà pour cette année !"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "A declaration file already exists. First, delete it via the attachments and "
 "then re-generate it."
@@ -110,6 +111,7 @@ msgstr "Remettre en brouillon"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Cannot delete declaration %s in done state."
 msgstr "Impossible de supprimer la déclaration %s qui est à l'état terminé."
 
@@ -128,6 +130,7 @@ msgstr "Société"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "Company '%(company)s' is configured in country '%(country)s'. The DAS2 is "
 "only for France and it's oversea territories."
@@ -138,6 +141,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "Company '%(company)s' is configured with currency '%(currency)s'. It should "
 "be EUR."
@@ -168,6 +172,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Country not set on company '%s'."
 msgstr "Pays non défini sur la société '%s'."
 
@@ -228,12 +233,14 @@ msgstr "Type DAS2"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "DAS2 file deleted."
 msgstr "Fichier DAS2 supprimé."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "DAS2 file generated. Encrypted with DGFiP's <b>%(encryption)s</b> PGP key."
 msgstr ""
@@ -246,6 +253,7 @@ msgstr "Ligne DAS2"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "DAS2 lines generated. "
 msgstr "Lignes DAS2 générées. "
 
@@ -287,6 +295,7 @@ msgstr "Droits d'inventeur"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "Failed to convert field '%(field_name)s' (partner %(partner)s) to integer."
 msgstr ""
@@ -296,6 +305,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "Field %(field_name)s (partner %(partner)s) has value %(value)s: it is bigger "
 "than the maximum size (%(size)d characters)."
@@ -362,7 +372,6 @@ msgstr "Si activé, de nouveaux messages nécessitent votre attention."
 
 #. module: l10n_fr_das2
 #: model:ir.model.fields,help:l10n_fr_das2.field_l10n_fr_das2__message_has_error
-#: model:ir.model.fields,help:l10n_fr_das2.field_l10n_fr_das2__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si activé, des messages ont une erreur d'envoi."
 
@@ -438,48 +447,56 @@ msgstr "Messages"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing APE on company '%s'."
 msgstr "APE manquant pour la société '%s'."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing Code Officiel Géographique on country '%s'."
 msgstr "Code officiel géographique manquant pour le pays '%s'."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing SIREN on company '%s'."
 msgstr "SIREN manquant pour la société '%s'."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing SIRET for french partner %s."
 msgstr "SIRET manquant pour le partenaire français %s."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing SIRET on company '%s'."
 msgstr "SIRET manquant pour la société '%s'."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing Street on company '%s'"
 msgstr "Rue manquante pour la société '%s'"
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing administrative contact."
 msgstr "Contact administratif manquant."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "Missing city on partner '%s'."
 msgstr "Ville manquante pour le partenaire '%s'."
 
@@ -556,6 +573,7 @@ msgstr "Nombre de messages en échec d'envoi"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "One of the lines has a length of %(length)d. All lines should have a length "
 "of 672. Line: %(line_content)s."
@@ -581,6 +599,7 @@ msgstr "Journaux de paiement"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "Payment dated <b>%(date)s</b> in journal <b>%(journal)s</b>: %(amount)s "
 "(journal entry %(move_name)s)"
@@ -622,13 +641,9 @@ msgstr "SIRET"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
-msgid "SIRET '%(siret)s' of supplier '%(partner)s' is invalid."
-msgstr ""
-
-#. module: l10n_fr_das2
-#: model:ir.model.fields,field_description:l10n_fr_das2.field_l10n_fr_das2__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Erreur d'envoi du SMS"
+#, python-format
+msgid "SIRET '%s' is invalid."
+msgstr "Le SIRET '%s' est invalide."
 
 #. module: l10n_fr_das2
 #: model:ir.model.constraint,message:l10n_fr_das2.constraint_l10n_fr_das2_line_partner_parent_unique
@@ -667,18 +682,21 @@ msgstr "Sur frais réels"
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "The DAS2 has no lines."
 msgstr "La DAS2 n'a pas de lignes."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "The email is not set on the administrative contact partner '%s'."
 msgstr "E-mail manquant sur le partenaire contact administratif '%s'."
 
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "The field '%(field_name)s' (partner %(partner)s) is empty or 0. It should "
 "have a non-null value."
@@ -689,6 +707,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid ""
 "The following partners are not configured for DAS2 but they have expenses in "
 "some accounts that indicate they should probably be configured for DAS2:<ul>"
@@ -700,6 +719,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "The phone number is not set on the administrative contact partner '%s'."
 msgstr ""
 "Le numéro de téléphone n'est pas défini sur le partenaire contact "
@@ -708,6 +728,7 @@ msgstr ""
 #. module: l10n_fr_das2
 #. odoo-python
 #: code:addons/l10n_fr_das2/models/l10n_fr_das2.py:0
+#, python-format
 msgid "There are no partners configured for DAS2."
 msgstr "Aucun partenaire n'est configuré pour la DAS2."
 
@@ -773,6 +794,7 @@ msgstr "Historique des échanges sur le site Web"
 msgid "Year"
 msgstr "Année"
 
+#, python-format
 #~ msgid ""
 #~ "A special character in the DAS2 file is not in the latin1 table. Please "
 #~ "locate this special character and replace it by a standard character and "
@@ -782,9 +804,8 @@ msgstr "Année"
 #~ "Veuillez localiser ce caractère spécial et le remplacer par un caractère "
 #~ "standard et réessayer."
 
-#, python-format
-#~ msgid "SIRET '%s' is invalid."
-#~ msgstr "Le SIRET '%s' est invalide."
+#~ msgid "SMS Delivery error"
+#~ msgstr "Erreur d'envoi du SMS"
 
 #~ msgid "Companies"
 #~ msgstr "Sociétés"

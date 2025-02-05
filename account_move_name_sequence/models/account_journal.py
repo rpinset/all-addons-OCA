@@ -7,7 +7,7 @@
 
 import logging
 
-from odoo import Command, api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
@@ -30,8 +30,7 @@ class AccountJournal(models.Model):
         copy=False,
         check_company=True,
         domain="[('company_id', '=', company_id)]",
-        help="This sequence will be used to generate the journal entry number for "
-        "refunds.",
+        help="This sequence will be used to generate the journal entry number for refunds.",
     )
     # Redefine the default to True as <=v13.0
     refund_sequence = fields.Boolean(default=True)
@@ -48,14 +47,14 @@ class AccountJournal(models.Model):
                 and journal.refund_sequence_id == journal.sequence_id
             ):
                 raise ValidationError(
-                    self.env._(
+                    _(
                         "On journal '%s', the same sequence is used as "
                         "Entry Sequence and Credit Note Entry Sequence.",
                         journal.display_name,
                     )
                 )
             if journal.sequence_id and not journal.sequence_id.company_id:
-                msg = self.env._(
+                msg = _(
                     "The company is not set on sequence '%(sequence)s' configured on "
                     "journal '%(journal)s'.",
                     sequence=journal.sequence_id.display_name,
@@ -63,7 +62,7 @@ class AccountJournal(models.Model):
                 )
                 raise ValidationError(msg)
             if journal.refund_sequence_id and not journal.refund_sequence_id.company_id:
-                msg = self.env._(
+                msg = _(
                     "The company is not set on sequence '%(sequence)s' configured as "
                     "credit note sequence of journal '%(journal)s'.",
                     sequence=journal.refund_sequence_id.display_name,
@@ -90,8 +89,7 @@ class AccountJournal(models.Model):
         prefix = "{}{}/%(range_year)s/".format(refund and "R" or "", code)
         seq_vals = {
             "name": "{}{}".format(
-                vals.get("name", self.env._("Sequence")),
-                refund and " " + self.env._("Refund") or "",
+                vals.get("name", _("Sequence")), refund and " " + _("Refund") or ""
             ),
             "company_id": vals.get("company_id") or self.env.company.id,
             "implementation": "no_gap",
@@ -191,15 +189,15 @@ class AccountJournal(models.Model):
                     else "''"
                 )
                 select_max_number = (
-                    f"MAX(split_part(name, '{prefixes[-1]}', "
-                    f"{prefixes.count(prefixes[-1]) + 1}):"
-                    f":INTEGER) AS max_number"
+                    "MAX(split_part(name, '{}', {})::INTEGER) AS max_number".format(
+                        prefixes[-1],
+                        prefixes.count(prefixes[-1]) + 1,
+                    )
                 )
                 query = (
-                    f"SELECT {select_year}, {select_month}, "
-                    f"{select_max_number} FROM account_move "
-                    f"WHERE name LIKE %s AND journal_id=%s GROUP BY 1,2"
-                )
+                    "SELECT {}, {}, {} FROM account_move "
+                    "WHERE name LIKE %s AND journal_id=%s GROUP BY 1,2"
+                ).format(select_year, select_month, select_max_number)
 
                 # It is not using user input
                 # pylint: disable=sql-injection
@@ -236,12 +234,14 @@ class AccountJournal(models.Model):
                         date_from = fields.Date.to_date(f"{year}-1-1")
                         date_to = fields.Date.to_date(f"{year}-12-31")
                     seq_vals["date_range_ids"].append(
-                        Command.create(
+                        (
+                            0,
+                            0,
                             {
                                 "date_from": date_from,
                                 "date_to": date_to,
                                 "number_next_actual": max_number + 1,
-                            }
+                            },
                         )
                     )
                 return seq_vals

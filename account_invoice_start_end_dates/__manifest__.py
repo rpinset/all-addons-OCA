@@ -5,7 +5,7 @@
 
 {
     "name": "Account Invoice Start End Dates",
-    "version": "18.0.1.0.0",
+    "version": "17.0.1.2.0",
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "summary": "Adds start/end dates on invoice/move lines",
@@ -17,7 +17,6 @@
         "views/account_move.xml",
         "views/account_move_line.xml",
         "views/product_template.xml",
-        "reports/account_invoice_report_view.xml",
     ],
     "demo": ["demo/product_demo.xml"],
     "installable": True,

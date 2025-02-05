@@ -3,7 +3,7 @@
 
 import logging
 
-from odoo.tools import SQL, sql
+from odoo.tools import sql
 
 _logger = logging.getLogger(__name__)
 
@@ -16,29 +16,26 @@ def pre_init_hook(env):  # pragma: nocover
         _logger.info("Recompute volume on product.product")
         # get default m3 uom
         env.cr.execute(
-            SQL("""
+            """
             SELECT res_id
             FROM ir_model_data
             WHERE module = 'uom' AND name = 'product_uom_cubic_meter'
-            """)
+            """
         )
         m3_uom_id = env.cr.fetchone()[0]
         # get uom factor
         env.cr.execute(
-            SQL(
-                """
+            """
             SELECT factor
             FROM uom_uom
             WHERE id = %s
             """,
-                m3_uom_id,
-            )
+            (m3_uom_id,),
         )
         m3_uom_factor = env.cr.fetchone()[0]
         # update volume where volume_uom_id is not null and not m3
         env.cr.execute(
-            SQL(
-                """
+            """
             UPDATE product_product
             SET volume = product_product.volume / product_uom.factor  * %s
             FROM uom_uom product_uom,
@@ -47,15 +44,12 @@ def pre_init_hook(env):  # pragma: nocover
                 AND pt.id = product_product.product_tmpl_id
                 AND volume_uom_id IS NOT NULL AND pt.volume_uom_id != %s
             """,
-                m3_uom_factor,
-                m3_uom_id,
-            )
+            (m3_uom_factor, m3_uom_id),
         )
         _logger.info(f"{env.cr.rowcount} product_product rows updated")
         # update product_template with 1 product_product
         env.cr.execute(
-            SQL(
-                """
+            """
             UPDATE product_template
             SET Volume = unique_product.volume
             FROM (
@@ -68,37 +62,33 @@ def pre_init_hook(env):  # pragma: nocover
             WHERE product_template.id = unique_product.product_tmpl_id
             AND product_template.volume_uom_id != %s
             """,
-                m3_uom_id,
-            )
+            (m3_uom_id,),
         )
         _logger.info(f"{env.cr.rowcount} product_template rows updated")
     if sql.column_exists(env.cr, "product_template", "weight_uom_id"):
         _logger.info("Recompute weight on product.product")
         # get default kg uom
         env.cr.execute(
-            SQL("""
+            """
             SELECT res_id
             FROM ir_model_data
             WHERE module = 'uom' AND name = 'product_uom_kgm'
-            """)
+            """
         )
         kg_uom_id = env.cr.fetchone()[0]
         # get uom factor
         env.cr.execute(
-            SQL(
-                """
+            """
             SELECT factor
             FROM uom_uom
             WHERE id = %s
             """,
-                kg_uom_id,
-            )
+            (kg_uom_id,),
         )
         kg_uom_factor = env.cr.fetchone()[0]
         # update weight where weight_uom_id is not null and not kg
         env.cr.execute(
-            SQL(
-                """
+            """
             UPDATE product_product
             SET weight = product_product.weight / product_uom.factor  * %s
             FROM uom_uom product_uom, product_template pt
@@ -106,15 +96,12 @@ def pre_init_hook(env):  # pragma: nocover
                 AND pt.id = product_product.product_tmpl_id
                 AND weight_uom_id IS NOT NULL AND pt.weight_uom_id != %s
             """,
-                kg_uom_factor,
-                kg_uom_id,
-            )
+            (kg_uom_factor, kg_uom_id),
         )
         _logger.info(f"{env.cr.rowcount} product_product rows updated")
         # update product_template with 1 product_product
         env.cr.execute(
-            SQL(
-                """
+            """
             UPDATE product_template
             SET weight = unique_product.weight
             FROM (
@@ -127,7 +114,6 @@ def pre_init_hook(env):  # pragma: nocover
             WHERE product_template.id = unique_product.product_tmpl_id
             AND product_template.weight_uom_id != %s
             """,
-                kg_uom_id,
-            )
+            (kg_uom_id,),
         )
         _logger.info(f"{env.cr.rowcount} product_template rows updated")

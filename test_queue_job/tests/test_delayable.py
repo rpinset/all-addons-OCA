@@ -2,9 +2,6 @@
 # Copyright 2019 Guewen Baconnier
 # license lgpl-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
-import gc
-import logging
-
 import odoo.tests.common as common
 
 from odoo.addons.queue_job.delay import (
@@ -282,23 +279,20 @@ class TestDelayable(common.TransactionCase):
         )
 
     def test_log_not_delayed(self):
-        with self.assertLogs(level=logging.WARNING) as test:
+        logger_name = "odoo.addons.queue_job"
+        with self.assertLogs(logger_name, level="WARN") as test:
             # When a Delayable never gets a delay() call,
             # when the GC collects it and calls __del__, a warning
-            # will be displayed.
+            # will be displayed. We cannot test this is a scenario
+            # using the GC as it isn't predictable. Call __del__
+            # directly
             node = self.job_node(1)
+            node.__del__()
             expected = (
                 "WARNING:odoo.addons.queue_job.delay:Delayable "
                 "Delayable(test.queue.job().testing_method((1,), {}))"
                 " was prepared but never delayed"
             )
-            self.assertFalse(node._generated_job)
-
-            # Remove reference
-            del node
-            # Collect garbage using gc
-            gc.collect()
-
             self.assertEqual(test.output, [expected])
 
     def test_delay_job_already_exists(self):

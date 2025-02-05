@@ -3,7 +3,7 @@
 
 import logging
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
@@ -17,7 +17,7 @@ class IrCron(models.Model):
         for item in self:
             if item in item.mutually_exclusive_cron_ids:
                 raise ValidationError(
-                    self.env._(
+                    _(
                         "You can not mutually exclude a scheduled actions with "
                         "itself."
                     )
@@ -50,7 +50,8 @@ class IrCron(models.Model):
             lock_cr.execute(
                 """SELECT *
                                FROM ir_cron
-                               WHERE active
+                               WHERE numbercall != 0
+                                  AND active
                                   AND id IN %s
                                FOR UPDATE NOWAIT""",
                 (locked_ids,),
@@ -66,5 +67,5 @@ class IrCron(models.Model):
             res = super()._process_job(db, cron_cr, job)
         finally:
             locked_crons.close()
-            _logger.debug("released blocks for cron job %s", job["cron_name"])
+            _logger.debug("released blocks for cron job %s" % job["cron_name"])
         return res

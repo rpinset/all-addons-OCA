@@ -2,7 +2,6 @@
 # Copyright 2014-2023 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import Command
 from odoo.tests.common import TransactionCase
 
 from .. import post_init_hook
@@ -31,7 +30,7 @@ class TestInvoiceRefundLinkBase(TransactionCase):
                 "code": "TESTACC",
                 "account_type": "income",
                 "deprecated": False,
-                "company_ids": [Command.link(cls.env.user.company_id.id)],
+                "company_id": cls.env.user.company_id.id,
             }
         )
         cls.journal = cls.env["account.journal"].create(

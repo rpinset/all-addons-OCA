@@ -35,6 +35,7 @@ class MessageSPV(models.Model):
         string="Type",
     )  # tip
     date = fields.Datetime()  # data_creare
+    invoice_date = fields.Date()  # data_factura
     details = fields.Char()  # detalii
     error = fields.Text()  # eroare
     message = fields.Text()  # mesaj
@@ -77,7 +78,7 @@ class MessageSPV(models.Model):
 
     _sql_constraints = [("unique_name", "unique(name)", "Message ID must be unique.")]
 
-    @api.onchange("invoice_id")
+    @api.onchange("invoice_id", "invoice_id.state")
     def _onchange_invoice_id(self):
         for message in self:
             if message.invoice_id:
@@ -181,6 +182,11 @@ class MessageSPV(models.Model):
             if ref_node is not None:
                 ref = ref_node.text
 
+            invoice_date_node = xml_tree.find("./{*}IssueDate")
+            invoice_date = message.invoice_date
+            if invoice_date_node is not None:
+                invoice_date = invoice_date_node.text
+
             currency = message.currency_id
             currency_node = xml_tree.find("./{*}DocumentCurrencyCode")
             if currency_node is not None:
@@ -198,8 +204,8 @@ class MessageSPV(models.Model):
                 amount = float(amount_note.text)
 
             xml_tag_credit_note = (
-                "{urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2}CreditNote"  # noqa
-            )
+                "{urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2}CreditNote"
+            )  # noqa
             if xml_tree.tag == xml_tag_credit_note:
                 amount = -1 * amount
 
@@ -208,6 +214,7 @@ class MessageSPV(models.Model):
                     "attachment_xml_id": attachment_xml.id,
                     "ref": ref,
                     "amount": amount,
+                    "invoice_date": invoice_date,
                     "currency_id": currency.id or message.currency_id.id,
                 }
             )
@@ -217,7 +224,7 @@ class MessageSPV(models.Model):
         try:
             xml_tree = etree.fromstring(content)
         except Exception as e:
-            _logger.exception(f"Error when converting the xml content to etree: {e}")
+            _logger.exception("Error when converting the xml content to etree: %s" % e)
             return to_process
         if len(xml_tree):
             to_process.append(
@@ -282,7 +289,18 @@ class MessageSPV(models.Model):
                 )
                 if not edi_doc:
                     continue
-                message.write({"invoice_id": edi_doc.invoice_id.id})
+                message.write(
+                    {
+                        "invoice_id": edi_doc.invoice_id.id,
+                    }
+                )
+                if not edi_doc.key_loading:
+                    edi_doc.write(
+                        {
+                            "key_loading": message.request_id,
+                            "state": "invoice_sent",
+                        }
+                    )
                 domain = [
                     ("res_model", "=", "account.move"),
                     (
@@ -329,7 +347,7 @@ class MessageSPV(models.Model):
                     move_type = ("out_invoice", "out_refund")
 
                 domain = [
-                    ("partner_id", "=", message.partner_id.id),
+                    ("commercial_partner_id", "=", message.partner_id.id),
                     ("ref", "=", message.ref),
                     ("move_type", "in", move_type),
                 ]
@@ -376,7 +394,7 @@ class MessageSPV(models.Model):
     def create_invoice(self):
         self.get_partner()
         for message in self.filtered(lambda m: not m.invoice_id):
-            if not message.message_type == "in_invoice":
+            if message.message_type not in ("in_invoice", "in_receipt"):
                 continue
             message.get_invoice_from_move()
             if message.invoice_id:
@@ -407,9 +425,13 @@ class MessageSPV(models.Model):
             exist_invoice = move_obj.search(
                 [
                     ("ref", "=", new_invoice.ref),
-                    ("move_type", "=", "in_invoice"),
+                    ("move_type", "in", ("in_invoice", "in_receipt")),
                     ("state", "=", "posted"),
-                    ("partner_id", "=", new_invoice.partner_id.id),
+                    (
+                        "commercial_partner_id",
+                        "=",
+                        new_invoice.commercial_partner_id.id,
+                    ),
                     ("id", "!=", new_invoice.id),
                 ],
                 limit=1,

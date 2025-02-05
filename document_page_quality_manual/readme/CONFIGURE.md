@@ -1,5 +1,4 @@
-To edit the quality manual template:
+To enter your work instruction template, you need to:
 
-- Go to Management Systems \> Configuration \> Categories
-- Select the Quality Manual category
-- Edit the content
+- go to Management Systems \> Configuration \> Categories
+- select the Work Instructions category and edit the template

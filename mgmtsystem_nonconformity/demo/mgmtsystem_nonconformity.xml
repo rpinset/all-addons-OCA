@@ -1,4 +1,5 @@
 <odoo>
+
     <record id="demo_nonconformity" model="mgmtsystem.nonconformity">
         <field name="partner_id" ref="base.res_partner_3" />
         <field name="create_date">2010-12-03</field>
@@ -24,4 +25,5 @@
             eval="[(6, 0, [ref('mgmtsystem_action.demo_immediate'), ref('mgmtsystem_action.demo_corrective'), ref('mgmtsystem_action.demo_preventive')])]"
         />
     </record>
+
 </odoo>

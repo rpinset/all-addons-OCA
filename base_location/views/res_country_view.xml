@@ -21,7 +21,9 @@
                     type="action"
                     context="{'default_country_id': id, 'search_default_country_id': id}"
                     string="Zips"
-                />
+                >
+
+                </button>
             </xpath>
         </field>
     </record>

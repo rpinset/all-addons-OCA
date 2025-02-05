@@ -17,25 +17,6 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. module: upgrade_analysis
-#: model_terms:ir.ui.view,arch_db:upgrade_analysis.module_coverage
-msgid "-&gt;"
-msgstr ""
-
-#. module: upgrade_analysis
-#: model_terms:ir.ui.view,arch_db:upgrade_analysis.module_coverage
-msgid ""
-"============================\n"
-"\n"
-".. include:: coverage_legend.rst\n"
-"\n"
-"+---------------------------------------------------+----------------------"
-"+-------------------------------------------------+\n"
-"| Module                                            | Status               + "
-"Extra Information                               |\n"
-"+===================================================+======================+=================================================+"
-msgstr ""
-
-#. module: upgrade_analysis
 #: model_terms:ir.ui.view,arch_db:upgrade_analysis.view_upgrade_install_wizard_form
 msgid "All Modules"
 msgstr "Tous les modules"
@@ -84,6 +65,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/wizards/upgrade_generate_record_wizard.py:0
+#, python-format
 msgid "Cannot seem to install or upgrade modules %s"
 msgstr ""
 
@@ -111,6 +93,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/models/upgrade_comparison_config.py:0
+#, python-format
 msgid ""
 "Connection failed.\n"
 "\n"
@@ -125,6 +108,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/models/upgrade_comparison_config.py:0
+#, python-format
 msgid "Could not connect the Odoo server at %(server)s:%(port)s"
 msgstr ""
 
@@ -303,11 +287,6 @@ msgid "Module"
 msgstr ""
 
 #. module: upgrade_analysis
-#: model_terms:ir.ui.view,arch_db:upgrade_analysis.module_coverage
-msgid "Module coverage"
-msgstr ""
-
-#. module: upgrade_analysis
 #: model:ir.model.fields,field_description:upgrade_analysis.field_upgrade_install_wizard__module_ids
 msgid "Modules"
 msgstr ""
@@ -337,6 +316,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/models/upgrade_record.py:0
+#, python-format
 msgid "No manifest found in %(addon_dir)s"
 msgstr ""
 
@@ -439,6 +419,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/models/upgrade_analysis.py:0
+#, python-format
 msgid "Unexpected root Element: %(root)s in file: %(file)s"
 msgstr ""
 
@@ -517,6 +498,7 @@ msgstr ""
 #. module: upgrade_analysis
 #. odoo-python
 #: code:addons/upgrade_analysis/models/upgrade_comparison_config.py:0
+#, python-format
 msgid ""
 "You are correctly connected to the server %(server)s (version %(version)s) "
 "with the user %(user_name)s"

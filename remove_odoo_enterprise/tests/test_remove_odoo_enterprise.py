@@ -34,7 +34,7 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
-        query = "//widget[@name='mobile_apps_funnel']"
+        query = "//setting[@id='appstore']"
         for item in doc.xpath(query):
             self.assertTrue(item.attrib["invisible"])
 
@@ -48,6 +48,6 @@ class TestRemoveOdooEnterprise(common.TransactionCase):
         view = conf.get_views([[False, "form"]])["views"]["form"]
         doc = etree.XML(view["arch"])
 
-        query = "//widget[@name='mobile_apps_funnel']"
+        query = "//setting[@id='appstore']"
         for item in doc.xpath(query):
             self.assertNotIn("invisible", item.attrib)

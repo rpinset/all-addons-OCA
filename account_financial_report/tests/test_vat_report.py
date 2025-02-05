@@ -6,7 +6,8 @@ import time
 from datetime import date
 
 from odoo import fields
-from odoo.tests import Form, tagged
+from odoo.tests import tagged
+from odoo.tests.common import Form
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -46,8 +47,8 @@ class TestVATReport(AccountTestInvoicingCommon):
         return rslt
 
     @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
         cls.env = cls.env(
             context=dict(
                 cls.env.context,
@@ -67,7 +68,7 @@ class TestVATReport(AccountTestInvoicingCommon):
         cls.expense_account = cls.company_data["default_account_expense"]
         cls.tax_account = cls.env["account.account"].search(
             [
-                ("company_ids", "in", [cls.company.id]),
+                ("company_id", "=", cls.company.id),
                 (
                     "account_type",
                     "=",

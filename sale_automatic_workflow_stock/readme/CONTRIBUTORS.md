@@ -10,4 +10,3 @@
 - Thomas Fossoul \<<thomas@niboo.com>\>
 - Silvija Butko \<<silvija@focusate.eu>\>
 - Tri Doan \<\<<tridm@trobz.com>\>\>
-- Chau Le \<\<<chaulb@trobz.com>\>\>

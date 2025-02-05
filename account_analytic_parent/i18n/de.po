@@ -22,12 +22,14 @@ msgstr ""
 #. module: account_analytic_parent
 #. odoo-python
 #: code:addons/account_analytic_parent/models/account_analytic_account.py:0
+#, python-format
 msgid "%(name)s - %(partner)s"
 msgstr ""
 
 #. module: account_analytic_parent
 #. odoo-python
 #: code:addons/account_analytic_parent/models/account_analytic_account.py:0
+#, python-format
 msgid "%(parent)s / %(own)s"
 msgstr ""
 
@@ -126,6 +128,7 @@ msgstr ""
 #. module: account_analytic_parent
 #. odoo-python
 #: code:addons/account_analytic_parent/models/account_analytic_account.py:0
+#, python-format
 msgid "Please activate first parent account %s"
 msgstr ""
 
@@ -180,5 +183,6 @@ msgstr ""
 #. module: account_analytic_parent
 #. odoo-python
 #: code:addons/account_analytic_parent/models/account_analytic_account.py:0
+#, python-format
 msgid "You can not create recursive analytic accounts."
 msgstr "Sie dürfen Kostenstellen nicht rekursiv anlegen."

@@ -4,11 +4,10 @@
 The demo router is a router that demonstrates how to use the fastapi
 integration with odoo.
 """
-
 from typing import Annotated
 
 from psycopg2 import errorcodes
-from psycopg2.errors import SerializationFailure
+from psycopg2.errors import OperationalError
 
 from odoo.api import Environment
 from odoo.exceptions import AccessError, MissingError, UserError, ValidationError
@@ -67,7 +66,7 @@ async def get_lang(env: Annotated[Environment, Depends(odoo_env)]):
 
 @router.get("/demo/who_ami")
 async def who_ami(
-    partner: Annotated[Partner, Depends(authenticated_partner)],
+    partner: Annotated[Partner, Depends(authenticated_partner)]
 ) -> DemoUserInfo:
     """Who am I?
 
@@ -138,7 +137,7 @@ async def retrying_post(
     return JSONResponse(content={"retries": tryno, "file": file.decode("utf-8")})
 
 
-class FakeConcurrentUpdateError(SerializationFailure):
+class FakeConcurrentUpdateError(OperationalError):
     @property
     def pgcode(self):
         return errorcodes.SERIALIZATION_FAILURE

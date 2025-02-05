@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="base.res_config_settings_view_form" />
         <field name="arch" type="xml">
             <form position="inside">
-                <field name="is_l10n_ro_record" invisible="1" />
+
                 <field
                     name="country_code"
                     invisible="1"
@@ -252,7 +252,7 @@
                                 </div>
                                 <div class="text-muted mt16">
                                     Select a service product that will be used in landed cost to register price differences.<br
-                                />An expense account needs to be set on product or product category.
+                                    />An expense account needs to be set on product or product category.
                                 </div>
                             </div>
                         </setting>

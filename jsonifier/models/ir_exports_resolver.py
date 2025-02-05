@@ -6,18 +6,13 @@ from odoo.tools.safe_eval import safe_eval
 
 help_message = [
     "Compute the result from 'value' by setting the variable 'result'.",
-    "\n" "For fields resolvers:",
-    ":param record: the record",
+    "For fields resolvers:",
     ":param name: name of the field",
     ":param value: value of the field",
     ":param field_type: type of the field",
-    "\n" "For global resolvers:",
+    "For global resolvers:",
     ":param value: JSON dict",
     ":param record: the record",
-    "\n"
-    "In both types, you can override the final json key."
-    "\nTo achieve this, simply return a dict like: "
-    "\n{'result': {'_value': $value, '_json_key': $new_json_key}}",
 ]
 
 
@@ -47,7 +42,6 @@ class FieldResolver(models.Model):
         else:  # param is a field
             for record in records:
                 values = {
-                    "record": record,
                     "value": record[param.name],
                     "name": param.name,
                     "field_type": param.type,

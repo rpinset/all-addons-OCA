@@ -22,8 +22,9 @@ msgstr ""
 #. module: base_location_geonames_import
 #. odoo-python
 #: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
-msgid "%s could not be deleted"
-msgstr ""
+#, python-format
+msgid "%d could not be deleted %"
+msgstr "%d no pudo ser borrado %"
 
 #. module: base_location_geonames_import
 #: model_terms:ir.ui.view,arch_db:base_location_geonames_import.city_zip_geonames_import_form
@@ -96,6 +97,7 @@ msgstr "Columna Nombre Provincia Geonames"
 #. module: base_location_geonames_import
 #. odoo-python
 #: code:addons/base_location_geonames_import/wizard/geonames_import.py:0
+#, python-format
 msgid "Got an error %d when trying to download the file %s."
 msgstr "Se obtuvo un error %d cuando se descargaba el archivo %s."
 
@@ -120,6 +122,11 @@ msgstr "Importar códigos postales desde Geonames"
 #: model_terms:ir.ui.view,arch_db:base_location_geonames_import.city_zip_geonames_import_form
 msgid "Import from Geonames"
 msgstr "Importar de GeoNames"
+
+#. module: base_location_geonames_import
+#: model:ir.model.fields,field_description:base_location_geonames_import.field_city_zip_geonames_import____last_update
+msgid "Last Modified on"
+msgstr "Modificado por última vez el"
 
 #. module: base_location_geonames_import
 #: model:ir.model.fields,field_description:base_location_geonames_import.field_city_zip_geonames_import__write_uid
@@ -155,13 +162,6 @@ msgstr "Todo mayúsculas"
 #: model_terms:ir.ui.view,arch_db:base_location_geonames_import.city_zip_geonames_import_form
 msgid "geonames.org"
 msgstr "geonames.org"
-
-#, python-format
-#~ msgid "%d could not be deleted %"
-#~ msgstr "%d no pudo ser borrado %"
-
-#~ msgid "Last Modified on"
-#~ msgstr "Modificado por última vez el"
 
 #~ msgid ""
 #~ "The country code inside the file (%s) doesn't correspond to the selected "

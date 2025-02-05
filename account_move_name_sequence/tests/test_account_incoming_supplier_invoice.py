@@ -10,8 +10,8 @@ class TestAccountIncomingSupplierInvoice(AccountTestInvoicingCommon):
     """Testing creating account move fetching mail.alias"""
 
     @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
 
         cls.env["ir.config_parameter"].sudo().set_param(
             "mail.catchall.domain", "test-company.odoo.com"
@@ -60,24 +60,13 @@ class TestAccountIncomingSupplierInvoice(AccountTestInvoicingCommon):
             "message_id": "message-id-dead-beef",
             "subject": "Incoming bill",
             "from": f"{self.supplier_partner.name} <{self.supplier_partner.email}>",
-            "to": f"{self.journal.alias_id.alias_name}@"
-            f"{self.journal.alias_id.alias_domain}",
+            "to": f"{self.journal.alias_id.alias_name}@{self.journal.alias_id.alias_domain}",
             "body": "You know, that thing that you bought.",
             "attachments": [b"Hello, invoice"],
         }
 
-        invoice = (
-            self.env["account.move"]
-            .with_context(
-                tracking_disable=False,
-                mail_create_nolog=False,
-                mail_create_nosubscribe=False,
-                mail_notrack=False,
-            )
-            .message_new(
-                message_parsed,
-                {"move_type": "in_invoice", "journal_id": self.journal.id},
-            )
+        invoice = self.env["account.move"].message_new(
+            message_parsed, {"move_type": "in_invoice", "journal_id": self.journal.id}
         )
 
         message_ids = invoice.message_ids

@@ -5,7 +5,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="delivery.view_order_form_with_carrier" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='order_line']/list" position="attributes">
+            <xpath expr="//field[@name='order_line']/tree" position="inside">
+                <field name="is_free_delivery" column_invisible="True" />
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree" position="attributes">
                 <attribute name="decoration-muted">is_free_delivery</attribute>
             </xpath>
         </field>

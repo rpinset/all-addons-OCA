@@ -7,7 +7,9 @@
     "countries": ["ro"],
     "summary": "Romania - Mesaje SPV",
     "depends": [
+        # "l10n_ro_account_anaf_sync",
         "l10n_ro_edi",
+        "l10n_ro_efactura",
         "account_edi",
     ],
     "data": [
@@ -18,7 +20,7 @@
         "views/message_spv_view.xml",
     ],
     "license": "AGPL-3",
-    "version": "18.0.1.3.0",
+    "version": "17.0.1.24.0",
     "author": "Terrabit," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-romania",
     "installable": True,

@@ -1,6 +1,7 @@
+/** @odoo-module **/
+
 import {download} from "@web/core/network/download";
 import {registry} from "@web/core/registry";
-import {user} from "@web/core/user";
 
 registry
     .category("ir.actions.report handlers")
@@ -20,7 +21,9 @@ registry
                     url += `/${actionContext.active_ids.join(",")}`;
                 }
                 if (type === "xlsx") {
-                    const context = encodeURIComponent(JSON.stringify(user.context));
+                    const context = encodeURIComponent(
+                        JSON.stringify(env.services.user.context)
+                    );
                     url += `?context=${context}`;
                 }
             }
@@ -30,7 +33,7 @@ registry
                     url: "/report/download",
                     data: {
                         data: JSON.stringify([url, action.report_type]),
-                        context: JSON.stringify(user.context),
+                        context: JSON.stringify(env.services.user.context),
                     },
                 });
             } finally {

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-15 23:09+0000\n"
-"PO-Revision-Date: 2025-02-03 11:06+0000\n"
+"PO-Revision-Date: 2024-02-04 19:37+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #. module: account_invoice_start_end_dates
 #: model:product.template,name:account_invoice_start_end_dates.product_insurance_contract_demo_product_template
@@ -25,12 +25,6 @@ msgid "Car Insurance"
 msgstr "Assicurazione auto"
 
 #. module: account_invoice_start_end_dates
-#: model_terms:ir.ui.view,arch_db:account_invoice_start_end_dates.product_template_form_view
-msgid "Cut-offs"
-msgstr "Competenze"
-
-#. module: account_invoice_start_end_dates
-#: model:ir.model.fields,field_description:account_invoice_start_end_dates.field_account_invoice_report__end_date
 #: model:ir.model.fields,field_description:account_invoice_start_end_dates.field_account_move_line__end_date
 msgid "End Date"
 msgstr "Data fine"
@@ -47,9 +41,9 @@ msgstr ""
 "nelle righe fattura che contengono questo prodotto."
 
 #. module: account_invoice_start_end_dates
-#: model:ir.model,name:account_invoice_start_end_dates.model_account_invoice_report
-msgid "Invoices Statistics"
-msgstr "Statistiche fatture"
+#: model:ir.model,name:account_invoice_start_end_dates.model_account_move
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
 
 #. module: account_invoice_start_end_dates
 #: model:ir.model,name:account_invoice_start_end_dates.model_account_move_line
@@ -64,22 +58,25 @@ msgstr "Contratto di manutenzione"
 #. module: account_invoice_start_end_dates
 #. odoo-python
 #: code:addons/account_invoice_start_end_dates/models/account_move_line.py:0
+#, python-format
 msgid "Missing End Date for line '%s'."
 msgstr "Data fine non presente per la riga '%s'."
 
 #. module: account_invoice_start_end_dates
 #. odoo-python
-#: code:addons/account_invoice_start_end_dates/models/account_move_line.py:0
+#: code:addons/account_invoice_start_end_dates/models/account_move.py:0
+#, python-format
 msgid ""
-"Missing Start Date for invoice line with Product '%s' which has the property "
-"'Must Have Start/End Dates'."
+"Missing Start Date and End Date for invoice line with Product '%s' which has "
+"the property 'Must Have Start/End Dates'."
 msgstr ""
-"Data di inizio mancante per la riga della fattura con prodotto '%s' che ha "
-"la proprietà 'Deve avere date di inizio/fine'."
+"Data inizio o fine mancante per la riga fattura con prodotto '%s' che ha la "
+"proprietà 'Deve avere le date inizio/fine'."
 
 #. module: account_invoice_start_end_dates
 #. odoo-python
 #: code:addons/account_invoice_start_end_dates/models/account_move_line.py:0
+#, python-format
 msgid "Missing Start Date for line '%s'."
 msgstr "Data inizio non presente per la riga '%s'."
 
@@ -96,7 +93,6 @@ msgid "Product"
 msgstr "Prodotto"
 
 #. module: account_invoice_start_end_dates
-#: model:ir.model.fields,field_description:account_invoice_start_end_dates.field_account_invoice_report__start_date
 #: model:ir.model.fields,field_description:account_invoice_start_end_dates.field_account_move_line__start_date
 msgid "Start Date"
 msgstr "Data inizio"
@@ -104,23 +100,13 @@ msgstr "Data inizio"
 #. module: account_invoice_start_end_dates
 #. odoo-python
 #: code:addons/account_invoice_start_end_dates/models/account_move_line.py:0
+#, python-format
 msgid ""
 "Start Date (%(start_date)s) should be before End Date (%(end_date)s) for "
 "line '%(name)s'."
 msgstr ""
 "La data inizio (%(start_date)s) deve essere antecedente alla data fine "
 "(%(end_date)s) per la riga '%(name)s'."
-
-#~ msgid "Journal Entry"
-#~ msgstr "Registrazione contabile"
-
-#, python-format
-#~ msgid ""
-#~ "Missing Start Date and End Date for invoice line with Product '%s' which "
-#~ "has the property 'Must Have Start/End Dates'."
-#~ msgstr ""
-#~ "Data inizio o fine mancante per la riga fattura con prodotto '%s' che ha "
-#~ "la proprietà 'Deve avere le date inizio/fine'."
 
 #~ msgid ""
 #~ "If this option is active, the user will have to enter a Start Date and an "

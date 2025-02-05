@@ -1,7 +1,7 @@
 # Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
 
@@ -94,9 +94,6 @@ class DocumentPage(models.Model):
         compute="_compute_backend_url",
     )
 
-    image = fields.Binary(attachment=True)
-    color = fields.Integer(string="Color Index")
-
     @api.depends("menu_id", "parent_id.menu_id")
     def _compute_backend_url(self):
         tmpl = "/web#id={}&model=document.page&view_type=form"
@@ -114,8 +111,8 @@ class DocumentPage(models.Model):
 
     @api.constrains("parent_id")
     def _check_parent_id(self):
-        if self._has_cycle():
-            raise ValidationError(self.env._("You cannot create recursive categories."))
+        if not self._check_recursion():
+            raise ValidationError(_("You cannot create recursive categories."))
 
     def _get_page_index(self, link=True):
         """Return the index of a document."""
@@ -187,9 +184,9 @@ class DocumentPage(models.Model):
     def copy(self, default=None):
         default = dict(
             default or {},
-            name=self.env._("%s (copy)") % self.name,
+            name=_("%s (copy)") % self.name,
             content=self.content,
             draft_name="1.0",
-            draft_summary=self.env._("summary"),
+            draft_summary=_("summary"),
         )
         return super().copy(default=default)

@@ -21,16 +21,16 @@ class TestStockReport(TransactionCase):
             }
         )
         self.account_difference = self.env["account.account"].search(
-            [("code", "=", "348000")]
+            [("code", "=", "348000"), ("company_id", "=", self.env.company.id)]
         )
         self.account_expense = self.env["account.account"].search(
-            [("code", "=", "607000")]
+            [("code", "=", "607000"), ("company_id", "=", self.env.company.id)]
         )
         self.account_income = self.env["account.account"].search(
-            [("code", "=", "707000")]
+            [("code", "=", "707000"), ("company_id", "=", self.env.company.id)]
         )
         self.account_valuation = self.env["account.account"].search(
-            [("code", "=", "371000")]
+            [("code", "=", "371000"), ("company_id", "=", self.env.company.id)]
         )
 
         self.stock_journal = self.env["account.journal"].search(
@@ -74,7 +74,7 @@ class TestStockReport(TransactionCase):
         self.product_1 = self.env["product.product"].create(
             {
                 "name": "Product A",
-                "is_storable": True,
+                "type": "product",
                 "categ_id": self.category.id,
                 "invoice_policy": "delivery",
                 "purchase_method": "receive",
@@ -86,7 +86,7 @@ class TestStockReport(TransactionCase):
         self.product_2 = self.env["product.product"].create(
             {
                 "name": "Product B",
-                "is_storable": True,
+                "type": "product",
                 "categ_id": self.category.id,
                 "invoice_policy": "delivery",
                 "purchase_method": "receive",
@@ -169,15 +169,17 @@ class TestStockReport(TransactionCase):
 
     def test_get_products_with_move(self):
         stock_move_obj = self.env["stock.move"]
-
-        domain = [
-            ("is_storable", "=", True),
-            "|",
-            ("company_id", "=", self.env.company.id),
-            ("company_id", "=", False),
-        ]
         products = (
-            self.env["product.product"].with_context(active_test=False).search(domain)
+            self.env["product.product"]
+            .with_context(active_test=False)
+            .search(
+                [
+                    ("type", "=", "product"),
+                    "|",
+                    ("company_id", "=", self.env.company.id),
+                    ("company_id", "=", False),
+                ]
+            )
         )
         wizard = Form(self.env["l10n.ro.stock.storage.sheet"])
         wizard.location_id = self.location
@@ -197,7 +199,7 @@ class TestStockReport(TransactionCase):
                 ]
             )
             .mapped("product_id")
-            .filtered(lambda p: p.is_storable)
+            .filtered(lambda p: p.type == "product")
         )
         exp_prod_list = wizard.get_products_with_move()
         self.assertEqual(exp_prod_list, [])

@@ -26,32 +26,17 @@ msgid ""
 "#  - self: browse_record of the current ID Category browse_record\n"
 "#  - id_number: browse_record of ID number to validate\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 1: ID number only contains "
-"digits</i>\n"
-"                                </b>\n"
+"<b><i># Sample 1: ID number only contains digits</i></b>\n"
 "if not id_number.name.isdigit():\n"
 "    failed = True\n"
 "else:\n"
 "    failed = False\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 2: Length of ID number "
-"cannot exceed 10 chars</i>\n"
-"                                </b>\n"
+"<b><i># Sample 2: Length of ID number cannot exceed 10 chars</i></b>\n"
 "failed = len(id_number.name) &gt; 10 and True or False\n"
 "\n"
-"<b>\n"
-"                                    <i># Sample 3: ID number must start with "
-"the category code</i>\n"
-"                                </b>\n"
+"<b><i># Sample 3: ID number must start with the category code</i></b>\n"
 "failed = not id_number.name.startswith(self.code) and True or False"
-msgstr ""
-
-#. module: partner_identification
-#. odoo-python
-#: code:addons/partner_identification/models/res_partner_id_category.py:0
-msgid "%(id_name)s is not a valid %(cat_name)s identifier"
 msgstr ""
 
 #. module: partner_identification
@@ -143,10 +128,11 @@ msgstr "Прикажи име"
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner_id_category.py:0
+#, python-format
 msgid ""
 "Error when evaluating the id_category validation code: \n"
-" %(name)s \n"
-"(%(error)s)"
+" {name} \n"
+"({error})"
 msgstr ""
 
 #. module: partner_identification
@@ -230,7 +216,6 @@ msgstr ""
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_error
-#: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 
@@ -403,11 +388,6 @@ msgid "Running"
 msgstr ""
 
 #. module: partner_identification
-#: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr ""
-
-#. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__status
 msgid "Status"
 msgstr ""
@@ -436,9 +416,10 @@ msgstr ""
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner.py:0
+#, python-format
 msgid ""
-"This %(record_name)s has multiple IDs of this type (%(category_code)s), so a "
-"write via the %(field_name)s field is not possible. In order to fix this, "
+"This {record_name} has multiple IDs of this type ({category_code}), so a "
+"write via the {field_name} field is not possible. In order to fix this, "
 "please use the IDs tab."
 msgstr ""
 
@@ -475,6 +456,13 @@ msgstr ""
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__website_message_ids
 msgid "Website communication history"
+msgstr ""
+
+#. module: partner_identification
+#. odoo-python
+#: code:addons/partner_identification/models/res_partner_id_category.py:0
+#, python-format
+msgid "{id_name} is not a valid {cat_name} identifier"
 msgstr ""
 
 #~ msgid "Last Modified on"

@@ -15,3 +15,21 @@ class SaleOrderLine(models.Model):
             line.is_free_delivery = line.is_delivery and line.currency_id.is_zero(
                 line.price_total
             )
+
+    def _compute_invoice_status(self):
+        free_delivery_lines = self.filtered(
+            lambda line: line.order_id.state == "sale" and line.is_free_delivery
+        )
+        res = super()._compute_invoice_status()
+        for line in free_delivery_lines:
+            line.invoice_status = "invoiced"
+        return res
+
+    def _compute_qty_to_invoice(self):
+        free_delivery_lines = self.filtered(
+            lambda line: line.order_id.state == "sale" and line.is_free_delivery
+        )
+        res = super()._compute_qty_to_invoice()
+        for line in free_delivery_lines:
+            line.qty_to_invoice = 0
+        return res

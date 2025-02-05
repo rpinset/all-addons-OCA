@@ -90,7 +90,6 @@ class PartnerCompanyCase(BaseCase):
         """Copy the partner and compare the result."""
         res = super().test_copy()
         self.expect(self.name, False, self.name)
-        self.check_fields = False
         return res
 
     def test_company_inverse(self):

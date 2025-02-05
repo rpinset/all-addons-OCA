@@ -1,4 +1,5 @@
 <odoo noupdate="1">
+
     <!-- Not used at the moment. To use them override the _track_subtype method -->
     <record id="subtype_analysis" model="mail.message.subtype">
         <field name="name">Analysis</field>
@@ -13,4 +14,5 @@
         <field name="default" eval="False" />
         <field name="description">Pending Approval</field>
     </record>
+
 </odoo>

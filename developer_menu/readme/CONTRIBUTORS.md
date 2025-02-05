@@ -1,2 +1,0 @@
-- [Akretion](https://www.akretion.com):
-  - David BEAL

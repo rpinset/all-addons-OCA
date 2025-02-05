@@ -6,7 +6,7 @@ import logging
 from dateutil.relativedelta import relativedelta
 from dateutil.rrule import DAILY, MONTHLY, WEEKLY, YEARLY, rrule
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 from odoo.tools.safe_eval import safe_eval
 
@@ -43,9 +43,7 @@ class DateRangeGenerator(models.TransientModel):
         store=True,
         required=True,
     )
-    date_end = fields.Date(
-        "End date", compute="_compute_date_end", store=True, readonly=False
-    )
+    date_end = fields.Date("End date", compute="_compute_date_end", readonly=False)
     type_id = fields.Many2one(
         comodel_name="date.range.type",
         string="Type",
@@ -127,9 +125,7 @@ class DateRangeGenerator(models.TransientModel):
             if batch:
                 return []
             raise ValidationError(
-                self.env._(
-                    "Please enter an end date, or the number of ranges to generate."
-                )
+                _("Please enter an end date, or the number of ranges to " "generate.")
             )
         kwargs = dict(
             freq=int(self.unit_of_time),
@@ -142,7 +138,7 @@ class DateRangeGenerator(models.TransientModel):
             kwargs["count"] = self.count
         vals = list(rrule(**kwargs))
         if not vals:
-            raise UserError(self.env._("No ranges to generate with these settings"))
+            raise UserError(_("No ranges to generate with these settings"))
         # Generate another interval to fetch the last end date from
         vals.append(
             list(
@@ -161,8 +157,8 @@ class DateRangeGenerator(models.TransientModel):
         self.ensure_one()
         return self._generate_names(vals, self.name_expr, self.name_prefix)
 
-    @api.model
-    def _generate_names(self, vals, name_expr, name_prefix):
+    @staticmethod
+    def _generate_names(vals, name_expr, name_prefix):
         """Generate the names for the given intervals and naming parameters"""
         names = []
         count_digits = len(str(len(vals) - 1))
@@ -185,16 +181,14 @@ class DateRangeGenerator(models.TransientModel):
                         )
                     )
                 except (SyntaxError, ValueError) as e:
-                    raise ValidationError(
-                        self.env._("Invalid name expression: %s") % e
-                    ) from e
+                    raise ValidationError(_("Invalid name expression: %s") % e) from e
             elif name_prefix:
                 names.append(name_prefix + index)
             else:
                 raise ValidationError(
-                    self.env._(
-                        "Please set a prefix or an expression to "
-                        "generate the range names."
+                    _(
+                        "Please set a prefix or an expression to generate "
+                        "the range names."
                     )
                 )
         return names
@@ -313,7 +307,7 @@ class DateRangeGenerator(models.TransientModel):
                 and rec.company_id != rec.type_id.company_id
             ):
                 raise ValidationError(
-                    self.env._(
+                    _(
                         "The Company in the Date Range Generator and in "
                         "Date Range Type must be the same."
                     )

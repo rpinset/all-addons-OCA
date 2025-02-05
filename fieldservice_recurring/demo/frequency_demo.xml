@@ -1,4 +1,5 @@
 <odoo>
+
     <record id="freq_weekdays" model="fsm.frequency">
         <field name="name">Weekdays</field>
         <field name="interval">1</field>
@@ -10,4 +11,5 @@
         <field name="th" eval="True" />
         <field name="fr" eval="True" />
     </record>
+
 </odoo>

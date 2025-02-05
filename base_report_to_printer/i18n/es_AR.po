@@ -173,6 +173,7 @@ msgstr ""
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
 msgid "Could not sent to printer!"
 msgstr ""
 
@@ -319,6 +320,7 @@ msgstr "Error en el documento"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/printing_server.py:0
+#, python-format
 msgid ""
 "Failed to connect to the CUPS server on %(address)s:%(port)s. Check that the "
 "CUPS server is running and that you can reach it from the Odoo server."
@@ -337,6 +339,7 @@ msgstr "No se recibieron ficheros completos"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/wizards/print_attachment_report.py:0
+#, python-format
 msgid ""
 "Following attachments could not be printed:\n"
 "\n"
@@ -394,6 +397,7 @@ msgstr "Si está marcado, el servidor es utilizable."
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
 msgid "Issue on"
 msgstr ""
 
@@ -492,6 +496,7 @@ msgstr "No se están recibiendo datos"
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/ir_actions_report.py:0
+#, python-format
 msgid "No printer configured to print this report."
 msgstr "No hay impresoras configuradas para imprimir el informe."
 
@@ -556,6 +561,7 @@ msgstr "Puerto del servidor."
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.act_report_xml_view
 #: model_terms:ir.ui.view,arch_db:base_report_to_printer.wizard_print_attachment_form
+#, python-format
 msgid "Print"
 msgstr "Imprimir"
 
@@ -799,6 +805,7 @@ msgstr "Mensaje de Estado"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
 msgid "Successfully sent to printer!"
 msgstr ""
 
@@ -821,6 +828,7 @@ msgstr "El ID del trabajo debe ser único por servidor !"
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
 msgid "The report"
 msgstr ""
 
@@ -838,6 +846,7 @@ msgstr ""
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/models/ir_actions_report.py:0
+#, python-format
 msgid "This report type (%s) is not supported by direct printing!"
 msgstr ""
 
@@ -924,12 +933,14 @@ msgstr ""
 #. module: base_report_to_printer
 #. odoo-javascript
 #: code:addons/base_report_to_printer/static/src/js/qweb_action_manager.esm.js:0
+#, python-format
 msgid "couldn't be printed. Click on the button below to download it"
 msgstr ""
 
 #. module: base_report_to_printer
 #. odoo-python
 #: code:addons/base_report_to_printer/wizards/print_attachment_report.py:0
+#, python-format
 msgid "{name} ({copies} copies)"
 msgstr ""
 

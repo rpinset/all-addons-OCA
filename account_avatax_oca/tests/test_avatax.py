@@ -2,8 +2,6 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
 
-import logging
-
 from odoo.tests import common
 
 
@@ -11,9 +9,6 @@ class TestAvatax(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        logging.getLogger("odoo.addons.account_avatax_oca.models.res_company").setLevel(
-            logging.ERROR
-        )
         cls.customer = cls.env["res.partner"].create(
             {
                 "name": "Customer",
@@ -21,7 +16,7 @@ class TestAvatax(common.TransactionCase):
                 "property_exemption_number": "12321",
                 "property_exemption_code_id": cls.env.ref(
                     "account_avatax_oca.resale_type"
-                ).id,
+                ),
             }
         )
         cls.invoice = cls.env["account.move"].create(

@@ -1,0 +1,515 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * base_delivery_carrier_label
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-15 18:21+0000\n"
+"PO-Revision-Date: 2024-09-17 10:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__access_token
+msgid "Access Token"
+msgstr "Token di accesso"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_option__description
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_template_option__description
+msgid "Allow to define a more complete description than in the name field."
+msgstr ""
+"Permette di definire una descrizione più completa che quella del campo nome."
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__by_default
+msgid "Applied by Default"
+msgstr "Applicato in modo predefinito"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__attachment_id
+msgid "Attachement"
+msgstr "Allegato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__local_url
+msgid "Attachment URL"
+msgstr "URL allegato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_option__by_default
+msgid ""
+"By check, user can choose to apply this option to each Delivery Order\n"
+" using this delivery method"
+msgstr ""
+"Selezionandola, l'utente potrà scegliere di applicare questa opzione ad ogni "
+"ordine di consegna\n"
+"utilizzando questo metodo di consegna"
+
+#. module: base_delivery_carrier_label
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.manifest_wizard_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__carrier_id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__carrier_id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking__carrier_id
+msgid "Carrier"
+msgstr "Vettore"
+
+#. module: base_delivery_carrier_label
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.view_quant_package_tree
+msgid "Carrier Tracking URL"
+msgstr "URL tracciamento vettore"
+
+#. module: base_delivery_carrier_label
+#: model:ir.ui.menu,name:base_delivery_carrier_label.menu_carriers_config
+msgid "Carriers"
+msgstr "Vettori"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__checksum
+msgid "Checksum/SHA1"
+msgstr "Checksum/SHA1"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__code
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__code
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking__carrier_code
+msgid "Code"
+msgstr "Codice"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__color
+msgid "Color"
+msgstr "Colore"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__create_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__create_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__create_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__create_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__create_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__create_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__db_datas
+msgid "Database Data"
+msgstr "Dati database"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_stock_picking__carrier_code
+msgid "Delivery Method Code (according to carrier)"
+msgstr "Codice metodo di consegna (secondo il vettore)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_manifest_wizard
+msgid "Delivery carrier manifest wizard"
+msgstr "Procedura guidata lista carico vettore consegna"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_delivery_carrier_option
+msgid "Delivery carrier option"
+msgstr "Opzione vettore consegna"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_delivery_carrier_template_option
+msgid "Delivery carrier template option"
+msgstr "Opzione modello vettore consegna"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__description
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__description
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__description
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__display_name
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__display_name
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__display_name
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields.selection,name:base_delivery_carrier_label.selection__manifest_wizard__state__end
+msgid "END"
+msgstr "FINE"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields.selection,name:base_delivery_carrier_label.selection__manifest_wizard__state__file
+msgid "File"
+msgstr "File"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__datas
+msgid "File Content (base64)"
+msgstr "Contenuto file (base64)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__raw
+msgid "File Content (raw)"
+msgstr "Contenuto file (raw)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__filename
+msgid "File Name"
+msgstr "Nome file"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__file_size
+msgid "File Size"
+msgstr "Dimensione file"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__file_type
+msgid "File type"
+msgstr "Tipo file"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__from_date
+msgid "From Date"
+msgstr "Dalla data"
+
+#. module: base_delivery_carrier_label
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.manifest_wizard_form
+msgid "Get Manifest File"
+msgstr "Ottieni file lista carico"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_option__mandatory
+msgid ""
+"If checked, this option is necessarily applied to the delivery order. "
+"Mandatory options show up in orange in the option widget on the picking."
+msgstr ""
+"Se selezionata, questa opzione è applicata necessariamente all'ordine di "
+"consegna. Le opzioni obbligatorie sono evidenziate in arancione nel widget "
+"opzione nel prelievo."
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__image_height
+msgid "Image Height"
+msgstr "Altezza immagine"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__image_src
+msgid "Image Src"
+msgstr "Sorgente immagine"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__image_width
+msgid "Image Width"
+msgstr "Larghezza immagine"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__index_content
+msgid "Indexed Content"
+msgstr "Contenuto indicizzato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields.selection,name:base_delivery_carrier_label.selection__manifest_wizard__state__init
+msgid "Init"
+msgstr "Inizializza"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__public
+msgid "Is public document"
+msgstr "È un documento pubblico"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option____last_update
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option____last_update
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard____last_update
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__write_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__write_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__write_uid
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__write_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__write_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__write_date
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_stock_quant_package__parcel_tracking_uri
+msgid "Link to the carrier's tracking page for this package."
+msgstr "Collegamento alla pagina di tracciamento del vettore per questo collo."
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__mandatory
+msgid "Mandatory"
+msgstr "Obbligatorio"
+
+#. module: base_delivery_carrier_label
+#: model:ir.actions.act_window,name:base_delivery_carrier_label.manifest_wizard_action
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__file_out
+#: model:ir.ui.menu,name:base_delivery_carrier_label.manifest_wizard_menu
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.manifest_wizard_form
+msgid "Manifest"
+msgstr "Lista di carico"
+
+#. module: base_delivery_carrier_label
+#. odoo-python
+#: code:addons/base_delivery_carrier_label/wizard/manifest_wizard.py:0
+#, python-format
+msgid "Manifest not implemented for '%s' carrier."
+msgstr "Lista di carico non implementata per il vettore '%s'."
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__mimetype
+msgid "Mime Type"
+msgstr "Tipo MIME"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__name
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__name
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: base_delivery_carrier_label
+#: model:ir.actions.client,name:base_delivery_carrier_label.action_delivery_method_from_carrier_module_install
+msgid "Open Delivery Methods Menu"
+msgstr "Menu metodi consegna aperta"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier__available_option_ids
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__tmpl_option_id
+msgid "Option"
+msgstr "Opzione"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_picking__option_ids
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.view_delivery_carrier_form
+msgid "Options"
+msgstr "Opzioni"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_option__color
+msgid "Orange if the option is mandatory, otherwise no color"
+msgstr "Arancione se l'opzione è obbligatoria, altrimenti senza colore"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__original_id
+msgid "Original (unoptimized, unresized) attachment"
+msgstr "Allegato originale (non ottimizzato, non ridimensionato)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__package_id
+msgid "Pack"
+msgstr "Collo"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_stock_quant_package
+msgid "Packages"
+msgstr "Colli"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_quant_package__parcel_tracking
+msgid "Parcel Tracking"
+msgstr "Tracciamento pacchetto"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_quant_package__parcel_tracking_uri
+msgid "Parcel Tracking Uri"
+msgstr "URL tracciamento pacchetto"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__partner_id
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_template_option__partner_id
+msgid "Partner Carrier"
+msgstr "Vettore partner"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimenti prodotto (riga movimento di magazzino)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_delivery_carrier_option__readonly_flag
+msgid "Readonly Flag"
+msgstr "Opzione sola lettura"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__res_field
+msgid "Resource Field"
+msgstr "Campo risorsa"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__res_id
+msgid "Resource ID"
+msgstr "ID risorsa"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__res_model
+msgid "Resource Model"
+msgstr "Modello risorsa"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__res_name
+msgid "Resource Name"
+msgstr "Nome risorsa"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__notes
+msgid "Result"
+msgstr "Risultato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_shipping_label
+msgid "Shipping Label"
+msgstr "Etichetta spedizione"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Metodi di spedizione"
+
+#. module: base_delivery_carrier_label
+#. odoo-python
+#: code:addons/base_delivery_carrier_label/models/stock_picking.py:0
+#, python-format
+msgid ""
+"Some labels already exist for the picking %s.\n"
+"Please delete the existing labels in the attachments of this picking and try "
+"again"
+msgstr ""
+"Alcune etichette esistono già per il prelievo %s.\n"
+"Eliminare le etichette presenti negli allegati di questo prelievo e riprovare"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__state
+msgid "State"
+msgstr "Stato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__store_fname
+msgid "Stored Filename"
+msgstr "Nome file memorizzato"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_manifest_wizard__to_date
+msgid "To Date"
+msgstr "Alla data"
+
+#. module: base_delivery_carrier_label
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.view_quant_package_form
+msgid "Tracking"
+msgstr "Tracciamento"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model,name:base_delivery_carrier_label.model_stock_picking
+msgid "Transfer"
+msgstr "Trasferimento"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_shipping_label__url
+msgid "Url"
+msgstr "URL"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,field_description:base_delivery_carrier_label.field_stock_move_line__weight
+msgid "Weight"
+msgstr "Peso"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_stock_move_line__weight
+msgid "Weight of the pack_operation"
+msgstr "Peso di pack_operation"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_delivery_carrier_option__readonly_flag
+msgid ""
+"When True, help to prevent the user to modify some fields option (if "
+"attribute is defined in the view)"
+msgstr ""
+"Quando vero, aiuta a prevenire che l'utente modifichi alcune opzioni campi ("
+"se l'attributo è definito nella vista)"
+
+#. module: base_delivery_carrier_label
+#: model:ir.model.fields,help:base_delivery_carrier_label.field_shipping_label__type
+msgid ""
+"You can either upload a file from your computer or copy/paste an internet "
+"link to your file."
+msgstr ""
+"È possibile caricare un file dal computer oppure fare copia/incolla di un "
+"collegamento Internet al file."
+
+#. module: base_delivery_carrier_label
+#. odoo-python
+#: code:addons/base_delivery_carrier_label/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You should not remove a mandatory option.Please cancel the edit or add back "
+"the option: %s."
+msgstr ""
+"Non si può eliminare una opzione obbligatoria. Annullare la modifica o "
+"aggiungere l'opzione: %s."
+
+#. module: base_delivery_carrier_label
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_option_view_form
+#: model_terms:ir.ui.view,arch_db:base_delivery_carrier_label.delivery_carrier_template_option_view_form
+msgid "delivery_carrier_option"
+msgstr "delivery_carrier_option"
+
+#~ msgid "Carrier Account"
+#~ msgstr "Conto vettore"
+
+#~ msgid "Default format of the carrier's label you want to print"
+#~ msgstr "Formato predefinito etichetta del vettore che si desidera stampare"
+
+#~ msgid "This field may be used to link an account to a carrier"
+#~ msgstr "Campo che può essere usato per collegare un conto a un vettore"

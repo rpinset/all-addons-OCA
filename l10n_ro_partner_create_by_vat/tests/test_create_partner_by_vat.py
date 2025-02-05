@@ -9,7 +9,9 @@ import requests
 
 from odoo.exceptions import ValidationError
 from odoo.tests import Form, tagged
-from odoo.tools.misc import file_path
+
+# from odoo.modules.module import get_module_resource
+from odoo.tools import file_path
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -17,10 +19,9 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestCreatePartnerBase(AccountTestInvoicingCommon):
     @classmethod
-    @AccountTestInvoicingCommon.setup_country("ro")
-    def setUpClass(cls):
+    def setUpClass(cls, chart_template_ref="ro"):
         cls._super_send = requests.Session.send
-        super().setUpClass()
+        super().setUpClass(chart_template_ref=chart_template_ref)
         cls.env.company.l10n_ro_accounting = True
         cls.mainpartner = cls.env["res.partner"].create({"name": "Test partner"})
         test_file_path = file_path("l10n_ro_partner_create_by_vat/tests/anaf_data.json")
@@ -68,6 +69,7 @@ class TestCreatePartner(TestCreatePartnerBase):
         # Test onchange from ANAF
 
         mainpartner = Form(self.mainpartner)
+        mainpartner.company_type = "company"
         mainpartner.vat = "RO30834857"
         self.assertEqual(mainpartner.name, "FOREST AND BIOMASS ROMÂNIA S.A.")
         self.assertEqual(mainpartner.street, "Str. Ciprian Porumbescu Nr. 12")
@@ -130,7 +132,9 @@ class TestCreatePartner(TestCreatePartnerBase):
 
         mainpartner.save()
 
-        vat_country, vat_number = self.mainpartner._split_vat(mainpartner.vat)
+        vat_country, vat_number = self.mainpartner._split_vat_and_mapped_country(
+            mainpartner.vat
+        )
         self.assertEqual(vat_country, "ro")
         self.assertEqual(vat_number, "42078234")
         # Check vat subjected onchange
@@ -157,6 +161,7 @@ class TestCreatePartner(TestCreatePartnerBase):
         error, res = self.mainpartner._get_Anaf("20603502")
         self.assertEqual(res, {})
         self.assertTrue(len(error) > 3)
+        self.mainpartner.company_type = "company"
         self.mainpartner.vat = "RO20603502"
         res = self.mainpartner.ro_vat_change()
         self.assertTrue(res.get("warning"))

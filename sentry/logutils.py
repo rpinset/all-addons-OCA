@@ -4,6 +4,7 @@
 import os.path
 import urllib.parse
 
+from sentry_sdk._compat import text_type
 from werkzeug import datastructures
 
 from .generalutils import get_environ
@@ -80,7 +81,7 @@ def fetch_git_sha(path, head=None):
             )
 
         with open(head_path) as fp:
-            head = str(fp.read()).strip()
+            head = text_type(fp.read()).strip()
 
         if head.startswith("ref: "):
             head = head[5:]
@@ -109,9 +110,9 @@ def fetch_git_sha(path, head=None):
                         except ValueError:
                             continue
                         if ref == head:
-                            return str(revision)
+                            return text_type(revision)
 
         raise InvalidGitRepository(f"Unable to find ref to head {head} in repository")
 
     with open(revision_file) as fh:
-        return str(fh.read()).strip()
+        return text_type(fh.read()).strip()

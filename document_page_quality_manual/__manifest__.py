@@ -3,14 +3,14 @@
 
 {
     "name": "Quality Manual",
-    "version": "18.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Management System",
     "author": "OpenERP SA, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/management-system",
     "license": "AGPL-3",
-    "depends": ["mgmtsystem_manual"],
+    "depends": ["document_page"],
     "data": ["data/document_page.xml"],
     "installable": True,
     "auto_install": False,
-    "images": ["static/description/quality_manual_form.png"],
+    "images": ["images/wiki_pages_quality_manual.jpeg"],
 }

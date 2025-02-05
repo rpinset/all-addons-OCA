@@ -18,12 +18,17 @@ class ProductTemplate(models.Model):
         "account.account",
         string="Stock Valuation Account",
         company_dependent=True,
-        domain="[('deprecated', '=', False)]",
+        domain="[('company_id', '=', allowed_company_ids[0]),"
+        "('deprecated', '=', False)]",
         check_company=True,
         help="In Romania accounting is only one account for valuation/input/"
         "output. If this value is set, we will use it, otherwise will "
         "use the category value. ",
     )
+
+    def get_product_accounts(self, fiscal_pos=None):
+        fiscal_pos = fiscal_pos or self.env.context.get("fiscal_pos")
+        return super().get_product_accounts(fiscal_pos)
 
     def _get_product_accounts(self):
         accounts = super()._get_product_accounts()
@@ -35,7 +40,7 @@ class ProductTemplate(models.Model):
         if not company.l10n_ro_accounting:
             return accounts
 
-        if not self.is_storable:
+        if self.type != "product":
             accounts["stock_input"] = accounts["expense"]
             return accounts
 

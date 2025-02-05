@@ -28,7 +28,8 @@ class TestStockPurchaseReturn(TestStockCommon):
         return_wiz.product_return_moves.write(
             {"quantity": 2.0, "to_refund": True}
         )  # Return only 2
-        return_pick = return_wiz._create_return()
+        res = return_wiz.create_returns()
+        return_pick = self.env["stock.picking"].browse(res["res_id"])
 
         # Validate picking
         for move in return_pick.move_ids:

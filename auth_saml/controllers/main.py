@@ -17,7 +17,9 @@ from odoo import (
     exceptions,
     http,
     models,
-    modules,
+)
+from odoo import (
+    registry as registry_get,
 )
 from odoo.http import request
 from odoo.tools.misc import clean_context
@@ -98,7 +100,7 @@ class SAMLLogin(Home):
         redirect = request.params.get("redirect")
         if redirect:
             params["redirect"] = redirect
-        return f"/auth_saml/get_auth_request?{werkzeug.urls.url_encode(params)}"
+        return "/auth_saml/get_auth_request?%s" % werkzeug.urls.url_encode(params)
 
     @http.route()
     def web_client(self, s_action=None, **kw):
@@ -171,9 +173,10 @@ class AuthSAMLController(http.Controller):
         }
         return state
 
-    @http.route("/auth_saml/get_auth_request", type="http", auth="none", readonly=False)
+    @http.route("/auth_saml/get_auth_request", type="http", auth="none")
     def get_auth_request(self, pid):
         provider_id = int(pid)
+
         provider = request.env["auth.saml.provider"].sudo().browse(provider_id)
         redirect_url = provider._get_auth_request(
             self._get_saml_extra_relaystate(), request.httprequest.url_root.rstrip("/")
@@ -188,9 +191,7 @@ class AuthSAMLController(http.Controller):
         redirect.autocorrect_location_header = True
         return redirect
 
-    @http.route(
-        "/auth_saml/signin", type="http", auth="none", csrf=False, readonly=False
-    )
+    @http.route("/auth_saml/signin", type="http", auth="none", csrf=False)
     @fragment_to_query_string
     def signin(self, **kw):
         """
@@ -237,23 +238,19 @@ class AuthSAMLController(http.Controller):
             if redirect:
                 url = redirect
             elif action:
-                url = f"/#action={action}"
+                url = "/#action=%s" % action
             elif menu:
-                url = f"/#menu_id={menu}"
-
-            credentials_dict = {
-                "login": credentials[1],
-                "token": credentials[2],
-                "type": "saml_token",
-            }
-            pre_uid = request.session.authenticate(dbname, credentials_dict)
+                url = "/#menu_id=%s" % menu
+            pre_uid = request.session.authenticate(*credentials)
             resp = request.redirect(_get_login_redirect_url(pre_uid, url), 303)
             resp.autocorrect_location_header = False
             return resp
 
         except exceptions.AccessDenied:
-            # saml credentials not valid, user could be on a temporary session
+            # saml credentials not valid,
+            # user could be on a temporary session
             _logger.info("SAML2: access denied")
+
             url = "/web/login?saml_error=expired"
             redirect = werkzeug.utils.redirect(url, 303)
             redirect.autocorrect_location_header = False
@@ -268,9 +265,7 @@ class AuthSAMLController(http.Controller):
         redirect.autocorrect_location_header = False
         return redirect
 
-    @http.route(
-        "/auth_saml/metadata", type="http", auth="none", csrf=False, readonly=False
-    )
+    @http.route("/auth_saml/metadata", type="http", auth="none", csrf=False)
     def saml_metadata(self, **kw):
         provider = kw.get("p")
         dbname = kw.get("d")
@@ -278,15 +273,17 @@ class AuthSAMLController(http.Controller):
 
         if not dbname or not provider:
             _logger.debug("Metadata page asked without database name or provider id")
-            raise request.not_found(_("Missing parameters"))
+            return request.not_found(_("Missing parameters"))
 
         provider = int(provider)
 
-        with modules.registry.Registry(dbname).cursor() as cr:
+        registry = registry_get(dbname)
+
+        with registry.cursor() as cr:
             env = api.Environment(cr, SUPERUSER_ID, {})
             client = env["auth.saml.provider"].sudo().browse(provider)
             if not client.exists():
-                raise request.not_found(_("Unknown provider"))
+                return request.not_found(_("Unknown provider"))
 
             return request.make_response(
                 client._metadata_string(

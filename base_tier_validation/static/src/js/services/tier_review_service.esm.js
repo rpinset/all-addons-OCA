@@ -1,4 +1,5 @@
-import {reactive} from "@odoo/owl";
+/** @odoo-module **/
+
 import {registry} from "@web/core/registry";
 
 export class TierReviewService {
@@ -24,8 +25,8 @@ export const tierReviewService = {
     dependencies: ["bus_service", "mail.store"],
 
     start(env, services) {
-        const tier_review_service = reactive(new TierReviewService(env, services));
-        tier_review_service.setup();
+        const tier_review_service = new TierReviewService(env, services);
+        tier_review_service.setup(env, services);
         return tier_review_service;
     },
 };

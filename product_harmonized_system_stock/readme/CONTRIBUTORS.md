@@ -1,2 +1,1 @@
 - Alexis de Lattre \<<alexis.delattre@akretion.com>\>
-- Nhan Tran \<<nhant@trobz.com>\>

@@ -2,7 +2,6 @@
 # Copyright 2017 Tecnativa - Jairo Llopis
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-import logging
 from unittest import mock
 
 from odoo import exceptions
@@ -129,14 +128,11 @@ class TestReport(common.HttpCase):
 
     def test_render_qweb_pdf_printable(self):
         """It should print the report, only if it is printable"""
-        with (
-            mock.patch(
-                "odoo.addons.base_report_to_printer.models."
-                "printing_printer.PrintingPrinter."
-                "print_document"
-            ) as print_document,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
+        with mock.patch(
+            "odoo.addons.base_report_to_printer.models."
+            "printing_printer.PrintingPrinter."
+            "print_document"
+        ) as print_document:
             self.report.property_printing_action_id.action_type = "server"
             self.report.printing_printer_id = self.new_printer()
             document = self.report._render_qweb_pdf(
@@ -149,19 +145,14 @@ class TestReport(common.HttpCase):
                 doc_format="qweb-pdf",
                 tray=False,
             )
-            self.assertEqual(len(logs.records), 1)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
 
     def test_render_qweb_text_printable(self):
         """It should print the report, only if it is printable"""
-        with (
-            mock.patch(
-                "odoo.addons.base_report_to_printer.models."
-                "printing_printer.PrintingPrinter."
-                "print_document"
-            ) as print_document,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
+        with mock.patch(
+            "odoo.addons.base_report_to_printer.models."
+            "printing_printer.PrintingPrinter."
+            "print_document"
+        ) as print_document:
             self.report_text.property_printing_action_id.action_type = "server"
             self.report_text.printing_printer_id = self.new_printer()
             document = self.report_text._render_qweb_text(
@@ -174,41 +165,29 @@ class TestReport(common.HttpCase):
                 doc_format="qweb-text",
                 tray=False,
             )
-            self.assertEqual(len(logs.records), 1)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
 
     def test_print_document_not_printable(self):
         """It should print the report, regardless of the defined behaviour"""
         self.report.printing_printer_id = self.new_printer()
-        with (
-            mock.patch(
-                "odoo.addons.base_report_to_printer.models."
-                "printing_printer.PrintingPrinter."
-                "print_document"
-            ) as print_document,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
+        with mock.patch(
+            "odoo.addons.base_report_to_printer.models."
+            "printing_printer.PrintingPrinter."
+            "print_document"
+        ) as print_document:
             self.report.print_document(self.partners.ids)
             print_document.assert_called_once()
-            self.assertEqual(len(logs.records), 2)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
 
     def test_print_document_printable(self):
         """It should print the report, regardless of the defined behaviour"""
         self.report.property_printing_action_id.action_type = "server"
         self.report.printing_printer_id = self.new_printer()
-        with (
-            mock.patch(
-                "odoo.addons.base_report_to_printer.models."
-                "printing_printer.PrintingPrinter."
-                "print_document"
-            ) as print_document,
-            self.assertLogs(level=logging.WARNING) as logs,
-        ):
+        with mock.patch(
+            "odoo.addons.base_report_to_printer.models."
+            "printing_printer.PrintingPrinter."
+            "print_document"
+        ) as print_document:
             self.report.print_document(self.partners.ids)
             print_document.assert_called_once()
-            self.assertEqual(len(logs.records), 2)
-            self.assertEqual(logs.records[0].levelno, logging.WARNING)
 
     def test_print_document_no_printer(self):
         """It should raise an error"""

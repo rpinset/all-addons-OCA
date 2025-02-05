@@ -78,6 +78,7 @@ msgstr "Tracciamento assistenza sul campo"
 #. module: fieldservice_sale_recurring
 #. odoo-python
 #: code:addons/fieldservice_sale_recurring/models/sale_order_line.py:0
+#, python-format
 msgid "Field Service recurring Created ({product_name}): "
 msgstr "Creata assistenza sul campo ricorrente ({product_name}): "
 
@@ -114,6 +115,7 @@ msgstr "Riga ordine di vendita"
 #. module: fieldservice_sale_recurring
 #. odoo-python
 #: code:addons/fieldservice_sale_recurring/models/fsm_recurring.py:0
+#, python-format
 msgid "Sales Orders"
 msgstr "Ordini di vendita"
 
@@ -126,6 +128,7 @@ msgstr "Seleziona un modello ordine assistenza sul camp ricorrente da creare"
 #. module: fieldservice_sale_recurring
 #. odoo-python
 #: code:addons/fieldservice_sale_recurring/models/sale_order_line.py:0
+#, python-format
 msgid "This recurring has been created ({product_name}) from: "
 msgstr "Questa ricorrenza è stata creata ({product_name}) from: "
 

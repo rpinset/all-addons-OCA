@@ -138,9 +138,11 @@ class IrAttachment(models.Model):
 
     @staticmethod
     def _is_storage_disabled(storage=None, log=True):
-        msg = "Storages are disabled (see environment configuration)."
+        msg = _("Storages are disabled (see environment configuration).")
         if storage:
-            msg = f"Storage '{storage}' is disabled (see environment configuration)."
+            msg = _("Storage '%s' is disabled (see environment configuration).") % (
+                storage,
+            )
         is_disabled = is_true(os.environ.get("DISABLE_ATTACHMENT_STORAGE"))
         if is_disabled and log:
             _logger.warning(msg)

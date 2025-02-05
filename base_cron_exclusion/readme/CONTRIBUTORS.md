@@ -2,5 +2,3 @@
 - Lois Rilo \<<lois.rilo@forgeflow.com>\>
 - Jordi Ballester \<<jordi.ballester@forgeflow.com>\>
 - Bhavesh Odedra \<<bodedra@opensourceintegrators.com>\>
-- [Trobz](https://trobz.com):
-  - Do Anh Duy \<<duyda@trobz.com>\>

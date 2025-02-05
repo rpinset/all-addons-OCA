@@ -3,4 +3,3 @@
 - Nils Coenen \<<nils.coenen@nico-solutions.de>\>
 - [360ERP](https://www.360erp.com):
   - Andrea Stirpe
-- Marcin Chechłacz <<marcin.chechlacz@braintec.com>>

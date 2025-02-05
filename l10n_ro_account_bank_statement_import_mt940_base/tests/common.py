@@ -11,9 +11,8 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestMT940BankStatementImport(AccountTestInvoicingCommon):
     @classmethod
-    @AccountTestInvoicingCommon.setup_country("ro")
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref="ro"):
+        super().setUpClass(chart_template_ref=chart_template_ref)
         cls.env.company.anglo_saxon_accounting = True
         cls.env.company.l10n_ro_accounting = True
 

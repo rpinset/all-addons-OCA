@@ -1,11 +1,8 @@
-This module ensures that manufacturing orders created from
-procurements respect the calendar assigned to the warehouse
-associated with the manufacturing order's picking type.
-The planned start date of the manufacturing order is calculated
-based on the product's manufacturing lead time and the working
-schedules defined in the warehouse calendar.
+With this module the manufacturing orders created from procurements
+consider the calendar assigned to the warehouse of the picking type of
+the manufacturing order to determine, based on the product's
+manufacturing lead time, the planned start date of the manufacturing
+order.
 
-Additionally, any manual rescheduling of the start or
-end date of a manufacturing order will also take the lead
-time into account, following the working days defined by
-the warehouse calendar.
+Further manual replannings of start/end date of the manufacturing order
+also consider the lead time using the warehouse calendar days.

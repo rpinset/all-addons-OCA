@@ -5,7 +5,7 @@ from PIL import Image
 
 from odoo.tests import tagged
 from odoo.tests.common import TransactionCase
-from odoo.tools.image import base64_to_image, image_to_base64
+from odoo.tools import base64_to_image, image_to_base64
 
 from odoo.addons.website.tools import MockRequest
 
@@ -72,29 +72,3 @@ class TestWebFavicon(TransactionCase):
                 expected_favicon_url,
                 "The favicon URL should match the expected value.",
             )
-
-    def test_04_favicon_multiple_companies(self):
-        """Test _get_favicon with multiple companies in cids cookie."""
-        Company = self.env["res.company"]
-
-        company_1 = Company.create(
-            {"name": "Company 1", "favicon": Company._get_default_favicon()}
-        )
-        company_2 = Company.create(
-            {"name": "Company 2", "favicon": Company._get_default_favicon()}
-        )
-
-        with MockRequest(self.env) as mock_request:
-            mock_request.httprequest.cookies = {
-                "cids": f"{company_1.id}-{company_2.id}"
-            }
-            favicon_url = Company._get_favicon()
-
-        self.assertTrue(
-            favicon_url, "Favicon URL should be generated for multiple companies."
-        )
-        self.assertIn(
-            str(company_1.id),
-            favicon_url,
-            "Favicon URL should correspond to the first company in the cids cookie.",
-        )

@@ -1,3 +1,5 @@
+/** @odoo-module **/
+
 import {CodeEditor} from "@web/core/code_editor/code_editor";
 import {patch} from "@web/core/utils/patch";
 

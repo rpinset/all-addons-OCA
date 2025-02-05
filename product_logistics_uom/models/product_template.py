@@ -41,6 +41,7 @@ class ProductTemplate(models.Model):
     volume_uom_name = fields.Char(
         string="Volume unit of measure label",
         related="volume_uom_id.name",
+        readonly=True,
     )
 
     weight_uom_id = fields.Many2one(
@@ -49,12 +50,14 @@ class ProductTemplate(models.Model):
         domain=lambda self: [
             ("category_id", "=", self.env.ref("uom.product_uom_categ_kgm").id)
         ],
+        compute=False,
         default=lambda self: self._get_weight_uom_id_from_ir_config_parameter(),
     )
 
     weight_uom_name = fields.Char(
         string="Weight unit of measure label",
         related="weight_uom_id.name",
+        readonly=True,
     )
 
     show_volume_uom_warning = fields.Boolean(
@@ -105,46 +108,54 @@ class ProductTemplate(models.Model):
         "volume_uom_id",
     )
     def _compute_product_volume(self):
-        for template in self:
-            template.product_volume = (
-                template.product_variant_ids.product_volume
-                if template.product_variant_count == 1
-                else 0.0
-            )
+        unique_variants = self.filtered(
+            lambda template: len(template.product_variant_ids) == 1
+        )
+        for template in unique_variants:
+            template.product_volume = template.product_variant_ids.product_volume
+        for template in self - unique_variants:
+            template.product_volume = 0.0
 
     def _inverse_product_volume(self):
         for template in self:
-            if template.product_variant_count == 1:
+            if len(template.product_variant_ids) == 1:
                 template.product_variant_ids.product_volume = template.product_volume
 
     @api.depends("weight", "weight_uom_id")
     def _compute_product_weight(self):
-        for template in self:
-            template.product_weight = (
-                template.product_variant_ids.product_weight
-                if template.product_variant_count == 1
-                else 0.0
-            )
+        unique_variants = self.filtered(
+            lambda template: len(template.product_variant_ids) == 1
+        )
+        for template in unique_variants:
+            template.product_weight = template.product_variant_ids.product_weight
+        for template in self - unique_variants:
+            template.product_weight = 0.0
 
     def _inverse_product_weight(self):
         for template in self:
-            if template.product_variant_count == 1:
+            if len(template.product_variant_ids) == 1:
                 template.product_variant_ids.product_weight = template.product_weight
 
     @api.depends("volume", "volume_uom_id")
     def _compute_show_volume_uom_warning(self):
-        for template in self:
+        unique_variants = self.filtered(
+            lambda template: len(template.product_variant_ids) == 1
+        )
+        for template in unique_variants:
             template.show_volume_uom_warning = (
                 template.product_variant_ids.show_volume_uom_warning
-                if template.product_variant_count == 1
-                else False
             )
+        for template in self - unique_variants:
+            template.show_volume_uom_warning = False
 
     @api.depends("weight", "weight_uom_id")
     def _compute_show_weight_uom_warning(self):
-        for template in self:
+        unique_variants = self.filtered(
+            lambda template: len(template.product_variant_ids) == 1
+        )
+        for template in unique_variants:
             template.show_weight_uom_warning = (
                 template.product_variant_ids.show_weight_uom_warning
-                if template.product_variant_count == 1
-                else False
             )
+        for template in self - unique_variants:
+            template.show_weight_uom_warning = False

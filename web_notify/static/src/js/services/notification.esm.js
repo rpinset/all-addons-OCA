@@ -1,3 +1,4 @@
+/** @odoo-module */
 import {Notification} from "@web/core/notifications/notification";
 import {patch} from "@web/core/utils/patch";
 

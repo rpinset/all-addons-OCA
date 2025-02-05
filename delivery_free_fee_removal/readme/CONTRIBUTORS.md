@@ -11,4 +11,3 @@
 - [Trobz](https://trobz.com):
 
   > - Son Ho \<<sonhd@trobz.com>\>
-  > - Nhan Tran \<<nhant@trobz.com>\>

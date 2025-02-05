@@ -4,6 +4,7 @@
     The licence is in the file __openerp__.py
 -->
 <odoo>
+
     <!--This is a product inherited form that will be dynamically populated-->
     <record id="product_normal_form_view" model="ir.ui.view">
         <field name="name">product.product.form</field>
@@ -13,7 +14,8 @@
             <xpath expr="/form/sheet/notebook" position="inside">
                 <!-- change the invisible attribute to 0 when used
                      in submodules -->
-                <page string="Connectors" name="connector" invisible="True" />
+                <page string="Connectors" name="connector" invisible="True">
+                </page>
             </xpath>
         </field>
     </record>
@@ -26,8 +28,10 @@
             <xpath expr="/form/sheet/notebook" position="inside">
                 <!-- change the invisible attribute to 0 when used
                      in submodules -->
-                <page string="Connectors" name="connector" invisible="True" />
+                <page string="Connectors" name="connector" invisible="True">
+                </page>
             </xpath>
         </field>
     </record>
+
 </odoo>

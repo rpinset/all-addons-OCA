@@ -6,8 +6,8 @@ from odoo.addons.sale.tests.common import TestSaleCommon
 @tagged("post_install", "-at_install")
 class TestSaleReport(TestSaleCommon):
     @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        super().setUpClass(chart_template_ref=chart_template_ref)
 
         cls.sale_order_types = cls.env["sale.order.type"].create(
             [

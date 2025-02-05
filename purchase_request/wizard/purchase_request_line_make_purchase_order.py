@@ -200,16 +200,8 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
             ("name", "=", name),
             ("product_id", "=", item.product_id.id),
             ("product_uom", "=", vals["product_uom"]),
+            ("analytic_distribution", "=?", item.line_id.analytic_distribution),
         ]
-
-        if item.line_id.analytic_distribution:
-            analytic_account_ids = list(item.line_id.analytic_distribution.keys())
-            order_line_data.append(
-                ("analytic_distribution", "in", analytic_account_ids)
-            )
-        else:
-            order_line_data.append(("analytic_distribution", "=", False))
-
         if self.sync_data_planned:
             date_required = item.line_id.date_required
             order_line_data += [
@@ -308,7 +300,7 @@ class PurchaseRequestLineMakePurchaseOrder(models.TransientModel):
         return {
             "domain": [("id", "in", res)],
             "name": _("RFQ"),
-            "view_mode": "list,form",
+            "view_mode": "tree,form",
             "res_model": "purchase.order",
             "view_id": False,
             "context": False,

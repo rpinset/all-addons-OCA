@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
+
     <!-- Email template for Action Reminders -->
     <record id="email_template_new_action_reminder" model="mail.template">
         <field name="name">Action Assigned</field>
@@ -59,4 +60,5 @@ Odoo
             ]]>
         </field>
     </record>
+
 </odoo>

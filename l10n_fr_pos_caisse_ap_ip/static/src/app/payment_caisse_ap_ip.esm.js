@@ -1,3 +1,4 @@
+/** @odoo-module */
 /*
     Copyright 2023 Akretion France (http://www.akretion.com/)
     @author: Alexis de Lattre <alexis.delattre@akretion.com>
@@ -6,7 +7,7 @@
     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 */
 
-import {AlertDialog} from "@web/core/confirmation_dialog/confirmation_dialog";
+import {ErrorPopup} from "@point_of_sale/app/errors/popups/error_popup";
 import {PaymentInterface} from "@point_of_sale/app/payment/payment_interface";
 import {_t} from "@web/core/l10n/translation";
 
@@ -44,22 +45,22 @@ export class PaymentCaisseAPIP extends PaymentInterface {
         return Promise.reject();
     }
 
-    async send_payment_request(uuid) {
+    async send_payment_request(cid) {
         await super.send_payment_request(...arguments);
         const order = this.pos.get_order();
-        const pay_line = order.get_selected_paymentline();
+        const pay_line = order.selected_paymentline;
         // Define the timout used in the POS and in the back-end (in ms)
         const timeout = 180000;
         const data = {
             amount: pay_line.amount,
             currency_id: this.pos.currency.id,
-            payment_method_id: this.payment_method_id.id,
-            payment_id: uuid,
+            payment_method_id: this.payment_method.id,
+            payment_id: cid,
             timeout: timeout,
         };
         pay_line.set_payment_status("waitingCard");
-        return this.pos.data
-            .silentCall("pos.payment.method", "fr_caisse_ap_ip_send_payment", [data])
+        return this.env.services.orm.silent
+            .call("pos.payment.method", "fr_caisse_ap_ip_send_payment", [data])
             .then((response) => {
                 if (response instanceof Object && "payment_status" in response) {
                     // The response is a valid object
@@ -82,7 +83,7 @@ export class PaymentCaisseAPIP extends PaymentInterface {
     }
 
     _show_error(msg, title) {
-        this.env.services.dialog.add(AlertDialog, {
+        this.env.services.popup.add(ErrorPopup, {
             title: title || _t("Payment Terminal Error"),
             body: msg,
         });

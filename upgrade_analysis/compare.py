@@ -139,10 +139,7 @@ def report_generic(new, old, attrs, reprs):
         elif attr == "stored":
             if old[attr] != new[attr]:
                 if new["stored"]:
-                    if new.get("isproperty") and old.get("isproperty"):
-                        text = "needs conversion to v18-style company dependent"
-                    else:
-                        text = "is now stored"
+                    text = "is now stored"
                 else:
                     text = "not stored anymore"
                 fieldprint(old, new, "", text, reprs)
@@ -490,9 +487,10 @@ def compare_model_sets(old_records, new_records):
                     moved_module = ""
                     if module_map(column["module"]) != new_models[model_map(model)]:
                         moved_module = f" in module {new_models[model_map(model)]}"
-                    text = (
-                        f"obsolete model {model}"
-                        f" (renamed to {model_map(model)}{moved_module})"
+                    text = "obsolete model {} (renamed to {}{})".format(
+                        model,
+                        model_map(model),
+                        moved_module,
                     )
                     if column["model_type"]:
                         text += f" [{column['model_type']}]"
@@ -527,9 +525,10 @@ def compare_model_sets(old_records, new_records):
                     moved_module = ""
                     if column["module"] != module_map(old_models[inv_model_map(model)]):
                         moved_module = f" in module {old_models[inv_model_map(model)]}"
-                    text = (
-                        f"new model {model} "
-                        f"(renamed from {inv_model_map(model)}{moved_module})"
+                    text = "new model {} (renamed from {}{})".format(
+                        model,
+                        inv_model_map(model),
+                        moved_module,
                     )
                     if column["model_type"]:
                         text += f" [{column['model_type']}]"

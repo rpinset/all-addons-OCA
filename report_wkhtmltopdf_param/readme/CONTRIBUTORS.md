@@ -4,4 +4,3 @@
 - Foram Shah \<<foramshah@initos.com>\>
 - [Trobz](https://www.trobz.com):
   - Tris Doan \<<tridm@trobz.com>\>
-  - Nhan Tran \<<nhant@trobz.com>\>

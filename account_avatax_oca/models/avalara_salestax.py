@@ -1,6 +1,6 @@
 import logging
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
 from .avatax_rest_api import AvaTaxRESTService
@@ -214,7 +214,7 @@ class AvalaraSalestax(models.Model):
         if not partner.customer_code:
             if not avatax_config.auto_generate_customer_code:
                 raise UserError(
-                    self.env._(
+                    _(
                         "Customer Code for customer %(partner.name)s not defined.\n\n  "
                         "You can edit the Customer Code in customer profile. "
                         'You can fix by clicking "Generate Customer Code" '
@@ -226,14 +226,12 @@ class AvalaraSalestax(models.Model):
 
         if not shipping_address:
             raise UserError(
-                self.env._(
-                    "There is no source shipping address defined for partner %s."
-                )
+                _("There is no source shipping address defined for partner %s.")
                 % partner.name
             )
 
         if not ship_from_address:
-            raise UserError(self.env._("There is no Company address defined."))
+            raise UserError(_("There is no Company address defined."))
 
         if avatax_config.validation_on_save:
             for address in [partner, shipping_address, ship_from_address]:
@@ -248,7 +246,7 @@ class AvalaraSalestax(models.Model):
         ):
             if not shipping_address.date_validation:
                 raise UserError(
-                    self.env._(
+                    _(
                         "Please validate the shipping address for the partner "
                         "%(partner.name)s."
                     )
@@ -256,13 +254,11 @@ class AvalaraSalestax(models.Model):
 
             # if not avatax_config.address_validation:
             if not ship_from_address.date_validation:
-                raise UserError(
-                    self.env._("Please validate the origin warehouse address.")
-                )
+                raise UserError(_("Please validate the origin warehouse address."))
 
         if avatax_config.disable_tax_calculation:
             _logger.info(
-                self.env._("Avatax tax calculation is disabled. Skipping %s %s."),
+                "Avatax tax calculation is disabled. Skipping %s %s.",
                 doc_code,
                 doc_type,
             )
@@ -270,9 +266,7 @@ class AvalaraSalestax(models.Model):
 
         if commit and avatax_config.disable_tax_reporting:
             _logger.warning(
-                self.env._(
-                    "Avatax commiting document %s, but it tax reporting is disabled."
-                ),
+                _("Avatax commiting document %s, but it tax reporting is disabled."),
                 doc_code,
             )
 

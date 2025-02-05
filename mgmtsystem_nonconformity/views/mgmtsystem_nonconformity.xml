@@ -1,4 +1,5 @@
 <odoo>
+
     <menuitem
         id="menu_mgmtsystem_configuration_nonconformities"
         name="Nonconformities"
@@ -8,11 +9,11 @@
     />
 
     <record id="view_mgmtsystem_nonconformity_tree" model="ir.ui.view">
-        <field name="name">mgmtsystem.nonconformity.list</field>
+        <field name="name">mgmtsystem.nonconformity.tree</field>
         <field name="model">mgmtsystem.nonconformity</field>
         <field name="arch" type="xml">
-            <list>
-                <field name="ref" readonly="True" />
+            <tree>
+                <field name="ref" />
                 <field name="create_date" />
                 <field name="partner_id" />
                 <field name="description" />
@@ -22,7 +23,7 @@
                 <field name="system_id" />
                 <field name="company_id" groups="base.group_multi_company" />
                 <field name="stage_id" />
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -132,30 +133,72 @@
                 <field name="name" />
                 <field name="message_needaction_counter" />
                 <templates>
-                    <t t-name="card">
-                        <div>
-                            <div class="d-flex justify-content-between">
-                                <strong>
-                                    <field name="ref" />
-                                    -
-                                    <field name="name" />
-                                </strong>
-                                <field name="kanban_state" widget="state_selection" />
+                    <t t-name="kanban-box">
+
+                        <div t-attf-class="#{kanban_color(red)} oe_kanban_global_click">
+                            <div class="o_dropdown_kanban dropdown">
+
+                                <a
+                                    class="dropdown-toggle btn"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    href="#"
+                                    data-display="static"
+                                    aria-label="Dropdown menu"
+                                    title="Dropdown menu"
+                                >
+                                    <span class="fa fa-bars fa-lg" />
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    role="menu"
+                                    aria-labelledby="dLabel"
+                                >
+                                    <t t-if="widget.editable">
+                                        <li>
+                                            <a
+                                                type="edit"
+                                                role="menuitem"
+                                                class="dropdown-item"
+                                            >
+                                                Edit
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
                             </div>
-                            <div>
-                                <br />
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <span title='Unread Messages'>
-                                    <i class='fa fa-comments' />
-                                    <t
-                                        t-esc="record.message_needaction_counter.raw_value"
+                            <div class="oe_kanban_content">
+                                <div>
+                                    <strong>
+                                        <field name="ref" />
+                                        -
+                                        <field name="name" />
+                                    </strong>
+                                </div>
+                                <div>
+                                    <br />
+                                </div>
+                                <div class="oe_kanban_bottom_left">
+                                    <span
+                                        class='oe_kanban_mail_new'
+                                        title='Unread Messages'
+                                    >
+                                        <i class='fa fa-comments' />
+                                        <t
+                                            t-esc="record.message_needaction_counter.raw_value"
+                                        />
+                                    </span>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <field
+                                        name="kanban_state"
+                                        widget="kanban_state_selection"
                                     />
-                                </span>
-                                <field
-                                    name="responsible_user_id"
-                                    widget="many2one_avatar_user"
-                                />
+                                    <field
+                                        name="responsible_user_id"
+                                        widget="many2one_avatar_user"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </t>
@@ -175,10 +218,11 @@
                         widget="statusbar"
                         options="{'clickable': 1}"
                     />
+                    <field name="state" invisible="True" />
                 </header>
                 <sheet string="Non-Conformity">
                     <div class="oe_button_box" name="button_box" />
-                    <field name="kanban_state" widget="state_selection" />
+                    <field name="kanban_state" widget="kanban_state_selection" />
                     <group name="main">
                         <group name="config">
                             <field name="name" readonly="state not in 'draft'" />
@@ -217,6 +261,7 @@
                     </group>
 
                     <notebook>
+
                         <page string="Description" name="description">
                             <field
                                 name="description"
@@ -236,7 +281,7 @@
                             <field
                                 name="procedure_ids"
                                 readonly="state not in ('draft', 'analysis')"
-                                domain="[('parent_id','child_of',('Procedure','Environmental Aspect','Manuals'))]"
+                                domain="[('parent_id','in',('Procedure','Environmental Aspect','Manuals'))]"
                             />
                         </page>
 
@@ -254,12 +299,12 @@
                                 readonly="state not in 'analysis'"
                                 options="{'no_create': True}"
                             >
-                                <list create="1" delete="1" decoration-info="parent_id">
+                                <tree create="1" delete="1" decoration-info="parent_id">
                                     <field name="parent_id" />
                                     <field name="name" />
                                     <field name="description" />
                                     <field name="sequence" />
-                                </list>
+                                </tree>
                             </field>
 
                             <separator string="Analysis Confirmation" />
@@ -309,10 +354,20 @@
                                 </group>
                             </group>
                         </page>
+
                     </notebook>
                 </sheet>
 
-                <chatter />
+                <div class="oe_chatter">
+                    <field
+                        name="message_follower_ids"
+                        widget="mail_followers"
+                        groups="base.group_user"
+                    />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+
             </form>
         </field>
     </record>
@@ -320,7 +375,7 @@
     <record model="ir.actions.act_window" id="open_mgmtsystem_nonconformity_list">
         <field name="name">Nonconformities</field>
         <field name="res_model">mgmtsystem.nonconformity</field>
-        <field name="view_mode">kanban,list,form</field>
+        <field name="view_mode">kanban,tree,form</field>
         <field name="view_id" ref="view_mgmtsystem_nonconformity_kanban" />
         <field name="search_view_id" ref="view_mgmtsystem_nonconformity_filter" />
         <field name="context">{"search_default_user_id":uid}</field>
@@ -332,7 +387,7 @@
     >
         <field name="name">Nonconformities</field>
         <field name="res_model">mgmtsystem.nonconformity</field>
-        <field name="view_mode">kanban,list,form</field>
+        <field name="view_mode">kanban,tree,form</field>
         <field
             name="domain"
         >[('res_id', '=', id), ('res_model', '=', mgmtsystem_nonconformity)]
@@ -353,4 +408,5 @@
         sequence="30"
         groups="mgmtsystem.group_mgmtsystem_manager,mgmtsystem.group_mgmtsystem_auditor,base.group_user"
     />
+
 </odoo>

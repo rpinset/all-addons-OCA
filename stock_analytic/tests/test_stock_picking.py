@@ -20,8 +20,7 @@ class CommonStockPicking(TransactionCase):
         cls.product = cls.env["product.product"].create(
             {
                 "name": "Test Product",
-                "type": "consu",
-                "is_storable": True,
+                "type": "product",
                 "standard_price": 1.0,
             }
         )
@@ -33,7 +32,7 @@ class CommonStockPicking(TransactionCase):
                 "code": "tv",
                 "account_type": "liability_current",
                 "reconcile": True,
-                "company_ids": [Command.link(cls.env.ref("base.main_company").id)],
+                "company_id": cls.env.ref("base.main_company").id,
             }
         )
         cls.stock_input_account = cls.env["account.account"].create(
@@ -42,7 +41,7 @@ class CommonStockPicking(TransactionCase):
                 "code": "tsti",
                 "account_type": "expense",
                 "reconcile": True,
-                "company_ids": [Command.link(cls.env.ref("base.main_company").id)],
+                "company_id": cls.env.ref("base.main_company").id,
             }
         )
         cls.stock_output_account = cls.env["account.account"].create(
@@ -51,7 +50,7 @@ class CommonStockPicking(TransactionCase):
                 "code": "tout",
                 "account_type": "income",
                 "reconcile": True,
-                "company_ids": [Command.link(cls.env.ref("base.main_company").id)],
+                "company_id": cls.env.ref("base.main_company").id,
             }
         )
         cls.stock_journal = cls.env["account.journal"].create(

@@ -164,7 +164,7 @@ class AutomaticWorkflowJob(models.Model):
             ("account_type", "in", ("asset_receivable", "liability_payable")),
             ("reconciled", "=", False),
         ]
-        payment_lines = payment.move_id.line_ids.filtered_domain(domain)
+        payment_lines = payment.line_ids.filtered_domain(domain)
         lines = invoice.line_ids
         for account in payment_lines.account_id:
             (payment_lines + lines).filtered_domain(
@@ -176,12 +176,9 @@ class AutomaticWorkflowJob(models.Model):
     def _handle_pickings(self, sale_workflow):
         pass
 
-    def _sale_workflow_domain(self, workflow):
-        return [("workflow_process_id", "=", workflow.id)]
-
     @api.model
     def run_with_workflow(self, sale_workflow):
-        workflow_domain = self._sale_workflow_domain(sale_workflow)
+        workflow_domain = [("workflow_process_id", "=", sale_workflow.id)]
         if sale_workflow.validate_order:
             self.with_context(
                 send_order_confirmation_mail=sale_workflow.send_order_confirmation_mail
@@ -210,14 +207,9 @@ class AutomaticWorkflowJob(models.Model):
             )
 
     @api.model
-    def _workflow_process_to_run_domain(self):
-        return []
-
-    @api.model
     def run(self):
         """Must be called from ir.cron"""
         sale_workflow_process = self.env["sale.workflow.process"]
-        domain = self._workflow_process_to_run_domain()
-        for sale_workflow in sale_workflow_process.search(domain):
+        for sale_workflow in sale_workflow_process.search([]):
             self.run_with_workflow(sale_workflow)
         return True

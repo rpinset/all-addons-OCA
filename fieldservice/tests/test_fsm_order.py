@@ -5,8 +5,7 @@ from datetime import timedelta
 
 from odoo import fields
 from odoo.exceptions import UserError, ValidationError
-from odoo.tests import Form
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import Form, TransactionCase
 
 
 class TestFSMOrder(TransactionCase):
@@ -138,7 +137,6 @@ class TestFSMOrder(TransactionCase):
             f.date_end = f.date_start + timedelta(hours=80)
             f.request_early = fields.Datetime.today()
         order2 = f.save()
-        order._get_stage_color()
         view_id = "fieldservice.fsm_equipment_form_view"
         with Form(self.env["fsm.equipment"], view=view_id) as f:
             f.name = "Equipment 1"
@@ -256,9 +254,7 @@ class TestFSMOrder(TransactionCase):
             .with_context(**{"default_team_id": self.test_team.id})
             .with_user(self.env.user)
             .read_group(
-                [("id", "=", location.id)],
-                fields=["stage_id"],
-                groupby="stage_id",
+                [("id", "=", location.id)], fields=["stage_id"], groupby="stage_id"
             )
         )
         self.assertTrue(data, "It should be able to read group")

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
+
     <!-- risk_type -->
 
     <record id="risk_type_physical" model="mgmtsystem.hazard.risk.type" forcecreate="0">
@@ -21,4 +22,5 @@
     >
         <field name="name">Environment</field>
     </record>
+
 </odoo>

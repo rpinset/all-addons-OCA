@@ -13,7 +13,9 @@
                     name="connector"
                     invisible="1"
                     groups="connector.group_connector_manager"
-                />
+                >
+
+                </page>
             </xpath>
         </field>
     </record>

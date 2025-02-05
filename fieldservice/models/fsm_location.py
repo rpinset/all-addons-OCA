@@ -81,13 +81,12 @@ class FSMLocation(models.Model):
         for loc in self:
             if loc.fsm_parent_id:
                 if loc.ref:
-                    loc.complete_name = (
-                        f"{loc.fsm_parent_id.complete_name} / "
-                        f"[{loc.ref}] {loc.partner_id.name}"
+                    loc.complete_name = "{} / [{}] {}".format(
+                        loc.fsm_parent_id.complete_name, loc.ref, loc.partner_id.name
                     )
                 else:
-                    loc.complete_name = (
-                        f"{loc.fsm_parent_id.complete_name} / {loc.partner_id.name}"
+                    loc.complete_name = "{} / {}".format(
+                        loc.fsm_parent_id.complete_name, loc.partner_id.name
                     )
             else:
                 if loc.ref:
@@ -303,7 +302,7 @@ class FSMLocation(models.Model):
 
     @api.constrains("fsm_parent_id")
     def _check_location_recursion(self):
-        if self._has_cycle("fsm_parent_id"):
+        if not self._check_recursion(parent="fsm_parent_id"):
             raise ValidationError(_("You cannot create recursive location."))
         return True
 

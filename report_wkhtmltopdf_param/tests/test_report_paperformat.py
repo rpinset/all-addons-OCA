@@ -2,8 +2,6 @@
 # Copyright 2017 Eficent Business and IT Consulting Services, S.L.
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-import logging
-
 import odoo.tests
 from odoo.exceptions import ValidationError
 from odoo.tests.common import tagged
@@ -13,10 +11,7 @@ from odoo.tests.common import tagged
 class TestWkhtmltopdf(odoo.tests.TransactionCase):
     def test_wkhtmltopdf_incorrect_parameter(self):
         for report_paperformat in self.env["report.paperformat"].search([]):
-            with (
-                self.assertRaises(ValidationError),
-                self.assertLogs(level=logging.WARNING),
-            ):
+            with self.assertRaises(ValidationError):
                 report_paperformat.update(
                     {"custom_params": [(0, 0, {"name": "bad-parameter"})]}
                 )
