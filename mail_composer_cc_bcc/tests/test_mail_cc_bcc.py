@@ -16,6 +16,7 @@ VALID_HASHES = [
     "5d1ab352416f5074e131f35f20098d5b",
     "46172c91183f2cb50b22a6b3b5e3869b",
     "8f26c4084cc7fc300e64d19ccdc944fe",
+    "db6cc0d3513a0c85bd716e4cb0a4d09c",
 ]
 
 

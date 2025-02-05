@@ -3,7 +3,7 @@
 {
     "name": "Field Service",
     "summary": "Manage Field Service Locations, Workers and Orders",
-    "version": "16.0.1.9.0",
+    "version": "16.0.1.10.0",
     "license": "AGPL-3",
     "category": "Field Service",
     "author": "Open Source Integrators, Odoo Community Association (OCA)",
@@ -43,7 +43,7 @@
         "demo/fsm_person.xml",
     ],
     "application": True,
-    "development_status": "Beta",
+    "development_status": "Production/Stable",
     "maintainers": ["wolfhall", "max3903"],
     "assets": {
         "web.assets_backend": [

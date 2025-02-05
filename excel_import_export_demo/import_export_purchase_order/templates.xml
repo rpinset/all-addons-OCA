@@ -12,10 +12,6 @@
             name="import_action_id"
             eval="ref('action_purchase_order_import_xlsx')"
         />
-        <field
-            name="export_action_id"
-            eval="ref('action_purchase_order_export_xlsx')"
-        />
         <field name="input_instruction">
             {
                 '__EXPORT__': {

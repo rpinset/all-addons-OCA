@@ -9,6 +9,13 @@
             <xpath expr="//page[@name='geoengine_map']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_crm_partner_geo_form">
+        <field name="name">geo_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base_geolocalize.view_crm_partner_geo_form" />
+        <field name="arch" type="xml">
             <xpath expr="//page[@name='geo_location']/group" position="after">
                 <field
                     name="geo_point"
@@ -17,5 +24,4 @@
             </xpath>
         </field>
     </record>
-
 </odoo>

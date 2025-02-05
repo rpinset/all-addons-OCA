@@ -74,6 +74,7 @@ class SaleLoyaltyRewardWizard(models.TransientModel):
 
 class SaleLoyaltyRewardProductLineWizard(models.TransientModel):
     _name = "sale.loyalty.reward.product_line.wizard"
+    _description = "Sale Loyalty Reward Product Line Wizard"
 
     wizard_id = fields.Many2one(comodel_name="sale.loyalty.reward.wizard")
     reward_id = fields.Many2one(related="wizard_id.selected_reward_id", store=True)

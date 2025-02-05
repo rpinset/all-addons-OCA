@@ -115,12 +115,6 @@ msgid "Execute"
 msgstr "Ejecutar"
 
 #. module: excel_import_export_demo
-#: model:ir.actions.act_window,name:excel_import_export_demo.action_purchase_order_export_xlsx
-#: model:ir.actions.act_window,name:excel_import_export_demo.action_sale_oder_export_xlsx
-msgid "Export Excel"
-msgstr "Exportar Excel"
-
-#. module: excel_import_export_demo
 #: model:ir.model.fields,field_description:excel_import_export_demo.field_report_crm_lead__data
 #: model:ir.model.fields,field_description:excel_import_export_demo.field_report_sale_order__data
 msgid "File"
@@ -303,3 +297,6 @@ msgstr "Asistente para report.partner.list"
 #: model:ir.model,name:excel_import_export_demo.model_report_sale_order
 msgid "Wizard for report.sale.order"
 msgstr "Asistente para report.sale.order"
+
+#~ msgid "Export Excel"
+#~ msgstr "Exportar Excel"

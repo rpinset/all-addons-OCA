@@ -20,6 +20,7 @@ class AccountMove(models.Model):
         "state",
         "date",
         "line_ids.amount_currency",
+        "line_ids.balance",
         "company_id",
         "currency_id",
         "show_currency_rate_amount",
@@ -32,12 +33,14 @@ class AccountMove(models.Model):
         """
         self.currency_rate_amount = 1
         for item in self.filtered("show_currency_rate_amount"):
-            lines = item.line_ids.filtered(lambda x: x.amount_currency > 0)
+            lines = item.line_ids.filtered(lambda x: abs(x.amount_currency) > 0)
             if item.state == "posted" and lines:
-                amount_currency_positive = sum(lines.mapped("amount_currency"))
-                total_debit = sum(lines.mapped("debit"))
+                amount_currency_positive = sum(
+                    [abs(amc) for amc in lines.mapped("amount_currency")]
+                )
+                total_balance_positive = sum([abs(b) for b in lines.mapped("balance")])
                 item.currency_rate_amount = item.currency_id.round(
-                    amount_currency_positive / total_debit
+                    amount_currency_positive / total_balance_positive
                 )
             else:
                 rates = item.currency_id._get_rates(item.company_id, item.date)
@@ -49,3 +52,28 @@ class AccountMove(models.Model):
             item.show_currency_rate_amount = (
                 item.currency_id and item.currency_id != item.company_id.currency_id
             )
+
+
+class AccountMoveLine(models.Model):
+    _inherit = "account.move.line"
+
+    @api.depends(
+        "currency_id",
+        "move_id.company_id",
+        "move_id.date",
+        "move_id.state",
+        "amount_currency",
+        "balance",
+    )
+    def _compute_currency_rate(self):
+        # If move is posted, get rate based on line amount
+        res = super()._compute_currency_rate()
+        for line in self:
+            if line.move_id.state != "posted" or not line.amount_currency:
+                continue
+            line.currency_rate = (
+                line.currency_id.round(abs(line.amount_currency) / abs(line.balance))
+                if line.balance
+                else 0
+            )
+        return res

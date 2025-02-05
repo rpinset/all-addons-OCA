@@ -5,3 +5,4 @@ from . import import_export_sale_order
 from . import report_sale_order
 from . import report_crm_lead
 from . import report_action
+from .hooks import post_init_hook

@@ -244,6 +244,7 @@ msgstr "Bir açıklama ekle..."
 
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
+#: model_terms:ir.ui.view,arch_db:fieldservice.fsm_order_form
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_person_form
 msgid "Address"
 msgstr "Adres"
@@ -549,6 +550,11 @@ msgstr ""
 #: model:ir.model.fields,help:fieldservice.field_fsm_location__employee
 #: model:ir.model.fields,help:fieldservice.field_fsm_person__employee
 msgid "Check this box if this contact is an Employee."
+msgstr ""
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__child_id
+msgid "Child Categories"
 msgstr ""
 
 #. module: fieldservice
@@ -2552,6 +2558,11 @@ msgid "Parent"
 msgstr "Üst"
 
 #. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_category__parent_path
+msgid "Parent Path"
+msgstr ""
+
+#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__parent_name
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__parent_name
 msgid "Parent name"
@@ -2958,6 +2969,12 @@ msgstr "Servis Siparişleri"
 #: model:ir.model.fields,help:fieldservice.field_fsm_order__is_closed
 #: model:ir.model.fields,help:fieldservice.field_fsm_stage__is_closed
 msgid "Services in this stage are considered as closed."
+msgstr ""
+
+#. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__use_partner_credit_limit
+#: model:ir.model.fields,help:fieldservice.field_fsm_person__use_partner_credit_limit
+msgid "Set a value greater than 0.0 to activate a credit limit check"
 msgstr ""
 
 #. module: fieldservice

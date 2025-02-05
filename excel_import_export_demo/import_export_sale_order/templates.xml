@@ -8,8 +8,7 @@
         <field name="fname">sale_order.xlsx</field>
         <field name="name">Sale Order Template (import/export)</field>
         <field name="description">Sample Sales Order Template for testing</field>
-        <field name="import_action_id" eval="ref('action_sale_oder_export_xlsx')" />
-        <field name="export_action_id" eval="ref('action_sale_oder_import_xlsx')" />
+        <field name="import_action_id" eval="ref('action_sale_oder_import_xlsx')" />
         <field name="input_instruction">
             {
                 '__EXPORT__': {

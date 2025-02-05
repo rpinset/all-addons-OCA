@@ -23,6 +23,12 @@
                 />
             </xpath>
             <xpath
+                expr="//field[@name='order_line']/kanban/field[@name='price_unit']"
+                position="after"
+            >
+                <field name="discount" groups="product.group_discount_per_so_line" />
+            </xpath>
+            <xpath
                 expr="//field[@name='order_line']/kanban//t[@t-out='record.price_unit.value']/.."
                 position="inside"
             >

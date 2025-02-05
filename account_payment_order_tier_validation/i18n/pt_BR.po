@@ -27,6 +27,11 @@ msgid "Has Comment"
 msgstr "Tem Comentário"
 
 #. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__is_reevaluation_required
+msgid "Is Reevaluation Required"
+msgstr ""
+
+#. module: account_payment_order_tier_validation
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "My Payment Orders to review"
 msgstr "Minhas Ordens de Pagamento para revisar"

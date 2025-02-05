@@ -3,7 +3,7 @@
 
 {
     "name": "Excel Import/Export/Report Demo",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "author": "Ecosoft,Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/server-tools",
@@ -30,6 +30,7 @@
         "report_action/partner_list/report_partner_list.xml",
         "report_action/partner_list/security/ir.model.access.csv",
     ],
+    "post_init_hook": "post_init_hook",
     "installable": True,
     "development_status": "Beta",
     "maintainers": ["kittiu"],

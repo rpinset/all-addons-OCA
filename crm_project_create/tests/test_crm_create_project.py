@@ -38,9 +38,12 @@ class TestCrmCreateProject(TransactionCase):
                 "user_id": cls.user_salesman.id,
             }
         )
+        cls.default_plan = cls.env["account.analytic.plan"].create(
+            {"name": "Default", "company_id": False}
+        )
 
     @users("user_salesman")
-    def test_crm_create_project(self):
+    def test_crm_project_create(self):
         """Test the creation of a project from a lead."""
         wizard_form = Form(
             self.env["crm.create.project"].with_context(
@@ -51,7 +54,6 @@ class TestCrmCreateProject(TransactionCase):
             )
         )
         self.assertEqual(wizard_form.project_name, self.lead.name)
-
         wizard_form.project_name = "Test Project"
         wizard_form.project_description = "Test Description"
         wizard = wizard_form.save()
@@ -63,3 +65,28 @@ class TestCrmCreateProject(TransactionCase):
             self.lead.project_id.description,
             Markup("<p>Test Description</p>"),
         )
+        # When a lead is archived, so it's project and their analytic account.
+        analytic_account = self.env["account.analytic.account"].create(
+            {
+                "name": "Test analytic account",
+                "plan_id": self.default_plan.id,
+                "company_id": False,
+            }
+        )
+        self.lead.project_id.analytic_account_id = analytic_account
+        self.lead.action_archive()
+        self.assertFalse(self.lead.project_id.active)
+        self.assertFalse(self.lead.project_id.analytic_account_id.active)
+        # Reactivate the lead
+        self.lead.toggle_active()
+        self.assertTrue(self.lead.project_id.active)
+        self.assertTrue(self.lead.project_id.analytic_account_id.active)
+        # Mark lead as lost
+        lost_wizard = self.env["crm.lead.lost"].create(
+            {
+                "lost_reason_id": self.env.ref("crm.lost_reason_1").id,
+            }
+        )
+        lost_wizard.with_context(active_ids=self.lead.ids).action_lost_reason_apply()
+        self.assertFalse(self.lead.project_id.active)
+        self.assertFalse(self.lead.project_id.analytic_account_id.active)

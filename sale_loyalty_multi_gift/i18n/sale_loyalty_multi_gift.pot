@@ -123,6 +123,11 @@ msgid "Sale Loyalty - Reward Selection Wizard"
 msgstr ""
 
 #. module: sale_loyalty_multi_gift
+#: model:ir.model,name:sale_loyalty_multi_gift.model_sale_loyalty_reward_product_line_wizard
+msgid "Sale Loyalty Reward Product Line Wizard"
+msgstr ""
+
+#. module: sale_loyalty_multi_gift
 #: model:ir.model,name:sale_loyalty_multi_gift.model_sale_order
 msgid "Sales Order"
 msgstr ""
@@ -145,9 +150,4 @@ msgstr ""
 #. module: sale_loyalty_multi_gift
 #: model:ir.model.fields,field_description:sale_loyalty_multi_gift.field_sale_loyalty_reward_product_line_wizard__wizard_id
 msgid "Wizard"
-msgstr ""
-
-#. module: sale_loyalty_multi_gift
-#: model:ir.model,name:sale_loyalty_multi_gift.model_sale_loyalty_reward_product_line_wizard
-msgid "sale.loyalty.reward.product_line.wizard"
 msgstr ""

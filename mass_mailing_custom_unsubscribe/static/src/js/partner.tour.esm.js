@@ -17,6 +17,10 @@ tour.register(
     },
     [
         {
+            content: "Confirm unsubscribe",
+            trigger: "button:contains('Unsubscribe')",
+        },
+        {
             content: "Choose other reason",
             trigger: ".radio:contains('Other reason') :radio:not(:checked)",
             extra_trigger: "#reason_form #custom_div_feedback",
