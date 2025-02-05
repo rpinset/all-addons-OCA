@@ -32,6 +32,15 @@ msgstr "Tiene productos permitidos"
 msgid "Sales Order"
 msgstr "Orden de Venta"
 
+#. module: sale_order_product_assortment
+#: code:addons/sale_order_product_assortment/models/sale_order.py:0
+#, python-format
+msgid ""
+"This SO contains one or more products that are not allowed for partner "
+"%(partner)s:\n"
+"- %(products)s"
+msgstr ""
+
 #~ msgid "Product"
 #~ msgstr "Producto"
 
