@@ -362,6 +362,16 @@ msgid "odoo | save"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screencasts
+msgid "odoo | screencasts"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screenshots
+msgid "odoo | screenshots"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_server_wide_modules
 msgid "odoo | server_wide_modules"
 msgstr ""

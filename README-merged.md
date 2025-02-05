@@ -1361,6 +1361,7 @@ addon | version | maintainers | summary
 [sale_order_product_assortment](sale_order_product_assortment/) | 12.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Sale Order Product Assortment
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 12.0.3.0.1 |  | Recommend products to sell to customer based on history
 [sale_order_product_recommendation_secondary_unit](sale_order_product_recommendation_secondary_unit/) | 12.0.2.1.0 |  | Add secondary unit to recommend products wizard
+[sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 12.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_rename](sale_order_rename/) | 12.0.1.0.2 |  | Allows renaming of Quotation / Sale Order
 [sale_order_revision](sale_order_revision/) | 12.0.1.0.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 12.0.1.1.0 |  | Sale product in a secondary unit

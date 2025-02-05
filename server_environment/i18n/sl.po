@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
@@ -361,6 +361,16 @@ msgstr ""
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_save
 msgid "odoo | save"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screencasts
+msgid "odoo | screencasts"
+msgstr ""
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screenshots
+msgid "odoo | screenshots"
 msgstr ""
 
 #. module: server_environment
