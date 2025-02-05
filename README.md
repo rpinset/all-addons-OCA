@@ -196,16 +196,16 @@ Date:   Sun Feb 2 18:06:33 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 2c656a667bf7a04db9b086b242da6746cec82bb7
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Feb 3 11:02:41 2025 +0000
+commit 47d09479e0cdeb800a447bc4698c691ee6249327
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 5 09:43:44 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (6 of 6 strings)
     
     Translation: account-payment-18.0/account-payment-18.0-account_payment_promissory_note
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-18-0/account-payment-18-0-account_payment_promissory_note/
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-18-0/account-payment-18-0-account_payment_promissory_note/it/
 
 
 ## connector
@@ -440,11 +440,16 @@ Date:   Sun Feb 2 18:40:02 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit a93e44f3529a6121e50dd7c32acc9ebed5f3ec24
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:43:37 2025 +0000
+commit 82ee47abbdc5686609e67f9ca37404fb4de6113c
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Feb 5 19:51:47 2025 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: e-commerce-18.0/e-commerce-18.0-website_sale_b2x_alt_price
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-18-0/e-commerce-18-0-website_sale_b2x_alt_price/
 
 
 ## edi
@@ -512,11 +517,16 @@ Date:   Sun Oct 20 16:11:23 2024 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 4bef7fd5464de36028ed6eea1ce8d66b9dbc2858
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:54:12 2025 +0000
+commit 8af362e39c5e0b35008df5d63f42bb21ae92efae
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Feb 5 19:51:49 2025 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: hr-18.0/hr-18.0-hr_employee_calendar_planning
+    Translate-URL: https://translation.odoo-community.org/projects/hr-18-0/hr-18-0-hr_employee_calendar_planning/
 
 
 ## hr-attendance
@@ -998,16 +1008,11 @@ Date:   Sun Oct 20 16:09:21 2024 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit efe66497f9ee3107db6f3e26e3cbda634a40788c
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Feb 4 19:52:23 2025 +0000
+commit c7809730212516fb604f868c8160905517cf5be4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 5 17:26:35 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-workflow-18.0/stock-logistics-workflow-18.0-stock_dangerous_goods
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-18-0/stock-logistics-workflow-18-0-stock_dangerous_goods/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1123,11 +1128,16 @@ Date:   Sun Feb 2 20:18:47 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 6717d1d39024f01d5a7b643d5385d3f67662bc4c
+commit 275307078fd5d53b58ff093bfc73d8e01caecd99
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 5 09:41:59 2025 +0000
+Date:   Wed Feb 5 09:42:20 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (23 of 23 strings)
+    
+    Translation: product-attribute-18.0/product-attribute-18.0-product_stock_state
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-18-0/product-attribute-18-0-product_stock_state/it/
 
 
 ## product-kitting
@@ -1340,25 +1350,30 @@ Date:   Fri Dec 20 09:34:19 2024 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 65deb4b33352e11a699e2dba56645742cc431982
-Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
-Date:   Tue Feb 4 21:02:57 2025 +0000
+commit aef6ba4588e213e8ec241b82723c3cdd0949b384
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Feb 5 19:51:58 2025 +0000
 
-    Translated using Weblate (Dutch)
+    Update translation files
     
-    Currently translated at 100.0% (146 of 146 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-ux-18.0/server-ux-18.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-18-0/server-ux-18-0-base_tier_validation/nl/
+    Translation: server-ux-18.0/server-ux-18.0-server_action_mass_edit
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-18-0/server-ux-18-0-server_action_mass_edit/
 
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 7f0cab4ac13e746afd1c578e12388a545f637719
+commit 641d61d1ec62df2348c0cd2f149beb484221a4ee
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 5 10:06:35 2025 +0000
+Date:   Wed Feb 5 10:06:43 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (51 of 51 strings)
+    
+    Translation: community-data-files-18.0/community-data-files-18.0-l10n_eu_product_adr_dangerous_goods
+    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-18-0/community-data-files-18-0-l10n_eu_product_adr_dangerous_goods/it/
 
 
 ## webhook

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-04 14:06+0000\n"
+"PO-Revision-Date: 2025-02-05 12:07+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -4546,58 +4546,58 @@ msgstr "ACIDO DICLOROISOCIANURICO, SECCO o SALI DELL'ACIDO DICLOROISOCIANURICO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2490
 msgid "DICHLOROISOPROPYL ETHER"
-msgstr ""
+msgstr "ETERE DICLOROISOPROPILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1593
 msgid "DICHLOROMETHANE"
-msgstr ""
+msgstr "DICLOROMETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1152
 msgid "DICHLOROPENTANES"
-msgstr ""
+msgstr "DICLOROPENTANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2250
 msgid "DICHLOROPHENYL ISOCYANATES"
-msgstr ""
+msgstr "ISOCIANATI DI DICLOROFENIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1766
 msgid "DICHLOROPHENYL-TRICHLOROSILANE"
-msgstr ""
+msgstr "DICLOROFENIL-TRICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2047_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2047_5L
 msgid "DICHLOROPROPENES"
-msgstr ""
+msgstr "DICLOROPROPENI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2189
 msgid "DICHLOROSILANE"
-msgstr ""
+msgstr "DICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2687
 msgid "DICYCLOHEXYL-AMMONIUM NITRITE"
-msgstr ""
+msgstr "NITRITO DI DICICLOESIL-AMMONIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2565
 msgid "DICYCLOHEXYLAMINE"
-msgstr ""
+msgstr "DICICLOESILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2048
 msgid "DICYCLOPENTADIENE"
-msgstr ""
+msgstr "DICICLOPENTADIENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1465
 msgid "DIDYMIUM NITRATE"
-msgstr ""
+msgstr "NITRATO DI DIDIMIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1202_F1_3_640L/664_5L_P001/IBC03/LP01/R001_3
@@ -4605,51 +4605,54 @@ msgid ""
 "DIESEL FUEL complying with standard EN 590:2013 + AC:2014 or GAS OIL or "
 "HEATING OIL, LIGHT with a flash-point as specified in EN 590:2013 + AC:2014"
 msgstr ""
+"COMBUSTIBILE DIESEL conforme alla norma EN 590:2013 + AC:2014 oppure GASOLIO "
+"oppure OLIO PER RISCALDAMENTO, LEGGERO con punto di infiammabilità come "
+"specificato nella norma EN 590:2013 + AC:2014"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2373
 msgid "DIETHOXYMETHANE"
-msgstr ""
+msgstr "DIETOSSIMETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2366
 msgid "DIETHYL CARBONATE"
-msgstr ""
+msgstr "CARBONATO DI DIETILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1155
 msgid "DIETHYL ETHER (ETHYL ETHER)"
-msgstr ""
+msgstr "ETERE DIETILICO (ETERE ETILE)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1156
 msgid "DIETHYL KETONE"
-msgstr ""
+msgstr "DIETILCHETONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1594
 msgid "DIETHYL SULPHATE"
-msgstr ""
+msgstr "SOLFATO DI DIETILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2375
 msgid "DIETHYL SULPHIDE"
-msgstr ""
+msgstr "SOLFURO DI DIETILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1154
 msgid "DIETHYLAMINE"
-msgstr ""
+msgstr "DIETILAMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2049
 msgid "DIETHYLBENZENE"
-msgstr ""
+msgstr "DIETILBENZENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1767
 msgid "DIETHYLDICHLORO-SILANE"
-msgstr ""
+msgstr "DIETILDICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0075
@@ -4657,16 +4660,18 @@ msgid ""
 "DIETHYLENEGLYCOL DINITRATE, DESENSITIZED with not less than 25% non-"
 "volatile, water-insoluble phlegmatizer, by mass"
 msgstr ""
+"DIETILENGLICOLE DINITRATE, DESENSIBILIZZATO con non meno del 25% in massa di "
+"flemmatizzante non volatile, insolubile in acqua"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2079
 msgid "DIETHYLENETRIAMINE"
-msgstr ""
+msgstr "DIETILENETRIAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2751
 msgid "DIETHYLTHIO-PHOSPHORYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI DIETILTIOFOSFORILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3252
@@ -4676,17 +4681,17 @@ msgstr "DIFLUOROMETHANE (GAS REFRIGERANTE R 32)"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1768
 msgid "DIFLUOROPHOSPHORIC ACID, ANHYDROUS"
-msgstr ""
+msgstr "ACIDO DIFLUOROFOSFOROICO, ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1157
 msgid "DIISOBUTYL KETONE"
-msgstr ""
+msgstr "DIISOBUTILCHETONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2361
 msgid "DIISOBUTYLAMINE"
-msgstr ""
+msgstr "DIISOBUTILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2050
@@ -4696,119 +4701,119 @@ msgstr "DIISOBUTILENE, ISOMERIC COMPOUNDS"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1902
 msgid "DIISOOCTYL ACID PHOSPHATE"
-msgstr ""
+msgstr "FOSFATO ACIDO DIISOOTTILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1159
 msgid "DIISOPROPYL ETHER"
-msgstr ""
+msgstr "ETERE DIISOPROPILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1158
 msgid "DIISOPROPYLAMINE"
-msgstr ""
+msgstr "DIISOPROPILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2521
 msgid "DIKETENE, STABILIZED"
-msgstr ""
+msgstr "DIKETENE, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1161
 msgid "DIMETHYL CARBONATE"
-msgstr ""
+msgstr "CARBONATO DI DIMETIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2381
 msgid "DIMETHYL DISULPHIDE"
-msgstr ""
+msgstr "DISOLFURO DI DIMETIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1033
 msgid "DIMETHYL ETHER"
-msgstr ""
+msgstr "ETERE DIMETILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1595
 msgid "DIMETHYL SULPHATE"
-msgstr ""
+msgstr "DIMETIL SOLFATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1164
 msgid "DIMETHYL SULPHIDE"
-msgstr ""
+msgstr "SOLFURO DI DIMETIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2267
 msgid "DIMETHYL THIOPHOSPHORYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI DIMETILTIOFOSFORILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2263
 msgid "DIMETHYL-CYCLOHEXANES"
-msgstr ""
+msgstr "DIMETIL-CICLOESANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2266
 msgid "DIMETHYL-N-PROPYLAMINE"
-msgstr ""
+msgstr "DIMETIL-N-PROPILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1160
 msgid "DIMETHYLAMINE AQUEOUS SOLUTION"
-msgstr ""
+msgstr "DIMETILAMMINA SOLUZIONE ACQUOSA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1032
 msgid "DIMETHYLAMINE, ANHYDROUS"
-msgstr ""
+msgstr "DIMETILAMINA ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2262
 msgid "DIMETHYLCARBAMOYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI DIMETILCARBAMMILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1162
 msgid "DIMETHYLDICHLORO-SILANE"
-msgstr ""
+msgstr "DIMETILDICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2380
 msgid "DIMETHYLDIETHOXY-SILANE"
-msgstr ""
+msgstr "DIMETILDIETOSSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2707_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2707_5L
 msgid "DIMETHYLDIOXANES"
-msgstr ""
+msgstr "DIMETILDIOSSANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2382
 msgid "DIMETHYLHYDRAZINE, SYMMETRICAL"
-msgstr ""
+msgstr "DIMETILIDRAZINA, SIMMETRICA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1163
 msgid "DIMETHYLHYDRAZINE, UNSYMMETRICAL"
-msgstr ""
+msgstr "DIMETILIDRAZINA, ASIMMETRICA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1598
 msgid "DINITRO-o-CRESOL"
-msgstr ""
+msgstr "DINITRO-o-CRESOLO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1596
 msgid "DINITROANILINES"
-msgstr ""
+msgstr "DINITROANILINE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1597_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1597_5L
 msgid "DINITROBENZENES, LIQUID"
-msgstr ""
+msgstr "DINITROBENZENI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3443
@@ -4823,28 +4828,28 @@ msgstr "DINITROGEN TETROSSIDO (NITROGEN DIOSSIDO)"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0489
 msgid "DINITROGLYCOLURIL (DINGU)"
-msgstr ""
+msgstr "DINITROGLICOLURIL (DINGU)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1599_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1599_5L
 msgid "DINITROPHENOL SOLUTION"
-msgstr ""
+msgstr "SOLUZIONE DI DINITROFENOLO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1320
 msgid "DINITROPHENOL, WETTED with not less than 15% water, by mass"
-msgstr ""
+msgstr "DINITROFENOLO, BAGNATO con almeno il 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0076
 msgid "DINITROPHENOL, dry or wetted with less than 15% water, by mass"
-msgstr ""
+msgstr "DINITROFENOLO, secco o umidificato con meno del 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1321
 msgid "DINITROPHENOLATES, WETTED with not less than 15% water, by mass"
-msgstr ""
+msgstr "DINITROFENOLATI, BAGNATI con almeno il 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0077
@@ -4852,31 +4857,34 @@ msgid ""
 "DINITROPHENOLATES, alkali metals, dry or wetted with less than 15% water, by "
 "mass"
 msgstr ""
+"DINITROFENOLATI, metalli alcalini, secchi o umidificati con meno del 15% di "
+"acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1322
 msgid "DINITRORESORCINOL, WETTED with not less than 15% water, by mass"
-msgstr ""
+msgstr "DINITRORESORCINOLO, BAGNATO con almeno il 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0078
 msgid "DINITRORESORCINOL, dry or wetted with less than 15% water, by mass"
 msgstr ""
+"DINITRORESORCINOLO, secco o umidificato con meno del 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0406
 msgid "DINITROSOBENZENE"
-msgstr ""
+msgstr "DINITROSOBENZENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2038
 msgid "DINITROTOLUENES, LIQUID"
-msgstr ""
+msgstr "DINITROTOLUENI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1600
 msgid "DINITROTOLUENES, MOLTEN"
-msgstr ""
+msgstr "DINITROTOLUENI, FUSORI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3454
@@ -4886,27 +4894,27 @@ msgstr "DINITROTOLUENES, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1165
 msgid "DIOXANE"
-msgstr ""
+msgstr "DIOSSANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1166
 msgid "DIOXOLANE"
-msgstr ""
+msgstr "DIOSSOLANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2052
 msgid "DIPENTENE"
-msgstr ""
+msgstr "DIPENTENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1698
 msgid "DIPHENYLAMINE CHLOROARSINE"
-msgstr ""
+msgstr "DIFENILAMMINA CLOROARSINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1699
 msgid "DIPHENYLCHLORO-ARSINE, LIQUID"
-msgstr ""
+msgstr "DIFENILCLOROARSINA, LIQUIDO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3450
@@ -4916,46 +4924,47 @@ msgstr "DIPHENYLCHLORO-ARSINE, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1769
 msgid "DIPHENYLDICHLORO-SILANE"
-msgstr ""
+msgstr "DIFENILDICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1770
 msgid "DIPHENYLMETHYL BROMIDE"
-msgstr ""
+msgstr "BROMURO DI DIFENILMETIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2852
 msgid "DIPICRYL SULPHIDE, WETTED with not less than 10% water, by mass"
-msgstr ""
+msgstr "DIPICRYL SOLFURO, BAGNATO con almeno il 10% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0401
 msgid "DIPICRYL SULPHIDE, dry or wetted with less than 10% water, by mass"
 msgstr ""
+"DIPICRYL SULPHURO, secco o umidificato con meno del 10% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2710
 msgid "DIPROPYL KETONE"
-msgstr ""
+msgstr "DIPROPILCHETONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2383
 msgid "DIPROPYLAMINE"
-msgstr ""
+msgstr "DIPROPILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1903
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1903_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1903_5L
 msgid "DISINFECTANT, LIQUID, CORROSIVE, N.O.S."
-msgstr ""
+msgstr "DISINFETTANTE LIQUIDO CORROSIVO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3142
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3142_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3142_5L
 msgid "DISINFECTANT, LIQUID, TOXIC, N.O.S."
-msgstr ""
+msgstr "DISINFETTANTE LIQUIDO TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1601
@@ -4967,17 +4976,17 @@ msgstr "DISINFECTANT, SOLIDO, TOXIC, N.O.S."
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3253
 msgid "DISODIUM TRIOXOSILICATE"
-msgstr ""
+msgstr "TRIOSSOSILICATO DISODICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1167
 msgid "DIVINYL ETHER, STABILIZED"
-msgstr ""
+msgstr "ETERE DIVINILICO, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1771
 msgid "DODECYLTRICHLORO-SILANE"
-msgstr ""
+msgstr "DODECILTRICLORO-SILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2801
@@ -4986,6 +4995,8 @@ msgstr ""
 msgid ""
 "DYE, LIQUID, CORROSIVE, N.O.S. or DYE INTERMEDIATE, LIQUID, CORROSIVE, N.O.S."
 msgstr ""
+"COLORANTE LIQUIDO CORROSIVO, N.A.S. o COLORANTE INTERMEDIO, LIQUIDO, "
+"CORROSIVO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1602
@@ -4993,6 +5004,8 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1602_5L
 msgid "DYE, LIQUID, TOXIC, N.O.S. or DYE INTERMEDIATE, LIQUID, TOXIC, N.O.S."
 msgstr ""
+"COLORANTE, LIQUIDO, TOSSICO, N.A.S. o COLORANTE INTERMEDIO, LIQUIDO, "
+"TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3147
@@ -5019,23 +5032,23 @@ msgstr "DYE, SOLIDO, TOXIC, N.O.S. or DYE INTERMEDIATE, SOLIDO, TOXIC, N.O.S."
 #: model:ir.ui.menu,name:l10n_eu_product_adr.adr_main_menu
 #: model_terms:ir.ui.view,arch_db:l10n_eu_product_adr.product_template_form_view
 msgid "Dangerous Goods"
-msgstr ""
+msgstr "Merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model,name:l10n_eu_product_adr.model_adr_class
 msgid "Dangerous Goods Class"
-msgstr ""
+msgstr "Classe di merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model:ir.actions.act_window,name:l10n_eu_product_adr.adr_class_action
 #: model:ir.ui.menu,name:l10n_eu_product_adr.adr_class_menu
 msgid "Dangerous Goods Classes"
-msgstr ""
+msgstr "Classi di merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model,name:l10n_eu_product_adr.model_adr_label
 msgid "Dangerous Goods Label"
-msgstr ""
+msgstr "Etichetta merci pericolose"
 
 #. module: l10n_eu_product_adr
 #. odoo-python
@@ -5044,23 +5057,25 @@ msgid ""
 "Dangerous Goods Label %(label)s cannot be deleted because it is in use on "
 "one or more dangerous goods: %(labels)s"
 msgstr ""
+"Etichetta merci pericolose %(label)s non può essere eliminata perché è in "
+"uso su una o più merci pericolose: %(label)s"
 
 #. module: l10n_eu_product_adr
 #: model:ir.actions.act_window,name:l10n_eu_product_adr.adr_label_action
 #: model:ir.ui.menu,name:l10n_eu_product_adr.adr_label_menu
 msgid "Dangerous Goods Labels"
-msgstr ""
+msgstr "Etichette per merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model,name:l10n_eu_product_adr.model_adr_packing_instruction
 msgid "Dangerous Goods Packing Instruction"
-msgstr ""
+msgstr "Istruzioni per l'imballaggio di merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model:ir.actions.act_window,name:l10n_eu_product_adr.adr_packing_instruction_action
 #: model:ir.ui.menu,name:l10n_eu_product_adr.adr_packing_instruction_menu
 msgid "Dangerous Goods Packing Instructions"
-msgstr ""
+msgstr "Istruzioni per l'imballaggio di merci pericolose"
 
 #. module: l10n_eu_product_adr
 #: model_terms:ir.ui.view,arch_db:l10n_eu_product_adr.product_template_form_view
@@ -5068,6 +5083,9 @@ msgid ""
 "Dangerous goods settings differ per variant of this product. Please "
 "configure the dangerous goods settings on each variant."
 msgstr ""
+"Le impostazioni per le merci pericolose variano a seconda della variante di "
+"questo prodotto. Si prega di configurare le impostazioni per le merci "
+"pericolose su ogni variante."
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_class__display_name
@@ -5075,7 +5093,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_label__display_name
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3256_F2_3_274/560_P099/IBC99_3
@@ -5083,6 +5101,9 @@ msgid ""
 "ELEVATED TEMPERATURE LIQUID, FLAMMABLE, N.O.S. with flashpoint above 60° C, "
 "at or above its flashpoint and at or above 100° C"
 msgstr ""
+"LIQUIDO AD ALTA TEMPERATURA, INFIAMMABILE, N.A.S. con punto di "
+"infiammabilità superiore a 60° C, uguale o superiore al suo punto di "
+"infiammabilità e uguale o superiore a 100° C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3256_F2_3_274/560_P099/IBC99_3_lower_flashpoint
@@ -5090,6 +5111,9 @@ msgid ""
 "ELEVATED TEMPERATURE LIQUID, FLAMMABLE, N.O.S. with flashpoint above 60° C, "
 "at or above its flashpoint and below 100° C"
 msgstr ""
+"LIQUIDO AD ALTA TEMPERATURA, INFIAMMABILE, N.A.S. con punto di "
+"infiammabilità superiore a 60° C, uguale o superiore al suo punto di "
+"infiammabilità e inferiore a 100° C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3257_M9_9_274/643/668_P099/IBC99_3
@@ -5098,6 +5122,9 @@ msgid ""
 "point (including molten metals, molten salts, etc.), filled at a temperature "
 "higher than 190 °C"
 msgstr ""
+"LIQUIDO AD ALTA TEMPERATURA, N.A.S., pari o superiore a 100 °C e inferiore "
+"al suo punto di infiammabilità (compresi metalli fusi, sali fusi, ecc.), "
+"riempito a una temperatura superiore a 190 °C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3257_M9_9_274/643/668_P099/IBC99_3_lower_fill_temperature
@@ -5106,6 +5133,9 @@ msgid ""
 "point (including molten metals, molten salts, etc.), filled at or below 190 "
 "°C"
 msgstr ""
+"LIQUIDO AD ALTA TEMPERATURA, N.A.S., a temperatura pari o superiore a 100 °C "
+"e al di sotto del suo punto di infiammabilità (compresi metalli fusi, sali "
+"fusi, ecc.), riempito a temperatura pari o inferiore a 190 °C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3258
@@ -5115,7 +5145,7 @@ msgstr "ELEVATED TEMPERATURE SOLIDO, N.O.S., at or above 240 °C"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3530
 msgid "ENGINE, INTERNAL COMBUSTION or MACHINERY, INTERNAL COMBUSTION"
-msgstr ""
+msgstr "MOTORE, A COMBUSTIONE INTERNA o MACCHINARIO, A COMBUSTIONE INTERNA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3529
@@ -5124,6 +5154,10 @@ msgid ""
 "FLAMMABLE GAS POWERED or MACHINERY, INTERNAL COMBUSTION, FLAMMABLE GAS "
 "POWERED or MACHINERY, FUEL CELL, FLAMMABLE GAS POWERED"
 msgstr ""
+"MOTORE, A COMBUSTIONE INTERNA, ALIMENTATO A GAS INFIAMMABILE o MOTORE, A "
+"CELLA A COMBUSTIBILE, ALIMENTATO A GAS INFIAMMABILE o MACCHINARIO, A "
+"COMBUSTIONE INTERNA, ALIMENTATO A GAS INFIAMMABILE o MACCHINARIO, A CELLA A "
+"COMBUSTIBILE, ALIMENTATO A GAS INFIAMMABILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3528
@@ -5132,11 +5166,15 @@ msgid ""
 "FLAMMABLE LIQUID POWERED or MACHINERY, INTERNAL COMBUSTION, FLAMMABLE LIQUID "
 "POWERED or MACHINERY, FUEL CELL, FLAMMABLE LIQUID POWERED"
 msgstr ""
+"MOTORE, A COMBUSTIONE INTERNA, A LIQUIDO INFIAMMABILE o MOTORE, A CELLA A "
+"COMBUSTIBILE, A LIQUIDO INFIAMMABILE o MACCHINARIO, A COMBUSTIONE INTERNA, A "
+"LIQUIDO INFIAMMABILE o MACCHINARIO, A CELLA A COMBUSTIBILE, A LIQUIDO "
+"INFIAMMABILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3082
 msgid "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S."
-msgstr ""
+msgstr "MATERIA PERICOLOSA PER L'AMBIENTE, LIQUIDA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3077
@@ -5146,12 +5184,12 @@ msgstr "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, SOLIDO, N.O.S."
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2558
 msgid "EPIBROMOHYDRIN"
-msgstr ""
+msgstr "EPIBROMOIDRIN"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2023
 msgid "EPICHLOROHYDRIN"
-msgstr ""
+msgstr "EPICLORIDRINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3272_1L
