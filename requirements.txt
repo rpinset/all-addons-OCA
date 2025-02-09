@@ -22,9 +22,6 @@ Avalara
 # generated from manifests external_dependencies
 ofxparse
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-# From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-# generated from manifests external_dependencies
-cachetools
 # From [https://github.com/OCA/connector-ecommerce.git](https://github.com/OCA/connector-ecommerce.git)
 # From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
 # generated from manifests external_dependencies

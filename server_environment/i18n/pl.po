@@ -292,6 +292,11 @@ msgid "odoo | limit_time_real_cron"
 msgstr ""
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_worker_cron
+msgid "odoo | limit_time_worker_cron"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_list_db
 msgid "odoo | list_db"
 msgstr ""
