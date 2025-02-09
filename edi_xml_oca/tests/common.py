@@ -6,6 +6,8 @@ import os
 
 import xmlunittest
 
+from odoo.addons.component.tests.common import SavepointComponentCase
+
 
 class XMLTestCaseMixin(xmlunittest.XmlTestMixin):
     def _dev_write_example_file(self, test_file, filename, content):
@@ -22,3 +24,15 @@ class XMLTestCaseMixin(xmlunittest.XmlTestMixin):
         path = os.path.join(os.path.dirname(__file__), "examples", filename)
         with open(path, "r") as thefile:
             return thefile.read()
+
+
+class XMLComponentTestCase(SavepointComponentCase, XMLTestCaseMixin):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.backend = cls.env.ref("edi_oca.demo_edi_backend")
+        cls.handler = cls.backend._find_component(
+            cls.backend._name,
+            ["edi.xml"],
+            work_ctx={"schema_path": "edi_xml_oca:tests/fixtures/Test.xsd"},
+        )

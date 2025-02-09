@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-02-07 12:22+0000\n"
+"PO-Revision-Date: 2025-02-05 21:06+0000\n"
 "Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
 "Language-Team: none\n"
 "Language: nl\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/models/account_move.py:0
@@ -41,6 +41,9 @@ msgid ""
 "<b>Missing Invoice Import Configuration</b> on partner <a href=# data-oe-"
 "model=res.partner data-oe-id=%d>%s</a>: the imported invoice is incomplete."
 msgstr ""
+"<b>Ontbrekende factuurimportconfiguratie</b> voor partner <a href=# data-oe-"
+"model=res.partner data-oe-id=%d>%s</a>: de geïmporteerde factuur is "
+"onvolledig."
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/wizard/account_invoice_import.py:0
@@ -73,13 +76,13 @@ msgstr "Correctie regel"
 #: model:ir.model.fields,field_description:account_invoice_import.field_res_company__adjustment_credit_account_id
 #: model:ir.model.fields,field_description:account_invoice_import.field_res_config_settings__adjustment_credit_account_id
 msgid "Adjustment Credit Account"
-msgstr ""
+msgstr "Aanpassingskredietrekening"
 
 #. module: account_invoice_import
 #: model:ir.model.fields,field_description:account_invoice_import.field_res_company__adjustment_debit_account_id
 #: model:ir.model.fields,field_description:account_invoice_import.field_res_config_settings__adjustment_debit_account_id
 msgid "Adjustment Debit Account"
-msgstr ""
+msgstr "Aanpassing debetrekening"
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/wizard/account_invoice_import.py:0
@@ -227,7 +230,7 @@ msgstr "Forceer omschrijving"
 #: model:ir.model.fields,field_description:account_invoice_import.field_account_invoice_import_config__journal_id
 #: model_terms:ir.ui.view,arch_db:account_invoice_import.account_invoice_import_config_search
 msgid "Force Purchase Journal"
-msgstr ""
+msgstr "Forceer aankoopjournaal"
 
 #. module: account_invoice_import
 #: model:ir.model.fields,help:account_invoice_import.field_account_invoice_import_config__label
@@ -264,7 +267,7 @@ msgstr "Indien aangemerkt enkele berichten hebben afleveringsproblemen."
 #. module: account_invoice_import
 #: model:ir.model.fields,help:account_invoice_import.field_account_invoice_import_config__journal_id
 msgid "If empty, Odoo will use the first purchase journal."
-msgstr ""
+msgstr "Als dit veld leeg is, gebruikt Odoo het eerste inkoopjournaal."
 
 #. module: account_invoice_import
 #: model_terms:ir.ui.view,arch_db:account_invoice_import.account_invoice_import_form
@@ -372,7 +375,7 @@ msgstr ""
 #. module: account_invoice_import
 #: model:ir.model,name:account_invoice_import.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Journaalinvoer"
 
 #. module: account_invoice_import
 #: model:ir.model.fields,field_description:account_invoice_import.field_account_invoice_import____last_update
@@ -597,6 +600,8 @@ msgid ""
 "The <b>tax amount</b> for tax %s has been <b>forced</b> to %s (amount "
 "computed by Odoo was: %s)."
 msgstr ""
+"Het <b>belastingbedrag</b> voor belasting %s is <b>geforceerd</b> naar %s ("
+"het door Odoo berekende bedrag was: %s)."
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/models/account_invoice_import_config.py:0
@@ -891,6 +896,10 @@ msgid ""
 "the Invoice Import Configuration of <a href=# data-oe-model=res.partner data-"
 "oe-id=%d>%s</a> to set a Single Line method."
 msgstr ""
+"U hebt een Multi Line-methode geselecteerd voor deze import, maar Odoo kon "
+"geen informatie over de regels van de factuur extraheren/lezen. U moet de "
+"Factuurimportconfiguratie van <a href=# data-oe-model=res.partner data-oe-"
+"id=%d>%s</a> bijwerken om een Single Line-methode in te stellen."
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/wizard/account_invoice_import.py:0
@@ -899,6 +908,8 @@ msgid ""
 "You must configure the 'Adjustment Credit Account' on the Accounting "
 "Configuration page."
 msgstr ""
+"U moet de 'Aanpassingskredietrekening' configureren op de pagina "
+"Boekhoudconfiguratie."
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/wizard/account_invoice_import.py:0
@@ -907,6 +918,8 @@ msgid ""
 "You must configure the 'Adjustment Debit Account' on the Accounting "
 "Configuration page."
 msgstr ""
+"U moet de 'Aanpassingsdebetrekening' configureren op de pagina "
+"Boekhoudconfiguratie."
 
 #. module: account_invoice_import
 #: code:addons/account_invoice_import/wizard/account_invoice_import.py:0

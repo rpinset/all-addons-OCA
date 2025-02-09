@@ -6,7 +6,7 @@
 
 {
     "name": "web_m2x_options",
-    "version": "14.0.1.1.2",
+    "version": "14.0.1.2.0",
     "category": "Web",
     "author": "initOS GmbH,"
     "ACSONE SA/NV, "

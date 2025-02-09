@@ -40,6 +40,12 @@ class TestInfoMixin(SavepointCase):
     def test_search_url(self):
         self.assertEqual(self.record.cms_search_url, "/cms/search/fake.model")
 
+    def test_view_url(self):
+        self.assertEqual(
+            self.record.url,
+            "/cms/view/fake.model/%s" % self.record.id,
+        )
+
     def test_edit_url(self):
         self.assertEqual(
             self.record.cms_edit_url,

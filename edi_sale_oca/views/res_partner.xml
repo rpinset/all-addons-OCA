@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <group name="edi_main" position="after">
                <group name="sale" string="Sale">
-                  <field name="edi_sale_conf_ids" nolabel="1">
+                  <field name="edi_sale_conf_ids" colspan="6" nolabel="1">
                     <tree>
                       <field name="name" />
                       <field name="trigger_id" />

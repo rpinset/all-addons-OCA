@@ -98,6 +98,10 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
 
     FieldMany2One.include({
         _onInputFocusout: function () {
+            if (this.nodeOptions.ignore_m2x_options) {
+                return this._super(...arguments);
+            }
+
             var m2o_dialog_opt =
                 is_option_set(this.nodeOptions.m2o_dialog) ||
                 (_.isUndefined(this.nodeOptions.m2o_dialog) &&
@@ -111,6 +115,10 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
 
         _search: function (search_val) {
             var self = this;
+
+            if (self.nodeOptions.ignore_m2x_options) {
+                return this._super(...arguments);
+            }
 
             var def = new Promise((resolve) => {
                 // Add options limit used to change number of selections record
@@ -127,10 +135,7 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
                 self.field_color = self.nodeOptions.field_color;
                 self.colors = self.nodeOptions.colors;
 
-                const context = Object.assign(
-                    self.record.getContext(self.recordParams),
-                    self.additionalContext
-                );
+                var context = self.record.getContext(self.recordParams);
                 var domain = self.record.getDomain(self.recordParams);
 
                 var blacklisted_ids = self._getSearchBlacklist();
@@ -375,6 +380,10 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
         }),
 
         _onDeleteTag: function (event) {
+            if (this.nodeOptions.ignore_m2x_options) {
+                return this._super(...arguments);
+            }
+
             var result = this._super.apply(this, arguments);
             event.stopPropagation();
             return result;
@@ -383,7 +392,7 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
         _onOpenBadge: function (event) {
             var self = this;
             var open = self.nodeOptions && is_option_set(self.nodeOptions.open);
-            if (open) {
+            if (!self.nodeOptions.ignore_m2x_options && open) {
                 var context = self.record.getContext(self.recordParams);
                 var id = parseInt($(event.currentTarget).data("id"), 10);
 
@@ -442,7 +451,11 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
         _onOpenRecord: function (ev) {
             var self = this;
             var open = this.nodeOptions.open;
-            if (open && self.mode === "readonly") {
+            if (
+                !this.nodeOptions.ignore_m2x_options &&
+                open &&
+                self.mode === "readonly"
+            ) {
                 ev.stopPropagation();
                 var id = ev.data.id;
                 var res_id = self.record.data[self.name].data.filter(
@@ -467,6 +480,10 @@ odoo.define("web_m2x_options.web_m2x_options", function (require) {
         }),
 
         _onOpenBadge: function (event) {
+            if (this.nodeOptions.ignore_m2x_options) {
+                return this._super(...arguments);
+            }
+
             var open = is_option_set(this.nodeOptions.open);
             var no_color_picker = is_option_set(this.nodeOptions.no_color_picker);
             this._super.apply(this, arguments);

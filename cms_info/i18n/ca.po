@@ -22,6 +22,11 @@ msgid "CMS Info mixin"
 msgstr "CMS Informació mix"
 
 #. module: cms_info
+#: model:ir.model.fields,field_description:cms_info.field_cms_info_mixin__cms_copy_url
+msgid "CMS copy URL"
+msgstr ""
+
+#. module: cms_info
 #: model:ir.model.fields,field_description:cms_info.field_cms_info_mixin__cms_delete_url
 msgid "CMS delete URL"
 msgstr "CMS eliminar URL"
@@ -50,6 +55,11 @@ msgstr "ID"
 #: model:ir.model.fields,field_description:cms_info.field_cms_info_mixin____last_update
 msgid "Last Modified on"
 msgstr "Última modificació el"
+
+#. module: cms_info
+#: model:ir.model.fields,field_description:cms_info.field_cms_info_mixin__url
+msgid "URL"
+msgstr ""
 
 #~ msgid "Multi Website Published Mixin"
 #~ msgstr "Mixin publicat per diversos llocs web"

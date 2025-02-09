@@ -43,6 +43,10 @@ in the field's options dict
 
   Deactivates the color picker on many2many_tags buttons to do nothing (ignored if open is set)
 
+``ignore_m2x_options`` *boolean* (Default: ``False``)
+
+  The field will be processed without following the implementation of this module.
+
 ir.config_parameter options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
