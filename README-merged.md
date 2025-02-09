@@ -288,7 +288,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 17.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 17.0.1.0.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
+[partner_statement](partner_statement/) | 17.0.1.0.1 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -337,7 +337,7 @@ addon | version | maintainers | summary
 [account_comment_template](account_comment_template/) | 17.0.1.0.0 |  | Comments templates on invoice documents
 [account_invoice_bank_details](account_invoice_bank_details/) | 17.0.1.0.1 |  | Select bank account base on currency + print bank details on reportreports and customer portal
 [account_invoice_line_report](account_invoice_line_report/) | 17.0.1.0.0 |  | New view to manage invoice lines information
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.3 |  | Print invoice lines grouped by picking
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 17.0.1.0.4 |  | Print invoice lines grouped by picking
 [partner_time_to_pay](partner_time_to_pay/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Add receivables and payables statistics to partners
 
 [//]: # (end addons)
@@ -1011,6 +1011,7 @@ addon | version | maintainers | summary
 [account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_term_security](account_payment_term_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Payment Term Security
 [partner_aging](partner_aging/) | 17.0.1.0.0 | [![Urvisha-OSI](https://github.com/Urvisha-OSI.png?size=30px)](https://github.com/Urvisha-OSI) | Aging as a view - invoices and credits
+[sale_payment_term_security](sale_payment_term_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Payment Term Security
 
 [//]: # (end addons)
 
@@ -1694,6 +1695,7 @@ addon | version | maintainers | summary
 [sale_order_lot_selection](sale_order_lot_selection/) | 17.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 17.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 17.0.1.0.1 |  | Define priority on sale orders
+[sale_order_product_availability_inline](sale_order_product_availability_inline/) | 17.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
@@ -1706,6 +1708,7 @@ addon | version | maintainers | summary
 [sale_product_multi_add](sale_product_multi_add/) | 17.0.1.0.0 |  | Sale Product Multi Add
 [sale_product_set](sale_product_set/) | 17.0.1.0.0 |  | Sale product set
 [sale_quotation_number](sale_quotation_number/) | 17.0.1.1.2 |  | Different sequence for sale quotations
+[sale_readonly_security](sale_readonly_security/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Readonly Security
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 17.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 17.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
@@ -1830,7 +1833,7 @@ addon | version | maintainers | summary
 [base_location_nuts](base_location_nuts/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS Regions
 [base_partner_company_group](base_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
 [base_partner_sequence](base_partner_sequence/) | 17.0.1.0.0 |  | Sets customer's code from a sequence
-[crm_partner_company_group](crm_partner_company_group/) | 17.0.1.0.0 |  | Adds the possibility to add a company group to a company
+[crm_partner_company_group](crm_partner_company_group/) | 17.0.1.1.0 |  | Adds the possibility to add a company group to a company
 [partner_address_split](partner_address_split/) | 17.0.1.0.0 |  | Add specific helper methods
 [partner_address_street3](partner_address_street3/) | 17.0.1.0.0 |  | Add a third address line on partners
 [partner_affiliate](partner_affiliate/) | 17.0.1.1.0 |  | Partner Affiliates
@@ -2317,12 +2320,14 @@ addon | version | maintainers | summary
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.0 |  | Skip payment for logged users in checkout process
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 17.0.1.1.1 |  | Hide product prices on the shop
+[website_sale_order_type](website_sale_order_type/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
 [website_sale_product_description](website_sale_product_description/) | 17.0.1.0.0 |  | Shows custom e-Commerce description for products
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 17.0.1.0.0 |  | Display attributes images in shop product detail
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 17.0.1.0.0 |  | Display product reference in e-commerce
 [website_sale_require_legal](website_sale_require_legal/) | 17.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_secondary_unit](website_sale_secondary_unit/) | 17.0.1.0.0 |  | Allow manage secondary units in website shop
 [website_sale_suggest_create_account](website_sale_suggest_create_account/) | 17.0.1.0.0 |  | Suggest users to create an account when buying in the website
+[website_snippet_product_category](website_snippet_product_category/) | 17.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Adds a new snippet to show e-commerce categories
 
 [//]: # (end addons)
 
@@ -2381,88 +2386,6 @@ addon | version | maintainers | summary
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
 [pdf_helper](pdf_helper/) | 17.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Provides helpers to work w/ PDFs
 [test_base_import_pdf_by_template](test_base_import_pdf_by_template/) | 17.0.1.1.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Test Base Import Pdf by Template
-
-[//]: # (end addons)
-
-<!-- prettier-ignore-end -->
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
-
-----
-----
-
-# From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/field-service&target_branch=17.0)
-[![Pre-commit Status](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml/badge.svg?branch=17.0)](https://github.com/OCA/field-service/actions/workflows/pre-commit.yml?query=branch%3A17.0)
-[![Build Status](https://github.com/OCA/field-service/actions/workflows/test.yml/badge.svg?branch=17.0)](https://github.com/OCA/field-service/actions/workflows/test.yml?query=branch%3A17.0)
-[![codecov](https://codecov.io/gh/OCA/field-service/branch/17.0/graph/badge.svg)](https://codecov.io/gh/OCA/field-service)
-[![Translation Status](https://translation.odoo-community.org/widgets/field-service-17-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/field-service-17-0/?utm_source=widget)
-
-<!-- /!\ do not modify above this line -->
-
-# Field Service Management
-
-[Field Service Management](https://en.wikipedia.org/wiki/Field_service_management) (FSM) coordinates company resources employed at, or en route to, client sites, rather than on the company's premises. FSM most commonly refers to companies who need to manage installation, service or repairs of systems or equipment.
-
-Examples of field service use cases are:
-
-- In telecommunications and cable industry, technicians who install cable or run phone lines into residences or business establishments.
-- In healthcare, mobile nurses who provide in-home care for elderly or disabled.
-- In gas utilities, engineers who are dispatched to investigate and repair suspected leaks.
-- In heavy engineering, mining, industrial and manufacturing, technicians dispatched for preventative maintenance and repair.
-- In property maintenance, including landscaping, irrigation, and home and office cleaning.
-- In HVAC industry, technicians have the expertise and equipment to investigate units in residential, commercial and industrial environments.
-
-<!-- /!\ do not modify below this line -->
-
-<!-- prettier-ignore-start -->
-
-[//]: # (addons)
-
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[base_territory](base_territory/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 17.0.1.6.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
-[fieldservice_account](fieldservice_account/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
-[fieldservice_account_analytic](fieldservice_account_analytic/) | 17.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
-[fieldservice_activity](fieldservice_activity/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
-[fieldservice_agreement](fieldservice_agreement/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Field Service agreements and contracts
-[fieldservice_calendar](fieldservice_calendar/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
-[fieldservice_crm](fieldservice_crm/) | 17.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
-[fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
-[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
-[fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
-[fieldservice_portal](fieldservice_portal/) | 17.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
-[fieldservice_project](fieldservice_project/) | 17.0.1.0.0 |  | Create field service orders from a project or project task
-[fieldservice_recurring](fieldservice_recurring/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
-[fieldservice_repair](fieldservice_repair/) | 17.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
-[fieldservice_repair_order_template](fieldservice_repair_order_template/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Use Repair Order Templates when creating a repair orders
-[fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
-[fieldservice_sale](fieldservice_sale/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
-[fieldservice_sale_agreement](fieldservice_sale_agreement/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements
-[fieldservice_sale_agreement_equipment_stock](fieldservice_sale_agreement_equipment_stock/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements and Stock Equipment
-[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
-[fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
-[fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
-[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
-[fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
-[fieldservice_stock](fieldservice_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
-[fieldservice_stock_request](fieldservice_stock_request/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate Stock Requests with Field Service Orders
-[fieldservice_vehicle](fieldservice_vehicle/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
 
 [//]: # (end addons)
 
@@ -3042,7 +2965,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.0.1 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.0.2 |  | Intercompany invoice rules
 [base_multi_company](base_multi_company/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
 [mail_multicompany](mail_multicompany/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [partner_multi_company](partner_multi_company/) | 17.0.1.0.0 |  | Select individually the partner visibility on each company
@@ -3755,7 +3678,7 @@ addon | version | maintainers | summary
 [l10n_fr_department](l10n_fr_department/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
-[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | EMEBI (ex-DEB) for France
+[l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | EMEBI (ex-DEB) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_siret](l10n_fr_siret/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
@@ -4512,7 +4435,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.7.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.24.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.25.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.5.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5898,7 +5821,7 @@ addon | version | maintainers | summary
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.1 |  | Purchase Reception Notify
-[purchase_request](purchase_request/) | 17.0.1.3.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 17.0.1.3.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
@@ -6257,6 +6180,7 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 17.0.1.0.0 |  | Project Department Categorization
 [project_parent](project_parent/) | 17.0.1.0.0 |  | Project Parent
 [project_purchase_link](project_purchase_link/) | 17.0.1.0.0 |  | Project Purchase Link
+[project_role](project_role/) | 17.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Project role-based roster
 [project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
 [project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
 [project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
@@ -6925,7 +6849,7 @@ addon | version | maintainers | summary
 [sentry](sentry/) | 17.0.1.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [server_action_logging](server_action_logging/) | 17.0.1.0.0 |  | Module that provides a logging mechanism for server actions
 [session_db](session_db/) | 17.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
-[tracking_manager](tracking_manager/) | 17.0.1.0.7 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
+[tracking_manager](tracking_manager/) | 17.0.1.0.8 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 17.0.1.0.2 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
 

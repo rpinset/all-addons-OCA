@@ -69,7 +69,6 @@ email-validator
 # generated from manifests external_dependencies
 factur-x
 pypdf
-# From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)

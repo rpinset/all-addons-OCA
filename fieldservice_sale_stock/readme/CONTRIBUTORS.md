@@ -1,4 +1,0 @@
-- Brian McMaster \<<brian@mcmpest.com>\>
-- Ammar Officewala \<<aofficewala@opensourceintegrators.com>\>
-- Freni Patel \<<fpatel@opensourceintegrators.com>\>
-- Italo LOPES \<<italo.lopes@camptocamp.com>\>
