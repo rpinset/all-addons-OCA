@@ -892,6 +892,7 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
             self.assertFalse(f.partner_id)
             f.manual_reference = "account.move.line;%s" % liquidity_lines.id
             f.manual_partner_id = inv1.partner_id
+            f.save()
             self.assertEqual(f.partner_id, inv1.partner_id)
         bank_stmt_line.clean_reconcile()
         # As we have a set a partner, the cleaning should assign the invoice automatically
@@ -1296,6 +1297,7 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
                 "rate": 1.25,
             }
         )
+        liquidity_lines, suspense_lines, other_lines = bank_stmt_line._seek_for_lines()
         with Form(
             bank_stmt_line,
             view="account_reconcile_oca.bank_statement_line_form_reconcile_view",
@@ -1309,6 +1311,17 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
                 line["amount"],
                 83.33,
             )
+            # check that adding a partner does not recompute the amounts on accounting
+            # entries, but is still synchronized with accounting entries
+            f.manual_reference = "account.move.line;%s" % liquidity_lines.id
+            f.manual_partner_id = inv1.partner_id
+            self.assertEqual(f.partner_id, inv1.partner_id)
+            self.assertEqual(liquidity_lines.debit, 83.33)
+            f.save()
+            # check liquidity line did not recompute debit with the new rate with
+            # partner change
+            self.assertEqual(liquidity_lines.debit, 83.33)
+            self.assertEqual(liquidity_lines.partner_id, inv1.partner_id)
             f.manual_reference = "account.move.line;%s" % line["id"]
             # simulate click on statement line, check amount does not recompute
             f.manual_partner_id = inv1.partner_id
