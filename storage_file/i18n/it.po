@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-29 20:33+0000\n"
+"PO-Revision-Date: 2025-02-11 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: storage_file
 #: model:ir.model.fields,field_description:storage_file.field_storage_file__active
@@ -100,7 +100,7 @@ msgstr ""
 "Privato: il file/immagine non può essere visualizzato se l'utente non ha "
 "effettuato l'accesso (non disponibile nel sito web);\n"
 "Pubblico: il file/immagine può essere visualizzato se nessuno ha effettuato "
-"l'accesso (utile per visualizzare i file in witi web esterni)"
+"l'accesso (utile per visualizzare i file in siti web esterni)"
 
 #. module: storage_file
 #: model:ir.model.fields,field_description:storage_file.field_storage_file__display_name
@@ -272,7 +272,7 @@ msgid ""
 "                    <br/>Make sure this parameter is properly configured and accessible\n"
 "                    from everwhere you want to access the service."
 msgstr ""
-"Fornito dal'opzione Odoo userà `web.base.url` come URL base.\n"
+"Fornito dall'opzione Odoo userà `web.base.url` come URL base.\n"
 "                    <br/>Assicurarsi che questo parametro sia correttamente "
 "configurato e accessibile\n"
 "                    da ovunque si voglia accedere a questo servizio."
@@ -285,7 +285,7 @@ msgstr "Frazione"
 #. module: storage_file
 #: model:ir.model.fields,help:storage_file.field_storage_file__slug
 msgid "Slug-ified name with ID for URL"
-msgstr "Nome frazionato con ID per UTL"
+msgstr "Nome frazionato con ID per URL"
 
 #. module: storage_file
 #: model:ir.model.fields,field_description:storage_file.field_storage_file__backend_id

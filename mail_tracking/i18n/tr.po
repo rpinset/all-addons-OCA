@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-22 00:51+0000\n"
-"PO-Revision-Date: 2017-07-22 00:51+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2016\n"
+"PO-Revision-Date: 2025-02-12 14:06+0000\n"
+"Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_tracking_email__state
@@ -41,11 +42,31 @@ msgid ""
 " * The 'Soft bounced' status indicates that message was soft bounced by "
 "recipient Mail Exchange (MX) server.\n"
 msgstr ""
+" * 'Hata' durumu, e-posta gönderilmeye çalışılırken bir hata oluştuğunu "
+"belirtir, örneğin, 'Geçerli alıcı yok'.\n"
+" * 'Gönderildi' durumu, mesajın giden e-posta sunucusu (SMTP) üzerinden "
+"başarıyla gönderildiğini belirtir.\n"
+" * 'Teslim Edildi' durumu, mesajın alıcının Mail Exchange (MX) sunucusuna "
+"başarıyla iletildiğini belirtir.\n"
+" * 'Açıldı' durumu, mesajın alıcı tarafından açıldığını veya tıklandığını "
+"belirtir.\n"
+" * 'Reddedildi' durumu, alıcı e-posta adresinin giden e-posta sunucusu (SMTP)"
+" tarafından kara listeye alındığını belirtir. Bu e-posta adresini silmeniz "
+"önerilir.\n"
+" * 'Spam' durumu, giden e-posta sunucusunun (SMTP) bu mesajı spam olarak "
+"değerlendirdiğini belirtir.\n"
+" * 'Abonelikten Çıkıldı' durumu, alıcının bu mesajdan abonelikten çıkmak "
+"istediğini belirtir.\n"
+" * 'Bounced' durumu, mesajın alıcının Mail Exchange (MX) sunucusu tarafından "
+"geri döndürüldüğünü belirtir.\n"
+" * 'Soft bounced' durumu, mesajın alıcının Mail Exchange (MX) sunucusu "
+"tarafından yumuşak bir şekilde geri döndürüldüğünü belirtir.\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_message__email_cc
 msgid "Additional recipients that receive a \"Carbon Copy\" of the e-mail"
 msgstr ""
+"Ek alıcılar, e-postanın bir \"Karbon Kopyasını\" (Carbon Copy - CC) alır"
 
 #. module: mail_tracking
 #. odoo-python
@@ -59,7 +80,7 @@ msgstr ""
 #: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
 #, python-format
 msgid "Anonymous Recipient"
-msgstr ""
+msgstr "Anonim Alıcı"
 
 #. module: mail_tracking
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
@@ -69,12 +90,12 @@ msgstr ""
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__bounce_description
 msgid "Bounce Description"
-msgstr ""
+msgstr "Bounce Açıklaması"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__bounce_type
 msgid "Bounce Type"
-msgstr ""
+msgstr "Bounce Tipi"
 
 #. module: mail_tracking
 #: model:ir.model.fields.selection,name:mail_tracking.selection__mail_tracking_email__state__bounced

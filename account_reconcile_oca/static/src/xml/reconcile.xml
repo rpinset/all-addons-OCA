@@ -203,4 +203,14 @@
             <attribute name="parentField">props.parentField</attribute>
         </xpath>
     </t>
+    <t
+        t-name="reconcile_move_line.ListView.Buttons"
+        t-inherit="web.ListView.Buttons"
+        t-inherit-mode="primary"
+        owl="1"
+    >
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="clickAddAll">Add all</button>
+        </xpath>
+    </t>
 </templates>

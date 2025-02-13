@@ -1,6 +1,8 @@
 # Copyright 2015-2016 Pedro M. Baeza <pedro.baeza@tecnativa.com>
 # Copyright 2017 LasLabs Inc.
 # License LGPL-3 - See http://www.gnu.org/licenses/lgpl-3.0.html
+import warnings
+
 from odoo import SUPERUSER_ID, api
 
 __all__ = [
@@ -15,6 +17,10 @@ def set_security_rule(env, rule_ref):
     :param: env: Environment
     :param: rule_ref: XML-ID of the security rule to change.
     """
+    warnings.warn(
+        "This hook is deprecated. Use `fill_company_ids` instead.",
+        DeprecationWarning,
+    )
     rule = env.ref(rule_ref)
     if not rule:  # safeguard if it's deleted
         return
@@ -38,6 +44,12 @@ def post_init_hook(cr, rule_ref, model_name):
     """
     env = api.Environment(cr, SUPERUSER_ID, {})
     set_security_rule(env, rule_ref)
+    fill_company_ids(cr, model_name)
+
+
+def fill_company_ids(cr, model_name):
+    """Fill company_ids with company_id values."""
+    env = api.Environment(cr, SUPERUSER_ID, {})
     # Copy company values
     model = env[model_name]
     table_name = model._fields["company_ids"].relation
@@ -65,6 +77,7 @@ def uninstall_hook(cr, rule_ref):
         rule_ref (string): XML ID of security rule to remove the
             `domain_force` from.
     """
+    warnings.warn("This hook is deprecated.", DeprecationWarning)
     env = api.Environment(cr, SUPERUSER_ID, {})
     # Change access rule
     rule = env.ref(rule_ref)

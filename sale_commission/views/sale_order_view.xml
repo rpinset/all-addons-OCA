@@ -35,6 +35,12 @@
                         string="Regenerate agents"
                         states="draft,sent"
                     />
+                    <button
+                        name="recompute_lines_agents_amount"
+                        type="object"
+                        string="Recompute amounts"
+                        states="draft,sent"
+                    />
                 </group>
             </xpath>
         </field>
