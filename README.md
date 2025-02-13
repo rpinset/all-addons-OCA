@@ -374,11 +374,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b067fa688693d9390a83562bc02b3f108a0ac5ff
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 3 10:18:30 2025 +0000
+commit a7954cbd1a797d1367e594f3f2daf0230be65c28
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 10 16:18:30 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_digitized_signature
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_digitized_signature/it/
 
 
 ## crm
@@ -888,11 +893,16 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit b5dc29136545a2499260b4514ab7edcfc73174e3
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Oct 28 08:51:05 2024 +0000
+commit ecd603f6140588db6f674274aabd004db467bd20
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Feb 10 22:32:59 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-12.0/l10n-spain-12.0-l10n_es_aeat_mod303
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-12-0/l10n-spain-12-0-l10n_es_aeat_mod303/
 
 
 ## l10n-switzerland
@@ -996,11 +1006,16 @@ Date:   Sat Feb 1 21:04:37 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit c23ac218b7230e2750c890cfe7ea1cdce88e8b85
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:05:24 2025 +0000
+commit 2efb0f26e6149790fbd2a932bf34ca2d15f48f8c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 12 13:47:33 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (62 of 62 strings)
+    
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_package_preparation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_package_preparation/it/
 
 
 ## stock-logistics-tracking
@@ -1069,11 +1084,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 1bce41a5211b69885e299414e06a651129e787b2
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:57:54 2025 +0000
+commit 255e5c744f5cad75e0204ead495d56fa533364a8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 11 15:14:14 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (12 of 12 strings)
+    
+    Translation: manufacture-12.0/manufacture-12.0-mrp_sale_info
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_sale_info/it/
 
 
 ## manufacture-reporting
@@ -1092,11 +1112,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 35d7a4694f5e7c9a03502de585dccef4c56637ac
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:57:25 2025 +0000
+commit 1542094fcbacd13f887ccc665432fcfb27797c78
+Author: iaranburu <iaranburu@binovo.es>
+Date:   Wed Feb 12 08:11:01 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Basque (eu_ES))
+    
+    Currently translated at 100.0% (96 of 96 strings)
+    
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem_audit
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_audit/eu_ES/
 
 
 ## purchase-workflow
@@ -1151,9 +1176,9 @@ Date:   Wed May 8 10:13:05 2024 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 9c52f086a82c7d2c67efc216e98cb18200a8e2e3
+commit fa25c0bd0ef84e7dac42beef130864096f581b11
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 4 14:31:26 2024 +0000
+Date:   Wed Feb 12 13:47:39 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1174,16 +1199,16 @@ Date:   Sun Sep 3 15:37:10 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit fb11bb88e1c818ab4ab16f1d27c87f8a56239a94
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Sep 3 14:51:12 2024 +0000
+commit 216b1daf4eb5662d74567b019087959f9ac428c7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 10 16:18:15 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: project-12.0/project-12.0-project_milestone
-    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_milestone/
+    Translation: project-12.0/project-12.0-project_task_digitized_signature
+    Translate-URL: https://translation.odoo-community.org/projects/project-12-0/project-12-0-project_task_digitized_signature/it/
 
 
 ## project-agile
