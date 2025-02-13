@@ -420,24 +420,26 @@ class SaleOrderLine(models.Model):
         "date_start", "date_end", "recurring_rule_type", "recurring_invoicing_type"
     )
     def _compute_name(self):
-        res = super()._compute_name()
+        # This method is used for adding new dependencies
+        return super()._compute_name()
+
+    def _get_sale_order_line_multiline_description_sale(self):
+        self.ensure_one()
         ICP = self.env["ir.config_parameter"].sudo()
-        for line in self:
-            if line.is_contract:
-                description = ""
-                if str2bool(ICP.get_param("product_contract.show_recurrency")) and (
-                    recurring_rule_label
-                    := line._get_product_contract_recurring_rule_label()
-                ):
-                    description += "\n\t" + recurring_rule_label
-                if str2bool(ICP.get_param("product_contract.show_invoicing_type")) and (
-                    invoicing_type_label
-                    := line._get_product_contract_invoicing_type_label()
-                ):
-                    description += "\n\t" + invoicing_type_label
-                if str2bool(ICP.get_param("product_contract.show_date")) and (
-                    date_text := line._get_product_contract_date_text()
-                ):
-                    description += "\n\t" + date_text
-                line.name = f"{line.product_id.display_name}{description}"
-        return res
+        description = ""
+        if self.is_contract:
+            if str2bool(ICP.get_param("product_contract.show_recurrency")) and (
+                recurring_rule_label
+                := self._get_product_contract_recurring_rule_label()
+            ):
+                description += "\n\t" + recurring_rule_label
+            if str2bool(ICP.get_param("product_contract.show_invoicing_type")) and (
+                invoicing_type_label
+                := self._get_product_contract_invoicing_type_label()
+            ):
+                description += "\n\t" + invoicing_type_label
+            if str2bool(ICP.get_param("product_contract.show_date")) and (
+                date_text := self._get_product_contract_date_text()
+            ):
+                description += "\n\t" + date_text
+        return super()._get_sale_order_line_multiline_description_sale() + description

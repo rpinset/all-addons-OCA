@@ -4,6 +4,11 @@ import {SaleOrderLineProductField} from "@sale/js/sale_product_field";
 import {patch} from "@web/core/utils/patch";
 
 patch(SaleOrderLineProductField.prototype, {
+    setup() {
+        super.setup(...arguments);
+        this.lastContractContext = false;
+    },
+
     get extraLines() {
         var res = super.extraLines;
         if (
@@ -26,6 +31,16 @@ patch(SaleOrderLineProductField.prototype, {
         }
     },
 
+    _editProductConfiguration() {
+        if (
+            this.props.record.data.is_configurable_product &&
+            this.props.record.data.is_contract
+        ) {
+            this.lastContractContext = this.contractContext;
+        }
+        super._editProductConfiguration(...arguments);
+    },
+
     _editLineConfiguration() {
         super._editLineConfiguration(...arguments);
         if (this.props.record.data.is_contract) {
@@ -34,7 +49,13 @@ patch(SaleOrderLineProductField.prototype, {
     },
 
     get isConfigurableLine() {
-        return super.isConfigurableLine || this.props.record.data.is_contract;
+        // When a product is configurable it will be added again when the variants are selected.
+        // So the configuration will be catched with _onProductUpdate hook.
+        return (
+            super.isConfigurableLine ||
+            (this.props.record.data.is_contract &&
+                !this.props.record.data.is_configurable_product)
+        );
     },
 
     get contractContext() {
@@ -54,7 +75,13 @@ patch(SaleOrderLineProductField.prototype, {
     },
 
     async _openContractConfigurator(isNew = false) {
-        const actionContext = this.contractContext;
+        const actionContext = Object.assign(
+            {},
+            this.lastContractContext || this.contractContext
+        );
+        if (this.lastContractContext) {
+            this.lastContractContext = false;
+        }
         this.action.doAction("product_contract.product_contract_configurator_action", {
             additionalContext: actionContext,
             onClose: async (closeInfo) => {

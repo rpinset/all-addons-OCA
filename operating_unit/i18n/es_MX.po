@@ -143,6 +143,11 @@ msgid "User"
 msgstr ""
 
 #. module: operating_unit
+#: model:res.groups,name:operating_unit.group_user_operating_unit
+msgid "User of Operating Units"
+msgstr ""
+
+#. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__user_ids
 msgid "Users Allowed"
 msgstr "Usuarios Permitidos"

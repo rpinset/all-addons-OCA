@@ -13,6 +13,7 @@ class OperatingUnitCommon(common.TransactionCase):
             tracking_disable=True, no_reset_password=True
         )
         # Groups
+        cls.grp_ou_usr = cls.env.ref("operating_unit.group_user_operating_unit")
         cls.grp_ou_mngr = cls.env.ref("operating_unit.group_manager_operating_unit")
         cls.grp_ou_multi = cls.env.ref("operating_unit.group_multi_operating_unit")
         # Company
@@ -27,7 +28,8 @@ class OperatingUnitCommon(common.TransactionCase):
         # Create User 1 with Main OU
         cls.user1 = cls._create_user("user_1", cls.grp_ou_mngr, cls.company, cls.ou1)
         # Create User 2 with B2C OU
-        cls.user2 = cls._create_user("user_2", cls.grp_ou_multi, cls.company, cls.b2c)
+        cls.user2 = cls._create_user("user_2", cls.grp_ou_usr, cls.company, cls.b2c)
+        cls.user2.write({"groups_id": [(4, cls.grp_ou_multi.id)]})
         # Partner
         cls.partner1 = cls.env.ref("base.res_partner_1")
 

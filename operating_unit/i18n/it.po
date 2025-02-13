@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-07-09 09:58+0000\n"
+"PO-Revision-Date: 2025-02-12 16:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -141,6 +141,11 @@ msgstr "Il nome dell'unità operativa dev'essere univoco per azienda!"
 #: model:ir.model,name:operating_unit.model_res_users
 msgid "User"
 msgstr "Utente"
+
+#. module: operating_unit
+#: model:res.groups,name:operating_unit.group_user_operating_unit
+msgid "User of Operating Units"
+msgstr "Utente delle unità operative"
 
 #. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__user_ids

@@ -69,6 +69,7 @@ email-validator
 # generated from manifests external_dependencies
 factur-x
 pypdf
+# From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
@@ -120,6 +121,8 @@ python-stdnum>=1.18
 requests_oauthlib
 unidecode
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
+# generated from manifests external_dependencies
+chardet
 # From [https://github.com/OCA/l10n-greece.git](https://github.com/OCA/l10n-greece.git)
 # From [https://github.com/OCA/l10n-india.git](https://github.com/OCA/l10n-india.git)
 # From [https://github.com/OCA/l10n-indonesia.git](https://github.com/OCA/l10n-indonesia.git)

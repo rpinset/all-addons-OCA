@@ -8,13 +8,18 @@
         <field name="name">Multiple Operating Unit</field>
         <field name="category_id" ref="module_operating_units" />
     </record>
-    <record id="group_manager_operating_unit" model="res.groups">
-        <field name="name">Manager of Operating Units</field>
+    <record id="group_user_operating_unit" model="res.groups">
+        <field name="name">User of Operating Units</field>
         <field name="implied_ids" eval="[(4, ref('group_multi_operating_unit'))]" />
         <field
             name="users"
             eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
         />
+        <field name="category_id" ref="module_operating_units" />
+    </record>
+    <record id="group_manager_operating_unit" model="res.groups">
+        <field name="name">Manager of Operating Units</field>
+        <field name="implied_ids" eval="[(4, ref('group_user_operating_unit'))]" />
         <field name="category_id" ref="module_operating_units" />
     </record>
     <record id="operating_unit_comp_rule" model="ir.rule">

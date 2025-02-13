@@ -77,6 +77,7 @@ class TestRMALot(TransactionCase):
             )
         )
         stock_return_picking_form.create_rma = True
+        stock_return_picking_form.rma_operation_id = self.operation
         return_wizard = stock_return_picking_form.save()
         self.assertEqual(len(return_wizard.product_return_moves), 2)
         return_wizard.create_returns()
