@@ -15,6 +15,10 @@
         <field name="name">Partner Form with registrations</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form" />
+        <field
+            name="groups_id"
+            eval="[(4, ref('event.group_event_registration_desk'))]"
+        />
         <field name="arch" type="xml">
             <div name="button_box" position="inside">
                 <button

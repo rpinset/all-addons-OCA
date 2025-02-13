@@ -1844,6 +1844,7 @@ addon | version | maintainers | summary
 [sale_invoice_no_mail](sale_invoice_no_mail/) | 15.0.1.0.2 |  | Sale Invoice No Mail
 [sale_invoice_plan](sale_invoice_plan/) | 15.0.1.4.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 15.0.1.0.1 |  | Sales Management: let the user choose the invoice policy on the order
+[sale_isolated_quotation](sale_isolated_quotation/) | 15.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Sale Isolated Quotation
 [sale_last_price_info](sale_last_price_info/) | 15.0.1.0.1 |  | Product Last Price Info - Sale
 [sale_missing_tracking](sale_missing_tracking/) | 15.0.1.0.2 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Tracking sale missing products
 [sale_missing_tracking_tier_validation](sale_missing_tracking_tier_validation/) | 15.0.1.0.0 |  | Extends the functionality of Sale missing tracking exceptions to support a tier validation process.
@@ -2386,7 +2387,7 @@ addon | version | maintainers | summary
 [event_session](event_session/) | 15.0.1.1.0 |  | Sessions in events
 [event_stage_cancelled](event_stage_cancelled/) | 15.0.1.0.0 |  | Event cancellation workflows
 [event_track_location_overlap](event_track_location_overlap/) | 15.0.1.0.0 |  | Restrict event track location overlapping
-[partner_event](partner_event/) | 15.0.1.0.5 |  | Link partner to events
+[partner_event](partner_event/) | 15.0.1.0.6 |  | Link partner to events
 [sale_crm_event_reservation](sale_crm_event_reservation/) | 15.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Combine event reservations, opportunities and quotations
 [website_event_crm_invitation](website_event_crm_invitation/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Invite leads to event types on website
 [website_event_filter_city](website_event_filter_city/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Add a customizable top area to filter events with city
@@ -2783,7 +2784,7 @@ addon | version | maintainers | summary
 [fieldservice_location_builder](fieldservice_location_builder/) | 15.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds a tool to help build out Location Hierarchies
 [fieldservice_logbook](fieldservice_logbook/) | 15.0.1.0.0 | [![yankinmax](https://github.com/yankinmax.png?size=30px)](https://github.com/yankinmax) | Manage Field Service equipment logbooks
 [fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 15.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage relations between contacts, companies and locations
-[fieldservice_portal](fieldservice_portal/) | 15.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
+[fieldservice_portal](fieldservice_portal/) | 15.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 15.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_purchase](fieldservice_purchase/) | 15.0.1.0.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage FSM Purchases
 [fieldservice_recurring](fieldservice_recurring/) | 15.0.2.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
@@ -5111,7 +5112,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.0 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
@@ -7334,14 +7335,14 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.2.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
-[mail_forward](mail_forward/) | 15.0.1.0.1 |  | Forward messages from the chatter of any document to other users.
+[mail_forward](mail_forward/) | 15.0.1.0.2 |  | Forward messages from the chatter of any document to other users.
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 15.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 15.0.0.1.0 |  | Preview email templates in the browser
 [mail_no_user_assign_notification](mail_no_user_assign_notification/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail No user Assign Notification
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 15.0.1.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 15.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
-[mail_optional_follower_notification](mail_optional_follower_notification/) | 15.0.1.0.1 |  | Choose to notify followers on mail.compose.message
+[mail_optional_follower_notification](mail_optional_follower_notification/) | 15.0.1.0.2 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 15.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_parent_recipient](mail_parent_recipient/) | 15.0.1.0.0 |  | Send email to parent partner if partner's email is empty
 [mail_partner_opt_out](mail_partner_opt_out/) | 15.0.1.0.0 |  | Add the partner's email to the blackmailed list

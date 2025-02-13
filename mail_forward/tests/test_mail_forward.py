@@ -2,8 +2,9 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 from odoo.tests import Form, RecordCapturer, tagged
-from odoo.tests.common import HttpCase
+from odoo.tests.common import HttpCase, users
 
+from odoo.addons.mail.tests.common import mail_new_test_user
 from odoo.addons.mail.tests.test_mail_composer import TestMailComposer
 
 
@@ -12,6 +13,11 @@ class TestMailForward(TestMailComposer, HttpCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.user_test = mail_new_test_user(
+            cls.env,
+            login="user_test_forward",
+            groups="base.group_user,base.group_partner_manager",
+        )
         cls.partner_follower1 = cls.env["res.partner"].create(
             {"name": "Follower1", "email": "follower1@example.com"}
         )
@@ -22,6 +28,7 @@ class TestMailForward(TestMailComposer, HttpCase):
             {"name": "Forward", "email": "forward@example.com"}
         )
 
+    @users("user_test_forward")
     def test_01_mail_forward(self):
         """
         Send an email to followers
@@ -68,10 +75,14 @@ class TestMailForward(TestMailComposer, HttpCase):
         self.assertIn(self.partner_forward, forward_message.partner_ids)
         self.assertIn("---------- Forwarded message ---------", forward_message.body)
 
+    @users("user_test_forward")
     def test_02_mail_forward_tour(self):
-        self.start_tour("/web", "mail_forward.mail_forward_tour", login="admin")
+        self.start_tour(
+            "/web", "mail_forward.mail_forward_tour", login="user_test_forward"
+        )
 
+    @users("user_test_forward")
     def test_03_mail_note_not_forward_tour(self):
         self.start_tour(
-            "/web", "mail_forward.mail_note_not_forward_tour", login="admin"
+            "/web", "mail_forward.mail_note_not_forward_tour", login="user_test_forward"
         )
