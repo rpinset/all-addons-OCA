@@ -259,6 +259,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 18.0.1.0.3 |  | OCA Financial Reports
+[account_tax_balance](account_tax_balance/) | 18.0.1.0.0 |  | Compute tax balances based on date range
 
 [//]: # (end addons)
 
@@ -439,6 +440,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [operating_unit](operating_unit/) | 18.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
+[stock_operating_unit](stock_operating_unit/) | 18.0.1.0.0 |  | Adds the concept of operating unit (OU) in stock management
 
 [//]: # (end addons)
 
@@ -484,7 +486,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[intrastat_base](intrastat_base/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
+[intrastat_base](intrastat_base/) | 18.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
 [product_harmonized_system](product_harmonized_system/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
 [product_harmonized_system_delivery](product_harmonized_system_delivery/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Hide native hs_code field provided by the delivery module
 [product_harmonized_system_stock](product_harmonized_system_stock/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Adds a menu entry for H.S. codes
@@ -872,7 +874,59 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_due_list](account_due_list/) | 18.0.1.0.0 |  | List of open credits and debits, with due date
 [account_payment_promissory_note](account_payment_promissory_note/) | 18.0.1.0.0 |  | Account Payment Promissory Note
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+----
+----
+
+# From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/connector&target_branch=18.0)
+[![Pre-commit Status](https://github.com/OCA/connector/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector/actions/workflows/pre-commit.yml?query=branch%3A18.0)
+[![Build Status](https://github.com/OCA/connector/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/connector/actions/workflows/test.yml?query=branch%3A18.0)
+[![codecov](https://codecov.io/gh/OCA/connector/branch/18.0/graph/badge.svg)](https://codecov.io/gh/OCA/connector)
+[![Translation Status](https://translation.odoo-community.org/widgets/connector-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/connector-18-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# connector
+
+connector
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[component](component/) | 18.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
+[component_event](component_event/) | 18.0.1.0.0 |  | Components Events
+[connector](connector/) | 18.0.1.0.0 |  | Connector
+[connector_base_product](connector_base_product/) | 18.0.1.0.0 |  | Connector Base Product
+[test_component](test_component/) | 18.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
+[test_connector](test_connector/) | 18.0.1.0.0 |  | Automated tests for Connector, do not install.
 
 [//]: # (end addons)
 
@@ -1479,10 +1533,12 @@ addon | version | maintainers | summary
 [sale_force_invoiced](sale_force_invoiced/) | 18.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_order_line_date](sale_order_line_date/) | 18.0.1.0.0 |  | Adds a commitment date to each sale order line.
 [sale_order_line_menu](sale_order_line_menu/) | 18.0.1.0.0 |  | Adds a Sale Order Lines Menu
+[sale_order_product_availability_inline](sale_order_product_availability_inline/) | 18.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
 [sale_order_type](sale_order_type/) | 18.0.1.0.0 |  | Sale Order Type
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 18.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.0 |  | Multiple warehouse source locations for Sale order
+[sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
 
 [//]: # (end addons)
 
@@ -1995,6 +2051,7 @@ addon | version | maintainers | summary
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 18.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 18.0.1.0.0 |  | Skip payment for logged users in checkout process
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 18.0.1.0.0 |  | Hide any Product Categories that are empty
+[website_sale_order_type](website_sale_order_type/) | 18.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
 [website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 18.0.1.1.0 |  | Allow hide attributes values not used in variants
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 18.0.1.0.0 |  | Display attributes images in shop product detail
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 18.0.1.0.0 |  | Display product reference in e-commerce
@@ -3311,6 +3368,7 @@ addon | version | maintainers | summary
 [l10n_fr_department](l10n_fr_department/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
+[l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_siret](l10n_fr_siret/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Complete support for SIRET/SIREN/NIC with checksum validation
 [l10n_fr_siret_account](l10n_fr_siret_account/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Glue module between l10n_fr_siret and account
@@ -4589,9 +4647,11 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# delivery-carrier
+# Delivery Carrier
 
-delivery-carrier
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4603,13 +4663,17 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[delivery_carrier_account](delivery_carrier_account/) | 18.0.1.0.0 |  | Delivery Carrier Account
+[delivery_carrier_info](delivery_carrier_info/) | 18.0.1.0.0 |  | Add code on carrier
 [delivery_carrier_partner](delivery_carrier_partner/) | 18.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_carrier_pricelist](delivery_carrier_pricelist/) | 18.0.1.0.0 |  | Compute delivery method price based on the product's pricelist.
+[delivery_carrier_shipping_label](delivery_carrier_shipping_label/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Delivery Carrier Shipping Label
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 18.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_package_fee](delivery_package_fee/) | 18.0.1.0.0 |  | Add fees on sales order for delivered packages
-[partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.0 |  | Set on partners a schedule for delivery goods
+[partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [server_environment_delivery](server_environment_delivery/) | 18.0.1.0.0 |  | Configure prod environment for delivery carriers
+[stock_picking_carrier_from_rule](stock_picking_carrier_from_rule/) | 18.0.1.0.0 |  | Set the carrier on picking if the stock rule used has a partner address set with a delivery method.
 
 [//]: # (end addons)
 
@@ -4641,9 +4705,13 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# stock-logistics-barcode
+# Stock Barcode
 
-stock-logistics-barcode
+Product and product packaging barcodes
+
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4687,9 +4755,13 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# stock-logistics-workflow
+# Stock Workflow
 
-stock-logistics-workflow
+Enhance the way flows and processes are working. Find here modules that do not have their place in the other more specialized repositories.
+
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4704,17 +4776,19 @@ addon | version | maintainers | summary
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 18.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 18.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_dangerous_goods](stock_dangerous_goods/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Adds utility fields to manage dangerous goods
-[stock_no_negative](stock_no_negative/) | 18.0.1.0.0 |  | Disallow negative stock levels by default
+[stock_no_negative](stock_no_negative/) | 18.0.1.0.1 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 18.0.1.0.0 |  | Do not reserve quantity with assigned owner
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_backorder_strategy_cancel](stock_picking_backorder_strategy_cancel/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
 [stock_picking_group_by_base](stock_picking_group_by_base/) | 18.0.1.0.0 |  | Allows to define a way to create index on extensible domain
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 18.0.1.0.0 |  | Adds link between pickings and invoices
+[stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 18.0.1.0.0 |  | Link between picking and purchase order
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 18.0.1.0.0 |  | Restrict the return to delivered quantity
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 18.0.1.0.0 |  | Link between picking and sale order
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 18.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 18.0.1.0.0 |  | Show returns on stock pickings
 [stock_picking_whole_scrap](stock_picking_whole_scrap/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Create whole scrap from a picking for move lines
+[stock_split_picking](stock_split_picking/) | 18.0.1.0.0 |  | Split a picking in two not transferred pickings
 
 [//]: # (end addons)
 
@@ -4746,9 +4820,13 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# stock-logistics-tracking
+# Stock Tracking
 
-stock-logistics-tracking
+Enhance packages (stock.quant.package).
+
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4756,7 +4834,11 @@ stock-logistics-tracking
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 18.0.1.0.0 |  | Use product packagings on packages
 
 [//]: # (end addons)
 
@@ -4788,9 +4870,13 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# stock-logistics-warehouse
+# Stock Warehouse
 
-stock-logistics-warehouse
+Extend the stock related models (warehouse, location, picking, move...) but without impact flows and processes. It's mainly adding fields or buttons.
+
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4842,9 +4928,11 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# stock-logistics-reporting
+# Stock Reporting
 
-stock-logistics-reporting
+Are you looking for modules related to logistics? Or would like to contribute
+to? There are many repositories with specific purposes. Have a look at this
+[README](https://github.com/OCA/wms/blob/18.0/README.md).
 
 <!-- /!\ do not modify below this line -->
 
@@ -4972,9 +5060,32 @@ and promote its widespread use.
 
 <!-- /!\ do not modify above this line -->
 
-# wms
+# Warehouse Management System (WMS)
 
-wms
+There are several repositories where you can find modules and contribute to.
+
+## Repositories and guidelines
+
+Repository | Description
+| --------------------------------- | --- |
+[delivery-carrier](https://github.com/OCA/delivery-carrier) | Delivery method providers and all enhancements around delivery method in sales and stock
+[product-attribute](https://github.com/OCA/product-attribute) | Extend the product model (incl uom, packaging, pricelist) or lot but that do not touch sales or stock models
+[stock-logistics-availability](https://github.com/OCA/stock-logistics-availability) | Compute quantity available in stock
+[stock-logistics-barcode](https://github.com/OCA/stock-logistics-barcode) | Product and product packaging barcodes
+[stock-logistics-interfaces](https://github.com/OCA/stock-logistics-interfaces) | Interfaces to interact with physical devices (vertical lift, measurement device...)
+[stock-logistics-orderpoint](https://github.com/OCA/stock-logistics-orderpoint) | Reordering rules
+[stock-logistics-release-channel](https://github.com/OCA/stock-logistics-release-channel) | Dispatch management. Organize and dispatch work in the warehouse by release channels
+[stock-logistics-reporting](https://github.com/OCA/stock-logistics-reporting) | Stock reportings
+[stock-logistics-request](https://github.com/OCA/stock-logistics-request) | Record needs for products
+[stock-logistics-reservation](https://github.com/OCA/stock-logistics-reservation) | Enhance the way products are allocated (virtual reservation) and reserved (rules extending fifo) in the stock
+[stock-logistics-shopfloor](https://github.com/OCA/stock-logistics-shopfloor) | Shopfloor. Warehouse barcode applications to support operators in the warehouse
+[stock-logistics-tracking](https://github.com/OCA/stock-logistics-tracking) | Enhance packages (stock.quant.package)
+[stock-logistics-transport](https://github.com/OCA/stock-logistics-transport) | Manage incoming and outgoing transports
+[stock-logistics-warehouse](https://github.com/OCA/stock-logistics-warehouse) | Extend the stock related models (warehouse, location, picking, move...) but without impacting flows and processes. It's mainly adding fields or buttons.
+[stock-logistics-workflow](https://github.com/OCA/stock-logistics-workflow) | Enhance the way flows and processes are working. Modules that do not have their place in the other more specialized repositories
+[stock-weighing](https://github.com/OCA/stock-weighing) | Support products managed by weight
+[wms](https://github.com/OCA/wms) | Bundle modules for a complete WMS solution
+
 
 <!-- /!\ do not modify below this line -->
 
@@ -4986,7 +5097,6 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.0 |  | Get delivery method used in sales orders from warehouse
 
 [//]: # (end addons)
 
@@ -5033,6 +5143,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mrp_multi_level](mrp_multi_level/) | 18.0.1.0.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
+[mrp_package_propagation](mrp_package_propagation/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
@@ -5241,18 +5352,22 @@ addon | version | maintainers | summary
 [purchase_all_shipments](purchase_all_shipments/) | 18.0.1.0.0 |  | Purchase All Shipments
 [purchase_cancel_reason](purchase_cancel_reason/) | 18.0.1.0.0 |  | Purchase Cancel Reason
 [purchase_commercial_partner](purchase_commercial_partner/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Supplier' on POs
+[purchase_delivery_split_date](purchase_delivery_split_date/) | 18.0.1.0.0 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 18.0.1.0.0 |  | Option to create deposit from purchase order
 [purchase_exception](purchase_exception/) | 18.0.1.0.0 |  | Custom exceptions on purchase order
+[purchase_invoice_plan](purchase_invoice_plan/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_last_price_info](purchase_last_price_info/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_open_qty](purchase_open_qty/) | 18.0.1.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_archive](purchase_order_archive/) | 18.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_type](purchase_order_type/) | 18.0.1.0.0 |  | Purchase Order Type
+[purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 18.0.1.0.0 |  | Purchase Order Univoiced Amount
 [purchase_request](purchase_request/) | 18.0.1.0.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 18.0.1.0.0 |  | Purchase Request Department
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
-[vendor_transport_lead_time](vendor_transport_lead_time/) | 18.0.1.0.0 |  | Purchase delay based on transport and supplier delays
+[purchase_tier_validation](purchase_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
+[vendor_transport_lead_time](vendor_transport_lead_time/) | 18.0.1.0.1 |  | Purchase delay based on transport and supplier delays
 
 [//]: # (end addons)
 
@@ -5346,6 +5461,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_attribute_archive](product_attribute_archive/) | 18.0.1.0.0 |  | Add an active field on product attributes
 [product_category_active](product_category_active/) | 18.0.1.0.0 |  | Add option to archive product categories
+[product_category_code](product_category_code/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
+[product_code_unique](product_code_unique/) | 18.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_customerinfo](product_customerinfo/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to define prices for customers in the products
 [product_dimension](product_dimension/) | 18.0.1.0.0 |  | Product Dimension
 [product_logistics_uom](product_logistics_uom/) | 18.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Configure product weights and volume UoM
@@ -5588,6 +5705,7 @@ addon | version | maintainers | summary
 [project_role](project_role/) | 18.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Project role-based roster
 [project_sequence](project_sequence/) | 18.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
 [project_task_default_stage](project_task_default_stage/) | 18.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_stage_state](project_task_stage_state/) | 18.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
 [project_type](project_type/) | 18.0.1.0.0 |  | Project Types
 
 [//]: # (end addons)
@@ -5937,6 +6055,7 @@ addon | version | maintainers | summary
 [fs_storage](fs_storage/) | 18.0.1.0.1 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend](storage_backend/) | 18.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend_sftp](storage_backend_sftp/) | 18.0.1.0.0 |  | Implement SFTP Storage
+[storage_file](storage_file/) | 18.0.1.0.0 |  | Storage file in storage backend
 
 [//]: # (end addons)
 
@@ -6028,6 +6147,7 @@ addon | version | maintainers | summary
 [bi_sql_editor](bi_sql_editor/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 18.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 18.0.1.0.0 |  | Base module to create xlsx report
+[report_xlsx_helper](report_xlsx_helper/) | 18.0.1.0.0 |  | Report xlsx helpers
 [sql_export](sql_export/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Export data in csv file with SQL requests
 [sql_request_abstract](sql_request_abstract/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Abstract Model to manage SQL Requests
 
@@ -6165,6 +6285,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_unindex_content](attachment_unindex_content/) | 18.0.1.0.0 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Disable indexing of attachments
 [auditlog](auditlog/) | 18.0.1.0.0 |  | Audit Log
+[auto_backup](auto_backup/) | 18.0.1.0.0 |  | Backups database
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Automatically delete old mail messages and attachments
 [base_cron_exclusion](base_cron_exclusion/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Allow you to select scheduled actions that should not run simultaneously.
 [base_exception](base_exception/) | 18.0.1.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
@@ -6478,6 +6599,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_tax_unece](account_tax_unece/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for taxes
+[base_bank_from_iban](base_bank_from_iban/) | 18.0.1.0.0 |  | Bank from IBAN
 [base_iso3166](base_iso3166/) | 18.0.1.0.0 |  | ISO 3166
 [base_unece](base_unece/) | 18.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for UNECE code lists
 [l10n_eu_product_adr](l10n_eu_product_adr/) | 18.0.1.0.1 |  | Allows to set appropriate danger class and components
@@ -7212,7 +7334,7 @@ addon | version | maintainers | summary
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 18.0.1.0.1 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 18.0.1.0.1 |  | Open the linked resource when clicking on their name
-[web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
+[web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
 
 [//]: # (end addons)
 

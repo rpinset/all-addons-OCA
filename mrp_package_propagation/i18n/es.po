@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_package_propagation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-12-22 20:33+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,help:mrp_package_propagation.field_mrp_bom__package_propagation
+msgid ""
+"Allow to propagate the package from a component to the finished product."
+msgstr "Permiten propagar el paquete de un componente al producto acabado."
+
+#. module: mrp_package_propagation
+#: model:ir.model,name:mrp_package_propagation.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Lista de Material"
+
+#. module: mrp_package_propagation
+#: model:ir.model,name:mrp_package_propagation.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr "Línea de Lista de Materiales"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_bom__display_package_propagation
+msgid "Display Package Propagation"
+msgstr "Propagación de Paquetes de Visualización"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_bom_line__display_propagate_package
+msgid "Display Propagate Package"
+msgstr "Mostrar Paquete de Propagación"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_production__is_package_propagated
+msgid "Is package propagated?"
+msgstr "¿Se propaga el paquete?"
+
+#. module: mrp_package_propagation
+#: model:ir.model,name:mrp_package_propagation.model_mrp_production
+msgid "Manufacturing Order"
+msgstr ""
+
+#. module: mrp_package_propagation
+#. odoo-python
+#: code:addons/mrp_package_propagation/models/mrp_bom_line.py:0
+msgid "Only one component can propagate its package to the finished product."
+msgstr "Sólo un componente puede propagar su paquete al producto acabado."
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_bom__package_propagation
+msgid "Package Propagation"
+msgstr "Propagación de Paquetes"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,help:mrp_package_propagation.field_mrp_production__is_package_propagated
+msgid "Package is propagated from a component to the finished product."
+msgstr "El envasado se propaga de un componente al producto acabado."
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_bom_line__propagate_package
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_stock_move__propagate_package
+msgid "Propagate Package"
+msgstr "Paquete de Propagación"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,field_description:mrp_package_propagation.field_mrp_production__propagated_package_id
+msgid "Propagated package"
+msgstr "Paquete propagado"
+
+#. module: mrp_package_propagation
+#: model:ir.model,name:mrp_package_propagation.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de Existencias"
+
+#. module: mrp_package_propagation
+#. odoo-python
+#: code:addons/mrp_package_propagation/models/mrp_production.py:0
+msgid ""
+"The BoM is propagating a package from one component.\n"
+"As such, the manufacturing order is forced to produce the same quantity than "
+"the BoM: %s %s"
+msgstr ""
+"La lista de materiales está propagando un paquete de un componente.\n"
+"Como tal, la orden de fabricación se ve obligada a producir la misma "
+"cantidad que la LdM: %s %s"
+
+#. module: mrp_package_propagation
+#: model:ir.model.fields,help:mrp_package_propagation.field_mrp_production__propagated_package_id
+msgid ""
+"The BoM used on this manufacturing order is set to propagate package from "
+"one of its components. The value will be computed once the corresponding "
+"component is selected."
+msgstr ""
+"La lista de materiales utilizada en esta orden de producción está "
+"configurada para propagar el paquete desde uno de sus componentes. El valor "
+"se calculará una vez seleccionado el componente correspondiente."
+
+#. module: mrp_package_propagation
+#. odoo-python
+#: code:addons/mrp_package_propagation/models/mrp_bom_line.py:0
+msgid "The component propagating the package must consume 1 %s."
+msgstr "El componente que propaga el paquete debe consumir 1 %s."
+
+#. module: mrp_package_propagation
+#. odoo-python
+#: code:addons/mrp_package_propagation/models/mrp_bom.py:0
+msgid ""
+"With 'Package Propagation' enabled, a line has to be configured with the "
+"'Propagate Package' option."
+msgstr ""
+"Con la \"Propagación de paquetes\" habilitada, hay que configurar una línea "
+"con la opción \"Propagar paquete\"."
+
+#~ msgid "Display Name"
+#~ msgstr "Mostrar Nombre"
+
+#~ msgid "ID"
+#~ msgstr "ID (identificación)"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"
+
+#~ msgid "Production Order"
+#~ msgstr "Orden de Producción"

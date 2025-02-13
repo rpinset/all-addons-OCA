@@ -22,6 +22,9 @@ Avalara
 # generated from manifests external_dependencies
 ofxparse
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
+# From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
+# generated from manifests external_dependencies
+cachetools
 # From [https://github.com/OCA/connector-ecommerce.git](https://github.com/OCA/connector-ecommerce.git)
 # From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
 # generated from manifests external_dependencies
@@ -162,9 +165,11 @@ pycups
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 # generated from manifests external_dependencies
 astor
+cryptography
 dataclasses
 odoorpc
 openupgradelib
+pysftp
 sentry_sdk>=2.0.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
@@ -179,6 +184,7 @@ openupgradelib
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
 pycountry
+schwifty==2024.4.0
 # From [https://github.com/OCA/webhook.git](https://github.com/OCA/webhook.git)
 # From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
 # From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
