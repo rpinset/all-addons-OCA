@@ -51,6 +51,11 @@ class StockWarehouseOrderPoint(models.Model):
     )
     def _check_location(self):
         for rec in self:
+            # Fix: do not check OU on locations that do not have a warehouse at all
+            # Odoo's base `stock` module will still fill the `warehouse_id` field
+            # incorrectly with the company's default warehouse
+            if not rec.location_id.get_warehouse():
+                continue
             if (
                 rec.warehouse_id.operating_unit_id
                 and rec.warehouse_id

@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-02-11 17:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_item__applied_on
@@ -43,13 +45,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache__create_uid
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache__create_date
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: pricelist_cache
 #: model_terms:ir.ui.view,arch_db:pricelist_cache.view_partner_property_form
@@ -64,7 +66,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_product__display_name
 #: model:ir.model.fields,field_description:pricelist_cache.field_res_partner__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: pricelist_cache
 #: model_terms:ir.ui.view,arch_db:pricelist_cache.product_pricelist_view
@@ -98,7 +100,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_product__id
 #: model:ir.model.fields,field_description:pricelist_cache.field_res_partner__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist__is_pricelist_cache_available
@@ -120,19 +122,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_product____last_update
 #: model:ir.model.fields,field_description:pricelist_cache.field_res_partner____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache__write_uid
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache__write_date
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_item__min_quantity
@@ -247,7 +249,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_cache_wizard__product_id
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_item__product_tmpl_id
 msgid "Product"
-msgstr ""
+msgstr "Prodotto"
 
 #. module: pricelist_cache
 #: model:ir.model.fields,field_description:pricelist_cache.field_product_pricelist_item__categ_id

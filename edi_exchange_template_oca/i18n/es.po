@@ -17,6 +17,17 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: edi_exchange_template_oca
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin__allowed_type_ids
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__allowed_type_ids
+msgid "Allowed Exchange Types"
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_type__output_template_allowed_ids
+msgid "Allowed Templates"
+msgstr ""
+
+#. module: edi_exchange_template_oca
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin__backend_id
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__backend_id
 #: model_terms:ir.ui.view,arch_db:edi_exchange_template_oca.edi_exchange_template_output_view_search
@@ -70,6 +81,7 @@ msgstr "Creado el"
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_backend__display_name
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin__display_name
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__display_name
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_type__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
 
@@ -108,10 +120,20 @@ msgid "EDI Exchange Templates"
 msgstr "Plantillas de Intercambio EDI"
 
 #. module: edi_exchange_template_oca
+#: model:ir.model,name:edi_exchange_template_oca.model_edi_exchange_type
+msgid "EDI Exchange Type"
+msgstr ""
+
+#. module: edi_exchange_template_oca
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin__type_id
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__type_id
 msgid "EDI Exchange type"
 msgstr "Tipo de Intercambio EDI"
+
+#. module: edi_exchange_template_oca
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_type__output_template_id
+msgid "Exchange Template"
+msgstr ""
 
 #. module: edi_exchange_template_oca
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__generator
@@ -127,6 +149,7 @@ msgstr "Agrupado Por"
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_backend__id
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin__id
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output__id
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_type__id
 msgid "ID"
 msgstr "ID"
 
@@ -139,6 +162,7 @@ msgstr "ID de la vista definida en el archivo xml"
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_backend____last_update
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_mixin____last_update
 #: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_template_output____last_update
+#: model:ir.model.fields,field_description:edi_exchange_template_oca.field_edi_exchange_type____last_update
 msgid "Last Modified on"
 msgstr "Última modificación el"
 
@@ -201,6 +225,37 @@ msgid "Template key"
 msgstr "Clave de Plantilla"
 
 #. module: edi_exchange_template_oca
+#: code:addons/edi_exchange_template_oca/models/edi_exchange_type.py:0
+#, python-format
+msgid "Template not allowed for this type."
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: code:addons/edi_exchange_template_oca/models/edi_exchange_type.py:0
+#, python-format
+msgid "Template type must match exchange type."
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: model:ir.model.fields,help:edi_exchange_template_oca.field_edi_exchange_type__output_template_id
+msgid "Template used to generate or process this type."
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: model:ir.model.fields,help:edi_exchange_template_oca.field_edi_exchange_type__output_template_allowed_ids
+msgid "Templates allowed to be used with this type."
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: code:addons/edi_exchange_template_oca/models/edi_exchange_template_mixin.py:0
+#, python-format
+msgid ""
+"The selected type must appear among the allowed types. NOTE: the type field "
+"is deprecated and will be removed soon. Use 'Allowed types' instead and set "
+"the template to use explicitly on the type that will use this template."
+msgstr ""
+
+#. module: edi_exchange_template_oca
 #: model:ir.model.fields,help:edi_exchange_template_oca.field_edi_exchange_template_output__template_arch
 msgid "This field stores the view arch."
 msgstr "Este campo almacena el arco de vista."
@@ -209,3 +264,19 @@ msgstr "Este campo almacena el arco de vista."
 #: model_terms:ir.ui.view,arch_db:edi_exchange_template_oca.edi_exchange_template_output_view_search
 msgid "Type"
 msgstr "Tipo"
+
+#. module: edi_exchange_template_oca
+#: model_terms:ir.ui.view,arch_db:edi_exchange_template_oca.edi_exchange_template_output_view_form
+msgid "Type (deprecated)"
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: model:ir.model.fields,help:edi_exchange_template_oca.field_edi_exchange_template_mixin__allowed_type_ids
+#: model:ir.model.fields,help:edi_exchange_template_oca.field_edi_exchange_template_output__allowed_type_ids
+msgid "Types allowed to use this template."
+msgstr ""
+
+#. module: edi_exchange_template_oca
+#: model_terms:ir.ui.view,arch_db:edi_exchange_template_oca.edi_exchange_template_output_view_form
+msgid "Use allowed types and set the template explicitly on the type"
+msgstr ""

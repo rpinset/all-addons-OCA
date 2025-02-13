@@ -87,11 +87,11 @@ Date:   Sun Feb 2 17:56:28 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 916852106e3aa9a0e7db304e80fd94c1a1d4ded0
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:57:37 2025 +0000
+commit ad70cb3e7e2cca078a7c6e11bc4fe0a666ca95b8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 12 18:11:35 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -105,11 +105,11 @@ Date:   Sun Feb 2 17:55:29 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit a5b4022760dcfc5df3cd7147ead9d5df9e84d59d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:03:18 2025 +0000
+commit 6ea9d8ad0b7d46481f0d74aac408f0ec02045019
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 12 11:44:44 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -326,11 +326,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2ab12f1eef7bd256b37002f501693d38ac2657b3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:31:41 2025 +0000
+commit f96a9c71c0e64ae1743dca96c79b63df18b6f1ac
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 12 15:18:12 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (14 of 14 strings)
+    
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_invoicing_finished_task
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_invoicing_finished_task/it/
 
 
 ## crm
@@ -362,20 +367,30 @@ Date:   Sun Feb 9 18:27:50 2025 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit 83e6dc80c79320321f56314d9babb7e1815c8fc2
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:29:00 2025 +0000
+commit 3dfed46fbeb2cd98818aa4743ebd668aa3072a1d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 10 08:29:07 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (12 of 12 strings)
+    
+    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_promotion_discount_in_field
+    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_promotion_discount_in_field/it/
 
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit 643d5a174a5b03af585f7fc34ce2fbfa84f3d9b1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:30:06 2025 +0000
+commit b9dd2c61d2d438f593b02f77b3346a99bd4bc41f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Feb 10 08:35:46 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: sale-reporting-14.0/sale-reporting-14.0-sale_report_delivered_brand
+    Translate-URL: https://translation.odoo-community.org/projects/sale-reporting-14-0/sale-reporting-14-0-sale_report_delivered_brand/it/
 
 
 ## commission
@@ -439,11 +454,16 @@ Date:   Sun Feb 2 18:42:34 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 19b112eb21adc9efb8f8ff293e47ad4019715d0b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 6 11:52:58 2025 +0000
+commit 325057f0cd1cad45657e93bdbbb1f175a672d517
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 13 10:21:39 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-14.0/edi-14.0-edi_exchange_template_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_exchange_template_oca/
 
 
 ## field-service
@@ -763,11 +783,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit ea8d2f5297de2e546b18b96c75dfc8f11e5f8806
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:26:03 2025 +0000
+commit e539ac8b5391819e68e6cc2b33a05b3dcfd29dd5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 13 10:21:21 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -892,11 +912,14 @@ Date:   Sun Feb 2 19:42:40 2025 +0000
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit b53f851145f63c2c936a4b3a9020836684f9fa38
-Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Fri Nov 15 13:52:20 2024 +0000
+commit 815176a6994c399321c20f97c38696ea122f7f34
+Merge: b53f8511 ed757f6e
+Author: Simone Orsi <simahawk@users.noreply.github.com>
+Date:   Tue Feb 11 09:16:17 2025 +0100
 
-    [UPD] Update ebill_postfinance_financial_discount.pot
+    Merge pull request #747 from OCA/14.0-ocabot-update-dotfiles
+    
+    [14.0] dotfiles update needs manual intervention
 
 
 ## l10n-taiwan
@@ -1032,11 +1055,16 @@ Date:   Sun Feb 9 18:50:35 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit b2dfeed19073674fe0e29e4bbf55fdbd56e2a7ab
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:29:34 2025 +0000
+commit 311db277bcd4dacc0ec34b5b81e01797675a878f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 13 08:24:29 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (347 of 347 strings)
+    
+    Translation: rma-14.0/rma-14.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma/it/
 
 
 ## ddmrp
@@ -1059,11 +1087,16 @@ Date:   Thu Feb 6 10:54:14 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 62a5f7fd8a2f46da4cae02ba9dab385803bdbdf4
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:55:44 2025 +0000
+commit bc413d513220ba670f82bb2675015d7eae724ee3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 11 15:14:00 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (18 of 18 strings)
+    
+    Translation: manufacture-14.0/manufacture-14.0-mrp_sale_info
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_sale_info/it/
 
 
 ## manufacture-reporting
@@ -1123,16 +1156,16 @@ Date:   Sun Feb 2 20:18:06 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit b9cb6a9e992dc7edaa328260341472b51e7becf3
-Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
-Date:   Sun Feb 2 21:48:26 2025 +0000
+commit 998ef94fdc65eb645b59a411960c9d6f240b0062
+Author: JHernandezConinpe <jhernandez@coninpe.es>
+Date:   Mon Feb 10 10:57:58 2025 +0000
 
-    Translated using Weblate (Dutch)
+    Translated using Weblate (French)
     
-    Currently translated at 67.1% (45 of 67 strings)
+    Currently translated at 100.0% (73 of 73 strings)
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_assortment
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_assortment/nl/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_direct_print
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_direct_print/fr/
 
 
 ## product-kitting
@@ -1155,11 +1188,16 @@ Date:   Sun Feb 2 20:13:34 2025 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit f65f1bc11a9f932911eba9e6b56129c711bd256c
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:12:35 2025 +0000
+commit 505c72b2047baa24c1e27aa9ab05eeb6568de30f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 12 13:47:45 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (24 of 24 strings)
+    
+    Translation: product-pack-14.0/product-pack-14.0-sale_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-14-0/product-pack-14-0-sale_product_pack/it/
 
 
 ## project-reporting
@@ -1236,11 +1274,11 @@ Date:   Sun Feb 2 18:18:12 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ab623edb7e003885d2be39473f6089e56629c0a1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:45:18 2025 +0000
+commit 53888ee9abd51b5d134dd31ad3943fc2caa56abd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 11 09:23:35 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## storage
@@ -1380,11 +1418,14 @@ Date:   Sun Feb 2 19:01:08 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit f424cbea16051a7b0c2d90337f04a83ab6b548f1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 19 13:48:10 2024 +0000
+commit fd9f4a163242527eb3be69286146d5ad396a4c82
+Merge: f424cbe 02816f5
+Author: Laurent Mignon (ACSONE) <laurent.mignon@acsone.eu>
+Date:   Tue Feb 11 10:19:02 2025 +0100
 
-    Added translation using Weblate (Italian)
+    Merge pull request #494 from OCA/14.0-ocabot-update-dotfiles
+    
+    [14.0] dotfiles update needs manual intervention
 
 
 ## vertical-association
@@ -1398,9 +1439,9 @@ Date:   Sun Feb 9 19:05:00 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 6d70fd8f8197ba62914bd41fbb1bea1cd37bcb89
+commit 39cf33a731bb709898c84db14690157679eee1f2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Dec 10 15:26:58 2024 +0000
+Date:   Tue Feb 11 15:14:02 2025 +0000
 
     Translated using Weblate (Italian)
     

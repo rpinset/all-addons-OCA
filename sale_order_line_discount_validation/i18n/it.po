@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-02-11 17:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sale_order_line_discount_validation
 #: model_terms:ir.ui.view,arch_db:sale_order_line_discount_validation.sale_order_view_form_inherit_sale_order_line_discount_validation
@@ -42,7 +44,7 @@ msgstr ""
 #. module: sale_order_line_discount_validation
 #: model:ir.model,name:sale_order_line_discount_validation.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Impostazioni configurazione"
 
 #. module: sale_order_line_discount_validation
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_res_company__sale_discount_limit
@@ -57,7 +59,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_sale_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: sale_order_line_discount_validation
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_report_sale_report_saleorder__id
@@ -65,7 +67,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_res_config_settings__id
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sale_order_line_discount_validation
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_report_sale_report_saleorder____last_update
@@ -73,7 +75,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_res_config_settings____last_update
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_sale_order____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: sale_order_line_discount_validation
 #: model_terms:ir.ui.view,arch_db:sale_order_line_discount_validation.sale_order_view_form_inherit_sale_order_line_discount_validation
@@ -88,7 +90,7 @@ msgstr ""
 #. module: sale_order_line_discount_validation
 #: model:ir.model,name:sale_order_line_discount_validation.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Ordine di vendita"
 
 #. module: sale_order_line_discount_validation
 #: model:ir.model.fields,field_description:sale_order_line_discount_validation.field_sale_order__state

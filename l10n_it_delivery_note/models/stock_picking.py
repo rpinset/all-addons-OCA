@@ -358,6 +358,11 @@ class StockPicking(models.Model):
         return res
 
     def _create_delivery_note(self):
+        return self.env["stock.delivery.note"].create(
+            self._prepare_delivery_note_values()
+        )
+
+    def _prepare_delivery_note_values(self):
         partners = self._get_partners()
         type_id = self.env["stock.delivery.note.type"].search(
             [
@@ -367,38 +372,36 @@ class StockPicking(models.Model):
             limit=1,
         )
         delivery_method_id = self.mapped("carrier_id")[:1]
-        return self.env["stock.delivery.note"].create(
-            {
-                "company_id": self.company_id.id,
-                "partner_sender_id": partners[0].id,
-                "partner_id": partners[2].id if self.sale_id else partners[0].id,
-                "partner_shipping_id": partners[1].id,
-                "type_id": type_id.id,
-                "date": self.date_done,
-                "carrier_id": delivery_method_id.partner_id.id,
-                "delivery_method_id": delivery_method_id.id,
-                "transport_condition_id": (
-                    self.sale_id.default_transport_condition_id.id
-                    or partners[1].default_transport_condition_id.id
-                    or type_id.default_transport_condition_id.id
-                ),
-                "goods_appearance_id": (
-                    self.sale_id.default_goods_appearance_id.id
-                    or partners[1].default_goods_appearance_id.id
-                    or type_id.default_goods_appearance_id.id
-                ),
-                "transport_reason_id": (
-                    self.sale_id.default_transport_reason_id.id
-                    or partners[1].default_transport_reason_id.id
-                    or type_id.default_transport_reason_id.id
-                ),
-                "transport_method_id": (
-                    self.sale_id.default_transport_method_id.id
-                    or partners[1].default_transport_method_id.id
-                    or type_id.default_transport_method_id.id
-                ),
-            }
-        )
+        return {
+            "company_id": self.company_id.id,
+            "partner_sender_id": partners[0].id,
+            "partner_id": partners[2].id if self.sale_id else partners[0].id,
+            "partner_shipping_id": partners[1].id,
+            "type_id": type_id.id,
+            "date": self.date_done,
+            "carrier_id": delivery_method_id.partner_id.id,
+            "delivery_method_id": delivery_method_id.id,
+            "transport_condition_id": (
+                self.sale_id.default_transport_condition_id.id
+                or partners[1].default_transport_condition_id.id
+                or type_id.default_transport_condition_id.id
+            ),
+            "goods_appearance_id": (
+                self.sale_id.default_goods_appearance_id.id
+                or partners[1].default_goods_appearance_id.id
+                or type_id.default_goods_appearance_id.id
+            ),
+            "transport_reason_id": (
+                self.sale_id.default_transport_reason_id.id
+                or partners[1].default_transport_reason_id.id
+                or type_id.default_transport_reason_id.id
+            ),
+            "transport_method_id": (
+                self.sale_id.default_transport_method_id.id
+                or partners[1].default_transport_method_id.id
+                or type_id.default_transport_method_id.id
+            ),
+        }
 
     def delivery_note_update_transport_datetime(self):
         self.delivery_note_id.update_transport_datetime()

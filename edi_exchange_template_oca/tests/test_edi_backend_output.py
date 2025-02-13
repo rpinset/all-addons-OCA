@@ -34,11 +34,11 @@ class TestEDIBackendOutputBase(EDIBackendCommonComponentTestCase):
                 "code": "edi.output.generate.demo_backend.test_type_out1",
                 "name": "Out 1",
                 "backend_type_id": cls.backend.backend_type_id.id,
-                "type_id": cls.type_out1.id,
                 "template_id": qweb_tmpl.id,
                 "output_type": "txt",
             }
         )
+        cls.type_out1.output_template_id = cls.tmpl_out1
         vals = {
             "model": cls.partner._name,
             "res_id": cls.partner.id,
@@ -74,7 +74,6 @@ class TestEDIBackendOutputBase(EDIBackendCommonComponentTestCase):
                 "code": "edi.output.generate.demo_backend.test_type_out2",
                 "name": "Out 2",
                 "backend_type_id": cls.backend.backend_type_id.id,
-                "type_id": cls.type_out2.id,
                 "template_id": qweb_tmpl.id,
                 "output_type": "xml",
                 "code_snippet": """
@@ -84,6 +83,7 @@ result = {"custom_bit": foo, "baz": baz}
                 """,
             }
         )
+        cls.type_out2.output_template_id = cls.tmpl_out2
         vals = {
             "model": cls.partner._name,
             "res_id": cls.partner.id,
@@ -103,7 +103,6 @@ result = {"custom_bit": foo, "baz": baz}
                 "code": "edi.output.generate.demo_backend.test_type_out3",
                 "name": "Out 3",
                 "backend_type_id": cls.backend.backend_type_id.id,
-                "type_id": cls.type_out3.id,
                 "generator": "report",
                 "report_id": cls.report.id,
                 "output_type": "pdf",
@@ -112,6 +111,7 @@ result = {"res_ids": record.ids}
                         """,
             }
         )
+        cls.type_out3.output_template_id = cls.tmpl_out3
         company = cls.env.ref("base.main_company")
         vals = {
             "model": company._name,
@@ -123,18 +123,6 @@ result = {"res_ids": record.ids}
 
 # TODO: add more unit tests
 class TestEDIBackendOutput(TestEDIBackendOutputBase):
-    def test_get_template(self):
-        self.assertEqual(
-            self.backend._get_output_template(self.record1), self.tmpl_out1
-        )
-        self.assertEqual(
-            self.backend._get_output_template(self.record2), self.tmpl_out2
-        )
-        self.assertEqual(
-            self.backend._get_output_template(self.record2, code=self.tmpl_out1.code),
-            self.tmpl_out1,
-        )
-
     def test_generate_file(self):
         output = self.backend.exchange_generate(self.record1)
         expected = "{0.ref} - {0.name}".format(self.partner)
