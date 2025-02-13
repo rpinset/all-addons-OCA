@@ -246,11 +246,11 @@ Date:   Mon Oct 9 23:10:15 2023 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 2373c4cb9e00cd9464d618afe3d42d81822867ba
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:25:53 2025 +0000
+commit f9b763fdb2a6f0455144d472f83e93ed15093867
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 11 08:21:50 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## connector-accountedge
@@ -1123,11 +1123,16 @@ Date:   Sat Feb 1 21:29:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 613d4990466965dd18d17997c4f2ab487d8be8b7
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:30:58 2025 +0000
+commit 9d08ddf8ced0b05a34820963849d9201b8f2337c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 12 13:47:34 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (62 of 62 strings)
+    
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_package_preparation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_package_preparation/it/
 
 
 ## stock-logistics-tracking
@@ -1186,11 +1191,16 @@ Date:   Sat Feb 1 21:33:06 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 5feb4ad6236265702dae4710bff9c83570a8f272
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:22:24 2025 +0000
+commit bbe63c5e01dfcba4104c2be6390f9f8797cf290e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 11 15:14:05 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: manufacture-13.0/manufacture-13.0-mrp_sale_info
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_sale_info/it/
 
 
 ## manufacture-reporting
@@ -1266,11 +1276,16 @@ Date:   Sat Feb 1 21:25:03 2025 +0000
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 18f211fdce36330b82037dc6caf0a2e5b494f0dd
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:24:51 2025 +0000
+commit ca7dd69c1ee95c016cbf095342abb5c4b614473c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Feb 12 13:47:42 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: product-pack-13.0/product-pack-13.0-sale_product_pack
+    Translate-URL: https://translation.odoo-community.org/projects/product-pack-13-0/product-pack-13-0-sale_product_pack/it/
 
 
 ## project-reporting
@@ -1500,16 +1515,14 @@ Date:   Sun Sep 3 13:14:50 2023 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit 0972e9c8dc8c23ae1ad953fdced52f5069146cd4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 30 07:38:53 2024 +0000
+commit 2be299d63e8d8ca105a31fb8eae85b897cd02f0a
+Merge: 0972e9c d6103af
+Author: Enric Tobella <etobella@creublanca.es>
+Date:   Wed Feb 12 07:16:57 2025 +0100
 
-    Translated using Weblate (Italian)
+    Merge pull request #103 from OCA/13.0-ocabot-update-dotfiles
     
-    Currently translated at 100.0% (46 of 46 strings)
-    
-    Translation: iot-13.0/iot-13.0-iot_input_oca
-    Translate-URL: https://translation.odoo-community.org/projects/iot-13-0/iot-13-0-iot_input_oca/it/
+    [13.0] dotfiles update needs manual intervention
 
 
 ## rest-framework
