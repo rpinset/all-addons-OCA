@@ -627,7 +627,7 @@ addon | version | maintainers | summary
 [sale_stock_operating_unit](sale_stock_operating_unit/) | 15.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 15.0.1.0.0 |  | Sales Team Operating Unit
 [stock_account_operating_unit](stock_account_operating_unit/) | 15.0.1.0.0 |  | Create journal entries in moves between internal locations with different operating units.
-[stock_operating_unit](stock_operating_unit/) | 15.0.1.3.1 |  | Adds the concept of operating unit (OU) in stock management
+[stock_operating_unit](stock_operating_unit/) | 15.0.1.3.2 |  | Adds the concept of operating unit (OU) in stock management
 [stock_operating_unit_access_all](stock_operating_unit_access_all/) | 15.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Stock
 
 [//]: # (end addons)
@@ -1152,6 +1152,7 @@ addon | version | maintainers | summary
 [account_payment_widget_amount](account_payment_widget_amount/) | 15.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
 [account_voucher_killer](account_voucher_killer/) | 15.0.1.1.0 |  | Prevent the usage of payments from invoices
 [partner_aging](partner_aging/) | 15.0.1.0.0 | [![Urvisha-OSI](https://github.com/Urvisha-OSI.png?size=30px)](https://github.com/Urvisha-OSI) | Aging as a view - invoices and credits
+[partner_restrict_payment_acquirer](partner_restrict_payment_acquirer/) | 15.0.1.0.0 |  | Partner Restrict Payment Acquirer
 [sale_payment_term_security](sale_payment_term_security/) | 15.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Payment Term Security
 
 [//]: # (end addons)
@@ -5096,7 +5097,7 @@ addon | version | maintainers | summary
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 15.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Impresión de pagaré de Cajamar en A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.3 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
@@ -5110,7 +5111,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 15.0.2.1.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 15.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.1 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
@@ -5941,7 +5942,7 @@ addon | version | maintainers | summary
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 15.0.1.0.2 |  | Mass configuration of stock order points
 [stock_orderpoint_move_link](stock_orderpoint_move_link/) | 15.0.1.0.1 |  | Link Reordering rules to stock moves
 [stock_orderpoint_purchase_link](stock_orderpoint_purchase_link/) | 15.0.1.0.0 |  | Link Reordering rules to purchase orders
-[stock_orderpoint_uom](stock_orderpoint_uom/) | 15.0.1.0.0 |  | Allows to create procurement orders in the UoM indicated in the orderpoint
+[stock_orderpoint_uom](stock_orderpoint_uom/) | 15.0.1.1.0 |  | Allows to create procurement orders in the UoM indicated in the orderpoint
 [stock_packaging_calculator](stock_packaging_calculator/) | 15.0.1.0.0 |  | Compute product quantity to pick by packaging
 [stock_picking_orig_dest_link](stock_picking_orig_dest_link/) | 15.0.1.0.0 |  | This addon link the pickings with their respective Origin and Destination Pickings.
 [stock_picking_show_linked](stock_picking_show_linked/) | 15.0.1.0.0 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
@@ -6581,7 +6582,7 @@ addon | version | maintainers | summary
 [purchase_work_acceptance_late_fines](purchase_work_acceptance_late_fines/) | 15.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Purchase Work Acceptance - Late Delivery Fines
 [purchase_work_acceptance_tier_validation](purchase_work_acceptance_tier_validation/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Extends the functionality of Work Acceptance to support a tier validation process.
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 15.0.1.1.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
-[sale_purchase_secondary_unit](sale_purchase_secondary_unit/) | 15.0.1.0.1 |  | Propagate sale secondary uom to purchase orders
+[sale_purchase_secondary_unit](sale_purchase_secondary_unit/) | 15.0.1.0.2 |  | Propagate sale secondary uom to purchase orders
 [stock_move_purchase_price_update](stock_move_purchase_price_update/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Allow update purchase price from incoming picking operations
 [stock_picking_batch_purchase_price_update](stock_picking_batch_purchase_price_update/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Allow update purchase price from incoming picking batch operations
 [subcontracted_service](subcontracted_service/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Subcontracted service

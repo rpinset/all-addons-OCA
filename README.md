@@ -115,16 +115,16 @@ Date:   Wed May 1 17:46:09 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 3097deb40ca90863a82d9e60abb7044cbff2df6a
+commit 37d9cd6404f7b0c1b435d1d6d2d0ecc5723f29f3
 Author: Anna Martínez <anna080678@gmail.com>
-Date:   Thu Feb 13 16:02:47 2025 +0000
+Date:   Mon Feb 17 13:31:20 2025 +0000
 
     Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (1 of 1 strings)
+    Currently translated at 96.0% (24 of 25 strings)
     
-    Translation: operating-unit-15.0/operating-unit-15.0-purchase_request_operating_unit_access_all
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-purchase_request_operating_unit_access_all/es/
+    Translation: operating-unit-15.0/operating-unit-15.0-operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-operating_unit/es/
 
 
 ## intrastat
@@ -201,11 +201,11 @@ Date:   Sun Feb 2 18:05:42 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 87a065739cd167d7794f9ab8bb5ccf76a914a0e0
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:59:28 2025 +0000
+commit 0b7bdba186310a198c007bd9b020cf41fd2fd545
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 17 07:23:53 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## connector
@@ -542,11 +542,16 @@ Date:   Sun Feb 2 18:55:52 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 152a477dd49af3a9c04bfe683d19363ecfdd3a21
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:57:11 2025 +0000
+commit 4f3a9dbc3d74d49cd2cbc0f4797cd50b573f5fbe
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 14 14:32:58 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: hr-holidays-15.0/hr-holidays-15.0-hr_holidays_public_city
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-15-0/hr-holidays-15-0-hr_holidays_public_city/it/
 
 
 ## department
@@ -896,9 +901,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 2ad11e663e6d1f6c72c54687660c46e6226e7b7c
+commit 4623b9cfe30f4cf411f72aa6358584bdcbfc88cd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 11 12:26:50 2025 +0000
+Date:   Mon Feb 17 13:49:52 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1027,11 +1032,11 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit b7d35eeea6fdb768c98675e126cb531096e7e8b9
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:55:45 2025 +0000
+commit 0e7233ad0bb677851220441b9bed236394c9f853
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 14 12:04:39 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1045,9 +1050,9 @@ Date:   Sun Feb 9 18:50:51 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 112d9f9facc76b15a52c5dc80e8d5e4aaaa1019d
+commit 866f726486cff83a5926b111914b9fd512528af8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 13 08:24:41 2025 +0000
+Date:   Sat Feb 15 08:01:19 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1123,11 +1128,11 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 6a552ef2793f4f6e1fa3babc9cc2c07b8a64680f
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:19:54 2025 +0000
+commit fe2104108082e0eac908bfa03111372d3798f5c5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 17 08:20:33 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1191,11 +1196,16 @@ Date:   Sun Feb 2 20:17:28 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 68e72f7f50fd59a24e3596cc139d82d91d8ff198
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:15:45 2025 +0000
+commit 4a2a5c7db056fc6d234d1722351e449c9d63085d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 14 14:31:49 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: project-15.0/project-15.0-project_forecast_line_holidays_public
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_forecast_line_holidays_public/it/
 
 
 ## project-agile
@@ -1254,16 +1264,16 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 52a7813acf0c3dbc8436c3ac14176f06e005418f
+commit 810134968fa9834a1b0ba9bdd0ed66c2cb913ffa
 Author: Isneyler Mosquera Preciado <isneyler@gmail.com>
-Date:   Thu Feb 13 03:40:45 2025 +0000
+Date:   Mon Feb 17 04:06:30 2025 +0000
 
     Translated using Weblate (Spanish)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: social-15.0/social-15.0-mail_layout_preview
-    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_layout_preview/es/
+    Translation: social-15.0/social-15.0-mail_optional_follower_notification
+    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_optional_follower_notification/es/
 
 
 ## storage
@@ -1430,9 +1440,9 @@ Date:   Sun Feb 9 19:05:14 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit ea8b560a26789d0541c504d7108839fe1e808356
+commit c597e08ba58ab14eff3b496f70e061ae1f85f7ce
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 11 15:14:09 2025 +0000
+Date:   Mon Feb 17 14:44:17 2025 +0000
 
     Translated using Weblate (Italian)
     
