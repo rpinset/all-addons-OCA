@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-03 03:37+0000\n"
-"PO-Revision-Date: 2024-12-20 18:06+0000\n"
+"PO-Revision-Date: 2025-02-14 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -34,14 +34,14 @@ msgid ""
 "                            \"Create\"."
 msgstr ""
 "Per impostazione predefinita, i giorni festivi più recenti\n"
-"                            per ogni paese sono usati come template per "
+"                            per ogni paese sono usati come modello per "
 "creare\n"
-"                            le festività per l'anno seguendo i template.\n"
+"                            le festività per l'anno seguendo i modelli.\n"
 "                            <br/><br/>\n"
 "                            Normalmente, non dovrebbe essere necessario "
 "inserire nulla\n"
-"                            nei campi facoltativi ed è necessario cliccare "
-"solamente sul bottone\n"
+"                            nei campi facoltativi ed è solo necessario fare "
+"clic sul pulsante\n"
 "                            \"Crea\"."
 
 #. module: hr_holidays_public
@@ -70,7 +70,7 @@ msgstr "Crea"
 #: model:ir.ui.menu,name:hr_holidays_public.menu_create_next_year_public_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.holidays_public_next_year_wizard_view
 msgid "Create Next Year Public Holidays"
-msgstr "Crea i giorni festivi del prossimo anno"
+msgstr "Crea giorni festivi del prossimo anno"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__create_uid
@@ -136,7 +136,7 @@ msgstr "Escludi i giorni festivi"
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__line_ids
 msgid "Holiday Dates"
-msgstr "Date dei festivi"
+msgstr "Date festività"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__id
@@ -192,7 +192,7 @@ msgid ""
 "No Public Holidays found as template. Please create the first Public "
 "Holidays manually."
 msgstr ""
-"Nessun giorno festivo trovato come template. Si prega di creare i primi "
+"Nessun giorno festivo trovato come modello. Si prega di creare i primi "
 "giorni festivi manualmente."
 
 #. module: hr_holidays_public
@@ -213,7 +213,7 @@ msgstr "Giorni festivi"
 #. module: hr_holidays_public
 #: model:ir.model,name:hr_holidays_public.model_hr_holidays_public_line
 msgid "Public Holidays Lines"
-msgstr "Lista giorni festivi"
+msgstr "Righe giorni festivi"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public_line__state_ids
@@ -233,11 +233,11 @@ msgid ""
 "country for each year will be taken into account (If you select templates "
 "from 2012 and 2015, only the templates from 2015 will be taken into account."
 msgstr ""
-"Seleziona i giorni festivi da utilizzare come template. In caso contrario, "
+"Seleziona i giorni festivi da utilizzare come modello. In caso contrario, "
 "verranno utilizzati gli ultimi giorni festivi di ciascun paese. Verranno "
-"presi in considerazione solo gli ultimi template di ciascun paese per ogni "
-"anno (se si selezionano template del 2012 e del 2015, verranno presi in "
-"considerazione solo i template del 2015."
+"presi in considerazione solo gli ultimi modelli di ciascun paese per ogni "
+"anno (se si selezionano modelli del 2012 e del 2015, verranno presi in "
+"considerazione solo i modelli del 2015."
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_public_holidays_next_year_wizard__template_ids
@@ -307,7 +307,7 @@ msgid ""
 "following the template."
 msgstr ""
 "Anno per il quale si desidera creare i giorni festivi. Per impostazione "
-"predefinita, l'anno successivo al template."
+"predefinita, l'anno successivo al modello."
 
 #. module: hr_holidays_public
 #. odoo-python
@@ -343,9 +343,9 @@ msgid ""
 "public holidays on 29th of February (2016, 2020...), please select a "
 "template from another year."
 msgstr ""
-"Non puoi utilizzare come template i giorni festivi di un anno che include i "
-"giorni festivi il 29 febbraio (2016, 2020...), seleziona un template di un "
-"altro anno."
+"Non si possono utilizzare come modello i giorni festivi di un anno che "
+"presenta giorni festivi il 29 febbraio (2016, 2020...), seleziona un modello "
+"di un altro anno."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

@@ -6,7 +6,7 @@ import {patch} from "@web/core/utils/patch";
 patch(SaleOrderLineProductField.prototype, {
     setup() {
         super.setup(...arguments);
-        this.lastContractContext = false;
+        this.lastContractData = false;
     },
 
     get extraLines() {
@@ -36,26 +36,19 @@ patch(SaleOrderLineProductField.prototype, {
             this.props.record.data.is_configurable_product &&
             this.props.record.data.is_contract
         ) {
-            this.lastContractContext = this.contractContext;
+            this.lastContractData = this.contractData;
         }
         super._editProductConfiguration(...arguments);
     },
 
-    _editLineConfiguration() {
-        super._editLineConfiguration(...arguments);
+    onEditContractConfiguration() {
         if (this.props.record.data.is_contract) {
             this._openContractConfigurator();
         }
     },
 
-    get isConfigurableLine() {
-        // When a product is configurable it will be added again when the variants are selected.
-        // So the configuration will be catched with _onProductUpdate hook.
-        return (
-            super.isConfigurableLine ||
-            (this.props.record.data.is_contract &&
-                !this.props.record.data.is_configurable_product)
-        );
+    get isConfigurableContract() {
+        return this.props.record.data.is_contract;
     },
 
     get contractContext() {
@@ -74,14 +67,29 @@ patch(SaleOrderLineProductField.prototype, {
         };
     },
 
+    get contractData() {
+        return {
+            product_id: this.props.record.data.product_id,
+            product_uom_qty: this.props.record.data.product_uom_qty,
+            contract_id: this.props.record.data.contract_id,
+            recurring_interval: this.props.record.data.recurring_interval,
+            date_start: this.props.record.data.date_start,
+            date_end: this.props.record.data.date_end,
+            is_auto_renew: this.props.record.data.is_auto_renew,
+            auto_renew_interval: this.props.record.data.auto_renew_interval,
+            auto_renew_rule_type: this.props.record.data.auto_renew_rule_type,
+        };
+    },
+
     async _openContractConfigurator(isNew = false) {
-        const actionContext = Object.assign(
-            {},
-            this.lastContractContext || this.contractContext
-        );
-        if (this.lastContractContext) {
-            this.lastContractContext = false;
+        if (this.lastContractData) {
+            const changes = Object.assign({}, this.lastContractData);
+            this.lastContractData = false;
+            return this.props.record._update(changes, {
+                withoutOnchange: true,
+            });
         }
+        const actionContext = this.contractContext;
         this.action.doAction("product_contract.product_contract_configurator_action", {
             additionalContext: actionContext,
             onClose: async (closeInfo) => {
