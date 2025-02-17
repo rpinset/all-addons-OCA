@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-03 03:37+0000\n"
-"PO-Revision-Date: 2024-02-12 11:36+0000\n"
+"PO-Revision-Date: 2025-02-14 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: hr_holidays_public
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.holidays_public_next_year_wizard_view
@@ -70,7 +70,7 @@ msgstr "Crea"
 #: model:ir.ui.menu,name:hr_holidays_public.menu_create_next_year_public_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.holidays_public_next_year_wizard_view
 msgid "Create Next Year Public Holidays"
-msgstr "Crea i giorni festivi del prossimo anno"
+msgstr "Crea giorni festivi del prossimo anno"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__create_uid
@@ -133,7 +133,7 @@ msgstr "Escludi i giorni festivi"
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__line_ids
 msgid "Holiday Dates"
-msgstr "Date dei festivi"
+msgstr "Date festività"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__id
@@ -200,7 +200,7 @@ msgid ""
 "No Public Holidays found as template. Please create the first Public "
 "Holidays manually."
 msgstr ""
-"Nessun giorno festivo trovato come template. Si prega di creare i primi "
+"Nessun giorno festivo trovato come modello. Si prega di creare i primi "
 "giorni festivi manualmente."
 
 #. module: hr_holidays_public
@@ -241,11 +241,11 @@ msgid ""
 "country for each year will be taken into account (If you select templates "
 "from 2012 and 2015, only the templates from 2015 will be taken into account."
 msgstr ""
-"Seleziona i giorni festivi da utilizzare come template. In caso contrario, "
+"Seleziona i giorni festivi da utilizzare come modello. In caso contrario, "
 "verranno utilizzati gli ultimi giorni festivi di ciascun paese. Verranno "
-"presi in considerazione solo gli ultimi template di ciascun paese per ogni "
-"anno (se si selezionano template del 2012 e del 2015, verranno presi in "
-"considerazione solo i template del 2015."
+"presi in considerazione solo gli ultimi modelli di ciascun paese per ogni "
+"anno (se si selezionano modelli del 2012 e del 2015, verranno presi in "
+"considerazione solo i modelli del 2015."
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_public_holidays_next_year_wizard__template_ids

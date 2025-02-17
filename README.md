@@ -326,16 +326,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f96a9c71c0e64ae1743dca96c79b63df18b6f1ac
+commit 203d179dfb44e08e092b1d541fd28a01fbe160cb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 12 15:18:12 2025 +0000
+Date:   Mon Feb 17 14:46:51 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (23 of 23 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_invoicing_finished_task
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_invoicing_finished_task/it/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_stock_picking_blocking
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_stock_picking_blocking/it/
 
 
 ## crm
@@ -549,11 +549,16 @@ Date:   Sun Feb 2 18:55:35 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit b64ed3fea967fe7812f60961bda6c2f4ae7a8372
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:56:58 2025 +0000
+commit be3bd4cd1c5ebc771803d7202a41b889c0eebef1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 14 14:41:17 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (42 of 42 strings)
+    
+    Translation: hr-holidays-14.0/hr-holidays-14.0-hr_holidays_public
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-14-0/hr-holidays-14-0-hr_holidays_public/it/
 
 
 ## department
@@ -783,11 +788,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e539ac8b5391819e68e6cc2b33a05b3dcfd29dd5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 13 10:21:21 2025 +0000
+commit 5f4ab7b4790cf01d3c23eead3b4bcf987ee9dd53
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Feb 14 11:55:34 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (75 of 75 strings)
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_financial_statements_report
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_financial_statements_report/it/
 
 
 ## l10n-japan
@@ -1037,11 +1047,11 @@ Date:   Sun Feb 9 18:52:33 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 3b8b74282d0ad756de8ca0308b34199ad2cab297
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:55:12 2025 +0000
+commit e010deb23867d514cabf5bae048f2a053ba4f501
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 14 07:57:37 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1055,9 +1065,9 @@ Date:   Sun Feb 9 18:50:35 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 311db277bcd4dacc0ec34b5b81e01797675a878f
+commit 9651fe88f90f69be5daa780360684c59a56c88bb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 13 08:24:29 2025 +0000
+Date:   Sat Feb 15 08:01:18 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1087,16 +1097,16 @@ Date:   Thu Feb 6 10:54:14 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit bc413d513220ba670f82bb2675015d7eae724ee3
+commit a75dd7f542b2281af333eca931f4cce7b6f59395
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 11 15:14:00 2025 +0000
+Date:   Mon Feb 17 08:16:01 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (18 of 18 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_sale_info
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_sale_info/it/
+    Translation: manufacture-14.0/manufacture-14.0-repair_discount
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-repair_discount/it/
 
 
 ## manufacture-reporting
@@ -1439,9 +1449,9 @@ Date:   Sun Feb 9 19:05:00 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 39cf33a731bb709898c84db14690157679eee1f2
+commit 0def2ced56756a7087e04441e2833d4d13e1be55
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 11 15:14:02 2025 +0000
+Date:   Mon Feb 17 14:44:20 2025 +0000
 
     Translated using Weblate (Italian)
     

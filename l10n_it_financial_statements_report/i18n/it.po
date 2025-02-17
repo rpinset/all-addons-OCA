@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-13 14:52+0000\n"
-"PO-Revision-Date: 2024-11-14 17:06+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
+"PO-Revision-Date: 2025-02-14 14:06+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -362,7 +362,7 @@ msgstr "Nessun limite"
 #: code:addons/l10n_it_financial_statements_report/report/financial_statements_report_xlsx.py:0
 #, python-format
 msgid "No partner allocated"
-msgstr "Nessuno partner allocato"
+msgstr "Nessun partner specificato"
 
 #. module: l10n_it_financial_statements_report
 #: code:addons/l10n_it_financial_statements_report/report/financial_statements_report.py:0
