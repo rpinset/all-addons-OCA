@@ -598,11 +598,16 @@ Date:   Sat Feb 1 21:17:25 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit b94e3478be9b13d8fe06dc5fabd4aa6afcd9b321
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:17:37 2025 +0000
+commit 2ea6756f123077e9ac21034ff56b6c38f278ab4b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Feb 14 14:35:18 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (41 of 41 strings)
+    
+    Translation: hr-holidays-13.0/hr-holidays-13.0-hr_holidays_public
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-13-0/hr-holidays-13-0-hr_holidays_public/it/
 
 
 ## connector-odoo2odoo
