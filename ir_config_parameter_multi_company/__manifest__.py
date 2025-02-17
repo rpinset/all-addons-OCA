@@ -1,7 +1,7 @@
 {
     "name": "IR Config Parameter Multi Company",
     "summary": "Add res company field in ir config parameter",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Tools",
     "author": "Innovyou, Odoo Community Association (OCA)",
     "maintainers": ["deniscraciungabriel", "eLBati"],
@@ -11,4 +11,5 @@
     "data": ["views/ir_config_parameter_view.xml", "security/parameter_security.xml"],
     "images": [],
     "installable": True,
+    "pre_init_hook": "pre_init_hook",
 }

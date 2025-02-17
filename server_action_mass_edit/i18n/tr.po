@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-17 21:08+0000\n"
-"PO-Revision-Date: 2023-03-09 12:23+0000\n"
-"Last-Translator: Ediz Duman <neps1192@gmail.com>\n"
+"PO-Revision-Date: 2025-02-15 10:06+0000\n"
+"Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_server_action_form
@@ -61,7 +61,7 @@ msgstr "Uygula"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__apply_domain
 msgid "Apply Domain"
-msgstr "Etki Alanını Uygula"
+msgstr "Domaini Uygula"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server_mass_edit_line__apply_domain
@@ -102,7 +102,7 @@ msgstr "Görünen İsim"
 #: code:addons/server_action_mass_edit/wizard/mass_editing_wizard.py:0
 #, python-format
 msgid "Don't touch"
-msgstr "Dokunmayın"
+msgstr "Değiştirme"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -113,6 +113,9 @@ msgid ""
 "\n"
 "%(ue)s"
 msgstr ""
+"%(model_name)s güncellenirken bir hata oluştu  \"%(name)s\" [id: %(id)s]:\n"
+"\n"
+"%(ue)s"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__field_id
@@ -170,14 +173,14 @@ msgstr "Toplu Düzenleme Satırı"
 #. module: server_action_mass_edit
 #: model:ir.model.fields.selection,name:server_action_mass_edit.selection__ir_actions_server__state__mass_edit
 msgid "Mass Edit Records"
-msgstr "Toplu Düzenleme Kayıtları"
+msgstr "Toplu Kayıt Düzenleme"
 
 #. module: server_action_mass_edit
 #. odoo-python
 #: code:addons/server_action_mass_edit/models/ir_actions_server_mass_edit_line.py:0
 #, python-format
 msgid "Mass edit fields should belong to the server action model."
-msgstr "Toplu düzenleme alanları sunucu eylem modeline ait olmalıdır."
+msgstr "Toplu düzenleme alanları sunucu işlemleri modeline ait olmalıdır."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server__mass_edit_message
@@ -195,7 +198,7 @@ msgstr "Model"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server_mass_edit_line__model_id
 msgid "Model on which the server action runs."
-msgstr "Sunucu eyleminin üzerinde çalıştığı model."
+msgstr "Sunucu işleminin üzerinde çalıştığı model."
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -250,7 +253,7 @@ msgstr "Sunucu İşlemi"
 #. module: server_action_mass_edit
 #: model:ir.model,name:server_action_mass_edit.model_ir_actions_server_mass_edit_line
 msgid "Server Actions Mass Edit Lines"
-msgstr "Sunucu Eylemleri Toplu Düzenleme Satırları"
+msgstr "Sunucu İşlemleri Toplu Düzenleme Satırları"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -275,6 +278,11 @@ msgid ""
 "  With this option, the error message will be more specific to facillitate "
 "the undertanding of the error."
 msgstr ""
+"Bu seçenek, kayıtları bir kerede yazmak yerine tek tek yazacaktır.\n"
+"Bu, çok sayıda kayıt düzenlediğinizde ve kayıtlardan biri hata verdiğinde "
+"kullanışlıdır.\n"
+"  Bu seçenekle, hata mesajı hatanın anlaşılmasını kolaylaştırmak için daha "
+"spesifik olacaktır."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server__state
@@ -316,7 +324,7 @@ msgstr "Toplu düzenleme sihirbazı"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
 msgid "Write Record By Record"
-msgstr ""
+msgstr "Kayıtları Tek Tek Yaz"
 
 #. module: server_action_mass_edit
 #. odoo-python
@@ -327,7 +335,7 @@ msgid ""
 "Only %(amount)d record(s) will be processed."
 msgstr ""
 "İşlenemeyen %(origin_amount)d kayıt seçtiniz.\n"
-"Yalnızca %(amount)d kayıt(lar) işlenecek."
+"Yalnızca %(amount)d kayıt işlenecek."
 
 #~ msgid "Action Name"
 #~ msgstr "Eylem Adı"

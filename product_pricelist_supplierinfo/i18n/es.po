@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-31 17:35+0000\n"
-"PO-Revision-Date: 2023-08-29 08:30+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2025-02-17 14:06+0000\n"
+"Last-Translator: Carlos Dauden <carlos.dauden@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: product_pricelist_supplierinfo
 #: model:ir.model.fields,help:product_pricelist_supplierinfo.field_product_pricelist_item__base
@@ -25,11 +25,10 @@ msgid ""
 "Cost Price : The base price will be the cost price.\n"
 "Other Pricelist : Computation of the base price based on another Pricelist."
 msgstr ""
-"Precio base para el cómputo.\n"
-"Precio de Venta: El precio base será el Precio de Venta.\n"
-"Precio de Costo: El precio base será el precio de costo.\n"
-"Otra Lista de Precios: Cálculo del precio base en base a otra Lista de "
-"Precios."
+"Precio base para el cálculo.\n"
+"Precio venta: El precio base será el precio de venta.\n"
+"Precio de coste: El precio base será el precio de coste.\n"
+"Otras tarifas: Cálculo del precio base basado en otra lista de precios."
 
 #. module: product_pricelist_supplierinfo
 #: model:ir.model.fields,field_description:product_pricelist_supplierinfo.field_product_pricelist_item__base
@@ -37,9 +36,19 @@ msgid "Based on"
 msgstr "Basado en"
 
 #. module: product_pricelist_supplierinfo
+#: model:ir.model.fields,help:product_pricelist_supplierinfo.field_product_pricelist_item__ignore_supplierinfo_margin
+msgid "Based on supplierinfo price without sale margin applied"
+msgstr "Basado en precio de proveedor sin margen de venta aplicado"
+
+#. module: product_pricelist_supplierinfo
 #: model:ir.model.fields,field_description:product_pricelist_supplierinfo.field_product_pricelist_item__no_supplierinfo_min_quantity
 msgid "Ignore Supplier Info Min. Quantity"
 msgstr "Ignorar cantidad mínima de la info de proveedor"
+
+#. module: product_pricelist_supplierinfo
+#: model:ir.model.fields,field_description:product_pricelist_supplierinfo.field_product_pricelist_item__ignore_supplierinfo_margin
+msgid "Ignore Supplierinfo Margin"
+msgstr "Ignorar margen de la info de proveedor"
 
 #. module: product_pricelist_supplierinfo
 #: model:ir.model.fields,help:product_pricelist_supplierinfo.field_product_supplierinfo__sale_margin

@@ -5,7 +5,7 @@
 {
     "name": "Partner multi-company",
     "summary": "Select individually the partner visibility on each company",
-    "version": "16.0.1.1.0",
+    "version": "16.0.2.0.0",
     "license": "AGPL-3",
     "depends": ["base_multi_company"],
     "author": "Tecnativa, " "Odoo Community Association (OCA)",
@@ -14,5 +14,4 @@
     "data": ["views/res_partner_view.xml"],
     "installable": True,
     "post_init_hook": "post_init_hook",
-    "uninstall_hook": "uninstall_hook",
 }

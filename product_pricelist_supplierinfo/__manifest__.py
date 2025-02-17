@@ -1,10 +1,11 @@
 # Copyright 2018 Tecnativa - Vicent Cubells
 # Copyright 2018 Tecnativa - Pedro M. Baeza
+# Copyright 2025 Tecnativa - Carlos Dauden
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Supplier info prices in sales pricelists",
     "summary": "Allows to create priceslists based on supplier info",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "category": "Sales/Sales",
     "website": "https://github.com/OCA/product-attribute",
     "author": "Tecnativa, Odoo Community Association (OCA), Vauxoo",

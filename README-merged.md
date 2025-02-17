@@ -560,6 +560,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_avatax_exemption_base](account_avatax_exemption_base/) | 16.0.1.0.0 |  | This application allows you to add exemptions base to Avatax
 [account_avatax_oca](account_avatax_oca/) | 16.0.1.5.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
+[account_avatax_repair_oca](account_avatax_repair_oca/) | 16.0.1.0.0 |  | Repair Orders with automatic Tax application using Avatax
 [account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.3.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | [![cybernexus](https://github.com/cybernexus.png?size=30px)](https://github.com/cybernexus) | Ecommerce Sales Orders require tax recalculation prior to payment.
 [account_ecotax](account_ecotax/) | 16.0.1.0.0 | [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
@@ -623,7 +624,7 @@ addon | version | maintainers | summary
 [project_operating_unit](project_operating_unit/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module adds operating unit information to projects and tasks.
 [report_qweb_operating_unit](report_qweb_operating_unit/) | 16.0.1.0.0 |  | Qweb Report With Operating Unit
 [sales_team_operating_unit](sales_team_operating_unit/) | 16.0.1.0.0 |  | Sales Team Operating Unit
-[stock_operating_unit](stock_operating_unit/) | 16.0.1.2.1 |  | Adds the concept of operating unit (OU) in stock management
+[stock_operating_unit](stock_operating_unit/) | 16.0.1.2.2 |  | Adds the concept of operating unit (OU) in stock management
 
 [//]: # (end addons)
 
@@ -671,7 +672,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
 [intrastat_delivery](intrastat_delivery/) | 16.0.1.0.0 |  | Propagates the value of the incoterm fields from the order shipping method to the invoices
-[intrastat_product](intrastat_product/) | 16.0.2.2.0 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 16.0.2.3.0 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 16.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 16.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
@@ -858,7 +859,7 @@ addon | version | maintainers | summary
 [partner_risk_insurance_product_sticker_invoice_report](partner_risk_insurance_product_sticker_invoice_report/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display a Sticker on Invoice Reports secured with Risk Insurance
 [sale_financial_risk](sale_financial_risk/) | 16.0.1.1.2 |  | Manage partner risk in sales orders
 [sale_financial_risk_info](sale_financial_risk_info/) | 16.0.1.0.1 |  | Adds risk consumption info in sales orders.
-[sale_payment_sheet_financial_risk](sale_payment_sheet_financial_risk/) | 16.0.1.0.0 |  | Manage partner risk in sale payment sheet
+[sale_payment_sheet_financial_risk](sale_payment_sheet_financial_risk/) | 16.0.1.0.1 |  | Manage partner risk in sale payment sheet
 [stock_financial_risk](stock_financial_risk/) | 16.0.1.0.0 |  | Manage partner risk in stock moves
 
 [//]: # (end addons)
@@ -1022,8 +1023,9 @@ addon | version | maintainers | summary
 [account_move_line_reconcile_manual](account_move_line_reconcile_manual/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manually reconcile Journal Items
 [account_move_reconcile_forbid_cancel](account_move_reconcile_forbid_cancel/) | 16.0.1.0.1 |  | Account Move Reconcile Forbid Cancel
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
+[account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.3.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.3.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.14.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
@@ -2286,6 +2288,7 @@ addon | version | maintainers | summary
 [sale_report_commitment_date](sale_report_commitment_date/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display the commitment date on Sales Order analysis reports
 [sale_report_country_state](sale_report_country_state/) | 16.0.1.0.0 |  | Sale Report Filter by State
 [sale_report_delivered](sale_report_delivered/) | 16.0.2.2.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered
+[sale_report_delivered_attribute_values](sale_report_delivered_attribute_values/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow to view Attribute values of Lines on Sale Report Delivered
 [sale_report_delivered_deposit](sale_report_delivered_deposit/) | 16.0.2.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow to view Customer Deposits on Sale Report Delivered
 [sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 16.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered subtotal
 [sale_report_delivered_volume](sale_report_delivered_volume/) | 16.0.1.0.0 |  | Sale Report Delivered Volume
@@ -3062,7 +3065,7 @@ addon | version | maintainers | summary
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 16.0.1.0.1 |  | Open/Close task from corresponding Task Log entry
 [hr_timesheet_time_type](hr_timesheet_time_type/) | 16.0.1.0.0 |  | Ability to add time type in timesheet lines.
 [project_task_analytic_propagation](project_task_analytic_propagation/) | 16.0.1.0.0 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Updates timesheet's analytic account when their task changes the analytic.
-[project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.0 |  | Allows to tell that a task stage is opened for timesheets.
+[project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.1 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_invoice_link](sale_timesheet_invoice_link/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Link invoices with timesheet lines
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.1.1 |  | Exclude Timesheet Line from Sale Order
@@ -3140,8 +3143,11 @@ addon | version | maintainers | summary
 [hr_employee_service_contract](hr_employee_service_contract/) | 16.0.1.0.0 |  | Employee service information & duration based on employee's contracts
 [hr_employee_ssn](hr_employee_ssn/) | 16.0.1.0.0 |  | View/edit employee's SSN & SIN fields
 [hr_holidays_team_manager](hr_holidays_team_manager/) | 16.0.1.0.0 |  | HR Holidays Team Manager
+[hr_job_category](hr_job_category/) | 16.0.1.0.0 |  | Adds tags to employee through contract and job position
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 16.0.1.0.0 |  | This addon allows to manage employee personal equipment
+[hr_personal_equipment_request_tier_validation](hr_personal_equipment_request_tier_validation/) | 16.0.1.0.0 |  | Enables tier validation from hr.personal.equipment.request
 [hr_personal_equipment_stock](hr_personal_equipment_stock/) | 16.0.1.0.0 |  | This addon allows to integrate hr_personal_equipment_request with stock
+[hr_personal_equipment_variant_configurator](hr_personal_equipment_variant_configurator/) | 16.0.1.0.0 |  | Manage variants of personal equipment
 [hr_professional_category](hr_professional_category/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
 [hr_recruitment_torecruit](hr_recruitment_torecruit/) | 16.0.1.1.0 |  | Age field for employee
 
@@ -3442,11 +3448,11 @@ addon | version | maintainers | summary
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Propagate account reconcile model in companies with same chart template
 [base_multi_company](base_multi_company/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
 [company_dependent_flag](company_dependent_flag/) | 16.0.1.0.2 |  | Apply css style to company dependent fields
-[ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 16.0.1.0.0 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
+[ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 16.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [mail_multicompany](mail_multicompany/) | 16.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 16.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [partner_account_multicompany_default](partner_account_multicompany_default/) | 16.0.0.1.0 | [![camptocamp](https://github.com/camptocamp.png?size=30px)](https://github.com/camptocamp) | Set a default account for all companies of a partners
-[partner_multi_company](partner_multi_company/) | 16.0.1.1.0 |  | Select individually the partner visibility on each company
+[partner_multi_company](partner_multi_company/) | 16.0.2.0.0 |  | Select individually the partner visibility on each company
 [pos_category_multicompany](pos_category_multicompany/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) | Point of Sale Category in Multi company context
 [pos_restaurant_multi_company](pos_restaurant_multi_company/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on PoS Restaurant.
 [product_account_multicompany_default](product_account_multicompany_default/) | 16.0.0.2.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Set a default account for all companies of a product
@@ -5212,7 +5218,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.2.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.10.4 |  | AEAT modelo 347
@@ -5233,8 +5239,8 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.9.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.3.3 |  | Spanish Intrastat Product Declaration
@@ -6247,7 +6253,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 16.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 16.0.3.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma](rma/) | 16.0.3.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 16.0.1.0.0 |  | Manage lot in RMA
 [rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
 [rma_sale](rma_sale/) | 16.0.3.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
@@ -6945,8 +6951,8 @@ addon | version | maintainers | summary
 [product_pricelist_revision](product_pricelist_revision/) | 16.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_simulation](product_pricelist_simulation/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simulate the product price for all pricelists
 [product_pricelist_simulation_margin](product_pricelist_simulation_margin/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add margin of product price for all pricelists
-[product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 16.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to create priceslists based on supplier info
-[product_print_category](product_print_category/) | 16.0.1.0.5 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Define print categories for products and automate products print, when data has changed
+[product_pricelist_supplierinfo](product_pricelist_supplierinfo/) | 16.0.1.1.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to create priceslists based on supplier info
+[product_print_category](product_print_category/) | 16.0.1.0.6 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Define print categories for products and automate products print, when data has changed
 [product_product_template_link](product_product_template_link/) | 16.0.1.0.0 |  | Adds a button in product to view the template
 [product_profile](product_profile/) | 16.0.1.0.1 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Allow to configure a product in 1 click
 [product_route_mto](product_route_mto/) | 16.0.1.0.0 |  | This module allows to compute if a product is an 'MTO' one from its configured routes
@@ -7263,6 +7269,7 @@ addon | version | maintainers | summary
 [project_timesheet_time_control](project_timesheet_time_control/) | 16.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 16.0.1.0.1 |  | Project Types
 [project_update_visible](project_update_visible/) | 16.0.1.0.0 |  | Visible project_id in project.update view form.
+[project_version](project_version/) | 16.0.1.0.0 | [![lbarry-apsl](https://github.com/lbarry-apsl.png?size=30px)](https://github.com/lbarry-apsl) | Project Version
 [sale_project_copy_tasks](sale_project_copy_tasks/) | 16.0.1.0.4 | [![shide](https://github.com/shide.png?size=30px)](https://github.com/shide) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Copy tasks into sale order's project
 [task_project_status](task_project_status/) | 16.0.1.0.0 |  | Show project status on the task.
 
@@ -7982,7 +7989,7 @@ addon | version | maintainers | summary
 [base_fontawesome](base_fontawesome/) | 16.0.6.6.1 |  | Up to date Fontawesome resources.
 [base_force_record_noupdate](base_force_record_noupdate/) | 16.0.1.0.0 |  | Manually force noupdate=True on models
 [base_import_default_enable_tracking](base_import_default_enable_tracking/) | 16.0.1.0.0 | [![benwillig](https://github.com/benwillig.png?size=30px)](https://github.com/benwillig) | This modules simply enables history tracking when doing an import.
-[base_import_odoo](base_import_odoo/) | 16.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) [![thomaspaulb](https://github.com/thomaspaulb.png?size=30px)](https://github.com/thomaspaulb) | Import records from another Odoo instance
+[base_import_odoo](base_import_odoo/) | 16.0.1.0.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) [![thomaspaulb](https://github.com/thomaspaulb.png?size=30px)](https://github.com/thomaspaulb) | Import records from another Odoo instance
 [base_m2m_custom_field](base_m2m_custom_field/) | 16.0.1.0.0 |  | Customizations of Many2many
 [base_multi_image](base_multi_image/) | 16.0.1.0.1 |  | Allow multiple images for database objects
 [base_name_search_improved](base_name_search_improved/) | 16.0.1.0.2 |  | Friendlier search when typing in relation fields
@@ -8530,6 +8537,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[iot_amqp_oca](iot_amqp_oca/) | 16.0.1.0.0 |  | Integrate Iot Outputs with AMQP
 [iot_input_oca](iot_input_oca/) | 16.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | IoT Input module
 [iot_oca](iot_oca/) | 16.0.1.0.1 |  | IoT base module
 [iot_output_oca](iot_output_oca/) | 16.0.1.0.1 |  | IoT allow multiple outputs

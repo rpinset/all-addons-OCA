@@ -56,7 +56,7 @@
 
                             </div>
                             <div>
-                                <field name="partner_id" />
+                                <field name="partner_id" widget="badge" />
                             </div>
                             <div class="row">
                                 <div class="col-8">

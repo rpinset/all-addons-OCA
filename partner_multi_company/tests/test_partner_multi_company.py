@@ -127,18 +127,6 @@ class TestPartnerMultiCompany(common.TransactionCase):
         with self.assertRaises(AccessError):
             self.partner_company_1.with_user(self.user_company_2).name = "Test"
 
-    def test_uninstall(self):
-        from ..hooks import uninstall_hook
-
-        uninstall_hook(self.env.cr, None)
-        rule = self.env.ref("base.res_partner_rule")
-        domain = (
-            "['|', '|', ('partner_share', '=', False),"
-            "('company_id', 'in', company_ids),"
-            "('company_id', '=', False)]"
-        )
-        self.assertEqual(rule.domain_force, domain)
-
     def test_switch_user_company(self):
         self.user_company_1.company_ids = (self.company_1 + self.company_2).ids
         self.user_company_1.company_id = self.company_2.id
@@ -171,3 +159,10 @@ class TestPartnerMultiCompany(common.TransactionCase):
         user_partner.write({"company_id": False, "company_ids": [(5, False)]})
         self.user_company_1.write({"company_id": self.company_2.id})
         self.assertEqual(user_partner.company_ids.ids, [])
+
+    def test_can_read_partner_without_company(self):
+        self.assertFalse(self.partner_company_none.company_id)
+        self.assertEqual(
+            self.partner_company_none.with_user(self.user_company_1).read(["name"]),
+            [{"id": self.partner_company_none.id, "name": "partner without company"}],
+        )

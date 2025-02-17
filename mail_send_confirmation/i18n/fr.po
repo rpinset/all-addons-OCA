@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-03-13 10:36+0000\n"
+"PO-Revision-Date: 2025-02-14 16:06+0000\n"
 "Last-Translator: Pierre-François Teyssier <pierre-francois@scalizer.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mail_send_confirmation
 #. odoo-javascript
@@ -28,7 +28,7 @@ msgstr "Confirmer"
 #: code:addons/mail_send_confirmation/static/src/models/composer_view.esm.js:0
 #, python-format
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 #. module: mail_send_confirmation
 #. odoo-javascript
@@ -46,4 +46,4 @@ msgid ""
 "would like to send this message?"
 msgstr ""
 "Ce message sera également envoyé aux partenaires externes. Êtes vous sûr de "
-"vouloir envoyer ce message?"
+"vouloir envoyer ce message ?"
