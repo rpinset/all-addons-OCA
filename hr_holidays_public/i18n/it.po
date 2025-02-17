@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-03 03:37+0000\n"
-"PO-Revision-Date: 2023-06-13 16:09+0000\n"
+"PO-Revision-Date: 2025-02-14 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: hr_holidays_public
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.holidays_public_next_year_wizard_view
@@ -27,8 +27,8 @@ msgid ""
 "country and year already exists!</span>"
 msgstr ""
 "<i class=\"fa fa-info-circle\"/>\n"
-"                        <span>Attenzione: esiste già un calendario delle "
-"festività pubbliche per questo anno e azienda!</span>"
+"                        <span>Attenzione: esiste già un calendario dei "
+"giorni festivi per questo anno e azienda!</span>"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__year
@@ -57,7 +57,7 @@ msgstr "Crea"
 #: model:ir.ui.menu,name:hr_holidays_public.menu_create_next_year_public_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays_public.holidays_public_next_year_wizard_view
 msgid "Create Next Year Public Holidays"
-msgstr "Crea i giorni festivi del prossimo anno"
+msgstr "Crea giorni festivi del prossimo anno"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__create_uid
@@ -139,7 +139,7 @@ msgstr "Escludi i giorni festivi"
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__line_ids
 msgid "Holiday Dates"
-msgstr "Date dei festivi"
+msgstr "Date festività"
 
 #. module: hr_holidays_public
 #: model:ir.model.fields,field_description:hr_holidays_public.field_hr_holidays_public__id

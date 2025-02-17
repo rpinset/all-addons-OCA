@@ -561,16 +561,16 @@ Date:   Sat Feb 1 21:05:55 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 6803c5df704d8c4a66e27bc0f16ff8d3c2fc145c
+commit 5013a9e7a590405c1f94987d740e97e080db13db
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jan 27 09:29:43 2025 +0000
+Date:   Fri Feb 14 12:14:41 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (97 of 97 strings)
+    Currently translated at 100.0% (47 of 47 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_period
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_period/it/
+    Translation: hr-12.0/hr-12.0-hr_holidays_public
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_holidays_public/it/
 
 
 ## connector-odoo2odoo
@@ -1084,16 +1084,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 255e5c744f5cad75e0204ead495d56fa533364a8
+commit 3306decaaeccdb35d2af5ac3266c30edfd430a77
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 11 15:14:14 2025 +0000
+Date:   Mon Feb 17 08:16:00 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_sale_info
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_sale_info/it/
+    Translation: manufacture-12.0/manufacture-12.0-repair_discount
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_discount/it/
 
 
 ## manufacture-reporting
