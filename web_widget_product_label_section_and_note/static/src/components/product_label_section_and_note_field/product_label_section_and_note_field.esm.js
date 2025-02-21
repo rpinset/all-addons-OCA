@@ -261,14 +261,17 @@ export class ProductLabelSectionAndNoteField extends Many2OneField {
 
     updateLabel(value) {
         this.changeProductVisibility = false;
-        this.props.record.update({
-            name:
-                this.productName &&
-                this.productName !== value &&
-                this.isProductVisible.value
-                    ? `${this.productName}\n${value}`
-                    : value,
-        });
+        const new_name =
+            this.productName &&
+            this.productName !== value &&
+            this.isProductVisible.value
+                ? `${this.productName}\n${value}`
+                : value;
+        // We need to update the record data directly because the record.update method
+        // updates the data asynchronously, and the new value will not be available
+        // in the `get Label` method immediately.
+        this.props.record.data.name = new_name;
+        this.props.record.update({name: new_name});
     }
 }
 

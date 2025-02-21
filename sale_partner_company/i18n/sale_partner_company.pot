@@ -1,0 +1,35 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_partner_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_partner_company
+#: model:ir.model.fields,field_description:sale_partner_company.field_sale_order__company_id
+msgid "Company"
+msgstr ""
+
+#. module: sale_partner_company
+#: model:ir.model,name:sale_partner_company.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: sale_partner_company
+#: model:ir.model,name:sale_partner_company.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: sale_partner_company
+#: model:ir.model.fields,field_description:sale_partner_company.field_res_partner__sale_company_id
+#: model:ir.model.fields,field_description:sale_partner_company.field_res_users__sale_company_id
+msgid "Selling Company"
+msgstr ""

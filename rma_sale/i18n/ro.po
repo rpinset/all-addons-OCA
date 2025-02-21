@@ -40,11 +40,6 @@ msgstr " au fost create."
 
 #. module: rma_sale
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
-msgid "&amp;times;"
-msgstr "&amp;times;"
-
-#. module: rma_sale
-#: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
 msgid "<i class=\"fa fa-check\"/> Request RMAs"
 msgstr "<i class=\"fa fa-check\"/> Cerere retur"
 
@@ -482,6 +477,9 @@ msgid ""
 msgstr ""
 "Sunteți pe cale să efectuați o solicitare de retur. Echipa noastră o va "
 "procesa odată ce va fi validată. Ține minte că:"
+
+#~ msgid "&amp;times;"
+#~ msgstr "&amp;times;"
 
 #~ msgid "<strong>Requested operation:</strong>"
 #~ msgstr "<strong>Operație solicitată:</strong>"

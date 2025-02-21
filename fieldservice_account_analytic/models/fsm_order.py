@@ -21,16 +21,14 @@ class FSMOrder(models.Model):
         tracking=True,
     )
 
+    @api.onchange("location_id")
+    def _onchange_location_id(self):
+        self.customer_id = self.location_id.customer_id
+
     def _compute_total_cost(self):
         """To be overridden as needed from other modules"""
         for order in self:
             order.total_cost = 0.0
-
-    @api.onchange("customer_id")
-    def _onchange_customer_id_location(self):
-        self.location_id = (
-            self.customer_id.service_location_id if self.customer_id else False
-        )
 
     def write(self, vals):
         res = super(FSMOrder, self).write(vals)

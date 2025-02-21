@@ -177,6 +177,10 @@ class IrExportsLine(models.Model):
         :param str name:
             Technical name of the field, like ``child_ids``.
         """
+
+        # Handle special case "id" field
+        name = "id" if name == ".id" else name
+
         field = (
             self.env["ir.model.fields"]
             .sudo()

@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_harmonized_system_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-18 15:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: product_harmonized_system_delivery
+#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_product__hs_code
+#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_template__hs_code
+msgid "HS Code"
+msgstr "HS Kodu"
+
+#. module: product_harmonized_system_delivery
+#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_product__country_of_origin
+#: model:ir.model.fields,field_description:product_harmonized_system_delivery.field_product_template__country_of_origin
+msgid "Origin of Goods"
+msgstr "Malların Menşei"
+
+#. module: product_harmonized_system_delivery
+#: model:ir.model,name:product_harmonized_system_delivery.model_product_template
+msgid "Product"
+msgstr "Ürün"
+
+#. module: product_harmonized_system_delivery
+#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_product__country_of_origin
+#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_template__country_of_origin
+msgid ""
+"Rules of origin determine where goods originate, i.e. not where they have been shipped from, but where they have been produced or manufactured.\n"
+"As such, the ‘origin’ is the 'economic nationality' of goods traded in commerce."
+msgstr ""
+"Menşe kuralları, malların menşeini belirler; yani malların nereden sevk "
+"edildiğini değil, nerede üretildiğini veya imal edildiğini belirler.\n"
+"Dolayısıyla 'menşei', ticarette ticareti yapılan malların 'ekonomik "
+"milliyeti'dir."
+
+#. module: product_harmonized_system_delivery
+#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_product__hs_code
+#: model:ir.model.fields,help:product_harmonized_system_delivery.field_product_template__hs_code
+msgid ""
+"Standardized code for international shipping and goods declaration. At the "
+"moment, only used for FedEx and USPS shipping providers."
+msgstr ""
+"Uluslararası nakliye ve mal beyanı için standartlaştırılmış kod. Şu anda "
+"yalnızca FedEx ve USPS kargo sağlayıcıları için kullanılmaktadır."

@@ -584,6 +584,31 @@ class TestAccountInvoiceInterCompany(TestAccountInvoiceInterCompanyBase):
         self.assertEqual(len(invoices), 1)
         return invoices
 
+    def test_invoice_full_refund(self):
+        # Confirm the invoice for company A
+        self.invoice_company_a.with_user(self.user_company_a.id).action_post()
+        # Open the account move reversal wizard
+        # We use a form to pass the context properly to the depends_context move_ids field
+        context = {
+            "active_model": "account.move",
+            "active_ids": self.invoice_company_a.ids,
+        }
+        with Form(
+            self.env["account.move.reversal"]
+            .with_context(**context)
+            .with_user(self.user_company_a.id)
+        ) as wizard_form:
+            wizard_form.refund_method = "cancel"
+        wizard = wizard_form.save()
+        # Create the reversal move.
+        wizard.reverse_moves()
+        self.assertTrue(wizard.new_move_ids)
+        self.assertTrue(
+            self.env["account.move"]
+            .with_user(self.user_company_b)
+            .search([("auto_invoice_id", "=", wizard.new_move_ids.id)])
+        )
+
     def test_confirm_invoice_intercompany_disabled(self):
         # ensure the catalog is shared
         self.env.ref("product.product_comp_rule").write({"active": False})

@@ -12,6 +12,7 @@ from odoo.exceptions import UserError
 from odoo.tools.misc import format_duration
 from odoo.tools.translate import _
 
+from ..exceptions import SwallableException
 from .utils import convert_simple_to_full_parser
 
 _logger = logging.getLogger(__name__)
@@ -71,60 +72,112 @@ class Base(models.AbstractModel):
     def _jsonify_record(self, parser, rec, root):
         """JSONify one record (rec). Private function called by jsonify."""
         strict = self.env.context.get("jsonify_record_strict", False)
-        for field_key in parser:
-            field_dict, subparser = rec.__parse_field(field_key)
-            field_name = field_dict["name"]
-            field = rec._fields.get(field_name)
+        for field in parser:
+            field_dict, subparser = rec.__parse_field(field)
             function = field_dict.get("function")
-            if not field and not function:
-                if strict:
-                    # let it fail
-                    rec._fields[field_name]  # pylint: disable=pointless-statement
-                if not tools.config["test_enable"]:
-                    # If running live, log proper error
-                    # so that techies can track it down
-                    _logger.error(
-                        "%(model)s.%(fname)s not available",
-                        {"model": self._name, "fname": field_name},
-                    )
-                continue
-            json_key = field_dict.get("target", field_name)
+            try:
+                self._jsonify_record_validate_field(rec, field_dict, strict)
+            except SwallableException:
+                if not function:
+                    continue
+            json_key = field_dict.get("target", field_dict["name"])
             if function:
                 try:
-                    value = self._function_value(rec, function, field_name)
-                except UserError:
-                    if strict:
-                        raise
-                    if not tools.config["test_enable"]:
-                        _logger.error(
-                            "%(model)s.%(func)s not available",
-                            {"model": self._name, "func": str(function)},
-                        )
+                    value = self._jsonify_record_handle_function(
+                        rec, field_dict, strict
+                    )
+                except SwallableException:
                     continue
             elif subparser:
-                if not (field.relational or field.type == "reference"):
-                    if strict:
-                        self._jsonify_bad_parser_error(field_name)
-                    if not tools.config["test_enable"]:
-                        _logger.error(
-                            "%(model)s.%(fname)s not relational",
-                            {"model": self._name, "fname": field_name},
-                        )
+                try:
+                    value = self._jsonify_record_handle_subparser(
+                        rec, field_dict, strict, subparser
+                    )
+                except SwallableException:
                     continue
-                value = [
-                    self._jsonify_record(subparser, r, {}) for r in rec[field_name]
-                ]
-                if field.type in ("many2one", "reference"):
-                    value = value[0] if value else None
             else:
-                resolver = field_dict.get("resolver")
+                field = rec._fields[field_dict["name"]]
                 value = rec._jsonify_value(field, rec[field.name])
-                value = resolver.resolve(field, rec)[0] if resolver else value
-
+                resolver = field_dict.get("resolver")
+                if resolver:
+                    if isinstance(resolver, int):
+                        # cached versions of the parser are stored as integer
+                        resolver = self.env["ir.exports.resolver"].browse(resolver)
+                    value, json_key = self._jsonify_record_handle_resolver(
+                        rec, field, resolver, json_key
+                    )
+            # whatever json value we have found in subparser or not ass a sister key
+            # on the same level _fieldname_{json_key}
+            if rec.env.context.get("with_fieldname"):
+                json_key_fieldname = "_fieldname_" + json_key
+                # check if we are in a subparser has already the fieldname sister keys
+                fieldname_value = rec._fields[field_dict["name"]].string
+                self._add_json_key(root, json_key_fieldname, fieldname_value)
             self._add_json_key(root, json_key, value)
         return root
 
-    def jsonify(self, parser, one=False):
+    def _jsonify_record_validate_field(self, rec, field_dict, strict):
+        field_name = field_dict["name"]
+        if field_name not in rec._fields:
+            if strict:
+                # let it fail
+                rec._fields[field_name]  # pylint: disable=pointless-statement
+            else:
+                if not tools.config["test_enable"]:
+                    # If running live, log proper error
+                    # so that techies can track it down
+                    _logger.warning(
+                        "%(model)s.%(fname)s not available",
+                        {"model": self._name, "fname": field_name},
+                    )
+                raise SwallableException()
+        return True
+
+    def _jsonify_record_handle_function(self, rec, field_dict, strict):
+        field_name = field_dict["name"]
+        function = field_dict["function"]
+        try:
+            return self._function_value(rec, function, field_name)
+        except UserError as err:
+            if strict:
+                raise
+            if not tools.config["test_enable"]:
+                _logger.error(
+                    "%(model)s.%(func)s not available",
+                    {"model": self._name, "func": str(function)},
+                )
+                raise SwallableException() from err
+
+    def _jsonify_record_handle_subparser(self, rec, field_dict, strict, subparser):
+        field_name = field_dict["name"]
+        field = rec._fields[field_name]
+        if not (field.relational or field.type == "reference"):
+            if strict:
+                self._jsonify_bad_parser_error(field_name)
+            if not tools.config["test_enable"]:
+                _logger.error(
+                    "%(model)s.%(fname)s not relational",
+                    {"model": self._name, "fname": field_name},
+                )
+                raise SwallableException()
+        value = [self._jsonify_record(subparser, r, {}) for r in rec[field_name]]
+
+        if field.type in ("many2one", "reference"):
+            value = value[0] if value else None
+
+        return value
+
+    def _jsonify_record_handle_resolver(self, rec, field, resolver, json_key):
+        value = rec._jsonify_value(field, rec[field.name])
+        value = resolver.resolve(field, rec)[0] if resolver else value
+        if isinstance(value, dict) and "_json_key" in value and "_value" in value:
+            # Allow override of json_key.
+            # In this case,
+            # the final value must be encapsulated into _value key
+            value, json_key = value["_value"], value["_json_key"]
+        return value, json_key
+
+    def jsonify(self, parser, one=False, with_fieldname=False):
         """Convert the record according to the given parser.
 
         Example of (simple) parser:
@@ -156,12 +209,19 @@ class Base(models.AbstractModel):
         if isinstance(parser, list):
             parser = convert_simple_to_full_parser(parser)
         resolver = parser.get("resolver")
-
+        if isinstance(resolver, int):
+            # cached versions of the parser are stored as integer
+            resolver = self.env["ir.exports.resolver"].browse(resolver)
         results = [{} for record in self]
         parsers = {False: parser["fields"]} if "fields" in parser else parser["langs"]
         for lang in parsers:
             translate = lang or parser.get("language_agnostic")
-            records = self.with_context(lang=lang) if translate else self
+            new_ctx = {}
+            if translate:
+                new_ctx["lang"] = lang
+            if with_fieldname:
+                new_ctx["with_fieldname"] = True
+            records = self.with_context(**new_ctx) if new_ctx else self
             for record, json in zip(records, results):
                 self._jsonify_record(parsers[lang], record, json)
 

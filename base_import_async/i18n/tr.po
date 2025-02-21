@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 15.0-20221029\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-24 07:21+0000\n"
-"PO-Revision-Date: 2022-11-24 10:25+0300\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2025-02-18 16:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: \n"
-"Language: tr_TR\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: base_import_async
 #. odoo-python
@@ -37,13 +37,15 @@ msgid ""
 "Import %(model)s from file %(file_name)s - #%(chunk)s - lines %(from)s to "
 "%(to)s"
 msgstr ""
+"%(model)s dosyasını %(file_name)s dosyasından içe aktarın - #%(chunk)s - "
+"%(from)s ile %(to)s arasındaki satırları"
 
 #. module: base_import_async
 #. odoo-python
 #: code:addons/base_import_async/models/base_import_import.py:0
 #, python-format
 msgid "Import %(model)s from file %(from_file)s"
-msgstr ""
+msgstr "%(model)s dosyasını %(from_file)s dosyasından içe aktar"
 
 #. module: base_import_async
 #. odoo-javascript

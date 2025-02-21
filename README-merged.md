@@ -258,7 +258,7 @@ addon | version | maintainers | summary
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 16.0.1.1.0 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 16.0.1.2.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create Account Fiscal Year
 [account_fiscal_year_auto_create](account_fiscal_year_auto_create/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Automatically create new fiscal years, based on the datas of the last fiscal years
-[account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.1 |  | Account Invoice Constraint Chronology
+[account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.2 |  | Account Invoice Constraint Chronology
 [account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 16.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.1.0 |  | Lock All Posted Entries of Journals.
@@ -440,6 +440,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_billing](account_billing/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Group invoice as billing before payment
 [account_global_discount](account_global_discount/) | 16.0.1.0.1 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 16.0.1.0.0 |  | Set a alternate payor/payee in invoices
 [account_invoice_block_payment](account_invoice_block_payment/) | 16.0.1.0.0 |  | Module to block payment of invoices
@@ -971,7 +972,7 @@ addon | version | maintainers | summary
 [account_payment_partner](account_payment_partner/) | 16.0.1.2.5 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 16.0.2.0.3 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 16.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 16.0.1.0.3 |  | Adds payment mode on sale orders
+[account_payment_sale](account_payment_sale/) | 16.0.1.0.4 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
 
@@ -1133,6 +1134,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_cash_invoice](account_cash_invoice/) | 16.0.1.0.2 |  | Pay and receive invoices from bank statements
+[account_check_printing_report_base](account_check_printing_report_base/) | 16.0.1.0.0 |  | Account Check Printing Report Base
 [account_due_list](account_due_list/) | 16.0.1.2.1 |  | List of open credits and debits, with due date
 [account_due_list_aging_comment](account_due_list_aging_comment/) | 16.0.1.0.0 |  | Account Due List Aging Comment
 [account_due_list_days_overdue](account_due_list_days_overdue/) | 16.0.1.0.0 |  | Payments Due list days overdue
@@ -2763,7 +2765,7 @@ addon | version | maintainers | summary
 [base_territory](base_territory/) | 16.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
 [fieldservice](fieldservice/) | 16.0.1.10.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 16.0.2.2.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
-[fieldservice_account_analytic](fieldservice_account_analytic/) | 16.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
+[fieldservice_account_analytic](fieldservice_account_analytic/) | 16.0.1.0.1 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_activity](fieldservice_activity/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_calendar](fieldservice_calendar/) | 16.0.1.0.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 16.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
@@ -3442,13 +3444,21 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 16.0.1.1.5 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 16.0.1.1.6 |  | Intercompany invoice rules
 [account_move_change_company](account_move_change_company/) | 16.0.1.0.0 |  | Allow to change company of account moves
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 16.0.1.0.0 |  | This module adds a wizard to create companies easily
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Propagate account reconcile model in companies with same chart template
 [base_multi_company](base_multi_company/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
+[calendar_event_multi_company](calendar_event_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar events
+[calendar_event_type_multi_company](calendar_event_type_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar event type
 [company_dependent_flag](company_dependent_flag/) | 16.0.1.0.2 |  | Apply css style to company dependent fields
+[crm_stage_multi_company](crm_stage_multi_company/) | 16.0.1.0.0 |  | This module adds support for multi company on crm stage.
+[crm_tag_multi_company](crm_tag_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to crm tag
+[crm_tag_multi_company_event_crm](crm_tag_multi_company_event_crm/) | 16.0.1.0.0 |  | Ensure multi-company check in event lead rules tag ids
+[crm_tag_multi_company_sale](crm_tag_multi_company_sale/) | 16.0.1.0.0 |  | Ensure multi-company check in sale order tag ids
+[ir_actions_report_multi_company](ir_actions_report_multi_company/) | 16.0.1.0.0 |  | Make Report Actions multi-company aware
 [ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 16.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
+[login_all_company](login_all_company/) | 16.0.0.0.0 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 16.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 16.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [partner_account_multicompany_default](partner_account_multicompany_default/) | 16.0.0.1.0 | [![camptocamp](https://github.com/camptocamp.png?size=30px)](https://github.com/camptocamp) | Set a default account for all companies of a partners
@@ -3456,7 +3466,7 @@ addon | version | maintainers | summary
 [pos_category_multicompany](pos_category_multicompany/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) | Point of Sale Category in Multi company context
 [pos_restaurant_multi_company](pos_restaurant_multi_company/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on PoS Restaurant.
 [product_account_multicompany_default](product_account_multicompany_default/) | 16.0.0.2.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Set a default account for all companies of a product
-[product_category_company](product_category_company/) | 16.0.1.0.1 |  | Product categories as company dependent
+[product_category_company](product_category_company/) | 16.0.1.1.0 |  | Product categories as company dependent
 [product_category_company_favorite](product_category_company_favorite/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Possilibity to set favorite product categories per company
 [product_default_code_res_company_code](product_default_code_res_company_code/) | 16.0.1.0.0 |  | Generate product default code based on sequence defined by company, prefixed by company code
 [product_multi_company](product_multi_company/) | 16.0.1.0.2 |  | Select individually the product template visibility on each company
@@ -3464,14 +3474,17 @@ addon | version | maintainers | summary
 [purchase_sale_container_deposit_inter_company](purchase_sale_container_deposit_inter_company/) | 16.0.1.0.2 |  | Add compatibility between OCA product_packaging_container_deposit and purchase_sale_inter_company
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 16.0.1.1.3 |  | Intercompany PO/SO rules
 [purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 16.0.1.0.0 |  | Intercompany PO/SO rules with warehouse
+[purchase_sale_stock_inter_company_mrp](purchase_sale_stock_inter_company_mrp/) | 16.0.1.0.0 |  | Intercompany PO/SO rules with MRP
 [res_company_active](res_company_active/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Company Categories
 [res_company_code](res_company_code/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'code' field on company model
 [res_company_search_view](res_company_search_view/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add a search view for company model
+[sale_partner_company](sale_partner_company/) | 16.0.1.0.0 |  | Set sale company from partner
 [sale_product_company](sale_product_company/) | 16.0.2.0.0 |  | Set selling companies on product
+[sale_product_company_multi_add](sale_product_company_multi_add/) | 16.0.1.0.0 |  | Filter products by selling companies on sale order multi add
 [sale_stock_warehouse_multicompany](sale_stock_warehouse_multicompany/) | 16.0.1.0.0 |  | Allow multiple companies to sell the stock of a shared warehouse
 [stock_intercompany](stock_intercompany/) | 16.0.1.0.2 |  | Stock Intercompany Delivery-Reception
-[stock_intercompany_bidirectional](stock_intercompany_bidirectional/) | 16.0.1.0.1 |  | Bidirectional operations for the Stock Intercomany module
+[stock_intercompany_bidirectional](stock_intercompany_bidirectional/) | 16.0.1.0.3 |  | Bidirectional operations for the Stock Intercomany module
 
 [//]: # (end addons)
 
@@ -4198,7 +4211,7 @@ addon | version | maintainers | summary
 [l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 16.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | EMEBI (ex-DEB) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 16.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_mis_reports](l10n_fr_mis_reports/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | MIS Report templates for the French P&L and Balance Sheets
-[l10n_fr_oca](l10n_fr_oca/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Fork of l10n_fr: fewer taxes, ready for OCA VAT return for France
+[l10n_fr_oca](l10n_fr_oca/) | 16.0.2.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Fork of l10n_fr: fewer taxes, ready for OCA VAT return for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_pos_cert_update_draft_order_line](l10n_fr_pos_cert_update_draft_order_line/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | fixes the French certification module implemented by Odoo, authorizing the modification of draft sales lines.
 [l10n_fr_siret](l10n_fr_siret/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
@@ -4635,6 +4648,7 @@ addon | version | maintainers | summary
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 16.0.1.0.0 |  | Japan Partner Title QWeb
 [l10n_jp_partner_zip_address](l10n_jp_partner_zip_address/) | 16.0.1.0.0 |  | Japan Partner Zip Address
+[report_alternative_layout](report_alternative_layout/) | 16.0.1.0.0 |  | Report Alternative Layout
 
 [//]: # (end addons)
 
@@ -5222,9 +5236,9 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.10.4 |  | AEAT modelo 347
-[l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 16.0.1.0.1 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | AEAT modelo 347 IGIC
+[l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 16.0.1.0.2 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.4.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
-[l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.0 |  | AEAT modelo 369
+[l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.1 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.10.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.1.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.0 |  | Force SII communication type on invoices
@@ -5239,7 +5253,7 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
@@ -6256,7 +6270,7 @@ addon | version | maintainers | summary
 [rma](rma/) | 16.0.3.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 16.0.1.0.0 |  | Manage lot in RMA
 [rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
-[rma_sale](rma_sale/) | 16.0.3.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
+[rma_sale](rma_sale/) | 16.0.3.1.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 [rma_sale_lot](rma_sale_lot/) | 16.0.1.0.0 |  | Manage sale returns with lot.
 [rma_sale_mrp](rma_sale_mrp/) | 16.0.2.1.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow doing RMAs from MRP kits
 
@@ -6612,6 +6626,7 @@ addon | version | maintainers | summary
 [mgmtsystem_audit](mgmtsystem_audit/) | 16.0.1.0.1 |  | Management System - Audit
 [mgmtsystem_claim](mgmtsystem_claim/) | 16.0.1.1.0 |  | Management System - Claim
 [mgmtsystem_environment](mgmtsystem_environment/) | 16.0.1.0.0 |  | Environment Management System
+[mgmtsystem_evaluation](mgmtsystem_evaluation/) | 16.0.1.0.1 |  | Evaluate records within your management system
 [mgmtsystem_hazard](mgmtsystem_hazard/) | 16.0.1.0.0 |  | Hazard
 [mgmtsystem_hazard_maintenance_equipment](mgmtsystem_hazard_maintenance_equipment/) | 16.0.1.0.0 |  | Management System - Maintenance Equipment
 [mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 16.0.1.0.0 |  | Hazard Risk
@@ -6751,6 +6766,7 @@ addon | version | maintainers | summary
 [purchase_no_rfq](purchase_no_rfq/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
 [purchase_only_by_packaging](purchase_only_by_packaging/) | 16.0.1.0.1 |  | Manage purchase of packaging
 [purchase_open_qty](purchase_open_qty/) | 16.0.3.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
+[purchase_order_approval_block](purchase_order_approval_block/) | 16.0.1.0.0 |  | Purchase Order Approval Block
 [purchase_order_approved](purchase_order_approved/) | 16.0.1.0.0 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_archive](purchase_order_archive/) | 16.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_downpayment](purchase_order_downpayment/) | 16.0.1.0.0 |  | Allow to add payments from Purchase order view
@@ -6963,7 +6979,7 @@ addon | version | maintainers | summary
 [product_simple_seasonality](product_simple_seasonality/) | 16.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Product seasonality
 [product_standard_price_tax_included](product_standard_price_tax_included/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Brings a Cost Price Field Tax Included on Product Model
 [product_state](product_state/) | 16.0.1.2.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
-[product_sticker](product_sticker/) | 16.0.1.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Product Sticker
+[product_sticker](product_sticker/) | 16.0.2.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Product Sticker
 [product_stock_state](product_stock_state/) | 16.0.1.0.1 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Compute the state of a product's stockthe stock level and sale_ok field
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 16.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 [product_supplierinfo_code](product_supplierinfo_code/) | 16.0.1.0.0 |  | Allows to get main supplierinfo product_code on product level
@@ -7602,10 +7618,11 @@ addon | version | maintainers | summary
 [mail_activity_reminder](mail_activity_reminder/) | 16.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_reply_creator](mail_activity_reply_creator/) | 16.0.1.0.0 |  | Assign new to its creator
 [mail_activity_team](mail_activity_team/) | 16.0.1.0.1 |  | Add Teams to Activities
+[mail_activity_unlink_log](mail_activity_unlink_log/) | 16.0.1.0.0 |  | Leave a message when an activity is unlinked
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 16.0.1.1.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 16.0.1.0.1 |  | Module to use attach existing attachment for account module
 [mail_autosubscribe](mail_autosubscribe/) | 16.0.1.0.1 |  | Automatically subscribe partners to its company's business documents
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 16.0.2.0.4 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 16.0.2.0.5 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 16.0.2.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_discuss_security](mail_discuss_security/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add a group to display 'Discuss' Application menu entry
@@ -8013,7 +8030,7 @@ addon | version | maintainers | summary
 [fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 16.0.1.5.0 | [![NL66278](https://github.com/NL66278.png?size=30px)](https://github.com/NL66278) | Attach mails in an IMAP folder to existing objects
 [html_text](html_text/) | 16.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 16.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
-[jsonifier](jsonifier/) | 16.0.0.0.1 |  | JSON-ify data for all models
+[jsonifier](jsonifier/) | 16.0.0.1.0 |  | JSON-ify data for all models
 [letsencrypt](letsencrypt/) | 16.0.1.1.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Request SSL certificates from letsencrypt.org
 [module_analysis](module_analysis/) | 16.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 16.0.1.0.2 |  | Automatically update Odoo modules
@@ -8314,7 +8331,7 @@ addon | version | maintainers | summary
 [base_binary_url_import](base_binary_url_import/) | 16.0.1.0.0 |  | Wizard to import binary files from URL on existing records
 [base_cancel_confirm](base_cancel_confirm/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
 [base_custom_filter](base_custom_filter/) | 16.0.1.1.1 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) [![ForgeFlow](https://github.com/ForgeFlow.png?size=30px)](https://github.com/ForgeFlow) | Add custom filters in standard filters and group by dropdowns
-[base_export_manager](base_export_manager/) | 16.0.1.0.1 |  | Manage model export profiles
+[base_export_manager](base_export_manager/) | 16.0.1.0.2 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 16.0.1.0.0 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 16.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
@@ -8588,7 +8605,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 16.0.1.0.2 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 16.0.1.0.3 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 16.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [base_rest_datamodel](base_rest_datamodel/) | 16.0.1.0.0 |  | Datamodel binding for base_rest
 [base_rest_demo](base_rest_demo/) | 16.0.2.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
@@ -9196,7 +9213,7 @@ addon | version | maintainers | summary
 [web_dialog_size](web_dialog_size/) | 16.0.1.0.2 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 16.0.1.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 16.0.1.0.1 |  | Use computed field as domain
-[web_editor_class_selector](web_editor_class_selector/) | 16.0.1.0.1 |  | Web editor class selector
+[web_editor_class_selector](web_editor_class_selector/) | 16.0.1.1.0 |  | Web editor class selector
 [web_environment_ribbon](web_environment_ribbon/) | 16.0.1.0.0 |  | Web Environment Ribbon
 [web_field_numeric_formatting](web_field_numeric_formatting/) | 16.0.1.0.0 |  | Allow to render float and integer fields without thousands separator
 [web_field_tooltip](web_field_tooltip/) | 16.0.1.1.0 |  | Displays customizable tooltips for fields
@@ -9244,7 +9261,7 @@ addon | version | maintainers | summary
 [web_widget_pattern](web_widget_pattern/) | 16.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Allows to define a regex for validating input on the backend
 [web_widget_pattern_partner_autocomplete](web_widget_pattern_partner_autocomplete/) | 16.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Allows to define a regex for validating input on the backend
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 16.0.1.0.0 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Allow to draw plotly charts.
-[web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 16.0.1.0.2 |  | unify the product and name into a single column
+[web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 16.0.1.0.3 |  | unify the product and name into a single column
 [web_widget_progressbar_gradient](web_widget_progressbar_gradient/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module allows to display progressbar with gradient
 [web_widget_remaining_days_exact_date](web_widget_remaining_days_exact_date/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Allows displaying the exact date alongside the remaining days
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 16.0.1.1.3 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix

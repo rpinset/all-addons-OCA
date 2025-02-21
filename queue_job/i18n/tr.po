@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-29 22:06+0000\n"
+"PO-Revision-Date: 2025-02-20 13:06+0000\n"
 "Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
 "Language-Team: none\n"
 "Language: tr\n"
@@ -289,7 +289,7 @@ msgstr "İstisna:"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__eta
 msgid "Execute only after"
-msgstr "Sadece bundan sonra çalıştır"
+msgstr "Bundan sonra çalıştır"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__exec_time
@@ -679,12 +679,13 @@ msgstr ""
 #. module: queue_job
 #: model:ir.ui.menu,name:queue_job.menu_queue
 msgid "Queue"
-msgstr ""
+msgstr "Sıra"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_job
+#, fuzzy
 msgid "Queue Job"
-msgstr ""
+msgstr "İş Kuyruğu"
 
 #. module: queue_job
 #. odoo-python
@@ -756,7 +757,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:queue_job.action_requeue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_requeue_job
 msgid "Requeue Jobs"
-msgstr ""
+msgstr "İşleri Tekrar Sıraya Al"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__activity_user_id
@@ -947,7 +948,7 @@ msgstr "Kullanıcı ID"
 #: model:ir.model.fields.selection,name:queue_job.selection__queue_job__state__wait_dependencies
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Wait Dependencies"
-msgstr "Bağımlılıkları Bekle"
+msgstr "Bağımlılıklar Bekleniyor"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_requeue_job

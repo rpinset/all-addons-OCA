@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-29 22:06+0000\n"
-"Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
+"PO-Revision-Date: 2025-02-17 23:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: none\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -105,12 +105,14 @@ msgstr "Yapılandırma"
 #. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_statement
 msgid "Create Statement"
-msgstr ""
+msgstr "Ekstre Oluştur"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__create_statement
 msgid "Create statements for the downloaded transactions automatically or not."
 msgstr ""
+"İndirilen işlemler için ekstreleri otomatik olarak oluşturun veya "
+"oluşturmayın."
 
 #. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_uid
@@ -134,7 +136,7 @@ msgstr "Para Birimi"
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__daily
 msgid "Day"
-msgstr ""
+msgstr "Gün"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__days
@@ -295,7 +297,7 @@ msgstr "Dakika"
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__monthly
 msgid "Month"
-msgstr ""
+msgstr "Ay"
 
 #. module: account_statement_import_online
 #. odoo-python
@@ -544,7 +546,7 @@ msgstr "Bitiş"
 #. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
 msgid "Transactions interval to obtain"
-msgstr ""
+msgstr "Elde edilecek işlem aralığı"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__update_schedule
@@ -569,7 +571,7 @@ msgstr "Web sitesi iletişim geçmişi"
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
 msgid "Week"
-msgstr ""
+msgstr "Hafta"
 
 #. module: account_statement_import_online
 #: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__weeks

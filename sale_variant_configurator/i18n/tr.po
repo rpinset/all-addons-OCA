@@ -9,46 +9,47 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-04 12:43+0000\n"
-"PO-Revision-Date: 2017-12-04 12:43+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2025-02-20 09:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sale_variant_configurator
 #: model:ir.model.constraint,message:sale_variant_configurator.constraint_sale_order_line_non_accountable_null_fields
 msgid "Forbidden values on non-accountable sale order line"
-msgstr ""
+msgstr "Sorumlu olmayan satış siparişi satırında yasak değerler"
 
 #. module: sale_variant_configurator
 #: model:ir.model.constraint,message:sale_variant_configurator.constraint_sale_order_line_accountable_required_fields
 msgid "Missing required fields on accountable sale order line."
-msgstr ""
+msgstr "Sorumlu satış siparişi satırında zorunlu alanlar eksik."
 
 #. module: sale_variant_configurator
 #: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_id
 msgid "Product"
-msgstr ""
+msgstr "Ürün"
 
 #. module: sale_variant_configurator
 #: model_terms:ir.ui.view,arch_db:sale_variant_configurator.view_order_form
 #: model_terms:ir.ui.view,arch_db:sale_variant_configurator.view_order_line_tree
 #: model_terms:ir.ui.view,arch_db:sale_variant_configurator.view_sales_order_line_filter
 msgid "Product Template"
-msgstr ""
+msgstr "Ürün Şablonu"
 
 #. module: sale_variant_configurator
 #: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_tmpl_id
 msgid "Product Template (no related)"
-msgstr ""
+msgstr "Ürün Şablonu (ilgili olmayan)"
 
 #. module: sale_variant_configurator
 #: model:ir.model,name:sale_variant_configurator.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Satış Siparişi"
 
 #. module: sale_variant_configurator
 #: model:ir.model,name:sale_variant_configurator.model_sale_order_line

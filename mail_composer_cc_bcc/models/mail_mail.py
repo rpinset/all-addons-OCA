@@ -296,4 +296,11 @@ class MailMail(models.Model):
         res["email_to"] = format_emails(partner_to)
         res["email_cc"] = format_emails(self.recipient_cc_ids)
         res["email_bcc"] = format_emails(self.recipient_bcc_ids)
+        if res.get("email_to"):
+            res["email_to_normalized"] += tools.email_normalize_all(res["email_to"])
+        if res.get("email_cc"):
+            res["email_to_normalized"] += tools.email_normalize_all(res["email_cc"])
+        if res.get("email_bcc"):
+            res["email_to_normalized"] += tools.email_normalize_all(res["email_bcc"])
+        res["email_to_normalized"] = list(set(res["email_to_normalized"]))
         return res

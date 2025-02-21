@@ -9,37 +9,38 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-22 03:38+0000\n"
-"PO-Revision-Date: 2017-11-22 03:38+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2025-02-19 17:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__active
 msgid "Active"
-msgstr ""
+msgstr "Aktif"
 
 #. module: partner_external_map
 #. odoo-python
 #: code:addons/partner_external_map/models/res_partner.py:0
 #, python-format
 msgid "Address missing on partner '%s'."
-msgstr ""
+msgstr "'%s' iş ortağında adres eksik."
 
 #. module: partner_external_map
 #: model_terms:ir.ui.view,arch_db:partner_external_map.map_website_form
 #: model_terms:ir.ui.view,arch_db:partner_external_map.map_website_search
 msgid "Archived"
-msgstr ""
+msgstr "Arşivlenmiş"
 
 #. module: partner_external_map
 #: model:ir.model,name:partner_external_map.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Irtibat"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__create_uid
@@ -64,7 +65,7 @@ msgstr "ID"
 #. module: partner_external_map
 #: model:ir.model.fields,help:partner_external_map.field_map_website__address_url
 msgid "In this URL, {ADDRESS} will be replaced by the address."
-msgstr ""
+msgstr "Bu URL'de {ADDRESS}, adresle değiştirilecektir."
 
 #. module: partner_external_map
 #: model:ir.model.fields,help:partner_external_map.field_map_website__lat_lon_url
@@ -72,6 +73,8 @@ msgid ""
 "In this URL, {LATITUDE} and {LONGITUDE} will be replaced by the latitude and "
 "longitude (requires the module 'base_geolocalize')"
 msgstr ""
+"Bu URL'de, {LATITUDE} ve {LONGITUDE}, enlem ve boylam ile değiştirilecektir ("
+"'base_geolocalize' modülünü gerektirir)"
 
 #. module: partner_external_map
 #: model:ir.model.fields,help:partner_external_map.field_map_website__route_address_url
@@ -79,6 +82,8 @@ msgid ""
 "In this URL, {START_ADDRESS} and {DEST_ADDRESS} will be replaced by the "
 "start and destination addresses."
 msgstr ""
+"Bu URL'de, {START_ADDRESS} ve {DEST_ADDRESS}, başlangıç ve hedef "
+"adresleriyle değiştirilecektir."
 
 #. module: partner_external_map
 #: model:ir.model.fields,help:partner_external_map.field_map_website__route_lat_lon_url
@@ -87,6 +92,9 @@ msgid ""
 "{DEST_LONGITUDE} will be replaced by the latitude and longitude of the start "
 "and destination adresses (requires the module 'base_geolocalize')."
 msgstr ""
+"Bu URL'de, {START_LATITUDE}, {START_LONGITUDE}, {DEST_LATITUDE} ve "
+"{DEST_LONGITUDE}, başlangıç ve hedef adreslerinin enlem ve boylamıyla "
+"değiştirilecektir ('base_geolocalize' modülünü gerektirir)."
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website____last_update
@@ -106,26 +114,26 @@ msgstr "Son güncelleme"
 #. module: partner_external_map
 #: model_terms:ir.ui.view,arch_db:partner_external_map.view_partner_form
 msgid "Map"
-msgstr ""
+msgstr "Harita"
 
 #. module: partner_external_map
 #: model:ir.model,name:partner_external_map.model_map_website
 #: model:ir.model.fields,field_description:partner_external_map.field_res_users__context_map_website_id
 #: model_terms:ir.ui.view,arch_db:partner_external_map.map_website_form
 msgid "Map Website"
-msgstr ""
+msgstr "Harita Web Sitesi"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__name
 msgid "Map Website Name"
-msgstr ""
+msgstr "Harita Web Sitesi Adı"
 
 #. module: partner_external_map
 #: model:ir.actions.act_window,name:partner_external_map.map_website_action
 #: model:ir.ui.menu,name:partner_external_map.map_website_menu
 #: model:ir.ui.menu,name:partner_external_map.root_map_website_menu
 msgid "Map Websites"
-msgstr ""
+msgstr "Harita Web Siteleri"
 
 #. module: partner_external_map
 #: model:ir.model.fields,help:partner_external_map.field_res_users__context_route_map_website_id
@@ -133,32 +141,34 @@ msgid ""
 "Map provided used when you click on the car icon on the partner form to "
 "display an itinerary."
 msgstr ""
+"Bir seyahat planını görüntülemek için iş ortağı formundaki araba simgesini "
+"tıkladığınızda kullanılan harita sağlanır."
 
 #. module: partner_external_map
 #: model_terms:ir.ui.view,arch_db:partner_external_map.view_users_form
 msgid "Maps"
-msgstr ""
+msgstr "Haritalar"
 
 #. module: partner_external_map
 #. odoo-python
 #: code:addons/partner_external_map/models/res_partner.py:0
 #, python-format
 msgid "Missing map provider: you should set it in your preferences."
-msgstr ""
+msgstr "Harita sağlayıcısı eksik: bunu tercihlerinizde ayarlamanız gerekir."
 
 #. module: partner_external_map
 #. odoo-python
 #: code:addons/partner_external_map/models/res_partner.py:0
 #, python-format
 msgid "Missing parameter 'URL that uses the address' for map website '%s'."
-msgstr ""
+msgstr "'%s' harita web sitesi için 'adresi kullanan URL' parametresi eksik."
 
 #. module: partner_external_map
 #. odoo-python
 #: code:addons/partner_external_map/models/res_partner.py:0
 #, python-format
 msgid "Missing route URL that uses the addresses for the map website '%s'"
-msgstr ""
+msgstr "'%s' harita web sitesinin adreslerini kullanan eksik rota URL'si"
 
 #. module: partner_external_map
 #. odoo-python
@@ -166,6 +176,7 @@ msgstr ""
 #, python-format
 msgid "Missing route map website: you should set it in your preferences."
 msgstr ""
+"Rota haritası web sitesi eksik: bunu tercihlerinizde ayarlamanız gerekir."
 
 #. module: partner_external_map
 #. odoo-python
@@ -174,48 +185,50 @@ msgstr ""
 msgid ""
 "Missing start address for route map: you should set it in your preferences."
 msgstr ""
+"Rota haritası için başlangıç adresi eksik: bunu tercihlerinizde ayarlamanız "
+"gerekir."
 
 #. module: partner_external_map
 #: model_terms:ir.ui.view,arch_db:partner_external_map.view_partner_form
 msgid "Route Map"
-msgstr ""
+msgstr "Rota Haritası"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_res_users__context_route_map_website_id
 msgid "Route Map Website"
-msgstr ""
+msgstr "Rota Haritası Web Sitesi"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__route_lat_lon_url
 msgid "Route URL that uses latitude and longitude"
-msgstr ""
+msgstr "Enlem ve boylamı kullanan rota URL'si"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__route_address_url
 msgid "Route URL that uses the addresses"
-msgstr ""
+msgstr "Adresleri kullanan rota URL'si"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Dizi"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_res_users__context_route_start_partner_id
 msgid "Start Address for Route Map"
-msgstr ""
+msgstr "Rota Haritasının Başlangıç Adresi"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__lat_lon_url
 msgid "URL that uses latitude and longitude"
-msgstr ""
+msgstr "Enlem ve boylamı kullanan URL"
 
 #. module: partner_external_map
 #: model:ir.model.fields,field_description:partner_external_map.field_map_website__address_url
 msgid "URL that uses the address"
-msgstr ""
+msgstr "Adresi kullanan URL"
 
 #. module: partner_external_map
 #: model:ir.model,name:partner_external_map.model_res_users
 msgid "User"
-msgstr ""
+msgstr "Kullanıcı"

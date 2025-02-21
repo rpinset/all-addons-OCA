@@ -82,3 +82,9 @@ class TestIrExportsLineCase(TransactionCase):
         line = self._record_create("name")
         # This should end without errors
         line.name = "parent_id/name"
+
+    def test_field_id_case(self):
+        # id field is named .id in exports
+        line = self._record_create(".id")
+        self.assertEqual(line.field1_id.name, "id")
+        self.assertEqual(line.name, "id")

@@ -15,7 +15,7 @@
                     class="btn-close"
                     aria-label="Close"
                     data-bs-dismiss="modal"
-                >&amp;times;</button>
+                />
             </header>
             <main
                 t-att-class="not single_page_mode and 'modal-body'"

@@ -38,29 +38,36 @@ class StockPickingIntercompanyBidirectional(models.Model):
         """
         move_ids, move_line_ids = super()._check_company_consistency(company)
 
-        warehouse = company.intercompany_in_type_id.warehouse_id
-        location_dest = company.intercompany_in_type_id.default_location_dest_id
-        stock_move_line_obj = self.env["stock.move.line"]
+        location_dest = (
+            company.intercompany_in_type_id.default_location_dest_id
+            or company.intercompany_in_type_id.warehouse_id.lot_stock_id
+        )
+        location_dest_id = location_dest.id
+        warehouse_id = location_dest.warehouse_id.id
 
         # Remove package-related data and update destination location
         # in move_ids and move_line_ids
         for move_data in move_ids:
             # Update destination location for each move
-            move_data[2]["location_dest_id"] = (
-                location_dest.id or warehouse.lot_stock_id.id
+            move_data[2].update(
+                {
+                    "location_dest_id": location_dest_id,
+                    "rule_id": False,
+                    "warehouse_id": warehouse_id,
+                }
             )
-            # Set rule_id to False
-            move_data[2]["rule_id"] = False
+
         for line_data in move_line_ids:
             # Prepare the move line ids
             line_data[2].update(
                 {
                     "package_level_id": False,
                     "package_id": False,
-                    "location_dest_id": location_dest.id or warehouse.lot_stock_id.id,
+                    "location_dest_id": location_dest_id,
                 }
             )
 
+        stock_move_line_obj = self.env["stock.move.line"]
         if company.auto_update_qty_done:
             # Update move_line_ids to include 'qty_done' based on counterpart move lines
             for line_data in move_line_ids:

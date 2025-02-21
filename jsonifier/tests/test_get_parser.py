@@ -1,7 +1,8 @@
 # Copyright 2017 ACSONE SA/NV
+# Copyright 2022 Camptocamp SA (http://www.camptocamp.com)
+# Simone Orsi <simahawk@gmail.com>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
-from unittest import mock
 
 from odoo import fields, tools
 from odoo.exceptions import UserError
@@ -119,6 +120,8 @@ class TestParser(TransactionCase):
         self.assertEqual(parser, expected_full_parser)
 
     def test_json_export(self):
+        # will allow to view large dict diff in case of regression
+        self.maxDiff = None
         # Enforces TZ to validate the serialization result of a Datetime
         parser = [
             "lang",
@@ -168,10 +171,61 @@ class TestParser(TransactionCase):
             "create_date": "2019-10-31T14:39:49",
             "date": "2019-10-31",
         }
+        expected_json_with_fieldname = {
+            "_fieldname_lang": "Language",
+            "lang": "en_US",
+            "_fieldname_comment": "Notes",
+            "comment": None,
+            "_fieldname_partner_latitude": "Geo Latitude",
+            "_fieldname_name": "Name",
+            "name": "Akretion",
+            "_fieldname_color": "Color Index",
+            "color": 0,
+            "_fieldname_children": "Contact",
+            "children": [
+                {
+                    "_fieldname_children": "Contact",
+                    "children": [],
+                    "_fieldname_email": "Email",
+                    "email": None,
+                    "_fieldname_country": "Country",
+                    "country": {
+                        "_fieldname_code": "Country Code",
+                        "code": "FR",
+                        "_fieldname_name": "Country Name",
+                        "name": "France",
+                    },
+                    "_fieldname_name": "Name",
+                    "name": "Sebatien Beau",
+                    "_fieldname_id": "ID",
+                    "id": self.partner.child_ids.id,
+                }
+            ],
+            "_fieldname_country": "Country",
+            "country": {
+                "_fieldname_code": "Country Code",
+                "code": "FR",
+                "_fieldname_name": "Country Name",
+                "name": "France",
+            },
+            "_fieldname_active": "Active",
+            "active": True,
+            "_fieldname_category_id": "Tags",
+            "category_id": [{"_fieldname_name": "Tag Name", "name": "Inovator"}],
+            "_fieldname_create_date": "Created on",
+            "create_date": "2019-10-31T14:39:49",
+            "_fieldname_date": "Date",
+            "date": "2019-10-31",
+            "partner_latitude": 0.0,
+        }
         json_partner = self.partner.jsonify(parser)
-
         self.assertDictEqual(json_partner[0], expected_json)
-
+        json_partner_with_fieldname = self.partner.jsonify(
+            parser=parser, with_fieldname=True
+        )
+        self.assertDictEqual(
+            json_partner_with_fieldname[0], expected_json_with_fieldname
+        )
         # Check that only boolean fields have boolean values into json
         # By default if a field is not set into Odoo, the value is always False
         # This value is not the expected one into the json
@@ -223,6 +277,16 @@ class TestParser(TransactionCase):
         )  # starting from different languages should not change anything
         self.assertEqual(json[self.translated_target], self.translated_target)
         self.assertEqual(json["name_resolved"], "name_pidgin")  # field resolver
+        self.assertEqual(json["X"], "X")  # added by global resolver
+
+    def test_full_parser_resolver_json_key_override(self):
+        self.resolver.write(
+            {"python_code": """result = {"_json_key": "foo", "_value": record.id}"""}
+        )
+        parser = self.category_export.get_json_parser()
+        json = self.category.jsonify(parser)[0]
+        self.assertNotIn("name_resolved", json)
+        self.assertEqual(json["foo"], self.category.id)  # field resolver
         self.assertEqual(json["X"], "X")  # added by global resolver
 
     def test_simple_parser_translations(self):
@@ -320,24 +384,25 @@ class TestParser(TransactionCase):
     def test_bad_parsers_fail_gracefully(self):
         rec = self.category
 
-        logger_patch_path = "odoo.addons.jsonifier.models.models._logger.error"
-
-        # logging is disabled when testing as it's useless and makes build fail.
+        # logging is disabled when testing as it makes too much noise
         tools.config["test_enable"] = False
 
+        logger_name = "odoo.addons.jsonifier.models.models"
         bad_field_name = ["Name"]
-        with mock.patch(logger_patch_path) as mocked_logger:
+        with self.assertLogs(logger=logger_name, level="WARNING") as capt:
             rec.jsonify(bad_field_name, one=True)
-            mocked_logger.assert_called()
+            self.assertIn("res.partner.category.Name not availabl", capt.output[0])
 
         bad_function_name = {"fields": [{"name": "name", "function": "notafunction"}]}
-        with mock.patch(logger_patch_path) as mocked_logger:
+        with self.assertLogs(logger=logger_name, level="WARNING") as capt:
             rec.jsonify(bad_function_name, one=True)
-            mocked_logger.assert_called()
+            self.assertIn(
+                "res.partner.category.notafunction not available", capt.output[0]
+            )
 
         bad_subparser = {"fields": [({"name": "name"}, [{"name": "subparser_name"}])]}
-        with mock.patch(logger_patch_path) as mocked_logger:
+        with self.assertLogs(logger=logger_name, level="WARNING") as capt:
             rec.jsonify(bad_subparser, one=True)
-            mocked_logger.assert_called()
+            self.assertIn("res.partner.category.name not relational", capt.output[0])
 
         tools.config["test_enable"] = True

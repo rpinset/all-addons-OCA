@@ -39,11 +39,6 @@ msgstr " foi criado(a)."
 
 #. module: rma_sale
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
-msgid "&amp;times;"
-msgstr "&amp;times;"
-
-#. module: rma_sale
-#: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
 msgid "<i class=\"fa fa-check\"/> Request RMAs"
 msgstr "<i class=\"fa fa-check\"/> Requerer RMAs"
 
@@ -490,6 +485,9 @@ msgid ""
 msgstr ""
 "Você está prestes a realizar um pedido de RMA. A nossa equipa irá processá-"
 "lo e entrará em contacto assim que for validado. Tenha presente que:"
+
+#~ msgid "&amp;times;"
+#~ msgstr "&amp;times;"
 
 #~ msgid "<strong>Requested operation:</strong>"
 #~ msgstr "<strong>Operação Requerida:</strong>"

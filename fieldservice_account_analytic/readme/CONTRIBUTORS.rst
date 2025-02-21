@@ -2,3 +2,4 @@
 * Serpent Consulting Services Pvt. Ltd. <support@serpentcs.com>
 * Brian McMaster <brian@mcmpest.com>
 * Freni Patel <fpatel@opensourceintegrators.com>
+* Alex Comba <alex.comba@agilebg.com>

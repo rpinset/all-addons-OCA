@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-11 14:06+0000\n"
-"Last-Translator: Ahmet Yiğit Budak <yigit@altinkaya.com>\n"
+"PO-Revision-Date: 2025-02-17 23:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: none\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -158,12 +158,12 @@ msgstr "Son Değiştirilme"
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "En Son Güncelleyen"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "En Son Güncelleme"
 
 #. module: stock_picking_invoicing
 #. odoo-python
@@ -241,19 +241,16 @@ msgstr "Faturalanacak olarak ayarla"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_invoicing_internal_search
-#, fuzzy
 msgid "Shipments to Invoice"
 msgstr "Faturalanacak Sevkiyatlar"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__show_purchase_journal
-#, fuzzy
 msgid "Show Purchase Journal"
 msgstr "Satınalma Yevmiyesini Göster"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields,field_description:stock_picking_invoicing.field_stock_invoice_onshipping__show_sale_journal
-#, fuzzy
 msgid "Show Sale Journal"
 msgstr "Satış Yevmiyesini Göster"
 
@@ -265,17 +262,15 @@ msgstr "Stok Fatura Sevkiyatta"
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_invoice_state_mixin
 msgid "Stock Invoice State Mixin"
-msgstr ""
+msgstr "Stok Fatura Durumu Karışım"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_move
-#, fuzzy
 msgid "Stock Move"
 msgstr "Stok Hareketi"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_rule
-#, fuzzy
 msgid "Stock Rule"
 msgstr "Stok Kuralı"
 
@@ -283,31 +278,26 @@ msgstr "Stok Kuralı"
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_invoice_state_mixin__invoice_state__2binvoiced
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_move__invoice_state__2binvoiced
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_picking__invoice_state__2binvoiced
-#, fuzzy
 msgid "To Be Invoiced"
 msgstr "Faturalanacak"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.stock_picking_type_kanban
-#, fuzzy
 msgid "To be Invoiced"
 msgstr "Faturalanacak"
 
 #. module: stock_picking_invoicing
 #: model:ir.model.fields.selection,name:stock_picking_invoicing.selection__stock_return_picking__invoice_state__2binvoiced
-#, fuzzy
 msgid "To be refunded/invoiced"
 msgstr "İade edilecek/faturalanacak"
 
 #. module: stock_picking_invoicing
 #: model:ir.model,name:stock_picking_invoicing.model_stock_picking
-#, fuzzy
 msgid "Transfer"
 msgstr "Transfer"
 
 #. module: stock_picking_invoicing
 #: model_terms:ir.ui.view,arch_db:stock_picking_invoicing.view_picking_form
-#, fuzzy
 msgid "True"
 msgstr "Doğru"
 

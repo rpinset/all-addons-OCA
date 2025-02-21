@@ -70,6 +70,9 @@ class RestServiceRegistryCase(ComponentRegistryCase):
         db_name = get_db_name()
 
         # makes the test component registry available for the db name
+        class_or_instance._original_component_databases = _component_databases.get(
+            db_name
+        )
         _component_databases[db_name] = class_or_instance.comp_registry
 
         # makes the test service registry available for the db name
@@ -145,7 +148,7 @@ class RestServiceRegistryCase(ComponentRegistryCase):
             class_or_instance._controller_children_classes
         )
         db_name = get_db_name()
-        _component_databases[db_name] = class_or_instance._original_components
+        _component_databases[db_name] = class_or_instance._original_component_databases
         _rest_services_databases[
             db_name
         ] = class_or_instance._original_services_registry
