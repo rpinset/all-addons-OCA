@@ -315,9 +315,9 @@ Date:   Tue Nov 19 20:53:58 2019 +0100
 
 ## connector-magento
 From [https://github.com/OCA/connector-magento.git](https://github.com/OCA/connector-magento.git)
-commit 12e9498bd5997e751c39b2d19d357246c2dca712
+commit c496d4ca4a34b296ce84da686b61ad0c78667a63
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Feb 4 20:52:50 2024 +0000
+Date:   Thu Feb 20 08:36:04 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -374,16 +374,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a7954cbd1a797d1367e594f3f2daf0230be65c28
+commit 816f6b653a8d372b4fd044e0e11ac96fa629a435
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 10 16:18:30 2025 +0000
+Date:   Thu Feb 20 08:35:49 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (48 of 48 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_digitized_signature
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_digitized_signature/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
 
 
 ## crm
@@ -584,11 +584,11 @@ Date:   Tue Nov 19 20:54:23 2019 +0100
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit da7f44c17df192976955da616b669984e2482693
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:58:36 2025 +0000
+commit ad47549f67357b1d9a94b2286ca84a47e3cef0e0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Feb 19 15:10:24 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1268,11 +1268,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ba739c00b6696364132c380baa5715c82005a8db
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:04:21 2025 +0000
+commit 775dce9871641e8e17fe6635d81ba0dccbf14803
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 20 08:42:27 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 50.0% (2 of 4 strings)
+    
+    Translation: social-12.0/social-12.0-mail_restrict_follower_selection
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_restrict_follower_selection/it/
 
 
 ## storage
