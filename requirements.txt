@@ -24,6 +24,8 @@ python-stdnum>=1.16
 # generated from manifests external_dependencies
 ofxparse
 # From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
+# generated from manifests external_dependencies
+num2words
 # From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
 # generated from manifests external_dependencies
 cachetools
