@@ -308,8 +308,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 15.0.3.2.2 |  | OCA Financial Reports
-[account_financial_report_sale](account_financial_report_sale/) | 15.0.1.0.0 |  | OCA Financial Reports Sale
+[account_financial_report](account_financial_report/) | 15.0.3.3.0 |  | OCA Financial Reports
+[account_financial_report_sale](account_financial_report_sale/) | 15.0.1.1.0 |  | OCA Financial Reports Sale
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.4 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
@@ -2625,6 +2625,7 @@ addon | version | maintainers | summary
 [website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 15.0.1.0.0 |  | Displays the user's regular products in the e-commerce.
 [website_sale_order_cancel](website_sale_order_cancel/) | 15.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Allow customers to cancel their website sale orders
 [website_sale_order_type](website_sale_order_type/) | 15.0.1.0.1 | [![stefan-tecnativa](https://github.com/stefan-tecnativa.png?size=30px)](https://github.com/stefan-tecnativa) [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
+[website_sale_partner_restrict_payment_acquirer](website_sale_partner_restrict_payment_acquirer/) | 15.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Restrict payment acquirers for partners during the checkout process on eCommerce.
 [website_sale_product_assortment](website_sale_product_assortment/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Use product assortments to display products available on e-commerce.
 [website_sale_product_attachment](website_sale_product_attachment/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Let visitors download attachments from a product page
 [website_sale_product_attribute_filter_category](website_sale_product_attribute_filter_category/) | 15.0.2.1.0 |  | Allow group attributes in shop by categories
@@ -4926,8 +4927,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_RO_BNR](currency_rate_update_RO_BNR/) | 15.0.1.2.0 | [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Currency Rate Update National Bank of Romania service
-[l10n_ro_account](l10n_ro_account/) | 15.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
-[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.16.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
+[l10n_ro_account](l10n_ro_account/) | 15.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Account
+[l10n_ro_account_anaf_sync](l10n_ro_account_anaf_sync/) | 15.0.1.17.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account ANAF Sync
 [l10n_ro_account_bank_statement_import_mt940_alpha](l10n_ro_account_bank_statement_import_mt940_alpha/) | 15.0.1.0.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | MT940 Alpha Format Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_bcr](l10n_ro_account_bank_statement_import_mt940_bcr/) | 15.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 BCR Format Bank Statements Import

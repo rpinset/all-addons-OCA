@@ -1,3 +1,8 @@
+15.0.3.2.3 (2025-02-17)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* Added the option to select columns to display and the ability to limit the width of the text
+
 11.0.2.5.0 (2019-04-26)
 ~~~~~~~~~~~~~~~~~~~~~~~
 

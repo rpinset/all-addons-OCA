@@ -199,7 +199,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                 "show_partner_details": with_partners,
             }
         )
-        data = trial_balance._prepare_report_trial_balance()
+        data = trial_balance._prepare_report_data()
         res_data = self.env[
             "report.account_financial_report.trial_balance"
         ]._get_report_values(trial_balance, data)
@@ -554,7 +554,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                 "fy_start_date": self.fy_date_start,
             }
         )
-        data = trial_balance._prepare_report_trial_balance()
+        data = trial_balance._prepare_report_data()
         res_data = self.env[
             "report.account_financial_report.trial_balance"
         ]._get_report_values(trial_balance, data)
@@ -607,7 +607,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                 "fy_start_date": self.fy_date_start,
             }
         )
-        data = trial_balance._prepare_report_trial_balance()
+        data = trial_balance._prepare_report_data()
         res_data = self.env[
             "report.account_financial_report.trial_balance"
         ]._get_report_values(trial_balance, data)
@@ -661,7 +661,7 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
                 "fy_start_date": self.fy_date_start,
             }
         )
-        data = trial_balance._prepare_report_trial_balance()
+        data = trial_balance._prepare_report_data()
         res_data = self.env[
             "report.account_financial_report.trial_balance"
         ]._get_report_values(trial_balance, data)

@@ -776,6 +776,7 @@ class GeneralLedgerReport(models.AbstractModel):
 
     # flake8: noqa: C901
     def _get_report_values(self, docids, data):
+        res = super()._get_report_values(docids, data)
         wizard_id = data["wizard_id"]
         wizard = self.env["general.ledger.report.wizard"].browse(wizard_id)
         company = wizard.company_id
@@ -909,30 +910,33 @@ class GeneralLedgerReport(models.AbstractModel):
             if not gl_item["currency_id"] and len(fin_bal_currency_ids) == 1:
                 fin_bal_currency_id = fin_bal_currency_ids[0]
             gl_item["fin_bal_currency_id"] = fin_bal_currency_id
-        return {
-            "doc_ids": [wizard_id],
-            "doc_model": "general.ledger.report.wizard",
-            "docs": wizard,
-            "foreign_currency": foreign_currency,
-            "company_name": company.display_name,
-            "company_currency": company.currency_id,
-            "currency_name": company.currency_id.name,
-            "date_from": date_from,
-            "date_to": date_to,
-            "only_posted_moves": only_posted_moves,
-            "hide_account_at_0": hide_account_at_0,
-            "show_analytic_tags": wizard.show_analytic_tags,
-            "show_cost_center": wizard.show_cost_center,
-            "general_ledger": general_ledger,
-            "accounts_data": accounts_data,
-            "journals_data": journals_data,
-            "full_reconcile_data": full_reconcile_data,
-            "taxes_data": taxes_data,
-            "centralize": centralize,
-            "tags_data": tags_data,
-            "filter_partner_ids": True if partner_ids else False,
-            "currency_model": self.env["res.currency"],
-        }
+        res.update(
+            {
+                "doc_ids": [wizard_id],
+                "doc_model": "general.ledger.report.wizard",
+                "docs": wizard,
+                "foreign_currency": foreign_currency,
+                "company_name": company.display_name,
+                "company_currency": company.currency_id,
+                "currency_name": company.currency_id.name,
+                "date_from": date_from,
+                "date_to": date_to,
+                "only_posted_moves": only_posted_moves,
+                "hide_account_at_0": hide_account_at_0,
+                "show_analytic_tags": wizard.show_analytic_tags,
+                "show_cost_center": wizard.show_cost_center,
+                "general_ledger": general_ledger,
+                "accounts_data": accounts_data,
+                "journals_data": journals_data,
+                "full_reconcile_data": full_reconcile_data,
+                "taxes_data": taxes_data,
+                "centralize": centralize,
+                "tags_data": tags_data,
+                "filter_partner_ids": True if partner_ids else False,
+                "currency_model": self.env["res.currency"],
+            }
+        )
+        return res
 
     def _get_ml_fields(self):
         return self.COMMON_ML_FIELDS + [

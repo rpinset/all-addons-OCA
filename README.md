@@ -74,11 +74,16 @@ Date:   Thu Feb 13 19:14:40 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 0d663b5fa795e508e6e9ace8c414755db2c9b6c4
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:42:11 2025 +0000
+commit ffb3d7a4f50cf09a1dc54f6cd713809023c0a371
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 20 07:25:42 2025 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_financial_report/
 
 
 ## account-invoice-reporting
@@ -348,11 +353,16 @@ Date:   Wed Feb 12 10:26:44 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 0e335efeefa7808af852f09aba72646c19b1e862
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:31:56 2025 +0000
+commit 717d6295b66cfb7935fb2e2669431dd2751830f0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 18 09:06:16 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (189 of 189 strings)
+    
+    Translation: crm-15.0/crm-15.0-crm_salesperson_planner
+    Translate-URL: https://translation.odoo-community.org/projects/crm-15-0/crm-15-0-crm_salesperson_planner/it/
 
 
 ## partner-contact
@@ -438,9 +448,9 @@ Date:   Sun Feb 2 18:39:19 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 2b352b538693b3d1285488c8d8116b6fc3044867
+commit 369e273a4b862e0f37183937d941b69804eb0978
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 7 08:33:26 2025 +0000
+Date:   Thu Feb 20 12:56:06 2025 +0000
 
     [BOT] post-merge updates
 
@@ -871,14 +881,16 @@ Date:   Sun Feb 2 19:34:57 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 70a0d9b1f31fceb3194f073daa4e0867a34c6ff5
-Merge: ab3a1c52 0566522b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 4 11:18:01 2025 +0000
+commit d4f74f25d0a82f2bfecae1149992098500dae38e
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Feb 18 06:18:08 2025 +0000
 
-    Merge PR #1225 into 15.0
+    Update translation files
     
-    Signed-off-by dhongu
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_account_anaf_sync
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_account_anaf_sync/
 
 
 ## l10n-russia
@@ -1264,16 +1276,16 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 810134968fa9834a1b0ba9bdd0ed66c2cb913ffa
-Author: Isneyler Mosquera Preciado <isneyler@gmail.com>
-Date:   Mon Feb 17 04:06:30 2025 +0000
+commit b7177bae89e6241f0f65ba48bf82e1261f0fbaaa
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 20 08:42:38 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 75.0% (3 of 4 strings)
     
-    Translation: social-15.0/social-15.0-mail_optional_follower_notification
-    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_optional_follower_notification/es/
+    Translation: social-15.0/social-15.0-mail_restrict_follower_selection
+    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_restrict_follower_selection/it/
 
 
 ## storage

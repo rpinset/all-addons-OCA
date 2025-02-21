@@ -102,6 +102,13 @@
                                 context="{'skip_search_count': 1}"
                             />
                         </page>
+                        <page name="columns" string="Columns">
+                            <field
+                                name="column_ids"
+                                context="{'default_res_name': 'general.ledger.report.wizard'}"
+                                widget="one2many"
+                            />
+                        </page>
                     </notebook>
                 </div>
                 <div

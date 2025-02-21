@@ -272,7 +272,7 @@ class GeneralLedgerReportWizard(models.TransientModel):
 
     def _print_report(self, report_type):
         self.ensure_one()
-        data = self._prepare_report_general_ledger()
+        data = self._prepare_report_data()
         if report_type == "xlsx":
             report_name = "a_f_r.report_general_ledger_xlsx"
         else:
@@ -285,10 +285,6 @@ class GeneralLedgerReportWizard(models.TransientModel):
             )
             .report_action(self, data=data)
         )
-
-    def _prepare_report_general_ledger(self):
-        self.ensure_one()
-        return {"wizard_id": self.id}
 
     def _export(self, report_type):
         """Default export is PDF."""

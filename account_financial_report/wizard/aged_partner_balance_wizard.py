@@ -139,7 +139,7 @@ class AgedPartnerBalanceWizard(models.TransientModel):
 
     def _print_report(self, report_type):
         self.ensure_one()
-        data = self._prepare_report_aged_partner_balance()
+        data = self._prepare_report_data()
         if report_type == "xlsx":
             report_name = "a_f_r.report_aged_partner_balance_xlsx"
         else:
@@ -153,22 +153,24 @@ class AgedPartnerBalanceWizard(models.TransientModel):
             .report_action(self, data=data)
         )
 
-    def _prepare_report_aged_partner_balance(self):
-        self.ensure_one()
-        return {
-            "wizard_id": self.id,
-            "date_at": self.date_at,
-            "date_from": self.date_from or False,
-            "only_posted_moves": self.target_move == "posted",
-            "company_id": self.company_id.id,
-            "account_ids": self.account_ids.ids,
-            "partner_ids": self.partner_ids.ids,
-            "show_move_line_details": self.show_move_line_details,
-            "account_financial_report_lang": self.env.lang,
-            "age_partner_config_id": self.age_partner_config_id.id,
-            "analytic_account_ids": self.analytic_account_ids.ids or [],
-            "no_analytic": self.no_analytic,
-        }
+    def _prepare_report_data(self):
+        res = super()._prepare_report_data()
+        res.update(
+            {
+                "date_at": self.date_at,
+                "date_from": self.date_from or False,
+                "only_posted_moves": self.target_move == "posted",
+                "company_id": self.company_id.id,
+                "account_ids": self.account_ids.ids,
+                "partner_ids": self.partner_ids.ids,
+                "show_move_line_details": self.show_move_line_details,
+                "account_financial_report_lang": self.env.lang,
+                "age_partner_config_id": self.age_partner_config_id.id,
+                "analytic_account_ids": self.analytic_account_ids.ids or [],
+                "no_analytic": self.no_analytic,
+            }
+        )
+        return res
 
     def _export(self, report_type):
         """Default export is PDF."""

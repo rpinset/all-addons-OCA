@@ -1,0 +1,1 @@
+This module extends the functionality of `partner_restrict_payment_acquirer` to restrict payment acquirers for a partner during the checkout process in e-commerce. Only the selected acquirers will be available for online payments.
