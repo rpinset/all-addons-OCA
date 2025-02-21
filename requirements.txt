@@ -9,9 +9,6 @@ numpy
 numpy-financial<=1.0.0
 python-dateutil
 vatnumber
-# From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-# generated from manifests external_dependencies
-python-dateutil
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 # generated from manifests external_dependencies

@@ -75,15 +75,6 @@ Date:   Sat Feb 1 21:09:18 2025 +0000
     [IMP] update dotfiles
 
 
-## account-financial-reporting
-From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 358b8805ed8fc659c3e6c50b1fb4e0e05b6b55cb
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:40:27 2025 +0000
-
-    [IMP] update dotfiles
-
-
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 commit 2bae247e58ad079e5c6f87d0d8d4bf9bf647af94
@@ -398,11 +389,16 @@ Date:   Wed Feb 5 14:05:24 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit db1e6cbf72a3779d109845de9946911ecb8ec81a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:13:39 2025 +0000
+commit 73ea1225cccbb292bbda016f058e153420e0edac
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Feb 18 09:06:19 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (187 of 187 strings)
+    
+    Translation: crm-13.0/crm-13.0-crm_salesperson_planner
+    Translate-URL: https://translation.odoo-community.org/projects/crm-13-0/crm-13-0-crm_salesperson_planner/it/
 
 
 ## partner-contact
@@ -1369,11 +1365,16 @@ Date:   Sat Feb 1 21:12:48 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 90ee6c3ba75fea5e71e2b0419d80e0fd8363a0ea
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:29:38 2025 +0000
+commit 230af4689f0968e854d18f1b6b040cebdd540b35
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Feb 20 08:42:28 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: social-13.0/social-13.0-mail_restrict_follower_selection
+    Translate-URL: https://translation.odoo-community.org/projects/social-13-0/social-13-0-mail_restrict_follower_selection/it/
 
 
 ## storage
