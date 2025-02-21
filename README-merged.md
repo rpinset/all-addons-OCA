@@ -23,6 +23,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 17.0.1.0.0 |  | Account analytic distribution manual
 [account_analytic_parent](account_analytic_parent/) | 17.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 17.0.1.0.0 |  | Account Analytic Required
 [account_analytic_sequence](account_analytic_sequence/) | 17.0.1.0.0 |  | Restore the analytic account sequence
@@ -393,6 +394,7 @@ addon | version | maintainers | summary
 [account_invoice_pricelist](account_invoice_pricelist/) | 17.0.1.0.1 |  | Add partner pricelist on invoices
 [account_invoice_refund_link](account_invoice_refund_link/) | 17.0.1.0.1 |  | Show links between refunds and their originator invoices.
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 17.0.2.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
+[account_invoice_subscription_per_contact](account_invoice_subscription_per_contact/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Invoice Subscription per contact
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_manual_currency](account_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Accounting
@@ -400,6 +402,7 @@ addon | version | maintainers | summary
 [partner_invoicing_mode](partner_invoicing_mode/) | 17.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 17.0.1.0.0 |  | Portal Accounting Personal Data Only
 [product_form_account_move_line_link](product_form_account_move_line_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Journal Items
+[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
@@ -743,13 +746,15 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_credit_control](account_credit_control/) | 17.0.1.0.2 |  | Account Credit Control
+[account_credit_control](account_credit_control/) | 17.0.2.0.0 |  | Account Credit Control
+[account_credit_control_dunning_fees](account_credit_control_dunning_fees/) | 17.0.1.0.0 |  | Credit control dunning fees
 [account_financial_risk](account_financial_risk/) | 17.0.1.1.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 17.0.1.0.0 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 17.0.1.0.0 | [![Daniel-CA](https://github.com/Daniel-CA.png?size=30px)](https://github.com/Daniel-CA) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![omar7r](https://github.com/omar7r.png?size=30px)](https://github.com/omar7r) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Risk insurance partner information
 [sale_financial_risk](sale_financial_risk/) | 17.0.1.0.0 |  | Manage partner risk in sales orders
+[sale_financial_risk_info](sale_financial_risk_info/) | 17.0.1.0.0 |  | Adds risk consumption info in sales orders.
 
 [//]: # (end addons)
 
@@ -851,7 +856,7 @@ addon | version | maintainers | summary
 [account_payment_partner](account_payment_partner/) | 17.0.1.0.6 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 17.0.1.2.2 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 17.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 17.0.1.0.3 |  | Adds payment mode on sale orders
+[account_payment_sale](account_payment_sale/) | 17.0.1.0.4 |  | Adds payment mode on sale orders
 [account_vendor_bank_account_default](account_vendor_bank_account_default/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Set a default bank account on partners for their vendor bills
 [account_vendor_bank_account_default_purchase](account_vendor_bank_account_default_purchase/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Set a default bank account purchase orders
 
@@ -902,7 +907,7 @@ addon | version | maintainers | summary
 [account_in_payment](account_in_payment/) | 17.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.2 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.6 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1701,7 +1706,7 @@ addon | version | maintainers | summary
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
-[sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.0 |  | Sale product in a secondary unit
+[sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.1 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.0.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
@@ -2013,6 +2018,7 @@ addon | version | maintainers | summary
 [sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 17.0.1.0.1 |  | Hide details for sections in sale orders and invoices for reports and customer portal
 [sale_order_line_position](sale_order_line_position/) | 17.0.1.0.0 |  | Adds position number on sale order line.
 [sale_order_report_product_image](sale_order_report_product_image/) | 17.0.1.0.0 |  | Show product images on Sale documents
+[sale_report_salesman](sale_report_salesman/) | 17.0.1.0.0 | [![carolina-fernandez](https://github.com/carolina-fernandez.png?size=30px)](https://github.com/carolina-fernandez) | Adds the Sales Reporting menu to the Salespersons user group.
 
 [//]: # (end addons)
 
@@ -2383,7 +2389,7 @@ addon | version | maintainers | summary
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Base for managing e-billing contracts
 [base_edi](base_edi/) | 17.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template
 [base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 17.0.1.0.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Base Import Pdf by Template Account
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
@@ -2869,6 +2875,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Employee Advance and Clearing
 [hr_expense_cancel](hr_expense_cancel/) | 17.0.1.0.3 |  | Hr expense cancel
 [hr_expense_employee_analytic_default](hr_expense_employee_analytic_default/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Expense Employee Analytic Default
 [hr_expense_invoice](hr_expense_invoice/) | 17.0.1.0.2 |  | Supplier invoices on HR expenses
@@ -4530,7 +4537,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.25.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.26.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.5.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -5172,6 +5179,7 @@ addon | version | maintainers | summary
 [delivery_roulier_option](delivery_roulier_option/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
 [delivery_state](delivery_state/) | 17.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [partner_delivery_info](partner_delivery_info/) | 17.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
+[partner_delivery_schedule](partner_delivery_schedule/) | 17.0.1.0.0 |  | Set on partners a schedule for delivery goods
 [sale_order_warehouse_from_delivery_carrier](sale_order_warehouse_from_delivery_carrier/) | 17.0.1.0.0 |  | Sale Order WH from Delivery Carrier
 
 [//]: # (end addons)
@@ -5411,7 +5419,7 @@ addon | version | maintainers | summary
 [stock_picking_volume](stock_picking_volume/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 17.0.1.0.0 |  | Use volume information on potential product packaging to compute the volume of a stock.move
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 17.0.1.0.0 |  | Stock - Manual Quant Assignment
-[stock_quant_reservation_info](stock_quant_reservation_info/) | 17.0.1.0.0 |  | Allows to see the reserved info of Products
+[stock_quant_reservation_info](stock_quant_reservation_info/) | 17.0.1.0.1 |  | Allows to see the reserved info of Products
 [stock_quant_reservation_info_mrp](stock_quant_reservation_info_mrp/) | 17.0.1.0.0 |  | Allows to see the manufacturing order related to the reserved info of Products
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 17.0.1.0.0 |  | Establish a removal priority on stock locations.
 [stock_reserve](stock_reserve/) | 17.0.1.0.0 |  | Stock reservations on products
@@ -5518,6 +5526,7 @@ addon | version | maintainers | summary
 [product_warranty](product_warranty/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 [rma](rma/) | 17.0.2.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 17.0.1.1.0 |  | Manage lot in RMA
+[rma_sale](rma_sale/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
 
@@ -5667,6 +5676,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 17.0.1.1.0 |  | Account Move Line Mrp Info
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
+[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 17.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.0 |  | Logs any change to a BoM in the chatter
 [mrp_mass_production_order](mrp_mass_production_order/) | 17.0.1.0.1 | [![peluko00](https://github.com/peluko00.png?size=30px)](https://github.com/peluko00) | Create multiple manufacturing orders in one step
 [mrp_multi_level](mrp_multi_level/) | 17.0.1.2.8 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
@@ -5892,6 +5902,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
+[procurement_purchase_requisition_generation](procurement_purchase_requisition_generation/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Procurement Purchase Requisition Generation
 [purchase_advance_payment](purchase_advance_payment/) | 17.0.1.3.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
@@ -5908,11 +5919,12 @@ addon | version | maintainers | summary
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_manual_delivery](purchase_manual_delivery/) | 17.0.1.0.0 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
+[purchase_mass_mail](purchase_mass_mail/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Automatically send massive emails to many purchase orders
 [purchase_no_rfq](purchase_no_rfq/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
 [purchase_open_qty](purchase_open_qty/) | 17.0.2.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_archive](purchase_order_archive/) | 17.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_line_deep_sort](purchase_order_line_deep_sort/) | 17.0.1.0.0 |  | Purchase Order Line Sort
-[purchase_order_line_menu](purchase_order_line_menu/) | 17.0.1.0.0 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_menu](purchase_order_line_menu/) | 17.0.1.1.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 17.0.1.0.0 |  | Purchase order line stock available
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 17.0.1.0.0 |  | Purchase product in a secondary unit
@@ -5920,8 +5932,9 @@ addon | version | maintainers | summary
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.1 |  | Purchase Reception Notify
-[purchase_request](purchase_request/) | 17.0.1.3.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 17.0.1.3.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
+[purchase_requisition_multiple_vendor](purchase_requisition_multiple_vendor/) | 17.0.1.0.0 |  | Create multiple purchase alternatives for different vendors using the same wizard.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
 [purchase_security](purchase_security/) | 17.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
@@ -6019,6 +6032,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_category_active](product_category_active/) | 17.0.1.0.0 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 17.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
+[product_category_product_link](product_category_product_link/) | 17.0.1.0.0 |  | Allows to get products from a category
 [product_code_mandatory](product_code_mandatory/) | 17.0.1.0.0 |  | Set Product Internal Reference as a required field
 [product_code_unique](product_code_unique/) | 17.0.1.0.0 |  | Set Product Internal Reference as Unique
 [product_cost_security](product_cost_security/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Product cost security restriction view
@@ -6609,6 +6623,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 17.0.1.1.0 |  | Base Search Mail Content
 [mail_activity_board](mail_activity_board/) | 17.0.1.1.0 |  | Add Activity Boards
+[mail_activity_cancel_tracking](mail_activity_cancel_tracking/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail Activity Cancel Tracking
 [mail_activity_done](mail_activity_done/) | 17.0.1.0.0 |  | Mail Activity Done
 [mail_activity_reminder](mail_activity_reminder/) | 17.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.1 |  | Add Teams to Activities
@@ -6617,8 +6632,10 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
+[mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_forward](mail_forward/) | 17.0.2.0.1 | [![carlos-lopez-tecnativa](https://github.com/carlos-lopez-tecnativa.png?size=30px)](https://github.com/carlos-lopez-tecnativa) | Forward messages from the chatter of any document to other users.
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
+[mail_no_user_assign_notification](mail_no_user_assign_notification/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail No user Assign Notification
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.2.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 17.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 17.0.1.1.0 |  | Choose to notify followers on mail.compose.message
@@ -8075,7 +8092,7 @@ addon | version | maintainers | summary
 [web_chatter_position](web_chatter_position/) | 17.0.1.0.1 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | Add an option to change the chatter position
 [web_company_color](web_company_color/) | 17.0.1.2.0 |  | Web Company Color
 [web_dialog_size](web_dialog_size/) | 17.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
-[web_editor_class_selector](web_editor_class_selector/) | 17.0.1.0.0 |  | Web editor class selector
+[web_editor_class_selector](web_editor_class_selector/) | 17.0.1.1.0 |  | Web editor class selector
 [web_environment_ribbon](web_environment_ribbon/) | 17.0.1.0.2 |  | Web Environment Ribbon
 [web_favicon](web_favicon/) | 17.0.1.0.2 |  | Allows to set a custom shortcut icon (aka favicon)
 [web_field_tooltip](web_field_tooltip/) | 17.0.1.0.0 |  | Displays customizable tooltips for fields

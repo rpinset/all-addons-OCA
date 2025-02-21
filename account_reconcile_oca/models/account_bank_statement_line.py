@@ -613,7 +613,10 @@ class AccountBankStatementLine(models.Model):
                     self.env["res.partner"].browse(line["partner_id"]).display_name,
                 )
             elif self.partner_id:
-                new_line["partner_id"] = self.partner_id.name_get()[0]
+                new_line["partner_id"] = (
+                    self.partner_id.id,
+                    self.partner_id.display_name,
+                )
             new_data.append(new_line)
         return new_data, reconcile_auxiliary_id
 
@@ -1017,7 +1020,7 @@ class AccountBankStatementLine(models.Model):
                     suspense_lines,
                     _other_lines,
                 ) = st_line._seek_for_lines()
-                line_vals = {"partner_id": st_line.partner_id}
+                line_vals = {"partner_id": st_line.partner_id.id}
                 line_ids_commands = [(1, liquidity_lines.id, line_vals)]
                 if suspense_lines:
                     line_ids_commands.append((1, suspense_lines.id, line_vals))

@@ -1,0 +1,118 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_credit_control_dunning_fees
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-01 03:44+0000\n"
+"PO-Revision-Date: 2023-07-21 12:09+0000\n"
+"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_line
+msgid "A credit control line"
+msgstr "Una línea de control de crédito"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_policy_level
+msgid "A credit control policy level"
+msgstr "Un nivel de política de control del crédito"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_line__balance_due_total
+msgid "Balance due with fees"
+msgstr "Saldo pendiente de pago con tasas"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_run
+msgid "Credit control line generator"
+msgstr "Generador de líneas de control de crédito"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,help:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_currency_id
+msgid ""
+"Currency of the dunning fees. If empty, it takes the company's currency."
+msgstr ""
+"Moneda de los gastos de reclamación. Si está vacía, toma la moneda de la "
+"empresa."
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_line__dunning_fees_amount
+#: model_terms:ir.ui.view,arch_db:account_credit_control_dunning_fees.add_dunning_fees_on_policy
+#: model_terms:ir.ui.view,arch_db:account_credit_control_dunning_fees.report_credit_control_summary_document_fees
+msgid "Fees"
+msgstr "Tasas"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_fixed_amount
+msgid "Fees Fixed Amount"
+msgstr "Tasas Importe fijo"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_product_id
+msgid "Fees Product"
+msgstr "Tasas de Producto"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_currency_id
+msgid "Fees currency"
+msgstr "Divisa de las tasas"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields.selection,name:account_credit_control_dunning_fees.selection__credit_control_policy_level__dunning_fees_type__fixed
+msgid "Fixed"
+msgstr "Fijo"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_dunning_fees_computer
+msgid "Model that compute dunning fees"
+msgstr "Modelo que computa las tasas de reclamación"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model.fields,field_description:account_credit_control_dunning_fees.field_credit_control_policy_level__dunning_fees_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: account_credit_control_dunning_fees
+#: model:ir.model,name:account_credit_control_dunning_fees.model_credit_control_communication
+msgid "credit control communication"
+msgstr "comunicación del control de crédito"
+
+#. module: account_credit_control_dunning_fees
+#. odoo-python
+#: code:addons/account_credit_control_dunning_fees/model/dunning.py:0
+#, python-format
+msgid "fees type %s is not supported"
+msgstr "el tipo de tasa %s no es compatible"
+
+#~ msgid "Created by"
+#~ msgstr "Creado por"
+
+#~ msgid "Created on"
+#~ msgstr "Creado en"
+
+#~ msgid "Display Name"
+#~ msgstr "Nombre mostrado"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última modificación el"
+
+#~ msgid "Last Updated by"
+#~ msgstr "Última actualización por"
+
+#~ msgid "Last Updated on"
+#~ msgstr "Última actualización en"
