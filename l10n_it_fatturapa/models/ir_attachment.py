@@ -39,6 +39,7 @@ class FatturaPAAttachment(models.AbstractModel):
     }
     _inherit = [
         "mail.thread",
+        "mail.activity.mixin",
     ]
     _order = "id desc"
 

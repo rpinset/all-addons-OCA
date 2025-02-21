@@ -1950,7 +1950,7 @@ addon | version | maintainers | summary
 [sale_order_general_discount_triple](sale_order_general_discount_triple/) | 14.0.2.0.1 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | General discount per sale order with triple
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 14.0.1.0.1 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 14.0.1.1.1 |  | Control invoice order lines if their related task has been set to invoiceable
-[sale_order_line_chained_move](sale_order_line_chained_move/) | 14.0.1.1.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module adds a field on sale order line to get all related move lines
+[sale_order_line_chained_move](sale_order_line_chained_move/) | 14.0.1.1.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module adds a field on sale order line to get all related move lines
 [sale_order_line_date](sale_order_line_date/) | 14.0.1.2.0 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 14.0.1.1.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 14.0.1.0.0 |  | Sale order line description
@@ -4749,7 +4749,7 @@ addon | version | maintainers | summary
 [l10n_it_delivery_note_inter_warehouse](l10n_it_delivery_note_inter_warehouse/) | 14.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Delivery Note Inter Warehouse
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 14.0.1.1.0 | [![andreampiovesana](https://github.com/andreampiovesana.png?size=30px)](https://github.com/andreampiovesana) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Crea collegamento tra i DDT e ordine di vendita/acquisto
 [l10n_it_delivery_note_rma](l10n_it_delivery_note_rma/) | 14.0.1.1.0 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Add Oportunity to create RMA from DN with wizard and smart button to DN view
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.4 |  | Fatture elettroniche
+[l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.5 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.3.7 |  | Ricezione fatture elettroniche
@@ -4787,6 +4787,7 @@ addon | version | maintainers | summary
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.13.2 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
+[l10n_it_sdd_cbi](l10n_it_sdd_cbi/) | 14.0.1.0.0 |  | Create SEPA files for CBI SDD Italy
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 14.0.1.0.7 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 14.0.1.0.2 |  | ITA - Esigibilità IVA
@@ -5414,7 +5415,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 14.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.7.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.8.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_mrw](delivery_mrw/) | 14.0.1.1.4 |  | Delivery Carrier implementation for MRW with SAGEC API
 [delivery_seur](delivery_seur/) | 14.0.1.0.0 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
@@ -5427,7 +5428,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 14.0.1.0.2 |  | AEAT modelo 130
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 14.0.1.0.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 14.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 14.0.5.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 14.0.5.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 14.0.1.2.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod322](l10n_es_aeat_mod322/) | 14.0.1.0.1 |  | AEAT modelo 322
@@ -8362,7 +8363,7 @@ addon | version | maintainers | summary
 [html_image_url_extractor](html_image_url_extractor/) | 14.0.1.0.1 |  | Extract images found in any HTML field
 [html_text](html_text/) | 14.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 14.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
-[jsonifier](jsonifier/) | 14.0.1.2.1 |  | JSON-ify data for all models
+[jsonifier](jsonifier/) | 14.0.1.2.3 |  | JSON-ify data for all models
 [jsonifier_stored](jsonifier_stored/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Pre-compute and store JSON data on any model
 [letsencrypt](letsencrypt/) | 14.0.1.0.2 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 14.0.1.0.0 |  | Mark as read or delete mails after a set time
@@ -8509,7 +8510,7 @@ addon | version | maintainers | summary
 [mail_environment_google_gmail](mail_environment_google_gmail/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Configure Gmail mail servers with server_environment_files
 [mail_environment_office365](mail_environment_office365/) | 14.0.1.0.0 |  | Configure Office365 parameters with environment variables via server_environment
 [payment_environment](payment_environment/) | 14.0.1.0.2 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Configure payment acquirers with server_environment
-[server_environment](server_environment/) | 14.0.2.2.3 |  | move some configurations out of the database
+[server_environment](server_environment/) | 14.0.2.2.4 |  | move some configurations out of the database
 [server_environment_data_encryption](server_environment_data_encryption/) | 14.0.1.0.2 |  | Server Environment Data Encryption
 [server_environment_iap](server_environment_iap/) | 14.0.1.0.0 |  | Configure IAP Account with server_environment_files
 [server_environment_ir_config_parameter](server_environment_ir_config_parameter/) | 14.0.1.1.1 |  | Override System Parameters from server environment file
@@ -8947,7 +8948,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 14.0.4.8.4 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 14.0.4.8.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 14.0.1.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [base_rest_auth_jwt](base_rest_auth_jwt/) | 14.0.1.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_jwt security policy into the openapi documentation
 [base_rest_auth_user_service](base_rest_auth_user_service/) | 14.0.1.1.0 |  | Login/logout from session using a REST call
@@ -9551,7 +9552,7 @@ addon | version | maintainers | summary
 [web_tooltip_field](web_tooltip_field/) | 14.0.1.0.0 | [![cuongnmtm](https://github.com/cuongnmtm.png?size=30px)](https://github.com/cuongnmtm) | Showing a Field ToolTip in Odoo
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 14.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 14.0.1.0.0 |  | Show images in tree views via tooltip
-[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 14.0.1.0.2 |  | Open the linked resource when clicking on their name
+[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 14.0.1.0.3 |  | Open the linked resource when clicking on their name
 [web_view_calendar_list](web_view_calendar_list/) | 14.0.1.0.0 |  | Show calendars as a List
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 14.0.2.3.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_char_size](web_widget_char_size/) | 14.0.1.0.1 |  | Add size option to Char widget

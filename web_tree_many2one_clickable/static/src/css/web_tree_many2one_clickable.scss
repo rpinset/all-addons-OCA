@@ -1,10 +1,31 @@
 td.o_many2one_cell {
+    display: flex;
+    align-items: center;
+    position: relative;
+
     a {
         margin-left: 0.5em;
         visibility: hidden;
+        position: relative;
     }
 
     &:hover a {
         visibility: visible;
+    }
+}
+/*SECONDARY CONTAINER FOR THE BUTTON AND TEXT*/
+.o_many2one_container {
+    display: flex;
+    gap: 0.5em; /* Space between the containers */
+
+    .o_text_container {
+        max-width: fit-content;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        div.o_custom_field_text {
+            position: relative;
+            vertical-align: bottom;
+        }
     }
 }

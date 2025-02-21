@@ -36,10 +36,25 @@ odoo.define("web_tree_many2one_clickable.many2one_clickable", function (require)
             if (!this.noOpen && this.value) {
                 // Replace '<a>' element
                 this.$el.removeClass("o_form_uri");
-                this.$el = $("<span/>", {
+                var $span = $("<span/>", {
                     html: this.$el.html(),
-                    class: this.$el.attr("class") + " o_field_text",
+                    class: this.$el.attr("class") + " o_custom_field_text",
                     name: this.$el.attr("name"),
+                });
+                this.$el = $("<div/>", {
+                    class: "o_many2one_container",
+                });
+
+                // Create the container for the text (span)
+                var $textContainer = $("<div/>", {
+                    class: "o_text_container",
+                });
+
+                $textContainer.append($span);
+
+                // Create the container for the button (a)
+                var $buttonContainer = $("<div/>", {
+                    class: "o_button_container",
                 });
 
                 // Append button
@@ -63,7 +78,10 @@ odoo.define("web_tree_many2one_clickable.many2one_clickable", function (require)
                         }),
                     });
                 });
-                this.$el.append($a);
+                $buttonContainer.append($a);
+
+                // Adding the two containers to the principal
+                this.$el.append($textContainer).append($buttonContainer);
             }
         },
     });

@@ -267,10 +267,12 @@ class TestParser(SavepointCase):
             # callable subparser
             ("name", lambda rec, fname: rec[fname] + " rocks!"),
             ("name:custom", "jsonify_custom"),
+            ("unknown_field", lambda rec, fname: "yeah again!"),
         ]
         expected_json = {
             "name": "Akretion rocks!",
             "custom": "yeah!",
+            "unknown_field": "yeah again!",
         }
         json_partner = self.partner.jsonify(parser)
         self.assertDictEqual(json_partner[0], expected_json)
