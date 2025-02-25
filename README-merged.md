@@ -451,7 +451,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 15.0.1.0.0 |  | Allow to Reinvoice a Refund
 [account_invoice_restrict_linked_so](account_invoice_restrict_linked_so/) | 15.0.1.0.1 |  | Restricts editing the Product, Quantity and Unit Price columns for invoice lines that originated in Sales Orders.
 [account_invoice_search_by_reference](account_invoice_search_by_reference/) | 15.0.1.0.0 |  | Account invoice search by reference
-[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 15.0.1.0.2 |  | For invoices targetting multiple sale order addsections with sale order name.
+[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 15.0.1.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 15.0.1.1.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 15.0.1.3.0 |  | Purchase Self Invoice
 [account_invoice_tax_note](account_invoice_tax_note/) | 15.0.1.0.1 |  | Print tax notes on customer invoices
@@ -5120,7 +5120,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.8.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.0 |  | AEAT modelo 390 - OSS
-[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.1.0.0 |  | AEAT modelo 592
+[l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.2.0.0 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.2.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.22.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
@@ -5289,7 +5289,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.3 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_inter_company](l10n_th_account_tax_inter_company/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Inter Company Tax
@@ -5303,7 +5303,7 @@ addon | version | maintainers | summary
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
 [l10n_th_fonts](l10n_th_fonts/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all fonts thai
 [l10n_th_gov_account_asset_management](l10n_th_gov_account_asset_management/) | 15.0.3.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Assets Management
-[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
+[l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.2.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Government Expense
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Thai Localization - Government Purchase Agreement
 [l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.2 |  | Thai Localization - Government Purchase Guarantee
 [l10n_th_gov_purchase_report](l10n_th_gov_purchase_report/) | 15.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Government Purchase Report
@@ -5931,7 +5931,7 @@ addon | version | maintainers | summary
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 15.0.1.0.0 |  | Lock down stock locations during inventories.
-[stock_inventory_verification_request](stock_inventory_verification_request/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
+[stock_inventory_verification_request](stock_inventory_verification_request/) | 15.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_position](stock_location_position/) | 15.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.

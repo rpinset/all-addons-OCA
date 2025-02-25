@@ -97,16 +97,11 @@ Date:   Sun Feb 2 17:56:41 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit f7492d4f3b434d98401502e67187db7223294402
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 6 08:28:39 2025 +0000
+commit f71c4a4122c9664e66fbdcafff8d9b896e8c4116
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 25 12:46:36 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (36 of 36 strings)
-    
-    Translation: account-invoicing-15.0/account-invoicing-15.0-account_global_discount
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_global_discount/it/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -913,11 +908,16 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 4623b9cfe30f4cf411f72aa6358584bdcbfc88cd
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 17 13:49:52 2025 +0000
+commit fb81db62780cf3d77634304955bb18ff68a862ab
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Feb 24 16:01:12 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat_mod592
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat_mod592/
 
 
 ## l10n-switzerland
@@ -940,11 +940,11 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 01a04b06c375da5adf693e4876b92cf47ddffde7
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:46:45 2025 +0000
+commit 4959893fc8cb21a851d0f2de083b38aa766ed697
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Feb 25 10:29:04 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-turkey
@@ -1044,9 +1044,9 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 0e7233ad0bb677851220441b9bed236394c9f853
+commit 6c43ef54f88561a43def2bd8481837ebd09784f1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Feb 14 12:04:39 2025 +0000
+Date:   Mon Feb 24 11:22:50 2025 +0000
 
     [BOT] post-merge updates
 
