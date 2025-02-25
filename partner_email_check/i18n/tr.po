@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_email_check
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-22 12:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: partner_email_check
+#. odoo-python
+#: code:addons/partner_email_check/models/res_partner.py:0
+#, python-format
+msgid "%s is an invalid email"
+msgstr "%s geçersiz bir e-postadır"
+
+#. module: partner_email_check
+#: model_terms:ir.ui.view,arch_db:partner_email_check.view_general_configuration
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" aria-label=\"Values set here are company-specific.\" "
+"groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Burada belirlenen değerler "
+"şirkete özeldir.\" aria-label=\"Burada belirlenen değerler şirkete özeldir.\""
+" groups=\"base.group_multi_company\" role=\"img\"/>"
+
+#. module: partner_email_check
+#. odoo-python
+#: code:addons/partner_email_check/models/res_partner.py:0
+#, python-format
+msgid "Cannot deliver to email address %s"
+msgstr "%s e-posta adresine teslim edilemiyor"
+
+#. module: partner_email_check
+#. odoo-python
+#: code:addons/partner_email_check/models/res_partner.py:0
+#, python-format
+msgid "Cannot import 'email_validator'."
+msgstr "'email_validator' içe aktarılamıyor."
+
+#. module: partner_email_check
+#: model:ir.model.fields,field_description:partner_email_check.field_res_company__partner_email_check_check_deliverability
+#: model:ir.model.fields,field_description:partner_email_check.field_res_config_settings__partner_email_check_check_deliverability
+msgid "Check deliverability of email addresses"
+msgstr "E-posta adreslerinin teslim edilebilirliğini kontrol edin"
+
+#. module: partner_email_check
+#: model:ir.model.fields,field_description:partner_email_check.field_res_company__partner_email_check_syntax
+#: model:ir.model.fields,field_description:partner_email_check.field_res_config_settings__partner_email_check_syntax
+msgid "Check syntax of email addresses"
+msgstr "E-posta adreslerinin sözdizimini kontrol edin"
+
+#. module: partner_email_check
+#: model:ir.model,name:partner_email_check.model_res_company
+msgid "Companies"
+msgstr "Şirketler"
+
+#. module: partner_email_check
+#: model:ir.model,name:partner_email_check.model_res_config_settings
+msgid "Config Settings"
+msgstr "Yapılandırma Ayarları"
+
+#. module: partner_email_check
+#: model:ir.model,name:partner_email_check.model_res_partner
+msgid "Contact"
+msgstr "Irtibat"
+
+#. module: partner_email_check
+#: model:ir.model.fields,help:partner_email_check.field_res_company__partner_email_check_check_deliverability
+#: model:ir.model.fields,help:partner_email_check.field_res_config_settings__partner_email_check_check_deliverability
+msgid "Don't allow email addresses with providers that don't exist"
+msgstr "Mevcut olmayan sağlayıcılara sahip e-posta adreslerine izin verme"
+
+#. module: partner_email_check
+#: model:ir.model.fields,help:partner_email_check.field_res_company__partner_email_check_syntax
+#: model:ir.model.fields,help:partner_email_check.field_res_config_settings__partner_email_check_syntax
+msgid "Don't allow email addresses with wrong syntax"
+msgstr "Yanlış sözdizimine sahip e-posta adreslerine izin verme"
+
+#. module: partner_email_check
+#: model:ir.model.fields,help:partner_email_check.field_res_company__partner_email_check_filter_duplicates
+#: model:ir.model.fields,help:partner_email_check.field_res_config_settings__partner_email_check_filter_duplicates
+msgid "Don't allow multiple partners to have the same email address."
+msgstr ""
+"Birden fazla iş ortağının aynı e-posta adresine sahip olmasına izin vermeyin."
+
+#. module: partner_email_check
+#. odoo-python
+#: code:addons/partner_email_check/models/res_partner.py:0
+#, python-format
+msgid "Email '%s' is already in use."
+msgstr "'%s' e-postası zaten kullanımda."
+
+#. module: partner_email_check
+#: model_terms:ir.ui.view,arch_db:partner_email_check.view_general_configuration
+msgid "Email validation"
+msgstr "E-posta doğrulama"
+
+#. module: partner_email_check
+#: model_terms:ir.ui.view,arch_db:partner_email_check.view_general_configuration
+msgid "Ensure that partner email addresses can be delivered to"
+msgstr ""
+"İş ortağı e-posta adreslerinin şu adreslere teslim edilebildiğinden emin olun"
+
+#. module: partner_email_check
+#. odoo-python
+#: code:addons/partner_email_check/models/res_partner.py:0
+#, python-format
+msgid ""
+"Field contains multiple email addresses. This is not supported when "
+"duplicate email addresses are not allowed."
+msgstr ""
+"Alan birden fazla e-posta adresi içeriyor. Yinelenen e-posta adreslerine "
+"izin verilmediğinde bu desteklenmez."
+
+#. module: partner_email_check
+#: model:ir.model.fields,field_description:partner_email_check.field_res_company__partner_email_check_filter_duplicates
+#: model:ir.model.fields,field_description:partner_email_check.field_res_config_settings__partner_email_check_filter_duplicates
+msgid "Filter duplicate partner email addresses"
+msgstr "Yinelenen iş ortağı e-posta adreslerini filtreleyin"
+
+#. module: partner_email_check
+#: model_terms:ir.ui.view,arch_db:partner_email_check.view_general_configuration
+msgid "Require partner email addresses to be unique"
+msgstr "İş ortağı e-posta adreslerinin benzersiz olmasını zorunlu kılın"
+
+#. module: partner_email_check
+#: model_terms:ir.ui.view,arch_db:partner_email_check.view_general_configuration
+msgid "Require partner email addresses to have valid syntax"
+msgstr ""
+"İş ortağı e-posta adreslerinin geçerli sözdizimine sahip olmasını zorunlu "
+"kılın"

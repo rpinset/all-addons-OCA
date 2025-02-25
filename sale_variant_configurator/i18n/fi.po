@@ -19,6 +19,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__can_create_product
+msgid "Can Create Product"
+msgstr ""
+
+#. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__create_product_variant
+msgid "Create product now!"
+msgstr ""
+
+#. module: sale_variant_configurator
 #: model:ir.model.constraint,message:sale_variant_configurator.constraint_sale_order_line_non_accountable_null_fields
 msgid "Forbidden values on non-accountable sale order line"
 msgstr ""
@@ -29,8 +39,25 @@ msgid "Missing required fields on accountable sale order line."
 msgstr ""
 
 #. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__price_extra
+msgid "Price Extra"
+msgstr ""
+
+#. module: sale_variant_configurator
+#: model:ir.model.fields,help:sale_variant_configurator.field_sale_order_line__price_extra
+msgid ""
+"Price Extra: Extra price for the variant with the currently selected "
+"attributes values on sale price. eg. 200 price extra, 1000 + 200 = 1200."
+msgstr ""
+
+#. module: sale_variant_configurator
 #: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_id
 msgid "Product"
+msgstr ""
+
+#. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_id_configurator_domain
+msgid "Product Id Configurator Domain"
 msgstr ""
 
 #. module: sale_variant_configurator
@@ -43,6 +70,16 @@ msgstr "Tuotteen malli"
 #. module: sale_variant_configurator
 #: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_tmpl_id
 msgid "Product Template (no related)"
+msgstr ""
+
+#. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_uom_category_id
+msgid "Product Uom Category"
+msgstr ""
+
+#. module: sale_variant_configurator
+#: model:ir.model.fields,field_description:sale_variant_configurator.field_sale_order_line__product_attribute_ids
+msgid "Product attributes"
 msgstr ""
 
 #. module: sale_variant_configurator

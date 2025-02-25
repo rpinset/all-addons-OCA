@@ -3,9 +3,10 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo import fields
 from odoo.exceptions import ValidationError
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import TransactionCase, tagged
 
 
+@tagged("post_install", "-at_install")
 class TestAccountPaymentTerm(TransactionCase):
     @classmethod
     def setUpClass(cls):
@@ -20,6 +21,15 @@ class TestAccountPaymentTerm(TransactionCase):
                 tracking_disable=True,
             )
         )
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.account_payment_term = cls.env["account.payment.term"]
         cls.currency = cls.env.company.currency_id
         cls.company = cls.env.company

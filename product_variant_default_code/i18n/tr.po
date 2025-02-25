@@ -1,0 +1,189 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_variant_default_code
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-25 12:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,help:product_variant_default_code.field_product_product__code_prefix
+#: model:ir.model.fields,help:product_variant_default_code.field_product_template__code_prefix
+msgid "Add prefix to product variant reference (default code)"
+msgstr "Ürün varyantı referansına önek ekleyin (varsayılan kod)"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_attribute__code
+msgid "Attribute Code"
+msgstr "Özellik Kodu"
+
+#. module: product_variant_default_code
+#. odoo-python
+#: code:addons/product_variant_default_code/models/product.py:0
+#: model:ir.model.constraint,message:product_variant_default_code.constraint_product_attribute_number_uniq
+#, python-format
+msgid "Attribute Name must be unique!"
+msgstr "Özellik Adı benzersiz olmalıdır!"
+
+#. module: product_variant_default_code
+#: model:ir.model,name:product_variant_default_code.model_product_attribute_value
+msgid "Attribute Value"
+msgstr "Özellik Değeri"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_attribute_value__code
+msgid "Attribute Value Code"
+msgstr "Özellik Değeri Kodu"
+
+#. module: product_variant_default_code
+#: model:ir.model,name:product_variant_default_code.model_res_config_settings
+msgid "Config Settings"
+msgstr "Yapılandırma Ayarları"
+
+#. module: product_variant_default_code
+#: model_terms:ir.ui.view,arch_db:product_variant_default_code.view_general_configuration
+msgid ""
+"Defines how you want to manage the Variant default.\n"
+"                                Check this if you want to use Manual Mask.\n"
+"                                Default: Automask"
+msgstr ""
+"Varyant varsayılanını nasıl yönetmek istediğinizi tanımlar.\n"
+"                                Manuel Maskelemeyi kullanmak istiyorsanız "
+"bunu işaretleyin.\n"
+"                                Varsayılan: Otomatik Maskeleme"
+
+#. module: product_variant_default_code
+#: model_terms:ir.ui.view,arch_db:product_variant_default_code.view_general_configuration
+msgid ""
+"Defines the variant \"Reference Prefix\" as the default reference "
+"(default_code) of the variant."
+msgstr ""
+"\"Referans Öneki\" varyantını, varyantın varsayılan referansı (default_code) "
+"olarak tanımlar."
+
+#. module: product_variant_default_code
+#. odoo-python
+#: code:addons/product_variant_default_code/models/product.py:0
+#, python-format
+msgid "Found unrecognized attribute name in \"Variant Reference Mask\""
+msgstr "\"Varyant Referans Maskesi\"nde tanınmayan özellik adı bulundu"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_product__default_code
+msgid "Internal Reference"
+msgstr "Dahili Referans"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_product__manual_code
+msgid "Manual Reference"
+msgstr "Manuel Referans"
+
+#. module: product_variant_default_code
+#: model:ir.model,name:product_variant_default_code.model_product_template
+msgid "Product"
+msgstr "Ürün"
+
+#. module: product_variant_default_code
+#: model:ir.model,name:product_variant_default_code.model_product_attribute
+msgid "Product Attribute"
+msgstr "Ürün Özelliği"
+
+#. module: product_variant_default_code
+#: model:res.groups,name:product_variant_default_code.group_product_default_code_manual_mask
+msgid "Product Default Code Behavior"
+msgstr "Ürün Varsayılan Kod Davranışı"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_res_config_settings__group_product_default_code_manual_mask
+msgid "Product Default Code Manual Mask"
+msgstr "Ürün Varsayılan Kod Manuel Maskeleme"
+
+#. module: product_variant_default_code
+#: model:ir.model,name:product_variant_default_code.model_product_product
+msgid "Product Variant"
+msgstr "Ürün Varyantı"
+
+#. module: product_variant_default_code
+#: model_terms:ir.ui.view,arch_db:product_variant_default_code.view_general_configuration
+msgid "Product Variants"
+msgstr "Ürün Varyantları"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_product__code_prefix
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_template__code_prefix
+msgid "Reference Prefix"
+msgstr "Referans Öneki"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_res_config_settings__prefix_as_default_code
+msgid "Reference Prefix as default Reference"
+msgstr "Varsayılan Referans olarak Referans Öneki"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,help:product_variant_default_code.field_product_product__reference_mask
+#: model:ir.model.fields,help:product_variant_default_code.field_product_template__reference_mask
+msgid ""
+"Reference mask for building internal references of a variant generated from this template.\n"
+"Example:\n"
+"A product named ABC with 2 attributes: Size and Color:\n"
+"Product: ABC\n"
+"Color: Red(r), Yellow(y), Black(b)  #Red, Yellow, Black are the attribute value, `r`, `y`, `b` are the corresponding code\n"
+"Size: L (l), XL(x)\n"
+"When setting Variant reference mask to `[Color]-[Size]`, the default code on the variants will be something like `r-l` `b-l` `r-x` ...\n"
+"If you like, You can even have the attribute name appear more than once in the mask. Such as,`fancyA/[Size]~[Color]~[Size]`\n"
+" When saved, the default code on variants will be something like \n"
+" `fancyA/l~r~l` (for variant with Color \"Red\" and Size \"L\")  `fancyA/x~y~x` (for variant with Color \"Yellow\" and Size \"XL\")\n"
+"Note: make sure characters \"[,]\" do not appear in your attribute name"
+msgstr ""
+"Bu şablondan oluşturulan bir varyantın dahili referanslarını oluşturmak için "
+"referans maskeleme.\n"
+"Örnek:\n"
+"ABC adında 2 özelliğe sahip bir ürün: Boyut ve Renk:\n"
+"Ürün: ABC\n"
+"Renk: Kırmızı(r), Sarı(y), Siyah(b) #Kırmızı, Sarı, Siyah öznitelik "
+"değeridir, `r`, `y`, `b` karşılık gelen koddur\n"
+"Beden: L (l), XL(x)\n"
+"Varyant referans maskelemeyi \"[Renk]-[Boyut]\" olarak ayarlarken, "
+"varyantlardaki varsayılan kod \"r-l\" \"b-l\" \"r-x\" gibi olacaktır ...\n"
+"İsterseniz özellik adının maskelenirken birden fazla görünmesini bile "
+"sağlayabilirsiniz. 'fancyA/[Boyut]~[Renk]~[Boyut]' gibi\n"
+" Kaydedildiğinde, varyantlardaki varsayılan kod şöyle olacaktır: \n"
+" `fancyA/l~r~l` (\"Kırmızı\" Renkli ve \"L\" Bedenli varyant için) `fancyA/"
+"x~y~x` (\"Sarı\" Renkli ve \"XL\" Bedenli varyant için)\n"
+"Not: Özellik adınızda \"[,]\" karakterlerinin görünmediğinden emin olun"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,help:product_variant_default_code.field_res_config_settings__group_product_default_code_manual_mask
+msgid ""
+"Set behaviour of codes. Default: Automask (depends on variant use: see "
+"Sales/Purchases configuration)"
+msgstr ""
+"Kodların davranışını ayarlayın. Varsayılan: Otomatik maske (çeşit "
+"kullanımına bağlıdır: bkz. Satış/Satın Alma yapılandırması)"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_product__variant_default_code_error
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_template__variant_default_code_error
+msgid "Variant Default Code Error"
+msgstr "Varyant Varsayılan Kod Hatası"
+
+#. module: product_variant_default_code
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_product__reference_mask
+#: model:ir.model.fields,field_description:product_variant_default_code.field_product_template__reference_mask
+msgid "Variant reference mask"
+msgstr "Varyant referans maskeleme"
+
+#. module: product_variant_default_code
+#: model_terms:ir.ui.view,arch_db:product_variant_default_code.product_template_only_form_view
+msgid "[attribute3]-[attribute1]"
+msgstr "[özellik3]-[özellik1]"

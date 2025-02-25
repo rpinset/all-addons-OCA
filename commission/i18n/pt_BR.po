@@ -59,6 +59,11 @@ msgstr "<strong> De:</strong>"
 
 #. module: commission
 #: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
+msgid "<strong>Global commission amount:</strong>"
+msgstr ""
+
+#. module: commission
+#: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
 msgid "<strong>To:</strong>"
 msgstr "<strong>Para:</strong>"
 

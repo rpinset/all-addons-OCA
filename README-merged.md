@@ -31,8 +31,8 @@ addon | version | maintainers | summary
 [account_analytic_required](account_analytic_required/) | 16.0.2.0.1 |  | Account Analytic Required
 [account_analytic_root](account_analytic_root/) | 16.0.1.0.0 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Compute the Root Analytic Account
 [account_analytic_sequence](account_analytic_sequence/) | 16.0.1.0.0 |  | Restore the analytic account sequence
-[account_analytic_tag](account_analytic_tag/) | 16.0.1.1.1 |  | Account Analytic Tag
-[account_analytic_tag_distribution](account_analytic_tag_distribution/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Analytic Tag Distribution
+[account_analytic_tag](account_analytic_tag/) | 16.0.1.1.2 |  | Account Analytic Tag
+[account_analytic_tag_distribution](account_analytic_tag_distribution/) | 16.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Analytic Tag Distribution
 [account_move_update_analytic](account_move_update_analytic/) | 16.0.1.0.2 | [![remi-filament](https://github.com/remi-filament.png?size=30px)](https://github.com/remi-filament) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | This module allows the user to update analytic on posted moves
 [analytic_base_department](analytic_base_department/) | 16.0.1.0.0 |  | Add relationship between Analytic and Department
 [analytic_distribution_widget_remove_save](analytic_distribution_widget_remove_save/) | 16.0.1.0.1 |  | Remove save button on analytic distribution widget
@@ -49,7 +49,7 @@ addon | version | maintainers | summary
 [purchase_analytic_tag](purchase_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Analytic Tag
 [purchase_stock_analytic](purchase_stock_analytic/) | 16.0.1.0.1 |  | Copies the analytic distribution of the purchase order item to the stock move
 [sale_analytic_tag](sale_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Analytic Tag
-[stock_analytic](stock_analytic/) | 16.0.1.3.0 |  | Adds analytic distribution in stock move
+[stock_analytic](stock_analytic/) | 16.0.1.3.1 |  | Adds analytic distribution in stock move
 [stock_landed_costs_analytic](stock_landed_costs_analytic/) | 16.0.1.0.0 |  | This module adds an analytic account and analytic tags on landed costs lines so that on landed costs validation account moves get analytic account and analytic tags values from landed costs lines.
 [stock_picking_analytic](stock_picking_analytic/) | 16.0.1.0.1 |  | Allows to define the analytic account on picking level
 
@@ -246,7 +246,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 16.0.1.0.0 |  | Add a code field to the accounts tags
 [account_asset_batch_compute](account_asset_batch_compute/) | 16.0.1.0.0 |  | Add the possibility to compute assets in batch
-[account_asset_management](account_asset_management/) | 16.0.1.2.7 |  | Assets Management
+[account_asset_management](account_asset_management/) | 16.0.1.2.8 |  | Assets Management
 [account_asset_number](account_asset_number/) | 16.0.1.1.0 |  | Assets Number
 [account_asset_transfer](account_asset_transfer/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Asset Transfer from AUC to Asset
 [account_bank_statement_chatter](account_bank_statement_chatter/) | 16.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Chatter on bank statements
@@ -258,7 +258,7 @@ addon | version | maintainers | summary
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 16.0.1.1.0 |  | Check VAT on invoice validation
 [account_fiscal_year](account_fiscal_year/) | 16.0.1.2.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create Account Fiscal Year
 [account_fiscal_year_auto_create](account_fiscal_year_auto_create/) | 16.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Automatically create new fiscal years, based on the datas of the last fiscal years
-[account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.2 |  | Account Invoice Constraint Chronology
+[account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.3 |  | Account Invoice Constraint Chronology
 [account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 16.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.1.0 |  | Lock All Posted Entries of Journals.
@@ -277,7 +277,7 @@ addon | version | maintainers | summary
 [account_move_post_date_user](account_move_post_date_user/) | 16.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
 [account_move_print](account_move_print/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds the option to print Journal Entries
 [account_move_template](account_move_template/) | 16.0.1.0.1 |  | Templates for recurring Journal Entries
-[account_netting](account_netting/) | 16.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
+[account_netting](account_netting/) | 16.0.1.0.1 |  | Compensate AR/AP accounts from the same partner
 [account_partner_required](account_partner_required/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds an option 'partner policy' on accounts
 [account_sequence_option](account_sequence_option/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Manage sequence options for account.move, i.e., invoice, bill, entry
 [account_spread_cost_revenue](account_spread_cost_revenue/) | 16.0.1.0.1 |  | Spread costs and revenues over a custom period
@@ -334,7 +334,7 @@ addon | version | maintainers | summary
 [account_financial_report_sale](account_financial_report_sale/) | 16.0.1.0.0 |  | OCA Financial Reports Sale
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 16.0.1.0.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
-[account_tax_balance](account_tax_balance/) | 16.0.1.1.2 |  | Compute tax balances based on date range
+[account_tax_balance](account_tax_balance/) | 16.0.1.1.3 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 16.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 16.0.1.0.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
 [partner_statement](partner_statement/) | 16.0.1.0.4 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
@@ -386,11 +386,11 @@ addon | version | maintainers | summary
 [account_comment_template](account_comment_template/) | 16.0.1.0.1 |  | Comments templates on invoice documents
 [account_invoice_line_report](account_invoice_line_report/) | 16.0.1.0.0 |  | New view to manage invoice lines information
 [account_invoice_production_lot](account_invoice_production_lot/) | 16.0.1.0.0 |  | Display delivered serial numbers in invoice
-[account_invoice_report_due_list](account_invoice_report_due_list/) | 16.0.1.0.0 |  | Show multiple due data in invoice
-[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 16.0.1.1.8 |  | Print invoice lines grouped by picking
+[account_invoice_report_due_list](account_invoice_report_due_list/) | 16.0.1.0.1 |  | Show multiple due data in invoice
+[account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 16.0.1.1.9 |  | Print invoice lines grouped by picking
 [account_invoice_report_header_repeater](account_invoice_report_header_repeater/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Account Invoice Report Header Repeater
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 16.0.1.0.1 |  | Show payment extended info in invoice
-[account_invoice_report_product_sticker](account_invoice_report_product_sticker/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display Product Stickers on Invoice Reports
+[account_invoice_report_product_sticker](account_invoice_report_product_sticker/) | 16.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display Product Stickers on Invoice Reports
 [account_invoice_report_salesperson](account_invoice_report_salesperson/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Invoice report
 [account_reporting_volume](account_reporting_volume/) | 16.0.1.0.0 |  | Volume in the invoices analysis view
 [account_reporting_weight](account_reporting_weight/) | 16.0.1.0.0 |  | Weights in the invoices analysis view
@@ -441,7 +441,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_billing](account_billing/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Group invoice as billing before payment
-[account_global_discount](account_global_discount/) | 16.0.1.0.1 |  | Account Global Discount
+[account_global_discount](account_global_discount/) | 16.0.2.0.0 |  | Account Global Discount
 [account_invoice_alternate_payer](account_invoice_alternate_payer/) | 16.0.1.0.0 |  | Set a alternate payor/payee in invoices
 [account_invoice_block_payment](account_invoice_block_payment/) | 16.0.1.0.0 |  | Module to block payment of invoices
 [account_invoice_blocking](account_invoice_blocking/) | 16.0.1.0.1 |  | Set a blocking (No Follow-up) flag on invoices
@@ -450,14 +450,15 @@ addon | version | maintainers | summary
 [account_invoice_clearing](account_invoice_clearing/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Account invoice clearing wizard
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 16.0.1.0.0 |  | Account Invoice CRM Tag
 [account_invoice_currency_taxes](account_invoice_currency_taxes/) | 16.0.1.0.2 |  | Taxes in company currency in invoice report
+[account_invoice_customer_no_autofollow](account_invoice_customer_no_autofollow/) | 16.0.1.0.1 |  | Do not add customer as follower in Invoices
 [account_invoice_default_code_column](account_invoice_default_code_column/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display Default code product in a dedicated column on invoice reports
 [account_invoice_discount_date](account_invoice_discount_date/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Set the early discount date on invoices
 [account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 16.0.1.1.1 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Changing the fiscal position of an invoice will auto-update invoice lines
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.1.0.4 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.2.0.0 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 16.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_line_default_account](account_invoice_line_default_account/) | 16.0.1.0.0 |  | Account Invoice Line Default Account
-[account_invoice_mass_sending](account_invoice_mass_sending/) | 16.0.1.1.3 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
+[account_invoice_mass_sending](account_invoice_mass_sending/) | 16.0.1.1.4 | [![jguenat](https://github.com/jguenat.png?size=30px)](https://github.com/jguenat) | This addon adds a mass sending feature on invoices.
 [account_invoice_merge](account_invoice_merge/) | 16.0.1.0.1 |  | Merge invoices in draft
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 16.0.1.0.0 |  | Account Invoice Payment Retention
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display invoices date due when using payment terms
@@ -466,22 +467,22 @@ addon | version | maintainers | summary
 [account_invoice_recipient_bank_currency](account_invoice_recipient_bank_currency/) | 16.0.1.0.0 |  | Module to fill recipient bank from invoices by using the invoice's currency.
 [account_invoice_refund_code](account_invoice_refund_code/) | 16.0.1.0.0 |  | This module allows to have specific refund codes.
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 16.0.1.0.0 |  | This module allows the user to refund specific lines in a invoice
-[account_invoice_refund_link](account_invoice_refund_link/) | 16.0.1.0.4 |  | Show links between refunds and their originator invoices.
+[account_invoice_refund_link](account_invoice_refund_link/) | 16.0.1.0.5 |  | Show links between refunds and their originator invoices.
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 16.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Account Invoice Refund Reason.
 [account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 16.0.1.0.0 |  | Allow to Reinvoice a Refund
-[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 16.0.1.0.0 |  | For invoices targetting multiple sale order addsections with sale order name.
+[account_invoice_section_sale_order](account_invoice_section_sale_order/) | 16.0.1.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 16.0.1.0.7 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 16.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 16.0.1.0.0 |  | Purchase Self Invoice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
-[account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
+[account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 16.0.2.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
 [account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
 [account_invoice_tax_note](account_invoice_tax_note/) | 16.0.1.0.1 |  | Print tax notes on customer invoices
 [account_invoice_tax_required](account_invoice_tax_required/) | 16.0.1.1.0 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 16.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_tree_currency](account_invoice_tree_currency/) | 16.0.1.0.0 |  | Show currencies in the invoice tree view
-[account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.1.0.3 |  | Manage triple discount on invoice lines
+[account_invoice_triple_discount](account_invoice_triple_discount/) | 16.0.3.0.0 |  | Manage triple discount on invoice lines
 [account_invoice_warn_message](account_invoice_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_mail_autosubscribe](account_mail_autosubscribe/) | 16.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's invoices
 [account_menu_invoice_refund](account_menu_invoice_refund/) | 16.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | New invoice menu that combine invoices and refunds
@@ -506,14 +507,14 @@ addon | version | maintainers | summary
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 16.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 16.0.1.0.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
-[sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
+[sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
 [sale_order_invoicing_queued](sale_order_invoicing_queued/) | 16.0.1.0.0 |  | Enqueue sales order invoicing
-[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Sales Stock Picking Invocing
+[sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.1 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 16.0.1.0.0 |  | Add timesheet details in invoice line
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock account move reset to draft
 [stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.1 |  | Stock Picking Invoicing
-[stock_picking_return_refund_option](stock_picking_return_refund_option/) | 16.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update the refund options in pickings
+[stock_picking_return_refund_option](stock_picking_return_refund_option/) | 16.0.1.0.2 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update the refund options in pickings
 
 [//]: # (end addons)
 
@@ -673,7 +674,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Intrastat reporting
 [intrastat_delivery](intrastat_delivery/) | 16.0.1.0.0 |  | Propagates the value of the incoterm fields from the order shipping method to the invoices
-[intrastat_product](intrastat_product/) | 16.0.2.3.0 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 16.0.2.3.1 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 16.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 16.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) | Base module for Product Import/Export reports
@@ -954,7 +955,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 16.0.1.3.3 |  | Banking mandates
+[account_banking_mandate](account_banking_mandate/) | 16.0.1.3.4 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 16.0.1.0.3 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Add a specific contact mandate to sale orders
@@ -969,10 +970,10 @@ addon | version | maintainers | summary
 [account_payment_order_return](account_payment_order_return/) | 16.0.1.0.1 |  | Account Payment Order Return
 [account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_order_vendor_email](account_payment_order_vendor_email/) | 16.0.1.0.0 | [![ursais](https://github.com/ursais.png?size=30px)](https://github.com/ursais) | Account Payment Order Email
-[account_payment_partner](account_payment_partner/) | 16.0.1.2.5 |  | Adds payment mode on partners and invoices
-[account_payment_purchase](account_payment_purchase/) | 16.0.2.0.3 |  | Adds Bank Account and Payment Mode on Purchase Orders
-[account_payment_purchase_stock](account_payment_purchase_stock/) | 16.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 16.0.1.0.4 |  | Adds payment mode on sale orders
+[account_payment_partner](account_payment_partner/) | 16.0.1.2.6 |  | Adds payment mode on partners and invoices
+[account_payment_purchase](account_payment_purchase/) | 16.0.2.0.4 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_purchase_stock](account_payment_purchase_stock/) | 16.0.1.0.1 |  | Integrate Account Payment Purchase with Stock
+[account_payment_sale](account_payment_sale/) | 16.0.1.0.5 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
 
@@ -1026,7 +1027,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.3.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.3.4 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.14.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
 
@@ -1080,14 +1081,14 @@ addon | version | maintainers | summary
 [account_statement_import_file](account_statement_import_file/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Import Statement Files
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_ofx](account_statement_import_ofx/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import OFX Bank Statement
-[account_statement_import_online](account_statement_import_online/) | 16.0.1.4.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
-[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.4 |  | Online Bank Statements: GoCardless
+[account_statement_import_online](account_statement_import_online/) | 16.0.1.4.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
+[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.6 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ofx](account_statement_import_online_ofx/) | 16.0.1.0.0 |  | Online bank statements for OFX
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 16.0.1.0.0 |  | Import QIF Bank Statements
-[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.2 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
 [//]: # (end addons)
 
@@ -1150,7 +1151,7 @@ addon | version | maintainers | summary
 [account_payment_return_import](account_payment_return_import/) | 16.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.2 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 16.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
-[account_payment_term_extension](account_payment_term_extension/) | 16.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
+[account_payment_term_extension](account_payment_term_extension/) | 16.0.1.0.3 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_widget_amount](account_payment_widget_amount/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
 [partner_aging](partner_aging/) | 16.0.1.0.0 | [![Urvisha-OSI](https://github.com/Urvisha-OSI.png?size=30px)](https://github.com/Urvisha-OSI) | Aging as a view - invoices and credits
 
@@ -2073,9 +2074,9 @@ addon | version | maintainers | summary
 [partner_contact_age_range](partner_contact_age_range/) | 16.0.1.0.1 |  | Age Range for Contact's
 [partner_contact_birthdate](partner_contact_birthdate/) | 16.0.1.0.0 |  | Contact's birthdate
 [partner_contact_birthplace](partner_contact_birthplace/) | 16.0.1.0.0 |  | This module allows to define a birthplace for partners.
-[partner_contact_department](partner_contact_department/) | 16.0.1.0.2 |  | Assign contacts to departments
+[partner_contact_department](partner_contact_department/) | 16.0.1.2.0 |  | Assign contacts to departments
 [partner_contact_gender](partner_contact_gender/) | 16.0.1.0.0 |  | Add gender field to contacts
-[partner_contact_job_position](partner_contact_job_position/) | 16.0.1.0.0 |  | Categorize job positions for contacts
+[partner_contact_job_position](partner_contact_job_position/) | 16.0.1.1.0 |  | Categorize job positions for contacts
 [partner_contact_lang](partner_contact_lang/) | 16.0.1.0.0 |  | Manage language in contacts
 [partner_contact_nationality](partner_contact_nationality/) | 16.0.1.0.1 |  | Add nationality field to contacts
 [partner_contact_personal_information_page](partner_contact_personal_information_page/) | 16.0.1.0.1 |  | Add a page to contacts form to put personal information
@@ -2113,6 +2114,7 @@ addon | version | maintainers | summary
 [partner_purchase_manager](partner_purchase_manager/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add purchase manager field in partner
 [partner_ref_unique](partner_ref_unique/) | 16.0.1.0.0 |  | Add an unique constraint to partner ref field
 [partner_salesperson_propagate](partner_salesperson_propagate/) | 16.0.1.0.0 |  | Propagate any changes in the salesperson field from the partner to its contacts.
+[partner_search_alias](partner_search_alias/) | 16.0.1.0.0 |  | Partner Search Alias
 [partner_second_lastname](partner_second_lastname/) | 16.0.1.0.2 |  | Have split first and second lastnames
 [partner_shipping_policy](partner_shipping_policy/) | 16.0.1.0.0 |  | Define shipping policy at partners level.
 [partner_stage](partner_stage/) | 16.0.1.0.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
@@ -2341,7 +2343,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_commission](account_commission/) | 16.0.2.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 16.0.2.3.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
+[commission](commission/) | 16.0.2.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_delegated_partner](commission_delegated_partner/) | 16.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [commission_formula](commission_formula/) | 16.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
@@ -3452,6 +3454,7 @@ addon | version | maintainers | summary
 [calendar_event_multi_company](calendar_event_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar events
 [calendar_event_type_multi_company](calendar_event_type_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar event type
 [company_dependent_flag](company_dependent_flag/) | 16.0.1.0.2 |  | Apply css style to company dependent fields
+[crm_lost_reason_multi_company](crm_lost_reason_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to crm lost reason
 [crm_stage_multi_company](crm_stage_multi_company/) | 16.0.1.0.0 |  | This module adds support for multi company on crm stage.
 [crm_tag_multi_company](crm_tag_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to crm tag
 [crm_tag_multi_company_event_crm](crm_tag_multi_company_event_crm/) | 16.0.1.0.0 |  | Ensure multi-company check in event lead rules tag ids
@@ -3462,6 +3465,9 @@ addon | version | maintainers | summary
 [mail_multicompany](mail_multicompany/) | 16.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 16.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [partner_account_multicompany_default](partner_account_multicompany_default/) | 16.0.0.1.0 | [![camptocamp](https://github.com/camptocamp.png?size=30px)](https://github.com/camptocamp) | Set a default account for all companies of a partners
+[partner_category_multi_company](partner_category_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to partner categories
+[partner_category_multi_company_account](partner_category_multi_company_account/) | 16.0.1.0.0 |  | Multi-company check in Matching partner categories
+[partner_category_multi_company_analytic](partner_category_multi_company_analytic/) | 16.0.1.0.0 |  | Multi-company check in Partner categories
 [partner_multi_company](partner_multi_company/) | 16.0.2.0.0 |  | Select individually the partner visibility on each company
 [pos_category_multicompany](pos_category_multicompany/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) | Point of Sale Category in Multi company context
 [pos_restaurant_multi_company](pos_restaurant_multi_company/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on PoS Restaurant.
@@ -4533,7 +4539,7 @@ addon | version | maintainers | summary
 [l10n_it_abicab](l10n_it_abicab/) | 16.0.1.0.1 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
 [l10n_it_accompanying_invoice](l10n_it_accompanying_invoice/) | 16.0.1.0.1 |  | Stampa della fattura accompagnatoria
 [l10n_it_account](l10n_it_account/) | 16.0.1.1.3 |  | Modulo base usato come dipendenza di altri moduli contabili
-[l10n_it_account_stamp](l10n_it_account_stamp/) | 16.0.1.1.0 |  | Gestione automatica dell'imposta di bollo
+[l10n_it_account_stamp](l10n_it_account_stamp/) | 16.0.1.3.0 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 16.0.1.0.1 |  | Gestione natura delle aliquote IVA
 [l10n_it_appointment_code](l10n_it_appointment_code/) | 16.0.1.0.0 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
 [l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.4.1 |  | Gestione Cespiti
@@ -4643,6 +4649,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_payment_term_cutoff_day](account_payment_term_cutoff_day/) | 16.0.1.0.0 |  | Account Payment Term Cutoff Day
 [l10n_jp_account_report_registration_number](l10n_jp_account_report_registration_number/) | 16.0.1.0.0 |  | Japan Account Report Registration Number
 [l10n_jp_address_layout](l10n_jp_address_layout/) | 16.0.1.0.0 |  | Japan Address Layout
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
@@ -5223,7 +5230,7 @@ addon | version | maintainers | summary
 [delivery_gls_asm](delivery_gls_asm/) | 16.0.1.1.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [l10n_es_account_asset](l10n_es_account_asset/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 16.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
-[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 16.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
+[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 16.0.1.0.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_aeat](l10n_es_aeat/) | 16.0.3.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 16.0.1.1.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
@@ -5241,7 +5248,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.1 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.10.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.1.0 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.0 |  | Force SII communication type on invoices
+[l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.1 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.2.0.1 | [![Abranes](https://github.com/Abranes.png?size=30px)](https://github.com/Abranes) [![Reyes4711-S73](https://github.com/Reyes4711-S73.png?size=30px)](https://github.com/Reyes4711-S73) | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.5.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
@@ -5253,28 +5260,28 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
-[l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.3.3 |  | Spanish Intrastat Product Declaration
 [l10n_es_irnr](l10n_es_irnr/) | 16.0.1.2.1 |  | Retenciones IRNR (No residentes)
 [l10n_es_irnr_sii](l10n_es_irnr_sii/) | 16.0.1.1.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Suministro Inmediato de Información de importaciones con IRNR
-[l10n_es_location_nuts](l10n_es_location_nuts/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS specific options for Spain
+[l10n_es_location_nuts](l10n_es_location_nuts/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 16.0.1.2.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 16.0.2.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 16.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 16.0.1.1.1 |  | Exportación de fichero bancario Confirming estándar AEF
-[l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.1 |  | Exportación de fichero bancario Confirming para Banco Sabadell
+[l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 16.0.1.0.2 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.3 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.2 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 16.0.2.1.0 |  | Envío de pedidos del TPV al SII
-[l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.0 |  | Sistema de gestión de aceites industriales usados en España - Facturación
+[l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.1 |  | Sistema de gestión de aceites industriales usados en España - Facturación
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.1 |  | Sistema de gestión de aceites industriales usados en España - Compras
 [l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.1 |  | Sist. gestión aceites industriales usados en España - Ventas
 [l10n_es_sigaus_stock_picking_report_valued](l10n_es_sigaus_stock_picking_report_valued/) | 16.0.1.0.1 |  | Show SIGAUS amount in valued stock pickings.
 [l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.1.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
-[l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.0.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
+[l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.0.5 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 16.0.1.0.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 16.0.1.1.0 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
@@ -5427,7 +5434,7 @@ addon | version | maintainers | summary
 [l10n_th_account_tax](l10n_th_account_tax/) | 16.0.2.0.4 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
-[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 16.0.1.3.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
+[l10n_th_account_tax_report](l10n_th_account_tax_report/) | 16.0.1.3.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
 [l10n_th_account_wht_cert_form](l10n_th_account_wht_cert_form/) | 16.0.1.2.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Withholding Tax Certificate Form
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
 [l10n_th_bank_payment_export](l10n_th_bank_payment_export/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Base export payment text file to bank
@@ -5438,7 +5445,7 @@ addon | version | maintainers | summary
 [l10n_th_mis_report](l10n_th_mis_report/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
 [l10n_th_partner](l10n_th_partner/) | 16.0.1.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Partner
 [l10n_th_promptpay](l10n_th_promptpay/) | 16.0.1.0.0 |  | Use PromptPay QR code with transfer acquirer.
-[l10n_th_tax_address](l10n_th_tax_address/) | 16.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Tax address
+[l10n_th_tax_address](l10n_th_tax_address/) | 16.0.1.1.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Tax address
 [l10n_th_tier_department](l10n_th_tier_department/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level
 [l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level Demo
 
@@ -5753,7 +5760,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_delivery_carrier_label](base_delivery_carrier_label/) | 16.0.2.0.0 |  | Base module for carrier labels
 [carrier_account_environment](carrier_account_environment/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Configure carriers with server_environment_files
-[delivery_auto_refresh](delivery_auto_refresh/) | 16.0.2.0.1 |  | Auto-refresh delivery price in sales orders
+[delivery_auto_refresh](delivery_auto_refresh/) | 16.0.2.0.3 |  | Auto-refresh delivery price in sales orders
 [delivery_automatic_package](delivery_automatic_package/) | 16.0.1.0.0 |  | Allows to set a delivery package automatically when sending to shipper.
 [delivery_carrier_account](delivery_carrier_account/) | 16.0.1.0.1 |  | Delivery Carrier Account
 [delivery_carrier_agency](delivery_carrier_agency/) | 16.0.1.0.0 |  | Add a model for Carrier Agencies
@@ -6214,7 +6221,7 @@ addon | version | maintainers | summary
 [stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Stock Picking Report Header Repeater
 [stock_picking_report_incoming_delivery_address](stock_picking_report_incoming_delivery_address/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow show delivery address in report when picking type is incoming
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 16.0.1.0.0 |  | Show delivery address when picking type is internal
-[stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Stock Picking Report - Product Sticker
+[stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 16.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Stock Picking Report - Product Sticker
 [stock_picking_report_qty_undelivered](stock_picking_report_qty_undelivered/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Print a summary of the undelivered quantity
 [stock_picking_report_salesperson](stock_picking_report_salesperson/) | 16.0.1.1.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Stock Picking reports
 [stock_picking_report_summary](stock_picking_report_summary/) | 16.0.1.0.0 | [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Stock Picking Report Summary
@@ -7095,10 +7102,10 @@ addon | version | maintainers | summary
 [product_variant_name](product_variant_name/) | 16.0.1.0.0 |  | Product Variant Name
 [product_variant_sale_price](product_variant_sale_price/) | 16.0.1.0.2 |  | Allows to write fixed prices in product variants
 [product_variant_specific_description](product_variant_specific_description/) | 16.0.1.0.1 |  | Product Variant Specific Description
-[purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.0 |  | Product variants in purchase management
+[purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.1 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
 [sale_product_variant_attribute_tax](sale_product_variant_attribute_tax/) | 16.0.1.0.0 |  | Bring the taxes associated to product values
-[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.0 |  | Product variants in sale management
+[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.1 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -7611,13 +7618,13 @@ addon | version | maintainers | summary
 [base_user_signature](base_user_signature/) | 16.0.1.0.0 | [![imlopes](https://github.com/imlopes.png?size=30px)](https://github.com/imlopes) | Base User Signature
 [email_template_qweb](email_template_qweb/) | 16.0.1.0.0 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.0.0 |  | Post unkonwn messages to an existing thread
-[mail_activity_board](mail_activity_board/) | 16.0.1.1.1 |  | Add Activity Boards
+[mail_activity_board](mail_activity_board/) | 16.0.1.2.0 |  | Add Activity Boards
 [mail_activity_done](mail_activity_done/) | 16.0.1.2.0 |  | Mail Activity Done
 [mail_activity_partner](mail_activity_partner/) | 16.0.1.0.0 |  | Add Partner to Activities
 [mail_activity_plan](mail_activity_plan/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail activity plan
 [mail_activity_reminder](mail_activity_reminder/) | 16.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_reply_creator](mail_activity_reply_creator/) | 16.0.1.0.0 |  | Assign new to its creator
-[mail_activity_team](mail_activity_team/) | 16.0.1.0.1 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 16.0.1.0.3 |  | Add Teams to Activities
 [mail_activity_unlink_log](mail_activity_unlink_log/) | 16.0.1.0.0 |  | Leave a message when an activity is unlinked
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 16.0.1.1.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 16.0.1.0.1 |  | Module to use attach existing attachment for account module
@@ -8349,6 +8356,7 @@ addon | version | maintainers | summary
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add option to call server action when a tier is validated
 [base_tier_validation_waiting](base_tier_validation_waiting/) | 16.0.1.0.0 |  | Base Tier Validation Extension to add waiting status
 [base_user_locale](base_user_locale/) | 16.0.1.1.0 |  | User Locale Settings
+[confirmation_wizard](confirmation_wizard/) | 16.0.1.0.0 |  | This module adds a confirmation wizard that can be called with code. It does nothing by itself.
 [date_range](date_range/) | 16.0.1.0.9 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [date_range_account](date_range_account/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [developer_menu](developer_menu/) | 16.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Menu Shortcut for developer usage
@@ -9246,6 +9254,7 @@ addon | version | maintainers | summary
 [web_timeline](web_timeline/) | 16.0.1.1.7 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
 [web_touchscreen](web_touchscreen/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | UX improvements for touch screens
 [web_tree_duplicate](web_tree_duplicate/) | 16.0.1.0.1 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Duplicate records directly from the tree view.
+[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 16.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 16.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 16.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_char_size](web_widget_char_size/) | 16.0.1.0.0 |  | Add size option to Char widget

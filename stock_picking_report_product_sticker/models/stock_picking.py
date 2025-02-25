@@ -36,7 +36,10 @@ class StockPicking(models.Model):
         for picking in self:
             if not picking.show_product_stickers:
                 continue
-            products = picking.move_line_ids.product_id
-            stickers = products.get_product_stickers()
-            if stickers:
-                picking.sticker_ids = stickers
+            picking.sticker_ids = picking.move_line_ids.product_id.get_product_stickers(
+                extra_domain=[
+                    "|",
+                    ("available_model_ids.model", "in", [self._name]),
+                    ("available_model_ids", "=", False),
+                ]
+            )

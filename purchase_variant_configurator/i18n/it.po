@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-30 08:37+0000\n"
-"PO-Revision-Date: 2024-07-01 11:47+0000\n"
+"PO-Revision-Date: 2025-02-25 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: purchase_variant_configurator
 #: model:ir.model.fields,field_description:purchase_variant_configurator.field_purchase_order_line__can_create_product
@@ -97,6 +97,11 @@ msgstr "È richiesto l'ID prodotto"
 #: model:ir.model.fields,field_description:purchase_variant_configurator.field_purchase_order_line__product_tmpl_id
 msgid "Product Template"
 msgstr "Modello prodotto"
+
+#. module: purchase_variant_configurator
+#: model:ir.model.fields,field_description:purchase_variant_configurator.field_purchase_order_line__product_uom_category_id
+msgid "Product Uom Category"
+msgstr "Categoria UdM prodotto"
 
 #. module: purchase_variant_configurator
 #: model:ir.model,name:purchase_variant_configurator.model_product_product

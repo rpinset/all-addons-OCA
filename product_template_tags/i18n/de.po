@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-10 12:58+0000\n"
-"PO-Revision-Date: 2023-04-10 12:58+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2025-02-25 12:06+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__products_count
@@ -29,7 +30,7 @@ msgstr "Tags hinzufügen"
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__child_ids
 msgid "Child"
-msgstr ""
+msgstr "Kind"
 
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__color
@@ -60,7 +61,7 @@ msgstr "Anzeigebezeichnung"
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag____last_update
@@ -85,12 +86,12 @@ msgstr "Bezeichnung"
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__parent_id
 msgid "Parent"
-msgstr ""
+msgstr "Übergeordnet"
 
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__parent_path
 msgid "Parent Path"
-msgstr ""
+msgstr "Übergeordneter Pfad"
 
 #. module: product_template_tags
 #: model:ir.model,name:product_template_tags.model_product_template
@@ -116,22 +117,22 @@ msgstr "Produkte"
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template_tag__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Reihenfolge"
 
 #. module: product_template_tags
 #: model:ir.model.constraint,message:product_template_tags.constraint_product_template_tag_name_uniq
 msgid "Tag name must be unique inside a company"
-msgstr ""
+msgstr "Der Tag-Name muss innerhalb eines Unternehmens eindeutig sein"
 
 #. module: product_template_tags
 #: model:ir.model.fields,field_description:product_template_tags.field_product_product__tag_ids
 #: model:ir.model.fields,field_description:product_template_tags.field_product_template__tag_ids
 msgid "Tags"
-msgstr ""
+msgstr "Stichwörter"
 
 #. module: product_template_tags
 #. odoo-python
 #: code:addons/product_template_tags/models/product_template_tag.py:0
 #, python-format
 msgid "Tags can't be recursive."
-msgstr ""
+msgstr "Stichwörter dürfen nicht rekursiv sein."

@@ -2,8 +2,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 import time
 
-from odoo import fields
-from odoo.tests import tagged
+from odoo import SUPERUSER_ID, api, fields, registry
+from odoo.tests import get_db_name, tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -11,8 +11,14 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestAssetManagementXls(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls):
-        super(TestAssetManagementXls, cls).setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        with registry(get_db_name()).cursor() as cr:
+            env = api.Environment(cr, SUPERUSER_ID, {})
+            if not env.ref("l10n_generic_coa.configurable_chart_template", False):
+                # Fallback for executing tests in any existing CoA
+                coa = env["account.chart.template"].search([("visible", "=", True)])[:1]
+                chart_template_ref = coa.get_external_id()[coa.id]
+        super().setUpClass(chart_template_ref=chart_template_ref)
 
         module = __name__.split("addons.")[1].split(".")[0]
         cls.xls_report_name = "{}.asset_report_xls".format(module)

@@ -9,11 +9,20 @@ from odoo.tools import mute_logger
 
 
 @tagged("-at_install", "post_install")
-class TestAccountPaymentPurchase(TransactionCase):
+class TestAccountPaymentPurchaseBase(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
         cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.journal = cls.env["account.journal"].create(
             {"name": "Test journal", "code": "TEST", "type": "general"}
         )
@@ -62,6 +71,8 @@ class TestAccountPaymentPurchase(TransactionCase):
             line_form.product_qty = 1
         cls.purchase = order_form.save()
 
+
+class TestAccountPaymentPurchase(TestAccountPaymentPurchaseBase):
     def test_onchange_partner_id_purchase_order(self):
         self.assertEqual(self.purchase.payment_mode_id, self.payment_mode)
 

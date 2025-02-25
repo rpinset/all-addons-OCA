@@ -1,0 +1,450 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* announcement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-02-25 15:52+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"Language-Team: none\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_form
+msgid "<span class=\"o_stat_text\">Read(s)</span>"
+msgstr "<span class=\"o_stat_text\">Okuma(lar)</span>"
+
+#. module: announcement
+#: model:announcement.tag,name:announcement.announcement_tag_3
+msgid "Accounting"
+msgstr "Muhasebe"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__active
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_search
+msgid "Active"
+msgstr "Aktif"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__allowed_user_ids
+msgid "Allowed User"
+msgstr "Izin Verilen Kullanıcı"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__allowed_users_count
+msgid "Allowed Users Count"
+msgstr "Izin Verilen Kullanıcıların Sayısı"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Announce at"
+msgstr "Şu tarihte duyurulsun"
+
+#. module: announcement
+#. odoo-javascript
+#: code:addons/announcement/static/src/js/announcement_menu/announcement_menu.xml:0
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__announcement_id
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__announcement_id
+#: model:ir.module.category,name:announcement.category_announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+#, python-format
+msgid "Announcement"
+msgstr "Duyuru"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__announcement_log_ids
+msgid "Announcement Log"
+msgstr "Duyuru Kaydı"
+
+#. module: announcement
+#: model:ir.actions.act_window,name:announcement.action_announcement_log
+msgid "Announcement Logs"
+msgstr "Duyuru Kayıtları"
+
+#. module: announcement
+#: model:res.groups,name:announcement.announcemenent_manager
+msgid "Announcement Manager"
+msgstr "Duyuru Yöneticisi"
+
+#. module: announcement
+#: model:ir.actions.act_window,name:announcement.announcement_tag_action
+#: model:ir.model,name:announcement.model_announcement_tag
+#: model:ir.ui.menu,name:announcement.menu_announcement_tag_management
+msgid "Announcement Tags"
+msgstr "Duyuru Etiketleri"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__announcement_type
+msgid "Announcement Type"
+msgstr "Duyuru Tipi"
+
+#. module: announcement
+#. odoo-javascript
+#: code:addons/announcement/static/src/js/announcement_menu/announcement_menu.xml:0
+#: code:addons/announcement/static/src/js/announcement_menu/announcement_menu.xml:0
+#: model:ir.actions.act_window,name:announcement.announcement_action
+#: model:ir.ui.menu,name:announcement.menu_announcement_management
+#, python-format
+msgid "Announcements"
+msgstr "Duyurular"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_search
+msgid "Archived"
+msgstr "Arşivlenmiş"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__attachment_ids
+msgid "Attachments"
+msgstr "Ekler"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__color
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__color
+msgid "Color"
+msgstr "Renk"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: announcement
+#: model:announcement.tag,name:announcement.announcement_tag_1
+msgid "Company information"
+msgstr "Şirket bilgileri"
+
+#. module: announcement
+#: model:ir.model.fields,help:announcement.field_announcement_tag__company_id
+msgid "Company related to this tag"
+msgstr "Bu etiketle ilişkili şirket"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__content
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Content"
+msgstr "Içerik"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__create_uid
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__create_uid
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__create_uid
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__create_uid
+msgid "Created by"
+msgstr "Tarafından oluşturuldu"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__create_date
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__create_date
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__create_date
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__create_date
+msgid "Created on"
+msgstr "Tarihinde oluşturuldu"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__display_name
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__display_name
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__display_name
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__display_name
+msgid "Display Name"
+msgstr "Görünür Isim"
+
+#. module: announcement
+#: model:announcement.tag,name:announcement.announcement_tag_2
+msgid "Employees"
+msgstr "Çalışanlar"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__full_name
+msgid "Full Name"
+msgstr "Tam Isim"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__is_general_announcement
+msgid "General Announcement"
+msgstr "Genel Duyuru"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_form
+msgid "Groups"
+msgstr "Gruplar"
+
+#. module: announcement
+#: model:ir.model,name:announcement.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP Yönlendirme"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__id
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__id
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__id
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__in_date
+msgid "In Date"
+msgstr "Tarihte"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement____last_update
+#: model:ir.model.fields,field_description:announcement.field_announcement_log____last_update
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag____last_update
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard____last_update
+msgid "Last Modified on"
+msgstr "Son Değiştirilme tarihi"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__write_uid
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__write_uid
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__write_uid
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__write_date
+#: model:ir.model.fields,field_description:announcement.field_announcement_log__write_date
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__write_date
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme tarihi"
+
+#. module: announcement
+#: model:ir.model,name:announcement.model_announcement_log
+msgid "Log user reads"
+msgstr "Kullanıcı okumalarını kaydet"
+
+#. module: announcement
+#: model:announcement.tag,name:announcement.announcement_tag_5
+msgid "Manufacturing"
+msgstr "Üretim"
+
+#. module: announcement
+#. odoo-javascript
+#: code:addons/announcement/static/src/js/announcement_menu/announcement_menu.esm.js:0
+#, python-format
+msgid "Mark as read"
+msgstr "Okundu olarak işaretle"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__name
+msgid "Name"
+msgstr "Isim"
+
+#. module: announcement
+#. odoo-javascript
+#: code:addons/announcement/static/src/js/announcement_menu/announcement_menu.xml:0
+#, python-format
+msgid "No announcements."
+msgstr "Duyuru bulunamadı."
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__notification_date
+msgid "Notification Date"
+msgstr "Bildirim Tarihi"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__notification_end_date
+msgid "Notification End Date"
+msgstr "Bildirim Bitiş Tarihi"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__notification_expiry_date
+msgid "Notification Expiry Date"
+msgstr "Bildirim Süresi Geçme Tarihi"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__notification_start_date
+msgid "Notification Start Date"
+msgstr "Bildirim Başlama Tarihi"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement_tag__parent_id
+msgid "Parent Tag"
+msgstr "Üst Etiket"
+
+#. module: announcement
+#: model:ir.model.fields.selection,name:announcement.selection__read_announcement_wizard__read_state__read
+msgid "Read"
+msgstr "Okundu"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_res_users__read_announcement_ids
+msgid "Read Announcement"
+msgstr "Okunmuş Duyuru"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__read_announcement_count
+msgid "Read Announcement Count"
+msgstr "Duyuru Okunma Sayısı"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__date
+msgid "Read Date"
+msgstr "Okunma Tarihi"
+
+#. module: announcement
+#. odoo-python
+#: code:addons/announcement/models/announcement.py:0
+#, python-format
+msgid "Read Logs"
+msgstr "Okunma Kayıtları"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__read_state
+msgid "Read State"
+msgstr "Okunma Durumu"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_tree
+msgid "Reads"
+msgstr "Okunmalar"
+
+#. module: announcement
+#: model:announcement.tag,name:announcement.announcement_tag_4
+msgid "Sales"
+msgstr "Satış"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__sequence
+msgid "Sequence"
+msgstr "Dizi"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Set here the content of the announcement."
+msgstr "Duyuru içeriğini buradan ayarlayın."
+
+#. module: announcement
+#: model:ir.model,name:announcement.model_read_announcement_wizard
+msgid "Show altogether users who read and users who didn't"
+msgstr "Okuyan ve okumayan kullanıcıları bir arada göster"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__specific_user_ids
+msgid "Specific User"
+msgstr "Belirli Kullanıcı"
+
+#. module: announcement
+#: model:ir.model.fields.selection,name:announcement.selection__announcement__announcement_type__specific_users
+msgid "Specific users"
+msgstr "Belirli kullanıcılar"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_search
+msgid "Tag"
+msgstr "Etiket"
+
+#. module: announcement
+#: model:ir.model.constraint,message:announcement.constraint_announcement_tag_name_uniq
+msgid "Tag name already exists!"
+msgstr "Etiket adı zaten mevcut!"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__tag_ids
+msgid "Tags"
+msgstr "Etiketler"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Tags..."
+msgstr "Etiketler..."
+
+#. module: announcement
+#: model:ir.model.fields,help:announcement.field_announcement__notification_end_date
+#: model:ir.model.fields,help:announcement.field_announcement__notification_start_date
+msgid "Technical field to display announcements in the calendar view"
+msgstr "Duyuruları takvim görünümünde görüntülemek için teknik alan"
+
+#. module: announcement
+#: model:ir.model.fields,help:announcement.field_announcement__color
+msgid "Technical field to display items by color in the calendar"
+msgstr "Takvimdeki öğeleri renge göre görüntülemek için teknik alan"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__name
+msgid "Title"
+msgstr "Başlık"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_tree
+msgid "Total users"
+msgstr "Toplam kullanıcı"
+
+#. module: announcement
+#: model:ir.model.fields.selection,name:announcement.selection__read_announcement_wizard__read_state__unread
+msgid "Unread"
+msgstr "Okunmadı"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_res_users__unread_announcement_ids
+msgid "Unread Announcement"
+msgstr "Okunmamış Duyuru"
+
+#. module: announcement
+#: model:ir.model,name:announcement.model_res_users
+#: model:ir.model.fields,field_description:announcement.field_read_announcement_wizard__user_id
+msgid "User"
+msgstr "Kullanıcı"
+
+#. module: announcement
+#: model:ir.model.fields,field_description:announcement.field_announcement__user_group_ids
+msgid "User Group"
+msgstr "Kullanıcı Grubu"
+
+#. module: announcement
+#: model:ir.model,name:announcement.model_announcement
+msgid "User announcements"
+msgstr "Kullanıcı duyuruları"
+
+#. module: announcement
+#: model:ir.model.fields.selection,name:announcement.selection__announcement__announcement_type__user_group
+msgid "User groups"
+msgstr "Kullanıcı grubu"
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_management_view_form
+msgid "Users"
+msgstr "Kullanıcılar"
+
+#. module: announcement
+#: model:res.groups,comment:announcement.announcemenent_manager
+msgid "Users allowed to manage and configure announcements."
+msgstr "Duyuruları yönetmesine ve yapılandırmasına izin verilen kullanıcılar."
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "Valid up to"
+msgstr "Şu tarihe kadar geçerli"
+
+#. module: announcement
+#: model:ir.model.fields,help:announcement.field_announcement__attachment_ids
+msgid "You can attach the copy of your Letter"
+msgstr "Mektubunuzun kopyasını ekleyebilirsiniz"
+
+#. module: announcement
+#. odoo-python
+#: code:addons/announcement/models/announcement_tag.py:0
+#, python-format
+msgid "You cannot create recursive tags."
+msgstr "Tekrar eden etiketler oluşturamazsınız."
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_form
+msgid "e.g. Announcement description..."
+msgstr "örneğin Duyuru açıklaması..."
+
+#. module: announcement
+#: model_terms:ir.ui.view,arch_db:announcement.announcement_view_calendar
+msgid "name"
+msgstr "isim"

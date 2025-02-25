@@ -32,6 +32,15 @@ class TestAccountTaxBalance(HttpCase):
         )
         cls.env.user.groups_id = [(4, cls.env.ref("account.group_account_user").id)]
         cls.company = cls.env.user.company_id
+        if not cls.company.chart_template_id:
+            # Load a CoA if there's none in the company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.company, install_demo=False)
         cls.range_type = cls.env["date.range.type"].create(
             {"name": "Fiscal year", "allow_overlap": False}
         )

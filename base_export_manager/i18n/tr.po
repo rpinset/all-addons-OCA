@@ -9,36 +9,36 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-20 12:59+0000\n"
-"PO-Revision-Date: 2019-05-20 12:59+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2025-02-24 14:06+0000\n"
+"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: base_export_manager
 #: model:ir.model.fields,help:base_export_manager.field_ir_exports__model_id
 #: model:ir.model.fields,help:base_export_manager.field_ir_exports_line__model1_id
 msgid "Database model to export."
-msgstr ""
+msgstr "Dışa aktarılacak veritabanı modeli."
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_model_access__perm_export
 msgid "Export Access"
-msgstr ""
+msgstr "Dışa Aktarma Erişimi"
 
 #. module: base_export_manager
 #: model_terms:ir.ui.view,arch_db:base_export_manager.ir_exports_form_view
 msgid "Export Fields"
-msgstr ""
+msgstr "Dışa Aktarma Alanları"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports__name
-#, fuzzy
 msgid "Export Name"
-msgstr "Dışa aktar"
+msgstr "Dışa Aktarma Ismi"
 
 #. module: base_export_manager
 #: model_terms:ir.ui.view,arch_db:base_export_manager.ir_exports_form_view
@@ -54,19 +54,19 @@ msgstr "Dışa Aktarma Profilleri"
 #. module: base_export_manager
 #: model:ir.model,name:base_export_manager.model_ir_exports
 msgid "Exports"
-msgstr ""
+msgstr "Dışa Aktarmalar"
 
 #. module: base_export_manager
 #: model:ir.model,name:base_export_manager.model_ir_exports_line
 msgid "Exports Line"
-msgstr ""
+msgstr "Dışa Aktarma Satırları"
 
 #. module: base_export_manager
 #. odoo-python
 #: code:addons/base_export_manager/models/ir_exports_line.py:0
 #, python-format
 msgid "Field '%(name)s' not found in model '%(model)s'"
-msgstr ""
+msgstr "'%(name)s' alanı '%(model)s' modelinde bulunamadı"
 
 #. module: base_export_manager
 #. odoo-python
@@ -85,49 +85,49 @@ msgstr "'%s' alanı yok"
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__name
 msgid "Field Name"
-msgstr ""
+msgstr "Alan Ismi"
 
 #. module: base_export_manager
 #: model:ir.model.fields,help:base_export_manager.field_ir_exports_line__name
 msgid "Field's technical name."
-msgstr ""
+msgstr "Alanın teknik ismi."
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__field1_id
 msgid "First field"
-msgstr ""
+msgstr "Birincil alan"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__model1_id
 msgid "First model"
-msgstr ""
+msgstr "Birincil model"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__field4_id
 msgid "Fourth field"
-msgstr ""
+msgstr "Dördüncü alan"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__model4_id
 msgid "Fourth model"
-msgstr ""
+msgstr "Dördüncü model"
 
 #. module: base_export_manager
 #: model:ir.model,name:base_export_manager.model_ir_http
 msgid "HTTP Routing"
-msgstr ""
+msgstr "HTTP Yönlendirme"
 
 #. module: base_export_manager
 #. odoo-python
 #: code:addons/base_export_manager/models/ir_exports_line.py:0
 #, python-format
 msgid "It's not allowed to have more than 4 levels depth: %s"
-msgstr ""
+msgstr "4 seviyeden fazla derinliğe sahip olmasına izin verilmiyor: %s"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__label
 msgid "Label"
-msgstr ""
+msgstr "Etiket"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports__model_id
@@ -137,54 +137,54 @@ msgstr "Model"
 #. module: base_export_manager
 #: model:ir.model,name:base_export_manager.model_ir_model_access
 msgid "Model Access"
-msgstr ""
+msgstr "Model Erişimi"
 
 #. module: base_export_manager
 #: model:ir.model.fields,help:base_export_manager.field_ir_exports__resource
 msgid "Model's technical name."
-msgstr ""
+msgstr "Modelin teknik ismi."
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports__resource
 msgid "Resource"
-msgstr ""
+msgstr "Kaynak"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__field2_id
 msgid "Second field"
-msgstr ""
+msgstr "Ikinci alan"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__model2_id
 msgid "Second model"
-msgstr ""
+msgstr "Ikinci model"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__sequence
 msgid "Sequence"
-msgstr "Sıra"
+msgstr "Dizi"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__field3_id
 msgid "Third field"
-msgstr ""
+msgstr "Üçüncü alan"
 
 #. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_exports_line__model3_id
 msgid "Third model"
-msgstr ""
+msgstr "Üçüncü model"
 
 #. module: base_export_manager
 #: model:ir.model,name:base_export_manager.model_res_users
 msgid "User"
-msgstr ""
+msgstr "Kullanıcı"
 
 #. module: base_export_manager
 #. odoo-python
 #: code:addons/base_export_manager/models/ir_exports.py:0
 #, python-format
 msgid "You must supply a model or resource."
-msgstr ""
+msgstr "Bir model veya kaynak sağlamalısınız."
 
 #, python-format
 #~ msgid "Export"

@@ -12,8 +12,8 @@ msgstr ""
 "PO-Revision-Date: 2024-07-05 19:47+0000\n"
 "Last-Translator: rodrigosottomaiormacedo "
 "<sottomaiormacedotec@sottomaiormacedo.tech>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
-"23907/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
+"teams/23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,6 +99,11 @@ msgstr "O ID do produto é obrigatório"
 #: model:ir.model.fields,field_description:purchase_variant_configurator.field_purchase_order_line__product_tmpl_id
 msgid "Product Template"
 msgstr "Modelo Produto"
+
+#. module: purchase_variant_configurator
+#: model:ir.model.fields,field_description:purchase_variant_configurator.field_purchase_order_line__product_uom_category_id
+msgid "Product Uom Category"
+msgstr ""
 
 #. module: purchase_variant_configurator
 #: model:ir.model,name:purchase_variant_configurator.model_product_product

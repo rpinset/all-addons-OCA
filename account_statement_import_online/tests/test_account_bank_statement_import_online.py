@@ -11,7 +11,7 @@ from dateutil.relativedelta import relativedelta
 from odoo_test_helper import FakeModelLoader
 
 from odoo import _, fields
-from odoo.tests import common
+from odoo.tests import common, tagged
 
 _logger = logging.getLogger(__name__)
 
@@ -22,11 +22,20 @@ mock_obtain_statement_data = (
 )
 
 
+@tagged("post_install", "-at_install")
 class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         # Load fake model
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
         cls.loader.backup_registry()

@@ -161,7 +161,12 @@ class TestGlobalDiscount(AccountTestInvoicingCommon):
         # The global discounts amount is then 160 - 56 = 104
         with Form(self.invoice) as invoice_form:
             with invoice_form.invoice_line_ids.edit(0) as line_form:
-                line_form.discount = 20
+                # Make the test compatible if account_invoice_triple_discount
+                # is installed
+                if "discount1" in line_form._model._fields:
+                    line_form.discount1 = 20
+                else:
+                    line_form.discount = 20
         self.assertEqual(len(self.invoice.invoice_global_discount_ids), 2)
         invoice_tax_line = self.invoice.line_ids.filtered("tax_line_id")
         self.assertAlmostEqual(invoice_tax_line.tax_base_amount, 56.0)

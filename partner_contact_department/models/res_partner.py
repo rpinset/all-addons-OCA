@@ -13,7 +13,7 @@ class ResPartner(models.Model):
 
 class ResPartnerDepartment(models.Model):
     _name = "res.partner.department"
-    _order = "parent_path"
+    _order = "parent_path, name"
     _parent_order = "name"
     _parent_store = True
     _description = "Department"

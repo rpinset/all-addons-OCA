@@ -10,7 +10,7 @@
                     name="department_id"
                     placeholder="Department"
                     attrs="{'invisible': [('is_company','=', True)]}"
-                    options='{"no_open": True}'
+                    options='{"no_open": True, "no_create": True}'
                 />
             </xpath>
             <xpath
@@ -22,7 +22,7 @@
                     name="department_id"
                     placeholder="Department"
                     attrs="{'invisible': [('is_company','=', True)]}"
-                    options='{"no_open": True}'
+                    options='{"no_open": True, "no_create": True}'
                 />
             </xpath>
         </field>

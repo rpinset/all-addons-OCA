@@ -6,7 +6,7 @@ from unittest import mock
 from dateutil.relativedelta import relativedelta
 
 from odoo import fields
-from odoo.tests import common
+from odoo.tests import common, tagged
 
 _module_ns = "odoo.addons.account_statement_import_online_gocardless"
 _provider_class = (
@@ -14,10 +14,20 @@ _provider_class = (
 )
 
 
+@tagged("post_install", "-at_install")
 class TestAccountBankAccountStatementImportOnlineGocardless(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.now = fields.Datetime.now()
         cls.currency_eur = cls.env.ref("base.EUR")
         cls.currency_eur.write({"active": True})

@@ -3,7 +3,7 @@
 
 {
     "name": "Account Analytic Tag",
-    "version": "16.0.1.1.1",
+    "version": "16.0.1.1.2",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "category": "Account",
     "website": "https://github.com/OCA/account-analytic",

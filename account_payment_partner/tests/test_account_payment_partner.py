@@ -5,11 +5,12 @@
 from odoo import _, fields
 from odoo.exceptions import UserError, ValidationError
 from odoo.fields import Date
-from odoo.tests.common import Form, TransactionCase
+from odoo.tests.common import Form, TransactionCase, tagged
 
 from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
 
 
+@tagged("post_install", "-at_install")
 class TestAccountPaymentPartner(TransactionCase):
     @classmethod
     def setUpClass(cls):
@@ -24,13 +25,20 @@ class TestAccountPaymentPartner(TransactionCase):
 
         # Refs
         cls.company = cls.env.ref("base.main_company")
-
-        cls.company_2 = cls.env["res.company"].create({"name": "Company 2"})
-        charts = cls.env["account.chart.template"].search([])
+        charts = cls.env["account.chart.template"].search([("visible", "=", True)])
         if charts:
             cls.chart = charts[0]
         else:
             raise ValidationError(_("No Chart of Account Template has been defined !"))
+        if not cls.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                coa = cls.chart
+            coa.try_loading(company=cls.company, install_demo=False)
+
+        cls.company_2 = cls.env["res.company"].create({"name": "Company 2"})
+        charts = cls.env["account.chart.template"].search([])
         cls.env.user.company_ids = [(4, cls.company_2.id)]
         cls.env.ref("base.user_admin").company_ids = [(4, cls.company_2.id)]
         cls.chart.try_loading(cls.company_2)

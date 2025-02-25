@@ -2,10 +2,12 @@
 
 
 from odoo.tests import TransactionCase
+from odoo.tests.common import tagged
 
 from odoo.addons.queue_job.tests.common import trap_jobs
 
 
+@tagged("post_install", "-at_install")
 class TestAccountInvoiceMassSending(TransactionCase):
     @classmethod
     def setUpClass(cls):
@@ -20,6 +22,16 @@ class TestAccountInvoiceMassSending(TransactionCase):
                 tracking_disable=True,
             )
         )
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
+
         cls.wizard_obj = cls.env["account.invoice.send"]
         cls.invoice_obj = cls.env["account.move"]
         cls.mail_template_obj = cls.env["mail.template"]

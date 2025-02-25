@@ -1,12 +1,13 @@
 # Copyright 2016 Tecnativa - Antonio Espinosa
-# Copyright 2014-2023 Tecnativa - Pedro M. Baeza
+# Copyright 2014,2023,2025 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import TransactionCase, tagged
 
 from .. import post_init_hook
 
 
+@tagged("post_install", "-at_install")
 class TestInvoiceRefundLinkBase(TransactionCase):
     refund_method = "refund"
 
@@ -23,53 +24,23 @@ class TestInvoiceRefundLinkBase(TransactionCase):
                 tracking_disable=True,
             )
         )
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.partner = cls.env["res.partner"].create({"name": "Test partner"})
-        default_line_account = cls.env["account.account"].create(
-            {
-                "name": "TESTACC",
-                "code": "TESTACC",
-                "account_type": "income",
-                "deprecated": False,
-                "company_id": cls.env.user.company_id.id,
-            }
-        )
-        cls.journal = cls.env["account.journal"].create(
-            {
-                "name": "Journal 1",
-                "code": "J1",
-                "type": "sale",
-                "company_id": cls.env.user.company_id.id,
-            }
+        cls.journal = cls.env["account.journal"].search(
+            [("type", "=", "sale"), ("company_id", "=", cls.env.company.id)], limit=1
         )
         cls.invoice_lines = [
-            (
-                0,
-                False,
-                {
-                    "name": "Test section",
-                    "display_type": "line_section",
-                },
-            ),
-            (
-                0,
-                False,
-                {
-                    "name": "Test description #1",
-                    "account_id": default_line_account.id,
-                    "quantity": 1.0,
-                    "price_unit": 100.0,
-                },
-            ),
-            (
-                0,
-                False,
-                {
-                    "name": "Test description #2",
-                    "account_id": default_line_account.id,
-                    "quantity": 2.0,
-                    "price_unit": 25.0,
-                },
-            ),
+            (0, False, {"name": "Test section", "display_type": "line_section"}),
+            (0, False, {"name": "Test #1", "quantity": 1.0, "price_unit": 100.0}),
+            (0, False, {"name": "Test #2", "quantity": 2.0, "price_unit": 25.0}),
         ]
         cls.invoice = cls.env["account.move"].create(
             {

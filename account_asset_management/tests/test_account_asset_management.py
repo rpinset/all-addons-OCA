@@ -7,9 +7,8 @@ import calendar
 import time
 from datetime import date, datetime
 
-from odoo import Command, fields
-from odoo.tests import tagged
-from odoo.tests.common import Form
+from odoo import SUPERUSER_ID, Command, api, fields, registry
+from odoo.tests import Form, get_db_name, tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -17,8 +16,14 @@ from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 @tagged("post_install", "-at_install")
 class TestAssetManagement(AccountTestInvoicingCommon):
     @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
+    def setUpClass(cls, chart_template_ref=None):
+        with registry(get_db_name()).cursor() as cr:
+            env = api.Environment(cr, SUPERUSER_ID, {})
+            if not env.ref("l10n_generic_coa.configurable_chart_template", False):
+                # Fallback for executing tests in any existing CoA
+                coa = env["account.chart.template"].search([("visible", "=", True)])[:1]
+                chart_template_ref = coa.get_external_id()[coa.id]
+        super().setUpClass(chart_template_ref=chart_template_ref)
         # ENVIRONMENTS
         cls.asset_model = cls.env["account.asset"]
         cls.asset_profile_model = cls.env["account.asset.profile"]
