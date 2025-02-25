@@ -191,16 +191,16 @@ Date:   Wed Feb 5 09:56:50 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit b0fe9d8dd85e4227680e2167e9ee5c38cbf52517
+commit 6c9f52d3e5087d94b4c47388bd2681f8121e9ab8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 20 09:28:09 2025 +0000
+Date:   Mon Feb 24 16:15:59 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (38 of 38 strings)
+    Currently translated at 13.7% (4 of 29 strings)
     
-    Translation: account-payment-14.0/account-payment-14.0-account_due_list
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_due_list/it/
+    Translation: account-payment-14.0/account-payment-14.0-account_check_printing_report_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_check_printing_report_base/it/
 
 
 ## connector
@@ -1025,11 +1025,16 @@ Date:   Wed Feb 5 17:20:31 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 4164f3bcf489c877040950fdd0b8f16dd860c4c6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:48:11 2025 +0000
+commit 1436a28df6a654335d7b2002cbc6c77910528bf5
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Feb 24 14:35:50 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (15 of 15 strings)
+    
+    Translation: stock-logistics-barcode-14.0/stock-logistics-barcode-14.0-sale_input_barcode
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-14-0/stock-logistics-barcode-14-0-sale_input_barcode/it/
 
 
 ## stock-logistics-workflow
@@ -1107,16 +1112,11 @@ Date:   Thu Feb 6 10:54:14 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit a75dd7f542b2281af333eca931f4cce7b6f59395
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 17 08:16:01 2025 +0000
+commit 839c576fd0ff7ac7496dbd6da9d510fe9c3f5ccc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Feb 24 09:28:43 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: manufacture-14.0/manufacture-14.0-repair_discount
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-repair_discount/it/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
@@ -1158,11 +1158,16 @@ Date:   Thu Jan 30 18:55:11 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 623cfd4bb4f4745bd54d579d06249edfc9b28514
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:19:20 2025 +0000
+commit a2e4a2c01c68cbf7f044056d0fdd781c24b7d6c9
+Author: Wesley Oliveira <wesleygabrieldeoliveira@gmail.com>
+Date:   Tue Feb 25 14:36:35 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 100.0% (11 of 11 strings)
+    
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_reception_status
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_reception_status/pt_BR/
 
 
 ## purchase-reporting

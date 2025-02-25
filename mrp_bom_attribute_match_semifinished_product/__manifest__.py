@@ -1,11 +1,11 @@
 {
     "name": "BOM Attribute Match Semifinished Products",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Manufacturing",
     "author": "Cetmix, Ooops, Odoo Community Association (OCA)",
     "summary": "BOM Attribute Match Semifinished Products",
     "depends": ["mrp_bom_attribute_match"],
-    "maintainers": ["geomer198", "CetmixGitDrone"],
+    "maintainers": ["GSLabIt"],
     "license": "AGPL-3",
     "website": "https://github.com/OCA/manufacture",
     "data": [

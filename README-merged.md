@@ -6058,7 +6058,7 @@ addon | version | maintainers | summary
 [product_multi_barcode_stock_menu](product_multi_barcode_stock_menu/) | 14.0.1.1.0 |  | Multiple barcodes menu
 [product_multi_barcode_supplierinfo](product_multi_barcode_supplierinfo/) | 14.0.1.0.1 |  | Adds supplier pricelist barcode in product barcode
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 14.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
-[sale_input_barcode](sale_input_barcode/) | 14.0.2.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode
+[sale_input_barcode](sale_input_barcode/) | 14.0.2.1.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode
 [sale_input_barcode_gs1](sale_input_barcode_gs1/) | 14.0.2.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add Sale line with barcode using GS1 barcodes
 [stock_barcodes](stock_barcodes/) | 14.0.4.0.1 |  | It provides read barcode on stock operations.
 [stock_barcodes_automatic_entry](stock_barcodes_automatic_entry/) | 14.0.1.0.0 | [![AdriaGForgeFlow](https://github.com/AdriaGForgeFlow.png?size=30px)](https://github.com/AdriaGForgeFlow) | This module will automatically trigger the click event on a button with the class 'barcode-automatic-entry' after a barcode scanned has been processed.
@@ -6740,7 +6740,7 @@ addon | version | maintainers | summary
 [mrp_auto_assign](mrp_auto_assign/) | 14.0.1.0.0 |  | Make MO automatically reserve raw material moves at creation
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.5 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
 [mrp_bom_attribute_match_duplicate_kit](mrp_bom_attribute_match_duplicate_kit/) | 14.0.1.1.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | BOM Attribute Match Duplicate Kit
-[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.1 | [![geomer198](https://github.com/geomer198.png?size=30px)](https://github.com/geomer198) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | BOM Attribute Match Semifinished Products
+[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.2 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | BOM Attribute Match Semifinished Products
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 14.0.1.1.1 |  | MRP BOM Component Menu
 [mrp_bom_find_ignore](mrp_bom_find_ignore/) | 14.0.1.0.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Adding 'ignore_bom_find' to the context will let '_bom_find' return an empty record set
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 14.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
