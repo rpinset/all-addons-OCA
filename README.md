@@ -75,6 +75,15 @@ Date:   Sat Feb 1 21:09:18 2025 +0000
     [IMP] update dotfiles
 
 
+## account-financial-reporting
+From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
+commit 358b8805ed8fc659c3e6c50b1fb4e0e05b6b55cb
+Author: oca-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Feb 1 20:40:27 2025 +0000
+
+    [IMP] update dotfiles
+
+
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 commit 2bae247e58ad079e5c6f87d0d8d4bf9bf647af94
