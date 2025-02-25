@@ -138,6 +138,26 @@ class CreditControlLine(models.Model):
         for line in self:
             line.partner_user_id = line.partner_id.user_id
 
+    def _message_auto_subscribe_followers(self, updated_values, default_subtype_ids):
+        """Intercept this method so that any change (create/write) auto-defines
+        the extra subscribers.
+        """
+        res = super()._message_auto_subscribe_followers(
+            updated_values=updated_values, default_subtype_ids=default_subtype_ids
+        )
+        if "partner_id" in list(updated_values.keys()):
+            credit_control_new_subtype = self.env.ref(
+                "account_credit_control.mt_credit_control_new"
+            )
+            for item in self:
+                partners = item.partner_id | item.partner_id.commercial_partner_id
+                partner_ids = partners.message_follower_ids.filtered(
+                    lambda x: credit_control_new_subtype in x.subtype_ids
+                ).partner_id
+                for partner in partner_ids:
+                    res += [(partner.id, default_subtype_ids, False)]
+        return res
+
     @api.model
     def _prepare_from_move_line(
         self, move_line, level, controlling_date, open_amount, default_lines_vals
@@ -269,27 +289,3 @@ class CreditControlLine(models.Model):
         if "manual_followup" in values:
             self.partner_id.write({"manual_followup": values.get("manual_followup")})
         return res
-
-    def button_schedule_activity(self):
-        ctx = self.env.context.copy()
-        ctx.update({"default_res_id": self.ids[0], "default_res_model": self._name})
-        return {
-            "type": "ir.actions.act_window",
-            "name": _("Schedule activity"),
-            "res_model": "mail.activity",
-            "binding_view_types": "form",
-            "view_mode": "form",
-            "res_id": self.activity_ids and self.activity_ids.ids[0] or False,
-            "views": [[False, "form"]],
-            "context": ctx,
-            "target": "new",
-        }
-
-    def button_credit_control_line_form(self):
-        self.ensure_one()
-        action = self.env.ref("account_credit_control.credit_control_line_action")
-        form = self.env.ref("account_credit_control.credit_control_line_form")
-        action = action.read()[0]
-        action["views"] = [(form.id, "form")]
-        action["res_id"] = self.id
-        return action

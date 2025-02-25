@@ -8,6 +8,7 @@
                 showRowTotals="props.showRowTotals"
                 showColumnTotals="props.showColumnTotals"
                 readonly="props.readonly"
+                domain="props.domain"
             />
         </div>
     </t>

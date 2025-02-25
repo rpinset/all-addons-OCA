@@ -323,10 +323,18 @@ class L10nEsAeatMod390Report(models.Model):
         store=True,
         string="[65] Result. rég. gral.",
     )
+    casilla_658 = fields.Monetary(
+        string="[658] Regularización cuotas art. 80. Cinco.5ª LIVA",
+    )
     casilla_662 = fields.Monetary(
         string="[662] Cuotas pendientes de compensación al término del ejercicio",
         help="[662] Cuotas pendientes de compensación generadas en el ejercicio "
         "y distintas de las incluidas en la casilla 97",
+    )
+    casilla_84 = fields.Monetary(
+        compute="_compute_casilla_84",
+        store=True,
+        string="[84] Suma de resultados",
     )
     casilla_85 = fields.Monetary(
         string="[85] Compens. ejercicio anterior",
@@ -690,11 +698,15 @@ class L10nEsAeatMod390Report(models.Model):
         for report in self:
             report.casilla_65 = report.casilla_47 - report.casilla_64
 
-    @api.depends("casilla_65", "casilla_85")
+    @api.depends("casilla_65", "casilla_658")
+    def _compute_casilla_84(self):
+        for report in self:
+            report.casilla_84 = report.casilla_65 + report.casilla_658
+
+    @api.depends("casilla_84", "casilla_85")
     def _compute_casilla_86(self):
         for report in self:
-            # It takes 65 instead of 84 + 659 as the rest are 0
-            report.casilla_86 = report.casilla_65 - report.casilla_85
+            report.casilla_86 = report.casilla_84 - report.casilla_85
 
     @api.depends("tax_line_ids", "tax_line_ids.amount")
     def _compute_casilla_108(self):
@@ -765,18 +777,14 @@ class L10nEsAeatMod390Report(models.Model):
                     # Si salió a compensar, casilla 97 = casilla 71 del último periodo
                     # del año si fue a compensar
                     casilla_97 = abs(report_303_last_period.resultado_liquidacion)
-                elif report_303_last_period[0].result_type == "N":
-                    # casilla 97 = casilla 87 del último periodo del año si fue a
-                    # compensar si salio resultado cero, pero queda pendiente a
-                    # compensar
-                    casilla_97 = report_303_last_period.remaining_cuota_compensar
-                elif report_303_last_period[0].result_type in {"D", "V", "X"}:
-                    # casilla 98 = casilla 71 del último periodo del año si fue a
-                    # devolver
-                    casilla_98 = abs(report_303_last_period.resultado_liquidacion)
+                else:
                     # casilla 662 = casilla 87 del último periodo del año si no se
                     # incluyo en la casilla 97
                     casilla_662 = report_303_last_period.remaining_cuota_compensar
+                    if report_303_last_period[0].result_type in {"D", "V", "X"}:
+                        # Si salió a devolver, casilla 98 = casilla 71 del último
+                        #  periodo del año si fue a devolver
+                        casilla_98 = abs(report_303_last_period.resultado_liquidacion)
             mod390.update(
                 {
                     "casilla_85": casilla_85,

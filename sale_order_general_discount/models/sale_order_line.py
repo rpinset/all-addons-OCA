@@ -1,6 +1,7 @@
 # Copyright 2018 Tecnativa - Sergio Teruel
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from odoo import api, fields, models
+from odoo.tools import config
 
 
 class SaleOrderLine(models.Model):
@@ -15,6 +16,12 @@ class SaleOrderLine(models.Model):
     @api.depends("order_id", "order_id.general_discount")
     def _compute_discount(self):
         res = super()._compute_discount()
+        test_condition = not config["test_enable"] or (
+            config["test_enable"]
+            and self.env.context.get("test_sale_order_general_discount")
+        )
+        if not test_condition:
+            return res
         for line in self:
             # We check the value of general_discount on origin too to cover
             # the case where a discount was set to a value != 0 and then

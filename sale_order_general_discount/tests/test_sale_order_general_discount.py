@@ -9,6 +9,9 @@ class TestSaleOrderLineInput(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(
+            context=dict(cls.env.context, test_sale_order_general_discount=True)
+        )
         cls.partner = cls.env["res.partner"].create(
             {"name": "Test", "sale_discount": 10.0}
         )
