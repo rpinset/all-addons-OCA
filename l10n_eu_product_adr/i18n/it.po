@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-18 11:06+0000\n"
+"PO-Revision-Date: 2025-02-28 13:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -6529,52 +6529,54 @@ msgstr "ESOLITE (ESOTOL), secco o inumidito con meno del 15% di acqua, in massa"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0393
 msgid "HEXOTONAL"
-msgstr ""
+msgstr "ESOTONALE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1784
 msgid "HEXYLTRICHLOROSILANE"
-msgstr ""
+msgstr "ESILTRICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3484
 msgid ""
 "HYDRAZINE AQUEOUS SOLUTION, FLAMMABLE with more than 37% hydrazine, by mass"
 msgstr ""
+"SOLUZIONE ACQUOSA DI IDRAZINA, INFIAMMABILE con più del 37% di idrazina, in "
+"massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2030
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2030_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2030_5L
 msgid "HYDRAZINE AQUEOUS SOLUTION, with more than 37% hydrazine by mass"
-msgstr ""
+msgstr "SOLUZIONE ACQUOSA DI IDRAZINA, con più del 37% di idrazina in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2029
 msgid "HYDRAZINE, ANHYDROUS"
-msgstr ""
+msgstr "IDRAZINA ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3293
 msgid "HYDRAZINE, AQUEOUS SOLUTION with not more than 37% hydrazine, by mass"
-msgstr ""
+msgstr "IDRAZINA, SOLUZIONE ACQUOSA con non più del 37% di idrazina, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1787_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1787_5L
 msgid "HYDRIODIC ACID"
-msgstr ""
+msgstr "ACIDO IDRODICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1788_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1788_5L
 msgid "HYDROBROMIC ACID"
-msgstr ""
+msgstr "ACIDO BROMICORO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1964
 msgid "HYDROCARBON GAS MIXTURE, COMPRESSED, N.O.S."
-msgstr ""
+msgstr "MISCELA DI IDROCARBURI GASSATI, COMPRESSI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1965
@@ -6582,30 +6584,35 @@ msgid ""
 "HYDROCARBON GAS MIXTURE, LIQUEFIED, N.O.S. such as mixtures A, A01, A02, A0, "
 "A1, B1, B2, B or C"
 msgstr ""
+"MISCELA DI GAS IDROCARBURI, LIQUEFATTI, N.A.S. come miscele A, A01, A02, A0, "
+"A1, B1, B2, B o C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3295_F1_3_500ml_P001_1
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3295_F1_3_5L_P001/IBC03/LP01/R001_3
 msgid "HYDROCARBONS, LIQUID, N.O.S."
-msgstr ""
+msgstr "IDROCARBURI LIQUIDI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3295_F1_3_640C_1L_P001_2
 msgid ""
 "HYDROCARBONS, LIQUID, N.O.S. (vapour pressure at 50 °C more than 110 kPa)"
 msgstr ""
+"IDROCARBURI LIQUIDI, N.A.S. (pressione di vapore a 50 °C superiore a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3295_F1_3_640D_1L_P001/IBC02/R001_2
 msgid ""
 "HYDROCARBONS, LIQUID, N.O.S. (vapour pressure at 50 °C not more than 110 kPa)"
 msgstr ""
+"IDROCARBURI LIQUIDI, N.A.S. (pressione di vapore a 50 °C non superiore a 110 "
+"kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1789_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1789_5L
 msgid "HYDROCHLORIC ACID"
-msgstr ""
+msgstr "ACIDO CLORIDRICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1613
@@ -6613,58 +6620,63 @@ msgid ""
 "HYDROCYANIC ACID, AQUEOUS SOLUTION (HYDROGEN CYANIDE, AQUEOUS SOLUTION) with "
 "not more than 20% hydrogen cyanide"
 msgstr ""
+"ACIDO CIANIDRICO, SOLUZIONE ACQUOSA (CIANURO DI IDROGENO, SOLUZIONE ACQUOSA) "
+"con non più del 20% di cianuro di idrogeno"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1786
 msgid "HYDROFLUORIC ACID AND SULPHURIC ACID MIXTURE"
-msgstr ""
+msgstr "MISCELA DI ACIDO FLUORIDRICO E ACIDO SOLFORICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1790_CT1_8/6dot1_640J_P001_1
 msgid ""
 "HYDROFLUORIC ACID with more than 60% but not more than 85% hydrogen fluoride"
 msgstr ""
+"ACIDO FLUORIDRICO con più del 60% ma non più dell'85% di fluoruro di idrogeno"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1790_CT1_8/6dot1_640I_P802_1
 msgid "HYDROFLUORIC ACID with more than 85% hydrogen fluoride"
-msgstr ""
+msgstr "ACIDO FLUORIDRICO con più dell'85% di acido fluoridrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1790_CT1_8/6dot1_1L_P001/IBC02_2
 msgid "HYDROFLUORIC ACID with not more than 60% hydrogen fluoride"
-msgstr ""
+msgstr "ACIDO FLUORIDRICO con non più del 60% di acido fluoridrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2034
 msgid "HYDROGEN AND METHANE MIXTURE, COMPRESSED"
-msgstr ""
+msgstr "MISCELA DI IDROGENO E METANO, COMPRESSA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1048
 msgid "HYDROGEN BROMIDE, ANHYDROUS"
-msgstr ""
+msgstr "BROMURO DI IDROGENO ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1050
 msgid "HYDROGEN CHLORIDE, ANHYDROUS"
-msgstr ""
+msgstr "CLORURO DI IDROGENO ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2186
 msgid "HYDROGEN CHLORIDE, REFRIGERATED LIQUID"
-msgstr ""
+msgstr "CLORURO DI IDROGENO, LIQUIDO REFRIGERATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3294
 msgid ""
 "HYDROGEN CYANIDE, SOLUTION IN ALCOHOL with not more than 45% hydrogen cyanide"
 msgstr ""
+"CIANURO DI IDROGENO, SOLUZIONE IN ALCOOL con non più del 45% di cianuro di "
+"idrogeno"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1051
 msgid "HYDROGEN CYANIDE, STABILIZED containing less than 3% water"
-msgstr ""
+msgstr "CIANURO DI IDROGENO, STABILIZZATO contenente meno del 3% di acqua"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1614
@@ -6672,11 +6684,13 @@ msgid ""
 "HYDROGEN CYANIDE, STABILIZED, containing less than 3% water and absorbed in "
 "a porous inert material"
 msgstr ""
+"CIANURO DI IDROGENO, STABILIZZATO, contenente meno del 3% di acqua e "
+"assorbito in un materiale inerte poroso"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1052
 msgid "HYDROGEN FLUORIDE, ANHYDROUS"
-msgstr ""
+msgstr "FLUORURO DI IDROGENO ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3468
@@ -6685,11 +6699,15 @@ msgid ""
 "STORAGE SYSTEM CONTAINED IN EQUIPMENT or HYDROGEN IN A METAL HYDRIDE STORAGE "
 "SYSTEM PACKED WITH EQUIPMENT"
 msgstr ""
+"IDROGENO IN UN SISTEMA DI STOCCAGGIO DI IDRURI METALLICI o IDROGENO IN UN "
+"SISTEMA DI STOCCAGGIO DI IDRURI METALLICI CONTENUTO IN UN'APPARECCHIATURA o "
+"IDROGENO IN UN SISTEMA DI STOCCAGGIO DI IDRURI METALLICI IMBALLATO CON "
+"UN'APPARECCHIATURA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2197
 msgid "HYDROGEN IODIDE, ANHYDROUS"
-msgstr ""
+msgstr "IODURO DI IDROGENO ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3149
@@ -6697,6 +6715,8 @@ msgid ""
 "HYDROGEN PEROXIDE AND PEROXYACETIC ACID MIXTURE with acid(s), water and not "
 "more than 5% peroxyacetic acid, STABILIZED"
 msgstr ""
+"MISCELA DI PEROSSIDO DI IDROGENO E ACIDO PEROSSIACETICO con acido(i), acqua "
+"e non più del 5% di acido perossiacetico, STABILIZZATA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2014
@@ -6704,6 +6724,8 @@ msgid ""
 "HYDROGEN PEROXIDE, AQUEOUS SOLUTION with not less than 20% but not more than "
 "60% hydrogen peroxide (stabilized as necessary)"
 msgstr ""
+"PEROSSIDO DI IDROGENO, SOLUZIONE ACQUOSA con non meno del 20% ma non più del "
+"60% di perossido di idrogeno (stabilizzato se necessario)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2984
@@ -6711,6 +6733,8 @@ msgid ""
 "HYDROGEN PEROXIDE, AQUEOUS SOLUTION with not less than 8% but less than 20% "
 "hydrogen peroxide (stabilized as necessary)"
 msgstr ""
+"PEROSSIDO DI IDROGENO, SOLUZIONE ACQUOSA con non meno dell'8% ma meno del "
+"20% di perossido di idrogeno (stabilizzato se necessario)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2015_OC1_5dot1/8_640N_P501_1
@@ -6718,6 +6742,8 @@ msgid ""
 "HYDROGEN PEROXIDE, AQUEOUS SOLUTION, STABILIZED with more than 60% hydrogen "
 "peroxide and not more than 70% hydrogen peroxide"
 msgstr ""
+"PEROSSIDO DI IDROGENO, SOLUZIONE ACQUOSA, STABILIZZATA con più del 60% di "
+"perossido di idrogeno e non più del 70% di perossido di idrogeno"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2015_OC1_5dot1/8_640O_P501_1
@@ -6725,37 +6751,39 @@ msgid ""
 "HYDROGEN PEROXIDE, AQUEOUS SOLUTION, STABILIZED with more than 70% hydrogen "
 "peroxide"
 msgstr ""
+"PEROSSIDO DI IDROGENO, SOLUZIONE ACQUOSA, STABILIZZATA con più del 70% di "
+"perossido di idrogeno"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3526
 msgid "HYDROGEN SELENIDE, ADSORBED"
-msgstr ""
+msgstr "SELENURO DI IDROGENO, ADSORBITO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2202
 msgid "HYDROGEN SELENIDE, ANHYDROUS"
-msgstr ""
+msgstr "SELENURO DI IDROGENO ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1053
 msgid "HYDROGEN SULPHIDE"
-msgstr ""
+msgstr "SOLFURO DI IDROGENO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1049
 msgid "HYDROGEN, COMPRESSED"
-msgstr ""
+msgstr "IDROGENO COMPRESSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1966
 msgid "HYDROGEN, REFRIGERATED LIQUID"
-msgstr ""
+msgstr "IDROGENO, LIQUIDO REFRIGERATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3471_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3471_5L
 msgid "HYDROGENDIFLUORIDES SOLUTION, N.O.S."
-msgstr ""
+msgstr "SOLUZIONE DI IDROGENDIFLUORURI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1740_1kg
@@ -6766,23 +6794,23 @@ msgstr "HYDROGENDIFLUORIDES, SOLIDO, N.O.S."
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2865
 msgid "HYDROXYLAMINE SULPHATE"
-msgstr ""
+msgstr "SOLFATO DI IDROSSILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1791_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1791_5L
 msgid "HYPOCHLORITE SOLUTION"
-msgstr ""
+msgstr "SOLUZIONE DI IPOCLORITO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3212
 msgid "HYPOCHLORITES, INORGANIC, N.O.S."
-msgstr ""
+msgstr "IPOCLORITI INORGANICI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1327
 msgid "Hay, Straw or Bhusa"
-msgstr ""
+msgstr "Fieno, paglia o bhusa"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_class__id
@@ -6790,7 +6818,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_label__id
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0121
@@ -6799,68 +6827,71 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0325
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0454
 msgid "IGNITERS"
-msgstr ""
+msgstr "ACCENDITORI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2900_I2_6dot2_318_P620_0
 msgid "INFECTIOUS SUBSTANCE, AFFECTING ANIMALS only"
-msgstr ""
+msgstr "SOSTANZA INFETTIVA, CHE COLPISCE SOLO GLI ANIMALI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2900_I2_6dot2_318_P620_0_animal_material
 msgid "INFECTIOUS SUBSTANCE, AFFECTING ANIMALS only (animal material only)"
 msgstr ""
+"SOSTANZA INFETTIVA, CHE COLPISCE SOLO GLI ANIMALI (solo materiale animale)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2900_I2_6dot2/2dot2_318_P620_0
 msgid ""
 "INFECTIOUS SUBSTANCE, AFFECTING ANIMALS only, in refrigerated liquid nitrogen"
 msgstr ""
+"SOSTANZA INFETTIVA, CHE COLPISCE SOLO GLI ANIMALI, in azoto liquido "
+"refrigerato"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2814_I1_6dot2_318_P620_0
 msgid "INFECTIOUS SUBSTANCE, AFFECTING HUMANS"
-msgstr ""
+msgstr "SOSTANZA INFETTIVA CHE COLPISCE GLI ESSERI UMANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2814_I1_6dot2_318_P620_0_animal_material
 msgid "INFECTIOUS SUBSTANCE, AFFECTING HUMANS (animal material only)"
-msgstr ""
+msgstr "SOSTANZA INFETTIVA CHE COLPISCE L'UOMO (solo materiale animale)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2814_I1_6dot2/2dot2_318_P620_0
 msgid "INFECTIOUS SUBSTANCE, AFFECTING HUMANS, in refrigerated liquid nitrogen"
-msgstr ""
+msgstr "SOSTANZA INFETTIVA CHE COLPISCE L'UOMO, in azoto liquido refrigerato"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3354
 msgid "INSECTICIDE GAS, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "GAS INSETTICIDA, INFIAMMABILE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1968
 msgid "INSECTICIDE GAS, N.O.S."
-msgstr ""
+msgstr "GAS INSETTICIDA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3355
 msgid "INSECTICIDE GAS, TOXIC, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "GAS INSETTICIDA, TOSSICO, INFIAMMABILE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1967
 msgid "INSECTICIDE GAS, TOXIC, N.O.S."
-msgstr ""
+msgstr "GAS INSETTICIDA, TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3495
 msgid "IODINE"
-msgstr ""
+msgstr "IODIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3498
 msgid "IODINE MONOCHLORIDE, LIQUID"
-msgstr ""
+msgstr "MONOCLORURO DI IODIO, LIQUIDO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1792
@@ -6870,78 +6901,80 @@ msgstr "IODINE MONOCHLORIDE, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2495
 msgid "IODINE PENTAFLUORIDE"
-msgstr ""
+msgstr "PENTAFLUORURO DI IODIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2391
 msgid "IODOMETHYLPROPANES"
-msgstr ""
+msgstr "IODOMETILPROPANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2392
 msgid "IODOPROPANES"
-msgstr ""
+msgstr "IODOPROPANES"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1376
 msgid ""
 "IRON OXIDE, SPENT or IRON SPONGE, SPENT obtained from coal gas purification"
 msgstr ""
+"OSSIDO DI FERRO, ESAUSTO o SPUGNA DI FERRO, ESAUSTA ottenuto dalla "
+"purificazione del gas di carbone"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1994
 msgid "IRON PENTACARBONYL"
-msgstr ""
+msgstr "FERRO PENTACARBONIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1969
 msgid "ISOBUTANE"
-msgstr ""
+msgstr "ISOBUTANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1212
 msgid "ISOBUTANOL (ISOBUTYL ALCOHOL)"
-msgstr ""
+msgstr "ISOBUTANOL (ISOBUTYL ALCOHOL)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1213
 msgid "ISOBUTYL ACETATE"
-msgstr ""
+msgstr "ACETATO DI ISOBUTILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2527
 msgid "ISOBUTYL ACRYLATE, STABILIZED"
-msgstr ""
+msgstr "ACRILATO DI ISOBUTILICO, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2393
 msgid "ISOBUTYL FORMATE"
-msgstr ""
+msgstr "FORMICATO DI ISOBUTILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2528
 msgid "ISOBUTYL ISOBUTYRATE"
-msgstr ""
+msgstr "ISOBUTIRATO DI ISOBUTILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2486
 msgid "ISOBUTYL ISOCYANATE"
-msgstr ""
+msgstr "ISOCIANATO DI ISOBUTILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2283
 msgid "ISOBUTYL METHACRYLATE, STABILIZED"
-msgstr ""
+msgstr "METACRILATO DI ISOBUTIL, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2394
 msgid "ISOBUTYL PROPIONATE"
-msgstr ""
+msgstr "PROPIONATO DI ISOBUTIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1214
 msgid "ISOBUTYLAMINE"
-msgstr ""
+msgstr "ISOBUTILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1055
@@ -6951,22 +6984,22 @@ msgstr "ISOBUTILENE"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2045
 msgid "ISOBUTYRALDEHYDE (ISOBUTYL ALDEHYDE)"
-msgstr ""
+msgstr "ISOBUTIRALDEIDE (ISOBUTIL ALDEIDE)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2529
 msgid "ISOBUTYRIC ACID"
-msgstr ""
+msgstr "ACIDO ISOBUTIRRICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2284
 msgid "ISOBUTYRONITRILE"
-msgstr ""
+msgstr "ISOBUTIRONITRILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2395
 msgid "ISOBUTYRYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI ISOBUTIRRILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2478_1L
@@ -6975,6 +7008,8 @@ msgid ""
 "ISOCYANATES, FLAMMABLE, TOXIC, N.O.S. or ISOCYANATE SOLUTION, FLAMMABLE, "
 "TOXIC, N.O.S."
 msgstr ""
+"ISOCIANATI, INFIAMMABILE, TOSSICO, N.A.S. o SOLUZIONE DI ISOCIANATO, "
+"INFIAMMABILE, TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3080
@@ -6982,112 +7017,114 @@ msgid ""
 "ISOCYANATES, TOXIC, FLAMMABLE, N.O.S. or ISOCYANATE SOLUTION, TOXIC, "
 "FLAMMABLE, N.O.S."
 msgstr ""
+"ISOCIANATI, TOSSICI, INFIAMMABILE, N.A.S. o SOLUZIONE DI ISOCIANATO, "
+"TOSSICO, INFIAMMABILE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2206_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2206_5L
 msgid "ISOCYANATES, TOXIC, N.O.S. or ISOCYANATE SOLUTION, TOXIC, N.O.S."
-msgstr ""
+msgstr "ISOCIANATI, TOSSICI, N.A.S. o SOLUZIONE DI ISOCIANATO, TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2285
 msgid "ISOCYANATOBENZO-TRIFLUORIDES"
-msgstr ""
+msgstr "ISOCIANATOBENZO-TRIFLUORURI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2287
 msgid "ISOHEPTENE"
-msgstr ""
+msgstr "ISOEPTENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2288
 msgid "ISOHEXENE"
-msgstr ""
+msgstr "ISOESENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1216
 msgid "ISOOCTENES"
-msgstr ""
+msgstr "ISOOTTENI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2371
 msgid "ISOPENTENES"
-msgstr ""
+msgstr "ISOPENTENI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2290
 msgid "ISOPHORONE DIISOCYANATE"
-msgstr ""
+msgstr "ISOFORONE DIISOCIANATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2289
 msgid "ISOPHORONEDIAMINE"
-msgstr ""
+msgstr "ISOFORONEDIAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1218
 msgid "ISOPRENE, STABILIZED"
-msgstr ""
+msgstr "ISOPRENE, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1219
 msgid "ISOPROPANOL (ISOPROPYL ALCOHOL)"
-msgstr ""
+msgstr "ISOPROPANOLO (ALCOOL ISOPROPILICO)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2403
 msgid "ISOPROPENYL ACETATE"
-msgstr ""
+msgstr "ACETATO DI ISOPROPENILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2303
 msgid "ISOPROPENYLBENZENE"
-msgstr ""
+msgstr "ISOPROPENILBENZENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2934
 msgid "ISOPROPYL 2-CHLOROPROPIONATE"
-msgstr ""
+msgstr "ISOPROPIL 2-CLOROPROPIONATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1220
 msgid "ISOPROPYL ACETATE"
-msgstr ""
+msgstr "ACETATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1793
 msgid "ISOPROPYL ACID PHOSPHATE"
-msgstr ""
+msgstr "FOSFATO ACIDO ISOPROPILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2405
 msgid "ISOPROPYL BUTYRATE"
-msgstr ""
+msgstr "BUTIRRATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2947
 msgid "ISOPROPYL CHLOROACETATE"
-msgstr ""
+msgstr "CLOROACETATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2407
 msgid "ISOPROPYL CHLOROFORMATE"
-msgstr ""
+msgstr "CLOROFORMIATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2406
 msgid "ISOPROPYL ISOBUTYRATE"
-msgstr ""
+msgstr "ISOPROPILE ISOBUTIRRATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2483
 msgid "ISOPROPYL ISOCYANATE"
-msgstr ""
+msgstr "ISOCIANATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1222
 msgid "ISOPROPYL NITRATE"
-msgstr ""
+msgstr "NITRATO DI ISOPROPILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2409

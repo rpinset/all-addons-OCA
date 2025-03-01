@@ -29,7 +29,7 @@ addon | version | maintainers | summary
 [hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
 [pos_analytic_by_config](pos_analytic_by_config/) | 18.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
 [purchase_analytic](purchase_analytic/) | 18.0.1.0.0 |  | Purchase Analytic
-[stock_analytic](stock_analytic/) | 18.0.1.0.0 |  | Adds analytic distribution in stock move
+[stock_analytic](stock_analytic/) | 18.0.1.0.1 |  | Adds analytic distribution in stock move
 
 [//]: # (end addons)
 
@@ -301,7 +301,11 @@ account-invoice-reporting
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 18.0.1.0.0 |  | Adds the related sale line position on invoice line.
 
 [//]: # (end addons)
 
@@ -350,6 +354,7 @@ addon | version | maintainers | summary
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_refund_link](account_invoice_refund_link/) | 18.0.1.0.0 |  | Show links between refunds and their originator invoices.
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
+[account_move_cancel_confirm](account_move_cancel_confirm/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Account Move Cancel Confirm
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 
@@ -1543,6 +1548,7 @@ addon | version | maintainers | summary
 [sale_exception](sale_exception/) | 18.0.1.0.0 |  | Custom exceptions on sale order
 [sale_exception_product_sale_manufactured_for](sale_exception_product_sale_manufactured_for/) | 18.0.1.0.0 |  | The partner set in the sales order can order only if he/she has a commercial entity that is listed as one of the partners for which the products can be manufactured for.
 [sale_force_invoiced](sale_force_invoiced/) | 18.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
+[sale_order_archive](sale_order_archive/) | 18.0.1.0.0 |  | Archive Sale Orders
 [sale_order_line_date](sale_order_line_date/) | 18.0.1.0.0 |  | Adds a commitment date to each sale order line.
 [sale_order_line_menu](sale_order_line_menu/) | 18.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_price_history](sale_order_line_price_history/) | 18.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale order line price history
@@ -1552,6 +1558,7 @@ addon | version | maintainers | summary
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 18.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
+[sale_stock_line_customer_ref](sale_stock_line_customer_ref/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Allow you to add a customer reference on order lines propagaged to move operations.
 
 [//]: # (end addons)
 
@@ -1979,7 +1986,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_zipped_download](attachment_zipped_download/) | 18.0.1.0.0 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 18.0.1.0.0 |  | Documents Knowledge
-[document_page](document_page/) | 18.0.1.0.0 |  | Document Page
+[document_page](document_page/) | 18.0.1.0.1 |  | Document Page
 
 [//]: # (end addons)
 
@@ -2069,6 +2076,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_template_multi_link](product_template_multi_link/) | 18.0.1.0.0 |  | Product Multi Links (Template)
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 18.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
+[website_sale_checkout_country_vat](website_sale_checkout_country_vat/) | 18.0.1.0.0 |  | Autocomplete VAT in checkout process
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 18.0.1.0.0 |  | Skip payment for logged users in checkout process
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 18.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_order_type](website_sale_order_type/) | 18.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
@@ -2538,6 +2546,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_expense_cancel](hr_expense_cancel/) | 18.0.1.0.0 |  | Hr expense cancel
 [hr_expense_payment](hr_expense_payment/) | 18.0.1.0.0 |  | HR Expense Payment
 [hr_expense_sequence](hr_expense_sequence/) | 18.0.1.0.0 |  | HR expense sequence
 
@@ -4405,7 +4414,11 @@ l10n-thailand
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[l10n_th_amount_to_text](l10n_th_amount_to_text/) | 18.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
 
 [//]: # (end addons)
 
@@ -4714,9 +4727,11 @@ addon | version | maintainers | summary
 [delivery_carrier_warehouse](delivery_carrier_warehouse/) | 18.0.1.0.1 |  | Get delivery method used in sales orders from warehouse
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 18.0.1.0.0 |  | Hide free fee lines on sales orders
 [delivery_package_fee](delivery_package_fee/) | 18.0.1.0.0 |  | Add fees on sales order for delivered packages
+[partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [server_environment_delivery](server_environment_delivery/) | 18.0.1.0.0 |  | Configure prod environment for delivery carriers
 [stock_picking_carrier_from_rule](stock_picking_carrier_from_rule/) | 18.0.1.0.0 |  | Set the carrier on picking if the stock rule used has a partner address set with a delivery method.
+[stock_picking_delivery_link](stock_picking_delivery_link/) | 18.0.1.0.0 |  | Adds link to the delivery on all intermediate operations.
 
 [//]: # (end addons)
 
@@ -4834,6 +4849,7 @@ addon | version | maintainers | summary
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 18.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 18.0.1.0.0 |  | Show returns on stock pickings
 [stock_picking_whole_scrap](stock_picking_whole_scrap/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Create whole scrap from a picking for move lines
+[stock_restrict_lot](stock_restrict_lot/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_split_picking](stock_split_picking/) | 18.0.1.0.0 |  | Split a picking in two not transferred pickings
 
 [//]: # (end addons)
@@ -5404,6 +5420,7 @@ addon | version | maintainers | summary
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 18.0.1.0.0 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 18.0.1.0.0 |  | Option to create deposit from purchase order
 [purchase_exception](purchase_exception/) | 18.0.1.0.0 |  | Custom exceptions on purchase order
+[purchase_force_invoiced](purchase_force_invoiced/) | 18.0.1.0.0 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_invoice_plan](purchase_invoice_plan/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_last_price_info](purchase_last_price_info/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_open_qty](purchase_open_qty/) | 18.0.1.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
@@ -5462,7 +5479,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_comment_template](purchase_comment_template/) | 18.0.1.0.0 |  | Comments texts templates on Purchase documents
+[purchase_comment_template](purchase_comment_template/) | 18.0.1.0.1 |  | Comments texts templates on Purchase documents
 
 [//]: # (end addons)
 
@@ -6202,7 +6219,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_comment_template](base_comment_template/) | 18.0.1.0.0 |  | Add conditional mako template to any reporton models that inherits comment.template.
+[base_comment_template](base_comment_template/) | 18.0.1.0.1 |  | Add conditional mako template to any reporton models that inherits comment.template.
 [bi_sql_editor](bi_sql_editor/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 18.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 18.0.1.0.0 |  | Base module to create xlsx report
@@ -6514,6 +6531,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_user_role](base_user_role/) | 18.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
+[base_user_role_company](base_user_role_company/) | 18.0.1.0.0 |  | User roles by company
 
 [//]: # (end addons)
 
@@ -6608,6 +6626,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_cancel_confirm](base_cancel_confirm/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
+[base_menu_visibility_restriction](base_menu_visibility_restriction/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
 [base_revision](base_revision/) | 18.0.1.0.0 |  | Keep track of revised document
 [base_technical_features](base_technical_features/) | 18.0.1.0.2 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
