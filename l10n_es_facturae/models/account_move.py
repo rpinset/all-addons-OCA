@@ -76,6 +76,14 @@ class AccountMove(models.Model):
     facturae_file_reference = fields.Char()
     facturae_receiver_transaction_reference = fields.Char()
     facturae_receiver_contract_reference = fields.Char()
+    facturae_withheld_reason = fields.Char(string="Withheld Reason")
+    facturae_withheld_percent = fields.Float(string="Withheld Percent")
+    facturae_withheld_amount = fields.Monetary(
+        compute="_compute_facturae_withheld_amount",
+        store=True,
+        string="Withheld Amount",
+        readonly=False,
+    )
 
     @api.constrains("facturae_start_date", "facturae_end_date")
     def _check_facturae_date(self):
@@ -103,6 +111,13 @@ class AccountMove(models.Model):
                     "out_invoice",
                     "out_refund",
                 ]
+            )
+
+    @api.depends("amount_untaxed", "facturae_withheld_percent")
+    def _compute_facturae_withheld_amount(self):
+        for item in self.filtered("facturae"):
+            item.facturae_withheld_amount = (
+                item.amount_untaxed * item.facturae_withheld_percent
             )
 
     def get_exchange_rate(self, euro_rate, currency_rate):
@@ -157,10 +172,6 @@ class AccountMove(models.Model):
             raise ValidationError(_("Partner vat is too small"))
         if not self.partner_id.state_id:
             raise ValidationError(_("Partner state not provided"))
-        if not self.partner_id.unidad_tramitadora:
-            raise ValidationError(_("Unidad Tramitadora not provided"))
-        if not self.partner_id.oficina_contable:
-            raise ValidationError(_("Oficina Contable not provided"))
         if not self.payment_mode_id:
             raise ValidationError(_("Payment mode is required"))
         if self.payment_mode_id.facturae_code:

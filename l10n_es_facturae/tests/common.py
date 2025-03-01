@@ -594,6 +594,8 @@ class CommonTest(CommonTestBase):
     def _check_totals(self, move, subtotal, base, tax, total):
         move.action_post()
         move.name = "2999/99999"
+        move.facturae_withheld_reason = "WithholdingReason"
+        move.facturae_withheld_percent = 0.05
         generated_facturae = self._create_facturae_file(move)
         self.assertEqual(
             generated_facturae.xpath("//InvoiceTotals/TotalGrossAmount")[0].text,
@@ -612,6 +614,30 @@ class CommonTest(CommonTestBase):
         self.assertEqual(
             generated_facturae.xpath("//InvoiceTotals//InvoiceTotal")[0].text,
             total,
+        )
+        self.assertEqual(
+            generated_facturae.xpath(
+                "//InvoiceTotals//AmountsWithheld//WithholdingReason"
+            )[0].text,
+            "WithholdingReason",
+        )
+        version = move.get_facturae_version()
+        self.assertEqual(
+            generated_facturae.xpath(
+                "//InvoiceTotals//AmountsWithheld//WithholdingRate"
+            )[0].text,
+            ("%.4f" if version == "3_2" else "%.8f") % 5,
+        )
+        self.assertEqual(
+            generated_facturae.xpath(
+                "//InvoiceTotals//AmountsWithheld//WithholdingAmount"
+            )[0].text,
+            ("%.2f" if version == "3_2" else "%.8f") % 5,
+        )
+        sign = -1 if move.move_type == "out_refund" else 1
+        self.assertEqual(
+            generated_facturae.xpath("//InvoiceTotals//TotalExecutableAmount")[0].text,
+            ("%.2f" if version == "3_2" else "%.8f") % (float(total) - (sign * 5)),
         )
 
     def test_move_rounding(self):
@@ -751,15 +777,3 @@ class CommonTest(CommonTestBase):
             .create({})
         )
         return wizard
-
-    def test_create_facturae_file_without_unidad_tramitadora(self):
-        wizard = self._create_wizard_facturae_file()
-        self.partner.unidad_tramitadora = False
-        with self.assertRaises(exceptions.ValidationError):
-            wizard.create_facturae_file()
-
-    def test_create_facturae_file_without_oficina_contable(self):
-        wizard = self._create_wizard_facturae_file()
-        self.partner.oficina_contable = False
-        with self.assertRaises(exceptions.ValidationError):
-            wizard.create_facturae_file()
