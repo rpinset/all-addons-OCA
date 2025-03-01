@@ -97,11 +97,16 @@ Date:   Sat Feb 1 20:33:26 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 9a0727d40d0bbd447245d1a5368566941cb9d5c1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:33:42 2025 +0000
+commit 0624f5004e3b12e1aba7903f9ce79e09fce89bc0
+Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
+Date:   Thu Feb 27 22:38:13 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 50.0% (1 of 2 strings)
+    
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_repair_link
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_repair_link/it/
 
 
 ## account-fiscal-rule
@@ -794,11 +799,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 47a28fe5f1d8bd663f508894b1877603bbc339ab
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:55:28 2025 +0000
+commit e47285f3de7fcc86dca9703bbe6e3ef3b4c6b411
+Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
+Date:   Thu Feb 27 23:16:05 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 39.8% (4380 of 10995 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
 
 
 ## l10n-japan

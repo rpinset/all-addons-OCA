@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e-20191007\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-16 15:53+0000\n"
-"PO-Revision-Date: 2024-02-15 16:36+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2025-02-28 02:06+0000\n"
+"Last-Translator: Nicola Clemente <nickdellaclemodoo@gmail.com>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_33074100
@@ -25647,17 +25647,17 @@ msgstr "Mobili congelatori-conservatori, tipo cofano, di capacità <= 400 litri"
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_84183080
 msgid "Freezers of the chest type, of a capacity > 400 l but <= 800 l"
-msgstr ""
+msgstr "Congelatori del tipo a cesto, di capacità > 400 l ma <= 800 l"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_84184020
 msgid "Freezers of the upright type, of a capacity <= 250 l"
-msgstr ""
+msgstr "Congelatori di tipo verticale, di capacità <= 250 l"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_84184080
 msgid "Freezers of the upright type, of a capacity > 250 l but <= 900 l"
-msgstr ""
+msgstr "Congelatori di tipo verticale, di capacità > 250 l ma <= 900 l"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.651236
@@ -25672,34 +25672,37 @@ msgstr "Servizi di riassicurazione per merci trasportate"
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06042020
 msgid "Fresh Christmas trees"
-msgstr ""
+msgstr "Alberi di Natale Innevato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08081080
 msgid ""
 "Fresh apples (excl. cider apples, in bulk, from 16 September to 15 December)"
 msgstr ""
+"Mele fresche (escluse mele da sidro, sfuse, dal 16 settembre al 15 dicembre)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08091000
 msgid "Fresh apricots"
-msgstr ""
+msgstr "Albicocche fresche"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_04072990
 msgid ""
 "Fresh birds' eggs, in shell (excl. of poultry, and fertilised for incubation)"
 msgstr ""
+"Uova fresche di uccelli, in guscio (escluse quelle di pollame, anche "
+"fecondate per l'incubazione)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08102090
 msgid "Fresh blackberries, mulberries and loganberries"
-msgstr ""
+msgstr "More fresche, gelsi e mirtilli rossi"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08103010
 msgid "Fresh blackcurrants"
-msgstr ""
+msgstr "More nere fresche"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_04061020
@@ -25707,6 +25710,9 @@ msgid ""
 "Fresh cheese \"unripened or uncured cheese\", incl. whey cheese and curd of "
 "a fat content, by weight, of <= 40%"
 msgstr ""
+"Formaggio fresco \"formaggio non stagionato o non stagionato\", inclusi "
+"formaggio di siero di latte e cagliata con contenuto, in peso, di grassi <= "
+"40%"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_04061080
@@ -25714,21 +25720,24 @@ msgid ""
 "Fresh cheese \"unripened or uncured cheese\", incl. whey cheese and curd of "
 "a fat content, by weight, of > 40%"
 msgstr ""
+"Formaggio fresco \"formaggio non stagionato o non stagionato\", inclusi "
+"formaggio di siero di latte e cagliata con un contenuto di grassi, in peso, "
+"> 40%"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08092900
 msgid "Fresh cherries (excl. sour cherries)"
-msgstr ""
+msgstr "Ciliegie fresche (escluse amarene)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08081010
 msgid "Fresh cider apples, in bulk, from 16 September to 15 December"
-msgstr ""
+msgstr "Mele da sidro fresche, sfuse, dal 16 settembre al 15 dicembre"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08011200
 msgid "Fresh coconuts in the inner shell \"endocarp\""
-msgstr ""
+msgstr "Noci di cocco fresche nel guscio interno \"endocarpo\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08011900
@@ -25736,11 +25745,13 @@ msgid ""
 "Fresh coconuts, whether or not shelled or peeled (excl. in the inner shell "
 "\"endocarp\")"
 msgstr ""
+"Noci di cocco fresche, anche sgusciate o decorticate (escluse quelle con il "
+"guscio interno \"endocarpo\")"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06042040
 msgid "Fresh conifer branches, suitable for bouquets or ornamental purposes"
-msgstr ""
+msgstr "Rami freschi di conifere, adatti per bouquet o scopi ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08104010
@@ -25748,6 +25759,8 @@ msgid ""
 "Fresh cowberries, foxberries or mountain cranberries \"fruit of the species "
 "Vaccinium vitis-idaea\""
 msgstr ""
+"Mirtilli rossi freschi, mirtilli rossi o mirtilli rossi di montagna \"frutti "
+"della specie Vaccinium vitis-idaea\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031200
@@ -25755,6 +25768,8 @@ msgid ""
 "Fresh cut carnations and buds, of a kind suitable for bouquets or for "
 "ornamental purposes"
 msgstr ""
+"Garofani e boccioli appena recisi, adatti per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031400
@@ -25762,6 +25777,8 @@ msgid ""
 "Fresh cut chrysanthemums and buds, of a kind suitable for bouquets or for "
 "ornamental purposes"
 msgstr ""
+"Crisantemi e boccioli appena tagliati, per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031980
@@ -25770,6 +25787,8 @@ msgid ""
 "ornamental purposes (excl. roses, carnations, orchids, gladioli, "
 "chrysanthemums and lilies)"
 msgstr ""
+"Fiori e boccioli, freschi recisi, per mazzi o per ornamento (escl. rose, "
+"garofani, orchidee, gladioli, crisantemi e gigli)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031910
@@ -25777,6 +25796,8 @@ msgid ""
 "Fresh cut gladioli and buds, of a kind suitable for bouquets or for "
 "ornamental purposes"
 msgstr ""
+"Gladioli e boccioli tagliati freschi, adatti per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031500
@@ -25784,6 +25805,8 @@ msgid ""
 "Fresh cut lilies \"Lilium spp.\" and buds, of a kind suitable for bouquets "
 "or for ornamental purposes"
 msgstr ""
+"Gladioli e boccioli tagliati freschi, adatti per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031300
@@ -25791,6 +25814,8 @@ msgid ""
 "Fresh cut orchids and buds, of a kind suitable for bouquets or for "
 "ornamental purposes"
 msgstr ""
+"Orchidee e boccioli appena recisi, adatti per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_06031100
@@ -25798,32 +25823,37 @@ msgid ""
 "Fresh cut roses and buds, of a kind suitable for bouquets or for ornamental "
 "purposes"
 msgstr ""
+"Rose e boccioli appena recisi, adatti per mazzi di fiori o per scopi "
+"ornamentali"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08106000
 msgid "Fresh durians"
-msgstr ""
+msgstr "Durioni freschi"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_04072100
 msgid ""
 "Fresh eggs of domestic fowls, in shell (excl. fertilised for incubation)"
 msgstr ""
+"Uova fresche di volatili domestici, in guscio (escluse fecondate per "
+"l'incubazione)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08042010
 msgid "Fresh figs"
-msgstr ""
+msgstr "Fichi freschi"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08104050
 msgid "Fresh fruit of species Vaccinium macrocarpum and Vaccinium corymbosum"
 msgstr ""
+"Frutti freschi delle specie Vaccinium macrocarpum e Vaccinium corymbosum"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08104030
 msgid "Fresh fruit of species Vaccinium myrtillus"
-msgstr ""
+msgstr "Frutto fresco della specie Vaccinium myrtillus"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08109075
@@ -25836,6 +25866,13 @@ msgid ""
 "loganberries, black, white or red currants, gooseberries, cranberries, "
 "fruits of the genus Vaccinium, kiwifruit, durians and persimmons)"
 msgstr ""
+"Frutta fresca commestibile (escluse noci, banane, datteri, fichi, ananas, "
+"avocadi, guaiave, manghi, mangostani, papaie, tamarindi, anacardi, "
+"jackfruit, litchi, sapodilli, frutti della passione, carambole, pitahaya, "
+"agrumi, uva, meloni, mele, pere, mele cotogne, albicocche, ciliegie, pesche, "
+"prugne, prugnole, fragole, lamponi, more, gelsi, more-lamponi, ribes nero, "
+"bianco o rosso, uva spina, mirtilli rossi, frutti del genere Vaccinium, "
+"kiwi, durioni e cachi)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08104090
@@ -25843,31 +25880,33 @@ msgid ""
 "Fresh fruits of genus Vaccinium (excl. of species Vaccinium vitis-idaea, "
 "myrtillus, macrocarpum and corymbosum)"
 msgstr ""
+"Frutti freschi del genere Vaccinium (escluse delle specie Vaccinium vitis-"
+"idaea, myrtillus, macrocarpum e corymbosum)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08061090
 msgid "Fresh grapes (excl. table grapes)"
-msgstr ""
+msgstr "Uve fresche (escluse uve da tavola)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08105000
 msgid "Fresh kiwifruit"
-msgstr ""
+msgstr "Kiwi freschi"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08071900
 msgid "Fresh melons (excl. watermelons)"
-msgstr ""
+msgstr "Meloni freschi (escluse angurie)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_08093010
 msgid "Fresh nectarines"
-msgstr ""
+msgstr "Nettarine fresche"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03025500
 msgid "Fresh or chilled Alaska pollack \"Theragra chalcogramma\""
-msgstr ""
+msgstr "Merluzzo dell'Alaska fresco o refrigerato \"Theragra chalcogramma\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023519
@@ -25875,6 +25914,8 @@ msgid ""
 "Fresh or chilled Atlantic bluefin tuna \"Thunnus thynnus\" (excl. for "
 "industrial processing or preservation)"
 msgstr ""
+"Tonno rosso dell'Atlantico \"Thunnus Thynnus\", fresco o refrigerato ("
+"escluso destinato alla trasformazione o alla conservazione industriale)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023511
@@ -25882,16 +25923,18 @@ msgid ""
 "Fresh or chilled Atlantic bluefin tuna \"Thunnus thynnus\", for industrial "
 "processing or preservation"
 msgstr ""
+"Tonno rosso dell'Atlantico \"Thunnus Thynnus\", fresco o refrigerato, "
+"destinato alla lavorazione industriale o alla conservazione"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03022130
 msgid "Fresh or chilled Atlantic halibut \"Hippoglossus hippoglossus\""
-msgstr ""
+msgstr "Ippoglosso atlantico \"Hippoglossus hippoglossus\" fresco o refrigerato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03024510
 msgid "Fresh or chilled Atlantic horse mackerel \"Trachurus trachurus\""
-msgstr ""
+msgstr "Sugarello dell'Atlantico \"Trachurus trachurus\" fresco o refrigerato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03021400
@@ -25899,6 +25942,8 @@ msgid ""
 "Fresh or chilled Atlantic salmon \"Salmo salar\" and Danube salmon \"Hucho "
 "hucho\""
 msgstr ""
+"Salmone dell'Atlantico \"Salmo salar\" fresco o refrigerato e salmone del "
+"Danubio \"Hucho hucho\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03025411
@@ -25906,16 +25951,19 @@ msgid ""
 "Fresh or chilled Cape hake \"shallow-water hake\" \"Merluccius capensis\" "
 "and deepwater hake \"deepwater Cape hake\" \"Merluccius paradoxus\""
 msgstr ""
+"Nasello del Capo fresco o refrigerato \"Nasello di acque basse\" \"Merluccius"
+" capensis\" e Nasello di acque profonde \"Nasello di acque profonde\" "
+"\"Merluccius paradoxus\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03024530
 msgid "Fresh or chilled Chilean jack mackerel \"Trachurus murphyi\""
-msgstr ""
+msgstr "Sgombro cileno \"Trachurus murphyi\" fresco o refrigerato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03028410
 msgid "Fresh or chilled European sea bass \"Dicentrarchus labrax\""
-msgstr ""
+msgstr "Spigola \"Dicentrarchus labrax\" fresca o refrigerata"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023599
@@ -25923,6 +25971,8 @@ msgid ""
 "Fresh or chilled Pacific bluefin tuna \"Thunnus orientalis\" (excl. for "
 "industrial processing or preservation)"
 msgstr ""
+"Tonno rosso del Pacifico \"Thunnus orientalis\", fresco o refrigerato (escl. "
+"destinato alla trasformazione industriale o alla conservazione)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023591
@@ -25930,11 +25980,14 @@ msgid ""
 "Fresh or chilled Pacific bluefin tuna \"Thunnus orientalis\", for industrial "
 "processing or preservation"
 msgstr ""
+"Tonno rosso del Pacifico \"Thunnus orientalis\", fresco o refrigerato, "
+"destinato alla lavorazione industriale o alla conservazione"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03022190
 msgid "Fresh or chilled Pacific halibut \"Hippoglossus stenolepis\""
 msgstr ""
+"Ippoglosso del Pacifico \"Hippoglossus stenolepis\" fresco o refrigerato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03021300
@@ -25943,6 +25996,9 @@ msgid ""
 "gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus "
 "kisutch, Oncorhynchus masou and Oncorhynchus rhodurus\""
 msgstr ""
+"Salmone del Pacifico fresco o refrigerato \"Oncorhynchus nerka, Oncorhynchus "
+"gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus "
+"kisutch, Oncorhynchus masou e Oncorhynchus rhodurus\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023690
@@ -25950,6 +26006,8 @@ msgid ""
 "Fresh or chilled Southern bluefin tunas \"Thunnus maccoyii\" (excl. tunas "
 "for industrial processing or preservation)"
 msgstr ""
+"Tonni rossi del sud \"Thunnus maccoyii\", freschi o refrigerati (escl. tonni "
+"destinati alla trasformazione o alla conservazione industriale)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023610
@@ -25957,6 +26015,8 @@ msgid ""
 "Fresh or chilled Southern bluefin tunas \"Thunnus maccoyii\" for industrial "
 "processing or preservation"
 msgstr ""
+"Tonno rosso del sud \"Thunnus maccoyii\" fresco o refrigerato destinato alla "
+"lavorazione industriale o alla conservazione"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023190
@@ -25964,6 +26024,9 @@ msgid ""
 "Fresh or chilled albacore or longfinned tunas \"Thunnus alalunga\" (excl. "
 "for industrial processing or preservation)"
 msgstr ""
+"Tonni bianchi o tonni a pinne lunghe \"Thunnus alalunga\", freschi o "
+"refrigerati (esclusi destinati alla trasformazione o alla conservazione "
+"industriale)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023110
@@ -25971,21 +26034,23 @@ msgid ""
 "Fresh or chilled albacore or longfinned tunas \"Thunnus alalunga\" for "
 "industrial processing or preservation"
 msgstr ""
+"Tonno bianco o tonno bianco \"Thunnus alalunga\" fresco o refrigerato "
+"destinato alla lavorazione o alla conservazione industriale"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03024200
 msgid "Fresh or chilled anchovies \"Engraulis spp.\""
-msgstr ""
+msgstr "Acciughe fresche o refrigerate \"Engraulis spp.\""
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_07092000
 msgid "Fresh or chilled asparagus"
-msgstr ""
+msgstr "Asparagi freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_07093000
 msgid "Fresh or chilled aubergines \"eggplants\""
-msgstr ""
+msgstr "Melanzane \"melanzane\" fresche o refrigerate"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02074441
@@ -25993,6 +26058,8 @@ msgid ""
 "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-"
 "tips of domestic ducks"
 msgstr ""
+"Dorsi, colli, dorsi con collo attaccato, groppe e punte di ali di anatre "
+"domestiche freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02075441
@@ -26000,6 +26067,8 @@ msgid ""
 "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-"
 "tips of domestic geese"
 msgstr ""
+"Schiene, colli, dorsi con collo attaccato, groppe e punte di ali di oche "
+"domestiche, freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02071340
@@ -26007,6 +26076,8 @@ msgid ""
 "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-"
 "tips of fowls of the species Gallus domesticus"
 msgstr ""
+"Dorsi, colli, dorsi con collo attaccato, groppe e punte di ali freschi o "
+"refrigerati di volatili della specie Gallus domesticus"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02072640
@@ -26014,17 +26085,23 @@ msgid ""
 "Fresh or chilled backs, necks, backs with necks attached, rumps and wing-"
 "tips of turkeys of the species domesticus"
 msgstr ""
+"Dorsi, colli, dorsi con collo attaccato, groppe e punte di ali di tacchini "
+"della specie domesticus freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_07082000
 msgid ""
 "Fresh or chilled beans \"Vigna spp., Phaseolus spp.\", shelled or unshelled"
 msgstr ""
+"Fagioli \"Vigna spp., Phaseolus spp.\", freschi o refrigerati, sgusciati o "
+"sgusciati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02031915
 msgid "Fresh or chilled bellies \"streaky\" and cuts thereof of domestic swine"
 msgstr ""
+"Pancette \"striate\" fresche o refrigerate e relative parti di suini "
+"domestici"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023490
@@ -26032,6 +26109,8 @@ msgid ""
 "Fresh or chilled bigeye tunas \"Thunnus obesus\" (excl. tunas for industrial "
 "processing or preservation)"
 msgstr ""
+"Tonni obesi \"Thunnus obesus\", freschi o refrigerati (esclusi tonni "
+"destinati alla trasformazione o alla conservazione industriale)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03023410
@@ -26039,6 +26118,8 @@ msgid ""
 "Fresh or chilled bigeye tunas \"Thunnus obesus\" for industrial processing "
 "or preservation"
 msgstr ""
+"Tonni obesi \"Thunnus obesus\" freschi o refrigerati destinati alla "
+"lavorazione o alla conservazione industriale"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_03025600
@@ -26046,22 +26127,26 @@ msgid ""
 "Fresh or chilled blue whiting \"Micromesistius poutassou, Micromesistius "
 "australis\""
 msgstr ""
+"Melù \"Micromesistius poutassou, Micromesistius australis\" fresco o "
+"refrigerato"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02071310
 msgid ""
 "Fresh or chilled boneless cuts of fowls of the species Gallus domesticus"
 msgstr ""
+"Tagli disossati freschi o refrigerati di volatili della specie Gallus "
+"domesticus"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02045039
 msgid "Fresh or chilled boneless cuts of goat"
-msgstr ""
+msgstr "Tagli di capra disossati freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02042300
 msgid "Fresh or chilled boneless cuts of sheep"
-msgstr ""
+msgstr "Tagli di pecora disossati freschi o refrigerati"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02042290
@@ -26069,11 +26154,15 @@ msgid ""
 "Fresh or chilled boneless cuts of sheep, with bone in (excl. carcases and "
 "half-carcases, short forequarters, chines and/or best ends, and legs)"
 msgstr ""
+"Pezzi di ovini disossati, freschi o refrigerati, non disossati (escl. "
+"carcasse e mezzene, quarti anteriori corti, spine e/o estremità migliori, "
+"nonché cosce)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02072610
 msgid "Fresh or chilled boneless cuts of turkeys of the species domesticus"
 msgstr ""
+"Tagli disossati freschi o refrigerati di tacchini della specie domesticus"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02031955
@@ -26081,6 +26170,8 @@ msgid ""
 "Fresh or chilled boneless meat of domestic swine (excl. bellies and cuts "
 "thereof)"
 msgstr ""
+"Carni disossate di animali domestici della specie suina, fresche o "
+"refrigerate (escluse pancette e loro pezzi)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02012090
@@ -26088,11 +26179,13 @@ msgid ""
 "Fresh or chilled bovine cuts, with bone in (excl. carcases and half-"
 "carcases, \"compensated quarters\", forequarters and hindquarters)"
 msgstr ""
+"Pezzi di bovini, freschi o refrigerati, non disossati (escluse carcasse e "
+"mezzene, \"quarti compensati\", quarti anteriori e quarti posteriori)"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02013000
 msgid "Fresh or chilled bovine meat, boneless"
-msgstr ""
+msgstr "Carne bovina fresca o refrigerata, disossata"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_02071350
