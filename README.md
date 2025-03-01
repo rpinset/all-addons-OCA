@@ -42,11 +42,14 @@ Date:   Sun Feb 2 17:49:38 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 1ed0799c2272a0c783056556a511fa943f4124ca
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:50:35 2025 +0000
+commit c5411c33fa1f0ae5cfc8163e2d3d035ffcc6768c
+Merge: 1ed0799c fa9ef216
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 27 13:34:33 2025 +0000
 
-    [IMP] update dotfiles
+    Merge PR #321 into 15.0
+    
+    Signed-off-by alexis-via
 
 
 ## account-consolidation
@@ -115,16 +118,16 @@ Date:   Wed May 1 17:46:09 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 37d9cd6404f7b0c1b435d1d6d2d0ecc5723f29f3
-Author: Anna Martínez <anna080678@gmail.com>
-Date:   Mon Feb 17 13:31:20 2025 +0000
+commit d8da7605405afd5b86bef1e64c9bd67bb409fc91
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Feb 27 09:39:02 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 96.0% (24 of 25 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: operating-unit-15.0/operating-unit-15.0-operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-operating_unit/es/
+    Translation: operating-unit-15.0/operating-unit-15.0-account_financial_report_operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-account_financial_report_operating_unit/
 
 
 ## intrastat
@@ -156,11 +159,16 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit bd89acda48b56a48a0b971b7dc2b5415a22adc24
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:30:35 2025 +0000
+commit 1fabf27f532d247e7f7ffef21c7c64655bc5b60d
+Author: Carlos Dauden <carlos.dauden@tecnativa.com>
+Date:   Fri Feb 28 08:36:16 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 96.0% (24 of 25 strings)
+    
+    Translation: credit-control-15.0/credit-control-15.0-sale_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-sale_financial_risk/es/
 
 
 ## data-protection
@@ -1158,11 +1166,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit f3f417a07d82244bdc0d49318452fc414409fa0e
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:09:45 2025 +0000
+commit e2688f266bd763fd63f965a725b657b80d9c05e1
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Feb 28 14:02:27 2025 +0000
 
-    [IMP] update dotfiles
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: product-attribute-15.0/product-attribute-15.0-product_pricelist_direct_print
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_pricelist_direct_print/
 
 
 ## product-kitting

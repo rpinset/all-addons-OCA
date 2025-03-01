@@ -17,14 +17,14 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. module: account_financial_report_operating_unit
+#: model:ir.model,name:account_financial_report_operating_unit.model_account_financial_report_abstract_wizard
+msgid "Abstract Wizard"
+msgstr ""
+
+#. module: account_financial_report_operating_unit
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_aged_partner_balance
 msgid "Aged Partner Balance Report"
 msgstr "Informe de Calidad de deuda"
-
-#. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_aged_partner_balance_report_wizard
-msgid "Aged Partner Balance Wizard"
-msgstr ""
 
 #. module: account_financial_report_operating_unit
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_general_ledger
@@ -32,19 +32,9 @@ msgid "General Ledger Report"
 msgstr "Informe del libro mayor"
 
 #. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_general_ledger_report_wizard
-msgid "General Ledger Report Wizard"
-msgstr ""
-
-#. module: account_financial_report_operating_unit
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_journal_ledger
 msgid "Journal Ledger Report"
 msgstr "Informe del libro diario"
-
-#. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_journal_ledger_report_wizard
-msgid "Journal Ledger Report Wizard"
-msgstr ""
 
 #. module: account_financial_report_operating_unit
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_open_items
@@ -52,11 +42,7 @@ msgid "Open Items Report"
 msgstr "Informe de efectos abiertos"
 
 #. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_open_items_report_wizard
-msgid "Open Items Report Wizard"
-msgstr ""
-
-#. module: account_financial_report_operating_unit
+#: model:ir.model.fields,field_description:account_financial_report_operating_unit.field_account_financial_report_abstract_wizard__operating_unit_ids
 #: model:ir.model.fields,field_description:account_financial_report_operating_unit.field_aged_partner_balance_report_wizard__operating_unit_ids
 #: model:ir.model.fields,field_description:account_financial_report_operating_unit.field_general_ledger_report_wizard__operating_unit_ids
 #: model:ir.model.fields,field_description:account_financial_report_operating_unit.field_journal_ledger_report_wizard__operating_unit_ids
@@ -80,16 +66,6 @@ msgstr "Unidades operativas"
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_trial_balance
 msgid "Trial Balance Report"
 msgstr "Balance de sumas y saldos"
-
-#. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_trial_balance_report_wizard
-msgid "Trial Balance Report Wizard"
-msgstr ""
-
-#. module: account_financial_report_operating_unit
-#: model:ir.model,name:account_financial_report_operating_unit.model_vat_report_wizard
-msgid "VAT Report Wizard"
-msgstr ""
 
 #. module: account_financial_report_operating_unit
 #: model:ir.model,name:account_financial_report_operating_unit.model_report_account_financial_report_vat_report

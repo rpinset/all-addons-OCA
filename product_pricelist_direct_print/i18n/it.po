@@ -412,6 +412,11 @@ msgid "Show Sale Price"
 msgstr "Mostra prezzo di vendita"
 
 #. module: product_pricelist_direct_print
+#: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__show_uom
+msgid "Show UOM"
+msgstr ""
+
+#. module: product_pricelist_direct_print
 #: model:ir.model.fields,field_description:product_pricelist_direct_print.field_product_pricelist_print__show_variants
 msgid "Show Variants"
 msgstr "Mostra varianti"
@@ -442,6 +447,12 @@ msgstr "Riepilogo"
 #, python-format
 msgid "Summary:"
 msgstr "Riepilogo:"
+
+#. module: product_pricelist_direct_print
+#: code:addons/product_pricelist_direct_print/report/product_pricelist_xlsx.py:0
+#, python-format
+msgid "UOM"
+msgstr ""
 
 #. module: product_pricelist_direct_print
 #: code:addons/product_pricelist_direct_print/wizards/product_pricelist_print.py:0

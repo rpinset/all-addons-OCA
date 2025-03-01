@@ -596,7 +596,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_asset_operating_unit](account_asset_operating_unit/) | 15.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | This module adds operating unit information to assets.
 [account_asset_transfer_operating_unit](account_asset_transfer_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Add operating unit to asset transfer
-[account_financial_report_operating_unit](account_financial_report_operating_unit/) | 15.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
+[account_financial_report_operating_unit](account_financial_report_operating_unit/) | 15.0.1.1.0 |  | Introduces Operating Unit (OU) in financial reports
 [account_operating_unit](account_operating_unit/) | 15.0.1.3.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 15.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Access all OUs' Accounting
 [analytic_operating_unit](analytic_operating_unit/) | 15.0.1.0.1 |  | Analytic Operating Unit
@@ -859,7 +859,7 @@ addon | version | maintainers | summary
 [account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 15.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 15.0.1.0.2 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 15.0.3.0.1 | [![Daniel-CA](https://github.com/Daniel-CA.png?size=30px)](https://github.com/Daniel-CA) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![omar7r](https://github.com/omar7r.png?size=30px)](https://github.com/omar7r) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Risk insurance partner information
-[sale_financial_risk](sale_financial_risk/) | 15.0.1.2.4 |  | Manage partner risk in sales orders
+[sale_financial_risk](sale_financial_risk/) | 15.0.1.3.0 |  | Manage partner risk in sales orders
 [sale_financial_risk_confirm_action](sale_financial_risk_confirm_action/) | 15.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Allow confirm sale order in risk exception but changing several sale order fields
 [sale_financial_risk_info](sale_financial_risk_info/) | 15.0.1.0.1 |  | Adds risk consumption info in sales orders.
 [sale_payment_sheet_financial_risk](sale_payment_sheet_financial_risk/) | 15.0.1.0.1 |  | Manage partner risk in sale payment sheet
@@ -6709,7 +6709,7 @@ addon | version | maintainers | summary
 [product_order_noname](product_order_noname/) | 15.0.1.0.0 | [![WR-96](https://github.com/WR-96.png?size=30px)](https://github.com/WR-96) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Speedup product retrieve
 [product_packaging_type](product_packaging_type/) | 15.0.1.0.0 |  | Product Packaging Type
 [product_pricelist_by_contact](product_pricelist_by_contact/) | 15.0.1.0.0 |  | Product Pricelist Per Contact
-[product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.4.0 |  | Print price list from menu option, product templates, products variants or price lists
+[product_pricelist_direct_print](product_pricelist_direct_print/) | 15.0.1.5.0 |  | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 15.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 15.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Extend Product Pricelist Direct Print for filter by public categories
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 15.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items

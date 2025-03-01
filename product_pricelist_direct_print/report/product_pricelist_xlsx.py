@@ -67,6 +67,9 @@ class ProductPricelistXlsx(models.AbstractModel):
             sheet.write(5, next_col, _("Sale Price"), header_format)
         next_col += 1
         sheet.write(5, next_col, _("List Price"), header_format)
+        if book.show_uom:
+            next_col += 1
+            sheet.write(5, next_col, _("UOM"), header_format)
         return sheet
 
     def _add_extra_header(self, sheet, book, next_col, header_format):
@@ -119,6 +122,9 @@ class ProductPricelistXlsx(models.AbstractModel):
                     product.with_context(pricelist=pricelist.id, date=print_date).price,
                     decimal_bold_format,
                 )
+                if book.show_uom:
+                    next_col += 1
+                    sheet.write(row, next_col, product.uom_id.display_name)
                 row += 1
         if book.summary:
             sheet.write(row, 0, _("Summary:"), bold_format)

@@ -43,6 +43,7 @@ class ProductPricelistPrint(models.TransientModel):
     )
     show_standard_price = fields.Boolean(string="Show Cost Price")
     show_sale_price = fields.Boolean()
+    show_uom = fields.Boolean(string="Show UOM", groups="uom.group_uom")
     hide_pricelist_name = fields.Boolean()
     order_field = fields.Selection(
         [("name", "Name"), ("default_code", "Internal Reference")], string="Order"

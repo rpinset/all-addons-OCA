@@ -1,17 +1,17 @@
-# Copyright 2021 Ecosoft Co., Ltd. (http://ecosoft.co.th)
+# Copyright 2025 Ecosoft Co., Ltd. (http://ecosoft.co.th)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import fields, models
 
 
-class VATReportWizard(models.TransientModel):
-    _inherit = "vat.report.wizard"
+class AbstractWizard(models.AbstractModel):
+    _inherit = "account_financial_report_abstract_wizard"
 
     operating_unit_ids = fields.Many2many(
         comodel_name="operating.unit",
     )
 
-    def _prepare_vat_report(self):
-        res = super()._prepare_vat_report()
+    def _prepare_report_data(self):
+        res = super()._prepare_report_data()
         res.update({"operating_unit_ids": self.operating_unit_ids.ids or []})
         return res
