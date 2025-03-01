@@ -42,11 +42,14 @@ Date:   Sun Feb 2 17:49:28 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit e863571f36ee8f5dd7640d7928a44ff78b1cb028
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:50:21 2025 +0000
+commit af432c6494a166a1aabb9cf78fc71c6334d7e739
+Merge: e863571f 88466b57
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Feb 27 13:34:52 2025 +0000
 
-    [IMP] update dotfiles
+    Merge PR #320 into 14.0
+    
+    Signed-off-by alexis-via
 
 
 ## account-consolidation
@@ -177,16 +180,11 @@ Date:   Sun Feb 2 18:00:21 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 64de784f1c4101198cd3b1607afd44568ed195b3
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Wed Feb 5 09:56:50 2025 +0000
+commit 12a402f19f55d0d0eba8ab7db078586008b763df
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 28 11:22:22 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 86.8% (33 of 38 strings)
-    
-    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import/it/
+    [BOT] post-merge updates
 
 
 ## account-payment
@@ -432,11 +430,11 @@ Date:   Fri Dec 29 14:49:49 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 65099e2562a14dc87ac23d4721ba75748d80f5f5
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:02:16 2025 +0000
+commit aab69c496acd4cf5622daab669d15c4f76c1e72a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 28 09:10:12 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## dms
@@ -527,11 +525,11 @@ Date:   Sun Feb 9 19:02:05 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 579402928c84b079be0b280b442f2da8fa6cdd13
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:53:16 2025 +0000
+commit 7dc53cdb0bf250e736d9c90209a724cf2e5bac2c
+Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
+Date:   Thu Feb 27 21:52:22 2025 +0000
 
-    [IMP] update dotfiles
+    Added translation using Weblate (Italian (it_IT))
 
 
 ## hr-attendance
@@ -793,16 +791,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 985ec8cecb134df975c03c3266d6f26cdaf3747d
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Feb 20 10:56:34 2025 +0000
+commit 45bbecfa3a9a7c4366ca4431f0c4dd4888aa8882
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Feb 28 09:05:54 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 76.4% (13 of 17 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_sdd_cbi
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_sdd_cbi/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -1254,11 +1247,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit a47e0e8e364ba05465fc83e25f1bb603dacce45a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:28:05 2025 +0000
+commit 17b405270bc5c932ad88a64cc999cf11d71f591e
+Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
+Date:   Thu Feb 27 22:20:15 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (75 of 75 strings)
+    
+    Translation: contract-14.0/contract-14.0-agreement
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-agreement/it/
 
 
 ## program
@@ -1299,16 +1297,16 @@ Date:   Sun Feb 2 18:18:12 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 52b8e2c0d940ebdeb944bb61497406e45b501046
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 20 08:42:32 2025 +0000
+commit 407665641b2d6da31f2519283bfd21f66fa30b07
+Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
+Date:   Fri Feb 28 00:14:07 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: social-14.0/social-14.0-mail_restrict_follower_selection
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_restrict_follower_selection/it/
+    Translation: social-14.0/social-14.0-mail_allow_portal_internal_note
+    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-mail_allow_portal_internal_note/it/
 
 
 ## storage

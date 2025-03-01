@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-20 13:06+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-02-28 02:06+0000\n"
+"Last-Translator: Nicola Clemente <nickdellaclemodoo@gmail.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -24,27 +24,23 @@ msgstr "Base (CORE)"
 
 #. module: l10n_it_sdd_cbi
 #: model:account.payment.method,name:l10n_it_sdd_cbi.cbi_sdd_italy_00_01_00
-#, fuzzy
 msgid "CBI SDD Italy for customers (00.01.00)"
-msgstr "CBI SDD Italy for customers (00.01.00)"
+msgstr "CBI SDD Italia per i clienti (00.01.00)"
 
 #. module: l10n_it_sdd_cbi
 #: model:account.payment.method,name:l10n_it_sdd_cbi.cbi_sdd_italy_00_01_01
-#, fuzzy
 msgid "CBI SDD Italy for customers (00.01.01)"
-msgstr "CBI SDD Italy for customers (00.01.01)"
+msgstr "CBI SDD Italia per i clienti (00.01.01)"
 
 #. module: l10n_it_sdd_cbi
 #: model:ir.model.fields.selection,name:l10n_it_sdd_cbi.selection__account_payment_method__pain_version__cbibdysddreq_00_01_00
-#, fuzzy
 msgid "CBIBdySDDReq.00.01.00 (CBI SDD Italy)"
-msgstr "CBIBdySDDReq.00.01.00 (CBI SDD Italy)"
+msgstr "CBIBdySDDReq.00.01.00 (CBI SDD Italia)"
 
 #. module: l10n_it_sdd_cbi
 #: model:ir.model.fields.selection,name:l10n_it_sdd_cbi.selection__account_payment_method__pain_version__cbibdysddreq_00_01_01
-#, fuzzy
 msgid "CBIBdySDDReq.00.01.01 (CBI SDD Italy)"
-msgstr "CBIBdySDDReq.00.01.01 (CBI SDD Italy)"
+msgstr "CBIBdySDDReq.00.01.01 (CBI SDD Italia)"
 
 #. module: l10n_it_sdd_cbi
 #: model:ir.model,name:l10n_it_sdd_cbi.model_res_company
