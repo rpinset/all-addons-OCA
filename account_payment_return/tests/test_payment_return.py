@@ -5,9 +5,11 @@
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
 from odoo.exceptions import UserError, ValidationError
+from odoo.tests import tagged
 from odoo.tests.common import Form, TransactionCase
 
 
+@tagged("post_install", "-at_install")
 class TestPaymentReturn(TransactionCase):
     @classmethod
     def setUpClass(cls):
@@ -22,6 +24,15 @@ class TestPaymentReturn(TransactionCase):
                 tracking_disable=True,
             )
         )
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.journal = cls.env["account.journal"].create(
             {"name": "Test Sales Journal", "code": "tVEN", "type": "sale"}
         )

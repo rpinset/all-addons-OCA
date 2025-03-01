@@ -3,11 +3,13 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo.exceptions import UserError
+from odoo.tests import tagged
 from odoo.tests.common import Form
 
 from .test_import_file import TestPaymentReturnFile
 
 
+@tagged("post_install", "-at_install")
 class TestImportBase(TestPaymentReturnFile):
     """Run test to import payment return import."""
 
@@ -24,6 +26,15 @@ class TestImportBase(TestPaymentReturnFile):
                 tracking_disable=True,
             )
         )
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.company = cls.env.ref("base.main_company")
         cls.acc_number = "NL77ABNA0574908765"
         cls.acc_bank = cls.env["res.partner.bank"].create(

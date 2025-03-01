@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-20 11:06+0000\n"
+"PO-Revision-Date: 2025-02-26 11:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -58,7 +58,7 @@ msgstr "<strong>Da:</strong>"
 #. module: commission
 #: model_terms:ir.ui.view,arch_db:commission.report_settlement_document
 msgid "<strong>Global commission amount:</strong>"
-msgstr ""
+msgstr "<strong>Importo provvigioni documento:</strong>"
 
 #. module: commission
 #: model_terms:ir.ui.view,arch_db:commission.report_settlement_document

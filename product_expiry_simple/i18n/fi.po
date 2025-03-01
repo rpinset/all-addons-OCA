@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-19 16:06+0000\n"
+"PO-Revision-Date: 2025-03-01 13:06+0000\n"
 "Last-Translator: Ossi Mantylahti <ossi.mantylahti@terracolligo.com>\n"
 "Language-Team: none\n"
 "Language: fi\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: product_expiry_simple
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.view_stock_quant_form_editable
@@ -40,7 +40,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.search_product_lot_filter
 msgid "Expired"
-msgstr "Päättynyt"
+msgstr "Vanhentunut"
 
 #. module: product_expiry_simple
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_assign_serial__serial_expiry_date
@@ -51,7 +51,7 @@ msgstr "Päättynyt"
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.quant_search_view
 #: model_terms:ir.ui.view,arch_db:product_expiry_simple.search_product_lot_filter
 msgid "Expiry Date"
-msgstr "Päättymispäivä"
+msgstr "Vanhentumispäivä"
 
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_lot
@@ -82,8 +82,8 @@ msgid ""
 "Product %(product)s doesn't use expiry dates, but an expiry date is set on "
 "lot %(lot)s."
 msgstr ""
-"Tuotteessa %(product)s ei käytetä viimeinen käyttöpäivä, mutta erälle "
-"%(lot)s on asetettu viimeinen käyttöpäivä."
+"Tuotteessa %(product)s ei käytetä viimeistä käyttöpäivää, mutta erälle %(lot)"
+"s on asetettu viimeinen käyttöpäivä."
 
 #. module: product_expiry_simple
 #. odoo-python
@@ -93,8 +93,8 @@ msgid ""
 "Product %(product)s uses expiry dates, but expiry date is missing on lot "
 "%(lot)s."
 msgstr ""
-"Tuotteessa %(product)s käytetään viimeinen käyttöpäivä, mutta erästä %(lot)s "
-"puuttuu viimeinen käyttöpäivä."
+"Tuotteessa %(product)s käytetään viimeistä käyttöpäivää, mutta erästä %(lot)"
+"s puuttuu viimeinen käyttöpäivä."
 
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_move_line
@@ -104,7 +104,7 @@ msgstr "Tuotteiden siirrot (Varaston siirtorivi)"
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_quant
 msgid "Quants"
-msgstr "Varaston määrän muutoskirjaukset"
+msgstr "Varaston määrän muutoskirjaus"
 
 #. module: product_expiry_simple
 #: model:ir.model.fields,field_description:product_expiry_simple.field_stock_picking__show_expiry_warning
@@ -114,12 +114,12 @@ msgstr "Näytä vanhentumisvaroitus"
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_assign_serial
 msgid "Stock Assign Serial Numbers"
-msgstr ""
+msgstr "Varasto Aseta sarjanumerot"
 
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_move
 msgid "Stock Move"
-msgstr ""
+msgstr "Varastosiirto"
 
 #. module: product_expiry_simple
 #: model:ir.model,name:product_expiry_simple.model_stock_picking

@@ -107,7 +107,11 @@ class HrHolidaysPublic(models.Model):
             return self.env["hr.holidays.public.line"]
         partner_id = partner.id if partner else None
         states_filter = self._get_domain_states_filter(
-            pholidays, start_dt, end_dt, partner_id=partner_id
+            pholidays,
+            start_dt,
+            end_dt,
+            partner_id=partner_id,
+            employee_id=employee_id,
         )
         hhplo = self.env["hr.holidays.public.line"]
         holidays_lines = hhplo.search(states_filter)
@@ -125,7 +129,7 @@ class HrHolidaysPublic(models.Model):
         partner = self._get_partner_deprecated_employee(partner_id, employee_id)
         partner_id = partner.id if partner else None
         holidays_lines = self.get_holidays_list(
-            year=selected_date.year, partner_id=partner_id
+            year=selected_date.year, partner_id=partner_id, employee_id=employee_id
         )
         if holidays_lines:
             hol_date = holidays_lines.filtered(lambda r: r.date == selected_date)
@@ -135,20 +139,15 @@ class HrHolidaysPublic(models.Model):
 
     def _get_partner_deprecated_employee(self, partner_id, employee_id):
         # TODO: Drop function in next migration
-        employee = False
         partner = False
         if employee_id is not None:
-            _logger.warning(
-                "Use of employee_id for hr.public.holidays is deprecated. "
-                "Please use partner_id instead."
-            )
             employee = self.env["hr.employee"].browse(employee_id)
             partner = employee.address_id
         if partner_id:
             if partner:
                 _logger.warning(
-                    "Cannot use both employee_id and address_id in parameters. "
-                    "Ignoring employee_id."
+                    "Both 'employee_id' and 'partner_id' were provided in the "
+                    "method's parameters. Ignoring 'employee_id'."
                 )
             partner = self.env["res.partner"].browse(partner_id)
         return partner

@@ -150,11 +150,11 @@ addon | version | maintainers | summary
 [account_cutoff_accrual_sale](account_cutoff_accrual_sale/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Revenue on Sales Order
 [account_cutoff_accrual_sale_stock](account_cutoff_accrual_sale_stock/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module for Cut-Off Accruals on Sales with Stock Deliveries
 [account_cutoff_accrual_subscription](account_cutoff_accrual_subscription/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued expenses based on subscriptions
-[account_cutoff_base](account_cutoff_base/) | 16.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Base module for Account Cut-offs
+[account_cutoff_base](account_cutoff_base/) | 16.0.1.6.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Base module for Account Cut-offs
 [account_cutoff_picking](account_cutoff_picking/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued and prepaid expense/revenue from pickings
 [account_cutoff_start_end_dates](account_cutoff_start_end_dates/) | 16.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Cutoffs based on start/end dates
 [account_fiscal_year_closing](account_fiscal_year_closing/) | 16.0.1.0.0 |  | Generic fiscal year closing wizard
-[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
+[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 16.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 [account_invoice_start_end_dates_move](account_invoice_start_end_dates_move/) | 16.0.1.0.0 |  | Add the possibility to choose start and end dates on account invoice.
 [account_multicurrency_revaluation](account_multicurrency_revaluation/) | 16.0.1.0.1 |  | Manage revaluation for multicurrency environment
 
@@ -390,7 +390,7 @@ addon | version | maintainers | summary
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 16.0.1.1.9 |  | Print invoice lines grouped by picking
 [account_invoice_report_header_repeater](account_invoice_report_header_repeater/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Account Invoice Report Header Repeater
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 16.0.1.0.1 |  | Show payment extended info in invoice
-[account_invoice_report_product_sticker](account_invoice_report_product_sticker/) | 16.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display Product Stickers on Invoice Reports
+[account_invoice_report_product_sticker](account_invoice_report_product_sticker/) | 16.0.1.0.3 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Display Product Stickers on Invoice Reports
 [account_invoice_report_salesperson](account_invoice_report_salesperson/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Invoice report
 [account_reporting_volume](account_reporting_volume/) | 16.0.1.0.0 |  | Volume in the invoices analysis view
 [account_reporting_weight](account_reporting_weight/) | 16.0.1.0.0 |  | Weights in the invoices analysis view
@@ -955,25 +955,25 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 16.0.1.3.4 |  | Banking mandates
+[account_banking_mandate](account_banking_mandate/) | 16.0.1.3.5 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 16.0.1.0.3 |  | Assign specific banking mandates in contact level
 [account_banking_mandate_sale](account_banking_mandate_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds mandates on sale orders
 [account_banking_mandate_sale_contact](account_banking_mandate_sale_contact/) | 16.0.1.0.1 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Add a specific contact mandate to sale orders
 [account_banking_pain_base](account_banking_pain_base/) | 16.0.1.2.2 |  | Base module for PAIN file generation
-[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.1.5 |  | Create SEPA XML files for Credit Transfers
-[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.4 |  | Create SEPA files for Direct Debit
+[account_banking_sepa_credit_transfer](account_banking_sepa_credit_transfer/) | 16.0.1.1.6 |  | Create SEPA XML files for Credit Transfers
+[account_banking_sepa_direct_debit](account_banking_sepa_direct_debit/) | 16.0.1.4.5 |  | Create SEPA files for Direct Debit
 [account_payment_method_fs_storage](account_payment_method_fs_storage/) | 16.0.1.0.2 |  | Add the possibility to specify on the payment method, a storage where files generated will be pushed to upon payment
 [account_payment_mode](account_payment_mode/) | 16.0.1.2.2 |  | Account Payment Mode
-[account_payment_order](account_payment_order/) | 16.0.1.13.0 |  | Account Payment Order
+[account_payment_order](account_payment_order/) | 16.0.1.13.1 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 16.0.1.0.3 |  | Account Payment Order - Generate grouped moves
-[account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
+[account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 16.0.1.0.1 |  | Account Payment Order Return
 [account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_order_vendor_email](account_payment_order_vendor_email/) | 16.0.1.0.0 | [![ursais](https://github.com/ursais.png?size=30px)](https://github.com/ursais) | Account Payment Order Email
-[account_payment_partner](account_payment_partner/) | 16.0.1.2.6 |  | Adds payment mode on partners and invoices
-[account_payment_purchase](account_payment_purchase/) | 16.0.2.0.4 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_partner](account_payment_partner/) | 16.0.1.2.7 |  | Adds payment mode on partners and invoices
+[account_payment_purchase](account_payment_purchase/) | 16.0.2.0.5 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 16.0.1.0.1 |  | Integrate Account Payment Purchase with Stock
-[account_payment_sale](account_payment_sale/) | 16.0.1.0.5 |  | Adds payment mode on sale orders
+[account_payment_sale](account_payment_sale/) | 16.0.1.0.7 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
 
@@ -1147,9 +1147,9 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Payment Register with Multiple Deduction
 [account_payment_notification](account_payment_notification/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Notifiy upcoming payments
 [account_payment_promissory_note](account_payment_promissory_note/) | 16.0.1.0.1 |  | Account Payment Promissory Note
-[account_payment_return](account_payment_return/) | 16.0.1.2.1 |  | Manage the return of your payments
-[account_payment_return_import](account_payment_return_import/) | 16.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
-[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.2 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
+[account_payment_return](account_payment_return/) | 16.0.1.2.2 |  | Manage the return of your payments
+[account_payment_return_import](account_payment_return_import/) | 16.0.1.0.2 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
+[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 16.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
 [account_payment_term_extension](account_payment_term_extension/) | 16.0.1.0.3 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_widget_amount](account_payment_widget_amount/) | 16.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Extends the payment widget to be able to choose the payment amount
@@ -1298,7 +1298,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.1.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 16.0.1.2.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 16.0.2.9.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 16.0.2.10.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.1.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 16.0.1.1.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
@@ -2498,7 +2498,7 @@ and promote its widespread use.
 
 # knowledge
 
-Knowlesge management addons. Also has some usefull tools to handle attachments
+Knowledge management addons. Also has some useful tools to handle attachments.
 
 <!-- /!\ do not modify below this line -->
 
@@ -2512,7 +2512,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_zipped_download](attachment_zipped_download/) | 16.0.2.0.3 |  | Attachment Zipped Download
 [document_knowledge](document_knowledge/) | 16.0.1.1.0 |  | Documents Knowledge
-[document_page](document_page/) | 16.0.1.5.0 |  | Document Page
+[document_page](document_page/) | 16.0.1.6.0 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 16.0.1.1.0 |  | Choose groups to access document pages
 [document_page_access_group_user_role](document_page_access_group_user_role/) | 16.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Document Page Access Group User Role
 [document_page_approval](document_page_approval/) | 16.0.1.1.1 |  | Document Page Approval
@@ -2632,7 +2632,7 @@ addon | version | maintainers | summary
 [website_sale_comparison_hide_price](website_sale_comparison_hide_price/) | 16.0.1.0.0 |  | Hide product prices on the shop
 [website_sale_hide_price](website_sale_hide_price/) | 16.0.2.2.1 |  | Hide product prices on the shop
 [website_sale_invoice_address](website_sale_invoice_address/) | 16.0.1.0.0 |  | Set e-Commerce sale orders invoice address as in backend
-[website_sale_order_type](website_sale_order_type/) | 16.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
+[website_sale_order_type](website_sale_order_type/) | 16.0.1.0.2 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
 [website_sale_product_assortment](website_sale_product_assortment/) | 16.0.1.1.1 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Use product assortments to display products available on e-commerce.
 [website_sale_product_attachment](website_sale_product_attachment/) | 16.0.1.1.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Let visitors download attachments from a product page
 [website_sale_product_attribute_filter_collapse](website_sale_product_attribute_filter_collapse/) | 16.0.1.0.1 |  | Allows the attributes of the categories to be folded
@@ -3057,7 +3057,7 @@ addon | version | maintainers | summary
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 16.0.1.0.1 |  | Timesheet - Begin/End Hours
 [hr_timesheet_editable_top](hr_timesheet_editable_top/) | 16.0.1.0.0 |  | Add new timesheet entries to the top of the list
 [hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Employee Analytic Tag
-[hr_timesheet_name_customer](hr_timesheet_name_customer/) | 16.0.1.0.0 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Add ‘Description Customer’ field for timesheets
+[hr_timesheet_name_customer](hr_timesheet_name_customer/) | 16.0.1.0.1 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Add ‘Description Customer’ field for timesheets
 [hr_timesheet_report](hr_timesheet_report/) | 16.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Generate Timesheet Report from Task Logs
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 16.0.1.1.4 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_attendance](hr_timesheet_sheet_attendance/) | 16.0.1.0.0 |  | HR Timesheet Sheet Attendance
@@ -3072,7 +3072,7 @@ addon | version | maintainers | summary
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.1 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
 [sale_timesheet_invoice_link](sale_timesheet_invoice_link/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Link invoices with timesheet lines
-[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.1.1 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 16.0.1.2.0 |  | Exclude Timesheet Line from Sale Order
 [sale_timesheet_rounded](sale_timesheet_rounded/) | 16.0.1.0.0 |  | Round timesheet entries amount based on project settings.
 [sale_timesheet_task_exclude](sale_timesheet_task_exclude/) | 16.0.1.0.0 |  | Exclude Task and related Timesheets from Sale Order
 [sale_timesheet_timeline](sale_timesheet_timeline/) | 16.0.1.0.0 |  | Dates planning in sales order lines
@@ -3308,9 +3308,9 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_auto_extend](hr_holidays_auto_extend/) | 16.0.1.0.0 |  | Allow to extend some kind of holidays
 [hr_holidays_leave_auto_approve](hr_holidays_leave_auto_approve/) | 16.0.1.0.0 |  | Leave type for auto-validation of Leaves
-[hr_holidays_natural_period](hr_holidays_natural_period/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
+[hr_holidays_natural_period](hr_holidays_natural_period/) | 16.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_natural_period_public](hr_holidays_natural_period_public/) | 16.0.1.0.0 |  | Allow excluding public holidays for natural days holidays
-[hr_holidays_public](hr_holidays_public/) | 16.0.2.0.2 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 16.0.2.0.3 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 16.0.2.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 [hr_holidays_settings](hr_holidays_settings/) | 16.0.1.0.0 |  | Enables Settings Form for HR Holidays.
 [hr_holidays_summary_email](hr_holidays_summary_email/) | 16.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Notify employees with daily or weekly leaves summaries of their company.
@@ -3446,7 +3446,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 16.0.1.1.6 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 16.0.1.1.7 |  | Intercompany invoice rules
 [account_move_change_company](account_move_change_company/) | 16.0.1.0.0 |  | Allow to change company of account moves
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 16.0.1.0.0 |  | This module adds a wizard to create companies easily
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Propagate account reconcile model in companies with same chart template
@@ -4547,7 +4547,7 @@ addon | version | maintainers | summary
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.7 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
 [l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 16.0.1.0.13 |  | Gestione dichiarazioni di intento
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.5.1 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 16.0.1.5.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 16.0.1.0.2 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 16.0.1.1.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea i DDT partendo da gruppi di prelievi
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 16.0.1.0.0 | [![andreampiovesana](https://github.com/andreampiovesana.png?size=30px)](https://github.com/andreampiovesana) | Crea collegamento tra i DDT e ordine di vendita/acquisto
@@ -4588,7 +4588,7 @@ addon | version | maintainers | summary
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 16.0.1.0.0 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 16.0.1.0.0 |  | ITA - Esigibilità IVA
-[l10n_it_vat_registries](l10n_it_vat_registries/) | 16.0.1.2.1 |  | ITA - Registri IVA
+[l10n_it_vat_registries](l10n_it_vat_registries/) | 16.0.1.2.2 |  | ITA - Registri IVA
 [l10n_it_vat_registries_rc](l10n_it_vat_registries_rc/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_vat_registries e l10n_it_reverse_charge
 [l10n_it_vat_registries_split_payment](l10n_it_vat_registries_split_payment/) | 16.0.1.0.0 |  | Modulo di congiunzione tra registri IVA e scissione dei pagamenti
 [l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 16.0.1.0.2 |  | Settlement date for VAT Statement
@@ -5239,14 +5239,14 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.2.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.1.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.10.4 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 16.0.1.0.2 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.4.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.1 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.10.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.10.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.1.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.1 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
@@ -5255,12 +5255,12 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_sii_taxfree](l10n_es_aeat_sii_taxfree/) | 16.0.2.0.1 |  | Régimen Especial de Viajeros - SII
 [l10n_es_atc](l10n_es_atc/) | 16.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
-[l10n_es_atc_mod415](l10n_es_atc_mod415/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | ATC Modelo 415
+[l10n_es_atc_mod415](l10n_es_atc_mod415/) | 16.0.1.0.1 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | ATC Modelo 415
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 16.0.1.1.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | ATC Modelo 420
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.10.4 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.2.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
@@ -5280,7 +5280,7 @@ addon | version | maintainers | summary
 [l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.1 |  | Sistema de gestión de aceites industriales usados en España - Compras
 [l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.1 |  | Sist. gestión aceites industriales usados en España - Ventas
 [l10n_es_sigaus_stock_picking_report_valued](l10n_es_sigaus_stock_picking_report_valued/) | 16.0.1.0.1 |  | Show SIGAUS amount in valued stock pickings.
-[l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.1.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.1.2 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.0.5 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 16.0.1.0.4 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 16.0.1.1.0 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
@@ -5431,7 +5431,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 16.0.2.0.4 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 16.0.2.0.5 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_multi](l10n_th_account_tax_multi/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Tax with Payment Multi Deduction
 [l10n_th_account_tax_report](l10n_th_account_tax_report/) | 16.0.1.3.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax Reports
@@ -5621,8 +5621,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_us_account_routing](l10n_us_account_routing/) | 16.0.1.0.0 |  | Add the routing numbers to the banks
 [l10n_us_form_1099](l10n_us_form_1099/) | 16.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage 1099 Types and Suppliers
-[l10n_us_gaap](l10n_us_gaap/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | United States Sample GAAP Chart of Accounts
-[l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | MIS Builder Templates for US Chart of Accounts
+[l10n_us_gaap](l10n_us_gaap/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | United States Sample GAAP Chart of Accounts
+[l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | MIS Builder Templates for US Chart of Accounts
 [l10n_us_mis_financial_report](l10n_us_mis_financial_report/) | 16.0.1.1.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Profit & Loss (US) / Balance sheet (US) MIS templates
 [l10n_us_partner_legal_number](l10n_us_partner_legal_number/) | 16.0.1.0.0 |  | Add Legal Number for North American Banking & Financials
 
@@ -5905,7 +5905,7 @@ addon | version | maintainers | summary
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 16.0.1.0.1 |  | Include packaging weight on move, transfer and package.
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 16.0.1.0.0 |  | Procurement Auto Create Group Carrier
 [product_expiry_simple](product_expiry_simple/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simpler and better alternative to the official product_expiry module
-[purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 16.0.1.0.0 |  | Adds link between purchases, pickings and invoices
+[purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 16.0.1.0.1 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 16.0.1.0.0 |  | Track returned quantity of sale order lines.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 16.0.1.1.1 |  | Add the possibility to choose one warehouse path for an order
 [sale_stock_restocking_fee_invoicing](sale_stock_restocking_fee_invoicing/) | 16.0.1.0.0 |  | On demand charge restocking fee for accepting returned goods .
@@ -6221,7 +6221,7 @@ addon | version | maintainers | summary
 [stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Stock Picking Report Header Repeater
 [stock_picking_report_incoming_delivery_address](stock_picking_report_incoming_delivery_address/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow show delivery address in report when picking type is incoming
 [stock_picking_report_internal_delivery_address](stock_picking_report_internal_delivery_address/) | 16.0.1.0.0 |  | Show delivery address when picking type is internal
-[stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 16.0.1.0.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Stock Picking Report - Product Sticker
+[stock_picking_report_product_sticker](stock_picking_report_product_sticker/) | 16.0.1.0.3 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Stock Picking Report - Product Sticker
 [stock_picking_report_qty_undelivered](stock_picking_report_qty_undelivered/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Print a summary of the undelivered quantity
 [stock_picking_report_salesperson](stock_picking_report_salesperson/) | 16.0.1.1.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Salesperson info in Stock Picking reports
 [stock_picking_report_summary](stock_picking_report_summary/) | 16.0.1.0.0 | [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Stock Picking Report Summary
@@ -6934,6 +6934,7 @@ addon | version | maintainers | summary
 [product_attribute_value_menu](product_attribute_value_menu/) | 16.0.1.0.1 |  | Product attributes values tree and form. Import attribute values.
 [product_category_active](product_category_active/) | 16.0.2.0.0 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
+[product_category_code_unique](product_category_code_unique/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to set product category code field as unique
 [product_category_description](product_category_description/) | 16.0.1.0.0 | [![MarcBForgeFlow](https://github.com/MarcBForgeFlow.png?size=30px)](https://github.com/MarcBForgeFlow) | Allows to add a detailed description for a product category.
 [product_category_hr_department](product_category_hr_department/) | 16.0.1.0.0 | [![smaciaosi](https://github.com/smaciaosi.png?size=30px)](https://github.com/smaciaosi) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link product categories to hr departments
 [product_category_level](product_category_level/) | 16.0.1.0.0 | [![PierrickBrun](https://github.com/PierrickBrun.png?size=30px)](https://github.com/PierrickBrun) | Add Level field on Product Categories to show the recursion level on the category
@@ -6986,7 +6987,7 @@ addon | version | maintainers | summary
 [product_simple_seasonality](product_simple_seasonality/) | 16.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Product seasonality
 [product_standard_price_tax_included](product_standard_price_tax_included/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Brings a Cost Price Field Tax Included on Product Model
 [product_state](product_state/) | 16.0.1.2.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
-[product_sticker](product_sticker/) | 16.0.2.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Product Sticker
+[product_sticker](product_sticker/) | 16.0.3.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Product Sticker
 [product_stock_state](product_stock_state/) | 16.0.1.0.1 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Compute the state of a product's stockthe stock level and sale_ok field
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 16.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 [product_supplierinfo_code](product_supplierinfo_code/) | 16.0.1.0.0 |  | Allows to get main supplierinfo product_code on product level
@@ -7105,7 +7106,7 @@ addon | version | maintainers | summary
 [purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.1 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
 [sale_product_variant_attribute_tax](sale_product_variant_attribute_tax/) | 16.0.1.0.0 |  | Bring the taxes associated to product values
-[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.1 |  | Product variants in sale management
+[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.2 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -7392,7 +7393,7 @@ addon | version | maintainers | summary
 [contract_sale](contract_sale/) | 16.0.1.2.0 |  | Contract from Sale
 [contract_sale_generation](contract_sale_generation/) | 16.0.1.1.0 |  | Contracts Management - Recurring Sales
 [contract_update_last_date_invoiced](contract_update_last_date_invoiced/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | This module allows to update the last date invoiced if invoices are deleted.
-[contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 16.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
+[contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 16.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 16.0.1.1.0 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 16.0.1.0.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
 [subscription_oca](subscription_oca/) | 16.0.1.0.0 |  | Generate recurring invoices.

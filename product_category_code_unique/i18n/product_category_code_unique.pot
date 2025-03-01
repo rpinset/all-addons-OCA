@@ -1,0 +1,91 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_category_code_unique
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_category_code_unique
+#: model_terms:ir.ui.view,arch_db:product_category_code_unique.res_config_settings_view_form
+msgid "Category Code Unique"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model.fields.selection,name:product_category_code_unique.selection__res_config_settings__product_cat_code_unique_restriction__hierarchy
+msgid "Category Hierarchy"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model,name:product_category_code_unique.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model_terms:ir.ui.view,arch_db:product_category_code_unique.res_config_settings_view_form
+msgid ""
+"Define the restriction. No restrictions apply if no option is selected."
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model.fields,help:product_category_code_unique.field_res_config_settings__product_cat_code_unique_restriction
+msgid ""
+"If no option is selected, no restriction applies.\n"
+"If you select:\n"
+"- Whole Sytem: Product Category Codes cannot be duplicated within the  whole system\n"
+"- Parent-Children: Parent and Children Product Category Codes of the same category cannot be duplicated.\n"
+"- Category Hierarchy: Product Category Codes cannot be duplicated within the same category hierarchy.\n"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model.fields.selection,name:product_category_code_unique.selection__res_config_settings__product_cat_code_unique_restriction__direct
+msgid "Parent-Children"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model,name:product_category_code_unique.model_product_category
+msgid "Product Category"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model_terms:ir.ui.view,arch_db:product_category_code_unique.res_config_settings_view_form
+msgid "Product Category Code"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model.fields,field_description:product_category_code_unique.field_res_config_settings__product_cat_code_unique_restriction
+msgid "Product Category Code Uniqueness Restriction"
+msgstr ""
+
+#. module: product_category_code_unique
+#. odoo-python
+#: code:addons/product_category_code_unique/models/product_category.py:0
+#, python-format
+msgid "The category code must be unique within category hierarchy!"
+msgstr ""
+
+#. module: product_category_code_unique
+#. odoo-python
+#: code:addons/product_category_code_unique/models/product_category.py:0
+#, python-format
+msgid "The category code must be unique within parent and children!"
+msgstr ""
+
+#. module: product_category_code_unique
+#. odoo-python
+#: code:addons/product_category_code_unique/models/product_category.py:0
+#, python-format
+msgid "The category code must be unique within the system!"
+msgstr ""
+
+#. module: product_category_code_unique
+#: model:ir.model.fields.selection,name:product_category_code_unique.selection__res_config_settings__product_cat_code_unique_restriction__system
+msgid "Whole System"
+msgstr ""

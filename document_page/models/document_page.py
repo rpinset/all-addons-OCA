@@ -190,3 +190,49 @@ class DocumentPage(models.Model):
             draft_summary=_("summary"),
         )
         return super().copy(default=default)
+
+    @api.model
+    def create(self, vals):
+        """Automatically make the category followers follow the new page"""
+        res = super().create(vals)
+
+        if res.type == "content" and res.parent_id and res.parent_id.type == "category":
+            category = res.parent_id
+            category_followers = category.message_partner_ids.ids
+
+            if category_followers:
+                res.message_subscribe(partner_ids=category_followers)
+
+        return res
+
+    def message_subscribe(self, partner_ids, subtype_ids=None):
+        res = super().message_subscribe(partner_ids, subtype_ids)
+        self._toggle_follow_category_documents()
+
+        return res
+
+    def message_unsubscribe(self, partner_ids):
+        res = super().message_unsubscribe(partner_ids)
+        self._toggle_follow_category_documents()
+
+        return res
+
+    def _toggle_follow_category_documents(self):
+        """
+        Follow/unfollow all documents in a category
+        based on the category's follower status.
+        """
+        for rec in self:
+            if rec.type != "category":
+                continue
+
+            related_docs = self.env["document.page"].search(
+                [("type", "=", "content"), ("parent_id", "=", rec.id)]
+            )
+
+            partner_ids = [self.env.user.partner_id.id]
+
+            if not rec.message_is_follower:
+                related_docs.message_unsubscribe(partner_ids)
+            else:
+                related_docs.message_subscribe(partner_ids)

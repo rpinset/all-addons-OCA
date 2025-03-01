@@ -4,7 +4,7 @@
 
 {
     "name": "Account Cut-off Base",
-    "version": "16.0.1.5.0",
+    "version": "16.0.1.6.0",
     "category": "Accounting & Finance",
     "license": "AGPL-3",
     "summary": "Base module for Account Cut-offs",
@@ -12,6 +12,7 @@
     "maintainers": ["alexis-via", "jbaudoux"],
     "website": "https://github.com/OCA/account-closing",
     "depends": ["account"],
+    "external_dependencies": {"python": ["openupgradelib"]},
     "data": [
         "security/account_cutoff_base_security.xml",
         "security/ir.model.access.csv",

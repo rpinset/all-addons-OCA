@@ -31,9 +31,12 @@ class PaymentReturnImport(models.TransientModel):
     def _parse_file(self, data_file):
         data_file_elements = self._xml_split_file(data_file)
         payment_returns = []
-        for data_file_element in data_file_elements:
-            payment_returns.extend(self._parse_single_document(data_file_element))
-        return payment_returns
+        try:
+            for data_file_element in data_file_elements:
+                payment_returns.extend(self._parse_single_document(data_file_element))
+            return payment_returns
+        except Exception:
+            return super()._parse_file(data_file)
 
     @api.model
     def _parse_single_document(self, data_file):
