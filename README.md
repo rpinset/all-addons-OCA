@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 60fc297a88029feb8792f1c3a7c4ffe179993451
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:16:20 2025 +0000
+commit 05ecbf3211de93039393444a2e397ca62580261d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 12:45:38 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_sequence/it/
 
 
 ## account-budgeting
@@ -72,11 +77,16 @@ Date:   Sun Feb 2 17:53:51 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 882e4272f67cd8c62e734d66a401a1bd2e3ef0da
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:41:32 2025 +0000
+commit 434364e9cb8ad7b5379a1f07524c0ecb168500d0
+Author: Eugeni Chafer <eugeni@chafer.cat>
+Date:   Mon Mar 3 10:29:07 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 20.0% (21 of 105 strings)
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/ca/
 
 
 ## account-invoice-reporting
@@ -90,9 +100,9 @@ Date:   Sun Feb 2 17:56:28 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit ad70cb3e7e2cca078a7c6e11bc4fe0a666ca95b8
+commit 16ca1edeea5aa89a66362f4d6a2562571b54e493
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 12 18:11:35 2025 +0000
+Date:   Sun Mar 2 13:56:09 2025 +0000
 
     [BOT] post-merge updates
 
@@ -329,11 +339,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 8a8de1cb8552fc21913d2e8a767da12363b0e8c2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 20 08:08:09 2025 +0000
+commit bbc0d3c501ad0bf67aaf375b0da2d9dcb53e42b4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 09:19:24 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (49 of 49 strings)
+    
+    Translation: sale-workflow-14.0/sale-workflow-14.0-pricelist_cache
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-pricelist_cache/it/
 
 
 ## crm
@@ -384,25 +399,30 @@ Date:   Mon Feb 10 08:29:07 2025 +0000
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit b9dd2c61d2d438f593b02f77b3346a99bd4bc41f
+commit 7c68e255491a590f18fdc36ddd480ce184403518
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 10 08:35:46 2025 +0000
+Date:   Wed Mar 5 09:13:01 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (47 of 47 strings)
     
-    Translation: sale-reporting-14.0/sale-reporting-14.0-sale_report_delivered_brand
-    Translate-URL: https://translation.odoo-community.org/projects/sale-reporting-14-0/sale-reporting-14-0-sale_report_delivered_brand/it/
+    Translation: sale-reporting-14.0/sale-reporting-14.0-sale_report_delivered
+    Translate-URL: https://translation.odoo-community.org/projects/sale-reporting-14-0/sale-reporting-14-0-sale_report_delivered/it/
 
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 1a917d4da49a53271911939839be6a3150b0933c
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:09:53 2025 +0000
+commit 05bdcdd8b29bfdf6726c7797f786bcdcb0242bce
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 09:24:43 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (64 of 64 strings)
+    
+    Translation: commission-14.0/commission-14.0-sale_commission_product_criteria
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_product_criteria/it/
 
 
 ## event
@@ -1105,9 +1125,9 @@ Date:   Thu Feb 6 10:54:14 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 839c576fd0ff7ac7496dbd6da9d510fe9c3f5ccc
+commit fa01ef108720e6370a45cd7c6732f2a2a2dc4f23
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 24 09:28:43 2025 +0000
+Date:   Wed Mar 5 14:24:27 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1174,16 +1194,16 @@ Date:   Sun Feb 2 20:18:06 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 998ef94fdc65eb645b59a411960c9d6f240b0062
-Author: JHernandezConinpe <jhernandez@coninpe.es>
-Date:   Mon Feb 10 10:57:58 2025 +0000
+commit c80917e7b57f019c7643ade2ed19e87ddfbfe082
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 09:24:38 2025 +0000
 
-    Translated using Weblate (French)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (73 of 73 strings)
+    Currently translated at 100.0% (67 of 67 strings)
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_direct_print
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_direct_print/fr/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_assortment
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_assortment/it/
 
 
 ## product-kitting
@@ -1559,9 +1579,9 @@ Date:   Sun Feb 9 19:15:14 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 526845d635cf93825b5a4cfe9b5835b3968a3a28
+commit 5940c1279dd4c11e873435d1f596e3408095686a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 18 16:41:14 2025 +0000
+Date:   Sun Mar 2 12:47:42 2025 +0000
 
     [BOT] post-merge updates
 
