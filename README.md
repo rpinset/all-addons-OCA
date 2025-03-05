@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit b1fc5db53449d99048605e2eb17c4e17c70e80e6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 17:16:42 2025 +0000
+commit efc2c68ae2462a059ca9e2337a0ae19331359fc0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 12:48:07 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-analytic-12.0/account-analytic-12.0-account_analytic_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-12-0/account-analytic-12-0-account_analytic_sequence/it/
 
 
 ## account-budgeting
@@ -379,16 +384,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 816f6b653a8d372b4fd044e0e11ac96fa629a435
+commit c665d11a4c36242ab0e989c22eb1e457b8747d7f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 20 08:35:49 2025 +0000
+Date:   Mon Mar 3 08:30:37 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (48 of 48 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
 
 
 ## crm
@@ -420,11 +425,16 @@ Date:   Tue Nov 19 21:13:10 2019 +0100
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit c010e4a658a120bdbbfa32ef5d6444bb1f9f4c08
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:01:39 2025 +0000
+commit b01fd34fbd353efc7938d75490b04b54b4834369
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 3 16:07:40 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (26 of 26 strings)
+    
+    Translation: sale-reporting-12.0/sale-reporting-12.0-sale_backorder
+    Translate-URL: https://translation.odoo-community.org/projects/sale-reporting-12-0/sale-reporting-12-0-sale_backorder/it/
 
 
 ## commission
@@ -1089,16 +1099,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 3306decaaeccdb35d2af5ac3266c30edfd430a77
+commit def3c8f2349b45eb1bc370c44b04dd43fffc055d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 17 08:16:00 2025 +0000
+Date:   Wed Mar 5 12:48:08 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (127 of 127 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-repair_discount
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-repair_discount/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
@@ -1131,11 +1141,16 @@ Date:   Wed Feb 12 08:11:01 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 457be13d90b94aab288d0bf3d43b4bab38033ae7
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:00:28 2025 +0000
+commit eb2d9238b74ac370f5e5ee89f68bcc533b635bdc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Mar 3 08:31:31 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (32 of 32 strings)
+    
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_order_line_price_history
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_order_line_price_history/it/
 
 
 ## purchase-reporting

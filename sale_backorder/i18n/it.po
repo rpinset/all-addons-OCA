@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-04-08 14:34+0000\n"
+"PO-Revision-Date: 2025-03-03 18:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: sale_backorder
 #: model:ir.model.fields,help:sale_backorder.field_sale_order_line__product_type
@@ -71,7 +71,7 @@ msgstr "Nome visualizzato"
 #: model:ir.actions.act_window,name:sale_backorder.action_so_backorder_wizard
 #: model:ir.ui.menu,name:sale_backorder.menu_so_backorder_report
 msgid "Generate SO Backorder Report"
-msgstr "Genera resoconto ordine residuio OV"
+msgstr "Genera resoconto ordine residuo OV"
 
 #. module: sale_backorder
 #: model:ir.model.fields,field_description:sale_backorder.field_sobackorder_report_wizard__id
@@ -90,7 +90,7 @@ msgstr "Data ultima fattura"
 #: model:ir.model.fields,field_description:sale_backorder.field_sale_order_line__last_date_delivered
 #: model_terms:ir.ui.view,arch_db:sale_backorder.so_backorder_report
 msgid "Last Date Delivered"
-msgstr "Ultima Data Consegna"
+msgstr "Ultima data consegna"
 
 #. module: sale_backorder
 #: model:ir.model.fields,field_description:sale_backorder.field_sobackorder_report_wizard____last_update
@@ -130,19 +130,19 @@ msgstr "Tipologia prodotto"
 #. module: sale_backorder
 #: model:ir.actions.report,name:sale_backorder.action_so_backorder_report
 msgid "SO Backorder Report"
-msgstr "Resoconto ordine residuo OV"
+msgstr "Resoconto OV residuo"
 
 #. module: sale_backorder
 #: model:ir.model,name:sale_backorder.model_sobackorder_report_wizard
 msgid "SO Backorder Report Wizard"
-msgstr "Procedura guidata resoconto ordine residuo OV"
+msgstr "Procedura guidata resoconto OV residuo"
 
 #. module: sale_backorder
 #: model:ir.actions.act_window,name:sale_backorder.action_so_backorder
 #: model:ir.ui.menu,name:sale_backorder.menu_so_backorder
 #: model_terms:ir.ui.view,arch_db:sale_backorder.so_backorder_tree_view
 msgid "SO Backorders"
-msgstr "Ordini residui OV"
+msgstr "OV residui"
 
 #. module: sale_backorder
 #: model:ir.model,name:sale_backorder.model_sale_order
