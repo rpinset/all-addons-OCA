@@ -212,5 +212,7 @@ ujson
 # From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
+# generated from manifests external_dependencies
+bokeh==3.6.3
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
