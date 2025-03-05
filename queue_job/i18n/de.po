@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-11-04 14:44+0000\n"
-"Last-Translator: Maria Sparenberg <maria.sparenberg@gmx.net>\n"
+"PO-Revision-Date: 2025-03-03 18:06+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
@@ -23,6 +23,10 @@ msgid ""
 "                            <span class=\"oe_grey oe_inline\"> If the max. "
 "retries is 0, the number of retries is infinite.</span>"
 msgstr ""
+"<br/>\n"
+"                            <span class=\"oe_grey oe_inline\">Wie die "
+"maximale Anzahl an Versuchen auf 0 gesetzt, so wird es unendlich oft "
+"wiederholt.</span>"
 
 #. module: queue_job
 #. odoo-python
@@ -87,31 +91,31 @@ msgstr "Abbrechen"
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_jobs_to_cancelled
 msgid "Cancel all selected jobs"
-msgstr ""
+msgstr "Alle ausgewählten Jobs abbrechen"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Cancel job"
-msgstr ""
+msgstr "Job abbrechen"
 
 #. module: queue_job
 #: model:ir.actions.act_window,name:queue_job.action_set_jobs_cancelled
 #: model_terms:ir.ui.view,arch_db:queue_job.view_set_jobs_cancelled
 msgid "Cancel jobs"
-msgstr ""
+msgstr "Jobs abbrechen"
 
 #. module: queue_job
 #: model:ir.model.fields.selection,name:queue_job.selection__queue_job__state__cancelled
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Cancelled"
-msgstr ""
+msgstr "Abgebrochen"
 
 #. module: queue_job
 #. odoo-python
 #: code:addons/queue_job/models/queue_job.py:0
 #, python-format
 msgid "Cancelled by %s"
-msgstr ""
+msgstr "Abgebrochen durch %s"
 
 #. module: queue_job
 #. odoo-python
@@ -156,7 +160,7 @@ msgstr "Unternehmen"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__channel_method_name
 msgid "Complete Method Name"
-msgstr ""
+msgstr "Vollständiger Methodenname"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_channel__complete_name
@@ -181,7 +185,7 @@ msgstr "Erstellt von"
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Created date"
-msgstr ""
+msgstr "Erstellt am"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_channel__create_date
@@ -205,7 +209,7 @@ msgstr "Aktueller Versuch / max. Anzahl der Wiederholung"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__date_cancelled
 msgid "Date Cancelled"
-msgstr ""
+msgstr "Datum Abbruch"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__date_done
@@ -216,12 +220,12 @@ msgstr "Erledigt am"
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__dependencies
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Dependencies"
-msgstr ""
+msgstr "Abhängigkeiten"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__dependency_graph
 msgid "Dependency Graph"
-msgstr ""
+msgstr "Abhängigkeitsgraf"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__name
@@ -260,32 +264,32 @@ msgstr "Eingereiht"
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__exc_name
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Exception"
-msgstr ""
+msgstr "Ausnahme"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__exc_info
 msgid "Exception Info"
-msgstr "Exception-Info"
+msgstr "Ausnahmeinformation"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Exception Information"
-msgstr "Exception-Information"
+msgstr "Ausnahmeinformation"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__exc_message
 msgid "Exception Message"
-msgstr ""
+msgstr "Ausnahmenachricht"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Exception message"
-msgstr ""
+msgstr "Ausnahmenachricht"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Exception:"
-msgstr ""
+msgstr "Ausnahme:"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__eta
@@ -295,7 +299,7 @@ msgstr "Erst ausführen nach"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__exec_time
 msgid "Execution Time (avg)"
-msgstr ""
+msgstr "Ausführungszeit (durchschnittlich)"
 
 #. module: queue_job
 #: model:ir.model.fields.selection,name:queue_job.selection__queue_job__state__failed
@@ -306,12 +310,12 @@ msgstr "Fehlgeschlagen"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_ir_model_fields__ttype
 msgid "Field Type"
-msgstr ""
+msgstr "Feldart"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_ir_model_fields
 msgid "Fields"
-msgstr ""
+msgstr "Felder"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__message_follower_ids
@@ -331,22 +335,22 @@ msgstr "Font Awesome Icon z.B. fa-tasks"
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Graph"
-msgstr ""
+msgstr "Graph"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Graph Jobs"
-msgstr ""
+msgstr "Graph Jobs"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__graph_jobs_count
 msgid "Graph Jobs Count"
-msgstr ""
+msgstr "Anzahl Graph Jobs"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__graph_uuid
 msgid "Graph UUID"
-msgstr ""
+msgstr "Graph UUID"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_function_search
@@ -357,7 +361,7 @@ msgstr "Gruppieren nach"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Hat Nachricht"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__id
@@ -403,7 +407,7 @@ msgstr ""
 #: code:addons/queue_job/models/queue_job_function.py:0
 #, python-format
 msgid "Invalid job function: {}"
-msgstr ""
+msgstr "Ungültige Job-Funktion: {}"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__message_is_follower
@@ -477,7 +481,7 @@ msgstr "Jobs"
 #: code:addons/queue_job/models/queue_job.py:0
 #, python-format
 msgid "Jobs for graph %s"
-msgstr ""
+msgstr "Jobs für Graph %s"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__kwargs
@@ -487,17 +491,17 @@ msgstr "Kwargs"
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Last 24 hours"
-msgstr ""
+msgstr "Letzte 24 Stunden"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Last 30 days"
-msgstr ""
+msgstr "Letzte 30 Tage"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Last 7 days"
-msgstr ""
+msgstr "Letzte 7 Tage"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job____last_update
@@ -582,7 +586,7 @@ msgstr "Modell {} nicht gefunden"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Meine Aktivitätsfrist"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_channel__name
@@ -617,7 +621,7 @@ msgstr "Für diesen Job ist keine Aktion verfügbar"
 #: code:addons/queue_job/models/queue_job.py:0
 #, python-format
 msgid "Not allowed to change field(s): {}"
-msgstr ""
+msgstr "Es ist nicht erlaubt, folgende(s) Feld(er) zu ändern: {}"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__message_needaction_counter
@@ -632,7 +636,7 @@ msgstr "Anzahl der Fehler"
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Anzahl der Meldungen, die eine Aktion erfordern"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__message_has_error_counter
@@ -695,7 +699,7 @@ msgstr ""
 #: code:addons/queue_job/models/queue_job.py:0
 #, python-format
 msgid "Queue jobs must be created by calling 'with_delay()'."
-msgstr ""
+msgstr "Eingereihte Jobs müssen mit 'with_delay()' erstellt worden sein."
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__record_ids
@@ -715,14 +719,13 @@ msgstr "Zugehörige Aktion anzeigen"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_function__edit_related_action
-#, fuzzy
 msgid "Related Action"
-msgstr "Zugehöriger Datensatz"
+msgstr "Zugehörige Aktion"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_function__related_action
 msgid "Related Action (serialized)"
-msgstr ""
+msgstr "Zugehörige Aktion (serialisiert)"
 
 #. module: queue_job
 #. odoo-python
@@ -819,6 +822,7 @@ msgstr "Als Erledigt markieren"
 #: model:ir.model.fields,help:queue_job.field_queue_job__graph_uuid
 msgid "Single shared identifier of a Graph. Empty for a single job."
 msgstr ""
+"Einfache geteilte Identität eines Graphen. Leer für einen einzelnen Job."
 
 #. module: queue_job
 #. odoo-python
@@ -828,6 +832,8 @@ msgid ""
 "Something bad happened during the execution of job %s. More details in the "
 "'Exception Information' section."
 msgstr ""
+"Etwas Schlechtes ist bei der Ausführung des Jobs %s passiert. Mehr Details "
+"finden Sie im Abschnitt 'Ausnahmeninformation'."
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__date_started
@@ -902,12 +908,14 @@ msgstr "Die ausgewählten Jobs werden als Erledigt markiert."
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Time (s)"
-msgstr ""
+msgstr "Zeit (in Sekunden)"
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__exec_time
 msgid "Time required to execute this job in seconds. Average when grouped."
 msgstr ""
+"Benötigte Zeit zur Ausführung dieses Jobs in Sekunden. Bei Gruppierung wird "
+"der Durchschnitt ermittelt."
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__activity_exception_decoration

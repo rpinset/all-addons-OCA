@@ -24,3 +24,17 @@ class TestRecursion(common.TransactionCase):
         # Creating a parent's child department using dpt1.
         with self.assertRaises(UserError):
             self.dpt1.write(vals={"parent_id": self.dpt3.id})
+
+    def test_order(self):
+        dpt3 = self.env["res.partner.department"].create({"name": "A"})
+        dpts = self.env["res.partner.department"].search(
+            [("id", "in", (self.dpt1 | self.dpt2 | dpt3).ids)]
+        )
+        self.assertRecordValues(
+            dpts,
+            [
+                {"name": "A", "display_name": "A"},
+                {"name": "Dpt. 1", "display_name": "Dpt. 1"},
+                {"name": "Dep. 2", "display_name": "Dpt. 1 / Dep. 2"},
+            ],
+        )

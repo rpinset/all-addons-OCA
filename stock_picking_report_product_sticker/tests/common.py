@@ -1,7 +1,7 @@
 # Copyright 2023 Moduon Team S.L.
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0)
 
-from odoo.tests import tagged
+from odoo.tests import new_test_user, tagged
 
 from odoo.addons.product_sticker.tests.common import ProductStickerCommon
 
@@ -17,6 +17,11 @@ class ProductStickerStockCommon(ProductStickerCommon):
         cls.picking_type_out.show_product_stickers = REPORT_STICKER_POSITIONS[0][0]
         cls.stock_location = cls.env.ref("stock.stock_location_stock")
         cls.supplier_location = cls.env.ref("stock.stock_location_suppliers")
+        cls.env = cls.env(
+            user=new_test_user(
+                cls.env, "test_stock_user", groups="stock.group_stock_user"
+            )
+        )
 
     def _create_picking(self, picking_type, products):
         return self.env["stock.picking"].create(

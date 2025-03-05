@@ -72,8 +72,3 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_activity_done.field_mail_activity__state
 msgid "State"
 msgstr ""
-
-#. module: mail_activity_done
-#: model:ir.model,name:mail_activity_done.model_res_users
-msgid "User"
-msgstr ""

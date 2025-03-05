@@ -76,11 +76,6 @@ msgstr "Nyitott tevékenységek"
 msgid "State"
 msgstr "Állapot"
 
-#. module: mail_activity_done
-#: model:ir.model,name:mail_activity_done.model_res_users
-msgid "User"
-msgstr ""
-
 #, python-format
 #~ msgid "%d days overdue"
 #~ msgstr "%d nap késésben"

@@ -21,6 +21,7 @@ class StockPicking(models.Model):
         string="Stickers",
         compute="_compute_sticker_ids",
         store=False,
+        compute_sudo=True,
     )
 
     @api.depends("picking_type_id")
