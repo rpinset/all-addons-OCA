@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 2cee368899f17fa2b094ff9f841468196d90f163
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:17:02 2025 +0000
+commit 1ea854581bde0eded7d373b26928e67fb0cd15b1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Mar 5 12:48:03 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: account-analytic-15.0/account-analytic-15.0-account_analytic_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-account_analytic_sequence/it/
 
 
 ## account-budgeting
@@ -91,11 +96,11 @@ Date:   Thu Feb 20 07:25:42 2025 +0000
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 0eb290f8993e7ba11e9cef9f842af2cc75d71a92
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:56:41 2025 +0000
+commit ae3fa9a35278c607cfc6f54967bac7e9c09c0557
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 4 09:04:22 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## account-invoicing
@@ -424,11 +429,11 @@ Date:   Thu Feb 13 15:15:41 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 74c4a0db546953dc78616c8c64bbe3187c2af3ba
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 19:01:09 2025 +0000
+commit c24b8fec25c80fe2835d6ed1967c3b4b4e961f98
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 5 16:50:55 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## knowledge
@@ -469,16 +474,11 @@ Date:   Sun Feb 2 18:45:09 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit c3b6d9720b8273292a14599f6d30b6b4af003ecc
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Feb 10 15:04:55 2025 +0000
+commit 8114f15aae01bf9a2069756babf102e586110bbc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 5 15:50:19 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_portal
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_portal/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -948,9 +948,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 4959893fc8cb21a851d0f2de083b38aa766ed697
+commit 92ce4ef867297354e6c6e686d4ddc4215b9ac846
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 25 10:29:04 2025 +0000
+Date:   Tue Mar 4 02:22:35 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1029,16 +1029,11 @@ Date:   Sun Feb 9 18:48:32 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 706a2789e8a20d944aeb69f0240321a689f58334
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 12 15:24:51 2025 +0000
+commit 93ff865d95bfb86d33347175cb6d9849f917aaa2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 4 10:22:05 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (121 of 121 strings)
-    
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_return_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_return_request/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
