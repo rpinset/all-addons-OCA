@@ -266,7 +266,7 @@ addon | version | maintainers | summary
 [account_journal_lock_date](account_journal_lock_date/) | 14.0.2.0.1 |  | Lock each journal independently
 [account_loan](account_loan/) | 14.0.1.1.7 |  | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 14.0.2.0.0 |  | Allow an Account adviser to update locking date without having access to all technical settings
-[account_lock_to_date](account_lock_to_date/) | 14.0.1.0.0 |  | Allows to set an account lock date in the future.
+[account_lock_to_date](account_lock_to_date/) | 14.0.1.0.1 |  | Allows to set an account lock date in the future.
 [account_menu](account_menu/) | 14.0.1.2.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module
 [account_move_budget](account_move_budget/) | 14.0.1.0.1 |  | Create Accounting Budgets
 [account_move_default_journal](account_move_default_journal/) | 14.0.1.0.0 |  | Configure a default journal for new account moves
@@ -5985,6 +5985,7 @@ addon | version | maintainers | summary
 [delivery_price_product_domain](delivery_price_product_domain/) | 14.0.1.0.4 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Apply domain to product in shipping charges rules
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 14.0.1.0.3 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
 [delivery_purchase](delivery_purchase/) | 14.0.1.3.0 |  | Delivery costs in purchases
+[delivery_purchase_label](delivery_purchase_label/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows printing carrier delivery labels for a dropshipping vendor.
 [delivery_roulier](delivery_roulier/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.2.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
@@ -6390,7 +6391,7 @@ addon | version | maintainers | summary
 [stock_request_submit](stock_request_submit/) | 14.0.1.3.0 |  | Add submit state on Stock Requests
 [stock_request_tier_validation](stock_request_tier_validation/) | 14.0.1.0.1 |  | Extends the functionality of Stock Requests to support a tier validation process.
 [stock_reserve](stock_reserve/) | 14.0.2.1.2 |  | Stock reservations on products
-[stock_reserve_rule](stock_reserve_rule/) | 14.0.1.3.0 |  | Configure reservation rules by location
+[stock_reserve_rule](stock_reserve_rule/) | 14.0.1.3.1 |  | Configure reservation rules by location
 [stock_route_mto](stock_route_mto/) | 14.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 14.0.1.0.0 |  | Allows to search for picking from supplierinfo code
 [stock_secondary_unit](stock_secondary_unit/) | 14.0.1.0.1 |  | Get product quantities in a secondary unit

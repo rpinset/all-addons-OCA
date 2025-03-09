@@ -6,29 +6,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-03-06 12:08+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: pos_analytic_by_config
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_config__account_analytic_id
 #: model_terms:ir.ui.view,arch_db:pos_analytic_by_config.view_pos_config_form
 msgid "Analytic Account"
-msgstr ""
+msgstr "Conto analitico"
 
 #. module: pos_analytic_by_config
 #: model_terms:ir.ui.view,arch_db:pos_analytic_by_config.view_pos_config_form
 msgid "Analytic Account for this config."
-msgstr ""
+msgstr "Conto analitico per questa configurazione."
 
 #. module: pos_analytic_by_config
 #: model_terms:ir.ui.view,arch_db:pos_analytic_by_config.view_pos_config_form
 msgid "Analytic Account that these orders link to"
-msgstr ""
+msgstr "Conto analitico collegato a questo ordine"
 
 #. module: pos_analytic_by_config
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_account_move_line__display_name
@@ -36,7 +38,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_order__display_name
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_session__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: pos_analytic_by_config
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_account_move_line__id
@@ -44,12 +46,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_order__id
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_session__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: pos_analytic_by_config
 #: model:ir.model,name:pos_analytic_by_config.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: pos_analytic_by_config
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_account_move_line____last_update
@@ -57,19 +59,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_order____last_update
 #: model:ir.model.fields,field_description:pos_analytic_by_config.field_pos_session____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: pos_analytic_by_config
 #: model:ir.model,name:pos_analytic_by_config.model_pos_config
 msgid "Point of Sale Configuration"
-msgstr ""
+msgstr "Configurazione punto vendita"
 
 #. module: pos_analytic_by_config
 #: model:ir.model,name:pos_analytic_by_config.model_pos_order
 msgid "Point of Sale Orders"
-msgstr ""
+msgstr "Ordini punto vendita"
 
 #. module: pos_analytic_by_config
 #: model:ir.model,name:pos_analytic_by_config.model_pos_session
 msgid "Point of Sale Session"
-msgstr ""
+msgstr "Sessione punto vendita"

@@ -796,6 +796,99 @@ class TestReserveRule(common.SavepointCase):
         )
         self.assertEqual(move.state, "assigned")
 
+    def test_rule_packaging_favor_largest_packaging(self):
+        self._setup_packagings(
+            self.product1,
+            [("Pallet", 1000, self.pallet), ("Retail Box", 100, self.retail_box)],
+        )
+        self._update_qty_in_location(self.loc_zone1_bin1, self.product1, 100)
+        self._update_qty_in_location(self.loc_zone1_bin2, self.product1, 1000)
+        picking = self._create_picking(self.wh, [(self.product1, 1000)])
+        self._create_rule(
+            {},
+            [
+                {
+                    "location_id": self.loc_zone1.id,
+                    "sequence": 1,
+                    "removal_strategy": "packaging",
+                },
+            ],
+        )
+        picking.with_context(testing=True).action_assign()
+        move = picking.move_lines
+        ml = move.move_line_ids
+        # since bin2 has 1000 units, it should be used to favor larger packaging
+        self.assertRecordValues(
+            ml,
+            [
+                {"location_id": self.loc_zone1_bin2.id, "product_qty": 1000.0},
+            ],
+        )
+        self.assertEqual(move.state, "assigned")
+
+    def test_rule_packaging_does_not_exceed_location_qty(self):
+        self._setup_packagings(
+            self.product1,
+            [("Retail Box", 5, self.retail_box)],
+        )
+        self._update_qty_in_location(self.loc_zone1_bin1, self.product1, 16)
+        picking = self._create_picking(self.wh, [(self.product1, 25)])
+        self._create_rule(
+            {},
+            [
+                {
+                    "location_id": self.loc_zone1.id,
+                    "sequence": 1,
+                    "removal_strategy": "packaging",
+                },
+            ],
+        )
+        picking.with_context(testing=True).action_assign()
+        move = picking.move_lines
+        ml = move.move_line_ids
+        # picking quantity is more than the location quantity so make sure
+        # that the incomplete picking quantity is still divisable by the
+        # packaging quantity
+        self.assertRecordValues(
+            ml,
+            [
+                {"location_id": self.loc_zone1_bin1.id, "product_qty": 15.0},
+            ],
+        )
+        self.assertEqual(move.state, "partially_available")
+
+    def test_rule_packaging_multiple_reservations_from_same_location(self):
+        self._setup_packagings(
+            self.product1,
+            [
+                ("Retail Box", 5, self.retail_box),
+                ("Transport Box", 50, self.transport_box),
+            ],
+        )
+        self._update_qty_in_location(self.loc_zone1_bin1, self.product1, 51)
+        picking = self._create_picking(self.wh, [(self.product1, 55)])
+        self._create_rule(
+            {},
+            [
+                {
+                    "location_id": self.loc_zone1.id,
+                    "sequence": 1,
+                    "removal_strategy": "packaging",
+                },
+            ],
+        )
+        picking.with_context(testing=True).action_assign()
+        move = picking.move_lines
+        ml = move.move_line_ids
+        # should only reserve the 50 from the location
+        self.assertRecordValues(
+            ml,
+            [
+                {"location_id": self.loc_zone1_bin1.id, "product_qty": 50.0},
+            ],
+        )
+        self.assertEqual(move.state, "partially_available")
+
     def test_rule_excluded_not_child_location(self):
         self._update_qty_in_location(self.loc_zone1_bin1, self.product1, 100)
         self._update_qty_in_location(self.loc_zone1_bin2, self.product1, 100)

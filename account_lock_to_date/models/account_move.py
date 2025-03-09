@@ -7,6 +7,8 @@ from odoo.exceptions import ValidationError
 class AccountMove(models.Model):
     _inherit = "account.move"
 
+    EDIT_SENTINEL = object()
+
     def _check_lock_to_dates(self):
         """Prevent moves that are on or after lock to date.
 
@@ -15,6 +17,8 @@ class AccountMove(models.Model):
         Other users will also be restricted by the period_lock_to_date.
         """
         is_advisor = self.user_has_groups("account.group_account_manager")
+        if self.env.context.get("bypass_account_lock_to_date") is self.EDIT_SENTINEL:
+            return
         for move in self:
             advisor_lock_to_date = move.company_id.fiscalyear_lock_to_date
             user_lock_to_date = move.company_id.period_lock_to_date

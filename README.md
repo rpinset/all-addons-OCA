@@ -24,16 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 05ecbf3211de93039393444a2e397ca62580261d
+commit 4cac3da113626e6c1f318a12825424056cb56a0b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 5 12:45:38 2025 +0000
+Date:   Thu Mar 6 12:19:24 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_sequence/it/
+    Translation: account-analytic-14.0/account-analytic-14.0-stock_inventory_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-stock_inventory_analytic/it/
 
 
 ## account-budgeting
@@ -68,11 +68,11 @@ Date:   Sun Feb 2 17:51:23 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 71544ba4a4133efb3c84abf4785146178dff22d0
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:53:51 2025 +0000
+commit eafec8f25015767850c537f12c84cad360f37e3b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 8 11:55:04 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -1029,9 +1029,9 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit aaee65a5eebc511b24e0fb417b3824fb4b6790be
+commit 9cf339a28bd3a8052f5716c9379edd37911f5c57
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 5 17:20:31 2025 +0000
+Date:   Fri Mar 7 22:06:08 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1070,16 +1070,11 @@ Date:   Sun Feb 9 18:52:33 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6ed50b74c09682787a97dfccaae4a1f2dc1c8c42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 18 09:02:46 2025 +0000
+commit 4d2deaa1517113d9d1e1a2460979c56ebbe71f57
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Mar 8 07:09:52 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (32 of 32 strings)
-    
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1143,16 +1138,14 @@ Date:   Sun Feb 2 19:57:05 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 778490820ef3fd95b7184b4f260acdfc769fde6d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jan 15 08:18:17 2025 +0000
+commit 03be07a4d869ee8a8bf1e6c48f35bdc940c27513
+Merge: 77849082 d4f6d066
+Author: Maxime Chambreuil <mchambreuil@opensourceintegrators.com>
+Date:   Sat Mar 8 13:19:50 2025 -0600
 
-    Translated using Weblate (Italian)
+    Merge pull request #653 from OCA/14.0-ocabot-update-dotfiles
     
-    Currently translated at 100.0% (94 of 94 strings)
-    
-    Translation: management-system-14.0/management-system-14.0-mgmtsystem_evaluation
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_evaluation/it/
+    [14.0] dotfiles update needs manual intervention
 
 
 ## pms
@@ -1267,16 +1260,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 17b405270bc5c932ad88a64cc999cf11d71f591e
-Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
-Date:   Thu Feb 27 22:20:15 2025 +0000
+commit 81a938565ce2f0740934c1167b2ae5bb2d9ccfaf
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 7 07:42:20 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (75 of 75 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: contract-14.0/contract-14.0-agreement
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-agreement/it/
+    Translation: contract-14.0/contract-14.0-agreement_account
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-agreement_account/it/
 
 
 ## program
