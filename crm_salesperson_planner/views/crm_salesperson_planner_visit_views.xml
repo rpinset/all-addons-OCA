@@ -24,17 +24,20 @@
                     type="object"
                     invisible="state not in ['cancel','incident', 'done']"
                     icon="fa-undo"
+                    title="Draft"
                 />
                 <button
                     name="action_confirm"
                     type="object"
                     icon="fa-calendar text-success"
+                    title="Confirm"
                     invisible="state != 'draft'"
                 />
                 <button
                     name="action_done"
                     type="object"
                     icon="fa-check"
+                    title="Done"
                     invisible="state != 'confirm'"
                 />
                 <button

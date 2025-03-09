@@ -4,6 +4,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html)
 from datetime import timedelta
 
+from freezegun import freeze_time
+
 from odoo import exceptions, fields
 from odoo.tests import common
 from odoo.tools import mute_logger
@@ -226,6 +228,7 @@ class TestCrmSalespersonPlannerVisitTemplate(common.TransactionCase):
             fields.Date.from_string(filtered_tue_dates[len(filtered_tue_dates) - 1]),
         )
 
+    @freeze_time("2024-11-01")
     def test_06_repeat_months_count_01(self):
         self.visit_template_base.write(
             {
@@ -254,6 +257,7 @@ class TestCrmSalespersonPlannerVisitTemplate(common.TransactionCase):
             fields.Date.from_string("2024-05-01"),
         )
 
+    @freeze_time("2024-11-01")
     def test_06_repeat_months_count_02(self):
         self.visit_template_base.write(
             {
@@ -282,6 +286,7 @@ class TestCrmSalespersonPlannerVisitTemplate(common.TransactionCase):
             fields.Date.from_string("2024-05-01"),
         )
 
+    @freeze_time("2024-11-01")
     def test_06_repeat_months_count_03(self):
         self.visit_template_base.write(
             {

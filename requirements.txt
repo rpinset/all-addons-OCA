@@ -136,6 +136,7 @@ chardet
 # generated from manifests external_dependencies
 facturama
 pdfminer.six==20220319
+requests-mock
 # From [https://github.com/OCA/l10n-morocco.git](https://github.com/OCA/l10n-morocco.git)
 # From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
 # From [https://github.com/OCA/l10n-norway.git](https://github.com/OCA/l10n-norway.git)

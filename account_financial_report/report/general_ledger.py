@@ -470,8 +470,8 @@ class GeneralLedgerReport(models.AbstractModel):
             journal_ids.add(move_line["journal_id"][0])
             for tax_id in move_line["tax_ids"]:
                 taxes_ids.add(tax_id)
-            for analytic_ids in (move_line["analytic_distribution"] or {}).keys():
-                analytic_ids.update(map(int, analytic_ids.split(",")))
+            for ids in (move_line["analytic_distribution"] or {}).keys():
+                analytic_ids.update(map(int, ids.split(",")))
             if move_line["full_reconcile_id"]:
                 rec_id = move_line["full_reconcile_id"][0]
                 if rec_id not in full_reconcile_ids:
