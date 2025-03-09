@@ -622,7 +622,11 @@ currency
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[currency_rate_update](currency_rate_update/) | 18.0.1.0.1 |  | Update exchange rates using OCA modules
 
 [//]: # (end addons)
 
@@ -664,7 +668,11 @@ credit-control
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_financial_risk](account_financial_risk/) | 18.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
 
 [//]: # (end addons)
 
@@ -893,6 +901,7 @@ addon | version | maintainers | summary
 [account_check_printing_report_base](account_check_printing_report_base/) | 18.0.1.0.0 |  | Account Check Printing Report Base
 [account_due_list](account_due_list/) | 18.0.1.0.0 |  | List of open credits and debits, with due date
 [account_payment_promissory_note](account_payment_promissory_note/) | 18.0.1.0.0 |  | Account Payment Promissory Note
+[account_payment_tier_validation](account_payment_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Payment to support a tier validation process.
 
 [//]: # (end addons)
 
@@ -1550,6 +1559,7 @@ addon | version | maintainers | summary
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 18.0.1.0.0 |  | Sale Automatic Workflow Stock
 [sale_cancel_reason](sale_cancel_reason/) | 18.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
+[sale_discount_display_amount](sale_discount_display_amount/) | 18.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_exception](sale_exception/) | 18.0.1.0.0 |  | Custom exceptions on sale order
 [sale_exception_product_sale_manufactured_for](sale_exception_product_sale_manufactured_for/) | 18.0.1.0.0 |  | The partner set in the sales order can order only if he/she has a commercial entity that is listed as one of the partners for which the products can be manufactured for.
 [sale_force_invoiced](sale_force_invoiced/) | 18.0.1.0.0 |  | Allows to force the invoice status of the sales order to Invoiced
@@ -1558,7 +1568,9 @@ addon | version | maintainers | summary
 [sale_order_line_menu](sale_order_line_menu/) | 18.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_note](sale_order_line_note/) | 18.0.1.0.0 |  | Note on sale order line
 [sale_order_line_price_history](sale_order_line_price_history/) | 18.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale order line price history
+[sale_order_line_sequence](sale_order_line_sequence/) | 18.0.1.0.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 18.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
+[sale_order_revision](sale_order_revision/) | 18.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_type](sale_order_type/) | 18.0.1.0.0 |  | Sale Order Type
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 18.0.1.0.0 |  | Base module for multiple procurement group by Sale order
@@ -1568,6 +1580,8 @@ addon | version | maintainers | summary
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
 [sale_stock_line_customer_ref](sale_stock_line_customer_ref/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Allow you to add a customer reference on order lines propagaged to move operations.
 [sale_tier_validation](sale_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
+[sale_wishlist](sale_wishlist/) | 18.0.1.0.0 |  | Handle sale wishlist for partners
+[sales_team_security](sales_team_security/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
 
 [//]: # (end addons)
 
@@ -1614,6 +1628,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_lead_firstname](crm_lead_firstname/) | 18.0.1.0.0 |  | Specify split names for contacts in leads
+[crm_phonecall](crm_phonecall/) | 18.0.1.0.0 |  | CRM Phone Calls
 [crm_stage_probability](crm_stage_probability/) | 18.0.1.0.0 |  | Define fixed probability on the stages
 
 [//]: # (end addons)
@@ -1684,6 +1699,7 @@ addon | version | maintainers | summary
 [partner_stage](partner_stage/) | 18.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
 [partner_title_order](partner_title_order/) | 18.0.1.0.0 |  | Makes partner title sortable by sequence
 [partner_tz](partner_tz/) | 18.0.1.0.0 |  | Remove partner timezone default value and display on form
+[partner_vat_unique](partner_vat_unique/) | 18.0.1.0.0 |  | Module to make the VAT number unique for customers and suppliers.
 [sale_partner_company_group](sale_partner_company_group/) | 18.0.1.0.0 |  | Adds the possibility to add a company group to a company
 
 [//]: # (end addons)
@@ -2094,6 +2110,7 @@ addon | version | maintainers | summary
 [website_sale_product_brand](website_sale_product_brand/) | 18.0.1.0.0 |  | Product Brand Filtering in Website
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 18.0.1.0.0 |  | Display attributes images in shop product detail
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 18.0.1.0.0 |  | Display product reference in e-commerce
+[website_sale_vat_required](website_sale_vat_required/) | 18.0.1.0.0 |  | VAT number required in checkout form
 [website_snippet_product_category](website_snippet_product_category/) | 18.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Adds a new snippet to show e-commerce categories
 
 [//]: # (end addons)
@@ -2559,6 +2576,7 @@ addon | version | maintainers | summary
 [hr_expense_cancel](hr_expense_cancel/) | 18.0.1.0.0 |  | Hr expense cancel
 [hr_expense_payment](hr_expense_payment/) | 18.0.1.0.0 |  | HR Expense Payment
 [hr_expense_sequence](hr_expense_sequence/) | 18.0.1.0.0 |  | HR expense sequence
+[hr_expense_tier_validation](hr_expense_tier_validation/) | 18.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Expense Tier Validation
 
 [//]: # (end addons)
 
@@ -2904,7 +2922,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[companyweb_base](companyweb_base/) | 18.0.1.0.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
+[companyweb_base](companyweb_base/) | 18.0.1.1.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
+[companyweb_payment_info](companyweb_payment_info/) | 18.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
 
 [//]: # (end addons)
 
@@ -4160,7 +4179,7 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 18.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_city](l10n_ro_city/) | 18.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.3.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.4.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_pos](l10n_ro_pos/) | 18.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Point of Sale
 [l10n_ro_stock](l10n_ro_stock/) | 18.0.0.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock
@@ -4433,6 +4452,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 18.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
+[l10n_th_base_sequence](l10n_th_base_sequence/) | 18.0.1.0.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
 [l10n_th_fonts](l10n_th_fonts/) | 18.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all Thai fonts
 
 [//]: # (end addons)
@@ -4855,14 +4875,17 @@ addon | version | maintainers | summary
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 18.0.1.0.0 |  | Reopen canceled transfers
 [stock_picking_backorder_strategy_cancel](stock_picking_backorder_strategy_cancel/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
+[stock_picking_filter_lot](stock_picking_filter_lot/) | 18.0.1.0.0 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_group_by_base](stock_picking_group_by_base/) | 18.0.1.0.0 |  | Allows to define a way to create index on extensible domain
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 18.0.1.0.0 |  | Adds link between pickings and invoices
 [stock_picking_partner_note](stock_picking_partner_note/) | 18.0.1.0.0 |  | Add partner notes on picking
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 18.0.1.0.0 |  | Link between picking and purchase order
+[stock_picking_restrict_cancel_printed](stock_picking_restrict_cancel_printed/) | 18.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Prevent canceling a stock transfer if printed.
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 18.0.1.0.0 |  | Restrict the return to delivered quantity
 [stock_picking_sale_order_link](stock_picking_sale_order_link/) | 18.0.1.0.0 |  | Link between picking and sale order
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 18.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 18.0.1.0.0 |  | Show returns on stock pickings
+[stock_picking_type_force_move_type](stock_picking_type_force_move_type/) | 18.0.1.0.0 |  | Force shipping policies on operation types
 [stock_picking_whole_scrap](stock_picking_whole_scrap/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Create whole scrap from a picking for move lines
 [stock_restrict_lot](stock_restrict_lot/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_split_picking](stock_split_picking/) | 18.0.1.0.0 |  | Split a picking in two not transferred pickings
@@ -4968,11 +4991,16 @@ addon | version | maintainers | summary
 [account_move_line_stock_info](account_move_line_stock_info/) | 18.0.1.0.0 |  | Account Move Line Stock Info
 [stock_archive_constraint](stock_archive_constraint/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
 [stock_demand_estimate](stock_demand_estimate/) | 18.0.1.0.0 |  | Allows to create demand estimates.
+[stock_inventory](stock_inventory/) | 18.0.1.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_location_bin_name](stock_location_bin_name/) | 18.0.1.0.0 |  | Compute bin stock location name automatically
 [stock_location_empty](stock_location_empty/) | 18.0.1.0.0 |  | Adds a filter for empty stock location
+[stock_location_is_sublocation](stock_location_is_sublocation/) | 18.0.1.0.0 |  | Add method to check stock location is sublocation
 [stock_location_position](stock_location_position/) | 18.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_zone](stock_location_zone/) | 18.0.1.0.0 |  | Classify locations with zones.
 [stock_move_common_dest](stock_move_common_dest/) | 18.0.1.0.0 |  | Adds field for common destination moves
 [stock_packaging_calculator](stock_packaging_calculator/) | 18.0.1.0.0 |  | Compute product quantity to pick by packaging
+[stock_picking_supplier_ref](stock_picking_supplier_ref/) | 18.0.1.0.0 |  | Adds a supplier reference field inside supplier's pickings and allows search for this reference.
+[stock_picking_volume](stock_picking_volume/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_putaway_product_template](stock_putaway_product_template/) | 18.0.1.0.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 18.0.1.0.0 |  | Shows the cost of the quants
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 18.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
@@ -5443,8 +5471,10 @@ addon | version | maintainers | summary
 [purchase_order_archive](purchase_order_archive/) | 18.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
+[purchase_order_secondary_unit](purchase_order_secondary_unit/) | 18.0.1.0.0 |  | Purchase product in a secondary unit
 [purchase_order_type](purchase_order_type/) | 18.0.1.0.0 |  | Purchase Order Type
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 18.0.1.0.0 |  | Purchase Order Univoiced Amount
+[purchase_partner_selectable_option](purchase_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Partner Selectable Option
 [purchase_request](purchase_request/) | 18.0.1.0.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 18.0.1.0.0 |  | Purchase Request Department
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
@@ -5541,6 +5571,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[product_assortment](product_assortment/) | 18.0.1.0.0 |  | Adds the ability to manage products assortment
 [product_attachment_zipped_download](product_attachment_zipped_download/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product Attachment Zipped Download
 [product_attribute_archive](product_attribute_archive/) | 18.0.1.0.0 |  | Add an active field on product attributes
 [product_attribute_value_avoid_auto_fill](product_attribute_value_avoid_auto_fill/) | 18.0.1.0.0 |  | Add option allow filling automatically the values
@@ -5558,6 +5589,7 @@ addon | version | maintainers | summary
 [product_net_weight](product_net_weight/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
 [product_packaging_dimension](product_packaging_dimension/) | 18.0.1.0.0 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 18.0.1.0.0 |  | This module binds a product packaging to a packaging level
+[product_packaging_level_salable](product_packaging_level_salable/) | 18.0.1.0.0 |  | Product Packaging level salable
 [product_pricelist_alternative](product_pricelist_alternative/) | 18.0.1.0.0 |  | Calculate product price based on alternative pricelists
 [product_pricelist_by_contact](product_pricelist_by_contact/) | 18.0.1.0.0 |  | Product Pricelist Per Contact
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![kobros-tech](https://github.com/kobros-tech.png?size=30px)](https://github.com/kobros-tech) | Set a fixed currency rate between pricelists
@@ -5570,6 +5602,7 @@ addon | version | maintainers | summary
 [product_state](product_state/) | 18.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
 [product_state_sale](product_state_sale/) | 18.0.1.0.0 |  | This module add the use of Product State in Sale
 [product_state_stock_base](product_state_stock_base/) | 18.0.1.0.0 |  | This module add the use of Product State in Stock
+[product_status](product_status/) | 18.0.1.0.0 |  | Product Status Computed From Fields
 [product_stock_state](product_stock_state/) | 18.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Compute the state of a product's stockthe stock level and sale_ok field
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 18.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) [![AlvaroTForgeFlow](https://github.com/AlvaroTForgeFlow.png?size=30px)](https://github.com/AlvaroTForgeFlow) [![OriolVForgeFlow](https://github.com/OriolVForgeFlow.png?size=30px)](https://github.com/OriolVForgeFlow) | Add the active field to the product supplier info
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 18.0.1.0.0 |  | Product Supplierinfo Revision
@@ -6244,6 +6277,7 @@ addon | version | maintainers | summary
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 18.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 18.0.1.0.0 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 18.0.1.0.0 |  | Report xlsx helpers
+[report_xml](report_xml/) | 18.0.1.0.0 |  | Allow to generate XML reports
 [sql_export](sql_export/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Export data in csv file with SQL requests
 [sql_request_abstract](sql_request_abstract/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Abstract Model to manage SQL Requests
 
@@ -6651,6 +6685,7 @@ addon | version | maintainers | summary
 [base_revision](base_revision/) | 18.0.1.0.0 |  | Keep track of revised document
 [base_technical_features](base_technical_features/) | 18.0.1.0.2 |  | Access to technical features without activating debug mode
 [base_tier_validation](base_tier_validation/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation_formula](base_tier_validation_formula/) | 18.0.1.0.0 |  | Formulas for Base tier validation
 [date_range](date_range/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
 [developer_menu](developer_menu/) | 18.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Menu Shortcut for developer usage
 [sequence_check_digit](sequence_check_digit/) | 18.0.1.0.1 |  | Adds a check digit on sequences
@@ -7430,6 +7465,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [web_chatter_position](web_chatter_position/) | 18.0.1.0.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | Add an option to change the chatter position
+[web_company_color](web_company_color/) | 18.0.1.0.0 |  | Web Company Color
 [web_dialog_size](web_dialog_size/) | 18.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 18.0.1.0.0 |  | Web Disable Export Group
 [web_environment_ribbon](web_environment_ribbon/) | 18.0.1.0.1 |  | Web Environment Ribbon
@@ -7442,6 +7478,7 @@ addon | version | maintainers | summary
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
+[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 18.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Show list fields as a matrix
 
 [//]: # (end addons)
 
