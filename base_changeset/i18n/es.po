@@ -396,6 +396,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__changeset_change_ids
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__changeset_change_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__changeset_change_ids
@@ -840,6 +841,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__changeset_ids
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__changeset_ids
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__changeset_ids
@@ -1271,6 +1273,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__count_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__count_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__count_changesets
@@ -1695,6 +1698,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__count_pending_changeset_changes
@@ -2119,6 +2123,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__count_pending_changesets
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__count_pending_changesets
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__count_pending_changesets
@@ -2917,6 +2922,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_queue_job__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_queue_job_channel__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_queue_job_function__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_changeset.field_queue_job_lock__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_cancelled__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_done__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_changeset.field_queue_requeue_job__count_pending_changeset_changes
@@ -3341,6 +3347,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_queue_job__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_job_channel__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_job_function__count_pending_changesets
+#: model:ir.model.fields,help:base_changeset.field_queue_job_lock__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_cancelled__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_done__count_pending_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_requeue_job__count_pending_changesets
@@ -3765,6 +3772,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_changeset.field_queue_job__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_job_channel__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_job_function__count_changesets
+#: model:ir.model.fields,help:base_changeset.field_queue_job_lock__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_cancelled__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_jobs_to_done__count_changesets
 #: model:ir.model.fields,help:base_changeset.field_queue_requeue_job__count_changesets
@@ -4234,6 +4242,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_channel__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_queue_job_function__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_changeset.field_queue_job_lock__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_cancelled__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_queue_jobs_to_done__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_changeset.field_queue_requeue_job__user_can_see_changeset

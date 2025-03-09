@@ -44,6 +44,16 @@ msgid "Analytic"
 msgstr "Analytique"
 
 #. module: account_analytic_distribution_manual
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_distribution_search
 msgid "Analytic Distribution Search"
 msgstr "Recherche de distribution analytique"
@@ -62,6 +72,11 @@ msgstr "Mixin analytique"
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_precision
 msgid "Analytic Precision"
 msgstr "Précision analytique"
+
+#. module: account_analytic_distribution_manual
+#: model:ir.model.fields,help:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr ""
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_distribution_import
@@ -96,6 +111,13 @@ msgid "Base"
 msgstr "Base"
 
 #. module: account_analytic_distribution_manual
+#: model:ir.model.fields,help:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
+msgstr ""
+
+#. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__company_id
 msgid "Company"
 msgstr "Société"
@@ -124,9 +146,9 @@ msgstr "Créé le"
 #: model:ir.model.fields,help:account_analytic_distribution_manual.field_stock_move_line__analytic_distribution_import
 #: model:ir.model.fields,help:account_analytic_distribution_manual.field_stock_scrap__analytic_distribution_import
 msgid ""
-"Defining this field, it will set the analytical distribution in JSON format,"
-" but using the analytic accounts names as keys of the dictionary, so it "
-"eases the human input."
+"Defining this field, it will set the analytical distribution in JSON format, "
+"but using the analytic accounts names as keys of the dictionary, so it eases "
+"the human input."
 msgstr ""
 "Le fait de définir ce champ va enregistrer la distribution analytique au "
 "format JSON en utilisant les noms des comptes analytiques comme clés du "

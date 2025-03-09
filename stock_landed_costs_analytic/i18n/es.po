@@ -23,6 +23,18 @@ msgid "Analytic"
 msgstr "Analítico"
 
 #. module: stock_landed_costs_analytic
+#: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_names
+#: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: stock_landed_costs_analytic
+#: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_ids
+#: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_distribution_search
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_distribution_search
 msgid "Analytic Distribution Search"
@@ -35,9 +47,23 @@ msgid "Analytic Precision"
 msgstr ""
 
 #. module: stock_landed_costs_analytic
+#: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_ids
+#: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr ""
+
+#. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_distribution_import
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_distribution_import
 msgid "Analytic distribution (importable)"
+msgstr ""
+
+#. module: stock_landed_costs_analytic
+#: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_names
+#: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
 msgstr ""
 
 #. module: stock_landed_costs_analytic

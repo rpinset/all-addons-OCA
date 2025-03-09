@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-02-01 19:36+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2025-03-08 00:06+0000\n"
+"Last-Translator: Yesenia Romero Cornejo <yromero@opensourceintegrators.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__meeting_count
@@ -32,6 +32,12 @@ msgstr "# Oportunidades"
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__task_count
 msgid "# Tasks"
 msgstr "# Tareas"
+
+#. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__supplier_invoice_count
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_person__supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# Facturas de Proveedor"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__owned_location_count
@@ -494,7 +500,7 @@ msgstr "Cancelar Orden"
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.fsm_stage_cancelled
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelado"
 
 #. module: fieldservice
 #. odoo-python
@@ -585,7 +591,7 @@ msgstr "Marque esta casilla si este contacto es un Empleado."
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_category__child_id
 msgid "Child Categories"
-msgstr ""
+msgstr "Categorias hijas"
 
 #. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_equipment__child_ids
@@ -738,7 +744,7 @@ msgstr "Nombre Completo"
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.fsm_stage_completed
 msgid "Completed"
-msgstr ""
+msgstr "Completado"
 
 #. module: fieldservice
 #: model_terms:ir.ui.view,arch_db:fieldservice.fsm_location_form_view
@@ -1162,17 +1168,17 @@ msgstr "¡Nombre de equipo ya existe!"
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.equipment_stage_1
 msgid "Equipment-1"
-msgstr ""
+msgstr "Equipo-1"
 
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.equipment_stage_2
 msgid "Equipment-2"
-msgstr ""
+msgstr "Equipo-2"
 
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.equipment_stage_3
 msgid "Equipment-3"
-msgstr ""
+msgstr "Equipo-3"
 
 #. module: fieldservice
 #: model:ir.actions.act_window,name:fieldservice.action_fsm_report_equipment
@@ -1913,17 +1919,17 @@ msgstr "Trabajadores de Ubicación"
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.location_stage_1
 msgid "Location-1"
-msgstr ""
+msgstr "Ubicación-1"
 
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.location_stage_2
 msgid "Location-2"
-msgstr ""
+msgstr "Ubicación-2"
 
 #. module: fieldservice
 #: model:fsm.stage,name:fieldservice.location_stage_3
 msgid "Location-3"
-msgstr ""
+msgstr "Ubicación-3"
 
 #. module: fieldservice
 #: model:ir.actions.act_window,name:fieldservice.action_fsm_report_location
@@ -3841,9 +3847,6 @@ msgstr "plantilla"
 #~ "El número de identificación fiscal. Complete esto si el contacto está "
 #~ "sujeto a impuestos gubernamentales. Utilizado en algunas declaraciones "
 #~ "legales."
-
-#~ msgid "# Vendor Bills"
-#~ msgstr "# Facturas de Proveedor"
 
 #~ msgid "Agreements"
 #~ msgstr "Acuerdos"

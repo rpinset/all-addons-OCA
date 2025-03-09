@@ -10,62 +10,62 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-17 00:50+0000\n"
-"PO-Revision-Date: 2018-08-24 10:24+0000\n"
-"Last-Translator: Axel-G <git@r5d.de>\n"
+"PO-Revision-Date: 2025-03-06 12:06+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: document_page
 #. odoo-python
 #: code:addons/document_page/models/document_page.py:0
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (Kopie)"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Aktion Erforderlich"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__active
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Aktivitäten"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Aktivitätsausnahme-Dekoration"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Aktivitäts-Status"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icon für Aktivitätstyp"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
 msgid "Archived"
-msgstr ""
+msgstr "Archiviert"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Anzahl Anhänge"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_document_category_filter
@@ -109,7 +109,7 @@ msgstr "Änderungen"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__child_ids
 msgid "Children"
-msgstr ""
+msgstr "Kindelemente"
 
 #. module: document_page
 #: model_terms:ir.actions.act_window,help:document_page.action_page
@@ -125,7 +125,7 @@ msgstr "Schließen"
 #: model:ir.model.fields,field_description:document_page.field_document_page__company_id
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__company_id
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__content
@@ -162,7 +162,7 @@ msgstr "Erstellt am"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__draft_summary
 msgid "Describe the changes made"
-msgstr ""
+msgstr "Beschreiben Sie die gemachten Änderungen"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__diff
@@ -186,9 +186,8 @@ msgstr "Anzeigename"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_document_category_filter
-#, fuzzy
 msgid "Document Category"
-msgstr "Verlauf des Dokumentes"
+msgstr "Dokumentenkategorie"
 
 #. module: document_page
 #: model:ir.actions.report,name:document_page.report_document_page
@@ -208,9 +207,8 @@ msgstr "Dokumenten Seite Historie"
 
 #. module: document_page
 #: model:ir.model,name:document_page.model_wizard_document_page_history_show_diff
-#, fuzzy
 msgid "Document Page Show Diff"
-msgstr "Dokumentenseite"
+msgstr "Dokumentenseite Zeige Änderung"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_category_form
@@ -220,39 +218,39 @@ msgstr "Dokumente"
 #. module: document_page
 #: model:res.groups,name:document_page.group_document_editor
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Beobachter"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Beobachter (Partner)"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Font awesome Symbole z.B. fa-tasks"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_document_category_filter
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_filter
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_history_filter
 msgid "Group By..."
-msgstr ""
+msgstr "Gruppieren nach ..."
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__history_head
 msgid "HEAD"
-msgstr ""
+msgstr "Kopf"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Hat Nachricht"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__history_ids
@@ -271,51 +269,54 @@ msgstr "ID"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icon"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Symbol zur Anzeige einer Ausnahmeaktivität."
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_needaction
 msgid "If checked, new messages require your attention."
 msgstr ""
+"Wenn diese Option aktiviert ist, erfordern neue Nachrichten Ihre "
+"Aufmerksamkeit."
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
+"Wenn dieses Kontrollkästchen aktiviert ist, weisen einige Nachrichten einen "
+"Zustellungsfehler auf."
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__company_id
 #: model:ir.model.fields,help:document_page.field_document_page_history__company_id
 msgid "If set, page is accessible only from this company"
-msgstr ""
+msgstr "Falls gesetzt, ist diese Seite nur für diese Firma zugänglich"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
-#, fuzzy
 msgid "Information"
-msgstr "Menü Information"
+msgstr "Information"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Ist Beobachter"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__content_date
 msgid "Last Contribution Date"
-msgstr ""
+msgstr "Letzte Änderung"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__content_uid
 #: model_terms:ir.ui.view,arch_db:document_page.view_document_category_filter
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_filter
 msgid "Last Contributor"
-msgstr ""
+msgstr "Letzer Beitragender"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page____last_update
@@ -344,12 +345,12 @@ msgstr "Zuletzt aktualisiert am"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Hauptanhang"
 
 #. module: document_page
 #: model:res.groups,name:document_page.group_document_manager
 msgid "Manager"
-msgstr ""
+msgstr "Mananger"
 
 #. module: document_page
 #: model:ir.model,name:document_page.model_ir_ui_menu
@@ -370,18 +371,17 @@ msgstr "Menü Name"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Nachrichtenübertragungsfehler"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_ids
-#, fuzzy
 msgid "Messages"
-msgstr "Seiten"
+msgstr "Nachrichten"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Stichtag für meine Aktivität"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__draft_name
@@ -395,42 +395,42 @@ msgstr "Name"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__draft_name
 msgid "Name for the changes made"
-msgstr ""
+msgstr "Name für die Änderungen"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Nächste Aktivitätsfrist"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Zusammenfassung nächste Aktion"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Nächster Aktivitätstyp"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Anzahl Aktionen"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Anzahl der Fehler"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Anzahl der Meldungen, die eine Aktion erfordern"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Anzahl der Nachrichten mit einem Zustellungsfehler"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page_history__page_id
@@ -467,23 +467,23 @@ msgstr "Verlauf der Seiten"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page_create_menu__menu_parent_id
 msgid "Parent Menu"
-msgstr ""
+msgstr "Obermenü"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Verantwortlicher Benutzer"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
 #: model_terms:ir.ui.view,arch_db:document_page.wiki_history_form
 msgid "Rev 01"
-msgstr ""
+msgstr "Revision 01"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
 msgid "Revision"
-msgstr ""
+msgstr "Revision"
 
 #. module: document_page
 #. odoo-python
@@ -500,6 +500,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Status basierend auf Aktivitäten\n"
+"Überfällig: Fälligkeitsdatum ist bereits abgelaufen\n"
+"Heute: Aktivitätsdatum ist heute\n"
+"Geplant: Zukünftige Aktivitäten."
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__draft_summary
@@ -519,13 +523,15 @@ msgid ""
 "Template that will be used as a content template for all new page of this "
 "category."
 msgstr ""
+"Vorlage, die als neue Inhaltsvorlage bei neuen Seiten in dieser Kategorie, "
+"Verwendung findet."
 
 #. module: document_page
 #. odoo-python
 #: code:addons/document_page/models/document_page_history.py:0
 #, python-format
 msgid "There are no changes in revisions."
-msgstr ""
+msgstr "Es gibt keine Veränderungen in den Revisionen."
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__name
@@ -541,23 +547,22 @@ msgstr "Typ"
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Typ der erfassten Ausnahmeaktivität."
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__backend_url
 msgid "Use it to link resources univocally"
-msgstr ""
+msgstr "Dies benutzen, um eine Ressource eindeutig zu verbinden"
 
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__website_message_ids
-#, fuzzy
 msgid "Website Messages"
-msgstr "Seiten"
+msgstr "Webseiten-Meldungen"
 
 #. module: document_page
 #: model:ir.model.fields,help:document_page.field_document_page__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Webseiten-Kommunikationsverlauf"
 
 #. module: document_page
 #: model:ir.model,name:document_page.model_document_page_create_menu
@@ -569,7 +574,7 @@ msgstr "Assistent Menü erstellen"
 #: code:addons/document_page/models/document_page.py:0
 #, python-format
 msgid "You cannot create recursive categories."
-msgstr ""
+msgstr "Sie können keine rekursiven Kategorien anlegen."
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_category_form
@@ -582,7 +587,7 @@ msgstr "zB Es war einmal …"
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_form
 #: model_terms:ir.ui.view,arch_db:document_page.wiki_history_form
 msgid "eg: Changed ... for ..."
-msgstr ""
+msgstr "z.B.: Geändert ... wegen ..."
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_create_menu
@@ -594,7 +599,7 @@ msgstr "oder"
 #: code:addons/document_page/models/document_page.py:0
 #, python-format
 msgid "summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #~ msgid "Document History"
 #~ msgstr "Verlauf des Dokumentes"

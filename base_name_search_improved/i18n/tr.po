@@ -468,6 +468,7 @@ msgstr "Akıllı Isim Arama Etkin mi?"
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_job__smart_search
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_job_channel__smart_search
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_job_function__smart_search
+#: model:ir.model.fields,field_description:base_name_search_improved.field_queue_job_lock__smart_search
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_jobs_to_cancelled__smart_search
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_jobs_to_done__smart_search
 #: model:ir.model.fields,field_description:base_name_search_improved.field_queue_requeue_job__smart_search

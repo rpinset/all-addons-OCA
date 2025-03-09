@@ -42,7 +42,7 @@ msgstr ""
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "<span>Bypassed, if previous tier was validated by same reviewer</span>"
+msgid "<span>Bypass, if previous tier was validated by same reviewer</span>"
 msgstr ""
 
 #. module: base_tier_validation

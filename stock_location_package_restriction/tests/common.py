@@ -4,14 +4,14 @@
 
 from collections import namedtuple
 
-from odoo.tests.common import SavepointCase
+from odoo.tests.common import TransactionCase
 
 ShortMoveInfo = namedtuple(
     "ShortMoveInfo", ["product", "location_dest", "qty", "package_id"]
 )
 
 
-class TestLocationPackageRestrictionCommon(SavepointCase):
+class TestLocationPackageRestrictionCommon(TransactionCase):
     @classmethod
     def setUpClass(cls):
         """

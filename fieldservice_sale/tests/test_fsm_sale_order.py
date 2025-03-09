@@ -3,14 +3,25 @@
 
 from odoo import fields
 from odoo.exceptions import ValidationError
+from odoo.tests import tagged
 
 from .test_fsm_sale_common import TestFSMSale
 
 
+@tagged("-at_install", "post_install")
 class TestFSMSaleOrder(TestFSMSale):
     @classmethod
     def setUpClass(cls):
-        super(TestFSMSaleOrder, cls).setUpClass()
+        super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.test_location = cls.env.ref("fieldservice.test_location")
 
         # Setup products that when sold will create some FSM orders
@@ -21,8 +32,8 @@ class TestFSMSaleOrder(TestFSMSale):
                 "company_id": False,
             }
         )
-        cls.pricelist_usd = cls.env["product.pricelist"].search(
-            [("currency_id.name", "=", "USD")], limit=1
+        cls.pricelist_usd = cls.env["product.pricelist"].create(
+            {"name": "Test pricelist", "currency_id": cls.env.company.currency_id.id}
         )
         # Create some sale orders that will use the above products
         SaleOrder = cls.env["sale.order"].with_context(tracking_disable=True)

@@ -12,6 +12,17 @@ class FSMLocation(models.Model):
     )
 
     @api.model
+    def default_get(self, fields):
+        res = super().default_get(fields)
+        if (
+            res.get("owner_id")
+            and "customer_id" in fields
+            and not res.get("customer_id")
+        ):
+            res["customer_id"] = res.get("owner_id")
+        return res
+
+    @api.model
     def get_default_customer(self):
         if self.fsm_parent_id:
             return self.fsm_parent_id.customer_id.id

@@ -22,6 +22,16 @@ msgid "Analytic"
 msgstr "Analítica"
 
 #. module: stock_picking_analytic
+#: model:ir.model.fields,field_description:stock_picking_analytic.field_stock_picking__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: stock_picking_analytic
+#: model:ir.model.fields,field_description:stock_picking_analytic.field_stock_picking__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: stock_picking_analytic
 #: model:ir.model.fields,field_description:stock_picking_analytic.field_stock_picking__analytic_distribution_search
 msgid "Analytic Distribution Search"
 msgstr "Búsqueda de Distribución Analítica"
@@ -32,8 +42,20 @@ msgid "Analytic Precision"
 msgstr "Precisión Analítica"
 
 #. module: stock_picking_analytic
+#: model:ir.model.fields,help:stock_picking_analytic.field_stock_picking__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr ""
+
+#. module: stock_picking_analytic
 #: model:ir.model.fields,field_description:stock_picking_analytic.field_stock_picking__analytic_distribution_import
 msgid "Analytic distribution (importable)"
+msgstr ""
+
+#. module: stock_picking_analytic
+#: model:ir.model.fields,help:stock_picking_analytic.field_stock_picking__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
 msgstr ""
 
 #. module: stock_picking_analytic

@@ -3,55 +3,70 @@
 
 from datetime import datetime, timedelta
 
+from odoo.tests import tagged
 from odoo.tests.common import TransactionCase
 
 
+@tagged("-at_install", "post_install")
 class FSMAccountCase(TransactionCase):
-    def setUp(self):
-        super(FSMAccountCase, self).setUp()
-        self.Wizard = self.env["fsm.wizard"]
-        self.WorkOrder = self.env["fsm.order"]
-        self.AccountInvoice = self.env["account.move"]
-        self.AccountInvoiceLine = self.env["account.move.line"]
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
+        cls.Wizard = cls.env["fsm.wizard"]
+        cls.WorkOrder = cls.env["fsm.order"]
+        cls.AccountInvoice = cls.env["account.move"]
+        cls.AccountInvoiceLine = cls.env["account.move.line"]
         # create a Res Partner
-        self.test_partner = self.env["res.partner"].create(
+        cls.test_partner = cls.env["res.partner"].create(
             {"name": "Test Partner", "phone": "123", "email": "tp@email.com"}
         )
         # create a Res Partner to be converted to FSM Location/Person
-        self.test_loc_partner = self.env["res.partner"].create(
+        cls.test_loc_partner = cls.env["res.partner"].create(
             {"name": "Test Loc Partner", "phone": "ABC", "email": "tlp@email.com"}
         )
-        self.test_loc_partner2 = self.env["res.partner"].create(
+        cls.test_loc_partner2 = cls.env["res.partner"].create(
             {"name": "Test Loc Partner 2", "phone": "123", "email": "tlp@example.com"}
         )
         # create expected FSM Location to compare to converted FSM Location
-        self.test_location = self.env["fsm.location"].create(
-            {
-                "name": "Test Location",
-                "phone": "123",
-                "email": "tp@email.com",
-                "partner_id": self.test_loc_partner.id,
-                "owner_id": self.test_loc_partner.id,
-            }
+        cls.test_location = (
+            cls.env["fsm.location"]
+            .with_context(default_owner_id=cls.test_loc_partner.id)
+            .create(
+                {
+                    "name": "Test Location",
+                    "phone": "123",
+                    "email": "tp@email.com",
+                    "partner_id": cls.test_loc_partner.id,
+                }
+            )
         )
-        self.test_order = self.env["fsm.order"].create(
+        cls.test_order = cls.env["fsm.order"].create(
             {
-                "location_id": self.test_location.id,
+                "location_id": cls.test_location.id,
                 "date_start": datetime.today(),
                 "date_end": datetime.today() + timedelta(hours=2),
                 "request_early": datetime.today(),
             }
         )
-        self.test_order2 = self.env["fsm.order"].create(
+        cls.test_order2 = cls.env["fsm.order"].create(
             {
-                "location_id": self.test_location.id,
+                "location_id": cls.test_location.id,
                 "date_start": datetime.today(),
                 "date_end": datetime.today() + timedelta(hours=2),
                 "request_early": datetime.today(),
             }
         )
-        company = self.env.user.company_id
-        self.default_account_revenue = self.env["account.account"].search(
+        company = cls.env.user.company_id
+        cls.default_account_revenue = cls.env["account.account"].search(
             [
                 ("company_id", "=", company.id),
                 ("account_type", "=", "income"),
@@ -64,9 +79,9 @@ class FSMAccountCase(TransactionCase):
             limit=1,
         )
 
-        self.test_invoice = self.env["account.move"].create(
+        cls.test_invoice = cls.env["account.move"].create(
             {
-                "partner_id": self.test_partner.id,
+                "partner_id": cls.test_partner.id,
                 "move_type": "out_invoice",
                 "invoice_date": datetime.today().date(),
                 "invoice_line_ids": [
@@ -86,7 +101,7 @@ class FSMAccountCase(TransactionCase):
                         0,
                         {
                             "name": "line_debit",
-                            "account_id": self.default_account_revenue.id,
+                            "account_id": cls.default_account_revenue.id,
                         },
                     ),
                     (
@@ -94,15 +109,15 @@ class FSMAccountCase(TransactionCase):
                         0,
                         {
                             "name": "line_credit",
-                            "account_id": self.default_account_revenue.id,
+                            "account_id": cls.default_account_revenue.id,
                         },
                     ),
                 ],
             }
         )
-        self.test_invoice2 = self.env["account.move"].create(
+        cls.test_invoice2 = cls.env["account.move"].create(
             {
-                "partner_id": self.test_partner.id,
+                "partner_id": cls.test_partner.id,
                 "move_type": "out_invoice",
                 "invoice_date": datetime.today().date(),
                 "invoice_line_ids": [

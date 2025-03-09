@@ -23,6 +23,16 @@ msgid "Analytic"
 msgstr "Analitika"
 
 #. module: purchase_analytic
+#: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: purchase_analytic
+#: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: purchase_analytic
 #: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__analytic_distribution_search
 msgid "Analytic Distribution Search"
 msgstr ""
@@ -33,8 +43,20 @@ msgid "Analytic Precision"
 msgstr "Preciznost analitike"
 
 #. module: purchase_analytic
+#: model:ir.model.fields,help:purchase_analytic.field_purchase_order__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr ""
+
+#. module: purchase_analytic
 #: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__analytic_distribution_import
 msgid "Analytic distribution (importable)"
+msgstr ""
+
+#. module: purchase_analytic
+#: model:ir.model.fields,help:purchase_analytic.field_purchase_order__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
 msgstr ""
 
 #. module: purchase_analytic

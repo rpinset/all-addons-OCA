@@ -45,9 +45,8 @@ msgstr "<span class=\"oe_edit_only\">Namn</span>"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "<span>Bypassed, if previous tier was validated by same reviewer</span>"
+msgid "<span>Bypass, if previous tier was validated by same reviewer</span>"
 msgstr ""
-"<span>Förbigås om föregående nivå validerades av samma granskare</span>"
 
 #. module: base_tier_validation
 #. odoo-python
@@ -929,6 +928,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "t.ex. attest för..."
+
+#~ msgid ""
+#~ "<span>Bypassed, if previous tier was validated by same reviewer</span>"
+#~ msgstr ""
+#~ "<span>Förbigås om föregående nivå validerades av samma granskare</span>"
 
 #~ msgid ""
 #~ "<i class=\"fa fa-info-circle\"/>\n"

@@ -19,6 +19,16 @@ msgid "Analytic"
 msgstr ""
 
 #. module: mrp_stock_analytic
+#: model:ir.model.fields,field_description:mrp_stock_analytic.field_mrp_production__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: mrp_stock_analytic
+#: model:ir.model.fields,field_description:mrp_stock_analytic.field_mrp_production__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: mrp_stock_analytic
 #: model:ir.model.fields,field_description:mrp_stock_analytic.field_mrp_production__analytic_distribution_search
 msgid "Analytic Distribution Search"
 msgstr ""
@@ -29,8 +39,20 @@ msgid "Analytic Precision"
 msgstr ""
 
 #. module: mrp_stock_analytic
+#: model:ir.model.fields,help:mrp_stock_analytic.field_mrp_production__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr ""
+
+#. module: mrp_stock_analytic
 #: model:ir.model.fields,field_description:mrp_stock_analytic.field_mrp_production__analytic_distribution_import
 msgid "Analytic distribution (importable)"
+msgstr ""
+
+#. module: mrp_stock_analytic
+#: model:ir.model.fields,help:mrp_stock_analytic.field_mrp_production__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
 msgstr ""
 
 #. module: mrp_stock_analytic

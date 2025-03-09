@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-03 17:06+0000\n"
+"PO-Revision-Date: 2025-03-06 11:53+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: account_analytic_tag_distribution
 #: model:ir.model.fields,field_description:account_analytic_tag_distribution.field_account_analytic_tag__analytic_distribution
 msgid "Analytic"
 msgstr "Analitico"
+
+#. module: account_analytic_tag_distribution
+#: model:ir.model.fields,field_description:account_analytic_tag_distribution.field_account_analytic_tag__analytic_account_names
+msgid "Analytic Account Names"
+msgstr "Nomi conto analitico"
+
+#. module: account_analytic_tag_distribution
+#: model:ir.model.fields,field_description:account_analytic_tag_distribution.field_account_analytic_tag__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr "Conti analitici"
 
 #. module: account_analytic_tag_distribution
 #: model:ir.model.fields,field_description:account_analytic_tag_distribution.field_account_analytic_tag__active_analytic_distribution
@@ -42,9 +52,23 @@ msgid "Analytic Tags"
 msgstr "Etichette analitiche"
 
 #. module: account_analytic_tag_distribution
+#: model:ir.model.fields,help:account_analytic_tag_distribution.field_account_analytic_tag__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
+msgstr "Conti analitici calcolati da distribuzione analitica."
+
+#. module: account_analytic_tag_distribution
 #: model:ir.model.fields,field_description:account_analytic_tag_distribution.field_account_analytic_tag__analytic_distribution_import
 msgid "Analytic distribution (importable)"
 msgstr "Distribuzione analitica (importabile)"
+
+#. module: account_analytic_tag_distribution
+#: model:ir.model.fields,help:account_analytic_tag_distribution.field_account_analytic_tag__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
+msgstr ""
+"Nomi conti analitici separati da virgola, nel caso sia utile includerli nei "
+"dati esportati."
 
 #. module: account_analytic_tag_distribution
 #: model:ir.model.fields,help:account_analytic_tag_distribution.field_account_analytic_tag__analytic_distribution_import

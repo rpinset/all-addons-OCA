@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-05 07:53+0000\n"
-"PO-Revision-Date: 2024-07-05 09:54+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2025-03-06 10:08+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: base_tier_validation
 #. odoo-javascript
@@ -27,17 +27,18 @@ msgstr "0 Pendientes"
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
 msgid "<i class=\"fa fa-info-circle\"/> This Record needs to be validated."
-msgstr ""
+msgstr "<i class=\"fa fa-info-circle\"/> Este registro necesita ser validado."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
 msgid "<i class=\"fa fa-thumbs-down\"/> Operation has been <b>rejected</b>."
 msgstr ""
+"<i class=\"fa fa-thumbs-down\"/> La operación ha sido <b>rechazada</b>."
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_validation_label
 msgid "<i class=\"fa fa-thumbs-up\"/> Operation has been <b>validated</b>!"
-msgstr ""
+msgstr "<i class=\"fa fa-thumbs-up\"/> La operación ha sido <b>validada</b>!"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -46,16 +47,15 @@ msgstr "<span class=\"oe_edit_only\">Nombre</span>"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
-msgid "<span>Bypassed, if previous tier was validated by same reviewer</span>"
+msgid "<span>Bypass, if previous tier was validated by same reviewer</span>"
 msgstr ""
-"<span>Omitido, si el nivel anterior fue validado por el mismo revisor</span>"
 
 #. module: base_tier_validation
 #. odoo-python
 #: code:addons/base_tier_validation/models/tier_review.py:0
 #, python-format
 msgid "A review has been requested %s days ago."
-msgstr ""
+msgstr "Una revisión ha sido solicitado hace %s días."
 
 #. module: base_tier_validation
 #. odoo-python
@@ -343,7 +343,7 @@ msgstr "Ha comentado"
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__id
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,help:base_tier_validation.field_tier_definition__notify_on_create
@@ -407,7 +407,7 @@ msgstr "Última modificación en"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_review__last_reminder_date
 msgid "Last Reminder Date"
-msgstr ""
+msgstr "Fecha de último recordatorio"
 
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_comment_wizard__write_uid
@@ -436,7 +436,7 @@ msgstr "Modelo"
 #. module: base_tier_validation
 #: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation_exception__model_name
 msgid "Model Name"
-msgstr ""
+msgstr "Nombre del modelo"
 
 #. module: base_tier_validation
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
@@ -505,6 +505,8 @@ msgid ""
 "Number of days after which a message must be posted to remind about pending "
 "validation  (0 = no reminder)"
 msgstr ""
+"Número de días después de los cuales se debe publicar un mensaje para "
+"recordar sobre la validación pendiente (0 = sin recordatorio)"
 
 #. module: base_tier_validation
 #: model_terms:ir.actions.act_window,help:base_tier_validation.tier_validation_exception_action
@@ -948,6 +950,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_tier_validation.tier_definition_view_form
 msgid "e.g. Tier Validation for..."
 msgstr "ej. Validación de Nivel por..."
+
+#~ msgid ""
+#~ "<span>Bypassed, if previous tier was validated by same reviewer</span>"
+#~ msgstr ""
+#~ "<span>Omitido, si el nivel anterior fue validado por el mismo revisor</"
+#~ "span>"
 
 #~ msgid ""
 #~ "<i class=\"fa fa-info-circle\"/>\n"

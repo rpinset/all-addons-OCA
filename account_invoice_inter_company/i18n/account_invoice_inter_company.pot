@@ -28,10 +28,23 @@ msgid "%(company_name)s - Invoice: %(invoice_name)s"
 msgstr ""
 
 #. module: account_invoice_inter_company
+#: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
+msgid ""
+"<strong>Save</strong> this page and come back here to set up the feature."
+msgstr ""
+
+#. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_bank_statement_line__auto_generated
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_move__auto_generated
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_account_payment__auto_generated
 msgid "Auto Generated Document"
+msgstr ""
+
+#. module: account_invoice_inter_company
+#: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
+msgid ""
+"Automatically generate counterpart documents for orders/invoices between "
+"companies"
 msgstr ""
 
 #. module: account_invoice_inter_company
@@ -86,7 +99,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
 msgid ""
 "Inter Company OCA features\n"
-"                    <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+"                            <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" role=\"img\"/>"
 msgstr ""
 
 #. module: account_invoice_inter_company
@@ -103,11 +116,6 @@ msgstr ""
 #. module: account_invoice_inter_company
 #: model:ir.model.fields,field_description:account_invoice_inter_company.field_res_config_settings__invoice_auto_validation
 msgid "Invoices Auto Validation"
-msgstr ""
-
-#. module: account_invoice_inter_company
-#: model_terms:ir.ui.view,arch_db:account_invoice_inter_company.res_config_settings_view_form
-msgid "Invoicing"
 msgstr ""
 
 #. module: account_invoice_inter_company

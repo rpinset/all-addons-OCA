@@ -3,16 +3,26 @@
 
 
 from odoo.exceptions import UserError
-from odoo.tests import Form
+from odoo.tests import Form, tagged
 from odoo.tools import mute_logger
 
 from odoo.addons.base.tests.common import BaseCommon
 
 
+@tagged("-at_install", "post_install")
 class TestStockAccountMoveResetToDraft(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         cls.category = cls.env["product.category"].create(
             {
                 "name": "Test product",

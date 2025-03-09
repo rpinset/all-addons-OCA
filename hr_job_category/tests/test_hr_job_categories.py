@@ -47,7 +47,7 @@ class TestHrJobCategories(common.TransactionCase):
         """
         # Check if job categories are written to the employee
         self.contract_id.write({"job_id": self.job_id.id})
-        self.contract_id.refresh()
+        self.contract_id.invalidate_recordset()
         self.assertTrue(self.employee_id_1.category_ids)
         self.assertTrue(
             all(
@@ -61,7 +61,7 @@ class TestHrJobCategories(common.TransactionCase):
 
         # Check if job2 categories are written to the employee
         self.contract_id.write({"job_id": self.job_2_id.id})
-        self.contract_id.flush()
+        self.contract_id.flush_recordset()
         self.assertTrue(
             all(
                 x in self.employee_id_1.category_ids.ids
@@ -71,10 +71,10 @@ class TestHrJobCategories(common.TransactionCase):
         self.contract_id.write({"employee_id": self.employee_id_2.id})
         self.contract_id.write({"job_id": self.job_2_id.id})
         # We need to force the job, as it is modified by a compute
-        self.employee_id_1.refresh()
-        self.employee_id_2.refresh()
+        self.employee_id_1.invalidate_recordset()
+        self.employee_id_2.invalidate_recordset()
         # self.assertFalse(self.employee_id_1.category_ids)
-        self.job_2_id.refresh()
+        self.job_2_id.invalidate_recordset()
         self.assertTrue(
             all(
                 x in self.employee_id_2.category_ids.ids
@@ -97,7 +97,7 @@ class TestHrJobCategories(common.TransactionCase):
         # We are now adding contract with 1 job category
         # The employee should now have two tags
         self.contract_id.write({"job_id": self.job_id.id})
-        self.contract_id.refresh()
+        self.contract_id.invalidate_recordset()
         self.assertEqual(len(self.employee_id_1.category_ids.ids), 2)
         self.assertIn(self.categ_3_id.id, self.employee_id_1.category_ids.ids)
         self.assertIn(
@@ -108,7 +108,7 @@ class TestHrJobCategories(common.TransactionCase):
         """Changing the job position removes previous tags and add the new ones"""
         self.employee_id_1.write({"category_ids": self.categ_3_id})
         self.contract_id.write({"job_id": self.job_id.id})
-        self.contract_id.refresh()
+        self.contract_id.invalidate_recordset()
 
         # We have two tags (from job and the manual added one)
         self.assertEqual(len(self.employee_id_1.category_ids.ids), 2)
@@ -116,7 +116,7 @@ class TestHrJobCategories(common.TransactionCase):
         # We change the contract of the employe
         # We should now have the tag
         self.contract_id.write({"job_id": self.job_2_id.id})
-        self.contract_id.flush()
+        self.contract_id.flush_recordset()
 
         self.assertEqual(len(self.employee_id_1.category_ids.ids), 2)
         self.assertIn(self.categ_3_id.id, self.employee_id_1.category_ids.ids)
@@ -131,7 +131,7 @@ class TestHrJobCategories(common.TransactionCase):
         """When we unlink a contract, it should remove only the tags related to it"""
         self.employee_id_1.write({"category_ids": self.categ_3_id})
         self.contract_id.write({"job_id": self.job_id.id})
-        self.contract_id.refresh()
+        self.contract_id.invalidate_recordset()
 
         # We have two tags (from job and the manual added one)
         self.assertEqual(len(self.employee_id_1.category_ids.ids), 2)

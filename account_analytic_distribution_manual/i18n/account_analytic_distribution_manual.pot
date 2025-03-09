@@ -41,6 +41,16 @@ msgid "Analytic"
 msgstr ""
 
 #. module: account_analytic_distribution_manual
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_names
+msgid "Analytic Account Names"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_ids
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_distribution_search
 msgid "Analytic Distribution Search"
 msgstr ""
@@ -58,6 +68,11 @@ msgstr ""
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_precision
 msgid "Analytic Precision"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
+#: model:ir.model.fields,help:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_ids
+msgid "Analytic accounts computed from analytic distribution."
 msgstr ""
 
 #. module: account_analytic_distribution_manual
@@ -90,6 +105,13 @@ msgstr ""
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_base
 msgid "Base"
+msgstr ""
+
+#. module: account_analytic_distribution_manual
+#: model:ir.model.fields,help:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_account_names
+msgid ""
+"Comma-separated analytic account names, in case it is useful to be included "
+"in the exported data."
 msgstr ""
 
 #. module: account_analytic_distribution_manual
