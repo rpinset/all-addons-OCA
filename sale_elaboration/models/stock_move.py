@@ -35,6 +35,32 @@ class StockMove(models.Model):
         distinct_fields += ["elaboration_ids", "elaboration_note"]
         return distinct_fields
 
+    def write(self, vals):
+        # Propagate elaboration quantities to sale order line when quantity_done changes
+        # in done moves (unlock picking)
+        res = False
+        # Use Demand field because Done field is computed and Demand is updated to Done
+        # when move state is done (In this version 15.0) TODO: Check in new versions
+        if "product_uom_qty" in vals and self[:1].state == "done":
+            moves_with_elaborations = self.filtered(
+                lambda m: m.sale_line_id and m.elaboration_ids
+            )
+            old_quantities = {
+                move: move.product_uom_qty for move in moves_with_elaborations
+            }
+            res = super().write(vals)
+            for move in moves_with_elaborations:
+                qty_difference = move.product_uom_qty - old_quantities[move]
+                if not qty_difference:
+                    continue
+                for move_elab in move.elaboration_ids:
+                    sale_elab = move.sale_line_id.order_id.order_line.filtered(
+                        lambda x: x.product_id == move_elab.product_id
+                    )[:1]
+                    if sale_elab:
+                        sale_elab.product_uom_qty += qty_difference
+        return res or super().write(vals)
+
 
 class StockMoveLine(models.Model):
     _inherit = "stock.move.line"

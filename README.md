@@ -352,9 +352,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 505a15eb6f44f3753dd7e211017b7670e2548ff9
+commit 6a882a09685faa88282b4a84046526ab163785fe
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 12 10:26:44 2025 +0000
+Date:   Thu Mar 6 13:10:53 2025 +0000
 
     [BOT] post-merge updates
 
@@ -474,9 +474,9 @@ Date:   Sun Feb 2 18:45:09 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 8114f15aae01bf9a2069756babf102e586110bbc
+commit 381a6fc642351d55a0f4dd8726d71dde6d2887ca
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 5 15:50:19 2025 +0000
+Date:   Fri Mar 7 17:46:06 2025 +0000
 
     [BOT] post-merge updates
 
@@ -830,11 +830,11 @@ Date:   Sun Feb 2 19:29:27 2025 +0000
 
 ## l10n-mexico
 From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
-commit 6bb33003f175901ad533a9f6cbfa1f75f28aefc6
-Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Thu Jul 18 20:53:31 2024 +0000
+commit 7a2af28f0faf16f1ab9723fc3aac631b0d690750
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 7 20:09:51 2025 +0000
 
-    [UPD] Update l10n_mx_cfdi.pot
+    [UPD] README.rst
 
 
 ## l10n-morocco
@@ -884,16 +884,11 @@ Date:   Sun Feb 2 19:34:57 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit d4f74f25d0a82f2bfecae1149992098500dae38e
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Feb 18 06:18:08 2025 +0000
+commit 47ed7568ae93c18f0f2bcef904d46c319a9581ad
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Mar 6 23:53:22 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-15.0/l10n-romania-15.0-l10n_ro_account_anaf_sync
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-15-0/l10n-romania-15-0-l10n_ro_account_anaf_sync/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -948,9 +943,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 92ce4ef867297354e6c6e686d4ddc4215b9ac846
+commit b128bd0556b8b10b89efa2739bf37b7bdb331cc9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 4 02:22:35 2025 +0000
+Date:   Fri Mar 7 08:24:24 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1120,16 +1115,14 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 4f0a84ab7ab0ca5726061c0cd5a35fab5714e7d3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jun 14 14:57:22 2024 +0000
+commit e62174384bad5a8e1cf496032a7db321f3a36829
+Merge: 4f0a84ab cd46b16d
+Author: Maxime Chambreuil <mchambreuil@opensourceintegrators.com>
+Date:   Sat Mar 8 13:58:19 2025 -0600
 
-    Translated using Weblate (Italian)
+    Merge pull request #654 from OCA/15.0-ocabot-update-dotfiles
     
-    Currently translated at 100.0% (159 of 159 strings)
-    
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/it/
+    [15.0] dotfiles update needs manual intervention
 
 
 ## pms

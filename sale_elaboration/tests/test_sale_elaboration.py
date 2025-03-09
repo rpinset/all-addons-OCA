@@ -182,3 +182,12 @@ class TestSaleElaboration(TransactionCase):
         elaboration_lines = self.order.order_line.filtered("is_elaboration")
         self.assertEqual(len(elaboration_lines), 2)
         self.assertEqual(sum(elaboration_lines.mapped("product_uom_qty")), 12.0)
+
+    def test_sale_elaboration_done_move_changes(self):
+        self.order.action_confirm()
+        self.order.picking_ids.move_lines.quantity_done = 10.0
+        self.order.picking_ids._action_done()
+        self.order.picking_ids.move_lines.quantity_done = 15.0
+        elaboration_lines = self.order.order_line.filtered("is_elaboration")
+        self.assertEqual(len(elaboration_lines), 1)
+        self.assertEqual(elaboration_lines.product_uom_qty, 15.0)
