@@ -34,25 +34,34 @@
                     col="4"
                 >
                     <separator colspan="4" string="Acceptance" />
-                    <field
-                        name="acceptance_journal_id"
-                        attrs="{'required':[('type','=','sbf')]}"
-                    />
-                    <field
-                        name="acceptance_account_id"
-                        attrs="{'required':[('type','=','sbf')]}"
-                    />
+                    <group>
+                        <field
+                            name="acceptance_journal_id"
+                            attrs="{'required':[('type','=','sbf')]}"
+                        />
+                        <field
+                            name="acceptance_account_id"
+                            attrs="{'required':[('type','=','sbf')]}"
+                        />
+                    </group>
                     <separator colspan="4" string="Credit" />
-                    <field name="accreditation_journal_id" />
-                    <field name="accreditation_account_id" />
-                    <field name="bank_account_id" />
-                    <field name="bank_expense_account_id" />
+                    <group>
+                        <field name="accreditation_journal_id" />
+                        <field name="accreditation_account_id" />
+                        <field name="bank_account_id" />
+                        <field name="bank_expense_account_id" />
+                    </group>
                     <separator colspan="4" string="Past Due" />
-                    <field name="unsolved_journal_id" />
-                    <field name="overdue_effects_account_id" />
-                    <field name="protest_charge_account_id" />
+                    <group>
+                        <field name="unsolved_journal_id" />
+                        <field name="overdue_effects_account_id" />
+                        <field name="protest_charge_account_id" />
+                    </group>
                     <separator colspan="4" string="Settlement" />
-                    <field name="settlement_journal_id" />
+                    <group>
+                        <field name="settlement_journal_id" />
+                    </group>
+                    <br />
                     <group
                         string="Acceptance"
                         attrs="{'required':[('type','=','incasso')]}"

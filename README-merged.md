@@ -256,7 +256,7 @@ addon | version | maintainers | summary
 [account_balance_line](account_balance_line/) | 14.0.1.1.0 |  | Display balance totals in move line view
 [account_cash_deposit](account_cash_deposit/) | 14.0.1.3.0 |  | Manage cash deposits and cash orders
 [account_chart_update](account_chart_update/) | 14.0.2.1.2 |  | Wizard to update a company's account chart from a template
-[account_check_deposit](account_check_deposit/) | 14.0.1.4.0 |  | Manage deposit of checks to the bank
+[account_check_deposit](account_check_deposit/) | 14.0.1.5.0 |  | Manage deposit of checks to the bank
 [account_cost_center](account_cost_center/) | 14.0.1.0.0 |  | Cost center information for invoice lines
 [account_fiscal_month](account_fiscal_month/) | 14.0.1.0.0 |  | Provide a fiscal month date range type
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 14.0.1.2.0 |  | Check VAT on invoice validation
@@ -2012,6 +2012,7 @@ addon | version | maintainers | summary
 [sale_quotation_number](sale_quotation_number/) | 14.0.2.0.2 |  | Different sequence for sale quotations
 [sale_quotation_template_product_multi_add](sale_quotation_template_product_multi_add/) | 14.0.1.0.1 |  | Feature to add multiple products to quotation template
 [sale_rental](sale_rental/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manage Rental of Products
+[sale_require_po_doc](sale_require_po_doc/) | 14.0.1.0.1 |  | Sale Orders Require PO or Sales Documentation
 [sale_restricted_qty](sale_restricted_qty/) | 14.0.1.1.3 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Sale order min quantity
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 14.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_start_end_dates](sale_start_end_dates/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
@@ -4389,7 +4390,7 @@ addon | version | maintainers | summary
 [l10n_fr_account_invoice_import_facturx](l10n_fr_account_invoice_import_facturx/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | France-specific module to import Factur-X invoices
 [l10n_fr_account_invoice_import_simple_pdf](l10n_fr_account_invoice_import_simple_pdf/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Invoice import simple PDF: match partners using SIREN
 [l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Auto-configure UNECE params on French taxes
-[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.7.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
+[l10n_fr_account_vat_return](l10n_fr_account_vat_return/) | 14.0.9.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | VAT return for France: CA3, 3310-A, 3519
 [l10n_fr_account_vat_return_selenium](l10n_fr_account_vat_return_selenium/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Autofill CA3 on impots.gouv.fr via Selenium IDE
 [l10n_fr_account_vat_return_teledec](l10n_fr_account_vat_return_teledec/) | 14.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Teletransmit CA3 via Teledec.fr (subscription required)
 [l10n_fr_business_document_import](l10n_fr_business_document_import/) | 14.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adapt the module base_business_document_import for France
@@ -4410,7 +4411,7 @@ addon | version | maintainers | summary
 [l10n_fr_oca](l10n_fr_oca/) | 14.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Fork of l10n_fr: fewer taxes, ready for OCA VAT return for France
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 14.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_pos_cert_allow_change_qty](l10n_fr_pos_cert_allow_change_qty/) | 14.0.1.0.1 |  | Remove restriction on change quantity
-[l10n_fr_siret](l10n_fr_siret/) | 14.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
+[l10n_fr_siret](l10n_fr_siret/) | 14.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
 [l10n_fr_siret_lookup](l10n_fr_siret_lookup/) | 14.0.1.1.0 | [![remi-filament](https://github.com/remi-filament.png?size=30px)](https://github.com/remi-filament) | Lookup partner via an API on the SIRENE directory
 [l10n_fr_state](l10n_fr_state/) | 14.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Populate Database with French States (Régions)
 
@@ -4787,7 +4788,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.7 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
-[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.13.2 |  | Ricevute bancarie
+[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.13.3 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdd_cbi](l10n_it_sdd_cbi/) | 14.0.1.0.0 |  | Create SEPA files for CBI SDD Italy
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
@@ -6743,7 +6744,7 @@ addon | version | maintainers | summary
 [mrp_auto_assign](mrp_auto_assign/) | 14.0.1.0.0 |  | Make MO automatically reserve raw material moves at creation
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 14.0.1.2.5 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Dynamic BOM component based on product attribute
 [mrp_bom_attribute_match_duplicate_kit](mrp_bom_attribute_match_duplicate_kit/) | 14.0.1.1.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | BOM Attribute Match Duplicate Kit
-[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.3 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | BOM Attribute Match Semifinished Products
+[mrp_bom_attribute_match_semifinished_product](mrp_bom_attribute_match_semifinished_product/) | 14.0.1.0.4 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | BOM Attribute Match Semifinished Products
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 14.0.1.1.1 |  | MRP BOM Component Menu
 [mrp_bom_find_ignore](mrp_bom_find_ignore/) | 14.0.1.0.0 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Adding 'ignore_bom_find' to the context will let '_bom_find' return an empty record set
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 14.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
@@ -9531,7 +9532,7 @@ addon | version | maintainers | summary
 [web_field_required_invisible_manager](web_field_required_invisible_manager/) | 14.0.2.3.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Web Field Required Invisible Readonly Managerr
 [web_fix_modules_load](web_fix_modules_load/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Fix translations loading from frontend with many modules
 [web_group_expand](web_group_expand/) | 14.0.1.0.0 |  | Group Expand Buttons
-[web_ir_actions_act_multi](web_ir_actions_act_multi/) | 14.0.1.0.1 |  | Enables triggering of more than one action on ActionManager
+[web_ir_actions_act_multi](web_ir_actions_act_multi/) | 14.0.1.0.2 |  | Enables triggering of more than one action on ActionManager
 [web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 14.0.1.0.2 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 14.0.1.0.1 |  | Show a message box to users
 [web_listview_range_select](web_listview_range_select/) | 14.0.1.0.0 |  | Enables selecting a range of records using the shift key

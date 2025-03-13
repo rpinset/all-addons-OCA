@@ -58,6 +58,9 @@ msgstr "Erstellt am"
 
 #. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data__display_name
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields__display_name
 msgid "Display Name"
 msgstr "Anzeigename"
 
@@ -67,12 +70,23 @@ msgid "External ID"
 msgstr "Externe ID"
 
 #. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_fields
+msgid "Fields"
+msgstr ""
+
+#. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data__id
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields__id
 msgid "ID"
 msgstr "ID"
 
 #. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_data____last_update
+#: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_model_fields____last_update
 msgid "Last Modified on"
 msgstr "Zuletzt bearbeitet am"
 
@@ -85,6 +99,16 @@ msgstr "Zuletzt aktualisiert von"
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__write_date
 msgid "Last Updated on"
 msgstr "Zuletzt aktualisiert am"
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model_data
+msgid "Model Data"
+msgstr ""
+
+#. module: web_ir_actions_act_multi
+#: model:ir.model,name:web_ir_actions_act_multi.model_ir_model
+msgid "Models"
+msgstr ""
 
 #. module: web_ir_actions_act_multi
 #: model:ir.model.fields,field_description:web_ir_actions_act_multi.field_ir_actions_act_multi__name
