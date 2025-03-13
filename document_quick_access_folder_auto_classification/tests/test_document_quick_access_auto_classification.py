@@ -204,7 +204,7 @@ class TestDocumentQuickAccessClassification(TransactionComponentRegistryCase):
         missing.with_context(
             document_quick_access_reject_file=True
         ).action_exchange_process()
-        missing.refresh()
+        missing.invalidate_recordset()
         self.assertEqual(missing.edi_exchange_state, "input_processed")
         self.assertFalse(missing.model)
 

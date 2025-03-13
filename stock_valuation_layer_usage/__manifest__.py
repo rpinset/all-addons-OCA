@@ -3,7 +3,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 {
     "name": "Stock Valuation Layer Usage",
-    "version": "16.0.2.0.1",
+    "version": "16.0.2.1.0",
     "category": "Warehouse Management",
     "development_status": "Alpha",
     "license": "AGPL-3",
@@ -14,6 +14,7 @@
     "depends": ["sale", "stock_account_product_run_fifo_hook"],
     "data": [
         "security/ir.model.access.csv",
+        "security/ir_rule.xml",
         "views/stock_valuation_layer_usage_views.xml",
         "views/stock_valuation_layer_views.xml",
         "views/stock_move_views.xml",

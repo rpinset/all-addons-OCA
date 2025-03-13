@@ -214,6 +214,7 @@ python-stdnum
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
 # generated from manifests external_dependencies
+cerberus
 roulier
 unidecode
 zeep
@@ -290,6 +291,7 @@ unidecode
 cryptography
 endesive
 mock
+odoo_test_helper
 openpyxl
 py3o.formats
 py3o.template

@@ -5,8 +5,9 @@
             <button
                 name="request_validation"
                 string="Request Validation"
-                t-attf-attrs="{'invisible': ['|', '|',
+                t-attf-attrs="{'invisible': ['|', '|', '|',
                 ('need_validation', '!=', True),
+                ('validation_status', '=', 'pending'),
                 ('rejected','=',True),('#{state_field}', '#{state_operator}', #{state_value})]}"
                 type="object"
             />

@@ -239,10 +239,10 @@ class AccountPaymentTerm(models.Model):
         untaxed_amount_left = untaxed_amount
         untaxed_amount_currency_left = untaxed_amount_currency
 
-        total_amount = remaining_amount = tax_amount + untaxed_amount
-        total_amount_currency = remaining_amount_currency = (
-            tax_amount_currency + untaxed_amount_currency
-        )
+        total_amount = tax_amount + untaxed_amount
+        total_amount_currency = tax_amount_currency + untaxed_amount_currency
+        foreign_rounding_amount = 0
+        company_rounding_amount = 0
         result = []
         precision_digits = currency.decimal_places
         company_precision_digits = company_currency.decimal_places
@@ -267,14 +267,10 @@ class AccountPaymentTerm(models.Model):
             }
 
             if line.value == "fixed":
-                line_amount = line.compute_line_amount(
-                    total_amount, remaining_amount, precision_digits
+                term_vals["company_amount"] = sign * company_currency.round(
+                    line.value_amount
                 )
-                company_line_amount = line.compute_line_amount(
-                    total_amount, remaining_amount, company_precision_digits
-                )
-                term_vals["company_amount"] = sign * company_line_amount
-                term_vals["foreign_amount"] = sign * line_amount
+                term_vals["foreign_amount"] = sign * currency.round(line.value_amount)
                 company_proportion = (
                     tax_amount / untaxed_amount if untaxed_amount else 1
                 )
@@ -295,16 +291,12 @@ class AccountPaymentTerm(models.Model):
                     term_vals["foreign_amount"] - line_tax_amount_currency
                 )
             elif line.value == "percent":
-                line_amount = line.compute_line_amount(
-                    total_amount, remaining_amount, precision_digits
+                term_vals["company_amount"] = company_currency.round(
+                    total_amount * (line.value_amount / 100.0)
                 )
-                company_line_amount = line.compute_line_amount(
-                    total_amount_currency,
-                    remaining_amount_currency,
-                    company_precision_digits,
+                term_vals["foreign_amount"] = currency.round(
+                    total_amount_currency * (line.value_amount / 100.0)
                 )
-                term_vals["company_amount"] = company_line_amount
-                term_vals["foreign_amount"] = line_amount
                 line_tax_amount = company_currency.round(
                     tax_amount * (line.value_amount / 100.0)
                 )
@@ -315,7 +307,6 @@ class AccountPaymentTerm(models.Model):
                 line_untaxed_amount_currency = (
                     term_vals["foreign_amount"] - line_tax_amount_currency
                 )
-
             elif line.value == "percent_amount_untaxed":
                 if company_currency != currency:
                     raise UserError(
@@ -353,15 +344,15 @@ class AccountPaymentTerm(models.Model):
             tax_amount_currency_left -= line_tax_amount_currency
             untaxed_amount_left -= line_untaxed_amount
             untaxed_amount_currency_left -= line_untaxed_amount_currency
-            remaining_amount = tax_amount_left + untaxed_amount_left
-            remaining_amount_currency = (
-                tax_amount_currency_left + untaxed_amount_currency_left
-            )
 
             if line.value == "balance":
-                term_vals["company_amount"] = tax_amount_left + untaxed_amount_left
+                term_vals["company_amount"] = (
+                    tax_amount_left + untaxed_amount_left - company_rounding_amount
+                )
                 term_vals["foreign_amount"] = (
-                    tax_amount_currency_left + untaxed_amount_currency_left
+                    tax_amount_currency_left
+                    + untaxed_amount_currency_left
+                    - foreign_rounding_amount
                 )
                 line_tax_amount = tax_amount_left
                 line_tax_amount_currency = tax_amount_currency_left

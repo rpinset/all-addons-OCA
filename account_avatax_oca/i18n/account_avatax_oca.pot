@@ -14,6 +14,13 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: account_avatax_oca
+#. odoo-python
+#: code:addons/account_avatax_oca/hooks.py:0
+#, python-format
+msgid "(Discount)"
+msgstr ""
+
+#. module: account_avatax_oca
 #: model:ir.model.fields.selection,name:account_avatax_oca.selection__res_partner__validation_method__avatax
 msgid "AVALARA"
 msgstr ""
@@ -439,13 +446,17 @@ msgstr ""
 
 #. module: account_avatax_oca
 #: model:ir.actions.act_window,name:account_avatax_oca.action_exemption_code_details
+#: model:ir.ui.menu,name:account_avatax_oca.menu_action_exemption_code_details
+msgid "Entity Use Code"
+msgstr ""
+
+#. module: account_avatax_oca
 #: model:ir.model,name:account_avatax_oca.model_exemption_code
 #: model:ir.model.fields,field_description:account_avatax_oca.field_account_bank_statement_line__exemption_code_id
 #: model:ir.model.fields,field_description:account_avatax_oca.field_account_move__exemption_code_id
 #: model:ir.model.fields,field_description:account_avatax_oca.field_account_payment__exemption_code_id
 #: model:ir.model.fields,field_description:account_avatax_oca.field_res_partner__property_exemption_code_id
 #: model:ir.model.fields,field_description:account_avatax_oca.field_res_users__property_exemption_code_id
-#: model:ir.ui.menu,name:account_avatax_oca.menu_action_exemption_code_details
 msgid "Exemption Code"
 msgstr ""
 

@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools import groupby
 
 
 def delta_now(**kwargs):
@@ -97,22 +98,21 @@ class ResUsers(models.Model):
         return True
 
     def _check_password_rules(self, password):
-        self.ensure_one()
         if not password:
             return True
-        company_id = self.company_id
         params = self.env["ir.config_parameter"].sudo()
         minlength = params.get_param("auth_password_policy.minlength", default=0)
-        password_regex = [
-            "^",
-            "(?=.*?[a-z]){" + str(company_id.password_lower) + ",}",
-            "(?=.*?[A-Z]){" + str(company_id.password_upper) + ",}",
-            "(?=.*?\\d){" + str(company_id.password_numeric) + ",}",
-            r"(?=.*?[\W_]){" + str(company_id.password_special) + ",}",
-            ".{%d,}$" % int(minlength),
-        ]
-        if not re.search("".join(password_regex), password):
-            raise ValidationError(self.password_match_message())
+        for company_id, users in groupby(self, lambda u: u.company_id):
+            password_regex = [
+                "^",
+                "(?=.*?[a-z]){" + str(company_id.password_lower) + ",}",
+                "(?=.*?[A-Z]){" + str(company_id.password_upper) + ",}",
+                "(?=.*?\\d){" + str(company_id.password_numeric) + ",}",
+                r"(?=.*?[\W_]){" + str(company_id.password_special) + ",}",
+                ".{%d,}$" % int(minlength),
+            ]
+            if not re.search("".join(password_regex), password):
+                raise ValidationError(users[0].password_match_message())
 
         return True
 

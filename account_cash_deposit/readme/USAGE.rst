@@ -3,9 +3,7 @@ To create a new cash **deposit**, go to the menu *Invoicing > Accounting > Misce
 * credits the cash account,
 * debits the inter-banks transfer account.
 
-.. figure:: static/description/cash_deposit_form.png
-   :scale: 100 %
-   :alt: Cash Deposit form view
+.. image:: ../static/description/cash_deposit_form.png
 
 The process is very similar when **ordering** cash but you have to use another menu entry: menu *Invoicing > Accounting > Miscellaneous > Cash Orders*. Select the currency, the cash box that will receive the cash and the bank account from which the bank will take the money. Create/edit lines to enter the details of your order (bank notes, coin rolls). Then, you can confirm the order and print a PDF report designed to be sent to your bank as a cash order. Eventually, when the bank delivers the cash to you, you should validate the cash order and Odoo will generate a journal entry in the cash journal that:
 

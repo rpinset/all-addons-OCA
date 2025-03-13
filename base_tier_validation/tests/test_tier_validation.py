@@ -127,11 +127,8 @@ class TierTierValidation(CommonTierValidation):
         )
         # Request validation
         self.test_record.with_user(self.test_user_2.id).request_validation()
-        self.test_record.invalidate_model()
         test_record.with_user(self.test_user_2.id).request_validation()
-        test_record.invalidate_model()
         self.test_record_2.with_user(self.test_user_2.id).request_validation()
-        self.test_record_2.invalidate_model()
         # Get review user count as systray icon would do and check count value
         docs = self.test_user_1.with_user(self.test_user_1).review_user_count()
         for doc in docs:
@@ -924,11 +921,14 @@ class TierTierValidation(CommonTierValidation):
         # Check need validation
         self.assertTrue(test_record.need_validation)
         self.assertEqual(len(reviews), 1)
+        self.assertEqual(reviews.definition_id, self.tier_definition)
+        self.assertEqual(len(test_record.review_ids), 1)
+        old_review = test_record.review_ids
 
         # Now record is not validated yet and new definition create,
         # and then we reevaluate object then it will add new definition validation
         # also in current object
-        self.tier_def_obj.create(
+        definition_extra = self.tier_def_obj.create(
             {
                 "model_id": self.tester_model.id,
                 "review_type": "individual",
@@ -941,7 +941,10 @@ class TierTierValidation(CommonTierValidation):
         reviews = test_record.with_user(self.test_user_2.id).reevaluate_reviews()
         # Check need validation
         self.assertTrue(test_record.need_validation)
-        self.assertEqual(len(reviews), 2)
+        self.assertEqual(len(reviews), 1)
+        self.assertEqual(reviews.definition_id, definition_extra)
+        self.assertEqual(len(test_record.review_ids), 2)
+        self.assertIn(old_review, test_record.review_ids)
 
     def test_28_reevaluate_validation(self):
         # Create new test record
@@ -976,6 +979,8 @@ class TierTierValidation(CommonTierValidation):
         # Check need validation
         self.assertTrue(test_record.need_validation)
         self.assertEqual(len(reviews), 1)
+        self.assertEqual(len(test_record.review_ids), 1)
+        old_review = test_record.review_ids
 
         # now post new message "This record need extra validation",
         # it will need to reevaluate record and will add new tier validation
@@ -985,7 +990,9 @@ class TierTierValidation(CommonTierValidation):
         reviews = test_record.with_user(self.test_user_2.id).reevaluate_reviews()
         # Check need validation
         self.assertTrue(test_record.need_validation)
-        self.assertEqual(len(reviews), 2)
+        self.assertEqual(len(reviews), 1)
+        self.assertEqual(len(test_record.review_ids), 2)
+        self.assertIn(old_review, test_record.review_ids)
 
 
 @tagged("at_install")

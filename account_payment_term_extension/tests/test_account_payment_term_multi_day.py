@@ -320,8 +320,8 @@ class TestAccountPaymentTermMultiDay(common.TransactionCase):
             if line.date_maturity:
                 amounts.append(line.credit)
         self.assertEqual(
-            amounts[0],
-            500,
+            amounts,
+            [500.05, 500.05],
             "Incorrect round for invoice with payment days on "
             "15 and 20 then 5 and 10 (round)",
         )
