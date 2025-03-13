@@ -1224,11 +1224,16 @@ Date:   Sat Feb 1 21:22:35 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 5edf1e4bd495927f1cb92d687be03071d17df4f8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:22:09 2025 +0000
+commit 8fec7b143cba48372c7dc4de8f6b4bb280e135cd
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Mar 11 16:42:49 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (86 of 86 strings)
+    
+    Translation: management-system-13.0/management-system-13.0-mgmtsystem
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem/it/
 
 
 ## purchase-workflow
