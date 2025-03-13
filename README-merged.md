@@ -287,6 +287,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report](account_financial_report/) | 17.0.1.6.4 |  | OCA Financial Reports
+[account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
@@ -395,10 +396,12 @@ addon | version | maintainers | summary
 [account_invoice_pricelist](account_invoice_pricelist/) | 17.0.1.0.1 |  | Add partner pricelist on invoices
 [account_invoice_refund_link](account_invoice_refund_link/) | 17.0.1.0.1 |  | Show links between refunds and their originator invoices.
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 17.0.2.1.0 |  | For invoices targetting multiple sale order addsections with sale order name.
+[account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
 [account_invoice_subscription_per_contact](account_invoice_subscription_per_contact/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Invoice Subscription per contact
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_warn_message](account_invoice_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_manual_currency](account_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Accounting
+[account_move_cancel_confirm](account_move_cancel_confirm/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Account Move Cancel Confirm
 [account_move_tier_validation](account_move_tier_validation/) | 17.0.1.0.1 |  | Extends the functionality of Account Moves to support a tier validation process.
 [partner_invoicing_mode](partner_invoicing_mode/) | 17.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
 [portal_account_personal_data_only](portal_account_personal_data_only/) | 17.0.1.0.0 |  | Portal Accounting Personal Data Only
@@ -459,7 +462,7 @@ addon | version | maintainers | summary
 [account_ecotax](account_ecotax/) | 17.0.1.0.0 | [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 17.0.1.0.0 |  | Account Fiscal Position Partner Type
-[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.0.0 |  | L10n EU OSS OCA
+[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.1.0 |  | L10n EU OSS OCA
 
 [//]: # (end addons)
 
@@ -799,7 +802,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[privacy](privacy/) | 17.0.1.0.0 |  | Provides data privacy and protection features to comply to regulations, such as GDPR.
 
 [//]: # (end addons)
 
@@ -1870,7 +1877,7 @@ addon | version | maintainers | summary
 [partner_disable_gravatar](partner_disable_gravatar/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Disable automatic connection to gravatar.com
 [partner_display_name_line_break](partner_display_name_line_break/) | 17.0.1.0.1 |  | Split the company and the partner name on two different lines
 [partner_duns](partner_duns/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Set DUNS (Data Universal Numbering System) on partners
-[partner_email_check](partner_email_check/) | 17.0.1.0.0 |  | Validate email address field
+[partner_email_check](partner_email_check/) | 17.0.1.1.0 |  | Validate email address field
 [partner_email_duplicate_warn](partner_email_duplicate_warn/) | 17.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Warning banner on partner form if another partner has the same email
 [partner_employee_quantity](partner_employee_quantity/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | Know how many employees a partner has
 [partner_external_map](partner_external_map/) | 17.0.1.0.0 |  | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
@@ -2342,6 +2349,7 @@ addon | version | maintainers | summary
 [website_sale_product_brand](website_sale_product_brand/) | 17.0.1.0.0 |  | Product Brand Filtering in Website
 [website_sale_product_description](website_sale_product_description/) | 17.0.1.0.0 |  | Shows custom e-Commerce description for products
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 17.0.1.0.0 |  | Display attributes images in shop product detail
+[website_sale_product_minimal_price](website_sale_product_minimal_price/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Display minimal price for products that has variants
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 17.0.1.0.0 |  | Display product reference in e-commerce
 [website_sale_require_legal](website_sale_require_legal/) | 17.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
 [website_sale_secondary_unit](website_sale_secondary_unit/) | 17.0.1.0.0 |  | Allow manage secondary units in website shop
@@ -2468,10 +2476,11 @@ addon | version | maintainers | summary
 [fieldservice_activity](fieldservice_activity/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_agreement](fieldservice_agreement/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Field Service agreements and contracts
 [fieldservice_calendar](fieldservice_calendar/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
-[fieldservice_crm](fieldservice_crm/) | 17.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
+[fieldservice_crm](fieldservice_crm/) | 17.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
-[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
+[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.2 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
+[fieldservice_kanban_info](fieldservice_kanban_info/) | 17.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Display key service information on Field Service Kanban cards.
 [fieldservice_portal](fieldservice_portal/) | 17.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
 [fieldservice_project](fieldservice_project/) | 17.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_recurring](fieldservice_recurring/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
@@ -2840,7 +2849,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 17.0.1.0.0 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 17.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
-[hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.0 |  | HR Attendance Reason
+[hr_attendance_reason](hr_attendance_reason/) | 17.0.1.1.1 |  | HR Attendance Reason
 [hr_attendance_report_theoretical_time](hr_attendance_report_theoretical_time/) | 17.0.1.1.0 |  | Theoretical vs Attended Time Analysis
 [hr_attendance_rfid](hr_attendance_rfid/) | 17.0.1.0.0 |  | HR Attendance RFID
 
@@ -2940,7 +2949,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
+[hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_public](hr_holidays_public/) | 17.0.1.0.6 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 17.0.1.0.0 |  | Edit start and end of leaves using time intervals
@@ -3251,7 +3260,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_statement_import_coda](account_statement_import_coda/) | 17.0.1.0.0 |  | Import CODA Bank Statement
-[companyweb_base](companyweb_base/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
+[companyweb_base](companyweb_base/) | 17.0.1.1.0 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
 [companyweb_payment_info](companyweb_payment_info/) | 17.0.1.0.1 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Send your customer payment information to Companyweb
 [l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 17.0.1.0.0 |  | Belgium - KBO/BCE numbers
 
@@ -3728,6 +3737,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_fi_banks](l10n_fi_banks/) | 17.0.1.0.0 |  | Finnish banks and their addresses
 [l10n_fi_edicode](l10n_fi_edicode/) | 17.0.1.0.0 |  | Adds EDI code field and operators
+[l10n_fi_payment_terms](l10n_fi_payment_terms/) | 17.0.1.0.0 |  | Common Finnish invoice payment terms
 [l10n_fi_sale_refund_payment_reference](l10n_fi_sale_refund_payment_reference/) | 17.0.1.0.0 |  | Automatically generate payment references for sale refunds
 
 [//]: # (end addons)
@@ -4552,7 +4562,7 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.28.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.29.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.5.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.10.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -4705,6 +4715,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 17.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
 [delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_seur_atlas](delivery_seur_atlas/) | 17.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
@@ -4725,7 +4736,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.1 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
-[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.2.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 17.0.1.2.4 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_igic](l10n_es_igic/) | 17.0.2.1.0 |  | IGIC (Impuesto General Indirecto Canario)
 [l10n_es_igic_reav](l10n_es_igic_reav/) | 17.0.1.0.0 |  | Aplicación REAV en la localización canaria
@@ -4742,7 +4753,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book](l10n_es_vat_book/) | 17.0.1.2.0 |  | Libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.0.0 |  | Prorrata de IVA para la localización española
-[payment_redsys](payment_redsys/) | 17.0.1.0.0 |  | Payment Acquirer: Redsys Implementation
+[payment_redsys](payment_redsys/) | 17.0.1.0.1 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
 
@@ -4882,6 +4893,7 @@ addon | version | maintainers | summary
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 17.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 17.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Convert Amount Text to Thai
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 17.0.1.0.0 | [![sansirit](https://github.com/sansirit.png?size=30px)](https://github.com/sansirit) [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Base Sequence
+[l10n_th_fonts](l10n_th_fonts/) | 17.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Collection of all Thai fonts
 [l10n_th_mis_report](l10n_th_mis_report/) | 17.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - MIS Report
 [l10n_th_tier_department](l10n_th_tier_department/) | 17.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level
 [l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 17.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Tier Department Level Demo
@@ -5201,7 +5213,7 @@ addon | version | maintainers | summary
 [delivery_multi_destination](delivery_multi_destination/) | 17.0.1.0.0 |  | Multiple destinations for the same delivery method
 [delivery_package_number](delivery_package_number/) | 17.0.1.0.0 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 17.0.1.0.0 |  | Force a fixed or rule price calculation on Delivery Methods, for example to override a webservice provided prices.
-[delivery_roulier](delivery_roulier/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
+[delivery_roulier](delivery_roulier/) | 17.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_option](delivery_roulier_option/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
 [delivery_state](delivery_state/) | 17.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [partner_delivery_info](partner_delivery_info/) | 17.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
@@ -5304,6 +5316,7 @@ addon | version | maintainers | summary
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 17.0.1.1.1 |  | Delivery Procurement Group Carrier
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 17.0.1.0.0 |  | Adds link between purchases, pickings and invoices
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 17.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
+[sale_planned_consumed_date](sale_planned_consumed_date/) | 17.0.1.0.0 |  | Sale planned consumed date
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 17.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_account_show_automatic_valuation](stock_account_show_automatic_valuation/) | 17.0.1.0.0 |  | Allow automatic valuation for stock moves in community edition
 [stock_lock_lot](stock_lock_lot/) | 17.0.1.0.0 |  | Stock Lock Lot
@@ -5341,7 +5354,7 @@ addon | version | maintainers | summary
 [stock_scrap_tier_validation](stock_scrap_tier_validation/) | 17.0.1.0.0 |  | Stock Scrap Tier Validation
 [stock_scrap_tier_validation_mrp](stock_scrap_tier_validation_mrp/) | 17.0.1.0.0 |  | Stock Scrap Tier Validation: MRP compatibility
 [stock_split_picking](stock_split_picking/) | 17.0.1.0.0 |  | Split a picking in two not transferred pickings
-[stock_valuation_layer_usage](stock_valuation_layer_usage/) | 17.0.1.0.1 |  | Trace where has the stock valuation been used in, including the quantities taken.
+[stock_valuation_layer_usage](stock_valuation_layer_usage/) | 17.0.1.1.0 |  | Trace where has the stock valuation been used in, including the quantities taken.
 
 [//]: # (end addons)
 
@@ -5846,7 +5859,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 17.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 17.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_review](mgmtsystem_review/) | 17.0.1.0.0 |  | Management System - Review
+[mgmtsystem_review](mgmtsystem_review/) | 17.0.1.1.0 |  | Management System - Review
 [mgmtsystem_survey](mgmtsystem_survey/) | 17.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)
@@ -5966,7 +5979,7 @@ addon | version | maintainers | summary
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Purchase Order Type Dashboard
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Add a an incoterm field for supplier and use it on purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.1 |  | Purchase Reception Notify
-[purchase_request](purchase_request/) | 17.0.1.3.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 17.0.2.0.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_requisition_multiple_vendor](purchase_requisition_multiple_vendor/) | 17.0.1.0.0 |  | Create multiple purchase alternatives for different vendors using the same wizard.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
@@ -6018,7 +6031,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[purchase_report_hide_line](purchase_report_hide_line/) | 17.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Hide purchase order lines from the Purchase Report
 
 [//]: # (end addons)
 
@@ -6079,6 +6096,7 @@ addon | version | maintainers | summary
 [product_net_weight](product_net_weight/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
 [product_packaging_dimension](product_packaging_dimension/) | 17.0.1.0.0 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 17.0.1.0.0 |  | This module binds a product packaging to a packaging level
+[product_packaging_level_salable](product_packaging_level_salable/) | 17.0.1.0.0 |  | Product Packaging level salable
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![kobros-tech](https://github.com/kobros-tech.png?size=30px)](https://github.com/kobros-tech) | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 17.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 17.0.1.0.0 |  | Product Pricelist Revision
@@ -6336,7 +6354,7 @@ addon | version | maintainers | summary
 [project_role](project_role/) | 17.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Project role-based roster
 [project_sequence](project_sequence/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Add a sequence field to projects, filled automatically
 [project_task_add_very_high](project_task_add_very_high/) | 17.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
-[project_task_default_stage](project_task_default_stage/) | 17.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_default_stage](project_task_default_stage/) | 17.0.1.0.1 |  | Recovery default task stages for projects from v8
 [project_task_description_template](project_task_description_template/) | 17.0.1.0.0 |  | Add a description template to project tasks
 [project_task_note](project_task_note/) | 17.0.1.0.0 | [![pilar-vargas](https://github.com/pilar-vargas.png?size=30px)](https://github.com/pilar-vargas) | Add notes in project tasks
 [project_task_pull_request](project_task_pull_request/) | 17.0.1.0.0 |  | Adds a field for a PR URI to project tasks
@@ -6746,7 +6764,7 @@ addon | version | maintainers | summary
 [fs_product_brand_multi_image](fs_product_brand_multi_image/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link images to product brands
 [fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 17.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Link media to products and categories
-[fs_storage](fs_storage/) | 17.0.2.0.1 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_storage](fs_storage/) | 17.0.2.0.2 |  | Implement the concept of Storage with amazon S3, sftp...
 [image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model
 
 [//]: # (end addons)
@@ -6844,6 +6862,7 @@ addon | version | maintainers | summary
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 17.0.1.0.0 |  | Report Qweb Element Page Visibility
 [report_qweb_parameter](report_qweb_parameter/) | 17.0.1.0.2 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 17.0.1.0.0 |  | Add watermarks to your QWEB PDF reports
+[report_qweb_signer](report_qweb_signer/) | 17.0.1.0.0 |  | Sign Qweb PDFs usign a PKCS#12 certificate
 [report_substitute](report_substitute/) | 17.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module allows to create substitution rules for report actions.
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 17.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 17.0.1.0.1 |  | Base module to create xlsx report
@@ -6996,6 +7015,7 @@ addon | version | maintainers | summary
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 17.0.1.0.2 |  | Adds more operators for view inheritance
 [database_cleanup](database_cleanup/) | 17.0.1.2.2 |  | Database cleanup
 [dbfilter_from_header](dbfilter_from_header/) | 17.0.1.0.0 |  | Filter databases with HTTP headers
+[fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 17.0.1.0.0 | [![NL66278](https://github.com/NL66278.png?size=30px)](https://github.com/NL66278) | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 17.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 17.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
 [html_text](html_text/) | 17.0.1.0.0 |  | Generate excerpts from any HTML field
@@ -7276,6 +7296,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [announcement](announcement/) | 17.0.1.0.0 |  | Notify internal users about relevant organization stuff
 [barcode_action](barcode_action/) | 17.0.1.0.1 |  | Allows to use barcodes as a launcher
+[base_cancel_confirm](base_cancel_confirm/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
 [base_export_manager](base_export_manager/) | 17.0.1.0.0 |  | Manage model export profiles
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 17.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
@@ -7283,7 +7304,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 17.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 17.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.2.3.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.2.3.4 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
 [date_range](date_range/) | 17.0.1.2.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
