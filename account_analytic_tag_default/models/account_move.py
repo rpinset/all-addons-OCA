@@ -1,28 +1,22 @@
 # Copyright 2020 ForgeFlow S.L.
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, fields, models
+from odoo import api, models
 
 
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
-    # make standard field a stored, computed, editable field.
-    analytic_tag_ids = fields.Many2many(
-        compute="_compute_analytic_tag_ids",
-        store=True,
-        readonly=False,
-    )
-
+    # Migration to 16 note: deprecate this in favor of standard analytic defaults.
     @api.depends("analytic_account_id")
     def _compute_analytic_tag_ids(self):
+        res = super()._compute_analytic_tag_ids()
         for rec in self:
             if not rec._origin and rec.analytic_tag_ids:
                 continue
             if rec.analytic_account_id.default_analytic_tag_ids:
                 rec.analytic_tag_ids = rec.analytic_account_id.default_analytic_tag_ids
-            else:
-                rec.analytic_tag_ids = False
+        return res
 
     @api.model_create_multi
     def create(self, vals_list):

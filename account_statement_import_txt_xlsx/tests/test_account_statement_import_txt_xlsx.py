@@ -499,7 +499,6 @@ class TestAccountBankStatementImportTxtXlsx(common.TransactionCase):
             account_statement_import_txt_xlsx_test=True
         ).import_file_button()
         statement = self.AccountBankStatement.search([("journal_id", "=", journal.id)])
-        # import wdb; wdb.set_trace()
         self.assertEqual(len(statement), 1)
         self.assertEqual(len(statement.line_ids), 2)
         self.assertEqual(statement.balance_start, 0.0)

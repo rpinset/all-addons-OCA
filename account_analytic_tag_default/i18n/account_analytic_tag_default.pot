@@ -19,11 +19,6 @@ msgid "Analytic Account"
 msgstr ""
 
 #. module: account_analytic_tag_default
-#: model:ir.model.fields,field_description:account_analytic_tag_default.field_account_move_line__analytic_tag_ids
-msgid "Analytic Tags"
-msgstr ""
-
-#. module: account_analytic_tag_default
 #: model:ir.model.fields,field_description:account_analytic_tag_default.field_account_analytic_account__default_analytic_tag_ids
 msgid "Default Analytic Tag"
 msgstr ""

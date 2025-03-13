@@ -22,11 +22,6 @@ msgid "Analytic Account"
 msgstr "Conta Analítica"
 
 #. module: account_analytic_tag_default
-#: model:ir.model.fields,field_description:account_analytic_tag_default.field_account_move_line__analytic_tag_ids
-msgid "Analytic Tags"
-msgstr "Etiquetas Analíticas"
-
-#. module: account_analytic_tag_default
 #: model:ir.model.fields,field_description:account_analytic_tag_default.field_account_analytic_account__default_analytic_tag_ids
 msgid "Default Analytic Tag"
 msgstr "Etiqueta Analítica Padrão"
@@ -35,3 +30,6 @@ msgstr "Etiqueta Analítica Padrão"
 #: model:ir.model,name:account_analytic_tag_default.model_account_move_line
 msgid "Journal Item"
 msgstr "Item de Diário"
+
+#~ msgid "Analytic Tags"
+#~ msgstr "Etiquetas Analíticas"
