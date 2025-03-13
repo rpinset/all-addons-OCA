@@ -4,6 +4,8 @@
 # From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
 # From [https://github.com/OCA/account-consolidation.git](https://github.com/OCA/account-consolidation.git)
 # From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
@@ -130,6 +132,8 @@ python-stdnum
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
+# generated from manifests external_dependencies
+pandas>=0.25.3
 # From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
 # From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
