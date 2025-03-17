@@ -19,6 +19,17 @@ model_renames = [
     ("sale.commission.settlement.line", "commission.settlement.line"),
     ("sale.commission.make.settle", "commission.make.settle"),
 ]
+add_fields = [
+    (
+        "can_edit",
+        "commission.settlement",
+        "commission_settlement",
+        "boolean",
+        "bool",
+        "commission",
+        False,  # By default we had sale commissions
+    )
+]
 
 
 def _handle_settlement_line_commission_id(env):
@@ -46,4 +57,5 @@ def _handle_settlement_line_commission_id(env):
 def migrate(env, version):
     openupgrade.rename_tables(env.cr, table_renames)
     openupgrade.rename_models(env.cr, model_renames)
+    openupgrade.add_fields(env, add_fields)
     _handle_settlement_line_commission_id(env)

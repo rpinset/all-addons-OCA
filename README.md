@@ -214,11 +214,16 @@ Date:   Tue Mar 11 07:15:17 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 0b7bdba186310a198c007bd9b020cf41fd2fd545
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 17 07:23:53 2025 +0000
+commit 87a4d0f0ab796c63756f2095519d6b96ae9df8dc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Mar 15 12:50:21 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 16.6% (1 of 6 strings)
+    
+    Translation: account-payment-15.0/account-payment-15.0-partner_restrict_payment_acquirer
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-15-0/account-payment-15-0-partner_restrict_payment_acquirer/it/
 
 
 ## connector
@@ -411,11 +416,14 @@ Date:   Sun Feb 9 18:30:20 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit ced6ae27ae8a167eed5c6dfc533051f8647d6aa8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:10:06 2025 +0000
+commit 00a4e1d0557cdad6c7ce824f4c5efe0ef91165c1
+Merge: ced6ae27 bbafcdea
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Mon Mar 17 12:34:19 2025 +0100
 
-    [IMP] update dotfiles
+    Merge pull request #600 from dixmit/15.0-ou
+    
+    [15.0][OU] commission: Precompute can_edit
 
 
 ## event
@@ -474,16 +482,11 @@ Date:   Sun Feb 2 18:45:09 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 2131cdb5ecc8958cfc19bef779e4434bafedc535
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Mar 13 14:27:28 2025 +0000
+commit 2593cd5336570a368c9ab787fcd1ec861f43c467
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 14 14:51:37 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_stock
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_stock/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -542,11 +545,11 @@ Date:   Sun Feb 2 18:53:33 2025 +0000
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 75752ce28bfb88c458a0862e1e3fb107175ff69f
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:54:43 2025 +0000
+commit 6881a9d6e60cbe285064463e6a52cf120b8bce1e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 14 16:55:29 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## hr-expense
@@ -592,11 +595,11 @@ Date:   Sun Feb 2 18:21:44 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 55ba4b5ab2d02613a5f00d1ad3df232dbf162128
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:01:15 2025 +0000
+commit f61eeafa0e25e1fd583cf04f4ba7b21a33304ab3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 17 11:29:56 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -1320,11 +1323,16 @@ Date:   Sun Feb 2 20:25:48 2025 +0000
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit 659d58692d8c904b1e4511cb9765a23c95d9929f
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:24:14 2025 +0000
+commit 613d8df4e65818bd567423c12b9578848bbdb5f8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Mar 14 12:11:53 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 25.0% (1 of 4 strings)
+    
+    Translation: report-print-send-15.0/report-print-send-15.0-base_report_to_printer_mail
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-15-0/report-print-send-15-0-base_report_to_printer_mail/it/
 
 
 ## webkit-tools

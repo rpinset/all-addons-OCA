@@ -2780,7 +2780,7 @@ addon | version | maintainers | summary
 [fieldservice_calendar](fieldservice_calendar/) | 15.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_change_management](fieldservice_change_management/) | 15.0.1.0.1 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Change Logs on Locations
 [fieldservice_crm](fieldservice_crm/) | 15.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
-[fieldservice_delivery](fieldservice_delivery/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Select delivery methods and carriers on Field Service orders
+[fieldservice_delivery](fieldservice_delivery/) | 15.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Select delivery methods and carriers on Field Service orders
 [fieldservice_distribution](fieldservice_distribution/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your distribution structure
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 15.0.1.0.1 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
 [fieldservice_fleet](fieldservice_fleet/) | 15.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Link Field Service vehicles with Odoo Fleet
@@ -3191,7 +3191,7 @@ addon | version | maintainers | summary
 [hr_attendance_autoclose](hr_attendance_autoclose/) | 15.0.1.0.0 |  | Close stale Attendances
 [hr_attendance_calendar_view](hr_attendance_calendar_view/) | 15.0.1.0.0 |  | This module adds the calendar view as an option to display attendance
 [hr_attendance_contract_missing_days](hr_attendance_contract_missing_days/) | 15.0.1.0.0 |  | This modules combines the generation of attendances for working days without attendance with HR contracts
-[hr_attendance_geolocation](hr_attendance_geolocation/) | 15.0.1.0.3 |  | With this module the geolocation of the user is tracked at the check-in/check-out step
+[hr_attendance_geolocation](hr_attendance_geolocation/) | 15.0.1.0.4 |  | With this module the geolocation of the user is tracked at the check-in/check-out step
 [hr_attendance_missing_days](hr_attendance_missing_days/) | 15.0.1.0.0 |  | This modules generates attendances for working days without attendance
 [hr_attendance_modification_tracking](hr_attendance_modification_tracking/) | 15.0.1.0.0 |  | Attendance changes will now be registered in the chatter.
 [hr_attendance_overtime_manual](hr_attendance_overtime_manual/) | 15.0.1.0.0 |  | Allows adding manual overtime records
@@ -3458,6 +3458,7 @@ addon | version | maintainers | summary
 [product_category_inter_company](product_category_inter_company/) | 15.0.1.1.0 |  | Product categories as company dependent
 [product_category_multi_company](product_category_multi_company/) | 15.0.1.0.0 |  | Product Category multi-company
 [product_multi_company](product_multi_company/) | 15.0.1.0.1 |  | Select individually the product template visibility on each company
+[product_multi_company_stock](product_multi_company_stock/) | 15.0.1.1.0 |  | Does not allow to remove company if there is stock or moves in that company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 15.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 15.0.1.1.1 |  | Intercompany PO/SO rules
 [purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 15.0.1.0.0 |  | Intercompany PO/SO rules with warehouse
