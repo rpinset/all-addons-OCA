@@ -1127,16 +1127,16 @@ Date:   Sun Oct 29 15:18:49 2023 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 1542094fcbacd13f887ccc665432fcfb27797c78
-Author: iaranburu <iaranburu@binovo.es>
-Date:   Wed Feb 12 08:11:01 2025 +0000
+commit 889d09f67c5a1cd36f6dd34f4152341376043467
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Mar 11 16:49:34 2025 +0000
 
-    Translated using Weblate (Basque (eu_ES))
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (96 of 96 strings)
+    Currently translated at 100.0% (83 of 83 strings)
     
-    Translation: management-system-12.0/management-system-12.0-mgmtsystem_audit
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem_audit/eu_ES/
+    Translation: management-system-12.0/management-system-12.0-mgmtsystem
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-12-0/management-system-12-0-mgmtsystem/it/
 
 
 ## purchase-workflow
