@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="res_config_settings_view_form" model="ir.ui.view">
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="base.res_config_settings_view_form" />
@@ -8,17 +7,19 @@
             <xpath expr="//form" position="inside">
                 <app
                     data-string="Leaves management"
-                    string="Leaves management"
+                    string="Leaves Management"
                     name="hr_holidays"
                     groups="hr.group_hr_manager"
                 >
-                    <block title="Leaves Management" name="o_settings_container">
+                    <block
+                        title="Leaves Management"
+                        name="leaves_management_setting_container"
+                    >
                     </block>
                 </app>
             </xpath>
         </field>
     </record>
-
     <record id="hr_holidays_config_settings_action" model="ir.actions.act_window">
         <field name="name">Configure HR Holidays</field>
         <field name="type">ir.actions.act_window</field>
@@ -27,7 +28,6 @@
         <field name="target">inline</field>
         <field name="context">{'module' : 'hr_holidays'}</field>
     </record>
-
     <menuitem
         id="menu_hr_holidays_global_settings"
         name="Settings"
@@ -36,5 +36,4 @@
         action="hr_holidays_config_settings_action"
         groups="base.group_system"
     />
-
 </odoo>

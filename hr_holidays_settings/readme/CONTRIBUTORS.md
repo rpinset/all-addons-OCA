@@ -4,6 +4,6 @@
 - Anand Kansagra \<<kansagraanand@hotmail.com>\>
 - [CorporateHub](https://corporatehub.eu/)
   - Alexey Pelykh \<<alexey.pelykh@corphub.eu>\>
-- Juany Davila \<<juany.davila@forgeflow.com>\>
-- \[APSL\](<https://apsl.tech>):
-  - Antoni Marroig \<<toni.marroig1@gmail.com>\>
+- Murtaza Mithaiwala \<<https://twitter.com/MurtazaMithaiw4>\>
+- [APSL-Nagarro](<https://apsl.tech>):
+  - Antoni Marroig \<<amarroig@apsl.net>\>

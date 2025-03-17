@@ -9,5 +9,7 @@ def migrate(cr, version):
     models = [env["mail.message"]]
     for model in models:
         table_name = model._table
-        if column_exists(cr, table_name, "company_id"):
+        if column_exists(cr, table_name, "company_id") and not column_exists(
+            cr, table_name, "record_company_id"
+        ):
             rename_column(cr, table_name, "company_id", "record_company_id")

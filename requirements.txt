@@ -154,9 +154,11 @@ python-dateutil
 chardet
 pycountry
 pycryptodome
+requests
 suds-py3
 unidecode
 xmlsig
+zeep
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # generated from manifests external_dependencies
 ebilling_postfinance
