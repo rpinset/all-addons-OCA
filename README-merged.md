@@ -564,7 +564,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_avatax_exemption](account_avatax_exemption/) | 16.0.1.0.0 |  | This application allows you to add exemptions to Avatax
-[account_avatax_exemption_base](account_avatax_exemption_base/) | 16.0.1.0.0 |  | This application allows you to add exemptions base to Avatax
+[account_avatax_exemption_base](account_avatax_exemption_base/) | 16.0.1.1.0 |  | This application allows you to add exemptions base to Avatax
 [account_avatax_oca](account_avatax_oca/) | 16.0.1.7.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Compute Sales Tax using the Avalara Avatax Service
 [account_avatax_oca_log](account_avatax_oca_log/) | 16.0.1.0.0 |  | Add Logs to Avatax calls
 [account_avatax_repair_oca](account_avatax_repair_oca/) | 16.0.1.0.0 |  | Repair Orders with automatic Tax application using Avatax
@@ -576,7 +576,7 @@ addon | version | maintainers | summary
 [account_ecotax_tax](account_ecotax_tax/) | 16.0.1.0.0 | [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Use Odoo tax mechanism to compute the ecotaxes
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 16.0.1.0.1 |  | Account Fiscal Position Partner Type
-[account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.3 |  | Add sale / purchase type on fiscal position
+[account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.4 |  | Add sale / purchase type on fiscal position
 [account_product_fiscal_classification](account_product_fiscal_classification/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simplify taxes management for products
 [l10n_eu_oss_oca](l10n_eu_oss_oca/) | 16.0.1.1.0 |  | L10n EU OSS OCA
 
@@ -624,7 +624,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_operating_unit](account_operating_unit/) | 16.0.1.0.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 16.0.1.1.1 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [analytic_operating_unit](analytic_operating_unit/) | 16.0.1.0.0 |  | Analytic Operating Unit
 [contract_operating_unit](contract_operating_unit/) | 16.0.1.0.0 |  | Contract Operating Unit
 [hr_operating_unit](hr_operating_unit/) | 16.0.1.0.0 |  | HR Operating Unit
@@ -860,7 +860,7 @@ addon | version | maintainers | summary
 [account_credit_control](account_credit_control/) | 16.0.2.0.0 |  | Account Credit Control
 [account_credit_control_dunning_fees](account_credit_control_dunning_fees/) | 16.0.1.0.0 |  | Credit control dunning fees
 [account_financial_risk](account_financial_risk/) | 16.0.1.3.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
-[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
+[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 16.0.1.4.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 16.0.1.0.1 |  | Partner Payment Return Risk
@@ -1305,7 +1305,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.1.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 16.0.1.2.0 |  | Import CSV files in the background
-[queue_job](queue_job/) | 16.0.2.10.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[queue_job](queue_job/) | 16.0.2.11.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.1.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 16.0.1.1.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
@@ -2298,7 +2298,7 @@ addon | version | maintainers | summary
 [sale_packaging_report](sale_packaging_report/) | 16.0.1.1.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Packaging data in sale reports
 [sale_report_commitment_date](sale_report_commitment_date/) | 16.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Display the commitment date on Sales Order analysis reports
 [sale_report_country_state](sale_report_country_state/) | 16.0.1.0.0 |  | Sale Report Filter by State
-[sale_report_delivered](sale_report_delivered/) | 16.0.2.2.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered
+[sale_report_delivered](sale_report_delivered/) | 16.0.2.2.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered
 [sale_report_delivered_attribute_values](sale_report_delivered_attribute_values/) | 16.0.1.0.1 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow to view Attribute values of Lines on Sale Report Delivered
 [sale_report_delivered_deposit](sale_report_delivered_deposit/) | 16.0.2.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow to view Customer Deposits on Sale Report Delivered
 [sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 16.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered subtotal
@@ -2522,7 +2522,7 @@ addon | version | maintainers | summary
 [document_page](document_page/) | 16.0.1.6.0 |  | Document Page
 [document_page_access_group](document_page_access_group/) | 16.0.1.1.0 |  | Choose groups to access document pages
 [document_page_access_group_user_role](document_page_access_group_user_role/) | 16.0.1.1.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Document Page Access Group User Role
-[document_page_approval](document_page_approval/) | 16.0.1.1.1 |  | Document Page Approval
+[document_page_approval](document_page_approval/) | 16.0.1.2.0 |  | Document Page Approval
 [document_page_group](document_page_group/) | 16.0.1.0.1 |  | Define access groups on documents
 [document_page_partner](document_page_partner/) | 16.0.1.0.0 |  | Allows to link doucment pages to a partner
 [document_page_project](document_page_project/) | 16.0.1.0.0 |  | This module links document pages to projects
@@ -3472,6 +3472,7 @@ addon | version | maintainers | summary
 [login_all_company](login_all_company/) | 16.0.0.0.0 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 16.0.2.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [mail_template_multi_company](mail_template_multi_company/) | 16.0.1.0.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
+[mass_mailing_multi_company](mass_mailing_multi_company/) | 16.0.1.0.0 |  | Adds the company_id field to the models mailing.mailing, mailing.list and mailing.contact
 [partner_account_multicompany_default](partner_account_multicompany_default/) | 16.0.0.1.0 | [![camptocamp](https://github.com/camptocamp.png?size=30px)](https://github.com/camptocamp) | Set a default account for all companies of a partners
 [partner_category_multi_company](partner_category_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to partner categories
 [partner_category_multi_company_account](partner_category_multi_company_account/) | 16.0.1.0.0 |  | Multi-company check in Matching partner categories
@@ -5633,6 +5634,7 @@ addon | version | maintainers | summary
 [l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | MIS Builder Templates for US Chart of Accounts
 [l10n_us_mis_financial_report](l10n_us_mis_financial_report/) | 16.0.1.1.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Profit & Loss (US) / Balance sheet (US) MIS templates
 [l10n_us_partner_legal_number](l10n_us_partner_legal_number/) | 16.0.1.0.0 |  | Add Legal Number for North American Banking & Financials
+[partner_usps_address_validation](partner_usps_address_validation/) | 16.0.1.0.0 |  | Utilize the USPS open API for address validation
 
 [//]: # (end addons)
 
@@ -5793,7 +5795,7 @@ addon | version | maintainers | summary
 [delivery_postlogistics](delivery_postlogistics/) | 16.0.1.1.0 |  | Print PostLogistics shipping labels using the Barcode web service
 [delivery_postlogistics_server_env](delivery_postlogistics_server_env/) | 16.0.1.0.0 |  | Server Environment layer for Delivery Postlogistics
 [delivery_price_method](delivery_price_method/) | 16.0.1.1.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
-[delivery_purchase](delivery_purchase/) | 16.0.1.1.0 |  | Delivery costs in purchases
+[delivery_purchase](delivery_purchase/) | 16.0.1.1.1 |  | Delivery costs in purchases
 [delivery_roulier](delivery_roulier/) | 16.0.2.1.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Integration of multiple carriers
 [delivery_roulier_dpd_fr](delivery_roulier_dpd_fr/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Labels for DPD
 [delivery_roulier_geodis_fr](delivery_roulier_geodis_fr/) | 16.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for Geodis logistic
@@ -6817,11 +6819,11 @@ addon | version | maintainers | summary
 [purchase_quick](purchase_quick/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Quick Purchase order
 [purchase_reception_status](purchase_reception_status/) | 16.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
 [purchase_reorder_control](purchase_reorder_control/) | 16.0.1.0.0 |  | Restrict reordering unpurchaseable product
-[purchase_request](purchase_request/) | 16.0.2.1.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 16.0.2.1.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.1.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
-[purchase_request_type](purchase_request_type/) | 16.0.1.1.0 |  | Purchase Request Type
+[purchase_request_type](purchase_request_type/) | 16.0.1.2.0 |  | Purchase Request Type
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_return](purchase_return/) | 16.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Manage return orders.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 16.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
@@ -7007,7 +7009,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 16.0.1.0.4 |  | Allows to define prices for customers in the products
 [product_supplierinfo_import_by_barcode](product_supplierinfo_import_by_barcode/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 16.0.1.0.0 |  | Product Supplierinfo Revision
-[product_supplierinfo_stock_picking_type](product_supplierinfo_stock_picking_type/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product supplierinfo stock picking type
+[product_supplierinfo_stock_picking_type](product_supplierinfo_stock_picking_type/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Product supplierinfo stock picking type
 [product_template_has_one_variant](product_template_has_one_variant/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a field on product template level to determine if it has only one variant
 [product_template_tags](product_template_tags/) | 16.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | This addon allow to add tags on products
 [product_total_weight_from_packaging](product_total_weight_from_packaging/) | 16.0.1.0.0 |  | Compute estimated weight based on product's packaging weights
@@ -7410,7 +7412,7 @@ addon | version | maintainers | summary
 [contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 16.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 16.0.1.1.1 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 16.0.1.0.2 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Recurring - Product Contract
-[subscription_oca](subscription_oca/) | 16.0.1.0.1 |  | Generate recurring invoices.
+[subscription_oca](subscription_oca/) | 16.0.1.1.0 |  | Generate recurring invoices.
 
 [//]: # (end addons)
 
@@ -7859,7 +7861,7 @@ addon | version | maintainers | summary
 [report_qweb_decimal_place](report_qweb_decimal_place/) | 16.0.1.0.0 |  | Report Qweb Decimal Place
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 16.0.1.0.1 |  | Report Qweb Element Page Visibility
 [report_qweb_encrypt](report_qweb_encrypt/) | 16.0.1.0.2 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Allow to encrypt qweb pdfs
-[report_qweb_field_option](report_qweb_field_option/) | 16.0.1.0.0 |  | Report Qweb Field Option
+[report_qweb_field_option](report_qweb_field_option/) | 16.0.1.0.1 |  | Report Qweb Field Option
 [report_qweb_parameter](report_qweb_parameter/) | 16.0.1.0.1 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_cover](report_qweb_pdf_cover/) | 16.0.1.0.0 |  | Add front and back covers to your QWeb PDF reports
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 16.0.1.0.1 |  | Add watermarks to your QWEB PDF reports
@@ -8134,7 +8136,7 @@ addon | version | maintainers | summary
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 16.0.1.0.0 |  | Makes the user login field case insensitive
 [base_user_show_email](base_user_show_email/) | 16.0.1.0.0 |  | Untangle user login and email
 [impersonate_login](impersonate_login/) | 16.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
-[password_security](password_security/) | 16.0.1.0.3 |  | Allow admin to set password security requirements.
+[password_security](password_security/) | 16.0.1.0.4 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 16.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 [users_ldap_groups](users_ldap_groups/) | 16.0.1.0.1 |  | Adds user accounts to groups based on rules defined by the administrator.
 [users_ldap_mail](users_ldap_mail/) | 16.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | LDAP mapping for user name and e-mail
@@ -8638,7 +8640,7 @@ addon | version | maintainers | summary
 [datamodel](datamodel/) | 16.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 16.0.1.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 16.0.2.1.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Allows the use of extendable into fastapi apps
-[fastapi](fastapi/) | 16.0.1.4.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 16.0.1.5.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
 [fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.4 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | JWT bearer token authentication for FastAPI.
 [fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Test/demo module for fastapi_auth_jwt.
 [graphql_base](graphql_base/) | 16.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Base GraphQL/GraphiQL controller
@@ -9350,7 +9352,7 @@ addon | version | maintainers | summary
 [website_recaptcha_v2](website_recaptcha_v2/) | 16.0.1.0.0 |  | Helper module to add reCAPTCHA v2 to website forms
 [website_require_login](website_require_login/) | 16.0.1.0.0 |  | Website Login Required
 [website_snippet_country_dropdown](website_snippet_country_dropdown/) | 16.0.1.0.0 |  | Allow to select country in a dropdown
-[website_whatsapp](website_whatsapp/) | 16.0.1.0.1 | [![ioans73](https://github.com/ioans73.png?size=30px)](https://github.com/ioans73) | Whatsapp integration
+[website_whatsapp](website_whatsapp/) | 16.0.1.1.0 | [![ioans73](https://github.com/ioans73.png?size=30px)](https://github.com/ioans73) | Whatsapp integration
 
 [//]: # (end addons)
 

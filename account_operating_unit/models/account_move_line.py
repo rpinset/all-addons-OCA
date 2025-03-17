@@ -12,6 +12,10 @@ class AccountMoveLine(models.Model):
     operating_unit_id = fields.Many2one(
         comodel_name="operating.unit",
     )
+    display_type = fields.Selection(
+        selection_add=[("ou_balance", "OU Balance")],
+        ondelete={"ou_balance": "set product"},
+    )
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -63,6 +67,19 @@ class AccountMoveLine(models.Model):
                 ou_balance[line.operating_unit_id.id] = 0.0
             ou_balance[line.operating_unit_id.id] += line.credit - line.debit
         return ou_balance
+
+    def _prepare_exchange_difference_move_vals(
+        self, amounts_list, company=None, exchange_date=None, **kwargs
+    ):
+        result = super()._prepare_exchange_difference_move_vals(
+            amounts_list, company=company, exchange_date=exchange_date, **kwargs
+        )
+        result["move_vals"]["operating_unit_id"] = self.move_id.operating_unit_id[:1].id
+        for line, sequence in result["to_reconcile"]:
+            result["move_vals"]["line_ids"][sequence][2][
+                "operating_unit_id"
+            ] = line.operating_unit_id.id
+        return result
 
     def reconcile(self):
         # if one OU pays the invoices of different OU

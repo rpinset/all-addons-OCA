@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-03 18:06+0000\n"
+"PO-Revision-Date: 2025-03-17 19:06+0000\n"
 "Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -692,7 +692,7 @@ msgstr "Job einreihen"
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_job_lock
 msgid "Queue Job Lock"
-msgstr ""
+msgstr "Job einreihen Sperre"
 
 #. module: queue_job
 #. odoo-python
@@ -708,9 +708,8 @@ msgstr "Datensatz"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__records
-#, fuzzy
 msgid "Record(s)"
-msgstr "Datensatz"
+msgstr "Datensatz/Datensätze"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
@@ -744,7 +743,7 @@ msgstr "Zugehörige Datensätze"
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_tree
 msgid "Remaining days to execute"
-msgstr ""
+msgstr "Verbleibende Tage bis zur Ausführung"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_channel__removal_interval
@@ -781,17 +780,17 @@ msgstr "Ergebnis"
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
 msgid "Results"
-msgstr ""
+msgstr "Ergebnisse"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_function__edit_retry_pattern
 msgid "Retry Pattern"
-msgstr ""
+msgstr "Wiederholungsmuster"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job_function__retry_pattern
 msgid "Retry Pattern (serialized)"
-msgstr ""
+msgstr "Wiederholungsmuster (serialisiert)"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_jobs_to_done
@@ -893,7 +892,7 @@ msgstr ""
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_set_jobs_cancelled
 msgid "The selected jobs will be cancelled."
-msgstr ""
+msgstr "Die markierten Jobs werden abgebrochen."
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_requeue_job
@@ -958,7 +957,7 @@ msgstr "Benutzer"
 #: model:ir.model.fields.selection,name:queue_job.selection__queue_job__state__wait_dependencies
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_search
 msgid "Wait Dependencies"
-msgstr ""
+msgstr "Warten Abhängigkeiten"
 
 #. module: queue_job
 #: model:ir.model,name:queue_job.model_queue_requeue_job
@@ -968,7 +967,7 @@ msgstr "Assistent zur erneuten Einreihung einer Job-Auswahl"
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__worker_pid
 msgid "Worker Pid"
-msgstr ""
+msgstr "Arbeiter Prozess-Id"
 
 #, python-format
 #~ msgid "If both parameters are 0, ALL jobs will be requeued!"

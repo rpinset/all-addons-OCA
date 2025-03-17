@@ -151,10 +151,15 @@ class SaleReportDeliverd(models.Model):
               {sub_select_signed_qty}
               ELSE 0
             END AS signed_qty,
-            (CASE WHEN t.type IN ('product', 'consu') THEN COALESCE(sm.product_uom_qty, 0.0)
-                ELSE sol.product_uom_qty END) / u.factor *
-                u2.factor as unsigned_product_uom_qty,
-            ROUND(COALESCE(sm.product_uom_qty * sol.price_reduce, sol.price_subtotal) /
+            (CASE
+                WHEN t.type IN ('product', 'consu')
+                THEN COALESCE(-svl.quantity, sm.product_uom_qty, 0.0)
+                ELSE sol.product_uom_qty END
+            ) / u.factor * u2.factor as unsigned_product_uom_qty,
+            ROUND(COALESCE(
+                -svl.quantity * sol.price_reduce,
+                sm.product_uom_qty * sol.price_reduce,
+                sol.price_subtotal) /
                 CASE COALESCE(s.currency_rate, 0)
                     WHEN 0 THEN 1.0 ELSE s.currency_rate END, cur.decimal_places)
                      as unsigned_price_subtotal,

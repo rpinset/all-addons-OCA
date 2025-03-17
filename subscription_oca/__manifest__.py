@@ -3,7 +3,7 @@
 {
     "name": "Subscription management",
     "summary": "Generate recurring invoices.",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "development_status": "Beta",
     "category": "Subscription Management",
     "website": "https://github.com/OCA/contract",
@@ -12,6 +12,7 @@
     "depends": ["sale_management", "account"],
     "data": [
         "views/product_template_views.xml",
+        "views/account_move_views.xml",
         "views/sale_subscription_views.xml",
         "views/sale_subscription_stage_views.xml",
         "views/sale_subscription_tag_views.xml",

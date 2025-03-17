@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-17 00:50+0000\n"
-"PO-Revision-Date: 2025-03-06 12:06+0000\n"
+"PO-Revision-Date: 2025-03-14 10:12+0000\n"
 "Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
@@ -77,7 +77,7 @@ msgstr "Autor"
 #. module: document_page
 #: model:ir.model.fields,field_description:document_page.field_document_page__backend_url
 msgid "Backend URL"
-msgstr ""
+msgstr "Backend URL"
 
 #. module: document_page
 #: model_terms:ir.ui.view,arch_db:document_page.view_wiki_create_menu

@@ -1,0 +1,79 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_uom_measure_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-03-17 19:06+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__length
+msgid "Length"
+msgstr "Länge"
+
+#. module: product_uom_measure_type
+#: model:ir.model,name:product_uom_measure_type.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: product_uom_measure_type
+#: model:ir.model,name:product_uom_measure_type.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Mengeneinheit des Produkts"
+
+#. module: product_uom_measure_type
+#: model:ir.model,name:product_uom_measure_type.model_uom_category
+msgid "Product UoM Categories"
+msgstr "Produkt Mengeneinheitskategorien"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__surface
+msgid "Surface"
+msgstr "Oberfläche"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields,field_description:product_uom_measure_type.field_uom_category__measure_type
+#: model:ir.model.fields,field_description:product_uom_measure_type.field_uom_uom__measure_type
+msgid "Type of Measure"
+msgstr "Typ der Mengeneinheit"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__unit
+msgid "Units"
+msgstr "Einheiten"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields,field_description:product_uom_measure_type.field_product_product__uom_measure_type
+#: model:ir.model.fields,field_description:product_uom_measure_type.field_product_template__uom_measure_type
+msgid "UoM Type of Measure"
+msgstr "Typ der Mengeneinheit"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__volume
+msgid "Volume"
+msgstr "Volumen"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__weight
+msgid "Weight"
+msgstr "Gewicht"
+
+#. module: product_uom_measure_type
+#: model:ir.model.fields.selection,name:product_uom_measure_type.selection__uom_category__measure_type__working_time
+msgid "Working Time"
+msgstr "Arbeitszeit"
+
+#. module: product_uom_measure_type
+#: model:ir.model.constraint,message:product_uom_measure_type.constraint_uom_category_uom_category_unique_type
+msgid "You can have only one category per measurement type."
+msgstr "Sie können nur eine Kategorie pro Mengeneinheit wählen."

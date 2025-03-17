@@ -210,6 +210,8 @@ promptpay
 # From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
 # generated from manifests external_dependencies
 python-stdnum
+requests
+xmltodict
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
@@ -291,7 +293,6 @@ unidecode
 cryptography
 endesive
 mock
-odoo_test_helper
 openpyxl
 py3o.formats
 py3o.template
