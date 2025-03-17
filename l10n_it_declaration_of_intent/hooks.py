@@ -143,6 +143,7 @@ WHERE
     aml.move_id = am.id
     AND aml.tax_line_id IS NULL
     AND aml.account_id <> ai.account_id
+    AND ail.name=aml.name
     AND ail.quantity = aml.quantity
     AND ((ail.product_id IS NULL AND aml.product_id IS NULL)
         OR ail.product_id = aml.product_id)

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-04-15 17:34+0000\n"
+"PO-Revision-Date: 2025-03-14 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #. module: account_reconciliation_widget
 #: code:addons/account_reconciliation_widget/models/reconciliation_widget.py:0
@@ -144,7 +144,7 @@ msgstr "Aziende"
 #. module: account_reconciliation_widget
 #: model:ir.model,name:account_reconciliation_widget.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Impostazioni configurazione"
 
 #. module: account_reconciliation_widget
 #. openerp-web
@@ -187,6 +187,8 @@ msgid ""
 "Date from which you started using bank statements in Odoo. Leave empty if "
 "you've been using bank statements in Odoo from the start."
 msgstr ""
+"Dada da cui si è iniziato ad utilizzare il rendiconto bancario in Odoo. "
+"Lasciare vuoto se si è utilizzato il rendiconto bancario in Odoo dall'inizio."
 
 #. module: account_reconciliation_widget
 #. openerp-web
@@ -488,7 +490,7 @@ msgstr "Rif."
 #: code:addons/account_reconciliation_widget/static/src/js/reconciliation/reconciliation_renderer.js:0
 #, python-format
 msgid "Reference"
-msgstr ""
+msgstr "Riferimento"
 
 #. module: account_reconciliation_widget
 #. openerp-web

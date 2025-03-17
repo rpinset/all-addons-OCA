@@ -650,6 +650,12 @@ msgid "Every account is mandatory."
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_res_partner__riba_exclude_expenses
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_res_users__riba_exclude_expenses
+msgid "Exclude expenses Ri.Ba."
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.wizard_riba_file_export
 msgid "Export"
 msgstr ""
@@ -1009,6 +1015,11 @@ msgid "Messages"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields.selection,name:l10n_it_ricevute_bancarie.selection__res_partner__riba_policy_expenses__one_a_month
+msgid "More invoices, one expense per Month"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.view_riba_distinta_line_form
 msgid "Move Line"
 msgstr ""
@@ -1089,6 +1100,11 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_it_ricevute_bancarie.field_riba_distinta__message_unread_counter
 #: model:ir.model.fields,help:l10n_it_ricevute_bancarie.field_riba_distinta_line__message_unread_counter
 msgid "Number of unread messages"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields.selection,name:l10n_it_ricevute_bancarie.selection__res_partner__riba_policy_expenses__unlimited
+msgid "One expense per maturity"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
@@ -1301,6 +1317,12 @@ msgstr ""
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.view_riba_distinta_form
 msgid "Reset to Draft"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_res_partner__riba_policy_expenses
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_res_users__riba_policy_expenses
+msgid "Ri.Ba. Policy expenses"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
