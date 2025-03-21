@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-12 10:06+0000\n"
+"PO-Revision-Date: 2025-03-18 15:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -7740,6 +7740,8 @@ msgid ""
 "MERCAPTANS, LIQUID, FLAMMABLE, TOXIC, N.O.S. or MERCAPTAN MIXTURE, LIQUID, "
 "FLAMMABLE, TOXIC, N.O.S."
 msgstr ""
+"MERCAPTANI, LIQUIDI, INFIAMMABILI, TOSSICI, N.A.S. o MISCELA DI MERCAPTANI, "
+"LIQUIDA, INFIAMMABILE, TOSSICA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3071
@@ -7747,46 +7749,48 @@ msgid ""
 "MERCAPTANS, LIQUID, TOXIC, FLAMMABLE, N.O.S. or MERCAPTAN MIXTURE, LIQUID, "
 "TOXIC, FLAMMABLE, N.O.S."
 msgstr ""
+"MERCAPTANI, LIQUIDI, TOSSICI, INFIAMMABILI, N.A.S. o MISCELA DI MERCAPTANI, "
+"LIQUIDA, TOSSICA, INFIAMMABILE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1623
 msgid "MERCURIC ARSENATE"
-msgstr ""
+msgstr "ARSENIATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1624
 msgid "MERCURIC CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1625
 msgid "MERCURIC NITRATE"
-msgstr ""
+msgstr "NITRATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1626
 msgid "MERCURIC POTASSIUM CYANIDE"
-msgstr ""
+msgstr "CIANURO DI POTASSIO MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1627
 msgid "MERCUROUS NITRATE"
-msgstr ""
+msgstr "NITRATO MERCUROSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2809
 msgid "MERCURY"
-msgstr ""
+msgstr "MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1629
 msgid "MERCURY ACETATE"
-msgstr ""
+msgstr "ACETATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1630
 msgid "MERCURY AMMONIUM CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI MERCURIO E AMMONIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2778
@@ -7795,13 +7799,15 @@ msgid ""
 "MERCURY BASED PESTICIDE, LIQUID, FLAMMABLE, TOXIC, flash-point less than 23 "
 "°C"
 msgstr ""
+"PESTICIDA A BASE DI MERCURIO, LIQUIDO, INFIAMMABILE, TOSSICO, punto di "
+"infiammabilità inferiore a 23 °C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3012
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3012_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3012_5L
 msgid "MERCURY BASED PESTICIDE, LIQUID, TOXIC"
-msgstr ""
+msgstr "PESTICIDA A BASE DI MERCURIO, LIQUIDO, TOSSICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3011
@@ -7811,6 +7817,8 @@ msgid ""
 "MERCURY BASED PESTICIDE, LIQUID, TOXIC, FLAMMABLE, flash-point not less than "
 "23 °C"
 msgstr ""
+"PESTICIDA A BASE DI MERCURIO, LIQUIDO, TOSSICO, INFIAMMABILE, punto di "
+"infiammabilità non inferiore a 23 °C"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2777
@@ -7822,19 +7830,19 @@ msgstr "MERCURY BASED PESTICIDE, SOLIDO, TOXIC"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1631
 msgid "MERCURY BENZOATE"
-msgstr ""
+msgstr "BENZOATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1634
 msgid "MERCURY BROMIDES"
-msgstr ""
+msgstr "BROMURI DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2024
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2024_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2024_5L
 msgid "MERCURY COMPOUND, LIQUID, N.O.S."
-msgstr ""
+msgstr "COMPOSTO DI MERCURIO, LIQUIDO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2025
@@ -7846,12 +7854,12 @@ msgstr "MERCURY COMPOUND, SOLIDO, N.O.S."
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3506
 msgid "MERCURY CONTAINED IN MANUFACTURED ARTICLES"
-msgstr ""
+msgstr "MERCURIO CONTENUTO IN ARTICOLI MANUFATTI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1636
 msgid "MERCURY CYANIDE"
-msgstr ""
+msgstr "CIANURO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0135
@@ -7859,61 +7867,63 @@ msgid ""
 "MERCURY FULMINATE, WETTED with not less than 20% water, or mixture of "
 "alcohol and water, by mass"
 msgstr ""
+"FULMINATO DI MERCURIO, BAGNATO con almeno il 20% di acqua, o una miscela di "
+"alcol e acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1637
 msgid "MERCURY GLUCONATE"
-msgstr ""
+msgstr "GLUCONATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1638
 msgid "MERCURY IODIDE"
-msgstr ""
+msgstr "IODURO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1639
 msgid "MERCURY NUCLEATE"
-msgstr ""
+msgstr "NUCLEATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1640
 msgid "MERCURY OLEATE"
-msgstr ""
+msgstr "OLEATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1641
 msgid "MERCURY OXIDE"
-msgstr ""
+msgstr "OSSIDO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1642
 msgid "MERCURY OXYCYANIDE, DESENSITIZED"
-msgstr ""
+msgstr "OSSICIANURO DI MERCURIO, DESENSIBILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1643
 msgid "MERCURY POTASSIUM IODIDE"
-msgstr ""
+msgstr "IODURO DI POTASSIO E MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1644
 msgid "MERCURY SALICYLATE"
-msgstr ""
+msgstr "SALICILATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1645
 msgid "MERCURY SULPHATE"
-msgstr ""
+msgstr "SOLFATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1646
 msgid "MERCURY THIOCYANATE"
-msgstr ""
+msgstr "TIOCIANATO DI MERCURIO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1229
 msgid "MESITYL OXIDE"
-msgstr ""
+msgstr "OSSIDO DI MESITIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3466
@@ -7927,94 +7937,94 @@ msgstr "METAL CARBONYLS,  SOLIDO, N.O.S."
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3281_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3281_5L
 msgid "METAL CARBONYLS, LIQUID, N.O.S."
-msgstr ""
+msgstr "METALLO CARBONILICO, LIQUIDO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2881_S4_4dot2_274_P002/IBC08/LP02/R001_3
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2881_S4_4dot2_274_P404_0
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2881_S4_4dot2_274_P410/IBC06_2
 msgid "METAL CATALYST, DRY"
-msgstr ""
+msgstr "CATALIZZATORE METALLICO SECCO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1378
 msgid "METAL CATALYST, WETTED with a visible excess of liquid"
-msgstr ""
+msgstr "CATALIZZATORE METALLICO, BAGNATO con un eccesso visibile di liquido"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3182_1kg
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3182_5kg
 msgid "METAL HYDRIDES, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "IDRURI METALLICI, INFIAMMABILI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1409
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1409_500g
 msgid "METAL HYDRIDES, WATER-REACTIVE, N.O.S."
-msgstr ""
+msgstr "IDRURI METALLICI, IDROREATTIVI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3089_1kg
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3089_5kg
 msgid "METAL POWDER, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "POLVERE METALLICA, INFIAMMABILE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3189_S4_4dot2_274/555_P002/IBC08/LP02/R001_3
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3189_S4_4dot2_274/555_P410/IBC06_2
 msgid "METAL POWDER, SELF-HEATING, N.O.S."
-msgstr ""
+msgstr "POLVERE METALLICA, AUTORISCALDANTE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3181_1kg
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3181_5kg
 msgid "METAL SALTS OF ORGANIC COMPOUNDS, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "SALI METALLICI DI COMPOSTI ORGANICI, INFIAMMABILI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1332
 msgid "METALDEHYDE"
-msgstr ""
+msgstr "METALDEIDE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3208
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3208_1kg
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3208_500g
 msgid "METALLIC SUBSTANCE, WATER-REACTIVE, N.O.S."
-msgstr ""
+msgstr "SOSTANZA METALLICA, IDROREATTIVA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3209_WS_4dot3/4dot2_274/558_P403_1
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3209_WS_4dot3/4dot2_274/558_P410/IBC05_2
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3209_WS_4dot3/4dot2_274/558_P410/IBC08/R001_3
 msgid "METALLIC SUBSTANCE, WATER-REACTIVE, SELF-HEATING, N.O.S."
-msgstr ""
+msgstr "SOSTANZA METALLICA, IDROREATTIVA, AUTORISCALDANTE, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2396
 msgid "METHACRYLALDEHYDE, STABILIZED"
-msgstr ""
+msgstr "METACRILALDEIDE, STABILIZZATA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2531
 msgid "METHACRYLIC ACID, STABILIZED"
-msgstr ""
+msgstr "ACIDO METACRILICO STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3079
 msgid "METHACRYLONITRILE, STABILIZED"
-msgstr ""
+msgstr "METACRILONITRILE STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2614
 msgid "METHALLYL ALCOHOL"
-msgstr ""
+msgstr "ALCOOL METALLICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1971
 msgid ""
 "METHANE, COMPRESSED or NATURAL GAS, COMPRESSED with high methane content"
-msgstr ""
+msgstr "METANO, COMPRESSO o GAS NATURALE, COMPRESSO ad alto contenuto di metano"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1972
@@ -8022,56 +8032,58 @@ msgid ""
 "METHANE, REFRIGERATED LIQUID or NATURAL GAS, REFRIGERATED LIQUID with high "
 "methane content"
 msgstr ""
+"METANO, LIQUIDO REFRIGERATO o GAS NATURALE, LIQUIDO REFRIGERATO ad alto "
+"contenuto di metano"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3246
 msgid "METHANESULPHONYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI METANOSULFONILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1230
 msgid "METHANOL"
-msgstr ""
+msgstr "METANOLO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2605
 msgid "METHOXYMETHYL ISOCYANATE"
-msgstr ""
+msgstr "ISOCIANATO DI METOSSIMETIL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2933
 msgid "METHYL 2-CHLOROPROPIONATE"
-msgstr ""
+msgstr "METILE 2-CLOROPROPIONATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1231
 msgid "METHYL ACETATE"
-msgstr ""
+msgstr "ACETATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1919
 msgid "METHYL ACRYLATE, STABILIZED"
-msgstr ""
+msgstr "ACRILATO DI METILE, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1647
 msgid "METHYL BROMIDE AND ETHYLENE DIBROMIDE MIXTURE, LIQUID"
-msgstr ""
+msgstr "MISCELA DI BROMURO DI METILE E DIBROMURO DI ETILENE, LIQUIDO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1062
 msgid "METHYL BROMIDE with not more than 2% chloropicrin"
-msgstr ""
+msgstr "BROMURO DI METILE con non più del 2% di cloropicrina"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2643
 msgid "METHYL BROMOACETATE"
-msgstr ""
+msgstr "BROMOACETATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1237
 msgid "METHYL BUTYRATE"
-msgstr ""
+msgstr "BUTIRRATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1063
@@ -8081,27 +8093,27 @@ msgstr "METHYL CHLORIDE (GAS REFRIGERANTE R 40)"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1912
 msgid "METHYL CHLORIDE AND METHYLENE CHLORIDE MIXTURE"
-msgstr ""
+msgstr "CLORURO DI METILE E MISCELA DI CLORURO DI METILENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1239
 msgid "METHYL CHLORO-METHYL ETHER"
-msgstr ""
+msgstr "ETERE METILE CLOROMETILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2295
 msgid "METHYL CHLOROACETATE"
-msgstr ""
+msgstr "CLOROACETATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1238
 msgid "METHYL CHLOROFORMATE"
-msgstr ""
+msgstr "CLOROFORMIATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2299
 msgid "METHYL DICHLOROACETATE"
-msgstr ""
+msgstr "DICLOROACETATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2454
@@ -8111,97 +8123,97 @@ msgstr "METHYL FLUORIDE (GAS REFRIGERANTE R 41)"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1243
 msgid "METHYL FORMATE"
-msgstr ""
+msgstr "FORMICATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2644
 msgid "METHYL IODIDE"
-msgstr ""
+msgstr "IODURO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2053
 msgid "METHYL ISOBUTYL CARBINOL"
-msgstr ""
+msgstr "METILE ISOBUTIL CARBINOLO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1245
 msgid "METHYL ISOBUTYL KETONE"
-msgstr ""
+msgstr "METILE ISOBUTIL CHETONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2480
 msgid "METHYL ISOCYANATE"
-msgstr ""
+msgstr "ISOCIANATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1246
 msgid "METHYL ISOPROPENYL KETONE, STABILIZED"
-msgstr ""
+msgstr "METILE ISOPROPENIL CHETONE, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2477
 msgid "METHYL ISOTHIOCYANATE"
-msgstr ""
+msgstr "ISOTIOCIANATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2400
 msgid "METHYL ISOVALERATE"
-msgstr ""
+msgstr "ISOVALERATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1928
 msgid "METHYL MAGNESIUM BROMIDE IN ETHYL ETHER"
-msgstr ""
+msgstr "BROMURO DI METILE MAGNESIO IN ETERE ETILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1064
 msgid "METHYL MERCAPTAN"
-msgstr ""
+msgstr "METHYL MERCAPTAN"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1247
 msgid "METHYL METHACRYLATE MONOMER, STABILIZED"
-msgstr ""
+msgstr "METACRILATO DI METILE MONOMERO, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2455
 msgid "METHYL NITRITE"
-msgstr ""
+msgstr "NITRITO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2606
 msgid "METHYL ORTHOSILICATE"
-msgstr ""
+msgstr "ORTOSILICATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1248
 msgid "METHYL PROPIONATE"
-msgstr ""
+msgstr "PROPIONATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2612
 msgid "METHYL PROPYL ETHER"
-msgstr ""
+msgstr "ETERE METILE PROPILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1249
 msgid "METHYL PROPYL KETONE"
-msgstr ""
+msgstr "METILE PROPIL CHETONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2533
 msgid "METHYL TRICHLOROACETATE"
-msgstr ""
+msgstr "TRICLOROACETATO DI METILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1251
 msgid "METHYL VINYL KETONE, STABILIZED"
-msgstr ""
+msgstr "METILEVINILCHETONE, STABILIZZATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2398
 msgid "METHYL tert-BUTYL ETHER"
-msgstr ""
+msgstr "METILE TERZ-BUTIL ETERE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1060
@@ -8209,76 +8221,78 @@ msgid ""
 "METHYLACETYLENE AND PROPADIENE MIXTURE, STABILIZED such as mixture P1 or "
 "mixture P2"
 msgstr ""
+"MISCELA DI METILECETILENE E PROPADIENE, STABILIZZATA come miscela P1 o "
+"miscela P2"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1234
 msgid "METHYLAL"
-msgstr ""
+msgstr "METILALE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2554
 msgid "METHYLALLYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI METILELLILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1061
 msgid "METHYLAMINE, ANHYDROUS"
-msgstr ""
+msgstr "METILAMMINA ANIDRO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1235
 msgid "METHYLAMINE, AQUEOUS SOLUTION"
-msgstr ""
+msgstr "METILAMMINA, SOLUZIONE ACQUOSA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1233
 msgid "METHYLAMYL ACETATE"
-msgstr ""
+msgstr "ACETATO DI METILEMMILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2534
 msgid "METHYLCHLOROSILANE"
-msgstr ""
+msgstr "METILCLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2617
 msgid "METHYLCYCLO-HEXANOLS, flammable"
-msgstr ""
+msgstr "METILCICLOESANOLI, infiammabili"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2297
 msgid "METHYLCYCLO-HEXANONE"
-msgstr ""
+msgstr "METILENCICLO-ESANONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2296
 msgid "METHYLCYCLOHEXANE"
-msgstr ""
+msgstr "METILENCICLOEsano"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2298
 msgid "METHYLCYCLOPENTANE"
-msgstr ""
+msgstr "METILENCICLOPENTANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1242
 msgid "METHYLDICHLOROSILANE"
-msgstr ""
+msgstr "METILETICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1244
 msgid "METHYLHYDRAZINE"
-msgstr ""
+msgstr "METHYLHYDRAZINE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2461
 msgid "METHYLPENTADIENE"
-msgstr ""
+msgstr "METILEPENTADIENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2437
 msgid "METHYLPHENYL-DICHLOROSILANE"
-msgstr ""
+msgstr "METILENFENIL-DICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2536
@@ -8288,7 +8302,7 @@ msgstr "METHYLTETRAIDRO-FURAN"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1250
 msgid "METHYLTRICHLORO-SILANE"
-msgstr ""
+msgstr "METILETRICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0136
@@ -8296,17 +8310,17 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0138
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0294
 msgid "MINES with bursting charge"
-msgstr ""
+msgstr "MINE con carica di scoppio"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2508
 msgid "MOLYBDENUM PENTACHLORIDE"
-msgstr ""
+msgstr "PENTACLORURO DI MOLIBDENO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2054
 msgid "MORPHOLINE"
-msgstr ""
+msgstr "MORFOLINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1649

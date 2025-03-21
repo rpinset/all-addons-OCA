@@ -1,2 +1,1 @@
-Basic module providing an helper method to calculate the quantity of
-product by packaging.
+Transitional module to install `product_packaging_calculator` module (renamed and moved to https://github.com/OCA/product-attribute).

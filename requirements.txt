@@ -131,6 +131,8 @@ python-stdnum
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
 # From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
 # From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
@@ -167,6 +169,7 @@ python_slugify
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
 lxml
+openpyxl
 xlrd
 xlsxwriter
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
@@ -202,8 +205,11 @@ schwifty==2024.4.0
 # From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
 # generated from manifests external_dependencies
 a2wsgi>=1.10.6
+apispec
+cerberus
 fastapi>=0.110.0
 parse-accept-language
+pyquerystring
 python-multipart
 ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
