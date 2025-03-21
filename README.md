@@ -1288,16 +1288,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 775dce9871641e8e17fe6635d81ba0dccbf14803
+commit ae9aa76be6be0b68317c405f598438edff9f7a16
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 20 08:42:27 2025 +0000
+Date:   Thu Mar 20 11:02:56 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 50.0% (2 of 4 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: social-12.0/social-12.0-mail_restrict_follower_selection
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_restrict_follower_selection/it/
+    Translation: social-12.0/social-12.0-mass_mailing_unique
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mass_mailing_unique/it/
 
 
 ## storage
@@ -1534,11 +1534,16 @@ Date:   Tue Nov 19 21:17:15 2019 +0100
 
 ## vertical-rental
 From [https://github.com/OCA/vertical-rental.git](https://github.com/OCA/vertical-rental.git)
-commit 28869fd53cfb6a3005017f0d367a8eb8d860e375
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Feb 1 07:26:29 2024 +0000
+commit a3f861b8857aded0048353f968941d541cb0f419
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Mar 19 12:19:05 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: vertical-rental-12.0/vertical-rental-12.0-rental_pricelist
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-rental-12-0/vertical-rental-12-0-rental_pricelist/
 
 
 ## vertical-travel
