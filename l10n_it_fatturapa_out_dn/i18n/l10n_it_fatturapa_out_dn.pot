@@ -1,0 +1,51 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_it_fatturapa_out_dn
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out_dn.field_wizard_export_fatturapa__include_transport_data
+msgid "DN Data"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out_dn.field_wizard_export_fatturapa__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model,name:l10n_it_fatturapa_out_dn.model_wizard_export_fatturapa
+msgid "Export E-invoice"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out_dn.field_wizard_export_fatturapa__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields.selection,name:l10n_it_fatturapa_out_dn.selection__wizard_export_fatturapa__include_transport_data__dati_dn
+msgid "Include DN Data"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields,help:l10n_it_fatturapa_out_dn.field_wizard_export_fatturapa__include_transport_data
+msgid ""
+"Include DN data: The field must be entered when a transport document "
+"associated with a deferred invoice is present"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out_dn
+#: model:ir.model.fields,field_description:l10n_it_fatturapa_out_dn.field_wizard_export_fatturapa____last_update
+msgid "Last Modified on"
+msgstr ""
