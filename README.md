@@ -105,9 +105,9 @@ Date:   Tue Mar 4 09:04:22 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit f71c4a4122c9664e66fbdcafff8d9b896e8c4116
+commit fd8cd35e70b054f4b7176051191ac4b02a67c48c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Feb 25 12:46:36 2025 +0000
+Date:   Fri Mar 21 10:14:56 2025 +0000
 
     [BOT] post-merge updates
 
@@ -123,16 +123,11 @@ Date:   Wed May 1 17:46:09 2024 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit d8da7605405afd5b86bef1e64c9bd67bb409fc91
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Feb 27 09:39:02 2025 +0000
+commit b8a3c3c2bb4229e0633c107ccf4bff3c8d5f7dac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 18 17:07:35 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: operating-unit-15.0/operating-unit-15.0-account_financial_report_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-account_financial_report_operating_unit/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -357,11 +352,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b13699b845752f48b7d3e762bfe4b4a138645973
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 10 18:40:35 2025 +0000
+commit f94447153bae37ac8a014d8d523557ef56c05a73
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Mar 20 09:12:21 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_planner_calendar
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_planner_calendar/
 
 
 ## crm
@@ -482,9 +482,9 @@ Date:   Sun Feb 2 18:45:09 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 2593cd5336570a368c9ab787fcd1ec861f43c467
+commit 55f25735df940365fe76a48f1e3a118d5c35e57a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 14 14:51:37 2025 +0000
+Date:   Thu Mar 20 07:13:40 2025 +0000
 
     [BOT] post-merge updates
 
@@ -554,11 +554,11 @@ Date:   Fri Mar 14 16:55:29 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit a21186a466a836ecacf71be622edbb894c1ccb60
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:55:52 2025 +0000
+commit 0b5f3036c7618a6733d654e352b2369b25ecbb7f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Mar 19 04:02:43 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## hr-holidays
@@ -1282,16 +1282,11 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit b7177bae89e6241f0f65ba48bf82e1261f0fbaaa
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Feb 20 08:42:38 2025 +0000
+commit ca23f1a3c9bcfb35873cac8b55f046d1ebffef42
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 18 13:05:00 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 75.0% (3 of 4 strings)
-    
-    Translation: social-15.0/social-15.0-mail_restrict_follower_selection
-    Translate-URL: https://translation.odoo-community.org/projects/social-15-0/social-15-0-mail_restrict_follower_selection/it/
+    [BOT] post-merge updates
 
 
 ## storage
@@ -1391,16 +1386,11 @@ Date:   Sun Feb 9 18:37:19 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c5a3a0f0c17a4f1e916becf8614e7f4a297af70f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 11 17:12:06 2025 +0000
+commit 0eba1533340e144e14853a2d92fa46c38792d3a4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 18 09:48:47 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation_report
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation_report/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files
@@ -1468,9 +1458,9 @@ Date:   Sun Feb 9 19:05:14 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit c597e08ba58ab14eff3b496f70e061ae1f85f7ce
+commit 262744d624de62d1c32de2b822c8425fb60560ef
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 17 14:44:17 2025 +0000
+Date:   Wed Mar 19 10:36:14 2025 +0000
 
     Translated using Weblate (Italian)
     

@@ -43,6 +43,7 @@ class SalePlannerCalendarWizard(models.TransientModel):
                 ("recurrency", "=", True),
                 ("recurrence_id.until", ">", fields.Date.today()),
                 ("is_base_recurrent_event", "=", True),
+                ("target_partner_id", "!=", False),
             ]
             if rec.user_id:
                 domain.append(("user_id", "=", rec.user_id.id))

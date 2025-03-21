@@ -18,11 +18,18 @@ class TestAccountAngloSaxonNoCogsDeferral(TransactionCase):
         self.supplier_location = self.env.ref("stock.stock_location_suppliers")
         self.uom_unit = self.env.ref("uom.product_uom_unit")
         self.partner = self.env["res.partner"].create({"name": "Test partner"})
+        self.categ = self.env["product.category"].create(
+            {
+                "name": "Test category",
+                "property_valuation": "real_time",
+                "property_cost_method": "fifo",
+            }
+        )
         self.product1 = self.env["product.product"].create(
             {
                 "name": "Product A",
                 "type": "product",
-                "categ_id": self.env.ref("product.product_category_all").id,
+                "categ_id": self.categ.id,
                 "standard_price": 5,
             }
         )

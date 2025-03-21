@@ -5,7 +5,7 @@
 {
     "name": "Account Invoice Anglo Saxon no COGS deferral",
     "summary": "Invalidates the COGS deferral introduced by the anglo saxon " "module",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "author": "ForgeFlow, " "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-invoicing",
     "category": "Accounting & Finance",
