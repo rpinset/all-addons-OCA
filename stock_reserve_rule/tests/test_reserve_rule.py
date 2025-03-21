@@ -117,7 +117,7 @@ class TestReserveRule(common.TransactionCase):
         rule_config.update(rule_values)
         self.env["stock.reserve.rule"].create(rule_config)
         # workaround for https://github.com/odoo/odoo/pull/41900
-        self.env["stock.reserve.rule"].invalidate_cache()
+        self.env["stock.reserve.rule"].invalidate_model()
 
     def _setup_packagings(self, product, packagings):
         """Create packagings on a product

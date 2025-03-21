@@ -59,7 +59,7 @@ class TestSafeInventory(BaseCommon):
         self.picking.action_assign()
         self.picking.move_line_ids.write({"qty_done": 5.0})
         self.env.company.stock_quant_no_inventory_if_being_picked = True
-        with self.assertRaisesRegexp(
+        with self.assertRaisesRegex(
             UserError,
             "You cannot update the quantity of a quant that is currently being picked",
         ):

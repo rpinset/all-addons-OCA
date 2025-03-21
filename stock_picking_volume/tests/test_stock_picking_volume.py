@@ -179,10 +179,10 @@ class TestStockPickingVolume(TransactionCase):
         )
         self.picking.action_confirm()
         self.picking.action_assign()
-        self.picking.invalidate_cache()
+        self.picking.invalidate_recordset()
         self.assertEqual(self.picking.volume, 750 * 2)
         self.picking.move_ids[1]._action_cancel()
-        self.picking.invalidate_cache()
+        self.picking.invalidate_recordset()
         self.assertEqual(self.picking.volume, 750)
 
     def test_product_volume(self):

@@ -499,7 +499,7 @@ class TestStockCycleCount(common.TransactionCase):
                 "manual_deadline_date": "2026-11-30",
             }
         )
-        cycle_count_1.flush()
+        cycle_count_1.flush_recordset()
         # Confirm the Cycle Count
         cycle_count_1.action_create_inventory_adjustment()
         # Inventory adjustments change their state to in_progress
@@ -590,8 +590,10 @@ class TestStockCycleCount(common.TransactionCase):
                 "Quant user does not match inventory responsible.",
             )
         self.cycle_count_1.responsible_id = additional_user.id
-        inventory.invalidate_cache()
-        self.cycle_count_1.stock_adjustment_ids[0].stock_quant_ids.invalidate_cache()
+        inventory.invalidate_recordset()
+        self.cycle_count_1.stock_adjustment_ids[
+            0
+        ].stock_quant_ids.invalidate_recordset()
         self.assertEqual(
             inventory.responsible_id.id,
             additional_user.id,

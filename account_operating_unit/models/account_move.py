@@ -76,11 +76,16 @@ class AccountMove(models.Model):
             "account_id": move.company_id.inter_ou_clearing_account_id.id,
             "display_type": "ou_balance",
         }
-
+        # total_balance_to_match is the minimim of the abs of the values
+        total_balance_to_match = min(
+            abs(ou_balances[ou])
+            for ou in list(ou_balances.keys())
+            if ou_balances[ou] != 0.0
+        )
         if ou_balances[ou_id] < 0.0:
-            res["debit"] = abs(ou_balances[ou_id])
+            res["debit"] = total_balance_to_match
         else:
-            res["credit"] = ou_balances[ou_id]
+            res["credit"] = total_balance_to_match
         return res
 
     def _check_ou_balance(self, move):

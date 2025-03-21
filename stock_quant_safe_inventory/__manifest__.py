@@ -6,7 +6,7 @@
     "summary": """
         Prevents the quantity on the quant from being updated if quantities have
         already been picked but not validated in pickings in progress.""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "AGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-warehouse",

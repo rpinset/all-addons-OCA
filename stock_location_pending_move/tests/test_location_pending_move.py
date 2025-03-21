@@ -27,7 +27,9 @@ class TestLocationPendingMove(BaseCommon):
         )
         moves = self.env["stock.move"].search(domain)
         action = self.stock.action_show_pending_stock_moves()
-        self.assertDictContainsSubset({"domain": [("id", "in", moves.ids)]}, action)
+        self.assertLessEqual(
+            {"domain": [("id", "in", moves.ids)]}.items(), action.items()
+        )
 
     def test_location_pending_move_line(self):
         # Check that the action domain is well filled with pending move lines ids.
@@ -43,6 +45,6 @@ class TestLocationPendingMove(BaseCommon):
         )
         move_lines = self.env["stock.move.line"].search(domain)
         action = self.stock.action_show_pending_stock_move_lines()
-        self.assertDictContainsSubset(
-            {"domain": [("id", "in", move_lines.ids)]}, action
+        self.assertLessEqual(
+            {"domain": [("id", "in", move_lines.ids)]}.items(), action.items()
         )
