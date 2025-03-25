@@ -19,60 +19,44 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.14.1\n"
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model.fields,field_description:account_invoice_fiscal_position_update.field_account_bank_statement_line__fiscal_position_id
-#: model:ir.model.fields,field_description:account_invoice_fiscal_position_update.field_account_move__fiscal_position_id
-msgid "Fiscal Position"
-msgstr "Posición Fiscal"
+#~ msgid "Fiscal Position"
+#~ msgstr "Posición Fiscal"
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model.fields,help:account_invoice_fiscal_position_update.field_account_bank_statement_line__fiscal_position_id
-#: model:ir.model.fields,help:account_invoice_fiscal_position_update.field_account_move__fiscal_position_id
-msgid ""
-"Fiscal positions are used to adapt taxes and accounts for particular "
-"customers or sales orders/invoices. The default value comes from the "
-"customer."
-msgstr ""
-"Las posiciones fiscales se usan para adaptar impuestos y cuentas a clientes "
-"particulares o pedidos de ventas/facturas. El valor por defecto se traslada "
-"desde el cliente."
+#~ msgid ""
+#~ "Fiscal positions are used to adapt taxes and accounts for particular "
+#~ "customers or sales orders/invoices. The default value comes from the "
+#~ "customer."
+#~ msgstr ""
+#~ "Las posiciones fiscales se usan para adaptar impuestos y cuentas a "
+#~ "clientes particulares o pedidos de ventas/facturas. El valor por defecto "
+#~ "se traslada desde el cliente."
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model,name:account_invoice_fiscal_position_update.model_account_move
-msgid "Journal Entry"
-msgstr "Asiento contable"
+#~ msgid "Journal Entry"
+#~ msgstr "Asiento contable"
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid ""
-"The following invoice lines were not updated to the new Fiscal Position "
-"because they don't have a Product:\n"
-" - %s\n"
-"You should update the Account and the Taxes of these invoice lines manually."
-msgstr ""
-"Las siguientes líneas de factura no se han actualizado a la nueva Posición "
-"Fiscal porque no tienen producto: \n"
-" - %s\n"
-"Deberías actualizar manualmente la cuenta y los impuestos de esas líneas."
+#~ msgid ""
+#~ "The following invoice lines were not updated to the new Fiscal Position "
+#~ "because they don't have a Product:\n"
+#~ " - %s\n"
+#~ "You should update the Account and the Taxes of these invoice lines "
+#~ "manually."
+#~ msgstr ""
+#~ "Las siguientes líneas de factura no se han actualizado a la nueva "
+#~ "Posición Fiscal porque no tienen producto: \n"
+#~ " - %s\n"
+#~ "Deberías actualizar manualmente la cuenta y los impuestos de esas líneas."
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid ""
-"The invoice lines were not updated to the new Fiscal Position because they "
-"don't have products. You should update the Account and the Taxes of each "
-"invoice line manually."
-msgstr ""
-"Las líneas de factura no se actualizaron a la nueva posición fiscal porque "
-"no tienen producto asociado. Debería actualizar las cuentas y los impuestos "
-"de cada línea de factura manualmente."
+#~ msgid ""
+#~ "The invoice lines were not updated to the new Fiscal Position because "
+#~ "they don't have products. You should update the Account and the Taxes of "
+#~ "each invoice line manually."
+#~ msgstr ""
+#~ "Las líneas de factura no se actualizaron a la nueva posición fiscal "
+#~ "porque no tienen producto asociado. Debería actualizar las cuentas y los "
+#~ "impuestos de cada línea de factura manualmente."
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid "Warning"
-msgstr "Aviso"
+#~ msgid "Warning"
+#~ msgstr "Aviso"
 
 #~ msgid "Journal Entries"
 #~ msgstr "Asientos Contables"

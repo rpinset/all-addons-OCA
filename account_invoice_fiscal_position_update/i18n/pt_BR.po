@@ -20,60 +20,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model.fields,field_description:account_invoice_fiscal_position_update.field_account_bank_statement_line__fiscal_position_id
-#: model:ir.model.fields,field_description:account_invoice_fiscal_position_update.field_account_move__fiscal_position_id
-msgid "Fiscal Position"
-msgstr "Posição Fiscal"
+#~ msgid "Fiscal Position"
+#~ msgstr "Posição Fiscal"
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model.fields,help:account_invoice_fiscal_position_update.field_account_bank_statement_line__fiscal_position_id
-#: model:ir.model.fields,help:account_invoice_fiscal_position_update.field_account_move__fiscal_position_id
-msgid ""
-"Fiscal positions are used to adapt taxes and accounts for particular "
-"customers or sales orders/invoices. The default value comes from the "
-"customer."
-msgstr ""
-"Posições fiscais são usadas para adaptar impostos e contas para determinados "
-"clientes ou ordens de venda/faturas. O valor padrão vem do cliente."
+#~ msgid ""
+#~ "Fiscal positions are used to adapt taxes and accounts for particular "
+#~ "customers or sales orders/invoices. The default value comes from the "
+#~ "customer."
+#~ msgstr ""
+#~ "Posições fiscais são usadas para adaptar impostos e contas para "
+#~ "determinados clientes ou ordens de venda/faturas. O valor padrão vem do "
+#~ "cliente."
 
-#. module: account_invoice_fiscal_position_update
-#: model:ir.model,name:account_invoice_fiscal_position_update.model_account_move
-msgid "Journal Entry"
-msgstr "Entrada Diário"
+#~ msgid "Journal Entry"
+#~ msgstr "Entrada Diário"
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid ""
-"The following invoice lines were not updated to the new Fiscal Position "
-"because they don't have a Product:\n"
-" - %s\n"
-"You should update the Account and the Taxes of these invoice lines manually."
-msgstr ""
-"As seguintes linhas da fatura não foram atualizadas para a nova posição "
-"fiscal porque não possuem um produto:\n"
-"\t- %s\n"
-"Você deve atualizar a Conta e os Impostos dessas linhas da fatura "
-"manualmente."
+#~ msgid ""
+#~ "The following invoice lines were not updated to the new Fiscal Position "
+#~ "because they don't have a Product:\n"
+#~ " - %s\n"
+#~ "You should update the Account and the Taxes of these invoice lines "
+#~ "manually."
+#~ msgstr ""
+#~ "As seguintes linhas da fatura não foram atualizadas para a nova posição "
+#~ "fiscal porque não possuem um produto:\n"
+#~ "\t- %s\n"
+#~ "Você deve atualizar a Conta e os Impostos dessas linhas da fatura "
+#~ "manualmente."
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid ""
-"The invoice lines were not updated to the new Fiscal Position because they "
-"don't have products. You should update the Account and the Taxes of each "
-"invoice line manually."
-msgstr ""
-"As linhas da fatura não foram atualizadas na nova posição fiscal porque não "
-"possuem produtos. Você deve atualizar a conta e os impostos de cada linha da "
-"fatura manualmente."
+#~ msgid ""
+#~ "The invoice lines were not updated to the new Fiscal Position because "
+#~ "they don't have products. You should update the Account and the Taxes of "
+#~ "each invoice line manually."
+#~ msgstr ""
+#~ "As linhas da fatura não foram atualizadas na nova posição fiscal porque "
+#~ "não possuem produtos. Você deve atualizar a conta e os impostos de cada "
+#~ "linha da fatura manualmente."
 
-#. module: account_invoice_fiscal_position_update
-#. odoo-python
-#: code:addons/account_invoice_fiscal_position_update/models/account_move.py:0
-msgid "Warning"
-msgstr "Aviso"
+#~ msgid "Warning"
+#~ msgstr "Aviso"
 
 #, python-format
 #~ msgid ""
