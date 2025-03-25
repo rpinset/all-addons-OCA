@@ -63,6 +63,13 @@ msgid ""
 msgstr ""
 
 #. module: stock_analytic
+#: model:ir.model.fields,field_description:stock_analytic.field_stock_move__distribution_analytic_account_ids
+#: model:ir.model.fields,field_description:stock_analytic.field_stock_move_line__distribution_analytic_account_ids
+#: model:ir.model.fields,field_description:stock_analytic.field_stock_scrap__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr ""
+
+#. module: stock_analytic
 #: model:ir.model.fields,field_description:stock_analytic.field_account_analytic_applicability__business_domain
 msgid "Domain"
 msgstr ""

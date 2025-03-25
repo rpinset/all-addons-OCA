@@ -45,6 +45,11 @@ msgid ""
 msgstr ""
 
 #. module: purchase_analytic
+#: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr ""
+
+#. module: purchase_analytic
 #: model:ir.model.fields,field_description:purchase_analytic.field_purchase_order__manual_distribution_id
 msgid "Manual Distribution"
 msgstr ""

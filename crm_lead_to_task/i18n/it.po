@@ -23,6 +23,11 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. module: crm_lead_to_task
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead__task_count
+msgid "#Task"
+msgstr ""
+
+#. module: crm_lead_to_task
 #: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_view_form
 msgid ""
 "<span class=\"o_stat_text\" invisible=\"task_count &lt; 2\">Tasks</span>\n"
@@ -121,17 +126,15 @@ msgid "Task"
 msgstr "Lavoro"
 
 #. module: crm_lead_to_task
-#: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead__task_count
-msgid "Task Count"
-msgstr "Numero lavori"
-
-#. module: crm_lead_to_task
 #. odoo-python
 #: code:addons/crm_lead_to_task/models/crm_lead.py:0
 #: code:addons/crm_lead_to_task/tests/test_crm_lead_task.py:0
 #, python-format
 msgid "Tasks from crm lead %s"
 msgstr "Lavori cal contatto CRM %s"
+
+#~ msgid "Task Count"
+#~ msgstr "Numero lavori"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
