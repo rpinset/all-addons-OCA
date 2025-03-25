@@ -513,11 +513,11 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit de571bc146a339b17cf85b547af232ce20edc358
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:36:56 2025 +0000
+commit 2a98308f1003e658ec2b0ead3ce4c220a0a8fbf3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 24 10:26:50 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## field-service

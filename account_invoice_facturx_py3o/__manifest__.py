@@ -4,7 +4,7 @@
 
 {
     'name': 'Py3o Factur-x Invoice',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'Invoicing Management',
     'license': 'AGPL-3',
     'summary': 'Generate Factur-X invoices with Py3o reporting engine',

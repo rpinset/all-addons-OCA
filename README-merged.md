@@ -1919,10 +1919,10 @@ addon | version | maintainers | summary
 [account_e-invoice_generate](account_e-invoice_generate/) | 12.0.1.1.0 |  | Technical module to generate PDF invoices with embedded XML file
 [account_invoice_download](account_invoice_download/) | 12.0.1.0.0 |  | Auto-download supplier invoices and import them
 [account_invoice_download_ovh](account_invoice_download_ovh/) | 12.0.1.0.1 |  | Get OVH Invoice via the API
-[account_invoice_facturx](account_invoice_facturx/) | 12.0.1.1.1 |  | Generate Factur-X/ZUGFeRD customer invoices
-[account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 12.0.1.0.0 |  | Generate Factur-X invoices with Py3o reporting engine
+[account_invoice_facturx](account_invoice_facturx/) | 12.0.1.1.2 |  | Generate Factur-X/ZUGFeRD customer invoices
+[account_invoice_facturx_py3o](account_invoice_facturx_py3o/) | 12.0.1.0.1 |  | Generate Factur-X invoices with Py3o reporting engine
 [account_invoice_import](account_invoice_import/) | 12.0.1.1.1 |  | Import supplier invoices/refunds as PDF or XML files
-[account_invoice_import_facturx](account_invoice_import_facturx/) | 12.0.1.0.1 |  | Import Factur-X/ZUGFeRD supplier invoices/refunds
+[account_invoice_import_facturx](account_invoice_import_facturx/) | 12.0.1.0.2 |  | Import Factur-X/ZUGFeRD supplier invoices/refunds
 [account_invoice_import_invoice2data](account_invoice_import_invoice2data/) | 12.0.1.1.1 |  | Import supplier invoices using the invoice2data lib
 [account_invoice_import_ubl](account_invoice_import_ubl/) | 12.0.1.0.1 |  | Import UBL XML supplier invoices/refunds
 [account_invoice_ubl](account_invoice_ubl/) | 12.0.1.1.2 |  | Generate UBL XML file for customer invoices/refunds
