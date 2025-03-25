@@ -798,16 +798,16 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit ea24ea1e6d3c31a00db7583b7db8968fa2141204
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:20:53 2025 +0000
+commit b0bb4e64e26b220d3d38fc4203b6de6ae9273ed3
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Mar 22 11:11:01 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 22.2% (2 of 9 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-france-14.0/l10n-france-14.0-account_balance_ebp_csv_export
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-account_balance_ebp_csv_export/it/
+    Translation: l10n-france-14.0/l10n-france-14.0-l10n_fr_pos_caisse_ap_ip
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-l10n_fr_pos_caisse_ap_ip/
 
 
 ## l10n-germany
@@ -1183,14 +1183,11 @@ Date:   Sun Feb 2 18:34:52 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit dae4389aa80f29edd54c8bd624f6174e5d9a2e70
-Merge: 6120b8f3 1026fc72
-Author: Jacques-Etienne Baudoux <je@bcim.be>
-Date:   Fri Mar 21 18:10:46 2025 +0100
+commit 8b0658e0c30471c2ee19c5d745f065d5cea1a009
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 24 14:59:58 2025 +0000
 
-    Merge pull request #994 from jbaudoux/14-copier_update
-    
-    [14.0] copier update
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1425,11 +1422,11 @@ Date:   Fri Mar 14 12:20:02 2025 +0000
 
 ## search-engine
 From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
-commit b13029325dd5b8fc7c89934f758d9e0520491d76
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:33:42 2025 +0000
+commit 36f01619e19debc4cab966daa427e10e3ab53e0a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 25 06:27:29 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## reporting-engine
