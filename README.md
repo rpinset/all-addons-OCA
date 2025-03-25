@@ -352,16 +352,11 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f94447153bae37ac8a014d8d523557ef56c05a73
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Mar 20 09:12:21 2025 +0000
+commit ce5ebd1fe7e99e9f13634fceb3150d2f898989e4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Mar 25 07:52:42 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_planner_calendar
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_planner_calendar/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -473,11 +468,11 @@ Date:   Thu Feb 20 12:56:06 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 8d87b27960e13fc8b88569c2bc18e5523bdab22d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:45:09 2025 +0000
+commit 7047b5aa64972b92db091ae757bdb951873be49f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 24 15:08:25 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1141,9 +1136,9 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit fe2104108082e0eac908bfa03111372d3798f5c5
+commit ecf1c31889c74df3b7743318bd15f179748bae24
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 17 08:20:33 2025 +0000
+Date:   Mon Mar 24 12:26:12 2025 +0000
 
     [BOT] post-merge updates
 

@@ -38,6 +38,8 @@ class SaleOrderLine(models.Model):
         purpose.
         """
         res = super().product_id_change()
+        if self.env.context.get("skip_secondary_uom_default"):
+            return res
         line_uom_qty = self.product_uom_qty
         self.secondary_uom_id = self.product_id.sale_secondary_uom_id
         if self.product_id.sale_secondary_uom_id:
