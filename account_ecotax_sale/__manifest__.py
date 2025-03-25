@@ -4,7 +4,7 @@
 {
     "name": "sale Ecotax Management",
     "summary": "Sale Ecotaxe",
-    "version": "16.0.2.0.0",
+    "version": "16.0.2.0.1",
     "maintainers": ["mourad-ehm", "florian-dacosta"],
     "author": "Akretion,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-fiscal-rule",
@@ -16,4 +16,5 @@
         "security/ir.model.access.csv",
     ],
     "installable": True,
+    "pre_init_hook": "pre_init_hook",
 }

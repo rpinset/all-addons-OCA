@@ -191,19 +191,24 @@ class DocumentPage(models.Model):
         )
         return super().copy(default=default)
 
-    @api.model
-    def create(self, vals):
+    @api.model_create_multi
+    def create(self, vals_list):
         """Automatically make the category followers follow the new page"""
-        res = super().create(vals)
+        records = super().create(vals_list)
 
-        if res.type == "content" and res.parent_id and res.parent_id.type == "category":
-            category = res.parent_id
-            category_followers = category.message_partner_ids.ids
+        for res in records:
+            if (
+                res.type == "content"
+                and res.parent_id
+                and res.parent_id.type == "category"
+            ):
+                category = res.parent_id
+                category_followers = category.message_partner_ids.ids
 
-            if category_followers:
-                res.message_subscribe(partner_ids=category_followers)
+                if category_followers:
+                    res.message_subscribe(partner_ids=category_followers)
 
-        return res
+        return records
 
     def message_subscribe(self, partner_ids, subtype_ids=None):
         res = super().message_subscribe(partner_ids, subtype_ids)
