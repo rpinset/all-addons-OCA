@@ -443,16 +443,16 @@ Date:   Wed Mar 5 09:13:01 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 05bdcdd8b29bfdf6726c7797f786bcdcb0242bce
+commit 5c3ff09bc7ef5eb2cb6a750422beeb14185e47d3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 5 09:24:43 2025 +0000
+Date:   Thu Mar 27 12:40:19 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (64 of 64 strings)
+    Currently translated at 100.0% (29 of 29 strings)
     
-    Translation: commission-14.0/commission-14.0-sale_commission_product_criteria
-    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_product_criteria/it/
+    Translation: commission-14.0/commission-14.0-sale_commission_geo_assign
+    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_geo_assign/it/
 
 
 ## event
@@ -866,11 +866,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit c50e8b2c0508bec4464f0e653ff1639ebdd42e50
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 19 09:50:22 2025 +0000
+commit 0c557d90ceb9b948522d842485c01df1b438322c
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Mar 27 10:32:30 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## l10n-japan
@@ -1109,16 +1109,16 @@ Date:   Fri Mar 14 12:12:27 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 6ccc28aff427a22a943e6e5281c62f8ec542ddb6
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:12:12 2025 +0000
+commit fc42bed4eebbf2b937c6c2ef3b89ddde4e37d7e5
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Mar 27 13:56:58 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 12.5% (1 of 8 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_putaway_by_route
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_putaway_by_route/it/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-delivery_procurement_group_carrier
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-delivery_procurement_group_carrier/
 
 
 ## stock-logistics-tracking

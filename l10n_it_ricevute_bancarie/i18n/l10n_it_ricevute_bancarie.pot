@@ -365,16 +365,6 @@ msgid "Canceled"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
-#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
-#, python-format
-msgid ""
-"Cannot post invoices with C/O payments without bank. Please check the following invoices:\n"
-"\n"
-"- \n"
-"- "
-msgstr ""
-
-#. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "Cash Order Slip No."
 msgstr ""
@@ -793,12 +783,6 @@ msgid "Immediate"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
-#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
-#, python-format
-msgid "Invoice %(name)s for customer \"%(customer_name)s\", total %(amount)s"
-msgstr ""
-
-#. module: l10n_it_ricevute_bancarie
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_distinta_line__invoice_date
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "Invoice Date"
@@ -813,12 +797,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_distinta_line__invoice_number
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "Invoice Number"
-msgstr ""
-
-#. module: l10n_it_ricevute_bancarie
-#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
-#, python-format
-msgid "Invoice is linked to C/O slip No. {riba}"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
@@ -1348,12 +1326,6 @@ msgid "Set RiBa Payment Date"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
-#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
-#, python-format
-msgid "Set a Service for Collection Fees in Company Config."
-msgstr ""
-
-#. module: l10n_it_ricevute_bancarie
 #: model:ir.actions.server,name:l10n_it_ricevute_bancarie.riba_line_settle_action_server
 msgid "Settle RiBa Line"
 msgstr ""
@@ -1516,10 +1488,4 @@ msgstr ""
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "of"
-msgstr ""
-
-#. module: l10n_it_ricevute_bancarie
-#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
-#, python-format
-msgid "{line_name} for {month}-{year}"
 msgstr ""

@@ -38,6 +38,25 @@ class ResPartnerBankAdd(models.Model):
         help="Identification Code of the Company in the Interbank System.",
     )
 
+    def _check_protected_records(self):
+        protected_records = (
+            self.env["account.move"]
+            .search([("riba_partner_bank_id", "in", self.ids)])
+            .mapped("riba_partner_bank_id")
+        )
+        if protected_records:
+            message = _(
+                "The bank accounts with accreditation code "
+                f"{[bank.acc_number for bank in protected_records]}"
+                " cannot be deleted as they are used in invoices."
+                " If possible, archive the bank account"
+            )
+            raise UserError(message)
+
+    def unlink(self):
+        self._check_protected_records()
+        return super().unlink()
+
 
 class AccountMove(models.Model):
     _inherit = "account.move"
@@ -291,6 +310,10 @@ class AccountMove(models.Model):
                 )
                 invoice._recompute_tax_lines()
             invoice.is_unsolved = False
+
+            # if the bank account is archived do not allow the use in the new invoice
+            if not invoice.riba_partner_bank_id.active:
+                invoice.riba_partner_bank_id = False
         return invoice
 
     def get_due_cost_line_ids(self):
@@ -380,11 +403,19 @@ class AccountMoveLine(models.Model):
         return res
 
     def action_riba_issue(self):
+        for line in self:
+            if not line.move_id.riba_partner_bank_id.active:
+                raise UserError(
+                    _(
+                        "Non è possibile emettere una riba legata ad un IBAN archiviato;"
+                        " riga: %s , contatto: %s"
+                    )
+                    % (line.name, line.partner_id.name)
+                )
         ctx = dict(self.env.context)
         ctx.pop("active_id", None)
         ctx["active_ids"] = self.ids
         ctx["active_model"] = "account.move.line"
-
         return {
             "type": "ir.actions.act_window",
             "name": "Issue C/O",

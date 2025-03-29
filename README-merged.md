@@ -4788,9 +4788,9 @@ addon | version | maintainers | summary
 [l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 14.0.1.0.0 |  | Gestione dati fattura elettronica del cliente all'internodell'interfaccia del POS
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
-[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.7 |  | Inversione contabile
+[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.8 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
-[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.14.0 |  | Ricevute bancarie
+[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.14.1 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdd_cbi](l10n_it_sdd_cbi/) | 14.0.1.0.0 |  | Create SEPA files for CBI SDD Italy
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
@@ -6126,7 +6126,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_package_default_shipping_weight](delivery_package_default_shipping_weight/) | 14.0.1.0.1 |  | Set default package shipping weight according to packaging
-[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.1.2 |  | Delivery Procurement Group Carrier
+[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.2.0 |  | Delivery Procurement Group Carrier
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 14.0.1.0.1 |  | Include packaging weight on move, transfer and package.
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 14.0.1.1.1 |  | Procurement Auto Create Group Carrier
 [product_cost_price_avco_sync](product_cost_price_avco_sync/) | 14.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
