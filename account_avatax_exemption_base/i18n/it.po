@@ -321,6 +321,7 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: account_avatax_exemption_base
 #: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__message_has_error
+#: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -333,15 +334,6 @@ msgstr "In corso"
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__message_is_follower
 msgid "Is Follower"
 msgstr "Segue"
-
-#. module: account_avatax_exemption_base
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption____last_update
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption_business_type____last_update
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption_line____last_update
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption_type____last_update
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_group_state____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: account_avatax_exemption_base
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__write_uid
@@ -365,11 +357,6 @@ msgstr "Ultimo aggiornamento il"
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption_line__linked_to_customer
 msgid "Linked To Customer"
 msgstr "Collegato al cliente"
-
-#. module: account_avatax_exemption_base
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Allegato principale"
 
 #. module: account_avatax_exemption_base
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__message_has_error
@@ -398,10 +385,6 @@ msgstr "Nome"
 #. module: account_avatax_exemption_base
 #. odoo-python
 #: code:addons/account_avatax_exemption_base/models/exemption.py:0
-#: code:addons/account_avatax_exemption_base/models/exemption.py:0
-#: code:addons/account_avatax_exemption_base/models/exemption.py:0
-#: code:addons/account_avatax_exemption_base/models/exemption.py:0
-#, python-format
 msgid "New"
 msgstr "Nuova"
 
@@ -447,9 +430,19 @@ msgid "Partner"
 msgstr "Partner"
 
 #. module: account_avatax_exemption_base
+#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: account_avatax_exemption_base
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__activity_user_id
 msgid "Responsible User"
 msgstr "Utente responsabile"
+
+#. module: account_avatax_exemption_base
+#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
 
 #. module: account_avatax_exemption_base
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__state
@@ -497,3 +490,9 @@ msgstr "Messaggi sito web"
 #: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__website_message_ids
 msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Allegato principale"

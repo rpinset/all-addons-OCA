@@ -49,6 +49,8 @@ requests
 # From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
 # From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
 # From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
+# generated from manifests external_dependencies
+email-validator
 # From [https://github.com/OCA/sale-financial.git](https://github.com/OCA/sale-financial.git)
 # From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
 # From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
@@ -129,6 +131,8 @@ python-stdnum
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)
 # From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
+# generated from manifests external_dependencies
+roulier
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)

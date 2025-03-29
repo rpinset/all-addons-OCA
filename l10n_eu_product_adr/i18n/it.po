@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-18 15:06+0000\n"
+"PO-Revision-Date: 2025-03-26 14:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -8325,57 +8325,57 @@ msgstr "MORFOLINA"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1649
 msgid "MOTOR FUEL ANTI-KNOCK MIXTURE"
-msgstr ""
+msgstr "MISCELA ANTIDETONAZIONE PER CARBURANTE MOTORE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3483
 msgid "MOTOR FUEL ANTI-KNOCK MIXTURE, FLAMMABLE"
-msgstr ""
+msgstr "MISCELA ANTIDETONAZIONE PER CARBURANTE MOTORE, INFIAMMABILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1203
 msgid "MOTOR SPIRIT or GASOLINE or PETROL"
-msgstr ""
+msgstr "SPIRITO MOTORE o BENZINA o BENZINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2807
 msgid "Magnetized material"
-msgstr ""
+msgstr "Materiale magnetizzato"
 
 #. module: l10n_eu_product_adr
 #: model:adr.label,name:l10n_eu_product_adr.adr_label_9
 msgid "Miscellaneous dangerous substances"
-msgstr ""
+msgstr "Sostanze pericolose varie"
 
 #. module: l10n_eu_product_adr
 #: model:adr.class,name:l10n_eu_product_adr.adr_class_9
 msgid "Miscellaneous dangerous substances and articles"
-msgstr ""
+msgstr "Sostanze e oggetti pericolosi vari"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2685
 msgid "N,N-DIETHYL-ETHYLENEDIAMINE"
-msgstr ""
+msgstr "N,N-DIETIL-ETILENDIAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2432
 msgid "N,N-DIETHYLANILINE"
-msgstr ""
+msgstr "N,N-DIETILANILINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2264
 msgid "N,N-DIMETHYL-CYCLOHEXYLAMINE"
-msgstr ""
+msgstr "N,N-DIMETIL-CICLOESILAMMINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2265
 msgid "N,N-DIMETHYL-FORMAMIDE"
-msgstr ""
+msgstr "N,N-DIMETIL-FORMAMIDE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2253
 msgid "N,N-DIMETHYLANILINE"
-msgstr ""
+msgstr "N,N-DIMETILANILINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2690
@@ -8430,57 +8430,57 @@ msgstr ""
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1334
 msgid "NAPHTHALENE, CRUDE or NAPHTHALENE, REFINED"
-msgstr ""
+msgstr "NAFTALENE GREGGIO o NAFTALENE RAFFINATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2304
 msgid "NAPHTHALENE, MOLTEN"
-msgstr ""
+msgstr "NAFTALENE, FUSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1651
 msgid "NAPHTHYLTHIOUREA"
-msgstr ""
+msgstr "NAFTILTIOUREA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1652
 msgid "NAPHTHYLUREA"
-msgstr ""
+msgstr "NAFTILUREA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1065
 msgid "NEON, COMPRESSED"
-msgstr ""
+msgstr "NEON, COMPRESSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1913
 msgid "NEON, REFRIGERATED LIQUID"
-msgstr ""
+msgstr "NEON, LIQUIDO REFRIGERATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1259
 msgid "NICKEL CARBONYL"
-msgstr ""
+msgstr "NICHEL CARBONILICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1653
 msgid "NICKEL CYANIDE"
-msgstr ""
+msgstr "CIANURO DI NICHEL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2725
 msgid "NICKEL NITRATE"
-msgstr ""
+msgstr "NITRATO DI NICHEL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2726
 msgid "NICKEL NITRITE"
-msgstr ""
+msgstr "NITRITO DI NICHEL"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1654
 msgid "NICOTINE"
-msgstr ""
+msgstr "NICOTINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3144
@@ -8489,6 +8489,8 @@ msgstr ""
 msgid ""
 "NICOTINE COMPOUND, LIQUID, N.O.S. or NICOTINE PREPARATION, LIQUID, N.O.S."
 msgstr ""
+"COMPOSTO DI NICOTINA, LIQUIDO, N.A.S. o PREPARAZIONE DI NICOTINA, LIQUIDA, "
+"N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1655
@@ -8502,7 +8504,7 @@ msgstr ""
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1656_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1656_5L
 msgid "NICOTINE HYDROCHLORIDE, LIQUID or SOLUTION"
-msgstr ""
+msgstr "CLORIDRATO DI NICOTINA, LIQUIDO O SOLUZIONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3444
@@ -8512,7 +8514,7 @@ msgstr "NICOTINE HYDROCHLORIDE, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1657
 msgid "NICOTINE SALICYLATE"
-msgstr ""
+msgstr "SALICILATO DI NICOTINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3445
@@ -8523,49 +8525,50 @@ msgstr "NICOTINE SULPHATE, SOLIDO"
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1658_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1658_5L
 msgid "NICOTINE SULPHATE, SOLUTION"
-msgstr ""
+msgstr "SOLFATO DI NICOTINA, SOLUZIONE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1659
 msgid "NICOTINE TARTRATE"
-msgstr ""
+msgstr "TARTRATO DI NICOTINA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3218_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3218_5L
 msgid "NITRATES, INORGANIC, AQUEOUS SOLUTION, N.O.S."
-msgstr ""
+msgstr "NITRATI, INORGANICI, SOLUZIONE ACQUOSA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1477_1kg
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1477_5kg
 msgid "NITRATES, INORGANIC, N.O.S."
-msgstr ""
+msgstr "NITRATI INORGANICI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1796
 msgid "NITRATING ACID MIXTURE with more than 50% nitric acid"
-msgstr ""
+msgstr "MISCELA DI ACIDO NITRANTE con più del 50% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1796_1L
 msgid "NITRATING ACID MIXTURE with not more than 50% nitric acid"
-msgstr ""
+msgstr "MISCELA DI ACIDO NITRATTIVO con non più del 50% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1826
 msgid "NITRATING ACID MIXTURE, SPENT, with more than 50% nitric acid"
-msgstr ""
+msgstr "MISCELA DI ACIDO NITRATTIVO, ESAUSTA, con più del 50% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1826_1L
 msgid "NITRATING ACID MIXTURE, SPENT, with not more than 50% nitric acid"
 msgstr ""
+"MISCELA DI ACIDO NITRATTIVO, ESAUSTA, con non più del 50% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2032
 msgid "NITRIC ACID, RED FUMING"
-msgstr ""
+msgstr "ACIDO NITRICO, ROSSO FUMANTE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2031_CO1_8/5dot1_1L_P001/IBC02_2
@@ -8573,16 +8576,20 @@ msgid ""
 "NITRIC ACID, other than red fuming, with at least 65%, but not more than 70% "
 "nitric acid"
 msgstr ""
+"ACIDO NITRICO, diverso dal rosso fumante, con almeno il 65%, ma non più del "
+"70% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2031_C1_8_1L_P001/IBC02_2
 msgid "NITRIC ACID, other than red fuming, with less than 65% nitric acid"
 msgstr ""
+"ACIDO NITRICO, diverso dal rosso fumante, con meno del 65% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2031_CO1_8/5dot1_P001_1
 msgid "NITRIC ACID, other than red fuming, with more than 70% nitric acid"
 msgstr ""
+"ACIDO NITRICO, diverso dal rosso fumante, con più del 70% di acido nitrico"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1975
@@ -8590,24 +8597,26 @@ msgid ""
 "NITRIC OXIDE AND DINITROGEN TETROXIDE MIXTURE (NITRIC OXIDE AND NITROGEN "
 "DIOXIDE MIXTURE)"
 msgstr ""
+"MISCELA DI OSSIDO NITRICO E TETROSSIDO DI DINAZOTO (MISCELA DI OSSIDO "
+"NITRICO E BIOSSIDO DI AZOTO)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1660
 msgid "NITRIC OXIDE, COMPRESSED"
-msgstr ""
+msgstr "OSSIDO NITRICO, COMPRESSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3273
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3273_1L
 msgid "NITRILES, FLAMMABLE, TOXIC, N.O.S."
-msgstr ""
+msgstr "NITRILI, INFIAMMABILE, TOSSICO, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3276
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3276_100ml
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3276_5L
 msgid "NITRILES, LIQUID, TOXIC, N.O.S."
-msgstr ""
+msgstr "NITRILI, LIQUIDI, TOSSICI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3439
@@ -8620,33 +8629,33 @@ msgstr "NITRILES, SOLIDO, TOXIC, N.O.S."
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3275
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3275_100ml
 msgid "NITRILES, TOXIC, FLAMMABLE, N.O.S."
-msgstr ""
+msgstr "NITRILI, TOSSICI, INFIAMMABILI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3219_1L
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3219_5L
 msgid "NITRITES, INORGANIC, AQUEOUS SOLUTION, N.O.S."
-msgstr ""
+msgstr "NITRITI, INORGANICI, SOLUZIONE ACQUOSA, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2627
 msgid "NITRITES, INORGANIC, N.O.S."
-msgstr ""
+msgstr "NITRITI INORGANICI, N.A.S."
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0147
 msgid "NITRO UREA"
-msgstr ""
+msgstr "NITROUREA"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1661
 msgid "NITROANILINES (o-, m-, p-)"
-msgstr ""
+msgstr "NITROANILINE (o-, m-, p-)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2730
 msgid "NITROANISOLES, LIQUID"
-msgstr ""
+msgstr "NITROANISOLI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3458
@@ -8656,17 +8665,17 @@ msgstr "NITROANISOLES, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1662
 msgid "NITROBENZENE"
-msgstr ""
+msgstr "NITROBENZENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2305
 msgid "NITROBENZENE-SULPHONIC ACID"
-msgstr ""
+msgstr "ACIDO NITROBENZENE-SOLFONICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2306
 msgid "NITROBENZO-TRIFLUORIDES, LIQUID"
-msgstr ""
+msgstr "NITROBENZO-TRIFLUORURI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3431
@@ -8676,7 +8685,7 @@ msgstr "NITROBENZO-TRIFLUORIDES, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2732
 msgid "NITROBROMOBENZENES, LIQUID"
-msgstr ""
+msgstr "NITROBROMOBENZENI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3459
@@ -8689,6 +8698,8 @@ msgid ""
 "NITROCELLULOSE MEMBRANE FILTERS, with not more than 12.6% nitrogen, by dry "
 "mass"
 msgstr ""
+"FILTRI A MEMBRANA DI NITROCELLULOSA, con non più del 12,6% di azoto, in "
+"massa secca"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2059_D_3_198/531_5L_P001/IBC03/LP01/R001_3
@@ -8697,6 +8708,8 @@ msgid ""
 "NITROCELLULOSE SOLUTION, FLAMMABLE with not more than 12.6% nitrogen, by dry "
 "mass, and not more than 55% nitrocellulose"
 msgstr ""
+"SOLUZIONE DI NITROCELLULOSA, INFIAMMABILE con non più del 12,6% di azoto, in "
+"massa secca, e non più del 55% di nitrocellulosa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2059_D_3_198/531/640C_1L_P001/IBC02_2
@@ -8705,6 +8718,9 @@ msgid ""
 "mass, and not more than 55% nitrocellulose (vapour pressure at 50 °C more "
 "than 110 kPa)"
 msgstr ""
+"SOLUZIONE DI NITROCELLULOSA, INFIAMMABILE con non più del 12,6% di azoto, in "
+"massa secca, e non più del 55% di nitrocellulosa (pressione di vapore a 50 °"
+"C superiore a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2059_D_3_198/531/640D_1L_P001/IBC02/R001_2
@@ -8713,6 +8729,9 @@ msgid ""
 "mass, and not more than 55% nitrocellulose (vapour pressure at 50 °C not "
 "more than 110 kPa)"
 msgstr ""
+"SOLUZIONE DI NITROCELLULOSA, INFIAMMABILE con non più del 12,6% di azoto, in "
+"massa secca, e non più del 55% di nitrocellulosa (pressione di vapore a 50 °"
+"C non superiore a 110 kPa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2556
@@ -8720,11 +8739,13 @@ msgid ""
 "NITROCELLULOSE WITH ALCOHOL (not less than 25% alcohol, by mass, and not "
 "more than 12.6% nitrogen, by dry mass)"
 msgstr ""
+"NITROCELLULOSA CON ALCOOL (non meno del 25% di alcol, in massa, e non più "
+"del 12,6% di azoto, in massa secca)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2555
 msgid "NITROCELLULOSE WITH WATER (not less than 25% water, by mass)"
-msgstr ""
+msgstr "NITROCELLULOSA CON ACQUA (non meno del 25% di acqua, in massa)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0343
@@ -8732,17 +8753,21 @@ msgid ""
 "NITROCELLULOSE, PLASTICIZED with not less than 18% plasticizing substance, "
 "by mass"
 msgstr ""
+"NITROCELLULOSA, PLASTIFICATA con non meno del 18% di sostanza plastificante, "
+"in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0342
 msgid "NITROCELLULOSE, WETTED with not less than 25% alcohol, by mass"
-msgstr ""
+msgstr "NITROCELLULOSA, UMIDIFICATA con almeno il 25% in massa di alcol"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0340
 msgid ""
 "NITROCELLULOSE, dry or wetted with less than 25% water (or alcohol), by mass"
 msgstr ""
+"NITROCELLULOSA, secca o umidificata con meno del 25% di acqua (o alcool), in "
+"massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0341
@@ -8750,6 +8775,8 @@ msgid ""
 "NITROCELLULOSE, unmodified or plasticized with less than 18% plasticizing "
 "substance, by mass"
 msgstr ""
+"NITROCELLULOSA, non modificata o plastificata con meno del 18% di sostanza "
+"plastificante, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2557
@@ -8757,11 +8784,13 @@ msgid ""
 "NITROCELLULOSE, with not more than 12.6% nitrogen, by dry mass, MIXTURE WITH "
 "or WITHOUT PLASTICIZER, WITH or WITHOUT PIGMENT"
 msgstr ""
+"NITROCELLULOSA, con non più del 12,6% di azoto, sulla massa secca, MISCELA "
+"CON o SENZA PLASTIFICANTE, CON o SENZA PIGMENTE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3434
 msgid "NITROCRESOLS, LIQUID"
-msgstr ""
+msgstr "NITROCRESOLI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2446
@@ -8776,22 +8805,22 @@ msgstr "NITROETANO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2451
 msgid "NITROGEN TRIFLUORIDE"
-msgstr ""
+msgstr "TRIFLUORURO DI AZOTO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2421
 msgid "NITROGEN TRIOXIDE"
-msgstr ""
+msgstr "TRIOSSIDO DI AZOTO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1066
 msgid "NITROGEN, COMPRESSED"
-msgstr ""
+msgstr "AZOTO COMPRESSO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1977
 msgid "NITROGEN, REFRIGERATED LIQUID"
-msgstr ""
+msgstr "AZOTO, LIQUIDO REFRIGERATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3343
@@ -8799,6 +8828,8 @@ msgid ""
 "NITROGLYCERIN MIXTURE, DESENSITIZED, LIQUID, FLAMMABLE, N.O.S. with not more "
 "than 30% nitroglycerin, by mass"
 msgstr ""
+"MISCELA DI NITROGLICERINA, DESENSIBILIZZATA, LIQUIDA, INFIAMMABILE, N.A.S. "
+"con non più del 30% di nitroglicerina, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3357
@@ -8806,6 +8837,8 @@ msgid ""
 "NITROGLYCERIN MIXTURE, DESENSITIZED, LIQUID, N.O.S. with not more than 30% "
 "nitroglycerin, by mass"
 msgstr ""
+"MISCELA DI NITROGLICERINA, DESENSIBILIZZATA, LIQUIDA, N.A.S. con non più del "
+"30% di nitroglicerina, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3319
@@ -8822,11 +8855,14 @@ msgid ""
 "NITROGLYCERIN SOLUTION IN ALCOHOL with more than 1% but not more than 10% "
 "nitroglycerin"
 msgstr ""
+"SOLUZIONE DI NITROGLICERINA IN ALCOOL con più dell'1% ma non più del 10% di "
+"nitroglicerina"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1204
 msgid "NITROGLYCERIN SOLUTION IN ALCOHOL with not more than 1% nitroglycerin"
 msgstr ""
+"SOLUZIONE DI NITROGLICERINA IN ALCOOL con non più dell'1% di nitroglicerina"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0143
@@ -8834,6 +8870,8 @@ msgid ""
 "NITROGLYCERIN, DESENSITIZED with not less than 40% non-volatile water-"
 "insoluble phlegmatizer, by mass"
 msgstr ""
+"NITROGLICERINA, DESENSIBILIZZATA con non meno del 40% in massa di "
+"flemmatizzante non volatile insolubile in acqua"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3064
@@ -8841,62 +8879,66 @@ msgid ""
 "NITROGLYCERIN, SOLUTION IN ALCOHOL with more than 1% but not more than 5% "
 "nitroglycerin"
 msgstr ""
+"NITROGLICERINA, SOLUZIONE IN ALCOOL con più dell'1% ma non più del 5% di "
+"nitroglicerina"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1336
 msgid "NITROGUANIDINE (PICRITE), WETTED with not less than 20% water, by mass"
-msgstr ""
+msgstr "NITROGUANIDINA (PICRITE), BAGNATA con almeno il 20% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0282
 msgid ""
 "NITROGUANIDINE (PICRITE), dry or wetted with less than 20% water, by mass"
 msgstr ""
+"NITROGUANIDINA (PICRITE), secca o umidificata con meno del 20% di acqua, in "
+"massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1798
 msgid "NITROHYDROCHLORIC ACID"
-msgstr ""
+msgstr "ACIDO NITROCLORIDRICO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1261
 msgid "NITROMETHANE"
-msgstr ""
+msgstr "NITROMETANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2538
 msgid "NITRONAPHTHALENE"
-msgstr ""
+msgstr "NITRONAFTALENE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1663
 msgid "NITROPHENOLS (o-, m-, p-)"
-msgstr ""
+msgstr "NITROFENOLI (o-, m-, p-)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2608
 msgid "NITROPROPANES"
-msgstr ""
+msgstr "NITROPROPANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1337
 msgid "NITROSTARCH, WETTED with not less than 20% water, by mass"
-msgstr ""
+msgstr "NITROSTARCH, BAGNATO con almeno il 20% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0146
 msgid "NITROSTARCH, dry or wetted with less than 20% water, by mass"
-msgstr ""
+msgstr "NITROSTARCH, secco o umidificato con meno del 20% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1069
 msgid "NITROSYL CHLORIDE"
-msgstr ""
+msgstr "CLORURO DI NITROSILE"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2308
 msgid "NITROSYLSULPHURIC ACID, LIQUID"
-msgstr ""
+msgstr "ACIDO NITROSILSOLFORICO, LIQUIDO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3456
@@ -8906,7 +8948,7 @@ msgstr "NITROSYLSULPHURIC ACID, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1664
 msgid "NITROTOLUENES, LIQUID"
-msgstr ""
+msgstr "NITROTOLUENI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3446
@@ -8916,27 +8958,27 @@ msgstr "NITROTOLUENES, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2660
 msgid "NITROTOLUIDINES (MONO)"
-msgstr ""
+msgstr "NITROTOLUIDINE (MONO)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0490
 msgid "NITROTRIAZOLONE (NTO)"
-msgstr ""
+msgstr "NITROTRIAZOLONE (NTO)"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1070
 msgid "NITROUS OXIDE"
-msgstr ""
+msgstr "OSSIDO DI AZOTO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2201
 msgid "NITROUS OXIDE, REFRIGERATED LIQUID"
-msgstr ""
+msgstr "PROTOSSIDO DI AZOTO, LIQUIDO REFRIGERATO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1665
 msgid "NITROXYLENES, LIQUID"
-msgstr ""
+msgstr "NITROXILENI, LIQUIDI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_3447
@@ -8946,48 +8988,48 @@ msgstr "NITROXYLENES, SOLIDO"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1920
 msgid "NONANES"
-msgstr ""
+msgstr "NONANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1799
 msgid "NONYLTRICHLOROSILANE"
-msgstr ""
+msgstr "NONILTRICLOROSILANO"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_class__name
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_label__name
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_packing_instruction__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields,field_description:l10n_eu_product_adr.field_adr_goods__name
 #: model_terms:ir.ui.view,arch_db:l10n_eu_product_adr.adr_goods_view_form
 #: model_terms:ir.ui.view,arch_db:l10n_eu_product_adr.product_template_form_view
 msgid "Name and description"
-msgstr ""
+msgstr "Nome e descrizione"
 
 #. module: l10n_eu_product_adr
 #: model:adr.class,name:l10n_eu_product_adr.adr_class_2_2
 #: model:adr.label,name:l10n_eu_product_adr.adr_label_2_2
 msgid "Non-toxic and non-flammable gases"
-msgstr ""
+msgstr "Gas non tossici e non infiammabili"
 
 #. module: l10n_eu_product_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__transport_category__not_subject_to_adr
 #: model:ir.model.fields.selection,name:l10n_eu_product_adr.selection__adr_goods__tunnel_restriction_code__not_subject_to_adr
 msgid "Not subject to ADR"
-msgstr ""
+msgstr "Non soggetto ad ADR"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1800
 msgid "OCTADECYLTRICHLORO-SILANE"
-msgstr ""
+msgstr "OCTADECILTRICLORO-SILANO"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2309
 msgid "OCTADIENES"
-msgstr ""
+msgstr "OTTADIENI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_2422
@@ -9007,12 +9049,12 @@ msgstr "OCTAFLUOROPROPANE (GAS REFRIGERANTE R 218)"
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_1262
 msgid "OCTANES"
-msgstr ""
+msgstr "OTTANI"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0266
 msgid "OCTOLITE (OCTOL), dry or wetted with less than 15% water, by mass"
-msgstr ""
+msgstr "OCTOLIT (OCTOL), secco o inumidito con meno del 15% di acqua, in massa"
 
 #. module: l10n_eu_product_adr
 #: model:adr.goods,name:l10n_eu_product_adr.adr_goods_0496
