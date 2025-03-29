@@ -153,13 +153,13 @@ class SaleReportDeliverd(models.Model):
             END AS signed_qty,
             (CASE
                 WHEN t.type IN ('product', 'consu')
-                THEN COALESCE(-svl.quantity, sm.product_uom_qty, 0.0)
+                THEN ABS(COALESCE(-svl.quantity, sm.quantity_done, 0.0))
                 ELSE sol.product_uom_qty END
             ) / u.factor * u2.factor as unsigned_product_uom_qty,
-            ROUND(COALESCE(
+            ROUND(ABS(COALESCE(
                 -svl.quantity * sol.price_reduce,
-                sm.product_uom_qty * sol.price_reduce,
-                sol.price_subtotal) /
+                sm.quantity_done * sol.price_reduce,
+                sol.price_subtotal)) /
                 CASE COALESCE(s.currency_rate, 0)
                     WHEN 0 THEN 1.0 ELSE s.currency_rate END, cur.decimal_places)
                      as unsigned_price_subtotal,
@@ -181,8 +181,8 @@ class SaleReportDeliverd(models.Model):
             partner.country_id as country_id,
             partner.industry_id as industry_id,
             partner.commercial_partner_id as commercial_partner_id,
-            p.weight * sm.product_uom_qty / u.factor * u2.factor as weight,
-            p.volume * sm.product_uom_qty / u.factor * u2.factor as volume,
+            p.weight * sm.quantity_done / u.factor * u2.factor as weight,
+            p.volume * sm.quantity_done / u.factor * u2.factor as volume,
             s.id as order_id,
             sp.id as picking_id,
             sol.purchase_price AS unsigned_purchase_price,
@@ -247,7 +247,9 @@ class SaleReportDeliverd(models.Model):
     def _where(self):
         """Where clause with only done mvoes or without state"""
         return """
-            WHERE (sm.state = 'done' OR sm.state IS NULL) AND ({sub_where})
+            WHERE (sm.quantity_done <> 0.0) AND
+            (sm.state = 'done' OR sm.state IS NULL) AND
+            ({sub_where})
         """.format(
             sub_where=self._sub_where()
         )

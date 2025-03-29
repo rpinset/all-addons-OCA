@@ -10,12 +10,12 @@ class MailThread(models.AbstractModel):
 
     def message_post_with_template(self, template_id, **kwargs):
         template = self.env["mail.template"].browse(template_id)
-        old_report = False
         if template and template.report_template and self.ids:
             active_ids = self.ids
-            old_report = template.report_template
-            template.report_template = old_report.get_substitution_report(active_ids)
-        res = super().message_post_with_template(template_id, **kwargs)
-        if old_report:
-            template.report_template = old_report
-        return res
+            report_template = template.report_template.get_substitution_report(
+                active_ids
+            )
+            return super(
+                MailThread, self.with_context(default_report_template=report_template)
+            ).message_post_with_template(template_id, **kwargs)
+        return super().message_post_with_template(template_id, **kwargs)

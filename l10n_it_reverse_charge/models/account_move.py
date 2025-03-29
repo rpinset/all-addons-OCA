@@ -95,11 +95,13 @@ class AccountMove(models.Model):
         else:
             move_type = "out_refund"
         supplier = self.partner_id
+        reference_date = self.invoice_date
         original_invoice = self.search(
             [("rc_self_purchase_invoice_id", "=", self.id)], limit=1
         )
         if original_invoice:
             supplier = original_invoice.partner_id
+            reference_date = original_invoice.invoice_date
 
         narration = _(
             "Reverse charge self invoice.\n"
@@ -109,7 +111,7 @@ class AccountMove(models.Model):
             "Internal reference: %(internal_reference)s",
             supplier=supplier.display_name,
             reference=self.invoice_origin or self.ref or "",
-            date=self.date,
+            date=reference_date,
             internal_reference=self.name,
         )
         return {
@@ -469,7 +471,7 @@ class AccountMove(models.Model):
         supplier_invoice_vals["partner_bank_id"] = None
         # because this field has copy=False
         supplier_invoice_vals["date"] = self.date
-        supplier_invoice_vals["invoice_date"] = self.date
+        supplier_invoice_vals["invoice_date"] = self.invoice_date
         supplier_invoice_vals["invoice_origin"] = self.ref or self.name
         supplier_invoice_vals["partner_id"] = rc_type.partner_id.id
         supplier_invoice_vals["journal_id"] = rc_type.supplier_journal_id.id
