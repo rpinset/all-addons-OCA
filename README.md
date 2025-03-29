@@ -105,20 +105,26 @@ Date:   Tue Mar 4 09:04:22 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit fd8cd35e70b054f4b7176051191ac4b02a67c48c
+commit ac4ba85d9384c926acf8d77f13d91e19d545fc46
+Merge: fd8cd35e7 d6803d412
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 21 10:14:56 2025 +0000
+Date:   Thu Mar 27 08:03:44 2025 +0000
 
-    [BOT] post-merge updates
+    Merge PR #1952 into 15.0
+    
+    Signed-off-by AaronHForgeFlow
 
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit e370d1f92a557321e192eb25c5a8d6a9cce516aa
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 1 17:46:09 2024 +0000
+commit d79102d14a7487b2c090bb38b28bb65d5e733e28
+Merge: e370d1f9 7e693861
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Mar 28 07:25:48 2025 +0000
 
-    [IMP] update dotfiles
+    Merge PR #507 into 15.0
+    
+    Signed-off-by dreispt
 
 
 ## operating-unit
@@ -468,9 +474,9 @@ Date:   Thu Feb 20 12:56:06 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 7047b5aa64972b92db091ae757bdb951873be49f
+commit 46ca24437c9abb0b79491044803a51410f9e1c80
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 24 15:08:25 2025 +0000
+Date:   Wed Mar 26 09:44:21 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1090,16 +1096,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 2e9afb01f3945308e507c986738d9dca92394dcb
+commit 04aeda7aca35e7a2abf438a6dddef9574a5b4988
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 11 15:13:30 2025 +0000
+Date:   Wed Mar 26 08:41:53 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 76.9% (10 of 13 strings)
+    Currently translated at 100.0% (20 of 20 strings)
     
-    Translation: manufacture-15.0/manufacture-15.0-mrp_sale_info
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_sale_info/it/
+    Translation: manufacture-15.0/manufacture-15.0-mrp_workcenter_category
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_workcenter_category/it/
 
 
 ## manufacture-reporting
