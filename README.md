@@ -1407,11 +1407,11 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 2e2218889fb9985eaa0dfe249dac10b515f41818
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:03:24 2025 +0000
+commit ddc96638ebda4851cb16119dc99f8a8523a94b0a
+Author: ductdm <duc.tdm@komit-consulting.com>
+Date:   Fri Mar 28 09:24:29 2025 +0000
 
-    [IMP] update dotfiles
+    Added translation using Weblate (Vietnamese (vi_VN))
 
 
 ## community-data-files
