@@ -72,8 +72,16 @@ class ProductPricelistPrint(models.TransientModel):
         help="If this field is not 0, products are grouped at max level "
         "of category tree.",
     )
+    last_categ_level_to_print = fields.Integer(
+        help="If this field is not 0, print last n category path",
+    )
+    breakage_per_category = fields.Boolean(default=True)
     lang = fields.Selection(
         _lang_get, string="Language", default=lambda self: self.env.user.lang
+    )
+    product_selling_date_threshold = fields.Datetime(
+        string="Selling date threshold",
+        help="Filter only the products ordered since this date",
     )
 
     product_price = fields.Float(compute="_compute_product_price")
@@ -268,10 +276,15 @@ class ProductPricelistPrint(models.TransientModel):
 
     @api.model
     def _get_sale_order_domain(self, partner):
-        return [
+        domain = [
             ("state", "not in", ["draft", "sent", "cancel"]),
             ("partner_id", "child_of", partner.id),
         ]
+        if self.product_selling_date_threshold:
+            domain = expression.AND(
+                [domain, [("date_order", ">=", self.product_selling_date_threshold)]]
+            )
+        return domain
 
     def get_last_ordered_products_to_print(self):
         self.ensure_one()
@@ -283,7 +296,10 @@ class ProductPricelistPrint(models.TransientModel):
         )
         orders = orders.sorted(key=lambda r: r.date_order, reverse=True)
         products = orders.mapped("order_line").mapped("product_id")
-        return products[: self.last_ordered_products]
+        if self.last_ordered_products:
+            return products[: self.last_ordered_products]
+        else:
+            return products
 
     def get_pricelist_to_print(self):
         self.ensure_one()
@@ -346,7 +362,7 @@ class ProductPricelistPrint(models.TransientModel):
 
     def get_products_to_print(self):
         self.ensure_one()
-        if self.last_ordered_products:
+        if self.last_ordered_products or self.product_selling_date_threshold:
             products = self.get_last_ordered_products_to_print()
         else:
             if self.show_variants:
@@ -360,6 +376,8 @@ class ProductPricelistPrint(models.TransientModel):
         return products
 
     def get_group_key(self, product):
+        if not self.breakage_per_category:
+            return _("Products")
         group_field = getattr(product, self.group_field)
         complete_name = getattr(group_field, "complete_name", group_field.name) or _(
             "Undefined"
@@ -392,3 +410,9 @@ class ProductPricelistPrint(models.TransientModel):
                 }
             )
         return group_list
+
+    def get_group_name(self, group_name):
+        if self.last_categ_level_to_print and group_name:
+            return "/".join(group_name.split("/")[-self.last_categ_level_to_print :])
+        else:
+            return group_name
