@@ -19,7 +19,7 @@ class SaleOrderLine(models.Model):
     )
     price_total_no_discount = fields.Monetary(
         compute='_compute_amount',
-        string='Subtotal Without Discount',
+        string='Total Without Discount',
         store=True)
 
     def _compute_discount(self):

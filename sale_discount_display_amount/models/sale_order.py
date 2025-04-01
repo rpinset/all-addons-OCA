@@ -21,7 +21,7 @@ class SaleOrder(models.Model):
     )
     price_total_no_discount = fields.Monetary(
         compute='_compute_discount_total',
-        string='Subtotal Without Discount',
+        string='Total Without Discount',
         currency_field='currency_id',
         store=True)
 

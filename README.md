@@ -384,16 +384,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c665d11a4c36242ab0e989c22eb1e457b8747d7f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 3 08:30:37 2025 +0000
+commit 5d3a913c527370d850da6990820185451d88d9a9
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Mar 31 09:08:16 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_order_line_price_history
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_order_line_price_history/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_discount_display_amount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_discount_display_amount/
 
 
 ## crm
