@@ -289,6 +289,7 @@ class WizardImportFatturapa(models.TransientModel):
                 ),
                 "eori_code": DatiAnagrafici.Anagrafica.CodEORI or "",
                 "country_id": country_id,
+                "company_id": self.env.company.id,
             }
             if DatiAnagrafici.Anagrafica.Nome:
                 vals["firstname"] = DatiAnagrafici.Anagrafica.Nome

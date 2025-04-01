@@ -4,7 +4,7 @@
 {
     "name": "PMS (Property Management System)",
     "summary": "A property management system",
-    "version": "14.0.3.50.0",
+    "version": "14.0.3.51.0",
     "development_status": "Beta",
     "category": "Generic Modules/Property Management System",
     "website": "https://github.com/OCA/pms",
@@ -18,7 +18,7 @@
         "mail",
         # "account_payment_return",
         # "email_template_qweb",
-        "sale",
+        "sales_team",
         "multi_pms_properties",
         "partner_firstname",
         "partner_second_lastname",
@@ -30,6 +30,7 @@
         "queue_job",
         "web_timeline",
         "partner_identification",
+        "sale",
     ],
     "data": [
         "security/pms_security.xml",
