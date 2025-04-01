@@ -108,7 +108,11 @@ class SaleOrder(models.Model):
 
         if new_fsm_sol:
             fsm_by_sale = self.env["fsm.order"].search(
-                [("sale_id", "=", self.id), ("sale_line_id", "=", False)]
+                [
+                    ("sale_id", "=", self.id),
+                    ("sale_line_id", "=", False),
+                    ("is_closed", "=", False),
+                ]
             )
             if not fsm_by_sale:
                 templates = new_fsm_sol.product_id.fsm_order_template_id
@@ -149,15 +153,15 @@ class SaleOrder(models.Model):
 
         # Process lines set to FSM Sale
         new_fsm_sale_sol = self.order_line.filtered(
-            lambda L: L.product_id.field_service_tracking == "sale"
-            and not L.fsm_order_id
+            lambda x: x.product_id.field_service_tracking == "sale"
+            and (not x.fsm_order_id or x.fsm_order_id.is_closed)
         )
         new_fsm_orders |= self._field_service_generate_sale_fsm_orders(new_fsm_sale_sol)
 
         # Create new FSM Order for lines set to FSM Line
         new_fsm_line_sol = self.order_line.filtered(
-            lambda L: L.product_id.field_service_tracking == "line"
-            and not L.fsm_order_id
+            lambda x: x.product_id.field_service_tracking == "line"
+            and (not x.fsm_order_id or x.fsm_order_id.is_closed)
         )
 
         new_fsm_orders |= self._field_service_generate_line_fsm_orders(new_fsm_line_sol)
@@ -187,20 +191,16 @@ class SaleOrder(models.Model):
         Post messages to the Sale Order and the newly created FSM Orders
         """
         self.ensure_one()
-        msg_fsm_links = ""
         for fsm_order in fsm_orders:
-            fsm_order.message_mail_with_source(
+            fsm_order.message_post_with_source(
                 "mail.message_origin_link",
                 render_values={"self": fsm_order, "origin": self},
-                subtype_id=self.env.ref("mail.mt_note").id,
-                author_id=self.env.user.partner_id.id,
+                subtype_xmlid="mail.mt_note",
             )
-            msg_fsm_links += (
-                " <a href=# data-oe-model=fsm.order data-oe-id={}>{}</a>,".format(
-                    fsm_order.id, fsm_order.name
-                )
-            )
-        so_msg_body = _("Field Service Order(s) Created: %s", msg_fsm_links)
+        so_msg_body = _(
+            "Field Service Order(s) Created: %s",
+            fsm_order._get_html_link(title=fsm_order.name),
+        )
         self.message_post(body=so_msg_body[:-1])
 
     def _action_confirm(self):
@@ -230,3 +230,10 @@ class SaleOrder(models.Model):
         else:
             action = {"type": "ir.actions.act_window_close"}
         return action
+
+    def _action_cancel(self):
+        res = super()._action_cancel()
+
+        [fsm_order.action_cancel() for fsm_order in self.mapped("fsm_order_ids")]
+
+        return res

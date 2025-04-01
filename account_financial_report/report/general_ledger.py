@@ -20,7 +20,8 @@ class GeneralLedgerReport(models.AbstractModel):
         analytic_accounts = self.env["account.analytic.account"].browse(account_ids)
         analytic_data = {}
         for account in analytic_accounts:
-            analytic_data.update({account.id: {"name": account.name}})
+            name = f"[{account.code}] {account.name}" if account.code else account.name
+            analytic_data.update({account.id: {"name": name}})
         return analytic_data
 
     def _get_taxes_data(self, taxes_ids):

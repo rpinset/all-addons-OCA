@@ -44,6 +44,17 @@ msgid "Config Settings"
 msgstr ""
 
 #. module: sale_partner_address_restrict
+#: model:ir.model,name:sale_partner_address_restrict.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: sale_partner_address_restrict
+#: model:ir.model.fields,field_description:sale_partner_address_restrict.field_res_partner__is_dropship_address
+#: model:ir.model.fields,field_description:sale_partner_address_restrict.field_res_users__is_dropship_address
+msgid "Dropship Address"
+msgstr ""
+
+#. module: sale_partner_address_restrict
 #. odoo-python
 #: code:addons/sale_partner_address_restrict/models/sale_order.py:0
 #, python-format

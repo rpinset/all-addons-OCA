@@ -286,7 +286,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.6.4 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.6.6 |  | OCA Financial Reports
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Account Sale Stock Report Non Billed
 [account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
@@ -919,7 +919,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_in_payment](account_in_payment/) | 17.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
-[account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.3 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
+[account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
 [account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.7 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
@@ -1173,6 +1173,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_import_async](base_import_async/) | 17.0.1.0.0 |  | Import CSV files in the background
 [queue_job](queue_job/) | 17.0.1.3.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_cron](queue_job_cron/) | 17.0.1.0.0 |  | Scheduled Actions as Queue Jobs
 [queue_job_cron_jobrunner](queue_job_cron_jobrunner/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Run jobs without a dedicated JobRunner
@@ -1726,7 +1727,7 @@ addon | version | maintainers | summary
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.1 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
-[sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.0.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
+[sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_pricelist_global_rule](sale_pricelist_global_rule/) | 17.0.1.0.0 |  | Apply a global rule to all sale order
@@ -1740,7 +1741,7 @@ addon | version | maintainers | summary
 [sale_start_end_dates](sale_start_end_dates/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 17.0.1.0.0 |  | Sale Stock Cancel Restriction
 [sale_stock_delivery_state](sale_stock_delivery_state/) | 17.0.1.0.0 |  | Change the way to compute the delivery state
-[sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.1.0 |  | Allow you to block the creation of deliveries from a sale order.
+[sale_stock_picking_blocking](sale_stock_picking_blocking/) | 17.0.1.1.1 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add picking note in sale and purchase order
 [sale_substate](sale_substate/) | 17.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 17.0.1.1.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
@@ -2488,7 +2489,7 @@ addon | version | maintainers | summary
 [fieldservice_calendar](fieldservice_calendar/) | 17.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 17.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
 [fieldservice_equipment_stock](fieldservice_equipment_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
-[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.0.2 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
+[fieldservice_geoengine](fieldservice_geoengine/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
 [fieldservice_isp_flow](fieldservice_isp_flow/) | 17.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
 [fieldservice_kanban_info](fieldservice_kanban_info/) | 17.0.1.0.0 | [![ppyczko](https://github.com/ppyczko.png?size=30px)](https://github.com/ppyczko) | Display key service information on Field Service Kanban cards.
 [fieldservice_portal](fieldservice_portal/) | 17.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Bridge module between fieldservice and portal.
@@ -2497,15 +2498,15 @@ addon | version | maintainers | summary
 [fieldservice_repair](fieldservice_repair/) | 17.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
 [fieldservice_repair_order_template](fieldservice_repair_order_template/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Use Repair Order Templates when creating a repair orders
 [fieldservice_route](fieldservice_route/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
-[fieldservice_sale](fieldservice_sale/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
+[fieldservice_sale](fieldservice_sale/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
 [fieldservice_sale_agreement](fieldservice_sale_agreement/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements
 [fieldservice_sale_agreement_equipment_stock](fieldservice_sale_agreement_equipment_stock/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrate Field Service with Sale Agreements and Stock Equipment
 [fieldservice_sale_recurring](fieldservice_sale_recurring/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
-[fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
+[fieldservice_sale_stock](fieldservice_sale_stock/) | 17.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 17.0.1.3.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
-[fieldservice_stock](fieldservice_stock/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
+[fieldservice_stock](fieldservice_stock/) | 17.0.1.1.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
 [fieldservice_stock_request](fieldservice_stock_request/) | 17.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate Stock Requests with Field Service Orders
 [fieldservice_vehicle](fieldservice_vehicle/) | 17.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
 
@@ -2800,11 +2801,11 @@ addon | version | maintainers | summary
 [hr_employee_age](hr_employee_age/) | 17.0.1.0.0 |  | Age field for employee
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 17.0.1.0.3 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
 [hr_employee_document](hr_employee_document/) | 17.0.1.0.1 |  | Documents attached to the employee profile
-[hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.1 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
+[hr_employee_firstname](hr_employee_firstname/) | 17.0.1.0.2 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
 [hr_employee_partner_external](hr_employee_partner_external/) | 17.0.1.0.0 |  | Associate an external Partner to Employee
 [hr_employee_ppe](hr_employee_ppe/) | 17.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![eduaparicio](https://github.com/eduaparicio.png?size=30px)](https://github.com/eduaparicio) | Personal Protective Equipment (PPE) Management
 [hr_employee_relative](hr_employee_relative/) | 17.0.1.0.0 |  | Allows storing information about employee's family
-[hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.1 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
+[hr_employee_second_lastname](hr_employee_second_lastname/) | 17.0.1.0.2 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_employee_ssn](hr_employee_ssn/) | 17.0.1.0.0 |  | View/edit employee's SIN field
 [hr_job_category](hr_job_category/) | 17.0.1.0.1 |  | Adds tags to employee through contract and job position
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 17.0.1.0.0 |  | This addon allows to manage employee personal equipment
@@ -3808,6 +3809,7 @@ addon | version | maintainers | summary
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Check validity of Social Security Numbers in French companies
 [l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | EMEBI (ex-DEB) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
+[l10n_fr_mis_reports](l10n_fr_mis_reports/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | MIS Report templates for the French P&L and Balance Sheets
 [l10n_fr_pos_caisse_ap_ip](l10n_fr_pos_caisse_ap_ip/) | 17.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add support for Caisse-AP payment protocol used in France
 [l10n_fr_siret](l10n_fr_siret/) | 17.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
 [l10n_fr_state](l10n_fr_state/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Populate Database with French States (Régions)
@@ -5970,7 +5972,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
 [procurement_purchase_requisition_generation](procurement_purchase_requisition_generation/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Procurement Purchase Requisition Generation
-[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.4.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
+[purchase_advance_payment](purchase_advance_payment/) | 17.0.1.4.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_blanket_order](purchase_blanket_order/) | 17.0.1.0.0 |  | Purchase Blanket Orders
@@ -5986,7 +5988,7 @@ addon | version | maintainers | summary
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
 [purchase_manual_currency](purchase_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Purchase
-[purchase_manual_delivery](purchase_manual_delivery/) | 17.0.1.0.0 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
+[purchase_manual_delivery](purchase_manual_delivery/) | 17.0.1.0.1 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_mass_mail](purchase_mass_mail/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Automatically send massive emails to many purchase orders
 [purchase_no_rfq](purchase_no_rfq/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
 [purchase_open_qty](purchase_open_qty/) | 17.0.2.0.0 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
@@ -6006,6 +6008,7 @@ addon | version | maintainers | summary
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 17.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
 [purchase_security](purchase_security/) | 17.0.1.0.1 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | See only your purchase orders
+[purchase_stock_manual_currency](purchase_stock_manual_currency/) | 17.0.1.0.0 |  | Extends manual currency from purchase to stock moves
 [purchase_tag](purchase_tag/) | 17.0.1.1.1 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
@@ -7057,6 +7060,7 @@ addon | version | maintainers | summary
 [server_action_logging](server_action_logging/) | 17.0.1.0.0 |  | Module that provides a logging mechanism for server actions
 [session_db](session_db/) | 17.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [tracking_manager](tracking_manager/) | 17.0.1.0.8 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
+[tracking_manager_domain](tracking_manager_domain/) | 17.0.1.0.0 | [![CRogos](https://github.com/CRogos.png?size=30px)](https://github.com/CRogos) | This module extends the tracking manager to allow to define a domain on fields to track changes only when certain conditions apply.
 [upgrade_analysis](upgrade_analysis/) | 17.0.1.0.4 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
 
@@ -7124,6 +7128,7 @@ addon | version | maintainers | summary
 [auth_signup_verify_email](auth_signup_verify_email/) | 17.0.1.0.0 |  | Force uninvited users to use a good email for signup
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 17.0.1.0.0 |  | Makes the user login field case insensitive
 [impersonate_login](impersonate_login/) | 17.0.1.0.2 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | tools
+[password_security](password_security/) | 17.0.2.0.0 |  | Allow admin to set password security requirements.
 [user_log_view](user_log_view/) | 17.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
 [users_ldap_populate](users_ldap_populate/) | 17.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | LDAP Populate
 

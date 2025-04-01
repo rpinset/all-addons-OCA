@@ -157,13 +157,10 @@ msgstr ""
 "Impostare un motivo per bloccare in modo predefinito le consegne per gli "
 "ordini di vendita con questi termini di pagamento."
 
-#. module: sale_stock_picking_blocking
-#. odoo-python
-#: code:addons/sale_stock_picking_blocking/models/sale_order.py:0
 #, python-format
-msgid "You cannot block a sale order with \"auto_done_setting\" active."
-msgstr ""
-"Non si può bloccare un ordine di vendita con \"auto_done_setting\" attivo."
+#~ msgid "You cannot block a sale order with \"auto_done_setting\" active."
+#~ msgstr ""
+#~ "Non si può bloccare un ordine di vendita con \"auto_done_setting\" attivo."
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
