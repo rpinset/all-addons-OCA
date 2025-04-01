@@ -358,11 +358,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ce5ebd1fe7e99e9f13634fceb3150d2f898989e4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 25 07:52:42 2025 +0000
+commit 4e477c7fdf0a734b5529d10f37e2f29e1dc7a928
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Mar 31 08:23:44 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_partner_incoterm
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_partner_incoterm/
 
 
 ## crm
@@ -483,9 +488,9 @@ Date:   Wed Mar 26 09:44:21 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 55f25735df940365fe76a48f1e3a118d5c35e57a
+commit 5baa1d829025bc61c65e35544b0080b113812c01
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 20 07:13:40 2025 +0000
+Date:   Tue Apr 1 13:10:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -740,11 +745,11 @@ Date:   Sun Feb 2 19:18:17 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit defa023a86963e1e26f1662e2cd46f1b84bb49fb
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:19:23 2025 +0000
+commit 5864fe43dbbf32e3a6dd8fa0ab2893738270404f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Mar 31 13:11:48 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -1396,11 +1401,11 @@ Date:   Tue Mar 18 09:48:47 2025 +0000
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit e48065a1a505b359377170c3cd2d2ee062ba2104
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:11:10 2025 +0000
+commit 681ea7da89970e7f34061314428aea606f40544a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Mar 30 16:14:10 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## webhook

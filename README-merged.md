@@ -1884,7 +1884,7 @@ addon | version | maintainers | summary
 [sale_order_type](sale_order_type/) | 15.0.2.1.4 |  | Sale Order Type
 [sale_order_type_quotation_number](sale_order_type_quotation_number/) | 15.0.1.2.0 |  | Use quotation sequence depending on sale type
 [sale_order_warn_message](sale_order_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
-[sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.1.0 |  | Set the customer preferred incoterm on each sales order
+[sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.2.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.4.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Allow to create invoice payments to commercial users without accounting permissions
 [sale_planner_calendar](sale_planner_calendar/) | 15.0.4.0.0 |  | Sale planner calendar
@@ -2771,7 +2771,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 15.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 15.0.1.6.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 15.0.1.7.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 15.0.2.1.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 15.0.1.0.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_account_payment](fieldservice_account_payment/) | 15.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allow workers to collect payments from the order.
@@ -4179,7 +4179,7 @@ addon | version | maintainers | summary
 [l10n_fr_ecotaxe_product](l10n_fr_ecotaxe_product/) | 15.0.1.0.0 |  | Move Ecotax management from templates to products
 [l10n_fr_ecotaxe_sale](l10n_fr_ecotaxe_sale/) | 15.0.1.0.0 |  | Sale Ecotaxe used in French localisation contexte
 [l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 15.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | DEB (Déclaration d'Échange de Biens) for France
-[l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 15.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
+[l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 15.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Module for Intrastat service reporting (DES) for France
 [l10n_fr_siret](l10n_fr_siret/) | 15.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | French company identity numbers SIRET/SIREN/NIC
 [l10n_fr_state](l10n_fr_state/) | 15.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Populate Database with French States (Régions)
 
@@ -8082,7 +8082,7 @@ addon | version | maintainers | summary
 [account_tax_unece](account_tax_unece/) | 15.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | UNECE nomenclature for taxes
 [base_bank_from_iban](base_bank_from_iban/) | 15.0.2.0.2 |  | Bank from IBAN
 [base_currency_iso_4217](base_currency_iso_4217/) | 15.0.1.0.0 |  | Adds numeric code and full name to currencies, following the ISO 4217 specification
-[base_iso3166](base_iso3166/) | 15.0.1.0.3 |  | ISO 3166
+[base_iso3166](base_iso3166/) | 15.0.1.0.4 |  | ISO 3166
 [base_unece](base_unece/) | 15.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for UNECE code lists
 [company_sanitary_registry](company_sanitary_registry/) | 15.0.1.0.1 |  | Sanitary Registry
 [product_fao_fishing](product_fao_fishing/) | 15.0.1.0.2 |  | Set fishing areas and capture technology

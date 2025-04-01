@@ -3,13 +3,13 @@
 
 {
     "name": "Default sales incoterm per partner",
-    "version": "15.0.1.1.0",
+    "version": "15.0.1.2.0",
     "category": "Sales Management",
     "license": "AGPL-3",
     "summary": "Set the customer preferred incoterm on each sales order",
     "author": "Opener B.V.,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-workflow",
     "depends": ["sale_stock"],
-    "data": ["views/res_partner.xml"],
+    "data": ["views/res_partner.xml", "views/sale_order.xml"],
     "installable": True,
 }
