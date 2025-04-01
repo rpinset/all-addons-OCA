@@ -168,6 +168,7 @@ openupgradelib
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
+boto3
 fsspec>=2024.5.0
 paramiko
 python_slugify
@@ -196,6 +197,8 @@ sentry_sdk>=2.0.0,<=2.22.0
 pysaml2
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
+# generated from manifests external_dependencies
+cryptography
 # From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
 # From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
