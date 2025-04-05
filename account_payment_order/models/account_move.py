@@ -3,6 +3,8 @@
 # © 2016 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
+from markupsafe import Markup
+
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
@@ -172,24 +174,23 @@ class AccountMove(models.Model):
                     move.message_post(
                         body=_(
                             "%(count)d payment lines added to the new draft payment "
-                            "order <a href=# data-oe-model=account.payment.order "
-                            "data-oe-id=%(order_id)d>%(name)s</a>, which has been "
-                            "automatically created.",
+                            "order %(payorder_link)s, which has been automatically "
+                            "created.",
                             count=count,
-                            order_id=payorder.id,
-                            name=payorder.name,
+                            payorder_link=Markup(
+                                payorder._get_html_link(title=payorder.name)
+                            ),
                         )
                     )
                 else:
                     move.message_post(
                         body=_(
                             "%(count)d payment lines added to the existing draft "
-                            "payment order "
-                            "<a href=# data-oe-model=account.payment.order "
-                            "data-oe-id=%(order_id)d>%(name)s</a>.",
+                            "payment order %(payorder_link)s.",
                             count=count,
-                            order_id=payorder.id,
-                            name=payorder.name,
+                            payorder_link=Markup(
+                                payorder._get_html_link(title=payorder.name)
+                            ),
                         )
                     )
         action = self.env["ir.actions.act_window"]._for_xml_id(
