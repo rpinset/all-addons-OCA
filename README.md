@@ -1164,11 +1164,16 @@ Date:   Sat Feb 1 21:00:08 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 0589c9cecfc1d5f9b28a68fefb8270a92ef316d3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:59:44 2025 +0000
+commit fc21232b0f8a8aca1b51e323ecf4f741e2f02902
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Apr 2 06:26:49 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (16 of 16 strings)
+    
+    Translation: product-attribute-12.0/product-attribute-12.0-product_template_tags
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-12-0/product-attribute-12-0-product_template_tags/it/
 
 
 ## product-kitting
