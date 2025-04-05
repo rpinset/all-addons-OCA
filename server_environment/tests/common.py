@@ -34,13 +34,24 @@ class ServerEnvironmentCase(common.TransactionCase):
             yield
 
     @contextmanager
-    def load_config(self, public=None, secret=None, serv_config_class=server_env_mixin):
+    def load_config(
+        self,
+        public=None,
+        secret=None,
+        config_dir=None,
+        serv_config_class=server_env_mixin,
+    ):
         original_serv_config = serv_config_class.serv_config
         try:
-            with self.set_config_dir(None), self.set_env_variables(public, secret):
+            with (
+                self.set_config_dir(config_dir),
+                self.set_env_variables(public, secret),
+            ):
                 parser = server_env._load_config()
                 serv_config_class.serv_config = parser
+                server_env.serv_config = parser
                 yield
 
         finally:
             serv_config_class.serv_config = original_serv_config
+            server_env.serv_config = original_serv_config

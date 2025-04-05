@@ -407,6 +407,7 @@ class ServerEnvMixin(models.AbstractModel):
                     "sparse": "server_env_defaults",
                     "automatic": True,
                     "string": fieldlabel,
+                    "default": base_field.default,
                 }
             )
 

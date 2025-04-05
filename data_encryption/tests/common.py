@@ -23,6 +23,7 @@ class CommonDataEncrypted(TransactionCase):
         config["running_env"] = "test"
         self.crypted_data_name = "test_model,1"
 
+    @classmethod
     def set_new_key_env(self, environment):
         crypting_key = Fernet.generate_key()
         # The key is encoded to bytes in the module, because in real life
