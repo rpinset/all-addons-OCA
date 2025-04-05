@@ -33,6 +33,30 @@ msgid "Active"
 msgstr "Aktiv"
 
 #. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_ids
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_state
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_type_icon
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: hr_course
 #: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
 msgid "Assign attendees"
 msgstr "Tilldela deltagare"
@@ -279,6 +303,12 @@ msgid "Followers (Partners)"
 msgstr "Följare (kontakter)"
 
 #. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_type_icon
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course__has_message
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__has_message
 msgid "Has Message"
@@ -296,6 +326,18 @@ msgstr "Beständighetstid"
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__id
 msgid "ID"
 msgstr "ID"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_exception_icon
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
 
 #. module: hr_course
 #: model:ir.model.fields,help:hr_course.field_hr_course__message_needaction
@@ -378,11 +420,41 @@ msgid "Messages"
 msgstr "Meddelanden"
 
 #. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course__name
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__name
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__name
 msgid "Name"
 msgstr "Namn"
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_summary
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_type_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
 
 #. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__note
@@ -455,6 +527,12 @@ msgid "Rate Course"
 msgstr "Betygsätt kursen"
 
 #. module: hr_course
+#: model:ir.model.fields,field_description:hr_course.field_hr_course__activity_user_id
+#: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: hr_course
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_attendee__result
 msgid "Result"
 msgstr "Resultat"
@@ -482,6 +560,16 @@ msgid "State"
 msgstr "Läge"
 
 #. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_state
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: hr_course
 #. odoo-python
 #: code:addons/hr_course/models/hr_course_schedule.py:0
 #, python-format
@@ -492,6 +580,12 @@ msgstr "Startdatumet kan inte vara senare än slutdatumet."
 #: model:ir.model.fields,field_description:hr_course.field_hr_course_schedule__training_company_id
 msgid "Training company"
 msgstr "Utbildningsföretag"
+
+#. module: hr_course
+#: model:ir.model.fields,help:hr_course.field_hr_course__activity_exception_decoration
+#: model:ir.model.fields,help:hr_course.field_hr_course_schedule__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
 
 #. module: hr_course
 #: model:ir.model.fields.selection,name:hr_course.selection__hr_course_schedule__state__waiting_attendees
@@ -520,8 +614,8 @@ msgstr "Du kan inte slutföra kursen med väntande resultat"
 #. module: hr_course
 #: model_terms:ir.ui.view,arch_db:hr_course.hr_course_schedule_form_view
 msgid ""
-"You should set a course back to draft only if you cancelled it by mistake or"
-" if some of its information is incorrect. Do you want to continue?"
+"You should set a course back to draft only if you cancelled it by mistake or "
+"if some of its information is incorrect. Do you want to continue?"
 msgstr ""
 "Du bör endast återställa en kurs till utkast om du avbröt den av misstag "
 "eller om en del av informationen är felaktig. Vill du fortsätta?"

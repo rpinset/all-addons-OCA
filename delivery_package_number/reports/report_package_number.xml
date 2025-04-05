@@ -35,7 +35,7 @@
                     <div class="row mt-3">
                         <div
                             class="col-5 border border-dark rounded text-center"
-                            style="padding: 60px 0;"
+                            style="padding: 10px"
                             name="client"
                         >
                             <span
@@ -46,6 +46,7 @@
                         <div class="col-2" />
                         <div
                             class="col-5 border border-dark rounded"
+                            style="padding: 10px"
                             name="package_number"
                         >
                             <h6>Number of packages:</h6>

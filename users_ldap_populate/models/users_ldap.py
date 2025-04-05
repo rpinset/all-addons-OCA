@@ -125,7 +125,11 @@ class CompanyLDAP(models.Model):
         ldap_binddn = conf["ldap_binddn"] or ""
         conn.simple_bind_s(ldap_binddn, ldap_password)
         results = conn.search_st(
-            conf["ldap_base"], ldap.SCOPE_SUBTREE, ldap_filter, None, timeout=timeout
+            conf["ldap_base"],
+            ldap.SCOPE_SUBTREE,
+            ldap_filter,
+            ["*", "+"],
+            timeout=timeout,
         )
         conn.unbind()
         return results
