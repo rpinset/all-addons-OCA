@@ -543,6 +543,11 @@ msgid "Loans"
 msgstr ""
 
 #. module: account_loan
+#: model_terms:ir.ui.view,arch_db:account_loan.account_loan_pivot
+msgid "Loans pivot"
+msgstr ""
+
+#. module: account_loan
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_line__long_term_pending_principal_amount
 msgid "Long Term Pending Principal Amount"
 msgstr ""
@@ -902,6 +907,11 @@ msgstr ""
 "Em mora: A data de vencimento já foi ultrapassada\n"
 "Hoje: A data da atividade é hoje\n"
 "Planeado: Futuras atividades."
+
+#. module: account_loan
+#: model_terms:ir.ui.view,arch_db:account_loan.account_loan_tree
+msgid "Total"
+msgstr ""
 
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan_line__payment_amount

@@ -15,10 +15,20 @@
                 <field name="state" />
                 <field name="rate" optional="hide" />
                 <field name="loan_amount" optional="hide" />
-                <field name="pending_principal_amount" optional="hide" />
+                <field name="pending_principal_amount" optional="hide" sum="Total" />
                 <field name="periods" optional="hide" />
                 <field name="start_date" optional="hide" />
             </tree>
+        </field>
+    </record>
+    <record id="account_loan_pivot" model="ir.ui.view">
+        <field name="name">account.loan.pivot</field>
+        <field name="model">account.loan</field>
+        <field name="arch" type="xml">
+            <pivot string="Loans pivot">
+                <field name="name" type="row" />
+                <field name="loan_amount" type="measure" />
+            </pivot>
         </field>
     </record>
     <record id="account_loan_form" model="ir.ui.view">
@@ -158,6 +168,7 @@
     <record id="account_loan_action" model="ir.actions.act_window">
         <field name="name">Loans</field>
         <field name="res_model">account.loan</field>
+        <field name="view_mode">tree,form,pivot</field>
     </record>
 
     <menuitem

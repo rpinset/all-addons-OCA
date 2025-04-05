@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-04-02 19:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. module: mail_chatter_company_tracking
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_tracking_value__company_id
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: mail_chatter_company_tracking
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_message__display_name
@@ -31,20 +31,20 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_message__id
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_tracking_value__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_chatter_company_tracking
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_message____last_update
 #: model:ir.model.fields,field_description:mail_chatter_company_tracking.field_mail_tracking_value____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: mail_chatter_company_tracking
 #: model:ir.model,name:mail_chatter_company_tracking.model_mail_tracking_value
 msgid "Mail Tracking Value"
-msgstr ""
+msgstr "Valore tracciamento e-mail"
 
 #. module: mail_chatter_company_tracking
 #: model:ir.model,name:mail_chatter_company_tracking.model_mail_message
 msgid "Message"
-msgstr ""
+msgstr "Messaggio"

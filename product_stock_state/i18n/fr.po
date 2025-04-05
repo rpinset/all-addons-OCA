@@ -91,6 +91,12 @@ msgid "Manual Stock State Threshold"
 msgstr "Seuil pour l'état du stock manuel"
 
 #. module: product_stock_state
+#: model:ir.model.fields,field_description:product_stock_state.field_product_product__on_demand
+#: model:ir.model.fields,field_description:product_stock_state.field_product_template__on_demand
+msgid "On Demand"
+msgstr "A la demande"
+
+#. module: product_stock_state
 #: model:ir.model,name:product_stock_state.model_product_product
 msgid "Product"
 msgstr "Article"
@@ -148,7 +154,6 @@ msgstr "Seuil pour l'état du stock par produit"
 
 #. module: product_stock_state
 #: model_terms:ir.ui.view,arch_db:product_stock_state.view_product_category_form
-#: model_terms:ir.ui.view,arch_db:product_stock_state.view_product_template_form
 msgid "Stock Threshold"
 msgstr "Seuil de stock"
 
@@ -159,6 +164,7 @@ msgstr "Paramètres de stock"
 
 #. module: product_stock_state
 #: model_terms:ir.ui.view,arch_db:product_stock_state.res_config_settings_view_form_threshold
+#: model_terms:ir.ui.view,arch_db:product_stock_state.view_product_template_form
 msgid "Stock threshold"
 msgstr "Seuil de stock"
 
@@ -173,6 +179,12 @@ msgstr ""
 "cette catégorie passera de l'état \"En stock\" à \"En stock limité\". Si "
 "elle n'est pas définie, Odoo utilisera le seuil défini au niveau de "
 "l'entreprise."
+
+#. module: product_stock_state
+#: model:ir.model.fields,help:product_stock_state.field_product_product__on_demand
+#: model:ir.model.fields,help:product_stock_state.field_product_template__on_demand
+msgid "This field allows you to force the stock state to the on-demand value"
+msgstr "Ce champs vous permet de forcer l'état du stock à 'A la demande'"
 
 #. module: product_stock_state
 #: model:product.product,uom_name:product_stock_state.product_setting_by_company

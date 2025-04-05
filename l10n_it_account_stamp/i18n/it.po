@@ -18,12 +18,30 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: l10n_it_account_stamp
+#: model_terms:ir.ui.view,arch_db:l10n_it_account_stamp.account_move_form_stamp
+msgid ""
+"<span attrs=\"{'invisible': [('state', '=', 'draft')]}\">\n"
+"                            Stamp can only be charged to customer when "
+"invoice is in draft state\n"
+"                        </span>"
+msgstr ""
+
+#. module: l10n_it_account_stamp
+#: model_terms:ir.ui.view,arch_db:l10n_it_account_stamp.account_move_form_stamp
+msgid ""
+"<span attrs=\"{'invisible': [('tax_stamp_invoice_line_present', '=', "
+"False)]}\">\n"
+"                        Stamp charged to customer\n"
+"                    </span>"
+msgstr ""
+
+#. module: l10n_it_account_stamp
 #: model_terms:ir.ui.view,arch_db:l10n_it_account_stamp.view_account_config_settings_stamp
 msgid ""
 "<span class=\"o_form_label\">Configuration for Tax stamp</span>\n"
-"                        <span class=\"fa fa-lg fa-building-o\" title="
-"\"Values set here are company-specific.\" aria-label=\"Values set here are "
-"company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+"                        <span class=\"fa fa-lg fa-building-o\" "
+"title=\"Values set here are company-specific.\" aria-label=\"Values set here "
+"are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
 "<span class=\"o_form_label\">Configurazione per il bollo</span>\n"
 "                        <span class=\"fa fa-lg fa-building-o\" title=\"I "
@@ -41,11 +59,6 @@ msgstr ""
 "del DPR 642/1972 e del DM 17/06/2014</span>"
 
 #. module: l10n_it_account_stamp
-#: model_terms:ir.ui.view,arch_db:l10n_it_account_stamp.account_move_form_stamp
-msgid "Add tax stamp line"
-msgstr "Aggiungi riga imposta di bollo"
-
-#. module: l10n_it_account_stamp
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_bank_statement_line__manually_apply_tax_stamp
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_move__manually_apply_tax_stamp
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_payment__manually_apply_tax_stamp
@@ -60,6 +73,11 @@ msgstr "Applica imposta di bollo"
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_product_template__auto_compute
 msgid "Auto-compute"
 msgstr "Calcolo automatico"
+
+#. module: l10n_it_account_stamp
+#: model_terms:ir.ui.view,arch_db:l10n_it_account_stamp.account_move_form_stamp
+msgid "Charge stamp to customer"
+msgstr ""
 
 #. module: l10n_it_account_stamp
 #: model:ir.model,name:l10n_it_account_stamp.model_res_company
@@ -189,6 +207,13 @@ msgstr ""
 "        "
 
 #. module: l10n_it_account_stamp
+#: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_bank_statement_line__tax_stamp_invoice_line_present
+#: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_move__tax_stamp_invoice_line_present
+#: model:ir.model.fields,field_description:l10n_it_account_stamp.field_account_payment__tax_stamp_invoice_line_present
+msgid "Stamp line is present in invoice"
+msgstr ""
+
+#. module: l10n_it_account_stamp
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_product_product__stamp_apply_tax_ids
 #: model:ir.model.fields,field_description:l10n_it_account_stamp.field_product_template__stamp_apply_tax_ids
 msgid "Stamp taxes"
@@ -233,6 +258,13 @@ msgid "Tax stamp"
 msgstr "Imposta di bollo"
 
 #. module: l10n_it_account_stamp
+#: model:ir.model.fields,help:l10n_it_account_stamp.field_account_bank_statement_line__tax_stamp
+#: model:ir.model.fields,help:l10n_it_account_stamp.field_account_move__tax_stamp
+#: model:ir.model.fields,help:l10n_it_account_stamp.field_account_payment__tax_stamp
+msgid "Tax stamp is applied to this invoice."
+msgstr ""
+
+#. module: l10n_it_account_stamp
 #: code:addons/l10n_it_account_stamp/models/account_move.py:0
 #, python-format
 msgid "Tax stamp is not applicable"
@@ -256,18 +288,22 @@ msgstr "Il prodotto %s deve essere un bollo per applicare le imposte definite!"
 msgid "Units"
 msgstr "Unità"
 
+#~ msgid "Add tax stamp line"
+#~ msgstr "Aggiungi riga imposta di bollo"
+
 #~ msgid ""
 #~ "<span class=\"o_form_label\">Configuration for Tax stamp</span>\n"
-#~ "                            <span class=\"fa fa-lg fa-building-o\" title="
-#~ "\"Values set here are company-specific.\" aria-label=\"Values set here "
-#~ "are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"Values set here are company-specific.\" aria-label=\"Values set "
+#~ "here are company-specific.\" groups=\"base.group_multi_company\" "
+#~ "role=\"img\"/>"
 #~ msgstr ""
 #~ "<span class=\"o_form_label\">Configurazione per l'imposta di bollo</"
 #~ "span>\n"
-#~ "                            <span class=\"fa fa-lg fa-building-o\" title="
-#~ "\"I valori impostati qui sono specifici per azienda.\" aria-label=\"I "
-#~ "valori impostati qui sono specifici per azienda.\" groups=\"base."
-#~ "group_multi_company\" role=\"img\"/>"
+#~ "                            <span class=\"fa fa-lg fa-building-o\" "
+#~ "title=\"I valori impostati qui sono specifici per azienda.\" aria-"
+#~ "label=\"I valori impostati qui sono specifici per azienda.\" "
+#~ "groups=\"base.group_multi_company\" role=\"img\"/>"
 
 #~ msgid ""
 #~ "Stamp duty payment under the terms of Art. 6, Subsection 2 of MEF Decree "

@@ -1,4 +1,5 @@
 from odoo.tests import Form, tagged
+from odoo.tools import first
 
 from odoo.addons.account.tests.test_account_invoice_report import (
     TestAccountInvoiceReport,
@@ -82,7 +83,7 @@ class InvoicingTest(TestAccountInvoiceReport):
         invoice.action_post()
 
         # Add stamp and check that edited description is kept
-        invoice.add_tax_stamp_line()
+        invoice.add_tax_stamp_invoice_line()
         self.assertEqual(invoice.invoice_line_ids[0].name, edited_descr)
 
     def test_amount_total_changing_currency(self):
@@ -97,3 +98,26 @@ class InvoicingTest(TestAccountInvoiceReport):
         total = invoice.amount_total
         invoice.action_post()
         self.assertEqual(total, invoice.amount_total)
+
+    def test_reset_invoice_to_draft(self):
+        """Reset an invoice to draft and check that relative tax stamp accounting lines
+        has been deleted."""
+        invoice = first(
+            self.invoices.filtered(lambda inv: inv.move_type == "out_invoice")
+        )
+
+        self.assertEqual(len(invoice), 1)
+        self.assertEqual(len(invoice.invoice_line_ids), 2)
+
+        invoice.invoice_line_ids[0].write({"tax_ids": [(6, 0, [self.tax_id.id])]})
+        invoice.action_post()
+
+        self.assertEqual(
+            len(invoice.line_ids.filtered(lambda line: line.is_stamp_line)), 2
+        )
+
+        invoice.button_draft()
+
+        self.assertEqual(
+            len(invoice.line_ids.filtered(lambda line: line.is_stamp_line)), 0
+        )

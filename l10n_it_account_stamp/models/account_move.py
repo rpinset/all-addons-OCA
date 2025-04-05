@@ -1,3 +1,4 @@
+# Copyright 2023 Simone Rubino - Aion Tech
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 from odoo import _, api, fields, models
@@ -8,7 +9,14 @@ class AccountMove(models.Model):
     _inherit = "account.move"
 
     tax_stamp = fields.Boolean(
-        "Tax Stamp", readonly=False, compute="_compute_tax_stamp", store=True
+        help="Tax stamp is applied to this invoice.",
+        readonly=False,
+        compute="_compute_tax_stamp",
+        store=True,
+    )
+    tax_stamp_invoice_line_present = fields.Boolean(
+        string="Stamp line is present in invoice",
+        compute="_compute_tax_stamp_invoice_line_present",
     )
     auto_compute_stamp = fields.Boolean(
         related="company_id.tax_stamp_product_id.auto_compute"
@@ -52,7 +60,7 @@ class AccountMove(models.Model):
                 if invoice.manually_apply_tax_stamp:
                     invoice.tax_stamp = True
 
-    def add_tax_stamp_line(self):
+    def add_tax_stamp_invoice_line(self):
         for inv in self:
             if not inv.tax_stamp:
                 raise UserError(_("Tax stamp is not applicable"))
@@ -94,10 +102,22 @@ class AccountMove(models.Model):
         return super()._move_autocomplete_invoice_lines_values()
 
     def is_tax_stamp_line_present(self):
+        self.ensure_one()
         for line in self.line_ids:
             if line.is_stamp_line:
                 return True
         return False
+
+    @api.depends(
+        "invoice_line_ids",
+        "invoice_line_ids.product_id",
+        "invoice_line_ids.product_id.is_stamp",
+    )
+    def _compute_tax_stamp_invoice_line_present(self):
+        for invoice in self:
+            invoice.tax_stamp_invoice_line_present = (
+                invoice.is_tax_stamp_product_present()
+            )
 
     def is_tax_stamp_product_present(self):
         product_stamp = self.invoice_line_ids.filtered(

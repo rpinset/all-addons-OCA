@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-04-02 19:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -25,21 +25,21 @@ msgstr "Nome visualizzato"
 #. module: mail_thread_create_nolog
 #: model:ir.model,name:mail_thread_create_nolog.model_mail_thread
 msgid "Email Thread"
-msgstr ""
+msgstr "Discussione e-mail"
 
 #. module: mail_thread_create_nolog
 #: model:ir.model.fields,field_description:mail_thread_create_nolog.field_mail_message__id
 #: model:ir.model.fields,field_description:mail_thread_create_nolog.field_mail_thread__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: mail_thread_create_nolog
 #: model:ir.model.fields,field_description:mail_thread_create_nolog.field_mail_message____last_update
 #: model:ir.model.fields,field_description:mail_thread_create_nolog.field_mail_thread____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: mail_thread_create_nolog
 #: model:ir.model,name:mail_thread_create_nolog.model_mail_message
 msgid "Message"
-msgstr ""
+msgstr "Messaggio"
