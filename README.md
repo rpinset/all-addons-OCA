@@ -1174,11 +1174,11 @@ Date:   Sat Feb 1 21:30:07 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit e532944a2e8c909eaa728b2ff875547ad6cbe444
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:26:39 2025 +0000
+commit be4770ad8e6a7a10533deb9d1195299bca9c3c4f
+Author: Matteo <matteomircoli@openforce.it>
+Date:   Wed Apr 2 16:05:01 2025 +0000
 
-    [IMP] update dotfiles
+    Added translation using Weblate (German)
 
 
 ## ddmrp
@@ -1261,16 +1261,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 35372e3ba90c60584218899b4da537d2e02e5b92
+commit 6106856d331515a23e63ce7e3a7241b0ff7ec07e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 5 09:25:16 2025 +0000
+Date:   Wed Apr 2 06:26:53 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (68 of 68 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_pricelist_assortment
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_pricelist_assortment/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_template_tags
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_template_tags/it/
 
 
 ## product-kitting
