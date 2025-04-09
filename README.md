@@ -169,13 +169,13 @@ Date:   Sun Feb 2 18:32:51 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 1ae113f85a6d6a66e66d6c592fae4cb1d63ccfe0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:13:39 2025 +0000
+commit 0a281617fdcf659e9e33f2b09adc57b05e023d56
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Apr 9 15:40:07 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 42.8% (3 of 7 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
     Translation: credit-control-14.0/credit-control-14.0-stock_financial_risk
     Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-stock_financial_risk/it/
@@ -374,11 +374,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3fa583da427b7600cf5ae2f64cfa4b7186f439a7
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 31 14:58:06 2025 +0000
+commit 97894e986d90d9d1672765e35101bf032b5266f6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:21:39 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 61.5% (64 of 104 strings)
+    
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_rental
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_rental/it/
 
 
 ## crm
@@ -644,16 +649,16 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 1231bb9a785fc9c36bf2b9a91af8ac3b2dd8d390
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 19 10:53:02 2025 +0000
+commit be9a0f03d695001df6fef89f8e5906b7c209927e
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Apr 8 09:49:01 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (47 of 47 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: multi-company-14.0/multi-company-14.0-account_invoice_inter_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-account_invoice_inter_company/it/
+    Translation: multi-company-14.0/multi-company-14.0-mail_template_multi_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-mail_template_multi_company/it/
 
 
 ## l10n-argentina
@@ -856,9 +861,9 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 4c5d79a72a98361dfe4a9543d1cb568439218d52
+commit 1dc2c8aeff86def1a32b87c7b525cb9904935df8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 3 10:41:01 2025 +0000
+Date:   Wed Apr 9 15:26:40 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1112,16 +1117,16 @@ Date:   Sun Feb 9 18:52:33 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 503d39a52c3265e8a88922b9610d8758f0460b9c
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Apr 1 16:02:20 2025 +0000
+commit 055f60597fb1a02fbb06f1c2d6c40f83f644c86a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:03:18 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 22.2% (2 of 9 strings)
+    Currently translated at 100.0% (178 of 178 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_request_sequence_option
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_request_sequence_option/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_reserve
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_reserve/it/
 
 
 ## stock-logistics-reporting
@@ -1154,25 +1159,30 @@ Date:   Sat Feb 15 08:01:18 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit ab5b9acd9b2f53cbf4a1a6fbd8e1f918b9b70d08
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:34:52 2025 +0000
+commit 3abc1d38cb1d018d879f0c0f8129fad39d86057f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:03:21 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (344 of 344 strings)
+    
+    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp/it/
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit c54daa0a0dd7fa6de9fd1b495bbf3af9713af6ff
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 2 06:58:45 2025 +0000
+commit 281bd63fae78cc020f8e6ca62e3dd3ca3583ea2c
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Apr 9 12:50:28 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (85 of 85 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: wms-14.0/wms-14.0-stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_available_to_promise_release/it/
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_available_to_promise_release/
 
 
 ## manufacture
@@ -1690,11 +1700,16 @@ Date:   Wed Apr 2 06:59:59 2025 +0000
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 6b71ee6228f831f9fcf6ba71163bfb845d33b560
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 19:21:32 2025 +0000
+commit 4d7eb7c0c1061b6a9d510a872843710d70668a6c
+Author: Marcel Savegnago <marcel.savegnago@gmail.com>
+Date:   Wed Apr 9 16:48:25 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: website-14.0/website-14.0-website_crm_quick_answer
+    Translate-URL: https://translation.odoo-community.org/projects/website-14-0/website-14-0-website_crm_quick_answer/pt_BR/
 
 
 ## website-cms

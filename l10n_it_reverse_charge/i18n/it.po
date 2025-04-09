@@ -284,16 +284,11 @@ msgstr "Tipi di inversione contabile"
 #, python-format
 msgid ""
 "Reverse charge self invoice.\n"
-"Supplier: %s\n"
-"Reference: %s\n"
-"Date: %s\n"
-"Internal reference: %s"
+"Supplier: %(supplier)s\n"
+"Reference: %(reference)s\n"
+"Date: %(date)s\n"
+"Internal reference: %(internal_reference)s"
 msgstr ""
-"Autofattura inversione contabile.\n"
-"Fornitore: %s\n"
-"Riferimento: %s\n"
-"Data: %s\n"
-"Riferimento interno: %s"
 
 #. module: l10n_it_reverse_charge
 #: model:ir.model.fields,field_description:l10n_it_reverse_charge.field_account_rc_type_tax__sale_tax_id
@@ -407,6 +402,20 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_it_reverse_charge.field_account_rc_type__with_supplier_self_invoice
 msgid "With additional supplier self invoice"
 msgstr "Con autofattura passiva aggiuntiva"
+
+#, python-format
+#~ msgid ""
+#~ "Reverse charge self invoice.\n"
+#~ "Supplier: %s\n"
+#~ "Reference: %s\n"
+#~ "Date: %s\n"
+#~ "Internal reference: %s"
+#~ msgstr ""
+#~ "Autofattura inversione contabile.\n"
+#~ "Fornitore: %s\n"
+#~ "Riferimento: %s\n"
+#~ "Data: %s\n"
+#~ "Riferimento interno: %s"
 
 #~ msgid "Tax Mapping"
 #~ msgstr "Mappatura imposte"

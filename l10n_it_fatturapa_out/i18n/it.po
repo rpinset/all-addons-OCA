@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-09 10:03+0000\n"
-"PO-Revision-Date: 2025-02-20 13:06+0000\n"
+"PO-Revision-Date: 2025-04-07 16:24+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
@@ -295,6 +295,20 @@ msgstr "Errore"
 msgid ""
 "Error processing invoice(s) %(invoices)s.\n"
 "\n"
+"Error message: %(error)s\n"
+"\n"
+msgstr ""
+"Errore nell'elaborazione fatture %(invoices)s.\n"
+"\n"
+"Messaggio di errore: %(error)s\n"
+"\n"
+
+#. module: l10n_it_fatturapa_out
+#: code:addons/l10n_it_fatturapa_out/wizard/efattura.py:0
+#, python-format
+msgid ""
+"Error processing invoice(s) %(invoices)s.\n"
+"\n"
 "Errors in the following fields:\n"
 "- %(error_path_string)s\n"
 "\n"
@@ -562,6 +576,12 @@ msgstr "Ultimo aggiornamento di"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_wizard_export_fatturapa__write_date
 msgid "Last Updated on"
 msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_fatturapa_out
+#: code:addons/l10n_it_fatturapa_out/wizard/efattura.py:0
+#, python-format
+msgid "Line affected:  %(line)s\n"
+msgstr "Riga coinvolta:  %(line)s\n"
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_main_attachment_id

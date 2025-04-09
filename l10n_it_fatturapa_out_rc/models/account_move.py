@@ -18,6 +18,7 @@ class AccountMove(models.Model):
             else:
                 doc_id = self.ref if self.ref else self.name
             self.rc_self_invoice_id.related_documents = [
+                (5, 0, 0),
                 (
                     0,
                     0,
@@ -26,7 +27,7 @@ class AccountMove(models.Model):
                         "name": doc_id,
                         "date": self.invoice_date,
                     },
-                )
+                ),
             ]
         return res
 

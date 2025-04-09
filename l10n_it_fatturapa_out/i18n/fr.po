@@ -288,6 +288,16 @@ msgstr ""
 msgid ""
 "Error processing invoice(s) %(invoices)s.\n"
 "\n"
+"Error message: %(error)s\n"
+"\n"
+msgstr ""
+
+#. module: l10n_it_fatturapa_out
+#: code:addons/l10n_it_fatturapa_out/wizard/efattura.py:0
+#, python-format
+msgid ""
+"Error processing invoice(s) %(invoices)s.\n"
+"\n"
 "Errors in the following fields:\n"
 "- %(error_path_string)s\n"
 "\n"
@@ -539,6 +549,12 @@ msgstr "Modifié par"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_wizard_export_fatturapa__write_date
 msgid "Last Updated on"
 msgstr "Modifié le"
+
+#. module: l10n_it_fatturapa_out
+#: code:addons/l10n_it_fatturapa_out/wizard/efattura.py:0
+#, python-format
+msgid "Line affected:  %(line)s\n"
+msgstr ""
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__message_main_attachment_id

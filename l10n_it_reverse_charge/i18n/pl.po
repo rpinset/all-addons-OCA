@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
-"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
-"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #. module: l10n_it_reverse_charge
 #: code:addons/l10n_it_reverse_charge/models/account_rc_type.py:0
@@ -273,10 +273,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Reverse charge self invoice.\n"
-"Supplier: %s\n"
-"Reference: %s\n"
-"Date: %s\n"
-"Internal reference: %s"
+"Supplier: %(supplier)s\n"
+"Reference: %(reference)s\n"
+"Date: %(date)s\n"
+"Internal reference: %(internal_reference)s"
 msgstr ""
 
 #. module: l10n_it_reverse_charge
