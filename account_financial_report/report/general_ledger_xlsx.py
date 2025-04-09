@@ -195,16 +195,18 @@ class GeneralLedgerXslx(models.AbstractModel):
                             taxes_description += taxes_data[tax_id]["tax_name"] + " "
                         if line["tax_line_id"]:
                             taxes_description += line["tax_line_id"][1]
-                        for account_id, value in line["analytic_distribution"].items():
-                            if value < 100:
-                                analytic_distribution += "%s %d%% " % (
-                                    analytic_data[int(account_id)]["name"],
-                                    value,
-                                )
-                            else:
-                                analytic_distribution += (
-                                    "%s " % analytic_data[int(account_id)]["name"]
-                                )
+                        analytic_list = []
+                        for account_ids, percentage in line[
+                            "analytic_distribution"
+                        ].items():
+                            for account_id in account_ids.split(","):
+                                name = analytic_data[int(account_id)]["name"]
+                                if percentage < 100:
+                                    analytic_list.append(f"{name} {int(percentage)}%")
+                                else:
+                                    analytic_list.append(name)
+                        analytic_distribution = ", ".join(analytic_list)
+
                         line.update(
                             {
                                 "taxes_description": taxes_description,

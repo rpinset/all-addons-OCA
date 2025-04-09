@@ -20,6 +20,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_mail_compose_message__partner_bcc_ids
 #: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_mail_mail__email_bcc
 #: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_mail_template__email_bcc
+#: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_mail_template_preview__email_bcc
 msgid "Bcc"
 msgstr "Bcc"
 
@@ -28,6 +29,11 @@ msgstr "Bcc"
 #: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_mail_message__recipient_bcc_ids
 msgid "Bcc (Partners)"
 msgstr "Bcc (Socios)"
+
+#. module: mail_composer_cc_bcc
+#: model:ir.model.fields,help:mail_composer_cc_bcc.field_mail_template_preview__email_bcc
+msgid "Blind Carbon copy recipients"
+msgstr ""
 
 #. module: mail_composer_cc_bcc
 #: model:ir.model.fields,help:mail_composer_cc_bcc.field_mail_mail__email_bcc
@@ -71,6 +77,11 @@ msgstr "Bcc por defecto"
 #: model:ir.model.fields,field_description:mail_composer_cc_bcc.field_res_company__default_partner_cc_ids
 msgid "Default Cc"
 msgstr "Cc por defecto"
+
+#. module: mail_composer_cc_bcc
+#: model:ir.model,name:mail_composer_cc_bcc.model_mail_template_preview
+msgid "Email Template Preview"
+msgstr ""
 
 #. module: mail_composer_cc_bcc
 #: model:ir.model,name:mail_composer_cc_bcc.model_mail_template

@@ -475,29 +475,47 @@
                     <!--## cost_center-->
                     <t t-if="show_cost_center">
                         <div class="act_as_cell left">
-                            <t
-                                t-foreach="line['analytic_distribution']"
-                                t-as="analytic_id"
-                            >
-                                <div>
-                                    <span
-                                        t-att-res-id="analytic_id"
-                                        res-model="account.analytic.account"
-                                        view-type="form"
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <t
+                                    t-foreach="line['analytic_distribution'].items()"
+                                    t-as="analytic_entry"
+                                >
+                                    <t
+                                        t-set="analytic_ids"
+                                        t-value="analytic_entry[0]"
+                                    />
+                                    <t t-set="percentage" t-value="analytic_entry[1]" />
+                                    <t
+                                        t-foreach="analytic_ids.split(',')"
+                                        t-as="analytic_id"
                                     >
-                                        <t
-                                            t-out="o._get_atr_from_dict(int(analytic_id), analytic_data, 'name')"
-                                        />
-                                        <t
-                                            t-if="int(line['analytic_distribution'][analytic_id]) &lt; 100"
-                                        >
-                                            <t
-                                                t-out="int(line['analytic_distribution'][analytic_id])"
-                                            />%
-                                        </t>
-                                    </span>
-                                </div>
-                            </t>
+                                        <li style="padding: 2px 0;">
+                                            <span
+                                                t-att-res-id="analytic_id"
+                                                res-model="account.analytic.account"
+                                                view-type="form"
+                                            >
+                                                <t
+                                                    t-set="analytic_id"
+                                                    t-value="analytic_id.strip()"
+                                                />
+                                                <t
+                                                    t-set="account_name"
+                                                    t-value="o._get_atr_from_dict(int(analytic_id), analytic_data, 'name')"
+                                                />
+                                                <t t-if="percentage &lt; 100">
+                                                    <t
+                                                        t-out="account_name + ' (' + str(percentage) + '%)'"
+                                                    />
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-out="account_name" />
+                                                </t>
+                                            </span>
+                                        </li>
+                                    </t>
+                                </t>
+                            </ul>
                         </div>
                     </t>
                     <t t-if="show_analytic_tags">
