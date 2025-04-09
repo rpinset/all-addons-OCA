@@ -384,16 +384,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 5d3a913c527370d850da6990820185451d88d9a9
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Mar 31 09:08:16 2025 +0000
+commit e6f27de4ed9547805668702c0f3b37dfd6841901
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:16:16 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (66 of 66 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_discount_display_amount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_discount_display_amount/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_plan
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_plan/it/
 
 
 ## crm
@@ -809,16 +809,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit e47285f3de7fcc86dca9703bbe6e3ef3b4c6b411
-Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
-Date:   Thu Feb 27 23:16:05 2025 +0000
+commit 96e2942a132bdca1ee8ca881e90a62e7deba979a
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Apr 7 13:43:42 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 39.8% (4380 of 10995 strings)
+    Currently translated at 100.0% (2 of 2 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_intrastat/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa_out_oss
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa_out_oss/it/
 
 
 ## l10n-japan
@@ -1099,16 +1099,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit def3c8f2349b45eb1bc370c44b04dd43fffc055d
+commit 203aaf9828e2fcc55e498c1ca7973a1c1236f471
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 5 12:48:08 2025 +0000
+Date:   Tue Apr 8 07:16:02 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (127 of 127 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
+    Translation: manufacture-12.0/manufacture-12.0-mrp_sale_info
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_sale_info/it/
 
 
 ## manufacture-reporting
