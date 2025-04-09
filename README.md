@@ -209,11 +209,16 @@ Date:   Sat Feb 1 21:11:00 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit a1d21adddde817472abef0f2809bcce25555e7da
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:10:17 2025 +0000
+commit 21a9c3737ca6b2158ca76e928ab886678201f67f
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Wed Apr 9 12:15:05 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (35 of 35 strings)
+    
+    Translation: account-payment-13.0/account-payment-13.0-account_payment_term_extension
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_payment_term_extension/fr/
 
 
 ## connector
@@ -1183,11 +1188,16 @@ Date:   Wed Apr 2 16:05:01 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 213e9bd86912b29ff431e51934d5fb3b38e8c325
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:14:18 2025 +0000
+commit cb557cae1e09fbc953f33858d00926c925573cc4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:03:22 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 98.2% (332 of 338 strings)
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp/it/
 
 
 ## wms
@@ -1561,11 +1571,11 @@ Date:   Sun Sep 3 16:02:05 2023 +0000
 
 ## role-policy
 From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
-commit 294fd61917a10b13b0508216f95ea53fd207b0f6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:26:51 2025 +0000
+commit 82f505dc8609b514236e78848fdb1860c2744eb0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 8 11:10:44 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## vertical-association
