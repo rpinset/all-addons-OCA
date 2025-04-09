@@ -117,7 +117,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
+[account_invoice_start_end_dates](account_invoice_start_end_dates/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start/end dates on invoice/move lines
 
 [//]: # (end addons)
 
@@ -361,11 +361,13 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 18.0.2.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 18.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_pricelist](account_invoice_pricelist/) | 18.0.1.0.0 |  | Add partner pricelist on invoices
 [account_invoice_refund_link](account_invoice_refund_link/) | 18.0.1.0.0 |  | Show links between refunds and their originator invoices.
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 18.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_mail_autosubscribe](account_mail_autosubscribe/) | 18.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's invoices
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Account Move Cancel Confirm
+[account_move_tier_validation](account_move_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Account Moves to support a tier validation process.
 [partner_invoicing_mode](partner_invoicing_mode/) | 18.0.1.0.0 |  | Base module for handling multiple partner invoicing mode
 [partner_invoicing_mode_monthly](partner_invoicing_mode_monthly/) | 18.0.1.0.0 |  | Create invoices automatically on a monthly basis.
 [product_form_account_move_line_link](product_form_account_move_line_link/) | 18.0.1.0.0 |  | Adds a button on product forms to access Journal Items
@@ -826,7 +828,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.1 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1579,6 +1581,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_automatic_workflow](sale_automatic_workflow/) | 18.0.1.0.0 |  | Sale Automatic Workflow
+[sale_automatic_workflow_job](sale_automatic_workflow_job/) | 18.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
 [sale_automatic_workflow_periodicity](sale_automatic_workflow_periodicity/) | 18.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Adds a period for the execution of a workflow.
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 18.0.1.0.0 |  | Sale Automatic Workflow Stock
 [sale_cancel_reason](sale_cancel_reason/) | 18.0.1.0.0 |  | Sale Cancel Reason
@@ -1605,6 +1608,7 @@ addon | version | maintainers | summary
 [sale_order_type](sale_order_type/) | 18.0.1.0.0 |  | Sale Order Type
 [sale_order_warn_message](sale_order_warn_message/) | 18.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 18.0.1.0.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
+[sale_partner_incoterm](sale_partner_incoterm/) | 18.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Partner Selectable Option
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 18.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_set](sale_product_set/) | 18.0.1.0.0 |  | Sales product set
@@ -1613,6 +1617,7 @@ addon | version | maintainers | summary
 [sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
 [sale_stock_line_customer_ref](sale_stock_line_customer_ref/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Allow you to add a customer reference on order lines propagaged to move operations.
+[sale_stock_picking_note](sale_stock_picking_note/) | 18.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add picking note in sale and purchase order
 [sale_tier_validation](sale_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_wishlist](sale_wishlist/) | 18.0.1.0.0 |  | Handle sale wishlist for partners
 [sales_team_security](sales_team_security/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
@@ -1662,6 +1667,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[crm_claim](crm_claim/) | 18.0.1.0.0 |  | Track your customers/vendors claims and grievances.
 [crm_lead_code](crm_lead_code/) | 18.0.1.0.0 |  | Sequential Code for Leads / Opportunities
 [crm_lead_firstname](crm_lead_firstname/) | 18.0.1.0.0 |  | Specify split names for contacts in leads
 [crm_phonecall](crm_phonecall/) | 18.0.1.0.2 |  | CRM Phone Calls
@@ -2147,6 +2153,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_template_multi_link](product_template_multi_link/) | 18.0.1.0.0 |  | Product Multi Links (Template)
+[product_template_multi_link_date_span](product_template_multi_link_date_span/) | 18.0.1.0.0 |  | Add an optional date span for when a link is active.
+[product_variant_multi_link](product_variant_multi_link/) | 18.0.1.0.0 |  | Product Multi Links (Variant)
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 18.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_checkout_country_vat](website_sale_checkout_country_vat/) | 18.0.1.0.0 |  | Autocomplete VAT in checkout process
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 18.0.1.0.0 |  | Skip payment for logged users in checkout process
@@ -2310,6 +2318,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_invoice_margin](account_invoice_margin/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Show margin in invoices
 [sale_margin_delivered](sale_margin_delivered/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Sale Margin Delivered
 [sale_margin_security](sale_margin_security/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Sale Margin Security
 [sale_margin_sync](sale_margin_sync/) | 18.0.1.0.0 |  | Recompute sale margin when stock move cost price is changed
@@ -2359,6 +2368,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[fleet_vehicle_calendar_year](fleet_vehicle_calendar_year/) | 18.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. Allows the registration of the vehicle's calendar year.
+[fleet_vehicle_category](fleet_vehicle_category/) | 18.0.1.0.0 |  | Add category definition for vehicles.
+[fleet_vehicle_configuration](fleet_vehicle_configuration/) | 18.0.1.0.0 |  | add vehicle configuration capacity
+[fleet_vehicle_fuel_capacity](fleet_vehicle_fuel_capacity/) | 18.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the functionality of fleet management. It allows the registration of a vehicle's fuel capacity.
+[fleet_vehicle_fuel_type_ethanol](fleet_vehicle_fuel_type_ethanol/) | 18.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. This adds ethanol as another type of fuel to be used by a vehicle in the fleet.
+[fleet_vehicle_history_date_end](fleet_vehicle_history_date_end/) | 18.0.1.0.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically assign date end in vehicle history when a new driver is assigned.
 [fleet_vehicle_inspection](fleet_vehicle_inspection/) | 18.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
 [fleet_vehicle_log_fuel](fleet_vehicle_log_fuel/) | 18.0.1.0.0 |  | Add Log Fuels for your vehicles.
 [fleet_vehicle_service_activity](fleet_vehicle_service_activity/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Activity alerts for fleet services
@@ -2679,7 +2694,11 @@ hr-holidays
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[hr_holidays_public](hr_holidays_public/) | 18.0.1.0.0 |  | Manage Public Holidays
 
 [//]: # (end addons)
 
@@ -3981,7 +4000,11 @@ l10n-mexico
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[currency_rate_update_banxico](currency_rate_update_banxico/) | 18.0.1.0.0 |  | Update exchange rates using Banxico
 
 [//]: # (end addons)
 
@@ -5088,6 +5111,7 @@ addon | version | maintainers | summary
 [stock_picking_completion_info](stock_picking_completion_info/) | 18.0.1.0.0 |  | Display on current document completion information according to next operations
 [stock_picking_product_assortment](stock_picking_product_assortment/) | 18.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Stock Picking Product Assortment
 [stock_picking_show_linked](stock_picking_show_linked/) | 18.0.1.0.0 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
+[stock_picking_stage](stock_picking_stage/) | 18.0.1.0.0 | [![imlopes](https://github.com/imlopes.png?size=30px)](https://github.com/imlopes) | Stock Picking Stages
 [stock_picking_supplier_ref](stock_picking_supplier_ref/) | 18.0.1.0.0 |  | Adds a supplier reference field inside supplier's pickings and allows search for this reference.
 [stock_picking_volume](stock_picking_volume/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Compute volume information on stock moves and pickings
 [stock_putaway_product_template](stock_putaway_product_template/) | 18.0.1.0.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
@@ -5373,6 +5397,7 @@ addon | version | maintainers | summary
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_package_propagation](mrp_package_propagation/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
 [mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
+[mrp_sale_info](mrp_sale_info/) | 18.0.1.0.0 |  | Adds sale information to Manufacturing models
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Considers the warehouse calendars in manufacturing
 
 [//]: # (end addons)
@@ -5597,6 +5622,7 @@ addon | version | maintainers | summary
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 18.0.1.0.0 |  | Purchase product in a secondary unit
+[purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 18.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 18.0.1.0.0 |  | Purchase Order Type
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 18.0.1.0.0 |  | Purchase Order Univoiced Amount
 [purchase_partner_selectable_option](purchase_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Partner Selectable Option
@@ -5717,6 +5743,7 @@ addon | version | maintainers | summary
 [product_medical](product_medical/) | 18.0.1.0.0 |  | Base structure to handle medical products
 [product_multi_category](product_multi_category/) | 18.0.1.0.0 |  | Product - Many Categories
 [product_net_weight](product_net_weight/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add 'Net Weight' on product models
+[product_origin](product_origin/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds the origin of the product
 [product_packaging_calculator](product_packaging_calculator/) | 18.0.1.0.0 |  | Compute product quantity to pick by packaging
 [product_packaging_dimension](product_packaging_dimension/) | 18.0.1.0.0 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 18.0.1.0.0 |  | This module binds a product packaging to a packaging level
@@ -6326,6 +6353,7 @@ addon | version | maintainers | summary
 [fs_file](fs_file/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Field to store files into filesystem storages
 [fs_storage](fs_storage/) | 18.0.2.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend](storage_backend/) | 18.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
+[storage_backend_ftp](storage_backend_ftp/) | 18.0.1.0.0 |  | Implement FTP Storage
 [storage_backend_s3](storage_backend_s3/) | 18.0.1.0.0 |  | Implement amazon S3 Storage
 [storage_backend_sftp](storage_backend_sftp/) | 18.0.1.0.0 |  | Implement SFTP Storage
 [storage_file](storage_file/) | 18.0.1.0.0 |  | Storage file in storage backend
@@ -7643,7 +7671,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 18.0.1.0.1 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.0 |  | This module adds support for dynamic dropdown widget
-[web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
+[web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 18.0.1.0.4 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Show list fields as a matrix
 
 [//]: # (end addons)
