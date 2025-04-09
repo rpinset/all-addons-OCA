@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 02:39+0000\n"
-"PO-Revision-Date: 2021-02-11 03:45+0100\n"
+"POT-Creation-Date: 2025-04-08 07:41+0000\n"
+"PO-Revision-Date: 2025-04-08 09:47+0200\n"
 "Last-Translator: Carlos Dauden <carlos.dauden@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#. module: sale_financial_risk_info
+#: code:addons/sale_financial_risk_info/models/sale.py:0
+#, python-format
+msgid "%(risk_total)s / Unlimited"
+msgstr "%(risk_total)s / Sin límite"
 
 #. module: sale_financial_risk_info
 #: model:ir.model,name:sale_financial_risk_info.model_res_partner
@@ -30,12 +36,12 @@ msgstr "Riesgo consumido"
 #. module: sale_financial_risk_info
 #: model:ir.model.fields,field_description:sale_financial_risk_info.field_sale_order__risk_remaining_percentage
 msgid "Risk Remaining (Percentage)"
-msgstr ""
+msgstr "Riesgo restante (Porcentaje)"
 
 #. module: sale_financial_risk_info
 #: model:ir.model.fields,field_description:sale_financial_risk_info.field_sale_order__risk_remaining_value
 msgid "Risk Remaining (Value)"
-msgstr ""
+msgstr "Riesgo restante (Valor)"
 
 #. module: sale_financial_risk_info
 #: model:ir.model.fields,field_description:sale_financial_risk_info.field_res_partner__risk_percent_warning
@@ -46,14 +52,4 @@ msgstr "Porcentaje riesgo alerta"
 #. module: sale_financial_risk_info
 #: model:ir.model,name:sale_financial_risk_info.model_sale_order
 msgid "Sales Order"
-msgstr ""
-
-#. module: sale_financial_risk_info
-#: code:addons/sale_financial_risk_info/models/sale.py:0
-#, python-format
-msgid "Unlimited"
-msgstr "Sin límite"
-
-#, python-format
-#~ msgid "<h5%s>%s%s of %s%s (%s%%)</h5>"
-#~ msgstr "<h5%s>%s%s de %s%s (%s%%)</h5>"
+msgstr "Pedido de venta"

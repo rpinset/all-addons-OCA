@@ -117,9 +117,9 @@ Date:   Thu Mar 27 08:03:44 2025 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 4f2b4d0096a40dd0bb59384452fd88665acf065c
+commit 3120d9b89d20e16c5e31c7ff100f9bc61c5ac9eb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 1 22:31:32 2025 +0000
+Date:   Tue Apr 8 18:05:50 2025 +0000
 
     [BOT] post-merge updates
 
@@ -162,16 +162,16 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 1fabf27f532d247e7f7ffef21c7c64655bc5b60d
-Author: Carlos Dauden <carlos.dauden@tecnativa.com>
-Date:   Fri Feb 28 08:36:16 2025 +0000
+commit b6a189191994601cf6527ed38bb2650278acb5e9
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Apr 8 11:09:39 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 96.0% (24 of 25 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: credit-control-15.0/credit-control-15.0-sale_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-sale_financial_risk/es/
+    Translation: credit-control-15.0/credit-control-15.0-sale_financial_risk_info
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-sale_financial_risk_info/
 
 
 ## data-protection
@@ -203,9 +203,9 @@ Date:   Sun Feb 2 18:00:36 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 469ecdcd4d1e4b12d27728c35cd680d3ff1794f2
+commit 5a2e3262965f0e31f6d2b27c7cdc02999ded2f6a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 11 07:15:17 2025 +0000
+Date:   Wed Apr 9 17:41:50 2025 +0000
 
     [BOT] post-merge updates
 
@@ -355,16 +355,11 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4e477c7fdf0a734b5529d10f37e2f29e1dc7a928
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Mar 31 08:23:44 2025 +0000
+commit cd0a5fefa548ebedc88e58cb3bf964d55b1d98ec
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 9 11:21:19 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_partner_incoterm
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_partner_incoterm/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -927,9 +922,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 4bfe1350723ef4fbd12f70c0e60f29b728ddb3d7
+commit 0b7ab1a707e80e8cca884858366409d676f76581
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 12 13:45:02 2025 +0000
+Date:   Mon Apr 7 16:31:23 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1090,11 +1085,16 @@ Date:   Sat Feb 15 08:01:19 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit be2d28cd1ad797eff85d6b286299ca04f9c78a1e
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:35:13 2025 +0000
+commit 9eb8cf1d30fedf6b8794327372f4776131c443f9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Apr 8 07:03:20 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 94.1% (324 of 344 strings)
+    
+    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp/it/
 
 
 ## wms
@@ -1300,9 +1300,9 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ca23f1a3c9bcfb35873cac8b55f046d1ebffef42
+commit 57d3aedb9be5f0610d1776a50d78e43cd5b335c8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 18 13:05:00 2025 +0000
+Date:   Tue Apr 8 15:40:57 2025 +0000
 
     [BOT] post-merge updates
 

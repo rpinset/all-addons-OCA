@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="sale_crm_team_invoiced_config_settings_form_view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="crm.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//div[hasclass('app_settings_block')][@data-key='crm']"
+                position="inside"
+            >
+                <h2>Team Invoiced Domain</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-12 o_setting_box">  <div
+                            class="o_setting_right_pane"
+                        >  <label
+                                for="crm_team_invoiced_domain"
+                                string="Invoiced Domain"
+                            />  <field
+                                name="crm_team_invoiced_domain"
+                                widget="domain"
+                                options="{'model': 'account.move'}"
+                            />
+                            <div class="text-muted">
+                                Define the domain for calculating the invoiced amount for CRM teams.
+                                This domain filters invoices based on their payment state.
+                                For example: `[('payment_state', '=', 'paid')]`
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

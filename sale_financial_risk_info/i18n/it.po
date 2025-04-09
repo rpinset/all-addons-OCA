@@ -17,6 +17,12 @@ msgstr ""
 "X-Generator: Weblate 4.14.1\n"
 
 #. module: sale_financial_risk_info
+#: code:addons/sale_financial_risk_info/models/sale.py:0
+#, python-format
+msgid "%(risk_total)s / Unlimited"
+msgstr ""
+
+#. module: sale_financial_risk_info
 #: model:ir.model,name:sale_financial_risk_info.model_res_partner
 msgid "Contact"
 msgstr "Contatto"
@@ -47,11 +53,9 @@ msgstr "Avviso percentuale di rischio"
 msgid "Sales Order"
 msgstr "Ordine di vendita"
 
-#. module: sale_financial_risk_info
-#: code:addons/sale_financial_risk_info/models/sale.py:0
 #, python-format
-msgid "Unlimited"
-msgstr "Illimitato"
+#~ msgid "Unlimited"
+#~ msgstr "Illimitato"
 
 #~ msgid "Display Name"
 #~ msgstr "Nome da visualizzare"
