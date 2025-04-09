@@ -81,7 +81,7 @@ class MailMail(models.Model):
             email = mail._send_prepare_values()
             # ===== Same with native Odoo =====
             # headers
-            headers = {"X-Odoo-Message-Id": mail.message_id}
+            headers = {}
             bounce_alias = ICP.get_param("mail.bounce.alias")
             catchall_domain = ICP.get_param("mail.catchall.domain")
             if bounce_alias and catchall_domain:

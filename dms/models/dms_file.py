@@ -202,6 +202,7 @@ class File(models.Model):
         prefetch=False,
         invisible=True,
         ondelete="cascade",
+        index=True,
     )
 
     def get_human_size(self):
@@ -618,6 +619,13 @@ class File(models.Model):
                 vals = self._create_model_attachment(vals)
             new_vals_list.append(vals)
         return super(File, self).create(new_vals_list)
+
+    def unlink(self):
+        attachments = self.mapped("attachment_id")
+        res = super().unlink()
+        if not self.env.context.get("dms_file"):
+            attachments.with_context(dms_file=True).unlink()
+        return res
 
     # ----------------------------------------------------------
     # Locking fields and functions

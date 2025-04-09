@@ -100,7 +100,7 @@
                                     <field name="date_remove" />
                                 </group>
                             </group>
-                            <group string="Other Information">
+                            <group string="Other Information" name="general_info">
                                 <group>
                                     <field name="profile_id" />
                                     <field name="group_ids" widget="many2many_tags" />

@@ -10,6 +10,11 @@ from odoo.tests import Form
 from odoo.addons.mail.models.mail_mail import MailMail as upstream
 from odoo.addons.mail.tests.test_mail_composer import TestMailComposer
 
+# When Odoo upstream function _send in the mall.mail model, that has been fully
+# overwritten in this module changes, we might have to reflect those changes
+# in our version. The change is detected by computing the hash on the upstream code.
+# To check what needs to be done, look at the commits in Odoo:
+#   git log --oneline -- addons/mail/models/mail_mail.py
 VALID_HASHES = [
     "d52cb36b88b33abc9556f7be6718d93f",
     "461467cd5b356072fc054468c75f6e26",
@@ -17,6 +22,7 @@ VALID_HASHES = [
     "46172c91183f2cb50b22a6b3b5e3869b",
     "8f26c4084cc7fc300e64d19ccdc944fe",
     "db6cc0d3513a0c85bd716e4cb0a4d09c",
+    "458982c6cb3a347b13008f7d8130f633",  # 2025-04-08, odoo commit 3af276804101
 ]
 
 
