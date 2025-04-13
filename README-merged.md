@@ -5122,7 +5122,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 15.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 15.0.3.11.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
-[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.1 |  | AEAT modelo 347
+[l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.2 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | [![nicolasramos](https://github.com/nicolasramos.png?size=30px)](https://github.com/nicolasramos) | AEAT modelo 347 IGIC
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
@@ -5297,7 +5297,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.0.3 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.1.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_inter_company](l10n_th_account_tax_inter_company/) | 15.0.1.0.0 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Thai Localization - Inter Company Tax

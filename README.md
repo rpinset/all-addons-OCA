@@ -922,9 +922,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 0b7ab1a707e80e8cca884858366409d676f76581
+commit 3257607c1d906867087f882b67a268295dd6997e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 7 16:31:23 2025 +0000
+Date:   Thu Apr 10 18:50:53 2025 +0000
 
     [BOT] post-merge updates
 
@@ -949,9 +949,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit b128bd0556b8b10b89efa2739bf37b7bdb331cc9
+commit 09872277c991c61f6d69e40267cedc3675ee53c9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Mar 7 08:24:24 2025 +0000
+Date:   Fri Apr 11 08:00:42 2025 +0000
 
     [BOT] post-merge updates
 
