@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_location_form" model="ir.ui.view">
+        <field name="name">stock.location.form.tray.type</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form" />
+        <field name="arch" type="xml">
+            <group name="additional_info" position="after">
+                <group string="Tray" name="tray">
+                    <field name="tray_type_id" invisible="cell_in_tray_type_id" />
+                    <field name="cell_name_format" invisible="not tray_type_id" />
+                    <field
+                        name="cell_in_tray_type_id"
+                        invisible="not cell_in_tray_type_id"
+                    />
+                    <field
+                        name="tray_matrix"
+                        widget="location_tray_matrix"
+                        invisible="not tray_type_id and not cell_in_tray_type_id"
+                        options="{'click_action': 'action_tray_matrix_click'}"
+                    />
+                    <field
+                        name="posx"
+                        readonly="cell_in_tray_type_id"
+                        invisible="not cell_in_tray_type_id or tray_type_id"
+                    />
+                    <field
+                        name="posy"
+                        readonly="cell_in_tray_type_id"
+                        invisible="not cell_in_tray_type_id and tray_type_id"
+                    />
+                    <field
+                        name="posz"
+                        readonly="cell_in_tray_type_id"
+                        invisible="not cell_in_tray_type_id and tray_type_id"
+                    />
+                </group>
+            </group>
+        </field>
+    </record>
+    <record id="view_location_search" model="ir.ui.view">
+        <field name="name">stock.location.search.tray.type</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_search" />
+        <field name="arch" type="xml">
+            <field name="location_id" position="after">
+                <separator />
+                <field name="tray_type_id" />
+            </field>
+        </field>
+    </record>
+</odoo>

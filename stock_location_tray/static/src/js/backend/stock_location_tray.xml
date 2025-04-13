@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="stock_location_tray.LocationTrayMatrix">
+        <canvas
+            t-ref="canvas"
+            t-on-click="(ev) => this._onClick(ev)"
+            t-att-style="props.clickAction ? 'cursor: pointer' : ''"
+        />
+    </t>
+</templates>

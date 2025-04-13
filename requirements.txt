@@ -104,6 +104,8 @@ python-stdnum
 # From [https://github.com/OCA/l10n-iran.git](https://github.com/OCA/l10n-iran.git)
 # From [https://github.com/OCA/l10n-ireland.git](https://github.com/OCA/l10n-ireland.git)
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
 # From [https://github.com/OCA/l10n-luxemburg.git](https://github.com/OCA/l10n-luxemburg.git)
 # From [https://github.com/OCA/l10n-macedonia.git](https://github.com/OCA/l10n-macedonia.git)
@@ -219,10 +221,14 @@ schwifty==2024.4.0
 a2wsgi>=1.10.6
 apispec
 cerberus
+contextvars
+extendable>=0.0.4
 fastapi>=0.110.0
 parse-accept-language
+pydantic
 pyquerystring
 python-multipart
+typing-extensions
 ujson
 # From [https://github.com/OCA/role-policy.git](https://github.com/OCA/role-policy.git)
 # From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
