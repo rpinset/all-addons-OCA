@@ -572,11 +572,15 @@ class AccountBankStatementLine(models.Model):
             liquidity_amount += line_data["amount"]
             if line_data["kind"] == "liquidity":
                 default_name = line_data["name"]
+        partner = (
+            reconcile_model._get_partner_from_mapping(self) or self._retrieve_partner()
+        )
         for line in reconcile_model._get_write_off_move_lines_dict(
-            -liquidity_amount, self._retrieve_partner().id
+            -liquidity_amount, partner.id
         ):
             new_line = line.copy()
             new_line["name"] = new_line.get("name") or default_name
+            new_line["partner_id"] = partner and partner.name_get()[0] or False
             amount = line.get("balance")
             if self.foreign_currency_id:
                 amount = self.foreign_currency_id.compute(

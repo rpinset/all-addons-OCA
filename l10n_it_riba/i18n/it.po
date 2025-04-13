@@ -114,6 +114,7 @@ msgstr "Azione richiesta"
 
 #. module: l10n_it_riba
 #: model:ir.model.fields.selection,name:l10n_it_riba.selection__riba_configuration__type__incasso
+#: model:ir.model.fields.selection,name:l10n_it_riba.selection__riba_past_due__config_type__incasso
 msgid "After Collection"
 msgstr "Al dopo incasso"
 
@@ -222,7 +223,10 @@ msgid "Bills"
 msgstr "Effetti"
 
 #. module: l10n_it_riba
+#. odoo-python
+#: code:addons/l10n_it_riba/wizard/wizard_past_due.py:0
 #: model:ir.model.fields,field_description:l10n_it_riba.field_riba_past_due__effects_account_id
+#, python-format
 msgid "Bills Account"
 msgstr "Conto effetti"
 
@@ -764,6 +768,7 @@ msgstr "Emissione"
 
 #. module: l10n_it_riba
 #: model:ir.model.fields,field_description:l10n_it_riba.field_riba_configuration__type
+#: model:ir.model.fields,field_description:l10n_it_riba.field_riba_past_due__config_type
 msgid "Issue Mode"
 msgstr "Modalità emissione"
 
@@ -1504,6 +1509,7 @@ msgstr "Stato"
 
 #. module: l10n_it_riba
 #: model:ir.model.fields.selection,name:l10n_it_riba.selection__riba_configuration__type__sbf
+#: model:ir.model.fields.selection,name:l10n_it_riba.selection__riba_past_due__config_type__sbf
 msgid "Subject To Collection"
 msgstr "Salvo buon fine"
 

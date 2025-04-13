@@ -3,6 +3,8 @@
 
 from contextlib import contextmanager
 
+from odoo.http import _dispatchers
+
 from odoo.addons.extendable.registry import _extendable_registries_database
 from odoo.addons.fastapi.fastapi_dispatcher import (
     FastApiDispatcher as BaseFastApiDispatcher,
@@ -11,7 +13,9 @@ from odoo.addons.fastapi.fastapi_dispatcher import (
 from extendable import context
 
 
-class FastApiDispatcher(BaseFastApiDispatcher):
+# Inherit from last registered fastapi dispatcher
+# This handles multiple overload of dispatchers
+class FastApiDispatcher(_dispatchers.get("fastapi", BaseFastApiDispatcher)):
     routing_type = "fastapi"
 
     def dispatch(self, endpoint, args):

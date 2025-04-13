@@ -13,12 +13,26 @@ from typing import Iterable
 
 import a2wsgi
 from a2wsgi.asgi import ASGIResponder
+from a2wsgi.asgi_typing import ASGIApp
 from a2wsgi.wsgi_typing import Environ, StartResponse
 
 from .pools import event_loop_pool
 
 
 class ASGIMiddleware(a2wsgi.ASGIMiddleware):
+    def __init__(
+        self,
+        app: ASGIApp,
+        wait_time: float | None = None,
+    ) -> None:
+        # We don't want to use the default event loop policy
+        # because we want to manage the event loop ourselves
+        # using the event loop pool.
+        # Since the the base class check if the given loop is
+        # None, we can pass False to avoid the initialization
+        # of the default event loop
+        super().__init__(app, wait_time, False)
+
     def __call__(
         self, environ: Environ, start_response: StartResponse
     ) -> Iterable[bytes]:

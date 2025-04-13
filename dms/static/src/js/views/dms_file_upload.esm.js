@@ -102,16 +102,18 @@ export const FileUpload = {
     async onUpload(attachments) {
         const self = this;
         const attachmentIds = attachments.map((a) => a.id);
-        const ctx = this.props.context;
+        const ctx = Object.assign(
+            {},
+            this.actionService.currentController.props.context,
+            this.props.context
+        );
         const controllerID = this.actionService.currentController.jsId;
 
         if (!attachmentIds.length) {
             this.notification.add(_t("An error occurred during the upload"));
             return;
         }
-
         // Search the correct directory_id value according to the domain
-        ctx.default_directory_id = false;
         if (this.props.domain) {
             for (const domain_item of this.props.domain) {
                 if (domain_item.length === 3) {
@@ -122,7 +124,7 @@ export const FileUpload = {
             }
         }
 
-        if (ctx.default_directory_id === false) {
+        if (!ctx.default_directory_id) {
             self.actionService.restore(controllerID);
             return self.notification.add(
                 this.env._t("You must select a directory first"),

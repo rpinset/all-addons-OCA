@@ -62,13 +62,6 @@ msgid "Balance sign"
 msgstr ""
 
 #. module: l10n_it_account
-#. odoo-python
-#: code:addons/l10n_it_account/models/account_account.py:0
-#, python-format
-msgid "Balance sign's value can only be 1 or -1."
-msgstr ""
-
-#. module: l10n_it_account
 #: model:ir.ui.menu,name:l10n_it_account.menu_date_range_type_action_accounting
 msgid "Date Range Types"
 msgstr ""
@@ -86,13 +79,6 @@ msgstr ""
 #. module: l10n_it_account
 #: model:ir.ui.menu,name:l10n_it_account.menu_date_range_generator_action
 msgid "Generate Date Ranges"
-msgstr ""
-
-#. module: l10n_it_account
-#. odoo-python
-#: code:addons/l10n_it_account/models/account_group.py:0
-#, python-format
-msgid "Incoherent balance signs for '{}' and its subgroups."
 msgstr ""
 
 #. module: l10n_it_account

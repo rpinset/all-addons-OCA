@@ -270,9 +270,9 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
                 break
         self.assertTrue(bank_past_due_line)
 
-    def test_riba_incasso_flow(self):
+    def test_riba_incasso_all_paid(self):
         """
-        RiBa of type 'After Collection' pays invoice when accepted.
+        RiBa of type 'After Collection' all paid flow
         """
         self.invoice.company_id.due_cost_service_id = self.service_due_cost
         self.invoice.action_post()
@@ -302,10 +302,86 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         riba_list.confirm()
 
         self.assertEqual(riba_list.state, "accepted")
+        self.assertEqual(self.invoice.state, "posted")
+
+        # invoice should be paid
         self.assertEqual(self.invoice.payment_state, "paid")
 
+        # Action: Pay the RiBa
+        payment_wizard_action = riba_list.settle_all_line()
+        payment_wizard_form = Form(
+            self.env[payment_wizard_action["res_model"]].with_context(
+                **payment_wizard_action["context"]
+            )
+        )
+        # payment_wizard_form.payment_date = datetime.date.today()
+        payment_wizard = payment_wizard_form.save()
+        payment_wizard.pay()
+
+        # Assert
+        self.assertEqual(riba_list.state, "paid")
+        # invoice should be partial paid
+        self.assertEqual(self.invoice.payment_state, "paid")
+
+    def test_riba_incasso_past_due(self):
+        """
+        RiBa of type 'After Collection' past due flow
+        """
+        self.invoice.company_id.due_cost_service_id = self.service_due_cost
+        self.invoice.action_post()
+        self.assertEqual(self.invoice.state, "posted")
+
+        to_issue_action = self.env.ref("l10n_it_riba.action_riba_to_issue")
+        to_issue_model = self.env[to_issue_action.res_model]
+        to_issue_domain = safe_eval.safe_eval(to_issue_action.domain)
+        to_issue_records = (
+            to_issue_model.search(to_issue_domain) & self.invoice.line_ids
+        )
+        self.assertTrue(to_issue_records)
+
+        issue_wizard_context = {
+            "active_model": to_issue_records._name,
+            "active_ids": to_issue_records.ids,
+        }
+        issue_wizard_model = self.env["riba.issue"].with_context(**issue_wizard_context)
+        issue_wizard_form = Form(issue_wizard_model)
+        issue_wizard_form.configuration_id = self.riba_config_incasso
+        issue_wizard = issue_wizard_form.save()
+        issue_result = issue_wizard.create_list()
+
+        riba_list_id = issue_result["res_id"]
+        riba_list_model = issue_result["res_model"]
+        riba_list = self.env[riba_list_model].browse(riba_list_id)
+        riba_list.confirm()
+
+        self.assertEqual(riba_list.state, "accepted")
+        self.assertEqual(self.invoice.state, "posted")
+
+        # invoice should be paid
+        self.assertEqual(self.invoice.payment_state, "paid")
+
+        # past due wizard
+        past_due_wizard = (
+            self.env["riba.past_due"]
+            .with_context(
+                active_model="riba.slip.line",
+                active_ids=[riba_list.line_ids[0].id],
+                active_id=riba_list.line_ids[0].id,
+            )
+            .create({})
+        )
+        past_due_wizard.create_move()
+        self.assertEqual(riba_list.state, "past_due")
+        self.assertEqual(len(riba_list.line_ids), 2)
+        self.assertEqual(riba_list.line_ids[0].state, "past_due")
+        self.assertTrue(self.invoice.past_due_move_line_ids)
+        # invoice should be partial paid
+        self.assertEqual(self.invoice.payment_state, "partial")
+
     def test_past_due_riba(self):
-        # create another invoice to test past due RiBa
+        """
+        RiBa of type 'sbf' past due flow
+        """
         self.partner.property_account_receivable_id = self.account_rec1_id.id
         recent_date = (
             self.env["account.move"]
@@ -623,6 +699,24 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         company_2 = self.company2
         partner_bank = self.company2_bank
         partner_bank.company_id = company_2
+        suspense_account = self.bank_journal.suspense_account_id.copy(
+            {"company_id": company_2.id}
+        )
+        profit_account = self.bank_journal.profit_account_id.copy(
+            {"company_id": company_2.id}
+        )
+        loss_account = self.bank_journal.loss_account_id.copy(
+            {"company_id": company_2.id}
+        )
+        bank_journal = self.bank_journal.copy(
+            {
+                "company_id": company_2.id,
+                "suspense_account_id": suspense_account.id,
+                "profit_account_id": profit_account.id,
+                "loss_account_id": loss_account.id,
+            }
+        )
+        sbf_effects = self.sbf_effects.copy({"company_id": company_2.id})
         # pre-condition
         self.assertEqual(partner_bank.company_id, company_2)
         self.assertNotEqual(current_company, company_2)
@@ -634,6 +728,8 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
                     "name": "Subject To Collection",
                     "type": "incasso",
                     "bank_id": partner_bank.id,
+                    "acceptance_journal_id": bank_journal.id,
+                    "acceptance_account_id": sbf_effects.id,
                 }
             )
 

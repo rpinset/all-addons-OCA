@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mrp_production_workorder_tree_editable_view" model="ir.ui.view">
+        <field name="name">mrp.production.work.order.tree.editable</field>
+        <field name="model">mrp.workorder</field>
+        <field
+            name="inherit_id"
+            ref="mrp.mrp_production_workorder_tree_editable_view"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="attributes">
+                <attribute name="default_order">priority desc</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="priority" widget="priority" nolabel="1" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mrp_production_work_order_search" model="ir.ui.view">
+        <field name="name">mrp.production.work.order.search</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.view_mrp_production_work_order_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='date_start_filter']" position="after">
+                <separator />
+                <filter
+                    string="Urgent Priority"
+                    domain="[('priority', '=', 1)]"
+                    name="urgent_priority"
+                />
+                <filter
+                    string="Normal Priority"
+                    domain="[('priority', '=', 0)]"
+                    name="normal_priority"
+                />
+            </xpath>
+            <xpath expr="//filter[@name='product']" position="after">
+                <filter
+                    string="Priority"
+                    name="priority"
+                    domain="[]"
+                    context="{'group_by': 'priority'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_mrp_production_workorder_form_view_filter" model="ir.ui.view">
+        <field name="name">mrp.production.work.order.select</field>
+        <field name="model">mrp.workorder</field>
+        <field
+            name="inherit_id"
+            ref="mrp.view_mrp_production_workorder_form_view_filter"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='late']" position="after">
+                <separator />
+                <filter
+                    string="Urgent Priority"
+                    domain="[('priority', '=', 1)]"
+                    name="urgent_priority"
+                />
+                <filter
+                    string="Normal Priority"
+                    domain="[('priority', '=', 0)]"
+                    name="normal_priority"
+                />
+            </xpath>
+            <xpath expr="//filter[@name='scheduled_month']" position="after">
+                <filter
+                    string="Priority"
+                    name="priority"
+                    domain="[]"
+                    context="{'group_by': 'priority'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="workcenter_line_kanban" model="ir.ui.view">
+        <field name="name">mrp.production.work.order.kanban</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.workcenter_line_kanban" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="priority" widget="priority" />
+            </xpath>
+            <xpath expr="//kanban" position="attributes">
+                <attribute name="default_order">priority desc</attribute>
+            </xpath>
+            <xpath
+                expr="//h5[hasclass('oe_kanban_bottom_left')]/span"
+                position="before"
+            >
+                <field name="priority" widget="priority" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
