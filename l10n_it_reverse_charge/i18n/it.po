@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-24 10:37+0000\n"
-"PO-Revision-Date: 2023-07-08 11:10+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2025-04-11 11:24+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_reverse_charge
 #: code:addons/l10n_it_reverse_charge/models/account_rc_type.py:0
@@ -289,6 +289,11 @@ msgid ""
 "Date: %(date)s\n"
 "Internal reference: %(internal_reference)s"
 msgstr ""
+"Autofattura reverse charge.\n"
+"Fornitore: %(supplier)s\n"
+"Riferimento: %(reference)s\n"
+"Data: %(date)s\n"
+"Riferimento interno: %(internal_reference)s"
 
 #. module: l10n_it_reverse_charge
 #: model:ir.model.fields,field_description:l10n_it_reverse_charge.field_account_rc_type_tax__sale_tax_id

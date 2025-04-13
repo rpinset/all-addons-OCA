@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-30 21:25+0000\n"
-"PO-Revision-Date: 2025-03-18 11:53+0000\n"
+"PO-Revision-Date: 2025-04-11 11:24+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.view_account_config_settings_riba
@@ -382,6 +382,22 @@ msgstr "Annulla"
 #: model:ir.model.fields.selection,name:l10n_it_ricevute_bancarie.selection__riba_distinta_line__state__cancel
 msgid "Canceled"
 msgstr "Annullato"
+
+#. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, python-format
+msgid ""
+"Cannot post invoices with C/O payments without bank. Please check the "
+"following invoices:\n"
+"\n"
+"- \n"
+"- "
+msgstr ""
+"Non è possibile confermare fatture con pagamento RiBa senza banca impostata. "
+"Verifica le seguenti fatture:\n"
+"\n"
+"- \n"
+"- "
 
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
@@ -805,6 +821,12 @@ msgid "Immediate"
 msgstr "Immediata"
 
 #. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, python-format
+msgid "Invoice %(name)s for customer \"%(customer_name)s\", total %(amount)s"
+msgstr "Fattura %(name)s per cliente \"%(customer_name)s\", totale %(amount)s"
+
+#. module: l10n_it_ricevute_bancarie
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_distinta_line__invoice_date
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "Invoice Date"
@@ -820,6 +842,12 @@ msgstr "Registrazioni fattura"
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_qweb
 msgid "Invoice Number"
 msgstr "Numero fattura"
+
+#. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, python-format
+msgid "Invoice is linked to C/O slip No. {riba}"
+msgstr "La fattura è collegata alla distinta RiBa n. {riba}"
 
 #. module: l10n_it_ricevute_bancarie
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_account_bank_statement_line__is_riba_payment
@@ -1063,6 +1091,16 @@ msgstr "Nessun ID attivo trovato."
 #, python-format
 msgid "No bank has been specified for invoice %s"
 msgstr "Non è stata specificata una banca per la fattura %s"
+
+#. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, fuzzy, python-format
+msgid ""
+"Non è possibile emettere una riba legata ad un IBAN archiviato; riga: %s , "
+"contatto: %s"
+msgstr ""
+"Non è possibile emettere una riba legata ad un IBAN archiviato; riga: %s , "
+"contatto: %s"
 
 #. module: l10n_it_ricevute_bancarie
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_distinta_line__sequence
@@ -1346,6 +1384,14 @@ msgid "Set RiBa Payment Date"
 msgstr "Imposta data pagamento RiBa"
 
 #. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, python-format
+msgid "Set a Service for Collection Fees in Company Config."
+msgstr ""
+"Impostare un servizio per le spese di incasso nella configurazione "
+"dell'azienda."
+
+#. module: l10n_it_ricevute_bancarie
 #: model:ir.actions.server,name:l10n_it_ricevute_bancarie.riba_line_settle_action_server
 msgid "Settle RiBa Line"
 msgstr "Paga riga RiBa"
@@ -1422,6 +1468,16 @@ msgstr "Salvo buon fine"
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.distinta_layout
 msgid "Tel:"
 msgstr "Tel:"
+
+#. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
+#, python-format
+msgid ""
+"The bank accounts with accreditation code {acc_codes}s cannot be deleted as "
+"they are used in invoices. If possible, archive the bank account"
+msgstr ""
+"I conti bancari con codice {acc_codes}s non possono essere eliminati perchè "
+"utilizzati nelle RiBa. Se possibile, archiviare il conto bancario"
 
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.riba_issue_view
@@ -1522,39 +1578,11 @@ msgstr ""
 msgid "of"
 msgstr "del"
 
+#. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
 #, python-format
-#~ msgid ""
-#~ "Cannot post invoices with C/O payments without bank. Please check the "
-#~ "following invoices:\n"
-#~ "\n"
-#~ "- \n"
-#~ "- "
-#~ msgstr ""
-#~ "Non è possibile confermare fatture con pagamento RiBa senza banca "
-#~ "impostata. Verifica le seguenti fatture:\n"
-#~ "\n"
-#~ "- \n"
-#~ "- "
-
-#, python-format
-#~ msgid ""
-#~ "Invoice %(name)s for customer \"%(customer_name)s\", total %(amount)s"
-#~ msgstr ""
-#~ "Fattura %(name)s per cliente \"%(customer_name)s\", totale %(amount)s"
-
-#, python-format
-#~ msgid "Invoice is linked to C/O slip No. {riba}"
-#~ msgstr "La fattura è collegata alla distinta RiBa n. {riba}"
-
-#, python-format
-#~ msgid "Set a Service for Collection Fees in Company Config."
-#~ msgstr ""
-#~ "Impostare un servizio per le spese di incasso nella configurazione "
-#~ "dell'azienda."
-
-#, python-format
-#~ msgid "{line_name} for {month}-{year}"
-#~ msgstr "{line_name} per {month}-{year}"
+msgid "{line_name} for {month}-{year}"
+msgstr "{line_name} per {month}-{year}"
 
 #, python-format
 #~ msgid "Past Due C/O %s - Line %s"

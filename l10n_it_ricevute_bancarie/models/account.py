@@ -45,11 +45,12 @@ class ResPartnerBankAdd(models.Model):
             .mapped("riba_partner_bank_id")
         )
         if protected_records:
+            acc_numbers = [bank.acc_number for bank in protected_records]
             message = _(
-                "The bank accounts with accreditation code "
-                f"{[bank.acc_number for bank in protected_records]}"
+                "The bank accounts with accreditation code {acc_codes}s"
                 " cannot be deleted as they are used in invoices."
-                " If possible, archive the bank account"
+                " If possible, archive the bank account",
+                acc_codes=", ".join(acc_numbers),
             )
             raise UserError(message)
 

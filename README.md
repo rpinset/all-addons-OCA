@@ -110,11 +110,11 @@ Date:   Sun Feb 2 17:56:28 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit eedfa024e2933b3f238316fca73b7e261ac4128c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Mar 16 17:42:05 2025 +0000
+commit 7db1d48c82381d6baa0ccea8f57aac02eed7e11c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Apr 11 08:40:31 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## account-fiscal-rule
@@ -861,11 +861,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 1dc2c8aeff86def1a32b87c7b525cb9904935df8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 9 15:26:40 2025 +0000
+commit 8e2695018055c1e3199f82d6c241849534e88bf3
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Apr 11 08:48:49 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (61 of 61 strings)
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_reverse_charge
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_reverse_charge/it/
 
 
 ## l10n-japan
@@ -1071,11 +1076,16 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit cb72dc171e7763473c4ad587b4fc4d7ead847d3c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 2 17:05:12 2025 +0000
+commit 643aabb7ab786da4330d2d95ed59ada7c407e548
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Apr 10 12:33:57 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: delivery-carrier-14.0/delivery-carrier-14.0-delivery_purchase_label
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-delivery_purchase_label/
 
 
 ## stock-logistics-barcode
@@ -1173,16 +1183,11 @@ Date:   Tue Apr 8 07:03:21 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 281bd63fae78cc020f8e6ca62e3dd3ca3583ea2c
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Apr 9 12:50:28 2025 +0000
+commit 43e8809617ce30a10eae608983a32c47cdc8279d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 9 21:42:59 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: wms-14.0/wms-14.0-stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_available_to_promise_release/
+    [BOT] post-merge updates
 
 
 ## manufacture
@@ -1563,16 +1568,11 @@ Date:   Sun Feb 2 19:01:08 2025 +0000
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 069d1863106060b0ad05f912ac5fe81eeeedd0d7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:17:02 2025 +0000
+commit a19fb74a7263a8927030e0709aad151197f3886a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Apr 10 11:43:27 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 25.0% (1 of 4 strings)
-    
-    Translation: rest-framework-14.0/rest-framework-14.0-datamodel
-    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-14-0/rest-framework-14-0-datamodel/it/
+    [BOT] post-merge updates
 
 
 ## vertical-association

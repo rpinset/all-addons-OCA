@@ -40,3 +40,11 @@ class TestPydantic(SavepointCase):
         res = self._to_response_list(instances)
         self.assertEqual(len(res), 2)
         self.assertSetEqual({r["name"] for r in res}, {"Instance 1", "Instance 2"})
+
+    def test_to_response_fail(self):
+        class Model1(BaseModel):
+            name: str
+
+        instance = Model1.construct()
+        with self.assertRaisesRegex(SystemError, "Invalid Response"):
+            self._to_response(instance)

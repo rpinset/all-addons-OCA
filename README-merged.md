@@ -4790,7 +4790,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.9 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
-[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.14.2 |  | Ricevute bancarie
+[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.14.3 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdd_cbi](l10n_it_sdd_cbi/) | 14.0.1.0.0 |  | Create SEPA files for CBI SDD Italy
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
@@ -5996,7 +5996,7 @@ addon | version | maintainers | summary
 [delivery_price_product_domain](delivery_price_product_domain/) | 14.0.1.0.4 | [![solo4games](https://github.com/solo4games.png?size=30px)](https://github.com/solo4games) [![CetmixGitDrone](https://github.com/CetmixGitDrone.png?size=30px)](https://github.com/CetmixGitDrone) | Apply domain to product in shipping charges rules
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 14.0.1.0.3 | [![AshishHirapara](https://github.com/AshishHirapara.png?size=30px)](https://github.com/AshishHirapara) | Add untaxed amount to variables for price delivery price rule
 [delivery_purchase](delivery_purchase/) | 14.0.1.3.0 |  | Delivery costs in purchases
-[delivery_purchase_label](delivery_purchase_label/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows printing carrier delivery labels for a dropshipping vendor.
+[delivery_purchase_label](delivery_purchase_label/) | 14.0.1.1.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows printing carrier delivery labels for a dropshipping vendor.
 [delivery_roulier](delivery_roulier/) | 14.0.1.1.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Integration of multiple carriers
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.2.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
@@ -6677,6 +6677,7 @@ addon | version | maintainers | summary
 [stock_available_to_promise_release](stock_available_to_promise_release/) | 14.0.3.2.0 |  | Release Operations based on available to promise
 [stock_available_to_promise_release_dynamic_routing](stock_available_to_promise_release_dynamic_routing/) | 14.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue between moves release and dynamic routing
 [stock_available_to_promise_release_exclude_location](stock_available_to_promise_release_exclude_location/) | 14.0.1.0.0 |  | Exclude locations from available stock
+[stock_available_to_promise_release_shipment_advice](stock_available_to_promise_release_shipment_advice/) | 14.0.1.0.0 |  | Glue module between release of operations and shipment advice
 [stock_checkout_sync](stock_checkout_sync/) | 14.0.1.1.0 |  | Sync location for Checkout operations
 [stock_dynamic_routing](stock_dynamic_routing/) | 14.0.1.1.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Dynamic routing of stock moves
 [stock_dynamic_routing_checkout_sync](stock_dynamic_routing_checkout_sync/) | 14.0.1.0.0 |  | Glue module for tests when dynamic routing and checkout sync are used
@@ -8968,7 +8969,7 @@ addon | version | maintainers | summary
 [base_rest_auth_user_service](base_rest_auth_user_service/) | 14.0.1.1.0 |  | Login/logout from session using a REST call
 [base_rest_datamodel](base_rest_datamodel/) | 14.0.4.3.0 |  | Datamodel binding for base_rest
 [base_rest_demo](base_rest_demo/) | 14.0.4.2.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
-[base_rest_pydantic](base_rest_pydantic/) | 14.0.4.3.3 |  | Pydantic binding for base_rest
+[base_rest_pydantic](base_rest_pydantic/) | 14.0.4.3.4 |  | Pydantic binding for base_rest
 [datamodel](datamodel/) | 14.0.3.0.5 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 14.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 14.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Allows the use of extendable into fastapi apps
