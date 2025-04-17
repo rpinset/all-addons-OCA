@@ -68,5 +68,9 @@ msgstr "Trasferimento"
 #. module: stock_move_auto_assign_auto_release
 #: code:addons/stock_move_auto_assign_auto_release/models/stock_move.py:0
 #, python-format
-msgid "Try releasing \"{}\" for quantities added in: {}"
-msgstr "Tentativo rilascio \"{}\" per quantità aggiunte in: {}"
+msgid "Try releasing \"%(product)s\" for quantities added in: %(locations)s"
+msgstr ""
+
+#, python-format
+#~ msgid "Try releasing \"{}\" for quantities added in: {}"
+#~ msgstr "Tentativo rilascio \"{}\" per quantità aggiunte in: {}"

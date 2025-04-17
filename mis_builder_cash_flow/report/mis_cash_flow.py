@@ -75,8 +75,8 @@ class MisCashFlow(models.Model):
             "selection"
         ]
 
-    def init(self):
-        query = """
+    def _init_query(self):
+        return """
             SELECT
                 -- we use negative id to avoid duplicates and we don't use
                 -- ROW_NUMBER() because the performance was very poor
@@ -128,6 +128,9 @@ class MisCashFlow(models.Model):
                 fl.date as date
             FROM mis_cash_flow_forecast_line as fl
         """
+
+    def init(self):
+        query = self._init_query()
         tools.drop_view_if_exists(self.env.cr, self._table)
         self._cr.execute(
             "CREATE OR REPLACE VIEW %s AS (%s)", (AsIs(self._table), AsIs(query))
