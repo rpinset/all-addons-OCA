@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Tecnativa - Víctor Martínez
+# Copyright 2023-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo.tests import Form, tagged
 
@@ -76,6 +76,17 @@ class TestHrExpenseAnalyticTag(TestExpenseCommon):
             self.analytic_account_1.id: 50,
         }
         self.expense.analytic_tag_ids = self.analytic_tag_1 + self.analytic_tag_2
+        expense_sheet = self._action_submit_expenses(self.expense)
+        expense_sheet.approve_expense_sheets()
+        move = expense_sheet.action_sheet_move_create()
+        tags = move.mapped("line_ids.analytic_line_ids.tag_ids")
+        self.assertIn(self.analytic_tag_1, tags)
+        self.assertNotIn(self.analytic_tag_2, tags)
+
+    def test_hr_expense_company_account_with_tags(self):
+        self.expense.payment_mode = "company_account"
+        self.expense.analytic_distribution = {self.analytic_account_1.id: 100}
+        self.expense.analytic_tag_ids = self.analytic_tag_1
         expense_sheet = self._action_submit_expenses(self.expense)
         expense_sheet.approve_expense_sheets()
         move = expense_sheet.action_sheet_move_create()

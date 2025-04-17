@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: account-payment (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-15 18:00+0000\n"
-"PO-Revision-Date: 2024-09-25 09:06+0000\n"
+"PO-Revision-Date: 2025-04-14 12:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-account-payment-8-0/"
 "language/it/)\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_payment_return
 #: model:ir.model.fields,field_description:account_payment_return.field_payment_return__message_needaction
@@ -209,7 +209,8 @@ msgstr "Importato"
 #: model:ir.model.fields,help:account_payment_return.field_account_move__returned_payment
 #: model:ir.model.fields,help:account_payment_return.field_account_payment__returned_payment
 msgid "Invoice has been included on a payment that has been returned later."
-msgstr "La fattura è stata inclusa in un pagamento che è stato rimborsato dopo."
+msgstr ""
+"La fattura è stata inclusa in un pagamento che è stato rimborsato dopo."
 
 #. module: account_payment_return
 #. odoo-python
@@ -338,6 +339,13 @@ msgstr "Solo per riferimento"
 #: model:ir.model.fields,field_description:account_payment_return.field_account_partial_reconcile__origin_returned_move_ids
 msgid "Origin Returned Move"
 msgstr "Origine movimento rimborso"
+
+#. module: account_payment_return
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
+#, python-format
+msgid "Paid on"
+msgstr "Pagata il"
 
 #. module: account_payment_return
 #: model:ir.model,name:account_payment_return.model_account_partial_reconcile
@@ -478,8 +486,8 @@ msgid "Returned amount. Can be different from the move amount"
 msgstr "Valore rimborsato. Può essere diverso dal valore movimento"
 
 #. module: account_payment_return
-#. odoo-python
-#: code:addons/account_payment_return/models/account_move.py:0
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
 #, python-format
 msgid "Returned on"
 msgstr "Rimborsato il"

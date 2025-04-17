@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_location_release_channel_restriction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-04-15 18:24+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction_in_move
+msgid ""
+"Check this box if you want to take into account all pending incoming "
+"movements to restrict the future movements to be in the same release "
+"channel."
+msgstr ""
+"Selezionare questa casella se si vuole prendere in considerazione tutti i "
+"movimenti in arrivo in sospeso per limitare i movimenti futuri allo stesso "
+"canale di rilascio."
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_destination_location_channel_id
+msgid "For Restriction Destination Location Channel"
+msgstr "Per la restrizione canale ubicazione destinazione"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__parent_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction
+msgid ""
+"If 'same' is selected the system will prevent to put items of different "
+"release channels into the same location."
+msgstr ""
+"Se si seleziona \"uguale\", il sistema impedirà di collocare nella stessa "
+"ubicazione elementi con canali di rilascio diversi."
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__specific_release_channel_restriction
+msgid ""
+"If specified the restriction specified will apply to the current location "
+"and all its children"
+msgstr ""
+"Se presente la restrizione indicata verrà applicata all'ubicazione corrente "
+"e a tutte le sue figlie"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model,name:stock_location_release_channel_restriction.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicazioni di inventario"
+
+#. module: stock_location_release_channel_restriction
+#. odoo-python
+#: code:addons/stock_location_release_channel_restriction/models/stock_location.py:0
+#: model:ir.model.fields.selection,name:stock_location_release_channel_restriction.selection__stock_location__release_channel_restriction__mixed
+#: model:ir.model.fields.selection,name:stock_location_release_channel_restriction.selection__stock_location__specific_release_channel_restriction__mixed
+#, python-format
+msgid "Movements of different release channels are allowed into the location"
+msgstr ""
+"Sono consentiti i movimenti di diversi canali di rilascio nell'ubicazione"
+
+#. module: stock_location_release_channel_restriction
+#. odoo-python
+#: code:addons/stock_location_release_channel_restriction/models/stock_location.py:0
+#: model:ir.model.fields.selection,name:stock_location_release_channel_restriction.selection__stock_location__release_channel_restriction__same
+#: model:ir.model.fields.selection,name:stock_location_release_channel_restriction.selection__stock_location__specific_release_channel_restriction__same
+#, python-format
+msgid ""
+"Only movements of the same release channel are allowed into the location"
+msgstr ""
+"Sono consentiti solo i movimenti dello stesso canale di rilascio "
+"nell'ubicazione"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_location__parent_release_channel_restriction
+msgid "Parent Location Release Channel Restriction"
+msgstr "Restrizione del canale di rilascio dell'ubicazione principale"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model,name:stock_location_release_channel_restriction.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimenti prodotto (riga movimento di magazzino)"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction
+msgid "Release Channel Restriction"
+msgstr "Restrizione canale rilascio"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction_in_move
+msgid "Release Channel Restriction For Incoming Moves"
+msgstr "Restrizione canale rilascio per i movimenti in ingresso"
+
+#. module: stock_location_release_channel_restriction
+#: model_terms:ir.ui.view,arch_db:stock_location_release_channel_restriction.stock_location_form_view
+msgid "Release Channel Restrictions"
+msgstr "Restrizioni canale rilascio"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_location__specific_release_channel_restriction
+msgid "Specific Release Channel Restriction"
+msgstr "Restrizione canale rilascio specifica"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_destination_location_channel_id
+msgid ""
+"Technical field in order to retrieve the release channel of pending moveson "
+"destination location."
+msgstr ""
+"Campo tecnico per recuperare il canale di rilascio dei movimenti in sospeso "
+"nell'ubicazione di destinazione."
+
+#. module: stock_location_release_channel_restriction
+#. odoo-python
+#: code:addons/stock_location_release_channel_restriction/models/exception.py:0
+#, python-format
+msgid "Undefined"
+msgstr "Non definito"
+
+#. module: stock_location_release_channel_restriction
+#. odoo-python
+#: code:addons/stock_location_release_channel_restriction/models/exception.py:0
+#, python-format
+msgid ""
+"You cannot move picking (%(picking_name)s) products to %(location_name)s. "
+"That location has already pending moves for %(release_channel_name)s release"
+" channel"
+msgstr ""
+"Non si possono spostare i prodotti in fase di prelievo (%(picking_name)s) a "
+"%(location_name)s. Quella ubicazione ha già movimenti in sospeso per il "
+"canale di rilascio di %(release_channel_name)s"

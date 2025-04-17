@@ -6,13 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-04-15 12:24+0000\n"
+"Last-Translator: BitStab <bitstab@users.noreply.translation.odoo-"
+"community.org>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_withholding_tax_financial_report
 #. odoo-python
@@ -25,12 +28,12 @@ msgstr ""
 #. module: l10n_it_withholding_tax_financial_report
 #: model:ir.model,name:l10n_it_withholding_tax_financial_report.model_report_account_financial_report_open_items
 msgid "Open Items Report"
-msgstr ""
+msgstr "Bericht über offene Posten"
 
 #. module: l10n_it_withholding_tax_financial_report
 #: model:ir.model,name:l10n_it_withholding_tax_financial_report.model_report_a_f_r_report_open_items_xlsx
 msgid "Open Items XLSX Report"
-msgstr ""
+msgstr "XLSX-Bericht Offene Posten"
 
 #. module: l10n_it_withholding_tax_financial_report
 #. odoo-python
@@ -38,4 +41,4 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax_financial_report.report_open_items_lines_header_wt
 #, python-format
 msgid "Residual net to pay"
-msgstr ""
+msgstr "Netto zu zahlender Restbetrag"

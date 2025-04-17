@@ -27,5 +27,10 @@ msgstr "Etiquetas analíticas"
 msgid "Expense"
 msgstr "Gasto"
 
+#. module: hr_expense_analytic_tag
+#: model:ir.model,name:hr_expense_analytic_tag.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr ""
+
 #~ msgid "Journal Item"
 #~ msgstr "Apunte contable"

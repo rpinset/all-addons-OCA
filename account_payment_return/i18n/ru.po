@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. module: account_payment_return
 #: model:ir.model.fields,field_description:account_payment_return.field_payment_return__message_needaction
@@ -339,6 +339,13 @@ msgid "Origin Returned Move"
 msgstr ""
 
 #. module: account_payment_return
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
+#, python-format
+msgid "Paid on"
+msgstr ""
+
+#. module: account_payment_return
 #: model:ir.model,name:account_payment_return.model_account_partial_reconcile
 msgid "Partial Reconcile"
 msgstr ""
@@ -473,8 +480,8 @@ msgid "Returned amount. Can be different from the move amount"
 msgstr ""
 
 #. module: account_payment_return
-#. odoo-python
-#: code:addons/account_payment_return/models/account_move.py:0
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
 #, python-format
 msgid "Returned on"
 msgstr ""

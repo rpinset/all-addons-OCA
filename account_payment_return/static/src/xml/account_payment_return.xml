@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- Copyright 2016 Tecnativa - Carlos Dauden
+<!-- Copyright 2016-2024 Tecnativa - Carlos Dauden
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl-3). -->
 <templates xml:space="preserve">
 
@@ -11,7 +11,7 @@
         >
             <attribute
                 name="t-attf-class"
-            >js_payment_info fa fa-#{line.returned and 'warning' or 'info-circle'}</attribute>
+            >js_payment_info fa fa-#{line.amount &lt; 0.0 and 'warning' or 'info-circle'}</attribute>
             <attribute name="title">Payment Info</attribute>
         </xpath>
 
@@ -20,7 +20,8 @@
             position="replace"
         >
             <i class="o_field_widget text-start o_payment_label">
-                <t t-esc="line.returned and 'Returned on ' or 'Paid on '" />
+                <span t-if="line.amount &lt; 0.0">Returned on </span>
+                <span t-else="">Paid on </span>
                 <t t-esc="line.date" />
             </i>
         </xpath>

@@ -39,7 +39,7 @@ addon | version | maintainers | summary
 [analytic_mixin_analytic_account](analytic_mixin_analytic_account/) | 16.0.1.0.0 |  | Analytic Mixin Analytic Account
 [analytic_partner](analytic_partner/) | 16.0.1.0.0 |  | Search and group analytic entries by partner
 [hr_department_analytic](hr_department_analytic/) | 16.0.1.0.0 |  | This module allows to specify analytic account on hr department
-[hr_expense_analytic_tag](hr_expense_analytic_tag/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Expense Analytic Tag
+[hr_expense_analytic_tag](hr_expense_analytic_tag/) | 16.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Expense Analytic Tag
 [hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
 [mrp_stock_analytic](mrp_stock_analytic/) | 16.0.1.0.0 |  | MRP Stock Analytic
 [pos_analytic_by_config](pos_analytic_by_config/) | 16.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
@@ -144,12 +144,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_cutoff_accrual_order_base](account_cutoff_accrual_order_base/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Order Base
+[account_cutoff_accrual_order_base](account_cutoff_accrual_order_base/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Order Base
 [account_cutoff_accrual_order_stock_base](account_cutoff_accrual_order_stock_base/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Order Stock Base
 [account_cutoff_accrual_purchase](account_cutoff_accrual_purchase/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Expense on Purchase Order
-[account_cutoff_accrual_purchase_stock](account_cutoff_accrual_purchase_stock/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Order Base
-[account_cutoff_accrual_sale](account_cutoff_accrual_sale/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Revenue on Sales Order
-[account_cutoff_accrual_sale_stock](account_cutoff_accrual_sale_stock/) | 16.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module for Cut-Off Accruals on Sales with Stock Deliveries
+[account_cutoff_accrual_purchase_stock](account_cutoff_accrual_purchase_stock/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Order Base
+[account_cutoff_accrual_sale](account_cutoff_accrual_sale/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Accrued Revenue on Sales Order
+[account_cutoff_accrual_sale_stock](account_cutoff_accrual_sale_stock/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module for Cut-Off Accruals on Sales with Stock
+[account_cutoff_accrual_sale_stock_delivery](account_cutoff_accrual_sale_stock_delivery/) | 16.0.1.1.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Glue module for Cut-Off Accruals on Sales with Stock Delivery
 [account_cutoff_accrual_subscription](account_cutoff_accrual_subscription/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued expenses based on subscriptions
 [account_cutoff_base](account_cutoff_base/) | 16.0.1.6.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Base module for Account Cut-offs
 [account_cutoff_picking](account_cutoff_picking/) | 16.0.1.3.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Accrued and prepaid expense/revenue from pickings
@@ -1163,7 +1164,7 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Payment Register with Multiple Deduction
 [account_payment_notification](account_payment_notification/) | 16.0.1.0.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Notifiy upcoming payments
 [account_payment_promissory_note](account_payment_promissory_note/) | 16.0.1.0.1 |  | Account Payment Promissory Note
-[account_payment_return](account_payment_return/) | 16.0.1.2.2 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 16.0.1.2.3 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 16.0.1.0.2 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 16.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_discount](account_payment_term_discount/) | 16.0.1.1.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Account Payment Terms Discount
@@ -2361,7 +2362,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_commission](account_commission/) | 16.0.2.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Account commissions
-[commission](commission/) | 16.0.2.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
+[commission](commission/) | 16.0.2.4.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Commissions
 [commission_delegated_partner](commission_delegated_partner/) | 16.0.1.0.1 |  | Allow to delegate the invoices of agent to a delegate partner
 [commission_formula](commission_formula/) | 16.0.1.0.0 |  | Commissions computed by formulas
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
@@ -2919,6 +2920,7 @@ addon | version | maintainers | summary
 [fleet_vehicle_inspection](fleet_vehicle_inspection/) | 16.0.1.1.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
 [fleet_vehicle_inspection_template](fleet_vehicle_inspection_template/) | 16.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extend module fleet_vehicle_inspection enable inspection templates feature
 [fleet_vehicle_log_fuel](fleet_vehicle_log_fuel/) | 16.0.1.0.0 |  | Add Log Fuels for your vehicles.
+[fleet_vehicle_purchase](fleet_vehicle_purchase/) | 16.0.1.0.0 |  | Allow to integrate Purcase with Fleet Vehicles
 [fleet_vehicle_service_activity](fleet_vehicle_service_activity/) | 16.0.1.0.0 |  | Activity alerts for fleet services
 [fleet_vehicle_service_calendar](fleet_vehicle_service_calendar/) | 16.0.1.0.1 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add a smart button in services to schedule meetings.
 [fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 16.0.1.1.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add features of kanban to logs of vehicle services.
@@ -3089,6 +3091,7 @@ addon | version | maintainers | summary
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 16.0.1.0.0 |  | Set task on timesheet as a mandatory field
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 16.0.1.0.1 |  | Open/Close task from corresponding Task Log entry
 [hr_timesheet_time_type](hr_timesheet_time_type/) | 16.0.1.0.0 |  | Ability to add time type in timesheet lines.
+[hr_timesheet_type_non_billable](hr_timesheet_type_non_billable/) | 16.0.1.0.0 | [![mpascuall](https://github.com/mpascuall.png?size=30px)](https://github.com/mpascuall) | HR Timesheet Type Non Billable
 [project_task_analytic_propagation](project_task_analytic_propagation/) | 16.0.1.0.0 | [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Updates timesheet's analytic account when their task changes the analytic.
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 16.0.1.0.1 |  | Allows to tell that a task stage is opened for timesheets.
 [sale_timesheet_budget](sale_timesheet_budget/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale timesheet budget
@@ -3702,7 +3705,7 @@ addon | version | maintainers | summary
 [l10n_be_apb_tax](l10n_be_apb_tax/) | 16.0.1.0.1 |  | Data module to support APB taxes
 [l10n_be_bpost_address_autocomplete](l10n_be_bpost_address_autocomplete/) | 16.0.1.0.0 |  | Bpost address autocomplete
 [l10n_be_eco_tax](l10n_be_eco_tax/) | 16.0.1.0.1 |  | Data module to support BEBAT and RECUPEL taxes
-[l10n_be_intrastat_product](l10n_be_intrastat_product/) | 16.0.1.0.1 | [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) [![jdidderen-noviat](https://github.com/jdidderen-noviat.png?size=30px)](https://github.com/jdidderen-noviat) | Intrastat Product Declaration for Belgium
+[l10n_be_intrastat_product](l10n_be_intrastat_product/) | 16.0.1.0.2 | [![luc-demeyer](https://github.com/luc-demeyer.png?size=30px)](https://github.com/luc-demeyer) [![jdidderen-noviat](https://github.com/jdidderen-noviat.png?size=30px)](https://github.com/jdidderen-noviat) | Intrastat Product Declaration for Belgium
 [l10n_be_mis_reports](l10n_be_mis_reports/) | 16.0.2.0.0 |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
 [l10n_be_mis_reports_xml](l10n_be_mis_reports_xml/) | 16.0.1.0.0 |  | Exports MIS Builder templates VAT Declaration as XML to load on the administration websites.
 [l10n_be_partner_identification](l10n_be_partner_identification/) | 16.0.1.0.0 |  | Belgium Partner Identification Numbers
@@ -4560,7 +4563,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_vat_period_end_statement](account_vat_period_end_statement/) | 16.0.1.3.1 |  | Allow to create the 'VAT Statement'.
+[account_vat_period_end_statement](account_vat_period_end_statement/) | 16.0.1.3.2 |  | Allow to create the 'VAT Statement'.
 [currency_rate_update_boi](currency_rate_update_boi/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 16.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 16.0.1.0.1 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
@@ -4598,7 +4601,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 16.0.1.1.0 |  | Invio fatture elettroniche tramite SDICoop
 [l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 16.0.1.0.1 | [![mktsrl](https://github.com/mktsrl.png?size=30px)](https://github.com/mktsrl) | ITA - Bilancio UE con XBRL
-[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.4 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
+[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.5 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 16.0.1.0.0 |  | ITA - Tipi di documento fiscale per dichiarativi
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 16.0.1.0.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 16.0.1.0.3 |  | ITA - Codice fiscale
@@ -5264,7 +5267,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 16.0.1.1.0 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 16.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 16.0.2.2.0 |  | AEAT modelo 123
-[l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 16.0.1.0.0 |  | AEAT modelo 130
+[l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 16.0.1.0.1 |  | AEAT modelo 130
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.4.0 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
@@ -5293,7 +5296,7 @@ addon | version | maintainers | summary
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.3.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | [![Christian-RB](https://github.com/Christian-RB.png?size=30px)](https://github.com/Christian-RB) | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
-[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.3.4 |  | Spanish Intrastat Product Declaration
+[l10n_es_intrastat_report](l10n_es_intrastat_report/) | 16.0.1.3.5 |  | Spanish Intrastat Product Declaration
 [l10n_es_irnr](l10n_es_irnr/) | 16.0.1.2.1 |  | Retenciones IRNR (No residentes)
 [l10n_es_irnr_sii](l10n_es_irnr_sii/) | 16.0.1.1.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Suministro Inmediato de Información de importaciones con IRNR
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS specific options for Spain
@@ -5937,6 +5940,7 @@ addon | version | maintainers | summary
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 16.0.1.1.0 |  | Delivery Procurement Group Carrier
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 16.0.1.0.1 |  | Include packaging weight on move, transfer and package.
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 16.0.1.0.0 |  | Procurement Auto Create Group Carrier
+[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 16.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
 [product_expiry_simple](product_expiry_simple/) | 16.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simpler and better alternative to the official product_expiry module
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 16.0.1.0.1 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 16.0.1.0.0 |  | Track returned quantity of sale order lines.
@@ -6145,10 +6149,12 @@ addon | version | maintainers | summary
 [stock_location_pending_move](stock_location_pending_move/) | 16.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | This module allows to show pending stock moves (outgoing and incoming) on a stock location
 [stock_location_position](stock_location_position/) | 16.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_product_restriction](stock_location_product_restriction/) | 16.0.1.2.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Prevent to mix different products into the same stock location
+[stock_location_release_channel_restriction](stock_location_release_channel_restriction/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | This module allows to restrict location content to products that are in the same release channel (moves).
 [stock_location_zone](stock_location_zone/) | 16.0.1.0.2 |  | Classify locations with zones.
 [stock_lot_multi_image](stock_lot_multi_image/) | 16.0.1.0.0 |  | This module implements the possibility to have multiple images for a stock lot
-[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.1 |  | Try to reserve moves when goods enter in a location
-[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.3 |  | Auto release moves after auto assign
+[stock_move_auto_assign](stock_move_auto_assign/) | 16.0.1.1.2 |  | Try to reserve moves when goods enter in a location
+[stock_move_auto_assign_auto_release](stock_move_auto_assign_auto_release/) | 16.0.1.1.4 |  | Auto release moves after auto assign
+[stock_move_auto_assign_auto_release_exclude_location](stock_move_auto_assign_auto_release_exclude_location/) | 16.0.1.0.0 |  | Exclude locations from auto release moves after auto assign
 [stock_move_common_dest](stock_move_common_dest/) | 16.0.1.0.2 |  | Adds field for common destination moves
 [stock_move_location](stock_move_location/) | 16.0.1.4.1 |  | This module allows to move all stock in a stock location to an other one.
 [stock_move_packaging_qty](stock_move_packaging_qty/) | 16.0.1.5.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add packaging fields in the stock moves
@@ -6433,6 +6439,7 @@ addon | version | maintainers | summary
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
 [shopfloor_reception](shopfloor_reception/) | 16.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Reception scenario for shopfloor
+[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.0.0 | [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Scenario for receiving products
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
 [shopfloor_workstation_mobile](shopfloor_workstation_mobile/) | 16.0.1.0.0 |  | Shopfloor mobile app integration for workstation

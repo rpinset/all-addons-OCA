@@ -336,6 +336,13 @@ msgid "Origin Returned Move"
 msgstr "Movimiento de Devolución de Origen"
 
 #. module: account_payment_return
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
+#, python-format
+msgid "Paid on"
+msgstr ""
+
+#. module: account_payment_return
 #: model:ir.model,name:account_payment_return.model_account_partial_reconcile
 msgid "Partial Reconcile"
 msgstr "Reconciliación Parcial"
@@ -472,8 +479,8 @@ msgid "Returned amount. Can be different from the move amount"
 msgstr "Moto devuelto. Puede ser diferente del monto del movimiento"
 
 #. module: account_payment_return
-#. odoo-python
-#: code:addons/account_payment_return/models/account_move.py:0
+#. odoo-javascript
+#: code:addons/account_payment_return/static/src/xml/account_payment_return.xml:0
 #, python-format
 msgid "Returned on"
 msgstr ""

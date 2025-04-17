@@ -1,5 +1,6 @@
 # Copyright 2020 Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+from freezegun import freeze_time
 
 from odoo.addons.queue_job.job import identity_exact
 from odoo.addons.queue_job.tests.common import trap_jobs
@@ -17,6 +18,22 @@ class TestStockMoveAutoAssign(StockMoveAutoAssignCase):
         self._update_qty_in_location(self.shelf1_loc, self.product, 100)
         self.product.moves_auto_assign(self.shelf1_loc)
         self.assertEqual(move1.state, "assigned")
+        self.assertEqual(move2.state, "assigned")
+
+    @freeze_time("2025-01-10")
+    def test_job_assign_confirmed_move_with_reservation_date(self):
+        """Test job method, assign moves matching product and location"""
+        move1 = self._create_move(self.product, self.out_type)
+        move2 = self._create_move(self.product, self.out_type)
+        (move1 | move2)._assign_picking()
+        # put stock in Stock/Shelf 1 for move2 quantity only
+        self._update_qty_in_location(
+            self.shelf1_loc, self.product, (move2.product_uom_qty)
+        )
+
+        move2.date = "2024-12-15"
+        self.product.moves_auto_assign(self.shelf1_loc)
+        self.assertEqual(move1.state, "confirmed")
         self.assertEqual(move2.state, "assigned")
 
     def test_move_done_enqueue_job(self):

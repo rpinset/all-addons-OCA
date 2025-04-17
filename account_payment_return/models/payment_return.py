@@ -2,7 +2,7 @@
 # Copyright 2011-2012 Avanzosc <http://www.avanzosc.com>
 # Copyright 2013 Tecnativa - Pedro M. Baeza
 # Copyright 2014 Markus Schneider <markus.schneider@initos.com>
-# Copyright 2016-2023 Tecnativa - Carlos Dauden
+# Copyright 2016-2024 Tecnativa - Carlos Dauden
 # Copyright 2017 Tecnativa - Luis M. Ontalba
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
@@ -211,7 +211,7 @@ class PaymentReturn(models.Model):
         move_line_vals = self._prepare_move_line(move, total_amount)
         # credit_move_line: credit on transfer or bank account
         AccountMoveLine.create(move_line_vals)
-        move._post()
+        move._post(soft=False)
         for to_reconcile_aml_dic in to_reconcile_aml_list:
             (
                 to_reconcile_aml_dic["payment_aml"] + to_reconcile_aml_dic["return_aml"]

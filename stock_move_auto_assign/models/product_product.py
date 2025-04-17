@@ -31,6 +31,12 @@ class ProductProduct(models.Model):
             # out anyway.
         ]
 
+    def _get_move_auto_assign_order(self):
+        # See _run_scheduler() method in stock module without the
+        # reservation_date as we are in real time, we should use
+        # date field instead
+        return "priority desc, date asc, id asc"
+
     def moves_auto_assign(self, locations):
         """Job trying to reserve moves based on product and locations
 
@@ -42,7 +48,10 @@ class ProductProduct(models.Model):
         moves, no MTO, ...
         """
         self.ensure_one()
-        moves = self.env["stock.move"].search(self._moves_auto_assign_domain(locations))
+        moves = self.env["stock.move"].search(
+            self._moves_auto_assign_domain(locations),
+            order=self._get_move_auto_assign_order(),
+        )
         pickings = moves.picking_id
         if not pickings:
             return

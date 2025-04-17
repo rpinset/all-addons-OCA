@@ -1,0 +1,30 @@
+# Copyright 2025 ACSONE SA/NV
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from odoo import _
+from odoo.exceptions import ValidationError
+
+from odoo.addons.stock.models.stock_location import Location
+from odoo.addons.stock.models.stock_picking import Picking
+from odoo.addons.stock_release_channel.models.stock_release_channel import (
+    StockReleaseChannel,
+)
+
+
+class ReleaseChannelLocationRestrictionError(ValidationError):
+    def __init__(
+        self, picking: Picking, location: Location, channel: StockReleaseChannel, env
+    ):
+        self.env = env
+        error_msg = _(
+            "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
+            "That location has already pending moves for %(release_channel_name)s "
+            "release channel",
+            picking_name=picking.name,
+            location_name=location.name,
+            release_channel_name=channel.name
+            if channel
+            else _(
+                "Undefined"
+            ),  # Pending moves with no release channel can be contained in location
+        )
+        super().__init__(error_msg)

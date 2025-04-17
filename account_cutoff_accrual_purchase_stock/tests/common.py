@@ -17,6 +17,13 @@ class TestAccountCutoffAccrualPurchaseCommon(TestAccountCutoffAccrualOrderCommon
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.stock_location = cls.env.ref("stock.stock_location_stock")
+        for p in cls.products.filtered(
+            lambda product: product.detailed_type == "product"
+        ):
+            cls.env["stock.quant"]._update_available_quantity(
+                p, cls.stock_location, 100
+            )
         # Removing all existing PO
         cls.env.cr.execute("DELETE FROM purchase_order;")
         # Create PO
@@ -68,9 +75,12 @@ class TestAccountCutoffAccrualPurchaseCommon(TestAccountCutoffAccrualOrderCommon
             )
         )
 
-    def _confirm_po_and_do_picking(self, qty_done):
+    def _confirm_po(self):
         self.po.button_confirm()
         self.po.button_approve(force=True)
+
+    def _confirm_po_and_do_picking(self, qty_done):
+        self._confirm_po()
         pick = self.po.picking_ids
         pick.action_assign()
         pick.move_line_ids.write({"qty_done": qty_done})
@@ -89,4 +99,6 @@ class TestAccountCutoffAccrualPurchaseCommon(TestAccountCutoffAccrualOrderCommon
             )
         )
         invoice_form.invoice_date = date
-        return invoice_form.save()
+        invoice = invoice_form.save()
+        invoice.date = date
+        return invoice
