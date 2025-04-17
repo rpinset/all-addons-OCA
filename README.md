@@ -203,18 +203,23 @@ Date:   Sun Feb 2 18:00:36 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 5a2e3262965f0e31f6d2b27c7cdc02999ded2f6a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 9 17:41:50 2025 +0000
+commit caa91bfd284fd860ff19744aba9894d07a373937
+Author: Romain BONNINGUE <bonninguer@gmail.com>
+Date:   Wed Apr 16 12:13:50 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (French)
+    
+    Currently translated at 76.3% (29 of 38 strings)
+    
+    Translation: bank-statement-import-15.0/bank-statement-import-15.0-account_statement_import
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-15-0/bank-statement-import-15-0-account_statement_import/fr/
 
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 87a4d0f0ab796c63756f2095519d6b96ae9df8dc
+commit 5933467081ab0e41b08000799e42ee38dc3f5f91
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Mar 15 12:50:21 2025 +0000
+Date:   Mon Apr 14 09:19:16 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -922,9 +927,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3257607c1d906867087f882b67a268295dd6997e
+commit 3dffeab1fc8db65b9a9819fe96047ea644b8cef4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 10 18:50:53 2025 +0000
+Date:   Wed Apr 16 11:59:41 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1154,9 +1159,9 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit ecf1c31889c74df3b7743318bd15f179748bae24
+commit ece439eabbc12e524492b67024288dc2fb4cb3b1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 24 12:26:12 2025 +0000
+Date:   Wed Apr 16 17:46:55 2025 +0000
 
     [BOT] post-merge updates
 
