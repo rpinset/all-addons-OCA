@@ -23,6 +23,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 18.0.1.0.0 |  | Account analytic distribution manual
 [account_analytic_parent](account_analytic_parent/) | 18.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_tag](account_analytic_tag/) | 18.0.1.1.0 |  | Account Analytic Tag
 [analytic_base_department](analytic_base_department/) | 18.0.1.0.0 |  | Add relationship between Analytic and Department
@@ -218,6 +219,7 @@ addon | version | maintainers | summary
 [account_move_name_sequence](account_move_name_sequence/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Generate journal entry number from sequence
 [account_move_post_date_user](account_move_post_date_user/) | 18.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
 [account_usability](account_usability/) | 18.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
+[purchase_unreconciled](purchase_unreconciled/) | 18.0.1.0.0 | [![AaronHForgeFlow](https://github.com/AaronHForgeFlow.png?size=30px)](https://github.com/AaronHForgeFlow) | Purchase Unreconciled
 
 [//]: # (end addons)
 
@@ -263,7 +265,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 18.0.1.0.5 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.0.6 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 18.0.1.0.0 |  | Compute tax balances based on date range
 
 [//]: # (end addons)
@@ -314,6 +316,7 @@ addon | version | maintainers | summary
 [account_invoice_line_sale_line_position](account_invoice_line_sale_line_position/) | 18.0.1.0.0 |  | Adds the related sale line position on invoice line.
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 18.0.1.0.0 |  | Print invoice lines grouped by picking
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 18.0.1.0.0 |  | Show payment extended info in invoice
+[account_reporting_weight](account_reporting_weight/) | 18.0.1.0.0 |  | Weights in the invoices analysis view
 
 [//]: # (end addons)
 
@@ -366,6 +369,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_link](account_invoice_refund_link/) | 18.0.1.0.0 |  | Show links between refunds and their originator invoices.
 [account_invoice_show_currency_rate](account_invoice_show_currency_rate/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Show currency rate in invoices.
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 18.0.1.0.0 |  | Checks that supplier invoices are not entered twice
+[account_invoice_tax_required](account_invoice_tax_required/) | 18.0.1.0.0 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
 [account_mail_autosubscribe](account_mail_autosubscribe/) | 18.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically subscribe partners to their company's invoices
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Account Move Cancel Confirm
 [account_move_tier_validation](account_move_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Account Moves to support a tier validation process.
@@ -695,6 +699,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_credit_control](account_credit_control/) | 18.0.1.0.0 |  | Account Credit Control
 [account_financial_risk](account_financial_risk/) | 18.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
 [sale_financial_risk](sale_financial_risk/) | 18.0.1.0.0 |  | Manage partner risk in sales orders
@@ -786,7 +791,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_banking_mandate](account_banking_mandate/) | 18.0.1.0.0 |  | Banking mandates
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 18.0.1.0.0 |  | Account Invoice Select for Payment
+[account_payment_mode](account_payment_mode/) | 18.0.1.0.0 |  | Account Payment Mode
+[account_payment_order](account_payment_order/) | 18.0.1.0.0 |  | Account Payment Order
+[account_payment_partner](account_payment_partner/) | 18.0.1.0.0 |  | Adds payment mode on partners and invoices
+[account_payment_purchase](account_payment_purchase/) | 18.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
+[account_payment_sale](account_payment_sale/) | 18.0.1.0.0 |  | Adds payment mode on sale orders
 
 [//]: # (end addons)
 
@@ -833,7 +844,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -882,7 +893,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_statement_import_base](account_statement_import_base/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statement Import
 [account_statement_import_camt](account_statement_import_camt/) | 18.0.1.0.0 |  | CAMT Format Bank Statements Import
-[account_statement_import_file](account_statement_import_file/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
+[account_statement_import_camt54](account_statement_import_camt54/) | 18.0.1.0.0 |  | Bank Account Camt54 Import
+[account_statement_import_file](account_statement_import_file/) | 18.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import Statement Files
 [account_statement_import_ofx](account_statement_import_ofx/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Import OFX Bank Statement
 [account_statement_import_online](account_statement_import_online/) | 18.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
 
@@ -1072,6 +1084,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[base_import_async](base_import_async/) | 18.0.1.0.0 |  | Import CSV files in the background
 [queue_job](queue_job/) | 18.0.1.3.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
 [queue_job_batch](queue_job_batch/) | 18.0.1.0.0 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 18.0.1.1.0 |  | Scheduled Actions as Queue Jobs
@@ -1586,6 +1599,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[pricelist_cache](pricelist_cache/) | 18.0.1.0.0 |  | Provide a new model to cache price lists and update it, to make it easier to retrieve them.
+[product_customerinfo_sale](product_customerinfo_sale/) | 18.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
+[product_form_sale_link](product_form_sale_link/) | 18.0.1.0.1 |  | Adds a button on product forms to access Sale Lines
 [product_set_sell_only_by_packaging](product_set_sell_only_by_packaging/) | 18.0.1.0.0 |  | Glue module between `sell_only_by_packaging` and `sale_product_set_packaging_qty`.
 [sale_automatic_workflow](sale_automatic_workflow/) | 18.0.1.0.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 18.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
@@ -2120,6 +2136,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 18.0.1.0.0 |  | Document Management System for Odoo
+[dms_user_role](dms_user_role/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
 
 [//]: # (end addons)
 
@@ -2391,6 +2408,7 @@ addon | version | maintainers | summary
 [fleet_vehicle_log_fuel](fleet_vehicle_log_fuel/) | 18.0.1.0.0 |  | Add Log Fuels for your vehicles.
 [fleet_vehicle_service_activity](fleet_vehicle_service_activity/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Activity alerts for fleet services
 [fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 18.0.1.0.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add features of kanban to logs of vehicle services.
+[fleet_vehicle_service_services](fleet_vehicle_service_services/) | 18.0.1.0.0 |  | Add subservices in Services.
 
 [//]: # (end addons)
 
@@ -2521,8 +2539,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 18.0.1.0.0 |  | Timesheet - Begin/End Hours
+[hr_timesheet_task_domain](hr_timesheet_task_domain/) | 18.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 18.0.1.0.0 |  | Set task on timesheet as a mandatory field
-[hr_timesheet_task_stage](hr_timesheet_task_stage/) | 18.0.1.0.0 |  | Open/Close task from corresponding Task Log entry
+[hr_timesheet_task_stage](hr_timesheet_task_stage/) | 18.0.1.0.1 |  | Open/Close task from corresponding Task Log entry
 
 [//]: # (end addons)
 
@@ -2576,6 +2595,7 @@ addon | version | maintainers | summary
 [hr_employee_relative](hr_employee_relative/) | 18.0.1.0.0 |  | Allows storing information about employee's family
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_employee_ssn](hr_employee_ssn/) | 18.0.1.0.0 |  | View/edit employee's SIN field
+[hr_professional_category](hr_professional_category/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
 
 [//]: # (end addons)
 
@@ -2617,7 +2637,11 @@ hr-attendance
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[hr_attendance_reason](hr_attendance_reason/) | 18.0.1.0.0 |  | HR Attendance Reason
 
 [//]: # (end addons)
 
@@ -2663,6 +2687,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Employee Advance and Clearing
 [hr_expense_cancel](hr_expense_cancel/) | 18.0.1.0.0 |  | Hr expense cancel
 [hr_expense_payment](hr_expense_payment/) | 18.0.1.0.0 |  | HR Expense Payment
 [hr_expense_sequence](hr_expense_sequence/) | 18.0.1.0.0 |  | HR expense sequence
@@ -2712,7 +2737,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[hr_holidays_natural_period](hr_holidays_natural_period/) | 18.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_public](hr_holidays_public/) | 18.0.1.0.0 |  | Manage Public Holidays
+[hr_holidays_public_city](hr_holidays_public_city/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 
 [//]: # (end addons)
 
@@ -4280,12 +4307,12 @@ addon | version | maintainers | summary
 [l10n_ro_account_bank_statement_import_mt940_base](l10n_ro_account_bank_statement_import_mt940_base/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - MT940 Bank Statements Import
 [l10n_ro_account_bank_statement_import_mt940_ing](l10n_ro_account_bank_statement_import_mt940_ing/) | 18.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | MT940 ING Format Bank Statements Import
 [l10n_ro_account_edit_currency_rate](l10n_ro_account_edit_currency_rate/) | 18.0.0.2.0 | [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) | Romania - Invoice Edit Currency Rate
-[l10n_ro_account_period_close](l10n_ro_account_period_close/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
+[l10n_ro_account_period_close](l10n_ro_account_period_close/) | 18.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Account Period Closing
 [l10n_ro_account_report_invoice](l10n_ro_account_report_invoice/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Invoice Report
 [l10n_ro_city](l10n_ro_city/) | 18.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - City
 [l10n_ro_config](l10n_ro_config/) | 18.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 18.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.6.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 18.0.0.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 18.0.0.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 18.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -4427,6 +4454,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_partner](l10n_es_partner/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 18.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_toponyms](l10n_es_toponyms/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Topónimos españoles
@@ -4990,10 +5018,12 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 18.0.1.0.0 |  | Delivery Procurement Group Carrier
+[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 18.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 18.0.1.0.0 |  | Adds link between purchases, pickings and invoices
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 18.0.1.0.0 |  | Add the possibility to choose one warehouse path for an order
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 18.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_dangerous_goods](stock_dangerous_goods/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Adds utility fields to manage dangerous goods
+[stock_move_quantity_product_uom](stock_move_quantity_product_uom/) | 18.0.1.0.0 |  | computes stock.move's quantity in the uom of the product.
 [stock_no_negative](stock_no_negative/) | 18.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 18.0.1.0.0 |  | Do not reserve quantity with assigned owner
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
@@ -5003,6 +5033,7 @@ addon | version | maintainers | summary
 [stock_picking_group_by_base](stock_picking_group_by_base/) | 18.0.1.0.0 |  | Allows to define a way to create index on extensible domain
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 18.0.1.0.0 |  | Adds link between pickings and invoices
 [stock_picking_partner_note](stock_picking_partner_note/) | 18.0.1.0.0 |  | Add partner notes on picking
+[stock_picking_progress](stock_picking_progress/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) [![JuMiSanAr](https://github.com/JuMiSanAr.png?size=30px)](https://github.com/JuMiSanAr) | Compute the stock.picking progression
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 18.0.1.0.0 |  | Link between picking and purchase order
 [stock_picking_restrict_cancel_printed](stock_picking_restrict_cancel_printed/) | 18.0.1.0.0 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Prevent canceling a stock transfer if printed.
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 18.0.1.0.0 |  | Restrict the return to delivered quantity
@@ -5127,6 +5158,7 @@ addon | version | maintainers | summary
 [stock_location_tray](stock_location_tray/) | 18.0.1.0.0 |  | Organize a location as a matrix of cells
 [stock_location_zone](stock_location_zone/) | 18.0.1.0.0 |  | Classify locations with zones.
 [stock_move_common_dest](stock_move_common_dest/) | 18.0.1.0.1 |  | Adds field for common destination moves
+[stock_move_location](stock_move_location/) | 18.0.1.0.0 |  | This module allows to move all stock in a stock location to an other one.
 [stock_packaging_calculator](stock_packaging_calculator/) | 18.0.2.0.0 |  | Compute product quantity to pick by packaging
 [stock_picking_completion_info](stock_picking_completion_info/) | 18.0.1.0.0 |  | Display on current document completion information according to next operations
 [stock_picking_product_assortment](stock_picking_product_assortment/) | 18.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Stock Picking Product Assortment
@@ -5137,6 +5169,7 @@ addon | version | maintainers | summary
 [stock_putaway_product_template](stock_putaway_product_template/) | 18.0.1.0.0 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Add product template in putaway strategies from the product view
 [stock_quant_cost_info](stock_quant_cost_info/) | 18.0.1.0.0 |  | Shows the cost of the quants
 [stock_route_location_source](stock_route_location_source/) | 18.0.1.0.0 |  | Add method to get source location of Inventory Routes
+[stock_vertical_lift](stock_vertical_lift/) | 18.0.1.0.0 |  | Provides the core for integration with Vertical Lifts
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 18.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
@@ -5234,6 +5267,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 18.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
 [rma](rma/) | 18.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma_sale](rma_sale/) | 18.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Order - Return Merchandise Authorization (RMA)
 
 [//]: # (end addons)
 
@@ -5279,7 +5313,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 18.0.1.0.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 18.0.1.0.2 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 18.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 18.0.1.0.0 |  | Implements Coverage Days.
@@ -5419,6 +5453,7 @@ addon | version | maintainers | summary
 [mrp_multi_level](mrp_multi_level/) | 18.0.1.0.3 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
 [mrp_package_propagation](mrp_package_propagation/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Propagate a package from a component to a finished product
+[mrp_production_auto_validate](mrp_production_auto_validate/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Manufacturing Order Auto-Validation when components are picked
 [mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
 [mrp_sale_info](mrp_sale_info/) | 18.0.1.0.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 18.0.1.0.0 |  | Link Purchase Order Line to Subcontract Productions
@@ -5648,7 +5683,7 @@ addon | version | maintainers | summary
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in purchase order line
 [purchase_order_secondary_unit](purchase_order_secondary_unit/) | 18.0.1.0.0 |  | Purchase product in a secondary unit
-[purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 18.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Update product supplierinfo with the last purchase price
+[purchase_order_supplierinfo_update](purchase_order_supplierinfo_update/) | 18.0.1.0.1 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Update product supplierinfo with the last purchase price
 [purchase_order_type](purchase_order_type/) | 18.0.1.0.0 |  | Purchase Order Type
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 18.0.1.0.0 |  | Purchase Order Univoiced Amount
 [purchase_partner_selectable_option](purchase_partner_selectable_option/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Purchase Partner Selectable Option
@@ -5775,6 +5810,7 @@ addon | version | maintainers | summary
 [product_packaging_dimension](product_packaging_dimension/) | 18.0.1.0.0 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 18.0.1.0.0 |  | This module binds a product packaging to a packaging level
 [product_packaging_level_salable](product_packaging_level_salable/) | 18.0.1.0.0 |  | Product Packaging level salable
+[product_packaging_level_vendor](product_packaging_level_vendor/) | 18.0.1.0.0 |  | Allows to mark a packaging level as vendor specific
 [product_packaging_unit_price_calculator](product_packaging_unit_price_calculator/) | 18.0.1.0.0 |  | Wizard to calculate a unit price from a packaging price
 [product_pricelist_alternative](product_pricelist_alternative/) | 18.0.1.0.0 |  | Calculate product price based on alternative pricelists
 [product_pricelist_by_contact](product_pricelist_by_contact/) | 18.0.1.0.0 |  | Product Pricelist Per Contact
@@ -5884,6 +5920,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_attribute_value_archive](product_attribute_value_archive/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Allows to archive a `product.attribute.value` referenced by archived `product.product`.
+[product_variant_change_attribute_value](product_variant_change_attribute_value/) | 18.0.1.0.0 |  | Product Variant Change Attribute Value
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 18.0.1.0.0 |  | Sale order line variant description
 
 [//]: # (end addons)
@@ -6029,8 +6066,9 @@ addon | version | maintainers | summary
 [project_tag_security](project_tag_security/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Project Tag Security
 [project_task_add_very_high](project_task_add_very_high/) | 18.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
 [project_task_default_stage](project_task_default_stage/) | 18.0.1.0.0 |  | Recovery default task stages for projects from v8
+[project_task_note](project_task_note/) | 18.0.1.0.0 | [![pilar-vargas](https://github.com/pilar-vargas.png?size=30px)](https://github.com/pilar-vargas) | Add notes in project tasks
 [project_task_stage_state](project_task_stage_state/) | 18.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
-[project_timesheet_time_control](project_timesheet_time_control/) | 18.0.1.0.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
+[project_timesheet_time_control](project_timesheet_time_control/) | 18.0.1.0.3 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
 [project_type](project_type/) | 18.0.1.0.0 |  | Project Types
 
 [//]: # (end addons)
@@ -6330,7 +6368,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [mail_notification_with_history](mail_notification_with_history/) | 18.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add the previous chatter discussion into new email notifications.
-[mail_thread_create_nolog](mail_thread_create_nolog/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display a fake (non-stored) create log in the chatter.
+[mail_thread_create_nolog](mail_thread_create_nolog/) | 18.0.1.0.1 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Display a fake (non-stored) create log in the chatter.
 
 [//]: # (end addons)
 
@@ -6647,6 +6685,7 @@ addon | version | maintainers | summary
 [sentry](sentry/) | 18.0.1.0.2 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [session_db](session_db/) | 18.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [test_base_time_window](test_base_time_window/) | 18.0.1.0.0 |  | Test Base model to handle time windows
+[tracking_manager](tracking_manager/) | 18.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 18.0.1.3.2 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
@@ -7696,7 +7735,7 @@ addon | version | maintainers | summary
 [web_no_bubble](web_no_bubble/) | 18.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 18.0.1.0.1 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 18.0.1.0.0 |  | Send an instant notification to channel users when a new message is posted
-[web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.2 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.4 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
 [web_quick_start_screen](web_quick_start_screen/) | 18.0.1.0.0 |  | Configurable start screen for quick actions
 [web_refresher](web_refresher/) | 18.0.1.0.0 |  | Web Refresher
 [web_search_with_and](web_search_with_and/) | 18.0.1.0.0 |  | Use AND conditions on omnibar search
@@ -7705,6 +7744,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 18.0.1.0.1 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.0 |  | This module adds support for dynamic dropdown widget
+[web_widget_mpld3_chart](web_widget_mpld3_chart/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ThiagoMForgeFlow](https://github.com/ThiagoMForgeFlow.png?size=30px)](https://github.com/ThiagoMForgeFlow) | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 18.0.1.0.4 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Show list fields as a matrix
 

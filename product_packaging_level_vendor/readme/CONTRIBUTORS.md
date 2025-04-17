@@ -1,0 +1,2 @@
+- Juan Miguel Sánchez Arce \<<juan.sanchez@camptocamp.com>\>
+- Thien Vo \<<thienvh@trobz.com>\>

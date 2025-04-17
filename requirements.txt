@@ -123,6 +123,8 @@ python-dateutil
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
+# generated from manifests external_dependencies
+chardet
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
@@ -139,6 +141,8 @@ python-stdnum
 roulier
 # From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
 # From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
+# generated from manifests external_dependencies
+openupgradelib
 # From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
 # From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
 # generated from manifests external_dependencies
@@ -244,6 +248,8 @@ ujson
 # From [https://github.com/OCA/vertical-travel.git](https://github.com/OCA/vertical-travel.git)
 # From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
 # generated from manifests external_dependencies
+beautifulsoup4
 bokeh==3.6.3
+mpld3==0.5.10
 # From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
 # From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)

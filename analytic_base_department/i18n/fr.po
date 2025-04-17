@@ -10,14 +10,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-18 15:08+0000\n"
-"PO-Revision-Date: 2018-05-18 15:08+0000\n"
-"Last-Translator: Quentin THEURET <odoo@kerpeo.com>, 2018\n"
+"PO-Revision-Date: 2025-04-16 13:24+0000\n"
+"Last-Translator: Romain BONNINGUE <bonninguer@gmail.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: analytic_base_department
 #: model:ir.model.fields,field_description:analytic_base_department.field_account_analytic_line__account_department_id
@@ -38,7 +39,7 @@ msgstr "Compte analytique"
 #. module: analytic_base_department
 #: model:ir.model.fields,field_description:analytic_base_department.field_hr_department__analytic_account_ids
 msgid "Analytic Accounts"
-msgstr ""
+msgstr "Comptes analytiques"
 
 #. module: analytic_base_department
 #: model:ir.model,name:analytic_base_department.model_account_analytic_line
@@ -63,7 +64,7 @@ msgstr "Département"
 #: model_terms:ir.ui.view,arch_db:analytic_base_department.view_account_analytic_account_search
 #: model_terms:ir.ui.view,arch_db:analytic_base_department.view_account_analytic_line_filter
 msgid "My Department"
-msgstr ""
+msgstr "Mon département"
 
 #. module: analytic_base_department
 #: model:ir.model.fields,help:analytic_base_department.field_account_analytic_line__department_id
