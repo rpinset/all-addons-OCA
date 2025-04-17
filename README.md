@@ -384,16 +384,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit e6f27de4ed9547805668702c0f3b37dfd6841901
+commit daad623a4056b9f428d3acd9d1f6e94d93744631
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 8 07:16:16 2025 +0000
+Date:   Mon Apr 14 10:37:04 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (66 of 66 strings)
+    Currently translated at 100.0% (154 of 154 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_invoice_plan
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_invoice_plan/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_blanket_order/it/
 
 
 ## crm
