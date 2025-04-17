@@ -38,8 +38,10 @@ class StockLocation(models.Model):
                 # If the field does not exist in the view, it is added
                 # together with the fields that this module adds.
                 barcode_field = etree.Element("field", {"name": "barcode"})
-                placeholder = doc.xpath("//field[@name='barcode_rule_id']")[0]
-                placeholder.addprevious(barcode_field)
+                placeholder = doc.xpath("//field[@name='barcode_rule_id']")
+                if placeholder:
+                    placeholder = placeholder[0]
+                    placeholder.addprevious(barcode_field)
             # To the `barcode` field in the view (either the new
             # or the existing one), a modifier is added.
             modifier = {"readonly": [("generate_type", "=", "sequence")]}

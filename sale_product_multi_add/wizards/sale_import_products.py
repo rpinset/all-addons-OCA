@@ -38,7 +38,6 @@ class SaleImportProducts(models.TransientModel):
         sale_line = self.env["sale.order.line"].new(
             {
                 "order_id": sale.id,
-                "name": item.product_id.name,
                 "product_id": item.product_id.id,
                 "product_uom_qty": item.quantity,
                 "product_uom": item.product_id.uom_id.id,

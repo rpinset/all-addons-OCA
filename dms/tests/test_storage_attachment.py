@@ -3,6 +3,7 @@
 # Copyright 2024 Subteno - Timothée Vannier (https://www.subteno.com).
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
+from odoo.exceptions import AccessError
 from odoo.tests.common import users
 from odoo.tools import mute_logger
 
@@ -47,6 +48,26 @@ class StorageAttachmentTestCase(StorageAttachmentBaseCase):
         directory.res_id = -1  # Trick to reference a non-existing record
         directories = self.env["dms.directory"].search([])
         self.assertNotIn(directory.id, directories.ids)
+
+    @mute_logger("odoo.models.unlink")
+    def test_storage_attachment_unlink_lock_file(self):
+        group_partner_manager = self.env.ref("base.group_partner_manager")
+        self.dms_manager_user.write({"groups_id": [(4, group_partner_manager.id)]})
+        self.dms_user.write({"groups_id": [(4, group_partner_manager.id)]})
+        attachment = self._create_attachment("demo.txt")
+        attachment = attachment.with_user(self.dms_manager_user)
+        file = self.storage.storage_file_ids.filtered(lambda x: x.name == "demo.txt")
+        file.with_user(self.dms_user).lock()
+        self.assertTrue(file.is_locked)
+        self.assertFalse(file.is_lock_editor)
+        with self.assertRaises(AccessError):
+            attachment.unlink()
+        self.assertTrue(file.exists())
+        file.with_user(self.dms_user).unlock()
+        self.assertFalse(file.is_locked)
+        file.invalidate_recordset()
+        attachment.unlink()
+        self.assertFalse(file.exists())
 
     @users("dms-manager")
     def test_storage_attachment_misc(self):
@@ -105,6 +126,8 @@ class StorageAttachmentTestCase(StorageAttachmentBaseCase):
         self.assertEqual(
             self.storage.count_storage_files, 2, "Storage should have 2 files"
         )
+        dms_file.unlink()
+        self.assertFalse(attachment.exists())
 
     @users("dms-manager")
     def test_storage_attachment_directory_record_ref_access_dms_manager(self):

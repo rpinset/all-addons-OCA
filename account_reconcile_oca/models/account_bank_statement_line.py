@@ -572,7 +572,9 @@ class AccountBankStatementLine(models.Model):
             -liquidity_amount, partner.id
         ):
             new_line = line.copy()
-            new_line["partner_id"] = partner and partner.name_get()[0] or False
+            new_line["partner_id"] = (
+                (partner.id, partner.display_name) if partner else False
+            )
             amount = line.get("balance")
             if self.foreign_currency_id:
                 amount = self.foreign_currency_id._convert(
