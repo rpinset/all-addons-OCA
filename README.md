@@ -644,16 +644,11 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit be9a0f03d695001df6fef89f8e5906b7c209927e
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Apr 8 09:49:01 2025 +0000
+commit 025e320d94fa1a49a5d9b1db8032ed90e60b0eee
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 18 14:58:57 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: multi-company-14.0/multi-company-14.0-mail_template_multi_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-mail_template_multi_company/it/
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
