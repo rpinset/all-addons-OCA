@@ -369,16 +369,11 @@ Date:   Wed Apr 9 11:21:19 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 717d6295b66cfb7935fb2e2669431dd2751830f0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Feb 18 09:06:16 2025 +0000
+commit 7b5899aed371727d876006c0173e794ef2d558c8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 18 17:20:28 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (189 of 189 strings)
-    
-    Translation: crm-15.0/crm-15.0-crm_salesperson_planner
-    Translate-URL: https://translation.odoo-community.org/projects/crm-15-0/crm-15-0-crm_salesperson_planner/it/
+    [BOT] post-merge updates
 
 
 ## partner-contact
