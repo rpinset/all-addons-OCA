@@ -361,16 +361,16 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 64ae8db5fd049deab840fae4d4b65d9c039933c4
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Wed Apr 16 07:04:39 2025 +0000
+commit 33436df12bb75f5fe2f6fbf090529871f4fb8928
+Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
+Date:   Fri Apr 18 21:29:43 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Dutch)
     
-    Currently translated at 96.9% (32 of 33 strings)
+    Currently translated at 100.0% (54 of 54 strings)
     
-    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_order_line_price_history
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_order_line_price_history/tr/
+    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_elaboration
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_elaboration/nl/
 
 
 ## crm
@@ -657,11 +657,16 @@ Date:   Sun Feb 2 19:05:20 2025 +0000
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit ea0a5eac5287cac75c9d11d40e87b2d84de597a4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 14 07:08:32 2025 +0000
+commit a4a2bcb6ef786d22a1cbbf2dce9beef643b34823
+Author: vdewulf <virginie@coopiteasy.be>
+Date:   Fri Apr 18 15:06:27 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (French)
+    
+    Currently translated at 97.9% (381 of 389 strings)
+    
+    Translation: l10n-belgium-16.0/l10n-belgium-16.0-l10n_be_mis_reports
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-belgium-16-0/l10n-belgium-16-0-l10n_be_mis_reports/fr/
 
 
 ## l10n-cambodia
@@ -833,16 +838,11 @@ Date:   Sun Feb 2 19:24:42 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0fa1812989b45b2dcdd8036d9c19d04921cb0009
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Apr 17 17:44:54 2025 +0000
+commit 322906f76a22e8e9724cb36e6c1d7918a9d0b244
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Apr 18 07:22:15 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-italy-16.0/l10n-italy-16.0-l10n_it_financial_statements_report
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-16-0/l10n-italy-16-0-l10n_it_financial_statements_report/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -955,9 +955,9 @@ Date:   Sun Feb 2 19:41:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit fe0ad57f93513296ae944eb3f9e85e79b5ad7878
+commit a0cf2cba66d8afa87d1bc0eab2b0a0774ab99629
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 16 08:08:59 2025 +0000
+Date:   Mon Apr 21 11:56:39 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1125,16 +1125,16 @@ Date:   Wed Apr 9 15:11:55 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 9c656360663be41ba43fc94135efd6503923dec7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 20 10:41:38 2025 +0000
+commit db5c5b0ff001e37072d9260b16aca802c16416d1
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Apr 21 06:42:21 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: rma-16.0/rma-16.0-rma_sale_reason
-    Translate-URL: https://translation.odoo-community.org/projects/rma-16-0/rma-16-0-rma_sale_reason/it/
+    Translation: rma-16.0/rma-16.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-16-0/rma-16-0-rma/
 
 
 ## ddmrp
@@ -1203,16 +1203,16 @@ Date:   Sun Feb 2 20:07:36 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 1e234027e2ea947c6dd6b13f9be0d2a409a41b33
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Apr 15 07:41:59 2025 +0000
+commit 4d20d295f21c11fa89ebb311ca12d013e7f6eabd
+Author: Ahmet Yiğit Budak <yigit@altinkaya.com>
+Date:   Sat Apr 19 07:43:52 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (13 of 13 strings)
+    Currently translated at 46.6% (14 of 30 strings)
     
-    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_discount
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_discount/tr/
+    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_order_approved
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_order_approved/tr/
 
 
 ## purchase-reporting

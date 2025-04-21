@@ -287,7 +287,7 @@ class AccountMove(models.Model):
         payment_debit_line_data = self.rc_debit_line_vals(
             line_to_reconcile.account_id,
             payment_credit_line_data["amount_currency"],
-            payment_credit_line_data["credit"],
+            payment_credit_line_data["credit"] or payment_credit_line_data["debit"],
         )
         rc_payment_data["line_ids"] = [
             (0, 0, payment_debit_line_data),

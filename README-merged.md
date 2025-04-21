@@ -4614,7 +4614,7 @@ addon | version | maintainers | summary
 [l10n_it_pec](l10n_it_pec/) | 16.0.1.0.0 |  | Aggiunge il campo email PEC al partner
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 16.0.1.0.0 |  | Gestisce i campi del Repertorio Economico Amministrativo
-[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 16.0.1.0.9 |  | Inversione contabile
+[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 16.0.1.0.10 |  | Inversione contabile
 [l10n_it_riba](l10n_it_riba/) | 16.0.1.10.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 16.0.1.0.1 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
@@ -5260,6 +5260,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_gls_asm](delivery_gls_asm/) | 16.0.1.1.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_seur_atlas](delivery_seur_atlas/) | 16.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 16.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 16.0.1.0.5 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
@@ -6315,7 +6316,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 16.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Product Warranty
-[rma](rma/) | 16.0.3.5.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
+[rma](rma/) | 16.0.3.6.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Return Merchandise Authorization (RMA)
 [rma_lot](rma_lot/) | 16.0.1.0.0 |  | Manage lot in RMA
 [rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
 [rma_reason](rma_reason/) | 16.0.1.0.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | Rma Reason
