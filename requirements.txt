@@ -133,6 +133,7 @@ chardet
 # From [https://github.com/OCA/l10n-uruguay.git](https://github.com/OCA/l10n-uruguay.git)
 # From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
 # generated from manifests external_dependencies
+ach
 python-stdnum
 # From [https://github.com/OCA/l10n-venezuela.git](https://github.com/OCA/l10n-venezuela.git)
 # From [https://github.com/OCA/l10n-vietnam.git](https://github.com/OCA/l10n-vietnam.git)

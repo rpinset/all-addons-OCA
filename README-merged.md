@@ -1695,6 +1695,7 @@ addon | version | maintainers | summary
 [crm_lead_code](crm_lead_code/) | 18.0.1.0.0 |  | Sequential Code for Leads / Opportunities
 [crm_lead_firstname](crm_lead_firstname/) | 18.0.1.0.0 |  | Specify split names for contacts in leads
 [crm_phonecall](crm_phonecall/) | 18.0.1.0.2 |  | CRM Phone Calls
+[crm_phonecall_planner](crm_phonecall_planner/) | 18.0.1.0.0 |  | Schedule phone calls according to some criteria
 [crm_security_group](crm_security_group/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Add new group in Sales to show only CRM
 [crm_stage_probability](crm_stage_probability/) | 18.0.1.0.0 |  | Define fixed probability on the stages
 [crm_won_restrict_per_stage](crm_won_restrict_per_stage/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | CRM Won Restrict Per Stage
@@ -2135,7 +2136,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[dms](dms/) | 18.0.1.0.0 |  | Document Management System for Odoo
+[dms](dms/) | 18.0.1.0.2 |  | Document Management System for Odoo
 [dms_user_role](dms_user_role/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | DMS User Role
 
 [//]: # (end addons)
@@ -2592,7 +2593,7 @@ addon | version | maintainers | summary
 [hr_employee_calendar_planning](hr_employee_calendar_planning/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Employee Calendar Planning
 [hr_employee_firstname](hr_employee_firstname/) | 18.0.1.0.0 | [![Savoir-faire Linux](https://github.com/Savoir-faire Linux.png?size=30px)](https://github.com/Savoir-faire Linux) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Adds First Name to Employee
 [hr_employee_phone_extension](hr_employee_phone_extension/) | 18.0.1.0.0 |  | Employee Phone Extension
-[hr_employee_relative](hr_employee_relative/) | 18.0.1.0.0 |  | Allows storing information about employee's family
+[hr_employee_relative](hr_employee_relative/) | 18.0.1.0.1 |  | Allows storing information about employee's family
 [hr_employee_second_lastname](hr_employee_second_lastname/) | 18.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Split Name in First Name, Father's Last Name and Mother's Last Name
 [hr_employee_ssn](hr_employee_ssn/) | 18.0.1.0.0 |  | View/edit employee's SIN field
 [hr_professional_category](hr_professional_category/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
@@ -3875,6 +3876,7 @@ addon | version | maintainers | summary
 [l10n_it_account](l10n_it_account/) | 18.0.1.0.0 |  | Modulo base usato come dipendenza di altri moduli contabili
 [l10n_it_account_stamp](l10n_it_account_stamp/) | 18.0.1.1.1 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_appointment_code](l10n_it_appointment_code/) | 18.0.1.0.0 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
+[l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 18.0.1.0.0 |  | ITA - Bolle doganali
 [l10n_it_delivery_note](l10n_it_delivery_note/) | 18.0.1.0.1 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Crea, gestisce e fattura i DDT partendo dalle consegne
 
 [//]: # (end addons)
@@ -4766,6 +4768,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_banking_ach_base](account_banking_ach_base/) | 18.0.1.0.0 |  | Add fields required for North American Banking & Financials
 [l10n_us_account_routing](l10n_us_account_routing/) | 18.0.1.0.0 |  | Add the routing numbers to the banks
 [l10n_us_partner_legal_number](l10n_us_partner_legal_number/) | 18.0.1.0.0 |  | Add Legal Number for North American Banking & Financials
 
@@ -5026,6 +5029,7 @@ addon | version | maintainers | summary
 [stock_move_quantity_product_uom](stock_move_quantity_product_uom/) | 18.0.1.0.0 |  | computes stock.move's quantity in the uom of the product.
 [stock_no_negative](stock_no_negative/) | 18.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 18.0.1.0.0 |  | Do not reserve quantity with assigned owner
+[stock_partner_delivery_window](stock_partner_delivery_window/) | 18.0.1.0.0 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 18.0.1.0.0 |  | Reopen canceled transfers
 [stock_picking_backorder_strategy_cancel](stock_picking_backorder_strategy_cancel/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
@@ -7743,7 +7747,7 @@ addon | version | maintainers | summary
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 18.0.1.0.1 |  | Allows you to dynamically color fields on tree views
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 18.0.1.0.1 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | This widget allows to display charts using Bokeh library.
-[web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.0 |  | This module adds support for dynamic dropdown widget
+[web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.1 |  | This module adds support for dynamic dropdown widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ThiagoMForgeFlow](https://github.com/ThiagoMForgeFlow.png?size=30px)](https://github.com/ThiagoMForgeFlow) | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 18.0.1.0.4 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Show list fields as a matrix

@@ -174,11 +174,16 @@ Date:   Sun Feb 2 18:34:35 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 32931bdda52cf4d215f096daf453cfcb99dca4ba
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 17 17:22:01 2025 +0000
+commit 3c0fc8f87bbfc794a18161be35b69ba43ca95b37
+Author: Romain BONNINGUE <bonninguer@gmail.com>
+Date:   Sat Apr 19 22:56:36 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (French)
+    
+    Currently translated at 98.0% (99 of 101 strings)
+    
+    Translation: bank-payment-18.0/bank-payment-18.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-18-0/bank-payment-18-0-account_banking_mandate/fr/
 
 
 ## account-reconcile
@@ -206,16 +211,16 @@ Date:   Wed Apr 16 17:18:01 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 615fcd70013fecc0933a0af25a24a36484394cd2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Mar 18 12:56:34 2025 +0000
+commit 3e0abcc61edf474a79f154833736f2fe7052a862
+Author: Romain BONNINGUE <bonninguer@gmail.com>
+Date:   Sat Apr 19 22:48:34 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 86.1% (31 of 36 strings)
     
-    Translation: account-payment-18.0/account-payment-18.0-account_payment_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-18-0/account-payment-18-0-account_payment_tier_validation/it/
+    Translation: account-payment-18.0/account-payment-18.0-account_due_list
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-18-0/account-payment-18-0-account_due_list/fr/
 
 
 ## connector
@@ -355,9 +360,9 @@ Date:   Wed Apr 16 12:51:32 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 36b18527ff7af3588b90565aaa9abb2e5187ce59
+commit 259d37473a823509dce81ab36ed39cd2a54b7bf9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 9 08:14:10 2025 +0000
+Date:   Mon Apr 21 11:24:03 2025 +0000
 
     [BOT] post-merge updates
 
@@ -441,9 +446,9 @@ Date:   Fri Mar 28 15:48:45 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 1848da3f67dec0c655190446ee28ab003f2d0537
+commit 0f36b50607388a01cec1d724ebf45919dadfb3f8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 16 17:55:37 2025 +0000
+Date:   Mon Apr 21 17:13:34 2025 +0000
 
     [BOT] post-merge updates
 
@@ -537,16 +542,11 @@ Date:   Mon Apr 14 12:01:37 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit f858c9f2f8a2c48211db1841320a9979fb57d737
-Author: Romain BONNINGUE <bonninguer@gmail.com>
-Date:   Wed Apr 16 11:53:10 2025 +0000
+commit 282d2468d175fc5462042a702a40d88d31808306
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Apr 21 13:40:11 2025 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (33 of 33 strings)
-    
-    Translation: hr-18.0/hr-18.0-hr_employee_relative
-    Translate-URL: https://translation.odoo-community.org/projects/hr-18-0/hr-18-0-hr_employee_relative/fr/
+    [BOT] post-merge updates
 
 
 ## hr-attendance
@@ -821,9 +821,9 @@ Date:   Sun Feb 2 19:24:59 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit f6c98f24994a950a542cbcde35e5918dd862b45b
+commit f0ff8107e38bee823abd548890d5b43b0b5d87f8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 10 13:32:20 2025 +0000
+Date:   Fri Apr 18 06:48:10 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1001,9 +1001,9 @@ Date:   Sun Feb 2 19:50:14 2025 +0000
 
 ## l10n-usa
 From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
-commit 3edcc1480ebcba922210dea0ed9f9ede32c37d0d
+commit 5e52debce7e73b1045e8e0c2e7203b4a86ad6bb8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Mar 16 17:49:13 2025 +0000
+Date:   Sat Apr 19 17:47:09 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1049,11 +1049,16 @@ Date:   Tue Feb 11 09:09:23 2025 +0100
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit be8f48d6ed371207f03840271edb87a0265657a0
+commit a70bab093852587c5aefe41219a164e7a4ab1280
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 16 18:50:26 2025 +0000
+Date:   Sat Apr 19 18:07:58 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: stock-logistics-workflow-18.0/stock-logistics-workflow-18.0-stock_move_quantity_product_uom
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-18-0/stock-logistics-workflow-18-0-stock_move_quantity_product_uom/it/
 
 
 ## stock-logistics-tracking
@@ -1166,16 +1171,16 @@ Date:   Sun Feb 2 20:07:53 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 1a67f23a3517a29574c0fafacbc9c6cfe3814cf6
+commit b5e7d9fae0d915a1718f3e4890d97b12c7782afd
 Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Apr 15 16:00:14 2025 +0000
+Date:   Fri Apr 18 07:35:45 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 95.4% (21 of 22 strings)
     
-    Translation: purchase-workflow-18.0/purchase-workflow-18.0-purchase_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-18-0/purchase-workflow-18-0-purchase_tier_validation/tr/
+    Translation: purchase-workflow-18.0/purchase-workflow-18.0-purchase_request_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-18-0/purchase-workflow-18-0-purchase_request_tier_validation/tr/
 
 
 ## purchase-reporting
@@ -1588,9 +1593,9 @@ Date:   Sun Feb 9 19:15:49 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit dd85d310a3357a3e1e29b3b50243d1674fb189a8
+commit 55459fa75c06329aa7d023a548ae8a219e2a5e3f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 17 18:48:23 2025 +0000
+Date:   Mon Apr 21 08:28:54 2025 +0000
 
     [BOT] post-merge updates
 
