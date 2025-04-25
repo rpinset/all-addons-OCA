@@ -174,11 +174,11 @@ Date:   Sat Feb 1 20:36:04 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 3c0dd1980027bd343b07af47ea3ff0ee6b7552bf
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:35:36 2025 +0000
+commit 05fe65b5c1ae9d72e60644eb08d38bbb2186d9d9
+Author: alvaro-domatix <alvaro@domatix.com>
+Date:   Thu Apr 24 08:22:38 2025 +0000
 
-    [IMP] update dotfiles
+    Added translation using Weblate (Spanish)
 
 
 ## data-protection
@@ -913,11 +913,11 @@ Date:   Tue Nov 19 21:07:31 2019 +0100
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 13493a9e4c713fadee48360fcdc77bcc840c3449
+commit 67c54fe4d8ba4b59d73c8711ccbae71fe2884773
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 24 15:49:13 2025 +0000
+Date:   Thu Apr 24 19:57:03 2025 +0000
 
-    [BOT] post-merge updates
+    [UPD] README.rst
 
 
 ## l10n-switzerland
