@@ -50,6 +50,13 @@ msgid ""
 msgstr ""
 
 #. module: account_invoice_facturx
+#. odoo-python
+#: code:addons/account_invoice_facturx/models/account_move.py:0
+#, python-format
+msgid "Discount"
+msgstr ""
+
+#. module: account_invoice_facturx
 #: model:ir.model.fields.selection,name:account_invoice_facturx.selection__res_company__facturx_level__en16931
 msgid "EN 16931 (Comfort)"
 msgstr ""
@@ -164,16 +171,6 @@ msgstr ""
 #. module: account_invoice_facturx
 #: model:ir.model,name:account_invoice_facturx.model_ir_actions_report
 msgid "Report Action"
-msgstr ""
-
-#. module: account_invoice_facturx
-#. odoo-python
-#: code:addons/account_invoice_facturx/models/account_move.py:0
-#, python-format
-msgid ""
-"The Factur-X standard specify that unit prices can't be negative. The unit "
-"price of line '%s' is negative. You should generate a customer refund for "
-"that line."
 msgstr ""
 
 #. module: account_invoice_facturx

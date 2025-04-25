@@ -88,13 +88,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importera"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 msgid "Import Bank Statement File"
 msgstr "Importera kontoutdragsfil"
@@ -155,6 +148,13 @@ msgstr "Saknar valutakod i bankkontoutdraget."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Det saknas payment_ref på en transaktion."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, python-format
+msgid "OCA Import"
+msgstr ""
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -275,6 +275,10 @@ msgid ""
 msgstr ""
 "Du har redan importerat den här filen eller så innehåller den här filen "
 "endast transaktioner som redan har importerats."
+
+#, python-format
+#~ msgid "Import"
+#~ msgstr "Importera"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

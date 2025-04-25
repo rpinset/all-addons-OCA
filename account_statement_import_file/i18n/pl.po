@@ -96,13 +96,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importuj"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 #, fuzzy
 msgid "Import Bank Statement File"
@@ -165,6 +158,13 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Ten plik nie zawiera żadnych informacji o transakcji."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, python-format
+msgid "OCA Import"
+msgstr ""
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -274,6 +274,10 @@ msgid ""
 "You have already imported this file, or this file only contains already "
 "imported transactions."
 msgstr ""
+
+#, python-format
+#~ msgid "Import"
+#~ msgstr "Importuj"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

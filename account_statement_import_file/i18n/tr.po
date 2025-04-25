@@ -97,13 +97,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "İçe Aktar"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 msgid "Import Bank Statement File"
 msgstr "Banka Ekstresi Dosyasını İçe Aktar"
@@ -164,6 +157,13 @@ msgstr "Banka ekstresi dosyasında para birimi kodu eksik."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Bir işlemde ödeme_ref'i eksik."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, python-format
+msgid "OCA Import"
+msgstr ""
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -284,6 +284,10 @@ msgid ""
 msgstr ""
 "Bu dosyayı zaten içe aktardınız veya bu dosya yalnızca zaten içe aktarılmış "
 "işlemleri içeriyor."
+
+#, python-format
+#~ msgid "Import"
+#~ msgstr "İçe Aktar"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "
