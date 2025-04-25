@@ -159,8 +159,24 @@ class EFatturaOut:
         def get_causale(invoice):
             res = []
             if invoice.narration:
+                # see: OCA/server-tools/html_text/models/ir_fields_converter.py
+                # after server_tools/html_text is ported to 16.0 we could use:
+                # narration_text = self.env["ir.fields.converter"]
+                #                  .text_from_html(invoice.narration, 40, 100, "...")
+                # meanwhile: 8<
+                from lxml import html
+
+                try:
+                    narration_text = "\n".join(
+                        text.strip()
+                        for text in html.fromstring(invoice.narration).xpath("//text()")
+                    )
+                except Exception:
+                    narration_text = ""
+                # >8 end meanwhile
+
                 # max length of Causale is 200
-                caus_list = invoice.narration.split("\n")
+                caus_list = narration_text.split("\n")
                 for causale in caus_list:
                     if not causale:
                         continue

@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-02 03:44+0000\n"
-"PO-Revision-Date: 2024-05-02 13:35+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2025-04-24 17:23+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_move_line.py:0
@@ -120,7 +120,7 @@ msgstr ""
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
 msgid "By default, available stock is not used"
-msgstr ""
+msgstr "In modo predefinito, non è utilizzata la giacenza disponibile"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
@@ -146,7 +146,7 @@ msgstr "Categoria"
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__stock_request_check_available_first
 #: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
 msgid "Check available stock first"
-msgstr ""
+msgstr "Controlla prima la giacenza disponibile"
 
 #. module: stock_request
 #: model_terms:ir.actions.act_window,help:stock_request.action_stock_request_form
@@ -902,64 +902,64 @@ msgstr "N° richieste di magazzino"
 #: model:ir.model.fields,field_description:stock_request.field_stock_move__allocation_ids
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__allocation_ids
 msgid "Stock Request Allocation"
-msgstr ""
+msgstr "Allocazione richiesta di magazzino"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.view_move_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_allocation_form
 msgid "Stock Request Allocations"
-msgstr ""
+msgstr "Allocazioni richieste di magazzino"
 
 #. module: stock_request
 #: model:res.groups,name:stock_request.group_stock_request_manager
 msgid "Stock Request Manager"
-msgstr ""
+msgstr "Gestore richieste di stock"
 
 #. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_request_order
 #: model:res.groups,name:stock_request.group_stock_request_order
 msgid "Stock Request Order"
-msgstr ""
+msgstr "Ordine richiesta di magazzino"
 
 #. module: stock_request
 #: model:ir.actions.act_window,name:stock_request.stock_request_order_action
 #: model:ir.ui.menu,name:stock_request.stock_request_order_menu
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_search
 msgid "Stock Request Orders"
-msgstr ""
+msgstr "Ordini richiesta di magazzino"
 
 #. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_request_abstract
 msgid "Stock Request Template"
-msgstr ""
+msgstr "Modello di richiesta di magazzino"
 
 #. module: stock_request
 #: model:res.groups,name:stock_request.group_stock_request_user
 msgid "Stock Request User"
-msgstr ""
+msgstr "Utente richiesta di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__module_stock_request_mrp
 msgid "Stock Request for Manufacturing"
-msgstr ""
+msgstr "Richieste di magazzino per la produzione"
 
 #. module: stock_request
 #: model:ir.model.constraint,message:stock_request.constraint_stock_request_name_uniq
 #: model:ir.model.constraint,message:stock_request.constraint_stock_request_order_name_uniq
 msgid "Stock Request name must be unique"
-msgstr ""
+msgstr "Il nome della richiesta di magazzino deve essere univoco"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request.py:0
 #, python-format
 msgid "Stock Request product quantity cannot be negative."
-msgstr ""
+msgstr "La quantità della richiesta di magazzino non può essere negativa."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request.py:0
 #, python-format
 msgid "Stock Request product quantity has to be strictly positive."
-msgstr ""
+msgstr "La quantità prodotto della richiesta di magazzino deve essere positiva."
 
 #. module: stock_request
 #: model:ir.actions.act_window,name:stock_request.action_stock_request_form
@@ -972,52 +972,52 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock_request.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_form
 msgid "Stock Requests"
-msgstr ""
+msgstr "Richieste di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__module_stock_request_analytic
 msgid "Stock Requests Analytic integration"
-msgstr ""
+msgstr "Integrazione analitica richieste di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__module_stock_request_kanban
 msgid "Stock Requests Kanban integration"
-msgstr ""
+msgstr "Integrazione Kanban richieste di magazzino"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_search
 msgid "Stock Requests Order Search"
-msgstr ""
+msgstr "Ricerca ordini richieste di magazzino"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_search
 msgid "Stock Requests Search"
-msgstr ""
+msgstr "Ricerca richieste di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__module_stock_request_purchase
 msgid "Stock Requests for Purchases"
-msgstr ""
+msgstr "Richieste di magazzino per gli acquisti"
 
 #. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "Regola di giacenza"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
 msgid "Stock request Order"
-msgstr ""
+msgstr "Ordine richiesta di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__stock_request_count
 msgid "Stock requests"
-msgstr ""
+msgstr "Richieste di magazzino"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_res_config_settings__module_stock_request_submit
 msgid "Submitted state in Stock Requests"
-msgstr ""
+msgstr "Stato inserito nelle richieste di magazzino"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_move.py:0
@@ -1025,12 +1025,16 @@ msgstr ""
 #, python-format
 msgid "The company of the stock request must match with that of the location."
 msgstr ""
+"L'azienda della richiesta di magazzino deve corrispondere con quella "
+"dell'ubicazione."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_order.py:0
 #, python-format
 msgid "The company of the stock request must match with that of the warehouse."
 msgstr ""
+"L'azienda della richiesta di magazzino deve corrispondere con quella del "
+"magazzino."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_move_line.py:0
@@ -1044,37 +1048,37 @@ msgstr ""
 #: code:addons/stock_request/models/stock_request.py:0
 #, python-format
 msgid "The picking policy must be equal to the order"
-msgstr ""
+msgstr "La politica di prelievo deve essere uguale a quella dell'ordine"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_order.py:0
 #, python-format
 msgid "There should be at least one request item for confirming the order."
-msgstr ""
+msgstr "Deve esserci almeno un articolo richiesto per confermare l'ordine."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_order.py:0
 #, python-format
 msgid "This action only works in the context of products"
-msgstr ""
+msgstr "Questa azione lavora solo nel contesto dei prodotti"
 
 #. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Trasferimento"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_form
 #: model_terms:ir.ui.view,arch_db:stock_request.view_stock_request_form
 msgid "Transfers"
-msgstr ""
+msgstr "Trasferimenti"
 
 #. module: stock_request
 #: model:ir.model.fields,help:stock_request.field_stock_request__activity_exception_decoration
 #: model:ir.model.fields,help:stock_request.field_stock_request_abstract__activity_exception_decoration
 #: model:ir.model.fields,help:stock_request.field_stock_request_order__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo di attività eccezione sul record."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_order.py:0
@@ -1089,34 +1093,34 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__message_unread
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__message_unread
 msgid "Unread Messages"
-msgstr ""
+msgstr "Messaggi non letti"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__message_unread_counter
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__message_unread_counter
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "Contatore messaggi non letti"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_allocation__product_uom_id
 msgid "UoM"
-msgstr ""
+msgstr "UdM"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
 msgid "Use Kanban cards for consumable products"
-msgstr ""
+msgstr "Usa tessere Kanban per prodotti consumabili"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
 msgid "Use Manufacturing Orders with Stock Requests"
-msgstr ""
+msgstr "Usa ordini di produzione con le richieste di magazzino"
 
 #. module: stock_request
 #: model_terms:ir.ui.view,arch_db:stock_request.res_config_settings_view_form
 msgid "Use Purchases with Stock Requests"
-msgstr ""
+msgstr "Usa acquisti con le richieste di magazzino"
 
 #. module: stock_request
 #: model:ir.model,name:stock_request.model_stock_warehouse
@@ -1126,27 +1130,27 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_order_search
 #: model_terms:ir.ui.view,arch_db:stock_request.stock_request_search
 msgid "Warehouse"
-msgstr ""
+msgstr "Magazzino"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request.py:0
 #, python-format
 msgid "Warehouse must be equal to the order"
-msgstr ""
+msgstr "Il magazzino deve essere uguale all'ordine"
 
 #. module: stock_request
 #: model:ir.model.fields,field_description:stock_request.field_stock_request__website_message_ids
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_abstract__website_message_ids
 #: model:ir.model.fields,field_description:stock_request.field_stock_request_order__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Messaggi sito web"
 
 #. module: stock_request
 #: model:ir.model.fields,help:stock_request.field_stock_request__website_message_ids
 #: model:ir.model.fields,help:stock_request.field_stock_request_abstract__website_message_ids
 #: model:ir.model.fields,help:stock_request.field_stock_request_order__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Cronologia comunicazioni sito web"
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_location.py:0
@@ -1155,6 +1159,8 @@ msgid ""
 "You cannot change the company of the location, as it is already assigned to "
 "stock request orders that belong to another company."
 msgstr ""
+"Non si può modificare l'azienda dell'ubicazione perché già assegnata a "
+"ordini di richiesta magazzino che appartengono ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_location.py:0
@@ -1163,6 +1169,8 @@ msgid ""
 "You cannot change the company of the location, as it is already assigned to "
 "stock requests that belong to another company."
 msgstr ""
+"Non si può modificare l'azienda dell'ubicazione perché già assegnata a "
+"richieste di magazzino che apprtengono ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_location_route.py:0
@@ -1171,6 +1179,8 @@ msgid ""
 "You cannot change the company of the route, as it is already assigned to "
 "stock requests that belong to another company."
 msgstr ""
+"Non si piò modificare l'azienda di una rotta perché già assegnata ad una "
+"richiesta di magazzino che appartiene ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_warehouse.py:0
@@ -1179,6 +1189,8 @@ msgid ""
 "You cannot change the company of the warehouse, as it is already assigned to "
 "stock request orders that belong to another company."
 msgstr ""
+"Non si può modificare l'azienda del magazzino perché è già assegnato ad un "
+"ordine richiesta di magazzino che apperetiene ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_warehouse.py:0
@@ -1187,30 +1199,32 @@ msgid ""
 "You cannot change the company of the warehouse, as it is already assigned to "
 "stock requests that belong to another company."
 msgstr ""
+"Non si può modificare l'azienda del magazzino perché è già assegnato ad una "
+"richiesta di magazzino che apperetiene ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_abstract.py:0
 #, python-format
 msgid "You have entered a location that is assigned to another company."
-msgstr ""
+msgstr "È stata inserita una ubicazione che è assegnata ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_abstract.py:0
 #, python-format
 msgid "You have entered a product that is assigned to another company."
-msgstr ""
+msgstr "È stato inserito un prodotto che è assegnato ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_abstract.py:0
 #, python-format
 msgid "You have entered a route that is assigned to another company."
-msgstr ""
+msgstr "È stata inserita una rotta che è assegnata ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_abstract.py:0
 #, python-format
 msgid "You have entered a warehouse that is assigned to another company."
-msgstr ""
+msgstr "È stato inserito un magazzino che è assegnato ad un'altra azienda."
 
 #. module: stock_request
 #: code:addons/stock_request/models/stock_request_abstract.py:0
@@ -1219,6 +1233,8 @@ msgid ""
 "You have to select a product unit of measure in the same category than the "
 "default unit of measure of the product"
 msgstr ""
+"Bisogna selezionare una unità di misura prodotto della stessa categoria "
+"dell'unità di misura predefinita del prodotto"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Errore consegna SMS"

@@ -1,0 +1,141 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_warehouse_calendar_orderpoint
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_stock_warehouse__orderpoint_calendar_id
+msgid "Calendar used to compute the lead date of reordering rules"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_res_company__orderpoint_calendar_id
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_res_config_settings__orderpoint_calendar_id
+msgid ""
+"Calendar used to compute the lead date of reordering rules\n"
+"This value will be used as default value for new warehouses linked to this company"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model_terms:ir.ui.view,arch_db:stock_warehouse_calendar_orderpoint.res_config_settings_view_form
+msgid ""
+"Calendar used to compute the lead date of reordering rules.<br/>\n"
+"                          These parameters are global and can be overriden on each of the warehouses."
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model,name:stock_warehouse_calendar_orderpoint.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model,name:stock_warehouse_calendar_orderpoint.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_company__display_name
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_rule__display_name
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse__display_name
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse_orderpoint__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_company__id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_config_settings__id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_rule__id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse__id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse_orderpoint__id
+msgid "ID"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_company____last_update
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_rule____last_update
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse____last_update
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse_orderpoint____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model,name:stock_warehouse_calendar_orderpoint.model_stock_warehouse_orderpoint
+msgid "Minimum Inventory Rule"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_stock_warehouse__orderpoint_on_workday_policy
+msgid ""
+"Policy to postpone the lead date to the first available workday:\n"
+"* skip to first workday: compute the date using lead delay days as solar days, then skip to the next workday if the result is not a workday (eg: run action on Friday with 2 days lead delay -> the result is Sunday -> skip to the first following workday, Monday)\n"
+"* skip non-workdays: compute the order date consuming lead delay days only on (eg: run action on Friday with 2 days lead delay -> skip Saturday and Sunday -> start consuming lead days on Monday as first lead day -> the result is Tuesday)"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_res_company__orderpoint_on_workday_policy
+#: model:ir.model.fields,help:stock_warehouse_calendar_orderpoint.field_res_config_settings__orderpoint_on_workday_policy
+msgid ""
+"Policy to postpone the lead date to the first available workday:\n"
+"* skip to first workday: compute the date using lead delay days as solar days, then skip to the next workday if the result is not a workday (eg: run action on Friday with 2 days lead delay -> the result is Sunday -> skip to the first following workday, Monday)\n"
+"* skip non-workdays: compute the order date consuming lead delay days only on (eg: run action on Friday with 2 days lead delay -> skip Saturday and Sunday -> start consuming lead days on Monday as first lead day -> the result is Tuesday)\n"
+"This value will be used as default value for new warehouses linked to this company"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_company__orderpoint_calendar_id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_config_settings__orderpoint_calendar_id
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse__orderpoint_calendar_id
+msgid "Reordering Calendar"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: code:addons/stock_warehouse_calendar_orderpoint/models/stock_rule.py:0
+#, python-format
+msgid "Reordering Date"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_company__orderpoint_on_workday_policy
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_res_config_settings__orderpoint_on_workday_policy
+#: model:ir.model.fields,field_description:stock_warehouse_calendar_orderpoint.field_stock_warehouse__orderpoint_on_workday_policy
+msgid "Reordering on Workday Policy"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model_terms:ir.ui.view,arch_db:stock_warehouse_calendar_orderpoint.res_config_settings_view_form
+msgid "Reordering schedule"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields.selection,name:stock_warehouse_calendar_orderpoint.selection__res_company__orderpoint_on_workday_policy__skip_all_non_workdays
+#: model:ir.model.fields.selection,name:stock_warehouse_calendar_orderpoint.selection__stock_warehouse__orderpoint_on_workday_policy__skip_all_non_workdays
+msgid "Skip non-workdays"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model.fields.selection,name:stock_warehouse_calendar_orderpoint.selection__res_company__orderpoint_on_workday_policy__skip_to_first_workday
+#: model:ir.model.fields.selection,name:stock_warehouse_calendar_orderpoint.selection__stock_warehouse__orderpoint_on_workday_policy__skip_to_first_workday
+msgid "Skip to first workday"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model,name:stock_warehouse_calendar_orderpoint.model_stock_rule
+msgid "Stock Rule"
+msgstr ""
+
+#. module: stock_warehouse_calendar_orderpoint
+#: model:ir.model,name:stock_warehouse_calendar_orderpoint.model_stock_warehouse
+msgid "Warehouse"
+msgstr ""

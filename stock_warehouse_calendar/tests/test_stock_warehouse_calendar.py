@@ -70,7 +70,7 @@ class TestStockWarehouseCalendar(TransactionCase):
             [("product_id", "=", self.product.id)], limit=1
         )
         date = fields.Date.to_date(move.date)
-        # Friday 4th Jan 2017
+        # Friday 4th Jan 2097
         friday = fields.Date.to_date("2097-01-04 09:00:00")
 
         self.assertEqual(date, friday)
@@ -102,7 +102,7 @@ class TestStockWarehouseCalendar(TransactionCase):
             [("product_id", "=", self.product.id)], limit=1
         )
         date = fields.Date.to_date(move.date)
-        # Friday 4th Jan 2017
+        # Friday 4th Jan 2097
         friday = fields.Date.to_date("2097-01-04 09:00:00")
 
         self.assertEqual(date, friday)
@@ -111,10 +111,12 @@ class TestStockWarehouseCalendar(TransactionCase):
         """Test plan days helper in warehouse."""
         reference = "2097-01-09 12:00:00"  # Wednesday
         # With calendar
+        # + 3 days == "Saturday 12", and next working day == "Monday 14"
         result = self.warehouse_2.wh_plan_days(reference, 3).date()
         next_monday = fields.Date.to_date("2097-01-14")
         self.assertEqual(result, next_monday)
         # Without calendar
         result = self.warehouse_3.wh_plan_days(reference, 3).date()
+        # + 3 days == "Saturday 12"
         saturday = fields.Date.to_date("2097-01-12")
         self.assertEqual(result, saturday)
