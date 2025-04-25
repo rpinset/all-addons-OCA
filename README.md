@@ -360,9 +360,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit cd0a5fefa548ebedc88e58cb3bf964d55b1d98ec
+commit 03f2cdf9c31ec63ed4f394e8347569258317f9b4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 9 11:21:19 2025 +0000
+Date:   Tue Apr 22 09:14:43 2025 +0000
 
     [BOT] post-merge updates
 
@@ -435,9 +435,9 @@ Date:   Thu Feb 13 15:15:41 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit c24b8fec25c80fe2835d6ed1967c3b4b4e961f98
+commit 162aef44d5da697c70007984d9671b319fdf9f78
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 5 16:50:55 2025 +0000
+Date:   Fri Apr 25 06:38:28 2025 +0000
 
     [BOT] post-merge updates
 
@@ -485,9 +485,9 @@ Date:   Thu Apr 3 10:36:20 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 5baa1d829025bc61c65e35544b0080b113812c01
+commit e655dbf077b86cc676f7b4cc4e96f7f58135220f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 1 13:10:11 2025 +0000
+Date:   Wed Apr 23 05:54:57 2025 +0000
 
     [BOT] post-merge updates
 
@@ -895,9 +895,9 @@ Date:   Sun Feb 2 19:34:57 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 47ed7568ae93c18f0f2bcef904d46c319a9581ad
+commit e092c5c9cb2b5e36ad622c751c1713a2d16efba9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 6 23:53:22 2025 +0000
+Date:   Fri Apr 25 12:52:48 2025 +0000
 
     [BOT] post-merge updates
 
@@ -922,9 +922,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3dffeab1fc8db65b9a9819fe96047ea644b8cef4
+commit e9de62dcda6ad9d05d37adbffa812ee8952a0f2b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Apr 16 11:59:41 2025 +0000
+Date:   Tue Apr 22 12:09:51 2025 +0000
 
     [BOT] post-merge updates
 

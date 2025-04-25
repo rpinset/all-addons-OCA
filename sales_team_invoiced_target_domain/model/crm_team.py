@@ -11,8 +11,8 @@ class CrmTeam(models.Model):
         if not self:
             return
 
-        crm_team_invoiced_domain = self.env.company.crm_team_invoiced_domain
-        if not crm_team_invoiced_domain:
+        sales_team_invoiced_domain = self.env.company.sales_team_invoiced_domain
+        if not sales_team_invoiced_domain:
             return super()._compute_invoiced()
         today = fields.Date.today()
         invoiced_domain = [
@@ -21,7 +21,7 @@ class CrmTeam(models.Model):
             ("date", ">=", fields.Date.to_string(today.replace(day=1))),
             ("date", "<=", fields.Date.to_string(today)),
         ]
-        domain_list = ast.literal_eval(crm_team_invoiced_domain)
+        domain_list = ast.literal_eval(sales_team_invoiced_domain)
         invoiced_domain = expression.AND([invoiced_domain, domain_list])
         for team in self:
             team.invoiced = 0.0

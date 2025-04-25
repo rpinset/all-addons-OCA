@@ -24,21 +24,13 @@ msgid "Config Settings"
 msgstr ""
 
 #. module: sales_team_invoiced_target_domain
-#: model:ir.model.fields,field_description:sales_team_invoiced_target_domain.field_res_company__crm_team_invoiced_domain
-#: model:ir.model.fields,field_description:sales_team_invoiced_target_domain.field_res_config_settings__crm_team_invoiced_domain
-msgid "Crm Team Invoiced Domain"
-msgstr ""
-
-#. module: sales_team_invoiced_target_domain
-#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_crm_team_invoiced_config_settings_form_view
+#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_team_invoiced_config_settings_form_view
 msgid ""
-"Define the domain for calculating the invoiced amount for CRM teams.\n"
-"                                This domain filters invoices based on their payment state.\n"
-"                                For example: `[('payment_state', '=', 'paid')]`"
+"Define the domain for calculating the invoiced amount for Sales teams.`"
 msgstr ""
 
 #. module: sales_team_invoiced_target_domain
-#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_crm_team_invoiced_config_settings_form_view
+#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_team_invoiced_config_settings_form_view
 msgid "Invoiced Domain"
 msgstr ""
 
@@ -48,6 +40,12 @@ msgid "Sales Team"
 msgstr ""
 
 #. module: sales_team_invoiced_target_domain
-#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_crm_team_invoiced_config_settings_form_view
+#: model:ir.model.fields,field_description:sales_team_invoiced_target_domain.field_res_company__sales_team_invoiced_domain
+#: model:ir.model.fields,field_description:sales_team_invoiced_target_domain.field_res_config_settings__sales_team_invoiced_domain
+msgid "Sales Team Invoiced Domain"
+msgstr ""
+
+#. module: sales_team_invoiced_target_domain
+#: model_terms:ir.ui.view,arch_db:sales_team_invoiced_target_domain.sale_team_invoiced_config_settings_form_view
 msgid "Team Invoiced Domain"
 msgstr ""

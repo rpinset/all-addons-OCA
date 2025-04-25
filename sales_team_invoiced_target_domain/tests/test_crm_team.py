@@ -28,7 +28,7 @@ class TestCrmTeamInvoiced(TransactionCase):
 
     def test_compute_invoiced_multiple_teams_with_all_payment_states(self):
         payment_states = ["not_paid", "in_payment", "paid", "partial", "reversed"]
-        self.env.company.crm_team_invoiced_domain = str(
+        self.env.company.sales_team_invoiced_domain = str(
             [("payment_state", "in", payment_states)]
         )
         for state in payment_states:
@@ -39,7 +39,7 @@ class TestCrmTeamInvoiced(TransactionCase):
         self.assertEqual(self.team2.invoiced, 250.0)
 
     def test_compute_invoiced_empty_domain(self):
-        self.env.company.crm_team_invoiced_domain = "[]"
+        self.env.company.sales_team_invoiced_domain = "[]"
         self.create_account_move(self.team, "paid", 100)
         self.create_account_move(self.team2, "paid", 50)
         (self.team + self.team2)._compute_invoiced()
@@ -79,6 +79,6 @@ class TestCrmTeamInvoiced(TransactionCase):
         self.assertEqual(self.team2.invoiced, expected_team2_invoiced)
 
     def test_compute_invoiced_invalid_domain(self):
-        self.env.company.crm_team_invoiced_domain = "invaid domain"
+        self.env.company.sales_team_invoiced_domain = "invaid domain"
         with self.assertRaises(SyntaxError):
             (self.team + self.team2)._compute_invoiced()
