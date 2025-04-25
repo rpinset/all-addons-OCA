@@ -353,6 +353,11 @@ msgid "odoo | pidfile"
 msgstr "odoo | pidfile"
 
 #. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pre_upgrade_scripts
+msgid "odoo | pre_upgrade_scripts"
+msgstr ""
+
+#. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode
 msgid "odoo | proxy_mode"
 msgstr "odoo | proxy_mode"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: server-tools (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 02:53+0000\n"
-"PO-Revision-Date: 2025-02-09 22:06+0000\n"
+"PO-Revision-Date: 2025-04-23 13:52+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-9-0/"
 "language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
@@ -349,6 +349,11 @@ msgstr "odoo | pg_path"
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pidfile
 msgid "odoo | pidfile"
 msgstr "odoo | pidfile"
+
+#. module: server_environment
+#: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pre_upgrade_scripts
+msgid "odoo | pre_upgrade_scripts"
+msgstr "odoo | pre_upgrade_scripts"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode

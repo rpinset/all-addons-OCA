@@ -187,6 +187,8 @@ python_slugify
 # generated from manifests external_dependencies
 lxml
 openpyxl
+py3o.formats
+py3o.template
 xlrd
 xlsxwriter
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
