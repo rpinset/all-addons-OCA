@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-04-16 14:24+0000\n"
-"Last-Translator: Romain BONNINGUE <bonninguer@gmail.com>\n"
+"PO-Revision-Date: 2025-04-23 12:23+0000\n"
+"Last-Translator: MaxyMoos <maxence@groine.fr>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -88,7 +88,7 @@ msgstr "Montant"
 #. module: account_reconcile_oca
 #: model_terms:ir.ui.view,arch_db:account_reconcile_oca.bank_statement_line_form_reconcile_view
 msgid "Amount in Currency"
-msgstr ""
+msgstr "Montant en devise"
 
 #. module: account_reconcile_oca
 #. odoo-javascript

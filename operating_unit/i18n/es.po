@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-02-17 16:06+0000\n"
+"PO-Revision-Date: 2025-04-22 10:23+0000\n"
 "Last-Translator: Anna Martínez <anna080678@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__active
@@ -70,7 +70,7 @@ msgstr "ID"
 #. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__write_uid
 msgid "Last Updated by"
-msgstr "Última modificación en"
+msgstr "Última modificación por"
 
 #. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__write_date

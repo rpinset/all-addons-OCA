@@ -6,22 +6,22 @@ from odoo import models
 class AccountMove(models.Model):
     _inherit = "account.move"
 
-    def _import_base_import_pdf_by_template(self, file_data, new=False):
+    def _import_base_import_pdf_by_template(self, invoice, file_data, new=False):
         """Method to process the PDF with base_import_pdf_by_template_account
         if any template is available (similar to account_edi_ubl_cii)."""
         template_model = self.env["base.import.pdf.template"].with_company(
-            self.company_id.id
+            invoice.company_id.id
         )
-        total_templates = template_model.search_count([("model", "=", self._name)])
+        total_templates = template_model.search_count([("model", "=", invoice._name)])
         if total_templates == 0:
             return False
-        self.move_type = (
-            "in_invoice" if self.journal_id.type == "purchase" else "out_invoice"
+        invoice.move_type = (
+            "in_invoice" if invoice.journal_id.type == "purchase" else "out_invoice"
         )
         wizard = self.env["wizard.base.import.pdf.upload"].create(
             {
-                "model": self._name,
-                "record_ref": f"{self._name},{self.id}",
+                "model": invoice._name,
+                "record_ref": f"{invoice._name},{invoice.id}",
                 "attachment_ids": [(6, 0, file_data["attachment"].ids)],
             }
         )
@@ -30,10 +30,5 @@ class AccountMove(models.Model):
 
     def _get_edi_decoder(self, file_data, new=False):
         if file_data["type"] == "pdf":
-            res = self._import_base_import_pdf_by_template(file_data, new)
-            if res:
-                # If everything worked correctly, we return False to avoid what
-                # is done in the _extend_with_attachments() method of account
-                # with the result of the _get_edi_decoder() method.
-                return False
+            return self._import_base_import_pdf_by_template
         return super()._get_edi_decoder(file_data, new=new)

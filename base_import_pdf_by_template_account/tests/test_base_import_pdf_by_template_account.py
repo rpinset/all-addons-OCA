@@ -4,6 +4,8 @@
 from base64 import b64encode
 from os import path
 
+from odoo.tools import mute_logger
+
 from odoo.addons.base.tests.common import BaseCommon
 
 
@@ -66,7 +68,7 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
             {"seller_ids": [(5, 0, 0)]}
         )
         # pylint: disable=W1401
-        cls.env["base.import.pdf.template"].create(
+        cls.template = cls.env["base.import.pdf.template"].create(
             {
                 "name": "Invoices Tecnativa",
                 "model_id": cls.env.ref("account.model_account_move").id,
@@ -232,3 +234,35 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
         self.assertEqual(len(invoice.attachment_ids), 1)
         self.assertEqual(attachment, invoice.attachment_ids)
         self._test_account_invoice_tecnativa_data(invoice)
+
+    def test_account_move_from_alias_with_template(self):
+        invoice = (
+            self.env["account.move"]
+            .with_context(default_move_type="in_invoice")
+            .create({})
+        )
+        attachment = self._create_ir_attachment("account_invoice_tecnativa.pdf")
+        res = invoice.with_context(from_alias=True)._check_and_decode_attachment(
+            attachment
+        )
+        self.assertEqual(res, {attachment: invoice})
+        self.assertTrue(attachment.exists())
+        self.assertEqual(len(invoice.attachment_ids), 1)
+        self.assertEqual(attachment, invoice.attachment_ids)
+        self._test_account_invoice_tecnativa_data(invoice)
+
+    @mute_logger("odoo.models.unlink")
+    def test_account_move_from_alias_without_template(self):
+        invoice = (
+            self.env["account.move"]
+            .with_context(default_move_type="in_invoice")
+            .create({})
+        )
+        attachment = self._create_ir_attachment("account_invoice_tecnativa.pdf")
+        self.template.unlink()
+        res = invoice.with_context(from_alias=True)._check_and_decode_attachment(
+            attachment
+        )
+        self.assertEqual(res, {attachment: invoice})
+        self.assertTrue(attachment.exists())
+        self.assertEqual(len(invoice.invoice_line_ids), 0)

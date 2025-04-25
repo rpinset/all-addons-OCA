@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* res_partner_operating_unit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-04-22 14:23+0000\n"
+"Last-Translator: Anna Martínez <anna080678@gmail.com>\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: res_partner_operating_unit
+#: model:ir.model,name:res_partner_operating_unit.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: res_partner_operating_unit
+#: model:ir.model.fields,field_description:res_partner_operating_unit.field_res_partner__operating_unit_ids
+msgid "Operating Units"
+msgstr "Unidades Operativas"
+
+#. module: res_partner_operating_unit
+#. odoo-python
+#: code:addons/res_partner_operating_unit/models/res_users.py:0
+#, python-format
+msgid ""
+"The operating units of the partner must include the default one of the user."
+msgstr "Las unidades operativas del usuario deben incluir la predeterminada."
+
+#. module: res_partner_operating_unit
+#: model:ir.model,name:res_partner_operating_unit.model_res_users
+msgid "User"
+msgstr "Usuario"
