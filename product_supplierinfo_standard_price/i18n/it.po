@@ -6,24 +6,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-04-29 19:24+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: product_supplierinfo_standard_price
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_standard_price.view_product_supplierinfo_tree
 msgid "Diff"
-msgstr ""
+msgstr "Differenza"
 
 #. module: product_supplierinfo_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_customerinfo__diff_supplierinfo_product_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_supplierinfo__diff_supplierinfo_product_standard_price
 msgid "Diff Supplierinfo Product Standard Price"
-msgstr ""
+msgstr "Differenza prezzo standard prodotto informazioni fornitore"
 
 #. module: product_supplierinfo_standard_price
 #: model:ir.model.fields,help:product_supplierinfo_standard_price.field_product_customerinfo__product_standard_price
@@ -34,54 +36,61 @@ msgid ""
 "        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
 "        Used to compute margins on sale orders."
 msgstr ""
+"In prezzo standard  & AVCO: valore del prodotto (calcolato automaticamente "
+"in AVCO).\n"
+"        In FIFO: valore della prossima unità che lascerà il magazzino ("
+"calcolato automaticamente).\n"
+"        Usato per valutare il prodotto quando il costo d'acquisto è "
+"sconosciuto (es. aggiustamento dell'inventario).\n"
+"        Usato per calcolare i margini sugli ordini di vendita."
 
 #. module: product_supplierinfo_standard_price
 #. odoo-python
 #: code:addons/product_supplierinfo_standard_price/models/product_supplierinfo.py:0
 #, python-format
 msgid "New standard price for %s"
-msgstr ""
+msgstr "Nuovo prezzo standard per %s"
 
 #. module: product_supplierinfo_standard_price
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_standard_price.view_product_supplierinfo_tree
 msgid "New Price"
-msgstr ""
+msgstr "Nuovo prezzo"
 
 #. module: product_supplierinfo_standard_price
 #. odoo-python
 #: code:addons/product_supplierinfo_standard_price/models/product_supplierinfo.py:0
 #, python-format
 msgid "Price difference : %s"
-msgstr ""
+msgstr "Differenza prezzo: %s"
 
 #. module: product_supplierinfo_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_customerinfo__product_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_supplierinfo__product_standard_price
 msgid "Product actual standard price"
-msgstr ""
+msgstr "Prezzo attuale standard prodotto"
 
 #. module: product_supplierinfo_standard_price
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_standard_price.view_product_supplierinfo_tree
 msgid "Product price"
-msgstr ""
+msgstr "Prezzo prodotto"
 
 #. module: product_supplierinfo_standard_price
 #: model:ir.model,name:product_supplierinfo_standard_price.model_product_supplierinfo
 msgid "Supplier Pricelist"
-msgstr ""
+msgstr "Listino prezzi fornitore"
 
 #. module: product_supplierinfo_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_customerinfo__theoritical_standard_price
 #: model:ir.model.fields,field_description:product_supplierinfo_standard_price.field_product_supplierinfo__theoritical_standard_price
 msgid "Supplier info price with discount"
-msgstr ""
+msgstr "Informazioni prezzo fornitore con sconto"
 
 #. module: product_supplierinfo_standard_price
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_standard_price.view_product_supplierinfo_tree
 msgid "Use this price for product standard price"
-msgstr ""
+msgstr "Utilizzare questo prezzo per il prezzo standard prodotto"
 
 #. module: product_supplierinfo_standard_price
 #: model_terms:ir.ui.view,arch_db:product_supplierinfo_standard_price.view_product_supplierinfo_tree
 msgid "Use this price 🎯"
-msgstr ""
+msgstr "Usa questo prezzo 🎯"

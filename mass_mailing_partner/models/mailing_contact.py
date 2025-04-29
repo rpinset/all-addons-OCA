@@ -104,6 +104,8 @@ class MailingContact(models.Model):
         m_partner = self.env["res.partner"]
         # Look for a partner with that email
         email = self.email.strip()
+        if email == self.partner_id.email:
+            return
         partner = m_partner.search([("email", "=ilike", email)], limit=1)
         if partner:
             if partner == self.partner_id:

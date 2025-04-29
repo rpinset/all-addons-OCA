@@ -2,13 +2,23 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from odoo import fields
-from odoo.tests import Form, common
+from odoo.tests import Form, common, tagged
 
 
+@tagged("-at_install", "post_install")
 class TestAccountFiscalPositionPartnerType(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         # MODELS
         cls.res_partner_model = cls.env["res.partner"]
         cls.fiscal_position_model = cls.env["account.fiscal.position"]
@@ -17,6 +27,7 @@ class TestAccountFiscalPositionPartnerType(common.TransactionCase):
         cls.company_main = cls.env.ref("base.main_company")
         cls.company_main.default_fiscal_position_type = "b2b"
         # Fiscal Positions
+        cls.fiscal_position_model.search([]).unlink()
         cls.fiscal_position_test = cls.fiscal_position_model.create(
             {
                 "name": "Test",

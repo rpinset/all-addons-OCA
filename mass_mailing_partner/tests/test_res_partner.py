@@ -54,6 +54,15 @@ class ResPartnerCase(base.BaseCase):
             self.create_mailing_contact(
                 {"partner_id": partner.id, "list_ids": [[6, 0, [self.mailing_list.id]]]}
             )
+        # We want to check that the partner isn't overwritten unnecessarily: when the
+        # contact's partner checks are run, it could happen that:
+        # - the partner's email already matches the contact's email
+        # - there are two contacts with the same email, and the first one is chosen
+        contact = self.mailing_list.contact_ids.filtered(
+            lambda x: x.partner_id == partner2
+        )
+        contact.write({})
+        self.assertEqual(contact.partner_id, partner2)
         self.env["res.partner"].search(
             [("id", "in", (self.partner.id, partner2.id))]
         ).write({"category_id": [(4, self.category_3.id)]})
