@@ -28,7 +28,8 @@ class AccountJournal(models.Model):
             formats_list.sort()
             import_formats_str = ", ".join(formats_list)
             rslt.insert(
-                0, ("file_import_oca", _("Import") + "(" + import_formats_str + ")")
+                0,
+                ("file_import_oca", _("OCA Import") + " (" + import_formats_str + ")"),
             )
         return rslt
 

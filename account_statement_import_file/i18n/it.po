@@ -24,8 +24,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
-"PO-Revision-Date: 2024-05-03 16:35+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
+"PO-Revision-Date: 2025-04-29 19:23+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "Language: it\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_statement_import_file
 #. odoo-python
@@ -64,7 +64,7 @@ msgstr "Annulla"
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
 #, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
@@ -91,19 +91,13 @@ msgstr "Nome visualizzato"
 #. module: account_statement_import_file
 #: model:ir.model.fields,help:account_statement_import_file.field_account_statement_import__statement_file
 msgid "Download bank statement files from your bank and upload them here."
-msgstr "Scaricare il file l'estratto conto dalla propria banca e caricarlo qui."
+msgstr ""
+"Scaricare il file l'estratto conto dalla propria banca e caricarlo qui."
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__id
 msgid "ID"
 msgstr "ID"
-
-#. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importa"
 
 #. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
@@ -136,11 +130,6 @@ msgid "Journal"
 msgstr "Registro"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Ultimo aggiornamento di"
@@ -163,6 +152,13 @@ msgstr "Codice valuta mancante nel file di estratto conto."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "payment_ref mancante in una operazione."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, python-format
+msgid "OCA Import"
+msgstr "Importazione OCA"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -193,7 +189,7 @@ msgstr "Il conto banca della contabilità non è impostato nel registro \"%s\"."
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
 "Il conto bancario con numero '%(account_number)s' esiste in Odoo ma non è "
 "impostato in alcun registro banca. Assegnarlo nel relativo registro banca. "
@@ -283,6 +279,9 @@ msgid ""
 "imported transactions."
 msgstr ""
 "Il file è già stato importato oppure contiene solo operazioni già importate."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

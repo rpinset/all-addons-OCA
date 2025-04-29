@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
 "PO-Revision-Date: 2023-06-08 14:08+0000\n"
 "Last-Translator: Alexis de Lattre <alexis@via.ecp.fr>\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
@@ -55,9 +55,9 @@ msgstr "Annuler"
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
@@ -93,13 +93,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importer"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 msgid "Import Bank Statement File"
 msgstr "Import d'un fichier de relevé de compte"
@@ -130,11 +123,6 @@ msgid "Journal"
 msgstr "Journal"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Dernière modification le"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
@@ -157,6 +145,13 @@ msgstr "Code de devise manquant dans le fichier de relevé de compte."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "payment_ref manquant sur la transaction."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, fuzzy, python-format
+msgid "OCA Import"
+msgstr "Importer"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -183,11 +178,11 @@ msgstr "Le compte comptable de banque n'est pas défini dans le journal \"%s\"."
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
 "Le compte bancaire ayant le numéro '%(account_number)s' existe dans Odoo "
 "mais il n'est configuré sur aucun journal de banque. Vous devez le définir "
@@ -279,6 +274,9 @@ msgid ""
 msgstr ""
 "Vous avez déjà importé ce fichier ou ce fichier ne contient que des "
 "transactions déjà importées."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Dernière modification le"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

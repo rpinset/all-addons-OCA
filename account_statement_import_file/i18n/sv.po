@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
 "PO-Revision-Date: 2024-06-05 13:36+0000\n"
 "Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: Swedish (https://www.transifex.com/odoo/teams/41243/sv/)\n"
@@ -50,9 +50,9 @@ msgstr "Avbryt"
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
@@ -88,13 +88,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importera"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 msgid "Import Bank Statement File"
 msgstr "Importera bankkontoutdragsfil"
@@ -125,11 +118,6 @@ msgid "Journal"
 msgstr "Journal"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Senast ändrad den"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Senast uppdaterad av"
@@ -152,6 +140,13 @@ msgstr "Saknar valutakod i bankkontoutdraget."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Det saknas payment_ref på en transaktion."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, fuzzy, python-format
+msgid "OCA Import"
+msgstr "Importera"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -178,11 +173,11 @@ msgstr "Bankbokföringskontot är inte inställt i verifikatet '%s'."
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
 "Bankkontot med nummer \"%(account_number)s\" finns i Odoo men det är inte "
 "angivet på någon bankjournal. Du bör ange det på den relaterade "
@@ -272,6 +267,9 @@ msgid ""
 msgstr ""
 "Du har redan importerat den här filen eller så innehåller den här filen "
 "endast transaktioner som redan har importerats."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Senast ändrad den"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

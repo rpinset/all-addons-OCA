@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
 "PO-Revision-Date: 2021-04-26 22:47+0000\n"
 "Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
 "Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
@@ -53,13 +53,17 @@ msgstr "Annuleren"
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
 msgstr ""
+"Bankrekening '%(account_number)s' van relatie '%(partner_name)s' kan niet "
+"worden gevonden. Maak de bankrekening aan en koppel deze aan het "
+"bijbehorende dagboek. Als het gerelateerde dagboek nog niet bestaat, maak "
+"dan een nieuwe aan."
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__create_uid
@@ -85,13 +89,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__id
 msgid "ID"
 msgstr "ID"
-
-#. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importeer"
 
 #. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
@@ -126,11 +123,6 @@ msgid "Journal"
 msgstr "Dagboek"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Laatst gewijzigd op"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Laatst bijgewerkt door"
@@ -153,6 +145,13 @@ msgstr "Valutacode ontbreekt in het bankafschriftbestand."
 #, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Er ontbreekt een betaal referentie voor deze transactie."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, fuzzy, python-format
+msgid "OCA Import"
+msgstr "Importeer"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -179,12 +178,15 @@ msgstr "De rekening van dit afschrift is niet hetzelfde als het dagboek '%s'."
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
+"Het bankrekening met nummer '%s' bestaat reeds maar er is geen dagboek "
+"ingesteld. U dient dit in te stellen in het betreffende dagboek. Indien het "
+"dagboek nog niet bestaat, dan dient u een nieuwe aan te maken."
 
 #. module: account_statement_import_file
 #. odoo-python
@@ -268,6 +270,9 @@ msgstr ""
 "U heeft dit bestand al geimporteerd, of het bestand bevat enkel reeds "
 "geimporteerde transacties."
 
+#~ msgid "Last Modified on"
+#~ msgstr "Laatst gewijzigd op"
+
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "
 #~ "them here."
@@ -291,27 +296,8 @@ msgstr ""
 #~ msgid "Import ID"
 #~ msgstr "Import ID"
 
-#~ msgid ""
-#~ "Could not find any bank account with number '%s' linked to partner '%s'. "
-#~ "You should create the bank account and set it on the related bank "
-#~ "journal. If the related bank journal doesn't exist yet, you should create "
-#~ "a new one."
-#~ msgstr ""
-#~ "Bankrekening '%s' van relatie '%s' kan niet worden gevonden. Maak de "
-#~ "bankrekening aan en koppel deze aan het bijbehorende dagboek. Als het "
-#~ "gerelateerde dagboek nog niet bestaat, maak dan een nieuwe aan."
-
 #~ msgid "Partner Bank Account"
 #~ msgstr "Bankrekening van relatie"
-
-#~ msgid ""
-#~ "The bank account with number '%s' exists in Odoo but it is not set on any "
-#~ "bank journal. You should set it on the related bank journal. If the "
-#~ "related bank journal doesn't exist yet, you should create a new one."
-#~ msgstr ""
-#~ "Het bankrekening met nummer '%s' bestaat reeds maar er is geen dagboek "
-#~ "ingesteld. U dient dit in te stellen in het betreffende dagboek. Indien "
-#~ "het dagboek nog niet bestaat, dan dient u een nieuwe aan te maken."
 
 #~ msgid ""
 #~ "The currency of the bank statement (%s) is not the same as the currency "

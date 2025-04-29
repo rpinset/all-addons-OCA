@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
 "PO-Revision-Date: 2023-11-18 18:35+0000\n"
 "Last-Translator: pere-aquarian <pere@aquarian.tech>\n"
 "Language-Team: Catalan (https://www.transifex.com/odoo/teams/41243/ca/)\n"
@@ -50,9 +50,9 @@ msgstr "Cancel·la"
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
@@ -89,13 +89,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importa"
-
-#. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
 msgid "Import Bank Statement File"
 msgstr "Importar extracte bancari"
@@ -126,11 +119,6 @@ msgid "Journal"
 msgstr "Diari"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Darrera modificació el"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Última actualització per"
@@ -155,6 +143,13 @@ msgid "Missing payment_ref on a transaction."
 msgstr "Falta payment_ref a la transacció."
 
 #. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, fuzzy, python-format
+msgid "OCA Import"
+msgstr "Importació (OCA)"
+
+#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
 msgid "Statement File"
 msgstr "Arxiu d'extracte bancari"
@@ -174,16 +169,17 @@ msgstr "Formats suportats:"
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
 #, python-format
 msgid "The Bank Accounting Account is not set on the journal '%s'."
-msgstr "El compte comptable del compte bancari no està establert al diari '%s'."
+msgstr ""
+"El compte comptable del compte bancari no està establert al diari '%s'."
 
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
 "El banc amb número de compte '%(account_number)s' existeix a Odoo, però no "
 "està establert a cap diari bancari. Hauríeu de configurar-lo al diari "
@@ -274,6 +270,9 @@ msgid ""
 msgstr ""
 "Ja heu importat aquest fitxer, o aquest fitxer només conté transaccions ja "
 "importades."
+
+#~ msgid "Last Modified on"
+#~ msgstr "Darrera modificació el"
 
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-26 09:11+0000\n"
+"POT-Creation-Date: 2025-04-23 13:42+0000\n"
 "PO-Revision-Date: 2021-02-18 11:45+0000\n"
 "Last-Translator: Yves Le Doeuff <yld@alliasys.fr>\n"
 "Language-Team: French (Belgium) (http://www.transifex.com/odoo/odoo-9/"
@@ -47,13 +47,17 @@ msgstr "Annuler"
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Could not find any bank account with number '%(account_number)s' linked to "
+"Could not find any bank account with number '%(account_number)s'  linked to "
 "partner '%(partner_name)s'. You should create the bank account and set it on "
 "the related bank journal. If the related bank journal doesn't exist yet, you "
 "should create a new one."
 msgstr ""
+"Impossible de trouver un compte bancaire avec le numéro '%(account_number)s' "
+"lié au partenaire '%(partner_name)s'. Vous devez créer le compte bancaire et "
+"le définir dans le journal bancaire associé. Si le journal bancaire associé "
+"n'existe pas encore, vous devez en créer un nouveau."
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__create_uid
@@ -79,13 +83,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__id
 msgid "ID"
 msgstr "ID"
-
-#. module: account_statement_import_file
-#. odoo-python
-#: code:addons/account_statement_import_file/models/account_journal.py:0
-#, python-format
-msgid "Import"
-msgstr "Importer"
 
 #. module: account_statement_import_file
 #: model:ir.actions.act_window,name:account_statement_import_file.account_statement_import_action
@@ -119,11 +116,6 @@ msgid "Journal"
 msgstr "Journal"
 
 #. module: account_statement_import_file
-#: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import____last_update
-msgid "Last Modified on"
-msgstr "Dernière modification le"
-
-#. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__write_uid
 msgid "Last Updated by"
 msgstr "Derniere fois mis à jour par"
@@ -146,6 +138,13 @@ msgstr "Code de devise manquant dans le fichier de relevé bancaire."
 #, fuzzy, python-format
 msgid "Missing payment_ref on a transaction."
 msgstr "Référence de paiement manquant sur une transaction."
+
+#. module: account_statement_import_file
+#. odoo-python
+#: code:addons/account_statement_import_file/models/account_journal.py:0
+#, fuzzy, python-format
+msgid "OCA Import"
+msgstr "Importer"
 
 #. module: account_statement_import_file
 #: model:ir.model.fields,field_description:account_statement_import_file.field_account_statement_import__statement_file
@@ -172,12 +171,16 @@ msgstr "Le compte comptable bancaire n'est pas défini sur le journal '% s'."
 #. module: account_statement_import_file
 #. odoo-python
 #: code:addons/account_statement_import_file/wizard/account_statement_import.py:0
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The bank account with number '%(account_number)s' exists in Odoo but it is "
 "not set on any bank journal. You should set it on the related bank journal. "
-"If the related bank journal doesn't exist yet, you should create a new one."
+"If the related bank journal doesn't  exist yet, you should create a new one."
 msgstr ""
+"Le compte bancaire avec le numéro '% s' existe dans Odoo mais il n'est "
+"défini dans aucun journal de banque. Vous devez le définir dans le journal "
+"de banque associé. Si le journal de banque associé n'existe pas encore, vous "
+"devez en créer un nouveau."
 
 #. module: account_statement_import_file
 #. odoo-python
@@ -260,6 +263,9 @@ msgstr ""
 "Vous avez déjà importé ce fichier ou ce fichier ne contient que des "
 "transactions déjà importées."
 
+#~ msgid "Last Modified on"
+#~ msgstr "Dernière modification le"
+
 #~ msgid ""
 #~ "Get you bank statements in electronic format from your bank and select "
 #~ "them here."
@@ -285,29 +291,8 @@ msgstr ""
 #~ msgid "Import ID"
 #~ msgstr "ID d'importation"
 
-#~ msgid ""
-#~ "Could not find any bank account with number '%s' linked to partner '%s'. "
-#~ "You should create the bank account and set it on the related bank "
-#~ "journal. If the related bank journal doesn't exist yet, you should create "
-#~ "a new one."
-#~ msgstr ""
-#~ "Impossible de trouver un compte bancaire avec le numéro '% s' lié au "
-#~ "partenaire '% s'. Vous devez créer le compte bancaire et le définir dans "
-#~ "le journal bancaire associé. Si le journal bancaire associé n'existe pas "
-#~ "encore, vous devez en créer un nouveau."
-
 #~ msgid "Partner Bank Account"
 #~ msgstr "Compte bancaire du partenaire"
-
-#~ msgid ""
-#~ "The bank account with number '%s' exists in Odoo but it is not set on any "
-#~ "bank journal. You should set it on the related bank journal. If the "
-#~ "related bank journal doesn't exist yet, you should create a new one."
-#~ msgstr ""
-#~ "Le compte bancaire avec le numéro '% s' existe dans Odoo mais il n'est "
-#~ "défini dans aucun journal de banque. Vous devez le définir dans le "
-#~ "journal de banque associé. Si le journal de banque associé n'existe pas "
-#~ "encore, vous devez en créer un nouveau."
 
 #~ msgid ""
 #~ "The currency of the bank statement (%s) is not the same as the currency "
