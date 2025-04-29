@@ -742,9 +742,9 @@ Date:   Sun Feb 2 19:18:17 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 5864fe43dbbf32e3a6dd8fa0ab2893738270404f
+commit f4f12c110b07599c633d828d1ab31c88eef29072
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 31 13:11:48 2025 +0000
+Date:   Tue Apr 29 11:01:04 2025 +0000
 
     [BOT] post-merge updates
 
