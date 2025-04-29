@@ -369,16 +369,11 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ade312833b9c914b37dcda7505508232f377bfa0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 14 10:32:48 2025 +0000
+commit 944ee9d766f160470f9c1f97d696ec53bfb6f470
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Apr 29 14:49:09 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (165 of 165 strings)
-    
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_blanket_order/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -788,9 +783,9 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 093811c2a92387e2e328ba3d9f85580f388dbd62
+commit d62371bc256fd276d1aa97831fc70eb90e75552a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Apr 25 09:01:59 2025 +0000
+Date:   Tue Apr 29 11:02:41 2025 +0000
 
     [BOT] post-merge updates
 
@@ -851,11 +846,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 023871cd0a42d7cb4e6094388dbbc0c973e9ce6e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 24 12:25:23 2025 +0000
+commit c6593bdbd87ece2adfcb1951e234aa61b3b9886b
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Apr 29 15:17:32 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-account_vat_period_end_statement
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-account_vat_period_end_statement/
 
 
 ## l10n-japan
@@ -1163,30 +1163,30 @@ Date:   Tue Apr 8 07:03:21 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit f4cc8b9e79aca5a87c940ea8288dcc95360840c5
+commit 39f578f8b8f1b0e963b398ad1ade52d0398d54ab
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Apr 14 08:13:24 2025 +0000
+Date:   Mon Apr 28 14:23:10 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: wms-14.0/wms-14.0-stock_warehouse_flow_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_warehouse_flow_release/
+    Translation: wms-14.0/wms-14.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 004adfc1465351b9d35c3726e4c9d13a8ea23605
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Mar 12 16:45:13 2025 +0000
+commit bd88a8b757121b0b539e9f4bd51b9861e04d6d92
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Tue Apr 29 11:44:22 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (40 of 40 strings)
+    Currently translated at 99.3% (160 of 161 strings)
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_bom_attribute_match_semifinished_product
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_bom_attribute_match_semifinished_product/it/
+    Translation: manufacture-14.0/manufacture-14.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-quality_control_oca/tr/
 
 
 ## manufacture-reporting

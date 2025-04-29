@@ -83,6 +83,9 @@ class RibaConfiguration(models.Model):
         "Past Due Bills Account",
         check_company=True,
     )
+    past_due_fee_amount = fields.Float(
+        "Past due fee",
+    )
     protest_charge_account_id = fields.Many2one(
         "account.account",
         "Protest Fee Account",
@@ -108,12 +111,11 @@ class RibaConfiguration(models.Model):
 
     def get_default_value_by_list_line(self, field_name):
         if not self.env.context.get("active_id", False):
-            return False
+            return False if field_name != "past_due_fee_amount" else 0.0
         ribalist_line = self.env["riba.distinta.line"].browse(
             self.env.context["active_id"]
         )
-        return (
-            ribalist_line.distinta_id.config_id[field_name]
-            and ribalist_line.distinta_id.config_id[field_name].id
-            or False
-        )
+        config = ribalist_line.distinta_id.config_id
+        if field_name == "past_due_fee_amount":
+            return config.past_due_fee_amount
+        return config[field_name] and config[field_name].id or False

@@ -258,7 +258,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
             .create(
                 {
                     "bank_amount": 455,
-                    "expense_amount": 5,
+                    "past_due_fee_amount": 5,
                 }
             )
         )
@@ -435,7 +435,7 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
             .create(
                 {
                     "bank_amount": 102,
-                    "expense_amount": 2,
+                    "past_due_fee_amount": 2,
                 }
             )
         )
@@ -715,3 +715,34 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
         self.assertIn("Cannot post invoices", err_msg)
         self.assertIn(self.invoice.partner_id.display_name, err_msg)
         self.assertIn(str(self.invoice.amount_total), err_msg)
+
+    def test_past_due_fee_amount_flow(self):
+        config = self.env["riba.configuration"].create(
+            {
+                "name": "Test Config",
+                "type": "sbf",
+                "bank_id": self.company_bank.id,
+                "past_due_fee_amount": 15.0,
+            }
+        )
+        self.assertEqual(config.past_due_fee_amount, 15.0)
+
+        distinta = self.env["riba.distinta"].create(
+            {
+                "config_id": config.id,
+                "name": "Test Distinta",
+            }
+        )
+        distinta_line = self.env["riba.distinta.line"].create(
+            {"distinta_id": distinta.id, "amount": 100.0}
+        )
+
+        wizard = (
+            self.env["riba.unsolved"]
+            .with_context(
+                active_model="riba.distinta.line",
+                active_id=distinta_line.id,
+            )
+            .create({})
+        )
+        self.assertEqual(wizard.past_due_fee_amount, 15.0)

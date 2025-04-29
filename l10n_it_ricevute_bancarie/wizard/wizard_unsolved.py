@@ -18,6 +18,12 @@ class RibaUnsolved(models.TransientModel):
         )
 
     @api.model
+    def _get_unsolved_past_due_fee_amount(self):
+        return self.env["riba.configuration"].get_default_value_by_list_line(
+            "past_due_fee_amount"
+        )
+
+    @api.model
     def _get_effects_account_id(self):
         return self.env["riba.configuration"].get_default_value_by_list_line(
             "acceptance_account_id"
@@ -87,11 +93,20 @@ class RibaUnsolved(models.TransientModel):
         domain=[("internal_type", "=", "liquidity")],
         default=_get_bank_account_id,
     )
-    bank_amount = fields.Float("Withdrawn Amount")
+    bank_amount = fields.Float("Withdrawn Amount", compute="_compute_bank_amount")
     bank_expense_account_id = fields.Many2one(
         "account.account", "Bank Fees Account", default=_get_bank_expense_account_id
     )
-    expense_amount = fields.Float("Fees Amount")
+    past_due_fee_amount = fields.Float(
+        "Fees Amount", default=_get_unsolved_past_due_fee_amount
+    )
+
+    @api.depends("overdue_effects_amount", "past_due_fee_amount")
+    def _compute_bank_amount(self):
+        for wizard in self:
+            wizard.bank_amount = (
+                wizard.overdue_effects_amount + wizard.past_due_fee_amount
+            )
 
     def skip(self):
         active_id = self.env.context.get("active_id")
@@ -186,7 +201,7 @@ class RibaUnsolved(models.TransientModel):
             "line_ids": line_ids,
         }
 
-        if wizard.expense_amount:
+        if wizard.past_due_fee_amount:
             move_vals["line_ids"].append(
                 (
                     0,
@@ -194,7 +209,7 @@ class RibaUnsolved(models.TransientModel):
                     {
                         "name": _("Bank Fee"),
                         "account_id": wizard.bank_expense_account_id.id,
-                        "debit": wizard.expense_amount,
+                        "debit": wizard.past_due_fee_amount,
                         "credit": 0.0,
                     },
                 ),

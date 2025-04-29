@@ -54,6 +54,7 @@
                     <separator colspan="4" string="Past Due" />
                     <group>
                         <field name="unsolved_journal_id" />
+                        <field name="past_due_fee_amount" />
                         <field name="overdue_effects_account_id" />
                         <field name="protest_charge_account_id" />
                     </group>

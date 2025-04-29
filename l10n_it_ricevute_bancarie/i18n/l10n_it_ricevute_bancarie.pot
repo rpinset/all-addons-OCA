@@ -672,7 +672,7 @@ msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
 #: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_accreditation__expense_amount
-#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_unsolved__expense_amount
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_unsolved__past_due_fee_amount
 msgid "Fees Amount"
 msgstr ""
 
@@ -1232,6 +1232,11 @@ msgstr ""
 #. module: l10n_it_ricevute_bancarie
 #: model_terms:ir.ui.view,arch_db:l10n_it_ricevute_bancarie.view_riba_distinta_form
 msgid "Past Dues"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
+#: model:ir.model.fields,field_description:l10n_it_ricevute_bancarie.field_riba_configuration__past_due_fee_amount
+msgid "Past due fee"
 msgstr ""
 
 #. module: l10n_it_ricevute_bancarie
