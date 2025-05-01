@@ -137,10 +137,9 @@ msgstr "Impossibile creare la cartella %(folder)s nel server %(server)s"
 #. odoo-python
 #: code:addons/fetchmail_attach_from_folder/models/fetchmail_server_folder.py:0
 #, python-format
-msgid "Could not fetch %(msgid)s in folder %(folder)s on server %(server)s"
+msgid ""
+"Could not fetch %(message_uid)s in folder %(folder)s on server %(server)s"
 msgstr ""
-"Impossibile recuperare %(msgid)s nella cartella %(folder)s nel server "
-"%(server)s"
 
 #. module: fetchmail_attach_from_folder
 #. odoo-python
@@ -631,3 +630,9 @@ msgstr "o"
 #: model_terms:ir.ui.view,arch_db:fetchmail_attach_from_folder.view_email_server_form
 msgid "to,from"
 msgstr "a,da"
+
+#, python-format
+#~ msgid "Could not fetch %(msgid)s in folder %(folder)s on server %(server)s"
+#~ msgstr ""
+#~ "Impossibile recuperare %(msgid)s nella cartella %(folder)s nel server "
+#~ "%(server)s"

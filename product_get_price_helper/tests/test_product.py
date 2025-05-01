@@ -19,7 +19,7 @@ class ProductCase(TransactionCase):
 
     def test_product_simple_get_price(self):
         self.assertEqual(
-            self.variant._get_price(),
+            self.variant._get_price()[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 750.0,
@@ -42,7 +42,10 @@ class ProductCase(TransactionCase):
         )
         self.variant.list_price = 423.4
         self.assertEqual(
-            self.variant._get_price(pricelist=self.base_pricelist)["value"], 211.70
+            self.variant._get_price(pricelist=self.base_pricelist)[self.variant.id][
+                "value"
+            ],
+            211.70,
         )
 
     def test_product_get_price(self):
@@ -52,7 +55,7 @@ class ProductCase(TransactionCase):
             pricelist=self.base_pricelist, fposition=fiscal_position_fr
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 750.0,
@@ -66,7 +69,7 @@ class ProductCase(TransactionCase):
             pricelist=promotion_price_list, fposition=fiscal_position_fr
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 600.0,
@@ -83,7 +86,7 @@ class ProductCase(TransactionCase):
             pricelist=self.base_pricelist, fposition=tax_exclude_fiscal_position
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 652.17,
@@ -95,7 +98,7 @@ class ProductCase(TransactionCase):
             pricelist=promotion_price_list, fposition=tax_exclude_fiscal_position
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 521.74,
@@ -120,7 +123,7 @@ class ProductCase(TransactionCase):
             pricelist=self.base_pricelist, fposition=fiscal_position_fr
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 0.0,
@@ -150,7 +153,7 @@ class ProductCase(TransactionCase):
             qty=1.0, pricelist=pricelist, fposition=fposition
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 750.0,
@@ -164,7 +167,7 @@ class ProductCase(TransactionCase):
             qty=10.0, pricelist=pricelist, fposition=fposition
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "discount": 0.0,
                 "original_value": 600.0,
@@ -184,7 +187,7 @@ class ProductCase(TransactionCase):
             pricelist=self.base_pricelist, fposition=fiscal_position_fr
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "tax_included": True,
                 "value": 750.0,
@@ -200,7 +203,7 @@ class ProductCase(TransactionCase):
             pricelist=promotion_price_list, fposition=fiscal_position_fr
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "tax_included": True,
                 "value": 600.0,
@@ -219,7 +222,7 @@ class ProductCase(TransactionCase):
             pricelist=self.base_pricelist, fposition=tax_exclude_fiscal_position
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "tax_included": False,
                 "value": 652.17,
@@ -231,7 +234,7 @@ class ProductCase(TransactionCase):
             pricelist=promotion_price_list, fposition=tax_exclude_fiscal_position
         )
         self.assertDictEqual(
-            price,
+            price[self.variant.id],
             {
                 "tax_included": False,
                 "value": 521.74,

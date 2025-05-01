@@ -128,7 +128,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/fetchmail_attach_from_folder/models/fetchmail_server_folder.py:0
 #, python-format
-msgid "Could not fetch %(msgid)s in folder %(folder)s on server %(server)s"
+msgid ""
+"Could not fetch %(message_uid)s in folder %(folder)s on server %(server)s"
 msgstr ""
 
 #. module: fetchmail_attach_from_folder

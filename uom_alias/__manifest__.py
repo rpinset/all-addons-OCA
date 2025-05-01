@@ -4,9 +4,9 @@
 {
     "name": "UOM Alias",
     "summary": """Adds alias for UOM""",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "license": "LGPL-3",
-    "development_status": "Beta",
+    "development_status": "Production/Stable",
     "author": "Akretion, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/product-attribute",
     "maintainers": ["renatonlima"],

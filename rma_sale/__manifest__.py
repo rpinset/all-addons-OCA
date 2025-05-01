@@ -1,17 +1,17 @@
 # Copyright 2020 Tecnativa - Ernesto Tejeda
 # Copyright 2022-2023 Tecnativa - Víctor Martínez
 # Copyright 2021-2023 Tecnativa - David Vidal
-# Copyright 2021-2023 Tecnativa - Pedro M. Baeza
+# Copyright 2021,2023,2025 Tecnativa - Pedro M. Baeza
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Return Merchandise Authorization Management - Link with Sales",
     "summary": "Sale Order - Return Merchandise Authorization (RMA)",
-    "version": "16.0.3.1.3",
+    "version": "16.0.3.1.4",
     "development_status": "Production/Stable",
     "category": "RMA",
     "website": "https://github.com/OCA/rma",
     "author": "Tecnativa, Odoo Community Association (OCA)",
-    "maintainers": ["chienandalu"],
+    "maintainers": ["pedrobaeza"],
     "license": "AGPL-3",
     "depends": ["rma", "sale_stock"],
     "data": [
