@@ -261,9 +261,9 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 1840d7c9423f78ec65de970598e3e32cb9d316c9
+commit 200e979bcf199039fb8c4d1cad747d6db0c1ebd4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Mar 19 14:58:23 2025 +0000
+Date:   Wed Apr 30 06:42:03 2025 +0000
 
     [BOT] post-merge updates
 
