@@ -164,16 +164,11 @@ Date:   Tue Apr 15 18:14:07 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit f6d650fc76c8348973e5d8a7ca9d2f3edf8ffd4c
-Author: MaxyMoos <maxence@groine.fr>
-Date:   Wed Apr 23 09:31:13 2025 +0000
+commit bb97b2a2d122c4f99b98e93724b5b2c2647e786d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 30 15:31:28 2025 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 82.7% (101 of 122 strings)
-    
-    Translation: account-reconcile-17.0/account-reconcile-17.0-account_reconcile_oca
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-17-0/account-reconcile-17-0-account_reconcile_oca/fr/
+    [BOT] post-merge updates
 
 
 ## bank-statement-import
@@ -415,9 +410,9 @@ Date:   Mon Apr 28 07:26:37 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit e1a8490e79950457dd1914c6e26f525eb44277b2
+commit 2612e327509ffee5c0254d3cfe2b1002b3e9c2a2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 14 15:24:33 2025 +0000
+Date:   Wed Apr 30 10:36:58 2025 +0000
 
     [BOT] post-merge updates
 
@@ -447,9 +442,9 @@ Date:   Fri Mar 28 10:47:20 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 94096ee610513498d83f0a2173cf03bf7cce59ad
+commit 63972317d53650b922013231c4d58c60f7901674
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Apr 28 09:03:36 2025 +0000
+Date:   Thu May 1 06:23:54 2025 +0000
 
     [BOT] post-merge updates
 
@@ -484,16 +479,16 @@ Date:   Tue Apr 29 16:34:28 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 5691fa588f22dac5831308a4d782bd224e6313d3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 29 16:41:46 2025 +0000
+commit 90d01e0cf2f8a1c4129767dbb8780fa2389d55bc
+Author: Weblate <noreply@weblate.org>
+Date:   Thu May 1 01:14:03 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: field-service-17.0/field-service-17.0-fieldservice_route_availability
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_route_availability/it/
+    Translation: field-service-17.0/field-service-17.0-fieldservice_crm
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_crm/
 
 
 ## margin-analysis
@@ -534,11 +529,16 @@ Date:   Sun Feb 2 18:51:42 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 7334e108953e76fabcf16900397d23e8b1c6ef07
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 28 13:33:38 2025 +0000
+commit 42370da8c33f53eeece2a3dddae81cb18b566abe
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Apr 30 09:14:20 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: timesheet-17.0/timesheet-17.0-hr_timesheet_calendar
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-17-0/timesheet-17-0-hr_timesheet_calendar/
 
 
 ## hr
@@ -638,9 +638,9 @@ Date:   Sun Feb 2 19:05:29 2025 +0000
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit e1223bf91accb63c3db793f6f151e86b37dba260
+commit fde886b4eab0763c96857c2ca3f5d2fa3d346aba
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Apr 13 16:03:49 2025 +0000
+Date:   Wed Apr 30 07:36:05 2025 +0000
 
     [BOT] post-merge updates
 
@@ -760,9 +760,9 @@ Date:   Tue Apr 29 11:06:11 2025 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 4349ebb78b17214cdf026ea41a5f24cfbc2252c2
+commit 59de8f183e82a395018f2b4eeeb4083af47f9d18
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Feb 12 16:50:57 2025 +0000
+Date:   Wed Apr 30 07:25:51 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1047,11 +1047,11 @@ Date:   Mon Apr 14 14:04:26 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 834d468df0f4037817ccc851b459443570c58ee1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Apr 28 13:33:28 2025 +0000
+commit b49b0e82344c97bbed1c986efd44d2c9e250a533
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 30 15:47:30 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1083,16 +1083,11 @@ Date:   Tue Apr 29 09:40:50 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 0d1e533cde01783e7d7892252f8caf2daefeb9b8
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Feb 21 11:52:27 2025 +0000
+commit 16a85a8bbbc0c88a6e5576432b711487725f1689
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu May 1 10:04:44 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: rma-17.0/rma-17.0-rma_sale
-    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-rma_sale/
+    [BOT] post-merge updates
 
 
 ## ddmrp
@@ -1115,9 +1110,9 @@ Date:   Sun Feb 9 19:24:58 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit fa412b396f8aac4ec3c231679bc57231e5e4f0a5
+commit ccb05ca2849d4d3a8f8ad15419a18c22999089c2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 24 07:49:30 2025 +0000
+Date:   Wed Apr 30 16:56:04 2025 +0000
 
     [BOT] post-merge updates
 

@@ -1051,12 +1051,12 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
     def test_partner_name_with_parent(self):
         parent_partner = self.env["res.partner"].create(
             {
-                "name": "test",
+                "name": "test-account_reconcile_oca",
             }
         )
         child_partner = self.env["res.partner"].create(
             {
-                "name": "test",
+                "name": "test-account_reconcile_oca",
                 "parent_id": parent_partner.id,
                 "type": "delivery",
             }
@@ -1083,7 +1083,7 @@ class TestReconciliationWidget(TestAccountReconciliationCommon):
                 "amount": 100,
                 "date": time.strftime("%Y-07-15"),
                 "payment_ref": "test",
-                "partner_name": "test",
+                "partner_name": "test-account_reconcile_oca",
             }
         )
 
