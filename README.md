@@ -435,9 +435,9 @@ Date:   Thu Feb 13 15:15:41 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 162aef44d5da697c70007984d9671b319fdf9f78
+commit 30c12dad0cd1845f5b9a70ab4e8d49a95fdd854c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Apr 25 06:38:28 2025 +0000
+Date:   Wed Apr 30 12:06:47 2025 +0000
 
     [BOT] post-merge updates
 
