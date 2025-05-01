@@ -233,11 +233,14 @@ Date:   Sun Feb 2 18:15:51 2025 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit a8a17a0245e10a87536c9cf451ff6cb081da5f7f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 15 11:58:03 2025 +0000
+commit 6f88b31f3eb1ffcfa8988aa30815ecdff2824168
+Merge: a8a17a02 22ce2a3c
+Author: Simone Orsi <simahawk@users.noreply.github.com>
+Date:   Wed Apr 30 08:37:09 2025 +0200
 
-    [BOT] post-merge updates
+    Merge pull request #761 from thienvh332/18.0-pw-queue_job
+    
+    [18.0][FW] Blacklist of some PRs from 14.0
 
 
 ## connector-accountedge
@@ -441,9 +444,9 @@ Date:   Fri Mar 28 15:48:45 2025 +0000
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit 94d5eb5bf724aa45742a25195b0c2b2eb19f50b4
+commit c66c8048fdfbb4753690f99063fb3527a77f4aba
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 22 06:19:21 2025 +0000
+Date:   Wed Apr 30 14:48:13 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1052,11 +1055,11 @@ Date:   Mon Apr 28 13:35:11 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit d4304caa71c3125faec1e542afa57c5f4c24e523
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 17 05:53:49 2025 +0000
+commit caa6942c2a16188e2c064c7a41f31f2371e4cf17
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Wed Apr 30 15:21:36 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Turkish)
 
 
 ## stock-logistics-reporting
@@ -1070,9 +1073,9 @@ Date:   Fri Apr 11 06:15:06 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 117d77c51dfd652319bb209c3a3eb7b01f485c31
+commit c7164f0308aed681aebeaf96e3b208e0db000fd3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Apr 17 09:43:19 2025 +0000
+Date:   Thu May 1 10:16:17 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1119,11 +1122,11 @@ Date:   Mon Apr 28 11:16:43 2025 +0000
 
 ## manufacture-reporting
 From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
-commit 3a3769b5a80adb392dce7ed0927c87b215094129
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:57:47 2025 +0000
+commit 18c5aa0cec87d658e886a27e3473ef3bddb7b29a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Apr 30 11:12:20 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## management-system
@@ -1169,9 +1172,9 @@ Date:   Wed Feb 26 10:58:47 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit b815db15663fc24c11dae26f553a95d03ec2414d
+commit 6059fe8d3f86bd19bbc085ae8006b42122d9d067
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 15 12:14:39 2025 +0000
+Date:   Thu May 1 11:03:54 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1568,9 +1571,9 @@ Date:   Sun Feb 9 19:15:49 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit feca976025e0b2e0eb84fec411efc9155b7259a0
+commit 895a78558fdd899e53dbb2660850d742744b5cda
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 29 13:14:04 2025 +0000
+Date:   Wed Apr 30 11:37:04 2025 +0000
 
     [BOT] post-merge updates
 

@@ -779,14 +779,6 @@ msgid "Vertical Lift Tray"
 msgstr ""
 
 #. module: stock_vertical_lift
-#. odoo-python
-#: code:addons/stock_vertical_lift/controllers/main.py:0
-msgid ""
-"Vertical Lift secret not set. Please set it in Inventory/Settings/Vertical "
-"Lift"
-msgstr ""
-
-#. module: stock_vertical_lift
 #: model:ir.model.fields.selection,name:stock_vertical_lift.selection__stock_location__vertical_lift_kind__view
 msgid "View"
 msgstr ""

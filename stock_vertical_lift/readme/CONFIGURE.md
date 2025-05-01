@@ -49,3 +49,16 @@ the same tray type in the current shuttle.
 The operations allowed in the screen for the vertical lift (save,
 release, skip) can be triggered using a barcode. For this, print the
 barcodes contained in the folder 'images'.
+
+
+## Security
+
+A callback endpoint ``/vertical-lift`` is published to receive commands' answers.
+To be able to call this endpoint a secret key has to be provided
+in the POST request. Example data:  ``{"answer": "foo", "secret": "SECRET"}``
+
+On the server side you must configure the matching secret.
+There are 2 ways:
+
+1. set a config param via "Inventory/Settings/Vertical Lift"
+2. set the env var ``VERTICAL_LIFT_SECRET``
