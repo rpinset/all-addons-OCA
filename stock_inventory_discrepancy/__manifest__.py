@@ -6,7 +6,7 @@
     "summary": "Adds the capability to show the discrepancy of every line in "
     "an inventory and to block the inventory validation when the "
     "discrepancy is over a user defined threshold.",
-    "version": "16.0.1.2.0",
+    "version": "16.0.2.0.0",
     "author": "ForgeFlow, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-warehouse",
     "category": "Warehouse",
@@ -21,7 +21,6 @@
         "wizards/confirm_discrepancy_wiz.xml",
     ],
     "license": "AGPL-3",
-    "post_load": "post_load_hook",
     "installable": True,
     "application": False,
 }

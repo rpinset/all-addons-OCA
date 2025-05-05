@@ -149,7 +149,7 @@ msgstr ""
 
 #. module: stock_inventory_discrepancy
 #. odoo-python
-#: code:addons/stock_inventory_discrepancy/hooks.py:0
+#: code:addons/stock_inventory_discrepancy/models/stock_quant.py:0
 #, fuzzy, python-format
 msgid "Only a stock manager can validate an inventory adjustment."
 msgstr "验证所有库存调整"

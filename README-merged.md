@@ -36,6 +36,7 @@ addon | version | maintainers | summary
 [account_move_update_analytic](account_move_update_analytic/) | 16.0.1.0.2 | [![remi-filament](https://github.com/remi-filament.png?size=30px)](https://github.com/remi-filament) [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | This module allows the user to update analytic on posted moves
 [analytic_base_department](analytic_base_department/) | 16.0.1.0.0 |  | Add relationship between Analytic and Department
 [analytic_distribution_widget_remove_save](analytic_distribution_widget_remove_save/) | 16.0.1.0.1 |  | Remove save button on analytic distribution widget
+[analytic_hr_department_restriction](analytic_hr_department_restriction/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic distributions restriction per HR department
 [analytic_mixin_analytic_account](analytic_mixin_analytic_account/) | 16.0.1.0.0 |  | Analytic Mixin Analytic Account
 [analytic_partner](analytic_partner/) | 16.0.1.0.0 |  | Search and group analytic entries by partner
 [hr_department_analytic](hr_department_analytic/) | 16.0.1.0.0 |  | This module allows to specify analytic account on hr department
@@ -1999,6 +2000,7 @@ addon | version | maintainers | summary
 [crm_claim](crm_claim/) | 16.0.1.2.0 |  | Track your customers/vendors claims and grievances.
 [crm_claim_code](crm_claim_code/) | 16.0.1.0.1 |  | Sequential Code for Claims
 [crm_claim_type](crm_claim_type/) | 16.0.1.0.0 |  | Claim types for CRM
+[crm_date_deadline_required](crm_date_deadline_required/) | 16.0.1.0.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Field date deadline required in the opportunity
 [crm_exception](crm_exception/) | 16.0.1.0.0 |  | CRM Exception
 [crm_industry](crm_industry/) | 16.0.1.1.0 |  | Link leads/opportunities to industries
 [crm_lead_code](crm_lead_code/) | 16.0.1.0.1 |  | Sequential Code for Leads / Opportunities
@@ -2010,6 +2012,7 @@ addon | version | maintainers | summary
 [crm_location](crm_location/) | 16.0.1.0.1 |  | CRM location
 [crm_location_nuts](crm_location_nuts/) | 16.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | NUTS Regions in CRM
 [crm_partner_assign](crm_partner_assign/) | 16.0.0.1.2 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) | Assign a Partner to an Opportunity/Lead/Partner to indicate Partnership
+[crm_partner_required](crm_partner_required/) | 16.0.1.0.1 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Field partner required in the opportunity
 [crm_phonecall](crm_phonecall/) | 16.0.1.1.0 |  | CRM Phone Calls
 [crm_project_create](crm_project_create/) | 16.0.1.1.0 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Allow create projects from lead/opportunity
 [crm_project_task](crm_project_task/) | 16.0.1.0.2 | [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Create tasks from lead or opportunity
@@ -5312,9 +5315,9 @@ addon | version | maintainers | summary
 [l10n_es_pos](l10n_es_pos/) | 16.0.1.0.3 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 16.0.1.0.2 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Múltiples dispositivos por sesión en el punto de venta
 [l10n_es_pos_sii](l10n_es_pos_sii/) | 16.0.2.1.0 |  | Envío de pedidos del TPV al SII
-[l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.2 |  | Sistema de gestión de aceites industriales usados en España - Facturación
-[l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.2 |  | Sistema de gestión de aceites industriales usados en España - Compras
-[l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.2 |  | Sist. gestión aceites industriales usados en España - Ventas
+[l10n_es_sigaus_account](l10n_es_sigaus_account/) | 16.0.1.0.3 |  | Sistema de gestión de aceites industriales usados en España - Facturación
+[l10n_es_sigaus_purchase](l10n_es_sigaus_purchase/) | 16.0.1.0.3 |  | Sistema de gestión de aceites industriales usados en España - Compras
+[l10n_es_sigaus_sale](l10n_es_sigaus_sale/) | 16.0.1.0.3 |  | Sist. gestión aceites industriales usados en España - Ventas
 [l10n_es_sigaus_stock_picking_report_valued](l10n_es_sigaus_stock_picking_report_valued/) | 16.0.1.0.1 |  | Show SIGAUS amount in valued stock pickings.
 [l10n_es_ticketbai](l10n_es_ticketbai/) | 16.0.1.1.2 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | Declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 16.0.1.0.5 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - API
@@ -6142,7 +6145,7 @@ addon | version | maintainers | summary
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
 [stock_inventory](stock_inventory/) | 16.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
-[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.1.2.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
+[stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.2.0.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to set justification on inventories
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 16.0.1.0.0 |  | Lock down stock locations during inventories.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 16.0.1.1.0 |  | More filters for inventory adjustments
@@ -6459,6 +6462,7 @@ addon | version | maintainers | summary
 [stock_release_channel_batch_mode_commercial_partner](stock_release_channel_batch_mode_commercial_partner/) | 16.0.1.0.2 |  | Release pickings into channels by batch of same commercial entity
 [stock_release_channel_cutoff](stock_release_channel_cutoff/) | 16.0.1.0.2 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Add the cutoff time to the release channel
 [stock_release_channel_delivery](stock_release_channel_delivery/) | 16.0.2.1.0 |  | Add a carrier selection criteria on the release channel
+[stock_release_channel_depot](stock_release_channel_depot/) | 16.0.1.0.0 |  | This module allows users to add partner depot to stock release channel.
 [stock_release_channel_geoengine](stock_release_channel_geoengine/) | 16.0.1.1.0 |  | Release channel based on geo-localization
 [stock_release_channel_partner_by_date](stock_release_channel_partner_by_date/) | 16.0.1.1.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Set release channels for specific delivery dates
 [stock_release_channel_partner_delivery_window](stock_release_channel_partner_delivery_window/) | 16.0.1.0.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Allows to define an end date (and time) on a release channel and propagate it to the concerned pickings
@@ -6833,6 +6837,7 @@ addon | version | maintainers | summary
 [purchase_order_approved](purchase_order_approved/) | 16.0.1.0.0 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_archive](purchase_order_archive/) | 16.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_downpayment](purchase_order_downpayment/) | 16.0.1.0.0 |  | Allow to add payments from Purchase order view
+[purchase_order_duplicate_check](purchase_order_duplicate_check/) | 16.0.1.0.0 |  | Prevents overordering in the Purchase app with a Confirmation Wizard, 'Pending Orders' field, and activity tracking for repeated orders.
 [purchase_order_general_discount](purchase_order_general_discount/) | 16.0.1.0.0 |  | General discount per purchase order
 [purchase_order_hide_receipt_status](purchase_order_hide_receipt_status/) | 16.0.1.0.1 |  | Purchase Order Hide Receipt Status
 [purchase_order_line_menu](purchase_order_line_menu/) | 16.0.2.1.1 |  | Adds Purchase Order Lines Menu
@@ -8419,7 +8424,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
 [base_substate](base_substate/) | 16.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.1 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 16.0.2.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 16.0.2.6.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
 [base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Add Tier Review Boards
 [base_tier_validation_correction](base_tier_validation_correction/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Correct tier.review data after it has been created.
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
@@ -9314,7 +9319,7 @@ addon | version | maintainers | summary
 [web_m2x_options](web_m2x_options/) | 16.0.1.1.3 |  | web_m2x_options
 [web_m2x_options_manager](web_m2x_options_manager/) | 16.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 16.0.1.0.0 |  | Remove the bubbles from the web interface
-[web_notify](web_notify/) | 16.0.2.0.2 |  | Send notification messages to user
+[web_notify](web_notify/) | 16.0.3.1.0 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 16.0.1.0.1 |  | Send an instant notification to channel users when a new message is posted
 [web_notify_upgrade](web_notify_upgrade/) | 16.0.1.0.0 |  | Notify active users when a module is installed or updated
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure

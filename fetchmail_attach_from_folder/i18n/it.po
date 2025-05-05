@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: server-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 11:14+0000\n"
-"PO-Revision-Date: 2024-12-15 14:06+0000\n"
+"PO-Revision-Date: 2025-05-03 17:23+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-8-0/"
 "language/it/)\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_server_folder__action_id
@@ -140,6 +140,8 @@ msgstr "Impossibile creare la cartella %(folder)s nel server %(server)s"
 msgid ""
 "Could not fetch %(message_uid)s in folder %(folder)s on server %(server)s"
 msgstr ""
+"Impossibile recuperare %(message_uid)s nella cartella %(folder)s nel server "
+"%(server)s"
 
 #. module: fetchmail_attach_from_folder
 #. odoo-python

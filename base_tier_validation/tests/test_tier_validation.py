@@ -902,7 +902,7 @@ class TierTierValidation(CommonTierValidation):
             )
         self.assertEqual(self.test_record.test_validation_field, 4)
 
-    def test_27_reevaluate_validation(self):
+    def test_26_reevaluate_validation(self):
         # Create new test record
         test_record = self.test_model.create(
             {"test_field": 100, "test_validation_field": 15}
@@ -946,7 +946,7 @@ class TierTierValidation(CommonTierValidation):
         self.assertEqual(len(test_record.review_ids), 2)
         self.assertIn(old_review, test_record.review_ids)
 
-    def test_28_reevaluate_validation(self):
+    def test_27_reevaluate_validation(self):
         # Create new test record
         test_record = self.test_model.create(
             {"test_field": 100, "test_validation_field": 15}
@@ -993,6 +993,62 @@ class TierTierValidation(CommonTierValidation):
         self.assertEqual(len(reviews), 1)
         self.assertEqual(len(test_record.review_ids), 2)
         self.assertIn(old_review, test_record.review_ids)
+
+    def test_28_request_validation_diff_company(self):
+        """
+        Test validation request behavior with multi-company setup.
+
+        Setup:
+        - Main company has 2 tier definitions:
+          - One for User1 (sequence 30)
+          - One for User3 (sequence 20)
+        - Other company has 1 tier definition:
+          - One for User3 (sequence 30)
+
+        When record's company is set to 'other company':
+        - Only User3's tier definition from other company should be applied
+        - Should create only 1 review
+        """
+        self.assertFalse(self.test_record_2.review_ids)
+        self.assertFalse(self.test_record_2.company_id)
+        self.assertEqual(self.test_user_3_multi_company.env.company, self.main_company)
+
+        self.test_record_2.company_id = self.other_company
+
+        reviews = self.test_record_2.with_user(
+            self.test_user_3_multi_company.id
+        ).request_validation()
+        self.test_record_2.invalidate_recordset()
+
+        self.assertEqual(len(reviews), 1)
+
+    def test_29_request_validation_same_company(self):
+        """
+        Test validation request behavior with multi-company setup.
+
+        Setup:
+        - Main company has 2 tier definitions:
+          - One for User1 (sequence 30)
+          - One for User3 (sequence 20)
+        - Other company has 1 tier definition:
+          - One for User3 (sequence 30)
+
+        When record's company is set to 'main company':
+        - Both User1 and User3's tier definitions from main company should be applied
+        - Should create 2 reviews
+        """
+        self.assertFalse(self.test_record_2.review_ids)
+        self.assertFalse(self.test_record_2.company_id)
+        self.assertEqual(self.test_user_3_multi_company.env.company, self.main_company)
+
+        self.test_record_2.company_id = self.main_company
+
+        reviews = self.test_record_2.with_user(
+            self.test_user_3_multi_company.id
+        ).request_validation()
+        self.test_record_2.invalidate_recordset()
+
+        self.assertEqual(len(reviews), 2)
 
 
 @tagged("at_install")
