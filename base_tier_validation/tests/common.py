@@ -44,6 +44,9 @@ class CommonTierValidation(common.TransactionCase):
         cls.tester_model_computed = cls.env["ir.model"].search(
             [("model", "=", "tier.validation.tester.computed")]
         )
+        # Create a multi-company
+        cls.main_company = cls.env.ref("base.main_company")
+        cls.other_company = cls.env["res.company"].create({"name": "My Company"})
 
         models = (
             cls.tester_model,
@@ -92,6 +95,14 @@ class CommonTierValidation(common.TransactionCase):
         )
         cls.test_user_2 = cls.env["res.users"].create(
             {"name": "Mike", "login": "test2", "email": "mike@yourcompany.example.com"}
+        )
+        cls.test_user_3_multi_company = cls.env["res.users"].create(
+            {
+                "name": "Jane",
+                "login": "test3",
+                "email": "jane@mycompany.example.com",
+                "company_ids": [(6, 0, [cls.main_company.id, cls.other_company.id])],
+            }
         )
 
         # Create tier definitions:
@@ -158,6 +169,49 @@ class CommonTierValidation(common.TransactionCase):
                 "notify_on_pending": False,
                 "sequence": 20,
                 "name": "Definition for computed model",
+            }
+        )
+
+        # Create definition for test 30, 31
+        # Main company tier definition
+        cls.tier_def_obj.create(
+            {
+                "model_id": cls.tester_model_2.id,
+                "review_type": "individual",
+                "reviewer_id": cls.test_user_1.id,
+                "definition_domain": "[('test_field', '>=', 1.0)]",
+                "approve_sequence": True,
+                "notify_on_pending": False,
+                "sequence": 30,
+                "name": "Definition for test 30 - sequence - user 1 - main company",
+                "company_id": cls.main_company.id,
+            }
+        )
+        cls.tier_def_obj.create(
+            {
+                "model_id": cls.tester_model_2.id,
+                "review_type": "individual",
+                "reviewer_id": cls.test_user_3_multi_company.id,
+                "definition_domain": "[('test_field', '>=', 1.0)]",
+                "approve_sequence": True,
+                "notify_on_pending": False,
+                "sequence": 20,
+                "name": "Definition for test 30 - sequence - user 3 - main company",
+                "company_id": cls.main_company.id,
+            }
+        )
+        # Other company tier definition
+        cls.tier_def_obj.create(
+            {
+                "model_id": cls.tester_model_2.id,
+                "review_type": "individual",
+                "reviewer_id": cls.test_user_3_multi_company.id,
+                "definition_domain": "[('test_field', '>=', 1.0)]",
+                "approve_sequence": True,
+                "notify_on_pending": False,
+                "sequence": 30,
+                "name": "Definition for test 30 - sequence - user 3 - other company",
+                "company_id": cls.other_company.id,
             }
         )
 
