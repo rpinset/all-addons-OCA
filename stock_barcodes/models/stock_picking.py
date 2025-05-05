@@ -32,8 +32,7 @@ class StockPicking(models.Model):
         wiz = self.env["wiz.stock.barcodes.read.picking"].create(
             self._prepare_barcode_wiz_vals(option_group)
         )
-        wiz.fill_pending_moves()
-        wiz.determine_todo_action()
+        wiz.with_context(skip_clean_values=True).update_barcodes_wiz_after_changes()
         action = self.env["ir.actions.actions"]._for_xml_id(
             "stock_barcodes.action_stock_barcodes_read_picking"
         )

@@ -27,14 +27,15 @@ class StockMoveLine(models.Model):
         self.qty_done = 0.0
 
     def action_barcode_detailed_operation_unlink(self):
-        for sml in self:
-            stock_move = sml.move_id
-            stock_move.barcode_backorder_action = "pending"
-            sml.unlink()
-            # HACK: To force refresh wizard values
-            wiz_barcode = self.env["wiz.stock.barcodes.read.picking"].browse(
-                self.env.context.get("wiz_barcode_id", False)
-            )
-            stock_move._action_assign()
-            wiz_barcode.fill_todo_records()
-            wiz_barcode.determine_todo_action()
+        stock_moves = self.move_id
+        self.unlink()
+        stock_moves.barcode_backorder_action = "pending"
+        # TODO: Any alternative to cover all cases without reassign?
+        stock_moves._action_assign()
+        # HACK: To force refresh wizard values
+        wiz_barcode = self.env["wiz.stock.barcodes.read.picking"].browse(
+            self.env.context.get("wiz_barcode_id", False)
+        )
+        wiz_barcode.with_context(
+            skip_clean_values=True
+        ).update_barcodes_wiz_after_changes()

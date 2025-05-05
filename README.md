@@ -360,9 +360,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 03f2cdf9c31ec63ed4f394e8347569258317f9b4
+commit f577c348b719370f7379ee866a07d0d7f5df6956
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 22 09:14:43 2025 +0000
+Date:   Sat May 3 20:25:22 2025 +0000
 
     [BOT] post-merge updates
 
@@ -539,11 +539,16 @@ Date:   Sun Feb 9 19:02:26 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 6c6dc9cd1d29f6b07f135577b66bd57de2ceb36d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:53:33 2025 +0000
+commit d89f84fc256709c03667083787af84a17c3867fe
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat May 3 10:08:33 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (16 of 16 strings)
+    
+    Translation: hr-15.0/hr-15.0-hr_employee_service
+    Translate-URL: https://translation.odoo-community.org/projects/hr-15-0/hr-15-0-hr_employee_service/it/
 
 
 ## hr-attendance
@@ -566,16 +571,16 @@ Date:   Wed Mar 19 04:02:43 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 4f3a9dbc3d74d49cd2cbc0f4797cd50b573f5fbe
+commit 281a2dfee8769e8d0967d50345fd30cbbeafd2b8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 14 14:32:58 2025 +0000
+Date:   Sat May 3 10:09:47 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (41 of 41 strings)
     
-    Translation: hr-holidays-15.0/hr-holidays-15.0-hr_holidays_public_city
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-15-0/hr-holidays-15-0-hr_holidays_public_city/it/
+    Translation: hr-holidays-15.0/hr-holidays-15.0-hr_holidays_public
+    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-15-0/hr-holidays-15-0-hr_holidays_public/it/
 
 
 ## department
@@ -1021,11 +1026,11 @@ Date:   Sun Feb 2 18:36:45 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit cf77c9341cfc57fb38211090a4f6efe05b44a8ea
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:48:32 2025 +0000
+commit 22c6f9b65aa1ad30035771e3a984dfdca18756e2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 2 10:11:05 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
@@ -1300,9 +1305,9 @@ Date:   Sun Sep 3 12:07:04 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 57d3aedb9be5f0610d1776a50d78e43cd5b335c8
+commit f51599a5aeb3a9426b6aead19bc517f33e7052ca
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Apr 8 15:40:57 2025 +0000
+Date:   Fri May 2 12:25:13 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1409,9 +1414,9 @@ Date:   Sun Feb 9 18:37:19 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 0eba1533340e144e14853a2d92fa46c38792d3a4
+commit 448662650f238c2e00e879a386672c986147d2b8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Mar 18 09:48:47 2025 +0000
+Date:   Fri May 2 11:18:52 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1576,16 +1581,11 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit c601529924c6270fc8368e739d1234d125528694
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Mar 11 16:51:55 2025 +0000
+commit 253a3b672fc2bed554ab90ba4b3e56616fdac0c7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon May 5 16:48:20 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: web-15.0/web-15.0-web_ir_actions_act_multi
-    Translate-URL: https://translation.odoo-community.org/projects/web-15-0/web-15-0-web_ir_actions_act_multi/
+    [BOT] post-merge updates
 
 
 ## website

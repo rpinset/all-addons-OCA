@@ -5,6 +5,7 @@ odoo.define("stock_barcodes.FormView", function (require) {
     "use strict";
 
     var FormView = require("web.FormView");
+    var FormController = require("web.FormController");
 
     FormView.include({
         /**
@@ -19,6 +20,16 @@ odoo.define("stock_barcodes.FormView", function (require) {
                 params.withControlPanel = false;
             }
             return params;
+        },
+    });
+
+    FormController.include({
+        _barcodeActiveScanned: function () {
+            this._super(...arguments);
+            var record = this.model.get(this.handle);
+            if (record.model.includes("wiz.stock.barcodes.read")) {
+                $("#dummy_on_barcode_scanned").click();
+            }
         },
     });
 });

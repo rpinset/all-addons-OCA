@@ -44,8 +44,7 @@ class StockPickingType(models.Model):
         ):
             vals["location_dest_id"] = self.default_location_dest_id.id
         wiz = self.env["wiz.stock.barcodes.read.picking"].create(vals)
-        wiz.fill_pending_moves()
-        wiz.determine_todo_action()
+        wiz.with_context(skip_clean_values=True).update_barcodes_wiz_after_changes()
         action = self.env["ir.actions.actions"]._for_xml_id(
             "stock_barcodes.action_stock_barcodes_read_picking"
         )

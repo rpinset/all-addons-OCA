@@ -99,9 +99,7 @@ class WizStockBarcodesReadTodo(models.TransientModel):
         self.state = "pending"
         self.line_ids.barcode_scan_state = "pending"
         self.line_ids.qty_done = 0.0
-        self.wiz_barcode_id.action_clean_values()
-        self.wiz_barcode_id.fill_todo_records()
-        self.wiz_barcode_id.determine_todo_action()
+        self.wiz_barcode_id.update_barcodes_wiz_after_changes()
 
     def action_back_line(self):
         if self.position_index > 0:
@@ -146,7 +144,10 @@ class WizStockBarcodesReadTodo(models.TransientModel):
             ):
                 rec.state = "done"
             else:
-                rec.state = "pending"
+                if rec.stock_move_ids[:1].barcode_backorder_action == "pending":
+                    rec.state = "pending"
+                else:
+                    rec.state = "done_forced"
 
     @api.model
     def fields_to_fill_from_pending_line(self):

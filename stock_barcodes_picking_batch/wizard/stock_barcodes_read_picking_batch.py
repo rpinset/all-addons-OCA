@@ -82,7 +82,7 @@ class WizStockBarcodesReadPickingBatch(models.TransientModel):
         # We are in a wizard view, so for create a candidate picking batch
         # with the same default picking batch we need create it in this onchange
         self._set_default_picking_batch()
-        self.determine_todo_action()
+        self.update_barcodes_wiz_after_changes()
 
     def get_sorted_move_lines(self, move_lines):
         if self.picking_mode != "picking_batch":
