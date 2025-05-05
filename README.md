@@ -575,11 +575,16 @@ Date:   Sun Feb 9 19:02:05 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 7dc53cdb0bf250e736d9c90209a724cf2e5bac2c
-Author: Nicola Clemente <nickdellaclemodoo@gmail.com>
-Date:   Thu Feb 27 21:52:22 2025 +0000
+commit 19723743da2833d0a4159f565680474b7524fcf6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat May 3 10:08:37 2025 +0000
 
-    Added translation using Weblate (Italian (it_IT))
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: hr-14.0/hr-14.0-hr_employee_service
+    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_employee_service/it/
 
 
 ## hr-attendance
@@ -607,16 +612,11 @@ Date:   Fri Mar 14 12:14:26 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit be3bd4cd1c5ebc771803d7202a41b889c0eebef1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 14 14:41:17 2025 +0000
+commit cebbad8058ef933cfa9d8bcc157c9e6522dcb76e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon May 5 07:17:02 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (42 of 42 strings)
-    
-    Translation: hr-holidays-14.0/hr-holidays-14.0-hr_holidays_public
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-14-0/hr-holidays-14-0-hr_holidays_public/it/
+    [BOT] post-merge updates
 
 
 ## department

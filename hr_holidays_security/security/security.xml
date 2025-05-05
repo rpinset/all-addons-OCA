@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <!-- TODO: In v15 should be maintained, this does not exist
+    because group_hr_holidays_responsible is in Technical !-->
+    <record id="hr_holidays.hr_leave_allocation_rule_officer_update" model="ir.rule">
+        <field
+            name="groups"
+            eval="[(4, ref('hr_holidays.group_hr_holidays_responsible'))]"
+        />
+    </record>
+    <record id="hr_leave_report_rule_responsible" model="ir.rule">
+        <field name="name">Time Off report Responsible</field>
+        <field name="model_id" ref="hr_holidays.model_hr_leave_report" />
+        <field
+            name="domain_force"
+        >[('employee_id.leave_manager_id', '=', user.id)]</field>
+        <field name="perm_create" eval="False" />
+        <field name="perm_write" eval="False" />
+        <field name="perm_unlink" eval="False" />
+        <field
+            name="groups"
+            eval="[(4, ref('hr_holidays.group_hr_holidays_responsible'))]"
+        />
+    </record>
+    <!-- TODO: To be deleted in v15 (included in hr_holidays). -->
+    <record id="hr_leave_report_rule_group_user" model="ir.rule">
+        <field name="name">Time Off Summary / Report: Internal User</field>
+        <field name="model_id" ref="hr_holidays.model_hr_leave_report" />
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+        <field name="perm_create" eval="False" />
+        <field name="perm_write" eval="False" />
+        <field name="perm_unlink" eval="False" />
+        <field name="groups" eval="[(4, ref('base.group_user'))]" />
+    </record>
+    <record id="hr_leave_report_rule_group_holiday_user" model="ir.rule">
+        <field name="name">Time Off Summary / Report: All Approver</field>
+        <field name="model_id" ref="hr_holidays.model_hr_leave_report" />
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_create" eval="False" />
+        <field name="perm_write" eval="False" />
+        <field name="perm_unlink" eval="False" />
+        <field name="groups" eval="[(4, ref('hr_holidays.group_hr_holidays_user'))]" />
+    </record>
+</odoo>
