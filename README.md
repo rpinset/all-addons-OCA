@@ -576,9 +576,9 @@ Date:   Sat Feb 1 21:05:55 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 5013a9e7a590405c1f94987d740e97e080db13db
+commit 66ef9b8c234bd2be90a1bddf5c63573856a5e8b7
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 14 12:14:41 2025 +0000
+Date:   Sat May 3 10:09:34 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1252,11 +1252,16 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 31e76a4e31744b7192908e158533706e6e7210b3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:35:07 2025 +0000
+commit 05b781dae61096390e24d1a720331dfc13bb99b2
+Author: Valaeys Stéphane <svalaeys@fiefmanage.ch>
+Date:   Mon May 5 13:01:02 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (286 of 286 strings)
+    
+    Translation: contract-12.0/contract-12.0-agreement_legal
+    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-agreement_legal/fr/
 
 
 ## business-requirement
