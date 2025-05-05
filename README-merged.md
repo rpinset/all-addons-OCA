@@ -3490,8 +3490,8 @@ addon | version | maintainers | summary
 [datev_export_xml](datev_export_xml/) | 13.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [l10n_de_country_states](l10n_de_country_states/) | 13.0.1.0.0 |  | German Country States
 [l10n_de_holidays](l10n_de_holidays/) | 13.0.1.0.1 |  | Holidays for Germany
-[l10n_de_skr03_mis_reports](l10n_de_skr03_mis_reports/) | 13.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03)
-[l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 13.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
+[l10n_de_skr03_mis_reports](l10n_de_skr03_mis_reports/) | 13.0.1.0.1 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03)
+[l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 13.0.1.0.1 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 13.0.1.0.1 |  | German VAT Statement
 [l10n_de_toponyms](l10n_de_toponyms/) | 13.0.1.0.0 |  | German Toponyms
 

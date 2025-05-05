@@ -581,11 +581,16 @@ Date:   Sat Feb 1 21:31:41 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 583328799a9d9e7aac120e6fa385e0aff19a11f1
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:17:01 2025 +0000
+commit aaaaa713fd35f8441b32fa2d47e8ddf55a216fef
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat May 3 10:08:34 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: hr-13.0/hr-13.0-hr_employee_service_contract
+    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_employee_service_contract/it/
 
 
 ## hr-attendance
@@ -608,9 +613,9 @@ Date:   Sat Feb 1 21:17:25 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 2ea6756f123077e9ac21034ff56b6c38f278ab4b
+commit 04fd2a7d04d8c64fe4a6cd6e6d94deb06ad744b9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 14 14:35:18 2025 +0000
+Date:   Sat May 3 10:09:54 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -816,11 +821,11 @@ Date:   Sun Sep 3 13:33:05 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 0fcfcd78d0e1a29d29c3561eff86aa44847743ff
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:20:08 2025 +0000
+commit a698b2d8551967aea94031b0e2f30bb4c0f880d7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 3 10:09:42 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-greece

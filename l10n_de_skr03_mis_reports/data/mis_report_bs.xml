@@ -778,13 +778,28 @@
         />
         <field name="sequence">570</field>
     </record>
+    <record model="mis.report.kpi" id="mis_report_bs_gewinn_des_jahres">
+        <field name="report_id" ref="mis_report_bs" />
+        <field name="name">gewinn_des_jahres</field>
+        <field name="description">5. Gewinn des Jahres</field>
+        <field name="expression">bale[('user_type_id', '=', ref('account.data_unaffected_earnings').id)] + bale['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]-balu['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]</field>
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="style_id" ref="style_l10n_de_level3" />
+        <field name="auto_expand_accounts" eval="True" />
+        <field
+            name="auto_expand_accounts_style_id"
+            ref="style_l10n_de_level3_accounts"
+        />
+        <field name="sequence">575</field>
+    </record>
     <record model="mis.report.kpi" id="mis_report_bs_total_gewinnruecklage">
         <field name="report_id" ref="mis_report_bs" />
         <field name="name">total_gewinnruecklage</field>
         <field name="description">Total III. Gewinnrücklage</field>
         <field
             name="expression"
-        >+ ruecklage_gesetzlich + ruecklage_eigene_anteile + ruecklage_satzung + ruecklage_andere_gewinne</field>
+        >+ ruecklage_gesetzlich + ruecklage_eigene_anteile + ruecklage_satzung + ruecklage_andere_gewinne + gewinn_des_jahres</field>
         <field name="type">num</field>
         <field name="compare_method">pct</field>
         <field name="style_id" ref="style_l10n_de_level1_total" />
