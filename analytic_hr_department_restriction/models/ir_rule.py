@@ -40,6 +40,20 @@ class IrRule(models.Model):
             and not user.has_group(group4)
             and test_condition
         ):
+            # We need to get all possible employees of the user in any company (even
+            # if not defined in allowed_company_ids).
+            # Example of use case:
+            # - User: Company A + Company B
+            # - Employee: Company A
+            # - Department: Without company
+            # - Plan: Wihout company + Department
+            # - Purchase Order: Company A + Plan + Department
+            # - If the user accesses the purchase order only with company A, he/she
+            # should be able to see the plan and/or the analytical accounts.
+            # Note: We need to override employee_ids so that when we pass it the
+            # allowed_company_ids context it will return the appropriate value.
+            user.invalidate_recordset(["employee_ids"])
+            user = user.with_context(allowed_company_ids=user.company_ids.ids)
             if user.has_group(group2):
                 extra_domain = [
                     ("department_id", "child_of", user.employee_ids.department_id.ids)

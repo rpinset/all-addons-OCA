@@ -6,7 +6,7 @@
 {
     "name": "NUTS Regions for German",
     "summary": "NUTS specific options for German",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "category": "Localisation/Europe",
     "website": "https://github.com/OCA/l10n-germany",
     "author": "Tecnativa, " "Odoo Community Association (OCA)",

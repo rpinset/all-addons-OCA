@@ -172,11 +172,12 @@ class AccountMove(models.Model):
             )
             boe_account = first(boe_payable_lines).account_id
             line_vals = {
-                "name": _("Customs supplier"),
+                "name": _("Customs supplier %s", bill_of_entry.name),
                 "account_id": first(boe_account).id,
                 "debit": bill_of_entry.amount_total,
                 "credit": 0.0,
                 "partner_id": bill_of_entry.partner_id.id,
+                "bill_of_entry_id": bill_of_entry.id,
             }
             move_lines.append((0, 0, line_vals))
             for boe_line in bill_of_entry.invoice_line_ids.filtered(
@@ -204,20 +205,23 @@ class AccountMove(models.Model):
 
     def _reconcile_bill_of_entry_storno(self, move):
         self.ensure_one()
-        reconcile_ids = []
-        for move_line in move.line_ids:
-            line_account = move_line.account_id
-            for boe in self.forwarder_bill_of_entry_ids:
-                boe_payable_lines = boe.line_ids.filtered(
-                    lambda line: line.account_type == "liability_payable"
-                )
-                boe_account = first(boe_payable_lines).account_id
-                if line_account == boe_account:
-                    reconcile_ids.append(move_line.id)
-                    for boe_move_line in boe.line_ids:
-                        if boe_move_line.account_id == boe_account:
-                            reconcile_ids.append(boe_move_line.id)
-        return self.env["account.move.line"].browse(reconcile_ids).reconcile()
+        move_line_ids = move.line_ids.filtered(
+            lambda line: line.account_type == "liability_payable"
+        )
+        if not move_line_ids:
+            raise UserError(_("No storno lines to reconcile"))
+        for move_line in move_line_ids:
+            reconcile_ids = []
+            reconcile_ids.append(move_line.id)
+            boe_line_ids = move_line.bill_of_entry_id.line_ids.filtered(
+                lambda boe_line,
+                move_line_account=move_line.account_id: boe_line.account_id
+                == move_line_account
+            )
+            if not boe_line_ids:
+                raise UserError(_("No bill of entry lines to reconcile"))
+            reconcile_ids.extend(boe_line_ids.ids)
+            self.env["account.move.line"].browse(reconcile_ids).reconcile()
 
     def action_post(self):
         res = super().action_post()
@@ -300,3 +304,10 @@ class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
     advance_customs_vat = fields.Boolean()
+    bill_of_entry_id = fields.Many2one(
+        "account.move",
+        string="Bill of Entry",
+        readonly=True,
+        copy=False,
+        domain="[('customs_doc_type', '=', 'bill_of_entry')]",
+    )

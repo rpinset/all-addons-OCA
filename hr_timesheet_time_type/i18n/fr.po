@@ -17,9 +17,19 @@ msgstr ""
 "X-Generator: Weblate 4.3.2\n"
 
 #. module: hr_timesheet_time_type
+#: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__active
+msgid "Active"
+msgstr ""
+
+#. module: hr_timesheet_time_type
 #: model:ir.model,name:hr_timesheet_time_type.model_account_analytic_line
 msgid "Analytic Line"
 msgstr "Ligne analytique"
+
+#. module: hr_timesheet_time_type
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_search
+msgid "Archived"
+msgstr ""
 
 #. module: hr_timesheet_time_type
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__code
@@ -98,3 +108,8 @@ msgstr "Type de temps"
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line__time_type_name
 msgid "Time Type Name"
 msgstr "Nom du type de temps"
+
+#. module: hr_timesheet_time_type
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_search
+msgid "Time Type Search"
+msgstr ""

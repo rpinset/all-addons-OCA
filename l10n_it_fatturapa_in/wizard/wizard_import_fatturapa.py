@@ -923,7 +923,7 @@ class WizardImportFatturapa(models.TransientModel):
                                     "acc_number": iban,
                                     "partner_id": partner_id,
                                     "bank_id": bank.id,
-                                    "bank_name": dline.IstitutoFinanziario or bank.name,
+                                    "bank_name": bank.name or dline.IstitutoFinanziario,
                                     "bank_bic": dline.BIC or bank.bic,
                                 }
                             ).id

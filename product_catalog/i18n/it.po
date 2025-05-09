@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-05 16:23+0000\n"
+"PO-Revision-Date: 2025-05-06 12:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -33,14 +33,14 @@ msgstr "Attributi"
 #: code:addons/product_catalog/models/product_catalog_mixin.py:0
 #, python-format
 msgid "Back to Order"
-msgstr "Indietro al prelievo"
+msgstr "Torna all'ordine"
 
 #. module: product_catalog
 #. odoo-python
 #: code:addons/product_catalog/models/product_catalog_mixin.py:0
 #, python-format
 msgid "Back to Quotation"
-msgstr "Indietro al preventivo"
+msgstr "Torna al preventivo"
 
 #. module: product_catalog
 #: model:ir.model.fields,field_description:product_catalog.field_product_catalog_mixin__catalog_button_text

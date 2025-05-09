@@ -3,7 +3,7 @@
 {
     "name": "Website Sale Invoice Address",
     "summary": "Set e-Commerce sale orders invoice address as in backend",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Website",
     "website": "https://github.com/OCA/e-commerce",
     "author": "Tecnativa, Odoo Community Association (OCA)",
@@ -16,4 +16,5 @@
             "/website_sale_invoice_address/static/src/js/website_sale_invoice_address_tour.js"
         ]
     },
+    "data": ["views/templates.xml"],
 }

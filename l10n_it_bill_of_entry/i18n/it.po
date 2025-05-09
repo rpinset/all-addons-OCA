@@ -21,8 +21,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:l10n_it_bill_of_entry.view_boe_config_settings
 msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" aria-label=\"Values set here are company-specific.\" groups="
-"\"base.group_multi_company\" role=\"img\"/>"
+"specific.\" aria-label=\"Values set here are company-specific.\" "
+"groups=\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
 "specifici per azienda.\" aria-label=\"I valori impostati qui sono specifici "
@@ -39,6 +39,7 @@ msgid "Advance Customs Vat"
 msgstr "IVA dogana anticipata"
 
 #. module: l10n_it_bill_of_entry
+#: model:ir.model.fields,field_description:l10n_it_bill_of_entry.field_account_move_line__bill_of_entry_id
 #: model:ir.model.fields.selection,name:l10n_it_bill_of_entry.selection__account_move__customs_doc_type__bill_of_entry
 msgid "Bill of Entry"
 msgstr "Bolla doganale"
@@ -147,8 +148,8 @@ msgstr "Spese dogana"
 #. odoo-python
 #: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
 #, python-format
-msgid "Customs supplier"
-msgstr "Fornitore dogana"
+msgid "Customs supplier %s"
+msgstr ""
 
 #. module: l10n_it_bill_of_entry
 #: model:product.template,name:l10n_it_bill_of_entry.product_product_delivery_product_template
@@ -247,6 +248,20 @@ msgstr "Nessuna bolla doganale trovata per questa fattura"
 #. odoo-python
 #: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
 #, python-format
+msgid "No bill of entry lines to reconcile"
+msgstr ""
+
+#. module: l10n_it_bill_of_entry
+#. odoo-python
+#: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
+#, python-format
+msgid "No storno lines to reconcile"
+msgstr ""
+
+#. module: l10n_it_bill_of_entry
+#. odoo-python
+#: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
+#, python-format
 msgid "Please set 'Bill of entry partner' in accounting configuration"
 msgstr ""
 "Impostare \"Partner bolla doganale\" nella configurazione della contabilità"
@@ -325,6 +340,10 @@ msgid "You can generate bill of entry from extra UE supplier invoice only"
 msgstr ""
 "È possibile generare la bolla doganale solamente da una fattura fornitore "
 "extra UE"
+
+#, python-format
+#~ msgid "Customs supplier"
+#~ msgstr "Fornitore dogana"
 
 #, python-format
 #~ msgid "Bill of entry %s is in state %s"

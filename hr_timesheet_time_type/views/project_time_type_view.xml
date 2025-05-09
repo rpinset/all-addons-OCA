@@ -26,6 +26,20 @@
             </form>
         </field>
     </record>
+    <record id="view_project_time_type_search" model="ir.ui.view">
+        <field name="name">project.time.type.search</field>
+        <field name="model">project.time.type</field>
+        <field name="arch" type="xml">
+            <search string="Time Type Search">
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active','=',False)]"
+                />
+                <separator />
+            </search>
+        </field>
+    </record>
     <record id="open_project_time_type_tree" model="ir.actions.act_window">
         <field name="name">Time Type</field>
         <field name="res_model">project.time.type</field>

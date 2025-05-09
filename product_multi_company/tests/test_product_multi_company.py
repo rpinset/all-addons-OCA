@@ -136,11 +136,3 @@ class TestProductMultiCompany(ProductMultiCompanyCommon, common.TransactionCase)
             ]
         )
         self.assertEqual(searched_products, expected_products)
-
-    def test_uninstall(self):
-        from ..hooks import uninstall_hook
-
-        uninstall_hook(self.env.cr, None)
-        rule = self.env.ref("product.product_comp_rule")
-        domain = " [('company_id', 'in', [False, user.company_id.id])]"
-        self.assertEqual(rule.domain_force, domain)

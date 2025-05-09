@@ -171,6 +171,22 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
         bill_of_entry_form.supplier_invoice_ids.add(self.supplier_invoice)
         bill_of_entry_form.save()
 
+        # Bill of Entry 2 - draft state
+        self.bill_of_entry_2 = self._create_invoice(
+            self.customs,
+            "bill_of_entry",
+            self.journal,
+            [
+                (self.product_extra, 1, 1000),
+                (self.product_extra, 1, 100),
+            ],
+            [],
+        )
+        bill_of_entry_2_form = Form(self.bill_of_entry_2)
+        bill_of_entry_2_form.supplier_invoice_ids.clear()
+        bill_of_entry_2_form.supplier_invoice_ids.add(self.supplier_invoice)
+        bill_of_entry_2_form.save()
+
         # Forwarder Invoice - draft state
         self.forwarder_invoice = self._create_invoice(
             self.forwarder,
@@ -178,7 +194,7 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
             self.journal,
             [
                 (self.product_delivery, 1, 300),
-                (self.adv_customs_expense, 1, 550),
+                (self.adv_customs_expense, 1, 792),
             ],
             [],
         )
@@ -192,7 +208,9 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
         )
         self.forwarder_invoice.update(
             {
-                "forwarder_bill_of_entry_ids": [(4, self.bill_of_entry.id)],
+                "forwarder_bill_of_entry_ids": [
+                    (6, 0, [self.bill_of_entry.id, self.bill_of_entry_2.id])
+                ],
             }
         )
 
@@ -238,8 +256,9 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
         self.assertEqual(bill_of_entry.state, "draft")
 
     def test_storno_create(self):
-        # Validate bill of entry
+        # Validate bills of entry
         self.bill_of_entry.action_post()
+        self.bill_of_entry_2.action_post()
 
         # Validate forwarder invoice
         self.forwarder_invoice.action_post()
@@ -275,7 +294,11 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
         self.assertEqual(len(customs_expense_moveline), 1)
 
         # Extra EU goods purchase account.move.lines
-        for boe_line in self.bill_of_entry.invoice_line_ids:
+        boes_lines = self.bill_of_entry.line_ids + self.bill_of_entry_2.line_ids
+        invoice_line_ids = boes_lines.filtered(
+            lambda line: line.display_type == "product"
+        )
+        for boe_line in invoice_line_ids:
             move_line_domain = [
                 ("account_id", "=", boe_line.account_id.id),
                 ("debit", "=", 0.0),
@@ -292,9 +315,11 @@ class TestBillOfEntry(AccountTestInvoicingCommon):
             .mapped("full_reconcile_id")
             .ids
         )
+        self.assertEqual(len(storno_reconcile_ids), 2)
         boe_reconcile_ids = (
-            self.bill_of_entry.line_ids.filtered(lambda line: line.full_reconcile_id)
+            boes_lines.filtered(lambda line: line.full_reconcile_id)
             .mapped("full_reconcile_id")
             .ids
         )
+        self.assertEqual(len(boe_reconcile_ids), 2)
         self.assertEqual(sorted(storno_reconcile_ids), sorted(boe_reconcile_ids))

@@ -3,13 +3,24 @@
 from base64 import b64encode
 
 from odoo import exceptions
-from odoo.tests import TransactionCase
+from odoo.tests import common, tagged
 from odoo.tools.misc import file_open
 
 
-class TestDatevImportCsvDtvf(TransactionCase):
-    def setUp(self):
-        super().setUp()
+@tagged("-at_install", "post_install")
+class TestDatevImportCsvDtvf(common.TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        if not cls.env.company.chart_template_id:
+            # Load a CoA if there's none in current company
+            coa = cls.env.ref("l10n_generic_coa.configurable_chart_template", False)
+            if not coa:
+                # Load the first available CoA
+                coa = cls.env["account.chart.template"].search(
+                    [("visible", "=", True)], limit=1
+                )
+            coa.try_loading(company=cls.env.company, install_demo=False)
         for code in (
             "0731",
             "0980",
@@ -70,14 +81,14 @@ class TestDatevImportCsvDtvf(TransactionCase):
             "7095",
             "8605",
         ):
-            if self.env["account.account"].search(
+            if cls.env["account.account"].search(
                 [
                     ("code", "=", code),
-                    ("company_id", "=", self.env.company.id),
+                    ("company_id", "=", cls.env.company.id),
                 ]
             ):
                 continue
-            self.env["account.account"].create(
+            cls.env["account.account"].create(
                 {
                     "name": code,
                     "code": code,
@@ -85,24 +96,24 @@ class TestDatevImportCsvDtvf(TransactionCase):
                     "reconcile": True,
                 }
             )
-        self.env["account.account"].search([("code", "=", "7095")]).code = "7095000"
-        self.env["account.account"].search([("code", "=", "1700")]).code = "170"
-        self.env["account.account"].search(
+        cls.env["account.account"].search([("code", "=", "7095")]).code = "7095000"
+        cls.env["account.account"].search([("code", "=", "1700")]).code = "170"
+        cls.env["account.account"].search(
             [("code", "=", "4900")]
         ).account_type = "income"
         for code in ("4811",):
-            if self.env["account.analytic.account"].search(
+            if cls.env["account.analytic.account"].search(
                 [
                     ("code", "=", code),
-                    ("company_id", "=", self.env.company.id),
+                    ("company_id", "=", cls.env.company.id),
                 ]
             ):
                 continue
-            self.env["account.analytic.account"].create(
+            cls.env["account.analytic.account"].create(
                 {
                     "name": code,
                     "code": code,
-                    "plan_id": self.env.ref("analytic.analytic_plan_internal").id,
+                    "plan_id": cls.env.ref("analytic.analytic_plan_internal").id,
                 }
             )
 

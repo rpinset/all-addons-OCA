@@ -1,5 +1,6 @@
 # Copyright 2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+from odoo import Command
 from odoo.tests import new_test_user
 from odoo.tests.common import users
 
@@ -115,6 +116,10 @@ class TestAnalyticHrDepartmentRestriction(BaseCommon):
                 "company_id": cls.env.company.id,
             }
         )
+        cls.company_extra = cls.env["res.company"].create(
+            {"name": "Test company extra"}
+        )
+        cls.user.write({"company_ids": [Command.link(cls.company_extra.id)]})
 
     @users("test-basic_user")
     def test_analytic_data_basic_user(self):
@@ -130,6 +135,40 @@ class TestAnalyticHrDepartmentRestriction(BaseCommon):
         self.assertNotIn(self.plan_b, plans)
         self.assertNotIn(self.plan_c, plans)
         accounts = self.env["account.analytic.account"].search([])
+        self.assertIn(self.account_a, accounts)
+        self.assertNotIn(self.account_b, accounts)
+        self.assertNotIn(self.account_c, accounts)
+
+    @users("test-user")
+    def test_analytic_data_user_multi_company(self):
+        # Example of use case:
+        # - User with access to several companies.
+        # - Employee defined in one company
+        # - Department and plan with no company defined
+        # - Purchase order linked to company A (different from the user's employee).
+        # - No access error should be displayed and the user should be able to see
+        # the corresponding plan/analytic account even if the employee's company
+        # is not selected.
+        self.plan_a.company_id = False
+        self.department_a.company_id = False
+        self.plan_b.company_id = False
+        self.plan_c.company_id = False
+        plans = (
+            self.env["account.analytic.plan"]
+            .with_company(self.company_extra.id)
+            .search([])
+        )
+        self.assertIn(self.plan_a, plans)
+        self.assertNotIn(self.plan_b, plans)
+        self.assertNotIn(self.plan_c, plans)
+        self.account_a.company_id = False
+        self.account_b.company_id = False
+        self.account_c.company_id = False
+        accounts = (
+            self.env["account.analytic.account"]
+            .with_company(self.company_extra.id)
+            .search([])
+        )
         self.assertIn(self.account_a, accounts)
         self.assertNotIn(self.account_b, accounts)
         self.assertNotIn(self.account_c, accounts)

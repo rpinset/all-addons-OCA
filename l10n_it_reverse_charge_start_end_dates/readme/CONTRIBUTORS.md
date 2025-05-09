@@ -1,0 +1,3 @@
+- [Innovyou](https://innovyou.it):
+  -  Valerio Paretta \<<valerio.paretta@innovyou.it>\>
+  -  Lorenzo Carta \<<lorenzo.carta@innovyou.it>\>

@@ -105,8 +105,9 @@ class DynamicListCase(common.TransactionCase):
             }
         )
         # Mock sending low level method, because an auto-commit happens there
+        self.mail.action_launch()
         with patch("odoo.addons.mail.models.mail_mail.MailMail.send") as s:
-            self.mail.action_send_mail()
+            self.mail._process_mass_mailing_queue()
             self.assertEqual(1, s.call_count)
         self.list.flush_recordset()
         self.assertEqual(6, self.list.contact_count)

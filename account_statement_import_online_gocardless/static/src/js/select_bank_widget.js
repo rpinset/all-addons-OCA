@@ -97,7 +97,7 @@ odoo.define(
                                     ._rpc({
                                         model: "online.bank.statement.provider",
                                         method: "action_check_gocardless_agreement",
-                                        args: [[self.context.active_id]],
+                                        args: [[self.context.provider_id]],
                                     })
                                     .then(function (redirect_url) {
                                         if (redirect_url !== undefined) {

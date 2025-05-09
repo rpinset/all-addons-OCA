@@ -1,4 +1,4 @@
-# Copyright 2022 Tecnativa - Víctor Martínez
+# Copyright 2022-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl)
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
@@ -220,13 +220,7 @@ class ProjectTask(models.Model):
             lambda x: x.state not in ("done", "cancel")
         ):
             move.quantity_done = move.reserved_availability
-        moves_todo = self.mapped("move_ids")._action_done()
-        # Use sudo to avoid error for users with no access to analytic
-        analytic_line_model = self.env["account.analytic.line"].sudo()
-        for move in moves_todo:
-            vals = move._prepare_analytic_line_from_task()
-            if vals:
-                analytic_line_model.create(vals)
+        self.move_ids._action_done()
 
     def action_see_move_scrap(self):
         self.ensure_one()

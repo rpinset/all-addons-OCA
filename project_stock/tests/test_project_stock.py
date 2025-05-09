@@ -1,4 +1,4 @@
-# Copyright 2022-2024 Tecnativa - Víctor Martínez
+# Copyright 2022-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo import fields
 from odoo.tests import Form
@@ -77,6 +77,20 @@ class TestProjectStock(TestProjectStockBase):
         self.task.write({"stage_id": self.stage_done.id})
         self.task.action_done()
         self.assertFalse(self.task.stock_analytic_line_ids)
+
+    def test_project_task_picking_done_analytic_items(self):
+        self.task = self.env["project.task"].browse(self.task.id)
+        self.task.action_assign()
+        picking = self.task.move_ids.picking_id
+        for move in picking.move_ids:
+            move.quantity_done = move.product_uom_qty
+        picking.button_validate()
+        self.assertEqual(picking.state, "done")
+        self._test_task_analytic_lines_from_task(-40)
+        self.assertEqual(
+            fields.first(self.task.stock_analytic_line_ids).date,
+            fields.Date.from_string("1990-01-01"),
+        )
 
     @users("manager-user")
     def test_project_task_without_analytic_account_manager_user(self):

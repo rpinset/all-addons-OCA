@@ -1,33 +1,17 @@
 # Copyright 2022 ACSONE SA/NV
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 import logging
-import textwrap
 
-from odoo import _, api, exceptions, fields, models
+from odoo import _, exceptions, models
 from odoo.tools import safe_eval
 
 _logger = logging.getLogger(__name__)
 
 
 class StockStorageLocationSequenceCond(models.Model):
-
+    _inherit = "stock.storage.condition.mixin"
     _name = "stock.storage.location.sequence.cond"
     _description = "Stock Storage Location Sequence Condition"
-
-    name = fields.Char(required=True)
-
-    condition_type = fields.Selection(
-        selection=[("code", "Execute code")], default="code", required=True
-    )
-    code_snippet = fields.Text(required=True)
-    code_snippet_docs = fields.Text(
-        compute="_compute_code_snippet_docs",
-        default=lambda self: self._default_code_snippet_docs(),
-    )
-
-    active = fields.Boolean(
-        default=True,
-    )
 
     _sql_constraints = [
         (
@@ -36,20 +20,6 @@ class StockStorageLocationSequenceCond(models.Model):
             "Stock storage location sequence condition name must be unique",
         )
     ]
-
-    def _compute_code_snippet_docs(self):
-        for rec in self:
-            rec.code_snippet_docs = textwrap.dedent(rec._default_code_snippet_docs())
-
-    @api.constrains("condition_type", "code_snippet")
-    def _check_condition_type_code(self):
-        for rec in self.filtered(lambda c: c.condition_type == "code"):
-            if not rec._code_snippet_valued():
-                raise exceptions.UserError(
-                    _(
-                        "Condition type is set to `Code`: you must provide a piece of code"
-                    )
-                )
 
     def _default_code_snippet_docs(self):
         return """
@@ -123,17 +93,6 @@ class StockStorageLocationSequenceCond(models.Model):
                 )
             )
         return result
-
-    def _code_snippet_valued(self):
-        self.ensure_one()
-        snippet = self.code_snippet or ""
-        return bool(
-            [
-                not line.startswith("#")
-                for line in (snippet.splitlines())
-                if line.strip("")
-            ]
-        )
 
     def evaluate(self, storage_location_sequence, putaway_location, quant, product):
         self.ensure_one()

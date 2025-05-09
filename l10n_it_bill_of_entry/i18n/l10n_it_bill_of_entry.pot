@@ -32,6 +32,7 @@ msgid "Advance Customs Vat"
 msgstr ""
 
 #. module: l10n_it_bill_of_entry
+#: model:ir.model.fields,field_description:l10n_it_bill_of_entry.field_account_move_line__bill_of_entry_id
 #: model:ir.model.fields.selection,name:l10n_it_bill_of_entry.selection__account_move__customs_doc_type__bill_of_entry
 msgid "Bill of Entry"
 msgstr ""
@@ -140,7 +141,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
 #, python-format
-msgid "Customs supplier"
+msgid "Customs supplier %s"
 msgstr ""
 
 #. module: l10n_it_bill_of_entry
@@ -234,6 +235,20 @@ msgstr ""
 #: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
 #, python-format
 msgid "No bill of entries found for this invoice"
+msgstr ""
+
+#. module: l10n_it_bill_of_entry
+#. odoo-python
+#: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
+#, python-format
+msgid "No bill of entry lines to reconcile"
+msgstr ""
+
+#. module: l10n_it_bill_of_entry
+#. odoo-python
+#: code:addons/l10n_it_bill_of_entry/models/account_move.py:0
+#, python-format
+msgid "No storno lines to reconcile"
 msgstr ""
 
 #. module: l10n_it_bill_of_entry

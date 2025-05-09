@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-11-11 15:36+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2025-05-08 07:12+0000\n"
+"Last-Translator: Daniel Duque <danieldqmrt@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: loyalty_initial_date_validity
 #: model:ir.model.fields,field_description:loyalty_initial_date_validity.field_loyalty_program__date_to
@@ -29,7 +29,7 @@ msgstr "Visualización de la fidelidad en un sitio web"
 #. module: loyalty_initial_date_validity
 #: model:ir.model.fields,field_description:loyalty_initial_date_validity.field_loyalty_program__date_from
 msgid "Start Date"
-msgstr "fecha de Inicio"
+msgstr "Fecha de Inicio"
 
 #. module: loyalty_initial_date_validity
 #: model:ir.model.fields,help:loyalty_initial_date_validity.field_loyalty_program__date_to

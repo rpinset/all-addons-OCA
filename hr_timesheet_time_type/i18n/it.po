@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-01-10 22:44+0000\n"
+"PO-Revision-Date: 2025-05-06 13:23+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: hr_timesheet_time_type
+#: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__active
+msgid "Active"
+msgstr "Attivo"
 
 #. module: hr_timesheet_time_type
 #: model:ir.model,name:hr_timesheet_time_type.model_account_analytic_line
 msgid "Analytic Line"
 msgstr "Riga analitica"
+
+#. module: hr_timesheet_time_type
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_search
+msgid "Archived"
+msgstr "In archivio"
 
 #. module: hr_timesheet_time_type
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_project_time_type__code
@@ -98,3 +108,8 @@ msgstr "Tipo orario"
 #: model:ir.model.fields,field_description:hr_timesheet_time_type.field_account_analytic_line__time_type_name
 msgid "Time Type Name"
 msgstr "nome tipo orario"
+
+#. module: hr_timesheet_time_type
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_time_type.view_project_time_type_search
+msgid "Time Type Search"
+msgstr "Ricerca tipo orario"

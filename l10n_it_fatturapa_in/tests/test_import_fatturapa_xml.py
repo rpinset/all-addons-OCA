@@ -972,6 +972,21 @@ class TestFatturaPAXMLValidation(FatturapaCommon):
         self.assertEqual(invoice.invoice_line_ids[0].price_subtotal, 1.5)
         self.assertEqual(invoice.move_type, "in_refund")
 
+    def test_xml_import_bank_overwrite(self):
+        """
+        Test: Check if the bank account is overwritten by the XML file
+        """
+        bank = self.env["res.bank"].create(
+            [
+                {
+                    "name": "Bank Test 001",
+                    "bic": "TESTTES1",
+                }
+            ]
+        )
+        self.run_wizard("test56", "IT02780790107_11004_bank.xml")
+        self.assertEqual(bank.name, "Bank Test 001")
+
     def test_01_xml_link(self):
         """
         E-invoice lines are created.
