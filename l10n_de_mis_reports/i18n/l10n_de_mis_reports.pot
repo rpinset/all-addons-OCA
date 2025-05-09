@@ -286,6 +286,12 @@ msgid "4. Verbindlichkeiten aus Lieferungen u. Leistungen"
 msgstr ""
 
 #. module: l10n_de_mis_reports
+#: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_bs_skr03_gewinn_des_jahres
+#: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_bs_skr04_gewinn_des_jahres
+msgid "5. Gewinn des Jahres"
+msgstr ""
+
+#. module: l10n_de_mis_reports
 #: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_pl_skr03_materialaufwand
 #: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_pl_skr04_materialaufwand
 msgid "5. Materialaufwand"

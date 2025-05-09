@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-25 11:06+0000\n"
+"PO-Revision-Date: 2025-05-06 12:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model,name:sale_timesheet_line_exclude.model_account_analytic_line
@@ -23,6 +23,7 @@ msgstr "Riga analitica"
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model.fields,help:sale_timesheet_line_exclude.field_account_analytic_line__exclude_from_sale_order
+#: model:ir.model.fields,help:sale_timesheet_line_exclude.field_timesheets_analysis_report__exclude_from_sale_order
 msgid "Checking this would exclude this timesheet entry from Sale Order"
 msgstr ""
 "Con questa selezione la registrazione nel foglio ore verrà esclusa "
@@ -45,8 +46,14 @@ msgstr "Consenti accesso ai campi non fatturabili nei fogli ore."
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model.fields,field_description:sale_timesheet_line_exclude.field_account_analytic_line__exclude_from_sale_order
+#: model:ir.model.fields,field_description:sale_timesheet_line_exclude.field_timesheets_analysis_report__exclude_from_sale_order
 msgid "Non-billable"
 msgstr "Non fatturabile"
+
+#. module: sale_timesheet_line_exclude
+#: model:ir.model,name:sale_timesheet_line_exclude.model_timesheets_analysis_report
+msgid "Timesheets Analysis Report"
+msgstr "Resoconto analisi fogli ore"
 
 #. module: sale_timesheet_line_exclude
 #. odoo-python

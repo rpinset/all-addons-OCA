@@ -23,6 +23,7 @@ msgstr "Linha Analítica"
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model.fields,help:sale_timesheet_line_exclude.field_account_analytic_line__exclude_from_sale_order
+#: model:ir.model.fields,help:sale_timesheet_line_exclude.field_timesheets_analysis_report__exclude_from_sale_order
 msgid "Checking this would exclude this timesheet entry from Sale Order"
 msgstr ""
 "Marcar isto excluiria esta entrada da planilha de horas do pedido de venda"
@@ -44,8 +45,14 @@ msgstr ""
 
 #. module: sale_timesheet_line_exclude
 #: model:ir.model.fields,field_description:sale_timesheet_line_exclude.field_account_analytic_line__exclude_from_sale_order
+#: model:ir.model.fields,field_description:sale_timesheet_line_exclude.field_timesheets_analysis_report__exclude_from_sale_order
 msgid "Non-billable"
 msgstr "Não faturável"
+
+#. module: sale_timesheet_line_exclude
+#: model:ir.model,name:sale_timesheet_line_exclude.model_timesheets_analysis_report
+msgid "Timesheets Analysis Report"
+msgstr ""
 
 #. module: sale_timesheet_line_exclude
 #. odoo-python
