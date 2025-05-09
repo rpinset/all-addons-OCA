@@ -52,11 +52,16 @@ Date:   Wed Sep 11 06:37:22 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 7e8ecaa9457fbebee291aa28b5742eebcd521b43
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 17:19:45 2025 +0000
+commit 3b629dcb2d2b1980609d65dcfece786195f68b05
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:43:48 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 82.3% (84 of 102 strings)
+    
+    Translation: account-closing-12.0/account-closing-12.0-account_cutoff_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-12-0/account-closing-12-0-account_cutoff_base/it/
 
 
 ## account-consolidation
@@ -75,11 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 395e32eda3536b8bc9f2a5dd08614be97b242f5c
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:33:01 2025 +0000
+commit 471df888ac530b093103a2114bcdfb3219cbc2e8
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:43:46 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 69.2% (45 of 65 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_check_deposit
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_check_deposit/it/
 
 
 ## account-financial-reporting
@@ -197,16 +207,16 @@ Date:   Thu Oct 3 08:18:16 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 04108d2dfa00a8d20bcc01a9ed5d103245168267
+commit aadf4bf69a5b8f734440f034cb9a254d5affe7eb
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Oct 17 12:24:04 2024 +0000
+Date:   Tue May 6 09:43:45 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 96.1% (100 of 104 strings)
     
-    Translation: bank-payment-12.0/bank-payment-12.0-account_payment_partner
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_payment_partner/it/
+    Translation: bank-payment-12.0/bank-payment-12.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-12-0/bank-payment-12-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -476,16 +486,16 @@ Date:   Sun Oct 29 09:56:21 2023 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit ec9d66e01907a4e153fd1a27bb6eedb58dc18725
+commit 4862bea61a611f0e7c60ac47487a879e2d820724
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Dec 4 08:46:18 2024 +0000
+Date:   Tue May 6 09:17:54 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (44 of 44 strings)
     
-    Translation: knowledge-12.0/knowledge-12.0-document_page_portal
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page_portal/it/
+    Translation: knowledge-12.0/knowledge-12.0-document_page_approval
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-12-0/knowledge-12-0-document_page_approval/it/
 
 
 ## dms
@@ -576,16 +586,16 @@ Date:   Sat Feb 1 21:05:55 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 66ef9b8c234bd2be90a1bddf5c63573856a5e8b7
+commit 71b44323d496a80988b631353a3b3777d8ec5912
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat May 3 10:09:34 2025 +0000
+Date:   Tue May 6 09:44:28 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (47 of 47 strings)
+    Currently translated at 100.0% (77 of 77 strings)
     
-    Translation: hr-12.0/hr-12.0-hr_holidays_public
-    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_holidays_public/it/
+    Translation: hr-12.0/hr-12.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-12-0/hr-12-0-hr_course/it/
 
 
 ## connector-odoo2odoo
@@ -1021,16 +1031,16 @@ Date:   Sat Feb 1 21:04:37 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2efb0f26e6149790fbd2a932bf34ca2d15f48f8c
+commit b2b06ae8b2c85ef2ce7decd9b87374a80525533d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 12 13:47:33 2025 +0000
+Date:   Tue May 6 09:18:02 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (62 of 62 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_package_preparation
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_package_preparation/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_back2draft
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_back2draft/it/
 
 
 ## stock-logistics-tracking
@@ -1044,11 +1054,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 95ae760f1eb0cd7b3b8d79c7cabfe4d3b69d9d9d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:05:08 2025 +0000
+commit 18e083b556c4d6be6a1bc06171217cde7c843bf3
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:43:55 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 19.2% (24 of 125 strings)
+    
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_inventory_revaluation
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_inventory_revaluation/it/
 
 
 ## stock-logistics-reporting
