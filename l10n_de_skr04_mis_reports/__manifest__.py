@@ -14,7 +14,6 @@
     "depends": [
         "mis_builder",
         "l10n_de_skr04",
-        "l10n_generic_coa",
     ],  # OCA/account-financial-reporting
     "data": [
         "data/mis_report_styles.xml",

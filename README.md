@@ -47,11 +47,16 @@ Date:   Wed Sep 11 06:37:36 2024 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 2a2d0f82ada44febdefeea30c2332e1129e6f1ea
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:08:46 2025 +0000
+commit f3a10a009aaaf24a9eea249b31845e85596dda87
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:43:53 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 31.1% (34 of 109 strings)
+    
+    Translation: account-closing-13.0/account-closing-13.0-account_cutoff_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-closing-13-0/account-closing-13-0-account_cutoff_base/it/
 
 
 ## account-consolidation
@@ -182,11 +187,16 @@ Date:   Thu Oct 3 08:18:23 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 164a4f4017f4c48fbe38de3d34d89d816fe12d49
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:10:44 2025 +0000
+commit 340e44234a165769115bc954120bfcde5dd7b74e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:43:50 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 85.7% (96 of 112 strings)
+    
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
 
 
 ## account-reconcile
@@ -483,11 +493,16 @@ Date:   Sat Feb 1 21:31:27 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit a4d338fba6eea64e3d1361c4319b739ce797ef7a
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:18:34 2025 +0000
+commit 2ed24c1788ff7bc1891f6e2b3dbc659e1eabb0e2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 6 09:17:55 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (44 of 44 strings)
+    
+    Translation: knowledge-13.0/knowledge-13.0-document_page_approval
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-document_page_approval/it/
 
 
 ## dms
@@ -581,16 +596,16 @@ Date:   Sat Feb 1 21:31:41 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit aaaaa713fd35f8441b32fa2d47e8ddf55a216fef
+commit 7d7172aa624aea9e3df5860d49a47439dddd1732
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat May 3 10:08:34 2025 +0000
+Date:   Tue May 6 09:44:28 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 100.0% (89 of 89 strings)
     
-    Translation: hr-13.0/hr-13.0-hr_employee_service_contract
-    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_employee_service_contract/it/
+    Translation: hr-13.0/hr-13.0-hr_course
+    Translate-URL: https://translation.odoo-community.org/projects/hr-13-0/hr-13-0-hr_course/it/
 
 
 ## hr-attendance
@@ -821,11 +836,14 @@ Date:   Sun Sep 3 13:33:05 2023 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit a698b2d8551967aea94031b0e2f30bb4c0f880d7
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat May 3 10:09:42 2025 +0000
+commit 15559406a04c10154e7a23e292ef18acfb60655a
+Merge: a698b2d accc415
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed May 7 09:18:44 2025 +0200
 
-    [UPD] addons table in README.md
+    Merge pull request #184 from Tecnativa/13.0-imp-l10n_de_skr04_mis_reports-del-l10n_generic_coa
+    
+    [13.0][IMP] l10n_de_skr04_mis_reports: Remove unnecessary l10n_generic_coa dependency
 
 
 ## l10n-greece
@@ -1143,16 +1161,16 @@ Date:   Sat Feb 1 21:29:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 9d08ddf8ced0b05a34820963849d9201b8f2337c
+commit 829f275cdf1cc5fcf8145bc08d1cad61f25642c9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 12 13:47:34 2025 +0000
+Date:   Tue May 6 09:18:10 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (62 of 62 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_package_preparation
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_package_preparation/it/
+    Translation: stock-logistics-workflow-13.0/stock-logistics-workflow-13.0-stock_picking_back2draft
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-13-0/stock-logistics-workflow-13-0-stock_picking_back2draft/it/
 
 
 ## stock-logistics-tracking
