@@ -651,17 +651,34 @@
       <field name="auto_expand_accounts_style_id" ref="style_l10n_de_level3_accounts" />
       <field name="sequence">570</field>
     </record>
+    <record model="mis.report.kpi" id="mis_report_bs_gewinn_des_jahres">
+        <field name="report_id" ref="mis_report_bs" />
+        <field name="name">gewinn_des_jahres</field>
+        <field name="description">5. Gewinn des Jahres</field>
+        <field
+            name="expression"
+        >bale[('user_type_id', '=', ref('account.data_unaffected_earnings').id)] + bale['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]-balu['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]</field>
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="style_id" ref="style_l10n_de_level3" />
+        <field name="auto_expand_accounts" eval="True" />
+        <field
+            name="auto_expand_accounts_style_id"
+            ref="style_l10n_de_level3_accounts"
+        />
+        <field name="sequence">575</field>
+    </record>
     <record model="mis.report.kpi" id="mis_report_bs_total_gewinnruecklage">
       <field name="report_id" ref="mis_report_bs" />
       <field name="name">total_gewinnruecklage</field>
       <field name="description">Total III. Gewinnrücklage</field>
       <field
             name="expression"
-        >+ ruecklage_gesetzlich + ruecklage_eigene_anteile + ruecklage_satzung + ruecklage_andere_gewinne</field>
-      <field name="type">num</field>
-      <field name="compare_method">pct</field>
-      <field name="style_id" ref="style_l10n_de_level1_total" />
-      <field name="sequence">580</field>
+        >+ ruecklage_gesetzlich + ruecklage_eigene_anteile + ruecklage_satzung + ruecklage_andere_gewinne + gewinn_des_jahres</field>
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="style_id" ref="style_l10n_de_level1_total" />
+        <field name="sequence">580</field>
     </record>
     <record model="mis.report.kpi" id="mis_report_bs_gewinn_verlustvortrag">
       <field name="report_id" ref="mis_report_bs" />
@@ -823,13 +840,16 @@
       <field
             name="description"
         >4. Verbindlichkeiten aus Lieferungen u. Leistungen</field>
-      <field name="expression">bals[330%,331%,332%,333%,333%,334%]</field>
-      <field name="type">num</field>
-      <field name="compare_method">pct</field>
-      <field name="style_id" ref="style_l10n_de_level2" />
-      <field name="auto_expand_accounts" eval="True" />
-      <field name="auto_expand_accounts_style_id" ref="style_l10n_de_level3_accounts" />
-      <field name="sequence">720</field>
+        <field name="expression">bals[330%,331%,332%,333%,334%]</field>
+        <field name="type">num</field>
+        <field name="compare_method">pct</field>
+        <field name="style_id" ref="style_l10n_de_level2" />
+        <field name="auto_expand_accounts" eval="True" />
+        <field
+            name="auto_expand_accounts_style_id"
+            ref="style_l10n_de_level3_accounts"
+        />
+        <field name="sequence">720</field>
     </record>
     <record model="mis.report.kpi" id="mis_report_bs_verbindlichkeiten_wechsel">
       <field name="report_id" ref="mis_report_bs" />
