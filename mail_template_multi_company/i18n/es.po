@@ -22,6 +22,7 @@ msgid "Company"
 msgstr "Compañía"
 
 #. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data__display_name
 #: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
@@ -32,11 +33,18 @@ msgid "Email Templates"
 msgstr "Plantillas de email"
 
 #. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data__id
 #: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__id
 msgid "ID"
 msgstr "ID"
 
 #. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data____last_update
 #: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template____last_update
 msgid "Last Modified on"
 msgstr "Última Modificación el"
+
+#. module: mail_template_multi_company
+#: model:ir.model,name:mail_template_multi_company.model_ir_model_data
+msgid "Model Data"
+msgstr ""

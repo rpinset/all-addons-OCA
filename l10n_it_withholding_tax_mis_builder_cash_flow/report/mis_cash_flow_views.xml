@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2025 Simone Rubino - PyTech
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+ -->
+<odoo>
+    <record id="mis_cash_flow_tree_view" model="ir.ui.view">
+        <field name="name">Add withholding amounts to mis cashflow tree view</field>
+        <field name="model">mis.cash_flow</field>
+        <field name="inherit_id" ref="mis_builder_cash_flow.mis_cash_flow_tree_view" />
+        <field name="arch" type="xml">
+            <tree position="inside">
+                <field
+                    name="withholding_tax_debit"
+                    optional="hide"
+                    sum="Total Debit without Withholding Tax"
+                />
+                <field
+                    name="withholding_tax_credit"
+                    optional="hide"
+                    sum="Total Credit without Withholding Tax"
+                />
+            </tree>
+        </field>
+    </record>
+</odoo>

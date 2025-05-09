@@ -475,7 +475,7 @@ addon | version | maintainers | summary
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 14.0.1.2.0 |  | Account Invoice Payment Retention
 [account_invoice_pricelist](account_invoice_pricelist/) | 14.0.1.1.0 |  | Add partner pricelist on invoices
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 14.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
-[account_invoice_purchase_picking_selection](account_invoice_purchase_picking_selection/) | 14.0.1.0.0 |  | Autocomplete invoices lines by selecting the receptions originating from a purchase order.
+[account_invoice_purchase_picking_selection](account_invoice_purchase_picking_selection/) | 14.0.1.0.1 |  | Autocomplete invoices lines by selecting the receptions originating from a purchase order.
 [account_invoice_qr_code_sepa_payconiq](account_invoice_qr_code_sepa_payconiq/) | 14.0.1.0.0 |  | Allows to generate a qr code for Payconiq provider containing the url
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 14.0.1.0.3 |  | This module allows the user to refund specific lines in a invoice
 [account_invoice_refund_link](account_invoice_refund_link/) | 14.0.1.0.5 |  | Show links between refunds and their originator invoices
@@ -3674,7 +3674,7 @@ addon | version | maintainers | summary
 [ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 14.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [login_all_company](login_all_company/) | 14.0.1.0.1 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 14.0.0.1.0 |  | Email Gateway Multi company
-[mail_template_multi_company](mail_template_multi_company/) | 14.0.1.0.1 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
+[mail_template_multi_company](mail_template_multi_company/) | 14.0.1.0.2 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [multicompany_configuration](multicompany_configuration/) | 14.0.1.0.0 |  | Simplify the configuration on multicompany environments
 [partner_contact_company_propagation](partner_contact_company_propagation/) | 14.0.1.0.0 |  | Propagate company info to children contacts
 [partner_multi_company](partner_multi_company/) | 14.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Select individually the partner visibility on each company
@@ -4467,8 +4467,8 @@ addon | version | maintainers | summary
 [l10n_de_country_states](l10n_de_country_states/) | 14.0.1.0.0 |  | German Country States
 [l10n_de_holidays](l10n_de_holidays/) | 14.0.1.0.2 |  | Holidays for Germany
 [l10n_de_location_nuts](l10n_de_location_nuts/) | 14.0.1.0.0 |  | NUTS specific options for German
-[l10n_de_skr03_mis_reports](l10n_de_skr03_mis_reports/) | 14.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03)
-[l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 14.0.1.0.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
+[l10n_de_skr03_mis_reports](l10n_de_skr03_mis_reports/) | 14.0.1.1.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03)
+[l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 14.0.1.1.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
 [l10n_de_steuernummer](l10n_de_steuernummer/) | 14.0.1.0.0 |  | German SteuerNummer validation
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 14.0.1.0.0 |  | German VAT Statement
 [l10n_de_tax_statement_zm](l10n_de_tax_statement_zm/) | 14.0.1.0.0 |  | German VAT Statement Extension
@@ -4811,6 +4811,8 @@ addon | version | maintainers | summary
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 14.0.1.1.0 |  | Website Sale FiscalCode
 [l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.2.1 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_financial_report](l10n_it_withholding_tax_financial_report/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione Ritenute d'acconto e Rendiconti contabili
+[l10n_it_withholding_tax_mis_builder](l10n_it_withholding_tax_mis_builder/) | 14.0.1.0.0 |  | ITA - Ritenute d'acconto - MIS Builder
+[l10n_it_withholding_tax_mis_builder_cash_flow](l10n_it_withholding_tax_mis_builder_cash_flow/) | 14.0.1.0.0 |  | ITA - Ritenute d'acconto - MIS Builder - Cash Flow
 [l10n_it_withholding_tax_payment](l10n_it_withholding_tax_payment/) | 14.0.1.0.2 |  | Gestisce le ritenute sulle fatture e sui pagamenti
 [l10n_it_withholding_tax_payment_order](l10n_it_withholding_tax_payment_order/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione Ritenute d'acconto e Ordini di pagamento
 [l10n_it_withholding_tax_reason](l10n_it_withholding_tax_reason/) | 14.0.1.0.2 |  | ITA - Causali pagamento per ritenute d'acconto
