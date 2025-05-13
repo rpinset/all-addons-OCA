@@ -29,7 +29,10 @@ class SaleOrder(models.Model):
                 and dest_company
                 and dest_company.sync_picking
             ):
-                pickings = sale_order.picking_ids
+                # we only want to sync the final outgoing pickings...
+                pickings = sale_order.picking_ids.filtered(
+                    lambda x: x.location_dest_id.usage == "customer"
+                )
                 po_company = sale_order.sudo().auto_purchase_order_id.company_id
                 purchase_picking = (
                     sale_order.auto_purchase_order_id.with_user(

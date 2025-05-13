@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-05-12 09:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_picking_report_custom_description
 #: model:ir.actions.report,name:stock_picking_report_custom_description.action_report_delivery_description
 msgid "Delivery Slip (Description)"
-msgstr ""
+msgstr "Bolla di consegna (descrizione)"
 
 #. module: stock_picking_report_custom_description
 #: model:ir.model.fields,field_description:stock_picking_report_custom_description.field_stock_rule__display_name
@@ -29,19 +29,19 @@ msgstr "Nome visualizzato"
 #. module: stock_picking_report_custom_description
 #: model:ir.model.fields,field_description:stock_picking_report_custom_description.field_stock_rule__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: stock_picking_report_custom_description
 #: model:ir.model.fields,field_description:stock_picking_report_custom_description.field_stock_rule____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: stock_picking_report_custom_description
 #: model:ir.actions.report,name:stock_picking_report_custom_description.action_report_picking_description
 msgid "Picking Operations (Description)"
-msgstr ""
+msgstr "Operazioni di prelievo (descrizione)"
 
 #. module: stock_picking_report_custom_description
 #: model:ir.model,name:stock_picking_report_custom_description.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "Regola di giacenza"

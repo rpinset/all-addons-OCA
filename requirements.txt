@@ -14,6 +14,7 @@ numpy>=1.15
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 # generated from manifests external_dependencies
+google-cloud-documentai
 openupgradelib
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 # generated from manifests external_dependencies
@@ -147,7 +148,7 @@ zeep
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
-pyfrdas2
+pyfrdas2>=0.6
 pypdf>=3.1.0
 python-stdnum
 requests

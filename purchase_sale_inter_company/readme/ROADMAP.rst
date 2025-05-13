@@ -3,3 +3,7 @@
   transmitted to the purchase so both documents couldn't have different total amounts,
   taxes, etc. A mechanism for synching from the sale to the purchase order would be
   needed.
+
+* Module is not very robust in complex situations, such as multi-step receipts
+  and multi-step deliveries, with backorders. Multi-step receipts
+  could be improved further.

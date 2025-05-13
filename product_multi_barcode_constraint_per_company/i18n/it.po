@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-05-12 09:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: product_multi_barcode_constraint_per_company
 #: model:ir.model.fields,field_description:product_multi_barcode_constraint_per_company.field_product_barcode__display_name
@@ -24,17 +24,17 @@ msgstr "Nome visualizzato"
 #. module: product_multi_barcode_constraint_per_company
 #: model:ir.model.fields,field_description:product_multi_barcode_constraint_per_company.field_product_barcode__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_multi_barcode_constraint_per_company
 #: model:ir.model,name:product_multi_barcode_constraint_per_company.model_product_barcode
 msgid "Individual item in a product's barcode list"
-msgstr ""
+msgstr "Singolo oggetto nella lista codici a barre di un prodotto"
 
 #. module: product_multi_barcode_constraint_per_company
 #: model:ir.model.fields,field_description:product_multi_barcode_constraint_per_company.field_product_barcode____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: product_multi_barcode_constraint_per_company
 #: code:addons/product_multi_barcode_constraint_per_company/tests/test_product_barcode_constraint.py:0
@@ -44,3 +44,5 @@ msgid ""
 "The Barcode \"%(barcode_name)s\" already exists for product "
 "\"%(product_name)s\" in the company %(company_name)s"
 msgstr ""
+"Il codice a barre \"%(barcode_name)s\" esiste già per il prodotto "
+"\"%(product_name)s\" nell'azienda %(company_name)s"
