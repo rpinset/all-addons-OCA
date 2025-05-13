@@ -513,6 +513,11 @@ msgid "RAW data"
 msgstr "Datos RAW"
 
 #. module: base_import_pdf_by_template
+#: model:ir.model.fields,field_description:base_import_pdf_by_template.field_wizard_base_import_pdf_upload__record_ref
+msgid "Record Ref"
+msgstr ""
+
+#. module: base_import_pdf_by_template
 #: model:ir.model.fields,field_description:base_import_pdf_by_template.field_base_import_pdf_template_line__field_relation
 msgid "Related Model"
 msgstr "Modelo relacionado"
@@ -660,3 +665,10 @@ msgstr "YY/dd/MM"
 #, python-format
 msgid "dd.MM.YY"
 msgstr "dd.MM.YY"
+
+#. module: base_import_pdf_by_template
+#: code:addons/base_import_pdf_by_template/models/base_import_pdf_template.py:0
+#: model:ir.model.fields.selection,name:base_import_pdf_by_template.selection__base_import_pdf_template_line__date_format__-d/-m/-y
+#, python-format
+msgid "dd/MM/YY"
+msgstr ""

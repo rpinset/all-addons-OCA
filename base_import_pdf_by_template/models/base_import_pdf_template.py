@@ -241,6 +241,7 @@ class BaseImportPdfTemplateLine(models.Model):
             ("*Y/*d/*m", _("YY/dd/MM")),
             ("*m/*d/*Y", _("MM/dd/YY")),
             ("*d.*m.*Y", _("dd.MM.YY")),
+            ("*d/*m/*Y", _("dd/MM/YY")),
         ],
     )
     time_format = fields.Selection(
@@ -356,7 +357,7 @@ class BaseImportPdfTemplateLine(models.Model):
         if self.field_ttype not in ("date", "datetime") or not self.date_format:
             return value
         date_format = self.date_format.replace("*", "%")
-        if self.field_ttype == "datetime":
+        if self.field_ttype == "datetime" and self.time_format:
             time_format = self.time_format.replace("*", "%")
             date_format += " " + time_format
         datetime_object = datetime.strptime(value, date_format)
