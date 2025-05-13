@@ -80,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 471df888ac530b093103a2114bcdfb3219cbc2e8
+commit e3e2dfdb544cde38088a016178b9fd6970286735
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:43:46 2025 +0000
+Date:   Mon May 12 06:41:55 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 69.2% (45 of 65 strings)
+    Currently translated at 83.3% (5 of 6 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_check_deposit
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_check_deposit/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_fiscal_year
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_fiscal_year/it/
 
 
 ## account-financial-reporting
@@ -1031,16 +1031,16 @@ Date:   Sat Feb 1 21:04:37 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit b2b06ae8b2c85ef2ce7decd9b87374a80525533d
+commit d5d09ef82f24d0a224597efd9404fddd0dec9382
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:18:02 2025 +0000
+Date:   Sat May 10 07:11:16 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (119 of 119 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_back2draft
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_back2draft/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_return_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_return_request/it/
 
 
 ## stock-logistics-tracking
@@ -1432,11 +1432,16 @@ Date:   Mon Oct 9 22:31:54 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit ddc96638ebda4851cb16119dc99f8a8523a94b0a
-Author: ductdm <duc.tdm@komit-consulting.com>
-Date:   Fri Mar 28 09:24:29 2025 +0000
+commit 10a400f41ccc6ed924004dcc618ee462f739db17
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon May 12 06:44:33 2025 +0000
 
-    Added translation using Weblate (Vietnamese (vi_VN))
+    Translated using Weblate (Italian)
+    
+    Currently translated at 93.8% (46 of 49 strings)
+    
+    Translation: server-ux-12.0/server-ux-12.0-date_range
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-12-0/server-ux-12-0-date_range/it/
 
 
 ## community-data-files
