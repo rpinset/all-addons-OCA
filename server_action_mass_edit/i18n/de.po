@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-17 21:08+0000\n"
-"PO-Revision-Date: 2023-12-20 16:36+0000\n"
-"Last-Translator: jappi00 <jappi2000@ewetel.net>\n"
+"PO-Revision-Date: 2025-05-13 13:23+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: server_action_mass_edit
 #: model_terms:ir.ui.view,arch_db:server_action_mass_edit.view_server_action_form
@@ -114,6 +114,10 @@ msgid ""
 "\n"
 "%(ue)s"
 msgstr ""
+"Bei der Verarbeitung von  %(model_name)s  \"%(name)s\" [id: %(id)s] sind "
+"Fehler aufgetreten:\n"
+"\n"
+"%(ue)s"
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_ir_actions_server_mass_edit_line__field_id
@@ -281,6 +285,12 @@ msgid ""
 "  With this option, the error message will be more specific to facillitate "
 "the undertanding of the error."
 msgstr ""
+"Diese Option schreibt die Datensätze einen nach dem anderen, anstatt alle "
+"auf einmal.\n"
+"Dies ist nützlich, wenn Sie eine große Menge an Datensätzen bearbeiten und "
+"einer dieser Datensätze einen Fehler enthält.\n"
+"Mit dieser Option wird die Fehlermeldung spezifischer sein, sodas es "
+"leichter ist, den zugrunde liegenden Fehler zu verstehen."
 
 #. module: server_action_mass_edit
 #: model:ir.model.fields,help:server_action_mass_edit.field_ir_actions_server__state
@@ -320,7 +330,7 @@ msgstr "Assistent für das Masseneditieren"
 #. module: server_action_mass_edit
 #: model:ir.model.fields,field_description:server_action_mass_edit.field_mass_editing_wizard__write_record_by_record
 msgid "Write Record By Record"
-msgstr ""
+msgstr "Schreibe Datensatz für Datensatz"
 
 #. module: server_action_mass_edit
 #. odoo-python

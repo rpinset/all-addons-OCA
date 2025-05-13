@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-20 13:06+0000\n"
-"Last-Translator: TobiasSorg <kontakt@tobiassorg.de>\n"
+"PO-Revision-Date: 2025-05-13 13:24+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants
@@ -34,42 +34,42 @@ msgstr ""
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants_string
 msgid "Adjustments"
-msgstr ""
+msgstr "Anpassungen"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__all
 msgid "All Products"
-msgstr ""
+msgstr "Alle Produkte"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__responsible_id
 msgid "Assigned to"
-msgstr ""
+msgstr "Zugewiesen an"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Anzahl Anhänge"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Back to Draft"
-msgstr ""
+msgstr "Zurück auf Entwurf"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Begin Adjustments"
-msgstr ""
+msgstr "Beginne mit Anpassungen"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__cancel
 msgid "Cancelled"
-msgstr ""
+msgstr "Abgebrochen"
 
 #. module: stock_inventory
 #. odoo-python
@@ -79,91 +79,94 @@ msgid ""
 "Cannot have more than one in-progress inventory adjustment affecting the "
 "same location or product at the same time."
 msgstr ""
+"Es kann nicht mehr als eine Inventaranpassung in Bearbeitung geben, die den "
+"gleichen Lagerplatz oder das gleiche Produkt anpasst."
 
 #. module: stock_inventory
 #: model:ir.model,name:stock_inventory.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Firmen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__company_id
 msgid "Company"
-msgstr ""
+msgstr "Firma"
 
 #. module: stock_inventory
 #: model:ir.model,name:stock_inventory.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Erstellt von"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Erstellt am"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_quant__current_inventory_id
 msgid "Current Inventory"
-msgstr ""
+msgstr "Aktuelle Inventur"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__date
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Anzeigname"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__done
 msgid "Done"
-msgstr ""
+msgstr "Erledigt"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__draft
 msgid "Draft"
-msgstr ""
+msgstr "Entwurf"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__exclude_sublocation
 msgid "Exclude Sublocation"
-msgstr ""
+msgstr "Unterorte ausschließen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Beobachter"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Beobachter (Partner)"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Hat Nachricht"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Wenn angehakt, erfordern neue Nachrichten Ihre Aufmerksamkeit."
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
+"Wenn angewählt gibt es Nachrichten, die nicht zugestellt werden konnten."
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__exclude_sublocation
@@ -171,6 +174,8 @@ msgid ""
 "If enabled, it will only take into account the locations selected, and not "
 "their children."
 msgstr ""
+"Wenn aktiviert, werden nur die ausgewählten Orte berücksichtigt, nicht ihre "
+"Kinder."
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_res_company__stock_inventory_auto_complete
@@ -180,209 +185,211 @@ msgid ""
 "If enabled, when all the quants prepared for the adjustment are done, the "
 "adjustment is automatically set to done."
 msgstr ""
+"Wenn ausgewählt, wird die Anpassung automatisch auf erledigt gesetzt, wenn "
+"alle für die Anpassung vorbereiteten Quants erledigt sind."
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__state__in_progress
 msgid "In Progress"
-msgstr ""
+msgstr "In Bearbeitung"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__stock_quant_ids
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_move_line__inventory_adjustment_id
 msgid "Inventory Adjustment"
-msgstr ""
+msgstr "Inventuranpassung"
 
 #. module: stock_inventory
 #: model:ir.actions.act_window,name:stock_inventory.action_view_inventory_group_form
 #: model:ir.model,name:stock_inventory.model_stock_inventory
 msgid "Inventory Adjustment Group"
-msgstr ""
+msgstr "Inventuranpassungsgruppe"
 
 #. module: stock_inventory
 #: model:ir.ui.menu,name:stock_inventory.menu_action_inventory_tree
 msgid "Inventory Adjustments"
-msgstr ""
+msgstr "Inventuranpassungen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__stock_move_ids
 msgid "Inventory Adjustments Done"
-msgstr ""
+msgstr "Inventuranpassungen Erledigt"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__name
 msgid "Inventory Reference"
-msgstr ""
+msgstr "Inventur Referenz"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Ist Beobachter"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Zuletzt bearbeitet am"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Zuletzt bearbeitet von"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Zuletzt akualisiert am"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__location_ids
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Locations"
-msgstr ""
+msgstr "Lagerorte"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__lot
 msgid "Lot/Serial Number"
-msgstr ""
+msgstr "Los-/Seriennummer"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__lot_ids
 msgid "Lot/Serial Numbers"
-msgstr ""
+msgstr "Los-/Seriennummern"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_main_attachment_id
 msgid "Main Attachment"
-msgstr ""
+msgstr "Hauptanhang"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__manual
 msgid "Manual Selection"
-msgstr ""
+msgstr "Manuelle Auswahl"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Nachrichtenübertragungsfehler"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Nachrichten"
 
 #. module: stock_inventory
 #. odoo-python
 #: code:addons/stock_inventory/models/stock_quant.py:0
 #, python-format
 msgid "No move lines have been created"
-msgstr ""
+msgstr "Keine Warenbewegungszeilen wurden erstellt"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Anzahl Aktionen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Anzahl der Fehler"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Anzahl der Nachrichten, die eine Aktion erfordern"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Anzahl der Nachrichten mit einem Zustellungsfehler"
 
 #. module: stock_inventory
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__one
 msgid "One Product"
-msgstr ""
+msgstr "Ein Produkt"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__owner_id
 msgid "Owner"
-msgstr ""
+msgstr "Eigentümer"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.stock_inventory_search_view
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__category_id
 #: model:ir.model.fields.selection,name:stock_inventory.selection__stock_inventory__product_selection__category
 msgid "Product Category"
-msgstr ""
+msgstr "Produktkategorie"
 
 #. module: stock_inventory
 #: model:ir.model,name:stock_inventory.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
-msgstr ""
+msgstr "Produktbewegungen (Lagerbewegungszeile)"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__product_selection
 msgid "Product Selection"
-msgstr ""
+msgstr "Produktauswahl"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__product_ids
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__products_under_review_ids
 #: model_terms:ir.ui.view,arch_db:stock_inventory.stock_inventory_search_view
 msgid "Products Under Review"
-msgstr ""
+msgstr "Produkte in Prüfung"
 
 #. module: stock_inventory
 #: model:ir.model,name:stock_inventory.model_stock_quant
 msgid "Quants"
-msgstr ""
+msgstr "Quants"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "Set to Done"
-msgstr ""
+msgstr "Als Erledigt markieren"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__responsible_id
 msgid "Specific responsible of Inventory Adjustment."
-msgstr ""
+msgstr "Speziell für Inventuranpassungen verantwortlich."
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__state
 msgid "State"
-msgstr ""
+msgstr "Satus"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_quant__stock_inventory_ids
 msgid "Stock Inventories"
-msgstr ""
+msgstr "Inventuren"
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.res_config_settings_view_form
 msgid "Stock Inventory"
-msgstr ""
+msgstr "Inventur"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_res_company__stock_inventory_auto_complete
 #: model:ir.model.fields,field_description:stock_inventory.field_res_config_settings__stock_inventory_auto_complete
 msgid "Stock Inventory Auto Complete"
-msgstr ""
+msgstr "Inventur automatisch abschließen"
 
 #. module: stock_inventory
 #: model:ir.actions.act_window,name:stock_inventory.action_view_stock_move_line_inventory_tree
 msgid "Stock Move Lines"
-msgstr ""
+msgstr "Lagerbewegungszeilen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_moves
 msgid "Stock Moves Lines"
-msgstr ""
+msgstr "Lagerbewegungszeilen"
 
 #. module: stock_inventory
 #. odoo-python
@@ -392,6 +399,8 @@ msgid ""
 "There are active adjustments for the requested products: %(names)s. Blocking"
 " adjustments: %(blocking_names)s"
 msgstr ""
+"Es gibt aktive Anpassungen für die angefragten Produkte: %(names)s. "
+"Blockierende Anpassungen: %(blocking_names)s"
 
 #. module: stock_inventory
 #. odoo-python
@@ -401,27 +410,29 @@ msgid ""
 "There's already an Adjustment in Process using one requested Location: "
 "%(names)s. Blocking adjustments: %(blocking_names)s"
 msgstr ""
+"Es gibt bereits eine aktive Anpassung für den angefragten Lagerort: %(names)"
+"s. Blockierende Anpassungen: %(blocking_names)s"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__owner_id
 msgid "This is the owner of the inventory adjustment"
-msgstr ""
+msgstr "Dies ist der Besitzer der Inventuranpassung"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_quant__to_do
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_stock_quant_search_not_done
 msgid "To Do"
-msgstr ""
+msgstr "Zu Erledigen"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Webseiten-Nachrichten"
 
 #. module: stock_inventory
 #: model:ir.model.fields,help:stock_inventory.field_stock_inventory__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Webseiten Kommunikationshistorie"
 
 #. module: stock_inventory
 #. odoo-python
@@ -446,9 +457,9 @@ msgstr ""
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid "You can't cancel this inventory %(display_name)s."
-msgstr ""
+msgstr "Sie können diese Inventur %(display_name)s nicht abbrechen."
 
 #. module: stock_inventory
 #: model_terms:ir.ui.view,arch_db:stock_inventory.view_inventory_group_form
 msgid "e.g. Annual inventory"
-msgstr ""
+msgstr "z.B. Jährliche Inventur"

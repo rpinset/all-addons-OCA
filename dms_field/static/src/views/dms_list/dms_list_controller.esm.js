@@ -462,7 +462,7 @@ export const DMSListControllerObject = {
     },
     onDMSCreateEmptyStorages() {
         var data = {
-            model: this.resModel,
+            model: this.sanitizeDMSModel(this.resModel),
             empty_storages: this.empty_storages,
             res_id: this.props.record.resId,
         };

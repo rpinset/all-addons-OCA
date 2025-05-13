@@ -9,19 +9,20 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-01 10:39+0000\n"
-"PO-Revision-Date: 2017-05-01 10:39+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2025-05-13 13:23+0000\n"
+"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__config
 msgid "Config"
-msgstr ""
+msgstr "Einstellung"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__create_uid
@@ -41,7 +42,7 @@ msgstr "Anzeigename"
 #. module: server_environment
 #: model:ir.model,name:server_environment.model_server_config
 msgid "Display server configuration"
-msgstr ""
+msgstr "Zeige die Servereinstellungen an"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__id
@@ -67,12 +68,12 @@ msgstr "Zuletzt aktualisiert am"
 #: model:ir.model,name:server_environment.model_server_env_mixin
 msgid "Mixin to add server environment in existing models"
 msgstr ""
+"Mixin um Servereinstellungen zu bestehenden Modellen hinzufügen zu können"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__server_env_defaults
-#, fuzzy
 msgid "Server Env Defaults"
-msgstr "Server-Umfeld"
+msgstr "Server-Umfeld Standards"
 
 #. module: server_environment
 #: model:ir.actions.act_window,name:server_environment.server_env_act_show_config
@@ -82,440 +83,520 @@ msgstr "Server-Umfeld"
 
 #. module: server_environment
 #: model:ir.model,name:server_environment.model_server_env_techname_mixin
-#, fuzzy
 msgid "Server environment technical name"
-msgstr "Server-Umfeld"
+msgstr "Server-Umfeld technischer Name"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__tech_name
 msgid "Tech Name"
-msgstr ""
+msgstr "Technischer Name"
 
 #. module: server_environment
 #: model:ir.model.fields,help:server_environment.field_server_env_techname_mixin__tech_name
 msgid "Unique name for technical purposes. Eg: server env keys."
-msgstr ""
+msgstr "Eindeutiger technischer Name. Z.B. Server-Umgebungsschlüssel."
 
 #. module: server_environment
 #: model:res.groups,name:server_environment.has_server_configuration_access
-#, fuzzy
 msgid "View Server Environment Configuration"
-msgstr "Server-Umfeld"
+msgstr "Zeige Server-Umfeld Einstellungen"
 
 #. module: server_environment
 #: model:ir.model.constraint,message:server_environment.constraint_server_env_techname_mixin_tech_name_uniq
 msgid "`tech_name` must be unique!"
-msgstr ""
+msgstr "`tech_name` muss eindeutig sein!"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_addons_path
+#, fuzzy
 msgid "odoo | addons_path"
-msgstr ""
+msgstr "odoo | addons_path"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_admin_passwd
+#, fuzzy
 msgid "odoo | admin_passwd"
-msgstr ""
+msgstr "odoo | admin_passwd"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_config
+#, fuzzy
 msgid "odoo | config"
-msgstr ""
+msgstr "odoo | config"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_csv_internal_sep
+#, fuzzy
 msgid "odoo | csv_internal_sep"
-msgstr ""
+msgstr "odoo | csv_internal_sep"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_data_dir
+#, fuzzy
 msgid "odoo | data_dir"
-msgstr ""
+msgstr "odoo | data_dir"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_host
+#, fuzzy
 msgid "odoo | db_host"
-msgstr ""
+msgstr "odoo | db_host"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_maxconn
+#, fuzzy
 msgid "odoo | db_maxconn"
-msgstr ""
+msgstr "odoo | db_maxconn"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_name
+#, fuzzy
 msgid "odoo | db_name"
-msgstr ""
+msgstr "odoo | db_name"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_password
+#, fuzzy
 msgid "odoo | db_password"
-msgstr ""
+msgstr "odoo | db_password"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_port
+#, fuzzy
 msgid "odoo | db_port"
-msgstr ""
+msgstr "odoo | db_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_sslmode
+#, fuzzy
 msgid "odoo | db_sslmode"
-msgstr ""
+msgstr "odoo | db_sslmode"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_template
+#, fuzzy
 msgid "odoo | db_template"
-msgstr ""
+msgstr "odoo | db_template"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_db_user
+#, fuzzy
 msgid "odoo | db_user"
-msgstr ""
+msgstr "odoo | db_user"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_dbfilter
+#, fuzzy
 msgid "odoo | dbfilter"
-msgstr ""
+msgstr "odoo | dbfilter"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_demo
+#, fuzzy
 msgid "odoo | demo"
-msgstr ""
+msgstr "odoo | demo"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_dev_mode
+#, fuzzy
 msgid "odoo | dev_mode"
-msgstr ""
+msgstr "odoo | dev_mode"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_email_from
+#, fuzzy
 msgid "odoo | email_from"
-msgstr ""
+msgstr "odoo | email_from"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_from_filter
+#, fuzzy
 msgid "odoo | from_filter"
-msgstr ""
+msgstr "odoo | from_filter"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_geoip_database
+#, fuzzy
 msgid "odoo | geoip_database"
-msgstr ""
+msgstr "odoo | geoip_database"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_gevent_port
+#, fuzzy
 msgid "odoo | gevent_port"
-msgstr ""
+msgstr "odoo | gevent_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_http_enable
+#, fuzzy
 msgid "odoo | http_enable"
-msgstr ""
+msgstr "odoo | http_enable"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_http_interface
+#, fuzzy
 msgid "odoo | http_interface"
-msgstr ""
+msgstr "odoo | http_interface"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_http_port
+#, fuzzy
 msgid "odoo | http_port"
-msgstr ""
+msgstr "odoo | http_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_import_partial
+#, fuzzy
 msgid "odoo | import_partial"
-msgstr ""
+msgstr "odoo | import_partial"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_init
+#, fuzzy
 msgid "odoo | init"
-msgstr ""
+msgstr "odoo | init"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_language
+#, fuzzy
 msgid "odoo | language"
-msgstr ""
+msgstr "odoo | language"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_hard
+#, fuzzy
 msgid "odoo | limit_memory_hard"
-msgstr ""
+msgstr "odoo | limit_memory_hard"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_memory_soft
+#, fuzzy
 msgid "odoo | limit_memory_soft"
-msgstr ""
+msgstr "odoo | limit_memory_soft"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_request
+#, fuzzy
 msgid "odoo | limit_request"
-msgstr ""
+msgstr "odoo | limit_request"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_cpu
+#, fuzzy
 msgid "odoo | limit_time_cpu"
-msgstr ""
+msgstr "odoo | limit_time_cpu"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_real
+#, fuzzy
 msgid "odoo | limit_time_real"
-msgstr ""
+msgstr "odoo | limit_time_real"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_real_cron
+#, fuzzy
 msgid "odoo | limit_time_real_cron"
-msgstr ""
+msgstr "odoo | limit_time_real_cron"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_limit_time_worker_cron
+#, fuzzy
 msgid "odoo | limit_time_worker_cron"
-msgstr ""
+msgstr "odoo | limit_time_worker_cron"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_list_db
+#, fuzzy
 msgid "odoo | list_db"
-msgstr ""
+msgstr "odoo | list_db"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_db
+#, fuzzy
 msgid "odoo | log_db"
-msgstr ""
+msgstr "odoo | log_db"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_db_level
+#, fuzzy
 msgid "odoo | log_db_level"
-msgstr ""
+msgstr "odoo | log_db_level"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_handler
+#, fuzzy
 msgid "odoo | log_handler"
-msgstr ""
+msgstr "odoo | log_handler"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_log_level
+#, fuzzy
 msgid "odoo | log_level"
-msgstr ""
+msgstr "odoo | log_level"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_logfile
+#, fuzzy
 msgid "odoo | logfile"
-msgstr ""
+msgstr "odoo | logfile"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_longpolling_port
+#, fuzzy
 msgid "odoo | longpolling_port"
-msgstr ""
+msgstr "odoo | longpolling_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_max_cron_threads
+#, fuzzy
 msgid "odoo | max_cron_threads"
-msgstr ""
+msgstr "odoo | max_cron_threads"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_osv_memory_age_limit
+#, fuzzy
 msgid "odoo | osv_memory_age_limit"
-msgstr ""
+msgstr "odoo | osv_memory_age_limit"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_osv_memory_count_limit
+#, fuzzy
 msgid "odoo | osv_memory_count_limit"
-msgstr ""
+msgstr "odoo | osv_memory_count_limit"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_overwrite_existing_translations
+#, fuzzy
 msgid "odoo | overwrite_existing_translations"
-msgstr ""
+msgstr "odoo | overwrite_existing_translations"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pg_path
+#, fuzzy
 msgid "odoo | pg_path"
-msgstr ""
+msgstr "odoo | pg_path"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pidfile
+#, fuzzy
 msgid "odoo | pidfile"
-msgstr ""
+msgstr "odoo | pidfile"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_pre_upgrade_scripts
+#, fuzzy
 msgid "odoo | pre_upgrade_scripts"
-msgstr ""
+msgstr "odoo | pre_upgrade_scripts"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_proxy_mode
+#, fuzzy
 msgid "odoo | proxy_mode"
-msgstr ""
+msgstr "odoo | proxy_mode"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_publisher_warranty_url
+#, fuzzy
 msgid "odoo | publisher_warranty_url"
-msgstr ""
+msgstr "odoo | publisher_warranty_url"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_reportgz
+#, fuzzy
 msgid "odoo | reportgz"
-msgstr ""
+msgstr "odoo | reportgz"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_root_path
+#, fuzzy
 msgid "odoo | root_path"
-msgstr ""
+msgstr "odoo | root_path"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_running_env
+#, fuzzy
 msgid "odoo | running_env"
-msgstr ""
+msgstr "odoo | running_env"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_save
+#, fuzzy
 msgid "odoo | save"
-msgstr ""
+msgstr "odoo | save"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screencasts
+#, fuzzy
 msgid "odoo | screencasts"
-msgstr ""
+msgstr "odoo | screencasts"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_screenshots
+#, fuzzy
 msgid "odoo | screenshots"
-msgstr ""
+msgstr "odoo | screenshots"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_server_wide_modules
+#, fuzzy
 msgid "odoo | server_wide_modules"
-msgstr ""
+msgstr "odoo | server_wide_modules"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_shell_interface
+#, fuzzy
 msgid "odoo | shell_interface"
-msgstr ""
+msgstr "odoo | shell_interface"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_password
+#, fuzzy
 msgid "odoo | smtp_password"
-msgstr ""
+msgstr "odoo | smtp_password"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_port
+#, fuzzy
 msgid "odoo | smtp_port"
-msgstr ""
+msgstr "odoo | smtp_port"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_server
+#, fuzzy
 msgid "odoo | smtp_server"
-msgstr ""
+msgstr "odoo | smtp_server"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_ssl
+#, fuzzy
 msgid "odoo | smtp_ssl"
-msgstr ""
+msgstr "odoo | smtp_ssl"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_ssl_certificate_filename
+#, fuzzy
 msgid "odoo | smtp_ssl_certificate_filename"
-msgstr ""
+msgstr "odoo | smtp_ssl_certificate_filename"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_ssl_private_key_filename
+#, fuzzy
 msgid "odoo | smtp_ssl_private_key_filename"
-msgstr ""
+msgstr "odoo | smtp_ssl_private_key_filename"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_smtp_user
+#, fuzzy
 msgid "odoo | smtp_user"
-msgstr ""
+msgstr "odoo | smtp_user"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_stop_after_init
+#, fuzzy
 msgid "odoo | stop_after_init"
-msgstr ""
+msgstr "odoo | stop_after_init"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_syslog
+#, fuzzy
 msgid "odoo | syslog"
-msgstr ""
+msgstr "odoo | syslog"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_test_enable
+#, fuzzy
 msgid "odoo | test_enable"
-msgstr ""
+msgstr "odoo | test_enable"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_test_file
+#, fuzzy
 msgid "odoo | test_file"
-msgstr ""
+msgstr "odoo | test_file"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_test_tags
+#, fuzzy
 msgid "odoo | test_tags"
-msgstr ""
+msgstr "odoo | test_tags"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_transient_age_limit
+#, fuzzy
 msgid "odoo | transient_age_limit"
-msgstr ""
+msgstr "odoo | transient_age_limit"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_in
+#, fuzzy
 msgid "odoo | translate_in"
-msgstr ""
+msgstr "odoo | translate_in"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_modules
+#, fuzzy
 msgid "odoo | translate_modules"
-msgstr ""
+msgstr "odoo | translate_modules"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_translate_out
+#, fuzzy
 msgid "odoo | translate_out"
-msgstr ""
+msgstr "odoo | translate_out"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_unaccent
+#, fuzzy
 msgid "odoo | unaccent"
-msgstr ""
+msgstr "odoo | unaccent"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_update
+#, fuzzy
 msgid "odoo | update"
-msgstr ""
+msgstr "odoo | update"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_upgrade_path
+#, fuzzy
 msgid "odoo | upgrade_path"
-msgstr ""
+msgstr "odoo | upgrade_path"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_websocket_keep_alive_timeout
+#, fuzzy
 msgid "odoo | websocket_keep_alive_timeout"
-msgstr ""
+msgstr "odoo | websocket_keep_alive_timeout"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_websocket_rate_limit_burst
+#, fuzzy
 msgid "odoo | websocket_rate_limit_burst"
-msgstr ""
+msgstr "odoo | websocket_rate_limit_burst"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_websocket_rate_limit_delay
+#, fuzzy
 msgid "odoo | websocket_rate_limit_delay"
-msgstr ""
+msgstr "odoo | websocket_rate_limit_delay"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_without_demo
+#, fuzzy
 msgid "odoo | without_demo"
-msgstr ""
+msgstr "odoo | without_demo"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_workers
+#, fuzzy
 msgid "odoo | workers"
-msgstr ""
+msgstr "odoo | workers"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__odoo_I_x_sendfile
+#, fuzzy
 msgid "odoo | x_sendfile"
-msgstr ""
+msgstr "odoo | x_sendfile"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__system_I_architecture
@@ -534,14 +615,15 @@ msgstr "system | lsb_release"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__system_I_odoo
+#, fuzzy
 msgid "system | odoo"
-msgstr ""
+msgstr "system | odoo"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__system_I_os_name
 #, fuzzy
 msgid "system | os_name"
-msgstr "system | os.name"
+msgstr "system | os_name"
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_config__system_I_platform
