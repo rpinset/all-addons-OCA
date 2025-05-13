@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 3719a7726c09077063758a18754e53adcb53eebc
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:14:53 2025 +0000
+commit f277b619b796359d2a30ca2226359a1e372a8431
+Author: DantePereyra <dante.pereyra@ciclosmontecastelo.com>
+Date:   Mon May 12 09:11:19 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: account-analytic-13.0/account-analytic-13.0-pos_analytic_by_config
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-pos_analytic_by_config/es/
 
 
 ## account-budgeting
@@ -73,11 +78,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 4eac7bacf53442b954b45c965a13f359113d0bd3
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:09:18 2025 +0000
+commit 4d68476e112a04af8db80f58a6f3176c097fd600
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon May 12 06:44:37 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 83.3% (5 of 6 strings)
+    
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_fiscal_year
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_fiscal_year/it/
 
 
 ## account-financial-reporting
@@ -1534,11 +1544,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 245372b7e6782dfeea87c32ccdce054fad9c9426
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:29:12 2025 +0000
+commit 5fe429a554cdc1b6a6ee4fb530520c69d1aa683b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon May 12 06:44:39 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (48 of 48 strings)
+    
+    Translation: server-ux-13.0/server-ux-13.0-date_range
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-date_range/it/
 
 
 ## community-data-files
