@@ -497,11 +497,16 @@ Date:   Tue May 13 08:01:47 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a277161a4f4944d84fc537e805b95dfbffc0cb3f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 13 06:08:16 2025 +0000
+commit 305685ead0290cc47c584c9f1d46e4c3445fc1fe
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri May 16 06:40:44 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 97.1% (583 of 600 strings)
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1135,16 +1140,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 04aeda7aca35e7a2abf438a6dddef9574a5b4988
+commit f7ef67a07dc438f45c524afff9285994499a01c6
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 26 08:41:53 2025 +0000
+Date:   Thu May 15 09:09:34 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (20 of 20 strings)
+    Currently translated at 100.0% (11 of 11 strings)
     
-    Translation: manufacture-15.0/manufacture-15.0-mrp_workcenter_category
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_workcenter_category/it/
+    Translation: manufacture-15.0/manufacture-15.0-mrp_account_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_account_analytic/it/
 
 
 ## manufacture-reporting
