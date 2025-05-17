@@ -23,6 +23,9 @@ python-stdnum>=1.16
 # From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
 # From [https://github.com/OCA/data-protection.git](https://github.com/OCA/data-protection.git)
 # From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
+# generated from manifests external_dependencies
+lxml
+unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # generated from manifests external_dependencies
