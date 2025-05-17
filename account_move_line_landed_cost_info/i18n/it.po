@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-05-15 17:23+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_account_move_line__display_name
@@ -26,35 +26,35 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_account_move_line__id
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_stock_valuation_adjustment_lines__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model,name:account_move_line_landed_cost_info.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_account_move_line__stock_landed_cost_id
 msgid "Landed Cost"
-msgstr ""
+msgstr "Costo sbarcato"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_account_move_line____last_update
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_stock_valuation_adjustment_lines____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_move_line_landed_cost_info
 #: model_terms:ir.ui.view,arch_db:account_move_line_landed_cost_info.view_account_move_line_filter
 msgid "Stock Landed Cost"
-msgstr ""
+msgstr "Costo sbarcato di magazzino"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model.fields,field_description:account_move_line_landed_cost_info.field_account_move_line__stock_valuation_adjustment_line_id
 msgid "Stock Valuation Adjustment Line"
-msgstr ""
+msgstr "Riga rettifica valutazione magazzino"
 
 #. module: account_move_line_landed_cost_info
 #: model:ir.model,name:account_move_line_landed_cost_info.model_stock_valuation_adjustment_lines
 msgid "Valuation Adjustment Lines"
-msgstr ""
+msgstr "Righe correzione valutazione"

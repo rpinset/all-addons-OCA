@@ -185,10 +185,11 @@ class AccountPaymentOrderInherit(models.Model):
                 gen_args,
             )
             # Add pain to payment info tag (CBI required)
-            pmt_inf_node = pain_root.xpath("//PmtInf")[0]
-            pmt_inf_node.attrib[
-                "xmlns"
-            ] = f"urn:CBI:xsd:CBISDDReqLogMsg{gen_args['version']}"
+            pmt_inf_nodes = pain_root.xpath("//PmtInf")
+            for pmt_inf_node in pmt_inf_nodes:
+                pmt_inf_node.attrib[
+                    "xmlns"
+                ] = f"urn:CBI:xsd:CBISDDReqLogMsg{gen_args['version']}"
             tags_to_remove = ["//PmtInf//NbOfTxs", "//PmtInf//CtrlSum"]
             for tag in tags_to_remove:
                 elements_to_remove = pain_root.xpath(tag)

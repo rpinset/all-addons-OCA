@@ -3,7 +3,7 @@
 
 {
     "name": "ITA - SEPA Direct Debit",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "development_status": "Beta",
     "category": "Localization/Italy",
     "summary": "Create SEPA files for CBI SDD Italy",

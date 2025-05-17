@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-04-23 18:37+0000\n"
+"PO-Revision-Date: 2025-05-14 10:23+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_stock_backorder_confirmation
@@ -29,7 +29,7 @@ msgstr "Blocca validazione manuale dei picking in acquisto"
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields.selection,name:purchase_sale_inter_company.selection__res_company__sync_picking_failure_action__raise
 msgid "Block and raise error"
-msgstr ""
+msgstr "Blocca e solleva errore"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__block_po_manual_picking_validation
@@ -50,7 +50,7 @@ msgstr "Impostazioni di configurazione"
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields.selection,name:purchase_sale_inter_company.selection__res_company__sync_picking_failure_action__notify
 msgid "Continue, but create activity to notify someone"
-msgstr ""
+msgstr "Continua, ma crea un'attività per notificare qualcuno"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__so_from_po
@@ -98,6 +98,8 @@ msgid ""
 "Failure to confirm picking for PO %s. Original picking %s still confirmed, "
 "please check the other side manually."
 msgstr ""
+"Non è stato possibile validare il trasferimento per il PO %s. Il "
+"trasferimento originale %s è confermato, verifica manualmente la controparte."
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_stock_backorder_confirmation__force_no_backorder
@@ -201,7 +203,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__sync_picking_failure_action
 #: model_terms:ir.ui.view,arch_db:purchase_sale_inter_company.res_config_settings_view_form
 msgid "On sync picking failure"
-msgstr ""
+msgstr "Al fallimento della sincronizzazione trasferimenti"
 
 #. module: purchase_sale_inter_company
 #: code:addons/purchase_sale_inter_company/models/stock_picking.py:0
@@ -213,7 +215,7 @@ msgstr "Il PO non esiste o non ha ricezioni"
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_company__sync_picking_failure_action
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__sync_picking_failure_action
 msgid "Pick action to perform on sync picking failure"
-msgstr ""
+msgstr "Azione trasferimento da compiere alla mancata sincronizzazione"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model,name:purchase_sale_inter_company.model_stock_move_line
@@ -321,12 +323,12 @@ msgstr "Trasferimento"
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_company__notify_user_id
 #: model:ir.model.fields,field_description:purchase_sale_inter_company.field_res_config_settings__notify_user_id
 msgid "User to Notify"
-msgstr ""
+msgstr "Utente da avvisare"
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__notify_user_id
 msgid "User to notify incase of sync picking failure."
-msgstr ""
+msgstr "Utente da avvisare in caso di mancata sincronizzazione trasferimenti."
 
 #. module: purchase_sale_inter_company
 #: model:ir.model.fields,help:purchase_sale_inter_company.field_res_config_settings__intercompany_sale_user_id

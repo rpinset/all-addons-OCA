@@ -456,6 +456,7 @@ class AccountMove(models.Model):
         for inv_line in self.invoice_line_ids:
             line_vals = inv_line.copy_data()[0]
             line_vals["move_id"] = supplier_invoice.id
+            line_vals["analytic_tag_ids"] = False
             line_tax_ids = inv_line.tax_ids
             mapped_taxes = rc_type.map_tax(
                 line_tax_ids,

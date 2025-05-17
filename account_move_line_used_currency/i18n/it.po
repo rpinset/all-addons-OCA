@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-05-15 17:23+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,field_description:account_move_line_used_currency.field_account_move_line__amount_used_currency
 msgid "Amount (Used Currency)"
-msgstr ""
+msgstr "Valore (valuta usata)"
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,field_description:account_move_line_used_currency.field_account_move_line__display_name
@@ -29,17 +29,17 @@ msgstr "Nome visualizzato"
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,field_description:account_move_line_used_currency.field_account_move_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_move_line_used_currency
 #: model:ir.model,name:account_move_line_used_currency.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,field_description:account_move_line_used_currency.field_account_move_line____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,help:account_move_line_used_currency.field_account_move_line__amount_used_currency
@@ -48,11 +48,14 @@ msgid ""
 "currency, if no foreign currency is used. It's purposeis to allow reporting "
 "on journal items combining foreign and company currencies."
 msgstr ""
+"Questo importo è in valuta estera, se utilizzata, e in valuta aziendale, se "
+"non viene utilizzata alcuna valuta estera. Il suo scopo è consentire la "
+"rendicontazione di voci di giornale che combinano valute estere e aziendali."
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,field_description:account_move_line_used_currency.field_account_move_line__used_currency_id
 msgid "Used Currency"
-msgstr ""
+msgstr "Valuta usata"
 
 #. module: account_move_line_used_currency
 #: model:ir.model.fields,help:account_move_line_used_currency.field_account_move_line__used_currency_id
@@ -60,3 +63,6 @@ msgid ""
 "Used currency of the journal item. It is the foreign currency, or the "
 "company currency, where the foreign currency has not been used."
 msgstr ""
+"Valuta utilizzata per la voce di registro. Si tratta della valuta estera, o "
+"della valuta aziendale, nel caso in cui la valuta estera non sia stata "
+"utilizzata."
