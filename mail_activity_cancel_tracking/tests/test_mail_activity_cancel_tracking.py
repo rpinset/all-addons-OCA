@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo.tests import new_test_user
 from odoo.tests.common import HttpCase, tagged
+from odoo.tools import mute_logger
 
 
 @tagged("-at_install", "post_install")
@@ -32,3 +33,8 @@ class TestMailActivityCancelTracking(HttpCase):
             "mail_activity_cancel_tracking_cancel",
             login="test-user",
         )
+
+    @mute_logger("odoo.models.unlink")
+    def test_record_unlink(self):
+        # This process should not fail
+        self.partner.unlink()

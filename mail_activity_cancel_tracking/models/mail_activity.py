@@ -22,6 +22,9 @@ class MailActivity(models.Model):
             for record_sudo, activity in zip(
                 records_sudo, activity_data["activities"], strict=True
             ):
+                # Use exists() to avoid creating messages linked to deleted records
+                if not record_sudo.exists():
+                    continue
                 record_sudo.message_post_with_source(
                     "mail_activity_cancel_tracking.message_activity_cancel",
                     author_id=self.env.user.partner_id.id,
