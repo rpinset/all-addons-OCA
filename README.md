@@ -532,11 +532,16 @@ Date:   Mon Mar 24 10:26:50 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit bc46981fe3a8f0dd94f05bdfc7949783a8faf583
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 20:37:38 2025 +0000
+commit 5ff6d0892caeae0ba2dccb567aeaa553e858e35c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri May 16 06:40:34 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (512 of 512 strings)
+    
+    Translation: field-service-12.0/field-service-12.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-12-0/field-service-12-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1313,16 +1318,16 @@ Date:   Sun Sep 3 12:06:38 2023 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ae9aa76be6be0b68317c405f598438edff9f7a16
+commit b625660604c83f9da032b833a9c6c4f50c1f036d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Mar 20 11:02:56 2025 +0000
+Date:   Thu May 15 09:19:51 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: social-12.0/social-12.0-mass_mailing_unique
-    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mass_mailing_unique/it/
+    Translation: social-12.0/social-12.0-mail_activity_done
+    Translate-URL: https://translation.odoo-community.org/projects/social-12-0/social-12-0-mail_activity_done/it/
 
 
 ## storage
