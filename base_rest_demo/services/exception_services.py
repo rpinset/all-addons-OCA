@@ -1,6 +1,8 @@
 # Copyright 2018 ACSONE SA/NV
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
+from psycopg2 import errorcodes
+from psycopg2.errors import OperationalError
 from werkzeug.exceptions import MethodNotAllowed
 
 from odoo import _
@@ -12,8 +14,12 @@ from odoo.exceptions import (
     ValidationError,
 )
 from odoo.http import SessionExpiredException
+from odoo.service.model import MAX_TRIES_ON_CONCURRENCY_FAILURE
 
+from odoo.addons.base_rest.components.service import to_int
 from odoo.addons.component.core import Component
+
+_CPT_RETRY = 0
 
 
 class ExceptionService(Component):
@@ -90,6 +96,23 @@ class ExceptionService(Component):
         """
         raise IOError("My IO error")
 
+    def retryable_error(self, nbr_retries):
+        """This method is used in the test suite to check that the retrying
+        functionality in case of concurrency error on the database is working
+        correctly for retryable exceptions.
+
+        The output will be the number of retries that have been done.
+
+        This method is mainly used to test the retrying functionality
+        """
+        global _CPT_RETRY
+        if _CPT_RETRY < nbr_retries:
+            _CPT_RETRY += 1
+            raise FakeConcurrentUpdateError("fake error")
+        tryno = _CPT_RETRY
+        _CPT_RETRY = 0
+        return {"retries": tryno}
+
     # Validator
     def _validator_user_error(self):
         return {}
@@ -138,3 +161,22 @@ class ExceptionService(Component):
 
     def _validator_return_bare_exception(self):
         return {}
+
+    def _validator_retryable_error(self):
+        return {
+            "nbr_retries": {
+                "type": "integer",
+                "required": True,
+                "default": MAX_TRIES_ON_CONCURRENCY_FAILURE,
+                "coerce": to_int,
+            }
+        }
+
+    def _validator_return_retryable_error(self):
+        return {"retries": {"type": "integer"}}
+
+
+class FakeConcurrentUpdateError(OperationalError):
+    @property
+    def pgcode(self):
+        return errorcodes.SERIALIZATION_FAILURE

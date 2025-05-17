@@ -6,7 +6,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "version": "16.0.1.3.0",
+    "version": "16.0.1.4.0",
     "name": "ITA - Registri IVA",
     "category": "Localization/Italy",
     "author": "Agile Business Group, Odoo Community Association (OCA), LinkIt Srl",
@@ -20,6 +20,7 @@
         "web",
         "account_tax_balance",
         "date_range",
+        "report_xlsx_helper",
     ],
     "data": [
         "security/ir.model.access.csv",

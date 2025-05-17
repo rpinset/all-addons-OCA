@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 14:06+0000\n"
-"PO-Revision-Date: 2025-04-05 11:06+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2025-05-15 23:34+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_declaration_of_intent
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_form
@@ -166,7 +166,7 @@ msgstr "Dichiarazione"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model,name:l10n_it_declaration_of_intent.model_l10n_it_declaration_of_intent_declaration
 msgid "Declaration of intent"
-msgstr "Dichiarazione d'intento"
+msgstr "Dichiarazione di intento"
 
 #. module: l10n_it_declaration_of_intent
 #. odoo-python
@@ -176,7 +176,7 @@ msgid ""
 "Declaration of intent not found. Add new declaration or change fiscal "
 "position and verify applied tax"
 msgstr ""
-"Dichiarazione d'intento non trovata. Aggiungere una nuova dichiarazione o "
+"Dichiarazione di intento non trovata. Aggiungere una nuova dichiarazione o "
 "modificare la posizione fiscale e verificare l'imposta applicata"
 
 #. module: l10n_it_declaration_of_intent
@@ -187,7 +187,7 @@ msgstr "Limite annuale dichiarazione"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_l10n_it_declaration_of_intent_select_declarations__declaration_ids
 msgid "Declarations of Intent"
-msgstr "Dichiarazioni d'intento"
+msgstr "Dichiarazioni di intento"
 
 #. module: l10n_it_declaration_of_intent
 #: model:ir.actions.act_window,name:l10n_it_declaration_of_intent.declaration_of_intent_action
@@ -198,7 +198,7 @@ msgstr "Dichiarazioni d'intento"
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_search
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_view_company_form
 msgid "Declarations of intent"
-msgstr "Dichiarazioni d'intento"
+msgstr "Dichiarazioni di intento"
 
 #. module: l10n_it_declaration_of_intent
 #. odoo-python
@@ -216,7 +216,7 @@ msgstr ""
 msgid "Define taxes for fiscal position %s valid for declaration of intent"
 msgstr ""
 "Definire delle imposte per la posizione fiscale %s valide per la "
-"dichiarazione d'intento"
+"dichiarazione di intento"
 
 #. module: l10n_it_declaration_of_intent
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_form
@@ -226,7 +226,7 @@ msgstr "Dettagli"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model,name:l10n_it_declaration_of_intent.model_l10n_it_declaration_of_intent_declaration_line
 msgid "Details of declaration of intent"
-msgstr "Dettagli della dichiarazione d'intento"
+msgstr "Dettagli della dichiarazione di intento"
 
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_l10n_it_declaration_of_intent_declaration__display_name
@@ -286,7 +286,7 @@ msgstr "Forza chiusura"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_account_move_line__force_declaration_of_intent_id
 msgid "Force Declaration of Intent"
-msgstr "Forzare dichiarazione d'intento"
+msgstr "Forzare dichiarazione di intento"
 
 #. module: l10n_it_declaration_of_intent
 #: model_terms:ir.ui.view,arch_db:l10n_it_declaration_of_intent.declaration_of_intent_form
@@ -514,7 +514,7 @@ msgstr "Selezione manuale delle dichiarazioni"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model,name:l10n_it_declaration_of_intent.model_l10n_it_declaration_of_intent_select_declarations
 msgid "Set declaration of intent manually on invoice"
-msgstr "Impostare la dichiarazione d'intento manualmente sulla fattura"
+msgstr "Impostare la dichiarazione di intento manualmente sulla fattura"
 
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_l10n_it_declaration_of_intent_declaration__state
@@ -588,7 +588,7 @@ msgstr "Periodo di validità"
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_account_fiscal_position__valid_for_declaration_of_intent
 msgid "Valid for declaration of intent"
-msgstr "Valida per dichiarazione d'intento"
+msgstr "Valida per dichiarazione di intento"
 
 #. module: l10n_it_declaration_of_intent
 #: model:ir.model.fields,field_description:l10n_it_declaration_of_intent.field_l10n_it_declaration_of_intent_declaration__website_message_ids

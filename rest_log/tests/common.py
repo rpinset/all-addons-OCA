@@ -4,6 +4,9 @@
 
 import contextlib
 
+from psycopg2 import errorcodes
+from psycopg2.errors import OperationalError
+
 from odoo import exceptions
 
 from odoo.addons.base_rest import restapi
@@ -42,6 +45,7 @@ class TestDBLoggingMixin(object):
                     "value": ValueError,
                     "validation": exceptions.ValidationError,
                     "user": exceptions.UserError,
+                    "retryable": FakeConcurrentUpdateError,
                 }
                 raise exc[how]("Failed as you wanted!")
 
@@ -61,3 +65,9 @@ class TestDBLoggingMixin(object):
             headers.update(extra_headers or {})
             mocked_request.httprequest.headers = headers
             yield mocked_request
+
+
+class FakeConcurrentUpdateError(OperationalError):
+    @property
+    def pgcode(self):
+        return errorcodes.SERIALIZATION_FAILURE

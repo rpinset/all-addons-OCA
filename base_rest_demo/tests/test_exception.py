@@ -104,3 +104,17 @@ class TestException(HttpCase, RegistryMixin):
         self.assertEqual(response.headers["content-type"], "application/json")
         body = json.loads(response.content.decode("utf-8"))
         self.assertDictEqual(body, {"code": 500, "name": "Internal Server Error"})
+
+    @odoo.tools.mute_logger("odoo.addons.base_rest.http", "odoo.http")
+    def test_retrying(self):
+        """Test that the retrying mechanism is working as expected with the
+        FastAPI endpoints in case of POST request with a file.
+        """
+        nbr_retries = 3
+        response = self.url_open(
+            "%s/retryable_error" % self.url,
+            '{"nbr_retries": %d}' % nbr_retries,
+            timeout=20000,
+        )
+        self.assertEqual(response.status_code, 200, response.content)
+        self.assertDictEqual(response.json(), {"retries": nbr_retries})

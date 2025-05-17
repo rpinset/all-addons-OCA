@@ -603,24 +603,23 @@ class StockDeliveryNote(models.Model):
     def _action_confirm(self):
         for note in self:
             sequence = note.type_id.sequence_id
-
-            note.state = DOMAIN_DELIVERY_NOTE_STATES[1]
-            if not note.date:
-                note.date = datetime.date.today()
-
+            dt = note.date or datetime.date.today()
+            vals = {"state": DOMAIN_DELIVERY_NOTE_STATES[1], "date": dt}
             if not note.name:
                 # Avoid duplicates
                 while True:
-                    name = sequence.with_context(
-                        ir_sequence_date=note.date
-                    ).next_by_id()
+                    name = sequence.with_context(ir_sequence_date=dt).next_by_id()
                     if not self.search(
-                        [("name", "=", name), ("company_id", "=", note.company_id.id)]
+                        [
+                            ("name", "=", name),
+                            ("company_id", "=", note.company_id.id),
+                        ]
                     ):
                         break
 
-                note.name = name
-                note.sequence_id = sequence
+                vals.update({"name": name, "sequence_id": sequence.id})
+
+            note.write(vals)
 
     def action_confirm(self):
         for note in self:

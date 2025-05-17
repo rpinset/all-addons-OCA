@@ -374,6 +374,7 @@ graphql_server
 jsondiff
 marshmallow
 marshmallow-objects>=2.0.0
+marshmallow<4.0.0
 parse-accept-language
 pydantic
 pydantic>=2.0.0
