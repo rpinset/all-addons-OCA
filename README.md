@@ -229,16 +229,14 @@ Date:   Sat Feb 1 21:11:00 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 21a9c3737ca6b2158ca76e928ab886678201f67f
-Author: EvaS595 <eva.saintier@horanet.com>
-Date:   Wed Apr 9 12:15:05 2025 +0000
+commit 3bba3cef63a12193849e2ae9bbddecf20a601844
+Merge: 21a9c373 b19e9204
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 16 08:21:42 2025 +0000
 
-    Translated using Weblate (French)
+    Merge PR #827 into 13.0
     
-    Currently translated at 100.0% (35 of 35 strings)
-    
-    Translation: account-payment-13.0/account-payment-13.0-account_payment_term_extension
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_payment_term_extension/fr/
+    Signed-off-by AaronHForgeFlow
 
 
 ## connector
@@ -494,11 +492,16 @@ Date:   Sat Feb 1 21:16:10 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 988514ffd6c9d2d745ae9a0a5ae2a902738757b6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:31:27 2025 +0000
+commit ab5944ccca25bd40f9f15f8d8ea7a014eb8c434b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed May 14 09:37:25 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (11 of 11 strings)
+    
+    Translation: survey-13.0/survey-13.0-partner_survey
+    Translate-URL: https://translation.odoo-community.org/projects/survey-13-0/survey-13-0-partner_survey/it/
 
 
 ## knowledge
@@ -544,9 +547,9 @@ Date:   Sat Feb 1 21:15:56 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit aa3236ebd24e248b6917076d3c794d4a37892d5b
+commit d42930ecf85151313626abfce6ab93000ec385bd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jan 31 13:14:26 2025 +0000
+Date:   Fri May 16 06:40:36 2025 +0000
 
     Translated using Weblate (Italian)
     
