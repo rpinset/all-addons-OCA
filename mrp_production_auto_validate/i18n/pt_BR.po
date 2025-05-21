@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_production_auto_validate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. module: mrp_production_auto_validate
+#: model_terms:ir.ui.view,arch_db:mrp_production_auto_validate.mrp_bom_form_view
+msgid ""
+"<span>The Quantity To Produce of an order is now restricted to the BoM "
+"Quantity.</span>"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model.fields,field_description:mrp_production_auto_validate.field_mrp_production__auto_validate
+msgid "Auto Validate"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_mrp_bom
+msgid "Bill of Material"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_mrp_production
+msgid "Manufacturing Order"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model.fields,field_description:mrp_production_auto_validate.field_mrp_bom__mo_auto_validation
+msgid "Order Auto Validation"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_mrp_batch_produce
+msgid "Produce a batch of production order"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#. odoo-python
+#: code:addons/mrp_production_auto_validate/models/mrp_production.py:0
+msgid ""
+"Quantity in procurement (%(product_qty)s %(product_uom_name)s) was increased"
+" to %(bom_qty)s %(bom_uom_name)s due to auto validation feature preventing "
+"to create an MO with a different qty than defined on the BOM."
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#. odoo-python
+#: code:addons/mrp_production_auto_validate/models/mrp_production.py:0
+msgid ""
+"Quantity in procurement (%(product_qty)s %(product_uom_name)s) was split to "
+"multiple production orders of %(bom_qty)s %(bom_uom_name)s due to auto "
+"validation feature preventing to set a quantity to produce different than "
+"the quantity defined on the Bill of Materials."
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_stock_rule
+msgid "Stock Rule"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#. odoo-python
+#: code:addons/mrp_production_auto_validate/models/mrp_production.py:0
+msgid ""
+"The quantity to produce is restricted to %(qty)s %(uom)s as the BoM is "
+"configured with the 'Order Auto Validation' option."
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model.fields,help:mrp_production_auto_validate.field_mrp_bom__mo_auto_validation
+msgid ""
+"Validate automatically the manufacturing order when the 'Pick Components' transfer is validated.\n"
+"This behavior is available only if the warehouse is configured with 2 or 3 steps."
+msgstr ""
+
+#. module: mrp_production_auto_validate
+#: model:ir.model,name:mrp_production_auto_validate.model_mrp_production_backorder
+msgid "Wizard to mark as done or create back order"
+msgstr ""

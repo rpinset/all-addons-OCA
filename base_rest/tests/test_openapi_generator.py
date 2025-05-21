@@ -2,6 +2,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 from odoo.addons.component.core import Component
+from odoo.addons.website.tools import MockRequest
 
 from .. import restapi
 from .common import TransactionRestServiceRegistryCase
@@ -42,12 +43,20 @@ class TestOpenAPIGenerator(TransactionRestServiceRegistryCase):
 
         self._build_services(self, PartnerService)
         service = self._get_service_component(self, "partner")
-        openapi = service.to_openapi()
+        with MockRequest(self.env, url_root="https://example.com"):
+            openapi = service.to_openapi()
         self.assertTrue(openapi)
 
         # The service url is available at base_url/controller._root_path/_usage
-        url = openapi["servers"][0]["url"]
-        self.assertEqual(self.base_url + "/test_controller/partner", url)
+        servers = openapi.get("servers", [])
+        self.assertEqual(len(servers), 2)
+        expected = sorted(
+            [
+                f"{self.base_url}/test_controller/partner",
+                "https://example.com/test_controller/partner",
+            ]
+        )
+        self.assertListEqual(sorted([s["url"] for s in servers]), expected)
 
         # The title is generated from the service usage
         # The service info must contains a title and a description
@@ -122,7 +131,8 @@ class TestOpenAPIGenerator(TransactionRestServiceRegistryCase):
 
         self._build_services(self, PartnerService)
         service = self._get_service_component(self, "partner")
-        openapi = service.to_openapi()
+        with MockRequest(self.env, url_root="https://example.com"):
+            openapi = service.to_openapi()
         self.assertTrue(openapi)
         paths = openapi["paths"]
         self.assertIn("/{id}/update_name/{name}", paths)
@@ -201,7 +211,8 @@ class TestOpenAPIGenerator(TransactionRestServiceRegistryCase):
 
         self._build_services(self, PartnerService)
         service = self._get_service_component(self, "partner")
-        openapi = service.to_openapi()
+        with MockRequest(self.env, url_root="https://example.com"):
+            openapi = service.to_openapi()
         paths = openapi["paths"]
         self.assertIn("/{id}/update_name/{name}", paths)
         path = paths["/{id}/update_name/{name}"]
@@ -250,7 +261,8 @@ class TestOpenAPIGenerator(TransactionRestServiceRegistryCase):
 
         self._build_services(self, AttachmentService)
         service = self._get_service_component(self, "attachment")
-        openapi = service.to_openapi()
+        with MockRequest(self.env, url_root="https://example.com"):
+            openapi = service.to_openapi()
         paths = openapi["paths"]
         # The paths must contains 2 entries (1 by routes)
         self.assertSetEqual({"/{id}/download", "/create"}, set(openapi["paths"]))

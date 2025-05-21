@@ -28,6 +28,7 @@ addon | version | maintainers | summary
 [account_analytic_spread_by_tag](account_analytic_spread_by_tag/) | 18.0.1.0.0 | [![miquelalzanillas](https://github.com/miquelalzanillas.png?size=30px)](https://github.com/miquelalzanillas) | Account Analytic Spread by Tag
 [account_analytic_tag](account_analytic_tag/) | 18.0.1.1.0 |  | Account Analytic Tag
 [analytic_base_department](analytic_base_department/) | 18.0.1.0.0 |  | Add relationship between Analytic and Department
+[analytic_hr_department_restriction](analytic_hr_department_restriction/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic distributions restriction per HR department
 [hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
 [pos_analytic_by_config](pos_analytic_by_config/) | 18.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
 [purchase_analytic](purchase_analytic/) | 18.0.1.0.0 |  | Purchase Analytic
@@ -796,7 +797,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_banking_mandate](account_banking_mandate/) | 18.0.1.0.1 |  | Banking mandates
+[account_banking_mandate](account_banking_mandate/) | 18.0.1.2.0 |  | Banking mandates
 [account_banking_mandate_contact](account_banking_mandate_contact/) | 18.0.1.0.0 |  | Assign specific banking mandates in contact level
 [account_banking_pain_base](account_banking_pain_base/) | 18.0.1.0.0 |  | Base module for PAIN file generation
 [account_invoice_select_for_payment](account_invoice_select_for_payment/) | 18.0.1.0.0 |  | Account Invoice Select for Payment
@@ -852,8 +853,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.4 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
-[account_statement_base](account_statement_base/) | 18.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_statement_base](account_statement_base/) | 18.0.1.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
 
@@ -1622,7 +1623,7 @@ addon | version | maintainers | summary
 [sale_commercial_partner](sale_commercial_partner/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add stored related field 'Commercial Entity' on sale orders
 [sale_company_currency](sale_company_currency/) | 18.0.1.0.0 |  | Company Currency in Sale Orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 18.0.1.0.0 |  | Sale Deliveries split by date
-[sale_delivery_state](sale_delivery_state/) | 18.0.1.0.0 |  | Show the delivery state on the sale order
+[sale_delivery_state](sale_delivery_state/) | 18.0.1.1.0 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 18.0.1.0.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_exception](sale_exception/) | 18.0.1.0.0 |  | Custom exceptions on sale order
 [sale_exception_product_sale_manufactured_for](sale_exception_product_sale_manufactured_for/) | 18.0.1.0.0 |  | The partner set in the sales order can order only if he/she has a commercial entity that is listed as one of the partners for which the products can be manufactured for.
@@ -1660,6 +1661,7 @@ addon | version | maintainers | summary
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 18.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 18.0.1.0.0 |  | Multiple warehouse source locations for Sale order
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 18.0.1.0.0 |  | Sale Stock Cancel Restriction
+[sale_stock_delivery_state](sale_stock_delivery_state/) | 18.0.1.0.0 |  | Change the way to compute the delivery state
 [sale_stock_line_customer_ref](sale_stock_line_customer_ref/) | 18.0.1.0.0 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) | Allow you to add a customer reference on order lines propagaged to move operations.
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 18.0.1.0.0 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 18.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![EmilioPascual](https://github.com/EmilioPascual.png?size=30px)](https://github.com/EmilioPascual) | Add picking note in sale and purchase order
@@ -1783,9 +1785,10 @@ addon | version | maintainers | summary
 [partner_contact_tags_in_popup](partner_contact_tags_in_popup/) | 18.0.1.0.0 | [![carmenbianca](https://github.com/carmenbianca.png?size=30px)](https://github.com/carmenbianca) | Display a contact's tags in the 'Contacts & Addresses' pop-up form view.
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 18.0.1.0.0 |  | Contact deduplication with fine-grained permission control
 [partner_disable_gravatar](partner_disable_gravatar/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Disable automatic connection to gravatar.com
+[partner_duns](partner_duns/) | 18.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Set DUNS (Data Universal Numbering System) on partners
 [partner_email_check](partner_email_check/) | 18.0.1.0.0 |  | Validate email address field
 [partner_fax](partner_fax/) | 18.0.1.0.0 |  | Add fax number on partner
-[partner_firstname](partner_firstname/) | 18.0.1.1.0 |  | Split first name and last name for non company partners
+[partner_firstname](partner_firstname/) | 18.0.1.2.0 |  | Split first name and last name for non company partners
 [partner_identification](partner_identification/) | 18.0.1.0.0 |  | Partner Identification Numbers
 [partner_identification_gln](partner_identification_gln/) | 18.0.1.0.0 |  | This addon extends "Partner Identification Numbers" to provide a number category for GLN registration
 [partner_identification_unique_by_category](partner_identification_unique_by_category/) | 18.0.1.0.0 |  | Partner Identification Numbers Unique By Category
@@ -1795,7 +1798,7 @@ addon | version | maintainers | summary
 [partner_pricelist_search](partner_pricelist_search/) | 18.0.1.0.0 |  | Partner pricelist search
 [partner_priority](partner_priority/) | 18.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds priority to partners.
 [partner_ref_unique](partner_ref_unique/) | 18.0.1.0.0 |  | Add an unique constraint to partner ref field
-[partner_stage](partner_stage/) | 18.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
+[partner_stage](partner_stage/) | 18.0.1.0.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Add lifecycle Stages to Partners
 [partner_title_order](partner_title_order/) | 18.0.1.0.0 |  | Makes partner title sortable by sequence
 [partner_tz](partner_tz/) | 18.0.1.0.0 |  | Remove partner timezone default value and display on form
 [partner_vat_unique](partner_vat_unique/) | 18.0.1.0.0 |  | Module to make the VAT number unique for customers and suppliers.
@@ -2335,11 +2338,13 @@ addon | version | maintainers | summary
 [fieldservice_activity](fieldservice_activity/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
 [fieldservice_calendar](fieldservice_calendar/) | 18.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
 [fieldservice_crm](fieldservice_crm/) | 18.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
+[fieldservice_equipment_stock](fieldservice_equipment_stock/) | 18.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
 [fieldservice_project](fieldservice_project/) | 18.0.1.0.0 |  | Create field service orders from a project or project task
 [fieldservice_recurring](fieldservice_recurring/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
 [fieldservice_route](fieldservice_route/) | 18.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
 [fieldservice_sale](fieldservice_sale/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
 [fieldservice_sale_recurring](fieldservice_sale_recurring/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
+[fieldservice_sale_stock](fieldservice_sale_stock/) | 18.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
 [fieldservice_size](fieldservice_size/) | 18.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
 [fieldservice_stage_server_action](fieldservice_stage_server_action/) | 18.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 18.0.1.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
@@ -2587,6 +2592,7 @@ addon | version | maintainers | summary
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 18.0.1.0.1 |  | Open/Close task from corresponding Task Log entry
 [hr_timesheet_time_type](hr_timesheet_time_type/) | 18.0.1.0.0 |  | Ability to add time type in timesheet lines.
 [sale_timesheet_line_exclude](sale_timesheet_line_exclude/) | 18.0.1.0.0 |  | Exclude Timesheet Line from Sale Order
+[sale_timesheet_timeline](sale_timesheet_timeline/) | 18.0.1.0.0 |  | Dates planning in sales order lines
 
 [//]: # (end addons)
 
@@ -4977,7 +4983,9 @@ addon | version | maintainers | summary
 [delivery_postlogistics](delivery_postlogistics/) | 18.0.1.0.0 |  | Print PostLogistics shipping labels using the Barcode web service
 [delivery_postlogistics_dangerous_goods](delivery_postlogistics_dangerous_goods/) | 18.0.1.0.0 |  | Declare dangerous goods when generating postlogistics labels
 [delivery_postlogistics_server_env](delivery_postlogistics_server_env/) | 18.0.1.0.0 |  | Server Environment layer for Delivery Postlogistics
+[delivery_price_method](delivery_price_method/) | 18.0.1.0.0 |  | Force a fixed or rule price calculation on Delivery Methods, for example to override a webservice provided prices.
 [delivery_roulier](delivery_roulier/) | 18.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Integration of multiple carriers
+[delivery_state](delivery_state/) | 18.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [partner_delivery_info](partner_delivery_info/) | 18.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 18.0.1.0.1 |  | Set on partners a schedule for delivery goods
 [server_environment_delivery](server_environment_delivery/) | 18.0.1.0.0 |  | Configure prod environment for delivery carriers
@@ -5090,7 +5098,7 @@ addon | version | maintainers | summary
 [stock_dangerous_goods](stock_dangerous_goods/) | 18.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Adds utility fields to manage dangerous goods
 [stock_landed_costs_priority](stock_landed_costs_priority/) | 18.0.1.0.0 |  | Add priority to landed costs
 [stock_lock_lot](stock_lock_lot/) | 18.0.1.0.0 |  | Stock Lock Lot
-[stock_move_quantity_product_uom](stock_move_quantity_product_uom/) | 18.0.1.0.1 |  | computes stock.move's quantity in the uom of the product.
+[stock_move_quantity_product_uom](stock_move_quantity_product_uom/) | 18.0.1.0.2 |  | computes stock.move's quantity in the uom of the product.
 [stock_no_negative](stock_no_negative/) | 18.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_owner_restriction](stock_owner_restriction/) | 18.0.1.0.0 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 18.0.1.0.0 |  | Define preferred delivery time windows for partners
@@ -5776,6 +5784,7 @@ addon | version | maintainers | summary
 [purchase_request_department](purchase_request_department/) | 18.0.1.0.0 |  | Purchase Request Department
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 18.0.1.1.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_request_type](purchase_request_type/) | 18.0.1.0.0 |  | Purchase Request Type
+[purchase_requisition_line_description](purchase_requisition_line_description/) | 18.0.1.0.0 |  | Extends the functionality of Purchase Agreements to show line description.
 [purchase_tier_validation](purchase_tier_validation/) | 18.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [supplier_calendar](supplier_calendar/) | 18.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
 [vendor_transport_lead_time](vendor_transport_lead_time/) | 18.0.1.0.1 |  | Purchase delay based on transport and supplier delays
@@ -5906,7 +5915,7 @@ addon | version | maintainers | summary
 [product_sale_manufactured_for](product_sale_manufactured_for/) | 18.0.1.0.0 |  | Allows to indicate in products that they were made specifically for some customers.
 [product_secondary_unit](product_secondary_unit/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set a secondary unit per product
 [product_sequence](product_sequence/) | 18.0.1.0.0 |  | Product Sequence
-[product_set](product_set/) | 18.0.1.1.0 |  | Product set
+[product_set](product_set/) | 18.0.1.2.0 |  | Product set
 [product_state](product_state/) | 18.0.1.0.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Module introducing a state field on product template
 [product_state_sale](product_state_sale/) | 18.0.1.0.0 |  | This module add the use of Product State in Sale
 [product_state_stock_base](product_state_stock_base/) | 18.0.1.0.0 |  | This module add the use of Product State in Stock
@@ -6607,7 +6616,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_comment_template](base_comment_template/) | 18.0.1.0.1 |  | Add conditional mako template to any reporton models that inherits comment.template.
-[bi_sql_editor](bi_sql_editor/) | 18.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[bi_sql_editor](bi_sql_editor/) | 18.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
 [report_csv](report_csv/) | 18.0.1.0.0 |  | Base module to create csv report
 [report_py3o](report_py3o/) | 18.0.1.0.0 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 18.0.1.0.0 |  | Report Qweb Element Page Visibility
@@ -6760,14 +6769,18 @@ addon | version | maintainers | summary
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 18.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Automatically delete old mail messages and attachments
 [base_cron_exclusion](base_cron_exclusion/) | 18.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Allow you to select scheduled actions that should not run simultaneously.
 [base_exception](base_exception/) | 18.0.1.1.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
+[base_fontawesome](base_fontawesome/) | 18.0.1.0.0 |  | Up to date Fontawesome resources.
+[base_force_record_noupdate](base_force_record_noupdate/) | 18.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 18.0.1.0.0 |  | Customizations of Many2many
 [base_name_search_improved](base_name_search_improved/) | 18.0.1.0.0 |  | Friendlier search when typing in relation fields
 [base_partition](base_partition/) | 18.0.1.0.0 |  | Base module that provide the partition method on all models
+[base_search_fuzzy](base_search_fuzzy/) | 18.0.1.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 18.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
 [base_time_window](base_time_window/) | 18.0.1.0.0 |  | Base model to handle time windows
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.1 |  | Adds more operators for view inheritance
 [database_cleanup](database_cleanup/) | 18.0.1.0.0 |  | Database cleanup
+[database_size](database_size/) | 18.0.1.0.0 |  | Database Size
 [dbfilter_from_header](dbfilter_from_header/) | 18.0.1.0.0 |  | Filter databases with HTTP headers
 [html_text](html_text/) | 18.0.1.0.0 |  | Generate excerpts from any HTML field
 [jsonifier](jsonifier/) | 18.0.1.1.0 |  | JSON-ify data for all models
@@ -6780,7 +6793,7 @@ addon | version | maintainers | summary
 [session_db](session_db/) | 18.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [test_base_time_window](test_base_time_window/) | 18.0.1.0.0 |  | Test Base model to handle time windows
 [tracking_manager](tracking_manager/) | 18.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
-[upgrade_analysis](upgrade_analysis/) | 18.0.1.3.2 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
+[upgrade_analysis](upgrade_analysis/) | 18.0.1.3.4 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
 
@@ -6936,7 +6949,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_user_role](base_user_role/) | 18.0.1.0.2 | [![sebalix](https://github.com/sebalix.png?size=30px)](https://github.com/sebalix) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) [![novawish](https://github.com/novawish.png?size=30px)](https://github.com/novawish) | User roles
-[base_user_role_company](base_user_role_company/) | 18.0.1.0.1 |  | User roles by company
+[base_user_role_company](base_user_role_company/) | 18.0.1.0.2 |  | User roles by company
 
 [//]: # (end addons)
 
@@ -7041,6 +7054,7 @@ addon | version | maintainers | summary
 [base_tier_validation_formula](base_tier_validation_formula/) | 18.0.1.0.0 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
 [date_range](date_range/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
+[date_range_account](date_range_account/) | 18.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add Date Range menu entry in Invoicing app
 [developer_menu](developer_menu/) | 18.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Menu Shortcut for developer usage
 [mail_message_destiny_link_template](mail_message_destiny_link_template/) | 18.0.1.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Mail template to show destiny records in chatter.
 [sequence_check_digit](sequence_check_digit/) | 18.0.1.0.1 |  | Adds a check digit on sequences
@@ -7181,7 +7195,11 @@ interface-github
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[github_connector](github_connector/) | 18.0.1.0.0 |  | Synchronize information from Github repositories
 
 [//]: # (end addons)
 
@@ -7269,7 +7287,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 18.0.1.0.0 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 18.0.1.1.0 |  | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_auth_api_key](base_rest_auth_api_key/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Base Rest: Add support for the auth_api_key security policy into the openapi documentation
 [extendable](extendable/) | 18.0.1.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Extendable classes registry loader for Odoo
 [fastapi](fastapi/) | 18.0.1.0.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Odoo FastAPI endpoint
@@ -7852,6 +7870,7 @@ addon | version | maintainers | summary
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 18.0.1.0.1 |  | This module adds support for dynamic dropdown widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 18.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ThiagoMForgeFlow](https://github.com/ThiagoMForgeFlow.png?size=30px)](https://github.com/ThiagoMForgeFlow) | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 18.0.1.0.2 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Web Widget Numeric Step
+[web_widget_open_tab](web_widget_open_tab/) | 18.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_product_label_section_and_note_name_visibility](web_widget_product_label_section_and_note_name_visibility/) | 18.0.1.0.0 | [![carlos-lopez-tecnativa](https://github.com/carlos-lopez-tecnativa.png?size=30px)](https://github.com/carlos-lopez-tecnativa) | Alternate the visibility of the product and description.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 18.0.1.0.4 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) [![DavidJForgeFlow](https://github.com/DavidJForgeFlow.png?size=30px)](https://github.com/DavidJForgeFlow) | Show list fields as a matrix
 

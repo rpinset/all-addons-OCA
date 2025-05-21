@@ -3,7 +3,7 @@
 
 {
     "name": "Stock Move Quantity Product UOM",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.2",
     "category": "Inventory/Inventory",
     "license": "LGPL-3",
     "development_status": "Production/Stable",
@@ -12,4 +12,6 @@
     "website": "https://github.com/OCA/stock-logistics-workflow",
     "depends": ["stock"],
     "installable": True,
+    "pre_init_hook": "pre_init_quantity_product_uom",
+    "post_init_hook": "post_init_quantity_product_uom",
 }
