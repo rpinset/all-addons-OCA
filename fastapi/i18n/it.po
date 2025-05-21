@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-04 09:06+0000\n"
+"PO-Revision-Date: 2025-05-20 10:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: fastapi
 #: model:ir.model.fields,help:fastapi.field_fastapi_endpoint__description
@@ -104,7 +104,7 @@ msgstr "FastAPI"
 #: model:ir.model,name:fastapi.model_fastapi_endpoint
 #: model:ir.ui.menu,name:fastapi.fastapi_endpoint_menu
 msgid "FastAPI Endpoint"
-msgstr "Endopoint FastAPI"
+msgstr "Endpoint FastAPI"
 
 #. module: fastapi
 #: model:res.groups,name:fastapi.group_fastapi_endpoint_runner
