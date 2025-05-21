@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-19 13:26+0000\n"
-"PO-Revision-Date: 2023-12-24 19:37+0000\n"
+"PO-Revision-Date: 2025-05-18 09:27+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_vat_registries
 #: model_terms:ir.actions.act_window,help:l10n_it_vat_registries.action_account_tax_registry_form
@@ -109,7 +109,7 @@ msgstr "ID"
 #. module: l10n_it_vat_registries
 #: model_terms:ir.ui.view,arch_db:l10n_it_vat_registries.report_registro_iva
 msgid "INV. DATE"
-msgstr "DATA FATTURA"
+msgstr "DATA FATT."
 
 #. module: l10n_it_vat_registries
 #: model_terms:ir.ui.view,arch_db:l10n_it_vat_registries.report_registro_iva

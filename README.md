@@ -80,16 +80,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit e3e2dfdb544cde38088a016178b9fd6970286735
+commit c3994e4dd06689cf062369325442caf16c3cb147
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 12 06:41:55 2025 +0000
+Date:   Mon May 19 06:44:13 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 83.3% (5 of 6 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_fiscal_year
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_fiscal_year/it/
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_lock_date_update
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_lock_date_update/it/
 
 
 ## account-financial-reporting
@@ -824,16 +824,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 96e2942a132bdca1ee8ca881e90a62e7deba979a
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Apr 7 13:43:42 2025 +0000
+commit b1a05a44f9693bc5bad17248a25a3e1d4b585b99
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sun May 18 06:35:41 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (2 of 2 strings)
+    Currently translated at 100.0% (59 of 59 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa_out_oss
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa_out_oss/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_vat_registries
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_vat_registries/it/
 
 
 ## l10n-japan
@@ -1161,9 +1161,9 @@ Date:   Tue Mar 11 16:49:34 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit eb2d9238b74ac370f5e5ee89f68bcc533b635bdc
+commit 83ca6321e93d21c37d48d4a7fa0e994b1b99b4c8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Mar 3 08:31:31 2025 +0000
+Date:   Tue May 20 13:40:07 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1382,11 +1382,16 @@ Date:   Tue Nov 19 21:18:58 2019 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit c94ad09e9cf6725af9e98edf6bcadf1677eade0b
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:03:09 2025 +0000
+commit fa80d3681a84e3895c886f9d930f2edb7a2f195d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 20 07:00:57 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 61.1% (52 of 85 strings)
+    
+    Translation: server-tools-12.0/server-tools-12.0-auto_backup
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-12-0/server-tools-12-0-auto_backup/it/
 
 
 ## server-auth
