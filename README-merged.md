@@ -2445,7 +2445,7 @@ addon | version | maintainers | summary
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 14.0.1.1.6 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 14.0.1.0.3 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules with discount
 [sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 14.0.1.0.12 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Sale Commission Product Criteria Domain
-[sale_commission_queued](sale_commission_queued/) | 14.0.1.1.0 | [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales commissions queued
+[sale_commission_queued](sale_commission_queued/) | 14.0.1.1.1 | [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales commissions queued
 [sale_commission_salesman](sale_commission_salesman/) | 14.0.1.0.1 |  | Sales commissions from salesman
 [sale_commission_settlement_report](sale_commission_settlement_report/) | 14.0.1.0.0 | [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Settings to customize the settlement report
 [sale_quick_commission](sale_quick_commission/) | 14.0.1.0.0 |  | Makes modules compatible
@@ -3532,7 +3532,7 @@ addon | version | maintainers | summary
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
 [hr_holidays_public](hr_holidays_public/) | 14.0.2.1.3 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 14.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
-[hr_holidays_security](hr_holidays_security/) | 14.0.1.0.0 |  | Allow time-off responsibles to fully manage their team requests
+[hr_holidays_security](hr_holidays_security/) | 14.0.1.1.0 |  | Allow time-off responsibles to fully manage their team requests
 [hr_holidays_settings](hr_holidays_settings/) | 14.0.1.0.0 |  | Enables Settings Form for HR Holidays.
 [hr_holidays_summary_email](hr_holidays_summary_email/) | 14.0.1.0.2 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Notify employees with daily or weekly leaves summaries of their company.
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 14.0.1.0.0 |  | Edit start and end of leaves using time intervals
@@ -4794,7 +4794,7 @@ addon | version | maintainers | summary
 [l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 14.0.1.0.0 |  | Gestione dati fattura elettronica del cliente all'internodell'interfaccia del POS
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
-[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.10 |  | Inversione contabile
+[l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.11 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | [![odooNextev](https://github.com/odooNextev.png?size=30px)](https://github.com/odooNextev) [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Modulo ponte tra provvigioni agenti e RiBa
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.15.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Usare gli standard CBI per SEPA Credit Transfer
@@ -8351,6 +8351,7 @@ addon | version | maintainers | summary
 [base_deterministic_session_gc](base_deterministic_session_gc/) | 14.0.1.0.0 |  | Provide a deterministic session garbage collection instead of the default random one
 [base_exception](base_exception/) | 14.0.2.1.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 14.0.5.15.5 |  | Up to date Fontawesome resources.
+[base_force_record_noupdate](base_force_record_noupdate/) | 14.0.1.0.0 |  | Manually force noupdate=True on models
 [base_future_response](base_future_response/) | 14.0.1.0.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Backport Odoo 16 FutureReponse mechanism.
 [base_generate_code](base_generate_code/) | 14.0.1.1.1 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Code Generator
 [base_import_odoo](base_import_odoo/) | 14.0.1.0.0 |  | Import records from another Odoo instance

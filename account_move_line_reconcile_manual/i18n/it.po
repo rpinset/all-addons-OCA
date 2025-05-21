@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-05-20 17:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_move_line_reconcile_manual
 #: model:ir.model.fields,field_description:account_move_line_reconcile_manual.field_account_move_line_reconcile_manual__count
@@ -96,7 +98,7 @@ msgstr ""
 #. module: account_move_line_reconcile_manual
 #: model:ir.model.fields,field_description:account_move_line_reconcile_manual.field_account_move_line_reconcile_manual__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_move_line_reconcile_manual
 #: model:ir.model.fields.selection,name:account_move_line_reconcile_manual.selection__account_move_line_reconcile_manual__writeoff_type__income

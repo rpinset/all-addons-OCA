@@ -1,6 +1,6 @@
 {
     "name": "Sales commissions queued",
-    "version": "14.0.1.1.0",
+    "version": "14.0.1.1.1",
     "author": "Ilyas, Ooops404," "Odoo Community Association (OCA)",
     "category": "Sales Management",
     "license": "AGPL-3",
@@ -9,6 +9,7 @@
     "maintainers": ["renda-dev", "aleuffre"],
     "data": [
         "wizard/wizard_invoice.xml",
+        "wizard/wizard_settle.xml",
     ],
     "installable": True,
 }

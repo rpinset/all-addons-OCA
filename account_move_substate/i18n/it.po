@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-05-21 07:55+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_move_substate
 #: model:mail.template,body_html:account_move_substate.mail_template_data_account_move_substate_verified
@@ -70,7 +72,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_move_substate.field_account_move__id
 #: model:ir.model.fields,field_description:account_move_substate.field_base_substate_type__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_move_substate
 #: model:ir.model,name:account_move_substate.model_account_move
@@ -81,7 +83,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_move_substate.field_account_move____last_update
 #: model:ir.model.fields,field_description:account_move_substate.field_base_substate_type____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_move_substate
 #: model:target.state.value,name:account_move_substate.target_state_value_posted

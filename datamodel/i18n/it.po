@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-14 15:06+0000\n"
+"PO-Revision-Date: 2025-05-20 10:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,12 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: datamodel
 #: model:ir.model,name:datamodel.model_datamodel_builder
 msgid "Datamodel Builder"
-msgstr ""
+msgstr "Costruttore datamodel"
 
 #. module: datamodel
 #: model:ir.model.fields,field_description:datamodel.field_datamodel_builder__display_name
@@ -29,9 +29,9 @@ msgstr "Nome visualizzato"
 #. module: datamodel
 #: model:ir.model.fields,field_description:datamodel.field_datamodel_builder__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: datamodel
 #: model:ir.model.fields,field_description:datamodel.field_datamodel_builder____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"

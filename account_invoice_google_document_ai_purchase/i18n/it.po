@@ -1,0 +1,43 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_invoice_google_document_ai_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-05-19 09:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: account_invoice_google_document_ai_purchase
+#: model:ir.model,name:account_invoice_google_document_ai_purchase.model_account_move_google_document_ai
+msgid "Account Move Google Document Ai Functions"
+msgstr "Funzioni AI documento Google movimento contabile"
+
+#. module: account_invoice_google_document_ai_purchase
+#: model:ir.model.fields,field_description:account_invoice_google_document_ai_purchase.field_account_move_google_document_ai__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: account_invoice_google_document_ai_purchase
+#: model:ir.model.fields,field_description:account_invoice_google_document_ai_purchase.field_account_move_google_document_ai__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_invoice_google_document_ai_purchase
+#: model:ir.model.fields,field_description:account_invoice_google_document_ai_purchase.field_account_move_google_document_ai____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: account_invoice_google_document_ai_purchase
+#: code:addons/account_invoice_google_document_ai_purchase/models/account_move_google_document_ai.py:0
+#, python-format
+msgid "Purchase Order %s cannot be processed"
+msgstr "L'ordine di acquisto %s non può essere elaborato"

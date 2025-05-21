@@ -3,7 +3,7 @@
 {
     "name": "HR Holidays Security",
     "summary": "Allow time-off responsibles to fully manage their team requests",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.1.0",
     "license": "AGPL-3",
     "category": "Human Resources",
     "author": "Tecnativa, Odoo Community Association (OCA),",

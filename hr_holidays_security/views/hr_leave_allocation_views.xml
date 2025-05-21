@@ -35,4 +35,24 @@
             </field>
         </field>
     </record>
+    <record id="hr_leave_allocation_view_form_user" model="ir.ui.view">
+        <field name="model">hr.leave.allocation</field>
+        <field
+            name="inherit_id"
+            ref="hr_holidays_security.hr_leave_allocation_view_form_manager"
+        />
+        <field
+            name="groups_id"
+            eval="[(4, ref('hr_holidays.group_hr_holidays_user'))]"
+        />
+        <field name="arch" type="xml">
+            <!-- It is important to leave the employee's domain empty so that the user with
+            the All Approver permission can see all employees and select any of
+            them. !-->
+            <field name="employee_id" position="attributes">
+                <attribute name="domain" />
+            </field>
+
+        </field>
+    </record>
 </odoo>
