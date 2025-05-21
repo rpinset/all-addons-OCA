@@ -1156,11 +1156,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ca8a80c43494c631f11e363569eff60510bf7fcb
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:14:35 2025 +0000
+commit 806f46e47be20470c3913cafa0e51104632abf5d
+Author: Víctor Martínez <victor.martinez@tecnativa.com>
+Date:   Tue May 20 15:41:33 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: delivery-carrier-13.0/delivery-carrier-13.0-delivery_carrier_partner
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-13-0/delivery-carrier-13-0-delivery_carrier_partner/es/
 
 
 ## stock-logistics-barcode
@@ -1492,11 +1497,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit e6a04a753260c1f6de6da80c4cba0ee4d91ec1b8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Feb 1 21:28:57 2025 +0000
+commit 2a104d12ebce5128dcda51feea60c86333ecd57c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 20 07:00:59 2025 +0000
 
-    [IMP] update dotfiles
+    Translated using Weblate (Italian)
+    
+    Currently translated at 60.4% (52 of 86 strings)
+    
+    Translation: server-tools-13.0/server-tools-13.0-auto_backup
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-13-0/server-tools-13-0-auto_backup/it/
 
 
 ## server-auth
