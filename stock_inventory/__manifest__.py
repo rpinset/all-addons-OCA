@@ -1,6 +1,6 @@
 {
     "name": "Stock Inventory Adjustment",
-    "version": "15.0.2.5.0",
+    "version": "15.0.2.5.1",
     "license": "LGPL-3",
     "maintainer": ["DavidJForgeFlow"],
     "development_status": "Beta",

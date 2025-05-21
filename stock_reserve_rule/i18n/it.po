@@ -65,9 +65,11 @@ msgstr ""
 #. module: stock_reserve_rule
 #: model:ir.model.fields,help:stock_reserve_rule.field_stock_reserve_rule_removal__removal_strategy
 msgid ""
-"Defines if and how goods are taken from locations.Default: take the first ones with the configured Removal Strategy(FIFO, FEFO, ...).\n"
+"Defines if and how goods are taken from locations.Default: take the first "
+"ones with the configured Removal Strategy(FIFO, FEFO, ...).\n"
 "Empty Bins: take goods from a location only if the bin is empty afterwards.\n"
-"Full Packaging: take goods from a location only if the location quantity matches a packaging quantity (do not open boxes)."
+"Full Packaging: take goods from a location only if the location quantity "
+"matches a packaging quantity (do not open boxes)."
 msgstr ""
 
 #. module: stock_reserve_rule
@@ -102,6 +104,12 @@ msgstr ""
 #. module: stock_reserve_rule
 #: model:ir.model.fields.selection,name:stock_reserve_rule.selection__stock_reserve_rule_removal__removal_strategy__packaging
 msgid "Full Packaging"
+msgstr ""
+
+#. module: stock_reserve_rule
+#: model:product.product,name:stock_reserve_rule.product_funky_socks
+#: model:product.template,name:stock_reserve_rule.product_funky_socks_product_template
+msgid "Funky Socks"
 msgstr ""
 
 #. module: stock_reserve_rule
@@ -181,8 +189,8 @@ msgstr ""
 #: code:addons/stock_reserve_rule/models/stock_reserve_rule.py:0
 #, python-format
 msgid ""
-"Removal rule '%(rule_name)s' location has to be a child of the rule location"
-" '%(rule_location_name)s'."
+"Removal rule '%(rule_name)s' location has to be a child of the rule location "
+"'%(rule_location_name)s'."
 msgstr ""
 
 #. module: stock_reserve_rule
@@ -246,4 +254,10 @@ msgstr ""
 #. module: stock_reserve_rule
 #: model:ir.model,name:stock_reserve_rule.model_stock_reserve_rule_removal
 msgid "Stock Reservation Rule Removal"
+msgstr ""
+
+#. module: stock_reserve_rule
+#: model:product.product,uom_name:stock_reserve_rule.product_funky_socks
+#: model:product.template,uom_name:stock_reserve_rule.product_funky_socks_product_template
+msgid "Units"
 msgstr ""

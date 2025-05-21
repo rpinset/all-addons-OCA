@@ -70,16 +70,16 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 8372311c2fd73d6eca6785b7d50d37838d7089eb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:44:16 2025 +0000
+commit 84b6b1cfc5575a9a8afc7e91e255b64e6613a368
+Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
+Date:   Wed May 21 08:00:48 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Danish)
     
-    Currently translated at 72.7% (64 of 88 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_check_deposit
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_check_deposit/it/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_move_print
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_move_print/da/
 
 
 ## account-financial-reporting
@@ -483,30 +483,20 @@ Date:   Mon May 12 15:07:12 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 54710186ad4390eafdbe457bb0d7443be7daf1c5
-Author: Weblate <noreply@weblate.org>
-Date:   Tue May 13 08:01:47 2025 +0000
+commit df1dde4fdd4cefc0635e3a19483d6f9c125eb620
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 21 12:45:38 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-15.0/edi-15.0-base_import_pdf_by_template
-    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-base_import_pdf_by_template/
+    [BOT] post-merge updates
 
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 305685ead0290cc47c584c9f1d46e4c3445fc1fe
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri May 16 06:40:44 2025 +0000
+commit 9d151c06a713b2ccceecfeaa6f4138c435c218d7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun May 18 17:56:20 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 97.1% (583 of 600 strings)
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice/it/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1085,11 +1075,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 6c43ef54f88561a43def2bd8481837ebd09784f1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Feb 24 11:22:50 2025 +0000
+commit 4198798880db6c96286450a0791dbbc2ae15adf4
+Author: Weblate <noreply@weblate.org>
+Date:   Wed May 21 08:49:52 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_reserve_rule
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_reserve_rule/
 
 
 ## stock-logistics-reporting
@@ -1259,16 +1254,16 @@ Date:   Sun Feb 2 20:17:28 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 4a2a5c7db056fc6d234d1722351e449c9d63085d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Feb 14 14:31:49 2025 +0000
+commit a7224a09756fa37e5f596f7e871a60cc5a43d55f
+Author: Weblate <noreply@weblate.org>
+Date:   Tue May 20 14:22:46 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: project-15.0/project-15.0-project_forecast_line_holidays_public
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_forecast_line_holidays_public/it/
+    Translation: project-15.0/project-15.0-project_wbs
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_wbs/
 
 
 ## project-agile
@@ -1396,11 +1391,16 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 2a4ddf4f53586612ffb2558f2ef8457ef9979900
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jan 29 18:14:19 2025 +0000
+commit 397523584db165a4b18a5b8ef0af41aeee4d8380
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue May 20 07:01:07 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 87.0% (74 of 85 strings)
+    
+    Translation: server-tools-15.0/server-tools-15.0-auto_backup
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-auto_backup/it/
 
 
 ## server-auth

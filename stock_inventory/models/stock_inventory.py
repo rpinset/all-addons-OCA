@@ -124,7 +124,7 @@ class InventoryAdjustmentsGroup(models.Model):
     )
 
     count_stock_quants_string = fields.Char(
-        compute="_compute_count_stock_quants", string="Adjustments"
+        compute="_compute_count_stock_quants", string="Adjustments Count"
     )
 
     count_stock_moves = fields.Integer(

@@ -104,6 +104,12 @@ msgid "Full Packaging"
 msgstr ""
 
 #. module: stock_reserve_rule
+#: model:product.product,name:stock_reserve_rule.product_funky_socks
+#: model:product.template,name:stock_reserve_rule.product_funky_socks_product_template
+msgid "Funky Socks"
+msgstr ""
+
+#. module: stock_reserve_rule
 #: model:ir.model.fields,field_description:stock_reserve_rule.field_stock_reserve_rule__id
 #: model:ir.model.fields,field_description:stock_reserve_rule.field_stock_reserve_rule_removal__id
 msgid "ID"
@@ -245,4 +251,10 @@ msgstr ""
 #. module: stock_reserve_rule
 #: model:ir.model,name:stock_reserve_rule.model_stock_reserve_rule_removal
 msgid "Stock Reservation Rule Removal"
+msgstr ""
+
+#. module: stock_reserve_rule
+#: model:product.product,uom_name:stock_reserve_rule.product_funky_socks
+#: model:product.template,uom_name:stock_reserve_rule.product_funky_socks_product_template
+msgid "Units"
 msgstr ""
