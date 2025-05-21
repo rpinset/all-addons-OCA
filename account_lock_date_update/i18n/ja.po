@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-28 23:24+0000\n"
-"PO-Revision-Date: 2017-11-28 23:24+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
+"PO-Revision-Date: 2025-05-21 07:25+0000\n"
+"Last-Translator: Sayaka-qrtl <sayaka@quartile.co>\n"
 "Language-Team: Japanese (https://www.transifex.com/oca/teams/23907/ja/)\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_lock_date_update
 #: model_terms:ir.ui.view,arch_db:account_lock_date_update.account_update_lock_date_form_view
@@ -66,26 +67,27 @@ msgstr "最終更新日"
 #. module: account_lock_date_update
 #: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__fiscalyear_lock_date
 msgid "Lock Date for All Users"
-msgstr ""
+msgstr "全てのユーザに対するロック日"
 
 #. module: account_lock_date_update
 #: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__period_lock_date
 msgid "Lock Date for Non-Advisers"
-msgstr ""
+msgstr "アドバイザ以外のユーザに対するロック日"
 
 #. module: account_lock_date_update
 #: model:ir.model.fields,help:account_lock_date_update.field_account_update_lock_date__tax_lock_date
 msgid ""
 "No users can edit journal entries related to a tax prior and inclusive of "
 "this date."
-msgstr ""
+msgstr "全てのユーザが、この日以前の税に関する仕訳を編集できなくなります。"
 
 #. module: account_lock_date_update
 #: model:ir.model.fields,help:account_lock_date_update.field_account_update_lock_date__fiscalyear_lock_date
 msgid ""
 "No users, including Advisers, can edit accounts prior to and inclusive of "
 "this date. Use it for fiscal year locking for example."
-msgstr ""
+msgstr "アドバイザを含む全てのユーザが、この日以前の仕訳を編集できなくなります。例え"
+"ば、会計年度の締め処理に使用します。"
 
 #. module: account_lock_date_update
 #: model:ir.model.fields,help:account_lock_date_update.field_account_update_lock_date__period_lock_date
@@ -93,32 +95,33 @@ msgid ""
 "Only users with the 'Adviser' role can edit accounts prior to and inclusive "
 "of this date. Use it for period locking inside an open fiscal year, for "
 "example."
-msgstr ""
+msgstr "アドバイザのみが、この日以前の仕訳を編集できるようになります。例えば、締める"
+"前の会計年度で特定期間をロックするために使用します。"
 
 #. module: account_lock_date_update
 #: model:ir.model.fields,field_description:account_lock_date_update.field_account_update_lock_date__tax_lock_date
 msgid "Tax Lock Date"
-msgstr ""
+msgstr "税ロック日"
 
 #. module: account_lock_date_update
 #: model_terms:ir.ui.view,arch_db:account_lock_date_update.account_update_lock_date_form_view
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #. module: account_lock_date_update
 #: model:ir.actions.act_window,name:account_lock_date_update.account_update_lock_date_act_window
 #: model:ir.ui.menu,name:account_lock_date_update.account_update_lock_date_menu
 msgid "Update Lock Dates"
-msgstr ""
+msgstr "ロック日を更新"
 
 #. module: account_lock_date_update
 #: model:ir.model,name:account_lock_date_update.model_account_update_lock_date
 msgid "Wizard to Update Accounting Lock Dates"
-msgstr ""
+msgstr "会計ロック日を更新するウィザード"
 
 #. module: account_lock_date_update
 #. odoo-python
 #: code:addons/account_lock_date_update/wizards/account_update_lock_date.py:0
 #, python-format
 msgid "You are not allowed to execute this action."
-msgstr ""
+msgstr "この操作を実行する権限がありません。"

@@ -699,11 +699,8 @@ class StockDeliveryNote(models.Model):
                 raise UserError(
                     _("%s hasn't sale order!") % delivery_note_id.display_name
                 )
-            if (
-                len(
-                    delivery_note_id.mapped("sale_ids.picking_ids.picking_type_id.code")
-                )
-                > 1
+            if "incoming" in delivery_note_id.mapped(
+                "sale_ids.picking_ids.picking_type_id.code"
             ):
                 raise UserError(
                     _(

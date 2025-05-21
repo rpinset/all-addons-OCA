@@ -6,13 +6,12 @@
     "summary": """
         Allows to define an end date (and time) on a release channel and
         propagate it to the concerned pickings""",
-    "version": "16.0.1.1.0",
+    "version": "16.0.2.0.0",
     "license": "AGPL-3",
     "maintainers": ["jbaudoux"],
     "author": "Camptocamp, BCIM, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/wms",
     "depends": [
-        "sale",
         "stock_partner_delivery_window",
         "stock_release_channel_shipment_lead_time",
     ],

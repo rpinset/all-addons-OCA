@@ -8,8 +8,11 @@ class HrLeaveType(models.Model):
     _inherit = "hr.leave.type"
 
     request_unit = fields.Selection(
-        selection_add=[("natural_day", "Natural day")],
-        ondelete={"natural_day": "set default"},
+        selection_add=[
+            ("natural_day", "Natural day"),
+            ("natural_day_half_day", "Natural day (Half Day)"),
+        ],
+        ondelete={"natural_day": "set default", "natural_day_half_day": "set default"},
     )
 
     def _get_employees_days_per_allocation(self, employee_ids, date=None):
@@ -20,7 +23,9 @@ class HrLeaveType(models.Model):
         hr_holidays/models/hr_leave_type.py#L389
         """
         old_request_unit_data = {}
-        for item in self.filtered(lambda x: x.request_unit == "natural_day"):
+        for item in self.filtered(
+            lambda x: x.request_unit in ("natural_day", "natural_day_half_day")
+        ):
             old_request_unit_data[item.id] = item.request_unit
             item.sudo().request_unit = "day"
         res = super()._get_employees_days_per_allocation(

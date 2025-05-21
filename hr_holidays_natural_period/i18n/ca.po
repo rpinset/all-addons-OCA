@@ -22,6 +22,11 @@ msgid "Natural day"
 msgstr "Dia natural"
 
 #. module: hr_holidays_natural_period
+#: model:ir.model.fields.selection,name:hr_holidays_natural_period.selection__hr_leave_type__request_unit__natural_day_half_day
+msgid "Natural day (Half Day)"
+msgstr ""
+
+#. module: hr_holidays_natural_period
 #: model:ir.model,name:hr_holidays_natural_period.model_resource_calendar
 msgid "Resource Working Time"
 msgstr "Temps de treball dels recursos"

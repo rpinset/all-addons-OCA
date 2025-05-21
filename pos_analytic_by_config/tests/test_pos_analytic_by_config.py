@@ -12,11 +12,7 @@ class TestPosAnalyticConfig(TestPointOfSaleCommon, TestPoSCommon):
     def setUpClass(cls):
         super().setUpClass()
         cls.env.user.groups_id += cls.env.ref("analytic.group_analytic_accounting")
-        cls.analytic_plan = cls.env["account.analytic.plan"].create(
-            {
-                "name": "Stores",
-            }
-        )
+        cls.analytic_plan = cls.env["account.analytic.plan"].create({"name": "Stores"})
         cls.env["account.analytic.applicability"].create(
             {
                 "business_domain": "general",
