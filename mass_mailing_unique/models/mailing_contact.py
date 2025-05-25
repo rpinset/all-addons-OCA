@@ -12,6 +12,10 @@ class MailingContact(models.Model):
         (
             "unique_email",
             "UNIQUE(email_normalized)",
-            "There's already a contact with this email address",
+            (
+                "There's already an existing mailing contact"
+                " with this email address. \n"
+                "Delete that existing record or change its email field value."
+            ),
         )
     ]

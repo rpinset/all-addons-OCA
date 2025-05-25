@@ -26,18 +26,6 @@ def migrate(env, version):
     pos_configs = env["pos.config"].browse([pc.id for pc in pos_configs_dict.keys()])
     for company in pos_configs.company_id:
         company_configs = pos_configs.filtered(lambda x: x.company_id == company)
-        default_account_revenue = env["account.account"].search(
-            [
-                ("company_id", "=", company.id),
-                ("account_type", "=", "income"),
-                (
-                    "id",
-                    "!=",
-                    company.account_journal_early_pay_discount_gain_account_id.id,
-                ),
-            ],
-            limit=1,
-        )
         analytic_plan = env["account.analytic.plan"].create(
             {
                 "name": "Stores",
@@ -57,7 +45,7 @@ def migrate(env, version):
             analytic_account.plan_id = analytic_plan.id
             env["account.analytic.distribution.model"].create(
                 {
-                    "account_prefix": default_account_revenue.code[:3],
+                    "account_prefix": "",
                     "pos_config_id": config.id,
                     "analytic_distribution": {analytic_account.id: 100},
                     "company_id": company.id,

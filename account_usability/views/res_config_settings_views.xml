@@ -28,6 +28,33 @@
                     </div>
                 </div>
             </div>
+            <div id="accounting_reports" position="after">
+                    <div
+                    class="row mt16 o_settings_container"
+                    id="fiscalyear_last_day_month"
+                >
+                            <div class="o_setting_left_pane" />
+                            <div class="o_setting_right_pane">
+                                    <label
+                            string="Fiscal Year Last Day"
+                            for="fiscalyear_last_day"
+                        />
+                                    <div>
+                                            <field
+                                name="fiscalyear_last_day"
+                                class="oe_inline"
+                            />
+                                            <field
+                                name="fiscalyear_last_month"
+                                class="oe_inline"
+                            />
+                                    </div>
+                                    <div class="text-muted">
+                                            Type the day and select the month of the last day of the company's fiscal year.
+                                    </div>
+                                </div>
+                    </div>
+            </div>
         </field>
     </record>
 </odoo>

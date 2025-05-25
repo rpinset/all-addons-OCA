@@ -28,7 +28,7 @@ class TestPosAnalyticConfig(TestPointOfSaleCommon, TestPoSCommon):
         )
         cls.env["account.analytic.distribution.model"].create(
             {
-                "account_prefix": cls.sales_account.code,
+                "account_prefix": "",
                 "pos_config_id": cls.basic_config.id,
                 "analytic_distribution": {cls.analytic_account.id: 100},
             }

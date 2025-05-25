@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-04 03:40+0000\n"
-"PO-Revision-Date: 2023-12-19 16:34+0000\n"
+"PO-Revision-Date: 2025-05-24 13:53+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,30 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mass_mailing_unique
 #: model:ir.model.constraint,message:mass_mailing_unique.constraint_mailing_list_unique_name
 msgid "Cannot have more than one lists with the same name."
 msgstr "Non è possibile avere più di una lista con lo stesso nome."
-
-#. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact__display_name
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list__display_name
-msgid "Display Name"
-msgstr "Nome visualizzato"
-
-#. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact__id
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list__id
-msgid "ID"
-msgstr "ID"
-
-#. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact____last_update
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
 
 #. module: mass_mailing_unique
 #: model:ir.model,name:mass_mailing_unique.model_mailing_contact
@@ -54,10 +36,15 @@ msgstr "Mailing list"
 
 #. module: mass_mailing_unique
 #: model:ir.model.constraint,message:mass_mailing_unique.constraint_mailing_contact_unique_email
-msgid "There's already a contact with this email address"
-msgstr "Esiste già un contatto con questo indirizzo e-mail"
+msgid ""
+"There's already an existing mailing contact with this email address. \n"
+"Delete that existing record or change its email field value."
+msgstr ""
+"Esiste già un contatto di posta con questo indirizzo e-mail. \n"
+"Eliminare il record esistente o modificare il valore del campo email."
 
 #. module: mass_mailing_unique
+#. odoo-python
 #: code:addons/mass_mailing_unique/hooks.py:0
 #, python-format
 msgid ""
@@ -66,6 +53,18 @@ msgid ""
 msgstr ""
 "Non è possibile installare il modlo mass_mailing_unique:\n"
 "%s"
+
+#~ msgid "Display Name"
+#~ msgstr "Nome visualizzato"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"
+
+#~ msgid "There's already a contact with this email address"
+#~ msgstr "Esiste già un contatto con questo indirizzo e-mail"
 
 #, python-format
 #~ msgid ""

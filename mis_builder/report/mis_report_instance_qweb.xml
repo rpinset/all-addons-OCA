@@ -17,6 +17,7 @@
             <t t-foreach="docs" t-as="o">
                 <t t-call="web.internal_layout">
                     <t t-set="matrix" t-value="o._compute_matrix()" />
+                    <t t-set="notes" t-value="o.get_notes_by_cell_id()" />
                     <t t-set="style_obj" t-value="o.env['mis.report.style']" />
                     <div class="page">
                         <h3>
@@ -97,11 +98,33 @@
                                                 <t
                                                     t-out="cell and cell.val_rendered or ''"
                                                 />
+                                                <span
+                                                    class="oe_mis_builder_footnote"
+                                                    t-if="cell"
+                                                >
+                                                    <t
+                                                        t-out="notes.get(cell.cell_id,{}).get('sequence','')"
+                                                    />
+                                                </span>
                                             </div>
                                         </t>
                                     </div>
                                 </t>
                             </div>
+                        </div>
+                        <!-- Foot notes -->
+                        <div class="oe_mis_builder_footnote_div">
+                            <table class="oe_mis_builder_footnote_table">
+                                <t
+                                    t-foreach="sorted(notes.values(),key=lambda r:r['sequence'])"
+                                    t-as="note"
+                                >
+                                    <tr>
+                                        <td><t t-out="note['sequence']" />. </td>
+                                        <td><t t-out="note['text']" /></td>
+                                    </tr>
+                                </t>
+                            </table>
                         </div>
                     </div>
                 </t>

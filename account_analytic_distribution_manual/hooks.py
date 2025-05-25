@@ -166,6 +166,7 @@ def post_init_hook(cr, registry):
             if (
                 res_model_name in env
                 and "manual_distribution_id" in env[res_model_name]._fields
+                and all_tag_ids
             ):
                 sql = f"""
                 SELECT {column1}, {column2}

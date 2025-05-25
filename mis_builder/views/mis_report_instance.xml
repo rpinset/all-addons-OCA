@@ -195,6 +195,7 @@
                                 <field name="landscape_pdf" />
                                 <field name="no_auto_expand_accounts" />
                                 <field name="display_columns_description" />
+                                <field name="wide_display_by_default" />
                             </group>
                         </page>
                         <page string="Widget">

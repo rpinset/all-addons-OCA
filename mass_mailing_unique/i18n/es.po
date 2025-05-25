@@ -25,24 +25,6 @@ msgid "Cannot have more than one lists with the same name."
 msgstr "No se puede tener más de una lista con el mismo nombre."
 
 #. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact__display_name
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list__display_name
-msgid "Display Name"
-msgstr "Mostrar Nombre"
-
-#. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact__id
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list__id
-msgid "ID"
-msgstr "ID"
-
-#. module: mass_mailing_unique
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_contact____last_update
-#: model:ir.model.fields,field_description:mass_mailing_unique.field_mailing_list____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
-
-#. module: mass_mailing_unique
 #: model:ir.model,name:mass_mailing_unique.model_mailing_contact
 msgid "Mailing Contact"
 msgstr "Contacto por Correo"
@@ -54,10 +36,13 @@ msgstr "Lista de correo"
 
 #. module: mass_mailing_unique
 #: model:ir.model.constraint,message:mass_mailing_unique.constraint_mailing_contact_unique_email
-msgid "There's already a contact with this email address"
-msgstr "Ya hay un contacto con esta dirección de correo electrónico"
+msgid ""
+"There's already an existing mailing contact with this email address. \n"
+"Delete that existing record or change its email field value."
+msgstr ""
 
 #. module: mass_mailing_unique
+#. odoo-python
 #: code:addons/mass_mailing_unique/hooks.py:0
 #, python-format
 msgid ""
@@ -66,6 +51,18 @@ msgid ""
 msgstr ""
 "No se ha podido instalar el módulo mass_mailing_unique:\n"
 "%s"
+
+#~ msgid "Display Name"
+#~ msgstr "Mostrar Nombre"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"
+
+#~ msgid "There's already a contact with this email address"
+#~ msgstr "Ya hay un contacto con esta dirección de correo electrónico"
 
 #~ msgid "Mass Mailing Contact"
 #~ msgstr "Contacto de envío masivo"

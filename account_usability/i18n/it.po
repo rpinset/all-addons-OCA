@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-12-17 15:06+0000\n"
+"PO-Revision-Date: 2025-05-24 13:24+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_usability
 #: model:ir.model,name:account_usability.model_account_group
@@ -116,6 +116,21 @@ msgid "Fiscal Position Templates"
 msgstr "Modelli posizioni fiscali"
 
 #. module: account_usability
+#: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
+msgid "Fiscal Year Last Day"
+msgstr "Ultimo giorno anno fiscale"
+
+#. module: account_usability
+#: model:ir.model.fields,field_description:account_usability.field_res_config_settings__fiscalyear_last_day
+msgid "Fiscalyear Last Day"
+msgstr "Ultimo giorno anno fiscale"
+
+#. module: account_usability
+#: model:ir.model.fields,field_description:account_usability.field_res_config_settings__fiscalyear_last_month
+msgid "Fiscalyear Last Month"
+msgstr "Ultimo mese anno fiscale"
+
+#. module: account_usability
 #: model_terms:ir.ui.view,arch_db:account_usability.view_account_account_template_search
 #: model_terms:ir.ui.view,arch_db:account_usability.view_account_chart_template_seacrh
 msgid "Group By"
@@ -160,7 +175,8 @@ msgstr "Conto di credito"
 #: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
 msgid ""
 "Record the cost of a good as an expense when this good is\n"
-"                                invoiced to a final customer (instead of recording the cost as soon\n"
+"                                invoiced to a final customer (instead of "
+"recording the cost as soon\n"
 "                                as the product is received in stock)."
 msgstr ""
 "Registra il costo di un bene come una spesa quando tale bene\n"
@@ -196,6 +212,14 @@ msgstr "Imposte"
 #: model:ir.ui.menu,name:account_usability.menu_account_coa_settings
 msgid "Templates"
 msgstr "Modelli"
+
+#. module: account_usability
+#: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
+msgid ""
+"Type the day and select the month of the last day of the company's fiscal "
+"year."
+msgstr ""
+"Inserire la data e il mese dell'ultimo giorno dell'anno fiscale dell'azienda."
 
 #. module: account_usability
 #: model:ir.model.fields,field_description:account_usability.field_res_config_settings__anglo_saxon_accounting

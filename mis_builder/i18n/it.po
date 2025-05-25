@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-01-27 12:06+0000\n"
+"PO-Revision-Date: 2025-05-24 15:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_instance_annotation__annotation_context
+msgid ""
+"\n"
+"        Context used when adding annotation\n"
+"        "
+msgstr ""
+"\n"
+"        Context utilizzato quando si aggiungono note\n"
+"        "
 
 #. module: mis_builder
 #. odoo-python
@@ -392,6 +403,18 @@ msgid "Analytic Domain"
 msgstr "Dominio analitico"
 
 #. module: mis_builder
+#. odoo-javascript
+#: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
+#, python-format
+msgid "Annotate"
+msgstr "Annota"
+
+#. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__annotation_context
+msgid "Annotation Context"
+msgstr "Context note"
+
+#. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid "Auto expand"
 msgstr "Espansione automatica"
@@ -431,8 +454,11 @@ msgid "Bold"
 msgstr "Grassetto"
 
 #. module: mis_builder
+#. odoo-javascript
+#: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_add_to_dashboard_form_view
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
+#, python-format
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -524,6 +550,7 @@ msgstr "Modalità di confronto"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__create_uid
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__create_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__create_uid
@@ -539,6 +566,7 @@ msgstr "Creato da"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__create_date
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__create_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__create_date
@@ -655,6 +683,7 @@ msgstr "Mostra Descrizione Colonna"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__display_name
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__display_name
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__display_name
@@ -913,6 +942,7 @@ msgstr "Eredita Nascondi Vuoti"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__id
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__id
@@ -955,6 +985,13 @@ msgstr "Eredita livello rientro"
 #, python-format
 msgid "Indent level must be greater than or equal to 0"
 msgstr "Livello di rientro deve essere maggiore o uguale a 0"
+
+#. module: mis_builder
+#. odoo-javascript
+#: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
+#, python-format
+msgid "Insert note here"
+msgstr "Inserire qui la nota"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_style__italic
@@ -1022,6 +1059,7 @@ msgid "KPIs of this report and subreports."
 msgstr "KPI di questo report e sotto report."
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__kpi_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__kpi_id
 msgid "Kpi"
 msgstr "KPI"
@@ -1040,6 +1078,7 @@ msgstr "PDF orizzontale"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard____last_update
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report____last_update
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance____last_update
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation____last_update
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period____last_update
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum____last_update
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi____last_update
@@ -1061,6 +1100,7 @@ msgstr "Ultimi resoconti generati"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__write_uid
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__write_uid
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__write_uid
@@ -1076,6 +1116,7 @@ msgstr "Ultimo aggiornamento di"
 #: model:ir.model.fields,field_description:mis_builder.field_add_mis_report_instance_dashboard_wizard__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__write_date
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__write_date
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__write_date
@@ -1183,6 +1224,16 @@ msgid "MIS Report Templates"
 msgstr "Modelli MIS Report"
 
 #. module: mis_builder
+#: model:res.groups,name:mis_builder.group_edit_annotation
+msgid "MIS Report: add annotations"
+msgstr "MIS Report: aggiungi note"
+
+#. module: mis_builder
+#: model:res.groups,name:mis_builder.group_read_annotation
+msgid "MIS Report: view annotations"
+msgstr "MIS Repost: vedi note"
+
+#. module: mis_builder
 #: model:ir.ui.menu,name:mis_builder.mis_report_conf_menu
 #: model:ir.ui.menu,name:mis_builder.mis_report_finance_menu
 msgid "MIS Reporting"
@@ -1219,6 +1270,11 @@ msgstr "Massimo"
 #, python-format
 msgid "Min"
 msgstr "Minimo"
+
+#. module: mis_builder
+#: model:ir.model,name:mis_builder.model_mis_report_instance_annotation
+msgid "Mis Report Instance Annotation"
+msgstr "Annotazione istanza MIS Report"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__mode
@@ -1307,6 +1363,11 @@ msgid "Normal"
 msgstr "Normale"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Number"
 msgstr "Numero"
@@ -1335,6 +1396,11 @@ msgid "Offset from current period"
 msgstr "Offset dal periodo attuale"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
+msgid "Open report in wide mode by default"
+msgstr "Aprire il resoconto in modalità vista in modo predefinito"
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
 msgid "Parent column"
 msgstr "Colonna padre"
@@ -1347,6 +1413,11 @@ msgstr "Colonna padre"
 #, python-format
 msgid "Percentage"
 msgstr "Percentuale"
+
+#. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__period_id
+msgid "Period"
+msgstr "Periodo"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_instance_period_name_unique
@@ -1438,6 +1509,13 @@ msgid "Relative to report base date"
 msgstr "Relativo alla data base del resoconto"
 
 #. module: mis_builder
+#. odoo-javascript
+#: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
+#, python-format
+msgid "Remove"
+msgstr "Rimuovi"
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__report_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__report_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__report_id
@@ -1473,8 +1551,11 @@ msgid "Rounding inherit"
 msgstr "Eredità arrotondamento"
 
 #. module: mis_builder
+#. odoo-javascript
+#: code:addons/mis_builder/static/src/components/mis_report_widget.esm.js:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
+#, python-format
 msgid "Save"
 msgstr "Salva"
 
@@ -1640,6 +1721,7 @@ msgid "Sub-KPI name ({}) must be a valid python identifier"
 msgstr "Sotto-KPI nome ({}) deve essere un identificatore Python valido"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_annotation__subkpi_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__subkpi_id
 msgid "Subkpi"
 msgstr "Sottokpi"
@@ -1806,6 +1888,16 @@ msgid "Unsupported operator %s for searching on date"
 msgstr "Operatore non supportato %s per la ricerca in data"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_edit_annotation
+msgid "User Can Edit Annotation"
+msgstr "Annotazione modifica CAN utente"
+
+#. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__user_can_read_annotation
+msgid "User Can Read Annotation"
+msgstr "Annotazione lettura CAN utente"
+
+#. module: mis_builder
 #: model:ir.actions.server,name:mis_builder.ir_cron_vacuum_temp_reports_ir_actions_server
 #: model:ir.cron,cron_name:mis_builder.ir_cron_vacuum_temp_reports
 msgid "Vacuum temporary reports"
@@ -1868,6 +1960,13 @@ msgstr "Da inizio anno"
 #, python-format
 msgid "You cannot sum period %s with itself."
 msgstr "Non puoi sommare il periodo %s con se stesso."
+
+#. module: mis_builder
+#. odoo-python
+#: code:addons/mis_builder/models/mis_report_instance_annotation.py:0
+#, python-format
+msgid "You do not have the rights to edit annotations"
+msgstr "Non si è autorizzati a modificare le note"
 
 #. module: mis_builder
 #. odoo-python

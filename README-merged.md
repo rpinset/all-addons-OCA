@@ -24,7 +24,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_analytic_account_tag](account_analytic_account_tag/) | 16.0.1.0.0 |  | Restore the tag_ids in account.analytic.account
-[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 16.0.2.4.0 |  | Account analytic distribution manual
+[account_analytic_distribution_manual](account_analytic_distribution_manual/) | 16.0.2.4.2 |  | Account analytic distribution manual
 [account_analytic_document_date](account_analytic_document_date/) | 16.0.1.0.1 | [![mpascuall](https://github.com/mpascuall.png?size=30px)](https://github.com/mpascuall) [![BernatObrador](https://github.com/BernatObrador.png?size=30px)](https://github.com/BernatObrador) | Account Analytic Document Date
 [account_analytic_organization](account_analytic_organization/) | 16.0.1.0.1 | [![mpascuall](https://github.com/mpascuall.png?size=30px)](https://github.com/mpascuall) | Adds organization field on the partner so you can use it on your analytic
 [account_analytic_parent](account_analytic_parent/) | 16.0.1.0.1 |  | This module reintroduces the hierarchy to the analytic accounts.
@@ -43,8 +43,8 @@ addon | version | maintainers | summary
 [hr_expense_analytic_tag](hr_expense_analytic_tag/) | 16.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Expense Analytic Tag
 [hr_timesheet_analytic_tag](hr_timesheet_analytic_tag/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Hr Timesheet Analytic Tag
 [mrp_stock_analytic](mrp_stock_analytic/) | 16.0.1.0.0 |  | MRP Stock Analytic
-[pos_analytic_by_config](pos_analytic_by_config/) | 16.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
-[product_analytic](product_analytic/) | 16.0.1.1.0 |  | Add analytic account on products and product categories
+[pos_analytic_by_config](pos_analytic_by_config/) | 16.0.1.0.1 |  | Use analytic account defined on POS configuration for POS orders
+[product_analytic](product_analytic/) | 16.0.1.1.1 |  | Add analytic account on products and product categories
 [product_analytic_purchase](product_analytic_purchase/) | 16.0.1.0.0 |  | Glue module between purchase and product_analytic
 [product_analytic_sale](product_analytic_sale/) | 16.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Glue module between sale and product_analytic
 [purchase_analytic](purchase_analytic/) | 16.0.2.1.0 |  | Purchase Analytic
@@ -249,6 +249,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_account_tag_code](account_account_tag_code/) | 16.0.1.0.0 |  | Add a code field to the accounts tags
 [account_asset_batch_compute](account_asset_batch_compute/) | 16.0.1.0.0 |  | Add the possibility to compute assets in batch
+[account_asset_low_value](account_asset_low_value/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Assets Management - Low Value Asset
 [account_asset_management](account_asset_management/) | 16.0.1.2.8 |  | Assets Management
 [account_asset_management_stock_lot](account_asset_management_stock_lot/) | 16.0.1.0.0 |  | Assets Management Stock Lot
 [account_asset_number](account_asset_number/) | 16.0.1.1.0 |  | Assets Number
@@ -288,7 +289,7 @@ addon | version | maintainers | summary
 [account_sequence_option](account_sequence_option/) | 16.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Manage sequence options for account.move, i.e., invoice, bill, entry
 [account_spread_cost_revenue](account_spread_cost_revenue/) | 16.0.1.0.1 |  | Spread costs and revenues over a custom period
 [account_template_active](account_template_active/) | 16.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Allow to disable / enable account template items (tax, fiscal position, account)
-[account_usability](account_usability/) | 16.0.1.0.4 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
+[account_usability](account_usability/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Account module and adds the option to enable Saxon Accounting
 [base_vat_optional_vies](base_vat_optional_vies/) | 16.0.1.1.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Optional validation of VAT via VIES
 [stock_account_anglo_saxon_cogs_kit](stock_account_anglo_saxon_cogs_kit/) | 16.0.2.0.0 | [![MarinaAForgeFlow](https://github.com/MarinaAForgeFlow.png?size=30px)](https://github.com/MarinaAForgeFlow) [![AaronHForgeFlow](https://github.com/AaronHForgeFlow.png?size=30px)](https://github.com/AaronHForgeFlow) | Stock Account Anglo Saxon COGS Kit
 
@@ -769,7 +770,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 16.0.5.2.3 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 16.0.5.4.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 16.0.5.4.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 16.0.1.0.3 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
 
@@ -1889,8 +1890,8 @@ addon | version | maintainers | summary
 [sale_order_general_discount_triple](sale_order_general_discount_triple/) | 16.0.2.0.1 | [![ashishhirapara](https://github.com/ashishhirapara.png?size=30px)](https://github.com/ashishhirapara) | General discount per sale order with triple
 [sale_order_invoice_amount](sale_order_invoice_amount/) | 16.0.1.0.1 |  | Display the invoiced and uninvoiced total in the sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 16.0.1.0.1 |  | Control invoice order lines if their related task has been set to invoiceable
-[sale_order_invoicing_picking_filter](sale_order_invoicing_picking_filter/) | 16.0.1.0.0 |  | Create invoices from sale orders based on the products in pickings.
-[sale_order_line_cancel](sale_order_line_cancel/) | 16.0.1.1.1 |  | Sale cancel remaining
+[sale_order_invoicing_picking_filter](sale_order_invoicing_picking_filter/) | 16.0.1.1.0 |  | Create invoices from sale orders based on the products in pickings.
+[sale_order_line_cancel](sale_order_line_cancel/) | 16.0.1.2.0 |  | Sale cancel remaining
 [sale_order_line_date](sale_order_line_date/) | 16.0.1.1.1 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 16.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 16.0.1.0.0 |  | Sale order line description
@@ -2380,7 +2381,7 @@ addon | version | maintainers | summary
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
 [sale_commission](sale_commission/) | 16.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_agent_restrict](sale_commission_agent_restrict/) | 16.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales Commissions Agent Restrict
-[sale_commission_product_criteria](sale_commission_product_criteria/) | 16.0.1.0.1 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
+[sale_commission_product_criteria](sale_commission_product_criteria/) | 16.0.2.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 16.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules with discount
 [sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 16.0.1.0.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Commission Product Criteria Domain
 [sale_commission_salesman](sale_commission_salesman/) | 16.0.1.0.1 |  | Sales commissions from salesman
@@ -4601,7 +4602,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 16.0.1.0.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 16.0.1.3.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip_in_rc](l10n_it_fatturapa_import_zip_in_rc/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Importare fatture elettroniche con inversione contabile da un file ZIP.
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.3 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.4 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.1 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.5.1 |  | Emissione fatture elettroniche
@@ -5286,7 +5287,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 16.0.2.2.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 16.0.1.0.1 |  | AEAT modelo 130
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 16.0.2.4.0 |  | AEAT modelo 190
-[l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.1.2.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
+[l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 16.0.2.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 16.0.1.1.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 16.0.2.11.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 16.0.1.1.0 |  | AEAT modelo 303 - OSS
@@ -5990,6 +5991,7 @@ addon | version | maintainers | summary
 [stock_move_manage_priority](stock_move_manage_priority/) | 16.0.1.0.1 |  | Stock Move Priority Management
 [stock_move_priority_picking_assign](stock_move_priority_picking_assign/) | 16.0.1.0.0 |  | This module allows to create a stock movement with a priority and transfer it to the picking during assignation (for new ones)
 [stock_move_propagate_first_move](stock_move_propagate_first_move/) | 16.0.1.0.1 |  | This addon propagate the picking type of the original move to all next moves created from procurement
+[stock_move_quick_lot](stock_move_quick_lot/) | 16.0.1.0.0 |  | Set lot name and end date directly on picking operations
 [stock_no_negative](stock_no_negative/) | 16.0.1.0.2 |  | Disallow negative stock levels by default
 [stock_override_procurement](stock_override_procurement/) | 16.0.1.0.0 |  | This technical module allow to override procurement values
 [stock_owner_restriction](stock_owner_restriction/) | 16.0.1.1.2 |  | Do not reserve quantity with assigned owner
@@ -6389,7 +6391,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 16.0.1.9.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 16.0.1.10.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 16.0.1.5.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 16.0.1.1.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 16.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -7056,6 +7058,7 @@ addon | version | maintainers | summary
 [product_pricelist_direct_print_xlsx](product_pricelist_direct_print_xlsx/) | 16.0.1.1.0 |  | Print price list in XLSX format
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 16.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 16.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
+[product_pricelist_item_uom](product_pricelist_item_uom/) | 16.0.1.0.0 | [![SirAionTech](https://github.com/SirAionTech.png?size=30px)](https://github.com/SirAionTech) | Set UoM in Pricelist Rules.
 [product_pricelist_margin](product_pricelist_margin/) | 16.0.1.0.0 |  | This module shows the product's cost and margin from the pricelists.
 [product_pricelist_revision](product_pricelist_revision/) | 16.0.1.0.1 |  | Product Pricelist Revision
 [product_pricelist_simulation](product_pricelist_simulation/) | 16.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simulate the product price for all pricelists
@@ -7742,6 +7745,7 @@ addon | version | maintainers | summary
 [mail_post_defer](mail_post_defer/) | 16.0.1.1.2 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_quoted_reply](mail_quoted_reply/) | 16.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 16.0.1.0.0 |  | Define a domain from which followers can be selected
+[mail_restrict_send_button](mail_restrict_send_button/) | 16.0.1.0.1 |  | Security for Send Message Button on Chatter Area
 [mail_send_confirmation](mail_send_confirmation/) | 16.0.1.0.0 |  | Mail Send Confirmation
 [mail_show_follower](mail_show_follower/) | 16.0.1.2.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_template_multi_attachment](mail_template_multi_attachment/) | 16.0.1.0.0 |  | Module who allows to generate multi attachments on an email template.
@@ -7755,7 +7759,7 @@ addon | version | maintainers | summary
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 16.0.2.1.0 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 16.0.2.0.1 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
-[mass_mailing_unique](mass_mailing_unique/) | 16.0.1.0.1 |  | Avoids duplicate mailing lists and contacts
+[mass_mailing_unique](mass_mailing_unique/) | 16.0.1.1.0 |  | Avoids duplicate mailing lists and contacts
 [outgoing_email_by_model](outgoing_email_by_model/) | 16.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Outgoing Email by Model
 
 [//]: # (end addons)
@@ -9365,7 +9369,7 @@ addon | version | maintainers | summary
 [web_widget_char_size](web_widget_char_size/) | 16.0.1.0.0 |  | Add size option to Char widget
 [web_widget_datepicker_fulloptions](web_widget_datepicker_fulloptions/) | 16.0.1.0.0 |  | Web Widget DatePicker Full Options
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 16.0.1.0.0 |  | Recovers the Domain Editor Dialog functionality
-[web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 16.0.1.0.0 |  | This module adds support for dynamic dropdown widget
+[web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 16.0.2.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_image_download](web_widget_image_download/) | 16.0.1.0.0 |  | Allows to download any image from its widget
 [web_widget_image_webcam](web_widget_image_webcam/) | 16.0.1.0.0 |  | Allows to take image with WebCam
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 16.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | This widget allows to display charts using MPLD3 library.

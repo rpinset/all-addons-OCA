@@ -116,6 +116,21 @@ msgid "Fiscal Position Templates"
 msgstr "Plantillas de posición fiscal"
 
 #. module: account_usability
+#: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
+msgid "Fiscal Year Last Day"
+msgstr ""
+
+#. module: account_usability
+#: model:ir.model.fields,field_description:account_usability.field_res_config_settings__fiscalyear_last_day
+msgid "Fiscalyear Last Day"
+msgstr ""
+
+#. module: account_usability
+#: model:ir.model.fields,field_description:account_usability.field_res_config_settings__fiscalyear_last_month
+msgid "Fiscalyear Last Month"
+msgstr ""
+
+#. module: account_usability
 #: model_terms:ir.ui.view,arch_db:account_usability.view_account_account_template_search
 #: model_terms:ir.ui.view,arch_db:account_usability.view_account_chart_template_seacrh
 msgid "Group By"
@@ -197,6 +212,13 @@ msgstr "Impuestos"
 #: model:ir.ui.menu,name:account_usability.menu_account_coa_settings
 msgid "Templates"
 msgstr "Plantillas"
+
+#. module: account_usability
+#: model_terms:ir.ui.view,arch_db:account_usability.res_config_settings_view_form
+msgid ""
+"Type the day and select the month of the last day of the company's fiscal "
+"year."
+msgstr ""
 
 #. module: account_usability
 #: model:ir.model.fields,field_description:account_usability.field_res_config_settings__anglo_saxon_accounting
