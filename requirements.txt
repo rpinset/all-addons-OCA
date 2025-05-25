@@ -192,6 +192,7 @@ python_slugify
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
 lxml
+mock
 openpyxl
 py3o.formats
 py3o.template

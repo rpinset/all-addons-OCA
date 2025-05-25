@@ -391,6 +391,7 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: crm_phonecall
 #: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__message_has_error
+#: model:ir.model.fields,help:crm_phonecall.field_crm_phonecall__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -636,7 +637,6 @@ msgstr "Telefono"
 #. odoo-python
 #: code:addons/crm_phonecall/models/crm_phonecall.py:0
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.crm_case_phone_form_view
-#, python-format
 msgid "Phone Call"
 msgstr "Telefonata"
 
@@ -744,6 +744,11 @@ msgstr "Valutazioni"
 #: model_terms:ir.ui.view,arch_db:crm_phonecall.view_crm_case_phonecalls_filter
 msgid "Responsible"
 msgstr "Responsabile"
+
+#. module: crm_phonecall
+#: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore consegna SMS"
 
 #. module: crm_phonecall
 #: model:ir.model.fields,field_description:crm_phonecall.field_crm_phonecall2phonecall__team_id
@@ -933,9 +938,6 @@ msgstr ""
 
 #~ msgid "Main Attachment"
 #~ msgstr "Allegato principale"
-
-#~ msgid "SMS Delivery error"
-#~ msgstr "Errore consegna SMS"
 
 #~ msgid "<b> min(s)</b>"
 #~ msgstr "<b> minuto(i)</b>"
