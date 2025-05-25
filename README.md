@@ -442,9 +442,9 @@ Date:   Thu Feb 13 15:15:41 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 5d90dd1ce69b7bc520192dbfdd3358cea6b83d4f
+commit 8135e3fb5ffd23c315400aa298dba9fca0c6c38e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 7 10:33:25 2025 +0000
+Date:   Fri May 23 11:25:53 2025 +0000
 
     [BOT] post-merge updates
 
@@ -971,11 +971,11 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 09872277c991c61f6d69e40267cedc3675ee53c9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Apr 11 08:00:42 2025 +0000
+commit 9e66a927ea643d9b505bdc25a1e58977ecffbd45
+Author: Saran @ Ecosoft <saranl@ecosoft.co.th>
+Date:   Thu May 22 08:57:43 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Thai)
 
 
 ## l10n-turkey
@@ -1199,16 +1199,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit d5516d230f4a6ae41dd14f8baf97f42075e555bf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 2 06:26:52 2025 +0000
+commit 4a7b0b40d26eacbe269a0a16517aa45d2c401381
+Author: Weblate <noreply@weblate.org>
+Date:   Fri May 23 14:01:35 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (23 of 23 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: product-attribute-15.0/product-attribute-15.0-product_template_tags
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_template_tags/it/
+    Translation: product-attribute-15.0/product-attribute-15.0-product_lot_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_lot_sequence/
 
 
 ## product-kitting
