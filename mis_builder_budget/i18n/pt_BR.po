@@ -270,6 +270,11 @@ msgid "Display Name"
 msgstr "Nome de Exibição"
 
 #. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr ""
+
+#. module: mis_builder_budget
 #: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget__state__draft
 #: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_abstract__state__draft
 #: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget_by_account__state__draft

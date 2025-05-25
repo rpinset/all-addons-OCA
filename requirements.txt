@@ -227,6 +227,8 @@ cryptography
 endesive
 lxml
 openpyxl
+py3o.formats
+py3o.template
 xlrd
 xlsxwriter
 # From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)

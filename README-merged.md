@@ -668,7 +668,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 17.0.1.2.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 17.0.1.2.2 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 17.0.1.4.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 17.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
 
@@ -1719,7 +1719,7 @@ addon | version | maintainers | summary
 [sale_manual_delivery](sale_manual_delivery/) | 17.0.1.0.0 |  | Create manually your deliveries
 [sale_multi_template_application](sale_multi_template_application/) | 17.0.1.0.0 |  | Sale multi template application
 [sale_order_archive](sale_order_archive/) | 17.0.1.0.0 |  | Archive Sale Orders
-[sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 17.0.1.1.0 |  | Auto assign delivery carrier on sale order confirmation
+[sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 17.0.1.1.1 | [![jbaudoux](https://github.com/jbaudoux.png?size=30px)](https://github.com/jbaudoux) | Auto assign delivery carrier on sale order confirmation
 [sale_order_general_discount](sale_order_general_discount/) | 17.0.1.0.0 |  | General discount per sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 17.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_date](sale_order_line_date/) | 17.0.1.0.0 |  | Adds a commitment date to each sale order line.
@@ -2516,7 +2516,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_territory](base_territory/) | 17.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | This module allows you to define territories, branches, districts and regions to be used for Field Service operations or Sales.
-[fieldservice](fieldservice/) | 17.0.2.4.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
+[fieldservice](fieldservice/) | 17.0.2.4.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Field Service Locations, Workers and Orders
 [fieldservice_account](fieldservice_account/) | 17.0.1.1.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
 [fieldservice_account_analytic](fieldservice_account_analytic/) | 17.0.1.1.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
 [fieldservice_activity](fieldservice_activity/) | 17.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
@@ -5714,7 +5714,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.2.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.3.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.0 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6101,7 +6101,7 @@ addon | version | maintainers | summary
 [purchase_tag](purchase_tag/) | 17.0.1.1.1 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
-[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
+[sale_purchase_force_vendor](sale_purchase_force_vendor/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
 [supplier_calendar](supplier_calendar/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
 
 [//]: # (end addons)
@@ -6233,6 +6233,7 @@ addon | version | maintainers | summary
 [product_usability](product_usability/) | 17.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Adds missing menu entries for Product module and adds extra groups to fine-tune access rights
 [sale_product_template_tags](sale_product_template_tags/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show product tags menu in Sale app
 [stock_production_lot_expired_date](stock_production_lot_expired_date/) | 17.0.1.0.1 |  | Stock production lot expired date
+[uom_alias](uom_alias/) | 17.0.1.0.0 | [![renatonlima](https://github.com/renatonlima.png?size=30px)](https://github.com/renatonlima) | Adds alias for UOM
 [uom_category_active](uom_category_active/) | 17.0.1.0.1 |  | Add option to archive UoM categories
 
 [//]: # (end addons)
@@ -6587,7 +6588,7 @@ addon | version | maintainers | summary
 [contract_sale_invoicing](contract_sale_invoicing/) | 17.0.1.0.0 |  | Include sales to invoice in contract invoice creation
 [contract_update_last_date_invoiced](contract_update_last_date_invoiced/) | 17.0.1.0.0 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) | This module allows to update the last date invoiced if invoices are deleted.
 [contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 17.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![danypr92](https://github.com/danypr92.png?size=30px)](https://github.com/danypr92) | Add formula to invoice
-[contract_variable_quantity](contract_variable_quantity/) | 17.0.1.0.0 |  | Variable quantity in contract recurrent invoicing
+[contract_variable_quantity](contract_variable_quantity/) | 17.0.1.0.2 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 17.0.2.2.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Recurring - Product Contract
 [subscription_oca](subscription_oca/) | 17.0.1.0.0 |  | Generate recurring invoices.
 
@@ -6811,7 +6812,7 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.1 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
@@ -6988,6 +6989,7 @@ addon | version | maintainers | summary
 [report_async](report_async/) | 17.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Central place to run reports live or async
 [report_csv](report_csv/) | 17.0.1.0.1 |  | Base module to create csv report
 [report_layout_config](report_layout_config/) | 17.0.1.0.0 |  | Add possibility to easily modify the global report layout
+[report_py3o](report_py3o/) | 17.0.1.0.0 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 17.0.1.0.0 |  | Report Qweb Element Page Visibility
 [report_qweb_parameter](report_qweb_parameter/) | 17.0.1.0.2 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 17.0.1.0.2 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Add watermarks to your QWEB PDF reports
@@ -8324,7 +8326,7 @@ addon | version | maintainers | summary
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Allow to draw plotly charts.
 [web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.1.0.0 |  | unify the product and name into a single column
 [web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
-[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.1.1 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Show list fields as a matrix
+[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.1.2 | [![JasminSForgeFlow](https://github.com/JasminSForgeFlow.png?size=30px)](https://github.com/JasminSForgeFlow) | Show list fields as a matrix
 
 [//]: # (end addons)
 
