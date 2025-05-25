@@ -45,6 +45,31 @@ msgid "Last Modified on"
 msgstr "Ultima modifica il"
 
 #. module: mail_template_multi_company
+#: model:ir.model.fields,help:mail_template_multi_company.field_mail_template__original_xmlid_mail_template_id
+msgid ""
+"Mail Template that corresponds to a record having a XMLID. This record will "
+"be used when the record having a XMLID is found but cannot be accessed."
+msgstr ""
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,help:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
+msgid ""
+"Mail Templates that correspond to this record's XMLID. When this record is "
+"searched by XMLID but cannot be accessed, the first accessible substitute "
+"will be found instead."
+msgstr ""
+
+#. module: mail_template_multi_company
 #: model:ir.model,name:mail_template_multi_company.model_ir_model_data
 msgid "Model Data"
 msgstr "Dati modello"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__original_xmlid_mail_template_id
+msgid "Original XMLID template"
+msgstr ""
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
+msgid "Substitutes for XMLID template"
+msgstr ""

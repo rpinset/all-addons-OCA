@@ -3677,7 +3677,7 @@ addon | version | maintainers | summary
 [ir_config_parameter_multi_company](ir_config_parameter_multi_company/) | 14.0.1.0.1 | [![deniscraciungabriel](https://github.com/deniscraciungabriel.png?size=30px)](https://github.com/deniscraciungabriel) [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add res company field in ir config parameter
 [login_all_company](login_all_company/) | 14.0.1.0.1 |  | Access all your companies when you log in
 [mail_multicompany](mail_multicompany/) | 14.0.0.1.0 |  | Email Gateway Multi company
-[mail_template_multi_company](mail_template_multi_company/) | 14.0.1.0.2 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
+[mail_template_multi_company](mail_template_multi_company/) | 14.0.1.1.0 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
 [multicompany_configuration](multicompany_configuration/) | 14.0.1.0.0 |  | Simplify the configuration on multicompany environments
 [partner_contact_company_propagation](partner_contact_company_propagation/) | 14.0.1.0.0 |  | Propagate company info to children contacts
 [partner_multi_company](partner_multi_company/) | 14.0.1.1.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) | Select individually the partner visibility on each company
@@ -4734,7 +4734,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.3 |  | Allow to create the 'VAT Statement'.
-[assets_management](assets_management/) | 14.0.1.5.3 |  | Gestione Cespiti
+[assets_management](assets_management/) | 14.0.1.6.0 |  | Gestione Cespiti
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 14.0.1.0.2 | [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | Base Bank ABI/CAB codes
@@ -4762,7 +4762,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.5 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.3.8 |  | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.0 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.9.2 |  | Emissione fatture elettroniche
@@ -4774,7 +4774,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 14.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
 [l10n_it_fatturapa_out_triple_discount](l10n_it_fatturapa_out_triple_discount/) | 14.0.1.0.0 |  | Modulo ponte tra emissione fatture elettroniche e sconto triplo
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 14.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
-[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 14.0.2.5.1 |  | Invio fatture elettroniche tramite PEC
+[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 14.0.2.6.0 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 14.0.1.0.3 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 14.0.1.0.0 |  | Invio fatture elettroniche tramite SDICoop
 [l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 14.0.1.1.2 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
@@ -6009,7 +6009,7 @@ addon | version | maintainers | summary
 [delivery_roulier_chronopost_fr](delivery_roulier_chronopost_fr/) | 14.0.1.0.1 |  | Delivery Chronopost France
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 14.0.1.2.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 14.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Add options to roulier modules
-[delivery_schenker](delivery_schenker/) | 14.0.2.0.1 |  | Delivery Carrier implementation for DB Schenker API
+[delivery_schenker](delivery_schenker/) | 14.0.2.1.0 |  | Delivery Carrier implementation for DB Schenker API
 [delivery_schenker_picking_volume](delivery_schenker_picking_volume/) | 14.0.1.2.0 |  | Glue module between delivery_schenker and stock_picking_volumeWith this module the transmitted volume is changed,it uses the computed volume from stock_picking_volume
 [delivery_schenker_quant_package_dimension](delivery_schenker_quant_package_dimension/) | 14.0.2.0.1 | [![mt-software-de](https://github.com/mt-software-de.png?size=30px)](https://github.com/mt-software-de) | Glue module between delivery_schenker and stock_quant_package_dimensionWith this module the transmitted package volume is changed,it uses the computed volume from stock_quant_package_dimension.Also the dimensions length, width and height of a package getting added to the request
 [delivery_send_to_shipper_at_operation](delivery_send_to_shipper_at_operation/) | 14.0.1.0.3 |  | Send delivery notice to the shipper from any operation.
@@ -6134,7 +6134,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_package_default_shipping_weight](delivery_package_default_shipping_weight/) | 14.0.1.0.1 |  | Set default package shipping weight according to packaging
-[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.3.0 |  | Delivery Procurement Group Carrier
+[delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.3.1 |  | Delivery Procurement Group Carrier
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 14.0.1.0.1 |  | Include packaging weight on move, transfer and package.
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 14.0.1.1.1 |  | Procurement Auto Create Group Carrier
 [product_cost_price_avco_sync](product_cost_price_avco_sync/) | 14.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
@@ -7123,7 +7123,7 @@ addon | version | maintainers | summary
 [purchase_picking_state](purchase_picking_state/) | 14.0.1.1.1 |  | Purchase Picking State
 [purchase_product_usage](purchase_product_usage/) | 14.0.1.1.1 |  | Purchase Product Usage
 [purchase_propagate_qty](purchase_propagate_qty/) | 14.0.1.0.3 |  | Quantity decrease on purchase line are propagated to the corresponding stock.move
-[purchase_quick](purchase_quick/) | 14.0.1.0.3 |  | Quick Purchase order
+[purchase_quick](purchase_quick/) | 14.0.1.1.0 |  | Quick Purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 14.0.1.0.0 |  | Purchase Reception Notify
 [purchase_reception_status](purchase_reception_status/) | 14.0.1.1.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
 [purchase_report_menu_move](purchase_report_menu_move/) | 14.0.1.0.0 | [![newtratip](https://github.com/newtratip.png?size=30px)](https://github.com/newtratip) | Purchase Report Menu Move

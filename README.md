@@ -691,16 +691,16 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit ef67199a32ce10f25c96e9cd70cfb53a0e24eb6d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 14:50:47 2025 +0000
+commit fc3567f3b7c07de2d4f152281fe009831e38837b
+Author: Weblate <noreply@weblate.org>
+Date:   Thu May 22 10:13:28 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 16.6% (1 of 6 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: multi-company-14.0/multi-company-14.0-ir_config_parameter_multi_company
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-ir_config_parameter_multi_company/it/
+    Translation: multi-company-14.0/multi-company-14.0-mail_template_multi_company
+    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-mail_template_multi_company/
 
 
 ## l10n-argentina
@@ -908,16 +908,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 0dfcf651fbe0ecdfa62275e200a55578393e8ff3
+commit 676b17cbe85b70d6e100c3469d7d404f2924b18c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 13:47:16 2025 +0000
+Date:   Sat May 24 08:12:59 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Currently translated at 69.0% (76 of 110 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_withholding_tax_mis_builder
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_withholding_tax_mis_builder/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_declaration_of_intent
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_declaration_of_intent/it/
 
 
 ## l10n-japan
@@ -1123,16 +1123,11 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 42abc68a7db9fc2d0ab767af3a8859f9465970e9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:59:01 2025 +0000
+commit 6c8a88a8b29c8c070a1287923bda6481abc8d1c7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 23 12:39:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 2.6% (2 of 76 strings)
-    
-    Translation: delivery-carrier-14.0/delivery-carrier-14.0-delivery_tnt_oca
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-delivery_tnt_oca/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1151,16 +1146,11 @@ Date:   Mon May 12 06:39:37 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 00204506f56ef39c841c7369a806a659bac3765c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:52:00 2025 +0000
+commit 5f1e11e81caedc641ba68c33e91fc51248ab1ce7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 23 17:45:18 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 28.5% (2 of 7 strings)
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_move_planned_consumed_date
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_move_planned_consumed_date/it/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1295,16 +1285,16 @@ Date:   Mon Apr 14 09:19:18 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit acdd89d91203a0f6049311dbd8d62717e5ef2a24
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:33:55 2025 +0000
+commit 495e266e78aa7e79ac3a61bff473436566b4801e
+Author: Weblate <noreply@weblate.org>
+Date:   Fri May 23 21:39:10 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (7 of 7 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_archive
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_archive/it/
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_quick
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_quick/
 
 
 ## purchase-reporting

@@ -7,7 +7,7 @@
 
 {
     "name": "ITA - Fattura elettronica - Ricezione",
-    "version": "14.0.2.3.8",
+    "version": "14.0.2.4.0",
     "development_status": "Beta",
     "category": "Localization/Italy",
     "summary": "Ricezione fatture elettroniche",

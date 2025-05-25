@@ -10,6 +10,10 @@ from odoo.tests.common import SingleTransactionCase
 
 
 class FatturapaCommon(SingleTransactionCase):
+    """
+    Common class for Fatturapa tests.
+    """
+
     def getFile(self, filename, module_name=None):
         if module_name is None:
             module_name = "l10n_it_fatturapa_in"
@@ -277,6 +281,8 @@ class FatturapaCommon(SingleTransactionCase):
     ):
         if module_name is None:
             module_name = "l10n_it_fatturapa_in"
+        if wiz_values is None:
+            wiz_values = dict()
         attach = self.create_attachment(name, file_name, module_name=module_name)
         attach_id = attach.id
         if mode == "import":
@@ -285,6 +291,8 @@ class FatturapaCommon(SingleTransactionCase):
                     active_ids=[attach_id], active_model="fatturapa.attachment.in"
                 )
             )
+            for wiz_field, wiz_value in wiz_values.items():
+                setattr(wizard_form, wiz_field, wiz_value)
             wizard = wizard_form.save()
             return wizard.importFatturaPA()
         if mode == "link":

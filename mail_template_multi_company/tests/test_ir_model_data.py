@@ -72,3 +72,30 @@ class TestIRModelData(SavepointCase):
         # Assert
         self.assertIn("Not enough access rights", exc_message)
         self.assertFalse(template)
+
+    def test_substitute(self):
+        """
+        When a template is not found by XMLID but has a substitute,
+        the substitute is found instead.
+        """
+        # Arrange
+        company = self.env.company
+        other_company_template = self.other_company_template
+        copied_other_company_template = other_company_template.copy(
+            default={
+                "company_id": company.id,
+            },
+        )
+        # pre-condition
+        self.assertEqual(
+            copied_other_company_template.original_xmlid_mail_template_id,
+            other_company_template,
+        )
+
+        # Act
+        template = self.env.ref(
+            self.other_company_template_xmlid, raise_if_not_found=False
+        )
+
+        # Assert
+        self.assertEqual(template, copied_other_company_template)

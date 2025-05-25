@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: assets_management
+#: model_terms:ir.ui.view,arch_db:assets_management.wizard_asset_generate_depreciation_form_view
+msgid "<i class=\"fa fa-warning\" title=\"Missing fiscal years\"/>"
+msgstr ""
+
+#. module: assets_management
 #: model_terms:ir.ui.view,arch_db:assets_management.template_asset_journal_body
 #: model_terms:ir.ui.view,arch_db:assets_management.template_asset_previsional_body
 msgid ""
@@ -1054,6 +1059,11 @@ msgid "Create New"
 msgstr ""
 
 #. module: assets_management
+#: model:ir.model.fields,help:assets_management.field_wizard_asset_generate_depreciation__journal_id
+msgid "Create move entries in this journal instead of the category's journal."
+msgstr ""
+
+#. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_accounting_info__create_uid
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__create_uid
 #: model:ir.model.fields,field_description:assets_management.field_asset_category__create_uid
@@ -1597,8 +1607,8 @@ msgid "Force First Dep. Num"
 msgstr ""
 
 #. module: assets_management
-#: model:ir.model.fields,field_description:assets_management.field_asset_depreciation_mode_line__from_nr
-msgid "From Nr"
+#: model:ir.model.fields,field_description:assets_management.field_asset_depreciation_mode_line__from_year_nr
+msgid "From Year"
 msgstr ""
 
 #. module: assets_management
@@ -2013,8 +2023,20 @@ msgid "Management Type"
 msgstr ""
 
 #. module: assets_management
+#: model:ir.model.fields,help:assets_management.field_asset_depreciation_mode_line__to_year_nr
+msgid ""
+"Maximum number of fiscal years passed from asset purchase date to apply this"
+" line."
+msgstr ""
+
+#. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_has_error
 msgid "Message Delivery error"
+msgstr ""
+
+#. module: assets_management
+#: model:ir.model.fields,help:assets_management.field_wizard_asset_generate_depreciation__missing_fiscal_year_warning
+msgid "Message to warn the user that some fiscal years are missing."
 msgstr ""
 
 #. module: assets_management
@@ -2023,8 +2045,20 @@ msgid "Messages"
 msgstr ""
 
 #. module: assets_management
+#: model:ir.model.fields,help:assets_management.field_asset_depreciation_mode_line__from_year_nr
+msgid ""
+"Minimum number of fiscal years passed from asset purchase date to apply this"
+" line."
+msgstr ""
+
+#. module: assets_management
 #: model:ir.model.fields.selection,name:assets_management.selection__wizard_account_move_manage_asset__move_type__general
 msgid "Miscellaneous"
+msgstr ""
+
+#. module: assets_management
+#: model:ir.model.fields,field_description:assets_management.field_wizard_asset_generate_depreciation__missing_fiscal_year_warning
+msgid "Missing Fiscal Year Warning"
 msgstr ""
 
 #. module: assets_management
@@ -2037,6 +2071,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_journal_depreciation__mode_name
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_previsional_depreciation__mode_name
 msgid "Mode Name"
+msgstr ""
+
+#. module: assets_management
+#: model:ir.model.fields.selection,name:assets_management.selection__wizard_asset_generate_depreciation__period__month
+msgid "Month"
 msgstr ""
 
 #. module: assets_management
@@ -2177,6 +2216,11 @@ msgid "Number of messages with delivery error"
 msgstr ""
 
 #. module: assets_management
+#: model:ir.model.fields,field_description:assets_management.field_wizard_asset_generate_depreciation__period_count
+msgid "Number of periods"
+msgstr ""
+
+#. module: assets_management
 #: model:ir.model.fields,help:assets_management.field_asset_asset__message_unread_counter
 msgid "Number of unread messages"
 msgstr ""
@@ -2216,6 +2260,11 @@ msgstr ""
 #: code:addons/assets_management/report/asset_previsional_xlsx.py:0
 #, python-format
 msgid "Out Amount - Detail"
+msgstr ""
+
+#. module: assets_management
+#: model:ir.model.fields,field_description:assets_management.field_wizard_asset_generate_depreciation__journal_id
+msgid "Override journal"
 msgstr ""
 
 #. module: assets_management
@@ -2282,6 +2331,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_previsional_depreciation_line_year__percentage
 #: model:ir.model.fields.selection,name:assets_management.selection__asset_depreciation_mode_line__application__percentage
 msgid "Percentage"
+msgstr ""
+
+#. module: assets_management
+#: model:ir.model.fields,field_description:assets_management.field_wizard_asset_generate_depreciation__period
+msgid "Period"
 msgstr ""
 
 #. module: assets_management
@@ -2716,6 +2770,14 @@ msgid "Sold assets: show"
 msgstr ""
 
 #. module: assets_management
+#: code:addons/assets_management/wizard/asset_generate_depreciation.py:0
+#, python-format
+msgid ""
+"Some years between %(asset_date)s and %(depreciation_date)s have no configured fiscal year and will not be counted for depreciation.\n"
+"Please configure every fiscal year that has to be counted for depreciation."
+msgstr ""
+
+#. module: assets_management
 #: code:addons/assets_management/report/asset_journal_xlsx.py:0
 #: code:addons/assets_management/report/asset_previsional_xlsx.py:0
 #, python-format
@@ -2808,8 +2870,8 @@ msgid "To Date"
 msgstr ""
 
 #. module: assets_management
-#: model:ir.model.fields,field_description:assets_management.field_asset_depreciation_mode_line__to_nr
-msgid "To Nr"
+#: model:ir.model.fields,field_description:assets_management.field_asset_depreciation_mode_line__to_year_nr
+msgid "To Year"
 msgstr ""
 
 #. module: assets_management
@@ -2978,6 +3040,7 @@ msgstr ""
 #: code:addons/assets_management/report/asset_previsional_xlsx.py:0
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_journal_depreciation_line_year__year
 #: model:ir.model.fields,field_description:assets_management.field_report_asset_previsional_depreciation_line_year__year
+#: model:ir.model.fields.selection,name:assets_management.selection__wizard_asset_generate_depreciation__period__year
 #, python-format
 msgid "Year"
 msgstr ""

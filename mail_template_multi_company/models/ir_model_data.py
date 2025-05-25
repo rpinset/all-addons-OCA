@@ -14,10 +14,22 @@ class IRModelData(models.Model):
             raise_if_not_found=raise_if_not_found,
         )
         if res_model == "mail.template" and res_id:
+            original_res_id = res_id
             module, xmlid = xmlid.split(".")
             res_model, res_id = self.check_object_reference(
                 module,
                 xmlid,
                 raise_on_access_error=raise_if_not_found,
             )
+            if not res_id:
+                # Fallback on the first substitute that can be accessed
+                template_sudo = self.env["mail.template"].sudo().browse(original_res_id)
+                substitutes = template_sudo.substitute_xmlid_mail_template_ids
+                accessible_substitute = self.env["mail.template"].search(
+                    [
+                        ("id", "in", substitutes.ids),
+                    ],
+                    limit=1,
+                )
+                res_id = accessible_substitute.id
         return res_model, res_id

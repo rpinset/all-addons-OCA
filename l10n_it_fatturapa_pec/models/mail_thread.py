@@ -46,6 +46,7 @@ class MailThread(models.AbstractModel):
             "bounced_partner",
             "bounced_msg_id",
             "bounced_message",
+            "x_odoo_message_id",
         ]
         for field in fields_to_clean:
             message_dict.pop(field, None)
