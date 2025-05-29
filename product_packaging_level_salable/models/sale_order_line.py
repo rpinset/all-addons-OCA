@@ -25,20 +25,6 @@ class SaleOrderLine(models.Model):
                     )
                 )
 
-    @api.onchange("product_packaging_id")
-    def _onchange_product_packaging_id(self):
-        if self._can_be_sold_error_condition():
-            return {
-                "warning": {
-                    "title": self.env._("Warning"),
-                    "message": self.env._(
-                        "This product packaging must be set as 'Sales' in"
-                        " order to be used on a sale order."
-                    ),
-                },
-            }
-        return super()._onchange_product_packaging_id()
-
     @api.depends("product_id", "product_uom_qty", "product_uom")
     def _compute_product_packaging_id(self):
         res = super()._compute_product_packaging_id()
