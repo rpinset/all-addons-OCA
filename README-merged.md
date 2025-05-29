@@ -347,7 +347,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 14.0.1.4.7 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
+[partner_statement](partner_statement/) | 14.0.1.5.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -4762,7 +4762,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.5 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.0 |  | Ricezione fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.1 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.9.2 |  | Emissione fatture elettroniche
@@ -5428,7 +5428,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 14.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.8.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 14.0.1.8.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_mrw](delivery_mrw/) | 14.0.1.1.4 |  | Delivery Carrier implementation for MRW with SAGEC API
 [delivery_seur](delivery_seur/) | 14.0.1.0.0 |  | Integrate SEUR webservice
 [l10n_es_account_asset](l10n_es_account_asset/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España

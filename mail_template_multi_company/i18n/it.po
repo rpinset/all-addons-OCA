@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-08 10:23+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-05-27 17:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -50,6 +50,9 @@ msgid ""
 "Mail Template that corresponds to a record having a XMLID. This record will "
 "be used when the record having a XMLID is found but cannot be accessed."
 msgstr ""
+"Modello di posta elettronica corrispondente a un record con un XMLID. Questo "
+"record verrà utilizzato quando il record con un XMLID viene trovato ma non è "
+"accessibile."
 
 #. module: mail_template_multi_company
 #: model:ir.model.fields,help:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
@@ -58,6 +61,9 @@ msgid ""
 "searched by XMLID but cannot be accessed, the first accessible substitute "
 "will be found instead."
 msgstr ""
+"Modelli di posta che corrispondono all'XMLID di questo record. Se questo "
+"record viene cercato per XMLID ma non è accessibile, verrà trovato il primo "
+"sostituto accessibile."
 
 #. module: mail_template_multi_company
 #: model:ir.model,name:mail_template_multi_company.model_ir_model_data
@@ -67,9 +73,9 @@ msgstr "Dati modello"
 #. module: mail_template_multi_company
 #: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__original_xmlid_mail_template_id
 msgid "Original XMLID template"
-msgstr ""
+msgstr "Modello XMLID originale"
 
 #. module: mail_template_multi_company
 #: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
 msgid "Substitutes for XMLID template"
-msgstr ""
+msgstr "Sostituti per modello XMLID"

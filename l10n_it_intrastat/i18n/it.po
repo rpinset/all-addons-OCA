@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e-20191007\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-16 15:53+0000\n"
-"PO-Revision-Date: 2025-01-28 18:06+0000\n"
+"PO-Revision-Date: 2025-05-28 10:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_intrastat
 #: model:report.intrastat.code,description:l10n_it_intrastat.intrastat_category_2014_33074100
@@ -53179,7 +53179,7 @@ msgstr "Origine"
 #: model:ir.model.fields,field_description:l10n_it_intrastat.field_res_company__intrastat_sale_country_origin_id
 #: model_terms:ir.ui.view,arch_db:l10n_it_intrastat.view_intrastat_company_form
 msgid "Origin Country"
-msgstr "Paese di origine"
+msgstr "Paese d'origine"
 
 #. module: l10n_it_intrastat
 #: model:ir.model.fields,field_description:l10n_it_intrastat.field_account_invoice_intrastat__province_origin_id

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-20 16:26+0000\n"
+"PO-Revision-Date: 2025-05-29 16:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_invoice_ubl.field_res_company__display_name
 #: model:ir.model.fields,field_description:account_invoice_ubl.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: account_invoice_ubl
 #: model:ir.model.fields,field_description:account_invoice_ubl.field_res_company__embed_pdf_in_ubl_xml_invoice

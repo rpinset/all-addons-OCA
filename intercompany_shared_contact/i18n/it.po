@@ -6,36 +6,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-05-27 17:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: intercompany_shared_contact
 #: model:ir.model,name:intercompany_shared_contact.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Aziende"
 
 #. module: intercompany_shared_contact
 #: model:ir.model,name:intercompany_shared_contact.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_company__display_name
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_partner__display_name
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_users__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,help:intercompany_shared_contact.field_res_partner__res_company_id
 #: model:ir.model.fields,help:intercompany_shared_contact.field_res_users__res_company_id
 msgid "Effectively a One2one field to represent the corresponding res.company"
 msgstr ""
+"Di fatto un campo One2many per rappresentare il corrispondente res.company"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,help:intercompany_shared_contact.field_res_partner__origin_company_id
@@ -45,42 +48,45 @@ msgid ""
 "can share the contact by setting company_id to null, without losing any "
 "information. If null, the contact is not shared."
 msgstr ""
+"Modifica il campo per mantenere le informazioni del \"vero\" company_id. In "
+"questo modo, possiamo condividere il contatto impostando company_id su null, "
+"senza perdere alcuna informazione. Se null, il contatto non viene condiviso."
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_company__id
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_partner__id
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_users__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_company____last_update
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_partner____last_update
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_users____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_partner__origin_company_id
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_users__origin_company_id
 msgid "Origin Company"
-msgstr ""
+msgstr "Azienda origine"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_partner__res_company_id
 #: model:ir.model.fields,field_description:intercompany_shared_contact.field_res_users__res_company_id
 msgid "Res Company"
-msgstr ""
+msgstr "Res Company"
 
 #. module: intercompany_shared_contact
 #: model:ir.model.constraint,message:intercompany_shared_contact.constraint_res_company_partner_uniq
 msgid "The company partner_id must be unique !"
-msgstr ""
+msgstr "Il partner_id azienda deve essere univoco!"
 
 #. module: intercompany_shared_contact
 #: model:ir.model,name:intercompany_shared_contact.model_res_users
 msgid "Users"
-msgstr ""
+msgstr "Utenti"
 
 #. module: intercompany_shared_contact
 #: code:addons/intercompany_shared_contact/models/res_partner.py:0
@@ -89,3 +95,5 @@ msgid ""
 "You do not have the right to modify the field: %s for an intercompany "
 "contact"
 msgstr ""
+"Non si ha il diritto di modificare il campo: %s per un contatto "
+"interaziendale"

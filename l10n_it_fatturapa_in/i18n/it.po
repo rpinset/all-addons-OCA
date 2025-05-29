@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-27 08:07+0000\n"
-"PO-Revision-Date: 2025-02-20 13:06+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-05-29 16:26+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_account_config_settings_ftpa_in
@@ -1593,6 +1593,8 @@ msgid ""
 "Value used during import of this e-invoice to override \"Discount\" "
 "precision."
 msgstr ""
+"Valore utilizzato durante l'importazione di questa fattura elettronica per "
+"sovrascrivere la precisione \"Sconto\"."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__price_decimal_digits
@@ -1600,6 +1602,8 @@ msgid ""
 "Value used during import of this e-invoice to override \"Product Price\" "
 "precision."
 msgstr ""
+"Valore utilizzato durante l'importazione di questa fattura elettronica per "
+"sovrascrivere la precisione del \"Prezzo del prodotto\"."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,help:l10n_it_fatturapa_in.field_fatturapa_attachment_in__quantity_decimal_digits
@@ -1607,6 +1611,8 @@ msgid ""
 "Value used during import of this e-invoice to override \"Product Unit of "
 "Measure\" precision."
 msgstr ""
+"Valore utilizzato durante l'importazione di questa fattura elettronica per "
+"sovrascrivere la precisione \"Unità di misura del prodotto\"."
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_res_company__in_invoice_registration_date

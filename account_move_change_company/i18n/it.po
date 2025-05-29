@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-20 17:26+0000\n"
+"PO-Revision-Date: 2025-05-27 17:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -21,19 +21,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_move__allowed_company_ids
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_payment__allowed_company_ids
 msgid "Allowed Company"
-msgstr ""
+msgstr "Azienda abilitata"
 
 #. module: account_move_change_company
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_bank_statement_line__company_id
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_move__company_id
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_payment__company_id
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: account_move_change_company
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_move__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: account_move_change_company
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_move__id
@@ -43,9 +43,9 @@ msgstr "ID"
 #. module: account_move_change_company
 #: model:ir.model,name:account_move_change_company.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: account_move_change_company
 #: model:ir.model.fields,field_description:account_move_change_company.field_account_move____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
