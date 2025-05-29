@@ -418,6 +418,7 @@ addon | version | maintainers | summary
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 17.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set date invoice when you create invoices
 [sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
 [sale_order_invoicing_qty_percentage](sale_order_invoicing_qty_percentage/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing by percentage of the quantity
+[sale_order_whole_delivered_invoiceability](sale_order_whole_delivered_invoiceability/) | 17.0.1.0.0 |  | Sale Order Whole Delivered Invoiceability
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 17.0.1.0.1 |  | Add timesheet details in invoice line
 [stock_picking_invoicing](stock_picking_invoicing/) | 17.0.1.0.0 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 17.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update the refund options in pickings
@@ -928,7 +929,7 @@ addon | version | maintainers | summary
 [account_in_payment](account_in_payment/) | 17.0.1.0.0 |  | This module enables in-payment mode for your accounting
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.12 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.13 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.5.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1760,6 +1761,7 @@ addon | version | maintainers | summary
 [sale_substate](sale_substate/) | 17.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 17.0.1.1.0 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 17.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Automatically cancel quotations after validity period.
+[sales_team_invoiced_target_domain](sales_team_invoiced_target_domain/) | 17.0.1.0.0 |  | Sales Team Invoiced Target Domain
 [sales_team_security](sales_team_security/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | New group for seeing only sales channel's documents
 [sales_team_security_crm](sales_team_security_crm/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates sales_team_security with crm
 [sales_team_security_sale](sales_team_security_sale/) | 17.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Integrates sales_team_security with sale
@@ -2222,7 +2224,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_survey](partner_survey/) | 17.0.1.0.0 |  | Link partners with their survey results
-[survey_certification_sending](survey_certification_sending/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Controls the automatic sending of certifications in surveys.
+[survey_certification_py3o](survey_certification_py3o/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Survey Certification Py3o
+[survey_certification_sending](survey_certification_sending/) | 17.0.1.1.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Controls the automatic sending of certifications in surveys.
 [survey_contact_generation](survey_contact_generation/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Generate new contacts from surveys
 [survey_crm_generation](survey_crm_generation/) | 17.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Link CRM leads to sale orders generated from surveys
@@ -2386,7 +2389,9 @@ addon | version | maintainers | summary
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.0 |  | Skip payment for logged users in checkout process
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.0 |  | Hide any Product Categories that are empty
 [website_sale_hide_price](website_sale_hide_price/) | 17.0.1.1.2 |  | Hide product prices on the shop
+[website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | Displays the user's regular products in the e-commerce.
 [website_sale_order_type](website_sale_order_type/) | 17.0.1.0.0 | [![pilarvargas-tecnativa](https://github.com/pilarvargas-tecnativa.png?size=30px)](https://github.com/pilarvargas-tecnativa) | This module allows sale_order_type to work with website_sale.
+[website_sale_product_attachment](website_sale_product_attachment/) | 17.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Let visitors download attachments from a product page
 [website_sale_product_attribute_filter_category](website_sale_product_attribute_filter_category/) | 17.0.1.0.0 |  | Allow group attributes in shop by categories
 [website_sale_product_attribute_filter_order](website_sale_product_attribute_filter_order/) | 17.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Move active checkbox options to the first place of the list
 [website_sale_product_attribute_value_filter_existing](website_sale_product_attribute_value_filter_existing/) | 17.0.1.0.0 |  | Allow hide attributes values not used in variants
@@ -3148,6 +3153,7 @@ addon | version | maintainers | summary
 [account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.1.1 |  | Intercompany invoice rules
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 17.0.1.0.0 |  | This module adds a wizard to create companies easily
 [base_multi_company](base_multi_company/) | 17.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
+[crm_tag_multi_company](crm_tag_multi_company/) | 17.0.1.0.0 |  | This module add multi-company management to crm tag
 [mail_multicompany](mail_multicompany/) | 17.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Email Gateway Multi company
 [partner_multi_company](partner_multi_company/) | 17.0.1.0.1 |  | Select individually the partner visibility on each company
 [product_multi_company](product_multi_company/) | 17.0.1.0.0 |  | Select individually the product template visibility on each company
@@ -4634,9 +4640,9 @@ addon | version | maintainers | summary
 [l10n_ro_dvi](l10n_ro_dvi/) | 17.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_etransport](l10n_ro_etransport/) | 17.0.0.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - E-Trasnport
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.33.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 17.0.1.34.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 17.0.0.5.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
-[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.10.1 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
+[l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 17.0.1.11.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 17.0.1.2.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
 [l10n_ro_payment_receipt_report](l10n_ro_payment_receipt_report/) | 17.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Payment Receipt Report
 [l10n_ro_payment_to_statement](l10n_ro_payment_to_statement/) | 17.0.1.5.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Add payment to cash statement
@@ -4786,7 +4792,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 17.0.2.0.0 | [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.2 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) [![hildickethan-S73](https://github.com/hildickethan-S73.png?size=30px)](https://github.com/hildickethan-S73) | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur_atlas](delivery_seur_atlas/) | 17.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
@@ -6057,6 +6063,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
 [procurement_purchase_requisition_generation](procurement_purchase_requisition_generation/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Procurement Purchase Requisition Generation
+[product_supplierinfo_disable_autocreation](product_supplierinfo_disable_autocreation/) | 17.0.1.0.0 |  | Add option to disable automatic creation of pricelists for suppliers
 [purchase_advance_payment](purchase_advance_payment/) | 17.0.1.5.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 17.0.1.0.0 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 17.0.1.0.0 |  | This module allows to select only products that can be supplied by the vendor
@@ -6072,7 +6079,7 @@ addon | version | maintainers | summary
 [purchase_invoice_method](purchase_invoice_method/) | 17.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_invoice_plan](purchase_invoice_plan/) | 17.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to purchases order, ability to manage future invoice plan
 [purchase_last_price_info](purchase_last_price_info/) | 17.0.1.0.2 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Purchase Product Last Price Info
-[purchase_lot](purchase_lot/) | 17.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Purchase Lot
+[purchase_lot](purchase_lot/) | 17.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Purchase Lot
 [purchase_manual_currency](purchase_manual_currency/) | 17.0.1.0.0 |  | Allows to manual currency of Purchase
 [purchase_manual_delivery](purchase_manual_delivery/) | 17.0.1.0.1 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_mass_mail](purchase_mass_mail/) | 17.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![anddago78](https://github.com/anddago78.png?size=30px)](https://github.com/anddago78) | Automatically send massive emails to many purchase orders
@@ -6100,6 +6107,7 @@ addon | version | maintainers | summary
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 17.0.1.0.0 |  | Update cost price in stock moves already done
 [purchase_tag](purchase_tag/) | 17.0.1.1.1 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
+[purchase_v12_control_menu](purchase_v12_control_menu/) | 17.0.1.0.0 |  | Purchase Control Menu from v12
 [purchase_warn_message](purchase_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on purchase to ensure warning is populated
 [sale_purchase_force_vendor](sale_purchase_force_vendor/) | 17.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Purchase Force Vendor
 [supplier_calendar](supplier_calendar/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Supplier Calendar
@@ -6213,6 +6221,7 @@ addon | version | maintainers | summary
 [product_packaging_dimension](product_packaging_dimension/) | 17.0.1.0.0 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 17.0.1.0.0 |  | This module binds a product packaging to a packaging level
 [product_packaging_level_salable](product_packaging_level_salable/) | 17.0.1.0.0 |  | Product Packaging level salable
+[product_pricelist_by_contact](product_pricelist_by_contact/) | 17.0.1.0.0 |  | Product Pricelist Per Contact
 [product_pricelist_fixed_currency_rate](product_pricelist_fixed_currency_rate/) | 17.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) [![kobros-tech](https://github.com/kobros-tech.png?size=30px)](https://github.com/kobros-tech) | Set a fixed currency rate between pricelists
 [product_pricelist_item_list_view](product_pricelist_item_list_view/) | 17.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | View and search the list of pricelist items
 [product_pricelist_revision](product_pricelist_revision/) | 17.0.1.0.0 |  | Product Pricelist Revision
@@ -6465,7 +6474,7 @@ addon | version | maintainers | summary
 [project_department](project_department/) | 17.0.1.0.0 |  | Project Department Categorization
 [project_group](project_group/) | 17.0.1.0.0 |  | Add groups for filtering on projects
 [project_group_hr_timesheet](project_group_hr_timesheet/) | 17.0.1.0.0 |  | This module makes project group work properly with timesheets
-[project_key](project_key/) | 17.0.1.0.0 |  | Module decorates projects and tasks with Project Key
+[project_key](project_key/) | 17.0.1.1.0 |  | Module decorates projects and tasks with Project Key
 [project_merge](project_merge/) | 17.0.1.0.0 |  | Wizard to merge project tasks
 [project_milestone_status](project_milestone_status/) | 17.0.1.0.0 | [![lbarry-apsl](https://github.com/lbarry-apsl.png?size=30px)](https://github.com/lbarry-apsl) | Project Milestone Status
 [project_parent](project_parent/) | 17.0.1.0.0 |  | Project Parent
