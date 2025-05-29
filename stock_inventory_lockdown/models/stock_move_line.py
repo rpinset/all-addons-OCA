@@ -18,6 +18,13 @@ class StockMoveLine(models.Model):
         self.ensure_one()
         return self.move_line_ids.mapped("location_dest_id")
 
+    def _location_usage_without_restriction(self):
+        self.ensure_one()
+        return (
+            self.location_dest_id.usage == "inventory"
+            or self.location_id.usage == "inventory"
+        )
+
     @api.constrains("location_dest_id", "location_id", "state")
     def _check_locked_location(self):
         for move_line in self.filtered(lambda m: m.state == "done"):
@@ -26,11 +33,9 @@ class StockMoveLine(models.Model):
             ]._get_locations_open_inventories(
                 [move_line.location_dest_id.id, move_line.location_id.id]
             )
-            if locked_location_ids and not any(
-                [
-                    move_line.location_dest_id.usage == "inventory",
-                    move_line.location_id.usage == "inventory",
-                ]
+            if (
+                locked_location_ids
+                and not move_line._location_usage_without_restriction()
             ):
                 location_names = locked_location_ids.mapped("complete_name")
                 raise ValidationError(

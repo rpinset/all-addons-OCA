@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 
 from freezegun import freeze_time
 
+from odoo import fields
 from odoo.exceptions import ValidationError
 from odoo.tests.common import TransactionCase
 
@@ -52,7 +53,8 @@ class TestFieldServiceSaleStockRoute(TransactionCase):
         Test that commitment_date and commitment_date_end are correctly
         computed when the sale order is confirmed.
         """
-        next_route_day = self.sale_order._get_next_route_day()
+        tomorrow = fields.Datetime.now() + timedelta(days=1)
+        next_route_day = self.sale_order._get_next_route_day(from_date=tomorrow)
         self.sale_order._action_confirm()
 
         self.assertTrue(
@@ -235,3 +237,36 @@ class TestFieldServiceSaleStockRoute(TransactionCase):
             self.fail(
                 "ValidationError was raised even though force_schedule is enabled."
             )
+
+    @freeze_time("2025-05-15")
+    def test_commitment_date_updated_on_fsm_write(self):
+        FSMOrder = self.env["fsm.order"]
+
+        fsm_order = FSMOrder.create(
+            {
+                "location_id": self.test_location.id,
+                "sale_id": self.sale_order.id,
+            }
+        )
+
+        new_start = datetime.now()
+        new_end = new_start + timedelta(hours=1)
+
+        fsm_order.write(
+            {
+                "scheduled_date_start": new_start,
+                "scheduled_date_end": new_end,
+            }
+        )
+
+        self.sale_order.invalidate_cache()
+        self.assertEqual(self.sale_order.commitment_date, new_start)
+        self.assertEqual(self.sale_order.commitment_date_end, new_end)
+
+        messages = self.sale_order.message_ids.filtered(
+            lambda m: "Updated Delivery Dates" in m.body
+        )
+        self.assertTrue(messages)
+        message = messages[0]
+        self.assertIn("- Delivery Date:", message.body)
+        self.assertIn("- Delivery End Date:", message.body)

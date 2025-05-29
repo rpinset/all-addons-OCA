@@ -107,14 +107,11 @@ Date:   Tue Mar 4 09:04:22 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit ac4ba85d9384c926acf8d77f13d91e19d545fc46
-Merge: fd8cd35e7 d6803d412
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Mar 27 08:03:44 2025 +0000
+commit c6777676726eeb89fc24a227b538fdd6d4b406d6
+Author: Jaime Ruiz Maccione <jaime.ruiz@sygel.es>
+Date:   Wed May 28 10:04:08 2025 +0000
 
-    Merge PR #1952 into 15.0
-    
-    Signed-off-by AaronHForgeFlow
+    Added translation using Weblate (Catalan (ca_ES))
 
 
 ## account-fiscal-rule
@@ -442,11 +439,16 @@ Date:   Thu Feb 13 15:15:41 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 8135e3fb5ffd23c315400aa298dba9fca0c6c38e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 23 11:25:53 2025 +0000
+commit 50cbb5ca71cc97f6792aa6fcc7869bafc140ece9
+Author: Weblate <noreply@weblate.org>
+Date:   Mon May 26 14:31:52 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: survey-15.0/survey-15.0-survey_certification_sending
+    Translate-URL: https://translation.odoo-community.org/projects/survey-15-0/survey-15-0-survey_certification_sending/
 
 
 ## knowledge
@@ -492,9 +494,9 @@ Date:   Wed May 21 12:45:38 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 9d151c06a713b2ccceecfeaa6f4138c435c218d7
+commit fe5be1990803f86827616a0991186b5c851231d4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun May 18 17:56:20 2025 +0000
+Date:   Tue May 27 17:06:50 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1075,16 +1077,11 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 4198798880db6c96286450a0791dbbc2ae15adf4
-Author: Weblate <noreply@weblate.org>
-Date:   Wed May 21 08:49:52 2025 +0000
+commit 4d97fa6fc6ef466566e45afc57bed8f4663b17af
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu May 29 08:49:01 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_reserve_rule
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_reserve_rule/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-reporting
@@ -1199,16 +1196,11 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 4a7b0b40d26eacbe269a0a16517aa45d2c401381
-Author: Weblate <noreply@weblate.org>
-Date:   Fri May 23 14:01:35 2025 +0000
+commit 0f848fcfafb110ebc7fb1f5caf623e4708164aca
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed May 28 13:28:46 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_lot_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_lot_sequence/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1222,11 +1214,11 @@ Date:   Sun Feb 2 20:11:57 2025 +0000
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit e36237ed5aa29731c76f1496b03a117d023c22c8
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:13:47 2025 +0000
+commit 5538802a9ec2a188a03c9d88d3c3e427b90f184e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue May 27 22:00:07 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## product-pack
