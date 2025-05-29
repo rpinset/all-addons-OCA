@@ -18,20 +18,15 @@ class TestController(CommonCase):
         # at the end of the start process, our tow controllers must into the
         # controller registered
         controllers = Controller.children_classes.get("base_rest_demo", [])
-
-        self.assertIn(
-            BaseRestDemoPrivateApiController,
-            controllers,
+        self.assertTrue(
+            any([issubclass(x, BaseRestDemoPrivateApiController) for x in controllers])
         )
-        self.assertIn(
-            BaseRestDemoPublicApiController,
-            controllers,
+        self.assertTrue(
+            any([issubclass(x, BaseRestDemoPublicApiController) for x in controllers])
         )
-        self.assertIn(
-            BaseRestDemoNewApiController,
-            controllers,
+        self.assertTrue(
+            any([issubclass(x, BaseRestDemoNewApiController) for x in controllers])
         )
-        self.assertIn(
-            BaseRestDemoJwtApiController,
-            controllers,
+        self.assertTrue(
+            any([issubclass(x, BaseRestDemoJwtApiController) for x in controllers])
         )

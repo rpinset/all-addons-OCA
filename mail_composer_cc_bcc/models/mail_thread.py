@@ -62,6 +62,7 @@ class MailThread(models.AbstractModel):
         recipients_cc_bcc = MailFollowers._get_recipient_data(
             None, message_type, subtype_id, partners_cc_bcc.ids
         )
+        existing_recipients = list([recipient["id"] for recipient in rdata])
         for _, value in recipients_cc_bcc.items():
             for _, data in value.items():
                 if not data.get("id"):
@@ -79,6 +80,9 @@ class MailThread(models.AbstractModel):
                     "type": msg_type,
                     "is_follower": data.get("is_follower"),
                 }
+                if pdata["id"] in existing_recipients:
+                    continue
+                existing_recipients.append(pdata["id"])
                 rdata.append(pdata)
         return rdata
 

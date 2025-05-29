@@ -67,48 +67,24 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_product_supplierinfo__discount1
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_order_line__discount1
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_report__discount1
-#: model:ir.model.fields,field_description:purchase_triple_discount.field_triple_discount_mixin__discount1
 msgid "Discount 1 (%)"
-msgstr ""
-
-#. module: purchase_triple_discount
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_product_supplierinfo_discount1_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_purchase_order_line_discount1_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_triple_discount_mixin_discount1_limit
-msgid "Discount 1 must be lower than 100%."
 msgstr ""
 
 #. module: purchase_triple_discount
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_product_supplierinfo__discount2
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_order_line__discount2
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_report__discount2
-#: model:ir.model.fields,field_description:purchase_triple_discount.field_triple_discount_mixin__discount2
 #, fuzzy
 msgid "Discount 2 (%)"
 msgstr "Pop. 2 (%)"
 
 #. module: purchase_triple_discount
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_product_supplierinfo_discount2_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_purchase_order_line_discount2_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_triple_discount_mixin_discount2_limit
-msgid "Discount 2 must be lower than 100%."
-msgstr "Popust 2 mora biti manje od 100%."
-
-#. module: purchase_triple_discount
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_product_supplierinfo__discount3
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_order_line__discount3
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_report__discount3
-#: model:ir.model.fields,field_description:purchase_triple_discount.field_triple_discount_mixin__discount3
 #, fuzzy
 msgid "Discount 3 (%)"
 msgstr "Pop. 3(%)"
-
-#. module: purchase_triple_discount
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_product_supplierinfo_discount3_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_purchase_order_line_discount3_limit
-#: model:ir.model.constraint,message:purchase_triple_discount.constraint_triple_discount_mixin_discount3_limit
-msgid "Discount 3 must be lower than 100%."
-msgstr "Popust 3 mora biti manje od 100%."
 
 #. module: purchase_triple_discount
 #: model:ir.model,name:purchase_triple_discount.model_purchase_order_line
@@ -140,7 +116,6 @@ msgstr ""
 
 #. module: purchase_triple_discount
 #: model:ir.model.fields,field_description:purchase_triple_discount.field_purchase_report__discount
-#: model:ir.model.fields,field_description:purchase_triple_discount.field_triple_discount_mixin__discount
 #: model_terms:ir.ui.view,arch_db:purchase_triple_discount.product_supplierinfo_form_view
 #: model_terms:ir.ui.view,arch_db:purchase_triple_discount.product_supplierinfo_tree_view
 #: model_terms:ir.ui.view,arch_db:purchase_triple_discount.purchase_order_triple_discount_form_view
@@ -148,10 +123,11 @@ msgstr ""
 msgid "Total discount"
 msgstr ""
 
-#. module: purchase_triple_discount
-#: model:ir.model,name:purchase_triple_discount.model_triple_discount_mixin
-msgid "Triple discount mixin"
-msgstr ""
+#~ msgid "Discount 2 must be lower than 100%."
+#~ msgstr "Popust 2 mora biti manje od 100%."
+
+#~ msgid "Discount 3 must be lower than 100%."
+#~ msgstr "Popust 3 mora biti manje od 100%."
 
 #~ msgid "Disc. 2 (%)"
 #~ msgstr "Pop. 2 (%)"

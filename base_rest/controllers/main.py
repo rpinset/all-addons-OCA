@@ -96,13 +96,6 @@ class RestController(Controller):
 
     @classmethod
     def __init_subclass__(cls):
-        if (
-            "RestController" in globals()
-            and RestController in cls.__bases__
-            and Controller not in cls.__bases__
-        ):
-            # Ensure that Controller's __init_subclass__ kicks in.
-            cls.__bases__ += (Controller,)
         super().__init_subclass__()
         if "RestController" not in globals() or not any(
             issubclass(b, RestController) for b in cls.__bases__

@@ -24,6 +24,7 @@ VALID_HASHES = [
     "8f26c4084cc7fc300e64d19ccdc944fe",
     "db6cc0d3513a0c85bd716e4cb0a4d09c",
     "458982c6cb3a347b13008f7d8130f633",  # 2025-04-08, odoo commit 3af276804101
+    "2e0c730330ae3bdf00c6bfd956b0527b",
 ]
 
 

@@ -11,14 +11,11 @@ class IrMailServer(models.Model):
     is_fatturapa_pec = fields.Boolean("E-invoice PEC server")
     email_from_for_fatturaPA = fields.Char("Sender Email Address")
 
-    def test_smtp_connection(self):
-        for server in self:
-            if server.is_fatturapa_pec:
-                # self.env.user.email is used to test SMTP connection
-                server.env.user.email = server.email_from_for_fatturaPA
-            # no need to revert to correct email: UserError is always raised and
-            # rollback done
-        return super().test_smtp_connection()
+    def _get_test_email_addresses(self):
+        email_from, email_to = super()._get_test_email_addresses()
+        if self.is_fatturapa_pec:
+            email_from = self.email_from_for_fatturaPA
+        return email_from, email_to
 
     @api.model
     def _search(

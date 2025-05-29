@@ -3,7 +3,7 @@
 {
     "name": "Email CC and BCC",
     "summary": "This module enables sending mail to CC and BCC partners in mail composer form.",
-    "version": "16.0.2.0.5",
+    "version": "16.0.2.0.6",
     "development_status": "Alpha",
     "category": "Social",
     "website": "https://github.com/OCA/social",

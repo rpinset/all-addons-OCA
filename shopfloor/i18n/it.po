@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-03 14:48+0000\n"
+"PO-Revision-Date: 2025-05-28 10:54+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -135,6 +135,14 @@ msgstr ""
 "se si vuole fornire un prodotto derivato all'operazione successiva.\n"
 "\n"
 "Incompatibile con: \"Preleva e imballa contemporaneamente\"\n"
+
+#. module: shopfloor
+#. odoo-python
+#: code:addons/shopfloor/actions/message.py:0
+#, python-format
+msgid ""
+"%(message_code)s not found in the current transfer or already in a package."
+msgstr "%(message_code)s non trovato nel trasferimento attuale o già nel collo."
 
 #. module: shopfloor
 #. odoo-python
@@ -2347,18 +2355,15 @@ msgstr "Prelievo per area"
 #. odoo-python
 #: code:addons/shopfloor/actions/message.py:0
 #, python-format
-msgid ""
-"{message_code} not found in the current transfer or already in a package."
-msgstr ""
-"{message_code} non trovato nel trasferimento attuale o già presente in un "
-"collo."
-
-#. module: shopfloor
-#. odoo-python
-#: code:addons/shopfloor/actions/message.py:0
-#, python-format
 msgid "{} is not a valid destination package."
 msgstr "{} non è un collo destinazione valido."
+
+#, python-format
+#~ msgid ""
+#~ "{message_code} not found in the current transfer or already in a package."
+#~ msgstr ""
+#~ "{message_code} non trovato nel trasferimento attuale o già presente in un "
+#~ "collo."
 
 #, python-format
 #~ msgid "Package {} is not in the current transfer."

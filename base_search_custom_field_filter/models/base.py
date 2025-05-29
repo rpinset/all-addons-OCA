@@ -53,8 +53,11 @@ class Base(models.AbstractModel):
             field = custom_filter._get_related_field()
             field_name = custom_filter.expression
             res["models"][self._name][field_name] = field.get_description(self.env)
-            # force this for avoiding to appear on the rest of the UI
-            res["models"][self._name][field_name]["selectable"] = False
-            res["models"][self._name][field_name]["sortable"] = False
-            res["models"][self._name][field_name]["store"] = False
+            # The fields of the current model still need to work with group by, so just hide
+            # the fields that has different model_name than self._name.
+            if field.model_name != self._name:
+                # force this for avoiding to appear on the rest of the UI
+                res["models"][self._name][field_name]["selectable"] = False
+                res["models"][self._name][field_name]["sortable"] = False
+                res["models"][self._name][field_name]["store"] = False
         return res
