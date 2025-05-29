@@ -149,16 +149,16 @@ Date:   Thu Oct 3 06:45:43 2024 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 7939687c1da2d97295a1b561f8e1c967e56d903e
+commit 4decb5993583b4bf87db7fbbedad35bf11329c1c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Dec 5 08:41:33 2024 +0000
+Date:   Thu May 29 13:58:33 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (36 of 36 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-product_harmonized_system
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-product_harmonized_system/it/
+    Translation: intrastat-extrastat-12.0/intrastat-extrastat-12.0-product_harmonized_system_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-12-0/intrastat-extrastat-12-0-product_harmonized_system_delivery/it/
 
 
 ## mis-builder
