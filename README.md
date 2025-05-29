@@ -197,16 +197,16 @@ Date:   Thu Oct 3 08:18:23 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 340e44234a165769115bc954120bfcde5dd7b74e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:43:50 2025 +0000
+commit b0446dad5d0f5fe59f4487c4c490484bab51c70b
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Wed May 28 14:52:36 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 85.7% (96 of 112 strings)
+    Currently translated at 100.0% (222 of 222 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_mandate
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_mandate/it/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_payment_order
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_payment_order/fr/
 
 
 ## account-reconcile
