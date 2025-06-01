@@ -102,3 +102,25 @@ class TestSaleOrderLineSequence(TransactionCase):
             str(so.order_line[1].visible_sequence),
             self.invoice.line_ids[1].related_so_sequence,
         )
+
+    def test_combined_invoice_sequence(self):
+        """A combination of sequences is rendered correctly on the invoice line"""
+        so = self._create_sale_order()
+        so.action_confirm()
+        so.order_line.qty_delivered = 5
+        so2 = so.copy()
+        so2.order_line.visible_sequence = 2
+        so2.action_confirm()
+        so2.order_line.qty_delivered = 4
+        invoice = (so + so2)._create_invoices()
+        self.assertEqual(so.invoice_ids, so2.invoice_ids)
+
+        # Merge move lines (as per customization)
+        invoice_lines = so2.order_line.invoice_lines
+        so2.order_line.invoice_lines = so.order_line.invoice_lines
+        so.order_line.invoice_lines.quantity = 9
+        invoice_lines.unlink()
+
+        self.assertEqual(
+            invoice.line_ids[0].related_so_sequence, f"{so.name}/1, {so2.name}/2"
+        )
