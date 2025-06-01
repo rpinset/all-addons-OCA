@@ -19,8 +19,19 @@ msgid "<span>History details</span>"
 msgstr ""
 
 #. module: stock_quant_history
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_company__stock_history_snapshot_auto_locks_picking
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_config_settings__stock_history_snapshot_auto_locks_picking
+msgid "Auto lock picking on snapshot"
+msgstr ""
+
+#. module: stock_quant_history
 #: model:ir.model.fields,help:stock_quant_history.field_stock_quant_history_snapshot__previous_snapshot_id
 msgid "Base snapshot used to generate this snapshot"
+msgstr ""
+
+#. module: stock_quant_history
+#: model:ir.model,name:stock_quant_history.model_res_company
+msgid "Companies"
 msgstr ""
 
 #. module: stock_quant_history
@@ -31,6 +42,11 @@ msgstr ""
 #. module: stock_quant_history
 #: model:ir.actions.server,name:stock_quant_history.action_multi_related_stock_quant_history_tree_view
 msgid "Compare stocks"
+msgstr ""
+
+#. module: stock_quant_history
+#: model:ir.model,name:stock_quant_history.model_res_config_settings
+msgid "Config Settings"
 msgstr ""
 
 #. module: stock_quant_history
@@ -61,6 +77,9 @@ msgid "Default unit of measure used for all stock operations."
 msgstr ""
 
 #. module: stock_quant_history
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_company__display_name
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:stock_quant_history.field_stock_picking__display_name
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history__display_name
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history_snapshot__display_name
 msgid "Display Name"
@@ -103,6 +122,9 @@ msgid "Group By"
 msgstr ""
 
 #. module: stock_quant_history
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_company__id
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_config_settings__id
+#: model:ir.model.fields,field_description:stock_quant_history.field_stock_picking__id
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history__id
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history_snapshot__id
 msgid "ID"
@@ -117,6 +139,9 @@ msgid "Inventory date"
 msgstr ""
 
 #. module: stock_quant_history
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_company____last_update
+#: model:ir.model.fields,field_description:stock_quant_history.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:stock_quant_history.field_stock_picking____last_update
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history____last_update
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history_snapshot____last_update
 msgid "Last Modified on"
@@ -262,8 +287,35 @@ msgid ""
 msgstr ""
 
 #. module: stock_quant_history
+#: model:ir.model,name:stock_quant_history.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: stock_quant_history
 #: model:ir.model.fields,field_description:stock_quant_history.field_stock_quant_history__product_uom_id
 msgid "Unit of Measure"
+msgstr ""
+
+#. module: stock_quant_history
+#: model_terms:ir.ui.view,arch_db:stock_quant_history.res_config_settings_view_form
+msgid ""
+"When a stock quant history snapshot is generated,\n"
+"                            automatically locks all done pickings that are related to\n"
+"                            the snapshot"
+msgstr ""
+
+#. module: stock_quant_history
+#: model:ir.model.fields,help:stock_quant_history.field_res_company__stock_history_snapshot_auto_locks_picking
+#: model:ir.model.fields,help:stock_quant_history.field_res_config_settings__stock_history_snapshot_auto_locks_picking
+msgid ""
+"When a stock quant history snapshot is generated, automatically locks all "
+"done pickings that are related to the snapshot."
+msgstr ""
+
+#. module: stock_quant_history
+#: code:addons/stock_quant_history/models/stock_picking.py:0
+#, python-format
+msgid "You cannot unlock '%s' as stock histories exists:%s%s."
 msgstr ""
 
 #. module: stock_quant_history

@@ -26,7 +26,6 @@ msgstr "%sSkolų suderinimo aktas tarp %s ir %s %s"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #, python-format
 msgid "%sStatement up to %s in %s"
@@ -89,8 +88,10 @@ msgstr "91 - 120 dienų"
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid ""
-"<span class=\"o_form_label\">Aging details can be shown in the report, expressed in aging\n"
-"        buckets, so the partner can review how much is open, due or overdue.\n"
+"<span class=\"o_form_label\">Aging details can be shown in the report, "
+"expressed in aging\n"
+"        buckets, so the partner can review how much is open, due or "
+"overdue.\n"
 "                    </span>"
 msgstr ""
 "<span class=\"o_form_label\">Skolų informacija gali būti rodoma ataskaitoje "
@@ -102,11 +103,16 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The activity statement provides details of all activity on\n"
-"                    a partner's receivables and payables between two selected dates. This includes all invoices,\n"
-"                    refunds and payments. Any outstanding balance dated prior to the chosen statement\n"
-"                    period will appear as a forward balance at the top of the statement. The list is\n"
-"                    displayed in chronological order and is split by currencies.\n"
+"<span class=\"o_form_label\">The activity statement provides details of all "
+"activity on\n"
+"                    a partner's receivables and payables between two "
+"selected dates. This includes all invoices,\n"
+"                    refunds and payments. Any outstanding balance dated "
+"prior to the chosen statement\n"
+"                    period will appear as a forward balance at the top of "
+"the statement. The list is\n"
+"                    displayed in chronological order and is split by "
+"currencies.\n"
 "                </span>\n"
 "                <br/>\n"
 "                <br/>"
@@ -127,8 +133,10 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.detailed_activity_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The detailed activity statement is an extension of the activity statement, and intends to explain the transactions\n"
-"that have happened during the period, also providing with a Prior Balance section and an Ending Balance section.\n"
+"<span class=\"o_form_label\">The detailed activity statement is an extension "
+"of the activity statement, and intends to explain the transactions\n"
+"that have happened during the period, also providing with a Prior Balance "
+"section and an Ending Balance section.\n"
 "                </span>\n"
 "                <br/>\n"
 "                <br/>"
@@ -143,9 +151,12 @@ msgstr ""
 #. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_statement_wizard_view
 msgid ""
-"<span class=\"o_form_label\">The outstanding statement provides details of all partner's outstanding\n"
-"        receivables and payables up to a particular date. This includes all unpaid invoices, unclaimed\n"
-"        refunds and outstanding payments. The list is displayed in chronological order and is\n"
+"<span class=\"o_form_label\">The outstanding statement provides details of "
+"all partner's outstanding\n"
+"        receivables and payables up to a particular date. This includes all "
+"unpaid invoices, unclaimed\n"
+"        refunds and outstanding payments. The list is displayed in "
+"chronological order and is\n"
 "        split by currencies.\n"
 "                </span>\n"
 "                <br/>\n"
@@ -199,7 +210,14 @@ msgid "Account type"
 msgstr "Buhalterinės sąskaitos tipas"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
+#: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_detailed_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__excluded_accounts_selector
+msgid "Accounts to exclude"
+msgstr ""
+
+#. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_activity_statement_html
@@ -276,7 +294,6 @@ msgstr "Pritaikyta suma"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 #, python-format
@@ -324,15 +341,12 @@ msgstr "Sukurta"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "Current"
 msgstr "Dabar"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
@@ -366,8 +380,6 @@ msgstr "Data:"
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
@@ -387,7 +399,6 @@ msgid "Detailed %sStatement between %s and %s in %s"
 msgstr "Detalus %s skolų suderinimo aktas tarp %s ir %s %s"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
@@ -436,7 +447,6 @@ msgstr "Nerodyti kontrahentų be pradelstų skolų"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 #, python-format
@@ -455,8 +465,6 @@ msgstr "Aktyvuoti Neapmokėtų skolų aktą"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
@@ -567,8 +575,6 @@ msgstr "Senesni"
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
@@ -577,7 +583,6 @@ msgid "Open Amount"
 msgstr "Suma"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
@@ -594,7 +599,6 @@ msgid "Original Amount"
 msgstr "Pradinė suma"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_outstanding_statement
 #: model:ir.actions.report,name:partner_statement.action_print_outstanding_statement_html
@@ -671,8 +675,6 @@ msgstr "Gautina"
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #, python-format
 msgid "Reference Number"
@@ -683,6 +685,16 @@ msgstr "Susijusio dokumento numeris"
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 msgid "Reference number"
 msgstr "Susijusio dokumento numeris"
+
+#. module: partner_statement
+#: model:ir.model.fields,help:partner_statement.field_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_detailed_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_outstanding_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_statement_common_wizard__excluded_accounts_selector
+msgid ""
+"Select account codes to be excluded with a comma-separated list of "
+"expressions like 70%."
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__show_aging_buckets
@@ -752,15 +764,12 @@ msgstr "Tiekėjo"
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #, python-format
 msgid "Supplier "
 msgstr "Tiekėjo "
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/report_statement_common.py:0
 #: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "Total"
@@ -778,10 +787,7 @@ msgstr "Neapmokėtų skolų akto naudojimas"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
 #, python-format
 msgid "VAT:"

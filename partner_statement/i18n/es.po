@@ -128,8 +128,8 @@ msgstr ""
 "fecha anterior al estado de cuenta elegido\n"
 "                    período aparecerá como un saldo adelantado en la parte "
 "superior del estado de cuenta. la lista es\n"
-"                    se muestra en orden cronológico y se divide por monedas."
-"\n"
+"                    se muestra en orden cronológico y se divide por "
+"monedas.\n"
 "                </span>\n"
 "                <br/>\n"
 "                <br/>"
@@ -214,6 +214,14 @@ msgstr "<strong>Este cliente no tiene asientos vencidos</strong>"
 #: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__account_type
 msgid "Account type"
 msgstr "Tipo de cuenta"
+
+#. module: partner_statement
+#: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_detailed_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__excluded_accounts_selector
+msgid "Accounts to exclude"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -454,7 +462,8 @@ msgstr "Fecha Vencimiento"
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_res_config_settings__group_activity_statement
 msgid "Enable OCA Activity & Detailed Activity Statements"
-msgstr "Activar la Actividad de OCA y las Declaraciones Detalladas de Actividad"
+msgstr ""
+"Activar la Actividad de OCA y las Declaraciones Detalladas de Actividad"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_res_config_settings__group_outstanding_statement
@@ -683,6 +692,16 @@ msgstr "Número de Referencia"
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
 msgid "Reference number"
 msgstr "Número de Referencia"
+
+#. module: partner_statement
+#: model:ir.model.fields,help:partner_statement.field_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_detailed_activity_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_outstanding_statement_wizard__excluded_accounts_selector
+#: model:ir.model.fields,help:partner_statement.field_statement_common_wizard__excluded_accounts_selector
+msgid ""
+"Select account codes to be excluded with a comma-separated list of "
+"expressions like 70%."
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__show_aging_buckets

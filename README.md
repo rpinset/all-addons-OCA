@@ -89,11 +89,16 @@ Date:   Thu May 29 13:27:17 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit cceb126c8cc7b19240493daa1521dc380aa4f16f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 26 15:04:43 2025 +0000
+commit 9c42bb7c556a76aec1dfab68ca67990f5a921364
+Author: Weblate <noreply@weblate.org>
+Date:   Fri May 30 19:52:08 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/
 
 
 ## account-invoice-reporting
@@ -406,9 +411,9 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2c563b41e6c79ffb2da907b3a6dc208e75a8a613
+commit 2d67dbd385037def16625fbf741996f972863078
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 13 12:09:24 2025 +0000
+Date:   Fri May 30 09:23:24 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1205,16 +1210,16 @@ Date:   Thu May 29 13:30:22 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit f8d2401b9bafdd0fb9a5c66bc30d7e5c6e65cd46
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:08:59 2025 +0000
+commit 2f9c3f4ca454fbfb951adebde89581a538789c90
+Author: Pierre Verkest <pierreverkest84@gmail.com>
+Date:   Fri May 30 07:13:27 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 12.5% (1 of 8 strings)
+    Currently translated at 100.0% (54 of 54 strings)
     
-    Translation: stock-logistics-reporting-14.0/stock-logistics-reporting-14.0-stock_picking_comment_template
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-14-0/stock-logistics-reporting-14-0-stock_picking_comment_template/it/
+    Translation: stock-logistics-reporting-14.0/stock-logistics-reporting-14.0-stock_quant_history
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-14-0/stock-logistics-reporting-14-0-stock_quant_history/fr/
 
 
 ## rma

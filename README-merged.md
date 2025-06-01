@@ -347,7 +347,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 14.0.1.5.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
+[partner_statement](partner_statement/) | 14.0.1.6.0 | [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -2018,7 +2018,7 @@ addon | version | maintainers | summary
 [sale_quotation_template_product_multi_add](sale_quotation_template_product_multi_add/) | 14.0.1.0.1 |  | Feature to add multiple products to quotation template
 [sale_rental](sale_rental/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Manage Rental of Products
 [sale_require_po_doc](sale_require_po_doc/) | 14.0.1.0.1 |  | Sale Orders Require PO or Sales Documentation
-[sale_restricted_qty](sale_restricted_qty/) | 14.0.1.1.3 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Sale order min quantity
+[sale_restricted_qty](sale_restricted_qty/) | 14.0.1.1.4 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Sale order min quantity
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 14.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_start_end_dates](sale_start_end_dates/) | 14.0.1.0.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds start date and end date on sale order lines
 [sale_stock_delivery_address](sale_stock_delivery_address/) | 14.0.1.0.3 |  | Sale Stock Delivery Address
@@ -6479,7 +6479,7 @@ addon | version | maintainers | summary
 [stock_picking_group_by_partner_by_carrier_sale_line_position](stock_picking_group_by_partner_by_carrier_sale_line_position/) | 14.0.1.0.2 |  | Glue module for sale position and delivery report grouped
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 14.0.2.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
 [stock_picking_report_valued](stock_picking_report_valued/) | 14.0.1.2.2 |  | Adding Valued Picking on Delivery Slip report
-[stock_quant_history](stock_quant_history/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Re-generate stock quants for given date
+[stock_quant_history](stock_quant_history/) | 14.0.1.2.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) [![StephaneMangin](https://github.com/StephaneMangin.png?size=30px)](https://github.com/StephaneMangin) | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 14.0.1.0.0 | [![petrus-v](https://github.com/petrus-v.png?size=30px)](https://github.com/petrus-v) | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 14.0.1.0.0 |  | Provides stock quantity by location on past date
 [stock_report_quantity_by_location](stock_report_quantity_by_location/) | 14.0.1.0.0 |  | Stock Report Quantity By Location

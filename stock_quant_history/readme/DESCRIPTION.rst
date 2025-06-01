@@ -7,3 +7,5 @@ are present in the database.
 
 Next snapshot is computed based on the previous snapshot present in the database.
 
+Once a snapshot has been taken, every locked and done picking won't be able to unlock
+to avoid incoherent stock history.
