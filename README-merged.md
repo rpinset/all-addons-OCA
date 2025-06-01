@@ -859,7 +859,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 18.0.1.0.1 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.5 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 18.0.1.0.6 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 18.0.1.1.1 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -2805,7 +2805,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 18.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 18.0.1.0.0 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 18.0.1.0.1 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Holidays Public City
 
 [//]: # (end addons)
@@ -4392,7 +4392,7 @@ addon | version | maintainers | summary
 [l10n_ro_config](l10n_ro_config/) | 18.0.0.4.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Localization Install and Config Applications
 [l10n_ro_dvi](l10n_ro_dvi/) | 18.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - DVI
 [l10n_ro_fiscal_validation](l10n_ro_fiscal_validation/) | 18.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Fiscal Validation
-[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.8.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
+[l10n_ro_message_spv](l10n_ro_message_spv/) | 18.0.1.9.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Mesaje SPV
 [l10n_ro_nondeductible_vat](l10n_ro_nondeductible_vat/) | 18.0.0.2.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Nondeductible VAT
 [l10n_ro_partner_create_by_vat](l10n_ro_partner_create_by_vat/) | 18.0.0.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Partner Create by VAT
 [l10n_ro_partner_unique](l10n_ro_partner_unique/) | 18.0.0.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Creates a rule for vat and nrc unique for partners.
@@ -4401,7 +4401,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account](l10n_ro_stock_account/) | 18.0.1.17.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 18.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 18.0.1.1.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
-[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 18.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
+[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 18.0.1.2.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 18.0.1.5.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 18.0.0.2.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
 [l10n_ro_stock_account_tracking](l10n_ro_stock_account_tracking/) | 18.0.1.1.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
@@ -5920,6 +5920,7 @@ addon | version | maintainers | summary
 [product_category_code](product_category_code/) | 18.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to define a code on product categories
 [product_category_name_translatable](product_category_name_translatable/) | 18.0.1.0.0 |  | Translate Product Category Names
 [product_code_unique](product_code_unique/) | 18.0.1.0.0 |  | Set Product Internal Reference as Unique
+[product_company_default](product_company_default/) | 18.0.1.0.0 |  | Product Company Default
 [product_cost_security](product_cost_security/) | 18.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Product cost security restriction view
 [product_customerinfo](product_customerinfo/) | 18.0.1.1.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Allows to define prices for customers in the products
 [product_dimension](product_dimension/) | 18.0.1.0.0 |  | Product Dimension
@@ -7085,6 +7086,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_cancel_confirm](base_cancel_confirm/) | 18.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base Cancel Confirm
+[base_export_manager](base_export_manager/) | 18.0.1.0.1 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 18.0.1.0.0 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 18.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 18.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis

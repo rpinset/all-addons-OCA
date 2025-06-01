@@ -198,20 +198,25 @@ Date:   Thu May 22 06:48:42 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit afbfe998640456e892d19ca90e81d8ed2d600ee5
+commit 1674e5da6bf6e98650a45807e13f32e01b2414e6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 21 11:37:54 2025 +0000
+Date:   Fri May 30 06:40:40 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 629086fe2011e7e4df6af972b2a6dbb61b54c120
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon May 26 10:34:31 2025 +0000
+commit 571fd86a593fd95c9e3db32f55e535c011bf7fda
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Thu May 29 18:53:08 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (34 of 34 strings)
+    
+    Translation: bank-statement-import-18.0/bank-statement-import-18.0-account_statement_import_file
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-18-0/bank-statement-import-18-0-account_statement_import_file/it/
 
 
 ## account-payment
@@ -574,16 +579,11 @@ Date:   Tue May 27 01:53:28 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 8c43adb2ae79df60cad290036058739ab182fbc1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat May 3 10:09:56 2025 +0000
+commit 5f4d2c15c00f9a899f629da5eaa674e2ee8229a6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 30 06:13:02 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (42 of 42 strings)
-    
-    Translation: hr-holidays-18.0/hr-holidays-18.0-hr_holidays_public
-    Translate-URL: https://translation.odoo-community.org/projects/hr-holidays-18-0/hr-holidays-18-0-hr_holidays_public/it/
+    [BOT] post-merge updates
 
 
 ## department
@@ -916,14 +916,11 @@ Date:   Sun Feb 2 19:35:29 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit be62b92b174dfaaa3bc2156d011e42350fa9d70a
-Merge: d6d8760b 8518cb13
+commit f5b0f0bce824bbfe41abd50fcf9bbe713008dbd1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 29 15:48:39 2025 +0000
+Date:   Fri May 30 13:10:49 2025 +0000
 
-    Merge PR #1298 into 18.0
-    
-    Signed-off-by dhongu
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1197,16 +1194,11 @@ Date:   Wed Feb 26 10:58:47 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 11e440df39ed60581819145762bee51377bbc6f7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 08:30:46 2025 +0000
+commit 49e4c3ba6f58bb3d2adb734cf87945d42813d7d1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat May 31 14:09:23 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: product-attribute-18.0/product-attribute-18.0-product_variant_route_mto
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-18-0/product-attribute-18-0-product_variant_route_mto/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
@@ -1434,9 +1426,9 @@ Date:   Tue Mar 18 10:52:27 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 85787dbcb16ab03afca6ca733656cf7cc6b1ce70
+commit 38434805e9b987685599b6b16d06c8cc1dec6c02
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 22 07:16:39 2025 +0000
+Date:   Fri May 30 09:54:52 2025 +0000
 
     [BOT] post-merge updates
 
