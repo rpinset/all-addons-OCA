@@ -290,9 +290,21 @@ msgid "Message Delivery error"
 msgstr ""
 
 #. module: mass_mailing_custom_unsubscribe
+#: model:ir.model.fields,field_description:mass_mailing_custom_unsubscribe.field_mail_unsubscription__message_search
+#: model:ir.model.fields,field_description:mass_mailing_custom_unsubscribe.field_mail_unsubscription_reason__message_search
+msgid "Message Search"
+msgstr ""
+
+#. module: mass_mailing_custom_unsubscribe
 #: model:ir.model.fields,help:mass_mailing_custom_unsubscribe.field_mail_unsubscription__message_content
 #: model:ir.model.fields,help:mass_mailing_custom_unsubscribe.field_mail_unsubscription_reason__message_content
 msgid "Message content, to be used only in searches"
+msgstr ""
+
+#. module: mass_mailing_custom_unsubscribe
+#: model:ir.model.fields,help:mass_mailing_custom_unsubscribe.field_mail_unsubscription__message_search
+#: model:ir.model.fields,help:mass_mailing_custom_unsubscribe.field_mail_unsubscription_reason__message_search
+msgid "Message search, to be used only in searches"
 msgstr ""
 
 #. module: mass_mailing_custom_unsubscribe

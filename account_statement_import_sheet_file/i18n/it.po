@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-18 06:13+0000\n"
-"PO-Revision-Date: 2024-11-26 20:06+0000\n"
-"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"PO-Revision-Date: 2025-05-29 21:25+0000\n"
+"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_statement_import_sheet_file
 #. odoo-python
@@ -101,12 +101,12 @@ msgstr "Baltico (Latin-4 / ISO 8859-4)"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__bank_account_column
 msgid "Bank Account Column"
-msgstr "Colonna Conto Corrente"
+msgstr "Colonna conto corrente"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__bank_name_column
 msgid "Bank Name Column"
-msgstr "Colonna Nome Banca"
+msgstr "Colonna nome banca"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model,name:account_statement_import_sheet_file.model_account_statement_import_sheet_mapping
@@ -165,7 +165,7 @@ msgstr "Importo credito della transazione nella valuta del registro"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__currency_column
 msgid "Currency Column"
-msgstr "Colonna Valuta"
+msgstr "Colonna valuta"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields.selection,name:account_statement_import_sheet_file.selection__account_statement_import_sheet_mapping__file_encoding__koi8_r
@@ -220,7 +220,7 @@ msgstr "Delimitatore"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__description_column
 msgid "Description Column"
-msgstr "Colonna Descrizione"
+msgstr "Colonna descrizione"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__display_name
@@ -366,7 +366,7 @@ msgstr "Nessuna codifica valida è stata trovata per il file allegato"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__notes_column
 msgid "Notes Column"
-msgstr "Colonna Note"
+msgstr "Colonna note"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__offset_column
@@ -383,17 +383,17 @@ msgstr "L'offset non può essere negativo"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__original_amount_column
 msgid "Original Amount Column"
-msgstr "Colonna Importo Originale"
+msgstr "Colonna importo originale"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__original_currency_column
 msgid "Original Currency Column"
-msgstr "Colonna Valuta Originale"
+msgstr "Colonna valuta originale"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__partner_name_column
 msgid "Partner Name Column"
-msgstr "Colonna Nome Contatto"
+msgstr "Colonna nome contatto"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__bank_name_column
@@ -408,7 +408,7 @@ msgstr "Conto bancario del partner"
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,field_description:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__reference_column
 msgid "Reference Column"
-msgstr "Colonna Riferimento"
+msgstr "Colonna riferimento"
 
 #. module: account_statement_import_sheet_file
 #: model:ir.model.fields,help:account_statement_import_sheet_file.field_account_statement_import_sheet_mapping__footer_lines_skip_count
@@ -445,7 +445,7 @@ msgstr ""
 "Valore semplice: usa il valore con segno nella colonna importo\n"
 "Valore assoluto: usa la stessa colonna per debito e credito\n"
 "(valore assoluto + segno indicato)\n"
-"Distinzione colonne Debito/Credito: una due colonne distinte per debito e "
+"Distinzione colonne debito/credito: una due colonne distinte per debito e "
 "credito"
 
 #. module: account_statement_import_sheet_file

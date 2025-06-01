@@ -1043,7 +1043,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.3.9 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.14.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Base module for Bank Statements
 [bank_statement_check_number](bank_statement_check_number/) | 16.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Add the check number in the bank statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -1879,6 +1879,7 @@ addon | version | maintainers | summary
 [sale_last_price_info](sale_last_price_info/) | 16.0.1.0.0 |  | Product Last Price Info - Sale
 [sale_loyalty_exclude](sale_loyalty_exclude/) | 16.0.1.1.0 |  | Exclude products from sale loyalty program
 [sale_manual_delivery](sale_manual_delivery/) | 16.0.1.0.1 |  | Create manually your deliveries
+[sale_margin_update](sale_margin_update/) | 16.0.1.0.0 |  | Recalculate expected unit price from margin.
 [sale_mrp_bom](sale_mrp_bom/) | 16.0.1.0.0 |  | Allows define a BOM in the sales lines.
 [sale_numeric_step](sale_numeric_step/) | 16.0.1.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Improve mobile/tablet sale process by adding numeric step widgets
 [sale_order_amount_to_invoice](sale_order_amount_to_invoice/) | 16.0.1.0.0 |  | Show total amount to invoice in quotations/sales orders
@@ -1906,11 +1907,12 @@ addon | version | maintainers | summary
 [sale_order_lot_generator](sale_order_lot_generator/) | 16.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 16.0.1.0.1 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Sale Order Lot Selection
 [sale_order_mass_action](sale_order_mass_action/) | 16.0.1.0.0 |  | Allows to easy mass operations on sale orders.
+[sale_order_ordered_weight](sale_order_ordered_weight/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Ordered weights on sale order and sale order line levels
 [sale_order_partner_no_autofollow](sale_order_partner_no_autofollow/) | 16.0.1.0.0 |  | Do not add customer as follower in Sales Orders
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 16.0.1.1.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_product_assortment](sale_order_product_assortment/) | 16.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 16.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Show product availability in sales order line product drop-down.
-[sale_order_product_picker](sale_order_product_picker/) | 16.0.1.2.0 |  | Sale Order Product Picker
+[sale_order_product_picker](sale_order_product_picker/) | 16.0.1.2.1 |  | Sale Order Product Picker
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 16.0.3.0.2 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Recommend products to sell to customer based on history
 [sale_order_product_recommendation_elaboration](sale_order_product_recommendation_elaboration/) | 16.0.2.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Include elaborations when generating or accepting sale order product recommendations
 [sale_order_product_recommendation_packaging_default](sale_order_product_recommendation_packaging_default/) | 16.0.3.0.1 | [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Quickly add recommended products to sale order by packagings
@@ -2381,6 +2383,7 @@ addon | version | maintainers | summary
 [hr_commission](hr_commission/) | 16.0.1.0.0 |  | HR commissions
 [sale_commission](sale_commission/) | 16.0.1.0.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
 [sale_commission_agent_restrict](sale_commission_agent_restrict/) | 16.0.1.0.0 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) | Sales Commissions Agent Restrict
+[sale_commission_margin](sale_commission_margin/) | 16.0.1.0.0 |  | This addons allows commissions to be deducted from the margin.
 [sale_commission_product_criteria](sale_commission_product_criteria/) | 16.0.2.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Advanced commissions rules
 [sale_commission_product_criteria_discount](sale_commission_product_criteria_discount/) | 16.0.1.0.1 | [![aleuffre](https://github.com/aleuffre.png?size=30px)](https://github.com/aleuffre) [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) [![renda-dev](https://github.com/renda-dev.png?size=30px)](https://github.com/renda-dev) [![PicchiSeba](https://github.com/PicchiSeba.png?size=30px)](https://github.com/PicchiSeba) | Advanced commissions rules with discount
 [sale_commission_product_criteria_domain](sale_commission_product_criteria_domain/) | 16.0.1.0.2 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Sale Commission Product Criteria Domain
@@ -3196,6 +3199,7 @@ addon | version | maintainers | summary
 [hr_personal_equipment_variant_configurator](hr_personal_equipment_variant_configurator/) | 16.0.1.0.0 |  | Manage variants of personal equipment
 [hr_professional_category](hr_professional_category/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | HR Professional Category
 [hr_recruitment_torecruit](hr_recruitment_torecruit/) | 16.0.1.1.0 |  | Age field for employee
+[resource_multi_week_calendar](resource_multi_week_calendar/) | 16.0.1.0.0 | [![carmenbianca](https://github.com/carmenbianca.png?size=30px)](https://github.com/carmenbianca) | Allow a calendar to alternate between multiple weeks.
 
 [//]: # (end addons)
 
@@ -5138,7 +5142,7 @@ addon | version | maintainers | summary
 [l10n_ro_stock_account](l10n_ro_stock_account/) | 16.0.1.28.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting
 [l10n_ro_stock_account_date](l10n_ro_stock_account_date/) | 16.0.1.8.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date
 [l10n_ro_stock_account_date_wizard](l10n_ro_stock_account_date_wizard/) | 16.0.1.3.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Date Wizard
-[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 16.0.1.26.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
+[l10n_ro_stock_account_landed_cost](l10n_ro_stock_account_landed_cost/) | 16.0.1.27.0 | [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) | Romania - Stock Accounting Landed Cost
 [l10n_ro_stock_account_mrp](l10n_ro_stock_account_mrp/) | 16.0.0.4.0 | [![adrian-dks](https://github.com/adrian-dks.png?size=30px)](https://github.com/adrian-dks) | Fix mrp_production cost.
 [l10n_ro_stock_account_notice](l10n_ro_stock_account_notice/) | 16.0.4.12.0 | [![feketemihai](https://github.com/feketemihai.png?size=30px)](https://github.com/feketemihai) [![mcojocaru](https://github.com/mcojocaru.png?size=30px)](https://github.com/mcojocaru) [![dhongu](https://github.com/dhongu.png?size=30px)](https://github.com/dhongu) | Romania - Stock Accounting Notice
 [l10n_ro_stock_account_reception_in_progress](l10n_ro_stock_account_reception_in_progress/) | 16.0.0.5.0 | [![nct74](https://github.com/nct74.png?size=30px)](https://github.com/nct74) [![vasi26ro](https://github.com/vasi26ro.png?size=30px)](https://github.com/vasi26ro) | Romania - Stock Accounting Reception In progress
@@ -7742,6 +7746,7 @@ addon | version | maintainers | summary
 [mail_inline_css](mail_inline_css/) | 16.0.0.1.0 |  | Convert style tags in inline style in your mails
 [mail_layout_force](mail_layout_force/) | 16.0.2.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 16.0.1.0.0 |  | Preview email templates in the browser
+[mail_message_search](mail_message_search/) | 16.0.1.0.0 | [![yostashiro](https://github.com/yostashiro.png?size=30px)](https://github.com/yostashiro) [![aungkokolin1997](https://github.com/aungkokolin1997.png?size=30px)](https://github.com/aungkokolin1997) | Mail Message Search
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 16.0.1.0.0 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) [![edlopen](https://github.com/edlopen.png?size=30px)](https://github.com/edlopen) [![rafaelbn](https://github.com/rafaelbn.png?size=30px)](https://github.com/rafaelbn) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 16.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 16.0.1.1.0 |  | Choose to notify followers on mail.compose.message
@@ -8392,7 +8397,7 @@ addon | version | maintainers | summary
 [disable_odoo_online](disable_odoo_online/) | 16.0.1.0.0 |  | Remove odoo.com Bindings
 [hr_expense_remove_mobile_link](hr_expense_remove_mobile_link/) | 16.0.1.0.0 |  | Remove Odoo Enterprise mobile app download links
 [portal_odoo_debranding](portal_odoo_debranding/) | 16.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Remove Odoo Branding from Website
-[remove_odoo_enterprise](remove_odoo_enterprise/) | 16.0.2.0.3 |  | Remove enterprise modules and setting items
+[remove_odoo_enterprise](remove_odoo_enterprise/) | 16.0.2.0.4 |  | Remove enterprise modules and setting items
 
 [//]: # (end addons)
 

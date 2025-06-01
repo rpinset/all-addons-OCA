@@ -176,11 +176,16 @@ Date:   Sun Feb 2 18:33:18 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 943800a5c386f4e5d0ce819482ec9507f7fce5e9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 14 08:08:38 2025 +0000
+commit a4ee09666522f71ee6801df3b672e93aa44722da
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Thu May 29 19:26:40 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (182 of 182 strings)
+    
+    Translation: credit-control-16.0/credit-control-16.0-account_invoice_overdue_reminder
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-16-0/credit-control-16-0-account_invoice_overdue_reminder/it/
 
 
 ## data-protection
@@ -208,23 +213,30 @@ Date:   Tue May 13 10:07:41 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit aa4401e34bec64b602cf8fefb27f66b31af64441
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 21 08:47:11 2025 +0000
+commit b3887b167ebe652fd6de9b8caffd6e6973d8a30e
+Author: Weblate <noreply@weblate.org>
+Date:   Fri May 30 07:32:56 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-reconcile-16.0/account-reconcile-16.0-account_reconcile_oca
+    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-16-0/account-reconcile-16-0-account_reconcile_oca/
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit be1727629813227f962b8032523904af84484658
-Merge: f0ad841f a29ef8f9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 7 11:52:17 2025 +0000
+commit b0db4c75b01dd5454dd0eae5b306e5164ce116eb
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Thu May 29 18:44:18 2025 +0000
 
-    Merge PR #797 into 16.0
+    Translated using Weblate (Italian)
     
-    Signed-off-by pedrobaeza
+    Currently translated at 100.0% (105 of 105 strings)
+    
+    Translation: bank-statement-import-16.0/bank-statement-import-16.0-account_statement_import_sheet_file
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-16-0/bank-statement-import-16-0-account_statement_import_sheet_file/it/
 
 
 ## account-payment
@@ -374,9 +386,9 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ec98195d25d8c3fafdf11b58602b8968108bf8b1
+commit ef6db1e65129969fed465da338b7ce46337b5613
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 27 07:37:10 2025 +0000
+Date:   Fri May 30 09:40:58 2025 +0000
 
     [BOT] post-merge updates
 
@@ -443,9 +455,9 @@ Date:   Fri Mar 28 09:01:14 2025 +0000
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit bf3cf14d173ccd7df5f5e9841e64c4a70c4b2684
+commit e92a1199f102aaf2ad5d6634f95e99a073b3a40b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 22 11:32:40 2025 +0000
+Date:   Fri May 30 06:36:39 2025 +0000
 
     [BOT] post-merge updates
 
@@ -595,16 +607,11 @@ Date:   Tue May 27 07:23:08 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit eb30386060767aba901f0e622ed620a5a1571a74
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:52:25 2025 +0000
+commit 42a327e2153a3e8e14f7dad82e2cefe7583c0065
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri May 30 06:56:27 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (77 of 77 strings)
-    
-    Translation: hr-16.0/hr-16.0-hr_employee_medical_examination
-    Translate-URL: https://translation.odoo-community.org/projects/hr-16-0/hr-16-0-hr_employee_medical_examination/it/
+    [BOT] post-merge updates
 
 
 ## hr-attendance
@@ -971,9 +978,9 @@ Date:   Sun Feb 2 19:35:08 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 36f204f704597d8b43fd5aa16b7f21466c87af1e
+commit b21c8cf18169801a8e9e645e35ebf622b14da7fb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu May 29 15:49:57 2025 +0000
+Date:   Fri May 30 11:57:00 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1392,11 +1399,16 @@ Date:   Sun Feb 2 18:18:52 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit 9ea048a20883631c6005a73640cac0f27ff595cf
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 27 13:32:30 2025 +0000
+commit 113706e04c45eff8ccfeeeb843e466dbf2458cd8
+Author: Weblate <noreply@weblate.org>
+Date:   Fri May 30 12:40:08 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: social-16.0/social-16.0-mass_mailing_custom_unsubscribe
+    Translate-URL: https://translation.odoo-community.org/projects/social-16-0/social-16-0-mass_mailing_custom_unsubscribe/
 
 
 ## storage
@@ -1512,9 +1524,9 @@ Date:   Sun May 18 18:36:11 2025 +0000
 
 ## server-brand
 From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
-commit 6ba0e879ae21ad660626dfb5193c76b2cfe025cf
+commit 4fe448056db230096a5da41b81b7f3f982c0f36c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 27 18:30:02 2025 +0000
+Date:   Fri May 30 11:05:10 2025 +0000
 
     [BOT] post-merge updates
 

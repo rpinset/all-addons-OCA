@@ -664,8 +664,18 @@ msgid "Message Delivery error"
 msgstr ""
 
 #. module: mail_gateway_whatsapp
+#: model:ir.model.fields,field_description:mail_gateway_whatsapp.field_res_partner__message_search
+msgid "Message Search"
+msgstr ""
+
+#. module: mail_gateway_whatsapp
 #: model:ir.model.fields,help:mail_gateway_whatsapp.field_res_partner__message_content
 msgid "Message content, to be used only in searches"
+msgstr ""
+
+#. module: mail_gateway_whatsapp
+#: model:ir.model.fields,help:mail_gateway_whatsapp.field_res_partner__message_search
+msgid "Message search, to be used only in searches"
 msgstr ""
 
 #. module: mail_gateway_whatsapp
