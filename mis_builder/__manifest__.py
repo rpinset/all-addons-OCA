@@ -3,7 +3,7 @@
 
 {
     "name": "MIS Builder",
-    "version": "17.0.1.0.1",
+    "version": "18.0.1.1.0",
     "category": "Reporting",
     "summary": """
         Build 'Management Information System' Reports and Dashboards
@@ -31,14 +31,14 @@
         "web.assets_backend": [
             "mis_builder/static/src/components/mis_report_widget.esm.js",
             "mis_builder/static/src/components/mis_report_widget.xml",
-            "mis_builder/static/src/components/mis_report_widget.css",
+            "mis_builder/static/src/components/mis_report_widget.scss",
         ],
         "web.report_assets_common": [
-            "/mis_builder/static/src/css/report.css",
+            "mis_builder/static/src/scss/report.scss",
         ],
     },
     "qweb": ["static/src/xml/mis_report_widget.xml"],
-    "installable": False,
+    "installable": True,
     "application": True,
     "license": "AGPL-3",
     "development_status": "Production/Stable",

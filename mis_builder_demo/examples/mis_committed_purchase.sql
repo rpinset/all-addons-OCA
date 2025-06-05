@@ -18,18 +18,17 @@ CREATE OR REPLACE VIEW mis_committed_purchase AS (
               JOIN res_company c ON (r.company_id is null or r.company_id = c.id)
         )
 
-        /* UNINVOICED PURCHASES */
+    /* UNINVOICED PURCHASES */
     SELECT
         'uninvoiced purchase' AS line_type,
-                pol.company_id AS company_id,
+        pol.company_id AS company_id,
         pol.name AS name,
         po.date_planned::date as date,
         pol.id AS res_id,
         'purchase.order.line' AS res_model,
         CASE
-          WHEN (cast(split_part(ip.value_reference, ',', 2) AS INTEGER) IS NOT NULL) THEN cast(split_part(ip.value_reference, ',', 2) AS INTEGER)
-          WHEN (cast(split_part(ipc.value_reference, ',', 2) AS INTEGER) IS NOT NULL) THEN cast(split_part(ipc.value_reference, ',', 2) AS INTEGER)
-          WHEN (cast(split_part(ipd.value_reference, ',', 2) AS INTEGER) IS NOT NULL) THEN cast(split_part(ipd.value_reference, ',', 2) AS INTEGER)
+          WHEN (pt.property_account_expense_id->>(pol.company_id::TEXT)) IS NOT NULL THEN (pt.property_account_expense_id->>(pol.company_id::TEXT))::INTEGER
+          WHEN (pc.property_account_expense_categ_id->>(pol.company_id::TEXT)) IS NOT NULL THEN (pc.property_account_expense_categ_id->>(pol.company_id::TEXT))::INTEGER
           ELSE cast(NULL AS INTEGER)
         END AS account_id,
         CASE
@@ -45,9 +44,6 @@ CREATE OR REPLACE VIEW mis_committed_purchase AS (
             LEFT JOIN product_product pp ON pp.id = pol.product_id
             LEFT JOIN product_template pt ON pt.id = pp.product_tmpl_id
             LEFT JOIN product_category pc ON pc.id = pt.categ_id
-            LEFT JOIN ir_property ip ON ip.name = 'property_account_expense_id' AND ip.type='many2one' AND ip.res_id ='product.template,' || pt.id
-            LEFT JOIN ir_property ipc ON ipc.name = 'property_account_expense_categ_id' AND ipc.type='many2one' AND ipc.res_id ='product.category,' || pc.id
-            LEFT JOIN ir_property ipd ON ipd.name = 'property_account_expense_categ_id' AND ipd.type='many2one' AND (ipd.res_id IS NULL OR ipd.res_id = '')
             LEFT JOIN currency_rate cur on (cur.currency_id = po.currency_id and
                 cur.company_id = po.company_id and
                 cur.date_start <= coalesce(po.date_order, now()) and
@@ -56,10 +52,10 @@ CREATE OR REPLACE VIEW mis_committed_purchase AS (
 
     UNION ALL
 
-        /* DRAFT INVOICES */
+    /* DRAFT INVOICES */
     SELECT
         'draft invoice' AS line_type,
-                ail.company_id AS company_id,
+        ail.company_id AS company_id,
         ail.name AS name,
         ail.create_date::date as date,
         ail.id AS res_id,
@@ -85,7 +81,7 @@ CREATE OR REPLACE VIEW mis_committed_purchase AS (
 
     UNION ALL
 
-        /* DRAFT INVOICES */
+    /* DRAFT INVOICES */
     SELECT
         'draft invoice' AS line_type,
                 ail.company_id AS company_id,

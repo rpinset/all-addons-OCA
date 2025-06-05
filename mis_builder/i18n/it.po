@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-07-30 08:58+0000\n"
+"PO-Revision-Date: 2025-06-05 10:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,13 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "%s (copy)"
 msgstr "%s (copia)"
 
@@ -240,7 +239,6 @@ msgstr ""
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "A date filter is mandatory for this source in column %s."
 msgstr ""
 "Un filtro data è obbligatorio per questa sorgente dati nella colonna %s."
@@ -278,7 +276,6 @@ msgstr "Metodo di accumulo"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid ""
 "Actual (alternative) models used in columns must have the same account model "
 "in the Account field and must be the same defined in the report template: %s"
@@ -395,11 +392,8 @@ msgid "Auto expand"
 msgstr "Espansione automatica"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
-#, python-format
 msgid "Average"
 msgstr "Media"
 
@@ -458,14 +452,12 @@ msgstr "Colonna"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Column %s cannot be compared to itrec."
 msgstr "La colonna %s non può essere comparata a itrec."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Column %s with move lines source must have from/to dates."
 msgstr "La colonna %s con movimenti di riga deve avere data da: a:."
 
@@ -477,14 +469,12 @@ msgstr "Colonne"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/kpimatrix.py:0
-#, python-format
 msgid "Columns %(descr)s and %(base_descr)s are not comparable"
 msgstr "Le colonne %(descr)s e %(base_descr)s non sono compatibili"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Columns to compare must belong to the same report in %s"
 msgstr "Colonne da confrontare devono essere dello stesso report %s"
 
@@ -574,12 +564,9 @@ msgid "Date From"
 msgstr "Dalla data"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_range_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_range_id
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__date_range
-#, python-format
 msgid "Date Range"
 msgstr "Intervallo data"
 
@@ -599,10 +586,7 @@ msgid "Dates"
 msgstr "Date"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__d
-#, python-format
 msgid "Day"
 msgstr "Giorno"
 
@@ -632,10 +616,7 @@ msgstr ""
 "temporis."
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__diff
-#, python-format
 msgid "Difference"
 msgstr "Differenza"
 
@@ -717,7 +698,6 @@ msgstr ""
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
-#, python-format
 msgid ""
 "Error while querying move line source \"%(model_name)s\". This is likely due "
 "to a filter or expression referencing a field that does not exist in the "
@@ -740,9 +720,8 @@ msgstr "Esempi:"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
-#, python-format
 msgid "Export"
 msgstr "Esporta"
 
@@ -878,7 +857,6 @@ msgstr "Da (calcolato)"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/report/mis_report_instance_xlsx.py:0
-#, python-format
 msgid "Generated on %(gen_date)s at %(gen_time)s"
 msgstr "Generato in %(gen_date)s alle %(gen_time)s"
 
@@ -925,7 +903,6 @@ msgstr "ID"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
-#, python-format
 msgid ""
 "If currency_id is not provided, all companies must have the same currency."
 msgstr ""
@@ -950,7 +927,6 @@ msgstr "Eredita livello rientro"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
-#, python-format
 msgid "Indent level must be greater than or equal to 0"
 msgstr "Livello di rientro deve essere maggiore o uguale a 0"
 
@@ -967,7 +943,6 @@ msgstr "KPI"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid ""
 "KPI \"%(kpi)s\" has type %(type)s while a tuple was expected.\n"
 "\n"
@@ -988,7 +963,6 @@ msgstr ""
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid ""
 "KPI \"%(kpi)s\" is valued as a tuple of length %(length)s while a tuple of "
 "length%(expected_length)s is expected."
@@ -1004,9 +978,8 @@ msgstr "Sequenza KPI"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "KPI name ({}) must be a valid python identifier"
-msgstr "Nome KPI ({}) deve essere un identificatore python valido"
+msgid "KPI name (%s) must be a valid python identifier"
+msgstr "Il nome del KPI (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__kpi_ids
@@ -1188,18 +1161,12 @@ msgid "MIS report instance XLS report"
 msgstr "Istanza resoconto MIS resoconto XLS"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__max
-#, python-format
 msgid "Max"
 msgstr "Massimo"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__min
-#, python-format
 msgid "Min"
 msgstr "Minimo"
 
@@ -1215,10 +1182,7 @@ msgid "Model"
 msgstr "Modello"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__m
-#, python-format
 msgid "Month"
 msgstr "Mese"
 
@@ -1270,16 +1234,12 @@ msgstr "Nessun filtro data"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "No date filter is allowed for this source in column %s."
 msgstr "Non è consentito il filtro data per questa origine nella colonna %s."
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
-#, python-format
 msgid "None"
 msgstr "Nessuno"
 
@@ -1300,10 +1260,7 @@ msgid "Number of periods"
 msgstr "Numero di periodi"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__num
-#, python-format
 msgid "Numeric"
 msgstr "Numerico"
 
@@ -1318,16 +1275,18 @@ msgid "Offset from current period"
 msgstr "Offset dal periodo attuale"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
+msgid "Open report in wide mode by default"
+msgstr "Aprire il resoconto in modalità vista in modo predefinito"
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
 msgid "Parent column"
 msgstr "Colonna padre"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
-#, python-format
 msgid "Percentage"
 msgstr "Percentuale"
 
@@ -1354,14 +1313,12 @@ msgstr "Data pivot"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Please provide both columns to compare in %s."
 msgstr "Si prega di fornire entrambe le colonne da confrontare %s."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid ""
 "Please select a report template and/or save the report before adding columns."
 msgstr ""
@@ -1380,7 +1337,7 @@ msgstr "Eredità prefisso"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Preview"
 msgstr "Anteprima"
@@ -1389,9 +1346,8 @@ msgstr "Anteprima"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
-#, python-format
 msgid "Print"
 msgstr "Stampa"
 
@@ -1404,14 +1360,12 @@ msgstr "Domande"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "Query name ({}) must be valid python identifier"
-msgstr "Il nome della query ({}) deve essere un identificatore valido"
+msgid "Query name (%s) must be valid python identifier"
+msgstr "Il nome della query (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
-#, python-format
 msgid "Refresh"
 msgstr "Ricarica"
 
@@ -1491,7 +1445,6 @@ msgstr "Sequenza"
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
-#, python-format
 msgid "Settings"
 msgstr "Impostazioni"
 
@@ -1546,10 +1499,7 @@ msgid "Source"
 msgstr "Fonte"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__str
-#, python-format
 msgid "String"
 msgstr "Stringa"
 
@@ -1613,9 +1563,8 @@ msgstr "Sequenza sotto-KPI"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "Sub-KPI name ({}) must be a valid python identifier"
-msgstr "Sotto-KPI nome ({}) deve essere un identificatore Python valido"
+msgid "Sub-KPI name (%s) must be a valid python identifier"
+msgstr "Il nome del sotto-KPI (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__subkpi_id
@@ -1630,16 +1579,15 @@ msgstr "Sottoreport"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
-#, python-format
 msgid "Subreport loop detected"
 msgstr "Rilevato loop di sottoreport"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
-#, python-format
-msgid "Subreport name ({}) must be a valid python identifier"
-msgstr "Sottoreport name ({}) must be a valid python identifier"
+msgid "Subreport name (%s) must be a valid python identifier"
+msgstr ""
+"Il nome del sottoreport (%s) deve essere un identificatore Python valido"
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_subreport_name_unique
@@ -1657,11 +1605,8 @@ msgid "Suffix Inherit"
 msgstr "Eredità suffisso"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
-#, python-format
 msgid "Sum"
 msgstr "Somma"
 
@@ -1673,13 +1618,12 @@ msgstr "Somma dettagli conto"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/kpimatrix.py:0
-#, python-format
 msgid ""
-"Sum cannot be computed in column {} because the columns to sum have no "
+"Sum cannot be computed in column %s because the columns to sum have no "
 "common subkpis"
 msgstr ""
-"La somma non può essere calcolata in colonna {} perché le colonne da sommare "
-"non hanno in comune sottokpis"
+"La somma non può essere calcolata nella colonna %s perché le colonne da "
+"sommare non hanno sotto-KPI in comune"
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__sumcol
@@ -1693,7 +1637,7 @@ msgstr "Movimenti obiettivo"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 msgid "Template"
 msgstr "Modello"
 
@@ -1765,21 +1709,18 @@ msgstr "A (calcolato)"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_kpi_data.py:0
-#, python-format
 msgid "Unexpected accumulation method %(method)s for %(name)s."
 msgstr "Metodo di accumulazione %(method)s inaspettato per %(name)s."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid "Unexpected value %s for target_move."
 msgstr "Valore %s inaspettato per target_move."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/prorata_read_group_mixin.py:0
-#, python-format
 msgid "Unsupported operator %s for searching on date"
 msgstr "Operatore non supportato %s per la ricerca in data"
 
@@ -1804,10 +1745,7 @@ msgid "Visibility"
 msgstr "Visibilità"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__w
-#, python-format
 msgid "Week"
 msgstr "Settimana"
 
@@ -1827,10 +1765,7 @@ msgid "Wrong normalize factor, it must be positive!"
 msgstr "Fattore di normalizzazione sbagliato, deve essere positivo!"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__y
-#, python-format
 msgid "Year"
 msgstr "Anno"
 
@@ -1842,14 +1777,12 @@ msgstr "Da inizio anno"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "You cannot sum period %s with itself."
 msgstr "Non puoi sommare il periodo %s con se stesso."
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "from %(date_from)s to %(date_to)s"
 msgstr "dal %(date_from)s al %(date_to)s"
 
@@ -1872,7 +1805,6 @@ msgstr "oppure"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
-#, python-format
 msgid "pp"
 msgstr "pp"
 
@@ -1905,6 +1837,30 @@ msgstr "xx-large"
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
 msgstr "xx-small"
+
+#, python-format
+#~ msgid "KPI name ({}) must be a valid python identifier"
+#~ msgstr "Nome KPI ({}) deve essere un identificatore python valido"
+
+#, python-format
+#~ msgid "Query name ({}) must be valid python identifier"
+#~ msgstr "Il nome della query ({}) deve essere un identificatore valido"
+
+#, python-format
+#~ msgid "Sub-KPI name ({}) must be a valid python identifier"
+#~ msgstr "Sotto-KPI nome ({}) deve essere un identificatore Python valido"
+
+#, python-format
+#~ msgid "Subreport name ({}) must be a valid python identifier"
+#~ msgstr "Sottoreport name ({}) must be a valid python identifier"
+
+#, python-format
+#~ msgid ""
+#~ "Sum cannot be computed in column {} because the columns to sum have no "
+#~ "common subkpis"
+#~ msgstr ""
+#~ "La somma non può essere calcolata in colonna {} perché le colonne da "
+#~ "sommare non hanno in comune sottokpis"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"

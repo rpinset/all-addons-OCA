@@ -5,13 +5,14 @@ import logging
 import re
 from collections import defaultdict
 
-from odoo import _, fields
+from odoo import fields
 from odoo.exceptions import UserError
 from odoo.models import expression
 from odoo.tools.float_utils import float_is_zero
 from odoo.tools.safe_eval import datetime, dateutil, safe_eval, time
 
 from .accounting_none import AccountingNone
+from .simple_array import SimpleArray
 
 _logger = logging.getLogger(__name__)
 
@@ -91,7 +92,7 @@ class AccountingExpressionProcessor:
             self.currency = companies.mapped("currency_id")
             if len(self.currency) > 1:
                 raise UserError(
-                    _(
+                    self.env._(
                         "If currency_id is not provided, "
                         "all companies must have the same currency."
                     )
@@ -190,10 +191,20 @@ class AccountingExpressionProcessor:
         for key, acc_domains in self._map_account_ids.items():
             all_account_ids = set()
             for acc_domain in acc_domains:
-                acc_domain_with_company = expression.AND(
-                    [acc_domain, [("company_id", "in", self.companies.ids)]]
-                )
-                account_ids = self._account_model.search(acc_domain_with_company).ids
+                # XXX It is apparently not possible to search accounts by code
+                # across multiple companies at once (due to how _search_code is
+                # implemented for instance), so we have to search each company
+                # separately.
+                account_ids = []
+                for company in self.companies:
+                    acc_domain_with_company = expression.AND(
+                        [acc_domain, [("company_ids", "=", company.id)]]
+                    )
+                    account_ids += (
+                        self._account_model.with_company(company)
+                        .search(acc_domain_with_company)
+                        .ids
+                    )
                 self._account_ids_by_acc_domain[acc_domain].update(account_ids)
                 all_account_ids.update(account_ids)
             self._map_account_ids[key] = list(all_account_ids)
@@ -316,7 +327,11 @@ class AccountingExpressionProcessor:
         aml_model = aml_model.with_context(active_test=False)
         company_rates = self._get_company_rates(date_to)
         # {(domain, mode): {account_id: (debit, credit)}}
-        self._data = defaultdict(dict)
+        self._data = defaultdict(
+            lambda: defaultdict(
+                lambda: SimpleArray((AccountingNone, AccountingNone)),
+            )
+        )
         domain_by_mode = {}
         ends = []
         for key in self._map_account_ids:
@@ -336,35 +351,36 @@ class AccountingExpressionProcessor:
             # fetch sum of debit/credit, grouped by account_id
             _logger.debug("read_group domain: %s", domain)
             try:
-                accs = aml_model.read_group(
+                accs = aml_model.with_context(
+                    allowed_company_ids=self.companies.ids
+                )._read_group(
                     domain,
-                    ["debit", "credit", "account_id", "company_id"],
-                    ["account_id", "company_id"],
-                    lazy=False,
+                    groupby=("account_id", "company_id"),
+                    aggregates=("debit:sum", "credit:sum"),
                 )
             except ValueError as e:
                 raise UserError(
-                    _(
+                    self.env._(
                         'Error while querying move line source "%(model_name)s". '
                         "This is likely due to a filter or expression referencing "
                         "a field that does not exist in the model.\n\n"
-                        "The technical error message is: %(exception)s. "
-                    )
-                    % dict(
+                        "The technical error message is: %(exception)s. ",
                         model_name=aml_model._description,
                         exception=e,
                     )
                 ) from e
-            for acc in accs:
-                rate, dp = company_rates[acc["company_id"][0]]
-                debit = acc["debit"] or 0.0
-                credit = acc["credit"] or 0.0
+            for account_id, company_id, debit, credit in accs:
+                rate, dp = company_rates[company_id.id]
+                debit = debit or 0.0
+                credit = credit or 0.0
                 if mode in (self.MODE_INITIAL, self.MODE_UNALLOCATED) and float_is_zero(
                     debit - credit, precision_digits=self.dp
                 ):
                     # in initial mode, ignore accounts with 0 balance
                     continue
-                self._data[key][acc["account_id"][0]] = (debit * rate, credit * rate)
+                # due to branches, it's possible to have multiple acc
+                # with the same account_id
+                self._data[key][account_id.id] += (debit * rate, credit * rate)
         # compute ending balances by summing initial and variation
         for key in ends:
             domain, mode = key

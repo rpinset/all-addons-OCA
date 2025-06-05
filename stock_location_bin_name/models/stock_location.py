@@ -5,7 +5,6 @@
 import string
 
 from odoo import api, fields, models
-from odoo.exceptions import ValidationError
 
 
 class PartialFormatter(string.Formatter):
@@ -44,16 +43,6 @@ class StockLocation(models.Model):
         ".{level:0>2}'\n"
         "Missing fields are replaced by '~' and formatting errors by '!'.",
     )
-
-    @api.constrains("location_name_format")
-    def _check_location_name_format(self):
-        for loc in self:
-            if loc.location_kind == "bin" and loc.location_name_format:
-                raise ValidationError(
-                    self.env._(
-                        "Location Name Format cannot be set on 'bin' type locations."
-                    )
-                )
 
     @api.onchange("corridor", "row", "rack", "level", "posx", "posy", "posz")
     def _onchange_attribute_compute_name(self):

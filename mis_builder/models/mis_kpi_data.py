@@ -3,7 +3,7 @@
 
 from collections import defaultdict
 
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 from odoo.exceptions import UserError
 from odoo.osv import expression
 
@@ -60,11 +60,9 @@ class MisKpiData(models.AbstractModel):
                 subkpi_name = "." + subkpi_name
             else:
                 subkpi_name = ""
-            rec.name = "{}{}: {} - {}".format(
-                rec.kpi_expression_id.kpi_id.name,
-                subkpi_name,
-                rec.date_from,
-                rec.date_to,
+            rec.name = (
+                f"{rec.kpi_expression_id.kpi_id.name}{subkpi_name}: "
+                f"{rec.date_from} - {rec.date_to}"
             )
 
     @api.model
@@ -99,7 +97,7 @@ class MisKpiData(models.AbstractModel):
                 res_avg[item.kpi_expression_id].append((i_days, item.amount))
             else:
                 raise UserError(
-                    _(
+                    self.env._(
                         "Unexpected accumulation method %(method)s for %(name)s.",
                         method=item.kpi_expression_id.kpi_id.accumulation_method,
                         name=item.name,

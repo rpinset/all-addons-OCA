@@ -77,8 +77,5 @@ msgstr "Regola su record"
 msgid "Unable to get cerberus schema from %s"
 msgstr "Impossibile ottenere lo schema Cerberus da %s"
 
-#. module: base_rest
-#. odoo-python
-#: code:addons/base_rest/restapi.py:0
-msgid "You must provide a dict of RestMethodParam"
-msgstr "Bisogna fornire un dizionario del parametro metodo REST"
+#~ msgid "You must provide a dict of RestMethodParam"
+#~ msgstr "Bisogna fornire un dizionario del parametro metodo REST"

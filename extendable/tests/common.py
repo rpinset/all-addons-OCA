@@ -8,7 +8,7 @@ from odoo import SUPERUSER_ID, api
 from odoo.modules.registry import Registry
 from odoo.tests import common
 
-from extendable import context
+from extendable import context, main
 
 
 def _get_addon_name(full_name: str) -> str:
@@ -53,6 +53,24 @@ class ExtendableMixin:
             current_addon = _get_addon_name(cls.__module__)
             extendable_registry.init_registry([f"odoo.addons.{current_addon}.*"])
             cls.token = context.extendable_registry.set(cls._extendable_registry)
+
+    @classmethod
+    def backup_extendable_registry(cls):
+        # Store the current extendable classes
+        cls._initial_extendable_class_defs_by_module = (
+            main._extendable_class_defs_by_module
+        )
+        # Use a copy of the current extendable classes
+        main._extendable_class_defs_by_module = dict(
+            cls._initial_extendable_class_defs_by_module
+        )
+
+    @classmethod
+    def restore_extendable_registry(cls):
+        # Restore the initial extendable classes
+        main._extendable_class_defs_by_module = (
+            cls._initial_extendable_class_defs_by_module
+        )
 
     @classmethod
     def reset_extendable_registry(cls):

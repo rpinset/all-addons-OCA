@@ -1,4 +1,3 @@
-from odoo.exceptions import ValidationError
 from odoo.tests import Form
 
 from odoo.addons.base.tests.common import BaseCommon
@@ -67,23 +66,6 @@ class TestStockLocationBinName(BaseCommon):
             location_form.level = "2"
 
         self.assertEqual(self.location_bin.name, "Zone Location-Z-02-123.005")
-
-    def test_location_bin_with_name_format(self):
-        """Test location constraint with location name format in a bin location"""
-
-        regex = "Location Name Format cannot be set on 'bin' type locations."
-        with self.assertRaisesRegex(ValidationError, regex):
-            self.location_obj.create(
-                {
-                    "name": "Local",
-                    "location_id": self.location_area.id,
-                    "location_name_format": "{area}-{corridor}{level:0>2}",
-                    "usage": "internal",
-                    "location_kind": "bin",
-                    "zone_location_id": self.location_zone.id,
-                    "area_location_id": self.location_area.id,
-                }
-            )
 
     def test_onchange_non_bin_location(self):
         """Test onchange does nothing for non-bin locations"""

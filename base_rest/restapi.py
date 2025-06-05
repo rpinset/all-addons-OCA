@@ -7,7 +7,7 @@ import json
 
 from cerberus import Validator
 
-from odoo import _, http
+from odoo import http
 from odoo.exceptions import UserError, ValidationError
 
 from .tools import ROUTING_DECORATOR_ATTR, cerberus_to_json
@@ -218,13 +218,13 @@ class CerberusValidator(RestMethodParam):
         validator = self.get_cerberus_validator(service, "input")
         if validator.validate(params):
             return validator.document
-        raise UserError(_("BadRequest %s") % validator.errors)
+        raise UserError(service.env._("BadRequest %s") % validator.errors)
 
     def to_response(self, service, result):
         validator = self.get_cerberus_validator(service, "output")
         if validator.validate(result):
             return validator.document
-        raise SystemError(_("Invalid Response %s") % validator.errors)
+        raise SystemError(service.env._("Invalid Response %s") % validator.errors)
 
     def to_openapi_query_parameters(self, service, spec):
         json_schema = self.to_json_schema(service, spec, "input")
@@ -275,7 +275,9 @@ class CerberusValidator(RestMethodParam):
             return schema
         if isinstance(schema, dict):
             return Validator(schema, purge_unknown=True)
-        raise Exception(_("Unable to get cerberus schema from %s") % self._schema)
+        raise Exception(
+            service.env._("Unable to get cerberus schema from %s") % self._schema
+        )
 
     def to_json_schema(self, service, spec, direction):
         schema = self.get_cerberus_validator(service, direction).schema
@@ -321,7 +323,7 @@ class CerberusListValidator(CerberusValidator):
         for idx, p in enumerate(data):
             if not validator.validate(p):
                 raise ExceptionClass(
-                    _(
+                    service.env._(
                         "BadRequest item %(idx)s :%(errors)s",
                         idx=idx,
                         errors=validator.errors,
@@ -330,7 +332,7 @@ class CerberusListValidator(CerberusValidator):
             values.append(validator.document)
         if self._min_items is not None and len(values) < self._min_items:
             raise ExceptionClass(
-                _(
+                service.env._(
                     "BadRequest: Not enough items in the list (%(current)s "
                     "< %(expected)s)",
                     current=len(values),
@@ -339,7 +341,7 @@ class CerberusListValidator(CerberusValidator):
             )
         if self._max_items is not None and len(values) > self._max_items:
             raise ExceptionClass(
-                _(
+                service.env._(
                     "BadRequest: Too many items in the list (%(current)s "
                     "> %(expected)s)",
                     current=len(values),
@@ -367,7 +369,7 @@ class MultipartFormData(RestMethodParam):
         :param parts:  list of RestMethodParam
         """
         if not isinstance(parts, dict):
-            raise ValidationError(_("You must provide a dict of RestMethodParam"))
+            raise RuntimeError("You must provide a dict of RestMethodParam")
         self._parts = parts
 
     def to_openapi_properties(self, service, spec, direction):
@@ -410,7 +412,7 @@ class MultipartFormData(RestMethodParam):
                     )  # multipart ony sends its parts as string
                 except json.JSONDecodeError as error:
                     raise ValidationError(
-                        _(f"{key}'s JSON content is malformed: {error}")
+                        service.env._(f"{key}'s JSON content is malformed: {error}")
                     ) from error
                 param = part.from_params(service, json_param)
             params[key] = param

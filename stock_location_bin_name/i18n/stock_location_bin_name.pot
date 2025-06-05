@@ -29,9 +29,3 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_location_bin_name.field_stock_location__location_name_format
 msgid "Location Name Format"
 msgstr ""
-
-#. module: stock_location_bin_name
-#. odoo-python
-#: code:addons/stock_location_bin_name/models/stock_location.py:0
-msgid "Location Name Format cannot be set on 'bin' type locations."
-msgstr ""

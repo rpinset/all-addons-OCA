@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-08-27 12:06+0000\n"
+"PO-Revision-Date: 2024-11-15 10:06+0000\n"
 "Last-Translator: xtanuiha <feihu.zhang@live.com>\n"
 "Language-Team: none\n"
 "Language: zh_CN\n"
@@ -20,7 +20,6 @@ msgstr ""
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "%s (copy)"
 msgstr "%s (副本)"
 
@@ -30,9 +29,11 @@ msgid ""
 "<code>\n"
 "                                            balp[('user_type_id', '=',\n"
 "                                            ref('account.\n"
-"                                            data_account_type_receivable').id)][]\n"
+"                                            data_account_type_receivable')."
+"id)][]\n"
 "                                        </code>\n"
-"                                        : variation of the balance of all receivable accounts over\n"
+"                                        : variation of the balance of all "
+"receivable accounts over\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -47,9 +48,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            balp[][('tax_line_id.tag_ids', '=', ref('l10n_be.tax_tag_56').id)]\n"
+"                                            balp[][('tax_line_id.tag_ids', "
+"'=', ref('l10n_be.tax_tag_56').id)]\n"
 "                                        </code>\n"
-"                                        : balance of move lines related to tax grid 56."
+"                                        : balance of move lines related to "
+"tax grid 56."
 msgstr ""
 "<code>\n"
 "                                            balp[][('tax_line_id.tag_ids', "
@@ -61,10 +64,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>\n"
-"                                            debp[55%][('journal_id.code', '=',\n"
+"                                            debp[55%][('journal_id.code', "
+"'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : sum of all debits on accounts 55 and journal BNK1 during\n"
+"                                        : sum of all debits on accounts 55 "
+"and journal BNK1 during\n"
 "                                        the period."
 msgstr ""
 "<code>\n"
@@ -77,8 +82,8 @@ msgstr ""
 "'=',\n"
 "                                            'BNK1')]\n"
 "                                        </code>\n"
-"                                        : "
-"期间对科目55和日记BNK1的所有借方的总和。"
+"                                        : 期间对科目55和日记BNK1的所有借方的"
+"总和。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -91,19 +96,22 @@ msgstr "<code>AccountingNone</code> : 在算术运算中表现为0的空值。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>\n"
-"                                        pbal</code>, <code>nbal</code> : balance, debit, credit,\n"
+"                                        pbal</code>, <code>nbal</code> : "
+"balance, debit, credit,\n"
 "                                        positive balance, negative balance."
 msgstr ""
 "<code>bal</code>, <code>crd</code>, <code>deb</code>, <code>pbal</code>, "
-"<code>nbal</code> : 余额，借方，贷方，正余额，负余额。"
+"<code>nbal</code> : 余额，贷方，借方，正余额，负余额。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>bal[70]</code> : variation of the balance of account 70 over\n"
-"                                        the period (it is the same as <code>balp[70]</code>."
-msgstr "<code>bal[70]</code> : "
-"科目70余额在该期间的变化（与<code>balp[70]</code>相同）。"
+"                                        the period (it is the same as "
+"<code>balp[70]</code>."
+msgstr ""
+"<code>bal[70]</code> : 科目70余额在该期间的变化（与<code>balp[70]</code>相"
+"同）。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -120,11 +128,14 @@ msgstr "<code>bali[70,60]</code> : 科目70和60的期初余额。"
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>balu[]</code> : (<code>u</code> for unallocated) is a special expression\n"
-"                                        that shows the unallocated profit/loss of previous fiscal\n"
+"<code>balu[]</code> : (<code>u</code> for unallocated) is a special "
+"expression\n"
+"                                        that shows the unallocated profit/"
+"loss of previous fiscal\n"
 "                                        years."
-msgstr "<code>balu[]</code> : "
-"（<code>u</code>代表未分配）是一个特殊表达式，显示以前财政年度的未分配盈亏。"
+msgstr ""
+"<code>balu[]</code> : （<code>u</code>代表未分配）是一个特殊表达式，显示以前"
+"财政年度的未分配盈亏。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -136,9 +147,11 @@ msgstr "<code>crdp[40%]</code> : 在期间内，所有以40开头的科目的贷
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>date_from</code>, <code>date_to</code> : beginning and end date of the\n"
+"<code>date_from</code>, <code>date_to</code> : beginning and end date of "
+"the\n"
 "                                        period."
-msgstr "<code>date_from</code>, <code>date_to</code> : 期间的开始日期和结束日期。"
+msgstr ""
+"<code>date_from</code>, <code>date_to</code> : 期间的开始日期和结束日期。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -146,35 +159,39 @@ msgid ""
 "<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : the "
 "python modules."
 msgstr ""
-"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : "
-"Python模块：datetime, datetime, dateutil。"
+"<code>datetime</code>, <code>datetime</code>, <code>dateutil</code> : Python"
+"模块：datetime, datetime, dateutil。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
-"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over the period,\n"
+"<code>p</code>, <code>i</code>, <code>e</code> : respectively variation over "
+"the period,\n"
 "                                        initial balance, ending balance"
-msgstr "<code>p</code>, <code>i</code>, <code>e</code> : "
-"分别表示期间的变化、期初余额、期末余额"
+msgstr ""
+"<code>p</code>, <code>i</code>, <code>e</code> : 分别表示期间的变化、期初余"
+"额、期末余额"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>pbale[55%]</code> : sum of all ending balances of accounts\n"
-"                                        starting with 55 whose ending balance is positive."
-msgstr "<code>pbale[55%]</code> : 所有以55开头且期末余额为正的科目的期末余额总和。"
+"                                        starting with 55 whose ending "
+"balance is positive."
+msgstr ""
+"<code>pbale[55%]</code> : 所有以55开头且期末余额为正的科目的期末余额总和。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "<code>sum</code>, <code>min</code>,\n"
 "                                        <code>max</code>, <code>len</code>,\n"
-"                                        <code>avg</code> : behave as expected, very\n"
+"                                        <code>avg</code> : behave as "
+"expected, very\n"
 "                                        similar to the python builtins."
 msgstr ""
-"<code>sum</code>, <code>min</code>,<code>max</code>, "
-"<code>len</code>,<code>avg</code> : "
-"函数的行为符合预期，与Python内置函数非常相似。"
+"<code>sum</code>, <code>min</code>,<code>max</code>, <code>len</code>,"
+"<code>avg</code> : 函数的行为符合预期，与Python内置函数非常相似。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.report_mis_report_instance
@@ -184,23 +201,24 @@ msgstr "<span>-</span>"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields."
-msgstr "一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields."
+msgstr ""
+"一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report__move_lines_source
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__source_aml_model_id
 msgid ""
-"A 'move line like' model, ie having at least debit, credit, date, account_id"
-" and company_id fields. This model is the data source for column Actuals."
-msgstr "一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
+"A 'move line like' model, ie having at least debit, credit, date, account_id "
+"and company_id fields. This model is the data source for column Actuals."
+msgstr ""
+"一个类似于“会计分录”的模型，即至少包含借方、贷方、日期、科目ID和公司ID字段。"
 "这个模型是实际值列的数据来源。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "A date filter is mandatory for this source in column %s."
 msgstr "在列%s中，必须为这个数据源添加日期筛选器。"
 
@@ -233,12 +251,11 @@ msgstr "累积方法"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid ""
-"Actual (alternative) models used in columns must have the same account model"
-" in the Account field and must be the same defined in the report template: "
-"%s"
-msgstr "在列中使用的实际情况（替代）模型必须在科目字段中具有相同的科目模型，并且必须"
+"Actual (alternative) models used in columns must have the same account model "
+"in the Account field and must be the same defined in the report template: %s"
+msgstr ""
+"在列中使用的实际情况（替代）模型必须在科目字段中具有相同的科目模型，并且必须"
 "与报告模板中定义的相同：%s"
 
 #. module: mis_builder
@@ -255,13 +272,14 @@ msgstr "实际数据（替代）"
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance_period__source
 msgid ""
 "Actuals: current data, from accounting and other queries.\n"
-"Actuals (alternative): current data from an alternative source (eg a database view providing look-alike account move lines).\n"
+"Actuals (alternative): current data from an alternative source (eg a "
+"database view providing look-alike account move lines).\n"
 "Sum columns: summation (+/-) of other columns.\n"
 "Compare to column: compare to other column.\n"
 msgstr ""
 "实际数据：当前数据，来自会计和其他查询。\n"
-"实际数据（替代）：来自替代来源的当前数据（例如，提供类似会计分录的数据库视图"
-"）。\n"
+"实际数据（替代）：来自替代来源的当前数据（例如，提供类似会计分录的数据库视"
+"图）。\n"
 "求和列：其他列的总和（+/-）。\n"
 "比较列：与其他列进行比较\n"
 
@@ -327,8 +345,8 @@ msgstr "金额"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__style_expression
 msgid ""
-"An expression that returns a style depending on the KPI value. Such style is"
-" applied on top of the row style."
+"An expression that returns a style depending on the KPI value. Such style is "
+"applied on top of the row style."
 msgstr "根据关键绩效指标（KPI）值返回样式的表达式。此类样式应用于行样式之上。"
 
 #. module: mis_builder
@@ -343,12 +361,8 @@ msgid "Auto expand"
 msgstr "自动展开"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__avg
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__avg
-#, python-format
 msgid "Average"
 msgstr "平均值"
 
@@ -385,8 +399,7 @@ msgstr "取消"
 
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_instance__multi_company
-msgid ""
-"Check if you wish to specify several companies to be searched for data."
+msgid "Check if you wish to specify several companies to be searched for data."
 msgstr "如果您希望指定多个公司进行数据搜索，请勾选。"
 
 #. module: mis_builder
@@ -407,14 +420,12 @@ msgstr "列"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Column %s cannot be compared to itrec."
 msgstr "列 %s 不能与 itrec 进行比较。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Column %s with move lines source must have from/to dates."
 msgstr "具有移动行来源的列 %s 必须具有起始/结束日期。"
 
@@ -426,14 +437,12 @@ msgstr "列"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/kpimatrix.py:0
-#, python-format
 msgid "Columns %(descr)s and %(base_descr)s are not comparable"
 msgstr "列 %(descr)s 和 %(base_descr)s 不可比较"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Columns to compare must belong to the same report in %s"
 msgstr "要比较的列必须属于 %s 中的同一报告"
 
@@ -523,12 +532,9 @@ msgid "Date From"
 msgstr "开始日期"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__date_range_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__date_range_id
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__date_range
-#, python-format
 msgid "Date Range"
 msgstr "日期范围"
 
@@ -548,10 +554,7 @@ msgid "Dates"
 msgstr "日期"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__d
-#, python-format
 msgid "Day"
 msgstr "天"
 
@@ -566,18 +569,19 @@ msgstr "描述"
 #. module: mis_builder
 #: model:ir.model.fields,help:mis_builder.field_mis_report_kpi__accumulation_method
 msgid ""
-"Determines how values of this kpi spanning over a time period are transformed to match the reporting period. Sum: values of shorter period are added, values of longest or partially overlapping periods are adjusted pro-rata temporis.\n"
-"Average: values of included period are averaged with a pro-rata temporis weight."
+"Determines how values of this kpi spanning over a time period are "
+"transformed to match the reporting period. Sum: values of shorter period are "
+"added, values of longest or partially overlapping periods are adjusted pro-"
+"rata temporis.\n"
+"Average: values of included period are averaged with a pro-rata temporis "
+"weight."
 msgstr ""
 "确定如何将此关键绩效指标在时间段内的值转换为与报告期相匹配。求和：较短时期的"
 "值被加总，最长或部分重叠时期的值按比例调整。\n"
 "平均值：包含时期的值按比例加权平均。"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__diff
-#, python-format
 msgid "Difference"
 msgstr "差异"
 
@@ -655,16 +659,15 @@ msgstr "在此输入表达式，例如 balp[70%]。另请参阅帮助标签。"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
-#, python-format
 msgid ""
-"Error while querying move line source \"%(model_name)s\". This is likely due to a filter or expression referencing a field that does not exist in the model.\n"
+"Error while querying move line source \"%(model_name)s\". This is likely due "
+"to a filter or expression referencing a field that does not exist in the "
+"model.\n"
 "\n"
 "The technical error message is: %(exception)s. "
 msgstr ""
-"查询会计分录源 \\\"%(model_name)s\\\" "
-"时出错。这很可能是因为过滤器或表达式引用了模型中不存在的字段。\\n"
-"\\n"
-"技术错误信息是：%(exception)s。 "
+"查询会计分录源 \\\"%(model_name)s\\\" 时出错。这很可能是因为过滤器或表达式引"
+"用了模型中不存在的字段。\\n\\n技术错误信息是：%(exception)s。 "
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -675,9 +678,8 @@ msgstr "示例："
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
-#, python-format
 msgid "Export"
 msgstr "导出"
 
@@ -703,11 +705,13 @@ msgstr "表达式可以是任何有效的Python表达式。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "Expressions can involve other KPI, sub KPI and\n"
-"                                    query results by name (eg <code>kpi1 + kpi2</code>,\n"
-"                                    <code>kpi2.subkpi1</code>, <code>query1.field1</code>)."
+"                                    query results by name (eg <code>kpi1 + "
+"kpi2</code>,\n"
+"                                    <code>kpi2.subkpi1</code>, <code>query1."
+"field1</code>)."
 msgstr ""
-"表达式可以涉及其他KPI、子KPI以及按名称查询结果（例如 <code>kpi1 + "
-"kpi2</code>，<code>kpi2.subkpi1</code>，<code>query1.field1</code>）。"
+"表达式可以涉及其他KPI、子KPI以及按名称查询结果（例如 <code>kpi1 + kpi2</"
+"code>，<code>kpi2.subkpi1</code>，<code>query1.field1</code>）。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__normalize_factor
@@ -806,7 +810,6 @@ msgstr "从（已计算的）"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/report/mis_report_instance_xlsx.py:0
-#, python-format
 msgid "Generated on %(gen_date)s at %(gen_time)s"
 msgstr "生成于 %(gen_date)s 在 %(gen_time)s"
 
@@ -853,12 +856,11 @@ msgstr "ID"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/aep.py:0
-#, python-format
 msgid ""
 "If currency_id is not provided, all companies must have the same currency."
 msgstr ""
-"If currency_id is not provided, all companies must have the same currency.\""
-", \"zh_CN\": \"如果未提供currency_id，则所有公司必须使用相同的货币。"
+"If currency_id is not provided, all companies must have the same currency."
+"\", \"zh_CN\": \"如果未提供currency_id，则所有公司必须使用相同的货币。"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
@@ -878,7 +880,6 @@ msgstr "继承缩进级别"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
-#, python-format
 msgid "Indent level must be greater than or equal to 0"
 msgstr "缩进级别必须大于或等于0"
 
@@ -895,14 +896,14 @@ msgstr "关键绩效指标"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid ""
 "KPI \"%(kpi)s\" has type %(type)s while a tuple was expected.\n"
 "\n"
 "This can be fixed by either:\n"
 "\t- Changing the KPI value to a tuple of length %(length)s\n"
 "or\n"
-"\t- Changing the KPI to `multi` mode and giving an explicit value for each sub-KPI."
+"\t- Changing the KPI to `multi` mode and giving an explicit value for each "
+"sub-KPI."
 msgstr ""
 "关键绩效指标\\\"%(kpi)s\\\"的类型为%(type)s，但预期应为元组。\n"
 "可以通过以下方式进行修复：\n"
@@ -913,13 +914,12 @@ msgstr ""
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid ""
 "KPI \"%(kpi)s\" is valued as a tuple of length %(length)s while a tuple of "
 "length%(expected_length)s is expected."
 msgstr ""
-"关键绩效指标\\\"%(kpi)s\\\"的值为长度为"
-"%(length)s的元组，但预期应为长度为%(expected_length)s的元组。"
+"关键绩效指标\\\"%(kpi)s\\\"的值为长度为%(length)s的元组，但预期应为长度"
+"为%(expected_length)s的元组。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__seq1
@@ -929,9 +929,8 @@ msgstr "关键绩效指标顺序"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "KPI name ({}) must be a valid python identifier"
-msgstr "关键绩效指标名称({})必须是有效的Python标识符"
+msgid "KPI name (%s) must be a valid python identifier"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__kpi_ids
@@ -1113,18 +1112,12 @@ msgid "MIS report instance XLS report"
 msgstr "MIS报告实例XLS报告"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__max
-#, python-format
 msgid "Max"
 msgstr "最大值"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__min
-#, python-format
 msgid "Min"
 msgstr "最小值"
 
@@ -1140,10 +1133,7 @@ msgid "Model"
 msgstr "模型"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__m
-#, python-format
 msgid "Month"
 msgstr "月"
 
@@ -1195,17 +1185,12 @@ msgstr "无日期筛选"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "No date filter is allowed for this source in column %s."
 msgstr "此源在列%s中不允许使用日期筛选。"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__none
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__none
-#, python-format
 msgid "None"
 msgstr "无"
 
@@ -1226,10 +1211,7 @@ msgid "Number of periods"
 msgstr "期间数量"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__num
-#, python-format
 msgid "Numeric"
 msgstr "数值"
 
@@ -1244,17 +1226,18 @@ msgid "Offset from current period"
 msgstr "从当前期间的偏移"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__wide_display_by_default
+msgid "Open report in wide mode by default"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period_sum__period_id
 msgid "Parent column"
 msgstr "父列"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__compare_method__pct
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__pct
-#, python-format
 msgid "Percentage"
 msgstr "百分比"
 
@@ -1281,17 +1264,14 @@ msgstr "数据透视日期"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "Please provide both columns to compare in %s."
 msgstr "请在%s中提供要比较的两列。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid ""
-"Please select a report template and/or save the report before adding "
-"columns."
+"Please select a report template and/or save the report before adding columns."
 msgstr "在添加列之前，请选择报告模板和/或保存报告。"
 
 #. module: mis_builder
@@ -1306,7 +1286,7 @@ msgstr "继承前缀"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
 msgid "Preview"
 msgstr "预览"
@@ -1315,9 +1295,8 @@ msgstr "预览"
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 #: model_terms:ir.ui.view,arch_db:mis_builder.wizard_mis_report_instance_view_form
-#, python-format
 msgid "Print"
 msgstr "打印"
 
@@ -1330,14 +1309,12 @@ msgstr "查询"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "Query name ({}) must be valid python identifier"
-msgstr "查询名称({})必须是有效的Python标识符"
+msgid "Query name (%s) must be valid python identifier"
+msgstr ""
 
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
-#, python-format
 msgid "Refresh"
 msgstr "刷新"
 
@@ -1415,7 +1392,6 @@ msgstr "序列"
 #. module: mis_builder
 #. odoo-javascript
 #: code:addons/mis_builder/static/src/components/mis_report_widget.xml:0
-#, python-format
 msgid "Settings"
 msgstr "设置"
 
@@ -1468,10 +1444,7 @@ msgid "Source"
 msgstr "来源"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__type__str
-#, python-format
 msgid "String"
 msgstr "字符串"
 
@@ -1535,9 +1508,8 @@ msgstr "子KPI序列"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
-msgid "Sub-KPI name ({}) must be a valid python identifier"
-msgstr "子KPI名称 ({}) 必须是有效的Python标识符"
+msgid "Sub-KPI name (%s) must be a valid python identifier"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__subkpi_id
@@ -1552,16 +1524,14 @@ msgstr "子报告"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
-#, python-format
 msgid "Subreport loop detected"
 msgstr "检测到子报告循环"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_subreport.py:0
-#, python-format
-msgid "Subreport name ({}) must be a valid python identifier"
-msgstr "子报告名称 ({}) 必须是有效的Python标识符"
+msgid "Subreport name (%s) must be a valid python identifier"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.constraint,message:mis_builder.constraint_mis_report_subreport_name_unique
@@ -1579,12 +1549,8 @@ msgid "Suffix Inherit"
 msgstr "继承后缀"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report.py:0
-#: code:addons/mis_builder/models/mis_report.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_kpi__accumulation_method__sum
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_query__aggregate__sum
-#, python-format
 msgid "Sum"
 msgstr "总和"
 
@@ -1596,11 +1562,10 @@ msgstr "汇总科目详情"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/kpimatrix.py:0
-#, python-format
 msgid ""
-"Sum cannot be computed in column {} because the columns to sum have no "
+"Sum cannot be computed in column %s because the columns to sum have no "
 "common subkpis"
-msgstr "无法在列 {} 中计算总和，因为需要求和的列没有共同的子关键绩效指标"
+msgstr ""
 
 #. module: mis_builder
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__source__sumcol
@@ -1614,7 +1579,7 @@ msgstr "目标分录"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_form
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_tree
+#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_instance_view_list
 msgid "Template"
 msgstr "模板"
 
@@ -1637,11 +1602,13 @@ msgstr "文本颜色使用有效的RGB代码（从#000000到#FFFFFF）"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The <b>account selector</b> is a like expression on the\n"
-"                                        account code (eg <code>70%</code>, etc), or a domain over accounts\n"
-"                                        (eg <code>[('code', 'like', '60%')]</code>)."
+"                                        account code (eg <code>70%</code>, "
+"etc), or a domain over accounts\n"
+"                                        (eg <code>[('code', 'like', '60%')]</"
+"code>)."
 msgstr ""
-"<b>科目选择器</b>是对科目代码的类似表达式（例如 <code>70%</code> "
-"等），或对科目的域（例如 <code>[('code', 'like', '60%')]</code>）"
+"<b>科目选择器</b>是对科目代码的类似表达式（例如 <code>70%</code> 等），或对科"
+"目的域（例如 <code>[('code', 'like', '60%')]</code>）"
 
 #. module: mis_builder
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
@@ -1654,11 +1621,12 @@ msgstr "<b>日记项目域</b>是Odoo对日记项目的域过滤器。"
 #: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_view_kpi_form
 msgid ""
 "The following special elements are recognized in the expressions\n"
-"                                    to compute accounting data: <code>{bal|crd|deb|pbal|nbal}{pieu}[account\n"
+"                                    to compute accounting data: <code>{bal|"
+"crd|deb|pbal|nbal}{pieu}[account\n"
 "                                    selector][journal items domain]</code>."
 msgstr ""
-"在计算会计数据的表达式中，以下特殊元素被识别：<code>{bal|crd|deb|pbal|nbal}{p"
-"ieu}[科目选择器][日记项目域]</code>。"
+"在计算会计数据的表达式中，以下特殊元素被识别：<code>{bal|crd|deb|pbal|nbal}"
+"{pieu}[科目选择器][日记项目域]</code>。"
 
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_kpi_data__date_to
@@ -1675,21 +1643,18 @@ msgstr "至（已计算）"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_kpi_data.py:0
-#, python-format
 msgid "Unexpected accumulation method %(method)s for %(name)s."
 msgstr "%(name)s的意外累积方法%(method)s。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report.py:0
-#, python-format
 msgid "Unexpected value %s for target_move."
 msgstr "target_move的意外值%s。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/prorata_read_group_mixin.py:0
-#, python-format
 msgid "Unsupported operator %s for searching on date"
 msgstr "不支持的日期搜索运算符%s"
 
@@ -1714,10 +1679,7 @@ msgid "Visibility"
 msgstr "可见性"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__w
-#, python-format
 msgid "Week"
 msgstr "周"
 
@@ -1737,10 +1699,7 @@ msgid "Wrong normalize factor, it must be positive!"
 msgstr "错误的归一化因子，它必须是正数！"
 
 #. module: mis_builder
-#. odoo-python
-#: code:addons/mis_builder/models/mis_report_instance.py:0
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_instance_period__type__y
-#, python-format
 msgid "Year"
 msgstr "年"
 
@@ -1752,14 +1711,12 @@ msgstr "年初至今"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "You cannot sum period %s with itself."
 msgstr "您不能将周期%s与其自身相加。"
 
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_instance.py:0
-#, python-format
 msgid "from %(date_from)s to %(date_to)s"
 msgstr "从%(date_from)s至%(date_to)s"
 
@@ -1782,7 +1739,6 @@ msgstr "或者"
 #. module: mis_builder
 #. odoo-python
 #: code:addons/mis_builder/models/mis_report_style.py:0
-#, python-format
 msgid "pp"
 msgstr "每页"
 
@@ -1815,3 +1771,25 @@ msgstr "超大号"
 #: model:ir.model.fields.selection,name:mis_builder.selection__mis_report_style__font_size__xx-small
 msgid "xx-small"
 msgstr "超小号"
+
+#, python-format
+#~ msgid "KPI name ({}) must be a valid python identifier"
+#~ msgstr "关键绩效指标名称({})必须是有效的Python标识符"
+
+#, python-format
+#~ msgid "Query name ({}) must be valid python identifier"
+#~ msgstr "查询名称({})必须是有效的Python标识符"
+
+#, python-format
+#~ msgid "Sub-KPI name ({}) must be a valid python identifier"
+#~ msgstr "子KPI名称 ({}) 必须是有效的Python标识符"
+
+#, python-format
+#~ msgid "Subreport name ({}) must be a valid python identifier"
+#~ msgstr "子报告名称 ({}) 必须是有效的Python标识符"
+
+#, python-format
+#~ msgid ""
+#~ "Sum cannot be computed in column {} because the columns to sum have no "
+#~ "common subkpis"
+#~ msgstr "无法在列 {} 中计算总和，因为需要求和的列没有共同的子关键绩效指标"

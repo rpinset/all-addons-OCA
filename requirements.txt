@@ -27,6 +27,8 @@ python-stdnum>=1.16
 lxml
 unidecode
 # From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
+# generated from manifests external_dependencies
+xlrd
 # From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
 # generated from manifests external_dependencies
 ofxparse
@@ -66,6 +68,8 @@ email-validator
 # From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
 # From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
+# generated from manifests external_dependencies
+factur-x
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
@@ -177,6 +181,8 @@ openupgradelib
 # From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
 # From [https://github.com/OCA/project-agile.git](https://github.com/OCA/project-agile.git)
 # From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
+# generated from manifests external_dependencies
+python-dateutil
 # From [https://github.com/OCA/program.git](https://github.com/OCA/program.git)
 # From [https://github.com/OCA/business-requirement.git](https://github.com/OCA/business-requirement.git)
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
@@ -244,7 +250,7 @@ contextvars
 extendable>=0.0.4
 fastapi>=0.110.0
 parse-accept-language
-pydantic
+pydantic>=2.0.0
 pyquerystring
 python-multipart
 typing-extensions

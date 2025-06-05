@@ -25,14 +25,14 @@ class MisBudgetByAccountItem(models.Model):
         currency_field="company_currency_id",
     )
     company_id = fields.Many2one(
-        "res.company",
-        related="account_id.company_id",
-        readonly=True,
-        store=True,
+        comodel_name="res.company",
+        string="Company",
+        default=lambda self: self.env.company,
+        required=True,
     )
     company_currency_id = fields.Many2one(
         "res.currency",
-        related="account_id.company_id.currency_id",
+        related="company_id.currency_id",
         string="Company Currency",
         help="Utility field to express amount currency",
         store=True,
@@ -41,6 +41,7 @@ class MisBudgetByAccountItem(models.Model):
         comodel_name="account.account",
         string="Account",
         required=True,
+        check_company=True,
     )
 
     _sql_constraints = [

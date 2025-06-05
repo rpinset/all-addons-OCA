@@ -17,14 +17,10 @@ msgstr ""
 "X-Generator: Weblate 5.10.2\n"
 
 #. module: stock_location_bin_name
-#: model:ir.model.fields,field_description:stock_location_bin_name.field_stock_location__display_name
-msgid "Display Name"
-msgstr "Nome visualizzato"
-
-#. module: stock_location_bin_name
 #: model:ir.model.fields,help:stock_location_bin_name.field_stock_location__location_name_format
 msgid ""
-"Format string that will compute the name of the location. Use location fields. Example: '{area}-{corridor:0>2}.{rack:0>3}.{level:0>2}'\n"
+"Format string that will compute the name of the location. Use location "
+"fields. Example: '{area}-{corridor:0>2}.{rack:0>3}.{level:0>2}'\n"
 "Missing fields are replaced by '~' and formatting errors by '!'."
 msgstr ""
 "Formattare stringa che calcolerà il nome della ubicazione. Utilizzare campi "
@@ -33,21 +29,20 @@ msgstr ""
 "'!'."
 
 #. module: stock_location_bin_name
-#: model:ir.model.fields,field_description:stock_location_bin_name.field_stock_location__id
-msgid "ID"
-msgstr "ID"
-
-#. module: stock_location_bin_name
 #: model:ir.model,name:stock_location_bin_name.model_stock_location
 msgid "Inventory Locations"
 msgstr "Ubicazioni di inventario"
 
 #. module: stock_location_bin_name
-#: model:ir.model.fields,field_description:stock_location_bin_name.field_stock_location____last_update
-msgid "Last Modified on"
-msgstr "Ultima modifica il"
-
-#. module: stock_location_bin_name
 #: model:ir.model.fields,field_description:stock_location_bin_name.field_stock_location__location_name_format
 msgid "Location Name Format"
 msgstr "Formato nome ubicazione"
+
+#~ msgid "Display Name"
+#~ msgstr "Nome visualizzato"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Ultima modifica il"

@@ -69,9 +69,3 @@ msgstr ""
 #: code:addons/base_rest/restapi.py:0
 msgid "Unable to get cerberus schema from %s"
 msgstr ""
-
-#. module: base_rest
-#. odoo-python
-#: code:addons/base_rest/restapi.py:0
-msgid "You must provide a dict of RestMethodParam"
-msgstr ""

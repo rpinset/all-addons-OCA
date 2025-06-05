@@ -17,7 +17,7 @@
     </record>
     <record id="mis_report_expenses_kpi_expr_exp" model="mis.report.kpi.expression">
         <field name="kpi_id" ref="mis_report_expenses_kpi_exp" />
-        <field name="name">balp[220000]</field>
+        <field name="name">balp[600%]</field>
     </record>
     <record id="mis_report_expenses_kpi_equip" model="mis.report.kpi">
         <field name="report_id" ref="mis_report_expenses" />

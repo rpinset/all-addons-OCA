@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-16 09:24+0000\n"
+"PO-Revision-Date: 2025-06-04 09:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -18,6 +18,7 @@ msgstr ""
 
 #. module: mail_environment
 #: model:ir.model.fields,help:mail_environment.field_fetchmail_server__is_ssl
+#: model:ir.model.fields,help:mail_environment.field_fetchmail_server__x_is_ssl_env_default
 msgid ""
 "Connections are encrypted with SSL/TLS through a dedicated port (default: "
 "IMAPS=993, POP3S=995)"
@@ -41,6 +42,11 @@ msgid "SSL/TLS"
 msgstr "SSL/TLS"
 
 #. module: mail_environment
+#: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__x_is_ssl_env_default
+msgid "SSL/TLS Env Default"
+msgstr "SSL/TLS ambiente predefinito"
+
+#. module: mail_environment
 #: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__server_env_defaults
 #: model:ir.model.fields,field_description:mail_environment.field_ir_mail_server__server_env_defaults
 msgid "Server Env Defaults"
@@ -50,3 +56,8 @@ msgstr "Predefiniti ambiente server"
 #: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__server_type
 msgid "Server Type"
 msgstr "Tipo server"
+
+#. module: mail_environment
+#: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__x_server_type_env_default
+msgid "Server Type Env Default"
+msgstr "Tipo server ambiente predefinito"
