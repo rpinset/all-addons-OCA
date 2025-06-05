@@ -2,6 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 
 from odoo import fields, models
+from odoo.tools import float_compare
 
 
 class MrpBom(models.Model):
@@ -56,7 +57,7 @@ class MrpBomLine(models.Model):
                 if product_id:
                     product_id = self.env["product.product"].browse(product_id)
                 product_id = product_id or lines.product_id
-                if lines:
+                if lines and product_id != lines.product_id:
                     bom.message_post_with_view(
                         "mrp_bom_tracking.track_bom_template_2",
                         values={"lines": lines, "product_id": product_id},
@@ -70,6 +71,18 @@ class MrpBomLine(models.Model):
                     product_uom_id = values.get("product_uom_id")
                     if product_uom_id:
                         product_uom_id = self.env["uom.uom"].browse(product_uom_id)
+                    # Catch and discard float write rounding errors
+                    # when the qty has not even changed
+                    if (
+                        float_compare(
+                            product_qty,
+                            lines.product_qty,
+                            precision_rounding=lines.product_uom_id.rounding,
+                        )
+                        == 0
+                        and not product_uom_id
+                    ):
+                        continue
                     product_uom_id = product_uom_id or lines.product_uom_id
                     bom.message_post_with_view(
                         "mrp_bom_tracking.track_bom_line_template",

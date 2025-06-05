@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-04-24 12:23+0000\n"
-"Last-Translator: Sebastiano Picchi <sebapicchi@yahoo.it>\n"
+"PO-Revision-Date: 2025-06-04 09:40+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "In archivio"
 
 #. module: fastapi
 #: model:ir.model.fields,field_description:fastapi.field_fastapi_endpoint__demo_auth_method
-msgid "Authenciation method"
+msgid "Authentication method"
 msgstr "Metodo autenticazione"
 
 #. module: fastapi
@@ -264,3 +264,6 @@ msgstr ""
 #, python-format
 msgid "`%(name)s` uses a blacklisted root_path = `%(root_path)s`"
 msgstr "`%(name)s` utilizza un root_path bloccato = `%(root_path)s`"
+
+#~ msgid "Authenciation method"
+#~ msgstr "Metodo autenticazione"

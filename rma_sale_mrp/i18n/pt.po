@@ -99,6 +99,11 @@ msgid "Allowed Product"
 msgstr ""
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__allowed_quantity
+msgid "Allowed Quantity"
+msgstr ""
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__uom_category_id
 msgid "Category"
 msgstr "Categoria"
@@ -136,6 +141,11 @@ msgid "Description"
 msgstr "Descrição"
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__different_return_product
+msgid "Different Return Product"
+msgstr ""
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__display_name
 msgid "Display Name"
 msgstr "Nome a Exibir"
@@ -144,6 +154,13 @@ msgstr "Nome a Exibir"
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__id
 msgid "ID"
 msgstr "ID"
+
+#. module: rma_sale_mrp
+#: model:ir.model.fields,help:rma_sale_mrp.field_sale_order_line_rma_wizard_component__different_return_product
+msgid ""
+"If checked, allows the return of a product different from the one originally "
+"ordered. Used if the delivery is created automatically"
+msgstr ""
 
 #. module: rma_sale_mrp
 #: model:ir.model,name:rma_sale_mrp.model_account_move
@@ -225,6 +242,12 @@ msgid "Product"
 msgstr "Produto"
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,help:rma_sale_mrp.field_sale_order_line_rma_wizard_component__return_product_id
+msgid ""
+"Product to be returned if it's different from the originally delivered item."
+msgstr ""
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__quantity
 msgid "Quantity"
 msgstr "Quantidade"
@@ -242,6 +265,11 @@ msgstr ""
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__operation_id
 msgid "Requested operation"
+msgstr ""
+
+#. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__return_product_id
+msgid "Return Product"
 msgstr ""
 
 #. module: rma_sale_mrp

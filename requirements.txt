@@ -15,6 +15,7 @@ python-dateutil
 # From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
 # From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
 # generated from manifests external_dependencies
+google-cloud-documentai
 openupgradelib
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 # generated from manifests external_dependencies
@@ -365,12 +366,14 @@ apispec
 apispec>=4.0.0
 cerberus
 contextvars
+cryptography
 extendable-pydantic
 extendable-pydantic>=1.2.0
 extendable>=0.0.4
 fastapi>=0.110.0
 graphene
 graphql_server
+itsdangerous
 jsondiff
 marshmallow
 marshmallow-objects>=2.0.0
@@ -378,6 +381,7 @@ marshmallow<4.0.0
 parse-accept-language
 pydantic
 pydantic>=2.0.0
+pyjwt
 pyquerystring
 python-multipart
 typing-extensions

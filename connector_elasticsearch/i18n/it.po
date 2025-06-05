@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-28 11:25+0000\n"
+"PO-Revision-Date: 2025-06-03 09:27+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -132,11 +132,11 @@ msgstr "Massimo tentativi"
 #. module: connector_elasticsearch
 #: model:ir.model.fields,help:connector_elasticsearch.field_se_backend__es_max_retries
 msgid ""
-"Number of retries, when an occurs. 0 or negative means no retries and the "
-"exception is raised."
+"Number of retries, when an error occurs. 0 or negative means no retries and "
+"the exception is raised."
 msgstr ""
-"Numero di tentativi, quando si presentano. 0 o negativo indica nessun "
-"tentativo e si attiva l'eccezione."
+"Numero di tentativi, quando si genera un errore, 0 o negativo indica nessun "
+"tentativo ed è generata l'eccezione."
 
 #. module: connector_elasticsearch
 #: model_terms:ir.ui.view,arch_db:connector_elasticsearch.se_backend_form_view
@@ -238,3 +238,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:connector_elasticsearch.se_backend_form_view
 msgid "http://elastic:9200"
 msgstr "http://elastic:9200"
+
+#~ msgid ""
+#~ "Number of retries, when an occurs. 0 or negative means no retries and the "
+#~ "exception is raised."
+#~ msgstr ""
+#~ "Numero di tentativi, quando si presentano. 0 o negativo indica nessun "
+#~ "tentativo e si attiva l'eccezione."

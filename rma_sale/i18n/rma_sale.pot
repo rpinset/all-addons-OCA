@@ -109,6 +109,11 @@ msgid "Allowed Product"
 msgstr ""
 
 #. module: rma_sale
+#: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__allowed_quantity
+msgid "Allowed Quantity"
+msgstr ""
+
+#. module: rma_sale
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_order_rma_wizard_form_view
 msgid "Cancel"
 msgstr ""
@@ -198,6 +203,11 @@ msgid "Description"
 msgstr ""
 
 #. module: rma_sale
+#: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__different_return_product
+msgid "Different Return Product"
+msgstr ""
+
+#. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__display_name
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_rma_wizard__display_name
 msgid "Display Name"
@@ -221,6 +231,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__id
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_rma_wizard__id
 msgid "ID"
+msgstr ""
+
+#. module: rma_sale
+#: model:ir.model.fields,help:rma_sale.field_sale_order_line_rma_wizard__different_return_product
+msgid ""
+"If checked, allows the return of a product different from the one originally"
+" ordered. Used if the delivery is created automatically"
 msgstr ""
 
 #. module: rma_sale
@@ -285,6 +302,12 @@ msgid "Product"
 msgstr ""
 
 #. module: rma_sale
+#: model:ir.model.fields,help:rma_sale.field_sale_order_line_rma_wizard__return_product_id
+msgid ""
+"Product to be returned if it's different from the originally delivered item."
+msgstr ""
+
+#. module: rma_sale
 #: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__quantity
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
 msgid "Quantity"
@@ -334,8 +357,18 @@ msgid "Requested operation"
 msgstr ""
 
 #. module: rma_sale
+#: model:ir.model.fields,field_description:rma_sale.field_sale_order_rma_wizard__is_return_all
+msgid "Return All?"
+msgstr ""
+
+#. module: rma_sale
 #: model:ir.model,name:rma_sale.model_stock_return_picking
 msgid "Return Picking"
+msgstr ""
+
+#. module: rma_sale
+#: model:ir.model.fields,field_description:rma_sale.field_sale_order_line_rma_wizard__return_product_id
+msgid "Return Product"
 msgstr ""
 
 #. module: rma_sale
@@ -442,6 +475,14 @@ msgstr ""
 #. module: rma_sale
 #: model_terms:ir.ui.view,arch_db:rma_sale.sale_rma_request_form
 msgid "You can send a message in every RMA sent"
+msgstr ""
+
+#. module: rma_sale
+#. odoo-python
+#: code:addons/rma_sale/wizard/sale_order_rma_wizard.py:0
+#, python-format
+msgid ""
+"You can't exceed the allowed quantity for returning product %(product)s."
 msgstr ""
 
 #. module: rma_sale

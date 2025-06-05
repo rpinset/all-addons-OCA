@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-06 11:24+0000\n"
+"PO-Revision-Date: 2025-06-03 07:06+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -702,7 +702,7 @@ msgstr "Errore di consegna messaggio"
 #. module: mail_gateway_whatsapp
 #: model:ir.model.fields,field_description:mail_gateway_whatsapp.field_res_partner__message_search
 msgid "Message Search"
-msgstr ""
+msgstr "Ricerca messaggio"
 
 #. module: mail_gateway_whatsapp
 #: model:ir.model.fields,help:mail_gateway_whatsapp.field_res_partner__message_content
@@ -712,7 +712,7 @@ msgstr "Contenuto messaggio, da utilizzare solo nelle ricerche"
 #. module: mail_gateway_whatsapp
 #: model:ir.model.fields,help:mail_gateway_whatsapp.field_res_partner__message_search
 msgid "Message search, to be used only in searches"
-msgstr ""
+msgstr "Ricerca messaggio, da utilizzare solo nelle ricerche"
 
 #. module: mail_gateway_whatsapp
 #: model:ir.model.fields,field_description:mail_gateway_whatsapp.field_res_partner__message_ids

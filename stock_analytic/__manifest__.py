@@ -8,7 +8,7 @@
 {
     "name": "Stock Analytic",
     "summary": "Adds analytic distribution in stock move",
-    "version": "16.0.1.3.1",
+    "version": "16.0.1.4.0",
     "author": "Julius Network Solutions, "
     "ClearCorp, OpenSynergy Indonesia, "
     "Hibou Corp., "
@@ -18,6 +18,7 @@
     "license": "AGPL-3",
     "depends": ["stock_account", "analytic"],
     "data": [
+        "views/account_analytic_plan_views.xml",
         "views/stock_move_views.xml",
         "views/stock_scrap_views.xml",
         "views/stock_move_line_views.xml",

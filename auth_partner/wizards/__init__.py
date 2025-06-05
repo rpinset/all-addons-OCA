@@ -1,0 +1,2 @@
+from . import wizard_auth_partner_reset_password
+from . import wizard_auth_partner_force_set_password

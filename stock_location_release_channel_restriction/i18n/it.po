@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-04-15 18:24+0000\n"
+"PO-Revision-Date: 2025-06-04 10:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -20,8 +20,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction_in_move
 msgid ""
 "Check this box if you want to take into account all pending incoming "
-"movements to restrict the future movements to be in the same release "
-"channel."
+"movements to restrict the future movements to be in the same release channel."
 msgstr ""
 "Selezionare questa casella se si vuole prendere in considerazione tutti i "
 "movimenti in arrivo in sospeso per limitare i movimenti futuri allo stesso "
@@ -31,6 +30,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_destination_location_channel_id
 msgid "For Restriction Destination Location Channel"
 msgstr "Per la restrizione canale ubicazione destinazione"
+
+#. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_incoming_location_channel_ids
+msgid "For Restriction Incoming Location Channel"
+msgstr "Per limitazione canale ubicazione in entrata"
 
 #. module: stock_location_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__parent_release_channel_restriction
@@ -109,6 +113,15 @@ msgid "Specific Release Channel Restriction"
 msgstr "Restrizione canale rilascio specifica"
 
 #. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_incoming_location_channel_ids
+msgid ""
+"Technical field in order to retrieve the release channel of pending incoming "
+"moves on destination location."
+msgstr ""
+"Campo tecnico per recuperare il canale di rilascio dei movimenti in ingresso "
+"in sospeso nell'ubicazione di destinazione."
+
+#. module: stock_location_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_destination_location_channel_id
 msgid ""
 "Technical field in order to retrieve the release channel of pending moveson "
@@ -130,9 +143,21 @@ msgstr "Non definito"
 #, python-format
 msgid ""
 "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
-"That location has already pending moves for %(release_channel_name)s release"
-" channel"
+"That location has already pending outgoing moves for "
+"%(release_channel_name)s release channel and/or pending incoming moves for "
+"%(incoming_channel_names)s"
 msgstr ""
-"Non si possono spostare i prodotti in fase di prelievo (%(picking_name)s) a "
-"%(location_name)s. Quella ubicazione ha già movimenti in sospeso per il "
-"canale di rilascio di %(release_channel_name)s"
+"Non è possibile spostare i prodotti in fase di prelievo (%(picking_name)s) "
+"in %(location_name)s. Quella ubicazione ha già movimenti in uscita in "
+"sospeso per il canale di rilascio di %(release_channel_name)s e/o movimenti "
+"in entrata in sospeso per %(incoming_channel_name)s"
+
+#, python-format
+#~ msgid ""
+#~ "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
+#~ "That location has already pending moves for %(release_channel_name)s "
+#~ "release channel"
+#~ msgstr ""
+#~ "Non si possono spostare i prodotti in fase di prelievo (%(picking_name)s) "
+#~ "a %(location_name)s. Quella ubicazione ha già movimenti in sospeso per il "
+#~ "canale di rilascio di %(release_channel_name)s"

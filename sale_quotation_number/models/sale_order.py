@@ -15,11 +15,7 @@ class SaleOrder(models.Model):
         for vals in vals_list:
             if self.is_using_quotation_number(vals):
                 company_id = vals.get("company_id", self.env.company.id)
-                sequence = (
-                    self.with_company(company_id)
-                    .env["ir.sequence"]
-                    .next_by_code("sale.quotation")
-                )
+                sequence = self.with_company(company_id).get_quotation_seq()
                 vals["name"] = sequence or "/"
         return super().create(vals_list)
 
@@ -41,6 +37,10 @@ class SaleOrder(models.Model):
         else:
             default["origin"] = self.name
         return super().copy(default)
+
+    @api.model
+    def get_quotation_seq(self):
+        return self.env["ir.sequence"].next_by_code("sale.quotation")
 
     def action_confirm(self):
         sequence = self.env["ir.sequence"].search(

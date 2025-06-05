@@ -5,7 +5,7 @@
 {
     "name": "MRP Product Characterisation",
     "summary": "Adds product characterisation 'Intermediate Products'.",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Manufacturing",
     "author": "GRAP, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/manufacture",

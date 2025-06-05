@@ -632,7 +632,7 @@ class Job:
     def cancel_dependent_jobs(self):
         sql = self._get_common_dependent_jobs_query()
         self.env.cr.execute(sql, (CANCELLED, self.uuid, CANCELLED, WAIT_DEPENDENCIES))
-        self.env["queue.job"].invalidate_cache(["state"])
+        self.env["queue.job"].invalidate_model(["state"])
 
     def store(self):
         """Store the Job"""

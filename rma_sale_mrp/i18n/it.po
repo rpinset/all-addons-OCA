@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-21 10:06+0000\n"
+"PO-Revision-Date: 2025-06-03 14:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: rma_sale_mrp
 #: model_terms:ir.ui.view,arch_db:rma_sale_mrp.portal_rma_page
@@ -108,6 +108,11 @@ msgid "Allowed Product"
 msgstr "Prodotto consentito"
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__allowed_quantity
+msgid "Allowed Quantity"
+msgstr "Quantità consentita"
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__uom_category_id
 msgid "Category"
 msgstr "Categoria"
@@ -148,6 +153,11 @@ msgid "Description"
 msgstr "Descrizione"
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__different_return_product
+msgid "Different Return Product"
+msgstr "Prodotto reso diverso"
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
@@ -156,6 +166,15 @@ msgstr "Nome visualizzato"
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__id
 msgid "ID"
 msgstr "ID"
+
+#. module: rma_sale_mrp
+#: model:ir.model.fields,help:rma_sale_mrp.field_sale_order_line_rma_wizard_component__different_return_product
+msgid ""
+"If checked, allows the return of a product different from the one originally "
+"ordered. Used if the delivery is created automatically"
+msgstr ""
+"Se selezionata, consente il reso di un prodotto diverso da quello originale "
+"ordinato. Utilizzato se la consegna è creata automaticamente"
 
 #. module: rma_sale_mrp
 #: model:ir.model,name:rma_sale_mrp.model_account_move
@@ -237,6 +256,13 @@ msgid "Product"
 msgstr "Prodotto"
 
 #. module: rma_sale_mrp
+#: model:ir.model.fields,help:rma_sale_mrp.field_sale_order_line_rma_wizard_component__return_product_id
+msgid ""
+"Product to be returned if it's different from the originally delivered item."
+msgstr ""
+"Prodotto da rendere se è diverso dall'oggetto consegnato originariamente."
+
+#. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__quantity
 msgid "Quantity"
 msgstr "Quantità"
@@ -255,6 +281,11 @@ msgstr "Prodotto confezione relativa"
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__operation_id
 msgid "Requested operation"
 msgstr "Operazione richiesta"
+
+#. module: rma_sale_mrp
+#: model:ir.model.fields,field_description:rma_sale_mrp.field_sale_order_line_rma_wizard_component__return_product_id
+msgid "Return Product"
+msgstr "Prodotto reso"
 
 #. module: rma_sale_mrp
 #: model:ir.model.fields,field_description:rma_sale_mrp.field_rma__rma_kit_register

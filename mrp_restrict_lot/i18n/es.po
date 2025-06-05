@@ -17,6 +17,16 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: mrp_restrict_lot
+#: model:ir.model.fields,field_description:mrp_restrict_lot.field_mrp_production__lot_producing_id
+msgid "Lot/Serial Number"
+msgstr ""
+
+#. module: mrp_restrict_lot
+#: model:ir.model,name:mrp_restrict_lot.model_mrp_production
+msgid "Production Order"
+msgstr ""
+
+#. module: mrp_restrict_lot
 #: model:ir.model,name:mrp_restrict_lot.model_stock_rule
 msgid "Stock Rule"
 msgstr "Regla de existencias"

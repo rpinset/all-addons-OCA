@@ -4,7 +4,6 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 
-from odoo import Command
 from odoo.tests.common import users
 
 from odoo.addons.rma_sale.tests.test_rma_sale import TestRmaSaleBase
@@ -26,29 +25,11 @@ class TestRmaSaleReason(TestRmaSaleBase):
         cls.order_out_picking.button_validate()
 
     def _create_wizard(self):
-        order = self.sale_order
-        wizard_obj = (
-            self.env["sale.order.rma.wizard"].sudo().with_context(active_id=order.id)
-        )
-
-        line_vals = [
-            Command.create(
-                {
-                    "product_id": order.order_line.product_id.id,
-                    "sale_line_id": order.order_line.id,
-                    "quantity": order.order_line.product_uom_qty,
-                    "uom_id": order.order_line.product_uom.id,
-                    "picking_id": order.picking_ids[0].id,
-                    "operation_id": self.operation.id,
-                },
-            )
-        ]
-        return wizard_obj.create(
-            {
-                "line_ids": line_vals,
-                "location_id": order.warehouse_id.rma_loc_id.id,
-            }
-        )
+        order = self.sale_order.sudo()
+        wizard_id = order.action_create_rma()["res_id"]
+        wizard = self.env["sale.order.rma.wizard"].sudo().browse(wizard_id)
+        wizard.operation_id = self.operation
+        return wizard
 
     @users("partner@rma")
     def test_create_rma_from_wizard(self):

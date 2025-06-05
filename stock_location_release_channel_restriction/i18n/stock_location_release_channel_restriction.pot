@@ -27,6 +27,11 @@ msgid "For Restriction Destination Location Channel"
 msgstr ""
 
 #. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,field_description:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_incoming_location_channel_ids
+msgid "For Restriction Incoming Location Channel"
+msgstr ""
+
+#. module: stock_location_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__parent_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_location__release_channel_restriction
 msgid ""
@@ -96,6 +101,13 @@ msgid "Specific Release Channel Restriction"
 msgstr ""
 
 #. module: stock_location_release_channel_restriction
+#: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_incoming_location_channel_ids
+msgid ""
+"Technical field in order to retrieve the release channel of pending incoming"
+" moves on destination location."
+msgstr ""
+
+#. module: stock_location_release_channel_restriction
 #: model:ir.model.fields,help:stock_location_release_channel_restriction.field_stock_move_line__for_restriction_destination_location_channel_id
 msgid ""
 "Technical field in order to retrieve the release channel of pending moveson "
@@ -115,6 +127,7 @@ msgstr ""
 #, python-format
 msgid ""
 "You cannot move picking (%(picking_name)s) products to %(location_name)s. "
-"That location has already pending moves for %(release_channel_name)s release"
-" channel"
+"That location has already pending outgoing moves for "
+"%(release_channel_name)s release channel and/or pending incoming moves for "
+"%(incoming_channel_names)s"
 msgstr ""

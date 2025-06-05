@@ -4,7 +4,7 @@
 {
     "name": "Project Task Add Very High",
     "summary": "Adds extra options 'High' and 'Very High' on tasks",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "development_status": "Production/Stable",
     "author": "Onestein, Odoo Community Association (OCA)",
     "maintainers": ["astirpe"],
@@ -12,7 +12,7 @@
     "category": "Project",
     "website": "https://github.com/OCA/project",
     "depends": ["project"],
-    "data": ["views/project_task_view.xml"],
+    "data": ["views/project_task_view.xml", "views/templates.xml"],
     "installable": True,
     "uninstall_hook": "uninstall_hook",
 }

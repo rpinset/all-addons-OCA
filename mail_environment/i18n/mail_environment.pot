@@ -15,6 +15,7 @@ msgstr ""
 
 #. module: mail_environment
 #: model:ir.model.fields,help:mail_environment.field_fetchmail_server__is_ssl
+#: model:ir.model.fields,help:mail_environment.field_fetchmail_server__is_ssl_env_default
 msgid ""
 "Connections are encrypted with SSL/TLS through a dedicated port (default: "
 "IMAPS=993, POP3S=995)"
@@ -36,6 +37,11 @@ msgid "SSL/TLS"
 msgstr ""
 
 #. module: mail_environment
+#: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__is_ssl_env_default
+msgid "SSL/TLS Env Default"
+msgstr ""
+
+#. module: mail_environment
 #: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__server_env_defaults
 #: model:ir.model.fields,field_description:mail_environment.field_ir_mail_server__server_env_defaults
 msgid "Server Env Defaults"
@@ -44,4 +50,9 @@ msgstr ""
 #. module: mail_environment
 #: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__server_type
 msgid "Server Type"
+msgstr ""
+
+#. module: mail_environment
+#: model:ir.model.fields,field_description:mail_environment.field_fetchmail_server__server_type_env_default
+msgid "Server Type Env Default"
 msgstr ""

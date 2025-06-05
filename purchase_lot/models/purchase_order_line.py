@@ -8,9 +8,8 @@ from odoo import api, fields, models
 class PurchaseOrderLine(models.Model):
     _inherit = "purchase.order.line"
 
-    lot_id = fields.Many2one(
-        "stock.lot", string="Serial Number", readonly=True, copy=False
-    )
+    lot_id = fields.Many2one("stock.lot", string="Serial Number", copy=False)
+    tracking = fields.Selection(related="product_id.tracking")
 
     @api.model
     def _prepare_purchase_order_line_from_procurement(

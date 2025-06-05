@@ -10,12 +10,27 @@ class StockMoveLine(models.Model):
 
     _inherit = "stock.move.line"
 
+    for_restriction_incoming_location_channel_ids = fields.Many2many(
+        compute="_compute_for_restriction_incoming_location_channel_ids",
+        comodel_name="stock.release.channel",
+        help="Technical field in order to retrieve the release channel of "
+        "pending incoming moves on destination location.",
+    )
     for_restriction_destination_location_channel_id = fields.Many2one(
         compute="_compute_for_restriction_destination_location_channel_id",
         comodel_name="stock.release.channel",
         help="Technical field in order to retrieve the release channel of pending moves"
         "on destination location.",
     )
+
+    @api.depends(
+        "location_dest_id.pending_in_move_line_ids.picking_id.release_channel_id"
+    )
+    def _compute_for_restriction_incoming_location_channel_ids(self):
+        for line in self:
+            line.for_restriction_incoming_location_channel_ids = (
+                line.location_dest_id.pending_in_move_line_ids.picking_id.release_channel_id
+            )
 
     @api.depends(
         "location_dest_id.pending_out_move_line_ids.picking_id.release_channel_id"
@@ -33,9 +48,7 @@ class StockMoveLine(models.Model):
         is applicable
         """
         destination_channel = self.for_restriction_destination_location_channel_id
-        in_channel = (
-            self.location_dest_id.pending_in_move_line_ids.picking_id.release_channel_id
-        )
+        in_channel = self.for_restriction_incoming_location_channel_ids
         return bool(
             self.location_dest_id.release_channel_restriction_in_move
             and (
@@ -68,6 +81,7 @@ class StockMoveLine(models.Model):
                 raise ReleaseChannelLocationRestrictionError(
                     line.picking_id,
                     line.location_dest_id,
+                    line.for_restriction_incoming_location_channel_ids,
                     line.for_restriction_destination_location_channel_id,
                     line.env,
                 )

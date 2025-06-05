@@ -12,8 +12,8 @@ msgstr ""
 "PO-Revision-Date: 2024-09-03 15:06+0000\n"
 "Last-Translator: Rodrigo Sottomaior Macedo "
 "<sottomaiormacedotec@sottomaiormacedo.tech>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
-"23907/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
+"teams/23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,6 +51,11 @@ msgstr "Precisão Analítica"
 #: model:ir.model.fields,field_description:stock_analytic.field_account_analytic_applicability__business_domain
 msgid "Domain"
 msgstr "Dominio"
+
+#. module: stock_analytic
+#: model:ir.model.fields,field_description:stock_analytic.field_account_analytic_applicability__stock_picking_type_id
+msgid "Operation Type"
+msgstr ""
 
 #. module: stock_analytic
 #: model:ir.model,name:stock_analytic.model_stock_move_line

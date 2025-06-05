@@ -11,16 +11,12 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="inherit_id" ref="product.product_template_form_view" />
         <field name="arch" type="xml">
 
-            <xpath
-                expr="//field[@name='purchase_ok']/.."
-                position="after"
-                groups="mrp.group_mrp_user"
-            >
-                <span class="d-inline-block">
+            <xpath expr="//field[@name='purchase_ok']/.." position="after">
+                <span class="d-inline-block" groups="base.group_no_one">
                     <field name="is_component" />
                     <label for="is_component" />
                 </span>
-                <span class="d-inline-block">
+                <span class="d-inline-block" groups="base.group_no_one">
                     <field name="is_intermediate" />
                     <label for="is_intermediate" />
                 </span>
@@ -38,6 +34,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                     string="Intermediates Products"
                     name="filter_is_intermediate"
                     domain="[('is_intermediate', '=', True)]"
+                    groups="mrp.group_mrp_user"
                 />
             </xpath>
             <xpath expr="//filter[@name='filter_is_intermediate']" position="after">
@@ -45,6 +42,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                     string="Components Products"
                     name="filter_is_component"
                     domain="[('is_component', '=', True)]"
+                    groups="mrp.group_mrp_user"
                 />
             </xpath>
             <xpath expr="//filter[@name='components']" position="attributes">
