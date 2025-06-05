@@ -141,15 +141,18 @@ msgstr "ID"
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,help:analytic_activity_based_cost.field_activity_cost_rule__standard_price
 msgid ""
-"In Standard Price & AVCO: value of the product (automatically computed in AVCO).\n"
-"        In FIFO: value of the next unit that will leave the stock (automatically computed).\n"
-"        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
+"In Standard Price & AVCO: value of the product (automatically computed in "
+"AVCO).\n"
+"        In FIFO: value of the next unit that will leave the stock "
+"(automatically computed).\n"
+"        Used to value the product when the purchase cost is not known (e.g. "
+"inventory adjustment).\n"
 "        Used to compute margins on sale orders."
 msgstr ""
 "En Precio estándar y AVCO: valor del producto (calculado automáticamente en "
 "AVCO).\n"
-"        En FIFO: valor de la siguiente unidad que saldrá del stock ("
-"calculado automáticamente).\n"
+"        En FIFO: valor de la siguiente unidad que saldrá del stock "
+"(calculado automáticamente).\n"
 "        Se utiliza para valorar el producto cuando no se conoce el coste de "
 "compra (por ejemplo, ajuste de inventario).\n"
 "        Se utiliza para calcular los márgenes de los pedidos de venta."
@@ -224,13 +227,13 @@ msgstr ""
 
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,field_description:analytic_activity_based_cost.field_account_analytic_line__child_ids
+#: model_terms:ir.ui.view,arch_db:analytic_activity_based_cost.view_analytic_line_form
 msgid "Related Analytic Items"
 msgstr "Artículos Analíticos Relacionados"
 
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,help:analytic_activity_based_cost.field_product_product__activity_cost_ids
-msgid ""
-"This product will also generate analytic items for these Activity Costs"
+msgid "This product will also generate analytic items for these Activity Costs"
 msgstr ""
 "Este producto también generará elementos analíticos para estos Costes de "
 "Actividad"

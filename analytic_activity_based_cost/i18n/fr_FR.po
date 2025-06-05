@@ -219,6 +219,7 @@ msgstr ""
 
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,field_description:analytic_activity_based_cost.field_account_analytic_line__child_ids
+#: model_terms:ir.ui.view,arch_db:analytic_activity_based_cost.view_analytic_line_form
 msgid "Related Analytic Items"
 msgstr "Eléments analytiques connexes"
 

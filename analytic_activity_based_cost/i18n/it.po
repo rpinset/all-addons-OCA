@@ -139,15 +139,18 @@ msgstr "ID"
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,help:analytic_activity_based_cost.field_activity_cost_rule__standard_price
 msgid ""
-"In Standard Price & AVCO: value of the product (automatically computed in AVCO).\n"
-"        In FIFO: value of the next unit that will leave the stock (automatically computed).\n"
-"        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n"
+"In Standard Price & AVCO: value of the product (automatically computed in "
+"AVCO).\n"
+"        In FIFO: value of the next unit that will leave the stock "
+"(automatically computed).\n"
+"        Used to value the product when the purchase cost is not known (e.g. "
+"inventory adjustment).\n"
 "        Used to compute margins on sale orders."
 msgstr ""
 "Nei prezzi standard & costi medi: valore del prodotto (calcolato "
 "automaticamente nei costi medi).\n"
-"        In FIFO: valore dell'unità successiva che lascerà il magazzino ("
-"calcolato automaticamente).\n"
+"        In FIFO: valore dell'unità successiva che lascerà il magazzino "
+"(calcolato automaticamente).\n"
 "        Utilizzato per valutare il prodotto quando il costo di acquisto non "
 "è noto (es. rettifiche di inventario).\n"
 "        Utilizzato per calcolare i margini negli ordini di vendita."
@@ -220,13 +223,13 @@ msgstr "Quantità impostata negli elementi analitici figli, aggregata nel padre"
 
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,field_description:analytic_activity_based_cost.field_account_analytic_line__child_ids
+#: model_terms:ir.ui.view,arch_db:analytic_activity_based_cost.view_analytic_line_form
 msgid "Related Analytic Items"
 msgstr "Elementi analitici relativi"
 
 #. module: analytic_activity_based_cost
 #: model:ir.model.fields,help:analytic_activity_based_cost.field_product_product__activity_cost_ids
-msgid ""
-"This product will also generate analytic items for these Activity Costs"
+msgid "This product will also generate analytic items for these Activity Costs"
 msgstr ""
 "Questo prodotto genererà anche elementi analitici per questi costi analitici"
 

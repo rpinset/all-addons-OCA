@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit ad33233fa4dceebe1d0a7814e8675fdc7121557d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 15 09:04:31 2025 +0000
+commit f584216de588ca252a360f6d5482489e2ca46ad0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:30:43 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (73 of 73 strings)
-    
-    Translation: account-analytic-14.0/account-analytic-14.0-account_analytic_wip
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-account_analytic_wip/it/
+    [UPD] addons table in README.md
 
 
 ## account-budgeting
@@ -47,16 +42,11 @@ Date:   Sun Feb 2 17:49:28 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 8cb7efa1ded81c32a5305a627aa50e223bb42737
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:08 2025 +0000
+commit 89473e382a5d0acccfa0bf9b1bdc4dbaa67e8c97
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:31:50 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 5.4% (6 of 111 strings)
-    
-    Translation: account-closing-14.0/account-closing-14.0-account_multicurrency_revaluation
-    Translate-URL: https://translation.odoo-community.org/projects/account-closing-14-0/account-closing-14-0-account_multicurrency_revaluation/it/
+    [UPD] addons table in README.md
 
 
 ## account-consolidation
@@ -75,137 +65,102 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 3b0ef457ff8c9330e33f4898cc1fa75a62423d29
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:17 2025 +0000
+commit 095c7834f64be6846c9cf592ab0fd405763b947f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:32:57 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 25.0% (5 of 20 strings)
-    
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_journal_lock_date
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_journal_lock_date/it/
+    [UPD] addons table in README.md
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 9c42bb7c556a76aec1dfab68ca67990f5a921364
+commit a8b5360f696d9d1a2df90ea7f210604e329d6ae3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:32:19 2025 +0000
+
+    [UPD] addons table in README.md
+
+
+## account-invoice-reporting
+From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
+commit 8670e82127786537540c008c54f214459825bdd9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:34:45 2025 +0000
+
+    [UPD] addons table in README.md
+
+
+## account-invoicing
+From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
+commit 043bdd45111d8482057e2b553fb4d483cc160c41
 Author: Weblate <noreply@weblate.org>
-Date:   Fri May 30 19:52:08 2025 +0000
+Date:   Wed Jun 4 06:53:49 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/
-
-
-## account-invoice-reporting
-From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit e22a2f92bf635057af4f216656c3ac2173cfffad
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 17:56:28 2025 +0000
-
-    [IMP] update dotfiles
-
-
-## account-invoicing
-From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 433601b1639b4ada71f67e76bbffc0fedbdfefd1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:40 2025 +0000
-
-    Translated using Weblate (Italian)
-    
-    Currently translated at 2.2% (1 of 44 strings)
-    
-    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_supplier_self_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_supplier_self_invoice/it/
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_auto_send_by_email
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_auto_send_by_email/
 
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 697d881a0066ccb6eac7f9828672faf1bcf9c99d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:30:33 2025 +0000
+commit 740777fe2107ef96bc6af2d00f267edc4b4b5a69
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 5 02:33:56 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 2.7% (1 of 36 strings)
-    
-    Translation: account-fiscal-rule-14.0/account-fiscal-rule-14.0-l10n_eu_oss
-    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-14-0/account-fiscal-rule-14-0-l10n_eu_oss/it/
+    [UPD] addons table in README.md
 
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit e4db395ca67a28ff9e30b7464a8a08cf6daa4342
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:01:55 2025 +0000
+commit 239018523f546989fc4b3290b442bcc1314fdf05
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:20:08 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 33.3% (2 of 6 strings)
-    
-    Translation: operating-unit-14.0/operating-unit-14.0-sale_crm_operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-sale_crm_operating_unit/it/
+    [UPD] addons table in README.md
 
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit 90c128e6f92abe82e939a1b2475be884b6dc967f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:54:35 2025 +0000
+commit 640642c0f62d3c7e85db03ca10da973487d4ea70
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:58:38 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: intrastat-extrastat-14.0/intrastat-extrastat-14.0-product_harmonized_system_stock
-    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-14-0/intrastat-extrastat-14-0-product_harmonized_system_stock/it/
+    [UPD] addons table in README.md
 
 
 ## mis-builder
 From [https://github.com/OCA/mis-builder.git](https://github.com/OCA/mis-builder.git)
-commit e43a8148c28b3327fb1393f911090c27330d14cb
+commit 9eba3b9b58b704d76c677caf88c78809420db05c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:36 2025 +0000
+Date:   Thu Jun 5 07:31:19 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 1.1% (1 of 88 strings)
+    Currently translated at 73.4% (208 of 283 strings)
     
-    Translation: mis-builder-14.0/mis-builder-14.0-mis_builder_budget
-    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder_budget/it/
+    Translation: mis-builder-14.0/mis-builder-14.0-mis_builder
+    Translate-URL: https://translation.odoo-community.org/projects/mis-builder-14-0/mis-builder-14-0-mis_builder/it/
 
 
 ## currency
 From [https://github.com/OCA/currency.git](https://github.com/OCA/currency.git)
-commit 27f5040f78b7b2a63ddf461437ab25d0e45a16ee
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:41 2025 +0000
+commit 1ad741bf924a08f0fb7e0d26d23b31dbf032d4cc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:46:39 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 18.1% (2 of 11 strings)
-    
-    Translation: currency-14.0/currency-14.0-currency_rate_update_cmc
-    Translate-URL: https://translation.odoo-community.org/projects/currency-14-0/currency-14-0-currency_rate_update_cmc/it/
+    [UPD] addons table in README.md
 
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit d28c3ad512cb3bcb6c7ebe7066e00d01ad00fc26
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:10:39 2025 +0000
+commit 0c39ed7b64d9e2a62e1165eca3c1aa9b32afb3b1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:45:28 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 10.0% (1 of 10 strings)
-    
-    Translation: credit-control-14.0/credit-control-14.0-account_invoice_overdue_warn
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-account_invoice_overdue_warn/it/
+    [UPD] addons table in README.md
 
 
 ## data-protection
@@ -219,67 +174,52 @@ Date:   Sun Feb 2 18:33:51 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 1d43cbab3d9174ee647efd24b22eb9b056cf4fb2
+commit 6b11d23dc62ed1f88b851fd37c73364ea55ce134
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:33:19 2025 +0000
+Date:   Thu Jun 5 13:15:09 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 5.7% (3 of 52 strings)
+    Currently translated at 63.4% (33 of 52 strings)
     
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_order_notification
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_order_notification/it/
+    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_mode
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_mode/it/
 
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 1dde072a006c1d771dfc0d543390c2882fef6dfa
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 14:52:10 2025 +0000
+commit 566a0e0b3e9cde7c1b89b651ef98213fe1c32039
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:38:16 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 5.8% (1 of 17 strings)
-    
-    Translation: account-reconcile-14.0/account-reconcile-14.0-account_reconcile_restrict_partner_mismatch
-    Translate-URL: https://translation.odoo-community.org/projects/account-reconcile-14-0/account-reconcile-14-0-account_reconcile_restrict_partner_mismatch/it/
+    [UPD] addons table in README.md
 
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 7539888f878cd7263f3795e7a961d08a38d4bfd9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:33:44 2025 +0000
+commit 7abbe7fcd61f89ab4537ccd1a4ff4aa53c98c049
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:39:52 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 1.8% (3 of 161 strings)
-    
-    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_online_paypal
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_online_paypal/it/
+    [UPD] addons table in README.md
 
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 8ea7301486f39f4c8dee6eb81b6c35aa80d303da
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:04:43 2025 +0000
+commit cb155d5fd233001c4af8d133b04850f3fec05cd8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:37:38 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 18.1% (2 of 11 strings)
-    
-    Translation: account-payment-14.0/account-payment-14.0-account_payment_batch_process_discount
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_batch_process_discount/it/
+    [UPD] addons table in README.md
 
 
 ## connector
 From [https://github.com/OCA/connector.git](https://github.com/OCA/connector.git)
-commit b326d2b03887f6e453bc9621e93abd707bf4c48c
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:12:05 2025 +0000
+commit 574926498f981ec43c9739c8f34182a012935d1a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:42:16 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## connector-ecommerce
@@ -293,16 +233,11 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 95e4517206eab60b2d9510bdb2c1052f7a72dfea
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:06:42 2025 +0000
+commit 371431d6b38a7d944939c8eb465bcfed00748c3f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:32:44 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 16.6% (2 of 12 strings)
-    
-    Translation: queue-14.0/queue-14.0-base_import_async
-    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-base_import_async/it/
+    [UPD] addons table in README.md
 
 
 ## connector-accountedge
@@ -316,11 +251,11 @@ Date:   Sun Feb 2 18:13:34 2025 +0000
 
 ## connector-cmis
 From [https://github.com/OCA/connector-cmis.git](https://github.com/OCA/connector-cmis.git)
-commit c7e707b7a0bb041e595b3c78cf51a1e55cf1070d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:14:20 2025 +0000
+commit 67736b87f968842853fc00048b9da6519703351e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:42:38 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## connector-infor
@@ -411,34 +346,29 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 2d67dbd385037def16625fbf741996f972863078
+commit 4d5f1fef03f83c7435d996ef993916c7b89169df
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri May 30 09:23:24 2025 +0000
+Date:   Wed Jun 4 03:38:27 2025 +0000
 
-    [BOT] post-merge updates
+    [UPD] addons table in README.md
 
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit f6942ff71a203686f868ccf417472e7799d24f37
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:31:37 2025 +0000
+commit a32d29e59a361f6ed20fc50d99ce65271092b313
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:45:55 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 2c5cbdde113c269015ac3e0e24ae31f2758c30fe
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:45 2025 +0000
+commit 94183c9155c96bc246afe4d23b2523b941cc6204
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:21:22 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 19.4% (7 of 36 strings)
-    
-    Translation: partner-contact-14.0/partner-contact-14.0-partner_contact_in_several_companies
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-14-0/partner-contact-14-0-partner_contact_in_several_companies/it/
+    [UPD] addons table in README.md
 
 
 ## sale-financial
@@ -452,81 +382,56 @@ Date:   Sun Feb 9 18:27:50 2025 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit 3dfed46fbeb2cd98818aa4743ebd668aa3072a1d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 10 08:29:07 2025 +0000
+commit 477ede153d6ff791326916339e2729191bc2fcbf
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:36:12 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (12 of 12 strings)
-    
-    Translation: sale-promotion-14.0/sale-promotion-14.0-sale_promotion_discount_in_field
-    Translate-URL: https://translation.odoo-community.org/projects/sale-promotion-14-0/sale-promotion-14-0-sale_promotion_discount_in_field/it/
+    [UPD] addons table in README.md
 
 
 ## sale-reporting
 From [https://github.com/OCA/sale-reporting.git](https://github.com/OCA/sale-reporting.git)
-commit 7c68e255491a590f18fdc36ddd480ce184403518
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 5 09:13:01 2025 +0000
+commit ee6b244f673eada99ec0eedace33266c045eeb1a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:36:55 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (47 of 47 strings)
-    
-    Translation: sale-reporting-14.0/sale-reporting-14.0-sale_report_delivered
-    Translate-URL: https://translation.odoo-community.org/projects/sale-reporting-14-0/sale-reporting-14-0-sale_report_delivered/it/
+    [UPD] addons table in README.md
 
 
 ## commission
 From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
-commit 5fe25ecded41cb0b89ada8631068d0761d149d88
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 26 06:39:46 2025 +0000
+commit e22912f2f729f6e60ddf828934d301d63af5fbc1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:41:19 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: commission-14.0/commission-14.0-sale_commission_queued
-    Translate-URL: https://translation.odoo-community.org/projects/commission-14-0/commission-14-0-sale_commission_queued/it/
+    [UPD] addons table in README.md
 
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit f1211bbc12da8463e54ca0811f4e36a5a2d20ce6
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:47:22 2025 +0000
+commit c8a316a0c4876de9345344301f0935b7f3569d8f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:52:33 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 90e937f4ea305e715e12b9237d83068e44bd3032
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Dec 29 14:49:49 2023 +0000
+commit 53c9f49369592bb5c42622d1f5cbccd173c480c0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:56:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (37 of 37 strings)
-    
-    Translation: survey-14.0/survey-14.0-survey_question_type_binary
-    Translate-URL: https://translation.odoo-community.org/projects/survey-14-0/survey-14-0-survey_question_type_binary/it/
+    [UPD] addons table in README.md
 
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 1e174c70c717b7ab6a290b7f581aff10112df19c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:17:56 2025 +0000
+commit 200c51eb6b565e50c5ea6029e55162ee145dda58
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:59:23 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (67 of 67 strings)
-    
-    Translation: knowledge-14.0/knowledge-14.0-document_page_approval
-    Translate-URL: https://translation.odoo-community.org/projects/knowledge-14-0/knowledge-14-0-document_page_approval/it/
+    [UPD] addons table in README.md
 
 
 ## dms
@@ -540,67 +445,47 @@ Date:   Sun Feb 2 18:38:58 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 586e2711b5659c63cd3f9f118481122ab5f5f30c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:39:06 2025 +0000
+commit 8180c18c5e484e669addc71c66370d5d38d31ac8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:49:54 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 14.2% (3 of 21 strings)
-    
-    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_charge_payment_fee
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_charge_payment_fee/it/
+    [UPD] addons table in README.md
 
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 281de76ebda4928086fdc70b10f2993c21ad97c8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:39:30 2025 +0000
+commit ed1daaad280d2f62f38dc9842c7fc82f1d6ab473
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:51:10 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 8.0% (2 of 25 strings)
-    
-    Translation: edi-14.0/edi-14.0-account_invoice_export
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-account_invoice_export/it/
+    [UPD] addons table in README.md
 
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 4bf5a5c3b704beaf6c0f1bc2d70284d21e8287cf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:48:08 2025 +0000
+commit 9843f81b933e9e6c32af3b20f8f64f62e690b5da
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:53:22 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 5.2% (1 of 19 strings)
-    
-    Translation: field-service-14.0/field-service-14.0-fieldservice_equipment_type
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_equipment_type/it/
+    [UPD] addons table in README.md
 
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 9cb5f86e8bc08df20fb118a5d9ebcbfd5cb85dda
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:11:19 2025 +0000
+commit c3cd924036346e4f7e494947ad34745206e61237
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:17:32 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 16.6% (1 of 6 strings)
-    
-    Translation: margin-analysis-14.0/margin-analysis-14.0-account_invoice_margin_sale
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-14-0/margin-analysis-14-0-account_invoice_margin_sale/it/
+    [UPD] addons table in README.md
 
 
 ## fleet
 From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
-commit d35c87933ca13089b8e3dc3ca5c7ff630295755c
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:50:07 2025 +0000
+commit 91eb59114a9e7ceb3e6b6995eab1beab224c2f66
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:54:27 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## infrastructure-dns
@@ -614,76 +499,56 @@ Date:   Sun Feb 2 18:57:54 2025 +0000
 
 ## geospatial
 From [https://github.com/OCA/geospatial.git](https://github.com/OCA/geospatial.git)
-commit 74792c693b1f9336708456a7426216b9bce74dd2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 14:50:51 2025 +0000
+commit f659112004656200768b388ea499cea9db8ad2ba
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:55:01 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 0.7% (1 of 135 strings)
-    
-    Translation: geospatial-14.0/geospatial-14.0-base_geoengine
-    Translate-URL: https://translation.odoo-community.org/projects/geospatial-14-0/geospatial-14-0-base_geoengine/it/
+    [UPD] addons table in README.md
 
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 5950069ab5cd1e5bf6c84f2fd415e328aa68548d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 11:20:10 2025 +0000
+commit 7df9fc10a73b155c7eb567e1a36fc9289655f87c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:56:50 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: timesheet-14.0/timesheet-14.0-hr_timesheet_time_type
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-14-0/timesheet-14-0-hr_timesheet_time_type/it/
+    [UPD] addons table in README.md
 
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit cf3e4b82ea3c2f4471ff933ffd5c8c650a1b3a42
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:44:13 2025 +0000
+commit 469844a6a92e0f091fca90ca430df8cc9cea41e1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:56:29 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (115 of 115 strings)
-    
-    Translation: hr-14.0/hr-14.0-hr_course
-    Translate-URL: https://translation.odoo-community.org/projects/hr-14-0/hr-14-0-hr_course/it/
+    [UPD] addons table in README.md
 
 
 ## hr-attendance
 From [https://github.com/OCA/hr-attendance.git](https://github.com/OCA/hr-attendance.git)
-commit 904b188bd27c078841493e84aee7caf7dbfc1e09
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:54:28 2025 +0000
+commit d4ae5f1ec6cf6d816bb57e0f61e6201bf518926a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:57:12 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit dae62ae725ae672630c3426b2c7c1416050b1d19
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:10:38 2025 +0000
+commit a1a6659faf781a5895ed2fd45b227ae554757827
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:57:29 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 10.0% (1 of 10 strings)
-    
-    Translation: hr-expense-14.0/hr-expense-14.0-hr_expense_due_date
-    Translate-URL: https://translation.odoo-community.org/projects/hr-expense-14-0/hr-expense-14-0-hr_expense_due_date/it/
+    [UPD] addons table in README.md
 
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit 65607975bcc8dab15a4fce856cee0b0a43ecc978
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 26 06:33:52 2025 +0000
+commit fcd0d1e7ffd65917407e3a23362515d41ee4849f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:57:56 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [UPD] addons table in README.md
 
 
 ## department
@@ -706,25 +571,20 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit f3f0b164bf13f57f45bcfb0f4ee9d06d552b6d5f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 15:09:20 2025 +0000
+commit 589260b6bb4023e6b4bb9143a9f5ed7a53c61b22
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:18:28 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (23 of 23 strings)
-    
-    Translation: multi-company-14.0/multi-company-14.0-product_supplierinfo_intercompany
-    Translate-URL: https://translation.odoo-community.org/projects/multi-company-14-0/multi-company-14-0-product_supplierinfo_intercompany/it/
+    [UPD] addons table in README.md
 
 
 ## l10n-argentina
 From [https://github.com/OCA/l10n-argentina.git](https://github.com/OCA/l10n-argentina.git)
-commit 7140b56359eee768d49cb71525b49a804c378952
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:03:28 2025 +0000
+commit 22b75de829d667e6e1d44bc3309e5aff24576a3d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:59:49 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-austria
@@ -747,11 +607,11 @@ Date:   Sun Feb 2 19:05:02 2025 +0000
 
 ## l10n-belgium
 From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
-commit bce84dace59cc8512ece3150ffbf500c720132d4
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:05:53 2025 +0000
+commit 8a0bf5ce61116aa4ffb3e08e99e40b74f1195358
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:00:12 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-cambodia
@@ -828,11 +688,11 @@ Date:   Sun Feb 2 19:15:35 2025 +0000
 
 ## l10n-estonia
 From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
-commit 567ef668b1b2c46c73cf1ea514ecc4dfe5bfe771
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:16:34 2025 +0000
+commit 3c47a80859e16c650e547c8e11cb139ec491db0f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:02:31 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-ethiopia
@@ -855,16 +715,11 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 353009ee4ba0073e8fbc203fe90c67b7531de656
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:19 2025 +0000
+commit eb75454f348dd56925c27135a68c378293061efb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:03:03 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 4.3% (1 of 23 strings)
-    
-    Translation: l10n-france-14.0/l10n-france-14.0-l10n_fr_siret
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-france-14-0/l10n-france-14-0-l10n_fr_siret/it/
+    [UPD] addons table in README.md
 
 
 ## l10n-germany
@@ -923,16 +778,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 2accc0c7d2968746440c449005ca7205db99b497
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:50:35 2025 +0000
+commit d6704b7298e16959cd1c44224ffe1bb217fd673b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 09:17:10 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (110 of 110 strings)
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_declaration_of_intent
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_declaration_of_intent/it/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -964,11 +814,11 @@ Date:   Sun Feb 2 19:29:18 2025 +0000
 
 ## l10n-mexico
 From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
-commit 9e962d7d6cec79ed7c2dc31f228075eb09ea8e2d
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:30:04 2025 +0000
+commit 0ac8d2823197e57f520e916859903c36e0c5b132
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:06:27 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-morocco
@@ -982,11 +832,11 @@ Date:   Sun Feb 2 19:31:17 2025 +0000
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit 01e52e83c567163316e0b9c86130e465727e6e72
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:32:07 2025 +0000
+commit d0fe6852decd6ac0680da6a821b478d9f9ab460a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:06:53 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-norway
@@ -1018,11 +868,11 @@ Date:   Sun Feb 2 19:34:48 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit bfb69fdec5a188f59db20a81480bd26a38430d28
+commit e17b382ca7bce9338fd56bf610e6f72dd892b4eb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Mar 31 16:00:34 2025 +0000
+Date:   Wed Jun 4 03:07:49 2025 +0000
 
-    [UPD] README.rst
+    [UPD] addons table in README.md
 
 
 ## l10n-russia
@@ -1045,25 +895,20 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e1f6e76fbb832fb40f155ac689d7786d196a9d11
+commit edfd729da0de8614aad56379c68eb5e8fcd86cac
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed May 28 18:39:49 2025 +0000
+Date:   Wed Jun 4 03:09:47 2025 +0000
 
-    [BOT] post-merge updates
+    [UPD] addons table in README.md
 
 
 ## l10n-switzerland
 From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
-commit 384df72766aa316f05f0f953487b3e12aedc547a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:59 2025 +0000
+commit f7f7a4b2728b5348b8dd41e4324de4b80481e994
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:11:30 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 40.0% (8 of 20 strings)
-    
-    Translation: l10n-switzerland-14.0/l10n-switzerland-14.0-l10n_ch_base_bank
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-switzerland-14-0/l10n-switzerland-14-0-l10n_ch_base_bank/it/
+    [UPD] addons table in README.md
 
 
 ## l10n-taiwan
@@ -1077,11 +922,11 @@ Date:   Sun Feb 2 19:45:31 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 76c9c529a2d5d6b5d88e1d721248ecc9fd58ae94
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:46:24 2025 +0000
+commit 6dd956c2a840f77a4ac07cca0a1c350e96d6aebf
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:11:58 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## l10n-turkey
@@ -1113,11 +958,11 @@ Date:   Sun Feb 2 19:49:39 2025 +0000
 
 ## l10n-usa
 From [https://github.com/OCA/l10n-usa.git](https://github.com/OCA/l10n-usa.git)
-commit 19e6256163522bb627fc4aacc0c5cd22191198c7
+commit 198d0645db85e9e20c0312deed95dad4fd94f341
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Mar 16 19:04:10 2025 +0000
+Date:   Wed Jun 4 03:12:53 2025 +0000
 
-    [BOT] post-merge updates
+    [UPD] addons table in README.md
 
 
 ## l10n-venezuela
@@ -1140,142 +985,102 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ab55b2151aa6bc4b983b68f917967a18dba1f9a1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:36:51 2025 +0000
+commit 4d9c70f4774274c4588ff2f93c0b26e7679d61d3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:47:51 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 33.3% (3 of 9 strings)
-    
-    Translation: delivery-carrier-14.0/delivery-carrier-14.0-delivery_price_method
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-14-0/delivery-carrier-14-0-delivery_price_method/it/
+    [UPD] addons table in README.md
 
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 6f644086f1de9efce3904d6369ed45d116af560a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:09:08 2025 +0000
+commit 1ee0c0e965e629f770fd881398ebe2483d57b342
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 5 03:43:59 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 10.0% (1 of 10 strings)
-    
-    Translation: stock-logistics-barcode-14.0/stock-logistics-barcode-14.0-product_multi_barcode_supplierinfo
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-14-0/stock-logistics-barcode-14-0-product_multi_barcode_supplierinfo/it/
+    [UPD] addons table in README.md
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 366514ea73d5d957fe8887dfdbf492c06028f092
+commit 5eb8c1f2f05dd63532002bfd6a360edc3f8e84e2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:53 2025 +0000
+Date:   Wed Jun 4 08:26:55 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 9.6% (5 of 52 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_picking_group_by_partner_by_carrier
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_picking_group_by_partner_by_carrier/it/
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_move_line_auto_fill
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_move_line_auto_fill/it/
 
 
 ## stock-logistics-tracking
 From [https://github.com/OCA/stock-logistics-tracking.git](https://github.com/OCA/stock-logistics-tracking.git)
-commit b9a8b6784966ace64ab6e6da79a31edebfc0c53a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 14:02:07 2025 +0000
+commit 2d67406d5ff6b8a0037263cfd018722bbdcb73fe
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:50:21 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (11 of 11 strings)
-    
-    Translation: stock-logistics-tracking-14.0/stock-logistics-tracking-14.0-stock_packaging_usability
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-tracking-14-0/stock-logistics-tracking-14-0-stock_packaging_usability/it/
+    [UPD] addons table in README.md
 
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 01fee3c3827bf73de05f590ab4096f9c879411fc
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:30:22 2025 +0000
+commit c04331420664f2eb2d7d531d9aac20c66cde9b91
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:51:39 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 3.2% (1 of 31 strings)
-    
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_orderpoint_manual_procurement
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_orderpoint_manual_procurement/it/
+    [UPD] addons table in README.md
 
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 2f9c3f4ca454fbfb951adebde89581a538789c90
-Author: Pierre Verkest <pierreverkest84@gmail.com>
-Date:   Fri May 30 07:13:27 2025 +0000
+commit ec9a3a94fd43e9d1961fe05a4f4b9f70aa1fef07
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:49:45 2025 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 100.0% (54 of 54 strings)
-    
-    Translation: stock-logistics-reporting-14.0/stock-logistics-reporting-14.0-stock_quant_history
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-14-0/stock-logistics-reporting-14-0-stock_quant_history/fr/
+    [UPD] addons table in README.md
 
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 9651fe88f90f69be5daa780360684c59a56c88bb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Feb 15 08:01:18 2025 +0000
+commit 4dc81cee4a9e7e30a5292e013c4329097be8353f
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:35:27 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (347 of 347 strings)
-    
-    Translation: rma-14.0/rma-14.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma/it/
+    [UPD] addons table in README.md
 
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 3abc1d38cb1d018d879f0c0f8129fad39d86057f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Apr 8 07:03:21 2025 +0000
+commit aec01881a0811f05e53e13c129ca8becc242bc0e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:47:06 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (344 of 344 strings)
-    
-    Translation: ddmrp-14.0/ddmrp-14.0-ddmrp
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-14-0/ddmrp-14-0-ddmrp/it/
+    [UPD] addons table in README.md
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 5d99b2aa5d306aaef80cc2f3e6cbb008b15debea
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 26 06:34:17 2025 +0000
+commit 2ba0f8d04c0a94a25da6a41fa3daf4be5567266d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 04:02:29 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: wms-14.0/wms-14.0-stock_available_to_promise_release_shipment_advice
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-stock_available_to_promise_release_shipment_advice/it/
+    [UPD] addons table in README.md
 
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit ea148c6dd6effc0470398d89ae3e620082b52f1e
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 15 09:09:31 2025 +0000
+commit b17b9e6f730df159a8a35c102efed9de8fb47c0e
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jun 3 11:49:51 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_account_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_account_analytic/it/
+    Translation: manufacture-14.0/manufacture-14.0-mrp_unbuild_subcontracting
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_unbuild_subcontracting/
 
 
 ## manufacture-reporting
@@ -1289,72 +1094,62 @@ Date:   Sun Feb 2 19:57:05 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 4fa99c89e9b012fc8e846ac6972b38725387e765
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 6 09:18:12 2025 +0000
+commit 0c6d35227cb0962364d39f78b46f163547990802
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:14:32 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (94 of 94 strings)
-    
-    Translation: management-system-14.0/management-system-14.0-mgmtsystem_evaluation
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-14-0/management-system-14-0-mgmtsystem_evaluation/it/
+    [UPD] addons table in README.md
 
 
 ## pms
 From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
-commit c0e71866ea1a8cf83e8a3617e1e16157a80170d8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:35:23 2025 +0000
+commit 8e1a6c39317503a25919a24d80e77d2a7548f77d
+Author: Jesús Ventosinos Mayor <jesus@comunitea.com>
+Date:   Wed Jun 4 13:49:53 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 0.2% (4 of 1998 strings)
+    Currently translated at 88.8% (1776 of 1998 strings)
     
     Translation: pms-14.0/pms-14.0-pms
-    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/it/
+    Translate-URL: https://translation.odoo-community.org/projects/pms-14-0/pms-14-0-pms/es/
 
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 3accfe8467052e945ac114503e0c92f1fd56ea65
+commit 98cd43061db66c25c5673e907c8591a574643dc9
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 14:28:37 2025 +0000
+Date:   Wed Jun 4 07:39:47 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (30 of 30 strings)
+    Currently translated at 10.0% (12 of 120 strings)
     
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_request_exception
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_request_exception/it/
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_work_acceptance
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_work_acceptance/it/
 
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit 134293f720586faf59866a7cfd4734f6df8dbca4
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:35:53 2025 +0000
+commit 9bfe8de4b71a11dcd4b2d1143bb3197b3e5ceba5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:29:46 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: purchase-reporting-14.0/purchase-reporting-14.0-purchase_requisition_blanket_order_report
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-reporting-14-0/purchase-reporting-14-0-purchase_requisition_blanket_order_report/it/
+    [UPD] addons table in README.md
 
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit afd527c8646987806680a73e5f7692b45aff8801
+commit c9fe8bc29a9c29b62c3cc00fb38c2b2e11ddd3c2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:41:21 2025 +0000
+Date:   Wed Jun 4 07:31:13 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (28 of 28 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_stock_state
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_stock_state/it/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_multi_image
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_multi_image/it/
 
 
 ## product-kitting
@@ -1368,25 +1163,20 @@ Date:   Sun Feb 2 20:11:48 2025 +0000
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit 6fc1e1a355e11f65bc2f31954d5057641884a7e4
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 20:13:34 2025 +0000
+commit 650e4fd000d1ffc31cc5b2887384e624b54d85a5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:27:34 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## product-pack
 From [https://github.com/OCA/product-pack.git](https://github.com/OCA/product-pack.git)
-commit 505c72b2047baa24c1e27aa9ab05eeb6568de30f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Feb 12 13:47:45 2025 +0000
+commit 790e07e362049bbd9e26273953d48619030c2e42
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:27:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (24 of 24 strings)
-    
-    Translation: product-pack-14.0/product-pack-14.0-sale_product_pack
-    Translate-URL: https://translation.odoo-community.org/projects/product-pack-14-0/product-pack-14-0-sale_product_pack/it/
+    [UPD] addons table in README.md
 
 
 ## project-reporting
@@ -1400,16 +1190,16 @@ Date:   Sun Feb 2 20:17:19 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 129327e39c7e89e94cec8e165c53da53f38679b1
+commit 83dcc8f333c4900fe2dd81adc0b3009ed3fd4625
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:38:35 2025 +0000
+Date:   Wed Jun 4 07:15:28 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (26 of 26 strings)
     
-    Translation: project-14.0/project-14.0-project_forecast_line_milestone
-    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_forecast_line_milestone/it/
+    Translation: project-14.0/project-14.0-project_status
+    Translate-URL: https://translation.odoo-community.org/projects/project-14-0/project-14-0-project_status/it/
 
 
 ## project-agile
@@ -1423,16 +1213,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 35f2c15531f3d9e56d39598d7685e6d214b9738f
+commit c1997524cce77be5eddb7b84182e55722e0fa04c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:34:05 2025 +0000
+Date:   Thu Jun 5 10:43:29 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 30.0% (3 of 10 strings)
+    Currently translated at 98.5% (329 of 334 strings)
     
-    Translation: contract-14.0/contract-14.0-agreement_repair
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-agreement_repair/it/
+    Translation: contract-14.0/contract-14.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-contract/it/
 
 
 ## program
@@ -1478,30 +1268,20 @@ Date:   Sun Feb 2 18:18:12 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit fc3cbce1c281239d9f5b3104e944cca397f936e8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:33:02 2025 +0000
+commit 36c3f11c23a100e5ebe488ec490d568589b5f19b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:47:27 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 16.6% (3 of 18 strings)
-    
-    Translation: social-14.0/social-14.0-email_template_configurator
-    Translate-URL: https://translation.odoo-community.org/projects/social-14-0/social-14-0-email_template_configurator/it/
+    [UPD] addons table in README.md
 
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit dbc8d0270fd01237edc8c5ba6d445fd6892e18d8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Mar 14 12:20:02 2025 +0000
+commit ebcd5c84d7754c107d4d6c84bbfb583724d48a62
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:55:36 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 6.2% (1 of 16 strings)
-    
-    Translation: storage-14.0/storage-14.0-storage_backend_sftp
-    Translate-URL: https://translation.odoo-community.org/projects/storage-14-0/storage-14-0-storage_backend_sftp/it/
+    [UPD] addons table in README.md
 
 
 ## search-engine
@@ -1515,30 +1295,20 @@ Date:   Tue Mar 25 06:27:29 2025 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 255a0ef660ac1ea530375bd87d23e86afa4f981b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:14 2025 +0000
+commit 90f8a97c4c4ae38d7a34cc08fb3eab17978385cc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:33:58 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 5.8% (1 of 17 strings)
-    
-    Translation: reporting-engine-14.0/reporting-engine-14.0-report_xml
-    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-14-0/reporting-engine-14-0-report_xml/it/
+    [UPD] addons table in README.md
 
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit a4346456f88f1fb6ba6175b7d35f1c8217bdfb08
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed May 21 07:45:34 2025 +0000
+commit feea0f2bae6e5849f1a2d26e200454d90f7a4fbe
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:33:25 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 2.9% (1 of 34 strings)
-    
-    Translation: report-print-send-14.0/report-print-send-14.0-printing_auto_base
-    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-14-0/report-print-send-14-0-printing_auto_base/it/
+    [UPD] addons table in README.md
 
 
 ## webkit-tools
@@ -1552,90 +1322,70 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 410f08a8dcdf4838eb31014a1f82be7e011dfe88
+commit f9d1c56bb6c98d1c1ef01a0f580ebd803cecb6cf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:30 2025 +0000
+Date:   Wed Jun 4 13:58:46 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 18.1% (2 of 11 strings)
+    Currently translated at 100.0% (36 of 36 strings)
     
-    Translation: server-tools-14.0/server-tools-14.0-base_kanban_stage_state
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-base_kanban_stage_state/it/
+    Translation: server-tools-14.0/server-tools-14.0-tracking_manager
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-tracking_manager/it/
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 3a9021aa262d93c7dac305f994af8490e39ac3ee
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 07:45:04 2025 +0000
+commit 1349169fac319287be074fae84dd92089840452c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:41:44 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: server-auth-14.0/server-auth-14.0-users_ldap_mail
-    Translate-URL: https://translation.odoo-community.org/projects/server-auth-14-0/server-auth-14-0-users_ldap_mail/it/
+    [UPD] addons table in README.md
 
 
 ## server-env
 From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
-commit 3cde6b46002aa7137d065a961553511135df22b8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon May 12 08:35:18 2025 +0000
+commit 041cc08105483c40805135d8ca320aba11830a33
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 08:40:37 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: server-env-14.0/server-env-14.0-mail_environment_google_gmail
-    Translate-URL: https://translation.odoo-community.org/projects/server-env-14-0/server-env-14-0-mail_environment_google_gmail/it/
+    [BOT] post-merge updates
 
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 43550224851446a9d55cdc702cc054c026222621
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:36:05 2025 +0000
+commit 8e4af336856fe1c778ea18d23686e5d5708bfba8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:42:28 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## server-brand
 From [https://github.com/OCA/server-brand.git](https://github.com/OCA/server-brand.git)
-commit a94e957fc3a729a7919a8a7630c822953aa41c06
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 18:37:08 2025 +0000
+commit ceb7f87b1449e92f1624db3f8a31fb8809c777f6
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:42:52 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 55ef92015d406780bd49f032529ea62cec13f0b3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 27 12:10:33 2025 +0000
+commit b94e71362df3d7ec6670bbed7081daf32fd4a357
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:45:53 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 11.1% (1 of 9 strings)
-    
-    Translation: server-ux-14.0/server-ux-14.0-multi_step_wizard
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-multi_step_wizard/it/
+    [UPD] addons table in README.md
 
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit e7e2ec8c82a1e4a0f80da2399da0448aea285bfe
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:27:50 2025 +0000
+commit aca3110bd2a8eea5be01eee02f31c32faf71d62b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:41:50 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 1.9% (17 of 868 strings)
-    
-    Translation: community-data-files-14.0/community-data-files-14.0-l10n_eu_nace
-    Translate-URL: https://translation.odoo-community.org/projects/community-data-files-14-0/community-data-files-14-0-l10n_eu_nace/it/
+    [UPD] addons table in README.md
 
 
 ## webhook
@@ -1663,34 +1413,29 @@ Date:   Tue May 27 12:10:36 2025 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit 1cefbbd8835209163e1d4b62107cd3a40f01ab65
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 19:01:08 2025 +0000
+commit 995abe32a83967fe68917637ccdac34c5ebceae2
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 02:59:02 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## rest-framework
 From [https://github.com/OCA/rest-framework.git](https://github.com/OCA/rest-framework.git)
-commit 5bcd473939d342e1c91f74086ef4930eb6b19c75
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue May 20 07:46:38 2025 +0000
+commit 05476c00fdde1d6071616d686f9c86c7e6f919e9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:34:53 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (1 of 1 strings)
-    
-    Translation: rest-framework-14.0/rest-framework-14.0-graphql_base
-    Translate-URL: https://translation.odoo-community.org/projects/rest-framework-14-0/rest-framework-14-0-graphql_base/it/
+    [UPD] addons table in README.md
 
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit 75044a1c8f9b1ec295030d996f24487de89af616
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 9 19:05:00 2025 +0000
+commit 4e2e3ce886b09cfe12eb7736e73ff36d9cefa2b3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:57:51 2025 +0000
 
-    [IMP] update dotfiles
+    [UPD] addons table in README.md
 
 
 ## vertical-hotel
@@ -1800,43 +1545,28 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit ef465e2bf966453420094fe14f84b8003175ecd9
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu May 29 13:29:56 2025 +0000
+commit e280fc126120d663d7de4b5b0eaa2193b06bce4b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 03:59:43 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 11.1% (2 of 18 strings)
-    
-    Translation: web-14.0/web-14.0-web_ir_actions_act_window_message
-    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_ir_actions_act_window_message/it/
+    [UPD] addons table in README.md
 
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 4d7eb7c0c1061b6a9d510a872843710d70668a6c
-Author: Marcel Savegnago <marcel.savegnago@gmail.com>
-Date:   Wed Apr 9 16:48:25 2025 +0000
+commit 7802f0c1a2d9f935f4775b9fed3a3b2713ee6f26
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 04:01:37 2025 +0000
 
-    Translated using Weblate (Portuguese (Brazil))
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: website-14.0/website-14.0-website_crm_quick_answer
-    Translate-URL: https://translation.odoo-community.org/projects/website-14-0/website-14-0-website_crm_quick_answer/pt_BR/
+    [UPD] addons table in README.md
 
 
 ## website-cms
 From [https://github.com/OCA/website-cms.git](https://github.com/OCA/website-cms.git)
-commit bf4dc6cb89d552ae00bcde72e11c599aaa3559a7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Apr 2 06:59:24 2025 +0000
+commit 517a88661bf392fe6c198ec1527bd3078cbd810b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jun 4 04:02:13 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (9 of 9 strings)
-    
-    Translation: website-cms-14.0/website-cms-14.0-cms_info
-    Translate-URL: https://translation.odoo-community.org/projects/website-cms-14-0/website-cms-14-0-cms_info/it/
+    [UPD] addons table in README.md
 
 
