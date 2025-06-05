@@ -206,7 +206,7 @@ class ServerConfiguration(models.TransientModel):
             list(cls._get_system_cols().items()),
         )
         for col, value in cols:
-            col_name = col.replace(".", "_")
+            col_name = col.replace(".", "_").replace(" ", "_")
             tmp_field = fields.Char(
                 string=cls._format_key_display_name(col_name),
                 sparse="config",

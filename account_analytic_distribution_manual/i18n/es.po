@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-29 06:51-0500\n"
-"PO-Revision-Date: 2024-09-10 10:06+0000\n"
-"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
+"PO-Revision-Date: 2025-06-04 13:26+0000\n"
+"Last-Translator: Javier Iza Ca <javier.izaguirre@sygel.es>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_analytic_distribution_manual
 #. odoo-python
@@ -42,7 +42,7 @@ msgstr "Agregar nueva Distribución Analítica Manual"
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
+msgstr "Distribución Analítica"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_distribution_search
@@ -52,12 +52,12 @@ msgstr "Buscar Distribución Analítica"
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Linea Analítica"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_analytic_mixin
 msgid "Analytic Mixin"
-msgstr ""
+msgstr "Mezcla Analítica"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__analytic_precision
@@ -74,8 +74,9 @@ msgstr "Precisión Analítica"
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_mrp_production__analytic_distribution_import
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_mrp_workcenter__analytic_distribution_import
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_purchase_order_line__analytic_distribution_import
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_purchase_request_line__analytic_distribution_import
 msgid "Analytic distribution (importable)"
-msgstr ""
+msgstr "Distribución analítica (importable)"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_line__manual_distribution_id
@@ -91,12 +92,12 @@ msgstr "Archivado"
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_base
 msgid "Base"
-msgstr ""
+msgstr "Base imponible"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__company_id
 msgid "Company"
-msgstr "Compañia"
+msgstr "Compañía"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__create_uid
@@ -118,11 +119,15 @@ msgstr "Creado el"
 #: model:ir.model.fields,help:account_analytic_distribution_manual.field_mrp_production__analytic_distribution_import
 #: model:ir.model.fields,help:account_analytic_distribution_manual.field_mrp_workcenter__analytic_distribution_import
 #: model:ir.model.fields,help:account_analytic_distribution_manual.field_purchase_order_line__analytic_distribution_import
+#: model:ir.model.fields,help:account_analytic_distribution_manual.field_purchase_request_line__analytic_distribution_import
 msgid ""
 "Defining this field, it will set the analytical distribution in JSON format, "
 "but using the analytic accounts names as keys of the dictionary, so it eases "
 "the human input."
 msgstr ""
+"Definiendo este campo, se establecerá la distribución analítica en formato "
+"JSON, pero utilizando los nombres de las cuentas analíticas como claves del "
+"diccionario, lo que facilita la introducción manual."
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__display_name
@@ -132,7 +137,7 @@ msgstr "Nombre mostrado"
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__distribution_analytic_account_ids
 msgid "Distribution Analytic Account"
-msgstr ""
+msgstr "Distribución de la Cuenta Analítica"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__id
@@ -142,12 +147,12 @@ msgstr "ID"
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_account_invoice_report
 msgid "Invoices Statistics"
-msgstr ""
+msgstr "Estadísticas de Facturas"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model,name:account_analytic_distribution_manual.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Apunte Contable"
 
 #. module: account_analytic_distribution_manual
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_account_analytic_distribution_manual__write_uid
@@ -183,8 +188,9 @@ msgstr "Distribuciones analíticas manuales"
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_mrp_production__manual_distribution_id
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_mrp_workcenter__manual_distribution_id
 #: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_purchase_order_line__manual_distribution_id
+#: model:ir.model.fields,field_description:account_analytic_distribution_manual.field_purchase_request_line__manual_distribution_id
 msgid "Manual Distribution"
-msgstr ""
+msgstr "Distribución Manual"
 
 #. module: account_analytic_distribution_manual
 #. odoo-javascript

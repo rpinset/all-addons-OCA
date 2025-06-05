@@ -6,7 +6,7 @@
     "summary": "Build great quotation templates",
     "website": "https://github.com/OCA/sale-reporting",
     "author": "Odoo Community Association (OCA), Odoo SA",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "depends": ["website", "sale_management", "website_mail"],
     "data": [
         "data/sale_order_template_data.xml",

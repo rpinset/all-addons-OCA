@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request_analytic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__analytic_distribution
+#: model_terms:ir.ui.view,arch_db:purchase_request_analytic.view_purchase_request_search
+msgid "Analytic Distribution"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__analytic_distribution_search
+msgid "Analytic Distribution Search"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__analytic_precision
+msgid "Analytic Precision"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__analytic_distribution_import
+msgid "Analytic distribution (importable)"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,help:purchase_request_analytic.field_purchase_request__analytic_distribution_import
+msgid ""
+"Defining this field, it will set the analytical distribution in JSON format,"
+" but using the analytic accounts names as keys of the dictionary, so it "
+"eases the human input."
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,field_description:purchase_request_analytic.field_purchase_request__manual_distribution_id
+msgid "Manual Distribution"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model,name:purchase_request_analytic.model_purchase_request
+msgid "Purchase Request"
+msgstr ""
+
+#. module: purchase_request_analytic
+#: model:ir.model.fields,help:purchase_request_analytic.field_purchase_request__analytic_distribution
+msgid "The default distribution for new lines on this request"
+msgstr ""

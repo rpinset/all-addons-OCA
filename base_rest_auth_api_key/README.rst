@@ -28,9 +28,9 @@ Base Rest Auth Api Key
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-
-This technical addon extend `base_rest` to add the support for auth_api_key
-authentication mechanism into the generated openapi documentation.
+This technical addon extend base_rest to add the support for
+auth_api_key authentication mechanism into the generated openapi
+documentation.
 
 **Table of contents**
 
@@ -51,17 +51,17 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * ACSONE SA/NV
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* Laurent Mignon <laurent.mignon@acsone.eu>
+- Laurent Mignon <laurent.mignon@acsone.eu>
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is maintained by the OCA.
 
