@@ -28,7 +28,7 @@ addon | version | maintainers | summary
 [account_analytic_line_name_text](account_analytic_line_name_text/) | 12.0.1.0.0 |  | Changes account analytic line name field to Text.
 [account_analytic_parent](account_analytic_parent/) | 12.0.2.3.1 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 12.0.3.0.0 |  | Account Analytic Required
-[account_analytic_root](account_analytic_root/) | 12.0.1.0.1 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Compute the Root Analytic Account
+[account_analytic_root](account_analytic_root/) | 12.0.1.0.1 | <a href='https://github.com/victor-champonnois'><img src='https://github.com/victor-champonnois.png' width='32' height='32' style='border-radius:50%;' alt='victor-champonnois'/></a> | Compute the Root Analytic Account
 [account_analytic_sequence](account_analytic_sequence/) | 12.0.1.1.0 |  | Restore the analytic account sequence
 [account_move_analytic_recreate](account_move_analytic_recreate/) | 12.0.1.0.0 |  | Recreate analytic lines when modifying account moves.
 [analytic_base_department](analytic_base_department/) | 12.0.1.0.0 |  | Base Analytic Department Categorization
@@ -176,18 +176,18 @@ addon | version | maintainers | summary
 [account_asset_batch_compute](account_asset_batch_compute/) | 12.0.1.0.0 |  | Add the possibility to compute assets in batch
 [account_asset_management](account_asset_management/) | 12.0.3.3.0 |  | Assets Management
 [account_balance_line](account_balance_line/) | 12.0.1.0.0 |  | Display balance totals in move line view
-[account_bank_statement_chatter](account_bank_statement_chatter/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Chatter on bank statements
+[account_bank_statement_chatter](account_bank_statement_chatter/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Chatter on bank statements
 [account_cash_basis_group_base_line](account_cash_basis_group_base_line/) | 12.0.0.0.1 |  | Tax Cash Basis Group Base Lines
 [account_chart_update](account_chart_update/) | 12.0.1.0.3 |  | Wizard to update a company's account chart from a template
 [account_check_deposit](account_check_deposit/) | 12.0.2.0.1 |  | Manage deposit of checks, cash, etc. to the bank
 [account_clearance_plan](account_clearance_plan/) | 12.0.1.0.1 |  | This addon allows to define clearance plans in order to reorganize debts (own and customers' ones).
 [account_coa_menu](account_coa_menu/) | 12.0.1.0.0 |  | Adds menu entries for Chart of Accounts templates
 [account_cost_center](account_cost_center/) | 12.0.1.0.0 |  | Cost center information for invoice lines
-[account_document_reversal](account_document_reversal/) | 12.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Create reversed journal entries when cancel document
+[account_document_reversal](account_document_reversal/) | 12.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Create reversed journal entries when cancel document
 [account_fiscal_month](account_fiscal_month/) | 12.0.1.0.0 |  | Provide a fiscal month date range type
 [account_fiscal_position_vat_check](account_fiscal_position_vat_check/) | 12.0.1.0.0 |  | Check VAT on invoice validation
-[account_fiscal_year](account_fiscal_year/) | 12.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Create a menu for Account Fiscal Year
-[account_fiscal_year_auto_create](account_fiscal_year_auto_create/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Automatically create new fiscal years, based on the datas of the last fiscal years
+[account_fiscal_year](account_fiscal_year/) | 12.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create a menu for Account Fiscal Year
+[account_fiscal_year_auto_create](account_fiscal_year_auto_create/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Automatically create new fiscal years, based on the datas of the last fiscal years
 [account_group_menu](account_group_menu/) | 12.0.1.0.0 |  | Adds menu entries for Account Group and Tax Group
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 12.0.1.0.2 |  | Account Invoice Constraint Chronology
 [account_invoice_currency](account_invoice_currency/) | 12.0.1.0.0 |  | Company currency in invoices
@@ -198,24 +198,24 @@ addon | version | maintainers | summary
 [account_menu](account_menu/) | 12.0.1.0.1 |  | Adds missing menu entries for Account module
 [account_move_batch_validate](account_move_batch_validate/) | 12.0.1.0.0 |  | Account Move Batch Validate
 [account_move_budget](account_move_budget/) | 12.0.1.0.0 |  | Create Accounting Budgets
-[account_move_chatter](account_move_chatter/) | 12.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Chatter on journal entries
+[account_move_chatter](account_move_chatter/) | 12.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Chatter on journal entries
 [account_move_fiscal_month](account_move_fiscal_month/) | 12.0.1.1.1 |  | Display the fiscal month on journal entries/item
 [account_move_fiscal_year](account_move_fiscal_year/) | 12.0.1.1.0 |  | Display the fiscal year on journal entries/item
 [account_move_line_drilldown](account_move_line_drilldown/) | 12.0.1.0.0 |  | Group journal items by the first 2 account group levels
-[account_move_line_partner_country](account_move_line_partner_country/) | 12.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Show Partner's Country on Account Move Line.
+[account_move_line_partner_country](account_move_line_partner_country/) | 12.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Show Partner's Country on Account Move Line.
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 12.0.2.0.0 |  | Introduces the purchase order line to the journal items
 [account_move_line_tax_editable](account_move_line_tax_editable/) | 12.0.1.1.0 |  | Allows to edit taxes on non-posted account move lines
-[account_move_post_date_user](account_move_post_date_user/) | 12.0.1.0.0 | [![JordiMForgeFlow](https://github.com/JordiMForgeFlow.png?size=30px)](https://github.com/JordiMForgeFlow) | Trace journal entry posting date and user.
+[account_move_post_date_user](account_move_post_date_user/) | 12.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Trace journal entry posting date and user.
 [account_move_template](account_move_template/) | 12.0.1.1.0 |  | Templates for recurring Journal Entries
 [account_netting](account_netting/) | 12.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
 [account_partner_required](account_partner_required/) | 12.0.1.0.0 |  | Adds an option 'partner policy' on account types
-[account_payment_netting](account_payment_netting/) | 12.0.1.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Net Payment on AR/AP invoice from the same partner
+[account_payment_netting](account_payment_netting/) | 12.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Net Payment on AR/AP invoice from the same partner
 [account_permanent_lock_move](account_permanent_lock_move/) | 12.0.1.0.0 |  | Permanent Lock Move
 [account_renumber](account_renumber/) | 12.0.1.0.0 |  | Account Renumber Wizard
-[account_spread_cost_revenue](account_spread_cost_revenue/) | 12.0.1.2.1 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Spread costs and revenues over a custom period
-[account_subsequence_fiscal_year](account_subsequence_fiscal_year/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Allow to create sub sequences for account moves number, based on the fiscal years settings
+[account_spread_cost_revenue](account_spread_cost_revenue/) | 12.0.1.2.1 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Spread costs and revenues over a custom period
+[account_subsequence_fiscal_year](account_subsequence_fiscal_year/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Allow to create sub sequences for account moves number, based on the fiscal years settings
 [account_tag_menu](account_tag_menu/) | 12.0.1.0.0 |  | Adds a menu entry for Account Tags
-[account_template_active](account_template_active/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Allow to disable / enable account template items (tax, fiscal position, account)
+[account_template_active](account_template_active/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Allow to disable / enable account template items (tax, fiscal position, account)
 [account_type_menu](account_type_menu/) | 12.0.1.0.0 |  | Adds a menu entry for Account Types
 [account_voucher_print](account_voucher_print/) | 12.0.1.0.0 |  | Enable printing in sale and purchase receipts
 [base_vat_optional_vies](base_vat_optional_vies/) | 12.0.1.0.2 |  | Optional validation of VAT via VIES
@@ -267,7 +267,7 @@ addon | version | maintainers | summary
 [account_export_csv](account_export_csv/) | 12.0.1.2.1 |  | Adds accounting CSV export
 [account_financial_report](account_financial_report/) | 12.0.1.5.4 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 12.0.1.2.1 |  | Compute tax balances based on date range
-[mis_builder_cash_flow](mis_builder_cash_flow/) | 12.0.1.3.1 | [![jjscarafia](https://github.com/jjscarafia.png?size=30px)](https://github.com/jjscarafia) | MIS Builder Cash Flow
+[mis_builder_cash_flow](mis_builder_cash_flow/) | 12.0.1.3.1 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [partner_statement](partner_statement/) | 12.0.1.1.0 |  | OCA Financial Reports
 
 [//]: # (end addons)
@@ -320,12 +320,12 @@ addon | version | maintainers | summary
 [account_invoice_report_due_list](account_invoice_report_due_list/) | 12.0.1.4.1 |  | Show multiple due data in invoice
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 12.0.1.1.1 |  | Print invoice lines grouped by picking
 [account_invoice_report_grouped_by_picking_sale_mrp](account_invoice_report_grouped_by_picking_sale_mrp/) | 12.0.1.0.2 |  | Take into account BoM kits in invoice report grouped by picking
-[account_invoice_report_hide_line](account_invoice_report_hide_line/) | 12.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Hide invoice lines from the PDF report if the unit price is 0
+[account_invoice_report_hide_line](account_invoice_report_hide_line/) | 12.0.1.0.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Hide invoice lines from the PDF report if the unit price is 0
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 12.0.1.0.0 |  | Show payment extended info in invoice
-[account_reporting_net_weight](account_reporting_net_weight/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Net Weights in the invoices analysis view
+[account_reporting_net_weight](account_reporting_net_weight/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Net Weights in the invoices analysis view
 [account_reporting_weight](account_reporting_weight/) | 12.0.1.0.2 |  | Weights in the invoices analysis view
 [base_comment_template](base_comment_template/) | 12.0.3.0.0 |  | Comments templates on documents
-[partner_time_to_pay](partner_time_to_pay/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add receivables and payables statistics to partners
+[partner_time_to_pay](partner_time_to_pay/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add receivables and payables statistics to partners
 
 [//]: # (end addons)
 
@@ -371,7 +371,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_billing](account_billing/) | 12.0.1.0.1 | [![Saran440](https://github.com/Saran440.png?size=30px)](https://github.com/Saran440) | Group invoice as billing before payment
+[account_billing](account_billing/) | 12.0.1.0.1 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Group invoice as billing before payment
 [account_debitnote](account_debitnote/) | 12.0.1.0.0 |  | Create debit note from invoice and vendor bill
 [account_global_discount](account_global_discount/) | 12.0.1.2.2 |  | Account Global Discount
 [account_group_invoice_line](account_group_invoice_line/) | 12.0.1.0.1 |  | Add option to group invoice lines per account
@@ -382,8 +382,8 @@ addon | version | maintainers | summary
 [account_invoice_change_currency](account_invoice_change_currency/) | 12.0.1.1.0 |  | Allows to change currency of Invoice by wizard
 [account_invoice_check_total](account_invoice_check_total/) | 12.0.1.1.1 |  | Check if the verification total is equal to the bill's total
 [account_invoice_confirm_popup](account_invoice_confirm_popup/) | 12.0.1.0.0 |  | Adds a confirmation popup before validation
-[account_invoice_date_due](account_invoice_date_due/) | 12.0.1.1.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Update Invoice's Due Date
-[account_invoice_default_code_column](account_invoice_default_code_column/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display Default code product in a dedicated column on invoice reports
+[account_invoice_date_due](account_invoice_date_due/) | 12.0.1.1.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Update Invoice's Due Date
+[account_invoice_default_code_column](account_invoice_default_code_column/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Display Default code product in a dedicated column on invoice reports
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 12.0.1.0.2 |  | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fix_tax_rounding](account_invoice_fix_tax_rounding/) | 12.0.1.0.0 |  | Fix invoice tax rounding globally
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 12.0.1.0.1 |  | Allows to apply fixed amount discounts in invoices.
@@ -396,10 +396,10 @@ addon | version | maintainers | summary
 [account_invoice_merge](account_invoice_merge/) | 12.0.1.0.3 |  | Merge invoices in draft
 [account_invoice_pricelist](account_invoice_pricelist/) | 12.0.1.0.6 |  | Add partner pricelist on invoices
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 12.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
-[account_invoice_recompute_tax](account_invoice_recompute_tax/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Reset Tax Lines Values
+[account_invoice_recompute_tax](account_invoice_recompute_tax/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Reset Tax Lines Values
 [account_invoice_refund_line_selection](account_invoice_refund_line_selection/) | 12.0.1.0.0 |  | This module allows the user to refund specific lines in a invoice
 [account_invoice_refund_link](account_invoice_refund_link/) | 12.0.1.0.0 |  | Link refund invoice with its original invoice
-[account_invoice_refund_reason](account_invoice_refund_reason/) | 12.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Account Invoice Refund Reason.
+[account_invoice_refund_reason](account_invoice_refund_reason/) | 12.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Account Invoice Refund Reason.
 [account_invoice_reimbursable](account_invoice_reimbursable/) | 12.0.1.0.0 |  | Create the option to add reimbursables on invoices
 [account_invoice_repair_link](account_invoice_repair_link/) | 12.0.1.0.0 |  | Adds a link in the invoice to the repair from which it was generated
 [account_invoice_search_by_reference](account_invoice_search_by_reference/) | 12.0.1.0.1 |  | Account invoice search by reference
@@ -408,9 +408,9 @@ addon | version | maintainers | summary
 [account_invoice_supplier_ref_unique](account_invoice_supplier_ref_unique/) | 12.0.1.0.0 |  | Checks that supplier invoices are not entered twice
 [account_invoice_supplier_self_invoice](account_invoice_supplier_self_invoice/) | 12.0.1.1.0 |  | Purchase Self Invoice
 [account_invoice_supplierinfo_update](account_invoice_supplierinfo_update/) | 12.0.1.1.0 |  | In the supplier invoice, automatically updates all products whose unit price on the line is different from the supplier price
-[account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
-[account_invoice_supplierinfo_update_qty_multiplier](account_invoice_supplierinfo_update_qty_multiplier/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the invoice Supplierinfo wizard, allow to change the Quantity Multiplier field
-[account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
+[account_invoice_supplierinfo_update_discount](account_invoice_supplierinfo_update_discount/) | 12.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discount on the line is different from the supplier discount
+[account_invoice_supplierinfo_update_qty_multiplier](account_invoice_supplierinfo_update_qty_multiplier/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the invoice Supplierinfo wizard, allow to change the Quantity Multiplier field
+[account_invoice_supplierinfo_update_triple_discount](account_invoice_supplierinfo_update_triple_discount/) | 12.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | In the supplier invoice, automatically update all products whose discounts on the line is different from the supplier discounts
 [account_invoice_tax_note](account_invoice_tax_note/) | 12.0.1.0.0 |  | Print tax notes on customer invoices
 [account_invoice_tax_required](account_invoice_tax_required/) | 12.0.1.0.2 |  | This module adds functional a check on invoice to force user to set tax on invoice line.
 [account_invoice_tier_validation](account_invoice_tier_validation/) | 12.0.1.0.3 |  | Extends the functionality of Invoice to support a tier validation process.
@@ -419,24 +419,24 @@ addon | version | maintainers | summary
 [account_invoice_transmit_method](account_invoice_transmit_method/) | 12.0.2.0.0 |  | Configure invoice transmit method (email, post, portal, ...)
 [account_invoice_transmit_method_substitution_rule](account_invoice_transmit_method_substitution_rule/) | 12.0.1.0.0 |  | This addon allow to set substitution rules for transmit method
 [account_invoice_triple_discount](account_invoice_triple_discount/) | 12.0.1.0.1 |  | Manage triple discount on invoice lines
-[account_invoice_uom_column](account_invoice_uom_column/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Display UoM invoice line in a dedicated column on invoice reports
-[account_invoice_update_check](account_invoice_update_check/) | 12.0.1.0.2 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Check if it"s possible to update account invoice lines
-[account_invoice_validation_queued](account_invoice_validation_queued/) | 12.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Enqueue account invoice validation
+[account_invoice_uom_column](account_invoice_uom_column/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Display UoM invoice line in a dedicated column on invoice reports
+[account_invoice_update_check](account_invoice_update_check/) | 12.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Check if it"s possible to update account invoice lines
+[account_invoice_validation_queued](account_invoice_validation_queued/) | 12.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Enqueue account invoice validation
 [account_invoice_view_payment](account_invoice_view_payment/) | 12.0.1.0.1 |  | Access to the payment from an invoice
-[account_menu_invoice_refund](account_menu_invoice_refund/) | 12.0.2.0.1 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | New invoice menu that combine invoices and refunds
+[account_menu_invoice_refund](account_menu_invoice_refund/) | 12.0.2.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | New invoice menu that combine invoices and refunds
 [account_payment_term_extension](account_payment_term_extension/) | 12.0.1.2.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
-[account_portal_hide_invoice](account_portal_hide_invoice/) | 12.0.1.0.0 | [![Khalid-SerpentCS](https://github.com/Khalid-SerpentCS.png?size=30px)](https://github.com/Khalid-SerpentCS) | Hide invoices on customer portal.
+[account_portal_hide_invoice](account_portal_hide_invoice/) | 12.0.1.0.0 | <a href='https://github.com/Khalid-SerpentCS'><img src='https://github.com/Khalid-SerpentCS.png' width='32' height='32' style='border-radius:50%;' alt='Khalid-SerpentCS'/></a> | Hide invoices on customer portal.
 [account_portal_invoice_search](account_portal_invoice_search/) | 12.0.1.0.1 |  | Account Portal Invoice Search
 [product_supplierinfo_for_customer_invoice](product_supplierinfo_for_customer_invoice/) | 12.0.1.0.0 |  | Based on product_customer_code, this module loads in every account invoice the customer code defined in the product
 [purchase_batch_invoicing](purchase_batch_invoicing/) | 12.0.1.2.1 |  | Make invoices for all ready purchase orders
-[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 12.0.1.1.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![MiquelRForgeFlow](https://github.com/MiquelRForgeFlow.png?size=30px)](https://github.com/MiquelRForgeFlow) | Add an option to refund returned pickings
-[purchase_stock_picking_return_invoicing_force_invoiced](purchase_stock_picking_return_invoicing_force_invoiced/) | 12.0.1.0.0 | [![jbeficent](https://github.com/jbeficent.png?size=30px)](https://github.com/jbeficent) | Glue module between purchase_force_invoiced and purchase_stock_picking_return_invoicing
+[purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 12.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | Add an option to refund returned pickings
+[purchase_stock_picking_return_invoicing_force_invoiced](purchase_stock_picking_return_invoicing_force_invoiced/) | 12.0.1.0.0 | <a href='https://github.com/jbeficent'><img src='https://github.com/jbeficent.png' width='32' height='32' style='border-radius:50%;' alt='jbeficent'/></a> | Glue module between purchase_force_invoiced and purchase_stock_picking_return_invoicing
 [sale_invoice_line_note](sale_invoice_line_note/) | 12.0.1.0.0 |  | Propagate sale order note lines to the invoice
-[sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 12.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales order invoicing grouping criteria
+[sale_order_invoicing_grouping_criteria](sale_order_invoicing_grouping_criteria/) | 12.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales order invoicing grouping criteria
 [sale_order_invoicing_queued](sale_order_invoicing_queued/) | 12.0.2.0.0 |  | Enqueue sales order invoicing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 12.0.1.0.1 |  | Add timesheet details in invoice line
 [stock_picking_invoicing](stock_picking_invoicing/) | 12.0.3.1.0 |  | Stock Picking Invoicing
-[stock_picking_return_refund_option](stock_picking_return_refund_option/) | 12.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Update the refund options in pickings
+[stock_picking_return_refund_option](stock_picking_return_refund_option/) | 12.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
 [//]: # (end addons)
 
@@ -485,11 +485,11 @@ addon | version | maintainers | summary
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 12.0.1.0.0 |  | Account Fiscal Position Partner Type
 [account_fiscal_position_product](account_fiscal_position_product/) | 12.0.1.0.0 |  | Apply fiscal position only for configured products
 [account_fiscal_position_type](account_fiscal_position_type/) | 12.0.1.1.0 |  | Add sale / purchase type on fiscal position
-[account_fiscal_position_usage_group](account_fiscal_position_usage_group/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Limit the usage of fiscal positions to defined groups members
-[account_product_fiscal_classification](account_product_fiscal_classification/) | 12.0.1.3.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Simplify taxes management for products
+[account_fiscal_position_usage_group](account_fiscal_position_usage_group/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Limit the usage of fiscal positions to defined groups members
+[account_product_fiscal_classification](account_product_fiscal_classification/) | 12.0.1.3.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simplify taxes management for products
 [account_product_fiscal_classification_test](account_product_fiscal_classification_test/) | 12.0.1.1.0 |  | tests account_product_fiscal_classification module
 [l10n_eu_oss](l10n_eu_oss/) | 12.0.1.0.1 |  | L10n EU OSS
-[product_refund_account](product_refund_account/) | 12.0.1.0.1 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Adds account to product to manage debit and credit notes
+[product_refund_account](product_refund_account/) | 12.0.1.0.1 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Adds account to product to manage debit and credit notes
 
 [//]: # (end addons)
 
@@ -617,9 +617,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 12.0.3.7.7 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Build 'Management Information System' Reports and Dashboards
-[mis_builder_budget](mis_builder_budget/) | 12.0.3.5.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Create budgets for MIS reports
-[mis_builder_demo](mis_builder_demo/) | 12.0.3.1.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Demo addon for MIS Builder
+[mis_builder](mis_builder/) | 12.0.3.7.7 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder_budget](mis_builder_budget/) | 12.0.3.5.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
+[mis_builder_demo](mis_builder_demo/) | 12.0.3.1.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
 [//]: # (end addons)
 
@@ -715,9 +715,9 @@ addon | version | maintainers | summary
 [account_credit_control](account_credit_control/) | 12.0.3.0.5 |  | Account Credit Control
 [account_credit_control_queue_job](account_credit_control_queue_job/) | 12.0.2.0.0 |  | This addon adds the opportunity to run some credit control tasks in jobs
 [account_financial_risk](account_financial_risk/) | 12.0.3.1.0 |  | Manage customer risk
-[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 12.0.2.2.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Simple mail/letter/phone overdue customer invoice reminder
-[account_invoice_overdue_warn](account_invoice_overdue_warn/) | 12.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show warning on customer form view if it has overdue invoices
-[account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 12.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Show overdue warning on sale order form view
+[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 12.0.2.2.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
+[account_invoice_overdue_warn](account_invoice_overdue_warn/) | 12.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
+[account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 12.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 12.0.2.0.1 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 12.0.1.0.1 |  | Risk insurance partner information
 [sale_financial_risk](sale_financial_risk/) | 12.0.2.1.3 |  | Manage partner risk in sales orders
@@ -857,18 +857,18 @@ addon | version | maintainers | summary
 [account_bank_statement_clear_partner](account_bank_statement_clear_partner/) | 12.0.1.0.0 |  | Clear all partners in bank statement lines
 [account_bank_statement_import_bypass_check](account_bank_statement_import_bypass_check/) | 12.0.1.0.0 |  | Allow possibility to bypass check in Bank statement import
 [account_bank_statement_import_camt_oca](account_bank_statement_import_camt_oca/) | 12.0.1.0.1 |  | CAMT Format Bank Statements Import
-[account_bank_statement_import_move_line](account_bank_statement_import_move_line/) | 12.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Import journal items into bank statement
+[account_bank_statement_import_move_line](account_bank_statement_import_move_line/) | 12.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Import journal items into bank statement
 [account_bank_statement_import_ofx](account_bank_statement_import_ofx/) | 12.0.1.1.0 |  | Import OFX Bank Statement
-[account_bank_statement_import_online](account_bank_statement_import_online/) | 12.0.2.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements update
-[account_bank_statement_import_online_paypal](account_bank_statement_import_online_paypal/) | 12.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for PayPal.com
+[account_bank_statement_import_online](account_bank_statement_import_online/) | 12.0.2.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_bank_statement_import_online_paypal](account_bank_statement_import_online_paypal/) | 12.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_bank_statement_import_online_ponto](account_bank_statement_import_online_ponto/) | 12.0.1.3.0 |  | Online Bank Statements: MyPonto.com
 [account_bank_statement_import_online_qonto](account_bank_statement_import_online_qonto/) | 12.0.1.0.0 |  | Online Bank Statements: Qonto.eu
-[account_bank_statement_import_online_transferwise](account_bank_statement_import_online_transferwise/) | 12.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Online bank statements for Wise.com (TransferWise.com)
+[account_bank_statement_import_online_transferwise](account_bank_statement_import_online_transferwise/) | 12.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for Wise.com (TransferWise.com)
 [account_bank_statement_import_paypal](account_bank_statement_import_paypal/) | 12.0.2.2.4 |  | Import PayPal CSV files as Bank Statements in Odoo
 [account_bank_statement_import_save_file](account_bank_statement_import_save_file/) | 12.0.1.0.0 |  | Keep imported bank statements as raw data
-[account_bank_statement_import_split](account_bank_statement_import_split/) | 12.0.1.0.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Split statements by date during import
+[account_bank_statement_import_split](account_bank_statement_import_split/) | 12.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Split statements by date during import
 [account_bank_statement_import_transfer_move](account_bank_statement_import_transfer_move/) | 12.0.1.0.0 |  | Bank Account Transfer Line
-[account_bank_statement_import_txt_xlsx](account_bank_statement_import_txt_xlsx/) | 12.0.2.0.6 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Import TXT/CSV or XLSX files as Bank Statements in Odoo
+[account_bank_statement_import_txt_xlsx](account_bank_statement_import_txt_xlsx/) | 12.0.2.0.6 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo
 
 [//]: # (end addons)
 
@@ -940,11 +940,11 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[component](component/) | 12.0.1.1.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Add capabilities to register and use decoupled components, as an alternative to model classes
+[component](component/) | 12.0.1.1.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Add capabilities to register and use decoupled components, as an alternative to model classes
 [component_event](component_event/) | 12.0.1.1.0 |  | Components Events
 [connector](connector/) | 12.0.1.3.0 |  | Connector
 [connector_base_product](connector_base_product/) | 12.0.1.0.0 |  | Connector Base Product
-[test_component](test_component/) | 12.0.1.0.1 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Automated tests for Components, do not install.
+[test_component](test_component/) | 12.0.1.0.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Automated tests for Components, do not install.
 [test_connector](test_connector/) | 12.0.1.0.0 |  | Automated tests for Connector, do not install.
 
 [//]: # (end addons)
@@ -1012,8 +1012,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 12.0.1.2.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 12.0.2.0.0 |  | Import CSV files in the background
-[export_async_schedule](export_async_schedule/) | 12.0.1.0.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Generate and send exports by emails on a schedule
-[queue_job](queue_job/) | 12.0.4.1.0 | [![guewen](https://github.com/guewen.png?size=30px)](https://github.com/guewen) | Job Queue
+[export_async_schedule](export_async_schedule/) | 12.0.1.0.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Generate and send exports by emails on a schedule
+[queue_job](queue_job/) | 12.0.4.1.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 12.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 12.0.1.1.1 |  | Scheduled Actions as Queue Jobs
 [queue_job_subscribe](queue_job_subscribe/) | 12.0.1.0.0 |  | Control which users are subscribed to queue job notifications
@@ -1303,10 +1303,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_pricelist_technical](account_invoice_pricelist_technical/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Prevent technical pricelists from being selected on invoice forms
+[account_invoice_pricelist_technical](account_invoice_pricelist_technical/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent technical pricelists from being selected on invoice forms
 [partner_contact_sale_info_propagation](partner_contact_sale_info_propagation/) | 12.0.1.0.0 |  | Propagate Salesperson and Sales Channel from Company to Contacts
 [partner_prospect](partner_prospect/) | 12.0.1.0.0 |  | Partner Prospect
-[partner_sale_pivot](partner_sale_pivot/) | 12.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Sales analysis from customer form view
+[partner_sale_pivot](partner_sale_pivot/) | 12.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 12.0.1.1.1 |  | Allow portal users to see their own documents
 [pricelist_by_category_qty](pricelist_by_category_qty/) | 12.0.1.0.0 |  | Discount by quantities of product category
 [product_form_sale_link](product_form_sale_link/) | 12.0.1.1.0 |  | Adds a button on product forms to access Sale Lines
@@ -1323,17 +1323,17 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 12.0.1.0.1 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 12.0.1.0.0 |  | Show the delivery state on the sale order
 [sale_disable_inventory_check](sale_disable_inventory_check/) | 12.0.1.0.0 |  | Disable warning 'Not enough inventory' when there isn't enough product stock
-[sale_discount_display_amount](sale_discount_display_amount/) | 12.0.1.2.1 | [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
+[sale_discount_display_amount](sale_discount_display_amount/) | 12.0.1.2.1 | <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_double_validation](sale_double_validation/) | 12.0.1.0.1 |  | Double validation for Sales
 [sale_elaboration](sale_elaboration/) | 12.0.1.0.1 |  | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 12.0.1.1.1 |  | Custom exceptions on sale order
 [sale_fixed_discount](sale_fixed_discount/) | 12.0.1.0.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 12.0.1.0.1 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 12.0.1.1.1 |  | Sale Force Whole Invoiceability
-[sale_generator](sale_generator/) | 12.0.1.0.2 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Sale Generator
+[sale_generator](sale_generator/) | 12.0.1.0.2 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Sale Generator
 [sale_global_discount](sale_global_discount/) | 12.0.1.2.1 |  | Sale Global Discount
 [sale_invoice_group_method](sale_invoice_group_method/) | 12.0.1.0.0 |  | This module allows you to combine severalSales Orders into a single invoice,if they meet the group criteria defined by the 'Invoice Group Method'
-[sale_invoice_plan](sale_invoice_plan/) | 12.0.2.1.3 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Add to sales order, ability to manage future invoice plan
+[sale_invoice_plan](sale_invoice_plan/) | 12.0.2.1.3 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 12.0.1.0.0 |  | Sales Management: let the user choose the invoice policy on the order
 [sale_isolated_quotation](sale_isolated_quotation/) | 12.0.1.1.0 |  | Sale Isolated Quotation
 [sale_last_price_info](sale_last_price_info/) | 12.0.2.0.0 |  | Product Last Price Info - Sale
@@ -1344,7 +1344,7 @@ addon | version | maintainers | summary
 [sale_mrp_link](sale_mrp_link/) | 12.0.1.0.1 |  | Show manufacturing orders generated from sales order
 [sale_order_action_invoice_create_hook](sale_order_action_invoice_create_hook/) | 12.0.1.0.3 |  | Add more flexibility in the grouping parameters for the creation of invoices
 [sale_order_archive](sale_order_archive/) | 12.0.1.0.0 |  | Archive Sale Orders
-[sale_order_digitized_signature](sale_order_digitized_signature/) | 12.0.1.0.0 | [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Capture customer signature on the sales order
+[sale_order_digitized_signature](sale_order_digitized_signature/) | 12.0.1.0.0 | <a href='https://github.com/mgosai'><img src='https://github.com/mgosai.png' width='32' height='32' style='border-radius:50%;' alt='mgosai'/></a> | Capture customer signature on the sales order
 [sale_order_general_discount](sale_order_general_discount/) | 12.0.1.1.0 |  | General discount per sale order
 [sale_order_incoterm_place](sale_order_incoterm_place/) | 12.0.1.0.1 |  | Sale Order Incoterm Place
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 12.0.1.1.1 |  | Control invoice order lines if their related task has been set to invoiceable
@@ -1353,46 +1353,46 @@ addon | version | maintainers | summary
 [sale_order_line_input](sale_order_line_input/) | 12.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_price_history](sale_order_line_price_history/) | 12.0.1.1.2 |  | Sale order line price history
 [sale_order_line_sequence](sale_order_line_sequence/) | 12.0.1.0.0 |  | Propagates SO line sequence to invoices and stock picking.
-[sale_order_line_serial_unique](sale_order_line_serial_unique/) | 12.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Restrict the usage of unique quantity of product per line if product tracking is serial
-[sale_order_lot_generator](sale_order_lot_generator/) | 12.0.1.0.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![mourad-ehm](https://github.com/mourad-ehm.png?size=30px)](https://github.com/mourad-ehm) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Sale Order Lot Generator
+[sale_order_line_serial_unique](sale_order_line_serial_unique/) | 12.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Restrict the usage of unique quantity of product per line if product tracking is serial
+[sale_order_lot_generator](sale_order_lot_generator/) | 12.0.1.0.2 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 12.0.2.0.2 |  | Sale Order Lot Selection
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 12.0.1.1.1 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 12.0.1.0.2 |  | Define priority on sale orders
-[sale_order_product_assortment](sale_order_product_assortment/) | 12.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Sale Order Product Assortment
+[sale_order_product_assortment](sale_order_product_assortment/) | 12.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Sale Order Product Assortment
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 12.0.3.0.1 |  | Recommend products to sell to customer based on history
 [sale_order_product_recommendation_secondary_unit](sale_order_product_recommendation_secondary_unit/) | 12.0.2.1.0 |  | Add secondary unit to recommend products wizard
-[sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 12.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Prevent recompute if only quantity has changed in sale order line
+[sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 12.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
 [sale_order_rename](sale_order_rename/) | 12.0.1.0.2 |  | Allows renaming of Quotation / Sale Order
 [sale_order_revision](sale_order_revision/) | 12.0.1.0.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 12.0.1.1.0 |  | Sale product in a secondary unit
-[sale_order_tag](sale_order_tag/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds Tags to Sales Orders.
+[sale_order_tag](sale_order_tag/) | 12.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds Tags to Sales Orders.
 [sale_order_transmit_method](sale_order_transmit_method/) | 12.0.1.0.0 |  | Set transmit method (email, post, portal, ...) in sale order and propagate it to invoices
 [sale_order_type](sale_order_type/) | 12.0.1.3.0 |  | Sale Order Type
-[sale_order_weight](sale_order_weight/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Sale Order Weight
+[sale_order_weight](sale_order_weight/) | 12.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Sale Order Weight
 [sale_partner_incoterm](sale_partner_incoterm/) | 12.0.1.0.1 |  | Set the customer preferred incoterm on each sales order
-[sale_pricelist_technical](sale_pricelist_technical/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Prevent some pricelists from being selected on order and customer forms
+[sale_pricelist_technical](sale_pricelist_technical/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent some pricelists from being selected on order and customer forms
 [sale_procurement_group_by_commitment_date](sale_procurement_group_by_commitment_date/) | 12.0.1.0.0 |  | Groups pickings based on commitment date of order line
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 12.0.1.0.0 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 12.0.1.0.3 |  | Shows 'Product Categories' menu item in Sales
 [sale_product_classification](sale_product_classification/) | 12.0.1.0.0 |  | Classify products regarding their sales performance
 [sale_product_multi_add](sale_product_multi_add/) | 12.0.1.1.0 |  | Sale Product Multi Add
-[sale_product_returnable](sale_product_returnable/) | 12.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Get returnable products from your customers
+[sale_product_returnable](sale_product_returnable/) | 12.0.1.0.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Get returnable products from your customers
 [sale_product_set](sale_product_set/) | 12.0.1.3.2 |  | Sale product set
 [sale_product_set_variant](sale_product_set_variant/) | 12.0.1.1.0 |  | Add variant management to sale product set.
 [sale_promotion_rule](sale_promotion_rule/) | 12.0.1.0.1 |  | Module to manage promotion rule on sale order
 [sale_quotation_number](sale_quotation_number/) | 12.0.1.0.1 |  | Different sequence for sale quotations
 [sale_rental](sale_rental/) | 12.0.1.1.1 |  | Manage Rental of Products
 [sale_require_po_doc](sale_require_po_doc/) | 12.0.1.0.1 |  | Sale Orders Require PO or Sales Documentation
-[sale_resource_booking](sale_resource_booking/) | 12.0.1.0.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Link resource bookings with sales
+[sale_resource_booking](sale_resource_booking/) | 12.0.1.0.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Link resource bookings with sales
 [sale_restricted_qty](sale_restricted_qty/) | 12.0.2.0.1 |  | Sale order min quantity
-[sale_secondary_salesperson](sale_secondary_salesperson/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Sale Secondary Salesperson
+[sale_secondary_salesperson](sale_secondary_salesperson/) | 12.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Secondary Salesperson
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 12.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_start_end_dates](sale_start_end_dates/) | 12.0.1.0.2 |  | Adds start date and end date on sale order lines
 [sale_stock_delivery_address](sale_stock_delivery_address/) | 12.0.1.0.2 |  | Sale Stock Delivery Address
 [sale_stock_last_date](sale_stock_last_date/) | 12.0.1.0.0 |  | Displays last delivery date in sale order lines
 [sale_stock_picking_blocking](sale_stock_picking_blocking/) | 12.0.1.0.1 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 12.0.1.0.0 |  | Add picking note in sale and purchase order
-[sale_stock_return_request](sale_stock_return_request/) | 12.0.1.0.1 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Sale Stock Return Request
+[sale_stock_return_request](sale_stock_return_request/) | 12.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Sale Stock Return Request
 [sale_stock_secondary_unit](sale_stock_secondary_unit/) | 12.0.1.0.0 |  | Get product quantities in a secondary unit
 [sale_stock_sourcing_address](sale_stock_sourcing_address/) | 12.0.1.0.1 |  | Sale Stock Sourcing Address
 [sale_substate](sale_substate/) | 12.0.1.0.1 |  | Sale Sub State
@@ -1400,7 +1400,7 @@ addon | version | maintainers | summary
 [sale_triple_discount](sale_triple_discount/) | 12.0.1.2.0 |  | Manage triple discount on sale order lines
 [sale_validity](sale_validity/) | 12.0.1.0.0 |  | Set a default validity delay on quotations
 [sale_wishlist](sale_wishlist/) | 12.0.1.0.1 |  | Handle sale wishlist for partners
-[sales_team_security](sales_team_security/) | 12.0.4.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | New group for seeing only sales channel's documents
+[sales_team_security](sales_team_security/) | 12.0.4.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | New group for seeing only sales channel's documents
 
 [//]: # (end addons)
 
@@ -1464,8 +1464,8 @@ addon | version | maintainers | summary
 [crm_phonecall_planner](crm_phonecall_planner/) | 12.0.1.0.1 |  | Schedule phone calls according to some criteria
 [crm_phonecall_summary_predefined](crm_phonecall_summary_predefined/) | 12.0.1.0.0 |  | Allows to choose from a defined summary list
 [crm_sale_marketing](crm_sale_marketing/) | 12.0.1.0.0 |  | Marketing Details of Sales
-[crm_sale_secondary_salesperson](crm_sale_secondary_salesperson/) | 12.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Crm Sale Secondary Salesperson
-[crm_secondary_salesperson](crm_secondary_salesperson/) | 12.0.1.0.2 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | CRM Secondary Salesperson
+[crm_sale_secondary_salesperson](crm_sale_secondary_salesperson/) | 12.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Crm Sale Secondary Salesperson
+[crm_secondary_salesperson](crm_secondary_salesperson/) | 12.0.1.0.2 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | CRM Secondary Salesperson
 [crm_stage_type](crm_stage_type/) | 12.0.1.1.1 |  | Add type in the lead and opportunity stages
 [crm_team_parent](crm_team_parent/) | 12.0.1.0.1 |  | Add a parent field on sales teams.
 [marketing_crm_partner](marketing_crm_partner/) | 12.0.1.0.1 |  | Copy tracking fields from leads to partners
@@ -1514,8 +1514,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[animal](animal/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage animals information
-[animal_owner](animal_owner/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add owner to the animal
+[animal](animal/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage animals information
+[animal_owner](animal_owner/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add owner to the animal
 [base_country_state_translatable](base_country_state_translatable/) | 12.0.1.0.0 |  | Translate Country States
 [base_location](base_location/) | 12.0.1.1.4 |  | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 12.0.1.0.4 |  | Import zip entries from Geonames
@@ -1531,7 +1531,7 @@ addon | version | maintainers | summary
 [partner_coc](partner_coc/) | 12.0.1.0.0 |  | Adds field 'Chamber Of Commerce Registration Number'
 [partner_company_group](partner_company_group/) | 12.0.1.2.1 |  | Adds the possibility to add a company group to a company
 [partner_company_type](partner_company_type/) | 12.0.1.1.0 |  | Adds a company type to partner that are companies
-[partner_contact_access_link](partner_contact_access_link/) | 12.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Allow to visit the full contact form from a company
+[partner_contact_access_link](partner_contact_access_link/) | 12.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Allow to visit the full contact form from a company
 [partner_contact_address_default](partner_contact_address_default/) | 12.0.1.3.0 |  | Set a default delivery and invoice address for contacts
 [partner_contact_birthdate](partner_contact_birthdate/) | 12.0.1.2.0 |  | Contact's birthdate
 [partner_contact_birthplace](partner_contact_birthplace/) | 12.0.1.0.0 |  | This module allows to define a birthplace for partners.
@@ -1549,7 +1549,7 @@ addon | version | maintainers | summary
 [partner_default_sale_discount](partner_default_sale_discount/) | 12.0.1.0.1 |  | Default sales discount per partner
 [partner_disable_gravatar](partner_disable_gravatar/) | 12.0.1.0.0 |  | Disable automatic connection to gravatar.com
 [partner_email_check](partner_email_check/) | 12.0.1.0.0 |  | Validate email address field
-[partner_employee_quantity](partner_employee_quantity/) | 12.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Know how many employees a partner has
+[partner_employee_quantity](partner_employee_quantity/) | 12.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Know how many employees a partner has
 [partner_external_map](partner_external_map/) | 12.0.1.0.1 |  | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
 [partner_fax](partner_fax/) | 12.0.1.1.1 |  | Add fax number on partner
 [partner_firstname](partner_firstname/) | 12.0.1.1.0 |  | Split first name and last name for non company partners
@@ -1567,9 +1567,9 @@ addon | version | maintainers | summary
 [partner_noncommercial](partner_noncommercial/) | 12.0.2.0.0 |  | Partner Non Commercial
 [partner_phone_extension](partner_phone_extension/) | 12.0.1.0.0 |  | Partner Phone Number Extension
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 12.0.1.0.0 |  | Track the time and days your partners expect phone calls
-[partner_postal_address](partner_postal_address/) | 12.0.1.0.0 | [![remi-filament](https://github.com/remi-filament.png?size=30px)](https://github.com/remi-filament) | Adds a postal address in address types
+[partner_postal_address](partner_postal_address/) | 12.0.1.0.0 | <a href='https://github.com/remi-filament'><img src='https://github.com/remi-filament.png' width='32' height='32' style='border-radius:50%;' alt='remi-filament'/></a> | Adds a postal address in address types
 [partner_pricelist_search](partner_pricelist_search/) | 12.0.1.0.0 |  | Partner pricelist search
-[partner_priority](partner_priority/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds priority to partners.
+[partner_priority](partner_priority/) | 12.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds priority to partners.
 [partner_ref_unique](partner_ref_unique/) | 12.0.1.0.2 |  | Add an unique constraint to partner ref field
 [partner_route](partner_route/) | 12.0.1.0.0 |  | Base module to assign routes to partners
 [partner_second_lastname](partner_second_lastname/) | 12.0.2.0.0 |  | Have split first and second lastnames
@@ -1641,12 +1641,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[sale_backorder](sale_backorder/) | 12.0.1.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Report of Un-Invoice Goods Delivered and Backorders
+[sale_backorder](sale_backorder/) | 12.0.1.0.0 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Report of Un-Invoice Goods Delivered and Backorders
 [sale_comment_template](sale_comment_template/) | 12.0.1.3.1 |  | Comments texts templates on Sale documents
 [sale_layout_category_hide_detail](sale_layout_category_hide_detail/) | 12.0.1.1.2 |  | Hide details for sections in sale orders and invoices for reports and customer portal
 [sale_order_report_product_image](sale_order_report_product_image/) | 12.0.1.0.0 |  | Show product images on Sale documents
 [sale_report_country_state](sale_report_country_state/) | 12.0.1.0.0 |  | Sale Report Filter by State
-[sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 12.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Delivered subtotal
+[sale_report_delivered_subtotal](sale_report_delivered_subtotal/) | 12.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Delivered subtotal
 
 [//]: # (end addons)
 
@@ -1694,13 +1694,13 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract_commission](contract_commission/) | 12.0.1.0.1 |  | Commissions in contract invoices
 [hr_commission](hr_commission/) | 12.0.1.1.1 |  | HR commissions
-[sale_commission](sale_commission/) | 12.0.3.3.3 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Sales commissions
+[sale_commission](sale_commission/) | 12.0.3.3.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Sales commissions
 [sale_commission_delegated_partner](sale_commission_delegated_partner/) | 12.0.1.0.0 |  | Allow to delegate the invoices of agent to a delegate partner
 [sale_commission_formula](sale_commission_formula/) | 12.0.1.1.0 |  | Sale commissions computed by formulas
 [sale_commission_pricelist](sale_commission_pricelist/) | 12.0.1.0.0 |  | Sales commissions by pricelist
 [sale_commission_product_based](sale_commission_product_based/) | 12.0.1.0.0 |  | Create commissions based on product
 [sale_commission_salesman](sale_commission_salesman/) | 12.0.1.0.0 |  | Sales commissions from salesman
-[sale_commission_settlement_partial_invoice](sale_commission_settlement_partial_invoice/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Allow to generate partial agent invoice from settlement
+[sale_commission_settlement_partial_invoice](sale_commission_settlement_partial_invoice/) | 12.0.2.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Allow to generate partial agent invoice from settlement
 
 [//]: # (end addons)
 
@@ -1930,11 +1930,11 @@ addon | version | maintainers | summary
 [base_business_document_import](base_business_document_import/) | 12.0.1.0.1 |  | Provides technical tools to import sale orders or supplier invoices
 [base_business_document_import_phone](base_business_document_import_phone/) | 12.0.1.0.0 |  | Use phone numbers to match partners upon import of business documents
 [base_business_document_import_stock](base_business_document_import_stock/) | 12.0.1.0.1 |  | Match incoterms upon import of business documents
-[base_edi](base_edi/) | 12.0.1.0.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Base module to aggregate EDI features.
+[base_edi](base_edi/) | 12.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 12.0.1.0.0 |  | Base module for Factur-X/ZUGFeRD
 [base_ubl](base_ubl/) | 12.0.1.1.2 |  | Base module for Universal Business Language (UBL)
 [base_ubl_payment](base_ubl_payment/) | 12.0.1.0.1 |  | Payment-related code for Universal Business Language (UBL)
-[edi_oca](edi_oca/) | 12.0.1.22.6 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 12.0.1.22.6 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [purchase_order_ubl](purchase_order_ubl/) | 12.0.1.0.1 |  | Embed UBL XML file inside the PDF purchase order
 [purchase_stock_ubl](purchase_stock_ubl/) | 12.0.1.0.1 |  | Glue module for Purchase Order UBL and Stock/Inventory
 [sale_order_import](sale_order_import/) | 12.0.1.0.1 |  | Import RFQ or sale orders from files
@@ -1984,52 +1984,52 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fieldservice](fieldservice/) | 12.0.2.21.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service Locations, Workers and Orders
-[fieldservice_account](fieldservice_account/) | 12.0.3.1.1 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track invoices linked to Field Service orders
-[fieldservice_account_analytic](fieldservice_account_analytic/) | 12.0.3.3.0 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Track analytic accounts on Field Service locations and orders
-[fieldservice_account_payment](fieldservice_account_payment/) | 12.0.1.2.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allow workers to collect payments from the order.
-[fieldservice_activity](fieldservice_activity/) | 12.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service Activities are a set of actions that need to be performed on a service order
-[fieldservice_agreement](fieldservice_agreement/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage Field Service agreements and contracts
+[fieldservice](fieldservice/) | 12.0.2.21.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage Field Service Locations, Workers and Orders
+[fieldservice_account](fieldservice_account/) | 12.0.3.1.1 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Track invoices linked to Field Service orders
+[fieldservice_account_analytic](fieldservice_account_analytic/) | 12.0.3.3.0 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Track analytic accounts on Field Service locations and orders
+[fieldservice_account_payment](fieldservice_account_payment/) | 12.0.1.2.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Allow workers to collect payments from the order.
+[fieldservice_activity](fieldservice_activity/) | 12.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service Activities are a set of actions that need to be performed on a service order
+[fieldservice_agreement](fieldservice_agreement/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Manage Field Service agreements and contracts
 [fieldservice_agreement_helpdesk_mgmt](fieldservice_agreement_helpdesk_mgmt/) | 12.0.1.0.0 |  | Create links between Field Service, Agreements, and Helpdesk
-[fieldservice_calendar](fieldservice_calendar/) | 12.0.1.0.0 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) | Add calendar to FSM Orders
-[fieldservice_change_management](fieldservice_change_management/) | 12.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Manage Change Logs on Locations
-[fieldservice_crm](fieldservice_crm/) | 12.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Create Field Service orders from the CRM
-[fieldservice_delivery](fieldservice_delivery/) | 12.0.2.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Select delivery methods and carriers on Field Service orders
-[fieldservice_distribution](fieldservice_distribution/) | 12.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your distribution structure
-[fieldservice_equipment_stock](fieldservice_equipment_stock/) | 12.0.2.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate stock operations with your field service equipments
-[fieldservice_fleet](fieldservice_fleet/) | 12.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Link Field Service vehicles with Odoo Fleet
-[fieldservice_geoengine](fieldservice_geoengine/) | 12.0.1.2.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Display Field Service locations on a map with Open Street Map
-[fieldservice_google_map](fieldservice_google_map/) | 12.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module displays map views on the order and location using Google Map View module.
-[fieldservice_google_marker_icon_picker](fieldservice_google_marker_icon_picker/) | 12.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module displays google marker icon picker based on apply widget on field
-[fieldservice_isp_account](fieldservice_isp_account/) | 12.0.2.3.2 | [![osimallen](https://github.com/osimallen.png?size=30px)](https://github.com/osimallen) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Invoice Field Service orders based on employee time or contractor costs
-[fieldservice_isp_flow](fieldservice_isp_flow/) | 12.0.1.1.1 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Field Service workflow for Internet Service Providers
-[fieldservice_location_builder](fieldservice_location_builder/) | 12.0.1.1.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds a tool to help build out Location Hierarchies
-[fieldservice_maintenance](fieldservice_maintenance/) | 12.0.1.2.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Integrate Field Service orders with maintenance requests
+[fieldservice_calendar](fieldservice_calendar/) | 12.0.1.0.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Add calendar to FSM Orders
+[fieldservice_change_management](fieldservice_change_management/) | 12.0.1.1.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Manage Change Logs on Locations
+[fieldservice_crm](fieldservice_crm/) | 12.0.1.1.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Create Field Service orders from the CRM
+[fieldservice_delivery](fieldservice_delivery/) | 12.0.2.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Select delivery methods and carriers on Field Service orders
+[fieldservice_distribution](fieldservice_distribution/) | 12.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your distribution structure
+[fieldservice_equipment_stock](fieldservice_equipment_stock/) | 12.0.2.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate stock operations with your field service equipments
+[fieldservice_fleet](fieldservice_fleet/) | 12.0.1.0.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Link Field Service vehicles with Odoo Fleet
+[fieldservice_geoengine](fieldservice_geoengine/) | 12.0.1.2.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Display Field Service locations on a map with Open Street Map
+[fieldservice_google_map](fieldservice_google_map/) | 12.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module displays map views on the order and location using Google Map View module.
+[fieldservice_google_marker_icon_picker](fieldservice_google_marker_icon_picker/) | 12.0.1.1.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module displays google marker icon picker based on apply widget on field
+[fieldservice_isp_account](fieldservice_isp_account/) | 12.0.2.3.2 | <a href='https://github.com/osimallen'><img src='https://github.com/osimallen.png' width='32' height='32' style='border-radius:50%;' alt='osimallen'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Invoice Field Service orders based on employee time or contractor costs
+[fieldservice_isp_flow](fieldservice_isp_flow/) | 12.0.1.1.1 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Field Service workflow for Internet Service Providers
+[fieldservice_location_builder](fieldservice_location_builder/) | 12.0.1.1.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Adds a tool to help build out Location Hierarchies
+[fieldservice_maintenance](fieldservice_maintenance/) | 12.0.1.2.1 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Integrate Field Service orders with maintenance requests
 [fieldservice_mgmtsystem_nonconformity](fieldservice_mgmtsystem_nonconformity/) | 12.0.1.1.0 |  | Bridge module between Field Service and Non Conformities
-[fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage relations between contacts, companies and locations
+[fieldservice_partner_multi_relation](fieldservice_partner_multi_relation/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage relations between contacts, companies and locations
 [fieldservice_project](fieldservice_project/) | 12.0.1.2.1 |  | Create field service orders from a project or project task
-[fieldservice_purchase](fieldservice_purchase/) | 12.0.1.1.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Manage FSM Purchases
-[fieldservice_recurring](fieldservice_recurring/) | 12.0.1.3.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage recurring Field Service orders
-[fieldservice_repair](fieldservice_repair/) | 12.0.2.0.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Integrate Field Service orders with MRP repair orders
-[fieldservice_route](fieldservice_route/) | 12.0.2.5.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Organize the routes of each day.
-[fieldservice_route_account](fieldservice_route_account/) | 12.0.1.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Field Service Route Account
-[fieldservice_route_stock](fieldservice_route_stock/) | 12.0.1.2.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Field Service Route Stock
-[fieldservice_route_vehicle](fieldservice_route_vehicle/) | 12.0.2.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to set the vehicle on the routes and day routes.
-[fieldservice_sale](fieldservice_sale/) | 12.0.2.5.2 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell field services.
-[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 12.0.1.2.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell recurring field services.
-[fieldservice_sale_stock](fieldservice_sale_stock/) | 12.0.1.0.4 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Sell stockable items linked to field service orders.
-[fieldservice_size](fieldservice_size/) | 12.0.0.1.1 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Manage Sizes for Field Service Locations and Orders
-[fieldservice_skill](fieldservice_skill/) | 12.0.1.1.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your Field Service workers skills
-[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 12.0.2.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Execute server actions when reaching a Field Service stage
-[fieldservice_stage_validation](fieldservice_stage_validation/) | 12.0.0.2.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Validate input data when reaching a Field Service stage
-[fieldservice_stock](fieldservice_stock/) | 12.0.3.0.1 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate the logistics operations with Field Service
-[fieldservice_stock_account](fieldservice_stock_account/) | 12.0.2.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Invoice inventory items delivered with Field Service orders
-[fieldservice_stock_account_analytic](fieldservice_stock_account_analytic/) | 12.0.1.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Track costs of delivered items with analytic accounting
-[fieldservice_stock_request](fieldservice_stock_request/) | 12.0.2.0.0 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Integrate Stock Requests with Field Service Orders
-[fieldservice_substatus](fieldservice_substatus/) | 12.0.1.2.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Add sub-statuses to Field Service orders
-[fieldservice_vehicle](fieldservice_vehicle/) | 12.0.2.2.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage Field Service vehicles and assign drivers
-[fieldservice_vehicle_stock](fieldservice_vehicle_stock/) | 12.0.2.0.1 | [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Track inventory of Field Service vehicles
-[fieldservice_vehicle_stock_request](fieldservice_vehicle_stock_request/) | 12.0.2.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link Stock Requests with Field Service Vehicle Inventory
+[fieldservice_purchase](fieldservice_purchase/) | 12.0.1.1.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Manage FSM Purchases
+[fieldservice_recurring](fieldservice_recurring/) | 12.0.1.3.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage recurring Field Service orders
+[fieldservice_repair](fieldservice_repair/) | 12.0.2.0.0 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Integrate Field Service orders with MRP repair orders
+[fieldservice_route](fieldservice_route/) | 12.0.2.5.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Organize the routes of each day.
+[fieldservice_route_account](fieldservice_route_account/) | 12.0.1.1.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Field Service Route Account
+[fieldservice_route_stock](fieldservice_route_stock/) | 12.0.1.2.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Field Service Route Stock
+[fieldservice_route_vehicle](fieldservice_route_vehicle/) | 12.0.2.1.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module allows you to set the vehicle on the routes and day routes.
+[fieldservice_sale](fieldservice_sale/) | 12.0.2.5.2 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell field services.
+[fieldservice_sale_recurring](fieldservice_sale_recurring/) | 12.0.1.2.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell recurring field services.
+[fieldservice_sale_stock](fieldservice_sale_stock/) | 12.0.1.0.4 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell stockable items linked to field service orders.
+[fieldservice_size](fieldservice_size/) | 12.0.0.1.1 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage Sizes for Field Service Locations and Orders
+[fieldservice_skill](fieldservice_skill/) | 12.0.1.1.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your Field Service workers skills
+[fieldservice_stage_server_action](fieldservice_stage_server_action/) | 12.0.2.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Execute server actions when reaching a Field Service stage
+[fieldservice_stage_validation](fieldservice_stage_validation/) | 12.0.0.2.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Validate input data when reaching a Field Service stage
+[fieldservice_stock](fieldservice_stock/) | 12.0.3.0.1 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate the logistics operations with Field Service
+[fieldservice_stock_account](fieldservice_stock_account/) | 12.0.2.0.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Invoice inventory items delivered with Field Service orders
+[fieldservice_stock_account_analytic](fieldservice_stock_account_analytic/) | 12.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Track costs of delivered items with analytic accounting
+[fieldservice_stock_request](fieldservice_stock_request/) | 12.0.2.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate Stock Requests with Field Service Orders
+[fieldservice_substatus](fieldservice_substatus/) | 12.0.1.2.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Add sub-statuses to Field Service orders
+[fieldservice_vehicle](fieldservice_vehicle/) | 12.0.2.2.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage Field Service vehicles and assign drivers
+[fieldservice_vehicle_stock](fieldservice_vehicle_stock/) | 12.0.2.0.1 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Track inventory of Field Service vehicles
+[fieldservice_vehicle_stock_request](fieldservice_vehicle_stock_request/) | 12.0.2.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Link Stock Requests with Field Service Vehicle Inventory
 
 [//]: # (end addons)
 
@@ -2075,18 +2075,18 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_margin](account_invoice_margin/) | 12.0.3.0.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Show margin in invoices
-[account_invoice_margin_sale](account_invoice_margin_sale/) | 12.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Set margin in invoices from sale orders
-[account_invoice_margin_sale_delivered_sync](account_invoice_margin_sale_delivered_sync/) | 12.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sync invoice margin between invoices and sale orders
-[product_margin_classification](product_margin_classification/) | 12.0.1.0.4 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product Margin Classification
-[product_pricelist_margin](product_pricelist_margin/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Margins per Pricelist
+[account_invoice_margin](account_invoice_margin/) | 12.0.3.0.3 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Show margin in invoices
+[account_invoice_margin_sale](account_invoice_margin_sale/) | 12.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Set margin in invoices from sale orders
+[account_invoice_margin_sale_delivered_sync](account_invoice_margin_sale_delivered_sync/) | 12.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sync invoice margin between invoices and sale orders
+[product_margin_classification](product_margin_classification/) | 12.0.1.0.4 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product Margin Classification
+[product_pricelist_margin](product_pricelist_margin/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Margins per Pricelist
 [product_replenishment_cost](product_replenishment_cost/) | 12.0.1.0.1 |  | Provides an overridable method on product which computethe Replenishment cost of a product
-[product_standard_margin](product_standard_margin/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product Margin and Margin Rate
-[sale_margin_delivered](sale_margin_delivered/) | 12.0.1.0.3 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Margin Delivered
-[sale_margin_security](sale_margin_security/) | 12.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Margin Security
+[product_standard_margin](product_standard_margin/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product Margin and Margin Rate
+[sale_margin_delivered](sale_margin_delivered/) | 12.0.1.0.3 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Margin Delivered
+[sale_margin_security](sale_margin_security/) | 12.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Margin Security
 [sale_margin_sync](sale_margin_sync/) | 12.0.1.0.1 |  | Recompute sale margin when stock move cost price is changed
 [sale_order_margin_percent](sale_order_margin_percent/) | 12.0.1.1.1 |  | Show Percent in sale order
-[sale_report_margin](sale_report_margin/) | 12.0.1.0.1 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Sale Report Margin
+[sale_report_margin](sale_report_margin/) | 12.0.1.0.1 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Sale Report Margin
 
 [//]: # (end addons)
 
@@ -2132,22 +2132,22 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fleet_config](fleet_config/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Provides general settings for the Fleet App
-[fleet_vehicle_calendar_year](fleet_vehicle_calendar_year/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. Allows the registration of the vehicle's calendar year.
+[fleet_config](fleet_config/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Provides general settings for the Fleet App
+[fleet_vehicle_calendar_year](fleet_vehicle_calendar_year/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the fleet management functionality. Allows the registration of the vehicle's calendar year.
 [fleet_vehicle_category](fleet_vehicle_category/) | 12.0.1.1.0 |  | Add category definition for vehicles.
-[fleet_vehicle_fuel_capacity](fleet_vehicle_fuel_capacity/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the functionality of fleet management. It allows the registration of a vehicle's fuel capacity.
-[fleet_vehicle_fuel_type_ethanol](fleet_vehicle_fuel_type_ethanol/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. This adds ethanol as another type of fuel to be used by a vehicle in the fleet.
-[fleet_vehicle_history_date_end](fleet_vehicle_history_date_end/) | 12.0.1.0.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Automatically assign date end in vehicle history when a new driver is assigned.
-[fleet_vehicle_inspection](fleet_vehicle_inspection/) | 12.0.3.2.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
-[fleet_vehicle_inspection_item_compatible_product](fleet_vehicle_inspection_item_compatible_product/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. Allows you to define which products are compatible with inspection itens.
-[fleet_vehicle_inspection_template](fleet_vehicle_inspection_template/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extend module fleet_vehicle_inspection enable inspection templates feature
-[fleet_vehicle_license_plate_alt](fleet_vehicle_license_plate_alt/) | 12.0.1.0.0 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add a new field in the vehicle, to store an alternative license plate.
-[fleet_vehicle_model_compatible_product](fleet_vehicle_model_compatible_product/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. Allows you to define which products are compatible with the vehicle model.
-[fleet_vehicle_notebook](fleet_vehicle_notebook/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module provides an empty notebook for the vehicle form.
-[fleet_vehicle_pivot_graph](fleet_vehicle_pivot_graph/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the fleet management functionality. Adds the pivot table and graph view to the fleet vehicles.
-[fleet_vehicle_service_calendar](fleet_vehicle_service_calendar/) | 12.0.1.0.1 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add a smart button in services to schedule meetings.
-[fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 12.0.1.0.1 | [![mamcode](https://github.com/mamcode.png?size=30px)](https://github.com/mamcode) [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Add features of kanban to logs of vehicle services.
-[fleet_vehicle_stock](fleet_vehicle_stock/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module is an add-on for the Fleet application in Odoo. It allows you to track your Fleet Vehicles in stock moves.
+[fleet_vehicle_fuel_capacity](fleet_vehicle_fuel_capacity/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the functionality of fleet management. It allows the registration of a vehicle's fuel capacity.
+[fleet_vehicle_fuel_type_ethanol](fleet_vehicle_fuel_type_ethanol/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the fleet management functionality. This adds ethanol as another type of fuel to be used by a vehicle in the fleet.
+[fleet_vehicle_history_date_end](fleet_vehicle_history_date_end/) | 12.0.1.0.0 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Automatically assign date end in vehicle history when a new driver is assigned.
+[fleet_vehicle_inspection](fleet_vehicle_inspection/) | 12.0.3.2.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the Fleet module allowing the registration of vehicle entry and exit inspections.
+[fleet_vehicle_inspection_item_compatible_product](fleet_vehicle_inspection_item_compatible_product/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the fleet management functionality. Allows you to define which products are compatible with inspection itens.
+[fleet_vehicle_inspection_template](fleet_vehicle_inspection_template/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extend module fleet_vehicle_inspection enable inspection templates feature
+[fleet_vehicle_license_plate_alt](fleet_vehicle_license_plate_alt/) | 12.0.1.0.0 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add a new field in the vehicle, to store an alternative license plate.
+[fleet_vehicle_model_compatible_product](fleet_vehicle_model_compatible_product/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the fleet management functionality. Allows you to define which products are compatible with the vehicle model.
+[fleet_vehicle_notebook](fleet_vehicle_notebook/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module provides an empty notebook for the vehicle form.
+[fleet_vehicle_pivot_graph](fleet_vehicle_pivot_graph/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the fleet management functionality. Adds the pivot table and graph view to the fleet vehicles.
+[fleet_vehicle_service_calendar](fleet_vehicle_service_calendar/) | 12.0.1.0.1 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add a smart button in services to schedule meetings.
+[fleet_vehicle_service_kanban](fleet_vehicle_service_kanban/) | 12.0.1.0.1 | <a href='https://github.com/mamcode'><img src='https://github.com/mamcode.png' width='32' height='32' style='border-radius:50%;' alt='mamcode'/></a> <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add features of kanban to logs of vehicle services.
+[fleet_vehicle_stock](fleet_vehicle_stock/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module is an add-on for the Fleet application in Odoo. It allows you to track your Fleet Vehicles in stock moves.
 
 [//]: # (end addons)
 
@@ -2219,19 +2219,19 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_geoengine](base_geoengine/) | 12.0.1.3.0 |  | Geospatial support for Odoo
 [base_geoengine_demo](base_geoengine_demo/) | 12.0.1.0.3 |  | Geo spatial support Demo
-[base_geolocalize_company](base_geolocalize_company/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add latitude and longitude fields on company model
+[base_geolocalize_company](base_geolocalize_company/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add latitude and longitude fields on company model
 [base_geolocalize_openstreetmap](base_geolocalize_openstreetmap/) | 12.0.1.1.0 |  | Open street map API call to geolocalize an address
-[base_google_map](base_google_map/) | 12.0.1.1.0 | [![gityopie](https://github.com/gityopie.png?size=30px)](https://github.com/gityopie) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) | View modes and widgets to integrate Google Maps in your UI
+[base_google_map](base_google_map/) | 12.0.1.1.0 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | View modes and widgets to integrate Google Maps in your UI
 [geoengine_base_geolocalize](geoengine_base_geolocalize/) | 12.0.1.0.1 |  | Geospatial support for base_geolocalize
 [geoengine_bing](geoengine_bing/) | 12.0.1.0.2 |  | GeoEngine Bing Raster Support
 [geoengine_partner](geoengine_partner/) | 12.0.1.0.0 |  | Geospatial support of partners
 [geoengine_swisstopo](geoengine_swisstopo/) | 12.0.1.1.0 |  | GeoEngine - Swisstopo layers
 [test_base_geoengine](test_base_geoengine/) | 12.0.1.1.0 |  | test-base-geoengine
-[web_view_google_map](web_view_google_map/) | 12.0.1.1.2 | [![gityopie](https://github.com/gityopie.png?size=30px)](https://github.com/gityopie) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) | Add a Google Map view type to the Odoo web client
-[web_view_leaflet_map](web_view_leaflet_map/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Integrate leaflet.js librairy with odoo and add new 'leaflet_map' view, to display markers.
-[web_view_leaflet_map_partner](web_view_leaflet_map_partner/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | TODO
-[web_widget_google_map_drawing](web_widget_google_map_drawing/) | 12.0.1.1.0 | [![gityopie](https://github.com/gityopie.png?size=30px)](https://github.com/gityopie) [![brian10048](https://github.com/brian10048.png?size=30px)](https://github.com/brian10048) | Add drawing tools to Google Map view in Odoo
-[web_widget_google_marker_icon_picker](web_widget_google_marker_icon_picker/) | 12.0.1.1.0 | [![gityopie](https://github.com/gityopie.png?size=30px)](https://github.com/gityopie) [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) | Google map widget allowing to set marker's color
+[web_view_google_map](web_view_google_map/) | 12.0.1.1.2 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | Add a Google Map view type to the Odoo web client
+[web_view_leaflet_map](web_view_leaflet_map/) | 12.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Integrate leaflet.js librairy with odoo and add new 'leaflet_map' view, to display markers.
+[web_view_leaflet_map_partner](web_view_leaflet_map_partner/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | TODO
+[web_widget_google_map_drawing](web_widget_google_map_drawing/) | 12.0.1.1.0 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Add drawing tools to Google Map view in Odoo
+[web_widget_google_marker_icon_picker](web_widget_google_marker_icon_picker/) | 12.0.1.1.0 | <a href='https://github.com/gityopie'><img src='https://github.com/gityopie.png' width='32' height='32' style='border-radius:50%;' alt='gityopie'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> | Google map widget allowing to set marker's color
 
 [//]: # (end addons)
 
@@ -2281,13 +2281,13 @@ addon | version | maintainers | summary
 [crm_timesheet](crm_timesheet/) | 12.0.2.1.1 |  | CRM Timesheet
 [hr_employee_product](hr_employee_product/) | 12.0.1.0.1 |  | Product is an employee
 [hr_timesheet_activity_begin_end](hr_timesheet_activity_begin_end/) | 12.0.1.1.2 |  | Timesheet Activities - Begin/End Hours
-[hr_timesheet_analysis](hr_timesheet_analysis/) | 12.0.1.0.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Analyze tracked time in Pivot, Graph views
+[hr_timesheet_analysis](hr_timesheet_analysis/) | 12.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Analyze tracked time in Pivot, Graph views
 [hr_timesheet_employee_cost_contract](hr_timesheet_employee_cost_contract/) | 12.0.1.0.2 |  | Compute employee cost from contracts
 [hr_timesheet_employee_cost_currency](hr_timesheet_employee_cost_currency/) | 12.0.1.0.0 |  | Configure employee's Timesheet Cost currency.
 [hr_timesheet_employee_required](hr_timesheet_employee_required/) | 12.0.1.1.1 |  | Require Employee for any Time Log entry
 [hr_timesheet_nonpayable](hr_timesheet_nonpayable/) | 12.0.1.0.0 |  | Mark timesheet entries as non-payable to exclude from costs.
 [hr_timesheet_portal](hr_timesheet_portal/) | 12.0.1.0.1 |  | Fill in timesheets via the portal
-[hr_timesheet_report](hr_timesheet_report/) | 12.0.1.0.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Generate Timesheet Report from Task Logs
+[hr_timesheet_report](hr_timesheet_report/) | 12.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
 [hr_timesheet_role](hr_timesheet_role/) | 12.0.2.0.1 |  | Track time on project according to the role assigned
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 12.0.3.7.6 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_activity](hr_timesheet_sheet_activity/) | 12.0.1.0.0 |  | Automatic activities related to submission and review of timesheet sheets
@@ -2304,7 +2304,7 @@ addon | version | maintainers | summary
 [hr_timesheet_task_required](hr_timesheet_task_required/) | 12.0.1.0.5 |  | Set task on timesheet as a mandatory field
 [hr_timesheet_task_stage](hr_timesheet_task_stage/) | 12.0.1.1.1 |  | Open/Close task from corresponding Task Log entry
 [hr_timesheet_time_type](hr_timesheet_time_type/) | 12.0.1.0.1 |  | Ability to add time type in timesheet lines.
-[hr_utilization_analysis](hr_utilization_analysis/) | 12.0.1.1.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | View Utilization Analysis from Task Logs.
+[hr_utilization_analysis](hr_utilization_analysis/) | 12.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | View Utilization Analysis from Task Logs.
 [hr_utilization_report](hr_utilization_report/) | 12.0.1.0.3 |  | Generate Utilization Report from Task Logs
 [project_task_stage_allow_timesheet](project_task_stage_allow_timesheet/) | 12.0.1.0.1 |  | Allows to tell that a task stage is opened for timesheets.
 [project_timesheet_holidays_integrity](project_timesheet_holidays_integrity/) | 12.0.1.0.1 |  | Ensures and restores integrity of Leaves and Timesheets data
@@ -2390,27 +2390,27 @@ addon | version | maintainers | summary
 [hr_employee_medical_examination](hr_employee_medical_examination/) | 12.0.1.0.0 |  | Adds information about employee's medical examinations
 [hr_employee_partner_external](hr_employee_partner_external/) | 12.0.1.0.0 |  | Associate an external Partner to Employee
 [hr_employee_phone_extension](hr_employee_phone_extension/) | 12.0.1.0.0 |  | Employee Phone Extension
-[hr_employee_ppe](hr_employee_ppe/) | 12.0.1.1.1 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) [![eduaparicio](https://github.com/eduaparicio.png?size=30px)](https://github.com/eduaparicio) | Personal Protective Equipment (PPE) Management
+[hr_employee_ppe](hr_employee_ppe/) | 12.0.1.1.1 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> <a href='https://github.com/eduaparicio'><img src='https://github.com/eduaparicio.png' width='32' height='32' style='border-radius:50%;' alt='eduaparicio'/></a> | Personal Protective Equipment (PPE) Management
 [hr_employee_relative](hr_employee_relative/) | 12.0.1.1.0 |  | Allows storing information about employee's family
 [hr_employee_service](hr_employee_service/) | 12.0.1.0.1 |  | Employee service information & duration
 [hr_employee_service_contract](hr_employee_service_contract/) | 12.0.1.0.1 |  | Employee service information & duration based on employee's contracts
 [hr_employee_social_media](hr_employee_social_media/) | 12.0.1.0.0 |  | Employee Social Media
 [hr_employee_ssn](hr_employee_ssn/) | 12.0.1.0.0 |  | View/edit employee's SSN & SIN fields
-[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 12.0.1.3.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Employee Advance and Clearing
+[hr_expense_advance_clearing](hr_expense_advance_clearing/) | 12.0.1.3.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Employee Advance and Clearing
 [hr_expense_advance_clearing_consolidation](hr_expense_advance_clearing_consolidation/) | 12.0.1.0.0 |  | HR Expense Advance Clearing Consolidation
 [hr_expense_advance_clearing_sequence](hr_expense_advance_clearing_sequence/) | 12.0.1.0.0 |  | HR Expense Advance Clearing Sequence
-[hr_expense_analytic_require](hr_expense_analytic_require/) | 12.0.1.0.0 | [![Khalid-SerpentCS](https://github.com/Khalid-SerpentCS.png?size=30px)](https://github.com/Khalid-SerpentCS) | This module allows you to make the analytic account on an expense a required field.
+[hr_expense_analytic_require](hr_expense_analytic_require/) | 12.0.1.0.0 | <a href='https://github.com/Khalid-SerpentCS'><img src='https://github.com/Khalid-SerpentCS.png' width='32' height='32' style='border-radius:50%;' alt='Khalid-SerpentCS'/></a> | This module allows you to make the analytic account on an expense a required field.
 [hr_expense_cancel](hr_expense_cancel/) | 12.0.1.0.2 |  | Hr expense cancel
 [hr_expense_invoice](hr_expense_invoice/) | 12.0.2.0.3 |  | Supplier invoices on HR expenses
-[hr_expense_journal](hr_expense_journal/) | 12.0.1.0.0 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Set the Journal for the payment type used to pay the expense
+[hr_expense_journal](hr_expense_journal/) | 12.0.1.0.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Set the Journal for the payment type used to pay the expense
 [hr_expense_payment_difference](hr_expense_payment_difference/) | 12.0.1.1.0 |  | Payment Difference on HR expenses
 [hr_expense_petty_cash](hr_expense_petty_cash/) | 12.0.1.2.0 |  | Petty Cash
 [hr_expense_petty_cash_sequence](hr_expense_petty_cash_sequence/) | 12.0.1.0.0 |  | HR Expense Petty Cash Sequence
 [hr_expense_portal](hr_expense_portal/) | 12.0.1.0.1 |  | Show current expense in a website.
-[hr_expense_receipt_require](hr_expense_receipt_require/) | 12.0.1.0.1 | [![Khalid-SerpentCS](https://github.com/Khalid-SerpentCS.png?size=30px)](https://github.com/Khalid-SerpentCS) | This module allows you to define expense products that requires a receipt to be submitted.
+[hr_expense_receipt_require](hr_expense_receipt_require/) | 12.0.1.0.1 | <a href='https://github.com/Khalid-SerpentCS'><img src='https://github.com/Khalid-SerpentCS.png' width='32' height='32' style='border-radius:50%;' alt='Khalid-SerpentCS'/></a> | This module allows you to define expense products that requires a receipt to be submitted.
 [hr_expense_sequence](hr_expense_sequence/) | 12.0.1.0.0 |  | HR expense sequence
-[hr_expense_tier_validation](hr_expense_tier_validation/) | 12.0.1.0.0 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Expense Tier Validation
-[hr_expense_type](hr_expense_type/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Ability to add type in expenses.
+[hr_expense_tier_validation](hr_expense_tier_validation/) | 12.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Expense Tier Validation
+[hr_expense_type](hr_expense_type/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Ability to add type in expenses.
 [hr_experience](hr_experience/) | 12.0.1.0.0 |  | Experience Management
 [hr_holidays_accrual_advanced](hr_holidays_accrual_advanced/) | 12.0.1.0.2 |  | Advanced accrual leaves allocation
 [hr_holidays_credit](hr_holidays_credit/) | 12.0.1.1.0 |  | Enable negative leave balance for employees
@@ -2428,7 +2428,7 @@ addon | version | maintainers | summary
 [hr_payslip_change_state](hr_payslip_change_state/) | 12.0.1.0.0 |  | Change the state of many payslips at a time
 [hr_period](hr_period/) | 12.0.1.0.1 |  | Add payroll periods
 [hr_personal_equipment_request](hr_personal_equipment_request/) | 12.0.1.0.0 |  | This addon allows to manage employee personal equipment
-[hr_recruitment_security](hr_recruitment_security/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | See only your documents in recruitment
+[hr_recruitment_security](hr_recruitment_security/) | 12.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | See only your documents in recruitment
 [hr_skill](hr_skill/) | 12.0.1.2.0 |  | Manage your employee skills
 [hr_worked_days_from_timesheet](hr_worked_days_from_timesheet/) | 12.0.1.0.0 |  | Adds a button to import worked days from timesheet.
 [resource_hook](resource_hook/) | 12.0.1.0.2 |  | Extends the resource with hooks to standard methods.
@@ -2502,13 +2502,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_bill_line_distribution](account_bill_line_distribution/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Distribute AP Invoices across multiple companies
-[account_invoice_consolidated](account_invoice_consolidated/) | 12.0.1.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![swapnesh-serpentcs](https://github.com/swapnesh-serpentcs.png?size=30px)](https://github.com/swapnesh-serpentcs) | Consolidate your invoices across companies
+[account_bill_line_distribution](account_bill_line_distribution/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Distribute AP Invoices across multiple companies
+[account_invoice_consolidated](account_invoice_consolidated/) | 12.0.1.1.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/swapnesh-serpentcs'><img src='https://github.com/swapnesh-serpentcs.png' width='32' height='32' style='border-radius:50%;' alt='swapnesh-serpentcs'/></a> | Consolidate your invoices across companies
 [account_invoice_inter_company](account_invoice_inter_company/) | 12.0.2.1.3 |  | Intercompany invoice rules
-[account_move_multi_company](account_move_multi_company/) | 12.0.1.0.3 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allow to transfer amount to other companies
+[account_move_multi_company](account_move_multi_company/) | 12.0.1.0.3 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Allow to transfer amount to other companies
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 12.0.1.0.1 |  | This module adds a wizard to create companies easily
-[account_payment_other_company](account_payment_other_company/) | 12.0.1.2.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Create Payments for Other Companies
-[base_multi_company](base_multi_company/) | 12.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Provides a base for adding multi-company support to models.
+[account_payment_other_company](account_payment_other_company/) | 12.0.1.2.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Create Payments for Other Companies
+[base_multi_company](base_multi_company/) | 12.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 [calendar_event_multi_company](calendar_event_multi_company/) | 12.0.1.0.0 |  | This module add multi-company management to calendar events
 [calendar_event_type_multi_company](calendar_event_type_multi_company/) | 12.0.1.0.0 |  | This module add multi-company management to calendar event type
 [company_dependent_attribute](company_dependent_attribute/) | 12.0.1.0.0 |  | Display company dependent attribute on fields
@@ -2516,15 +2516,15 @@ addon | version | maintainers | summary
 [crm_lost_reason_multi_company](crm_lost_reason_multi_company/) | 12.0.1.0.0 |  | This module add multi-company management to crm lost reason
 [crm_stage_multi_company](crm_stage_multi_company/) | 12.0.1.0.0 |  | This module adds support for multi company on crm stage.
 [ir_filters_multi_company](ir_filters_multi_company/) | 12.0.1.0.0 |  | This module add multi-company management to user-defined filters
-[mail_multicompany](mail_multicompany/) | 12.0.0.1.2 | [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) | Email Gateway Multi company
-[mail_template_multi_company](mail_template_multi_company/) | 12.0.1.0.1 | [![Olivier-LAURENT](https://github.com/Olivier-LAURENT.png?size=30px)](https://github.com/Olivier-LAURENT) | Mail Template Multi Company
+[mail_multicompany](mail_multicompany/) | 12.0.0.1.2 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Email Gateway Multi company
+[mail_template_multi_company](mail_template_multi_company/) | 12.0.1.0.1 | <a href='https://github.com/Olivier-LAURENT'><img src='https://github.com/Olivier-LAURENT.png' width='32' height='32' style='border-radius:50%;' alt='Olivier-LAURENT'/></a> | Mail Template Multi Company
 [partner_multi_company](partner_multi_company/) | 12.0.2.0.1 |  | Select individually the partner visibility on each company
-[pos_restaurant_multi_company](pos_restaurant_multi_company/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on PoS Restaurant.
-[product_category_company_favorite](product_category_company_favorite/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Possilibity to set favorite product categories per company
+[pos_restaurant_multi_company](pos_restaurant_multi_company/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | This module adds support for multi company on PoS Restaurant.
+[product_category_company_favorite](product_category_company_favorite/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Possilibity to set favorite product categories per company
 [product_intercompany_account](product_intercompany_account/) | 12.0.1.0.4 |  | Change the income and COGS accounts in intercompany transactions
 [product_multi_company](product_multi_company/) | 12.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 12.0.1.0.1 |  | Product Tax Multi Company Default
-[project_multi_company](project_multi_company/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | This module adds support for multi company on Project Module.
+[project_multi_company](project_multi_company/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | This module adds support for multi company on Project Module.
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 12.0.1.3.2 |  | Intercompany PO/SO rules
 [res_company_active](res_company_active/) | 12.0.1.0.0 |  | Add the 'active' feature on company model
 [res_company_category](res_company_category/) | 12.0.1.0.0 |  | Company Categories
@@ -2643,10 +2643,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_bank_statement_import_coda](account_bank_statement_import_coda/) | 12.0.1.0.1 |  | Import CODA Bank Statement
-[companyweb_base](companyweb_base/) | 12.0.1.1.2 | [![xavier-bouquiaux](https://github.com/xavier-bouquiaux.png?size=30px)](https://github.com/xavier-bouquiaux) | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
+[companyweb_base](companyweb_base/) | 12.0.1.1.2 | <a href='https://github.com/xavier-bouquiaux'><img src='https://github.com/xavier-bouquiaux.png' width='32' height='32' style='border-radius:50%;' alt='xavier-bouquiaux'/></a> | Know who you are dealing with. Enhance Odoo partner data from companyweb.be.
 [l10n_be_mis_reports](l10n_be_mis_reports/) | 12.0.1.0.1 |  | MIS Builder templates for the Belgium P&L, Balance Sheets and VAT Declaration
 [l10n_be_mis_reports_xml](l10n_be_mis_reports_xml/) | 12.0.1.0.1 |  | Exports MIS Builder templates VAT Declaration as XML to load on the administration websites.
-[l10n_be_national_number](l10n_be_national_number/) | 12.0.1.0.0 | [![victor-champonnois](https://github.com/victor-champonnois.png?size=30px)](https://github.com/victor-champonnois) | Belgian National Number
+[l10n_be_national_number](l10n_be_national_number/) | 12.0.1.0.0 | <a href='https://github.com/victor-champonnois'><img src='https://github.com/victor-champonnois.png' width='32' height='32' style='border-radius:50%;' alt='victor-champonnois'/></a> | Belgian National Number
 [l10n_be_partner_kbo_bce](l10n_be_partner_kbo_bce/) | 12.0.1.0.1 |  | Belgium - KBO/BCE numbers
 [l10n_be_vat_reports](l10n_be_vat_reports/) | 12.0.2.0.3 |  | Belgium VAT Reports
 
@@ -2709,26 +2709,26 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[connector_acp](connector_acp/) | 12.0.3.0.2 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Get your documents signed by an Authorized Certification Provider
-[connector_acp_ftp](connector_acp_ftp/) | 12.0.1.0.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Support FTP protocol as a connector backend.
-[connector_dicom](connector_dicom/) | 12.0.1.0.2 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Get and store financial score from Dicom
-[connector_dicom_crm](connector_dicom_crm/) | 12.0.1.0.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Get and store the Dicom score of your leads
-[l10n_cl_chart_of_account](l10n_cl_chart_of_account/) | 12.0.1.0.1 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Chile Localization Chart Account SII
-[l10n_cl_currency_rate_sbif](l10n_cl_currency_rate_sbif/) | 12.0.2.0.0 | [![danisan](https://github.com/danisan.png?size=30px)](https://github.com/danisan) | Update UF, UTM and US Dollar exchange rates using SBIF
-[l10n_cl_etd](l10n_cl_etd/) | 12.0.1.1.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Sign and send documents to SII.
-[l10n_cl_etd_account](l10n_cl_etd_account/) | 12.0.2.1.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Sign your invoices and send them to SII.
-[l10n_cl_etd_stock](l10n_cl_etd_stock/) | 12.0.1.2.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Sign your delivery orders and send them to SII.
-[l10n_cl_etd_xerox](l10n_cl_etd_xerox/) | 12.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Use Xerox electronic document communication.
-[l10n_cl_etd_xerox_fsmroute](l10n_cl_etd_xerox_fsmroute/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Generate electronic documents for FSM Day routes.
-[l10n_cl_invoicing_policy](l10n_cl_invoicing_policy/) | 12.0.1.0.2 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Ticket, Invoice or Electronic Guide
-[l10n_cl_product](l10n_cl_product/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage product codes for electronic invoicing
-[l10n_cl_sii](l10n_cl_sii/) | 12.0.1.0.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Provides the Settings > SII menuitem
-[l10n_cl_sii_activity](l10n_cl_sii_activity/) | 12.0.1.2.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Set the SII Activity on Partners
-[l10n_cl_sii_folio](l10n_cl_sii_folio/) | 12.0.1.2.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Sign your documents and send them to SII.
-[l10n_cl_sii_reference](l10n_cl_sii_reference/) | 12.0.1.0.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Store document references using SII nomenclature
-[l10n_cl_sii_reference_account](l10n_cl_sii_reference_account/) | 12.0.1.1.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Store document references using SII nomenclature
-[l10n_cl_toponym](l10n_cl_toponym/) | 12.0.1.3.1 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | Cities, States and Regions of Chile
-[res_partner_email_etd](res_partner_email_etd/) | 12.0.1.0.0 | [![nelsonramirezs](https://github.com/nelsonramirezs.png?size=30px)](https://github.com/nelsonramirezs) | To receive Electronic Tax Documents
+[connector_acp](connector_acp/) | 12.0.3.0.2 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Get your documents signed by an Authorized Certification Provider
+[connector_acp_ftp](connector_acp_ftp/) | 12.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Support FTP protocol as a connector backend.
+[connector_dicom](connector_dicom/) | 12.0.1.0.2 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Get and store financial score from Dicom
+[connector_dicom_crm](connector_dicom_crm/) | 12.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Get and store the Dicom score of your leads
+[l10n_cl_chart_of_account](l10n_cl_chart_of_account/) | 12.0.1.0.1 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Chile Localization Chart Account SII
+[l10n_cl_currency_rate_sbif](l10n_cl_currency_rate_sbif/) | 12.0.2.0.0 | <a href='https://github.com/danisan'><img src='https://github.com/danisan.png' width='32' height='32' style='border-radius:50%;' alt='danisan'/></a> | Update UF, UTM and US Dollar exchange rates using SBIF
+[l10n_cl_etd](l10n_cl_etd/) | 12.0.1.1.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Sign and send documents to SII.
+[l10n_cl_etd_account](l10n_cl_etd_account/) | 12.0.2.1.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Sign your invoices and send them to SII.
+[l10n_cl_etd_stock](l10n_cl_etd_stock/) | 12.0.1.2.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Sign your delivery orders and send them to SII.
+[l10n_cl_etd_xerox](l10n_cl_etd_xerox/) | 12.0.1.0.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Use Xerox electronic document communication.
+[l10n_cl_etd_xerox_fsmroute](l10n_cl_etd_xerox_fsmroute/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Generate electronic documents for FSM Day routes.
+[l10n_cl_invoicing_policy](l10n_cl_invoicing_policy/) | 12.0.1.0.2 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Ticket, Invoice or Electronic Guide
+[l10n_cl_product](l10n_cl_product/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage product codes for electronic invoicing
+[l10n_cl_sii](l10n_cl_sii/) | 12.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Provides the Settings > SII menuitem
+[l10n_cl_sii_activity](l10n_cl_sii_activity/) | 12.0.1.2.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Set the SII Activity on Partners
+[l10n_cl_sii_folio](l10n_cl_sii_folio/) | 12.0.1.2.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Sign your documents and send them to SII.
+[l10n_cl_sii_reference](l10n_cl_sii_reference/) | 12.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Store document references using SII nomenclature
+[l10n_cl_sii_reference_account](l10n_cl_sii_reference_account/) | 12.0.1.1.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Store document references using SII nomenclature
+[l10n_cl_toponym](l10n_cl_toponym/) | 12.0.1.3.1 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | Cities, States and Regions of Chile
+[res_partner_email_etd](res_partner_email_etd/) | 12.0.1.0.0 | <a href='https://github.com/nelsonramirezs'><img src='https://github.com/nelsonramirezs.png' width='32' height='32' style='border-radius:50%;' alt='nelsonramirezs'/></a> | To receive Electronic Tax Documents
 
 [//]: # (end addons)
 
@@ -2922,8 +2922,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_ee_accounting](l10n_ee_accounting/) | 12.0.1.2.0 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Estonian accounting localization
-[l10n_ee_reporting](l10n_ee_reporting/) | 12.0.1.2.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Estonian reporting localization
+[l10n_ee_accounting](l10n_ee_accounting/) | 12.0.1.2.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Estonian accounting localization
+[l10n_ee_reporting](l10n_ee_reporting/) | 12.0.1.2.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Estonian reporting localization
 
 [//]: # (end addons)
 
@@ -3024,11 +3024,11 @@ addon | version | maintainers | summary
 [account_banking_fr_lcr](account_banking_fr_lcr/) | 12.0.1.0.0 |  | Create French LCR CFONB files
 [l10n_fr_account_invoice_facturx](l10n_fr_account_invoice_facturx/) | 12.0.1.0.0 |  | France-specific module to generate Factur-X invoices
 [l10n_fr_account_tax_unece](l10n_fr_account_tax_unece/) | 12.0.1.0.0 |  | Auto-configure UNECE params on French taxes
-[l10n_fr_business_document_import](l10n_fr_business_document_import/) | 12.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adapt the module base_business_document_import for France
-[l10n_fr_chorus_account](l10n_fr_chorus_account/) | 12.0.1.2.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
-[l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 12.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant Factur-X invoices
-[l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 12.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Set public market on sale orders
-[l10n_fr_chorus_ubl](l10n_fr_chorus_ubl/) | 12.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Generate Chorus-compliant UBL e-invoices
+[l10n_fr_business_document_import](l10n_fr_business_document_import/) | 12.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adapt the module base_business_document_import for France
+[l10n_fr_chorus_account](l10n_fr_chorus_account/) | 12.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant e-invoices and transmit them via the Chorus API
+[l10n_fr_chorus_facturx](l10n_fr_chorus_facturx/) | 12.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant Factur-X invoices
+[l10n_fr_chorus_sale](l10n_fr_chorus_sale/) | 12.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Set public market on sale orders
+[l10n_fr_chorus_ubl](l10n_fr_chorus_ubl/) | 12.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Generate Chorus-compliant UBL e-invoices
 [l10n_fr_cog](l10n_fr_cog/) | 12.0.1.0.0 |  | Add Code Officiel Géographique (COG) on countries
 [l10n_fr_das2](l10n_fr_das2/) | 12.0.1.0.1 |  | DAS2 (France)
 [l10n_fr_department](l10n_fr_department/) | 12.0.1.0.3 |  | Populate Database with French Departments (Départements)
@@ -3194,48 +3194,48 @@ addon | version | maintainers | summary
 [account_invoice_report_ddt_group](account_invoice_report_ddt_group/) | 12.0.1.0.5 |  | Raggruppa le righe fattura per DDT che le ha generate, mostrando eventualmente i lotti/seriali
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 12.0.1.8.1 |  | Allow to create the 'VAT Statement'.
 [assets_management](assets_management/) | 12.0.1.0.2 |  | Gestione Cespiti
-[currency_rate_update_boi](currency_rate_update_boi/) | 12.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Update exchange rates using www.bancaditalia.it
-[fiscal_epos_print](fiscal_epos_print/) | 12.0.2.0.3 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
+[currency_rate_update_boi](currency_rate_update_boi/) | 12.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Update exchange rates using www.bancaditalia.it
+[fiscal_epos_print](fiscal_epos_print/) | 12.0.2.0.3 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [fiscal_epos_print_fiscalcode](fiscal_epos_print_fiscalcode/) | 12.0.1.1.0 |  | Consente di includere il codice fiscale negli scontrini
-[fiscal_epos_print_meal_voucher](fiscal_epos_print_meal_voucher/) | 12.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Consente di controllare e comunicare al registratore telematico le informazioni relative ai ticket
+[fiscal_epos_print_meal_voucher](fiscal_epos_print_meal_voucher/) | 12.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Consente di controllare e comunicare al registratore telematico le informazioni relative ai ticket
 [l10n_it_abicab](l10n_it_abicab/) | 12.0.1.1.1 |  | Base Bank ABI/CAB codes
 [l10n_it_accompanying_invoice](l10n_it_accompanying_invoice/) | 12.0.1.0.0 |  | Stampa della fattura accompagnatoria
 [l10n_it_account](l10n_it_account/) | 12.0.1.4.5 |  | Modulo base usato come dipendenza di altri moduli contabili
-[l10n_it_account_balance_report](l10n_it_account_balance_report/) | 12.0.1.1.0 | [![SilvioGregorini](https://github.com/SilvioGregorini.png?size=30px)](https://github.com/SilvioGregorini) | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
+[l10n_it_account_balance_report](l10n_it_account_balance_report/) | 12.0.1.1.0 | <a href='https://github.com/SilvioGregorini'><img src='https://github.com/SilvioGregorini.png' width='32' height='32' style='border-radius:50%;' alt='SilvioGregorini'/></a> | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_account_stamp](l10n_it_account_stamp/) | 12.0.1.4.0 |  | Gestione automatica dell'imposta di bollo
-[l10n_it_account_stamp_ddt](l10n_it_account_stamp_ddt/) | 12.0.1.0.1 | [![tafaRU](https://github.com/tafaRU.png?size=30px)](https://github.com/tafaRU) | Modulo ponte tra imposta di bollo e DDT
-[l10n_it_account_stamp_sale](l10n_it_account_stamp_sale/) | 12.0.1.0.2 | [![tafaRU](https://github.com/tafaRU.png?size=30px)](https://github.com/tafaRU) | Modulo ponte tra imposta di bollo e vendite
+[l10n_it_account_stamp_ddt](l10n_it_account_stamp_ddt/) | 12.0.1.0.1 | <a href='https://github.com/tafaRU'><img src='https://github.com/tafaRU.png' width='32' height='32' style='border-radius:50%;' alt='tafaRU'/></a> | Modulo ponte tra imposta di bollo e DDT
+[l10n_it_account_stamp_sale](l10n_it_account_stamp_sale/) | 12.0.1.0.2 | <a href='https://github.com/tafaRU'><img src='https://github.com/tafaRU.png' width='32' height='32' style='border-radius:50%;' alt='tafaRU'/></a> | Modulo ponte tra imposta di bollo e vendite
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 12.0.2.1.1 |  | Italian Localisation - Natura delle aliquote IVA
 [l10n_it_asset_history_import](l10n_it_asset_history_import/) | 12.0.1.0.0 |  | Cespiti: importazione storico dati
 [l10n_it_ateco](l10n_it_ateco/) | 12.0.1.0.1 |  | ITA - Codici Ateco
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 12.0.1.0.1 |  | ITA - Bolle doganali
 [l10n_it_causali_pagamento](l10n_it_causali_pagamento/) | 12.0.2.0.0 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
 [l10n_it_central_journal](l10n_it_central_journal/) | 12.0.1.1.4 |  | ITA - Libro giornale
-[l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 12.0.1.0.0 | [![MarcoCalcagni](https://github.com/MarcoCalcagni.png?size=30px)](https://github.com/MarcoCalcagni) [![Borruso](https://github.com/Borruso.png?size=30px)](https://github.com/Borruso) | ITA - Libro giornale - Reportlab
+[l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 12.0.1.0.0 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | ITA - Libro giornale - Reportlab
 [l10n_it_codici_carica](l10n_it_codici_carica/) | 12.0.1.0.2 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
 [l10n_it_corrispettivi](l10n_it_corrispettivi/) | 12.0.1.1.8 |  | Italian Localization - Ricevute
 [l10n_it_corrispettivi_fatturapa_out](l10n_it_corrispettivi_fatturapa_out/) | 12.0.1.0.1 |  | Modulo per integrare ricevute e fatturazione elettronica
 [l10n_it_corrispettivi_sale](l10n_it_corrispettivi_sale/) | 12.0.1.0.3 |  | Modulo per integrare le ricevute in Odoo con gli ordini di vendita.
 [l10n_it_ddt](l10n_it_ddt/) | 12.0.1.10.1 |  | Documento di Trasporto
 [l10n_it_ddt_mrp_kit](l10n_it_ddt_mrp_kit/) | 12.0.1.0.0 |  | Fatturazione Kit dal Documento di Trasporto
-[l10n_it_delivery_note](l10n_it_delivery_note/) | 12.0.1.2.1 | [![As400it](https://github.com/As400it.png?size=30px)](https://github.com/As400it) | Crea, gestisce e fattura i DDT partendo dalle consegne
-[l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 12.0.1.0.1 | [![As400it](https://github.com/As400it.png?size=30px)](https://github.com/As400it) | Crea e gestisce tabelle principali per gestire i DDT
-[l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 12.0.1.0.0 | [![As400it](https://github.com/As400it.png?size=30px)](https://github.com/As400it) [![TheMule71](https://github.com/TheMule71.png?size=30px)](https://github.com/TheMule71) | Crea i DDT partendo da gruppi di prelievi
-[l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 12.0.1.0.1 | [![As400it](https://github.com/As400it.png?size=30px)](https://github.com/As400it) [![andreampiovesana](https://github.com/andreampiovesana.png?size=30px)](https://github.com/andreampiovesana) | Crea collegamento tra i DDT e ordine di vendita
+[l10n_it_delivery_note](l10n_it_delivery_note/) | 12.0.1.2.1 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> | Crea, gestisce e fattura i DDT partendo dalle consegne
+[l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 12.0.1.0.1 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> | Crea e gestisce tabelle principali per gestire i DDT
+[l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 12.0.1.0.0 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> <a href='https://github.com/TheMule71'><img src='https://github.com/TheMule71.png' width='32' height='32' style='border-radius:50%;' alt='TheMule71'/></a> | Crea i DDT partendo da gruppi di prelievi
+[l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 12.0.1.0.1 | <a href='https://github.com/As400it'><img src='https://github.com/As400it.png' width='32' height='32' style='border-radius:50%;' alt='As400it'/></a> <a href='https://github.com/andreampiovesana'><img src='https://github.com/andreampiovesana.png' width='32' height='32' style='border-radius:50%;' alt='andreampiovesana'/></a> | Crea collegamento tra i DDT e ordine di vendita
 [l10n_it_dichiarazione_intento](l10n_it_dichiarazione_intento/) | 12.0.0.2.1 |  | Gestione dichiarazioni di intento
 [l10n_it_esigibilita_iva](l10n_it_esigibilita_iva/) | 12.0.2.0.0 |  | Italian Localization - Esigibilita' IVA
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 12.0.3.0.3 |  | Fatture elettroniche
-[l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 12.0.1.0.1 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
+[l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 12.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 12.0.3.1.10 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 12.0.1.0.2 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
-[l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 12.0.1.2.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Modulo ponte tra e-fattura in acquisto e inversione contabile
+[l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 12.0.1.2.0 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 12.0.3.2.3 |  | Emissione fatture elettroniche
-[l10n_it_fatturapa_out_ddt](l10n_it_fatturapa_out_ddt/) | 12.0.1.4.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Modulo ponte tra emissione fatture elettroniche e DDT
+[l10n_it_fatturapa_out_ddt](l10n_it_fatturapa_out_ddt/) | 12.0.1.4.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Modulo ponte tra emissione fatture elettroniche e DDT
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 12.0.1.0.1 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_fd](l10n_it_fatturapa_out_fd/) | 12.0.1.0.0 |  | Emissione di fattura elettronica con sconto fisso
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 12.0.1.0.0 |  | OSS in fatturapa
-[l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 12.0.1.1.2 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
-[l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
+[l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 12.0.1.1.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
+[l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 12.0.2.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
 [l10n_it_fatturapa_out_triple_discount](l10n_it_fatturapa_out_triple_discount/) | 12.0.2.0.1 |  | Modulo ponte tra emissione fatture elettroniche e sconto triplo
 [l10n_it_fatturapa_out_welfare](l10n_it_fatturapa_out_welfare/) | 12.0.1.0.2 |  | Registrazione della cassa previdenziale nelle fatture elettroniche in uscita
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 12.0.2.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
@@ -3246,7 +3246,7 @@ addon | version | maintainers | summary
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 12.0.2.0.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 12.0.1.1.5 |  | Italian Localization - Fiscal Code
 [l10n_it_fiscalcode_crm](l10n_it_fiscalcode_crm/) | 12.0.1.0.2 |  | Aggiunge il campo codice fiscale ai contatti/opportunità
-[l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 12.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Mostra il codice fiscale del cliente nella stampa del preventivo
+[l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 12.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Mostra il codice fiscale del cliente nella stampa del preventivo
 [l10n_it_intrastat](l10n_it_intrastat/) | 12.0.1.3.0 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 12.0.1.4.1 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_invoices_data_communication](l10n_it_invoices_data_communication/) | 12.0.1.3.2 |  | Comunicazione dati fatture (c.d. "nuovo spesometro" o "esterometro")
@@ -3255,13 +3255,13 @@ addon | version | maintainers | summary
 [l10n_it_location_nuts](l10n_it_location_nuts/) | 12.0.1.0.2 |  | Opzioni NUTS specifiche per l'Italia
 [l10n_it_mis_reports_pl_bs](l10n_it_mis_reports_pl_bs/) | 12.0.1.0.1 |  | Modelli "MIS Builder" per il conto economico e lo stato patrimoniale
 [l10n_it_pec](l10n_it_pec/) | 12.0.1.0.1 |  | Aggiunge il campo email PEC al partner
-[l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 12.0.1.0.2 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Gestione dati fattura elettronica del cliente all'interno dell'interfaccia del POS
-[l10n_it_pos_fatturapa_send_directly](l10n_it_pos_fatturapa_send_directly/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Inviare automaticamente a SDI la fattura elettronica dal POS
-[l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 12.0.1.0.1 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
+[l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 12.0.1.0.2 | <a href='https://github.com/robyf70'><img src='https://github.com/robyf70.png' width='32' height='32' style='border-radius:50%;' alt='robyf70'/></a> | Gestione dati fattura elettronica del cliente all'interno dell'interfaccia del POS
+[l10n_it_pos_fatturapa_send_directly](l10n_it_pos_fatturapa_send_directly/) | 12.0.2.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Inviare automaticamente a SDI la fattura elettronica dal POS
+[l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 12.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS
 [l10n_it_rea](l10n_it_rea/) | 12.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 12.0.1.3.2 |  | Inversione contabile
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 12.0.1.9.0 |  | Ricevute bancarie
-[l10n_it_sdi_channel](l10n_it_sdi_channel/) | 12.0.2.3.0 | [![sergiocorato](https://github.com/sergiocorato.png?size=30px)](https://github.com/sergiocorato) | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
+[l10n_it_sdi_channel](l10n_it_sdi_channel/) | 12.0.2.3.0 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 12.0.1.0.2 |  | Split Payment
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 12.0.1.2.5 |  | ITA - Registri IVA
 [l10n_it_vat_registries_split_payment](l10n_it_vat_registries_split_payment/) | 12.0.1.0.2 |  | Modulo di congiunzione tra registri IVA e scissione dei pagamenti
@@ -3433,18 +3433,18 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_nl_account_tax_unece](l10n_nl_account_tax_unece/) | 12.0.1.0.0 |  | Auto-configure UNECE params on Dutch taxes
 [l10n_nl_bank](l10n_nl_bank/) | 12.0.1.0.0 |  | Import all Dutch banks with BIC code
-[l10n_nl_bsn](l10n_nl_bsn/) | 12.0.1.1.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Burgerservicenummer (BSN) for Partners
+[l10n_nl_bsn](l10n_nl_bsn/) | 12.0.1.1.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Burgerservicenummer (BSN) for Partners
 [l10n_nl_country_states](l10n_nl_country_states/) | 12.0.1.1.0 |  | Dutch country states (Provincies)
 [l10n_nl_dutch_company_type](l10n_nl_dutch_company_type/) | 12.0.2.1.0 |  | Adds the Dutch company types
 [l10n_nl_kvk](l10n_nl_kvk/) | 12.0.2.0.1 |  | Autocomplete company info using KvK API Search
 [l10n_nl_location_nuts](l10n_nl_location_nuts/) | 12.0.1.0.0 |  | NUTS specific options for Netherlands
-[l10n_nl_mis_reports](l10n_nl_mis_reports/) | 12.0.1.1.0 | [![hbrunn](https://github.com/hbrunn.png?size=30px)](https://github.com/hbrunn) | Profit & Loss / Balance sheet for the Netherlands
+[l10n_nl_mis_reports](l10n_nl_mis_reports/) | 12.0.1.1.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet for the Netherlands
 [l10n_nl_openkvk](l10n_nl_openkvk/) | 12.0.1.0.0 |  | Autocomplete company info using OpenKvK API
 [l10n_nl_partner_name](l10n_nl_partner_name/) | 12.0.1.0.0 |  | Dutch partner names
 [l10n_nl_partner_salutation](l10n_nl_partner_salutation/) | 12.0.1.0.0 |  | Full salutation for partners, Dutch style
 [l10n_nl_postcode](l10n_nl_postcode/) | 12.0.1.0.0 |  | Dutch postcode validation for Partners
-[l10n_nl_postcodeapi](l10n_nl_postcodeapi/) | 12.0.2.0.0 | [![NL66278](https://github.com/NL66278.png?size=30px)](https://github.com/NL66278) | Autocomplete Dutch addresses using PostcodeApi.nu
-[l10n_nl_tax_invoice_basis](l10n_nl_tax_invoice_basis/) | 12.0.1.0.0 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Enable invoice basis on tax according to the Dutch law
+[l10n_nl_postcodeapi](l10n_nl_postcodeapi/) | 12.0.2.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Autocomplete Dutch addresses using PostcodeApi.nu
+[l10n_nl_tax_invoice_basis](l10n_nl_tax_invoice_basis/) | 12.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Enable invoice basis on tax according to the Dutch law
 [l10n_nl_tax_statement](l10n_nl_tax_statement/) | 12.0.2.0.4 |  | Netherlands BTW Statement
 [l10n_nl_tax_statement_icp](l10n_nl_tax_statement_icp/) | 12.0.1.1.0 |  | Netherlands ICP Statement
 [l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 12.0.1.1.1 |  | Export XAF auditfiles for Dutch tax authorities
@@ -3594,39 +3594,39 @@ addon | version | maintainers | summary
 [account_promissory_note_bankia](account_promissory_note_bankia/) | 12.0.1.0.0 |  | Impresión de pagaré Bankia A4
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 12.0.1.1.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_deutschebank_es](account_promissory_note_deutschebank_es/) | 12.0.1.0.0 |  | Impresión de pagaré Deutsche Bank ES A4
-[account_promissory_note_santander](account_promissory_note_santander/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Impresión de pagaré del Santander en A4
+[account_promissory_note_santander](account_promissory_note_santander/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Impresión de pagaré del Santander en A4
 [delivery_gls_asm](delivery_gls_asm/) | 12.0.1.0.8 |  | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 12.0.1.1.6 |  | Integrate SEUR webservice
-[l10n_es_account_asset](l10n_es_account_asset/) | 12.0.2.0.8 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Gestión de activos fijos para España
-[l10n_es_account_bank_statement_import_n43](l10n_es_account_bank_statement_import_n43/) | 12.0.1.0.7 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Importación de extractos bancarios españoles (Norma 43)
+[l10n_es_account_asset](l10n_es_account_asset/) | 12.0.2.0.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
+[l10n_es_account_bank_statement_import_n43](l10n_es_account_bank_statement_import_n43/) | 12.0.1.0.7 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 12.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
 [l10n_es_account_invoice_sequence](l10n_es_account_invoice_sequence/) | 12.0.1.0.2 |  | Secuencia para facturas separada de la secuencia de asientos
 [l10n_es_aeat](l10n_es_aeat/) | 12.0.3.0.0 |  | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 12.0.1.4.0 |  | AEAT modelo 111
-[l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 12.0.1.4.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 115
+[l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 12.0.1.4.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 12.0.1.3.0 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 12.0.1.3.1 |  | AEAT modelo 130
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 12.0.1.0.2 |  | AEAT modelo 190
-[l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 12.0.2.5.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 216
+[l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 12.0.2.5.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 12.0.2.2.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 12.0.5.1.0 |  | AEAT modelo 303
-[l10n_es_aeat_mod303_extra_data](l10n_es_aeat_mod303_extra_data/) | 12.0.2.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Módulo para incluir los impuestos extra en el modelo 303.
+[l10n_es_aeat_mod303_extra_data](l10n_es_aeat_mod303_extra_data/) | 12.0.2.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Módulo para incluir los impuestos extra en el modelo 303.
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 12.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 12.0.2.2.0 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 12.0.1.3.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Modelo 349 AEAT
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 12.0.1.3.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modelo 349 AEAT
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 12.0.1.0.0 |  | AEAT modelo 369
-[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 12.0.5.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | AEAT modelo 390
-[l10n_es_aeat_mod390_vat_prorate](l10n_es_aeat_mod390_vat_prorate/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | AEAT - Prorrata de IVA 390
+[l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 12.0.5.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
+[l10n_es_aeat_mod390_vat_prorate](l10n_es_aeat_mod390_vat_prorate/) | 12.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT - Prorrata de IVA 390
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 12.0.1.0.3 |  | AEAT - Comprobación de Calidad de datos identificativos
-[l10n_es_aeat_sii](l10n_es_aeat_sii/) | 12.0.1.9.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Suministro Inmediato de Información en el IVA
-[l10n_es_aeat_sii_extra_data](l10n_es_aeat_sii_extra_data/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Módulo para incluir los impuestos extra en el módulo del SII.
+[l10n_es_aeat_sii](l10n_es_aeat_sii/) | 12.0.1.9.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_extra_data](l10n_es_aeat_sii_extra_data/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Módulo para incluir los impuestos extra en el módulo del SII.
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 12.0.1.0.1 |  | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_vat_prorrate](l10n_es_aeat_vat_prorrate/) | 12.0.1.2.0 |  | AEAT - Prorrata de IVA
 [l10n_es_aeat_vat_prorrate_asset](l10n_es_aeat_vat_prorrate_asset/) | 12.0.1.0.0 |  | AEAT - Prorrata de IVA - Extensión para los activos
 [l10n_es_dua](l10n_es_dua/) | 12.0.1.2.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 12.0.1.1.2 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 12.0.1.0.1 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz con DUA
-[l10n_es_extra_data](l10n_es_extra_data/) | 12.0.4.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Datos extra de la localización española
+[l10n_es_dua_ticketbai_batuz](l10n_es_dua_ticketbai_batuz/) | 12.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Batuz con DUA
+[l10n_es_extra_data](l10n_es_extra_data/) | 12.0.4.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Datos extra de la localización española
 [l10n_es_facturae](l10n_es_facturae/) | 12.0.3.2.0 |  | Creación de Factura-e
 [l10n_es_facturae_efact](l10n_es_facturae_efact/) | 12.0.1.0.3 |  | Envío de Factura-e a e.FACT
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 12.0.1.1.1 |  | Envío de Factura-e a FACe
@@ -3634,21 +3634,21 @@ addon | version | maintainers | summary
 [l10n_es_irnr](l10n_es_irnr/) | 12.0.2.3.0 |  | Retenciones IRNR (No residentes)
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 12.0.1.0.0 |  | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 12.0.1.2.0 |  | Plantillas MIS Builder para informes contables españoles
-[l10n_es_partner](l10n_es_partner/) | 12.0.1.0.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Adaptación de los clientes, proveedores y bancos para España
+[l10n_es_partner](l10n_es_partner/) | 12.0.1.0.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 12.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_pos](l10n_es_pos/) | 12.0.2.0.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_subcontractor_certificate](l10n_es_subcontractor_certificate/) | 12.0.1.0.0 |  | Certificado de subcontratista
-[l10n_es_ticketbai](l10n_es_ticketbai/) | 12.0.2.8.2 | [![oihane](https://github.com/oihane.png?size=30px)](https://github.com/oihane) | TicketBAI - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
-[l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 12.0.2.3.8 | [![oihane](https://github.com/oihane.png?size=30px)](https://github.com/oihane) | TicketBAI - API
-[l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 12.0.1.1.3 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
-[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 12.0.1.3.4 | [![enriquemartin](https://github.com/enriquemartin.png?size=30px)](https://github.com/enriquemartin) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
-[l10n_es_ticketbai_batuz_extra_data](l10n_es_ticketbai_batuz_extra_data/) | 12.0.1.0.1 | [![xAdrianC-Kernet](https://github.com/xAdrianC-Kernet.png?size=30px)](https://github.com/xAdrianC-Kernet) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Batuz - Extra data
-[l10n_es_ticketbai_extra_data](l10n_es_ticketbai_extra_data/) | 12.0.1.0.1 | [![xAdrianC-Kernet](https://github.com/xAdrianC-Kernet.png?size=30px)](https://github.com/xAdrianC-Kernet) [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Extra data
-[l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 12.0.1.0.0 | [![Binovo](https://github.com/Binovo.png?size=30px)](https://github.com/Binovo) | TicketBAI - OSS Support
-[l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 12.0.1.0.6 | [![ao-landoo](https://github.com/ao-landoo.png?size=30px)](https://github.com/ao-landoo) | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai](l10n_es_ticketbai/) | 12.0.2.8.2 | <a href='https://github.com/oihane'><img src='https://github.com/oihane.png' width='32' height='32' style='border-radius:50%;' alt='oihane'/></a> | TicketBAI - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai_api](l10n_es_ticketbai_api/) | 12.0.2.3.8 | <a href='https://github.com/oihane'><img src='https://github.com/oihane.png' width='32' height='32' style='border-radius:50%;' alt='oihane'/></a> | TicketBAI - API
+[l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 12.0.1.1.3 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
+[l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 12.0.1.3.4 | <a href='https://github.com/enriquemartin'><img src='https://github.com/enriquemartin.png' width='32' height='32' style='border-radius:50%;' alt='enriquemartin'/></a> <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
+[l10n_es_ticketbai_batuz_extra_data](l10n_es_ticketbai_batuz_extra_data/) | 12.0.1.0.1 | <a href='https://github.com/xAdrianC-Kernet'><img src='https://github.com/xAdrianC-Kernet.png' width='32' height='32' style='border-radius:50%;' alt='xAdrianC-Kernet'/></a> <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Batuz - Extra data
+[l10n_es_ticketbai_extra_data](l10n_es_ticketbai_extra_data/) | 12.0.1.0.1 | <a href='https://github.com/xAdrianC-Kernet'><img src='https://github.com/xAdrianC-Kernet.png' width='32' height='32' style='border-radius:50%;' alt='xAdrianC-Kernet'/></a> <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Extra data
+[l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 12.0.1.0.0 | <a href='https://github.com/Binovo'><img src='https://github.com/Binovo.png' width='32' height='32' style='border-radius:50%;' alt='Binovo'/></a> | TicketBAI - OSS Support
+[l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 12.0.1.0.6 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 12.0.1.0.0 |  | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 12.0.1.7.0 |  | Libro de IVA
-[l10n_es_vat_book_extra_data](l10n_es_vat_book_extra_data/) | 12.0.1.2.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Módulo para incluir los impuestos extra en el libro de IVA.
+[l10n_es_vat_book_extra_data](l10n_es_vat_book_extra_data/) | 12.0.1.2.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Módulo para incluir los impuestos extra en el libro de IVA.
 [payment_redsys](payment_redsys/) | 12.0.2.0.1 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -3883,9 +3883,9 @@ addon | version | maintainers | summary
 [account_banking_ach_credit_transfer](account_banking_ach_credit_transfer/) | 12.0.1.0.0 |  | Create ACH files for Credit Transfers
 [account_banking_ach_direct_debit](account_banking_ach_direct_debit/) | 12.0.1.0.0 |  | Create ACH files for Direct Debit
 [l10n_us_account_profile](l10n_us_account_profile/) | 12.0.1.0.0 |  | Additional features to manage US accounting in Odoo
-[l10n_us_form_1099](l10n_us_form_1099/) | 12.0.1.2.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage 1099 Types and Suppliers
-[l10n_us_gaap](l10n_us_gaap/) | 12.0.1.1.0 | [![jbeficent](https://github.com/jbeficent.png?size=30px)](https://github.com/jbeficent) | United States Sample GAAP Chart of Accounts
-[l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 12.0.1.0.0 | [![jbeficent](https://github.com/jbeficent.png?size=30px)](https://github.com/jbeficent) | MIS Builder Templates for US Chart of Accounts
+[l10n_us_form_1099](l10n_us_form_1099/) | 12.0.1.2.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage 1099 Types and Suppliers
+[l10n_us_gaap](l10n_us_gaap/) | 12.0.1.1.0 | <a href='https://github.com/jbeficent'><img src='https://github.com/jbeficent.png' width='32' height='32' style='border-radius:50%;' alt='jbeficent'/></a> | United States Sample GAAP Chart of Accounts
+[l10n_us_gaap_mis_report](l10n_us_gaap_mis_report/) | 12.0.1.0.0 | <a href='https://github.com/jbeficent'><img src='https://github.com/jbeficent.png' width='32' height='32' style='border-radius:50%;' alt='jbeficent'/></a> | MIS Builder Templates for US Chart of Accounts
 
 [//]: # (end addons)
 
@@ -4039,12 +4039,12 @@ addon | version | maintainers | summary
 [base_gs1_barcode](base_gs1_barcode/) | 12.0.1.1.1 |  | Decoding API for GS1-128 (aka UCC/EAN-128) and GS1-Datamatrix
 [product_barcode_constraint_per_company](product_barcode_constraint_per_company/) | 12.0.1.0.1 |  | Change the product barcode constraint, allowing the same barcode for differents companies
 [product_multi_ean](product_multi_ean/) | 12.0.1.0.3 |  | Multiple EAN13 on products
-[product_supplierinfo_barcode](product_supplierinfo_barcode/) | 12.0.1.1.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Add a barcode to supplier pricelist items
+[product_supplierinfo_barcode](product_supplierinfo_barcode/) | 12.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Add a barcode to supplier pricelist items
 [stock_barcodes](stock_barcodes/) | 12.0.2.3.0 |  | It provides read barcode on stock operations.
-[stock_barcodes_automatic_entry](stock_barcodes_automatic_entry/) | 12.0.1.0.1 | [![AdriaGForgeFlow](https://github.com/AdriaGForgeFlow.png?size=30px)](https://github.com/AdriaGForgeFlow) | This module will automatically trigger the click event on a button with the class 'barcode-automatic-entry' after a barcode scanned has been processed.
+[stock_barcodes_automatic_entry](stock_barcodes_automatic_entry/) | 12.0.1.0.1 | <a href='https://github.com/AdriaGForgeFlow'><img src='https://github.com/AdriaGForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AdriaGForgeFlow'/></a> | This module will automatically trigger the click event on a button with the class 'barcode-automatic-entry' after a barcode scanned has been processed.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 12.0.1.1.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 12.0.1.0.1 |  | It provides read expiry dates from GS1 barcode on stock operations.
-[stock_barcodes_supplierinfo](stock_barcodes_supplierinfo/) | 12.0.1.0.2 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Process products searching them by supplier barcode
+[stock_barcodes_supplierinfo](stock_barcodes_supplierinfo/) | 12.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Process products searching them by supplier barcode
 [stock_inventory_barcode](stock_inventory_barcode/) | 12.0.1.0.1 |  | Add simple barcode interface on inventories
 [stock_scanner](stock_scanner/) | 12.0.1.0.3 |  | Allows managing barcode readers with simple scenarios
 
@@ -4092,10 +4092,10 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 12.0.1.0.3 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Set product cost price from updated moves
+[product_cost_price_avco_sync](product_cost_price_avco_sync/) | 12.0.1.0.3 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Set product cost price from updated moves
 [product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 12.0.1.0.0 |  | This module makes the product customer code visible in the stock moves of a picking.
 [product_supplierinfo_picking](product_supplierinfo_picking/) | 12.0.1.0.0 |  | This module makes the product supplier code visible in the stock moves of a picking.
-[product_weighable_default_weight](product_weighable_default_weight/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Set default weight on weighable product, the weight is guessed from the ratio of the unit of mesure
+[product_weighable_default_weight](product_weighable_default_weight/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Set default weight on weighable product, the weight is guessed from the ratio of the unit of mesure
 [purchase_stock_picking_restrict_cancel](purchase_stock_picking_restrict_cancel/) | 12.0.1.0.0 |  | Restrict cancellation with Purchase.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 12.0.1.0.2 |  | Add the possibility to choose one warehouse path for an order
 [stock_change_price_at_date](stock_change_price_at_date/) | 12.0.1.0.0 |  | This module allows to fill in a date in the standard wizard that changes product price. That helps accountant to add some product past values
@@ -4107,30 +4107,30 @@ addon | version | maintainers | summary
 [stock_move_line_auto_fill](stock_move_line_auto_fill/) | 12.0.2.0.3 |  | Stock Move Line auto fill
 [stock_move_manual_lot](stock_move_manual_lot/) | 12.0.1.1.0 |  | Force the user to manually select a lot
 [stock_move_quick_lot](stock_move_quick_lot/) | 12.0.1.0.1 |  | Set lot name and end date directly on picking operations
-[stock_no_negative](stock_no_negative/) | 12.0.1.2.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Disallow negative stock levels by default
-[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 12.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
+[stock_no_negative](stock_no_negative/) | 12.0.1.2.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disallow negative stock levels by default
+[stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 12.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 12.0.1.0.1 |  | Reopen cancelled pickings
-[stock_picking_backorder_strategy](stock_picking_backorder_strategy/) | 12.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Picking backordering strategies
+[stock_picking_backorder_strategy](stock_picking_backorder_strategy/) | 12.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/mgosai'><img src='https://github.com/mgosai.png' width='32' height='32' style='border-radius:50%;' alt='mgosai'/></a> | Picking backordering strategies
 [stock_picking_batch_back2draft](stock_picking_batch_back2draft/) | 12.0.1.0.0 |  | Reopen cancelled picking batches
-[stock_picking_batch_extended](stock_picking_batch_extended/) | 12.0.1.3.1 | [![gurneyalex](https://github.com/gurneyalex.png?size=30px)](https://github.com/gurneyalex) [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![i-vyshnevska](https://github.com/i-vyshnevska.png?size=30px)](https://github.com/i-vyshnevska) | Allows manage a lot of pickings in batch
-[stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 12.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Generates invoices when batch is set to Done state
+[stock_picking_batch_extended](stock_picking_batch_extended/) | 12.0.1.3.1 | <a href='https://github.com/gurneyalex'><img src='https://github.com/gurneyalex.png' width='32' height='32' style='border-radius:50%;' alt='gurneyalex'/></a> <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/i-vyshnevska'><img src='https://github.com/i-vyshnevska.png' width='32' height='32' style='border-radius:50%;' alt='i-vyshnevska'/></a> | Allows manage a lot of pickings in batch
+[stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 12.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Generates invoices when batch is set to Done state
 [stock_picking_customer_ref](stock_picking_customer_ref/) | 12.0.1.0.0 |  | This module displays the sale reference/description in the pickings
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 12.0.1.1.2 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_filter_product](stock_picking_filter_product/) | 12.0.1.0.0 |  | Show only available products based on their location
 [stock_picking_force_assign](stock_picking_force_assign/) | 12.0.1.1.0 |  | Unreserve waiting and ready pickings to reserve current picking
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 12.0.2.0.2 |  | Adds link between pickings and invoices
-[stock_picking_late_activity](stock_picking_late_activity/) | 12.0.1.0.0 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Add an scheduled action that creates late picking activities
+[stock_picking_late_activity](stock_picking_late_activity/) | 12.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Add an scheduled action that creates late picking activities
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 12.0.1.2.0 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 12.0.1.1.2 |  | Stock Picking Mass Action
 [stock_picking_operation_quick_change](stock_picking_operation_quick_change/) | 12.0.1.0.0 |  | Change location of all picking operations
 [stock_picking_package_preparation](stock_picking_package_preparation/) | 12.0.1.0.3 |  | Stock Picking Package Preparation
 [stock_picking_package_preparation_line](stock_picking_package_preparation_line/) | 12.0.1.0.2 |  | Stock Picking Package Preparation Line
-[stock_picking_product_assortment](stock_picking_product_assortment/) | 12.0.1.0.0 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Stock Picking Product Assortment
-[stock_picking_product_link](stock_picking_product_link/) | 12.0.1.1.0 | [![robinkeunen](https://github.com/robinkeunen.png?size=30px)](https://github.com/robinkeunen) | Adds a "Product" smart button on stock pickings.
+[stock_picking_product_assortment](stock_picking_product_assortment/) | 12.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Stock Picking Product Assortment
+[stock_picking_product_link](stock_picking_product_link/) | 12.0.1.1.0 | <a href='https://github.com/robinkeunen'><img src='https://github.com/robinkeunen.png' width='32' height='32' style='border-radius:50%;' alt='robinkeunen'/></a> | Adds a "Product" smart button on stock pickings.
 [stock_picking_purchase_order_link](stock_picking_purchase_order_link/) | 12.0.1.0.0 |  | Link between picking and purchase order
 [stock_picking_purchase_propagate](stock_picking_purchase_propagate/) | 12.0.1.0.0 |  | Propagate procurement group and quantity from purchase order
-[stock_picking_quick](stock_picking_quick/) | 12.0.1.0.3 | [![PierrickBrun](https://github.com/PierrickBrun.png?size=30px)](https://github.com/PierrickBrun) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Quick Stock Picking
-[stock_picking_responsible](stock_picking_responsible/) | 12.0.1.0.1 | [![robinkeunen](https://github.com/robinkeunen.png?size=30px)](https://github.com/robinkeunen) | Adds a responsible partner to the picking and subscribe them to notifications.
+[stock_picking_quick](stock_picking_quick/) | 12.0.1.0.3 | <a href='https://github.com/PierrickBrun'><img src='https://github.com/PierrickBrun.png' width='32' height='32' style='border-radius:50%;' alt='PierrickBrun'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Quick Stock Picking
+[stock_picking_responsible](stock_picking_responsible/) | 12.0.1.0.1 | <a href='https://github.com/robinkeunen'><img src='https://github.com/robinkeunen.png' width='32' height='32' style='border-radius:50%;' alt='robinkeunen'/></a> | Adds a responsible partner to the picking and subscribe them to notifications.
 [stock_picking_restrict_cancel_with_orig_move](stock_picking_restrict_cancel_with_orig_move/) | 12.0.1.0.0 |  | Restrict cancellation of dest moves according to origin.
 [stock_picking_return_lot](stock_picking_return_lot/) | 12.0.1.0.2 |  | This module don't allows you to fill up return with serial lotsfrom initial picking.
 [stock_picking_return_restricted_qty](stock_picking_return_restricted_qty/) | 12.0.1.0.1 |  | This module don't allows you to return more productsthan you had bought
@@ -4139,10 +4139,10 @@ addon | version | maintainers | summary
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 12.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 12.0.2.0.0 |  | Show returns on stock pickings
 [stock_picking_tier_validation](stock_picking_tier_validation/) | 12.0.1.0.1 |  | Extends the functionality of Transfers to support a tier validation process.
-[stock_picking_whole_scrap](stock_picking_whole_scrap/) | 12.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Create whole scrap from a picking for move lines
-[stock_production_lot_traceability](stock_production_lot_traceability/) | 12.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Drill down/up the lots produced or consumed
+[stock_picking_whole_scrap](stock_picking_whole_scrap/) | 12.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Create whole scrap from a picking for move lines
+[stock_production_lot_traceability](stock_production_lot_traceability/) | 12.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Drill down/up the lots produced or consumed
 [stock_return_request](stock_return_request/) | 12.0.1.0.2 |  | Stock Return Request
-[stock_shifting_end_of_lot](stock_shifting_end_of_lot/) | 12.0.1.0.2 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Move product lot quantity rest to another location
+[stock_shifting_end_of_lot](stock_shifting_end_of_lot/) | 12.0.1.0.2 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Move product lot quantity rest to another location
 [stock_split_picking](stock_split_picking/) | 12.0.2.0.0 |  | Split a picking in two not transferred pickings
 
 [//]: # (end addons)
@@ -4218,21 +4218,21 @@ addon | version | maintainers | summary
 [procurement_auto_create_group](procurement_auto_create_group/) | 12.0.1.0.0 |  | Allows to configure the system to propose automatically new procurement groups during the procurement run.
 [sale_stock_available_info_popup](sale_stock_available_info_popup/) | 12.0.1.0.2 |  | Adds an 'Available to promise' quantity to the popover shown in sale order line that display stock info of the product
 [sale_stock_info_popup](sale_stock_info_popup/) | 12.0.1.0.2 |  | Adds a popover in sale order line to display stock info of the product
-[scrap_reason_code](scrap_reason_code/) | 12.0.1.0.0 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Reason code for scrapping
+[scrap_reason_code](scrap_reason_code/) | 12.0.1.0.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Reason code for scrapping
 [stock_account_change_qty_reason](stock_account_change_qty_reason/) | 12.0.1.0.0 |  | Stock Account Change Quantity Reason
-[stock_account_internal_move](stock_account_internal_move/) | 12.0.1.0.0 | [![arkostyuk](https://github.com/arkostyuk.png?size=30px)](https://github.com/arkostyuk) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Allows tracking moves between internal locations via accounts.
+[stock_account_internal_move](stock_account_internal_move/) | 12.0.1.0.0 | <a href='https://github.com/arkostyuk'><img src='https://github.com/arkostyuk.png' width='32' height='32' style='border-radius:50%;' alt='arkostyuk'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Allows tracking moves between internal locations via accounts.
 [stock_account_inventory_discrepancy](stock_account_inventory_discrepancy/) | 12.0.1.0.0 |  | Adds the capability to show the value discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_account_inventory_force_date](stock_account_inventory_force_date/) | 12.0.1.0.2 |  | Force the inventory adjustments to a date in the past.
-[stock_archive_constraint](stock_archive_constraint/) | 12.0.1.0.2 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Stock archive constraint
+[stock_archive_constraint](stock_archive_constraint/) | 12.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock archive constraint
 [stock_available](stock_available/) | 12.0.1.0.1 |  | Stock available to promise
 [stock_available_immediately](stock_available_immediately/) | 12.0.1.0.1 |  | Ignore planned receptions in quantity available to promise
 [stock_available_mrp](stock_available_mrp/) | 12.0.1.0.2 |  | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 12.0.1.1.2 |  | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 12.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_cycle_count](stock_cycle_count/) | 12.0.1.1.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
+[stock_cycle_count](stock_cycle_count/) | 12.0.1.1.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
 [stock_demand_estimate](stock_demand_estimate/) | 12.0.2.0.1 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 12.0.2.0.0 |  | Allows to create demand estimates.
-[stock_generate_putaway_from_inventory](stock_generate_putaway_from_inventory/) | 12.0.1.0.1 | [![pierrickbrun](https://github.com/pierrickbrun.png?size=30px)](https://github.com/pierrickbrun) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Generate Putaway locations per Product deduced from Inventory
+[stock_generate_putaway_from_inventory](stock_generate_putaway_from_inventory/) | 12.0.1.0.1 | <a href='https://github.com/pierrickbrun'><img src='https://github.com/pierrickbrun.png' width='32' height='32' style='border-radius:50%;' alt='pierrickbrun'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Generate Putaway locations per Product deduced from Inventory
 [stock_inventory_chatter](stock_inventory_chatter/) | 12.0.1.0.0 |  | Log changes being done in Inventory Adjustments
 [stock_inventory_cost_info](stock_inventory_cost_info/) | 12.0.1.0.0 |  | Shows the cost of the inventory adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 12.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
@@ -4241,10 +4241,10 @@ addon | version | maintainers | summary
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 12.0.1.2.1 |  | More filters for inventory adjustments
 [stock_inventory_revaluation](stock_inventory_revaluation/) | 12.0.1.0.2 |  | Introduces inventory revaluation as single point to change the valuation of products.
 [stock_inventory_valuation_location](stock_inventory_valuation_location/) | 12.0.1.0.0 |  | Introduces an estimation of the value by location.
-[stock_inventory_verification_request](stock_inventory_verification_request/) | 12.0.3.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
+[stock_inventory_verification_request](stock_inventory_verification_request/) | 12.0.3.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
 [stock_inventory_virtual_location](stock_inventory_virtual_location/) | 12.0.1.0.0 |  | Allows to change the virtual location in inventory adjustments.
 [stock_inventory_virtual_location_change_qty_reason](stock_inventory_virtual_location_change_qty_reason/) | 12.0.1.0.0 |  | Glue module
-[stock_location_limit_product](stock_location_limit_product/) | 12.0.1.3.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add a limit by product quantity on a stock location. This limit can later be used to track the capacity available of the location.
+[stock_location_limit_product](stock_location_limit_product/) | 12.0.1.3.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add a limit by product quantity on a stock location. This limit can later be used to track the capacity available of the location.
 [stock_location_lockdown](stock_location_lockdown/) | 12.0.1.1.0 |  | Prevent to add stock on locked locations
 [stock_location_position](stock_location_position/) | 12.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_template](stock_location_template/) | 12.0.1.0.2 |  | Introduces the concept of location template
@@ -4262,29 +4262,29 @@ addon | version | maintainers | summary
 [stock_orderpoint_purchase_link](stock_orderpoint_purchase_link/) | 12.0.1.0.0 |  | Link Reordering rules to purchase orders
 [stock_orderpoint_route](stock_orderpoint_route/) | 12.0.1.0.1 |  | Allows to force a route to be used when procuring from orderpoints
 [stock_orderpoint_uom](stock_orderpoint_uom/) | 12.0.1.1.0 |  | Allows to create procurement orders in the UoM indicated in the orderpoint
-[stock_packaging](stock_packaging/) | 12.0.1.0.1 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to propagate packaging through stock flows
+[stock_packaging](stock_packaging/) | 12.0.1.0.1 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to propagate packaging through stock flows
 [stock_picking_completion_info](stock_picking_completion_info/) | 12.0.1.0.0 |  | Display on current document completion information according to next operations
 [stock_picking_procure_method](stock_picking_procure_method/) | 12.0.1.0.0 |  | Allows to force the procurement method from the picking
-[stock_picking_type_user_restriction](stock_picking_type_user_restriction/) | 12.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Restrict some users to see and use only certain picking types
-[stock_production_lot_quantity_tree](stock_production_lot_quantity_tree/) | 12.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Allows to display product quantity field on production lot tree view
-[stock_pull_list](stock_pull_list/) | 12.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | The pull list checks the stock situation and calculates needed quantities.
-[stock_putaway_method](stock_putaway_method/) | 12.0.1.0.0 | [![asaunier](https://github.com/asaunier.png?size=30px)](https://github.com/asaunier) | Add the putaway strategy method back, removed from the stock module in Odoo 12
-[stock_putaway_product_form](stock_putaway_product_form/) | 12.0.1.0.1 | [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Edit putaway strategies directly from the product form view
+[stock_picking_type_user_restriction](stock_picking_type_user_restriction/) | 12.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Restrict some users to see and use only certain picking types
+[stock_production_lot_quantity_tree](stock_production_lot_quantity_tree/) | 12.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display product quantity field on production lot tree view
+[stock_pull_list](stock_pull_list/) | 12.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | The pull list checks the stock situation and calculates needed quantities.
+[stock_putaway_method](stock_putaway_method/) | 12.0.1.0.0 | <a href='https://github.com/asaunier'><img src='https://github.com/asaunier.png' width='32' height='32' style='border-radius:50%;' alt='asaunier'/></a> | Add the putaway strategy method back, removed from the stock module in Odoo 12
+[stock_putaway_product_form](stock_putaway_product_form/) | 12.0.1.0.1 | <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Edit putaway strategies directly from the product form view
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 12.0.1.2.0 |  | Stock - Manual Quant Assignment
 [stock_realign_move_and_quants](stock_realign_move_and_quants/) | 12.0.1.0.1 |  | Align stock move lines and stock quants. This modules fixes the symptoms and not the root cause.
 [stock_removal_location_by_priority](stock_removal_location_by_priority/) | 12.0.1.0.0 |  | Establish a removal priority on stock locations.
 [stock_request](stock_request/) | 12.0.1.5.0 |  | Internal request for stock
 [stock_request_analytic](stock_request_analytic/) | 12.0.1.0.2 |  | Internal request for stock
-[stock_request_direction](stock_request_direction/) | 12.0.1.0.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | From or to your warehouse?
+[stock_request_direction](stock_request_direction/) | 12.0.1.0.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | From or to your warehouse?
 [stock_request_kanban](stock_request_kanban/) | 12.0.1.0.1 |  | Adds a stock request order, and takes stock requests as lines
-[stock_request_picking_type](stock_request_picking_type/) | 12.0.2.1.2 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Add Stock Requests to the Inventory App
+[stock_request_picking_type](stock_request_picking_type/) | 12.0.2.1.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Add Stock Requests to the Inventory App
 [stock_request_purchase](stock_request_purchase/) | 12.0.1.1.4 |  | Internal request for stock
 [stock_request_submit](stock_request_submit/) | 12.0.1.0.3 |  | Add submit state on Stock Requests
 [stock_request_tier_validation](stock_request_tier_validation/) | 12.0.1.2.1 |  | Extends the functionality of Stock Requests to support a tier validation process.
 [stock_reserve_rule](stock_reserve_rule/) | 12.0.1.0.0 |  | Configure reservation rules by location
 [stock_secondary_unit](stock_secondary_unit/) | 12.0.1.2.2 |  | Get product quantities in a secondary unit
 [stock_serial_batch_receive](stock_serial_batch_receive/) | 12.0.1.0.1 |  | Generate serial number automatically per batch
-[stock_warehouse_calendar](stock_warehouse_calendar/) | 12.0.1.0.3 | [![jbeficent](https://github.com/jbeficent.png?size=30px)](https://github.com/jbeficent) | Adds a calendar to the Warehouse
+[stock_warehouse_calendar](stock_warehouse_calendar/) | 12.0.1.0.3 | <a href='https://github.com/jbeficent'><img src='https://github.com/jbeficent.png' width='32' height='32' style='border-radius:50%;' alt='jbeficent'/></a> | Adds a calendar to the Warehouse
 [stock_warehouse_orderpoint_stock_info](stock_warehouse_orderpoint_stock_info/) | 12.0.1.0.0 |  | Stock Warehouse Orderpoint Stock Info
 [stock_warehouse_orderpoint_stock_info_unreserved](stock_warehouse_orderpoint_stock_info_unreserved/) | 12.0.1.0.1 |  | Stock Warehouse Orderpoint Stock Info Unreserved
 
@@ -4334,21 +4334,21 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [stock_account_quantity_history_location](stock_account_quantity_history_location/) | 12.0.1.1.0 |  | Glue module between Stock Account and Stock Quantity History Location modules
 [stock_account_valuation_report](stock_account_valuation_report/) | 12.0.1.0.0 |  | Improves logic of the Inventory Valuation Report
-[stock_analysis](stock_analysis/) | 12.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Analysis view for stock
+[stock_analysis](stock_analysis/) | 12.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Analysis view for stock
 [stock_card_report](stock_card_report/) | 12.0.1.1.0 |  | Add stock card report on Inventory Reporting.
 [stock_forecast_report](stock_forecast_report/) | 12.0.1.0.0 |  | Backport of core 14.0 Forecast Report
-[stock_inventory_turnover_report](stock_inventory_turnover_report/) | 12.0.1.0.1 | [![dreispt](https://github.com/dreispt.png?size=30px)](https://github.com/dreispt) | Analize inventory turnover in the last 6 and 12 months
+[stock_inventory_turnover_report](stock_inventory_turnover_report/) | 12.0.1.0.1 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Analize inventory turnover in the last 6 and 12 months
 [stock_inventory_valuation_report](stock_inventory_valuation_report/) | 12.0.1.1.2 |  | Add report button on Inventory Valuation.
 [stock_kardex_report](stock_kardex_report/) | 12.0.1.0.0 |  | Generate Kardex Report
 [stock_move_value_report](stock_move_value_report/) | 12.0.1.1.0 |  | Stock Move Cost Value Report
 [stock_picking_comment_template](stock_picking_comment_template/) | 12.0.1.0.0 |  | Comments texts templates on Picking documents
 [stock_picking_product_label](stock_picking_product_label/) | 12.0.1.0.0 |  | Print Product Labels in a Stock Picking
-[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 12.0.1.0.0 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Show moves description in picking reports
-[stock_picking_report_summary](stock_picking_report_summary/) | 12.0.1.1.0 | [![quentinDupont](https://github.com/quentinDupont.png?size=30px)](https://github.com/quentinDupont) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Stock Picking Report Summary
+[stock_picking_report_custom_description](stock_picking_report_custom_description/) | 12.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
+[stock_picking_report_summary](stock_picking_report_summary/) | 12.0.1.1.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Stock Picking Report Summary
 [stock_picking_report_undelivered_product](stock_picking_report_undelivered_product/) | 12.0.1.0.1 |  | Display on picking report delivery slip undelivered products
 [stock_picking_report_valued](stock_picking_report_valued/) | 12.0.1.0.2 |  | Adding Valued Picking on Delivery Slip report
-[stock_picking_report_valued_sale_mrp](stock_picking_report_valued_sale_mrp/) | 12.0.1.0.3 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Allow to summarize the picking related with the selled kits
-[stock_production_lot_traceability_shipment_report](stock_production_lot_traceability_shipment_report/) | 12.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Show the Shipments directly or indirectly involving a Lot/SN
+[stock_picking_report_valued_sale_mrp](stock_picking_report_valued_sale_mrp/) | 12.0.1.0.3 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allow to summarize the picking related with the selled kits
+[stock_production_lot_traceability_shipment_report](stock_production_lot_traceability_shipment_report/) | 12.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show the Shipments directly or indirectly involving a Lot/SN
 [stock_quantity_history_location](stock_quantity_history_location/) | 12.0.1.1.0 |  | Provides stock quantity by location on past date
 [stock_report_quantity_by_location](stock_report_quantity_by_location/) | 12.0.1.0.1 |  | Stock Report Quantity By Location
 
@@ -4499,10 +4499,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_manufacture_info](account_move_line_manufacture_info/) | 12.0.1.0.1 |  | Account Move Line Manufacture Information
-[base_repair](base_repair/) | 12.0.1.1.1 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module extends the functionality of Odoo Repair module to add some basic features.
-[base_repair_config](base_repair_config/) | 12.0.1.0.2 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Provides general settings for the Repair App
+[base_repair](base_repair/) | 12.0.1.1.1 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module extends the functionality of Odoo Repair module to add some basic features.
+[base_repair_config](base_repair_config/) | 12.0.1.0.2 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Provides general settings for the Repair App
 [mrp_auto_assign](mrp_auto_assign/) | 12.0.1.0.0 |  | Make MO automatically reserve raw material moves at creation
-[mrp_auto_create_lot](mrp_auto_create_lot/) | 12.0.1.0.1 | [![ps-tubtim](https://github.com/ps-tubtim.png?size=30px)](https://github.com/ps-tubtim) | Auto create lots for work orders
+[mrp_auto_create_lot](mrp_auto_create_lot/) | 12.0.1.0.1 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Auto create lots for work orders
 [mrp_bom_comparison](mrp_bom_comparison/) | 12.0.1.0.1 |  | Compare two Bill of Materials to view the differences
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 12.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_line_sequence](mrp_bom_line_sequence/) | 12.0.1.0.1 |  | Manages the order of BOM lines by displaying its sequence
@@ -4512,8 +4512,8 @@ addon | version | maintainers | summary
 [mrp_bom_tracking](mrp_bom_tracking/) | 12.0.1.0.1 |  | Logs any change to a BoM in the chatter
 [mrp_bom_widget_section_and_note_one2many](mrp_bom_widget_section_and_note_one2many/) | 12.0.1.1.0 |  | Add section and note in Bills of Materials
 [mrp_mto_with_stock](mrp_mto_with_stock/) | 12.0.1.0.1 |  | Fix Manufacturing orders to pull from stock until qty is zero, and then create a procurement for them.
-[mrp_multi_level](mrp_multi_level/) | 12.0.2.4.1 | [![JordiBForgeFlow](https://github.com/JordiBForgeFlow.png?size=30px)](https://github.com/JordiBForgeFlow) [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds an MRP Scheduler
-[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 12.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to consider demand estimates using MRP multi level.
+[mrp_multi_level](mrp_multi_level/) | 12.0.2.4.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
+[mrp_multi_level_estimate](mrp_multi_level_estimate/) | 12.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 12.0.1.0.2 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_auto_post_inventory](mrp_production_auto_post_inventory/) | 12.0.1.1.1 |  | Production Auto Post-Inventory
 [mrp_production_filter_lot](mrp_production_filter_lot/) | 12.0.1.0.1 |  | In production order production popup, filter lots based on their location and availability
@@ -4522,34 +4522,34 @@ addon | version | maintainers | summary
 [mrp_production_note](mrp_production_note/) | 12.0.1.0.0 |  | Notes in production orders
 [mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 12.0.1.0.1 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_production_quant_manual_assign](mrp_production_quant_manual_assign/) | 12.0.1.0.0 |  | Production - Manual Quant Assignment
-[mrp_production_request](mrp_production_request/) | 12.0.1.0.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Allows you to use Manufacturing Request as a previous step to Manufacturing Orders for better manufacture planification.
+[mrp_production_request](mrp_production_request/) | 12.0.1.0.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Allows you to use Manufacturing Request as a previous step to Manufacturing Orders for better manufacture planification.
 [mrp_production_show_post_inventory](mrp_production_show_post_inventory/) | 12.0.1.0.2 |  | Production Show Post Inventory
 [mrp_progress_button](mrp_progress_button/) | 12.0.1.0.0 |  | Add a button on MO to make the MO state 'In Progress'
 [mrp_request_bom_structure](mrp_request_bom_structure/) | 12.0.1.0.0 |  | Shortcut between Manufacturing Request and Bom report
-[mrp_request_workcenter_cycle](mrp_request_workcenter_cycle/) | 12.0.1.0.1 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | MRP Request Workcenter Cycle
+[mrp_request_workcenter_cycle](mrp_request_workcenter_cycle/) | 12.0.1.0.1 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | MRP Request Workcenter Cycle
 [mrp_sale_info](mrp_sale_info/) | 12.0.2.0.0 |  | Adds sale information to Manufacturing models
 [mrp_stock_orderpoint_manual_procurement](mrp_stock_orderpoint_manual_procurement/) | 12.0.1.0.1 |  | Updates the value of MO Responsible and keeps trackof changes regarding this field
 [mrp_subcontracting](mrp_subcontracting/) | 12.0.1.0.6 |  | Subcontract Productions
 [mrp_subcontracting_purchase_link](mrp_subcontracting_purchase_link/) | 12.0.1.0.0 |  | Link Purchase Order to Subcontract Productions
-[mrp_unbuild_tracked_raw_material](mrp_unbuild_tracked_raw_material/) | 12.0.1.0.0 | [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Allow to unbuild tracked purchased products
-[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 12.0.1.0.2 | [![jbeficent](https://github.com/jbeficent.png?size=30px)](https://github.com/jbeficent) | Considers the warehouse calendars in manufacturing
-[mrp_workorder_sequence](mrp_workorder_sequence/) | 12.0.1.0.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | adds sequence to production work orders.
-[product_mrp_info](product_mrp_info/) | 12.0.1.0.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds smart button in product form view linking to manufacturing order list.
-[product_quick_bom](product_quick_bom/) | 12.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![kevinkhao](https://github.com/kevinkhao.png?size=30px)](https://github.com/kevinkhao) | Create the bom directly from the product
+[mrp_unbuild_tracked_raw_material](mrp_unbuild_tracked_raw_material/) | 12.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Allow to unbuild tracked purchased products
+[mrp_warehouse_calendar](mrp_warehouse_calendar/) | 12.0.1.0.2 | <a href='https://github.com/jbeficent'><img src='https://github.com/jbeficent.png' width='32' height='32' style='border-radius:50%;' alt='jbeficent'/></a> | Considers the warehouse calendars in manufacturing
+[mrp_workorder_sequence](mrp_workorder_sequence/) | 12.0.1.0.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | adds sequence to production work orders.
+[product_mrp_info](product_mrp_info/) | 12.0.1.0.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Adds smart button in product form view linking to manufacturing order list.
+[product_quick_bom](product_quick_bom/) | 12.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/kevinkhao'><img src='https://github.com/kevinkhao.png' width='32' height='32' style='border-radius:50%;' alt='kevinkhao'/></a> | Create the bom directly from the product
 [quality_control](quality_control/) | 12.0.1.5.1 |  | Generic infrastructure for quality tests.
-[quality_control_issue](quality_control_issue/) | 12.0.1.0.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Allow to manage and report Quality Control Issues.
+[quality_control_issue](quality_control_issue/) | 12.0.1.0.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Allow to manage and report Quality Control Issues.
 [quality_control_mrp](quality_control_mrp/) | 12.0.1.0.1 |  | MRP extension for quality control
 [quality_control_stock](quality_control_stock/) | 12.0.1.0.3 |  | Quality control - Stock
-[quality_control_team](quality_control_team/) | 12.0.1.1.1 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Adds quality control teams to handle different quality control workflows
+[quality_control_team](quality_control_team/) | 12.0.1.1.1 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Adds quality control teams to handle different quality control workflows
 [repair_calendar_view](repair_calendar_view/) | 12.0.1.1.1 |  | Repair Calendar View
-[repair_default_terms_conditions](repair_default_terms_conditions/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module allows repair default terms & conditions
+[repair_default_terms_conditions](repair_default_terms_conditions/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module allows repair default terms & conditions
 [repair_discount](repair_discount/) | 12.0.1.0.1 |  | Repair Discount
-[repair_payment_term](repair_payment_term/) | 12.0.1.0.1 | [![mileo](https://github.com/mileo.png?size=30px)](https://github.com/mileo) | This module add to Repair Orders the *Payment Term* field
-[repair_quality_control_issue](repair_quality_control_issue/) | 12.0.1.0.1 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Add the possibility to create repairs orders from quality control issues.
+[repair_payment_term](repair_payment_term/) | 12.0.1.0.1 | <a href='https://github.com/mileo'><img src='https://github.com/mileo.png' width='32' height='32' style='border-radius:50%;' alt='mileo'/></a> | This module add to Repair Orders the *Payment Term* field
+[repair_quality_control_issue](repair_quality_control_issue/) | 12.0.1.0.1 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Add the possibility to create repairs orders from quality control issues.
 [repair_refurbish](repair_refurbish/) | 12.0.1.1.3 |  | Create refurbished products during repair
-[repair_timeline](repair_timeline/) | 12.0.1.0.2 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | Add timeline view
+[repair_timeline](repair_timeline/) | 12.0.1.0.2 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Add timeline view
 [stock_mts_mto_rule_mrp](stock_mts_mto_rule_mrp/) | 12.0.1.0.0 |  | Add support for MTS+MTO route on manufacturing
-[stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 12.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Set quanity in picking line based on product kit quantity
+[stock_picking_product_kit_helper](stock_picking_product_kit_helper/) | 12.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Set quanity in picking line based on product kit quantity
 [stock_whole_kit_constraint](stock_whole_kit_constraint/) | 12.0.1.0.0 |  | Avoid to deliver a kit partially
 
 [//]: # (end addons)
@@ -4634,7 +4634,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 12.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 12.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 12.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_quality](mgmtsystem_quality/) | 12.0.1.0.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage your quality management system
+[mgmtsystem_quality](mgmtsystem_quality/) | 12.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 12.0.1.0.0 |  | Management System - Review
 [mgmtsystem_survey](mgmtsystem_survey/) | 12.0.1.0.0 |  | Management System - Survey
 
@@ -4683,15 +4683,15 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 12.0.2.0.1 |  | Procurement Purchase No Grouping
-[product_form_purchase_link](product_form_purchase_link/) | 12.0.1.0.0 | [![rousseldenis](https://github.com/rousseldenis.png?size=30px)](https://github.com/rousseldenis) | Add an option to display the purchases lines from product
+[product_form_purchase_link](product_form_purchase_link/) | 12.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Add an option to display the purchases lines from product
 [product_supplier_code_purchase](product_supplier_code_purchase/) | 12.0.1.0.0 |  | This module adds to the purchase order line the supplier code defined in the product.
-[product_supplierinfo_qty_multiplier](product_supplierinfo_qty_multiplier/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Product supplierinfo qty multiplier
-[purchase_add_products_from_bom](purchase_add_products_from_bom/) | 12.0.1.0.0 | [![mbcosta](https://github.com/mbcosta.png?size=30px)](https://github.com/mbcosta) | Purchase - Add Products from BoM
+[product_supplierinfo_qty_multiplier](product_supplierinfo_qty_multiplier/) | 12.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product supplierinfo qty multiplier
+[purchase_add_products_from_bom](purchase_add_products_from_bom/) | 12.0.1.0.0 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> | Purchase - Add Products from BoM
 [purchase_allowed_product](purchase_allowed_product/) | 12.0.1.1.0 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_analytic_global](purchase_analytic_global/) | 12.0.1.0.0 |  | Purchase - Analytic Account Global
 [purchase_blanket_order](purchase_blanket_order/) | 12.0.1.0.0 |  | Purchase Blanket Orders
 [purchase_commercial_partner](purchase_commercial_partner/) | 12.0.1.0.0 |  | Add stored related field 'Commercial Supplier' on POs
-[purchase_date_planned_manual](purchase_date_planned_manual/) | 12.0.1.0.0 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | This module makes the system to always respect the planned (or scheduled) date in PO lines.
+[purchase_date_planned_manual](purchase_date_planned_manual/) | 12.0.1.0.0 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | This module makes the system to always respect the planned (or scheduled) date in PO lines.
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 12.0.1.0.0 |  | This module allows purchase default terms & conditions
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 12.0.2.2.0 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 12.0.1.0.0 |  | Option to create deposit from purchase order
@@ -4701,12 +4701,12 @@ addon | version | maintainers | summary
 [purchase_invoice_plan](purchase_invoice_plan/) | 12.0.1.0.2 |  | Add to purchases order, ability to manage future invoice plan
 [purchase_invoice_plan_deposit](purchase_invoice_plan_deposit/) | 12.0.1.0.1 |  | Bridge module for purchase_invoice_plan and purchase_deposit
 [purchase_landed_cost](purchase_landed_cost/) | 12.0.1.1.1 |  | Purchase cost distribution
-[purchase_last_price_info](purchase_last_price_info/) | 12.0.1.1.0 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | Purchase Product Last Price Info
+[purchase_last_price_info](purchase_last_price_info/) | 12.0.1.1.0 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | Purchase Product Last Price Info
 [purchase_line_procurement_group](purchase_line_procurement_group/) | 12.0.1.0.1 |  | Group purchase order line according to procurement group
 [purchase_location_by_line](purchase_location_by_line/) | 12.0.1.0.0 |  | Allows to define a specific destination location on each PO line
 [purchase_manual_delivery](purchase_manual_delivery/) | 12.0.1.0.0 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_minimum_amount](purchase_minimum_amount/) | 12.0.1.0.1 |  | Purchase Minimum Amount
-[purchase_no_rfq](purchase_no_rfq/) | 12.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Purchase Order - No Request For Quotation
+[purchase_no_rfq](purchase_no_rfq/) | 12.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Purchase Order - No Request For Quotation
 [purchase_open_qty](purchase_open_qty/) | 12.0.1.1.3 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
 [purchase_order_analytic_search](purchase_order_analytic_search/) | 12.0.1.0.0 |  | Search purchase orders by analytic account. New menu entry in Purchasing to list purchase order lines.
 [purchase_order_approval_block](purchase_order_approval_block/) | 12.0.1.0.1 |  | Purchase Order Approval Block
@@ -4731,9 +4731,9 @@ addon | version | maintainers | summary
 [purchase_price_recalculation](purchase_price_recalculation/) | 12.0.1.0.0 |  | Allows to recompute purchase lines
 [purchase_product_usage](purchase_product_usage/) | 12.0.1.0.0 |  | Purchase Product Usage
 [purchase_propagate_qty](purchase_propagate_qty/) | 12.0.1.0.0 |  | Quantity decrease on purchase line are propagated to the corresponding stock.move
-[purchase_quick](purchase_quick/) | 12.0.1.0.3 | [![PierrickBrun](https://github.com/PierrickBrun.png?size=30px)](https://github.com/PierrickBrun) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Quick Purchase order
+[purchase_quick](purchase_quick/) | 12.0.1.0.3 | <a href='https://github.com/PierrickBrun'><img src='https://github.com/PierrickBrun.png' width='32' height='32' style='border-radius:50%;' alt='PierrickBrun'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Quick Purchase order
 [purchase_reception_notify](purchase_reception_notify/) | 12.0.1.0.0 |  | Purchase Reception Notify
-[purchase_reception_status](purchase_reception_status/) | 12.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Add reception status on purchase orders
+[purchase_reception_status](purchase_reception_status/) | 12.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
 [purchase_request](purchase_request/) | 12.0.5.4.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 12.0.1.0.0 |  | Purchase Request Department
 [purchase_request_order_approved](purchase_request_order_approved/) | 12.0.1.0.1 |  | Purchase Request Order Approved
@@ -4743,16 +4743,16 @@ addon | version | maintainers | summary
 [purchase_requisition_auto_rfq](purchase_requisition_auto_rfq/) | 12.0.2.0.0 |  | Automatically create RFQs from a purchase requisition
 [purchase_requisition_line_description](purchase_requisition_line_description/) | 12.0.1.0.0 |  | Extends the functionality of Purchase Agreements to show line description.
 [purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 12.0.1.0.0 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
-[purchase_security](purchase_security/) | 12.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | See only your purchase orders
+[purchase_security](purchase_security/) | 12.0.1.0.0 | <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | See only your purchase orders
 [purchase_start_end_dates](purchase_start_end_dates/) | 12.0.1.0.0 |  | Adds start date and end date on purchase order lines
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 12.0.1.0.1 |  | Update cost price in stock moves already done
 [purchase_stock_return_request](purchase_stock_return_request/) | 12.0.1.0.0 |  | Purchase Stock Return Request
 [purchase_tier_validation](purchase_tier_validation/) | 12.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_triple_discount](purchase_triple_discount/) | 12.0.1.1.0 |  | Manage triple discount on purchase order lines
 [purchase_work_acceptance](purchase_work_acceptance/) | 12.0.1.1.1 |  | Purchase Work Acceptance
-[purchase_work_acceptance_evaluation](purchase_work_acceptance_evaluation/) | 12.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Purchase Work Acceptance Evaluation
+[purchase_work_acceptance_evaluation](purchase_work_acceptance_evaluation/) | 12.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Work Acceptance Evaluation
 [subcontracted_service](subcontracted_service/) | 12.0.1.0.2 |  | Subcontracted service
-[supplier_calendar](supplier_calendar/) | 12.0.1.0.1 | [![NuriaMForgeFlow](https://github.com/NuriaMForgeFlow.png?size=30px)](https://github.com/NuriaMForgeFlow) | Supplier Calendar
+[supplier_calendar](supplier_calendar/) | 12.0.1.0.1 | <a href='https://github.com/NuriaMForgeFlow'><img src='https://github.com/NuriaMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='NuriaMForgeFlow'/></a> | Supplier Calendar
 
 [//]: # (end addons)
 
@@ -4798,7 +4798,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_backorder](purchase_backorder/) | 12.0.1.1.0 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) | Report of Un-Invoiced Goods Received and Backorders
+[purchase_backorder](purchase_backorder/) | 12.0.1.1.0 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Report of Un-Invoiced Goods Received and Backorders
 [purchase_comment_template](purchase_comment_template/) | 12.0.1.0.0 |  | Comments texts templates on Purchase documents
 [purchase_report_extension](purchase_report_extension/) | 12.0.1.0.0 |  | Adds fields delivery and invoicing fields to purchase report
 
@@ -4927,28 +4927,28 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[project_budget](project_budget/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds budget management to projects.
+[project_budget](project_budget/) | 12.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds budget management to projects.
 [project_category](project_category/) | 12.0.1.2.0 |  | Project Types
-[project_custom_info](project_custom_info/) | 12.0.2.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Add custom info in projects
+[project_custom_info](project_custom_info/) | 12.0.2.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Add custom info in projects
 [project_deadline](project_deadline/) | 12.0.1.0.0 |  | Start date and deadline of projects.
 [project_description](project_description/) | 12.0.1.0.0 |  | Add a description to projects
-[project_hr](project_hr/) | 12.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Link HR with project
+[project_hr](project_hr/) | 12.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Link HR with project
 [project_key](project_key/) | 12.0.1.0.2 |  | Module decorates projects and tasks with Project Key
 [project_list](project_list/) | 12.0.1.0.0 |  | Projects list view
 [project_mail_chatter](project_mail_chatter/) | 12.0.1.0.0 |  | Add message chatter on the Project form.
-[project_milestone](project_milestone/) | 12.0.1.1.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Milestones
-[project_parent_task_filter](project_parent_task_filter/) | 12.0.1.3.0 | [![emagdalenaC2i](https://github.com/emagdalenaC2i.png?size=30px)](https://github.com/emagdalenaC2i) | Add a filter to show the parent tasks
+[project_milestone](project_milestone/) | 12.0.1.1.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Milestones
+[project_parent_task_filter](project_parent_task_filter/) | 12.0.1.3.0 | <a href='https://github.com/emagdalenaC2i'><img src='https://github.com/emagdalenaC2i.png' width='32' height='32' style='border-radius:50%;' alt='emagdalenaC2i'/></a> | Add a filter to show the parent tasks
 [project_purchase_link](project_purchase_link/) | 12.0.1.1.1 |  | Project Purchase Link
 [project_recalculate](project_recalculate/) | 12.0.1.0.0 |  | Project Recalculate
 [project_risk](project_risk/) | 12.0.1.1.0 |  | MOR risk management method
-[project_role](project_role/) | 12.0.3.0.1 | [![alexey-pelykh](https://github.com/alexey-pelykh.png?size=30px)](https://github.com/alexey-pelykh) | Project role-based roster
+[project_role](project_role/) | 12.0.3.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Project role-based roster
 [project_stage_closed](project_stage_closed/) | 12.0.1.0.0 |  | Make the Closed flag on Task Stages available without installing sale_service
 [project_stage_state](project_stage_state/) | 12.0.1.0.0 |  | Restore State attribute removed from Project Stages in 8.0
-[project_status](project_status/) | 12.0.1.1.1 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Status
-[project_stock](project_stock/) | 12.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Project Stock
+[project_status](project_status/) | 12.0.1.1.1 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Status
+[project_stock](project_stock/) | 12.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Project Stock
 [project_stock_request](project_stock_request/) | 12.0.1.0.0 |  | Create stock requests from a projects and project tasks
-[project_tag](project_tag/) | 12.0.1.0.0 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Tags
-[project_task_add_very_high](project_task_add_very_high/) | 12.0.1.0.2 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Adds extra options 'High' and 'Very High' on tasks
+[project_tag](project_tag/) | 12.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Tags
+[project_task_add_very_high](project_task_add_very_high/) | 12.0.1.0.2 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Adds extra options 'High' and 'Very High' on tasks
 [project_task_code](project_task_code/) | 12.0.1.1.1 |  | Sequential Code for Tasks
 [project_task_default_stage](project_task_default_stage/) | 12.0.1.0.0 |  | Recovery default task stage projects from v8
 [project_task_dependency](project_task_dependency/) | 12.0.1.1.0 |  | Enables to define dependencies (other tasks) of a task
@@ -4958,13 +4958,13 @@ addon | version | maintainers | summary
 [project_task_project_required](project_task_project_required/) | 12.0.1.1.0 |  | Set project on task as a mandatory field
 [project_task_pull_request](project_task_pull_request/) | 12.0.1.1.0 |  | Adds a field for a PR URI to project tasks
 [project_task_send_by_mail](project_task_send_by_mail/) | 12.0.1.0.0 |  | Send task report by email
-[project_template](project_template/) | 12.0.1.0.1 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Project Templates
-[project_template_milestone](project_template_milestone/) | 12.0.1.0.1 | [![patrickrwilson](https://github.com/patrickrwilson.png?size=30px)](https://github.com/patrickrwilson) | Adds function to copy of milestones when creating a project from template
+[project_template](project_template/) | 12.0.1.0.1 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Templates
+[project_template_milestone](project_template_milestone/) | 12.0.1.0.1 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds function to copy of milestones when creating a project from template
 [project_timeline](project_timeline/) | 12.0.1.4.0 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 12.0.1.0.1 |  | Shows the progress of tasks on the timeline view.
 [project_timeline_task_dependency](project_timeline_task_dependency/) | 12.0.1.0.1 |  | Render arrows between dependencies.
-[project_timesheet_time_control](project_timesheet_time_control/) | 12.0.2.1.2 | [![ernestotejeda](https://github.com/ernestotejeda.png?size=30px)](https://github.com/ernestotejeda) | Project timesheet time control
-[project_timesheet_time_control_sale](project_timesheet_time_control_sale/) | 12.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make 'Project timesheet time control' and 'Sales Timesheet' work together
+[project_timesheet_time_control](project_timesheet_time_control/) | 12.0.2.1.2 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Project timesheet time control
+[project_timesheet_time_control_sale](project_timesheet_time_control_sale/) | 12.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make 'Project timesheet time control' and 'Sales Timesheet' work together
 [project_wbs](project_wbs/) | 12.0.1.1.2 |  | Apply Work Breakdown Structure
 [project_wbs_task](project_wbs_task/) | 12.0.1.0.1 |  | Work Breakdown Structure - Tasks
 
@@ -5023,38 +5023,38 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[agreement](agreement/) | 12.0.1.2.1 | [![ygol](https://github.com/ygol.png?size=30px)](https://github.com/ygol) [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) | Adds an agreement object
-[agreement_account](agreement_account/) | 12.0.1.0.0 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Agreement on invoices
-[agreement_helpdesk_mgmt](agreement_helpdesk_mgmt/) | 12.0.1.0.2 | [![bodedra](https://github.com/bodedra.png?size=30px)](https://github.com/bodedra) | Link a helpdesk ticket to an agreement
-[agreement_legal](agreement_legal/) | 12.0.2.1.0 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![ygol](https://github.com/ygol.png?size=30px)](https://github.com/ygol) | Manage Agreements, LOI and Contracts
-[agreement_legal_sale](agreement_legal_sale/) | 12.0.2.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Create an agreement when the sale order is confirmed
-[agreement_legal_sale_fieldservice](agreement_legal_sale_fieldservice/) | 12.0.1.0.0 | [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Create an agreement when the sale order is confirmed
-[agreement_maintenance](agreement_maintenance/) | 12.0.1.1.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Manage maintenance agreements and contracts
-[agreement_mrp](agreement_mrp/) | 12.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link manufacturing orders to an agreement
-[agreement_project](agreement_project/) | 12.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![ygol](https://github.com/ygol.png?size=30px)](https://github.com/ygol) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link projects to an agreement
-[agreement_repair](agreement_repair/) | 12.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link repair orders to an agreement
-[agreement_sale](agreement_sale/) | 12.0.1.0.2 | [![alexis-via](https://github.com/alexis-via.png?size=30px)](https://github.com/alexis-via) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Agreement on sales
-[agreement_serviceprofile](agreement_serviceprofile/) | 12.0.1.2.1 | [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Adds an Agreement Service Profile object
-[agreement_stock](agreement_stock/) | 12.0.1.0.1 | [![smangukiya](https://github.com/smangukiya.png?size=30px)](https://github.com/smangukiya) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | Link picking to an agreement
+[agreement](agreement/) | 12.0.1.2.1 | <a href='https://github.com/ygol'><img src='https://github.com/ygol.png' width='32' height='32' style='border-radius:50%;' alt='ygol'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds an agreement object
+[agreement_account](agreement_account/) | 12.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Agreement on invoices
+[agreement_helpdesk_mgmt](agreement_helpdesk_mgmt/) | 12.0.1.0.2 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Link a helpdesk ticket to an agreement
+[agreement_legal](agreement_legal/) | 12.0.2.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/ygol'><img src='https://github.com/ygol.png' width='32' height='32' style='border-radius:50%;' alt='ygol'/></a> | Manage Agreements, LOI and Contracts
+[agreement_legal_sale](agreement_legal_sale/) | 12.0.2.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Create an agreement when the sale order is confirmed
+[agreement_legal_sale_fieldservice](agreement_legal_sale_fieldservice/) | 12.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Create an agreement when the sale order is confirmed
+[agreement_maintenance](agreement_maintenance/) | 12.0.1.1.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage maintenance agreements and contracts
+[agreement_mrp](agreement_mrp/) | 12.0.1.0.1 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Link manufacturing orders to an agreement
+[agreement_project](agreement_project/) | 12.0.1.0.1 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/ygol'><img src='https://github.com/ygol.png' width='32' height='32' style='border-radius:50%;' alt='ygol'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Link projects to an agreement
+[agreement_repair](agreement_repair/) | 12.0.1.0.1 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Link repair orders to an agreement
+[agreement_sale](agreement_sale/) | 12.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Agreement on sales
+[agreement_serviceprofile](agreement_serviceprofile/) | 12.0.1.2.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Adds an Agreement Service Profile object
+[agreement_stock](agreement_stock/) | 12.0.1.0.1 | <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Link picking to an agreement
 [contract](contract/) | 12.0.8.7.0 |  | Recurring - Contracts Management
-[contract_digitized_signature](contract_digitized_signature/) | 12.0.1.0.0 | [![cubells](https://github.com/cubells.png?size=30px)](https://github.com/cubells) | Contract Digitized Signature
+[contract_digitized_signature](contract_digitized_signature/) | 12.0.1.0.0 | <a href='https://github.com/cubells'><img src='https://github.com/cubells.png' width='32' height='32' style='border-radius:50%;' alt='cubells'/></a> | Contract Digitized Signature
 [contract_forecast](contract_forecast/) | 12.0.1.2.0 |  | Contract forecast
-[contract_invoice_auto_validate](contract_invoice_auto_validate/) | 12.0.1.0.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This addon auto-validate invoices after its creation from a contract
-[contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 12.0.1.0.0 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Contract Invoice Start End Dates
+[contract_invoice_auto_validate](contract_invoice_auto_validate/) | 12.0.1.0.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon auto-validate invoices after its creation from a contract
+[contract_invoice_start_end_dates](contract_invoice_start_end_dates/) | 12.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Contract Invoice Start End Dates
 [contract_layout_category_hide_detail](contract_layout_category_hide_detail/) | 12.0.1.0.0 |  | Hide details for sections in Contract lines
 [contract_mandate](contract_mandate/) | 12.0.1.0.2 |  | Mandate in contracts and their invoices
 [contract_payment_mode](contract_payment_mode/) | 12.0.1.2.0 |  | Payment mode in contracts and their invoices
-[contract_price_revision](contract_price_revision/) | 12.0.1.0.2 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) | Easy revision of contract prices
-[contract_queue_job](contract_queue_job/) | 12.0.1.1.0 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This addon make contract invoicing cron plan each contract in a job instead of creating all invoices in one transaction
+[contract_price_revision](contract_price_revision/) | 12.0.1.0.2 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Easy revision of contract prices
+[contract_queue_job](contract_queue_job/) | 12.0.1.1.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This addon make contract invoicing cron plan each contract in a job instead of creating all invoices in one transaction
 [contract_sale](contract_sale/) | 12.0.3.0.0 |  | Contract from Sale
 [contract_sale_generation](contract_sale_generation/) | 12.0.1.0.3 |  | Contracts Management - Recurring Sales
 [contract_sale_invoicing](contract_sale_invoicing/) | 12.0.1.0.4 |  | Include sales to invoice in contract invoice creation
 [contract_sale_mandate](contract_sale_mandate/) | 12.0.2.0.0 |  | This module manages the banking mandate from the sale order to the contract.
 [contract_sale_payment_mode](contract_sale_payment_mode/) | 12.0.1.1.1 |  | This addon manages payment mode from sale order to contract.
 [contract_transmit_method](contract_transmit_method/) | 12.0.1.1.0 |  | Set transmit method (email, post, portal, ...) in contracts and propagate it to invoices.
-[contract_variable_qty_prorated](contract_variable_qty_prorated/) | 12.0.1.1.1 | [![sbejaoui](https://github.com/sbejaoui.png?size=30px)](https://github.com/sbejaoui) | This module adds a formula to compute prorated quantity to invoice as extension of the module contract_variable_quantity
-[contract_variable_qty_sale_order_line](contract_variable_qty_sale_order_line/) | 12.0.1.0.0 | [![marcelsavegnago](https://github.com/marcelsavegnago.png?size=30px)](https://github.com/marcelsavegnago) | This module adds a formula to compute sale order line quantity to invoice as extension of the module contract_variable_quantity
-[contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 12.0.1.0.1 | [![carlosdauden](https://github.com/carlosdauden.png?size=30px)](https://github.com/carlosdauden) [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add formula to invoice
+[contract_variable_qty_prorated](contract_variable_qty_prorated/) | 12.0.1.1.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module adds a formula to compute prorated quantity to invoice as extension of the module contract_variable_quantity
+[contract_variable_qty_sale_order_line](contract_variable_qty_sale_order_line/) | 12.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | This module adds a formula to compute sale order line quantity to invoice as extension of the module contract_variable_quantity
+[contract_variable_qty_timesheet](contract_variable_qty_timesheet/) | 12.0.1.0.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add formula to invoice
 [contract_variable_quantity](contract_variable_quantity/) | 12.0.3.1.1 |  | Variable quantity in contract recurrent invoicing
 [product_contract](product_contract/) | 12.0.5.3.1 |  | Recurring - Product Contract
 [product_contract_variable_quantity](product_contract_variable_quantity/) | 12.0.1.0.1 |  | Product contract with variable quantity
@@ -5178,15 +5178,15 @@ addon | version | maintainers | summary
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 12.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 12.0.1.0.0 |  | Module to use attach existing attachment for account module
 [mail_autogenerated_header](mail_autogenerated_header/) | 12.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
-[mail_check_mailbox_size](mail_check_mailbox_size/) | 12.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Send an email summarizing the current space used by a mailbox
-[mail_debrand](mail_debrand/) | 12.0.2.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Remove Odoo branding in sent emails
+[mail_check_mailbox_size](mail_check_mailbox_size/) | 12.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Send an email summarizing the current space used by a mailbox
+[mail_debrand](mail_debrand/) | 12.0.2.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Remove Odoo branding in sent emails
 [mail_drop_target](mail_drop_target/) | 12.0.1.1.2 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_footer_notified_partner](mail_footer_notified_partner/) | 12.0.1.0.0 |  | This module adds the list of notified partners in the footer of notification e-mails sent by Odoo.
 [mail_full_expand](mail_full_expand/) | 12.0.1.0.0 |  | Expand mail in a big window
 [mail_history](mail_history/) | 12.0.1.0.0 |  | Module to see old messages
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 12.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_inline_css](mail_inline_css/) | 12.0.1.0.1 |  | Convert style tags in inline style in your mails
-[mail_notification_custom_subject](mail_notification_custom_subject/) | 12.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Apply a custom subject to mail notifications
+[mail_notification_custom_subject](mail_notification_custom_subject/) | 12.0.1.0.0 | <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 12.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 12.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 12.0.1.0.1 |  | Allows you to configure the from header for a mail server.
@@ -5353,25 +5353,25 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[bi_sql_editor](bi_sql_editor/) | 12.0.1.3.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | BI Views builder, based on Materialized or Normal SQL Views
+[bi_sql_editor](bi_sql_editor/) | 12.0.1.3.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [bi_sql_editor_aggregate](bi_sql_editor_aggregate/) | 12.0.1.1.0 |  | BI SQL Editor Aggregation
 [bi_view_editor](bi_view_editor/) | 12.0.1.1.1 |  | Graphical BI views builder for Odoo
 [kpi](kpi/) | 12.0.1.0.1 |  | Key Performance Indicator
-[kpi_dashboard](kpi_dashboard/) | 12.0.1.3.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Create Dashboards using kpis
-[kpi_dashboard_altair](kpi_dashboard_altair/) | 12.0.1.0.3 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Create dashboards using altair
+[kpi_dashboard](kpi_dashboard/) | 12.0.1.3.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Create Dashboards using kpis
+[kpi_dashboard_altair](kpi_dashboard_altair/) | 12.0.1.0.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Create dashboards using altair
 [kpi_dashboard_bokeh](kpi_dashboard_bokeh/) | 12.0.1.0.1 |  | Create dashboards using bokeh
-[report_async](report_async/) | 12.0.2.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Central place to run reports live or async
+[report_async](report_async/) | 12.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Central place to run reports live or async
 [report_context](report_context/) | 12.0.1.0.0 |  | Adding context to reports
 [report_csv](report_csv/) | 12.0.1.0.1 |  | Base module to create csv report
-[report_label](report_label/) | 12.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Print configurable self-adhesive labels reports
+[report_label](report_label/) | 12.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Print configurable self-adhesive labels reports
 [report_pdf_zip_download](report_pdf_zip_download/) | 12.0.1.0.0 |  | Report PDF ZIP Download
 [report_py3o](report_py3o/) | 12.0.2.1.2 |  | Reporting engine based on Libreoffice (ODT -> ODT, ODT -> PDF, ODT -> DOC, ODT -> DOCX, ODS -> ODS, etc.)
 [report_py3o_fusion_server](report_py3o_fusion_server/) | 12.0.1.0.2 |  | Let the fusion server handle format conversion.
 [report_qr](report_qr/) | 12.0.1.1.0 |  | Web QR Manager
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 12.0.1.0.1 |  | Report Qweb Element Page Visibility
-[report_qweb_encrypt](report_qweb_encrypt/) | 12.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Allow to encrypt qweb pdfs
+[report_qweb_encrypt](report_qweb_encrypt/) | 12.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Allow to encrypt qweb pdfs
 [report_qweb_parameter](report_qweb_parameter/) | 12.0.1.0.2 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
-[report_qweb_pdf_fixed_column](report_qweb_pdf_fixed_column/) | 12.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Fix auto-col to not change report font size caused by a boundary overflow
+[report_qweb_pdf_fixed_column](report_qweb_pdf_fixed_column/) | 12.0.1.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Fix auto-col to not change report font size caused by a boundary overflow
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 12.0.1.0.2 |  | Add watermarks to your QWEB PDF reports
 [report_qweb_signer](report_qweb_signer/) | 12.0.1.1.1 |  | Sign Qweb PDFs usign a PKCS#12 certificate
 [report_substitute](report_substitute/) | 12.0.1.0.0 |  | This module allows to create substitution rules for report actions.
@@ -5464,18 +5464,18 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_delete_restrict](attachment_delete_restrict/) | 12.0.1.0.0 |  | Restrict Deletion of Attachments
-[attachment_queue](attachment_queue/) | 12.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module adding the concept of queue for processing files
-[attachment_synchronize](attachment_synchronize/) | 12.0.2.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Attachment Synchronize
-[attachment_unindex_content](attachment_unindex_content/) | 12.0.1.0.0 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) | Disable indexing of attachments
+[attachment_queue](attachment_queue/) | 12.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
+[attachment_synchronize](attachment_synchronize/) | 12.0.2.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Attachment Synchronize
+[attachment_unindex_content](attachment_unindex_content/) | 12.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> | Disable indexing of attachments
 [auditlog](auditlog/) | 12.0.2.1.1 |  | Audit Log
 [auto_backup](auto_backup/) | 12.0.1.0.2 |  | Backups database
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 12.0.1.1.1 |  | Automatically delete old mail messages and attachments
-[base_changeset](base_changeset/) | 12.0.1.1.2 | [![astirpe](https://github.com/astirpe.png?size=30px)](https://github.com/astirpe) | Track record changesets
+[base_changeset](base_changeset/) | 12.0.1.1.2 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Track record changesets
 [base_conditional_image](base_conditional_image/) | 12.0.1.0.2 |  | Conditional Images
 [base_cron_exclusion](base_cron_exclusion/) | 12.0.1.0.0 |  | Allow you to select scheduled actions that should not run simultaneously.
 [base_custom_info](base_custom_info/) | 12.0.2.1.0 |  | Add custom field in models
 [base_deterministic_session_gc](base_deterministic_session_gc/) | 12.0.1.0.1 |  | Provide a deterministic session garbage collection instead of the default random one
-[base_exception](base_exception/) | 12.0.3.1.1 | [![hparfr](https://github.com/hparfr.png?size=30px)](https://github.com/hparfr) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
+[base_exception](base_exception/) | 12.0.3.1.1 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 12.0.5.16.0 |  | Up to date Fontawesome resources.
 [base_import_module_group](base_import_module_group/) | 12.0.1.0.1 |  | Restrict module importation to specific group
 [base_jsonify](base_jsonify/) | 12.0.1.1.2 |  | Base module that provide the jsonify method on all models
@@ -5490,35 +5490,35 @@ addon | version | maintainers | summary
 [base_technical_user](base_technical_user/) | 12.0.1.1.1 |  | Add a technical user parameter on the company
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 12.0.1.0.1 |  | Adds more operators for view inheritance
 [bus_alt_connection](bus_alt_connection/) | 12.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
-[company_country](company_country/) | 12.0.1.2.1 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Set country to main company
+[company_country](company_country/) | 12.0.1.2.1 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Set country to main company
 [configuration_helper](configuration_helper/) | 12.0.1.0.0 |  | Configuration Helper
 [cron_inactivity_period](cron_inactivity_period/) | 12.0.1.0.1 |  | Inactivity Periods for Cron Jobs
 [database_cleanup](database_cleanup/) | 12.0.1.2.3 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 12.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 12.0.1.0.2 |  | Filter databases with HTTP headers
-[excel_import_export](excel_import_export/) | 12.0.1.0.8 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Base module for developing Excel import/export/report
-[excel_import_export_demo](excel_import_export_demo/) | 12.0.1.0.3 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Excel Import/Export/Report Demo
+[excel_import_export](excel_import_export/) | 12.0.1.0.8 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base module for developing Excel import/export/report
+[excel_import_export_demo](excel_import_export_demo/) | 12.0.1.0.3 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Excel Import/Export/Report Demo
 [fetchmail_incoming_log](fetchmail_incoming_log/) | 12.0.1.0.0 |  | Log all messages received, before they start to be processed.
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 12.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [html_image_url_extractor](html_image_url_extractor/) | 12.0.1.0.0 |  | Extract images found in any HTML field
 [html_text](html_text/) | 12.0.1.0.0 |  | Generate excerpts from any HTML field
-[iap_alternative_provider](iap_alternative_provider/) | 12.0.1.0.1 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
-[ir_sequence_standard_default](ir_sequence_standard_default/) | 12.0.1.0.0 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) | Use Standard implementation of ir.sequence instead of NoGap
+[iap_alternative_provider](iap_alternative_provider/) | 12.0.1.0.1 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
+[ir_sequence_standard_default](ir_sequence_standard_default/) | 12.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> | Use Standard implementation of ir.sequence instead of NoGap
 [letsencrypt](letsencrypt/) | 12.0.2.0.1 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 12.0.1.0.0 |  | Mark as read or delete mails after a set time
-[module_analysis](module_analysis/) | 12.0.1.0.6 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
+[module_analysis](module_analysis/) | 12.0.1.0.6 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 12.0.2.0.7 |  | Automatically update Odoo modules
-[module_change_auto_install](module_change_auto_install/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
+[module_change_auto_install](module_change_auto_install/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
 [nsca_client](nsca_client/) | 12.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.
 [onchange_helper](onchange_helper/) | 12.0.1.1.0 |  | Technical module that ease execution of onchange in Python code
-[profiler](profiler/) | 12.0.1.0.1 | [![thomaspaulb](https://github.com/thomaspaulb.png?size=30px)](https://github.com/thomaspaulb) | profiler
-[rpc_helper](rpc_helper/) | 12.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
+[profiler](profiler/) | 12.0.1.0.1 | <a href='https://github.com/thomaspaulb'><img src='https://github.com/thomaspaulb.png' width='32' height='32' style='border-radius:50%;' alt='thomaspaulb'/></a> | profiler
+[rpc_helper](rpc_helper/) | 12.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 12.0.1.2.0 |  | Scheduler Error Mailer
-[sentry](sentry/) | 12.0.2.0.3 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
+[sentry](sentry/) | 12.0.2.0.3 | <a href='https://github.com/barsi'><img src='https://github.com/barsi.png' width='32' height='32' style='border-radius:50%;' alt='barsi'/></a> <a href='https://github.com/naglis'><img src='https://github.com/naglis.png' width='32' height='32' style='border-radius:50%;' alt='naglis'/></a> <a href='https://github.com/versada'><img src='https://github.com/versada.png' width='32' height='32' style='border-radius:50%;' alt='versada'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/fernandahf'><img src='https://github.com/fernandahf.png' width='32' height='32' style='border-radius:50%;' alt='fernandahf'/></a> | Report Odoo errors to Sentry
 [slow_statement_logger](slow_statement_logger/) | 12.0.1.0.2 |  | Log slow SQL statements
 [sql_export](sql_export/) | 12.0.1.2.1 |  | Export data in csv file with SQL requests
 [sql_export_excel](sql_export_excel/) | 12.0.1.1.1 |  | Allow to export a sql query to an excel file.
-[sql_export_mail](sql_export_mail/) | 12.0.1.1.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Send csv file generated by sql query by mail.
+[sql_export_mail](sql_export_mail/) | 12.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Send csv file generated by sql query by mail.
 [sql_request_abstract](sql_request_abstract/) | 12.0.1.2.2 |  | Abstract Model to manage SQL Requests
 
 [//]: # (end addons)
@@ -5572,7 +5572,7 @@ addon | version | maintainers | summary
 [auth_ldap_attribute_sync](auth_ldap_attribute_sync/) | 12.0.1.0.0 |  | Allows to update users’ fields from LDAP attributes
 [auth_ldaps](auth_ldaps/) | 12.0.1.0.1 |  | Allows to use LDAP over SSL authentication
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 12.0.1.0.1 |  | Allow multiple connection with the same OAuth account
-[auth_oidc](auth_oidc/) | 12.0.1.2.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Allow users to login through OpenID Connect Provider
+[auth_oidc](auth_oidc/) | 12.0.1.2.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
 [auth_saml](auth_saml/) | 12.0.1.0.1 |  | Saml2 Authentication
 [auth_session_timeout](auth_session_timeout/) | 12.0.1.0.2 |  | This module disable all inactive sessions since a given delay
 [auth_signup_verify_email](auth_signup_verify_email/) | 12.0.1.0.3 |  | Force uninvited users to use a good email for signup
@@ -5582,7 +5582,7 @@ addon | version | maintainers | summary
 [auth_user_case_insensitive](auth_user_case_insensitive/) | 12.0.1.0.0 |  | Makes the user login field case insensitive
 [base_user_show_email](base_user_show_email/) | 12.0.1.0.0 |  | Untangle user login and email
 [password_security](password_security/) | 12.0.1.1.4 |  | Allow admin to set password security requirements.
-[user_log_view](user_log_view/) | 12.0.1.0.0 | [![trojikman](https://github.com/trojikman.png?size=30px)](https://github.com/trojikman) | Allow to see user's actions log
+[user_log_view](user_log_view/) | 12.0.1.0.0 | <a href='https://github.com/trojikman'><img src='https://github.com/trojikman.png' width='32' height='32' style='border-radius:50%;' alt='trojikman'/></a> | Allow to see user's actions log
 [users_ldap_groups](users_ldap_groups/) | 12.0.1.0.1 |  | Adds user accounts to groups based on rules defined by the administrator.
 [users_ldap_mail](users_ldap_mail/) | 12.0.1.0.1 |  | LDAP mapping for user name and e-mail
 [users_ldap_populate](users_ldap_populate/) | 12.0.1.0.2 |  | LDAP Populate
@@ -5684,7 +5684,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_default_lang_translate](base_default_lang_translate/) | 12.0.1.0.0 | [![remi-filament](https://github.com/remi-filament.png?size=30px)](https://github.com/remi-filament) | This modules allows to select a default language which is used for source terms in translations
+[base_default_lang_translate](base_default_lang_translate/) | 12.0.1.0.0 | <a href='https://github.com/remi-filament'><img src='https://github.com/remi-filament.png' width='32' height='32' style='border-radius:50%;' alt='remi-filament'/></a> | This modules allows to select a default language which is used for source terms in translations
 [base_external_dbsource](base_external_dbsource/) | 12.0.1.1.1 |  | External Database Sources
 [base_external_dbsource_mssql](base_external_dbsource_mssql/) | 12.0.1.0.1 |  | External Database Source - MSSQL
 [base_external_dbsource_mysql](base_external_dbsource_mysql/) | 12.0.1.0.1 |  | External Database Source - MySQL
@@ -5693,13 +5693,13 @@ addon | version | maintainers | summary
 [base_global_discount](base_global_discount/) | 12.0.3.0.0 |  | Base Global Discount
 [base_import_match](base_import_match/) | 12.0.1.1.1 |  | Try to avoid duplicates before importing
 [base_suspend_security](base_suspend_security/) | 12.0.1.0.4 |  | Suspend security checks for a call
-[base_user_role](base_user_role/) | 12.0.2.1.3 | [![ABF OSIELL](https://github.com/ABF OSIELL.png?size=30px)](https://github.com/ABF OSIELL) [![jcdrubay](https://github.com/jcdrubay.png?size=30px)](https://github.com/jcdrubay) | User roles
+[base_user_role](base_user_role/) | 12.0.2.1.3 | <a href='https://github.com/ABF OSIELL'><img src='https://github.com/ABF OSIELL.png' width='32' height='32' style='border-radius:50%;' alt='ABF OSIELL'/></a> <a href='https://github.com/jcdrubay'><img src='https://github.com/jcdrubay.png' width='32' height='32' style='border-radius:50%;' alt='jcdrubay'/></a> | User roles
 [base_user_role_company](base_user_role_company/) | 12.0.1.0.0 |  | User roles by company
-[base_user_role_history](base_user_role_history/) | 12.0.1.0.1 | [![ThomasBinsfeld](https://github.com/ThomasBinsfeld.png?size=30px)](https://github.com/ThomasBinsfeld) | This module allows to track the changes on users roles.
+[base_user_role_history](base_user_role_history/) | 12.0.1.0.1 | <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | This module allows to track the changes on users roles.
 [base_user_role_profile](base_user_role_profile/) | 12.0.1.0.0 |  | User profiles
 [base_user_role_profile_example](base_user_role_profile_example/) | 12.0.1.0.0 |  | User profiles example
 [pglogical](pglogical/) | 12.0.1.0.1 |  | Support for replicating Odoo's database
-[server_action_navigate](server_action_navigate/) | 12.0.1.0.1 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Navigate between any items of any Odoo Models
+[server_action_navigate](server_action_navigate/) | 12.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Navigate between any items of any Odoo Models
 
 [//]: # (end addons)
 
@@ -5759,23 +5759,23 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [barcode_action](barcode_action/) | 12.0.1.0.0 |  | Allows to use barcodes as a launcher
-[base_duplicate_security_group](base_duplicate_security_group/) | 12.0.1.0.0 | [![chienandalu](https://github.com/chienandalu.png?size=30px)](https://github.com/chienandalu) | Adds a security group to restrict which users can copy records
+[base_duplicate_security_group](base_duplicate_security_group/) | 12.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds a security group to restrict which users can copy records
 [base_export_manager](base_export_manager/) | 12.0.1.1.1 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 12.0.1.1.0 |  | Group-based permissions for importing CSV files
 [base_optional_quick_create](base_optional_quick_create/) | 12.0.1.0.1 |  | Avoid "quick create" on m2o fields, on a "by model" basis
-[base_search_custom_field_filter](base_search_custom_field_filter/) | 12.0.1.0.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Add custom filters for fields via UI
+[base_search_custom_field_filter](base_search_custom_field_filter/) | 12.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 12.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 12.0.1.1.0 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 12.0.3.9.3 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 12.0.3.9.3 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 12.0.2.0.1 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 12.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Forward option for base tiers
+[base_tier_validation_forward](base_tier_validation_forward/) | 12.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_user_locale](base_user_locale/) | 12.0.1.0.0 |  | User Locale Settings
 [chained_swapper](chained_swapper/) | 12.0.1.0.1 |  | Chained Swapper
-[date_range](date_range/) | 12.0.2.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Manage all kind of date range
-[default_multi_user](default_multi_user/) | 12.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined defaults among several users.
-[document_quick_access](document_quick_access/) | 12.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Document quick access
-[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 12.0.1.0.0 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | Auto classification of Documents after reading a QR
-[filter_multi_user](filter_multi_user/) | 12.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Allows to share user-defined filters filters among several users.
+[date_range](date_range/) | 12.0.2.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
+[default_multi_user](default_multi_user/) | 12.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined defaults among several users.
+[document_quick_access](document_quick_access/) | 12.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Document quick access
+[document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 12.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Auto classification of Documents after reading a QR
+[filter_multi_user](filter_multi_user/) | 12.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined filters filters among several users.
 [mass_editing](mass_editing/) | 12.0.2.2.2 |  | Mass Editing
 [mass_operation_abstract](mass_operation_abstract/) | 12.0.1.1.1 |  | Abstract Tools used for modules that realize operation onmany items
 [multi_step_wizard](multi_step_wizard/) | 12.0.1.1.0 |  | Multi-Steps Wizards
@@ -5887,7 +5887,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [iot](iot/) | 12.0.1.3.1 |  | IoT base module
 [iot_amqp](iot_amqp/) | 12.0.1.1.1 |  | Integrate Iot Outputs with AMQP
-[iot_input](iot_input/) | 12.0.1.4.2 | [![etobella](https://github.com/etobella.png?size=30px)](https://github.com/etobella) | IoT Input module
+[iot_input](iot_input/) | 12.0.1.4.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | IoT Input module
 [iot_option_oca](iot_option_oca/) | 12.0.1.0.0 |  | Allow to define custom field for IoT
 [iot_output](iot_output/) | 12.0.1.1.1 |  | IoT allow multiple outputs
 [iot_template_oca](iot_template_oca/) | 12.0.1.0.0 |  | IoT module for managing templates
@@ -5936,12 +5936,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_rest](base_rest/) | 12.0.3.1.0 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Develop your own high level REST APIs for Odoo thanks to this addon.
+[base_rest](base_rest/) | 12.0.3.1.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Develop your own high level REST APIs for Odoo thanks to this addon.
 [base_rest_datamodel](base_rest_datamodel/) | 12.0.3.0.1 |  | Datamodel binding for base_rest
-[base_rest_demo](base_rest_demo/) | 12.0.3.0.1 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | Demo addon for Base REST
-[datamodel](datamodel/) | 12.0.3.0.2 | [![lmignon](https://github.com/lmignon.png?size=30px)](https://github.com/lmignon) | This addon allows you to define simple data models supporting serialization/deserialization
-[graphql_base](graphql_base/) | 12.0.2.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Base GraphQL/GraphiQL controller
-[graphql_demo](graphql_demo/) | 12.0.1.0.0 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | GraphQL Demo
+[base_rest_demo](base_rest_demo/) | 12.0.3.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Demo addon for Base REST
+[datamodel](datamodel/) | 12.0.3.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | This addon allows you to define simple data models supporting serialization/deserialization
+[graphql_base](graphql_base/) | 12.0.2.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Base GraphQL/GraphiQL controller
+[graphql_demo](graphql_demo/) | 12.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | GraphQL Demo
 
 [//]: # (end addons)
 
@@ -6037,12 +6037,12 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_phone_rate](base_phone_rate/) | 12.0.0.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Store international rates for phone call
-[base_phone_rate_import_bandwith](base_phone_rate_import_bandwith/) | 12.0.1.0.1 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows you to load and update the phone rates using the file provided by Bandwidth (https://www.bandwidth.com).
-[connector_equipment](connector_equipment/) | 12.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Connect Equipment to Outside API
-[connector_equipment_import_cdr](connector_equipment_import_cdr/) | 12.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) | This module allows to import the CDR data from the Netsapiens backend as Odoo analytic lines.
-[connector_equipment_service](connector_equipment_service/) | 12.0.1.1.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Combine Connector Equipment and Service Profiles
-[product_isp](product_isp/) | 12.0.1.0.0 | [![wolfhall](https://github.com/wolfhall.png?size=30px)](https://github.com/wolfhall) [![max3903](https://github.com/max3903.png?size=30px)](https://github.com/max3903) [![osi-scampbell](https://github.com/osi-scampbell.png?size=30px)](https://github.com/osi-scampbell) | Assign ISPs to Products
+[base_phone_rate](base_phone_rate/) | 12.0.0.1.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Store international rates for phone call
+[base_phone_rate_import_bandwith](base_phone_rate_import_bandwith/) | 12.0.1.0.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module allows you to load and update the phone rates using the file provided by Bandwidth (https://www.bandwidth.com).
+[connector_equipment](connector_equipment/) | 12.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Connect Equipment to Outside API
+[connector_equipment_import_cdr](connector_equipment_import_cdr/) | 12.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module allows to import the CDR data from the Netsapiens backend as Odoo analytic lines.
+[connector_equipment_service](connector_equipment_service/) | 12.0.1.1.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Combine Connector Equipment and Service Profiles
+[product_isp](product_isp/) | 12.0.1.0.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> | Assign ISPs to Products
 
 [//]: # (end addons)
 
@@ -6270,9 +6270,9 @@ addon | version | maintainers | summary
 [web_advanced_search](web_advanced_search/) | 12.0.1.1.3 |  | Easier and more powerful searching tools
 [web_advanced_search_wildcard](web_advanced_search_wildcard/) | 12.0.1.0.0 |  | Webmodule to add wildcard operators in advanced search field
 [web_button_no_save](web_button_no_save/) | 12.0.1.0.0 |  | define buttons that do not require saving the form
-[web_calendar_slot_duration](web_calendar_slot_duration/) | 12.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
+[web_calendar_slot_duration](web_calendar_slot_duration/) | 12.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_company_color](web_company_color/) | 12.0.1.2.0 |  | Web Company Color
-[web_dashboard_tile](web_dashboard_tile/) | 12.0.2.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Overview Dashboards with Tiles
+[web_dashboard_tile](web_dashboard_tile/) | 12.0.2.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Overview Dashboards with Tiles
 [web_decimal_numpad_dot](web_decimal_numpad_dot/) | 12.0.1.0.0 |  | Allows using numpad dot to enter period decimal separator
 [web_dialog_size](web_dialog_size/) | 12.0.1.0.1 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_browser_autocomplete](web_disable_browser_autocomplete/) | 12.0.1.0.2 |  | Allow disable browser autocomplete.
@@ -6297,7 +6297,7 @@ addon | version | maintainers | summary
 [web_no_crawler](web_no_crawler/) | 12.0.1.0.1 |  | Disallow indexing completely via robots.txt
 [web_notify](web_notify/) | 12.0.1.0.1 |  | Send notification messages to user
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 12.0.1.0.3 |  | Web Pivot Computed Measure
-[web_pwa_oca](web_pwa_oca/) | 12.0.3.2.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
+[web_pwa_oca](web_pwa_oca/) | 12.0.3.2.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA
 [web_refresher](web_refresher/) | 12.0.1.0.0 |  | Web Refresher
 [web_responsive](web_responsive/) | 12.0.2.4.1 |  | Responsive web client, community-supported
 [web_responsive_company](web_responsive_company/) | 12.0.1.0.0 |  | Improve the diplay of the list of the companies
@@ -6307,9 +6307,9 @@ addon | version | maintainers | summary
 [web_set_single_page_hidden](web_set_single_page_hidden/) | 12.0.1.0.0 |  | Set single_page_hidden to false in Pager widget options
 [web_sheet_full_width](web_sheet_full_width/) | 12.0.1.0.1 |  | Use the whole available screen width when displaying sheets
 [web_switch_context_warning](web_switch_context_warning/) | 12.0.2.0.0 |  | Show a warning if current user, company or database have been switched in another tab or window.
-[web_timeline](web_timeline/) | 12.0.1.1.2 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 12.0.1.1.2 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time
 [web_translate_dialog](web_translate_dialog/) | 12.0.1.2.2 |  | Easy-to-use pop-up to translate fields in several languages
-[web_tree_duplicate](web_tree_duplicate/) | 12.0.1.0.0 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Duplicate records directly from the tree view.
+[web_tree_duplicate](web_tree_duplicate/) | 12.0.1.0.0 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Duplicate records directly from the tree view.
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 12.0.1.1.2 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 12.0.1.0.1 |  | Show images in tree views via tooltip
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 12.0.1.0.3 |  | Open the linked resource when clicking on their name
@@ -6317,11 +6317,11 @@ addon | version | maintainers | summary
 [web_view_calendar_column](web_view_calendar_column/) | 12.0.1.0.0 |  | Allow to define columns on calendars
 [web_view_calendar_list](web_view_calendar_list/) | 12.0.1.0.0 |  | Show calendars as a List
 [web_view_searchpanel](web_view_searchpanel/) | 12.0.1.0.2 |  | Kanban Search Panel
-[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 12.0.1.0.2 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | This widget allows to display charts using Bokeh library.
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 12.0.1.0.2 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | This widget allows to display charts using Bokeh library.
 [web_widget_child_selector](web_widget_child_selector/) | 12.0.1.0.0 |  | Widget used for navigation on hierarchy fields
 [web_widget_color](web_widget_color/) | 12.0.1.0.1 |  | Web Widget Color
 [web_widget_datepicker_fulloptions](web_widget_datepicker_fulloptions/) | 12.0.1.0.1 |  | Web Widget DatePicker Full Options
-[web_widget_digitized_signature](web_widget_digitized_signature/) | 12.0.2.1.0 | [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Web Widget Digitized Signature
+[web_widget_digitized_signature](web_widget_digitized_signature/) | 12.0.2.1.0 | <a href='https://github.com/mgosai'><img src='https://github.com/mgosai.png' width='32' height='32' style='border-radius:50%;' alt='mgosai'/></a> | Web Widget Digitized Signature
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 12.0.1.0.1 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 12.0.1.0.1 |  | This module adds support for dynamic dropdown widget
 [web_widget_dropdown_dynamic_example](web_widget_dropdown_dynamic_example/) | 12.0.1.0.1 |  | Demonstration of web_widget_dropdown_dynamic
@@ -6329,10 +6329,10 @@ addon | version | maintainers | summary
 [web_widget_image_download](web_widget_image_download/) | 12.0.1.0.0 |  | Allows to download any image from its widget
 [web_widget_image_url](web_widget_image_url/) | 12.0.1.1.0 |  | This module provides web widget for displaying image from URL
 [web_widget_image_webcam](web_widget_image_webcam/) | 12.0.1.0.0 |  | Allows to take image with WebCam
-[web_widget_json_graph](web_widget_json_graph/) | 12.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Draw json fields with graphs.
+[web_widget_json_graph](web_widget_json_graph/) | 12.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Draw json fields with graphs.
 [web_widget_many2many_tags_multi_selection](web_widget_many2many_tags_multi_selection/) | 12.0.1.0.1 |  | Tags multiple selection
 [web_widget_mermaid](web_widget_mermaid/) | 12.0.8.4.0 |  | Render mermaid markdown flowcharts
-[web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Easily display interactive 3D models on the web & in AR
+[web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Easily display interactive 3D models on the web & in AR
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 12.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 12.0.1.2.0 |  | Web Widget Numeric Step
 [web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.1 |  | Widget to select products on one2many fields
@@ -6410,7 +6410,7 @@ addon | version | maintainers | summary
 [website_legal_page](website_legal_page/) | 12.0.1.1.0 |  | Website Legal Page
 [website_logo](website_logo/) | 12.0.1.0.0 |  | Website company logo
 [website_media_size](website_media_size/) | 12.0.1.0.0 |  | This module shows the size of media in the media selector
-[website_megamenu](website_megamenu/) | 12.0.1.1.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Adds support for mega menus
+[website_megamenu](website_megamenu/) | 12.0.1.1.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Adds support for mega menus
 [website_menu_by_user_status](website_menu_by_user_status/) | 12.0.1.0.0 |  | Allow to manage the display of website.menus
 [website_no_crawler](website_no_crawler/) | 12.0.1.2.0 |  | Disables robots.txt for indexing by webcrawlers like Google
 [website_odoo_debranding](website_odoo_debranding/) | 12.0.1.0.0 |  | Remove Odoo Branding from Website
