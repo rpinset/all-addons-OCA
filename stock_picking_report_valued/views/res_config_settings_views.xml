@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- View res.config.settings form -->
+    <record id="view_res_config_settings_form" model="ir.ui.view">
+        <field name="name">view.res.config.settings.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@id='reception_report']" position="after">
+                <setting
+                    id="display_valued_in_picking"
+                    string="Print Picking Valued"
+                    help="Configure if the picking valued should be printed"
+                    groups="stock.group_stock_manager"
+                >
+                    <field name="display_valued_in_picking" />
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -47,6 +47,21 @@ msgid "<strong>Untaxed Amount</strong>"
 msgstr "<strong>Montant HT</strong>"
 
 #. module: stock_picking_report_valued
+#: model:ir.model,name:stock_picking_report_valued.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: stock_picking_report_valued
+#: model:ir.model,name:stock_picking_report_valued.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: stock_picking_report_valued
+#: model_terms:ir.ui.view,arch_db:stock_picking_report_valued.view_res_config_settings_form
+msgid "Configure if the picking valued should be printed"
+msgstr ""
+
+#. module: stock_picking_report_valued
 #: model:ir.model,name:stock_picking_report_valued.model_res_partner
 msgid "Contact"
 msgstr ""
@@ -57,9 +72,21 @@ msgid "Currency"
 msgstr "Devise"
 
 #. module: stock_picking_report_valued
+#: model:ir.model.fields,field_description:stock_picking_report_valued.field_res_company__display_valued_in_picking
+#: model:ir.model.fields,field_description:stock_picking_report_valued.field_res_config_settings__display_valued_in_picking
+#: model:ir.model.fields,field_description:stock_picking_report_valued.field_stock_picking__company_display_valued_in_picking
+msgid "Display Valued In Picking"
+msgstr ""
+
+#. module: stock_picking_report_valued
 #: model:ir.model.fields,field_description:stock_picking_report_valued.field_stock_move_line__sale_price_subtotal
 msgid "Price subtotal"
 msgstr "Sous-total"
+
+#. module: stock_picking_report_valued
+#: model_terms:ir.ui.view,arch_db:stock_picking_report_valued.view_res_config_settings_form
+msgid "Print Picking Valued"
+msgstr ""
 
 #. module: stock_picking_report_valued
 #: model:ir.model,name:stock_picking_report_valued.model_stock_move_line

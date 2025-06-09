@@ -1,0 +1,610 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * bi_view_editor
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: reporting-engine (8.0)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-21 05:51+0000\n"
+"PO-Revision-Date: 2024-04-29 10:36+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: Italian (http://www.transifex.com/oca/"
+"OCA-reporting-engine-8-0/language/it/)\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#, python-format
+msgid "#{props.field.model_name} (#{props.field.model})"
+msgstr "#{props.field.model_name} (#{props.field.model})"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid ""
+"%(msg_title)s\n"
+"\n"
+"%(msg_details)s\n"
+"%(group_list)s"
+msgstr ""
+"%(msg_title)s\n"
+"\n"
+"%(msg_details)s\n"
+"%(group_list)s"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (copia)"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#, python-format
+msgid "(join left)"
+msgstr "(join left)"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "Abstract models not supported."
+msgstr "I modelli astratti non sono supportati."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__action_id
+msgid "Action"
+msgstr "Azione"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "At least one of the following groups must be added:"
+msgstr "Aggiungere almeno uno dei seguenti gruppi:"
+
+#. module: bi_view_editor
+#: model:ir.model.fields.selection,name:bi_view_editor.selection__bve_view_line__list_attr__avg
+msgid "Average"
+msgstr "Media"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "BI View"
+msgstr "Vista BI"
+
+#. module: bi_view_editor
+#: model:ir.model,name:bi_view_editor.model_bve_view
+msgid "BI View Editor"
+msgstr "Editor vista BI"
+
+#. module: bi_view_editor
+#: model:ir.model,name:bi_view_editor.model_bve_view_line
+msgid "BI View Editor Lines"
+msgstr "Righe editor vista BI"
+
+#. module: bi_view_editor
+#: model:res.groups,name:bi_view_editor.group_bve_manager
+msgid "BI View Editor Manager"
+msgstr "Gestore editor vista BI"
+
+#. module: bi_view_editor
+#: model:ir.model,name:bi_view_editor.model_base
+msgid "Base"
+msgstr "Base"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__bve_view_id
+msgid "Bve View"
+msgstr "Vista Bve"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/join_node_dialog.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/bi_view_editor.xml:0
+#, python-format
+msgid "Clear"
+msgstr "Pulisci"
+
+#. module: bi_view_editor
+#: model_terms:ir.actions.act_window,help:bi_view_editor.action_bi_view_editor_view_form
+msgid "Click to create a Custom Query Object."
+msgstr "Clicca per creare un oggetto query personalizzato."
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__column
+#, python-format
+msgid "Column"
+msgstr "Colonna"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,help:bi_view_editor.field_bve_view__over_condition
+msgid ""
+"Condition to be inserted in the OVER part of the ID's row_number function.\n"
+"For instance, 'ORDER BY t1.id' would create IDs ordered in the same way as "
+"t1's IDs; otherwise IDs are assigned with no specific order."
+msgstr ""
+"Condizione da inserire nella parte OVER della funzione row_number dell'ID.\n"
+"Per esempio, 'ORDER BY t1.id' crea ID ordinati allo stesso modo degli ID di "
+"t1; in caso contrario, gli ID vengono assegnati senza un ordine specifico."
+
+#. module: bi_view_editor
+#: model:ir.model,name:bi_view_editor.model_wizard_ir_model_menu_create
+msgid "Create Menu Wizard"
+msgstr "Procedura guidata crea menu"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Create a Menu"
+msgstr "Crea un menu"
+
+#. module: bi_view_editor
+#: model:ir.model.fields.selection,name:bi_view_editor.selection__bve_view__state__created
+msgid "Created"
+msgstr "Creato"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__create_uid
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__create_date
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#: model:ir.model.constraint,message:bi_view_editor.constraint_bve_view_name_uniq
+#, python-format
+msgid "Custom BI View names must be unique!"
+msgstr "Il nome della vista BI personalizzata deve essere unico!"
+
+#. module: bi_view_editor
+#: model:ir.actions.act_window,name:bi_view_editor.action_bi_view_editor_view_form
+#: model:ir.ui.menu,name:bi_view_editor.menu_bi_view_editor_custom_reports
+#: model:ir.ui.menu,name:bi_view_editor.menu_bi_view_editor_view
+msgid "Custom BI Views"
+msgstr "Viste BI personalizzate"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__data
+msgid "Data"
+msgstr "Dati"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__description
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Details"
+msgstr "Dettagli"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__display_name
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: bi_view_editor
+#: model:ir.model.fields.selection,name:bi_view_editor.selection__bve_view__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "ER Diagram"
+msgstr "Diagramma ER"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__er_diagram_image
+msgid "Er Diagram Image"
+msgstr "Immagine del diagramma ER"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid ""
+"Error creating the view '{query}':\n"
+"{error}"
+msgstr ""
+"Errore nel creare la vista '{query}':\n"
+"{error}"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__field_id
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Field"
+msgstr "Campo"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view_line.py:0
+#, python-format
+msgid ""
+"Field %(field_model)s/%(field_name)s is duplicated.\n"
+"Please remove the duplications."
+msgstr ""
+"il campo %(field_model)s/%(field_name)s è duplicato.\n"
+"Rimuovere i duplicati."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__field_name
+msgid "Field Name"
+msgstr "Nome campo"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__field_ids
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Fields"
+msgstr "Campi"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "Following fields are missing: %(missing_fields)s."
+msgstr "Mancano i segenti campi: %(missing_fields)s."
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid ""
+"Following models are missing: %s.\n"
+"Probably some modules were uninstalled."
+msgstr ""
+"I seguenti modelli sono mancanti: %s.\n"
+"Probabilmente qualche modulo è stato disinstallato."
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Generate BI View"
+msgstr "Generare vista BI"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__group_ids
+msgid "Groups"
+msgstr "Gruppi"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__id
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__in_list
+msgid "In List"
+msgstr "In lista"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "Inconsistent lines."
+msgstr "Linee incoerenti."
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#, python-format
+msgid "Join Left"
+msgstr "Join Left"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__join_model_id
+msgid "Join Model"
+msgstr "Join con il modello"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__join_node
+msgid "Join Node"
+msgstr "Nodo di join"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/join_node_dialog.esm.js:0
+#, python-format
+msgid "Join..."
+msgstr "Join..."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view____last_update
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__write_uid
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__write_date
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__left_join
+msgid "Left Join"
+msgstr "Left Join"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__line_ids
+msgid "Lines"
+msgstr "Righe"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#, python-format
+msgid "List"
+msgstr "Elenco"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__list_attr
+msgid "List Attribute"
+msgstr "Attributo elenco"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__measure
+#, python-format
+msgid "Measure"
+msgstr "Misura"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__model_id
+#, python-format
+msgid "Model"
+msgstr "Modello"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__model_name
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__model_name
+msgid "Model Name"
+msgstr "Nome modello"
+
+#. module: bi_view_editor
+#: model:ir.model,name:bi_view_editor.model_ir_model
+msgid "Models"
+msgstr "Modelli"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__name
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__name
+#, python-format
+msgid "Name"
+msgstr "Nome"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/models.py:0
+#, python-format
+msgid "No data to be displayed."
+msgstr "Nessun dato da visualizzare."
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "No data to process."
+msgstr "Nessuna dato da elaborare."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__note
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Notes"
+msgstr "Note"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Open BI View"
+msgstr "Apri vista BI"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#, python-format
+msgid "Options"
+msgstr "Opzioni"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__over_condition
+msgid "Over Condition"
+msgstr "Condizione superiore"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__query
+msgid "Query"
+msgstr "Query"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Query Builder"
+msgstr "Costruttore query"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__relation
+msgid "Relation"
+msgstr "Relazione"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__relation_ids
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Relations"
+msgstr "Relazioni"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Reset to Draft"
+msgstr "Reimposta a bozza"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/field_list.xml:0
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__row
+#, python-format
+msgid "Row"
+msgstr "Riga"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "SQL"
+msgstr "SQL"
+
+#. module: bi_view_editor
+#: model_terms:ir.ui.view,arch_db:bi_view_editor.view_bi_view_editor_view_form
+msgid "Security"
+msgstr "Sicurezza"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__state
+msgid "State"
+msgstr "Stato"
+
+#. module: bi_view_editor
+#: model:ir.model.fields.selection,name:bi_view_editor.selection__bve_view_line__list_attr__sum
+msgid "Sum"
+msgstr "Somma"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__table_alias
+msgid "Table Alias"
+msgstr "Alias tabella"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid ""
+"The model \"%s\" cannot be accessed by users with the selected groups only."
+msgstr ""
+"Il modello \"%s\" non è accessibile solo agli utenti con i gruppi "
+"selezionati."
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view_line.py:0
+#, python-format
+msgid "This field cannot be a measure."
+msgstr "Questo campo non può essere una misura."
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view_line.py:0
+#, python-format
+msgid "This field cannot be a row or a column."
+msgstr "Questo campo non può essere una riga o una colonna."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__ttype
+msgid "Type"
+msgstr "Tipo"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/join_node_dialog.xml:0
+#, python-format
+msgid "Use the existing node"
+msgstr "Utilizza il nodo esistente"
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/join_node_dialog.xml:0
+#, python-format
+msgid "Use the field"
+msgstr "Utilizza il campo"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,help:bi_view_editor.field_bve_view__data
+msgid ""
+"Use the special query builder to define the query to generate your report "
+"dataset. NOTE: To be edited, the query should be in 'Draft' status."
+msgstr ""
+"Utilizzare il costruttore query speciale per definire la query che genera il "
+"set di dati del resoconto. NOTA: per essere modificata, la query deve essere "
+"nello stato \"Bozza\"."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,help:bi_view_editor.field_bve_view__group_ids
+msgid ""
+"User groups allowed to see the generated report; if NO groups are specified "
+"the report will be public for everyone."
+msgstr ""
+"Gruppi di utenti autorizzati a vedere il resoconto generato; se NON vengono "
+"specificati gruppi, il resoconto sarà pubblico per tutti."
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__user_ids
+msgid "Users"
+msgstr "Utenti"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view__view_id
+msgid "View"
+msgstr "Vista"
+
+#. module: bi_view_editor
+#: model:ir.model.fields,field_description:bi_view_editor.field_bve_view_line__view_field_type
+msgid "View Field Type"
+msgstr "Tipo campo vista"
+
+#. module: bi_view_editor
+#. odoo-python
+#: code:addons/bi_view_editor/models/bve_view.py:0
+#, python-format
+msgid "You cannot delete a created view! Reset the view to draft first."
+msgstr ""
+"Non è possibile eliminare una vista creata! Ripristina prima la vista in "
+"modalità bozza."
+
+#. module: bi_view_editor
+#. odoo-javascript
+#: code:addons/bi_view_editor/static/src/components/bi_view_editor/join_node_dialog.xml:0
+#, python-format
+msgid "new"
+msgstr "nuovo"
+
+#~ msgid "Error"
+#~ msgstr "Error"
