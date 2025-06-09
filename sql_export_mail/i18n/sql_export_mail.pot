@@ -25,6 +25,22 @@ msgid ""
 msgstr ""
 
 #. module: sql_export_mail
+#. odoo-python
+#: code:addons/sql_export_mail/models/sql_export.py:0
+#, python-format
+msgid ""
+"A query that uses the company_id or user_id parameter cannot be directly "
+"sent to a partner."
+msgstr ""
+
+#. module: sql_export_mail
+#: model:ir.model.fields,help:sql_export_mail.field_sql_export__mail_partner_ids
+msgid ""
+"Add the partners who wants to receive the report by e-mail. You need to link"
+" the sql query with a cron to send a mail automatically"
+msgstr ""
+
+#. module: sql_export_mail
 #: model:ir.model.fields,help:sql_export_mail.field_sql_export__mail_user_ids
 msgid ""
 "Add the users who want to receive the report by e-mail. You need to link the"
@@ -64,6 +80,23 @@ msgstr ""
 #. module: sql_export_mail
 #: model:ir.model.fields,field_description:sql_export_mail.field_sql_export__mail_condition
 msgid "Mail Condition"
+msgstr ""
+
+#. module: sql_export_mail
+#: model:ir.model.fields,field_description:sql_export_mail.field_sql_export__mail_partner_ids
+msgid "Mail Partner"
+msgstr ""
+
+#. module: sql_export_mail
+#. odoo-python
+#: code:addons/sql_export_mail/models/sql_export.py:0
+#, python-format
+msgid "Missing email address for partner(s): %(names)s"
+msgstr ""
+
+#. module: sql_export_mail
+#: model_terms:ir.ui.view,arch_db:sql_export_mail.sql_export_mail_view_form
+msgid "Partners Notified by e-mail"
 msgstr ""
 
 #. module: sql_export_mail

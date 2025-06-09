@@ -3,7 +3,7 @@
 
 {
     "name": "Purchase Lot",
-    "version": "16.0.1.1.0",
+    "version": "16.0.2.0.0",
     "category": "Purchase",
     "license": "AGPL-3",
     "author": "Akretion, Odoo Community Association (OCA)",

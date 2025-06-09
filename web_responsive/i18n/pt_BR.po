@@ -29,20 +29,6 @@ msgstr "Tudo"
 
 #. module: web_responsive
 #. odoo-javascript
-#: code:addons/web_responsive/static/src/components/chatter_topbar/chatter_topbar.xml:0
-#, python-format
-msgid "Attachment counter loading..."
-msgstr "Carregando do contador de anexos..."
-
-#. module: web_responsive
-#. odoo-javascript
-#: code:addons/web_responsive/static/src/components/chatter_topbar/chatter_topbar.xml:0
-#, python-format
-msgid "Attachments"
-msgstr "Anexos"
-
-#. module: web_responsive
-#. odoo-javascript
 #: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
 #, python-format
 msgid "CLEAR"
@@ -69,6 +55,13 @@ msgstr "FILTRAR"
 #, python-format
 msgid "Home Menu"
 msgstr "Menu Inicial"
+
+#. module: web_responsive
+#. odoo-javascript
+#: code:addons/web_responsive/static/src/components/chatter_topbar/chatter_topbar.xml:0
+#, python-format
+msgid "Log note"
+msgstr "Nota de Registro"
 
 #. module: web_responsive
 #. odoo-javascript
@@ -122,22 +115,29 @@ msgstr "Procurar..."
 
 #. module: web_responsive
 #. odoo-javascript
+#: code:addons/web_responsive/static/src/components/chatter_topbar/chatter_topbar.xml:0
+#, python-format
+msgid "Send message"
+msgstr "Enviar menssagem"
+
+#. module: web_responsive
+#. odoo-javascript
 #: code:addons/web_responsive/static/src/components/control_panel/control_panel.xml:0
 #, python-format
 msgid "View switcher"
 msgstr "Ver alternador"
 
 #, python-format
+#~ msgid "Attachment counter loading..."
+#~ msgstr "Carregando do contador de anexos..."
+
+#, python-format
+#~ msgid "Attachments"
+#~ msgstr "Anexos"
+
+#, python-format
 #~ msgid "Activities"
 #~ msgstr "Atividades"
-
-#, python-format
-#~ msgid "Log note"
-#~ msgstr "Nota de Registro"
-
-#, python-format
-#~ msgid "Send message"
-#~ msgstr "Enviar menssagem"
 
 #, python-format
 #~ msgid "Create"

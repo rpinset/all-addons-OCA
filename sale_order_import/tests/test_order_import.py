@@ -87,6 +87,18 @@ class TestOrderImport(TestCommon):
                 parsed_order_up_no_price_unit, order, "order"
             )
 
+    def test_order_import_action(self):
+        wiz = self.wiz_model.create({"import_type": "xml"})
+        action = wiz.create_order_return_action(self.parsed_order, "order.ref")
+        order = self.env["sale.order"].browse(action["res_id"])
+        self.assertEqual(order.state, "draft")
+
+    def test_order_import_confirm(self):
+        wiz = self.wiz_model.create({"import_type": "xml", "confirm_order": True})
+        action = wiz.create_order_return_action(self.parsed_order, "order.ref")
+        order = self.env["sale.order"].browse(action["res_id"])
+        self.assertEqual(order.state, "sale")
+
     def test_order_import_default_so_vals(self):
         default = {"client_order_ref": "OVERRIDE"}
         order = self.wiz_model.with_context(
@@ -168,30 +180,3 @@ class TestOrderImport(TestCommon):
 
         self.assertEqual(len(so.order_line), 2)
         self.assertEqual(so.order_line[0].product_uom_qty, 3)
-
-    def test_confirm_order(self):
-        # Prepare test data
-        order_file_data = base64.b64encode(
-            b"<?xml version='1.0' encoding='utf-8'?><root><foo>baz</foo></root>"
-        )
-        order_filename = "test_order.xml"
-        mock_parse_order = mock.patch.object(type(self.wiz_model), "parse_xml_order")
-        # Create a new form
-        with Form(
-            self.wiz_model.with_context(
-                default_order_filename=order_filename,
-                default_confirm_order=True,
-            )
-        ) as form:
-            with mock_parse_order as mocked:
-                # Return 'rfq' for doc_type
-                mocked.return_value = "rfq"
-                # Set values for the required fields
-                form.import_type = "xml"
-                form.order_file = order_file_data
-                # Test the button with the simulated values
-                mocked.return_value = self.parsed_order
-                action = form.save().import_order_button()
-                so = self.env["sale.order"].browse(action["res_id"])
-                # Check the state of the order
-                self.assertEqual(so.state, "sale")

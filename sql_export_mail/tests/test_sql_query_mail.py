@@ -53,6 +53,13 @@ class TestExportSqlQueryMail(TransactionCase):
         )
         self.check_execution()
 
+    def test_sql_query_mail_partner(self):
+        """Check if emails are sent to partners"""
+        self.check_before_change()
+        partner = self.env.ref("base.res_partner_2")
+        self.sql_report_demo.write({"mail_partner_ids": [(4, partner.id)]})
+        self.check_execution(partner)
+
     def check_before_change(self):
         """Check if there are no mails before changing the sql report"""
         mails = self.env["mail.mail"].search(
@@ -60,7 +67,7 @@ class TestExportSqlQueryMail(TransactionCase):
         )
         self.assertFalse(mails)
 
-    def check_execution(self):
+    def check_execution(self, partner=None):
         """Check if the cron could be created and the mail sending is working"""
         self.sql_report_demo.create_cron()
         self.assertTrue(self.sql_report_demo.cron_ids)
@@ -70,3 +77,5 @@ class TestExportSqlQueryMail(TransactionCase):
         )
         self.assertTrue(mails)
         self.assertTrue(mails.attachment_ids)
+        if partner:
+            self.assertIn(partner.email, mails.mapped("email_to"))
