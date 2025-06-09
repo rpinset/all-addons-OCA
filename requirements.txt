@@ -106,7 +106,10 @@ zeep
 # generated from manifests external_dependencies
 pyfrdas2>=0.5
 python-stdnum
+requests_oauthlib
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
+# generated from manifests external_dependencies
+chardet
 # From [https://github.com/OCA/l10n-greece.git](https://github.com/OCA/l10n-greece.git)
 # From [https://github.com/OCA/l10n-india.git](https://github.com/OCA/l10n-india.git)
 # From [https://github.com/OCA/l10n-indonesia.git](https://github.com/OCA/l10n-indonesia.git)
@@ -135,6 +138,7 @@ python-dateutil
 # generated from manifests external_dependencies
 chardet
 suds-py3
+unidecode
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
