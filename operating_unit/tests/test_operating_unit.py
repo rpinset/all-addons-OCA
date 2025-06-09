@@ -140,14 +140,28 @@ class TestOperatingUnit(common.TransactionCase):
             limit=1,
         )
         partner = self.env["res.partner"].search([], limit=1)
+
         with Form(self.env["res.users"], view="base.view_users_form") as user_form:
             user_form.default_operating_unit_id = nou[0]
+            user_form.name = "Test Customer"
+            user_form.login = "test2"
+
+            # Initially operating_unit_ids is not editable
+            with self.assertRaises(AssertionError):
+                user_form.operating_unit_ids._assert_editable()
+
+            # The field is only editable after saving
+            user_form.save()
             with user_form.operating_unit_ids.new() as line:
                 line.partner_id = partner
                 line.name = "Test Unit"
                 line.code = "007"
-            user_form.name = "Test Customer"
-            user_form.login = "test2"
+
+        self.env["res.users"].browse(user_form.id).groups_id += self.grp_ou_mngr
+        user_form = Form(self.env["res.users"], view="base.view_users_form")
+        # operating_unit_ids is pre-filled and readonly if the user is OU manager
+        with self.assertRaises(AssertionError):
+            user_form.operating_unit_ids._assert_editable()
 
     def test_03_operating_unit(self):
         """
@@ -169,7 +183,7 @@ class TestOperatingUnit(common.TransactionCase):
         ou_company_2 = self._create_operating_unit(
             self.user1.id, "Test Company", "TESTC", self.company_2
         )
-        self.user1.assigned_operating_unit_ids += ou_company_2
+        self.user1.operating_unit_ids += ou_company_2
         self.assertEqual(
             self.res_users_model.with_company(
                 self.company_2

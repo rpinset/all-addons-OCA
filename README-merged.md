@@ -615,7 +615,7 @@ addon | version | maintainers | summary
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 15.0.1.0.0 |  | Operating Unit in MRP
 [mrp_operating_unit_access_all](mrp_operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Access all OUs' MRP
-[operating_unit](operating_unit/) | 15.0.1.0.7 |  | An operating unit (OU) is an organizational entity part of a company
+[operating_unit](operating_unit/) | 15.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [project_operating_unit](project_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
 [purchase_operating_unit](purchase_operating_unit/) | 15.0.1.2.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
@@ -2466,6 +2466,7 @@ addon | version | maintainers | summary
 [survey_result_mail](survey_result_mail/) | 15.0.1.1.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Send survey answers to the survey user
 [survey_sale_generation](survey_sale_generation/) | 15.0.2.2.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate sale orders from surveys
 [survey_skip_start](survey_skip_start/) | 15.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Skip the surveys start screen and go directly to fill the form
+[survey_xlsx](survey_xlsx/) | 15.0.1.0.0 |  | XLSX Report to show the survey results
 
 [//]: # (end addons)
 
@@ -5708,7 +5709,7 @@ addon | version | maintainers | summary
 [product_multi_barcode](product_multi_barcode/) | 15.0.1.0.0 |  | Multiple barcodes on products
 [product_supplierinfo_barcode](product_supplierinfo_barcode/) | 15.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Add a barcode to supplier pricelist items
 [stock_barcodes](stock_barcodes/) | 15.0.3.3.0 |  | It provides read barcode on stock operations.
-[stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.1.0 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
+[stock_barcodes_elaboration](stock_barcodes_elaboration/) | 15.0.1.1.1 |  | Extends barcode reader module to show elaboration infointo secondary unit data.
 [stock_barcodes_gs1](stock_barcodes_gs1/) | 15.0.3.1.1 |  | It provides read GS1 barcode on stock operations.
 [stock_barcodes_gs1_expiry](stock_barcodes_gs1_expiry/) | 15.0.1.0.0 |  | It provides read expiry dates from GS1 barcode on stock operations.
 [stock_barcodes_gs1_secondary_unit](stock_barcodes_gs1_secondary_unit/) | 15.0.1.1.0 |  | It provides read package from GS1 barcode stored into secondary unit data.
@@ -8189,7 +8190,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [github_connector](github_connector/) | 15.0.2.0.1 |  | Synchronize information from Github repositories
-[github_connector_odoo](github_connector_odoo/) | 15.0.2.1.0 |  | Analyze Odoo modules information from Github repositories
+[github_connector_odoo](github_connector_odoo/) | 15.0.2.1.1 |  | Analyze Odoo modules information from Github repositories
 
 [//]: # (end addons)
 

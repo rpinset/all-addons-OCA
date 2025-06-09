@@ -105,11 +105,16 @@ Date:   Wed Jun 4 02:34:14 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 28a8d28cb6d83b67ceb23996b8768ba0e1d20c9e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:20:10 2025 +0000
+commit a9dfdedae1fbb3a092460ebb6e39ebe9ed5f659b
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jun 6 13:09:05 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: operating-unit-15.0/operating-unit-15.0-operating_unit
+    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-operating_unit/
 
 
 ## intrastat
@@ -403,11 +408,11 @@ Date:   Wed Jun 4 02:52:37 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 43b69a7c629048b6568c1ed1cef4242c8a258802
+commit 93747000f5a8a9d558a1d84f6f6ccea599b1e9e0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:56:18 2025 +0000
+Date:   Sun Jun 8 13:56:35 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## knowledge
@@ -989,11 +994,11 @@ Date:   Wed Jun 4 02:48:03 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit d8b3f9c2db707c1adc338d2a33b804c435abf95b
+commit 97426ae353fca799cf3b338f748821726667ac0f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:49:03 2025 +0000
+Date:   Mon Jun 9 09:58:42 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## stock-logistics-workflow
@@ -1347,11 +1352,16 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 4ef15ac3422e94e274aa09f66e6b23a2ed75163f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:45:59 2025 +0000
+commit 81a8c8d2fe72b1f205be97e619f2bc956130ed25
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 9 11:36:58 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: server-ux-15.0/server-ux-15.0-base_search_custom_field_filter
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_search_custom_field_filter/it/
 
 
 ## community-data-files
@@ -1374,11 +1384,11 @@ Date:   Sun Feb 9 19:20:08 2025 +0000
 
 ## interface-github
 From [https://github.com/OCA/interface-github.git](https://github.com/OCA/interface-github.git)
-commit b002e9ba5c94cbe03f933d0d4023327d081db914
-Author: oca-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Feb 2 18:59:04 2025 +0000
+commit f57a30cf96d88dcb21cfafca8c1ec8820471489e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jun 8 13:41:10 2025 +0000
 
-    [IMP] update dotfiles
+    [BOT] post-merge updates
 
 
 ## iot
