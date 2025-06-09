@@ -1469,11 +1469,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit ac5ad21609faecf1333a226b3a46b40b74aa88af
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:45:40 2025 +0000
+commit 175266bbfab1d5df3671814585dee609c1a69b85
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 9 11:40:46 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (37 of 37 strings)
+    
+    Translation: server-ux-13.0/server-ux-13.0-mass_editing
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_editing/it/
 
 
 ## community-data-files
