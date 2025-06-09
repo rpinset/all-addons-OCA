@@ -59,6 +59,18 @@ class TestOrderImport(TestCommon):
         self.assertEqual(len(order.order_line), 2)
         self.assertEqual(int(order.order_line[0].product_uom_qty), 3)
 
+    def test_order_import_action(self):
+        wiz = self.wiz_model.create({})
+        action = wiz.create_order_return_action(self.parsed_order, "order.ref")
+        order = self.env["sale.order"].browse(action["res_id"])
+        self.assertEqual(order.state, "draft")
+
+    def test_order_import_confirm(self):
+        wiz = self.wiz_model.create({"confirm_order": True})
+        action = wiz.create_order_return_action(self.parsed_order, "order.ref")
+        order = self.env["sale.order"].browse(action["res_id"])
+        self.assertEqual(order.state, "sale")
+
     def test_order_import_default_so_vals(self):
         default = {"client_order_ref": "OVERRIDE"}
         order = self.wiz_model.with_context(

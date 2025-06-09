@@ -437,6 +437,11 @@ msgid "Last Updated on"
 msgstr "Modifié le"
 
 #. module: mail_tracking
+#: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_message_id
+msgid "Mail Message"
+msgstr ""
+
+#. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_ir_mail_server
 #, fuzzy
 msgid "Mail Server"
@@ -502,7 +507,6 @@ msgstr ""
 
 #. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
-#: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__tracking_email_id
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
@@ -821,9 +825,3 @@ msgstr ""
 #, python-format
 msgid "Waiting"
 msgstr ""
-
-#~ msgid "Message tracking"
-#~ msgstr "Destinataire du courriel"
-
-#~ msgid "Tracking partner"
-#~ msgstr "Partenaire suivi"

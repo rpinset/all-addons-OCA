@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="demo_edi_sale_ubl_input_so_out" model="edi.exchange.type">
+        <field name="backend_type_id" ref="edi_ubl_oca.edi_backend_type_ubl" />
+        <field name="backend_id" ref="edi_ubl_oca.edi_backend_ubl_demo" />
+        <field name="name">Demo UBL Sale Order Response (edi_sale_ubl_input_oca)</field>
+        <field name="code">demo_edi_sale_ubl_input_so_out</field>
+        <field name="direction">output</field>
+        <field name="exchange_filename_pattern">{record_name}-{type.code}-{dt}</field>
+        <field name="exchange_file_ext">xml</field>
+        <field
+            name="state_workflow_ids"
+            eval="[(6, 0, [
+              ref('edi_sale_ubl_oca.edi_sale_order_state_workflow'),
+              ref('edi_sale_ubl_oca.edi_sale_order_line_state_workflow')
+            ])]"
+        />
+    </record>
+
+    <record id="demo_edi_sale_ubl_input_so_in" model="edi.exchange.type">
+        <field name="backend_type_id" ref="edi_ubl_oca.edi_backend_type_ubl" />
+        <field name="backend_id" ref="edi_ubl_oca.edi_backend_ubl_demo" />
+        <field name="ack_type_id" ref="demo_edi_sale_ubl_input_so_out" />
+        <field name="name">Demo UBL Sale Order (edi_sale_ubl_input_oca)</field>
+        <field name="code">demo_edi_sale_ubl_input_so_in</field>
+        <field name="direction">input</field>
+        <field name="exchange_file_ext">xml</field>
+        <field
+            name="state_workflow_ids"
+            eval="[(6, 0, [
+              ref('edi_sale_ubl_oca.edi_sale_order_state_workflow'),
+              ref('edi_sale_ubl_oca.edi_sale_order_line_state_workflow')
+            ])]"
+        />
+        <field name="advanced_settings_edit">
+components:
+    process:
+        usage: input.process.sale.order
+        # Pass all additional arguments to the sale.order.import wizard via ctx keys.
+        # To add more selective features to the wizard, it's recommended to add new fields
+        # and control them via default values.
+        # Example:
+        env_ctx:
+          # Values for the wizard
+          default_confirm_order: false
+          default_price_source: 'pricelist'
+        </field>
+    </record>
+
+</odoo>

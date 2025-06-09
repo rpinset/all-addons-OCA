@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Camptocamp SA
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="view_order_form_orig">
+        <field name="name">sale.order.form (in edi_sale_UBL)</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']/tree/field[@name='name']"
+                position="before"
+            >
+                <field name="edi_state_id" optional="hide" readonly="1" />
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']/form//field[@name='analytic_tag_ids']"
+                position="after"
+            >
+                <field name="edi_state_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_order_form">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="edi_sale_oca.view_order_form" />
+        <field name="arch" type="xml">
+            <field name="origin_exchange_type_id" position="after">
+                <field name="edi_state_id" optional="hide" readonly="1" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

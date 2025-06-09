@@ -14,18 +14,22 @@ class XPathGetter(object):
     _missing = etree.Element("Missing")
 
     def __init__(self, element, namespaces):
+        self.element = element
         self._xpath = element.xpath
         self._ns = namespaces
 
-    def xpath(self, path):
+    def xpath(self, path, wrap=False):
         # Return a list of elements
         items = self._xpath(path, namespaces=self._ns)
+        if wrap:
+            return [self.__class__(x, self._ns) for x in items]
         return items
 
-    def xpath_get(self, path):
+    def xpath_get(self, path, wrap=False):
         # Return 1 element
         items = self._xpath(path, namespaces=self._ns)
-        return items[0] if items else self._missing
+        item = items[0] if items else self._missing
+        return self.__class__(item, self._ns) if wrap else item
 
     def xpath_text(self, path, default=False):
         # Return text or False

@@ -175,25 +175,24 @@ class VatStatement(models.Model):
             vat = zml.vat.replace(" ", "").replace("-", "")
             if vat not in res:
                 res[vat] = {
-                    "1_country": vat[:2],
-                    "2_vat": vat[2:],
-                    "3_amount_products": zml.amount_products,
-                    "4_amount_services": zml.amount_services,
+                    "1_vat": vat,
+                    "2_amount_products": zml.amount_products,
+                    "3_amount_services": zml.amount_services,
                 }
             else:
-                res[vat]["3_amount_products"] += zml.amount_products
-                res[vat]["4_amount_services"] += zml.amount_services
+                res[vat]["2_amount_products"] += zml.amount_products
+                res[vat]["3_amount_services"] += zml.amount_services
         lines = [
             ["Laenderkennzeichen", "USt-IdNr.", "Betrag(Euro)", "Art der Leistung"]
         ]
         for vat in res:
             v = res[vat]
-            amount_products = self._round_zm_amount(v["3_amount_products"])
+            amount_products = self._round_zm_amount(v["2_amount_products"])
             if amount_products:
-                lines.append([v["1_country"], v["2_vat"], amount_products, "L"])
-            amount_services = self._round_zm_amount(v["4_amount_services"])
+                lines.append([v["1_vat"], amount_products, "L"])
+            amount_services = self._round_zm_amount(v["3_amount_services"])
             if amount_services:
-                lines.append([v["1_country"], v["2_vat"], amount_services, "S"])
+                lines.append([v["1_vat"], amount_services, "S"])
         return lines
 
     def zm_download(self):
@@ -204,7 +203,7 @@ class VatStatement(models.Model):
             ",".join(str(i) for i in line)
             for line in self._generate_zm_download_lines()
         )
-        zm_download_base64 = base64.b64encode(zm_download.encode("iso-8859-15"))
+        zm_download_base64 = base64.b64encode(zm_download.encode())
         attachment_id = self.env["ir.attachment"].create(
             {
                 "name": "{}.csv".format(self.name),

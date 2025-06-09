@@ -58,6 +58,11 @@ msgid "Commercial Entity"
 msgstr ""
 
 #. module: sale_order_import
+#: model:ir.model.fields,field_description:sale_order_import.field_sale_order_import__confirm_order
+msgid "Confirm Order"
+msgstr ""
+
+#. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid "Create New"
 msgstr ""
@@ -129,15 +134,15 @@ msgstr ""
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid ""
-"If it is a PDF file, Odoo will try to find an XML file in the attachments of"
-" the PDF file and then use this XML file to create the quotation."
+"If it is a PDF file, Odoo will try to find an XML file in the attachments of "
+"the PDF file and then use this XML file to create the quotation."
 msgstr ""
 
 #. module: sale_order_import
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid ""
-"If it is an XML file, Odoo will parse it if the module that adds support for"
-" this XML format is installed. For the"
+"If it is an XML file, Odoo will parse it if the module that adds support for "
+"this XML format is installed. For the"
 msgstr ""
 
 #. module: sale_order_import
@@ -223,8 +228,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale_order_import.sale_order_import_form
 msgid ""
 "Some quotations have been found for this customer ; one of them may "
-"correspond to the order or RFQ that you are importing. You can either select"
-" an existing quotation to update or create a new one."
+"correspond to the order or RFQ that you are importing. You can either select "
+"an existing quotation to update or create a new one."
 msgstr ""
 
 #. module: sale_order_import
@@ -252,8 +257,8 @@ msgstr ""
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid ""
-"The quantity has been updated on the order line with product '%s' from %s to"
-" %s %s"
+"The quantity has been updated on the order line with product '%s' from %s to "
+"%s %s"
 msgstr ""
 
 #. module: sale_order_import
@@ -293,8 +298,7 @@ msgstr ""
 #. module: sale_order_import
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
-msgid ""
-"This quotation has been updated automatically via the import of file %s"
+msgid "This quotation has been updated automatically via the import of file %s"
 msgstr ""
 
 #. module: sale_order_import
@@ -306,7 +310,6 @@ msgid ""
 msgstr ""
 
 #. module: sale_order_import
-#: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #: code:addons/sale_order_import/wizard/sale_order_import.py:0
 #, python-format
 msgid ""
@@ -344,8 +347,8 @@ msgstr ""
 #. module: sale_order_import
 #: model:ir.model.fields,help:sale_order_import.field_sale_order_import__order_file
 msgid ""
-"Upload a Request for Quotation or an Order file. Supported formats: CSV, XML"
-" and PDF (PDF with an embeded XML file)."
+"Upload a Request for Quotation or an Order file. Supported formats: CSV, XML "
+"and PDF (PDF with an embeded XML file)."
 msgstr ""
 
 #. module: sale_order_import

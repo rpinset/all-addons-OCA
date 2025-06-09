@@ -63,6 +63,7 @@
                         name="price_source"
                         attrs="{'invisible': [('doc_type', '!=', 'order')], 'required': [('doc_type', '=', 'order')]}"
                     />
+                    <field name="confirm_order" />
                 </group>
                 <footer>
                     <button

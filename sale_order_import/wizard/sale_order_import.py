@@ -53,6 +53,7 @@ class SaleOrderImport(models.TransientModel):
         "res.partner", string="Shipping Address", readonly=True
     )
     sale_id = fields.Many2one("sale.order", string="Quotation to Update")
+    confirm_order = fields.Boolean(default=False)
 
     @api.onchange("order_file")
     def order_file_change(self):
@@ -312,23 +313,33 @@ class SaleOrderImport(models.TransientModel):
                 )
             )
 
+    # TODO: I wonder why these methods are model methods
     @api.model
-    def create_order(self, parsed_order, price_source, order_filename=None):
+    def create_order(
+        self, parsed_order, price_source, order_filename=None, confirm_order=False
+    ):
         soo = self.env["sale.order"].with_context(mail_create_nosubscribe=True)
         bdio = self.env["business.document.import"]
         so_vals = self._prepare_order(parsed_order, price_source)
         order = soo.create(so_vals)
+        if confirm_order:
+            order.action_confirm()
         bdio.post_create_or_update(parsed_order, order, doc_filename=order_filename)
         logger.info("Sale Order ID %d created", order.id)
         return order
 
     @api.model
-    def create_order_ws(self, parsed_order, price_source, order_filename=None):
+    def create_order_ws(
+        self, parsed_order, price_source, order_filename=None, confirm_order=False
+    ):
         """Same method as create_order() but callable via JSON-RPC
         webservice. Returns an ID to avoid this error:
         TypeError: sale.order(15,) is not JSON serializable"""
         order = self.create_order(
-            parsed_order, price_source, order_filename=order_filename
+            parsed_order,
+            price_source,
+            order_filename=order_filename,
+            confirm_order=confirm_order,
         )
         return order.id
 
@@ -409,7 +420,12 @@ class SaleOrderImport(models.TransientModel):
     # TODO: add tests
     def create_order_return_action(self, parsed_order, order_filename):
         self.ensure_one()
-        order = self.create_order(parsed_order, self.price_source, order_filename)
+        order = self.create_order(
+            parsed_order,
+            self.price_source,
+            order_filename,
+            confirm_order=self._order_should_be_confirmed(),
+        )
         order.message_post(
             body=_("Created automatically via file import (%s).") % self.order_filename
         )
@@ -423,6 +439,10 @@ class SaleOrderImport(models.TransientModel):
             }
         )
         return action
+
+    def _order_should_be_confirmed(self):
+        # Hook to override behavior
+        return self.confirm_order
 
     # TODO: add tests
     @api.model

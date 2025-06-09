@@ -3,7 +3,10 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
 
 import base64
+import textwrap
 from unittest import mock
+
+from odoo.tools import mute_logger
 
 from odoo.addons.component.tests.common import SavepointComponentCase
 from odoo.addons.edi_oca.tests.common import EDIBackendTestMixin
@@ -43,6 +46,31 @@ class TestProcessComponent(SavepointComponentCase, EDIBackendTestMixin):
             )
             self.assertEqual(wiz.order_filename, self.record.exchange_filename)
             self.assertEqual(wiz.price_source, "pricelist")
+            md_onchange.assert_called()
+
+    @mute_logger("odoo.addons.edi_sale_input_oca.components.process")
+    def test_wizard_setup_deprecated_settings(self):
+        self.exc_type.advanced_settings_edit = textwrap.dedent(
+            """
+            components:
+                process:
+                    usage: input.process.sale.order
+            sale_order_import:
+                confirm_order: true
+            """
+        )
+        comp = self.backend._get_component(self.record, "process")
+        with mock.patch.object(
+            type(self.wiz_model), "order_file_change"
+        ) as md_onchange:
+            wiz = comp._setup_wizard()
+            self.assertEqual(wiz._name, self.wiz_model._name)
+            self.assertEqual(
+                base64.b64decode(wiz.order_file), b"<fake><order></order></fake>"
+            )
+            self.assertEqual(wiz.order_filename, self.record.exchange_filename)
+            self.assertEqual(wiz.price_source, "pricelist")
+            self.assertEqual(wiz.confirm_order, True)
             md_onchange.assert_called()
 
     # In both tests here we don"t care about the specific format of the import.

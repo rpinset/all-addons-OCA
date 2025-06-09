@@ -15,6 +15,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. module: operating_unit
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_users_form
+msgid ""
+"<span class=\"fa fa-warning\" colspan=\"2\" attrs=\"{'invisible': "
+"[('operating_unit_readonly', '=', False)]}\">\n"
+"                        If the user is Manager of Operating Units\n"
+"                        they will always have all OUs assigned\n"
+"                    </span>"
+msgstr ""
+
+#. module: operating_unit
 #: model:ir.model.fields,field_description:operating_unit.field_operating_unit__active
 msgid "Active"
 msgstr ""
@@ -106,6 +116,11 @@ msgid "Operating Unit"
 msgstr ""
 
 #. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_res_users__operating_unit_readonly
+msgid "Operating Unit Readonly"
+msgstr ""
+
+#. module: operating_unit
 #: model:ir.actions.act_window,name:operating_unit.action_operating_unit_tree
 #: model:ir.model.fields,field_description:operating_unit.field_res_users__assigned_operating_unit_ids
 #: model:ir.ui.menu,name:operating_unit.menu_action_operating_unit_tree
@@ -126,6 +141,13 @@ msgstr ""
 #. module: operating_unit
 #: model_terms:ir.ui.view,arch_db:operating_unit.view_operating_unit_search
 msgid "Search Operating Unit"
+msgstr ""
+
+#. module: operating_unit
+#: model:ir.model.fields,help:operating_unit.field_res_users__assigned_operating_unit_ids
+msgid ""
+"Technical field. Refer to `operating_unit_ids` if you need to check if an OU "
+"is assigned to a user."
 msgstr ""
 
 #. module: operating_unit
