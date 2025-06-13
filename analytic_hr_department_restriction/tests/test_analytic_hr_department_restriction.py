@@ -76,7 +76,7 @@ class TestAnalyticHrDepartmentRestriction(BaseCommon):
         cls.plan_a = cls.env["account.analytic.plan"].create(
             {
                 "name": "Test plan A",
-                "department_id": cls.department_a.id,
+                "department_ids": [Command.set(cls.department_a.ids)],
                 "company_id": cls.env.company.id,
             }
         )
@@ -84,14 +84,14 @@ class TestAnalyticHrDepartmentRestriction(BaseCommon):
             {
                 "name": "Test account A",
                 "plan_id": cls.plan_a.id,
-                "department_id": cls.department_a.id,
+                "department_ids": [Command.set(cls.department_a.ids)],
                 "company_id": cls.env.company.id,
             }
         )
         cls.plan_b = cls.env["account.analytic.plan"].create(
             {
                 "name": "Test plan B",
-                "department_id": cls.department_b.id,
+                "department_ids": [Command.set(cls.department_b.ids)],
                 "company_id": cls.env.company.id,
             }
         )
@@ -99,7 +99,7 @@ class TestAnalyticHrDepartmentRestriction(BaseCommon):
             {
                 "name": "Test account B",
                 "plan_id": cls.plan_b.id,
-                "department_id": cls.department_b.id,
+                "department_ids": [Command.set(cls.department_b.ids)],
                 "company_id": cls.env.company.id,
             }
         )

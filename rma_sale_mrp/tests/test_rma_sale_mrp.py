@@ -110,7 +110,7 @@ class TestRmaSaleMrp(TestRmaSaleBase):
         )
         order.user_id = user.id
         rma.reception_move_id.quantity_done = rma.product_uom_qty
-        rma.reception_move_id.picking_id._action_done()
+        rma.reception_move_id._action_done()
         # All the component RMAs must be received if we want to make a refund
         with self.assertRaises(UserError):
             rma.action_refund()
@@ -119,7 +119,7 @@ class TestRmaSaleMrp(TestRmaSaleBase):
             additional_rma.reception_move_id.quantity_done = (
                 additional_rma.product_uom_qty
             )
-            additional_rma.reception_move_id.picking_id._action_done()
+            additional_rma.reception_move_id._action_done()
         rma.action_refund()
         self.assertEqual(rma.refund_id.user_id, user)
         # The component RMAs get automatically refunded

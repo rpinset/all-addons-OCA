@@ -5,7 +5,11 @@
         <field name="inherit_id" ref="analytic.account_analytic_plan_form_view" />
         <field name="arch" type="xml">
             <xpath expr="//group//field[@name='company_id']" position="before">
-                <field name="department_id" groups="account.group_account_invoice" />
+                <field
+                    name="department_ids"
+                    widget="many2many_tags"
+                    groups="account.group_account_invoice"
+                />
             </xpath>
         </field>
     </record>
@@ -20,7 +24,8 @@
                     groups="!base.group_multi_company"
                 />
                 <field
-                    name="department_id"
+                    name="department_ids"
+                    widget="many2many_tags"
                     groups="account.group_account_invoice"
                     optional="hide"
                 />

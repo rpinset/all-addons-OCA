@@ -19,6 +19,6 @@ If you want to have a technical name to reference::
 
     class StorageBackend(models.Model):
         _name = "storage.backend"
-        _inherit = ["storage.backend", "server.env.techname.mixin", "server.env.mixin"]
+        _inherit = ["storage.backend", "server.env.techname.mixin"]
 
         [...]

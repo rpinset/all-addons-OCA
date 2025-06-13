@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="sale_commission_form_lines_mod_country" model="ir.ui.view">
+        <field name="name">commission.form.view.inherit.country</field>
+        <field name="model">commission</field>
+        <field name="priority">19</field>
+        <field
+            name="inherit_id"
+            ref="sale_commission_product_criteria.sale_commission_form_lines_mod"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='item_ids']/tree//field[@name='name']"
+                position="after"
+            >
+                <field name="country_id" optional="show" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="commission_item_tree_view_country" model="ir.ui.view">
+        <field name="name">commission.item.tree.country</field>
+        <field name="model">commission.item</field>
+        <field name="priority">19</field>
+        <field
+            name="inherit_id"
+            ref="sale_commission_product_criteria.commission_item_tree_view"
+        />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="country_id" optional="show" />
+            </field>
+        </field>
+    </record>
+
+    <record id="commission_item_form_view_country" model="ir.ui.view">
+        <field name="name">commission.item.form.country</field>
+        <field name="model">commission.item</field>
+        <field name="priority">19</field>
+        <field
+            name="inherit_id"
+            ref="sale_commission_product_criteria.commission_item_form_view"
+        />
+        <field name="arch" type="xml">
+            <field name="applied_on" position="after">
+                <field name="country_id" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

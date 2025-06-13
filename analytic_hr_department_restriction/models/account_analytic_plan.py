@@ -7,8 +7,8 @@ from odoo import fields, models
 class AccountAnalyticPlan(models.Model):
     _inherit = "account.analytic.plan"
 
-    department_id = fields.Many2one(
+    department_ids = fields.Many2many(
         comodel_name="hr.department",
-        string="Department",
+        string="Departments",
         domain="['|',('company_id', '=?', company_id),('company_id', '=', False)]",
     )

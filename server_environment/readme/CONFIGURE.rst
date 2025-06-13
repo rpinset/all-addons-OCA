@@ -102,4 +102,5 @@ Server environment integration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Read the documentation of the class `models/server_env_mixin.py
-<models/server_env_mixin.py>`_.
+<models/server_env_mixin.py>`_ and `models/server_env_tech_name_mixin.py
+<models/server_env_tech_name_mixin.py>`_

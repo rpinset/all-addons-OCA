@@ -70,6 +70,7 @@ msgstr ""
 
 #. module: server_environment
 #: model:ir.model.fields,field_description:server_environment.field_server_env_mixin__server_env_defaults
+#: model:ir.model.fields,field_description:server_environment.field_server_env_techname_mixin__server_env_defaults
 msgid "Server Env Defaults"
 msgstr ""
 
