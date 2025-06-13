@@ -97,4 +97,5 @@ Note: empty environment keys always take precedence over default fields
 ## Server environment integration
 
 Read the documentation of the class
-[models/server_env_mixin.py](models/server_env_mixin.py).
+[models/server_env_mixin.py](models/server_env_mixin.py) and [models/server_env_tech_name_mixin.py]
+(models/server_env_tech_name_mixin.py)

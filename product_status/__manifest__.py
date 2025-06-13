@@ -4,12 +4,12 @@
 {
     "name": "Product Status",
     "summary": "Product Status Computed From Fields",
-    "version": "17.0.1.1.0",
+    "version": "17.0.1.2.0",
     "category": "Product",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/product-attribute",
     "license": "AGPL-3",
-    "depends": ["product", "product_state"],
+    "depends": ["product", "product_state_sale"],
     "data": [
         "data/ir_cron.xml",
         "data/function_deactive_default_product_state_data.xml",

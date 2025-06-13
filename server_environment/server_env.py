@@ -308,11 +308,11 @@ class ServerConfiguration(models.TransientModel):
     @api.model
     def _is_secret(self, key):
         """
-        This method is intended to be inherited to defined which keywords
-        should be secret.
-        :return: list of secret keywords
+        This method is intended to be inherited to define which values
+        should be kept secret.
+        :return: True if information has to be protected, False otherwise
         """
-        secret_keys = ["passw", "key", "secret", "token"]
+        secret_keys = ["_pass", "passw", "key", "secret", "token"]
         return any(secret_key in key for secret_key in secret_keys)
 
     @api.model
