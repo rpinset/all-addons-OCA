@@ -36,11 +36,9 @@ msgid "Procurement Group"
 msgstr "Grupo de adquisiciones"
 
 #. module: sale_stock_delivery_address
-#: model:ir.model,name:sale_stock_delivery_address.model_sale_order
-msgid "Sales Order"
-msgstr "Órdenes de venta"
-
-#. module: sale_stock_delivery_address
 #: model:ir.model,name:sale_stock_delivery_address.model_sale_order_line
 msgid "Sales Order Line"
 msgstr "Línea Pedido de Venta"
+
+#~ msgid "Sales Order"
+#~ msgstr "Órdenes de venta"

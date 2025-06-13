@@ -336,11 +336,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 7984b2ad10029e6ec4727cb1c7b971a83e86d9e2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:38:59 2025 +0000
+commit 43e39d6d7568badadf7a65bcf11399db24b2fda3
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 12 10:51:46 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_stock_delivery_address
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_stock_delivery_address/
 
 
 ## crm
