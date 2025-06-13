@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2025 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="outstanding_statement_wizard_view" model="ir.ui.view">
+        <field
+            name="name"
+        >Include RiBa fields in outstanding statement wizard form view</field>
+        <field name="model">outstanding.statement.wizard</field>
+        <field
+            name="inherit_id"
+            ref="partner_statement.outstanding_statement_wizard_view"
+        />
+        <field name="arch" type="xml">
+            <field name="account_type" position="after">
+                <field name="l10n_it_show_riba" />
+            </field>
+        </field>
+    </record>
+</odoo>

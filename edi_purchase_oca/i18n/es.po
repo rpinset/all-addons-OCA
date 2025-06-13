@@ -22,12 +22,18 @@ msgid "<span class=\"o_stat_text\">EDI</span>"
 msgstr "<span class=\"o_stat_text\">EDI</span>"
 
 #. module: edi_purchase_oca
+#: model:ir.model,name:edi_purchase_oca.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: edi_purchase_oca
 #: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__disable_edi_auto
 msgid "Disable auto"
 msgstr "Deshabilitar auto"
 
 #. module: edi_purchase_oca
 #: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__display_name
 msgid "Display Name"
 msgstr "Mostrar Nombre"
 
@@ -45,6 +51,12 @@ msgstr "Tipo de intercambio de origen EDI"
 #: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__origin_exchange_record_id
 msgid "EDI origin record"
 msgstr "Registro de origen EDI"
+
+#. module: edi_purchase_oca
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__edi_purchase_conf_ids
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_users__edi_purchase_conf_ids
+msgid "EDI purchase configuration"
+msgstr ""
 
 #. module: edi_purchase_oca
 #: model:ir.model.fields,help:edi_purchase_oca.field_purchase_order__origin_exchange_record_id
@@ -78,13 +90,20 @@ msgstr "Registros de intercambio"
 
 #. module: edi_purchase_oca
 #: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order__id
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner__id
 msgid "ID"
 msgstr "ID"
 
 #. module: edi_purchase_oca
 #: model:ir.model.fields,field_description:edi_purchase_oca.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:edi_purchase_oca.field_res_partner____last_update
 msgid "Last Modified on"
 msgstr "Última actualización el"
+
+#. module: edi_purchase_oca
+#: model_terms:ir.ui.view,arch_db:edi_purchase_oca.view_partner_form
+msgid "Purchase"
+msgstr ""
 
 #. module: edi_purchase_oca
 #: model:ir.model,name:edi_purchase_oca.model_purchase_order

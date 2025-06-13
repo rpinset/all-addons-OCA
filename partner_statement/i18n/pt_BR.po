@@ -675,6 +675,22 @@ msgid "Show Balance column"
 msgstr ""
 
 #. module: partner_statement
+#: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__show_only_overdue
+#: model:ir.model.fields,field_description:partner_statement.field_detailed_activity_statement_wizard__show_only_overdue
+#: model:ir.model.fields,field_description:partner_statement.field_outstanding_statement_wizard__show_only_overdue
+#: model:ir.model.fields,field_description:partner_statement.field_statement_common_wizard__show_only_overdue
+msgid "Show Only Overdue"
+msgstr ""
+
+#. module: partner_statement
+#: model:ir.model.fields,help:partner_statement.field_activity_statement_wizard__show_only_overdue
+#: model:ir.model.fields,help:partner_statement.field_detailed_activity_statement_wizard__show_only_overdue
+#: model:ir.model.fields,help:partner_statement.field_outstanding_statement_wizard__show_only_overdue
+#: model:ir.model.fields,help:partner_statement.field_statement_common_wizard__show_only_overdue
+msgid "Show only lines due before the selected date"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model,name:partner_statement.model_statement_common
 msgid "Statement Reports Common"
 msgstr "Relatórios de Extrato Comuns"

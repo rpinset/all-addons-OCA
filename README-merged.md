@@ -347,7 +347,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 14.0.1.6.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[partner_statement](partner_statement/) | 14.0.1.7.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -1377,7 +1377,7 @@ addon | version | maintainers | summary
 [base_export_async](base_export_async/) | 14.0.1.0.1 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 14.0.1.0.2 |  | Import CSV files in the background
 [export_async_schedule](export_async_schedule/) | 14.0.1.0.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Generate and send exports by emails on a schedule
-[queue_job](queue_job/) | 14.0.3.11.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
+[queue_job](queue_job/) | 14.0.3.13.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 14.0.1.0.2 |  | Job Queue Batch
 [queue_job_context](queue_job_context/) | 14.0.1.0.1 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> | Queue Job, prepare context before enqueue keys
 [queue_job_cron](queue_job_cron/) | 14.0.2.0.0 |  | Scheduled Actions as Queue Jobs
@@ -2833,10 +2833,11 @@ addon | version | maintainers | summary
 [edi_endpoint_oca](edi_endpoint_oca/) | 14.0.1.5.2 |  | Base module allowing configuration of custom endpoints for EDI framework.
 [edi_exchange_template_oca](edi_exchange_template_oca/) | 14.0.1.6.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allows definition of exchanges via templates.
 [edi_exchange_template_party_data](edi_exchange_template_party_data/) | 14.0.1.0.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Glue module betweeb edi_exchange_template and edi_party_data
-[edi_oca](edi_oca/) | 14.0.1.26.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
+[edi_oca](edi_oca/) | 14.0.1.27.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_party_data_oca](edi_party_data_oca/) | 14.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow to configure and retrieve party information for EDI exchanges.
 [edi_pdf2data_oca](edi_pdf2data_oca/) | 14.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Module that allows to import data from a pdf
-[edi_purchase_oca](edi_purchase_oca/) | 14.0.1.0.0 |  | Define EDI Configuration for Purchase Orders
+[edi_purchase_oca](edi_purchase_oca/) | 14.0.1.1.0 |  | Define EDI Configuration for Purchase Orders
+[edi_purchase_ubl_output_oca](edi_purchase_ubl_output_oca/) | 14.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Handle outbound exchanges for purchases.
 [edi_sale_endpoint](edi_sale_endpoint/) | 14.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Glue module between edi_sale_oca and edi_endpoint_oca.
 [edi_sale_input_oca](edi_sale_input_oca/) | 14.0.1.2.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Process incoming sale orders with the EDI framework.
 [edi_sale_oca](edi_sale_oca/) | 14.0.2.2.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Configuration and special behaviors for EDI on sales.
@@ -4780,7 +4781,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 14.0.2.6.1 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 14.0.1.0.3 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 14.0.1.0.0 |  | Invio fatture elettroniche tramite SDICoop
-[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 14.0.1.1.2 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
+[l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 14.0.1.1.3 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 14.0.1.1.1 |  | ITA - Tipi di documento fiscale per dichiarativi
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 14.0.1.1.0 |  | Condizioni di pagamento delle fatture elettroniche
 [l10n_it_fiscalcode](l10n_it_fiscalcode/) | 14.0.1.0.3 |  | ITA - Codice fiscale
@@ -4792,6 +4793,7 @@ addon | version | maintainers | summary
 [l10n_it_ipa](l10n_it_ipa/) | 14.0.1.0.2 |  | ITA - Codice IPA
 [l10n_it_location_nuts](l10n_it_location_nuts/) | 14.0.1.1.0 |  | Opzioni NUTS specifiche per l'Italia
 [l10n_it_mis_reports_pl_bs](l10n_it_mis_reports_pl_bs/) | 14.0.1.0.0 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> | Modelli "MIS Builder" per il conto economico e lo stato patrimoniale
+[l10n_it_partner_statement_riba](l10n_it_partner_statement_riba/) | 14.0.1.1.0 |  | Visualizzare le RiBa negli estratti conto cliente.
 [l10n_it_payment_reason](l10n_it_payment_reason/) | 14.0.1.1.0 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
 [l10n_it_pec](l10n_it_pec/) | 14.0.1.0.0 |  | Aggiunge il campo email PEC al partner
 [l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 14.0.1.0.0 |  | Gestione dati fattura elettronica del cliente all'internodell'interfaccia del POS
@@ -4799,7 +4801,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.11 |  | Inversione contabile
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | <a href='https://github.com/odooNextev'><img src='https://github.com/odooNextev.png' width='32' height='32' style='border-radius:50%;' alt='odooNextev'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Modulo ponte tra provvigioni agenti e RiBa
-[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.15.0 |  | Ricevute bancarie
+[l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.18.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Usare gli standard CBI per SEPA Credit Transfer
 [l10n_it_sdd_cbi](l10n_it_sdd_cbi/) | 14.0.1.0.1 |  | Create SEPA files for CBI SDD Italy
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI

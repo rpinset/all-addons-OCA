@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2025 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <template
+        id="outstanding_balance"
+        inherit_id="partner_statement.outstanding_balance"
+    >
+        <xpath
+            expr="//table[hasclass('table-statement')]/thead/tr/th[last()]"
+            position="before"
+        >
+            <th t-if="l10n_it_show_riba" name="l10n_it_riba_state_th">
+                RiBa
+            </th>
+        </xpath>
+        <xpath
+            expr="//table[hasclass('table-statement')]/tbody/tr[1]/td[last()]"
+            position="before"
+        >
+            <td t-if="l10n_it_show_riba" name="l10n_it_riba_state_td">
+                <span t-if="line['l10n_it_riba_payment']" class="fa fa-check" />
+            </td>
+        </xpath>
+        <!-- The last line shows the total, add an empty cell to keep it aligned. -->
+        <xpath
+            expr="//table[hasclass('table-statement')]/tbody/tr[last()]/td[last()]"
+            position="before"
+        >
+            <td t-if="l10n_it_show_riba" name="l10n_it_riba_state_last_td" />
+        </xpath>
+    </template>
+</odoo>

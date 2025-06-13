@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-05-07 18:36+0000\n"
-"Last-Translator: Anna Martínez <anna080678@gmail.com>\n"
+"PO-Revision-Date: 2025-06-13 18:28+0000\n"
+"Last-Translator: \"Pedro M. Baeza\" <pedro.baeza@tecnativa.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_statement_import_txt_xlsx
 #: code:addons/account_statement_import_txt_xlsx/models/account_statement_import_sheet_parser.py:0
@@ -107,17 +107,17 @@ msgstr "Columna Nombre del banco"
 #. module: account_statement_import_txt_xlsx
 #: model:ir.model,name:account_statement_import_txt_xlsx.model_account_statement_import_sheet_mapping
 msgid "Bank Statement Import Sheet Mapping"
-msgstr "Mapeo de hojas de importación de extractos bancarios"
+msgstr "Mapeos de importación de extractos"
 
 #. module: account_statement_import_txt_xlsx
 #: model:ir.model,name:account_statement_import_txt_xlsx.model_account_statement_import_sheet_mapping_wizard
 msgid "Bank Statement Import Sheet Mapping Wizard"
-msgstr "Asistente de Hojas de Importación de Extractos Bancarios"
+msgstr "Asistente de mapeos de importación de extractos"
 
 #. module: account_statement_import_txt_xlsx
 #: model:ir.model,name:account_statement_import_txt_xlsx.model_account_statement_import_sheet_parser
 msgid "Bank Statement Import Sheet Parser"
-msgstr "Analizador de Hojas de Importación de Extractos Bancarios"
+msgstr "Analizador de la hoja de importación de extractos"
 
 #. module: account_statement_import_txt_xlsx
 #: code:addons/account_statement_import_txt_xlsx/models/account_statement_import_sheet_parser.py:0
@@ -497,7 +497,7 @@ msgstr "Mapa de Importación de Extracto"
 #: model:ir.actions.act_window,name:account_statement_import_txt_xlsx.action_statement_import_sheet_report_mappings
 #: model:ir.ui.menu,name:account_statement_import_txt_xlsx.menu_statement_import_sheet_mapping
 msgid "Statement Sheet Mappings"
-msgstr "Asignaciones de Hojas de Estados Financieros"
+msgstr "Mapeos de importación de extractos"
 
 #. module: account_statement_import_txt_xlsx
 #: model_terms:ir.ui.view,arch_db:account_statement_import_txt_xlsx.account_statement_import_form

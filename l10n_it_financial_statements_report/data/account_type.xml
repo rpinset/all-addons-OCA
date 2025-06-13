@@ -61,7 +61,7 @@
         <field name="financial_statements_report_section" eval="'liabilities'" />
     </record>
     <record model="account.account.type" id="account.data_account_type_prepayments">
-        <field name="financial_statements_report_section" eval="'liabilities'" />
+        <field name="financial_statements_report_section" eval="'assets'" />
     </record>
     <record
         model="account.account.type"
