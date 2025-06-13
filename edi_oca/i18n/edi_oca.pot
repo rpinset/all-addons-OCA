@@ -113,19 +113,19 @@ msgid "ACK exchange"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:305
+#: code:addons/edi_oca/models/edi_exchange_record.py:308
 #, python-format
 msgid "ACK file is required for this exchange but not found."
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:306
+#: code:addons/edi_oca/models/edi_exchange_record.py:309
 #, python-format
 msgid "ACK file received but contains errors."
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:304
+#: code:addons/edi_oca/models/edi_exchange_record.py:307
 #, python-format
 msgid "ACK file received."
 msgstr ""
@@ -166,7 +166,7 @@ msgid "Action Needed"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:360
+#: code:addons/edi_oca/models/edi_exchange_record.py:363
 #, python-format
 msgid "Action retry: state moved back to '%s'"
 msgstr ""
@@ -210,7 +210,7 @@ msgid "Allow Empty Files"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:297
+#: code:addons/edi_oca/models/edi_exchange_record.py:300
 #, python-format
 msgid "An error happened while sending. Please check exchange record info."
 msgstr ""
@@ -252,7 +252,7 @@ msgid "Backend Type"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:283
+#: code:addons/edi_oca/models/edi_exchange_record.py:286
 #, python-format
 msgid "Backend must match with exchange type's backend!"
 msgstr ""
@@ -275,7 +275,7 @@ msgid "Backend type code must be unique!"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:288
+#: code:addons/edi_oca/models/edi_exchange_record.py:291
 #, python-format
 msgid "Backend type must match with exchange type's backend type!"
 msgstr ""
@@ -500,7 +500,7 @@ msgid "Edi Has Form Config"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:296
+#: code:addons/edi_oca/models/edi_backend.py:307
 #, python-format
 msgid "Empty files are not allowed for exchange type %s (%s)"
 msgstr ""
@@ -612,7 +612,7 @@ msgid "Exchange Type"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:295
+#: code:addons/edi_oca/models/edi_exchange_record.py:298
 #, python-format
 msgid "Exchange data generated"
 msgstr ""
@@ -628,55 +628,60 @@ msgid "Exchange error"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:303
+#: model:ir.model.fields,field_description:edi_oca.field_edi_exchange_record__exchange_error_traceback
+msgid "Exchange error traceback"
+msgstr ""
+
+#. module: edi_oca
+#: code:addons/edi_oca/models/edi_exchange_record.py:306
 #, python-format
 msgid "Exchange not received"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:307
+#: code:addons/edi_oca/models/edi_exchange_record.py:310
 #, python-format
 msgid "Exchange not valid"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:300
+#: code:addons/edi_oca/models/edi_exchange_record.py:303
 #, python-format
 msgid "Exchange processed successfully"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:301
+#: code:addons/edi_oca/models/edi_exchange_record.py:304
 #, python-format
 msgid "Exchange processed with errors"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:302
+#: code:addons/edi_oca/models/edi_exchange_record.py:305
 #, python-format
 msgid "Exchange received successfully"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:281
+#: code:addons/edi_oca/models/edi_backend.py:292
 #, python-format
 msgid "Exchange record ID=%d already has a file to process!"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:273
+#: code:addons/edi_oca/models/edi_backend.py:284
 #, python-format
 msgid "Exchange record ID=%d is not an outgoing record, cannot be generated"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:265
+#: code:addons/edi_oca/models/edi_backend.py:276
 #, python-format
 msgid "Exchange record ID=%d is not in draft state and has already an output value."
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:296
+#: code:addons/edi_oca/models/edi_exchange_record.py:299
 #, python-format
 msgid "Exchange sent"
 msgstr ""
@@ -687,7 +692,7 @@ msgid "Exchange state"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_exchange_record.py:160
+#: code:addons/edi_oca/models/edi_exchange_record.py:163
 #, python-format
 msgid "Exchange state must respect direction!"
 msgstr ""
@@ -1096,26 +1101,26 @@ msgid "Record ID"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:493
+#: code:addons/edi_oca/models/edi_backend.py:507
 #, python-format
 msgid "Record ID=%d has no file to process!"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:381
+#: code:addons/edi_oca/models/edi_backend.py:395
 #, python-format
 msgid "Record ID=%d has no file to send!"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:486
-#: code:addons/edi_oca/models/edi_backend.py:601
+#: code:addons/edi_oca/models/edi_backend.py:500
+#: code:addons/edi_oca/models/edi_backend.py:623
 #, python-format
 msgid "Record ID=%d is not meant to be processed"
 msgstr ""
 
 #. module: edi_oca
-#: code:addons/edi_oca/models/edi_backend.py:377
+#: code:addons/edi_oca/models/edi_backend.py:391
 #, python-format
 msgid "Record ID=%d is not meant to be sent!"
 msgstr ""

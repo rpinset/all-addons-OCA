@@ -17,6 +17,7 @@
                 <field name="exchanged_on" />
                 <field name="ack_received_on" />
                 <field name="edi_exchange_state" />
+                <field name="exchange_error" />
             </tree>
         </field>
     </record>
@@ -144,9 +145,10 @@
                         <page
                             name="error"
                             string="Error"
-                            attrs="{'invisible': [('exchange_error', '=', False)]}"
+                            attrs="{'invisible': [('exchange_error_traceback', '=', False)]}"
                         >
                             <field name="exchange_error" />
+                            <field name="exchange_error_traceback" />
                         </page>
                         <!-- FIXME: this `invisible` domain does not work -->
                         <page

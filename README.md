@@ -371,11 +371,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3bcb2f834b62c49ce1f3f709bfbdb116df227ed0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:37:22 2025 +0000
+commit c70c86f929692cce676388645c63eee1a9a8a8d5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jun 12 06:32:15 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 66.6% (10 of 15 strings)
+    
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_start_end_dates
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_start_end_dates/it/
 
 
 ## crm
@@ -490,11 +495,16 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 24aa720ec58462576c503a243506a51e8ef63512
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:50:54 2025 +0000
+commit 143d3863831ccc8c6bc406ea5ce1826522ec696c
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 12 15:08:13 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-12.0/edi-12.0-edi_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-12-0/edi-12-0-edi_oca/
 
 
 ## field-service
