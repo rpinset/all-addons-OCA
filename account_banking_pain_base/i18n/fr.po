@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-10 02:10+0000\n"
-"PO-Revision-Date: 2025-06-02 14:26+0000\n"
+"PO-Revision-Date: 2025-06-12 16:26+0000\n"
 "Last-Translator: EvaS595 <eva.saintier@horanet.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
@@ -145,7 +145,7 @@ msgstr "Transfert de gestion de trésorerie"
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_line__category_purpose
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_bank_payment_line__category_purpose
 msgid "Category Purpose"
-msgstr "Catégorie de la nature du paiement"
+msgstr "Catégorie du motif de paiement"
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_order__charge_bearer
@@ -391,7 +391,7 @@ msgstr "Couverture du risque"
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__priority__high
 msgid "High"
-msgstr "Élevé"
+msgstr "Élevée"
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__hltc
@@ -439,7 +439,7 @@ msgid ""
 "category purpose, leave the field empty."
 msgstr ""
 "Si votre banque et vos réglementations locales ne vous imposent pas de "
-"définir une catégorie de nature, laissez ce champ vide."
+"définir une catégorie de motif, laissez ce champ vide."
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields,help:account_banking_pain_base.field_account_payment_order__batch_booking
@@ -621,7 +621,7 @@ msgstr "Aucun emplacement XSD trouvé pour la méthode de paiement \"%s\""
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__priority__norm
 msgid "Normal"
-msgstr "Normal"
+msgstr "Normale"
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__nows
@@ -742,7 +742,7 @@ msgstr "Achat vente de services"
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_account_payment_line__purpose
 #: model:ir.model.fields,field_description:account_banking_pain_base.field_bank_payment_line__purpose
 msgid "Purpose"
-msgstr "Nature"
+msgstr "Motif"
 
 #. module: account_banking_pain_base
 #: model:ir.model.fields.selection,name:account_banking_pain_base.selection__account_payment_line__purpose__rlwy

@@ -177,11 +177,16 @@ Date:   Thu Oct 3 08:18:23 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 59dbd75c0de27bb5c50139555ea55f993f3c5f49
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:39:05 2025 +0000
+commit c150db07abd411642d2f7770997067ace7e403db
+Author: EvaS595 <eva.saintier@horanet.com>
+Date:   Thu Jun 12 14:17:12 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (171 of 171 strings)
+    
+    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/fr/
 
 
 ## account-reconcile
@@ -204,16 +209,16 @@ Date:   Wed Jun 4 02:39:44 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 591af04104cbb203ebc60cc1fd5d27e01faaaa77
+commit 9846b25cde5ad98252ed86c1155f350d7ab54f1f
 Author: EvaS595 <eva.saintier@horanet.com>
-Date:   Thu Jun 5 07:58:10 2025 +0000
+Date:   Thu Jun 12 15:10:03 2025 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (36 of 36 strings)
+    Currently translated at 100.0% (17 of 17 strings)
     
-    Translation: account-payment-13.0/account-payment-13.0-account_payment_return_import
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_payment_return_import/fr/
+    Translation: account-payment-13.0/account-payment-13.0-account_due_list_days_overdue
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_due_list_days_overdue/fr/
 
 
 ## connector
