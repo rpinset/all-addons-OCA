@@ -14,17 +14,18 @@ class ServerEnvTechNameMixin(models.AbstractModel):
     This mixin helps solve the problem by providing a tech name field
     and a cleanup machinery as well as a unique constrain.
 
-    To use this mixin add it to the _inherit attr of your module like:
+    To use this mixin add it to the _inherit attr of your model like:
+    (instead of `server.env.mixin`)
 
         _inherit = [
             "my.model",
             "server.env.techname.mixin",
-            "server.env.mixin",
         ]
 
     """
 
     _name = "server.env.techname.mixin"
+    _inherit = "server.env.mixin"
     _description = "Server environment technical name"
     _sql_constraints = [
         (

@@ -1,0 +1,13 @@
+- [Tecnativa](https://www.tecnativa.com):
+  - Vicent Cubells \<<vicent.cubells@tecnativa.com>\>
+- [DynApps](https://www.dynapps.be):
+  - Raf Ven \<<raf.ven@dynapps.be>\>
+- [Dinamiche Aziendali srl](https://www.dinamicheaziendali.it):
+  - Giuseppe Borruso \<<gborruso@dinamicheaziendali.it>\>
+- [Camptocamp](https://www.camptocamp.com)
+  - Iván Todorovich \<<ivan.todorovich@camptocamp.com>\>
+- [Vauxoo](https://www.vauxoo.com)
+  - Jesús Valdez \<<jvaldez@vauxoo.com>\>
+- [Vauxoo](https://www.vauxoo.com)
+  - José Ibarra \<<josei@vauxoo.com>\>
+- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`_
