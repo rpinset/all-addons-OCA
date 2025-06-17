@@ -119,6 +119,8 @@ chardet
 # generated from manifests external_dependencies
 openupgradelib
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
+# generated from manifests external_dependencies
+jaconv
 # From [https://github.com/OCA/l10n-luxemburg.git](https://github.com/OCA/l10n-luxemburg.git)
 # From [https://github.com/OCA/l10n-macedonia.git](https://github.com/OCA/l10n-macedonia.git)
 # From [https://github.com/OCA/l10n-mexico.git](https://github.com/OCA/l10n-mexico.git)
@@ -224,6 +226,8 @@ pysftp
 sentry_sdk>=2.0.0,<=2.22.0
 # From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
 # generated from manifests external_dependencies
+email_validator
+lxml
 pysaml2
 python-jose
 # From [https://github.com/OCA/server-env.git](https://github.com/OCA/server-env.git)
