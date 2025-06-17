@@ -14,6 +14,8 @@
         "hr_timesheet",
         "hr_timesheet_time_type",
         "sale_timesheet_line_exclude",
+        "helpdesk_mgmt_timesheet",
+        "helpdesk_timesheet_time_type",
     ],
     "data": [
         "views/project_time_type_view.xml",

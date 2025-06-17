@@ -115,5 +115,10 @@ class FastApiDispatcher(Dispatcher):
         token = odoo_env_ctx.set(env)
         try:
             yield
+            # Flush here to ensure all pending computations are being executed with
+            #  authenticated fastapi user before exiting this context manager, as it
+            #  would otherwise be done using the public user on the commit of the DB
+            #  cursor, what could potentially lead to inconsistencies or AccessError.
+            env.flush_all()
         finally:
             odoo_env_ctx.reset(token)
