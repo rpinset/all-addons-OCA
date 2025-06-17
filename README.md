@@ -993,16 +993,16 @@ Date:   Wed Jun 4 03:48:50 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 458cb31c2a09a0bf7236ab5517df1c1b21678b59
+commit 775917780ccef492dc7e4925b634962cd9cff129
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 08:27:06 2025 +0000
+Date:   Sat Jun 14 06:44:20 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (14 of 14 strings)
     
-    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_move_line_auto_fill
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_move_line_auto_fill/it/
+    Translation: stock-logistics-workflow-12.0/stock-logistics-workflow-12.0-stock_picking_invoice_link
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-12-0/stock-logistics-workflow-12-0-stock_picking_invoice_link/it/
 
 
 ## stock-logistics-tracking
