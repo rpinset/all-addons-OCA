@@ -397,6 +397,7 @@ addon | version | maintainers | summary
 [account_invoice_report_due_list](account_invoice_report_due_list/) | 16.0.1.0.1 |  | Show multiple due data in invoice
 [account_invoice_report_grouped_by_picking](account_invoice_report_grouped_by_picking/) | 16.0.1.1.9 |  | Print invoice lines grouped by picking
 [account_invoice_report_header_repeater](account_invoice_report_header_repeater/) | 16.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Account Invoice Report Header Repeater
+[account_invoice_report_lot_expiration_date](account_invoice_report_lot_expiration_date/) | 16.0.1.0.0 |  | This addon adds the batch expiration date to the invoice.
 [account_invoice_report_payment_info](account_invoice_report_payment_info/) | 16.0.1.0.1 |  | Show payment extended info in invoice
 [account_invoice_report_product_sticker](account_invoice_report_product_sticker/) | 16.0.1.0.4 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display Product Stickers on Invoice Reports
 [account_invoice_report_salesperson](account_invoice_report_salesperson/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Salesperson info in Invoice report
@@ -463,7 +464,7 @@ addon | version | maintainers | summary
 [account_invoice_date_due](account_invoice_date_due/) | 16.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Update Invoice's Due Date
 [account_invoice_default_code_column](account_invoice_default_code_column/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Display Default code product in a dedicated column on invoice reports
 [account_invoice_discount_date](account_invoice_discount_date/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Set the early discount date on invoices
-[account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 16.0.1.1.1 |  | Show total discount applied and total without discount on invoices.
+[account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 16.0.1.1.2 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 16.0.2.0.0 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 16.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
@@ -613,61 +614,6 @@ and promote its widespread use.
 ----
 ----
 
-# From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-
-[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/operating-unit&target_branch=16.0)
-[![Pre-commit Status](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml?query=branch%3A16.0)
-[![Build Status](https://github.com/OCA/operating-unit/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/operating-unit/actions/workflows/test.yml?query=branch%3A16.0)
-[![codecov](https://codecov.io/gh/OCA/operating-unit/branch/16.0/graph/badge.svg)](https://codecov.io/gh/OCA/operating-unit)
-[![Translation Status](https://translation.odoo-community.org/widgets/operating-unit-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/operating-unit-16-0/?utm_source=widget)
-
-<!-- /!\ do not modify above this line -->
-
-# operating-unit
-
-TODO: add repo description.
-
-<!-- /!\ do not modify below this line -->
-
-<!-- prettier-ignore-start -->
-
-[//]: # (addons)
-
-Available addons
-----------------
-addon | version | maintainers | summary
---- | --- | --- | ---
-[account_operating_unit](account_operating_unit/) | 16.0.1.1.2 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
-[analytic_operating_unit](analytic_operating_unit/) | 16.0.1.0.0 |  | Analytic Operating Unit
-[contract_operating_unit](contract_operating_unit/) | 16.0.1.0.0 |  | Contract Operating Unit
-[hr_operating_unit](hr_operating_unit/) | 16.0.1.0.0 |  | HR Operating Unit
-[operating_unit](operating_unit/) | 16.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
-[product_operating_unit](product_operating_unit/) | 16.0.1.0.1 |  | Adds the concept of operating unit (OU) in products
-[project_operating_unit](project_operating_unit/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
-[report_qweb_operating_unit](report_qweb_operating_unit/) | 16.0.1.0.0 |  | Qweb Report With Operating Unit
-[sales_team_operating_unit](sales_team_operating_unit/) | 16.0.1.0.0 |  | Sales Team Operating Unit
-[stock_operating_unit](stock_operating_unit/) | 16.0.1.2.2 |  | Adds the concept of operating unit (OU) in stock management
-
-[//]: # (end addons)
-
-<!-- prettier-ignore-end -->
-
-## Licenses
-
-This repository is licensed under [AGPL-3.0](LICENSE).
-
-However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
-policy. Consult each module's `__manifest__.py` file, which contains a `license` key
-that explains its license.
-
-----
-OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
-organization whose mission is to support the collaborative development of Odoo features
-and promote its widespread use.
-
-----
-----
-
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/intrastat-extrastat&target_branch=16.0)
@@ -696,8 +642,8 @@ addon | version | maintainers | summary
 [intrastat_delivery](intrastat_delivery/) | 16.0.1.0.0 |  | Propagates the value of the incoterm fields from the order shipping method to the invoices
 [intrastat_product](intrastat_product/) | 16.0.2.3.3 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 16.0.1.0.0 |  | Generic Intrastat Product Declaration
-[intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 16.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
-[product_harmonized_system](product_harmonized_system/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
+[intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 16.0.1.0.1 |  | Module used to import HS Codes for Intrastat Product
+[product_harmonized_system](product_harmonized_system/) | 16.0.2.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
 [product_harmonized_system_delivery](product_harmonized_system_delivery/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Hide native hs_code field provided by the delivery module
 [product_harmonized_system_stock](product_harmonized_system_stock/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Adds a menu entry for H.S. codes
 
@@ -2509,6 +2455,10 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [partner_survey](partner_survey/) | 16.0.1.1.0 |  | Link partners with their survey results
+[survey_certification_branding](survey_certification_branding/) | 16.0.1.0.0 |  | This module enables customization of certification reports by allowing a custom logo and company name per certification.
+[survey_contact_generation](survey_contact_generation/) | 16.0.1.1.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate new contacts from surveys
+[survey_formio](survey_formio/) | 16.0.1.0.0 |  | This module allows the generation of a form.io compatible JSON for a survey.
+[survey_link_base](survey_link_base/) | 16.0.1.0.0 |  | This addon creates a mixin and a wizard to enable the generation of surveys from other models.
 [survey_question_type_binary](survey_question_type_binary/) | 16.0.1.0.0 |  | This module add binary field as question type for survey page
 [survey_question_type_five_star](survey_question_type_five_star/) | 16.0.1.0.0 |  | This module adds five stars rating as question type for survey page
 [survey_question_type_nps](survey_question_type_nps/) | 16.0.1.0.0 |  | This module add nps rating as question type for survey page
@@ -4273,7 +4223,7 @@ addon | version | maintainers | summary
 [l10n_fr_department](l10n_fr_department/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Populate Database with French Departments (Départements)
 [l10n_fr_department_oversea](l10n_fr_department_oversea/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Populate Database with overseas French Departments (Départements d'outre-mer)
 [l10n_fr_department_product_origin](l10n_fr_department_product_origin/) | 16.0.1.0.0 |  | Product Origin (French Departments)
-[l10n_fr_fec_oca](l10n_fr_fec_oca/) | 16.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Fichier d'Échange Informatisé (FEC) for France
+[l10n_fr_fec_oca](l10n_fr_fec_oca/) | 16.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Fichier d'Échange Informatisé (FEC) for France
 [l10n_fr_hr_check_ssnid](l10n_fr_hr_check_ssnid/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Check validity of Social Security Numbers in French companies
 [l10n_fr_intrastat_product](l10n_fr_intrastat_product/) | 16.0.2.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | EMEBI (ex-DEB) for France
 [l10n_fr_intrastat_service](l10n_fr_intrastat_service/) | 16.0.1.6.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Module for Intrastat service reporting (DES) for France
@@ -4635,7 +4585,7 @@ addon | version | maintainers | summary
 [l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 16.0.1.0.5 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 16.0.1.0.0 |  | ITA - Tipi di documento fiscale per dichiarativi
 [l10n_it_fiscal_payment_term](l10n_it_fiscal_payment_term/) | 16.0.1.0.0 |  | Condizioni di pagamento delle fatture elettroniche
-[l10n_it_fiscalcode](l10n_it_fiscalcode/) | 16.0.1.0.3 |  | ITA - Codice fiscale
+[l10n_it_fiscalcode](l10n_it_fiscalcode/) | 16.0.1.0.4 |  | ITA - Codice fiscale
 [l10n_it_fiscalcode_sale](l10n_it_fiscalcode_sale/) | 16.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Mostra il codice fiscale del cliente nella stampa del preventivo
 [l10n_it_intrastat](l10n_it_intrastat/) | 16.0.1.2.1 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 16.0.1.3.3 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
@@ -6810,7 +6760,9 @@ addon | version | maintainers | summary
 [pms](pms/) | 16.0.0.4.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
+[pms_l10n_es](pms_l10n_es/) | 16.0.1.1.0 |  | PMS Spanish Adaptation
 [pms_l10n_es_sii](pms_l10n_es_sii/) | 16.0.1.1.0 |  | PMS AEAT SII Integration
+[pos_pms_link](pos_pms_link/) | 16.0.1.0.0 |  | Allows to use PMS reservations on the POS interface
 
 [//]: # (end addons)
 
@@ -7789,7 +7741,7 @@ addon | version | maintainers | summary
 [mail_optional_autofollow](mail_optional_autofollow/) | 16.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 16.0.1.1.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 16.0.1.0.2 |  | Allows you to configure the from header for a mail server.
-[mail_partner_opt_out](mail_partner_opt_out/) | 16.0.1.0.0 |  | Add the partner's email to the blackmailed list
+[mail_partner_opt_out](mail_partner_opt_out/) | 16.0.1.1.0 |  | Add the partner's email to the blackmailed list. Allow also removing or adding partners emails to the backlist in mass.
 [mail_post_defer](mail_post_defer/) | 16.0.1.1.2 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Faster and cancellable outgoing messages
 [mail_quoted_reply](mail_quoted_reply/) | 16.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 16.0.1.0.0 |  | Define a domain from which followers can be selected
@@ -7916,7 +7868,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[connector_elasticsearch](connector_elasticsearch/) | 16.0.0.2.1 |  | Connector For Elasticsearch Search Engine
+[connector_elasticsearch](connector_elasticsearch/) | 16.0.0.2.2 |  | Connector For Elasticsearch Search Engine
 [connector_search_engine](connector_search_engine/) | 16.0.0.1.17 |  | Connector Search Engine
 [connector_search_engine_serializer_ir_export](connector_search_engine_serializer_ir_export/) | 16.0.1.0.2 |  | Use Exporter (ir.exports) as serializer for index
 [search_engine_image_thumbnail](search_engine_image_thumbnail/) | 16.0.1.0.7 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Generate thumbnails for binded record
@@ -8249,7 +8201,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [auth_admin_passkey](auth_admin_passkey/) | 16.0.1.0.0 |  | Allows system administrator to authenticate with any account
-[auth_api_key](auth_api_key/) | 16.0.1.0.0 |  | Authenticate http requests from an API key
+[auth_api_key](auth_api_key/) | 16.0.1.0.1 |  | Authenticate http requests from an API key
 [auth_api_key_group](auth_api_key_group/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Allow grouping API keys together. Grouping per se does nothing. This feature is supposed to be used by other modules to limit access to services or records based on groups of keys.
 [auth_api_key_server_env](auth_api_key_server_env/) | 16.0.1.0.1 |  | Configure api keys via server env. This can be very useful to avoid mixing your keys between your various environments when restoring databases. All you have to do is to add a new section to your configuration file according to the following convention:
 [auth_jwt](auth_jwt/) | 16.0.1.1.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | JWT bearer token authentication.
@@ -8257,6 +8209,7 @@ addon | version | maintainers | summary
 [auth_jwt_server_env](auth_jwt_server_env/) | 16.0.1.0.0 |  | This addon adds auth.jwt.validator fields to server env
 [auth_ldaps](auth_ldaps/) | 16.0.1.0.0 |  | Allows to use LDAP over SSL authentication
 [auth_oauth_autologin](auth_oauth_autologin/) | 16.0.1.0.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Automatically redirect to the OAuth provider for login
+[auth_oauth_filter_by_domain](auth_oauth_filter_by_domain/) | 16.0.1.0.0 | <a href='https://github.com/natuan9'><img src='https://github.com/natuan9.png' width='32' height='32' style='border-radius:50%;' alt='natuan9'/></a> | Filter OAuth providers by domain
 [auth_oauth_multi_token](auth_oauth_multi_token/) | 16.0.1.0.0 |  | Allow multiple connection with the same OAuth account
 [auth_oauth_ropc](auth_oauth_ropc/) | 16.0.1.0.0 |  | Allow to login with OAuth Resource Owner Password Credentials Grant
 [auth_oidc](auth_oidc/) | 16.0.1.2.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Allow users to login through OpenID Connect Provider
@@ -8776,7 +8729,7 @@ addon | version | maintainers | summary
 [datamodel](datamodel/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 16.0.2.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Allows the use of extendable into fastapi apps
-[fastapi](fastapi/) | 16.0.1.6.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 16.0.1.6.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.4 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | JWT bearer token authentication for FastAPI.
 [fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Test/demo module for fastapi_auth_jwt.
 [fastapi_auth_partner](fastapi_auth_partner/) | 16.0.1.0.0 |  | This provides an implementation of auth_partner for FastAPI

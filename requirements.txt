@@ -20,7 +20,6 @@ openupgradelib
 # From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
 # generated from manifests external_dependencies
 Avalara
-# From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
 # From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
 # generated from manifests external_dependencies
 python-stdnum>=1.16
@@ -76,6 +75,8 @@ phonenumbers
 # From [https://github.com/OCA/commission.git](https://github.com/OCA/commission.git)
 # From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
 # From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
+# generated from manifests external_dependencies
+odoo-test-helper
 # From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
 # From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
 # From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
@@ -247,6 +248,9 @@ openupgradelib
 # From [https://github.com/OCA/manufacture-reporting.git](https://github.com/OCA/manufacture-reporting.git)
 # From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
 # From [https://github.com/OCA/pms.git](https://github.com/OCA/pms.git)
+# generated from manifests external_dependencies
+bs4
+pycountry
 # From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
 # generated from manifests external_dependencies
 openupgradelib

@@ -2,8 +2,9 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 {
     "name": "Mail Partner Opt Out",
-    "summary": "Add the partner's email to the blackmailed list",
-    "version": "16.0.1.0.0",
+    "summary": "Add the partner's email to the blackmailed list. "
+    "Allow also removing or adding partners emails to the backlist in mass.",
+    "version": "16.0.1.1.0",
     "development_status": "Beta",
     "category": "Social Network",
     "website": "https://github.com/OCA/social",

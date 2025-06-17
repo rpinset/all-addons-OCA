@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: mail_partner_opt_out
+#: model:ir.actions.server,name:mail_partner_opt_out.action_mail_blacklist_add
+msgid "Add To Blacklist"
+msgstr ""
+
+#. module: mail_partner_opt_out
 #: model_terms:ir.ui.view,arch_db:mail_partner_opt_out.res_partner_view_form_inherit_mail
 msgid "Click to add this email to the blacklist."
 msgstr "Haga clic para añadir este correo electrónico a la lista negra."
@@ -25,3 +30,13 @@ msgstr "Haga clic para añadir este correo electrónico a la lista negra."
 #: model:ir.model,name:mail_partner_opt_out.model_mail_thread_blacklist
 msgid "Mail Blacklist mixin"
 msgstr "Mezcla de Lista Negra de Correo"
+
+#. module: mail_partner_opt_out
+#: model:ir.actions.server,name:mail_partner_opt_out.action_mail_blacklist_remove
+msgid "Remove From Blacklist"
+msgstr ""
+
+#. module: mail_partner_opt_out
+#: model:ir.model,name:mail_partner_opt_out.model_mail_blacklist_remove
+msgid "Remove email from blacklist wizard"
+msgstr ""

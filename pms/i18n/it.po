@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-06-11 15:27+0000\n"
+"PO-Revision-Date: 2025-06-16 11:26+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -142,8 +142,8 @@ msgid ""
 msgstr ""
 "\n"
 "            Modello per la nota di prenotazione da aggiungere alla fattura.\n"
-"            È possibile utilizzare variabili come {{ object.checkin }}, ecc."
-"\n"
+"            È possibile utilizzare variabili come {{ object.checkin }}, "
+"ecc.\n"
 "        "
 
 #. module: pms
@@ -185,8 +185,8 @@ msgid ""
 "${object.company_id.name} has confirmed your reservation in ${object."
 "pms_property_id.name}"
 msgstr ""
-"${object.company_id.name} ha confermato la vostra registrazione in "
-"${object.pms_property_id.name}"
+"${object.company_id.name} ha confermato la vostra registrazione in ${object."
+"pms_property_id.name}"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_cancelation_rule__penalty_late
@@ -218,14 +218,6 @@ msgstr "%(identifier)s non trovato nei check-in (%(reservation)s)"
 #, python-format
 msgid "%(product_name)s limit exceeded for %(date)s"
 msgstr "%(product_name)s limite superato per %(date)s"
-
-#. module: pms
-#. odoo-python
-#: code:addons/pms/models/pms_reservation_line.py:0
-#, python-format
-msgid "%(room_name)s: No room available in %(checkin)s <-> %(checkout)s."
-msgstr ""
-"%(room_name)s: nessuna camera disponibile in %(checkin)s <-> %(checkout)s."
 
 #. module: pms
 #. odoo-python
@@ -363,26 +355,25 @@ msgstr ""
 "goderti subito il comfort della tua camera. \n"
 "                    <table align=\"center\">\n"
 "                        <tr>\n"
-"                            <td align=\"center\" style="
-"\"padding: 20px 0 0px 0; \">\n"
+"                            <td align=\"center\" style=\"padding: 20px 0 0px "
+"0; \">\n"
 "                                <table border=\"0\" cellspacing=\"0\" "
 "cellpadding=\"0\">\n"
 "                                    <tr>\n"
 "                                        <td align=\"center\">\n"
-"                                            <a href="
-"\"%24%7Bobject.get_portal_url()%7D\" target=\"_blank\" style=\"text-"
-"decoration: none; color: #FFFFFF; font-size: 2em; padding: 10px 20px 10px "
-"20px;\">\n"
+"                                            <a href=\"%24%7Bobject."
+"get_portal_url()%7D\" target=\"_blank\" style=\"text-decoration: none; "
+"color: #FFFFFF; font-size: 2em; padding: 10px 20px 10px 20px;\">\n"
 "                                                <div style=\"padding: 0.5em; "
 "background-color: #45C2B1; border-color: #45C2B1; border-width: 2px;border-"
 "style:solid; border-bottom-style: solid;border-left-style: solid;border-"
 "right-style: solid;border-top-style: solid;-webkit-border-radius: 10; -moz-"
 "border-radius: 10; border-radius: 10px;font-size: 12px;\">Check-in\n"
 "                                                </div>\n"
-"                                                <center><img src="
-"\"https://www.aldahotels.es/firma/email/llegada/check-in.png\" alt="
-"\"Effettua il check-in\" width=\"80px\" height=\"80px\" href="
-"\"%24%7Bobject.get_portal_url()%7D\"></center></a>\n"
+"                                                <center><img src=\"https://"
+"www.aldahotels.es/firma/email/llegada/check-in.png\" alt=\"Effettua il check-"
+"in\" width=\"80px\" height=\"80px\" href=\"%24%7Bobject."
+"get_portal_url()%7D\"></center></a>\n"
 "                                        </td>\n"
 "                                   </tr>\n"
 "                              </table>\n"
@@ -422,8 +413,8 @@ msgid ""
 "<i class=\"fa fa-long-arrow-right mx-2 oe_edit_only\" aria-label=\"Arrow "
 "icon\" title=\"Arrow\"/>"
 msgstr ""
-"<i class=\"fa fa-long-arrow-right mx-2 oe_edit_only\" aria-label="
-"\"Arrow icon\" title=\"Freccia\"/>"
+"<i class=\"fa fa-long-arrow-right mx-2 oe_edit_only\" aria-label=\"Arrow "
+"icon\" title=\"Freccia\"/>"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
@@ -431,8 +422,8 @@ msgid ""
 "<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
 "title=\"Arrow\"/>"
 msgstr ""
-"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" title="
-"\"Freccia\"/>"
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Freccia\"/>"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.folio_portal_template
@@ -471,9 +462,8 @@ msgid ""
 "<span attrs=\"{'invisible': [('advance_payment_method', '!=', "
 "'percentage')]}\" class=\"oe_inline\">%</span>"
 msgstr ""
-"<span attrs="
-"\"{'invisible': [('advance_payment_method', '!=', 'percentage')]}\" class="
-"\"oe_inline\">%</span>"
+"<span attrs=\"{'invisible': [('advance_payment_method', '!=', "
+"'percentage')]}\" class=\"oe_inline\">%</span>"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_kanban_view
@@ -485,8 +475,8 @@ msgid ""
 "                                            </span>"
 msgstr ""
 "<span class=\"o_label\">\n"
-"                                                <i class="
-"\"fa fa-lg fa-play-circle text-success\"/>\n"
+"                                                <i class=\"fa fa-lg fa-play-"
+"circle text-success\"/>\n"
 "                                                Check-in\n"
 "                                            </span>"
 
@@ -538,10 +528,10 @@ msgid ""
 "                            <span groups=\"account."
 "group_show_line_subtotals_tax_included\">Total Price</span>"
 msgstr ""
-"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Valore</span>"
-"\n"
-"                            <span groups="
-"\"account.group_show_line_subtotals_tax_included\">Prezzo totale</span>"
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Valore</"
+"span>\n"
+"                            <span groups=\"account."
+"group_show_line_subtotals_tax_included\">Prezzo totale</span>"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.booking_duplicate
@@ -598,7 +588,7 @@ msgstr "<strong>Assegnato a</strong>"
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
 msgid "<strong>Board Service:</strong>"
-msgstr "<strong>Tipo servizio:</strong>"
+msgstr "<strong>Servizio pensione:</strong>"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
@@ -908,15 +898,15 @@ msgid ""
 msgstr ""
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: "
 "16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; "
-"color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\""
-"center\">\n"
+"color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
 "                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
-"width=\"590\" style=\"padding: 16px; background-color: white; color: #454748;"
-" border-collapse:separate;\">\n"
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
 "                        <head>\n"
-"                            <link rel=\"stylesheet\" href="
-"\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\" integrity="
-"\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" "
+"                            <link rel=\"stylesheet\" href=\"https://use."
+"fontawesome.com/releases/v5.8.1/css/all.css\" "
+"integrity=\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" "
 "crossorigin=\"anonymous\">\n"
 "                        </head>\n"
 "                        <tbody>\n"
@@ -930,43 +920,43 @@ msgstr ""
 "color: white; padding: 0px 0px 0px 0px; border-collapse:separate;\">\n"
 "                                        <tr><td align=\"right\">\n"
 "                                            <div class=\"col-sm-4\">\n"
-"                                                % if "
-"object.pms_property_id.partner_id.street\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.street}</p>\n"
+"                                                % if object.pms_property_id."
+"partner_id.street\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street}</p>\n"
 "                                                % endif\n"
-"                                                % if "
-"object.pms_property_id.partner_id.street2\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.street2}</p>\n"
+"                                                % if object.pms_property_id."
+"partner_id.street2\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street2}</p>\n"
 "                                                % endif\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.zip}</p>\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.city}</p>\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.country_id.name}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.zip}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.city}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.country_id.name}</p>\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
 "                                        <tr><td valign=\"top\" style=\"font-"
 "size: 14px;\">\n"
-"                                            <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
 "                                            <div>\n"
-"                                                Salve ${"
-"object.partner_id.name or ''},<br>\n"
+"                                                Salve ${object.partner_id."
+"name or ''},<br>\n"
 "                                                la sua prenotazione in "
 "${object.pms_property_id.name} è stata modificata\n"
 "                                            </div>\n"
 "                                            <div>\n"
 "                                                a presto,<br>\n"
-"                                                <span style="
-"\"color: #454748;\">\n"
+"                                                <span style=\"color: #454748;"
+"\">\n"
 "                                                    <br>\n"
-"                                                    ${object.company_id.name}"
-"\n"
+"                                                    ${object.company_id."
+"name}\n"
 "                                                </span>\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
@@ -980,8 +970,8 @@ msgstr ""
 "                                    <hr width=\"100%\" style=\"background-"
 "color:rgb(204,204,204);border:medium none;clear:both;display:block;font-"
 "size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
-"                                    <div align=\"left\" style="
-"\"margin: 16px 0px 16px 0px;\"><strong>Dettagli prenotazione</strong></div>\n"
+"                                    <div align=\"left\" style=\"margin: 16px "
+"0px 16px 0px;\"><strong>Dettagli prenotazione</strong></div>\n"
 "                                    <table width=\"590\" border=\"0\" "
 "cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-"
 "color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
@@ -990,26 +980,26 @@ msgstr ""
 "                                            <table style=\"width:50%;\">\n"
 "                                                 <tr>\n"
 "                                                    <td>\n"
-"                                                        <div class="
-"\"far fa-calendar-alt fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"far fa-"
+"calendar-alt fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px; font-size: 14px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px; font-size: 14px;\">\n"
 "                                                        <div><strong>From</"
 "strong> ${object.first_checkin}</div>\n"
 "                                                        <div><strong>To</"
 "strong> ${object.last_checkout}</div>\n"
 "                                                        <div style=\"font-"
-"size:12px;color:#9e9e9e\"><i><strong>TZ</strong> "
-"${object.pms_property_id.tz}</i></div>\n"
+"size:12px;color:#9e9e9e\"><i><strong>TZ</strong> ${object.pms_property_id.tz}"
+"</i></div>\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                                <tr>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px;\">\n"
 "                                                        <br>\n"
-"                                                        <div class="
-"\"fas fa-bed fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"fas fa-"
+"bed fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
 "                                                    <td style=\"vertical-"
 "align:top;\">\n"
@@ -1018,24 +1008,24 @@ msgstr ""
 "</strong></div><div>\n"
 "                                                            % for "
 "reservation in object.reservation_ids:\n"
-"                                                            "
-"${reservation.room_type_id.name}<br></div>\n"
+"                                                            ${reservation."
+"room_type_id.name}<br></div>\n"
 "                                                            % endfor\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                                <tr>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px;\">\n"
 "                                                        <br>\n"
-"                                                        <div class="
-"\"fas fa-coins fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"fas fa-"
+"coins fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px; font-size: 14px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px; font-size: 14px;\">\n"
 "                                                        <br>\n"
-"                                                            "
-"<div><strong>Prezzo: </strong> ${object.amount_total} "
-"${object.pms_property_id.country_id.currency_id.symbol}</div>\n"
+"                                                            <div><strong>Prezzo: "
+"</strong> ${object.amount_total} ${object.pms_property_id.country_id."
+"currency_id.symbol}</div>\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                            </table>\n"
@@ -1045,48 +1035,48 @@ msgstr ""
 "                                            <div>\n"
 "                                                % if object.pms_property_id."
 "mail_information\n"
-"                                                <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
-"                                                <div align=\"left\" style="
-"\"margin: 16px 0px 16px 0px;\"><strong>Informazioni aggiuntive</strong></div>"
-"\n"
-"                                                "
-"<p>${object.pms_property_id.mail_information|safe}</p>\n"
+"                                                <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
+"                                                <div align=\"left\" "
+"style=\"margin: 16px 0px 16px 0px;\"><strong>Informazioni aggiuntive</"
+"strong></div>\n"
+"                                                <p>${object.pms_property_id."
+"mail_information|safe}</p>\n"
 "                                                % endif\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
 "                                        <tr><td valign=\"top\" style=\"font-"
 "size: 14px;\">\n"
-"                                            <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
 "                                            <!-- CONTACT -->\n"
 "                                            <div>\n"
 "                                                <span style=\"font-"
 "weight:300;margin:10px 0px\">Domande sulla prenotazione?</span>\n"
 "                                                <div>Ci contatti:</div>\n"
 "                                                <ul>\n"
-"                                                    "
-"<li>${object.pms_property_id.name}</li>\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.email\n"
-"                                                    <li>E-mail: <a href="
-"\"mailto:%24%7Bobject.pms_property_id.partner_id.email%7D\" style=\"text-"
-"decoration:none;color:#875A7B;\""
-">${object.pms_property_id.partner_id.email}</a></li>\n"
+"                                                    <li>${object."
+"pms_property_id.name}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.email\n"
+"                                                    <li>E-mail: <a "
+"href=\"mailto:%24%7Bobject.pms_property_id.partner_id.email%7D\" "
+"style=\"text-decoration:none;color:#875A7B;\">${object.pms_property_id."
+"partner_id.email}</a></li>\n"
 "                                                    % endif\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.phone\n"
-"                                                    <li>Telefono: "
-"${object.pms_property_id.partner_id.phone}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.phone\n"
+"                                                    <li>Telefono: ${object."
+"pms_property_id.partner_id.phone}</li>\n"
 "                                                    % endif\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.mobile\n"
-"                                                    <li>Mobile: "
-"${object.pms_property_id.partner_id.mobile}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.mobile\n"
+"                                                    <li>Mobile: ${object."
+"pms_property_id.partner_id.mobile}</li>\n"
 "                                                    % endif\n"
 "                                                </ul>\n"
 "                                            </div>\n"
@@ -1101,11 +1091,11 @@ msgstr ""
 "                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
 "                        % if object.pms_property_id.privacy_policy\n"
 "                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
-"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color:"
-" #454748; padding: 8px; border-collapse:separate;\">\n"
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
 "                            <tr><td style=\"font-size: 10px;\">\n"
-"                                ${object.pms_property_id.privacy_policy|safe}"
-"\n"
+"                                ${object.pms_property_id.privacy_policy|"
+"safe}\n"
 "                            </td></tr>\n"
 "                        </table>\n"
 "                        % endif\n"
@@ -1113,13 +1103,13 @@ msgstr ""
 "                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
 "                        % if object.company_id\n"
 "                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
-"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color:"
-" #454748; padding: 8px; border-collapse:separate;\">\n"
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
 "                            <tr><td style=\"text-align: center; font-size: "
 "10px;\">\n"
-"                                Sent by <a target=\"_blank\" href="
-"\"%24%7Bobject.company_id.website%7D\" style=\"color: #875A7B;\""
-">${object.company_id.name}</a>\n"
+"                                Sent by <a target=\"_blank\" "
+"href=\"%24%7Bobject.company_id.website%7D\" style=\"color: #875A7B;"
+"\">${object.company_id.name}</a>\n"
 "                                <br>\n"
 "                            </td></tr>\n"
 "                        </table>\n"
@@ -1400,15 +1390,15 @@ msgid ""
 msgstr ""
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: "
 "16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; "
-"color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\""
-"center\">\n"
+"color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
 "                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
-"width=\"590\" style=\"padding: 16px; background-color: white; color: #454748;"
-" border-collapse:separate;\">\n"
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
 "                        <head>\n"
-"                            <link rel=\"stylesheet\" href="
-"\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\" integrity="
-"\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" "
+"                            <link rel=\"stylesheet\" href=\"https://use."
+"fontawesome.com/releases/v5.8.1/css/all.css\" "
+"integrity=\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" "
 "crossorigin=\"anonymous\">\n"
 "                        </head>\n"
 "                        <tbody>\n"
@@ -1421,43 +1411,43 @@ msgstr ""
 "color: white; padding: 0px 0px 0px 0px; border-collapse:separate;\">\n"
 "                                        <tr><td align=\"right\">\n"
 "                                            <div class=\"col-sm-4\">\n"
-"                                                % if "
-"object.pms_property_id.partner_id.street\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.street}</p>\n"
+"                                                % if object.pms_property_id."
+"partner_id.street\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street}</p>\n"
 "                                                % endif\n"
-"                                                % if "
-"object.pms_property_id.partner_id.street2\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.street2}</p>\n"
+"                                                % if object.pms_property_id."
+"partner_id.street2\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street2}</p>\n"
 "                                                % endif\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.zip}</p>\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.city}</p>\n"
-"                                                "
-"<p>${object.pms_property_id.partner_id.country_id.name}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.zip}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.city}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.country_id.name}</p>\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
 "                                        <tr><td valign=\"top\" style=\"font-"
 "size: 14px;\">\n"
-"                                            <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
 "                                            <div>\n"
-"                                                Salve ${"
-"object.partner_id.name or ''},<br>\n"
+"                                                Salve ${object.partner_id."
+"name or ''},<br>\n"
 "                                                siamo lieti di confermare la "
 "sua prenotazione in ${object.pms_property_id.name}\n"
 "                                            </div>\n"
 "                                            <div>\n"
 "                                                A presto,<br>\n"
-"                                                <span style="
-"\"color: #454748;\">\n"
+"                                                <span style=\"color: #454748;"
+"\">\n"
 "                                                    <br>\n"
-"                                                    ${object.company_id.name}"
-"\n"
+"                                                    ${object.company_id."
+"name}\n"
 "                                                </span>\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
@@ -1471,8 +1461,8 @@ msgstr ""
 "                                    <hr width=\"100%\" style=\"background-"
 "color:rgb(204,204,204);border:medium none;clear:both;display:block;font-"
 "size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
-"                                    <div align=\"left\" style="
-"\"margin: 16px 0px 16px 0px;\"><strong>Dettagli prenotazione</strong></div>\n"
+"                                    <div align=\"left\" style=\"margin: 16px "
+"0px 16px 0px;\"><strong>Dettagli prenotazione</strong></div>\n"
 "                                    <table width=\"590\" border=\"0\" "
 "cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-"
 "color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
@@ -1481,26 +1471,26 @@ msgstr ""
 "                                            <table style=\"width:50%;\">\n"
 "                                                <tr>\n"
 "                                                    <td>\n"
-"                                                        <div class="
-"\"far fa-calendar-alt fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"far fa-"
+"calendar-alt fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px; font-size: 14px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px; font-size: 14px;\">\n"
 "                                                        <div><strong>From</"
 "strong> ${object.first_checkin}</div>\n"
 "                                                        <div><strong>To</"
 "strong> ${object.last_checkout}</div>\n"
 "                                                        <div style=\"font-"
-"size:12px;color:#9e9e9e\"><i><strong>TZ</strong> "
-"${object.pms_property_id.tz}</i></div>\n"
+"size:12px;color:#9e9e9e\"><i><strong>TZ</strong> ${object.pms_property_id.tz}"
+"</i></div>\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                                <tr>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px;\">\n"
 "                                                        <br>\n"
-"                                                        <div class="
-"\"fas fa-bed fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"fas fa-"
+"bed fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
 "                                                    <td style=\"vertical-"
 "align:top;\">\n"
@@ -1509,24 +1499,24 @@ msgstr ""
 "</strong></div><div>\n"
 "                                                            % for "
 "reservation in object.reservation_ids:\n"
-"                                                            "
-"${reservation.room_type_id.name}<br></div>\n"
+"                                                            ${reservation."
+"room_type_id.name}<br></div>\n"
 "                                                            % endfor\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                                <tr>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px;\">\n"
 "                                                        <br>\n"
-"                                                        <div class="
-"\"fas fa-coins fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
+"                                                        <div class=\"fas fa-"
+"coins fa-2x\" style=\"margin: 0px 16px 0px 0px;\"></div>\n"
 "                                                    </td>\n"
-"                                                    <td style="
-"\"margin: 16px 0px 16px 0px; font-size: 14px;\">\n"
+"                                                    <td style=\"margin: 16px "
+"0px 16px 0px; font-size: 14px;\">\n"
 "                                                        <br>\n"
 "                                                        <div><strong>Price: "
-"</strong> ${object.amount_total} "
-"${object.pms_property_id.country_id.currency_id.symbol}</div>\n"
+"</strong> ${object.amount_total} ${object.pms_property_id.country_id."
+"currency_id.symbol}</div>\n"
 "                                                    </td>\n"
 "                                                </tr>\n"
 "                                            </table>\n"
@@ -1537,26 +1527,26 @@ msgstr ""
 "                                            <div>\n"
 "                                                % if object.pms_property_id."
 "mail_information\n"
-"                                                <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
-"                                                <div align=\"left\" style="
-"\"margin: 16px 0px 16px 0px;\"><strong>Informazioni aggiuntive</strong></div>"
-"\n"
-"                                                "
-"${object.pms_property_id.mail_information|safe}\n"
+"                                                <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
+"                                                <div align=\"left\" "
+"style=\"margin: 16px 0px 16px 0px;\"><strong>Informazioni aggiuntive</"
+"strong></div>\n"
+"                                                ${object.pms_property_id."
+"mail_information|safe}\n"
 "                                                % endif\n"
 "                                            </div>\n"
 "                                        </td></tr>\n"
 "                                        <tr>\n"
-"                                            <td align=\"center\" style="
-"\"padding: 20px 0 0px 0; \">\n"
+"                                            <td align=\"center\" "
+"style=\"padding: 20px 0 0px 0; \">\n"
 "                                                <div>\n"
-"                                                    <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
+"                                                    <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
 "                                                    Eseguire adesso il check-"
 "in per risparmiare tempo.\n"
 "                                                    <br>\n"
@@ -1570,13 +1560,12 @@ msgstr ""
 "                                                    <table border=\"0\" "
 "cellspacing=\"0\" cellpadding=\"0\">\n"
 "                                                        <tr>\n"
-"                                                            <td align="
-"\"center\">\n"
+"                                                            <td "
+"align=\"center\">\n"
 "                                                                <a href=\"/"
-"my/folios/%24%7Bobject.id%7D/"
-"precheckin?access_token=%24%7Bobject.access_token%7D\" target=\"_blank\" "
-"style=\"text-decoration: none; color: #FFFFFF; font-size: 2em; padding: 10px "
-"20px 10px 20px;\">\n"
+"my/folios/%24%7Bobject.id%7D/precheckin?access_token=%24%7Bobject."
+"access_token%7D\" target=\"_blank\" style=\"text-decoration: none; color: "
+"#FFFFFF; font-size: 2em; padding: 10px 20px 10px 20px;\">\n"
 "                                                                    <div "
 "style=\"padding: 0.5em; background-color: #45C2B1; border-color: #45C2B1; "
 "border-width: 2px;border-style:solid; border-bottom-style: solid;border-left-"
@@ -1584,11 +1573,10 @@ msgstr ""
 "border-radius: 10; -moz-border-radius: 10; border-radius: 10px;font-size: "
 "12px;\">Check-in\n"
 "                                                                    </div>\n"
-"                                                                    "
-"<center><img src="
-"\"https://www.aldahotels.es/firma/email/llegada/check-in.png\" alt="
-"\"Hacer check-in\" width=\"80px\" height=\"80px\" href="
-"\"%24%7Bobject.url%7D\"></center></a>\n"
+"                                                                    <center><img "
+"src=\"https://www.aldahotels.es/firma/email/llegada/check-in.png\" "
+"alt=\"Hacer check-in\" width=\"80px\" height=\"80px\" href=\"%24%7Bobject."
+"url%7D\"></center></a>\n"
 "                                                            </td>\n"
 "                                                        </tr>\n"
 "                                                    </table>\n"
@@ -1597,34 +1585,34 @@ msgstr ""
 "                                        </tr>\n"
 "                                        <tr><td valign=\"top\" style=\"font-"
 "size: 14px;\">\n"
-"                                            <hr width=\"100%\" style"
-"=\"background-color:rgb(204,204,204);border:medium "
-"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; "
-"margin: 16px 0px 16px 0px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
 "                                            <!-- CONTACT -->\n"
 "                                            <div>\n"
 "                                                <span style=\"font-"
 "weight:300;margin:10px 0px\">Questions about the reservation?</span>\n"
 "                                                <div>Ci contatti:</div>\n"
 "                                                <ul>\n"
-"                                                    "
-"<li>${object.pms_property_id.name}</li>\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.email\n"
-"                                                    <li>E-mail: <a href="
-"\"mailto:%24%7Bobject.pms_property_id.partner_id.email%7D\" style=\"text-"
-"decoration:none;color:#875A7B;\""
-">${object.pms_property_id.partner_id.email}</a></li>\n"
+"                                                    <li>${object."
+"pms_property_id.name}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.email\n"
+"                                                    <li>E-mail: <a "
+"href=\"mailto:%24%7Bobject.pms_property_id.partner_id.email%7D\" "
+"style=\"text-decoration:none;color:#875A7B;\">${object.pms_property_id."
+"partner_id.email}</a></li>\n"
 "                                                    % endif\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.phone\n"
-"                                                    <li>Telefono: "
-"${object.pms_property_id.partner_id.phone}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.phone\n"
+"                                                    <li>Telefono: ${object."
+"pms_property_id.partner_id.phone}</li>\n"
 "                                                    % endif\n"
-"                                                    % if "
-"object.pms_property_id.partner_id.mobile\n"
-"                                                    <li>Cellulare: "
-"${object.pms_property_id.partner_id.mobile}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.mobile\n"
+"                                                    <li>Cellulare: ${object."
+"pms_property_id.partner_id.mobile}</li>\n"
 "                                                    % endif\n"
 "                                                </ul>\n"
 "                                            </div>\n"
@@ -1639,11 +1627,11 @@ msgstr ""
 "                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
 "                        % if object.pms_property_id.privacy_policy\n"
 "                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
-"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color:"
-" #454748; padding: 8px; border-collapse:separate;\">\n"
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
 "                            <tr><td style=\"font-size: 10px;\">\n"
-"                                ${object.pms_property_id.privacy_policy|safe}"
-"\n"
+"                                ${object.pms_property_id.privacy_policy|"
+"safe}\n"
 "                            </td></tr>\n"
 "                        </table>\n"
 "                        % endif\n"
@@ -1651,13 +1639,13 @@ msgstr ""
 "                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
 "                        % if object.company_id\n"
 "                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
-"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color:"
-" #454748; padding: 8px; border-collapse:separate;\">\n"
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
 "                            <tr><td style=\"text-align: center; font-size: "
 "10px;\">\n"
-"                                Inviato da <a target=\"_blank\" href="
-"\"%24%7Bobject.company_id.website%7D\" style=\"color: #875A7B;\""
-">${object.company_id.name}</a>\n"
+"                                Inviato da <a target=\"_blank\" "
+"href=\"%24%7Bobject.company_id.website%7D\" style=\"color: #875A7B;"
+"\">${object.company_id.name}</a>\n"
 "                                <br>\n"
 "                            </td></tr>\n"
 "                        </table>\n"
@@ -1797,6 +1785,133 @@ msgid ""
 "                </table>\n"
 "            "
 msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: "
+"16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; "
+"color: #454748; width: 100%; border-collapse:separate;\"><tr><td "
+"align=\"center\">\n"
+"                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" "
+"width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"                        <tbody>\n"
+"                            <!-- HEADER -->\n"
+"                            <!-- PROPERTY DESCRIPTION -->\n"
+"                            <tr>\n"
+"                                <td align=\"center\" style=\"min-width: "
+"590px;\">\n"
+"                                    <table width=\"590\" border=\"0\" "
+"cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 0px 0px 0px; border-collapse:separate;\">\n"
+"                                        <tr><td align=\"right\">\n"
+"                                            <div class=\"col-sm-4\">\n"
+"                                                % if object.pms_property_id."
+"partner_id.street\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street}</p>\n"
+"                                                % endif\n"
+"                                                % if object.pms_property_id."
+"partner_id.street2\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.street2}</p>\n"
+"                                                % endif\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.zip}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.city}</p>\n"
+"                                                <p>${object.pms_property_id."
+"partner_id.country_id.name}</p>\n"
+"                                            </div>\n"
+"                                        </td></tr>\n"
+"                                        <tr><td valign=\"top\" style=\"font-"
+"size: 14px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
+"                                            <div>\n"
+"                                                Salve ${object.partner_id."
+"name or ''},<br>\n"
+"                                                la sua prenotazione in "
+"${object.pms_property_id.name} è stata annullata.\n"
+"                                            </div>\n"
+"                                        </td></tr>\n"
+"                                    </table>\n"
+"                                </td>\n"
+"                            </tr>\n"
+"                            <!-- DETAILS -->\n"
+"                            <tr>\n"
+"                                <td align=\"center\" style=\"min-width: "
+"590px;\">\n"
+"                                    <table width=\"590\" border=\"0\" "
+"cellpadding=\"0\" cellspacing=\"0\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                        <tr><td valign=\"top\" style=\"font-"
+"size: 14px;\">\n"
+"                                            <hr width=\"100%\" "
+"style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px "
+"16px 0px;\">\n"
+"                                            <!-- CONTACT -->\n"
+"                                            <div>\n"
+"                                                <div>If you have questions "
+"please contact with us:</div>\n"
+"                                                <ul>\n"
+"                                                    <li>${object."
+"pms_property_id.name}</li>\n"
+"                                                    % if object."
+"pms_property_id.partner_id.email\n"
+"                                                    <li>E-mail: <a "
+"href=\"mailto:%24%7Bobject.pms_property_id.partner_id.email%7D\" "
+"style=\"text-decoration:none;color:#875A7B;\">${object.pms_property_id."
+"partner_id.email}</a></li>\n"
+"                                                    % endif\n"
+"                                                    % if object."
+"pms_property_id.partner_id.phone\n"
+"                                                    <li>Telefono: ${object."
+"pms_property_id.partner_id.phone}</li>\n"
+"                                                    % endif\n"
+"                                                    % if object."
+"pms_property_id.partner_id.mobile\n"
+"                                                    <li>Cellulare: ${object."
+"pms_property_id.partner_id.mobile}</li>\n"
+"                                                    % endif\n"
+"                                                </ul>\n"
+"                                            </div>\n"
+"                                        </td></tr>\n"
+"                                    </table>\n"
+"                                </td>\n"
+"                            </tr>\n"
+"                        </tbody>\n"
+"                    </table>\n"
+"                </td></tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        % if object.pms_property_id.privacy_policy\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"                            <tr><td style=\"font-size: 10px;\">\n"
+"                                ${object.pms_property_id.privacy_policy}\n"
+"                            </td></tr>\n"
+"                        </table>\n"
+"                        % endif\n"
+"                    </td></tr>\n"
+"                    <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"                        % if object.company_id\n"
+"                        <table width=\"590\" border=\"0\" cellpadding=\"0\" "
+"cellspacing=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; "
+"color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"                            <tr><td style=\"text-align: center; font-size: "
+"10px;\">\n"
+"                                Inviato da <a target=\"_blank\" "
+"href=\"%24%7Bobject.company_id.website%7D\" style=\"color: #875A7B;"
+"\">${object.company_id.name}</a>\n"
+"                                <br>\n"
+"                            </td></tr>\n"
+"                        </table>\n"
+"                        % endif\n"
+"                    </td></tr>\n"
+"                </table>\n"
+"            "
 
 #. module: pms
 #. odoo-python
@@ -2005,7 +2120,7 @@ msgstr "Icona tipo attività"
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_board_service
 msgid "Add Board Service to reservations"
-msgstr "Aggiungere servizi forniti alla prenotazione"
+msgstr "Aggiungere il servizio pensione fornito alle prenotazioni"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.several_partners_wizard
@@ -2115,33 +2230,33 @@ msgstr "Adulti o bambini devono essere controllati"
 #: model:ir.actions.act_window,name:pms.action_advanced_filters_wizard
 #: model:ir.ui.menu,name:pms.menu_pms_advanced_filters
 msgid "Advanced Filters"
-msgstr ""
+msgstr "Filtri avanzati"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.advanced_filters_wizard
 msgid "Advanced filters"
-msgstr ""
+msgstr "Filtri avanzati"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__aeat_identification
 msgid "Aeat Identification"
-msgstr ""
+msgstr "Identificazione AEAT"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__aeat_sending_enabled
 msgid "Aeat Sending Enabled"
-msgstr ""
+msgstr "Abilitato invio AEAT"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__age
 msgid "Age"
-msgstr ""
+msgstr "Età"
 
 #. module: pms
 #: model:ir.actions.act_window,name:pms.pms_agency_action
 #: model:ir.ui.menu,name:pms.pms_agency_menu
 msgid "Agencies"
-msgstr ""
+msgstr "Agenzie"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_booking_duplicate__agency_id
@@ -2152,46 +2267,46 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_search
 #: model_terms:ir.ui.view,arch_db:pms.res_partner_view_form
 msgid "Agency"
-msgstr ""
+msgstr "Agenzia"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_booking_duplicate__agency_id
 #: model:ir.model.fields,help:pms.field_pms_booking_engine__agency_id
 #: model:ir.model.fields,help:pms.field_pms_reservation__agency_id
 msgid "Agency that made the reservation"
-msgstr ""
+msgstr "Agenzia che ha creato la prenotazione"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__res_company__pms_invoice_downpayment_policy__all
 msgid "All"
-msgstr ""
+msgstr "Tutte"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_cancelation_rule__apply_on_late__all
 #: model:ir.model.fields.selection,name:pms.selection__pms_cancelation_rule__apply_on_noshow__all
 msgid "All Days"
-msgstr ""
+msgstr "Tutti i giorni"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__all_product_tag_ids
 msgid "All Product Tag"
-msgstr ""
+msgstr "Tutte le etichette prodotto"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__product_template__consumed_on__after
 msgid "All after night"
-msgstr ""
+msgstr "Tutto dopo la notte"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__product_template__consumed_on__before
 msgid "All before night"
-msgstr ""
+msgstr "Tutto prima della notte"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.massive_changes_wizard
 #: model_terms:ir.ui.view,arch_db:pms.wizard_folio_changes_view_form
 msgid "All days"
-msgstr ""
+msgstr "Tutti i giorni"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__lang
@@ -2199,63 +2314,65 @@ msgid ""
 "All the emails and documents sent to this contact will be translated in this "
 "language."
 msgstr ""
+"Tutte le email e i documenti inviati a questo contatto verranno tradotti in "
+"questa lingua."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_payment_folio__allowed_method_ids
 msgid "Allowed Method"
-msgstr ""
+msgstr "Metodi consentiti"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.res_users_view_form
 msgid "Allowed Properties"
-msgstr ""
+msgstr "Proprietà consentite"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__allowed_reservation_ids
 msgid "Allowed Reservations"
-msgstr ""
+msgstr "Prenotazioni consentite"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__allowed_room_type_ids
 msgid "Allowed Room Types"
-msgstr ""
+msgstr "Tipi camere consentiti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__allowed_room_ids
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_duplicate__allowed_room_ids
 #: model:ir.model.fields,field_description:pms.field_pms_wizard_reservation_lines_split__allowed_room_ids
 msgid "Allowed Rooms"
-msgstr ""
+msgstr "Camere consentite"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_split_join_swap_wizard__allowed_rooms_sources
 msgid "Allowed Rooms Sources"
-msgstr ""
+msgstr "Origini camere consentite"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation_split_join_swap_wizard__allowed_rooms_target
 msgid "Allowed Rooms Target"
-msgstr ""
+msgstr "Obiettivo camere consentito"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__allowed_service_ids
 msgid "Allowed Services"
-msgstr ""
+msgstr "Servizi consentiti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_product_pricelist_item__allowed_board_service_product_ids
 msgid "Allowed board service products"
-msgstr ""
+msgstr "Prodotti servizio pensione consentiti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_product_pricelist_item__allowed_board_service_room_type_ids
 msgid "Allowed board service room types"
-msgstr ""
+msgstr "Tipi camere servizio pensione consentiti"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__allowed_cancel
 msgid "Allowed cancel"
-msgstr ""
+msgstr "Annullamento consentito"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__allowed_checkin
@@ -2282,7 +2399,7 @@ msgstr "Servizi consentiti"
 #: code:addons/pms/models/pms_board_service.py:0
 #, python-format
 msgid "Already exists another Board Service with the same code and properties"
-msgstr "Esiste già un tipo di servizio con lo stresso codice e proprietà"
+msgstr "Esiste già un servizio pensione con lo stresso codice e proprietà"
 
 #. module: pms
 #. odoo-python
@@ -2322,52 +2439,52 @@ msgstr "Sempre"
 #: model:ir.ui.menu,name:pms.menu_action_pms_room_amenity_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_view_form
 msgid "Amenities"
-msgstr "Servizi"
+msgstr "Dotazioni"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_amenity_type__pms_amenity_ids
 msgid "Amenities In This Category"
-msgstr ""
+msgstr "Dotazioni in questa categoria"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_amenity_type__pms_amenity_ids
 msgid "Amenities included in this type"
-msgstr ""
+msgstr "Dotazioni incluse in questo tipo"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.menu_amenity
 #: model_terms:ir.ui.view,arch_db:pms.pms_amenity_view_form
 msgid "Amenity"
-msgstr ""
+msgstr "Dotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_amenity__pms_amenity_type_id
 msgid "Amenity Category"
-msgstr ""
+msgstr "Categoria dotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_amenity__name
 #: model:ir.model.fields,help:pms.field_pms_amenity__name
 msgid "Amenity Name"
-msgstr ""
+msgstr "Nome dotazione"
 
 #. module: pms
 #: model:ir.model,name:pms.model_pms_amenity_type
 #: model_terms:ir.ui.view,arch_db:pms.pms_amenity_view_form
 #: model_terms:ir.ui.view,arch_db:pms.pms_room_amenity_type_view_form
 msgid "Amenity Type"
-msgstr ""
+msgstr "Tipo dotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_amenity_type__name
 #: model:ir.model.fields,help:pms.field_pms_amenity_type__name
 msgid "Amenity Type Name"
-msgstr ""
+msgstr "Nome tipo dotazione"
 
 #. module: pms
 #: model:ir.ui.menu,name:pms.menu_action_pms_room_amenity_type_view_form
 msgid "Amenity Types"
-msgstr ""
+msgstr "Tipi dotazione"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service__amount
@@ -2376,148 +2493,148 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type_line__amount
 #: model:ir.model.fields,field_description:pms.field_wizard_payment_folio__amount
 msgid "Amount"
-msgstr ""
+msgstr "Valore"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__commission_amount
 msgid "Amount corresponding to commission"
-msgstr ""
+msgstr "Valore corrispondente alla commissione"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_folio__invoices_paid
 msgid "Amount of invoices paid"
-msgstr ""
+msgstr "Valore pagato della fattura"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_service_line__day_qty
 msgid "Amount to be consumed per day"
-msgstr ""
+msgstr "Valore da consumare per giorno"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__untaxed_amount_to_invoice
 msgid "Amount to invoice"
-msgstr ""
+msgstr "Importo da fatturare"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Amounts"
-msgstr ""
+msgstr "Importi"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__analytic_account_id
 #: model:ir.model.fields,field_description:pms.field_pms_property__analytic_account_id
 msgid "Analytic Account"
-msgstr ""
+msgstr "Conto analitico"
 
 #. module: pms
 #: model:ir.model,name:pms.model_account_analytic_distribution_model
 msgid "Analytic Distribution Model"
-msgstr ""
+msgstr "Modello distribuzione analitica"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.massive_changes_wizard
 #: model_terms:ir.ui.view,arch_db:pms.product_pricelist_item_view_tree
 msgid "Applicable on"
-msgstr ""
+msgstr "Applicabile a"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__tourist_tax_max_age
 #: model:ir.model.fields,help:pms.field_product_product__tourist_tax_max_age
 #: model:ir.model.fields,help:pms.field_product_template__tourist_tax_max_age
 msgid "Applies only to guests up to this age"
-msgstr ""
+msgstr "Si applica solo a ospiti con età superiore a questa"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__tourist_tax_min_age
 #: model:ir.model.fields,help:pms.field_product_product__tourist_tax_min_age
 #: model:ir.model.fields,help:pms.field_product_template__tourist_tax_min_age
 msgid "Applies only to guests with this age or older"
-msgstr ""
+msgstr "Si applica solo ad ospiti di questa età o più anziani"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_all_week
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_all_week
 msgid "Apply Availability Rule for the whole week"
-msgstr ""
+msgstr "Applica regola disponibilità per tutte la settimana"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_friday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_friday
 msgid "Apply Availability Rule on fridays"
-msgstr ""
+msgstr "applica regola disponibilità i venerdì"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_monday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_monday
 msgid "Apply Availability Rule on mondays"
-msgstr ""
+msgstr "Applica regola disponibilità i lunedì"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_saturday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_saturday
 msgid "Apply Availability Rule on saturdays"
-msgstr ""
+msgstr "Applica regola disponibilità i sabati"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_sunday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_sunday
 msgid "Apply Availability Rule on sundays"
-msgstr ""
+msgstr "Applica regola disponibilità le domeniche"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_thursday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_thursday
 msgid "Apply Availability Rule on thursdays"
-msgstr ""
+msgstr "Applica regola disponibilità i giovedì"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_tuesday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_tuesday
 msgid "Apply Availability Rule on tuesdays"
-msgstr ""
+msgstr "Applica regola disponibilità i martedì"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_on_wednesday
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_on_wednesday
 msgid "Apply Availability Rule on wednesdays"
-msgstr ""
+msgstr "Applica regola disponibilità i mercoledì"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_new_checkin
 msgid "Apply Checkin Update"
-msgstr ""
+msgstr "Applica aggiornamento check-in"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_new_checkout
 msgid "Apply Checkout Update"
-msgstr ""
+msgstr "Applica aggiornamento check-out"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_partner_id
 msgid "Apply Customer"
-msgstr ""
+msgstr "Applica cliente"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_discount
 msgid "Apply Discount update"
-msgstr ""
+msgstr "Applica aggiornamento sconto"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__change_from_date
 msgid "Apply From"
-msgstr ""
+msgstr "Applica da"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__tourist_tax_apply_from_night
 #: model:ir.model.fields,field_description:pms.field_product_product__tourist_tax_apply_from_night
 #: model:ir.model.fields,field_description:pms.field_product_template__tourist_tax_apply_from_night
 msgid "Apply From Night"
-msgstr ""
+msgstr "Applica dalla notte"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_price
 msgid "Apply Price update"
-msgstr ""
+msgstr "Applica aggiornamento prezzo"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__apply_pricelist
@@ -2525,154 +2642,154 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_res_users__apply_pricelist
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__apply_pricelist_id
 msgid "Apply Pricelist"
-msgstr ""
+msgstr "Applica listino"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_pricelists_on
 msgid "Apply Pricelists On"
-msgstr ""
+msgstr "Applica listino su"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_account_journal__room_filter_ids
 msgid "Apply Rooms"
-msgstr ""
+msgstr "Applica camere"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_wizard_folio_changes__change_to_date
 msgid "Apply To"
-msgstr ""
+msgstr "Applica a"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__tourist_tax_apply_to_night
 #: model:ir.model.fields,field_description:pms.field_product_product__tourist_tax_apply_to_night
 #: model:ir.model.fields,field_description:pms.field_product_template__tourist_tax_apply_to_night
 msgid "Apply Until Night"
-msgstr ""
+msgstr "Applica fino alla notte"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.massive_changes_wizard
 msgid "Apply and close"
-msgstr ""
+msgstr "Applica e chiudi"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.massive_changes_wizard
 msgid "Apply and continue"
-msgstr ""
+msgstr "Applica e continua"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_board_service_room_type__by_default
 msgid "Apply by Default"
-msgstr ""
+msgstr "Applica in modo predefinito"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_closed
 msgid "Apply changes to Closed"
-msgstr ""
+msgstr "Applica modifiche ai chiusi"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_closed_arrival
 msgid "Apply changes to Closed Arrival"
-msgstr ""
+msgstr "Applica modifiche agli arrivi chiusi"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_closed_departure
 msgid "Apply changes to Closed Departure"
-msgstr ""
+msgstr "Applica modifiche alle partenze chiuse"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_max_avail
 msgid "Apply changes to Max. Avail."
-msgstr ""
+msgstr "Applica modifiche a massima disponibilità"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_max_stay
 msgid "Apply changes to Max. Stay"
-msgstr ""
+msgstr "Applica modifiche a massima permanenza"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_max_stay_arrival
 msgid "Apply changes to Max. Stay Arrival"
-msgstr ""
+msgstr "Applica modifiche all'arrivo massima permanenza"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_min_stay
 msgid "Apply changes to Min. Stay"
-msgstr ""
+msgstr "Applica modifiche a minima permanenza"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_min_stay_arrival
 msgid "Apply changes to Min. Stay Arrival"
-msgstr ""
+msgstr "applica modifiche ad arrivo minima permanenza"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_massive_changes_wizard__apply_quota
 msgid "Apply changes to Quota"
-msgstr ""
+msgstr "Applica modifiche alla quota"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_line__adults
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type_line__adults
 msgid "Apply service to adults"
-msgstr ""
+msgstr "Applica sevizi agli adulti"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_board_service_line__children
 #: model:ir.model.fields,help:pms.field_pms_board_service_room_type_line__children
 msgid "Apply service to children"
-msgstr ""
+msgstr "Applica servizi ai figli"
 
 #. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_reservation__state__arrival_delayed
 msgid "Arrival Delayed"
-msgstr ""
+msgstr "Arrivo ritardato"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__default_arrival_hour
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__arrival_hour
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Arrival Hour"
-msgstr ""
+msgstr "Ora di arrivo"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__arrival_hour
 msgid "Arrival Hour (HH:MM)"
-msgstr ""
+msgstr "Ora di arrivo (HH:MM)"
 
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Assign Room"
-msgstr ""
+msgstr "Assegna camera"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__employee_ids
 msgid "Assigned Employees"
-msgstr ""
+msgstr "Dipendenti assegnati"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__pms_folio_ids
 #: model:ir.model.fields,help:pms.field_res_partner__pms_folio_ids
 #: model:ir.model.fields,help:pms.field_res_users__pms_folio_ids
 msgid "Associated Folios"
-msgstr ""
+msgstr "Fogli associati"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__pms_checkin_partner_ids
 #: model:ir.model.fields,help:pms.field_res_partner__pms_checkin_partner_ids
 #: model:ir.model.fields,help:pms.field_res_users__pms_checkin_partner_ids
 msgid "Associated checkin partners"
-msgstr ""
+msgstr "Partner check-in associati"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__pms_reservation_ids
 #: model:ir.model.fields,help:pms.field_res_partner__pms_reservation_ids
 #: model:ir.model.fields,help:pms.field_res_users__pms_reservation_ids
 msgid "Associated reservation"
-msgstr ""
+msgstr "Prenotazione associata"
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room__ubication_id
 msgid "At which ubication the room is located."
-msgstr ""
+msgstr "Dove si trova la camera."
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__message_attachment_count
@@ -2681,7 +2798,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__message_attachment_count
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Conteggio allegati"
 
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__product_template_attribute_value_ids
@@ -2834,6 +2951,11 @@ msgid "Available in PMS"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__available_in_pos
+msgid "Available in POS"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio_availability_wizard__rooms_available_qty
 msgid "Available rooms"
 msgstr ""
@@ -2862,6 +2984,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__avatar_512
 msgid "Avatar 512"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__avg_cost
+msgid "Average Cost"
 msgstr ""
 
 #. module: pms
@@ -2918,6 +3045,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_pms_property__barcode
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__barcode
 msgid "Barcode"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__valid_ean
+msgid "Barcode is valid EAN"
 msgstr ""
 
 #. module: pms
@@ -3301,6 +3433,16 @@ msgid "Category"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__route_from_categ_ids
+msgid "Category Routes"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__pos_categ_id
+msgid "Category used in the Point of Sale."
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_folio__cancelled_reason
 msgid "Cause of cancelled"
 msgstr ""
@@ -3356,8 +3498,19 @@ msgid "Check if the contact is a company, otherwise it is a person"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__to_weight
+msgid ""
+"Check if the product should be weighted using the hardware scale integration."
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation_duplicate__occupied_room
 msgid "Check if the room is occupied"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__available_in_pos
+msgid "Check if you want this product to appear in the Point of Sale."
 msgstr ""
 
 #. module: pms
@@ -3956,6 +4109,11 @@ msgid "Cost Currency"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__cost_method
+msgid "Costing Method"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__count_alternative_free_rooms
 msgid "Count Alternative Free Rooms"
 msgstr ""
@@ -4240,6 +4398,20 @@ msgid "Current property"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__qty_available
+msgid ""
+"Current quantity of products.\n"
+"In a context with a single Stock Location, this includes goods stored at "
+"this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the "
+"Stock Location of this Warehouse, or any of its children.\n"
+"stored in the Stock Location of the Warehouse of this Shop, or any of its "
+"children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' "
+"type."
+msgstr ""
+
+#. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
 msgid "Current state of this reservation"
 msgstr ""
@@ -4255,6 +4427,16 @@ msgstr ""
 #: model:ir.model.fields,help:pms.field_pms_folio__email
 #: model:ir.model.fields,help:pms.field_pms_reservation__email
 msgid "Customer E-mail"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__sale_delay
+msgid "Customer Lead Time"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__property_stock_customer
+msgid "Customer Location"
 msgstr ""
 
 #. module: pms
@@ -4522,6 +4704,13 @@ msgid "Degree of trust you have in this debtor"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__sale_delay
+msgid ""
+"Delivery lead time, in days. It's the number of days, promised to the "
+"customer, between the confirmation of the sales order and the delivery."
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_property__default_departure_hour
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__departure_hour
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
@@ -4546,6 +4735,14 @@ msgid "Departure delayed"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__route_ids
+msgid ""
+"Depending on the modules installed, this will allow you to define the route "
+"of the product: whether it will be bought, manufactured, replenished on "
+"order, etc."
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_folio_sale_line__name
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__description
 #: model:ir.model.fields,field_description:pms.field_room_closure_reason__description
@@ -4556,6 +4753,21 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_folio_sale_line__name
 msgid "Description of folio sale line"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__description_pickingout
+msgid "Description on Delivery Orders"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__description_picking
+msgid "Description on Picking"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__description_pickingin
+msgid "Description on Receptions"
 msgstr ""
 
 #. module: pms
@@ -4951,6 +5163,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_product_pricelist_item__date_end_consumption
 msgid "End date to apply daily pricelist items"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__tracking
+msgid "Ensure the traceability of a storable product in your warehouse."
 msgstr ""
 
 #. module: pms
@@ -5446,6 +5663,35 @@ msgid "Force no invoice"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__virtual_available
+msgid ""
+"Forecast quantity (computed as Quantity On Hand - Outgoing + Incoming)\n"
+"In a context with a single Stock Location, this includes goods stored in "
+"this location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the "
+"Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' "
+"type."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__free_qty
+msgid ""
+"Forecast quantity (computed as Quantity On Hand - reserved quantity)\n"
+"In a context with a single Stock Location, this includes goods stored in "
+"this location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the "
+"Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' "
+"type."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__virtual_available
+msgid "Forecasted Quantity"
+msgstr ""
+
+#. module: pms
 #. odoo-python
 #: code:addons/pms/models/pms_property.py:0
 #: code:addons/pms/models/pms_reservation.py:0
@@ -5488,6 +5734,11 @@ msgstr ""
 #. module: pms
 #: model:product.template,name:pms.pms_service_free_bar_product_template
 msgid "Free Bar"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__free_qty
+msgid "Free To Use Quantity "
 msgstr ""
 
 #. module: pms
@@ -6004,6 +6255,11 @@ msgid "Income Account"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__incoming_qty
+msgid "Incoming"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_checkin_partner__state__draft
 msgid "Incomplete data"
 msgstr ""
@@ -6365,14 +6621,24 @@ msgstr ""
 #. odoo-python
 #: code:addons/pms/models/pms_folio.py:0
 #, python-format
-msgid "Invalid token found! Token acquirer %(token_acquirer)s != %(acquirer)s"
+msgid "Invalid token found! Tokenacquirer %(token_acquirer)s != %(acquirer)s"
 msgstr ""
 
 #. module: pms
 #. odoo-python
 #: code:addons/pms/models/pms_folio.py:0
 #, python-format
-msgid "Invalid token found! Token partner %(token_partner)s != %(partner)s"
+msgid "Invalid token found! Tokenpartner %(token_partner)s != %(partner)s"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__property_stock_inventory
+msgid "Inventory Location"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__valuation
+msgid "Inventory Valuation"
 msgstr ""
 
 #. module: pms
@@ -7019,6 +7285,11 @@ msgid "List of amenities included in room type"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__location_id
+msgid "Location"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields.selection,name:pms.selection__pms_folio__state__done
 msgid "Locked"
 msgstr ""
@@ -7074,6 +7345,16 @@ msgstr ""
 #: model:ir.model.fields.selection,name:pms.selection__res_partner__invoice_to_agency__manual
 #: model:ir.model.fields.selection,name:pms.selection__res_partner__invoicing_policy__manual
 msgid "Manual"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__valuation
+msgid ""
+"Manual: The accounting entries to value the inventory are not posted "
+"automatically.\n"
+"        Automated: An accounting entry is automatically created to value the "
+"inventory when a product enters or leaves the company.\n"
+"        "
 msgstr ""
 
 #. module: pms
@@ -7256,6 +7537,11 @@ msgid "Message for Sales Order Line"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__message_ids
 #: model:ir.model.fields,field_description:pms.field_pms_folio__message_ids
 #: model:ir.model.fields,field_description:pms.field_pms_property__message_ids
@@ -7310,6 +7596,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_product_product__tourist_tax_min_age
 #: model:ir.model.fields,field_description:pms.field_product_template__tourist_tax_min_age
 msgid "Minimum Age"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__orderpoint_ids
+msgid "Minimum Stock Rules"
 msgstr ""
 
 #. module: pms
@@ -7464,6 +7755,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:pms.field_res_partner__nationality_id
 #: model:ir.model.fields,field_description:pms.field_res_users__nationality_id
 msgid "Nationality"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__nbr_moves_in
+msgid "Nbr Moves In"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__nbr_moves_out
+msgid "Nbr Moves Out"
 msgstr ""
 
 #. module: pms
@@ -7776,6 +8077,11 @@ msgid "Number of guest with pending checkin"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__nbr_moves_in
+msgid "Number of incoming stock moves in the past 12 months"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__message_needaction_counter
 #: model:ir.model.fields,help:pms.field_pms_folio__message_needaction_counter
 #: model:ir.model.fields,help:pms.field_pms_property__message_needaction_counter
@@ -7796,6 +8102,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_reservation__nights
 msgid "Number of nights of a reservation"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__nbr_moves_out
+msgid "Number of outgoing stock moves in the past 12 months"
 msgstr ""
 
 #. module: pms
@@ -8079,6 +8390,11 @@ msgstr ""
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "Out service description"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__outgoing_qty
+msgid "Outgoing"
 msgstr ""
 
 #. module: pms
@@ -8553,8 +8869,8 @@ msgstr ""
 #: code:addons/pms/models/pms_folio.py:0
 #, python-format
 msgid ""
-"Please define an accounting sales journal for the company %(company_name)s "
-"(%(company_id)s)."
+"Please define an accounting sales journal for the company {company_name} "
+"({company_id})."
 msgstr ""
 
 #. module: pms
@@ -8570,10 +8886,25 @@ msgid "Pms Role"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__pos_categ_id
+msgid "Point of Sale Category"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__access_url
 #: model:ir.model.fields,field_description:pms.field_pms_folio__access_url
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__access_url
 msgid "Portal Access URL"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__pos_order_ids
+msgid "Pos Order"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__pos_order_count
+msgid "Pos Order Count"
 msgstr ""
 
 #. module: pms
@@ -8849,8 +9180,8 @@ msgstr ""
 #: code:addons/pms/models/pms_reservation.py:0
 #, python-format
 msgid ""
-"Prices have been recomputed according to pricelist <b>%(pricelist)s</b>\n"
-"                and room type <b>%(room_type)s</b>"
+"Prices have been recomputed according to pricelist\n"
+"                <b>%(pricelist)s</b> and room type <b>%(room_type)s</b>"
 msgstr ""
 
 #. module: pms
@@ -9005,6 +9336,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_res_company__cancel_penalty_product_id
 msgid "Product used to calculate the cancel penalty"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__property_stock_production
+msgid "Production Location"
 msgstr ""
 
 #. module: pms
@@ -9277,6 +9613,11 @@ msgid "Purchase UoM"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__putaway_rule_ids
+msgid "Putaway Rules"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_service_line__auto_qty
 msgid "Qty automated setted"
 msgstr ""
@@ -9287,6 +9628,40 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:pms.portal_my_reservation_detail
 #: model_terms:ir.ui.view,arch_db:pms.report_folio_document
 msgid "Quantity"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__qty_available
+msgid "Quantity On Hand"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__quantity_svl
+msgid "Quantity Svl"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__incoming_qty
+msgid ""
+"Quantity of planned incoming products.\n"
+"In a context with a single Stock Location, this includes goods arriving to "
+"this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods arriving to the "
+"Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods arriving to any Stock Location with "
+"'internal' type."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__outgoing_qty
+msgid ""
+"Quantity of planned outgoing products.\n"
+"In a context with a single Stock Location, this includes goods leaving this "
+"Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods leaving the Stock "
+"Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods leaving any Stock Location with 'internal' "
+"type."
 msgstr ""
 
 #. module: pms
@@ -9467,6 +9842,21 @@ msgstr ""
 #: code:addons/pms/models/pms_reservation.py:0
 #, python-format
 msgid "Remove some of the leftover assigned checkins first"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__reordering_max_qty
+msgid "Reordering Max Qty"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__reordering_min_qty
+msgid "Reordering Min Qty"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__nbr_reordering_rules
+msgid "Reordering Rules"
 msgstr ""
 
 #. module: pms
@@ -9717,6 +10107,11 @@ msgid "Residence Address"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__responsible_id
+msgid "Responsible"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_checkin_partner__activity_user_id
 #: model:ir.model.fields,field_description:pms.field_pms_folio__activity_user_id
 #: model:ir.model.fields,field_description:pms.field_pms_property__activity_user_id
@@ -9958,13 +10353,6 @@ msgid "Room types"
 msgstr ""
 
 #. module: pms
-#. odoo-python
-#: code:addons/pms/wizards/wizard_split_join_swap_reservation.py:0
-#, python-format
-msgid "Room {} not available."
-msgstr ""
-
-#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__rooms
 msgid "Room/s"
 msgstr ""
@@ -10032,6 +10420,16 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_booking_duplicate__line_ids
 msgid "Rooms to create"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__route_ids
+msgid "Routes"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__has_available_route_ids
+msgid "Routes can be selected on this product"
 msgstr ""
 
 #. module: pms
@@ -10356,6 +10754,7 @@ msgstr ""
 
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_property__invoice_warn
+#: model:ir.model.fields,help:pms.field_pms_property__picking_warn
 #: model:ir.model.fields,help:pms.field_pms_property__sale_warn
 #: model:ir.model.fields,help:pms.field_pms_room_type__sale_line_warn
 msgid ""
@@ -10645,6 +11044,16 @@ msgid "Show Detail Report"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__show_forecasted_qty_status_button
+msgid "Show Forecasted Qty Status Button"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__show_on_hand_qty_status_button
+msgid "Show On Hand Qty Status Button"
+msgstr ""
+
+#. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_checkin_partner_view_folio_search
 msgid "Show all checkins for Tomorrow"
 msgstr ""
@@ -10805,6 +11214,18 @@ msgid "Stage"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__cost_method
+msgid ""
+"Standard Price: The products are valued at their standard cost defined on "
+"the product.\n"
+"        Average Cost (AVCO): The products are valued at weighted average "
+"cost.\n"
+"        First In First Out (FIFO): The products are valued supposing those "
+"that enter the company first will also leave it first.\n"
+"        "
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__tourist_tax_date_start
 #: model:ir.model.fields,field_description:pms.field_product_product__tourist_tax_date_start
 #: model:ir.model.fields,field_description:pms.field_product_template__tourist_tax_date_start
@@ -10904,6 +11325,31 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,help:pms.field_pms_checkin_partner__state
 msgid "Status of the checkin partner regarding the reservation"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__stock_move_ids
+msgid "Stock Move"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__picking_warn
+msgid "Stock Picking"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__stock_quant_ids
+msgid "Stock Quant"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__stock_valuation_layer_ids
+msgid "Stock Valuation Layer"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__storage_category_capacity_ids
+msgid "Storage Category Capacity"
 msgstr ""
 
 #. module: pms
@@ -11160,6 +11606,13 @@ msgid ""
 "        automatically when creating a new service. It is used when\n"
 "        creating a new service with lines in vals\n"
 "        "
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__company_currency_id
+msgid ""
+"Technical field to correctly show the currently selected company's currency "
+"that corresponds to the totaled value of the product's valuation layers"
 msgstr ""
 
 #. module: pms
@@ -11460,6 +11913,11 @@ msgid "The name that identifies the room closure reason"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_property__pos_order_count
+msgid "The number of point of sales orders related to this customer"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,help:pms.field_pms_room_type__total_rooms_count
 msgid "The number of rooms in a room type"
 msgstr ""
@@ -11652,8 +12110,8 @@ msgstr ""
 #: code:addons/pms/models/pms_reservation.py:0
 #, python-format
 msgid ""
-"The room %(room)s (type: %(room_type)s)\n"
-"                                is not compatible with the room type "
+"The room %(room)s (type: %(room_type)s) is not\n"
+"                                compatible with the room type "
 "%(record_room_type)s\n"
 "                                (type: %(record_room_class)s)"
 msgstr ""
@@ -11738,6 +12196,18 @@ msgid ""
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_property__property_stock_customer
+msgid ""
+"The stock location used as destination when sending goods to this contact."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_property__property_stock_supplier
+msgid ""
+"The stock location used as source when receiving goods from this contact."
+msgstr ""
+
+#. module: pms
 #. odoo-python
 #: code:addons/pms/models/account_move.py:0
 #, python-format
@@ -11788,7 +12258,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/pms/models/pms_reservation_line.py:0
 #, python-format
-msgid "There is no availability for the room type %(room_type)s on %(date)s"
+msgid "There is no availability for the room type {room_type} on {date}"
 msgstr ""
 
 #. module: pms
@@ -11813,13 +12283,6 @@ msgstr ""
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.portal_folio_error
 msgid "There was an error processing this page."
-msgstr ""
-
-#. module: pms
-#. odoo-python
-#: code:addons/pms/wizards/wizard_split_join_swap_reservation.py:0
-#, python-format
-msgid "There's no reservations lines with provided room"
 msgstr ""
 
 #. module: pms
@@ -11969,6 +12432,27 @@ msgid ""
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__property_stock_production
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for stock moves generated by manufacturing orders."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__property_stock_inventory
+msgid ""
+"This stock location will be used, instead of the default one, as the source "
+"location for stock moves generated when you do an inventory."
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,help:pms.field_pms_room_type__responsible_id
+msgid ""
+"This user will be responsible of the next activities related to logistic "
+"operations for this product."
+msgstr ""
+
+#. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_reservation_view_form
 msgid "This will update all unit prices based on the currently set pricelist."
 msgstr ""
@@ -12042,6 +12526,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_reservation__to_send_modification_mail
 msgid "To Send Modification Mail"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__to_weight
+msgid "To Weigh With Scale"
 msgstr ""
 
 #. module: pms
@@ -12137,6 +12626,11 @@ msgid "Total Tax"
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__total_value
+msgid "Total Value"
+msgstr ""
+
+#. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.pms_folio_view_tree
 msgid "Total amount"
 msgstr ""
@@ -12217,6 +12711,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__service_type
 msgid "Track Service"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__tracking
+msgid "Tracking"
 msgstr ""
 
 #. module: pms
@@ -12506,6 +13005,16 @@ msgid "Validation period stating date."
 msgstr ""
 
 #. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__company_currency_id
+msgid "Valuation Currency"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__value_svl
+msgid "Value Svl"
+msgstr ""
+
+#. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__image_variant_1920
 msgid "Variant Image"
 msgstr ""
@@ -12553,6 +13062,11 @@ msgstr ""
 #. module: pms
 #: model_terms:ir.ui.view,arch_db:pms.report_invoice_document
 msgid "Vendor Credit Note"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_property__property_stock_supplier
+msgid "Vendor Location"
 msgstr ""
 
 #. module: pms
@@ -12605,6 +13119,11 @@ msgstr ""
 #. module: pms
 #: model:ir.model.fields,field_description:pms.field_pms_room_type__volume_uom_name
 msgid "Volume unit of measure label"
+msgstr ""
+
+#. module: pms
+#: model:ir.model.fields,field_description:pms.field_pms_room_type__warehouse_id
+msgid "Warehouse"
 msgstr ""
 
 #. module: pms
@@ -12686,8 +13205,9 @@ msgstr ""
 #: code:addons/pms/wizards/pms_booking_duplicate.py:0
 #, python-format
 msgid ""
-"You can not create a new folio because there are rooms already occupied.\n"
-"                    Please, check the rooms marked in red and try again."
+"You can not create a new folio because there are rooms\n"
+"                    already occupied. Please, check the rooms marked in red\n"
+"                    and try again."
 msgstr ""
 
 #. module: pms
@@ -12984,3 +13504,15 @@ msgid ""
 "independent contact,\n"
 "                                you can select it in the billing assistant"
 msgstr ""
+
+#. module: pms
+#. odoo-python
+#: code:addons/pms/models/pms_reservation_line.py:0
+#, python-format
+msgid "{room_name}: No room available in {checkin} <-> {checkout}."
+msgstr ""
+
+#, python-format
+#~ msgid "%(room_name)s: No room available in %(checkin)s <-> %(checkout)s."
+#~ msgstr ""
+#~ "%(room_name)s: nessuna camera disponibile in %(checkin)s <-> %(checkout)s."

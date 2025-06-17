@@ -28,11 +28,14 @@ class ResPartner(models.Model):
                     continue
                 if len(partner.fiscalcode) != 16:
                     # Check fiscalcode length of a person
-                    msg = _("The fiscal code must have 16 characters.")
+                    msg = (
+                        _("The fiscal code '%s' must have 16 characters.")
+                        % partner.fiscalcode
+                    )
                     raise ValidationError(msg)
                 if not isvalid(partner.fiscalcode):
                     # Check fiscalcode validity
-                    msg = _("The fiscal code isn't valid.")
+                    msg = _("The fiscal code '%s' isn't valid.") % partner.fiscalcode
                     raise ValidationError(msg)
         return True
 
