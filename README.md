@@ -107,11 +107,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 182fa082f1ff3aac4353130530ef3ebcd1146b5b
-Author: Kévin Roche <kevin.roche@akretion.com>
-Date:   Mon Jun 9 09:53:39 2025 +0000
+commit 3f96fb22dd482285a4d19ca02787ae12e8d66be8
+Author: matthieusaison <matthieu.saison@akretion.com.br>
+Date:   Mon Jun 16 07:27:42 2025 +0000
 
-    Added translation using Weblate (French)
+    Translated using Weblate (French)
+    
+    Currently translated at 47.0% (8 of 17 strings)
+    
+    Translation: account-invoicing-14.0/account-invoicing-14.0-sale_line_refund_to_invoice_qty
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_line_refund_to_invoice_qty/fr/
 
 
 ## account-fiscal-rule
@@ -512,16 +517,16 @@ Date:   Wed Jun 4 02:53:22 2025 +0000
 
 ## margin-analysis
 From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
-commit 20e456f778d1b286777eacf65c513cccad5e26ac
+commit a7a0b8bf96ffb20a78e556d6b239b42c8f06c1da
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 11:43:46 2025 +0000
+Date:   Tue Jun 17 07:19:18 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (21 of 21 strings)
     
-    Translation: margin-analysis-14.0/margin-analysis-14.0-sale_margin_security
-    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-14-0/margin-analysis-14-0-sale_margin_security/it/
+    Translation: margin-analysis-14.0/margin-analysis-14.0-sale_margin_delivery_cost
+    Translate-URL: https://translation.odoo-community.org/projects/margin-analysis-14-0/margin-analysis-14-0-sale_margin_delivery_cost/it/
 
 
 ## fleet
@@ -765,11 +770,11 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit eb75454f348dd56925c27135a68c378293061efb
+commit 82c9a2aaa446429ad1a1079ae88729f45519b8db
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:03:03 2025 +0000
+Date:   Fri Jun 13 23:08:44 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-germany
@@ -828,16 +833,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 073505eae5b16108a871057465f2a8d73e69ff99
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jun 13 13:52:13 2025 +0000
+commit 2212004d3540bb39cadff0f4e58ab218e5f77310
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Mon Jun 16 14:54:03 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (261 of 261 strings)
     
     Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_ricevute_bancarie
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_ricevute_bancarie/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_ricevute_bancarie/it/
 
 
 ## l10n-japan
@@ -1058,16 +1063,11 @@ Date:   Fri Jun 13 09:04:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 5eb8c1f2f05dd63532002bfd6a360edc3f8e84e2
+commit 2af6315a091b127ecafe22db9d349de2971f3616
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 08:26:55 2025 +0000
+Date:   Tue Jun 17 07:13:33 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (15 of 15 strings)
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_move_line_auto_fill
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_move_line_auto_fill/it/
+    Added translation using Weblate (Italian)
 
 
 ## stock-logistics-tracking
@@ -1126,16 +1126,16 @@ Date:   Wed Jun 4 04:02:29 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit b17b9e6f730df159a8a35c102efed9de8fb47c0e
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jun 3 11:49:51 2025 +0000
+commit 35542c1c0c24febc4e91327b85a9a654630bf1d4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 17 06:45:16 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (34 of 34 strings)
     
-    Translation: manufacture-14.0/manufacture-14.0-mrp_unbuild_subcontracting
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_unbuild_subcontracting/
+    Translation: manufacture-14.0/manufacture-14.0-mrp_bom_attribute_match
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-14-0/manufacture-14-0-mrp_bom_attribute_match/it/
 
 
 ## manufacture-reporting
@@ -1360,11 +1360,11 @@ Date:   Tue Mar 25 06:27:29 2025 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 90f8a97c4c4ae38d7a34cc08fb3eab17978385cc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:33:58 2025 +0000
+commit 52b6980831d553474ae155e93d570ce2c8bc53ac
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Sat Jun 14 13:47:21 2025 +0200
 
-    [UPD] addons table in README.md
+    [FIX] kpi_dashboard: Demo data
 
 
 ## report-print-send
@@ -1515,9 +1515,9 @@ Date:   Wed Jun 4 03:57:51 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 71f45bb578e479419a1434dc41b762fc63bac0f7
+commit 474a0d426f46501d37d36ed4b3d611fbf385041d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 19 10:36:19 2025 +0000
+Date:   Mon Jun 16 08:58:31 2025 +0000
 
     Translated using Weblate (Italian)
     

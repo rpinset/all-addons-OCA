@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-10-24 22:51+0000\n"
-"Last-Translator: beau sebastien <sebastien.beau@akretion.com>\n"
+"PO-Revision-Date: 2025-06-16 10:26+0000\n"
+"Last-Translator: matthieusaison <matthieu.saison@akretion.com.br>\n"
 "Language-Team: none\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: sale_line_refund_to_invoice_qty
 #: model:ir.model,name:sale_line_refund_to_invoice_qty.model_account_move_reversal
@@ -98,8 +98,8 @@ msgid ""
 "Leave it marked when other customer invoices are expected for the quantities"
 " in the credit note."
 msgstr ""
-"Si coché les quantités rembourser seront décrémenter dans le total des "
-"quantités facturé dans la commande."
+"Si coché, les quantités remboursées seront décrémentées du total des "
+"quantités facturées dans la commande."
 
 #. module: sale_line_refund_to_invoice_qty
 #: model:ir.model.fields,field_description:sale_line_refund_to_invoice_qty.field_sale_order_line__qty_refunded_not_invoiceable
