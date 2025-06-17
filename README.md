@@ -69,11 +69,11 @@ Date:   Wed Jun 4 02:33:16 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 2b60765e1fdaed22e2952fa2e12bb32632112cdb
+commit ba25602b10a42828d0f41c88b0f5edf6938b2819
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:32:25 2025 +0000
+Date:   Sat Jun 14 14:48:59 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -900,11 +900,11 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e36ec90a4e65d2d071f1778ee4bd6efc325a1f4b
+commit 667f01a9d5d045556e91ba433897685d5f9296ef
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:10:16 2025 +0000
+Date:   Mon Jun 16 09:24:22 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1008,16 +1008,16 @@ Date:   Mon Jun 9 09:58:42 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 27eac6e28592169fa4847eb9c829ea36369ca20c
+commit 9c178a8b91c7435ef1fb2ee32e9812637f0b1e60
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 08:26:58 2025 +0000
+Date:   Sat Jun 14 06:44:26 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 94.4% (17 of 18 strings)
     
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_move_line_auto_fill
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_move_line_auto_fill/it/
+    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_picking_invoice_link
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_picking_invoice_link/it/
 
 
 ## stock-logistics-tracking
@@ -1126,20 +1126,6 @@ Author: oca-git-bot <oca-git-bot@odoo-community.org>
 Date:   Sun Feb 2 20:18:16 2025 +0000
 
     [IMP] update dotfiles
-
-
-## product-attribute
-From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 154f3e8c6888811c93a115518f6b97856bb5257f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 07:31:10 2025 +0000
-
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (14 of 14 strings)
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_multi_image
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_multi_image/it/
 
 
 ## product-kitting
@@ -1357,16 +1343,11 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 81a8c8d2fe72b1f205be97e619f2bc956130ed25
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 11:36:58 2025 +0000
+commit f438bfe4072f0e2398e7ffbf7ba3ba5fdb032375
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Jun 14 14:21:36 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: server-ux-15.0/server-ux-15.0-base_search_custom_field_filter
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_search_custom_field_filter/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files
@@ -1434,9 +1415,9 @@ Date:   Wed Jun 4 03:57:57 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 262744d624de62d1c32de2b822c8425fb60560ef
+commit 4f1fe4bb74de903a0d12ca8c8141298e284d32a2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Mar 19 10:36:14 2025 +0000
+Date:   Mon Jun 16 09:00:32 2025 +0000
 
     Translated using Weblate (Italian)
     
