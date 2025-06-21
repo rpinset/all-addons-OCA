@@ -1,5 +1,5 @@
 # Copyright 2020 Camptocamp (https://www.camptocamp.com)
-# Copyright 2020-2021 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
+# Copyright 2020 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from collections import namedtuple
@@ -73,7 +73,10 @@ class StockMove(models.Model):
         if (
             not self.picking_type_id.group_pickings
             or self.partner_id.disable_picking_grouping
-            or self.group_id.sale_id.picking_policy == "one"
+            or (
+                not self.picking_type_id.group_pickings_one
+                and self.group_id.move_type == "one"
+            )
         ):
             return domain
 
@@ -118,8 +121,8 @@ class StockMove(models.Model):
 
     def _key_assign_picking(self):
         return (
-            self.sale_line_id.order_id.partner_shipping_id,
-            PickingPolicy(id=self.sale_line_id.order_id.picking_policy),
+            self.group_id.partner_id,
+            PickingPolicy(id=self.group_id.move_type),
         ) + super()._key_assign_picking()
 
 

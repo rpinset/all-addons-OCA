@@ -105,8 +105,10 @@ zeep
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies
 pyfrdas2>=0.5
+pypdf>=3.1.0
 python-stdnum
 requests_oauthlib
+unidecode
 # From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
 # generated from manifests external_dependencies
 chardet

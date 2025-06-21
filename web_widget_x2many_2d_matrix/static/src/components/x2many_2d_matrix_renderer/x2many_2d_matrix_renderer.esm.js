@@ -1,7 +1,7 @@
 import {Component, onWillUpdateProps} from "@odoo/owl";
-import {registry} from "@web/core/registry";
 import {Domain} from "@web/core/domain";
 import {evaluateExpr} from "@web/core/py_js/py";
+import {registry} from "@web/core/registry";
 const fieldRegistry = registry.category("fields");
 
 export class X2Many2DMatrixRenderer extends Component {
@@ -168,13 +168,24 @@ export class X2Many2DMatrixRenderer extends Component {
             canCreateEdit: this.props.canCreateEdit,
         };
         const domain = record.fields[this.matrixFields.value].domain;
-        if ((Array.isArray(value) || typeof value === "string") && domain.length) {
+        if (
+            domain &&
+            (Array.isArray(value) || typeof value === "string") &&
+            domain.length
+        ) {
             result.domain = new Domain(
                 evaluateExpr(domain, record.evalContext)
             ).toList();
         }
         if (value === null) {
             result.readonly = true;
+        }
+        // Remove all props the field value component doesn't define
+        const valid_props = this._getValueFieldComponent().props;
+        for (const prop in result) {
+            if (!(prop in valid_props)) {
+                delete result[prop];
+            }
         }
         return result;
     }
