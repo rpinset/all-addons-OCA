@@ -475,7 +475,7 @@ addon | version | maintainers | summary
 [account_invoice_partner_reference](account_invoice_partner_reference/) | 16.0.1.0.0 |  | Add partner reference in the billing tree view.
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 16.0.1.0.0 |  | Account Invoice Payment Retention
 [account_invoice_payment_term_date_due](account_invoice_payment_term_date_due/) | 16.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Display invoices date due when using payment terms
-[account_invoice_pricelist](account_invoice_pricelist/) | 16.0.1.0.5 |  | Add partner pricelist on invoices
+[account_invoice_pricelist](account_invoice_pricelist/) | 16.0.1.0.6 |  | Add partner pricelist on invoices
 [account_invoice_pricelist_sale](account_invoice_pricelist_sale/) | 16.0.1.0.0 |  | Module to fill pricelist from sales order in invoice.
 [account_invoice_recipient_bank_currency](account_invoice_recipient_bank_currency/) | 16.0.1.0.0 |  | Module to fill recipient bank from invoices by using the invoice's currency.
 [account_invoice_refund_code](account_invoice_refund_code/) | 16.0.1.0.0 |  | This module allows to have specific refund codes.
@@ -593,6 +593,61 @@ addon | version | maintainers | summary
 [account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.4 |  | Add sale / purchase type on fiscal position
 [account_product_fiscal_classification](account_product_fiscal_classification/) | 16.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Simplify taxes management for products
 [l10n_eu_oss_oca](l10n_eu_oss_oca/) | 16.0.1.1.1 |  | L10n EU OSS OCA
+
+[//]: # (end addons)
+
+<!-- prettier-ignore-end -->
+
+## Licenses
+
+This repository is licensed under [AGPL-3.0](LICENSE).
+
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
+policy. Consult each module's `__manifest__.py` file, which contains a `license` key
+that explains its license.
+
+----
+OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
+organization whose mission is to support the collaborative development of Odoo features
+and promote its widespread use.
+
+----
+----
+
+# From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/operating-unit&target_branch=16.0)
+[![Pre-commit Status](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/OCA/operating-unit/actions/workflows/pre-commit.yml?query=branch%3A16.0)
+[![Build Status](https://github.com/OCA/operating-unit/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/OCA/operating-unit/actions/workflows/test.yml?query=branch%3A16.0)
+[![codecov](https://codecov.io/gh/OCA/operating-unit/branch/16.0/graph/badge.svg)](https://codecov.io/gh/OCA/operating-unit)
+[![Translation Status](https://translation.odoo-community.org/widgets/operating-unit-16-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/operating-unit-16-0/?utm_source=widget)
+
+<!-- /!\ do not modify above this line -->
+
+# operating-unit
+
+TODO: add repo description.
+
+<!-- /!\ do not modify below this line -->
+
+<!-- prettier-ignore-start -->
+
+[//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[account_operating_unit](account_operating_unit/) | 16.0.1.1.2 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[analytic_operating_unit](analytic_operating_unit/) | 16.0.1.0.0 |  | Analytic Operating Unit
+[contract_operating_unit](contract_operating_unit/) | 16.0.1.0.0 |  | Contract Operating Unit
+[hr_operating_unit](hr_operating_unit/) | 16.0.1.0.0 |  | HR Operating Unit
+[operating_unit](operating_unit/) | 16.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
+[product_operating_unit](product_operating_unit/) | 16.0.1.0.1 |  | Adds the concept of operating unit (OU) in products
+[project_operating_unit](project_operating_unit/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
+[report_qweb_operating_unit](report_qweb_operating_unit/) | 16.0.1.0.0 |  | Qweb Report With Operating Unit
+[sales_team_operating_unit](sales_team_operating_unit/) | 16.0.1.0.0 |  | Sales Team Operating Unit
+[stock_operating_unit](stock_operating_unit/) | 16.0.1.2.2 |  | Adds the concept of operating unit (OU) in stock management
 
 [//]: # (end addons)
 
@@ -932,7 +987,7 @@ addon | version | maintainers | summary
 [account_payment_mode](account_payment_mode/) | 16.0.2.0.0 |  | Account Payment Mode
 [account_payment_order](account_payment_order/) | 16.0.1.13.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 16.0.1.0.3 |  | Account Payment Order - Generate grouped moves
-[account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
+[account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 16.0.1.0.1 |  | Account Payment Order Return
 [account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_order_vendor_email](account_payment_order_vendor_email/) | 16.0.1.0.0 | <a href='https://github.com/ursais'><img src='https://github.com/ursais.png' width='32' height='32' style='border-radius:50%;' alt='ursais'/></a> | Account Payment Order Email
@@ -3142,7 +3197,7 @@ addon | version | maintainers | summary
 [hr_employee_group_overview_readonly](hr_employee_group_overview_readonly/) | 16.0.1.0.0 |  | HR Employee Group Overview Readonly
 [hr_employee_id](hr_employee_id/) | 16.0.1.0.0 |  | Employee ID
 [hr_employee_lastnames](hr_employee_lastnames/) | 16.0.1.0.2 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
-[hr_employee_medical_examination](hr_employee_medical_examination/) | 16.0.1.0.0 |  | Adds information about employee's medical examinations
+[hr_employee_medical_examination](hr_employee_medical_examination/) | 16.0.1.0.1 |  | Adds information about employee's medical examinations
 [hr_employee_partner_external](hr_employee_partner_external/) | 16.0.1.0.0 |  | Associate an external Partner to Employee
 [hr_employee_phone_extension](hr_employee_phone_extension/) | 16.0.1.0.0 |  | Employee Phone Extension
 [hr_employee_phone_pin](hr_employee_phone_pin/) | 16.0.1.0.0 | <a href='https://github.com/arielbarreiros96'><img src='https://github.com/arielbarreiros96.png' width='32' height='32' style='border-radius:50%;' alt='arielbarreiros96'/></a> | Employee Phone PIN
@@ -4669,7 +4724,7 @@ addon | version | maintainers | summary
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
 [l10n_jp_partner_title_qweb](l10n_jp_partner_title_qweb/) | 16.0.1.0.0 |  | Japan Partner Title QWeb
 [l10n_jp_partner_zip_address](l10n_jp_partner_zip_address/) | 16.0.1.0.0 |  | Japan Partner Zip Address
-[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.1.0 |  | Japan Summary Invoice
+[l10n_jp_summary_invoice](l10n_jp_summary_invoice/) | 16.0.1.2.0 |  | Japan Summary Invoice
 [report_alternative_layout](report_alternative_layout/) | 16.0.1.2.0 |  | Report Alternative Layout
 
 [//]: # (end addons)
@@ -6003,7 +6058,7 @@ addon | version | maintainers | summary
 [stock_picking_send_by_mail](stock_picking_send_by_mail/) | 16.0.1.0.0 |  | Send stock picking by email
 [stock_picking_show_backorder](stock_picking_show_backorder/) | 16.0.1.0.0 |  | Provides a new field on stock pickings, allowing to display the corresponding backorders.
 [stock_picking_show_return](stock_picking_show_return/) | 16.0.1.0.1 |  | Show returns on stock pickings
-[stock_picking_start](stock_picking_start/) | 16.0.1.1.1 |  | Add button to start picking
+[stock_picking_start](stock_picking_start/) | 16.0.1.2.0 |  | Add button to start picking
 [stock_picking_supplier_ref](stock_picking_supplier_ref/) | 16.0.1.0.0 |  | Adds a supplier reference field inside supplier's pickings and allows search for this reference.
 [stock_picking_to_batch_group_fields](stock_picking_to_batch_group_fields/) | 16.0.1.0.1 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Allows to create batches grouped by picking fields.
 [stock_picking_type_bypass_reservation](stock_picking_type_bypass_reservation/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Bypass reservation on desired Stock Picking Types
@@ -6247,6 +6302,7 @@ addon | version | maintainers | summary
 [stock_picking_batch_report](stock_picking_batch_report/) | 16.0.1.0.0 |  | Stock Picking Batch Report
 [stock_picking_operations_multilang](stock_picking_operations_multilang/) | 16.0.1.0.0 |  | Stock Picking Operations Multilang
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 16.0.1.0.2 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
+[stock_picking_report_delivery_custom_name](stock_picking_report_delivery_custom_name/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to hide the product display name in favor of the picking description
 [stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 16.0.1.1.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Delivery Driver info in Stock Picking reports
 [stock_picking_report_external_note](stock_picking_report_external_note/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Adds a note in Stock Picking shown on external reports like Delivery Slip
 [stock_picking_report_header_repeater](stock_picking_report_header_repeater/) | 16.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Stock Picking Report Header Repeater
@@ -6692,7 +6748,7 @@ addon | version | maintainers | summary
 [mgmtsystem_environment](mgmtsystem_environment/) | 16.0.1.0.0 |  | Environment Management System
 [mgmtsystem_evaluation](mgmtsystem_evaluation/) | 16.0.1.0.2 |  | Evaluate records within your management system
 [mgmtsystem_evaluation_hr](mgmtsystem_evaluation_hr/) | 16.0.1.0.0 |  | Allow to use evaluations on Employees
-[mgmtsystem_hazard](mgmtsystem_hazard/) | 16.0.1.0.0 |  | Hazard
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 16.0.1.1.0 |  | Hazard
 [mgmtsystem_hazard_maintenance_equipment](mgmtsystem_hazard_maintenance_equipment/) | 16.0.1.0.0 |  | Management System - Maintenance Equipment
 [mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 16.0.1.0.0 |  | Hazard Risk
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 16.0.1.0.1 |  | Health and Safety Management System
@@ -6814,6 +6870,7 @@ addon | version | maintainers | summary
 [product_supplier_code_purchase](product_supplier_code_purchase/) | 16.0.1.0.0 |  | This module adds to the purchase order line the supplier code defined in the product.
 [product_supplierinfo_purchase_contact](product_supplierinfo_purchase_contact/) | 16.0.1.0.0 |  | Add Purchase Contact in product supplier info
 [product_supplierinfo_qty_multiplier](product_supplierinfo_qty_multiplier/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product supplierinfo qty multiplier
+[product_supplierinfo_security](product_supplierinfo_security/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Restricts access to supplier information on products.
 [product_supplierinfo_update_price](product_supplierinfo_update_price/) | 16.0.1.0.0 |  | Updates the product's vendor price with the price set in a purchase order.
 [purchase_advance_payment](purchase_advance_payment/) | 16.0.1.2.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
 [purchase_all_shipments](purchase_all_shipments/) | 16.0.1.0.0 |  | Purchase All Shipments
@@ -6825,7 +6882,7 @@ addon | version | maintainers | summary
 [purchase_default_terms_conditions](purchase_default_terms_conditions/) | 16.0.1.0.3 |  | This module allows purchase default terms & conditions
 [purchase_delivery_split_date](purchase_delivery_split_date/) | 16.0.1.0.4 |  | Allows Purchase Order you confirm to generate one Incoming Shipment for each expected date indicated in the Purchase Order Lines
 [purchase_deposit](purchase_deposit/) | 16.0.1.1.0 |  | Option to create deposit from purchase order
-[purchase_discount](purchase_discount/) | 16.0.2.0.2 |  | Purchase order lines with discounts
+[purchase_discount](purchase_discount/) | 16.0.2.0.3 |  | Purchase order lines with discounts
 [purchase_exception](purchase_exception/) | 16.0.1.0.1 |  | Custom exceptions on purchase order
 [purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.1 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
@@ -6878,7 +6935,7 @@ addon | version | maintainers | summary
 [purchase_quick](purchase_quick/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Quick Purchase order
 [purchase_reception_status](purchase_reception_status/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
 [purchase_reorder_control](purchase_reorder_control/) | 16.0.1.0.0 |  | Restrict reordering unpurchaseable product
-[purchase_request](purchase_request/) | 16.0.2.2.3 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 16.0.2.3.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.1.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
@@ -7073,7 +7130,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 16.0.1.0.0 | <a href='https://github.com/GuillemCForgeFlow'><img src='https://github.com/GuillemCForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='GuillemCForgeFlow'/></a> <a href='https://github.com/AlvaroTForgeFlow'><img src='https://github.com/AlvaroTForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AlvaroTForgeFlow'/></a> <a href='https://github.com/OriolVForgeFlow'><img src='https://github.com/OriolVForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='OriolVForgeFlow'/></a> | Add the active field to the product supplier info
 [product_supplierinfo_code](product_supplierinfo_code/) | 16.0.1.0.0 |  | Allows to get main supplierinfo product_code on product level
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 16.0.1.0.4 |  | Allows to define prices for customers in the products
-[product_supplierinfo_import_by_barcode](product_supplierinfo_import_by_barcode/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode
+[product_supplierinfo_import_by_barcode](product_supplierinfo_import_by_barcode/) | 16.0.3.0.0 |  | Import supplier pricelists
 [product_supplierinfo_import_by_barcode_margin](product_supplierinfo_import_by_barcode_margin/) | 16.0.1.0.0 |  | Import supplier pricelists by barcode and margins
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 16.0.1.0.0 |  | Product Supplierinfo Revision
 [product_supplierinfo_standard_price](product_supplierinfo_standard_price/) | 16.0.1.0.0 | <a href='https://github.com/quentinDupont'><img src='https://github.com/quentinDupont.png' width='32' height='32' style='border-radius:50%;' alt='quentinDupont'/></a> | Product supplier easily connected to product's standard price
@@ -8099,6 +8156,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_delete_restrict](attachment_delete_restrict/) | 16.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Restrict Deletion of Attachments
+[attachment_logging](attachment_logging/) | 16.0.1.0.0 |  | Show attachment information in chatter
 [attachment_queue](attachment_queue/) | 16.0.1.2.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
 [attachment_synchronize](attachment_synchronize/) | 16.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Attachment Synchronize
 [attachment_unindex_content](attachment_unindex_content/) | 16.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
@@ -8109,7 +8167,7 @@ addon | version | maintainers | summary
 [base_conditional_image](base_conditional_image/) | 16.0.1.0.0 |  | This module extends the functionality to support conditional images
 [base_cron_exclusion](base_cron_exclusion/) | 16.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
 [base_domain_inverse_function](base_domain_inverse_function/) | 16.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Provide function to inverse domain into parts
-[base_exception](base_exception/) | 16.0.2.0.1 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
+[base_exception](base_exception/) | 16.0.2.1.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 16.0.6.6.1 |  | Up to date Fontawesome resources.
 [base_force_record_noupdate](base_force_record_noupdate/) | 16.0.1.0.0 |  | Manually force noupdate=True on models
 [base_import_default_enable_tracking](base_import_default_enable_tracking/) | 16.0.1.0.0 | <a href='https://github.com/benwillig'><img src='https://github.com/benwillig.png' width='32' height='32' style='border-radius:50%;' alt='benwillig'/></a> | This modules simply enables history tracking when doing an import.
@@ -8729,7 +8787,7 @@ addon | version | maintainers | summary
 [datamodel](datamodel/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | This addon allows you to define simple data models supporting serialization/deserialization
 [extendable](extendable/) | 16.0.1.0.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Extendable classes registry loader for Odoo
 [extendable_fastapi](extendable_fastapi/) | 16.0.2.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Allows the use of extendable into fastapi apps
-[fastapi](fastapi/) | 16.0.1.6.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 16.0.1.6.3 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [fastapi_auth_jwt](fastapi_auth_jwt/) | 16.0.1.0.4 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | JWT bearer token authentication for FastAPI.
 [fastapi_auth_jwt_demo](fastapi_auth_jwt_demo/) | 16.0.2.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Test/demo module for fastapi_auth_jwt.
 [fastapi_auth_partner](fastapi_auth_partner/) | 16.0.1.0.0 |  | This provides an implementation of auth_partner for FastAPI

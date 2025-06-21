@@ -61,16 +61,20 @@ class WizardAccountPaymentOrderNotification(models.TransientModel):
             )
         return vals
 
+    def _prepare_notification_vals(self, line):
+        """Compute vals to create notification from wizard"""
+        payment_line_ids = self.order_id.payment_line_ids.filtered(
+            lambda x: x.partner_id == line.partner_id.commercial_partner_id
+        )
+        return {
+            "partner_id": line.partner_id.id,
+            "payment_line_ids": payment_line_ids,
+        }
+
     def action_process(self):
         notifications = []
         for item in self.line_ids.filtered("to_send"):
-            payment_line_ids = self.order_id.payment_line_ids.filtered(
-                lambda x: x.partner_id == item.partner_id.commercial_partner_id
-            )
-            data = {
-                "partner_id": item.partner_id.id,
-                "payment_line_ids": payment_line_ids,
-            }
+            data = self._prepare_notification_vals(item)
             notifications.append((0, 0, data))
         self.order_id.notification_ids = notifications
         self.order_id._action_send_mail_notifications(self.mail_template_id)

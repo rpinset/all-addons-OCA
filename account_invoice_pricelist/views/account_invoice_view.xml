@@ -20,7 +20,7 @@
             >
                 <attribute
                     name="attrs"
-                >{'readonly': [('pricelist_id', '!=', False)]}</attribute>
+                >{'readonly': ['|', ('state', '!=', 'draft'), ('pricelist_id', '!=', False)]}</attribute>
             </xpath>
             <xpath
                 expr="//group[@id='header_right_group']/field[@name='currency_id']"
@@ -28,7 +28,7 @@
             >
                 <attribute
                     name="attrs"
-                >{'readonly': [('pricelist_id', '!=', False)]}</attribute>
+                >{'readonly': ['|', ('state', '!=', 'draft'), ('pricelist_id', '!=', False)]}</attribute>
             </xpath>
             <xpath expr="//div[field[@name='journal_id']]" position="after">
                 <field
