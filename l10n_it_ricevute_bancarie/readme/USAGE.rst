@@ -28,11 +28,15 @@ della RiBa non ancora scaduta.
 
 In maniera predefinita la data delle registrazioni dei pagamenti viene
 impostata con la data di scadenza della RiBa, ma è possibile modificarla
-in due momenti:
+in diversi momenti:
 
-- durante la creazione del pagamento,
+- Nella distinta RiBa durante la creazione del pagamento,
   cliccando su "Segna righe come pagate", "Segna come pagata"
   oppure usando l'azione "Registrazione RiBa a data di scadenza",
+  e indicando una data nel campo `Data pagamento`;
+
+- Nella lista dei Dettagli RiBa selezionando una o più righe,
+  poi Azione > "Paga riga RiBa",
   e indicando una data nel campo `Data pagamento`;
 
 - successivamente al pagamento effettivamente avvenuto,

@@ -1161,6 +1161,12 @@ msgid "No bank has been specified for invoice %s"
 msgstr "Non è stata specificata una banca per la fattura %s"
 
 #. module: l10n_it_ricevute_bancarie
+#: code:addons/l10n_it_ricevute_bancarie/models/riba.py:0
+#, python-format
+msgid "No line can be settled"
+msgstr ""
+
+#. module: l10n_it_ricevute_bancarie
 #: code:addons/l10n_it_ricevute_bancarie/models/account.py:0
 #, python-format
 msgid ""

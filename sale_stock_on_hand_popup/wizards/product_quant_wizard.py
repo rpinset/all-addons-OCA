@@ -6,9 +6,7 @@ class ProductQuantWizard(models.TransientModel):
     _description = "Product Quant Wizard"
 
     product_id = fields.Many2one("product.product")
-    stock_quant_ids = fields.Many2many(
-        "stock.quant", compute="_compute_stock_quant_ids"
-    )
+    stock_quant_ids = fields.One2many("stock.quant", compute="_compute_stock_quant_ids")
 
     @api.depends("product_id")
     def _compute_stock_quant_ids(self):

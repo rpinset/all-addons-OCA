@@ -7,17 +7,17 @@ from datetime import date
 
 from odoo import fields
 from odoo.exceptions import AccessError, ValidationError
-from odoo.fields import Command, first
+from odoo.fields import first
 from odoo.tests import Form
-from odoo.tests.common import TransactionCase
 from odoo.tools.date_utils import relativedelta
 
+from .test_assets_common import TestAssets as CommonTestAssets
 
-class TestAssets(TransactionCase):
+
+class TestAssets(CommonTestAssets):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.data_account_type_current_assets = "asset_current"
         cls.asset_category_1 = cls.env["asset.category"].create(
             {
                 "name": "Asset category 1",
@@ -25,9 +25,9 @@ class TestAssets(TransactionCase):
                 .search(
                     [
                         (
-                            "account_type",
+                            "user_type_id",
                             "=",
-                            "asset_fixed",
+                            cls.env.ref("account.data_account_type_fixed_assets").id,
                         )
                     ],
                     limit=1,
@@ -37,9 +37,9 @@ class TestAssets(TransactionCase):
                 .search(
                     [
                         (
-                            "account_type",
+                            "user_type_id",
                             "=",
-                            "expense",
+                            cls.env.ref("account.data_account_type_expenses").id,
                         )
                     ],
                     limit=1,
@@ -49,9 +49,11 @@ class TestAssets(TransactionCase):
                 .search(
                     [
                         (
-                            "account_type",
+                            "user_type_id",
                             "=",
-                            "asset_non_current",
+                            cls.env.ref(
+                                "account.data_account_type_non_current_assets"
+                            ).id,
                         )
                     ],
                     limit=1,
@@ -61,9 +63,9 @@ class TestAssets(TransactionCase):
                 .search(
                     [
                         (
-                            "account_type",
+                            "user_type_id",
                             "=",
-                            "income",
+                            cls.env.ref("account.data_account_type_revenue").id,
                         )
                     ],
                     limit=1,
@@ -76,90 +78,28 @@ class TestAssets(TransactionCase):
                 .search(
                     [
                         (
-                            "account_type",
+                            "user_type_id",
                             "=",
-                            "expense",
+                            cls.env.ref("account.data_account_type_expenses").id,
                         )
                     ],
                     limit=1,
                 )
                 .id,
                 "type_ids": [
-                    Command.create(
+                    (
+                        0,
+                        0,
                         {
                             "depreciation_type_id": cls.env.ref(
-                                "l10n_it_asset_management.ad_type_civilistico"
+                                "assets_management.ad_type_civilistico"
                             ).id,
                             "mode_id": cls.env.ref(
-                                "l10n_it_asset_management.ad_mode_materiale"
+                                "assets_management.ad_mode_materiale"
                             ).id,
                         },
                     )
                 ],
-            }
-        )
-        cls.tax_account = cls.env["account.account"].create(
-            {
-                "name": "Deductable tax",
-                "code": "DEDTAX",
-                "account_type": cls.data_account_type_current_assets,
-            }
-        )
-        cls.tax_22_partial_60 = cls.env["account.tax"].create(
-            {
-                "name": "22% deductable partial 60%",
-                "type_tax_use": "purchase",
-                "amount_type": "percent",
-                "amount": 22,
-                "invoice_repartition_line_ids": [
-                    Command.create(
-                        {
-                            "factor_percent": 100,
-                            "repartition_type": "base",
-                        },
-                    ),
-                    Command.create(
-                        {
-                            "factor_percent": 60,
-                            "repartition_type": "tax",
-                            "account_id": cls.tax_account.id,
-                        },
-                    ),
-                    Command.create(
-                        {
-                            "factor_percent": 40,
-                            "repartition_type": "tax",
-                        },
-                    ),
-                ],
-                "refund_repartition_line_ids": [
-                    Command.create(
-                        {
-                            "factor_percent": 100,
-                            "repartition_type": "base",
-                        },
-                    ),
-                    Command.create(
-                        {
-                            "factor_percent": 60,
-                            "repartition_type": "tax",
-                            "account_id": cls.tax_account.id,
-                        },
-                    ),
-                    Command.create(
-                        {
-                            "factor_percent": 40,
-                            "repartition_type": "tax",
-                        },
-                    ),
-                ],
-            }
-        )
-        cls.bank_account = cls.env["account.account"].create(
-            {
-                "code": "TBA",
-                "name": "Test Bank Account",
-                "account_type": "asset_cash",
             }
         )
         cls.env.user.groups_id += cls.env.ref("account.group_account_readonly")
@@ -243,7 +183,9 @@ class TestAssets(TransactionCase):
                 )
                 .id,
                 "invoice_line_ids": [
-                    Command.create(
+                    (
+                        0,
+                        0,
                         invoice_line_vals,
                     )
                 ],
@@ -296,7 +238,7 @@ class TestAssets(TransactionCase):
                 second_depreciation_date,
             ),
         )
-        civ_type = self.env.ref("l10n_it_asset_management.ad_type_civilistico")
+        civ_type = self.env.ref("assets_management.ad_type_civilistico")
         depreciation_id = asset.depreciation_ids.filtered(
             lambda x: x.type_id == civ_type
         )
@@ -402,7 +344,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -411,7 +353,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "create",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "name": "Test asset",
                 }
             )
@@ -477,7 +419,7 @@ class TestAssets(TransactionCase):
             sum(
                 line.debit
                 for line in purchase_invoice.line_ids
-                if line.account_id == self.asset_category_1_company_1.asset_account_id
+                if line.account_id == self.asset_category_1.asset_account_id
             ),
             7000 + (7000 * 0.22 * 0.4),
         )
@@ -485,7 +427,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -494,7 +436,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "create",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "name": "Test asset",
                 }
             )
@@ -511,7 +453,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -520,7 +462,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "create",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "name": "Test asset",
                 }
             )
@@ -555,7 +497,7 @@ class TestAssets(TransactionCase):
                 current_year_depreciation_date,
             ),
         )
-        civ_type = self.env.ref("l10n_it_asset_management.ad_type_civilistico")
+        civ_type = self.env.ref("assets_management.ad_type_civilistico")
         depreciation_id = asset.depreciation_ids.filtered(
             lambda x: x.type_id == civ_type
         )
@@ -582,7 +524,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -591,7 +533,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "update",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "asset_id": asset.id,
                     "depreciation_type_ids": [(6, 0, civ_type.ids)],
                 }
@@ -619,7 +561,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -628,7 +570,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "create",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "name": "Test asset",
                 }
             )
@@ -659,7 +601,7 @@ class TestAssets(TransactionCase):
                 current_year_depreciation_date,
             ),
         )
-        civ_type = self.env.ref("l10n_it_asset_management.ad_type_civilistico")
+        civ_type = self.env.ref("assets_management.ad_type_civilistico")
         depreciation_id = asset.depreciation_ids.filtered(
             lambda x: x.type_id == civ_type
         )
@@ -685,7 +627,7 @@ class TestAssets(TransactionCase):
         move_line_ids = wiz_vals["context"]["default_move_line_ids"][0][2]
         move_lines = self.env["account.move.line"].browse(move_line_ids)
         move_lines_to_do = move_lines.filtered(
-            lambda x: x.account_id == self.asset_category_1_company_1.asset_account_id
+            lambda x: x.account_id == self.asset_category_1.asset_account_id
         )
         wiz_vals["context"]["default_move_line_ids"] = [(6, 0, move_lines_to_do.ids)]
         wiz = (
@@ -694,7 +636,7 @@ class TestAssets(TransactionCase):
             .create(
                 {
                     "management_type": "update",
-                    "category_id": self.asset_category_1_company_1.id,
+                    "category_id": self.asset_category_1.id,
                     "asset_id": asset.id,
                     "depreciation_type_ids": [(6, 0, civ_type.ids)],
                 }
@@ -908,9 +850,7 @@ class TestAssets(TransactionCase):
                 third_depreciation_date,
             ),
         )
-        civ_depreciation_type = self.env.ref(
-            "l10n_it_asset_management.ad_type_civilistico"
-        )
+        civ_depreciation_type = self.env.ref("assets_management.ad_type_civilistico")
         civ_depreciation = asset.depreciation_ids.filtered(
             lambda x: x.type_id == civ_depreciation_type
         )
@@ -1003,9 +943,7 @@ class TestAssets(TransactionCase):
             asset.purchase_date,
             depreciation_date,
         )
-        civ_depreciation_type = self.env.ref(
-            "l10n_it_asset_management.ad_type_civilistico"
-        )
+        civ_depreciation_type = self.env.ref("assets_management.ad_type_civilistico")
         civ_depreciation = asset.depreciation_ids.filtered(
             lambda x: x.type_id == civ_depreciation_type
         )

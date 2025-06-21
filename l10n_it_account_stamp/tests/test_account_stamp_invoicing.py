@@ -1,5 +1,5 @@
+from odoo.fields import first
 from odoo.tests import Form, tagged
-from odoo.tools import first
 
 from odoo.addons.account.tests.test_account_invoice_report import (
     TestAccountInvoiceReport,

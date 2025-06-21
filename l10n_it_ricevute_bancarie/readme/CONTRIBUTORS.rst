@@ -18,3 +18,6 @@
   - Simone Rubino <sir@takobi.online>
 
 * Nextev Srl <odoo@nextev.it>
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>

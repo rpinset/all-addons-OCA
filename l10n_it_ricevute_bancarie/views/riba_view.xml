@@ -305,7 +305,7 @@
             ref="l10n_it_ricevute_bancarie.model_riba_distinta_line"
         />
         <field name="state">code</field>
-        <field name="code">action = records.settle_riba_line()</field>
+        <field name="code">action = records.button_settle()</field>
     </record>
 
     <!-- ====================================================== -->

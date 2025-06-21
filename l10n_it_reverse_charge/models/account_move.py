@@ -455,6 +455,11 @@ class AccountMove(models.Model):
         invoice_line_vals = []
         for inv_line in self.invoice_line_ids:
             line_vals = inv_line.copy_data()[0]
+            if line_vals.get("purchase_line_id"):
+                # soft integration: wothout depending on purchase module,
+                # disable possible link with purchase order line ,
+                # because self invoice must not be linked to purchase order
+                line_vals["purchase_line_id"] = False
             line_vals["move_id"] = supplier_invoice.id
             line_vals["analytic_tag_ids"] = False
             line_tax_ids = inv_line.tax_ids
