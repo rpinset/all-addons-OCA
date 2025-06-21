@@ -422,20 +422,30 @@ Date:   Sun Jun 8 13:56:35 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 65a50b2106816e916eb4779c255fb5391438acba
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:59:32 2025 +0000
+commit baa5e3bed4a0aea868cd8fc7841ecd687714abfb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:44:47 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (101 of 101 strings)
+    
+    Translation: knowledge-15.0/knowledge-15.0-document_page
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-15-0/knowledge-15-0-document_page/it/
 
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit aaf78c658a2956484a0d5902812df207b8ac877b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:49:02 2025 +0000
+commit c7271d421e157a6379551f07362d5b3eb7d67d9d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:45:35 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 95.7% (338 of 353 strings)
+    
+    Translation: dms-15.0/dms-15.0-dms
+    Translate-URL: https://translation.odoo-community.org/projects/dms-15-0/dms-15-0-dms/it/
 
 
 ## e-commerce
@@ -458,16 +468,16 @@ Date:   Wed Jun 4 02:51:29 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 7a47b2bd11075f8667154ac8264fa36f16089d7e
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jun 3 15:13:12 2025 +0000
+commit 9de80cef9582b052d5e188e187cdd129415ccf05
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:40:48 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (89 of 89 strings)
     
-    Translation: field-service-15.0/field-service-15.0-fieldservice_website_sale
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_website_sale/
+    Translation: field-service-15.0/field-service-15.0-fieldservice_change_management
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_change_management/it/
 
 
 ## margin-analysis
@@ -1049,11 +1059,16 @@ Date:   Wed Jun 4 03:49:48 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit d4416a29644f6caaddfae33dc7fd02a130067bfa
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:35:30 2025 +0000
+commit 859987855ab61fe68a175c2831cec95954069fcb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:44:51 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 92.0% (325 of 353 strings)
+    
+    Translation: rma-15.0/rma-15.0-rma
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
 
 
 ## ddmrp
@@ -1076,11 +1091,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 4c8f57d019acfeaa3e7178d1ba525d87ca8bb89e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 3 13:36:48 2025 +0000
+commit 0f41c8a3100881e6730837fcbe73c87bc42a5a55
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:41:09 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (164 of 164 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-quality_control_oca
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-quality_control_oca/it/
 
 
 ## manufacture-reporting
@@ -1094,11 +1114,16 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 6f50d328aa61b20a4cf9c6eab2e590dbb7d96002
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:14:34 2025 +0000
+commit 8624e79e340929cd03c558d9a26bc3d2e52410de
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:44:50 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (159 of 159 strings)
+    
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/it/
 
 
 ## pms
@@ -1126,6 +1151,20 @@ Author: oca-git-bot <oca-git-bot@odoo-community.org>
 Date:   Sun Feb 2 20:18:16 2025 +0000
 
     [IMP] update dotfiles
+
+
+## product-attribute
+From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
+commit 154f3e8c6888811c93a115518f6b97856bb5257f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jun 4 07:31:10 2025 +0000
+
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (14 of 14 strings)
+    
+    Translation: product-attribute-15.0/product-attribute-15.0-product_multi_image
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_multi_image/it/
 
 
 ## product-kitting
@@ -1166,16 +1205,16 @@ Date:   Sun Feb 2 20:17:28 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit b25bb68ed83c9a591a442f68830d74e043830349
+commit 040d6aafda485c1c21675462b79e074997b3455a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 07:15:30 2025 +0000
+Date:   Sat Jun 21 10:46:18 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 96.4% (27 of 28 strings)
+    Currently translated at 100.0% (53 of 53 strings)
     
-    Translation: project-15.0/project-15.0-project_status
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_status/it/
+    Translation: project-15.0/project-15.0-project_wbs
+    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_wbs/it/
 
 
 ## project-agile
@@ -1379,11 +1418,16 @@ Date:   Sun Jun 8 13:41:10 2025 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit adba43e04c6d2392961171a83dacd46170e0c3f6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:59:04 2025 +0000
+commit d4b6b4c85500536425be9f830307cc050d38c660
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:46:19 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (71 of 71 strings)
+    
+    Translation: iot-15.0/iot-15.0-iot_oca
+    Translate-URL: https://translation.odoo-community.org/projects/iot-15-0/iot-15-0-iot_oca/it/
 
 
 ## rest-framework
@@ -1406,11 +1450,16 @@ Date:   Sun Feb 2 20:30:37 2025 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit ebf559e180a0857c30583ceac66e8ea317ed4743
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:57:57 2025 +0000
+commit f8bcf398cc420b54f64bb44d275fd4b4da757f2d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:45:39 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (65 of 65 strings)
+    
+    Translation: vertical-association-15.0/vertical-association-15.0-membership_extension
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-15-0/vertical-association-15-0-membership_extension/it/
 
 
 ## vertical-hotel
