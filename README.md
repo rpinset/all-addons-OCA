@@ -473,20 +473,30 @@ Date:   Wed Jun 4 03:56:09 2025 +0000
 
 ## knowledge
 From [https://github.com/OCA/knowledge.git](https://github.com/OCA/knowledge.git)
-commit 5d029699fb7ad9f85bd21fd69bba937304528056
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:59:23 2025 +0000
+commit 3cc9546b519ef2e392c6e84feec11216bba349f2
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:42:44 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (97 of 97 strings)
+    
+    Translation: knowledge-13.0/knowledge-13.0-document_page
+    Translate-URL: https://translation.odoo-community.org/projects/knowledge-13-0/knowledge-13-0-document_page/it/
 
 
 ## dms
 From [https://github.com/OCA/dms.git](https://github.com/OCA/dms.git)
-commit f594187922c7bb85671bafa572113ecf8af7086c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:48:56 2025 +0000
+commit b0f88c194e2d3afb5938eb3819ff739178b9a988
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:43:40 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (333 of 333 strings)
+    
+    Translation: dms-13.0/dms-13.0-dms
+    Translate-URL: https://translation.odoo-community.org/projects/dms-13-0/dms-13-0-dms/it/
 
 
 ## e-commerce
@@ -509,16 +519,16 @@ Date:   Wed Jun 4 02:51:03 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 3c502c41b91f0ac8eaaba1bf47b4dc0fa2c2c266
+commit 6e02cc2292b1b11e3dfecbf2df371bf93e6095cd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 10:49:06 2025 +0000
+Date:   Sat Jun 21 10:44:45 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (139 of 139 strings)
+    Currently translated at 100.0% (544 of 544 strings)
     
-    Translation: field-service-13.0/field-service-13.0-fieldservice_recurring
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice_recurring/it/
+    Translation: field-service-13.0/field-service-13.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-13-0/field-service-13-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -562,11 +572,16 @@ Date:   Sun Sep 3 12:59:31 2023 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 293d77832a68f20cc97acc5a4a67999923d85576
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:56:38 2025 +0000
+commit 051ff201f77047680fcf444e8d48d6390c9336df
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:41:06 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (41 of 41 strings)
+    
+    Translation: timesheet-13.0/timesheet-13.0-hr_utilization_analysis
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-13-0/timesheet-13-0-hr_utilization_analysis/it/
 
 
 ## hr
@@ -1189,11 +1204,16 @@ Date:   Wed Jun 4 04:02:27 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 9bd117c83dafdac893eb0dbd61564c4cdb86b973
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:15:29 2025 +0000
+commit 9b1fbd72782258f8e05f5991ced65c6502133605
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:42:46 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (127 of 127 strings)
+    
+    Translation: manufacture-13.0/manufacture-13.0-mrp_production_request
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-13-0/manufacture-13-0-mrp_production_request/it/
 
 
 ## manufacture-reporting
@@ -1207,11 +1227,16 @@ Date:   Sat Feb 1 21:22:35 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 5c993327a20171178446541f515c58c8384cf859
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:14:16 2025 +0000
+commit ef9932f0f89e2ea18898d31e8f4f86eb40dbf869
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:43:35 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (86 of 86 strings)
+    
+    Translation: management-system-13.0/management-system-13.0-mgmtsystem
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-13-0/management-system-13-0-mgmtsystem/it/
 
 
 ## purchase-workflow
@@ -1292,16 +1317,16 @@ Date:   Sun Sep 3 15:37:11 2023 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 0f3af15b395f273e8fb2a527b30dc6d468ca2cf1
+commit 0271ea50d175bbae9112523d06427652b5b1700e
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 07:15:31 2025 +0000
+Date:   Sat Jun 21 10:46:50 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (26 of 26 strings)
+    Currently translated at 100.0% (13 of 13 strings)
     
-    Translation: project-13.0/project-13.0-project_status
-    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_status/it/
+    Translation: project-13.0/project-13.0-project_budget
+    Translate-URL: https://translation.odoo-community.org/projects/project-13-0/project-13-0-project_budget/it/
 
 
 ## project-agile
@@ -1523,11 +1548,16 @@ Date:   Sun Sep 3 13:14:50 2023 +0000
 
 ## iot
 From [https://github.com/OCA/iot.git](https://github.com/OCA/iot.git)
-commit 0041d7c0364b391ce10f8be6f7f5797123ed2da2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:58:58 2025 +0000
+commit 74ca6ce924a1a4696d66e00cf63b68285dcde5be
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Jun 21 10:40:59 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (71 of 71 strings)
+    
+    Translation: iot-13.0/iot-13.0-iot_oca
+    Translate-URL: https://translation.odoo-community.org/projects/iot-13-0/iot-13-0-iot_oca/it/
 
 
 ## rest-framework
@@ -1550,16 +1580,16 @@ Date:   Tue Apr 8 11:10:44 2025 +0000
 
 ## vertical-association
 From [https://github.com/OCA/vertical-association.git](https://github.com/OCA/vertical-association.git)
-commit 307dc54d2af1db27b9851223cf7252fef2096d0d
+commit 10917ad00b99ea9ac8b6d21e65eaaaefb829dda0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Oct 13 13:47:25 2023 +0000
+Date:   Sat Jun 21 10:43:37 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (26 of 26 strings)
+    Currently translated at 100.0% (66 of 66 strings)
     
-    Translation: vertical-association-13.0/vertical-association-13.0-membership_withdrawal
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-13-0/vertical-association-13-0-membership_withdrawal/it/
+    Translation: vertical-association-13.0/vertical-association-13.0-membership_extension
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-association-13-0/vertical-association-13-0-membership_extension/it/
 
 
 ## vertical-hotel
