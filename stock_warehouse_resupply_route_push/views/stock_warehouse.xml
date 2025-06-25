@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 ForgeFlow S.L. (http://www.forgeflow.com)
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+    <record id="view_warehouse" model="ir.ui.view">
+        <field name="name">stock.warehouse.form.inherit</field>
+        <field name="model">stock.warehouse</field>
+        <field name="inherit_id" ref="stock.view_warehouse" />
+        <field name="arch" type="xml">
+            <field name="resupply_wh_ids" position="after">
+                <label for="resupply_wh_push" class="oe_inline" />
+                <div class="o_row">
+                    <field name="resupply_wh_push" />
+                    <button
+                        name="action_recreate_resupply_routes"
+                        type="object"
+                        string="Regenerate Inter warehouse routes"
+                        class="oe_link"
+                        icon="fa-refresh"
+                        help="This will archive current inter-warehouse routes and create new ones based on the current configuration."
+                    />
+                </div>
+            </field>
+            <field name="out_type_id" position="after">
+                <field name="out_inter_wh_internal_type_id" readonly="1" />
+                <field name="out_inter_wh_external_type_id" readonly="1" />
+            </field>
+        </field>
+    </record>
+</odoo>

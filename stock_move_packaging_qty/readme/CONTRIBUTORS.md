@@ -1,0 +1,5 @@
+- Mateu Griful \<<mateu.griful@forgeflow.com>\>
+- Lois Rilo \<<lois.rilo@forgeflow.com>\>
+- Jairo Llopis ([Moduon](https://www.moduon.team/))
+- Emilio Pascual ([Moduon](https://www.moduon.team/))
+- Eduardo de Miguel ([Moduon](https://www.moduon.team/))
