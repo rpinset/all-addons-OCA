@@ -33,6 +33,9 @@
 * Lois Rilo <lois.rilo@forgeflow.com>
 * Saran Lim. <saranl@ecosoft.co.th>
 * Omar Castiñeira <omar@comunitea.com>
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>
 
 Much of the work in this module was done at a sprint in Sorrento, Italy in
 April 2016.

@@ -10,7 +10,6 @@ ACCOUNT_TYPES_NEGATIVE_SIGN = [
     "account.data_account_type_other_income",
     "account.data_account_type_payable",
     "account.data_account_type_credit_card",
-    "account.data_account_type_prepayments",
     "account.data_account_type_current_liabilities",
     "account.data_account_type_non_current_liabilities",
 ]

@@ -99,3 +99,27 @@ class TestIRModelData(SavepointCase):
 
         # Assert
         self.assertEqual(template, copied_other_company_template)
+
+    def test_only_access_rule(self):
+        """If a user has no access rights to email templates,
+        do not raise an AccessError.
+        """
+        # Arrange
+        user = self.env.ref("base.demo_user0")
+        user_env = self.env(user=user)
+        # pre-condition
+        self.assertFalse(
+            user_env["ir.model.access"].check(
+                "mail.template",
+                "read",
+                raise_exception=False,
+            )
+        )
+
+        # Act
+        template = user_env.ref(
+            self.other_company_template_xmlid, raise_if_not_found=False
+        )
+
+        # Assert
+        self.assertTrue(template)

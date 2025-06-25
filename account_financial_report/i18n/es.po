@@ -935,6 +935,11 @@ msgid "Hide accounts at 0"
 msgstr "Ocultar cuentas a 0"
 
 #. module: account_financial_report
+#: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0
+msgid "Hide accounts with 0 end balance"
+msgstr ""
+
+#. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__show_hierarchy_level
 msgid "Hierarchy Levels to display"
 msgstr "Niveles de Jerarquía a mostrar"
@@ -1144,6 +1149,12 @@ msgstr "Limitar niveles de jerarquía"
 #, python-format
 msgid "Missing Partner"
 msgstr "Falta el Socio"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/trial_balance.py:0
+#, python-format
+msgid "Mode %(mode)s for removing account lines at 0 not supported"
+msgstr ""
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__move_target
@@ -1801,6 +1812,13 @@ msgstr "Informe de IVA XLSX"
 #: model_terms:ir.ui.view,arch_db:account_financial_report.vat_report_wizard
 msgid "View"
 msgstr "Ver"
+
+#. module: account_financial_report
+#: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_end_0
+msgid ""
+"When this option is enabled, the trial balance will not display accounts "
+"that have end balance = 0"
+msgstr ""
 
 #. module: account_financial_report
 #: model:ir.model.fields,help:account_financial_report.field_trial_balance_report_wizard__hide_account_at_0

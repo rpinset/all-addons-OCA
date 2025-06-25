@@ -1,9 +1,10 @@
 # Author: Julien Coux
 # Copyright 2016 Camptocamp SA
 # Copyright 2020 ForgeFlow S.L. (https://www.forgeflow.com)
+# Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo.tests import tagged
+from odoo.tests import Form, tagged
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 
@@ -671,3 +672,62 @@ class TestTrialBalanceReport(AccountTestInvoicingCommon):
         self.assertEqual(total_initial_balance, 0)
         self.assertEqual(total_final_balance, 0)
         self.assertEqual(total_debit, total_credit)
+
+    def _move_amount(self, amount, from_account, to_account, move_date):
+        """Move `amount` from account `from_account` to account `to_account` on `move_date`."""
+        entry_form = Form(self.env["account.move"])
+        entry_form.partner_id = self.env.ref("base.res_partner_12")
+        entry_form.date = move_date
+        with entry_form.line_ids.new() as line:
+            line.name = "Test"
+            line.account_id = from_account
+            line.credit = 100
+        with entry_form.line_ids.new() as line:
+            line.name = "Test"
+            line.account_id = to_account
+            line.debit = 100
+        entry = entry_form.save()
+        entry.action_post()
+        return entry
+
+    def test_hide_account_at_end_0(self):
+        """When "Hide accounts with 0 end balance" is enabled,
+        accounts that have 0 end balance are hidden.
+        """
+        # Arrange
+        trial_balance = self.env["trial.balance.report.wizard"].create(
+            {
+                "date_from": self.date_start,
+                "date_to": self.date_end,
+                "hide_account_at_end_0": True,
+            }
+        )
+        start_date = trial_balance.date_from
+        end_date = trial_balance.date_to
+        report_interval = end_date - start_date
+        before_date = start_date - report_interval
+        in_date = start_date + report_interval / 2
+        # One account has initial balance > 0
+        # but end balance = 0
+        only_initial_account = self.account100.copy()
+        self._move_amount(100, self.account100, only_initial_account, before_date)
+        self._move_amount(100, only_initial_account, self.account100, in_date)
+        # Another account has initial balance = 0
+        # but end balance > 0
+        only_end_account = self.account100.copy()
+        self._move_amount(100, self.account100, only_end_account, in_date)
+
+        # Act
+        prepared_data = trial_balance._prepare_report_trial_balance()
+        report_values = self.env[
+            "report.account_financial_report.trial_balance"
+        ]._get_report_values(trial_balance, prepared_data)
+        trial_balance = report_values["trial_balance"]
+
+        # Assert
+        self.assertFalse(
+            self.check_account_in_report(only_initial_account.id, trial_balance)
+        )
+        self.assertTrue(
+            self.check_account_in_report(only_end_account.id, trial_balance)
+        )

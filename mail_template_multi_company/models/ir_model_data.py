@@ -13,7 +13,15 @@ class IRModelData(models.Model):
             xmlid,
             raise_if_not_found=raise_if_not_found,
         )
-        if res_model == "mail.template" and res_id:
+        if (
+            res_model == "mail.template"
+            and res_id
+            and self.env["ir.model.access"].check(
+                res_model,
+                "read",
+                raise_exception=False,
+            )
+        ):
             original_res_id = res_id
             module, xmlid = xmlid.split(".")
             res_model, res_id = self.check_object_reference(

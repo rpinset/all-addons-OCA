@@ -14,3 +14,7 @@ currency used in account move lines is properly shown.
 
 In case that in an account has not been configured a second currency foreign
 currency balances are not available.
+
+In the Trial Balance, the flag *Hide accounts with 0 end balance*
+allows the user to hide accounts that
+have ending balance equal to 0 in the selected period.

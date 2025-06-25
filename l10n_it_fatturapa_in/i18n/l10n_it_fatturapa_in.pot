@@ -149,12 +149,6 @@ msgid ""
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
-#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
-#, python-format
-msgid "Bill total %s is different from document total amount %s"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_fatturapa_in_attachment_form
 msgid "Bills"
 msgstr ""
@@ -227,7 +221,9 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
 #, python-format
-msgid "Computed amount untaxed %s is different from summary data %s"
+msgid ""
+"Computed amount untaxed %(amount_untaxed)s is different from summary data "
+"%(summary_data)s"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in
@@ -621,12 +617,6 @@ msgstr ""
 #. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
 msgid "General Data"
-msgstr ""
-
-#. module: l10n_it_fatturapa_in
-#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
-#, python-format
-msgid "Global bill discount from document general data"
 msgstr ""
 
 #. module: l10n_it_fatturapa_in

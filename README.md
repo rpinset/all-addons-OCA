@@ -84,16 +84,16 @@ Date:   Fri Jun 13 08:46:41 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 607ab22712376fe1f1d88260c132f67107dafdbf
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Jun 13 08:16:09 2025 +0000
+commit 9a8b7e4ea450f8475b99a10248b52d2aaf7a0fb9
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jun 25 09:44:43 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (109 of 109 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/it/
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/
 
 
 ## account-invoice-reporting
@@ -213,11 +213,11 @@ Date:   Thu Jun 5 13:15:09 2025 +0000
 
 ## account-reconcile
 From [https://github.com/OCA/account-reconcile.git](https://github.com/OCA/account-reconcile.git)
-commit 566a0e0b3e9cde7c1b89b651ef98213fe1c32039
+commit f773e1f212de68c0a5473d42b0b8a327479b7e67
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:38:16 2025 +0000
+Date:   Wed Jun 25 15:12:37 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## bank-statement-import
@@ -268,9 +268,9 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 81b2cf8407a117fe222c8b230f0fc21b28810e4f
+commit 8b115843911bec7eec6e1c3e287e17196ae5e198
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 18 13:05:27 2025 +0000
+Date:   Wed Jun 25 10:55:40 2025 +0000
 
     [BOT] post-merge updates
 
@@ -500,11 +500,16 @@ Date:   Sat Jun 21 10:43:43 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 8180c18c5e484e669addc71c66370d5d38d31ac8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:49:54 2025 +0000
+commit 20d5f853bb032b8f401b989e5e6ef69806fa54e9
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Jun 25 09:26:03 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_stock_available
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_stock_available/it/
 
 
 ## edi
@@ -656,11 +661,11 @@ Date:   Sun Feb 2 18:21:35 2025 +0000
 
 ## multi-company
 From [https://github.com/OCA/multi-company.git](https://github.com/OCA/multi-company.git)
-commit 589260b6bb4023e6b4bb9143a9f5ed7a53c61b22
+commit 1996cfff41bb16d7a5603e406afd10d4c9fb89ee
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:18:28 2025 +0000
+Date:   Wed Jun 25 08:20:37 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-argentina
@@ -863,14 +868,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit f6cb8a40b082202fe2931f178317872b60ed6a16
-Merge: 8ac8dbedf 650667ba2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 20 13:47:36 2025 +0000
+commit 83937eb86ea27e1d5a4c62818dd4c59d6e6fb155
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jun 25 14:03:39 2025 +0000
 
-    Merge PR #4775 into 14.0
+    Update translation files
     
-    Signed-off-by francesco-ooops
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa_in
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa_in/
 
 
 ## l10n-japan
@@ -1150,9 +1157,9 @@ Date:   Wed Jun 4 02:47:06 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 49d4fa1f1ac53a0ec17e5af3e88923e814c7a3d8
+commit 7b2e1ca16502a294fc34e9b710269994de23259e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 20 09:52:07 2025 +0000
+Date:   Tue Jun 24 20:33:02 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1316,16 +1323,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 86b609cfb202bcc87e4b1df61f1f52a7d9f3ad94
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 08:54:24 2025 +0000
+commit 59c57ee2b04f15c9aea515a5ffe32025a6b48567
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jun 24 06:34:14 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 96.0% (49 of 51 strings)
+    Currently translated at 98.5% (329 of 334 strings)
     
-    Translation: contract-14.0/contract-14.0-product_contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-product_contract/tr/
+    Translation: contract-14.0/contract-14.0-contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-contract/it/
 
 
 ## program

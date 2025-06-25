@@ -1,10 +1,11 @@
 # © 2016 Julien Coux (Camptocamp)
 # © 2018 Forest and Biomass Romania SA
 # Copyright 2020 ForgeFlow S.L. (https://www.forgeflow.com)
+# Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-from odoo import _, api, models
+from odoo import _, api, exceptions, models
 from odoo.tools.float_utils import float_is_zero
 
 
@@ -294,19 +295,55 @@ class TrialBalanceReport(models.AbstractModel):
                 total_amount[acc_id][key] = value
         return total_amount, partners_data
 
-    def _remove_accounts_at_cero(self, total_amount, show_partner_details, company):
-        def is_removable(d):
-            rounding = company.currency_id.rounding
-            return (
-                float_is_zero(d["initial_balance"], precision_rounding=rounding)
-                and float_is_zero(d["credit"], precision_rounding=rounding)
-                and float_is_zero(d["debit"], precision_rounding=rounding)
-                and float_is_zero(d["ending_balance"], precision_rounding=rounding)
-            )
+    def _is_removable(self, company, total_account_data, amounts_at_0):
+        """Return True when all keys in `amounts_at_0` have value 0 in `total_account_data`.
 
+        The precision of `company`'s currency is used to check the values.
+        """
+        rounding = company.currency_id.rounding
+        is_to_remove = False
+        for amount_at_0 in amounts_at_0:
+            if not float_is_zero(
+                total_account_data[amount_at_0],
+                precision_rounding=rounding,
+            ):
+                is_to_remove = False
+                break
+        else:
+            # All amounts are 0
+            is_to_remove = True
+        return is_to_remove
+
+    def _get_amounts_at_0_to_remove_account_data(self, mode):
+        """Return the amounts that must be checked for removing account lines."""
+        mode_to_amounts_at_0 = {
+            "all": [
+                "initial_balance",
+                "credit",
+                "debit",
+                "ending_balance",
+            ],
+            "end": [
+                "ending_balance",
+            ],
+        }
+        amounts_at_0 = mode_to_amounts_at_0.get(mode, [])
+        if not amounts_at_0:
+            raise exceptions.UserError(
+                _(
+                    "Mode %(mode)s for removing account lines at 0 not supported",
+                    mode=mode,
+                )
+            )
+        return amounts_at_0
+
+    def _remove_accounts_at_cero(
+        self, total_amount, show_partner_details, company, mode="all"
+    ):
+        amounts_at_0 = self._get_amounts_at_0_to_remove_account_data(mode=mode)
         accounts_to_remove = []
         for acc_id, ta_data in total_amount.items():
-            if is_removable(ta_data):
+            if self._is_removable(company, ta_data, amounts_at_0):
                 accounts_to_remove.append(acc_id)
             elif show_partner_details:
                 partner_to_remove = []
@@ -314,7 +351,9 @@ class TrialBalanceReport(models.AbstractModel):
                     # If the show_partner_details option is checked,
                     # the partner data is in the same account data dict
                     # but with the partner id as the key
-                    if isinstance(key, int) and is_removable(value):
+                    if isinstance(key, int) and self._is_removable(
+                        company, value, amounts_at_0
+                    ):
                         partner_to_remove.append(key)
                 for partner_id in partner_to_remove:
                     del ta_data[partner_id]
@@ -334,6 +373,7 @@ class TrialBalanceReport(models.AbstractModel):
         only_posted_moves,
         show_partner_details,
         hide_account_at_0,
+        hide_account_at_end_0,
         unaffected_earnings_account,
         fy_start_date,
     ):
@@ -447,6 +487,12 @@ class TrialBalanceReport(models.AbstractModel):
                 total_amount, tb_initial_prt, tb_period_prt, foreign_currency
             )
         # Remove accounts a 0 from collections
+        if hide_account_at_end_0:
+            company = self.env["res.company"].browse(company_id)
+            self._remove_accounts_at_cero(
+                total_amount, show_partner_details, company, mode="end"
+            )
+
         if hide_account_at_0:
             company = self.env["res.company"].browse(company_id)
             self._remove_accounts_at_cero(total_amount, show_partner_details, company)
@@ -657,6 +703,7 @@ class TrialBalanceReport(models.AbstractModel):
         date_to = data["date_to"]
         date_from = data["date_from"]
         hide_account_at_0 = data["hide_account_at_0"]
+        hide_account_at_end_0 = data["hide_account_at_end_0"]
         show_hierarchy = data["show_hierarchy"]
         show_hierarchy_level = data["show_hierarchy_level"]
         foreign_currency = data["foreign_currency"]
@@ -674,6 +721,7 @@ class TrialBalanceReport(models.AbstractModel):
             only_posted_moves,
             show_partner_details,
             hide_account_at_0,
+            hide_account_at_end_0,
             unaffected_earnings_account,
             fy_start_date,
         )
@@ -735,6 +783,7 @@ class TrialBalanceReport(models.AbstractModel):
             "date_to": data["date_to"],
             "only_posted_moves": data["only_posted_moves"],
             "hide_account_at_0": data["hide_account_at_0"],
+            "hide_account_at_end_0": data["hide_account_at_end_0"],
             "show_partner_details": data["show_partner_details"],
             "limit_hierarchy_level": data["limit_hierarchy_level"],
             "show_hierarchy": show_hierarchy,

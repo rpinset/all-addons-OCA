@@ -170,12 +170,6 @@ msgstr ""
 "Totale imposte: {bill_tax}"
 
 #. module: l10n_it_fatturapa_in
-#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
-#, python-format
-msgid "Bill total %s is different from document total amount %s"
-msgstr "Il totale fattura %s è diverso dall'importo totale del documento %s"
-
-#. module: l10n_it_fatturapa_in
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_fatturapa_in_attachment_form
 msgid "Bills"
 msgstr "Fatture"
@@ -251,8 +245,10 @@ msgstr "Il campo nome azienda contiene \"%s\", il sistema contiene \"%s\""
 #. module: l10n_it_fatturapa_in
 #: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
 #, python-format
-msgid "Computed amount untaxed %s is different from summary data %s"
-msgstr "L'imponibile calcolato %s è diverso da quello dei dati di riepilogo %s"
+msgid ""
+"Computed amount untaxed %(amount_untaxed)s is different from summary data "
+"%(summary_data)s"
+msgstr ""
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model,name:l10n_it_fatturapa_in.model_res_config_settings
@@ -667,12 +663,6 @@ msgstr "Forza validazione e-fattura"
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_in.view_invoice_form_fatturapa_in
 msgid "General Data"
 msgstr "Dati generali"
-
-#. module: l10n_it_fatturapa_in
-#: code:addons/l10n_it_fatturapa_in/wizard/wizard_import_fatturapa.py:0
-#, python-format
-msgid "Global bill discount from document general data"
-msgstr "Sconto globale fattura dai dati generali del documento"
 
 #. module: l10n_it_fatturapa_in
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_in.field_account_move__id
@@ -1730,6 +1720,19 @@ msgstr ""
 #, python-format
 msgid "You can select only one XML file to link."
 msgstr "È possibile selezionare solo un file XML da collegare."
+
+#, python-format
+#~ msgid "Bill total %s is different from document total amount %s"
+#~ msgstr "Il totale fattura %s è diverso dall'importo totale del documento %s"
+
+#, python-format
+#~ msgid "Computed amount untaxed %s is different from summary data %s"
+#~ msgstr ""
+#~ "L'imponibile calcolato %s è diverso da quello dei dati di riepilogo %s"
+
+#, python-format
+#~ msgid "Global bill discount from document general data"
+#~ msgstr "Sconto globale fattura dai dati generali del documento"
 
 #, python-format
 #~ msgid "File is linked to bills yet."

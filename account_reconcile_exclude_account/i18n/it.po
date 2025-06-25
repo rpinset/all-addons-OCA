@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_reconcile_exclude_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-05 12:33+0000\n"
+"PO-Revision-Date: 2025-06-05 12:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model,name:account_reconcile_exclude_account.model_account_reconciliation_widget
+msgid "Account Reconciliation widget"
+msgstr "Widget riconciliazione conto"
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_journal__account_reconcile_exclude_account_ids
+msgid "Accounts excluded from reconciliation"
+msgstr "Conti esclusi dalla riconciliazione"
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_journal__display_name
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_reconciliation_widget__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_journal__id
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_reconciliation_widget__id
+msgid "ID"
+msgstr ""
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model,name:account_reconcile_exclude_account.model_account_journal
+msgid "Journal"
+msgstr "Registro"
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model.fields,help:account_reconcile_exclude_account.field_account_journal__account_reconcile_exclude_account_ids
+msgid "Journal items that can be reconciled will not have these accounts."
+msgstr ""
+"I movimenti contabili che possono essere riconciliati non avranno questi "
+"conti."
+
+#. module: account_reconcile_exclude_account
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_journal____last_update
+#: model:ir.model.fields,field_description:account_reconcile_exclude_account.field_account_reconciliation_widget____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"

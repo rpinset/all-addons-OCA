@@ -1,10 +1,13 @@
 # Author: Andrea Gallina
 # ©  2015 Apulia Software srl
 # Copyright (C) 2017 Lorenzo Battistini - Agile Business Group
+# Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 import base64
 import datetime
+
+from dateutil.relativedelta import relativedelta
 
 from odoo.exceptions import UserError
 from odoo.fields import first
@@ -795,3 +798,65 @@ class TestInvoiceDueCost(riba_common.TestRibaCommon):
 
         # Assert
         self.assertEqual(bill.riba_supplier_company_bank_id, bank_account)
+
+    def test_set_acceptance_date(self):
+        """The acceptance date is propagated to the acceptance move."""
+        # Arrange
+        company = self.env.company
+        company.due_cost_service_id = self.service_due_cost
+        riba_configuration = self.riba_config_sbf_immediate
+
+        invoice = self._create_invoice()
+        invoice.action_post()
+        acceptance_date = invoice.date + relativedelta(days=7)
+
+        to_issue_action = self.env.ref(
+            "l10n_it_ricevute_bancarie.action_riba_da_emettere"
+        )
+        to_issue_records = self.env[to_issue_action.res_model].search(
+            safe_eval.safe_eval(to_issue_action.domain)
+        )
+        invoice_to_issue_records = to_issue_records & invoice.line_ids
+        self.assertTrue(invoice_to_issue_records)
+
+        issue_wizard_model = self.env["riba.issue"].with_context(
+            active_model=invoice_to_issue_records._name,
+            active_ids=invoice_to_issue_records.ids,
+        )
+        issue_wizard_form = Form(issue_wizard_model)
+        issue_wizard_form.configuration_id = riba_configuration
+        issue_wizard = issue_wizard_form.save()
+        issue_result = issue_wizard.create_list()
+        slip = self.env[issue_result["res_model"]].browse(issue_result["res_id"])
+        with Form(slip) as slip_form:
+            slip_form.date_accepted = acceptance_date
+        # pre-condition
+        self.assertEqual(slip.date_accepted, acceptance_date)
+        self.assertFalse(slip.acceptance_move_ids)
+
+        # Act
+        slip.confirm()
+
+        # Assert
+        acceptance_moves = slip.acceptance_move_ids
+        self.assertFalse(
+            acceptance_moves,
+            "The cache is fixed! Remove cache invalidation",
+        )
+        slip.invalidate_cache(
+            fnames=[
+                "acceptance_move_ids",
+            ],
+            ids=slip.ids,
+        )
+
+        acceptance_moves = slip.acceptance_move_ids
+        self.assertTrue(acceptance_moves)
+        self.assertEqual(
+            acceptance_moves.mapped("date"), [acceptance_date] * len(acceptance_moves)
+        )
+        acceptance_lines = acceptance_moves.line_ids
+        self.assertTrue(acceptance_lines)
+        self.assertEqual(
+            acceptance_lines.mapped("date"), [acceptance_date] * len(acceptance_lines)
+        )

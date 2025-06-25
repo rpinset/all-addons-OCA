@@ -405,16 +405,20 @@ class RibaListLine(models.Model):
     def confirm(self):
         move_model = self.env["account.move"]
         move_line_model = self.env["account.move.line"]
+        today = fields.Date.context_today(self)
         for line in self:
             journal = line.distinta_id.config_id.acceptance_journal_id
             total_credit = 0.0
+            date_accepted = line.distinta_id.date_accepted
+            if not date_accepted:
+                line.distinta_id.date_accepted = date_accepted = line.due_date or today
             move = move_model.create(
                 {
                     "ref": "{} C/O {} - Line {}".format(
                         line.invoice_number, line.distinta_id.name, line.sequence
                     ),
                     "journal_id": journal.id,
-                    "date": line.due_date,
+                    "date": date_accepted,
                 }
             )
             to_be_reconciled = self.env["account.move.line"]
@@ -453,6 +457,7 @@ class RibaListLine(models.Model):
                         "credit": riba_move_line.amount,
                         "debit": 0.0,
                         "move_id": move.id,
+                        "date": date_accepted,
                     }
                 )
                 to_be_reconciled |= move_line
@@ -478,6 +483,7 @@ class RibaListLine(models.Model):
                     "credit": 0.0,
                     "debit": total_credit,
                     "move_id": move.id,
+                    "date": date_accepted,
                 }
             )
             move.action_post()
@@ -489,8 +495,6 @@ class RibaListLine(models.Model):
                 }
             )
             line.distinta_id.state = "accepted"
-            if not line.distinta_id.date_accepted:
-                line.distinta_id.date_accepted = fields.Date.context_today(self)
 
     def button_settle(self):
         # The domain after "!" must match the domain

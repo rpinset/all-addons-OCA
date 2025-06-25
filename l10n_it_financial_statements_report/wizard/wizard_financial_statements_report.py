@@ -40,6 +40,7 @@ class ReportFinancialStatementsWizard(models.TransientModel):
             "journal_ids": self.journal_ids.ids or [],
             "fy_start_date": self.fy_start_date,
             "hide_account_at_0": self.hide_account_at_0,
+            "hide_account_at_end_0": self.hide_account_at_end_0,
             "hide_parent_hierarchy_level": self.hide_parent_hierarchy_level,
             "show_hierarchy": self.show_hierarchy,
             "limit_hierarchy_level": self.limit_hierarchy_level,
