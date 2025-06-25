@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-28 10:54+0000\n"
+"PO-Revision-Date: 2025-06-25 06:54+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -142,7 +142,8 @@ msgstr ""
 #, python-format
 msgid ""
 "%(message_code)s not found in the current transfer or already in a package."
-msgstr "%(message_code)s non trovato nel trasferimento attuale o già nel collo."
+msgstr ""
+"%(message_code)s non trovato nel trasferimento attuale o già nel collo."
 
 #. module: shopfloor
 #. odoo-python
@@ -611,6 +612,11 @@ msgstr "Ignorare inoltro non trovato non è consentito per il menu {}."
 #: model:ir.model,name:shopfloor.model_stock_location
 msgid "Inventory Locations"
 msgstr "Ubicazioni di inventario"
+
+#. module: shopfloor
+#: model:ir.model.fields,field_description:shopfloor.field_stock_picking__is_shopfloor_created
+msgid "Is Shopfloor Created"
+msgstr "Il reparto è crato"
 
 #. module: shopfloor
 #. odoo-python

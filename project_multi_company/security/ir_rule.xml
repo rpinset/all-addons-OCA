@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <record id="project_project_stage_company_rule" model="ir.rule">
+        <field name="name">Project Stages - Multi-Company</field>
+        <field name="model_id" ref="project.model_project_project_stage" />
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="project_task_type_company_rule" model="ir.rule">
+        <field name="name">Task Stages - Multi-Company</field>
+        <field name="model_id" ref="project.model_project_task_type" />
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+</odoo>

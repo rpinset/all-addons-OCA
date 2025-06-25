@@ -6,33 +6,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-06-25 09:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: auth_partner
 #: model:ir.model.fields.selection,name:auth_partner.selection__wizard_auth_partner_reset_password__delay__14-days
 msgid "14 Days"
-msgstr ""
+msgstr "14 Giorni"
 
 #. module: auth_partner
 #: model:ir.model.fields.selection,name:auth_partner.selection__wizard_auth_partner_reset_password__delay__2-days
 msgid "2-days"
-msgstr ""
+msgstr "2 Giorni"
 
 #. module: auth_partner
 #: model:ir.model.fields.selection,name:auth_partner.selection__wizard_auth_partner_reset_password__delay__6-hours
 msgid "6 Hours"
-msgstr ""
+msgstr "6 Ore"
 
 #. module: auth_partner
 #: model:ir.model.fields.selection,name:auth_partner.selection__wizard_auth_partner_reset_password__delay__7-days
 msgid "7 Days"
-msgstr ""
+msgstr "7 Giorni"
 
 #. module: auth_partner
 #: model:mail.template,body_html:auth_partner.email_reset_password
@@ -44,6 +46,15 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div>\n"
+"            Salve <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"            fare clic sul seguente collegamento per resettare la passwrod\n"
+"            <a t-attf-href="
+"\"https://example.org/password/reset?token={{ object.env.context['token']}}\""
+" target=\"_blank\" style=\"color:#FFFFFF; text-decoration:none;\">Resetta "
+"password</a>\n"
+"            </div>\n"
+"        "
 
 #. module: auth_partner
 #: model:mail.template,body_html:auth_partner.email_validate_email
@@ -55,6 +66,16 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div>\n"
+"            Salve <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"            Benvenuto sul sito, clicca sul seguente collegamento per "
+"verificare la tua e-mail\n"
+"            <a t-attf-href="
+"\"https://example.org/email/validate?token={{ object.env.context['token']}}\""
+" target=\"_blank\" style=\"color:#FFFFFF; text-decoration:none;\">Valida "
+"e-mail</a>\n"
+"            </div>\n"
+"        "
 
 #. module: auth_partner
 #: model:mail.template,body_html:auth_partner.email_set_password
@@ -67,22 +88,32 @@ msgid ""
 "            </div>\n"
 "        "
 msgstr ""
+"<div>\n"
+"            Salve <t t-out=\"object.partner_id.name or ''\"></t>\n"
+"            Benvenuto, il tuo account è stato creato\n"
+"            Clicca sul collegamento seguente per impostare la tua password\n"
+"            <a t-attf-href="
+"\"https://example.org/password/reset?token={{ object.env.context['token']}}\""
+" target=\"_blank\" style=\"color:#FFFFFF; text-decoration:none;\">Imposta "
+"password</a>\n"
+"            </div>\n"
+"        "
 
 #. module: auth_partner
 #: model:res.groups,name:auth_partner.group_auth_partner_api
 msgid "API Partner Auth Access"
-msgstr ""
+msgstr "Autorizzazione accesso API del partner"
 
 #. module: auth_partner
 #: model:res.groups,name:auth_partner.group_auth_partner_manager
 msgid "API Partner Auth Manager"
-msgstr ""
+msgstr "Responsabile autorizzazione API del partner"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_directory_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.view_partner_form
 msgid "Account"
-msgstr ""
+msgstr "Conto"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_reset_password_view_form
@@ -90,65 +121,67 @@ msgid ""
 "An email will be send with a token to each customer, you can specify the "
 "date until the link is valid"
 msgstr ""
+"Verrà inviata una e-mail con un token ad ogni cliente, si può indicare la "
+"data entro cui il collegamento è valido"
 
 #. module: auth_partner
 #: model:ir.model,name:auth_partner.model_auth_directory
 msgid "Auth Directory"
-msgstr ""
+msgstr "Cartella autorizzazione"
 
 #. module: auth_partner
 #: model:mail.template,name:auth_partner.email_reset_password
 msgid "Auth Directory: Reset Password"
-msgstr ""
+msgstr "Cartella autorizzazione: reimposta password"
 
 #. module: auth_partner
 #: model:mail.template,name:auth_partner.email_set_password
 msgid "Auth Directory: Set Password"
-msgstr ""
+msgstr "Cartella autorizzazione: imposta password"
 
 #. module: auth_partner
 #: model:mail.template,name:auth_partner.email_validate_email
 msgid "Auth Directory: Validate Email"
-msgstr ""
+msgstr "Cartella autorizzazione: valida e-mail"
 
 #. module: auth_partner
 #: model:ir.model,name:auth_partner.model_auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_search
 msgid "Auth Partner"
-msgstr ""
+msgstr "Partner autorizzazione"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_res_partner__auth_partner_count
 #: model:ir.model.fields,field_description:auth_partner.field_res_users__auth_partner_count
 msgid "Auth Partner Count"
-msgstr ""
+msgstr "Conteggio partner autorizzazione"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__auth_partner_ids
 msgid "Auth Partners"
-msgstr ""
+msgstr "Partner autorizzazione"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_force_set_password_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_reset_password_view_form
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__password_confirm
 msgid "Confirm Password"
-msgstr ""
+msgstr "Conferma password"
 
 #. module: auth_partner
 #: model:ir.model,name:auth_partner.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contatto"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__count_partner
 msgid "Count Partner"
-msgstr ""
+msgstr "Conteggio partner"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__create_uid
@@ -156,7 +189,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__create_uid
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creato da"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__create_date
@@ -164,47 +197,47 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__create_date
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creato il"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__date_last_impersonation
 msgid "Date Last Impersonation"
-msgstr ""
+msgstr "Data ultima imitazione"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__date_last_request_reset_pwd
 msgid "Date Last Request Reset Pwd"
-msgstr ""
+msgstr "Data ultima richiesta reimpostazione password"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__date_last_sucessfull_reset_pwd
 msgid "Date Last Sucessfull Reset Pwd"
-msgstr ""
+msgstr "Data ultima reimpostazione password riuscita"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__date_validity
 msgid "Date Validity"
-msgstr ""
+msgstr "Validità data"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__date_last_request_reset_pwd
 msgid "Date of the last password reset request"
-msgstr ""
+msgstr "Data ultima richiesta reimpostazione password"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__date_last_impersonation
 msgid "Date of the last sucessfull impersonation"
-msgstr ""
+msgstr "Data ultima imitazione riuscita"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__date_last_sucessfull_reset_pwd
 msgid "Date of the last sucessfull password reset"
-msgstr ""
+msgstr "Data ultima reimpostazione password riuscita"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__delay
 msgid "Delay"
-msgstr ""
+msgstr "Ritardo"
 
 #. module: auth_partner
 #: model:ir.actions.act_window,name:auth_partner.auth_directory_action
@@ -212,13 +245,13 @@ msgstr ""
 #: model:ir.ui.menu,name:auth_partner.auth_directory_menu
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_search
 msgid "Directory"
-msgstr ""
+msgstr "Cartella"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_directory_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_directory_view_search
 msgid "Directory Auth"
-msgstr ""
+msgstr "Autorizzazione cartella"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__display_name
@@ -226,7 +259,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__display_name
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: auth_partner
 #. odoo-python
@@ -236,21 +269,24 @@ msgid ""
 "Email address not validated. Validate your email address by clicking on the "
 "link in the email sent to you or request a new password. "
 msgstr ""
+"Indirizzo e-mail non validato. Validare il proprio indirizzo e-mail facendo "
+"click sul collegamento nella e-mail inviata per la richiesta di una nuova "
+"password. "
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__encrypted_password
 msgid "Encrypted Password"
-msgstr ""
+msgstr "Password criptata"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__force_verified_email
 msgid "Force Verified Email"
-msgstr ""
+msgstr "Forza e-mail verificata"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_search
 msgid "Group By"
-msgstr ""
+msgstr "Raggruppa per"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__id
@@ -258,45 +294,46 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__id
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_directory__force_verified_email
 msgid "If checked, email must be verified to be able to log in"
 msgstr ""
+"Se selezionata, l'e-mail deve essere verificata per consentire l'accesso"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_form
 msgid "Impersonate"
-msgstr ""
+msgstr "Imita"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__impersonating_token_duration
 msgid "Impersonating Token Duration"
-msgstr ""
+msgstr "Durata token imitazione"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__impersonating_user_ids
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__impersonating_user_ids
 msgid "Impersonating Users"
-msgstr ""
+msgstr "Utenti imitazione"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_directory__set_password_token_duration
 msgid "In minute, default 1440 minutes => 24h"
-msgstr ""
+msgstr "In minuti,predefinito 1440 minuti => 24 ore"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_directory__impersonating_token_duration
 msgid "In seconds, default 60 seconds"
-msgstr ""
+msgstr "In secondi, predefinito 60 secondi"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/models/auth_partner.py:0
 #, python-format
 msgid "Invalid Login or Password"
-msgstr ""
+msgstr "Nome o password errati"
 
 #. module: auth_partner
 #. odoo-python
@@ -305,20 +342,20 @@ msgstr ""
 #: code:addons/auth_partner/models/auth_directory.py:0
 #, python-format
 msgid "Invalid Token"
-msgstr ""
+msgstr "Token non valido"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/models/auth_directory.py:0
 #, python-format
 msgid "Invalid token"
-msgstr ""
+msgstr "Token non valido"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_force_set_password_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_reset_password_view_form
 msgid "Label"
-msgstr ""
+msgstr "Etichetta"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory____last_update
@@ -326,7 +363,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password____last_update
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__write_uid
@@ -334,7 +371,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__write_uid
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Ultimo aggiornamento di"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__write_date
@@ -342,71 +379,71 @@ msgstr ""
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__write_date
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultimo aggiornamento il"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__login
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 #. module: auth_partner
 #: model:ir.model.constraint,message:auth_partner.constraint_auth_partner_directory_login_uniq
 msgid "Login must be uniq per directory !"
-msgstr ""
+msgstr "La login deve essere univoca per cartella!"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_reset_password__template_id
 msgid "Mail Template"
-msgstr ""
+msgstr "Modello e-mail"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__reset_password_template_id
 msgid "Mail Template Forget Password"
-msgstr ""
+msgstr "Modello e-mail password dimenticata"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__set_password_template_id
 msgid "Mail Template New Password"
-msgstr ""
+msgstr "Modello e-mail nuova password"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__validate_email_template_id
 msgid "Mail Template Validate Email"
-msgstr ""
+msgstr "Modello e-mail validazione e-mail"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__mail_verified
 msgid "Mail Verified"
-msgstr ""
+msgstr "E-mail verificata"
 
 #. module: auth_partner
 #: model:ir.model.fields.selection,name:auth_partner.selection__wizard_auth_partner_reset_password__delay__manually
 msgid "Manually"
-msgstr ""
+msgstr "Manualmente"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__name
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__nbr_pending_reset_sent
 msgid "Nbr Pending Reset Sent"
-msgstr ""
+msgstr "N° reset inviati in attesa"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/wizards/wizard_auth_partner_force_set_password.py:0
 #, python-format
 msgid "No active_id in context"
-msgstr ""
+msgstr "Manca active_id nel context"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/models/auth_directory.py:0
 #, python-format
 msgid "No email template defined for %(template)s in %(directory)s"
-msgstr ""
+msgstr "Modello e-mail non definito per %(template)s in %(directory)s"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__nbr_pending_reset_sent
@@ -416,105 +453,109 @@ msgid ""
 "their password and you senddifferent mail depending on the number of "
 "reminder"
 msgstr ""
+"Numero di reimpostazioni in sospeso inviate dal cliente. Questo campo è "
+"utile quando, dopo una migrazione da un altro sistema, si chiede a tutti i "
+"tuoi clienti di reimpostare la propria password e si inviano e-mail diverse "
+"a seconda del numero di promemoria"
 
 #. module: auth_partner
 #: model:ir.actions.act_window,name:auth_partner.auth_partner_action
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__partner_id
 #: model:ir.ui.menu,name:auth_partner.auth_partner_menu
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_res_partner__auth_partner_ids
 #: model:ir.model.fields,field_description:auth_partner.field_res_users__auth_partner_ids
 msgid "Partner Auth"
-msgstr ""
+msgstr "Autorizzazione partner"
 
 #. module: auth_partner
 #: model:ir.ui.menu,name:auth_partner.auth
 msgid "Partner Authentication"
-msgstr ""
+msgstr "Autenticazione partner"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__password
 #: model:ir.model.fields,field_description:auth_partner.field_wizard_auth_partner_force_set_password__password
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/wizards/wizard_auth_partner_force_set_password.py:0
 #, python-format
 msgid "Password and Confirm Password must be the same"
-msgstr ""
+msgstr "La password e la conferma devono essere uguali"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_directory_view_form
 msgid "Regenerate secret key"
-msgstr ""
+msgstr "Rigenera chiave segreta"
 
 #. module: auth_partner
 #: model:mail.template,subject:auth_partner.email_reset_password
 msgid "Reset Password"
-msgstr ""
+msgstr "Resetta password"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__secret_key
 msgid "Secret Key"
-msgstr ""
+msgstr "Chiave segreta"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__secret_key_env_default
 msgid "Secret Key Env Default"
-msgstr ""
+msgstr "Chiave segreta ambiente predefinita"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__secret_key_env_is_editable
 msgid "Secret Key Env Is Editable"
-msgstr ""
+msgstr "La chiave segreta è modificabile"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_form
 msgid "Send Invite"
-msgstr ""
+msgstr "Invia invito"
 
 #. module: auth_partner
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_reset_password_view_form
 msgid "Send Reset Password"
-msgstr ""
+msgstr "Invia reset password"
 
 #. module: auth_partner
 #: model:ir.actions.act_window,name:auth_partner.auth_partner_action_reset_password
 msgid "Send Reset Password Instruction"
-msgstr ""
+msgstr "Invia istruzioni reset password"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__server_env_defaults
 msgid "Server Env Defaults"
-msgstr ""
+msgstr "Predefiniti ambiente server"
 
 #. module: auth_partner
 #: model:ir.actions.act_window,name:auth_partner.auth_partner_force_set_password_action
 #: model_terms:ir.ui.view,arch_db:auth_partner.auth_partner_view_form
 #: model_terms:ir.ui.view,arch_db:auth_partner.wizard_auth_partner_force_set_password_view_form
 msgid "Set Password"
-msgstr ""
+msgstr "Imposta password"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_directory__set_password_token_duration
 msgid "Set Password Token Duration"
-msgstr ""
+msgstr "Durata token impostazione password"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__user_can_impersonate
 msgid "Technical field to check if the user can impersonate"
-msgstr ""
+msgstr "Campo tecnico per controllare se l'utente può imitare"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_directory__impersonating_user_ids
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__impersonating_user_ids
 msgid "These odoo users can impersonate any partner of this directory"
-msgstr ""
+msgstr "Questi utenti Odoo possono imitare qualsiasi partner in questa cartella"
 
 #. module: auth_partner
 #: model:ir.model.fields,help:auth_partner.field_auth_partner__mail_verified
@@ -522,34 +563,36 @@ msgid ""
 "This field is set to True when the user has clicked on the link sent by "
 "email"
 msgstr ""
+"Questo campo è impostato a true quando l'utente ha cliccato nel collegamento "
+"inviato per e-mail"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/wizards/wizard_auth_partner_force_set_password.py:0
 #, python-format
 msgid "This wizard can only be used on auth.partner"
-msgstr ""
+msgstr "Questa procedura guidata può essere usata solo su auth.partner"
 
 #. module: auth_partner
 #: model:ir.model.fields,field_description:auth_partner.field_auth_partner__user_can_impersonate
 msgid "User Can Impersonate"
-msgstr ""
+msgstr "L'utente può imitare"
 
 #. module: auth_partner
 #: model:mail.template,subject:auth_partner.email_set_password
 #: model:mail.template,subject:auth_partner.email_validate_email
 msgid "Welcome"
-msgstr ""
+msgstr "Benvenuto"
 
 #. module: auth_partner
 #: model:ir.model,name:auth_partner.model_wizard_auth_partner_force_set_password
 #: model:ir.model,name:auth_partner.model_wizard_auth_partner_reset_password
 msgid "Wizard Partner Auth Reset Password"
-msgstr ""
+msgstr "Procedura guidata reset password autorizzazione partner"
 
 #. module: auth_partner
 #. odoo-python
 #: code:addons/auth_partner/models/auth_partner.py:0
 #, python-format
 msgid "You are not allowed to impersonate this user"
-msgstr ""
+msgstr "Non si è autorizzati a imitare questo utente"

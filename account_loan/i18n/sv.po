@@ -132,7 +132,8 @@ msgstr "Beloppet av betalning som kommer att tilldelas räntor"
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan_line__principal_amount
 msgid "Amount of the payment that will reduce the pending loan amount"
-msgstr "Belopp av betalningen som kommer att minska det utestående lånebeloppet"
+msgstr ""
+"Belopp av betalningen som kommer att minska det utestående lånebeloppet"
 
 #. module: account_loan
 #: model:ir.model.fields,help:account_loan.field_account_loan_line__long_term_principal_amount
@@ -609,6 +610,11 @@ msgstr "Låneprodukt"
 #: model:ir.ui.menu,name:account_loan.loan_menu
 msgid "Loans"
 msgstr "Lån"
+
+#. module: account_loan
+#: model:ir.model.fields,field_description:account_loan.field_account_loan__long_term_journal_id
+msgid "Long Term Journal"
+msgstr ""
 
 #. module: account_loan
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_line__long_term_pending_principal_amount

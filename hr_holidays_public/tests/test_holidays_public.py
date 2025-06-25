@@ -1,20 +1,22 @@
 # Copyright 2015 Salton Massally <smassally@idtlabs.sl>
 # Copyright 2018 Brainbean Apps (https://brainbeanapps.com)
+# Copyright 2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from datetime import date
 
+from freezegun import freeze_time
+
 from odoo.exceptions import UserError, ValidationError
-from odoo.tests.common import TransactionCase
+from odoo.tests import new_test_user
 
-from odoo.addons.base.tests.common import DISABLED_MAIL_CONTEXT
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestHolidaysPublicBase(TransactionCase):
+class TestHolidaysPublicBase(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(context=dict(cls.env.context, **DISABLED_MAIL_CONTEXT))
         cls.holiday_model = cls.env["hr.holidays.public"]
         cls.holiday_model_line = cls.env["hr.holidays.public.line"]
         cls.employee_model = cls.env["hr.employee"]
@@ -325,3 +327,17 @@ class TestHolidaysPublic(TestHolidaysPublicBase):
             country_id=demo_user_empl_addr.country_id.id,
             state_ids=[(6, 0, [self.env.ref("base.state_us_3").id])],
         )
+
+    @freeze_time("1994-10-14")
+    def test_user_im_status(self):
+        self.assertTrue(self.employee.is_public_holiday)
+        self.assertEqual(self.employee.hr_icon_display, "presence_holiday_absent")
+        self.assertTrue(self.employee.is_absent)
+        user = new_test_user(self.env, login="test-user")
+        self.assertEqual(user.im_status, "offline")
+        self.assertEqual(user.partner_id.im_status, "offline")
+        self.employee.user_id = user
+        user.invalidate_recordset()
+        self.assertEqual(user.im_status, "leave_offline")
+        user.partner_id.invalidate_recordset()
+        self.assertEqual(user.partner_id.im_status, "leave_offline")

@@ -60,7 +60,10 @@ class PurchaseOrder(models.Model):
                     request, requests_dict[request_id]
                 )
                 request.message_post(
-                    body=message, subtype_id=self.env.ref("mail.mt_note").id
+                    body=message,
+                    subtype_id=self.env.ref(
+                        "purchase_request.mt_request_po_confirmed"
+                    ).id,
                 )
         return True
 

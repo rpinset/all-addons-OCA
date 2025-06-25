@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * project_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 15:40+0000\n"
+"PO-Revision-Date: 2025-01-30 15:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_multi_company
+#: model:ir.model.fields,field_description:project_multi_company.field_project_project_stage__company_id
+#: model:ir.model.fields,field_description:project_multi_company.field_project_task_type__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: project_multi_company
+#: model:ir.model,name:project_multi_company.model_project_project_stage
+msgid "Project Stage"
+msgstr "Étape du projet"
+
+#. module: project_multi_company
+#: model:ir.model,name:project_multi_company.model_project_task_type
+msgid "Task Stage"
+msgstr "Étape de tâche"

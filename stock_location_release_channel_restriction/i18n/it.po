@@ -150,7 +150,7 @@ msgstr ""
 "Non è possibile spostare i prodotti in fase di prelievo (%(picking_name)s) "
 "in %(location_name)s. Quella ubicazione ha già movimenti in uscita in "
 "sospeso per il canale di rilascio di %(release_channel_name)s e/o movimenti "
-"in entrata in sospeso per %(incoming_channel_name)s"
+"in entrata in sospeso per %(incoming_channel_names)s"
 
 #, python-format
 #~ msgid ""

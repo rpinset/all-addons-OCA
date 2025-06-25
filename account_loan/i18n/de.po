@@ -612,6 +612,11 @@ msgid "Loans"
 msgstr "Darlehen"
 
 #. module: account_loan
+#: model:ir.model.fields,field_description:account_loan.field_account_loan__long_term_journal_id
+msgid "Long Term Journal"
+msgstr ""
+
+#. module: account_loan
 #: model:ir.model.fields,field_description:account_loan.field_account_loan_line__long_term_pending_principal_amount
 msgid "Long Term Pending Principal Amount"
 msgstr "Langfristig ausstehende Hauptbeträge"
