@@ -1239,9 +1239,9 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit f4381c5d76ac053fb2d6aa3791a27bac82f0c196
+commit 0b5c64daa9518f70ac6e03fd2669c754f3a30465
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 10:44:55 2025 +0000
+Date:   Tue Jun 24 06:35:20 2025 +0000
 
     Translated using Weblate (Italian)
     
