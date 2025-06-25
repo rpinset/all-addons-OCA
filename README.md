@@ -1000,11 +1000,11 @@ Date:   Sun Feb 2 19:52:24 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 49c18307fc4fa3172faf198015cc42f7f0a0c027
+commit ed6e4ebb21a8856c65c6a9c1cff0a694a3753b08
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:48:03 2025 +0000
+Date:   Tue Jun 24 15:34:45 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1228,9 +1228,9 @@ Date:   Sun Feb 2 20:16:43 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 212c66b868d335e62ded1b50b2276d8ac7c24123
+commit 65a4b183102af141e0e777b887fc4896b8ff48ce
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 10:39:48 2025 +0000
+Date:   Tue Jun 24 06:32:35 2025 +0000
 
     Translated using Weblate (Italian)
     
