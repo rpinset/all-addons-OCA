@@ -1264,16 +1264,16 @@ Date:   Mon Oct 9 23:38:41 2023 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit c433941513dd321e04db2fb45a345015992d9fa8
+commit 367cf6131bce5c253bdceb88b44ee82f0cd4dd72
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 07:18:20 2025 +0000
+Date:   Wed Jun 25 08:30:41 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (31 of 31 strings)
     
-    Translation: product-attribute-13.0/product-attribute-13.0-product_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_secondary_unit/it/
+    Translation: product-attribute-13.0/product-attribute-13.0-product_assortment
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-13-0/product-attribute-13-0-product_assortment/it/
 
 
 ## product-kitting
@@ -1343,9 +1343,9 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 1379f58629376875ad9fbbe8208cabfcba7fc7f8
+commit 72f0c468b556b8cacde0dc7df8c3198bb917115b
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 10:39:45 2025 +0000
+Date:   Tue Jun 24 06:32:31 2025 +0000
 
     Translated using Weblate (Italian)
     
