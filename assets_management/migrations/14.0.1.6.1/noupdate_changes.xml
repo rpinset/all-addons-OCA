@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2025 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="ad_mode_materiale_line" model="asset.depreciation.mode.line">
+        <field name="from_year_nr">1</field>
+        <field name="to_year_nr">1</field>
+    </record>
+</odoo>

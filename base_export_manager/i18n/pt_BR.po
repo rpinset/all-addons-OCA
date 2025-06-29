@@ -35,13 +35,6 @@ msgid "Display Name"
 msgstr ""
 
 #. module: base_export_manager
-#. openerp-web
-#: code:addons/base_export_manager/static/src/js/base_export_manager.js:0
-#, python-format
-msgid "Export"
-msgstr "Exportar"
-
-#. module: base_export_manager
 #: model:ir.model.fields,field_description:base_export_manager.field_ir_model_access__perm_export
 msgid "Export Access"
 msgstr ""
@@ -210,3 +203,7 @@ msgstr "Usuários"
 #, python-format
 msgid "You must supply a model or resource."
 msgstr ""
+
+#, python-format
+#~ msgid "Export"
+#~ msgstr "Exportar"

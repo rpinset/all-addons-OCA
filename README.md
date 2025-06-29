@@ -84,16 +84,16 @@ Date:   Fri Jun 13 08:46:41 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 9a8b7e4ea450f8475b99a10248b52d2aaf7a0fb9
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 25 09:44:43 2025 +0000
+commit a6f219c72a996c36e6b8650c58bd348d69ad3181
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Thu Jun 26 08:28:56 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (259 of 259 strings)
     
     Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -868,16 +868,11 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 83937eb86ea27e1d5a4c62818dd4c59d6e6fb155
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jun 25 14:03:39 2025 +0000
+commit ca2dc59ab8183bb620937aecdb4b9a3a9de3f70a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 27 13:44:46 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa_in
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa_in/
+    [BOT] post-merge updates
 
 
 ## l10n-japan
@@ -990,11 +985,11 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit edfd729da0de8614aad56379c68eb5e8fcd86cac
+commit 080dadf28cc9ad740a969efba24983795ae90481
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:09:47 2025 +0000
+Date:   Sat Jun 28 08:45:13 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1487,16 +1482,16 @@ Date:   Fri Jun 13 09:05:16 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 4f795531b61989d92fae1fecf97871a6499706ce
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 11:37:00 2025 +0000
+commit 724b1ef7dcb8588f3b4403927123e6adad383689
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jun 26 07:22:16 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-ux-14.0/server-ux-14.0-base_search_custom_field_filter
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_search_custom_field_filter/it/
+    Translation: server-ux-14.0/server-ux-14.0-base_export_manager
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-14-0/server-ux-14-0-base_export_manager/
 
 
 ## community-data-files
