@@ -209,16 +209,16 @@ Date:   Wed Jun 4 02:39:44 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 9846b25cde5ad98252ed86c1155f350d7ab54f1f
+commit bdabe0365f0cdbf78a6c3d69fbd649cc7663450c
 Author: EvaS595 <eva.saintier@horanet.com>
-Date:   Thu Jun 12 15:10:03 2025 +0000
+Date:   Thu Jun 26 14:56:56 2025 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 100.0% (97 of 97 strings)
     
-    Translation: account-payment-13.0/account-payment-13.0-account_due_list_days_overdue
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_due_list_days_overdue/fr/
+    Translation: account-payment-13.0/account-payment-13.0-account_payment_return
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-13-0/account-payment-13-0-account_payment_return/fr/
 
 
 ## connector
