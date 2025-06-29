@@ -251,7 +251,28 @@ class AccountInvoiceLineAgent(models.Model):
         :return: bool
         """
         self.ensure_one()
+        payment_based_commission = self.commission_id.invoice_state == "paid"
+        if payment_based_commission and self._skip_future_payments():
+            return True
         return (
-            self.commission_id.invoice_state == "paid"
+            payment_based_commission
             and self.invoice_id.payment_state not in ["in_payment", "paid", "reversed"]
         ) or self.invoice_id.state != "posted"
+
+    def _skip_future_payments(self):
+        date_payment_to = self.env.context.get("date_payment_to")
+        if date_payment_to:
+            payments_dates = []
+            (
+                invoice_partials,
+                exchange_diff_moves,
+            ) = self.invoice_id._get_reconciled_invoices_partials()
+            for (
+                _partial,
+                _amount,
+                counterpart_line,
+            ) in invoice_partials:
+                payments_dates.append(counterpart_line.date)
+            if any(date_payment_to < date for date in payments_dates):
+                return True
+        return False

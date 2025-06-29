@@ -215,6 +215,13 @@ msgid "Extended Filters"
 msgstr "Filtres avancés"
 
 #. module: account_commission
+#: model:ir.model.fields,help:account_commission.field_commission_make_settle__date_payment_to
+msgid ""
+"For payment-based commissions, settlements will be created for "
+"payments             with date up to the one set in this field."
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__from_settlement
 msgid "From Settlement"
 msgstr "Provient règlement"
@@ -395,6 +402,11 @@ msgid "Payment Based"
 msgstr "Basé sur payement"
 
 #. module: account_commission
+#: model:ir.model.fields,field_description:account_commission.field_commission_make_settle__date_payment_to
+msgid "Payment date up to"
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__percentage
 msgid "Percentage of commission"
 msgstr "Pourcentage de la commission"
@@ -443,7 +455,8 @@ msgstr "Factures de vente"
 msgid ""
 "Select the invoice status for settling the commissions:\n"
 "* 'Invoice Based': Commissions are settled when the invoice is issued.\n"
-"* 'Payment Based': Commissions are settled when the invoice is paid (or refunded)."
+"* 'Payment Based': Commissions are settled when the invoice is paid (or "
+"refunded)."
 msgstr ""
 "Selectionner le statut de la facture pour le règlement des commissions :\n"
 "*'Basé sur facture' : Les commissions sont réglées à l'émission de la "
@@ -521,8 +534,8 @@ msgstr "Sous-total"
 #. module: account_commission
 #: model:ir.model.fields,help:account_commission.field_commission_settlement__settlement_type
 msgid ""
-"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase"
-" order'..."
+"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase "
+"order'..."
 msgstr ""
 "La source du règlement, ex. 'Facture de vente', 'Bon de commande de vente', "
 "'Bon de commande d'achat' ..."

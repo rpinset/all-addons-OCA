@@ -13,6 +13,12 @@ class CommissionMakeSettle(models.TransientModel):
         selection_add=[("sale_invoice", "Sales Invoices")],
         ondelete={"sale_invoice": "cascade"},
     )
+    date_payment_to = fields.Date(
+        "Payment date up to",
+        help="For payment-based commissions, settlements will be created for payments \
+            with date up to the one set in this field.",
+        default=fields.Date.today,
+    )
 
     def _get_account_settle_domain(self, agent, date_to_agent):
         return [
@@ -46,3 +52,7 @@ class CommissionMakeSettle(models.TransientModel):
                 }
             )
         return res
+
+    def action_settle(self):
+        self = self.with_context(date_payment_to=self.date_payment_to)
+        return super().action_settle()

@@ -214,6 +214,13 @@ msgid "Extended Filters"
 msgstr "Genişletilmiş Filtreler"
 
 #. module: account_commission
+#: model:ir.model.fields,help:account_commission.field_commission_make_settle__date_payment_to
+msgid ""
+"For payment-based commissions, settlements will be created for "
+"payments             with date up to the one set in this field."
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__from_settlement
 msgid "From Settlement"
 msgstr "Anlaşmadan"
@@ -394,6 +401,11 @@ msgid "Payment Based"
 msgstr "Ödeme Bazlı"
 
 #. module: account_commission
+#: model:ir.model.fields,field_description:account_commission.field_commission_make_settle__date_payment_to
+msgid "Payment date up to"
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__percentage
 msgid "Percentage of commission"
 msgstr "Komisyon yüzdesi"
@@ -442,7 +454,8 @@ msgstr "Satış Faturaları"
 msgid ""
 "Select the invoice status for settling the commissions:\n"
 "* 'Invoice Based': Commissions are settled when the invoice is issued.\n"
-"* 'Payment Based': Commissions are settled when the invoice is paid (or refunded)."
+"* 'Payment Based': Commissions are settled when the invoice is paid (or "
+"refunded)."
 msgstr ""
 "Komisyonların ödenmesi için fatura durumunu seçin:\n"
 "* 'Fatura Bazlı': Fatura düzenlendiğinde komisyonlar ödenir.\n"
@@ -518,8 +531,8 @@ msgstr "Aratoplam"
 #. module: account_commission
 #: model:ir.model.fields,help:account_commission.field_commission_settlement__settlement_type
 msgid ""
-"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase"
-" order'..."
+"The source of the settlement, e.g. 'Sales invoice', 'Sales order', 'Purchase "
+"order'..."
 msgstr ""
 "Anlaşmanın kaynağı, ör. 'Satış faturası', 'Satış siparişi', 'Alış "
 "siparişi'..."

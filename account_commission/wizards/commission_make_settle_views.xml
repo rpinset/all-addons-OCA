@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_commission_make_settle_date_payment" model="ir.ui.view">
+        <field name="name">commission.make.settle.date.payment</field>
+        <field name="model">commission.make.settle</field>
+        <field name="inherit_id" ref="commission.view_settled_wizard" />
+        <field name="arch" type="xml">
+            <field name="date_to" position="after">
+                <field name="date_payment_to" />
+            </field>
+        </field>
+    </record>
+</odoo>

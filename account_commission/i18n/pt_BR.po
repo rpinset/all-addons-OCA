@@ -215,6 +215,13 @@ msgid "Extended Filters"
 msgstr "Filtros Extendidos"
 
 #. module: account_commission
+#: model:ir.model.fields,help:account_commission.field_commission_make_settle__date_payment_to
+msgid ""
+"For payment-based commissions, settlements will be created for "
+"payments             with date up to the one set in this field."
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__from_settlement
 msgid "From Settlement"
 msgstr "Da Liquidação"
@@ -393,6 +400,11 @@ msgstr "Parceiro"
 #: model:ir.model.fields.selection,name:account_commission.selection__commission__invoice_state__paid
 msgid "Payment Based"
 msgstr "Pagamento Relacionado"
+
+#. module: account_commission
+#: model:ir.model.fields,field_description:account_commission.field_commission_make_settle__date_payment_to
+msgid "Payment date up to"
+msgstr ""
 
 #. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__percentage

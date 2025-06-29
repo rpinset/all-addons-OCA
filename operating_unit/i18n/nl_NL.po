@@ -1,0 +1,177 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* operating_unit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-06-26 13:25+0000\n"
+"Last-Translator: Bram Buijs <b.buijs@onestein.nl>\n"
+"Language-Team: none\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: operating_unit
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_users_form
+msgid ""
+"<span class=\"fa fa-warning\" colspan=\"2\" attrs=\"{'invisible': [('operating_unit_readonly', '=', False)]}\">\n"
+"                    If the user is Manager of Operating Units\n"
+"                    they will always have all OUs assigned\n"
+"                    </span>"
+msgstr ""
+"<span class=\"fa fa-warning\" colspan=\"2\" attrs="
+"\"{'invisible': [('operating_unit_readonly', '=', False)]}\">\n"
+"                    Als de gebruiker Manager van Operationele Eenheden is\n"
+"                    heeft hij altijd alle operationele eenheden toegewezen "
+"gekregen.\n"
+"                    </span>"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__active
+msgid "Active"
+msgstr "Actief"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_res_users__operating_unit_ids
+msgid "Allowed Operating Units"
+msgstr "Sta operationele eenheden toe"
+
+#. module: operating_unit
+#: model_terms:ir.actions.act_window,help:operating_unit.action_operating_unit_tree
+msgid "Click to start a new Operating Unit."
+msgstr "Klik om een nieuwe operationele eenheid aan te maken."
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__code
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_operating_unit_search
+msgid "Code"
+msgstr "Code"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__company_id
+msgid "Company"
+msgstr "Bedrijf"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__create_date
+msgid "Created on"
+msgstr "Gemaakt op"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_res_users__default_operating_unit_id
+msgid "Default Operating Unit"
+msgstr "Standaard operationele eenheid"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__display_name
+msgid "Display Name"
+msgstr "Weergave Naam"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__id
+msgid "ID"
+msgstr "ID"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit____last_update
+msgid "Last Modified on"
+msgstr "Laatste wijziging op"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__write_uid
+msgid "Last Updated by"
+msgstr "Laatst bewerkt door"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__write_date
+msgid "Last Updated on"
+msgstr "Laatst Bijgewerkt op"
+
+#. module: operating_unit
+#: model:res.groups,name:operating_unit.group_manager_operating_unit
+msgid "Manager of Operating Units"
+msgstr "Operationele eenheid manager"
+
+#. module: operating_unit
+#: model:res.groups,name:operating_unit.group_multi_operating_unit
+msgid "Multiple Operating Unit"
+msgstr "Meerdere operationele eenheden"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__name
+msgid "Name"
+msgstr "Naam"
+
+#. module: operating_unit
+#: model:ir.model,name:operating_unit.model_operating_unit
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_operating_unit_form
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_operating_unit_search
+msgid "Operating Unit"
+msgstr "Bedrijfseenheid"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_res_users__operating_unit_readonly
+msgid "Operating Unit Readonly"
+msgstr "Alleen lezen operationele eenheid"
+
+#. module: operating_unit
+#: model:ir.actions.act_window,name:operating_unit.action_operating_unit_tree
+#: model:ir.model.fields,field_description:operating_unit.field_res_users__assigned_operating_unit_ids
+#: model:ir.ui.menu,name:operating_unit.menu_action_operating_unit_tree
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_users_form
+msgid "Operating Units"
+msgstr "Bedrijfseeinheid"
+
+#. module: operating_unit
+#: model:ir.module.category,name:operating_unit.module_operating_units
+msgid "Operating Units Group"
+msgstr "Bedrijfseenheid groep"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: operating_unit
+#: model_terms:ir.ui.view,arch_db:operating_unit.view_operating_unit_search
+msgid "Search Operating Unit"
+msgstr "Zoeken operationele eenheden"
+
+#. module: operating_unit
+#: model:ir.model.fields,help:operating_unit.field_res_users__assigned_operating_unit_ids
+msgid ""
+"Technical field. Refer to `operating_unit_ids` if you need to check if an OU"
+" is assigned to a user."
+msgstr ""
+"Technisch veld. Raadpleeg operating_unit_ids als u wilt controleren of een "
+"operationele eenheid aan een gebruiker is toegewezen."
+
+#. module: operating_unit
+#: model:ir.model.constraint,message:operating_unit.constraint_operating_unit_code_company_uniq
+msgid "The code of the operating unit must be unique per company!"
+msgstr "Codes van operationele eenheden moeten uniek zijn per bedrijf!"
+
+#. module: operating_unit
+#: model:ir.model.constraint,message:operating_unit.constraint_operating_unit_name_company_uniq
+msgid "The name of the operating unit must be unique per company!"
+msgstr "De naam van operationele eenheden moeten uniek zijn per bedrijf!"
+
+#. module: operating_unit
+#: model:ir.model,name:operating_unit.model_res_users
+msgid "User"
+msgstr "Gebruiker"
+
+#. module: operating_unit
+#: model:ir.model.fields,field_description:operating_unit.field_operating_unit__user_ids
+msgid "Users Allowed"
+msgstr "Toegestane gebruikers"

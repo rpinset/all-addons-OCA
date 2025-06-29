@@ -214,6 +214,13 @@ msgid "Extended Filters"
 msgstr "Filtros extendidos"
 
 #. module: account_commission
+#: model:ir.model.fields,help:account_commission.field_commission_make_settle__date_payment_to
+msgid ""
+"For payment-based commissions, settlements will be created for "
+"payments             with date up to the one set in this field."
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_commission_make_invoice__from_settlement
 msgid "From Settlement"
 msgstr "Desde liquidación"
@@ -394,6 +401,11 @@ msgid "Payment Based"
 msgstr "Basado en Pagos"
 
 #. module: account_commission
+#: model:ir.model.fields,field_description:account_commission.field_commission_make_settle__date_payment_to
+msgid "Payment date up to"
+msgstr ""
+
+#. module: account_commission
 #: model:ir.model.fields,field_description:account_commission.field_invoice_commission_analysis_report__percentage
 msgid "Percentage of commission"
 msgstr "Porcentaje de comisión"
@@ -446,8 +458,8 @@ msgid ""
 "refunded)."
 msgstr ""
 "Seleccione el estado de la factura para liquidar las comisiones:\n"
-"* 'Basado en factura': Las comisiones se liquidan cuando se emite la factura."
-"\n"
+"* 'Basado en factura': Las comisiones se liquidan cuando se emite la "
+"factura.\n"
 "* 'Basado en Pago': Las comisiones se liquidan cuando se paga (o reembolsa) "
 "la factura."
 

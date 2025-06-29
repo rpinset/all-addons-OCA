@@ -3,6 +3,8 @@
 # Copyright 2016-2022 Tecnativa - Pedro M. Baeza
 # License AGPL-3 - See https://www.gnu.org/licenses/agpl-3.0.html
 
+from datetime import datetime
+
 from dateutil.relativedelta import relativedelta
 
 from odoo import fields
@@ -86,9 +88,12 @@ class TestAccountCommission(TestCommissionBase):
             vals.update({"currency_id": currency.id})
         return self.env["account.move"].create([vals])
 
-    def _settle_agent_invoice(self, agent=None, period=None, date=None):
+    def _settle_agent_invoice(
+        self, agent=None, period=None, date=None, date_payment_to=None
+    ):
         vals = self._get_make_settle_vals(agent, period, date)
         vals["settlement_type"] = "sale_invoice"
+        vals["date_payment_to"] = date_payment_to
         wizard = self.make_settle_model.create(vals)
         wizard.action_settle()
 
@@ -660,7 +665,7 @@ class TestAccountCommission(TestCommissionBase):
         self.assertEqual(3, len(settlements.line_ids))
         self.assertAlmostEqual(0.6, sum(settlements.mapped("total")), 2)
 
-    def _register_payment(self, invoice):
+    def _register_payment(self, invoice, date=None):
         payment_journal = self.env["account.journal"].search(
             [("type", "=", "cash"), ("company_id", "=", self.env.company.id)],
             limit=1,
@@ -668,7 +673,12 @@ class TestAccountCommission(TestCommissionBase):
         register_payments = (
             self.env["account.payment.register"]
             .with_context(active_ids=invoice.id, active_model="account.move")
-            .create({"journal_id": payment_journal.id})
+            .create(
+                {
+                    "journal_id": payment_journal.id,
+                    "payment_date": date or datetime.now(),
+                }
+            )
         )
         register_payments.action_create_payments()
 
@@ -694,3 +704,23 @@ class TestAccountCommission(TestCommissionBase):
         self._settle_agent_invoice(self.agent_pending, 1)
         settlements = self.settle_model.search([("state", "=", "settled")])
         self.assertEqual(len(settlements.line_ids), 3)
+
+    def test_payment_date_settlement(self):
+        date = fields.Date.today()
+
+        invoice_after_cutoff = self._create_invoice(
+            self.agent_monthly, self.commission_net_paid
+        )
+        invoice_after_cutoff.invoice_line_ids.agent_ids._compute_amount()
+        invoice = self._create_invoice(self.agent_monthly, self.commission_net_paid)
+        invoice.invoice_line_ids.agent_ids._compute_amount()
+        (invoice_after_cutoff + invoice).action_post()
+
+        # Payment after the wizard payment date, not included in the settlement
+        self._register_payment(invoice_after_cutoff, date + relativedelta(days=2))
+        # Payment before the wizard payment date, not included in the settlement
+        self._register_payment(invoice, date - relativedelta(days=2))
+        self._settle_agent_invoice(self.agent_monthly, 1, date_payment_to=date)
+        settlements = self.settle_model.search([("state", "=", "settled")])
+        self.assertEqual(1, len(settlements))
+        self.assertEqual(1, len(settlements.line_ids))
