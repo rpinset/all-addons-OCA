@@ -317,9 +317,9 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 4660e281dca4f5525d4fb0c5b047d3adef105763
+commit 5775be8d93190feaf5f11194eddbef72ad42d7c3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 25 15:48:27 2025 +0000
+Date:   Fri Jun 27 13:54:54 2025 +0000
 
     [BOT] post-merge updates
 
@@ -335,16 +335,16 @@ Date:   Wed Jun 4 02:46:20 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 0f68cf893a7802e5077092b544ccc143c3cf5eb8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 24 07:06:01 2025 +0000
+commit d4af5434383e537aa60cdbe128cce7c9743a61cb
+Author: Francisco Javier Galera Martínez <javier.galera@sygel.es>
+Date:   Fri Jun 27 08:49:30 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Catalan)
     
-    Currently translated at 100.0% (17 of 17 strings)
+    Currently translated at 66.6% (4 of 6 strings)
     
-    Translation: partner-contact-17.0/partner-contact-17.0-partner_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_tier_validation/it/
+    Translation: partner-contact-17.0/partner-contact-17.0-partner_manual_rank
+    Translate-URL: https://translation.odoo-community.org/projects/partner-contact-17-0/partner-contact-17-0-partner_manual_rank/ca/
 
 
 ## sale-financial
@@ -446,11 +446,11 @@ Date:   Sat Jun 21 10:39:57 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 766a101f33ceab2ce6f1869d9603cead4fe634f1
+commit fa6fbfe7be4ab9a55311c0e8e33e3b0953e293dd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:50:39 2025 +0000
+Date:   Fri Jun 27 06:51:47 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## edi
@@ -464,16 +464,16 @@ Date:   Mon Jun 16 20:01:22 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit f5832a0b4b2737f34f95e2ef320b05ad00b260b7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 25 06:44:33 2025 +0000
+commit 67241c94eeec65c6d73eb17c5ad9da4397c3d27e
+Author: Antoni Marroig Campomar <toni.marroig1@gmail.com>
+Date:   Thu Jun 26 10:21:09 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Catalan)
     
     Currently translated at 100.0% (7 of 7 strings)
     
     Translation: field-service-17.0/field-service-17.0-fieldservice_route_availability
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_route_availability/it/
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_route_availability/ca/
 
 
 ## margin-analysis
@@ -712,11 +712,11 @@ Date:   Sun Feb 2 19:17:46 2025 +0000
 
 ## l10n-finland
 From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
-commit 68c0e404c0a457ae24e40d4d6f3e15d96e29c703
+commit 283b863ae39de49d16059ec60ef7a9ff0bbbeddd
 Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Mon Mar 10 20:11:02 2025 +0000
+Date:   Wed Jun 25 20:28:18 2025 +0000
 
-    [UPD] Update l10n_fi_payment_terms.pot
+    [UPD] Update l10n_fi_banks.pot
 
 
 ## l10n-france
@@ -901,16 +901,11 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 790d151ffa13061571b981defe66475b7123aaa7
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jun 24 19:20:56 2025 +0000
+commit d73f8826f0c76c1b7391a163a51bb4a8a3eec8cd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Jun 28 08:27:53 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat_sii_oca
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat_sii_oca/
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -996,27 +991,27 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ff9caf893efce0c710cbb7e4e9523efbe2073694
+commit 468d14d7a1d96f3c231575d7c8591c49315cce14
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:48:28 2025 +0000
+Date:   Fri Jun 27 15:22:17 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit dc47b283cb043c018d0eb4e7d026fb3e5b2fd61f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:49:14 2025 +0000
+commit 602235c13376cb689957c544f702d61871f41a6e
+Author: Marcel Savegnago <marcel.savegnago@gmail.com>
+Date:   Fri Jun 27 16:01:38 2025 +0000
 
-    [UPD] addons table in README.md
+    Added translation using Weblate (Portuguese (Brazil))
 
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 85af7695768af76fc5be087fbf580eaa084b03ae
+commit 5409b7797246b30944142b25fd3f314bc09275e9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 25 07:40:29 2025 +0000
+Date:   Thu Jun 26 13:21:45 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1161,11 +1156,16 @@ Date:   Thu Jun 5 10:31:14 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 5e0d8b861ee559929addec0feeb615ffe64b4b90
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 18 11:33:38 2025 +0000
+commit 3e6614e2a61fa7262a5d91c7f1bf340067606278
+Author: Timo Talvitie <timo.j.talvitie@gmail.com>
+Date:   Fri Jun 27 09:25:18 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Finnish)
+    
+    Currently translated at 100.0% (6 of 6 strings)
+    
+    Translation: product-attribute-17.0/product-attribute-17.0-product_manufacturer
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_manufacturer/fi/
 
 
 ## product-kitting
@@ -1206,9 +1206,9 @@ Date:   Sun Feb 2 20:17:46 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 69e38a8dd2a42ac08a4a5faf1b4ad686a270c8da
+commit d63d7952359732cdb6848d15ca0b3c7f1c681c66
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 16 11:02:44 2025 +0000
+Date:   Fri Jun 27 09:56:06 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1343,14 +1343,11 @@ Date:   Sun Feb 9 19:21:09 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 7d4e85305453143856e94e537f8479cb5fe5ba37
-Merge: d04d1f3ff 5f7a972f1
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Wed Jun 25 12:22:06 2025 +0200
+commit c9ec0ce2c8f72399259a84059e96729e72e59a7b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jun 27 06:28:07 2025 +0000
 
-    Merge pull request #3318 from BinhexTeam/17.0-fix-pandoc-deb-file-committed-to-git-history
-    
-    [17.0] Remove pandoc deb package
+    [BOT] post-merge updates
 
 
 ## server-auth
