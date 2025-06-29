@@ -5140,7 +5140,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 15.0.2.0.0 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 15.0.1.2.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 15.0.1.0.1 |  | Sistema de comprobación y contraste de facturas enviadas al SII
-[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.22.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
+[l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 15.0.2.22.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 15.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_dua](l10n_es_dua/) | 15.0.1.1.0 |  | Importaciones con DUA
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 15.0.1.1.0 |  | Suministro Inmediato de Información de importaciones con DUA
@@ -5653,7 +5653,8 @@ addon | version | maintainers | summary
 [delivery_package_number](delivery_package_number/) | 15.0.2.2.1 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 15.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 15.0.1.0.0 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> | Add untaxed amount to variables for price delivery price rule
-[delivery_purchase](delivery_purchase/) | 15.0.1.3.0 |  | Delivery costs in purchases
+[delivery_purchase](delivery_purchase/) | 15.0.1.4.0 |  | Delivery costs in purchases
+[delivery_purchase_multi_destination](delivery_purchase_multi_destination/) | 15.0.1.0.0 |  | Multiple origins for delivery costs in purchases
 [delivery_state](delivery_state/) | 15.0.1.1.2 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_translatable](delivery_translatable/) | 15.0.1.0.0 |  | name and website_description field of delivery carrier setup translatable.
 [partner_delivery_schedule](partner_delivery_schedule/) | 15.0.1.0.2 |  | Set on partners a schedule for delivery goods
@@ -6269,6 +6270,7 @@ addon | version | maintainers | summary
 [mrp_production_component_availability_search](mrp_production_component_availability_search/) | 15.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Filter manufacturing orders by their components availability state
 [mrp_production_date_planned_finished](mrp_production_date_planned_finished/) | 15.0.1.0.1 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Allows to plan production from the desired finish date
 [mrp_production_date_planned_finished_calendar](mrp_production_date_planned_finished_calendar/) | 15.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to plan production from the desired finish date
+[mrp_production_generator_by_date_interval](mrp_production_generator_by_date_interval/) | 15.0.1.0.0 |  | MRP Production Generator By Date Interval
 [mrp_production_grouped_by_product](mrp_production_grouped_by_product/) | 15.0.1.0.1 |  | Production Grouped By Product
 [mrp_production_note](mrp_production_note/) | 15.0.1.0.0 |  | Notes in production orders
 [mrp_production_operation_injection](mrp_production_operation_injection/) | 15.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Adds an existing operation from the Bill of Material

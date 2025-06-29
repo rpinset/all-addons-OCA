@@ -169,16 +169,14 @@ Date:   Sun Feb 2 18:34:04 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 74b02e4126193094203552ee01a88a2e82196abe
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 13:15:11 2025 +0000
+commit 96da08a6725869a85f3fb09b91c6310915153beb
+Merge: 74b02e41 aa9b0638
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Jun 27 21:12:37 2025 +0200
 
-    Translated using Weblate (Italian)
+    Merge pull request #1483 from solvosci/15.0-fix-account_payment_order-miginspayline
     
-    Currently translated at 63.8% (30 of 47 strings)
-    
-    Translation: bank-payment-15.0/bank-payment-15.0-account_payment_mode
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-15-0/bank-payment-15-0-account_payment_mode/it/
+    [15.0][OU-FIX] account_payment_order: ensure payment lines availables for new payments before creating moves
 
 
 ## account-reconcile
@@ -910,9 +908,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 667f01a9d5d045556e91ba433897685d5f9296ef
+commit e0ae4926f46dffbb769acba98fbf64cd28791182
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 16 09:24:22 2025 +0000
+Date:   Fri Jun 27 19:24:14 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1000,9 +998,9 @@ Date:   Sun Feb 2 19:52:24 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit ed6e4ebb21a8856c65c6a9c1cff0a694a3753b08
+commit 3d15701dae1cf38b28714dfac18dba83f685b35c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 24 15:34:45 2025 +0000
+Date:   Fri Jun 27 08:50:18 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1091,16 +1089,11 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 0f41c8a3100881e6730837fcbe73c87bc42a5a55
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:41:09 2025 +0000
+commit bc32387d9c12b19c632c6a00fb657be67f34c64d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jun 26 17:47:24 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (164 of 164 strings)
-    
-    Translation: manufacture-15.0/manufacture-15.0-quality_control_oca
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-quality_control_oca/it/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
