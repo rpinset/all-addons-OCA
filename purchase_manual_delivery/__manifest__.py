@@ -8,7 +8,7 @@
         and adds the ability to manually generate them as the supplier confirms
         the different purchase order lines.
     """,
-    "version": "16.0.2.0.2",
+    "version": "16.0.2.0.3",
     "license": "AGPL-3",
     "author": "ForgeFlow S.L.," "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/purchase-workflow",

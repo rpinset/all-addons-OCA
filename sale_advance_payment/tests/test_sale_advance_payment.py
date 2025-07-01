@@ -482,3 +482,33 @@ class TestSaleAdvancePayment(common.TransactionCase):
         payments = invoice.invoice_outstanding_credits_debits_widget
         result = [d["amount"] for d in payments["content"]]
         self.assertEqual(set(payment_list), set(result))
+
+    def test_05_residual_amount_credit_note(self):
+        self.sale_order_1.action_confirm()
+        self.sale_order_1._create_invoices()
+        invoice = self.sale_order_1.invoice_ids[0]
+        invoice.invoice_date = fields.Date.today()
+        invoice.action_post()
+        self.env["account.payment.register"].with_context(
+            active_model="account.move", active_ids=invoice.ids
+        ).create(
+            {
+                "amount": 3600.0,
+                "group_payment": True,
+                "payment_difference_handling": "open",
+            }
+        )._create_payments()
+        self.assertEqual(self.sale_order_1.amount_residual, 0)
+        credit_note = invoice._reverse_moves()
+        credit_note.invoice_date = fields.Date.today()
+        credit_note.action_post()
+        self.env["account.payment.register"].with_context(
+            active_model="account.move", active_ids=credit_note.ids
+        ).create(
+            {
+                "amount": 3600.0,
+                "group_payment": True,
+                "payment_difference_handling": "open",
+            }
+        )._create_payments()
+        self.assertEqual(self.sale_order_1.amount_residual, 3600)

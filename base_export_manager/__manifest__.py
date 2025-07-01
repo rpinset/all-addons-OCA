@@ -7,7 +7,7 @@
 {
     "name": "Manage model export profiles",
     "category": "Personalization",
-    "version": "16.0.1.0.2",
+    "version": "16.0.1.0.3",
     "depends": ["web"],
     "data": [
         "views/ir_exports.xml",

@@ -63,6 +63,7 @@ class AccountMoveLine(models.Model):
         relation="account_partial_reconcile_account_move_line_rel",
         column1="move_line_id",
         column2="partial_reconcile_id",
+        copy=False,
     )
 
 
@@ -74,4 +75,5 @@ class AccountPartialReconcile(models.Model):
         relation="account_partial_reconcile_account_move_line_rel",
         column1="partial_reconcile_id",
         column2="move_line_id",
+        copy=False,
     )

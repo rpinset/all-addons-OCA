@@ -47,7 +47,7 @@ class ResPartnerDepartment(models.Model):
     def name_get(self):
         """Prepend parent name to department name."""
         result = super().name_get()
-        for position, ((id_, name), rec) in enumerate(zip(result, self, strict=True)):
+        for position, ((id_, name), rec) in enumerate(zip(result, self)):
             while rec.parent_id.name:
                 name = f"{rec.parent_id.name} / {name}"
                 rec = rec.parent_id
