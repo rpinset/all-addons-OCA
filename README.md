@@ -75,11 +75,16 @@ Date:   Mon Oct 9 20:48:44 2023 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 0093eb8ab20822c3a2bcd565fa3ecef8f6859620
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:32:35 2025 +0000
+commit 1523b3e5a3e3bb0030d0ecd215e8709180ba8066
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 30 11:09:42 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 29.9% (82 of 274 strings)
+    
+    Translation: account-financial-tools-12.0/account-financial-tools-12.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-12-0/account-financial-tools-12-0-account_asset_management/it/
 
 
 ## account-financial-reporting
@@ -1239,16 +1244,16 @@ Date:   Tue Oct 10 00:54:30 2023 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 0b5c64daa9518f70ac6e03fd2669c754f3a30465
+commit 63c856c20c6e297b975ad29b72b8bd4f8ae9334a
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 24 06:35:20 2025 +0000
+Date:   Tue Jul 1 11:14:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 95.0% (285 of 300 strings)
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: contract-12.0/contract-12.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-contract/it/
+    Translation: contract-12.0/contract-12.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-12-0/contract-12-0-product_contract/it/
 
 
 ## business-requirement
