@@ -542,13 +542,30 @@ class TierValidation(models.AbstractModel):
         reviews_to_notify = user_reviews.filtered(
             lambda r: r.definition_id.notify_on_accepted
         )
+        # We need to notify all pending users if there is approve sequence
+        if tier_reviews and any(review.approve_sequence for review in tier_reviews):
+            reviews_to_notify = self.review_ids.filtered(
+                lambda r: r.status in ("waiting", "pending")
+                and r.definition_id.notify_on_accepted
+            )
+            # If there are approve sequence, only the following should be
+            # considered to notify
+            if reviews_to_notify and any(
+                review.approve_sequence for review in reviews_to_notify
+            ):
+                reviews_to_notify = reviews_to_notify.filtered(
+                    lambda x: x.approve_sequence
+                )[0]
         if reviews_to_notify:
             subscribe = "message_subscribe"
             if hasattr(self, subscribe):
                 getattr(self, subscribe)(
                     partner_ids=reviews_to_notify.mapped("reviewer_ids")
                     .mapped("partner_id")
-                    .ids
+                    .ids,
+                    subtype_ids=self.env.ref(
+                        self._get_accepted_notification_subtype()
+                    ).ids,
                 )
             for review in reviews_to_notify:
                 rec = self.env[review.model].browse(review.res_id)
@@ -664,13 +681,29 @@ class TierValidation(models.AbstractModel):
         reviews_to_notify = user_reviews.filtered(
             lambda r: r.definition_id.notify_on_rejected
         )
+        # We need to notify all pending users if there is approve sequence
+        if tier_reviews and any(review.approve_sequence for review in tier_reviews):
+            reviews_to_notify = self.review_ids.filtered(
+                lambda r: r.status == "pending" and r.definition_id.notify_on_rejected
+            )
+            # If there are approve sequence, only the following should be
+            # considered to notify
+            if reviews_to_notify and any(
+                review.approve_sequence for review in reviews_to_notify
+            ):
+                reviews_to_notify = reviews_to_notify.filtered(
+                    lambda x: x.approve_sequence
+                )[0]
         if reviews_to_notify:
             subscribe = "message_subscribe"
             if hasattr(self, subscribe):
                 getattr(self, subscribe)(
                     partner_ids=reviews_to_notify.mapped("reviewer_ids")
                     .mapped("partner_id")
-                    .ids
+                    .ids,
+                    subtype_ids=self.env.ref(
+                        self._get_rejected_notification_subtype()
+                    ).ids,
                 )
             for review in reviews_to_notify:
                 rec = self.env[review.model].browse(review.res_id)
@@ -697,7 +730,10 @@ class TierValidation(models.AbstractModel):
                 # Subscribe reviewers and notify
                 if len(users_to_notify) > 0:
                     getattr(rec, subscribe)(
-                        partner_ids=users_to_notify.mapped("partner_id").ids
+                        partner_ids=users_to_notify.mapped("partner_id").ids,
+                        subtype_ids=self.env.ref(
+                            self._get_requested_notification_subtype()
+                        ).ids,
                     )
                     getattr(rec, post)(
                         subtype_xmlid=self._get_requested_notification_subtype(),
@@ -788,7 +824,12 @@ class TierValidation(models.AbstractModel):
                     lambda r: r.definition_id.notify_on_restarted
                 )
                 if hasattr(self, subscribe):
-                    getattr(self, subscribe)(partner_ids=partners_to_notify_ids)
+                    getattr(self, subscribe)(
+                        partner_ids=partners_to_notify_ids,
+                        subtype_ids=self.env.ref(
+                            self._get_restarted_notification_subtype()
+                        ).ids,
+                    )
                 rec._notify_restarted_review()
 
     @api.model
@@ -859,13 +900,20 @@ class TierValidation(models.AbstractModel):
                 node.append(new_node)
                 _merge_view_fields(all_models, new_models)
             excepted_fields = self._get_all_validation_exceptions()
+            all_fields = self.fields_get(attributes=("readonly",))
             for node in doc.xpath("//field[@name][not(ancestor::field)]"):
-                if node.attrib.get("name") in excepted_fields:
+                field_name = node.attrib.get("name")
+                if field_name in excepted_fields:
                     continue
                 new_r_modifier = self._get_tier_validation_readonly_domain()
                 old_r_modifier = node.attrib.get("readonly")
                 if old_r_modifier:
                     new_r_modifier = f"({old_r_modifier}) or ({new_r_modifier})"
+                elif all_fields.get(field_name, {}).get("readonly"):
+                    # don't set dynamic readonly attribute for fields
+                    # marked readonly in the ORM (ie computed fields)
+                    # if the view doesn't set one
+                    continue
                 node.attrib["readonly"] = new_r_modifier
             res["arch"] = etree.tostring(doc)
             res["models"] = frozendict(all_models)

@@ -80,8 +80,8 @@ class TestSaleOrder(BaseCommon):
 
     def test_independent_type(self):
         # dependent type is already tested as dependency_type by default
+        self.secondary_unit.write({"dependency_type": "independent"})
         self.order.order_line.secondary_uom_id = self.secondary_unit.id
-        self.order.order_line.secondary_uom_id.write({"dependency_type": "independent"})
 
         # Remember previous UoM quantity for avoiding interactions with other modules
         previous_uom_qty = self.order.order_line.product_uom_qty

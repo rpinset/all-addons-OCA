@@ -4,6 +4,8 @@
 from base64 import b64encode
 from os import path
 
+from odoo.tests import new_test_user
+from odoo.tests.common import users
 from odoo.tools import mute_logger
 
 from odoo.addons.base.tests.common import BaseCommon
@@ -13,6 +15,11 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        new_test_user(
+            cls.env,
+            login="test-account-user",
+            groups="account.group_account_invoice,analytic.group_analytic_accounting",
+        )
         cls.env.user.groups_id += cls.env.ref("analytic.group_analytic_accounting")
         # Demo data is not consistent, let's set our own template here
         # We define a different auto_detect_pattern in the existing demo template
@@ -216,6 +223,7 @@ class TestBaseImportPdfByTemplateAccount(BaseCommon):
             {str(self.analytic_account.id): 100.0},
         )
 
+    @users("test-account-user")
     def test_account_invoice_tecnativa(self):
         attachment = self._create_ir_attachment("account_invoice_tecnativa.pdf")
         wizard = self._create_wizard_base_import_pdf_upload("account.move", attachment)

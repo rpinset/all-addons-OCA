@@ -534,7 +534,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_financial_report_operating_unit](account_financial_report_operating_unit/) | 17.0.1.0.0 |  | Introduces Operating Unit (OU) in financial reports
-[account_operating_unit](account_operating_unit/) | 17.0.1.1.2 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
+[account_operating_unit](account_operating_unit/) | 17.0.1.2.0 |  | Introduces Operating Unit (OU) in invoices and Accounting Entries with clearing account
 [account_operating_unit_access_all](account_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Accounting
 [analytic_operating_unit](analytic_operating_unit/) | 17.0.1.0.0 |  | Analytic Operating Unit
 [analytic_operating_unit_access_all](analytic_operating_unit_access_all/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Analytics
@@ -1051,7 +1051,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 17.0.1.0.0 |  | Payment Due List Payment Mode
-[account_payment_return](account_payment_return/) | 17.0.1.2.0 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 17.0.1.2.1 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 17.0.1.0.0 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 17.0.1.0.0 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
@@ -1716,7 +1716,7 @@ addon | version | maintainers | summary
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 17.0.1.0.0 |  | Portal Sale Personal Data Only
 [product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
-[sale_advance_payment](sale_advance_payment/) | 17.0.1.0.1 |  | Allow to add advance payments on sales and then use them on invoices
+[sale_advance_payment](sale_advance_payment/) | 17.0.1.0.2 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.1.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
 [sale_blanket_order](sale_blanket_order/) | 17.0.1.1.1 |  | Blanket Orders
@@ -1754,13 +1754,14 @@ addon | version | maintainers | summary
 [sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
-[sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.4 |  | Sale product in a secondary unit
+[sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.5 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_partner_utm_source](sale_partner_utm_source/) | 17.0.1.0.0 |  | This module adds the use of utm source in sales
+[sale_payment_sheet](sale_payment_sheet/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
 [sale_pricelist_global_rule](sale_pricelist_global_rule/) | 17.0.1.0.0 |  | Apply a global rule to all sale order
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 17.0.1.0.1 |  | Base module for multiple procurement group by Sale order
 [sale_product_multi_add](sale_product_multi_add/) | 17.0.1.0.1 |  | Sale Product Multi Add
@@ -2490,8 +2491,8 @@ addon | version | maintainers | summary
 [base_ebill_payment_contract](base_ebill_payment_contract/) | 17.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Base for managing e-billing contracts
 [base_edi](base_edi/) | 17.0.1.1.1 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Base module to aggregate EDI features.
 [base_facturx](base_facturx/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Factur-X/ZUGFeRD
-[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.5 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
-[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 17.0.1.0.4 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template Account
+[base_import_pdf_by_template](base_import_pdf_by_template/) | 17.0.1.2.6 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template
+[base_import_pdf_by_template_account](base_import_pdf_by_template_account/) | 17.0.1.0.5 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Base Import Pdf by Template Account
 [base_ubl](base_ubl/) | 17.0.1.0.1 |  | Base module for Universal Business Language (UBL)
 [edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 17.0.1.0.0 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 17.0.1.0.1 |  | Base module for connecting with Voxel
@@ -2825,6 +2826,7 @@ addon | version | maintainers | summary
 [hr_timesheet_calendar](hr_timesheet_calendar/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | HR Timesheet Calendar
 [hr_timesheet_date_order_desc](hr_timesheet_date_order_desc/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Add new timesheet entries to the top of the list and order by date descending
 [hr_timesheet_editable_top](hr_timesheet_editable_top/) | 17.0.1.0.0 |  | Add new timesheet entries to the top of the list
+[hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Timesheet Employee Analytic Tag
 [hr_timesheet_sheet](hr_timesheet_sheet/) | 17.0.1.0.0 |  | Timesheet Sheets, Activities
 [hr_timesheet_sheet_autodraft](hr_timesheet_sheet_autodraft/) | 17.0.1.0.0 |  | Automatically draft a Timesheet Sheet for every time entry that does not have a relevant Timesheet Sheet existing.
 [hr_timesheet_task_domain](hr_timesheet_task_domain/) | 17.0.1.0.0 |  | Limit task selection to tasks on currently-selected project
@@ -3051,7 +3053,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 17.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Apply natural days in holidays
-[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.6 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 17.0.1.0.7 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Holidays Public City
 [hr_holidays_settings](hr_holidays_settings/) | 17.0.1.0.0 |  | Enables Settings Form for HR Holidays.
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 17.0.1.0.1 |  | Edit start and end of leaves using time intervals
@@ -4832,7 +4834,7 @@ addon | version | maintainers | summary
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 17.0.1.0.1 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
-[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
+[l10n_es_account_statement_import_n43](l10n_es_account_statement_import_n43/) | 17.0.1.0.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Importación de extractos bancarios españoles (Norma 43)
 [l10n_es_aeat](l10n_es_aeat/) | 17.0.2.5.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Modulo base para declaraciones de la AEAT
 [l10n_es_aeat_mod111](l10n_es_aeat_mod111/) | 17.0.1.0.2 |  | AEAT modelo 111
 [l10n_es_aeat_mod115](l10n_es_aeat_mod115/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 115
@@ -5452,6 +5454,7 @@ addon | version | maintainers | summary
 [stock_lot_on_hand_first](stock_lot_on_hand_first/) | 17.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to display lots on hand first in M2o fields
 [stock_lot_production_date](stock_lot_production_date/) | 17.0.1.0.0 | <a href='https://github.com/atchuthan'><img src='https://github.com/atchuthan.png' width='32' height='32' style='border-radius:50%;' alt='atchuthan'/></a> | Stock Lot Production Date
 [stock_lot_scrap](stock_lot_scrap/) | 17.0.1.0.0 |  | This module adds a button in Production Lot/Serial Number view form to Scrap all products contained.
+[stock_move_backdating](stock_move_backdating/) | 17.0.1.0.0 |  | Stock Move Backdating
 [stock_move_forced_lot](stock_move_forced_lot/) | 17.0.1.0.0 |  | This module allows you to set a lot_id in a procurement to force the stock move generated to only reserve the selected lot.
 [stock_move_line_reference_link](stock_move_line_reference_link/) | 17.0.1.0.0 |  | Add link in stock move line references.
 [stock_move_planned_consumed_date](stock_move_planned_consumed_date/) | 17.0.1.0.0 |  | Stock Move planned consumed date
@@ -6151,7 +6154,7 @@ addon | version | maintainers | summary
 [purchase_partner_incoterm](purchase_partner_incoterm/) | 17.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Add a an incoterm field for supplier and use it on purchase order
 [purchase_partner_selectable_option](purchase_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Partner Selectable Option
 [purchase_reception_notify](purchase_reception_notify/) | 17.0.1.0.1 |  | Purchase Reception Notify
-[purchase_request](purchase_request/) | 17.0.2.2.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 17.0.2.3.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 17.0.1.1.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_requisition_multiple_vendor](purchase_requisition_multiple_vendor/) | 17.0.1.0.0 |  | Create multiple purchase alternatives for different vendors using the same wizard.
 [purchase_requisition_order_remaining_qty](purchase_requisition_order_remaining_qty/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Requisition Order Remaining Qty
@@ -6295,6 +6298,7 @@ addon | version | maintainers | summary
 [product_print_category](product_print_category/) | 17.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Define print categories for products and automate products print, when data has changed
 [product_product_template_link](product_product_template_link/) | 17.0.1.0.0 |  | Adds a button in product to view the template
 [product_readonly_security](product_readonly_security/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Product Readonly Security
+[product_restricted_type](product_restricted_type/) | 17.0.1.0.0 |  | Product Restricted Type
 [product_secondary_unit](product_secondary_unit/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Set a secondary unit per product
 [product_sequence](product_sequence/) | 17.0.1.0.0 |  | Product Sequence
 [product_set](product_set/) | 17.0.1.0.1 |  | Product set
@@ -6892,6 +6896,7 @@ addon | version | maintainers | summary
 [mail_activity_reminder](mail_activity_reminder/) | 17.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.0 |  | Adding attachment on the object by sending this one
+[mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 17.0.1.0.0 |  | Module to use attach existing attachment for account module
 [mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.1 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.1 | <a href='https://github.com/hailangvn2023'><img src='https://github.com/hailangvn2023.png' width='32' height='32' style='border-radius:50%;' alt='hailangvn2023'/></a> | This module enables sending mail to CC and BCC partners for invoices.
@@ -7523,7 +7528,7 @@ addon | version | maintainers | summary
 [announcement](announcement/) | 17.0.1.0.0 |  | Notify internal users about relevant organization stuff
 [barcode_action](barcode_action/) | 17.0.1.0.1 |  | Allows to use barcodes as a launcher
 [base_cancel_confirm](base_cancel_confirm/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base Cancel Confirm
-[base_export_manager](base_export_manager/) | 17.0.1.0.0 |  | Manage model export profiles
+[base_export_manager](base_export_manager/) | 17.0.1.0.1 |  | Manage model export profiles
 [base_import_security_group](base_import_security_group/) | 17.0.1.0.0 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Restrict (with groups) menu visibilty
 [base_optional_quick_create](base_optional_quick_create/) | 17.0.1.0.0 |  | Avoid "quick create" on m2o fields, on a "by model" basis
@@ -7531,7 +7536,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 17.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 17.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.2.4.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.3.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
 [base_tier_validation_forward](base_tier_validation_forward/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
@@ -7780,7 +7785,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fastapi](fastapi/) | 17.0.3.1.2 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
+[fastapi](fastapi/) | 17.0.3.2.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Odoo FastAPI endpoint
 [graphql_base](graphql_base/) | 17.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Base GraphQL/GraphiQL controller
 [graphql_demo](graphql_demo/) | 17.0.1.0.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | GraphQL Demo
 [pydantic](pydantic/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Utility addon to ease mapping between Pydantic and Odoo models
@@ -8410,6 +8415,7 @@ addon | version | maintainers | summary
 [web_widget_open_tab](web_widget_open_tab/) | 17.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 17.0.1.0.0 | <a href='https://github.com/robyf70'><img src='https://github.com/robyf70.png' width='32' height='32' style='border-radius:50%;' alt='robyf70'/></a> | Allow to draw plotly charts.
 [web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.1.0.0 |  | unify the product and name into a single column
+[web_widget_section_and_note_text_scrollable](web_widget_section_and_note_text_scrollable/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Make the text field of Section and Note widget scrollable
 [web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.1.2 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Show list fields as a matrix
 
@@ -8460,7 +8466,7 @@ addon | version | maintainers | summary
 [website_breadcrumb](website_breadcrumb/) | 17.0.1.0.0 |  | Let you have breadcrumbs in website pages
 [website_conditional_visibility_user_group](website_conditional_visibility_user_group/) | 17.0.1.0.0 |  | Only internal users will see the blocks you add this condition to
 [website_cookiebot](website_cookiebot/) | 17.0.1.0.1 |  | Ask for cookies consent connecting with Cookiebot
-[website_cookiefirst](website_cookiefirst/) | 17.0.1.0.0 |  | Cookiefirst integration
+[website_cookiefirst](website_cookiefirst/) | 17.0.2.0.0 |  | Cookiefirst integration
 [website_crm_quick_answer](website_crm_quick_answer/) | 17.0.1.0.0 |  | Add an automatic answer for contacts asking for info
 [website_form_require_legal](website_form_require_legal/) | 17.0.1.0.0 |  | Add possibility to require confirm legal terms.
 [website_forum_subscription](website_forum_subscription/) | 17.0.1.0.0 |  | Adds a button to allow subscription from the website
