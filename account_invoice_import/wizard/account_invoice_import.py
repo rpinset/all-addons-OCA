@@ -1471,7 +1471,7 @@ class AccountInvoiceImport(models.TransientModel):
                         and xpath_res[0].attrib.get("format") != "102"
                     ):
                         raise UserError(_("Only the date format 102 is supported "))
-                    date_dt = datetime.strptime(xpath_res[0].text, "%Y%m%d")
+                    date_dt = datetime.strptime(xpath_res[0].text.strip(), "%Y%m%d")
                     date_str = fields.Date.to_string(date_dt)
                     return date_str
                 elif isfloat:

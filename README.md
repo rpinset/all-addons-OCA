@@ -70,30 +70,25 @@ Date:   Thu Mar 13 12:23:12 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit dc3f03f083dabe86393e150e9906d29707e5bbb5
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 08:46:41 2025 +0000
+commit 3d941251af980b77a687ef6fd469ea1402c49a58
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 30 11:09:37 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 87.5% (7 of 8 strings)
+    Currently translated at 100.0% (171 of 171 strings)
     
-    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_move_line_purchase_info
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_move_line_purchase_info/tr/
+    Translation: account-financial-tools-14.0/account-financial-tools-14.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-14-0/account-financial-tools-14-0-account_loan/it/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit a6f219c72a996c36e6b8650c58bd348d69ad3181
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Jun 26 08:28:56 2025 +0000
+commit e61a96f97e547c8e5b4d5b64ff634519b746b48c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jul 1 15:40:08 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (259 of 259 strings)
-    
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/it/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -236,16 +231,11 @@ Date:   Fri Jun 13 18:26:53 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 4d70ff0172b44c370080905dda81577bf8a3a389
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 10:33:42 2025 +0000
+commit d0fa6782d81c0209bdad92b0658c94c8f09f9323
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Jul 1 14:56:00 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 90.0% (9 of 10 strings)
-    
-    Translation: account-payment-14.0/account-payment-14.0-account_payment_paired_internal_transfer
-    Translate-URL: https://translation.odoo-community.org/projects/account-payment-14-0/account-payment-14-0-account_payment_paired_internal_transfer/tr/
+    [BOT] post-merge updates
 
 
 ## connector
@@ -514,16 +504,11 @@ Date:   Wed Jun 25 09:26:03 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 0bb1d56e5483810d96867eda4a7dbe2ccb04e5b7
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Jun 12 06:14:40 2025 +0000
+commit 5179f6dbfae9d9edcbb815d624155c8be5e72601
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jun 30 16:03:05 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-14.0/edi-14.0-edi_oca
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-edi_oca/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1318,16 +1303,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 59c57ee2b04f15c9aea515a5ffe32025a6b48567
+commit 3715842975e16c95739336a5e761d3bbcf59738c
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 24 06:34:14 2025 +0000
+Date:   Tue Jul 1 11:15:49 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 98.5% (329 of 334 strings)
+    Currently translated at 92.1% (47 of 51 strings)
     
-    Translation: contract-14.0/contract-14.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-contract/it/
+    Translation: contract-14.0/contract-14.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-product_contract/it/
 
 
 ## program
