@@ -68,20 +68,30 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit b6ceb0817dd2a286b1582ef92832e6ead5c6dc09
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:32:51 2025 +0000
+commit ceb5334d4e32c66a096f0b231afcd0d4ad5b49b4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 30 11:09:39 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 27.4% (73 of 266 strings)
+    
+    Translation: account-financial-tools-13.0/account-financial-tools-13.0-account_asset_management
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-13-0/account-financial-tools-13-0-account_asset_management/it/
 
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 4fa8fafd8701bab1cd29bbdb7dc1a2a39a337e53
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:32:19 2025 +0000
+commit d032a56ff8e1a16abca3d6f1f554656319b0b505
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Jun 30 11:11:16 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 63.0% (164 of 260 strings)
+    
+    Translation: account-financial-reporting-13.0/account-financial-reporting-13.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-13-0/account-financial-reporting-13-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -1343,16 +1353,16 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 72f0c468b556b8cacde0dc7df8c3198bb917115b
+commit 60e67bd946d4c6b25324c90595d4de8736fe2122
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 24 06:32:31 2025 +0000
+Date:   Tue Jul 1 11:14:40 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 67.4% (207 of 307 strings)
+    Currently translated at 81.6% (40 of 49 strings)
     
-    Translation: contract-13.0/contract-13.0-contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-13-0/contract-13-0-contract/it/
+    Translation: contract-13.0/contract-13.0-product_contract
+    Translate-URL: https://translation.odoo-community.org/projects/contract-13-0/contract-13-0-product_contract/it/
 
 
 ## business-requirement
