@@ -1,11 +1,23 @@
 # Copyright 2015-2018 Tecnativa - Jairo Llopis
+# Copyright 2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 from odoo.exceptions import ValidationError
-from odoo.tests.common import TransactionCase
+from odoo.tests import new_test_user
+from odoo.tests.common import TransactionCase, users
 
 
 class TestIrExportsCase(TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        new_test_user(
+            cls.env,
+            login="test-user",
+            groups="base.group_user,base.group_allow_export",
+        )
+
+    @users("test-user")
     def test_create_with_basic_data(self):
         """Emulate creation from original form.
 

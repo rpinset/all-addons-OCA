@@ -313,7 +313,7 @@ addon | version | maintainers | summary
 [account_move_line_report_xls](account_move_line_report_xls/) | 15.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 15.0.1.1.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 15.0.1.0.4 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Sale Stock Report Non Billed
-[account_tax_balance](account_tax_balance/) | 15.0.1.1.1 |  | Compute tax balances based on date range
+[account_tax_balance](account_tax_balance/) | 15.0.1.1.2 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 15.0.1.0.0 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 15.0.1.0.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
 [partner_statement](partner_statement/) | 15.0.1.1.4 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
@@ -465,6 +465,7 @@ addon | version | maintainers | summary
 [account_invoice_warn_message](account_invoice_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on invoice to ensure warning is populated
 [account_manual_currency](account_manual_currency/) | 15.0.1.0.0 |  | Allows to manual currency of Accounting
 [account_move_exception](account_move_exception/) | 15.0.1.0.0 |  | Custom exceptions on account move
+[account_move_original_partner](account_move_original_partner/) | 15.0.1.0.0 |  | Display original customers when creating invoices from multiple sale orders.
 [account_move_post_block](account_move_post_block/) | 15.0.1.1.0 |  | Account Move Post Block
 [account_move_search_line](account_move_search_line/) | 15.0.1.0.0 |  | Account Move Search Line
 [account_move_sent_usability](account_move_sent_usability/) | 15.0.1.0.1 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
@@ -1144,7 +1145,7 @@ addon | version | maintainers | summary
 [account_payment_multi_deduction](account_payment_multi_deduction/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Payment Register with Multiple Deduction
 [account_payment_notification](account_payment_notification/) | 15.0.1.1.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/elp'><img src='https://github.com/elp.png' width='32' height='32' style='border-radius:50%;' alt='elp'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Notifiy upcoming payments
 [account_payment_promissory_note](account_payment_promissory_note/) | 15.0.1.0.2 |  | Account Payment Promissory Note
-[account_payment_return](account_payment_return/) | 15.0.1.0.4 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 15.0.1.0.5 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 15.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 15.0.1.0.3 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 15.0.1.0.1 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
@@ -1907,7 +1908,7 @@ addon | version | maintainers | summary
 [sale_sourced_by_line](sale_sourced_by_line/) | 15.0.1.1.0 |  | Multiple warehouse source locations for Sale order
 [sale_start_end_dates](sale_start_end_dates/) | 15.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start date and end date on sale order lines
 [sale_stock_cancel_restriction](sale_stock_cancel_restriction/) | 15.0.1.0.2 |  | Sale Stock Cancel Restriction
-[sale_stock_delivery_address](sale_stock_delivery_address/) | 15.0.1.0.1 |  | Sale Stock Delivery Address
+[sale_stock_delivery_address](sale_stock_delivery_address/) | 15.0.1.0.2 |  | Sale Stock Delivery Address
 [sale_stock_invoice_plan](sale_stock_invoice_plan/) | 15.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
 [sale_stock_last_date](sale_stock_last_date/) | 15.0.1.0.0 |  | Displays last delivery date in sale order lines
 [sale_stock_line_sequence](sale_stock_line_sequence/) | 15.0.1.0.0 |  | Glue Module for Sale Order Line Sequence and Stock Picking Line Sequence
@@ -5837,7 +5838,7 @@ addon | version | maintainers | summary
 [stock_reception_discrepancy_distribution](stock_reception_discrepancy_distribution/) | 15.0.1.0.1 |  | Change demand in stock moves linked to reception one
 [stock_remote_measure](stock_remote_measure/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to connect to remote devices to record measures in stock fields
 [stock_restrict_lot](stock_restrict_lot/) | 15.0.0.1.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
-[stock_return_request](stock_return_request/) | 15.0.1.0.2 |  | Stock Return Request
+[stock_return_request](stock_return_request/) | 15.0.1.0.3 |  | Stock Return Request
 [stock_scrap_tier_validation](stock_scrap_tier_validation/) | 15.0.1.0.0 |  | Stock Scrap Tier Validation
 [stock_split_picking](stock_split_picking/) | 15.0.1.1.2 |  | Split a picking in two not transferred pickings
 [stock_valuation_fifo_lot](stock_valuation_fifo_lot/) | 15.0.1.0.0 | <a href='https://github.com/newtratip'><img src='https://github.com/newtratip.png' width='32' height='32' style='border-radius:50%;' alt='newtratip'/></a> | Stock Valuation Fifo Lot
@@ -8023,7 +8024,7 @@ addon | version | maintainers | summary
 [base_cancel_confirm](base_cancel_confirm/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base Cancel Confirm
 [base_custom_filter](base_custom_filter/) | 15.0.1.0.0 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> <a href='https://github.com/ForgeFlow'><img src='https://github.com/ForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ForgeFlow'/></a> | Add custom filters in standard filters and group by dropdowns
 [base_duplicate_security_group](base_duplicate_security_group/) | 15.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds a security group to restrict which users can copy records
-[base_export_manager](base_export_manager/) | 15.0.1.0.2 |  | Manage model export profiles
+[base_export_manager](base_export_manager/) | 15.0.1.0.3 |  | Manage model export profiles
 [base_field_deprecated](base_field_deprecated/) | 15.0.1.0.0 | <a href='https://github.com/GuillemCForgeFlow'><img src='https://github.com/GuillemCForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='GuillemCForgeFlow'/></a> | Adds the deprecated attribute to the Odoo field model.
 [base_import_security_group](base_import_security_group/) | 15.0.1.0.1 |  | Group-based permissions for importing CSV files
 [base_menu_visibility_restriction](base_menu_visibility_restriction/) | 15.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Restrict (with groups) menu visibilty
