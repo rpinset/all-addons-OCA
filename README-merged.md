@@ -27,6 +27,7 @@ addon | version | maintainers | summary
 [account_analytic_distribution_manual_date](account_analytic_distribution_manual_date/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Account analytic distribution manual date
 [account_analytic_distribution_model_recalculate](account_analytic_distribution_model_recalculate/) | 17.0.1.0.1 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Add the posibility to change the analytic distribution of the journal items assigned by the distribution model
 [account_analytic_distribution_widget_rebalance](account_analytic_distribution_widget_rebalance/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Add a button to rebalance the analytic distribution back to 100%
+[account_analytic_document_date](account_analytic_document_date/) | 17.0.1.0.0 | <a href='https://github.com/mpascuall'><img src='https://github.com/mpascuall.png' width='32' height='32' style='border-radius:50%;' alt='mpascuall'/></a> <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Account Analytic Document Date
 [account_analytic_organization](account_analytic_organization/) | 17.0.1.0.0 | <a href='https://github.com/mpascuall'><img src='https://github.com/mpascuall.png' width='32' height='32' style='border-radius:50%;' alt='mpascuall'/></a> | Adds organization field on the partner so you can use it on your analytic
 [account_analytic_parent](account_analytic_parent/) | 17.0.1.0.0 |  | This module reintroduces the hierarchy to the analytic accounts.
 [account_analytic_required](account_analytic_required/) | 17.0.1.0.0 |  | Account Analytic Required
@@ -233,6 +234,7 @@ addon | version | maintainers | summary
 [account_asset_force_account](account_asset_force_account/) | 17.0.1.1.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | This module allows you to enforce specific accounts for assets, including depreciation and expense accounts, through asset profiles and forms.
 [account_asset_management](account_asset_management/) | 17.0.1.1.0 |  | Assets Management
 [account_chart_update](account_chart_update/) | 17.0.1.0.0 |  | Wizard to update a company's account chart from a template
+[account_chart_update_l10n_eu_oss](account_chart_update_l10n_eu_oss/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Account Chart update OSS
 [account_check_deposit](account_check_deposit/) | 17.0.1.0.0 |  | Manage deposit of checks to the bank
 [account_fiscal_year](account_fiscal_year/) | 17.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_journal_lock_date](account_journal_lock_date/) | 17.0.1.0.0 |  | Lock each journal independently
@@ -602,7 +604,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.2.0 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.2.1 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
@@ -2583,7 +2585,7 @@ addon | version | maintainers | summary
 [fieldservice_stage_validation](fieldservice_stage_validation/) | 17.0.1.1.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Validate input data when reaching a Field Service stage
 [fieldservice_stock](fieldservice_stock/) | 17.0.1.2.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate the logistics operations with Field Service
 [fieldservice_stock_request](fieldservice_stock_request/) | 17.0.1.0.2 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/smangukiya'><img src='https://github.com/smangukiya.png' width='32' height='32' style='border-radius:50%;' alt='smangukiya'/></a> | Integrate Stock Requests with Field Service Orders
-[fieldservice_stock_scrap](fieldservice_stock_scrap/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Scrap stock from Field Service order of Stock Requests
+[fieldservice_stock_scrap](fieldservice_stock_scrap/) | 17.0.1.2.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Scrap stock from Field Service order of Stock Requests
 [fieldservice_vehicle](fieldservice_vehicle/) | 17.0.1.1.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage Field Service vehicles and assign drivers
 
 [//]: # (end addons)
@@ -5330,11 +5332,13 @@ addon | version | maintainers | summary
 [base_delivery_carrier_label](base_delivery_carrier_label/) | 17.0.1.1.0 |  | Base module for carrier labels
 [delivery_auto_refresh](delivery_auto_refresh/) | 17.0.1.0.0 |  | Auto-refresh delivery price in sales orders
 [delivery_carrier_account](delivery_carrier_account/) | 17.0.1.0.0 |  | Delivery Carrier Account
+[delivery_carrier_global_manifest](delivery_carrier_global_manifest/) | 17.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Manifest files for all carriers
 [delivery_carrier_info](delivery_carrier_info/) | 17.0.1.0.0 |  | Add code on carrier
 [delivery_carrier_manual_price](delivery_carrier_manual_price/) | 17.0.1.0.0 |  | Allow setting manual shipping cost in sale order.
 [delivery_carrier_manual_weight](delivery_carrier_manual_weight/) | 17.0.1.0.0 |  | Allow setting weight and shipping weight in stock transfers manually based on carrier.
 [delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 17.0.1.0.0 |  | Multiple ZIP intervals for the same delivery method
 [delivery_carrier_partner](delivery_carrier_partner/) | 17.0.1.0.0 |  | Add a partner in the delivery carrier
+[delivery_cbl](delivery_cbl/) | 17.0.1.0.0 |  | Integrate CBL webservice
 [delivery_correos_express](delivery_correos_express/) | 17.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 17.0.1.0.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 17.0.1.0.0 |  | Hide free fee lines on sales orders
@@ -5346,6 +5350,7 @@ addon | version | maintainers | summary
 [delivery_roulier](delivery_roulier/) | 17.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Integration of multiple carriers
 [delivery_roulier_option](delivery_roulier_option/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Add options to roulier modules
 [delivery_state](delivery_state/) | 17.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
+[delivery_ups_oca](delivery_ups_oca/) | 17.0.1.0.0 |  | Integrate UPS webservice
 [partner_delivery_info](partner_delivery_info/) | 17.0.1.0.0 |  | Send delivery notice to the shipper from any operation.
 [partner_delivery_schedule](partner_delivery_schedule/) | 17.0.1.0.0 |  | Set on partners a schedule for delivery goods
 [partner_delivery_zone](partner_delivery_zone/) | 17.0.1.0.0 |  | Enables partner delivery zones for physical products
@@ -5450,6 +5455,7 @@ addon | version | maintainers | summary
 [sale_planned_consumed_date](sale_planned_consumed_date/) | 17.0.1.0.0 |  | Sale planned consumed date
 [stock_account_product_run_fifo_hook](stock_account_product_run_fifo_hook/) | 17.0.1.0.1 |  | Add more flexibility in the run fifo method.
 [stock_account_show_automatic_valuation](stock_account_show_automatic_valuation/) | 17.0.1.0.0 |  | Allow automatic valuation for stock moves in community edition
+[stock_landed_costs_priority](stock_landed_costs_priority/) | 17.0.1.0.0 |  | Add priority to landed costs
 [stock_lock_lot](stock_lock_lot/) | 17.0.1.0.0 |  | Stock Lock Lot
 [stock_lot_on_hand_first](stock_lot_on_hand_first/) | 17.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to display lots on hand first in M2o fields
 [stock_lot_production_date](stock_lot_production_date/) | 17.0.1.0.0 | <a href='https://github.com/atchuthan'><img src='https://github.com/atchuthan.png' width='32' height='32' style='border-radius:50%;' alt='atchuthan'/></a> | Stock Lot Production Date
@@ -5463,10 +5469,11 @@ addon | version | maintainers | summary
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Auto create lots for incoming pickings
 [stock_picking_auto_create_lot_sequence](stock_picking_auto_create_lot_sequence/) | 17.0.1.0.0 |  | Stock Picking Auto Create Lot Sequence
 [stock_picking_back2draft](stock_picking_back2draft/) | 17.0.1.0.0 |  | Reopen cancelled pickings
+[stock_picking_batch_print_pickings](stock_picking_batch_print_pickings/) | 17.0.1.0.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Print Picking from Stock Picking Batch
 [stock_picking_filter_lot](stock_picking_filter_lot/) | 17.0.1.0.0 |  | In picking out lots' selection, filter lots based on their location
 [stock_picking_group_by_base](stock_picking_group_by_base/) | 17.0.1.0.1 |  | Allows to define a way to create index on extensible domain
 [stock_picking_group_by_partner_by_carrier](stock_picking_group_by_partner_by_carrier/) | 17.0.0.0.0 |  | Stock Picking: group by partner and carrier
-[stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.2.3 |  | Adds link between pickings and invoices
+[stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.2.5 |  | Adds link between pickings and invoices
 [stock_picking_kind](stock_picking_kind/) | 17.0.1.0.0 |  | Computes the kind of picking based on locations
 [stock_picking_line_sequence](stock_picking_line_sequence/) | 17.0.1.0.0 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 17.0.1.0.0 |  | Stock Picking Mass Action
@@ -7544,7 +7551,7 @@ addon | version | maintainers | summary
 [date_range_account](date_range_account/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
 [multi_step_wizard](multi_step_wizard/) | 17.0.1.0.0 |  | Multi-Steps Wizards
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
-[server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.1 |  | Mass Editing
+[server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.2 |  | Mass Editing
 
 [//]: # (end addons)
 

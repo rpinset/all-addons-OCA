@@ -1,8 +1,8 @@
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 26ac8613fa8952030313e5aab65ae43831760ae0
+commit 4370719308ec24f78f052d49ba82b9b2e47995e3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 23 05:15:18 2025 +0000
+Date:   Fri Jul 4 12:50:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -36,16 +36,11 @@ Date:   Sun Feb 2 17:51:50 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 9f057f83b5a3d6b849ccd31001a3896655e11ca0
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 30 11:09:48 2025 +0000
+commit 89b6a3db1e894f3fc49e4eec79106bfaed0ce3ac
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 4 09:03:35 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (261 of 261 strings)
-    
-    Translation: account-financial-tools-17.0/account-financial-tools-17.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-17-0/account-financial-tools-17-0-account_asset_management/it/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -100,11 +95,16 @@ Date:   Mon Jun 30 08:18:23 2025 +0000
 
 ## intrastat
 From [https://github.com/OCA/intrastat.git](https://github.com/OCA/intrastat.git)
-commit f17213819ce3e5587ab6e06dc8be48d377cb8c8c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:58:48 2025 +0000
+commit d18b05aa65f6e8432cd7ed7d81102bee25a4740c
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jul 4 06:14:08 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: intrastat-extrastat-17.0/intrastat-extrastat-17.0-intrastat_product
+    Translate-URL: https://translation.odoo-community.org/projects/intrastat-extrastat-17-0/intrastat-extrastat-17-0-intrastat_product/
 
 
 ## mis-builder
@@ -155,11 +155,16 @@ Date:   Mon Jun 9 15:44:57 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit c3c0d634d4816ca155b366852282368d483b11c9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 16 13:08:34 2025 +0000
+commit 9b5516d19f0c582bd68bcfda3daac3e29f784d3f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jul 2 09:55:29 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (175 of 175 strings)
+    
+    Translation: bank-payment-17.0/bank-payment-17.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-17-0/bank-payment-17-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -317,11 +322,14 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 45e6b3a0af6933dd1d0e60ad896046e5c8fb40eb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 18:59:21 2025 +0000
+commit 23322726cbb4fe3660a0f7e45c27d9c8040b069b
+Merge: 45e6b3a0a 01b8b0117
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Jul 2 15:59:21 2025 +0200
 
-    [BOT] post-merge updates
+    Merge pull request #3785 from BinhexTeam/17.0-remove-pandoc-deb-file
+    
+    [17.0] remove pandoc deb file
 
 
 ## crm
@@ -469,16 +477,11 @@ Date:   Tue Jul 1 11:07:16 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 67241c94eeec65c6d73eb17c5ad9da4397c3d27e
-Author: Antoni Marroig Campomar <toni.marroig1@gmail.com>
-Date:   Thu Jun 26 10:21:09 2025 +0000
+commit 695e7d97c6cf84f5a7dcb26ebfdfa31ff033f0eb
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 4 12:45:57 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (7 of 7 strings)
-    
-    Translation: field-service-17.0/field-service-17.0-fieldservice_route_availability
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice_route_availability/ca/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1006,11 +1009,11 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit a9f8368ac995d7f103cc634951a5b295f64a3da1
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 30 08:22:36 2025 +0000
+commit a9e9858b88f500353fc72eb0ecce634486f76e44
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 4 14:10:14 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1024,9 +1027,9 @@ Date:   Fri Jun 27 16:01:38 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit cd7cea1b5e1480ffd24cb99842739c267f302f76
+commit b9e82562a913389efeb059ef7ea1c405eb2697ba
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 17:18:08 2025 +0000
+Date:   Fri Jul 4 16:58:20 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1411,9 +1414,9 @@ Date:   Wed Jun 4 03:42:57 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit bcbae37c3eb1b3fc804947af06d52e3f109fd97d
+commit a079feaecd5a184af3b5f1d956571dd62bf46ebb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 15:52:16 2025 +0000
+Date:   Wed Jul 2 00:54:53 2025 +0000
 
     [BOT] post-merge updates
 
