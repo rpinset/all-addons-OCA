@@ -1012,9 +1012,9 @@ Date:   Fri Jun 27 08:50:18 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 97426ae353fca799cf3b338f748821726667ac0f
+commit fabeb942467193f735658f62429c161a5174a25b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 9 09:58:42 2025 +0000
+Date:   Fri Jul 4 21:46:36 2025 +0000
 
     [BOT] post-merge updates
 
