@@ -94,12 +94,15 @@
                 <td class="text-right" groups="product.group_discount_per_so_line">
                     <span t-field="move_line.sale_discount" />
                 </td>
-                <td class="text-right"><span
+                <td class="text-right">
+                    <span
                         t-field="move_line.sale_price_subtotal"
-                    /></td>
-                <td class="text-right"><span
-                        t-field="move_line.sale_tax_description"
-                    /></td>
+                        t-options='{"display_currency": o.currency_id}'
+                    />
+                </td>
+                <td class="text-right">
+                    <span t-field="move_line.sale_tax_description" />
+                </td>
             </t>
         </xpath>
     </template>

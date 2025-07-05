@@ -84,11 +84,11 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit e61a96f97e547c8e5b4d5b64ff634519b746b48c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 15:40:08 2025 +0000
+commit e46dc9a45f4aeed7f6c0bd0540b2ff083567dc25
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Thu Jul 3 13:56:21 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Turkish)
 
 
 ## account-invoice-reporting
@@ -194,16 +194,16 @@ Date:   Sun Feb 2 18:33:51 2025 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit 6b11d23dc62ed1f88b851fd37c73364ea55ce134
+commit cb0d42978fb2171416e5f228cf246280ca64d6ab
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 5 13:15:09 2025 +0000
+Date:   Wed Jul 2 09:55:27 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 63.4% (33 of 52 strings)
+    Currently translated at 100.0% (178 of 178 strings)
     
-    Translation: bank-payment-14.0/bank-payment-14.0-account_payment_mode
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_payment_mode/it/
+    Translation: bank-payment-14.0/bank-payment-14.0-account_banking_pain_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-14-0/bank-payment-14-0-account_banking_pain_base/it/
 
 
 ## account-reconcile
@@ -371,13 +371,13 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit ee3db6f9cbfc62a92bd6957437af3983796e3775
+commit 3c275c3a5ed0064e60c96d9eed50c97c68b87567
 Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 07:05:28 2025 +0000
+Date:   Thu Jul 3 13:39:23 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 61.5% (8 of 13 strings)
+    Currently translated at 92.3% (12 of 13 strings)
     
     Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_line_sequence
     Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_line_sequence/tr/
@@ -1105,11 +1105,11 @@ Date:   Thu Jun 19 15:36:00 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit ec9a3a94fd43e9d1961fe05a4f4b9f70aa1fef07
+commit e6b82df84da6ce6fbb27e3ff83590337152f50c2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:49:45 2025 +0000
+Date:   Fri Jul 4 06:13:40 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## rma
@@ -1449,11 +1449,16 @@ Date:   Wed Jun 4 08:40:37 2025 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 8e4af336856fe1c778ea18d23686e5d5708bfba8
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:42:28 2025 +0000
+commit 002289d0d15d4b63981b0355dac7d051b697f60b
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Thu Jul 3 13:57:58 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 64.1% (34 of 53 strings)
+    
+    Translation: server-backend-14.0/server-backend-14.0-base_user_role
+    Translate-URL: https://translation.odoo-community.org/projects/server-backend-14-0/server-backend-14-0-base_user_role/tr/
 
 
 ## server-brand

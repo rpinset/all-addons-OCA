@@ -6491,7 +6491,7 @@ addon | version | maintainers | summary
 [stock_picking_comment_template](stock_picking_comment_template/) | 14.0.1.1.0 |  | Comments texts templates on Picking documents
 [stock_picking_group_by_partner_by_carrier_sale_line_position](stock_picking_group_by_partner_by_carrier_sale_line_position/) | 14.0.1.0.2 |  | Glue module for sale position and delivery report grouped
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 14.0.2.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
-[stock_picking_report_valued](stock_picking_report_valued/) | 14.0.1.2.2 |  | Adding Valued Picking on Delivery Slip report
+[stock_picking_report_valued](stock_picking_report_valued/) | 14.0.1.2.3 |  | Adding Valued Picking on Delivery Slip report
 [stock_quant_history](stock_quant_history/) | 14.0.1.2.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> <a href='https://github.com/StephaneMangin'><img src='https://github.com/StephaneMangin.png' width='32' height='32' style='border-radius:50%;' alt='StephaneMangin'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 14.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 14.0.1.0.0 |  | Provides stock quantity by location on past date
