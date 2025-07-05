@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_package_type_shipping_weight
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_choose_delivery_package
+msgid "Delivery Package Selection Wizard"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model.fields,field_description:delivery_package_type_shipping_weight.field_stock_package_type__is_base_weight_shipping_weight
+msgid "Is shipping weight"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_stock_quant_package
+msgid "Packages"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_sale_order
+msgid "Sales Order"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_stock_package_type
+msgid "Stock package type"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model,name:delivery_package_type_shipping_weight.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#. odoo-python
+#: code:addons/delivery_package_type_shipping_weight/models/stock_package_type.py:0
+msgid ""
+"Weight must be a positive or null value if Is shipping\n"
+"                        weight is enabled."
+msgstr ""
+
+#. module: delivery_package_type_shipping_weight
+#: model:ir.model.fields,help:delivery_package_type_shipping_weight.field_stock_package_type__is_base_weight_shipping_weight
+msgid ""
+"When flagged, the package type weight will be the package total weight.\n"
+"         The product weight won't be added"
+msgstr ""

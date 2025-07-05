@@ -342,7 +342,7 @@ class GeneralLedgerReport(models.AbstractModel):
             "rec_id": move_line["full_reconcile_id"][0]
             if move_line["full_reconcile_id"]
             else False,
-            "rec_name": move_line["full_reconcile_id"][1]
+            "rec_name": move_line["matching_number"]
             if move_line["full_reconcile_id"]
             else "",
             "currency_id": move_line["currency_id"],
@@ -492,7 +492,7 @@ class GeneralLedgerReport(models.AbstractModel):
                         {
                             rec_id: {
                                 "id": rec_id,
-                                "name": move_line["full_reconcile_id"][1],
+                                "name": move_line["matching_number"],
                             }
                         }
                     )
@@ -942,4 +942,5 @@ class GeneralLedgerReport(models.AbstractModel):
             "balance",
             "tax_ids",
             "move_name",
+            "matching_number",
         ]
