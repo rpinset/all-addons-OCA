@@ -84,11 +84,16 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit e46dc9a45f4aeed7f6c0bd0540b2ff083567dc25
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Thu Jul 3 13:56:21 2025 +0000
+commit c7dee05fe133ee56ef9f22611e5df4b8291450a3
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Tue Jul 8 16:02:36 2025 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (109 of 109 strings)
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -102,16 +107,11 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 3f96fb22dd482285a4d19ca02787ae12e8d66be8
-Author: matthieusaison <matthieu.saison@akretion.com.br>
-Date:   Mon Jun 16 07:27:42 2025 +0000
+commit 66e2ec9bde87609005372dabda32d25daf0b7095
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 7 11:11:44 2025 +0000
 
-    Translated using Weblate (French)
-    
-    Currently translated at 47.0% (8 of 17 strings)
-    
-    Translation: account-invoicing-14.0/account-invoicing-14.0-sale_line_refund_to_invoice_qty
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-sale_line_refund_to_invoice_qty/fr/
+    [BOT] post-merge updates
 
 
 ## account-fiscal-rule
@@ -853,9 +853,9 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit ca2dc59ab8183bb620937aecdb4b9a3a9de3f70a
+commit 9ce0ad7f4d13b0d92fab700ee7b6fce956098134
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 27 13:44:46 2025 +0000
+Date:   Tue Jul 8 14:54:57 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1078,11 +1078,11 @@ Date:   Fri Jun 13 09:04:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 2af6315a091b127ecafe22db9d349de2971f3616
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jun 17 07:13:33 2025 +0000
+commit 5c091462b56056591f7d7ce62c34c22d9a411da3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jul 9 08:20:31 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## stock-logistics-tracking
@@ -1105,9 +1105,9 @@ Date:   Thu Jun 19 15:36:00 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit e6b82df84da6ce6fbb27e3ff83590337152f50c2
+commit 12177da47b1be69745787305b4d704db13a41fc4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 4 06:13:40 2025 +0000
+Date:   Wed Jul 9 14:11:04 2025 +0000
 
     [BOT] post-merge updates
 

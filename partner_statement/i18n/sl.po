@@ -18,19 +18,6 @@ msgstr ""
 "X-Generator: Weblate 4.14.1\n"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement between %s and %s in %s"
-msgstr "%sIzpis med %s in %s v %s"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement up to %s in %s"
-msgstr "%sIzpis do %s v %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "1 - 30 Days"
@@ -273,9 +260,10 @@ msgid "Aging Method"
 msgstr "Metoda zapadlosti"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-msgid "Aging Report at"
-msgstr "Poročilo o zapadlosti na"
+#: code:addons/partner_statement/report/report_statement_common.py:0
+#, python-format
+msgid "Aging Report at %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -388,17 +376,6 @@ msgid "Description"
 msgstr "Opis"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Detailed"
-msgstr "Podrobno"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#, python-format
-msgid "Detailed %sStatement between %s and %s in %s"
-msgstr "Podroben %sizpis med %s in %s v %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
@@ -420,6 +397,22 @@ msgstr "Podroben izkaz dejavnosti v XLSX"
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_xlsx
 msgid "Detailed Activity Statement XLSX"
 msgstr "Podroben izkaz dejavnosti XLSX"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -472,6 +465,12 @@ msgstr "Omogoči OCA izpis zapadlih postavk"
 #, python-format
 msgid "Ending Balance"
 msgstr "Končno stanje"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -664,6 +663,12 @@ msgid "Please set defaults under Activity Statements."
 msgstr "Nastavite privzete vrednosti v izkazih dejavnosti."
 
 #. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__detailed_activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__outstanding_statement_wizard__account_type__receivable
@@ -736,9 +741,10 @@ msgid "Statement Reports Common Wizard"
 msgstr "Čarovnik za skupna poročila"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Statement between"
-msgstr "Izpis med"
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -772,17 +778,36 @@ msgid "Statement to:"
 msgstr "Izpis do:"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Supplier"
-msgstr "Dobavitelj"
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
-msgid "Supplier "
-msgstr "Dobavitelj "
+msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
@@ -814,23 +839,43 @@ msgid "View"
 msgstr "Prikaz"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "and"
-msgstr "in"
-
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "in"
-msgstr "v"
-
-#. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid "or"
 msgstr "ali"
 
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "up to"
-msgstr "do"
+#, python-format
+#~ msgid "%sStatement between %s and %s in %s"
+#~ msgstr "%sIzpis med %s in %s v %s"
+
+#, python-format
+#~ msgid "%sStatement up to %s in %s"
+#~ msgstr "%sIzpis do %s v %s"
+
+#~ msgid "Aging Report at"
+#~ msgstr "Poročilo o zapadlosti na"
+
+#~ msgid "Detailed"
+#~ msgstr "Podrobno"
+
+#, python-format
+#~ msgid "Detailed %sStatement between %s and %s in %s"
+#~ msgstr "Podroben %sizpis med %s in %s v %s"
+
+#~ msgid "Statement between"
+#~ msgstr "Izpis med"
+
+#~ msgid "Supplier"
+#~ msgstr "Dobavitelj"
+
+#, python-format
+#~ msgid "Supplier "
+#~ msgstr "Dobavitelj "
+
+#~ msgid "and"
+#~ msgstr "in"
+
+#~ msgid "in"
+#~ msgstr "v"
+
+#~ msgid "up to"
+#~ msgstr "do"

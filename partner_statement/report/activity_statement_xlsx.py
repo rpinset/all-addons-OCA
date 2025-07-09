@@ -38,11 +38,13 @@ class ActivityStatementXslx(models.AbstractModel):
         currency_data = partner_data.get("currencies", {}).get(currency.id)
         account_type = data.get("account_type", False)
         row_pos += 2
-        statement_header = _("%sStatement between %s and %s in %s") % (
-            account_type == "payable" and _("Supplier ") or "",
-            partner_data.get("start"),
-            partner_data.get("end"),
-            currency.display_name,
+        statement_header = data["get_title"](
+            partner,
+            is_detailed=False,
+            account_type=account_type,
+            starting_date=partner_data.get("start"),
+            ending_date=partner_data.get("end"),
+            currency=currency.display_name,
         )
         sheet.merge_range(
             row_pos, 0, row_pos, 6, statement_header, FORMATS["format_left_bold"]

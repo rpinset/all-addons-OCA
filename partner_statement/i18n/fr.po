@@ -21,19 +21,6 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement between %s and %s in %s"
-msgstr "%sRelevé de compte entre %s et %s en %s"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement up to %s in %s"
-msgstr "%sRelevé de compte jusqu'au %s en %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "1 - 30 Days"
@@ -277,9 +264,10 @@ msgid "Aging Method"
 msgstr "Méthode"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-msgid "Aging Report at"
-msgstr "Relevé des arriérés au"
+#: code:addons/partner_statement/report/report_statement_common.py:0
+#, python-format
+msgid "Aging Report at %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -392,17 +380,6 @@ msgid "Description"
 msgstr "Description"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Detailed"
-msgstr "Détaillé"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#, python-format
-msgid "Detailed %sStatement between %s and %s in %s"
-msgstr "Detail %sde relevé entre %s et %s en %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
@@ -424,6 +401,22 @@ msgstr "Etat XLSL de relevé détaillé d'activité"
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_xlsx
 msgid "Detailed Activity Statement XLSX"
 msgstr "Relevé détaillé d'activité XLSX"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -476,6 +469,12 @@ msgstr "Activer le relevé des arriérés OCA"
 #, python-format
 msgid "Ending Balance"
 msgstr "Solde final"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -669,6 +668,12 @@ msgid "Please set defaults under Activity Statements."
 msgstr "Merci d'indiquer les valeurs par défaut dans le relevé de compte."
 
 #. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__detailed_activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__outstanding_statement_wizard__account_type__receivable
@@ -741,9 +746,10 @@ msgid "Statement Reports Common Wizard"
 msgstr "Assistant rapport commun des relevés"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Statement between"
-msgstr "Relevé de compte entre"
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -777,17 +783,36 @@ msgid "Statement to:"
 msgstr "Relevé concernant :"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Supplier"
-msgstr "Fournisseur"
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
-msgid "Supplier "
-msgstr "Fournisseur "
+msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
@@ -819,26 +844,46 @@ msgid "View"
 msgstr "Afficher"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "and"
-msgstr "et"
-
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "in"
-msgstr "en"
-
-#. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid "or"
 msgstr "ou"
 
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "up to"
-msgstr "jusqu'au"
+#, python-format
+#~ msgid "%sStatement between %s and %s in %s"
+#~ msgstr "%sRelevé de compte entre %s et %s en %s"
+
+#, python-format
+#~ msgid "%sStatement up to %s in %s"
+#~ msgstr "%sRelevé de compte jusqu'au %s en %s"
+
+#~ msgid "Aging Report at"
+#~ msgstr "Relevé des arriérés au"
+
+#~ msgid "Detailed"
+#~ msgstr "Détaillé"
+
+#, python-format
+#~ msgid "Detailed %sStatement between %s and %s in %s"
+#~ msgstr "Detail %sde relevé entre %s et %s en %s"
+
+#~ msgid "Statement between"
+#~ msgstr "Relevé de compte entre"
+
+#~ msgid "Supplier"
+#~ msgstr "Fournisseur"
+
+#, python-format
+#~ msgid "Supplier "
+#~ msgstr "Fournisseur "
+
+#~ msgid "and"
+#~ msgstr "et"
+
+#~ msgid "in"
+#~ msgstr "en"
+
+#~ msgid "up to"
+#~ msgstr "jusqu'au"
 
 #, python-format
 #~ msgid "Amount"

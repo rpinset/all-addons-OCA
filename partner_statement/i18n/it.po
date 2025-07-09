@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-22 23:13+0000\n"
-"PO-Revision-Date: 2025-06-13 10:26+0000\n"
+"PO-Revision-Date: 2025-07-08 18:25+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,19 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.10.4\n"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement between %s and %s in %s"
-msgstr "Estratto conto %s tra %s e %s in %s"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement up to %s in %s"
-msgstr "Estratto conto %s fino al %s in %s"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
@@ -277,9 +264,10 @@ msgid "Aging Method"
 msgstr "Metodo anzianità"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-msgid "Aging Report at"
-msgstr "Resoconto scadenze al"
+#: code:addons/partner_statement/report/report_statement_common.py:0
+#, python-format
+msgid "Aging Report at %(ending_date)s in %(currency)s"
+msgstr "Resoconto scadenze al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -392,17 +380,6 @@ msgid "Description"
 msgstr "Descrizione"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Detailed"
-msgstr "Dettagliato"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#, python-format
-msgid "Detailed %sStatement between %s and %s in %s"
-msgstr "Estratto conto %s dettagliato tra %s e %s in %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
@@ -424,6 +401,26 @@ msgstr "Resoconto XLSL estratto conto attività dettagliato"
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_xlsx
 msgid "Detailed Activity Statement XLSX"
 msgstr "XLSX estratto conto attività dettagliato"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+"Estratto conto dettagliato dal %(starting_date)s al %(ending_date)s in "
+"%(currency)s"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+"Estratto conto dettagliato fornitore dal %(starting_date)s al %(ending_date)"
+"s in %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -476,6 +473,12 @@ msgstr "Abilitare estratti conto in sospeso OCA"
 #, python-format
 msgid "Ending Balance"
 msgstr "Saldo finale"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr "Saldo finale al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -670,6 +673,12 @@ msgid "Please set defaults under Activity Statements."
 msgstr "I valori predefiniti vanno impostati in estratti conto attività."
 
 #. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr "Saldo pregresso al %(ending_date)s in %(currency)s"
+
+#. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__detailed_activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__outstanding_statement_wizard__account_type__receivable
@@ -744,9 +753,10 @@ msgid "Statement Reports Common Wizard"
 msgstr "Procedura guidata per resoconti ordinari estratto conto"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Statement between"
-msgstr "Estratto conto tra"
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
+msgstr "Estratto conto dal %(starting_date)s al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -780,17 +790,38 @@ msgid "Statement to:"
 msgstr "Estratto conto al:"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Supplier"
-msgstr "Fornitore"
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Statement up to %(ending_date)s in %(currency)s"
+msgstr "Estratto conto al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
-msgid "Supplier "
-msgstr "Fornitore "
+msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr "Saldo finale fornitore al %(ending_date)s in %(currency)s"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr "Saldo pregresso fornitore al %(ending_date)s in %(currency)s"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+"Estratto conto fornitore dal %(starting_date)s al %(ending_date)s in "
+"%(currency)s"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
+msgstr "Estratto conto fornitore al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
@@ -822,26 +853,46 @@ msgid "View"
 msgstr "Vedi"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "and"
-msgstr "e"
-
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "in"
-msgstr "in"
-
-#. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid "or"
 msgstr "o"
 
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "up to"
-msgstr "fino al"
+#, python-format
+#~ msgid "%sStatement between %s and %s in %s"
+#~ msgstr "Estratto conto %s tra %s e %s in %s"
+
+#, python-format
+#~ msgid "%sStatement up to %s in %s"
+#~ msgstr "Estratto conto %s fino al %s in %s"
+
+#~ msgid "Aging Report at"
+#~ msgstr "Resoconto scadenze al"
+
+#~ msgid "Detailed"
+#~ msgstr "Dettagliato"
+
+#, python-format
+#~ msgid "Detailed %sStatement between %s and %s in %s"
+#~ msgstr "Estratto conto %s dettagliato tra %s e %s in %s"
+
+#~ msgid "Statement between"
+#~ msgstr "Estratto conto tra"
+
+#~ msgid "Supplier"
+#~ msgstr "Fornitore"
+
+#, python-format
+#~ msgid "Supplier "
+#~ msgstr "Fornitore "
+
+#~ msgid "and"
+#~ msgstr "e"
+
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgid "up to"
+#~ msgstr "fino al"
 
 #, python-format
 #~ msgid "Amount"

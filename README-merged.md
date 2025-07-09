@@ -347,7 +347,7 @@ addon | version | maintainers | summary
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
-[partner_statement](partner_statement/) | 14.0.1.7.1 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[partner_statement](partner_statement/) | 14.0.1.8.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
 
 [//]: # (end addons)
 
@@ -461,7 +461,7 @@ addon | version | maintainers | summary
 [account_invoice_date_due](account_invoice_date_due/) | 14.0.1.0.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Update Invoice's Due Date
 [account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 14.0.1.0.0 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 14.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Changing the fiscal position of an invoice will auto-update invoice lines
-[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 14.0.1.0.3 |  | Allows to apply fixed amount discounts in invoices.
+[account_invoice_fixed_discount](account_invoice_fixed_discount/) | 14.0.1.0.4 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_force_number](account_invoice_force_number/) | 14.0.1.0.1 |  | Allows to force invoice numbering on specific invoices
 [account_invoice_google_document_ai](account_invoice_google_document_ai/) | 14.0.1.0.0 |  | Allows to import data from document using Google Document AI
 [account_invoice_google_document_ai_purchase](account_invoice_google_document_ai_purchase/) | 14.0.1.0.0 |  | Integration with purchase
@@ -473,6 +473,7 @@ addon | version | maintainers | summary
 [account_invoice_mode_daily](account_invoice_mode_daily/) | 14.0.1.0.0 | <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Create invoices automatically on a daily basis.
 [account_invoice_mode_monthly](account_invoice_mode_monthly/) | 14.0.1.2.0 |  | Create invoices automatically on a monthly basis.
 [account_invoice_mode_weekly](account_invoice_mode_weekly/) | 14.0.1.2.0 |  | Create invoices automatically on a weekly basis.
+[account_invoice_origin_link](account_invoice_origin_link/) | 14.0.1.0.0 | <a href='https://github.com/GuillemCForgeFlow'><img src='https://github.com/GuillemCForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='GuillemCForgeFlow'/></a> | Add clickable link in invoice source document.
 [account_invoice_partner](account_invoice_partner/) | 14.0.1.0.0 |  | Replace the partner by an invoice contact if found
 [account_invoice_payment_retention](account_invoice_payment_retention/) | 14.0.1.2.0 |  | Account Invoice Payment Retention
 [account_invoice_pricelist](account_invoice_pricelist/) | 14.0.1.1.0 |  | Add partner pricelist on invoices
@@ -485,6 +486,7 @@ addon | version | maintainers | summary
 [account_invoice_refund_reason_skip_anglo_saxon](account_invoice_refund_reason_skip_anglo_saxon/) | 14.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Account Invoice Refund Reason.
 [account_invoice_refund_reinvoice](account_invoice_refund_reinvoice/) | 14.0.1.0.0 |  | Allow to Reinvoice a Refund
 [account_invoice_restrict_linked_so](account_invoice_restrict_linked_so/) | 14.0.1.0.1 |  | Restricts editing the Product, Quantity and Unit Price columns for invoice lines that originated in Sales Orders.
+[account_invoice_sale_origin_link](account_invoice_sale_origin_link/) | 14.0.1.0.0 | <a href='https://github.com/GuillemCForgeFlow'><img src='https://github.com/GuillemCForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='GuillemCForgeFlow'/></a> | Add link to the Sale Order in invoice source document.
 [account_invoice_search_by_reference](account_invoice_search_by_reference/) | 14.0.1.0.0 |  | Account invoice search by reference
 [account_invoice_section_picking](account_invoice_section_picking/) | 14.0.1.0.0 |  | Extension of Acccount Invoice Section Sale Order to allow grouping of invoice lines according to delivery picking.
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 14.0.1.3.2 |  | For invoices targetting multiple sale order addsections with sale order name.
@@ -4802,6 +4804,7 @@ addon | version | maintainers | summary
 [l10n_it_rea](l10n_it_rea/) | 14.0.1.0.4 |  | Gestisce i campi del Repertorio Economico Amministrativo
 [l10n_it_reverse_charge](l10n_it_reverse_charge/) | 14.0.1.2.12 |  | Inversione contabile
 [l10n_it_reverse_charge_start_end_dates](l10n_it_reverse_charge_start_end_dates/) | 14.0.1.0.0 |  | Gestione delle date di competenza per le autofatture in reverse charge
+[l10n_it_riba_queued](l10n_it_riba_queued/) | 14.0.1.1.0 |  | Pagare righe RiBa in modo asincrono.
 [l10n_it_riba_sale_commission](l10n_it_riba_sale_commission/) | 14.0.1.1.2 | <a href='https://github.com/odooNextev'><img src='https://github.com/odooNextev.png' width='32' height='32' style='border-radius:50%;' alt='odooNextev'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Modulo ponte tra provvigioni agenti e RiBa
 [l10n_it_ricevute_bancarie](l10n_it_ricevute_bancarie/) | 14.0.1.20.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 14.0.1.0.0 | <a href='https://github.com/SirAionTech'><img src='https://github.com/SirAionTech.png' width='32' height='32' style='border-radius:50%;' alt='SirAionTech'/></a> | Usare gli standard CBI per SEPA Credit Transfer
@@ -6228,7 +6231,7 @@ addon | version | maintainers | summary
 [stock_quant_package_product_packaging](stock_quant_package_product_packaging/) | 14.0.1.1.0 |  | Use product packagings on packages
 [stock_restrict_by_planned_consumed_date](stock_restrict_by_planned_consumed_date/) | 14.0.1.0.0 |  | Stock restrict by planned consumed date
 [stock_restrict_expiration_date](stock_restrict_expiration_date/) | 14.0.1.3.1 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Add concept of restrict lot on stock move based on specific expiration date
-[stock_restrict_lot](stock_restrict_lot/) | 14.0.1.4.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
+[stock_restrict_lot](stock_restrict_lot/) | 14.0.1.4.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 [stock_restrict_lot_update](stock_restrict_lot_update/) | 14.0.1.0.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Only apply lot restriction on products in a domain
 [stock_return_request](stock_return_request/) | 14.0.1.0.3 |  | Stock Return Request
 [stock_scheduler_assignation_horizon](stock_scheduler_assignation_horizon/) | 14.0.1.1.0 |  | Set a timeframe limit to the delivery scheduler
@@ -6482,6 +6485,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_line_sale_line_position](delivery_line_sale_line_position/) | 14.0.1.0.0 |  | Adds the sale line position to the delivery report lines
+[printing_auto_stock_picking](printing_auto_stock_picking/) | 14.0.1.1.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Printing Auto Stock Picking
 [stock_account_quantity_history_location](stock_account_quantity_history_location/) | 14.0.1.0.1 |  | Glue module between Stock Account and Stock Quantity History Location modules
 [stock_account_valuation_report](stock_account_valuation_report/) | 14.0.1.0.1 |  | Improves logic of the Inventory Valuation Report
 [stock_average_daily_sale](stock_average_daily_sale/) | 14.0.1.0.2 |  | Allows to gather delivered products average on daily basis

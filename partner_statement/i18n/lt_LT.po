@@ -19,19 +19,6 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement between %s and %s in %s"
-msgstr "%sSkolų suderinimo aktas tarp %s ir %s %s"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
-msgid "%sStatement up to %s in %s"
-msgstr "%sSkolų suderinimo aktas iki %s %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "1 - 30 Days"
@@ -273,9 +260,10 @@ msgid "Aging Method"
 msgstr "Skolų intervalai"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-msgid "Aging Report at"
-msgstr "Skolų intervalai datai"
+#: code:addons/partner_statement/report/report_statement_common.py:0
+#, python-format
+msgid "Aging Report at %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -388,17 +376,6 @@ msgid "Description"
 msgstr "Aprašymas"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Detailed"
-msgstr "Detalus"
-
-#. module: partner_statement
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#, python-format
-msgid "Detailed %sStatement between %s and %s in %s"
-msgstr "Detalus %s skolų suderinimo aktas tarp %s ir %s %s"
-
-#. module: partner_statement
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
@@ -420,6 +397,22 @@ msgstr "Detalaus skolų suderinimo akto XLSX ataskaita"
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_xlsx
 msgid "Detailed Activity Statement XLSX"
 msgstr "Detalaus skolų suderinimo akto XLSX"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -472,6 +465,12 @@ msgstr "Aktyvuoti Neapmokėtų skolų aktą"
 #, python-format
 msgid "Ending Balance"
 msgstr "Balansas periodo pabaigoje"
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -665,6 +664,12 @@ msgid "Please set defaults under Activity Statements."
 msgstr "Prašome nustatyti numatytas reikšmes Skolų suderinimo akto skiltyje."
 
 #. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__detailed_activity_statement_wizard__account_type__receivable
 #: model:ir.model.fields.selection,name:partner_statement.selection__outstanding_statement_wizard__account_type__receivable
@@ -737,9 +742,10 @@ msgid "Statement Reports Common Wizard"
 msgstr "Bendrų suderinimo ataskaitų vedlys"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Statement between"
-msgstr "Suderinimo aktas tarp"
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
@@ -773,17 +779,36 @@ msgid "Statement to:"
 msgstr "Suderinimo aktas iki:"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "Supplier"
-msgstr "Tiekėjo"
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
-#: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
-msgid "Supplier "
-msgstr "Tiekėjo "
+msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/detailed_activity_statement.py:0
+#, python-format
+msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/activity_statement.py:0
+#, python-format
+msgid ""
+"Supplier Statement between %(starting_date)s and %(ending_date)s in "
+"%(currency)s"
+msgstr ""
+
+#. module: partner_statement
+#: code:addons/partner_statement/report/outstanding_statement.py:0
+#, python-format
+msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
+msgstr ""
 
 #. module: partner_statement
 #: code:addons/partner_statement/report/report_statement_common.py:0
@@ -815,23 +840,43 @@ msgid "View"
 msgstr "Peržiūrėti"
 
 #. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-msgid "and"
-msgstr "ir"
-
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#: model_terms:ir.ui.view,arch_db:partner_statement.aging_buckets
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "in"
-msgstr "valiutai"
-
-#. module: partner_statement
 #: model_terms:ir.ui.view,arch_db:partner_statement.statement_common_view
 msgid "or"
 msgstr "arba"
 
-#. module: partner_statement
-#: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-msgid "up to"
-msgstr "iki"
+#, python-format
+#~ msgid "%sStatement between %s and %s in %s"
+#~ msgstr "%sSkolų suderinimo aktas tarp %s ir %s %s"
+
+#, python-format
+#~ msgid "%sStatement up to %s in %s"
+#~ msgstr "%sSkolų suderinimo aktas iki %s %s"
+
+#~ msgid "Aging Report at"
+#~ msgstr "Skolų intervalai datai"
+
+#~ msgid "Detailed"
+#~ msgstr "Detalus"
+
+#, python-format
+#~ msgid "Detailed %sStatement between %s and %s in %s"
+#~ msgstr "Detalus %s skolų suderinimo aktas tarp %s ir %s %s"
+
+#~ msgid "Statement between"
+#~ msgstr "Suderinimo aktas tarp"
+
+#~ msgid "Supplier"
+#~ msgstr "Tiekėjo"
+
+#, python-format
+#~ msgid "Supplier "
+#~ msgstr "Tiekėjo "
+
+#~ msgid "and"
+#~ msgstr "ir"
+
+#~ msgid "in"
+#~ msgstr "valiutai"
+
+#~ msgid "up to"
+#~ msgstr "iki"
