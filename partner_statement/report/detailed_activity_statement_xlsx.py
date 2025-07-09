@@ -40,15 +40,14 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         currency_data = partner_data.get("currencies", {}).get(currency.id)
         account_type = data.get("account_type", False)
         row_pos += 2
-        statement_header = _(
-            "Detailed %(payable)sStatement between %(start)s and %(end)s"
-            " in %(currency)s"
-        ) % {
-            "payable": account_type == "liability_payable" and _("Supplier ") or "",
-            "start": partner_data.get("start"),
-            "end": partner_data.get("end"),
-            "currency": currency.display_name,
-        }
+        statement_header = data["get_title"](
+            partner,
+            is_detailed=True,
+            account_type=account_type,
+            starting_date=partner_data.get("start"),
+            ending_date=partner_data.get("end"),
+            currency=currency.display_name,
+        )
         sheet.merge_range(
             row_pos,
             0,
@@ -221,13 +220,14 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         currency_data = partner_data.get("currencies", {}).get(currency.id)
         account_type = data.get("account_type", False)
         row_pos += 2
-        statement_header = _(
-            "%(payable)sStatement up to %(prior_day)s in %(currency)s"
-        ) % {
-            "payable": account_type == "payable" and _("Supplier ") or "",
-            "prior_day": partner_data.get("prior_day"),
-            "currency": currency.display_name,
-        }
+        statement_header = data["get_title"](
+            partner,
+            is_detailed=False,
+            account_type=account_type,
+            starting_date=partner_data.get("start"),
+            ending_date=partner_data.get("end"),
+            currency=currency.display_name,
+        )
         sheet.merge_range(
             row_pos,
             0,
@@ -328,11 +328,14 @@ class DetailedActivityStatementXslx(models.AbstractModel):
         currency_data = partner_data.get("currencies", {}).get(currency.id)
         account_type = data.get("account_type", False)
         row_pos += 2
-        statement_header = _("%(payable)sStatement up to %(end)s in %(currency)s") % {
-            "payable": account_type == "payable" and _("Supplier ") or "",
-            "end": partner_data.get("end"),
-            "currency": currency.display_name,
-        }
+        statement_header = data["get_title"](
+            partner,
+            is_detailed=False,
+            account_type=account_type,
+            starting_date=partner_data.get("start"),
+            ending_date=partner_data.get("end"),
+            currency=currency.display_name,
+        )
         sheet.merge_range(
             row_pos,
             0,
