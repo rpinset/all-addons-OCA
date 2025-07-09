@@ -344,11 +344,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 8dfa166dbf3f8b1b964ec01d3648a6edee6142f0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jun 30 20:51:38 2025 +0000
+commit 392f89676d689b609abc6e3de154fb8a3c29cc38
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jul 8 12:14:46 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_stock_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_stock_secondary_unit/
 
 
 ## crm
@@ -913,9 +918,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e0ae4926f46dffbb769acba98fbf64cd28791182
+commit 2e038015098311c0d5364e2bd81a636ed10f5725
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 27 19:24:14 2025 +0000
+Date:   Tue Jul 8 08:39:59 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1003,11 +1008,16 @@ Date:   Sun Feb 2 19:52:24 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 3d15701dae1cf38b28714dfac18dba83f685b35c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 27 08:50:18 2025 +0000
+commit b28b1d10417987e5becb88780d1170c5aa4f5d39
+Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
+Date:   Tue Jul 8 07:07:37 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: delivery-carrier-15.0/delivery-carrier-15.0-partner_delivery_zone
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-15-0/delivery-carrier-15-0-partner_delivery_zone/ca/
 
 
 ## stock-logistics-barcode
@@ -1039,20 +1049,30 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 86b18cdd5218191cafe25fddedc4374d85080e6d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:52:14 2025 +0000
+commit ddd403eaef561276b22d918de28f33ebc2e4eb71
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jul 7 06:37:58 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_secondary_unit
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_secondary_unit/
 
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 8cabdddc6d5343f7ccd83a3405a7ebef59efa0fc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:49:48 2025 +0000
+commit 00dfb1167702017cd9913d4b55bf5425dbf273d3
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Tue Jul 8 09:38:10 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 90.9% (20 of 22 strings)
+    
+    Translation: stock-logistics-reporting-15.0/stock-logistics-reporting-15.0-stock_picking_report_valued
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-15-0/stock-logistics-reporting-15-0-stock_picking_report_valued/ca/
 
 
 ## rma
@@ -1130,11 +1150,16 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 10046691b7ea6fa893f4275b28c047896a4c4c4f
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:30:56 2025 +0000
+commit b6fc8f0958ab55e0d7a86f29408c5ca4036f5a6d
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Jul 9 19:24:48 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_reception_status
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_reception_status/
 
 
 ## purchase-reporting
@@ -1148,16 +1173,11 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 154f3e8c6888811c93a115518f6b97856bb5257f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jun 4 07:31:10 2025 +0000
+commit d8cccc41b44eeea8777f4130b18e884ead6d9cd5
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jul 6 22:52:57 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (14 of 14 strings)
-    
-    Translation: product-attribute-15.0/product-attribute-15.0-product_multi_image
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_multi_image/it/
+    [BOT] post-merge updates
 
 
 ## product-kitting
