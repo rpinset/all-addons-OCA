@@ -89,7 +89,12 @@ class AccountBankStatementLine(models.Model):
         store=False,
         default=False,
         prefetch=False,
-        domain="[('rule_type', '=', 'writeoff_button'), ('company_id', '=', company_id)]",
+        domain="""
+        [('rule_type', '=', 'writeoff_button'),
+        ('company_id', '=', company_id),
+        '|',
+        ('match_journal_ids', '=', False), ('match_journal_ids', '=', journal_id)]
+        """,
     )
     manual_name = fields.Char(store=False, default=False, prefetch=False)
     manual_amount = fields.Monetary(

@@ -75,3 +75,34 @@ class TestPortalInternalAccess(TestAccessRights):
         self.task.flush_model()
         with self.assertRaises(AccessError):
             self.task.with_user(self.portal).unlink()
+
+    def test_internal_user_project_no_read_without_subscription(self):
+        """Internal user cannot read portal_internal project without subscription"""
+        with self.assertRaises(AccessError):
+            _ = self.project_pigs.with_user(self.user).name
+
+    def test_internal_user_project_read_with_subscription(self):
+        """Internal user can read portal_internal project after subscribing"""
+        self.project_pigs.message_subscribe([self.user.partner_id.id])
+        self.env["project.project"].flush_model()
+        _ = self.project_pigs.with_user(self.user).name
+
+    def test_internal_user_task_no_read_without_subscription(self):
+        """Internal user cannot read tasks of portal_internal project without subscription"""
+        with self.assertRaises(AccessError):
+            _ = self.task.with_user(self.user).name
+
+    def test_internal_user_task_read_with_subscription(self):
+        """Internal user can read tasks of portal_internal project after subscribing"""
+        self.project_pigs.message_subscribe([self.user.partner_id.id])
+        self.task.flush_model()
+        _ = self.task.with_user(self.user).name
+
+    def test_internal_user_task_assigned_user_can_read(self):
+        """Internal user can read task if assigned in user_ids"""
+        # Unsubscribe to ensure only assignment grants access
+        self.project_pigs.message_unsubscribe([self.user.partner_id.id])
+        # Assign user to task
+        self.task.write({"user_ids": [(4, self.user.id)]})
+        self.task.flush_model()
+        _ = self.task.with_user(self.user).name

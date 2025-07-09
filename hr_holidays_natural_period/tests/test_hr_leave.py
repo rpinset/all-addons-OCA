@@ -84,6 +84,7 @@ class TestHrLeave(BaseCommon):
 
     @users("test-user")
     def test_hr_leave_natural_day_02(self):
+        self.leave_type.requires_allocation = "no"
         attendances = [(0, 16, 21), (1, 9, 14), (2, 9, 14), (3, 9, 14), (4, 9, 14)]
         r_sudo = self.env["resource.calendar"].sudo()
         calendar = r_sudo.create(

@@ -5,9 +5,7 @@
     <template id="outstanding_balance">
         <p>
             <span
-                t-out="'' if  account_type == 'asset_receivable' else 'Supplier '"
-            /><span t-out="title_name" /> up to <span t-out="ending_date" /> in <span
-                t-out="display_currency.name"
+                t-out="get_title(o, account_type=account_type, line_type=line_type, ending_date=ending_date, currency=display_currency.name)"
             />
         </p>
         <table class="table table-sm table-statement">
@@ -135,7 +133,6 @@
                         <t t-set="display_currency" t-value="Currencies[currency[0]]" />
                         <t t-set="currency" t-value="currency[1]" />
                         <t t-set="line_type" t-value="'lines'" />
-                        <t t-set="title_name" t-value="'Statement'" />
                         <t t-set="ending_amount" t-value="currency['amount_due']" />
                         <t t-set="ending_date" t-value="d['end']" />
                         <t
