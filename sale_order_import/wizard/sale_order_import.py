@@ -45,7 +45,8 @@ class SaleOrderImport(models.TransientModel):
         readonly=True,
     )
     price_source = fields.Selection(
-        [("pricelist", "Pricelist"), ("order", "Customer Order")],
+        selection=[("pricelist", "Pricelist"), ("order", "Customer Order")],
+        default="pricelist",
         string="Apply Prices From",
     )
     # for state = update
@@ -476,7 +477,7 @@ class SaleOrderImport(models.TransientModel):
                 "company_id": company_id,
             }
         )
-
+        assert price_source, "price_source must be defined"
         if price_source == "order":
             if "price_unit" not in import_line:
                 raise UserError(
@@ -492,6 +493,7 @@ class SaleOrderImport(models.TransientModel):
             # but it is not enough: we also need to play _onchange_discount()
             # to have the right discount for pricelist
             vals["order_id"] = order
+            vals = solo.play_onchanges(vals, ["product_id"])
             vals.pop("order_id")
 
         # Handle additional fields dynamically if available.
