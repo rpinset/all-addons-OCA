@@ -70,7 +70,7 @@ class DNCustomerPortal(CustomerPortal):
         # make pager
         pager = portal_pager(
             url="/my/delivery-notes",
-            url_args={"sortby": sortby, "search_in": search_in, "search": "search"},
+            url_args={"sortby": sortby, "search_in": search_in, "search": search},
             total=dn_count,
             page=page,
             step=self._items_per_page,

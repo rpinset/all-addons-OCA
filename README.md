@@ -107,9 +107,9 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 66e2ec9bde87609005372dabda32d25daf0b7095
+commit 26b2ab80b8d205eef9fbf06d0e3d284c40e2ca62
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 7 11:11:44 2025 +0000
+Date:   Fri Jul 11 06:16:59 2025 +0000
 
     [BOT] post-merge updates
 
@@ -371,16 +371,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 3c275c3a5ed0064e60c96d9eed50c97c68b87567
+commit 6adf879190108327eacf299157d5f67237a17811
 Author: Betül Öğmen <betulo@eska.biz>
-Date:   Thu Jul 3 13:39:23 2025 +0000
+Date:   Fri Jul 11 06:55:17 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 92.3% (12 of 13 strings)
+    Currently translated at 92.8% (13 of 14 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_line_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_line_sequence/tr/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_discount_display_amount
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_discount_display_amount/tr/
 
 
 ## crm
@@ -853,9 +853,9 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 9ce0ad7f4d13b0d92fab700ee7b6fce956098134
+commit 8ae3eab768b0436a0ac0d43a2192114acd109b4b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 8 14:54:57 2025 +0000
+Date:   Fri Jul 11 14:29:11 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1230,16 +1230,16 @@ Date:   Mon Jun 9 12:08:09 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 54d50a591c3049ef688c7147dae029289c60eca5
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 14:53:32 2025 +0000
+commit fc0fd95eba824fabba7362a02788d38b6f73cbd3
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Jul 10 08:05:32 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Update translation files
     
-    Currently translated at 100.0% (56 of 56 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_supplierinfo_for_customer
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_supplierinfo_for_customer/tr/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_assortment
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_assortment/
 
 
 ## product-kitting
@@ -1394,11 +1394,11 @@ Date:   Sat Jun 14 13:47:21 2025 +0200
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit feea0f2bae6e5849f1a2d26e200454d90f7a4fbe
+commit a50305e113a66f0c061dafb59335b12ac1b026fb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:33:25 2025 +0000
+Date:   Fri Jul 11 14:45:33 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## webkit-tools

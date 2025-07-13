@@ -552,3 +552,28 @@ class TestDeclarationOfIntent(AccountTestInvoicingCommon):
         new_post_used_amount3 = self.declaration3.used_amount
         self.assertAlmostEqual(new_post_used_amount2, 900.0, 2)
         self.assertAlmostEqual(new_post_used_amount3, 0.0, 2)
+
+    def test_fallback(self):
+        """If multiple declarations are available for an invoice,
+        they are used sequentially."""
+        # Arrange
+        tax = self.tax1
+        invoice = self.init_invoice(
+            "out_invoice",
+            amounts=[1100],
+            invoice_date=self.today_date,
+            partner=self.partner2,
+            taxes=self.tax1,
+        )
+        declarations = invoice.get_declarations()
+        # pre-condition
+        self.assertGreater(len(declarations), 1)
+        self.assertTrue(all([tax in d.taxes_ids for d in declarations]))
+        self.assertTrue(all([d.available_amount == 1000 for d in declarations]))
+
+        # Act
+        invoice.action_post()
+
+        # Assert
+        self.assertEqual(declarations[0].available_amount, 0)
+        self.assertEqual(declarations[1].available_amount, 900)
