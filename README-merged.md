@@ -1002,7 +1002,7 @@ addon | version | maintainers | summary
 [account_statement_import_move_line](account_statement_import_move_line/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
 [account_statement_import_online](account_statement_import_online/) | 17.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
-[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.2 |  | Online Bank Statements: GoCardless
+[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.3 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_stripe](account_statement_import_online_stripe/) | 17.0.1.0.0 | <a href='https://github.com/juancarlosonate-tecnativa'><img src='https://github.com/juancarlosonate-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juancarlosonate-tecnativa'/></a> | Online bank statements for Stripe
 [account_statement_import_paypal](account_statement_import_paypal/) | 17.0.1.0.0 |  | Import PayPal CSV files as Bank Statements in Odoo
@@ -2041,6 +2041,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[coupon_chatter](coupon_chatter/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Register messages and activities on the sale coupon records
 [loyalty_card_fixed_expiration_date](loyalty_card_fixed_expiration_date/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Set a fixed expiration date for loyalty cards
 
 [//]: # (end addons)
@@ -4849,7 +4850,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod190](l10n_es_aeat_mod190/) | 17.0.1.2.1 |  | AEAT modelo 190
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 17.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
 [l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 17.0.1.0.1 |  | AEAT modelo 296
-[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.10.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
+[l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 17.0.1.10.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 17.0.1.0.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 17.0.3.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.4.2 |  | AEAT modelo 347
@@ -4881,7 +4882,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book](l10n_es_vat_book/) | 17.0.1.3.2 |  | Libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 17.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_book_pos](l10n_es_vat_book_pos/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Libro de IVA Adaptado al Punto de Venta
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.0 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 17.0.3.1.1 |  | Prorrata de IVA para la localización española
 [payment_redsys](payment_redsys/) | 17.0.1.0.1 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -7554,6 +7555,7 @@ addon | version | maintainers | summary
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
 [date_range](date_range/) | 17.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [date_range_account](date_range_account/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
+[mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked
 [multi_step_wizard](multi_step_wizard/) | 17.0.1.0.0 |  | Multi-Steps Wizards
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges
 [server_action_mass_edit](server_action_mass_edit/) | 17.0.1.0.2 |  | Mass Editing
@@ -8429,7 +8431,7 @@ addon | version | maintainers | summary
 [web_widget_product_label_section_and_note](web_widget_product_label_section_and_note/) | 17.0.1.0.0 |  | unify the product and name into a single column
 [web_widget_section_and_note_text_scrollable](web_widget_section_and_note_text_scrollable/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Make the text field of Section and Note widget scrollable
 [web_widget_url_advanced](web_widget_url_advanced/) | 17.0.1.0.0 |  | This module extends URL widget for displaying anchors with custom labels.
-[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.1.1.2 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Show list fields as a matrix
+[web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 17.0.2.0.0 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Show list fields as a matrix
 
 [//]: # (end addons)
 
@@ -8478,7 +8480,7 @@ addon | version | maintainers | summary
 [website_breadcrumb](website_breadcrumb/) | 17.0.1.0.0 |  | Let you have breadcrumbs in website pages
 [website_conditional_visibility_user_group](website_conditional_visibility_user_group/) | 17.0.1.0.0 |  | Only internal users will see the blocks you add this condition to
 [website_cookiebot](website_cookiebot/) | 17.0.1.0.1 |  | Ask for cookies consent connecting with Cookiebot
-[website_cookiefirst](website_cookiefirst/) | 17.0.2.0.0 |  | Cookiefirst integration
+[website_cookiefirst](website_cookiefirst/) | 17.0.2.0.1 |  | Cookiefirst integration
 [website_crm_quick_answer](website_crm_quick_answer/) | 17.0.1.0.0 |  | Add an automatic answer for contacts asking for info
 [website_form_require_legal](website_form_require_legal/) | 17.0.1.0.0 |  | Add possibility to require confirm legal terms.
 [website_forum_subscription](website_forum_subscription/) | 17.0.1.0.0 |  | Adds a button to allow subscription from the website

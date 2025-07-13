@@ -178,11 +178,11 @@ Date:   Tue Jul 8 11:34:54 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 702462032b1d8c138b28be9d47feb15efda8c1fe
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Mon Jul 7 15:18:57 2025 +0000
+commit 268173453a28eae6c2ed0f6af62ea527a3958a81
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Jul 13 09:17:06 2025 +0000
 
-    Added translation using Weblate (Turkish)
+    [BOT] post-merge updates
 
 
 ## account-payment
@@ -322,11 +322,11 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 23a99b9910024c6fa7e2fe8e2fff8d1b3548e733
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jul 6 10:02:59 2025 +0000
+commit b4a08a056220becd048decc6e3958ea8e62f7c6a
+Author: Betül Öğmen <betulo@eska.biz>
+Date:   Fri Jul 11 10:35:15 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Turkish)
 
 
 ## crm
@@ -363,11 +363,11 @@ Date:   Sun Feb 9 18:28:36 2025 +0000
 
 ## sale-promotion
 From [https://github.com/OCA/sale-promotion.git](https://github.com/OCA/sale-promotion.git)
-commit f978fb45c4ec697d3df5fd1e036231d78f58d1d8
+commit 2b0641276d48035750e1c5555c56cd20fc2a48d9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:36:44 2025 +0000
+Date:   Thu Jul 10 06:26:57 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## sale-reporting
@@ -523,11 +523,11 @@ Date:   Mon Jun 30 09:36:54 2025 +0000
 
 ## hr
 From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
-commit 1877a1d373e42900e268381a91d4dbb602da1ae9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 9 14:09:13 2025 +0000
+commit 2b72aff7b59681ffeb2a55c048b335c7a5bfe543
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jul 11 20:20:31 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## hr-attendance
@@ -906,9 +906,9 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 02588d6a0ff61350f56ce3afb9ce9a91783df9de
+commit 8d239b12355197e51ceb70d98a169d2b2b45ef10
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 8 09:25:17 2025 +0000
+Date:   Sat Jul 12 07:40:36 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1401,9 +1401,9 @@ Date:   Wed Jun 4 03:42:57 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit a079feaecd5a184af3b5f1d956571dd62bf46ebb
+commit 5e59939b5101af2af79b775acefe87374769c8e1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 2 00:54:53 2025 +0000
+Date:   Thu Jul 10 10:05:50 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1583,23 +1583,23 @@ Date:   Sun Feb 9 19:15:40 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 8013ec01a18c19327531c6c4a9f9f2672e0b0fc8
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Mon Jul 7 14:24:05 2025 +0000
+commit 717d3eae1e79cf6b9f5d78e8c8b5bd60e0346e1d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jul 11 20:08:30 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (19 of 19 strings)
+    Currently translated at 100.0% (7 of 7 strings)
     
-    Translation: web-17.0/web-17.0-web_notify
-    Translate-URL: https://translation.odoo-community.org/projects/web-17-0/web-17-0-web_notify/tr/
+    Translation: web-17.0/web-17.0-web_widget_x2many_2d_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/web-17-0/web-17-0-web_widget_x2many_2d_matrix/it/
 
 
 ## website
 From [https://github.com/OCA/website.git](https://github.com/OCA/website.git)
-commit 39f3f4224819b976a086fe055a3d54209e3243b5
+commit bab677505d6e8e50b52203cc18a9e4029edbeed5
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 13:45:11 2025 +0000
+Date:   Thu Jul 10 13:17:07 2025 +0000
 
     [BOT] post-merge updates
 
