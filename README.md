@@ -811,11 +811,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit a30ffe962f4abe879554cd532319c3f5e169aff5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:04:20 2025 +0000
+commit b0b36feb6e0948c87e9fd3044d5d472c9e56dc7e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Jul 11 19:29:52 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (62 of 62 strings)
+    
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note_base
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note_base/it/
 
 
 ## l10n-japan

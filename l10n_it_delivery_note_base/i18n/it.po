@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 08:40+0000\n"
-"PO-Revision-Date: 2024-01-17 09:34+0000\n"
+"PO-Revision-Date: 2025-07-11 19:54+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_delivery_note_base
 #: model:ir.model.fields,field_description:l10n_it_delivery_note_base.field_stock_delivery_note_type__active
@@ -34,12 +34,12 @@ msgstr "Prossimo numero attuale"
 #. module: l10n_it_delivery_note_base
 #: model:ir.model.fields,field_description:l10n_it_delivery_note_base.field_stock_picking_goods_appearance__name
 msgid "Appearance name"
-msgstr "Aspetto del nome"
+msgstr "Nome dell'aspetto"
 
 #. module: l10n_it_delivery_note_base
 #: model:ir.model,name:l10n_it_delivery_note_base.model_stock_picking_goods_appearance
 msgid "Appearance of Goods"
-msgstr "Aspetto dei Beni"
+msgstr "Aspetto dei beni"
 
 #. module: l10n_it_delivery_note_base
 #: model:ir.model.fields,field_description:l10n_it_delivery_note_base.field_stock_delivery_note_type__default_goods_appearance_id
