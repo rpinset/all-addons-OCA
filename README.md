@@ -458,11 +458,16 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit d61549d59765d04f7691cc7e0bdf10a1191fd236
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 3 10:41:16 2025 +0000
+commit 9737844995d73a3cafb73fc8341f068b624dd609
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Jul 11 06:32:36 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: e-commerce-15.0/e-commerce-15.0-website_sale_product_matrix
+    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_product_matrix/ca/
 
 
 ## edi
