@@ -8,3 +8,6 @@
 * `Alusage <https://nicolas.alusage.fr>`__:
 
   * Nicolas JEUDY <https://github.com/njeudy>
+* `ArPol <https://arpol.fr>`__:
+
+  * Armand POLMARD <https://github.com/arpol-dev>

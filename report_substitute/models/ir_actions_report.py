@@ -60,8 +60,12 @@ class IrActionReport(models.Model):
     def _render_qweb_pdf(self, report_ref, res_ids=None, data=None):
         report = self._get_report(report_ref)
         substitution_report = report.get_substitution_report(res_ids)
+        if substitution_report.filtered(lambda r: r.report_type == "qweb-pdf"):
+            return super(IrActionReport, self)._render_qweb_pdf(
+                substitution_report, res_ids=res_ids, data=data
+            )
         return super(IrActionReport, self)._render_qweb_pdf(
-            substitution_report, res_ids=res_ids, data=data
+            report_ref, res_ids=res_ids, data=data
         )
 
     def report_action(self, docids, data=None, config=True):

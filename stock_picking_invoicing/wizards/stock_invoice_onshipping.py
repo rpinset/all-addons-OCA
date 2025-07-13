@@ -474,7 +474,7 @@ class StockInvoiceOnshipping(models.TransientModel):
         :param pickings: stock.picking recordset
         :return: stock.picking recordset
         """
-        return pickings._set_as_invoiced()
+        return pickings.set_as_invoiced()
 
     def ungroup_moves(self, grouped_moves_list):
         """Ungroup your moves, split them again, grouping by

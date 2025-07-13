@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-08 13:58+0000\n"
-"PO-Revision-Date: 2023-11-12 17:39+0000\n"
+"PO-Revision-Date: 2025-07-11 20:07+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_delivery_note_base
 #: model:ir.model.fields,field_description:l10n_it_delivery_note_base.field_stock_delivery_note_type__active
@@ -78,7 +78,7 @@ msgstr "Inoltro trasporto"
 #. module: l10n_it_delivery_note_base
 #: model:stock.picking.transport.condition,name:l10n_it_delivery_note_base.transport_condition_PF
 msgid "Carriage paid"
-msgstr "Trasporto pagato"
+msgstr "Porto franco"
 
 #. module: l10n_it_delivery_note_base
 #: model:stock.picking.transport.method,name:l10n_it_delivery_note_base.transport_method_COR
@@ -88,7 +88,7 @@ msgstr "Vettore"
 #. module: l10n_it_delivery_note_base
 #: model:stock.picking.transport.condition,name:l10n_it_delivery_note_base.transport_condition_PAF
 msgid "Charged in invoice"
-msgstr "Caricato in fattura"
+msgstr "Con addebito in fattura"
 
 #. module: l10n_it_delivery_note_base
 #: model:ir.model,name:l10n_it_delivery_note_base.model_res_company

@@ -210,8 +210,12 @@ Valid dictionary to overwrite template lines:
     def _prepare_move_line(self, line, amount):
         date_maturity = False
         if line.payment_term_id:
-            pterm_list = line.payment_term_id.compute(value=1, date_ref=self.date)
-            date_maturity = max(line[0] for line in pterm_list)
+            date_maturity = max(
+                [
+                    line._get_due_date(self.date)
+                    for line in line.payment_term_id.line_ids
+                ]
+            )
         debit = line.move_line_type == "dr"
         values = {
             "name": line.name,

@@ -283,7 +283,7 @@ addon | version | maintainers | summary
 [account_move_name_sequence](account_move_name_sequence/) | 16.0.1.1.12 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Generate journal entry number from sequence
 [account_move_post_date_user](account_move_post_date_user/) | 16.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Trace journal entry posting date and user.
 [account_move_print](account_move_print/) | 16.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds the option to print Journal Entries
-[account_move_template](account_move_template/) | 16.0.1.0.2 |  | Templates for recurring Journal Entries
+[account_move_template](account_move_template/) | 16.0.1.0.3 |  | Templates for recurring Journal Entries
 [account_move_transfer_partner](account_move_transfer_partner/) | 16.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Automation to translate amount due from many partners to one partner
 [account_netting](account_netting/) | 16.0.1.0.1 |  | Compensate AR/AP accounts from the same partner
 [account_partner_required](account_partner_required/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds an option 'partner policy' on accounts
@@ -531,7 +531,7 @@ addon | version | maintainers | summary
 [sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.1 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 16.0.1.0.1 |  | Add timesheet details in invoice line
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
-[stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.2 |  | Stock Picking Invoicing
+[stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.3 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 16.0.1.0.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
 [//]: # (end addons)
@@ -1106,8 +1106,9 @@ addon | version | maintainers | summary
 [account_statement_import_file](account_statement_import_file/) | 16.0.1.1.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Import Statement Files
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_ofx](account_statement_import_ofx/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
+[account_statement_import_ofx_by_acctid](account_statement_import_ofx_by_acctid/) | 16.0.1.0.0 |  | Import OFX Bank Statement by ACCTID
 [account_statement_import_online](account_statement_import_online/) | 16.0.1.4.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
-[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.7 |  | Online Bank Statements: GoCardless
+[account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.8 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ofx](account_statement_import_online_ofx/) | 16.0.1.0.0 |  | Online bank statements for OFX
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.2 |  | Online Bank Statements: MyPonto.com
@@ -2774,7 +2775,7 @@ addon | version | maintainers | summary
 [base_ubl](base_ubl/) | 16.0.1.1.2 |  | Base module for Universal Business Language (UBL)
 [base_ubl_payment](base_ubl_payment/) | 16.0.1.0.1 |  | Payment-related code for Universal Business Language (UBL)
 [base_wamas_ubl](base_wamas_ubl/) | 16.0.1.17.1 |  | Base module to aggregate WAMAS - UBL features.
-[despatch_advice_import](despatch_advice_import/) | 16.0.1.2.0 |  | Despatch Advice import
+[despatch_advice_import](despatch_advice_import/) | 16.0.1.2.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Despatch Advice import
 [despatch_advice_import_ubl](despatch_advice_import_ubl/) | 16.0.1.1.0 |  | Import Despatch Advice files
 [pdf_helper](pdf_helper/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Provides helpers to work w/ PDFs
 [sale_order_import](sale_order_import/) | 16.0.1.3.1 |  | Import RFQ or sale orders from files
@@ -5370,11 +5371,11 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 16.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 16.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.7.0 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.7.1 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 16.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.1.2.0 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.1.2.1 |  | Prorrata de IVA para la localización española
 [payment_redsys](payment_redsys/) | 16.0.1.0.2 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -8029,7 +8030,7 @@ addon | version | maintainers | summary
 [report_qweb_pdf_cover](report_qweb_pdf_cover/) | 16.0.1.0.0 |  | Add front and back covers to your QWeb PDF reports
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 16.0.1.0.1 |  | Add watermarks to your QWEB PDF reports
 [report_qweb_signer](report_qweb_signer/) | 16.0.1.0.3 |  | Sign Qweb PDFs usign a PKCS#12 certificate
-[report_substitute](report_substitute/) | 16.0.1.1.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module allows to create substitution rules for report actions.
+[report_substitute](report_substitute/) | 16.0.1.1.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module allows to create substitution rules for report actions.
 [report_text_format_option](report_text_format_option/) | 16.0.1.0.0 |  | Report Text Format Option
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 16.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 16.0.2.0.2 |  | Base module to create xlsx report
