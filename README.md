@@ -74,16 +74,11 @@ Date:   Mon Jun 30 11:09:44 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit a7e80716dfcbae9e831a291838892cb96fb67689
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 1 15:37:54 2025 +0000
+commit de2078ec50cbd8a74014faf670d654e7617df7a9
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jul 17 14:47:40 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_tax_balance/
+    [BOT] post-merge updates
 
 
 ## account-invoice-reporting
@@ -115,16 +110,11 @@ Date:   Wed Jun 4 02:34:14 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit a9dfdedae1fbb3a092460ebb6e39ebe9ed5f659b
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jun 6 13:09:05 2025 +0000
+commit 8e8bdf15310dcbec1854121e49299b1a0711a977
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Jul 16 14:14:32 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: operating-unit-15.0/operating-unit-15.0-operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-15-0/operating-unit-15-0-operating_unit/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -161,11 +151,11 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 529e3a33908b1ca80755e7b795c113bd45576bce
+commit 6916c2bafcd9d02cd45d3b24712b50398ea10060
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 5 02:44:32 2025 +0000
+Date:   Mon Jul 14 10:20:49 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -412,11 +402,11 @@ Date:   Wed Jun 4 02:41:22 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 611b9b514aba1cb399279c081ad5f19875969f08
+commit 607f2c1e5176078549b4c56156e7d4a07d5fa2c6
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:52:37 2025 +0000
+Date:   Thu Jul 17 08:17:43 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## survey
@@ -458,16 +448,11 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 9737844995d73a3cafb73fc8341f068b624dd609
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Jul 11 06:32:36 2025 +0000
+commit f129c4c3206f2072dad49bba2ea1fcb146d530a4
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Jul 17 13:34:49 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: e-commerce-15.0/e-commerce-15.0-website_sale_product_matrix
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-15-0/e-commerce-15-0-website_sale_product_matrix/ca/
+    [BOT] post-merge updates
 
 
 ## edi
@@ -923,9 +908,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 2e038015098311c0d5364e2bd81a636ed10f5725
+commit caadd9a1098cbd9e105a14bdbda46b96844000d0
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 8 08:39:59 2025 +0000
+Date:   Mon Jul 14 07:57:18 2025 +0000
 
     [BOT] post-merge updates
 
@@ -950,11 +935,11 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit d17ab5468e373b485389d57387f762bae076cdf7
+commit 943f7e32f9b34d87458bec5939cc44264d38bb4b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:12:02 2025 +0000
+Date:   Thu Jul 17 05:24:12 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## l10n-turkey
@@ -1577,11 +1562,11 @@ Date:   Sun Feb 9 19:15:23 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 47de99bc45b871a59f2ed0db3593a4cd45c796a6
+commit 92e172b3bd82dd26d6e548a22c601a76ec984c9c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:59:45 2025 +0000
+Date:   Tue Jul 15 18:52:36 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## website
