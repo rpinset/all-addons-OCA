@@ -227,6 +227,9 @@ class AccountMove(models.Model):
     def get_declarations_used_amounts(self, declarations):
         """Get used amount by declarations for this invoice."""
         self.ensure_one()
+        declarations_available_amounts = {
+            declaration.id: declaration.available_amount for declaration in declarations
+        }
         declarations_used_amounts = {}
         sign = 1 if self.move_type in ["out_invoice", "in_invoice"] else -1
         for tax_line in self.line_ids.filtered("tax_ids"):
@@ -245,7 +248,14 @@ class AccountMove(models.Model):
                     # assign all the remaining amount.
                     declaration_used_amount = amount
                 else:
-                    declaration_used_amount = min(amount, declaration.available_amount)
+                    declaration_available_amount = declarations_available_amounts[
+                        declaration.id
+                    ]
+                    declaration_used_amount = min(amount, declaration_available_amount)
+                declarations_available_amounts[
+                    declaration.id
+                ] -= declaration_used_amount
+
                 declarations_used_amounts[declaration.id] += declaration_used_amount
                 amount -= declaration_used_amount
         return declarations_used_amounts

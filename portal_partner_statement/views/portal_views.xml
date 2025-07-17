@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    ~ Copyright 2025 Simone Rubino - PyTech
+    ~ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <template
+        id="portal_my_home"
+        name="Show Partner Statements in portal"
+        inherit_id="portal.portal_my_home"
+        customize_show="True"
+    >
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-if="partner_statement_allowed" t-call="portal.portal_docs_entry">
+                <t t-set="title">Partner Statements</t>
+                <t t-set="url" t-value="'/my/partner_statements'" />
+            </t>
+        </xpath>
+    </template>
+
+    <template
+        id="portal_breadcrumbs"
+        name="Breadcrumbs for Partner Statements"
+        inherit_id="portal.portal_breadcrumbs"
+    >
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'partner_statements'" class="active breadcrumb-item">
+                Partner Statements
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_my_partner_statements" name="My Partner Statements">
+        <t t-call="portal.portal_layout">
+            <t t-call="portal.portal_table">
+                <t t-if="report_names_dict">
+                    <thead>
+                        <tr class="active">
+                            <th>Statement name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="report_names_dict" t-as="report_name">
+                            <td>
+                                <span t-esc="report_names_dict[report_name]" />
+                            </td>
+                            <td class="text-right">
+                                <a
+                                    class="btn btn-secondary"
+                                    t-attf-href="/my/partner_statements/download?report_name={{report_name}}&amp;report_type=html"
+                                >
+                                    <i class="fa fa-eye" /> View
+                                </a>
+                                <a
+                                    class="btn btn-secondary"
+                                    t-attf-href="/my/partner_statements/download?report_name={{report_name}}&amp;report_type=pdf"
+                                >
+                                    <i class="fa fa-download" /> Download
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </t>
+                <t t-else="">
+                    <p>Ask your Administrator for access to Partner Statements.</p>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

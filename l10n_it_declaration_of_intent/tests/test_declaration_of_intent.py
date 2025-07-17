@@ -560,7 +560,7 @@ class TestDeclarationOfIntent(AccountTestInvoicingCommon):
         tax = self.tax1
         invoice = self.init_invoice(
             "out_invoice",
-            amounts=[1100],
+            amounts=[500, 600],
             invoice_date=self.today_date,
             partner=self.partner2,
             taxes=self.tax1,

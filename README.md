@@ -47,11 +47,11 @@ Date:   Fri Jun 13 15:25:21 2025 +0000
 
 ## account-closing
 From [https://github.com/OCA/account-closing.git](https://github.com/OCA/account-closing.git)
-commit 89473e382a5d0acccfa0bf9b1bdc4dbaa67e8c97
+commit 77da57e2f66c9285f25e7f860476dca0dc0e928d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:31:50 2025 +0000
+Date:   Thu Jul 17 17:12:23 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## account-consolidation
@@ -84,16 +84,11 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit c7dee05fe133ee56ef9f22611e5df4b8291450a3
+commit 9d4daebff94381cb1d9cb06cc58f3114c77607e2
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Tue Jul 8 16:02:36 2025 +0000
+Date:   Thu Jul 17 09:03:43 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (109 of 109 strings)
-    
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-partner_statement/it/
+    Added translation using Weblate (Italian)
 
 
 ## account-invoice-reporting
@@ -513,16 +508,16 @@ Date:   Mon Jun 30 16:03:05 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit b00707df374e396ff94f463cea199d378bbc0462
+commit b9f039a8551ca7729b1fb0711a6c7b1020f80779
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:44:56 2025 +0000
+Date:   Tue Jul 15 12:07:34 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (88 of 88 strings)
+    Currently translated at 100.0% (65 of 65 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice_change_management
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_change_management/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice_route
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_route/it/
 
 
 ## margin-analysis
@@ -853,9 +848,9 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 8ae3eab768b0436a0ac0d43a2192114acd109b4b
+commit cb65fbf6c329f3b24caa2acde997e6557d49c43d
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 11 14:29:11 2025 +0000
+Date:   Thu Jul 17 13:16:10 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1096,11 +1091,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 1e5a8b77d8ac1981dd9d6ec2e50cb5f5a11a390b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jun 19 15:36:00 2025 +0000
+commit b23261c50cda7e2ca775347b63ee29e6f49cbb49
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jul 17 14:36:08 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (76 of 76 strings)
+    
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_orderpoint_generator
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_orderpoint_generator/it/
 
 
 ## stock-logistics-reporting
@@ -1394,11 +1394,16 @@ Date:   Sat Jun 14 13:47:21 2025 +0200
 
 ## report-print-send
 From [https://github.com/OCA/report-print-send.git](https://github.com/OCA/report-print-send.git)
-commit a50305e113a66f0c061dafb59335b12ac1b026fb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 11 14:45:33 2025 +0000
+commit aad397dcf67c0f485289db8d1c7aad53e8fc105b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 15 08:39:41 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: report-print-send-14.0/report-print-send-14.0-server_env_printing_server
+    Translate-URL: https://translation.odoo-community.org/projects/report-print-send-14-0/report-print-send-14-0-server_env_printing_server/it/
 
 
 ## webkit-tools
@@ -1426,16 +1431,16 @@ Date:   Fri Jun 13 11:29:23 2025 +0000
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 6912ba2b54b0138bb4514d25f14941ffd15ac219
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 10:36:22 2025 +0000
+commit 12045c43da5debb8e1946c8c9e8038ab99dbe471
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 15 08:39:35 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 83.3% (5 of 6 strings)
+    Currently translated at 100.0% (5 of 5 strings)
     
-    Translation: server-auth-14.0/server-auth-14.0-auth_session_timeout
-    Translate-URL: https://translation.odoo-community.org/projects/server-auth-14-0/server-auth-14-0-auth_session_timeout/tr/
+    Translation: server-auth-14.0/server-auth-14.0-auth_api_key_server_env
+    Translate-URL: https://translation.odoo-community.org/projects/server-auth-14-0/server-auth-14-0-auth_api_key_server_env/it/
 
 
 ## server-env

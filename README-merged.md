@@ -147,7 +147,7 @@ addon | version | maintainers | summary
 [account_cutoff_accrual_subscription](account_cutoff_accrual_subscription/) | 14.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Accrued expenses based on subscriptions
 [account_cutoff_base](account_cutoff_base/) | 14.0.2.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Account Cut-offs
 [account_cutoff_start_end_dates](account_cutoff_start_end_dates/) | 14.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Cutoffs based on start/end dates
-[account_fiscal_year_closing](account_fiscal_year_closing/) | 14.0.1.0.3 |  | Generic fiscal year closing wizard
+[account_fiscal_year_closing](account_fiscal_year_closing/) | 14.0.1.0.4 |  | Generic fiscal year closing wizard
 [account_invoice_start_end_dates](account_invoice_start_end_dates/) | 14.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Adds start/end dates on invoice/move lines
 [account_invoice_start_end_dates_move](account_invoice_start_end_dates_move/) | 14.0.1.0.0 |  | Add the possibility to choose start and end dates on account invoice.
 [account_move_cutoff](account_move_cutoff/) | 14.0.0.1.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Account move Cut-offs, manage Deferred Revenues/Expenses
@@ -348,6 +348,7 @@ addon | version | maintainers | summary
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 14.0.1.1.1 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
 [partner_statement](partner_statement/) | 14.0.1.8.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
+[portal_partner_statement](portal_partner_statement/) | 14.0.1.0.0 |  | Download OCA Financial Reports from portal
 
 [//]: # (end addons)
 
@@ -4758,7 +4759,7 @@ addon | version | maintainers | summary
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 14.0.1.0.2 |  | ITA - Bolle doganali
 [l10n_it_central_journal](l10n_it_central_journal/) | 14.0.1.0.1 |  | ITA - Libro giornale
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 14.0.1.2.0 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | ITA - Libro giornale - Reportlab
-[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.4.0 |  | Gestione dichiarazioni di intento
+[l10n_it_declaration_of_intent](l10n_it_declaration_of_intent/) | 14.0.1.4.1 |  | Gestione dichiarazioni di intento
 [l10n_it_delivery_note](l10n_it_delivery_note/) | 14.0.3.6.7 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Crea, gestisce e fattura i DDT partendo dalle consegne
 [l10n_it_delivery_note_base](l10n_it_delivery_note_base/) | 14.0.1.0.2 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> | Crea e gestisce tabelle principali per gestire i DDT
 [l10n_it_delivery_note_batch](l10n_it_delivery_note_batch/) | 14.0.1.1.0 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/TheMule71'><img src='https://github.com/TheMule71.png' width='32' height='32' style='border-radius:50%;' alt='TheMule71'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Crea i DDT partendo da gruppi di prelievi
@@ -4813,9 +4814,9 @@ addon | version | maintainers | summary
 [l10n_it_sdi_channel](l10n_it_sdi_channel/) | 14.0.2.4.0 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 14.0.1.0.7 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 14.0.1.0.2 |  | ITA - Esigibilità IVA
-[l10n_it_vat_registries](l10n_it_vat_registries/) | 14.0.1.2.1 |  | ITA - Registri IVA
+[l10n_it_vat_registries](l10n_it_vat_registries/) | 14.0.1.3.0 |  | ITA - Registri IVA
 [l10n_it_vat_registries_split_payment](l10n_it_vat_registries_split_payment/) | 14.0.1.1.1 |  | Modulo di congiunzione tra registri IVA e scissione dei pagamenti
-[l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 14.0.1.0.2 |  | Settlement date for VAT Statement
+[l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 14.0.1.1.0 |  | Settlement date for VAT Statement
 [l10n_it_vat_statement_communication](l10n_it_vat_statement_communication/) | 14.0.1.0.2 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
 [l10n_it_vat_statement_split_payment](l10n_it_vat_statement_split_payment/) | 14.0.1.0.2 |  | Migliora la liquidazione dell'IVA tenendo in considerazione la scissione dei pagamenti
 [l10n_it_website_portal_fatturapa](l10n_it_website_portal_fatturapa/) | 14.0.1.0.0 |  | Add fatturapa fields and checks in frontend user's details
@@ -6402,6 +6403,7 @@ addon | version | maintainers | summary
 [stock_picking_cancel_confirm](stock_picking_cancel_confirm/) | 14.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Stock Picking Cancel Confirm
 [stock_picking_procure_method](stock_picking_procure_method/) | 14.0.1.0.0 |  | Allows to force the procurement method from the picking
 [stock_picking_show_linked](stock_picking_show_linked/) | 14.0.1.0.2 |  | This addon allows to easily access related pickings (in the case of chained routes) through a button in the parent picking view.
+[stock_picking_type_user_restriction](stock_picking_type_user_restriction/) | 14.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Restrict some users to see and use only certain picking types
 [stock_picking_volume](stock_picking_volume/) | 14.0.1.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Compute volume information on stock moves and pickings
 [stock_picking_volume_packaging](stock_picking_volume_packaging/) | 14.0.1.1.0 |  | Use volume information on potential product packaging to compute the volume of a stock.move
 [stock_procurement_group_hook](stock_procurement_group_hook/) | 14.0.1.0.0 |  | Adds Hook to Procurement Group run method.
