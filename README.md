@@ -231,9 +231,9 @@ Date:   Wed Jun 4 02:39:42 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit 86277341955ac1aad30f95e75bdaefdfacc29d63
+commit ff7c47f82b6a8ea29e691154300c7b492e19eab2
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Feb 12 08:22:16 2024 +0000
+Date:   Thu Jul 17 14:34:05 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1046,11 +1046,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 7dc2c0f5c61bd4cdf0625cd58820cdc3e33471c6
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:50:47 2025 +0000
+commit ad27269b1d043bb38603c46e41feee73db014e78
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Jul 17 14:36:06 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (75 of 75 strings)
+    
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_orderpoint_generator
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_orderpoint_generator/it/
 
 
 ## stock-logistics-reporting
@@ -1143,11 +1148,16 @@ Date:   Sat Jun 21 10:42:37 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 67f8ce71f76f1ccdfe24679f38901133a7abca4c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:29:56 2025 +0000
+commit f5dd2fcf4e279a4639afb7d966039730e6ed8266
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 15 08:53:08 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 92.0% (207 of 225 strings)
+    
+    Translation: purchase-workflow-12.0/purchase-workflow-12.0-purchase_request
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-12-0/purchase-workflow-12-0-purchase_request/it/
 
 
 ## purchase-reporting
