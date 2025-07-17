@@ -2,12 +2,12 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Product Pack",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Product",
     "summary": "This module allows you to set a product as a Pack",
     "website": "https://github.com/OCA/product-pack",
     "author": "NaN·tic, ADHOC SA, Tecnativa, Odoo Community Association (OCA)",
-    "maintainers": ["ernestotejeda"],
+    "maintainers": ["pedrobaeza"],
     "license": "AGPL-3",
     "depends": ["product"],
     "data": [

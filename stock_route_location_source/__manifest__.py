@@ -4,7 +4,7 @@
 {
     "name": "Stock Route Location Source",
     "summary": "Add method to get source location of Inventory Routes",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "development_status": "Production/Stable",
     "author": "MT Software, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-logistics-warehouse",

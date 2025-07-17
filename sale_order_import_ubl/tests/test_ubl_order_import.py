@@ -14,6 +14,11 @@ from .common import get_test_data
 
 
 class TestUblOrderImport(TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
+
     @mute_logger("odoo.addons.sale_order_import.wizard.sale_order_import")
     def test_ubl_order_import(self):
         tests = get_test_data(self.env)

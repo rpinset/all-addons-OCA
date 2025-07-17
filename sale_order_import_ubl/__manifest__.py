@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Order UBL Import",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Sales Management",
     "license": "AGPL-3",
     "summary": "Import UBL XML sale order files",

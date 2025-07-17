@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2023 Moduon Team S.L.
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl-3.0) -->
+<odoo>
+    <template
+        id="report_delivery_sticker_document"
+        inherit_id="stock.report_delivery_document"
+    >
+        <xpath expr="//div[hasclass('page')]" position="inside">
+            <t
+                t-if="o.show_product_stickers == 'bottom_left'"
+                name="delivery_sticker_section_bottom"
+            >
+                <t t-call="product_sticker.report_sticker_template">
+                    <t t-set="stickers" t-value="o.sticker_ids" />
+                    <t t-set="position" t-value="o.show_product_stickers" />
+                    <t t-set="extra_classes" t-value="'text-start mt-5 mb-1'" />
+                </t>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('page')]/h2" position="before">
+            <t
+                t-if="o.show_product_stickers == 'top_right'"
+                name="delivery_sticker_section_top"
+            >
+                <t t-call="product_sticker.report_sticker_template">
+                    <t t-set="stickers" t-value="o.sticker_ids" />
+                    <t t-set="position" t-value="o.show_product_stickers" />
+                    <t t-set="extra_classes" t-value="'text-end mt-1 mb-1'" />
+                </t>
+            </t>
+        </xpath>
+    </template>
+</odoo>
