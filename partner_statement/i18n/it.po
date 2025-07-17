@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-22 23:13+0000\n"
-"PO-Revision-Date: 2024-11-28 23:06+0000\n"
+"PO-Revision-Date: 2025-07-15 15:25+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: partner_statement
 #. odoo-python
@@ -300,7 +300,7 @@ msgstr "Resoconto scadenze al %(end)s in %(currency)s"
 #: code:addons/partner_statement/report/report_statement_common.py:0
 #, python-format
 msgid "Aging Report at %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Resoconto scadenze al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -444,6 +444,8 @@ msgid ""
 "Detailed Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
 msgstr ""
+"Estratto conto dettagliato dal %(starting_date)s al %(ending_date)s in "
+"%(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -453,6 +455,8 @@ msgid ""
 "Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
 msgstr ""
+"Estratto conto dettagliato fornitore dal %(starting_date)s al %(ending_date)"
+"s in %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__display_name
@@ -504,7 +508,7 @@ msgstr "Saldo finale"
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
 msgid "Ending Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo finale al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields,field_description:partner_statement.field_activity_statement_wizard__filter_negative_balances
@@ -689,7 +693,7 @@ msgstr "Per favore imposta i default Estratto conto."
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
 msgid "Prior Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo pregresso al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #: model:ir.model.fields.selection,name:partner_statement.selection__activity_statement_wizard__account_type__asset_receivable
@@ -743,7 +747,7 @@ msgstr "Procedura guidata per resoconti ordinari estratto conto"
 #: code:addons/partner_statement/report/activity_statement.py:0
 #, python-format
 msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estratto conto dal %(starting_date)s al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -784,21 +788,21 @@ msgstr "Estratto conto al:"
 #: code:addons/partner_statement/report/outstanding_statement.py:0
 #, python-format
 msgid "Statement up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estratto conto al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
 msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo finale fornitore al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
 #, python-format
 msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Saldo pregresso fornitore al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python
@@ -808,13 +812,15 @@ msgid ""
 "Supplier Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
 msgstr ""
+"Estratto conto fornitore dal %(starting_date)s al %(ending_date)s in "
+"%(currency)s"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/outstanding_statement.py:0
 #, python-format
 msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
-msgstr ""
+msgstr "Estratto conto fornitore al %(ending_date)s in %(currency)s"
 
 #. module: partner_statement
 #. odoo-python

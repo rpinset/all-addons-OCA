@@ -315,3 +315,21 @@ class TestAccountMovePricelist(common.TransactionCase):
             self.invoice.with_context(force_check_currecy=True).write(
                 {"currency_id": self.usd_currency.id}
             )
+
+    def test_account_invoice_with_discount_and_taxes(self):
+        tax = self.env["account.tax"].create(
+            {
+                "name": "Test Tax",
+                "amount": 10.0,
+                "amount_type": "percent",
+                "type_tax_use": "sale",
+            }
+        )
+        self.product.taxes_id = [(6, 0, [tax.id])]
+        self.invoice.pricelist_id = self.sale_pricelist_with_discount.id
+        for line in self.invoice.invoice_line_ids:
+            line.tax_ids = [(6, 0, [tax.id])]
+        self.invoice.button_update_prices_from_pricelist()
+        invoice_line = self.invoice.invoice_line_ids[:1]
+        self.assertEqual(invoice_line.discount, 0.0)
+        self.assertAlmostEqual(invoice_line.price_unit, 90.0)
