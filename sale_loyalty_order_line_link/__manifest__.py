@@ -4,7 +4,7 @@
     "name": "Link loyalty programs to order lines",
     "summary": "Adds a link between loyalty programs and their generated order lines"
     "for easing tracking",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.1.0",
     "development_status": "Production/Stable",
     "category": "Sale",
     "website": "https://github.com/OCA/sale-promotion",
@@ -12,5 +12,9 @@
     "maintainers": ["chienandalu"],
     "license": "AGPL-3",
     "depends": ["sale_loyalty"],
-    "data": ["reports/sale_report_views.xml", "views/sale_order_views.xml"],
+    "data": [
+        "reports/sale_report_views.xml",
+        "views/sale_order_views.xml",
+        "views/loyalty_program_views.xml",
+    ],
 }
