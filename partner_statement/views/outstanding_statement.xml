@@ -82,12 +82,7 @@
                     <td>
                         <span t-out="ending_date" />
                     </td>
-                    <td>
-                            Ending Balance
-                        </td>
-                    <td />
-                    <td />
-                    <td />
+                    <td colspan="4">Ending Balance</td>
                     <td class="amount">
                         <span
                             t-out="ending_amount"
