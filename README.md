@@ -74,20 +74,30 @@ Date:   Mon Jun 30 11:09:44 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit de2078ec50cbd8a74014faf670d654e7617df7a9
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 17 14:47:40 2025 +0000
+commit 75456d929af7541f7e1414ed3d56d28cdefb4e73
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Jul 18 12:01:08 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-partner_statement/
 
 
 ## account-invoice-reporting
 From [https://github.com/OCA/account-invoice-reporting.git](https://github.com/OCA/account-invoice-reporting.git)
-commit 3741a59f2d67fb4c061c7214e04418789f3fd80b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:34:49 2025 +0000
+commit 36b37fef28ae8d6f9c6eeb318a04c5182127b808
+Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
+Date:   Mon Jul 21 06:11:19 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 80.0% (4 of 5 strings)
+    
+    Translation: account-invoice-reporting-15.0/account-invoice-reporting-15.0-account_invoice_report_grouped_by_picking
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoice-reporting-15-0/account-invoice-reporting-15-0-account_invoice_report_grouped_by_picking/ca/
 
 
 ## account-invoicing

@@ -1,7 +1,7 @@
 # Copyright 2018 ForgeFlow, S.L. (https://www.forgeflow.com)
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, models
+from odoo import _, api, models
 from odoo.tools.float_utils import float_is_zero
 
 
@@ -12,8 +12,24 @@ class OutstandingStatement(models.AbstractModel):
     _name = "report.partner_statement.outstanding_statement"
     _description = "Partner Outstanding Statement"
 
+    def _get_title(self, partner, **kwargs):
+        kwargs["context"] = {
+            "lang": partner.lang,
+        }
+        if kwargs.get("account_type") == "receivable":
+            title = _("Statement up to %(ending_date)s in %(currency)s", **kwargs)
+        else:
+            title = _(
+                "Supplier Statement up to %(ending_date)s in %(currency)s", **kwargs
+            )
+        return title
+
     def _display_outstanding_lines_sql_q1(self, partners, date_end, account_type):
         partners = tuple(partners)
+        excluded_accounts_ids = tuple(
+            self.env.context.get("excluded_accounts_ids", [])
+        ) or (-1,)
+        show_only_overdue = self.env.context.get("show_only_overdue", False)
         return str(
             self._cr.mogrify(
                 """
@@ -60,6 +76,7 @@ class OutstandingStatement(models.AbstractModel):
                 WHERE l2.date <= %(date_end)s
             ) as pc ON pc.credit_move_id = l.id
             WHERE l.partner_id IN %(partners)s AND at.type = %(account_type)s
+                AND aa.id not in %(excluded_accounts_ids)s
                 AND (
                     (pd.id IS NOT NULL AND
                         pd.max_date <= %(date_end)s) OR
@@ -67,6 +84,11 @@ class OutstandingStatement(models.AbstractModel):
                         pc.max_date <= %(date_end)s) OR
                     (pd.id IS NULL AND pc.id IS NULL)
                 ) AND l.date <= %(date_end)s AND m.state IN ('posted')
+                AND CASE
+                    WHEN %(show_only_overdue)s
+                    THEN COALESCE(l.date_maturity, l.date) <= %(date_end)s
+                    ELSE TRUE
+                END
             GROUP BY l.id, l.partner_id, m.name, l.date, l.date_maturity, l.name,
                 CASE WHEN l.ref IS NOT NULL
                     THEN l.ref

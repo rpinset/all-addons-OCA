@@ -15,7 +15,44 @@ class ActivityStatement(models.AbstractModel):
     _name = "report.partner_statement.activity_statement"
     _description = "Partner Activity Statement"
 
+    def _get_title(self, partner, **kwargs):
+        kwargs["context"] = {
+            "lang": partner.lang,
+        }
+        if kwargs.get("is_detailed"):
+            if kwargs.get("account_type") == "receivable":
+                title = _(
+                    "Detailed Statement "
+                    "between %(starting_date)s and %(ending_date)s "
+                    "in %(currency)s",
+                    **kwargs,
+                )
+            else:
+                title = _(
+                    "Detailed Supplier Statement "
+                    "between %(starting_date)s and %(ending_date)s "
+                    "in %(currency)s",
+                    **kwargs,
+                )
+        else:
+            if kwargs.get("account_type") == "receivable":
+                title = _(
+                    "Statement between %(starting_date)s and %(ending_date)s in %(currency)s",
+                    **kwargs,
+                )
+            else:
+                title = _(
+                    "Supplier Statement "
+                    "between %(starting_date)s and %(ending_date)s "
+                    "in %(currency)s",
+                    **kwargs,
+                )
+        return title
+
     def _initial_balance_sql_q1(self, partners, date_start, account_type):
+        excluded_accounts_ids = tuple(
+            self.env.context.get("excluded_accounts_ids", [])
+        ) or (-1,)
         return str(
             self._cr.mogrify(
                 """
@@ -46,6 +83,7 @@ class ActivityStatement(models.AbstractModel):
             ) as pc ON pc.credit_move_id = l.id
             WHERE l.partner_id IN %(partners)s
                 AND at.type = %(account_type)s
+                AND aa.id not in %(excluded_accounts_ids)s
                 AND l.date < %(date_start)s AND not l.blocked
                 AND m.state IN ('posted')
                 AND (
@@ -118,6 +156,10 @@ class ActivityStatement(models.AbstractModel):
     def _display_activity_lines_sql_q1(
         self, partners, date_start, date_end, account_type
     ):
+        excluded_accounts_ids = tuple(
+            self.env.context.get("excluded_accounts_ids", [])
+        ) or (-1,)
+        show_only_overdue = self.env.context.get("show_only_overdue", False)
         payment_ref = _("Payment")
         return str(
             self._cr.mogrify(
@@ -155,9 +197,15 @@ class ActivityStatement(models.AbstractModel):
             JOIN account_journal aj ON (l.journal_id = aj.id)
             WHERE l.partner_id IN %(partners)s
                 AND at.type = %(account_type)s
+                AND aa.id not in %(excluded_accounts_ids)s
                 AND %(date_start)s <= l.date
                 AND l.date <= %(date_end)s
                 AND m.state IN ('posted')
+                AND CASE
+                    WHEN %(show_only_overdue)s
+                    THEN COALESCE(l.date_maturity, l.date) <= %(date_end)s
+                    ELSE TRUE
+                END
             GROUP BY l.partner_id, m.name, l.date, l.date_maturity,
                 CASE WHEN (aj.type IN ('sale', 'purchase'))
                     THEN l.name
