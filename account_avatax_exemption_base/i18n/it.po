@@ -321,7 +321,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: account_avatax_exemption_base
 #: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__message_has_error
-#: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -440,11 +439,6 @@ msgid "Responsible User"
 msgstr "Utente responsabile"
 
 #. module: account_avatax_exemption_base
-#: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: account_avatax_exemption_base
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption__state
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_exemption_line__state_id
 #: model:ir.model.fields,field_description:account_avatax_exemption_base.field_res_partner_group_state__state_ids
@@ -490,6 +484,9 @@ msgstr "Messaggi sito web"
 #: model:ir.model.fields,help:account_avatax_exemption_base.field_res_partner_exemption__website_message_ids
 msgid "Website communication history"
 msgstr "Cronologia comunicazioni sito web"
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
