@@ -6,50 +6,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-07-21 13:42+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_partner_statements
 msgid "<i class=\"fa fa-download\"/> Download"
-msgstr ""
+msgstr "<i class=\"fa fa-download\"/> Scarica"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_partner_statements
 msgid "<i class=\"fa fa-eye\"/> View"
-msgstr ""
+msgstr "<i class=\"fa fa-eye\"/> Vedi"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_partner_statements
 msgid "Actions"
-msgstr ""
+msgstr "Azioni"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_partner_statements
 msgid "Ask your Administrator for access to Partner Statements."
-msgstr ""
+msgstr "Chiedi all'amministratore l'accesso agli estratti conto."
 
 #. module: portal_partner_statement
 #: code:addons/portal_partner_statement/controllers/portal.py:0
 #, python-format
 msgid "Outstanding Statement"
-msgstr ""
+msgstr "Estratto conto"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_breadcrumbs
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_home
 msgid "Partner Statements"
-msgstr ""
+msgstr "Estratti conto"
 
 #. module: portal_partner_statement
 #: model_terms:ir.ui.view,arch_db:portal_partner_statement.portal_my_partner_statements
 msgid "Statement name"
-msgstr ""
+msgstr "Nome dichiarazione"
 
 #. module: portal_partner_statement
 #: code:addons/portal_partner_statement/controllers/portal.py:0
@@ -58,6 +60,7 @@ msgid ""
 "You do not have access to this Partner Statement, please request it to your "
 "Administrator"
 msgstr ""
+"Non hai accesso a questo estratto conto, richiedilo al tuo amministratore"
 
 #. module: portal_partner_statement
 #: code:addons/portal_partner_statement/controllers/portal.py:0
@@ -66,3 +69,5 @@ msgid ""
 "You do not have access to this Partner Statement, please request it to your "
 "commercial partner"
 msgstr ""
+"Non hai accesso a questo estratto conto, richiedilo alla tua azienda di "
+"riferimento"

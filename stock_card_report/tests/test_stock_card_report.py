@@ -6,7 +6,7 @@ import time
 from datetime import date
 
 from odoo.tests import common
-from odoo.tools import test_reports
+from odoo.tools import mute_logger, test_reports
 
 _logger = logging.getLogger(__name__)
 
@@ -89,6 +89,7 @@ class TestStockCard(common.TransactionCase):
             report_type="qweb-pdf",
         )
 
+    @mute_logger("odoo.tools.test_reports")
     def test_xlsx(self):
         test_reports.try_report(
             self.env.cr,

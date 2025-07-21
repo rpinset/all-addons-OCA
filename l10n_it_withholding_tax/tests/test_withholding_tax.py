@@ -1,6 +1,7 @@
 # Copyright 2018 Lorenzo Battistini (https://github.com/eLBati)
 # Copyright 2023 Simone Rubino - TAKOBI
 # Copyright 2024 Simone Rubino - Aion Tech
+# Copyright 2025 Simone Rubino - PyTech
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import time
@@ -387,6 +388,53 @@ class TestWithholdingTax(TransactionCase):
             wizard.amount,
             invoice.amount_net_pay_residual,
         )
+
+    def _get_records_from_action(self, action):
+        context = action.get("context", dict())
+        model = self.env[action["res_model"]].with_context(**context)
+        domain = action.get("domain", [("id", "=", action["res_id"])])
+        return model.search(domain)
+
+    def test_no_wt_invoice_payment_write_off(self):
+        """The write-off amount is only applied to withholding invoices."""
+        # Arrange
+        invoice_form = Form(
+            self.env["account.move"].with_context(default_move_type="out_invoice")
+        )
+        invoice_form.partner_id = self.env.ref("base.res_partner_12")
+        with invoice_form.invoice_line_ids.new() as line:
+            line.name = "Test line"
+            line.price_unit = 1000
+            line.invoice_line_tax_wt_ids.clear()
+            line.invoice_line_tax_wt_ids.add(self.wt1040)
+        invoice_form.withholding_tax = False
+        invoice = invoice_form.save()
+        invoice.action_post()
+
+        wizard = self._get_payment_wizard(invoice)
+        writeoff_account = self.account_expense1
+        writeoff_amount = 1
+        wizard.update(
+            {
+                "amount": wizard.amount - writeoff_amount,
+                "payment_difference_handling": "reconcile",
+                "writeoff_account_id": writeoff_account,
+            }
+        )
+        # pre-condition
+        self.assertFalse(invoice.withholding_tax)
+        self.assertEqual(wizard.payment_difference, writeoff_amount)
+
+        # Act
+        payments_action = wizard.action_create_payments()
+
+        # Assert
+        payments = self._get_records_from_action(payments_action)
+        payment_move = payments.move_id
+        writeoff_move_line = payment_move.line_ids.filtered(
+            lambda move_line, account=writeoff_account: move_line.account_id == account
+        )
+        self.assertEqual(writeoff_move_line.balance, writeoff_amount)
 
     def test_wt_after_repost(self):
         wt_statement_ids = self.env["withholding.tax.statement"].search(

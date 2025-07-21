@@ -82,12 +82,9 @@
                     <td>
                         <span t-esc="ending_date" />
                     </td>
-                    <td>
+                    <td colspan="4">
                             Ending Balance
                         </td>
-                    <td />
-                    <td />
-                    <td />
                     <td class="amount">
                         <span
                             t-esc="ending_amount"

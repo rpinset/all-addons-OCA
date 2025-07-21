@@ -84,11 +84,16 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 9d4daebff94381cb1d9cb06cc58f3114c77607e2
+commit 013e638886a8d256fc391f9159ad47c7614f2f14
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Thu Jul 17 09:03:43 2025 +0000
+Date:   Mon Jul 21 13:15:25 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-portal_partner_statement
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-portal_partner_statement/it/
 
 
 ## account-invoice-reporting
@@ -785,9 +790,9 @@ Date:   Sun Feb 2 19:18:06 2025 +0000
 
 ## l10n-france
 From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
-commit 82c9a2aaa446429ad1a1079ae88729f45519b8db
+commit b97d7a0bba1971a781a04d235835966c82a12c9e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jun 13 23:08:44 2025 +0000
+Date:   Thu Jul 17 22:05:23 2025 +0000
 
     [BOT] post-merge updates
 
@@ -848,9 +853,9 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit cb65fbf6c329f3b24caa2acde997e6557d49c43d
+commit 141ec0333b7f20b7497a27c9d02c64adcc6b9640
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 17 13:16:10 2025 +0000
+Date:   Mon Jul 21 16:38:04 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1105,9 +1110,9 @@ Date:   Thu Jul 17 14:36:08 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit 12177da47b1be69745787305b4d704db13a41fc4
+commit 35b585e6ea194a075f8dfd5dd095ca0d536d2e07
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 9 14:11:04 2025 +0000
+Date:   Fri Jul 18 08:22:52 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1137,9 +1142,9 @@ Date:   Wed Jun 4 02:47:06 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 7b2e1ca16502a294fc34e9b710269994de23259e
+commit a3e66e4d8c44d7bf33b402a20f858fcf59a520b7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 24 20:33:02 2025 +0000
+Date:   Sun Jul 20 06:37:33 2025 +0000
 
     [BOT] post-merge updates
 

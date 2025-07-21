@@ -12,12 +12,6 @@ class TestStockQuantHistoryCommon(SavepointCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(
-            context=dict(
-                cls.env.context,
-                test_queue_job_no_delay=True,  # no jobs thanks
-            )
-        )
 
         cls.stock_history_now = cls.env["stock.quant.history.snapshot"].create(
             {
@@ -66,17 +60,18 @@ class TestStockQuantHistoryCommon(SavepointCase):
             }
         )
 
-    def _update_product_stock(self, qty, lot=None, location=None, uom=None):
+    @classmethod
+    def _update_product_stock(cls, qty, lot=None, location=None, uom=None):
         if lot is None:
-            lot = self.lot
+            lot = cls.lot
         if not location:
-            location = self.location
+            location = cls.location
         if not uom:
-            uom = self.product.uom_id
-        inventory = self.env["stock.inventory"].create(
+            uom = cls.product.uom_id
+        inventory = cls.env["stock.inventory"].create(
             {
                 "name": "Test Inventory",
-                "product_ids": [(6, 0, self.product.ids)],
+                "product_ids": [(6, 0, cls.product.ids)],
                 "state": "confirm",
                 "line_ids": [
                     (
@@ -85,7 +80,7 @@ class TestStockQuantHistoryCommon(SavepointCase):
                         {
                             "product_qty": qty,
                             "location_id": location.id,
-                            "product_id": self.product.id,
+                            "product_id": cls.product.id,
                             "product_uom_id": uom.id,
                             "prod_lot_id": lot.id,
                         },

@@ -4,7 +4,7 @@
 {
     "name": "Stock Quant History",
     "summary": "Re-generate stock quants for given date",
-    "version": "14.0.1.2.0",
+    "version": "14.0.1.2.1",
     "license": "AGPL-3",
     "author": "Pierre Verkest <pierreverkest84@gmail.com>, Stéphane Mangin "
     "<stephane.mangin@foodles.com>, Odoo Community Association (OCA)",

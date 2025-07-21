@@ -5,9 +5,10 @@
 from unittest import mock
 
 from odoo.exceptions import UserError
+from odoo.tools import mute_logger
 
+from odoo.addons.base_report_to_printer.models.printing_printer import PrintingPrinter
 from odoo.addons.printing_auto_base.tests.common import (
-    PrintingPrinter,
     TestPrintingAutoCommon,
     print_document,
 )
@@ -33,6 +34,7 @@ class TestAutoPrinting(TestPrintingAutoCommon):
         self.record._action_done()
         self.assertFalse(self.record.printing_auto_error)
 
+    @mute_logger("odoo.addons.printing_auto_base.models.printing_auto_mixin")
     def test_action_done_printing_error_log(self):
         self.record._action_done()
         self.assertTrue(self.record.printing_auto_error)
