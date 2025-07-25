@@ -1290,9 +1290,7 @@ class PmsReservation(models.Model):
     @api.depends("service_ids.price_total", "services_discount")
     def _compute_price_services(self):
         for record in self:
-            record.price_services = (
-                sum(record.mapped("service_ids.price_total")) - record.services_discount
-            )
+            record.price_services = sum(record.mapped("service_ids.price_total"))
 
     @api.depends("price_services", "price_total")
     def _compute_price_room_services_set(self):
@@ -1379,7 +1377,9 @@ class PmsReservation(models.Model):
             if record.partner_id and record.partner_id != record.agency_id:
                 record.partner_name = record.partner_id.name
             if (record.folio_id and not record.partner_name) or (
-                record.folio_id.partner_name != record.partner_name
+                record.folio_id
+                and record.folio_id.partner_name
+                and record.folio_id.partner_name != record.partner_name
             ):
                 record.partner_name = record.folio_id.partner_name
             elif record.agency_id and not record.partner_name:

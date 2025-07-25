@@ -844,9 +844,8 @@ class GeneralLedgerReport(models.AbstractModel):
         for gl_item in general_ledger:
             if not foreign_currency:
                 continue
-            if (
-                not gl_item["currency_id"]
-                or gl_item["currency_id"] != company.currency_id
+            if not gl_item["currency_id"] or (
+                gl_item["currency_id"] != company.currency_id.id
             ):
                 gl_item["fin_bal"]["bal_curr"] -= gl_item["init_bal"]["bal_curr"]
                 gl_item["init_bal"]["bal_curr"] = 0

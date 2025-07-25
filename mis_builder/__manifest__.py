@@ -3,7 +3,7 @@
 
 {
     "name": "MIS Builder",
-    "version": "16.0.5.4.1",
+    "version": "16.0.5.4.2",
     "category": "Reporting",
     "summary": """
         Build 'Management Information System' Reports and Dashboards

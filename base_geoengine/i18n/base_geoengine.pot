@@ -500,8 +500,12 @@ msgstr ""
 
 #. module: base_geoengine
 #: model:ir.model.fields,field_description:base_geoengine.field_geoengine_raster_layer__params
-#: model:ir.model.fields,field_description:base_geoengine.field_geoengine_raster_layer__params_wms
 msgid "Params"
+msgstr ""
+
+#. module: base_geoengine
+#: model:ir.model.fields,field_description:base_geoengine.field_geoengine_raster_layer__params_wms
+msgid "Params WMS"
 msgstr ""
 
 #. module: base_geoengine
