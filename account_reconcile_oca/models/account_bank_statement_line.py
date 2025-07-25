@@ -549,7 +549,7 @@ class AccountBankStatementLine(models.Model):
     @api.depends("reconcile_data", "is_reconciled")
     def _compute_reconcile_data_info(self):
         for record in self:
-            if record.reconcile_data:
+            if record.reconcile_data and not record.is_reconciled:
                 record.reconcile_data_info = record.reconcile_data
             else:
                 record.reconcile_data_info = record._default_reconcile_data(
@@ -716,6 +716,7 @@ class AccountBankStatementLine(models.Model):
                                 "other",
                                 from_unreconcile=False,
                                 move=True,
+                                is_reconciled=self.is_reconciled,
                             )
                             data += lines
                         continue
@@ -757,7 +758,10 @@ class AccountBankStatementLine(models.Model):
                     data += lines
             else:
                 reconcile_auxiliary_id, lines = self._get_reconcile_line(
-                    line, "other", from_unreconcile=False
+                    line,
+                    "other",
+                    from_unreconcile=False,
+                    is_reconciled=self.is_reconciled,
                 )
                 data += lines
 
@@ -1171,6 +1175,7 @@ class AccountBankStatementLine(models.Model):
         from_unreconcile=False,
         reconcile_auxiliary_id=False,
         move=False,
+        is_reconciled=False,
     ):
         new_vals = super()._get_reconcile_line(
             line,
@@ -1179,6 +1184,7 @@ class AccountBankStatementLine(models.Model):
             max_amount=max_amount,
             from_unreconcile=from_unreconcile,
             move=move,
+            is_reconciled=is_reconciled,
         )
         rates = []
         for vals in new_vals:

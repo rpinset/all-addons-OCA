@@ -23,6 +23,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_analytic_account_tag](account_analytic_account_tag/) | 17.0.1.0.0 |  | Restore the tag_ids in account.analytic.account
 [account_analytic_distribution_manual](account_analytic_distribution_manual/) | 17.0.1.0.1 |  | Account analytic distribution manual
 [account_analytic_distribution_manual_date](account_analytic_distribution_manual_date/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Account analytic distribution manual date
 [account_analytic_distribution_model_recalculate](account_analytic_distribution_model_recalculate/) | 17.0.1.0.1 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Add the posibility to change the analytic distribution of the journal items assigned by the distribution model
@@ -242,6 +243,7 @@ addon | version | maintainers | summary
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 17.0.1.0.0 |  | Lock All Posted Entries of Journals.
 [account_loan](account_loan/) | 17.0.2.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 17.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
+[account_lock_to_date](account_lock_to_date/) | 17.0.1.0.0 |  | Allows to set an account lock date in the future.
 [account_move_budget](account_move_budget/) | 17.0.1.0.0 |  | Create Accounting Budgets
 [account_move_line_purchase_info](account_move_line_purchase_info/) | 17.0.2.0.0 |  | Introduces the purchase order line to the journal items
 [account_move_line_sale_info](account_move_line_sale_info/) | 17.0.1.0.0 |  | Introduces the purchase order line to the journal items
@@ -302,7 +304,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 17.0.1.6.10 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 17.0.1.6.11 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 17.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Sale Stock Report Non Billed
@@ -412,6 +414,7 @@ addon | version | maintainers | summary
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 17.0.1.0.0 |  | Account Invoice CRM Tag
 [account_invoice_customer_no_autofollow](account_invoice_customer_no_autofollow/) | 17.0.1.0.0 |  | Do not add customer as follower in Invoices
 [account_invoice_date_due](account_invoice_date_due/) | 17.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Update Invoice's Due Date
+[account_invoice_discount_display_amount](account_invoice_discount_display_amount/) | 17.0.1.0.0 |  | Show total discount applied and total without discount on invoices.
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 17.0.1.1.0 |  | Allows to apply fixed amount discounts in invoices.
 [account_invoice_mass_sending](account_invoice_mass_sending/) | 17.0.1.0.0 | <a href='https://github.com/jguenat'><img src='https://github.com/jguenat.png' width='32' height='32' style='border-radius:50%;' alt='jguenat'/></a> | This addon adds a mass sending feature on invoices.
 [account_invoice_pricelist](account_invoice_pricelist/) | 17.0.1.0.2 |  | Add partner pricelist on invoices
@@ -490,7 +493,7 @@ addon | version | maintainers | summary
 [account_ecotax_sale](account_ecotax_sale/) | 17.0.1.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 17.0.1.1.0 |  | Account Fiscal Position Partner Type
-[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.1.0 |  | L10n EU OSS OCA
+[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 17.0.1.1.1 |  | L10n EU OSS OCA
 
 [//]: # (end addons)
 
@@ -948,7 +951,7 @@ addon | version | maintainers | summary
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_partner_reconcile](account_partner_reconcile/) | 17.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.18 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.20 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.6.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1720,10 +1723,10 @@ addon | version | maintainers | summary
 [portal_sale_personal_data_only](portal_sale_personal_data_only/) | 17.0.1.0.0 |  | Portal Sale Personal Data Only
 [product_form_sale_link](product_form_sale_link/) | 17.0.1.0.0 |  | Adds a button on product forms to access Sale Lines
 [product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 17.0.1.0.0 |  | Loads in every sale order line the customer code defined in the product
-[sale_advance_payment](sale_advance_payment/) | 17.0.1.0.2 |  | Allow to add advance payments on sales and then use them on invoices
+[sale_advance_payment](sale_advance_payment/) | 17.0.1.0.4 |  | Allow to add advance payments on sales and then use them on invoices
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.1.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.1 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.2 |  | Blanket Orders
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 17.0.1.0.0 |  | Sale Deliveries split by date
@@ -1762,6 +1765,7 @@ addon | version | maintainers | summary
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.5 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
+[sale_order_warn_message](sale_order_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
@@ -2267,13 +2271,13 @@ addon | version | maintainers | summary
 [survey_crm_generation](survey_crm_generation/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Link CRM leads to sale orders generated from surveys
 [survey_legal](survey_legal/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Require legal terms before survey submit
-[survey_multi_company](survey_multi_company/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Company security for surveys
+[survey_multi_company](survey_multi_company/) | 17.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Company security for surveys
 [survey_next_survey_update_partner](survey_next_survey_update_partner/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Update the partner values when it's generated from the previous survey
 [survey_partner_representative](survey_partner_representative/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Fill the survey on behalf of others
 [survey_question_type_binary](survey_question_type_binary/) | 17.0.1.0.0 |  | This module add binary field as question type for survey page
 [survey_resource_booking](survey_resource_booking/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Access survey answers from resource booking
 [survey_result_mail](survey_result_mail/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Send survey answers to the survey user
-[survey_sale_generation](survey_sale_generation/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Generate sale orders from surveys
+[survey_sale_generation](survey_sale_generation/) | 17.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Generate sale orders from surveys
 [survey_skip_start](survey_skip_start/) | 17.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Skip the surveys start screen and go directly to fill the form
 
 [//]: # (end addons)
@@ -2427,7 +2431,7 @@ addon | version | maintainers | summary
 [website_sale_b2x_alt_price](website_sale_b2x_alt_price/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Display prices with(out) taxes in eCommerce, complementing normal mode
 [website_sale_checkout_skip_payment](website_sale_checkout_skip_payment/) | 17.0.1.0.0 |  | Skip payment for logged users in checkout process
 [website_sale_hide_empty_category](website_sale_hide_empty_category/) | 17.0.1.0.0 |  | Hide any Product Categories that are empty
-[website_sale_hide_price](website_sale_hide_price/) | 17.0.1.1.3 |  | Hide product prices on the shop
+[website_sale_hide_price](website_sale_hide_price/) | 17.0.1.2.1 |  | Hide product prices on the shop
 [website_sale_menu_partner_top_selling](website_sale_menu_partner_top_selling/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Displays the user's regular products in the e-commerce.
 [website_sale_order_type](website_sale_order_type/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | This module allows sale_order_type to work with website_sale.
 [website_sale_product_attachment](website_sale_product_attachment/) | 17.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Let visitors download attachments from a product page
@@ -2437,6 +2441,7 @@ addon | version | maintainers | summary
 [website_sale_product_brand](website_sale_product_brand/) | 17.0.1.0.0 |  | Product Brand Filtering in Website
 [website_sale_product_description](website_sale_product_description/) | 17.0.1.0.0 |  | Shows custom e-Commerce description for products
 [website_sale_product_detail_attribute_image](website_sale_product_detail_attribute_image/) | 17.0.1.0.0 |  | Display attributes images in shop product detail
+[website_sale_product_matrix](website_sale_product_matrix/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Product matrix in eCommerce
 [website_sale_product_minimal_price](website_sale_product_minimal_price/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Display minimal price for products that has variants
 [website_sale_product_reference_displayed](website_sale_product_reference_displayed/) | 17.0.1.0.0 |  | Display product reference in e-commerce
 [website_sale_require_legal](website_sale_require_legal/) | 17.0.1.0.0 |  | Force the user to accept legal tems to buy in the web shop
@@ -4866,7 +4871,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 17.0.1.0.1 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 17.0.1.3.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
-[l10n_es_atc](l10n_es_atc/) | 17.0.1.0.1 |  | Modulo 'glue' de la AEAT para el menú de la ATC
+[l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.3.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
@@ -5412,7 +5417,7 @@ addon | version | maintainers | summary
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 17.0.1.0.1 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
-[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | It provides a wizard to select how many barcodes print.
+[stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 17.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | It provides a wizard to select how many barcodes print.
 
 [//]: # (end addons)
 
@@ -5485,7 +5490,7 @@ addon | version | maintainers | summary
 [stock_picking_group_by_partner_by_carrier](stock_picking_group_by_partner_by_carrier/) | 17.0.0.0.0 |  | Stock Picking: group by partner and carrier
 [stock_picking_invoice_link](stock_picking_invoice_link/) | 17.0.1.2.5 |  | Adds link between pickings and invoices
 [stock_picking_kind](stock_picking_kind/) | 17.0.1.0.0 |  | Computes the kind of picking based on locations
-[stock_picking_line_sequence](stock_picking_line_sequence/) | 17.0.1.0.0 |  | Manages the order of stock moves by displaying its sequence
+[stock_picking_line_sequence](stock_picking_line_sequence/) | 17.0.1.0.1 |  | Manages the order of stock moves by displaying its sequence
 [stock_picking_mass_action](stock_picking_mass_action/) | 17.0.1.0.0 |  | Stock Picking Mass Action
 [stock_picking_origin_reference](stock_picking_origin_reference/) | 17.0.1.0.0 |  | Add clickable button to the Transfer Source Document.
 [stock_picking_origin_reference_purchase](stock_picking_origin_reference_purchase/) | 17.0.1.0.0 |  | Transfer to Purchase Order navigation from the Source Document.
@@ -5782,7 +5787,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 17.0.1.4.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 17.0.1.5.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 17.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 17.0.1.0.0 |  | Adds chatter and activities to stock buffers.
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 17.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
@@ -6037,6 +6042,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 17.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 17.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
+[mgmtsystem_quality](mgmtsystem_quality/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 17.0.1.1.0 |  | Management System - Review
 [mgmtsystem_survey](mgmtsystem_survey/) | 17.0.1.0.0 |  | Management System - Survey
 
@@ -6330,6 +6336,7 @@ addon | version | maintainers | summary
 [product_uom_measure_type](product_uom_measure_type/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product - UoM Measure Type
 [product_usability](product_usability/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Product module and adds extra groups to fine-tune access rights
 [purchase_product_template_tags](purchase_product_template_tags/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Purchase app
+[sale_product_matrix_secondary_unit](sale_product_matrix_secondary_unit/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Secondary unit in product matrix
 [sale_product_template_tags](sale_product_template_tags/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Sale app
 [stock_production_lot_expired_date](stock_production_lot_expired_date/) | 17.0.1.0.1 |  | Stock production lot expired date
 [uom_alias](uom_alias/) | 17.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Adds alias for UOM
@@ -6917,12 +6924,14 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 17.0.2.0.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 17.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 17.0.1.0.0 |  | Module to use attach existing attachment for account module
-[mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.0.0 |  | Add headers to Odoo's mails indicating they are autogenerated
+[mail_autogenerated_header](mail_autogenerated_header/) | 17.0.1.1.0 |  | Add headers to Odoo's mails indicating they are autogenerated
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 17.0.1.0.1 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 17.0.1.0.1 | <a href='https://github.com/hailangvn2023'><img src='https://github.com/hailangvn2023.png' width='32' height='32' style='border-radius:50%;' alt='hailangvn2023'/></a> | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 17.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/joao-p-marques'><img src='https://github.com/joao-p-marques.png' width='32' height='32' style='border-radius:50%;' alt='joao-p-marques'/></a> | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 17.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_forward](mail_forward/) | 17.0.2.0.1 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Forward messages from the chatter of any document to other users.
+[mail_gateway](mail_gateway/) | 17.0.1.0.0 |  | Base module for gateway communications
+[mail_gateway_whatsapp](mail_gateway_whatsapp/) | 17.0.1.0.0 |  | Set a gateway for whatsapp
 [mail_layout_preview](mail_layout_preview/) | 17.0.1.0.0 |  | Preview email templates in the browser
 [mail_no_user_assign_notification](mail_no_user_assign_notification/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail No user Assign Notification
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 17.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Apply a custom subject to mail notifications
@@ -6990,7 +6999,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[fs_attachment](fs_attachment/) | 17.0.1.4.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
+[fs_attachment](fs_attachment/) | 17.0.1.4.4 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Store attachments on external object store
 [fs_base_multi_image](fs_base_multi_image/) | 17.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Mulitple Images from External File System
 [fs_base_multi_media](fs_base_multi_media/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Give the possibility to store media data in external filesystem from odoo
 [fs_file](fs_file/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Field to store files into filesystem storages
@@ -7000,7 +7009,7 @@ addon | version | maintainers | summary
 [fs_product_brand_multi_image](fs_product_brand_multi_image/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link images to product brands
 [fs_product_multi_image](fs_product_multi_image/) | 17.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage multi images from extenal file system on product
 [fs_product_multi_media](fs_product_multi_media/) | 17.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link media to products and categories
-[fs_storage](fs_storage/) | 17.0.2.0.2 |  | Implement the concept of Storage with amazon S3, sftp...
+[fs_storage](fs_storage/) | 17.0.2.0.3 |  | Implement the concept of Storage with amazon S3, sftp...
 [image_tag](image_tag/) | 17.0.1.0.0 |  | Image tag model
 
 [//]: # (end addons)
@@ -7100,8 +7109,8 @@ addon | version | maintainers | summary
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 17.0.1.0.0 |  | Report Qweb Element Page Visibility
 [report_qweb_parameter](report_qweb_parameter/) | 17.0.1.0.2 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 17.0.1.0.2 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Add watermarks to your QWEB PDF reports
-[report_qweb_signer](report_qweb_signer/) | 17.0.1.0.1 |  | Sign Qweb PDFs usign a PKCS#12 certificate
-[report_substitute](report_substitute/) | 17.0.1.0.1 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module allows to create substitution rules for report actions.
+[report_qweb_signer](report_qweb_signer/) | 17.0.1.0.2 |  | Sign Qweb PDFs usign a PKCS#12 certificate
+[report_substitute](report_substitute/) | 17.0.1.1.0 | <a href='https://github.com/sbejaoui'><img src='https://github.com/sbejaoui.png' width='32' height='32' style='border-radius:50%;' alt='sbejaoui'/></a> | This module allows to create substitution rules for report actions.
 [report_wkhtmltopdf_param](report_wkhtmltopdf_param/) | 17.0.1.0.0 |  | Add new parameters for a paper format to be used by wkhtmltopdf command as arguments.
 [report_xlsx](report_xlsx/) | 17.0.1.0.2 |  | Base module to create xlsx report
 [report_xlsx_helper](report_xlsx_helper/) | 17.0.1.0.1 |  | Report xlsx helpers
@@ -8413,7 +8422,7 @@ addon | version | maintainers | summary
 [web_field_tooltip](web_field_tooltip/) | 17.0.1.0.0 |  | Displays customizable tooltips for fields
 [web_group_expand](web_group_expand/) | 17.0.1.0.0 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 17.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
-[web_m2x_options](web_m2x_options/) | 17.0.1.0.6 |  | web_m2x_options
+[web_m2x_options](web_m2x_options/) | 17.0.1.0.7 |  | web_m2x_options
 [web_no_bubble](web_no_bubble/) | 17.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 17.0.1.1.0 |  | Send notification messages to user
 [web_refresher](web_refresher/) | 17.0.1.1.2 |  | Web Refresher

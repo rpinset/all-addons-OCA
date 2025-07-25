@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Advance Payment",
-    "version": "17.0.1.0.2",
+    "version": "17.0.1.0.4",
     "author": "Comunitea, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/sale-workflow",
     "category": "Sales",
@@ -13,6 +13,7 @@
     "data": [
         "wizard/sale_advance_payment_wzd_view.xml",
         "views/sale_view.xml",
+        "views/account_payment.xml",
         "security/ir.model.access.csv",
     ],
     "installable": True,

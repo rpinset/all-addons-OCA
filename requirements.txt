@@ -214,6 +214,8 @@ python-dateutil
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
+# generated from manifests external_dependencies
+requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec>=2024.5.0
@@ -222,7 +224,8 @@ python_slugify
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
 # generated from manifests external_dependencies
 cryptography
-endesive
+endesive ; python_version >= '3.12'
+endesive<=2.18.5 ; python_version < '3.12'
 lxml
 openpyxl
 py3o.formats
