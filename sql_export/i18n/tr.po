@@ -105,11 +105,6 @@ msgid "Export"
 msgstr "Dışa aktar"
 
 #. module: sql_export
-#: model_terms:ir.ui.view,arch_db:sql_export.sql_file_wizard_view_form
-msgid "Export file"
-msgstr ""
-
-#. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__binary_file
 msgid "File"
 msgstr "Dosya"
@@ -182,6 +177,11 @@ msgid "Is Follower"
 msgstr ""
 
 #. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__last_execution_date
+msgid "Last Execution Date"
+msgstr ""
+
+#. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__write_uid
 #: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__write_uid
 msgid "Last Updated by"
@@ -192,6 +192,11 @@ msgstr "Son güncelleyen"
 #: model:ir.model.fields,field_description:sql_export.field_sql_file_wizard__write_date
 msgid "Last Updated on"
 msgstr "Son güncelleme"
+
+#. module: sql_export
+#: model:ir.model.fields,field_description:sql_export.field_sql_export__last_execution_uid
+msgid "Last execution User"
+msgstr ""
 
 #. module: sql_export
 #: model:ir.model.fields,field_description:sql_export.field_sql_export__message_has_error
