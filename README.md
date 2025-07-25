@@ -1196,20 +1196,30 @@ Date:   Wed Jun 4 03:35:24 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit e515f92d77ee3bde85f8bd8f113fca86a69261e0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:47:02 2025 +0000
+commit a3db24612cc70e8ad2f2a84ff3f0e80e3d9303a0
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 22 06:46:44 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: ddmrp-13.0/ddmrp-13.0-ddmrp_exclude_moves_adu_calc
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-13-0/ddmrp-13-0-ddmrp_exclude_moves_adu_calc/it/
 
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit d30182eb2d7dd9b335f6395f4cbfeb64bdef79b4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 04:02:27 2025 +0000
+commit bb35fbb8509b3a62b7bceb251e3f15a745d8f5c6
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 22 09:24:59 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (26 of 26 strings)
+    
+    Translation: wms-13.0/wms-13.0-sale_stock_available_to_promise_release
+    Translate-URL: https://translation.odoo-community.org/projects/wms-13-0/wms-13-0-sale_stock_available_to_promise_release/it/
 
 
 ## manufacture
@@ -1514,16 +1524,16 @@ Date:   Mon Oct 9 20:15:47 2023 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 175266bbfab1d5df3671814585dee609c1a69b85
+commit 0a5572f2f880bdc9802d023aeff5bb8846ac8865
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 11:40:46 2025 +0000
+Date:   Wed Jul 23 11:33:17 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (37 of 37 strings)
+    Currently translated at 72.5% (74 of 102 strings)
     
-    Translation: server-ux-13.0/server-ux-13.0-mass_editing
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-mass_editing/it/
+    Translation: server-ux-13.0/server-ux-13.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-13-0/server-ux-13-0-base_tier_validation/it/
 
 
 ## community-data-files
