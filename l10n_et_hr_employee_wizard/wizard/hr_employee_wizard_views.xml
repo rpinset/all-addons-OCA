@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="new_labour_form" model="ir.ui.view">
+        <field name="name">hr.employee.wizard.form</field>
+        <field name="model">hr.employee.wizard.new</field>
+        <field name="inherit_id" ref="hr_employee_wizard.new_labour_form" />
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="ethiopic_name" nolabel="1" placeholder="ስም በአማርኛ" />
+            </xpath>
+            <xpath expr="//field[@name='birth_date']" position="replace">
+                <field name="use_ethiopic_dob" />
+                <label for="etcal_dob_month" string="Birth Date" />
+                <div>
+                    <field
+                        name="etcal_dob_month"
+                        attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                        nolabel="1"
+                        class="oe_inline"
+                    />
+                    <field
+                        name="etcal_dob_day"
+                        attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                        nolabel="1"
+                        class="oe_inline"
+                    />
+                    <field
+                        name="etcal_dob_year"
+                        attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                        nolabel="1"
+                        class="oe_inline"
+                    />
+                    <field
+                        name="birth_date"
+                        attrs="{'invisible': [('use_ethiopic_dob','=',True)]}"
+                    />
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='city']" position="before">
+                <field name="woreda" />
+                <field name="kebele" />
+                <field name="house_no" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

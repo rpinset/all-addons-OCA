@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-21 10:26+0000\n"
+"PO-Revision-Date: 2025-07-22 15:54+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -29,12 +29,12 @@ msgstr "ID"
 #. module: account_statement_import_file_reconciliation_widget
 #: model:ir.model,name:account_statement_import_file_reconciliation_widget.model_account_statement_import
 msgid "Import Bank Statement Files"
-msgstr ""
+msgstr "Importazione file estratto conto bancario"
 
 #. module: account_statement_import_file_reconciliation_widget
 #: model_terms:ir.ui.view,arch_db:account_statement_import_file_reconciliation_widget.account_statement_import_form
 msgid "Import and Start to Reconcile"
-msgstr ""
+msgstr "Importa e inizia riconciliazione"
 
 #. module: account_statement_import_file_reconciliation_widget
 #: model:ir.model.fields,field_description:account_statement_import_file_reconciliation_widget.field_account_statement_import____last_update

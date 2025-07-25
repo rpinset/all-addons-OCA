@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-27 14:26+0000\n"
+"PO-Revision-Date: 2025-07-22 15:18+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -29,12 +29,12 @@ msgstr "ID"
 #. module: account_payment_order_lock_draft
 #: model:ir.model,name:account_payment_order_lock_draft.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: account_payment_order_lock_draft
 #: model:ir.model.fields,field_description:account_payment_order_lock_draft.field_account_move____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: account_payment_order_lock_draft
 #: code:addons/account_payment_order_lock_draft/models/account_move.py:0
@@ -43,3 +43,5 @@ msgid ""
 "You can't reset to draft because it's already associated with a Payment "
 "Order."
 msgstr ""
+"Non si può riportare a bozza perché è già associato ad un ordine di "
+"pagamento."

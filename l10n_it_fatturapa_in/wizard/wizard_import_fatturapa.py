@@ -4,6 +4,7 @@
 
 import logging
 import re
+import warnings
 from datetime import datetime
 
 from odoo import api, fields, models
@@ -301,12 +302,18 @@ class WizardImportFatturapa(models.TransientModel):
 
             return partner_model.create(vals).id
 
-    def getCedPrest(self, cedPrest):
+    def get_partner_from_einvoice_node(self, partner_node):
+        """
+        Parameters
+        ----------
+        partner_node : the XML node containing "DatiAnagrafici"
+        For example CedentePrestatore or CessionarioCommittente
+        """
         partner_model = self.env["res.partner"]
         # Assume that any non-IT VAT coming from SdI is correct
         partner_id = self.with_context(
             fatturapa_in_skip_no_it_vat_check=True,
-        ).getPartnerBase(cedPrest.DatiAnagrafici)
+        ).getPartnerBase(partner_node.DatiAnagrafici)
         no_contact_update = False
         if partner_id:
             no_contact_update = partner_model.browse(
@@ -320,16 +327,20 @@ class WizardImportFatturapa(models.TransientModel):
                     map(
                         str,
                         filter(
-                            None, (cedPrest.Sede.Indirizzo, cedPrest.Sede.NumeroCivico)
+                            None,
+                            (
+                                partner_node.Sede.Indirizzo,
+                                partner_node.Sede.NumeroCivico,
+                            ),
                         ),
                     )
                 ),
-                "zip": cedPrest.Sede.CAP,
-                "city": cedPrest.Sede.Comune,
-                "register": cedPrest.DatiAnagrafici.AlboProfessionale or "",
+                "zip": partner_node.Sede.CAP,
+                "city": partner_node.Sede.Comune,
+                "register": partner_node.DatiAnagrafici.AlboProfessionale or "",
             }
-            if cedPrest.DatiAnagrafici.ProvinciaAlbo:
-                ProvinciaAlbo = cedPrest.DatiAnagrafici.ProvinciaAlbo
+            if partner_node.DatiAnagrafici.ProvinciaAlbo:
+                ProvinciaAlbo = partner_node.DatiAnagrafici.ProvinciaAlbo
                 prov = self.ProvinceByCode(ProvinciaAlbo)
                 if not prov:
                     self.log_inconsistency(
@@ -338,8 +349,8 @@ class WizardImportFatturapa(models.TransientModel):
                     )
                 else:
                     vals["register_province"] = prov[0].id
-            if cedPrest.Sede.Provincia:
-                Provincia = cedPrest.Sede.Provincia
+            if partner_node.Sede.Provincia:
+                Provincia = partner_node.Sede.Provincia
                 prov_sede = self.ProvinceByCode(Provincia)
                 if not prov_sede:
                     self.log_inconsistency(
@@ -348,11 +359,11 @@ class WizardImportFatturapa(models.TransientModel):
                 else:
                     vals["state_id"] = prov_sede[0].id
 
-            vals["register_code"] = cedPrest.DatiAnagrafici.NumeroIscrizioneAlbo
-            vals["register_regdate"] = cedPrest.DatiAnagrafici.DataIscrizioneAlbo
+            vals["register_code"] = partner_node.DatiAnagrafici.NumeroIscrizioneAlbo
+            vals["register_regdate"] = partner_node.DatiAnagrafici.DataIscrizioneAlbo
 
-            if cedPrest.DatiAnagrafici.RegimeFiscale:
-                rfPos = cedPrest.DatiAnagrafici.RegimeFiscale
+            if partner_node.DatiAnagrafici.RegimeFiscale:
+                rfPos = partner_node.DatiAnagrafici.RegimeFiscale
                 FiscalPos = fiscalPosModel.search([("code", "=", rfPos)])
                 if not FiscalPos:
                     raise UserError(
@@ -361,8 +372,8 @@ class WizardImportFatturapa(models.TransientModel):
                 else:
                     vals["register_fiscalpos"] = FiscalPos[0].id
 
-            if cedPrest.IscrizioneREA:
-                REA = cedPrest.IscrizioneREA
+            if partner_node.IscrizioneREA:
+                REA = partner_node.IscrizioneREA
                 offices = self.ProvinceByCode(REA.Ufficio)
                 rea_nr = REA.NumeroREA
 
@@ -405,13 +416,23 @@ class WizardImportFatturapa(models.TransientModel):
                 vals["rea_member_type"] = REA.SocioUnico or False
                 vals["rea_liquidation_state"] = REA.StatoLiquidazione or False
 
-            if cedPrest.Contatti:
-                if cedPrest.Contatti.Telefono:
-                    vals["phone"] = cedPrest.Contatti.Telefono
-                if cedPrest.Contatti.Email:
-                    vals["email"] = cedPrest.Contatti.Email
+            if partner_node.Contatti:
+                if partner_node.Contatti.Telefono:
+                    vals["phone"] = partner_node.Contatti.Telefono
+                if partner_node.Contatti.Email:
+                    vals["email"] = partner_node.Contatti.Email
             partner_model.browse(partner_id).write(vals)
         return partner_id
+
+    def getCedPrest(self, cedPrest):
+        """Kept for retrocompatibility."""
+        warnings.warn(
+            "function getCedPrest is deprecated. It has been renamed to "
+            "get_partner_from_einvoice_node",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+        self.get_partner_from_einvoice_node(cedPrest)
 
     def getCarrirerPartner(self, Carrier):
         partner_model = self.env["res.partner"]
@@ -1784,7 +1805,7 @@ class WizardImportFatturapa(models.TransientModel):
 
     def _get_invoice_partner_id(self, fatt):
         cedentePrestatore = fatt.FatturaElettronicaHeader.CedentePrestatore
-        partner_id = self.getCedPrest(cedentePrestatore)
+        partner_id = self.get_partner_from_einvoice_node(cedentePrestatore)
         return partner_id
 
     def importFatturaPA(self):

@@ -145,6 +145,8 @@ zeep
 # From [https://github.com/OCA/l10n-ecuador.git](https://github.com/OCA/l10n-ecuador.git)
 # From [https://github.com/OCA/l10n-estonia.git](https://github.com/OCA/l10n-estonia.git)
 # From [https://github.com/OCA/l10n-ethiopia.git](https://github.com/OCA/l10n-ethiopia.git)
+# generated from manifests external_dependencies
+mpmath
 # From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
 # From [https://github.com/OCA/l10n-france.git](https://github.com/OCA/l10n-france.git)
 # generated from manifests external_dependencies

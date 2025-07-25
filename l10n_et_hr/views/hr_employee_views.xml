@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="view_employee_filter" model="ir.ui.view">
+            <field name="name">hr.employee.search.l10n_et</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="ethiopic_name" string="ሥም" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_employee_form" model="ir.ui.view">
+            <field name="name">hr.employee.form.l10n_et</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/div[hasclass('oe_title')]/h1" position="after">
+                    <h1>
+                        <field name="ethiopic_name" placeholder="ሥም በአማርኛ ፊደል" />
+                    </h1>
+                </xpath>
+                <xpath expr="//field[@name='birthday']" position="replace">
+                    <field name="use_ethiopic_dob" />
+                    <label for="etcal_dob_month" string="Birth Date" />
+                    <div>
+                        <field
+                            name="etcal_dob_month"
+                            attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                            nolabel="1"
+                            class="oe_inline"
+                        />
+                        <field
+                            name="etcal_dob_day"
+                            attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                            nolabel="1"
+                            class="oe_inline"
+                        />
+                        <field
+                            name="etcal_dob_year"
+                            attrs="{'invisible': [('use_ethiopic_dob','=',False)]}"
+                            nolabel="1"
+                            class="oe_inline"
+                        />
+                        <field
+                            name="birthday"
+                            attrs="{'invisible': [('use_ethiopic_dob','=',True)]}"
+                        />
+                    </div>
+                </xpath>
+                </field>
+        </record>
+
+        <record id="view_employee_tree" model="ir.ui.view">
+            <field name="name">hr.employee.tree.l10n_et_hr</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_tree" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" readonly="1" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_kanban_view_employees" model="ir.ui.view">
+            <field name="name">hr.employee.kanban.l10n_et_hr</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.hr_kanban_view_employees" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_partner_tree2" model="ir.ui.view">
+            <field name="name">hr.employee.tree.l10n_et_hr</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_partner_tree2" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

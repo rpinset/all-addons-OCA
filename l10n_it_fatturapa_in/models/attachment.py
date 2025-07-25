@@ -230,7 +230,7 @@ class FatturaPAAttachmentIn(models.Model):
             # for the following fields
             att.invoices_number = len(fatt.FatturaElettronicaBody)
 
-            # Partner creation that may happen in `getCedPrest`
+            # Partner creation that may happen in `get_partner_from_einvoice_node`
             # triggers a recomputation
             # that messes up the cache of some fields if they are set
             # (more properly, put in cache) afterwards;
@@ -240,7 +240,7 @@ class FatturaPAAttachmentIn(models.Model):
             wiz_obj = self.env["wizard.import.fatturapa"].with_context(
                 from_attachment=att
             )
-            partner_id = wiz_obj.getCedPrest(cedentePrestatore)
+            partner_id = wiz_obj.get_partner_from_einvoice_node(cedentePrestatore)
             att.xml_supplier_id = partner_id
             inconsistencies = wiz_obj.env.context.get("inconsistencies", False)
             att.inconsistencies = inconsistencies

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="hr_employee_public_view_search" model="ir.ui.view">
+            <field name="name">hr.employee.search.l10n_et_hr</field>
+            <field name="model">hr.employee.public</field>
+            <field name="inherit_id" ref="hr.hr_employee_public_view_search" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="ethiopic_name" string="ሥም" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_employee_public_view_form" model="ir.ui.view">
+            <field name="name">hr.employee.public.form.l10n_et_hr</field>
+            <field name="model">hr.employee.public</field>
+            <field name="inherit_id" ref="hr.hr_employee_public_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//h1" position="after">
+                    <h1>
+                        <field
+                            name="ethiopic_name"
+                            placeholder="ሥም በአማርኛ ፊደል "
+                            required="1"
+                        />
+                    </h1>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_employee_public_view_tree" model="ir.ui.view">
+            <field name="name">hr.employee.tree.l10n_et_hr</field>
+            <field name="model">hr.employee.public</field>
+            <field name="inherit_id" ref="hr.hr_employee_public_view_tree" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_employee_public_view_kanban" model="ir.ui.view">
+            <field name="name">hr.employee.kanban.l10n_et_hr</field>
+            <field name="model">hr.employee.public</field>
+            <field name="inherit_id" ref="hr.hr_employee_public_view_kanban" />
+            <field name="priority">99</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="replace">
+                    <field name="display_name" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

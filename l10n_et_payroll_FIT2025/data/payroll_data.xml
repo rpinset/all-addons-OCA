@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <record id="register_FITA" model="hr.contribution.register">
+        <field
+            name="name"
+        >Federal Income Tax Withholding Register (1395/2017)</field>
+        <field name="partner_id" eval="False" />
+    </record>
+
+    <record id="hr_payroll_rule_fit" model="hr.salary.rule">
+        <field name="code">FIT2017</field>
+        <field name="name">Federal Income Tax Withholding</field>
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="condition_select">none</field>
+        <field name="appears_on_payslip" eval="False" />
+        <field name="register_id" ref="register_FITA" />
+        <field name="sequence" eval="3100" />
+        <field name="note" />
+    </record>
+
+    <record id="fitw_10" model="hr.salary.rule">
+        <field name="code">2017FIT00</field>
+        <field name="name">Exempt</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="0" />
+        <field name="condition_range_max" eval="2000.99" />
+        <field name="amount_select">fix</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3105" />
+    </record>
+    <record id="fitw_12" model="hr.salary.rule">
+        <field name="code">2017FIT15A</field>
+        <field name="name">15.00%</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="2001" />
+        <field name="condition_range_max" eval="4000.99" />
+        <field name="amount_select">percentage</field>
+        <field name="amount_percentage" eval="15" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base">(TXBLMOINCOM - 2001) * FIT_PPF</field>
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3115" />
+    </record>
+    <record id="fitw_13" model="hr.salary.rule">
+        <field name="code">2017FIT15B</field>
+        <field name="name">15%-Fixed</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="2001" />
+        <field name="condition_range_max" eval="4000.99" />
+        <field name="amount_select">code</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="300" />
+        <field name="amount_python_compute">result = 300.00 * FIT_PPF</field>
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3116" />
+    </record>
+    <record id="fitw_14" model="hr.salary.rule">
+        <field name="code">2017FIT20A</field>
+        <field name="name">20.00%</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="4001" />
+        <field name="condition_range_max" eval="7000.99" />
+        <field name="amount_select">percentage</field>
+        <field name="amount_percentage" eval="20" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base">(TXBLMOINCOM - 4001) * FIT_PPF</field>
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3120" />
+    </record>
+    <record id="fitw_15" model="hr.salary.rule">
+        <field name="code">2017FIT20B</field>
+        <field name="name">20%-Fixed</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="4001" />
+        <field name="condition_range_max" eval="7000.99" />
+        <field name="amount_select">code</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="500.00" />
+        <field name="amount_python_compute">result = 500.00 * FIT_PPF</field>
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3121" />
+    </record>
+    <record id="fitw_16" model="hr.salary.rule">
+        <field name="code">2017FIT25A</field>
+        <field name="name">25.00%</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="7001" />
+        <field name="condition_range_max" eval="10000.99" />
+        <field name="amount_select">percentage</field>
+        <field name="amount_percentage" eval="25" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base">(TXBLMOINCOM - 7001) * FIT_PPF</field>
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3125" />
+    </record>
+    <record id="fitw_17" model="hr.salary.rule">
+        <field name="code">2017FIT25B</field>
+        <field name="name">25%-Fixed</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="7001" />
+        <field name="condition_range_max" eval="10000.99" />
+        <field name="amount_select">code</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="850.00" />
+        <field name="amount_python_compute">result = 850.00 * FIT_PPF</field>
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3126" />
+    </record>
+    <record id="fitw_18" model="hr.salary.rule">
+        <field name="code">2017FIT30A</field>
+        <field name="name">30.00%</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="10001" />
+        <field name="condition_range_max" eval="14000.99" />
+        <field name="amount_select">percentage</field>
+        <field name="amount_percentage" eval="30" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base">(TXBLMOINCOM - 10001) * FIT_PPF</field>
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3130" />
+    </record>
+    <record id="fitw_19" model="hr.salary.rule">
+        <field name="code">2017FIT30B</field>
+        <field name="name">30%-Fixed</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="10001" />
+        <field name="condition_range_max" eval="14000" />
+        <field name="amount_select">code</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="1350.00" />
+        <field name="amount_python_compute">result = 1350.00 * FIT_PPF</field>
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3131" />
+    </record>
+    <record id="fitw_20" model="hr.salary.rule">
+        <field name="code">2017FIT35A</field>
+        <field name="name">35.00%</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="14000" />
+        <field name="condition_range_max" eval="100000000000" />
+        <field name="amount_select">percentage</field>
+        <field name="amount_percentage" eval="35" />
+        <field name="amount_fix" eval="0" />
+        <field name="amount_python_compute" />
+        <field name="amount_percentage_base">(TXBLMOINCOM - 14000.00) * FIT_PPF</field>
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3135" />
+    </record>
+    <record id="fitw_21" model="hr.salary.rule">
+        <field name="code">2017FIT35B</field>
+        <field name="name">35%-Fixed</field>
+        <field name="condition_select">range</field>
+        <field name="condition_range">TXBLMOINCOM</field>
+        <field name="condition_range_min" eval="14000" />
+        <field name="condition_range_max" eval="100000000000" />
+        <field name="amount_select">code</field>
+        <field name="amount_percentage" eval="0" />
+        <field name="amount_fix" eval="2050.00" />
+        <field name="amount_python_compute">result = 2050.00 * FIT_PPF</field>
+        <field name="amount_percentage_base" />
+        <field name="parent_rule_id" ref="hr_payroll_rule_fit" />
+        <field name="category_id" ref="l10n_et_payroll_category.FITA" />
+        <field name="sequence" eval="3136" />
+    </record>
+
+</odoo>

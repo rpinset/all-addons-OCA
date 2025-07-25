@@ -3256,6 +3256,7 @@ addon | version | maintainers | summary
 [hr_timesheet_activity_begin_end](hr_timesheet_activity_begin_end/) | 14.0.1.0.2 |  | Timesheet Activities - Begin/End Hours
 [hr_timesheet_analysis](hr_timesheet_analysis/) | 14.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Analyze tracked time in Graph views
 [hr_timesheet_employee_analytic_tag](hr_timesheet_employee_analytic_tag/) | 14.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Hr Timesheet Employee Analytic Tag
+[hr_timesheet_portal](hr_timesheet_portal/) | 14.0.1.0.0 |  | Fill in timesheets via the portal
 [hr_timesheet_predefined_description](hr_timesheet_predefined_description/) | 14.0.1.0.0 | <a href='https://github.com/juanjosesegui-tecnativa'><img src='https://github.com/juanjosesegui-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juanjosesegui-tecnativa'/></a> | Predefined descriptions for timesheet entries
 [hr_timesheet_purchase_order](hr_timesheet_purchase_order/) | 14.0.1.1.0 | <a href='https://github.com/dessanhemrayev'><img src='https://github.com/dessanhemrayev.png' width='32' height='32' style='border-radius:50%;' alt='dessanhemrayev'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | HR Timesheet Purchase Order
 [hr_timesheet_report](hr_timesheet_report/) | 14.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Generate Timesheet Report from Task Logs
@@ -4303,7 +4304,17 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[ethiopic_calendar](ethiopic_calendar/) | 14.0.1.0.0 |  | Date calculations in the Ethiopian calendar
+[l10n_et_hr](l10n_et_hr/) | 14.0.1.0.0 |  | Ethiopian localization of basic HR records
+[l10n_et_hr_employee_wizard](l10n_et_hr_employee_wizard/) | 14.0.1.0.0 |  | Ethiopian localization of new employee wizard
+[l10n_et_payroll_FIT2016](l10n_et_payroll_FIT2016/) | 14.0.1.0.0 |  | Ethiopian Federal Income Tax tables (rev. 2008)
+[l10n_et_payroll_FIT2025](l10n_et_payroll_FIT2025/) | 14.0.1.0.0 |  | Ethiopian Federal Income Tax tables (rev. 2017)
+[l10n_et_payroll_category](l10n_et_payroll_category/) | 14.0.1.0.0 |  | Additional payroll categories for Ethiopia
+[l10n_et_tz](l10n_et_tz/) | 14.0.1.0.0 |  | Set default timezone to Africa/Addis_Ababa
 
 [//]: # (end addons)
 
@@ -4770,8 +4781,8 @@ addon | version | maintainers | summary
 [l10n_it_delivery_note_rma](l10n_it_delivery_note_rma/) | 14.0.1.1.0 | <a href='https://github.com/solo4games'><img src='https://github.com/solo4games.png' width='32' height='32' style='border-radius:50%;' alt='solo4games'/></a> <a href='https://github.com/CetmixGitDrone'><img src='https://github.com/CetmixGitDrone.png' width='32' height='32' style='border-radius:50%;' alt='CetmixGitDrone'/></a> | Add Oportunity to create RMA from DN with wizard and smart button to DN view
 [l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.5 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.0 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
-[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.2 |  | Ricezione fatture elettroniche
+[l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.1 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
+[l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.3 |  | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 14.0.1.0.0 |  | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 14.0.1.1.2 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Modulo ponte tra e-fattura in acquisto e inversione contabile
 [l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 14.0.3.9.3 |  | Emissione fatture elettroniche
@@ -5486,7 +5497,7 @@ addon | version | maintainers | summary
 [l10n_es_mis_report](l10n_es_mis_report/) | 14.0.1.4.0 |  | Plantillas MIS Builder para informes contables españoles
 [l10n_es_partner](l10n_es_partner/) | 14.0.1.0.6 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 14.0.1.0.0 |  | Añade los datos del registro mercantil a la empresa
-[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 14.0.1.0.6 |  | Exportación de fichero bancario Confirming estándar AEF
+[l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 14.0.1.0.7 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 14.0.1.0.4 |  | Exportación de fichero bancario Confirming para Banco Sabadell
 [l10n_es_pos](l10n_es_pos/) | 14.0.3.3.0 |  | Punto de venta adaptado a la legislación española
 [l10n_es_pos_by_device](l10n_es_pos_by_device/) | 14.0.1.1.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | Punto de venta adaptado a la legislación española por dispositivo
@@ -6499,7 +6510,7 @@ addon | version | maintainers | summary
 [stock_picking_group_by_partner_by_carrier_sale_line_position](stock_picking_group_by_partner_by_carrier_sale_line_position/) | 14.0.1.0.2 |  | Glue module for sale position and delivery report grouped
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 14.0.2.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
 [stock_picking_report_valued](stock_picking_report_valued/) | 14.0.1.2.3 |  | Adding Valued Picking on Delivery Slip report
-[stock_quant_history](stock_quant_history/) | 14.0.1.2.1 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> <a href='https://github.com/StephaneMangin'><img src='https://github.com/StephaneMangin.png' width='32' height='32' style='border-radius:50%;' alt='StephaneMangin'/></a> | Re-generate stock quants for given date
+[stock_quant_history](stock_quant_history/) | 14.0.1.3.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> <a href='https://github.com/StephaneMangin'><img src='https://github.com/StephaneMangin.png' width='32' height='32' style='border-radius:50%;' alt='StephaneMangin'/></a> | Re-generate stock quants for given date
 [stock_quant_history_queued](stock_quant_history_queued/) | 14.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Use Queue jop to generate stock quants snapshots
 [stock_quantity_history_location](stock_quantity_history_location/) | 14.0.1.0.1 |  | Provides stock quantity by location on past date
 [stock_report_quantity_by_location](stock_report_quantity_by_location/) | 14.0.1.0.0 |  | Stock Report Quantity By Location

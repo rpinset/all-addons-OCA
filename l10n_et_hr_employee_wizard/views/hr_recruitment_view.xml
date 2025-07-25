@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="hr_applicant_view_form">
+            <field name="name">Jobs - Recruitment Form</field>
+            <field name="model">hr.applicant</field>
+            <field name="priority">99</field>
+            <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form" />
+            <field name="arch" type="xml">
+                <data>
+
+                    <xpath expr="//div[hasclass('oe_title')]" position="inside">
+                        <label for="ethiopic_name" class="oe_edit_only" />
+                        <h2><field
+                                name="ethiopic_name"
+                                placeholder="ስም በአማርኛ ፊደል"
+                            /></h2>
+                    </xpath>
+
+                    <xpath expr="//field[@name='type_id']" position="replace">
+                        <field name="gender" />
+                        <field name="birth_date" />
+                        <label for="etcal_dob_day" string="Ethiopic DoB" />
+                        <div>
+                            <field name="etcal_dob_day" class="oe_inline" />
+                            <field name="etcal_dob_month" class="oe_inline" />
+                            <field name="etcal_dob_year" class="oe_inline" />
+                        </div>
+                        <field name="education" />
+                    </xpath>
+
+                </data>
+            </field>
+        </record>
+
+    </data>
+</odoo>

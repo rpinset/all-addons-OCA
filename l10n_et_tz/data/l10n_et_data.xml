@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Change admin user's time zone to Ethiopia -->
+        <record id="base.user_root" model="res.users">
+            <field name="tz">Africa/Addis_Ababa</field>
+        </record>
+        <record id="base.user_admin" model="res.users">
+            <field name="tz">Africa/Addis_Ababa</field>
+        </record>
+
+    </data>
+</odoo>
