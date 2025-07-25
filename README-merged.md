@@ -859,7 +859,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 15.0.1.3.3 |  | Account Credit Control
 [account_financial_risk](account_financial_risk/) | 15.0.1.7.3 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
-[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 15.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
+[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 15.0.1.3.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 15.0.1.0.2 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 15.0.3.0.1 | <a href='https://github.com/Daniel-CA'><img src='https://github.com/Daniel-CA.png' width='32' height='32' style='border-radius:50%;' alt='Daniel-CA'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/omar7r'><img src='https://github.com/omar7r.png' width='32' height='32' style='border-radius:50%;' alt='omar7r'/></a> <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Risk insurance partner information
 [sale_financial_risk](sale_financial_risk/) | 15.0.1.3.0 |  | Manage partner risk in sales orders
@@ -1889,7 +1889,7 @@ addon | version | maintainers | summary
 [sale_order_type_quotation_number](sale_order_type_quotation_number/) | 15.0.1.2.0 |  | Use quotation sequence depending on sale type
 [sale_order_warn_message](sale_order_warn_message/) | 15.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_incoterm](sale_partner_incoterm/) | 15.0.1.2.0 |  | Set the customer preferred incoterm on each sales order
-[sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
+[sale_partner_selectable_option](sale_partner_selectable_option/) | 15.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_payment_sheet](sale_payment_sheet/) | 15.0.1.4.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
 [sale_planner_calendar](sale_planner_calendar/) | 15.0.4.0.0 |  | Sale planner calendar
 [sale_pricelist_global_rule](sale_pricelist_global_rule/) | 15.0.1.0.3 |  | Apply a global rule to all sale order
@@ -2459,13 +2459,13 @@ addon | version | maintainers | summary
 [survey_crm_generation](survey_crm_generation/) | 15.0.1.1.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Link CRM leads to sale orders generated from surveys
 [survey_legal](survey_legal/) | 15.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Require legal terms before survey submit
-[survey_multi_company](survey_multi_company/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Company security for surveys
+[survey_multi_company](survey_multi_company/) | 15.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Company security for surveys
 [survey_next_survey_update_partner](survey_next_survey_update_partner/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Update the partner values when it's generated from the previous survey
 [survey_partner_representative](survey_partner_representative/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Fill the survey on behalf of others
 [survey_placeholder](survey_placeholder/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Placeholders in survey questions
 [survey_resource_booking](survey_resource_booking/) | 15.0.1.0.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Access survey answers from resource booking
 [survey_result_mail](survey_result_mail/) | 15.0.1.1.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Send survey answers to the survey user
-[survey_sale_generation](survey_sale_generation/) | 15.0.2.2.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate sale orders from surveys
+[survey_sale_generation](survey_sale_generation/) | 15.0.2.2.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate sale orders from surveys
 [survey_skip_start](survey_skip_start/) | 15.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Skip the surveys start screen and go directly to fill the form
 [survey_xlsx](survey_xlsx/) | 15.0.1.0.0 |  | XLSX Report to show the survey results
 
@@ -6423,7 +6423,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 15.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 15.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 15.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
-[mgmtsystem_review](mgmtsystem_review/) | 15.0.1.0.0 |  | Management System - Review
+[mgmtsystem_review](mgmtsystem_review/) | 15.0.1.0.1 |  | Management System - Review
 [mgmtsystem_survey](mgmtsystem_survey/) | 15.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)
@@ -6544,7 +6544,7 @@ addon | version | maintainers | summary
 [purchase_order_approved](purchase_order_approved/) | 15.0.1.1.0 |  | Add a new state 'Approved' in purchase orders.
 [purchase_order_general_discount](purchase_order_general_discount/) | 15.0.1.0.2 |  | General discount per purchase order
 [purchase_order_line_deep_sort](purchase_order_line_deep_sort/) | 15.0.1.0.0 |  | Purchase Order Line Sort
-[purchase_order_line_menu](purchase_order_line_menu/) | 15.0.1.2.0 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_menu](purchase_order_line_menu/) | 15.0.1.3.0 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_original_date](purchase_order_line_original_date/) | 15.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds the Original Delivery Date to PO lines.
 [purchase_order_line_price_history](purchase_order_line_price_history/) | 15.0.1.0.1 |  | Purchase order line price history
 [purchase_order_line_price_history_discount](purchase_order_line_price_history_discount/) | 15.0.1.0.1 |  | Purchase order line price history discount
@@ -6578,7 +6578,7 @@ addon | version | maintainers | summary
 [purchase_receipt_percentage](purchase_receipt_percentage/) | 15.0.1.0.0 |  | Purchase - Receipt Percentage
 [purchase_reception_notify](purchase_reception_notify/) | 15.0.1.0.0 |  | Purchase Reception Notify
 [purchase_reception_status](purchase_reception_status/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
-[purchase_reception_status_line](purchase_reception_status_line/) | 15.0.2.0.0 | <a href='https://github.com/DavidJForgeFlow'><img src='https://github.com/DavidJForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='DavidJForgeFlow'/></a> | Add reception status on purchase order lines
+[purchase_reception_status_line](purchase_reception_status_line/) | 15.0.2.1.0 | <a href='https://github.com/DavidJForgeFlow'><img src='https://github.com/DavidJForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='DavidJForgeFlow'/></a> | Add reception status on purchase order lines
 [purchase_representative](purchase_representative/) | 15.0.1.0.0 |  | Purchase Representatives will be the point of contact for RFQ's and PO's
 [purchase_request](purchase_request/) | 15.0.1.2.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_cancel_confirm](purchase_request_cancel_confirm/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Request Cancel Confirm

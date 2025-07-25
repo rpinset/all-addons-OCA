@@ -161,11 +161,16 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 6916c2bafcd9d02cd45d3b24712b50398ea10060
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 14 10:20:49 2025 +0000
+commit de34fb018895cf285920672a6f5a643e20dacf70
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Jul 25 15:49:01 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 52.6% (49 of 93 strings)
+    
+    Translation: credit-control-15.0/credit-control-15.0-account_financial_risk
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_financial_risk/it/
 
 
 ## data-protection
@@ -344,16 +349,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 392f89676d689b609abc6e3de154fb8a3c29cc38
+commit d94b57bb23828f8443f6c37138282f71cc8abf95
 Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 8 12:14:46 2025 +0000
+Date:   Thu Jul 24 14:05:42 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_stock_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_stock_secondary_unit/
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_partner_selectable_option
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_partner_selectable_option/
 
 
 ## crm
@@ -421,9 +426,9 @@ Date:   Thu Jul 17 08:17:43 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 93747000f5a8a9d558a1d84f6f6ccea599b1e9e0
+commit 9afbc4f095a45209625d694c855daf3ad91d5f6b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jun 8 13:56:35 2025 +0000
+Date:   Wed Jul 23 14:52:15 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1091,11 +1096,16 @@ Date:   Sat Jun 21 10:44:51 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit b7bf418575688e13b2bb24e9dfa8e30bebea6dcb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:47:13 2025 +0000
+commit 36ba0acf1c718409ea50475c06891d265541ae1f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Jul 22 06:48:41 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (9 of 9 strings)
+    
+    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp_exclude_moves_adu_calc
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp_exclude_moves_adu_calc/it/
 
 
 ## wms
@@ -1127,16 +1137,13 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 8624e79e340929cd03c558d9a26bc3d2e52410de
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:44:50 2025 +0000
+commit 0a0f25309a1055c159a7d76cb5890e4760046fca
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Fri Jul 25 17:03:37 2025 +0200
 
-    Translated using Weblate (Italian)
+    Update copier template + fix Odoo version
     
-    Currently translated at 100.0% (159 of 159 strings)
-    
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/it/
+    Changed in 93dde48fe5a722e2b61ab3b538d427068c46283d
 
 
 ## pms
@@ -1150,16 +1157,11 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit b6fc8f0958ab55e0d7a86f29408c5ca4036f5a6d
-Author: Weblate <noreply@weblate.org>
-Date:   Wed Jul 9 19:24:48 2025 +0000
+commit 11026033d5791eaf2c0deaff6da42b8e9c4fd3f7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Jul 25 11:26:18 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_reception_status
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_reception_status/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1395,11 +1397,16 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit f81f01ef5a1cda83fb29c1502934928d93dc2c29
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 14:24:27 2025 +0000
+commit 7f18feb7465d48f6db8d52b5d21f31b07469dbda
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jul 23 11:33:25 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 65.8% (83 of 126 strings)
+    
+    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
 
 
 ## community-data-files
