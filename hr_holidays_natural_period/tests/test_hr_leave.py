@@ -52,7 +52,7 @@ class TestHrLeave(BaseCommon):
     def _create_leave_allocation(self, leave_type, days):
         leave_allocation_form = Form(
             self.env["hr.leave.allocation"].with_context(
-                default_date_from="2023-01-01",
+                default_date_from="2022-12-31",
                 default_date_to="%s-12-31" % (fields.Date.today().year),
             )
         )
@@ -111,6 +111,8 @@ class TestHrLeave(BaseCommon):
             }
         )
         self.employee.resource_calendar_id = calendar
+        leave_allocation = self._create_leave_allocation(self.leave_type, 9)
+        leave_allocation.sudo().action_validate()
         leave = self._create_hr_leave(self.leave_type, "2022-12-31", "2023-01-08")
         self.assertEqual(leave.number_of_days, 9.0)
         self.assertEqual(leave.number_of_days_display, 9.0)
