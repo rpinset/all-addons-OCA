@@ -4,4 +4,4 @@ from . import detailed_activity_statement
 from . import outstanding_statement
 from . import activity_statement_xlsx
 from . import detailed_activity_statement_xlsx
-from . import outstanting_statement_xlsx
+from . import outstanding_statement_xlsx

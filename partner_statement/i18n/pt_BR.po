@@ -19,63 +19,54 @@ msgstr ""
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "1 - 30 Days"
 msgstr "1 - 30 Dias"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "1 Month"
 msgstr "1 Mês"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "121 Days +"
 msgstr "121 Dias +"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "2 Months"
 msgstr "2 Meses"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "3 Months"
 msgstr "3 Meses"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "31 - 60 Days"
 msgstr "31 - 60 Dias"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "4 Months"
 msgstr "4 Meses"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "61 - 90 Days"
 msgstr "61 - 90 Dias"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "91 - 120 Days"
 msgstr "91 - 120 Dias"
 
@@ -192,7 +183,6 @@ msgstr ""
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_activity_statement_html
-#, python-format
 msgid "Activity Statement"
 msgstr "Relatório de Atividade"
 
@@ -251,15 +241,13 @@ msgstr "Método de Envelhecimento"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Aging Report at %(end)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "Aging Report at %(ending_date)s in %(currency)s"
 msgstr ""
 
@@ -267,16 +255,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#, python-format
 msgid "Applied Amount"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Balance"
 msgstr "Saldo"
 
@@ -284,7 +270,6 @@ msgstr "Saldo"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#, python-format
 msgid "Balance Forward"
 msgstr "Saldo Previsto"
 
@@ -323,7 +308,6 @@ msgstr "Criado em"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "Current"
 msgstr "Atual"
 
@@ -331,10 +315,9 @@ msgstr "Atual"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Date"
 msgstr "Data"
 
@@ -356,8 +339,7 @@ msgstr "Data Inicial"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Date:"
 msgstr ""
 
@@ -365,10 +347,9 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Description"
 msgstr "Descrição"
 
@@ -377,7 +358,6 @@ msgstr "Descrição"
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement
 #: model:ir.actions.report,name:partner_statement.action_print_detailed_activity_statement_html
-#, python-format
 msgid "Detailed Activity Statement"
 msgstr ""
 
@@ -399,7 +379,6 @@ msgstr ""
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-#, python-format
 msgid ""
 "Detailed Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
@@ -408,7 +387,6 @@ msgstr ""
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-#, python-format
 msgid ""
 "Detailed Supplier Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
@@ -432,9 +410,8 @@ msgstr "Não exibir parceiros sem entradas vencidas"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Due Date"
 msgstr "Data de Vencimento"
 
@@ -452,17 +429,15 @@ msgstr "Habilitar Extratos de Pendência da OCA"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Ending Balance"
 msgstr "Saldo Final"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
-#, python-format
 msgid "Ending Balance up to %(ending_date)s in %(currency)s"
 msgstr ""
 
@@ -501,7 +476,6 @@ msgstr "ID"
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#, python-format
 msgid "Initial Balance"
 msgstr ""
 
@@ -538,7 +512,6 @@ msgstr "Número do Parceiro"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "Older"
 msgstr "Antigo"
 
@@ -546,19 +519,17 @@ msgstr "Antigo"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Open Amount"
 msgstr "Montante Aberto"
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.outstanding_balance
-#, python-format
 msgid "Original"
 msgstr "Original"
 
@@ -566,17 +537,15 @@ msgstr "Original"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: model_terms:ir.ui.view,arch_db:partner_statement.activity_balance
-#, python-format
 msgid "Original Amount"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 #: model:ir.actions.report,name:partner_statement.action_print_outstanding_statement
 #: model:ir.actions.report,name:partner_statement.action_print_outstanding_statement_html
 #: model_terms:ir.ui.view,arch_db:partner_statement.res_config_settings_view_form
-#, python-format
 msgid "Outstanding Statement"
 msgstr "Extrato de Pendência"
 
@@ -634,7 +603,6 @@ msgstr "Pagável"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-#, python-format
 msgid "Payment"
 msgstr "Pagamento"
 
@@ -646,7 +614,6 @@ msgstr "Defina padrões sobre Extratos de Atividade."
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
-#, python-format
 msgid "Prior Balance up to %(ending_date)s in %(currency)s"
 msgstr ""
 
@@ -662,8 +629,7 @@ msgstr "Recebível"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Reference Number"
 msgstr ""
 
@@ -726,7 +692,6 @@ msgstr "Assistente de Relatório de Extratos Comuns"
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-#, python-format
 msgid "Statement between %(starting_date)s and %(ending_date)s in %(currency)s"
 msgstr ""
 
@@ -734,8 +699,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Statement from:"
 msgstr ""
 
@@ -750,8 +714,7 @@ msgstr "Extrato da Conta"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Statement of Account from %s"
 msgstr ""
 
@@ -759,36 +722,31 @@ msgstr ""
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "Statement to:"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/outstanding_statement.py:0
-#, python-format
 msgid "Statement up to %(ending_date)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
-#, python-format
 msgid "Supplier Ending Balance up to %(ending_date)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/detailed_activity_statement.py:0
-#, python-format
 msgid "Supplier Prior Balance up to %(ending_date)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement.py:0
-#, python-format
 msgid ""
 "Supplier Statement between %(starting_date)s and %(ending_date)s in "
 "%(currency)s"
@@ -797,14 +755,12 @@ msgstr ""
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/outstanding_statement.py:0
-#, python-format
 msgid "Supplier Statement up to %(ending_date)s in %(currency)s"
 msgstr ""
 
 #. module: partner_statement
 #. odoo-python
 #: code:addons/partner_statement/report/report_statement_common.py:0
-#, python-format
 msgid "Total"
 msgstr "Total"
 
@@ -822,8 +778,7 @@ msgstr "Usar extrato de pendências"
 #. odoo-python
 #: code:addons/partner_statement/report/activity_statement_xlsx.py:0
 #: code:addons/partner_statement/report/detailed_activity_statement_xlsx.py:0
-#: code:addons/partner_statement/report/outstanting_statement_xlsx.py:0
-#, python-format
+#: code:addons/partner_statement/report/outstanding_statement_xlsx.py:0
 msgid "VAT:"
 msgstr ""
 

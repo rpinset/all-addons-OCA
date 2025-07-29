@@ -97,7 +97,7 @@ class TestAccountPaymentOrder(BaseCommon):
             )
         )
         line_create_form.date_type = "due"
-        line_create_form.due_date = fields.Date.today()
+        line_create_form.filter_date = fields.Date.today()
         line_create = line_create_form.save()
         line_create.populate()
         line_create.create_payment_lines()
@@ -115,7 +115,7 @@ class TestAccountPaymentOrder(BaseCommon):
             )
         )
         line_create_form.date_type = "due"
-        line_create_form.due_date = fields.Date.today()
+        line_create_form.filter_date = fields.Date.today()
         line_create = line_create_form.save()
         line_create.populate()
         line_create.create_payment_lines()

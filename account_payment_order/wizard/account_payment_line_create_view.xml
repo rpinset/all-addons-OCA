@@ -12,15 +12,12 @@
             <form>
                 <group name="main">
                     <field name="date_type" />
+                    <field name="due_on" />
+                    <field name="filter_date" />
                     <field
-                        name="move_date"
-                        required="date_type == 'move'"
-                        invisible="date_type != 'move'"
-                    />
-                    <field
-                        name="due_date"
-                        required="date_type == 'due'"
-                        invisible="date_type != 'due'"
+                        name="filter_date_end"
+                        required="due_on == 'between'"
+                        invisible="due_on != 'between'"
                     />
                     <field
                         name="journal_ids"

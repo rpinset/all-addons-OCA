@@ -102,7 +102,7 @@ class ReportStatementCommon(models.AbstractModel):
                   (pc.id IS NOT NULL AND
                       pc.max_date <= %(date_end)s) OR
                   (pd.id IS NULL AND pc.id IS NULL)
-                ) AND l.date <= %(date_end)s AND not l.blocked
+                ) AND l.date <= %(date_end)s
                   AND m.state IN ('posted')
                 AND aa.account_type = %(account_type)s
                 AND CASE
@@ -473,8 +473,7 @@ class ReportStatementCommon(models.AbstractModel):
                         line["currency_id"], currencies, 0.0, 0.0
                     )
                 line_currency = currency_dict[line["currency_id"]]
-                if not line["blocked"]:
-                    line_currency["amount_due"] += line["open_amount"]
+                line_currency["amount_due"] += line["open_amount"]
                 line["balance"] = line_currency["amount_due"]
                 line["date"] = format_date(
                     line["date"], date_formats.get(partner_id, default_fmt)
@@ -496,12 +495,10 @@ class ReportStatementCommon(models.AbstractModel):
                     )
                 line_currency = currency_dict[line["currency_id"]]
                 if not is_activity:
-                    if not line["blocked"]:
-                        line_currency["amount_due"] += line[amount_field]
+                    line_currency["amount_due"] += line[amount_field]
                     line["balance"] = line_currency["amount_due"]
                 else:
-                    if not line["blocked"]:
-                        line_currency["ending_balance"] += line[amount_field]
+                    line_currency["ending_balance"] += line[amount_field]
                     line["balance"] = line_currency["ending_balance"]
                 line["outside-date-rank"] = False
                 line["date"] = format_date(
@@ -523,8 +520,7 @@ class ReportStatementCommon(models.AbstractModel):
                         line2["applied_amount"] = line2["open_amount"]
                         if line2["date"] >= date_start and line2["date"] <= date_end:
                             line2["outside-date-rank"] = False
-                            if not line2["blocked"]:
-                                line["applied_amount"] += line2["open_amount"]
+                            line["applied_amount"] += line2["open_amount"]
                         else:
                             line2["outside-date-rank"] = True
                         line2["date"] = format_date(
@@ -542,8 +538,7 @@ class ReportStatementCommon(models.AbstractModel):
                             )
                 if is_activity:
                     line["open_amount"] = line["amount"] + line["applied_amount"]
-                    if not line["blocked"]:
-                        line_currency["amount_due"] += line["open_amount"]
+                    line_currency["amount_due"] += line["open_amount"]
 
             if is_detailed:
                 for line_currency in currency_dict.values():
@@ -551,8 +546,7 @@ class ReportStatementCommon(models.AbstractModel):
 
             for line in ending_lines.get(partner_id, []):
                 line_currency = currency_dict[line["currency_id"]]
-                if not line["blocked"]:
-                    line_currency["amount_due"] += line["open_amount"]
+                line_currency["amount_due"] += line["open_amount"]
                 line["balance"] = line_currency["amount_due"]
                 line["date"] = format_date(
                     line["date"], date_formats.get(partner_id, default_fmt)

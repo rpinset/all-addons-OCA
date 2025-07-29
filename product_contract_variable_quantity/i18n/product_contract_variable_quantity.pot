@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_contract_variable_quantity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_contract_variable_quantity
+#: model:ir.model,name:product_contract_variable_quantity.model_contract_line
+msgid "Contract Line"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__product_contract_configurator__qty_type__fixed
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__product_template__qty_type__fixed
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__sale_order_line__qty_type__fixed
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__sale_order_line_contract_mixin__qty_type__fixed
+msgid "Fixed quantity"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model,name:product_contract_variable_quantity.model_product_template
+msgid "Product"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_contract_configurator__qty_formula_id
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_product__qty_formula_id
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_template__qty_formula_id
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_sale_order_line__qty_formula_id
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_sale_order_line_contract_mixin__qty_formula_id
+msgid "Qty. formula"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_contract_configurator__qty_type
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_product__qty_type
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_product_template__qty_type
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_sale_order_line__qty_type
+#: model:ir.model.fields,field_description:product_contract_variable_quantity.field_sale_order_line_contract_mixin__qty_type
+msgid "Qty. type"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model_terms:ir.ui.view,arch_db:product_contract_variable_quantity.product_template_form_view
+msgid "Quantity to invoice"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model,name:product_contract_variable_quantity.model_sale_order_line_contract_mixin
+msgid "Sale Order Line Contract Mixin"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model,name:product_contract_variable_quantity.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: product_contract_variable_quantity
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__product_contract_configurator__qty_type__variable
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__product_template__qty_type__variable
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__sale_order_line__qty_type__variable
+#: model:ir.model.fields.selection,name:product_contract_variable_quantity.selection__sale_order_line_contract_mixin__qty_type__variable
+msgid "Variable quantity"
+msgstr ""

@@ -88,7 +88,7 @@ class ActivityStatement(models.AbstractModel):
             ) as pc ON pc.credit_move_id = l.id
             WHERE l.partner_id IN %(partners)s
                 AND aa.id not in %(excluded_accounts_ids)s
-                AND l.date < %(date_start)s AND not l.blocked
+                AND l.date < %(date_start)s
                 AND m.state IN ('posted')
                 AND aa.account_type = %(account_type)s
                 AND (
@@ -181,7 +181,7 @@ class ActivityStatement(models.AbstractModel):
                         THEN %(payment_ref)s
                     ELSE m.ref
                 END as case_ref,
-                l.blocked, l.currency_id, l.company_id,
+                l.currency_id, l.company_id,
                 sum(CASE WHEN (l.currency_id is not null AND l.amount_currency > 0.0)
                     THEN l.amount_currency
                     ELSE l.debit
@@ -213,7 +213,7 @@ class ActivityStatement(models.AbstractModel):
                 CASE WHEN (aj.type IN ('sale', 'purchase'))
                     THEN l.name
                     ELSE '/'
-                END, case_ref, l.blocked, l.currency_id, l.company_id
+                END, case_ref, l.currency_id, l.company_id
         """,
                 locals(),
             ),
@@ -226,7 +226,7 @@ class ActivityStatement(models.AbstractModel):
                 f"""
             SELECT {sub}.partner_id, {sub}.move_id, {sub}.date, {sub}.date_maturity,
                 {sub}.name, {sub}.case_ref as ref, {sub}.debit, {sub}.credit, {sub}.ids,
-                {sub}.debit-{sub}.credit as amount, {sub}.blocked,
+                {sub}.debit-{sub}.credit as amount,
                 COALESCE({sub}.currency_id, c.currency_id) AS currency_id
             FROM {sub}
             JOIN res_company c ON (c.id = {sub}.company_id)
@@ -250,7 +250,7 @@ class ActivityStatement(models.AbstractModel):
              Q2 AS ({})
         SELECT partner_id, move_id, date, date_maturity, ids,
             COALESCE(name, '') as name, COALESCE(ref, '') as ref,
-            debit, credit, amount, blocked, currency_id
+            debit, credit, amount, currency_id
         FROM Q2
         ORDER BY date, date_maturity, move_id""".format(
                 self._display_activity_lines_sql_q1(
@@ -280,7 +280,7 @@ class ActivityStatement(models.AbstractModel):
             self._cr.mogrify(
                 f"""
             SELECT l.id as rel_id, m.name AS move_id, l.partner_id, l.date, l.name,
-                l.blocked, l.currency_id, l.company_id, {sub}.id,
+                l.currency_id, l.company_id, {sub}.id,
             CASE WHEN l.ref IS NOT NULL
                 THEN l.ref
                 ELSE m.ref
@@ -319,7 +319,7 @@ class ActivityStatement(models.AbstractModel):
                     THEN l.ref
                     ELSE m.ref
                 END, {sub}.id,
-                l.blocked, l.currency_id, l.balance, l.amount_currency, l.company_id
+                l.currency_id, l.balance, l.amount_currency, l.company_id
         """,
                 locals(),
             ),
@@ -342,7 +342,7 @@ class ActivityStatement(models.AbstractModel):
              Q6 AS ({})
         SELECT partner_id, currency_id, move_id, date, date_maturity, debit,
                credit, amount, open_amount, COALESCE(name, '') as name,
-               COALESCE(ref, '') as ref, blocked, id
+               COALESCE(ref, '') as ref, id
         FROM Q6
         ORDER BY date, date_maturity, move_id""".format(
                 self._display_activity_lines_sql_q1(
