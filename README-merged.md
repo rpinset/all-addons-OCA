@@ -616,7 +616,7 @@ addon | version | maintainers | summary
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 15.0.1.0.0 |  | Operating Unit in MRP
 [mrp_operating_unit_access_all](mrp_operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Access all OUs' MRP
-[operating_unit](operating_unit/) | 15.0.1.1.0 |  | An operating unit (OU) is an organizational entity part of a company
+[operating_unit](operating_unit/) | 15.0.1.1.1 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [project_operating_unit](project_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
 [purchase_operating_unit](purchase_operating_unit/) | 15.0.1.2.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
@@ -2728,7 +2728,7 @@ addon | version | maintainers | summary
 [edi_oca](edi_oca/) | 15.0.1.7.4 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Define backends, exchange types, exchange records, basic automation and views for handling EDI exchanges.
 [edi_stock_oca](edi_stock_oca/) | 15.0.1.0.0 |  | Define EDI Configuration for Stock
 [edi_storage_oca](edi_storage_oca/) | 15.0.1.3.0 |  | Base module to allow exchanging files via storage backend (eg: SFTP).
-[edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.3 |  | Sends account invoices to Voxel.
+[edi_voxel_account_invoice_oca](edi_voxel_account_invoice_oca/) | 15.0.1.0.4 |  | Sends account invoices to Voxel.
 [edi_voxel_oca](edi_voxel_oca/) | 15.0.1.0.1 |  | Base module for connecting with Voxel
 [edi_voxel_sale_order_import_oca](edi_voxel_sale_order_import_oca/) | 15.0.1.0.1 |  | Import sale order from Voxel.
 [edi_voxel_sale_secondary_unit_oca](edi_voxel_sale_secondary_unit_oca/) | 15.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Map Voxel UoM to Sale Secondary UoM and Use Them
@@ -5947,7 +5947,7 @@ addon | version | maintainers | summary
 [stock_available_mrp](stock_available_mrp/) | 15.0.1.0.3 |  | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 15.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 15.0.1.0.0 |  | Stock Quantity Change Reason
-[stock_cycle_count](stock_cycle_count/) | 15.0.2.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
+[stock_cycle_count](stock_cycle_count/) | 15.0.2.2.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user.
 [stock_demand_estimate](stock_demand_estimate/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 15.0.1.2.0 |  | Allows to create demand estimates.
 [stock_free_quantity](stock_free_quantity/) | 15.0.1.0.1 |  | Stock Free Quantity
@@ -6403,18 +6403,18 @@ addon | version | maintainers | summary
 [document_page_quality_manual](document_page_quality_manual/) | 15.0.1.0.0 |  | Quality Manual
 [document_page_work_instruction](document_page_work_instruction/) | 15.0.1.0.0 |  | Document Management - Wiki - Work Instructions
 [mgmtsystem](mgmtsystem/) | 15.0.1.0.1 |  | Management System
-[mgmtsystem_action](mgmtsystem_action/) | 15.0.1.0.1 |  | Management System - Action
+[mgmtsystem_action](mgmtsystem_action/) | 15.0.1.0.2 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 15.0.1.0.0 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 15.0.1.1.0 |  | Add Template management for Actions.
-[mgmtsystem_audit](mgmtsystem_audit/) | 15.0.1.0.0 |  | Management System - Audit
-[mgmtsystem_claim](mgmtsystem_claim/) | 15.0.1.0.0 |  | Management System - Claim
+[mgmtsystem_audit](mgmtsystem_audit/) | 15.0.1.0.1 |  | Management System - Audit
+[mgmtsystem_claim](mgmtsystem_claim/) | 15.0.1.0.1 |  | Management System - Claim
 [mgmtsystem_environment](mgmtsystem_environment/) | 15.0.1.0.0 |  | Environment Management System
 [mgmtsystem_hazard](mgmtsystem_hazard/) | 15.0.1.0.0 |  | Hazard
-[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 15.0.1.0.0 |  | Hazard Risk
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 15.0.1.0.1 |  | Hazard Risk
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 15.0.1.0.0 |  | Health and Safety Management System
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 15.0.1.0.0 |  | Information Security Management System Manual
 [mgmtsystem_manual](mgmtsystem_manual/) | 15.0.1.0.0 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 15.0.1.1.2 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 15.0.1.1.3 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 15.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 15.0.1.0.0 |  | Bridge module between mrp and mgmsystem
 [mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 15.0.1.0.0 |  | Bridge module between Product and Management System.
@@ -6423,7 +6423,8 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 15.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 15.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 15.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
-[mgmtsystem_review](mgmtsystem_review/) | 15.0.1.0.1 |  | Management System - Review
+[mgmtsystem_review](mgmtsystem_review/) | 15.0.2.0.0 |  | Management System - Review
+[mgmtsystem_review_survey](mgmtsystem_review_survey/) | 15.0.2.0.0 |  | Management System - Review Survey
 [mgmtsystem_survey](mgmtsystem_survey/) | 15.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)

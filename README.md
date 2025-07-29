@@ -120,9 +120,9 @@ Date:   Wed Jun 4 02:34:14 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit 8e8bdf15310dcbec1854121e49299b1a0711a977
+commit e1ed8e485fe06958053cb7f7b2d7287aa80f57c8
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 16 14:14:32 2025 +0000
+Date:   Tue Jul 29 08:45:38 2025 +0000
 
     [BOT] post-merge updates
 
@@ -472,11 +472,11 @@ Date:   Thu Jul 17 13:34:49 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 93b1064effdef23765c5221faff8ab817124fe34
+commit 738d2e4f9b4e63844a47325f1daeb05fb9d2be62
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:51:29 2025 +0000
+Date:   Tue Jul 29 06:43:39 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1054,16 +1054,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit ddd403eaef561276b22d918de28f33ebc2e4eb71
+commit 2f8ac7772fd39f1d45cb3345df46f34fccf9e09c
 Author: Weblate <noreply@weblate.org>
-Date:   Mon Jul 7 06:37:58 2025 +0000
+Date:   Mon Jul 28 09:49:32 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_secondary_unit
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_secondary_unit/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/
 
 
 ## stock-logistics-reporting
@@ -1137,13 +1137,16 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 0a0f25309a1055c159a7d76cb5890e4760046fca
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Fri Jul 25 17:03:37 2025 +0200
+commit 87afb9a7027de530c287a5b4e42b72b36955eb91
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jul 29 19:08:26 2025 +0000
 
-    Update copier template + fix Odoo version
+    Update translation files
     
-    Changed in 93dde48fe5a722e2b61ab3b538d427068c46283d
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_review
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_review/
 
 
 ## pms
