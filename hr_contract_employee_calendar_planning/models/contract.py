@@ -28,11 +28,12 @@ class HrContract(models.Model):
         # in order to not overwrite the employee calendar
         # we set the contract calendar to match the employee calendar
         for vals in vals_list:
-            employee_contract = (
-                self.env["hr.employee"]
-                .browse([vals.get("employee_id")])
-                .resource_calendar_id
-            )
-            if employee_contract:
-                vals.update({"resource_calendar_id": employee_contract.id})
-        return super().create(vals_list)
+            employee_id = vals.get("employee_id")
+            if employee_id:
+                employee_contract = (
+                    self.env["hr.employee"].browse(employee_id).resource_calendar_id
+                )
+                if employee_contract:
+                    vals.update({"resource_calendar_id": employee_contract.id})
+        contracts = super().create(vals_list)
+        return contracts

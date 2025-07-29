@@ -50,12 +50,13 @@ class HRContract(models.Model):
                 )
                 employee.write({"category_ids": [(4, tag.id)]})
 
-    @api.model
-    def create(self, vals):
-        res = super().create(vals)
-        if "job_id" in vals:
-            res._tag_employees(vals.get("job_id"))
-        return res
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super().create(vals_list)
+        for record, vals in zip(records, vals_list):
+            if "job_id" in vals:
+                record._tag_employees(vals.get("job_id"))
+        return records
 
     def write(self, vals):
         prev_data = self.read(["job_id"])
