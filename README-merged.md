@@ -342,7 +342,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 14.0.3.14.1 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 14.0.3.14.2 |  | OCA Financial Reports
 [account_move_line_report_xls](account_move_line_report_xls/) | 14.0.1.0.1 |  | Journal Items Excel export
 [account_tax_balance](account_tax_balance/) | 14.0.1.2.8 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 14.0.1.0.4 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
@@ -657,7 +657,7 @@ addon | version | maintainers | summary
 [mis_builder_operating_unit](mis_builder_operating_unit/) | 14.0.1.1.0 |  | MIS Builder with Operating Unit
 [mis_builder_operating_unit_access_all](mis_builder_operating_unit_access_all/) | 14.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' MIS Builder
 [mrp_operating_unit](mrp_operating_unit/) | 14.0.1.1.0 |  | Operating Unit in MRP
-[operating_unit](operating_unit/) | 14.0.1.2.0 |  | An operating unit (OU) is an organizational entity part of a company
+[operating_unit](operating_unit/) | 14.0.1.2.1 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 14.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [pos_operating_unit](pos_operating_unit/) | 14.0.1.0.0 |  | POS Operating Unit Access
 [product_operating_unit](product_operating_unit/) | 14.0.1.0.3 |  | Adds the concept of operating unit (OU) in products
@@ -1379,7 +1379,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_export_async](base_export_async/) | 14.0.1.0.1 |  | Asynchronous export with job queue
+[base_export_async](base_export_async/) | 14.0.1.1.0 |  | Asynchronous export with job queue
 [base_import_async](base_import_async/) | 14.0.1.0.2 |  | Import CSV files in the background
 [export_async_schedule](export_async_schedule/) | 14.0.1.0.1 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Generate and send exports by emails on a schedule
 [queue_job](queue_job/) | 14.0.3.15.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
@@ -4779,7 +4779,7 @@ addon | version | maintainers | summary
 [l10n_it_delivery_note_inter_warehouse](l10n_it_delivery_note_inter_warehouse/) | 14.0.1.0.1 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Delivery Note Inter Warehouse
 [l10n_it_delivery_note_order_link](l10n_it_delivery_note_order_link/) | 14.0.1.1.1 | <a href='https://github.com/andreampiovesana'><img src='https://github.com/andreampiovesana.png' width='32' height='32' style='border-radius:50%;' alt='andreampiovesana'/></a> <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Crea collegamento tra i DDT e ordine di vendita/acquisto
 [l10n_it_delivery_note_rma](l10n_it_delivery_note_rma/) | 14.0.1.1.0 | <a href='https://github.com/solo4games'><img src='https://github.com/solo4games.png' width='32' height='32' style='border-radius:50%;' alt='solo4games'/></a> <a href='https://github.com/CetmixGitDrone'><img src='https://github.com/CetmixGitDrone.png' width='32' height='32' style='border-radius:50%;' alt='CetmixGitDrone'/></a> | Add Oportunity to create RMA from DN with wizard and smart button to DN view
-[l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.3.5 |  | Fatture elettroniche
+[l10n_it_fatturapa](l10n_it_fatturapa/) | 14.0.2.4.0 |  | Fatture elettroniche
 [l10n_it_fatturapa_export_zip](l10n_it_fatturapa_export_zip/) | 14.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Permette di esportare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_import_zip](l10n_it_fatturapa_import_zip/) | 14.0.1.1.1 |  | Permette di importare in uno ZIP diversi file XML di fatture elettroniche
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 14.0.2.4.3 |  | Ricezione fatture elettroniche
@@ -4795,7 +4795,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_triple_discount](l10n_it_fatturapa_out_triple_discount/) | 14.0.1.0.0 |  | Modulo ponte tra emissione fatture elettroniche e sconto triplo
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 14.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
 [l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 14.0.2.6.1 |  | Invio fatture elettroniche tramite PEC
-[l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 14.0.1.0.3 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
+[l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 14.0.1.1.0 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 14.0.1.0.0 |  | Invio fatture elettroniche tramite SDICoop
 [l10n_it_financial_statements_report](l10n_it_financial_statements_report/) | 14.0.1.2.0 |  | Rendicontazione .pdf e .xls per stato patrimoniale e conto economico a sezioni contrapposte
 [l10n_it_fiscal_document_type](l10n_it_fiscal_document_type/) | 14.0.1.1.1 |  | ITA - Tipi di documento fiscale per dichiarativi

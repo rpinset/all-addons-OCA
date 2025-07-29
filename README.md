@@ -89,16 +89,16 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 013e638886a8d256fc391f9159ad47c7614f2f14
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Jul 21 13:15:25 2025 +0000
+commit d264a732114ddba7d1f966947e8ca2c25e923eea
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Jul 29 08:06:14 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-portal_partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-portal_partner_statement/it/
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/
 
 
 ## account-invoice-reporting
@@ -130,16 +130,11 @@ Date:   Thu Jun 5 02:33:56 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit b44d9a0a79ce0dc7f48b75a5c8a8027a0d2f5b1c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 14:48:31 2025 +0000
+commit 1ce35e97a251dc7fe368c8ad214d450976a43322
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Jul 28 15:58:01 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (28 of 28 strings)
-    
-    Translation: operating-unit-14.0/operating-unit-14.0-operating_unit
-    Translate-URL: https://translation.odoo-community.org/projects/operating-unit-14-0/operating-unit-14-0-operating_unit/it/
+    [BOT] post-merge updates
 
 
 ## intrastat
@@ -268,9 +263,9 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 8b115843911bec7eec6e1c3e287e17196ae5e198
+commit 88f2fd84d001939603b1619256c5bbd4d8add92b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 25 10:55:40 2025 +0000
+Date:   Sun Jul 27 17:51:38 2025 +0000
 
     [BOT] post-merge updates
 
@@ -878,11 +873,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit ef76878fe0fdc32f4889cff47f2451eb038db229
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 25 10:15:56 2025 +0000
+commit 8f435decb150089c5ed3bb3c0072d75bc7980938
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Jul 28 15:05:56 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa/
 
 
 ## l10n-japan

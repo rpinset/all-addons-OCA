@@ -787,6 +787,14 @@ msgid "Is public document"
 msgstr ""
 
 #. module: l10n_it_fatturapa
+#: code:addons/l10n_it_fatturapa/models/account.py:0
+#, python-format
+msgid ""
+"It is not possible to set a partner bank with RIBA payment mode for customer "
+"invoices. Please remove the partner bank or change the payment mode."
+msgstr ""
+
+#. module: l10n_it_fatturapa
 #: code:addons/l10n_it_fatturapa/models/partner.py:0
 #, python-format
 msgid "Italian partner %s must have VAT Number or Fiscal Code."
