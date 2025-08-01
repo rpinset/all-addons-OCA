@@ -811,16 +811,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit b0b36feb6e0948c87e9fd3044d5d472c9e56dc7e
+commit 34f47b049312e0870d5ae27b5284e86a0a4c36ae
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Jul 11 19:29:52 2025 +0000
+Date:   Wed Jul 30 12:10:24 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (62 of 62 strings)
+    Currently translated at 100.0% (12 of 12 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note_base/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fiscal_payment_term
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fiscal_payment_term/it/
 
 
 ## l10n-japan
