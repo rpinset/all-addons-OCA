@@ -3699,7 +3699,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_intercompany_multi_company](product_supplierinfo_intercompany_multi_company/) | 14.0.1.1.0 |  | Compatibility of product_multi_company and product_supplierinfo_intercompany
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 14.0.1.2.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_quick_intercompany](purchase_quick_intercompany/) | 14.0.0.1.1 |  | Purchase Quick Intercompany
-[purchase_sale_inter_company](purchase_sale_inter_company/) | 14.0.2.4.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Intercompany PO/SO rules
+[purchase_sale_inter_company](purchase_sale_inter_company/) | 14.0.2.4.1 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> | Intercompany PO/SO rules
 [res_company_code](res_company_code/) | 14.0.1.0.1 |  | Add 'code' field on company model
 [stock_intercompany](stock_intercompany/) | 14.0.1.1.1 |  | Stock Intercompany Delivery-Reception
 
@@ -4494,7 +4494,7 @@ addon | version | maintainers | summary
 [l10n_de_skr04_mis_reports](l10n_de_skr04_mis_reports/) | 14.0.1.1.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR04)
 [l10n_de_steuernummer](l10n_de_steuernummer/) | 14.0.1.0.0 |  | German SteuerNummer validation
 [l10n_de_tax_statement](l10n_de_tax_statement/) | 14.0.1.0.0 |  | German VAT Statement
-[l10n_de_tax_statement_zm](l10n_de_tax_statement_zm/) | 14.0.1.1.0 |  | German VAT Statement Extension
+[l10n_de_tax_statement_zm](l10n_de_tax_statement_zm/) | 14.0.1.1.1 |  | German VAT Statement Extension
 [l10n_de_toponyms](l10n_de_toponyms/) | 14.0.1.0.1 |  | German Toponyms
 
 [//]: # (end addons)
@@ -5473,7 +5473,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 14.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod322](l10n_es_aeat_mod322/) | 14.0.1.0.1 |  | AEAT modelo 322
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 14.0.2.8.0 |  | AEAT modelo 347
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 14.0.1.4.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 14.0.1.4.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 14.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 14.0.3.4.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 14.0.1.0.0 |  | AEAT modelo 390 - OSS
@@ -5508,7 +5508,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 14.0.1.2.3 | <a href='https://github.com/Binovo'><img src='https://github.com/Binovo.png' width='32' height='32' style='border-radius:50%;' alt='Binovo'/></a> <a href='https://github.com/enriquemartin'><img src='https://github.com/enriquemartin.png' width='32' height='32' style='border-radius:50%;' alt='enriquemartin'/></a> <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 14.0.1.1.4 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 14.0.1.0.0 |  | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 14.0.2.8.1 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 14.0.2.8.2 |  | Libro de IVA
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 14.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 14.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 14.0.2.1.0 |  | Prorrata de IVA para la localización española
@@ -6830,6 +6830,7 @@ addon | version | maintainers | summary
 [mrp_restrict_lot](mrp_restrict_lot/) | 14.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | MRP Restrict Lot
 [mrp_routing](mrp_routing/) | 14.0.1.0.1 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | MRP Routing
 [mrp_sale_info](mrp_sale_info/) | 14.0.2.2.1 |  | Adds sale information to Manufacturing models
+[mrp_stock_rule_propagate_bom_line](mrp_stock_rule_propagate_bom_line/) | 14.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Avoid grouping line of different kit in picking operations
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 14.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp subcontracting bom dual use
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 14.0.1.1.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
 [mrp_subcontracting_partner_management](mrp_subcontracting_partner_management/) | 14.0.2.0.1 |  | Subcontracting Partner Management

@@ -842,3 +842,43 @@ class TestPurchaseSaleInterCompany(TestAccountInvoiceInterCompanyBase):
             move.quantity_done = move.product_uom_qty
         with self.assertRaises(UserError):
             so_picking_id.button_validate()
+
+    def test_purchase_in_inter_company_env(self):
+        """The context manager `_in_inter_company_env`
+        allows to see the purchase order
+        from another company's point of view.
+        """
+        # Arrange
+        company_a = self.company_a
+        company_a_currency = self.env.ref("base.USD")
+        company_b = self.company_b
+        company_b_currency = self.env.ref("base.EUR")
+
+        purchase = self._create_purchase_order(
+            company_b.partner_id, self.consumable_product
+        )
+        purchase.partner_id.property_purchase_currency_id = company_a_currency
+        # pre-condition
+        self.assertNotEqual(company_a, company_b)
+        self.assertEqual(purchase.env.company, company_a)
+        self.assertEqual(
+            purchase.partner_id.property_purchase_currency_id, company_a_currency
+        )
+
+        # Act
+        # Set a company_dependent field
+        # with a different value for the other company
+        partner_in_company_b = purchase.partner_id.with_company(company_b)
+        partner_in_company_b.property_purchase_currency_id = company_b_currency
+
+        # Assert
+        with purchase._in_inter_company_env(company_b) as purchase_in_company_b:
+            self.assertEqual(
+                purchase_in_company_b.partner_id.property_purchase_currency_id,
+                company_b_currency,
+            )
+
+        self.assertEqual(
+            purchase.partner_id.property_purchase_currency_id,
+            company_a_currency,
+        )

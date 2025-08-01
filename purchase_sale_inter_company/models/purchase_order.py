@@ -3,6 +3,8 @@
 # Copyright 2018-2019 Tecnativa - Carlos Dauden
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+from contextlib import contextmanager
+
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
 
@@ -68,6 +70,36 @@ class PurchaseOrder(models.Model):
                         % purchase_line.product_id.name
                     )
 
+    @contextmanager
+    def _in_inter_company_env(self, dest_company):
+        """Act as if in `dest_company`."""
+        intercompany_user = dest_company.intercompany_sale_user_id
+        if not intercompany_user:
+            intercompany_user = self.env.user
+
+        self_in_dest_company = (
+            self.with_user(intercompany_user)
+            .sudo()
+            .with_context(
+                allowed_company_ids=[dest_company.id]
+                + [
+                    company.id
+                    for company in intercompany_user.company_ids
+                    if company != dest_company
+                ]
+            )
+        )
+        # The old user with the old company
+        # might have stored in cache values
+        # that with the new user/company
+        # should be not accessible
+        self_in_dest_company.invalidate_cache()
+
+        yield self_in_dest_company
+
+        # Switching back to the old user
+        self.invalidate_cache()
+
     def _inter_company_create_sale_order(self, dest_company):
         """Create a Sale Order from the current PO (self)
         Note : In this method, reading the current PO is done as sudo,
@@ -78,10 +110,6 @@ class PurchaseOrder(models.Model):
         :rtype dest_company : res.company record
         """
         self.ensure_one()
-        # Check intercompany user
-        intercompany_user = dest_company.intercompany_sale_user_id
-        if not intercompany_user:
-            intercompany_user = self.env.user
         # check intercompany product
         self._check_intercompany_product(dest_company)
         # Accessing to selling partner with selling user, so data like
@@ -98,29 +126,27 @@ class PurchaseOrder(models.Model):
                     "purchase price list currency."
                 )
             )
-        # create the SO and generate its lines from the PO lines
-        sale_order_data = self._prepare_sale_order_data(
-            self.name, company_partner, dest_company, self.dest_address_id
-        )
-        sale_order = (
-            self.env["sale.order"]
-            .with_user(intercompany_user.id)
-            .sudo()
-            .create(sale_order_data)
-        )
-        for purchase_line in self.order_line:
-            sale_line_data = self._prepare_sale_order_line_data(
-                purchase_line, dest_company, sale_order
+
+        with self._in_inter_company_env(dest_company) as self_in_dest_company:
+            # create the SO and generate its lines from the PO lines
+            sale_order_data = self_in_dest_company._prepare_sale_order_data(
+                self_in_dest_company.name,
+                company_partner,
+                dest_company,
+                self_in_dest_company.dest_address_id,
             )
-            self.env["sale.order.line"].with_user(intercompany_user.id).sudo().create(
-                sale_line_data
-            )
-        # write supplier reference field on PO
-        if not self.partner_ref:
-            self.partner_ref = sale_order.name
-        # Validation of sale order
-        if dest_company.sale_auto_validation:
-            sale_order.with_user(intercompany_user.id).sudo().action_confirm()
+            sale_order = self_in_dest_company.env["sale.order"].create(sale_order_data)
+            for purchase_line in self_in_dest_company.order_line:
+                sale_line_data = self_in_dest_company._prepare_sale_order_line_data(
+                    purchase_line, dest_company, sale_order
+                )
+                self_in_dest_company.env["sale.order.line"].create(sale_line_data)
+            # write supplier reference field on PO
+            if not self_in_dest_company.partner_ref:
+                self_in_dest_company.partner_ref = sale_order.name
+            # Validation of sale order
+            if dest_company.sale_auto_validation:
+                sale_order.action_confirm()
         return sale_order
 
     def _prepare_sale_order_data(

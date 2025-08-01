@@ -152,7 +152,9 @@ class StockPicking(models.Model):
         # if the flag is set, block the validation of the picking in the destination company
         if self.env.company.block_po_manual_picking_validation:
             for record in self:
-                dest_company = record.partner_id.commercial_partner_id.ref_company_ids
+                dest_company = (
+                    record.partner_id.commercial_partner_id.sudo().ref_company_ids
+                )
                 if (
                     dest_company and record.picking_type_code == "incoming"
                 ) and record.state in ["done", "waiting", "assigned"]:
