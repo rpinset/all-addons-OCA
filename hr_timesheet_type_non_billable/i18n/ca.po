@@ -27,11 +27,6 @@ msgid "Define Time Types"
 msgstr "Definir ipus de temps"
 
 #. module: hr_timesheet_type_non_billable
-#: model:ir.model,name:hr_timesheet_type_non_billable.model_helpdesk_ticket
-msgid "Helpdesk Ticket"
-msgstr ""
-
-#. module: hr_timesheet_type_non_billable
 #: model:ir.model.fields,field_description:hr_timesheet_type_non_billable.field_account_analytic_line__non_billable
 #: model:ir.model.fields,field_description:hr_timesheet_type_non_billable.field_project_time_type__non_billable
 msgid "Non Billable"
