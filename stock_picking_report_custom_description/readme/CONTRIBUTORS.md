@@ -1,0 +1,8 @@
+- [Tecnativa](https://www.tecnativa.com):
+  - Carlos Dauden
+  - Sergio Teruel
+  - Ernesto Tejeda
+  - Pilar Vargas
+  - Carolina Fernandez
+- [Heliconia Solutions Pvt. Ltd.](https://www.heliconia.io)
+  - Bhavesh Heliconia
