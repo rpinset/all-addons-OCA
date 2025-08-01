@@ -5118,8 +5118,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 15.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Impresión de pagaré de Cajamar en A4
-[delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.1 | <a href='https://github.com/hildickethan-S73'><img src='https://github.com/hildickethan-S73.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan-S73'/></a> | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/hildickethan-S73'><img src='https://github.com/hildickethan-S73.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan-S73'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
+[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.3 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
@@ -5137,7 +5137,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_oss](l10n_es_aeat_mod303_oss/) | 15.0.1.2.0 |  | AEAT modelo 303 - OSS
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 15.0.1.13.2 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 15.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | AEAT modelo 347 IGIC
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 15.0.1.5.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 15.0.1.0.0 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 15.0.2.9.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 15.0.1.0.2 |  | AEAT modelo 390 - OSS
@@ -5171,7 +5171,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 15.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 15.0.1.0.7 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 15.0.1.0.1 |  | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.11.0 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 15.0.2.11.1 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 15.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 15.0.1.0.1 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 15.0.1.1.0 |  | Prorrata de IVA para la localización española

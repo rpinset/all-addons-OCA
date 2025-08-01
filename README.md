@@ -60,16 +60,16 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 6b7c04f090533ae4d3ac11410c0e3177d45db07f
+commit 77cb71a6fd1ab516349e8b13623865971ee340f8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 30 11:09:44 2025 +0000
+Date:   Wed Jul 30 12:28:06 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 26.7% (71 of 265 strings)
+    Currently translated at 93.9% (156 of 166 strings)
     
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_asset_management
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_asset_management/it/
+    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_loan
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_loan/it/
 
 
 ## account-financial-reporting
@@ -531,11 +531,16 @@ Date:   Sun Feb 2 18:51:16 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 3ea3160b7686ec3ae594aed063e3aff1debbac8e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:57:00 2025 +0000
+commit b296b894a71b8a94d5999b62fd729749b7af1792
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Jul 30 09:19:12 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (16 of 16 strings)
+    
+    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet_attendance
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet_attendance/it/
 
 
 ## hr
@@ -923,9 +928,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit caadd9a1098cbd9e105a14bdbda46b96844000d0
+commit 605f4881047229704ed343c8df66dfcc0b6334aa
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 14 07:57:18 2025 +0000
+Date:   Thu Jul 31 19:16:45 2025 +0000
 
     [BOT] post-merge updates
 
