@@ -62,11 +62,6 @@ msgid "Purchase Requisition"
 msgstr "Richiesta di acquistro"
 
 #. module: purchase_requisition_tier_validation
-#: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__rejected
-msgid "Rejected"
-msgstr "Rifiutata"
-
-#. module: purchase_requisition_tier_validation
 #: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__rejected_message
 msgid "Rejected Message"
 msgstr "Messaggio di rifiuto"
@@ -92,7 +87,6 @@ msgid "To Validate Message"
 msgstr "Messaggio per 'Da validare'"
 
 #. module: purchase_requisition_tier_validation
-#: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__validated
 #: model_terms:ir.ui.view,arch_db:purchase_requisition_tier_validation.view_purchase_requisition_filter
 msgid "Validated"
 msgstr "Approvata"
@@ -111,3 +105,6 @@ msgstr "Stato validazione"
 #: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__review_ids
 msgid "Validations"
 msgstr "Validazioni"
+
+#~ msgid "Rejected"
+#~ msgstr "Rifiutata"

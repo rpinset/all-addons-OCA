@@ -62,11 +62,6 @@ msgid "Purchase Requisition"
 msgstr "采购招标"
 
 #. module: purchase_requisition_tier_validation
-#: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__rejected
-msgid "Rejected"
-msgstr ""
-
-#. module: purchase_requisition_tier_validation
 #: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__rejected_message
 msgid "Rejected Message"
 msgstr ""
@@ -92,7 +87,6 @@ msgid "To Validate Message"
 msgstr ""
 
 #. module: purchase_requisition_tier_validation
-#: model:ir.model.fields,field_description:purchase_requisition_tier_validation.field_purchase_requisition__validated
 #: model_terms:ir.ui.view,arch_db:purchase_requisition_tier_validation.view_purchase_requisition_filter
 msgid "Validated"
 msgstr "已批准"

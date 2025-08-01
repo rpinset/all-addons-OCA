@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-09 10:03+0000\n"
-"PO-Revision-Date: 2024-09-17 10:06+0000\n"
+"PO-Revision-Date: 2025-07-30 13:12+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_account_config_settings
@@ -425,8 +425,8 @@ msgid ""
 "Invoice %(name)s fiscal payment method must be set for the selected payment "
 "term %(term)s"
 msgstr ""
-"Il metodo pagamento fiscale della fattura %(name)s deve essere impostato per "
-"il termine di pagamento %(term)s selezionato"
+"Il metodo di pagamento fiscale della fattura %(name)s deve essere impostato "
+"per il termine di pagamento %(term)s selezionato"
 
 #. module: l10n_it_fatturapa_out
 #. odoo-python

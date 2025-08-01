@@ -1190,6 +1190,13 @@ msgid "Incoming e-mail"
 msgstr "Correo electrónico entrante"
 
 #. module: rma
+#: model:ir.model.fields,help:rma.field_rma__requires_action
+msgid ""
+"Indicates whether the RMA requires processing such as a receipt,delivery, or "
+"refund."
+msgstr ""
+
+#. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__partner_invoice_id
 msgid "Invoice Address"
 msgstr "Dirección de factura"
@@ -2014,6 +2021,11 @@ msgstr "Operación solicitada"
 #, python-format
 msgid "Required field(s):%s"
 msgstr "Campo(s) requerido(s):%s"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__requires_action
+msgid "Requires Action"
+msgstr ""
 
 #. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__user_id

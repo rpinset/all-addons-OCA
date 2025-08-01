@@ -84,11 +84,6 @@ msgid "Quotation printing is blocked until the order is approved."
 msgstr "La stampa del preventivo è bloccata finché l'ordine non è approvato."
 
 #. module: sale_tier_validation
-#: model:ir.model.fields,field_description:sale_tier_validation.field_sale_order__rejected
-msgid "Rejected"
-msgstr "Rifiutato"
-
-#. module: sale_tier_validation
 #: model:ir.model.fields,field_description:sale_tier_validation.field_sale_order__rejected_message
 msgid "Rejected Message"
 msgstr "Messaggio di rifiuto"
@@ -148,7 +143,6 @@ msgid "To Validate Message"
 msgstr "Messaggio per 'Da validare'"
 
 #. module: sale_tier_validation
-#: model:ir.model.fields,field_description:sale_tier_validation.field_sale_order__validated
 #: model_terms:ir.ui.view,arch_db:sale_tier_validation.view_sale_order_filter
 msgid "Validated"
 msgstr "Validato"
@@ -167,3 +161,6 @@ msgstr "Stato validazione"
 #: model:ir.model.fields,field_description:sale_tier_validation.field_sale_order__review_ids
 msgid "Validations"
 msgstr "Validazioni"
+
+#~ msgid "Rejected"
+#~ msgstr "Rifiutato"

@@ -48,11 +48,6 @@ msgid "Personal Equipment Request Tier Validation"
 msgstr "Camada de Aprovação Requisitada para Equipamento Pessoal"
 
 #. module: hr_personal_equipment_request_tier_validation
-#: model:ir.model.fields,field_description:hr_personal_equipment_request_tier_validation.field_hr_personal_equipment_request__rejected
-msgid "Rejected"
-msgstr "Rejeitada"
-
-#. module: hr_personal_equipment_request_tier_validation
 #: model:ir.model.fields,field_description:hr_personal_equipment_request_tier_validation.field_hr_personal_equipment_request__rejected_message
 msgid "Rejected Message"
 msgstr "Mensagem da Rejeição"
@@ -78,11 +73,6 @@ msgid "To Validate Message"
 msgstr "Mensagem para Validar"
 
 #. module: hr_personal_equipment_request_tier_validation
-#: model:ir.model.fields,field_description:hr_personal_equipment_request_tier_validation.field_hr_personal_equipment_request__validated
-msgid "Validated"
-msgstr "Validado"
-
-#. module: hr_personal_equipment_request_tier_validation
 #: model:ir.model.fields,field_description:hr_personal_equipment_request_tier_validation.field_hr_personal_equipment_request__validated_message
 msgid "Validated Message"
 msgstr "Mensagem da Validação"
@@ -96,6 +86,12 @@ msgstr "Status de Validação"
 #: model:ir.model.fields,field_description:hr_personal_equipment_request_tier_validation.field_hr_personal_equipment_request__review_ids
 msgid "Validations"
 msgstr "Validações"
+
+#~ msgid "Rejected"
+#~ msgstr "Rejeitada"
+
+#~ msgid "Validated"
+#~ msgstr "Validado"
 
 #~ msgid "Display Name"
 #~ msgstr "Nome exibido"

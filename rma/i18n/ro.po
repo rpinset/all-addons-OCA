@@ -1069,6 +1069,13 @@ msgid "Incoming e-mail"
 msgstr "E-mail primite"
 
 #. module: rma
+#: model:ir.model.fields,help:rma.field_rma__requires_action
+msgid ""
+"Indicates whether the RMA requires processing such as a receipt,delivery, or "
+"refund."
+msgstr ""
+
+#. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__partner_invoice_id
 msgid "Invoice Address"
 msgstr "Adresă facurare"
@@ -1872,6 +1879,11 @@ msgstr "Operație solicitată"
 #: code:addons/rma/models/rma.py:0
 #, python-format
 msgid "Required field(s):%s"
+msgstr ""
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__requires_action
+msgid "Requires Action"
 msgstr ""
 
 #. module: rma

@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-03-31 01:58+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2025-07-31 11:25+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: hr_employee_medical_examination
 #. odoo-python
@@ -118,6 +118,11 @@ msgid "Employee"
 msgstr "Empleado"
 
 #. module: hr_employee_medical_examination
+#: model:ir.model,name:hr_employee_medical_examination.model_hr_employee_medical_examination
+msgid "Employee Medical Examination"
+msgstr "Reconocimiento médico para empleados"
+
+#. module: hr_employee_medical_examination
 #: model:ir.actions.act_window,name:hr_employee_medical_examination.hr_employee_medical_examination_act_window
 msgid "Employee Medical Examinations"
 msgstr "Exámenes Médicos de Empleados"
@@ -165,6 +170,11 @@ msgid "Font awesome icon e.g. fa-tasks"
 msgstr "Icono de fuente impresionante, por ejemplo fa-tasks"
 
 #. module: hr_employee_medical_examination
+#: model_terms:ir.ui.view,arch_db:hr_employee_medical_examination.hr_employee_medical_examination_search_view
+msgid "Future Activities"
+msgstr "Actividades futuras"
+
+#. module: hr_employee_medical_examination
 #: model_terms:ir.ui.view,arch_db:hr_employee_medical_examination.wizard_generate_medical_examination_form_view
 msgid "Generate"
 msgstr "Generar"
@@ -192,11 +202,6 @@ msgstr "Asistente de generación para reconocimientos médicos"
 #: model:ir.model.fields,field_description:hr_employee_medical_examination.field_hr_employee_medical_examination__has_message
 msgid "Has Message"
 msgstr "Tiene mensaje"
-
-#. module: hr_employee_medical_examination
-#: model:ir.model,name:hr_employee_medical_examination.model_hr_employee_medical_examination
-msgid "Hr Employee Medical Examination"
-msgstr "Reconocimiento médico para empleados de RRHH"
 
 #. module: hr_employee_medical_examination
 #: model:ir.model.fields,field_description:hr_employee_medical_examination.field_hr_employee_medical_examination__id
@@ -251,6 +256,11 @@ msgstr "Actualizado por última vez por"
 #: model:ir.model.fields,field_description:hr_employee_medical_examination.field_wizard_generate_medical_examination__write_date
 msgid "Last Updated on"
 msgstr "Última Actualización en"
+
+#. module: hr_employee_medical_examination
+#: model_terms:ir.ui.view,arch_db:hr_employee_medical_examination.hr_employee_medical_examination_search_view
+msgid "Late Activities"
+msgstr "Actividades tardías"
 
 #. module: hr_employee_medical_examination
 #: model:ir.model.fields,field_description:hr_employee_medical_examination.field_hr_employee_medical_examination__message_main_attachment_id
@@ -406,6 +416,11 @@ msgstr ""
 "Planificada: Actividades futuras."
 
 #. module: hr_employee_medical_examination
+#: model_terms:ir.ui.view,arch_db:hr_employee_medical_examination.hr_employee_medical_examination_search_view
+msgid "Today Activities"
+msgstr "Actividades de hoy"
+
+#. module: hr_employee_medical_examination
 #: model:ir.model.fields,help:hr_employee_medical_examination.field_hr_employee_medical_examination__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr "Tipo (o clase) de actividad excepcional registrada."
@@ -430,6 +445,9 @@ msgstr "Historial de la comunicación en el sitio web"
 #: model:ir.model.fields,field_description:hr_employee_medical_examination.field_wizard_generate_medical_examination__year
 msgid "Year"
 msgstr "Año"
+
+#~ msgid "Hr Employee Medical Examination"
+#~ msgstr "Reconocimiento médico para empleados de RRHH"
 
 #~ msgid "SMS Delivery error"
 #~ msgstr "Error en la entrega de sms"

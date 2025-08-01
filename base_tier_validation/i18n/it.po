@@ -571,7 +571,6 @@ msgid "Reject"
 msgstr "Rifiuta"
 
 #. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_review__status__rejected
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__rejected
 msgid "Rejected"
@@ -850,7 +849,6 @@ msgid "Validate Reject"
 msgstr "Rifiuta Approvazione"
 
 #. module: base_tier_validation
-#: model:ir.model.fields,field_description:base_tier_validation.field_tier_validation__validated
 #: model:ir.model.fields.selection,name:base_tier_validation.selection__tier_validation__validation_status__validated
 msgid "Validated"
 msgstr "Approvato"

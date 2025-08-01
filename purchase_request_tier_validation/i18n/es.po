@@ -77,11 +77,6 @@ msgid "Purchase Requests validated and ready to be confirmed"
 msgstr "Solicitudes de compra validadas y preparadas para ser confirmadas"
 
 #. module: purchase_request_tier_validation
-#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__rejected
-msgid "Rejected"
-msgstr "Rechazado/a"
-
-#. module: purchase_request_tier_validation
 #: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__rejected_message
 msgid "Rejected Message"
 msgstr "Mensaje Rechazado"
@@ -102,7 +97,6 @@ msgid "To Validate Message"
 msgstr "Para validar el mensaje"
 
 #. module: purchase_request_tier_validation
-#: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__validated
 #: model_terms:ir.ui.view,arch_db:purchase_request_tier_validation.view_purchase_request_filter
 msgid "Validated"
 msgstr "Validada"
@@ -121,6 +115,9 @@ msgstr "Estado de la Validación"
 #: model:ir.model.fields,field_description:purchase_request_tier_validation.field_purchase_request__review_ids
 msgid "Validations"
 msgstr "Validaciones"
+
+#~ msgid "Rejected"
+#~ msgstr "Rechazado/a"
 
 #~ msgid "Display Name"
 #~ msgstr "Mostrar Nombre"

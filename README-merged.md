@@ -531,7 +531,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_queued](sale_order_invoicing_queued/) | 16.0.1.0.0 |  | Enqueue sales order invoicing
 [sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.1 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 16.0.1.0.1 |  | Add timesheet details in invoice line
-[stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
+[stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
 [stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.3 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 16.0.1.0.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
@@ -586,10 +586,10 @@ addon | version | maintainers | summary
 [account_avatax_repair_oca](account_avatax_repair_oca/) | 16.0.1.0.0 |  | Repair Orders with automatic Tax application using Avatax
 [account_avatax_sale_oca](account_avatax_sale_oca/) | 16.0.1.3.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Sales Orders with automatic Tax application using Avatax
 [account_avatax_website_sale](account_avatax_website_sale/) | 16.0.1.0.0 | <a href='https://github.com/cybernexus'><img src='https://github.com/cybernexus.png' width='32' height='32' style='border-radius:50%;' alt='cybernexus'/></a> | Ecommerce Sales Orders require tax recalculation prior to payment.
-[account_ecotax](account_ecotax/) | 16.0.1.1.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
+[account_ecotax](account_ecotax/) | 16.0.1.1.2 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Ecotax Management: in French context is a 'cost' added to the sale price of electrical or electronic appliances or furnishing items
 [account_ecotax_sale](account_ecotax_sale/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe
-[account_ecotax_sale_tax](account_ecotax_sale_tax/) | 16.0.2.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe managed as a tax
-[account_ecotax_tax](account_ecotax_tax/) | 16.0.1.0.0 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Use Odoo tax mechanism to compute the ecotaxes
+[account_ecotax_sale_tax](account_ecotax_sale_tax/) | 16.0.2.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Sale Ecotaxe managed as a tax
+[account_ecotax_tax](account_ecotax_tax/) | 16.0.1.0.1 | <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Use Odoo tax mechanism to compute the ecotaxes
 [account_fiscal_position_autodetect_optional_vies](account_fiscal_position_autodetect_optional_vies/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Fiscal Position Autodetect optional VIES
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 16.0.1.0.2 |  | Account Fiscal Position Partner Type
 [account_fiscal_position_type](account_fiscal_position_type/) | 16.0.1.0.4 |  | Add sale / purchase type on fiscal position
@@ -778,7 +778,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 16.0.5.4.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 16.0.5.5.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 16.0.5.4.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 16.0.1.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -1891,7 +1891,7 @@ addon | version | maintainers | summary
 [sale_invoice_split_payment](sale_invoice_split_payment/) | 16.0.1.0.0 |  | Split by payment term generated invoices from sale orders
 [sale_last_price_info](sale_last_price_info/) | 16.0.1.0.0 |  | Product Last Price Info - Sale
 [sale_loyalty_exclude](sale_loyalty_exclude/) | 16.0.1.1.0 |  | Exclude products from sale loyalty program
-[sale_manual_delivery](sale_manual_delivery/) | 16.0.1.0.1 |  | Create manually your deliveries
+[sale_manual_delivery](sale_manual_delivery/) | 16.0.1.0.2 |  | Create manually your deliveries
 [sale_margin_update](sale_margin_update/) | 16.0.1.0.0 |  | Recalculate expected unit price from margin.
 [sale_mrp_bom](sale_mrp_bom/) | 16.0.1.0.0 |  | Allows define a BOM in the sales lines.
 [sale_numeric_step](sale_numeric_step/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improve mobile/tablet sale process by adding numeric step widgets
@@ -1974,7 +1974,7 @@ addon | version | maintainers | summary
 [sale_stock_product_recommendation](sale_stock_product_recommendation/) | 16.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display stock info when recommending products to sell
 [sale_stock_reservation_issue_on_qty_at_date_widget](sale_stock_reservation_issue_on_qty_at_date_widget/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Warn user when a reservation issue will happen when confirming an order
 [sale_substate](sale_substate/) | 16.0.1.0.0 |  | Sale Sub State
-[sale_tier_validation](sale_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Sale Orders to support a tier validation process.
+[sale_tier_validation](sale_tier_validation/) | 16.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
 [sale_transaction_form_link](sale_transaction_form_link/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display a link to payment transactions on Sale Order form view.
 [sale_triple_discount](sale_triple_discount/) | 16.0.1.0.5 |  | Manage triple discount on sale order lines
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 16.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Automatically cancel quotations after validity period.
@@ -2290,6 +2290,7 @@ addon | version | maintainers | summary
 [sale_loyalty_partner_applicability](sale_loyalty_partner_applicability/) | 16.0.1.0.3 |  | Enables the definition of a customer filter for promotion rules that will only be applied to customers who meet the specified conditions in the filter.
 [website_sale_loyalty_page](website_sale_loyalty_page/) | 16.0.1.0.0 |  | Website Sale Loyalty Page
 [website_sale_loyalty_suggestion_wizard](website_sale_loyalty_suggestion_wizard/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Suggests promotions and allows you to configure and apply these promotions directly from the website
+[website_sale_loyalty_suggestion_wizard_multi_gift](website_sale_loyalty_suggestion_wizard_multi_gift/) | 16.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Suggests promotions multi-gift and allows you to configure and apply these promotions directly from the website
 [website_sale_loyalty_suggestion_wizard_multi_product](website_sale_loyalty_suggestion_wizard_multi_product/) | 16.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Suggests promotions multi-product and allows you to configure and apply these promotions directly from the website
 
 [//]: # (end addons)
@@ -3203,7 +3204,7 @@ addon | version | maintainers | summary
 [hr_employee_age](hr_employee_age/) | 16.0.1.0.1 |  | Age field for employee
 [hr_employee_birth_name](hr_employee_birth_name/) | 16.0.1.0.0 |  | Employee Birth Name
 [hr_employee_birthday_mail](hr_employee_birthday_mail/) | 16.0.1.1.0 |  | Automating birthday mail messages and fostering for a positive work environment.
-[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 16.0.1.1.10 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
+[hr_employee_calendar_planning](hr_employee_calendar_planning/) | 16.0.1.1.11 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Employee Calendar Planning
 [hr_employee_digitized_signature](hr_employee_digitized_signature/) | 16.0.1.0.0 | <a href='https://github.com/newtratip'><img src='https://github.com/newtratip.png' width='32' height='32' style='border-radius:50%;' alt='newtratip'/></a> | Employee Digitized Signature
 [hr_employee_document](hr_employee_document/) | 16.0.1.0.1 |  | Documents attached to the employee profile
 [hr_employee_document_from_applicant](hr_employee_document_from_applicant/) | 16.0.1.0.0 | <a href='https://github.com/ursais'><img src='https://github.com/ursais.png' width='32' height='32' style='border-radius:50%;' alt='ursais'/></a> | HR Employee Document from Applicant
@@ -3212,7 +3213,7 @@ addon | version | maintainers | summary
 [hr_employee_id](hr_employee_id/) | 16.0.1.0.1 |  | Employee ID
 [hr_employee_language](hr_employee_language/) | 16.0.1.0.0 |  | HR Employee Language
 [hr_employee_lastnames](hr_employee_lastnames/) | 16.0.1.0.2 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Split Name in First Name, Father's Last Name and Mother's Last Name
-[hr_employee_medical_examination](hr_employee_medical_examination/) | 16.0.1.0.1 |  | Adds information about employee's medical examinations
+[hr_employee_medical_examination](hr_employee_medical_examination/) | 16.0.1.1.0 |  | Adds information about employee's medical examinations
 [hr_employee_partner_external](hr_employee_partner_external/) | 16.0.1.0.0 |  | Associate an external Partner to Employee
 [hr_employee_phone_extension](hr_employee_phone_extension/) | 16.0.1.0.0 |  | Employee Phone Extension
 [hr_employee_phone_pin](hr_employee_phone_pin/) | 16.0.1.0.0 | <a href='https://github.com/arielbarreiros96'><img src='https://github.com/arielbarreiros96.png' width='32' height='32' style='border-radius:50%;' alt='arielbarreiros96'/></a> | Employee Phone PIN
@@ -5314,7 +5315,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[delivery_gls_asm](delivery_gls_asm/) | 16.0.1.1.3 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/hildickethan-S73'><img src='https://github.com/hildickethan-S73.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan-S73'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 16.0.1.1.4 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur_atlas](delivery_seur_atlas/) | 16.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
 [l10n_es_account_banking_sepa_fsdd](l10n_es_account_banking_sepa_fsdd/) | 16.0.1.0.0 |  | Account Banking Sepa - FSDD (Anticipos de crédito)
@@ -5332,7 +5333,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod303_vat_prorate](l10n_es_aeat_mod303_vat_prorate/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Prorrata de IVA [303]
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 16.0.1.11.5 |  | AEAT modelo 347
 [l10n_es_aeat_mod347_igic](l10n_es_aeat_mod347_igic/) | 16.0.1.0.2 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | AEAT modelo 347 IGIC
-[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.4.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
+[l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.4.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.1 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.11.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 16.0.1.0.1 |  | AEAT modelo 592
@@ -5376,7 +5377,7 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 16.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
 [l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 16.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
-[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.7.1 |  | Libro de IVA
+[l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.7.2 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 16.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
@@ -5880,7 +5881,7 @@ addon | version | maintainers | summary
 [delivery_purchase](delivery_purchase/) | 16.0.1.1.1 |  | Delivery costs in purchases
 [delivery_roulier](delivery_roulier/) | 16.0.2.1.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> | Integration of multiple carriers
 [delivery_roulier_dpd_fr](delivery_roulier_dpd_fr/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Labels for DPD
-[delivery_roulier_geodis_fr](delivery_roulier_geodis_fr/) | 16.0.1.1.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for Geodis logistic
+[delivery_roulier_geodis_fr](delivery_roulier_geodis_fr/) | 16.0.1.1.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for Geodis logistic
 [delivery_roulier_laposte_fr](delivery_roulier_laposte_fr/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Generate Label for La Poste/Colissimo
 [delivery_roulier_option](delivery_roulier_option/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Add options to roulier modules
 [delivery_schenker](delivery_schenker/) | 16.0.1.0.0 |  | Delivery Carrier implementation for DB Schenker API
@@ -5892,7 +5893,7 @@ addon | version | maintainers | summary
 [server_environment_delivery](server_environment_delivery/) | 16.0.1.0.0 |  | Configure prod environment for delivery carriers
 [stock_picking_delivery_link](stock_picking_delivery_link/) | 16.0.1.1.4 |  | Adds link to the delivery on all intermediate operations.
 [stock_picking_delivery_package_type_domain](stock_picking_delivery_package_type_domain/) | 16.0.1.0.1 |  | This module will allow to extend the domain to filter package type selection in 'Choose Delivery Package' wizard
-[stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 16.0.1.1.0 |  | Show delivery cost in delivery slip and picking operations reports
+[stock_picking_report_delivery_cost](stock_picking_report_delivery_cost/) | 16.0.1.1.1 |  | Show delivery cost in delivery slip and picking operations reports
 
 [//]: # (end addons)
 
@@ -6387,7 +6388,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_warranty](product_warranty/) | 16.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Product Warranty
-[rma](rma/) | 16.0.5.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
+[rma](rma/) | 16.0.5.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Return Merchandise Authorization (RMA)
 [rma_delivery](rma_delivery/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allow to choose a default delivery carrier for returns
 [rma_lot](rma_lot/) | 16.0.1.0.0 |  | Manage lot in RMA
 [rma_procurement_customer](rma_procurement_customer/) | 16.0.1.0.0 |  | Rma Procurement Customer
@@ -6844,7 +6845,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.0.10.0 |  | A property management system
+[pms](pms/) | 16.0.0.13.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.1.3.0 |  | PMS Spanish Adaptation
@@ -6969,9 +6970,9 @@ addon | version | maintainers | summary
 [purchase_request](purchase_request/) | 16.0.2.4.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.1.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
-[purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Purchase Requests to support a tier validation process.
+[purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
 [purchase_request_type](purchase_request_type/) | 16.0.1.2.1 |  | Purchase Request Type
-[purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
+[purchase_requisition_tier_validation](purchase_requisition_tier_validation/) | 16.0.1.0.2 |  | Extends the functionality of Purchase Agreements to support a tier validation process.
 [purchase_return](purchase_return/) | 16.0.1.0.3 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Manage return orders.
 [purchase_sale_link_by_origin](purchase_sale_link_by_origin/) | 16.0.1.0.0 |  | Link PO/SO by the PO's Origin in addition to the default behavior that only links them by their lines
 [purchase_security](purchase_security/) | 16.0.2.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | See only your purchase orders
@@ -6980,7 +6981,7 @@ addon | version | maintainers | summary
 [purchase_stock_packaging](purchase_stock_packaging/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 16.0.1.0.1 |  | Update cost price in stock moves already done
 [purchase_tag](purchase_tag/) | 16.0.1.1.0 |  | Allows to add multiple tags to purchase orders
-[purchase_tier_validation](purchase_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
+[purchase_tier_validation](purchase_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_transport_mode](purchase_transport_mode/) | 16.0.1.1.0 |  | Purchase expection based on constraints
 [purchase_triple_discount](purchase_triple_discount/) | 16.0.3.0.3 |  | Manage triple discount on purchase order lines
 [purchase_vendor_promotion](purchase_vendor_promotion/) | 16.0.1.0.1 |  | Purchase Vendor Promotion
@@ -8543,12 +8544,12 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 16.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 16.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.1 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 16.0.3.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 16.0.4.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Add Tier Review Boards
 [base_tier_validation_correction](base_tier_validation_correction/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Correct tier.review data after it has been created.
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
 [base_tier_validation_formula](base_tier_validation_formula/) | 16.0.1.0.2 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 16.0.1.1.3 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
+[base_tier_validation_forward](base_tier_validation_forward/) | 16.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_report](base_tier_validation_report/) | 16.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Reports related to tier validation
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
 [base_tier_validation_waiting](base_tier_validation_waiting/) | 16.0.1.0.0 |  | Base Tier Validation Extension to add waiting status
@@ -9456,6 +9457,7 @@ addon | version | maintainers | summary
 [web_select_all_companies](web_select_all_companies/) | 16.0.1.0.1 |  | Allows you to select all companies in one click.
 [web_send_message_popup](web_send_message_popup/) | 16.0.1.0.0 |  | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 16.0.1.0.0 |  | Use the whole available screen width when displaying sheets
+[web_systray_button_init_action](web_systray_button_init_action/) | 16.0.1.0.0 |  | Add a button to go to the user init action.
 [web_theme_classic](web_theme_classic/) | 16.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Contrasted style on fields to improve the UI.
 [web_time_range_menu_custom](web_time_range_menu_custom/) | 16.0.1.0.0 |  | Web Time Range Menu Custom
 [web_timeline](web_timeline/) | 16.0.1.1.7 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time

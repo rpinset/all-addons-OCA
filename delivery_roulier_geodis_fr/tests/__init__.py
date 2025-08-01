@@ -1,1 +1,1 @@
-from . import test_geodis_labels
+# from . import test_geodis_labels

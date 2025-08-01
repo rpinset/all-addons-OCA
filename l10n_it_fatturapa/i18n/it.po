@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-09 12:26+0000\n"
-"PO-Revision-Date: 2024-08-31 12:06+0000\n"
+"PO-Revision-Date: 2025-07-30 13:12+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: l10n_it_fatturapa
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa.view_account_config_settings
@@ -535,7 +535,7 @@ msgstr "Dati pagamento fattura elettronica"
 #: model:ir.model.fields,field_description:l10n_it_fatturapa.field_fatturapa_payment_data__payment_terms
 #: model:ir.model.fields,field_description:l10n_it_fatturapa.field_fatturapa_payment_detail__fatturapa_pm_id
 msgid "Electronic Invoice Payment Method"
-msgstr "Metodo pagamento fattura elettronica"
+msgstr "Metodo di pagamento fattura elettronica"
 
 #. module: l10n_it_fatturapa
 #: model:ir.model.fields,field_description:l10n_it_fatturapa.field_account_bank_statement_line__fatturapa_summary_ids

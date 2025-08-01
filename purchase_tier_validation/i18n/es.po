@@ -62,11 +62,6 @@ msgid "Purchase Order"
 msgstr "Orden de Compra"
 
 #. module: purchase_tier_validation
-#: model:ir.model.fields,field_description:purchase_tier_validation.field_purchase_order__rejected
-msgid "Rejected"
-msgstr "Rechazado"
-
-#. module: purchase_tier_validation
 #: model:ir.model.fields,field_description:purchase_tier_validation.field_purchase_order__rejected_message
 msgid "Rejected Message"
 msgstr "Mensaje rechazado"
@@ -87,7 +82,6 @@ msgid "To Validate Message"
 msgstr "Para validar el mensaje"
 
 #. module: purchase_tier_validation
-#: model:ir.model.fields,field_description:purchase_tier_validation.field_purchase_order__validated
 #: model_terms:ir.ui.view,arch_db:purchase_tier_validation.view_purchase_order_filter
 msgid "Validated"
 msgstr "Validada"
@@ -106,6 +100,9 @@ msgstr "Estado de validación"
 #: model:ir.model.fields,field_description:purchase_tier_validation.field_purchase_order__review_ids
 msgid "Validations"
 msgstr "Validaciones"
+
+#~ msgid "Rejected"
+#~ msgstr "Rechazado"
 
 #~ msgid ""
 #~ "<i class=\"fa fa-info-circle\"/>This PO needs to be\n"
