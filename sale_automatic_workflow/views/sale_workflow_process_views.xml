@@ -277,6 +277,19 @@
                                 <field name="property_journal_id" nolabel="1" />
                             </div>
                         </div>
+                        <div
+                            class="row"
+                            groups="account.group_account_invoice"
+                            domain="[('type', '=', 'sale')]"
+                        >
+                            <div class="col-sm-12">
+                                <label
+                                    for="property_payment_journal_id"
+                                    class="col-lg-4 o_light_label"
+                                />
+                                <field name="property_payment_journal_id" nolabel="1" />
+                            </div>
+                        </div>
                         <br />
                         <div class="row">
                             <div class="col-sm-12">
