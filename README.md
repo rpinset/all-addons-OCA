@@ -263,11 +263,16 @@ Date:   Tue Dec 10 12:22:50 2024 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 88f2fd84d001939603b1619256c5bbd4d8add92b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jul 27 17:51:38 2025 +0000
+commit 0c5f515da46a38ad40a8df57e47d4c573709993d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Aug 4 11:28:23 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 56.9% (94 of 165 strings)
+    
+    Translation: queue-14.0/queue-14.0-queue_job
+    Translate-URL: https://translation.odoo-community.org/projects/queue-14-0/queue-14-0-queue_job/it/
 
 
 ## connector-accountedge
@@ -873,16 +878,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 034b389e5c89f71a4e2c5d016b8e175e60c50d4f
+commit a48bdb7014107431044fe39fdb2d267af171aa01
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 30 12:10:23 2025 +0000
+Date:   Sat Aug 2 14:59:06 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (12 of 12 strings)
+    Currently translated at 100.0% (11008 of 11008 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fiscal_payment_term
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fiscal_payment_term/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat/it/
 
 
 ## l10n-japan
@@ -1237,30 +1242,25 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 945209f62a2d8503a334562ca9543ff8665077df
+commit 484a93347beebe3bae61e97d408299562a65daa3
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Jul 30 09:34:28 2025 +0000
+Date:   Mon Aug 4 13:24:01 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Currently translated at 100.0% (15 of 15 strings)
     
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_tag
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_tag/it/
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_line_sequence
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_line_sequence/it/
 
 
 ## purchase-reporting
 From [https://github.com/OCA/purchase-reporting.git](https://github.com/OCA/purchase-reporting.git)
-commit 6a257db1b85bbf5fbc35de8ee654ab033fb87ddb
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 9 12:08:09 2025 +0000
+commit 2222be5eaf6188d67d146f438bb80bda9986b258
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 4 06:41:58 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (25 of 25 strings)
-    
-    Translation: purchase-reporting-14.0/purchase-reporting-14.0-purchase_backorder
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-reporting-14-0/purchase-reporting-14-0-purchase_backorder/it/
+    [BOT] post-merge updates
 
 
 ## product-attribute
