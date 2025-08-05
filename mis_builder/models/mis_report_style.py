@@ -269,7 +269,7 @@ class MisReportKpiStyle(models.Model):
         xlsx_attributes = [
             ("italic", props.font_style == "italic"),
             ("bold", props.font_weight == "bold"),
-            ("size", self._font_size_to_xlsx_size.get(props.font_size, 11)),
+            ("font_size", self._font_size_to_xlsx_size.get(props.font_size, 11)),
             ("font_color", props.color),
             ("bg_color", props.background_color),
         ]

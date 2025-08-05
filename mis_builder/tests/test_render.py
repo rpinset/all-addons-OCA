@@ -268,7 +268,7 @@ class TestRendering(common.TransactionCase):
             {
                 "italic": True,
                 "bold": True,
-                "size": 9,
+                "font_size": 9,
                 "font_color": "#FF0000",
                 "bg_color": "#0000FF",
                 "num_format": '"p "#,##0.00" s"',
@@ -281,7 +281,7 @@ class TestRendering(common.TransactionCase):
             {
                 "italic": True,
                 "bold": True,
-                "size": 9,
+                "font_size": 9,
                 "font_color": "#FF0000",
                 "bg_color": "#0000FF",
                 "num_format": '"p "#,##0.00" s"',
@@ -294,7 +294,7 @@ class TestRendering(common.TransactionCase):
             {
                 "italic": True,
                 "bold": True,
-                "size": 9,
+                "font_size": 9,
                 "font_color": "#FF0000",
                 "bg_color": "#0000FF",
                 "num_format": "0.00%",
@@ -308,7 +308,7 @@ class TestRendering(common.TransactionCase):
             {
                 "italic": True,
                 "bold": True,
-                "size": 9,
+                "font_size": 9,
                 "font_color": "#FF0000",
                 "bg_color": "#0000FF",
             },

@@ -22,7 +22,6 @@ msgstr ""
 #. module: mis_builder_budget
 #. odoo-python
 #: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
-#, python-format
 msgid "%(rec_name)s is not within budget %(budget_name)s date range."
 msgstr ""
 "%(rec_name)s no se encuentra dentro del intervalo de fechas del presupuesto "
@@ -31,7 +30,6 @@ msgstr ""
 #. module: mis_builder_budget
 #. odoo-python
 #: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
-#, python-format
 msgid "%(rec_name)s overlaps %(res_name)s in budget %(budget_name)s"
 msgstr ""
 "%(rec_name)s no se encuentra%(res_name)s dentro del intervalo de fechas del "
@@ -40,14 +38,12 @@ msgstr ""
 #. module: mis_builder_budget
 #. odoo-python
 #: code:addons/mis_builder_budget/models/mis_budget_abstract.py:0
-#, python-format
 msgid "%s (copy)"
 msgstr "%s (copia)"
 
 #. module: mis_builder_budget
 #. odoo-python
 #: code:addons/mis_builder_budget/models/mis_budget_item_abstract.py:0
-#, python-format
 msgid "%s start date must not be after end date"
 msgstr "La fecha de inicio de %s no puede ser posterior a la fecha de fin"
 
@@ -92,11 +88,6 @@ msgstr "Importe"
 #. module: mis_builder_budget
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
-
-#. module: mis_builder_budget
-#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__analytic_distribution_search
-msgid "Analytic Distribution Search"
 msgstr ""
 
 #. module: mis_builder_budget
@@ -252,6 +243,11 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_item__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: mis_builder_budget
+#: model:ir.model.fields,field_description:mis_builder_budget.field_mis_budget_by_account_item__distribution_analytic_account_ids
+msgid "Distribution Analytic Account"
+msgstr ""
 
 #. module: mis_builder_budget
 #: model:ir.model.fields.selection,name:mis_builder_budget.selection__mis_budget__state__draft

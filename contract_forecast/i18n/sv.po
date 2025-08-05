@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-08-05 14:21+0000\n"
+"Last-Translator: jakobkrabbe <jakob@syscare.se>\n"
 "Language-Team: none\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: contract_forecast
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_contract_form_view
@@ -20,33 +22,35 @@ msgid ""
 "<span class=\"o_stat_text\">Forecast\n"
 "                        </span>"
 msgstr ""
+"<span class=\"o_stat_text\">Prognos\n"
+"                        </span> Prognos"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__price_subtotal
 msgid "Amount Untaxed"
-msgstr ""
+msgstr "Obeskattat belopp"
 
 #. module: contract_forecast
 #: model:ir.model,name:contract_forecast.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Företag"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__company_id
 msgid "Company"
-msgstr ""
+msgstr "Företag"
 
 #. module: contract_forecast
 #: model:ir.model,name:contract_forecast.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Konfigureringsinställningar"
 
 #. module: contract_forecast
 #: model:ir.model,name:contract_forecast.model_contract_contract
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__contract_id
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
 msgid "Contract"
-msgstr ""
+msgstr "Kontrakt"
 
 #. module: contract_forecast
 #. odoo-python
@@ -56,66 +60,66 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_graph_view
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_pivot_view
 msgid "Contract Forecast"
-msgstr ""
+msgstr "Avtalsprognos"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_res_company__contract_forecast_rule_type
 #: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__contract_forecast_rule_type
 msgid "Contract Forecast Rule Type"
-msgstr ""
+msgstr "Avtal Prognos Regel Typ"
 
 #. module: contract_forecast
 #: model:ir.model,name:contract_forecast.model_contract_line
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__contract_line_id
 msgid "Contract Line"
-msgstr ""
+msgstr "Kontraktslinje"
 
 #. module: contract_forecast
 #: model:ir.model,name:contract_forecast.model_contract_line_forecast_period
 msgid "Contract Line Forecast Period"
-msgstr ""
+msgstr "Kontraktslinje Prognosperiod"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Skapad av"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Skapad på"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__currency_id
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__date_end
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
 msgid "Date End"
-msgstr ""
+msgstr "Datum Slut"
 
 #. module: contract_forecast
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
 msgid "Date Invoice"
-msgstr ""
+msgstr "Datum Faktura"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__date_start
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
 msgid "Date Start"
-msgstr ""
+msgstr "Datum Start"
 
 #. module: contract_forecast
 #: model:ir.model.fields,help:contract_forecast.field_contract_line_forecast_period__sequence
 msgid "Defines line ordering in the contract."
-msgstr ""
+msgstr "Definierar radbeställning i kontraktet."
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__discount
 msgid "Discount (%)"
-msgstr ""
+msgstr "Rabatt (%)"
 
 #. module: contract_forecast
 #: model:ir.model.fields,help:contract_forecast.field_contract_line_forecast_period__discount
@@ -123,95 +127,97 @@ msgid ""
 "Discount that is applied in generated invoices. It should be less or equal "
 "to 100"
 msgstr ""
+"Rabatt som tillämpas på genererade fakturor. Den bör vara mindre än eller "
+"lika med 100"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Visningsnamn"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_res_company__enable_contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__enable_contract_forecast
 msgid "Enable contract forecast"
-msgstr ""
+msgstr "Möjliggör avtalsprognoser"
 
 #. module: contract_forecast
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_contract_form_view
 msgid "Forecast"
-msgstr ""
+msgstr "Prognos"
 
 #. module: contract_forecast
 #: model_terms:ir.ui.view,arch_db:contract_forecast.res_config_settings_form_view
 msgid "Forecast Interval"
-msgstr ""
+msgstr "Prognosintervall"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line__forecast_period_ids
 msgid "Forecast Periods"
-msgstr ""
+msgstr "Prognosperioder"
 
 #. module: contract_forecast
 #: model_terms:ir.ui.view,arch_db:contract_forecast.contract_line_forecast_period_search_view
 msgid "Group By"
-msgstr ""
+msgstr "Grupp av"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__date_invoice
 msgid "Invoice Date"
-msgstr ""
+msgstr "Fakturadatum"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Senast uppdaterad av"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Senast uppdaterad den"
 
 #. module: contract_forecast
 #: model:ir.model.fields.selection,name:contract_forecast.selection__res_company__contract_forecast_rule_type__monthly
 msgid "Month(s)"
-msgstr ""
+msgstr "Månad(er)"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__name
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_res_company__contract_forecast_interval
 #: model:ir.model.fields,field_description:contract_forecast.field_res_config_settings__contract_forecast_interval
 msgid "Number of contract forecast Periods"
-msgstr ""
+msgstr "Antal kontraktsprognoser Perioder"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__product_id
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__quantity
 msgid "Quantity"
-msgstr ""
+msgstr "Kvantitet"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sekvens"
 
 #. module: contract_forecast
 #: model:ir.model.fields,field_description:contract_forecast.field_contract_line_forecast_period__price_unit
 msgid "Unit Price"
-msgstr ""
+msgstr "Enhetspris"
 
 #. module: contract_forecast
 #: model:ir.model.fields.selection,name:contract_forecast.selection__res_company__contract_forecast_rule_type__yearly
 msgid "Year(s)"
-msgstr ""
+msgstr "År(en)"

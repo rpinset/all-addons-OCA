@@ -145,9 +145,14 @@ python-dateutil
 # From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
 # generated from manifests external_dependencies
 chardet
+pycountry
 suds-py3
 unidecode
+xmlsig
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
+# generated from manifests external_dependencies
+ebilling_postfinance
+zeep
 # From [https://github.com/OCA/l10n-taiwan.git](https://github.com/OCA/l10n-taiwan.git)
 # From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
 # From [https://github.com/OCA/l10n-turkey.git](https://github.com/OCA/l10n-turkey.git)
@@ -244,6 +249,8 @@ cryptography
 # From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
 # generated from manifests external_dependencies
 openupgradelib
+pdf2image
+pyzbar
 # From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
 # generated from manifests external_dependencies
 pycountry
