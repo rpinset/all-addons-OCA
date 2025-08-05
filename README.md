@@ -120,9 +120,9 @@ Date:   Wed Jun 4 02:34:14 2025 +0000
 
 ## operating-unit
 From [https://github.com/OCA/operating-unit.git](https://github.com/OCA/operating-unit.git)
-commit e1ed8e485fe06958053cb7f7b2d7287aa80f57c8
+commit 16045a4ff6909e76920141bd2cc97e02e5feeeb3
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 29 08:45:38 2025 +0000
+Date:   Mon Aug 4 08:57:10 2025 +0000
 
     [BOT] post-merge updates
 
@@ -161,16 +161,16 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit de34fb018895cf285920672a6f5a643e20dacf70
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Jul 25 15:49:01 2025 +0000
+commit 3d6a521f48299435345429ae59f8673adea93809
+Author: Víctor Martínez <victor.martinez@tecnativa.com>
+Date:   Tue Aug 5 12:20:06 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
-    Currently translated at 52.6% (49 of 93 strings)
+    Currently translated at 64.7% (182 of 281 strings)
     
-    Translation: credit-control-15.0/credit-control-15.0-account_financial_risk
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_financial_risk/it/
+    Translation: credit-control-15.0/credit-control-15.0-account_credit_control
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_credit_control/es/
 
 
 ## data-protection
@@ -1228,16 +1228,11 @@ Date:   Sun Feb 2 20:17:28 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit 040d6aafda485c1c21675462b79e074997b3455a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:46:18 2025 +0000
+commit e2472f970c28d424918049505d83f3d9f1f1de2d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 5 16:57:08 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (53 of 53 strings)
-    
-    Translation: project-15.0/project-15.0-project_wbs
-    Translate-URL: https://translation.odoo-community.org/projects/project-15-0/project-15-0-project_wbs/it/
+    [BOT] post-merge updates
 
 
 ## project-agile

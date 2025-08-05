@@ -619,6 +619,7 @@ addon | version | maintainers | summary
 [operating_unit](operating_unit/) | 15.0.1.1.1 |  | An operating unit (OU) is an organizational entity part of a company
 [operating_unit_access_all](operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all Operating Units
 [project_operating_unit](project_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
+[purchase_deposit_operating_unit](purchase_deposit_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Adds the concecpt of operating unit (OU) when create purchase deposit
 [purchase_operating_unit](purchase_operating_unit/) | 15.0.1.2.0 |  | Adds the concecpt of operating unit (OU) in purchase order management
 [purchase_operating_unit_access_all](purchase_operating_unit_access_all/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Purchase Orders
 [purchase_request_operating_unit](purchase_request_operating_unit/) | 15.0.1.1.0 |  | Operating Unit in Purchase Requests
@@ -7022,7 +7023,7 @@ addon | version | maintainers | summary
 [project_task_required_project](project_task_required_project/) | 15.0.1.0.0 |  | Obligation to specify a project when creating/editing a task
 [project_task_stage_state](project_task_stage_state/) | 15.0.1.0.1 |  | Restore State attribute removed from Project Stages in 8.0
 [project_template](project_template/) | 15.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Templates
-[project_template_milestone](project_template_milestone/) | 15.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds function to copy of milestones when creating a project from template
+[project_template_milestone](project_template_milestone/) | 15.0.1.0.1 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds function to copy of milestones when creating a project from template
 [project_timeline](project_timeline/) | 15.0.2.0.1 |  | Timeline view for projects
 [project_timeline_hr_timesheet](project_timeline_hr_timesheet/) | 15.0.1.0.0 |  | Shows the progress of tasks on the timeline view.
 [project_timesheet_time_control](project_timesheet_time_control/) | 15.0.1.1.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Project timesheet time control
