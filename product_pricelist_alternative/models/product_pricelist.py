@@ -62,24 +62,31 @@ class Pricelist(models.Model):
 
         # In some contexts we want to ignore alternative pricelists
         # and return the original price
-        if self.env.context.get("skip_alternative_pricelist", False):
+        if self.env.context.get(
+            "skip_alternative_pricelist", False
+        ) or self.env.context.get("based_on_other_pricelist", False):
             return res
+        pricelist_items_ids = [val[1] for val in res.values()]
+        use_lower_price_item = (
+            self.env["product.pricelist.item"]
+            .browse(pricelist_items_ids)
+            .filtered(lambda rec: rec.alternative_pricelist_policy == "use_lower_price")
+        )
+        use_lower_price_item_ids = set(use_lower_price_item.ids)
 
-        for product in products:
-            reference_pricelist_item = self.env["product.pricelist.item"].browse(
-                res[product.id][1]
+        products_with_use_lower_price = products.filtered(
+            lambda rec: res[rec.id][1] in use_lower_price_item_ids
+        )
+        for alternative_pricelist in self.alternative_pricelist_ids:
+            alternative_res = alternative_pricelist._compute_price_rule(
+                products_with_use_lower_price, qty, uom, date, **kwargs
             )
-            if (
-                reference_pricelist_item.alternative_pricelist_policy
-                == "use_lower_price"
-            ):
-                for alternative_pricelist in self.alternative_pricelist_ids:
-                    alternative_price_rule = alternative_pricelist._compute_price_rule(
-                        product, qty, uom=uom, date=date, **kwargs
-                    )
-                    # use alternative price if lower
-                    if alternative_price_rule[product.id][0] < res[product.id][0]:
-                        res[product.id] = alternative_price_rule[product.id]
+            for product_id, (
+                alternative_price,
+                alternative_item_id,
+            ) in alternative_res.items():
+                if alternative_price < res[product_id][0]:
+                    res[product_id] = (alternative_price, alternative_item_id)
         return res
 
     @api.constrains("alternative_pricelist_ids")

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-12 17:22+0000\n"
-"PO-Revision-Date: 2023-10-15 20:38+0000\n"
+"POT-Creation-Date: 2025-08-05 05:53+0000\n"
+"PO-Revision-Date: 2025-08-05 07:57+0200\n"
 "Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_tracking_email__state
@@ -99,6 +99,13 @@ msgstr "Tipo de Rebote"
 #: model:ir.model.fields.selection,name:mail_tracking.selection__mail_tracking_email__state__bounced
 msgid "Bounced"
 msgstr "Rebotado"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Cancel"
+msgstr "Cancelar"
 
 #. module: mail_tracking
 #. odoo-javascript
@@ -205,6 +212,14 @@ msgstr "Estado de entrega Marca de verificación derecha"
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Do you really want to mark as reviewed all the failed messages?"
+msgstr ""
+"¿Está seguro de que desea marcar como revisados todos los mensajes fallidos?"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_id
@@ -474,6 +489,13 @@ msgid "MailTracking events"
 msgstr "MailTracking eventos"
 
 #. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
+#, python-format
+msgid "Mark all as reviewed"
+msgstr "Marcar todos como revisado"
+
+#. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__tracking_email_id
@@ -501,6 +523,13 @@ msgstr "No hay mensajes fallidos"
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_tree
 msgid "OS"
 msgstr "SO"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Ok"
+msgstr "Vale"
 
 #. module: mail_tracking
 #: model:ir.model.fields.selection,name:mail_tracking.selection__mail_tracking_event__event_type__open
@@ -891,9 +920,6 @@ msgstr "Estado de espera"
 
 #~ msgid "Failed messages appear here."
 #~ msgstr "Los mensajes fallidos se muestran aquí."
-
-#~ msgid "Mark all as reviewed"
-#~ msgstr "Marcar todos como revisado"
 
 #~ msgid "Message tracking"
 #~ msgstr "Seguimiento del mensaje"

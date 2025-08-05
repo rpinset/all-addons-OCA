@@ -110,11 +110,6 @@ msgid "Refund"
 msgstr "Reembolso"
 
 #. module: account_move_tier_validation
-#: model:ir.model.fields,field_description:account_move_tier_validation.field_account_move__rejected
-msgid "Rejected"
-msgstr "Rechazada"
-
-#. module: account_move_tier_validation
 #: model:ir.model.fields,field_description:account_move_tier_validation.field_account_move__rejected_message
 msgid "Rejected Message"
 msgstr "Mensaje rechazado"
@@ -135,7 +130,6 @@ msgid "To Validate Message"
 msgstr "Para validar el mensaje"
 
 #. module: account_move_tier_validation
-#: model:ir.model.fields,field_description:account_move_tier_validation.field_account_move__validated
 #: model_terms:ir.ui.view,arch_db:account_move_tier_validation.view_account_invoice_filter
 msgid "Validated"
 msgstr "Validado"
@@ -171,6 +165,9 @@ msgstr "Validaciones"
 #, python-format
 msgid "You are not allowed to write those fields"
 msgstr ""
+
+#~ msgid "Rejected"
+#~ msgstr "Rechazada"
 
 #~ msgid "Reject"
 #~ msgstr "Rechazar"

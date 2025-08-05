@@ -83,6 +83,13 @@ msgstr ""
 
 #. module: mail_tracking
 #. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Cancel"
+msgstr ""
+
+#. module: mail_tracking
+#. odoo-javascript
 #. odoo-python
 #: code:addons/mail_tracking/models/mail_thread.py:0
 #: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
@@ -186,6 +193,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
 msgid "Display Name"
 msgstr "Tên hiển thị"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Do you really want to mark as reviewed all the failed messages?"
+msgstr ""
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_id
@@ -455,6 +469,13 @@ msgid "MailTracking events"
 msgstr ""
 
 #. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
+#, python-format
+msgid "Mark all as reviewed"
+msgstr ""
+
+#. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__tracking_email_id
@@ -481,6 +502,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_tree
 msgid "OS"
+msgstr ""
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Ok"
 msgstr ""
 
 #. module: mail_tracking

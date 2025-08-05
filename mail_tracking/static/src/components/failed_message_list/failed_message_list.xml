@@ -4,9 +4,7 @@
     <t t-name="mail_tracking.FailedMessageList" owl="1">
         <t
             t-set="nonReviewedFailedMessageItems"
-            t-value="messageListView._getNonReviewedFailedMessageItems(
-                messageListView.messageFailedListViewItems, store.reviewedMessageIds
-            )"
+            t-value="messageListView.messageFailedListViewItems"
         />
         <div
             t-if="messageListView &amp;&amp; nonReviewedFailedMessageItems.length"

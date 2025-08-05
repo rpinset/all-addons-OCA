@@ -7,6 +7,11 @@ from odoo import fields, models
 class TierValidation(models.AbstractModel):
     _inherit = "tier.validation"
 
+    validation_status = fields.Selection(
+        selection_add=[("waiting", "Waiting")],
+        ondelete={"waiting": "set default"},
+    )
+
     def _notify_review_available(self, tier_reviews):
         """method to notify when reaching pending"""
         subscribe = "message_subscribe"
@@ -50,4 +55,12 @@ class TierValidation(models.AbstractModel):
         self.ensure_one()
         self._validate_tier_waiting_reviews(tiers)
         res = super(TierValidation, self)._validate_tier(tiers)
+        return res
+
+    def _compute_validation_status(self):
+        res = super()._compute_validation_status()
+        for item in self.filtered(lambda tv: tv.validation_status == "no"):
+            any_waiting = any(item.review_ids.filtered(lambda x: x.status == "waiting"))
+            if any_waiting:
+                item.validation_status = "waiting"
         return res

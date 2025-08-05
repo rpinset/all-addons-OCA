@@ -42,9 +42,17 @@ class TierValidation(models.AbstractModel):
         domain=lambda self: [("model", "=", self._name)],
         auto_join=True,
     )
+    # TODO: Delete in v19 in favor of validation_status field
+    validated = fields.Boolean(
+        compute="_compute_validated_rejected", search="_search_validated"
+    )
     to_validate_message = fields.Html(compute="_compute_to_validate_message")
     validated_message = fields.Html(compute="_compute_validated_message")
     need_validation = fields.Boolean(compute="_compute_need_validation")
+    # TODO: Delete in v19 in favor of validation_status field
+    rejected = fields.Boolean(
+        compute="_compute_validated_rejected", search="_search_rejected"
+    )
     rejected_message = fields.Html(compute="_compute_rejected_message")
     validation_status = fields.Selection(
         selection=[
@@ -121,6 +129,22 @@ class TierValidation(models.AbstractModel):
                 lambda r: r.status == "pending"
             ).mapped("reviewer_ids")
 
+    # TODO: delete in 19.0 migration in favor of validation_status field
+    @api.model
+    def _search_validated(self, operator, value):
+        assert operator in ("=", "!="), "Invalid domain operator"
+        assert value in (True, False), "Invalid domain value"
+        operator_equal = (operator == "=" and value) or (operator == "!=" and not value)
+        return [("validation_status", operator_equal and "=" or "!=", "validated")]
+
+    # TODO: delete in 19.0 migration in favor of validation_status field
+    @api.model
+    def _search_rejected(self, operator, value):
+        assert operator in ("=", "!="), "Invalid domain operator"
+        assert value in (True, False), "Invalid domain value"
+        operator_equal = (operator == "=" and value) or (operator == "!=" and not value)
+        return [("validation_status", operator_equal and "=" or "!=", "rejected")]
+
     @api.model
     def _search_reviewer_ids(self, operator, value):
         model_operator = "in"
@@ -161,6 +185,13 @@ class TierValidation(models.AbstractModel):
         )
         return self.validation_status == "rejected" and msg or ""
 
+    # TODO: delete in 19.0 migration in favor of validation_status field
+    @api.depends("validation_status")
+    def _compute_validated_rejected(self):
+        for rec in self:
+            for field in ("validated", "rejected"):
+                rec[field] = rec.validation_status == field
+
     @api.depends("validation_status")
     def _compute_to_validate_message(self):
         for rec in self:
@@ -190,20 +221,13 @@ class TierValidation(models.AbstractModel):
         rejected_states = self._rejected_states()
         for item in self:
             reviews = item.review_ids
-            any_approved = any(reviews.filtered(lambda x: x.status in validated_states))
             any_rejected = any(reviews.filtered(lambda x: x.status in rejected_states))
             any_pending = any(reviews.filtered(lambda x: x.status == "pending"))
-            if (
-                reviews
-                and not any(
-                    reviews.filtered(lambda x: x.status not in validated_states)
-                )
-                and not any_rejected
-            ):
+            if reviews and all(x.status in validated_states for x in reviews):
                 item.validation_status = "validated"
-            elif reviews and not any_approved and any_rejected:
+            elif any_rejected:
                 item.validation_status = "rejected"
-            elif reviews and not any_approved and not any_rejected and any_pending:
+            elif any_pending:
                 item.validation_status = "pending"
             else:
                 item.validation_status = "no"
@@ -235,18 +259,6 @@ class TierValidation(models.AbstractModel):
             if valid_tiers and rec.review_ids.definition_id:
                 if len(valid_tiers) != len(rec.review_ids.definition_id):
                     rec.is_reevaluation_required = True
-
-    @api.model
-    def _calc_reviews_validated(self, reviews):
-        """Override for different validation policy."""
-        if not reviews:
-            return False
-        return not any([s != "approved" for s in reviews.mapped("status")])
-
-    @api.model
-    def _calc_reviews_rejected(self, reviews):
-        """Override for different rejection policy."""
-        return any([s == "rejected" for s in reviews.mapped("status")])
 
     def _compute_need_validation(self):
         for rec in self:

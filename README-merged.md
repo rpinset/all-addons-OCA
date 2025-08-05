@@ -269,7 +269,7 @@ addon | version | maintainers | summary
 [account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.0.2 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 16.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.1.0 |  | Lock All Posted Entries of Journals.
-[account_loan](account_loan/) | 16.0.1.0.7 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
+[account_loan](account_loan/) | 16.0.1.0.8 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
 [account_lock_date_update](account_lock_date_update/) | 16.0.1.0.1 |  | Allow an Account adviser to update locking date without having access to all technical settings
 [account_lock_to_date](account_lock_to_date/) | 16.0.1.0.0 |  | Allows to set an account lock date in the future.
 [account_move_budget](account_move_budget/) | 16.0.1.0.0 |  | Create Accounting Budgets
@@ -506,7 +506,7 @@ addon | version | maintainers | summary
 [account_move_cancel_confirm](account_move_cancel_confirm/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Account Move Cancel Confirm
 [account_move_sent_usability](account_move_sent_usability/) | 16.0.1.0.1 |  | Allows to filter moves on 'is_move_sent' and to see the value of the field in form
 [account_move_substate](account_move_substate/) | 16.0.1.0.1 |  | Account Move Sub State
-[account_move_tier_validation](account_move_tier_validation/) | 16.0.1.0.1 |  | Extends the functionality of Account Moves to support a tier validation process.
+[account_move_tier_validation](account_move_tier_validation/) | 16.0.1.1.0 |  | Extends the functionality of Account Moves to support a tier validation process.
 [account_receipt_journal](account_receipt_journal/) | 16.0.1.1.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Define and use journals dedicated to receipts
 [account_receipt_send](account_receipt_send/) | 16.0.1.0.2 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Send receipts
 [account_tax_change](account_tax_change/) | 16.0.1.0.3 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Configure your tax changes starting from a date.
@@ -778,7 +778,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[mis_builder](mis_builder/) | 16.0.5.5.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
+[mis_builder](mis_builder/) | 16.0.5.5.1 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Build 'Management Information System' Reports and Dashboards
 [mis_builder_budget](mis_builder_budget/) | 16.0.5.4.0 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Create budgets for MIS reports
 [mis_builder_demo](mis_builder_demo/) | 16.0.1.0.3 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Demo addon for MIS Builder
 
@@ -992,7 +992,7 @@ addon | version | maintainers | summary
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 16.0.1.0.3 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
 [account_payment_order_return](account_payment_order_return/) | 16.0.1.0.1 |  | Account Payment Order Return
-[account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
+[account_payment_order_tier_validation](account_payment_order_tier_validation/) | 16.0.1.1.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_order_vendor_email](account_payment_order_vendor_email/) | 16.0.1.0.0 | <a href='https://github.com/ursais'><img src='https://github.com/ursais.png' width='32' height='32' style='border-radius:50%;' alt='ursais'/></a> | Account Payment Order Email
 [account_payment_partner](account_payment_partner/) | 16.0.1.2.7 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 16.0.2.0.5 |  | Adds Bank Account and Payment Mode on Purchase Orders
@@ -1052,7 +1052,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.7 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.8 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.15.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [bank_statement_check_number](bank_statement_check_number/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Add the check number in the bank statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -3340,7 +3340,7 @@ addon | version | maintainers | summary
 [hr_expense_payment](hr_expense_payment/) | 16.0.1.0.2 |  | HR Expense Payment
 [hr_expense_sequence](hr_expense_sequence/) | 16.0.1.0.1 |  | HR expense sequence
 [hr_expense_sequence_option](hr_expense_sequence_option/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Manage sequence options for hr.expense.sheet
-[hr_expense_tier_validation](hr_expense_tier_validation/) | 16.0.1.0.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Expense Tier Validation
+[hr_expense_tier_validation](hr_expense_tier_validation/) | 16.0.2.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Expense Tier Validation
 
 [//]: # (end addons)
 
@@ -5350,7 +5350,7 @@ addon | version | maintainers | summary
 [l10n_es_dua](l10n_es_dua/) | 16.0.1.0.0 |  | Importaciones con DUA
 [l10n_es_dua_igic](l10n_es_dua_igic/) | 16.0.1.0.0 |  | Importaciones con DUA ATC
 [l10n_es_dua_sii](l10n_es_dua_sii/) | 16.0.2.0.0 |  | Suministro Inmediato de Información de importaciones con DUA
-[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.12.3 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae](l10n_es_facturae/) | 16.0.1.12.4 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 16.0.1.3.2 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_facturae_igic](l10n_es_facturae_igic/) | 16.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | Creación de Facturae IGIC
 [l10n_es_igic](l10n_es_igic/) | 16.0.1.4.0 |  | IGIC (Impuesto General Indirecto Canario
@@ -6098,6 +6098,7 @@ addon | version | maintainers | summary
 [stock_restrict_lot](stock_restrict_lot/) | 16.0.2.1.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Base module that add back the concept of restrict lot on stock move
 [stock_rule_reserve_max_quantity](stock_rule_reserve_max_quantity/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Allows to reserve max available quantity when a move comes from an stock rule
 [stock_split_picking](stock_split_picking/) | 16.0.1.0.6 |  | Split a picking in two not transferred pickings
+[stock_split_picking_dimension](stock_split_picking_dimension/) | 16.0.1.0.0 |  | Split a picking in two not transferred pickings to ensure that the first one doesn't exceed given dimensions (nbr lines, volume, weight)
 [stock_valuation_layer_usage](stock_valuation_layer_usage/) | 16.0.2.1.0 |  | Trace where has the stock valuation been used in, including the quantities taken.
 
 [//]: # (end addons)
@@ -6797,7 +6798,8 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 16.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 16.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 16.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
-[mgmtsystem_review](mgmtsystem_review/) | 16.0.1.0.2 |  | Management System - Review
+[mgmtsystem_review](mgmtsystem_review/) | 16.0.2.0.0 |  | Management System - Review
+[mgmtsystem_review_survey](mgmtsystem_review_survey/) | 16.0.2.0.0 |  | Management System - Review Survey
 [mgmtsystem_survey](mgmtsystem_survey/) | 16.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)
@@ -7129,12 +7131,12 @@ addon | version | maintainers | summary
 [product_net_weight](product_net_weight/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
 [product_optional_product_quantity](product_optional_product_quantity/) | 16.0.1.1.0 |  | Specify optional products quantity for product
 [product_origin](product_origin/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds the origin of the product
-[product_packaging_container_deposit](product_packaging_container_deposit/) | 16.0.1.2.0 |  | Add container deposit fees in a order
+[product_packaging_container_deposit](product_packaging_container_deposit/) | 16.0.1.2.1 |  | Add container deposit fees in a order
 [product_packaging_dimension](product_packaging_dimension/) | 16.0.1.1.1 |  | Manage packaging dimensions and weight
 [product_packaging_level](product_packaging_level/) | 16.0.1.2.1 |  | This module binds a product packaging to a packaging level
 [product_packaging_level_purchasable](product_packaging_level_purchasable/) | 16.0.1.1.0 |  | Control purchase of products via packaging settings.
 [product_packaging_level_salable](product_packaging_level_salable/) | 16.0.1.0.0 |  | Product Packaging level salable
-[product_pricelist_alternative](product_pricelist_alternative/) | 16.0.1.2.0 |  | Calculate product price based on alternative pricelists
+[product_pricelist_alternative](product_pricelist_alternative/) | 16.0.1.2.1 |  | Calculate product price based on alternative pricelists
 [product_pricelist_direct_print](product_pricelist_direct_print/) | 16.0.1.3.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Print price list from menu option, product templates, products variants or price lists
 [product_pricelist_direct_print_company_group](product_pricelist_direct_print_company_group/) | 16.0.1.0.0 |  | Print Pricelist items using the company group model
 [product_pricelist_direct_print_website_sale](product_pricelist_direct_print_website_sale/) | 16.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Extend Product Pricelist Direct Print for filter by public categories
@@ -7801,7 +7803,7 @@ addon | version | maintainers | summary
 [base_search_mail_content](base_search_mail_content/) | 16.0.1.0.4 |  | Base Search Mail Content
 [base_user_signature](base_user_signature/) | 16.0.1.0.0 | <a href='https://github.com/imlopes'><img src='https://github.com/imlopes.png' width='32' height='32' style='border-radius:50%;' alt='imlopes'/></a> | Base User Signature
 [email_template_qweb](email_template_qweb/) | 16.0.1.0.0 |  | Use the QWeb templating mechanism for emails
-[fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.0.0 |  | Post unkonwn messages to an existing thread
+[fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.1.0 |  | Post unkonwn messages to an existing thread
 [mail_activity_board](mail_activity_board/) | 16.0.1.2.0 |  | Add Activity Boards
 [mail_activity_done](mail_activity_done/) | 16.0.1.3.0 |  | Mail Activity Done
 [mail_activity_filter_internal_user](mail_activity_filter_internal_user/) | 16.0.1.0.0 |  | Filter on internal user by default when assigning someone to an activity.
@@ -7809,7 +7811,7 @@ addon | version | maintainers | summary
 [mail_activity_plan](mail_activity_plan/) | 16.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail activity plan
 [mail_activity_reminder](mail_activity_reminder/) | 16.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_reply_creator](mail_activity_reply_creator/) | 16.0.1.0.0 |  | Assign new to its creator
-[mail_activity_team](mail_activity_team/) | 16.0.1.0.3 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 16.0.1.1.0 |  | Add Teams to Activities
 [mail_activity_unlink_log](mail_activity_unlink_log/) | 16.0.1.0.0 |  | Leave a message when an activity is unlinked
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 16.0.1.1.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 16.0.1.0.1 |  | Module to use attach existing attachment for account module
@@ -7821,7 +7823,7 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 16.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_discuss_security](mail_discuss_security/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a group to display 'Discuss' Application menu entry
 [mail_drop_target](mail_drop_target/) | 16.0.1.1.0 |  | Attach emails to Odoo by dragging them from your desktop
-[mail_gateway](mail_gateway/) | 16.0.1.2.0 |  | Set a gateway
+[mail_gateway](mail_gateway/) | 16.0.1.3.0 |  | Set a gateway
 [mail_gateway_telegram](mail_gateway_telegram/) | 16.0.1.1.0 |  | Set a gateway for telegram
 [mail_gateway_whatsapp](mail_gateway_whatsapp/) | 16.0.1.1.0 |  | Set a gateway for whatsapp
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 16.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
@@ -7842,11 +7844,11 @@ addon | version | maintainers | summary
 [mail_show_follower](mail_show_follower/) | 16.0.1.2.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Show CC document followers in mails.
 [mail_template_multi_attachment](mail_template_multi_attachment/) | 16.0.1.0.0 |  | Module who allows to generate multi attachments on an email template.
 [mail_template_substitute](mail_template_substitute/) | 16.0.1.0.1 |  | This module allows to create substitution rules for mail templates.
-[mail_tracking](mail_tracking/) | 16.0.1.0.6 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 16.0.1.0.7 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 16.0.1.0.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 16.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_contact_active](mass_mailing_contact_active/) | 16.0.1.0.0 |  | Adds active feature on mailing list contact and subscriptions
-[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 16.0.1.0.2 |  | Know and track (un)subscription reasons, GDPR compliant
+[mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 16.0.1.1.0 |  | Know and track (un)subscription reasons, GDPR compliant
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 16.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 16.0.2.1.0 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 16.0.2.0.1 |  | Link partners with mass-mailing
@@ -8544,7 +8546,7 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 16.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 16.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 16.0.1.0.1 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 16.0.4.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 16.0.4.0.2 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_board](base_tier_validation_board/) | 16.0.1.0.0 | <a href='https://github.com/JasminSForgeFlow'><img src='https://github.com/JasminSForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JasminSForgeFlow'/></a> | Add Tier Review Boards
 [base_tier_validation_correction](base_tier_validation_correction/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Correct tier.review data after it has been created.
 [base_tier_validation_definition_server_action](base_tier_validation_definition_server_action/) | 16.0.1.0.0 |  | Server action for Base tier validation
@@ -8552,7 +8554,7 @@ addon | version | maintainers | summary
 [base_tier_validation_forward](base_tier_validation_forward/) | 16.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_report](base_tier_validation_report/) | 16.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Reports related to tier validation
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
-[base_tier_validation_waiting](base_tier_validation_waiting/) | 16.0.1.0.0 |  | Base Tier Validation Extension to add waiting status
+[base_tier_validation_waiting](base_tier_validation_waiting/) | 16.0.1.0.1 |  | Base Tier Validation Extension to add waiting status
 [base_user_chatter](base_user_chatter/) | 16.0.1.0.0 |  | User Chatter
 [base_user_locale](base_user_locale/) | 16.0.1.1.1 |  | User Locale Settings
 [confirmation_wizard](confirmation_wizard/) | 16.0.1.0.0 |  | This module adds a confirmation wizard that can be called with code. It does nothing by itself.

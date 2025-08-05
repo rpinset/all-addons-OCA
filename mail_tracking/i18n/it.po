@@ -106,6 +106,13 @@ msgstr "Rimbalzato"
 
 #. module: mail_tracking
 #. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Cancel"
+msgstr ""
+
+#. module: mail_tracking
+#. odoo-javascript
 #. odoo-python
 #: code:addons/mail_tracking/models/mail_thread.py:0
 #: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
@@ -209,6 +216,13 @@ msgstr "Spunta destra stato consegna"
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Do you really want to mark as reviewed all the failed messages?"
+msgstr ""
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_id
@@ -478,6 +492,13 @@ msgid "MailTracking events"
 msgstr "Eventi tracciamento e-mail"
 
 #. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/components/discuss/discuss.xml:0
+#, python-format
+msgid "Mark all as reviewed"
+msgstr ""
+
+#. module: mail_tracking
 #: model:ir.model,name:mail_tracking.model_mail_message
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__message_id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__tracking_email_id
@@ -505,6 +526,13 @@ msgstr "Nessun messaggio fallito"
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_tree
 msgid "OS"
 msgstr "SO"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/models/thread_view_topbar.esm.js:0
+#, python-format
+msgid "Ok"
+msgstr ""
 
 #. module: mail_tracking
 #: model:ir.model.fields.selection,name:mail_tracking.selection__mail_tracking_event__event_type__open

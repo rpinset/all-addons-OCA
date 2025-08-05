@@ -40,8 +40,13 @@ class OrderMixin(models.AbstractModel):
         )
         line_ids_to_delete = []
         for order in self:
+            lines = order[self._get_order_line_field()]
+            fieldname_line_product_qty = lines._get_product_qty_field()
+            fieldname_line_product_qty_delivered_received = (
+                lines._get_product_qty_delivered_received_field()
+            )
             # Lines to compute container deposit
-            lines_to_comp_deposit = order[self._get_order_line_field()].filtered(
+            lines_to_comp_deposit = lines.filtered(
                 lambda ln: (
                     ln.product_packaging_id.package_type_id.container_deposit_product_id
                 )
@@ -52,7 +57,7 @@ class OrderMixin(models.AbstractModel):
             )
             lines_to_update = {}
             lines_to_create = []
-            for line in self[self._get_order_line_field()]:
+            for line in lines:
                 if not line.is_container_deposit:
                     continue
                 qty, qty_dlvd_rcvd = deposit_container_qties.pop(
@@ -60,7 +65,7 @@ class OrderMixin(models.AbstractModel):
                 )
                 if not qty:
                     new_vals = {
-                        line._get_product_qty_field(): 0,
+                        fieldname_line_product_qty: 0,
                     }
                     if order.state == "draft":
                         # values_lst.append(Command.delete(line.id))
@@ -71,10 +76,17 @@ class OrderMixin(models.AbstractModel):
                     lines_to_update[line.id] = new_vals
 
                 else:
-                    lines_to_update[line.id] = {
-                        line._get_product_qty_field(): qty,
-                        line._get_product_qty_delivered_received_field(): qty_dlvd_rcvd,
-                    }
+                    lines_to_update[line.id] = values = {}
+                    if line[fieldname_line_product_qty] != qty:
+                        values[fieldname_line_product_qty] = qty
+                    if (
+                        line[fieldname_line_product_qty_delivered_received]
+                        != qty_dlvd_rcvd
+                    ):
+                        values[
+                            fieldname_line_product_qty_delivered_received
+                        ] = qty_dlvd_rcvd
+
             for product in deposit_container_qties:
                 if deposit_container_qties[product][0]:
                     values = order.prepare_deposit_container_line(
@@ -84,7 +96,9 @@ class OrderMixin(models.AbstractModel):
                     lines_to_create.append(values)
             line_model = self._fields[self._get_order_line_field()].comodel_name
             for line_id, values in lines_to_update.items():
-                self.env[line_model].browse(line_id).exists().write(values)
+                line = self.env[line_model].browse(line_id).exists()
+                if line and values:
+                    line.write(values)
             if lines_to_create:
                 self.env[line_model].create(lines_to_create)
         # Schedule line to delete after commit to avoid caching issue w/ UI

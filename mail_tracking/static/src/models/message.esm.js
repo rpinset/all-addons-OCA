@@ -22,6 +22,13 @@ registerPatch({
             }
             return data2;
         },
+        async markAllFailedAsReviewed() {
+            this.messaging.rpc({
+                model: "mail.message",
+                method: "set_all_as_reviewed",
+                args: [],
+            });
+        },
     },
     recordMethods: {
         hasPartnerTrackings() {

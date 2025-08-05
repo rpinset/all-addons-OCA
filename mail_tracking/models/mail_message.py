@@ -320,7 +320,9 @@ class MailMessage(models.Model):
         self.check_access_rule("read")
         self.write({"mail_tracking_needs_action": False})
         self.env["bus.bus"]._sendone(
-            self.env.user.partner_id, "toggle_tracking_status", self.ids
+            self.env.user.partner_id,
+            "toggle_tracking_status",
+            {"message_ids": self.ids},
         )
         return self.mail_tracking_needs_action
 
@@ -339,13 +341,8 @@ class MailMessage(models.Model):
         unreviewed_messages.write({"mail_tracking_needs_action": False})
         ids = unreviewed_messages.ids
 
-        self.env["bus.bus"].sendone(
-            (self._cr.dbname, "res.partner", self.env.user.partner_id.id),
-            {
-                "type": "toggle_tracking_status",
-                "message_ids": ids,
-                "needs_actions": False,
-            },
+        self.env["bus.bus"]._sendone(
+            self.env.user.partner_id, "toggle_tracking_status", {"message_ids": ids}
         )
 
         return ids

@@ -38,6 +38,20 @@
         </xpath>
     </t>
 
+    <t t-inherit="mail.ThreadViewTopbar" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('o_ThreadViewTopbar_actions')]" position="inside">
+            <t
+                t-if="threadViewTopbar.thread and threadViewTopbar.thread === messaging.failedmsg.thread"
+            >
+                <button
+                    class="o_ThreadViewTopbar_markAllReviewed btn btn-secondary"
+                    t-att-disabled="threadViewTopbar.threadView.messages.length === 0"
+                    t-on-click="threadViewTopbar.onClickMarkAllFailedAsReviewed"
+                >Mark all as reviewed</button>
+            </t>
+        </xpath>
+    </t>
+
     <t t-name="mail_tracking.TrackingStatus" owl="1">
         <span t-if="tracking['isCc']" class="mail_tracking_cc">
             <i class="fa fa-cc" role="img" aria-label="Cc" />

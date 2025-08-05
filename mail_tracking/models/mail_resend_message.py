@@ -47,11 +47,22 @@ class MailResendMessage(models.TransientModel):
                     lambda x: x.partner_id in to_send
                 )
                 tracking_ids.sudo().write({"state": False})
+        res = super().resend_mail_action()
+        failed_states = self.env["mail.message"].get_failed_states()
+        for wizard in self:
+            to_send = wizard.partner_ids.filtered("resend").mapped("partner_id")
+            if to_send:
+                tracking_ids = wizard.mail_message_id.mail_tracking_ids.filtered(
+                    lambda x: x.partner_id in to_send and x.state in failed_states
+                )
                 # Send bus notifications to update Discuss and
                 # mail_failed_messages widget
                 self.env["bus.bus"]._sendone(
-                    self.env.user.partner_id.id,
+                    self.env.user.partner_id,
                     "toggle_tracking_status",
-                    self.mail_message_id.id,
+                    {
+                        "message_ids": self.mail_message_id.ids,
+                        "still_failed": bool(tracking_ids),
+                    },
                 )
-        return super().resend_mail_action()
+        return res

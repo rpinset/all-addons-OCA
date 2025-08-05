@@ -163,7 +163,7 @@ class MisBuilderXlsx(models.AbstractModel):
         # Add date/time footer
         row_pos += 1
         footer_format = workbook.add_format(
-            {"italic": True, "font_color": "#202020", "size": 9}
+            {"italic": True, "font_color": "#202020", "font_size": 9}
         )
         lang_model = self.env["res.lang"]
         lang = lang_model._lang_get(self.env.user.lang)

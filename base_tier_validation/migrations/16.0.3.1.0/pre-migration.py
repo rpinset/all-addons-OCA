@@ -102,11 +102,21 @@ def migrate(env, version):
                 env.cr,
                 f"""
                 UPDATE {table_name} SET validation_status = 'pending'
-                WHERE validated = false
-                AND coalesce(rejected, false) = false AND id IN (
+                WHERE validation_status = 'no' AND id IN (
                     SELECT DISTINCT(tr.res_id)
                     FROM tier_review AS tr
                     WHERE tr.model = '{model_name}' AND tr.status = 'pending'
+                )
+                """,
+            )
+            openupgrade.logged_query(
+                env.cr,
+                f"""
+                UPDATE {table_name} SET validation_status = 'waiting'
+                WHERE validation_status = 'no' AND id IN (
+                    SELECT DISTINCT(tr.res_id)
+                    FROM tier_review AS tr
+                    WHERE tr.model = '{model_name}' AND tr.status = 'waiting'
                 )
                 """,
             )

@@ -6,29 +6,15 @@
         t-inherit="mail.Message"
         t-inherit-mode="extension"
     >
-        <t t-if="messageView" position="attributes">
-            <attribute
-                name="t-if"
-                add="&amp;&amp; (
-                    !messageView.isInFailedDiscuss || (
-                        messageView.isInFailedDiscuss
-                        &amp;&amp; !store.reviewedMessageIds.has(messageView.message.id)
-                    )
-                )"
-                separator=" "
-            />
-        </t>
         <xpath expr="//div[hasclass('o_Message_header')]" position="inside">
             <!-- Show options only for Discuss failed messages and messages from FailedMessage component -->
             <span
-                t-if="!store.reviewedMessageIds.has(messageView.message.id) &amp;&amp; (
-                    (
-                        messageView.message.isFailed
-                        &amp;&amp; messageView.isInDiscuss
-                    ) || (
-                        this.props.isFailedMessage
-                        &amp;&amp; messageView.isFailedChatterMessageView
-                    )
+                t-if="(
+                    messageView.message.isFailed
+                    &amp;&amp; messageView.isInDiscuss
+                ) || (
+                    this.props.isFailedMessage
+                    &amp;&amp; messageView.isFailedChatterMessageView
                 )"
                 t-attf-class="o_thread_icons"
             >

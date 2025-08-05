@@ -16,13 +16,7 @@
             <t
                 t-if="discussSidebarMailboxView.isFailedDiscussSidebarMailboxView &amp;&amp; messages.length"
             >
-                <t
-                    t-set="failedMessages"
-                    t-value="discussSidebarMailboxView._getNonReviewedFailedMessages(
-                        messages,
-                        store.reviewedMessageIds,
-                    )"
-                />
+                <t t-set="failedMessages" t-value="messages" />
                 <div
                     t-if="failedMessages.length"
                     t-attf-class="o_DiscussSidebarMailbox_counter o_DiscussSidebarMailbox_item badge rounded-pill {{ discussSidebarMailboxView.mailbox === messaging.starred ? 'bg-400 text-light' : 'text-bg-primary' }} ms-1 me-3"
