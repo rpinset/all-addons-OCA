@@ -23,16 +23,24 @@ msgid "Async Pay"
 msgstr "Pagamento asincrono"
 
 #. module: l10n_it_riba_queued
+#: model:ir.model,name:l10n_it_riba_queued.model_riba_distinta_line
+msgid "C/O Details"
+msgstr ""
+
+#. module: l10n_it_riba_queued
+#: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_distinta_line__display_name
 #: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_payment_multiple__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: l10n_it_riba_queued
+#: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_distinta_line__id
 #: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_payment_multiple__id
 msgid "ID"
 msgstr "ID"
 
 #. module: l10n_it_riba_queued
+#: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_distinta_line____last_update
 #: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_payment_multiple____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"

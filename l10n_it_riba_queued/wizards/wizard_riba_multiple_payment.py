@@ -8,4 +8,6 @@ class RibaPaymentMultiple(models.TransientModel):
     _inherit = "riba.payment.multiple"
 
     def pay_async(self):
-        return self.with_delay().pay()
+        return self.with_context(
+            l10n_it_riba_async_single_process=True,
+        ).pay()

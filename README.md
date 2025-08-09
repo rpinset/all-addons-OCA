@@ -89,16 +89,16 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit d264a732114ddba7d1f966947e8ca2c25e923eea
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 29 08:06:14 2025 +0000
+commit 02e2bf08d48cb5d7b6bc15a6957583123f4b8f0e
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Fri Aug 8 12:40:35 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (261 of 261 strings)
     
     Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/it/
 
 
 ## account-invoice-reporting
@@ -171,16 +171,11 @@ Date:   Wed Jun 4 02:46:39 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 98377641f9f0ed191ab1b05d18a718743f59f3a7
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Jul 25 15:57:45 2025 +0000
+commit 0419bce06066aa30a5feb4a1467adc17d134a1fd
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Aug 8 12:45:10 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (27 of 27 strings)
-    
-    Translation: credit-control-14.0/credit-control-14.0-partner_risk_insurance
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-14-0/credit-control-14-0-partner_risk_insurance/it/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -500,25 +495,25 @@ Date:   Tue Jul 29 21:45:55 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit 0f677da75a6710b95b469c59b85c1287421a4c45
+commit 15d096596c363e4e2671fa240a6860adef92e9d5
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Jul 30 15:44:01 2025 +0000
+Date:   Fri Aug 8 09:59:36 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (11 of 11 strings)
-    
-    Translation: e-commerce-14.0/e-commerce-14.0-website_sale_product_detail_attribute_image
-    Translate-URL: https://translation.odoo-community.org/projects/e-commerce-14-0/e-commerce-14-0-website_sale_product_detail_attribute_image/it/
+    Added translation using Weblate (Italian)
 
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 5a6ce114c886803e444f644564762b17fd9eae97
+commit c1c9a5d9427fb35be55f54647cc40a7d1346c309
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 15:00:48 2025 +0000
+Date:   Fri Aug 8 12:35:41 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: edi-14.0/edi-14.0-purchase_order_ubl
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-purchase_order_ubl/it/
 
 
 ## field-service
@@ -878,16 +873,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit a48bdb7014107431044fe39fdb2d267af171aa01
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 2 14:59:06 2025 +0000
+commit 54792f5d6f53749a722e871fba198d41d0771906
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Aug 7 16:18:09 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (11008 of 11008 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_intrastat
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_intrastat/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_riba_queued
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_riba_queued/
 
 
 ## l10n-japan
@@ -1108,16 +1103,11 @@ Date:   Fri Jun 13 09:04:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 0dbca6171f70cf7ee4d316f4f968220b41a86250
+commit 8a3f777207af23a5f0ef547329f39563ce597acf
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 14:38:06 2025 +0000
+Date:   Fri Aug 8 12:27:36 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (5 of 5 strings)
-    
-    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-stock_restrict_by_planned_consumed_date
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-stock_restrict_by_planned_consumed_date/it/
+    Added translation using Weblate (Italian)
 
 
 ## stock-logistics-tracking
@@ -1605,16 +1595,16 @@ Date:   Sat Jun 21 10:45:27 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 474a0d426f46501d37d36ed4b3d611fbf385041d
+commit bfdcc768cd0027c71b32c2e4fb17d249c1a5c647
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Jun 16 08:58:31 2025 +0000
+Date:   Wed Aug 6 08:55:37 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (509 of 509 strings)
+    Currently translated at 100.0% (262 of 262 strings)
     
-    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel/it/
+    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel_housekeeping
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel_housekeeping/it/
 
 
 ## vertical-isp

@@ -8,12 +8,13 @@ from odoo.tests import Form
 from odoo.tools import safe_eval
 
 from odoo.addons.l10n_it_ricevute_bancarie.tests import riba_common
+from odoo.addons.queue_job.tests.common import trap_jobs
 
 
 class TestRiBa(riba_common.TestRibaCommon):
     def test_async_payment(self):
         """When multiple lines have to be paid asynchronously,
-        a job is created.
+        a job for each line is created.
         """
         # Arrange
         company = self.env.company
@@ -36,7 +37,8 @@ class TestRiBa(riba_common.TestRibaCommon):
         with invoice_form.invoice_line_ids.new() as line:
             line.product_id = product
         invoice = invoice_form.save()
-        invoice.action_post()
+        invoices = invoice | invoice.copy()
+        invoices.action_post()
 
         to_issue_action = self.env.ref(
             "l10n_it_ricevute_bancarie.action_riba_da_emettere"
@@ -44,7 +46,7 @@ class TestRiBa(riba_common.TestRibaCommon):
         to_issue_records = self.env[to_issue_action.res_model].search(
             safe_eval.safe_eval(to_issue_action.domain)
         )
-        invoice_to_issue_records = to_issue_records & invoice.line_ids
+        invoice_to_issue_records = to_issue_records & invoices.line_ids
         self.assertTrue(invoice_to_issue_records)
 
         issue_wizard_model = self.env["riba.issue"].with_context(
@@ -68,14 +70,13 @@ class TestRiBa(riba_common.TestRibaCommon):
             .with_context(active_id=slip.id)
             .create(
                 {
-                    "bank_amount": invoice.amount_total,
+                    "bank_amount": sum(invoices.mapped("amount_total")),
                 }
             )
         )
         credit_wizard.create_move()
         self.assertEqual(slip.state, "accredited")
 
-        # Act
         payment_wizard_action = slip.settle_all_line()
         payment_wizard_form = Form(
             self.env[payment_wizard_action["res_model"]].with_context(
@@ -84,8 +85,12 @@ class TestRiBa(riba_common.TestRibaCommon):
         )
         payment_wizard_form.payment_date = payment_date
         payment_wizard = payment_wizard_form.save()
-        delayed = payment_wizard.pay_async()
+        # pre-condition
+        self.assertEqual(len(payment_wizard.riba_line_ids), 2)
+
+        # Act
+        with trap_jobs() as jobs_trap:
+            payment_wizard.pay_async()
 
         # Assert
-        job = self.env["queue.job"].search([("uuid", "=", delayed.uuid)])
-        self.assertTrue(job)
+        jobs_trap.assert_jobs_count(2)
