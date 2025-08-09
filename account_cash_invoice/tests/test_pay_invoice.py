@@ -82,24 +82,19 @@ class TestSessionPayInvoice(BaseCommon):
         )
 
     def test_bank_statement(self):
-        invoice_in_obj = self.env["cash.pay.invoice"].with_context(
-            active_ids=self.journal.ids, active_model=self.journal._name
-        )
+        invoice_in_obj = self.env["cash.pay.invoice"]
         with Form(invoice_in_obj) as in_invoice:
+            in_invoice.journal_id = self.journal
             in_invoice.invoice_type = "vendor"
             in_invoice.invoice_id = self.invoice_in
             self.assertEqual(-100, in_invoice.amount)
-            self.assertEqual(in_invoice.journal_id, self.journal)
         invoice_in_obj.browse(in_invoice.id).action_pay_invoice()
-
-        invoice_out_obj = self.env["cash.pay.invoice"].with_context(
-            active_ids=self.journal.ids, active_model=self.journal._name
-        )
+        invoice_out_obj = self.env["cash.pay.invoice"]
         with Form(invoice_out_obj) as out_invoice:
+            out_invoice.journal_id = self.journal
             out_invoice.invoice_type = "customer"
             out_invoice.invoice_id = self.invoice_out
             self.assertEqual(100, out_invoice.amount)
-            self.assertEqual(in_invoice.journal_id, self.journal)
         invoice_out_obj.browse(out_invoice.id).action_pay_invoice()
         inv_lines = self.invoice_in.line_ids.filtered(
             lambda line: line.account_id.account_type

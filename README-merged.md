@@ -876,8 +876,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 16.0.2.0.1 |  | Account Credit Control
 [account_credit_control_dunning_fees](account_credit_control_dunning_fees/) | 16.0.1.0.0 |  | Credit control dunning fees
-[account_financial_risk](account_financial_risk/) | 16.0.1.3.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
-[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 16.0.1.7.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
+[account_financial_risk](account_financial_risk/) | 16.0.1.4.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+[account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 16.0.1.8.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 16.0.1.0.2 |  | Partner Payment Return Risk
@@ -1161,7 +1161,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_cash_invoice](account_cash_invoice/) | 16.0.1.0.3 |  | Pay and receive invoices from bank statements
+[account_cash_invoice](account_cash_invoice/) | 16.0.1.0.4 |  | Pay and receive invoices from bank statements
 [account_check_printing_report_base](account_check_printing_report_base/) | 16.0.1.0.0 |  | Account Check Printing Report Base
 [account_due_list](account_due_list/) | 16.0.1.2.1 |  | List of open credits and debits, with due date
 [account_due_list_aging_comment](account_due_list_aging_comment/) | 16.0.1.0.0 |  | Account Due List Aging Comment
@@ -1878,7 +1878,7 @@ addon | version | maintainers | summary
 [sale_delivery_split_date](sale_delivery_split_date/) | 16.0.2.0.0 |  | Sale Deliveries split by date
 [sale_delivery_state](sale_delivery_state/) | 16.0.2.0.1 |  | Show the delivery state on the sale order
 [sale_discount_display_amount](sale_discount_display_amount/) | 16.0.1.1.0 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
-[sale_elaboration](sale_elaboration/) | 16.0.1.7.2 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Set an elaboration for any sale line
+[sale_elaboration](sale_elaboration/) | 16.0.1.8.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 16.0.2.0.0 |  | Custom exceptions on sale order
 [sale_exception_holidays_public](sale_exception_holidays_public/) | 16.0.1.0.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Raise a sale exception if there is a commitment_date on the SO and this date is a public holidays for the shipping partner address
 [sale_fixed_discount](sale_fixed_discount/) | 16.0.1.0.3 |  | Allows to apply fixed amount discounts in sales orders.
@@ -1942,7 +1942,7 @@ addon | version | maintainers | summary
 [sale_order_tag](sale_order_tag/) | 16.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds Tags to Sales Orders.
 [sale_order_type](sale_order_type/) | 16.0.1.1.1 |  | Sale Order Type
 [sale_order_warehouse_location](sale_order_warehouse_location/) | 16.0.1.0.0 |  | Set warehouse in sales orders based on delivery country/state.
-[sale_order_warn_message](sale_order_warn_message/) | 16.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
+[sale_order_warn_message](sale_order_warn_message/) | 16.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
 [sale_packaging_default](sale_packaging_default/) | 16.0.2.2.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Simplify using products default packaging for sales
 [sale_partner_incoterm](sale_partner_incoterm/) | 16.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_pricelist](sale_partner_pricelist/) | 16.0.1.0.0 |  | Sale Partner Pricelist
@@ -4736,6 +4736,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_payment_term_cutoff_day](account_payment_term_cutoff_day/) | 16.0.1.0.1 |  | Account Payment Term Cutoff Day
+[account_tax_rounding_method](account_tax_rounding_method/) | 16.0.1.0.0 |  | Account Tax Rounding Method
 [l10n_jp_account_report_registration_number](l10n_jp_account_report_registration_number/) | 16.0.1.0.0 |  | Japan Account Report Registration Number
 [l10n_jp_address_layout](l10n_jp_address_layout/) | 16.0.1.0.0 |  | Japan Address Layout
 [l10n_jp_country_state](l10n_jp_country_state/) | 16.0.1.0.0 |  | Japan Country States
@@ -6205,7 +6206,7 @@ addon | version | maintainers | summary
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 16.0.1.0.0 |  | Allows to create demand estimates.
 [stock_exception](stock_exception/) | 16.0.1.1.0 |  | Custom exceptions on stock picking
 [stock_helper](stock_helper/) | 16.0.1.1.0 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 16.0.2.5.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 16.0.2.6.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 16.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 16.0.2.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_justification](stock_inventory_justification/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | This module allows to set justification on inventories
@@ -6517,7 +6518,7 @@ addon | version | maintainers | summary
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
 [shopfloor_reception](shopfloor_reception/) | 16.0.1.4.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
-[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.0.1 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
+[shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.1.0 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
 [shopfloor_reception_refund_return](shopfloor_reception_refund_return/) | 16.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Mark created return as to refund
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Integrate rest_log into Shopfloor app
 [shopfloor_workstation](shopfloor_workstation/) | 16.0.1.0.0 |  | Manage warehouse workstation with barcode scanners
@@ -6921,6 +6922,7 @@ addon | version | maintainers | summary
 [purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.1 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
 [purchase_force_invoiced_quantity](purchase_force_invoiced_quantity/) | 16.0.1.0.0 |  | Add manual invoice quantity in purchase order lines
+[purchase_fully_invoiced](purchase_fully_invoiced/) | 16.0.1.0.0 |  | Useful filters in Purchases to know the actual status of invoices.
 [purchase_invoice_method](purchase_invoice_method/) | 16.0.1.0.0 |  | Allow to force the invoice method of a purchase
 [purchase_invoice_new_picking_line](purchase_invoice_new_picking_line/) | 16.0.1.0.0 |  | When creating an invoice from a purchase order, this module also adds invoice lines for products that were in the order's pickings but not in the order itself.
 [purchase_invoice_plan](purchase_invoice_plan/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to purchases order, ability to manage future invoice plan

@@ -387,8 +387,8 @@ msgstr ""
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid ""
-"There are active adjustments for the requested products: %(names)s. Blocking"
-" adjustments: %(blocking_names)s"
+"There are active adjustments for the requested products: %(names)s. Blocking "
+"adjustments: %(blocking_names)s"
 msgstr ""
 
 #. module: stock_inventory
@@ -426,8 +426,8 @@ msgstr ""
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid ""
-"When 'Product Selection: Lot Serial Number' is selected you are only able to"
-" add one product."
+"When 'Product Selection: Lot Serial Number' is selected you are only able to "
+"add one product."
 msgstr ""
 
 #. module: stock_inventory
@@ -437,6 +437,13 @@ msgstr ""
 msgid ""
 "When 'Product Selection: One Product' is selected you are only able to add "
 "one product."
+msgstr ""
+
+#. module: stock_inventory
+#. odoo-python
+#: code:addons/stock_inventory/models/stock_inventory.py:0
+#, python-format
+msgid "You can only delete inventory adjustments groups in draft state."
 msgstr ""
 
 #. module: stock_inventory

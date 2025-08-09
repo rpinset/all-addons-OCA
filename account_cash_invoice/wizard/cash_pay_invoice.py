@@ -14,16 +14,6 @@ class CashPayInvoice(models.TransientModel):
     _name = "cash.pay.invoice"
     _description = "Cash Pay invoice from bank statement"
 
-    def _default_company(self):
-        active_ids = self.env.context.get("active_ids")
-        journal = self.env["account.journal"].browse(active_ids)
-        return journal.company_id
-
-    def _default_currency(self):
-        active_ids = self.env.context.get("active_ids")
-        journal = self.env["account.journal"].browse(active_ids)
-        return journal.currency_id or journal.company_id.currency_id
-
     invoice_id = fields.Many2one(
         comodel_name="account.move",
         string="Invoice",
@@ -34,22 +24,15 @@ class CashPayInvoice(models.TransientModel):
     )
     name = fields.Char(related="invoice_id.name", readonly=True)
     company_id = fields.Many2one(
-        comodel_name="res.company",
-        default=lambda self: self._default_company(),
-        required=True,
-        readonly=True,
+        comodel_name="res.company", compute="_compute_company_id"
     )
     currency_id = fields.Many2one(
-        comodel_name="res.currency",
-        default=lambda self: self._default_currency(),
-        required=True,
-        readonly=True,
+        comodel_name="res.currency", compute="_compute_currency_id"
     )
     journal_id = fields.Many2one(
         comodel_name="account.journal",
         required=True,
-        readonly=True,
-        default=lambda self: self.env.context.get("active_ids")[0],
+        domain="[('type', 'in', ['bank', 'cash'])]",
         string="Journal",
     )
     amount = fields.Monetary(compute="_compute_amount", store=True, readonly=False)
@@ -60,6 +43,17 @@ class CashPayInvoice(models.TransientModel):
         ],
     )
     invoice_domain = fields.Binary(compute="_compute_invoice_domain")
+
+    @api.depends("journal_id")
+    def _compute_company_id(self):
+        for record in self:
+            record.company_id = record.journal_id.company_id
+
+    @api.depends("journal_id")
+    def _compute_currency_id(self):
+        for record in self:
+            journal = record.journal_id
+            record.currency_id = journal.currency_id or journal.company_id.currency_id
 
     @api.depends("company_id", "currency_id", "invoice_type")
     def _compute_invoice_domain(self):

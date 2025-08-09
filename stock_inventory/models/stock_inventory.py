@@ -483,3 +483,14 @@ class InventoryAdjustmentsGroup(models.Model):
                             " you are only able to add one product."
                         )
                     )
+
+    def unlink(self):
+        for adjustment in self:
+            if adjustment.state != "draft":
+                raise UserError(
+                    _(
+                        "You can only delete inventory adjustments groups in"
+                        " draft state."
+                    )
+                )
+        return super().unlink()

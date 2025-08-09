@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2021-03-26 18:46+0000\n"
-"Last-Translator: eduardgm <eduard.garcia@qubiq.es>\n"
+"PO-Revision-Date: 2025-08-07 14:25+0000\n"
+"Last-Translator: Miquel Romera <mromera@pmsastro.es>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_distribution
@@ -26,37 +26,37 @@ msgstr "Analítico"
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_names
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_names
 msgid "Analytic Account Names"
-msgstr ""
+msgstr "Nombres de cuentas analíticas"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_ids
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_ids
 msgid "Analytic Accounts"
-msgstr ""
+msgstr "Cuentas analíticas"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_distribution_search
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_distribution_search
 msgid "Analytic Distribution Search"
-msgstr ""
+msgstr "Búsqueda de Distribución Analítca"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_precision
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_precision
 msgid "Analytic Precision"
-msgstr ""
+msgstr "Precisión Analítica"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_ids
 #: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_account_ids
 msgid "Analytic accounts computed from analytic distribution."
-msgstr ""
+msgstr "Cuentas analíticas calculadas a partir de la distribución analítica."
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_distribution_import
 #: model:ir.model.fields,field_description:stock_landed_costs_analytic.field_stock_valuation_adjustment_lines__analytic_distribution_import
 msgid "Analytic distribution (importable)"
-msgstr ""
+msgstr "Distribución analítica (importable)"
 
 #. module: stock_landed_costs_analytic
 #: model:ir.model.fields,help:stock_landed_costs_analytic.field_stock_landed_cost_lines__analytic_account_names
