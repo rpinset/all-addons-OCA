@@ -131,4 +131,4 @@ class TierTierValidation(TransactionCase):
         wizard.comment = "Forward tier is reviewed"
         wiz = wizard.save()
         wiz.add_comment()
-        self.assertTrue(record.validated)
+        self.assertEqual(record.validation_status, "validated")

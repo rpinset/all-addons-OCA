@@ -786,7 +786,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 17.0.2.2.3 |  | Account Credit Control
 [account_credit_control_dunning_fees](account_credit_control_dunning_fees/) | 17.0.1.0.0 |  | Credit control dunning fees
-[account_financial_risk](account_financial_risk/) | 17.0.1.1.2 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+[account_financial_risk](account_financial_risk/) | 17.0.1.2.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 17.0.1.0.0 |  | Partner Payment Return Risk
@@ -840,6 +840,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [privacy](privacy/) | 17.0.1.0.0 |  | Provides data privacy and protection features to comply to regulations, such as GDPR.
 [privacy_consent](privacy_consent/) | 17.0.1.0.1 |  | Allow people to explicitly accept or reject inclusion in some activity, GDPR compliant
+[privacy_partner_to_be_forgotten](privacy_partner_to_be_forgotten/) | 17.0.1.0.0 |  | Anonymize partner data for GDPR compliance
 
 [//]: # (end addons)
 
@@ -1766,7 +1767,7 @@ addon | version | maintainers | summary
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.5 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 17.0.1.0.2 |  | Sale Order Type
 [sale_order_type_confirm_message](sale_order_type_confirm_message/) | 17.0.1.0.0 |  | Confirmation requirement when validating sale
-[sale_order_warn_message](sale_order_warn_message/) | 17.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
+[sale_order_warn_message](sale_order_warn_message/) | 17.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
@@ -2451,6 +2452,7 @@ addon | version | maintainers | summary
 [website_sale_secondary_unit](website_sale_secondary_unit/) | 17.0.1.0.0 |  | Allow manage secondary units in website shop
 [website_sale_secondary_unit_product_matrix](website_sale_secondary_unit_product_matrix/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Product matrix with secondary units in eCommerce
 [website_sale_stock_available](website_sale_stock_available/) | 17.0.1.0.0 |  | Display 'Available to promise' in shop online instead of 'Free To Use Quantity'
+[website_sale_stock_product_matrix](website_sale_stock_product_matrix/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Stock hints in eCommerce product matrix
 [website_sale_stock_provisioning_date](website_sale_stock_provisioning_date/) | 17.0.1.0.0 |  | Display provisioning date for a product in shop online
 [website_sale_suggest_create_account](website_sale_suggest_create_account/) | 17.0.1.0.0 |  | Suggest users to create an account when buying in the website
 [website_sale_vat_required](website_sale_vat_required/) | 17.0.1.0.0 |  | VAT number required in checkout form
@@ -3213,7 +3215,7 @@ addon | version | maintainers | summary
 [product_multi_company](product_multi_company/) | 17.0.1.0.0 |  | Select individually the product template visibility on each company
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 17.0.1.0.0 |  | Intercompany PO/SO rules
-[purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 17.0.1.0.0 |  | Intercompany PO/SO rules with warehouse
+[purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 17.0.1.0.1 |  | Intercompany PO/SO rules with warehouse
 
 [//]: # (end addons)
 
@@ -4505,6 +4507,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_nl_bank](l10n_nl_bank/) | 17.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_partner_name](l10n_nl_partner_name/) | 17.0.1.0.0 |  | Adapt parter names to Dutch conventions (support infix)
 [l10n_nl_xaf_auditfile_export](l10n_nl_xaf_auditfile_export/) | 17.0.1.0.0 |  | Export XAF auditfiles for Dutch tax authorities
 
@@ -5620,7 +5623,7 @@ addon | version | maintainers | summary
 [stock_demand_estimate](stock_demand_estimate/) | 17.0.1.1.1 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 17.0.1.0.0 |  | Allows to create demand estimates.
 [stock_helper](stock_helper/) | 17.0.1.1.1 |  | Add methods shared between various stock modules
-[stock_inventory](stock_inventory/) | 17.0.1.2.1 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 17.0.1.3.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 17.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 17.0.1.0.0 |  | More filters for inventory adjustments
 [stock_location_lockdown](stock_location_lockdown/) | 17.0.1.0.0 |  | Prevent to add stock on locked locations
@@ -5897,7 +5900,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_move_line_mrp_info](account_move_line_mrp_info/) | 17.0.1.1.0 |  | Account Move Line Mrp Info
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 17.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp Attachment Mgmt
-[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 17.0.1.0.0 |  | Dynamic BOM component based on product attribute
+[mrp_bom_attribute_match](mrp_bom_attribute_match/) | 17.0.1.0.1 |  | Dynamic BOM component based on product attribute
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
 [mrp_bom_hierarchy](mrp_bom_hierarchy/) | 17.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.1 |  | Logs any change to a BoM in the chatter
@@ -6140,6 +6143,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [procurement_purchase_no_grouping](procurement_purchase_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase No Grouping
 [procurement_purchase_requisition_generation](procurement_purchase_requisition_generation/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Procurement Purchase Requisition Generation
+[procurement_purchase_requisition_generation_dropshipping](procurement_purchase_requisition_generation_dropshipping/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Procurement purchase requisition dropshipping
 [procurement_purchase_sale_no_grouping](procurement_purchase_sale_no_grouping/) | 17.0.1.0.0 |  | Procurement Purchase Service No Grouping
 [product_supplier_code_purchase](product_supplier_code_purchase/) | 17.0.1.0.0 |  | This module adds to the purchase order line the supplier code defined in the product.
 [product_supplierinfo_disable_autocreation](product_supplierinfo_disable_autocreation/) | 17.0.1.0.0 |  | Add option to disable automatic creation of pricelists for suppliers
@@ -7574,9 +7578,9 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 17.0.1.0.1 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 17.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 17.0.3.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 17.0.4.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 17.0.1.0.0 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
+[base_tier_validation_forward](base_tier_validation_forward/) | 17.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
 [date_range](date_range/) | 17.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [date_range_account](date_range_account/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
@@ -8438,7 +8442,7 @@ addon | version | maintainers | summary
 [web_pwa_customize](web_pwa_customize/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Web Pwa Customize
 [web_refresher](web_refresher/) | 17.0.1.1.2 |  | Web Refresher
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 17.0.1.0.0 | <a href='https://github.com/frahikLV'><img src='https://github.com/frahikLV.png' width='32' height='32' style='border-radius:50%;' alt='frahikLV'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/cuongnmtm'><img src='https://github.com/cuongnmtm.png' width='32' height='32' style='border-radius:50%;' alt='cuongnmtm'/></a> | Remember the tree columns' widths across sessions.
-[web_responsive](web_responsive/) | 17.0.1.1.7 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 17.0.1.1.8 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/SplashS'><img src='https://github.com/SplashS.png' width='32' height='32' style='border-radius:50%;' alt='SplashS'/></a> | Responsive web client, community-supported
 [web_save_discard_button](web_save_discard_button/) | 17.0.1.0.1 | <a href='https://github.com/synconics'><img src='https://github.com/synconics.png' width='32' height='32' style='border-radius:50%;' alt='synconics'/></a> | Save & Discard Buttons
 [web_search_with_and](web_search_with_and/) | 17.0.1.0.0 |  | Use AND conditions on omnibar search
 [web_theme_classic](web_theme_classic/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Contrasted style on fields to improve the UI.

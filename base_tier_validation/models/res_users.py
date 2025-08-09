@@ -28,7 +28,9 @@ class Users(models.Model):
                     Model.with_user(self.env.user)
                     .with_context(active_test=False)
                     .search([("id", "in", reviews.mapped("res_id"))])
-                    .filtered(lambda x: not x.rejected and x.can_review)
+                    .filtered(
+                        lambda x: x.validation_status != "rejected" and x.can_review
+                    )
                 )
                 # Excludes any cancelled records depending on the structure of the model
                 if self.env[model]._state_field in self.env[model]._fields:
