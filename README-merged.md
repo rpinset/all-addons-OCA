@@ -215,7 +215,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_asset_compute_batch](account_asset_compute_batch/) | 18.0.1.0.0 |  | Assets - Compute Depre. in Batch
 [account_asset_management](account_asset_management/) | 18.0.1.0.2 |  | Assets Management
+[account_asset_number](account_asset_number/) | 18.0.1.0.0 |  | Assets Number
 [account_asset_transfer](account_asset_transfer/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Asset Transfer from AUC to Asset
 [account_cash_deposit](account_cash_deposit/) | 18.0.1.0.0 |  | Manage cash deposits and cash orders
 [account_chart_update](account_chart_update/) | 18.0.1.1.0 |  | Wizard to update a company's account chart from a template
@@ -388,7 +390,7 @@ addon | version | maintainers | summary
 [account_invoice_date_due](account_invoice_date_due/) | 18.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Update Invoice's Due Date
 [account_invoice_fiscal_position_update](account_invoice_fiscal_position_update/) | 18.0.2.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Changing the fiscal position of an invoice will auto-update invoice lines
 [account_invoice_fixed_discount](account_invoice_fixed_discount/) | 18.0.1.0.0 |  | Allows to apply fixed amount discounts in invoices.
-[account_invoice_pricelist](account_invoice_pricelist/) | 18.0.1.0.0 |  | Add partner pricelist on invoices
+[account_invoice_pricelist](account_invoice_pricelist/) | 18.0.1.0.1 |  | Add partner pricelist on invoices
 [account_invoice_refund_link](account_invoice_refund_link/) | 18.0.1.0.0 |  | Show links between refunds and their originator invoices.
 [account_invoice_refund_reason](account_invoice_refund_reason/) | 18.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Account Invoice Refund Reason.
 [account_invoice_section_sale_order](account_invoice_section_sale_order/) | 18.0.1.0.0 |  | For invoices targetting multiple sale order addsections with sale order name.
@@ -740,7 +742,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_credit_control](account_credit_control/) | 18.0.1.0.1 |  | Account Credit Control
+[account_credit_control](account_credit_control/) | 18.0.2.0.0 |  | Account Credit Control
+[account_credit_control_queue_job](account_credit_control_queue_job/) | 18.0.2.0.0 |  | Account Credit Control
 [account_financial_risk](account_financial_risk/) | 18.0.1.0.4 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
 [account_invoice_overdue_reminder](account_invoice_overdue_reminder/) | 18.0.1.1.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simple mail/letter/phone overdue customer invoice reminder
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
@@ -1013,6 +1016,7 @@ addon | version | maintainers | summary
 [account_payment_return](account_payment_return/) | 18.0.1.0.1 |  | Manage the return of your payments
 [account_payment_term_extension](account_payment_term_extension/) | 18.0.1.0.0 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_tier_validation](account_payment_tier_validation/) | 18.0.1.0.1 |  | Extends the functionality of Payment to support a tier validation process.
+[account_refund_early_payment_discount](account_refund_early_payment_discount/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Suppoprt early payment discount on credit notes
 
 [//]: # (end addons)
 
@@ -1698,6 +1702,7 @@ addon | version | maintainers | summary
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 18.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_disable_user_autosubscribe](sale_order_disable_user_autosubscribe/) | 18.0.1.0.0 |  | Remove the salesperson from autosubscribed sale followers
 [sale_order_general_discount](sale_order_general_discount/) | 18.0.1.0.0 |  | General discount per sale order
+[sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 18.0.1.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_line_date](sale_order_line_date/) | 18.0.1.0.1 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 18.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_input](sale_order_line_input/) | 18.0.1.0.0 |  | Search, create or modify directly sale order lines
@@ -1719,7 +1724,7 @@ addon | version | maintainers | summary
 [sale_order_split_strategy](sale_order_split_strategy/) | 18.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Define strategies to split sales orders
 [sale_order_tag](sale_order_tag/) | 18.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Adds Tags to Sales Orders.
 [sale_order_type](sale_order_type/) | 18.0.1.0.0 |  | Sale Order Type
-[sale_order_warn_message](sale_order_warn_message/) | 18.0.1.0.0 |  | Add a popup warning on sale to ensure warning is populated
+[sale_order_warn_message](sale_order_warn_message/) | 18.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 18.0.1.0.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 18.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
@@ -1870,6 +1875,7 @@ addon | version | maintainers | summary
 [partner_contact_tags_in_popup](partner_contact_tags_in_popup/) | 18.0.1.0.0 | <a href='https://github.com/carmenbianca'><img src='https://github.com/carmenbianca.png' width='32' height='32' style='border-radius:50%;' alt='carmenbianca'/></a> | Display a contact's tags in the 'Contacts & Addresses' pop-up form view.
 [partner_country_state_required](partner_country_state_required/) | 18.0.1.0.0 |  | Partner Country State Required
 [partner_deduplicate_acl](partner_deduplicate_acl/) | 18.0.1.0.0 |  | Contact deduplication with fine-grained permission control
+[partner_deduplicate_by_website](partner_deduplicate_by_website/) | 18.0.1.0.0 |  | Deduplicate Contacts by Website
 [partner_deduplicate_filter](partner_deduplicate_filter/) | 18.0.1.0.0 |  | Exclude records from the deduplication
 [partner_disable_gravatar](partner_disable_gravatar/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Disable automatic connection to gravatar.com
 [partner_duns](partner_duns/) | 18.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Set DUNS (Data Universal Numbering System) on partners
@@ -4377,6 +4383,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[l10n_nl_bank](l10n_nl_bank/) | 18.0.1.0.0 |  | Import all Dutch banks with BIC code
 [l10n_nl_bsn](l10n_nl_bsn/) | 18.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Burgerservicenummer (BSN) for Partners
 [l10n_nl_kvk_partner](l10n_nl_kvk_partner/) | 18.0.1.0.0 |  | Use the Peppol Endpoint as the Dutch Chamber of Commerce number
 [l10n_nl_postcode](l10n_nl_postcode/) | 18.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Dutch postcode validation for Partners
@@ -4726,6 +4733,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod123](l10n_es_aeat_mod123/) | 18.0.1.0.1 |  | AEAT modelo 123
 [l10n_es_aeat_mod130](l10n_es_aeat_mod130/) | 18.0.1.0.0 |  | AEAT modelo 130
 [l10n_es_aeat_mod216](l10n_es_aeat_mod216/) | 18.0.1.1.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 216
+[l10n_es_aeat_mod296](l10n_es_aeat_mod296/) | 18.0.1.0.0 |  | AEAT modelo 296
 [l10n_es_aeat_mod303](l10n_es_aeat_mod303/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 303
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 18.0.1.0.0 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 18.0.1.0.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
@@ -4877,13 +4885,14 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[l10n_th_account_tax](l10n_th_account_tax/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 18.0.1.2.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
 [l10n_th_amount_to_text](l10n_th_amount_to_text/) | 18.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Convert Amount Text to Thai
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 18.0.1.0.0 | <a href='https://github.com/sansirit'><img src='https://github.com/sansirit.png' width='32' height='32' style='border-radius:50%;' alt='sansirit'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Base Sequence
-[l10n_th_fonts](l10n_th_fonts/) | 18.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Collection of all Thai fonts
+[l10n_th_base_utils](l10n_th_base_utils/) | 18.0.2.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Collection of all Thai fonts, Convert month/year/number to thai
 [l10n_th_mis_report](l10n_th_mis_report/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - MIS Report
 [l10n_th_partner](l10n_th_partner/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - Partner
 [l10n_th_tier_department](l10n_th_tier_department/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Tier Department Level
+[l10n_th_tier_department_demo](l10n_th_tier_department_demo/) | 18.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Tier Department Level Demo
 
 [//]: # (end addons)
 
@@ -5489,7 +5498,7 @@ addon | version | maintainers | summary
 [stock_archive_constraint](stock_archive_constraint/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock archive constraint
 [stock_demand_estimate](stock_demand_estimate/) | 18.0.1.0.0 |  | Allows to create demand estimates.
 [stock_demand_estimate_matrix](stock_demand_estimate_matrix/) | 18.0.1.0.0 |  | Allows to create demand estimates.
-[stock_inventory](stock_inventory/) | 18.0.1.0.0 |  | Allows to do an easier follow up of the Inventory Adjustments
+[stock_inventory](stock_inventory/) | 18.0.1.1.0 |  | Allows to do an easier follow up of the Inventory Adjustments
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 18.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 18.0.1.0.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 18.0.1.0.0 |  | Lock down stock locations during inventories.
@@ -5579,6 +5588,7 @@ addon | version | maintainers | summary
 [delivery_line_sale_line_position](delivery_line_sale_line_position/) | 18.0.1.0.0 |  | Adds the sale line position to the delivery report lines
 [printing_auto_stock_picking](printing_auto_stock_picking/) | 18.0.1.0.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Printing Auto Stock Picking
 [stock_account_valuation_report](stock_account_valuation_report/) | 18.0.1.0.0 |  | Improves logic of the Inventory Valuation Report
+[stock_delivery_note](stock_delivery_note/) | 18.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_move_value_report](stock_move_value_report/) | 18.0.1.0.0 |  | Stock Move Cost Value Report
 [stock_picking_batch_report](stock_picking_batch_report/) | 18.0.1.0.0 |  | Stock Picking Batch Report
 [stock_picking_group_by_partner_by_carrier_sale_line_position](stock_picking_group_by_partner_by_carrier_sale_line_position/) | 18.0.1.0.0 |  | Glue module for sale position and delivery report grouped
@@ -5835,6 +5845,7 @@ addon | version | maintainers | summary
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 18.0.1.0.0 |  | Allows to return to draft a confirmed or cancelled MO.
 [mrp_production_note](mrp_production_note/) | 18.0.1.0.0 |  | Notes in production orders
 [mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 18.0.1.0.0 |  | Updates the operation type creating MO based on the product
+[mrp_production_putaway_strategy](mrp_production_putaway_strategy/) | 18.0.1.0.0 |  | Applies putaway strategies to manufacturing orders for finished products.
 [mrp_repair_order](mrp_repair_order/) | 18.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 18.0.1.0.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_inhibit](mrp_subcontracting_inhibit/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Inhibit subcontracting flow on demand
@@ -5843,6 +5854,7 @@ addon | version | maintainers | summary
 [mrp_unbuild_move_link](mrp_unbuild_move_link/) | 18.0.1.0.0 |  | Link the stock moves of manufacturing orders to the respective unbuild orders
 [mrp_unbuild_valuation_layer_link](mrp_unbuild_valuation_layer_link/) | 18.0.1.0.0 |  | Unbuild orders display the connected valuation layers
 [mrp_warehouse_calendar](mrp_warehouse_calendar/) | 18.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Considers the warehouse calendars in manufacturing
+[quality_control_oca](quality_control_oca/) | 18.0.1.0.0 |  | Generic infrastructure for quality tests.
 
 [//]: # (end addons)
 
@@ -6083,6 +6095,7 @@ addon | version | maintainers | summary
 [purchase_order_archive](purchase_order_archive/) | 18.0.1.0.0 |  | Archive Purchase Orders
 [purchase_order_general_discount](purchase_order_general_discount/) | 18.0.1.0.0 |  | General discount per purchase order
 [purchase_order_line_menu](purchase_order_line_menu/) | 18.0.1.0.0 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_original_date](purchase_order_line_original_date/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | adds the Original Expected Arrival to PO lines.
 [purchase_order_line_sequence](purchase_order_line_sequence/) | 18.0.1.0.0 |  | Adds sequence to PO lines and propagates it toInvoice lines and Stock Moves
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 18.0.1.0.0 |  | Purchase order line stock available
 [purchase_order_qty_change_no_recompute](purchase_order_qty_change_no_recompute/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in purchase order line
@@ -6095,6 +6108,7 @@ addon | version | maintainers | summary
 [purchase_partner_selectable_option](purchase_partner_selectable_option/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Partner Selectable Option
 [purchase_receipt_expectation](purchase_receipt_expectation/) | 18.0.1.0.0 |  | Purchase Receipt Expectation
 [purchase_reception_notify](purchase_reception_notify/) | 18.0.1.0.1 |  | Purchase Reception Notify
+[purchase_representative](purchase_representative/) | 18.0.1.0.0 |  | Purchase Representatives will be the point of contact for RFQ's and PO's
 [purchase_request](purchase_request/) | 18.0.2.3.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_cancel_confirm](purchase_request_cancel_confirm/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Request Cancel Confirm
 [purchase_request_department](purchase_request_department/) | 18.0.1.0.0 |  | Purchase Request Department
@@ -6215,6 +6229,7 @@ addon | version | maintainers | summary
 [product_attribute_value_avoid_auto_fill](product_attribute_value_avoid_auto_fill/) | 18.0.1.0.0 |  | Add option allow filling automatically the values
 [product_attribute_value_menu](product_attribute_value_menu/) | 18.0.1.0.0 |  | Product attributes values tree and form. Import attribute values.
 [product_barcode_required](product_barcode_required/) | 18.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Make product barcode required when enabled
+[product_catalog_stock](product_catalog_stock/) | 18.0.1.0.0 |  | Use the product catalog on stock pickings
 [product_category_active](product_category_active/) | 18.0.1.0.0 |  | Add option to archive product categories
 [product_category_code](product_category_code/) | 18.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to define a code on product categories
 [product_category_name_translatable](product_category_name_translatable/) | 18.0.1.0.0 |  | Translate Product Category Names
@@ -7450,13 +7465,14 @@ addon | version | maintainers | summary
 [base_search_custom_field_filter](base_search_custom_field_filter/) | 18.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Add custom filters for fields via UI
 [base_substate](base_substate/) | 18.0.1.0.0 |  | Base Sub State
 [base_technical_features](base_technical_features/) | 18.0.1.0.2 |  | Access to technical features without activating debug mode
-[base_tier_validation](base_tier_validation/) | 18.0.2.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
+[base_tier_validation](base_tier_validation/) | 18.0.3.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Implement a validation process based on tiers.
 [base_tier_validation_formula](base_tier_validation_formula/) | 18.0.1.0.0 |  | Formulas for Base tier validation
-[base_tier_validation_forward](base_tier_validation_forward/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
+[base_tier_validation_forward](base_tier_validation_forward/) | 18.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Forward option for base tiers
 [base_tier_validation_server_action](base_tier_validation_server_action/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add option to call server action when a tier is validated
 [chained_swapper](chained_swapper/) | 18.0.1.0.0 |  | Chained Swapper
 [date_range](date_range/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [date_range_account](date_range_account/) | 18.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
+[default_multi_user](default_multi_user/) | 18.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined defaults among several users.
 [developer_menu](developer_menu/) | 18.0.1.0.0 | <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Menu Shortcut for developer usage
 [document_quick_access](document_quick_access/) | 18.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Document quick access
 [mail_message_destiny_link_template](mail_message_destiny_link_template/) | 18.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Mail template to show destiny records in chatter.
@@ -8272,6 +8288,7 @@ addon | version | maintainers | summary
 [web_filter_header_button](web_filter_header_button/) | 18.0.1.0.0 |  | Show selected filters as buttons in the control panel
 [web_group_expand](web_group_expand/) | 18.0.1.0.1 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 18.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
+[web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 18.0.1.0.0 |  | Show a message box to users
 [web_m2x_options](web_m2x_options/) | 18.0.1.0.1 |  | web_m2x_options
 [web_no_bubble](web_no_bubble/) | 18.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 18.0.1.1.0 |  | Send notification messages to user
