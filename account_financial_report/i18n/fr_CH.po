@@ -697,9 +697,9 @@ msgid ""
 "setup through chart of accounts will display initial and final balance in "
 "that currency."
 msgstr ""
-"Afficher les devises étrangères pour les écritures comptables, à moins "
-"que la monnaie du compte comptable ne soit pas définie dans le plan "
-"comptable affichera les balances initiale et finale dans cette monnaie."
+"Afficher les devises étrangères pour les écritures comptables, à moins que "
+"la monnaie du compte comptable ne soit pas définie dans le plan comptable "
+"affichera les balances initiale et finale dans cette monnaie."
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__hide_parent_hierarchy_level
@@ -1287,7 +1287,7 @@ msgid "No limit"
 msgstr "Sans limite"
 
 #. module: account_financial_report
-#: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__grouped_by__
+#: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__grouped_by__none
 msgid "None"
 msgstr ""
 
@@ -1942,9 +1942,8 @@ msgid ""
 "When this option is enabled, the trial balance will not display accounts "
 "that have initial balance = debit = credit = end balance = 0"
 msgstr ""
-"Lorsque cette option est activée, la balance générale n'affichera pas "
-"les comptes qui ont balance initiale = débit = crédit = solde de clôture "
-"= 0"
+"Lorsque cette option est activée, la balance générale n'affichera pas les "
+"comptes qui ont balance initiale = débit = crédit = solde de clôture = 0"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_journal_ledger_report_wizard__with_account_name
