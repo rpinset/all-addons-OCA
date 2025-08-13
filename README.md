@@ -1103,11 +1103,16 @@ Date:   Fri Jun 13 09:04:53 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 8a3f777207af23a5f0ef547329f39563ce597acf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 8 12:27:36 2025 +0000
+commit d9c123db57cf2c32a57e740623e952ea1dcaabea
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Aug 13 09:42:46 2025 +0000
 
-    Added translation using Weblate (Italian)
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: stock-logistics-workflow-14.0/stock-logistics-workflow-14.0-delivery_procurement_group_carrier
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-14-0/stock-logistics-workflow-14-0-delivery_procurement_group_carrier/
 
 
 ## stock-logistics-tracking
@@ -1172,11 +1177,11 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit c63f6d29e42dac0573e71ba93e5d77285e8eb054
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 09:36:15 2025 +0000
+commit fbde71805a83a279337bb66a7747721603f6b56a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 11 14:19:55 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## manufacture
