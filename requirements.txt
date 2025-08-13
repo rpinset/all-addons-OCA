@@ -80,6 +80,8 @@ factur-x
 geojson
 shapely
 # From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
+# generated from manifests external_dependencies
+freezegun
 # From [https://github.com/OCA/hr.git](https://github.com/OCA/hr.git)
 # generated from manifests external_dependencies
 python-dateutil
