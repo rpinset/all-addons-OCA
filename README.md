@@ -111,11 +111,11 @@ Date:   Tue Jul 1 16:28:53 2025 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 502e081e2dfabbebfe92c8ff4d475818ab0d8595
+commit 3e58754bd0f067f8d1fe9a4e31b9056d62a26a72
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:34:14 2025 +0000
+Date:   Wed Aug 13 15:27:10 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## operating-unit
@@ -421,9 +421,9 @@ Date:   Thu Jul 17 08:17:43 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 9afbc4f095a45209625d694c855daf3ad91d5f6b
+commit 83d01bf17d1e1889a7cbffc42e1a782af4beaa14
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 23 14:52:15 2025 +0000
+Date:   Mon Aug 11 06:58:34 2025 +0000
 
     [BOT] post-merge updates
 
@@ -950,9 +950,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 05d1d0a78f5482ad6aab6b4a09cfbe7b5e9cfbf4
+commit d8639161207f888bb63cb1c501fd8f63075e636b
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 8 04:15:00 2025 +0000
+Date:   Mon Aug 11 04:08:57 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1405,16 +1405,11 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 7f18feb7465d48f6db8d52b5d21f31b07469dbda
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 11:33:25 2025 +0000
+commit defcffb002f6b12a1635311b63e761e82ea335d1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Aug 12 10:44:06 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 65.8% (83 of 126 strings)
-    
-    Translation: server-ux-15.0/server-ux-15.0-base_tier_validation
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-15-0/server-ux-15-0-base_tier_validation/it/
+    [BOT] post-merge updates
 
 
 ## community-data-files

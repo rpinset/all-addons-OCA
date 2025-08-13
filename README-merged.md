@@ -551,7 +551,7 @@ addon | version | maintainers | summary
 [account_fiscal_position_partner_type](account_fiscal_position_partner_type/) | 15.0.1.0.0 |  | Account Fiscal Position Partner Type
 [account_fiscal_position_type](account_fiscal_position_type/) | 15.0.1.0.3 |  | Add sale / purchase type on fiscal position
 [account_multi_vat](account_multi_vat/) | 15.0.1.0.0 | <a href='https://github.com/ThomasBinsfeld'><img src='https://github.com/ThomasBinsfeld.png' width='32' height='32' style='border-radius:50%;' alt='ThomasBinsfeld'/></a> | Allows setting multiple VAT numbers on any partner and select the right one depending on the fiscal position and delivery address of the invoice.
-[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 15.0.2.1.2 |  | L10n EU OSS OCA
+[l10n_eu_oss_oca](l10n_eu_oss_oca/) | 15.0.2.1.3 |  | L10n EU OSS OCA
 
 [//]: # (end addons)
 
@@ -2464,6 +2464,8 @@ addon | version | maintainers | summary
 [survey_next_survey_update_partner](survey_next_survey_update_partner/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Update the partner values when it's generated from the previous survey
 [survey_partner_representative](survey_partner_representative/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Fill the survey on behalf of others
 [survey_placeholder](survey_placeholder/) | 15.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Placeholders in survey questions
+[survey_question_type_binary](survey_question_type_binary/) | 15.0.1.0.0 |  | This module add binary field as question type for survey page
+[survey_question_type_binary_result_mail](survey_question_type_binary_result_mail/) | 15.0.1.0.0 | <a href='https://github.com/tardo'><img src='https://github.com/tardo.png' width='32' height='32' style='border-radius:50%;' alt='tardo'/></a> | Send survey answers to the survey user
 [survey_resource_booking](survey_resource_booking/) | 15.0.1.0.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Access survey answers from resource booking
 [survey_result_mail](survey_result_mail/) | 15.0.1.1.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Send survey answers to the survey user
 [survey_sale_generation](survey_sale_generation/) | 15.0.2.2.2 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate sale orders from surveys
@@ -5313,7 +5315,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.1.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.2.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_inter_company](l10n_th_account_tax_inter_company/) | 15.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Inter Company Tax
@@ -8052,6 +8054,7 @@ addon | version | maintainers | summary
 [base_warn_option](base_warn_option/) | 15.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add Options to Warn Messages
 [chained_swapper](chained_swapper/) | 15.0.1.0.4 |  | Chained Swapper
 [date_range](date_range/) | 15.0.1.1.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
+[date_range_account](date_range_account/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
 [default_multi_user](default_multi_user/) | 15.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to share user-defined defaults among several users.
 [document_quick_access](document_quick_access/) | 15.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Document quick access
 [document_quick_access_folder_auto_classification](document_quick_access_folder_auto_classification/) | 15.0.1.1.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Auto classification of Documents after reading a QR
