@@ -116,16 +116,11 @@ Date:   Wed Aug 13 15:20:26 2025 +0000
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 4316276a8bcaa3a0bb56cf14f49c882deb41fc26
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 6 08:54:26 2025 +0000
+commit 25ad5045b5b30f1f2f38d0d295b6ee141686dea1
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Aug 14 08:21:20 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (58 of 58 strings)
-    
-    Translation: account-fiscal-rule-16.0/account-fiscal-rule-16.0-account_product_fiscal_classification
-    Translate-URL: https://translation.odoo-community.org/projects/account-fiscal-rule-16-0/account-fiscal-rule-16-0-account_product_fiscal_classification/it/
+    [BOT] post-merge updates
 
 
 ## operating-unit
@@ -366,16 +361,16 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit a1229632c272cbc40c3fa72a5a40f69eb49f6bc6
-Author: David Vidal <david.vidal@tecnativa.com>
-Date:   Wed Aug 13 15:07:30 2025 +0000
+commit 9ca88034e29927bce17bc3dfce66172f932618f4
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 12:08:08 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (56 of 56 strings)
     
-    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_order_safe_commitment_date
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_order_safe_commitment_date/es/
+    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_elaboration
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_elaboration/it/
 
 
 ## crm
@@ -463,16 +458,16 @@ Date:   Wed Jun 4 02:52:45 2025 +0000
 
 ## survey
 From [https://github.com/OCA/survey.git](https://github.com/OCA/survey.git)
-commit 7a6a1570bfe886aab80b86cee931ba078dafbfa0
+commit 7a55cb659402a726de04354c9ed06bc256d60d7f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sun Jun 15 11:01:17 2025 +0000
+Date:   Sat Aug 16 12:02:04 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 100.0% (21 of 21 strings)
     
-    Translation: survey-16.0/survey-16.0-survey_certification_branding
-    Translate-URL: https://translation.odoo-community.org/projects/survey-16-0/survey-16-0-survey_certification_branding/it/
+    Translation: survey-16.0/survey-16.0-survey_link_base
+    Translate-URL: https://translation.odoo-community.org/projects/survey-16-0/survey-16-0-survey_link_base/it/
 
 
 ## knowledge
@@ -523,16 +518,16 @@ Date:   Thu Jul 24 13:43:46 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a5b94b662bf56f05b12e453b721dff4f816e1179
+commit d2fd387f592f816e473b5929dfa0c5faea50301d
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 29 07:14:15 2025 +0000
+Date:   Sat Aug 16 12:12:11 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (25 of 25 strings)
+    Currently translated at 100.0% (591 of 591 strings)
     
-    Translation: field-service-16.0/field-service-16.0-fieldservice_geoengine
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-16-0/field-service-16-0-fieldservice_geoengine/it/
+    Translation: field-service-16.0/field-service-16.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-16-0/field-service-16-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -1104,13 +1099,13 @@ Date:   Mon Aug 4 08:44:41 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit b701184e8b4e28a898ebdb6b39d84ed76579d2a8
-Author: Metin GÜLSOY <metin.gulsoy@kitayazilim.com>
-Date:   Wed Jul 23 10:09:04 2025 +0000
+commit 4a5453c2ab6ae304e847b6896e089f0feae5942c
+Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
+Date:   Fri Aug 15 08:11:36 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 1.6% (5 of 301 strings)
+    Currently translated at 100.0% (301 of 301 strings)
     
     Translation: stock-logistics-barcode-16.0/stock-logistics-barcode-16.0-stock_barcodes
     Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-16-0/stock-logistics-barcode-16-0-stock_barcodes/tr/
@@ -1192,11 +1187,16 @@ Date:   Wed Jul 23 14:55:30 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 00d95ae656b08c183543a45c585cbacdab9e06db
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 7 13:01:14 2025 +0000
+commit 1cdf606361a1b09eae42e332814e551289401d47
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 10:44:39 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (329 of 329 strings)
+    
+    Translation: wms-16.0/wms-16.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-16-0/wms-16-0-shopfloor/it/
 
 
 ## manufacture
@@ -1247,11 +1247,16 @@ Date:   Mon Aug 11 07:00:09 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 7fce18c1ea6aa118356fdb62f13a1c73e887e65e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 13 10:47:25 2025 +0000
+commit 85df69ea85e6b7fd6a6d4b8514bd3fad0d36f91f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 12:09:54 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (3 of 3 strings)
+    
+    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_fully_received
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_fully_received/it/
 
 
 ## purchase-reporting
@@ -1699,11 +1704,16 @@ Date:   Sun Feb 9 19:15:31 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 7c53b1ae466a10414e53974d21c37e086818bb5b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 12 09:07:25 2025 +0000
+commit 1c05f60840b1823aeb5d0fc6daa2d1d2208ed808
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 12:01:40 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (1 of 1 strings)
+    
+    Translation: web-16.0/web-16.0-web_systray_button_init_action
+    Translate-URL: https://translation.odoo-community.org/projects/web-16-0/web-16-0-web_systray_button_init_action/it/
 
 
 ## website
