@@ -1177,11 +1177,16 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit fbde71805a83a279337bb66a7747721603f6b56a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 11 14:19:55 2025 +0000
+commit 02d5bfcb4f271dd4dd2350894c346c97afdb13dc
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 10:44:34 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (318 of 318 strings)
+    
+    Translation: wms-14.0/wms-14.0-shopfloor
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/it/
 
 
 ## manufacture
