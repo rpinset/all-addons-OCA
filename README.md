@@ -1405,11 +1405,11 @@ Date:   Wed Jun 4 03:42:52 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit defcffb002f6b12a1635311b63e761e82ea335d1
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 12 10:44:06 2025 +0000
+commit 244c8f58b3cfc64cb5fdb08a8a69305794bea76a
+Author: JHernandezConinpe <jhernandez@coninpe.es>
+Date:   Thu Aug 14 12:18:35 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Spanish)
 
 
 ## community-data-files
