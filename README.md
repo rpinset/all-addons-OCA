@@ -73,18 +73,18 @@ Date:   Wed Jun 4 02:34:58 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 54b26bd06da405a1f7a04d8620d91a8d12167e17
+commit 074c5e579a5310868f473fae90b929f213e0266f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 5 07:16:57 2025 +0000
+Date:   Thu Aug 14 15:36:58 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## account-fiscal-rule
 From [https://github.com/OCA/account-fiscal-rule.git](https://github.com/OCA/account-fiscal-rule.git)
-commit 8663311efd88cf695b635b263ffa2152cc141c7d
+commit bb3d613365cadae09fa0e3de6a454f1cc78534cc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 1 09:27:00 2025 +0000
+Date:   Thu Aug 14 08:31:15 2025 +0000
 
     [BOT] post-merge updates
 
@@ -833,9 +833,9 @@ Date:   Sun Feb 2 19:27:27 2025 +0000
 
 ## l10n-japan
 From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
-commit c8138e5792b717170f691974c19b162c76677a2d
+commit bb6dcf2df4fa4961834399365880ae3b8afe2833
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue May 6 09:03:31 2025 +0000
+Date:   Fri Aug 15 07:27:08 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1317,11 +1317,16 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit eab7e7ef341676ecbd365d17fef857f53a99d516
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 23 12:09:49 2025 +0000
+commit d72535e397a74d1fa0a10cc68c78f7408e1ce9a1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Sat Aug 16 12:14:29 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (135 of 135 strings)
+    
+    Translation: social-17.0/social-17.0-mail_tracking
+    Translate-URL: https://translation.odoo-community.org/projects/social-17-0/social-17-0-mail_tracking/it/
 
 
 ## storage

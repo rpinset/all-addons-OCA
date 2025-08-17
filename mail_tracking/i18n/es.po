@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-12 17:22+0000\n"
-"PO-Revision-Date: 2023-10-15 20:38+0000\n"
+"POT-Creation-Date: 2025-08-05 06:57+0000\n"
+"PO-Revision-Date: 2025-08-05 08:59+0200\n"
 "Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. module: mail_tracking
 #: model:ir.model.fields,help:mail_tracking.field_mail_tracking_email__state
@@ -222,6 +222,14 @@ msgstr "Estado de entrega Marca de verificación derecha"
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/core/discuss/thread_actions.esm.js:0
+#, python-format
+msgid "Do you really want to mark as reviewed all the failed messages?"
+msgstr ""
+"¿Está seguro de que desea marcar como revisados todos los mensajes fallidos?"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__mail_id
@@ -513,6 +521,13 @@ msgstr "MailTracking búsqueda de eventos"
 #: model:ir.actions.act_window,name:mail_tracking.action_view_mail_tracking_event
 msgid "MailTracking events"
 msgstr "MailTracking eventos"
+
+#. module: mail_tracking
+#. odoo-javascript
+#: code:addons/mail_tracking/static/src/core/discuss/thread_actions.esm.js:0
+#, python-format
+msgid "Mark all as reviewed"
+msgstr "Marcar todos como revisado"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings__mail_tracking_email_max_age_days
@@ -963,9 +978,6 @@ msgstr "Estado de espera"
 
 #~ msgid "Failed messages appear here."
 #~ msgstr "Los mensajes fallidos se muestran aquí."
-
-#~ msgid "Mark all as reviewed"
-#~ msgstr "Marcar todos como revisado"
 
 #~ msgid "Message tracking"
 #~ msgstr "Seguimiento del mensaje"
