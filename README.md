@@ -376,16 +376,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c70c86f929692cce676388645c63eee1a9a8a8d5
+commit d7e942ff1642137d3df10dbd25aa0fca68dd84e3
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jun 12 06:32:15 2025 +0000
+Date:   Wed Aug 20 14:39:17 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 66.6% (10 of 15 strings)
+    Currently translated at 100.0% (48 of 48 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_start_end_dates
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_start_end_dates/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
 
 
 ## crm
@@ -519,9 +519,9 @@ Date:   Thu Jun 12 15:08:13 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit a460351777336ed97ffadb422817e71f016035d7
+commit 36232ebf33d0a14fadd7fd9b622e675792a7af60
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:48 2025 +0000
+Date:   Wed Aug 20 15:04:18 2025 +0000
 
     Translated using Weblate (Italian)
     
