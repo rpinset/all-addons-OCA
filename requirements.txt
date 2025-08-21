@@ -141,6 +141,7 @@ requests-mock
 # From [https://github.com/OCA/l10n-poland.git](https://github.com/OCA/l10n-poland.git)
 # From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
 # generated from manifests external_dependencies
+num2words>=0.5.8
 python-dateutil
 # From [https://github.com/OCA/l10n-russia.git](https://github.com/OCA/l10n-russia.git)
 # From [https://github.com/OCA/l10n-slovenia.git](https://github.com/OCA/l10n-slovenia.git)
@@ -148,9 +149,11 @@ python-dateutil
 # generated from manifests external_dependencies
 chardet
 pycountry
+requests
 suds-py3
 unidecode
 xmlsig
+zeep
 # From [https://github.com/OCA/l10n-switzerland.git](https://github.com/OCA/l10n-switzerland.git)
 # generated from manifests external_dependencies
 ebilling_postfinance
@@ -207,6 +210,8 @@ python-dateutil
 # From [https://github.com/OCA/connector-redmine.git](https://github.com/OCA/connector-redmine.git)
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
+# generated from manifests external_dependencies
+requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 boto3

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: partner-contact (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-24 01:41+0000\n"
-"PO-Revision-Date: 2025-07-25 16:21+0000\n"
-"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"PO-Revision-Date: 2025-08-19 15:27+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-partner-contact-9-0/"
 "language/it/)\n"
 "Language: it\n"
@@ -18,6 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.10.4\n"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<em>Draft Invoices </em>"
+msgstr "<em>Fatture in bozza </em>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<em>Open Invoices </em>"
+msgstr "<em>Fatture aperte </em>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<em>Other Open Amount </em>"
+msgstr "<em>Altro importo aperto </em>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<em>Other Unpaid Amount </em>"
+msgstr "<em>Altro valore non pagato </em>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<em>Unpaid Invoices </em>"
+msgstr "<em>Fatture non pagate </em>"
 
 #. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
@@ -38,6 +63,21 @@ msgstr "<span class=\"oe_read_only\">(</span>"
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
 msgid "<span class=\"oe_read_only\">)</span>"
 msgstr "<span class=\"oe_read_only\">)</span>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<strong>Consumed credit </strong>"
+msgstr "<strong>Credito consumato </strong>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<strong>Credit limit </strong>"
+msgstr "<strong>Limite credito </strong>"
+
+#. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "<strong>Remaining credit </strong>"
+msgstr "<strong>Credito residuo </strong>"
 
 #. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__move_line_ids
@@ -98,7 +138,6 @@ msgstr "Annulla"
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/res_partner.py:0
-#, python-format
 msgid "Choose Manual Credit Currency."
 msgstr "Scegliere valuta di credito manuale."
 
@@ -161,6 +200,11 @@ msgid "Credit Policy"
 msgstr "Politica del credito"
 
 #. module: account_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.side_content
+msgid "Credit information"
+msgstr "Informazioni credito"
+
+#. module: account_financial_risk
 #: model:ir.model.fields,help:account_financial_risk.field_res_partner__credit_limit
 #: model:ir.model.fields,help:account_financial_risk.field_res_users__credit_limit
 msgid "Credit limit specific to this partner."
@@ -202,14 +246,12 @@ msgstr "Rischio finanziario"
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/account_invoice.py:0
-#, python-format
 msgid "Financial risk exceeded.\n"
 msgstr "Superato rischio finanziario.\n"
 
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/res_partner.py:0
-#, python-format
 msgid "Financial risk information"
 msgstr "Informazioni sul rischio finanziario"
 
@@ -281,9 +323,37 @@ msgid "General Limits"
 msgstr "Limite generale"
 
 #. module: account_financial_risk
+#: model:ir.model.fields,help:account_financial_risk.field_res_partner__portal_show_financial_risk_visible
+#: model:ir.model.fields,help:account_financial_risk.field_res_users__portal_show_financial_risk_visible
+msgid ""
+"Helper field to control visibility of the partner option based on global "
+"config."
+msgstr ""
+"Campo di aiuto per controllare la visibilità dell'opzione partner in base "
+"alla configurazione globale."
+
+#. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_partner_risk_exceeded_wiz__id
 msgid "ID"
 msgstr "ID"
+
+#. module: account_financial_risk
+#: model:ir.model.fields,help:account_financial_risk.field_res_config_settings__portal_show_financial_risk
+#: model_terms:ir.ui.view,arch_db:account_financial_risk.res_config_settings_view_form
+msgid "If enabled, portal users will be able to see their credit information."
+msgstr ""
+"Se abilitata, gli utenti portale potranno vedere le loro informazioni di "
+"credito."
+
+#. module: account_financial_risk
+#: model:ir.model.fields,help:account_financial_risk.field_res_partner__show_financial_risk_in_portal
+#: model:ir.model.fields,help:account_financial_risk.field_res_users__show_financial_risk_in_portal
+msgid ""
+"If enabled, this partner will see their financial risk in the portal, "
+"provided the global setting is also enabled."
+msgstr ""
+"Se abilitata, questo partner vedrà il proprio rischio finanziario nel "
+"portale, a condizione che sia abilitata anche l'impostazione globale."
 
 #. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__risk_invoice_draft_include
@@ -408,9 +478,14 @@ msgstr "Wizard Superamento Fido Partner"
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/wizards/parner_risk_exceeded.py:0
-#, python-format
 msgid "Partner risk exceeded"
 msgstr "Fido partner superato"
+
+#. module: account_financial_risk
+#: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__portal_show_financial_risk_visible
+#: model:ir.model.fields,field_description:account_financial_risk.field_res_users__portal_show_financial_risk_visible
+msgid "Portal Show Financial Risk Visible"
+msgstr "Il portale visualizza il rischio finanziario visibile"
 
 #. module: account_financial_risk
 #: model:ir.model.fields.selection,name:account_financial_risk.selection__res_partner__credit_currency__pricelist
@@ -484,14 +559,12 @@ msgstr "Consenti modifica fido"
 #. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_bank_statement_line__risk_amount_total_currency
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_move__risk_amount_total_currency
-#: model:ir.model.fields,field_description:account_financial_risk.field_account_payment__risk_amount_total_currency
 msgid "Risk Amount Total"
 msgstr "Importo totale del fido"
 
 #. module: account_financial_risk
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_bank_statement_line__risk_currency_id
 #: model:ir.model.fields,field_description:account_financial_risk.field_account_move__risk_currency_id
-#: model:ir.model.fields,field_description:account_financial_risk.field_account_payment__risk_currency_id
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__risk_currency_id
 #: model:ir.model.fields,field_description:account_financial_risk.field_res_users__risk_currency_id
 msgid "Risk Currency"
@@ -546,6 +619,13 @@ msgid "Set 0 if it is not locked"
 msgstr "Imposta a 0 se non bloccato"
 
 #. module: account_financial_risk
+#: model:ir.model.fields,field_description:account_financial_risk.field_res_config_settings__portal_show_financial_risk
+#: model:ir.model.fields,field_description:account_financial_risk.field_res_partner__show_financial_risk_in_portal
+#: model:ir.model.fields,field_description:account_financial_risk.field_res_users__show_financial_risk_in_portal
+msgid "Show credit information in portal"
+msgstr "Visualizza informazioni del credito nel portale"
+
+#. module: account_financial_risk
 #: model_terms:ir.ui.view,arch_db:account_financial_risk.res_partner_view_risk
 msgid "Specific Limits"
 msgstr "Fidi specifici"
@@ -559,7 +639,6 @@ msgstr "Somma totale dell'esposizione"
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/account_invoice.py:0
-#, python-format
 msgid ""
 "The partner %s is in risk exception.\n"
 "You must post his invoices from form view to allow over risk"
@@ -576,14 +655,12 @@ msgstr "Il partner ha superato il fido"
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/account_invoice.py:0
-#, python-format
 msgid "This invoice exceeds the financial risk.\n"
 msgstr "Questa fattura supera il fido.\n"
 
 #. module: account_financial_risk
 #. odoo-python
 #: code:addons/account_financial_risk/models/account_invoice.py:0
-#, python-format
 msgid "This invoice exceeds the open invoices risk.\n"
 msgstr "Questa fattura supera il fido Fatture aperte.\n"
 
