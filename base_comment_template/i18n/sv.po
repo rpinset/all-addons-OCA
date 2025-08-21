@@ -156,6 +156,11 @@ msgid "Filter Domain"
 msgstr "Filtrera domän"
 
 #. module: base_comment_template
+#: model:ir.model.fields,field_description:base_comment_template.field_base_comment_template__global_template
+msgid "Global Template"
+msgstr ""
+
+#. module: base_comment_template
 #: model:ir.model.fields,field_description:base_comment_template.field_base_comment_template__id
 #: model:ir.model.fields,field_description:base_comment_template.field_base_comment_template_preview__id
 msgid "ID"
@@ -368,7 +373,8 @@ msgstr "Topp"
 #. module: base_comment_template
 #: model:ir.model.fields,help:base_comment_template.field_ir_model__is_comment_template
 msgid "Whether this model supports in reports to add comment templates."
-msgstr "Om denna modell stöder i rapporter för att lägga till kommentarsmallar."
+msgstr ""
+"Om denna modell stöder i rapporter för att lägga till kommentarsmallar."
 
 #. module: base_comment_template
 #: model:ir.model,name:base_comment_template.model_comment_template

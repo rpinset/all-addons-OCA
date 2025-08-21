@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-21 19:06+0000\n"
-"Last-Translator: İsmail Çağan Yılmaz <ismail.cagan.yilmaz@gmail.com>\n"
+"PO-Revision-Date: 2025-08-20 08:55+0000\n"
+"Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: none\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: stock_inventory
 #: model:ir.model.fields,field_description:stock_inventory.field_stock_inventory__count_stock_quants
@@ -460,6 +460,7 @@ msgstr ""
 #, python-format
 msgid "You can only delete inventory adjustments groups in draft state."
 msgstr ""
+"Sadece taslak durumundaki envanter düzenlemesi gruplarını silebilirsiniz."
 
 #. module: stock_inventory
 #. odoo-python

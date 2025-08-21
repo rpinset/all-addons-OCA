@@ -20,3 +20,6 @@
 * `XCG Consulting <https://xcg-consulting.fr>`_:
 
   * Houzéfa Abbasbhay
+* `PyTech <https://www.pytech.it>`_:
+
+  * Simone Rubino <simone.rubino@pytech.it>

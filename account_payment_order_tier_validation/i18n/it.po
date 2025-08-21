@@ -62,6 +62,11 @@ msgid "Payment Orders validated and ready to be confirmed"
 msgstr "Ordini di pagamento validati e in attesa di conferma"
 
 #. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected
+msgid "Rejected"
+msgstr "Respinto"
+
+#. module: account_payment_order_tier_validation
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__rejected_message
 msgid "Rejected Message"
 msgstr "Messaggio di rifiuto"
@@ -82,6 +87,7 @@ msgid "To Validate Message"
 msgstr "Messaggio per 'Da validare'"
 
 #. module: account_payment_order_tier_validation
+#: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__validated
 #: model_terms:ir.ui.view,arch_db:account_payment_order_tier_validation.account_payment_order_search_view
 msgid "Validated"
 msgstr "Approvata"
@@ -100,6 +106,3 @@ msgstr "Stato validazione"
 #: model:ir.model.fields,field_description:account_payment_order_tier_validation.field_account_payment_order__review_ids
 msgid "Validations"
 msgstr "Validazioni"
-
-#~ msgid "Rejected"
-#~ msgstr "Respinto"

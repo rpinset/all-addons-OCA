@@ -996,6 +996,11 @@ msgid "Default duration in hours"
 msgstr "Duración predeterminada en horas"
 
 #. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__team_id
+msgid "Default team assigned to orders in this location"
+msgstr ""
+
+#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__trust
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__trust
 msgid "Degree of trust you have in this debtor"
@@ -1566,7 +1571,6 @@ msgid "If checked, some messages have a delivery error."
 msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
 #. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,help:fieldservice.field_fsm_person__team_id
 msgid ""
 "If set, this Sales Team will be used for sales and assignments related to "
@@ -2890,7 +2894,6 @@ msgid "Sales Order"
 msgstr "Pedidos de Venta"
 
 #. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__team_id
 msgid "Sales Team"
 msgstr "Equipos de Venta"
@@ -3230,6 +3233,7 @@ msgid "Tax ID"
 msgstr "ID de Impuesto"
 
 #. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_order__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_template__team_id
 msgid "Team"

@@ -7,6 +7,8 @@ class TestQwebFieldModel(models.Model):
     _name = "test.qweb.field.options"
 
     name = fields.Char()
+    quantity = fields.Float()
+    uom_id = fields.Many2one("uom.uom")
     value = fields.Float(string="Rounding Factor")
     currency_id = fields.Many2one("res.currency")
     company_id = fields.Many2one("res.company")

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-08-16 14:25+0000\n"
+"PO-Revision-Date: 2025-08-20 17:27+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -990,6 +990,11 @@ msgid "Default duration in hours"
 msgstr "Durata predefinita in ore"
 
 #. module: fieldservice
+#: model:ir.model.fields,help:fieldservice.field_fsm_location__team_id
+msgid "Default team assigned to orders in this location"
+msgstr "Team predefinito assegnato agli ordini in questa ubicazione"
+
+#. module: fieldservice
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_location__trust
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__trust
 msgid "Degree of trust you have in this debtor"
@@ -1304,7 +1309,7 @@ msgstr "Modello di ordine di assistenza sul campo"
 #. module: fieldservice
 #: model:ir.model,name:fieldservice.model_fsm_order_type
 msgid "Field Service Order Type"
-msgstr "Tipo di ordine di assistenza sul campo"
+msgstr "Tipo ordine assistenza sul campo"
 
 #. module: fieldservice
 #: model:ir.model,name:fieldservice.model_fsm_stage
@@ -1559,7 +1564,6 @@ msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: fieldservice
-#: model:ir.model.fields,help:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,help:fieldservice.field_fsm_person__team_id
 msgid ""
 "If set, this Sales Team will be used for sales and assignments related to "
@@ -2881,7 +2885,6 @@ msgid "Sales Order"
 msgstr "Ordine di vendita"
 
 #. module: fieldservice
-#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_person__team_id
 msgid "Sales Team"
 msgstr "Team di vendita"
@@ -3221,6 +3224,7 @@ msgid "Tax ID"
 msgstr "Partita IVA"
 
 #. module: fieldservice
+#: model:ir.model.fields,field_description:fieldservice.field_fsm_location__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_order__team_id
 #: model:ir.model.fields,field_description:fieldservice.field_fsm_template__team_id
 msgid "Team"
