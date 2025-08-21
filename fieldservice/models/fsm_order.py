@@ -42,6 +42,9 @@ class FSMOrder(models.Model):
             return team
         raise ValidationError(_("You must create an FSM team first."))
 
+    def _default_request_early(self):
+        return fields.Datetime.now().replace(second=0)
+
     @api.depends("date_start", "date_end")
     def _compute_duration(self):
         for rec in self:
@@ -114,9 +117,13 @@ class FSMOrder(models.Model):
     location_id = fields.Many2one(
         "fsm.location", string="Location", index=True, required=True
     )
+    location_owner_id = fields.Many2one(
+        related="location_id.owner_id", string="Location Related Owner"
+    )
     location_directions = fields.Html()
     request_early = fields.Datetime(
-        string="Earliest Request Date", default=datetime.now()
+        string="Earliest Request Date",
+        default=lambda self: self._default_request_early(),
     )
     color = fields.Integer("Color Index")
     company_id = fields.Many2one(
@@ -417,6 +424,12 @@ class FSMOrder(models.Model):
     def _onchange_person_id(self):
         if self.person_id and self.person_id.team_id:
             self.team_id = self.person_id.team_id
+            self._onchange_team_id()
+
+    @api.onchange("team_id")
+    def _onchange_team_id(self):
+        if not self.location_id and self.team_id and self.team_id.location_id:
+            self.location_id = self.team_id.location_id
 
     def _get_location_directions(self, location_id):
         self.location_directions = ""

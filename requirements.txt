@@ -68,6 +68,8 @@ email-validator
 factur-x
 pypdf
 # From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
+# generated from manifests external_dependencies
+geopy
 # From [https://github.com/OCA/margin-analysis.git](https://github.com/OCA/margin-analysis.git)
 # From [https://github.com/OCA/fleet.git](https://github.com/OCA/fleet.git)
 # From [https://github.com/OCA/infrastructure-dns.git](https://github.com/OCA/infrastructure-dns.git)
@@ -244,6 +246,7 @@ dataclasses
 mako
 odoorpc
 openupgradelib
+paramiko<4.0.0
 pygount==1.4.0
 pysftp
 sentry_sdk<=1.9.0
