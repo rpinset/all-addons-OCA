@@ -376,16 +376,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 6adf879190108327eacf299157d5f67237a17811
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jul 11 06:55:17 2025 +0000
+commit 60aec62613efc24cac66fcea697d0064123998b7
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Aug 20 14:39:20 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 92.8% (13 of 14 strings)
+    Currently translated at 100.0% (165 of 165 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_discount_display_amount
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_discount_display_amount/tr/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_blanket_order/it/
 
 
 ## crm
@@ -518,16 +518,16 @@ Date:   Fri Aug 8 12:35:41 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit b9f039a8551ca7729b1fb0711a6c7b1020f80779
+commit 0a37f73fbedd60ae26b1f23802cea8f0ad7624c0
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 15 12:07:34 2025 +0000
+Date:   Wed Aug 20 15:04:20 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (65 of 65 strings)
+    Currently translated at 100.0% (578 of 578 strings)
     
-    Translation: field-service-14.0/field-service-14.0-fieldservice_route
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice_route/it/
+    Translation: field-service-14.0/field-service-14.0-fieldservice
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-14-0/field-service-14-0-fieldservice/it/
 
 
 ## margin-analysis
@@ -932,11 +932,16 @@ Date:   Sun Feb 2 19:31:17 2025 +0000
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit d0fe6852decd6ac0680da6a821b478d9f9ab460a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:06:53 2025 +0000
+commit e9d9d6c52d1f128b249c291c68a42fa06b1c6659
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Aug 20 20:49:33 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-netherlands-14.0/l10n-netherlands-14.0-l10n_nl_tax_statement
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-netherlands-14-0/l10n-netherlands-14-0-l10n_nl_tax_statement/
 
 
 ## l10n-norway
@@ -1177,9 +1182,9 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 02d5bfcb4f271dd4dd2350894c346c97afdb13dc
+commit 71c1e4a9160a89c2c23fc54e8e52c118531fe1ee
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Aug 16 10:44:34 2025 +0000
+Date:   Tue Aug 19 13:00:30 2025 +0000
 
     Translated using Weblate (Italian)
     
@@ -1242,16 +1247,16 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 484a93347beebe3bae61e97d408299562a65daa3
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Aug 4 13:24:01 2025 +0000
+commit 522027d6adf6cf568c7e488d19e2d7ba0a03bc9f
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Aug 20 14:39:10 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (15 of 15 strings)
+    Currently translated at 100.0% (153 of 153 strings)
     
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_line_sequence
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_line_sequence/it/
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_blanket_order/it/
 
 
 ## purchase-reporting
