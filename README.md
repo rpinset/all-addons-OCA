@@ -161,16 +161,16 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 3d6a521f48299435345429ae59f8673adea93809
-Author: Víctor Martínez <victor.martinez@tecnativa.com>
-Date:   Tue Aug 5 12:20:06 2025 +0000
+commit 38c377f17eae185a5e422a294baee9fd70697f59
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Aug 18 09:17:05 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 64.7% (182 of 281 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: credit-control-15.0/credit-control-15.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_credit_control/es/
+    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_credit_control/
 
 
 ## data-protection
@@ -476,16 +476,11 @@ Date:   Tue Jul 29 06:43:39 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 9de80cef9582b052d5e188e187cdd129415ccf05
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:40:48 2025 +0000
+commit c333f35b5e46427284cd0310057b3227f2e1f79e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Aug 21 14:51:37 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (89 of 89 strings)
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_change_management
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_change_management/it/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -1360,11 +1355,14 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 21ca7fd812100ed9004fb37c36da860faf8249ef
+commit 4046ad94529a440a8adf36e9f753493b8dbbe214
+Merge: 21ca7fd81 7dae44c69
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:44:28 2025 +0000
+Date:   Tue Aug 19 08:58:42 2025 +0000
 
-    [UPD] addons table in README.md
+    Merge PR #3322 into 15.0
+    
+    Signed-off-by dreispt
 
 
 ## server-auth
