@@ -183,16 +183,16 @@ Date:   Sun Jul 27 09:47:02 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit cc66d159df580e08877ddaefb024d186dcdeba57
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 19 13:18:42 2025 +0000
+commit 9f21be4a56597035fa98f4b5a5d97eae843b9fb1
+Author: myacc-pro <ai@myacc.pro>
+Date:   Fri Aug 22 05:55:25 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Latvian)
     
-    Currently translated at 100.0% (42 of 42 strings)
+    Currently translated at 29.1% (7 of 24 strings)
     
-    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_online_gocardless
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_online_gocardless/it/
+    Translation: bank-statement-import-17.0/bank-statement-import-17.0-account_statement_import_online_ponto
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-17-0/bank-statement-import-17-0-account_statement_import_online_ponto/lv/
 
 
 ## account-payment
@@ -487,16 +487,11 @@ Date:   Thu Aug 21 07:18:06 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 1df392519d4eb363d1402215be28f56a01137275
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Aug 21 14:09:38 2025 +0000
+commit 834da72682f804adb684ebde4f721933b594309c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Aug 25 08:59:26 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: field-service-17.0/field-service-17.0-fieldservice
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-17-0/field-service-17-0-fieldservice/
+    Added translation using Weblate (Italian)
 
 
 ## margin-analysis
@@ -755,11 +750,11 @@ Date:   Sun Feb 2 19:17:46 2025 +0000
 
 ## l10n-finland
 From [https://github.com/OCA/l10n-finland.git](https://github.com/OCA/l10n-finland.git)
-commit 283b863ae39de49d16059ec60ef7a9ff0bbbeddd
-Author: oca-ci <oca-ci@odoo-community.org>
-Date:   Wed Jun 25 20:28:18 2025 +0000
+commit 17ae74028e294b8aac39c559776ef52c55b6bb79
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Aug 22 22:37:45 2025 +0000
 
-    [UPD] Update l10n_fi_banks.pot
+    [UPD] README.rst
 
 
 ## l10n-france
@@ -886,9 +881,9 @@ Date:   Sun Feb 2 19:31:44 2025 +0000
 
 ## l10n-netherlands
 From [https://github.com/OCA/l10n-netherlands.git](https://github.com/OCA/l10n-netherlands.git)
-commit bc50f4f28bdeef1edd1b75e0cc3752f8b9590058
+commit b37be32e6ba50ee66690d22517511e128f10a2a2
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 8 12:03:00 2025 +0000
+Date:   Fri Aug 22 10:39:51 2025 +0000
 
     [BOT] post-merge updates
 
@@ -954,9 +949,9 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 41482e4fcc18bd01e6fd3a9d588b717dbd49df07
+commit d2db16f2211e88acec6af5c7d27c452a5a3bb9e4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 20 08:20:00 2025 +0000
+Date:   Fri Aug 22 18:47:55 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1049,11 +1044,16 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 63534dc316e79a87cec23e6c00e6115fe513decc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 21 09:56:34 2025 +0000
+commit 1be2701697193353254b8e5590cb67c0f2573f76
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Aug 25 08:56:35 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (79 of 79 strings)
+    
+    Translation: delivery-carrier-17.0/delivery-carrier-17.0-delivery_ups_oca
+    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-17-0/delivery-carrier-17-0-delivery_ups_oca/it/
 
 
 ## stock-logistics-barcode
@@ -1099,16 +1099,11 @@ Date:   Wed Aug 20 14:13:19 2025 +0000
 
 ## stock-logistics-reporting
 From [https://github.com/OCA/stock-logistics-reporting.git](https://github.com/OCA/stock-logistics-reporting.git)
-commit e5cf77dfda82a1b9aa78587d33b5d66b3052632f
-Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
-Date:   Mon Aug 11 18:04:37 2025 +0000
+commit 60727f8cb358598289a9e1fcd8d386e2e5795872
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 25 06:49:51 2025 +0000
 
-    Translated using Weblate (Dutch)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: stock-logistics-reporting-17.0/stock-logistics-reporting-17.0-stock_quant_history_queued
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-reporting-17-0/stock-logistics-reporting-17-0-stock_quant_history_queued/nl/
+    [BOT] post-merge updates
 
 
 ## rma
@@ -1204,9 +1199,9 @@ Date:   Thu Jun 5 10:31:14 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit bd65c430f3d1e4f84108aec267c884107b0c1afa
+commit a4f60224f4de84c8c746872244b6dc79da606ae1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 20 08:54:19 2025 +0000
+Date:   Mon Aug 25 13:24:29 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1222,16 +1217,11 @@ Date:   Sun Feb 2 20:12:15 2025 +0000
 
 ## product-variant
 From [https://github.com/OCA/product-variant.git](https://github.com/OCA/product-variant.git)
-commit cd4a77cf52c7207c4a36c0f945e414b0a194dedf
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 6 08:54:29 2025 +0000
+commit 5e91179715e77825126e0d1ed6f181cfc24ef0bc
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 25 15:48:42 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (111 of 111 strings)
-    
-    Translation: product-variant-17.0/product-variant-17.0-product_variant_configurator
-    Translate-URL: https://translation.odoo-community.org/projects/product-variant-17-0/product-variant-17-0-product_variant_configurator/it/
+    [BOT] post-merge updates
 
 
 ## product-pack
@@ -1254,9 +1244,9 @@ Date:   Sun Feb 2 20:17:46 2025 +0000
 
 ## project-service
 From [https://github.com/OCA/project-service.git](https://github.com/OCA/project-service.git)
-commit dd780c712a5fcd9ef36dd04959765e7c0a946bb7
+commit b8924d0ffc9e193816d5a5f2eff76fcfd0a49e03
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jul 30 08:39:11 2025 +0000
+Date:   Mon Aug 25 12:02:50 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1322,9 +1312,9 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit cc8c3cd15e47ebcf87863f77b8593dc27852ac3d
+commit e8ade32ca4f669d23abb9b22ace03fc8d02e07d7
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 21 13:43:36 2025 +0000
+Date:   Mon Aug 25 07:26:52 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1386,20 +1376,20 @@ Date:   Sun Feb 9 19:21:09 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 26faf3e6df45dfdc38f5db3c89dc6b6d7a53b412
+commit d584ce560c9893a979da09a96543100f4a2f2553
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 21 19:05:23 2025 +0000
+Date:   Fri Aug 22 11:47:40 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## server-auth
 From [https://github.com/OCA/server-auth.git](https://github.com/OCA/server-auth.git)
-commit 4a54e5d8480fe9bf289ee138c7e71fea08ba873e
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 21 06:30:07 2025 +0000
+commit 293566fd75352bb36fc5aaaeb29c3e7df2f7347d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Aug 25 10:11:00 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Italian)
 
 
 ## server-env
