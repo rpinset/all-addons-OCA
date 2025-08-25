@@ -476,9 +476,9 @@ Date:   Tue Jul 29 06:43:39 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit c333f35b5e46427284cd0310057b3227f2e1f79e
+commit be9fb0f3e4671c25f1d13c9c578078bcc7a1ce81
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 21 14:51:37 2025 +0000
+Date:   Mon Aug 25 13:25:32 2025 +0000
 
     [BOT] post-merge updates
 
