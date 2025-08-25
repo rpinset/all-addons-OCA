@@ -1247,16 +1247,11 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 522027d6adf6cf568c7e488d19e2d7ba0a03bc9f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 14:39:10 2025 +0000
+commit c1f45c3ab251f20602ae11724210739a2283301d
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Aug 25 14:54:08 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (153 of 153 strings)
-    
-    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_blanket_order/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
