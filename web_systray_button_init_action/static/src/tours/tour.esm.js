@@ -24,6 +24,7 @@ tour.register(
         test: true,
     },
     [
+        tour.stepUtils.showAppsMenuItem(),
         {
             trigger: ".o_navbar_apps_menu button",
             extra_trigger: ".init_action_div:has(a[name='init_action'])",
