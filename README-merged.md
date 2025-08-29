@@ -409,6 +409,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_global_discount](account_global_discount/) | 17.0.1.0.0 |  | Account Global Discount
+[account_invoice_auto_send_by_email](account_invoice_auto_send_by_email/) | 17.0.1.0.0 |  | Invoice with the email transmit method are send automatically.
 [account_invoice_block_payment](account_invoice_block_payment/) | 17.0.1.0.0 |  | Module to block payment of invoices
 [account_invoice_blocking](account_invoice_blocking/) | 17.0.1.0.2 |  | Set a blocking (No Follow-up) flag on invoices
 [account_invoice_crm_tag](account_invoice_crm_tag/) | 17.0.1.0.0 |  | Account Invoice CRM Tag
@@ -439,7 +440,7 @@ addon | version | maintainers | summary
 [sale_order_type_whole_delivered_invoiceability](sale_order_type_whole_delivered_invoiceability/) | 17.0.1.0.0 |  | Sale Order Type Whole Delivered Invoiceability
 [sale_order_whole_delivered_invoiceability](sale_order_whole_delivered_invoiceability/) | 17.0.1.0.0 |  | Sale Order Whole Delivered Invoiceability
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 17.0.1.0.1 |  | Add timesheet details in invoice line
-[stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
+[stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
 [stock_picking_invoicing](stock_picking_invoicing/) | 17.0.1.0.0 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
@@ -609,7 +610,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [intrastat_base](intrastat_base/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Intrastat reporting
-[intrastat_product](intrastat_product/) | 17.0.1.2.1 |  | Base module for Intrastat Product
+[intrastat_product](intrastat_product/) | 17.0.1.2.2 |  | Base module for Intrastat Product
 [intrastat_product_generic](intrastat_product_generic/) | 17.0.1.0.0 |  | Generic Intrastat Product Declaration
 [intrastat_product_hscodes_import](intrastat_product_hscodes_import/) | 17.0.1.0.0 |  | Module used to import HS Codes for Intrastat Product
 [product_harmonized_system](product_harmonized_system/) | 17.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/luc-demeyer'><img src='https://github.com/luc-demeyer.png' width='32' height='32' style='border-radius:50%;' alt='luc-demeyer'/></a> | Base module for Product Import/Export reports
@@ -953,7 +954,7 @@ addon | version | maintainers | summary
 [account_mass_reconcile](account_mass_reconcile/) | 17.0.1.0.1 |  | Account Mass Reconcile
 [account_partner_reconcile](account_partner_reconcile/) | 17.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_model_oca](account_reconcile_model_oca/) | 17.0.1.0.4 |  | This includes the logic moved from Odoo Community to Odoo Enterprise
-[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.21 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 17.0.1.5.22 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 17.0.1.6.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 
 [//]: # (end addons)
@@ -1060,7 +1061,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_due_list](account_due_list/) | 17.0.1.0.0 |  | List of open credits and debits, with due date
 [account_due_list_payment_mode](account_due_list_payment_mode/) | 17.0.1.0.0 |  | Payment Due List Payment Mode
-[account_payment_return](account_payment_return/) | 17.0.1.2.1 |  | Manage the return of your payments
+[account_payment_return](account_payment_return/) | 17.0.1.2.2 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 17.0.1.0.0 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
 [account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 17.0.1.0.0 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_term_extension](account_payment_term_extension/) | 17.0.1.0.2 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
@@ -1729,7 +1730,7 @@ addon | version | maintainers | summary
 [sale_attached_product](sale_attached_product/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.2.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.2 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.3 |  | Blanket Orders
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 17.0.1.0.0 |  | Sale Deliveries split by date
@@ -1758,6 +1759,7 @@ addon | version | maintainers | summary
 [sale_order_line_tag](sale_order_line_tag/) | 17.0.1.0.1 | <a href='https://github.com/smaciaosi'><img src='https://github.com/smaciaosi.png' width='32' height='32' style='border-radius:50%;' alt='smaciaosi'/></a> <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> <a href='https://github.com/ckolobow'><img src='https://github.com/ckolobow.png' width='32' height='32' style='border-radius:50%;' alt='ckolobow'/></a> | Add tags to classify sales order line reasons
 [sale_order_lot_generator](sale_order_lot_generator/) | 17.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Sale Order Lot Generator
 [sale_order_lot_selection](sale_order_lot_selection/) | 17.0.1.0.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Sale Order Lot Selection
+[sale_order_partner_no_autofollow](sale_order_partner_no_autofollow/) | 17.0.1.0.0 |  | Do not add customer as follower in Sales Orders
 [sale_order_price_recalculation](sale_order_price_recalculation/) | 17.0.1.0.0 |  | Recalculate prices / Reset descriptions on sale order lines
 [sale_order_priority](sale_order_priority/) | 17.0.1.0.1 |  | Define priority on sale orders
 [sale_order_product_assortment](sale_order_product_assortment/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Module that allows to use the assortments on sale orders
@@ -2795,8 +2797,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_geoengine](base_geoengine/) | 17.0.1.0.1 |  | Geospatial support for Odoo
-[base_geoengine_demo](base_geoengine_demo/) | 17.0.1.0.0 |  | Geo spatial support Demo
+[base_geoengine](base_geoengine/) | 17.0.1.0.2 |  | Geospatial support for Odoo
+[base_geoengine_demo](base_geoengine_demo/) | 17.0.1.0.1 |  | Geo spatial support Demo
 [geoengine_base_geolocalize](geoengine_base_geolocalize/) | 17.0.1.0.0 |  | Geospatial support for base_geolocalize
 [geoengine_partner](geoengine_partner/) | 17.0.1.0.0 |  | Geospatial support of partners
 [web_leaflet_lib](web_leaflet_lib/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Bring leaflet.js librairy in odoo.
@@ -3222,6 +3224,7 @@ addon | version | maintainers | summary
 [product_tax_multicompany_default](product_tax_multicompany_default/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Product Tax Multi Company Default
 [purchase_sale_inter_company](purchase_sale_inter_company/) | 17.0.1.0.0 |  | Intercompany PO/SO rules
 [purchase_sale_stock_inter_company](purchase_sale_stock_inter_company/) | 17.0.1.0.1 |  | Intercompany PO/SO rules with warehouse
+[res_company_active](res_company_active/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add the 'active' feature on company model
 
 [//]: # (end addons)
 
@@ -4896,7 +4899,7 @@ addon | version | maintainers | summary
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 17.0.1.0.2 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 17.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 17.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
-[l10n_es_partner](l10n_es_partner/) | 17.0.1.0.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
+[l10n_es_partner](l10n_es_partner/) | 17.0.1.0.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Adaptación de los clientes, proveedores y bancos para España
 [l10n_es_partner_mercantil](l10n_es_partner_mercantil/) | 17.0.1.0.1 |  | Añade los datos del registro mercantil a la empresa
 [l10n_es_payment_order_confirming_aef](l10n_es_payment_order_confirming_aef/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming estándar AEF
 [l10n_es_payment_order_confirming_sabadell](l10n_es_payment_order_confirming_sabadell/) | 17.0.1.1.0 |  | Exportación de fichero bancario Confirming para Banco Sabadell
@@ -5919,7 +5922,7 @@ addon | version | maintainers | summary
 [mrp_lot_number_propagation](mrp_lot_number_propagation/) | 17.0.1.0.0 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> | Propagate a serial number from a component to a finished product
 [mrp_lot_production_date](mrp_lot_production_date/) | 17.0.1.0.0 |  | MRP Lot Production Date
 [mrp_mass_production_order](mrp_mass_production_order/) | 17.0.2.2.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create multiple manufacturing orders in one step
-[mrp_multi_level](mrp_multi_level/) | 17.0.1.2.9 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
+[mrp_multi_level](mrp_multi_level/) | 17.0.1.3.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds an MRP Scheduler
 [mrp_multi_level_estimate](mrp_multi_level_estimate/) | 17.0.1.0.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allows to consider demand estimates using MRP multi level.
 [mrp_planned_order_matrix](mrp_planned_order_matrix/) | 17.0.1.0.0 |  | Allows to create fixed planned orders on a grid view.
 [mrp_production_back_to_draft](mrp_production_back_to_draft/) | 17.0.1.0.1 |  | Allows to return to draft a confirmed or cancelled MO.
@@ -6362,6 +6365,7 @@ addon | version | maintainers | summary
 [purchase_product_template_tags](purchase_product_template_tags/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Purchase app
 [sale_product_matrix_secondary_unit](sale_product_matrix_secondary_unit/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | Secondary unit in product matrix
 [sale_product_template_tags](sale_product_template_tags/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Sale app
+[stock_product_template_tags](stock_product_template_tags/) | 17.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Show product tags menu in Inventory app
 [stock_production_lot_expired_date](stock_production_lot_expired_date/) | 17.0.1.0.1 |  | Stock production lot expired date
 [uom_alias](uom_alias/) | 17.0.1.0.0 | <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Adds alias for UOM
 [uom_category_active](uom_category_active/) | 17.0.1.0.1 |  | Add option to archive UoM categories
@@ -6971,7 +6975,7 @@ addon | version | maintainers | summary
 [mail_send_confirmation](mail_send_confirmation/) | 17.0.1.0.1 |  | Mail Send Confirmation
 [mail_show_follower](mail_show_follower/) | 17.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Show CC document followers in mails.
 [mail_template_substitute](mail_template_substitute/) | 17.0.1.0.0 |  | This module allows to create substitution rules for mail templates.
-[mail_tracking](mail_tracking/) | 17.0.1.0.3 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 17.0.1.0.4 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 17.0.1.0.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 17.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 17.0.1.0.0 |  | Track metadata for GDPR compliance
