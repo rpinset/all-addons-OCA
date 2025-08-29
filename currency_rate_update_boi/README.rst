@@ -90,11 +90,11 @@ Authors
 Contributors
 ------------
 
--  Giacomo Grasso <giacomo.grasso.82@gmail.com>
--  Gabriele Baldessari <gabriele.baldessari@gmail.com>
--  `TAKOBI <https://takobi.online>`__:
+- Giacomo Grasso <giacomo.grasso.82@gmail.com>
+- Gabriele Baldessari <gabriele.baldessari@gmail.com>
+- `TAKOBI <https://takobi.online>`__:
 
-   -  Lorenzo Battistini
+  - Lorenzo Battistini
 
 Maintainers
 -----------

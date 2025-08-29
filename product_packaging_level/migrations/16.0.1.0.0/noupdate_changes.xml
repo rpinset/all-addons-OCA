@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+  <record id="product_packaging_level_default" model="product.packaging.level">
+    <field name="name">Default Level</field>
+  </record>
+</odoo>

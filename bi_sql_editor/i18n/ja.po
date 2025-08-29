@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-12 02:51+0000\n"
-"PO-Revision-Date: 2024-01-17 11:33+0000\n"
-"Last-Translator: \"Ivy Liu (QRTL)\" <liuhehe@quartile.co>\n"
+"PO-Revision-Date: 2025-08-29 05:43+0000\n"
+"Last-Translator: \"Toshikimi Shigenobu (Quartile)\" <nobu@quartile.co>\n"
 "Language-Team: Japanese (https://www.transifex.com/oca/teams/23907/ja/)\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: bi_sql_editor
 #. odoo-python
@@ -567,7 +567,7 @@ msgstr "オプション (表示)"
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__parent_menu_id
 msgid "Parent Odoo Menu"
-msgstr ""
+msgstr "親メニュー"
 
 #. module: bi_sql_editor
 #. odoo-python
@@ -719,7 +719,7 @@ msgstr "SUM"
 #. module: bi_sql_editor
 #: model_terms:ir.ui.view,arch_db:bi_sql_editor.view_bi_sql_view_form
 msgid "Technical Details"
-msgstr ""
+msgstr "技術詳細"
 
 #. module: bi_sql_editor
 #: model:ir.model.fields,field_description:bi_sql_editor.field_bi_sql_view__technical_name
@@ -773,7 +773,7 @@ msgstr ""
 #. module: bi_sql_editor
 #: model_terms:ir.ui.view,arch_db:bi_sql_editor.view_bi_sql_view_form
 msgid "UI Instances"
-msgstr ""
+msgstr "UIインスタンス"
 
 #. module: bi_sql_editor
 #: model:ir.model.fields.selection,name:bi_sql_editor.selection__bi_sql_view_field__tree_visibility__unavailable

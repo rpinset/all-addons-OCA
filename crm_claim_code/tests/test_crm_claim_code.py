@@ -25,6 +25,12 @@ class TestCrmClaimCode(common.TransactionCase):
         crm_claim = self.crm_claim_model.create({"name": "Testing claim code"})
         self.assertNotEqual(crm_claim.code, "/")
         self.assertEqual(crm_claim.code, code)
+        crm_claim_search = self.crm_claim_model._name_search(code)
+        self.assertIn(
+            crm_claim.id,
+            crm_claim_search,
+            "The claim with search_code not found.",
+        )
 
     def test_copy_claim_code_assign(self):
         code = self._get_next_code()

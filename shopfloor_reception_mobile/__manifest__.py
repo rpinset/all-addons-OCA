@@ -3,9 +3,9 @@
 {
     "name": "Shopfloor reception mobile",
     "summary": "Scenario for receiving products",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.1",
     "development_status": "Beta",
-    "depends": ["shopfloor_mobile_base", "shopfloor_reception"],
+    "depends": ["shopfloor_mobile_base", "shopfloor_mobile", "shopfloor_reception"],
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "maintainers": ["JuMiSanAr"],
     "website": "https://github.com/OCA/wms",
