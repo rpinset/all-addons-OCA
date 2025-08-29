@@ -198,20 +198,19 @@ class ResPartner(models.Model):
 
     @api.depends("credit_limit")
     def _compute_date_credit_limit(self):
-        self.filtered(lambda x: x.credit_limit == 0.00).date_credit_limit = False
+        self.filtered(lambda x: x.sudo().credit_limit == 0.00).date_credit_limit = False
         self.filtered(
-            lambda x: x.credit_limit != 0.00
+            lambda x: x.sudo().credit_limit != 0.00
         ).date_credit_limit = datetime.today()
 
     @api.depends("credit_limit", "risk_total")
     def _compute_risk_remaining(self):
         for record in self:
-            record.risk_remaining_value = record.credit_limit - record.risk_total
-            if record.credit_limit:
+            credit_limit = record.sudo().credit_limit
+            record.risk_remaining_value = credit_limit - record.risk_total
+            if credit_limit:
                 record.risk_remaining_percentage = round(
-                    100
-                    * (record.credit_limit - record.risk_total)
-                    / record.credit_limit,
+                    100 * (credit_limit - record.risk_total) / credit_limit,
                     2,
                 )
             else:
@@ -242,6 +241,18 @@ class ResPartner(models.Model):
                 )
             else:
                 partner.risk_currency_id = partner.currency_id
+
+    @api.model
+    def _setup_complete(self):
+        # Change when we find a better way to add a group while maintaining inheritance.
+        res = super()._setup_complete()
+        field = self._fields["credit_limit"]
+        new_group = "account_financial_risk.group_account_financial_risk_user"
+        group_list = field.groups.split(",") if field.groups else []
+        if new_group not in group_list:
+            group_list.append(new_group)
+            field.groups = ",".join(group_list)
+        return res
 
     @api.onchange("credit_currency")
     def _onchange_credit_currency(self):
@@ -481,7 +492,7 @@ class ResPartner(models.Model):
             credit_limit = partner.sudo().credit_limit
             if credit_limit and amount > credit_limit:
                 risk_exception = True
-                amount_exceeded = amount - partner.credit_limit
+                amount_exceeded = amount - credit_limit
             partner.risk_total = amount
             partner.risk_amount_exceeded = amount_exceeded
             partner.risk_exception = risk_exception

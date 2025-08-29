@@ -4,8 +4,8 @@ import {patch} from "@web/core/utils/patch";
 import {SaleOrderLineProductField} from "@sale/js/sale_product_field";
 
 patch(SaleOrderLineProductField.prototype, {
-    _getContractConfiguratorContext() {
-        const context = super._getContractConfiguratorContext();
+    get contractContext() {
+        const context = super.contractContext;
         if (this.props.record.data.qty_type) {
             context.default_qty_type = this.props.record.data.qty_type;
         }
