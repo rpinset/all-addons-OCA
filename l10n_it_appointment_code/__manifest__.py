@@ -5,7 +5,7 @@
 
 {
     "name": "ITA - Codici carica",
-    "version": "14.0.1.0.1",
+    "version": "14.0.1.0.2",
     "category": "Localization/Italy",
     "summary": "Aggiunge la tabella dei codici carica da usare nelle dichiarazioni"
     " fiscali italiane",

@@ -183,25 +183,27 @@ class Report(models.TransientModel):
         # Create an ordered dict where each key is a fiscal year, sorting
         # them for starting date => every fiscal year must have its own
         # depreciation lines or previsional ones
+        fiscal_years = self.env["account.fiscal.year"].search(
+            fy_domain, order="date_from asc"
+        )
         dep_line_obj = self.env["asset.depreciation.line"]
         dep_lines_grouped = {
-            dep: OrderedDict(
-                {
-                    fy: dep_line_obj
-                    for fy in self.env["account.fiscal.year"].search(
-                        fy_domain, order="date_from asc"
-                    )
-                }
-            )
-            for dep in deps
+            dep: OrderedDict({fy: dep_line_obj for fy in fiscal_years}) for dep in deps
         }
 
         fiscal_year = self.env["account.fiscal.year"]
+        cache_found_fiscal_year = dict()
         for dep_line in dep_lines:
             dep = dep_line.depreciation_id
-            fyear = fiscal_year.get_fiscal_year_by_date(
-                dep_line.date, company=dep_line.company_id
-            )
+            dep_line_key = (dep_line.date, dep_line.company_id)
+            fyear = cache_found_fiscal_year.get(dep_line_key)
+            if not fyear:
+                fyear = cache_found_fiscal_year[
+                    dep_line_key
+                ] = fiscal_year.get_fiscal_year_by_date(
+                    dep_line.date,
+                    company=dep_line.company_id,
+                )
             dep_lines_grouped[dep][fyear] += dep_line
 
         self.write(
@@ -212,56 +214,77 @@ class Report(models.TransientModel):
                 ]
             }
         )
+
+        report_assets_values = []
+        sorted_assets = self.sort_assets(assets)
         for report_categ in self.report_category_ids:
-            report_categ.write(
+            report_category_assets_values = [
                 {
-                    "report_asset_ids": [
-                        (0, 0, {"asset_id": a.id, "report_id": self.id})
-                        for a in self.sort_assets(assets)
-                        if a.category_id == report_categ.category_id
-                    ]
+                    "asset_id": a.id,
+                    "report_category_id": report_categ.id,
+                    "report_id": self.id,
                 }
-            )
+                for a in sorted_assets
+                if a.category_id == report_categ.category_id
+            ]
+            report_assets_values.extend(report_category_assets_values)
+        self.env["report_asset_previsional_asset"].create(report_assets_values)
+
+        report_depreciations_values = []
+        deps_data = deps.read(
+            fields=[
+                "id",
+                "asset_id",
+            ],
+            load=None,
+        )
+        asset_to_deps = dict()
+        for dep_data in deps_data:
+            asset_to_deps.setdefault(dep_data["asset_id"], []).append(dep_data["id"])
+
         for report_asset in self.report_asset_ids:
-            report_asset.write(
+            report_asset_deps_ids = asset_to_deps.get(report_asset.asset_id.id, [])
+            report_asset_depreciations_values = [
                 {
-                    "report_depreciation_ids": [
-                        (0, 0, {"depreciation_id": d.id, "report_id": self.id})
-                        for d in deps
-                        if d.asset_id == report_asset.asset_id
-                    ]
+                    "depreciation_id": dep_id,
+                    "report_id": self.id,
+                    "report_asset_id": report_asset.id,
                 }
-            )
+                for dep_id in report_asset_deps_ids
+            ]
+            report_depreciations_values.extend(report_asset_depreciations_values)
+        self.env["report_asset_previsional_depreciation"].create(
+            report_depreciations_values
+        )
+
+        report_depreciation_lines_values = []
         for report_dep in self.report_depreciation_ids:
             sequence = 0
-            for dep, lines_by_fyear in dep_lines_grouped.items():
-                if dep == report_dep.depreciation_id:
-                    for fyear, lines in lines_by_fyear.items():
-                        if fyear.date_to >= dep.date_start:
-                            prev = not lines or not any(
-                                line.move_type == "depreciated"
-                                and not line.partial_dismissal
-                                for line in lines
-                            )
-                            sequence += 1
-                            line_ids = lines.ids
-                            report_dep.write(
-                                {
-                                    "report_depreciation_year_line_ids": [
-                                        (
-                                            0,
-                                            0,
-                                            {
-                                                "dep_line_ids": [(6, 0, line_ids)],
-                                                "fiscal_year_id": fyear.id,
-                                                "needs_previsional": prev,
-                                                "report_id": self.id,
-                                                "sequence": sequence,
-                                            },
-                                        )
-                                    ]
-                                }
-                            )
+            dep = report_dep.depreciation_id
+            lines_by_fyear = dep_lines_grouped.get(dep, dict())
+            report_depreciation_line_values = []
+            for fyear, lines in lines_by_fyear.items():
+                if fyear.date_to >= dep.date_start:
+                    prev = not lines or not any(
+                        line.move_type == "depreciated" and not line.partial_dismissal
+                        for line in lines
+                    )
+                    sequence += 1
+                    line_ids = lines.ids
+                    report_depreciation_line_values.append(
+                        {
+                            "dep_line_ids": [(6, 0, line_ids)],
+                            "fiscal_year_id": fyear.id,
+                            "needs_previsional": prev,
+                            "report_id": self.id,
+                            "sequence": sequence,
+                            "report_depreciation_id": report_dep.id,
+                        }
+                    )
+            report_depreciation_lines_values.extend(report_depreciation_line_values)
+        self.env["report_asset_previsional_depreciation_line_year"].create(
+            report_depreciation_lines_values
+        )
 
     def generate_totals(self):
         curr = self.company_id.currency_id

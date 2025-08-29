@@ -8,8 +8,10 @@ from odoo import api, models
 INV_TYPE_MAP = {
     "out_invoice": "income",
     "out_refund": "income",
+    "out_receipt": "income",
     "in_invoice": "expense",
     "in_refund": "expense",
+    "in_receipt": "expense",
 }
 
 

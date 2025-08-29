@@ -42,7 +42,7 @@ addon | version | maintainers | summary
 [mrp_analytic_sale_project](mrp_analytic_sale_project/) | 14.0.1.0.0 |  | Carry the Sales Order Analytic Account to the generated Manufacturing Orders
 [pos_analytic_by_config](pos_analytic_by_config/) | 14.0.1.0.0 |  | Use analytic account defined on POS configuration for POS orders
 [procurement_mto_analytic](procurement_mto_analytic/) | 14.0.1.0.0 |  | This module sets analytic account in purchase order line from sale order analytic account
-[product_analytic](product_analytic/) | 14.0.1.0.0 |  | Add analytic account on products and product categories
+[product_analytic](product_analytic/) | 14.0.1.1.0 |  | Add analytic account on products and product categories
 [product_analytic_purchase](product_analytic_purchase/) | 14.0.1.0.1 |  | Glue module between purchase and product_analytic
 [product_analytic_sale](product_analytic_sale/) | 14.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Glue module between sale and product_analytic
 [purchase_analytic](purchase_analytic/) | 14.0.3.0.0 |  | Purchase Analytic
@@ -1152,7 +1152,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 14.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 14.0.2.0.0 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_ponto_ing](account_statement_import_online_ponto_ing/) | 14.0.1.0.0 |  | Online Bank Statements: MyPonto.com ING customization
-[account_statement_import_online_wise](account_statement_import_online_wise/) | 14.0.1.0.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for Wise.com (TransferWise.com)
+[account_statement_import_online_wise](account_statement_import_online_wise/) | 14.0.1.0.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for Wise.com (TransferWise.com)
 [account_statement_import_paypal](account_statement_import_paypal/) | 14.0.1.0.1 |  | Import PayPal CSV files as Bank Statements in Odoo
 [account_statement_import_sftp](account_statement_import_sftp/) | 14.0.1.0.0 | <a href='https://github.com/OCA'><img src='https://github.com/OCA.png' width='32' height='32' style='border-radius:50%;' alt='OCA'/></a> | Import bank statement from an SFTP server
 [account_statement_import_txt_xlsx](account_statement_import_txt_xlsx/) | 14.0.3.2.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo
@@ -2513,6 +2513,7 @@ addon | version | maintainers | summary
 [event_session](event_session/) | 14.0.1.1.0 |  | Sessions in events
 [event_session_registration_multi_qty](event_session_registration_multi_qty/) | 14.0.1.0.0 |  | Allow registration grouped by quantities in sessions
 [partner_event](partner_event/) | 14.0.1.0.1 |  | Link partner to events
+[website_event_no_index](website_event_no_index/) | 14.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Prevent indexing unpublished event on website
 [website_event_questions_by_ticket](website_event_questions_by_ticket/) | 14.0.1.0.0 |  | Events Questions conditional to the chosen ticket
 [website_event_questions_template](website_event_questions_template/) | 14.0.1.0.0 |  | Set question templates for events
 [website_event_require_login](website_event_require_login/) | 14.0.1.0.1 |  | Website Event Require Login
@@ -4755,7 +4756,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_vat_period_end_statement](account_vat_period_end_statement/) | 14.0.1.2.3 |  | Allow to create the 'VAT Statement'.
-[assets_management](assets_management/) | 14.0.1.6.1 |  | Gestione Cespiti
+[assets_management](assets_management/) | 14.0.1.7.0 |  | Gestione Cespiti
 [currency_rate_update_boi](currency_rate_update_boi/) | 14.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Update exchange rates using www.bancaditalia.it
 [fiscal_epos_print](fiscal_epos_print/) | 14.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | ePOS-Print XML Fiscal Printer Driver - Stampanti Epson compatibili: FP81II, FP90III
 [l10n_it_abicab](l10n_it_abicab/) | 14.0.1.0.2 | <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Base Bank ABI/CAB codes
@@ -4764,7 +4765,7 @@ addon | version | maintainers | summary
 [l10n_it_account_stamp](l10n_it_account_stamp/) | 14.0.1.2.0 |  | Gestione automatica dell'imposta di bollo
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 14.0.1.1.1 |  | Gestione natura delle aliquote IVA
 [l10n_it_amount_to_text](l10n_it_amount_to_text/) | 14.0.1.0.0 |  | Localizza le valute in italiano per amount_to_text
-[l10n_it_appointment_code](l10n_it_appointment_code/) | 14.0.1.0.1 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
+[l10n_it_appointment_code](l10n_it_appointment_code/) | 14.0.1.0.2 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
 [l10n_it_asset_history_import](l10n_it_asset_history_import/) | 14.0.1.0.0 |  | Cespiti: importazione storico dati
 [l10n_it_asset_history_import_queue](l10n_it_asset_history_import_queue/) | 14.0.1.0.0 | <a href='https://github.com/GSLabit'><img src='https://github.com/GSLabit.png' width='32' height='32' style='border-radius:50%;' alt='GSLabit'/></a> | Cespiti: importazione storico dati in background
 [l10n_it_ateco](l10n_it_ateco/) | 14.0.1.1.0 |  | ITA - Codici Ateco
@@ -4811,7 +4812,7 @@ addon | version | maintainers | summary
 [l10n_it_location_nuts](l10n_it_location_nuts/) | 14.0.1.1.0 |  | Opzioni NUTS specifiche per l'Italia
 [l10n_it_mis_reports_pl_bs](l10n_it_mis_reports_pl_bs/) | 14.0.1.0.0 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> | Modelli "MIS Builder" per il conto economico e lo stato patrimoniale
 [l10n_it_partner_statement_riba](l10n_it_partner_statement_riba/) | 14.0.1.1.0 |  | Visualizzare le RiBa negli estratti conto cliente.
-[l10n_it_payment_reason](l10n_it_payment_reason/) | 14.0.1.1.0 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
+[l10n_it_payment_reason](l10n_it_payment_reason/) | 14.0.1.1.1 |  | Aggiunge la tabella delle causali di pagamento da usare ad esempio nelle ritenute d'acconto
 [l10n_it_pec](l10n_it_pec/) | 14.0.1.0.0 |  | Aggiunge il campo email PEC al partner
 [l10n_it_pos_fatturapa](l10n_it_pos_fatturapa/) | 14.0.1.0.0 |  | Gestione dati fattura elettronica del cliente all'internodell'interfaccia del POS
 [l10n_it_pos_fiscalcode](l10n_it_pos_fiscalcode/) | 14.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Gestione codice fiscale del cliente all'interno dell'interfaccia del POS

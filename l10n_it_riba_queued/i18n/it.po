@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-07 13:58+0000\n"
-"PO-Revision-Date: 2025-07-11 09:50+0000\n"
+"PO-Revision-Date: 2025-08-29 12:43+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: \n"
 "Language: it\n"
@@ -25,7 +25,7 @@ msgstr "Pagamento asincrono"
 #. module: l10n_it_riba_queued
 #: model:ir.model,name:l10n_it_riba_queued.model_riba_distinta_line
 msgid "C/O Details"
-msgstr ""
+msgstr "Dettagli RiBa"
 
 #. module: l10n_it_riba_queued
 #: model:ir.model.fields,field_description:l10n_it_riba_queued.field_riba_distinta_line__display_name

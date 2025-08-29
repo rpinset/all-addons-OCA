@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit f584216de588ca252a360f6d5482489e2ca46ad0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:30:43 2025 +0000
+commit 5b38dbe9c316b5349e3458a354d5195631ab4817
+Author: Tamer Sezgin <tamer.sezgin@gmail.com>
+Date:   Fri Aug 29 13:34:14 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: account-analytic-14.0/account-analytic-14.0-mrp_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-14-0/account-analytic-14-0-mrp_analytic/tr/
 
 
 ## account-budgeting
@@ -212,16 +217,11 @@ Date:   Wed Jun 25 15:12:37 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 217f19d700f08491430e473a66fab2f9358514d2
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:46:29 2025 +0000
+commit 943bb169f31bc9d3816320dd051b0d9a4fbd090b
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Aug 29 06:55:26 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (10 of 10 strings)
-    
-    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_base/it/
+    [BOT] post-merge updates
 
 
 ## account-payment
@@ -376,16 +376,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 60aec62613efc24cac66fcea697d0064123998b7
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 14:39:20 2025 +0000
+commit 416fd3c6e7ec96dc49cdf2f42d5d4d3bab7f6e81
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Wed Aug 27 09:11:47 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (165 of 165 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_blanket_order/it/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_amount_to_invoice
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_amount_to_invoice/it/
 
 
 ## crm
@@ -449,11 +449,11 @@ Date:   Wed Jun 11 13:25:10 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit c8a316a0c4876de9345344301f0935b7f3569d8f
+commit aa58377906a330a67f6a93db3e2266348468d702
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:52:33 2025 +0000
+Date:   Tue Aug 26 08:51:27 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## survey
@@ -873,16 +873,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 54792f5d6f53749a722e871fba198d41d0771906
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Aug 7 16:18:09 2025 +0000
+commit fcc54d44b9ac077efbc181230cfcd80dc9d1685a
+Author: Francesco Foresti <francesco.foresti@ooops404.com>
+Date:   Fri Aug 29 10:17:06 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (6 of 6 strings)
     
     Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_riba_queued
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_riba_queued/
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_riba_queued/it/
 
 
 ## l10n-japan
@@ -1265,16 +1265,16 @@ Date:   Mon Aug 4 06:41:58 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit 1a179d63d1d082fe39d98435d0c79a4788d78697
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 14:42:31 2025 +0000
+commit a860937536a45b3e07d2b11cd01b5afe1abea078
+Author: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>
+Date:   Fri Aug 29 07:39:54 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Dutch)
     
-    Currently translated at 100.0% (68 of 68 strings)
+    Currently translated at 100.0% (39 of 39 strings)
     
-    Translation: product-attribute-14.0/product-attribute-14.0-product_pricelist_assortment
-    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_pricelist_assortment/it/
+    Translation: product-attribute-14.0/product-attribute-14.0-product_assortment_description
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_assortment_description/nl/
 
 
 ## product-kitting
