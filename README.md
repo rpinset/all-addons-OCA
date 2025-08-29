@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit f7c1a5700381e82023a00b134327a29be0ccfb00
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:30:57 2025 +0000
+commit 12244d0907742360edc36ddf62baef3f05c0100b
+Author: Tamer Sezgin <tamer.sezgin@gmail.com>
+Date:   Fri Aug 29 13:34:53 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: account-analytic-15.0/account-analytic-15.0-mrp_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-mrp_analytic/tr/
 
 
 ## account-budgeting
@@ -161,16 +166,11 @@ Date:   Sun Feb 2 18:33:06 2025 +0000
 
 ## credit-control
 From [https://github.com/OCA/credit-control.git](https://github.com/OCA/credit-control.git)
-commit 38c377f17eae185a5e422a294baee9fd70697f59
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Aug 18 09:17:05 2025 +0000
+commit c5abae8c177c9cd8de15d882d698b67628be91d3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Aug 28 11:37:08 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: credit-control-15.0/credit-control-15.0-account_credit_control
-    Translate-URL: https://translation.odoo-community.org/projects/credit-control-15-0/credit-control-15-0-account_credit_control/
+    [BOT] post-merge updates
 
 
 ## data-protection
@@ -467,20 +467,25 @@ Date:   Thu Jul 17 13:34:49 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 738d2e4f9b4e63844a47325f1daeb05fb9d2be62
+commit 53ac11286b085b7d800bcd9fcd52d54ad6ddd971
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 29 06:43:39 2025 +0000
+Date:   Fri Aug 29 06:00:24 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit be9fb0f3e4671c25f1d13c9c578078bcc7a1ce81
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 25 13:25:32 2025 +0000
+commit 4b40569fa0485cd9cd11574aa4debe229a3767ba
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Aug 26 13:07:30 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: field-service-15.0/field-service-15.0-fieldservice_portal
+    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_portal/
 
 
 ## margin-analysis
@@ -918,9 +923,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 605f4881047229704ed343c8df66dfcc0b6334aa
+commit e46e7d58525011ad335069a65c37dd0bc6dd3b1a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 31 19:16:45 2025 +0000
+Date:   Fri Aug 29 14:24:13 2025 +0000
 
     [BOT] post-merge updates
 
@@ -945,9 +950,9 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit d8639161207f888bb63cb1c501fd8f63075e636b
+commit 98515c37f75e4ae30f9559db1d616a0c8eba3bfe
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 11 04:08:57 2025 +0000
+Date:   Fri Aug 29 12:40:54 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1022,9 +1027,9 @@ Date:   Tue Jul 8 07:07:37 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit fabeb942467193f735658f62429c161a5174a25b
+commit 1004c645e271da296d03da70101910f5909265fb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 4 21:46:36 2025 +0000
+Date:   Fri Aug 29 07:08:37 2025 +0000
 
     [BOT] post-merge updates
 
