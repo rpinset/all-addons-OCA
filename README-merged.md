@@ -46,7 +46,9 @@ addon | version | maintainers | summary
 [purchase_analytic_tag](purchase_analytic_tag/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Purchase Analytic Tag
 [purchase_request_analytic](purchase_request_analytic/) | 17.0.1.0.0 |  | Purchase Request Analytic
 [purchase_stock_analytic](purchase_stock_analytic/) | 17.0.1.0.0 |  | Copies the analytic distribution of the purchase order itemto the stock move
+[sale_analytic_tag](sale_analytic_tag/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Analytic Tag
 [stock_analytic](stock_analytic/) | 17.0.1.2.1 |  | Adds analytic distribution in stock move
+[stock_analytic_rule](stock_analytic_rule/) | 17.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Adds distribution rules for stock moves to automatically create analytic lines
 [stock_landed_costs_analytic](stock_landed_costs_analytic/) | 17.0.1.0.0 |  | This module adds an analytic account and analytic tags on landed costs lines so that on landed costs validation account moves get analytic account and analytic tags values from landed costs lines.
 [stock_picking_analytic](stock_picking_analytic/) | 17.0.1.0.0 |  | Allows to define the analytic account on picking level
 
@@ -1730,7 +1732,7 @@ addon | version | maintainers | summary
 [sale_attached_product](sale_attached_product/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Define products that will be added automatically when adding another in a sales order
 [sale_automatic_workflow](sale_automatic_workflow/) | 17.0.1.2.0 |  | Sale Automatic Workflow
 [sale_automatic_workflow_stock](sale_automatic_workflow_stock/) | 17.0.1.0.0 |  | Sale Automatic Workflow Stock
-[sale_blanket_order](sale_blanket_order/) | 17.0.1.1.3 |  | Blanket Orders
+[sale_blanket_order](sale_blanket_order/) | 17.0.2.0.0 |  | Blanket Orders
 [sale_cancel_reason](sale_cancel_reason/) | 17.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_delivery_split_date](sale_delivery_split_date/) | 17.0.1.0.0 |  | Sale Deliveries split by date
@@ -7663,6 +7665,7 @@ addon | version | maintainers | summary
 [base_unece](base_unece/) | 17.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for UNECE code lists
 [company_sanitary_registry](company_sanitary_registry/) | 17.0.1.0.0 |  | Sanitary Registry
 [l10n_eu_nace](l10n_eu_nace/) | 17.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/edlopen'><img src='https://github.com/edlopen.png' width='32' height='32' style='border-radius:50%;' alt='edlopen'/></a> | European NACE partner categories
+[l10n_eu_product_adr](l10n_eu_product_adr/) | 17.0.1.0.0 |  | Allows to set appropriate danger class and components
 [product_fao_fishing](product_fao_fishing/) | 17.0.1.0.0 |  | Set fishing areas and capture technology
 [uom_unece](uom_unece/) | 17.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | UNECE nomenclature for the units of measure
 

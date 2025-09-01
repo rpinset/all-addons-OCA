@@ -1,15 +1,15 @@
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 6f86eb1a6426d31c06bef80ad88545a0ca9870bc
-Author: Miquel Romera <mromera@pmsastro.es>
-Date:   Thu Aug 7 13:10:11 2025 +0000
+commit f97bf2d603a15ad3b0ef48daf5bfbb9cf6fd4cbc
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 1 13:01:33 2025 +0000
 
-    Translated using Weblate (Spanish)
+    Update translation files
     
-    Currently translated at 100.0% (14 of 14 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: account-analytic-17.0/account-analytic-17.0-account_analytic_organization
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-17-0/account-analytic-17-0-account_analytic_organization/es/
+    Translation: account-analytic-17.0/account-analytic-17.0-account_analytic_distribution_manual
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-17-0/account-analytic-17-0-account_analytic_distribution_manual/
 
 
 ## account-budgeting
@@ -73,11 +73,16 @@ Date:   Wed Jun 4 02:34:58 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 5a9621e711d52860ceec813a56a29ad99a5bd168
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 06:30:26 2025 +0000
+commit 196ffa7a62c91e8326993b2519fd89c42353b4ae
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 1 07:45:19 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (7 of 7 strings)
+    
+    Translation: account-invoicing-17.0/account-invoicing-17.0-account_invoice_auto_send_by_email
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-17-0/account-invoicing-17-0-account_invoice_auto_send_by_email/it/
 
 
 ## account-fiscal-rule
@@ -332,11 +337,16 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit b4220b8eaee31dac5a79503bec65d686aa5640f2
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 26 09:55:27 2025 +0000
+commit 11b5b472e898c46ce2dbc60a3752b0237cebea57
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 1 12:40:51 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_blanket_order
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_blanket_order/
 
 
 ## crm
@@ -1120,16 +1130,16 @@ Date:   Sun Feb 9 19:24:58 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 87c620c06564aa99dffb5f0c0213c031bd430af0
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Aug 29 09:36:05 2025 +0000
+commit c60eb95eae86f0912267159506ee8f3e6ab997e5
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 1 07:42:19 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (173 of 173 strings)
     
     Translation: manufacture-17.0/manufacture-17.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-17-0/manufacture-17-0-mrp_multi_level/
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-17-0/manufacture-17-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1424,25 +1434,25 @@ Date:   Wed Jun 4 03:42:57 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit 9cd305d1c7ff92bd006f3ac060c1dabb829bb33b
-Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
-Date:   Thu Aug 7 10:48:44 2025 +0000
+commit 1c2c8d926448f0373018b5477f37daf7ca40db6f
+Author: Metin GÜLSOY <metin.gulsoy@kitayazilim.com>
+Date:   Mon Sep 1 15:03:32 2025 +0000
 
     Translated using Weblate (Turkish)
     
-    Currently translated at 100.0% (11 of 11 strings)
+    Currently translated at 100.0% (3 of 3 strings)
     
-    Translation: server-ux-17.0/server-ux-17.0-base_revision
-    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-base_revision/tr/
+    Translation: server-ux-17.0/server-ux-17.0-date_range_account
+    Translate-URL: https://translation.odoo-community.org/projects/server-ux-17-0/server-ux-17-0-date_range_account/tr/
 
 
 ## community-data-files
 From [https://github.com/OCA/community-data-files.git](https://github.com/OCA/community-data-files.git)
-commit 705446960b29f8a056ef63ac90f0e893b9d88be0
+commit 19c20705b915e6e320679defd2e8d3b8e600dcd4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:42:00 2025 +0000
+Date:   Mon Sep 1 15:36:20 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## webhook
