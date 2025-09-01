@@ -286,6 +286,8 @@ requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec>=2024.5.0
+fsspec>=2025.3.0
+fsspec[s3]
 paramiko
 python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
@@ -293,6 +295,7 @@ python_slugify
 elasticsearch>=7.0.0,<=7.13.4
 pydantic
 requests
+typesense>=1.1.0
 typing-extensions
 unidecode
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)

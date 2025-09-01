@@ -856,6 +856,11 @@ msgid "Subtotal"
 msgstr "Sous-total"
 
 #. module: sale_blanket_order
+#: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__tag_ids
+msgid "Tags"
+msgstr ""
+
+#. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__price_tax
 msgid "Tax"
 msgstr "Taxe"

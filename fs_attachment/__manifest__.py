@@ -5,7 +5,7 @@
 {
     "name": "Base Attachment Object Store",
     "summary": "Store attachments on external object store",
-    "version": "16.0.1.3.5",
+    "version": "16.0.2.0.0",
     "author": "Camptocamp, ACSONE SA/NV, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "development_status": "Beta",
@@ -16,7 +16,7 @@
         "security/fs_file_gc.xml",
         "views/fs_storage.xml",
     ],
-    "external_dependencies": {"python": ["python_slugify"]},
+    "external_dependencies": {"python": ["python_slugify", "fsspec>=2025.3.0"]},
     "installable": True,
     "auto_install": False,
     "maintainers": ["lmignon"],

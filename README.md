@@ -371,16 +371,11 @@ Date:   Sun Feb 2 18:27:25 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 0450854858a09475148f436ec01c9327e74d534e
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Aug 27 09:12:10 2025 +0000
+commit 77c00e22e214d2c064b08ea57143f769e6b4a8de
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 1 13:52:46 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (3 of 3 strings)
-    
-    Translation: sale-workflow-16.0/sale-workflow-16.0-sale_order_amount_to_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-16-0/sale-workflow-16-0-sale_order_amount_to_invoice/it/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -868,23 +863,25 @@ Date:   Sun Feb 2 19:24:42 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 34f9b5911f40a80ee132654d5ce1d032f26bad2a
-Merge: 2d255e87c a299c0487
+commit 637f91fd4d70eb27b21f8ff5d6bd7863015d9d50
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 14:30:26 2025 +0000
+Date:   Mon Sep 1 11:19:57 2025 +0000
 
-    Merge PR #4894 into 16.0
-    
-    Signed-off-by TheMule71
+    [BOT] post-merge updates
 
 
 ## l10n-japan
 From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
-commit 3f3c502a1a2fe6040aa279d02937c292e463514f
+commit 3c2b0c46501405ed407013276dea01b4a171a6aa
 Author: Ryoko Tsuda <ryoko@quartile.co>
-Date:   Thu Aug 21 02:02:28 2025 +0000
+Date:   Sat Aug 30 11:43:51 2025 +0000
 
-    Added translation using Weblate (Japanese)
+    Translated using Weblate (Japanese)
+    
+    Currently translated at 100.0% (12 of 12 strings)
+    
+    Translation: l10n-japan-16.0/l10n-japan-16.0-account_tax_rounding_method
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-japan-16-0/l10n-japan-16-0-account_tax_rounding_method/ja/
 
 
 ## l10n-luxemburg
@@ -1097,16 +1094,16 @@ Date:   Mon Aug 4 08:44:41 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit d857bd89e2dae760d71f571da79b2bce04d35bf5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 27 12:04:11 2025 +0000
+commit 5e48123b6343cc2ca551e9289119a71cc38a1ddb
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 1 15:06:28 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (327 of 327 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
     Translation: stock-logistics-barcode-16.0/stock-logistics-barcode-16.0-stock_barcodes
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-16-0/stock-logistics-barcode-16-0-stock_barcodes/it/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-16-0/stock-logistics-barcode-16-0-stock_barcodes/
 
 
 ## stock-logistics-workflow
@@ -1189,16 +1186,16 @@ Date:   Fri Aug 29 18:18:38 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 242622598dbb1e7a3a28d9af5add6b641759dc48
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Aug 29 08:59:00 2025 +0000
+commit 12059a1697565110ffd56bfb173d26494f3c74fb
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 1 08:40:18 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (173 of 173 strings)
     
     Translation: manufacture-16.0/manufacture-16.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-16-0/manufacture-16-0-mrp_multi_level/
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-16-0/manufacture-16-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1235,11 +1232,16 @@ Date:   Mon Aug 11 07:00:09 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit ce8904bdee67584a71d900a722d164b17b8f3856
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 25 14:03:39 2025 +0000
+commit 42006ab2287255951292a19380c2dbb30d60a14a
+Author: Sayaka-qrtl <sayaka@quartile.co>
+Date:   Mon Sep 1 06:41:50 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Japanese)
+    
+    Currently translated at 95.4% (21 of 22 strings)
+    
+    Translation: purchase-workflow-16.0/purchase-workflow-16.0-purchase_cancel_reason
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-16-0/purchase-workflow-16-0-purchase_cancel_reason/ja/
 
 
 ## purchase-reporting
@@ -1385,18 +1387,18 @@ Date:   Wed Aug 27 12:42:44 2025 +0000
 
 ## storage
 From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
-commit 0c0022f9c48524e1983082bae1c1db23fb0dc925
+commit 1c20108085b5066fc55d76d1a59abfdb1293f9f4
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 19 08:58:59 2025 +0000
+Date:   Mon Sep 1 09:32:34 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## search-engine
 From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
-commit 79983c514a865a58492b9afb2429289d68ae9717
+commit 4c1444dc94babbc47c8da2a9d4315663a22d75fc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jun 17 14:42:33 2025 +0000
+Date:   Mon Sep 1 13:54:50 2025 +0000
 
     [BOT] post-merge updates
 
