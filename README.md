@@ -505,9 +505,9 @@ Date:   Wed May 8 14:05:43 2024 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 143d3863831ccc8c6bc406ea5ce1826522ec696c
+commit 57b731e6dde135f66130aea9b5e6486e6cd956da
 Author: Weblate <noreply@weblate.org>
-Date:   Thu Jun 12 15:08:13 2025 +0000
+Date:   Tue Sep 2 16:04:28 2025 +0000
 
     Update translation files
     
@@ -1046,16 +1046,16 @@ Date:   Tue Nov 19 21:15:12 2019 +0100
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit ad27269b1d043bb38603c46e41feee73db014e78
+commit e3fae1a0fbb47de142a0ab0b5d78495bd79996ad
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 17 14:36:06 2025 +0000
+Date:   Tue Sep 2 11:31:40 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (75 of 75 strings)
+    Currently translated at 100.0% (49 of 49 strings)
     
-    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_orderpoint_generator
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_orderpoint_generator/it/
+    Translation: stock-logistics-warehouse-12.0/stock-logistics-warehouse-12.0-stock_move_location
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-12-0/stock-logistics-warehouse-12-0-stock_move_location/it/
 
 
 ## stock-logistics-reporting
@@ -1106,16 +1106,16 @@ Date:   Fri Jun 7 10:49:03 2024 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 2871849d71b800ea73cbb8a28c19b853dd06b38b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:42:42 2025 +0000
+commit 99e04023b178456a4421e214673137841bf73b6f
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Wed Sep 3 16:18:32 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Portuguese (Brazil))
     
     Currently translated at 100.0% (127 of 127 strings)
     
     Translation: manufacture-12.0/manufacture-12.0-mrp_production_request
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/it/
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-12-0/manufacture-12-0-mrp_production_request/pt_BR/
 
 
 ## manufacture-reporting
