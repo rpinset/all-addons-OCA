@@ -4,14 +4,14 @@
 	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
 	xmlns="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0"
 	targetNamespace="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0"
-	version="1.0.1">
+	version="1.0.2">
 
   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd" />
   
   <xs:element name="FatturaElettronicaSemplificata" type="FatturaElettronicaType">
     <xs:annotation>
       <xs:documentation>
-				XML schema fatture destinate a privati in forma semplificata 1.0.1
+				XML schema fatture destinate a privati in forma semplificata 1.0.2
 			</xs:documentation>
     </xs:annotation>
   </xs:element>
@@ -264,14 +264,19 @@
           <xs:documentation>IVA per cassa (art. 32-bis, D.L. 83/2012)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="RF18">
+        <xs:annotation>
+          <xs:documentation>Altro</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
 	  <xs:enumeration value="RF19">
         <xs:annotation>
           <xs:documentation>Regime forfettario</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="RF18">
+	  <xs:enumeration value="RF20">
         <xs:annotation>
-          <xs:documentation>Altro</xs:documentation>
+          <xs:documentation>Regime transfrontaliero di Franchigia IVA (Direttiva UE 2020/285)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

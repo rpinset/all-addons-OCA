@@ -50,14 +50,14 @@ _fpa_schema_file = get_module_resource(
     "l10n_it_account",
     "tools",
     "xsd",
-    "Schema_del_file_xml_FatturaPA_v1.2.2.xsd",
+    "Schema_del_file_xml_FatturaPA_v1.2.3.xsd",
 )
 
 _fpa_simple_schema_file = get_module_resource(
     "l10n_it_account",
     "tools",
     "xsd",
-    "Schema_VFSM10.xsd",
+    "Schema_VFSM10v_1.0.2.xsd",
 )
 
 fpa_schema = xmlschema.XMLSchema(

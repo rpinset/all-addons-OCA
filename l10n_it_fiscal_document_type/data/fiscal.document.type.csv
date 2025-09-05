@@ -24,3 +24,4 @@ id,code,name,out_invoice,in_invoice,out_refund,in_refund,priority,refund_fiscal_
 23,TD26,"cessione di beni ammortizzabili e per passaggi interni (ex art.36 DPR 633/72)",True,False,False,False,3,TD04
 24,TD27,fattura per autoconsumo o per cessioni gratuite senza rivalsa,True,False,False,False,3,TD04
 25,TD28,Acquisti da San Marino con IVA (fattura cartacea),False,True,False,False,3,TD04
+26,TD29,Comunicazione per omessa o irregolare fatturazione da parte del cedente/prestatore italiano (art. 6 comma 8 D.Lgs. 471/97),True,False,False,False,3,TD04

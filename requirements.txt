@@ -382,7 +382,7 @@ extendable-pydantic>=1.2.0
 extendable>=0.0.4
 fastapi>=0.110.0
 graphene
-graphql_server
+graphql-server<3.0.0b8
 itsdangerous
 jsondiff
 marshmallow
