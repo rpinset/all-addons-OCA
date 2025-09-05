@@ -117,11 +117,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 26b2ab80b8d205eef9fbf06d0e3d284c40e2ca62
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 11 06:16:59 2025 +0000
+commit 20871b2ce3dbcccad689f211a2db08fd976594ee
+Author: Tamer Sezgin <tamer.sezgin@gmail.com>
+Date:   Wed Sep 3 07:28:06 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 70.0% (14 of 20 strings)
+    
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_merge
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_merge/tr/
 
 
 ## account-fiscal-rule
@@ -1000,9 +1005,9 @@ Date:   Sun Feb 2 19:41:20 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e201c9b9641670103faf660ee8b825d7795e9af7
+commit 42ab894548fc3e99231fd83cc1c7404c4c6b5c8e
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 1 06:42:54 2025 +0000
+Date:   Wed Sep 3 13:11:27 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1182,16 +1187,16 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 71c1e4a9160a89c2c23fc54e8e52c118531fe1ee
+commit 0e5f1f590d847a8b8ec61285b9121aad7305e0dc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 19 13:00:30 2025 +0000
+Date:   Wed Sep 3 06:46:36 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (318 of 318 strings)
+    Currently translated at 100.0% (30 of 30 strings)
     
-    Translation: wms-14.0/wms-14.0-shopfloor
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-shopfloor/it/
+    Translation: wms-14.0/wms-14.0-sale_stock_available_to_promise_release
+    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-sale_stock_available_to_promise_release/it/
 
 
 ## manufacture
@@ -1247,11 +1252,16 @@ Date:   Wed Jul 23 14:43:05 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit c1f45c3ab251f20602ae11724210739a2283301d
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Aug 25 14:54:08 2025 +0000
+commit dec5d16e87f0c2aae75df5ea4ccbacceb280e1a7
+Author: Douglas Custódio <douglascstd@yahoo.com>
+Date:   Wed Sep 3 16:06:58 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Portuguese (Brazil))
+    
+    Currently translated at 50.0% (13 of 26 strings)
+    
+    Translation: purchase-workflow-14.0/purchase-workflow-14.0-purchase_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-14-0/purchase-workflow-14-0-purchase_order_type/pt_BR/
 
 
 ## purchase-reporting
@@ -1605,16 +1615,16 @@ Date:   Sat Jun 21 10:45:27 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit bfdcc768cd0027c71b32c2e4fb17d249c1a5c647
+commit 12774e92cb206af73ab60cc109398ac38695e459
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 6 08:55:37 2025 +0000
+Date:   Tue Sep 2 14:56:39 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (262 of 262 strings)
+    Currently translated at 100.0% (156 of 156 strings)
     
-    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel_housekeeping
-    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel_housekeeping/it/
+    Translation: vertical-hotel-14.0/vertical-hotel-14.0-hotel_reservation
+    Translate-URL: https://translation.odoo-community.org/projects/vertical-hotel-14-0/vertical-hotel-14-0-hotel_reservation/it/
 
 
 ## vertical-isp
@@ -1710,16 +1720,15 @@ Date:   Wed Apr 2 16:29:05 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 1478b9750346e15313ec5abc9dc22c4281708d2b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 14:34:10 2025 +0000
+commit 01d68c300e00f7525239085df6752aa40631ad90
+Author: hugues de keyzer <odoo@hugues.info>
+Date:   Wed Mar 8 11:50:18 2023 +0100
 
-    Translated using Weblate (Italian)
+    [FIX] web_widget_text_markdown: fix white-space
     
-    Currently translated at 4.7% (1 of 21 strings)
-    
-    Translation: web-14.0/web-14.0-web_create_write_confirm
-    Translate-URL: https://translation.odoo-community.org/projects/web-14-0/web-14-0-web_create_write_confirm/it/
+    fix white-space display in markdown widget: add css rule to override the
+    default white-space declaration for text fields (pre-wrap) to ensure the
+    html generated from markdown is correctly displayed.
 
 
 ## website
