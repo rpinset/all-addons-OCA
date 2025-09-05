@@ -24,16 +24,11 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 12244d0907742360edc36ddf62baef3f05c0100b
-Author: Tamer Sezgin <tamer.sezgin@gmail.com>
-Date:   Fri Aug 29 13:34:53 2025 +0000
+commit 1c2a5608d8ffa3042cbe0ef3cc8caba8228728b0
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 5 11:45:09 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 100.0% (4 of 4 strings)
-    
-    Translation: account-analytic-15.0/account-analytic-15.0-mrp_analytic
-    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-15-0/account-analytic-15-0-mrp_analytic/tr/
+    [BOT] post-merge updates
 
 
 ## account-budgeting
@@ -65,16 +60,11 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit e524ba502ec09df96c5d3d2eea5028cc73cfca93
-Author: Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-Date:   Wed Aug 6 11:28:25 2025 +0000
+commit 4fb6673def7af0721b966342ae84bcdcfea5f26e
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 4 11:59:00 2025 +0000
 
-    Translated using Weblate (Danish)
-    
-    Currently translated at 78.2% (18 of 23 strings)
-    
-    Translation: account-financial-tools-15.0/account-financial-tools-15.0-account_usability
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-tools-15-0/account-financial-tools-15-0-account_usability/da/
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -349,9 +339,9 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 5056120b654291aef8dd8e2772fff19f0331f5a7
+commit c390d834784fea7fddb04166f9c4dae86bcbd073
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Aug 7 07:12:45 2025 +0000
+Date:   Tue Sep 2 14:22:23 2025 +0000
 
     [BOT] post-merge updates
 
@@ -476,16 +466,11 @@ Date:   Fri Aug 29 06:00:24 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 4b40569fa0485cd9cd11574aa4debe229a3767ba
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Aug 26 13:07:30 2025 +0000
+commit 657a28a57681c927c45c65c50bbb3953efd10260
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 4 12:06:34 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: field-service-15.0/field-service-15.0-fieldservice_portal
-    Translate-URL: https://translation.odoo-community.org/projects/field-service-15-0/field-service-15-0-fieldservice_portal/
+    [BOT] post-merge updates
 
 
 ## margin-analysis
@@ -923,9 +908,9 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e46e7d58525011ad335069a65c37dd0bc6dd3b1a
+commit cce558a907e35d7c9c7e296937820a71cb1fccfb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 14:24:13 2025 +0000
+Date:   Wed Sep 3 13:48:36 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1101,16 +1086,16 @@ Date:   Sat Jun 21 10:44:51 2025 +0000
 
 ## ddmrp
 From [https://github.com/OCA/ddmrp.git](https://github.com/OCA/ddmrp.git)
-commit 36ba0acf1c718409ea50475c06891d265541ae1f
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 06:48:41 2025 +0000
+commit 3705b689ad73ced27c1c54e22acd595e37c5e88d
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Sep 5 06:48:33 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (9 of 9 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp_exclude_moves_adu_calc
-    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp_exclude_moves_adu_calc/it/
+    Translation: ddmrp-15.0/ddmrp-15.0-ddmrp
+    Translate-URL: https://translation.odoo-community.org/projects/ddmrp-15-0/ddmrp-15-0-ddmrp/
 
 
 ## wms
@@ -1124,11 +1109,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit 9595949a803f8c502ee52ea5fbb1f5e2ce71d66c
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 6 11:11:18 2025 +0000
+commit cfcd214d69efcf5d6a7c5335f1bfd30f167bd074
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Sep 3 06:53:50 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 99.4% (170 of 171 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-mrp_multi_level
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_multi_level/it/
 
 
 ## manufacture-reporting
@@ -1328,11 +1318,16 @@ Date:   Sun Feb 9 18:33:55 2025 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 8713c520dc26b5984d83c6947c00aaec0bb6a576
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:34:07 2025 +0000
+commit 769f30c1554861a0c1964023d7e43ba06b250ef6
+Author: Weblate <noreply@weblate.org>
+Date:   Wed Sep 3 04:50:10 2025 +0000
 
-    [UPD] addons table in README.md
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: reporting-engine-15.0/reporting-engine-15.0-base_comment_template
+    Translate-URL: https://translation.odoo-community.org/projects/reporting-engine-15-0/reporting-engine-15-0-base_comment_template/
 
 
 ## report-print-send
@@ -1360,14 +1355,11 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 4046ad94529a440a8adf36e9f753493b8dbbe214
-Merge: 21ca7fd81 7dae44c69
+commit f24ebdfa700b6febbe744428afe19831fa909a48
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 19 08:58:42 2025 +0000
+Date:   Fri Sep 5 16:12:12 2025 +0000
 
-    Merge PR #3322 into 15.0
-    
-    Signed-off-by dreispt
+    [BOT] post-merge updates
 
 
 ## server-auth
@@ -1490,9 +1482,9 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 054bd41951eac1f5521494326480a5d56ca10f58
+commit 3612c65351111e7f8150219c6f2480a0b5d6f400
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 6 08:56:47 2025 +0000
+Date:   Tue Sep 2 14:56:32 2025 +0000
 
     Translated using Weblate (Italian)
     

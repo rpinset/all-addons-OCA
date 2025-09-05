@@ -36,10 +36,10 @@ addon | version | maintainers | summary
 [pos_analytic_by_config](pos_analytic_by_config/) | 15.0.1.0.1 |  | Use analytic account defined on POS configuration for POS orders
 [procurement_mto_analytic](procurement_mto_analytic/) | 15.0.1.0.0 |  | This module sets analytic account in purchase order line from sale order analytic account
 [product_analytic](product_analytic/) | 15.0.1.0.1 |  | Add analytic account on products and product categories
-[purchase_analytic](purchase_analytic/) | 15.0.3.0.0 |  | Purchase Analytic
+[purchase_analytic](purchase_analytic/) | 15.0.3.1.0 |  | Purchase Analytic
 [purchase_request_analytic](purchase_request_analytic/) | 15.0.1.0.1 |  | Purchase Request Analytic
 [purchase_stock_analytic](purchase_stock_analytic/) | 15.0.1.0.0 |  | Copies the analytic account of the purchase order item to the stock move
-[stock_analytic](stock_analytic/) | 15.0.1.1.0 |  | Adds an analytic account and analytic tags in stock move
+[stock_analytic](stock_analytic/) | 15.0.1.2.0 |  | Adds an analytic account and analytic tags in stock move
 
 [//]: # (end addons)
 
@@ -254,6 +254,7 @@ addon | version | maintainers | summary
 [account_move_line_tax_editable](account_move_line_tax_editable/) | 15.0.1.0.2 |  | Allows to edit taxes on non-posted account move lines
 [account_move_name_sequence](account_move_name_sequence/) | 15.0.1.2.6 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Generate journal entry number from sequence
 [account_move_print](account_move_print/) | 15.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds the option to print Journal Entries
+[account_move_reversal_choose_method](account_move_reversal_choose_method/) | 15.0.1.0.0 |  | Let's choose the Credit Method when adding a credit note to a journal entry.
 [account_move_template](account_move_template/) | 15.0.1.0.1 |  | Templates for recurring Journal Entries
 [account_move_total_by_account_internal_group](account_move_total_by_account_internal_group/) | 15.0.1.0.0 |  | Adds Totals by Account Internal Group in Journal Entries
 [account_netting](account_netting/) | 15.0.1.0.0 |  | Compensate AR/AP accounts from the same partner
@@ -1830,6 +1831,7 @@ addon | version | maintainers | summary
 [sale_automatic_workflow_job](sale_automatic_workflow_job/) | 15.0.1.0.0 |  | Execute sale automatic workflows in queue jobs
 [sale_automatic_workflow_payment_mode](sale_automatic_workflow_payment_mode/) | 15.0.1.0.0 |  | Sale Automatic Workflow - Payment Mode
 [sale_blanket_order](sale_blanket_order/) | 15.0.1.2.1 |  | Blanket Orders
+[sale_cancel_confirmed_invoice](sale_cancel_confirmed_invoice/) | 15.0.1.0.0 |  | Sale Cancel Confirmed Invoice
 [sale_cancel_reason](sale_cancel_reason/) | 15.0.1.0.0 |  | Sale Cancel Reason
 [sale_commercial_partner](sale_commercial_partner/) | 15.0.1.0.2 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add stored related field 'Commercial Entity' on sale orders
 [sale_credit_point](sale_credit_point/) | 15.0.1.1.0 |  | Sale Credit Points
@@ -2816,9 +2818,11 @@ addon | version | maintainers | summary
 [fieldservice_route](fieldservice_route/) | 15.0.1.4.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Organize the routes of each day.
 [fieldservice_sale](fieldservice_sale/) | 15.0.2.4.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell field services.
 [fieldservice_sale_note](fieldservice_sale_note/) | 15.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Automatically copies the Internal Note from the Sale Order to the Resolution field in the Field Service Order
+[fieldservice_sale_order_create_wizard](fieldservice_sale_order_create_wizard/) | 15.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Create Sale Order from Field Service Kanban View
 [fieldservice_sale_recurring](fieldservice_sale_recurring/) | 15.0.3.0.1 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell recurring field services.
 [fieldservice_sale_sign](fieldservice_sale_sign/) | 15.0.1.0.0 | <a href='https://github.com/BernatObrador'><img src='https://github.com/BernatObrador.png' width='32' height='32' style='border-radius:50%;' alt='BernatObrador'/></a> | Sign Field Service Sales Orders
 [fieldservice_sale_stock](fieldservice_sale_stock/) | 15.0.1.1.0 | <a href='https://github.com/wolfhall'><img src='https://github.com/wolfhall.png' width='32' height='32' style='border-radius:50%;' alt='wolfhall'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Sell stockable items linked to field service orders.
+[fieldservice_sale_stock_product_tags](fieldservice_sale_stock_product_tags/) | 15.0.1.0.0 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Automatically assigns FSM tags to FSM orders based on product template tags.
 [fieldservice_sale_stock_route](fieldservice_sale_stock_route/) | 15.0.1.0.5 | <a href='https://github.com/ppyczko'><img src='https://github.com/ppyczko.png' width='32' height='32' style='border-radius:50%;' alt='ppyczko'/></a> | Link between Field Service Sale Stock and Route
 [fieldservice_size](fieldservice_size/) | 15.0.1.0.0 | <a href='https://github.com/brian10048'><img src='https://github.com/brian10048.png' width='32' height='32' style='border-radius:50%;' alt='brian10048'/></a> | Manage Sizes for Field Service Locations and Orders
 [fieldservice_skill](fieldservice_skill/) | 15.0.1.0.0 | <a href='https://github.com/osi-scampbell'><img src='https://github.com/osi-scampbell.png' width='32' height='32' style='border-radius:50%;' alt='osi-scampbell'/></a> <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your Field Service workers skills
@@ -5128,7 +5132,7 @@ addon | version | maintainers | summary
 [account_promissory_note_caixabank](account_promissory_note_caixabank/) | 15.0.1.0.0 |  | Impresión de pagaré CaixaBank A4
 [account_promissory_note_cajamar](account_promissory_note_cajamar/) | 15.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Impresión de pagaré de Cajamar en A4
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 15.0.1.0.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.2 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 15.0.1.2.3 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur](delivery_seur/) | 15.0.1.0.1 |  | Integrate SEUR webservice
 [delivery_seur_atlas](delivery_seur_atlas/) | 15.0.1.0.3 |  | Integrate SEUR Atlas API
 [l10n_es_account_asset](l10n_es_account_asset/) | 15.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
@@ -6160,7 +6164,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ddmrp](ddmrp/) | 15.0.1.16.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
+[ddmrp](ddmrp/) | 15.0.1.17.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Demand Driven Material Requirements Planning
 [ddmrp_adjustment](ddmrp_adjustment/) | 15.0.1.5.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to apply factor adjustments to buffers.
 [ddmrp_chatter](ddmrp_chatter/) | 15.0.1.0.1 |  | Adds chatter and activities to stock buffers.
 [ddmrp_coverage_days](ddmrp_coverage_days/) | 15.0.1.2.0 |  | Implements Coverage Days.
@@ -7560,7 +7564,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_comment_template](base_comment_template/) | 15.0.3.0.3 |  | Add conditional mako template to any reporton models that inherits comment.template.
+[base_comment_template](base_comment_template/) | 15.0.3.0.4 |  | Add conditional mako template to any reporton models that inherits comment.template.
 [bi_sql_editor](bi_sql_editor/) | 15.0.1.1.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [bi_view_editor](bi_view_editor/) | 15.0.1.1.0 |  | Graphical BI views builder for Odoo
 [board_eval_context](board_eval_context/) | 15.0.1.0.0 | <a href='https://github.com/gurneyalex'><img src='https://github.com/gurneyalex.png' width='32' height='32' style='border-radius:50%;' alt='gurneyalex'/></a> | Add some keys to board.board eval context
@@ -7761,7 +7765,7 @@ addon | version | maintainers | summary
 [sentry](sentry/) | 15.0.3.0.2 | <a href='https://github.com/barsi'><img src='https://github.com/barsi.png' width='32' height='32' style='border-radius:50%;' alt='barsi'/></a> <a href='https://github.com/naglis'><img src='https://github.com/naglis.png' width='32' height='32' style='border-radius:50%;' alt='naglis'/></a> <a href='https://github.com/versada'><img src='https://github.com/versada.png' width='32' height='32' style='border-radius:50%;' alt='versada'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/fernandahf'><img src='https://github.com/fernandahf.png' width='32' height='32' style='border-radius:50%;' alt='fernandahf'/></a> | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 15.0.1.0.0 |  | Calculate a sequence number from a Python expression
 [session_db](session_db/) | 15.0.1.0.2 | <a href='https://github.com/sbidoul'><img src='https://github.com/sbidoul.png' width='32' height='32' style='border-radius:50%;' alt='sbidoul'/></a> | Store sessions in DB
-[tracking_manager](tracking_manager/) | 15.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
+[tracking_manager](tracking_manager/) | 15.0.1.0.1 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 15.0.3.0.2 | <a href='https://github.com/StefanRijnhart'><img src='https://github.com/StefanRijnhart.png' width='32' height='32' style='border-radius:50%;' alt='StefanRijnhart'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Performs a difference analysis between modules installed on two different Odoo instances
 
 [//]: # (end addons)
