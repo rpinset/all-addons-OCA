@@ -24,11 +24,16 @@ The [merged requirements.txt](requirements-merged.txt) contains the concatenatio
 
 ## account-analytic
 From [https://github.com/OCA/account-analytic.git](https://github.com/OCA/account-analytic.git)
-commit 588bd35725f3e51b320f0f1339c15ac329752496
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:30:29 2025 +0000
+commit 593cde3ac925728d526bc921f337a09cb5daac9f
+Author: Isabelle RICHARD <isabellerichard89@gmail.com>
+Date:   Fri Sep 5 10:09:54 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (French)
+    
+    Currently translated at 100.0% (5 of 5 strings)
+    
+    Translation: account-analytic-13.0/account-analytic-13.0-product_analytic
+    Translate-URL: https://translation.odoo-community.org/projects/account-analytic-13-0/account-analytic-13-0-product_analytic/fr/
 
 
 ## account-budgeting
@@ -399,11 +404,14 @@ Date:   Sun Nov 1 23:32:07 2020 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c29e2e89fcebc7249e283b82292fab132660de47
+commit aaeb3060f1512e41b138637dfdeac3dcefed5290
+Merge: c29e2e89f c9825eb3f
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:37:53 2025 +0000
+Date:   Tue Sep 2 12:39:07 2025 +0000
 
-    [UPD] addons table in README.md
+    Merge PR #3882 into 13.0
+    
+    Signed-off-by rousseldenis
 
 
 ## crm
@@ -465,11 +473,16 @@ Date:   Wed Jun 4 02:41:16 2025 +0000
 
 ## event
 From [https://github.com/OCA/event.git](https://github.com/OCA/event.git)
-commit 1ef84c87094d7fec1e8ed58973ec60e7ef1b8ecc
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:52:22 2025 +0000
+commit 4cdc438bef1145c980e6eefe0bf3408d3c5d5640
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Sep 3 06:58:45 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (103 of 103 strings)
+    
+    Translation: event-13.0/event-13.0-event_session
+    Translate-URL: https://translation.odoo-community.org/projects/event-13-0/event-13-0-event_session/it/
 
 
 ## survey
@@ -1210,9 +1223,9 @@ Date:   Tue Jul 22 06:46:44 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit bb35fbb8509b3a62b7bceb251e3f15a745d8f5c6
+commit e5c9da36f004363dd8a6e4f0a5a9575e2828ec18
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 22 09:24:59 2025 +0000
+Date:   Wed Sep 3 06:46:34 2025 +0000
 
     Translated using Weblate (Italian)
     
