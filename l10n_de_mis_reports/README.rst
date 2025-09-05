@@ -20,7 +20,7 @@ github repository.
 Configuration
 =============
 
-To configure this module, you need to go to 
+To configure this module, you need to go to
 Accounting > Reporting > MIS Reports and create report instance
 according to the desired time periods and using one of the following
 templates provided by this module:
@@ -35,7 +35,7 @@ German chart of account.
 Usage
 =====
 
-To use this module, you need to go to 
+To use this module, you need to go to
 Accounting > Reporting > MIS Reports and use the buttons
 available on the previously configured reports such as preview,
 export, add to dashboard.
@@ -63,6 +63,7 @@ Contributors
 * Thorsten Vocks <thorsten.vocks@openbig.org>
 * Stéphane Bidoul at ACSONE <stephane.bidoul@acsone.eu>
 * Virgine Dewulf <virginie@coopiteasy.be>
+* Günter Selbert <guenter.selbert@samsa-it.de>
 
 Maintainer
 ----------

@@ -310,7 +310,7 @@ addon | version | maintainers | summary
 [account_move_line_report_xls](account_move_line_report_xls/) | 17.0.1.0.0 |  | Journal Items Excel export
 [account_purchase_stock_report_non_billed](account_purchase_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Purchase Stock Report Non Billed
 [account_sale_stock_report_non_billed](account_sale_stock_report_non_billed/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Account Sale Stock Report Non Billed
-[account_tax_balance](account_tax_balance/) | 17.0.1.0.0 |  | Compute tax balances based on date range
+[account_tax_balance](account_tax_balance/) | 17.0.1.0.1 |  | Compute tax balances based on date range
 [mis_builder_cash_flow](mis_builder_cash_flow/) | 17.0.1.0.0 | <a href='https://github.com/jjscarafia'><img src='https://github.com/jjscarafia.png' width='32' height='32' style='border-radius:50%;' alt='jjscarafia'/></a> | MIS Builder Cash Flow
 [mis_template_financial_report](mis_template_financial_report/) | 17.0.1.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
 [partner_statement](partner_statement/) | 17.0.1.3.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
@@ -794,7 +794,7 @@ addon | version | maintainers | summary
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 17.0.1.0.0 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 17.0.1.0.0 | <a href='https://github.com/Daniel-CA'><img src='https://github.com/Daniel-CA.png' width='32' height='32' style='border-radius:50%;' alt='Daniel-CA'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/omar7r'><img src='https://github.com/omar7r.png' width='32' height='32' style='border-radius:50%;' alt='omar7r'/></a> <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Risk insurance partner information
-[sale_financial_risk](sale_financial_risk/) | 17.0.1.0.1 |  | Manage partner risk in sales orders
+[sale_financial_risk](sale_financial_risk/) | 17.0.1.0.2 |  | Manage partner risk in sales orders
 [sale_financial_risk_info](sale_financial_risk_info/) | 17.0.1.0.0 |  | Adds risk consumption info in sales orders.
 
 [//]: # (end addons)
@@ -2212,7 +2212,7 @@ addon | version | maintainers | summary
 [event_registration_cancel_reason](event_registration_cancel_reason/) | 17.0.1.0.0 |  | Reasons for event registrations cancellations
 [event_registration_partner_unique](event_registration_partner_unique/) | 17.0.1.0.0 |  | Enforces 1 registration per partner and event
 [event_sale_free_no_invoiceable](event_sale_free_no_invoiceable/) | 17.0.1.0.0 |  | Free tickets no invoiceable
-[event_sale_reservation](event_sale_reservation/) | 17.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow selling event registrations before the event exists
+[event_sale_reservation](event_sale_reservation/) | 17.0.1.0.2 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow selling event registrations before the event exists
 [event_stage_cancelled](event_stage_cancelled/) | 17.0.1.0.0 |  | Event cancellation workflows
 [event_track_location_overlap](event_track_location_overlap/) | 17.0.1.0.0 |  | Restrict event track location overlapping
 [partner_event](partner_event/) | 17.0.1.1.0 |  | Link partner to events
@@ -2275,7 +2275,7 @@ addon | version | maintainers | summary
 [survey_certification_py3o](survey_certification_py3o/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Survey Certification Py3o
 [survey_certification_sending](survey_certification_sending/) | 17.0.1.1.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Controls the automatic sending of certifications in surveys.
 [survey_contact_generation](survey_contact_generation/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Generate new contacts from surveys
-[survey_crm_generation](survey_crm_generation/) | 17.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate CRM leads/opportunities from surveys
+[survey_crm_generation](survey_crm_generation/) | 17.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Generate CRM leads/opportunities from surveys
 [survey_crm_sale_generation](survey_crm_sale_generation/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Link CRM leads to sale orders generated from surveys
 [survey_legal](survey_legal/) | 17.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Require legal terms before survey submit
 [survey_multi_company](survey_multi_company/) | 17.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Company security for surveys
@@ -3989,9 +3989,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [datev_export](datev_export/) | 17.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
-[datev_export_xml](datev_export_xml/) | 17.0.1.0.0 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
+[datev_export_xml](datev_export_xml/) | 17.0.1.0.1 |  | Export invoices and refunds as xml and pdf files zipped in DATEV format.
 [datev_import_csv_dtvf](datev_import_csv_dtvf/) | 17.0.1.0.1 |  | Import account moves generated by external software
-[l10n_de_mis_reports](l10n_de_mis_reports/) | 17.0.1.1.0 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03 + SKR04)
+[l10n_de_mis_reports](l10n_de_mis_reports/) | 17.0.1.1.2 |  | MIS Builder templates for the German P&L and Balance Sheets (SKR03 + SKR04)
 [l10n_din5008_move_name](l10n_din5008_move_name/) | 17.0.1.1.0 |  | Add Account move name on the name of the move
 
 [//]: # (end addons)
@@ -4865,7 +4865,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [delivery_dhl_parcel](delivery_dhl_parcel/) | 17.0.2.0.1 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for DHL Parcel using their API
-[delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.3 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
+[delivery_gls_asm](delivery_gls_asm/) | 17.0.1.0.4 | <a href='https://github.com/hildickethan'><img src='https://github.com/hildickethan.png' width='32' height='32' style='border-radius:50%;' alt='hildickethan'/></a> | Delivery Carrier implementation for GLS with ASMRed API
 [delivery_seur_atlas](delivery_seur_atlas/) | 17.0.1.0.0 |  | Integrate SEUR Atlas API
 [l10n_ca_es_cnae](l10n_ca_es_cnae/) | 17.0.1.1.0 |  | Genera la traducción al catalán de todos los códigos Nace
 [l10n_es_account_asset](l10n_es_account_asset/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Gestión de activos fijos para España
@@ -5917,7 +5917,7 @@ addon | version | maintainers | summary
 [mrp_attachment_mgmt](mrp_attachment_mgmt/) | 17.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp Attachment Mgmt
 [mrp_bom_attribute_match](mrp_bom_attribute_match/) | 17.0.1.0.1 |  | Dynamic BOM component based on product attribute
 [mrp_bom_component_menu](mrp_bom_component_menu/) | 17.0.1.0.0 |  | MRP BOM Component Menu
-[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 17.0.1.0.0 |  | Make it easy to navigate through BoM hierarchy.
+[mrp_bom_hierarchy](mrp_bom_hierarchy/) | 17.0.1.0.1 |  | Make it easy to navigate through BoM hierarchy.
 [mrp_bom_tracking](mrp_bom_tracking/) | 17.0.1.0.1 |  | Logs any change to a BoM in the chatter
 [mrp_component_operation](mrp_component_operation/) | 17.0.1.0.0 |  | Allows to operate the components from a MO
 [mrp_component_operation_scrap_reason](mrp_component_operation_scrap_reason/) | 17.0.1.0.0 |  | Allows to pass a reason to scrap with MRP component operation
@@ -5932,7 +5932,7 @@ addon | version | maintainers | summary
 [mrp_production_note](mrp_production_note/) | 17.0.1.0.0 |  | Notes in production orders
 [mrp_production_picking_type_from_route](mrp_production_picking_type_from_route/) | 17.0.1.0.0 |  | Updates the operation type creating MO based on the product
 [mrp_production_quant_manual_assign](mrp_production_quant_manual_assign/) | 17.0.1.0.1 |  | Production - Manual Quant Assignment
-[mrp_production_serial_matrix](mrp_production_serial_matrix/) | 17.0.1.1.0 |  | MRP Production Serial Matrix
+[mrp_production_serial_matrix](mrp_production_serial_matrix/) | 17.0.1.2.0 |  | MRP Production Serial Matrix
 [mrp_repair_order](mrp_repair_order/) | 17.0.1.0.0 | <a href='https://github.com/peluko00'><img src='https://github.com/peluko00.png' width='32' height='32' style='border-radius:50%;' alt='peluko00'/></a> | Create repair order from manufacturing order
 [mrp_sale_info](mrp_sale_info/) | 17.0.1.1.0 |  | Adds sale information to Manufacturing models
 [mrp_subcontracting_bom_dual_use](mrp_subcontracting_bom_dual_use/) | 17.0.1.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mrp subcontracting bom dual use
@@ -6360,7 +6360,7 @@ addon | version | maintainers | summary
 [product_state_stock_base](product_state_stock_base/) | 17.0.1.1.0 |  | This module add the use of Product State in Stock
 [product_status](product_status/) | 17.0.1.2.0 |  | Product Status Computed From Fields
 [product_supplierinfo_archive](product_supplierinfo_archive/) | 17.0.1.0.0 | <a href='https://github.com/GuillemCForgeFlow'><img src='https://github.com/GuillemCForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='GuillemCForgeFlow'/></a> <a href='https://github.com/AlvaroTForgeFlow'><img src='https://github.com/AlvaroTForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='AlvaroTForgeFlow'/></a> <a href='https://github.com/OriolVForgeFlow'><img src='https://github.com/OriolVForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='OriolVForgeFlow'/></a> | Add the active field to the product supplier info
-[product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 17.0.1.1.1 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to define prices for customers in the products
+[product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 17.0.1.1.2 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Allows to define prices for customers in the products
 [product_supplierinfo_revision](product_supplierinfo_revision/) | 17.0.1.0.0 |  | Product Supplierinfo Revision
 [product_uom_measure_type](product_uom_measure_type/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Product - UoM Measure Type
 [product_usability](product_usability/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds missing menu entries for Product module and adds extra groups to fine-tune access rights
@@ -7608,6 +7608,7 @@ addon | version | maintainers | summary
 [date_range](date_range/) | 17.0.1.2.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Manage all kind of date range
 [date_range_account](date_range_account/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add Date Range menu entry in Invoicing app
 [document_quick_access](document_quick_access/) | 17.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Document quick access
+[mail_message_destiny_link_template](mail_message_destiny_link_template/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Mail template to show destiny records in chatter.
 [mail_suggested_recipient_unchecked](mail_suggested_recipient_unchecked/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Mail suggested recipient unchecked
 [multi_step_wizard](multi_step_wizard/) | 17.0.1.0.0 |  | Multi-Steps Wizards
 [sequence_reset_period](sequence_reset_period/) | 17.0.1.0.0 |  | Auto-generate yearly/monthly/weekly/daily sequence period ranges

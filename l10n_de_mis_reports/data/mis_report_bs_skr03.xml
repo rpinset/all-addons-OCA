@@ -679,7 +679,7 @@
         <field name="description">5. Gewinn des Jahres</field>
         <field
             name="expression"
-        >bale[('user_type_id', '=', ref('account.data_unaffected_earnings').id)] + bale['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]-balu['|', ('user_type_id', '=', ref('account.data_account_type_revenue').id),('user_type_id', '=', ref('account.data_account_type_expenses').id)]</field>
+        >bale[('account_type', '=', 'equity_unaffected')] + bale['|', ('account_type', '=', 'income'), ( 'account_type', '=', 'expense')] -balu['|', ('account_type', '=', 'income'),( 'account_type', '=', 'expense')]</field>
         <field name="type">num</field>
         <field name="compare_method">pct</field>
         <field name="style_id" ref="style_l10n_de_level3" />

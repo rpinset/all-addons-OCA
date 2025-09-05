@@ -390,13 +390,13 @@ msgstr ""
 #: model:mis.report,name:l10n_de_mis_reports.mis_report_bs_skr03
 #, fuzzy
 msgid "Balance Sheet (SKR03)"
-msgstr "Bilanz Auswertung"
+msgstr "Bilanz Auswertung (SKR03)"
 
 #. module: l10n_de_mis_reports
 #: model:mis.report,name:l10n_de_mis_reports.mis_report_bs_skr04
 #, fuzzy
 msgid "Balance Sheet (SKR04)"
-msgstr "Bilanz Auswertung"
+msgstr "Bilanz Auswertung (SKR04)"
 
 #. module: l10n_de_mis_reports
 #: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_pl_skr03_total_aufwendungen
@@ -512,7 +512,7 @@ msgstr "Bilanz für SKR03 Kontenplan Deutschland (§ 266 HGB)"
 #: model:mis.report,description:l10n_de_mis_reports.mis_report_bs_skr04
 #, fuzzy
 msgid "German Balance Sheet for SKR04 (§ 266 HGB)"
-msgstr "Bilanz für SKR03 Kontenplan Deutschland (§ 266 HGB)"
+msgstr "Bilanz für SKR04 Kontenplan Deutschland (§ 266 HGB)"
 
 #. module: l10n_de_mis_reports
 #: model:mis.report,description:l10n_de_mis_reports.mis_report_pl_skr03
@@ -608,13 +608,13 @@ msgstr ""
 #: model:mis.report,name:l10n_de_mis_reports.mis_report_pl_skr03
 #, fuzzy
 msgid "P&L Sheet (SKR03)"
-msgstr "Gewinn- und Verlustrechnung"
+msgstr "Gewinn- und Verlustrechnung (SKR03)"
 
 #. module: l10n_de_mis_reports
 #: model:mis.report,name:l10n_de_mis_reports.mis_report_pl_skr04
 #, fuzzy
 msgid "P&L Sheet (SKR04)"
-msgstr "Gewinn- und Verlustrechnung"
+msgstr "Gewinn- und Verlustrechnung (SKR04)"
 
 #. module: l10n_de_mis_reports
 #: model:mis.report.kpi,description:l10n_de_mis_reports.mis_report_bs_skr03_aktivseite
