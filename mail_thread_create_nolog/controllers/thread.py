@@ -19,6 +19,12 @@ class ThreadController(mail_thread.ThreadController):
         result = super().mail_thread_messages(
             thread_model, thread_id, search_term, before, after, around, limit
         )
+        # Parameter after is only set when refreshing the mail thread view
+        #  to fetch new messages from other users. That means if it's there,
+        #  the ".. created" message was already generated on the fly and we
+        #  do not need to generate it again
+        if after is not None:
+            return result
 
         result["data"].setdefault("mail.message", [])
 

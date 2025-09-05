@@ -125,6 +125,7 @@ chardet
 # From [https://github.com/OCA/l10n-ireland.git](https://github.com/OCA/l10n-ireland.git)
 # From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
 # generated from manifests external_dependencies
+codicefiscale
 openupgradelib
 # From [https://github.com/OCA/l10n-japan.git](https://github.com/OCA/l10n-japan.git)
 # generated from manifests external_dependencies
