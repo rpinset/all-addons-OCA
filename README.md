@@ -69,16 +69,16 @@ Date:   Thu Sep 4 11:59:00 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 75456d929af7541f7e1414ed3d56d28cdefb4e73
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Jul 18 12:01:08 2025 +0000
+commit d7d8bc711d1ae0a112791449d957d7402fbcb97d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 8 08:02:04 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 75.0% (39 of 52 strings)
     
-    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-partner_statement
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-partner_statement/
+    Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_tax_balance
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_tax_balance/it/
 
 
 ## account-invoice-reporting
@@ -466,9 +466,9 @@ Date:   Fri Aug 29 06:00:24 2025 +0000
 
 ## field-service
 From [https://github.com/OCA/field-service.git](https://github.com/OCA/field-service.git)
-commit 657a28a57681c927c45c65c50bbb3953efd10260
+commit 3c512d3a71363a6073b01278198fa9fe565369ac
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 4 12:06:34 2025 +0000
+Date:   Tue Sep 9 06:50:19 2025 +0000
 
     [BOT] post-merge updates
 
@@ -511,16 +511,11 @@ Date:   Sun Feb 2 18:51:16 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit b296b894a71b8a94d5999b62fd729749b7af1792
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 30 09:19:12 2025 +0000
+commit 862687c39dc1fb3071815712f97415da48b2f708
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sat Sep 6 07:12:55 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (16 of 16 strings)
-    
-    Translation: timesheet-15.0/timesheet-15.0-hr_timesheet_sheet_attendance
-    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-hr_timesheet_sheet_attendance/it/
+    [BOT] post-merge updates
 
 
 ## hr
@@ -1012,11 +1007,16 @@ Date:   Tue Jul 8 07:07:37 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 1004c645e271da296d03da70101910f5909265fb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 07:08:37 2025 +0000
+commit 47c4428c8b3a59c435f9880af9c5ea51f572cc6b
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 9 10:05:39 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 80.7% (248 of 307 strings)
+    
+    Translation: stock-logistics-barcode-15.0/stock-logistics-barcode-15.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-15-0/stock-logistics-barcode-15-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
@@ -1072,16 +1072,16 @@ Date:   Tue Jul 8 09:38:10 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 859987855ab61fe68a175c2831cec95954069fcb
+commit 3eba73184d79cb8bb34b6b3c5869a98c99b8b2e5
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:44:51 2025 +0000
+Date:   Mon Sep 8 07:53:51 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.0% (325 of 353 strings)
+    Currently translated at 97.5% (40 of 41 strings)
     
-    Translation: rma-15.0/rma-15.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-rma/it/
+    Translation: rma-15.0/rma-15.0-product_warranty
+    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-product_warranty/it/
 
 
 ## ddmrp
@@ -1109,16 +1109,11 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit cfcd214d69efcf5d6a7c5335f1bfd30f167bd074
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 3 06:53:50 2025 +0000
+commit fcc48b448c95e74b2fd86ac36c5f4c8a8cb30057
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Sep 9 14:55:26 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 99.4% (170 of 171 strings)
-    
-    Translation: manufacture-15.0/manufacture-15.0-mrp_multi_level
-    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_multi_level/it/
+    [BOT] post-merge updates
 
 
 ## manufacture-reporting
@@ -1155,9 +1150,9 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 11026033d5791eaf2c0deaff6da42b8e9c4fd3f7
+commit 96326fa961e742ea650c1e916bd08d999138190c
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Jul 25 11:26:18 2025 +0000
+Date:   Tue Sep 9 08:54:59 2025 +0000
 
     [BOT] post-merge updates
 
