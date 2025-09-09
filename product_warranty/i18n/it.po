@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-20 14:37+0000\n"
+"PO-Revision-Date: 2025-09-08 10:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: product_warranty
 #: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__active_supplier
@@ -200,7 +200,7 @@ msgstr "Durata Garanzia"
 #: model:ir.model.fields,field_description:product_warranty.field_product_product__warranty_type
 #: model:ir.model.fields,field_description:product_warranty.field_product_template__warranty_type
 msgid "Warranty Type"
-msgstr "Tipo Garanzia"
+msgstr "Tipo garanzia"
 
 #. module: product_warranty
 #: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__warranty_duration

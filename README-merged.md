@@ -523,6 +523,7 @@ addon | version | maintainers | summary
 [purchase_invoicing_no_zero_line](purchase_invoicing_no_zero_line/) | 16.0.1.0.0 |  | Avoid creation of zero quantity invoice lines from purchase
 [purchase_stock_picking_return_invoicing](purchase_stock_picking_return_invoicing/) | 16.0.1.0.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | Add an option to refund returned pickings
 [sale_credit_note_reversal](sale_credit_note_reversal/) | 16.0.1.0.0 |  | Allow to revert a credit note
+[sale_invoicing_date_from_picking](sale_invoicing_date_from_picking/) | 16.0.1.0.0 |  | Applies the wizard date to invoices generated from pickings
 [sale_invoicing_date_selection](sale_invoicing_date_selection/) | 16.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Set date invoice when you create invoices
 [sale_line_refund_to_invoice_qty](sale_line_refund_to_invoice_qty/) | 16.0.1.0.0 |  | Allow deciding whether refunded quantity should be considered as quantity to reinvoice
 [sale_line_refund_to_invoice_qty_skip_anglo_saxon](sale_line_refund_to_invoice_qty_skip_anglo_saxon/) | 16.0.1.0.0 | <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Sale Line Refund To Invoice Qty skip anglo saxon.
@@ -532,7 +533,7 @@ addon | version | maintainers | summary
 [sale_stock_picking_invoicing](sale_stock_picking_invoicing/) | 16.0.1.0.1 | <a href='https://github.com/mbcosta'><img src='https://github.com/mbcosta.png' width='32' height='32' style='border-radius:50%;' alt='mbcosta'/></a> <a href='https://github.com/renatonlima'><img src='https://github.com/renatonlima.png' width='32' height='32' style='border-radius:50%;' alt='renatonlima'/></a> | Sales Stock Picking Invocing
 [sale_timesheet_invoice_description](sale_timesheet_invoice_description/) | 16.0.1.0.1 |  | Add timesheet details in invoice line
 [stock_account_move_reset_to_draft](stock_account_move_reset_to_draft/) | 16.0.1.0.3 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Stock account move reset to draft
-[stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.3 |  | Stock Picking Invoicing
+[stock_picking_invoicing](stock_picking_invoicing/) | 16.0.1.0.4 |  | Stock Picking Invoicing
 [stock_picking_return_refund_option](stock_picking_return_refund_option/) | 16.0.1.0.2 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Update the refund options in pickings
 
 [//]: # (end addons)
@@ -1114,7 +1115,7 @@ addon | version | maintainers | summary
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.10 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ofx](account_statement_import_online_ofx/) | 16.0.1.0.0 |  | Online bank statements for OFX
 [account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
-[account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.2 |  | Online Bank Statements: MyPonto.com
+[account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.3 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 16.0.1.0.0 |  | Import QIF Bank Statements
 [account_statement_import_sheet_file](account_statement_import_sheet_file/) | 16.0.1.2.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Import TXT/CSV or XLSX files as Bank Statements in Odoo
@@ -1923,7 +1924,7 @@ addon | version | maintainers | summary
 [sale_order_line_sequence](sale_order_line_sequence/) | 16.0.2.2.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_line_tag](sale_order_line_tag/) | 16.0.1.0.0 | <a href='https://github.com/smaciaosi'><img src='https://github.com/smaciaosi.png' width='32' height='32' style='border-radius:50%;' alt='smaciaosi'/></a> <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> <a href='https://github.com/ckolobow'><img src='https://github.com/ckolobow.png' width='32' height='32' style='border-radius:50%;' alt='ckolobow'/></a> | Add tags to classify sales order line reasons
 [sale_order_lot_generator](sale_order_lot_generator/) | 16.0.1.0.0 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/mourad-ehm'><img src='https://github.com/mourad-ehm.png' width='32' height='32' style='border-radius:50%;' alt='mourad-ehm'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Sale Order Lot Generator
-[sale_order_lot_selection](sale_order_lot_selection/) | 16.0.1.0.1 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Sale Order Lot Selection
+[sale_order_lot_selection](sale_order_lot_selection/) | 16.0.2.0.0 | <a href='https://github.com/bodedra'><img src='https://github.com/bodedra.png' width='32' height='32' style='border-radius:50%;' alt='bodedra'/></a> | Sale Order Lot Selection
 [sale_order_mass_action](sale_order_mass_action/) | 16.0.1.0.0 |  | Allows to easy mass operations on sale orders.
 [sale_order_minimum_amount](sale_order_minimum_amount/) | 16.0.1.0.0 |  | Restrict confirmation of sales orders below a configured minimum total amount
 [sale_order_note_template](sale_order_note_template/) | 16.0.1.0.0 |  | Add sale orders terms and conditions template that can be used to quickly fullfill sale order terms and conditions
@@ -3536,6 +3537,7 @@ addon | version | maintainers | summary
 [account_invoice_inter_company](account_invoice_inter_company/) | 16.0.1.2.1 |  | Intercompany invoice rules
 [account_move_change_company](account_move_change_company/) | 16.0.1.0.0 |  | Allow to change company of account moves
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 16.0.1.0.0 |  | This module adds a wizard to create companies easily
+[account_period_lock_date_multi_company](account_period_lock_date_multi_company/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Provides a company tree view to manage accounting lock dates
 [account_reconcile_model_multicompany_propagate](account_reconcile_model_multicompany_propagate/) | 16.0.1.2.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Propagate account reconcile model in companies with same chart template
 [base_multi_company](base_multi_company/) | 16.0.3.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 [calendar_event_multi_company](calendar_event_multi_company/) | 16.0.1.0.0 |  | This module add multi-company management to calendar events
@@ -4650,7 +4652,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_in](l10n_it_fatturapa_in/) | 16.0.1.5.5 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Ricezione fatture elettroniche
 [l10n_it_fatturapa_in_purchase](l10n_it_fatturapa_in_purchase/) | 16.0.1.0.1 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | Modulo ponte tra ricezione fatture elettroniche e acquisti
 [l10n_it_fatturapa_in_rc](l10n_it_fatturapa_in_rc/) | 16.0.1.0.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Modulo ponte tra e-fattura in acquisto e inversione contabile
-[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.5.1 |  | Emissione fatture elettroniche
+[l10n_it_fatturapa_out](l10n_it_fatturapa_out/) | 16.0.1.6.0 |  | Emissione fatture elettroniche
 [l10n_it_fatturapa_out_di](l10n_it_fatturapa_out_di/) | 16.0.1.0.2 |  | Dichiarazioni d'intento in fatturapa
 [l10n_it_fatturapa_out_oss](l10n_it_fatturapa_out_oss/) | 16.0.1.0.2 |  | OSS in fatturapa
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
@@ -5390,6 +5392,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.0 |  | Prorrata de IVA para la localización española
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.2 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 16.0.1.0.3 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5956,7 +5959,7 @@ addon | version | maintainers | summary
 [product_multi_barcode_constraint_per_company](product_multi_barcode_constraint_per_company/) | 16.0.1.0.1 |  | Glue module for product_multi_barcode andproduct_barcode_constraint_per_company
 [product_multi_barcode_stock_menu](product_multi_barcode_stock_menu/) | 16.0.1.0.0 |  | Multiple barcodes menu
 [product_packaging_multi_barcode](product_packaging_multi_barcode/) | 16.0.1.3.0 |  | Multiple barcodes on product packagings
-[stock_barcodes](stock_barcodes/) | 16.0.2.0.5 |  | It provides read barcode on stock operations.
+[stock_barcodes](stock_barcodes/) | 16.0.2.1.0 |  | It provides read barcode on stock operations.
 [stock_barcodes_picking_batch](stock_barcodes_picking_batch/) | 16.0.2.0.0 |  | It provides read barcodes on stock operations from batch pickings.
 [stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 16.0.1.0.2 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | It provides a wizard to select how many barcodes print.
 
@@ -6953,7 +6956,7 @@ addon | version | maintainers | summary
 [purchase_order_duplicate_check](purchase_order_duplicate_check/) | 16.0.1.0.0 |  | Prevents overordering in the Purchase app with a Confirmation Wizard, 'Pending Orders' field, and activity tracking for repeated orders.
 [purchase_order_general_discount](purchase_order_general_discount/) | 16.0.1.0.0 |  | General discount per purchase order
 [purchase_order_hide_receipt_status](purchase_order_hide_receipt_status/) | 16.0.1.0.1 |  | Purchase Order Hide Receipt Status
-[purchase_order_line_menu](purchase_order_line_menu/) | 16.0.2.1.1 |  | Adds Purchase Order Lines Menu
+[purchase_order_line_menu](purchase_order_line_menu/) | 16.0.2.1.2 |  | Adds Purchase Order Lines Menu
 [purchase_order_line_receipt_status](purchase_order_line_receipt_status/) | 16.0.1.0.0 |  | Manage customizations on purchase order line
 [purchase_order_line_sequence](purchase_order_line_sequence/) | 16.0.1.0.0 |  | Adds sequence to PO lines and propagates it toInvoice lines and Stock Moves
 [purchase_order_line_stock_available](purchase_order_line_stock_available/) | 16.0.1.0.0 |  | Purchase order line stock available
@@ -7139,7 +7142,7 @@ addon | version | maintainers | summary
 [product_manufacturer](product_manufacturer/) | 16.0.1.0.1 |  | Adds manufacturers and attributes on the product view.
 [product_multi_category](product_multi_category/) | 16.0.1.0.0 |  | Product - Many Categories
 [product_multi_image](product_multi_image/) | 16.0.1.0.0 |  | Add multiple images for a product, a.k.a. an image gallery.
-[product_net_weight](product_net_weight/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
+[product_net_weight](product_net_weight/) | 16.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
 [product_optional_product_quantity](product_optional_product_quantity/) | 16.0.1.1.0 |  | Specify optional products quantity for product
 [product_origin](product_origin/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Adds the origin of the product
 [product_packaging_container_deposit](product_packaging_container_deposit/) | 16.0.1.2.1 |  | Add container deposit fees in a order
@@ -7293,7 +7296,7 @@ addon | version | maintainers | summary
 [purchase_variant_configurator](purchase_variant_configurator/) | 16.0.2.0.2 |  | Product variants in purchase management
 [sale_order_line_variant_description](sale_order_line_variant_description/) | 16.0.1.1.0 |  | Sale order line variant description
 [sale_product_variant_attribute_tax](sale_product_variant_attribute_tax/) | 16.0.1.0.0 |  | Bring the taxes associated to product values
-[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.2 |  | Product variants in sale management
+[sale_variant_configurator](sale_variant_configurator/) | 16.0.1.0.3 |  | Product variants in sale management
 
 [//]: # (end addons)
 
@@ -9450,8 +9453,9 @@ addon | version | maintainers | summary
 [web_domain_field](web_domain_field/) | 16.0.1.0.1 |  | Use computed field as domain
 [web_editor_class_selector](web_editor_class_selector/) | 16.0.1.1.0 |  | Web editor class selector
 [web_environment_ribbon](web_environment_ribbon/) | 16.0.1.0.0 |  | Web Environment Ribbon
+[web_export_html_as_text](web_export_html_as_text/) | 16.0.1.0.0 |  | Web Export Html As Text
 [web_field_numeric_formatting](web_field_numeric_formatting/) | 16.0.1.0.0 |  | Allow to render float and integer fields without thousands separator
-[web_field_tooltip](web_field_tooltip/) | 16.0.1.1.0 |  | Displays customizable tooltips for fields
+[web_field_tooltip](web_field_tooltip/) | 16.0.1.2.0 |  | Displays customizable tooltips for fields
 [web_group_expand](web_group_expand/) | 16.0.1.0.0 |  | Group Expand Buttons
 [web_help](web_help/) | 16.0.2.0.0 |  | Help Framework
 [web_hide_field_with_key](web_hide_field_with_key/) | 16.0.1.0.1 | <a href='https://github.com/franzpoize'><img src='https://github.com/franzpoize.png' width='32' height='32' style='border-radius:50%;' alt='franzpoize'/></a> | Hide fields for models

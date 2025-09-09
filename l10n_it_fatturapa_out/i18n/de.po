@@ -11,8 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-08 03:45+0000\n"
 "PO-Revision-Date: 2025-04-16 23:23+0000\n"
-"Last-Translator: BitStab <bitstab@users.noreply.translation.odoo-"
-"community.org>\n"
+"Last-Translator: BitStab <bitstab@users.noreply.translation.odoo-community."
+"org>\n"
 "Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -30,9 +30,9 @@ msgid ""
 "are company-specific.\"/>"
 msgstr ""
 "<span class=\"o_form_label\">Aussteller/Sender</span>\n"
-"                       <span class=\"fa fa-lg fa-building-o\" title="
-"\"Die hier eingestellten Werte sind unternehmensspezifisch.\" aria-label="
-"\"Die hier eingestellten Werte sind unternehmensspezifisch.\"/>"
+"                       <span class=\"fa fa-lg fa-building-o\" title=\"Die "
+"hier eingestellten Werte sind unternehmensspezifisch.\" aria-label=\"Die "
+"hier eingestellten Werte sind unternehmensspezifisch.\"/>"
 
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields.selection,name:l10n_it_fatturapa_out.selection__account_move__fatturapa_state__accepted
@@ -55,7 +55,8 @@ msgstr "Aktion erforderlich"
 #: code:addons/l10n_it_fatturapa_out/wizard/efattura.py:0
 #, python-format
 msgid "Activate debug mode to see the full error."
-msgstr "Aktivieren Sie den Debug-Modus, um den vollständigen Fehler anzuzeigen."
+msgstr ""
+"Aktivieren Sie den Debug-Modus, um den vollständigen Fehler anzuzeigen."
 
 #. module: l10n_it_fatturapa_out
 #: model:res.groups,name:l10n_it_fatturapa_out.group_force_e_inv_export_state
@@ -611,13 +612,6 @@ msgstr ""
 #. module: l10n_it_fatturapa_out
 #: model:ir.model.fields,field_description:l10n_it_fatturapa_out.field_fatturapa_attachment_out__ftpa_preview_link
 msgid "Preview link"
-msgstr ""
-
-#. module: l10n_it_fatturapa_out
-#. odoo-python
-#: code:addons/l10n_it_fatturapa_out/wizard/wizard_export_fatturapa.py:0
-#, python-format
-msgid "Print report not found"
 msgstr ""
 
 #. module: l10n_it_fatturapa_out

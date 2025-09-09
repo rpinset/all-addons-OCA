@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 03:48+0000\n"
-"PO-Revision-Date: 2025-09-03 05:42+0000\n"
+"PO-Revision-Date: 2025-09-08 09:43+0000\n"
 "Last-Translator: Sayaka-qrtl <sayaka@quartile.co>\n"
 "Language-Team: Japanese (https://www.transifex.com/oca/teams/23907/ja/)\n"
 "Language: ja\n"
@@ -40,7 +40,7 @@ msgstr "キャンセル理由:"
 msgid ""
 "Choose the reason for the cancellation of the\n"
 "                    purchase order."
-msgstr ""
+msgstr "購買オーダのキャンセル理由を選択する。"
 
 #. module: purchase_cancel_reason
 #: model_terms:ir.ui.view,arch_db:purchase_cancel_reason.view_purchase_order_cancel

@@ -1,0 +1,1 @@
+This module ensures compatibility between the modules sale_invoicing_date_selection and sale_order_invoicing_picking_filter, making sure that the invoice date chosen in the invoice creation wizard is correctly applied to the invoices generated from the selected stock pickings.

@@ -629,13 +629,6 @@ msgid "Preview link"
 msgstr "Collegamento di anteprima"
 
 #. module: l10n_it_fatturapa_out
-#. odoo-python
-#: code:addons/l10n_it_fatturapa_out/wizard/wizard_export_fatturapa.py:0
-#, python-format
-msgid "Print report not found"
-msgstr "Stampa resoconto non trovata"
-
-#. module: l10n_it_fatturapa_out
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.wizard_export_fatturapa_form_view_regenerate
 msgid "Re-Export"
 msgstr "Riesporta"
@@ -881,6 +874,10 @@ msgstr "È possibile reimpostare solo file con stato «Errore trasmittente»."
 #: model_terms:ir.ui.view,arch_db:l10n_it_fatturapa_out.view_fatturapa_out_attachment_form
 msgid "on"
 msgstr "il"
+
+#, python-format
+#~ msgid "Print report not found"
+#~ msgstr "Stampa resoconto non trovata"
 
 #~ msgid "E-invoice file name"
 #~ msgstr "Nome file e-fattura"

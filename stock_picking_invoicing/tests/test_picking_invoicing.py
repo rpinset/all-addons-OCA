@@ -10,6 +10,7 @@ class TestPickingInvoicing(TestPickingInvoicingCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
+        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.picking_model = cls.env["stock.picking"]
         cls.move_model = cls.env["stock.move"]
         cls.invoice_model = cls.env["account.move"]
