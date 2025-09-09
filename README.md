@@ -94,16 +94,16 @@ Date:   Mon Jun 30 11:09:37 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 02e2bf08d48cb5d7b6bc15a6957583123f4b8f0e
+commit 3e73115c1be829ad0c4ef6a69eef521ef9a58d27
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 8 12:40:35 2025 +0000
+Date:   Mon Sep 8 08:02:02 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (261 of 261 strings)
+    Currently translated at 100.0% (52 of 52 strings)
     
-    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_financial_report
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_financial_report/it/
+    Translation: account-financial-reporting-14.0/account-financial-reporting-14.0-account_tax_balance
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-14-0/account-financial-reporting-14-0-account_tax_balance/it/
 
 
 ## account-invoice-reporting
@@ -509,16 +509,16 @@ Date:   Fri Aug 8 09:59:36 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit c1c9a5d9427fb35be55f54647cc40a7d1346c309
+commit 9cd52d0c3267c235c7d40eb235b08c3f0838d6a8
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 8 12:35:41 2025 +0000
+Date:   Tue Sep 9 11:18:27 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: edi-14.0/edi-14.0-purchase_order_ubl
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-purchase_order_ubl/it/
+    Translation: edi-14.0/edi-14.0-purchase_stock_ubl
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-purchase_stock_ubl/it/
 
 
 ## field-service
@@ -878,16 +878,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit fcc54d44b9ac077efbc181230cfcd80dc9d1685a
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Fri Aug 29 10:17:06 2025 +0000
+commit 28c01bb676468ef1085df177c35603dcc6ebba11
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 9 10:20:26 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (6 of 6 strings)
+    Currently translated at 100.0% (284 of 284 strings)
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_riba_queued
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_riba_queued/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa/it/
 
 
 ## l10n-japan
@@ -1104,11 +1104,16 @@ Date:   Wed Jun 4 02:47:51 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit 2a3355809b60126ce4535f8095edaacabe6bd1f8
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Fri Jun 13 09:04:53 2025 +0000
+commit 78de9bc4e0b5596ada0485c6587a5a7f350bfdda
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 9 10:05:37 2025 +0000
 
-    Added translation using Weblate (Turkish)
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (278 of 278 strings)
+    
+    Translation: stock-logistics-barcode-14.0/stock-logistics-barcode-14.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-14-0/stock-logistics-barcode-14-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
@@ -1159,16 +1164,16 @@ Date:   Fri Jul 25 15:47:09 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 2343f2970631189d40f71b356055e8d4f99dbbb5
+commit 46421f6fb734cf95f92bf8737d700b84470772ab
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Sat Jun 21 10:45:32 2025 +0000
+Date:   Mon Sep 8 07:53:46 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (347 of 347 strings)
+    Currently translated at 100.0% (41 of 41 strings)
     
-    Translation: rma-14.0/rma-14.0-rma
-    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-rma/it/
+    Translation: rma-14.0/rma-14.0-product_warranty
+    Translate-URL: https://translation.odoo-community.org/projects/rma-14-0/rma-14-0-product_warranty/it/
 
 
 ## ddmrp
@@ -1348,16 +1353,16 @@ Date:   Sun Feb 2 20:16:34 2025 +0000
 
 ## contract
 From [https://github.com/OCA/contract.git](https://github.com/OCA/contract.git)
-commit 3715842975e16c95739336a5e761d3bbcf59738c
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Jul 1 11:15:49 2025 +0000
+commit 2acda2a7e9c8de5064aaf6c88e6c2b1e9ab925a1
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Mon Sep 8 07:37:33 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 92.1% (47 of 51 strings)
+    Currently translated at 100.0% (9 of 9 strings)
     
-    Translation: contract-14.0/contract-14.0-product_contract
-    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-product_contract/it/
+    Translation: contract-14.0/contract-14.0-contract_mandate
+    Translate-URL: https://translation.odoo-community.org/projects/contract-14-0/contract-14-0-contract_mandate/it/
 
 
 ## program
