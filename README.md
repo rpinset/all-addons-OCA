@@ -45,16 +45,16 @@ Date:   Wed Aug 13 11:46:35 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit 32c0c7f0c2ba79386107436776a9fc6b55363306
-Author: Weblate <noreply@weblate.org>
-Date:   Fri Sep 5 11:47:35 2025 +0000
+commit 60c21addcf2b3670de35a633be340a46b27c2e71
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 9 11:20:09 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (51 of 51 strings)
     
     Translation: account-financial-reporting-17.0/account-financial-reporting-17.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-account_tax_balance/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-17-0/account-financial-reporting-17-0-account_tax_balance/it/
 
 
 ## account-invoice-reporting
@@ -327,16 +327,16 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 11b5b472e898c46ce2dbc60a3752b0237cebea57
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 1 12:40:51 2025 +0000
+commit 69d6408f05f7d1ea3a450b42116e027cbb133128
+Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
+Date:   Mon Sep 8 09:48:58 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Turkish)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (19 of 19 strings)
     
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_blanket_order/
+    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_line_menu
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_line_menu/tr/
 
 
 ## crm
@@ -559,11 +559,11 @@ Date:   Tue Aug 26 08:24:06 2025 +0000
 
 ## hr-expense
 From [https://github.com/OCA/hr-expense.git](https://github.com/OCA/hr-expense.git)
-commit 2141d48aac62d2e306b87c02ee6269e069ca83c6
+commit 5d39e06aec060825a31a43135a97be859d5582ac
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:57:50 2025 +0000
+Date:   Mon Sep 8 06:50:17 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## hr-holidays
@@ -748,9 +748,9 @@ Date:   Thu Jul 17 22:04:54 2025 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 51d9065396668d9a03e485ff424a8afa331727d2
+commit 68b997c578710dafab525c6d84fd116730d47228
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 5 07:38:52 2025 +0000
+Date:   Mon Sep 8 08:12:15 2025 +0000
 
     [BOT] post-merge updates
 
@@ -902,16 +902,11 @@ Date:   Sun Feb 2 19:35:19 2025 +0000
 
 ## l10n-romania
 From [https://github.com/OCA/l10n-romania.git](https://github.com/OCA/l10n-romania.git)
-commit 3450af65ed073426758edce373bfc3629943da2d
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 15 10:47:38 2025 +0000
+commit d5cd411de658313045ce19bcbec9fec259b12398
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Sep 9 19:18:39 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-romania-17.0/l10n-romania-17.0-l10n_ro_account_bank_statement_import_mt940_base
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-romania-17-0/l10n-romania-17-0-l10n_ro_account_bank_statement_import_mt940_base/
+    [BOT] post-merge updates
 
 
 ## l10n-russia
@@ -1096,11 +1091,16 @@ Date:   Mon Aug 25 06:49:51 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit f09ebf89c54ee7ca92c1effae5572a009ebd0bc0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Jul 21 11:00:04 2025 +0000
+commit 723039de9c61ac12f68f901b9156a829afa84595
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Mon Sep 8 07:53:54 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (40 of 40 strings)
+    
+    Translation: rma-17.0/rma-17.0-product_warranty
+    Translate-URL: https://translation.odoo-community.org/projects/rma-17-0/rma-17-0-product_warranty/it/
 
 
 ## ddmrp
@@ -1164,16 +1164,16 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 4234c5e774b367178b72d82f312423c19faa415d
+commit a6ee54794f7a8b0ef6d55e0970f2b546178d36fd
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 14:39:25 2025 +0000
+Date:   Tue Sep 9 11:18:12 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (151 of 151 strings)
+    Currently translated at 100.0% (4 of 4 strings)
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_blanket_order
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_blanket_order/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-procurement_purchase_requisition_generation_dropshipping
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-procurement_purchase_requisition_generation_dropshipping/it/
 
 
 ## purchase-reporting
@@ -1619,16 +1619,16 @@ Date:   Sun Feb 9 19:15:40 2025 +0000
 
 ## web
 From [https://github.com/OCA/web.git](https://github.com/OCA/web.git)
-commit 6d1fee6d109f384f017c05d3e2cd9ce480dc24fa
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Aug 19 13:14:51 2025 +0000
+commit 5817d9d0df62697480fcbeede7776b82e5ce9ff7
+Author: Rémi <remi@le-filament.com>
+Date:   Mon Sep 8 07:05:09 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (8 of 8 strings)
+    Currently translated at 96.7% (30 of 31 strings)
     
-    Translation: web-17.0/web-17.0-web_widget_x2many_2d_matrix
-    Translate-URL: https://translation.odoo-community.org/projects/web-17-0/web-17-0-web_widget_x2many_2d_matrix/it/
+    Translation: web-17.0/web-17.0-web_responsive
+    Translate-URL: https://translation.odoo-community.org/projects/web-17-0/web-17-0-web_responsive/fr/
 
 
 ## website
