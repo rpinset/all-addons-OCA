@@ -107,11 +107,16 @@ Date:   Wed Jun 4 02:34:35 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit fabdc30741a6c08f9d136a04051e50edb5a5edfb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:35:06 2025 +0000
+commit 6dc29a327c6b638385a71f91e7b878c43adbfefb
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Mon Sep 8 07:27:31 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: account-invoicing-12.0/account-invoicing-12.0-account_invoice_tax_required
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-12-0/account-invoicing-12-0-account_invoice_tax_required/it/
 
 
 ## account-fiscal-rule
@@ -376,16 +381,16 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit d7e942ff1642137d3df10dbd25aa0fca68dd84e3
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 20 14:39:17 2025 +0000
+commit 33a7c526125d2de8b8cf40430a2b3bcf1cff53d5
+Author: Sergio Zanchetta <primes2h@gmail.com>
+Date:   Mon Sep 8 07:21:46 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (48 of 48 strings)
+    Currently translated at 45.7% (16 of 35 strings)
     
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_manual_delivery
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_manual_delivery/it/
+    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_exception
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_exception/it/
 
 
 ## crm
@@ -811,16 +816,16 @@ Date:   Tue Nov 19 21:05:30 2019 +0100
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 645e42743d04bdfcc59b124481a652f51f27d181
+commit 2550cd8e8813e00b57f698a4526aabdbd99ae61f
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Aug 6 12:33:30 2025 +0000
+Date:   Tue Sep 9 10:19:48 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (262 of 262 strings)
+    Currently translated at 100.0% (291 of 291 strings)
     
-    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_delivery_note
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_delivery_note/it/
+    Translation: l10n-italy-12.0/l10n-italy-12.0-l10n_it_fatturapa
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-12-0/l10n-italy-12-0-l10n_it_fatturapa/it/
 
 
 ## l10n-japan
@@ -1014,11 +1019,16 @@ Date:   Sat Feb 1 20:36:22 2025 +0000
 
 ## stock-logistics-barcode
 From [https://github.com/OCA/stock-logistics-barcode.git](https://github.com/OCA/stock-logistics-barcode.git)
-commit e7c8127d419168ae3a01a8d1909a07e2e9f6edf4
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:48:50 2025 +0000
+commit 27518869e1d53aa11bd5e4178e139e2787031eb9
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Tue Sep 9 10:05:35 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (120 of 120 strings)
+    
+    Translation: stock-logistics-barcode-12.0/stock-logistics-barcode-12.0-stock_barcodes
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-barcode-12-0/stock-logistics-barcode-12-0-stock_barcodes/it/
 
 
 ## stock-logistics-workflow
