@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 13:17+0000\n"
-"PO-Revision-Date: 2024-08-12 08:58+0000\n"
+"PO-Revision-Date: 2025-09-09 11:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "Language: it\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: crm_lead_to_task
 #: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_view_form
@@ -39,9 +39,24 @@ msgid "<span class=\"o_stat_text\">CRM Lead</span>"
 msgstr "<span class=\"o_stat_text\">Contatto CRM</span>"
 
 #. module: crm_lead_to_task
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_to_task_res_config_settings_view_form
+msgid "Archive lead"
+msgstr "Contatto attivo"
+
+#. module: crm_lead_to_task
 #: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_convert2task_view_form
 msgid "Cancel"
 msgstr "Annulla"
+
+#. module: crm_lead_to_task
+#: model:ir.model,name:crm_lead_to_task.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: crm_lead_to_task
+#: model:ir.model,name:crm_lead_to_task.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni configurazione"
 
 #. module: crm_lead_to_task
 #: model:ir.actions.act_window,name:crm_lead_to_task.crm_lead_convert2task_action
@@ -52,6 +67,7 @@ msgstr "Converti in lavoro"
 
 #. module: crm_lead_to_task
 #: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_convert2task_view_form
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_view_form
 msgid "Create Task"
 msgstr "Crea lavoro"
 
@@ -66,14 +82,41 @@ msgid "Created on"
 msgstr "Creato il"
 
 #. module: crm_lead_to_task
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead__crm_archive_lead_on_convert
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_res_company__crm_archive_lead_on_convert
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_res_config_settings__crm_archive_lead_on_convert
+msgid "Crm Archive Lead On Convert"
+msgstr "Contatto attivo CRM su conversione"
+
+#. module: crm_lead_to_task
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_to_task_res_config_settings_view_form
+msgid "Default project to be used when creating a task from a lead."
+msgstr "Progetto predefinito da usare quando si crea un lavoro da un contatto."
+
+#. module: crm_lead_to_task
 #: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead_convert2task__display_name
 msgid "Display Name"
 msgstr "Nome visualizzato"
 
 #. module: crm_lead_to_task
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_res_company__crm_force_project_id
+#: model:ir.model.fields,field_description:crm_lead_to_task.field_res_config_settings__crm_force_project_id
+msgid "Force Project"
+msgstr "Forza progetto"
+
+#. module: crm_lead_to_task
 #: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead_convert2task__id
 msgid "ID"
 msgstr "ID"
+
+#. module: crm_lead_to_task
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_to_task_res_config_settings_view_form
+msgid ""
+"If enabled, leads will be archived automatically after converting it to a "
+"task."
+msgstr ""
+"Se abilitata, i contatti verranno archiviati automaticamente alla "
+"conversione in un lavoro."
 
 #. module: crm_lead_to_task
 #: model:ir.model.fields,field_description:crm_lead_to_task.field_crm_lead_convert2task__write_uid
@@ -105,7 +148,6 @@ msgstr "Contatto/Opportunità"
 #. odoo-python
 #: code:addons/crm_lead_to_task/models/project_task.py:0
 #: code:addons/crm_lead_to_task/tests/test_crm_lead_task.py:0
-#, python-format
 msgid "Lead: %s"
 msgstr "Contatto: %s"
 
@@ -126,10 +168,14 @@ msgid "Task Count"
 msgstr "Numero lavori"
 
 #. module: crm_lead_to_task
+#: model_terms:ir.ui.view,arch_db:crm_lead_to_task.crm_lead_to_task_res_config_settings_view_form
+msgid "Tasks"
+msgstr "Lavori"
+
+#. module: crm_lead_to_task
 #. odoo-python
 #: code:addons/crm_lead_to_task/models/crm_lead.py:0
 #: code:addons/crm_lead_to_task/tests/test_crm_lead_task.py:0
-#, python-format
 msgid "Tasks from crm lead %s"
 msgstr "Lavori cal contatto CRM %s"
 
