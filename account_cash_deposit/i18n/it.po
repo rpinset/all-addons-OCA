@@ -375,7 +375,6 @@ msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: account_cash_deposit
 #: model:ir.model.fields,help:account_cash_deposit.field_account_cash_deposit__message_has_error
-#: model:ir.model.fields,help:account_cash_deposit.field_account_cash_deposit__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
@@ -559,11 +558,6 @@ msgid "Responsible User"
 msgstr "Utente responsabile"
 
 #. module: account_cash_deposit
-#: model:ir.model.fields,field_description:account_cash_deposit.field_account_cash_deposit__message_has_sms_error
-msgid "SMS Delivery error"
-msgstr "Errore consegna SMS"
-
-#. module: account_cash_deposit
 #: model_terms:ir.ui.view,arch_db:account_cash_deposit.account_cash_deposit_search
 msgid "State"
 msgstr "Stato"
@@ -710,6 +704,9 @@ msgid "You must delete cash lines that are linked to a currency other than %s."
 msgstr ""
 "Bisogna cancellare le righe contanti che sono collegate ad un ordine in "
 "valuta diversa da %s."
+
+#~ msgid "SMS Delivery error"
+#~ msgstr "Errore consegna SMS"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Ultima modifica il"
