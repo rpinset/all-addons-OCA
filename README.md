@@ -1443,11 +1443,15 @@ Date:   Sat Feb 1 21:31:14 2025 +0000
 
 ## search-engine
 From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
-commit 5d7ec207ff7c533c1ea228fc985784aaef40813a
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Sep 3 16:31:23 2023 +0000
+commit 30fe7b77ff5932cf54d956e37faad9bcb45d2c72
+Author: Alexandre Fayolle <alexandre.fayolle@camptocamp.com>
+Date:   Tue May 27 08:51:33 2025 +0200
 
-    [UPD] README.rst
+    [IMP] connector_elasticsearch: timeout and retries
+    
+    Add configuration options on the elasticsearch backend model to support
+    passing the timeout / max_retries / retry_on_timeout argument to the
+    Elasticsearch constructor.
 
 
 ## reporting-engine
