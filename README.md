@@ -36,9 +36,9 @@ Date:   Sun Feb 2 17:51:50 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit ca8c26aae5eced3fb4b3fcbc89690d3e866ff277
+commit 61d1ec735555464f3b6b243baf953c58e4bdfb0a
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 13 11:46:35 2025 +0000
+Date:   Wed Sep 10 12:04:46 2025 +0000
 
     [BOT] post-merge updates
 
@@ -327,16 +327,11 @@ Date:   Sun Feb 2 18:27:34 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 69d6408f05f7d1ea3a450b42116e027cbb133128
-Author: Ömer KÜLAK <omer.kulak@kitayazilim.com>
-Date:   Mon Sep 8 09:48:58 2025 +0000
+commit 61d059c208bee2acb22b206a160baf2cb88039b8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 12 21:41:12 2025 +0000
 
-    Translated using Weblate (Turkish)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: sale-workflow-17.0/sale-workflow-17.0-sale_order_line_menu
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-17-0/sale-workflow-17-0-sale_order_line_menu/tr/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -929,14 +924,11 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 761001d0f2392f7f38ce3473d7662b3ba7165a72
-Merge: b4aca5661 71c2b6677
-Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Thu Sep 4 10:32:41 2025 +0200
+commit e6b95cc18454a36478924c13c0c8d7fa6cb03319
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 12 15:12:47 2025 +0000
 
-    Merge pull request #4356 from Tecnativa/17.0-imp-payment_redsys-script
-    
-    [17.0][OU-ADD] payment_redsys: Enable payment methods for redsys
+    [BOT] post-merge updates
 
 
 ## l10n-switzerland
@@ -1027,16 +1019,14 @@ Date:   Sun Feb 2 19:52:41 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 1be2701697193353254b8e5590cb67c0f2573f76
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Aug 25 08:56:35 2025 +0000
+commit 55c1d6d6d075e0c1fb0f620d532abe78753db364
+Merge: 1be27016 1c2b0c3a
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Sep 10 19:51:03 2025 +0200
 
-    Translated using Weblate (Italian)
+    Merge pull request #1049 from Tecnativa/17.0-ou_fix-delivery_auto_refresh
     
-    Currently translated at 100.0% (79 of 79 strings)
-    
-    Translation: delivery-carrier-17.0/delivery-carrier-17.0-delivery_ups_oca
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-17-0/delivery-carrier-17-0-delivery_ups_oca/it/
+    [17.0][OU-FIX] delivery_auto_refresh: Field already exists
 
 
 ## stock-logistics-barcode
@@ -1164,16 +1154,16 @@ Date:   Sun Feb 2 20:07:44 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit a6ee54794f7a8b0ef6d55e0970f2b546178d36fd
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 9 11:18:12 2025 +0000
+commit 162303e17ddd67d9bcfc83825a63bacca78b200e
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Sep 12 16:59:00 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: purchase-workflow-17.0/purchase-workflow-17.0-procurement_purchase_requisition_generation_dropshipping
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-procurement_purchase_requisition_generation_dropshipping/it/
+    Translation: purchase-workflow-17.0/purchase-workflow-17.0-purchase_force_invoiced
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-17-0/purchase-workflow-17-0-purchase_force_invoiced/
 
 
 ## purchase-reporting
@@ -1310,16 +1300,14 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit ebe4404e8534fdc03c24a9be7a0aa183b5ebe158
+commit 32074a57ae68850541328d476187a81a7826941f
+Merge: ebe4404e8 11c889c8c
 Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Thu Sep 4 06:49:50 2025 +0000
+Date:   Wed Sep 10 16:05:54 2025 +0200
 
-    Translated using Weblate (Spanish)
+    Merge pull request #1722 from Tecnativa/17.0-ou_fix-mass_mailing_custom_unsubscribe
     
-    Currently translated at 100.0% (28 of 28 strings)
-    
-    Translation: social-17.0/social-17.0-mass_mailing_partner
-    Translate-URL: https://translation.odoo-community.org/projects/social-17-0/social-17-0-mass_mailing_partner/es/
+    [17.0][OU-FIX] mass_mailing_custom_unsubscribe: Proper SQL
 
 
 ## storage
@@ -1347,9 +1335,9 @@ Date:   Sun Feb 9 18:34:17 2025 +0000
 
 ## reporting-engine
 From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
-commit 9e176f6e0224500a7bd104ccdb4883608efca0f2
+commit 6e813a4bfc50ac78228f3f0b1d6e0f4634a399fc
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Aug 19 08:11:59 2025 +0000
+Date:   Fri Sep 12 19:20:55 2025 +0000
 
     [BOT] post-merge updates
 
