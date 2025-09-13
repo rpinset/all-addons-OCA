@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-03-17 19:06+0000\n"
+"PO-Revision-Date: 2025-09-12 16:42+0000\n"
 "Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: queue_job
 #: model_terms:ir.ui.view,arch_db:queue_job.view_queue_job_form
@@ -666,6 +666,14 @@ msgid ""
 "Example: {1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}.\n"
 "See the module description for details."
 msgstr ""
+"Muster, das aus der Anzahl der Wiederholungsversuche bei wiederholbaren "
+"Fehlern die Anzahl der Sekunden ableitet, um die nächste Ausführung zu "
+"verzögern. Wird die Anzahl der Sekunden als 2-Element-Tupel oder Liste "
+"angegeben, erfolgt eine Zufallsauswahl des Wiederholungsintervalls innerhalb "
+"der beiden Werte.\n"
+"Beispiel: {1: 10, 5: 20, 10: 30, 15: 300}.\n"
+"Beispiel: {1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}.\n"
+"Weitere Einzelheiten sind der Modulbeschreibung zu entnehmen."
 
 #. module: queue_job
 #: model:ir.model.fields.selection,name:queue_job.selection__queue_job__state__pending
@@ -877,6 +885,11 @@ msgid ""
 "dictionary with optional keys: enable, func_name, kwargs.\n"
 "See the module description for details."
 msgstr ""
+"Die Aktion, die ausgeführt wird, wenn die Schaltfläche *Zugehörige Aktion* "
+"bei einem Job verwendet wird. Die Standardaktion besteht darin, die Ansicht "
+"des mit dem Job verknüpften Datensatzes zu öffnen. Konfiguriert als "
+"Dictionary mit optionalen Schlüsseln: enable, func_name, kwargs.\n"
+"Weitere Einzelheiten sind der Modulbeschreibung zu entnehmen."
 
 #. module: queue_job
 #: model:ir.model.fields,help:queue_job.field_queue_job__max_retries
@@ -936,6 +949,10 @@ msgid ""
 "{{\"enable\": True, \"func_name\": \"related_action_foo\", "
 "\"kwargs\" {{\"limit\": 10}}}}"
 msgstr ""
+"Unerwartetes Format der zugehörigen Aktion für {}.\n"
+"Beispiel für ein gültiges Format:\n"
+"{{\"enable\": True, \"func_name\": \"related_action_foo\", \"kwargs\" {{"
+"\"limit\": 10}}}}"
 
 #. module: queue_job
 #. odoo-python
@@ -947,6 +964,10 @@ msgid ""
 "{{1: 300, 5: 600, 10: 1200, 15: 3000}}\n"
 "{{1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}}"
 msgstr ""
+"Unerwartetes Format des Wiederholungsmusters für {}.\n"
+"Beispiele für gültige Formate:\n"
+"{{1: 300, 5: 600, 10: 1200, 15: 3000}}\n"
+"{{1: (1, 10), 5: (11, 20), 10: (21, 30), 15: (100, 300)}}"
 
 #. module: queue_job
 #: model:ir.model.fields,field_description:queue_job.field_queue_job__user_id

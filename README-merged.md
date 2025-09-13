@@ -651,6 +651,7 @@ addon | version | maintainers | summary
 [project_operating_unit](project_operating_unit/) | 16.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | This module adds operating unit information to projects and tasks.
 [report_qweb_operating_unit](report_qweb_operating_unit/) | 16.0.1.0.0 |  | Qweb Report With Operating Unit
 [sale_operating_unit](sale_operating_unit/) | 16.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
+[sale_stock_operating_unit](sale_stock_operating_unit/) | 16.0.1.0.0 |  | An operating unit (OU) is an organizational entity part of a company
 [sales_team_operating_unit](sales_team_operating_unit/) | 16.0.1.0.0 |  | Sales Team Operating Unit
 [stock_operating_unit](stock_operating_unit/) | 16.0.1.2.2 |  | Adds the concept of operating unit (OU) in stock management
 [stock_operating_unit_access_all](stock_operating_unit_access_all/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Access all OUs' Stock
@@ -1919,7 +1920,9 @@ addon | version | maintainers | summary
 [sale_order_line_menu](sale_order_line_menu/) | 16.0.1.3.2 |  | Adds a Sale Order Lines Menu
 [sale_order_line_move_to_optional](sale_order_line_move_to_optional/) | 16.0.1.0.0 |  | Move sale order line to optional products.
 [sale_order_line_multi_warehouse](sale_order_line_multi_warehouse/) | 16.0.1.0.0 |  | Sale Order Line Multi Warehouse
+[sale_order_line_no_print](sale_order_line_no_print/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Hide order lines in reports
 [sale_order_line_price_history](sale_order_line_price_history/) | 16.0.1.2.1 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
+[sale_order_line_price_lock_by_pricelist](sale_order_line_price_lock_by_pricelist/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Lock price or discount edition depending on pricelist items
 [sale_order_line_product_attribute_values](sale_order_line_product_attribute_values/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Store Product Attribute Values in Sale Order Lines
 [sale_order_line_sequence](sale_order_line_sequence/) | 16.0.2.2.0 |  | Propagates SO line sequence to invoices and stock picking.
 [sale_order_line_tag](sale_order_line_tag/) | 16.0.1.0.0 | <a href='https://github.com/smaciaosi'><img src='https://github.com/smaciaosi.png' width='32' height='32' style='border-radius:50%;' alt='smaciaosi'/></a> <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> <a href='https://github.com/ckolobow'><img src='https://github.com/ckolobow.png' width='32' height='32' style='border-radius:50%;' alt='ckolobow'/></a> | Add tags to classify sales order line reasons
@@ -6651,6 +6654,7 @@ addon | version | maintainers | summary
 [mrp_production_move_line_auto_fill](mrp_production_move_line_auto_fill/) | 16.0.1.0.0 |  | Mrp Production Move Line Auto Fill
 [mrp_production_note](mrp_production_note/) | 16.0.1.0.0 |  | Notes in production orders
 [mrp_production_quant_manual_assign](mrp_production_quant_manual_assign/) | 16.0.1.0.0 |  | Production - Manual Quant Assignment
+[mrp_production_serial_matrix](mrp_production_serial_matrix/) | 16.0.1.0.0 |  | MRP Production Serial Matrix
 [mrp_restrict_lot](mrp_restrict_lot/) | 16.0.1.0.3 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | MRP Restrict Lot
 [mrp_sale_info](mrp_sale_info/) | 16.0.1.1.0 |  | Adds sale information to Manufacturing models
 [mrp_stock_owner_restriction](mrp_stock_owner_restriction/) | 16.0.1.0.0 |  | MRP Stock Owner Restriction
@@ -6919,7 +6923,7 @@ addon | version | maintainers | summary
 [product_supplierinfo_security](product_supplierinfo_security/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Restricts access to supplier information on products.
 [product_supplierinfo_update_price](product_supplierinfo_update_price/) | 16.0.1.0.0 |  | Updates the product's vendor price with the price set in a purchase order.
 [purchase_advance_payment](purchase_advance_payment/) | 16.0.1.2.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to add advance payments on purchase orders
-[purchase_all_shipments](purchase_all_shipments/) | 16.0.1.0.0 |  | Purchase All Shipments
+[purchase_all_shipments](purchase_all_shipments/) | 16.0.1.0.1 |  | Purchase All Shipments
 [purchase_allowed_product](purchase_allowed_product/) | 16.0.2.1.1 |  | This module allows to select only products that can be supplied by the vendor
 [purchase_blanket_order](purchase_blanket_order/) | 16.0.2.1.1 |  | Purchase Blanket Orders
 [purchase_cancel_reason](purchase_cancel_reason/) | 16.0.1.0.0 |  | Purchase Cancel Reason
@@ -6932,7 +6936,7 @@ addon | version | maintainers | summary
 [purchase_exception](purchase_exception/) | 16.0.1.0.1 |  | Custom exceptions on purchase order
 [purchase_fop_shipping](purchase_fop_shipping/) | 16.0.1.0.1 |  | Purchase Free-Of-Payment shipping
 [purchase_force_invoiced](purchase_force_invoiced/) | 16.0.1.0.2 |  | Allows to force the billing status of the purchase order to "Invoiced"
-[purchase_force_invoiced_quantity](purchase_force_invoiced_quantity/) | 16.0.1.0.0 |  | Add manual invoice quantity in purchase order lines
+[purchase_force_invoiced_quantity](purchase_force_invoiced_quantity/) | 16.0.1.1.0 |  | Add manual invoice quantity in purchase order lines
 [purchase_fully_invoiced](purchase_fully_invoiced/) | 16.0.1.0.0 |  | Useful filters in Purchases to know the actual status of invoices.
 [purchase_fully_received](purchase_fully_received/) | 16.0.1.0.0 |  | Useful filters in Purchases to know the actual status of shipments.and invoices
 [purchase_invoice_method](purchase_invoice_method/) | 16.0.1.0.0 |  | Allow to force the invoice method of a purchase
@@ -6974,6 +6978,7 @@ addon | version | maintainers | summary
 [purchase_order_type](purchase_order_type/) | 16.0.1.0.3 |  | Purchase Order Type
 [purchase_order_type_dashboard](purchase_order_type_dashboard/) | 16.0.1.0.0 | <a href='https://github.com/dalonsod'><img src='https://github.com/dalonsod.png' width='32' height='32' style='border-radius:50%;' alt='dalonsod'/></a> | Purchase Order Type Dashboard
 [purchase_order_uninvoiced_amount](purchase_order_uninvoiced_amount/) | 16.0.1.0.2 |  | Purchase Order Univoiced Amount
+[purchase_order_uninvoiced_amount_line](purchase_order_uninvoiced_amount_line/) | 16.0.1.0.0 |  | Purchase Order Line Uninvoiced Amount
 [purchase_order_weight_volume](purchase_order_weight_volume/) | 16.0.2.2.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Display purchase order weight and volume
 [purchase_packaging_default](purchase_packaging_default/) | 16.0.1.1.0 |  | Set default packaging in purchase
 [purchase_packaging_level_qty](purchase_packaging_level_qty/) | 16.0.2.0.0 |  | Display purchase order packaging level quantity
@@ -6983,7 +6988,7 @@ addon | version | maintainers | summary
 [purchase_quick](purchase_quick/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Quick Purchase order
 [purchase_reception_status](purchase_reception_status/) | 16.0.1.0.1 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
 [purchase_reorder_control](purchase_reorder_control/) | 16.0.1.0.0 |  | Restrict reordering unpurchaseable product
-[purchase_request](purchase_request/) | 16.0.2.4.0 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 16.0.2.4.1 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_department](purchase_request_department/) | 16.0.1.1.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 16.0.1.0.0 |  | Custom exceptions on purchase request
 [purchase_request_tier_validation](purchase_request_tier_validation/) | 16.0.1.1.1 |  | Extends the functionality of Purchase Requests to support a tier validation process.
@@ -7931,7 +7936,7 @@ addon | version | maintainers | summary
 [fs_storage_backup](fs_storage_backup/) | 16.0.1.0.1 |  | Filesystem Storage Backup
 [image_tag](image_tag/) | 16.0.1.0.1 |  | Image tag model
 [storage_backend](storage_backend/) | 16.0.1.1.0 |  | Implement the concept of Storage with amazon S3, sftp...
-[storage_backend_sftp](storage_backend_sftp/) | 16.0.1.0.1 |  | Implement SFTP Storage
+[storage_backend_sftp](storage_backend_sftp/) | 16.0.1.0.2 |  | Implement SFTP Storage
 [storage_file](storage_file/) | 16.0.1.0.1 |  | Storage file in storage backend
 
 [//]: # (end addons)
@@ -8054,7 +8059,7 @@ addon | version | maintainers | summary
 [report_qweb_decimal_place](report_qweb_decimal_place/) | 16.0.1.0.0 |  | Report Qweb Decimal Place
 [report_qweb_element_page_visibility](report_qweb_element_page_visibility/) | 16.0.1.0.1 |  | Report Qweb Element Page Visibility
 [report_qweb_encrypt](report_qweb_encrypt/) | 16.0.1.0.2 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Allow to encrypt qweb pdfs
-[report_qweb_field_option](report_qweb_field_option/) | 16.0.1.0.2 |  | Report Qweb Field Option
+[report_qweb_field_option](report_qweb_field_option/) | 16.0.1.0.3 |  | Report Qweb Field Option
 [report_qweb_parameter](report_qweb_parameter/) | 16.0.1.0.1 |  | Add new parameters for qweb templates in order to reduce field length and check minimal length
 [report_qweb_pdf_cover](report_qweb_pdf_cover/) | 16.0.1.0.0 |  | Add front and back covers to your QWeb PDF reports
 [report_qweb_pdf_watermark](report_qweb_pdf_watermark/) | 16.0.1.0.1 |  | Add watermarks to your QWEB PDF reports
@@ -8116,7 +8121,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_report_to_label_printer](base_report_to_label_printer/) | 16.0.1.0.1 |  | Report to label printer
-[base_report_to_printer](base_report_to_printer/) | 16.0.1.3.0 |  | Report to printer
+[base_report_to_printer](base_report_to_printer/) | 16.0.1.5.0 |  | Report to printer
 [base_report_to_printer_mail](base_report_to_printer_mail/) | 16.0.1.0.0 |  | Report to printer - Mail extension
 [pingen](pingen/) | 16.0.1.1.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | pingen.com integration
 [pingen_env](pingen_env/) | 16.0.1.0.0 | <a href='https://github.com/ajaniszewska-dev'><img src='https://github.com/ajaniszewska-dev.png' width='32' height='32' style='border-radius:50%;' alt='ajaniszewska-dev'/></a> | pingen.com server environment

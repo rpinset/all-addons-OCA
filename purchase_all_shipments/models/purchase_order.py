@@ -19,9 +19,18 @@ class PurchaseOrder(models.Model):
 
     def _compute_all_pickings(self):
         for rec in self:
+            all_picking_ids = self.env["stock.picking"]
             groups = rec.mapped("picking_ids.group_id")
-            all_picking_ids = self.env["stock.picking"].search(
-                [("group_id", "in", groups.ids)]
+            if groups:
+                group_pickings = self.env["stock.picking"].search(
+                    [("group_id", "in", groups.ids)]
+                )
+                all_picking_ids |= group_pickings
+            # add pickings connected by move_orig_ids (multi-steps) - recursively
+            all_picking_ids |= (
+                rec.mapped("order_line.move_ids")
+                ._get_move_dest_ids()
+                .mapped("picking_id")
             )
             rec.all_picking_ids = all_picking_ids
 
