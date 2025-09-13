@@ -60,9 +60,9 @@ Date:   Sun Feb 2 17:51:32 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit 4fb6673def7af0721b966342ae84bcdcfea5f26e
+commit 62e0ccc11d9833146753dff2f0b9efc124378f14
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 4 11:59:00 2025 +0000
+Date:   Wed Sep 10 08:25:20 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1109,11 +1109,16 @@ Date:   Sun Feb 9 19:24:36 2025 +0000
 
 ## manufacture
 From [https://github.com/OCA/manufacture.git](https://github.com/OCA/manufacture.git)
-commit fcc48b448c95e74b2fd86ac36c5f4c8a8cb30057
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 9 14:55:26 2025 +0000
+commit 37edb63f7700755967b16e9f24f127fa38a1652a
+Author: TomTietze <tietze.development@web.de>
+Date:   Wed Sep 10 08:16:28 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (German)
+    
+    Currently translated at 100.0% (37 of 37 strings)
+    
+    Translation: manufacture-15.0/manufacture-15.0-mrp_production_split
+    Translate-URL: https://translation.odoo-community.org/projects/manufacture-15-0/manufacture-15-0-mrp_production_split/de/
 
 
 ## manufacture-reporting
@@ -1150,9 +1155,9 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 96326fa961e742ea650c1e916bd08d999138190c
+commit f532c14583b5b070751da9ad27713c0ffe7816bd
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 9 08:54:59 2025 +0000
+Date:   Wed Sep 10 14:30:42 2025 +0000
 
     [BOT] post-merge updates
 
