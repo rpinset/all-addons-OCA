@@ -416,11 +416,16 @@ Date:   Tue Sep 2 12:39:07 2025 +0000
 
 ## crm
 From [https://github.com/OCA/crm.git](https://github.com/OCA/crm.git)
-commit 3b5ec8495f23667b9a20af0f9ec7c6a70258454b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:45:50 2025 +0000
+commit 6bee05c3fe4edcf7672d4f6cf8e6e7ee99829935
+Author: Tamer Sezgin <tamer.sezgin@gmail.com>
+Date:   Mon Sep 15 11:35:45 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Turkish)
+    
+    Currently translated at 90.9% (130 of 143 strings)
+    
+    Translation: crm-13.0/crm-13.0-crm_claim
+    Translate-URL: https://translation.odoo-community.org/projects/crm-13-0/crm-13-0-crm_claim/tr/
 
 
 ## partner-contact
@@ -1023,11 +1028,14 @@ Date:   Wed Jun 4 03:07:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit e9ff894991686e245c7cbc1a99fbdb85284efb53
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:09:40 2025 +0000
+commit 021a1eaead10421240aec0db831927b0e0194d6b
+Merge: e9ff89499 9226ddc67
+Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
+Date:   Wed Sep 17 07:54:12 2025 +0200
 
-    [UPD] addons table in README.md
+    Merge pull request #4382 from BinhexTeam/13.0-fix-l10n_es_eaet-l10n_es_aeat_mod303
+    
+    [13.0] [FIX] l10n_es_eaet y l10n_es_aeat_mod303
 
 
 ## l10n-switzerland
@@ -1274,11 +1282,16 @@ Date:   Sat Jun 21 10:43:35 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 4c0175b518d3fb0dcb6c5cc906befb7566d6ae53
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:30:06 2025 +0000
+commit 697937241f37e76a63a72a809208e56e0d29f8af
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Sep 17 09:05:39 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (8 of 8 strings)
+    
+    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_reception_status
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_reception_status/it/
 
 
 ## purchase-reporting
