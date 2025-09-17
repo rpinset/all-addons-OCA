@@ -836,6 +836,14 @@ msgstr ""
 #. odoo-python
 #: code:addons/quality_control_oca/models/qc_test.py:0
 #, python-format
+msgid ""
+"Question '%s' is not valid: you have to define at least one possible value."
+msgstr ""
+
+#. module: quality_control_oca
+#. odoo-python
+#: code:addons/quality_control_oca/models/qc_test.py:0
+#, python-format
 msgid "Question '%s' is not valid: you have to mark at least one value as OK."
 msgstr "La pregunta '%s' no es válida: debe marcar al menos un valor como OK."
 

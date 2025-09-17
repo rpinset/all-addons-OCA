@@ -874,6 +874,11 @@ msgid "Display Name"
 msgstr "Anzeigename"
 
 #. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__prevent_delivery_grouping
+msgid "Do not group deliveries"
+msgstr ""
+
+#. module: rma
 #. odoo-python
 #: code:addons/rma/models/rma_operation.py:0
 #: model:ir.model.fields.selection,name:rma.selection__rma__state__draft
@@ -1098,6 +1103,13 @@ msgstr ""
 "Übermittlungsfehler auf."
 
 #. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__prevent_delivery_grouping
+msgid ""
+"If enabled, RMAs using this operation will NOT be grouped into a single "
+"delivery picking, even if the company setting allows grouping."
+msgstr ""
+
+#. module: rma
 #: model:ir.model.fields,help:rma.field_rma_team__alias_bounced_content
 msgid ""
 "If set, this content will automatically be sent out to unauthorized users "
@@ -1123,10 +1135,10 @@ msgid "Incoming e-mail"
 msgstr "Eingehende E-Mail"
 
 #. module: rma
-#: model:ir.model.fields,help:rma.field_rma__requires_action
+#: model:ir.model.fields,help:rma.field_rma__manual_finish_allowed
 msgid ""
-"Indicates whether the RMA requires processing such as a receipt,delivery, or "
-"refund."
+"Indicates whether this RMA can be manually finished, without requiring "
+"further processing such as a receipt, delivery, or refund."
 msgstr ""
 
 #. module: rma
@@ -1248,6 +1260,11 @@ msgstr "Verwalten Sie Warenrücksendegenehmigungen (RMAs)."
 #: model:res.groups,name:rma.rma_group_manager
 msgid "Manager"
 msgstr "Manager"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__manual_finish_allowed
+msgid "Manual Finish Allowed"
+msgstr ""
 
 #. module: rma
 #: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_delivery__manual_after_receipt
@@ -1955,11 +1972,6 @@ msgid "Required field(s):%s"
 msgstr "Erforderliche(s) Feld(er): %s"
 
 #. module: rma
-#: model:ir.model.fields,field_description:rma.field_rma__requires_action
-msgid "Requires Action"
-msgstr ""
-
-#. module: rma
 #: model:ir.model.fields,field_description:rma.field_rma__user_id
 #: model_terms:ir.ui.view,arch_db:rma.rma_view_search
 msgid "Responsible"
@@ -2336,6 +2348,13 @@ msgstr ""
 #, python-format
 msgid "The quantity to return is greater than remaining quantity."
 msgstr "Die zurückzugebende Menge ist größer als die verbleibende Menge."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "The reception must be done before finishing this rma"
+msgstr ""
 
 #. module: rma
 #. odoo-python

@@ -242,7 +242,7 @@ CREATE OR REPLACE VIEW %%(table)s AS
         """Add domain on partners according to category and contact_type."""
 
         def check_partner_domain(partner, partner_domain, side):
-            """Check wether partner_domain results in empty selection
+            """Check whether partner_domain results in empty selection
             for partner, or wrong selection of partner already selected.
             """
             warning = {}
@@ -288,7 +288,7 @@ CREATE OR REPLACE VIEW %%(table)s AS
                 "other_partner_id": other_partner_domain,
             }
         }
-        # Check wether domain results in no choice or wrong choice of partners:
+        # Check whether domain results in no choice or wrong choice of partners:
         warning = {}
         partner_model = self.env["res.partner"]
         if this_partner_domain:
@@ -319,7 +319,7 @@ CREATE OR REPLACE VIEW %%(table)s AS
         """Set domain on type_selection_id based on partner(s) selected."""
 
         def check_type_selection_domain(type_selection_domain):
-            """If type_selection_id already selected, check wether it
+            """If type_selection_id already selected, check whether it
             is compatible with the computed type_selection_domain. An empty
             selection can practically only occur in a practically empty
             database, and will not lead to problems. Therefore not tested.
@@ -359,7 +359,7 @@ CREATE OR REPLACE VIEW %%(table)s AS
                 ("partner_category_other", "in", self.other_partner_id.category_id.ids),
             ]
         result = {"domain": {"type_selection_id": type_selection_domain}}
-        # Check wether domain results in no choice or wrong choice for
+        # Check whether domain results in no choice or wrong choice for
         # type_selection_id:
         warning = check_type_selection_domain(type_selection_domain)
         if warning:

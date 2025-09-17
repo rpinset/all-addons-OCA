@@ -85,6 +85,12 @@ class TestRma(BaseCommon):
         # Ensure grouping
         cls.env.company.rma_return_grouping = True
         cls.operation = cls.env.ref("rma.rma_operation_replace")
+        cls.operation_no_group = cls.operation.copy(
+            {
+                "name": "%s (no group)" % cls.operation.name,
+                "prevent_delivery_grouping": True,
+            }
+        )
 
     def _create_rma(
         self, partner=None, product=None, qty=None, location=None, operation=None
@@ -925,4 +931,44 @@ class TestRmaCase(TestRma):
         (rma_1 | rma_2).action_confirm()
         self.assertEqual(
             rma_1.reception_move_id.picking_id, rma_2.reception_move_id.picking_id
+        )
+
+    def test_mass_return_to_customer_grouping_exception_by_operation(self):
+        """Company groups deliveries, but the operation forbids grouping
+        -> 1 picking per RMA."""
+        self.operation.prevent_delivery_grouping = True
+        # Create, confirm and receive 4 RMAs all using the "no group" operation
+        rma_1 = self._create_confirm_receive(
+            self.partner, self.product, 10, self.rma_loc, self.operation_no_group
+        )
+        rma_2 = self._create_confirm_receive(
+            self.partner, self.product, 15, self.rma_loc, self.operation_no_group
+        )
+        product2 = self.product_product.create(
+            {"name": "Product 2 test", "type": "product"}
+        )
+        rma_3 = self._create_confirm_receive(
+            self.partner, product2, 20, self.rma_loc, self.operation_no_group
+        )
+        partner = self.res_partner.create({"name": "Partner 2 test"})
+        rma_4 = self._create_confirm_receive(
+            partner, product2, 25, self.rma_loc, self.operation_no_group
+        )
+
+        all_rmas = rma_1 | rma_2 | rma_3 | rma_4
+        self.assertEqual(all_rmas.mapped("state"), ["received"] * 4)
+
+        # Mass return: despite company grouping=True, each RMA must create its own picking
+        delivery_wizard = (
+            self.env["rma.delivery.wizard"]
+            .with_context(active_ids=all_rmas.ids, rma_delivery_type="return")
+            .create({})
+        )
+        delivery_wizard.action_deliver()
+
+        pickings = all_rmas.mapped("delivery_move_ids.picking_id")
+        self.assertEqual(len(pickings), 4)
+        # Ensure each RMA is tied to a different picking
+        self.assertEqual(
+            len(set(all_rmas.mapped("delivery_move_ids.picking_id.id"))), 4
         )

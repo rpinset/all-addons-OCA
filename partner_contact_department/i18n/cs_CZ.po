@@ -20,6 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #. module: partner_contact_department
+#: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__active
+msgid "Active"
+msgstr ""
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "All"
+msgstr ""
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_form_view
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Archived"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__child_ids
 msgid "Child departments"
 msgstr "Oddělení dětí"
@@ -49,9 +65,13 @@ msgid "Department"
 msgstr "oddělení"
 
 #. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Department Name"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.actions.act_window,name:partner_contact_department.res_partner_department_action
 #: model:ir.ui.menu,name:partner_contact_department.menu_res_partner_department
-#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_tree_view
 msgid "Departments"
 msgstr "Oddělení"
 
@@ -59,6 +79,11 @@ msgstr "Oddělení"
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__display_name
 msgid "Display Name"
 msgstr "Zobrazovaný název"
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Group By"
+msgstr ""
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__id
@@ -86,6 +111,11 @@ msgid "Name"
 msgstr "Jméno"
 
 #. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Parent Department"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__parent_path
 #, fuzzy
 msgid "Parent Path"
@@ -95,6 +125,16 @@ msgstr "Rodič odešel"
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__parent_id
 msgid "Parent department"
 msgstr "Rodičovské oddělení"
+
+#. module: partner_contact_department
+#: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: partner_contact_department
+#: model:ir.model.fields,help:partner_contact_department.field_res_partner_department__sequence
+msgid "Used to order departments."
+msgstr ""
 
 #~ msgid "Error! You cannot create recursive departments."
 #~ msgstr "Chyba! Nemůžete vytvářet rekurzivní oddělení."

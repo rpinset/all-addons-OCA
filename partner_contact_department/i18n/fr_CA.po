@@ -20,6 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: partner_contact_department
+#: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__active
+msgid "Active"
+msgstr ""
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "All"
+msgstr ""
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_form_view
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Archived"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__child_ids
 msgid "Child departments"
 msgstr ""
@@ -49,9 +65,13 @@ msgid "Department"
 msgstr ""
 
 #. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Department Name"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.actions.act_window,name:partner_contact_department.res_partner_department_action
 #: model:ir.ui.menu,name:partner_contact_department.menu_res_partner_department
-#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_tree_view
 msgid "Departments"
 msgstr ""
 
@@ -59,6 +79,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__display_name
 msgid "Display Name"
 msgstr "Afficher le nom"
+
+#. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Group By"
+msgstr ""
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__id
@@ -86,6 +111,11 @@ msgid "Name"
 msgstr "Nom"
 
 #. module: partner_contact_department
+#: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
+msgid "Parent Department"
+msgstr ""
+
+#. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__parent_path
 msgid "Parent Path"
 msgstr ""
@@ -93,6 +123,16 @@ msgstr ""
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__parent_id
 msgid "Parent department"
+msgstr ""
+
+#. module: partner_contact_department
+#: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: partner_contact_department
+#: model:ir.model.fields,help:partner_contact_department.field_res_partner_department__sequence
+msgid "Used to order departments."
 msgstr ""
 
 #~ msgid "Partner"

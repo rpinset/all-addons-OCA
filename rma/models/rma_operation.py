@@ -17,6 +17,11 @@ class RmaOperation(models.Model):
 
     active = fields.Boolean(default=True)
     name = fields.Char(required=True, translate=True)
+    prevent_delivery_grouping = fields.Boolean(
+        string="Do not group deliveries",
+        help="If enabled, RMAs using this operation will NOT be grouped into a "
+        "single delivery picking, even if the company setting allows grouping.",
+    )
     color = fields.Integer()
     count_rma_draft = fields.Integer(compute="_compute_count_rma")
     count_rma_awaiting_action = fields.Integer(compute="_compute_count_rma")

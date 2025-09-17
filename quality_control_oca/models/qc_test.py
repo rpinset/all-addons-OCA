@@ -49,6 +49,19 @@ class QcTest(models.Model):
         default=lambda self: self.env.company,
     )
 
+    @api.constrains("test_lines")
+    def _check_valid_questions(self):
+        for tc in self:
+            for line in tc.test_lines.filtered(lambda l: l.type == "qualitative"):
+                if not line.ql_values:
+                    raise exceptions.ValidationError(
+                        _(
+                            "Question '%s' is not valid: "
+                            "you have to define at least one possible value."
+                        )
+                        % line.name_get()[0][1]
+                    )
+
 
 class QcTestQuestion(models.Model):
     """Each test line is a question with its valid value(s)."""

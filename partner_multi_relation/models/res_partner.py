@@ -1,9 +1,10 @@
-# Copyright 2013-2022 Therp BV <http://therp.nl>
+# Copyright 2013-2025 Therp BV <http://therp.nl>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 """Support connections between partners."""
 import numbers
 
 from odoo import _, api, exceptions, fields, models
+from odoo.exceptions import ValidationError
 from odoo.osv.expression import FALSE_LEAF, OR, is_leaf
 
 
@@ -174,6 +175,29 @@ class ResPartner(models.Model):
         """
         self.ensure_one()
         return "c" if self.is_company else "p"
+
+    @api.constrains("is_company")
+    def _check_relation_compatibility(self):
+        """If is_company changes, check relations whether this should be allowed."""
+        Relation = self.env["res.partner.relation"]
+        for this in self:
+            contact_type = this.get_partner_type()
+            incompatible_relations = Relation.search(
+                [
+                    "|",
+                    "&",
+                    ("left_partner_id", "=", this.id),
+                    ("type_id.contact_type_left", "not in", (False, contact_type)),
+                    "&",
+                    ("right_partner_id", "=", this.id),
+                    ("type_id.contact_type_right", "not in", (False, contact_type)),
+                ],
+                limit=1,
+            )
+            if incompatible_relations:
+                raise ValidationError(
+                    _("Cannot change type of partner due to incompatible connections.")
+                )
 
     def action_view_relations(self):
         for contact in self:

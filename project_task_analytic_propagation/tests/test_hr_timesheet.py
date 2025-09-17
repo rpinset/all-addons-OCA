@@ -92,7 +92,7 @@ class HrTimesheet(TestCommonSaleTimesheet):
 
     @users("test_user")
     def test_compute_account_id_01(self):
-        """Test analytic account doesn't change if timesheets are invoiced."""
+        """Test analytic account change if timesheets are invoiced."""
         self.assertEqual(
             self.task1.timesheet_ids.mapped("account_id"),
             self.analytic_account_sale,
@@ -100,12 +100,12 @@ class HrTimesheet(TestCommonSaleTimesheet):
         self.task1.analytic_account_id = self.analytic_account_maintenance
         self.assertEqual(
             self.task1.timesheet_ids.mapped("account_id"),
-            self.analytic_account_sale,
+            self.analytic_account_maintenance,
         )
 
     @users("test_user")
     def test_compute_account_id_02(self):
-        """Test only not billed analytic account lines change."""
+        """Test not billed analytic account lines change."""
         self.assertEqual(
             self.task1.timesheet_ids.mapped("account_id"),
             self.analytic_account_sale,
@@ -123,7 +123,7 @@ class HrTimesheet(TestCommonSaleTimesheet):
         )
         self.task1.analytic_account_id = self.analytic_account_maintenance
         self.assertEqual(timesheet_id.account_id, self.analytic_account_maintenance)
-        self.assertNotEqual(
+        self.assertEqual(
             self.task1.timesheet_ids.mapped("account_id"),
             self.analytic_account_maintenance,
         )

@@ -22,6 +22,15 @@ msgstr ""
 
 #. module: partner_multi_relation
 #. odoo-python
+#: code:addons/partner_multi_relation/models/res_partner_relation.py:0
+#, python-format
+msgid ""
+"%(left_partner)s already has a %(connection_type)s relation with "
+"%(right_partner)s with overlapping dates"
+msgstr ""
+
+#. module: partner_multi_relation
+#. odoo-python
 #: code:addons/partner_multi_relation/models/res_partner_relation_all.py:0
 #, python-format
 msgid "%s partner incompatible with relation type."
@@ -60,6 +69,13 @@ msgstr "Vsi odnosi s trenutnim partnerjem"
 #, python-format
 msgid "Allow existing relations that do not fit changed conditions"
 msgstr "Dovoli obstoječa razmerja, ki ne ustrezajo spremenjenim pogojem."
+
+#. module: partner_multi_relation
+#. odoo-python
+#: code:addons/partner_multi_relation/models/res_partner.py:0
+#, python-format
+msgid "Cannot change type of partner due to incompatible connections."
+msgstr ""
 
 #. module: partner_multi_relation
 #: model:ir.model,name:partner_multi_relation.model_res_partner
@@ -519,13 +535,6 @@ msgstr ""
 "kategorijo."
 
 #. module: partner_multi_relation
-#. odoo-python
-#: code:addons/partner_multi_relation/models/res_partner_relation.py:0
-#, python-format
-msgid "There is already a similar relation with overlapping dates"
-msgstr "Podoben odnos s prekrivajočimi se datumi že obstaja."
-
-#. module: partner_multi_relation
 #: model:ir.model.fields,help:partner_multi_relation.field_res_partner_relation_type__allow_self
 msgid "This relation can be set up with the same partner left and right"
 msgstr "Ta odnos se lahko nastavi z istim partnerjem na levi in desni."
@@ -601,6 +610,10 @@ msgstr "drugo"
 #, python-format
 msgid "this"
 msgstr "ta"
+
+#, python-format
+#~ msgid "There is already a similar relation with overlapping dates"
+#~ msgstr "Podoben odnos s prekrivajočimi se datumi že obstaja."
 
 #~ msgid "Include past records"
 #~ msgstr "Vključi pretekle zapise"

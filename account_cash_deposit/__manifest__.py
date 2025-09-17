@@ -4,7 +4,7 @@
 
 {
     "name": "Account Cash Deposit",
-    "version": "16.0.1.3.0",
+    "version": "16.0.1.4.0",
     "category": "Accounting",
     "license": "AGPL-3",
     "summary": "Manage cash deposits and cash orders",

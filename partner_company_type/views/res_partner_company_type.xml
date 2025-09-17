@@ -8,10 +8,12 @@
         </field>
         <field name="model">res.partner.company.type</field>
         <field name="arch" type="xml">
-            <form string="Company Types">
+            <form string="Legal Entity Types">
                 <group col="4">
                     <field name="name" />
                     <field name="shortcut" />
+                    <field name="country_ids" />
+                    <field name="state_ids" />
                 </group>
             </form>
         </field>
@@ -36,11 +38,13 @@
             <tree>
                 <field name="name" />
                 <field name="shortcut" />
+                <field name="country_ids" widget="many2many_tags" />
+                <field name="state_ids" widget="many2many_tags" />
             </tree>
         </field>
     </record>
     <record model="ir.actions.act_window" id="res_partner_company_type_act_window">
-        <field name="name">Company Types</field>
+        <field name="name">Legal Entity Types</field>
         <field name="res_model">res.partner.company.type</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[]</field>
@@ -49,7 +53,7 @@
     <menuitem
         action="res_partner_company_type_act_window"
         id="menu_partner_company_type"
-        name="Company Types"
+        name="Legal Entity Types"
         parent="contacts.res_partner_menu_config"
     />
 </odoo>

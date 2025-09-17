@@ -24,18 +24,21 @@
                     type="object"
                     attrs="{'invisible': [('state', 'not in', ['cancel','incident', 'done'])]}"
                     icon="fa-undo"
+                    title="Draft"
                 />
                 <button
                     name="action_confirm"
                     type="object"
                     icon="fa-calendar text-success"
                     attrs="{'invisible': [('state', '!=', 'draft')]}"
+                    title="Confirm"
                 />
                 <button
                     name="action_done"
                     type="object"
                     icon="fa-check"
                     attrs="{'invisible': [('state', '!=', 'confirm')]}"
+                    title="Done"
                 />
                 <button
                     name="%(crm_salesperson_planner_visit_close_wiz_action)d"

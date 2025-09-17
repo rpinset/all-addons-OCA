@@ -43,7 +43,7 @@ class TestPartnerRelation(TestPartnerRelationCommon):
 
     def test_create_with_active_id(self):
         """Test creation with this_partner_id from active_id."""
-        # Check wether we can create connection from company to person,
+        # Check whether we can create connection from company to person,
         # taking the particular company from the active records:
         relation = self.relation_all_model.with_context(
             active_id=self.partner_02_company.id, active_ids=self.partner_02_company.ids
@@ -174,7 +174,7 @@ class TestPartnerRelation(TestPartnerRelationCommon):
                 "other_partner_id": self.partner_02_company.id,
             }
         )
-        # Check wether display name is what we should expect:
+        # Check whether display name is what we should expect:
         self.assertEqual(
             relation.display_name,
             "%s %s %s"
@@ -195,7 +195,7 @@ class TestPartnerRelation(TestPartnerRelationCommon):
                 "other_partner_id": self.partner_02_company.id,
             }
         )
-        # Check wether display name is what we should expect:
+        # Check whether display name is what we should expect:
         self.assertEqual(
             relation.display_name,
             "%s %s %s"
@@ -208,7 +208,7 @@ class TestPartnerRelation(TestPartnerRelationCommon):
 
     def test_unlink(self):
         """Unlinking derived relation should unlink base relation."""
-        # Check wether underlying record is removed when record is removed:
+        # Check whether underlying record is removed when record is removed:
         relation = self._create_company2person_relation()
         base_model = self.env[relation.res_model]
         base_relation = base_model.browse([relation.res_id])

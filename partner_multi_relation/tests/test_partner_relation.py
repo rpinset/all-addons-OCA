@@ -15,7 +15,7 @@ class TestPartnerRelation(TestPartnerRelationCommon):
     post_install = True
 
     def test_selection_name_search(self):
-        """Test wether we can find type selection on reverse name."""
+        """Test whether we can find type selection on reverse name."""
         selection_types = self.selection_model.name_search(
             name=self.selection_person2company.name
         )

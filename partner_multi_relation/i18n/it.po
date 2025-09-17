@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-26 15:33+0000\n"
-"PO-Revision-Date: 2025-01-20 16:06+0000\n"
+"PO-Revision-Date: 2025-09-16 15:19+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -18,7 +18,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: partner_multi_relation
+#. odoo-python
+#: code:addons/partner_multi_relation/models/res_partner_relation.py:0
+#, python-format
+msgid ""
+"%(left_partner)s already has a %(connection_type)s relation with "
+"%(right_partner)s with overlapping dates"
+msgstr ""
+"%(left_partner)s ha già una relazione %(connection_type)s con "
+"%(right_partner)s con date sovrapposte"
 
 #. module: partner_multi_relation
 #. odoo-python
@@ -61,6 +72,13 @@ msgstr "Tutte le relazioni con il partner attuale"
 msgid "Allow existing relations that do not fit changed conditions"
 msgstr ""
 "Consenti relazioni esistenti che non soddisfano le condizioni modificate"
+
+#. module: partner_multi_relation
+#. odoo-python
+#: code:addons/partner_multi_relation/models/res_partner.py:0
+#, python-format
+msgid "Cannot change type of partner due to incompatible connections."
+msgstr "Non si può modificare il tipo di partner per connessioni incompatibili."
 
 #. module: partner_multi_relation
 #: model:ir.model,name:partner_multi_relation.model_res_partner
@@ -529,13 +547,6 @@ msgstr ""
 "categoria di partner."
 
 #. module: partner_multi_relation
-#. odoo-python
-#: code:addons/partner_multi_relation/models/res_partner_relation.py:0
-#, python-format
-msgid "There is already a similar relation with overlapping dates"
-msgstr "Esiste già una relazione simile con date sovrapposte"
-
-#. module: partner_multi_relation
 #: model:ir.model.fields,help:partner_multi_relation.field_res_partner_relation_type__allow_self
 msgid "This relation can be set up with the same partner left and right"
 msgstr ""
@@ -613,6 +624,10 @@ msgstr "altro"
 #, python-format
 msgid "this"
 msgstr "Questo"
+
+#, python-format
+#~ msgid "There is already a similar relation with overlapping dates"
+#~ msgstr "Esiste già una relazione simile con date sovrapposte"
 
 #~ msgid "Include past records"
 #~ msgstr "Includi i record passati"

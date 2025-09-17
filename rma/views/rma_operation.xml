@@ -11,6 +11,7 @@
                     <group>
                         <field name="name" />
                         <field name="active" widget="boolean_toggle" />
+                        <field name="prevent_delivery_grouping" />
                     </group>
                     <group string="Settings" name="settings">
                         <group>

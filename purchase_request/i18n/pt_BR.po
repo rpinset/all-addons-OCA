@@ -16,10 +16,10 @@ msgstr ""
 "Project-Id-Version: purchase-workflow (10.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-24 07:53+0000\n"
-"PO-Revision-Date: 2025-04-08 16:23+0000\n"
-"Last-Translator: marcos-mendez <mendez.foto@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/OCA-"
-"purchase-workflow-10-0/language/pt_BR/)\n"
+"PO-Revision-Date: 2025-09-15 13:42+0000\n"
+"Last-Translator: Cristiano Mafra Junior <cristiano.mafracontanto@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/oca/"
+"OCA-purchase-workflow-10-0/language/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -357,7 +357,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:purchase_request.view_purchase_request_line_make_purchase_order
 #, fuzzy
 msgid "Create RFQ"
-msgstr "Criado por"
+msgstr "Criar RFQ"
 
 #. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_stock_move__created_purchase_request_line_id

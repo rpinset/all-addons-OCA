@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-08-16 14:25+0000\n"
+"PO-Revision-Date: 2025-09-15 13:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -29,7 +29,7 @@ msgstr "Completamente pagato"
 #. module: purchase_fully_invoiced
 #: model:ir.model.fields.selection,name:purchase_fully_invoiced.selection__purchase_order__invoice_status_validated__no
 msgid "Nothing to Bill"
-msgstr "Niente da pagare"
+msgstr "Niente da fatturare"
 
 #. module: purchase_fully_invoiced
 #: model:ir.model.fields,field_description:purchase_fully_invoiced.field_purchase_order__invoice_status_validated
