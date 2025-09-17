@@ -2221,7 +2221,7 @@ addon | version | maintainers | summary
 [partner_second_lastname](partner_second_lastname/) | 14.0.1.1.0 |  | Have split first and second lastnames
 [partner_sequence_address_type](partner_sequence_address_type/) | 14.0.1.0.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | Partner Sequence Address Type
 [partner_stage](partner_stage/) | 14.0.2.1.1 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Add lifecycle Stages to Partners
-[partner_tier_validation](partner_tier_validation/) | 14.0.3.0.2 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Support a tier validation process for Contacts
+[partner_tier_validation](partner_tier_validation/) | 14.0.3.0.3 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Support a tier validation process for Contacts
 [partner_title_order](partner_title_order/) | 14.0.1.0.0 |  | Makes partner title sortable by sequence
 [partner_tz](partner_tz/) | 14.0.1.0.1 |  | Remove partner timezone default value and display on form
 [partner_vat_unique](partner_vat_unique/) | 14.0.1.0.1 |  | Module to make the VAT number unique for customers and suppliers.
@@ -9081,6 +9081,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [contract_membership_delegated_partner](contract_membership_delegated_partner/) | 14.0.1.0.0 |  | Set delegate membership on the contract
 [membership_delegated_partner](membership_delegated_partner/) | 14.0.1.1.1 |  | Delegate membership on a specific partner
+[membership_delegated_partner_line](membership_delegated_partner_line/) | 14.0.1.0.0 |  | Adds ability to specify member at invoice line level
 [membership_extension](membership_extension/) | 14.0.1.2.0 |  | Improves user experience of membership addon
 [membership_initial_fee](membership_initial_fee/) | 14.0.1.0.0 |  | Initial fee for memberships
 [membership_prorate](membership_prorate/) | 14.0.1.0.0 |  | Prorate membership fee
@@ -9581,7 +9582,7 @@ addon | version | maintainers | summary
 [web_action_conditionable](web_action_conditionable/) | 14.0.1.0.1 |  | web_action_conditionable
 [web_advanced_search](web_advanced_search/) | 14.0.1.0.1 |  | Easier and more powerful searching tools
 [web_assets_warmup](web_assets_warmup/) | 14.0.1.0.0 |  | Ensure that assets are generated when Odoo starts.
-[web_button_visibility](web_button_visibility/) | 14.0.1.0.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Web Button Visibility
+[web_button_visibility](web_button_visibility/) | 14.0.1.1.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Web Button Visibility
 [web_calendar_color_field](web_calendar_color_field/) | 14.0.1.0.0 |  | Calendar Color Field
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 14.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_company_color](web_company_color/) | 14.0.2.0.0 |  | Web Company Color
@@ -9593,9 +9594,9 @@ addon | version | maintainers | summary
 [web_disable_export_group](web_disable_export_group/) | 14.0.2.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 14.0.1.0.2 |  | Use computed field as domain
 [web_drop_target](web_drop_target/) | 14.0.1.1.2 |  | Allows to drag files into Odoo
-[web_edit_user_filter](web_edit_user_filter/) | 14.0.1.0.2 |  | Edit User Filters
+[web_edit_user_filter](web_edit_user_filter/) | 14.0.1.0.3 |  | Edit User Filters
 [web_environment_ribbon](web_environment_ribbon/) | 14.0.1.0.0 |  | Web Environment Ribbon
-[web_field_required_invisible_manager](web_field_required_invisible_manager/) | 14.0.2.3.3 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Web Field Required Invisible Readonly Managerr
+[web_field_required_invisible_manager](web_field_required_invisible_manager/) | 14.0.2.4.0 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Web Field Required Invisible Readonly Managerr
 [web_fix_modules_load](web_fix_modules_load/) | 14.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Fix translations loading from frontend with many modules
 [web_group_expand](web_group_expand/) | 14.0.1.0.0 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 14.0.1.0.2 |  | Enables triggering of more than one action on ActionManager

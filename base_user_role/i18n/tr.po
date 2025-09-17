@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-29 03:39+0000\n"
-"PO-Revision-Date: 2025-07-03 16:25+0000\n"
+"PO-Revision-Date: 2025-09-16 16:42+0000\n"
 "Last-Translator: Betül Öğmen <betulo@eska.biz>\n"
 "Language-Team: Turkish (https://www.transifex.com/oca/teams/23907/tr/)\n"
 "Language: tr\n"
@@ -195,38 +195,38 @@ msgstr "Adı"
 #: model:ir.model.fields,field_description:base_user_role.field_res_groups__trans_parent_ids
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__trans_parent_ids
 msgid "Parent Groups"
-msgstr ""
+msgstr "Üst Gruplar"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_groups__parent_ids
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__parent_ids
 msgid "Parents"
-msgstr ""
+msgstr "Üstler"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__rule_ids
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_role_form
 msgid "Record Rules"
-msgstr ""
+msgstr "Kayıt Kuralları"
 
 #. module: base_user_role
 #: model:ir.model.fields,help:base_user_role.field_res_groups__role_id
 #: model:ir.model.fields,help:base_user_role.field_res_users_role__role_id
 msgid "Relation for the groups that represents a role"
-msgstr ""
+msgstr "Bir rolü temsil eden gruplar için ilişki"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_groups__role_id
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__role_id
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__role_id
 msgid "Role"
-msgstr ""
+msgstr "Rol"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users__role_line_ids
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__line_ids
 msgid "Role lines"
-msgstr ""
+msgstr "Rol satırları"
 
 #. module: base_user_role
 #: model:ir.actions.act_window,name:base_user_role.action_res_users_role_tree
@@ -238,18 +238,18 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_form_inherit
 #: model_terms:ir.ui.view,arch_db:base_user_role.view_res_users_role_search
 msgid "Roles"
-msgstr ""
+msgstr "Roller"
 
 #. module: base_user_role
 #: model:ir.model.constraint,message:base_user_role.constraint_res_users_role_line_user_role_uniq
 msgid "Roles can be assigned to a user only once at a time"
-msgstr ""
+msgstr "Roller, bir kullanıcıya bir seferde yalnızca bir kez atanabilir"
 
 #. module: base_user_role
 #: model:ir.model.fields,help:base_user_role.field_res_groups__role_ids
 #: model:ir.model.fields,help:base_user_role.field_res_users_role__role_ids
 msgid "Roles in which the group is involved"
-msgstr ""
+msgstr "Grubun dahil olduğu roller"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__rule_groups
@@ -259,29 +259,29 @@ msgstr "Kurallar"
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__rules_count
 msgid "Rules Count"
-msgstr ""
+msgstr "Kural Sayısı"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__share
 msgid "Share Group"
-msgstr ""
+msgstr "Paylaşım Grubu"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__date_to
 msgid "To"
-msgstr ""
+msgstr "Bitiş Tarihi"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__trans_implied_ids
 msgid "Transitively inherits"
-msgstr ""
+msgstr "Geçişli olarak devralır"
 
 #. module: base_user_role
 #: model:ir.actions.server,name:base_user_role.cron_update_users_ir_actions_server
 #: model:ir.cron,cron_name:base_user_role.cron_update_users
 #: model:ir.cron,name:base_user_role.cron_update_users
 msgid "Update user roles"
-msgstr ""
+msgstr "Kullanıcı Rollerini güncelle"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role_line__user_id
@@ -291,12 +291,12 @@ msgstr "Kullanıcı"
 #. module: base_user_role
 #: model:ir.model,name:base_user_role.model_res_users_role
 msgid "User role"
-msgstr ""
+msgstr "Kullanıcı rolü"
 
 #. module: base_user_role
 #: model:ir.module.category,name:base_user_role.ir_module_category_role
 msgid "User roles"
-msgstr ""
+msgstr "Kullanıcı rolleri"
 
 #. module: base_user_role
 #: model:ir.model,name:base_user_role.model_res_users
@@ -308,18 +308,17 @@ msgstr "Kullanıcılar"
 #. module: base_user_role
 #: model:ir.model,name:base_user_role.model_res_users_role_line
 msgid "Users associated to a role"
-msgstr ""
+msgstr "Bir rolle ilişkili kullanıcılar"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__user_ids
-#, fuzzy
 msgid "Users list"
-msgstr "Kullanıcılar"
+msgstr "Kullanıcılar listesi"
 
 #. module: base_user_role
 #: model:ir.model.fields,help:base_user_role.field_res_users_role__implied_ids
 msgid "Users of this group automatically inherit those groups"
-msgstr ""
+msgstr "Bu grubun kullanıcıları, otomatik olarak buradaki grupları devralır"
 
 #. module: base_user_role
 #: model:ir.model.fields,field_description:base_user_role.field_res_users_role__view_access

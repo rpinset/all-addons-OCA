@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-11 02:41+0000\n"
-"PO-Revision-Date: 2023-06-10 20:08+0000\n"
-"Last-Translator: Adriano Prado <adrianojprado@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/"
-"teams/23907/pt_BR/)\n"
+"PO-Revision-Date: 2025-09-15 11:45+0000\n"
+"Last-Translator: Douglas Custódio <douglascstd@yahoo.com>\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/oca/teams/"
+"23907/pt_BR/)\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_statement_import_move_line
 #: model_terms:ir.ui.view,arch_db:account_statement_import_move_line.account_statement_line_create_view_form
@@ -192,4 +192,4 @@ msgstr "Tipo de filtro de Data"
 #. module: account_statement_import_move_line
 #: model:ir.model,name:account_statement_import_move_line.model_account_statement_line_create
 msgid "Wizard to create statement lines"
-msgstr "Ajudante para criar linhas de estrato"
+msgstr "Assistente para criar linhas de extrato"
