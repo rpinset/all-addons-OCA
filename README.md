@@ -457,11 +457,16 @@ Date:   Thu Jul 17 13:34:49 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 53ac11286b085b7d800bcd9fcd52d54ad6ddd971
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 06:00:24 2025 +0000
+commit 488a04f161023908d7b0de7d762a6931e8c2358b
+Author: Weblate <noreply@weblate.org>
+Date:   Mon Sep 15 14:30:36 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: edi-15.0/edi-15.0-base_import_pdf_by_template
+    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-base_import_pdf_by_template/
 
 
 ## field-service
@@ -1044,16 +1049,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 2f8ac7772fd39f1d45cb3345df46f34fccf9e09c
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Jul 28 09:49:32 2025 +0000
+commit 52eb9bec37c7e85eef9117adbce6310f6027bf7d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Sep 17 09:07:06 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 80.3% (123 of 153 strings)
     
     Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
 
 
 ## stock-logistics-reporting
@@ -1155,11 +1160,16 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit f532c14583b5b070751da9ad27713c0ffe7816bd
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 10 14:30:42 2025 +0000
+commit 2dc298863e5406cc6ebdf7cdf310825e29d4dc1d
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Sep 17 09:05:42 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 87.5% (7 of 8 strings)
+    
+    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_reception_status
+    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_reception_status/it/
 
 
 ## purchase-reporting
@@ -1355,9 +1365,9 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit f24ebdfa700b6febbe744428afe19831fa909a48
+commit 2f64bd13a61931860e7ba98c63feb69a6ae63036
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Sep 5 16:12:12 2025 +0000
+Date:   Tue Sep 16 15:58:03 2025 +0000
 
     [BOT] post-merge updates
 
