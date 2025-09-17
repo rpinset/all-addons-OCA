@@ -115,16 +115,16 @@
                                     delete="false"
                                     limit="80"
                                 >
-                                    <field name="is_group" invisible="1" />
-                                    <field name="is_total" invisible="1" />
-                                    <field name="is_readonly" invisible="1" />
+                                    <field name="is_group" column_invisible="1" />
+                                    <field name="is_total" column_invisible="1" />
+                                    <field name="is_readonly" column_invisible="1" />
                                     <field name="code" readonly="1" />
                                     <field name="name" readonly="1" />
-                                    <field name="format_base" invisible="1" />
-                                    <field name="format_tax" invisible="1" />
+                                    <field name="format_base" column_invisible="1" />
+                                    <field name="format_tax" column_invisible="1" />
                                     <field
                                         name="base"
-                                        invisible="not format_base"
+                                        optional="show"
                                         readonly="is_readonly"
                                     />
                                     <button
@@ -136,7 +136,7 @@
                                     />
                                     <field
                                         name="tax"
-                                        invisible="not format_tax"
+                                        optional="show"
                                         readonly="is_readonly"
                                     />
                                     <button
@@ -191,7 +191,7 @@
                                     <field name="amount_tax" readonly="1" />
                                     <field
                                         name="l10n_de_tax_statement_include"
-                                        invisible="1"
+                                        column_invisible="1"
                                     />
                                     <button
                                         name="l10n_de_add_move_in_statement"

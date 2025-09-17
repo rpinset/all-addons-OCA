@@ -1120,7 +1120,6 @@ export class GeoengineRenderer extends Component {
                 if (label_text === false) {
                     label_text = "";
                 }
-                console.log(feature.get("attributes").id);
                 styles_map[colors[color_idx]][0].text_.text_ = label_text.toString();
                 return styles_map[colors[color_idx]];
             },

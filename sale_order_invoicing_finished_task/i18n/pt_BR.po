@@ -57,11 +57,6 @@ msgid "Product"
 msgstr "Produto"
 
 #. module: sale_order_invoicing_finished_task
-#: model:ir.model,name:sale_order_invoicing_finished_task.model_sale_order
-msgid "Sales Order"
-msgstr "Pedido de Venda"
-
-#. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_sale_order_line
 msgid "Sales Order Line"
 msgstr "Linha Pedido de Venda"
@@ -89,6 +84,9 @@ msgid ""
 "You cannot create/modify a task related with a invoiced, locked or cancel "
 "sale order line "
 msgstr ""
+
+#~ msgid "Sales Order"
+#~ msgstr "Pedido de Venda"
 
 #~ msgid ""
 #~ "<span class=\"text-success\" attrs=\"{'invisible': [('invoiceable', '=', "

@@ -221,6 +221,8 @@ requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies
 fsspec>=2024.5.0
+fsspec>=2025.3.0
+fsspec[s3]
 python_slugify
 # From [https://github.com/OCA/search-engine.git](https://github.com/OCA/search-engine.git)
 # From [https://github.com/OCA/reporting-engine.git](https://github.com/OCA/reporting-engine.git)
@@ -240,7 +242,6 @@ pycups
 # From [https://github.com/OCA/webkit-tools.git](https://github.com/OCA/webkit-tools.git)
 # From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
 # generated from manifests external_dependencies
-astor
 cryptography
 dataclasses
 mako
@@ -290,9 +291,9 @@ a2wsgi>=1.10.6
 contextvars
 fastapi>=0.110.0
 graphene
-graphql_server
+graphql_server==3.0.0b7
 parse-accept-language
-pydantic
+pydantic>=2.0
 python-multipart
 typing-extensions
 ujson
