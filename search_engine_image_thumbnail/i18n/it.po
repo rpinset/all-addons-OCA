@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* search_engine_image_thumbnail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2024-04-15 10:37+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.constraint,message:search_engine_image_thumbnail.constraint_se_image_field_thumbnail_size_model_field_unique
+msgid "A thumbnail size already exists for this backend, model and field"
+msgstr "Per questo backend, modello e campo esiste già un'anteprima dimensione"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_ir_attachment
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__attachment_id
+msgid "Attachment"
+msgstr "Allegato"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,help:search_engine_image_thumbnail.field_se_thumbnail__attachment_id
+msgid "Attachment containing the original image"
+msgstr "Allegato contenente l'immagine originale"
+
+#. module: search_engine_image_thumbnail
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_image_field_thumbnail_size_search_view
+msgid "Backend"
+msgstr "Backend"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__create_uid
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__create_uid
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__create_uid
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_thumbnail_search_view
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__create_date
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__create_date
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__display_name
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__display_name
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__field_id_domain
+msgid "Domain to select images field"
+msgstr "Dminio per selezionare il campo immagine"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_backend__fails_if_no_thumbail_size
+msgid "Fail if no thumbnail size"
+msgstr "Fallisce se non c'è la misura miniatura"
+
+#. module: search_engine_image_thumbnail
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_image_field_thumbnail_size_search_view
+msgid "Group By"
+msgstr "Raggruppa per"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__id
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__id
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__id
+msgid "ID"
+msgstr "ID"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,help:search_engine_image_thumbnail.field_se_backend__fails_if_no_thumbail_size
+msgid ""
+"If checked, the export will fail if no thumbnail sizes is found for the "
+"model and field for which thumbnails are requested."
+msgstr ""
+"Se selezionata, l'esportazione fallirà se non viene trovata una dimensione "
+"miniatura per il modello e campo per il quale la miniatura è richiesta."
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__image
+msgid "Image"
+msgstr "Immagine"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__field_id
+msgid "Images field"
+msgstr "Campo immagine"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__field_name
+msgid "Images field name"
+msgstr "Nome campo immagine"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_image_field_thumbnail_size
+msgid "Index Thumbnail Size"
+msgstr "Dimensione anteprima indice"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.ui.menu,name:search_engine_image_thumbnail.se_image_field_thumbnail_size_menu
+msgid "Index Thumbnail Sizes"
+msgstr "Dimensioni anteprima indice"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.actions.act_window,name:search_engine_image_thumbnail.se_thumbnail_act_window
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_thumbnail
+#: model:ir.ui.menu,name:search_engine_image_thumbnail.se_thumbnail_menu
+msgid "Indexed Image Thumbnail"
+msgstr "Anteprima immagine indicizzata"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_ir_attachment__se_thumbnail_ids
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.ir_attachment_form_view
+msgid "Indexed Thumbnails"
+msgstr "Anteprime indicizzate"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__key
+msgid "Key"
+msgstr "Chiave"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size____last_update
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail____last_update
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__write_uid
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__write_uid
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__write_date
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__write_date
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__mimetype
+msgid "Mimetype"
+msgstr "Tipo MIME"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_indexable_record
+msgid "Mixin that make record indexable in a search engine"
+msgstr "Mixin che rende i record indicizzabili in un motore di ricerca"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__model_id
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_image_field_thumbnail_size_search_view
+msgid "Model"
+msgstr "Modello"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__model
+msgid "Model name"
+msgstr "Nome modello"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__name
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: search_engine_image_thumbnail
+#. odoo-python
+#: code:addons/search_engine_image_thumbnail/models/se_indexable_record.py:0
+#, python-format
+msgid "No thumbnail sizes defined for %(model)s.%(field)s"
+msgstr "Nssuna dimensione anteprima definita per %(model)s.%(field)s"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__original_image
+msgid "Original Image"
+msgstr "Immagine originale"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_backend
+msgid "Se Backend"
+msgstr "Backend SE"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_index
+msgid "Se Index"
+msgstr "Indice SE"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__backend_id
+msgid "Search Engine Backend"
+msgstr "Backend motore di ricerca"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_image_field_thumbnail_size__size_ids
+msgid "Size"
+msgstr "Dimensione"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__size_x
+msgid "Size X"
+msgstr "Dimensione X"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail_size__size_y
+msgid "Size Y"
+msgstr "Dimensine Y"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__base_name
+msgid "The base name of the thumbnail image (without extension)"
+msgstr "Il nome base dell'immagIne anteprima (senza estensione)"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,help:search_engine_image_thumbnail.field_se_thumbnail__base_name
+msgid ""
+"The thumbnail image will be named as base_name + _ + size_x + _ + size_y + . "
+"+ extension.\n"
+"If not set, the base name will be the name of the original image.This base "
+"name is used to find all existing thumbnail of an image generated for the "
+"same base name."
+msgstr ""
+"L'immagine anteprima verrà denominata come nome_bae+_+dimensione_x"
+"+dimensione_y+.+estensione.\n"
+"Se non impostato, il nome base sarà il nome dell'immagine originale. Questo "
+"nome base è utilizzato per trovare tutte le anteprime di una immagine "
+"generate per lo stesso nome base."
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model,name:search_engine_image_thumbnail.model_se_thumbnail_size
+msgid "Thumbnail Size"
+msgstr "Dimensione anteprima"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.actions.act_window,name:search_engine_image_thumbnail.se_image_field_thumbnail_size_act_window
+#: model:ir.actions.act_window,name:search_engine_image_thumbnail.se_thumbnail_size_act_window
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_backend__image_field_thumbnail_size_ids
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_index__image_field_thumbnail_size_ids
+#: model:ir.ui.menu,name:search_engine_image_thumbnail.se_thumbnail_size_menu
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_backend_form_view
+#: model_terms:ir.ui.view,arch_db:search_engine_image_thumbnail.se_index_form_view
+msgid "Thumbnail Sizes"
+msgstr "Dimensioni anteprima"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.ui.menu,name:search_engine_image_thumbnail.se_thumbnails_menu
+msgid "Thumbnails"
+msgstr "Anteprime"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__size_x
+msgid "X size"
+msgstr "Dimensione X"
+
+#. module: search_engine_image_thumbnail
+#: model:ir.model.fields,field_description:search_engine_image_thumbnail.field_se_thumbnail__size_y
+msgid "Y size"
+msgstr "Dimensione Y"

@@ -48,5 +48,6 @@
         <field name="view_mode">list,form</field>
         <field name="domain">[('budget_id', '=', active_id)]</field>
         <field name="context">{'default_budget_id': active_id}</field>
+        <field name="path">mis-budget-by-account-items</field>
     </record>
 </odoo>

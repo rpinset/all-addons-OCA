@@ -35,14 +35,16 @@
                                     <field name="sequence" widget="handle" />
                                     <field name="description" />
                                     <field name="name" />
-                                    <field name="type" />
+                                    <field name="type" optional="show" />
                                     <field
                                         name="compare_method"
                                         invisible="type == 'str'"
+                                        optional="show"
                                     />
                                     <field
                                         name="accumulation_method"
                                         invisible="type == 'str'"
+                                        optional="show"
                                     />
                                     <field name="expression" />
                                 </list>
@@ -64,12 +66,12 @@
                                         widget="many2many_tags"
                                     />
                                     <field name="field_names" />
-                                    <field name="aggregate" />
+                                    <field name="aggregate" optional="show" />
                                     <field
                                         name="date_field"
                                         domain="[('model_id', '=', model_id), ('ttype', 'in', ('date', 'datetime'))]"
                                     />
-                                    <field name="domain" />
+                                    <field name="domain" optional="show" />
                                 </list>
                             </field>
                         </page>
@@ -280,6 +282,7 @@
         <field name="view_id" ref="mis_report_view_list" />
         <field name="res_model">mis.report</field>
         <field name="view_mode">list,form</field>
+        <field name="path">mis-report-templates</field>
     </record>
     <menuitem
         id="mis_report_conf_menu"

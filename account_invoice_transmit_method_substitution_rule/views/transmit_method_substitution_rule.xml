@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 ACSONE SA/NV
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record model="ir.ui.view" id="transmit_method_substitution_rule_form_view">
+        <field name="model">transmit.method.substitution.rule</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <widget
+                            name="web_ribbon"
+                            title="Archived"
+                            bg_color="bg-danger"
+                            invisible="active"
+                        />
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" />
+                        <h1>
+                            <field name="name" class="oe_inline" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="transmit_method_id" />
+                        </group>
+                        <group>
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                                options="{'no_create': True}"
+                            />
+                        </group>
+                    </group>
+                    <group>
+                        <field
+                            name="domain"
+                            widget="domain"
+                            options="{'model': 'account.move'}"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="transmit_method_substitution_rule_tree_view">
+        <field name="model">transmit.method.substitution.rule</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="domain" />
+                <field name="transmit_method_id" />
+            </list>
+        </field>
+    </record>
+
+    <record
+        model="ir.actions.act_window"
+        id="transmit_method_substitution_rule_act_window"
+    >
+        <field name="name">Transmit Method Substitution Rules</field>
+        <field name="res_model">transmit.method.substitution.rule</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.ui.menu" id="transmit_method_substitution_rule_menu">
+        <field name="name">Transmit Method Substitution Rules</field>
+        <field name="parent_id" ref="account.account_management_menu" />
+        <field name="action" ref="transmit_method_substitution_rule_act_window" />
+        <field name="sequence" eval="100" />
+    </record>
+</odoo>

@@ -11,7 +11,7 @@
                 expr="//field[@name='kpi_ids']/list/field[@name='expression']"
                 position="after"
             >
-                <field name="budgetable" />
+                <field name="budgetable" optional="show" />
             </xpath>
         </field>
     </record>

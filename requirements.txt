@@ -96,6 +96,7 @@ python-dateutil
 # From [https://github.com/OCA/l10n-belarus.git](https://github.com/OCA/l10n-belarus.git)
 # From [https://github.com/OCA/l10n-belgium.git](https://github.com/OCA/l10n-belgium.git)
 # generated from manifests external_dependencies
+pycoda
 zeep
 # From [https://github.com/OCA/l10n-cambodia.git](https://github.com/OCA/l10n-cambodia.git)
 # From [https://github.com/OCA/l10n-canada.git](https://github.com/OCA/l10n-canada.git)
@@ -219,6 +220,10 @@ requests_toolbelt
 # generated from manifests external_dependencies
 boto3
 fsspec>=2024.5.0
+fsspec>=2025.0.0
+fsspec>=2025.3.0
+fsspec[s3]
+msgraphfs
 paramiko
 pyftpdlib
 python_slugify

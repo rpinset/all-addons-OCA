@@ -217,6 +217,7 @@
         <field name="res_model">mis.report.instance</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('temporary', '=', False)]</field>
+        <field name="path">mis-report-instances</field>
     </record>
     <menuitem
         id="mis_report_finance_menu"
@@ -288,6 +289,7 @@
         <field name="res_model">mis.report.instance</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('temporary', '=', True)]</field>
+        <field name="path">mis-report-instances-last-generated</field>
     </record>
     <menuitem
         id="last_wizard_mis_report_instance_view_menu"

@@ -3,7 +3,7 @@
 
 {
     "name": "Queue Job Tests",
-    "version": "18.0.1.0.2",
+    "version": "18.0.2.0.0",
     "author": "Camptocamp,Odoo Community Association (OCA)",
     "license": "LGPL-3",
     "category": "Generic Modules",
@@ -13,6 +13,7 @@
         "data/queue_job_channel_data.xml",
         "data/queue_job_function_data.xml",
         "security/ir.model.access.csv",
+        "data/queue_job_test_job.xml",
     ],
     "installable": True,
 }

@@ -528,9 +528,15 @@ msgid "Day"
 msgstr "Dag"
 
 #. module: mis_builder
+#: model:ir.model.fields,help:mis_builder.field_mis_report_style__description
+msgid "Describe specific values that are not inherited"
+msgstr ""
+
+#. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__description
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__description
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__description
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_style__description
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_subkpi__description
 msgid "Description"
 msgstr "Omschrijving"
@@ -1431,7 +1437,6 @@ msgstr "String"
 #. module: mis_builder
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report__style_id
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__style_id
-#: model_terms:ir.ui.view,arch_db:mis_builder.mis_report_style_view_form
 msgid "Style"
 msgstr "Stijl"
 

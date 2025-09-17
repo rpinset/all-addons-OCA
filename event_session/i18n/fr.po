@@ -1305,6 +1305,7 @@ msgstr "Séances : Rappel"
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_event__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_mail__use_sessions
+#: model:ir.model.fields,field_description:event_session.field_event_mail_scheduler_template__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_mail_session__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_registration__use_sessions
 #: model:ir.model.fields,field_description:event_session.field_event_session__use_sessions
@@ -1374,6 +1375,14 @@ msgstr ""
 msgid ""
 "For each event you can define a maximum registration of seats(number of "
 "attendees), above this numbers the registrations are not accepted."
+msgstr ""
+
+#. module: event_session
+#: model:ir.model.fields,help:event_session.field_event_session__seats_min
+msgid ""
+"For each event you can define a minimum reserved seats (number of "
+"attendees). If it does not reach the mentioned registrations, the event is "
+"highlighted in the list."
 msgstr ""
 
 #. module: event_session
@@ -1605,8 +1614,14 @@ msgid "Mail Schedule"
 msgstr "Courriel planifié"
 
 #. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__event_mail_template_id
+msgid "Mail Template Scheduler"
+msgstr ""
+
+#. module: event_session
 #: model:ir.model.fields,help:event_session.field_event_event__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_mail__use_sessions
+#: model:ir.model.fields,help:event_session.field_event_mail_scheduler_template__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_mail_session__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_registration__use_sessions
 #: model:ir.model.fields,help:event_session.field_event_session__use_sessions
@@ -1632,6 +1647,11 @@ msgstr ""
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_session__message_ids
 msgid "Messages"
+msgstr ""
+
+#. module: event_session
+#: model:ir.model.fields,field_description:event_session.field_event_session__seats_min
+msgid "Minimum Seats"
 msgstr ""
 
 #. module: event_session
@@ -1920,6 +1940,7 @@ msgstr ""
 
 #. module: event_session
 #: model:ir.model.fields,field_description:event_session.field_event_mail__session_scheduler_ids
+#: model:ir.model.fields,field_description:event_session.field_event_mail_scheduler_template__session_scheduler_ids
 #: model:ir.model.fields,field_description:event_session.field_event_mail_session__session_scheduler_ids
 msgid "Session Mails"
 msgstr ""

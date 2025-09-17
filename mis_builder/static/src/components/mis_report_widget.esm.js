@@ -12,6 +12,7 @@ export class MisReportWidget extends Component {
         this.orm = useService("orm");
         this.action = useService("action");
         this.view = useService("view");
+        this.dialog = useService("dialog");
         this.JSON = JSON;
         this.state = useState({
             mis_report_data: {header: [], body: []},
@@ -20,6 +21,7 @@ export class MisReportWidget extends Component {
         this.searchModel = new SearchModel(this.env, {
             orm: this.orm,
             view: this.view,
+            dialog: this.dialog,
         });
         useSubEnv({searchModel: this.searchModel});
         useBus(this.env.searchModel, "update", async () => {
