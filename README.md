@@ -404,11 +404,11 @@ Date:   Wed Jun 4 02:45:40 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit ceb8956e3b28e27a9f142d66dd62349064fd7391
+commit 783a5a61e5c6fc74210c140bf6100ff04c73f5cb
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:20:47 2025 +0000
+Date:   Mon Sep 15 14:31:11 2025 +0000
 
-    [UPD] addons table in README.md
+    [ADD] setup.py
 
 
 ## sale-financial
