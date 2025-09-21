@@ -1,0 +1,93 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_invoice_transmit_method_substitution_rule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-09-18 15:42+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__active
+msgid "Active"
+msgstr "Attiva"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model_terms:ir.ui.view,arch_db:account_invoice_transmit_method_substitution_rule.transmit_method_substitution_rule_form_view
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__domain
+msgid "Domain"
+msgstr "Dominio"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model,name:account_invoice_transmit_method_substitution_rule.model_account_move
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model.fields,field_description:account_invoice_transmit_method_substitution_rule.field_transmit_method_substitution_rule__transmit_method_id
+msgid "Transmit Method"
+msgstr "Metodo trasmissione"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.model,name:account_invoice_transmit_method_substitution_rule.model_transmit_method_substitution_rule
+msgid "Transmit Method Substitution Rule"
+msgstr "Regola sostituzione metodo trasmissione"
+
+#. module: account_invoice_transmit_method_substitution_rule
+#: model:ir.actions.act_window,name:account_invoice_transmit_method_substitution_rule.transmit_method_substitution_rule_act_window
+#: model:ir.ui.menu,name:account_invoice_transmit_method_substitution_rule.transmit_method_substitution_rule_menu
+msgid "Transmit Method Substitution Rules"
+msgstr "Regole sostituzione metodo trasmissione"

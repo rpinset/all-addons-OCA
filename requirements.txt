@@ -246,6 +246,7 @@ pycups
 astor
 cryptography
 dataclasses
+odoo_test_helper
 odoorpc
 openupgradelib
 paramiko<4.0.0
