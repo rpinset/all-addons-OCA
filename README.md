@@ -1406,11 +1406,16 @@ Date:   Sat Feb 1 21:06:08 2025 +0000
 
 ## server-backend
 From [https://github.com/OCA/server-backend.git](https://github.com/OCA/server-backend.git)
-commit 572ce8a5722bde8223b766ce18157ff5da9619c0
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:42:20 2025 +0000
+commit e63658d90ce1ca11cf2aafae9a0652dcd80125c1
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Sep 18 15:06:09 2025 +0000
 
-    [UPD] addons table in README.md
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (4 of 4 strings)
+    
+    Translation: server-backend-12.0/server-backend-12.0-base_suspend_security
+    Translate-URL: https://translation.odoo-community.org/projects/server-backend-12-0/server-backend-12-0-base_suspend_security/it/
 
 
 ## server-brand
