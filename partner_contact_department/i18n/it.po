@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-26 15:32+0000\n"
-"PO-Revision-Date: 2024-02-05 09:36+0000\n"
+"PO-Revision-Date: 2025-09-18 17:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,23 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__active
 msgid "Active"
-msgstr ""
+msgstr "Attivo"
 
 #. module: partner_contact_department
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
 msgid "All"
-msgstr ""
+msgstr "Tutti"
 
 #. module: partner_contact_department
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_form_view
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
 msgid "Archived"
-msgstr ""
+msgstr "In archivio"
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__child_ids
@@ -67,7 +67,7 @@ msgstr "Reparto"
 #. module: partner_contact_department
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
 msgid "Department Name"
-msgstr ""
+msgstr "Nome reparto"
 
 #. module: partner_contact_department
 #: model:ir.actions.act_window,name:partner_contact_department.res_partner_department_action
@@ -83,7 +83,7 @@ msgstr "Nome visualizzato"
 #. module: partner_contact_department
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
 msgid "Group By"
-msgstr ""
+msgstr "Raggruppa per"
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__id
@@ -113,7 +113,7 @@ msgstr "Nome"
 #. module: partner_contact_department
 #: model_terms:ir.ui.view,arch_db:partner_contact_department.res_partner_department_search_view
 msgid "Parent Department"
-msgstr ""
+msgstr "Dipartimento padre"
 
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__parent_path
@@ -128,12 +128,12 @@ msgstr "Dipartimento padre"
 #. module: partner_contact_department
 #: model:ir.model.fields,field_description:partner_contact_department.field_res_partner_department__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sequenza"
 
 #. module: partner_contact_department
 #: model:ir.model.fields,help:partner_contact_department.field_res_partner_department__sequence
 msgid "Used to order departments."
-msgstr ""
+msgstr "Utilizzato per ordinare i reparti."
 
 #~ msgid "Partner"
 #~ msgstr "Partner"

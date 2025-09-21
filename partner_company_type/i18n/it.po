@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-21 01:49+0000\n"
-"PO-Revision-Date: 2023-12-27 09:37+0000\n"
+"PO-Revision-Date: 2025-09-18 17:42+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: partner_company_type
 #: model:res.partner.company.type,shortcut:partner_company_type.res_partner_company_type_sa
@@ -42,7 +42,7 @@ msgstr "Contatto"
 #. module: partner_company_type
 #: model:ir.model.fields,field_description:partner_company_type.field_res_partner_company_type__country_ids
 msgid "Countries"
-msgstr ""
+msgstr "Nazioni"
 
 #. module: partner_company_type
 #: model:ir.model.fields,field_description:partner_company_type.field_res_partner_company_type__create_uid
@@ -83,14 +83,14 @@ msgstr "Ultimo aggiornamento il"
 #: model:ir.model.fields,field_description:partner_company_type.field_res_partner__partner_company_type_id
 #: model:ir.model.fields,field_description:partner_company_type.field_res_users__partner_company_type_id
 msgid "Legal Entity Type"
-msgstr ""
+msgstr "Tipo entità legale"
 
 #. module: partner_company_type
 #: model:ir.actions.act_window,name:partner_company_type.res_partner_company_type_act_window
 #: model:ir.ui.menu,name:partner_company_type.menu_partner_company_type
 #: model_terms:ir.ui.view,arch_db:partner_company_type.res_partner_company_type_form_view
 msgid "Legal Entity Types"
-msgstr ""
+msgstr "Tipi entità legale"
 
 #. module: partner_company_type
 #: model:ir.model,name:partner_company_type.model_res_partner_company_type
@@ -100,7 +100,7 @@ msgstr "Tipo azienda partner"
 #. module: partner_company_type
 #: model:ir.model.fields,field_description:partner_company_type.field_res_partner_company_type__state_ids
 msgid "States"
-msgstr ""
+msgstr "Stati"
 
 #. module: partner_company_type
 #: model:ir.model.fields,field_description:partner_company_type.field_res_partner_company_type__name
@@ -114,6 +114,8 @@ msgstr "Titolo"
 msgid ""
 "You must select a Legal Entity Type from the country of the partner address."
 msgstr ""
+"Bisogna selezionare una tipo di entità legale dalla nazione dell'indirizzo "
+"del partner."
 
 #. module: partner_company_type
 #. odoo-python
@@ -122,6 +124,8 @@ msgstr ""
 msgid ""
 "You must select a Legal Entity Type from the state of the partner address."
 msgstr ""
+"Bisogna selezionare un tipo di entità legale dallo stato dell'indirizzo del "
+"partner."
 
 #~ msgid "Company Types"
 #~ msgstr "Tipo azienda"

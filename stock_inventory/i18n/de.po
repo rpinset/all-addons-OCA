@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-14 08:27+0000\n"
-"Last-Translator: davidbeckercbl <becker@cbl-computer.de>\n"
+"PO-Revision-Date: 2025-09-18 11:42+0000\n"
+"Last-Translator: Bastian Günther <mail@bastian-guenther.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -461,7 +461,7 @@ msgstr ""
 #: code:addons/stock_inventory/models/stock_inventory.py:0
 #, python-format
 msgid "You can only delete inventory adjustments groups in draft state."
-msgstr ""
+msgstr "Inventuranpassungsgruppen können nur im Entwurfsstatus gelöscht werden."
 
 #. module: stock_inventory
 #. odoo-python

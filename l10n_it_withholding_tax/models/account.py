@@ -301,7 +301,7 @@ class AccountMove(models.Model):
 
             for line in reconciled_amls:
                 if not line.withholding_tax_generated_by_move_id:
-                    amount_net_pay_residual -= line.debit or line.credit
+                    amount_net_pay_residual -= abs(line.amount_currency)
             invoice.amount_net_pay_residual = float_round(
                 amount_net_pay_residual, dp_obj.precision_get("Account")
             )

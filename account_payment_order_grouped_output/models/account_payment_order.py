@@ -78,13 +78,8 @@ class AccountPaymentOrder(models.Model):
     def reconcile_grouped_payments(self, move, payments):
         lines_to_rec = move.line_ids[:-1]
         for payment in payments:
-            journal = payment.journal_id
             lines_to_rec += payment.move_id.line_ids.filtered(
-                lambda x: x.account_id
-                in (
-                    journal._get_journal_inbound_outstanding_payment_accounts()
-                    + journal._get_journal_outbound_outstanding_payment_accounts()
-                )
+                lambda x: x.account_id == payment.outstanding_account_id
             )
         lines_to_rec.reconcile()
 
@@ -97,7 +92,8 @@ class AccountPaymentOrder(models.Model):
             ref += " - " + payments.name
         vals = {
             "date": payments[0].date,
-            "journal_id": self.journal_id.id,
+            "journal_id": self.payment_mode_id.transfer_journal_id.id
+            or self.journal_id.id,
             "ref": ref,
             "grouped_payment_order_id": self.id,
             "line_ids": [],

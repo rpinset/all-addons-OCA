@@ -10,7 +10,7 @@
     "author": "GRAP, Odoo Community Association (OCA)",
     "maintainers": ["legalsylvain"],
     "website": "https://github.com/OCA/server-tools",
-    "version": "16.0.1.0.4",
+    "version": "16.0.1.0.5",
     "license": "AGPL-3",
     "depends": ["base"],
     "data": [
@@ -26,7 +26,7 @@
         "data/ir_module_type_rule.xml",
     ],
     "external_dependencies": {
-        "python": ["pygount==1.4.0"],
+        "python": ["pygount"],
     },
     "installable": True,
 }
