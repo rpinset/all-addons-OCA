@@ -227,16 +227,16 @@ Date:   Wed Jun 25 15:12:37 2025 +0000
 
 ## bank-statement-import
 From [https://github.com/OCA/bank-statement-import.git](https://github.com/OCA/bank-statement-import.git)
-commit 172ee119246b923771622c145da278252e5c578c
-Author: Betül Öğmen <betulo@eska.biz>
-Date:   Tue Sep 16 12:43:52 2025 +0000
+commit 3adfc66a8c1bb69b9b9a145cb34e3e0c2bdbff02
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Sep 18 13:01:28 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 97.7% (87 of 89 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_online
-    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_online/tr/
+    Translation: bank-statement-import-14.0/bank-statement-import-14.0-account_statement_import_base
+    Translate-URL: https://translation.odoo-community.org/projects/bank-statement-import-14-0/bank-statement-import-14-0-account_statement_import_base/it/
 
 
 ## account-payment
@@ -1487,16 +1487,16 @@ Date:   Sun Feb 9 19:20:42 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 00cbe9d5a6632ea8e8ce78b2b4f129bb99d120f2
+commit dd1baadcf1d4212f3f012084e9d6bfd20728a6dc
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Jul 23 14:41:27 2025 +0000
+Date:   Thu Sep 18 12:53:06 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (5 of 5 strings)
+    Currently translated at 82.5% (165 of 200 strings)
     
-    Translation: server-tools-14.0/server-tools-14.0-html_image_url_extractor
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-html_image_url_extractor/it/
+    Translation: server-tools-14.0/server-tools-14.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-14-0/server-tools-14-0-excel_import_export/it/
 
 
 ## server-auth
