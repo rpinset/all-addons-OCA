@@ -448,25 +448,20 @@ Date:   Sat Jun 21 10:45:35 2025 +0000
 
 ## e-commerce
 From [https://github.com/OCA/e-commerce.git](https://github.com/OCA/e-commerce.git)
-commit f129c4c3206f2072dad49bba2ea1fcb146d530a4
+commit 6ea07db61eff307fb910ca7a0e987bb7d8f3ef36
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Jul 17 13:34:49 2025 +0000
+Date:   Thu Sep 18 06:24:55 2025 +0000
 
     [BOT] post-merge updates
 
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 488a04f161023908d7b0de7d762a6931e8c2358b
-Author: Weblate <noreply@weblate.org>
-Date:   Mon Sep 15 14:30:36 2025 +0000
+commit aae265dfa2f247f0aaee67fc595e465fde529428
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 18 20:46:22 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: edi-15.0/edi-15.0-base_import_pdf_by_template
-    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-base_import_pdf_by_template/
+    [BOT] post-merge updates
 
 
 ## field-service
@@ -1365,11 +1360,16 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 2f64bd13a61931860e7ba98c63feb69a6ae63036
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 16 15:58:03 2025 +0000
+commit 6d1742402bd36b4f438ed9dbc7d889dd3405427a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Sep 18 12:53:07 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 80.6% (158 of 196 strings)
+    
+    Translation: server-tools-15.0/server-tools-15.0-excel_import_export
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-excel_import_export/it/
 
 
 ## server-auth
