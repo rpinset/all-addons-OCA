@@ -36,11 +36,11 @@ Date:   Sun Feb 2 17:51:50 2025 +0000
 
 ## account-financial-tools
 From [https://github.com/OCA/account-financial-tools.git](https://github.com/OCA/account-financial-tools.git)
-commit bfd3ceccc85f45f39bb8eb1a0953a69316bc034b
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 15 12:26:38 2025 +0000
+commit be90f94c172465b2f2da1efd22a21d7bdd112022
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 19 14:35:52 2025 +0000
 
-    Added translation using Weblate (Italian)
+    [BOT] post-merge updates
 
 
 ## account-financial-reporting
@@ -219,9 +219,9 @@ Date:   Sun Feb 2 18:15:43 2025 +0000
 
 ## queue
 From [https://github.com/OCA/queue.git](https://github.com/OCA/queue.git)
-commit 357fbd0195775b2cf0a4a0dc6b97cec6696a692a
+commit c9e92aafec5adf9b26cfea4efc73089cd5e19c55
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Aug 20 07:43:59 2025 +0000
+Date:   Thu Sep 18 13:00:16 2025 +0000
 
     [BOT] post-merge updates
 
@@ -929,11 +929,16 @@ Date:   Sun Feb 2 19:41:47 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 3e5a5f121e78e57c0a2cc99e90ba4a59daabbeac
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Mon Sep 15 14:16:23 2025 +0000
+commit 052ec8d02ddd27491d3cffafb2149b048ade0a97
+Author: Weblate <noreply@weblate.org>
+Date:   Sat Sep 20 07:34:33 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-spain-17.0/l10n-spain-17.0-l10n_es_aeat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-17-0/l10n-spain-17-0-l10n_es_aeat/
 
 
 ## l10n-switzerland
@@ -1295,9 +1300,9 @@ Date:   Sun Feb 2 18:19:01 2025 +0000
 
 ## social
 From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
-commit d9583b821e759a4ff07b0577aeee3f34baeb9e19
+commit 4e2dda748a618157d3dc5930526843992436e127
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 16 16:29:03 2025 +0000
+Date:   Thu Sep 18 20:26:10 2025 +0000
 
     [BOT] post-merge updates
 
@@ -1354,11 +1359,16 @@ Date:   Sun Feb 9 19:21:09 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 1398cccd7d18259896263245b934d78c91441bee
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 16 21:06:49 2025 +0000
+commit c61c5bd69464bbafc9429a5b2f3e25c560321cad
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Sep 18 15:09:44 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (100 of 100 strings)
+    
+    Translation: server-tools-17.0/server-tools-17.0-fetchmail_attach_from_folder
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-17-0/server-tools-17-0-fetchmail_attach_from_folder/it/
 
 
 ## server-auth
@@ -1412,9 +1422,9 @@ Date:   Wed Jun 4 03:42:57 2025 +0000
 
 ## server-ux
 From [https://github.com/OCA/server-ux.git](https://github.com/OCA/server-ux.git)
-commit c4a20bbe79c25cf4a287482ae00da8b2ad4f1ada
+commit bbc54d2518122bef45035cd8feeee70195872531
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 3 08:13:57 2025 +0000
+Date:   Thu Sep 18 20:37:31 2025 +0000
 
     [BOT] post-merge updates
 
