@@ -1887,6 +1887,7 @@ addon | version | maintainers | summary
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 15.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
 [sale_order_report_without_price](sale_order_report_without_price/) | 15.0.1.0.0 |  | Allow you to generate quotation and order reports without price.
 [sale_order_restrict_cancel_existing_invoice](sale_order_restrict_cancel_existing_invoice/) | 15.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to restrict sale order cancelling if an invoice exists
+[sale_order_restrict_copy_archived_product](sale_order_restrict_copy_archived_product/) | 15.0.1.0.0 |  | Restrict dulpication of sales order if they have archived products
 [sale_order_revision](sale_order_revision/) | 15.0.1.0.1 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 15.0.2.2.2 |  | Sale product in a secondary unit
 [sale_order_type](sale_order_type/) | 15.0.2.1.4 |  | Sale Order Type
@@ -5327,7 +5328,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [currency_rate_update_TH_BOT](currency_rate_update_TH_BOT/) | 15.0.1.0.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Currency Rate Update - BOT
 [l10n_th_account_asset_management](l10n_th_account_asset_management/) | 15.0.2.2.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Assets Management
-[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.2.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
+[l10n_th_account_tax](l10n_th_account_tax/) | 15.0.2.3.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - VAT and Withholding Tax
 [l10n_th_account_tax_expense](l10n_th_account_tax_expense/) | 15.0.2.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Thai Localization - Expense Tax
 [l10n_th_account_tax_expense_operating_unit](l10n_th_account_tax_expense_operating_unit/) | 15.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Expense Tax Operating Unit
 [l10n_th_account_tax_inter_company](l10n_th_account_tax_inter_company/) | 15.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Inter Company Tax
@@ -5668,7 +5669,7 @@ addon | version | maintainers | summary
 [delivery_correos_express](delivery_correos_express/) | 15.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
 [delivery_cttexpress](delivery_cttexpress/) | 15.0.1.1.1 |  | Delivery Carrier implementation for CTT Express API
 [delivery_free_fee_removal](delivery_free_fee_removal/) | 15.0.1.0.0 |  | Hide free fee lines on sales orders
-[delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.2 |  | Multiple destinations for the same delivery method
+[delivery_multi_destination](delivery_multi_destination/) | 15.0.1.0.3 |  | Multiple destinations for the same delivery method
 [delivery_package_number](delivery_package_number/) | 15.0.2.2.1 |  | Set or compute number of packages for a picking
 [delivery_price_method](delivery_price_method/) | 15.0.1.0.0 |  | Provides fields to be able to contemplate the tracking statesand also adds a global fields
 [delivery_price_rule_untaxed](delivery_price_rule_untaxed/) | 15.0.1.0.0 | <a href='https://github.com/AshishHirapara'><img src='https://github.com/AshishHirapara.png' width='32' height='32' style='border-radius:50%;' alt='AshishHirapara'/></a> | Add untaxed amount to variables for price delivery price rule
@@ -5972,7 +5973,7 @@ addon | version | maintainers | summary
 [stock_inventory_count_to_zero](stock_inventory_count_to_zero/) | 15.0.1.0.0 |  | Request an inventory count filling the quantities to zero as default
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 15.0.1.1.0 |  | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_lockdown](stock_inventory_lockdown/) | 15.0.1.0.1 |  | Lock down stock locations during inventories.
-[stock_inventory_verification_request](stock_inventory_verification_request/) | 15.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
+[stock_inventory_verification_request](stock_inventory_verification_request/) | 15.0.1.2.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
 [stock_location_lockdown](stock_location_lockdown/) | 15.0.1.0.1 |  | Prevent to add stock on locked locations
 [stock_location_position](stock_location_position/) | 15.0.1.0.0 |  | Add coordinate attributes on stock location.
 [stock_location_route_description](stock_location_route_description/) | 15.0.1.0.0 |  | Add description field on stock routes.
@@ -6414,25 +6415,25 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[document_page_environment_manual](document_page_environment_manual/) | 15.0.1.0.0 |  | Document Management - Wiki - Environment Manual
-[document_page_environmental_aspect](document_page_environmental_aspect/) | 15.0.1.0.0 |  | Environmental Aspects
-[document_page_health_safety_manual](document_page_health_safety_manual/) | 15.0.1.0.0 |  | Health and Safety Manual
-[document_page_procedure](document_page_procedure/) | 15.0.1.0.0 |  | Document Management - Wiki - Procedures
-[document_page_quality_manual](document_page_quality_manual/) | 15.0.1.0.0 |  | Quality Manual
-[document_page_work_instruction](document_page_work_instruction/) | 15.0.1.0.0 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 15.0.1.0.1 |  | Management System
+[document_page_environment_manual](document_page_environment_manual/) | 15.0.1.1.0 |  | Document Management - Wiki - Environment Manual
+[document_page_environmental_aspect](document_page_environmental_aspect/) | 15.0.1.1.0 |  | Environmental Aspects
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 15.0.1.1.0 |  | Health and Safety Manual
+[document_page_procedure](document_page_procedure/) | 15.0.1.1.0 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 15.0.1.1.0 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 15.0.1.1.0 |  | Document Management - Wiki - Work Instructions
+[mgmtsystem](mgmtsystem/) | 15.0.1.1.0 |  | Management System
 [mgmtsystem_action](mgmtsystem_action/) | 15.0.1.0.2 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 15.0.1.0.0 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 15.0.1.1.0 |  | Add Template management for Actions.
-[mgmtsystem_audit](mgmtsystem_audit/) | 15.0.1.0.1 |  | Management System - Audit
+[mgmtsystem_audit](mgmtsystem_audit/) | 15.0.1.1.0 |  | Management System - Audit
 [mgmtsystem_claim](mgmtsystem_claim/) | 15.0.1.0.1 |  | Management System - Claim
 [mgmtsystem_environment](mgmtsystem_environment/) | 15.0.1.0.0 |  | Environment Management System
-[mgmtsystem_hazard](mgmtsystem_hazard/) | 15.0.1.0.0 |  | Hazard
-[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 15.0.1.0.1 |  | Hazard Risk
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 15.0.1.1.0 |  | Hazard
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 15.0.1.1.0 |  | Hazard Risk
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 15.0.1.0.0 |  | Health and Safety Management System
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 15.0.1.0.0 |  | Information Security Management System Manual
-[mgmtsystem_manual](mgmtsystem_manual/) | 15.0.1.0.0 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 15.0.1.1.3 |  | Management System - Nonconformity
+[mgmtsystem_manual](mgmtsystem_manual/) | 15.0.1.1.0 |  | Management System - Manual
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 15.0.1.2.0 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 15.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_mrp](mgmtsystem_nonconformity_mrp/) | 15.0.1.0.0 |  | Bridge module between mrp and mgmsystem
 [mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 15.0.1.0.0 |  | Bridge module between Product and Management System.
@@ -6440,7 +6441,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 15.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 15.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 15.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_quality](mgmtsystem_quality/) | 15.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
+[mgmtsystem_quality](mgmtsystem_quality/) | 15.0.1.1.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 15.0.2.0.0 |  | Management System - Review
 [mgmtsystem_review_survey](mgmtsystem_review_survey/) | 15.0.2.0.0 |  | Management System - Review Survey
 [mgmtsystem_survey](mgmtsystem_survey/) | 15.0.1.0.0 |  | Management System - Survey

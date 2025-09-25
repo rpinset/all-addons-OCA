@@ -339,11 +339,16 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit c390d834784fea7fddb04166f9c4dae86bcbd073
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Sep 2 14:22:23 2025 +0000
+commit f1e7d843d1bbdf78642f0c505f64416df45f549a
+Author: Alberto Martínez <alberto.martinez@sygel.es>
+Date:   Thu Sep 25 07:45:02 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (2 of 2 strings)
+    
+    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_order_restrict_copy_archived_product
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_order_restrict_copy_archived_product/es/
 
 
 ## crm
@@ -457,11 +462,11 @@ Date:   Thu Sep 18 06:24:55 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit aae265dfa2f247f0aaee67fc595e465fde529428
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Thu Sep 18 20:46:22 2025 +0000
+commit 486b7da40a949414d7d2e2ab99bf108dc656b07a
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Tue Sep 23 08:42:33 2025 +0000
 
-    [BOT] post-merge updates
+    Added translation using Weblate (Catalan)
 
 
 ## field-service
@@ -930,11 +935,16 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit 98515c37f75e4ae30f9559db1d616a0c8eba3bfe
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Fri Aug 29 12:40:54 2025 +0000
+commit f31eed418cdb3b1542cb6cd9e65c241a898826b3
+Author: Weblate <noreply@weblate.org>
+Date:   Tue Sep 23 06:10:10 2025 +0000
 
-    [BOT] post-merge updates
+    Update translation files
+    
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    
+    Translation: l10n-thailand-15.0/l10n-thailand-15.0-l10n_th_account_tax
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-thailand-15-0/l10n-thailand-15-0-l10n_th_account_tax/
 
 
 ## l10n-turkey
@@ -993,16 +1003,11 @@ Date:   Sun Feb 2 19:52:24 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit b28b1d10417987e5becb88780d1170c5aa4f5d39
-Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
-Date:   Tue Jul 8 07:07:37 2025 +0000
+commit dd20d1e2ff878f7baa2e68af5b04b0ad91d0116a
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Sep 25 11:26:03 2025 +0000
 
-    Translated using Weblate (Catalan)
-    
-    Currently translated at 100.0% (19 of 19 strings)
-    
-    Translation: delivery-carrier-15.0/delivery-carrier-15.0-partner_delivery_zone
-    Translate-URL: https://translation.odoo-community.org/projects/delivery-carrier-15-0/delivery-carrier-15-0-partner_delivery_zone/ca/
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
@@ -1021,16 +1026,16 @@ Date:   Tue Sep 9 10:05:39 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 12da91613f1c745c0fdbc714a8730a6295133970
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Fri Aug 8 12:13:40 2025 +0000
+commit 9d0c97d34dc3a0cc70318d871791a9a2e9bbe34d
+Author: Sergio Teruel <sergio.teruel@tecnativa.com>
+Date:   Wed Sep 24 15:09:45 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Spanish)
     
     Currently translated at 100.0% (121 of 121 strings)
     
     Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_return_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_return_request/it/
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_return_request/es/
 
 
 ## stock-logistics-tracking
@@ -1044,16 +1049,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit 52eb9bec37c7e85eef9117adbce6310f6027bf7d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 17 09:07:06 2025 +0000
+commit f891596f4cb85d80e83c5e931e444950792e72b1
+Author: Weblate <noreply@weblate.org>
+Date:   Thu Sep 25 14:21:18 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 80.3% (123 of 153 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_cycle_count
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_cycle_count/it/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_inventory_verification_request
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_inventory_verification_request/
 
 
 ## stock-logistics-reporting
@@ -1132,16 +1137,16 @@ Date:   Sun Feb 2 19:57:16 2025 +0000
 
 ## management-system
 From [https://github.com/OCA/management-system.git](https://github.com/OCA/management-system.git)
-commit 87afb9a7027de530c287a5b4e42b72b36955eb91
+commit 0bc16f45ac6957c062538a5076b8da358bceb499
 Author: Weblate <noreply@weblate.org>
-Date:   Tue Jul 29 19:08:26 2025 +0000
+Date:   Wed Sep 24 13:40:27 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: management-system-15.0/management-system-15.0-mgmtsystem_review
-    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_review/
+    Translation: management-system-15.0/management-system-15.0-mgmtsystem_nonconformity
+    Translate-URL: https://translation.odoo-community.org/projects/management-system-15-0/management-system-15-0-mgmtsystem_nonconformity/
 
 
 ## pms
