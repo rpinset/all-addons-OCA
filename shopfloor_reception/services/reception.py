@@ -221,9 +221,13 @@ class Reception(Component):
         )
         pickings = move_lines.move_id.picking_id
         if pickings:
+            message = None
+            # Don't display error message if just one picking has been found
+            if len(pickings) > 1:
+                message = self.msg_store.multiple_picks_found_select_manually()
             return self._response_for_select_document(
                 pickings=pickings,
-                message=self.msg_store.multiple_picks_found_select_manually(),
+                message=message,
             )
         return self._response_for_select_document(
             pickings=pickings,
@@ -1171,7 +1175,11 @@ class Reception(Component):
     ):
         handlers_by_type = self._set_quantity__get_handlers_by_type()
         search = self._actions_for("search")
-        search_result = search.find(barcode, handlers_by_type.keys())
+        search_result = search.find(
+            barcode,
+            handlers_by_type.keys(),
+            handler_kw=dict(lot=dict(products=selected_line.product_id)),
+        )
         handler = handlers_by_type.get(search_result.type)
         if handler:
             return handler(picking, selected_line, search_result.record)

@@ -6,10 +6,18 @@
 import {browser} from "@web/core/browser/browser";
 import {SIZES} from "@web/core/ui/ui_service";
 
-import {append, combineAttributes} from "@web/core/utils/xml";
+import {append} from "@web/core/utils/xml";
 import {FormController} from "@web/views/form/form_controller";
 import {patch} from "@web/core/utils/patch";
-import {onMounted, onPatched, useExternalListener, useRef, useState} from "@odoo/owl";
+import {
+    onMounted,
+    onPatched,
+    onWillDestroy,
+    onWillPatch,
+    useExternalListener,
+    useRef,
+    useState,
+} from "@odoo/owl";
 
 /**
  * So, you've landed here and you have no idea what this is about. Don't worry, you're
@@ -60,6 +68,12 @@ patch(FormController.prototype, "web_chatter_position", {
 
         this.rootRef = useRef("root");
 
+        onWillPatch(() => {
+            if (this.rootRef.el && this.state.currentPosition === "bottom") {
+                this._moveChatter(this.rootRef.el);
+            }
+        });
+
         onMounted(() => {
             this.moveChatter();
         });
@@ -73,13 +87,14 @@ patch(FormController.prototype, "web_chatter_position", {
                 this.rootRef.el.style.overflow = "auto";
             }
         });
+
         onPatched(() => {
-            if (!this.rootRef || !this.rootRef.el) return;
-            // After resizing, move Chatter back to bottom
-            const fullSize = this.rootRef.el.classList.contains("o_xxl_form_view");
-            if (this.state.currentPosition === "bottom" && fullSize) {
-                const formSheetBg = this.rootRef.el.querySelector(".o_form_sheet_bg");
-                this._moveChatter(formSheetBg);
+            this.moveChatter();
+        });
+
+        onWillDestroy(() => {
+            if (this.rootRef.el && this.state.currentPosition === "bottom") {
+                this._moveChatter(this.rootRef.el);
             }
         });
     },
@@ -96,7 +111,6 @@ patch(FormController.prototype, "web_chatter_position", {
 
     moveChatter() {
         if (
-            this.hasAttachmentViewer() ||
             this.ui.size < SIZES.XXL || // Let standard handle when screen is small
             this.state.currentPosition === "auto"
         ) {
@@ -106,10 +120,13 @@ patch(FormController.prototype, "web_chatter_position", {
         if (!rootEl) {
             return;
         }
-        const formSheetBg = rootEl.querySelector(".o_form_sheet_bg");
-        if (!formSheetBg) return;
 
-        if (this.state.currentPosition === "bottom") {
+        const formSheetBg = rootEl.querySelector(".o_form_sheet_bg");
+        if (!formSheetBg) {
+            return;
+        }
+
+        if (this.hasAttachmentViewer() || this.state.currentPosition === "bottom") {
             this._moveChatter(formSheetBg);
         } else if (this.state.currentPosition === "sided") {
             this._moveChatter(rootEl);
@@ -128,21 +145,22 @@ patch(FormController.prototype, "web_chatter_position", {
         }
         append(target, currentChatter);
 
-        if (this.state.currentPosition === "bottom") {
-            currentChatter.classList.replace("o-aside", "o-isInFormSheetBg");
-            const chatterContainer = currentChatter.querySelector(
-                "div.o_ChatterContainer"
-            );
-            const hasClassOIsInFormSheetBg =
-                chatterContainer.classList.contains("o-isInFormSheetBg");
-            const hasClassMxAuto = chatterContainer.classList.contains("mx-auto");
-            if (!hasClassOIsInFormSheetBg && !hasClassMxAuto)
-                combineAttributes(chatterContainer, "class", [
-                    "o-isInFormSheetBg",
-                    "mx-auto",
-                ]);
+        const forceBottom = this.hasAttachmentViewer();
+        const chatterContainer = currentChatter.querySelector("div.o_ChatterContainer");
+
+        if (forceBottom || this.state.currentPosition === "bottom") {
+            currentChatter.classList.remove("o-aside");
+            currentChatter.classList.add("o-isInFormSheetBg");
+            if (chatterContainer) {
+                chatterContainer.classList.add("o-isInFormSheetBg", "mx-auto");
+            }
         } else {
-            currentChatter.classList.replace("o-isInFormSheetBg", "o-aside");
+            // Sided
+            currentChatter.classList.remove("o-isInFormSheetBg");
+            currentChatter.classList.add("o-aside");
+            if (chatterContainer) {
+                chatterContainer.classList.remove("o-isInFormSheetBg", "mx-auto");
+            }
         }
     },
 });

@@ -365,7 +365,13 @@ class OnlineBankStatementProviderPayPal(models.Model):
     def _paypal_get_transaction(self, token, transaction_id, timestamp):
         self.ensure_one()
         transaction_date_ini = (timestamp - relativedelta(seconds=1)).isoformat() + "Z"
-        transaction_date_end = (timestamp + relativedelta(seconds=1)).isoformat() + "Z"
+        # We want to intentionally force 23:59:59 because in some very specific cases
+        # and without apparent explanation, a transaction that has a specific date and
+        # time defined is not obtained at that time, therefore, we want to ensure that
+        # it will be obtained in this request to avoid false errors.
+        transaction_date_end = (
+            timestamp + relativedelta(hour=23, minute=59, second=59)
+        ).isoformat() + "Z"
         url = (
             (self.api_base or PAYPAL_API_BASE)
             + "/v1/reporting/transactions"

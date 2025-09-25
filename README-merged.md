@@ -1113,10 +1113,10 @@ addon | version | maintainers | summary
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_ofx](account_statement_import_ofx/) | 16.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
 [account_statement_import_ofx_by_acctid](account_statement_import_ofx_by_acctid/) | 16.0.1.0.0 |  | Import OFX Bank Statement by ACCTID
-[account_statement_import_online](account_statement_import_online/) | 16.0.1.4.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 16.0.1.4.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 16.0.1.2.10 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ofx](account_statement_import_online_ofx/) | 16.0.1.0.0 |  | Online bank statements for OFX
-[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.2 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
+[account_statement_import_online_paypal](account_statement_import_online_paypal/) | 16.0.1.0.3 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements for PayPal.com
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 16.0.1.1.3 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_qonto](account_statement_import_online_qonto/) | 16.0.1.0.1 |  | Online Bank Statements: Qonto
 [account_statement_import_qif](account_statement_import_qif/) | 16.0.1.0.0 |  | Import QIF Bank Statements
@@ -1863,6 +1863,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[account_invoice_pricelist_technical](account_invoice_pricelist_technical/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Prevent technical pricelists from being selected on invoice forms
 [partner_contact_sale_info_propagation](partner_contact_sale_info_propagation/) | 16.0.1.0.1 |  | Propagate Salesperson and Sales Channel from Company to Contacts
 [partner_sale_pivot](partner_sale_pivot/) | 16.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Sales analysis from customer form view
 [portal_sale_order_search](portal_sale_order_search/) | 16.0.1.0.1 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Allow customers to set and search their own order reference in portal
@@ -1898,7 +1899,7 @@ addon | version | maintainers | summary
 [sale_invoice_split_payment](sale_invoice_split_payment/) | 16.0.1.0.0 |  | Split by payment term generated invoices from sale orders
 [sale_last_price_info](sale_last_price_info/) | 16.0.1.0.0 |  | Product Last Price Info - Sale
 [sale_loyalty_exclude](sale_loyalty_exclude/) | 16.0.1.1.0 |  | Exclude products from sale loyalty program
-[sale_manual_delivery](sale_manual_delivery/) | 16.0.1.0.2 |  | Create manually your deliveries
+[sale_manual_delivery](sale_manual_delivery/) | 16.0.1.0.3 |  | Create manually your deliveries
 [sale_margin_update](sale_margin_update/) | 16.0.1.0.0 |  | Recalculate expected unit price from margin.
 [sale_mrp_bom](sale_mrp_bom/) | 16.0.1.0.0 |  | Allows define a BOM in the sales lines.
 [sale_numeric_step](sale_numeric_step/) | 16.0.1.0.1 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Improve mobile/tablet sale process by adding numeric step widgets
@@ -1969,10 +1970,12 @@ addon | version | maintainers | summary
 [sale_procurement_customer](sale_procurement_customer/) | 16.0.1.0.0 |  | Allows to transmit the customer to the procurement group
 [sale_procurement_group_by_line](sale_procurement_group_by_line/) | 16.0.1.0.1 |  | Base module for multiple procurement group by Sale order
 [sale_product_category_menu](sale_product_category_menu/) | 16.0.1.0.0 |  | Shows 'Product Categories' menu item in Sales
+[sale_product_email](sale_product_email/) | 16.0.1.0.0 |  | Send a product-specific email to its buyers
 [sale_product_multi_add](sale_product_multi_add/) | 16.0.1.1.0 |  | Sale Product Multi Add
 [sale_product_packaging_container_deposit](sale_product_packaging_container_deposit/) | 16.0.1.1.1 |  | Sale Product Packaging Container Deposit
 [sale_product_set](sale_product_set/) | 16.0.3.0.0 |  | Sale product set
 [sale_quotation_number](sale_quotation_number/) | 16.0.2.0.0 |  | Different sequence for sale quotations
+[sale_readonly_security](sale_readonly_security/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Readonly Security
 [sale_restricted_qty](sale_restricted_qty/) | 16.0.1.0.0 | <a href='https://github.com/ashishhirapara'><img src='https://github.com/ashishhirapara.png' width='32' height='32' style='border-radius:50%;' alt='ashishhirapara'/></a> | Sale order min quantity
 [sale_shipping_info_helper](sale_shipping_info_helper/) | 16.0.1.0.0 |  | Add shipping amounts on sale order
 [sale_sourced_by_line](sale_sourced_by_line/) | 16.0.1.0.0 |  | Multiple warehouse source locations for Sale order
@@ -1986,8 +1989,10 @@ addon | version | maintainers | summary
 [sale_stock_picking_note](sale_stock_picking_note/) | 16.0.1.1.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add picking note in sale and purchase order
 [sale_stock_product_recommendation](sale_stock_product_recommendation/) | 16.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display stock info when recommending products to sell
 [sale_stock_reservation_issue_on_qty_at_date_widget](sale_stock_reservation_issue_on_qty_at_date_widget/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Warn user when a reservation issue will happen when confirming an order
+[sale_stock_secondary_unit](sale_stock_secondary_unit/) | 16.0.1.0.0 |  | Get product quantities in a secondary unit
 [sale_substate](sale_substate/) | 16.0.1.0.0 |  | Sale Sub State
 [sale_tier_validation](sale_tier_validation/) | 16.0.1.1.2 |  | Extends the functionality of Sale Orders to support a tier validation process.
+[sale_timesheet_project_manual](sale_timesheet_project_manual/) | 16.0.1.0.0 |  | Allows to create the project/tasks before the sale confirmation
 [sale_transaction_form_link](sale_transaction_form_link/) | 16.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to display a link to payment transactions on Sale Order form view.
 [sale_triple_discount](sale_triple_discount/) | 16.0.1.0.6 |  | Manage triple discount on sale order lines
 [sale_validity_auto_cancel](sale_validity_auto_cancel/) | 16.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Automatically cancel quotations after validity period.
@@ -2296,7 +2301,7 @@ addon | version | maintainers | summary
 [sale_loyalty_incompatibility](sale_loyalty_incompatibility/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to set incompatibility rules between promotions in sale orders
 [sale_loyalty_initial_date_validity](sale_loyalty_initial_date_validity/) | 16.0.1.0.1 |  | Sale Loyalty Initial Date Validity
 [sale_loyalty_limit](sale_loyalty_limit/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Restrict number of promotions per customer or salesman
-[sale_loyalty_multi_gift](sale_loyalty_multi_gift/) | 16.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to configure multiple gift rewards per promotion in sales
+[sale_loyalty_multi_gift](sale_loyalty_multi_gift/) | 16.0.1.0.1 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to configure multiple gift rewards per promotion in sales
 [sale_loyalty_order_info](sale_loyalty_order_info/) | 16.0.1.0.0 |  | Add info on sale order about applied loyalties
 [sale_loyalty_order_line_link](sale_loyalty_order_line_link/) | 16.0.1.1.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds a link between loyalty programs and their generated order linesfor easing tracking
 [sale_loyalty_order_suggestion](sale_loyalty_order_suggestion/) | 16.0.1.0.5 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Suggest promotions in the sale order line
@@ -3411,7 +3416,7 @@ addon | version | maintainers | summary
 [hr_holidays_leave_auto_approve](hr_holidays_leave_auto_approve/) | 16.0.1.0.1 |  | Leave type for auto-validation of Leaves
 [hr_holidays_natural_period](hr_holidays_natural_period/) | 16.0.1.1.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Apply natural days in holidays
 [hr_holidays_natural_period_public](hr_holidays_natural_period_public/) | 16.0.1.1.0 |  | Allow excluding public holidays for natural days holidays
-[hr_holidays_public](hr_holidays_public/) | 16.0.2.0.5 |  | Manage Public Holidays
+[hr_holidays_public](hr_holidays_public/) | 16.0.2.0.6 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 16.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Holidays Public City
 [hr_holidays_settings](hr_holidays_settings/) | 16.0.1.0.0 |  | Enables Settings Form for HR Holidays.
 [hr_holidays_summary_email](hr_holidays_summary_email/) | 16.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Notify employees with daily or weekly leaves summaries of their company.
@@ -4671,6 +4676,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_rc](l10n_it_fatturapa_out_rc/) | 16.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Integrazione l10n_it_fatturapa_out e l10n_it_reverse_charge
 [l10n_it_fatturapa_out_sp](l10n_it_fatturapa_out_sp/) | 16.0.1.0.0 |  | Scissione pagamenti in fatturapa
 [l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 16.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
+[l10n_it_fatturapa_out_triple_discount](l10n_it_fatturapa_out_triple_discount/) | 16.0.1.0.0 |  | Modulo ponte tra emissione fatture elettroniche e sconto triplo
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 16.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
 [l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.2.3 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
@@ -5359,6 +5365,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 16.0.1.4.3 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod369](l10n_es_aeat_mod369/) | 16.0.1.1.2 |  | AEAT modelo 369
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 16.0.2.11.1 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
+[l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 16.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 16.0.1.0.1 |  | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.1.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.1 |  | Force SII communication type on invoices
@@ -5405,7 +5412,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.0 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.2 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.3 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 16.0.1.0.3 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5895,7 +5902,7 @@ addon | version | maintainers | summary
 [delivery_driver_stock_picking_batch](delivery_driver_stock_picking_batch/) | 16.0.1.1.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add drivers from delivery in stock picking batch
 [delivery_dropoff_site](delivery_dropoff_site/) | 16.0.1.0.0 |  | Send goods to sites in which customers come pick up package
 [delivery_estimated_package_quantity_by_weight](delivery_estimated_package_quantity_by_weight/) | 16.0.1.0.0 |  | Compute the amount of packages a picking out should have depending on the weight of the products and the limit fixed by the carrier
-[delivery_multi_destination](delivery_multi_destination/) | 16.0.1.0.0 |  | Multiple destinations for the same delivery method
+[delivery_multi_destination](delivery_multi_destination/) | 16.0.1.0.1 |  | Multiple destinations for the same delivery method
 [delivery_package_fee](delivery_package_fee/) | 16.0.1.2.0 |  | Add fees on delivered packages on shipping methods
 [delivery_package_number](delivery_package_number/) | 16.0.2.2.1 |  | Set or compute number of packages for a picking
 [delivery_package_type_number_parcels](delivery_package_type_number_parcels/) | 16.0.1.0.2 |  | Number of parcels in a package type
@@ -6543,7 +6550,7 @@ addon | version | maintainers | summary
 [shopfloor_mobile](shopfloor_mobile/) | 16.0.1.4.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base](shopfloor_mobile_base/) | 16.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Mobile frontend for WMS Shopfloor app
 [shopfloor_mobile_base_auth_api_key](shopfloor_mobile_base_auth_api_key/) | 16.0.1.0.0 |  | Provides authentication via API key to Shopfloor base mobile app
-[shopfloor_reception](shopfloor_reception/) | 16.0.1.5.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
+[shopfloor_reception](shopfloor_reception/) | 16.0.1.6.1 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Reception scenario for shopfloor
 [shopfloor_reception_mobile](shopfloor_reception_mobile/) | 16.0.1.1.1 | <a href='https://github.com/JuMiSanAr'><img src='https://github.com/JuMiSanAr.png' width='32' height='32' style='border-radius:50%;' alt='JuMiSanAr'/></a> | Scenario for receiving products
 [shopfloor_reception_refund_return](shopfloor_reception_refund_return/) | 16.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Mark created return as to refund
 [shopfloor_rest_log](shopfloor_rest_log/) | 16.0.1.0.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> | Integrate rest_log into Shopfloor app
@@ -6793,29 +6800,29 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[document_page_environment_manual](document_page_environment_manual/) | 16.0.1.0.0 |  | Document Management - Wiki - Environment Manual
-[document_page_environmental_aspect](document_page_environmental_aspect/) | 16.0.1.0.0 |  | Environmental Aspects
-[document_page_health_safety_manual](document_page_health_safety_manual/) | 16.0.1.0.0 |  | Health and Safety Manual
-[document_page_procedure](document_page_procedure/) | 16.0.1.0.0 |  | Document Management - Wiki - Procedures
-[document_page_quality_manual](document_page_quality_manual/) | 16.0.1.0.0 |  | Quality Manual
-[document_page_work_instruction](document_page_work_instruction/) | 16.0.1.0.0 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 16.0.1.0.0 |  | Management System
+[document_page_environment_manual](document_page_environment_manual/) | 16.0.1.0.1 |  | Document Management - Wiki - Environment Manual
+[document_page_environmental_aspect](document_page_environmental_aspect/) | 16.0.1.0.1 |  | Environmental Aspects
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 16.0.1.0.1 |  | Health and Safety Manual
+[document_page_procedure](document_page_procedure/) | 16.0.1.0.1 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 16.0.1.0.1 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 16.0.1.0.1 |  | Document Management - Wiki - Work Instructions
+[mgmtsystem](mgmtsystem/) | 16.0.1.0.1 |  | Management System
 [mgmtsystem_action](mgmtsystem_action/) | 16.0.1.0.1 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 16.0.1.0.0 |  | Add information on the application of the Action.
 [mgmtsystem_action_hazard](mgmtsystem_action_hazard/) | 16.0.1.0.0 |  | Get access to actions related to a hazard
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 16.0.1.0.0 |  | Add Template management for Actions.
-[mgmtsystem_audit](mgmtsystem_audit/) | 16.0.1.0.2 |  | Management System - Audit
+[mgmtsystem_audit](mgmtsystem_audit/) | 16.0.1.1.0 |  | Management System - Audit
 [mgmtsystem_claim](mgmtsystem_claim/) | 16.0.1.1.1 |  | Management System - Claim
 [mgmtsystem_environment](mgmtsystem_environment/) | 16.0.1.0.0 |  | Environment Management System
 [mgmtsystem_evaluation](mgmtsystem_evaluation/) | 16.0.1.0.2 |  | Evaluate records within your management system
 [mgmtsystem_evaluation_hr](mgmtsystem_evaluation_hr/) | 16.0.1.0.0 |  | Allow to use evaluations on Employees
-[mgmtsystem_hazard](mgmtsystem_hazard/) | 16.0.1.1.0 |  | Hazard
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 16.0.1.2.0 |  | Hazard
 [mgmtsystem_hazard_maintenance_equipment](mgmtsystem_hazard_maintenance_equipment/) | 16.0.1.0.0 |  | Management System - Maintenance Equipment
-[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 16.0.1.0.1 |  | Hazard Risk
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 16.0.1.1.0 |  | Hazard Risk
 [mgmtsystem_health_safety](mgmtsystem_health_safety/) | 16.0.1.0.1 |  | Health and Safety Management System
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 16.0.1.0.0 |  | Information Security Management System Manual
-[mgmtsystem_manual](mgmtsystem_manual/) | 16.0.1.0.0 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 16.0.1.3.1 |  | Management System - Nonconformity
+[mgmtsystem_manual](mgmtsystem_manual/) | 16.0.1.0.1 |  | Management System - Manual
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 16.0.1.4.0 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 16.0.1.0.0 |  | Management System - Nonconformity Hazard
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 16.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 16.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
@@ -6823,9 +6830,9 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 16.0.1.0.0 |  | Bridge module between Product and Management System.
 [mgmtsystem_nonconformity_quality_control_oca](mgmtsystem_nonconformity_quality_control_oca/) | 16.0.1.0.0 |  | Bridge module between Quality Control and Non Conformities
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 16.0.1.0.0 |  | Bridge module between Repair and Non Conformities
-[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 16.0.1.0.0 |  | Add Nonconformity classification for the root context.
+[mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 16.0.1.1.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 16.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_quality](mgmtsystem_quality/) | 16.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
+[mgmtsystem_quality](mgmtsystem_quality/) | 16.0.1.0.2 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 16.0.2.0.0 |  | Management System - Review
 [mgmtsystem_review_survey](mgmtsystem_review_survey/) | 16.0.2.0.0 |  | Management System - Review Survey
 [mgmtsystem_survey](mgmtsystem_survey/) | 16.0.1.0.0 |  | Management System - Survey
@@ -6962,6 +6969,7 @@ addon | version | maintainers | summary
 [purchase_manual_delivery](purchase_manual_delivery/) | 16.0.2.0.3 |  | Prevents pickings to be auto generated upon Purchase Order confirmation and adds the ability to manually generate them as the supplier confirms the different purchase order lines.
 [purchase_merge](purchase_merge/) | 16.0.1.0.3 |  | Wizard to merge purchase with required conditions
 [purchase_minimum_amount](purchase_minimum_amount/) | 16.0.1.0.0 |  | Purchase Minimum Amount
+[purchase_mto_owner](purchase_mto_owner/) | 16.0.1.0.0 |  | Purchase MTO Owner
 [purchase_no_rfq](purchase_no_rfq/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Purchase Order - No Request For Quotation
 [purchase_only_by_packaging](purchase_only_by_packaging/) | 16.0.1.0.2 |  | Manage purchase of packaging
 [purchase_open_qty](purchase_open_qty/) | 16.0.3.0.1 |  | Allows to identify the purchase orders that have quantities pending to invoice or to receive.
@@ -7486,6 +7494,7 @@ addon | version | maintainers | summary
 [project_task_add_very_high](project_task_add_very_high/) | 16.0.1.1.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Adds extra options 'High' and 'Very High' on tasks
 [project_task_code](project_task_code/) | 16.0.1.1.0 |  | Sequential Code for Tasks
 [project_task_code_portal](project_task_code_portal/) | 16.0.1.0.0 |  | Use custom task code in customer portal
+[project_task_creation_description_notification](project_task_creation_description_notification/) | 16.0.1.0.0 |  | Project task description in notifications
 [project_task_default_stage](project_task_default_stage/) | 16.0.1.0.2 |  | Recovery default task stages for projects from v8
 [project_task_description_portal](project_task_description_portal/) | 16.0.1.0.0 |  | Dedicated task description for portal users
 [project_task_description_template](project_task_description_template/) | 16.0.1.0.0 |  | Add a description template to project tasks
@@ -7858,7 +7867,7 @@ addon | version | maintainers | summary
 [mail_disable_follower_notification](mail_disable_follower_notification/) | 16.0.1.0.0 |  | Don't send emails by default when adding followers to records
 [mail_discuss_security](mail_discuss_security/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add a group to display 'Discuss' Application menu entry
 [mail_drop_target](mail_drop_target/) | 16.0.1.1.0 |  | Attach emails to Odoo by dragging them from your desktop
-[mail_gateway](mail_gateway/) | 16.0.1.3.0 |  | Set a gateway
+[mail_gateway](mail_gateway/) | 16.0.1.3.1 |  | Set a gateway
 [mail_gateway_telegram](mail_gateway_telegram/) | 16.0.1.1.0 |  | Set a gateway for telegram
 [mail_gateway_whatsapp](mail_gateway_whatsapp/) | 16.0.1.1.0 |  | Set a gateway for whatsapp
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 16.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
@@ -8235,7 +8244,7 @@ addon | version | maintainers | summary
 [attachment_queue](attachment_queue/) | 16.0.1.2.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module adding the concept of queue for processing files
 [attachment_synchronize](attachment_synchronize/) | 16.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> <a href='https://github.com/GSLabIt'><img src='https://github.com/GSLabIt.png' width='32' height='32' style='border-radius:50%;' alt='GSLabIt'/></a> <a href='https://github.com/bealdav'><img src='https://github.com/bealdav.png' width='32' height='32' style='border-radius:50%;' alt='bealdav'/></a> | Attachment Synchronize
 [attachment_unindex_content](attachment_unindex_content/) | 16.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
-[auditlog](auditlog/) | 16.0.3.0.0 |  | Audit Log
+[auditlog](auditlog/) | 16.0.3.0.1 |  | Audit Log
 [auto_backup](auto_backup/) | 16.0.1.0.2 |  | Backups database
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 16.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Automatically delete old mail messages and attachments
 [base_changeset](base_changeset/) | 16.0.1.0.0 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Track record changesets
@@ -8257,7 +8266,7 @@ addon | version | maintainers | summary
 [base_sequence_default](base_sequence_default/) | 16.0.1.0.2 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Use sequences for default values of fields when creating a new record
 [base_sequence_option](base_sequence_option/) | 16.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 16.0.1.0.0 |  | add list support to convert_to_cache()
-[base_technical_user](base_technical_user/) | 16.0.1.0.0 |  | Add a technical user parameter on the company
+[base_technical_user](base_technical_user/) | 16.0.1.0.1 |  | Add a technical user parameter on the company
 [base_time_window](base_time_window/) | 16.0.1.1.0 |  | Base model to handle time windows
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 16.0.1.2.2 |  | Adds more operators for view inheritance
 [bus_alt_connection](bus_alt_connection/) | 16.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
@@ -9463,7 +9472,7 @@ addon | version | maintainers | summary
 [web_advanced_search](web_advanced_search/) | 16.0.1.0.6 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Easier and more powerful searching tools
 [web_apply_field_style](web_apply_field_style/) | 16.0.1.0.1 |  | Apply css class style to fields from a dict parameters
 [web_calendar_slot_duration](web_calendar_slot_duration/) | 16.0.1.1.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
-[web_chatter_position](web_chatter_position/) | 16.0.1.0.4 |  | Add an option to change the chatter position
+[web_chatter_position](web_chatter_position/) | 16.0.1.0.5 | <a href='https://github.com/trisdoan'><img src='https://github.com/trisdoan.png' width='32' height='32' style='border-radius:50%;' alt='trisdoan'/></a> | Add an option to change the chatter position
 [web_company_color](web_company_color/) | 16.0.1.2.3 |  | Web Company Color
 [web_copy_confirm](web_copy_confirm/) | 16.0.1.0.0 |  | Show confirmation dialogue before copying records
 [web_dark_mode](web_dark_mode/) | 16.0.1.0.2 |  | Enabled Dark Mode for the Odoo Backend

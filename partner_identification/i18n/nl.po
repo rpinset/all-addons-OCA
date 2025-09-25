@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: partner-contact (9.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-20 23:45+0000\n"
-"PO-Revision-Date: 2020-12-13 03:55+0000\n"
+"PO-Revision-Date: 2025-09-23 18:00+0000\n"
 "Last-Translator: Bosd <c5e2fd43-d292-4c90-9d1f-74ff3436329a@anonaddy.me>\n"
 "Language-Team: Dutch (http://www.transifex.com/oca/OCA-partner-contact-9-0/"
 "language/nl/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: partner_identification
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_id_category_form
@@ -46,7 +46,7 @@ msgstr ""
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category__code
 msgid "Abbreviation or acronym of this ID type. For example, 'driver_license'"
-msgstr ""
+msgstr "Afkorting of acroniem van dit ID-type. Bijvoorbeeld, 'rijbewijs'"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__active
@@ -60,11 +60,13 @@ msgid ""
 "Another partner, who issued this ID. For example, Traffic National "
 "Institution"
 msgstr ""
+"Een andere relatie die dit ID heeft uitgegeven. Bijvoorbeeld, de Nationale "
+"Verkeersinstelling"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__category_id
 msgid "Category"
-msgstr ""
+msgstr "Categorie"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__code
@@ -74,12 +76,12 @@ msgstr "Code"
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__color
 msgid "Color Index"
-msgstr ""
+msgstr "Kleurindex"
 
 #. module: partner_identification
 #: model:ir.model,name:partner_identification.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__create_uid
@@ -97,7 +99,7 @@ msgstr "Aangemaakt op"
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__display_name
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__display_name
 msgid "Display Name"
-msgstr "Te tonen naam"
+msgstr "Weergavenaam"
 
 #. module: partner_identification
 #. odoo-python
@@ -108,6 +110,9 @@ msgid ""
 " {name} \n"
 "({error})"
 msgstr ""
+"Fout bij het evalueren van de validatiecode van de ID-categorie:\n"
+"{name}\n"
+"({error})"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__valid_until
@@ -115,11 +120,13 @@ msgid ""
 "Expiration date. For example, date when person needs to renew his driver "
 "license, 21/10/2019"
 msgstr ""
+"Vervaldatum. Bijvoorbeeld, de datum waarop de persoon zijn rijbewijs moet "
+"vernieuwen, 21/10/2019"
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__close
 msgid "Expired"
-msgstr ""
+msgstr "Verlopen"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__id
@@ -130,33 +137,33 @@ msgstr "ID"
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__name
 msgid "ID Number"
-msgstr ""
+msgstr "ID-nummer"
 
 #. module: partner_identification
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_form
 msgid "ID Numbers"
-msgstr ""
+msgstr "ID-nummers"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__name
 msgid "ID name"
-msgstr ""
+msgstr "ID-naam"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__category_id
 msgid "ID type defined in configuration. For example, Driver License"
-msgstr ""
+msgstr "ID-type gedefinieerd in de configuratie. Bijvoorbeeld, Rijbewijs"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner__id_numbers
 #: model:ir.model.fields,field_description:partner_identification.field_res_users__id_numbers
 msgid "Identification Numbers"
-msgstr ""
+msgstr "Identificatienummers"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__partner_issued_id
 msgid "Issued by"
-msgstr ""
+msgstr "Uitgegeven door"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__date_issued
@@ -164,17 +171,19 @@ msgid ""
 "Issued date. For example, date when person approved his driving exam, "
 "21/10/2009"
 msgstr ""
+"Datum van uitgifte. Bijvoorbeeld, de datum waarop de persoon zijn rijexamen "
+"heeft gehaald, 21/10/2009"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__date_issued
 msgid "Issued on"
-msgstr ""
+msgstr "Uitgegeven op"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category____last_update
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number____last_update
 msgid "Last Modified on"
-msgstr "Laatst bijgewerkt op"
+msgstr "Laatst gewijzigd op"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__write_uid
@@ -191,18 +200,18 @@ msgstr "Laatst bijgewerkt op"
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category__name
 msgid "Name of this ID type. For example, 'Driver License'"
-msgstr ""
+msgstr "Naam van dit ID-type. Bijvoorbeeld, 'Rijbewijs'"
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__draft
 msgid "New"
-msgstr ""
+msgstr "Nieuw"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__comment
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_id_numbers_form
 msgid "Notes"
-msgstr ""
+msgstr "Notities"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__partner_id
@@ -213,64 +222,64 @@ msgstr "Relatie"
 #: model:ir.actions.act_window,name:partner_identification.action_partner_id_category
 #: model:ir.ui.menu,name:partner_identification.menu_partner_id_category
 msgid "Partner ID Categories"
-msgstr ""
+msgstr "Relatie ID-categorieën"
 
 #. module: partner_identification
 #: model:ir.model,name:partner_identification.model_res_partner_id_category
 msgid "Partner ID Category"
-msgstr ""
+msgstr "Relatie ID-categorie"
 
 #. module: partner_identification
 #: model:ir.model,name:partner_identification.model_res_partner_id_number
 msgid "Partner ID Number"
-msgstr ""
+msgstr "Relatie ID-nummer"
 
 #. module: partner_identification
 #: model:ir.actions.act_window,name:partner_identification.action_partner_id_numbers_form
 #: model:ir.ui.menu,name:partner_identification.menu_partner_id_numbers
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_id_numbers_form
 msgid "Partner ID Numbers"
-msgstr ""
+msgstr "Relatie ID-nummers"
 
 #. module: partner_identification
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_id_category_form
 msgid "Partner Identification Categories"
-msgstr ""
+msgstr "Relatie Identificatiecategorieën"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__place_issuance
 msgid "Place of Issuance"
-msgstr ""
+msgstr "Plaats van uitgifte"
 
 #. module: partner_identification
 #: model_terms:ir.ui.view,arch_db:partner_identification.view_partner_id_category_form
 msgid "Python Validation Code:"
-msgstr ""
+msgstr "Python Validatiecode:"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_category__validation_code
 msgid "Python code called to validate an id number."
-msgstr ""
+msgstr "Python-code die wordt aangeroepen om een ID-nummer te valideren."
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_category__validation_code
 msgid "Python validation code"
-msgstr ""
+msgstr "Python validatiecode"
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__open
 msgid "Running"
-msgstr ""
+msgstr "Actief"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__status
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__name
 msgid "The ID itself. For example, Driver License number of this person"
-msgstr ""
+msgstr "Het ID zelf. Bijvoorbeeld, het rijbewijsnummer van deze persoon"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__place_issuance
@@ -278,6 +287,8 @@ msgid ""
 "The place where the ID has been issued. For example the country for "
 "passports and visa"
 msgstr ""
+"De plaats waar het ID is uitgegeven. Bijvoorbeeld, het land voor paspoorten "
+"en visa"
 
 #. module: partner_identification
 #. odoo-python
@@ -288,30 +299,33 @@ msgid ""
 "write via the {field_name} field is not possible. In order to fix this, "
 "please use the IDs tab."
 msgstr ""
+"Dit {record_name} heeft meerdere ID's van dit type ({category_code}), dus "
+"een wijziging via het veld {field_name} is niet mogelijk. Gebruik het "
+"tabblad ID's om dit op te lossen."
 
 #. module: partner_identification
 #: model:ir.model.fields.selection,name:partner_identification.selection__res_partner_id_number__status__pending
 msgid "To Renew"
-msgstr ""
+msgstr "Te vernieuwen"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__valid_from
 msgid "Valid from"
-msgstr ""
+msgstr "Geldig vanaf"
 
 #. module: partner_identification
 #: model:ir.model.fields,field_description:partner_identification.field_res_partner_id_number__valid_until
 msgid "Valid until"
-msgstr ""
+msgstr "Geldig tot"
 
 #. module: partner_identification
 #: model:ir.model.fields,help:partner_identification.field_res_partner_id_number__valid_from
 msgid "Validation period stating date."
-msgstr ""
+msgstr "Geldigheidsperiode startdatum."
 
 #. module: partner_identification
 #. odoo-python
 #: code:addons/partner_identification/models/res_partner_id_category.py:0
 #, python-format
 msgid "{id_name} is not a valid {cat_name} identifier"
-msgstr ""
+msgstr "{id_name} is geen geldig {cat_name} identificatienummer"
