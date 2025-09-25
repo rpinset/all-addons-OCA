@@ -1388,6 +1388,7 @@ msgid ""
 msgstr "选择报告的目标货币。如果公司有不同的货币，则需要。"
 
 #. module: mis_builder
+#: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_instance_period__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi__sequence
 #: model:ir.model.fields,field_description:mis_builder.field_mis_report_kpi_expression__sequence

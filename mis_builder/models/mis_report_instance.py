@@ -488,8 +488,10 @@ class MisReportInstance(models.Model):
 
     _name = "mis.report.instance"
     _description = "MIS Report Instance"
+    _order = "sequence, id"
 
     name = fields.Char(required=True, translate=True)
+    sequence = fields.Integer(default=10)
     description = fields.Char(related="report_id.description")
     date = fields.Date(
         string="Base date", help="Report base date " "(leave empty to use current date)"

@@ -27,6 +27,7 @@
         <field name="model">mis.report.instance</field>
         <field name="arch" type="xml">
             <list>
+                <field name="sequence" widget="handle" />
                 <button
                     type="object"
                     name="preview"
