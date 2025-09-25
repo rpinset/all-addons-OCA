@@ -263,7 +263,7 @@ class SaleOrderRecommendationLine(models.TransientModel):
     product_uom_category_id = fields.Many2one(
         related="product_id.uom_id.category_id", depends=["product_id"]
     )
-    price_unit = fields.Monetary(compute="_compute_price_unit")
+    price_unit = fields.Float(compute="_compute_price_unit", digits="Product Price")
     pricelist_id = fields.Many2one(related="wizard_id.order_id.pricelist_id")
     times_delivered = fields.Integer(readonly=True)
     units_delivered = fields.Float(readonly=True)

@@ -12,6 +12,7 @@ from odoo_test_helper import FakeModelLoader
 
 from odoo import _, fields
 from odoo.tests import common
+from odoo.tools import mute_logger
 
 _logger = logging.getLogger(__name__)
 
@@ -394,6 +395,7 @@ class TestAccountBankAccountStatementImportOnline(common.TransactionCase):
         self._getExpectedStatements(0)
         self._getExpectedLines(31)
 
+    @mute_logger("odoo.models.unlink")
     def test_unlink_provider(self):
         """Unlink provider should clear fields on journal."""
         self.provider.unlink()

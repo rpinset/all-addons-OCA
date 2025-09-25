@@ -791,12 +791,12 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_credit_control](account_credit_control/) | 17.0.2.2.3 |  | Account Credit Control
 [account_credit_control_dunning_fees](account_credit_control_dunning_fees/) | 17.0.1.0.0 |  | Credit control dunning fees
-[account_financial_risk](account_financial_risk/) | 17.0.1.2.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
+[account_financial_risk](account_financial_risk/) | 17.0.1.3.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Manage customer risk
 [account_invoice_overdue_warn](account_invoice_overdue_warn/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show warning on customer form view if it has overdue invoices
 [account_invoice_overdue_warn_sale](account_invoice_overdue_warn_sale/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Show overdue warning on sale order form view
 [account_payment_return_financial_risk](account_payment_return_financial_risk/) | 17.0.1.0.0 |  | Partner Payment Return Risk
 [partner_risk_insurance](partner_risk_insurance/) | 17.0.1.0.0 | <a href='https://github.com/Daniel-CA'><img src='https://github.com/Daniel-CA.png' width='32' height='32' style='border-radius:50%;' alt='Daniel-CA'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/omar7r'><img src='https://github.com/omar7r.png' width='32' height='32' style='border-radius:50%;' alt='omar7r'/></a> <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Risk insurance partner information
-[sale_financial_risk](sale_financial_risk/) | 17.0.1.0.2 |  | Manage partner risk in sales orders
+[sale_financial_risk](sale_financial_risk/) | 17.0.1.0.3 |  | Manage partner risk in sales orders
 [sale_financial_risk_info](sale_financial_risk_info/) | 17.0.1.0.0 |  | Adds risk consumption info in sales orders.
 
 [//]: # (end addons)
@@ -1012,7 +1012,7 @@ addon | version | maintainers | summary
 [account_statement_import_file_reconcile_oca](account_statement_import_file_reconcile_oca/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import Statement Files and Go Direct to Reconciliation
 [account_statement_import_move_line](account_statement_import_move_line/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Import journal items into bank statement
 [account_statement_import_ofx](account_statement_import_ofx/) | 17.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Import OFX Bank Statement
-[account_statement_import_online](account_statement_import_online/) | 17.0.1.1.0 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
+[account_statement_import_online](account_statement_import_online/) | 17.0.1.1.1 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Online bank statements update
 [account_statement_import_online_gocardless](account_statement_import_online_gocardless/) | 17.0.1.0.5 |  | Online Bank Statements: GoCardless
 [account_statement_import_online_ponto](account_statement_import_online_ponto/) | 17.0.1.1.1 |  | Online Bank Statements: MyPonto.com
 [account_statement_import_online_stripe](account_statement_import_online_stripe/) | 17.0.1.0.1 | <a href='https://github.com/juancarlosonate-tecnativa'><img src='https://github.com/juancarlosonate-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='juancarlosonate-tecnativa'/></a> | Online bank statements for Stripe
@@ -1743,8 +1743,10 @@ addon | version | maintainers | summary
 [sale_discount_display_amount](sale_discount_display_amount/) | 17.0.1.1.1 |  | This addon intends to display the amount of the discount computed on sale_order_line and sale_order level
 [sale_elaboration](sale_elaboration/) | 17.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Set an elaboration for any sale line
 [sale_exception](sale_exception/) | 17.0.1.0.0 |  | Custom exceptions on sale order
+[sale_exception_holidays_public](sale_exception_holidays_public/) | 17.0.1.0.0 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Raise a sale exception if there is a commitment_date on the SO and this date is a public holidays for the shipping partner address
 [sale_fixed_discount](sale_fixed_discount/) | 17.0.2.1.0 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 17.0.1.1.1 |  | Allows to force the invoice status of the sales order to Invoiced
+[sale_force_invoiced_quantity](sale_force_invoiced_quantity/) | 17.0.1.0.0 |  | Add manual invoice quantity in sales order lines
 [sale_force_whole_invoiceability](sale_force_whole_invoiceability/) | 17.0.1.0.0 |  | Sale Force Whole Invoiceability
 [sale_global_discount](sale_global_discount/) | 17.0.1.0.0 |  | Sale Global Discount
 [sale_invoice_frequency](sale_invoice_frequency/) | 17.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
@@ -1756,7 +1758,7 @@ addon | version | maintainers | summary
 [sale_order_carrier_auto_assign](sale_order_carrier_auto_assign/) | 17.0.1.1.1 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Auto assign delivery carrier on sale order confirmation
 [sale_order_general_discount](sale_order_general_discount/) | 17.0.1.0.0 |  | General discount per sale order
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 17.0.2.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
-[sale_order_line_date](sale_order_line_date/) | 17.0.1.0.0 |  | Adds a commitment date to each sale order line.
+[sale_order_line_date](sale_order_line_date/) | 17.0.1.0.1 |  | Adds a commitment date to each sale order line.
 [sale_order_line_input](sale_order_line_input/) | 17.0.1.0.0 |  | Search, create or modify directly sale order lines
 [sale_order_line_menu](sale_order_line_menu/) | 17.0.1.0.0 |  | Adds a Sale Order Lines Menu
 [sale_order_line_price_history](sale_order_line_price_history/) | 17.0.1.1.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Sale order line price history
@@ -1769,7 +1771,7 @@ addon | version | maintainers | summary
 [sale_order_priority](sale_order_priority/) | 17.0.1.0.1 |  | Define priority on sale orders
 [sale_order_product_assortment](sale_order_product_assortment/) | 17.0.1.0.0 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Module that allows to use the assortments on sale orders
 [sale_order_product_availability_inline](sale_order_product_availability_inline/) | 17.0.1.0.0 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Show product availability in sales order line product drop-down.
-[sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
+[sale_order_product_recommendation](sale_order_product_recommendation/) | 17.0.1.1.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Recommend products to sell to customer based on history
 [sale_order_qty_change_no_recompute](sale_order_qty_change_no_recompute/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Prevent recompute if only quantity has changed in sale order line
 [sale_order_revision](sale_order_revision/) | 17.0.1.0.0 |  | Keep track of revised quotations
 [sale_order_secondary_unit](sale_order_secondary_unit/) | 17.0.1.0.5 |  | Sale product in a secondary unit
@@ -1778,6 +1780,7 @@ addon | version | maintainers | summary
 [sale_order_warn_message](sale_order_warn_message/) | 17.0.1.0.1 |  | Add a popup warning on sale to ensure warning is populated
 [sale_partner_address_restrict](sale_partner_address_restrict/) | 17.0.1.1.0 |  | Restrict addresses domain in the sales order form taking into account the partner selected
 [sale_partner_incoterm](sale_partner_incoterm/) | 17.0.1.0.0 |  | Set the customer preferred incoterm on each sales order
+[sale_partner_order_template](sale_partner_order_template/) | 17.0.1.0.0 |  | Order template in partner
 [sale_partner_selectable_option](sale_partner_selectable_option/) | 17.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Sale Partner Selectable Option
 [sale_partner_utm_source](sale_partner_utm_source/) | 17.0.1.0.0 |  | This module adds the use of utm source in sales
 [sale_payment_sheet](sale_payment_sheet/) | 17.0.1.0.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Allow to create invoice payments to commercial users without accounting permissions
@@ -2854,6 +2857,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [crm_timesheet](crm_timesheet/) | 17.0.1.0.1 |  | CRM Timesheet
+[hr_timesheet_autofill_project_off](hr_timesheet_autofill_project_off/) | 17.0.1.0.0 |  | Timesheet - Autofill project off
 [hr_timesheet_begin_end](hr_timesheet_begin_end/) | 17.0.1.0.1 |  | Timesheet - Begin/End Hours
 [hr_timesheet_calendar](hr_timesheet_calendar/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | HR Timesheet Calendar
 [hr_timesheet_date_order_desc](hr_timesheet_date_order_desc/) | 17.0.1.0.0 | <a href='https://github.com/lbarry-apsl'><img src='https://github.com/lbarry-apsl.png' width='32' height='32' style='border-radius:50%;' alt='lbarry-apsl'/></a> | Add new timesheet entries to the top of the list and order by date descending
@@ -3219,7 +3223,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.1.2 |  | Intercompany invoice rules
+[account_invoice_inter_company](account_invoice_inter_company/) | 17.0.1.1.4 |  | Intercompany invoice rules
 [account_multicompany_easy_creation](account_multicompany_easy_creation/) | 17.0.1.0.0 |  | This module adds a wizard to create companies easily
 [base_multi_company](base_multi_company/) | 17.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Provides a base for adding multi-company support to models.
 [crm_tag_multi_company](crm_tag_multi_company/) | 17.0.1.0.0 |  | This module add multi-company management to crm tag
@@ -4890,6 +4894,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_mod347](l10n_es_aeat_mod347/) | 17.0.1.4.2 |  | AEAT modelo 347
 [l10n_es_aeat_mod349](l10n_es_aeat_mod349/) | 17.0.1.1.5 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 349
 [l10n_es_aeat_mod390](l10n_es_aeat_mod390/) | 17.0.1.8.2 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | AEAT modelo 390
+[l10n_es_aeat_mod390_oss](l10n_es_aeat_mod390_oss/) | 17.0.1.0.0 |  | AEAT modelo 390 - OSS
 [l10n_es_aeat_mod592](l10n_es_aeat_mod592/) | 17.0.1.0.2 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | AEAT modelo 592
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 17.0.1.0.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 17.0.1.0.0 |  | Envio de factura simplificada resumen TPV a SII
@@ -4898,7 +4903,9 @@ addon | version | maintainers | summary
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 17.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_atc](l10n_es_atc/) | 17.0.1.0.2 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_atc_mod415](l10n_es_atc_mod415/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 415
+[l10n_es_atc_mod417](l10n_es_atc_mod417/) | 17.0.1.0.0 | <a href='https://github.com/carlos-lopez-tecnativa'><img src='https://github.com/carlos-lopez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carlos-lopez-tecnativa'/></a> | ATC Modelo 417
 [l10n_es_atc_mod420](l10n_es_atc_mod420/) | 17.0.1.0.0 | <a href='https://github.com/Christian-RB'><img src='https://github.com/Christian-RB.png' width='32' height='32' style='border-radius:50%;' alt='Christian-RB'/></a> | ATC Modelo 420
+[l10n_es_atc_mod425](l10n_es_atc_mod425/) | 17.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | ATC Modelo 425
 [l10n_es_cnae](l10n_es_cnae/) | 17.0.1.1.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 17.0.1.3.5 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
 [l10n_es_facturae_face](l10n_es_facturae_face/) | 17.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
@@ -5444,7 +5451,7 @@ addon | version | maintainers | summary
 [barcodes_generator_abstract](barcodes_generator_abstract/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Any Models
 [barcodes_generator_location](barcodes_generator_location/) | 17.0.1.0.1 |  | Generate Barcodes for Stock Locations
 [barcodes_generator_product](barcodes_generator_product/) | 17.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Generate Barcodes for Products (Templates and Variants)
-[product_multi_barcode](product_multi_barcode/) | 17.0.1.0.0 |  | Multiple barcodes on products
+[product_multi_barcode](product_multi_barcode/) | 17.0.1.0.1 |  | Multiple barcodes on products
 [stock_picking_product_barcode_report](stock_picking_product_barcode_report/) | 17.0.1.0.1 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | It provides a wizard to select how many barcodes print.
 
 [//]: # (end addons)
@@ -5664,7 +5671,7 @@ addon | version | maintainers | summary
 [stock_reserve](stock_reserve/) | 17.0.1.0.0 |  | Stock reservations on products
 [stock_route_mto](stock_route_mto/) | 17.0.1.0.0 |  | Allows to identify MTO routes through a checkbox and availability to filter them.
 [stock_search_supplierinfo_code](stock_search_supplierinfo_code/) | 17.0.1.0.0 |  | Allows to search for picking from supplierinfo code
-[stock_secondary_unit](stock_secondary_unit/) | 17.0.1.0.0 |  | Get product quantities in a secondary unit
+[stock_secondary_unit](stock_secondary_unit/) | 17.0.1.0.1 |  | Get product quantities in a secondary unit
 [stock_warehouse_calendar](stock_warehouse_calendar/) | 17.0.1.0.1 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> | Adds a calendar to the Warehouse
 
 [//]: # (end addons)
@@ -6048,22 +6055,22 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[document_page_environment_manual](document_page_environment_manual/) | 17.0.1.0.0 |  | Document Management - Wiki - Environment Manual
-[document_page_environmental_aspect](document_page_environmental_aspect/) | 17.0.1.0.0 |  | Environmental Aspects
-[document_page_health_safety_manual](document_page_health_safety_manual/) | 17.0.1.0.0 |  | Health and Safety Manual
-[document_page_procedure](document_page_procedure/) | 17.0.1.0.0 |  | Document Management - Wiki - Procedures
-[document_page_quality_manual](document_page_quality_manual/) | 17.0.1.0.0 |  | Quality Manual
-[document_page_work_instruction](document_page_work_instruction/) | 17.0.1.0.0 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 17.0.1.1.0 |  | Management System
+[document_page_environment_manual](document_page_environment_manual/) | 17.0.1.0.1 |  | Document Management - Wiki - Environment Manual
+[document_page_environmental_aspect](document_page_environmental_aspect/) | 17.0.1.0.1 |  | Environmental Aspects
+[document_page_health_safety_manual](document_page_health_safety_manual/) | 17.0.1.0.1 |  | Health and Safety Manual
+[document_page_procedure](document_page_procedure/) | 17.0.1.0.1 |  | Document Management - Wiki - Procedures
+[document_page_quality_manual](document_page_quality_manual/) | 17.0.1.0.1 |  | Quality Manual
+[document_page_work_instruction](document_page_work_instruction/) | 17.0.1.0.1 |  | Document Management - Wiki - Work Instructions
+[mgmtsystem](mgmtsystem/) | 17.0.1.1.1 |  | Management System
 [mgmtsystem_action](mgmtsystem_action/) | 17.0.1.0.1 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 17.0.1.0.1 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 17.0.1.0.0 |  | Add Template management for Actions.
-[mgmtsystem_audit](mgmtsystem_audit/) | 17.0.1.1.1 |  | Management System - Audit
-[mgmtsystem_hazard](mgmtsystem_hazard/) | 17.0.1.0.0 |  | Hazard
-[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 17.0.1.0.1 |  | Hazard Risk
+[mgmtsystem_audit](mgmtsystem_audit/) | 17.0.1.2.0 |  | Management System - Audit
+[mgmtsystem_hazard](mgmtsystem_hazard/) | 17.0.1.1.0 |  | Hazard
+[mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 17.0.1.1.0 |  | Hazard Risk
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 17.0.1.0.0 |  | Information Security Management System Manual
-[mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.0 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.1.2 |  | Management System - Nonconformity
+[mgmtsystem_manual](mgmtsystem_manual/) | 17.0.1.0.1 |  | Management System - Manual
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 17.0.1.2.0 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 17.0.1.0.0 |  | Management System - Nonconformity Hazard
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 17.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 17.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
@@ -6073,8 +6080,9 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 17.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 17.0.1.0.0 |  | Add Nonconformity classification for the root context.
 [mgmtsystem_partner](mgmtsystem_partner/) | 17.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
-[mgmtsystem_quality](mgmtsystem_quality/) | 17.0.1.0.0 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
-[mgmtsystem_review](mgmtsystem_review/) | 17.0.1.1.2 |  | Management System - Review
+[mgmtsystem_quality](mgmtsystem_quality/) | 17.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
+[mgmtsystem_review](mgmtsystem_review/) | 17.0.2.0.0 |  | Management System - Review
+[mgmtsystem_review_survey](mgmtsystem_review_survey/) | 17.0.2.0.0 |  | Management System - Review Survey
 [mgmtsystem_survey](mgmtsystem_survey/) | 17.0.1.0.0 |  | Management System - Survey
 
 [//]: # (end addons)
@@ -6226,6 +6234,7 @@ addon | version | maintainers | summary
 [purchase_stock_packaging](purchase_stock_packaging/) | 17.0.1.0.0 | <a href='https://github.com/rousseldenis'><img src='https://github.com/rousseldenis.png' width='32' height='32' style='border-radius:50%;' alt='rousseldenis'/></a> | Allows to transmit the product packaging from the procurement values to the generated purchase order line
 [purchase_stock_price_unit_sync](purchase_stock_price_unit_sync/) | 17.0.1.0.0 |  | Update cost price in stock moves already done
 [purchase_stock_reception_status](purchase_stock_reception_status/) | 17.0.1.0.0 |  | Glue module to integrate OCA reception status with purchase_stock
+[purchase_stock_secondary_unit](purchase_stock_secondary_unit/) | 17.0.1.0.0 |  | Get product quantities in a secondary unit
 [purchase_tag](purchase_tag/) | 17.0.1.1.2 |  | Allows to add multiple tags to purchase orders
 [purchase_tier_validation](purchase_tier_validation/) | 17.0.1.0.0 |  | Extends the functionality of Purchase Orders to support a tier validation process.
 [purchase_v12_control_menu](purchase_v12_control_menu/) | 17.0.1.0.0 |  | Purchase Control Menu from v12
@@ -6473,7 +6482,8 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [product_variant_configurator](product_variant_configurator/) | 17.0.1.0.0 |  | Provides an abstract model for product variant configuration.
 [product_variant_default_code](product_variant_default_code/) | 17.0.1.0.0 | <a href='https://github.com/Kev-Roche'><img src='https://github.com/Kev-Roche.png' width='32' height='32' style='border-radius:50%;' alt='Kev-Roche'/></a> | Product Variant Default Code
-[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.2.0 |  | Allows to write fixed prices in product variants
+[product_variant_name](product_variant_name/) | 17.0.1.0.0 |  | Product Variant Name
+[product_variant_sale_price](product_variant_sale_price/) | 17.0.1.2.1 |  | Allows to write fixed prices in product variants
 [purchase_variant_configurator](purchase_variant_configurator/) | 17.0.1.0.1 |  | Product variants in purchase management
 
 [//]: # (end addons)
@@ -7152,7 +7162,7 @@ addon | version | maintainers | summary
 [bi_sql_editor](bi_sql_editor/) | 17.0.2.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | BI Views builder, based on Materialized or Normal SQL Views
 [bi_view_editor](bi_view_editor/) | 17.0.1.1.0 |  | Graphical BI views builder for Odoo
 [bi_view_editor_spreadsheet_dashboard](bi_view_editor_spreadsheet_dashboard/) | 17.0.1.0.0 |  | Glue module for BI View Editor and Spreadsheet Dashboard
-[kpi](kpi/) | 17.0.1.0.0 |  | Key Performance Indicator
+[kpi](kpi/) | 17.0.1.1.0 |  | Key Performance Indicator
 [report_async](report_async/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Central place to run reports live or async
 [report_csv](report_csv/) | 17.0.1.0.1 |  | Base module to create csv report
 [report_layout_config](report_layout_config/) | 17.0.1.0.0 |  | Add possibility to easily modify the global report layout
@@ -7315,6 +7325,7 @@ addon | version | maintainers | summary
 [base_force_record_noupdate](base_force_record_noupdate/) | 17.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 17.0.1.0.0 |  | Customizations of Many2many
 [base_model_restrict_update](base_model_restrict_update/) | 17.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Update Restrict Model
+[base_name_search_improved](base_name_search_improved/) | 17.0.1.0.0 |  | Friendlier search when typing in relation fields
 [base_partition](base_partition/) | 17.0.1.0.0 |  | Base module that provide the partition method on all models
 [base_search_fuzzy](base_search_fuzzy/) | 17.0.1.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
 [base_sequence_option](base_sequence_option/) | 17.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models

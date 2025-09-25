@@ -152,7 +152,11 @@ class AccountMove(models.Model):
         :rtype dest_company : res.company record
         """
         self.ensure_one()
-        self = self.with_context(check_move_validity=False)
+        # Remove default_ context keys
+        ctx = clean_context(self.env.context)
+        ctx["check_move_validity"] = False
+        # pylint: disable=W8121
+        self = self.with_context(ctx)
         # check intercompany product
         self._check_intercompany_product(dest_company)
         # if an invoice has already been generated
@@ -244,7 +248,6 @@ class AccountMove(models.Model):
         :rtype dest_company : res.company record
         """
         self.ensure_one()
-        self = self.with_context(**clean_context(self.env.context))
         # check if the journal is define in dest company
         self._check_dest_journal(dest_company)
         vals = {
