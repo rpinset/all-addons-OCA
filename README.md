@@ -391,16 +391,16 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 416fd3c6e7ec96dc49cdf2f42d5d4d3bab7f6e81
+commit d8d49a69f42067a3852aebd7b8ca12b43b35ad9c
 Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Wed Aug 27 09:11:47 2025 +0000
+Date:   Mon Sep 22 08:49:30 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (3 of 3 strings)
+    Currently translated at 100.0% (39 of 39 strings)
     
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_amount_to_invoice
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_amount_to_invoice/it/
+    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_type
+    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_type/it/
 
 
 ## crm
@@ -1105,11 +1105,11 @@ Date:   Sun Feb 2 19:52:15 2025 +0000
 
 ## carrier-delivery
 From [https://github.com/OCA/carrier-delivery.git](https://github.com/OCA/carrier-delivery.git)
-commit 4d9c70f4774274c4588ff2f93c0b26e7679d61d3
+commit 07341cf13424b186d41a3cc1df4a03e8adf40b04
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:47:51 2025 +0000
+Date:   Thu Sep 25 15:30:42 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## stock-logistics-barcode
