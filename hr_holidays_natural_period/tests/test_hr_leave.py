@@ -91,6 +91,8 @@ class TestHrLeave(BaseCommon):
     @freeze_time("2023-01-01", tick=True)
     @mute_logger("odoo.models.unlink")
     def test_hr_leave_natural_day_02(self):
+        leave_allocation = self._create_leave_allocation(self.leave_type, 9)
+        leave_allocation.sudo().action_validate()
         attendances = [(0, 16, 21), (1, 9, 14), (2, 9, 14), (3, 9, 14), (4, 9, 14)]
         r_sudo = self.env["resource.calendar"].sudo()
         calendar = r_sudo.create(
@@ -111,7 +113,7 @@ class TestHrLeave(BaseCommon):
             }
         )
         self.employee.resource_calendar_id = calendar
-        leave = self._create_hr_leave(self.leave_type, "2022-12-31", "2023-01-08")
+        leave = self._create_hr_leave(self.leave_type, "2023-01-01", "2023-01-09")
         self.assertEqual(leave.number_of_days, 9.0)
 
     @users("test-user")
