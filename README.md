@@ -69,16 +69,16 @@ Date:   Wed Sep 10 08:25:20 2025 +0000
 
 ## account-financial-reporting
 From [https://github.com/OCA/account-financial-reporting.git](https://github.com/OCA/account-financial-reporting.git)
-commit d7d8bc711d1ae0a112791449d957d7402fbcb97d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 8 08:02:04 2025 +0000
+commit 0d3b300e2ffc2e6da244ee30b95b07c2061c0634
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Thu Sep 25 19:02:51 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (Catalan)
     
-    Currently translated at 75.0% (39 of 52 strings)
+    Currently translated at 48.0% (25 of 52 strings)
     
     Translation: account-financial-reporting-15.0/account-financial-reporting-15.0-account_tax_balance
-    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_tax_balance/it/
+    Translate-URL: https://translation.odoo-community.org/projects/account-financial-reporting-15-0/account-financial-reporting-15-0-account_tax_balance/ca/
 
 
 ## account-invoice-reporting
@@ -97,11 +97,16 @@ Date:   Mon Jul 21 06:11:19 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit de0d02ac4b6c631953ea2a2a9991764b9b27022b
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 16:28:53 2025 +0000
+commit 1caf6f846e9a53918a506d7fed7e19f21fbf1489
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Thu Sep 25 19:12:08 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 26.6% (8 of 30 strings)
+    
+    Translation: account-invoicing-15.0/account-invoicing-15.0-account_invoice_transmit_method
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-15-0/account-invoicing-15-0-account_invoice_transmit_method/ca/
 
 
 ## account-fiscal-rule
@@ -204,11 +209,16 @@ Date:   Wed Jun 4 02:39:57 2025 +0000
 
 ## account-payment
 From [https://github.com/OCA/account-payment.git](https://github.com/OCA/account-payment.git)
-commit e6f998fa9518ffdb407f3d34cf62b4828c579e83
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Tue Jul 1 14:48:01 2025 +0000
+commit 67d27cce7bb259a96b1f39d11bdf4fa59226e893
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Thu Sep 25 19:10:46 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 25.2% (24 of 95 strings)
+    
+    Translation: account-payment-15.0/account-payment-15.0-account_payment_return
+    Translate-URL: https://translation.odoo-community.org/projects/account-payment-15-0/account-payment-15-0-account_payment_return/ca/
 
 
 ## connector
@@ -462,11 +472,16 @@ Date:   Thu Sep 18 06:24:55 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 486b7da40a949414d7d2e2ab99bf108dc656b07a
+commit b6344c001db95944518266721c99dfe0fac2830d
 Author: Pilar Vargas <pilar.vargas@tecnativa.com>
-Date:   Tue Sep 23 08:42:33 2025 +0000
+Date:   Thu Sep 25 18:53:53 2025 +0000
 
-    Added translation using Weblate (Catalan)
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 3.1% (1 of 32 strings)
+    
+    Translation: edi-15.0/edi-15.0-edi_voxel_account_invoice_oca
+    Translate-URL: https://translation.odoo-community.org/projects/edi-15-0/edi-15-0-edi_voxel_account_invoice_oca/ca/
 
 
 ## field-service
@@ -552,11 +567,11 @@ Date:   Wed Jun 4 02:57:36 2025 +0000
 
 ## hr-holidays
 From [https://github.com/OCA/hr-holidays.git](https://github.com/OCA/hr-holidays.git)
-commit ea1cbacb9fd6acd6758019bda35947e6433eb4b2
+commit 084b339de2f44c0ec695a2a17ae44634eb8e60b9
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 02:58:02 2025 +0000
+Date:   Fri Sep 26 09:51:08 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## department
@@ -908,11 +923,16 @@ Date:   Sun Feb 2 19:41:30 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit cce558a907e35d7c9c7e296937820a71cb1fccfb
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Sep 3 13:48:36 2025 +0000
+commit cfaa589d034bd8493e28f524e6b1642889d7667d
+Author: Pilar Vargas <pilar.vargas@tecnativa.com>
+Date:   Thu Sep 25 19:08:26 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Catalan)
+    
+    Currently translated at 96.3% (263 of 273 strings)
+    
+    Translation: l10n-spain-15.0/l10n-spain-15.0-l10n_es_aeat
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-spain-15-0/l10n-spain-15-0-l10n_es_aeat/ca/
 
 
 ## l10n-switzerland
@@ -1077,16 +1097,11 @@ Date:   Tue Jul 8 09:38:10 2025 +0000
 
 ## rma
 From [https://github.com/OCA/rma.git](https://github.com/OCA/rma.git)
-commit 3eba73184d79cb8bb34b6b3c5869a98c99b8b2e5
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Mon Sep 8 07:53:51 2025 +0000
+commit c06e100496ddcbae72269fb02013b1025babdc90
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Sep 26 18:27:10 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 97.5% (40 of 41 strings)
-    
-    Translation: rma-15.0/rma-15.0-product_warranty
-    Translate-URL: https://translation.odoo-community.org/projects/rma-15-0/rma-15-0-product_warranty/it/
+    [BOT] post-merge updates
 
 
 ## ddmrp
