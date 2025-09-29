@@ -11,6 +11,7 @@
                 <sheet>
                     <group colspan="4">
                         <field name="starting_date" />
+                        <field name="ending_date" />
                         <field name="starting_number" />
                         <field name="available_sequence_ids" invisible="1" />
                         <field name="sequence_id" />

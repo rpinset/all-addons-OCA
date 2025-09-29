@@ -68,6 +68,11 @@ msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: account_journal_general_sequence
+#: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_move_renumber_wizard__ending_date
+msgid "Ending Date"
+msgstr ""
+
+#. module: account_journal_general_sequence
 #: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_bank_statement_line__entry_number
 #: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_move__entry_number
 #: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_move_line__entry_number
@@ -145,6 +150,13 @@ msgstr "Renumerar asientos contables"
 #: model:ir.model.fields,help:account_journal_general_sequence.field_account_move_renumber_wizard__starting_date
 msgid "Renumber account moves starting this day."
 msgstr "Renumerar asientos contables a partir de este día."
+
+#. module: account_journal_general_sequence
+#: model:ir.model.fields,help:account_journal_general_sequence.field_account_move_renumber_wizard__ending_date
+msgid ""
+"Renumber account moves up to this day (inclusive). If empty, all moves after "
+"starting date are renumbered."
+msgstr ""
 
 #. module: account_journal_general_sequence
 #: model:ir.actions.act_window,name:account_journal_general_sequence.account_move_renumber_wizard_action

@@ -1,5 +1,7 @@
 # Copyright 2022 Moduon
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
+from datetime import date
+
 from freezegun import freeze_time
 
 from odoo.fields import Command
@@ -83,6 +85,36 @@ class RenumberCase(TestAccountReconciliationCommon):
         self.assertEqual(old_invoice.entry_number, "2022/00000002")
         self.assertEqual(new_invoice.entry_number, "2022/00000003")
         self.assertEqual(next_year_invoice.entry_number, "2023/00000001")
+
+    @users("test_manager")
+    def test_renumber_with_ending_date(self):
+        # Post invoices in wrong order to mess up entry numbers
+        invoice_jun = self._create_invoice(
+            date_invoice="2022-06-15", auto_validate=True
+        )
+        invoice_jun.flush_recordset(["entry_number"])
+        invoice_may = self._create_invoice(
+            date_invoice="2022-05-10", auto_validate=True
+        )
+        invoice_may.flush_recordset(["entry_number"])
+        invoice_apr = self._create_invoice(
+            date_invoice="2022-04-30", auto_validate=True
+        )
+        invoice_apr.flush_recordset(["entry_number"])
+        # Store the original number of the June invoice, which should not be renumbered
+        original_june_number = invoice_jun.entry_number
+        self.assertLess(invoice_may.entry_number, invoice_apr.entry_number)
+        # Renumber only up to May 31st, starting from 4
+        wiz_f = Form(self.env["account.move.renumber.wizard"])
+        wiz_f.ending_date = date(2022, 5, 31)
+        wiz_f.starting_number = 4
+        wiz = wiz_f.save()
+        wiz.action_renumber()
+        # Check that invoices within the date range are now correctly ordered
+        self.assertEqual(invoice_apr.entry_number, "2022/00000004")
+        self.assertEqual(invoice_may.entry_number, "2022/00000005")
+        # Check that the invoice outside the date range keeps its original number
+        self.assertEqual(invoice_jun.entry_number, original_june_number)
 
     @users("test_invoicer")
     def test_install_no_entry_number(self):

@@ -266,7 +266,7 @@ addon | version | maintainers | summary
 [account_fiscal_year](account_fiscal_year/) | 16.0.1.3.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Create Account Fiscal Year
 [account_fiscal_year_auto_create](account_fiscal_year_auto_create/) | 16.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Automatically create new fiscal years, based on the datas of the last fiscal years
 [account_invoice_constraint_chronology](account_invoice_constraint_chronology/) | 16.0.1.1.3 |  | Account Invoice Constraint Chronology
-[account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.0.2 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Add configurable sequence to account moves, per journal
+[account_journal_general_sequence](account_journal_general_sequence/) | 16.0.2.1.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> | Add configurable sequence to account moves, per journal
 [account_journal_lock_date](account_journal_lock_date/) | 16.0.1.0.0 |  | Lock each journal independently
 [account_journal_restrict_mode](account_journal_restrict_mode/) | 16.0.1.1.0 |  | Lock All Posted Entries of Journals.
 [account_loan](account_loan/) | 16.0.1.0.8 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Account Loan management
@@ -1892,7 +1892,9 @@ addon | version | maintainers | summary
 [sale_fixed_discount](sale_fixed_discount/) | 16.0.1.0.3 |  | Allows to apply fixed amount discounts in sales orders.
 [sale_force_invoiced](sale_force_invoiced/) | 16.0.2.1.2 |  | Allows to force the invoice status of the sales order to Invoiced
 [sale_force_invoiced_quantity](sale_force_invoiced_quantity/) | 16.0.1.0.0 |  | Add manual invoice quantity in sales order lines
+[sale_fully_invoiced](sale_fully_invoiced/) | 16.0.1.0.0 |  | Useful filters in Sales to know the actual status of invoices.
 [sale_global_discount](sale_global_discount/) | 16.0.1.0.0 |  | Sale Global Discount
+[sale_invoice_blocking](sale_invoice_blocking/) | 16.0.1.0.1 |  | Allow you to block the creation of invoices from a sale order.
 [sale_invoice_frequency](sale_invoice_frequency/) | 16.0.1.2.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Define the invoice frequency for customers
 [sale_invoice_plan](sale_invoice_plan/) | 16.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Add to sales order, ability to manage future invoice plan
 [sale_invoice_policy](sale_invoice_policy/) | 16.0.2.0.0 |  | Sales Management: let the user choose the invoice policy on the order
@@ -1915,7 +1917,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_finished_task](sale_order_invoicing_finished_task/) | 16.0.2.0.0 |  | Control invoice order lines if their related task has been set to invoiceable
 [sale_order_invoicing_picking_filter](sale_order_invoicing_picking_filter/) | 16.0.1.1.0 |  | Create invoices from sale orders based on the products in pickings.
 [sale_order_line_cancel](sale_order_line_cancel/) | 16.0.1.3.1 |  | Sale cancel remaining
-[sale_order_line_date](sale_order_line_date/) | 16.0.1.1.1 |  | Adds a commitment date to each sale order line.
+[sale_order_line_date](sale_order_line_date/) | 16.0.1.1.2 |  | Adds a commitment date to each sale order line.
 [sale_order_line_delivery_state](sale_order_line_delivery_state/) | 16.0.1.0.0 |  | Show the delivery state on the sale order line
 [sale_order_line_description](sale_order_line_description/) | 16.0.1.0.0 |  | Sale order line description
 [sale_order_line_effective_date](sale_order_line_effective_date/) | 16.0.1.1.0 | <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Calculated effective dates in Sale Order Lines
@@ -1985,7 +1987,7 @@ addon | version | maintainers | summary
 [sale_stock_expiry_date_on_qty_at_date_widget](sale_stock_expiry_date_on_qty_at_date_widget/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Show next Expiry Date on Qty at Date Widget
 [sale_stock_line_sequence](sale_stock_line_sequence/) | 16.0.1.0.0 |  | Glue Module for Sale Order Line Sequence and Stock Picking Line Sequence
 [sale_stock_partner_warehouse](sale_stock_partner_warehouse/) | 16.0.1.0.0 |  | Allow to choose by default a warehouse on SO based on a Partner parameter
-[sale_stock_picking_blocking](sale_stock_picking_blocking/) | 16.0.1.3.0 |  | Allow you to block the creation of deliveries from a sale order.
+[sale_stock_picking_blocking](sale_stock_picking_blocking/) | 16.0.1.3.1 |  | Allow you to block the creation of deliveries from a sale order.
 [sale_stock_picking_note](sale_stock_picking_note/) | 16.0.1.1.1 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> <a href='https://github.com/EmilioPascual'><img src='https://github.com/EmilioPascual.png' width='32' height='32' style='border-radius:50%;' alt='EmilioPascual'/></a> | Add picking note in sale and purchase order
 [sale_stock_product_recommendation](sale_stock_product_recommendation/) | 16.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Display stock info when recommending products to sell
 [sale_stock_reservation_issue_on_qty_at_date_widget](sale_stock_reservation_issue_on_qty_at_date_widget/) | 16.0.1.0.0 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Warn user when a reservation issue will happen when confirming an order
@@ -2067,6 +2069,7 @@ addon | version | maintainers | summary
 [crm_salesperson_planner](crm_salesperson_planner/) | 16.0.2.0.2 |  | Crm Salesperson Planner
 [crm_salesperson_planner_sale](crm_salesperson_planner_sale/) | 16.0.1.0.0 |  | Crm Salesperson Planner Sale
 [crm_security_group](crm_security_group/) | 16.0.1.1.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Add new group in Sales to show only CRM
+[crm_stage_multi_team](crm_stage_multi_team/) | 16.0.1.0.0 |  | Allows multiple teams in crm stage
 [crm_stage_probability](crm_stage_probability/) | 16.0.1.0.0 |  | Define fixed probability on the stages
 [crm_won_restrict_per_stage](crm_won_restrict_per_stage/) | 16.0.1.0.1 | <a href='https://github.com/carolinafernandez-tecnativa'><img src='https://github.com/carolinafernandez-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='carolinafernandez-tecnativa'/></a> | CRM Won Restrict Per Stage
 [marketing_crm_partner](marketing_crm_partner/) | 16.0.1.0.0 |  | Copy tracking fields from leads to partners
@@ -3419,7 +3422,7 @@ addon | version | maintainers | summary
 [hr_holidays_public](hr_holidays_public/) | 16.0.2.0.6 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 16.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Holidays Public City
 [hr_holidays_settings](hr_holidays_settings/) | 16.0.1.0.0 |  | Enables Settings Form for HR Holidays.
-[hr_holidays_summary_email](hr_holidays_summary_email/) | 16.0.1.0.0 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Notify employees with daily or weekly leaves summaries of their company.
+[hr_holidays_summary_email](hr_holidays_summary_email/) | 16.0.1.0.1 | <a href='https://github.com/JordiMForgeFlow'><img src='https://github.com/JordiMForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiMForgeFlow'/></a> | Notify employees with daily or weekly leaves summaries of their company.
 [hr_leave_custom_hour_interval](hr_leave_custom_hour_interval/) | 16.0.1.0.0 |  | Edit start and end of leaves using time intervals
 [hr_leave_type_code](hr_leave_type_code/) | 16.0.1.0.0 |  | Add a code field to HR Leaves
 [resource_leaves_geographic](resource_leaves_geographic/) | 16.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | Add geographic State to Resource Calendar Leaves
@@ -5370,7 +5373,7 @@ addon | version | maintainers | summary
 [l10n_es_aeat_partner_check](l10n_es_aeat_partner_check/) | 16.0.1.1.0 |  | AEAT - Comprobación de Calidad de datos identificativos
 [l10n_es_aeat_sii_force_type](l10n_es_aeat_sii_force_type/) | 16.0.2.0.1 |  | Force SII communication type on invoices
 [l10n_es_aeat_sii_invoice_summary](l10n_es_aeat_sii_invoice_summary/) | 16.0.2.0.0 |  | Envio de factura simplificada resumen TPV a SII
-[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.2.0.1 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
+[l10n_es_aeat_sii_match](l10n_es_aeat_sii_match/) | 16.0.2.0.2 | <a href='https://github.com/Abranes'><img src='https://github.com/Abranes.png' width='32' height='32' style='border-radius:50%;' alt='Abranes'/></a> <a href='https://github.com/Reyes4711-S73'><img src='https://github.com/Reyes4711-S73.png' width='32' height='32' style='border-radius:50%;' alt='Reyes4711-S73'/></a> | Sistema de comprobación y contraste de facturas enviadas al SII
 [l10n_es_aeat_sii_oca](l10n_es_aeat_sii_oca/) | 16.0.2.5.4 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA
 [l10n_es_aeat_sii_oss](l10n_es_aeat_sii_oss/) | 16.0.2.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Suministro Inmediato de Información en el IVA: OSS
 [l10n_es_aeat_sii_taxfree](l10n_es_aeat_sii_taxfree/) | 16.0.2.0.2 |  | Régimen Especial de Viajeros - SII
@@ -5412,7 +5415,7 @@ addon | version | maintainers | summary
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
 [l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.0 |  | Prorrata de IVA para la localización española
-[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.3 |  | Comunicación VERI*FACTU
+[l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.5 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 16.0.1.0.3 |  | Payment Acquirer: Redsys Implementation
 
 [//]: # (end addons)
@@ -5893,6 +5896,7 @@ addon | version | maintainers | summary
 [delivery_carrier_manual_price](delivery_carrier_manual_price/) | 16.0.1.0.0 |  | Allow setting manual shipping cost in sale order.
 [delivery_carrier_manual_weight](delivery_carrier_manual_weight/) | 16.0.1.0.0 |  | Allow setting weight and shipping weight in stock transfers manually based on carrier.
 [delivery_carrier_max_weight_constraint](delivery_carrier_max_weight_constraint/) | 16.0.1.0.1 |  | Constrain package maximum weight
+[delivery_carrier_multi_zip](delivery_carrier_multi_zip/) | 16.0.1.0.0 |  | Multiple ZIP intervals for the same delivery method
 [delivery_carrier_package_measure_required](delivery_carrier_package_measure_required/) | 16.0.1.0.0 |  | Allow the configuration of which package measurements are required on a delivery carrier basis.
 [delivery_carrier_partner](delivery_carrier_partner/) | 16.0.1.0.0 |  | Add a partner in the delivery carrier
 [delivery_correos_express](delivery_correos_express/) | 16.0.1.0.0 |  | Delivery Carrier implementation for Correos Express using their API
@@ -6882,7 +6886,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [multi_pms_properties](multi_pms_properties/) | 16.0.1.0.0 |  | Multi Properties Manager
-[pms](pms/) | 16.0.0.14.0 |  | A property management system
+[pms](pms/) | 16.0.0.15.0 |  | A property management system
 [pms_account_move_budget](pms_account_move_budget/) | 16.0.1.0.0 |  | Add Property Field in Account Move Budget
 [pms_hr_property](pms_hr_property/) | 16.0.1.0.0 |  | Adds to the employee the property on which he works.
 [pms_l10n_es](pms_l10n_es/) | 16.0.1.3.0 |  | PMS Spanish Adaptation
@@ -7481,7 +7485,7 @@ addon | version | maintainers | summary
 [project_risk](project_risk/) | 16.0.1.0.0 |  | MOR risk management method
 [project_role](project_role/) | 16.0.1.0.4 | <a href='https://github.com/alexey-pelykh'><img src='https://github.com/alexey-pelykh.png' width='32' height='32' style='border-radius:50%;' alt='alexey-pelykh'/></a> | Project role-based roster
 [project_scrum](project_scrum/) | 16.0.1.0.0 | <a href='https://github.com/adasatorres'><img src='https://github.com/adasatorres.png' width='32' height='32' style='border-radius:50%;' alt='adasatorres'/></a> | This addon allow use the scrum methodology in projects
-[project_sequence](project_sequence/) | 16.0.1.0.1 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
+[project_sequence](project_sequence/) | 16.0.1.1.0 | <a href='https://github.com/yajo'><img src='https://github.com/yajo.png' width='32' height='32' style='border-radius:50%;' alt='yajo'/></a> <a href='https://github.com/anddago78'><img src='https://github.com/anddago78.png' width='32' height='32' style='border-radius:50%;' alt='anddago78'/></a> | Add a sequence field to projects, filled automatically
 [project_stage_extra_info](project_stage_extra_info/) | 16.0.1.0.0 |  | Project Stage Extra Info
 [project_stage_last_update_date](project_stage_last_update_date/) | 16.0.1.0.0 |  | Project Stage Last Update Date
 [project_status](project_status/) | 16.0.1.0.0 | <a href='https://github.com/patrickrwilson'><img src='https://github.com/patrickrwilson.png' width='32' height='32' style='border-radius:50%;' alt='patrickrwilson'/></a> | Project Status
@@ -9478,7 +9482,7 @@ addon | version | maintainers | summary
 [web_dark_mode](web_dark_mode/) | 16.0.1.0.2 |  | Enabled Dark Mode for the Odoo Backend
 [web_dashboard_tile](web_dashboard_tile/) | 16.0.1.0.2 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Overview Dashboards with Tiles
 [web_datetime_picker_default_time](web_datetime_picker_default_time/) | 16.0.1.0.0 | <a href='https://github.com/grindtildeath'><img src='https://github.com/grindtildeath.png' width='32' height='32' style='border-radius:50%;' alt='grindtildeath'/></a> | Allows to define a default time on datetime picker
-[web_dialog_size](web_dialog_size/) | 16.0.1.0.2 |  | A module that lets the user expand a dialog box to the full screen width.
+[web_dialog_size](web_dialog_size/) | 16.0.1.0.3 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 16.0.1.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 16.0.1.0.1 |  | Use computed field as domain
 [web_editor_class_selector](web_editor_class_selector/) | 16.0.1.1.0 |  | Web editor class selector

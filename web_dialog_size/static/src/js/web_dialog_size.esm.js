@@ -9,43 +9,42 @@ import {SelectCreateDialog} from "@web/views/view_dialogs/select_create_dialog";
 
 export class ExpandButton extends Component {
     setup() {
-        this.lastSize = this.currentSize = this.props.getsize();
-        this.sizeRestored = false;
+        this.lastSize = this.props.getsize();
+        this.currentSize = this.props.getsize();
         this.config = rpc.query({
             model: "ir.config_parameter",
             method: "get_web_dialog_size_config",
         });
 
         onWillRender(() => {
-            var self = this;
             // If the form lost its current state, we need to set it again
             if (this.props.getsize() !== this.currentSize) {
                 this.props.setsize(this.currentSize);
             }
-            // Check if we already are in full screen or if the form was restored.
-            // If so we don't need to check the default maximize
+            // Auto maximize once if config says so
             if (this.props.getsize() !== "dialog_full_screen" && !this.sizeRestored) {
-                this.config.then(function (r) {
-                    if (r.default_maximize && stop) {
-                        self.dialog_button_extend();
+                this.config.then((r) => {
+                    if (r.default_maximize) {
+                        this.toggleSize();
                     }
                 });
             }
         });
     }
 
-    dialog_button_extend() {
-        this.lastSize = this.props.getsize();
-        this.props.setsize("dialog_full_screen");
-        this.currentSize = "dialog_full_screen";
-        this.sizeRestored = false;
-        this.render();
-    }
-
-    dialog_button_restore() {
-        this.props.setsize(this.lastSize);
-        this.currentSize = this.lastSize;
-        this.sizeRestored = true;
+    toggleSize() {
+        if (this.currentSize === "dialog_full_screen") {
+            // Restore to previous remembered size
+            this.currentSize = "lg";
+            this.props.setsize(this.currentSize);
+            this.sizeRestored = true;
+        } else {
+            // Remember current size before maximizing
+            this.lastSize = this.currentSize;
+            this.currentSize = "dialog_full_screen";
+            this.props.setsize("dialog_full_screen");
+            this.sizeRestored = false;
+        }
         this.render();
     }
 }

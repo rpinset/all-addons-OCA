@@ -7,7 +7,7 @@
 
 {
     "name": "Comunicación VERI*FACTU",
-    "version": "16.0.1.0.3",
+    "version": "16.0.1.0.5",
     "category": "Accounting/Localizations/EDI",
     "website": "https://github.com/OCA/l10n-spain",
     "author": "Aures Tic,ForgeFlow,Tecnativa,Odoo Community Association (OCA)",
@@ -36,7 +36,6 @@
         "views/verifactu_invoice_entry_view.xml",
         "views/verifactu_chaining_view.xml",
         "views/verifactu_developer_view.xml",
-        "views/account_move_view.xml",
         "views/report_invoice.xml",
         "views/verifactu_invoice_entry_response_view.xml",
     ],

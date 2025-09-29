@@ -15,6 +15,10 @@ class AccountMoveRenumberWizard(models.TransientModel):
         default=lambda self: self._default_starting_date(),
         help="Renumber account moves starting this day.",
     )
+    ending_date = fields.Date(
+        help="Renumber account moves up to this day (inclusive). "
+        "If empty, all moves after starting date are renumbered.",
+    )
     starting_number = fields.Integer(
         default=1, help="Reset sequence to this number before starting."
     )
@@ -63,23 +67,24 @@ class AccountMoveRenumberWizard(models.TransientModel):
         Makes sure moves exist. Sorts them. Resets sequences. Renumbers them.
         """
         # Find posted moves that match wizard criteria
-        moves = self.env["account.move"].search(
-            [
-                ("state", "=", "posted"),
-                ("date", ">=", self.starting_date),
-                ("journal_id.entry_number_sequence_id", "=", self.sequence_id.id),
-            ],
-            order="date, id",
-        )
+        moves_domain = [
+            ("state", "=", "posted"),
+            ("date", ">=", self.starting_date),
+            ("journal_id.entry_number_sequence_id", "=", self.sequence_id.id),
+        ]
+        if self.ending_date:
+            moves_domain.append(("date", "<=", self.ending_date))
+        moves = self.env["account.move"].search(moves_domain, order="date, id")
         if not moves:
             raise exceptions.UserError(_("No account moves found."))
         # Reset sequence
-        future_ranges = self.env["ir.sequence.date_range"].search(
-            [
-                ("date_from", ">", self.starting_date),
-                ("sequence_id", "=", self.sequence_id.id),
-            ]
-        )
+        ranges_domain = [
+            ("date_from", ">", self.starting_date),
+            ("sequence_id", "=", self.sequence_id.id),
+        ]
+        if self.ending_date:
+            ranges_domain.append(("date_to", "<=", self.ending_date))
+        future_ranges = self.env["ir.sequence.date_range"].search(ranges_domain)
         # Safe `sudo` calls; wizard only available for accounting managers
         future_ranges.sudo().unlink()
         current_range = self.sequence_id._get_current_sequence(self.starting_date)

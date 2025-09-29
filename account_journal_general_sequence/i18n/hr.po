@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #. module: account_journal_general_sequence
@@ -66,6 +66,11 @@ msgstr "Kreirano"
 #: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_move_renumber_wizard__display_name
 msgid "Display Name"
 msgstr "Prikazani naziv"
+
+#. module: account_journal_general_sequence
+#: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_move_renumber_wizard__ending_date
+msgid "Ending Date"
+msgstr ""
 
 #. module: account_journal_general_sequence
 #: model:ir.model.fields,field_description:account_journal_general_sequence.field_account_bank_statement_line__entry_number
@@ -144,6 +149,13 @@ msgstr ""
 #. module: account_journal_general_sequence
 #: model:ir.model.fields,help:account_journal_general_sequence.field_account_move_renumber_wizard__starting_date
 msgid "Renumber account moves starting this day."
+msgstr ""
+
+#. module: account_journal_general_sequence
+#: model:ir.model.fields,help:account_journal_general_sequence.field_account_move_renumber_wizard__ending_date
+msgid ""
+"Renumber account moves up to this day (inclusive). If empty, all moves after "
+"starting date are renumbered."
 msgstr ""
 
 #. module: account_journal_general_sequence
