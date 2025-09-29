@@ -87,5 +87,6 @@ class TestSaleStockOrderSecondaryUnit(TransactionCase):
         self.order.order_line._onchange_helper_product_uom_for_secondary()
         self.order.action_confirm()
         picking = self.order.picking_ids
-        # Second qty on sml only manage done quantities
-        self.assertEqual(picking.move_line_ids.secondary_uom_qty, 0.0)
+        # Changes in https://github.com/OCA/stock-logistics-warehouse/pull/2432
+        # secondary_uom_qty is computed from quantity field.
+        self.assertEqual(picking.move_line_ids.secondary_uom_qty, 5.0)
