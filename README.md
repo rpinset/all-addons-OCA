@@ -391,16 +391,11 @@ Date:   Sun Feb 2 18:27:07 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit d8d49a69f42067a3852aebd7b8ca12b43b35ad9c
-Author: Francesco Foresti <francesco.foresti@ooops404.com>
-Date:   Mon Sep 22 08:49:30 2025 +0000
+commit 9924affbb6838695d6b46da1c36dabbbeb9770af
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Mon Sep 29 13:32:22 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (39 of 39 strings)
-    
-    Translation: sale-workflow-14.0/sale-workflow-14.0-sale_order_type
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-14-0/sale-workflow-14-0-sale_order_type/it/
+    [BOT] post-merge updates
 
 
 ## crm
