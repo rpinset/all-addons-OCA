@@ -1282,16 +1282,11 @@ Date:   Sat Jun 21 10:43:35 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 697937241f37e76a63a72a809208e56e0d29f8af
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 17 09:05:39 2025 +0000
+commit ac0167c738ddd02c4671627695fe528a562aa0ec
+Author: ahenriquez <ahenriquez@eficent.com>
+Date:   Wed Jan 29 15:11:25 2020 +0100
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (8 of 8 strings)
-    
-    Translation: purchase-workflow-13.0/purchase-workflow-13.0-purchase_reception_status
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-13-0/purchase-workflow-13-0-purchase_reception_status/it/
+    [FIX]purchase request find procurement group method
 
 
 ## purchase-reporting
