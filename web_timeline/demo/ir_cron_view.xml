@@ -5,7 +5,7 @@
         <field name="model">ir.cron</field>
         <field name="type">timeline</field>
         <field name="arch" type="xml">
-            <timeline date_start="nextcall" default_group_by="model_id" />
+            <timeline date_start="nextcall" default_group_by="interval_type,model_id" />
         </field>
     </record>
     <!-- Append our view_mode this way to avoid overwriting changes done by other modules. -->

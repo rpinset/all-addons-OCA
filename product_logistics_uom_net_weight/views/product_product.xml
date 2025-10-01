@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) 2025 Factor Libre (https://factorlibre.com)
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+<odoo>
+
+    <record id="view_product_product_form" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product_net_weight.view_product_product_form" />
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <label for="net_weight" position="attributes">
+                <attribute name="attrs">{'invisible': True}</attribute>
+            </label>
+            <field name="net_weight" position="attributes">
+                <attribute name="attrs">{'invisible': True}</attribute>
+            </field>
+            <label for="net_weight" position="after">
+                <label for="product_net_weight" />
+            </label>
+            <field name="net_weight" position="after">
+                <field name="product_net_weight" />
+            </field>
+        </field>
+    </record>
+
+    <record id="product_normal_form_view" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product_net_weight.product_normal_form_view" />
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <label for="net_weight" position="attributes">
+                <attribute name="attrs">{'invisible': True}</attribute>
+            </label>
+            <field name="net_weight" position="attributes">
+                <attribute name="attrs">{'invisible': True}</attribute>
+            </field>
+            <label for="net_weight" position="after">
+                <label for="product_net_weight" />
+            </label>
+            <field name="net_weight" position="after">
+                <field name="product_net_weight" class="oe_inline" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

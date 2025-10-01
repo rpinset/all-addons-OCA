@@ -17,6 +17,11 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #. module: mail_environment_google_gmail
+#: model:ir.model,name:mail_environment_google_gmail.model_fetchmail_server
+msgid "Incoming Mail Server"
+msgstr ""
+
+#. module: mail_environment_google_gmail
 #: model:ir.model,name:mail_environment_google_gmail.model_ir_mail_server
 msgid "Mail Server"
 msgstr "Server di posta"

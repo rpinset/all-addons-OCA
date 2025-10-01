@@ -62,11 +62,13 @@ patch(GeoengineRenderer.prototype, "geoengine_renderer_view_patch", {
         let legend = null;
         if (vals.length <= LEGEND_MAX_ITEMS) {
             legend = serie.getHtmlLegend(colors, cfg.name, 1);
-            for (let i = 0; i < data.length; i++) {
-                legend = legend.replace(
-                    data[i]._values[cfg.attribute_field_id[1]],
-                    data[i]._values.stage_name
-                );
+            if (indicator === "custom_color") {
+                for (let i = 0; i < data.length; i++) {
+                    legend = legend.replace(
+                        data[i]._values[cfg.attribute_field_id[1]],
+                        data[i]._values.stage_name
+                    );
+                }
             }
         }
         return {
