@@ -215,6 +215,9 @@ python-dateutil
 # From [https://github.com/OCA/connector-jira.git](https://github.com/OCA/connector-jira.git)
 # From [https://github.com/OCA/social.git](https://github.com/OCA/social.git)
 # generated from manifests external_dependencies
+cairosvg
+lottie
+python-telegram-bot
 requests_toolbelt
 # From [https://github.com/OCA/storage.git](https://github.com/OCA/storage.git)
 # generated from manifests external_dependencies

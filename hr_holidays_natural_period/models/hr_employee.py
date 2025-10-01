@@ -13,12 +13,16 @@ class HrEmployee(models.Model):
         as hours.
         """
         mod_leave_type_ids = self.env["hr.leave.type"]
+        leave_types_data = {}
         for item in leave_types:
-            if item.request_unit == "natural_day":
-                item.sudo().request_unit = "day"
+            if item.request_unit in ("natural_day", "natural_day_half_day"):
+                leave_types_data[item] = item.request_unit
+                item.sudo().request_unit = (
+                    "half_day" if item.request_unit == "natural_day_half_day" else "day"
+                )
                 mod_leave_type_ids |= item
         self = self.with_context(mod_holidays_status_ids=mod_leave_type_ids.ids)
         res = super()._get_consumed_leaves(leave_types, target_date, ignore_future)
         for item in mod_leave_type_ids:
-            item.sudo().request_unit = "natural_day"
+            item.sudo().request_unit = leave_types_data[item]
         return res

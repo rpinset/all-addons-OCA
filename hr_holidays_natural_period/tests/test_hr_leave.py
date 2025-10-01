@@ -1,7 +1,5 @@
 # Copyright 2020-2025 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
-from freezegun import freeze_time
-
 from odoo import Command, fields
 from odoo.tests import Form, new_test_user
 from odoo.tests.common import users
@@ -64,13 +62,14 @@ class TestHrLeave(BaseCommon):
         leave_form = Form(self.env["hr.leave"])
         leave_form.holiday_status_id = leave_type
         leave_form.request_date_from = date_from
-        leave_form.request_date_to = date_to
+        if leave_type.request_unit == "natural_day_half_day":
+            leave_form.request_unit_half = True
+            leave_form.request_date_from_period = "am"
+        else:
+            leave_form.request_date_to = date_to
         return leave_form.save()
 
-    @users("test-user")
-    @freeze_time("2023-01-01", tick=True)
-    @mute_logger("odoo.models.unlink")
-    def test_hr_leave_natural_day_01(self):
+    def _test_hr_leave_natural_day_01(self):
         leave_allocation = self._create_leave_allocation(self.leave_type, 5)
         leave_allocation.sudo().action_validate()
         res_leave_type = (
@@ -83,17 +82,28 @@ class TestHrLeave(BaseCommon):
         self.assertEqual(res_leave_type["max_leaves"], 5)
         self.assertEqual(res_leave_type["leaves_taken"], 0)
         self.assertEqual(res_leave_type["virtual_leaves_taken"], 0)
-        self.assertEqual(res_leave_type["request_unit"], "natural_day")
+        self.assertEqual(res_leave_type["request_unit"], self.leave_type.request_unit)
+
+    @users("test-user")
+    @mute_logger("odoo.models.unlink")
+    def test_hr_leave_natural_day_01(self):
+        self._test_hr_leave_natural_day_01()
         leave = self._create_hr_leave(self.leave_type, "2023-01-02", "2023-01-05")
         self.assertEqual(leave.number_of_days, 4.0)
 
     @users("test-user")
-    @freeze_time("2023-01-01", tick=True)
     @mute_logger("odoo.models.unlink")
-    def test_hr_leave_natural_day_02(self):
-        leave_allocation = self._create_leave_allocation(self.leave_type, 9)
-        leave_allocation.sudo().action_validate()
-        attendances = [(0, 16, 21), (1, 9, 14), (2, 9, 14), (3, 9, 14), (4, 9, 14)]
+    def test_hr_leave_natural_day_half_day_01(self):
+        self.leave_type.request_unit = "natural_day_half_day"
+        self._test_hr_leave_natural_day_01()
+        leave = self._create_hr_leave(self.leave_type, "2023-01-02", "2023-01-05")
+        self.assertEqual(leave.number_of_days, 0.5)
+
+    def _test_hr_leave_natural_day_02(self):
+        attendances = []
+        for i in range(0, 5):
+            attendances.append((i, "morning", 10, 14))
+            attendances.append((i, "afternoon", 16, 20))
         r_sudo = self.env["resource.calendar"].sudo()
         calendar = r_sudo.create(
             {
@@ -104,8 +114,9 @@ class TestHrLeave(BaseCommon):
                         {
                             "name": index,
                             "dayofweek": str(att[0]),
-                            "hour_from": att[1],
-                            "hour_to": att[2],
+                            "day_period": att[1],
+                            "hour_from": att[2],
+                            "hour_to": att[3],
                         },
                     )
                     for index, att in enumerate(attendances)
@@ -113,11 +124,25 @@ class TestHrLeave(BaseCommon):
             }
         )
         self.employee.resource_calendar_id = calendar
+        leave_allocation = self._create_leave_allocation(self.leave_type, 9)
+        leave_allocation.sudo().action_validate()
+
+    @users("test-user")
+    @mute_logger("odoo.models.unlink")
+    def test_hr_leave_natural_day_02(self):
+        self._test_hr_leave_natural_day_02()
         leave = self._create_hr_leave(self.leave_type, "2023-01-01", "2023-01-09")
         self.assertEqual(leave.number_of_days, 9.0)
 
     @users("test-user")
-    @freeze_time("2023-01-01", tick=True)
+    @mute_logger("odoo.models.unlink")
+    def test_hr_leave_natural_day_half_day_02(self):
+        self.leave_type.request_unit = "natural_day_half_day"
+        self._test_hr_leave_natural_day_02()
+        leave = self._create_hr_leave(self.leave_type, "2023-01-01", "2023-01-09")
+        self.assertEqual(leave.number_of_days, 0.5)
+
+    @users("test-user")
     @mute_logger("odoo.models.unlink")
     def test_hr_leave_day(self):
         leave_allocation = self._create_leave_allocation(self.leave_type_day, 5)
