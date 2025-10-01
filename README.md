@@ -372,11 +372,11 @@ Date:   Wed Jun 4 02:46:05 2025 +0000
 
 ## partner-contact
 From [https://github.com/OCA/partner-contact.git](https://github.com/OCA/partner-contact.git)
-commit 8e4761a74854affb4f4aaa401f3739cf572fb862
+commit 6be1c2019e40ba4b40f03856722f5c8e8d4700e1
 Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Wed Jun 4 03:21:30 2025 +0000
+Date:   Wed Oct 1 14:12:53 2025 +0000
 
-    [UPD] addons table in README.md
+    [BOT] post-merge updates
 
 
 ## sale-financial
@@ -955,16 +955,11 @@ Date:   Sun Feb 2 19:45:40 2025 +0000
 
 ## l10n-thailand
 From [https://github.com/OCA/l10n-thailand.git](https://github.com/OCA/l10n-thailand.git)
-commit f31eed418cdb3b1542cb6cd9e65c241a898826b3
-Author: Weblate <noreply@weblate.org>
-Date:   Tue Sep 23 06:10:10 2025 +0000
+commit 26fe09e4fcbafee37a13e6045f13b3ee4597c22c
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Wed Oct 1 07:59:47 2025 +0000
 
-    Update translation files
-    
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
-    
-    Translation: l10n-thailand-15.0/l10n-thailand-15.0-l10n_th_account_tax
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-thailand-15-0/l10n-thailand-15-0-l10n_th_account_tax/
+    [BOT] post-merge updates
 
 
 ## l10n-turkey
@@ -1046,16 +1041,14 @@ Date:   Tue Sep 9 10:05:39 2025 +0000
 
 ## stock-logistics-workflow
 From [https://github.com/OCA/stock-logistics-workflow.git](https://github.com/OCA/stock-logistics-workflow.git)
-commit 9d0c97d34dc3a0cc70318d871791a9a2e9bbe34d
-Author: Sergio Teruel <sergio.teruel@tecnativa.com>
-Date:   Wed Sep 24 15:09:45 2025 +0000
+commit 181401ea5fa461e97a30cba9bdf18cc8b61cada0
+Merge: 9d0c97d34 377cd40b2
+Author: Enric Tobella <etobella@creublanca.es>
+Date:   Wed Oct 1 16:33:27 2025 +0200
 
-    Translated using Weblate (Spanish)
+    Merge pull request #2119 from sygel-technology/15.0-fix-ci
     
-    Currently translated at 100.0% (121 of 121 strings)
-    
-    Translation: stock-logistics-workflow-15.0/stock-logistics-workflow-15.0-stock_return_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-workflow-15-0/stock-logistics-workflow-15-0-stock_return_request/es/
+    [15.0] [FIX] CI: delete test-constraints.txt file
 
 
 ## stock-logistics-tracking
@@ -1198,11 +1191,16 @@ Date:   Sun Feb 2 20:18:16 2025 +0000
 
 ## product-attribute
 From [https://github.com/OCA/product-attribute.git](https://github.com/OCA/product-attribute.git)
-commit d8cccc41b44eeea8777f4130b18e884ead6d9cd5
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sun Jul 6 22:52:57 2025 +0000
+commit 0fc68292fec62b11a41358fd46f0bd6c1f070df1
+Author: Carlos Roca Zaragoza <carlos.roca@tecnativa.com>
+Date:   Tue Sep 30 10:20:00 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Spanish)
+    
+    Currently translated at 100.0% (28 of 28 strings)
+    
+    Translation: product-attribute-15.0/product-attribute-15.0-product_ingredient
+    Translate-URL: https://translation.odoo-community.org/projects/product-attribute-15-0/product-attribute-15-0-product_ingredient/es/
 
 
 ## product-kitting

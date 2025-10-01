@@ -2102,6 +2102,7 @@ addon | version | maintainers | summary
 [partner_second_lastname](partner_second_lastname/) | 15.0.1.0.0 |  | Have split first and second lastnames
 [partner_stage](partner_stage/) | 15.0.1.0.0 | <a href='https://github.com/dreispt'><img src='https://github.com/dreispt.png' width='32' height='32' style='border-radius:50%;' alt='dreispt'/></a> | Add lifecycle Stages to Partners
 [partner_supplierinfo](partner_supplierinfo/) | 15.0.1.0.0 |  | Management of partner reference equivalences
+[partner_tz](partner_tz/) | 15.0.1.0.0 |  | Remove partner timezone default value and display on form
 [partner_vat_unique](partner_vat_unique/) | 15.0.1.0.3 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Module to make the VAT number unique for customers and suppliers.
 [portal_partner_data_no_edit](portal_partner_data_no_edit/) | 15.0.1.0.0 |  | Portal Partner Block Data Edit
 [res_partner_journal_items_link](res_partner_journal_items_link/) | 15.0.1.0.0 |  | Adds a smart button to grant direct access to their accounting notes
@@ -5341,7 +5342,7 @@ addon | version | maintainers | summary
 [l10n_th_base_location](l10n_th_base_location/) | 15.0.1.0.2 |  | Thai Localization - Base Location
 [l10n_th_base_sequence](l10n_th_base_sequence/) | 15.0.1.1.0 | <a href='https://github.com/sansirit'><img src='https://github.com/sansirit.png' width='32' height='32' style='border-radius:50%;' alt='sansirit'/></a> <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Thai Localization - Base Sequence
 [l10n_th_fonts](l10n_th_fonts/) | 15.0.1.0.0 | <a href='https://github.com/Saran440'><img src='https://github.com/Saran440.png' width='32' height='32' style='border-radius:50%;' alt='Saran440'/></a> | Collection of all fonts thai
-[l10n_th_gov_account_asset_management](l10n_th_gov_account_asset_management/) | 15.0.3.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Government Assets Management
+[l10n_th_gov_account_asset_management](l10n_th_gov_account_asset_management/) | 15.0.3.0.1 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Government Assets Management
 [l10n_th_gov_hr_expense](l10n_th_gov_hr_expense/) | 15.0.1.2.2 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Thai Localization - Government Expense
 [l10n_th_gov_purchase_agreement](l10n_th_gov_purchase_agreement/) | 15.0.1.1.1 | <a href='https://github.com/newtratip'><img src='https://github.com/newtratip.png' width='32' height='32' style='border-radius:50%;' alt='newtratip'/></a> | Thai Localization - Government Purchase Agreement
 [l10n_th_gov_purchase_guarantee](l10n_th_gov_purchase_guarantee/) | 15.0.1.1.2 |  | Thai Localization - Government Purchase Guarantee
