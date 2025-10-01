@@ -8,6 +8,9 @@ class HrLeaveType(models.Model):
     _inherit = "hr.leave.type"
 
     request_unit = fields.Selection(
-        selection_add=[("natural_day", "Natural day")],
-        ondelete={"natural_day": "set default"},
+        selection_add=[
+            ("natural_day", "Natural day"),
+            ("natural_day_half_day", "Natural day (Half Day)"),
+        ],
+        ondelete={"natural_day": "set default", "natural_day_half_day": "set default"},
     )

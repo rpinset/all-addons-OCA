@@ -4,7 +4,7 @@
 {
     "name": "Holidays natural period",
     "summary": "Apply natural days in holidays",
-    "version": "17.0.1.0.3",
+    "version": "17.0.1.0.4",
     "category": "Human Resources",
     "website": "https://github.com/OCA/hr-holidays",
     "author": "Tecnativa, Odoo Community Association (OCA)",
@@ -13,4 +13,5 @@
     "depends": ["hr_holidays"],
     "maintainers": ["victoralmau"],
     "demo": ["demo/hr_leave_type_data.xml"],
+    "data": ["views/hr_leave_views.xml"],
 }

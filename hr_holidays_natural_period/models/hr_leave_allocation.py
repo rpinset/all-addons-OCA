@@ -9,5 +9,8 @@ class HrLeaveAllocation(models.Model):
 
     # Added option to this field because it is now computed (was related before).
     type_request_unit = fields.Selection(
-        selection_add=[("natural_day", "Natural day")],
+        selection_add=[
+            ("natural_day", "Natural day"),
+            ("natural_day_half_day", "Natural day (Half Day)"),
+        ],
     )
