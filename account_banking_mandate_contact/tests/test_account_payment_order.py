@@ -88,7 +88,9 @@ class TestAccountPaymentOrder(BaseCommon):
     def test_invoice_payment_mode(self):
         self.assertEqual(self.invoice.state, "posted")
         self.assertEqual(self.invoice.payment_mode_id, self.payment_core)
-        self.assertEqual(self.invoice.invoice_date_due, fields.Date.today())
+        self.assertEqual(
+            self.invoice.invoice_date_due, fields.Date.context_today(self.env.user)
+        )
 
     def test_account_payment_order_core(self):
         line_create_form = Form(
@@ -97,7 +99,7 @@ class TestAccountPaymentOrder(BaseCommon):
             )
         )
         line_create_form.date_type = "due"
-        line_create_form.filter_date = fields.Date.today()
+        line_create_form.filter_date = fields.Date.context_today(self.env.user)
         line_create = line_create_form.save()
         line_create.populate()
         line_create.create_payment_lines()
@@ -115,7 +117,7 @@ class TestAccountPaymentOrder(BaseCommon):
             )
         )
         line_create_form.date_type = "due"
-        line_create_form.filter_date = fields.Date.today()
+        line_create_form.filter_date = fields.Date.context_today(self.env.user)
         line_create = line_create_form.save()
         line_create.populate()
         line_create.create_payment_lines()

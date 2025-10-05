@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-16 08:14+0000\n"
-"PO-Revision-Date: 2023-11-01 02:41+0000\n"
-"Last-Translator: Alexis de Lattre <alexis@via.ecp.fr>\n"
+"PO-Revision-Date: 2025-10-05 09:42+0000\n"
+"Last-Translator: Rémi <remi@le-filament.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.report_aged_partner_balance_lines_header
@@ -62,11 +62,15 @@ msgid ""
 "                    Duplicate amounts may be shown because more than one "
 "analytical account may be defined in the journal items."
 msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-3\"/>\n"
+"                    Certains montants peuvent être affichés plusieurs fois "
+"car il est possible de définir plusieurs comptes analytiques par écriture "
+"comptable."
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Intervals configuration</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Configuration des intervalles</span>"
 
 #. module: account_financial_report
 #: model_terms:ir.ui.view,arch_db:account_financial_report.aged_partner_balance_wizard
@@ -918,6 +922,7 @@ msgstr "Grouper les écritures par"
 
 #. module: account_financial_report
 #: model:ir.model.fields,field_description:account_financial_report.field_general_ledger_report_wizard__grouped_by
+#: model:ir.model.fields,field_description:account_financial_report.field_open_items_report_wizard__grouped_by
 #: model:ir.model.fields,field_description:account_financial_report.field_trial_balance_report_wizard__grouped_by
 msgid "Grouped By"
 msgstr "Groupé par"
@@ -1137,8 +1142,15 @@ msgstr "Ligne"
 #. odoo-python
 #: code:addons/account_financial_report/report/general_ledger.py:0
 #: code:addons/account_financial_report/report/open_items.py:0
+#: code:addons/account_financial_report/report/open_items_xlsx.py:0
 #: code:addons/account_financial_report/report/trial_balance.py:0
 msgid "Missing Partner"
+msgstr ""
+
+#. module: account_financial_report
+#. odoo-python
+#: code:addons/account_financial_report/report/open_items.py:0
+msgid "Missing Salesperson"
 msgstr ""
 
 #. module: account_financial_report
@@ -1336,6 +1348,11 @@ msgid "Partner Initial balance"
 msgstr "Solde initial du partenaire"
 
 #. module: account_financial_report
+#: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__grouped_by__salesperson
+msgid "Partner Salesperson"
+msgstr ""
+
+#. module: account_financial_report
 #. odoo-python
 #: code:addons/account_financial_report/report/aged_partner_balance_xlsx.py:0
 msgid "Partner cumul aged balance"
@@ -1357,6 +1374,7 @@ msgstr "Balance initiale du partenaire"
 
 #. module: account_financial_report
 #: model:ir.model.fields.selection,name:account_financial_report.selection__general_ledger_report_wizard__grouped_by__partners
+#: model:ir.model.fields.selection,name:account_financial_report.selection__open_items_report_wizard__grouped_by__partners
 msgid "Partners"
 msgstr "Partenaires"
 

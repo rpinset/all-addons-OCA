@@ -298,7 +298,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_financial_report](account_financial_report/) | 18.0.1.2.6 |  | OCA Financial Reports
+[account_financial_report](account_financial_report/) | 18.0.1.3.0 |  | OCA Financial Reports
 [account_tax_balance](account_tax_balance/) | 18.0.1.0.1 |  | Compute tax balances based on date range
 [mis_template_financial_report](mis_template_financial_report/) | 18.0.2.0.0 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Profit & Loss / Balance sheet MIS templates
 [partner_statement](partner_statement/) | 18.0.1.1.0 | <a href='https://github.com/MiquelRForgeFlow'><img src='https://github.com/MiquelRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='MiquelRForgeFlow'/></a> | OCA Financial Reports
@@ -883,6 +883,7 @@ addon | version | maintainers | summary
 [account_payment_order](account_payment_order/) | 18.0.1.1.2 |  | Account Payment Order
 [account_payment_order_grouped_output](account_payment_order_grouped_output/) | 18.0.1.0.0 |  | Account Payment Order - Generate grouped moves
 [account_payment_order_notification](account_payment_order_notification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Account Payment Order Notification
+[account_payment_order_tier_validation](account_payment_order_tier_validation/) | 18.0.1.0.0 | <a href='https://github.com/marcelsavegnago'><img src='https://github.com/marcelsavegnago.png' width='32' height='32' style='border-radius:50%;' alt='marcelsavegnago'/></a> | Extends the functionality of Payment Orders to support a tier validation process.
 [account_payment_partner](account_payment_partner/) | 18.0.1.0.1 |  | Adds payment mode on partners and invoices
 [account_payment_purchase](account_payment_purchase/) | 18.0.1.0.0 |  | Adds Bank Account and Payment Mode on Purchase Orders
 [account_payment_purchase_stock](account_payment_purchase_stock/) | 18.0.1.0.0 |  | Integrate Account Payment Purchase with Stock
@@ -1047,7 +1048,7 @@ addon | version | maintainers | summary
 [account_payment_promissory_note](account_payment_promissory_note/) | 18.0.1.0.1 |  | Account Payment Promissory Note
 [account_payment_return](account_payment_return/) | 18.0.1.0.2 |  | Manage the return of your payments
 [account_payment_return_import](account_payment_return_import/) | 18.0.1.0.1 |  | This module adds a generic wizard to import payment returnfile formats. Is only the base to be extended by anothermodules
-[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 18.0.1.1.0 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
+[account_payment_return_import_iso20022](account_payment_return_import_iso20022/) | 18.0.1.1.1 |  | This addon allows to import payment returns from ISO 20022 files like PAIN or CAMT.
 [account_payment_show_invoice](account_payment_show_invoice/) | 18.0.1.0.0 |  | Extends the tree view of payments to show the paid invoices related to the payments using the vendor reference by default
 [account_payment_term_extension](account_payment_term_extension/) | 18.0.1.0.0 |  | Adds rounding, months, weeks and multiple payment days properties on payment term lines
 [account_payment_tier_validation](account_payment_tier_validation/) | 18.0.1.0.1 |  | Extends the functionality of Payment to support a tier validation process.
@@ -2054,6 +2055,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[loyalty_coupon_no_mail](loyalty_coupon_no_mail/) | 18.0.1.0.0 | <a href='https://github.com/natuan9'><img src='https://github.com/natuan9.png' width='32' height='32' style='border-radius:50%;' alt='natuan9'/></a> | Generate coupons without triggering email notifications
 [loyalty_criteria_multi_product](loyalty_criteria_multi_product/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to set as promotion criteria multi-product conditions
 [loyalty_incompatibility](loyalty_incompatibility/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Allows to set incompatibility rules between promotions
 [loyalty_limit](loyalty_limit/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Restrict number of promotions per customer or salesman
@@ -2068,7 +2070,7 @@ addon | version | maintainers | summary
 [sale_loyalty_order_line_link](sale_loyalty_order_line_link/) | 18.0.1.0.0 | <a href='https://github.com/chienandalu'><img src='https://github.com/chienandalu.png' width='32' height='32' style='border-radius:50%;' alt='chienandalu'/></a> | Adds a link between loyalty programs and their generated order linesfor easing tracking
 [sale_loyalty_order_suggestion](sale_loyalty_order_suggestion/) | 18.0.1.0.0 | <a href='https://github.com/pilarvargas-tecnativa'><img src='https://github.com/pilarvargas-tecnativa.png' width='32' height='32' style='border-radius:50%;' alt='pilarvargas-tecnativa'/></a> | Suggest promotions in the sale order line
 [sale_loyalty_order_suggestion_multi_gift](sale_loyalty_order_suggestion_multi_gift/) | 18.0.1.0.1 |  | Suggest promotions with rewards multi gift in the sale order line
-[sale_loyalty_order_suggestion_multi_product](sale_loyalty_order_suggestion_multi_product/) | 18.0.1.0.0 |  | Suggest promotions with criteria multi product in the sale order line
+[sale_loyalty_order_suggestion_multi_product](sale_loyalty_order_suggestion_multi_product/) | 18.0.1.0.1 |  | Suggest promotions with criteria multi product in the sale order line
 [sale_loyalty_partner](sale_loyalty_partner/) | 18.0.1.0.0 |  | Sale Loyalty Partner
 [sale_loyalty_partner_applicability](sale_loyalty_partner_applicability/) | 18.0.1.0.0 |  | Enables the definition of a customer filter for promotion rules that will only be applied to customers who meet the specified conditions in the filter.
 [website_sale_loyalty_page](website_sale_loyalty_page/) | 18.0.1.0.0 |  | Website Sale Loyalty Page
@@ -2391,7 +2393,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [dms](dms/) | 18.0.1.0.6 |  | Document Management System for Odoo
 [dms_auto_classification](dms_auto_classification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Auto classify documents into DMS
-[dms_field](dms_field/) | 18.0.1.0.3 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
+[dms_field](dms_field/) | 18.0.1.0.4 | <a href='https://github.com/CarlosRoca13'><img src='https://github.com/CarlosRoca13.png' width='32' height='32' style='border-radius:50%;' alt='CarlosRoca13'/></a> | Create DMS View and allow to use them inside a record
 [dms_field_auto_classification](dms_field_auto_classification/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Auto classify files into embedded DMS
 [dms_user_role](dms_user_role/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | DMS User Role
 [hr_dms_field](hr_dms_field/) | 18.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Add dms field for employees
@@ -4263,7 +4265,7 @@ addon | version | maintainers | summary
 [l10n_it_intrastat](l10n_it_intrastat/) | 18.0.1.0.0 |  | Riclassificazione merci e servizi per dichiarazioni Intrastat
 [l10n_it_intrastat_statement](l10n_it_intrastat_statement/) | 18.0.1.0.0 |  | Dichiarazione Intrastat per l'Agenzia delle Dogane
 [l10n_it_location_nuts](l10n_it_location_nuts/) | 18.0.1.0.0 |  | Opzioni NUTS specifiche per l'Italia
-[l10n_it_vat_registries](l10n_it_vat_registries/) | 18.0.1.1.0 |  | ITA - Registri IVA
+[l10n_it_vat_registries](l10n_it_vat_registries/) | 18.0.1.1.1 |  | ITA - Registri IVA
 [l10n_it_vat_settlement_communication](l10n_it_vat_settlement_communication/) | 18.0.1.0.1 |  | Comunicazione liquidazione IVA ed esportazione file xmlconforme alle specifiche dell'Agenzia delle Entrate
 [l10n_it_vat_settlement_date](l10n_it_vat_settlement_date/) | 18.0.1.0.0 |  | Settlement date for VAT Statement
 
@@ -4926,6 +4928,7 @@ addon | version | maintainers | summary
 [l10n_es_atc](l10n_es_atc/) | 18.0.1.0.0 |  | Modulo 'glue' de la AEAT para el menú de la ATC
 [l10n_es_cnae](l10n_es_cnae/) | 18.0.1.0.0 |  | Extiende los códigos NACE europeos con los CNAE españoles
 [l10n_es_facturae](l10n_es_facturae/) | 18.0.1.0.1 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Creación de Facturae
+[l10n_es_facturae_face](l10n_es_facturae_face/) | 18.0.1.0.0 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Envío de Facturae a FACe
 [l10n_es_intrastat_report](l10n_es_intrastat_report/) | 18.0.1.0.0 |  | Spanish Intrastat Product Declaration
 [l10n_es_location_nuts](l10n_es_location_nuts/) | 18.0.1.0.0 | <a href='https://github.com/rafaelbn'><img src='https://github.com/rafaelbn.png' width='32' height='32' style='border-radius:50%;' alt='rafaelbn'/></a> | NUTS specific options for Spain
 [l10n_es_mis_report](l10n_es_mis_report/) | 18.0.1.0.0 |  | Plantillas MIS Builder para informes contables españoles
@@ -5807,6 +5810,7 @@ addon | version | maintainers | summary
 [stock_delivery_note](stock_delivery_note/) | 18.0.1.0.0 |  | This module allows to fill in a delivery note that will be displayed on delivery report
 [stock_move_value_report](stock_move_value_report/) | 18.0.1.0.0 |  | Stock Move Cost Value Report
 [stock_picking_batch_report](stock_picking_batch_report/) | 18.0.1.0.0 |  | Stock Picking Batch Report
+[stock_picking_comment_template](stock_picking_comment_template/) | 18.0.1.0.0 |  | Comments texts templates on Picking documents
 [stock_picking_group_by_partner_by_carrier_sale_line_position](stock_picking_group_by_partner_by_carrier_sale_line_position/) | 18.0.1.0.0 |  | Glue module for sale position and delivery report grouped
 [stock_picking_report_custom_description](stock_picking_report_custom_description/) | 18.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> | Show moves description in picking reports
 [stock_picking_report_delivery_driver](stock_picking_report_delivery_driver/) | 18.0.1.0.1 | <a href='https://github.com/Shide'><img src='https://github.com/Shide.png' width='32' height='32' style='border-radius:50%;' alt='Shide'/></a> | Delivery Driver info in Stock Picking reports
@@ -5917,7 +5921,7 @@ addon | version | maintainers | summary
 [ddmrp_cron_actions_as_job](ddmrp_cron_actions_as_job/) | 18.0.1.0.0 |  | Run DDMRP Buffer Calculation as jobs
 [ddmrp_exclude_moves_adu_calc](ddmrp_exclude_moves_adu_calc/) | 18.0.1.1.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Define additional rules to exclude certain moves from ADU calculation
 [ddmrp_exclude_moves_adu_calc_sales](ddmrp_exclude_moves_adu_calc_sales/) | 18.0.2.0.0 | <a href='https://github.com/DavidJForgeFlow'><img src='https://github.com/DavidJForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='DavidJForgeFlow'/></a> | DDMRP Exclude Moves ADU Calc integration with Sales app.
-[ddmrp_history](ddmrp_history/) | 18.0.1.1.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to store historical data of DDMRP buffers.
+[ddmrp_history](ddmrp_history/) | 18.0.1.2.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Allow to store historical data of DDMRP buffers.
 [ddmrp_packaging](ddmrp_packaging/) | 18.0.1.0.0 |  | DDMRP integration with packaging
 [ddmrp_packaging_product_replace](ddmrp_packaging_product_replace/) | 18.0.1.0.0 |  | Glue module for DDMRP packaging and product replace
 [ddmrp_product_replace](ddmrp_product_replace/) | 18.0.1.0.0 | <a href='https://github.com/JordiBForgeFlow'><img src='https://github.com/JordiBForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='JordiBForgeFlow'/></a> <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Provides a assisting tool for product replacement.
@@ -6175,7 +6179,7 @@ addon | version | maintainers | summary
 [document_page_procedure](document_page_procedure/) | 18.0.1.0.1 |  | Document Management - Wiki - Procedures
 [document_page_quality_manual](document_page_quality_manual/) | 18.0.1.0.1 |  | Quality Manual
 [document_page_work_instruction](document_page_work_instruction/) | 18.0.1.0.1 |  | Document Management - Wiki - Work Instructions
-[mgmtsystem](mgmtsystem/) | 18.0.1.1.3 |  | Support for management systems, such as ISO compliance.
+[mgmtsystem](mgmtsystem/) | 18.0.1.1.4 |  | Support for management systems, such as ISO compliance.
 [mgmtsystem_action](mgmtsystem_action/) | 18.0.1.0.1 |  | Management System - Action
 [mgmtsystem_action_efficacy](mgmtsystem_action_efficacy/) | 18.0.1.0.0 |  | Add information on the application of the Action.
 [mgmtsystem_action_template](mgmtsystem_action_template/) | 18.0.1.0.0 |  | Add Template management for Actions.
@@ -6185,7 +6189,7 @@ addon | version | maintainers | summary
 [mgmtsystem_hazard_risk](mgmtsystem_hazard_risk/) | 18.0.1.2.0 |  | Hazard Risk
 [mgmtsystem_info_security_manual](mgmtsystem_info_security_manual/) | 18.0.1.0.0 |  | Information Security Management System Manual
 [mgmtsystem_manual](mgmtsystem_manual/) | 18.0.1.0.1 |  | Management System - Manual
-[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 18.0.1.2.0 |  | Management System - Nonconformity
+[mgmtsystem_nonconformity](mgmtsystem_nonconformity/) | 18.0.1.2.1 |  | Management System - Nonconformity
 [mgmtsystem_nonconformity_hazard](mgmtsystem_nonconformity_hazard/) | 18.0.1.0.0 |  | Management System - Nonconformity Hazard
 [mgmtsystem_nonconformity_hr](mgmtsystem_nonconformity_hr/) | 18.0.1.0.0 |  | Bridge module between hr and mgmsystem and
 [mgmtsystem_nonconformity_maintenance_equipment](mgmtsystem_nonconformity_maintenance_equipment/) | 18.0.1.0.0 |  | Management System - Nonconformity Maintenance Equipment
@@ -6193,6 +6197,7 @@ addon | version | maintainers | summary
 [mgmtsystem_nonconformity_product](mgmtsystem_nonconformity_product/) | 18.0.1.0.0 |  | Bridge module between Product and Management System.
 [mgmtsystem_nonconformity_repair](mgmtsystem_nonconformity_repair/) | 18.0.1.0.0 |  | Bridge module between Repair and Non Conformities
 [mgmtsystem_nonconformity_type](mgmtsystem_nonconformity_type/) | 18.0.1.1.0 |  | Add Nonconformity classification for the root context.
+[mgmtsystem_objective](mgmtsystem_objective/) | 18.0.1.0.0 |  | Define objectives on your management system
 [mgmtsystem_partner](mgmtsystem_partner/) | 18.0.1.0.0 |  | Add Management System reference on Partner's Contacts.
 [mgmtsystem_quality](mgmtsystem_quality/) | 18.0.1.0.1 | <a href='https://github.com/max3903'><img src='https://github.com/max3903.png' width='32' height='32' style='border-radius:50%;' alt='max3903'/></a> | Manage your quality management system
 [mgmtsystem_review](mgmtsystem_review/) | 18.0.2.0.0 |  | Management System - Review
@@ -7187,7 +7192,7 @@ addon | version | maintainers | summary
 [fs_storage](fs_storage/) | 18.0.2.0.1 |  | Implement the concept of Storage with amazon S3, sftp...
 [fs_storage_ms_drive](fs_storage_ms_drive/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Add the microsoft drives (OneDrive, Sharepoint) as a storage backend
 [image_tag](image_tag/) | 18.0.1.0.0 |  | Image tag model
-[microsoft_drive_account](microsoft_drive_account/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link user with Microsoft
+[microsoft_drive_account](microsoft_drive_account/) | 18.0.1.0.1 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | Link user with Microsoft
 [storage_backend](storage_backend/) | 18.0.1.0.0 |  | Implement the concept of Storage with amazon S3, sftp...
 [storage_backend_ftp](storage_backend_ftp/) | 18.0.1.0.0 |  | Implement FTP Storage
 [storage_backend_s3](storage_backend_s3/) | 18.0.1.1.0 |  | Implement amazon S3 Storage
