@@ -701,3 +701,78 @@ class TestWithholdingTax(TransactionCase):
         self.assertAlmostEqual(sum(x.tax for x in statements), 1.96 + 18.04 + 30 + 400)
         wh_move_ids = statements.mapped("move_ids.wt_account_move_id")
         self.assertEqual(len(wh_move_ids), 4)
+
+    def test_multi_withholding_tax(self):
+        """
+        When there are multiple Withholding Taxes,
+        the WT moves are generated correctly during payment.
+        """
+        # Arrange
+        other_wt_form = Form(self.wt1040.copy())
+        with other_wt_form.rate_ids.new() as rate:
+            rate.tax = 20
+        other_wt = other_wt_form.save()
+        bill = self._create_bill()
+        bill.button_draft()
+        with Form(bill) as bill_form, bill_form.invoice_line_ids.edit(0) as line:
+            line.invoice_line_tax_wt_ids.add(other_wt)
+        bill.action_post()
+
+        # Act
+        self.env["account.payment.register"].with_context(
+            active_model=bill._name,
+            active_ids=bill.ids,
+        ).create({}).action_create_payments()
+
+        # Assert
+        self.assertEqual(bill.payment_state, "paid")
+
+    def test_no_generate_wt_move(self):
+        """
+        When "Do not generate move" is enabled,
+        no WT move is generated upon payment.
+        """
+        # Arrange
+        amount = 2000
+        wt_amount = 500
+        bill = self._create_bill(price_unit=amount)
+        bill.withholding_tax_no_generate_move = True
+        wt_statement = self.env["withholding.tax.statement"].search(
+            [
+                ("invoice_id", "=", bill.id),
+            ]
+        )
+        # pre-condition
+        self.assertTrue(bill.withholding_tax_no_generate_move)
+
+        # Act 1: Partial payment generating no move
+        self.env["account.payment.register"].with_context(
+            active_model=bill._name,
+            active_ids=bill.ids,
+        ).create(
+            {
+                "amount": 100,
+            }
+        ).action_create_payments()
+
+        # Assert 1: No move generated
+        self.assertFalse(wt_statement.amount)
+        self.assertFalse(wt_statement.move_ids)
+
+        # Arrange 2: Enable WT Move generation
+        bill.withholding_tax_no_generate_move = False
+
+        # Act 2: Pay again
+        self.env["account.payment.register"].with_context(
+            active_model=bill._name,
+            active_ids=bill.ids,
+        ).create(
+            {
+                "amount": amount - 100,
+            }
+        ).action_create_payments()
+
+        # Assert 2: WT move generated for all the paid amount
+        wt_move = wt_statement.move_ids
+        self.assertEqual(len(wt_move), 1)
+        self.assertEqual(wt_statement.amount, wt_amount)

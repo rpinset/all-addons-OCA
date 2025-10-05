@@ -184,9 +184,25 @@ msgid "Display Name"
 msgstr ""
 
 #. module: l10n_it_withholding_tax
+#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_bank_statement_line__withholding_tax_no_generate_move
+#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_move__withholding_tax_no_generate_move
+#: model:ir.model.fields,field_description:l10n_it_withholding_tax.field_account_payment__withholding_tax_no_generate_move
+msgid "Do not generate move for Withholding Tax"
+msgstr ""
+
+#. module: l10n_it_withholding_tax
 #: model:ir.model.fields.selection,name:l10n_it_withholding_tax.selection__withholding_tax_move__state__due
 #: model_terms:ir.ui.view,arch_db:l10n_it_withholding_tax.view_withholding_move_search
 msgid "Due"
+msgstr ""
+
+#. module: l10n_it_withholding_tax
+#: model:ir.model.fields,help:l10n_it_withholding_tax.field_account_bank_statement_line__withholding_tax_no_generate_move
+#: model:ir.model.fields,help:l10n_it_withholding_tax.field_account_move__withholding_tax_no_generate_move
+#: model:ir.model.fields,help:l10n_it_withholding_tax.field_account_payment__withholding_tax_no_generate_move
+msgid ""
+"During reconciliation, do not generate the move to be reconciled with the "
+"Withholding Tax."
 msgstr ""
 
 #. module: l10n_it_withholding_tax

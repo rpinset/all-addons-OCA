@@ -4837,7 +4837,7 @@ addon | version | maintainers | summary
 [l10n_it_website_portal_ipa](l10n_it_website_portal_ipa/) | 14.0.1.0.0 |  | Aggiunge l'indice PA (IPA) tra i dettagli dell'utente nel portale.
 [l10n_it_website_sale_fatturapa](l10n_it_website_sale_fatturapa/) | 14.0.1.0.0 |  | Aggiunge i campi necessari alla fatturazione elettronica nel form del checkout
 [l10n_it_website_sale_fiscalcode](l10n_it_website_sale_fiscalcode/) | 14.0.1.1.0 |  | Website Sale FiscalCode
-[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.2.2 |  | ITA - Ritenute d'acconto
+[l10n_it_withholding_tax](l10n_it_withholding_tax/) | 14.0.1.3.0 |  | ITA - Ritenute d'acconto
 [l10n_it_withholding_tax_financial_report](l10n_it_withholding_tax_financial_report/) | 14.0.1.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Integrazione Ritenute d'acconto e Rendiconti contabili
 [l10n_it_withholding_tax_mis_builder](l10n_it_withholding_tax_mis_builder/) | 14.0.1.0.0 |  | ITA - Ritenute d'acconto - MIS Builder
 [l10n_it_withholding_tax_mis_builder_cash_flow](l10n_it_withholding_tax_mis_builder_cash_flow/) | 14.0.1.0.0 |  | ITA - Ritenute d'acconto - MIS Builder - Cash Flow
@@ -6742,7 +6742,7 @@ addon | version | maintainers | summary
 [stock_release_channel](stock_release_channel/) | 14.0.2.3.1 | <a href='https://github.com/sebalix'><img src='https://github.com/sebalix.png' width='32' height='32' style='border-radius:50%;' alt='sebalix'/></a> <a href='https://github.com/mt-software-de'><img src='https://github.com/mt-software-de.png' width='32' height='32' style='border-radius:50%;' alt='mt-software-de'/></a> | Manage workload in WMS with release channels
 [stock_service_level](stock_service_level/) | 14.0.1.0.1 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Manage stock route by service level
 [stock_service_level_route](stock_service_level_route/) | 14.0.1.0.0 | <a href='https://github.com/petrus-v'><img src='https://github.com/petrus-v.png' width='32' height='32' style='border-radius:50%;' alt='petrus-v'/></a> | Manage stock rules/routes by service level
-[stock_storage_type](stock_storage_type/) | 14.0.1.12.2 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Manage packages and locations storage types
+[stock_storage_type](stock_storage_type/) | 14.0.1.12.3 | <a href='https://github.com/jbaudoux'><img src='https://github.com/jbaudoux.png' width='32' height='32' style='border-radius:50%;' alt='jbaudoux'/></a> | Manage packages and locations storage types
 [stock_storage_type_buffer](stock_storage_type_buffer/) | 14.0.1.3.0 |  | Exclude storage locations from put-away if their buffer is full
 [stock_storage_type_putaway_abc](stock_storage_type_putaway_abc/) | 14.0.1.0.0 |  | Advanced storage strategy ABC for WMS
 [stock_unique_order_per_location](stock_unique_order_per_location/) | 14.0.1.0.0 | <a href='https://github.com/TDu'><img src='https://github.com/TDu.png' width='32' height='32' style='border-radius:50%;' alt='TDu'/></a> | Prevent to mix sales order on same consolidation location.

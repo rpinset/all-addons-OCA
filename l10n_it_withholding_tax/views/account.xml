@@ -122,6 +122,9 @@
                 <field name="withholding_tax" invisible="1" />
             </xpath>
 
+            <group name="accounting_info_group" position="inside">
+                <field name="withholding_tax_no_generate_move" />
+            </group>
         </field>
     </record>
 

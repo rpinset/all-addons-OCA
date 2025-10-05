@@ -117,16 +117,16 @@ Date:   Wed Jun 4 02:34:45 2025 +0000
 
 ## account-invoicing
 From [https://github.com/OCA/account-invoicing.git](https://github.com/OCA/account-invoicing.git)
-commit 20871b2ce3dbcccad689f211a2db08fd976594ee
-Author: Tamer Sezgin <tamer.sezgin@gmail.com>
-Date:   Wed Sep 3 07:28:06 2025 +0000
+commit 89b73ac8bc5a752a3680f9b9498da833a747b56c
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 1 19:07:19 2025 +0000
 
-    Translated using Weblate (Turkish)
+    Translated using Weblate (Italian)
     
-    Currently translated at 70.0% (14 of 20 strings)
+    Currently translated at 100.0% (16 of 16 strings)
     
-    Translation: account-invoicing-14.0/account-invoicing-14.0-account_invoice_merge
-    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_invoice_merge/tr/
+    Translation: account-invoicing-14.0/account-invoicing-14.0-account_receipt_base
+    Translate-URL: https://translation.odoo-community.org/projects/account-invoicing-14-0/account-invoicing-14-0-account_receipt_base/it/
 
 
 ## account-fiscal-rule
@@ -514,16 +514,16 @@ Date:   Fri Aug 8 09:59:36 2025 +0000
 
 ## edi
 From [https://github.com/OCA/edi.git](https://github.com/OCA/edi.git)
-commit 9cd52d0c3267c235c7d40eb235b08c3f0838d6a8
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 9 11:18:27 2025 +0000
+commit 66b7cd55858992c34aa1955b3ac191d4ef2aef35
+Author: Marwan Behillil <marwan.behillil@gmail.com>
+Date:   Thu Oct 2 12:24:05 2025 +0000
 
-    Translated using Weblate (Italian)
+    Translated using Weblate (French)
     
-    Currently translated at 100.0% (4 of 4 strings)
+    Currently translated at 100.0% (145 of 145 strings)
     
-    Translation: edi-14.0/edi-14.0-purchase_stock_ubl
-    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-purchase_stock_ubl/it/
+    Translation: edi-14.0/edi-14.0-account_invoice_import
+    Translate-URL: https://translation.odoo-community.org/projects/edi-14-0/edi-14-0-account_invoice_import/fr/
 
 
 ## field-service
@@ -883,16 +883,16 @@ Date:   Sun Feb 2 19:24:23 2025 +0000
 
 ## l10n-italy
 From [https://github.com/OCA/l10n-italy.git](https://github.com/OCA/l10n-italy.git)
-commit 28c01bb676468ef1085df177c35603dcc6ebba11
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 9 10:20:26 2025 +0000
+commit 73db1ccae70970fbf3df2a32c8b8b70fe32ac5cf
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Oct 3 14:04:55 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 100.0% (284 of 284 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_fatturapa
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_fatturapa/it/
+    Translation: l10n-italy-14.0/l10n-italy-14.0-l10n_it_withholding_tax
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-italy-14-0/l10n-italy-14-0-l10n_it_withholding_tax/
 
 
 ## l10n-japan
@@ -1146,16 +1146,16 @@ Date:   Wed Jun 4 03:50:21 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit b23261c50cda7e2ca775347b63ee29e6f49cbb49
+commit 93afe441b0eef8e33e64cd6eb3bba0eb54963644
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Jul 17 14:36:08 2025 +0000
+Date:   Thu Oct 2 16:37:07 2025 +0000
 
     Translated using Weblate (Italian)
     
-    Currently translated at 100.0% (76 of 76 strings)
+    Currently translated at 100.0% (10 of 10 strings)
     
-    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_orderpoint_generator
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_orderpoint_generator/it/
+    Translation: stock-logistics-warehouse-14.0/stock-logistics-warehouse-14.0-stock_measuring_device_zippcube
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-14-0/stock-logistics-warehouse-14-0-stock_measuring_device_zippcube/it/
 
 
 ## stock-logistics-reporting
@@ -1197,16 +1197,11 @@ Date:   Tue Jul 22 06:48:38 2025 +0000
 
 ## wms
 From [https://github.com/OCA/wms.git](https://github.com/OCA/wms.git)
-commit 0e5f1f590d847a8b8ec61285b9121aad7305e0dc
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 3 06:46:36 2025 +0000
+commit d0f8c544f303cd1dfb43e4f76408741762a465e7
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Sun Oct 5 12:57:32 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 100.0% (30 of 30 strings)
-    
-    Translation: wms-14.0/wms-14.0-sale_stock_available_to_promise_release
-    Translate-URL: https://translation.odoo-community.org/projects/wms-14-0/wms-14-0-sale_stock_available_to_promise_release/it/
+    [BOT] post-merge updates
 
 
 ## manufacture

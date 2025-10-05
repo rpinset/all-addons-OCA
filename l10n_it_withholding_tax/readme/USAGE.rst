@@ -30,6 +30,8 @@ Il sistema provvederà alla creazione di un ulteriore pagamento che coprirà l'a
 .. figure:: static/img/pagamento-ritenuta.png
    :alt: Pagamento ritenuta
 
+Per evitare di generare questo ulteriore pagamento: abilitare "Non generare registrazione per ritenuta" nella scheda "Altre informazioni", sezione "Contabilità".
+
 Per il pagamento della ritenuta d'acconto fare riferimento al modulo `l10n_it_withholding_tax_payment`.
 
 Successivamente andando nella sezione situazione ritenute d’acconto il sistema vi mostrerà una situazione riepilogativa delle varie ritenute divisa per documento di origine.
