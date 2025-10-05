@@ -531,11 +531,16 @@ Date:   Sun Feb 2 18:51:16 2025 +0000
 
 ## timesheet
 From [https://github.com/OCA/timesheet.git](https://github.com/OCA/timesheet.git)
-commit 862687c39dc1fb3071815712f97415da48b2f708
-Author: OCA-git-bot <oca-git-bot@odoo-community.org>
-Date:   Sat Sep 6 07:12:55 2025 +0000
+commit 34827f84321c130d8d6ae94b1cc9c0a8545ccb7a
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Wed Oct 1 19:03:29 2025 +0000
 
-    [BOT] post-merge updates
+    Translated using Weblate (Italian)
+    
+    Currently translated at 100.0% (19 of 19 strings)
+    
+    Translation: timesheet-15.0/timesheet-15.0-sale_timesheet_rounded
+    Translate-URL: https://translation.odoo-community.org/projects/timesheet-15-0/timesheet-15-0-sale_timesheet_rounded/it/
 
 
 ## hr
@@ -1062,16 +1067,16 @@ Date:   Sun Feb 9 18:52:43 2025 +0000
 
 ## stock-logistics-warehouse
 From [https://github.com/OCA/stock-logistics-warehouse.git](https://github.com/OCA/stock-logistics-warehouse.git)
-commit f891596f4cb85d80e83c5e931e444950792e72b1
-Author: Weblate <noreply@weblate.org>
-Date:   Thu Sep 25 14:21:18 2025 +0000
+commit 926b251a32e39fdbb457cc02f5eb8a79ddd479be
+Author: mymage <stefano.consolaro@mymage.it>
+Date:   Thu Oct 2 16:08:45 2025 +0000
 
-    Update translation files
+    Translated using Weblate (Italian)
     
-    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+    Currently translated at 100.0% (24 of 24 strings)
     
-    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_inventory_verification_request
-    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_inventory_verification_request/
+    Translation: stock-logistics-warehouse-15.0/stock-logistics-warehouse-15.0-stock_change_qty_reason
+    Translate-URL: https://translation.odoo-community.org/projects/stock-logistics-warehouse-15-0/stock-logistics-warehouse-15-0-stock_change_qty_reason/it/
 
 
 ## stock-logistics-reporting
@@ -1168,16 +1173,11 @@ Date:   Sun Feb 2 20:07:27 2025 +0000
 
 ## purchase-workflow
 From [https://github.com/OCA/purchase-workflow.git](https://github.com/OCA/purchase-workflow.git)
-commit 2dc298863e5406cc6ebdf7cdf310825e29d4dc1d
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Wed Sep 17 09:05:42 2025 +0000
+commit 39b94d7a0dfdebc2ccd6efc9e87d47cf01045236
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Fri Oct 3 21:02:15 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 87.5% (7 of 8 strings)
-    
-    Translation: purchase-workflow-15.0/purchase-workflow-15.0-purchase_reception_status
-    Translate-URL: https://translation.odoo-community.org/projects/purchase-workflow-15-0/purchase-workflow-15-0-purchase_reception_status/it/
+    [BOT] post-merge updates
 
 
 ## purchase-reporting
@@ -1378,16 +1378,16 @@ Date:   Sun Feb 9 19:20:51 2025 +0000
 
 ## server-tools
 From [https://github.com/OCA/server-tools.git](https://github.com/OCA/server-tools.git)
-commit 6d1742402bd36b4f438ed9dbc7d889dd3405427a
-Author: mymage <stefano.consolaro@mymage.it>
-Date:   Thu Sep 18 12:53:07 2025 +0000
+commit ca725694024c12216121dcd9930a53411cda6cd0
+Author: Weblate <noreply@weblate.org>
+Date:   Fri Oct 3 08:02:57 2025 +0000
 
-    Translated using Weblate (Italian)
+    Update translation files
     
-    Currently translated at 80.6% (158 of 196 strings)
+    Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: server-tools-15.0/server-tools-15.0-excel_import_export
-    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-excel_import_export/it/
+    Translation: server-tools-15.0/server-tools-15.0-auditlog
+    Translate-URL: https://translation.odoo-community.org/projects/server-tools-15-0/server-tools-15-0-auditlog/
 
 
 ## server-auth

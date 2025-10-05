@@ -6603,7 +6603,7 @@ addon | version | maintainers | summary
 [purchase_reception_status](purchase_reception_status/) | 15.0.1.0.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Add reception status on purchase orders
 [purchase_reception_status_line](purchase_reception_status_line/) | 15.0.2.1.0 | <a href='https://github.com/DavidJForgeFlow'><img src='https://github.com/DavidJForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='DavidJForgeFlow'/></a> | Add reception status on purchase order lines
 [purchase_representative](purchase_representative/) | 15.0.1.0.0 |  | Purchase Representatives will be the point of contact for RFQ's and PO's
-[purchase_request](purchase_request/) | 15.0.1.2.2 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
+[purchase_request](purchase_request/) | 15.0.1.2.3 |  | Use this module to have notification of requirements of materials and/or external services and keep track of such requirements.
 [purchase_request_cancel_confirm](purchase_request_cancel_confirm/) | 15.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Purchase Request Cancel Confirm
 [purchase_request_department](purchase_request_department/) | 15.0.1.0.0 |  | Purchase Request Department
 [purchase_request_exception](purchase_request_exception/) | 15.0.1.0.0 |  | Custom exceptions on purchase request
@@ -7730,7 +7730,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [attachment_unindex_content](attachment_unindex_content/) | 15.0.1.0.0 | <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/ebirbe'><img src='https://github.com/ebirbe.png' width='32' height='32' style='border-radius:50%;' alt='ebirbe'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Disable indexing of attachments
-[auditlog](auditlog/) | 15.0.2.0.2 |  | Audit Log
+[auditlog](auditlog/) | 15.0.3.0.0 |  | Audit Log
 [auto_backup](auto_backup/) | 15.0.1.0.1 |  | Backups database
 [base_changeset](base_changeset/) | 15.0.1.0.1 | <a href='https://github.com/astirpe'><img src='https://github.com/astirpe.png' width='32' height='32' style='border-radius:50%;' alt='astirpe'/></a> | Track record changesets
 [base_conditional_image](base_conditional_image/) | 15.0.1.0.0 |  | This module extends the functionality to support conditional images
