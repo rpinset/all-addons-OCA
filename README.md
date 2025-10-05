@@ -192,16 +192,16 @@ Date:   Thu Oct 3 08:18:23 2024 +0000
 
 ## bank-payment
 From [https://github.com/OCA/bank-payment.git](https://github.com/OCA/bank-payment.git)
-commit c150db07abd411642d2f7770997067ace7e403db
+commit 338a10dd6bfc081e2bfaac388a3d6bb50eb51c1e
 Author: EvaS595 <eva.saintier@horanet.com>
-Date:   Thu Jun 12 14:17:12 2025 +0000
+Date:   Fri Oct 3 13:39:20 2025 +0000
 
     Translated using Weblate (French)
     
-    Currently translated at 100.0% (171 of 171 strings)
+    Currently translated at 100.0% (222 of 222 strings)
     
-    Translation: bank-payment-13.0/bank-payment-13.0-account_banking_pain_base
-    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_banking_pain_base/fr/
+    Translation: bank-payment-13.0/bank-payment-13.0-account_payment_order
+    Translate-URL: https://translation.odoo-community.org/projects/bank-payment-13-0/bank-payment-13-0-account_payment_order/fr/
 
 
 ## account-reconcile
@@ -1028,14 +1028,14 @@ Date:   Wed Jun 4 03:07:39 2025 +0000
 
 ## l10n-spain
 From [https://github.com/OCA/l10n-spain.git](https://github.com/OCA/l10n-spain.git)
-commit 021a1eaead10421240aec0db831927b0e0194d6b
-Merge: e9ff89499 9226ddc67
+commit a6fab940edb5c2f13a99e3d1ff66471aba2758d7
+Merge: 021a1eaea e884727a3
 Author: Pedro M. Baeza <pedro.baeza@tecnativa.com>
-Date:   Wed Sep 17 07:54:12 2025 +0200
+Date:   Fri Oct 3 15:54:24 2025 +0200
 
-    Merge pull request #4382 from BinhexTeam/13.0-fix-l10n_es_eaet-l10n_es_aeat_mod303
+    Merge pull request #4414 from dixmit/13.0-ou
     
-    [13.0] [FIX] l10n_es_eaet y l10n_es_aeat_mod303
+    [13.0][OU-ADD] l10n_es_aeat: We have added a compute field, we should add it in the pre-migration to avoid issues and time
 
 
 ## l10n-switzerland

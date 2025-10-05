@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0c\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 16:15+0000\n"
-"PO-Revision-Date: 2025-06-12 16:26+0000\n"
+"PO-Revision-Date: 2025-10-03 15:42+0000\n"
 "Last-Translator: EvaS595 <eva.saintier@horanet.com>\n"
 "Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
 "Language: fr\n"
@@ -256,7 +256,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_invoice_payment_line_multi_form
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_line_create_form
 msgid "Cancel"
-msgstr "Annulé"
+msgstr "Annuler"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.account_payment_order_form
@@ -285,9 +285,9 @@ msgid ""
 "criteria or click on Add an item to manually select the move lines filtered "
 "by the above criteria."
 msgstr ""
-"Cliquez sur Ajouter toutes les lignes d'écriture pour sélectionner "
+"Cliquez sur Ajouter toutes les écritures comptables pour sélectionner "
 "automatiquement les lignes correspondant aux critères ci-dessus ou cliquez "
-"sur Ajouter un élément pour sélectionner manuellement les lignes d'écriture "
+"sur Ajouter une ligne pour sélectionner manuellement les lignes d'écriture "
 "filtrées par les critères ci-dessus."
 
 #. module: account_payment_order
@@ -762,7 +762,7 @@ msgstr "Lien vers le compte bancaire"
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_line_create__invoice
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_mode__default_invoice
 msgid "Linked to an Invoice or Refund"
-msgstr "Lié à une facture ou à un avoir"
+msgstr "Liées à une facture ou à un avoir"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_order__message_main_attachment_id
@@ -1257,10 +1257,11 @@ msgid ""
 "mode."
 msgstr ""
 "Les lignes de paiement bancaires servent à générer le fichier de paiement. "
-"Ils sont créés automatiquement à partir des lignes de transaction lors de la "
-"confirmation de l'ordre de paiement : une ligne de paiement bancaire peut "
-"regrouper plusieurs lignes de transaction si l'option \"Regrouper les "
-"opérations dans les ordres de paiement\" est active sur le mode de paiement."
+"Elles sont créées automatiquement à partir des lignes de transaction lors de "
+"la confirmation de l'ordre de paiement : une ligne de paiement bancaire peut "
+"regrouper plusieurs lignes de transaction si l'option "
+"\"Regrouper les opérations dans les ordres de paiement\" est active sur le "
+"mode de paiement."
 
 #. module: account_payment_order
 #: code:addons/account_payment_order/models/account_move.py:0
