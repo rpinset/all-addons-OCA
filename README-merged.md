@@ -1057,7 +1057,7 @@ addon | version | maintainers | summary
 [account_move_so_import](account_move_so_import/) | 16.0.1.0.0 |  | Journal Entry Sale Order completion
 [account_partner_reconcile](account_partner_reconcile/) | 16.0.1.0.0 |  | Account Partner Reconcile
 [account_reconcile_analytic_tag](account_reconcile_analytic_tag/) | 16.0.1.2.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Analytic tags in account reconciliation
-[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.8 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
+[account_reconcile_oca](account_reconcile_oca/) | 16.0.2.4.9 | <a href='https://github.com/etobella'><img src='https://github.com/etobella.png' width='32' height='32' style='border-radius:50%;' alt='etobella'/></a> | Reconcile addons for Odoo CE accounting
 [account_statement_base](account_statement_base/) | 16.0.1.15.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Base module for Bank Statements
 [bank_statement_check_number](bank_statement_check_number/) | 16.0.1.0.0 | <a href='https://github.com/ps-tubtim'><img src='https://github.com/ps-tubtim.png' width='32' height='32' style='border-radius:50%;' alt='ps-tubtim'/></a> | Add the check number in the bank statements
 [base_transaction_id](base_transaction_id/) | 16.0.1.0.0 |  | Base transaction ID for financial institutes
@@ -3417,7 +3417,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [hr_holidays_auto_extend](hr_holidays_auto_extend/) | 16.0.1.0.1 |  | Allow to extend some kind of holidays
 [hr_holidays_leave_auto_approve](hr_holidays_leave_auto_approve/) | 16.0.1.0.1 |  | Leave type for auto-validation of Leaves
-[hr_holidays_natural_period](hr_holidays_natural_period/) | 16.0.1.1.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Apply natural days in holidays
+[hr_holidays_natural_period](hr_holidays_natural_period/) | 16.0.1.2.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Apply natural days in holidays
 [hr_holidays_natural_period_public](hr_holidays_natural_period_public/) | 16.0.1.1.0 |  | Allow excluding public holidays for natural days holidays
 [hr_holidays_public](hr_holidays_public/) | 16.0.2.0.6 |  | Manage Public Holidays
 [hr_holidays_public_city](hr_holidays_public_city/) | 16.0.2.0.1 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | HR Holidays Public City
@@ -4656,7 +4656,7 @@ addon | version | maintainers | summary
 [l10n_it_account_tax_kind](l10n_it_account_tax_kind/) | 16.0.1.0.1 |  | Gestione natura delle aliquote IVA
 [l10n_it_amount_to_text](l10n_it_amount_to_text/) | 16.0.1.0.0 |  | Localizza le valute in italiano per amount_to_text
 [l10n_it_appointment_code](l10n_it_appointment_code/) | 16.0.1.0.0 |  | Aggiunge la tabella dei codici carica da usare nelle dichiarazioni fiscali italiane
-[l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.6.0 |  | Gestione Cespiti
+[l10n_it_asset_management](l10n_it_asset_management/) | 16.0.1.7.0 |  | Gestione Cespiti
 [l10n_it_ateco](l10n_it_ateco/) | 16.0.1.1.1 |  | ITA - Codici Ateco
 [l10n_it_bill_of_entry](l10n_it_bill_of_entry/) | 16.0.1.0.3 |  | ITA - Bolle doganali
 [l10n_it_central_journal_reportlab](l10n_it_central_journal_reportlab/) | 16.0.1.0.7 | <a href='https://github.com/MarcoCalcagni'><img src='https://github.com/MarcoCalcagni.png' width='32' height='32' style='border-radius:50%;' alt='MarcoCalcagni'/></a> <a href='https://github.com/Borruso'><img src='https://github.com/Borruso.png' width='32' height='32' style='border-radius:50%;' alt='Borruso'/></a> | ITA - Libro giornale - Reportlab
@@ -4681,7 +4681,7 @@ addon | version | maintainers | summary
 [l10n_it_fatturapa_out_stamp](l10n_it_fatturapa_out_stamp/) | 16.0.1.0.1 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Modulo ponte tra emissione fatture elettroniche e imposta di bollo
 [l10n_it_fatturapa_out_triple_discount](l10n_it_fatturapa_out_triple_discount/) | 16.0.1.0.0 |  | Modulo ponte tra emissione fatture elettroniche e sconto triplo
 [l10n_it_fatturapa_out_wt](l10n_it_fatturapa_out_wt/) | 16.0.1.0.1 |  | Modulo ponte tra emissione fatture elettroniche e ritenute.
-[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.2.3 |  | Invio fatture elettroniche tramite PEC
+[l10n_it_fatturapa_pec](l10n_it_fatturapa_pec/) | 16.0.1.2.4 |  | Invio fatture elettroniche tramite PEC
 [l10n_it_fatturapa_sale](l10n_it_fatturapa_sale/) | 16.0.1.0.1 |  | Aggiunge alcuni dati per la fatturazione elettronica nell'ordine di vendita
 [l10n_it_fatturapa_sdicoop](l10n_it_fatturapa_sdicoop/) | 16.0.1.1.0 |  | Invio fatture elettroniche tramite SDICoop
 [l10n_it_financial_statement_eu](l10n_it_financial_statement_eu/) | 16.0.1.0.1 | <a href='https://github.com/mktsrl'><img src='https://github.com/mktsrl.png' width='32' height='32' style='border-radius:50%;' alt='mktsrl'/></a> | ITA - Bilancio UE con XBRL
@@ -4702,7 +4702,7 @@ addon | version | maintainers | summary
 [l10n_it_reverse_charge_start_end_dates](l10n_it_reverse_charge_start_end_dates/) | 16.0.1.0.0 |  | Gestione delle date di competenza per le autofatture in reverse charge
 [l10n_it_riba](l10n_it_riba/) | 16.0.1.10.0 |  | Ricevute bancarie
 [l10n_it_sct_cbi](l10n_it_sct_cbi/) | 16.0.1.0.2 | <a href='https://github.com/monen17'><img src='https://github.com/monen17.png' width='32' height='32' style='border-radius:50%;' alt='monen17'/></a> | Usare gli standard CBI per SEPA Credit Transfer
-[l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.1 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
+[l10n_it_sdi_channel](l10n_it_sdi_channel/) | 16.0.1.1.2 | <a href='https://github.com/sergiocorato'><img src='https://github.com/sergiocorato.png' width='32' height='32' style='border-radius:50%;' alt='sergiocorato'/></a> | Aggiunge il canale di invio/ricezione dei file XML attraverso lo SdI
 [l10n_it_split_payment](l10n_it_split_payment/) | 16.0.1.1.1 |  | Scissione pagamenti
 [l10n_it_vat_payability](l10n_it_vat_payability/) | 16.0.1.0.0 |  | ITA - Esigibilità IVA
 [l10n_it_vat_registries](l10n_it_vat_registries/) | 16.0.1.5.0 |  | ITA - Registri IVA
@@ -5408,13 +5408,13 @@ addon | version | maintainers | summary
 [l10n_es_ticketbai_api_batuz](l10n_es_ticketbai_api_batuz/) | 16.0.1.0.4 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI (API) - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_batuz](l10n_es_ticketbai_batuz/) | 16.0.1.1.0 | <a href='https://github.com/enriquemartin'><img src='https://github.com/enriquemartin.png' width='32' height='32' style='border-radius:50%;' alt='enriquemartin'/></a> <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Batuz - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas en Bizkaia
 [l10n_es_ticketbai_oss](l10n_es_ticketbai_oss/) | 16.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - OSS
-[l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 16.0.1.0.0 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
+[l10n_es_ticketbai_pos](l10n_es_ticketbai_pos/) | 16.0.1.0.1 | <a href='https://github.com/ao-landoo'><img src='https://github.com/ao-landoo.png' width='32' height='32' style='border-radius:50%;' alt='ao-landoo'/></a> | TicketBAI - Point of Sale - declaración de todas las operaciones de venta realizadas por las personas y entidades que desarrollan actividades económicas
 [l10n_es_toponyms](l10n_es_toponyms/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Topónimos españoles
 [l10n_es_vat_book](l10n_es_vat_book/) | 16.0.1.7.2 |  | Libro de IVA
 [l10n_es_vat_book_igic](l10n_es_vat_book_igic/) | 16.0.1.0.0 | <a href='https://github.com/nicolasramos'><img src='https://github.com/nicolasramos.png' width='32' height='32' style='border-radius:50%;' alt='nicolasramos'/></a> | Libro de IGIC
 [l10n_es_vat_book_invoice_summary](l10n_es_vat_book_invoice_summary/) | 16.0.1.0.0 | <a href='https://github.com/victoralmau'><img src='https://github.com/victoralmau.png' width='32' height='32' style='border-radius:50%;' alt='victoralmau'/></a> | Facturas resumen en libro de IVA
 [l10n_es_vat_book_oss](l10n_es_vat_book_oss/) | 16.0.1.0.0 |  | Libro de IVA OSS
-[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.0 |  | Prorrata de IVA para la localización española
+[l10n_es_vat_prorate](l10n_es_vat_prorate/) | 16.0.2.0.1 |  | Prorrata de IVA para la localización española
 [l10n_es_verifactu_oca](l10n_es_verifactu_oca/) | 16.0.1.0.5 |  | Comunicación VERI*FACTU
 [payment_redsys](payment_redsys/) | 16.0.1.0.3 |  | Payment Acquirer: Redsys Implementation
 
@@ -6036,6 +6036,7 @@ addon | version | maintainers | summary
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 16.0.1.0.0 |  | Procurement Auto Create Group Carrier
 [product_cost_price_avco_sync](product_cost_price_avco_sync/) | 16.0.1.0.0 | <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Set product cost price from updated moves
 [product_expiry_simple](product_expiry_simple/) | 16.0.1.2.0 | <a href='https://github.com/alexis-via'><img src='https://github.com/alexis-via.png' width='32' height='32' style='border-radius:50%;' alt='alexis-via'/></a> | Simpler and better alternative to the official product_expiry module
+[product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 16.0.1.0.0 | <a href='https://github.com/aleuffre'><img src='https://github.com/aleuffre.png' width='32' height='32' style='border-radius:50%;' alt='aleuffre'/></a> <a href='https://github.com/renda-dev'><img src='https://github.com/renda-dev.png' width='32' height='32' style='border-radius:50%;' alt='renda-dev'/></a> <a href='https://github.com/PicchiSeba'><img src='https://github.com/PicchiSeba.png' width='32' height='32' style='border-radius:50%;' alt='PicchiSeba'/></a> | This module makes the product customer code visible in the stock moves of a picking.
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 16.0.1.0.1 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 16.0.1.0.0 |  | Track returned quantity of sale order lines.
 [sale_order_global_stock_route](sale_order_global_stock_route/) | 16.0.1.1.1 |  | Add the possibility to choose one warehouse path for an order
@@ -6075,6 +6076,7 @@ addon | version | maintainers | summary
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 16.0.1.1.0 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 16.0.3.2.0 | <a href='https://github.com/sergio-teruel'><img src='https://github.com/sergio-teruel.png' width='32' height='32' style='border-radius:50%;' alt='sergio-teruel'/></a> | Auto create lots for incoming pickings
 [stock_picking_auto_create_lot_sequence](stock_picking_auto_create_lot_sequence/) | 16.0.1.0.0 |  | Stock Picking Auto Create Lot Sequence
+[stock_picking_availability_filter](stock_picking_availability_filter/) | 16.0.1.0.0 |  | Adds availability filters to the transfers tree view
 [stock_picking_back2draft](stock_picking_back2draft/) | 16.0.1.0.0 |  | Reopen cancelled pickings
 [stock_picking_batch_extended](stock_picking_batch_extended/) | 16.0.1.1.1 | <a href='https://github.com/gurneyalex'><img src='https://github.com/gurneyalex.png' width='32' height='32' style='border-radius:50%;' alt='gurneyalex'/></a> <a href='https://github.com/carlosdauden'><img src='https://github.com/carlosdauden.png' width='32' height='32' style='border-radius:50%;' alt='carlosdauden'/></a> <a href='https://github.com/i-vyshnevska'><img src='https://github.com/i-vyshnevska.png' width='32' height='32' style='border-radius:50%;' alt='i-vyshnevska'/></a> | Allows manage a lot of pickings in batch
 [stock_picking_batch_extended_account](stock_picking_batch_extended_account/) | 16.0.1.0.3 | <a href='https://github.com/ernestotejeda'><img src='https://github.com/ernestotejeda.png' width='32' height='32' style='border-radius:50%;' alt='ernestotejeda'/></a> | Generates invoices when batch is set to Done state

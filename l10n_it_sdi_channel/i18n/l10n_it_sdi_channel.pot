@@ -399,3 +399,10 @@ msgstr ""
 #, python-format
 msgid "You can only send files in 'Ready to Send' state."
 msgstr ""
+
+#. module: l10n_it_sdi_channel
+#. odoo-python
+#: code:addons/l10n_it_sdi_channel/models/fatturapa_attachment_out.py:0
+#, python-format
+msgid "You can only send files with the same channel."
+msgstr ""

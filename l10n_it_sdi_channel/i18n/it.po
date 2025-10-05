@@ -423,6 +423,13 @@ msgstr "Procedura guidata per inviare e-fatture multiple a SdI"
 msgid "You can only send files in 'Ready to Send' state."
 msgstr "È possibile inviare solo file con stato «Pronto per l'invio»."
 
+#. module: l10n_it_sdi_channel
+#. odoo-python
+#: code:addons/l10n_it_sdi_channel/models/fatturapa_attachment_out.py:0
+#, python-format
+msgid "You can only send files with the same channel."
+msgstr ""
+
 #~ msgid "E-invoice PEC server"
 #~ msgstr "Server PEC e-fattura"
 

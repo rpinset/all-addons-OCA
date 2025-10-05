@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: server-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 11:14+0000\n"
-"PO-Revision-Date: 2025-05-03 17:23+0000\n"
+"PO-Revision-Date: 2025-10-02 19:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: Italian (http://www.transifex.com/oca/OCA-server-tools-8-0/"
 "language/it/)\n"
@@ -486,7 +486,7 @@ msgstr "Tipo server"
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_server__server_type_env_default
 msgid "Server Type Env Default"
-msgstr ""
+msgstr "Tipo server ambiente predefinito"
 
 #. module: fetchmail_attach_from_folder
 #: model:ir.model.fields,field_description:fetchmail_attach_from_folder.field_fetchmail_attach_mail_manually__smart_search
