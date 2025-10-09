@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-04-02 19:06+0000\n"
+"PO-Revision-Date: 2025-10-07 10:43+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: stock_quant_package_product_packaging
+#: model:ir.model.fields,help:stock_quant_package_product_packaging.field_product_product__package_type_id
+#: model:ir.model.fields,help:stock_quant_package_product_packaging.field_product_template__package_type_id
+msgid ""
+"Defines a 'default' package type for this product to be applied on packages "
+"without product packagings and on put-away computation based on package type "
+"for product not in a package"
+msgstr ""
+"Definisce un tipo collo 'predefinito' per questo prodotto da utilizzare nei "
+"colli senza imballaggio prodotto e nel calcolo del deposito in base al tipo "
+"collo per prodotto non in un collo"
+
+#. module: stock_quant_package_product_packaging
+#: model:ir.model.fields,field_description:stock_quant_package_product_packaging.field_product_product__package_type_id
+#: model:ir.model.fields,field_description:stock_quant_package_product_packaging.field_product_template__package_type_id
+msgid "Package type"
+msgstr "Tipo collo"
 
 #. module: stock_quant_package_product_packaging
 #: model:ir.model,name:stock_quant_package_product_packaging.model_stock_quant_package
@@ -31,6 +49,11 @@ msgstr ""
 "di stoccaggio, ..."
 
 #. module: stock_quant_package_product_packaging
+#: model:ir.model,name:stock_quant_package_product_packaging.model_product_template
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: stock_quant_package_product_packaging
 #: model:ir.model,name:stock_quant_package_product_packaging.model_stock_move_line
 msgid "Product Moves (Stock Move Line)"
 msgstr "Movimenti prodotto (riga movimento di magazzino)"
@@ -39,6 +62,16 @@ msgstr "Movimenti prodotto (riga movimento di magazzino)"
 #: model:ir.model.fields,field_description:stock_quant_package_product_packaging.field_stock_quant_package__product_packaging_id
 msgid "Product Packaging"
 msgstr "Imballaggio prodotto"
+
+#. module: stock_quant_package_product_packaging
+#: model:ir.model,name:stock_quant_package_product_packaging.model_product_product
+msgid "Product Variant"
+msgstr "Variante prodotto"
+
+#. module: stock_quant_package_product_packaging
+#: model:ir.model,name:stock_quant_package_product_packaging.model_stock_quant
+msgid "Quants"
+msgstr "Quanti"
 
 #. module: stock_quant_package_product_packaging
 #: model:ir.model.fields,field_description:stock_quant_package_product_packaging.field_stock_quant_package__single_product_id

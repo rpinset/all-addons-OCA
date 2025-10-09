@@ -8,7 +8,7 @@
 
 {
     "name": "Sale Order Type",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.1.0",
     "category": "Sales Management",
     "author": "Grupo Vermon,"
     "AvanzOSC,"
@@ -30,6 +30,7 @@
         "data/default_type.xml",
         "reports/account_invoice_report_view.xml",
         "reports/sale_report_view.xml",
+        "views/res_config_settings.xml",
     ],
     "installable": True,
 }

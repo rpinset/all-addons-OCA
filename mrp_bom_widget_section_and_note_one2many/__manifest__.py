@@ -6,7 +6,7 @@
 {
     "name": "MRP Widget Section and Note in BoM",
     "summary": "Add section and note in Bills of Materials",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Manufacturing/Manufacturing",
     "author": "GRAP," "Odoo Community Association (OCA)",
     "maintainers": ["quentinDupont"],

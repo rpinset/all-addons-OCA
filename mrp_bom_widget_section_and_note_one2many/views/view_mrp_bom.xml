@@ -45,10 +45,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                 name="product_id"
                                 required="not display_type"
                                 invisible="display_type"
-                                context="{
-                              'default_type': 'product',
-                              'default_detailed_type': 'product'
-                            }"
+                                context="{'default_type': 'consu'}"
                             />
                             <field
                                 name="name"
