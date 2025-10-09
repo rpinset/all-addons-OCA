@@ -7331,7 +7331,7 @@ addon | version | maintainers | summary
 [product_multi_price](product_multi_price/) | 14.0.1.0.0 |  | Product Multi Price
 [product_net_weight](product_net_weight/) | 14.0.1.0.1 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add 'Net Weight' on product models
 [product_order_noname](product_order_noname/) | 14.0.2.0.0 | <a href='https://github.com/WR-96'><img src='https://github.com/WR-96.png' width='32' height='32' style='border-radius:50%;' alt='WR-96'/></a> <a href='https://github.com/moylop260'><img src='https://github.com/moylop260.png' width='32' height='32' style='border-radius:50%;' alt='moylop260'/></a> <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Speedup product retrieve
-[product_packaging_dimension](product_packaging_dimension/) | 14.0.1.0.2 |  | Manage packaging dimensions and weight
+[product_packaging_dimension](product_packaging_dimension/) | 14.0.1.1.0 |  | Manage packaging dimensions and weight
 [product_packaging_type](product_packaging_type/) | 14.0.0.2.0 |  | Product Packaging Type
 [product_packaging_type_pallet](product_packaging_type_pallet/) | 14.0.1.0.1 |  | Manage packaging of pallet type
 [product_packaging_type_required](product_packaging_type_required/) | 14.0.1.1.0 | <a href='https://github.com/simahawk'><img src='https://github.com/simahawk.png' width='32' height='32' style='border-radius:50%;' alt='simahawk'/></a> <a href='https://github.com/dcrier'><img src='https://github.com/dcrier.png' width='32' height='32' style='border-radius:50%;' alt='dcrier'/></a> | Product Packaging Type Required
@@ -8438,7 +8438,7 @@ addon | version | maintainers | summary
 [letsencrypt](letsencrypt/) | 14.0.1.0.2 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 14.0.1.0.0 |  | Mark as read or delete mails after a set time
 [model_read_only](model_read_only/) | 14.0.3.0.2 | <a href='https://github.com/ilyasProgrammer'><img src='https://github.com/ilyasProgrammer.png' width='32' height='32' style='border-radius:50%;' alt='ilyasProgrammer'/></a> | Model Read Only
-[module_analysis](module_analysis/) | 14.0.1.0.2 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
+[module_analysis](module_analysis/) | 14.0.1.0.3 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 14.0.1.1.1 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 14.0.1.0.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
 [module_prototyper](module_prototyper/) | 14.0.1.0.1 |  | Prototype your module.
