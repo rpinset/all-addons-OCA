@@ -381,16 +381,11 @@ Date:   Tue Nov 19 20:56:18 2019 +0100
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit 33a7c526125d2de8b8cf40430a2b3bcf1cff53d5
-Author: Sergio Zanchetta <primes2h@gmail.com>
-Date:   Mon Sep 8 07:21:46 2025 +0000
+commit ff50eafb8d0d0deaa2d0e099fb6f5d4d3d640fd8
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Tue Oct 7 17:24:41 2025 +0000
 
-    Translated using Weblate (Italian)
-    
-    Currently translated at 45.7% (16 of 35 strings)
-    
-    Translation: sale-workflow-12.0/sale-workflow-12.0-sale_exception
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-12-0/sale-workflow-12-0-sale_exception/it/
+    [BOT] post-merge updates
 
 
 ## crm
