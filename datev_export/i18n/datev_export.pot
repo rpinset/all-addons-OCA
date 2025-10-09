@@ -16,6 +16,13 @@ msgstr ""
 #. module: datev_export
 #: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
 msgid ""
+"<span class=\"o_form_label\">Account code length</span>\n"
+"                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid ""
 "<span class=\"o_form_label\">Client Number</span>\n"
 "                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
@@ -25,6 +32,32 @@ msgstr ""
 msgid ""
 "<span class=\"o_form_label\">Consultant Number</span>\n"
 "                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Customer sequence</span>\n"
+"                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Partner numbering</span>\n"
+"                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid ""
+"<span class=\"o_form_label\">Supplier sequence</span>\n"
+"                                <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid "Account code length"
 msgstr ""
 
 #. module: datev_export
@@ -55,6 +88,30 @@ msgid "DATEV Export"
 msgstr ""
 
 #. module: datev_export
+#: model:ir.model.fields,field_description:datev_export.field_res_company__datev_partner_numbering
+#: model:ir.model.fields,field_description:datev_export.field_res_config_settings__datev_partner_numbering
+msgid "DATEV Partner numbering"
+msgstr ""
+
+#. module: datev_export
+#: model:ir.model.fields,field_description:datev_export.field_res_company__datev_account_code_length
+#: model:ir.model.fields,field_description:datev_export.field_res_config_settings__datev_account_code_length
+msgid "DATEV account code length"
+msgstr ""
+
+#. module: datev_export
+#: model:ir.model.fields,field_description:datev_export.field_res_company__datev_customer_sequence_id
+#: model:ir.model.fields,field_description:datev_export.field_res_config_settings__datev_customer_sequence_id
+msgid "DATEV sequence for customers"
+msgstr ""
+
+#. module: datev_export
+#: model:ir.model.fields,field_description:datev_export.field_res_company__datev_supplier_sequence_id
+#: model:ir.model.fields,field_description:datev_export.field_res_config_settings__datev_supplier_sequence_id
+msgid "DATEV sequence for suppliers"
+msgstr ""
+
+#. module: datev_export
 #: model:ir.model.fields,help:datev_export.field_res_company__datev_client_number
 #: model:ir.model.fields,help:datev_export.field_res_config_settings__datev_client_number
 #: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
@@ -70,4 +127,19 @@ msgstr ""
 #: model:ir.model.fields,help:datev_export.field_res_company__datev_consultant_number
 #: model:ir.model.fields,help:datev_export.field_res_config_settings__datev_consultant_number
 msgid "Number from 1000 to 99999999"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid "Select the way partners in DATEV export are numbered"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid "The sequence used to number customers"
+msgstr ""
+
+#. module: datev_export
+#: model_terms:ir.ui.view,arch_db:datev_export.res_config_settings_view_form
+msgid "The sequence used to number suppliers"
 msgstr ""

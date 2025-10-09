@@ -349,16 +349,11 @@ Date:   Sun Feb 2 18:27:16 2025 +0000
 
 ## sale-workflow
 From [https://github.com/OCA/sale-workflow.git](https://github.com/OCA/sale-workflow.git)
-commit f1e7d843d1bbdf78642f0c505f64416df45f549a
-Author: Alberto Martínez <alberto.martinez@sygel.es>
-Date:   Thu Sep 25 07:45:02 2025 +0000
+commit 4477104c4d1269da47d506afc0e0e00c46b24bc3
+Author: OCA-git-bot <oca-git-bot@odoo-community.org>
+Date:   Thu Oct 9 07:10:01 2025 +0000
 
-    Translated using Weblate (Spanish)
-    
-    Currently translated at 100.0% (2 of 2 strings)
-    
-    Translation: sale-workflow-15.0/sale-workflow-15.0-sale_order_restrict_copy_archived_product
-    Translate-URL: https://translation.odoo-community.org/projects/sale-workflow-15-0/sale-workflow-15-0-sale_order_restrict_copy_archived_product/es/
+    [BOT] post-merge updates
 
 
 ## crm
@@ -752,16 +747,16 @@ Date:   Wed Jun 4 03:03:07 2025 +0000
 
 ## l10n-germany
 From [https://github.com/OCA/l10n-germany.git](https://github.com/OCA/l10n-germany.git)
-commit 21f72363536712d41edc632435e03bb735cffa3b
+commit 95c5cc9f7e2048958fbc763346061ed1a31169cc
 Author: Weblate <noreply@weblate.org>
-Date:   Tue May 6 18:58:33 2025 +0000
+Date:   Tue Oct 7 15:43:56 2025 +0000
 
     Update translation files
     
     Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
     
-    Translation: l10n-germany-15.0/l10n-germany-15.0-l10n_de_skr04_mis_reports
-    Translate-URL: https://translation.odoo-community.org/projects/l10n-germany-15-0/l10n-germany-15-0-l10n_de_skr04_mis_reports/
+    Translation: l10n-germany-15.0/l10n-germany-15.0-l10n_de_holidays
+    Translate-URL: https://translation.odoo-community.org/projects/l10n-germany-15-0/l10n-germany-15-0-l10n_de_holidays/
 
 
 ## l10n-greece
@@ -1510,9 +1505,9 @@ Date:   Sat Jun 21 10:45:39 2025 +0000
 
 ## vertical-hotel
 From [https://github.com/OCA/vertical-hotel.git](https://github.com/OCA/vertical-hotel.git)
-commit 3612c65351111e7f8150219c6f2480a0b5d6f400
+commit 8e0bd4f3d58090af2bbc5d9c19b2da4ca24698c4
 Author: mymage <stefano.consolaro@mymage.it>
-Date:   Tue Sep 2 14:56:32 2025 +0000
+Date:   Thu Oct 9 08:00:01 2025 +0000
 
     Translated using Weblate (Italian)
     
